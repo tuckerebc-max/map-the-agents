@@ -1,0 +1,512 @@
+# gwq - Git Worktree Manager
+
+`gwq` is a CLI tool for efficiently managing Git worktrees. Like how `ghq` manages repository clones, `gwq` provides intuitive operations for creating, switching, and deleting worktrees using a fuzzy finder interface.
+
+![](./docs/assets/usage.gif)
+
+## Why gwq?
+
+Git worktrees allow you to check out multiple branches from the same repository into separate directories. This is particularly powerful when:
+
+- Working on multiple features simultaneously
+- Running parallel AI coding agents on different tasks
+- Reviewing code while developing new features
+- Testing changes without disrupting your main workspace
+
+### AI Coding Agent Workflows
+
+One of the most powerful applications of `gwq` is enabling parallel AI coding workflows. Instead of having a single AI agent work sequentially through tasks, you can leverage multiple worktrees to have multiple AI agents work on different parts of your project simultaneously:
+
+```bash
+# Create worktrees for parallel development
+gwq add -b feature/authentication
+gwq add -b feature/data-visualization
+gwq add -b bugfix/login-issue
+
+# Each AI agent can work in its own worktree
+cd $(gwq get authentication) && claude
+cd $(gwq get visualization) && claude
+cd $(gwq get login) && claude
+
+# Monitor all agent activity in real-time
+gwq status --watch
+```
+
+Since each worktree has its own working directory with isolated files, AI agents can work at full speed without merge conflicts. This approach is ideal for independent tasks, parallel migrations, and code review workflows.
+
+## Installation
+
+### Homebrew (macOS/Linux)
+
+```bash
+brew install d-kuro/tap/gwq
+```
+
+### Using Go
+
+```bash
+go install github.com/d-kuro/gwq/cmd/gwq@latest
+```
+
+### From Source
+
+```bash
+git clone https://github.com/d-kuro/gwq.git
+cd gwq
+go build -o gwq ./cmd/gwq
+```
+
+## Quick Start
+
+```bash
+# Create a new worktree with new branch
+gwq add -b feature/new-ui
+
+# List all worktrees
+gwq list
+
+# Check status of all worktrees
+gwq status
+
+# Get worktree path (for cd)
+cd $(gwq get feature)
+
+# Execute command in worktree
+gwq exec feature -- npm test
+
+# Remove a worktree
+gwq remove feature/old-ui
+```
+
+## Features
+
+- **Fuzzy Finder Interface**: Built-in fuzzy finder for intuitive branch and worktree selection
+- **Global Worktree Management**: Access all your worktrees across repositories from anywhere
+- **Status Dashboard**: Monitor all worktrees' git status, changes, and activity at a glance
+- **Tmux Integration**: Run and manage long-running processes in persistent tmux sessions
+- **Tab Completion**: Full shell completion support for branches, worktrees, and configuration
+
+## Commands
+
+### `gwq add`
+
+Create a new worktree.
+
+```bash
+# Create worktree with new branch
+gwq add -b feature/new-ui
+
+# Create from existing branch
+gwq add main
+
+# Interactive branch selection
+gwq add -i
+
+# Stay in worktree directory after creation
+gwq add -s feature/new-ui
+```
+
+**Flags**: `-b` (new branch), `-i` (interactive), `-s` (stay), `-f` (force)
+
+> **Note**: With shell integration and `cd.launch_shell = false`, `-s` changes the current shell's directory instead of spawning a nested shell. Set `cd.auto_cd_on_add = true` to auto-cd after every `gwq add` without `-s`.
+
+### `gwq list` (alias: `ls`)
+
+Display all worktrees.
+
+```bash
+# Simple list
+gwq list
+gwq ls
+
+# Detailed information
+gwq list -v
+
+# JSON format
+gwq list --json
+
+# Show all worktrees globally
+gwq list -g
+```
+
+**Flags**: `-v` (verbose), `-g` (global), `--json`
+
+### `gwq get`
+
+Get worktree path. Useful for shell command substitution.
+
+```bash
+# Get path and change directory
+cd $(gwq get feature)
+
+# Get from global worktrees
+gwq get -g myapp:feature
+```
+
+**Flags**: `-g` (global), `-0` (null-terminated)
+
+### `gwq cd`
+
+Change to worktree directory by launching a new shell.
+
+```bash
+# Change to a worktree
+gwq cd feature
+
+# Interactive selection
+gwq cd
+```
+
+**Flags**: `-g` (global)
+
+> **Note**: By default, `gwq cd` launches a new shell. Set `cd.launch_shell = false` to change directory in the current shell instead. This requires shell integration — see [Shell Integration](#shell-integration) for setup. PowerShell is currently not supported for shell integration.
+
+### `gwq exec`
+
+Execute command in worktree directory.
+
+```bash
+# Run tests in feature branch
+gwq exec feature -- npm test
+
+# Stay in directory after command
+gwq exec -s feature -- npm install
+```
+
+**Flags**: `-g` (global), `-s` (stay)
+
+### `gwq remove`
+
+Delete a worktree.
+
+```bash
+# Interactive selection
+gwq remove
+
+# Delete by pattern
+gwq remove feature/old
+
+# Also delete the branch
+gwq remove -b feature/completed
+
+# Force delete unmerged branch
+gwq remove -b --force-delete-branch feature/abandoned
+
+# Preview deletion
+gwq remove --dry-run feature/old
+```
+
+**Flags**: `-f` (force), `-b` (delete branch), `--force-delete-branch`, `-g` (global), `--dry-run`
+
+### `gwq status`
+
+Monitor the status of all worktrees.
+
+```bash
+# Table view
+gwq status
+
+# Watch mode (auto-refresh)
+gwq status --watch
+
+# Filter by status
+gwq status --filter changed
+
+# Sort by activity
+gwq status --sort activity
+
+# Output formats
+gwq status --json
+gwq status --csv
+```
+
+**Flags**: `-w` (watch), `-f` (filter), `-s` (sort), `-v` (verbose), `-g` (global), `--json`, `--csv`
+
+### `gwq tmux`
+
+Manage tmux sessions for long-running processes.
+
+```bash
+# List sessions
+gwq tmux list
+
+# Run command in new session
+gwq tmux run "npm run dev"
+
+# Run with custom ID
+gwq tmux run --id dev-server "npm run dev"
+
+# Attach to session
+gwq tmux attach dev-server
+
+# Kill session
+gwq tmux kill dev-server
+```
+
+### `gwq config`
+
+Manage configuration.
+
+```bash
+# Show configuration
+gwq config list
+
+# Set global value (default)
+gwq config set worktree.basedir ~/worktrees
+
+# Set local value (writes to .gwq.toml in current directory)
+gwq config set --local finder.preview false
+
+# Get value
+gwq config get worktree.basedir
+```
+
+**Flags**: `--local` (write to local config instead of global)
+
+### `gwq prune`
+
+Clean up deleted worktree information.
+
+```bash
+gwq prune
+```
+
+## Global Worktree Management
+
+`gwq` automatically discovers all worktrees in your configured base directory:
+
+- **Outside Git Repositories**: Shows all worktrees in the base directory
+- **Inside Git Repositories**: Shows only worktrees for the current repository (use `-g` to see all)
+- **No Registry Required**: Uses filesystem scanning instead of maintaining a separate registry
+
+## Shell Integration
+
+The completion scripts provide both tab completion and shell integration for `gwq cd` and `gwq add`. When `cd.launch_shell` is set to `false`, the completion script includes a shell wrapper that allows these commands to change the directory in the current shell without launching a new shell. For `gwq add`, this applies to `-s`/`--stay` and to every successful add when `cd.auto_cd_on_add = true`. PowerShell is currently not supported for shell integration.
+
+### Tab Completion
+
+**Bash:**
+
+```bash
+source <(gwq completion bash)
+```
+
+**Zsh:**
+
+```bash
+source <(gwq completion zsh)
+```
+
+**Fish:**
+
+```bash
+gwq completion fish > ~/.config/fish/completions/gwq.fish
+```
+
+**PowerShell:**
+
+```powershell
+gwq completion powershell | Out-String | Invoke-Expression
+```
+
+## Configuration
+
+### Configuration Files
+
+gwq uses two configuration files:
+
+| File   | Location                        | Purpose                           |
+| ------ | ------------------------------- | --------------------------------- |
+| Global | `~/.config/gwq/config.toml`     | Default settings for all projects |
+| Local  | `.gwq.toml` (current directory) | Project-specific overrides        |
+
+Local configuration takes precedence over global settings.
+
+**Example global config** (`~/.config/gwq/config.toml`):
+
+```toml
+[worktree]
+basedir = "~/worktrees"
+auto_mkdir = true
+
+[finder]
+preview = true
+
+[naming]
+template = "{{.Host}}/{{.Owner}}/{{.Repository}}/{{.Branch}}"
+sanitize_chars = { "/" = "-", ":" = "-" }
+
+[cd]
+launch_shell = false  # Use shell integration instead of launching a new shell
+auto_cd_on_add = false  # Auto-cd after 'gwq add' when shell integration is active
+
+[ui]
+icons = true
+tilde_home = true
+
+[[repository_settings]]
+repository = "~/src/myproject"
+copy_files = ["templates/.env.example"]
+setup_commands = ["npm install"]
+basedir = "./worktrees"
+```
+
+### Key Settings
+
+| Setting             | Description                                                         | Default                                            |
+| ------------------- | ------------------------------------------------------------------- | -------------------------------------------------- |
+| `worktree.basedir`  | Base directory for worktrees                                        | `~/worktrees`                                      |
+| `naming.template`   | Directory naming template                                           | `{{.Host}}/{{.Owner}}/{{.Repository}}/{{.Branch}}` |
+| `ui.tilde_home`     | Display `~` instead of full home path                               | `true`                                             |
+| `cd.launch_shell`   | Launch a new shell for `gwq cd` (set `false` for shell integration) | `true`                                             |
+| `cd.auto_cd_on_add` | Auto-cd after `gwq add` when shell integration is active            | `false`                                            |
+| `ui.icons`          | Show icons in output                                                | `true`                                             |
+
+### Per-Repository Setup
+
+Configure automatic file copying and setup commands per repository. These settings can be defined in both global and local configuration files.
+
+```toml
+[[repository_settings]]
+repository = "~/src/myproject"
+copy_files = ["templates/.env.example", "config/*.json"]
+setup_commands = [
+    "npm install",
+    'echo "{{.Branch}}" > .worktree-branch',
+]
+basedir = "./worktrees"
+```
+
+#### Template variables in `setup_commands`
+
+Each string in `setup_commands` is rendered with Go `text/template` and then executed via POSIX `sh -c`. Available variables:
+
+| Variable          | Example                                          |
+| ----------------- | ------------------------------------------------ |
+| `{{.Host}}`       | `github.com` (empty if no remote)                |
+| `{{.Owner}}`      | `d-kuro` (empty if no remote)                    |
+| `{{.Repository}}` | `gwq` (empty if no remote)                       |
+| `{{.Branch}}`     | `feature/new-ui` (raw, not filesystem-sanitized) |
+| `{{.Hash}}`       | `a1b2c3d4` (empty if no remote)                  |
+| `{{.Path}}`       | absolute worktree path                           |
+
+Because commands go through `sh -c`, shell features like `~`, `&&`, pipes, and quoting work. Template variables are substituted textually, so **quote them when the value may contain spaces or shell metacharacters**:
+
+```toml
+setup_commands = [
+    # Write metadata about the worktree to a local file
+    'printf "branch=%s\npath=%s\n" "{{.Branch}}" "{{.Path}}" > .worktree-info',
+    # Create a per-worktree build directory (quote {{.Path}} in case it has spaces)
+    'mkdir -p "{{.Path}}/build"',
+    # Append a line to a history file so you can audit created worktrees
+    'echo "{{.Branch}} -> {{.Path}}" >> ~/.gwq-history',
+]
+```
+
+This matters most for `{{.Path}}` — worktree paths can contain spaces.
+
+Setup commands are a code-execution vector; local `.gwq.toml` files must be trusted before they run (see the trust prompt documentation).
+
+Unknown keys (e.g. `{{.Foo}}`) cause that command to be skipped with an error logged to stderr — they are not silently rendered as empty. Commands containing literal `{{` or `}}` must escape them using Go template syntax (`{{"{{"}}`), otherwise the template will fail to parse.
+
+#### Merge Behavior
+
+When both global and local configs define `repository_settings`, they are merged using the `repository` field as the key:
+
+- **Same repository**: Local settings completely override global
+- **Different repositories**: Both are kept
+
+**Example:**
+
+Global config (`~/.config/gwq/config.toml`):
+
+```toml
+[[repository_settings]]
+repository = "~/src/project-a"
+setup_commands = ["npm install"]
+
+[[repository_settings]]
+repository = "~/src/project-b"
+setup_commands = ["go mod download"]
+```
+
+Local config (`.gwq.toml`):
+
+```toml
+[[repository_settings]]
+repository = "~/src/project-a"
+setup_commands = ["yarn install", "yarn build"]
+
+[[repository_settings]]
+repository = "~/src/project-c"
+setup_commands = ["make setup"]
+```
+
+**Merged result:**
+| Repository | Source | Commands |
+|------------|--------|----------|
+| `project-a` | Local (override) | `yarn install`, `yarn build` |
+| `project-b` | Global | `go mod download` |
+| `project-c` | Local (new) | `make setup` |
+
+## Advanced Usage
+
+### Unified Workflow with ghq and fzf
+
+For a powerful development workflow, you can integrate `gwq` with [ghq](https://github.com/x-motemen/ghq) (repository manager) and [fzf](https://github.com/junegunn/fzf) (fuzzy finder). This combination is particularly effective for parallel AI coding agent workflows.
+
+The key idea is to place worktrees alongside your cloned repositories under the same root directory, enabling unified fuzzy search across both. This consolidates all your development directories into a single searchable location.
+
+For detailed configuration and shell function setup, see: [A Coding-Agent-Friendly Environment Is Friendly to Humans Too: ghq x gwq x fzf](https://dev.to/shunk031/a-coding-agent-friendly-environment-is-friendly-to-humans-too-ghq-gwq-fzf-2km0)
+
+## Directory Structure
+
+`gwq` organizes worktrees using a URL-based hierarchy:
+
+```
+~/worktrees/
+├── github.com/
+│   └── user/
+│       └── myapp/
+│           ├── feature-auth/
+│           └── feature-api/
+└── gitlab.com/
+    └── company/
+        └── project/
+            └── feature-x/
+```
+
+This structure prevents naming conflicts and preserves context about which repository a worktree belongs to.
+
+When a per-repository `basedir` is configured, worktrees are rooted there instead of the global basedir. The path within still follows the naming template:
+
+```
+~/src/myproject/
+├── worktrees/
+│   └── github.com/
+│       └── user/
+│           └── myproject/
+│               ├── feature-auth/
+│               └── feature-api/
+└── ...
+```
+
+To get a `<basedir>/<repo>/<branch>` structure, set `naming.template = "{{.Repository}}/{{.Branch}}"`. Note that `naming.template` is a global setting and affects all repositories:
+
+```
+~/src/myproject/
+├── worktrees/
+│   └── myproject/
+│       ├── feature-auth/
+│       └── feature-api/
+└── ...
+```
+
+## Requirements
+
+- Git 2.5+ (for worktree support)
+- Go 1.24+ (for building from source)
+
+## License
+
+Apache License 2.0 - see [LICENSE](LICENSE) file for details.

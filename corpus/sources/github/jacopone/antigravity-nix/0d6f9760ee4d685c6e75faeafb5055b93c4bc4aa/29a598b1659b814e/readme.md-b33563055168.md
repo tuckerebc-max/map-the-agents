@@ -1,0 +1,231 @@
+# antigravity-nix
+
+Auto-updating Nix Flake for Google Antigravity -- zero configuration, multi-platform, version-pinned.
+
+[![Update Antigravity](https://github.com/jacopone/antigravity-nix/actions/workflows/update.yml/badge.svg)](https://github.com/jacopone/antigravity-nix/actions/workflows/update.yml)
+[![Flake Check](https://img.shields.io/badge/flake-check%20passing-success)](https://github.com/jacopone/antigravity-nix)
+[![NixOS](https://img.shields.io/badge/NixOS-ready-blue?logo=nixos)](https://nixos.org)
+
+## What This Provides
+
+- **Three Components**: Packages for Antigravity 2.0 (Base App), Antigravity IDE, and Antigravity CLI (`agy`).
+- **FHS environment** wrapping the upstream GUI binaries with all required libraries.
+- **Automated updates** via GitHub Actions (daily at 0700 UTC), with hash verification and build testing.
+- **Multi-platform**: Linux (`x86_64`, `aarch64`) is built and verified in CI. macOS (`x86_64-darwin`, `aarch64-darwin`) packages are provided and evaluate, but are **experimental and currently untested** — see [macOS](#macos-experimental).
+- **Version pinning** through tagged releases for reproducible builds.
+
+## Migrating from Antigravity 1.x
+
+Antigravity 2.0 (May 2026) split the product into three packages, and this flake's defaults changed to match:
+
+- **`default` / `google-antigravity` is now the standalone Antigravity 2.0 app** (agent orchestration), not the IDE. In the 1.x flake this attribute was the IDE.
+- **The IDE is now `google-antigravity-ide`** (`antigravity-ide` on `PATH`). It remains available, but Google is steering users toward the 2.0 app, so treat it as legacy.
+- **The CLI (`agy`) is new** — it is the successor to the Gemini CLI.
+
+If your config referenced `google-antigravity` / `google-antigravity-no-fhs` expecting the IDE, switch to `google-antigravity-ide` / `google-antigravity-ide-no-fhs`. Because this flake pins versions, you upgrade on your own schedule (`nix flake update antigravity-nix`) — unlike the upstream app, an update here can never silently replace your IDE.
+
+## Quick Start
+
+Run the Antigravity Base App (default):
+```bash
+nix run github:jacopone/antigravity-nix
+```
+
+Run the Antigravity IDE:
+```bash
+nix run github:jacopone/antigravity-nix#google-antigravity-ide
+```
+
+Run the CLI tool (`agy`):
+```bash
+nix run github:jacopone/antigravity-nix#google-antigravity-cli
+```
+
+## Installation
+
+### NixOS Configuration
+
+Add to your `flake.nix`:
+
+```nix
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = { self, nixpkgs, antigravity-nix, ... }: {
+    nixosConfigurations.your-hostname = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        {
+          environment.systemPackages = [
+            antigravity-nix.packages.x86_64-linux.default # Base App
+            antigravity-nix.packages.x86_64-linux.google-antigravity-ide # IDE
+            antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
+          ];
+        }
+      ];
+    };
+  };
+}
+```
+
+### Home Manager
+
+```nix
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = { self, nixpkgs, home-manager, antigravity-nix, ... }: {
+    homeConfigurations.your-user = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      modules = [
+        {
+          home.packages = [
+            antigravity-nix.packages.x86_64-linux.default
+            antigravity-nix.packages.x86_64-linux.google-antigravity-ide
+            antigravity-nix.packages.x86_64-linux.google-antigravity-cli
+          ];
+        }
+      ];
+    };
+  };
+}
+```
+
+### Overlay
+
+```nix
+{
+  nixpkgs.overlays = [
+    inputs.antigravity-nix.overlays.default
+  ];
+
+  environment.systemPackages = with pkgs; [
+    google-antigravity
+    google-antigravity-ide
+    google-antigravity-cli
+  ];
+}
+```
+
+## Package Variants
+
+For the GUI applications (`google-antigravity` and `google-antigravity-ide`), two packaging strategies are available:
+
+| Variant | Strategy | Trade-off |
+|---|---|---|
+| `default` / `google-antigravity` | `buildFHSEnv` + bubblewrap | Sandboxed, but inherits `no_new_privileges` restrictions |
+| `google-antigravity-no-fhs` | `autoPatchelfHook` | No sandbox, full system integration |
+
+The **default** uses `buildFHSEnv` to create an isolated FHS environment via bubblewrap. This is the most compatible approach, but the sandbox sets the kernel's `no_new_privileges` flag, which prevents privilege escalation (`sudo`, `pkexec`) and can cause issues with nested namespaces.
+
+The **no-fhs** variant uses `autoPatchelfHook` to patch ELF binaries directly, the same approach used by VS Code in nixpkgs. It runs natively on NixOS without sandboxing.
+
+```nix
+# Use the no-fhs variant
+home.packages = [
+  antigravity-nix.packages.${system}.google-antigravity-no-fhs
+];
+```
+
+Or via override:
+
+```nix
+google-antigravity.override { useFHS = false; }
+```
+
+### Chrome Profile Isolation
+
+By default, Antigravity GUI apps use your system Chrome profile (`~/.config/google-chrome`), giving access to your installed extensions. To run with an isolated Chrome profile instead (e.g., when testing untrusted apps):
+
+```nix
+google-antigravity.override { useSystemChromeProfile = false; }
+```
+
+This omits the `--user-data-dir` and `--profile-directory` flags, letting Chrome manage its own profile independently. Works with both FHS and non-FHS variants.
+
+## Usage
+
+```bash
+antigravity                  # launch Antigravity Base App
+antigravity-ide              # launch Antigravity IDE
+agy                          # use the Antigravity CLI
+```
+
+## Version Pinning
+
+```nix
+# Follow latest (recommended)
+inputs.antigravity-nix.url = "github:jacopone/antigravity-nix";
+
+# Pin to a specific release
+inputs.antigravity-nix.url = "github:jacopone/antigravity-nix/v2.0.3-6242596486512640";
+```
+
+Update to the latest version:
+
+```bash
+nix flake update antigravity-nix
+```
+
+All releases: https://github.com/jacopone/antigravity-nix/releases
+
+## Troubleshooting
+
+### IDE Freezes on Close (Known Upstream Issue)
+
+The Antigravity IDE currently has a known bug across all Linux distributions (not just NixOS) where it may freeze the system upon closing. As a workaround, you can force-kill the process immediately *after* closing the window to prevent the freeze (do not run this before closing, or your work may not be saved):
+
+```bash
+pkill -9 -f antigravity-ide
+```
+
+### `fetchurl` fails or hash mismatches
+
+If the default `fetchurl` path fails — Google CDN unreachable, regional restrictions, hash drift after an upstream republish, corporate firewall — you can supply the tarball locally via `srcOverride`:
+
+1. Download the respective tarball from Antigravity.
+2. Point the package at it:
+
+```nix
+(antigravity-nix.packages.${system}.default.override {
+  srcOverride = /absolute/path/to/Antigravity.tar.gz;
+})
+```
+
+This bypasses `fetchurl` while keeping the rest of the packaging (FHS wrapping, Chrome integration, desktop entry) intact. No `--impure` and no patching required. Works for both the `default` and `no-fhs` variants.
+
+## Requirements
+
+- Nix with flakes enabled
+- `allowUnfree = true` (Antigravity is proprietary software)
+- On `aarch64-linux`, Chromium is used automatically since Google Chrome is unavailable
+
+### macOS (experimental)
+
+The darwin packages (`x86_64-darwin`, `aarch64-darwin`) evaluate and fetch the official macOS builds, but are **untested** — CI builds and verifies Linux only. The CLI (`agy`, a plain binary) is the most likely to work; the GUI apps copy the `.app` into `$out/Applications` without code-signing or quarantine handling and may not launch cleanly. Reports and fixes from macOS users are welcome.
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Test with `nix build` and `nix flake check`
+4. Submit a pull request
+
+## License
+
+MIT License -- see [LICENSE](LICENSE) for details.
+
+Google Antigravity is proprietary software by Google LLC. This is an unofficial package, not affiliated with or endorsed by Google.

@@ -1,0 +1,40 @@
+---
+name: "Prime Agent"
+slug: "prime-agent"
+layout: "agent.njk"
+category: "agent"
+maker: "PrimeIntellect-ai"
+license: "MIT"
+url: "https://github.com/PrimeIntellect-ai/prime-agent"
+source_code_url: "https://github.com/PrimeIntellect-ai/prime-agent"
+source_available: "Yes"
+platforms:
+  - "CLI"
+  - "IDE"
+  - "Autonomous"
+first_released: "2026-05-08"
+current_release: "2026-08-20"
+stars: "17385"
+language: "TypeScript (TUI), Python (agent runtime)"
+homepage: null
+mcp_support: "no"
+plugin_support: "yes (skills as importable Python packages)"
+claude_code_plugin: "no"
+subagents: "yes (rlm(...) spawns child agents for parallel/background work)"
+hooks: "no"
+plan_mode: "no"
+model_providers: "subscription and API-key (BYOK) providers via /login"
+pricing: "open-source (MIT); subscription and BYOK options"
+install_method: "binary"
+docs_url: "https://github.com/PrimeIntellect-ai/prime-agent/blob/main/packages/coding-agent/docs/index.md"
+plugin_docs_url: "https://github.com/PrimeIntellect-ai/prime-agent/blob/main/packages/coding-agent/docs/skills.md"
+config_docs_url: "https://github.com/PrimeIntellect-ai/prime-agent/blob/main/packages/coding-agent/docs/providers.md"
+download_url: "https://app.primeintellect.ai/prime-agent/install.sh"
+maintained: "active"
+sources:
+  - "brad"
+  - "zhouhao"
+what_makes_it_special: "Uses a Recursive Language Model (RLM) that treats context as variables and tools as function calls in a persistent IPython REPL, combined with a Continual Harness that self-improves via /refine — persisting lessons, memories, and reusable subagent specifications as durable state across sessions."
+---
+
+Prime Agent exists because long tasks break harnesses that hold all context in a shrinking window: it instead puts the model in a persistent IPython REPL where the prompt is a variable, tools are functions, and rlm(...) spawns child agents that run in parallel and message each other directly without routing through the user. Everything is programmatic — file operations, shell commands, context management — which makes the agent's behavior inspectable and composable rather than a sequence of opaque tool calls. A Continual Harness accumulates what works across a session, and /refine reviews the trajectory and applies small evidence-backed updates to memories, skills, and subagent specs, with snapshots for rollback and the base prompt left untouched. Sessions are daemon-backed with heartbeats, schedules, persistent goals, and a bounded autonomous mode with quality gates. Prime Intellect built it for long-running research and evaluation work alongside its Verifiers and PRIME-RL stack, and the README warns plainly that it is not a security sandbox.

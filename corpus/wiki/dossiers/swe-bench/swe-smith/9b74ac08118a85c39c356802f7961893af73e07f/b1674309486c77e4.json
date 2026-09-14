@@ -1,0 +1,626 @@
+{
+  "applied_operation_id": "op_5d228fe32c5b4177bcf96187cecc2764",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_91847c08b29c3888c967faee8796c4e7421eaaf3eb5ea232b31cf6af747718a7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L28-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f0873024e047c1e11365e1188b4fa0d11535ae312f118289434eb6b623c794ac"
+      ],
+      "text": "SWE-smith is described as a toolkit for training SWE-agents that can turn any GitHub repository into a SWE-gym and create tasks such as file localization and program repair."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b5b9d02bf71631cf3e0ece14eaf3a1bc356c5e0512ea8f5f66ed92bc82b2674",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L36-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d0df2201e80744564fa5fdc50d3a13cff367d3c53b5c4f55c22afdc9807ef45b"
+      ],
+      "text": "Creating execution environments requires Docker; the project was developed and tested on Ubuntu 22.04.4 LTS, and Windows or MacOS support is not planned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00c534d9a19f30c0aeb36b258579b173bd2750877bf9deeee2b3023b615875ed",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 54,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L47-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a54c6eada88f71e1e08cc66efc722f6243b9447f01d095580d11ab932d6f421c"
+      ],
+      "text": "The package exposes a Python API: a repo profile registry can fetch a RepoProfile from a task instance and obtain a Docker container with the task initialized."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_360be28bf80117d07582c07a13d4bcc332c309d8d31f9d1069da1a95fd548408",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "6d71fb2e1c44f1fb317fcdb64e91f0288b25abfa",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "docs/getting_started/installation.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/installation.md#L11-L15"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "6d71fb2e1c44f1fb317fcdb64e91f0288b25abfa",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/getting_started/installation.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/installation.md#L5-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a3f04e7bde9c3329d0dab81b9e31b39339144bf3b250f897c43ac4b01052721",
+        "slc_8362990d46a47baf6b098f9ce2cdb396eb1022b90deb070ada2228a3b1f06dec"
+      ],
+      "text": "The toolkit is distributed as the pip package 'swesmith', with a source-install path via a setup.sh script in the cloned repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60304b7fe55ae495e4887467f3bae786d43986fb0c3ac526a774a489d8af1a71",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 44,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L40-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c357b5facfaae049d3037e61576fc6ca21d24105fe28f10ed5d20ad9a29d36e"
+      ],
+      "text": "The documented pipeline for building a dataset is: create an environment, synthesize task instances, keep tasks that break one or more unit tests, then generate issue text for the tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53229cee4b3c76a6753e28dea31f0e88f296efa7ccf108dc7012aad1b9571a01",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "601f9814682e41748c76b30cf4969b2c187bf837",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "docs/getting_started/quickstart.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/quickstart.md#L16-L16"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "601f9814682e41748c76b30cf4969b2c187bf837",
+          "line_end": 31,
+          "line_start": 25,
+          "path": "docs/getting_started/quickstart.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/quickstart.md#L25-L31"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "601f9814682e41748c76b30cf4969b2c187bf837",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "docs/getting_started/quickstart.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/quickstart.md#L9-L13"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "601f9814682e41748c76b30cf4969b2c187bf837",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/getting_started/quickstart.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/quickstart.md#L19-L19"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "601f9814682e41748c76b30cf4969b2c187bf837",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "docs/getting_started/quickstart.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/quickstart.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67d7580e1c7dee306397f6581799670d75d6ec05717d00ff514d00961b564c63",
+        "slc_8d864d8f6e32a9e8c14349a045bbebdd1d33b4b01d6511301e0082a61dca02a7",
+        "slc_c30ff6ff4ea4dff9355901f2c837692df35d61e2aac3bd1815e6b15e0163aeda",
+        "slc_dd78cef9e193f67e32a729ae8da34c946b09c6972c1592fa8656409ab730e0ea",
+        "slc_fdf41a8eaf4a5b9956d6cbb504bf5891f778f0276d1630d74029155a61b88104"
+      ],
+      "text": "A quickstart shows concrete commands: an LM-based bug-generation module (e.g. swesmith.bug_gen.llm.modify with a config file, model, n_bugs, and worker count), patch collection, validation via swesmith.harness.valid, gathering valid instances, and issue generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b4c1b5c169308a82ba1673739587bb98790068c88c4e60316d9445214e1c473",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "5533dd8886c7c15f76f13589e382537fe37bec01",
+          "line_end": 8,
+          "line_start": 5,
+          "path": "docs/getting_started/assets.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/assets.md#L5-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16132da8d9cb5edc43990ca7e71a9ef5b4e01d0e732d0fc81264b75051b7cb41"
+      ],
+      "text": "Released assets include environments for 128 GitHub repositories as Docker images, downloadable via a bundled download_images.py script."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f242f840e3c074f4dbd671664a685160c6a7130a757c2b6b304dea3e33721ca",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "5533dd8886c7c15f76f13589e382537fe37bec01",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "docs/getting_started/assets.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/assets.md#L10-L10"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "5533dd8886c7c15f76f13589e382537fe37bec01",
+          "line_end": 16,
+          "line_start": 12,
+          "path": "docs/getting_started/assets.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/assets.md#L12-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f518a574d37dad63f9e83d09f0b851dca22fd1e231469e20ba448f0eae3104b",
+        "slc_3163adf9566cbb716ef7acfa9a3eb04b6d751f1b003679880a7e27d8385a2da9"
+      ],
+      "text": "Released assets include a HuggingFace dataset of 50k+ task instances, 5k expert trajectories, and fine-tuned 32B and 7B models based on Qwen 2.5 Coder Instruct."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e27e56b12ae476c820e293de5738224250e9f4630b15133ce432e114c9ea1b02",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "5533dd8886c7c15f76f13589e382537fe37bec01",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "docs/getting_started/assets.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/assets.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7867fbd524e304cdbd14c62f94183a469b15ca3e28019711b036585cba2e0c16"
+      ],
+      "text": "SWE-Rater-32B, a Qwen 2.5 Coder Instruct 32B model fine-tuned on human-annotated ratings of SWE-bench task difficulty, is released as a HuggingFace model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4671d0338deb3388a32eccf75e4677a78c6184b9900e8efe1237c2ac61d9d3c0",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 67,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L64-L67"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "5533dd8886c7c15f76f13589e382537fe37bec01",
+          "line_end": 16,
+          "line_start": 12,
+          "path": "docs/getting_started/assets.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/assets.md#L12-L16"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 61,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L59-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00968af3b5a5b69e95ea4575e2ce4ab98fc5e65de6c977628e06617aa1a895d9",
+        "slc_3163adf9566cbb716ef7acfa9a3eb04b6d751f1b003679880a7e27d8385a2da9",
+        "slc_bd524ab40f1e7644024f539fe9bdd8d75db0b2ec3f4355f3cec549a0a992650b"
+      ],
+      "text": "The fine-tuned SWE-agent-LM-32B reportedly achieves 40.2% pass@1 on SWE-bench Verified, and the README claims a 32% jump from fine-tuning Qwen 2.5 Coder with SWE-agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf059549e5d7d1524f164073af267f0d6342b4cde38de156abe48924f8fd9cee",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L79-L79"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 24,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L1-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38dc7203eb73523aaa4cf627b72c10337a756fd0904e87375c843bd77eac012e",
+        "slc_8ad9e9964507d8762a58bd4706559cfb127cb38fbd5132ec1233a3348ccb0d01"
+      ],
+      "text": "The README badge indicates Python 3.10+ is required, and the project is MIT licensed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5860cc1cd80681c39ff1ab13cc4e9adcbc85ed48aeb96025dbe482d9d33d489",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "6d71fb2e1c44f1fb317fcdb64e91f0288b25abfa",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/getting_started/installation.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/installation.md#L17-L17"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "6d71fb2e1c44f1fb317fcdb64e91f0288b25abfa",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "docs/getting_started/installation.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/installation.md#L19-L21"
+        },
+        {
+          "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+          "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+          "line_end": 73,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "swe-bench/swe-smith",
+          "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md#L72-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81aa9527bbedd738d076a3844595144d3d6b7e4a2d1f772785ca3af4518d55b0",
+        "slc_bc3cda560b356df172288c4b5da75ae7b1991b67f2cf5c5c4f7a759f56abe8f8",
+        "slc_f307e6bb0f9e2bd9880019774389496331cad2ecbebd884b9beeba95ac51e0f9"
+      ],
+      "text": "Repository development practice: contributors are asked to additionally run 'pre-commit install' after setup, and a Contributing Guide is referenced for further details."
+    }
+  ],
+  "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 108,
+        "path": "README.md",
+        "size": 5217
+      },
+      {
+        "lines": 2,
+        "path": "docs/docs/index.md",
+        "size": 101
+      },
+      {
+        "lines": 19,
+        "path": "docs/getting_started/assets.md",
+        "size": 1217
+      },
+      {
+        "lines": 29,
+        "path": "docs/getting_started/index.md",
+        "size": 1145
+      },
+      {
+        "lines": 21,
+        "path": "docs/getting_started/installation.md",
+        "size": 295
+      },
+      {
+        "lines": 35,
+        "path": "docs/getting_started/quickstart.md",
+        "size": 1496
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/assets/traj_ids_swealm32b.txt",
+        "reason": "byte-budget",
+        "size": 274738
+      },
+      {
+        "path": "docs/guides/create_instances.md",
+        "reason": "file-budget",
+        "size": 9335
+      },
+      {
+        "path": "docs/guides/difficulty_rating.md",
+        "reason": "file-budget",
+        "size": 2652
+      },
+      {
+        "path": "docs/guides/env_construction.md",
+        "reason": "file-budget",
+        "size": 2372
+      },
+      {
+        "path": "docs/guides/env_construction_py.md",
+        "reason": "file-budget",
+        "size": 5308
+      },
+      {
+        "path": "docs/guides/harnesses.md",
+        "reason": "file-budget",
+        "size": 3270
+      },
+      {
+        "path": "docs/guides/index.md",
+        "reason": "file-budget",
+        "size": 2637
+      },
+      {
+        "path": "docs/guides/issue_gen.md",
+        "reason": "file-budget",
+        "size": 2050
+      },
+      {
+        "path": "docs/guides/train_swe_agent.md",
+        "reason": "file-budget",
+        "size": 4412
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 194
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 8140
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 344,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 17,
+      "complete": false,
+      "omitted": 11,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_8023f9f5fefe57259d5ddf59c662a154",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/swe-bench/swe-smith/9b74ac08118a85c39c356802f7961893af73e07f/b1674309486c77e4/manifest.json",
+  "package_id": "pkg_67b2e4a45a6270bfd273fdbf73ab02fff2e8dc5a77d4adfd695ff62e1e4222ba",
+  "repo": "swe-bench/swe-smith",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0e1fb97ef58f3b258fc0490f6161a9ffa4f6beae0b19ef7961fbf7c2b36f2e98",
+  "snapshot_id": "b1674309486c77e4",
+  "sources": [
+    {
+      "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+      "git_sha": "1f35c75566d7803e0cab5a9d71949536f6c32a64",
+      "lines": 108,
+      "path": "README.md",
+      "repository": "swe-bench/swe-smith",
+      "sha256": "058ccfb4465b3d067ac53eae9db43d55dfdaf180fcae438880901e3b192584b7",
+      "source_id": "src_2af848924fdb599ba9393c4e4579d053",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/README.md"
+    },
+    {
+      "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+      "git_sha": "5359af8bdf4bad9d70a92bef9c1a6030a98fa967",
+      "lines": 2,
+      "path": "docs/docs/index.md",
+      "repository": "swe-bench/swe-smith",
+      "sha256": "0f06b6d0fa31813c25bee6c8881650955f349a425e5f7c16b152337e735b66f2",
+      "source_id": "src_60558148817457a182af2710a08e0ace",
+      "stored": "index.md-7dd3ba15306f.md",
+      "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/docs/index.md"
+    },
+    {
+      "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+      "git_sha": "5533dd8886c7c15f76f13589e382537fe37bec01",
+      "lines": 19,
+      "path": "docs/getting_started/assets.md",
+      "repository": "swe-bench/swe-smith",
+      "sha256": "d1ee4fdeb13eacf04ae16faa5d00f4ee20466cf102b48cb830fd93ca6fb7e32a",
+      "source_id": "src_94bb2b0686175144b290e6839dd60dd3",
+      "stored": "assets.md-f755038463b3.md",
+      "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/assets.md"
+    },
+    {
+      "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+      "git_sha": "b0ed4709737a6a2837eadccdb1de6bdeb5b57c5d",
+      "lines": 29,
+      "path": "docs/getting_started/index.md",
+      "repository": "swe-bench/swe-smith",
+      "sha256": "680ebd008f3de7481150f53b5239dd51fcc22d987b8790b7288e170919eaa769",
+      "source_id": "src_00e5243b420f50c8a6a26b0d1617e84f",
+      "stored": "index.md-8604ee8bb65c.md",
+      "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/index.md"
+    },
+    {
+      "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+      "git_sha": "6d71fb2e1c44f1fb317fcdb64e91f0288b25abfa",
+      "lines": 21,
+      "path": "docs/getting_started/installation.md",
+      "repository": "swe-bench/swe-smith",
+      "sha256": "a7ad9d35f0214a6358f2ad868622fc79908573603b3a1c1d06e28d67a8d11a02",
+      "source_id": "src_dc713dc39da45ca09b1d4ff5255ec1af",
+      "stored": "installation.md-753d13585ef8.md",
+      "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/installation.md"
+    },
+    {
+      "commit": "9b74ac08118a85c39c356802f7961893af73e07f",
+      "git_sha": "601f9814682e41748c76b30cf4969b2c187bf837",
+      "lines": 35,
+      "path": "docs/getting_started/quickstart.md",
+      "repository": "swe-bench/swe-smith",
+      "sha256": "6b66383bae5509201c78a307e5638995afd55a618652fd76a570d2d58ee09d1d",
+      "source_id": "src_d54fc61a26f05315aab83e6f17d9646b",
+      "stored": "quickstart.md-5d6489f129e1.md",
+      "url": "https://github.com/SWE-bench/SWE-smith/blob/9b74ac08118a85c39c356802f7961893af73e07f/docs/getting_started/quickstart.md"
+    }
+  ],
+  "summary": "SWE-smith is a Python toolkit (pip-installable, MIT-licensed) for generating synthetic software-engineering training data: it turns GitHub repos into SWE-gym environments, synthesizes task instances, and provides released datasets, Docker environments, and fine-tuned models. Evidence is documentation-only; no source code slices are present.",
+  "superseded_claim_ids": []
+}

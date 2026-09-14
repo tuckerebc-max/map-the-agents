@@ -1,0 +1,735 @@
+{
+  "applied_operation_id": "op_3f6b3eeb40ab4d939f1dafcdfcc84c89",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b514cbb947b741ec1c797a425cf3505288d34db966a872ed76c58c3151ad3ae",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_871925af40129c5d0b2fe99ad8d311d435ac83b192a566d566cdd0824515e8ea"
+      ],
+      "text": "Solo is described as an open-source, local-first workspace for humans and AI coding agents, coordinating multiple agents through channels, threaded conversations, task boards, and channel-scoped teams."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d9f9ac6866d63bc8298d126deccc1fecaa2ce7c96b9b9f2073635243c8be4b6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 120,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L114-L120"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 112,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L112-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0839ac56c7b7577d55702a55cd701ea5bef94582c8820f58cab77a2950330108",
+        "slc_2831f454421340fd397332adda41b70a512f0162ce0efdf263a7ccc7f08ffd82"
+      ],
+      "text": "Agent backends are auto-detected from PATH at daemon startup: Claude Code via stream-json, Codex CLI via JSON-RPC, and OpenCode, Hermes, and OpenClaw via ACP."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15cf1d0db2c4cccc6a46acb0b76d7eea0f05ff41c1f47ce920fe75484f6fe990",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 142,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L140-L142"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L138-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4992547457393703c9460caa9d0512744636505a728b08b18ebfe619963a57da",
+        "slc_60492cd464a7e15b7db814345059378fa2263edba953b064c82288ad7323ec84"
+      ],
+      "text": "Solo runs three local layers: a Go API server on :8080 with WebSocket hub, auth, and PostgreSQL persistence; a daemon on :8081 that registers the machine and manages agent subprocesses; and the installed agent CLI driven over stdin/stdout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_529591f0951196d4ec30731b943fa0fbfc9915c5fbd0fcaba7ecc87e32c497a3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 147,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L144-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3b0f738374f926eb3ed300938a78c4cfb76512efe6f619f28999742ac8808c9"
+      ],
+      "text": "The runtime topology is Browser (Next.js :3000) to Server (Go :8080) over WebSocket, Server to Daemon over HTTP/SSE, and Daemon to Agent CLI over stdin/stdout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_362ac9079c62f9f7df5383f7988b6472e0f438c10aa6f0bfa2870bb41dce21ff",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 134,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L126-L134"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c0d5175655e1e08853b0749eda53c60818f874a37731c5523044e6cd41ecfae",
+        "slc_cb0319c2c81922e307ec1226d828ccbb99253a2d15b89198b809de7523e7eeff"
+      ],
+      "text": "Agents keep agent-specific MEMORY.md context that is loaded into future sessions, and the comparison table says agents retain long-term memory, their own environment, and a fixed workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_69e89c53c4d73c4f32d2e4d9de00c0621bc0ee727d3010877336d69043771a7a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 134,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L126-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c0d5175655e1e08853b0749eda53c60818f874a37731c5523044e6cd41ecfae"
+      ],
+      "text": "Core concepts include channels, long-lived agents, Kanban tasks with states todo/in_progress/in_review/done/closed, channel-scoped teams, memory, an inbox for mentions and DMs, and reviewable artifacts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_670bee5f77ec370c6c4236289435da15ba5154dedf31b53a8195ad5232edaf3c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L55-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8209d22a736fa73c2a0ab794aa8d4b97c2366761f59782735902061b20cf6c6e"
+      ],
+      "text": "Solo is intentionally a workspace rather than a company simulator, where agents can be mentioned, assigned, reviewed, remembered, and trusted with visible work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e957804a6fde39af42bbf63f7dc13f496b87342bfb7d049e61f83cdced2bcb8",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L88-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_df8ec7096c42af0f99caa23bdb1f03d8fbe8b0bfd7b92fdf69766479e4e4a04a"
+      ],
+      "text": "Agent team templates let users choose an official workflow or describe a goal to Lucy, preview roles and working relationships, and create agents scoped to one channel with post-creation tuning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_74bd9c399e6905f97facddea1770f4494115d76e1207fb9a91e0e7a413f7c395",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L59-L59"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L16-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24bae0ca9af16b449fc438ed3e1ccd9d656f7062be91842d8a8841341c21f877",
+        "slc_42c86e7dd56ecb718c6934cfb9d4071439c7c85a3b7c5611b1b5c2c6dd1d20b2"
+      ],
+      "text": "Running Solo requires Go 1.25+, Node.js 20+, npm, Docker, and at least one supported agent CLI on PATH; README badges also display Go 1.22+ and Node 20+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8150547612d9e2bf75eb8866f1b671801024ceccf12cf4fc9980a43cfd3cd6ed",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "c285793c880e250980ac0359f9131f004800f5c2",
+          "line_end": 9,
+          "line_start": 3,
+          "path": "AGENTS.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/AGENTS.md#L3-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b72f72ed3feeb2ba4ca87b35ba1687261fdddb2c6a1548365567ea50117e4c77"
+      ],
+      "text": "Repository development practice: contributor rules require a complete architecture design before implementation, whole-project review of changes, and E2E validation using real frontend, API server, and PostgreSQL with no mocks for HTTP routes, services, or database behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b760d4977d82ca2ac227b16909fbb9e1341fb7b80980924261609bed3f5b9f1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "c285793c880e250980ac0359f9131f004800f5c2",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "AGENTS.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/AGENTS.md#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d6beedd65b6798171b74d6d66ab5e9d7b92869de4a5064c0f1633234f20c479"
+      ],
+      "text": "Repository development practice: agents may restart the frontend, API server, and daemon only via `make rebuild` from the repo root, and must never use launchctl, direct binaries, go run, npm run dev, nohup, or custom background commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a14beaeebf55d3dda63ff2a22a9253c1a555836c3f8768eade844eab6891d946",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L69-L69"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 65,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L61-L65"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L67-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50e3f640734166d3910784341eb33f155cd4d82bd6310492c6d4ef579a0e0fa4",
+        "slc_b3ce1004d6336b761216bafc8f987cd55408bd3e289b6b6aa2e32bdd90b12d1e",
+        "slc_f39abf16f04cd34a10fa687bc10088729d89da7fc05b74e4ebc232418ef7aea0"
+      ],
+      "text": "Repository development practice: `make dev` bootstraps the project by creating .env, installing frontend dependencies, starting PostgreSQL, running migrations, and launching the app, which is then opened at http://localhost:3000."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db18ff26dbe334f9fd3cdb06e19553e9325018cf2c89471aef795a9702b2cad7",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "174198777a0685e233f205c2143a0de6e9e3dd3e",
+          "line_end": 12,
+          "line_start": 7,
+          "path": "CHANGELOG.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/CHANGELOG.md#L7-L12"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "174198777a0685e233f205c2143a0de6e9e3dd3e",
+          "line_end": 35,
+          "line_start": 29,
+          "path": "CHANGELOG.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/CHANGELOG.md#L29-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67958062590fd3408766c775a180a32d9cc680248260fa5a6a787b2d726a35d3",
+        "slc_fceb92b33334701965a4cf94ec3205bc189b7df439b6037bef8befc2e2675d16"
+      ],
+      "text": "The changelog documents deterministic agent wake-up routing with idempotency, acknowledgements, durable offline recovery, send-time freshness checks, and wake coalescing for busy agents while preserving distinct messages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fb7485119e0352cb1f6ee6406d436717ccabe1e2f97fb79f4b3baefd729929e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "174198777a0685e233f205c2143a0de6e9e3dd3e",
+          "line_end": 35,
+          "line_start": 29,
+          "path": "CHANGELOG.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/CHANGELOG.md#L29-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fceb92b33334701965a4cf94ec3205bc189b7df439b6037bef8befc2e2675d16"
+      ],
+      "text": "Solo supports remote deployment: the web app, API, PostgreSQL, attachments, and artifacts can run on a remote server while agent runtimes and credentials stay local, with one-time pairing tokens and a `solo` CLI for daemon management."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83f03932f1c26383f2cd62a57e6b019e7a3ba2c6c83f56b1d781a1518a84318e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L122-L122"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+          "line_end": 134,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md#L126-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_71d8dbf6b9f6d92f1a7381f837fa5c17c5a0bb79ac9feea73b1f1b8576fe4cb5",
+        "slc_8c0d5175655e1e08853b0749eda53c60818f874a37731c5523044e6cd41ecfae"
+      ],
+      "text": "Each agent can override system_prompt, model_name, custom_env, and custom_args, and agents are described as having roles and tool access."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c98d456627272e3e128f2df6d724ee230d45bbae284c9036c1f36e71276d13d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "174198777a0685e233f205c2143a0de6e9e3dd3e",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "CHANGELOG.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/CHANGELOG.md#L45-L45"
+        },
+        {
+          "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+          "git_sha": "174198777a0685e233f205c2143a0de6e9e3dd3e",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "CHANGELOG.md",
+          "repository": "solo-agent/solo",
+          "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/CHANGELOG.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e1cb4ea949767adb78c3bfc2894ddb4d648385541a8b5523875f06d9646cb2c",
+        "slc_d4a476a189f3f6a20c5cca2361cc0e14a689ee256f0077cd767d80cbb3edafa8"
+      ],
+      "text": "Repository development practice: the changelog reports real end-to-end test coverage for workspaces, multi-daemon execution, automations, token accounting, remote uploads, governance, wake coalescing, and runtime capability detection."
+    }
+  ],
+  "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 151,
+        "path": "README.md",
+        "size": 6652
+      },
+      {
+        "lines": 15,
+        "path": "AGENTS.md",
+        "size": 1534
+      },
+      {
+        "lines": 45,
+        "path": "CHANGELOG.md",
+        "size": 2856
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5250
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4650
+      },
+      {
+        "path": "README.zh-CN.md",
+        "reason": "file-budget",
+        "size": 6604
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1909
+      },
+      {
+        "path": "THINKING_MODE_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 31942
+      },
+      {
+        "path": "docs/SOLO_ARCH_REPORT_v2_PART_B.md",
+        "reason": "file-budget",
+        "size": 29037
+      },
+      {
+        "path": "docs/SOLO_FUTURE_REPORT_v2_PART_B.md",
+        "reason": "file-budget",
+        "size": 32400
+      },
+      {
+        "path": "docs/SOLO_TECHNICAL_REPORT_v2.md",
+        "reason": "file-budget",
+        "size": 61235
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/fixtures/code-gate-说明.md",
+        "reason": "file-budget",
+        "size": 1081
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/fixtures/reviewer-prompt.txt",
+        "reason": "file-budget",
+        "size": 741
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/fixtures/skills/baseline/pm-arithmetic/SKILL.md",
+        "reason": "file-budget",
+        "size": 289
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/fixtures/skills/candidate/pm-arithmetic/SKILL.md",
+        "reason": "file-budget",
+        "size": 289
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/fixtures/skills/receiver/pm-arithmetic/SKILL.md",
+        "reason": "file-budget",
+        "size": 289
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/fixtures/worker-prompt.txt",
+        "reason": "file-budget",
+        "size": 1188
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/fixtures/版本样例说明.md",
+        "reason": "file-budget",
+        "size": 3960
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/交付核对.md",
+        "reason": "file-budget",
+        "size": 4477
+      },
+      {
+        "path": "docs/acceptance/agent-team-compounding/操作手册.md",
+        "reason": "file-budget",
+        "size": 41640
+      },
+      {
+        "path": "docs/acceptance/solo-ux-convergence/操作手册.md",
+        "reason": "file-budget",
+        "size": 16617
+      },
+      {
+        "path": "docs/design/agent-context-compaction-rollover.md",
+        "reason": "file-budget",
+        "size": 26093
+      },
+      {
+        "path": "docs/design/agent-message-wake-coalescing.md",
+        "reason": "file-budget",
+        "size": 7732
+      },
+      {
+        "path": "docs/design/agent-team-compounding-design-notes.md",
+        "reason": "file-budget",
+        "size": 53653
+      },
+      {
+        "path": "docs/design/agent-team-compounding-gap-and-rollout.md",
+        "reason": "file-budget",
+        "size": 56782
+      },
+      {
+        "path": "docs/design/public-remote-product-architecture.md",
+        "reason": "file-budget",
+        "size": 19107
+      },
+      {
+        "path": "docs/design/remote-runtime-architecture.md",
+        "reason": "file-budget",
+        "size": 26510
+      },
+      {
+        "path": "docs/design/solo-ux-convergence.md",
+        "reason": "file-budget",
+        "size": 17397
+      },
+      {
+        "path": "docs/design/workspace-multi-daemon-architecture.md",
+        "reason": "file-budget",
+        "size": 15383
+      },
+      {
+        "path": "docs/plans/remote-product-completeness.md",
+        "reason": "file-budget",
+        "size": 13104
+      },
+      {
+        "path": "docs/releases/agent-channel-scope.md",
+        "reason": "file-budget",
+        "size": 2998
+      },
+      {
+        "path": "docs/remote-server.md",
+        "reason": "file-budget",
+        "size": 7414
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-22-dashboard-task-entry-design.md",
+        "reason": "file-budget",
+        "size": 3710
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-23-task-artifacts-design.md",
+        "reason": "file-budget",
+        "size": 4453
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-27-single-daemon-run-delivery-recovery-design.md",
+        "reason": "file-budget",
+        "size": 18114
+      }
+    ],
+    "omitted_count": 32,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 917,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 35,
+      "complete": false,
+      "omitted": 32,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_892a6eed32995fde81c1178f846b9d89",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/solo-agent/solo/9d58e66769ed2479c089b531705f09223d37fff3/e6a9f00ed7f2beb8/manifest.json",
+  "package_id": "pkg_3adc521749a819e50734e88822631865fc6a54779c427f66e897169946a86876",
+  "repo": "solo-agent/solo",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f211bd61b9c2d64beb19d26e0ae19dae6ee5731279e67c51a1024ea01c588197",
+  "snapshot_id": "e6a9f00ed7f2beb8",
+  "sources": [
+    {
+      "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+      "git_sha": "c285793c880e250980ac0359f9131f004800f5c2",
+      "lines": 15,
+      "path": "AGENTS.md",
+      "repository": "solo-agent/solo",
+      "sha256": "0adca1eec1024697504621a55f48f4106cd02554dff19f9b02d7adbe3a75e016",
+      "source_id": "src_109c906d1405539e941e767ff6c01186",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/AGENTS.md"
+    },
+    {
+      "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+      "git_sha": "174198777a0685e233f205c2143a0de6e9e3dd3e",
+      "lines": 45,
+      "path": "CHANGELOG.md",
+      "repository": "solo-agent/solo",
+      "sha256": "b2a85bef80314244547e699373849696c2c9342f98051303520c4e84fcf9339a",
+      "source_id": "src_2f5dfa42b3005ce0b474c44c84ed9f6c",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/CHANGELOG.md"
+    },
+    {
+      "commit": "9d58e66769ed2479c089b531705f09223d37fff3",
+      "git_sha": "5a2e7762677d09a4d478f003c9bf60cd2c6ca04a",
+      "lines": 151,
+      "path": "README.md",
+      "repository": "solo-agent/solo",
+      "sha256": "77b14a5682873fa660c124f61f6ce1f1b4fa91c66101d4472e7a576e1cdaa5ff",
+      "source_id": "src_de05b9dbede4509687b6e48c6e693a78",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/solo-agent/solo/blob/9d58e66769ed2479c089b531705f09223d37fff3/README.md"
+    }
+  ],
+  "summary": "Solo Agent is an open-source, local-first workspace coordinating AI coding agents via channels, tasks, teams, and memory, built on a Go server, daemon, and agent CLI architecture; contributor rules in AGENTS.md govern development practice.",
+  "superseded_claim_ids": []
+}

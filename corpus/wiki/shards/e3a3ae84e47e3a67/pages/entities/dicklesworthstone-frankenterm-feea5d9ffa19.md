@@ -1,0 +1,30 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0ee652287001d4ae33177d0b3def495535969f804b700a099122d4820b1cb305
+- clm_12c60edba7a308a82be3f81c29c71c2eb639390ea1e236841cf3a70b9fd5eff4
+- clm_735a327598ce7b0decf61d1f827a564edb2d08ccab93bbd6b104e417e8f48e20
+- clm_90d4ae62b6f68a2efcf473f9a331a7a481ffd9adafe7c428d8d37bc2274ac33c
+- clm_d0137f85e3295818a0c7cb73a24b1869f1ff54f424ef2c9b638fd419f2146987
+- clm_dad1a5bf1de07d03a0856f07526352d88fca3e59476413bff9f3b0b3dda7959e
+- clm_ea459120c95ef373dc95284b07d23d0ea39ff717f607af8c2648befd82f69f66
+- clm_fb337e2cf51c4d55e0ea07500271d803daf8ee09719cd38d19a134f779f14511
+maturity: draft
+page_id: pg_f58b429228135ed0972bfeea5d9ffa19
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: dicklesworthstone/frankenterm
+updated_at: '2026-09-14T03:07:04Z'
+---
+
+# dicklesworthstone/frankenterm
+
+<!-- rcw:begin owner=entity:ent_7a6c64b1801156e4b0ba65d31b5e3e1f block=evidence -->
+- dicklesworthstone/frankenterm is mentioned in this evidence. [@claim:clm_0ee652287001d4ae33177d0b3def495535969f804b700a099122d4820b1cb305] [@claim:clm_12c60edba7a308a82be3f81c29c71c2eb639390ea1e236841cf3a70b9fd5eff4] [@claim:clm_735a327598ce7b0decf61d1f827a564edb2d08ccab93bbd6b104e417e8f48e20] [@claim:clm_90d4ae62b6f68a2efcf473f9a331a7a481ffd9adafe7c428d8d37bc2274ac33c] [@claim:clm_d0137f85e3295818a0c7cb73a24b1869f1ff54f424ef2c9b638fd419f2146987] [@claim:clm_dad1a5bf1de07d03a0856f07526352d88fca3e59476413bff9f3b0b3dda7959e] [@claim:clm_ea459120c95ef373dc95284b07d23d0ea39ff717f607af8c2648befd82f69f66] [@claim:clm_fb337e2cf51c4d55e0ea07500271d803daf8ee09719cd38d19a134f779f14511]
+<!-- rcw:end owner=entity:ent_7a6c64b1801156e4b0ba65d31b5e3e1f block=evidence -->
+
+## Researcher notes
+

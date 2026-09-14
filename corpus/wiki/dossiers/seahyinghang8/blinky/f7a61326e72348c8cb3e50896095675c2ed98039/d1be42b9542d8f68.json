@@ -1,0 +1,425 @@
+{
+  "applied_operation_id": "op_efaf1da25f18446d9826b68b5a651d7b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c03401602f3efe4b5aa47169866f5035af5ceaddf90de6b21d7e78c692774bdb",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L14-L14"
+        },
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_131648bce3d887e0ba89c8f05c349dfbf102307d4637fda2f1d930bbdb0ec5c1",
+        "slc_68afdf6fe4194c8f74fefb27bd937579631407bfea40cd27dd22afad52ae3e4f"
+      ],
+      "text": "Blinky is an open-source AI debugging agent for VSCode that uses LLMs to identify and fix backend code errors, inspired by SWE-agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fdd4c468589c0f5e9eff42ce185abf525ac5033509b7bb3525336959c77e5bee",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L16-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8689fc647b00e73cee0e29a797a1d065b0a790d7efc22bd30b0a0fe3c15f543a"
+      ],
+      "text": "The agent leverages the VSCode API, the Language Server Protocol, and print statement debugging to triangulate bugs in real-world backend systems."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5a7c12c7943199fb22a78cbdc84a60c4be2c6f1e93433af0b6795ea3c7c1bdb8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 30,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L22-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc42ff517d4ad24a87b51c399589b61cd951c1af983f63773b48bffebf8caedf"
+      ],
+      "text": "Users interact through a VSCode chat interface (ghost icon in the sidebar) where they describe the bug and optionally specify repro steps before starting the agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a29924d99170325e657ef9af5318a11c3ec9511c269c47df4fdb26178b5d0901",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L64-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a68bfed36468d32eb1665f1d509323b67e5a54bf0a69da20852c66e3f40c0bff"
+      ],
+      "text": "The agent's tool set includes LSP-based navigation tools GoToDefinition and GetAllReferences, plus GetFilesRelevantToEndpoint for navigating backend systems."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2fe49222c3b6ed5e1a4707b0da0d2b100b9325ed80c67b4fcc4e8e57606f26e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bfccd2457247f60e864c5824c5504e9c0e5583d660d0fb72cc6a9ccca2ef824c"
+      ],
+      "text": "A Verify tool runs the user-specified repro steps; the agent iteratively debugs until the repro test passes and uses execution feedback from its print statements."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59ff641efd91253dcc379f47fc6f81d5fe1c4cdb64f57a276d2cbde14b011d72",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L74-L74"
+        },
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L68-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c841a965c32bf58899ed0f4c6266ce6fa2147e4b8132690c1c13d2e5187d64c7",
+        "slc_e9bc1c659d73a51aafe1d73244b0507e51b689e123c6a6bc54af1cfaf8124427"
+      ],
+      "text": "File editing uses a match-and-replace technique where the agent regenerates the original text with line numbers, which the README says helps catch hallucinations and bad indentation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa1a420b81d9c99d83801da8151cc8bd845ab6828840275eb504061f4bb6f980",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L62-L62"
+        },
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L66-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1be446fa12deea066d86d822c65ea0852c55d58f90bbe59c960b02f21c7430e3",
+        "slc_e757f53cb7930ba3770e162cb6d7b7d0d97d7e0cef0a62a6463a03b420f2aa38"
+      ],
+      "text": "The core agent loop was ported from SWE-agent, and the extension embeds it in VSCode so developers can give feedback mid-run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd6f3524cf536df7a18a2a209a6641189a90014a7245233c121ca8a8ae680647",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c836d25fbaeb10859b1f219641ece108f889be6beda252f87e5abe47102ffb28"
+      ],
+      "text": "On first run the user is prompted for an OpenAI API key, which is stored locally in VSCode config for subsequent calls to OpenAI's server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a11d6ee77adb30a487384e61082e83d0b9a7fe70455a7eb185dddcd4f7991ef1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 36,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L35-L36"
+        },
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 33,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L32-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35e4bbddcbf4e43c3503dac732de1eec132607d2466e270b9448f41cc532e0a0",
+        "slc_f270f54a89d14baccc1b5c83a619d6150d423a785dcaf90a4d4406ae76d04774"
+      ],
+      "text": "User feedback given while the agent runs is incorporated into its subsequent step, and after completion the user can accept or reject the proposed changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_328226f0af8ccfda90c12ccaeb893ce87a2776745045a97a973670284ea93a90",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 90,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L86-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a95f240c88b901489d11871445fb47a59310180158806fe65794a8d147902af2"
+      ],
+      "text": "Users can configure a custom 'Build Ready Text' pattern via Advanced Settings under Specify Repro Steps, used by the verifier to detect when a build step completes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15f43c903d653b129f56f4a02a9ee5952827e071ddd556b1cba005519723ebd7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 90,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L86-L90"
+        },
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a95f240c88b901489d11871445fb47a59310180158806fe65794a8d147902af2",
+        "slc_e1666940962d7e8ab87c04e0105480320fdc5ef7a32b2c995b84be5be6ac851d"
+      ],
+      "text": "As of May 2024, per the README, SOTA LLMs struggle with large edits, motivating the match-and-replace editing approach; long builds are also cited as an unavoidable slowdown."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1dded2f06fbeabe0c4f01a6905c45a241f42f783043c2cf638cddcf0c116098",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L114-L114"
+        },
+        {
+          "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+          "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "seahyinghang8/blinky",
+          "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md#L94-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_653c55850c291f4a9cffe012af84cc2f54fef74a0af8cb51a2a810d24d44320b",
+        "slc_7420018a3f18a7f85618e533e769343b765c72b47bd3402d04e2dbba1e2078bd"
+      ],
+      "text": "Repository development practice: contributors can run `npm run install:all` and press F5 (Debug: Start Debugging) for local extension development, and prompts are edited in src/config/default.yaml before rebuilding."
+    }
+  ],
+  "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 114,
+        "path": "README.md",
+        "size": 7789
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 91,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_c22c610d98305953a9272cc218a16695",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/seahyinghang8/blinky/f7a61326e72348c8cb3e50896095675c2ed98039/d1be42b9542d8f68/manifest.json",
+  "package_id": "pkg_9678b21706a808042ac5738e2265290bb4e062f12354cb802776d7ac8cd9657d",
+  "repo": "seahyinghang8/blinky",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ff45de0fc8656cb41ee0c37466275d4ebb8cdfe399b4f93266a8bc0547dd0a7a",
+  "snapshot_id": "d1be42b9542d8f68",
+  "sources": [
+    {
+      "commit": "f7a61326e72348c8cb3e50896095675c2ed98039",
+      "git_sha": "ce07e951230f7c14a4c30003523f8c0452493594",
+      "lines": 114,
+      "path": "README.md",
+      "repository": "seahyinghang8/blinky",
+      "sha256": "3059f8061019c3173d68b8d096f4191d24e463ff388962f030d4c64b24e144c9",
+      "source_id": "src_c92c64d0ce785893ba7cdce2b3873d27",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/seahyinghang8/blinky/blob/f7a61326e72348c8cb3e50896095675c2ed98039/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: Blinky is an open-source AI debugging agent for VSCode that uses LLMs to identify and fix backend code errors, inspired by SWE-agent. The agent leverages the VSCode API, the Language Server Protocol, and print statement debugging to triangulate bugs in real-world backend systems.",
+  "superseded_claim_ids": []
+}

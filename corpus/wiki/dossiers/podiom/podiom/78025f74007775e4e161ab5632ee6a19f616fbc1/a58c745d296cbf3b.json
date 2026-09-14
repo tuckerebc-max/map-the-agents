@@ -1,0 +1,681 @@
+{
+  "applied_operation_id": "op_f3455910a9154937bb0f320095705ae6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ddf17bd31007bce13bf48a694c7530e45d25b953694cec5b3261ded43d03c321",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 235,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L216-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dd85bb3db9d8bd879503edec97979b8b054782aeea8d6b2e2fb9d53766832606"
+      ],
+      "text": "The repository points to docs/requirements/foundation.md as the authoritative foundation specification, at version v1.6."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a93c12d1c4874d76db8dd80f5a75b5ca0fb7015820cb0ceee237d2f625173ee7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 183,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L182-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c0c442e1a64953028d7483809c3f92457f7607267e06ad7844b4f265cce7ed3c"
+      ],
+      "text": "The podiomd daemon embeds the web SPA and uses pure-Go SQLite, so it needs no external web assets or cgo at runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fdf498203856b650c8e8c6c71458f9585a556b079b559c5b904387b1cf8196c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 210,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L204-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7d9b8fcd8a65316d4674ea10d894981d7f59f84cad3ba8dec6d7e23fc1d74e0"
+      ],
+      "text": "The layout includes a thin CLI client (cmd/podiom), a daemon combining web server, scheduler, and core (cmd/podiomd), internal packages, and a Svelte/Vite/TypeScript/Tailwind web UI built into podiomd."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fb975e63c4deff15c7cbd8230e1d99226cd9ed3b8423ea3a2c574c84df73bd52",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L41-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ac8d543388608f1dab67e7129f5e183c9406ad2475d949d67781fedd4b3eae0"
+      ],
+      "text": "Podiom does not replace the provider runtime; it shells out to the native claude and codex CLIs and reuses their models, MCP servers, tools, skills, and authentication."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbd6e12dc15f991c4eadb946711ba4e393557d97a47701d38f23e4d0c5d1eeb8",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 59,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L52-L59"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 50,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L47-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c6fd38fe5ac54fab4de691f2a80abe77e5ebc8bdd6ec9b436e2c940175c8e34",
+        "slc_b229235aeb8c93558471ba5249f78d7bc709553fd0b0722f111bb3086c080f0d"
+      ],
+      "text": "A goal gives one lead agent an outcome to own over days or weeks; the agent turns it into roadmap tasks and schedules, delegates work, and records periodic reviews with progress, evidence, and next steps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0464bd7c1caae66a132c5829bca2041f41dd5249ed25e236212e939ee8b18f60",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 65,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L61-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9f30ca25a3352a7c02bccca7c3bbf65ee12bd113d6334c4a814a427ffb771a75"
+      ],
+      "text": "Goals run deliberately autonomously: the lead agent and linked tasks or schedules run with full access and no per-action approval prompts, while tool activity is recorded on the goal timeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e8e3a9635acf947cdc2955879fa04f99cb272a4b432ede53b7e636e4efa1d5c",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 86,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L83-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa7f0facd33fa55411b5305dd002646950b2ff24ad9d166bd4cd240f9f55dd61"
+      ],
+      "text": "Podiom stores a canonical history for every session and can replay that history onto a fresh backing CLI session when the provider or profile changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66d8978da7faff08f30f285bd52810e420214e5d3982b88a2cf7b8d7e74aec09",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 200,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L198-L200"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 235,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L216-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6bc2e7fb522da3ca19cb44e3a0cf2ad2b818c78a11672c73d20039024f7b4a2",
+        "slc_dd85bb3db9d8bd879503edec97979b8b054782aeea8d6b2e2fb9d53766832606"
+      ],
+      "text": "The web UI defaults to 127.0.0.1:8787, with bind address and port configurable via server.bind and server.port in config.yaml; a browser-native WebSocket endpoint at /api/ws is also documented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7978f1f3f7cee387ead86ac6a5fc25a82c330faea9d2540c15615fc2ecab7fc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 212,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L212-L212"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 192,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L190-L192"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 115,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L110-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a36840dbaf5a669b8cd53f54ff282c0ffdbb509585fec6ac19401099271ed9d0",
+        "slc_b26bd9c7b59b05b3e3fa9d059eb6ed274a2fc9d923560ba0ef6d02d28e6ac0a1",
+        "slc_eb78586603c308a7157586d3f879852db5ee6d689355ea125330c9bc4d15ffe6"
+      ],
+      "text": "Podiom is local-first: all runtime state lives under one overridable root ($PODIOM_HOME, defaulting to ~/.podiom/), and provider CLIs keep their native authentication and policy controls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c08851172ef66a32e702defd2c6498a685fa13b306492abbd9b6f965034fc58a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 115,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L110-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eb78586603c308a7157586d3f879852db5ee6d689355ea125330c9bc4d15ffe6"
+      ],
+      "text": "Native iOS and Android mobile apps can connect to standalone daemons or an opt-in, API-only Home Assistant LAN endpoint, and the same core can run as a Home Assistant add-on or in a container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8040fb01daba8a75b63cd13f5668dd58ccb3ab9b1192368a0c4adbe336e8d767",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+          "line_end": 125,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md#L119-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6891e995c70d7caa4d2fb0c696d6bdfa732ef2bc6eae6c65a7513d5e9b9ac588"
+      ],
+      "text": "The project targets developers already using Claude Code or OpenAI Codex locally who want persistent, reviewable agent work, recurring jobs, project context, and an audit trail in one workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d951608442a7fa4b659a80ca9180397e52a05031934f3677b0430157672d26a7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "1d14db70e35794402c7d66cde2b5c6fc467090e7",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "AGENTS.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/AGENTS.md#L21-L25"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "1d14db70e35794402c7d66cde2b5c6fc467090e7",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "AGENTS.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/AGENTS.md#L49-L52"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "1d14db70e35794402c7d66cde2b5c6fc467090e7",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "AGENTS.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/AGENTS.md#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_571e5f63d31146d896c4cc2a36d90802b8da3a0a52923367658722226432e695",
+        "slc_84ff2a56df84d1ee783fad7c950c2779605117c903222453d77c5fd6aa4caf46",
+        "slc_af2ebc01a6675876c0e027e4534a75548647271279158ccf74c3016f4f068bcd"
+      ],
+      "text": "Repository development practice: AGENTS.md gives coding-agent guidelines—state assumptions before implementing, keep changes minimal and surgical, and turn tasks into verifiable, test-driven goals."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c512f6c94e14bf7939ee8a362cc21b6597c9b0a21d07b62cc04e3c88651d819",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "1d14db70e35794402c7d66cde2b5c6fc467090e7",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "AGENTS.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/AGENTS.md#L67-L67"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "1d14db70e35794402c7d66cde2b5c6fc467090e7",
+          "line_end": 77,
+          "line_start": 71,
+          "path": "AGENTS.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/AGENTS.md#L71-L77"
+        },
+        {
+          "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+          "git_sha": "1d14db70e35794402c7d66cde2b5c6fc467090e7",
+          "line_end": 95,
+          "line_start": 91,
+          "path": "AGENTS.md",
+          "repository": "podiom/podiom",
+          "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/AGENTS.md#L91-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_231ebdbf0253ca7bf3872e55aec9e99ae1d6f248321dbb234ece07118915523a",
+        "slc_9cbee01b1baa1cb7e3eb5e2f73dd5dad586d872f90f6a4a97be2dec514712be5",
+        "slc_e44bb9ded1f40085e98d0c3badb8e6c4c8eb85c3affeb30f5cfa137a8b39d3cf"
+      ],
+      "text": "Repository development practice: provider-specific logic must stay in registries and per-layer tables rather than branching on provider names, with a drift test (TestProviderKnowledgeStaysInRegistry) enforcing this boundary."
+    }
+  ],
+  "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 241,
+        "path": "README.md",
+        "size": 10109
+      },
+      {
+        "lines": 101,
+        "path": "AGENTS.md",
+        "size": 4150
+      },
+      {
+        "lines": 132,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 5558
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3704
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 639
+      },
+      {
+        "path": "docs/agent-tools.md",
+        "reason": "file-budget",
+        "size": 12817
+      },
+      {
+        "path": "docs/agents.md",
+        "reason": "file-budget",
+        "size": 4528
+      },
+      {
+        "path": "docs/cli.md",
+        "reason": "file-budget",
+        "size": 20503
+      },
+      {
+        "path": "docs/configuration.md",
+        "reason": "file-budget",
+        "size": 8307
+      },
+      {
+        "path": "docs/git.md",
+        "reason": "file-budget",
+        "size": 7623
+      },
+      {
+        "path": "docs/goals.md",
+        "reason": "file-budget",
+        "size": 16825
+      },
+      {
+        "path": "docs/home-assistant.md",
+        "reason": "file-budget",
+        "size": 9918
+      },
+      {
+        "path": "docs/integrations/README.md",
+        "reason": "file-budget",
+        "size": 3485
+      },
+      {
+        "path": "docs/integrations/claude.md",
+        "reason": "file-budget",
+        "size": 9655
+      },
+      {
+        "path": "docs/integrations/codex.md",
+        "reason": "file-budget",
+        "size": 13250
+      },
+      {
+        "path": "docs/mobile.md",
+        "reason": "file-budget",
+        "size": 17126
+      },
+      {
+        "path": "docs/notifications.md",
+        "reason": "file-budget",
+        "size": 11760
+      },
+      {
+        "path": "docs/photo-attachments.md",
+        "reason": "file-budget",
+        "size": 3849
+      },
+      {
+        "path": "docs/projects.md",
+        "reason": "file-budget",
+        "size": 7788
+      },
+      {
+        "path": "docs/requirements/foundation.md",
+        "reason": "file-budget",
+        "size": 60728
+      },
+      {
+        "path": "docs/requirements/goals.md",
+        "reason": "file-budget",
+        "size": 25939
+      },
+      {
+        "path": "docs/requirements/ha-app-deployment.md",
+        "reason": "file-budget",
+        "size": 22269
+      },
+      {
+        "path": "docs/requirements/mcp.md",
+        "reason": "file-budget",
+        "size": 19733
+      },
+      {
+        "path": "docs/requirements/memory-and-dreaming.md",
+        "reason": "file-budget",
+        "size": 11291
+      },
+      {
+        "path": "docs/requirements/mobile-apps.md",
+        "reason": "file-budget",
+        "size": 17075
+      },
+      {
+        "path": "docs/requirements/notifications.md",
+        "reason": "file-budget",
+        "size": 35824
+      },
+      {
+        "path": "docs/requirements/photo-attachments.md",
+        "reason": "file-budget",
+        "size": 5466
+      },
+      {
+        "path": "docs/requirements/plan-mode.md",
+        "reason": "file-budget",
+        "size": 15025
+      },
+      {
+        "path": "docs/requirements/skills-marketplace.md",
+        "reason": "file-budget",
+        "size": 13426
+      },
+      {
+        "path": "docs/requirements/skills.md",
+        "reason": "file-budget",
+        "size": 13459
+      },
+      {
+        "path": "docs/requirements/toolset.md",
+        "reason": "file-budget",
+        "size": 11658
+      },
+      {
+        "path": "docs/scheduling.md",
+        "reason": "file-budget",
+        "size": 9228
+      },
+      {
+        "path": "docs/security.md",
+        "reason": "file-budget",
+        "size": 26518
+      },
+      {
+        "path": "docs/sessions.md",
+        "reason": "file-budget",
+        "size": 10114
+      },
+      {
+        "path": "docs/soul-generation.md",
+        "reason": "file-budget",
+        "size": 2293
+      },
+      {
+        "path": "docs/toolset.md",
+        "reason": "file-budget",
+        "size": 8200
+      },
+      {
+        "path": "docs/unresolved/mcp-stdio-connection-race.md",
+        "reason": "file-budget",
+        "size": 4874
+      },
+      {
+        "path": "docs/voice-input.md",
+        "reason": "file-budget",
+        "size": 3567
+      },
+      {
+        "path": "docs/websocket.md",
+        "reason": "file-budget",
+        "size": 12226
+      }
+    ],
+    "omitted_count": 36,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 725,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 39,
+      "complete": false,
+      "omitted": 36,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_d6c719e3ff435729a7b3a1a39cc011c8",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/podiom/podiom/78025f74007775e4e161ab5632ee6a19f616fbc1/a58c745d296cbf3b/manifest.json",
+  "package_id": "pkg_70bd6ea85231aab3a1dc2d05388470942277e73ecb795f6450ee5861ab400c9b",
+  "repo": "podiom/podiom",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "53302ed26b1f3a2e5184a0c02efe5fd71c7f2c445f95832cbc739506457927fc",
+  "snapshot_id": "a58c745d296cbf3b",
+  "sources": [
+    {
+      "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+      "git_sha": "1d14db70e35794402c7d66cde2b5c6fc467090e7",
+      "lines": 101,
+      "path": "AGENTS.md",
+      "repository": "podiom/podiom",
+      "sha256": "43800ed185c47750938b82df16e855f27bae4732aae5adae5706d74ba0e4d33d",
+      "source_id": "src_75058655547d568fb08a12e8d517bfab",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/AGENTS.md"
+    },
+    {
+      "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+      "git_sha": "1e7283aab80fc11853e1a312c689aee7863cb2f8",
+      "lines": 132,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "podiom/podiom",
+      "sha256": "97126e04a3d345d77542b430a08c78708810acf05439aedb99208da13eabf7ba",
+      "source_id": "src_9b412efe20525c2687434731387e4561",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "78025f74007775e4e161ab5632ee6a19f616fbc1",
+      "git_sha": "84cb3dc6019aee0f91d74e444aada34afe3eed71",
+      "lines": 241,
+      "path": "README.md",
+      "repository": "podiom/podiom",
+      "sha256": "9296b094fcc179dcffa983469a4bb999972a387724993d77347774bbd88aee08",
+      "source_id": "src_bddcfe8e41e758169cb1ca925f75f8b9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Podiom/Podiom/blob/78025f74007775e4e161ab5632ee6a19f616fbc1/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The repository points to docs/requirements/foundation.md as the authoritative foundation specification, at version v1.6. The podiomd daemon embeds the web SPA and uses pure-Go SQLite, so it needs no external web assets or cgo at runtime.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,1009 @@
+{
+  "applied_operation_id": "op_4cbdd047c3d84f04af7844b2bfb5955b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2621f57e5e543ed6333145b2ac1421c16846c8bb4a02f5919691ed5acc9397b9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L6-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ac1e904499d971c570917ad47eb76ad36ab6606438024ff32cbc16c7fa06109a"
+      ],
+      "text": "zerostack is a minimal coding agent written in Rust, inspired by pi and opencode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f224932fef0a847358ad28ff5b2ab417f26566b29c17c686ca2539a8541e2708",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 540,
+          "line_start": 536,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L536-L540"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 543,
+          "line_start": 542,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L542-L543"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 32,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L14-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01f76b2ec560a7e6b5f14b1a94b6b738c2a34377a6d358075c659bbb93712567",
+        "slc_24a2923ae1903622a14da364a17b19243f215eff6c7319a6cf778165f8ef4b54",
+        "slc_6e6a1f6c7870508c12469dfbb22e1de57ca22f07b42b693ab5da62090ab32ebe"
+      ],
+      "text": "The agent supports multiple LLM providers: OpenRouter (default), OpenAI-compatible, Anthropic, Gemini, and Ollama, plus custom providers configured via config.yaml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70e6634cb4583ca020b9a5ffbe32929409d6431e540997ec6a1bc8bc483d079b",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 267,
+          "line_start": 266,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L266-L267"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 256,
+          "line_start": 250,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L250-L256"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 264,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L262-L264"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 32,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L14-L32"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 271,
+          "line_start": 269,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L269-L271"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 248,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L248-L248"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2489d97402abf0cf6de446d2e9fec8ddb842d10bf7a9ec16ab4b208ad8a155dd",
+        "slc_655428f5711bc78b84bb7fa10bd4e2960a045f1073b83e06b314ec067678f49d",
+        "slc_680c3be7f117aaf1012aaad4c6208a2a0e8a84370f66f9321f74f02f1fcb630d",
+        "slc_6e6a1f6c7870508c12469dfbb22e1de57ca22f07b42b693ab5da62090ab32ebe",
+        "slc_8fe3f02c749e769321d17b72487a77460eae86a815279de36c0db99070b48204",
+        "slc_be863119858a038c57485dbfe278aded4f3d4002f4dc3fc9b1f0420285b826ae"
+      ],
+      "text": "There are five permission modes (restrictive, readonly, guarded, standard, yolo) with per-tool glob patterns, session allowlists, and doom-loop detection for repeated identical tool calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b016ef0a48afc385263a6b721486f701384c7e16606d662d3a5bb7e6acecc293",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 260,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L258-L260"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eae0f334f69b6fab903071fcee245b5371d77ab41b43c1395127f6e5a4d93644"
+      ],
+      "text": "A --dangerously-skip-permissions flag bypasses all permission checks entirely and is not a runtime-toggleable mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f72a61abe0f3a003d982e22d44f8b8b41ad0b184cd8aabb9ac65a137376ea4f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 173,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L164-L173"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 146,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L144-L146"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 162,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L155-L162"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 153,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L148-L153"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 131,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L128-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4106e6599fab2b687372245e94701e0099d62ff8b21eadeb58e289d7cabef99c",
+        "slc_bb4307db9ddc5c450c8d602152b81b7a8347cc2087948425e105c1d73d2566e2",
+        "slc_c4792260cc629221f0ce20a3d2ed30155415e3bb347b97d6ab3d6c4621c2fcd9",
+        "slc_d7625c535900d5f6ddf1532f79097e4d01abc48743a3c7911a8084ffb2d7116e",
+        "slc_eb33e50f3aa3193b50b12d394a4deffd453a70fb406018395c5f8ef22770d8c2"
+      ],
+      "text": "Optional --sandbox mode runs bash commands in bubblewrap (or zerobox on macOS), masks credential directories by default, and can require the backend via --sandbox-required; network stays on unless disabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ae34aa3c592b144e7522469a29ee2ccd1ec4888ae939185cf8bff32600a937c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 208,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L206-L208"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 227,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L212-L227"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 230,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L229-L230"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66cfd1fb63f44d5e4311f617b0e661b2f7c96f7edda3dae903c917781bcfdf2b",
+        "slc_979f9ba27409ad43c7d0ebe430964541fc2a68274d685804ee391d8efd005bef",
+        "slc_e879c4f2ac029e239eb08763d7dd2e164ed7bbd44b0ef793a94bf0799f2a8fc6"
+      ],
+      "text": "A prompts system lets users switch built-in system prompts (code, plan, review, debug, ask, etc.) at runtime via /prompt, and custom prompts can be added as markdown files under the config prompts directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99ae4ebf9a0c929a178f2b2f2ec7bc5c3d90e96c7c94d0b7aedbee71df455c15",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 333,
+          "line_start": 331,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L331-L333"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 32,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L14-L32"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 101,
+          "line_start": 95,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L95-L101"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L91-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_674af55889be76d190001923a32296ef98f5d2e96b5f2de8ab1bc5b751753bc7",
+        "slc_6e6a1f6c7870508c12469dfbb22e1de57ca22f07b42b693ab5da62090ab32ebe",
+        "slc_b1da8a7893f04adf396b9e762f1ea189e532b88fce3acc831a7605ad149e2f3c",
+        "slc_bf0067d8645c3022a7c0b3a0d7c620a53d2ea98de630651d67875c626f522217"
+      ],
+      "text": "Sessions are saved as JSON under $XDG_DATA_HOME/zerostack/sessions/ and can be resumed with -c, -r, or --session <id>; auto-compaction summarizes old messages near the context-window limit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_306860977918cce409e21758b1b7a17340a36c7a785fcaf9875ad3835445592b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 32,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L14-L32"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 338,
+          "line_start": 337,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L337-L338"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 344,
+          "line_start": 344,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L344-L344"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 342,
+          "line_start": 340,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L340-L342"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e6a1f6c7870508c12469dfbb22e1de57ca22f07b42b693ab5da62090ab32ebe",
+        "slc_7669224392a14d549345cc0747873056806d7d5f49c12198e24a3723a79fd6c1",
+        "slc_91683f713146ff0743a93c7e3850a3bb9511f75349e8e8917cce73d3dd804802",
+        "slc_aa5fdf3448e73f07eb8e5ba630adda570d870e02d342ac13f52d94a7a59d4c47"
+      ],
+      "text": "The gated memory feature keeps plain-Markdown notes (global MEMORY.md plus per-project logs) injected into the system prompt each session; it is not in the default build."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_863568697c6018c7031fe8170fda8ad8cc16ec2284e1235912a0cd1487fce507",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 442,
+          "line_start": 442,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L442-L442"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 466,
+          "line_start": 463,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L463-L466"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 452,
+          "line_start": 448,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L448-L452"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 440,
+          "line_start": 440,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L440-L440"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a6a21896c12d1d99f5dec335a55231842d27ade0038773260478be88c442348",
+        "slc_1684e9b7e98b003b987fd314a99f9a457d3c125da1eeb18edceb636af9244818",
+        "slc_8ac40d154f4691506d573018de32baf3417ee84a606a65f345e0536b2a8ab8d0",
+        "slc_eebc61f463fb2123fb99127308575872b06df432fa689f3e8638e6ab36ff2e9f"
+      ],
+      "text": "Git worktree integration offers /worktree, /wt-merge, and /wt-exit slash commands for a branch-per-task workflow, with optional auto-merge on exit; the feature is labeled experimental."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a2b75a0e028c8e9f9f14e85445c1c8bf8269f291b6c5b0bc5a9af8127dd4a72d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 408,
+          "line_start": 408,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L408-L408"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 436,
+          "line_start": 430,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L430-L436"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 406,
+          "line_start": 406,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L406-L406"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 428,
+          "line_start": 426,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L426-L428"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 416,
+          "line_start": 412,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L412-L416"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4574740e9dcc575af365f4cfff6114a8798e67fe691fc34aa467283f863cfeba",
+        "slc_50b7482b855609e6e59cf96582b656da3c13b64874f0f5056dd261128cba2057",
+        "slc_672e0bab96c5bec30d4d8b20aaf398ec26633e501762e840bfa88173758ca55f",
+        "slc_8001473596b50a04c75facb3b985e75be895b1d194fc98fa9e94e05df6ac41c9",
+        "slc_b8cbf1a98e55b94cfa845f65e6fc69dd36a084fa05d1d21b9c47a61d54e73427"
+      ],
+      "text": "An iterative loop system (experimental) repeatedly works through a LOOP_PLAN.md plan with validation commands, usable via /loop in the TUI or headless flags like --loop-prompt and --loop-max."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_086f898a17059924faa1d4771f665f96c4e2a3db45584d5cd2c852d64355e6bb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 24,
+          "line_start": 8,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L8-L24"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L3-L4"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 101,
+          "line_start": 95,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L95-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1337d30aa660b8290b6c41f8b36f1d62a2c3d99cb2f48384c5db8e0a5f4e3450",
+        "slc_8c19768cb8a4b37e3f81a25bb8ced33e21482581a91b30ace9be4d0b942f3bd1",
+        "slc_b1da8a7893f04adf396b9e762f1ea189e532b88fce3acc831a7605ad149e2f3c"
+      ],
+      "text": "The project is a single Rust crate with source under src/, including agent, session, permission, ui, context, and config modules; the TUI is custom on crossterm without ratatui."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a87e4289fb44c49fd9feb8892a2c8f7a5123517cecd82802b2d23e074e6dfee9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 40,
+          "line_start": 28,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L28-L40"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 101,
+          "line_start": 95,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L95-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e65510f9927b8af0049e47cb242b66bd7ee0fc5e192739099868510aae41c97",
+        "slc_b1da8a7893f04adf396b9e762f1ea189e532b88fce3acc831a7605ad149e2f3c"
+      ],
+      "text": "Provider abstraction uses type-erased enums (AnyClient/AnyModel/AnyAgent) instead of trait objects, and tokio runs single-threaded by default unless the multithread feature is enabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_554651672dc1cb2fea8824f44ec80296b586c644f10a545663483beb814a18fd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L121-L121"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 119,
+          "line_start": 105,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L105-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04ac27d6d0236ac2c9ab2ab6728c4132b7e683c1d94e0dc2a93097ff8cc3300f",
+        "slc_abedcb37446ee1cbac1ee4f46203ae4602b73a30d96bb867cbcc86458f044281"
+      ],
+      "text": "Core dependencies include rig 0.39, clap 4, crossterm 0.29, tokio, serde, pulldown-cmark, regex, reqwest, and mimalloc; optional features add rmcp (MCP) and agent-client-protocol (ACP)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_37b0a4f25d1aeaebaec119c597b8ef81651b754990e4e8ca0b8d516104bd262b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 505,
+          "line_start": 502,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L502-L505"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 518,
+          "line_start": 517,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L517-L518"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 514,
+          "line_start": 514,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L514-L514"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 508,
+          "line_start": 507,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L507-L508"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e886dec07fae2628dfe8214dfe1770f358ea690d5c5492d5bc2449324a1d663",
+        "slc_7f2686d7aa269dfdfe36c7ee4ccb818a761a1ee4d3fbec7945990f239a6bb7ab",
+        "slc_98113d0816bb3e3ea8c531454e8e84407a68a406f81f160e498cbc504c3d18b0",
+        "slc_b2483e05b3c210ffc28a30a7eb04c5e007dfcb2003a6d3df95fe498a9d4585cd"
+      ],
+      "text": "With the acp feature, zerostack acts as an ACP (JSON-RPC) agent server over stdio or TCP so editors like Zed can connect; ACP is not in the default build."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6c32da7e15bddec977fc3a7741224fbfd94c968c01b9526dd2145d39c19ee2f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "d0a101f0c38436d37a4dd9d9ef562b96fdacfcea",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/docs/ARCHITECTURE.md#L7-L8"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 236,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L232-L236"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "d0a101f0c38436d37a4dd9d9ef562b96fdacfcea",
+          "line_end": 15,
+          "line_start": 12,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/docs/ARCHITECTURE.md#L12-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c1c62353ea7761c688fc8ecc624354edbfdf62315df04caf1282a2f30129004",
+        "slc_302d395762b43264486a111fbd1d3d70241a345ed7770c3131a0afacc478435f",
+        "slc_6e6b2e61eea9ad0b30967e9715d62ef21cad10ce13fc969dbd2fabaf971ff23e"
+      ],
+      "text": "The agent automatically loads AGENTS.md or CLAUDE.md from the project root or ancestor directories into the system prompt, and optionally ARCHITECTURE.md under the archmd feature; -n disables context-file loading."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2e0f53730c6600e81363071e70dcfd9892eceae517417fa72b8b6f97c5ccbb39",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 442,
+          "line_start": 442,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L442-L442"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 408,
+          "line_start": 408,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L408-L408"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L34-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a6a21896c12d1d99f5dec335a55231842d27ade0038773260478be88c442348",
+        "slc_4574740e9dcc575af365f4cfff6114a8798e67fe691fc34aa467283f863cfeba",
+        "slc_8f8d2ea808442662c7951fb346ce71a9668f9053967e2b8e7b31425309d1356c"
+      ],
+      "text": "The README states Windows support is untested, and the loop and git-worktree features are explicitly marked experimental."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5b1127ab69be0b28108aab81240fb1b93d4b9994be2eab2961f9e7d421f4238",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+          "line_end": 45,
+          "line_start": 44,
+          "path": "ARCHITECTURE.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md#L44-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8269cdcbcf78feef4850c77e188041e65a17e04ebb8a16124757209dbcff9817"
+      ],
+      "text": "Repository development practice: unit tests live in src/tests/ and headless TUI-loop integration tests drive the real loop with a FakeBackend and mock agent models, without a terminal or network."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4256c5f6432f8b6d742c10ed42857034047becc61bcd039200b6a0db939717d8",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L38-L38"
+        },
+        {
+          "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+          "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "gi-dellav/zerostack",
+          "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md#L40-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3266845e2c13f81d9ae3424f50b516441fa96d609167e740e2e3d60fc915c6cd",
+        "slc_acadf97a9e38618010624fa3d61ce21dc8a312d1ef0a2a3ba41a1518cec376aa"
+      ],
+      "text": "The project targets users wanting a lightweight terminal coding agent, citing ~30k LoC, a 26MB binary, and roughly 16MB average RAM versus much heavier JS-based agents."
+    }
+  ],
+  "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 547,
+        "path": "README.md",
+        "size": 26396
+      },
+      {
+        "lines": 133,
+        "path": "ARCHITECTURE.md",
+        "size": 11807
+      },
+      {
+        "lines": 195,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 7766
+      },
+      {
+        "lines": 1444,
+        "path": "docs/CONFIG.md",
+        "size": 69701
+      },
+      {
+        "lines": 76,
+        "path": "docs/PUBLISHING_RELEASES.md",
+        "size": 2981
+      },
+      {
+        "lines": 4,
+        "path": "docs/robots.txt",
+        "size": 83
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/MEMORY.md",
+        "reason": "byte-budget",
+        "size": 13045
+      },
+      {
+        "path": "docs/COMMANDS.md",
+        "reason": "byte-budget",
+        "size": 13495
+      },
+      {
+        "path": "docs/GET_STARTED.md",
+        "reason": "byte-budget",
+        "size": 8648
+      },
+      {
+        "path": "docs/HASHEDIT.md",
+        "reason": "byte-budget",
+        "size": 29356
+      },
+      {
+        "path": "docs/PROVIDERS.md",
+        "reason": "byte-budget",
+        "size": 9762
+      },
+      {
+        "path": "docs/STATUS_SIGNALS.md",
+        "reason": "file-budget",
+        "size": 7112
+      },
+      {
+        "path": "docs/SUBAGENTS.md",
+        "reason": "file-budget",
+        "size": 8469
+      },
+      {
+        "path": "docs/providers/Minimax.md",
+        "reason": "file-budget",
+        "size": 3282
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 471
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5250
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 15370
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 322,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 17,
+      "complete": false,
+      "omitted": 11,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b3f11288a4885c28a94cc212d87ff9d0",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 3,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/gi-dellav/zerostack/efd142b3ac46c9db79b1c318cad25bfd309acc5f/a1aca222966d5bd8/manifest.json",
+  "package_id": "pkg_13ad56a60e9bec059675351e014f29111b679e20c7d6a82e3e5dd5fe11f400a9",
+  "repo": "gi-dellav/zerostack",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6e9f0a1a76c730bcdddd94b546dd3f7194fe8d8889d158cc566138c5bcd94e20",
+  "snapshot_id": "a1aca222966d5bd8",
+  "sources": [
+    {
+      "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+      "git_sha": "2cd6a3aa2ac112f92d83c31cd16070cced26c041",
+      "lines": 133,
+      "path": "ARCHITECTURE.md",
+      "repository": "gi-dellav/zerostack",
+      "sha256": "8c3c1769159c5be007997f5a22987bf7e1945b001766666c5eda84ff30c1dd45",
+      "source_id": "src_4686454d9b635fd19cf9705fc971d56a",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/ARCHITECTURE.md"
+    },
+    {
+      "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+      "git_sha": "e9852e70e1860382eb8c7cec785eb42985ebcf1f",
+      "lines": 547,
+      "path": "README.md",
+      "repository": "gi-dellav/zerostack",
+      "sha256": "7373dea495057694e0d935d6492d72e934c125359569ca2fdd8d488506be3103",
+      "source_id": "src_3162a85b456b573aa7491e69cbdb0c41",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/README.md"
+    },
+    {
+      "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+      "git_sha": "d0a101f0c38436d37a4dd9d9ef562b96fdacfcea",
+      "lines": 195,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "gi-dellav/zerostack",
+      "sha256": "edae0d1a499f890b44b1fd2ba4145b1cf7b956dad2814a9d7cd2918c628e6278",
+      "source_id": "src_6a0ec939534d55fb9145855ee386d0f2",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/docs/ARCHITECTURE.md"
+    },
+    {
+      "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+      "git_sha": "db662872e8baf862524eee18803eeb10c62da269",
+      "lines": 1444,
+      "path": "docs/CONFIG.md",
+      "repository": "gi-dellav/zerostack",
+      "sha256": "797ed4e83dfd183d4fdbe455801c38084e5752afccd9875221ee8da53653cdab",
+      "source_id": "src_3b8f0cb3f3f35452a4f1e76a34761a2c",
+      "stored": "config.md-ed97b806cc8d.md",
+      "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/docs/CONFIG.md"
+    },
+    {
+      "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+      "git_sha": "82ad0d2b6aa91863d1a4e6eba311dd2ac7fbf1f6",
+      "lines": 76,
+      "path": "docs/PUBLISHING_RELEASES.md",
+      "repository": "gi-dellav/zerostack",
+      "sha256": "556754d7772c9b96cb473a5128547b9eb1606c9c13dbcf1989e9026ed2a3c5df",
+      "source_id": "src_4ee4e0f946e0594b854c811cede09db3",
+      "stored": "publishing_releases.md-42682565de7d.md",
+      "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/docs/PUBLISHING_RELEASES.md"
+    },
+    {
+      "commit": "efd142b3ac46c9db79b1c318cad25bfd309acc5f",
+      "git_sha": "7f262a933bc6c58d1345a32b4628fc124fb4378c",
+      "lines": 4,
+      "path": "docs/robots.txt",
+      "repository": "gi-dellav/zerostack",
+      "sha256": "c7dabe1663b85c1ada9b3ee289d537ff8dd3e70bd262a3fb62cef12a71059840",
+      "source_id": "src_9bb8a7f8c2f653dd933860365ad07bec",
+      "stored": "robots.txt-e0fdde07b3ef.txt",
+      "url": "https://github.com/gi-dellav/zerostack/blob/efd142b3ac46c9db79b1c318cad25bfd309acc5f/docs/robots.txt"
+    }
+  ],
+  "summary": "README and ARCHITECTURE.md describe zerostack, a minimal Rust coding agent with multi-provider LLM support, a five-mode permission system, session/memory/worktree/loop features (several feature-gated), and a documented single-crate architecture. Evidence is documentation-based; no code slices are included. Evidence coverage: 127 of 397 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

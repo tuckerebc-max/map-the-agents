@@ -1,0 +1,763 @@
+{
+  "applied_operation_id": "op_5f029701ca5a4e8ab6cbb19dd506cbec",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c13d24be1a1a669b6e20657aa86faea8e9ae9c7747d1d8aeff481a48c785435",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "46f61f24a634fde042f2c02e4fb234f5e3799661",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/README.md#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e64a99d6d08d719e845d9e93c5e350d918276369c96233060697f396c9b0483c"
+      ],
+      "text": "The project provides CLI tools, skills, agents, hooks, and plugins intended to enhance productivity with Claude Code and other coding agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b802df94b0c4cefbe1da936282e938a2d1622ddd86d66c18a32d62a722e46786",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "46f61f24a634fde042f2c02e4fb234f5e3799661",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/README.md#L10-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dcfe898e2cf2c42c075207828dc348a4b45cb89fd3fcd2ac89a48aa8f3fcf4f"
+      ],
+      "text": "README badges link the package to PyPI as claude-code-tools and to a Rust crate named aichat-search on crates.io."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27202477a165f912b1e66bb9379a7f51e62d22ab118c365c9e88e760be7c5f7a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L3-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81c62470128d2740d82250c4e8e336e1df7876e7043731f15131dce8d68eea27"
+      ],
+      "text": "agent-tunnel exposes long-lived local Claude Code sessions ('experts') to teammates over Discord; a session is published at runtime with >share and addressed by a short handle, with each conversation answered against a read-only fork."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f451ca94e7446318f904cc67fdc9875255560ea910e631fde566a473d91c2b0d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 40,
+          "line_start": 19,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L19-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b75bb0caa1120eaf43431905e6975d4a08989f676fe89d6a7900bdf89a2a2691"
+      ],
+      "text": "Threads answer via --resume with --fork-session so the original session is untouched; remote turns run with --allowedTools Read,Grep,Glob, an explicit deny list, and --permission-mode dontAsk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6734c7ab7fedbd3bc28dc4b08fed6159d4e47ecb4b0c4cca5438973325155295",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 40,
+          "line_start": 19,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L19-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b75bb0caa1120eaf43431905e6975d4a08989f676fe89d6a7900bdf89a2a2691"
+      ],
+      "text": "agent-tunnel uses no inbound tunnel: it connects via the Discord Gateway's outbound websocket, so nothing on the machine is internet-reachable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1298c9ef91d5d6a6528a1bc0dba091a7b5c8f7585a7cf7bc864dd19b9e9c3a0a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 69,
+          "line_start": 64,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L64-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad5f0258052660f31edb2cfe264ec13d6229f4d418d97330c352dd1a62c1ca12"
+      ],
+      "text": "The >share hook (hooks/share_hook.py) is a standalone stdlib UserPromptSubmit hook that reads session_id/cwd/transcript_path from stdin, writes an fcntl-locked atomic registry, and blocks the prompt to print the handle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_680c1219b2532e636a8881cbd2bc6fa99fdc7d8f3979fdab7f549f4eadcb6028",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 164,
+          "line_start": 137,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L137-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6210f1a07a00f9145550986974f0360113d57091e0384d32012744580a9daaa"
+      ],
+      "text": "Per-handle access levels: --write adds Write/Edit/NotebookEdit (never Bash); --dangerously-allow-bash adds command execution; --dangerously-skip-permissions lets the fork use any tool or MCP server the session has."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_26415cee010dbd178c9aed47a3f9bdf242cbc1dc0c83f79206572dc9adfd382f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 181,
+          "line_start": 168,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L168-L181"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce4573cdb7b59defa21e65bd7123570eaebe43acb30608c6334971dfa09a5e48"
+      ],
+      "text": "In a watched channel, '<handle> [question]' opens a Discord thread bound to that session with follow-ups staying in the thread; !list/!handles list active handles; !done/!close/!end tear down the fork immediately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_adc7f9e1fbae4d3131568fe08021103e58bf45cd72c7ee4b5bdb90cd9e9a1f14",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 196,
+          "line_start": 188,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L188-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cca8c6efde4f1a7cb3331af853bcfb823feaf915b17ac324355a89940e6b4255"
+      ],
+      "text": "Inbound attachments are downloaded to a per-thread uploads dir outside any repo and exposed to the fork via --add-dir, with per-file size and count caps; oversized or excess files are skipped with a notice."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e547980325ffe280d0dbc15b900bee6c6c1a316fe50316f3e5eeef9fc5e50e2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 205,
+          "line_start": 198,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L198-L205"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b8bd7ed4c6222158922875a99f11d7b1764df77c8020617f8c022edb92c4f8ec"
+      ],
+      "text": "Binary Office attachments are best-effort converted using whatever converter is on PATH (LibreOffice→PDF preferred, else pandoc→Markdown, else macOS textutil); no converter is a hard dependency, and PDF/images/text work unaided."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_672792543a29b3a6dc03c2bac185826b610c4c791a586907f87e34a8ca5eb465",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 215,
+          "line_start": 207,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L207-L215"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c220df1e198c3bbebd671ae2df8bcc712e156d22123aa0c97241601a35c9f21"
+      ],
+      "text": "Write/bash forks save deliverables to .agent-tunnel-out/<thread>/; the bot snapshots and diffs that dir to post new or modified files as Discord attachments, and a wildcard .gitignore keeps deliverables out of git status."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53b690b8c997afefeb80c402807cd315948bf5e822d89fdbc86be2c518184484",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 259,
+          "line_start": 243,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L243-L259"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45765a70b31316edb0505c4d22302f750066ff7f0d5813bbc2a2ecc5c3cc3c30"
+      ],
+      "text": "agent-tunnel supports two backends: headless (default) runs claude -p per question with clean JSON I/O, while tmux runs an interactive claude per thread in a private tmux server window, watchable via agent-tunnel watch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d61005b097b552348cadf1a37cd77e02c5481b6b7472afb4fa44fbfacee8ab1c",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 231,
+          "line_start": 226,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L226-L231"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 224,
+          "line_start": 221,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L221-L224"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f78167ae94e12b0b5791dffd75c853a933971238cd60f8551a49df6a04e69b4",
+        "slc_815d12e93c1c5e9a393c45a8b9b1c08c59ca81155c169442db1c222af8b54cde"
+      ],
+      "text": "The config dir is propagated end to end: the hook derives it from transcript_path and records it in the registry, and the daemon pins each fork via CLAUDE_CONFIG_DIR so work and personal sessions fork under their own config/account."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56f7787c1dcb25553bcdf1dbe3b58d0caaebd513078f45089da8ab348e1e9fda",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 277,
+          "line_start": 263,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L263-L277"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4191a5db5503dc2b9c3909eada515feb40347d380d37b330f549839a82173825"
+      ],
+      "text": "Security model: read-only tools are hard-enforced by the CLI permission layer by default; access is Discord channel membership plus optional user/role allowlists, and the persona's discouragement of leaking secrets is described as a soft layer only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72d4a6321fc48c7c7b9efdf8c179b674385bf8e53d666b1887fd9ad4b44dacb8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 294,
+          "line_start": 281,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L281-L294"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f5cb4788a3cf1908c2b5a34e916d8444240138c441934a61ec4d1be990bf962e"
+      ],
+      "text": "Repository development practice: the agent-tunnel spec reports unit tests using real files without mocks, covering the registry, hook, store, session discovery, flag building, config, and attachment handling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de6afbb8995390a98cd9d4a17336cfa38dfb53e55f7edaf03fc074e6095cfb08",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 294,
+          "line_start": 281,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L281-L294"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f5cb4788a3cf1908c2b5a34e916d8444240138c441934a61ec4d1be990bf962e"
+      ],
+      "text": "The spec reports live end-to-end validation of agent-tunnel in both headless mode and tmux-over-Discord, confirming forked sessions inherit context and follow-ups continue the same fork."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40dfded60246ce70ea24eed84e923f6c75228ab9106bb42aca29977378d07c20",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+          "line_end": 277,
+          "line_start": 263,
+          "path": "docs/agent-tunnel-spec.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md#L263-L277"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4191a5db5503dc2b9c3909eada515feb40347d380d37b330f549839a82173825"
+      ],
+      "text": "The spec notes a ToS gray area: consumer plans prohibit making your account available to others, and headless with an API key is described as the unambiguous path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_81db7311c1cca63c59ee9d4fc09f6bd5a58ff79ca078086b811c0c0ea82a40e1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "docs/find-claude-session.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md#L9-L13"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/find-claude-session.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md#L5-L5"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "docs/find-claude-session.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md#L26-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d6eaa0563bff1a7e1f7957d585ebd44c19d3837c1e766058e1cf062527aeac0",
+        "slc_ae68a76369c056df395353a4bfa296bad822c60276d31dcaf4ede490aa805643",
+        "slc_b5c02e98fb8485b6815ea95f7701a9a44537eae9d89f26bde88138cd1d959477"
+      ],
+      "text": "find-claude-session is a CLI that keyword-searches Claude Code session files with an interactive selection UI and automatic resumption via claude -r; a -g/--global flag searches across all projects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_098c74ed0d2c35d80eb08d50034835ecbde6526d89b5d276b8f2e3af7ca7e7e7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+          "line_end": 46,
+          "line_start": 43,
+          "path": "docs/find-claude-session.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md#L43-L46"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+          "line_end": 52,
+          "line_start": 48,
+          "path": "docs/find-claude-session.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md#L48-L52"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+          "line_end": 58,
+          "line_start": 54,
+          "path": "docs/find-claude-session.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md#L54-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_584315a2680c154d57ef159eb77947a777822defb2a65969701b83cc6dc10257",
+        "slc_7ff9f4afaf546a0780e19832e684a5f646c44bcecc8d29bd37a93a5c81507063",
+        "slc_c6d5048ddf357a82c49e92f0402fd0b8a4a8ece2711d2f24ba79c9761cef5e60"
+      ],
+      "text": "find-claude-session maps a project directory to ~/.claude/projects/<path with slashes replaced by dashes>, streams JSONL line by line, requires all keywords case-insensitively, sorts by modification time, and shows the top 10 matches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7423a1778e84c83b35ead9ca8b2b9e18d8ce3a69fdd10e9aefbb219b2779611",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+          "line_end": 85,
+          "line_start": 83,
+          "path": "docs/find-claude-session.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md#L83-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea40b30e258631dd0d9988458aa02044ebc66d8095a3909359ffe6207ec3730e"
+      ],
+      "text": "find-claude-session requires Python 3.11+ and click, with rich as an optional dependency for the interactive UI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53eba45573368c50f49eef0606112dcd6cb0b83bffe7d168b1edd34e591bd6e8",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "e93a61be8e9444adff92b494e59e03c034ee98ae",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "docs/dot-zshrc.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/dot-zshrc.md#L169-L169"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "e93a61be8e9444adff92b494e59e03c034ee98ae",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "docs/dot-zshrc.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/dot-zshrc.md#L70-L70"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "e93a61be8e9444adff92b494e59e03c034ee98ae",
+          "line_end": 189,
+          "line_start": 187,
+          "path": "docs/dot-zshrc.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/dot-zshrc.md#L187-L189"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "e93a61be8e9444adff92b494e59e03c034ee98ae",
+          "line_end": 119,
+          "line_start": 115,
+          "path": "docs/dot-zshrc.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/dot-zshrc.md#L115-L119"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "e93a61be8e9444adff92b494e59e03c034ee98ae",
+          "line_end": 59,
+          "line_start": 55,
+          "path": "docs/dot-zshrc.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/dot-zshrc.md#L55-L59"
+        },
+        {
+          "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+          "git_sha": "e93a61be8e9444adff92b494e59e03c034ee98ae",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "docs/dot-zshrc.md",
+          "repository": "pchalasani/claude-code-tools",
+          "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/dot-zshrc.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_185f42f858c4699d61875df73582ac80d4eaec2348e8861d94e8cab248014085",
+        "slc_1c836b7a68d637aefe0dc7c5ab52452f2297c6c5d718b1c007b47c5e25f1e4a7",
+        "slc_48355a8fe20f527e999829ecba6b499ad05de19c2caa5c20d43ba1b01987a6f2",
+        "slc_4fefd4ee8c5460b2c545edaa1e99d97e1eba8028eea0b7ca425231ea2681972d",
+        "slc_f02881ae072062073f9af6ff9fd1a6f47b34ba59dcc1f7592cfcbef03254bce2",
+        "slc_f825f30e6e488e26e8d4fca75807ea02b043441d6cc7b3f05483d95cc342aa81"
+      ],
+      "text": "The docs include a Zsh shell setup guide covering Oh My Zsh with autosuggestions and syntax-highlighting plugins, the Starship prompt, eza aliases, and Atuin or HSTR history tools."
+    }
+  ],
+  "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 178,
+        "path": "README.md",
+        "size": 5855
+      },
+      {
+        "lines": 117,
+        "path": "PROPOSAL-exit-code-extraction.md",
+        "size": 6465
+      },
+      {
+        "lines": 301,
+        "path": "docs/agent-tunnel-spec.md",
+        "size": 17468
+      },
+      {
+        "lines": 105,
+        "path": "docs/claude-code-tmux-tutorials.md",
+        "size": 7558
+      },
+      {
+        "lines": 307,
+        "path": "docs/dot-zshrc.md",
+        "size": 7160
+      },
+      {
+        "lines": 149,
+        "path": "docs/find-claude-session.md",
+        "size": 4284
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/intercom-spec.md",
+        "reason": "file-budget",
+        "size": 12348
+      },
+      {
+        "path": "docs/lmsh.md",
+        "reason": "file-budget",
+        "size": 2226
+      },
+      {
+        "path": "docs/local-llm-setup.md",
+        "reason": "file-budget",
+        "size": 15845
+      },
+      {
+        "path": "docs/tmux-cli-instructions.md",
+        "reason": "file-budget",
+        "size": 6325
+      },
+      {
+        "path": "docs/vault-documentation.md",
+        "reason": "file-budget",
+        "size": 3600
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 773,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ccfdbd3770e95cc4adc44bd3ddb6d2da",
+  "facets": {
+    "components": 4,
+    "dependencies": 3,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/pchalasani/claude-code-tools/ee0f3099c05c50141feff2559193c0af1fb81ec7/97d770c6b369880b/manifest.json",
+  "package_id": "pkg_1ccec8a1f7768a2e9948bd59844203543fd6ae42366f7cc8a860edd610c771d5",
+  "repo": "pchalasani/claude-code-tools",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ea164d656448ce3e348c5acea44f9c0efeb6242e12aad6c674d645deab1d2523",
+  "snapshot_id": "97d770c6b369880b",
+  "sources": [
+    {
+      "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+      "git_sha": "f1f2187658e40c4c2b395dcf5f9e26709d9f08d7",
+      "lines": 117,
+      "path": "PROPOSAL-exit-code-extraction.md",
+      "repository": "pchalasani/claude-code-tools",
+      "sha256": "bf3041250c08f7b3ba695551b0e8d97050045b3cfde7c2bf7fc21fb3c3e1efb0",
+      "source_id": "src_0b6819445adc519c8d60eb1197c75197",
+      "stored": "proposal-exit-code-extraction.md-9168d298310e.md",
+      "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/PROPOSAL-exit-code-extraction.md"
+    },
+    {
+      "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+      "git_sha": "46f61f24a634fde042f2c02e4fb234f5e3799661",
+      "lines": 178,
+      "path": "README.md",
+      "repository": "pchalasani/claude-code-tools",
+      "sha256": "a1976c561d0d496d67fba04b4d2232cda712c5725bb80a609260b54082b0962b",
+      "source_id": "src_6b1aba66b13b59b994e6a4a1614a47e2",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/README.md"
+    },
+    {
+      "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+      "git_sha": "0a273e16fe9b8b8f4c953c3d5ab48f501a939160",
+      "lines": 301,
+      "path": "docs/agent-tunnel-spec.md",
+      "repository": "pchalasani/claude-code-tools",
+      "sha256": "f1ab40c1e365aae303def430fc4f66536f41e309cae30976cbb80c07cec495b1",
+      "source_id": "src_dd8ddf3436a95724b46da45b063794b3",
+      "stored": "agent-tunnel-spec.md-c2a5f309207b.md",
+      "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/agent-tunnel-spec.md"
+    },
+    {
+      "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+      "git_sha": "8645f96fbe3c726ee489eb26a5b816c921945ffc",
+      "lines": 105,
+      "path": "docs/claude-code-tmux-tutorials.md",
+      "repository": "pchalasani/claude-code-tools",
+      "sha256": "4bef54ddad4068f1013e8de82a95aec8e7ca2bbc8f14e22edb53ff2c37c65099",
+      "source_id": "src_6172905d313e544b9281c54ec2cb6335",
+      "stored": "claude-code-tmux-tutorials.md-8e65a4984a9d.md",
+      "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/claude-code-tmux-tutorials.md"
+    },
+    {
+      "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+      "git_sha": "e93a61be8e9444adff92b494e59e03c034ee98ae",
+      "lines": 307,
+      "path": "docs/dot-zshrc.md",
+      "repository": "pchalasani/claude-code-tools",
+      "sha256": "0c2d9f3a21ab525233a25e8dff8ec25b9ddae01b27304bc29e1951455c450937",
+      "source_id": "src_a8c62bd63bc051fb961a344e24216302",
+      "stored": "dot-zshrc.md-02a3bdc16477.md",
+      "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/dot-zshrc.md"
+    },
+    {
+      "commit": "ee0f3099c05c50141feff2559193c0af1fb81ec7",
+      "git_sha": "41087a517ee8600298290c38fbfdb2dd2b87d35f",
+      "lines": 149,
+      "path": "docs/find-claude-session.md",
+      "repository": "pchalasani/claude-code-tools",
+      "sha256": "7c009b40fd018f98ea2293569349460ce4106a38be2bd55ade052fd91038ed54",
+      "source_id": "src_6aaa47dd31245717b0d5522959ab620b",
+      "stored": "find-claude-session.md-c62e2ec715f2.md",
+      "url": "https://github.com/pchalasani/claude-code-tools/blob/ee0f3099c05c50141feff2559193c0af1fb81ec7/docs/find-claude-session.md"
+    }
+  ],
+  "summary": "The repository ships CLI tools, skills, agents, hooks, and plugins for Claude Code and similar coding agents; the best-documented products are agent-tunnel (Discord-based sharing of local Claude sessions) and find-claude-session (keyword search over session JSONL files), plus a Zsh setup guide. Evidence coverage: 142 of 182 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

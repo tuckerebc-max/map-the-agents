@@ -1,0 +1,571 @@
+{
+  "applied_operation_id": "op_a9676c9e9e284af39a632d0551e226c9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5607cd0526382b6778a7e55d041d78788cb3e7cfb029d51c350c63eeb72269c0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L9-L9"
+        },
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 238,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L231-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_688758a727f865e36dbdae2c30aa2d5038f2866416370bb8fa3860b0d8e94a3c",
+        "slc_ee0880efd7e7c83921b7ac4592b5656380ff4b7d979300a806bc12c273e65efd"
+      ],
+      "text": "OmniDesk is an Electron 28 desktop app using React 18 + TypeScript, xterm.js with node-pty for terminals, Tailwind CSS styling, and Vite with electron-builder for building."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e768f9ec548bf1d2bfe367603ce055fe8a7fa47538a26dd8b27cdc4f9352115e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 244,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L244-L244"
+        },
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 260,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L246-L260"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5032a979f14fdfae209c814942aa68069bed345e20e64e6be01ef256069e6caf",
+        "slc_c18619ef0897ba25fb0ff69ffa23b3dc5033354ca38b6186a72b032e9ca93e15"
+      ],
+      "text": "The architecture is a three-layer pattern per domain: managers in the Electron main process, hooks in the renderer, and shell components, connected via roughly 115 IPC methods through an auto-derived preload bridge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e104d304af0b1f30eca8c736b86e863c5138c48fbd5927014346ca5952e7fffe",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 262,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L262-L262"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_193fb5e72bec53d04599fd83d707c4dff64f513fcef3130a964c4a93f08d7cdc"
+      ],
+      "text": "The IPC contract file is treated as the single source of truth, auto-deriving channels, preload bridge methods, and TypeScript types; a provider abstraction (IProvider) decouples CLI specifics from session management."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc2846740053baf383e808b6c2fb7d22851b58d72fad40839f075d617ca0ada7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 225,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L211-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_813e53714629b2e80c8619f9e21fd9d89eb93f80f7ac60f8cee581490a9e122d"
+      ],
+      "text": "The app exposes keyboard-driven interfaces: Ctrl/Cmd+K command palette, Ctrl/Cmd+J attention cockpit, Ctrl/Cmd+Shift+K repo switcher, Ctrl/Cmd+1/2 for Focus/Grid views, and Ctrl+Shift+Space for voice dictation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ea9712bd92b1b04dfc818781258946f202613d980a78774c1f4cc9861934cd0",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L77-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b2a7e786c320e73333b159927ae31740e969766064ed1986ff5fa27ff92e6f02"
+      ],
+      "text": "Sessions can run on a new git worktree/branch, an existing branch, or the current checkout, with git status, branch, and worktree operations handled in the main process and optional worktree cleanup on session close."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba2b2eced0792e57cdf6217158c7fbadc2532f24f80129fb0834d784db55c8ce",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 68,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L63-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_74408f4a6f48d69efe867ec923c60f86d2ffba837ea6f1f17edc1a89e59d6b6f"
+      ],
+      "text": "Multiple concurrent sessions per repository are supported, with a pre-warmed session pool for fast creation, session persistence across app restarts, and auto-renaming of unnamed sessions to the agent's live task summary from the CLI terminal title."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_910b9529803912bbea8772b761ab85c2394c7108e82dd87c3f0405e677a6d994",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 68,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L63-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_74408f4a6f48d69efe867ec923c60f86d2ffba837ea6f1f17edc1a89e59d6b6f"
+      ],
+      "text": "For Claude sessions, a per-session launch mode picker offers claude, claude --dangerously-skip-permissions, or claude agents, gated by an automatic CLI availability probe at creation time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8d75c833707851e7c262afbcc8c99eb7021e9c21ca4d13fc5dbd87cc36886d1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 154,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L154-L154"
+        },
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 152,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L146-L152"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_357d5f7488fe2bd07e4f6e693de4a55e1171cce8bdf016ca2755d97d0b2def7b",
+        "slc_583cffe26b290774b39049f2f28ea7f34f67d250e2bb2044f704c00f8570a474"
+      ],
+      "text": "Prerequisites are Node.js 20+ and the Claude Code CLI (installed globally via npm), with Claude API credentials read from ~/.claude/.credentials.json; the Codex CLI is optional and auto-detected."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de25b3c7ca452a91f22b6e293776f2caf1d3b0300f3178128bf60bfaed9f898b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 98,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L94-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a83bb1d4d134481c72c340419b8324dfacd0866bff47f386768394b453b64a1b"
+      ],
+      "text": "A Session History Explorer stores past-session transcripts with cross-session content search, Markdown/JSON export, deletion, storage stats, retention policy, plus a Checkpoints panel for named session checkpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36f87aa766b03a2dd8e163633d39c1c766ad46882a36a0c4a77469899aa99780",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 119,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L113-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84962ac31ae082d50eb0c596e0fcaab1f156dc5b5f635fe08385a6cb1c10e48a"
+      ],
+      "text": "Remote access serves the same UI from a browser over a one-click managed Cloudflare tunnel, bound to 127.0.0.1 only with its own access token (cookie plus WebSocket check), off by default, with a QR sign-in and installable PWA."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d527ad052bb3e8923dbc3c625b5c9d7795ee4eaf86d81ef2642b46ed882965a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 314,
+          "line_start": 312,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L312-L314"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_97b65b2056e008ea7682e620dfc920606949bf9808f885abb5663f218af350e1"
+      ],
+      "text": "Documented platform caveats: Windows uses cmd.exe as the default shell so claude must be on PATH, macOS 10.13+ is required, and Linux may need libxtst6 and libnss3 packages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60203a0fedd7c475279849434b9a9433a0c0dc0c1285a3d2bf440b8777c302ce",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L292-L292"
+        },
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 290,
+          "line_start": 283,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L283-L290"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8308a87fefca483df9d090aff46ad4f7dc51f2cf14f36fff30160bb1ac1486ff",
+        "slc_f038f1ef6b471555c797e0d379b3884d28a2082016471bca100a3e12c19a7b6b"
+      ],
+      "text": "Repository development practice: development uses npm run electron:dev for hot-reload dev mode, npm test for the 1418-test Vitest suite, npm run test:e2e for Playwright E2E tests requiring a built app, and npm run test:coverage for coverage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae2e2aeb7a172232e09ecac579e49a8b01144040de3c388785b2076d89d803c7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "ce3d3ca71825e919dc4cf3206bc2df9c2010da8e",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "CHANGELOG.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/CHANGELOG.md#L90-L90"
+        },
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 324,
+          "line_start": 324,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L324-L324"
+        },
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 322,
+          "line_start": 320,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L320-L322"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c9bb5a3694c6d7238066c7870fadb757892a22676a3fc94a540c8e3a2b11a6e",
+        "slc_d9711f441021ba92b71b181bc481d352a7cec1221771e91d65a79170c6d3d112",
+        "slc_e51fe6ee3fb4b6c97bcf8ecee314964e49f8575c5ebefd868a0b94c22e4e1275"
+      ],
+      "text": "Repository development practice: contributors are directed to CONTRIBUTING.md for guidelines and a Code of Conduct, with bug reports and feature requests via GitHub issue templates; the repo workflow requires worktree-per-task branching from an up-to-date main."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4129a57d88a35ec32cfd20b627ea4fab40f8bbf850943a8e8e1d6b34e18930e5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 304,
+          "line_start": 300,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L300-L304"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b3b238c91ee6314452842a4a92eeb37efe9514fd3f974d094257d986a8ca5a46"
+      ],
+      "text": "The project is local-first and telemetry-free: session data stays on the machine, and network calls are limited to Anthropic's quota API, GitHub update checks, configured git remotes, and a one-time consented Hugging Face voice-model download."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_812bbb8f74009f764a06bb85719779428acffe523c053e15afc58321e9aed6a7",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 238,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L231-L238"
+        },
+        {
+          "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+          "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+          "line_end": 290,
+          "line_start": 283,
+          "path": "README.md",
+          "repository": "carloluisito/omnidesk",
+          "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md#L283-L290"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ee0880efd7e7c83921b7ac4592b5656380ff4b7d979300a806bc12c273e65efd",
+        "slc_f038f1ef6b471555c797e0d379b3884d28a2082016471bca100a3e12c19a7b6b"
+      ],
+      "text": "No agent/task performance evaluation (benchmarks or success-rate metrics) appears in the evidence; the 1418 Vitest tests and Playwright suite are the repository's own test suite, not an eval harness."
+    }
+  ],
+  "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 356,
+        "path": "README.md",
+        "size": 19990
+      },
+      {
+        "lines": 721,
+        "path": "CHANGELOG.md",
+        "size": 48204
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "byte-budget",
+        "size": 26857
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "byte-budget",
+        "size": 5470
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "byte-budget",
+        "size": 12944
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "byte-budget",
+        "size": 3478
+      },
+      {
+        "path": "docs/design/2026-07-19-agentic-cockpit-design.md",
+        "reason": "byte-budget",
+        "size": 32358
+      },
+      {
+        "path": "docs/design/2026-07-19-integrations-platform-design.md",
+        "reason": "byte-budget",
+        "size": 11600
+      },
+      {
+        "path": "docs/doc-drift-audit.md",
+        "reason": "byte-budget",
+        "size": 11713
+      },
+      {
+        "path": "docs/experiments/2026-07-19-bell-attention-probe.md",
+        "reason": "byte-budget",
+        "size": 5037
+      },
+      {
+        "path": "docs/remote-mobile-ux-findings.md",
+        "reason": "byte-budget",
+        "size": 9865
+      },
+      {
+        "path": "docs/repo-index.md",
+        "reason": "byte-budget",
+        "size": 27805
+      },
+      {
+        "path": "docs/social/v2.3.0.md",
+        "reason": "byte-budget",
+        "size": 3489
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 368,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 11,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_a5f6374dcbaa56e185709adb1d45b83c",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/carloluisito/omnidesk/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/65711062c53336a3/manifest.json",
+  "package_id": "pkg_778c2be6a0b272d724c2cb8939fdf61b876a06e9acc9596b31669e7225728e36",
+  "repo": "carloluisito/omnidesk",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "dec2f5f2a10faa22f02d89abe0d9699e60e77fff24243f684c537973ccf3769f",
+  "snapshot_id": "65711062c53336a3",
+  "sources": [
+    {
+      "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+      "git_sha": "ce3d3ca71825e919dc4cf3206bc2df9c2010da8e",
+      "lines": 721,
+      "path": "CHANGELOG.md",
+      "repository": "carloluisito/omnidesk",
+      "sha256": "a1a934df6a769bc6c5f19b05207d6646e537306a93da47cd44c31e8a674d3441",
+      "source_id": "src_c0d13f850dfe57648d0fd494df277a1b",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/CHANGELOG.md"
+    },
+    {
+      "commit": "95f0b96dc8024677b02ca8ca7d4e92b2d66db788",
+      "git_sha": "c673295692fda6de9003a6528ea9ea747c6ead3b",
+      "lines": 356,
+      "path": "README.md",
+      "repository": "carloluisito/omnidesk",
+      "sha256": "16bbba1c0beb2a2826f55d52ebe8338da293fb8ae86a3c66af156b88a65508cf",
+      "source_id": "src_f8adcb7025ae5ac1a0061f4cc0212916",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/carloluisito/omnidesk/blob/95f0b96dc8024677b02ca8ca7d4e92b2d66db788/README.md"
+    }
+  ],
+  "summary": "README and CHANGELOG evidence describes OmniDesk, an Electron desktop terminal wrapper for AI coding CLIs (Claude Code, Codex) with multi-session, worktree, remote-access, and notification features; development/build instructions appear in the Development section. Evidence coverage: 127 of 221 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

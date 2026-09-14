@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0e62889ea81350963a827d5b27535a93ddd0c3a318d54a58b1241741cc2aca2c
+- clm_1998c197a235053dba156a5b5715d51791b7297d28707cff0744e86639051dd1
+- clm_1bc47c994d43ff224e4c0e0b2db88fb2be7b3bc98418608bb6920fe662d92a4b
+- clm_2a906f7fa72b7c6c0e561a1ba549193a9d800a50f6484e37a34c037faa77bc4e
+- clm_30b49378fa7be3341529dc148e09ddb4567e000c8ad2af473d6cce3e5a358de4
+- clm_8d0ac02a03ee4384318e38132f61956406d7eb4e58ea9b3bd515e889ce5483b2
+- clm_92be926ba41044dd0a9a93026967b48c013cf07ab3be04e0a2f0c79b544c4ead
+- clm_b8df81b2a76109e7eb7063c0052b95ca8c0fb7d932dc8c233d6044270f7f2365
+- clm_dd1c51eed1e72df619f1676282df2f108f775b635f5a311ab01f9e4af6ecae64
+- clm_e7f90bae5ffc00a9572e7dab1ba4435578342d45b9999b123ace762c72a09bb6
+maturity: draft
+page_id: pg_c1c5d607c7cb5128b8f93cb6f3f684d8
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: honeydew-ai/honeydew-ai-coding-agents-plugins
+updated_at: '2026-09-14T03:57:08Z'
+---
+
+# honeydew-ai/honeydew-ai-coding-agents-plugins
+
+<!-- rcw:begin owner=entity:ent_606176b485c05982bd91b383cb6783f2 block=evidence -->
+- honeydew-ai/honeydew-ai-coding-agents-plugins is mentioned in this evidence. [@claim:clm_0e62889ea81350963a827d5b27535a93ddd0c3a318d54a58b1241741cc2aca2c] [@claim:clm_1998c197a235053dba156a5b5715d51791b7297d28707cff0744e86639051dd1] [@claim:clm_1bc47c994d43ff224e4c0e0b2db88fb2be7b3bc98418608bb6920fe662d92a4b] [@claim:clm_2a906f7fa72b7c6c0e561a1ba549193a9d800a50f6484e37a34c037faa77bc4e] [@claim:clm_30b49378fa7be3341529dc148e09ddb4567e000c8ad2af473d6cce3e5a358de4] [@claim:clm_8d0ac02a03ee4384318e38132f61956406d7eb4e58ea9b3bd515e889ce5483b2] [@claim:clm_92be926ba41044dd0a9a93026967b48c013cf07ab3be04e0a2f0c79b544c4ead] [@claim:clm_b8df81b2a76109e7eb7063c0052b95ca8c0fb7d932dc8c233d6044270f7f2365] [@claim:clm_dd1c51eed1e72df619f1676282df2f108f775b635f5a311ab01f9e4af6ecae64] [@claim:clm_e7f90bae5ffc00a9572e7dab1ba4435578342d45b9999b123ace762c72a09bb6]
+<!-- rcw:end owner=entity:ent_606176b485c05982bd91b383cb6783f2 block=evidence -->
+
+## Researcher notes
+

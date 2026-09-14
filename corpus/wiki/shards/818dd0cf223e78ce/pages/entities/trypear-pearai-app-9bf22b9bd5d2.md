@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_327e6e20b42e33a4ce0a7438bc9c374d2cb7ef7b1ecce5769fbe35e23c29fa26
+- clm_41bae77e4a9aecf51d7d999c3c388a43b2739ee5463109b6d6f9ccc3a8a8697a
+- clm_498b297f86e78bff0600bef8649752ffc4d1fde8098282c7397ac1455ec367c0
+- clm_79b20f11d8101daa02ad924778231b81ad6a70906cff3f9da4911529f1498d07
+- clm_8e50267e5249f49e19f04ff7030ef271f0bd1badb1717d56602da340ffb6e5bd
+- clm_927d7ebbffbcd371ec8b066226e604517d360783d28588ffaf026704cac34dbc
+- clm_a70c1e2c74e33f0f932c0ae0f4e78fc455c549572bc3c787ceb54af9821353ea
+- clm_bb2ff11b25e7588a24a8f875895ee1b4728d6076352bfad0f4e72a4ab114ab00
+- clm_de27e3248cf88433671c69a714bfb843a13285e705cab6fae735f71217e6a0c3
+- clm_e94ff437cbf5557738c4d09308e67d77eec09fb2c6527d96f627261885367fdc
+- clm_f2cdd0c1f4886c125399e31b1a26c14f76e4c235b42da66b4f9276adecb1ee77
+- clm_f8e5a885886312803a492bbfab56a252e0f09dd95c12a5abeb2fa80adebd5417
+maturity: draft
+page_id: pg_d6817664776c58b585e59bf22b9bd5d2
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: trypear/pearai-app
+updated_at: '2026-09-14T03:20:38Z'
+---
+
+# trypear/pearai-app
+
+<!-- rcw:begin owner=entity:ent_c5f4b58839475cd5905a0378b0f7327e block=evidence -->
+- trypear/pearai-app is mentioned in this evidence. [@claim:clm_327e6e20b42e33a4ce0a7438bc9c374d2cb7ef7b1ecce5769fbe35e23c29fa26] [@claim:clm_41bae77e4a9aecf51d7d999c3c388a43b2739ee5463109b6d6f9ccc3a8a8697a] [@claim:clm_498b297f86e78bff0600bef8649752ffc4d1fde8098282c7397ac1455ec367c0] [@claim:clm_79b20f11d8101daa02ad924778231b81ad6a70906cff3f9da4911529f1498d07] [@claim:clm_8e50267e5249f49e19f04ff7030ef271f0bd1badb1717d56602da340ffb6e5bd] [@claim:clm_927d7ebbffbcd371ec8b066226e604517d360783d28588ffaf026704cac34dbc] [@claim:clm_a70c1e2c74e33f0f932c0ae0f4e78fc455c549572bc3c787ceb54af9821353ea] [@claim:clm_bb2ff11b25e7588a24a8f875895ee1b4728d6076352bfad0f4e72a4ab114ab00] [@claim:clm_de27e3248cf88433671c69a714bfb843a13285e705cab6fae735f71217e6a0c3] [@claim:clm_e94ff437cbf5557738c4d09308e67d77eec09fb2c6527d96f627261885367fdc] [@claim:clm_f2cdd0c1f4886c125399e31b1a26c14f76e4c235b42da66b4f9276adecb1ee77] [@claim:clm_f8e5a885886312803a492bbfab56a252e0f09dd95c12a5abeb2fa80adebd5417]
+<!-- rcw:end owner=entity:ent_c5f4b58839475cd5905a0378b0f7327e block=evidence -->
+
+## Researcher notes
+

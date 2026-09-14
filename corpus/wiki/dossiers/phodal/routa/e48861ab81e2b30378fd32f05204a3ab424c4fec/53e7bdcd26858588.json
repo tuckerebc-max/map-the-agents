@@ -1,0 +1,1543 @@
+{
+  "applied_operation_id": "op_a5c9b1a4fdd54c2a8ddc30641f47a109",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ee473c51bfe5e67818cdde7ebbe30a87126f3433c6b2d4e37c533a57556b84c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L23-L23"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_128199ab89a11b4a4b97269838b24dc62e042f84d5cf5a804f204886c0c17ae6",
+        "slc_c901173ba58d61e218fab5cca892f49626b7ca5805ddcc7f075e8181af233a80"
+      ],
+      "text": "Routa is described as a workspace-first multi-agent coordination platform for software delivery, keeping goals, tasks, sessions, traces, evidence, and review state visible on a board rather than in one chat thread."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38a6d9c7056885d8526445cbb1fb0b6aafbaa10f2cc8c884805403277a8bbfeb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L47-L47"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L49-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3bd5fc3389dbddd6eb093bcd7b1526cb4f757555a836a6f84293068e4df9db20",
+        "slc_aae640d1eecaaf4cb33abb023b31d78871ff2e4099df65e4595ef6dd3ad3accf"
+      ],
+      "text": "The implementation is intentionally dual-backend: a Next.js web app in src/, a Tauri desktop shell backed by an Axum server in crates/routa-server, sharing semantics defined by api-contract.yaml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d11b0ec7559c88ef159c25f0445fa0562d4e978d624bdc1668358fac7f975d08",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L49-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aae640d1eecaaf4cb33abb023b31d78871ff2e4099df65e4595ef6dd3ad3accf"
+      ],
+      "text": "Integration surfaces listed include ACP, MCP, A2A, AG-UI, A2UI, REST, and SSE."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6490c16d69edc7484e597dc3cf3403030a9a20783b848c953a1669955b758e5d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 75,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L66-L75"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L77-L77"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 93,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L86-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26ff72f483c73fda5e0696acc4aa7660133ccc58fadd842da6e0d4c63fb9b075",
+        "slc_c24bafb94cec72d761ee8f037aa7e5d8302675657bd9a432c82821731d83e66e",
+        "slc_c5a3a01115d6952163d94d773713978a782435515b33da927b346b062fe76b93"
+      ],
+      "text": "Work flows through Kanban lanes Backlog, Todo, Dev, Review, Done, each backed by a specialist prompt (Backlog Refiner, Todo Orchestrator, Dev Crafter, Review Guard, Done Reporter), with a Blocked Resolver for blocked work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cac67e64e405953ff060de1a04427ac8c3a78ae6608a1d73bd2708a48ef0f881",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L108-L108"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 114,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L110-L114"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L116-L116"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L77-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f177a5a2499f42faed26edc0935f4078a0582b73edb1736e5908531c61fc3d2",
+        "slc_9bd0282e225bf83c8d8510e8c02f6e9f67e4a7ec0ec378478f95880b487ff21c",
+        "slc_bc13f0e01be06fb6e548163039304b72bcf0c649756f88fb2ac3241630df806e",
+        "slc_c24bafb94cec72d761ee8f037aa7e5d8302675657bd9a432c82821731d83e66e"
+      ],
+      "text": "Each downstream lane is deliberately stricter than the previous one; cards accumulate artifacts (story YAML, execution brief, dev evidence, review verdict, completion summary) as they move forward."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee5e3b746d38d78181ea6990be01595949421d4a1d729363f5cd049499a23f54",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 62,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L60-L62"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_858280b307078e429814c9f74fb8348e6d60e31450a957cda74cf865d06527ca",
+        "slc_adb2780d7c727b4606504ee8c35e77f5ea0ae9158e564dbac2a08a718d7d9734"
+      ],
+      "text": "The review gate is a stacked decision path with three layers: Harness Monitor (what happened), Entrix Fitness (what should be true, hard gates and evidence requirements), and Gate Specialist (whether the card can move)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57d083d4ae653f8acbbbe7de9eaa2400a2a87243c6aee1c97555ee073279f11d",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L124-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00843ddf2a91b105549bdeb655118ba48a8ae485e5fea7cc3cc1edf1f3468941"
+      ],
+      "text": "Built-in lane prompts live under resources/specialists/workflows/kanban/*.yaml, and core role prompts (routa, crafter, gate) under resources/specialists/core/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22916abf5c50d08ac92b0f56e6f60002200e80c9147cdda686877440656a4818",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 177,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L173-L177"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L9-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_484ee36f6f16d629d5e91aede7ff61a047d77f8942b61a46b6c7e77a19e14463",
+        "slc_6abc7546b88cdf74a6798d1c74653a6034fb196d302e3c5a2b69276ca1de01ce"
+      ],
+      "text": "The CLI is distributed as routa-cli on npm and crates.io, with commands such as routa --help, routa acp list, and routa workspace list."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd8623e22d4b5467b9d32111b6fb11424b31d8a09601ae0199645abfff5ddc2b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 244,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L231-L244"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8c56adf83703b9358f8e971a439e3239ff788d3a4abb15fda70303f1e573415"
+      ],
+      "text": "Repository map includes crates/routa-core (shared Rust runtime foundation), crates/routa-cli (CLI entrypoints and ACP serving), and crates/harness-monitor (run observation and operator-facing harness monitor)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df0add6a4692c86d54c96c19f328dd61f4469d558a075367d6c3ec3c471980df",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 259,
+          "line_start": 259,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L259-L259"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md#L9-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0acdc3d34c5cf0e8e5b21d434b4f09386f12e4b6fb3fc583f344da560f1b0fe3",
+        "slc_6abc7546b88cdf74a6798d1c74653a6034fb196d302e3c5a2b69276ca1de01ce"
+      ],
+      "text": "Badges indicate TypeScript 5.9, Next.js 16.2, and Rust with Axum; the project is MIT licensed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_952115dfe6cd75f7ad3c372b404ec9c77686c9fc4d1eddd72194dcdbf59750c2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "e1be60f62bd59675e7f8c1e877c6b143a68e49cc",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "AGENTS.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/AGENTS.md#L41-L41"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "e1be60f62bd59675e7f8c1e877c6b143a68e49cc",
+          "line_end": 47,
+          "line_start": 43,
+          "path": "AGENTS.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/AGENTS.md#L43-L47"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "e1be60f62bd59675e7f8c1e877c6b143a68e49cc",
+          "line_end": 51,
+          "line_start": 49,
+          "path": "AGENTS.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/AGENTS.md#L49-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_354c47ca850ef989bd56904d35a2f9cc4e92a892fcf403489205aa8fecf9060a",
+        "slc_49126dcdf5e5f5d6088d996675120f881d92f286585e31f04e9d1370f328deb6",
+        "slc_d501f2698ac8990cb2313e682a1c03ae8ef63fb2a04f43375fabfaa4351ad658"
+      ],
+      "text": "Repository development practice: contributors must run entrix validation before PR using docs/fitness/README.md as the canonical rulebook, with tiers fast and normal, and build via cargo build -p entrix."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34a75e150c9bc04939dbbc2d67eda5a741d7e21963d839e501db193a6c732e2f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "e1be60f62bd59675e7f8c1e877c6b143a68e49cc",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "AGENTS.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/AGENTS.md#L64-L66"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "e1be60f62bd59675e7f8c1e877c6b143a68e49cc",
+          "line_end": 83,
+          "line_start": 82,
+          "path": "AGENTS.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/AGENTS.md#L82-L83"
+        },
+        {
+          "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+          "git_sha": "e1be60f62bd59675e7f8c1e877c6b143a68e49cc",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "AGENTS.md",
+          "repository": "phodal/routa",
+          "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/AGENTS.md#L57-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04bc20638a2af5ddfed926fc2cdae89bce9b424b0a3217c0e1db1e1f65df6540",
+        "slc_52dc17b7d6e80b27ecb7ed5855d5a667e769f6286e3a1c17d1284cad0ca37e4d",
+        "slc_ff1214013866950d3742f03192a2ca0c7e20a7cc0e966312b741538e5327b0ae"
+      ],
+      "text": "Repository development practice: commits must follow Conventional Commits with one concern per commit, under 10 files and 1000 changed lines, exactly one co-author line, and UI PRs should include screenshots or recordings."
+    }
+  ],
+  "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 259,
+        "path": "README.md",
+        "size": 12938
+      },
+      {
+        "lines": 120,
+        "path": "AGENTS.md",
+        "size": 7530
+      },
+      {
+        "lines": 62,
+        "path": "CHANGELOG.md",
+        "size": 2202
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 916
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1060
+      },
+      {
+        "path": "README.zh-CN.md",
+        "reason": "file-budget",
+        "size": 12707
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 784
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 405
+      },
+      {
+        "path": "routa-desktop.md",
+        "reason": "file-budget",
+        "size": 6877
+      },
+      {
+        "path": "docs/ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 14888
+      },
+      {
+        "path": "docs/ARCHITECTURE_QUALITY_GUIDE.md",
+        "reason": "file-budget",
+        "size": 4357
+      },
+      {
+        "path": "docs/REFACTOR.md",
+        "reason": "file-budget",
+        "size": 2969
+      },
+      {
+        "path": "docs/RELEASE_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 3438
+      },
+      {
+        "path": "docs/RELEASE_SETUP.md",
+        "reason": "file-budget",
+        "size": 4316
+      },
+      {
+        "path": "docs/administration/index.md",
+        "reason": "file-budget",
+        "size": 2161
+      },
+      {
+        "path": "docs/administration/self-hosting.md",
+        "reason": "file-budget",
+        "size": 1208
+      },
+      {
+        "path": "docs/adr/0001-dual-backend-semantic-parity.md",
+        "reason": "file-budget",
+        "size": 1768
+      },
+      {
+        "path": "docs/adr/0002-provider-normalization-via-acp.md",
+        "reason": "file-budget",
+        "size": 2224
+      },
+      {
+        "path": "docs/adr/0003-workspace-first-scope.md",
+        "reason": "file-budget",
+        "size": 1860
+      },
+      {
+        "path": "docs/adr/0004-kanban-driven-automation.md",
+        "reason": "file-budget",
+        "size": 2409
+      },
+      {
+        "path": "docs/adr/0005-specialist-externalization.md",
+        "reason": "file-budget",
+        "size": 2025
+      },
+      {
+        "path": "docs/adr/0006-orchestration-shell-pattern.md",
+        "reason": "file-budget",
+        "size": 2065
+      },
+      {
+        "path": "docs/adr/0007-kanban-delivery-transition-policies.md",
+        "reason": "file-budget",
+        "size": 2938
+      },
+      {
+        "path": "docs/adr/README.md",
+        "reason": "file-budget",
+        "size": 1914
+      },
+      {
+        "path": "docs/blog/agent-team-design-practice.md",
+        "reason": "file-budget",
+        "size": 19062
+      },
+      {
+        "path": "docs/blog/from-autodev-to-routa.md",
+        "reason": "file-budget",
+        "size": 13279
+      },
+      {
+        "path": "docs/blog/harness-fitness-function.md",
+        "reason": "file-budget",
+        "size": 9951
+      },
+      {
+        "path": "docs/blog/routa-fitness-anti-entropy.md",
+        "reason": "file-budget",
+        "size": 14256
+      },
+      {
+        "path": "docs/blog/routa-kanban-agent-team-management.md",
+        "reason": "file-budget",
+        "size": 12319
+      },
+      {
+        "path": "docs/blog/when-agents-join-the-board.md",
+        "reason": "file-budget",
+        "size": 10241
+      },
+      {
+        "path": "docs/blog/when-agents-join-the-board.zh-CN.md",
+        "reason": "file-budget",
+        "size": 13082
+      },
+      {
+        "path": "docs/coding-style.md",
+        "reason": "file-budget",
+        "size": 3042
+      },
+      {
+        "path": "docs/configuration/environment-variables.md",
+        "reason": "file-budget",
+        "size": 1337
+      },
+      {
+        "path": "docs/configuration/index.md",
+        "reason": "file-budget",
+        "size": 1860
+      },
+      {
+        "path": "docs/configuration/providers-and-models.md",
+        "reason": "file-budget",
+        "size": 1048
+      },
+      {
+        "path": "docs/copilot-fs-base-agent/context.txt",
+        "reason": "file-budget",
+        "size": 9846
+      },
+      {
+        "path": "docs/core-concepts/how-routa-works.md",
+        "reason": "file-budget",
+        "size": 1600
+      },
+      {
+        "path": "docs/core-concepts/index.md",
+        "reason": "file-budget",
+        "size": 1107
+      },
+      {
+        "path": "docs/deployment/index.md",
+        "reason": "file-budget",
+        "size": 1012
+      },
+      {
+        "path": "docs/design-docs/agentwatch-tui.md",
+        "reason": "file-budget",
+        "size": 4069
+      },
+      {
+        "path": "docs/design-docs/architecture-rule-dsl.md",
+        "reason": "file-budget",
+        "size": 9909
+      },
+      {
+        "path": "docs/design-docs/core-beliefs.md",
+        "reason": "file-budget",
+        "size": 2522
+      },
+      {
+        "path": "docs/design-docs/execution-modes.md",
+        "reason": "file-budget",
+        "size": 10214
+      },
+      {
+        "path": "docs/design-docs/file-deletion-safety-mechanism.md",
+        "reason": "file-budget",
+        "size": 7106
+      },
+      {
+        "path": "docs/design-docs/git-commit-safety-mechanism.md",
+        "reason": "file-budget",
+        "size": 15232
+      },
+      {
+        "path": "docs/design-docs/golden-rules.md",
+        "reason": "file-budget",
+        "size": 2001
+      },
+      {
+        "path": "docs/design-docs/harness-trace-learning-phase2.md",
+        "reason": "file-budget",
+        "size": 7130
+      },
+      {
+        "path": "docs/design-docs/index.md",
+        "reason": "file-budget",
+        "size": 4481
+      },
+      {
+        "path": "docs/design-docs/product-ia-visualization.md",
+        "reason": "file-budget",
+        "size": 5025
+      },
+      {
+        "path": "docs/design-docs/workspace-centric-redesign.md",
+        "reason": "file-budget",
+        "size": 4949
+      },
+      {
+        "path": "docs/developer-guide/contributing.md",
+        "reason": "file-budget",
+        "size": 1440
+      },
+      {
+        "path": "docs/developer-guide/git-workflow.md",
+        "reason": "file-budget",
+        "size": 1401
+      },
+      {
+        "path": "docs/developer-guide/index.md",
+        "reason": "file-budget",
+        "size": 2884
+      },
+      {
+        "path": "docs/developer-guide/local-overlay-sync.md",
+        "reason": "file-budget",
+        "size": 4622
+      },
+      {
+        "path": "docs/developer-guide/project-structure.md",
+        "reason": "file-budget",
+        "size": 2060
+      },
+      {
+        "path": "docs/developer-guide/testing.md",
+        "reason": "file-budget",
+        "size": 1261
+      },
+      {
+        "path": "docs/exec-plans/README.md",
+        "reason": "file-budget",
+        "size": 689
+      },
+      {
+        "path": "docs/exec-plans/active/README.md",
+        "reason": "file-budget",
+        "size": 358
+      },
+      {
+        "path": "docs/exec-plans/active/git-workflow-ui-complete.md",
+        "reason": "file-budget",
+        "size": 8070
+      },
+      {
+        "path": "docs/exec-plans/active/git-workflow-ui-phase-2-complete.md",
+        "reason": "file-budget",
+        "size": 6802
+      },
+      {
+        "path": "docs/exec-plans/active/git-workflow-ui-progress.md",
+        "reason": "file-budget",
+        "size": 5301
+      },
+      {
+        "path": "docs/exec-plans/active/harness-monitor-run-centric-implementation.md",
+        "reason": "file-budget",
+        "size": 15715
+      },
+      {
+        "path": "docs/exec-plans/active/harness-monitor-run-centric-priorities.md",
+        "reason": "file-budget",
+        "size": 10603
+      },
+      {
+        "path": "docs/exec-plans/active/workspace-centric-normalization.md",
+        "reason": "file-budget",
+        "size": 2213
+      },
+      {
+        "path": "docs/exec-plans/completed/README.md",
+        "reason": "file-budget",
+        "size": 318
+      },
+      {
+        "path": "docs/exec-plans/tech-debt-tracker.md",
+        "reason": "file-budget",
+        "size": 1164
+      },
+      {
+        "path": "docs/features/ai-branch-integration-guide.md",
+        "reason": "file-budget",
+        "size": 11791
+      },
+      {
+        "path": "docs/features/architecture-quality.md",
+        "reason": "file-budget",
+        "size": 5514
+      },
+      {
+        "path": "docs/features/disabled-providers.md",
+        "reason": "file-budget",
+        "size": 2768
+      },
+      {
+        "path": "docs/features/harness-floating-nav.md",
+        "reason": "file-budget",
+        "size": 2240
+      },
+      {
+        "path": "docs/features/harness-trace-learning.md",
+        "reason": "file-budget",
+        "size": 6106
+      },
+      {
+        "path": "docs/features/i18n-implementation.md",
+        "reason": "file-budget",
+        "size": 13024
+      },
+      {
+        "path": "docs/features/i18n-quick-reference.md",
+        "reason": "file-budget",
+        "size": 2374
+      },
+      {
+        "path": "docs/features/merge-plan-windows-compat-i18n.md",
+        "reason": "file-budget",
+        "size": 11673
+      },
+      {
+        "path": "docs/fitness/README.md",
+        "reason": "file-budget",
+        "size": 16175
+      },
+      {
+        "path": "docs/fitness/api-contract.md",
+        "reason": "file-budget",
+        "size": 2366
+      },
+      {
+        "path": "docs/fitness/backend-architecture.md",
+        "reason": "file-budget",
+        "size": 3530
+      },
+      {
+        "path": "docs/fitness/code-quality.md",
+        "reason": "file-budget",
+        "size": 14588
+      },
+      {
+        "path": "docs/fitness/design-system-quality-layers.md",
+        "reason": "file-budget",
+        "size": 6248
+      },
+      {
+        "path": "docs/fitness/design-system-shell.md",
+        "reason": "file-budget",
+        "size": 7665
+      },
+      {
+        "path": "docs/fitness/engineering-governance.md",
+        "reason": "file-budget",
+        "size": 4883
+      },
+      {
+        "path": "docs/fitness/playbooks/typescript-coverage-uplift.md",
+        "reason": "file-budget",
+        "size": 1805
+      },
+      {
+        "path": "docs/fitness/poc/fitness-v2-schema.md",
+        "reason": "file-budget",
+        "size": 1602
+      },
+      {
+        "path": "docs/fitness/runtime/observability.md",
+        "reason": "file-budget",
+        "size": 3459
+      },
+      {
+        "path": "docs/fitness/runtime/performance.md",
+        "reason": "file-budget",
+        "size": 3559
+      },
+      {
+        "path": "docs/fitness/rust-api-test.md",
+        "reason": "file-budget",
+        "size": 11727
+      },
+      {
+        "path": "docs/fitness/security.md",
+        "reason": "file-budget",
+        "size": 5632
+      },
+      {
+        "path": "docs/fitness/unit-test.md",
+        "reason": "file-budget",
+        "size": 7408
+      },
+      {
+        "path": "docs/fitness/web-qa-e2e-matrix.md",
+        "reason": "file-budget",
+        "size": 8454
+      },
+      {
+        "path": "docs/getting-started/changelog.md",
+        "reason": "file-budget",
+        "size": 1051
+      },
+      {
+        "path": "docs/getting-started/index.md",
+        "reason": "file-budget",
+        "size": 2959
+      },
+      {
+        "path": "docs/guides/harness-trace-learning-guide.md",
+        "reason": "file-budget",
+        "size": 12454
+      },
+      {
+        "path": "docs/harness/harness-monitor-run-centric-operator-model.md",
+        "reason": "file-budget",
+        "size": 5108
+      },
+      {
+        "path": "docs/issues/2026-02-24-gh-15-oracle-openspec.md",
+        "reason": "file-budget",
+        "size": 8157
+      },
+      {
+        "path": "docs/issues/2026-02-27-gh-28-feat-typescript-cli-with-acp-orchestration-routa-crafter-gate-pipeline.md",
+        "reason": "file-budget",
+        "size": 9534
+      },
+      {
+        "path": "docs/issues/2026-02-28-gh-38-feat-agent-fleet-dispatch-one-task-across-multiple-workspaces-repos-in-p.md",
+        "reason": "file-budget",
+        "size": 2136
+      },
+      {
+        "path": "docs/issues/2026-02-28-gh-39-feat-agent-swarm-multiple-specialist-agents-converging-on-one-outcome.md",
+        "reason": "file-budget",
+        "size": 2202
+      },
+      {
+        "path": "docs/issues/2026-02-28-gh-41-feat-runtime-governance-for-autonomous-agents-deny-lists-scoped-permissi.md",
+        "reason": "file-budget",
+        "size": 2468
+      },
+      {
+        "path": "docs/issues/2026-02-28-gh-43-customize-routa-flow.md",
+        "reason": "file-budget",
+        "size": 12726
+      },
+      {
+        "path": "docs/issues/2026-03-01-gh-48-api-contract-schema-validation-for-dual-backend-consistency.md",
+        "reason": "file-budget",
+        "size": 2054
+      },
+      {
+        "path": "docs/issues/2026-03-02-drizzle-migrate-neon-connection-failure.md",
+        "reason": "file-budget",
+        "size": 4764
+      },
+      {
+        "path": "docs/issues/2026-03-02-hmr-resets-session-to-task-map.md",
+        "reason": "file-budget",
+        "size": 1845
+      },
+      {
+        "path": "docs/issues/2026-03-02-nextjs-ci-database-connection-error.md",
+        "reason": "file-budget",
+        "size": 3119
+      },
+      {
+        "path": "docs/issues/2026-03-02-polling-adapter-deduplication-reversed.md",
+        "reason": "file-budget",
+        "size": 2418
+      },
+      {
+        "path": "docs/issues/2026-03-03-gh-54-a2ui-for-customize-dashboard.md",
+        "reason": "file-budget",
+        "size": 719
+      },
+      {
+        "path": "docs/issues/2026-03-03-gh-56-routa-workflow-yaml-visualization.md",
+        "reason": "file-budget",
+        "size": 759
+      },
+      {
+        "path": "docs/issues/2026-03-03-gh-59-feedback-vercel-trace-guard-hook-ai-agent.md",
+        "reason": "file-budget",
+        "size": 795
+      },
+      {
+        "path": "docs/issues/2026-03-04-session-list-not-displayed-in-left-sidebar.md",
+        "reason": "file-budget",
+        "size": 5147
+      },
+      {
+        "path": "docs/issues/2026-03-04-task-execute-button-disabled-due-to-stale-in-progress-status.md",
+        "reason": "file-budget",
+        "size": 3751
+      },
+      {
+        "path": "docs/issues/2026-03-05-react-duplicate-keys-in-crafter-messages.md",
+        "reason": "file-budget",
+        "size": 1999
+      },
+      {
+        "path": "docs/issues/2026-03-06-gh-67-feat-provider-dynamic-provider-selection-based-on-agent-capabilities.md",
+        "reason": "file-budget",
+        "size": 4350
+      },
+      {
+        "path": "docs/issues/2026-03-06-opencode-agent-http-mode-mismatch.md",
+        "reason": "file-budget",
+        "size": 3582
+      },
+      {
+        "path": "docs/issues/2026-03-06-session-layout-and-sidebar-friction.md",
+        "reason": "file-budget",
+        "size": 4140
+      },
+      {
+        "path": "docs/issues/2026-03-07-gh-78-feat-workspace-repository-management-ui-api.md",
+        "reason": "file-budget",
+        "size": 2556
+      },
+      {
+        "path": "docs/issues/2026-03-07-opencode-bridge-terminal-requests.md",
+        "reason": "file-budget",
+        "size": 10171
+      },
+      {
+        "path": "docs/issues/2026-03-08-background-task-hmr-recovery.md",
+        "reason": "file-budget",
+        "size": 5415
+      },
+      {
+        "path": "docs/issues/2026-03-08-cli-specialist-at-mention.md",
+        "reason": "file-budget",
+        "size": 6049
+      },
+      {
+        "path": "docs/issues/2026-03-08-gh-85-readability-agent-first-knowledge-architecture-repository-as-system-of-r.md",
+        "reason": "file-budget",
+        "size": 6364
+      },
+      {
+        "path": "docs/issues/2026-03-08-github-virtual-workspace-zipball.md",
+        "reason": "file-budget",
+        "size": 5979
+      },
+      {
+        "path": "docs/issues/2026-03-08-smart-git-hooks.md",
+        "reason": "file-budget",
+        "size": 1614
+      },
+      {
+        "path": "docs/issues/2026-03-09-issue-100-implementation-analysis.md",
+        "reason": "file-budget",
+        "size": 11565
+      },
+      {
+        "path": "docs/issues/2026-03-09-issue-100-summary-zh.md",
+        "reason": "file-budget",
+        "size": 6636
+      },
+      {
+        "path": "docs/issues/2026-03-10-gh-105-feat-implement-conversation-share-feature-similar-to-opencode-ai.md",
+        "reason": "file-budget",
+        "size": 7826
+      },
+      {
+        "path": "docs/issues/2026-03-10-gh-106-feat-implement-codereview-agent-with-linter-integration.md",
+        "reason": "file-budget",
+        "size": 8339
+      },
+      {
+        "path": "docs/issues/2026-03-10-gh-108-add-qa-frontend-specialist-for-kanban-visual-regression-testing.md",
+        "reason": "file-budget",
+        "size": 7047
+      },
+      {
+        "path": "docs/issues/2026-03-10-gh-111-feature-playwright-ai.md",
+        "reason": "file-budget",
+        "size": 6803
+      },
+      {
+        "path": "docs/issues/2026-03-11-card-detail-rerun-mechanism-issues.md",
+        "reason": "file-budget",
+        "size": 9056
+      },
+      {
+        "path": "docs/issues/2026-03-11-gh-114-implement-architecture-fitness-function-specialist-for-measurable-correc.md",
+        "reason": "file-budget",
+        "size": 7505
+      },
+      {
+        "path": "docs/issues/2026-03-11-gh-120-support-kanban-cards-from-docs-issues-markdown-files-with-project-direct.md",
+        "reason": "file-budget",
+        "size": 7134
+      },
+      {
+        "path": "docs/issues/2026-03-11-gh-121-feat-add-acp-provider-and-specialist-support-to-create-agent-tool.md",
+        "reason": "file-budget",
+        "size": 7442
+      },
+      {
+        "path": "docs/issues/2026-03-12-gh-128-feedback-sync-github-issues-to-local-docs-issues-for-duplicate-detection.md",
+        "reason": "file-budget",
+        "size": 7176
+      },
+      {
+        "path": "docs/issues/2026-03-12-gh-132-feature-design-and-develop-ai-security-scanning-tool-based-on-routa-js-s.md",
+        "reason": "file-budget",
+        "size": 13983
+      },
+      {
+        "path": "docs/issues/2026-03-12-kanban-column-automation-and-manual-issue-modal.md",
+        "reason": "file-budget",
+        "size": 3777
+      },
+      {
+        "path": "docs/issues/2026-03-13-gh-136-design-multi-phase-code-review-agent-with-confidence-scoring-false-posit.md",
+        "reason": "file-budget",
+        "size": 11287
+      },
+      {
+        "path": "docs/issues/2026-03-13-gh-139-defense-implement-architecture-fitness-function-for-ai-driven-developmen.md",
+        "reason": "file-budget",
+        "size": 42841
+      },
+      {
+        "path": "docs/issues/2026-03-13-gh-143-implement-add-shared-session-collaboration-for-live-routa-sessions.md",
+        "reason": "file-budget",
+        "size": 10862
+      },
+      {
+        "path": "docs/issues/2026-03-13-rust-fitness-missing-application-test-layer.md",
+        "reason": "file-budget",
+        "size": 4038
+      },
+      {
+        "path": "docs/issues/2026-03-14-gh-148-feat-add-session-queueing-and-concurrency-limits-for-kanban-acp-automati.md",
+        "reason": "file-budget",
+        "size": 1530
+      },
+      {
+        "path": "docs/issues/2026-03-14-kanban-session-concurrency-queue.md",
+        "reason": "file-budget",
+        "size": 3013
+      },
+      {
+        "path": "docs/issues/2026-03-14-kanban-story-lane-automation-stalls-after-first-session.md",
+        "reason": "file-budget",
+        "size": 9822
+      },
+      {
+        "path": "docs/issues/2026-03-14-kanban-web-interactive-terminal-feasibility.md",
+        "reason": "file-budget",
+        "size": 5051
+      },
+      {
+        "path": "docs/issues/2026-03-15-kanban-repo-lifecycle-fix.md",
+        "reason": "file-budget",
+        "size": 3619
+      },
+      {
+        "path": "docs/issues/2026-03-15-kanban-session-history-needs-lane-metadata.md",
+        "reason": "file-budget",
+        "size": 1993
+      },
+      {
+        "path": "docs/issues/2026-03-15-tauri-kanban-routing-issue.md",
+        "reason": "file-budget",
+        "size": 3513
+      },
+      {
+        "path": "docs/issues/2026-03-15-tauri-menu-improvements.md",
+        "reason": "file-budget",
+        "size": 3932
+      },
+      {
+        "path": "docs/issues/2026-03-16-kanban-workspace-events-refresh-gap.md",
+        "reason": "file-budget",
+        "size": 3460
+      },
+      {
+        "path": "docs/issues/2026-03-17-design-system-quality-gates.md",
+        "reason": "file-budget",
+        "size": 4710
+      },
+      {
+        "path": "docs/issues/2026-03-17-design-system-unified-desktop-sidebar-theme-routing.md",
+        "reason": "file-budget",
+        "size": 6604
+      },
+      {
+        "path": "docs/issues/2026-03-17-dev-acp-session-watchdog-auto-recovery.md",
+        "reason": "file-budget",
+        "size": 13201
+      },
+      {
+        "path": "docs/issues/2026-03-18-kanban-rust-core-cli-parity.md",
+        "reason": "file-budget",
+        "size": 3869
+      },
+      {
+        "path": "docs/issues/2026-03-18-kanban-yaml-config-cli-bootstrap.md",
+        "reason": "file-budget",
+        "size": 10233
+      },
+      {
+        "path": "docs/issues/2026-03-18-rust-sandbox-policy-phase-1.md",
+        "reason": "file-budget",
+        "size": 6542
+      },
+      {
+        "path": "docs/issues/2026-03-19-homepage-kanban-entry-surface-fragmentation.md",
+        "reason": "file-budget",
+        "size": 3702
+      },
+      {
+        "path": "docs/issues/2026-03-19-kanban-card-detail-session-state-stalls.md",
+        "reason": "file-budget",
+        "size": 6126
+      },
+      {
+        "path": "docs/issues/2026-03-19-kanban-flow-observability-and-control-gaps.md",
+        "reason": "file-budget",
+        "size": 3738
+      },
+      {
+        "path": "docs/issues/2026-03-19-kanban-hidden-provider-failures.md",
+        "reason": "file-budget",
+        "size": 4840
+      },
+      {
+        "path": "docs/issues/2026-03-19-kanban-initial-refresh-storm.md",
+        "reason": "file-budget",
+        "size": 3339
+      },
+      {
+        "path": "docs/issues/2026-03-19-next-build-skills-path-warnings.md",
+        "reason": "file-budget",
+        "size": 3934
+      },
+      {
+        "path": "docs/issues/2026-03-19-specialist-resource-layout-drift-and-loader-divergence.md",
+        "reason": "file-budget",
+        "size": 7316
+      },
+      {
+        "path": "docs/issues/2026-03-19-tauri-kanban-static-routing-regression.md",
+        "reason": "file-budget",
+        "size": 9225
+      },
+      {
+        "path": "docs/issues/2026-03-20-rust-kanban-input-planning-flow.md",
+        "reason": "file-budget",
+        "size": 4140
+      },
+      {
+        "path": "docs/issues/2026-03-20-settings-kanban-yaml-export-for-rust-import.md",
+        "reason": "file-budget",
+        "size": 2640
+      },
+      {
+        "path": "docs/issues/2026-03-20-team-automation-entry-is-hidden-and-lacks-product-boundary.md",
+        "reason": "file-budget",
+        "size": 7363
+      },
+      {
+        "path": "docs/issues/2026-03-21-kanban-column-configurability-and-manual-lane-boundary.md",
+        "reason": "file-budget",
+        "size": 4603
+      },
+      {
+        "path": "docs/issues/2026-03-21-nextjs-acp-cli-multi-instance-ownership-gap.md",
+        "reason": "file-budget",
+        "size": 3972
+      },
+      {
+        "path": "docs/issues/2026-03-23-review-context-gap-and-validator-model-control.md",
+        "reason": "file-budget",
+        "size": 1988
+      },
+      {
+        "path": "docs/issues/2026-03-25-prepush-render-and-hook-runtime.md",
+        "reason": "file-budget",
+        "size": 4273
+      },
+      {
+        "path": "docs/issues/2026-03-25-ui-journey-scoring-harness.md",
+        "reason": "file-budget",
+        "size": 13658
+      },
+      {
+        "path": "docs/issues/2026-03-26-rust-specialist-locale-overlay-merge-gap.md",
+        "reason": "file-budget",
+        "size": 2398
+      },
+      {
+        "path": "docs/issues/2026-03-28-harness-execution-plan-react-flow.md",
+        "reason": "file-budget",
+        "size": 2634
+      },
+      {
+        "path": "docs/issues/2026-03-28-harness-fluency-rust-cli-consolidation.md",
+        "reason": "file-budget",
+        "size": 3677
+      },
+      {
+        "path": "docs/issues/2026-03-28-harness-governance-loop-semantic-drift.md",
+        "reason": "file-budget",
+        "size": 2681
+      },
+      {
+        "path": "docs/issues/2026-03-29-flaky-test-suite-skipped.md",
+        "reason": "file-budget",
+        "size": 3931
+      },
+      {
+        "path": "docs/issues/2026-03-29-fluency-settings-page-overloaded-ux.md",
+        "reason": "file-budget",
+        "size": 4601
+      },
+      {
+        "path": "docs/issues/2026-03-29-harness-build-test-yaml-driven-panels-and-density.md",
+        "reason": "file-budget",
+        "size": 5175
+      },
+      {
+        "path": "docs/issues/2026-03-29-harness-governance-loop-missing-build-metadata.md",
+        "reason": "file-budget",
+        "size": 3737
+      },
+      {
+        "path": "docs/issues/2026-03-29-harness-governance-loop-panel-orchestration-gap.md",
+        "reason": "file-budget",
+        "size": 3407
+      },
+      {
+        "path": "docs/issues/2026-04-01-lucide-inline-svg-replacement.md",
+        "reason": "file-budget",
+        "size": 1640
+      },
+      {
+        "path": "docs/issues/2026-04-02-desktop-workspace-db-and-port-mismatch.md",
+        "reason": "file-budget",
+        "size": 5185
+      },
+      {
+        "path": "docs/issues/2026-04-03-architecture-quality-dsl-and-archunitts-integration.md",
+        "reason": "file-budget",
+        "size": 5160
+      },
+      {
+        "path": "docs/issues/2026-04-03-kanban-provider-precedence-mismatch.md",
+        "reason": "file-budget",
+        "size": 4926
+      },
+      {
+        "path": "docs/issues/2026-04-04-architecture-rule-dsl-poc.md",
+        "reason": "file-budget",
+        "size": 3801
+      },
+      {
+        "path": "docs/issues/2026-04-04-issue-286-docusaurus-checklist.md",
+        "reason": "file-budget",
+        "size": 6297
+      },
+      {
+        "path": "docs/issues/2026-04-06-acp-list-false-positive-installed-provider-state.md",
+        "reason": "file-budget",
+        "size": 2690
+      },
+      {
+        "path": "docs/issues/2026-04-06-cli-codex-chat-stream-ends-before-visible-output.md",
+        "reason": "file-budget",
+        "size": 3476
+      },
+      {
+        "path": "docs/issues/2026-04-06-issue-314-fixes-complete.md",
+        "reason": "file-budget",
+        "size": 8783
+      },
+      {
+        "path": "docs/issues/2026-04-06-playbook-verification-report.md",
+        "reason": "file-budget",
+        "size": 5927
+      },
+      {
+        "path": "docs/issues/2026-04-06-test-git-credentials-leak.md",
+        "reason": "file-budget",
+        "size": 6045
+      },
+      {
+        "path": "docs/issues/2026-04-07-bare-repo-kanban-sync.md",
+        "reason": "file-budget",
+        "size": 4763
+      },
+      {
+        "path": "docs/issues/2026-04-07-task-changes-api-performance.md",
+        "reason": "file-budget",
+        "size": 4191
+      },
+      {
+        "path": "docs/issues/2026-04-08-acp-and-service-startup-performance-baseline.md",
+        "reason": "file-budget",
+        "size": 3861
+      },
+      {
+        "path": "docs/issues/2026-04-08-acp-deserialize-error-debugging-trace.md",
+        "reason": "file-budget",
+        "size": 7799
+      },
+      {
+        "path": "docs/issues/2026-04-08-acp-permission-request-ui-rendering.md",
+        "reason": "file-budget",
+        "size": 2243
+      },
+      {
+        "path": "docs/issues/2026-04-08-canonical-story-contract-gate-loop.md",
+        "reason": "file-budget",
+        "size": 2659
+      },
+      {
+        "path": "docs/issues/2026-04-08-codex-mcp-permission-bubble-semantics.md",
+        "reason": "file-budget",
+        "size": 3393
+      },
+      {
+        "path": "docs/issues/2026-04-08-enhanced-git-workflow-ui-for-kanban-file-changes.md",
+        "reason": "file-budget",
+        "size": 14987
+      },
+      {
+        "path": "docs/issues/2026-04-08-git-workflow-ui-summary.md",
+        "reason": "file-budget",
+        "size": 5743
+      },
+      {
+        "path": "docs/issues/2026-04-08-kanban-detail-information-architecture-and-session-pane-friction.md",
+        "reason": "file-budget",
+        "size": 3185
+      },
+      {
+        "path": "docs/issues/2026-04-08-kanban-settings-modal-safety-and-information-architecture-gaps.md",
+        "reason": "file-budget",
+        "size": 4401
+      },
+      {
+        "path": "docs/issues/2026-04-08-nextjs-codex-permission-request-internal-error.md",
+        "reason": "file-budget",
+        "size": 2734
+      },
+      {
+        "path": "docs/issues/2026-04-09-home-start-surface-and-onboarding-overload.md",
+        "reason": "file-budget",
+        "size": 5232
+      },
+      {
+        "path": "docs/issues/2026-04-09-kanban-git-log-empty-and-loading-state.md",
+        "reason": "file-budget",
+        "size": 3403
+      }
+    ],
+    "omitted_count": 304,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2972,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 307,
+      "complete": false,
+      "omitted": 304,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3d371457f68556e8ae9f4ee2f4ebb4c5",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/phodal/routa/e48861ab81e2b30378fd32f05204a3ab424c4fec/53e7bdcd26858588/manifest.json",
+  "package_id": "pkg_ffaff5eaee841ae73589dabf746bb27a22276d43415f3fcf26e10112538dea6f",
+  "repo": "phodal/routa",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "301d55a4a7bf45e1a45b0f5235f588ae8cd40946c05ea0f66c48e993991d07c3",
+  "snapshot_id": "53e7bdcd26858588",
+  "sources": [
+    {
+      "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+      "git_sha": "e1be60f62bd59675e7f8c1e877c6b143a68e49cc",
+      "lines": 120,
+      "path": "AGENTS.md",
+      "repository": "phodal/routa",
+      "sha256": "0d9a551bc71e439496121a9b4e79534b067b41f9eed570abc79cefe37c49e5c5",
+      "source_id": "src_5ceeb15a367f5a01adbcb07f88794305",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/AGENTS.md"
+    },
+    {
+      "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+      "git_sha": "00807063ff4f6692922c8ca497b76703cea6533b",
+      "lines": 62,
+      "path": "CHANGELOG.md",
+      "repository": "phodal/routa",
+      "sha256": "de80e0f67bba51ae78352899274fd66cf35d6eff6bcd6360cc7020913cd94698",
+      "source_id": "src_7908c72e9de75117bfd3ec660ab6c94e",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/CHANGELOG.md"
+    },
+    {
+      "commit": "e48861ab81e2b30378fd32f05204a3ab424c4fec",
+      "git_sha": "1f790755f7e2cfa21a4558eef4e452b92da38d49",
+      "lines": 259,
+      "path": "README.md",
+      "repository": "phodal/routa",
+      "sha256": "e76ca3e35983f93dde63176a85b7c953049edb2a522efecae3c35aabdd0e95db",
+      "source_id": "src_780a01174d315d5284553833bdc171eb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/phodal/routa/blob/e48861ab81e2b30378fd32f05204a3ab424c4fec/README.md"
+    }
+  ],
+  "summary": "Routa is a workspace-first multi-agent coordination platform with a dual-backend architecture (Next.js web, Tauri desktop backed by a Rust/Axum server), a Kanban-based specialist pipeline with review gates, and documented contributor workflows. Evidence is mostly README/AGENTS documentation; no code slices are present.",
+  "superseded_claim_ids": []
+}

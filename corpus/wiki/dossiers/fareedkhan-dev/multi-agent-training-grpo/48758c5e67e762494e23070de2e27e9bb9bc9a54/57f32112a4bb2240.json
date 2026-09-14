@@ -1,0 +1,622 @@
+{
+  "applied_operation_id": "op_f4e4d7a389ea4c16ab474da00f345f50",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_77cbfdd8444aaae10e28ccbe4c26d4f8c3fe0a796a2222b134d51a62542f3217",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L5-L5"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L62-L62"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09c7c580466c163fe43e9cb67aac4b244c1abe51149d47cadd6a8680db2855dc",
+        "slc_1528aecf16b6041688142689498fe42e427c24fc06048d544b1eb712b24df952",
+        "slc_3703d71c4cfff6ac724885ecf7a4d5244200eadeb5e4a42ab352ddfca75dfaf3"
+      ],
+      "text": "The project trains a multi-agent system with the GRPO reinforcement learning algorithm to improve planning and reduce hallucination and off-track results in long-horizon agentic tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb336a938368bd6895b58328cb2c807cb3ad8be0d1ee054491cce29e60003d29",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L52-L52"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 16,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L12-L16"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L56-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b0185fd6ea3afcb11a645a39d1699fdbdf5f51490490d88f65c133513c42ce7",
+        "slc_9209432e94c2ff7fe5e12dd0f329bb219bf22297d1c6f4d91fb730660b12b954",
+        "slc_e145e83158b42f38019f3c5f95b278be86f1f53a68f620ba0e8ca8d75b6f550d"
+      ],
+      "text": "GRPO is described as group-based: the agent attempts the same query multiple times, and strategies are reinforced relative to the group average rather than graded in isolation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1d69b4aeb6255b6a3938d4b0b715b2976b27bd9457e20568380145543e195d1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 442,
+          "line_start": 438,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L438-L442"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 432,
+          "line_start": 432,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L432-L432"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 187,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L182-L187"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 229,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L218-L229"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 376,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L364-L376"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 466,
+          "line_start": 466,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L466-L466"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 417,
+          "line_start": 416,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L416-L417"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 452,
+          "line_start": 451,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L451-L452"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23e3bf4ca09e1d4cd572e36932ffa1292d496f13ee2a8bf4e69a14e557b56190",
+        "slc_3286c5ea484313da1823b5ec4315c5119724e6e9f382eed59541f7498b24c953",
+        "slc_3c99c7c09532efe6ac83d4c9300955717e1e0057b461289a03f49b674dfda43d",
+        "slc_3ea1ba7841bf8165170855762133f1caca9db2f8ff4ea9454f4abd5704f21359",
+        "slc_5e83c31b9ec410df9026d1e2b5e2175523dba7e1e8004c972821b4a8064457b6",
+        "slc_8db57b8e522f2f8a82f3f0074ecb518d57cdf08d53daada11f9801e57b84e963",
+        "slc_9903e07fee2562f740e115c02ec731ad636db8103165907cf8fe9a7a17a43589",
+        "slc_f9515fa99bdc0fa70b4ecd95641d8f59c7d683da31b8e7b8b52eeadc2b389f94"
+      ],
+      "text": "The preprocessing pipeline normalizes both datasets to a shared schema (id, question, chain, result, source, extra_info), concatenates them, shuffles with seed 42, re-indexes, and saves as Parquet; the combined training set totals 182,190 samples."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33cada1c29493fad7230c47babb74cae8304e4eca6f32aeb924e7aa96dd8689f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 482,
+          "line_start": 477,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L477-L482"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e2ff3ddbf595fe23134759d6e8804a4ee059d0cd16858bea721be8f4e6215d5"
+      ],
+      "text": "The multi-agent architecture comprises stages including planning, tool use, execution, observation and reflection, iteration until a verifier agent determines the query is answered, and final synthesis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_182f5fc591e4930b27cf89ccbec5306b9840efb047fad94277b50d3b8c5e2783",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 541,
+          "line_start": 541,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L541-L541"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 538,
+          "line_start": 538,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L538-L538"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 497,
+          "line_start": 493,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L493-L497"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 544,
+          "line_start": 544,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L544-L544"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_880a43c26ca3e2ac2fd6836724ab09218ef430d3e9a07eac7c32bb7af8d54504",
+        "slc_89cdcf6aa65b7f6429f46fb0eb4959dc0d6148bb081c74dd9a01b23fece0701f",
+        "slc_9b73ff66cb069fdd8fad7c6064803460e1974aa6d8fc96b47a2f89a63c4d5090",
+        "slc_a50e4051c89e7ee0a7d26ed0bbb73fb47059ffc72e0a026a6a0d1fd7d42e3dcd"
+      ],
+      "text": "The planning model is served through a vLLM server with an OpenAI-compatible API; the example serves Qwen/Qwen2.5-7B-Instruct on port 8000 with an API key and 8192 max context length."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b5eba3c7d7a5c68fa847906a45f9a3d7997aec9eb7e141dbda9e2d75f66a30c2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 629,
+          "line_start": 622,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L622-L629"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 570,
+          "line_start": 568,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L568-L570"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 566,
+          "line_start": 566,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L566-L566"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 582,
+          "line_start": 582,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L582-L582"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 586,
+          "line_start": 584,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L584-L586"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 580,
+          "line_start": 576,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L576-L580"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 602,
+          "line_start": 600,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L600-L602"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57c8eff105df5b7c753f81b2d351af70e8ad4ad1078cfca668a63c58ae411003",
+        "slc_7062d13f34837cbab0ef522f5c05f94a10e8c1beaa9b2897ddcff3562a54e51f",
+        "slc_7428bfb3563321d343d89ef407bfdd3b4871a9576a7b218e86d65baf3c23c371",
+        "slc_954259178f004c2dd2323da0bfdcaf0e41aac330ca5343a11b5d4c194b98fca6",
+        "slc_a7c5d997c8fe6b8f1b338048f6fba34e02c752aeaf74618293c8d4e9ff3ccb77",
+        "slc_adc6fc6829bb234d9003092dd07ab82660fd60d9bea138f5c037ce2e88ad02a3",
+        "slc_c1203861346c2fe46aa99a5816da556f57f1a7db7a0a1e8cb9149d4c1fbe6546"
+      ],
+      "text": "An abstract EngineLM base class requires a generate method, with ChatVLLM as the concrete implementation that formats chat messages, retries failed calls, and can enforce structured JSON output by appending a Pydantic schema to the prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a953c625edfae43d7cb6eba41ce23fe4a21f064d1e1f1d78732f1e3b6207681e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 503,
+          "line_start": 501,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L501-L503"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 531,
+          "line_start": 521,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L521-L531"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L94-L94"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 91,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L90-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_547ff132c522547ea117c17429face440d9be6fb1e6e4e2b1782d2ac129e4263",
+        "slc_8038e65088f87002f7aeb9a7d0f8896f0bfc190436b99c49825cdaa65be3f8ee",
+        "slc_90a5588b3d61a0d6b83d709ff532d33745ffc1b3f6424ccebb0d0adffd971829",
+        "slc_948ccd0c771778bafe258120dfd488e564d4fd0245b7d932f0f16d0da8609518"
+      ],
+      "text": "Python dependencies include openai, pydantic, tenacity, beautifulsoup4, requests, wikipedia, google-genai, numpy, and json_repair, plus pandas and the Hugging Face datasets library for preprocessing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5938e0db067c81f5ec34e7348f766562e74ed3bb7b797d07621932dce84ce234",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L56-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e145e83158b42f38019f3c5f95b278be86f1f53a68f620ba0e8ca8d75b6f550d"
+      ],
+      "text": "During GRPO training, an external judge scores each trajectory's final answer against ground truth with binary rewards (1.0 correct, 0.0 failed or hallucinated), and relative advantages are computed against the group mean."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_96ac528a0049f79ba9a5e4924781610eebc1281270d5e65748f34db8311214e8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 486,
+          "line_start": 486,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L486-L486"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 484,
+          "line_start": 484,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L484-L484"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d5dc85787c16661b51ebdaa8d0b9c7a09b530f614237d37606c051c3600130c",
+        "slc_933d94b9147ed9906d3e546fd31069ac263aad6bb214a444b3cf2f8ecfbdf3b1"
+      ],
+      "text": "The tutorial targets the planning phase for fine-tuning because it monitors the whole workflow across iterations, and uses an open-source vLLM-based server chosen for throughput and latency; the author used a single A100 80GB GPU."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1049be2257ea23bb11dc3158ad09cbc4b965d31d0844be22d7e25f4950d7b9d",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L20-L20"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L3-L3"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 39,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L24-L39"
+        },
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3703d71c4cfff6ac724885ecf7a4d5244200eadeb5e4a42ab352ddfca75dfaf3",
+        "slc_50feceea3453db6110597a9ca4b3340f9a0864f045f4471a1634199536176cfc",
+        "slc_5d9ad1a6b3f2b0823cb2f6610d6822cf8f1ef8fa25689151d07a227304a311d4",
+        "slc_c8f90023eeb7ad20b41e99ac81540af123754a320f62d11ba77f17f93884aadd"
+      ],
+      "text": "The repository is a blog-style walkthrough by Fareed Khan explaining GRPO's role in agent systems and demonstrating building and training a multi-agentic system end to end, including a table of contents covering preprocessing through the optimized planning agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_231a11370b0adf1e6857ec602bbde8981e9e8dee3277ce5c2f4030de8fdc8087",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+          "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+          "line_end": 551,
+          "line_start": 549,
+          "path": "README.md",
+          "repository": "fareedkhan-dev/multi-agent-training-grpo",
+          "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md#L549-L551"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10c20493bc13cb8c8388bd4b009a431c809930d41e4242d707754d1c3c75d76d"
+      ],
+      "text": "Tool API keys are configured as placeholders: an OpenAI key is noted as needed for embeddings in the web search tool and a Google key for the Google search tool."
+    }
+  ],
+  "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 2479,
+        "path": "README.md",
+        "size": 128319
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 172,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 5,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_2ff81b2f42bf5ce0a2d01ab10afb30f5",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/fareedkhan-dev/multi-agent-training-grpo/48758c5e67e762494e23070de2e27e9bb9bc9a54/57f32112a4bb2240/manifest.json",
+  "package_id": "pkg_d6b393443f7db1fb1af2e8d2314e9748ab7bd495a9bbc9f02381f3c47aeb34d3",
+  "repo": "fareedkhan-dev/multi-agent-training-grpo",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "99bbafa8192e6ddada272dea481d298247fe5c2d3f9aef01fa85be48f1b46db2",
+  "snapshot_id": "57f32112a4bb2240",
+  "sources": [
+    {
+      "commit": "48758c5e67e762494e23070de2e27e9bb9bc9a54",
+      "git_sha": "7283d4e94db1e9b3c4cfad0584858ee29cb8317d",
+      "lines": 2479,
+      "path": "README.md",
+      "repository": "fareedkhan-dev/multi-agent-training-grpo",
+      "sha256": "103ede055fc265099aad6ce4898f0af01f1397134790967370290b0fce4e73a3",
+      "source_id": "src_4bfa8cc503ac5736bf465d93c8d86ac8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/FareedKhan-dev/multi-agent-training-grpo/blob/48758c5e67e762494e23070de2e27e9bb9bc9a54/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The project trains a multi-agent system with the GRPO reinforcement learning algorithm to improve planning and reduce hallucination and off-track results in long-horizon agentic tasks. GRPO is described as group-based: the agent attempts the same query multiple times, and strategies are reinforced relative to the group average rather than graded in isolation.",
+  "superseded_claim_ids": []
+}

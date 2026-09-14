@@ -1,0 +1,638 @@
+{
+  "applied_operation_id": "op_080d0373aeeb484ca70e1e17007108e7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5cfef2c437f4a1984835c7ec3cc3c7e6664fe1f52cda09c69bc12793a4fdb842",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L33-L33"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 171,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L165-L171"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 74,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L49-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37f5577dc9e08b178b423b8eb8b0ceb51571612e9500065cb7b17ce0c36ed22b",
+        "slc_638a52cf8d6c31ccdb4d525c8973455cd9c9f04679a356301e4c2dd018f140d8",
+        "slc_822bf844dbd09e86da92f0663b4dbaf66755c2d61f070f20969f275306c5a678"
+      ],
+      "text": "The tool runs an iterative loop: each iteration orients from specs, picks one task, implements and tests it, verifies criteria, commits and pushes, then repeats until a DONE marker appears."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8dae0f491917aabb4b0b0f8b0ad0550810fe64a1742919014dae28be3df35d1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 95,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L94-L95"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 92,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L89-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d3e5b31c52bd5a1ac96302625b08c1cb0615331f87549ca4410d2ed6f456aaa",
+        "slc_342710673ad914c5e7b7a187ba503f937e19718d36a71b0dc711f0698fd5c4fb"
+      ],
+      "text": "The product is driven by shell scripts: ralph-loop.sh (default build mode) and an optional 'plan' mode invoked as ralph-loop.sh plan, with matching PowerShell .ps1 variants."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_679b873b4faed71c7713b5ca64686ecf1c1612b3ff32e459e6d0e8dbce97fccf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 163,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L160-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d4fc61ae920b8b11a19f719457e8051f806df750a3f8974917d7d8e2e9029ccc"
+      ],
+      "text": "Build mode can take an iteration-count argument, e.g. ralph-loop.sh 20 for a maximum of 20 iterations, or run unlimited by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_806b0ce8ea54bd68c16e2646dd8bd37bfe7fdde8ae2614d55fc88ae69a2f6f65",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 276,
+          "line_start": 276,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L276-L276"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 273,
+          "line_start": 273,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L273-L273"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 41,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L37-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b4ace6e19af3dc66beca1f74103f83237471411f140092a24034bbb77b5bf34",
+        "slc_50d78458ee228e8350733add0269d8af06f3897acfd07b7338621ac4e6b77842",
+        "slc_6cc4750434834f5ab1ccee2c6dd9d5d10ddca73c48b70463c0e72ec4ed7ba764"
+      ],
+      "text": "State persists on disk between loops: IMPLEMENTATION_PLAN.md is read to pick tasks and updated with progress, while each iteration starts with a fresh context window."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8d1071f814782656569037bd4722f66f8ef289e741e6686ff5e94f5250d4287",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 264,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L245-L264"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 266,
+          "line_start": 266,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L266-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40a3b4c903618fa63e19ced5ec0925f9f6a968d8566026176a3905bf7970d24f",
+        "slc_e0e238a2627c8ca7d6f553d400ae36a276941181867737758805a9ab59967e42"
+      ],
+      "text": "A constitution file at .specify/memory/constitution.md is described as the single source of truth for agent behavior, with optional features configured there rather than in scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba1df09cb4c97ce73f242c6f0d3831f8fd2238a929e80e0972de2c9b79a238f1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L83-L83"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 282,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L282-L282"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 81,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L78-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f9147adbe33304e64bec140ed9c7ae6d697483a8c37a705d592794727dccd66",
+        "slc_7769ea1c79964eba42912439a4c821216a80d1f2c8b7d5d98320a63a2ee1ab65",
+        "slc_d334e774dc34e237ccd803a8dc09a2c3b56969691db97e5c5fc1f62329e83a15"
+      ],
+      "text": "Completion is gated on a magic phrase: the agent outputs <promise>DONE</promise> only when acceptance criteria are verified, tests pass, and changes are committed and pushed; the loop retries otherwise."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6ca370b2b0720d4b47dda5815e42bf09a64bc6c8ef1b11e068f53d53099e626",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 279,
+          "line_start": 279,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L279-L279"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L148-L148"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 146,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L143-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_055ea81a6c104ffa68c5e39edae79aa101497a1b23e2c477827d3e800fedafdb",
+        "slc_19938615c525b80dfb7cca61b4370ae85f93430e7e50d7a6531ec693d57d60e1",
+        "slc_dc50cdf86158af366d1564d18944fa91c92034038a84404a327593df8a5efb62"
+      ],
+      "text": "Specs are expected to carry specific, testable acceptance criteria, and tests, lints, and builds act as backpressure that the agent must satisfy before signaling completion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_92e51fa9f1505abca14ac91957c2d6af977a6a7b04997b81dc7cacca8a86cd97",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 185,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L185-L185"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 196,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L193-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28fe27930089f34f8b5a47bd887ecfb28a78255c3f21c910d95edbb280c13d53",
+        "slc_bb369232eded0755b3d96378d81a805dd6aa1877f0625eefba64a735613b5b0e"
+      ],
+      "text": "Each spec tracks an attempt count as an NR_OF_TRIES comment; after 10 attempts without completion a spec is flagged as stuck and should be split into smaller specs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f9a6bce0346428987b51aad7688ebbc8a095abb4f8e9692e697b477a6012454",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 311,
+          "line_start": 311,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L311-L311"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 303,
+          "line_start": 303,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L303-L303"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 309,
+          "line_start": 305,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L305-L309"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0201f89a28b339788c10cfa365859c19f0d6a63213ff09cbe359dbcd731924f6",
+        "slc_1011ed2cfd826e59682554e2ba827d85d5627bec2aa9b50300891f0631155909",
+        "slc_da6e4ef4acf4eaa641c5ce2ea983cbe8ca077a9bdfc9ab4a6478a10d97399f62"
+      ],
+      "text": "The repo follows the Agent Skills specification and can be installed via Vercel add-skill, OpenSkills, or Skillset, and is advertised as working with Claude Code, Cursor, Codex, Windsurf, Amp, and OpenCode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28ccb4c02b0b51060976382a98a7bf1f9c520c4575c19df06abac47eb5cc4bc8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "AGENTS.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md#L3-L3"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "AGENTS.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md#L13-L13"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+          "line_end": 11,
+          "line_start": 5,
+          "path": "AGENTS.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md#L5-L11"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "11b6260774b8c0f7d5078e4c97d4a72548b0ddbb",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CLAUDE.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/CLAUDE.md#L3-L3"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "11b6260774b8c0f7d5078e4c97d4a72548b0ddbb",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CLAUDE.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/CLAUDE.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_274b6efdeb2ab687c33cc569ed6ede6f0aaa30999648cca1d23616de3280bada",
+        "slc_565d207365fd1a98d6dd44e0faecbe469060a1871fbfce801d7682cf59257a7f",
+        "slc_838fedaf9410ed41c7c8d3762fde6e1769cd7ffcc88c8e314fbc0e3622fcf9c2",
+        "slc_b61f22e7461b42996004e7f325744638aa665e5671600d47409d1c7e0cc70da5",
+        "slc_f96ab4196c0552412e7e41fc188ee8b293e96e22f746c2d07b76e7fea07acc86"
+      ],
+      "text": "Repository development practice: AGENTS.md and CLAUDE.md instruct contributing agents to read .specify/memory/constitution.md on every session as the single source of all project instructions, including workflow configuration and autonomy settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6404b50af2024321701aa65060e58ca8e6bd70939ed11164ed6626fb0282a790",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+          "line_end": 22,
+          "line_start": 20,
+          "path": "AGENTS.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md#L20-L22"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "AGENTS.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md#L31-L31"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "AGENTS.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md#L24-L24"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "11b6260774b8c0f7d5078e4c97d4a72548b0ddbb",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "CLAUDE.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/CLAUDE.md#L7-L7"
+        },
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "AGENTS.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md#L27-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65f52a48bc7b20126317fe075d05ddca3aba6f9597d83fee50d75e5770232974",
+        "slc_91c5a84df629fff05a9151be1e067cf13c3f4a7bc8543af4ac174c9596145a88",
+        "slc_c80be61fc2eff5ef4f610924c395d633e00279ca7f605502dc41feace4ead04f",
+        "slc_f858bf33c2a711aebd699ae1bb6007b18f8573b2000887db23e2611aa430a496",
+        "slc_f925ad46a43b2b97e7af97a4f8c5a28c42a4379775e7b8ad9b5568422da063ca"
+      ],
+      "text": "Repository development practice: agent instructions define context detection between Ralph-loop mode (implement specs, output the DONE promise) and interactive chat mode (guide the user, create specs)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60a4e65bc90653f61abc493742e4517f8465be9bd87d52a3ddd3f360cee4a86b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+          "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "fstandhartinger/ralph-wiggum",
+          "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a9c933db1d7c791b4f2712e14d7329444792b4c4758c246d9e233879f25b1d35"
+      ],
+      "text": "The README warns the tool grants AI agents significant autonomy over the codebase and system, advising users to review all changes and run in isolated environments when possible."
+    }
+  ],
+  "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 334,
+        "path": "README.md",
+        "size": 12965
+      },
+      {
+        "lines": 37,
+        "path": "AGENTS.md",
+        "size": 1205
+      },
+      {
+        "lines": 7,
+        "path": "CLAUDE.md",
+        "size": 305
+      }
+    ],
+    "omitted": [
+      {
+        "path": "INSTALL.md",
+        "reason": "file-budget",
+        "size": 4178
+      },
+      {
+        "path": "INSTALLATION.md",
+        "reason": "file-budget",
+        "size": 9410
+      },
+      {
+        "path": "RALPH_PROMPT.md",
+        "reason": "file-budget",
+        "size": 2922
+      },
+      {
+        "path": "TELEGRAM_SETUP.md",
+        "reason": "file-budget",
+        "size": 4299
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 37,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 4,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_c9592b2c01d55167acab640ac2b79992",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/fstandhartinger/ralph-wiggum/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/e715ed74bb1d3916/manifest.json",
+  "package_id": "pkg_bdb921ca608954eca4007c465c8dfab00e45761864b3ecfe6b6fba8f4e4f6500",
+  "repo": "fstandhartinger/ralph-wiggum",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fce079b5837027de70bcab1d37840c222da6a007de6f5dd035f7c68dbc2d42a0",
+  "snapshot_id": "e715ed74bb1d3916",
+  "sources": [
+    {
+      "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+      "git_sha": "c9726776e3dc3dd229df37e31115923ab42e009a",
+      "lines": 37,
+      "path": "AGENTS.md",
+      "repository": "fstandhartinger/ralph-wiggum",
+      "sha256": "8ef5ce827905f945aac3c4655ea5c49f5325e9dd94351b0c627920bd77231db2",
+      "source_id": "src_00e983a8056255f5ae751e962f2b5431",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/AGENTS.md"
+    },
+    {
+      "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+      "git_sha": "11b6260774b8c0f7d5078e4c97d4a72548b0ddbb",
+      "lines": 7,
+      "path": "CLAUDE.md",
+      "repository": "fstandhartinger/ralph-wiggum",
+      "sha256": "ec1bfbc881ae90dbabb426da26186be6fa7f6d37ba5ee3631b7504fb8e4c1b42",
+      "source_id": "src_78963137f0a650359848b78b794a519d",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/CLAUDE.md"
+    },
+    {
+      "commit": "3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981",
+      "git_sha": "e68742ddf4b70e8738f48ee757e2a8651c79cc29",
+      "lines": 334,
+      "path": "README.md",
+      "repository": "fstandhartinger/ralph-wiggum",
+      "sha256": "ddce0e64711e8371822970c9219c917a485524c9faf8b72671d9db10c74d8876",
+      "source_id": "src_8b52ccd5108f53b9bc599696af983bab",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/fstandhartinger/ralph-wiggum/blob/3f15f0fb83b8c2e0ac8d11abdae0e83ab8204981/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The tool runs an iterative loop: each iteration orients from specs, picks one task, implements and tests it, verifies criteria, commits and pushes, then repeats until a DONE marker appears. The product is driven by shell scripts: ralph-loop.sh (default build mode) and an optional 'plan' mode invoked as ralph-loop.sh plan, with matching PowerShell .ps1 variants.",
+  "superseded_claim_ids": []
+}

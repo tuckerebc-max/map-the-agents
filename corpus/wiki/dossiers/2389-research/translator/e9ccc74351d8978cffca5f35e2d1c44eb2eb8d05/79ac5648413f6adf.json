@@ -1,0 +1,647 @@
+{
+  "applied_operation_id": "op_e506b4408ebf499cadb7fb22f7aeb9b7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_531732df3e25e5901e4d6b0de3d6f637260714d9113b2e2f217d8c72fdc9f2ab",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L48-L48"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L50-L52"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 57,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L54-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6533a8ca80acf7299ee37b716162997f02c16c3d489366398468c750c2f3c6b0",
+        "slc_787bb98d0c8dcc6623485e0c7347136f44a6204894b81ad385562bed6a292f47",
+        "slc_98e8041882e8fa5c27bcbed1785b2689c373c514034370d5d076e43b19caf6d3"
+      ],
+      "text": "An interactive 'translator config' command walks users through setup, including where to store .env configuration, the OpenAI API key, and optional settings such as the default model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b33079a20f70abeaac9d48e6dfeb65d0e22a770a6fa8eb71790b772c8667736c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 174,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L171-L174"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L145-L145"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L5-L5"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 228,
+          "line_start": 225,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L225-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10f56239cfafbd7fe209abc384245cc56aa25ebaf47de3646fd8647719024314",
+        "slc_84efd531dc9012ba7d419940e1a604141fe902ea1d09a2a454bde98b070d279b",
+        "slc_e2262f0d5df3448d1ed485e312eb8148c434cebe893ef0743edb7d450fba4268",
+        "slc_f250c1432fddef866944f18745b6c91d1ecd9f6e21a1cb16ddd5f8a96af14268"
+      ],
+      "text": "Translation follows a multi-stage pipeline: initial translation preserving formatting, an expert editing pass, and critique-revision cycles configurable from 1 to 5 loops for quality improvement."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45e4739c007133a748e6984bce4c1cf2a9a8c7673eab49de40ba44d1b9f5f911",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 174,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L171-L174"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L7-L7"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 135,
+          "line_start": 129,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L129-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10f56239cfafbd7fe209abc384245cc56aa25ebaf47de3646fd8647719024314",
+        "slc_2e147a8ba8d73f15b32e27300f64d2fb6a2cd58cc42ff5a188420b6d4a69e67f",
+        "slc_6c51d0cc0afcae2561d322c5393a4a8692a44bb0b01e92533cfc48a073cc7bcd"
+      ],
+      "text": "The tool specially supports markdown files with YAML frontmatter, detecting and preserving frontmatter metadata used by static site generators like Jekyll and Hugo."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f9a73ef3a72c6e7b7b985b69bf7f647b3f278bb0ed6072c07c1844549545410",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 209,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L199-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51fde23489ac63ede30d4b5e1890ad9fa57d68bfd14bca3a186cf795d4367df3"
+      ],
+      "text": "The codebase is modular, with files for CLI, config, cost, file I/O, frontmatter, language codes, log interpretation, prompts, token counting, and core translation logic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_018e30c72b409260de177f95b4fa64741bc99c7b87dbfc2e109e64a25651b93c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 315,
+          "line_start": 313,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L313-L315"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 75,
+          "line_start": 68,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L68-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_191afd664d338467bad5569b02b60065fcb48107fab1cf657cade53291e0ee1d",
+        "slc_97af32b867fda2886f037f22eef9471a5377362ffd5f2def0c1aad37eb0ceb55"
+      ],
+      "text": "Per the spec, a provider abstraction layer offers a unified interface for OpenAI and Anthropic APIs, with model prefixes like openai:model and anthropic:model and auto-detection for unprefixed names."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe12b96858f7fbcd379d50aae99e7136c7faddd750b44f9f73526fbf372ffcfd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 241,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L233-L241"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 397,
+          "line_start": 395,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L395-L397"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10be421159deda8ec26f135b2ac552f7dc2a9adfec2957c124d240f3757d85ba",
+        "slc_fd72857b9ab672c7cdd0ab56a1eb76756acf31e3db10f2f1deb310cd75f67110"
+      ],
+      "text": "Runtime dependencies include openai>=1.78.1, python-dotenv, rich, tiktoken, pycountry, and python-frontmatter, with pytest for testing; Python 3.13+ is required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b347d8345e6c34270edc78e462a8b9fe5ed3a2028b16b67d4eb22fe2f0a7f7f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 163,
+          "line_start": 161,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L161-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f464bf45e0b4da4ba6e137a5c1bd2a67a3146c79e86f3dda466b725d40935ebb"
+      ],
+      "text": "The spec additionally lists anthropic>=0.25.0 as a core API dependency and swarm (from GitHub) for future use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99963fd4e80e339846d1f08f6e72472738cc966c137573b914238755a9b1d8db",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 260,
+          "line_start": 256,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L256-L260"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 297,
+          "line_start": 294,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L294-L297"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L87-L87"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29331336686bcabff73c7c4cb8a0b48ebd9a7e204c6f50d838e16d40048ce359",
+        "slc_9206197440b4b2632ebf9be0f9bc37b1b2e170c9b45acf45d6dc177d92fffd7f",
+        "slc_ade98792b601ec17d84fcd15ae718153fe296d172abf10cf1389172acd819bd9",
+        "slc_b204541eb9c2b7387bb97fac8d5f62e3b0ba8d34c65833c323d269e40d5156b2"
+      ],
+      "text": "Configuration is resolved by precedence: environment variables, then a local .env file, then ~/.translator/.env, then ~/.config/translator/.env; OPENAI_API_KEY is required for OpenAI models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80e3177c2e4d9d0cad0f89895e55406d808fae615414a5dc07f475d37f888c14",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 260,
+          "line_start": 256,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L256-L260"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L107-L107"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L110-L110"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 114,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L113-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29331336686bcabff73c7c4cb8a0b48ebd9a7e204c6f50d838e16d40048ce359",
+        "slc_66a49f51d14be6b4a6b672b018bda3d27fc3c0cd8e4841e0647f108de1180f74",
+        "slc_9319b63a45167d1e72d3f8bab5d435dbc113663e970aef64d3b33f8393a7f4a9",
+        "slc_a1d27ae1c83f615d70ad243dc1baf010171c8919071e0120cb609f008a5d32e5"
+      ],
+      "text": "Optional .env settings include DEFAULT_MODEL (shown as o3 in an example), OUTPUT_DIR for translated files, and LOG_LEVEL with options DEBUG through CRITICAL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3aecd57346c65c1f128501048c031576335c2b59d576c09b9026bbfda5898611",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L36-L39"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 210,
+          "line_start": 187,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L187-L210"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 53,
+          "line_start": 44,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L44-L53"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 218,
+          "line_start": 214,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L214-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5494a761577fa5051cfdb4c18ec3b2af401b5b03e53067fac46b329a627b3cfe",
+        "slc_5bce63467f48d4e777c5308dbb1cb129c6f667e90d3a1914c0bdbb454754bac4",
+        "slc_8029907da8668a126ebdc98b665faa9f4cf0a54b0b275e48b05f7dba1dd8b7dc",
+        "slc_a98df06fc393c1f9a97bc0b961c489f7623994630812439f2b5e182d699baf76"
+      ],
+      "text": "The spec describes a layered flow: main.py bootstraps TranslatorCLI, which coordinates file reading, frontmatter extraction, token counting, cost estimation, translation, and output writing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e49b44f280c8efc429c65888d2fc1ea079132ee5827b839dd71c7c3ebc78e6fb",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 436,
+          "line_start": 433,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L433-L436"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_97cde23dccbf82e63289da0815c10e4561162c10f60da8905df5b12cb5a61313"
+      ],
+      "text": "The spec claims analytics including translation accuracy tracking and quality metrics; this appears to be documented intent rather than a demonstrated benchmark harness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f4e4835e7798b232aa17cc2cfec8c700b3f112c086a09a90164502a178692642",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 220,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L218-L220"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+          "line_end": 216,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md#L216-L216"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 344,
+          "line_start": 332,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L332-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c5ca42ed31c9a84dc2ad598660adee435dfb9272582ba370e2575044d4aeb71",
+        "slc_13bae0ac6dd50780ba0edbedeb00e317919f8df6e3eb4be125bf2826c5a4cc31",
+        "slc_4ce3391b3266105e34a8dd04a36de6da6f919d7dc37d9df1b9c2d64712880202"
+      ],
+      "text": "Repository development practice: the project uses pytest for testing, run via 'uv run pytest', with a test suite covering modules including CLI, file handling, cost, and streaming."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c71fdbc188bde49dcf50eaa7e494c895c96561be423553524225f3bd2696e362",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 450,
+          "line_start": 441,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L441-L450"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e2cd7666f758f876a8e02b8ce608d49c873c93a73ecc8945971ab746546e0f2b"
+      ],
+      "text": "The spec's issues analysis lists current limitations including inefficient streaming token counting, potential memory leaks in the cancellation handler, race conditions in streaming, and hard-coded parameters and paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff652c28fab1c9efa9c61895ab8cde91d18d7feb936cd6a651a542b38055ddfb",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 358,
+          "line_start": 355,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L355-L358"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 416,
+          "line_start": 411,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L411-L416"
+        },
+        {
+          "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+          "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+          "line_end": 364,
+          "line_start": 361,
+          "path": "spec.md",
+          "repository": "2389-research/translator",
+          "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md#L361-L364"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02f677ebefdbee451e844484d723e9a13f045313369f10ba1dc62a50b8140684",
+        "slc_2ee040b28a5d36a4930116f218dd1aeeddf9b3c0884c44ac7818272a92e63631",
+        "slc_6c5d50e4825f0ab34499c508c88c0c80642445fbb79bd36ebfa462de9aa3fad0"
+      ],
+      "text": "Documented limitations include no caching and single-file-only processing, both noted as future enhancements, plus file size constrained by model token limits."
+    }
+  ],
+  "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 243,
+        "path": "README.md",
+        "size": 7094
+      },
+      {
+        "lines": 463,
+        "path": "spec.md",
+        "size": 15985
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 40,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_c946492e9f675633b127bf7a9199b8b5",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/translator/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/79ac5648413f6adf/manifest.json",
+  "package_id": "pkg_cb8627a59a906a25552812361dafd4c37cc94ced61f881817dfce6211acb50e0",
+  "repo": "2389-research/translator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c10de7cf3e014eec030a0a0370d773afea38e061a58ec45b986a374a666ad8aa",
+  "snapshot_id": "79ac5648413f6adf",
+  "sources": [
+    {
+      "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+      "git_sha": "cb0ab020b382a7b33dabb6e39d09bd5d97ad4a34",
+      "lines": 243,
+      "path": "README.md",
+      "repository": "2389-research/translator",
+      "sha256": "95d8db2252caadfd8cd69cacd8a3997e0fd1e47883a97a838d44e01bc4584588",
+      "source_id": "src_2fad2636cbb55ce286d06dc4c3db0261",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/README.md"
+    },
+    {
+      "commit": "e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05",
+      "git_sha": "f7e1372488411666b341f56cc79dc7af843a98e7",
+      "lines": 463,
+      "path": "spec.md",
+      "repository": "2389-research/translator",
+      "sha256": "87d0588acd677c1d6a733c84f91670f47d3e850604f3eb47030464a9b87b932f",
+      "source_id": "src_cbb1e47a4aae5bd9bfc28e0f8f333cf5",
+      "stored": "spec.md-bc6661da34ec.md",
+      "url": "https://github.com/2389-research/translator/blob/e9ccc74351d8978cffca5f35e2d1c44eb2eb8d05/spec.md"
+    }
+  ],
+  "summary": "Selected evidence records: An interactive 'translator config' command walks users through setup, including where to store .env configuration, the OpenAI API key, and optional settings such as the default model. Translation follows a multi-stage pipeline: initial translation preserving formatting, an expert editing pass, and critique-revision cycles configurable from 1 to 5 loops for quality improvement.",
+  "superseded_claim_ids": []
+}

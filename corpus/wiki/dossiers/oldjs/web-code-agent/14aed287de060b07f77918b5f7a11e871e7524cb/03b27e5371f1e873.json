@@ -1,0 +1,388 @@
+{
+  "applied_operation_id": "op_fcec55e6ef1e4f97b6ee2394c4b7d66f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5505b3183f94a85b0a971488a3050a6ede0a1b2e9a25eef2a3266b77d74685ba",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L34-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b3134b325b6087a393352406c8f102d477b9feba9a7d1dfa0d1440159044530"
+      ],
+      "text": "Folda-Scan is described as an intelligent project Q&A tool that runs entirely locally in the browser, turning a codebase into a conversational partner via semantic vectorization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1a6364be904210b71b86ae697c3d2262f329eee8490a3c7a8ad9a38752b353b7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 56,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L53-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af05d7ec19f14a3d372d829f6d043bff0227b6656afbb68becbcb9223e21281d"
+      ],
+      "text": "The stated pipeline is: local scanning and indexing of code into high-dimensional vectors, vectorizing natural-language questions, then semantic matching in vector space."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b57cbe37c1a94b29fb0839d6fa36a90f5f3815a965f9941c2a22b2bd1947e78c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 47,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L40-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1698d8c381f203d83ddd9e157caa065bd0970ace81d95c751be78c6de59e23cc"
+      ],
+      "text": "The README claims all data processing happens locally in the browser, with code never leaving the user's machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a9035b595b7386aa7b1b908452fb060a88a22f65944faf49bdeaa90844f3a86",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 76,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L74-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a1f788e4018c91f4f021f55de19dda266c4f6af679aa2a17956ae23b169e629"
+      ],
+      "text": "Basic usage flow: authorize browser access to a local folder, wait for local semantic indexing, then query the codebase in natural language."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c45593781acafcbbe59dde121289fe112c8d0119b307cb4edbd02c5eb1a6ef0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 64,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L60-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42b4b57067813f9f4ed2718421db1009755ad305f76e2eac5c18bc7b614314bb"
+      ],
+      "text": "The tech stack is documented as Next.js 14 with the File System Access API for local file interaction; the main language entry is an unfilled placeholder."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27309d9a21be597b610d3b4df577cdfa46c48dea62a359292caeb5ff2fcd6d78",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 70,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L68-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f716d83a91ff7595cc0ed19929f86f7b519eab0ab29cf99ef0a20ec9233b844"
+      ],
+      "text": "Prerequisites are Node.js (recommended v16+ or v18+ per package.json), npm/yarn/pnpm, and a modern browser supporting the File System Access API such as Chrome or Edge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_157c4f3a95f2a834caa20cd79ce2ffc4eeb34003b820adcc855d287b398d8c1b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 47,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L40-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1698d8c381f203d83ddd9e157caa065bd0970ace81d95c751be78c6de59e23cc"
+      ],
+      "text": "Advertised features include natural-language code Q&A, one-click context-aware Markdown generation for LLM assistants, and assistance generating config files like Dockerfile."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd81a29cca768e0aa5484255d818e7838fb193989d5bf7d79811cf3658012355",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c0f84ca2b988c743d773af962698c4f026cc654bb1e7b229ffbb8b65bdae43f"
+      ],
+      "text": "Repository development practice: contributors are directed to a CONTRIBUTING.md guidelines file for bug reports, feature suggestions, and code submissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb0fc77e4df6cded5369a90659cbc87cb90b804ceb87576d3578419cd652b369",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L84-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f3b94e3d667160d5075a5a08a780ce12185c8802a445c0a291f792e72016fff0"
+      ],
+      "text": "The project is licensed under the MIT License."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_917885c76c637222052bb7fba7bdc9aebe988ce9b69a326a74ed24079fa3f1b7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L99-L99"
+        },
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L97-L97"
+        },
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 16,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L14-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_418bc163bfef647623b5e0f9a3cc25fc3f0fd6e2afea9cef26c012ef1a3535eb",
+        "slc_453ade49ecb2a803705d0cb37d09977730ef99937d5b09aa5db83697c23cbb61",
+        "slc_814c3f6085c64ff25beb137031cded775e933d5469ecc36515a8b7d8f4f486b1"
+      ],
+      "text": "The README is bilingual, providing both English and Simplified Chinese sections with parallel content."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_01a7bca38d826fad3ed0ad4906c3b0aff9f32509726d7f4d0f2d6332e2d5f4c5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+          "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+          "line_end": 64,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "oldjs/web-code-agent",
+          "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md#L60-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42b4b57067813f9f4ed2718421db1009755ad305f76e2eac5c18bc7b614314bb"
+      ],
+      "text": "The tech-stack section contains an unfilled placeholder ('please specify' for the main language), suggesting the README is partially templated or incomplete."
+    }
+  ],
+  "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 156,
+        "path": "README.md",
+        "size": 8416
+      },
+      {
+        "lines": 3,
+        "path": "preview.md",
+        "size": 71
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 77,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_e98696ef719c58a6a04b196268a82f8f",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 3,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/oldjs/web-code-agent/14aed287de060b07f77918b5f7a11e871e7524cb/03b27e5371f1e873/manifest.json",
+  "package_id": "pkg_b6ac6fe7e8bcb02dfe7e5dea18abaa46e2d8b920886b23896d1703e9130328c1",
+  "repo": "oldjs/web-code-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b9c0528f751bec507ab72c79d55468e147471f2dc9a0a8409c4a1a8cfa3d0c94",
+  "snapshot_id": "03b27e5371f1e873",
+  "sources": [
+    {
+      "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+      "git_sha": "39c654f987b24b249f73967c7cbbc02101dbc499",
+      "lines": 156,
+      "path": "README.md",
+      "repository": "oldjs/web-code-agent",
+      "sha256": "b78a0ba13b08222a83dbeff16519bb52395b91d8dd924e51d346fde2fec3b315",
+      "source_id": "src_d4f6728c0cb0544494a8a5c5ccc95b34",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/README.md"
+    },
+    {
+      "commit": "14aed287de060b07f77918b5f7a11e871e7524cb",
+      "git_sha": "b369da7b870978fb55a19d1bbf6f22402cbe08cf",
+      "lines": 3,
+      "path": "preview.md",
+      "repository": "oldjs/web-code-agent",
+      "sha256": "0a687a6d14d6c47081f7fe2a5a301d75f84f3d8169425f9cedd135dacd6255aa",
+      "source_id": "src_03004848a19d536fa3a155ee7c5c491d",
+      "stored": "preview.md-a6bfdff072e7.md",
+      "url": "https://github.com/oldjs/web-code-agent/blob/14aed287de060b07f77918b5f7a11e871e7524cb/preview.md"
+    }
+  ],
+  "summary": "Selected evidence records: Folda-Scan is described as an intelligent project Q&A tool that runs entirely locally in the browser, turning a codebase into a conversational partner via semantic vectorization. The stated pipeline is: local scanning and indexing of code into high-dimensional vectors, vectorizing natural-language questions, then semantic matching in vector space.",
+  "superseded_claim_ids": []
+}

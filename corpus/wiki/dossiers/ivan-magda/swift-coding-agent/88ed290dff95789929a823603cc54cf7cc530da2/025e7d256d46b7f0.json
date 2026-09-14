@@ -1,0 +1,726 @@
+{
+  "applied_operation_id": "op_d8f1370880f54e9e9262a4f628e5477f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7841256fffa30db1bd6bcb091df7255cd1d760c01aeba69c1c2f0ca2f83c4f7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L3-L3"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L17-L17"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_425df9941b1df3b464bd67401f7bec567ac2d99935660ee0722ba8e1d5606455",
+        "slc_8a7b976972b020c15834ba1464ebde37a41edf14d9e922258e456684dc1ff324",
+        "slc_eb1409ac66d68151041a84bc435e3f6055082f37a8c4744d31cba5b3a6d8dc73"
+      ],
+      "text": "The project's thesis is that coding agents benefit more from a small set of excellent tools and a tight loop than from large orchestration layers, deliberately rebuilding Claude Code's restrained design in Swift."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77541a28832fe82155a6c0d3835a0406919afbc5387de7db5e727a5039f04db3",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 41,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L39-L41"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 48,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L43-L48"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L50-L52"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 64,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L54-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18fb514f69a29428010041c3cc253c5470bfe08f594e87e68c5d9a2c17974d86",
+        "slc_2648912baffd491cac7e5201a66f530bf3f7f2375bdf492881fb2e8caa6078c6",
+        "slc_47a2d7994ea9bfcaebab400feb182521eef90777736c5ac134236ae5fb2cb85f",
+        "slc_c74e92f73d3c7bfc125e68f2eec75aa07f4ee942f94c770140cc9583f3932716"
+      ],
+      "text": "The agent runs a fixed while-true loop: append the user query, call the Anthropic API, and if the stop reason is tool use, execute tools and append results as a user message; otherwise return the text content."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_573f0405798151bd993c21f5aa24d5deb4759da65039fad1081e0ec518841e03",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 156,
+          "line_start": 156,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L156-L156"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L66-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_807b70b08839c0f9e38661f26a0e0c7d365aa1afd15bacba210c30adc80d5cd1",
+        "slc_87efb66de6ac22720a6f2c9d508e81f1746f4316cece6f08f4e5abf314f3ec63"
+      ],
+      "text": "The loop body is invariant across stages; each stage only adds tool handler entries and injection points before the API call, with tools varying while the loop stays identical."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fcfa9bdf7269b6fa9e851458f14f25b152fa49487509ccfce62586eeaf5e7e2d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L101-L101"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14b722abf4e5beb53f323bd155c68a0663defb2a1fe56966335615b5331ecd32",
+        "slc_9c4e0032dce6f5941fb4fffc0d69463a1d7f1b40a21d93eddf17853b15f39e1e"
+      ],
+      "text": "The agent communicates with POST https://api.anthropic.com/v1/messages over raw HTTP built on AsyncHTTPClient, and the CLI executable is named `agent`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b345c5f2e5bf97a35f9c545bfff0620a6c7a5adeeecd3abe1a672b519bb6b281",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L101-L101"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L97-L97"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L99-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14b722abf4e5beb53f323bd155c68a0663defb2a1fe56966335615b5331ecd32",
+        "slc_4e0d17327208dbe283223acdcbafa52496e0224417e234cd759b42b4046fb723",
+        "slc_800734642d69b5161ed97c7e83e0ef90f012ca8409a824266360e0f326542ac1"
+      ],
+      "text": "It is a two-target Swift Package Manager project: a Core library holding the API client, shell executor, agent loop, and tools, plus a thin CLI entry point."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5601df09bb8dad95d73edc0f749ecee859d71fb5bded3288e1a217f90834e305",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 184,
+          "line_start": 184,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L184-L184"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 174,
+          "line_start": 170,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L170-L174"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 168,
+          "line_start": 164,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L164-L168"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 160,
+          "line_start": 160,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L160-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_065e176a9af4e4bd1fb9bf318374b0d16f42eb3fe06bd8c5fa449d79d386d7be",
+        "slc_5535f2153a39909883835eca5b5e48c93699e1e23fba23c6737ec2fda9a0ee8c",
+        "slc_97749561f8f78fe9073bc94f98db900cab5365c12f279752ee79401a1ddeccbd",
+        "slc_e0a3ad102c365329d5e5203db9ad41feb2cb84e625a8ac443f5648a890a4f0d8"
+      ],
+      "text": "Stage 01 gives the model a single bash tool, executed via Foundation's Process running /bin/bash -c, with pipe data read before waitUntilExit to avoid a roughly 64 KB buffer deadlock."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15612b25f88a32f89245cdbcc3f944aff628a6f7662223c8638da6631f2ca647",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "7fa33d54a176794f3d2cb0ef59e29dbee9cfa5b5",
+          "line_end": 75,
+          "line_start": 70,
+          "path": "docs/s02.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s02.md#L70-L75"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "7fa33d54a176794f3d2cb0ef59e29dbee9cfa5b5",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "docs/s02.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s02.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cd6d73722efbcf23fc21ccd5622768ce3aca1388ca4dd23ac97c9fee66f54b8",
+        "slc_ab4559f03224a3d8d8a1af7cd635a5cf4c55183f0323fa8bfa67f21a19474339"
+      ],
+      "text": "File tools enforce path sandboxing: paths are resolved against the working directory and any resolved location that escapes it is rejected with an executionFailed error."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e977347b396a584775b1845f3bdd2f7bf5e5a3c6a5f7c39262396efd8a83e6f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "7fa33d54a176794f3d2cb0ef59e29dbee9cfa5b5",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "docs/s02.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s02.md#L50-L50"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "7fa33d54a176794f3d2cb0ef59e29dbee9cfa5b5",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "docs/s02.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s02.md#L42-L44"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "7fa33d54a176794f3d2cb0ef59e29dbee9cfa5b5",
+          "line_end": 40,
+          "line_start": 32,
+          "path": "docs/s02.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s02.md#L32-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31f588d8e0b841099675d12e6beb235efb0c79967530d5046881b45b1da9663d",
+        "slc_456ff15f259a44dfd0b2b196f13cabf05608fbede42042d1fa4bf2e09fc2fd56",
+        "slc_8b6955f58a7a913a4684ebacb183c1831c1ed2b3afc9b88c85b550db95d55fda"
+      ],
+      "text": "Tool dispatch is a dictionary mapping tool names to handlers (bash, read_file, write_file, edit_file), returning an unknownTool failure for unregistered names, chosen over a protocol registry for its simplicity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_924396de8ef692691ef2d159ba6a789a144038b0b84c8766fd8c8bc7a9504ee5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L197-L197"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 199,
+          "line_start": 199,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L199-L199"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "docs/s01.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52df57faccd7148039052a8c09e94d8669ca385d29dbf9a26f105215b54509e1",
+        "slc_be647a562c309fcf7d8939acad96bfa623d5ddd3345d8131bf08ca32f1a28963",
+        "slc_d5f5224d02be698dbed787fb5eebe513cbc860e02567a3e6394090c738f6a8c1"
+      ],
+      "text": "The messages array lives on the Agent instance so conversation history persists across REPL turns, and each API call sends the entire accumulated history, which grows without bound until later context compaction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7447858dcbdcaaab82e209d5632265ba932ebf12cde85ecddd1a98d0ed5276e5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 118,
+          "line_start": 118,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L118-L118"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 116,
+          "line_start": 83,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L83-L116"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L120-L120"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L117-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_537e66f87b88a495047c4f824dd5670c3a415f8e0d3ce7b00e84b619570126df",
+        "slc_728f6381ed16636ed848044a466c2b26fa89ae0741d3e31b9c6b33ef92ef8c5b",
+        "slc_ae7334368bfe77bfa22fe65521b66b1f67eb0d5d54c2de5aac03f4020653f68e",
+        "slc_f43fd87847a806e61e0a29583e7fb82068bf223ed6c23c15c132c51084491ab1"
+      ],
+      "text": "The package depends on AsyncHTTPClient (from 1.32.0, SwiftNIO-based) rather than URLSession for cross-platform macOS/Linux HTTP and streaming SSE, built with Swift 6.2 strict concurrency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0559886f40371a94cc44038d98afcf1d5526e595ac5604ee00dd42030966ae81",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L113-L113"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md#L109-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06f44ea49557dcc203c5701d442eb8876d88a5d8c3f841ba1ba9fc9efca0ced9",
+        "slc_910666a251604e6097088a68aa0ed8039bdc573478dbafed691c739b06136f20"
+      ],
+      "text": "The README states the project is explicitly not a full Claude Code clone, a general-purpose multi-agent framework, or production-ready IDE tooling; the gaps are deliberate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4470697a9f676492f651f4239cdfed50f8c1c47aac9eed66ad8cd875686cd213",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 154,
+          "line_start": 152,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L152-L154"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 36,
+          "line_start": 28,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L28-L36"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 167,
+          "line_start": 167,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L167-L167"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 142,
+          "line_start": 142,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L142-L142"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 135,
+          "line_start": 132,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L132-L135"
+        },
+        {
+          "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+          "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+          "line_end": 164,
+          "line_start": 162,
+          "path": "docs/s00.md",
+          "repository": "ivan-magda/swift-coding-agent",
+          "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md#L162-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03bf573295d8c04ef7641797816e4a647d34b8f43e6649411e993208599c14f0",
+        "slc_6678cbc234f13986c8ec444d84255403a0d7a54778e31c440e971dd8de2070f2",
+        "slc_702ea38b882e9225fb95e655ab5da0b1297eac21809a66be3c7c5787e4e233cb",
+        "slc_9bd09c03f82be030515342a200929e56e0750ad942ff88ef2770ada562fde0af",
+        "slc_ad1114c249c1ed8bd2dc22e708528b136bbfda36da3eab853039c367c769639d",
+        "slc_ed8a5e3b417c8bd8073d3ea00083558cdc77b6c2af73f167df1f756bcd2f9519"
+      ],
+      "text": "Repository development practice: the stage-0 guide walks contributors through a two-target SPM layout with a Swift Testing test target (CoreTests importing Core), .env-based ANTHROPIC_API_KEY configuration, and swift build/run/test verification commands."
+    }
+  ],
+  "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 143,
+        "path": "README.md",
+        "size": 5685
+      },
+      {
+        "lines": 178,
+        "path": "docs/s00.md",
+        "size": 8022
+      },
+      {
+        "lines": 230,
+        "path": "docs/s01.md",
+        "size": 12494
+      },
+      {
+        "lines": 232,
+        "path": "docs/s02.md",
+        "size": 11929
+      },
+      {
+        "lines": 212,
+        "path": "docs/s03.md",
+        "size": 12019
+      },
+      {
+        "lines": 213,
+        "path": "docs/s04.md",
+        "size": 13395
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/s05.md",
+        "reason": "file-budget",
+        "size": 13693
+      },
+      {
+        "path": "docs/s06.md",
+        "reason": "file-budget",
+        "size": 16167
+      },
+      {
+        "path": "docs/s07.md",
+        "reason": "file-budget",
+        "size": 13543
+      },
+      {
+        "path": "docs/s08.md",
+        "reason": "file-budget",
+        "size": 15527
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 49,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 4,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_d61d72cc70f85f2aa558d74742dd8680",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 3,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ivan-magda/swift-coding-agent/88ed290dff95789929a823603cc54cf7cc530da2/025e7d256d46b7f0/manifest.json",
+  "package_id": "pkg_e1bed1264e9323fbc5b9904267cf39fb7311628500392cab546dce0011e91783",
+  "repo": "ivan-magda/swift-coding-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fd85505ef7a69964db06b8e2f491444ad111b0ebd0c33a6b2132045fcfd293ed",
+  "snapshot_id": "025e7d256d46b7f0",
+  "sources": [
+    {
+      "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+      "git_sha": "6ec65b8a73a49ed43956a8bfe28486b2e639d59d",
+      "lines": 143,
+      "path": "README.md",
+      "repository": "ivan-magda/swift-coding-agent",
+      "sha256": "c56561abea576cf1feeb6eff393544962c9f6964864b2c146faac8bfc3a76748",
+      "source_id": "src_c09e10ca46a8511fb4e20457226b4654",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/README.md"
+    },
+    {
+      "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+      "git_sha": "8b2adcc9025526023f47190284a99da22d7a0075",
+      "lines": 178,
+      "path": "docs/s00.md",
+      "repository": "ivan-magda/swift-coding-agent",
+      "sha256": "84c078d433ff9453fd57ae01326002bf88a00761669d0b30875596632ecdb7f8",
+      "source_id": "src_2d0c43684f58526fa26813b356bfbc1c",
+      "stored": "s00.md-602421e0d0c9.md",
+      "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s00.md"
+    },
+    {
+      "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+      "git_sha": "abb7bcc7ae92d076f7159d16b3d6ca581a180a15",
+      "lines": 230,
+      "path": "docs/s01.md",
+      "repository": "ivan-magda/swift-coding-agent",
+      "sha256": "f23dc070e04ba6bf49ac6ad6f1d19c711517ce0a0e065fa6d5c7b8dee3ad958f",
+      "source_id": "src_752caaa0b274585cb48780183a4634f3",
+      "stored": "s01.md-574c69890d80.md",
+      "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s01.md"
+    },
+    {
+      "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+      "git_sha": "7fa33d54a176794f3d2cb0ef59e29dbee9cfa5b5",
+      "lines": 232,
+      "path": "docs/s02.md",
+      "repository": "ivan-magda/swift-coding-agent",
+      "sha256": "7e2b541390d5c5030c3c3ab3b32a88735cf1b0a98fa1a715d498c650a2ce4a60",
+      "source_id": "src_dc57c4eef518526f9c95b45cf7b3132c",
+      "stored": "s02.md-01520446f620.md",
+      "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s02.md"
+    },
+    {
+      "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+      "git_sha": "743530c4150bfcc71325b9c9b61aea940d5012f3",
+      "lines": 212,
+      "path": "docs/s03.md",
+      "repository": "ivan-magda/swift-coding-agent",
+      "sha256": "2350f6aae5301e624fa20f05f19d2c8c0ff6eb362a1a9fa14adf2b363e2bee4f",
+      "source_id": "src_2b7aa211c01358b698d8915ac1e3f8f8",
+      "stored": "s03.md-b1ed1e487fd8.md",
+      "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s03.md"
+    },
+    {
+      "commit": "88ed290dff95789929a823603cc54cf7cc530da2",
+      "git_sha": "1277e421885161d613fc0ccc33e3f8b44e170005",
+      "lines": 213,
+      "path": "docs/s04.md",
+      "repository": "ivan-magda/swift-coding-agent",
+      "sha256": "8bf234f0d5996414d240de60c99dc146df0ab836a9bb0251477df694caacf231",
+      "source_id": "src_5481821c162758108e3ab19e04ad75e9",
+      "stored": "s04.md-7007fea97503.md",
+      "url": "https://github.com/ivan-magda/swift-coding-agent/blob/88ed290dff95789929a823603cc54cf7cc530da2/docs/s04.md"
+    }
+  ],
+  "summary": "Selected evidence records: The project's thesis is that coding agents benefit more from a small set of excellent tools and a tight loop than from large orchestration layers, deliberately rebuilding Claude Code's restrained design in Swift. The agent runs a fixed while-true loop: append the user query, call the Anthropic API, and if the stop reason is tool use, execute tools and append results as a user message; otherwise return the text content.",
+  "superseded_claim_ids": []
+}

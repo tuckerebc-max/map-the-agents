@@ -1,0 +1,62 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1fca44e28aa92687c07e6ed8fc4b0f1720c52cbfc3209d5f389b2db3a2b49bc3
+- clm_2320197b370fe65f00cabddb3fa4424e4a81d68ce322467193fa1a07178738f2
+- clm_3e906225d5c8dac844131dab4fe14d7b02ca2b730dac5202763d99afe25f07a0
+- clm_4577368a487e315548b12e42110f0806ca8c3a847d3b4afca756e9a6c2f82014
+- clm_4e305a3d34e4b58cf4080ad432ea1c91fd74fcb37c3ae5309075120c33d57fef
+- clm_5cfc8b62737a080777c415e2ce4c8ac56d5df9a219ab4f2a4719a84d5f70cbce
+- clm_5d6dbf63f1ea56f2ecdf42276e7366b86216ef99281e5186475168611627d22c
+- clm_83422bfb9e7fcff91efadcd62ef7b1d512713712f95f10df7c617f54624d8871
+- clm_9e57fc0685cf578712ee1d737c15bcedfb75210c7f505e6be3bc922b45f8ab20
+- clm_ad34b56fa45bf46d0d64955b36997843fbaf1221e5b9df95f00de42dca183c70
+- clm_b776c292844b943f98b3d5f16fef15d2e7400b2dae72fcef0fa9a61993c2d40e
+- clm_bd19a159afdf929c97dea2914e5479a4361e3c50d2377b9384d5a70a6fa93d8d
+- clm_bf6fad0bc01259d9e7174ae92c30d1d157d85f2346bbdbf034d8236f23aa9c6a
+- clm_c5e984f49570ac9e2b5f68e6d97faffa993a95f5ca4c742d6072da77f8f2fd93
+- clm_de74f4c4b6cd1d846eb411ab5ab7dd8aab46f486e03d44fb508e7845ffcb8262
+- clm_dfec68178a83d7cdf7565c9d8b574b7361993e10e73c7ec422be797b0cff78e0
+- clm_e2afac5e91e1a7dce409df6fea74b0fc644c7b4b691c42ed450a43c19d9b5948
+- clm_f6baf63463890ec776c5542ba9b98c7283da1e7b90d412c68ce7a1921b687360
+- clm_facf28b1ae8f5d4cc12f47b17ce63ec00626314bbbad22d3b4664a0642742b3c
+- clm_fff98665c7fd85a916b6deab85323d6378b08dad5dcdbd71d671a1805b72ca9b
+maturity: draft
+page_id: pg_e3b8a524001c537684135efc257afff2
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_0f6cf79ec69e5941857254efb708262f
+title: getkimchi/kimchi/README.md @ 15cdadae0c44
+updated_at: '2026-09-14T01:51:06Z'
+---
+
+# getkimchi/kimchi/README.md @ 15cdadae0c44
+
+<!-- rcw:begin owner=source:src_0f6cf79ec69e5941857254efb708262f block=evidence -->
+- Kimchi ships built-in LSP support loaded by default, exposing tools such as lsp_diagnostics, lsp_hover, lsp_definition, lsp_references, and lsp_rename; servers are auto-detected on PATH and file edits sync to the language server. [@claim:clm_1fca44e28aa92687c07e6ed8fc4b0f1720c52cbfc3209d5f389b2db3a2b49bc3]
+- Repository development practice: prerequisites are Node.js 22 LTS, Bun, corepack, and pnpm; `./scripts/dev-startup.sh` bootstraps the environment, and `pnpm run check`, `lint`, `test` (vitest), and `test:smoke` cover linting, type checking, and tests. [@claim:clm_2320197b370fe65f00cabddb3fa4424e4a81d68ce322467193fa1a07178738f2]
+- Installation paths include Homebrew (`getkimchi/tap/kimchi`), a curl install script for macOS/Linux, and a PowerShell one-liner for Windows. [@claim:clm_3e906225d5c8dac844131dab4fe14d7b02ca2b730dac5202763d99afe25f07a0]
+- Repository development practice: standalone binaries are built automatically by GitHub Actions on version tags using `bun build --compile`, producing tarballs/zip plus SHA256 checksums for macOS, Linux, and Windows. [@claim:clm_4577368a487e315548b12e42110f0806ca8c3a847d3b4afca756e9a6c2f82014]
+- Kimchi is a terminal coding agent CLI; users configure an API key via an interactive `kimchi setup` command and launch the agent with `kimchi`, with `--help` listing subcommands and flags. [@claim:clm_4e305a3d34e4b58cf4080ad432ea1c91fd74fcb37c3ae5309075120c33d57fef]
+- Model roles include orchestrator, planner, builder, reviewer, explorer, and researcher, each configurable as a single model or a pool of candidates in `~/.config/kimchi/harness/settings.json` under `modelRoles`. [@claim:clm_5cfc8b62737a080777c415e2ce4c8ac56d5df9a219ab4f2a4719a84d5f70cbce]
+- When a role pool has multiple models, the orchestrator picks the lightest-tier model that fits and escalates to heavy-tier for complex work or after a standard-tier failure; external models default to standard tier unless given `modelMetadata`. [@claim:clm_5d6dbf63f1ea56f2ecdf42276e7366b86216ef99281e5186475168611627d22c]
+- The `/teleport` command hands an in-progress session to a cloud sandbox (requires CLI v0.1.52+, unavailable on Windows), with flags for workspace reuse, git cloning, dirty trees, and a 5 GB workspace size limit; `/sync` and `/terminal` support file transfer and SSH. [@claim:clm_83422bfb9e7fcff91efadcd62ef7b1d512713712f95f10df7c617f54624d8871]
+- Workspace sizing is declared in a root-level `kimchi_workspace.yaml` using Kubernetes quantity strings; invalid or unknown fields are refused with the field named, and sizing applies only at workspace creation since resources are immutable. [@claim:clm_9e57fc0685cf578712ee1d737c15bcedfb75210c7f505e6be3bc922b45f8ab20]
+- Context files are injected into the system prompt: a global `~/.config/kimchi/harness/AGENTS.md` plus per-directory AGENTS.md/CLAUDE.md collected walking up from the working directory, with AGENTS.md taking priority and `.local.md` variants for gitignored overrides. [@claim:clm_ad34b56fa45bf46d0d64955b36997843fbaf1221e5b9df95f00de42dca183c70]
+- The repository's `benchmark/` directory contains manual model-comparison benchmarks, a Terminal-Bench-2 harness running 89 tasks against kimchi in Docker, and a session audit tool scoring phase discipline, code quality, architecture, testing, and cost efficiency. [@claim:clm_b776c292844b943f98b3d5f16fef15d2e7400b2dae72fcef0fa9a61993c2d40e]
+- Kimchi is built on the pi-mono coding agent SDK and connects to kimchi's LLM infrastructure; it supports native Pi packages via `kimchi install npm:<package>` and can load original Pi packages through a Pi package lookup resource. [@claim:clm_bd19a159afdf929c97dea2914e5479a4361e3c50d2377b9384d5a70a6fa93d8d]
+- Ferment lifecycle follows a deterministic state machine (draft, planned, running, paused, complete) that rejects illegal transitions, with manual or automated continuation policies and pause/resume/exit commands. [@claim:clm_bf6fad0bc01259d9e7174ae92c30d1d157d85f2346bbdbf034d8236f23aa9c6a]
+- On first run kimchi detects Claude Code, OpenCode, or Cursor installations and offers one-shot migration of their MCP servers and skills, merging discovered servers into `~/.config/kimchi/harness/mcp.json` with existing Kimchi entries winning collisions. [@claim:clm_c5e984f49570ac9e2b5f68e6d97faffa993a95f5ca4c742d6072da77f8f2fd93]
+- Kimchi runs in single-model or multi-model mode; in multi-model mode an orchestrator delegates each task to a model assigned to a role, while single-model mode disables task classification and delegation but keeps the orchestration system prompt. [@claim:clm_de74f4c4b6cd1d846eb411ab5ab7dd8aab46f486e03d44fb508e7845ffcb8262]
+- Users can add Bash hooks that rewrite or block shell commands before execution; global hooks live in `~/.config/kimchi/harness/hooks/bash/` and project hooks in `.kimchi/hooks/bash/` default to disabled until enabled. [@claim:clm_dfec68178a83d7cdf7565c9d8b574b7361993e10e73c7ec422be797b0cff78e0]
+- Ferment V2 is an experimental, branch-scoped objective controller (disabled by default, enabled under /resources) that keeps one objective across turns, supports token budgets, and evaluates completion with an independent tool-free evaluator returning met, impossible, or continue. [@claim:clm_e2afac5e91e1a7dce409df6fea74b0fc644c7b4b691c42ed450a43c19d9b5948]
+- Every LLM request is tagged with a `phase:{name}` label (explore, plan, build, review, research) for usage analytics and cost attribution; subagents inherit the phase but cannot change it, and user tags persist with the session. [@claim:clm_f6baf63463890ec776c5542ba9b98c7283da1e7b90d412c68ce7a1921b687360]
+- Ferment persists project state (goal, phases, steps, decisions, memory) as a JSON snapshot plus an append-only events log under `.kimchi/ferments/`, with every mutation hashed for auditability, and sessions resume from a `ferment_reference` entry in the session log. [@claim:clm_facf28b1ae8f5d4cc12f47b17ce63ec00626314bbbad22d3b4664a0642742b3c]
+- The orchestrator receives per-phase directives: it performs work for roles it owns, delegates otherwise, and review is always delegated to a fresh context for independence. [@claim:clm_fff98665c7fd85a916b6deab85323d6378b08dad5dcdbd71d671a1805b72ca9b]
+<!-- rcw:end owner=source:src_0f6cf79ec69e5941857254efb708262f block=evidence -->
+
+## Researcher notes
+

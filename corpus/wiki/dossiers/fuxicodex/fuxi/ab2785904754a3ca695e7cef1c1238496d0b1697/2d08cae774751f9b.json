@@ -1,0 +1,626 @@
+{
+  "applied_operation_id": "op_f58d8eef1ae04d8b9b8bb91c9ed483f1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ed1e451ac0798b98b6ec6988e60c30f7fe95b1295ba005cb4d95d63a9a993da",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L12-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9466238fdafadcba3fcbe6cb546f18de75e338517e311f0aa697759350a5abf7"
+      ],
+      "text": "FuXi is documented as a terminal AI coding agent built in Go, shipped as a single static binary with no runtime dependencies, positioned as a provider-agnostic alternative to Claude Code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_639ee5fabe7c55abd2aa268bd6483507d749312f36ab51860a108e802933efe4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "e20ee10fa49b5cd4faa83a50ab532758c33d8b8f",
+          "line_end": 72,
+          "line_start": 70,
+          "path": "docs/faq.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/faq.md#L70-L72"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L12-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20deb9ce8656ba28f0ae9cec2ff5f71ecb1cdda88d36a3233261371f24e46ee5",
+        "slc_9466238fdafadcba3fcbe6cb546f18de75e338517e311f0aa697759350a5abf7"
+      ],
+      "text": "The agent is described as running a Think → Act → Verify loop: it reasons about a task, acts with built-in tools, inspects results, and iterates until the work is verified."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd5f199b443d927b519e8170830ebb4e569be917b8e713abee7f7923d0a21f1e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 82,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L66-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6edaf54069ee21cf89fa0700a88e79c933f176a42d075a39c0efa201cf9c672e"
+      ],
+      "text": "Documentation claims 50+ built-in tools including file read/write/edit, bash and PowerShell shell, ripgrep search, web fetch, LSP diagnostics, Jupyter, browser use, background tasks, and parallel sub-agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_69f246579dd0af64583445181b87e87579175c693e7815b8d8477d26624cf843",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "e20ee10fa49b5cd4faa83a50ab532758c33d8b8f",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "docs/faq.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/faq.md#L105-L107"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 82,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L66-L82"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "e20ee10fa49b5cd4faa83a50ab532758c33d8b8f",
+          "line_end": 82,
+          "line_start": 80,
+          "path": "docs/faq.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/faq.md#L80-L82"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "e20ee10fa49b5cd4faa83a50ab532758c33d8b8f",
+          "line_end": 78,
+          "line_start": 76,
+          "path": "docs/faq.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/faq.md#L76-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_641372100d2489f185b1838ce6724bb490f65797b6ee76f62fe267253ab004cb",
+        "slc_6edaf54069ee21cf89fa0700a88e79c933f176a42d075a39c0efa201cf9c672e",
+        "slc_bb6746b3a55287ce39cfbcd172cc7f654b162784229179f4b087e500e4e7abd2",
+        "slc_f2e09402b1c63f4a273ceda81fbcc79bcc548b04f2bbe50096badf5b3faa4151"
+      ],
+      "text": "Shell commands reportedly pass an AST safety classifier and rule set before execution, with fine-grained permissions and audit logging; permission modes are default, plan, and bypassPermissions, plus a classifier-gated --auto mode with a circuit breaker."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6920e1412e414365b7e7e3f04f6a409ff062ee2b2d8713a9ea02e329e5c722c7",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "e20ee10fa49b5cd4faa83a50ab532758c33d8b8f",
+          "line_end": 99,
+          "line_start": 97,
+          "path": "docs/faq.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/faq.md#L97-L99"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 82,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L66-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42ba305f264411739e427a19d169a6fb1f79826769a83619d9ed782ea3672727",
+        "slc_6edaf54069ee21cf89fa0700a88e79c933f176a42d075a39c0efa201cf9c672e"
+      ],
+      "text": "Sessions are described as durable: transcripts persist to disk, checkpoints allow resume, rollback, or fork, long conversations auto-compact, and an idle 'dreaming' pass consolidates memory across sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e0c0c38c0c4e4d787c181c835eee9e04bc4f7681f58cab2beb5430df9300ac9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 317,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L297-L317"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 291,
+          "line_start": 276,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L276-L291"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63d2db0739f426f12e77c50cc86e375a1f54a94e6d2e6b32d7ecdbdcc96a76eb",
+        "slc_ca1f4a71f3b3b25c428b09e2d74689c1360637d8a7ee5027870c0fd179f9cff5"
+      ],
+      "text": "The product exposes a TUI with slash commands (/model, /config, /cost, /usage, /context, /compact, /permissions, /commit, /review, etc.) plus CLI subcommands such as fuxi doctor, verify, wizard, update, proxy, and mcp serve."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de0125b1027710e4759bf0c58e9c6d1703e655f983fcad6e46a975fef87d011b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 350,
+          "line_start": 342,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L342-L350"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "8c5999ab459af19f74c819fb573bb48692a3b2f5",
+          "line_end": 8,
+          "line_start": 3,
+          "path": "docs/environment.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/environment.md#L3-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3164abc3e7d90f38f967e5bb8e384890151070b44e81750540e455434e838ce",
+        "slc_fda2b2291d678df6c40334d996eb9386e7bdb0c0b927c5720bc60d148cae118f"
+      ],
+      "text": "Configuration resolves with precedence environment variables > ~/.fuxi/config.yaml > built-in defaults, and config changes are said to hot-reload while the agent runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0e8c9ab428966612f3c83877527df401f3cedcfe59eb36b03befe04d55e2c91",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L19-L19"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 82,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L66-L82"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "e20ee10fa49b5cd4faa83a50ab532758c33d8b8f",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "docs/faq.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/faq.md#L56-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b52a39274abae659668ed9ebf020ac0c792b798a852709b43c83c47e212d074",
+        "slc_6edaf54069ee21cf89fa0700a88e79c933f176a42d075a39c0efa201cf9c672e",
+        "slc_efc66eecbbf99935790a8b7d2389663d2a3bde09e839c8dd219e454f4f3df35e"
+      ],
+      "text": "The agent is documented as provider-agnostic: it accepts any OpenAI-compatible endpoint, Gemini, Bedrock/Vertex keys, or FuXi OAuth login, and acts as an MCP client."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b24b23ff187da7326df112088f851726de351373db6fce4bdcbec5194197115a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "8c5999ab459af19f74c819fb573bb48692a3b2f5",
+          "line_end": 54,
+          "line_start": 48,
+          "path": "docs/environment.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/environment.md#L48-L54"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L12-L17"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 291,
+          "line_start": 276,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L276-L291"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7cda4b35debdb6f6574a3a14cc86498f240e79bb3b44e78eef9c1f971795e741",
+        "slc_9466238fdafadcba3fcbe6cb546f18de75e338517e311f0aa697759350a5abf7",
+        "slc_ca1f4a71f3b3b25c428b09e2d74689c1360637d8a7ee5027870c0fd179f9cff5"
+      ],
+      "text": "Documentation describes cost-aware routing across LLM providers with automatic failover, a smart routing proxy (fuxi proxy), and fork agents with a default fork concurrency of 4 (FUXI_FORK_MAX_CONCURRENCY)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bb1f3847f4984638c76a18d3c27a8df1cddf1c5ee443a5c338165a44b9d0a38",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 104,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L102-L104"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L96-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73372a7bad9c15ee3b10300e6e60abf15b5c540d4f1e03ab7f311814c16fc9b6",
+        "slc_9e3df1480047dd377dbbf5149031e3b14c639d99781037e885a2bd4c6f11d1c4"
+      ],
+      "text": "The README reports a self-run head-to-head benchmark against another coding agent using an objective pytest+coverage scorer across 15 micro and 4 large-project dimensions, and explicitly cautions it is a small, non-third-party task set measuring the agent loop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab8341aabfd3ebff291e36f706f043ee5f89a1b5f9cf9286ef4457378de024b1",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 131,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L128-L131"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 113,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L110-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae18633685ac7da44020095e1c1aa51a7cf2375be7ea18716482e91801e2e6b0",
+        "slc_ea6b06029527725272722ec096c381c60fe4cec500643babaf46557faaace54f"
+      ],
+      "text": "The project states it currently ships without published scores on third-party benchmarks such as SWE-bench or Terminal-Bench, and instead offers a do-it-yourself evaluation checklist plus in-TUI /cost, /usage, /context, and /status commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a300fbc4166ce220b18aafa906be1ee3ecccd6905726b07d1adadc51aaa8f197",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 389,
+          "line_start": 388,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L388-L389"
+        },
+        {
+          "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+          "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+          "line_end": 373,
+          "line_start": 371,
+          "path": "README.md",
+          "repository": "fuxicodex/fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md#L371-L373"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e89efeb05edfca7141fca564b7aa5a54732e099a620a8dde5619d23327c1c47",
+        "slc_b35faecfc2dea100284fcb95193eeadc9599086f9eb58be467112700678febd4"
+      ],
+      "text": "The repository hosts only documentation, release installers, and the issue tracker; the product source is proprietary and not published here, under a proprietary license."
+    }
+  ],
+  "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 389,
+        "path": "README.md",
+        "size": 15928
+      },
+      {
+        "lines": 363,
+        "path": "README.zh-CN.md",
+        "size": 15526
+      },
+      {
+        "lines": 36,
+        "path": "SUPPORT.md",
+        "size": 1659
+      },
+      {
+        "lines": 87,
+        "path": "docs/environment.md",
+        "size": 3388
+      },
+      {
+        "lines": 85,
+        "path": "docs/environment.zh-CN.md",
+        "size": 3181
+      },
+      {
+        "lines": 113,
+        "path": "docs/faq.md",
+        "size": 3668
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/faq.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3388
+      },
+      {
+        "path": "docs/keybindings.md",
+        "reason": "file-budget",
+        "size": 3124
+      },
+      {
+        "path": "docs/keybindings.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3030
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 14171
+      },
+      {
+        "path": "docs/usage.zh-CN.md",
+        "reason": "file-budget",
+        "size": 13603
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 5602
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 4734
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2064
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1359
+      }
+    ],
+    "omitted_count": 9,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 208,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 15,
+      "complete": false,
+      "omitted": 9,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_495d6ac3565c507dab1bfdaccf43192e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/fuxicodex/fuxi/ab2785904754a3ca695e7cef1c1238496d0b1697/2d08cae774751f9b/manifest.json",
+  "package_id": "pkg_aa3f90d2d1cb72fb695a4abca392f80ce4305f01def9069217fa1c095a4bd632",
+  "repo": "fuxicodex/fuxi",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "dd19e99b0fc936fbf74576db1e5f872343a71225671a2eda563c125252ed03c4",
+  "snapshot_id": "2d08cae774751f9b",
+  "sources": [
+    {
+      "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+      "git_sha": "0c8f8e205329f30f4c536149686c207505e3e1f7",
+      "lines": 389,
+      "path": "README.md",
+      "repository": "fuxicodex/fuxi",
+      "sha256": "9354d8cca38b517e267928d62a99796c90a558062945c6e6a534d1fe3d5dd6e4",
+      "source_id": "src_887f5d32422a594782426ff7e3450d9f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.md"
+    },
+    {
+      "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+      "git_sha": "af516ef6745bd6ab8ebb894b2afc24d66c3aeae8",
+      "lines": 363,
+      "path": "README.zh-CN.md",
+      "repository": "fuxicodex/fuxi",
+      "sha256": "d39c84de1a327d63e7c86ea7fe88eb4ecc4d3634708a8c582ca79d1afe3cffe2",
+      "source_id": "src_4a91128e886554efb4d8a48748648141",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/README.zh-CN.md"
+    },
+    {
+      "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+      "git_sha": "681a14df4a1db6095501d109b13381f425d33cf0",
+      "lines": 36,
+      "path": "SUPPORT.md",
+      "repository": "fuxicodex/fuxi",
+      "sha256": "e65b8662411017a9fbd8281295401b5654f657469f60a5a328f00af6515c0eae",
+      "source_id": "src_36ee90f915a05cdbb22931b2f7d35d64",
+      "stored": "support.md-c5fe610b0215.md",
+      "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/SUPPORT.md"
+    },
+    {
+      "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+      "git_sha": "8c5999ab459af19f74c819fb573bb48692a3b2f5",
+      "lines": 87,
+      "path": "docs/environment.md",
+      "repository": "fuxicodex/fuxi",
+      "sha256": "86211ce91ce8427b02c3aeee0744a7fe7951b5161b12976ac3b9b1a437ef2ac9",
+      "source_id": "src_4193a7cb2ab75a0185c0209baf69e809",
+      "stored": "environment.md-a9108d0ec764.md",
+      "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/environment.md"
+    },
+    {
+      "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+      "git_sha": "6154c98af2094eb9520d1292c3b120a0d1fbb14e",
+      "lines": 85,
+      "path": "docs/environment.zh-CN.md",
+      "repository": "fuxicodex/fuxi",
+      "sha256": "4cc0953733eeb6758f15cf4aaf4be8870ae9fd2c61eeab2dfd367e99576e85b2",
+      "source_id": "src_382ef711e0ef523f891ee143397ab105",
+      "stored": "environment.zh-cn.md-4622852e99f9.md",
+      "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/environment.zh-CN.md"
+    },
+    {
+      "commit": "ab2785904754a3ca695e7cef1c1238496d0b1697",
+      "git_sha": "e20ee10fa49b5cd4faa83a50ab532758c33d8b8f",
+      "lines": 113,
+      "path": "docs/faq.md",
+      "repository": "fuxicodex/fuxi",
+      "sha256": "b828e5c28fcdf465ddd9197b8a7be7c252468b49058009b1bca844ac0d1bf5a7",
+      "source_id": "src_2f8a8a655d6b5dcabc93da7deb2a0832",
+      "stored": "faq.md-57cdcc6b6701.md",
+      "url": "https://github.com/fuxicodex/Fuxi/blob/ab2785904754a3ca695e7cef1c1238496d0b1697/docs/faq.md"
+    }
+  ],
+  "summary": "Selected evidence records: FuXi is documented as a terminal AI coding agent built in Go, shipped as a single static binary with no runtime dependencies, positioned as a provider-agnostic alternative to Claude Code. The agent is described as running a Think → Act → Verify loop: it reasons about a task, acts with built-in tools, inspects results, and iterates until the work is verified.",
+  "superseded_claim_ids": []
+}

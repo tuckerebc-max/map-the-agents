@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_01a34663b5764edd89773c08ae01a75c7bbcc3ecb819a9c407fa919c45a1a0bd
+- clm_04474dc4d3e768411db4d650c29b9fefb8de8023edea40f6525925b707388041
+- clm_29fa2d4a1ebb350582d1e5d89cee8eaa84d1b669676c86091c01fbf7edb965db
+- clm_2b6460c501bf6b1a59079e9724c7fec7b0f3f03b3d9ae0c382a373a63bb5f1c8
+- clm_35a43c81d55766956bd69b8001b65a87bf7acc19cfbe848f42388190a3095570
+- clm_384b780e297dd3c4d6f3b454e105a93319db6bc3b8f94bd470c90e9c9c0852c6
+- clm_56435385a3328741d5cb78d3a970a2256bfee758f29b81e7e601bf1aa2922043
+- clm_6c311136013efb4f1bc13c3b833d58cb06f7d1027698a6a3a1521ce29fb768fe
+- clm_98219527e05031f69a1fe35d081a663d3687ef9d6c7b24a75813f22cba4ad013
+- clm_e32e2bf364798352d41caaa90267df84088e86b367c6c178b931344e7971a439
+- clm_e9fd23d7e65b57558def707ef87116e686495ba19334e2e66474f44800abe93f
+- clm_ea51a4f5a7fcc5dc79bd5292fc855316878705c0aaeb5dfe42ed88ff67dd76d3
+maturity: draft
+page_id: pg_fb98f1b887d15520811b29528952eb4c
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_379ccbde33ee57538cf4076accf5326d
+title: coleam00/mcp-crawl4ai-rag/README.md @ a1c16f675fe0
+updated_at: '2026-09-14T03:42:06Z'
+---
+
+# coleam00/mcp-crawl4ai-rag/README.md @ a1c16f675fe0
+
+<!-- rcw:begin owner=source:src_379ccbde33ee57538cf4076accf5326d block=evidence -->
+- The README states the knowledge graph implementation is not fully compatible with Docker yet and recommends running via uv for hallucination detection. [@claim:clm_01a34663b5764edd89773c08ae01a75c7bbcc3ecb819a9c407fa919c45a1a0bd]
+- Five RAG strategies are independently toggleable via environment flags defaulting to false: contextual embeddings, hybrid search, agentic RAG, reranking, and knowledge graph. [@claim:clm_04474dc4d3e768411db4d650c29b9fefb8de8023edea40f6525925b707388041]
+- The server supports SSE transport (default port 8051, endpoint /sse) and stdio transport, with client configuration examples for MCP clients including Claude Desktop and Windsurf. [@claim:clm_29fa2d4a1ebb350582d1e5d89cee8eaa84d1b669676c86091c01fbf7edb965db]
+- Reranking uses the local cross-encoder model cross-encoder/ms-marco-MiniLM-L-6-v2 on CPU with no additional API cost, adding roughly 100-200ms per query. [@claim:clm_2b6460c501bf6b1a59079e9724c7fec7b0f3f03b3d9ae0c382a373a63bb5f1c8]
+- Repository development practice: Database setup requires running the crawled_pages.sql script in the Supabase SQL editor to create tables and functions before starting the server. [@claim:clm_35a43c81d55766956bd69b8001b65a87bf7acc19cfbe848f42388190a3095570]
+- With USE_KNOWLEDGE_GRAPH enabled, three additional tools are offered: parse_github_repository, check_ai_script_hallucinations, and query_knowledge_graph supporting commands like repos, classes, methods, and custom Cypher queries. [@claim:clm_384b780e297dd3c4d6f3b454e105a93319db6bc3b8f94bd470c90e9c9c0852c6]
+- The Neo4j schema stores Repository, File, Class, Method, Function, and Attribute nodes linked by CONTAINS, DEFINES, HAS_METHOD, and HAS_ATTRIBUTE relationships. [@claim:clm_56435385a3328741d5cb78d3a970a2256bfee758f29b81e7e601bf1aa2922043]
+- Hybrid search runs keyword and vector search in parallel and merges results, prioritizing documents appearing in both result sets. [@claim:clm_6c311136013efb4f1bc13c3b833d58cb06f7d1027698a6a3a1521ce29fb768fe]
+- The knowledge_graphs/ folder includes modules for parsing repos into Neo4j, AST-based script analysis, hallucination validation, report generation with confidence scores, and an interactive CLI query tool. [@claim:clm_98219527e05031f69a1fe35d081a663d3687ef9d6c7b24a75813f22cba4ad013]
+- Agentic RAG extracts code blocks of at least 300 characters with surrounding context, generates summaries, and stores them in a separate vector table for code search. [@claim:clm_e32e2bf364798352d41caaa90267df84088e86b367c6c178b931344e7971a439]
+- The server exposes MCP tools crawl_single_page, smart_crawl_url, get_available_sources, and perform_rag_query, with search_code_examples available when USE_AGENTIC_RAG is true. [@claim:clm_e9fd23d7e65b57558def707ef87116e686495ba19334e2e66474f44800abe93f]
+- Runtime dependencies include Supabase for the vector database, an OpenAI API key for embeddings, and optionally Neo4j for knowledge-graph features; Docker or Python 3.12+ with uv for hosting. [@claim:clm_ea51a4f5a7fcc5dc79bd5292fc855316878705c0aaeb5dfe42ed88ff67dd76d3]
+<!-- rcw:end owner=source:src_379ccbde33ee57538cf4076accf5326d block=evidence -->
+
+## Researcher notes
+

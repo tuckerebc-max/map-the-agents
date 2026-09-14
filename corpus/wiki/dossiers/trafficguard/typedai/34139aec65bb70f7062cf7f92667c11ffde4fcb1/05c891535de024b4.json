@@ -1,0 +1,849 @@
+{
+  "applied_operation_id": "op_cfce705b28cb4c7a9f4f7294a9c0fe69",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c29bf7be5151f0a56bb06cec4a346be8af8ee37c52493505bab0f8d228727d1e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 83,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L67-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ba3e758546e1cb4930c99e56e3ccbb7990149db2bbf46d88ee36e0de7ad6d03f"
+      ],
+      "text": "The platform ships software-developer agents including a Code Editing Agent with a compile/lint/test/fix loop, a ticket-to-PR Software Engineer Agent, and a Code Review agent that posts comments on GitLab merge requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_766a90d31c7c12b46c3081a71ad7831352cb5f6c10049cf9e9da8ee46705e65d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "docs/docs/agent-concepts.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md#L15-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f4a664b2279a2e8b4c168345082e67e43a0cb500c3245b44282d88174dba956b"
+      ],
+      "text": "TypedAI includes two autonomous agent types, XML and CodeGen, which apply reasoning to break a user request into a plan executed via available function calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7af6d6a0c7b90cf27841ff612ab7cd533dbcf9333b9ff0eb2aae92d9437168dc",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+          "line_end": 25,
+          "line_start": 24,
+          "path": "docs/docs/agent-concepts.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md#L24-L25"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "docs/docs/agent-concepts.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f160de4be9e314b5de90e8583ff72acd69ec34015f3ba1f46fd9eb88d2afa16",
+        "slc_ae3c0faa871d88e0d0b577d797549babb800c582ad888f6a1b3dc127868895ce"
+      ],
+      "text": "The project distinguishes workflow agents, whose control flow is defined in code with LLM results driving conditionals, from autonomous agents where the LLM directs its own process and tool usage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a9ac38de623b2c358f4a047beb48bcc4adf64ca173efa0729db226f8ad7e950",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L50-L50"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 37,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L25-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43e632650123daa5425705703f74bba29e48f187d13cffbb54bc6241dbafc83a",
+        "slc_968cdd036c2d3a812bde32280aa6cf582deca8f438184a61f65d7f7e1edb6861"
+      ],
+      "text": "TypedAI offers both CLI and Web UI interfaces, and the `ai` wrapper script runs locally while `aid` runs in Docker for isolation; both expose CLI agents including a codeAgent for autonomous code editing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b00a9ed204502c57d080f8da548ec66dbef7a9ea20e7597077d9b2eb1bc80248",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L45-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc50fa1ff2307f59c5a22226d4df4bf09ce1455094df83a26570973fdd701ebe"
+      ],
+      "text": "The CLI supports commands such as `ai query`, `ai code`, and `ai research` for automation and development workflows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0491418b123b418f81c8ce4393fe799a31e29bc83a275a6a0e65c38a0ecb4749",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 216,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L215-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2dd23a188c3059dcc8f655471f980135acfbb8a9e303c8634cc0c815349e9e22"
+      ],
+      "text": "LLM function-calling schemas are auto-generated from a `@func` decorator on class methods, avoiding duplicate schema definitions via zod or JSON."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3eb6d4ca2a8badd2957a211516b4279498f93740e4854e1d062cd6c256a282c6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+          "line_end": 30,
+          "line_start": 29,
+          "path": "docs/docs/agent-concepts.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md#L29-L30"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "docs/docs/agent-concepts.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md#L32-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20d4e703148beaccd2cee5813e0be3266628c34e0936b7a06257ed1147f7b539",
+        "slc_b06f6deeb6c8d75d174e9db74685d3c281df754abff5d7bf1caa58f6b57d1274"
+      ],
+      "text": "Agent state, current user, tool configuration, and default LLMs are looked up through Node's AsyncLocalStorage, requiring agent code to run within an AsyncLocalStorage context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05c519830705cc1537f1c7ef1328998a617ceca753bdafdff6ee153c1d73e80c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "docs/docs/agent-concepts.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md#L67-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61bf8073d8a62c4ca5bce9a5fbfa1a75c71008a6d91c8aa8fbd1d5915eccb19c"
+      ],
+      "text": "Each agent is configured with three LLMs for easy, medium, and hard tasks, making it simple to swap in different models at a given capability level."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_762b2dc5bb00d8cb6235e4464529486c76f8f8eb703b56ce2fe3d147ece003e7",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+          "line_end": 65,
+          "line_start": 36,
+          "path": "docs/docs/agent-concepts.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md#L36-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a0c832ebe2022b0bf9e00d20088d91647ba2e7291bc411f213a7c19a3cc9a31"
+      ],
+      "text": "Workflows run with a persisted agent context whose state is saved as 'completed' or 'error', so agent actions can be reviewed and resumed in the UI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29b18f76093eeee0104cbc9dab8aefc4a3382ec4e2ea4ceb8c7a5b29b7c5844a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 37,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L25-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_968cdd036c2d3a812bde32280aa6cf582deca8f438184a61f65d7f7e1edb6861"
+      ],
+      "text": "The platform supports many LLM services including OpenAI, Anthropic (native and Vertex), Gemini, Groq, Fireworks, Together.ai, DeepSeek, Ollama, Cerebras, SambaNova, OpenRouter, and X.ai."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed7ad4b921c877b74bfb7d6687d3fcb1f73067161cbb60c17d25b6dff93eb37d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L143-L143"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L141-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_276f2ab2864f9a8b9507d493e08760098706ebd92aac45f74add2311ff41d6e4",
+        "slc_d6961d7d702ae291b33c1067f2d3967654f620ecb9df3c146bef874a74a908c6"
+      ],
+      "text": "The project does not use LangChain, and its README claims the platform's scope covers functionality found in LangChain and LangSmith."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bed482c862198f71bab09e481d08ba1b207503be2c338c0037c32ae864023b76",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 37,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L25-L37"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 61,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L56-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_968cdd036c2d3a812bde32280aa6cf582deca8f438184a61f65d7f7e1edb6861",
+        "slc_c374122949fbb60c0d5a04b62e73e5cd76ecee07faa8cb222b2424f2bb323a09"
+      ],
+      "text": "Agents use callable tool integrations such as Filesystem, Jira, Slack, Perplexity, Google Cloud, GitLab, and GitHub, with configurable human-in-the-loop settings for budget control and agent-initiated questions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6da9f1e360428a77c4a1d5387cd55ac2a07caafb91a9ddcb0be5d510e852a138",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "5f684aeddec82ce681e519bb8c5acb59a653bd9c",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/README.md#L5-L5"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "5f684aeddec82ce681e519bb8c5acb59a653bd9c",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce3317274362405498ea0a524435994199bb312f8bba0a43b055a0051856894c",
+        "slc_dfd22b13574bff238e7e4c40154929b0b070296fcf7c26828d9fcfcc8a8f49b2"
+      ],
+      "text": "Repository development practice: contributors set up the project with `./bin/setup` and run it locally with `./bin/serve`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72b574060ff1a72f14216f97d0ee5272b79fb795f5150991d32d8891a227163a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "7a544a1fb06b81b2d6b52fa28768bf9203a870d9",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/AUTO_START_POSTGRES.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/AUTO_START_POSTGRES.md#L9-L9"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "7a544a1fb06b81b2d6b52fa28768bf9203a870d9",
+          "line_end": 23,
+          "line_start": 13,
+          "path": "docs/AUTO_START_POSTGRES.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/AUTO_START_POSTGRES.md#L13-L23"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "7a544a1fb06b81b2d6b52fa28768bf9203a870d9",
+          "line_end": 75,
+          "line_start": 68,
+          "path": "docs/AUTO_START_POSTGRES.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/AUTO_START_POSTGRES.md#L68-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_375b3e8157ee54d41e2414ded1d4e906b7a2a2c3f30afc15080661a98bbc4b65",
+        "slc_a3ba27848893c9707899c60389c10f4c5b55eec17f4e8c50165931289c9ce04a",
+        "slc_e20578e79dc9fad53b37f3cb7e63db68e668d5a8c8491d2ed386ac137c15210c"
+      ],
+      "text": "Repository development practice: with `DATABASE_TYPE=postgres` set, a Postgres Docker container auto-starts during app-context initialization, skipping when the host is remote, inside Docker, or in CI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11b1fa1c83c321dd2e4487cd378a1267c521d992e516cb86e1dd706742a83516",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "65622ff913972f5eccd06fe714920917f7d44594",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "docs/CODE_REVIEW.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/CODE_REVIEW.md#L10-L10"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "65622ff913972f5eccd06fe714920917f7d44594",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "docs/CODE_REVIEW.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/CODE_REVIEW.md#L12-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fe83f3da10c0eccf19bad41d93739c0f6cb1679d0ff61d68b6b848db27fb0b5",
+        "slc_cccc82e5420258e8b703870a0e236436138c8ddb8cebe921a2788e8c1c9aab68"
+      ],
+      "text": "Code review guidelines are defined as XML files in `resources/codeReview` against a schema there, and reviews can be filtered by file extension or required diff text to reduce LLM cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18a3e13280227d4af4f160adbdae8cd9460e49d6142f997d710ba609328b8127",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "65622ff913972f5eccd06fe714920917f7d44594",
+          "line_end": 75,
+          "line_start": 74,
+          "path": "docs/CODE_REVIEW.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/CODE_REVIEW.md#L74-L75"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "65622ff913972f5eccd06fe714920917f7d44594",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "docs/CODE_REVIEW.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/CODE_REVIEW.md#L72-L72"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "65622ff913972f5eccd06fe714920917f7d44594",
+          "line_end": 78,
+          "line_start": 77,
+          "path": "docs/CODE_REVIEW.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/CODE_REVIEW.md#L77-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e566c61693f162b920c1a5290e0ac5c53780bf6f2c520b04e99d47195532bb1",
+        "slc_4fd412b36f5e9b88da9c4ca379c7e8f1ea3d750e0b3733c1a3e90942b10ae657",
+        "slc_feab0e56b532e200fdadd6f5418273f4b2f41709b470f71308c99513122bed67"
+      ],
+      "text": "Enabling the GitLab code-review feature requires configuring webhooks at project or group level pointing to `<your-typedai-domain>/gitlab/v1/webhook`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77fdf0304facd5cef4595e2462448118cb2795583bfd538c3d46b35276f440f9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "6be21e621ff56835ef5419cf64c0853b55380cb2",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "docs/POSTGRES_SETUP.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/POSTGRES_SETUP.md#L117-L117"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "6be21e621ff56835ef5419cf64c0853b55380cb2",
+          "line_end": 133,
+          "line_start": 121,
+          "path": "docs/POSTGRES_SETUP.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/POSTGRES_SETUP.md#L121-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bf0ce746a423e0d8a7ede32b5cfaf468e05241d7c62415b9c8869a1940c7cf7c",
+        "slc_dadc1f364a92d7e88a35a11986406f1bf3d5f748db091b1af84d486c91374dab"
+      ],
+      "text": "The Postgres schema auto-created at startup includes tables for users, chats, agent contexts and iterations, LLM call logs, prompt revisions, function cache, and code review configs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bb70e06102c29ffb76581ec165402521c06b1e784abb115fdddbc899900cf85",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L19-L19"
+        },
+        {
+          "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+          "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+          "line_end": 8,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "trafficguard/typedai",
+          "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md#L1-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_183d9d1f983be13ae8352158d0217af477807294e70e2ea75764fe74954df03f",
+        "slc_56aaf8f00eb3ae0ccf0a57d514323ea8d5ec68af3c746ff88376b0b7ee6a41fb"
+      ],
+      "text": "TypedAI is a full-featured platform for developing and running agents, LLM-based workflows, and chatbots, described as the TypeScript-first AI platform for developers."
+    }
+  ],
+  "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 239,
+        "path": "README.md",
+        "size": 9498
+      },
+      {
+        "lines": 184,
+        "path": "docs/AUTO_START_POSTGRES.md",
+        "size": 4999
+      },
+      {
+        "lines": 79,
+        "path": "docs/CODE_REVIEW.md",
+        "size": 3545
+      },
+      {
+        "lines": 568,
+        "path": "docs/POSTGRES_SETUP.md",
+        "size": 14463
+      },
+      {
+        "lines": 9,
+        "path": "docs/README.md",
+        "size": 79
+      },
+      {
+        "lines": 69,
+        "path": "docs/docs/agent-concepts.md",
+        "size": 3325
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/docs/autonomous-agents.md",
+        "reason": "file-budget",
+        "size": 8504
+      },
+      {
+        "path": "docs/docs/chat.md",
+        "reason": "file-budget",
+        "size": 2100
+      },
+      {
+        "path": "docs/docs/chatbot.md",
+        "reason": "file-budget",
+        "size": 169
+      },
+      {
+        "path": "docs/docs/cli-commands.md",
+        "reason": "file-budget",
+        "size": 19633
+      },
+      {
+        "path": "docs/docs/cli.md",
+        "reason": "file-budget",
+        "size": 5828
+      },
+      {
+        "path": "docs/docs/code-review.md",
+        "reason": "file-budget",
+        "size": 5300
+      },
+      {
+        "path": "docs/docs/code.md",
+        "reason": "file-budget",
+        "size": 3371
+      },
+      {
+        "path": "docs/docs/codebase-awareness.md",
+        "reason": "file-budget",
+        "size": 3518
+      },
+      {
+        "path": "docs/docs/environment-variables.md",
+        "reason": "file-budget",
+        "size": 4208
+      },
+      {
+        "path": "docs/docs/examples.md",
+        "reason": "file-budget",
+        "size": 2501
+      },
+      {
+        "path": "docs/docs/functions.md",
+        "reason": "file-budget",
+        "size": 3305
+      },
+      {
+        "path": "docs/docs/getting-started-ui.md",
+        "reason": "file-budget",
+        "size": 218
+      },
+      {
+        "path": "docs/docs/google-cloud.md",
+        "reason": "file-budget",
+        "size": 75
+      },
+      {
+        "path": "docs/docs/index.md",
+        "reason": "file-budget",
+        "size": 7249
+      },
+      {
+        "path": "docs/docs/integrations.md",
+        "reason": "file-budget",
+        "size": 146
+      },
+      {
+        "path": "docs/docs/llms.md",
+        "reason": "file-budget",
+        "size": 2976
+      },
+      {
+        "path": "docs/docs/observability.md",
+        "reason": "file-budget",
+        "size": 2088
+      },
+      {
+        "path": "docs/docs/overview.md",
+        "reason": "file-budget",
+        "size": 0
+      },
+      {
+        "path": "docs/docs/prompt-engineering.md",
+        "reason": "file-budget",
+        "size": 2091
+      },
+      {
+        "path": "docs/docs/roadmap.md",
+        "reason": "file-budget",
+        "size": 1009
+      },
+      {
+        "path": "docs/docs/setup.md",
+        "reason": "file-budget",
+        "size": 5558
+      },
+      {
+        "path": "docs/docs/software-engineer.md",
+        "reason": "file-budget",
+        "size": 6256
+      },
+      {
+        "path": "docs/docs/blog/index.md",
+        "reason": "file-budget",
+        "size": 8
+      },
+      {
+        "path": "docs/docs/blog/posts/intro.md",
+        "reason": "file-budget",
+        "size": 69
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 20082
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 1092
+      },
+      {
+        "path": "docs/docs/agents.md",
+        "reason": "file-budget",
+        "size": 51
+      }
+    ],
+    "omitted_count": 27,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1591,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 33,
+      "complete": false,
+      "omitted": 27,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2cbb76174763594a9cf9ac664cfc8d59",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/trafficguard/typedai/34139aec65bb70f7062cf7f92667c11ffde4fcb1/05c891535de024b4/manifest.json",
+  "package_id": "pkg_9ec4c4a606df9755c376cb4a2de160a85a66f15e22601194aa79614e7e65e0e4",
+  "repo": "trafficguard/typedai",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a6c95ddeac3face7770ea56d6ff88f4b0dbaa0671f5cae67037fd0b61590e350",
+  "snapshot_id": "05c891535de024b4",
+  "sources": [
+    {
+      "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+      "git_sha": "873d8275c0137dae3b82225a65aa04e713bdf9a2",
+      "lines": 239,
+      "path": "README.md",
+      "repository": "trafficguard/typedai",
+      "sha256": "8149218343c067144bfed391048fba539dc34cb04a089bcae0fe83f078c61435",
+      "source_id": "src_e50d67832afd56acba86ec42552f9142",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/README.md"
+    },
+    {
+      "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+      "git_sha": "7a544a1fb06b81b2d6b52fa28768bf9203a870d9",
+      "lines": 184,
+      "path": "docs/AUTO_START_POSTGRES.md",
+      "repository": "trafficguard/typedai",
+      "sha256": "945a4a71cd9b62e8546779d2297f6b6e38555b8fd473154c37d4f54202b85d02",
+      "source_id": "src_15a18810039757b2b445f52f5dcffbd0",
+      "stored": "auto_start_postgres.md-a6db995a59c3.md",
+      "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/AUTO_START_POSTGRES.md"
+    },
+    {
+      "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+      "git_sha": "65622ff913972f5eccd06fe714920917f7d44594",
+      "lines": 79,
+      "path": "docs/CODE_REVIEW.md",
+      "repository": "trafficguard/typedai",
+      "sha256": "646c0a293f452bc5c60731f0f04f1ce8e18ddf0cdec8079def8c81ca1db85169",
+      "source_id": "src_a3c288f08b9b588db7dd18d9c10a5b54",
+      "stored": "code_review.md-94b64ee5b5a1.md",
+      "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/CODE_REVIEW.md"
+    },
+    {
+      "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+      "git_sha": "6be21e621ff56835ef5419cf64c0853b55380cb2",
+      "lines": 568,
+      "path": "docs/POSTGRES_SETUP.md",
+      "repository": "trafficguard/typedai",
+      "sha256": "7c1b93c69b79ea64b058d99433f55a28203d6c9f321dda0e1e0be8beee785362",
+      "source_id": "src_ae5caeac3134580eb622eebef80be898",
+      "stored": "postgres_setup.md-b375edbb2a59.md",
+      "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/POSTGRES_SETUP.md"
+    },
+    {
+      "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+      "git_sha": "5f684aeddec82ce681e519bb8c5acb59a653bd9c",
+      "lines": 9,
+      "path": "docs/README.md",
+      "repository": "trafficguard/typedai",
+      "sha256": "8018ada9cc0e7c11f88174a0d4f7c2cb8b32dba89f95ee5182e1d8d72acc3c3c",
+      "source_id": "src_41a1709330b3550db1a2e93f27bb10f9",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/README.md"
+    },
+    {
+      "commit": "34139aec65bb70f7062cf7f92667c11ffde4fcb1",
+      "git_sha": "0768cd3ea4c4ddabaf4db24c3f9300da7f0f63bd",
+      "lines": 69,
+      "path": "docs/docs/agent-concepts.md",
+      "repository": "trafficguard/typedai",
+      "sha256": "3c4de12d20915a7b49f73c02224d366dea0dc0ef73faff7a9970dc81a89dcb98",
+      "source_id": "src_b442bd2e961b5a77aec5fdde1cc7cf3f",
+      "stored": "agent-concepts.md-e1df6c8c0f27.md",
+      "url": "https://github.com/TrafficGuard/typedai/blob/34139aec65bb70f7062cf7f92667c11ffde4fcb1/docs/docs/agent-concepts.md"
+    }
+  ],
+  "summary": "TypedAI is a TypeScript-first platform for agents, LLM workflows and chatbots, with autonomous and workflow agents, CLI/Web UIs, GitLab code review, and Postgres/Firestore persistence; the prior extraction's claims were all supported and are retained with integer slice citations. Evidence coverage: 167 of 227 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

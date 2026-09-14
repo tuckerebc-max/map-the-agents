@@ -1,0 +1,769 @@
+{
+  "applied_operation_id": "op_e54358f79f1848a7a3f5bcc95eab5dd7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_68b0c3e344fb183685739c8b58069a1b5973ce0fa73c6093178fe77ab591ccad",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L5-L5"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20c6a29eab1b62fda786d285ec3b7a95c8ad9c84d628972ce6e86ef791891bd3",
+        "slc_630806bd2d2d9be2de3c5a251cd28dec5915f9a50771e39498a434f2d8308316"
+      ],
+      "text": "TokenTelemetry is a free, open-source, 100% local observability dashboard tracking token usage, LLM costs, tool calls, session traces, and reasoning steps across AI coding agents, with no signup or cloud."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dcc2a07f58084c5a5c433d81272c1e7f82aeb1eb378c76093cf4fcad683a8d10",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 342,
+          "line_start": 335,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L335-L342"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5f34b77b00c42d55f7aea698f385e49b9453f786b861932011e7092a3e587ad"
+      ],
+      "text": "The project structure includes a Python FastAPI backend that reads agent logs and serves a REST API, a Next.js 16 React frontend dashboard, a cross-platform bin/cli.js launcher, and install.sh/install.ps1 installers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_706ef55e52cf12d2ef5cd096912a5e44098a56dc70a633f84ca5b821ec6acb6d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 301,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L297-L301"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 285,
+          "line_start": 285,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L285-L285"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d14228b11e9c665bd2138ab242bb517195aaa84a2abaee20f16bc89f9207a1b",
+        "slc_f0d66a26035362ff016692dde164b391968e61889d3839971bb59a036728f1f7"
+      ],
+      "text": "Remote access is opt-in: --host 0.0.0.0 exposes the backend, a random auth token is auto-generated and printed once unless --auth-token or --insecure-no-auth is passed, and loopback clients never need the token."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_218e15edcc6f415087bcabd838011b9a0955da30cd668baed3cf0d9a3d2c1314",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 226,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L218-L226"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 245,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L243-L245"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 239,
+          "line_start": 235,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L235-L239"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 216,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L216-L216"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 228,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L228-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c049d7b40462de97526064fede944da108e388f77ad6b330a20062e24eac677",
+        "slc_6ce558b60b23138a1c7e78e81d08b3d6fafe028bfd47b6179462eec0a919149f",
+        "slc_b0e74a08a9d09bef0a0934970a5fd5a86f1af11c4a160fd14dd8441ac0e70fbb",
+        "slc_b1c30b2a59e59d9a2cdcd788618390d9b31e5ed419e36d51814dc4f7165ef7e9",
+        "slc_c9fc89c35f7ec7da0ad4d5212959b2bd83ae419fd2e47d3f5b10f504a763d215"
+      ],
+      "text": "State lives in ~/.tokentelemetry/ as hand-editable JSON files (aliases, hidden projects, preferences, billing, power, VERSION), with no database; a data directory can be relocated via --data-dir or TOKENTELEMETRY_DATA_DIR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b105f84ba2154e987ae0ed3ec93550f58bb04873265bde7e0d18ddc587a405a",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "c0b3e7e1795615750e0267e1793390f1ffb0f408",
+          "line_end": 31,
+          "line_start": 25,
+          "path": "docs/adr/0002-durable-history-rollup.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0002-durable-history-rollup.md#L25-L31"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "c0b3e7e1795615750e0267e1793390f1ffb0f408",
+          "line_end": 64,
+          "line_start": 51,
+          "path": "docs/adr/0002-durable-history-rollup.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0002-durable-history-rollup.md#L51-L64"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "c0b3e7e1795615750e0267e1793390f1ffb0f408",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "docs/adr/0002-durable-history-rollup.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0002-durable-history-rollup.md#L33-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26d4c3e963620ffbfe0b669c047689d8ca78b2886dc9e5dd2126decf804b7712",
+        "slc_e06a3779864c25a479ea374802f426b385f86694effe7a5af9cb62527b4932a6",
+        "slc_ff7eb10e75b339bd8a128e085ede1c5f593a47cc11e7351d06c7474214b2c1b8"
+      ],
+      "text": "Per ADR-0002, a durable local SQLite store at ~/.tokentelemetry/history.db is upserted on every background scan, storing raw facts so analytics history survives agents pruning their transcripts; derived insights are recomputed at read time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8151abc510ddd17b79baa7ea2860d8d31873c749d4b43250849136ef534d861",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 173,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L173-L173"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 123,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L111-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cc7de5ba34935080af1148c845d5b2602c874ccb7514667b1bda80366d8d9b02",
+        "slc_ce15f6b2b1d83c4ab78ec7b3ecfce513f3a6c4d55f7db62f8ed4113e6469f94f"
+      ],
+      "text": "Budgets are observational by design: TokenTelemetry tracks spend against user-set limits and alerts at 80% and 100% thresholds but never blocks an agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b15ac39f424c74f9b3055310193167d06eca8b31ec65ff4491727c394c505e3f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 181,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L181-L181"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L179-L179"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 183,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L183-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22a923ed9fc2a7824df57842da5ce61438867691cb357b58ab668da0f57752bf",
+        "slc_33707872142d81793de76475e40f65fd2d0553e65a92fb771d87e9a5c340b1eb",
+        "slc_d917ed27efdddd34d08bfd5acb49cc10612b57e6efe974136e82a1166b71dfbc"
+      ],
+      "text": "Plan-limit readings come from the provider's own login data on the machine rather than being estimated from history, and the UI distinguishes provider plan ceilings from user-defined project budgets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c84438fa8653291dd4085852d5af5781d91abd671ab05ea36bf1d7d75e9fd45",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L9-L13"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 210,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L207-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42c85fe82749fbed70978856290bb0f527ec046bff37130094cb0b1363fd56d0",
+        "slc_9f02c263353b97605dfc297580a2465b92b0fa91f11bffd3d08b69c821c9bcc2"
+      ],
+      "text": "Requirements are Node.js 20.9+, Python 3.9+, git, and at least one supported AI coding agent already installed; a badge also mentions Node 18+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e21e58a6811eb912023a3110359ae1675479d67c3a55ac9a7443bc11a165363a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "c0b3e7e1795615750e0267e1793390f1ffb0f408",
+          "line_end": 64,
+          "line_start": 51,
+          "path": "docs/adr/0002-durable-history-rollup.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0002-durable-history-rollup.md#L51-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e06a3779864c25a479ea374802f426b385f86694effe7a5af9cb62527b4932a6"
+      ],
+      "text": "Per ADR-0002, history capture starts from the first run (already-pruned transcripts are unrecoverable), pruned sessions without archival show only in aggregates, and transcript archival currently resolves single-file transcripts only for claude/codex."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cacefcb6fb54ab215d891f43c7fe0c78c075932c9f93bde9483b81405aa9feab",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 63,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L46-L63"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L85-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_561d4e0709313a7134c5b2e26cc545366cd56b2dd22d0c96757c5859ffa004db",
+        "slc_ad185116aa513c394732f6891fcfed65662bfc0c0c1c545dfdc2fd605bd98005"
+      ],
+      "text": "Hermes support reads $HERMES_HOME (or ~/.hermes/) locally on the same host, with no remote-DB mode yet; Qoder support tracks credits rather than tokens because Qoder records none."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79be6ddfaadeee675fdc7effff93b4c9724d3f6ff99ae5110747602707c579b6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 436,
+          "line_start": 436,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L436-L436"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 444,
+          "line_start": 442,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L442-L444"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "9aa0c55c13dd602b516f39b4a5494d1ad891dce2",
+          "line_end": 44,
+          "line_start": 38,
+          "path": "docs/adr/0001-record-architecture-decisions.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0001-record-architecture-decisions.md#L38-L44"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "9aa0c55c13dd602b516f39b4a5494d1ad891dce2",
+          "line_end": 23,
+          "line_start": 19,
+          "path": "docs/adr/0001-record-architecture-decisions.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0001-record-architecture-decisions.md#L19-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_198e09d677fce0c267642b9ce070ce5622c903cedd7e5206d74d5aec693ef1ec",
+        "slc_463d23c05513816de698fcb4a48815ce36df19271cafafd424b4505df3f8f25f",
+        "slc_7f99008875879268a6c9874c047ff91d4ea40aff19305170245c92aa6949ed76",
+        "slc_f5bac617d9514a487993b7798bf288cf4335dea6cfb26d5fd42bba18462e9f21"
+      ],
+      "text": "Repository development practice: contributions follow a branch-and-PR flow (feat/ branches, conventional commit messages), and ADR-0001 requires an architecture decision record in docs/adr/ committed in the same PR as the code it describes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e3c30333f6ca868772cfa0db363aaac78e0d381ec03ab945876b97ff9e878de2",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 396,
+          "line_start": 387,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L387-L396"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 361,
+          "line_start": 360,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L360-L361"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_978c246155a884dcf5cdf5ec660a96d456b4b3345ae7f93e8eb59f0ba82a770e",
+        "slc_d1d5bfb5c72ac17d323e6d5b6aa4b0b0b58073729d5b7b2fac9fee768a2f805e"
+      ],
+      "text": "Unlike Langfuse, LangSmith, or Helicone, TokenTelemetry requires no code instrumentation, account, SDK, or API key — it works by reading the log files agents already write, fully locally."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7be3102974ebd2a6598b9688012b82c1920d734b3286e4faa6b6716455833b9c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L89-L89"
+        },
+        {
+          "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+          "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+          "line_end": 105,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "vasihemanth/tokentelemetry",
+          "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md#L105-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ccc0a2e33ea82851c8838a7d0a02073d3448f7e5e7faa5249e7250b85245f914",
+        "slc_d98e7beb9ca25fbd22b98292fda58d8373ecc89c52794c53d523e24ea2507dea"
+      ],
+      "text": "The Hermes dashboard plugin embeds TokenTelemetry as a tab inside Hermes's own web dashboard (port 9119 to 3000), is pure-frontend with no extra backend, and deep-links to Analytics, Projects, and All Agents pages."
+    }
+  ],
+  "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 483,
+        "path": "README.md",
+        "size": 25062
+      },
+      {
+        "lines": 193,
+        "path": "DESIGN.md",
+        "size": 10482
+      },
+      {
+        "lines": 199,
+        "path": "llms.txt",
+        "size": 14682
+      },
+      {
+        "lines": 31,
+        "path": "docs/adr/0000-template.md",
+        "size": 953
+      },
+      {
+        "lines": 44,
+        "path": "docs/adr/0001-record-architecture-decisions.md",
+        "size": 2179
+      },
+      {
+        "lines": 64,
+        "path": "docs/adr/0002-durable-history-rollup.md",
+        "size": 3656
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/adr/0003-docs-site-fumadocs.md",
+        "reason": "file-budget",
+        "size": 3834
+      },
+      {
+        "path": "docs/adr/0004-qoder-credits-as-native-unit.md",
+        "reason": "file-budget",
+        "size": 4332
+      },
+      {
+        "path": "docs/adr/README.md",
+        "reason": "file-budget",
+        "size": 1969
+      },
+      {
+        "path": "docs/design/desktop-and-menubar.md",
+        "reason": "file-budget",
+        "size": 16878
+      },
+      {
+        "path": "docs/design/documentation-site.md",
+        "reason": "file-budget",
+        "size": 12258
+      },
+      {
+        "path": "docs/design/durable-history.md",
+        "reason": "file-budget",
+        "size": 4042
+      },
+      {
+        "path": "docs/design/goal-telemetry.md",
+        "reason": "file-budget",
+        "size": 18412
+      },
+      {
+        "path": "docs/design/native-quota-limits.md",
+        "reason": "file-budget",
+        "size": 7757
+      },
+      {
+        "path": "docs/design/product-telemetry.md",
+        "reason": "file-budget",
+        "size": 19336
+      },
+      {
+        "path": "docs/design/README.md",
+        "reason": "file-budget",
+        "size": 783
+      },
+      {
+        "path": "docs/research/harness-survey/00-coverage-brief.md",
+        "reason": "file-budget",
+        "size": 3407
+      },
+      {
+        "path": "docs/research/harness-survey/harness-claude.md",
+        "reason": "file-budget",
+        "size": 26958
+      },
+      {
+        "path": "docs/research/harness-survey/harness-codex-copilot-cline.md",
+        "reason": "file-budget",
+        "size": 15851
+      },
+      {
+        "path": "docs/research/harness-survey/harness-cursor-vscode.md",
+        "reason": "file-budget",
+        "size": 37999
+      },
+      {
+        "path": "docs/research/harness-survey/harness-gemini-antigravity.md",
+        "reason": "file-budget",
+        "size": 16862
+      },
+      {
+        "path": "docs/research/harness-survey/harness-grok-qwen-vibe-openclaw.md",
+        "reason": "file-budget",
+        "size": 41540
+      },
+      {
+        "path": "docs/research/harness-survey/harness-longtail.md",
+        "reason": "file-budget",
+        "size": 45745
+      },
+      {
+        "path": "docs/research/harness-survey/harness-qoder.md",
+        "reason": "file-budget",
+        "size": 9890
+      },
+      {
+        "path": "docs/research/harness-survey/harness-runtimes.md",
+        "reason": "file-budget",
+        "size": 44393
+      },
+      {
+        "path": "docs/research/harness-survey/README.md",
+        "reason": "file-budget",
+        "size": 5018
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 361
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 1032
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1617
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4116
+      }
+    ],
+    "omitted_count": 24,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 493,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 30,
+      "complete": false,
+      "omitted": 24,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_a40184dc633b50d79253bc3a6b64f240",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/vasihemanth/tokentelemetry/0d691ae343ed31991e504a738bb1b288eea3b2ee/584cdc952070dd60/manifest.json",
+  "package_id": "pkg_7a1287505fc494377c0001406dcaf02c1f5dfa0808f356fec56c9ee7076a1813",
+  "repo": "vasihemanth/tokentelemetry",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "25fbacc6f9e7ac98a767fc6660e14121fea9ee0d7bfdd6ad790c2c27772fa60e",
+  "snapshot_id": "584cdc952070dd60",
+  "sources": [
+    {
+      "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+      "git_sha": "6c8a5f4684271f28c5a40a7ca14bf8e5b7c58659",
+      "lines": 193,
+      "path": "DESIGN.md",
+      "repository": "vasihemanth/tokentelemetry",
+      "sha256": "a4d991aa3a82ab0fcc7f30f5517dab9bd31913aee6e347e7d77e24d87b1bda73",
+      "source_id": "src_456f44eced0a5afca43f1c08690796b3",
+      "stored": "design.md-3dc5dd454e08.md",
+      "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/DESIGN.md"
+    },
+    {
+      "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+      "git_sha": "0b92082f882175f4ae01b2235e2c0784dfd8cceb",
+      "lines": 483,
+      "path": "README.md",
+      "repository": "vasihemanth/tokentelemetry",
+      "sha256": "886db057c5c6c2774cca146c4057fe105ffd6edeb7c5ae97f98c7cf762225c28",
+      "source_id": "src_c248bbe947875788b7c371ab20358dfa",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/README.md"
+    },
+    {
+      "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+      "git_sha": "cd2564dbc742bc245eefb3c09a5b49116c31b976",
+      "lines": 31,
+      "path": "docs/adr/0000-template.md",
+      "repository": "vasihemanth/tokentelemetry",
+      "sha256": "9b9be070a9f4a798b0787e4fa4b1cbb4d456564d7671753e0d17acaf88d4db50",
+      "source_id": "src_9a4e94b935035217b85f39130af25f4a",
+      "stored": "0000-template.md-af9541dc8bd5.md",
+      "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0000-template.md"
+    },
+    {
+      "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+      "git_sha": "9aa0c55c13dd602b516f39b4a5494d1ad891dce2",
+      "lines": 44,
+      "path": "docs/adr/0001-record-architecture-decisions.md",
+      "repository": "vasihemanth/tokentelemetry",
+      "sha256": "9b3e2b3d891573d3e8789b1ca4ed6d29631f4d391322ff5065752cf110aaa53d",
+      "source_id": "src_246d59de8e7251638564cf2e9a372572",
+      "stored": "0001-record-architecture-decisions.md-e2c27172663e.md",
+      "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0001-record-architecture-decisions.md"
+    },
+    {
+      "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+      "git_sha": "c0b3e7e1795615750e0267e1793390f1ffb0f408",
+      "lines": 64,
+      "path": "docs/adr/0002-durable-history-rollup.md",
+      "repository": "vasihemanth/tokentelemetry",
+      "sha256": "91537b26951555655e8c23261bc54f5cfdcdaa8becb718462646215309a02b4c",
+      "source_id": "src_8b22c0c487725df3a006c5c586923d12",
+      "stored": "0002-durable-history-rollup.md-d2c91e206c9f.md",
+      "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/docs/adr/0002-durable-history-rollup.md"
+    },
+    {
+      "commit": "0d691ae343ed31991e504a738bb1b288eea3b2ee",
+      "git_sha": "1383cb5131011f27fc7d171967f73dee898faac1",
+      "lines": 199,
+      "path": "llms.txt",
+      "repository": "vasihemanth/tokentelemetry",
+      "sha256": "10b7ace5207561459f6e279369d38795fcb6e5bd73bcba14fe045794aa3a16ac",
+      "source_id": "src_31141aa077c55231bc5e87c175b87efd",
+      "stored": "llms.txt-f43a9e2f7da8.txt",
+      "url": "https://github.com/VasiHemanth/tokentelemetry/blob/0d691ae343ed31991e504a738bb1b288eea3b2ee/llms.txt"
+    }
+  ],
+  "summary": "TokenTelemetry is a free, open-source, 100% local observability dashboard tracking token usage, LLM costs, tool calls, session traces, and reasoning steps across AI coding agents, with no signup or cloud. The project structure includes a Python FastAPI backend that reads agent logs and serves a REST API, a Next.js 16 React frontend dashboard, a cross-platform bin/cli.js launcher, and install.sh/install.ps1 installers. Evidence coverage: 148 of 202 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

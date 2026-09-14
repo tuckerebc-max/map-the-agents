@@ -1,0 +1,325 @@
+{
+  "applied_operation_id": "op_72f4fda3b4704ee2a6d1800d1bae8ae0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_35e950f9afd7a3484141c7ca7b8374763d19c6bae7ed298129c94dadf14f6728",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L46-L48"
+        },
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0106455699d4c67ba27160d784a588e6236f80d62a2b7693625c47312cedbaeb",
+        "slc_afb5c306c4cb9047ef3bbbd787d6fae327dc8e0f3dfa1a452a7b39158e4304f3"
+      ],
+      "text": "The plugin exposes multiple ways to open items in Cursor: a command palette command ('Open in Cursor'), a right-click context menu on files or folders, and a sidebar Cursor icon for the current file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e83ccc62327c2be62f83d45e58e2f187a28fdc459971986fd9b28fd450ad44ec",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 56,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L54-L56"
+        },
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aadb28d637b32d04f218779f99a98f97b2b8fc24997c09f4d8109e04e1d4af52",
+        "slc_d79874a53a30a475f336ad2879519a8ca8fe5acae1df8622d1388ad1ce943979"
+      ],
+      "text": "Plugin settings reportedly include a custom Cursor executable path, a choice between opening new windows or reusing existing ones, and a default project folder."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e2f52a60c42b7480135821c94a015ee51f6fc46ae2b61c43d6e8999667f11bb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 40,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L37-L40"
+        },
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L33-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a6aff5d42222b2783fb74b6ff7b4668d2dfe8d75fb328ad2e4e6859e2496b35e",
+        "slc_b9ec182698886afd14004db719b18ad487a6226c0fa0236a5412ee949baab766"
+      ],
+      "text": "The plugin requires Cursor to be installed and the Cursor executable to be available on the system PATH, with instructions given for adding it and restarting the computer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_781ad13695b1199e9bafb5cab288ba71ef05a117a16c92c7aa09548d7178c93f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 18,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L13-L18"
+        },
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L26-L29"
+        },
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6889c3b77ff380695b79f6c9e3229deb42068eabd32b743d722a48f0193c6961",
+        "slc_aa834164087c7b0d219fee0523f9a842c2ca3417cab63adc6a027ceb2b3ef70a",
+        "slc_ce1eb15248cf5e4543313af06c3fc01ee2830510dc28b5d84f07b1b5616bfe86"
+      ],
+      "text": "The product is an Obsidian community plugin that bridges Obsidian and the Cursor AI code editor, letting users open notes and project folders directly in Cursor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bde56ffbb69d67dc13f27c2a3f9ac2a0601c418314d21c12ebfd524363522e61",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 18,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L13-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6889c3b77ff380695b79f6c9e3229deb42068eabd32b743d722a48f0193c6961"
+      ],
+      "text": "The README states support for Windows and Apple systems; other platforms are not mentioned as supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_119061ea0f4763c9cea4fa163be056e6a83588f3c301708c8ed2ee2b58cd79e0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 72,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L68-L72"
+        },
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L66-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_79c9032f4d5205bcf1cc2d8e9f9c777da9b40eca37e20dd98430410bbb193a74",
+        "slc_7f8b322a1126f042afd12068c9f265aa849f45a66be2dc39aaef34ce5aca7d12"
+      ],
+      "text": "Repository development practice: contributors are told to fork the repo, create a feature branch, commit, push, and open a pull request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a58ff9b937617931a6c5a462942f6eef3dcd89b4aedf7335ecd2ab20d6040e14",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+          "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "lengff123/cursor-bridge",
+          "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md#L26-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa834164087c7b0d219fee0523f9a842c2ca3417cab63adc6a027ceb2b3ef70a"
+      ],
+      "text": "Repository development practice: installation for end users is via Obsidian's Community Plugins browse-and-install flow after disabling Safe Mode."
+    }
+  ],
+  "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 101,
+        "path": "README.md",
+        "size": 4214
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 9,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_6930776da9a65abb8e959d439b316116",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/lengff123/cursor-bridge/e7358f0555cd06d93755c02fb39fff60a3959e58/47c9e2da06e2578e/manifest.json",
+  "package_id": "pkg_cad74dade4b00e80fa49a7f78483a213fdb7da190f507a5813ceeeeb173fd970",
+  "repo": "lengff123/cursor-bridge",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f36dafa782656d6441d1e488a3d97f84c2c4dd07f0afd5940593bfc1196333d9",
+  "snapshot_id": "47c9e2da06e2578e",
+  "sources": [
+    {
+      "commit": "e7358f0555cd06d93755c02fb39fff60a3959e58",
+      "git_sha": "4483bd359ea4930857186530054b95cfc8fb26cb",
+      "lines": 101,
+      "path": "README.md",
+      "repository": "lengff123/cursor-bridge",
+      "sha256": "d814ed4b051e5be47ca27bf72c492e6293e2e314f13568df9d7e5a1c071c5fd0",
+      "source_id": "src_66ab2b5e0a85525685138b453a3f7b81",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/lengff123/cursor-bridge/blob/e7358f0555cd06d93755c02fb39fff60a3959e58/README.md"
+    }
+  ],
+  "summary": "The evidence is a README for an Obsidian plugin, Cursor Bridge, that opens Obsidian notes and folders in the Cursor editor. It documents usage entry points, settings, prerequisites, and contribution steps; no source code is present in the snapshot.",
+  "superseded_claim_ids": []
+}

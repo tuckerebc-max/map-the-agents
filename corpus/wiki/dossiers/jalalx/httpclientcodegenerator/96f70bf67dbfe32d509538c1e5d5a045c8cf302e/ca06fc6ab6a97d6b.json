@@ -1,0 +1,530 @@
+{
+  "applied_operation_id": "op_4b1d152f73974960a48f7e9d1e0390b0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a4491cd845c62b1d2f98860ea5f7b28ae3eda59e758a161ee5c17258813e5ab",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L6-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc9923feb6f6e1176ba79a08bcdc6cdbcd1ee75ec27b874454be987dfc69f384"
+      ],
+      "text": "The tool uses the Roslyn C# source generator feature to write boilerplate HttpClient code on behalf of the developer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99c1f787e911def18f47be0cab3b3f742ace2fa8b6102071d58649eb559d2c0d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L9-L9"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_254335514002728f4e78dd9bb5c5a1674672e40b89c5d926dfe4be522ac55856",
+        "slc_fc9f0ae33a614b75147da695f5734f3c3f76bbd8a939400e80d1610ed3a65755"
+      ],
+      "text": "The design philosophy is that no boilerplate or auto-generated code should be written, tracked in the repository, or regenerated manually when HTTP contracts change."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57d947abd23d4c31c5edd3633f9650edf8dde944dc0c2045380a69990c3e3bda",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 128,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L127-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_858973a425e7ef9b33ef62bb162d1a6a7f6bc4155c754313c407535d99f2f6e1"
+      ],
+      "text": "Generated code is produced in-memory at build time and never written to disk, so it needs no source-control tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b1337f2071efa93a672eebdb588d140bab7f081f9e6148fc8d84e56da3ff0e8b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 66,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L51-L66"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 38,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L23-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_182bf5046d1bada047724b5b6986241c1bd8c3794c5905af6e0d20ffa8130a8e",
+        "slc_68dfaf5642743bf76d05acafe76002640170ea20d0051ded956e985e42cd3752"
+      ],
+      "text": "Users declare partial classes with partial methods decorated by attributes such as HttpGet containing route templates like \"todos/{id}\"; the generator implements those methods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2082704fcac7ad0b1684e0868dd3273b36da797da4d0880a7caded6e1ced4fe2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 69,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L68-L69"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 116,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L115-L116"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 119,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L118-L119"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 105,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L102-L105"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 122,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L121-L122"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L111-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c69b0ff195008283d83f548e6e198135ffdd82395ec8a364c30576fe87ca982",
+        "slc_2518cdba7b59d46abf3d3e95b08708c17aafa0af718ceacb64862524f626164b",
+        "slc_3b1fdec798cdc9a8ec37d6416c0e94c14a778be9ffdb5cce0c1d9d62c992c16e",
+        "slc_894aeaba0df95b41598dc3a8265d775cd782bb7e0d9e797846859886017372ab",
+        "slc_89783708a38afedf97673ac8363c73daea726db7c283d9ff6d6fef5def34d740",
+        "slc_cfa42cce071fbdbcdb21f508675ac7116b42c5fb0537e4e74744c14b3dfd95cc"
+      ],
+      "text": "The generator emits a constructor taking an HttpClient parameter, and the generated method builds route, query, and header dictionaries before delegating to HttpClientHelper.SendAsync."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_304fb050a1c5157ae6855b48ca14c512fb94e64a3a0222f1ab46cb05f33d901a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L149-L149"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L169-L169"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 145,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L144-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_394244cfa44a00e357347e12440ec36fd1b1560e36ec8a2fbc55a60317e7d9fb",
+        "slc_744c2502bf296564d728ebc1fb14a8806b77b0ad58d13760cd7cdd87bb87014b",
+        "slc_9662f96fddec328db05810cd2968941e6c44acd019fb66507bfc823aaa2ad4de"
+      ],
+      "text": "If the user defines their own HttpClient field/property or a parameterless method returning HttpClient, the generator will use that instead of injecting via constructor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47d345402434dc7e9afa6b4eeefbc05dc2b9af148658a56d189f1d3bfd7f60dc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L18-L20"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L40-L43"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 93,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L88-L93"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 38,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L23-L38"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 122,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L121-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e84aa362ec9a99fe130f839e81af6b67b588e682bd2de120a7cc0eeb973252e",
+        "slc_5006a545ab0e0f96304d7592a9c0973c15a479753f7ec7d1bc4f911f197a4e30",
+        "slc_555e2daa563607f3c282c697fac82232ea7daa7bd0ef1c10bdd6c4d979faf4f6",
+        "slc_68dfaf5642743bf76d05acafe76002640170ea20d0051ded956e985e42cd3752",
+        "slc_89783708a38afedf97673ac8363c73daea726db7c283d9ff6d6fef5def34d740"
+      ],
+      "text": "The package targets .NET 5 console apps and is installed via the HttpClientGenerator NuGet package; generated code relies on HttpClientGenerator.Shared helpers and System.Text.Json serialization attributes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f2462dd33c2d7b3568bf098048a28a547535e0edbf742c37435caba85605166",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 140,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L140-L140"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 122,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L121-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a83f8411b11aca1803d8afda3ba120b2583b401baa808d3ea727a5138444f8f",
+        "slc_89783708a38afedf97673ac8363c73daea726db7c283d9ff6d6fef5def34d740"
+      ],
+      "text": "A shared HttpClientHelper component performs the actual HTTP send, and its DefaultJsonSerializerOptions singleton can be changed; by default PropertyNameCaseInsensitive is true."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cbeeeb77440fe920478a2afb85a2f0b101b880a0f5a7cf81db577e1bd216e14a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc9f0ae33a614b75147da695f5734f3c3f76bbd8a939400e80d1610ed3a65755"
+      ],
+      "text": "The library claims no runtime dependency on third-party code, since generation happens at compile time within the consumer's project."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c5fbd0bc953a26b6aec7f2bd6e3ddcb7645257fe3bae051739cab4edfec1230",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 38,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L23-L38"
+        },
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L111-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68dfaf5642743bf76d05acafe76002640170ea20d0051ded956e985e42cd3752",
+        "slc_cfa42cce071fbdbcdb21f508675ac7116b42c5fb0537e4e74744c14b3dfd95cc"
+      ],
+      "text": "The tool appears to support route parameters by substituting method arguments into the attribute's path template, as shown by the id route and dictionary usage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6f2e9847f5bc33b0f313163c547309f7bacd19d38372841446349cfa64022be",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 192,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L189-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81194fd50d77a01cac8b081e9ebb234ee0639819f39b777b84a882c14f60e35f"
+      ],
+      "text": "Known issues include needing a Visual Studio 2019 restart for IntelliSense, a referenced Roslyn issue during development, and incomplete OmniSharp support in VS Code, though the dotnet SDK works."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80149ea18ecfd4bc42896614332984f8b60681b9ff13dc5f9c33ee67657b6d0e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+          "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+          "line_end": 186,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "jalalx/httpclientcodegenerator",
+          "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md#L186-L186"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9cc1db0d082b64d8270d74314ef258dc2a806344640d5ad203b3e867c7ceb5e4"
+      ],
+      "text": "The README strongly recommends using IHttpClientFactory to resolve HttpClient instances rather than manual instantiation."
+    }
+  ],
+  "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 194,
+        "path": "README.md",
+        "size": 7229
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 51,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_2bb7629f53f65fe0ad3f54a475bca560",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jalalx/httpclientcodegenerator/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/ca06fc6ab6a97d6b/manifest.json",
+  "package_id": "pkg_863b6bddcebe6b21d59b47f5ccef6bdf970267b7bc2aae0cfc328866f7709218",
+  "repo": "jalalx/httpclientcodegenerator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "00fdea64e53f31e3fc9c6589ed754dac8df81872900d0f4a196f0b0019e9cf04",
+  "snapshot_id": "ca06fc6ab6a97d6b",
+  "sources": [
+    {
+      "commit": "96f70bf67dbfe32d509538c1e5d5a045c8cf302e",
+      "git_sha": "06f0189bea131851286e401534b5ad46e9bd2afe",
+      "lines": 194,
+      "path": "README.md",
+      "repository": "jalalx/httpclientcodegenerator",
+      "sha256": "0ca7c3f2c80cb4b74d513b30eb050c2bc49e8f7f6dc30d2411169ee3517a526c",
+      "source_id": "src_7a83efe701cc5d508eed4a5db1a6606a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Jalalx/HttpClientCodeGenerator/blob/96f70bf67dbfe32d509538c1e5d5a045c8cf302e/README.md"
+    }
+  ],
+  "summary": "HttpClientGenerator is a Roslyn-based C# source generator that emits HttpClient boilerplate for partial service classes at build time, without writing generated code to disk. Evidence is README-only documentation of usage, generated output, HttpClient injection options, and known IDE issues.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_3f40c0a853b4240e1bad9b4e0b7ce6388c82a6c26b6349e0e4a0a4aba98893a0
+- clm_5b61714f336aa29e3a394092cfca07e54f91c3827823fca3e27e1b7dd37f3ae5
+- clm_62086a27ed101af178fb8563ea49a4d5c53757405dcd1fe40132626868d4b12e
+- clm_68b14ea6f3db612a08093ac44838119765a610bed18d46589bfc0d11dbb439ca
+- clm_7785b688ed7f9c3bfa41769ff29915425f6836aa9448d09710d6369b7fe840dc
+- clm_7ce3008e2f654dc55a8408535297418effaf7becc66a83c965b413a5bb15ff43
+- clm_95432d4abf23910412895f00d58af8dec3c3b57c5d21c77794b6888a58379a0b
+- clm_9720598889587e92f96ca81c59bc5b750d78f5a11366b3e6e471b38e7f56bbf1
+- clm_a2b86b492164dbc5c0c0ae608eb0903f6cf0d7e30e888ac178f29ad523152e51
+- clm_cd24e80e5f82a371a78f8db48cc15d8b5e513198026b1a8c6ce437b2ea282934
+- clm_dfb840c9d874c7017eb239e4a942abd2737c5b7cab30de6635043f15370b6394
+- clm_e6529f096555a5988eb60322282d314226ef6aaa1c9f32cdf8ad8684f5053ff2
+maturity: draft
+page_id: pg_3e110ce136a9583b8c43f9a05fb13698
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_bb6c2565ca3958a4b133742e3dc5780f
+title: varie-ai/workstation/README.md @ 96d500b5cbb0
+updated_at: '2026-09-14T03:21:43Z'
+---
+
+# varie-ai/workstation/README.md @ 96d500b5cbb0
+
+<!-- rcw:begin owner=source:src_bb6c2565ca3958a4b133742e3dc5780f block=evidence -->
+- A built-in bridge watches Claude Code sessions and sends notifications with screenshots when Claude finishes, requests plan approval, or asks a question. [@claim:clm_3f40c0a853b4240e1bad9b4e0b7ce6388c82a6c26b6349e0e4a0a4aba98893a0]
+- A manager terminal serves as a central hub for cross-project commands, and multiple Claude Code sessions can run side-by-side with auto-dispatch by repo name, task ID, or context. [@claim:clm_5b61714f336aa29e3a394092cfca07e54f91c3827823fca3e27e1b7dd37f3ae5]
+- The plugin provides work-tracking skills such as /work-resume with fuzzy matching, /work-recover for post-crash checkpoint comparison, /work-stats for token usage, and /discover-projects to scan for new repos. [@claim:clm_62086a27ed101af178fb8563ea49a4d5c53757405dcd1fe40132626868d4b12e]
+- Sessions are identified by repo/project name, and commands like 'run tests in my-app' are routed to the matching session automatically without needing session IDs. [@claim:clm_68b14ea6f3db612a08093ac44838119765a610bed18d46589bfc0d11dbb439ca]
+- Voice audio is processed on-device via Apple Speech or WhisperKit, while LLM-based voice routing and OpenClaw agent integration are opt-in features that are off by default. [@claim:clm_7785b688ed7f9c3bfa41769ff29915425f6836aa9448d09710d6369b7fe840dc]
+- Repository development practice: contributors build from source with npm install and npm run dev, run tests via npm run test, and package for macOS with npm run package:mac. [@claim:clm_7ce3008e2f654dc55a8408535297418effaf7becc66a83c965b413a5bb15ff43]
+- Screenshot capture supports three modes: session (Electron built-in, no permission), session plus multi-page scrollback via --pages N (max 10), and full-screen capture requiring macOS Screen Recording. [@claim:clm_95432d4abf23910412895f00d58af8dec3c3b57c5d21c77794b6888a58379a0b]
+- Voice routing via LLM providers (Gemini, Claude, GPT) uses the user's own API key, and Gemini direct-audio transcription requires a Gemini API key. [@claim:clm_9720598889587e92f96ca81c59bc5b750d78f5a11366b3e6e471b38e7f56bbf1]
+- The product exposes slash commands including /work-start, /work-checkpoint, /work-report, /work-sessions, /route, /dispatch, /projects, and /workstation for session tracking, routing, and configuration. [@claim:clm_a2b86b492164dbc5c0c0ae608eb0903f6cf0d7e30e888ac178f29ad523152e51]
+- The app claims to run entirely locally with no telemetry or analytics; checkpoints, session data, and configuration live in ~/.varie/ and are not synced or uploaded. [@claim:clm_cd24e80e5f82a371a78f8db48cc15d8b5e513198026b1a8c6ce437b2ea282934]
+- Remote mode turns on automatically when the agent dispatches or creates a session, can be toggled manually from the top bar, and turning it off stops phone notifications. [@claim:clm_dfb840c9d874c7017eb239e4a942abd2737c5b7cab30de6635043f15370b6394]
+- Requirements are macOS 12 or later and the Claude Code CLI; remote control additionally depends on installing OpenClaw globally and running its gateway. [@claim:clm_e6529f096555a5988eb60322282d314226ef6aaa1c9f32cdf8ad8684f5053ff2]
+<!-- rcw:end owner=source:src_bb6c2565ca3958a4b133742e3dc5780f block=evidence -->
+
+## Researcher notes
+

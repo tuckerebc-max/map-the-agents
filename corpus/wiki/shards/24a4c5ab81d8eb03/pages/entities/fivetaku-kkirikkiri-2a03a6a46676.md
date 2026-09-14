@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_3f4af1bb55fb0e07df543d85bc12db5227e537ef3aa6ec865720210834dcb08d
+- clm_44b3ffddb82b45d500b26d1a11689fd4d67a34338ed0d2089e69bdfea443be95
+- clm_4eb4f4f0e76508af22b9aaa7e34e3254c8c9eb3aae69a2f908f27aa336195e19
+- clm_5eda18cb33add8db489a45a606ee3f61c21e647f33145cfd45b4449e0678fe65
+- clm_69210465d4e48c55c184d3b0ee9154dca80b249543ef129e81d26fe77bdbce7e
+- clm_8584bbe79eddc0ddec2ae35ed860cfa49f3d136d8cd9e6bedbd54cb2d0bed7bd
+- clm_95a653ba569c170b4303dfea9742f8f672457d1cd8fe96567894ebf7a9ad2632
+- clm_9a6af3e7ea044000ddd3793fdb33078ae900a109006e3725494cf3f174b4383b
+- clm_a5186fdfe2d8d001b2c69f34b2d7fa52e1100420ca65e28d92d5c9fcc0bcf6be
+- clm_de65a34c4bf86ee8b14d771c02e1eccc7f541c8e99f9fe10cdb225c6eaf9cbc4
+- clm_e058d91f5fab7be25fda81680cd62504d2b0ecfd1865625e730bb3c471daf567
+- clm_ed8461dbe64fcabfaa6586e88ce08e6a69d0f87226846da8050a5f0d430ad37e
+maturity: draft
+page_id: pg_60dc4f96eda75ec186532a03a6a46676
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: fivetaku/kkirikkiri
+updated_at: '2026-09-14T01:49:09Z'
+---
+
+# fivetaku/kkirikkiri
+
+<!-- rcw:begin owner=entity:ent_7e8c034c865a5935a66fecab06222c5e block=evidence -->
+- fivetaku/kkirikkiri is mentioned in this evidence. [@claim:clm_3f4af1bb55fb0e07df543d85bc12db5227e537ef3aa6ec865720210834dcb08d] [@claim:clm_44b3ffddb82b45d500b26d1a11689fd4d67a34338ed0d2089e69bdfea443be95] [@claim:clm_4eb4f4f0e76508af22b9aaa7e34e3254c8c9eb3aae69a2f908f27aa336195e19] [@claim:clm_5eda18cb33add8db489a45a606ee3f61c21e647f33145cfd45b4449e0678fe65] [@claim:clm_69210465d4e48c55c184d3b0ee9154dca80b249543ef129e81d26fe77bdbce7e] [@claim:clm_8584bbe79eddc0ddec2ae35ed860cfa49f3d136d8cd9e6bedbd54cb2d0bed7bd] [@claim:clm_95a653ba569c170b4303dfea9742f8f672457d1cd8fe96567894ebf7a9ad2632] [@claim:clm_9a6af3e7ea044000ddd3793fdb33078ae900a109006e3725494cf3f174b4383b] [@claim:clm_a5186fdfe2d8d001b2c69f34b2d7fa52e1100420ca65e28d92d5c9fcc0bcf6be] [@claim:clm_de65a34c4bf86ee8b14d771c02e1eccc7f541c8e99f9fe10cdb225c6eaf9cbc4] [@claim:clm_e058d91f5fab7be25fda81680cd62504d2b0ecfd1865625e730bb3c471daf567] [@claim:clm_ed8461dbe64fcabfaa6586e88ce08e6a69d0f87226846da8050a5f0d430ad37e]
+<!-- rcw:end owner=entity:ent_7e8c034c865a5935a66fecab06222c5e block=evidence -->
+
+## Researcher notes
+

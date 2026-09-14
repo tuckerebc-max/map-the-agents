@@ -1,0 +1,299 @@
+{
+  "applied_operation_id": "op_c2bc8bb047e94a158ab94f212797128d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f2e07d8e9306a88a3b206dfc23b97601bf6d8726bf1f562126c5060beae14a9",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "git_sha": "4cd1d217e85f64c7466f8a060f4428c90458832d",
+          "line_end": 159,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "andymik90/aperant",
+          "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/README.md#L157-L159"
+        },
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "git_sha": "4cd1d217e85f64c7466f8a060f4428c90458832d",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "andymik90/aperant",
+          "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/README.md#L155-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a1a8b5e7c57da745cd2e259b47495174b509d9171f65f02fff2a746a95b60a5",
+        "slc_e9d309f34c388167afdc0ac94e7a33889e6355ba26da1f7eb41ab28234e69553"
+      ],
+      "text": "The README describes a three-layer security model: bash commands run inside an OS sandbox, filesystem operations stay confined to the project directory, and a dynamic allowlist admits only commands approved for the detected project stack."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4571490691302461c7ffdd4d3da753683818a828b9a006bf577d88089ea2cba",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "git_sha": "4cd1d217e85f64c7466f8a060f4428c90458832d",
+          "line_end": 28,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "andymik90/aperant",
+          "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/README.md#L17-L28"
+        },
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "git_sha": "4cd1d217e85f64c7466f8a060f4428c90458832d",
+          "line_end": 187,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "andymik90/aperant",
+          "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/README.md#L187-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05f0a31582b6ce866ed75ee09b464b9ce81a16a5110d47962a9f84e3323aec5e",
+        "slc_c771748ef691726221d4bdcf7ebe78f14b4ae778b286f1c99d61022e504a634f"
+      ],
+      "text": "The README states the current 2.x desktop app is in maintenance mode while a ground-up 3.0 rebuild happens in a separate repository, and that code pull requests against the present codebase are paused and will be closed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d0a3af57c0cf5a10cd4098f7bb80b19c00137d218e8ee5df28d17f2a9f97ab2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "git_sha": "4cd1d217e85f64c7466f8a060f4428c90458832d",
+          "line_end": 80,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "andymik90/aperant",
+          "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/README.md#L78-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e8d412e36e8507a9f7342366de49fda8b48aead4183e2851075c5a61c2437b7e"
+      ],
+      "text": "Documented requirements for using the app are a Claude Pro or Max subscription, the Claude Code CLI, and a project already initialized as a git repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1704409590a7bded965607b2c9880bd6891ef10059370558d7537803a569b0c6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "git_sha": "f8808f8a947a357c230cf7b7f6c8a2b2ae911baf",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "CLAUDE.md",
+          "repository": "andymik90/aperant",
+          "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/CLAUDE.md#L43-L43"
+        },
+        {
+          "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+          "git_sha": "f8808f8a947a357c230cf7b7f6c8a2b2ae911baf",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "CLAUDE.md",
+          "repository": "andymik90/aperant",
+          "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/CLAUDE.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98b29f1ad1b20ef220f7beb723d6f01f56acbcf5447c54b01727632e5a664742",
+        "slc_a04e06d0ff19ff7e15c829f153972dba6e261bc9e7e1533227931083d4d0e4be"
+      ],
+      "text": "Repository development practice: contributors are told to always target the develop branch rather than main for pull requests, and to avoid console.log in production code in favor of Sentry-based error tracking."
+    }
+  ],
+  "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 220,
+        "path": "README.md",
+        "size": 10828
+      },
+      {
+        "lines": 76,
+        "path": "CLA.md",
+        "size": 5452
+      },
+      {
+        "lines": 359,
+        "path": "CLAUDE.md",
+        "size": 19940
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 136292
+      },
+      {
+        "path": "CODEX_RATE_LIMITS_RESEARCH.md",
+        "reason": "file-budget",
+        "size": 16361
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 21090
+      },
+      {
+        "path": "Memory.md",
+        "reason": "file-budget",
+        "size": 81976
+      },
+      {
+        "path": "RELEASE.md",
+        "reason": "file-budget",
+        "size": 10624
+      },
+      {
+        "path": "card_data.txt",
+        "reason": "file-budget",
+        "size": 12
+      }
+    ],
+    "omitted_count": 6,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1393,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 6,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_310b21c78f875810946effece3a7cee5",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/andymik90/aperant/20250db069a849ab001ac6ab9e3e9779886ab9e2/0c573f086089e8d9/manifest.json",
+  "package_id": "pkg_e5022b3595a1dcda8355d5f0b96fe08638e9f78fef0e49f76054ac9d6cf78ca8",
+  "repo": "andymik90/aperant",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7bd4713ede96eb8c1b86d0c9cc4ef6914c8cd7de990cee57e3db3d988797f0d8",
+  "snapshot_id": "0c573f086089e8d9",
+  "sources": [
+    {
+      "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+      "git_sha": "d0ca9bb4e7b25d1cc20d379983a01d14d5202aa9",
+      "lines": 76,
+      "path": "CLA.md",
+      "repository": "andymik90/aperant",
+      "sha256": "c1686f5225bbf034598eaa78029f1e2ad60f8ee8d8eb50a547cf31c990ce1ab0",
+      "source_id": "src_cc7fc8b110cc5ed6b2e7d86e42a270e9",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/CLA.md"
+    },
+    {
+      "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+      "git_sha": "f8808f8a947a357c230cf7b7f6c8a2b2ae911baf",
+      "lines": 359,
+      "path": "CLAUDE.md",
+      "repository": "andymik90/aperant",
+      "sha256": "92c1376aaf5f400e837a1683a0d89b862bd84d57e268dd33bc8e1cd4e736e236",
+      "source_id": "src_bbfa4673a9c35e8c8b2cb52c05378eaf",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/CLAUDE.md"
+    },
+    {
+      "commit": "20250db069a849ab001ac6ab9e3e9779886ab9e2",
+      "git_sha": "4cd1d217e85f64c7466f8a060f4428c90458832d",
+      "lines": 220,
+      "path": "README.md",
+      "repository": "andymik90/aperant",
+      "sha256": "e538077b53b25a88d367357a71db8703dd225322137a7b3a9f769d096ca608a5",
+      "source_id": "src_dff27664ab045b2a84fd402e229940bd",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/AndyMik90/Aperant/blob/20250db069a849ab001ac6ab9e3e9779886ab9e2/README.md"
+    }
+  ],
+  "summary": "The README describes a three-layer security model: bash commands run inside an OS sandbox, filesystem operations stay confined to the project directory, and a dynamic allowlist admits only commands approved for the detected project stack. The README states the current 2.x desktop app is in maintenance mode while a ground-up 3.0 rebuild happens in a separate repository, and that code pull requests against the present codebase are paused and will be closed.",
+  "superseded_claim_ids": []
+}

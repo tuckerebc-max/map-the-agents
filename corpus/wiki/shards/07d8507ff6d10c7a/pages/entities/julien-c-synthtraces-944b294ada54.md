@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_03829bc430697e0d5f36a18217880cc4563cfef75e50068e789653eaa3e1d8ed
+- clm_1b59d6e4bd9603dba68e8bbbb6dc79b31a21f21a7358b5af34374351160ef510
+- clm_1b65dde6f0c2c6e84dca08d7db333007d5e55cbd7922643f8d0004341ed4e84d
+- clm_215efc569222f7db7773e6680b47fd2344eb32c11153f927502c9b9f4a5e521f
+- clm_28e4ed529cdc705f5922d8ebb729937d071527ad9ab6c344d64692b7fbaecd1d
+- clm_4bbde4198df54eeecaa506b36eb12fe55067cf54dd1d2ec341ff6a0719d6a4c6
+- clm_65844314ddddda643db529fb36a561736a813c922ef26fc168d8654ac95d904a
+- clm_7b8245e480822bc4ae9d4fc652bc2b841086b273f3d90b7e1fa5f30f647941fa
+- clm_7cdd5a4850da1a3efc4f8bf070c33f1e887112232f85e0b308bdc4dd8bea61b0
+- clm_85544aa3b9a575fa8c1e6060fdb73ac5af9e8c68ea8057afb51f8af5c28ee06e
+maturity: draft
+page_id: pg_a592d5619e085fe98f98944b294ada54
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: julien-c/synthtraces
+updated_at: '2026-09-14T04:01:21Z'
+---
+
+# julien-c/synthtraces
+
+<!-- rcw:begin owner=entity:ent_5c8823dccc755713b9cfcbb04192e9e2 block=evidence -->
+- julien-c/synthtraces is mentioned in this evidence. [@claim:clm_03829bc430697e0d5f36a18217880cc4563cfef75e50068e789653eaa3e1d8ed] [@claim:clm_1b59d6e4bd9603dba68e8bbbb6dc79b31a21f21a7358b5af34374351160ef510] [@claim:clm_1b65dde6f0c2c6e84dca08d7db333007d5e55cbd7922643f8d0004341ed4e84d] [@claim:clm_215efc569222f7db7773e6680b47fd2344eb32c11153f927502c9b9f4a5e521f] [@claim:clm_28e4ed529cdc705f5922d8ebb729937d071527ad9ab6c344d64692b7fbaecd1d] [@claim:clm_4bbde4198df54eeecaa506b36eb12fe55067cf54dd1d2ec341ff6a0719d6a4c6] [@claim:clm_65844314ddddda643db529fb36a561736a813c922ef26fc168d8654ac95d904a] [@claim:clm_7b8245e480822bc4ae9d4fc652bc2b841086b273f3d90b7e1fa5f30f647941fa] [@claim:clm_7cdd5a4850da1a3efc4f8bf070c33f1e887112232f85e0b308bdc4dd8bea61b0] [@claim:clm_85544aa3b9a575fa8c1e6060fdb73ac5af9e8c68ea8057afb51f8af5c28ee06e]
+<!-- rcw:end owner=entity:ent_5c8823dccc755713b9cfcbb04192e9e2 block=evidence -->
+
+## Researcher notes
+

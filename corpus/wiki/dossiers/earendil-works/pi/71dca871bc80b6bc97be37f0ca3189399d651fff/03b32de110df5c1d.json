@@ -1,0 +1,569 @@
+{
+  "applied_operation_id": "op_4a54be6f201d4231905413a689c1e487",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_34bf24e120dc7f0549c6077e12267dd135a1d69b0fc7d66da1b2b35cd55d2d18",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L17-L19"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 35,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L28-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2526b31b7cbc9a6ebfbe06a84df6c08f9d0d87341ae0b41d5ec0b50123ef5e99",
+        "slc_6854a7f888147594290411e3790a9af9aa1341528833ccefbe88a0a1f93ca8fe"
+      ],
+      "text": "The repository is a monorepo whose packages include a coding-agent CLI, an agent runtime with tool calling and state management, a multi-provider LLM API, a TUI library, a telemetry package, and a chord application-composition runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e55f3ee68c05787ef0368a9169f7df34aade2cdbd50369082d28d476404f066",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f5c00a116846600804e42793e7f61f9a74446d96b64920c2137204c5577e4e0"
+      ],
+      "text": "Pi ships without a built-in permission system for filesystem, process, network, or credential access; by default it runs with the permissions of the launching user and process."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6fef1c235e06d3c3eae528698a9d75046e075b63f9c35a1d47b58111921ec569",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "e54ba8be6b03165555385b9c79231deb073b22e9",
+          "line_end": 68,
+          "line_start": 50,
+          "path": "SECURITY.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/SECURITY.md#L50-L68"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "e54ba8be6b03165555385b9c79231deb073b22e9",
+          "line_end": 22,
+          "line_start": 19,
+          "path": "SECURITY.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/SECURITY.md#L19-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2478696901ff34309fafea01e149b2d97235e0f317601be3f65c0d358d4a348e",
+        "slc_4de1a628c95898bfe25b880d3c24240197f0c1deba4e95bfb895d791c47b39d4"
+      ],
+      "text": "The security policy states the coding agent intentionally has no sandbox, and prompt injection via files like AGENTS.md or code comments cannot be protected against, so users must trust extensions, skills, and repositories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_20e24f06a0c4e72163e81c6327f59e640e68a8aa53d801a78838ce84b8529497",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_93a09b201f589c805d37e611a03e9fa33da68a84e66e61cd4d657b1ebabc66b9"
+      ],
+      "text": "Repository development practice: new contributors' issues and PRs are auto-closed by default and reviewed daily by maintainers, per CONTRIBUTING.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d57dcc7d3c0acc23dd46e1a7cbc70352c24b0eda74deec655337016955093c0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 62,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L55-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98383c9026f1594426eeafca96b368488cf7028956f622c7f723ed75a8e57c59"
+      ],
+      "text": "Repository development practice: development uses npm install --ignore-scripts, npm run build/check, ./test.sh (skipping LLM-dependent tests without API keys), and ./pi-test.sh to run pi from sources."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a5f6427ae410dc49efd65eecbe5d3a2903c060e330fb19dbd728850d8a939de",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 89,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L81-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b45d0c11b095739719141e45be007ec93e61242cfa98871cbfc3a332e5a20a40"
+      ],
+      "text": "Direct external dependencies are pinned to exact versions, .npmrc sets save-exact and min-release-age=2, and the published CLI package carries a shrinkwrap file pinning transitive dependencies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc57dc33369d45c5a0700ddf421df8311cd3c2c25b630888c303049e9d973ec1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L79-L79"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+          "line_end": 89,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md#L81-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38765775c12048e75a5494a55ebc1c8da0cb6a00d11399da011f96af1f23fd1b",
+        "slc_b45d0c11b095739719141e45be007ec93e61242cfa98871cbfc3a332e5a20a40"
+      ],
+      "text": "Repository development practice: npm dependency changes are treated as reviewed code changes, with CI installing via npm ci --ignore-scripts and a scheduled workflow running npm audit and signature checks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c11ef75f4016822545696a3233d63e6a0b281534636937351726d5b84750c16",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L28-L28"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L5-L5"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 70,
+          "line_start": 54,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L54-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_055534f0cd6378943521b4455a768f340c9b3fbdc1d64682e346e826f5dbea16",
+        "slc_4dcff3115e202abec68cb375083ecf82c320d251b219ec382a5565012984ba5c",
+        "slc_bdd6451ff67b3eed94a01576bd957e0588b7f5efa457882f00a2c6d6b230f2a6"
+      ],
+      "text": "The TUI plan introduces a constrained alternate-screen layout so the coding-agent transcript scrolls while pending messages, status, editor, and footer stay fixed at the bottom; main-screen mode keeps terminal-owned scrolling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9858867453dde331039c980dac0b872b0f3117f15797ef68e9e470c2b7aa5d34",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 24,
+          "line_start": 11,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L11-L24"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 134,
+          "line_start": 120,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L120-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47e8dde1e58e12c451734e8f100d283fb9942087c5f94b657a4be64ffe9ff355",
+        "slc_bf9dbff1c0bc29fdb2d873d47e5270b69a38b4f5fb0b31c514884992674b7511"
+      ],
+      "text": "The planned public layout primitives are VStack, HStack, and ScrollView, with stack entries configured via basis, grow, shrink, minSize, maxSize, and a viewport-dependent visible predicate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b02da203fcd2e0a243c4e30deaa795e79d4d8b59f5dfcea7e8a999bc22b8eff",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 263,
+          "line_start": 263,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L263-L263"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 256,
+          "line_start": 253,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L253-L256"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 261,
+          "line_start": 261,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L261-L261"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b41b209d2e97ee490a071fefd30db52efd23ca9928d01e914f4ce488928e232",
+        "slc_ca49005d725515aeea052e2469fec60433d08f244f433705d324ce7ef6228ec4",
+        "slc_d161b22e6c413c20152969bc8bd3164811a2aa1b8ea9f3a47bf35058cf992bac"
+      ],
+      "text": "Constrained layout is exposed via a ViewportTUI capability interface with setLayoutRoot; TuiAltScreen implements it while TuiMainScreen does not, and a type guard checks the capability rather than using instanceof."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9af5d3b81bedbed1dc88fb2cd0215eeb02332706642b51ed199c353349e289e9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 372,
+          "line_start": 368,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L368-L372"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 323,
+          "line_start": 323,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L323-L323"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 343,
+          "line_start": 343,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L343-L343"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 334,
+          "line_start": 334,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L334-L334"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00ba8e034479a09633324ac4043d0c732f1137d59f3aad8e7a734a49b72fdccb",
+        "slc_8cd31db8a5f91acc6ba281c7a3d73fbd7dd05dd15beebf114cb5f44d45c70f43",
+        "slc_991d5945ab56f4a564530d5640f6ae766284efd9e7d1b422fb32569ce127bc66",
+        "slc_beb7a937b78e726f52cfd377c3e6f7ab6c392a5f9f160af5af84f53622b85ab9"
+      ],
+      "text": "The internal layout tree is rebuilt per requested render as a transient frame snapshot, while the public component tree stays long-lived and stateful; leaf render caches in Markdown, Text, Image, and Box are reused."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c84f0ded688464371f8545f706e76d5503c3655bd69ce36499ab24ddd991517",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 517,
+          "line_start": 517,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L517-L517"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 552,
+          "line_start": 552,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L552-L552"
+        },
+        {
+          "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+          "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+          "line_end": 534,
+          "line_start": 528,
+          "path": "tui-plan.md",
+          "repository": "earendil-works/pi",
+          "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md#L528-L534"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05eb3cd598c18f010879d0b5f74c02c940a9e1a5961b134767d6f73063d75da1",
+        "slc_56f45989527cb5801f35888c41f13ca1debc3cc0ec3d4bdfa0118e513dfde435",
+        "slc_a23ca6b4e54857a3c63a20cd4e8b89f768ae3d6ab9b1361871444342d35b928c"
+      ],
+      "text": "Wheel events are hit-tested against the committed frame and routed from the deepest box upward, with overscroll chaining or containment, falling back to the primary scroll view; keyboard scrolling actions remain always available."
+    }
+  ],
+  "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 115,
+        "path": "README.md",
+        "size": 6789
+      },
+      {
+        "lines": 1001,
+        "path": "tui-plan.md",
+        "size": 36414
+      },
+      {
+        "lines": 124,
+        "path": "AGENTS.md",
+        "size": 8277
+      },
+      {
+        "lines": 102,
+        "path": "CONTRIBUTING.md",
+        "size": 5033
+      },
+      {
+        "lines": 87,
+        "path": "SECURITY.md",
+        "size": 4227
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1713,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_06bd438e11d25fc29d840ff8129df6c8",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/earendil-works/pi/71dca871bc80b6bc97be37f0ca3189399d651fff/03b32de110df5c1d/manifest.json",
+  "package_id": "pkg_d77c5d0b0506e0349fe72d656c58a4fe6e1095326df7943bcd00b62d70e21b82",
+  "repo": "earendil-works/pi",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "61ffcd698a0273ce87713ea0e4d7397e0d2c5e1425371d5b969944d92a5a0416",
+  "snapshot_id": "03b32de110df5c1d",
+  "sources": [
+    {
+      "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+      "git_sha": "768db3686b5dda3231e09821d5fd2cc072e41454",
+      "lines": 124,
+      "path": "AGENTS.md",
+      "repository": "earendil-works/pi",
+      "sha256": "253b9077f02686d4ed56aab0cf67c34e8f49da2e05fa847e0b722853a0307db1",
+      "source_id": "src_ce4293a77f9157c6946b9df07896c445",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/AGENTS.md"
+    },
+    {
+      "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+      "git_sha": "c6d76f1c574c1c85cb2bb519ef4d21cb8e34623e",
+      "lines": 102,
+      "path": "CONTRIBUTING.md",
+      "repository": "earendil-works/pi",
+      "sha256": "ce0c1456c55404c729c632221f9159ea3b463e6b3974a1c22446e9315388490c",
+      "source_id": "src_a876cb9c837a5e17b9c98046f47c0028",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/CONTRIBUTING.md"
+    },
+    {
+      "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+      "git_sha": "730033651bd95551b5e0c34189ec823d07a174b1",
+      "lines": 115,
+      "path": "README.md",
+      "repository": "earendil-works/pi",
+      "sha256": "e0ca2fd607c5ce7c7646964ee1da7495ac1c4b68a2b1d05faad24f224df74c8b",
+      "source_id": "src_82fe263f2e53561986010018f5d325a9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/README.md"
+    },
+    {
+      "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+      "git_sha": "e54ba8be6b03165555385b9c79231deb073b22e9",
+      "lines": 87,
+      "path": "SECURITY.md",
+      "repository": "earendil-works/pi",
+      "sha256": "2d8b299904ce69d14b9378b643964d86f79fb619578cdc2ee390f843dab1b6cb",
+      "source_id": "src_c9dc403f54ff5f8995fff992904c2e55",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/SECURITY.md"
+    },
+    {
+      "commit": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+      "git_sha": "814736f8be590f14b7267f34f23b35f54ef81acb",
+      "lines": 1001,
+      "path": "tui-plan.md",
+      "repository": "earendil-works/pi",
+      "sha256": "050bfff6f92f92be0ad724bfa28af428f879aa90a73a8f1b15e628384c9c68e4",
+      "source_id": "src_292ff47284ce520ca32a4df43a0fc231",
+      "stored": "tui-plan.md-e1a6d24646fe.md",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/tui-plan.md"
+    }
+  ],
+  "summary": "The repository is a monorepo for the Pi agent harness, containing a coding-agent CLI, agent runtime, multi-provider LLM API, TUI library, telemetry package, and chord composition runtime. Evidence covers its permission model, security trust boundary, supply-chain and contribution practices, and a detailed TUI alternate-screen layout plan. Evidence coverage: 152 of 291 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

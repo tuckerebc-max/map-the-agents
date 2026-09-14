@@ -1,0 +1,910 @@
+{
+  "applied_operation_id": "op_8c5a13328d254ea4884ad31c522b4a9a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_53e4b08c3ca90b122284cbbf1ff159126de02cb17b279e4880d5a17d22b48c19",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 27,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L25-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa839db097fca88e66e687cc79f2c6c58afeee6487daa7a06f8703e0d2c476e5"
+      ],
+      "text": "AoE is described as a session manager for AI coding agents on Linux and macOS, running agents in parallel across branches with persistent sessions and optional worktree or container isolation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c30ecddfee0b9a69b8e49f97128fd9594ff50b02f46c6d6d1942bdcc9975751",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 57,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L52-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_de8e2e862d4ad7e11e7243dc6f58851da9e1e1f4a12b1e1cf372cce334bc0aca"
+      ],
+      "text": "The product exposes TUI, web, CLI, and HTTP API surfaces, with status detection, notifications, persistent tmux sessions, git worktrees, multi-repo workspaces, and Docker/Podman/Apple Containers sandboxing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7113bde0f45b0da92bbb4996fd1f6dbab00a8bb93db8c3aed13e2e5f26bd835f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L3-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5eb457bcbf5b51426e0b3df9d008e9e59a6d1c7d53bf61b9db7ccdd95d9015e5"
+      ],
+      "text": "`aoe serve` exposes an HTTP API so external orchestrators such as other agents, MCP tools, or CI scripts can drive sessions without attaching to a terminal; the web dashboard uses the same API plus internal routes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85e23c8e780bebe07c64698b34364a98dd16ff6259c98d519d335c97b2e64bf6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 21,
+          "line_start": 20,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L20-L21"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 12,
+          "line_start": 10,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L10-L12"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 18,
+          "line_start": 14,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L14-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4fad8e48afabd70904b04c0ca0570cad266d97ae300b06898d820a302537a73b",
+        "slc_6cf937e26dd8901e276d91ee4a07f03b35b347668730a1cd9d761f75cf2e67d4",
+        "slc_a09c03e822e8e72328a964f044a130e129b6979bc2c3c38d9a0f33662c0cea18"
+      ],
+      "text": "All HTTP endpoints require a token unless the server starts with --no-auth; the token is printed by `aoe serve` and accepted via bearer header, query parameter, or cookie. A --read-only mode blocks write endpoints with 403."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6811946eda9ac369ac397b5883cacc6cfaaa6cf2c204704cda8ef51fd81ae30",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 209,
+          "line_start": 204,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L204-L209"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 221,
+          "line_start": 211,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L211-L221"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5794a40081f4e606620c2bd37e7bb117b1aaacd8304018928b2caa0dac6e118a",
+        "slc_f3fa49e5ea6f60c1c6ed3b53273531fa5f3e979575c663eae44d4ddff6723a17"
+      ],
+      "text": "Session status values are PascalCase on the wire (Starting, Running, Waiting, Idle, Error, Stopped, Unknown, Deleting, Creating), differing from the lowercase form used by the CLI and status-hook env vars."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6157dcd8aa7837420527ecf6abe3255d81d8ade69b6438cef458dca2553578f5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 251,
+          "line_start": 248,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L248-L251"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_168575363392edebe709b8309a13e778dc95f8523e91929303a4a80421566bbe"
+      ],
+      "text": "POST /api/sessions supports callback_url (fired on Waiting/Idle/Error transitions with loopback/private address rejection and fire-and-forget delivery) and idempotency_key so retries return the existing session instead of duplicating it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd49d6f3f5ff4ea1ea8c43a96af2cc9d4596ccc1b141ad622b664bccef1825fd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 359,
+          "line_start": 355,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L355-L359"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 353,
+          "line_start": 352,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L352-L353"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a66eb056cfb26e6f203ba6d8fddcb9552d5b602c31c3501fbe76c04d4906ee4",
+        "slc_c8ae6aa33faf51e9cfe2f7c1e37aa1b19544cf7bc31d28e1571f7e3d63824f19"
+      ],
+      "text": "The send and output endpoints together form a documented primitive for driving an AoE session as a controlled subagent: send a prompt, poll output until stable or status returns to Idle, then capture the reply."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e11b39d8b2fbcd856ced9908a2d0d741b702180dd5852ed46954256e297b99e0",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L25-L28"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 40,
+          "line_start": 32,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L32-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3bb3c2d3246d035cdbf50893f05865b3e92ec3b83cb40cb37161e7988f4920e8",
+        "slc_716d8c24acde9dd9e0309ad19c832c2b50871d9c149e63cf00fd8ae6fbdd4bac"
+      ],
+      "text": "AoE discovers Agent Skills packages from a managed store and user-level agent directories (e.g. ~/.claude/skills, ~/.agents/skills, ~/.gemini/skills); a skill is a directory with a SKILL.md containing name and description frontmatter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a131aa5ca522dc99601d54d6a811461b6c9497152a456bdeada6cbcdf4018c0",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 154,
+          "line_start": 147,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L147-L154"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L130-L130"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 128,
+          "line_start": 122,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L122-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6226c1b94573d37e9ab7488e91ed8c6d2ed3cb8855537d396a099c4757fac6ad",
+        "slc_9ffbd6266b5f7a361898976d108e6783d7e0dde7d24575ea37ab95bc8e138a0b",
+        "slc_fea50f899ee95cee77c34f28d08f01e1e43a65ea7d19761c5d3d98e56751febb"
+      ],
+      "text": "Skill sync propagates managed skills into agents' own directories with a never-overwrite rule: hand-edited copies are reported as conflicts and left untouched unless explicitly named in a `replace` list; automatic syncs never replace anything."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_808c47044ffa994cf6887b5978fb0bc576968d4b56b9190a6fd00e1889727a7a",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L117-L117"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58b3e4660af7ab882f8b769fc7eff850a1e58ff8a6e715522fa16baad7a6feb0",
+        "slc_67f7fb89a837f5c7bf6560ac36db6c2858a889923fbc1f7fd237f6d159bb66e7"
+      ],
+      "text": "Each agent runs in its own tmux session, so sessions persist when the TUI closes, SSH disconnects, or the terminal crashes; sessions are only removed when explicitly deleted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a9aa4196aa788aebf4c267c42ab6ad1a199421c24621c2e6c14c32e4029c598",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "1f28253399c73bb71e180f27b2f9b249abd3eaf8",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/guides/configuration.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/guides/configuration.md#L9-L9"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "1f28253399c73bb71e180f27b2f9b249abd3eaf8",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/guides/configuration.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/guides/configuration.md#L5-L7"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "1f28253399c73bb71e180f27b2f9b249abd3eaf8",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/guides/configuration.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/guides/configuration.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ef9ac842ad85dfe6a06066a864e0b98e8fc0586272b9dfda44a54c5d3a90ee4",
+        "slc_a534bd893a74262613aab5ad24c80c2309a89da3fb26eb2268fbb7422100037b",
+        "slc_bb4389cbc5d53aa11d82b6714b6e16c82856e1904368ad202efe6bea6689f5b0"
+      ],
+      "text": "Configuration is layered: global config, per-profile config, and repo-level .agent-of-empires/config.toml, with later layers overriding earlier ones only for explicitly set fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_699d4bde830e954b2e3c8af759257034d25781422d9e591e222b18c6a0dc934f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L71-L71"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 88,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L86-L88"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 129,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L129-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a053e1e3746d4d6b6e07deb085be3f4cd68d9c9916adbd6d31df4cea3fcba3e5",
+        "slc_e8e17b3ff7c4fb5b66479ea1c98ec41185deb0ef9b5cfa8cc1dfdb6c81677c78",
+        "slc_f81ed616a21d238c560069c337e6ccc06e0f80dd8135482846d720c28a4b6c37"
+      ],
+      "text": "tmux is a required prerequisite and Docker is optional for sandboxing; the project is built with cargo, and native Windows is unsupported because AoE depends on tmux and POSIX process handling (WSL2 only)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05a07e1178e8c5e7d9ded916316bfc503229a19baf78017ffda9dd363ecdfea1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L145-L145"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 143,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L137-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e463c6a0e5504a8d0c622245cf9529dab3d3bbbea188f36c48cfad4e607079e",
+        "slc_8d450918fff63b62c5cd402b21e9df039f937374a4bce53ace4661f2aabb567d"
+      ],
+      "text": "Repository development practice: the README's Development section lists cargo build, cargo test, cargo fmt, cargo clippy, and cargo build --features web, with docs/development.md as the full reference."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b08a05cf45d14ccc99b06a37c22da5d09aa63970b0f2b0f29c7c5440b2ef0af",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L157-L157"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+          "line_end": 162,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md#L159-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a75836693b2466a4fe448dd51054cbf39044ef0f9c7da37bab0ba3db2c7f810",
+        "slc_fe9a7c33185d3c6150597daad82f74f80a45d27a28c81f8fde3773bee8c95c28"
+      ],
+      "text": "The project is MIT licensed, with one file (src/tui/hyperlink.rs) containing code derived from the herdr project under Apache License 2.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad41e2d9e7e91d51623c3539bec180871338261fee67b92bd0280621cb5c1f93",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 327,
+          "line_start": 324,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L324-L327"
+        },
+        {
+          "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+          "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+          "line_end": 340,
+          "line_start": 339,
+          "path": "docs/api.md",
+          "repository": "agent-of-empires/agent-of-empires",
+          "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md#L339-L340"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bdda01bdc98eab35351b6f8d10d0bce70ef03765b6658e8deb7af6881241d14f",
+        "slc_d6819a59c2d71d113a1be8d341dc448e0aa79fc7a635b510334755cbb730d8cb"
+      ],
+      "text": "GET /api/sessions/{id}/output returns a tmux pane snapshot with configurable trailing-line count (clamped 1..=2000) and text or ansi format, and works under read-only mode."
+    }
+  ],
+  "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 162,
+        "path": "README.md",
+        "size": 7078
+      },
+      {
+        "lines": 102,
+        "path": "DESIGN.md",
+        "size": 4521
+      },
+      {
+        "lines": 365,
+        "path": "docs/api.md",
+        "size": 15633
+      },
+      {
+        "lines": 559,
+        "path": "docs/guides/configuration.md",
+        "size": 51538
+      },
+      {
+        "lines": 462,
+        "path": "docs/guides/sandbox.md",
+        "size": 23271
+      },
+      {
+        "lines": 23,
+        "path": "THIRD_PARTY_NOTICES.md",
+        "size": 1144
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/development.md",
+        "reason": "file-budget",
+        "size": 2762
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 2624
+      },
+      {
+        "path": "docs/installation.md",
+        "reason": "file-budget",
+        "size": 2082
+      },
+      {
+        "path": "docs/plugin-api.md",
+        "reason": "file-budget",
+        "size": 30985
+      },
+      {
+        "path": "docs/plugins.md",
+        "reason": "file-budget",
+        "size": 5643
+      },
+      {
+        "path": "docs/push-notifications.md",
+        "reason": "file-budget",
+        "size": 6360
+      },
+      {
+        "path": "docs/quick-start.md",
+        "reason": "file-budget",
+        "size": 5692
+      },
+      {
+        "path": "docs/sounds.md",
+        "reason": "file-budget",
+        "size": 3966
+      },
+      {
+        "path": "docs/structured-view.md",
+        "reason": "file-budget",
+        "size": 19484
+      },
+      {
+        "path": "docs/telemetry.md",
+        "reason": "file-budget",
+        "size": 5359
+      },
+      {
+        "path": "docs/cli/reference.md",
+        "reason": "file-budget",
+        "size": 62073
+      },
+      {
+        "path": "docs/development/adding-a-migration.md",
+        "reason": "file-budget",
+        "size": 1158
+      },
+      {
+        "path": "docs/development/adding-a-website-page.md",
+        "reason": "file-budget",
+        "size": 806
+      },
+      {
+        "path": "docs/development/adding-agents.md",
+        "reason": "file-budget",
+        "size": 13002
+      },
+      {
+        "path": "docs/development/adding-settings.md",
+        "reason": "file-budget",
+        "size": 7796
+      },
+      {
+        "path": "docs/development/releases.md",
+        "reason": "file-budget",
+        "size": 6918
+      },
+      {
+        "path": "docs/development/writing-plugins.md",
+        "reason": "file-budget",
+        "size": 4836
+      },
+      {
+        "path": "docs/guides/agent-override.md",
+        "reason": "file-budget",
+        "size": 3325
+      },
+      {
+        "path": "docs/guides/apple-containers.md",
+        "reason": "file-budget",
+        "size": 1924
+      },
+      {
+        "path": "docs/guides/diff-view.md",
+        "reason": "file-budget",
+        "size": 6238
+      },
+      {
+        "path": "docs/guides/live-mode.md",
+        "reason": "file-budget",
+        "size": 9836
+      },
+      {
+        "path": "docs/guides/mcp-servers.md",
+        "reason": "file-budget",
+        "size": 10246
+      },
+      {
+        "path": "docs/guides/multi-repo-workspaces.md",
+        "reason": "file-budget",
+        "size": 12335
+      },
+      {
+        "path": "docs/guides/otari-telemetry.md",
+        "reason": "file-budget",
+        "size": 8077
+      },
+      {
+        "path": "docs/guides/podman.md",
+        "reason": "file-budget",
+        "size": 2368
+      },
+      {
+        "path": "docs/guides/repo-config.md",
+        "reason": "file-budget",
+        "size": 6734
+      },
+      {
+        "path": "docs/guides/scratch-sessions.md",
+        "reason": "file-budget",
+        "size": 5620
+      },
+      {
+        "path": "docs/guides/session-fork.md",
+        "reason": "file-budget",
+        "size": 3076
+      },
+      {
+        "path": "docs/guides/session-resume.md",
+        "reason": "file-budget",
+        "size": 9179
+      },
+      {
+        "path": "docs/guides/shell-completions.md",
+        "reason": "file-budget",
+        "size": 2856
+      },
+      {
+        "path": "docs/guides/tmux-status-bar.md",
+        "reason": "file-budget",
+        "size": 6631
+      },
+      {
+        "path": "docs/guides/tool-sessions.md",
+        "reason": "file-budget",
+        "size": 7341
+      },
+      {
+        "path": "docs/guides/web-dashboard.md",
+        "reason": "file-budget",
+        "size": 22933
+      },
+      {
+        "path": "docs/guides/worktrees.md",
+        "reason": "file-budget",
+        "size": 14756
+      },
+      {
+        "path": "docs/hooks/recovery.md",
+        "reason": "file-budget",
+        "size": 1973
+      },
+      {
+        "path": "docs/structured-view/controls.md",
+        "reason": "file-budget",
+        "size": 9014
+      },
+      {
+        "path": "docs/structured-view/interface.md",
+        "reason": "file-budget",
+        "size": 19705
+      },
+      {
+        "path": "docs/structured-view/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 20315
+      },
+      {
+        "path": "docs/assets/web/README.md",
+        "reason": "file-budget",
+        "size": 1801
+      },
+      {
+        "path": "docs/development/internals/plugin-system.md",
+        "reason": "file-budget",
+        "size": 6332
+      },
+      {
+        "path": "docs/development/internals/structured-view.md",
+        "reason": "file-budget",
+        "size": 29929
+      },
+      {
+        "path": "docs/guides/web/dashboard.md",
+        "reason": "file-budget",
+        "size": 13520
+      },
+      {
+        "path": "docs/guides/web/diff.md",
+        "reason": "file-budget",
+        "size": 3413
+      },
+      {
+        "path": "docs/guides/web/settings.md",
+        "reason": "file-budget",
+        "size": 5804
+      },
+      {
+        "path": "docs/guides/web/terminal.md",
+        "reason": "file-budget",
+        "size": 7123
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5540
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 546289
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1104
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1902
+      }
+    ],
+    "omitted_count": 50,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1834,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 56,
+      "complete": false,
+      "omitted": 50,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2a42a72c7a705d85a1b1b5facd00fed5",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/agent-of-empires/agent-of-empires/bdf21c256673c10cdf8e548a6a652b1bedf621cb/22bc1106b960b799/manifest.json",
+  "package_id": "pkg_74dfd2aac9872473eee6f447f3e3b11b29dd3acdefd002a8853e5916ccc77281",
+  "repo": "agent-of-empires/agent-of-empires",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9a0e14d3be411e502cbb8ca989a37fde03c0ab8524976f24a2ba1cb12d80edaf",
+  "snapshot_id": "22bc1106b960b799",
+  "sources": [
+    {
+      "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+      "git_sha": "0c1d247381ad3e23cbd2ef32c8d744abdc77f23d",
+      "lines": 102,
+      "path": "DESIGN.md",
+      "repository": "agent-of-empires/agent-of-empires",
+      "sha256": "01546c573bdbb06327c889cb4eb4bb97493fd4ae649f4d21f1ff43d351dc79b6",
+      "source_id": "src_1c05ab3e42f05b3a8cf11a6815b7c8f9",
+      "stored": "design.md-3dc5dd454e08.md",
+      "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/DESIGN.md"
+    },
+    {
+      "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+      "git_sha": "559b454124ea60101e7e0175697c87deca745fdf",
+      "lines": 162,
+      "path": "README.md",
+      "repository": "agent-of-empires/agent-of-empires",
+      "sha256": "c77ad1ebdda98541523ed6f08098af3a72fb3742a90d6ad032503d1464527537",
+      "source_id": "src_32790870da7a505c80a1053a62d8cf2f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/README.md"
+    },
+    {
+      "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+      "git_sha": "56838b9aa4974e1b14d5ada432e96cfcb834ea50",
+      "lines": 23,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "repository": "agent-of-empires/agent-of-empires",
+      "sha256": "c70eac6bc6472e2f59bee3cb35912a1e53e15ab2b0f264885df2f28c198e6921",
+      "source_id": "src_335840d7d79e5e568b97f6aba532b62d",
+      "stored": "third_party_notices.md-d448b8e7fefe.md",
+      "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+      "git_sha": "a040cebc4ad9c87fb221344bd190bbfbe3d73394",
+      "lines": 365,
+      "path": "docs/api.md",
+      "repository": "agent-of-empires/agent-of-empires",
+      "sha256": "b84ba0f1a51e6bef545e8d2ffccf2fc53b0094f5f6a54dd2f2f60e447c40eddd",
+      "source_id": "src_94422215930c52ccbbbbe48e8ae68797",
+      "stored": "api.md-9eddf4dc51bf.md",
+      "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/api.md"
+    },
+    {
+      "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+      "git_sha": "1f28253399c73bb71e180f27b2f9b249abd3eaf8",
+      "lines": 559,
+      "path": "docs/guides/configuration.md",
+      "repository": "agent-of-empires/agent-of-empires",
+      "sha256": "c56d48c4c37da28e470a098a31e1e21500c4a871a9ad093e80a8833d99a67ef9",
+      "source_id": "src_a893430f24175333954a1aad35e73ea0",
+      "stored": "configuration.md-7174c092c6ae.md",
+      "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/guides/configuration.md"
+    },
+    {
+      "commit": "bdf21c256673c10cdf8e548a6a652b1bedf621cb",
+      "git_sha": "e113a358b774c6231e1d47a74eb285f4f0be0dc9",
+      "lines": 462,
+      "path": "docs/guides/sandbox.md",
+      "repository": "agent-of-empires/agent-of-empires",
+      "sha256": "a4864ef27403dc747bb7214497605c0016dbb669ab24f456d89268f2278f6607",
+      "source_id": "src_619883517a715db7a1f6f518de641211",
+      "stored": "sandbox.md-46fb0e735084.md",
+      "url": "https://github.com/agent-of-empires/agent-of-empires/blob/bdf21c256673c10cdf8e548a6a652b1bedf621cb/docs/guides/sandbox.md"
+    }
+  ],
+  "summary": "Agent of Empires (AoE) is a Rust-based session manager for AI coding agents on Linux/macOS, wrapping tmux sessions with a TUI, web dashboard, CLI, and HTTP API. Evidence covers its runtime features, HTTP API surface, skills management, configuration layering, and development commands. Evidence coverage: 134 of 344 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

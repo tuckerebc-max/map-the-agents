@@ -1,0 +1,760 @@
+{
+  "applied_operation_id": "op_4636c30ebc804bb188e1fdbedec0492e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_706d9884ee617657335128d85a1f4bcc79d5a616e3d2e18d1f685c75f9bec8b3",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 200,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L177-L200"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 39,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L25-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_759707b07b0c28fe2dc825d72d32b683538c284f45d2982cf410c7474ba5b572",
+        "slc_fa631517349c48f9e4ca3c5669e13445059eb3e2201b14d521fdce9805ca33bd"
+      ],
+      "text": "The repo defines 13 specialized agents, each owning one workflow part: Roadmap, Planner, Analyst, Architect, Critic, Security, Implementer, Code Reviewer, QA, UAT, DevOps, Retrospective, and ProcessImprovement."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d0a4d51754cffb43ef8242451bbea844e0f8ee13d0c0263675dd5b84fe91387",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 47,
+          "line_start": 35,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L35-L47"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8cdd85dbed1d2c8ed17004cc43fb443ae2c63b370a30f6a95dc1139fe2f4ed8c",
+        "slc_e8c43d4f8d9bef50c6908914aaa64967eadab080ef518267b274ddebca232d63"
+      ],
+      "text": "Agents carry explicit constraints, e.g. Planner plans without writing code, Implementer follows plans without redesigning, and Security produces findings without implementing remediations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f62af18ad3c6241793e9bc91980badc26a08408c2569ca3e7d20990df0bcc6b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 200,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L177-L200"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 63,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L55-L63"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_759707b07b0c28fe2dc825d72d32b683538c284f45d2982cf410c7474ba5b572",
+        "slc_76ae6ea00d56770aeb41c652697c5cb5bc8027c3de48a39177add0fe969b98dc",
+        "slc_cd17600248ac92331ce0938a6e17e290da9f676491dfddc8c4d9a7a93e8d4a38"
+      ],
+      "text": "Agent definitions are Markdown files (e.g. planner.agent.md, security.agent.md) under vs-code-agents/, intended to be copied into a project's .github/agents/ directory or installed at the VS Code user-profile level."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2cd3fbab82a7579f5103bae6e4881f480d4b0f6d2efb95a5fab97862a78a895b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 263,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L263-L263"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 277,
+          "line_start": 265,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L265-L277"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 281,
+          "line_start": 279,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L279-L281"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_71e4fab8b8aaa12e5a27512b53db1d5160187558a378580681b231593e04401a",
+        "slc_91b733b4e3212e8ac3b4aa28e2453a4ad5475cbeda9381c7be5d3ef500ecfe14",
+        "slc_a389b9de6866cf8feae30b6e0f255d7e7af0dbf589ff2d1a2c69a81f653b9c6e"
+      ],
+      "text": "A skills system provides modular, on-demand instruction sets including memory-contract, analysis-methodology, security-patterns, testing-patterns, release-procedures, and cross-repo-contract, placed in .claude/skills/ (stable) or .github/skills/ (Insiders)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_baeefc3cbcbc2ad83071b9f0d2480ce8957ee388e2d4ca2c0cbb8b7208df2804",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L77-L77"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 84,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L83-L84"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 106,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L104-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fdfc69ebdaecada8221a913f2d40ead1318d23016de41749cbccd5c1e597ca1",
+        "slc_3eae0680f0cbfcf73a59bde969c473a5380096eb00bbdd0ef87a0e7dbd77bb19",
+        "slc_55f306dce5d97ba918abc14f14e906ad43ce81f90c032ee434f232677a219484"
+      ],
+      "text": "Agents are invoked in VS Code Copilot Chat by selecting them from the agents dropdown (not with the @ symbol), or optionally via GitHub Copilot CLI with commands like copilot --agent planner."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ce1f21009b619978b1eddf0fb0832d36923ccddc3b7966336c69d5a5ae89177",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 379,
+          "line_start": 376,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L376-L379"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 421,
+          "line_start": 406,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L406-L421"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 312,
+          "line_start": 308,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L308-L312"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67bd99593729db7430d2ea966adbe9b5b8fced154530bbf815f85ef381de0c12",
+        "slc_bec5a6e5b55d7c93114c272caecb5ff9a9b429686fd4661f7d8505b0347c002f",
+        "slc_f143738945ff0f2e416585844ad363e0904e4876f2e2987eb9d8f5571eda5817"
+      ],
+      "text": "Flowbaby exposes agent tools #flowbabyStoreSummary and #flowbabyRetrieveMemory, used with structured JSON payloads carrying query, decisions, rationale, and artifact metadata."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_678bd2ab1b9bc91e0548d625a3db570020da99d2200002d7c1043bbf8ffb8f00",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 395,
+          "line_start": 391,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L391-L395"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 358,
+          "line_start": 358,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L358-L358"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 368,
+          "line_start": 365,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L365-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bdf40e88d976a7236d13694d6346bafaefe8fe93fff92bae6e4a4ae881c88ab",
+        "slc_3528c425c2e9398d41a7d597a36b4c20e4d1eb15416088ee957d03acb97027d0",
+        "slc_eb84b12100cc50edeaad0bfd60d348aba052ac1ef991be9d707edbf0802fd61a"
+      ],
+      "text": "All agents load a memory-contract skill governing Flowbaby usage: retrieve before decisions, store at value boundaries (including every 5 turns), use specific hypothesis-driven queries, and acknowledge retrieved memory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d80b7a6681aa592db734a8270c04c10e9c38de0218351736265dd54ad01d815e",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 306,
+          "line_start": 306,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L306-L306"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L90-L90"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 312,
+          "line_start": 308,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L308-L312"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00352c5597f6f476c4143cfef722a889ff830285b1193cc2b01054dbce18f7c7",
+        "slc_5c34513701aa83652ea807002b4d8899e34df91f9465be68c45736a7c3e68e98",
+        "slc_f143738945ff0f2e416585844ad363e0904e4876f2e2987eb9d8f5571eda5817"
+      ],
+      "text": "Flowbaby provides workspace-scoped long-term memory in a local knowledge graph with hybrid graph-vector search; the README states agents fall back to stateless behavior without it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f535595cd8fc0e62b71d6a72a3d7aff31963dd92152389a291227802bd52296f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 90,
+          "line_start": 79,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L79-L90"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 134,
+          "line_start": 129,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L129-L134"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 126,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L124-L126"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 153,
+          "line_start": 148,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L148-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26d9b880d97ff6a3a08514f21632cc4a98ffca351c3a9782cf23e2e38788f61f",
+        "slc_6f207cf2f4465fec6a80e0c67be77ff71e5cbb995ab50d495efa8f5f4777dce8",
+        "slc_92c2053495dc16bb78c68158e1058e58045b3372b275fa26cc48859c5063eff6",
+        "slc_d6f30a0e7d9f4a88c2111055c573c3aaf9b83d43358c76f0b8bfff17e752e4de"
+      ],
+      "text": "A typical pipeline runs Roadmap → Planner → Analyst/Architect/Security/Critic → Implementer → Code Reviewer → QA → UAT → DevOps, with documented patterns including an investigation branch and a security gate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e18849a789eb2578ecce0e8b4b3f79970a93aedf86f24f3afaca745cf57e63c5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 295,
+          "line_start": 289,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L289-L295"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 321,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L318-L321"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 298,
+          "line_start": 297,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L297-L298"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10293b5fb1bd91c19d6d945abcf14a768940edce74c71b974845b82834387d3b",
+        "slc_13f23e7858db7977ede5ef78b2085d19565c28841605a755e4cd09cbc1afb9b9",
+        "slc_a1fa357b1dd9a1875fcbdf76ad7aaaa0aeff28f9805692166bd5ff90ae0c0b65"
+      ],
+      "text": "Agents hand off via a structured template (source agent, artifact path, status, key context, recommended action), and Planner, Implementer, QA, Analyst, and Security document invoking each other as scoped subagents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e4410ad90882b3d6192781296375d23fbf410dc5b0200c8dbaa57a4f53ac63c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 240,
+          "line_start": 230,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L230-L240"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 64,
+          "line_start": 53,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L53-L64"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L148-L148"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 186,
+          "line_start": 184,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L184-L186"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0910842fbf4f96eb54979fde63a959a9845ee80b80ed56d8f03f0987c86acef0",
+        "slc_441a40ee34ed5f687d13d8a292cdf2c45bed1b8d5a04d70efdc2e31de6432c14",
+        "slc_d5ab443e775da64d58e67234a600b870a5b09f51e4d0003f4d65a0856848e69d",
+        "slc_e94a7480aa53bcfecd768ca592718da2d8954fc847793fa0cf3b190764997cb7"
+      ],
+      "text": "The workflow is document-driven: agents write Markdown artifacts into agent-output/ subfolders (planning, analysis, security, qa, etc.) with sequential NNN naming, status fields, and closure into closed/ subfolders."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3dcf52e09a293b8a48971a00354ec04249984a3828ce5ba846db54352935535e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L151-L151"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 47,
+          "line_start": 35,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L35-L47"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+          "line_end": 160,
+          "line_start": 157,
+          "path": "AGENTS-DEEP-DIVE.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md#L157-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_455ddf1f9ae898fb2cb2d4953afe1f013cc1de456b3e6dbd6488444e846af48b",
+        "slc_8cdd85dbed1d2c8ed17004cc43fb443ae2c63b370a30f6a95dc1139fe2f4ed8c",
+        "slc_f2f27b394543f91f2bc6219ad2c7f2dc3d5af3b1b0dd477e780ca708aea1f0ab"
+      ],
+      "text": "Quality gates are built in: Critic reviews plans, Code Reviewer gates code before QA and can reject, Security audits at any phase, and DevOps releases only with explicit user approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa4dba30575a6c1bb0b0b7b2e501bd57143ab28e568cae9e4f32242143ca8125",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L88-L88"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 339,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L338-L339"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a76021fe740285a7e78008f822c4894323a3bb7e9e0b0de1f0e67aad3d1c43a4",
+        "slc_d59ce7eed98a39a9a5d36c7f3066d3419a004732b224109add464abcc949838e"
+      ],
+      "text": "Requirements are VS Code with GitHub Copilot; for memory, the Flowbaby extension plus Python 3.10+. The README states these agents require Flowbaby to function correctly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cae3cfe55c559b186903c08b6189c994d9735e8c2dce2e5d4d17e3109b192fb2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L108-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d9499653f9c0b27ce597404da7a261cf63e3c86be3960e0022009f4b8666d12"
+      ],
+      "text": "A documented upstream Copilot CLI bug means user-level agents in ~/.copilot/agents/ are not loaded; the recommended workaround is per-repository .github/agents/ placement."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f93700e454a8c7c3057b9ade14a0d7a2d64465d9cee84ea03c38bff10212241",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 325,
+          "line_start": 325,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L325-L325"
+        },
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 332,
+          "line_start": 332,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L332-L332"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_211f52736df9061bb9ee423d267d9f0ed2d3aa5dc8ff5446748cdb831f2020ce",
+        "slc_6438c619c4769a44abccc4acff225560ee4f67ed23d62ed0675067a081c34b06"
+      ],
+      "text": "Repository development practice: contributions are welcome, and the repo runs an automatic markdownlint-cli2 check in GitHub Actions on pushes and PRs touching .md files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a02e28628bcd81723183da7836797d2924630366d60299a1cd32a9ad291dd481",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+          "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "groupzer0/vs-code-agents",
+          "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md#L98-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5584209302c613019d5d8ce7143642b70d39885f15b08c94a0e2fd84d01f33d1"
+      ],
+      "text": "Flowbaby reportedly governs memory usage and evaluation limits for these agents, suggesting an evaluation mechanism exists in the memory layer, though no benchmark results appear in the evidence."
+    }
+  ],
+  "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 354,
+        "path": "README.md",
+        "size": 15654
+      },
+      {
+        "lines": 1140,
+        "path": "AGENTS-DEEP-DIVE.md",
+        "size": 41909
+      },
+      {
+        "lines": 396,
+        "path": "USING-AGENTS.md",
+        "size": 16699
+      },
+      {
+        "lines": 31,
+        "path": "CHANGELOG.md",
+        "size": 1429
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 15,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 57,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_ae4e7166212e5f81afcfe69e88af9689",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/groupzer0/vs-code-agents/c28eb5fe2cd87a362cc6fafefe3926712b0be482/eb89d19d5a12c1be/manifest.json",
+  "package_id": "pkg_abf7fadd3b1a40e8cc1a4c699aead841c471357496b9e81b203feef8862f701b",
+  "repo": "groupzer0/vs-code-agents",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5ad8210b282a7e5a63e803e45260aa31c9466fdecc0d5fa4064b75ba29e7ab82",
+  "snapshot_id": "eb89d19d5a12c1be",
+  "sources": [
+    {
+      "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+      "git_sha": "cc9457fd1c3093171bebda895087e1b4167b0186",
+      "lines": 1140,
+      "path": "AGENTS-DEEP-DIVE.md",
+      "repository": "groupzer0/vs-code-agents",
+      "sha256": "70290d85dd5bccd6420c66be20f41716ce4c7903a272e4764a85c1c9c00eef01",
+      "source_id": "src_908e994eb4a857149d9f66544266cfe8",
+      "stored": "agents-deep-dive.md-132f09b2d77f.md",
+      "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/AGENTS-DEEP-DIVE.md"
+    },
+    {
+      "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+      "git_sha": "9c83b0a3362e83e9f035c56cf894fea584895000",
+      "lines": 31,
+      "path": "CHANGELOG.md",
+      "repository": "groupzer0/vs-code-agents",
+      "sha256": "63da5754a31f6bb0169149661492b7fae2e8715da62c8572f9dabdb3ba102e28",
+      "source_id": "src_ab4c38b4112f5069a9cdba154b84dc2a",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/CHANGELOG.md"
+    },
+    {
+      "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+      "git_sha": "fd78a7aa85040da8b595394b09c64931fa72fcae",
+      "lines": 354,
+      "path": "README.md",
+      "repository": "groupzer0/vs-code-agents",
+      "sha256": "eb4da715244f90d6c6013fc976ebd04d38b91c4b1a02968ab53678ab34ad38e5",
+      "source_id": "src_899d0b0aedac560ba5cec6025bf1724c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/README.md"
+    },
+    {
+      "commit": "c28eb5fe2cd87a362cc6fafefe3926712b0be482",
+      "git_sha": "31d57b6f05d49851153b83b33e87b4cca435301e",
+      "lines": 396,
+      "path": "USING-AGENTS.md",
+      "repository": "groupzer0/vs-code-agents",
+      "sha256": "e2b2ff3bb8252ad94400381b68fb201fff9806fc420a0da59f2976f7696a951f",
+      "source_id": "src_500e4d5457cf5edb8ca347e4fdcc258e",
+      "stored": "using-agents.md-f4b29dfc4173.md",
+      "url": "https://github.com/groupzer0/vs-code-agents/blob/c28eb5fe2cd87a362cc6fafefe3926712b0be482/USING-AGENTS.md"
+    }
+  ],
+  "summary": "The repository ships a set of Markdown-defined GitHub Copilot custom agents (Flowbaby Agent Team) forming a document-driven multi-agent development workflow, with optional Flowbaby-based persistent memory. Evidence is documentation-only (README and deep-dive guide); no runtime code is shown. Evidence coverage: 156 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

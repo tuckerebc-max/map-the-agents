@@ -1,0 +1,415 @@
+# OpenSPDD
+
+> **结构化提示词驱动开发** — 让 AI 编码的 Prompt 成为可执行的设计契约
+
+[English](README.md) | [设计思想](docs/design-philosophy.zh-CN.md)
+
+OpenSPDD 是一套面向 AI 编码时代的结构化提示词驱动开发方法论及跨平台 CLI 工具。它将 AI 编码的 Prompt 从"一次性输入"升级为"可执行的设计契约"，实现设计与实现的双向同步。
+
+## Star History
+
+<a href="https://star-history.dera.page/#gszhangwei/open-spdd&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=gszhangwei/open-spdd&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=gszhangwei/open-spdd&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=gszhangwei/open-spdd&type=date&legend=top-left" />
+ </picture>
+</a>
+
+## 为什么需要 OpenSPDD？
+
+现有的 AI 编码工具虽然也会生成 plan 文档或执行计划，但这些文档存在根本性的局限：
+
+| 问题         | 典型 Plan 文档                    | REASONS Canvas                                         |
+| ------------ | --------------------------------- | ------------------------------------------------------ |
+| **本质定位** | 任务清单（Task List）             | 设计契约（Design Contract）                            |
+| **约束力**   | 无 — AI 可自由发挥                | 有 — Norms 定义"如何做"，Safeguards 定义"不能做什么"   |
+| **详细程度** | 高层描述：_"创建 BillingService"_ | 精确规格：_方法签名、参数类型、错误处理、依赖注入方式_ |
+| **可追溯性** | 无 — 代码改了文档不更新           | 有 — `/spdd-sync` 支持反向同步                         |
+| **验证标准** | 模糊 — _"完成即可"_               | 明确 — Safeguards 中定义精确的错误消息、HTTP状态码     |
+| **依赖管理** | 隐式 — AI 自行推断                | 显式 — Operations 定义严格的执行顺序和依赖关系         |
+
+**核心洞察**：Plan 是"建议"，REASONS Canvas 是"契约"。
+
+> 📖 深度阅读：[AI 不是不够聪明，是太有"想法"了 — 为什么 AI 编码需要结构化提示词](docs/design-philosophy.md)
+
+## REASONS Canvas 框架
+
+REASONS Canvas 是一个 7 维度的结构化设计框架：
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                        REASONS Canvas                                │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  R - Requirements    需求本质，回答"为什么做"                         │
+│  E - Entities        领域模型（Mermaid 类图），回答"涉及什么概念"      │
+│  A - Approach        方案策略与权衡，回答"用什么方式"                  │
+│  S - Structure       架构层次/继承/依赖，回答"组件如何组织"           │
+│  O - Operations      精确的实现任务序列，回答"具体怎么做"             │
+│  N - Norms           编码规范与模式，回答"按什么标准"                 │
+│  S - Safeguards      约束与护栏，回答"什么不能做"                     │
+│                                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**为什么是 7 个维度？**
+
+- **R+E+A** = 设计决策的"Why"和"What"
+- **S+O** = 实现路径的"How"
+- **N+S** = 质量保障的"Guardrails"
+
+三者缺一不可：缺少 N+S，AI 会自由发挥；缺少 S+O，AI 会随意架构；缺少 R+E+A，AI 不理解上下文。
+
+## 核心工作流
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                         SPDD 完整工作流                              │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  业务需求                                                            │
+│      │                                                               │
+│      ▼                                                               │
+│  /spdd-analysis ──────→ 战略级分析（概念识别、方案方向、风险评估）     │
+│      │                                                               │
+│      ▼                                                               │
+│  /spdd-reasons-canvas ─→ REASONS Canvas 结构化设计文档               │
+│      │                                                               │
+│      ▼                                                               │
+│  /spdd-generate ───────→ AI 按契约生成代码（不自由发挥）             │
+│      │                                                               │
+│      ▼                                                               │
+│  代码审查/重构                                                       │
+│      │                                                               │
+│      ▼                                                               │
+│  /spdd-sync ───────────→ 代码变更反向同步回设计文档                  │
+│      │                                                               │
+│      ▼                                                               │
+│  设计文档与代码保持一致 ──────→ 下一轮开发基于准确的设计             │
+│                                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**核心原则**：_"When reality diverges, fix the prompt first — then update the code."_（当现实与设计分歧时，先修改 Prompt，再更新代码）
+
+## 核心特性
+
+- **跨平台支持**：适配 Cursor、Claude Code、GitHub Copilot、Antigravity、OpenCode、Codex
+- **自动检测**：自动识别当前 AI 编码环境
+- **单一二进制**：所有模板通过 Go embed 嵌入，无外部依赖
+- **双向同步**：设计文档与代码保持同步
+- **交互式 UI**：现代化终端界面进行命令选择
+
+## 安装
+
+### Homebrew (macOS/Linux)
+
+```bash
+brew install gszhangwei/tools/openspdd
+```
+
+或：
+
+```bash
+brew tap gszhangwei/tools
+brew install openspdd
+```
+
+升级到最新版本：
+
+```bash
+brew upgrade openspdd
+```
+
+### Go Install
+
+```bash
+go install github.com/gszhangwei/open-spdd/cmd/openspdd@latest
+```
+
+二进制安装到 `$(go env GOPATH)/bin/openspdd`（通常是 `~/go/bin/openspdd`）。请确保该目录已加入 `$PATH`：
+
+```bash
+# zsh
+echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+
+# bash
+echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
+
+第一次运行 `openspdd` 时，如果检测到所在目录不在 `$PATH` 中，会打印一次性的提示，告诉你针对当前 shell 应该执行的命令。
+
+### 一键安装脚本
+
+如果你 clone 了仓库，可以使用 `scripts/install.sh`，它会调用 `go install` 并自动打印 PATH 配置指引：
+
+```bash
+./scripts/install.sh           # 安装 @latest
+./scripts/install.sh v1.2.3    # 安装指定 tag
+```
+
+### 下载二进制
+
+从 [GitHub Releases](https://github.com/gszhangwei/open-spdd/releases) 下载。
+
+### 卸载
+
+`openspdd uninstall` 会自动检测当前二进制是通过哪种方式安装的（Homebrew 或 `go install`），然后执行对应的清理操作。命令在执行前会先打印计划，默认需要交互式确认。
+
+```bash
+# 仅预览，不做任何改动
+openspdd uninstall --dry-run
+
+# 交互式（默认）：打印计划并询问确认
+openspdd uninstall
+
+# 非交互式（例如脚本中使用）：跳过确认提示
+openspdd uninstall --yes
+```
+
+对于 Homebrew 安装，等价于执行 `brew uninstall gszhangwei/tools/openspdd` 并清理首次运行的提示标记文件。对于 `go install` 安装，会直接删除已解析路径下的二进制文件。如果无法判断安装方式（例如手动拷贝的二进制），`uninstall` 会拒绝执行并打印解析后的路径，由用户自行删除。
+
+> **范围**：只会删除 openspdd 本身的二进制和 openspdd 自己的首次运行标记文件。各个用户项目中已生成的 SPDD 命令模板（如 `.cursor/commands/spdd-*.md`、`.claude/commands/spdd-*.md` 等）属于用户文件，不会被删除。Homebrew tap `gszhangwei/tools` 也会保留（其中可能还有别的工具）。
+
+## 快速开始
+
+```bash
+# 打印已安装版本
+openspdd -v
+
+# 进入项目目录
+cd your-project
+
+# 初始化（自动检测 AI 工具）
+openspdd init
+
+# 生成 SPDD 命令
+openspdd generate --all
+```
+
+然后在 AI 编码工具中，按照完整的 SPDD 工作流操作：
+
+```bash
+# 第一步：战略级分析（复杂功能推荐）
+/spdd-analysis @requirements/user-registration.md
+
+# 第二步：根据分析生成 REASONS Canvas
+/spdd-reasons-canvas @spdd/analysis/xxx.md
+
+# 第三步：根据 REASONS Canvas 生成代码
+/spdd-generate @spdd/prompt/xxx.md
+
+# 第四步：代码审查/重构后，同步变更回设计文档
+/spdd-sync @spdd/prompt/xxx.md
+```
+
+对于简单功能，可以跳过第一步，直接提供需求描述：
+
+```bash
+/spdd-reasons-canvas 实现用户注册功能，支持邮箱验证
+```
+
+## 使用方法
+
+### 初始化环境
+
+```bash
+# 自动检测并初始化
+openspdd init
+
+# 手动指定工具
+openspdd --tool cursor init
+```
+
+### 列出命令
+
+```bash
+# 列出可用命令（核心 + 工具特定）
+openspdd list
+
+# 列出可选命令
+openspdd list --optional
+
+# 列出所有命令
+openspdd list --all
+
+# 按类别筛选
+openspdd list -c Development
+```
+
+### 生成命令
+
+```bash
+# 生成所有默认命令
+openspdd generate --all
+
+# 交互式选择
+openspdd generate
+
+# 生成特定命令
+openspdd generate spdd-generate
+
+# 强制覆盖
+openspdd generate --force spdd-generate
+```
+
+### 全局标志
+
+```bash
+openspdd --tool cursor <command>
+openspdd --tool claude-code <command>
+openspdd --tool antigravity <command>
+openspdd --tool github-copilot <command>
+openspdd --tool opencode <command>
+openspdd --tool codex <command>
+```
+
+## 支持的环境
+
+| 工具           | 检测方式                                                      | 配置目录                   |
+| -------------- | ------------------------------------------------------------- | -------------------------- |
+| Cursor         | `.cursor/`, `.cursorrules`                                    | `.cursor/commands/`        |
+| Claude Code    | `.claude/`, `CLAUDE.md`                                       | `.claude/commands/`        |
+| Antigravity    | `.antigravity/`                                               | `.antigravity/commands/`   |
+| GitHub Copilot | `.github/copilot-instructions.md`, `.github/copilot-prompts/` | `.github/copilot-prompts/` |
+| OpenCode       | `.opencode/`, `opencode.json`                                 | `.opencode/commands/`      |
+| Codex          | `.codex/`, `.codex/config.toml`                               | `.agents/skills/`          |
+
+OpenCode 的命令名由 Markdown 文件名决定（例如 `spdd-analysis.md` 对应 `/spdd-analysis`）。为避免 OpenCode 中的命令别名冲突，生成到 OpenCode 的命令文件会有意省略 frontmatter `name` 字段。
+
+### Codex Skills
+
+Codex 会以项目级 skill 包的形式生成命令模板，输出到 `.agents/skills/<id>/SKILL.md`（这是一个跨厂商的开放标准目录，详见 [agentskills.io](https://agentskills.io/)），而不是扁平的命令文件。在 Codex CLI / IDE 扩展中，请使用 `$spdd-analysis` 等形式。生成的 skill 默认仅支持显式调用（`agents/openai.yaml` 中 `allow_implicit_invocation: false`）；如需让 Codex 自动隐式调用，请在生成时附加 `--allow-implicit`。**信任模型说明**：在部分 Codex 版本中，未受信任项目的 skill 会被静默忽略，如果生成后 skill 没有出现，请确认你的 `~/.codex/config.toml` 中已将该项目标记为受信任（参考 [openai/codex#9752](https://github.com/openai/codex/issues/9752)）。如果 skill 仍未出现，请按官方文档所述重启 Codex。
+
+### GitHub Copilot 文件结构
+
+```
+.github/
+├── copilot-instructions.md     # 主指令文件（支持标记合并）
+└── copilot-prompts/
+    ├── spdd-analysis.md
+    ├── spdd-reasons-canvas.md
+    ├── spdd-generate.md
+    ├── spdd-prompt-update.md
+    └── spdd-sync.md
+```
+
+## 可用命令
+
+### 核心命令
+
+| 命令                  | 描述                              |
+| --------------------- | --------------------------------- |
+| `spdd-analysis`       | 需求的战略级分析                  |
+| `spdd-reasons-canvas` | 生成 REASONS-Canvas 结构化 Prompt |
+| `spdd-generate`       | 从结构化 SPDD Prompt 文件生成代码 |
+| `spdd-prompt-update`  | 更新现有 SPDD Prompt 文件         |
+| `spdd-sync`           | 将代码变更同步回 SPDD Prompt 文件 |
+
+### 工具特定命令
+
+| 工具           | 命令                   | 描述               |
+| -------------- | ---------------------- | ------------------ |
+| GitHub Copilot | `copilot-instructions` | Copilot 主指令文件 |
+
+### 可选命令（Beta）
+
+以下命令为 Beta 版本，不会默认安装，可手动安装使用：
+
+| 命令               | 描述                                                 |
+| ------------------ | ---------------------------------------------------- |
+| `spdd-story`       | 将功能需求拆解为符合 INVEST 原则的 Story，含验收标准 |
+| `spdd-code-review` | 对照 REASONS-Canvas 审查代码，检测意图偏移与约束违规 |
+| `spdd-api-test`    | 生成基于 cURL 的自包含 API 测试脚本                  |
+| `spdd-reverse`     | 对既有代码进行逆向工程，生成 REASONS-Canvas 提示，用于遗留代码接入 |
+
+```bash
+# 列出所有可选命令
+openspdd list --optional
+
+# 安装特定可选命令
+openspdd generate spdd-story
+openspdd generate spdd-code-review
+openspdd generate spdd-api-test
+openspdd generate spdd-reverse
+```
+
+## Plan vs REASONS Canvas：示例对比
+
+**场景**：实现用户注册功能
+
+**典型 Plan 文档**：
+
+```
+1. 创建 UserRegistrationController
+2. 创建 UserRegistrationService
+3. 创建 UserRegistrationRequest DTO
+4. 实现邮箱验证
+5. 保存用户到数据库
+```
+
+**REASONS Canvas（Operations 节选）**：
+
+```markdown
+### 创建 UserRegistrationService - `UserRegistrationServiceImpl`
+
+1. **职责**: 处理用户注册业务逻辑
+2. **包路径**: `com.example.user.service.impl`
+3. **实现接口**: `UserRegistrationService`
+4. **依赖注入** (构造器注入):
+   - `UserRepository userRepository`
+   - `EmailValidator emailValidator`
+   - `PasswordEncoder passwordEncoder`
+5. **方法**:
+   - `register(UserRegistrationRequest request): UserRegistrationResponse`
+     - **输入校验**: 调用 `emailValidator.validate(request.getEmail())`
+     - **业务逻辑**:
+       1. 通过 `userRepository.existsByEmail()` 检查邮箱是否已存在
+       2. 如果存在，抛出 `EmailAlreadyExistsException`，消息为 "Email already registered"
+       3. 通过 `passwordEncoder.encode()` 加密密码
+       4. 创建 User 实体，状态为 `PENDING_VERIFICATION`
+       5. 通过 `userRepository.save()` 保存
+     - **异常处理**: 让异常传播到 GlobalExceptionHandler
+6. **注解**: `@Service`, `@Transactional`
+```
+
+**差距一目了然**：Plan 说"做什么"，REASONS Canvas 规定"精确怎么做"。
+
+## 适用场景
+
+| 场景           | 推荐程度   | 理由                                   |
+| -------------- | ---------- | -------------------------------------- |
+| 企业级功能开发 | ⭐⭐⭐⭐⭐ | 需要设计-实现可追溯性，长期可维护      |
+| 团队协作项目   | ⭐⭐⭐⭐⭐ | 统一的 AI 编码规范，减少风格冲突       |
+| 复杂重构任务   | ⭐⭐⭐⭐   | Operations 的严格顺序防止依赖混乱      |
+| 跨 AI 工具协作 | ⭐⭐⭐⭐   | 同一份 REASONS Canvas 在不同工具间通用 |
+| 快速原型/MVP   | ⭐⭐       | 可能过重，但如果后续需要维护仍值得     |
+| 一次性脚本     | ⭐         | 投入产出比不高                         |
+
+## 从源码构建
+
+```bash
+git clone https://github.com/gszhangwei/open-spdd.git
+cd open-spdd
+go build -o openspdd ./cmd/openspdd
+go install ./cmd/openspdd
+```
+
+## 测试
+
+```bash
+# 运行所有测试
+go test ./tests/...
+
+# 详细输出
+go test ./tests/... -v
+
+# 运行特定模块测试
+go test ./tests/detector/...
+go test ./tests/templates/...
+```
+
+## 许可证
+
+[MIT License](LICENSE)

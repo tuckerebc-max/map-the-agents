@@ -1,0 +1,852 @@
+{
+  "applied_operation_id": "op_1afee7b0543d40c39af07e5c5c4120ac",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_67d304b32d49e6d6804bf7e4cb1f997137ee6f9fc06767fee16450e420195454",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "bfb8ac5c12e4ef20d46e004d09ec637e41f0bce9",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31180ff6e6b4948aad801466b5c8780cb6f4eaef47bae844a9c0cbc8b856b8d2"
+      ],
+      "text": "Perles is a terminal UI for beads issue tracking powered by a custom BQL query language supporting boolean search, date filters, dependency traversal, and custom kanban views."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d023e10be69a11ffa689e2a4c84458c13c638bd91e6f2155b7cf65ff86bebe59",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0e54f68addbf4619d784bab4bd70896e5d3db7a2",
+          "line_end": 68,
+          "line_start": 62,
+          "path": "docs/getting-started.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/getting-started.md#L62-L68"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0e54f68addbf4619d784bab4bd70896e5d3db7a2",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "docs/getting-started.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/getting-started.md#L72-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bbf7a1227277dcef6e99a4948794ec19de387b11ec522a1ce1f9222ddfb13b6",
+        "slc_a4bca1f3b04f759547833dc6f29536910474faeac0051078070868d26f8b7d56"
+      ],
+      "text": "The CLI supports flags including --beads-dir, --config, --version, --help, and --debug, plus subcommands: perles (TUI), themes, workflows, and playground."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d91c901528c90de287e78daa34aa3331a8792b2089765c9fdacf0a3b4017b6b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0e54f68addbf4619d784bab4bd70896e5d3db7a2",
+          "line_end": 90,
+          "line_start": 85,
+          "path": "docs/getting-started.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/getting-started.md#L85-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cba0a49c47372cf48df1ecebdc6cde29c1f298f8a728edcf7aa1a6bb09779ac3"
+      ],
+      "text": "Global keybindings include ctrl+space to switch between Kanban and Search modes, ctrl+o to enter Orchestration/Dashboard mode, ? for help, and ctrl+c to quit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db79fa544a6d6824eec2af225c6372862eda6ef3abb381a67a65d57dfa95b1ab",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 73,
+          "line_start": 66,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L66-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63ae72dbd08605250eb9ef9e9962920c1a87c7a2fd281e462c556ca009ec5ae2"
+      ],
+      "text": "The Control Plane comprises ControlPlane (lifecycle entry point), Registry (in-memory workflow storage), Supervisor, ResourceScheduler, HealthMonitor, and CrossWorkflowEventBus."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5fe13e564fac56548fb95e11f15250fa0c114e1fee368ddd63877e69fa36a9ba",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "3b4bc370c954e9e814f0e68fbb1ceae8568a833b",
+          "line_end": 11,
+          "line_start": 10,
+          "path": "ORCHESTRATION.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/ORCHESTRATION.md#L10-L11"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "3b4bc370c954e9e814f0e68fbb1ceae8568a833b",
+          "line_end": 8,
+          "line_start": 6,
+          "path": "ORCHESTRATION.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/ORCHESTRATION.md#L6-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a00c71ee5acd57c43a73d22aaf380b0a7621da76cea367447d8d4573621524f",
+        "slc_88b875cfa9a0700aac5ed22e636d315a082e7a5d26f59b0ecc11a2fa074d1e5b"
+      ],
+      "text": "Orchestration mode is a multi-agent control plane where a coordinator headless agent spawns, replaces, and retires worker agents via built-in MCP tools, with multiple workflows run in parallel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68f82f927b6499f0b63334cf5fb9d06e259ebd2f9fadd0c9a207804df49b0bc9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L3-L3"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L19-L19"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "3b4bc370c954e9e814f0e68fbb1ceae8568a833b",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "ORCHESTRATION.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/ORCHESTRATION.md#L26-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bd45cccd6b461f8bc2a5f6a6510df62df5f82fcad75206c496ccccf1ca4d23e",
+        "slc_36322fbb5160ecd31abc1d1df192297b803df7248be08b43f0e368a540c7ec1c",
+        "slc_4c26549b8087b429cdc5dd5636b63346ca68db318941e88d31e81d78b86f9a33"
+      ],
+      "text": "Orchestration providers include Claude, Amp, Codex, OpenCode, and Cursor Agent CLI; coordinator and worker clients can be mixed, e.g. cursor coordinator with claude workers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ef6f051824f29988f18b9657fd327695e71b43f41d44bdd19d0ad813380dd2f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L9-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7463df8ac94b9686063f03d033dcd26d05dff36eb6a9fae218e080d2ce374f62"
+      ],
+      "text": "The Control Plane supports multiple concurrent workflows with resource governance, health monitoring with stuck-workflow recovery, a dashboard TUI, and unified event aggregation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_095bacad848204c4350d642916208f241e501dfd657705467a90ed59b8500359",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "3b4bc370c954e9e814f0e68fbb1ceae8568a833b",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "ORCHESTRATION.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/ORCHESTRATION.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3244b659d45ccc2b9614476387c76f8c550c728591ed908d407bf1f96e1add26"
+      ],
+      "text": "The documentation warns that orchestration mode spawns headless AI agents that run with full permissions and can incur significant cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f667685ed442c4a2d0da97b271e381e793358542db02b964e9a5471788e0fab3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "bfb8ac5c12e4ef20d46e004d09ec637e41f0bce9",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/README.md#L43-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c26472e43a2eacc8341b8e769bd5e5b0c07947b589d71b4dd47729c90c3c1b0b"
+      ],
+      "text": "Perles requires a beads or beads-rust project with a .beads directory and a minimum beads database version of v0.62.0, upgradable via bd migrate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_76bf15a24d7e2c3d90352a377fd0f0cea1008b57ecc7460d6f62587266ad3307",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L74-L74"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0e54f68addbf4619d784bab4bd70896e5d3db7a2",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "docs/getting-started.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/getting-started.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8772a8972ada47bbea4bc4ff9e156a7aa4077d4aacfdb3375e990bba3df4961c",
+        "slc_9a95cfd075804123c1f539631cc9bcdc5aafdbf718b9380d85c6c57457fe2afd"
+      ],
+      "text": "Using the Cursor provider requires the cursor-agent CLI on PATH; installing from source requires Go 1.27+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae865c03813fb4c44446b647af734672451ce92b2e72db0cc8bcf004ed8d52ac",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L102-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_87585b70f9bbfa2b7afabb592be1d7278accdacda5cf9ce0b940febafec78e04"
+      ],
+      "text": "With the Cursor provider, token and cost fields show zero because Cursor's stream-json output lacks usage and cost data."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5487d2c58aa59d90888259336c8f2d28a0b823d8d2dc14049b98e1503155f97a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L106-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a3bb2c56b2810aa9a45c1ca6366435c95f839f6fc25ce4c2c704dbcd528dfc17"
+      ],
+      "text": "Cursor CLI does not support tool filtering flags, so all agent tools remain enabled and the DisallowedTools config field is silently ignored for that provider."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca60a241d71e0e380f83af37ead67cdb5acd88eb87175b101011a3f1d88c8516",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L62-L62"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L121-L121"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L41-L41"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L114-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eb4681bca57357bf58ff8fc786a08f6b7ec2512b53670892c63241ae5c9ac2bc",
+        "slc_ec74d688d75517a493091ce5e22749a990788d167c7d2accf9798b64cc3f6a6a",
+        "slc_f80c13c88c5d86f6073f6833a1d25e6fa334c6dcceda0d30d262aea228f1c954",
+        "slc_fc0ce1010054f7f43882c8e872a254a8dfe34d02c71abf6a0175f426151ce5bc"
+      ],
+      "text": "Because Cursor reads MCP config only from .cursor/mcp.json, Perles writes role-specific server entries (orchestrator, per-worker, observer) into that shared file using a read-merge-write pattern."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_503e285b1c2946cadebdc933aec798870296aca511fa21ad49d1fd537a77bbe9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L66-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63d1280f7ca6bd29690b470a4e547caba519028fca79078bc01b30e59ea9a635"
+      ],
+      "text": "Since Cursor lacks --append-system-prompt, Perles prepends the system prompt to the main prompt with a blank line separator, the same approach used for OpenCode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e3d36677ff0027f70548783283f85b5471fa4b8a435b3ab55768dc95fc6f1347",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 261,
+          "line_start": 258,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L258-L261"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 267,
+          "line_start": 263,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L263-L267"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 249,
+          "line_start": 244,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L244-L249"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 73,
+          "line_start": 66,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L66-L73"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 253,
+          "line_start": 251,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L251-L253"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 273,
+          "line_start": 269,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L269-L273"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d315480d37b385c5863d4595505430c1fd3c6df57abc4872c3cc846b815bda7",
+        "slc_49e33b3370735c4bf615753db9c0ab9b756a86f457d8c1dce7e5274ae74dfaa7",
+        "slc_5657bc1cf240fa52b82b208d7bda409a50973e9d52576dea0575ff0c11d6e963",
+        "slc_63ae72dbd08605250eb9ef9e9962920c1a87c7a2fd281e462c556ca009ec5ae2",
+        "slc_78aaed3d1edbd0aa1044a3afbbe43d0ee3e50b48ac74e1ecb83503665d7105e1",
+        "slc_a9e6d21a5e3e9f2d788f66ef23de6cfbe2d0f0739f59c82c31c4ff767c8fa0a0"
+      ],
+      "text": "Workflow instances track identity, state, priority, labels, timestamps, runtime infrastructure/session/MCP port, token budget, and last heartbeat/progress times; the Registry stores them in memory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e82b99eea7f379e5d9b27ddbbea96abd6a3007ce00b429e1f9fb3518851c1fc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 96,
+          "line_start": 94,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L94-L96"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 92,
+          "line_start": 90,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L90-L92"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+          "line_end": 86,
+          "line_start": 84,
+          "path": "docs/CURSOR_AGENT.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md#L84-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73da4fb4f56d74f8e0a2ad654d6529fcc7d43a717c76ce7d4af50913789c1753",
+        "slc_ad96ee007a79296d15107fdda9befe04d1d94828e077046563c0456486a6b420",
+        "slc_c8e15b5b3e1c4f88527507d60215708eebe92e133b80590cce8e4366df49ea3d"
+      ],
+      "text": "Repository development practice: optional Cursor integration tests are build-tagged, run via go test -tags=cursor_integration, and are intended for local/dev environments rather than CI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8fa05cd744f317cc191d5e3d32fc126c296dc3484d0b5ccb2aa0e1159a17183",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 98,
+          "line_start": 83,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L83-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16af92715eee5b02c1c82558bf7c9f2a6346336ffcd5a773b45115bddbd5d621"
+      ],
+      "text": "The dashboard TUI offers keyboard actions for navigating workflows, filtering, starting (s), pausing (p), stopping (x), creating (n/N), and opening detail views."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bed82846bba2df1c454fe00cf07e28c8efc9a13835b6e95a60174f3bf6fd4678",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 125,
+          "line_start": 113,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L113-L125"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 109,
+          "line_start": 102,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L102-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05942bb1846bd3a09e1deca21ef60a3536c711a1241f2fcc557e35b7821fac6b",
+        "slc_b3f12a07273ecde973986132bee0877a91f2ec3edb567fa94d2d3cdbc7f7c497"
+      ],
+      "text": "Workflows move through states Pending, Running, Paused, Completed, Failed, and Stopped, with documented transitions including stop from pending, running, or paused."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c69dcfae9bab0606dc85417860b81d5ea2504fb44f3e4b8e46e463f2bac98f7a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 162,
+          "line_start": 155,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L155-L162"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L131-L131"
+        },
+        {
+          "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+          "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+          "line_end": 142,
+          "line_start": 133,
+          "path": "docs/CONTROL_PLANE.md",
+          "repository": "zjrosen/perles",
+          "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md#L133-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e8100b7adbb9f902a6bba5142242c22887faf1a4ff7287c43ffe9c1279c8eb0",
+        "slc_2eed5ee1ea4c67283b11bb6ee738e6b4ce67b83958c15b2dc0a24335b9fa23e6",
+        "slc_3ff7a1ad468219b6be7995250f5ccf827d7ddf2df554bfb5463b579e32f56466"
+      ],
+      "text": "Control Plane behavior is configured in ~/.config/perles/config.yaml under orchestration.control_plane, with resource policy defaults of 5 concurrent workflows, 10 workers, 5 AI calls, and MCP ports 9000-9100."
+    }
+  ],
+  "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 48,
+        "path": "README.md",
+        "size": 1114
+      },
+      {
+        "lines": 392,
+        "path": "ORCHESTRATION.md",
+        "size": 17999
+      },
+      {
+        "lines": 69,
+        "path": "docs/orchestration/workflows.md",
+        "size": 2292
+      },
+      {
+        "lines": 450,
+        "path": "docs/CONTROL_PLANE.md",
+        "size": 14085
+      },
+      {
+        "lines": 133,
+        "path": "docs/CURSOR_AGENT.md",
+        "size": 6810
+      },
+      {
+        "lines": 117,
+        "path": "docs/getting-started.md",
+        "size": 2468
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 2158
+      },
+      {
+        "path": "docs/bql/index.md",
+        "reason": "file-budget",
+        "size": 5681
+      },
+      {
+        "path": "docs/configuration/index.md",
+        "reason": "file-budget",
+        "size": 9398
+      },
+      {
+        "path": "docs/configuration/theming.md",
+        "reason": "file-budget",
+        "size": 3341
+      },
+      {
+        "path": "docs/orchestration/custom-workflows.md",
+        "reason": "file-budget",
+        "size": 5817
+      },
+      {
+        "path": "docs/orchestration/index.md",
+        "reason": "file-budget",
+        "size": 6261
+      },
+      {
+        "path": "docs/usage/dependency-explorer.md",
+        "reason": "file-budget",
+        "size": 1892
+      },
+      {
+        "path": "docs/usage/index.md",
+        "reason": "file-budget",
+        "size": 1314
+      },
+      {
+        "path": "docs/usage/kanban.md",
+        "reason": "file-budget",
+        "size": 4313
+      },
+      {
+        "path": "docs/usage/search.md",
+        "reason": "file-budget",
+        "size": 2105
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 33684
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3273
+      }
+    ],
+    "omitted_count": 13,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1256,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 19,
+      "complete": false,
+      "omitted": 13,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_c7d2636369b05f1687b03c8688a4f3e2",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 6,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zjrosen/perles/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/a14eba7bf0be77df/manifest.json",
+  "package_id": "pkg_e41895eb2ec91c96bf56f3120e350f79c1ff071bcfb90d3ec641cfdbf46ea9fb",
+  "repo": "zjrosen/perles",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "37ff92ae2140981d11b77fa72422a70fbf2dee1a02b28211f1872f077910f149",
+  "snapshot_id": "a14eba7bf0be77df",
+  "sources": [
+    {
+      "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+      "git_sha": "3b4bc370c954e9e814f0e68fbb1ceae8568a833b",
+      "lines": 392,
+      "path": "ORCHESTRATION.md",
+      "repository": "zjrosen/perles",
+      "sha256": "f4a49397d595e8d3fbaa3e83896fc9d7ce25a987b6a3fe1bc03b329dbd3a816a",
+      "source_id": "src_be142816e72d5667b391d6e6d023ac82",
+      "stored": "orchestration.md-ba6934f58051.md",
+      "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/ORCHESTRATION.md"
+    },
+    {
+      "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+      "git_sha": "bfb8ac5c12e4ef20d46e004d09ec637e41f0bce9",
+      "lines": 48,
+      "path": "README.md",
+      "repository": "zjrosen/perles",
+      "sha256": "8d2cbd4847a3410940f13c0f7a8237be32ea7bdfc93cfe4db788c8d66cc50017",
+      "source_id": "src_d7b05f54faf259818e7716b86d78daab",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/README.md"
+    },
+    {
+      "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+      "git_sha": "0f1fcaebee3371340cebd7a60421409dddda715c",
+      "lines": 450,
+      "path": "docs/CONTROL_PLANE.md",
+      "repository": "zjrosen/perles",
+      "sha256": "84f8f2dfd1119f870a128f8f8b7b4208fd8327e9a08b9d67985b30e8ed312221",
+      "source_id": "src_d816d6bc61495da18a93db27f4337791",
+      "stored": "control_plane.md-f71fa333334a.md",
+      "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CONTROL_PLANE.md"
+    },
+    {
+      "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+      "git_sha": "9f24673f3025a05be1c7e79e85476723cf57cf2f",
+      "lines": 133,
+      "path": "docs/CURSOR_AGENT.md",
+      "repository": "zjrosen/perles",
+      "sha256": "194d114ed62c49e12a58e45a738891d2b03c2fc9a8cca4bee948fb2dc9b3537d",
+      "source_id": "src_c66a465232cd5868b16aae0fcc6fbce3",
+      "stored": "cursor_agent.md-49555df10b12.md",
+      "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/CURSOR_AGENT.md"
+    },
+    {
+      "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+      "git_sha": "0e54f68addbf4619d784bab4bd70896e5d3db7a2",
+      "lines": 117,
+      "path": "docs/getting-started.md",
+      "repository": "zjrosen/perles",
+      "sha256": "2eb5140e19f0d862d7385be96d80ab0eee1be04b10845f8ba7b0da6317e0fea6",
+      "source_id": "src_f1823368b9415eb19acdd355f293ed82",
+      "stored": "getting-started.md-31bcba2ccafa.md",
+      "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/getting-started.md"
+    },
+    {
+      "commit": "f97afa7a7c442d7a3f3d4f3a7ed842463a865864",
+      "git_sha": "611d680bb2647d86ea2f20cb8f89fa2536926b3a",
+      "lines": 69,
+      "path": "docs/orchestration/workflows.md",
+      "repository": "zjrosen/perles",
+      "sha256": "f1b43b4799848eb57cd1f0b69bef18e5cc0a1144acb26de7301317f563b4cbcf",
+      "source_id": "src_0d385abf772b51a9b0e355a9a4d19b9f",
+      "stored": "workflows.md-fa0a44c1bdf6.md",
+      "url": "https://github.com/zjrosen/perles/blob/f97afa7a7c442d7a3f3d4f3a7ed842463a865864/docs/orchestration/workflows.md"
+    }
+  ],
+  "summary": "Perles is a terminal UI for beads issue tracking powered by a custom BQL query language supporting boolean search, date filters, dependency traversal, and custom kanban views. The CLI supports flags including --beads-dir, --config, --version, --help, and --debug, plus subcommands: perles (TUI), themes, workflows, and playground. Evidence coverage: 168 of 233 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

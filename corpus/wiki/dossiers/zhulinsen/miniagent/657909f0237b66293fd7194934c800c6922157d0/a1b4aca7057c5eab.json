@@ -1,0 +1,835 @@
+{
+  "applied_operation_id": "op_01b5cb36bcee4eda84fa84d011ed802a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee5d1dae846d121ade6a9953a13457815c6a3846eed3aaefdc1896e624667c57",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L17-L17"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L17-L17"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L42-L42"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d15ddb3c24eb4b8d945a7028e995f8b7a475699dbc400ab785f9d4bed5fc560",
+        "slc_5fb6471c5c312fd9de666d36208f5c57efc170f0bf4e43a272ac4d2c496a50f1",
+        "slc_af6a32122d0cdec9e2e8b925678a49da6b1176e9ab0b262d3b738e6d73543bf1",
+        "slc_d53e49dea644340f5ddd6bddeed5dad8a7e6c8fe0cf46bcf196eabf1d75f86db"
+      ],
+      "text": "MiniAgent is documented as a minimalist, transparent CLI agent framework whose core engine is a single agent.py file, positioned as an educational 'AI Agent textbook'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e66f5f68793b89610129a948533260bc1b98c74d809600f6f1f5286618c4f804",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 200,
+          "line_start": 182,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L182-L200"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 202,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L184-L202"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d9252a27b761e37387c023134cea822f202a048278acf09497b6f56abcec271",
+        "slc_6f8462658f91ab264e0faa819cf9967bb9cfcb8a791c6b383971e0e09f2adc4f"
+      ],
+      "text": "The documented project layout includes agent.py (LLM loop, tool calling, context management), cli.py (Rich streaming CLI), tools/ (code_tools.py, basic_tools.py), extensions/ (mcp_client.py, orchestrator.py), skills.py, config.py, memory.py, and utils/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_956863e8798b597f03be73e3bd7b460f80139047798925c3b9fda64bab6c0558",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 108,
+          "line_start": 107,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L107-L108"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 212,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L209-L212"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 104,
+          "line_start": 100,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L100-L104"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 216,
+          "line_start": 213,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L213-L216"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 210,
+          "line_start": 207,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L207-L210"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 218,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L215-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22c39495cd824bbbf917082a0f7432fa54ff10706b0b66b660bfc21c651a87e1",
+        "slc_5d8e79922df6a97c356b2369afce715ed6b3472574232acdfdca0c9ade0a4b0a",
+        "slc_9c5c443f3002b37d550c7147a8ea0711c5f8009284d72189c5c12366564346c8",
+        "slc_9c6da3f7d8f179fcf0318221521ec9e0154d409f509ec537539a8568206e4e69",
+        "slc_cd6cdbc27a38ff785f7ab5533d4fcfb2f8ae45a9e93e0c1c4477d6560baa26ba",
+        "slc_d62545128c5ad715b5e85cca259a05e4bc87fa861a3ce83e16bc41675c97c996"
+      ],
+      "text": "The product supports two tool-calling modes: a default text-parsing mode where the LLM emits structured text like 'TOOL: bash / ARGS: {...}', and a native OpenAI function-calling mode enabled via mode=\"native\" that supports parallel tool calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ef94f1e8e2bf38ea4a947bde31bcfcbe57f9bc2e72ecb8ecd9b5f827c177097",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L105-L107"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L95-L95"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 101,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L97-L101"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L111-L113"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 93,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L89-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06d4b1d39473cce3ab1e4d7673adc1238eeeb4a7a44a2c561c14059d8454c081",
+        "slc_5ffb67c2657e96c0cd06b2a865fa31f4d884261aadf2b2ac165de04cb298f0ba",
+        "slc_8cb3e9e2c958ab5a253dda42302e7a89dbde638cfcc4f1711ab886901eaf6dc8",
+        "slc_d7887b69375e459cf43b784ce66c61c2e55de5251a98cda05ef0eebbecabb639",
+        "slc_db9922f0ccb33d24c2efaf97e89012094e1114a01ae983170a78481c8cb95d1e"
+      ],
+      "text": "The CLI is launched via 'miniagent' or 'python -m miniagent', and configuration is done through a .env file with variables such as LLM_API_KEY, LLM_MODEL, and LLM_API_BASE; Gemini is supported via Google's OpenAI-compatible endpoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7aab3587b646437cde5f4be0b80fd71e435546d136c3a230d4cc0ce8a00f289",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 29,
+          "line_start": 19,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L19-L29"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 166,
+          "line_start": 149,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L149-L166"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 29,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L19-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18a07cef8a86f249c96ed19630b134fc01536808c23a8798c65b62a5e865f45b",
+        "slc_ad6b792aa2a336887677c4a4c5d20ae1ec18b932e622cff0a88fa1336c9fe1aa",
+        "slc_e1dde0a859e7ed76fb9969e20cbbaca5ffc59517f659cd70c84478497c90138c"
+      ],
+      "text": "The runtime includes a safety guard that auto-detects dangerous bash commands and requires confirmation before execution, controlled by a CONFIRM_DANGEROUS setting documented as defaulting to true."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c4deee429f5663cb829ff592f10d4f4dfc7b16fbca63e1d292acfba05a4fba9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 178,
+          "line_start": 155,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L155-L178"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 180,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L157-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01b4b6a498e674a383ba76ae7e3c83622f4dea873702a84ad77f3bd83137bde5",
+        "slc_8ad18cf5743e7714e7fd3044650e6a0b6295f59f48556d56504c41773cd62910"
+      ],
+      "text": "Documented built-in tools include code tools (read, write, edit, grep, glob, bash with timeout), OS tools (open_browser, open_app, create_docx, clipboard), system tools (system_info, process_list, env_get/set), and misc tools (calculator with AST-safe evaluation, web_search, http_request)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_535cc2e71452127661a850cf1d1640dc9e05efa99bff640b950eccdeea584422",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 246,
+          "line_start": 246,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L246-L246"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 265,
+          "line_start": 259,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L259-L265"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 263,
+          "line_start": 257,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L257-L263"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 29,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L19-L29"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 248,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L248-L248"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c415423f7d71792c57cf8336e66053ec05c01839b5fec65e4fd1aa95f64bb4a",
+        "slc_83acad7711b250c0ed9cb7e214f7474328927142f43dd53abf7d87687d1e62f1",
+        "slc_a526a568b9bf51e0a28094b5e40faeaa16b86e60c437d572f75deb24594372f7",
+        "slc_e1dde0a859e7ed76fb9969e20cbbaca5ffc59517f659cd70c84478497c90138c",
+        "slc_f6341642f90b660b46494cd0137c5a7851b875bf250da732c14c5f3c34d4ec09"
+      ],
+      "text": "A Skill system provides reusable agent configurations combining prompt, tool whitelist, and parameters, with four built-in roles (coder, researcher, reviewer, tester) and a register_skill API for custom skills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5cc5bd7684040e0404a8d624779ad5eab4c72aea4e9ca65dd2152bc8929384e4",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 234,
+          "line_start": 234,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L234-L234"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 242,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L241-L242"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 244,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L244-L244"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 236,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L236-L236"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 240,
+          "line_start": 239,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L239-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a4a230d09094356461052deff6ff05964b64516b63d608dc3864f06e687c935",
+        "slc_0ed0e9738b8125efeb25eaf8a2ffaa7847d406a107b9b7ab108dde0fa3a44289",
+        "slc_6acb10aa1aed3e5ced3028c8bc89d72aa7c21c0f4cb69c5908c678a47653e832",
+        "slc_a178a3e975f78a11cb688b8f7456d87c9cf7c7ac6d419c40b547c493a9a46fde",
+        "slc_c21c729fd1d5a063d1724f1f0a4a7f6ab131c63137fcaa1b4407e41ef1772a57"
+      ],
+      "text": "A built-in Orchestrator decomposes complex tasks and assigns them to specialized workers driven by the Skill system, e.g. planning researcher → coder → tester for a research-and-code task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4ee3552cabf3d003d5cb8de21ac92cd55e1ec9d8e062d648a6fa604c96074a4f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 232,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L230-L232"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 230,
+          "line_start": 228,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L228-L230"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 222,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L222-L222"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 220,
+          "line_start": 220,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L220-L220"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_171609a9ec60b14a9c956cc399859b2048d7ab3b7f31ce78d0d85d910fd281a6",
+        "slc_7c8cae8992d489f9f0d34562ecee949451e5f4374308a391af47eaeb642cbfa4",
+        "slc_e3c7664cf9e883d94bb783a9953c326ff2ec3edd22b22cdbffbb3607fcd88112",
+        "slc_efa53cd4bc234dfbda8f8f6007074894e9e38efe949e444e57366424296d5355"
+      ],
+      "text": "The framework exposes MCP protocol support via load_mcp_tools, allowing tools from any MCP server (e.g. the filesystem server) to be added to an agent with agent.add_tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8510a54d07b2349ffc1fe40f3282abf07e56717b6c23fa9d0d8a6ef3d3b5f3e7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+          "line_end": 118,
+          "line_start": 117,
+          "path": "README_EN.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md#L117-L118"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "b341aebbcfcc3a302301a447276bc3bc1d604245",
+          "line_end": 7,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/requirements.txt#L1-L7"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 118,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L117-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_110641e2619826882a040a2beabde51e0a450c739fd03a930d5bbbe62dbcd0b0",
+        "slc_f1fe09909471824eed30659937881377966cecb397d968ba72c9bb3556a6c547",
+        "slc_fe4ee46990dac1a53be9f0ef4c22185c898b2dbd4b925e79742f099f3710956a"
+      ],
+      "text": "requirements.txt lists seven runtime dependencies: openai, requests, python-dotenv, tenacity, psutil, distro, and rich; python-docx is an optional extra for Word document support."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b464f1fa2c3cfd05d47aa83b4ef7468398022a3f92de310aaf1fbf6ef944c089",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+          "line_end": 202,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md#L184-L202"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 166,
+          "line_start": 149,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L149-L166"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 81,
+          "line_start": 40,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L40-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f8462658f91ab264e0faa819cf9967bb9cfcb8a791c6b383971e0e09f2adc4f",
+        "slc_ad6b792aa2a336887677c4a4c5d20ae1ec18b932e622cff0a88fa1336c9fe1aa",
+        "slc_be6a38b13dab75765d7059146dc94ed2aedbedc230077376b61b313e56e01250"
+      ],
+      "text": "The product includes lightweight session memory stored at ~/.miniagent/memory.json (path configurable via MINIAGENT_HOME) and auto-compresses conversation history beyond a configurable message limit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a18b21d91126976578eb09bc6196cb0ed5b28be28d29c638830818e8b3ec78c2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 143,
+          "line_start": 140,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L140-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d60da4726042ab54c8aadfcc0c018cfa7ac41f03cf6d6fcb311e109d0438abfd"
+      ],
+      "text": "Repository development practice: contributors must not push directly to main; changes go through pull requests requiring at least one maintainer review, with Conventional Commits message format and tests required for core-logic changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f6e10f32806a3784ce989681c7a0692bc83c198b2450f466e54d51a34369a72",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L136-L136"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "30263274c405ef2389e736fe5b64107136e082b6",
+          "line_end": 108,
+          "line_start": 107,
+          "path": "CONTRIBUTING.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/CONTRIBUTING.md#L107-L108"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "30263274c405ef2389e736fe5b64107136e082b6",
+          "line_end": 57,
+          "line_start": 54,
+          "path": "CONTRIBUTING.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/CONTRIBUTING.md#L54-L57"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+          "line_end": 134,
+          "line_start": 132,
+          "path": "AGENTS.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md#L132-L134"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "30263274c405ef2389e736fe5b64107136e082b6",
+          "line_end": 112,
+          "line_start": 112,
+          "path": "CONTRIBUTING.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/CONTRIBUTING.md#L112-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05505182ccf8d9672084cce657faa62d9db4076eb25f92cb3b4da82ef34a8e28",
+        "slc_073fcfa218bfa2a4df12aa1ab46bed9ba94271a3fa20a4e8ef2b930287d9bc3b",
+        "slc_4eb43735bbf456f2d6d29dd94c4b21f47b30d8b2587f315fd2fe21b6008390b4",
+        "slc_9dc77969dc147935e29191ba1ab43ec97a92b4c366123f08460af64255f4363a",
+        "slc_e5de541459db8158d309c9198056b7201c7d7621d00cfc232374d18cd2ed767b"
+      ],
+      "text": "Repository development practice: tests are run with pytest (e.g. 'uv run pytest tests/ -v'), the suite reportedly covers 100+ cases, and code should follow PEP 8 with type annotations and docstrings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c413fa2eaad8794d3aaf5c96013715c218a110dc3440d7a5e7dcaf05eef87c8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "30263274c405ef2389e736fe5b64107136e082b6",
+          "line_end": 93,
+          "line_start": 88,
+          "path": "CONTRIBUTING.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/CONTRIBUTING.md#L88-L93"
+        },
+        {
+          "commit": "657909f0237b66293fd7194934c800c6922157d0",
+          "git_sha": "30263274c405ef2389e736fe5b64107136e082b6",
+          "line_end": 84,
+          "line_start": 82,
+          "path": "CONTRIBUTING.md",
+          "repository": "zhulinsen/miniagent",
+          "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/CONTRIBUTING.md#L82-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37e742c0175f695ade1bb6076c5a2eeb49a6cb36a3df7b872970b6aa2404564c",
+        "slc_9b2c0e44e3640f80bd650d4a19debadfc5bfb2341734bcad87b7fbca162d66bf"
+      ],
+      "text": "Repository development practice: the contribution flow is fork-based — fork the repo, create a feature or fix branch from main, push, and open a PR against main with a detailed description."
+    }
+  ],
+  "commit": "657909f0237b66293fd7194934c800c6922157d0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 305,
+        "path": "README.md",
+        "size": 10013
+      },
+      {
+        "lines": 303,
+        "path": "README_EN.md",
+        "size": 10232
+      },
+      {
+        "lines": 10,
+        "path": "requirements.txt",
+        "size": 173
+      },
+      {
+        "lines": 172,
+        "path": "AGENTS.md",
+        "size": 7225
+      },
+      {
+        "lines": 114,
+        "path": "CONTRIBUTING.md",
+        "size": 2119
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 60,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_031fd7931c0051dc86c61a984a6f0f1e",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zhulinsen/miniagent/657909f0237b66293fd7194934c800c6922157d0/a1b4aca7057c5eab/manifest.json",
+  "package_id": "pkg_2f889c61aa9f590454c4b03acea5d529809f52aa5c5a8b41484f4c0655fce17b",
+  "repo": "zhulinsen/miniagent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "987cdec847175c655b4ef91e5740855a7c997b441647700dc909fab46ae88998",
+  "snapshot_id": "a1b4aca7057c5eab",
+  "sources": [
+    {
+      "commit": "657909f0237b66293fd7194934c800c6922157d0",
+      "git_sha": "06c1f6f33c1ba15f72d6131c517245348b2a4dad",
+      "lines": 172,
+      "path": "AGENTS.md",
+      "repository": "zhulinsen/miniagent",
+      "sha256": "fd2b6662b8ede0b14134aa4f2a772e6fc2eb1e754e1a6ce48736552c22e52c64",
+      "source_id": "src_b596055b6e555d60b12d4a14e30a0500",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/AGENTS.md"
+    },
+    {
+      "commit": "657909f0237b66293fd7194934c800c6922157d0",
+      "git_sha": "30263274c405ef2389e736fe5b64107136e082b6",
+      "lines": 114,
+      "path": "CONTRIBUTING.md",
+      "repository": "zhulinsen/miniagent",
+      "sha256": "50ccfb4ea05134cb4ba352fb977562a29f095f69ad9327810a6652dff94b10ec",
+      "source_id": "src_3bf914cb896450c4894d6c583d71ce79",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/CONTRIBUTING.md"
+    },
+    {
+      "commit": "657909f0237b66293fd7194934c800c6922157d0",
+      "git_sha": "ce353b595beb8fd2a173bf757ec583f33d135e73",
+      "lines": 305,
+      "path": "README.md",
+      "repository": "zhulinsen/miniagent",
+      "sha256": "b70c67682504b634965fc2373f00fd9f76d39445a1a3920ffecae4d19a4db522",
+      "source_id": "src_8f54cdd3da7d546fad63f58a04a112f2",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README.md"
+    },
+    {
+      "commit": "657909f0237b66293fd7194934c800c6922157d0",
+      "git_sha": "b669f9f9df9adea3e60a79205748bd51d2975873",
+      "lines": 303,
+      "path": "README_EN.md",
+      "repository": "zhulinsen/miniagent",
+      "sha256": "77df58488df0646ebe579b144525eaff8f81cd283f46afd3cd9f6f214da8ddc6",
+      "source_id": "src_67901f22747558d38c47f7a36ca836b3",
+      "stored": "readme_en.md-cd16b6fe8b71.md",
+      "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/README_EN.md"
+    },
+    {
+      "commit": "657909f0237b66293fd7194934c800c6922157d0",
+      "git_sha": "b341aebbcfcc3a302301a447276bc3bc1d604245",
+      "lines": 10,
+      "path": "requirements.txt",
+      "repository": "zhulinsen/miniagent",
+      "sha256": "76cf5ed96460413f7773951a081953253d09c2766ebdf1b4341fd45173f0d159",
+      "source_id": "src_23be069ea6b9574bb827d40d75e0c83b",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/ZhuLinsen/MiniAgent/blob/657909f0237b66293fd7194934c800c6922157d0/requirements.txt"
+    }
+  ],
+  "summary": "Evidence consists of bilingual READMEs plus contributor guides (AGENTS.md, CONTRIBUTING.md) and requirements.txt for MiniAgent, a minimalist CLI agent framework with a single-file core, dual tool-calling modes, skills, MCP support, and orchestration. Product claims are documentation-based; contributor instructions are recorded only as development practice.",
+  "superseded_claim_ids": []
+}

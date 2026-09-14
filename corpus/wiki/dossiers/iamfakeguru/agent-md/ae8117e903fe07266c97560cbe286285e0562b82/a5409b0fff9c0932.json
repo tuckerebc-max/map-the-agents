@@ -1,0 +1,617 @@
+{
+  "applied_operation_id": "op_d73c0caff4594369b6617a71763bf000",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5b413af9d02a5adc2b7859737a8b3907b7a1ed9f69cfd14991644c80e9aba9c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 32,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L27-L32"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L42-L44"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 60,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L55-L60"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 40,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L38-L40"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L34-L36"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 53,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L49-L53"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 47,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L46-L47"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 63,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L62-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0769318d9f5eb95f661c31e34d3c698f6b92ca25f9b545bf73f5786193bb1749",
+        "slc_38b2bbff743d76eda5b5f94a5e1ea9988848984bedd9c9e27860f302e0e9d1cc",
+        "slc_6fda8ee8e0714580cd881fc2f1098295b7ac7df8e174ef9b4a4a6f25cca47e06",
+        "slc_75d8d0a10768e6b7368081787fdb71ad1ef939039d63f0d58c8a6783ffbebec4",
+        "slc_c37affb2b2e3bdc0815070ac5c041e667b9e75a09c8366901af54e51fcdfd7cb",
+        "slc_db29d1a09f2f41d7f387c69ebace2eea366712eb546e07cafb4266d329aa9777",
+        "slc_e44d7889f439475bed4fc157081df4844ff73a0537d4c554e0bb189d5b1eb77c",
+        "slc_f0973bcbfabe94f976f1abdb1e15b64e8391e5b6a231df2b5ddb0e51ac4dd1b6"
+      ],
+      "text": "The installer provisions AGENT.md as source of truth plus agent-specific rule files, hook directories, .agents/skills, .agent-md/bin helper scripts, memory/*.md files, and an optional .githooks/pre-commit fallback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_558c6db627c162c3743654e3dfde42b716630ec7f04ad5de4370b7bb1a530537",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 125,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L125-L125"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 21,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L20-L21"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 139,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L136-L139"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 133,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L132-L133"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 129,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L128-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23d9a7b966bb33a54672c28d78db6a523ebe467c4c6c6b393d065d2208efe1e2",
+        "slc_a7ebb88d14ab1dbcdda0c8d2fc3483aad8cbfe9eef58d2b9137ee9ebe8b1abc0",
+        "slc_ce75ecd59d930724ba28248c4f6099187ef6324b820b4794728e5314889124f6",
+        "slc_d085bb7c3c6d3a361ff00680485687a93dc5622b7fdf6b9d67880d76706c2754",
+        "slc_eeefc7a8f50cbfa3c6e65c96839210b94b9e8b5965dd081305d505646f2d7432"
+      ],
+      "text": "install.sh accepts flags including --agent=<list>, --githooks/--no-githooks, and --claude-settings=skip|merge|replace, and can be run via a curl-piped one-liner."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6ae2137ded79b6af742a27427f8195a29350c7cdc718a58b9625265b949bda3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 75,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L74-L75"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 72,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L69-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_82b1f407f3098eb1e28285c8183238def04b9c01efefbd680448e67a1706f244",
+        "slc_cb099c26c145e9d5bf241536c86290dc0624b0566d77c0899f8d278e017d0658"
+      ],
+      "text": "The design separates agent guidance into two layers: advisory rules files for judgment and process, and enforceable hooks/artifacts for checks, state updates, and visual evidence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a17c3ed4b6a94ef5c0ebe0f7a056874331986af96d160b05be07b12e0ba25287",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 110,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L102-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96fd2f768ca0d29f52bd603a1320159c6b2f67f5df76aa7efd9d26c5c33cf24d"
+      ],
+      "text": "Bash safety is hard-blocked for Claude Code via .claude/hooks/block-destructive.sh and for Codex via .codex/hooks/pre-tool-use.sh, but is not covered for Cursor, Windsurf, or other agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_974c349f61af1b85e37dfb31c9eceba5d24565568a8a54afc9834f5c88b1ad9d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 199,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L199-L199"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 205,
+          "line_start": 201,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L201-L205"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 208,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L207-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44b40ec93ef9d23492b91ac5dabb34abfb3cb8ab1768aa678976cbc70e6c0f73",
+        "slc_8002d99d65994eab3826828dd6d8ec8e51d9cd0d491256815a494bfd6780be97",
+        "slc_f8adf22ee2f72a6ae68ab4ce02c97ed158750e69f79401a9f990f447416c1e3b"
+      ],
+      "text": "A memory/ directory with agents.md, plan.md, progress.md, verify.md, and gotchas.md serves as durable cross-session state; a state hook blocks completion when source files changed but progress.md did not."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_398de9d2b9b722c8237b5085f7a2548a0eb8a6b0a417104c8a5229a48ec29810",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 216,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L215-L216"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L42-L44"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 225,
+          "line_start": 225,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L225-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_361bd1a7df77064d0554abd94cd41fd96f1156e6474a98ecd02341000e960c18",
+        "slc_38b2bbff743d76eda5b5f94a5e1ea9988848984bedd9c9e27860f302e0e9d1cc",
+        "slc_fde3a374492c8f9335f6d29b97900c8126fa5540f66b3654e6c385491f4d61e4"
+      ],
+      "text": "Native Codex skills live under .agents/skills/<name>/SKILL.md (agent-md-verify and visual-evidence) and are invoked with $agent-md-verify or $visual-evidence, distinct from plain shell helpers in .agent-md/bin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0342236ffe4cea150b506721513f43a2a3040cfb1946b830869165d8d12d10e0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 112,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L112-L112"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 117,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L114-L117"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_210b26928d5e1695e241322b2e083aba84657e19d1bf25352635b236ce344e59",
+        "slc_c8d3dfd58d902209010ac6fe3d31e0897a32664a683f959a7a65d12ba8984889",
+        "slc_e068630766938226bd128ed95220d2301bd183130161a3ed00d1729c9b1deece"
+      ],
+      "text": "Codex hook support is described as experimental and requires enabling codex_hooks = true under [features] in ~/.codex/config.toml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c0833d9ba1bb78e5fa275c4249624eee998c56479c2ab93e638f379094500a0",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 234,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L229-L234"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c1900b6d64e89ba564c18412bbcb926b218a2f711fcd737d034c392fdb97080"
+      ],
+      "text": "Documented limits: rules cannot force judgment, hooks only cover host-exposed events, pre-commit can be bypassed with git commit --no-verify, bash safety hooks are guardrails not a sandbox, and Cursor/Windsurf get only rules plus optional git-hook fallback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a90814568fcabed14766bd9ae06bc16372c53b2ab579a632deed9dc0b815fc1",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 166,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L162-L166"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 160,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L155-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2bd9311b04515524186a623bfde44f04afb0a3e9543700495d4d73f925421072",
+        "slc_5ac446439b1759405efe6e95925f74b983164e0ba93f080497f5be22d62dd4dd"
+      ],
+      "text": "agent-md.toml declares deterministic verification: a [verify] section for typecheck, lint, test, and per-file lint commands, and a [visual] section with required, artifacts_dir, and freshness_seconds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_147c40d8ef14db521b4f7ab30cb438f5f4239dc2b8463d926869e414e4d2845e",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 195,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L193-L195"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 110,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L102-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04713682f7c58a15a22b250919094551d91085e76f8a0a06ae2339d521c5ed33",
+        "slc_96fd2f768ca0d29f52bd603a1320159c6b2f67f5df76aa7efd9d26c5c33cf24d"
+      ],
+      "text": "The product enforces verification of agent work: stop hooks require type-check/lint/tests, and the strict visual hook requires a fresh non-empty markdown note referencing a fresh non-empty image with required fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a79f1b1a8bfa2911a6e70b31b70a99d0706942eeb96748efca7fa9118b5ef5f5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 244,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L243-L244"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 241,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L238-L241"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b93f0664bbd072c7d61b46291d266ef967e1941e2880287a9ad2fd71b61bc39",
+        "slc_75d118505980bb7cfff43985424772e62206245576be1ff8926c6d8bb682c0b0"
+      ],
+      "text": "Repository development practice: contributors run bats tests/ and shellcheck over hook and helper scripts, and CI runs Bats, ShellCheck, JSON validation, alias-sync checks, and installer smoke tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38206e2fa2d294f98e74ccbc615d8a90db1bbd33b77fcdcadd53ac22d257f00a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 191,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L187-L191"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L179-L179"
+        },
+        {
+          "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+          "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+          "line_end": 177,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "iamfakeguru/agent-md",
+          "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md#L175-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3064ae4d1ac2de950d8356a9236d4c949a10421ff3959eab40c5ea8ed9fcd290",
+        "slc_be1e92793c252d8a8aacadc10999f5f19e079337a5be7e5ec7c06a8cbaeb58b0",
+        "slc_c3c94ec6a25aad07ff79e9c175de94a8e17adf7b18130810483ed0ad950cddc8"
+      ],
+      "text": "Visual evidence is captured with ./.agent-md/bin/playwright-capture.sh <url> <png path>, producing artifacts under .agent/visual/ alongside a structured markdown note."
+    }
+  ],
+  "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 248,
+        "path": "README.md",
+        "size": 7321
+      },
+      {
+        "lines": 305,
+        "path": "AGENT.md",
+        "size": 9904
+      },
+      {
+        "lines": 305,
+        "path": "CLAUDE.md",
+        "size": 9904
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 41,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_f2e09caeff4c566289cda88ca2e82f2e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/iamfakeguru/agent-md/ae8117e903fe07266c97560cbe286285e0562b82/a5409b0fff9c0932/manifest.json",
+  "package_id": "pkg_bce74466b573f7adbe04ff454926894c97617ae4e2f97af2d9970ef3e800b62f",
+  "repo": "iamfakeguru/agent-md",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5963a478497ce5780449ab27e4afd88d34e1a2523f18fc850e742f44347a57d2",
+  "snapshot_id": "a5409b0fff9c0932",
+  "sources": [
+    {
+      "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+      "git_sha": "9044b410efb790381bef20fdc19487f708d184a4",
+      "lines": 305,
+      "path": "AGENT.md",
+      "repository": "iamfakeguru/agent-md",
+      "sha256": "e0e9fa47ebd58da3e2c23d2ae7451376f47198b4d90a7ac5771a62ebe304b273",
+      "source_id": "src_98a30e5c09835c9f892e0d0b1a4fc4f7",
+      "stored": "agent.md-c1e87407ce72.md",
+      "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/AGENT.md"
+    },
+    {
+      "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+      "git_sha": "9044b410efb790381bef20fdc19487f708d184a4",
+      "lines": 305,
+      "path": "CLAUDE.md",
+      "repository": "iamfakeguru/agent-md",
+      "sha256": "e0e9fa47ebd58da3e2c23d2ae7451376f47198b4d90a7ac5771a62ebe304b273",
+      "source_id": "src_0a1a3ac5477a580b82fe909eebb47b55",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/CLAUDE.md"
+    },
+    {
+      "commit": "ae8117e903fe07266c97560cbe286285e0562b82",
+      "git_sha": "915c8f8a526e0a72489a47da35d415c79d1e4171",
+      "lines": 248,
+      "path": "README.md",
+      "repository": "iamfakeguru/agent-md",
+      "sha256": "94a5ba27669f2bd0c28dc34409129efed5847a531730c4e13d45e3a51eeda281",
+      "source_id": "src_f5ef0d46254a56ba8eebb052ba0f3567",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/iamfakeguru/agent-md/blob/ae8117e903fe07266c97560cbe286285e0562b82/README.md"
+    }
+  ],
+  "summary": "agent-md is an installer that provisions cross-agent rules files, hooks, memory files, and helper scripts so coding agents verify their work deterministically. Evidence covers its installed layout, enforcement matrix, config format, and stated limits; no source code beyond docs is shown. Evidence coverage: 175 of 179 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

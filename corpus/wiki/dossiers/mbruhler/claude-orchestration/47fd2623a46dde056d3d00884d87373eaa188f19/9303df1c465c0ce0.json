@@ -1,0 +1,673 @@
+{
+  "applied_operation_id": "op_d389d2a3f7cd45e0ba54966088f6adca",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d6d783dca5afa1710d2c51d669b192efdc51434fca625a1a8f191e31cbf81d1",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L9-L10"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2276e47d2a81ac87664ae32abb25941b7760f950d6720ce9f7c59c90354674d1",
+        "slc_c352e1a22bbc627a0a9c378b147fe2101d10950f9ecf28fd5c324c7770e5182a"
+      ],
+      "text": "The README describes this as a Claude Code plugin for multi-agent workflow orchestration, comparing it to N8N in Claude Code, that chains AI agents to automate complex tasks using natural language or a declarative flow syntax."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_079e3646521017641b39e66358a915001837ddc1ee35b9dde2621cf1fccad4bb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L21-L21"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L49-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c615a26184e2317d4c209f68950c1b5b61d5f41cb53e64577869a6b3fdb09b8",
+        "slc_740469b0f7706c4c17ab34a3507ffde0cc9fbcf937a61ec44ea17989522acc54"
+      ],
+      "text": "Documentation states the plugin is installed by adding a marketplace to Claude Code and installing it from the plugin menu, then verified by checking for orchestration slash commands such as /orchestration:menu and /orchestration:init."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be101a1b4d5a32b23b291fb6d0560fcd73fb56b79720ae60c8ba707afbfe690d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 235,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L227-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_715c9fd784e9d1ca15e3ffca6641358ef0422e576c0f2af69cc1c50298fdcdf0"
+      ],
+      "text": "The README documents a flow syntax with sequential (->), parallel (||), and conditional (~>) operators, checkpoint labels (@label), variable capture (:var) and interpolation ({var}), and temporary-agent declaration ($agent)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d7aa7afabe036838c49e94856a63101894330ded9547d917a9d19e3e38bc9fa",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 210,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L204-L210"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 202,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L202-L202"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03f360cbf44214ef31989b7518c494d02a6d9ee510dfab7d8fb3e520bfc716d7",
+        "slc_5e3fac28c3a30d522b89656640f8808172c11f096db625dd8be688647c70620f"
+      ],
+      "text": "Documentation describes a semantic routing step that sends a captured variable through an LLM-evaluated condition tree to select which branch of agents runs next, in place of fixed text-matching conditions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc90ac4955f0ca3fe96421ac0597bb7f04bc4b7643ad458d06b01eb0241f3883",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 176,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L175-L176"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 168,
+          "line_start": 168,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L168-L168"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L172-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e459f8b0093adb1bcbe4b1d6353cf4c87e7c737e727bac160a7fcf0c126942a",
+        "slc_7ac6cbd32e77d87ea3893e79a6e9ca371c7c3485f6538d672a256b86be2cb355",
+        "slc_7f2f7024dd35faac58cc3305fe2f5f8ae32e72410f7b799a7ba34cea65f27418"
+      ],
+      "text": "The README describes checkpoint directives such as @review that pause a workflow for human approval, with documented fallback behaviors - skip, or log to a file instead of blocking - for unattended, scheduled runs where no one can approve interactively."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5dbbdc0ad07e4cfe30a4defce918d10226e220c92f47feb4bf2d67df9cb53319",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 187,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L185-L187"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 183,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L183-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7def798abcb6ae958492427ee7586dd17d4d2d1c7e50146d92508fee0ada319",
+        "slc_e7311b8d724c296a97a50895e3ecd48e2ed3efc5340766cb3c215bcaa41af256"
+      ],
+      "text": "Documentation states failed or interrupted workflows are recoverable: node and variable state is saved automatically to a state file, and resuming a workflow reloads that state, skips completed steps, and continues from the point of failure."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_513146c11a32086475aa522951bf64e5edef50dfbb97a574a308fccdb8954b6d",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "2596831618a02adc5998bb7778ec523f56401aca",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "docs/features/agent-promotion.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/features/agent-promotion.md#L38-L41"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "2596831618a02adc5998bb7778ec523f56401aca",
+          "line_end": 36,
+          "line_start": 32,
+          "path": "docs/features/agent-promotion.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/features/agent-promotion.md#L32-L36"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "2596831618a02adc5998bb7778ec523f56401aca",
+          "line_end": 70,
+          "line_start": 67,
+          "path": "docs/features/agent-promotion.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/features/agent-promotion.md#L67-L70"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "2596831618a02adc5998bb7778ec523f56401aca",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/features/agent-promotion.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/features/agent-promotion.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78201c207948a8370875a82094d63d8045110909d28aa3f32d4cf188350de012",
+        "slc_9d7ed556c830236f85b4f17154bcb72adefafab177585605bf4d72d74e4764e9",
+        "slc_eb4aefe88d18ca9125d62b384f6da123d8ff5bd1e55014207ad1b1da6aa5a531",
+        "slc_f82d6991cff497367a2f889624feb0e7d1464cb31e47a84b3b92f37526673dcf"
+      ],
+      "text": "Documentation describes an agent-promotion flow: after a workflow completes, temporary agents are analyzed for reusability (generic versus workflow-specific), and selected ones are moved from a temp-agents directory into a permanent agents directory and registered, while unselected ones are deleted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51ca604f59423c8ddaa49ac1f199af29ad85ba069cda48bc8b3562686f707906",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "183f1e050f992d3ed4148e5e40ffd05dedcd818c",
+          "line_end": 31,
+          "line_start": 27,
+          "path": "docs/core/steering.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/core/steering.md#L27-L31"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "183f1e050f992d3ed4148e5e40ffd05dedcd818c",
+          "line_end": 25,
+          "line_start": 22,
+          "path": "docs/core/steering.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/core/steering.md#L22-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c38f77459b14a9d23d0ff1e685419d3ba42a4c017b39f5cd35dfe1321404e0b",
+        "slc_a591198c30ba0d2a6423d19e5bc05e68745a1f81036c957c3091658289cbdfd4"
+      ],
+      "text": "The steering documentation describes checkpoint types as either explicit (@review markers written into the flow syntax) or automatically inserted before risky operations, after errors, at parallel-branch merge points, and before workflow completion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1170d47b3be63776513059ae257346737c6293232890eac6e0d3f43a8a3423cd",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "ee71512594c07829d35ea12d0ec8a0b6488b8c14",
+          "line_end": 51,
+          "line_start": 23,
+          "path": "docs/core/executor.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/core/executor.md#L23-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73c317b6b130d826b642955ecf4c415d084a549bb2d64d9ab330b5e401dcb7ba"
+      ],
+      "text": "The executor documentation illustrates workflow execution state as a graph of nodes and edges plus per-node status (current, completed, failed, skipped) and outputs, alongside separate steering state tracking whether execution is paused and at which node."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7bf7c2b0cad253cef1eddb093b655d65cc11fd9ad3443f541ffda28bfc82fa55",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 364,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L364-L364"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 369,
+          "line_start": 367,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L367-L369"
+        },
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 362,
+          "line_start": 362,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L362-L362"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4910477544d211620d814b87c9331508f00878fa1ec2e47dbb7e7bff5133cbe9",
+        "slc_9b5d61e0455f66ae66a5c1acf0095866febe52a19f1b2d1957cdd0fb0b3ded85",
+        "slc_f9a391d24f1337ce23c323bf5241ecc0f6c67e56b4df129d03327f3b7dd26799"
+      ],
+      "text": "The README documents that workflows can run standalone and headless outside interactive Claude Code, invoked as a claude -p command against a flow file, with an option to request JSON-formatted output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2e1faf4ffc3e8345e474523dd32e541e026c337713bf604481962521b76334f5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+          "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+          "line_end": 355,
+          "line_start": 340,
+          "path": "README.md",
+          "repository": "mbruhler/claude-orchestration",
+          "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md#L340-L355"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e03b29e08d92c578d84af271ef12cca9b38a7a335ffcf2344824a87b758d0722"
+      ],
+      "text": "Documentation describes the project's own layout: auto-activating skills for creating, executing, and debugging workflows, a permanent agents/ directory, an auto-cleaned temp-agents/ directory, generated temp-scripts/, and example .flow templates."
+    }
+  ],
+  "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 425,
+        "path": "README.md",
+        "size": 11783
+      },
+      {
+        "lines": 821,
+        "path": "docs/core/executor.md",
+        "size": 19662
+      },
+      {
+        "lines": 819,
+        "path": "docs/core/parser.md",
+        "size": 19606
+      },
+      {
+        "lines": 932,
+        "path": "docs/core/steering.md",
+        "size": 24528
+      },
+      {
+        "lines": 761,
+        "path": "docs/core/visualizer.md",
+        "size": 24510
+      },
+      {
+        "lines": 134,
+        "path": "docs/features/agent-promotion.md",
+        "size": 3193
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/features/custom-definitions.md",
+        "reason": "file-budget",
+        "size": 11494
+      },
+      {
+        "path": "docs/features/defined-agents.md",
+        "reason": "file-budget",
+        "size": 2563
+      },
+      {
+        "path": "docs/features/error-handling.md",
+        "reason": "file-budget",
+        "size": 9630
+      },
+      {
+        "path": "docs/features/natural-language.md",
+        "reason": "file-budget",
+        "size": 8739
+      },
+      {
+        "path": "docs/features/templates.md",
+        "reason": "file-budget",
+        "size": 9030
+      },
+      {
+        "path": "docs/features/temporary-agents.md",
+        "reason": "file-budget",
+        "size": 6975
+      },
+      {
+        "path": "docs/plans/2025-01-08-agent-system-design.md",
+        "reason": "file-budget",
+        "size": 22902
+      },
+      {
+        "path": "docs/plans/2025-01-08-agent-system-implementation.md",
+        "reason": "file-budget",
+        "size": 40674
+      },
+      {
+        "path": "docs/plans/2025-11-07-natural-language-workflow-creation-design.md",
+        "reason": "file-budget",
+        "size": 19278
+      },
+      {
+        "path": "docs/plans/2025-11-07-nl-workflow-creation-implementation.md",
+        "reason": "file-budget",
+        "size": 78050
+      },
+      {
+        "path": "docs/plans/IMPROVEMENT-IMPLEMENTATION-PLAN.md",
+        "reason": "file-budget",
+        "size": 84382
+      },
+      {
+        "path": "docs/plans/IMPROVEMENT-PLAN-QUICK-REF.md",
+        "reason": "file-budget",
+        "size": 10420
+      },
+      {
+        "path": "docs/plans/README.md",
+        "reason": "file-budget",
+        "size": 8806
+      },
+      {
+        "path": "docs/plans/SKILLS-REFACTORING-PLAN.md",
+        "reason": "file-budget",
+        "size": 14235
+      },
+      {
+        "path": "docs/plans/SPRINT-TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 9035
+      },
+      {
+        "path": "docs/reference/best-practices.md",
+        "reason": "file-budget",
+        "size": 8664
+      },
+      {
+        "path": "docs/reference/cleanup-and-namespacing.md",
+        "reason": "file-budget",
+        "size": 7478
+      },
+      {
+        "path": "docs/reference/examples.md",
+        "reason": "file-budget",
+        "size": 7691
+      },
+      {
+        "path": "docs/reference/syntax.md",
+        "reason": "file-budget",
+        "size": 3758
+      },
+      {
+        "path": "docs/reference/temp-agents-syntax.md",
+        "reason": "file-budget",
+        "size": 5887
+      },
+      {
+        "path": "docs/reference/variable-binding.md",
+        "reason": "file-budget",
+        "size": 1942
+      },
+      {
+        "path": "docs/testing/agent-system-manual-tests.md",
+        "reason": "file-budget",
+        "size": 4285
+      },
+      {
+        "path": "docs/topics/custom-syntax.md",
+        "reason": "file-budget",
+        "size": 13147
+      },
+      {
+        "path": "docs/topics/syntax.md",
+        "reason": "file-budget",
+        "size": 8906
+      }
+    ],
+    "omitted_count": 24,
+    "omitted_slices": 202,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 122,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 30,
+      "complete": false,
+      "omitted": 24,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_5cf0e444fb0e584cad7df923a6ee0290",
+  "facets": {
+    "components": 1,
+    "dependencies": 0,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/mbruhler/claude-orchestration/47fd2623a46dde056d3d00884d87373eaa188f19/9303df1c465c0ce0/manifest.json",
+  "package_id": "pkg_75a4f6872deea0e608b00a8f7969f52ebe9f8d7857b3c193016981ac43d7d8b3",
+  "repo": "mbruhler/claude-orchestration",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9ef151d5d8b5b3200d43a51e1ee127b93b287f92a2db35c7bb6bcd8dd84cf0b5",
+  "snapshot_id": "9303df1c465c0ce0",
+  "sources": [
+    {
+      "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+      "git_sha": "edaaef88561e2a1d55fe540b7383cf9ff324fab9",
+      "lines": 425,
+      "path": "README.md",
+      "repository": "mbruhler/claude-orchestration",
+      "sha256": "8769e8a3cd52f3134841bac163e5ec4bd01fdc36bd40ccf1dc5dc3eb759a60fc",
+      "source_id": "src_f235b70a9dc0506b809f95ed9403356b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/README.md"
+    },
+    {
+      "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+      "git_sha": "ee71512594c07829d35ea12d0ec8a0b6488b8c14",
+      "lines": 821,
+      "path": "docs/core/executor.md",
+      "repository": "mbruhler/claude-orchestration",
+      "sha256": "a3ac5956f8af4e3b5284a06f29579985c5cc5a7359390520cd2a8152ebc9d626",
+      "source_id": "src_020d102ca6df5a769f1ef7e38a5adfca",
+      "stored": "executor.md-f19ed79635a1.md",
+      "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/core/executor.md"
+    },
+    {
+      "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+      "git_sha": "698ab2c9d7ab4210eb63e93e6d24fbe253b80762",
+      "lines": 819,
+      "path": "docs/core/parser.md",
+      "repository": "mbruhler/claude-orchestration",
+      "sha256": "78a12d763bbbc7c064ef7e34d3047da1621149674eba40168974b28b74d95e99",
+      "source_id": "src_ce21553d844055bfbe873a738fe5aa2e",
+      "stored": "parser.md-caad8bd5a13f.md",
+      "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/core/parser.md"
+    },
+    {
+      "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+      "git_sha": "183f1e050f992d3ed4148e5e40ffd05dedcd818c",
+      "lines": 932,
+      "path": "docs/core/steering.md",
+      "repository": "mbruhler/claude-orchestration",
+      "sha256": "48418de18d3dac19cf8b2a31beafe0ac77424f7256cedd7222499ad4a5189c24",
+      "source_id": "src_456247948b2159fead568911f9f84374",
+      "stored": "steering.md-4db03b3e15de.md",
+      "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/core/steering.md"
+    },
+    {
+      "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+      "git_sha": "ba8058c15bb55eadd6f158539334911700526466",
+      "lines": 761,
+      "path": "docs/core/visualizer.md",
+      "repository": "mbruhler/claude-orchestration",
+      "sha256": "bc2c56e1a51eba33999b1c2795da89b66e371b43b231475d3b5629298912deb6",
+      "source_id": "src_d57ac0c060915bdfb03b3b3046727fee",
+      "stored": "visualizer.md-8d958ac841ac.md",
+      "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/core/visualizer.md"
+    },
+    {
+      "commit": "47fd2623a46dde056d3d00884d87373eaa188f19",
+      "git_sha": "2596831618a02adc5998bb7778ec523f56401aca",
+      "lines": 134,
+      "path": "docs/features/agent-promotion.md",
+      "repository": "mbruhler/claude-orchestration",
+      "sha256": "28c837644759885a908b14647d53196ea1c9c361fc8068d426ab801a4e8d116d",
+      "source_id": "src_d5c3ff1effa350b394609e20a1f66d54",
+      "stored": "agent-promotion.md-a2186ca9e6f9.md",
+      "url": "https://github.com/mbruhler/claude-orchestration/blob/47fd2623a46dde056d3d00884d87373eaa188f19/docs/features/agent-promotion.md"
+    }
+  ],
+  "summary": "claude-orchestration is a Claude Code plugin for multi-agent workflow orchestration: a declarative flow syntax (sequential/parallel/conditional operators, checkpoints, variable capture), semantic LLM-based routing, human-approval checkpoints with unattended fallbacks, state-file recovery of interrupted workflows, and an agent-promotion flow that turns reusable temporary agents into permanent ones. Code examples in its docs are illustrative, not inspected source. Evidence: 6 of 30 candidate files stored (README.md, docs/core/executor.md, parser.md, steering.md, visualizer.md, docs/features/agent-promotion.md); 24 omitted by file budget, and the packet itself further capped visualizer.md at zero delivered slices; selection incomplete.",
+  "superseded_claim_ids": []
+}

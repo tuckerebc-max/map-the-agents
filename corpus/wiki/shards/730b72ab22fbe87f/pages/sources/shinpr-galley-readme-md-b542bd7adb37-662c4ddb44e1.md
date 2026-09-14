@@ -1,0 +1,44 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_27b3eb0dcb69df7feafedd29e884acc74bf5ce51a2e432a16d3989addd44588b
+- clm_2d557867a9dab6f3dc5710744b8e538f944f043bb5711093c936fb1dc7bdafce
+- clm_2ed1c888f692d25f45055a745e8c0ce0ec7717c0d97ab68492b861eeb96941f5
+- clm_34e8458e64599f828f575cd85fd5e73cb00c70ff47a9adf0b4e22b3843ca49bb
+- clm_6d00c05fdd0b4ad5e18e6abdfa193bdab2835d5186e3b1bc5c0ed0fee6e5dbc7
+- clm_97737edea9274ad95e9d132e02609a4c4d8eb87448532aa810b5fcb6f33cde16
+- clm_d135c5f58b64bbd0e65db2a27058b9d63c503607f44fc3f628a6f51139cfb381
+- clm_e12979d6490fe9b2630c58f337f2c87e53fe6240d8efb3880a6dbed37585589e
+- clm_e1b8484b31c51aca1e91efb81b90591024bf8025b75fc591ffe284a9c9852d26
+- clm_f0faf6f768e665824b32c69003b784d1d9f674e543f9a47039f87659c6135c3e
+- clm_f13e25185d4a23b868a16d5d3c8c861efda20641c98b23efd62d889aa24f9b99
+maturity: draft
+page_id: pg_265dcd55986e51e3b8b0662c4ddb44e1
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_b2bd6f48619d5e72b1f8230a0409b15c
+title: shinpr/galley/README.md @ b542bd7adb37
+updated_at: '2026-09-14T02:39:53Z'
+---
+
+# shinpr/galley/README.md @ b542bd7adb37
+
+<!-- rcw:begin owner=source:src_b2bd6f48619d5e72b1f8230a0409b15c block=evidence -->
+- The standalone skill expects the galley CLI on PATH, and some workflows also use claude, codex, gh, and python3. [@claim:clm_27b3eb0dcb69df7feafedd29e884acc74bf5ce51a2e432a16d3989addd44588b]
+- Task YAML, profiles, and PR rerun comments are treated as privileged inputs that can influence local execution; PR comment requeueing is accepted only from the recorded PR author. [@claim:clm_2d557867a9dab6f3dc5710744b8e538f944f043bb5711093c936fb1dc7bdafce]
+- Task YAML is trusted local input describing goal, acceptance criteria, scope, executor overrides, verification, and worktree, with a documented reference at docs/task-yaml.md. [@claim:clm_2ed1c888f692d25f45055a745e8c0ce0ec7717c0d97ab68492b861eeb96941f5]
+- Executor and supervisor model fields resolve from the task, then the environment profile; only the executor cli has a built-in default (claude), and empty model/effort values defer to the provider CLI's defaults. [@claim:clm_34e8458e64599f828f575cd85fd5e73cb00c70ff47a9adf0b4e22b3843ca49bb]
+- The pipeline flows from task YAML plus repository policy through queueing, daemon claim, isolated git worktree execution, supervisor review, then acceptance (PR or local completion), retry within budget, or failure for human review. [@claim:clm_6d00c05fdd0b4ad5e18e6abdfa193bdab2835d5186e3b1bc5c0ed0fee6e5dbc7]
+- The CLI exposes commands including daemon config init, daemon start, daemon status --output json, daemon run --once, task validate, profile validate, and schema generate/check. [@claim:clm_97737edea9274ad95e9d132e02609a4c4d8eb87448532aa810b5fcb6f33cde16]
+- The system comprises a galley CLI, a background daemon that claims queued tasks, executor backends that implement tasks, and supervisor backends that act as the acceptance gate. [@claim:clm_d135c5f58b64bbd0e65db2a27058b9d63c503607f44fc3f628a6f51139cfb381]
+- The plugin packages one Agent Skill for Claude Code, Codex, and Grok Build covering setup, CLI checks, task YAML drafting/validation, profile authoring, approval-gated queueing, and failed-run diagnosis; skills-compatible clients can symlink plugins/galley/skills/galley/. [@claim:clm_e12979d6490fe9b2630c58f337f2c87e53fe6240d8efb3880a6dbed37585589e]
+- On revision, the supervisor reviews acceptance criteria before quality policy, preserves verified passes, and focuses the next attempt on unresolved work and regression risks. [@claim:clm_e1b8484b31c51aca1e91efb81b90591024bf8025b75fc591ffe284a9c9852d26]
+- The plugin installs Galley tooling only; users must separately install and authenticate provider CLIs (claude, codex, grok), and GLM/Kimi run through Claude Code using glm_api_key or kimi_api_key in ~/.galley/daemon.yaml. [@claim:clm_f0faf6f768e665824b32c69003b784d1d9f674e543f9a47039f87659c6135c3e]
+- Repositories are configured via two profile types: a quality profile (required checks, review dimensions, evidence, pass criteria) and an environment profile (commands, executor CLI/model/effort, constraints, PR behavior, cleanup). [@claim:clm_f13e25185d4a23b868a16d5d3c8c861efda20641c98b23efd62d889aa24f9b99]
+<!-- rcw:end owner=source:src_b2bd6f48619d5e72b1f8230a0409b15c block=evidence -->
+
+## Researcher notes
+

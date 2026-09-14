@@ -1,0 +1,1036 @@
+{
+  "applied_operation_id": "op_820005116da34a28b4dc8c56001d0728",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_7690a1605aa9636a6b79c4646b81f7440fc476eda6c11ff053a5ceddcd1e7850",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5574012fd8a3760b79ec3ec260b8315df220f60f42a6eb9b655ab8ce2d2a983f"
+      ],
+      "text": "Kun is described as a local-first AI agent workbench with two main modes: Code for software delivery (with a Design canvas in the same task) and Work for writing, document analysis, and presentations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_64653353ca8da447f4a4ba884515fc556945824ab132da7f8f41c7ef6493ff98",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L104-L104"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75ab02f5a2a243837ab85f2e28a70b6930d13d8c7927b6591a78693034a8167d",
+        "slc_afd7df36e58c6718329ee6989f8b923a4af929f6201904d85e87da2d4ee91aca"
+      ],
+      "text": "The desktop GUI and terminal TUI share a single local `kun serve` runtime, sharing threads, goals, plans, approvals, and background tasks rather than separate sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1079f0f1c270f7ffb2fd232ea071d9e8042de8b457a1407e4280626b596223b6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cc599723c3cc72e81698d6a794cd1038ad774ff1aaffd006af1166d5ffe0a3a8"
+      ],
+      "text": "The extension platform is documented as not creating a second agent runtime; extensions reach agent, tool, approval, and provider capabilities only through a public Host Context and Broker."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab761180148e462781f85e3e894b9001c2d26683ceb7597c452a5ada6deec468",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 29,
+          "line_start": 11,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L11-L29"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 54,
+          "line_start": 48,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L48-L54"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_595a1bc42d5731bab4694668b0279d43314eaaeeb390026eacc13780377b06e8",
+        "slc_a42412424efe6109c69d1db1c1da598b92347566ecae90b0df0935d2d9c69058",
+        "slc_ae5bb0522b1a89a25ccf79a51697e18af3867e678fcd16d9f12c02f09bc3515a"
+      ],
+      "text": "ExtensionManager runs one Node child process per active Node extension over versioned private JSON IPC, lazily starts hosts on activation, merges concurrent activations, and enforces bounded time, concurrency, rate, and memory limits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_52ea4a9340407fe75eaa81afd541104c98d277673f14c5f1ce1dc4840ec7321a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 66,
+          "line_start": 62,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L62-L66"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L60-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1621f8ca3f6dcb25a9d76b1a775f3fdc743731e69594650f3ec49ff3d3e8cea5",
+        "slc_3496297f5a545528d394efee2ac0834d094f2c095037b0653bb00dc2bab4e310"
+      ],
+      "text": "Each Broker operation re-checks extension enablement, workspace trust and permission grants, resource ownership, request schema/rate limits, and whether protected user confirmation via an ApprovalGate is required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_feacdc7b0bdb590ea341c1be5d53a973d8b08b144a4ee04cff384c31bcd1fb65",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 40,
+          "line_start": 35,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L35-L40"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "docs/extensions/architecture.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md#L68-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0298207b3710c890c6bc3d977740444d0981777bc39bfa7bd404145ad6a05435",
+        "slc_cb700334838e135ce6762c3b3dcc7af8070267430c04db6d1dceae9cbbdebbf6"
+      ],
+      "text": "Node extensions run with the current user's OS permissions, and the docs state that process isolation is not a security sandbox; Node can bypass the Broker to call OS file, network, and process APIs directly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_584185621e65a5da728527bd1cb2dfe83a01b7ac29ef448f26d5ccb3b3bbfbe8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L114-L114"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 121,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L116-L121"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 131,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L123-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66b7ea0c5108f34ae7c77b8bdea4d2aaf9afaa7838448b81f8648d5c01f16caf",
+        "slc_b49d0d4a114e72e35df653b6ef86cb234e79a36102663f54743aa3f50628fd35",
+        "slc_e55cb342aeb72c10d91cc219f11b2d53112aed79b745da0583a0ca7f4ee2b2da"
+      ],
+      "text": "Running from source requires Node.js 22.19+ and npm plus at least one working model connection; the project is built with npm scripts including dev, typecheck, lint, test, and build."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cfa7fd7c30c573a9868f44c37b9bc64b1e00770bd589a52ff6310ee9eec4d32c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "6f23c9049baaf5ff52a09d4e4aec90d91f52b92d",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "CLA.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/CLA.md#L20-L24"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L149-L149"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "6f23c9049baaf5ff52a09d4e4aec90d91f52b92d",
+          "line_end": 16,
+          "line_start": 14,
+          "path": "CLA.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/CLA.md#L14-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20f8fd914808920952446363b238c3bb53a07d3284f31fa57fe600b14611edb2",
+        "slc_5bb9ea50bd463b96c56102a16d7d2dfd3b8166d2ebaf9a0826e9b35c2c3cc447",
+        "slc_f2793673cb30ef455c7430c13c0cdad9a7c5c4ec1006927d31f7027a71f511fe"
+      ],
+      "text": "Repository development practice: contributions target the `develop` branch, contributors should read the contributing guide, and external contributions require signing a CLA; the CLA grants the project owner broad relicensing rights while contributors retain copyright."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7d362946342bf2b8eaf672a141782180ab49ede03bf899c014c55a8dbcfc5ed",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 131,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L123-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e55cb342aeb72c10d91cc219f11b2d53112aed79b745da0583a0ca7f4ee2b2da"
+      ],
+      "text": "Repository development practice: README documents npm commands for development (`npm run dev`, `dev:tui`), typecheck, ESLint with file-size checks, tests, production build, and per-platform distribution builds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ff90ecc16983fdaedf282d8c9094acfbd941281b3bdd94b006417a2ae7fbb7b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L86-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09fe1028c74af4a3a18483782d9f2271f6e98419fe3cc5913bca51e634d6f364"
+      ],
+      "text": "Kun is not tied to one model; presets cover ChatGPT/Codex, Claude, Gemini, Cursor, Ollama, DeepSeek, Kimi, GLM, Qwen, MiniMax, and Xiaomi MiMo ecosystems via provider configuration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aabd013dc46c2cb796d9ffda0973ad3f64ce925657bf582c5225eed4243bf84a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L84-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ab8b73c55060601281cfcb70dfec6cd3039b58401461634ac24e5eb2456f3ae"
+      ],
+      "text": "Sessions, preferences, logs, and runtime data are stored locally by default; when a cloud model is chosen, prompts, attachments, and task context are sent to the selected provider, and tool/extension permissions are surfaced in the UI for user approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_411f234ba47e2b9aa89b952c8cc6146e38f6e9d879301e54efcee4206e0293ab",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "6f23c9049baaf5ff52a09d4e4aec90d91f52b92d",
+          "line_end": 61,
+          "line_start": 59,
+          "path": "CLA.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/CLA.md#L59-L61"
+        },
+        {
+          "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+          "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "kunagent/kun",
+          "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md#L153-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_690883910cfa5e2d7adda6da6836eeb44084e009d751ac1151898bb66dd64e64",
+        "slc_9397daced391ff534c2d972e07231fa4a636117ed518e3ad80d3e3131d41cd8c"
+      ],
+      "text": "The project is licensed under PolyForm Noncommercial 1.0.0 for learning, research, and noncommercial use; commercial use, SaaS/hosting, or resale requires separate written authorization from the author."
+    }
+  ],
+  "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 163,
+        "path": "README.md",
+        "size": 8426
+      },
+      {
+        "lines": 489,
+        "path": "DESIGN.md",
+        "size": 20581
+      },
+      {
+        "lines": 123,
+        "path": "docs/extensions/architecture.md",
+        "size": 7376
+      },
+      {
+        "lines": 85,
+        "path": "CLA.md",
+        "size": 3462
+      },
+      {
+        "lines": 71,
+        "path": "CODE_OF_CONDUCT.zh-CN.md",
+        "size": 3962
+      },
+      {
+        "lines": 489,
+        "path": "DESIGN.zh-CN.md",
+        "size": 21188
+      }
+    ],
+    "omitted": [
+      {
+        "path": "DESIGN_MODE_PLAN.md",
+        "reason": "file-budget",
+        "size": 19631
+      },
+      {
+        "path": "README.en.md",
+        "reason": "file-budget",
+        "size": 9139
+      },
+      {
+        "path": "SECURITY.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1299
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "reason": "file-budget",
+        "size": 8899
+      },
+      {
+        "path": "docs/agent-benchmark-evaluation.md",
+        "reason": "file-budget",
+        "size": 6723
+      },
+      {
+        "path": "docs/agent-benchmarks-windows.md",
+        "reason": "file-budget",
+        "size": 12860
+      },
+      {
+        "path": "docs/agent-request-observability.md",
+        "reason": "file-budget",
+        "size": 10601
+      },
+      {
+        "path": "docs/AGENTS.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4482
+      },
+      {
+        "path": "docs/computer-use-cua-compatibility.md",
+        "reason": "file-budget",
+        "size": 3216
+      },
+      {
+        "path": "docs/CONTRIBUTING.en.md",
+        "reason": "file-budget",
+        "size": 6554
+      },
+      {
+        "path": "docs/CONTRIBUTING.zh-CN.md",
+        "reason": "file-budget",
+        "size": 6211
+      },
+      {
+        "path": "docs/conversation-charts.md",
+        "reason": "file-budget",
+        "size": 2899
+      },
+      {
+        "path": "docs/conversation-trajectory.md",
+        "reason": "file-budget",
+        "size": 7175
+      },
+      {
+        "path": "docs/data-migration.en.md",
+        "reason": "file-budget",
+        "size": 4357
+      },
+      {
+        "path": "docs/data-migration.md",
+        "reason": "file-budget",
+        "size": 5132
+      },
+      {
+        "path": "docs/deep-research-options.md",
+        "reason": "file-budget",
+        "size": 4297
+      },
+      {
+        "path": "docs/DESIGN_MODE.md",
+        "reason": "file-budget",
+        "size": 23140
+      },
+      {
+        "path": "docs/DEVELOPMENT.en.md",
+        "reason": "file-budget",
+        "size": 3482
+      },
+      {
+        "path": "docs/DEVELOPMENT.md",
+        "reason": "file-budget",
+        "size": 4737
+      },
+      {
+        "path": "docs/DEVELOPMENT.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4776
+      },
+      {
+        "path": "docs/graph-mode.en.md",
+        "reason": "file-budget",
+        "size": 23422
+      },
+      {
+        "path": "docs/graph-mode.md",
+        "reason": "file-budget",
+        "size": 34496
+      },
+      {
+        "path": "docs/knowledge-bases.md",
+        "reason": "file-budget",
+        "size": 7117
+      },
+      {
+        "path": "docs/kun-architecture.en.md",
+        "reason": "file-budget",
+        "size": 15329
+      },
+      {
+        "path": "docs/kun-architecture.md",
+        "reason": "file-budget",
+        "size": 32152
+      },
+      {
+        "path": "docs/kun-cache-optimization.en.md",
+        "reason": "file-budget",
+        "size": 15480
+      },
+      {
+        "path": "docs/kun-cache-optimization.md",
+        "reason": "file-budget",
+        "size": 12982
+      },
+      {
+        "path": "docs/kun-contributing.en.md",
+        "reason": "file-budget",
+        "size": 28926
+      },
+      {
+        "path": "docs/kun-contributing.md",
+        "reason": "file-budget",
+        "size": 26423
+      },
+      {
+        "path": "docs/kun-hooks.en.md",
+        "reason": "file-budget",
+        "size": 10194
+      },
+      {
+        "path": "docs/kun-hooks.md",
+        "reason": "file-budget",
+        "size": 9995
+      },
+      {
+        "path": "docs/kun-tui.en.md",
+        "reason": "file-budget",
+        "size": 24468
+      },
+      {
+        "path": "docs/kun-tui.md",
+        "reason": "file-budget",
+        "size": 23994
+      },
+      {
+        "path": "docs/KUN_CONFIG.md",
+        "reason": "file-budget",
+        "size": 13682
+      },
+      {
+        "path": "docs/local-speech-release.md",
+        "reason": "file-budget",
+        "size": 3177
+      },
+      {
+        "path": "docs/memory-foundation.en.md",
+        "reason": "file-budget",
+        "size": 5190
+      },
+      {
+        "path": "docs/memory-foundation.md",
+        "reason": "file-budget",
+        "size": 8543
+      },
+      {
+        "path": "docs/model-provider-presets.md",
+        "reason": "file-budget",
+        "size": 5110
+      },
+      {
+        "path": "docs/project-mcp-skills.md",
+        "reason": "file-budget",
+        "size": 6158
+      },
+      {
+        "path": "docs/queue-delivery-reliability.md",
+        "reason": "file-budget",
+        "size": 4163
+      },
+      {
+        "path": "docs/release-validation-checklist.md",
+        "reason": "file-budget",
+        "size": 12987
+      },
+      {
+        "path": "docs/swe-bench-evaluation.md",
+        "reason": "file-budget",
+        "size": 18971
+      },
+      {
+        "path": "docs/tiptap-migration.md",
+        "reason": "file-budget",
+        "size": 5237
+      },
+      {
+        "path": "docs/UI_PLUGINS.md",
+        "reason": "file-budget",
+        "size": 20839
+      },
+      {
+        "path": "docs/weixin-local-send-api.md",
+        "reason": "file-budget",
+        "size": 3196
+      },
+      {
+        "path": "docs/workflow-loop.en.md",
+        "reason": "file-budget",
+        "size": 9142
+      },
+      {
+        "path": "docs/workflow-loop.md",
+        "reason": "file-budget",
+        "size": 9120
+      },
+      {
+        "path": "docs/WRITE_INLINE_COMPLETION_MODES.en.md",
+        "reason": "file-budget",
+        "size": 10096
+      },
+      {
+        "path": "docs/WRITE_INLINE_COMPLETION_MODES.zh-CN.md",
+        "reason": "file-budget",
+        "size": 8284
+      },
+      {
+        "path": "docs/WRITE_INLINE_EDIT_RAG.en.md",
+        "reason": "file-budget",
+        "size": 9942
+      },
+      {
+        "path": "docs/WRITE_INLINE_EDIT_RAG.zh-CN.md",
+        "reason": "file-budget",
+        "size": 8170
+      },
+      {
+        "path": "docs/WRITE_INLINE_EDIT_RECENT_EDITS.en.md",
+        "reason": "file-budget",
+        "size": 8704
+      },
+      {
+        "path": "docs/WRITE_INLINE_EDIT_RECENT_EDITS.zh-CN.md",
+        "reason": "file-budget",
+        "size": 7514
+      },
+      {
+        "path": "docs/WRITE_RETRIEVAL_RAG.en.md",
+        "reason": "file-budget",
+        "size": 9026
+      },
+      {
+        "path": "docs/WRITE_RETRIEVAL_RAG.zh-CN.md",
+        "reason": "file-budget",
+        "size": 7506
+      },
+      {
+        "path": "docs/design/desktop-renderer-and-operations.md",
+        "reason": "file-budget",
+        "size": 20710
+      },
+      {
+        "path": "docs/design/foundations-and-runtime.md",
+        "reason": "file-budget",
+        "size": 24921
+      },
+      {
+        "path": "docs/extensions/agent-and-tools.en.md",
+        "reason": "file-budget",
+        "size": 15887
+      },
+      {
+        "path": "docs/extensions/agent-and-tools.md",
+        "reason": "file-budget",
+        "size": 14979
+      },
+      {
+        "path": "docs/extensions/api-reference.en.md",
+        "reason": "file-budget",
+        "size": 27255
+      },
+      {
+        "path": "docs/extensions/api-reference.md",
+        "reason": "file-budget",
+        "size": 26470
+      },
+      {
+        "path": "docs/extensions/architecture.en.md",
+        "reason": "file-budget",
+        "size": 8214
+      },
+      {
+        "path": "docs/extensions/cli-testing-debugging.en.md",
+        "reason": "file-budget",
+        "size": 17629
+      },
+      {
+        "path": "docs/extensions/cli-testing-debugging.md",
+        "reason": "file-budget",
+        "size": 16466
+      },
+      {
+        "path": "docs/extensions/lifecycle.en.md",
+        "reason": "file-budget",
+        "size": 8775
+      },
+      {
+        "path": "docs/extensions/lifecycle.md",
+        "reason": "file-budget",
+        "size": 8111
+      },
+      {
+        "path": "docs/extensions/manifest.en.md",
+        "reason": "file-budget",
+        "size": 19052
+      },
+      {
+        "path": "docs/extensions/manifest.md",
+        "reason": "file-budget",
+        "size": 17717
+      },
+      {
+        "path": "docs/extensions/media-and-jobs.en.md",
+        "reason": "file-budget",
+        "size": 19542
+      },
+      {
+        "path": "docs/extensions/media-and-jobs.md",
+        "reason": "file-budget",
+        "size": 17677
+      },
+      {
+        "path": "docs/extensions/packaging-and-index.en.md",
+        "reason": "file-budget",
+        "size": 15554
+      },
+      {
+        "path": "docs/extensions/packaging-and-index.md",
+        "reason": "file-budget",
+        "size": 14598
+      },
+      {
+        "path": "docs/extensions/providers-and-accounts.en.md",
+        "reason": "file-budget",
+        "size": 22278
+      },
+      {
+        "path": "docs/extensions/providers-and-accounts.md",
+        "reason": "file-budget",
+        "size": 20521
+      },
+      {
+        "path": "docs/extensions/quick-start.en.md",
+        "reason": "file-budget",
+        "size": 6673
+      },
+      {
+        "path": "docs/extensions/quick-start.md",
+        "reason": "file-budget",
+        "size": 6251
+      },
+      {
+        "path": "docs/extensions/README.en.md",
+        "reason": "file-budget",
+        "size": 6903
+      },
+      {
+        "path": "docs/extensions/README.md",
+        "reason": "file-budget",
+        "size": 6061
+      },
+      {
+        "path": "docs/extensions/release-troubleshooting-changelog.en.md",
+        "reason": "file-budget",
+        "size": 40260
+      },
+      {
+        "path": "docs/extensions/release-troubleshooting-changelog.md",
+        "reason": "file-budget",
+        "size": 37773
+      },
+      {
+        "path": "docs/extensions/security-and-resources.en.md",
+        "reason": "file-budget",
+        "size": 12946
+      },
+      {
+        "path": "docs/extensions/security-and-resources.md",
+        "reason": "file-budget",
+        "size": 12240
+      },
+      {
+        "path": "docs/extensions/versioning-and-migrations.en.md",
+        "reason": "file-budget",
+        "size": 12874
+      },
+      {
+        "path": "docs/extensions/versioning-and-migrations.md",
+        "reason": "file-budget",
+        "size": 12060
+      },
+      {
+        "path": "docs/extensions/webview-and-dom.en.md",
+        "reason": "file-budget",
+        "size": 20284
+      },
+      {
+        "path": "docs/extensions/webview-and-dom.md",
+        "reason": "file-budget",
+        "size": 18829
+      },
+      {
+        "path": "docs/extensions/workbench.en.md",
+        "reason": "file-budget",
+        "size": 14412
+      },
+      {
+        "path": "docs/extensions/workbench.md",
+        "reason": "file-budget",
+        "size": 13424
+      },
+      {
+        "path": "docs/design/zh-CN/desktop-renderer-and-operations.md",
+        "reason": "file-budget",
+        "size": 20724
+      },
+      {
+        "path": "docs/design/zh-CN/foundations-and-runtime.md",
+        "reason": "file-budget",
+        "size": 24935
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-15-feishu-streaming-with-live-fix.md",
+        "reason": "file-budget",
+        "size": 16154
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-15-feishu-streaming-with-live-fix-design.md",
+        "reason": "file-budget",
+        "size": 17119
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 11421
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5049
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1474
+      },
+      {
+        "path": "docs/AGENTS.md",
+        "reason": "file-budget",
+        "size": 10813
+      },
+      {
+        "path": "docs/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 8591
+      }
+    ],
+    "omitted_count": 97,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 7166,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 103,
+      "complete": false,
+      "omitted": 97,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_83d5f6c1a8e65b47b74aa347d1d71f8c",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/kunagent/kun/e67f656bca573d5e6a4970a5094a30f3afd09011/2169da6efe174106/manifest.json",
+  "package_id": "pkg_7e8c9601a56c23881de4a6a3d4e56e027719f3a9da410a2f42f595fd2efcb8db",
+  "repo": "kunagent/kun",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "bd729b32858eb7d4a87ba0b0c2c9862953fe599a6ace7c79cd972b480b37f5b8",
+  "snapshot_id": "2169da6efe174106",
+  "sources": [
+    {
+      "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+      "git_sha": "6f23c9049baaf5ff52a09d4e4aec90d91f52b92d",
+      "lines": 85,
+      "path": "CLA.md",
+      "repository": "kunagent/kun",
+      "sha256": "43f9a1ba89e5a28c00c8ea9c30b4d127cd511f5f5c93ad63e2005b752314b510",
+      "source_id": "src_f7b516227fd951209fa5b5ea86f23290",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/CLA.md"
+    },
+    {
+      "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+      "git_sha": "4b9f9b0e2d5d0c0aad65a7deee8dfc935e719475",
+      "lines": 71,
+      "path": "CODE_OF_CONDUCT.zh-CN.md",
+      "repository": "kunagent/kun",
+      "sha256": "b5fcd48708b7861c8732c63657979c70ea05a4962ee605a57fd0758f0dbd1972",
+      "source_id": "src_9df282ca71ff50c58927c9a5c43384f6",
+      "stored": "code_of_conduct.zh-cn.md-3e6dde71b440.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/CODE_OF_CONDUCT.zh-CN.md"
+    },
+    {
+      "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+      "git_sha": "74336d5b0a88e5d21e9b98f6ae6297d79e9ab478",
+      "lines": 489,
+      "path": "DESIGN.md",
+      "repository": "kunagent/kun",
+      "sha256": "bd2da4cb08d3e1cd2b26a4cff79a953626835662a8a5a511ccbec6cdc4a3f39a",
+      "source_id": "src_f00a9e83c72b5363bfadc44cc8a797d7",
+      "stored": "design.md-3dc5dd454e08.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/DESIGN.md"
+    },
+    {
+      "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+      "git_sha": "1a7d0f005b0307a57176d3e59060249a67def34e",
+      "lines": 489,
+      "path": "DESIGN.zh-CN.md",
+      "repository": "kunagent/kun",
+      "sha256": "cca5d380f27ce0f800d3d20ba46acb5167859dfda595078427ceeee09d08cf78",
+      "source_id": "src_1fd001bb3f7a586d8eaae0982f8e153d",
+      "stored": "design.zh-cn.md-d7bc5b9847ed.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/DESIGN.zh-CN.md"
+    },
+    {
+      "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+      "git_sha": "3be4c6095f7fb6188e5e7ca58f4dd73ac0fa6f30",
+      "lines": 163,
+      "path": "README.md",
+      "repository": "kunagent/kun",
+      "sha256": "8ff22486b45bb6f43859fa33d9d99b26eb82466062fde169b0000785eca4e809",
+      "source_id": "src_c9098ce3c4405c8c8eb35e3894c9a7f8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md"
+    },
+    {
+      "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+      "git_sha": "ad43f53f838c55e280f56f00aff391b92cf1f2a9",
+      "lines": 123,
+      "path": "docs/extensions/architecture.md",
+      "repository": "kunagent/kun",
+      "sha256": "b59d30629aa0c726177a71655af8eb941151b668e69b6797d665daf76a08a79c",
+      "source_id": "src_79c0144adcb45042a240b2cc8f595683",
+      "stored": "architecture.md-eda33427057c.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/architecture.md"
+    }
+  ],
+  "summary": "Evidence covers Kun's README, extension architecture doc, CLA, code of conduct, and a design-token file. Kun is a local-first AI agent workbench with a desktop GUI and TUI sharing one `kun serve` runtime, an extension platform with process isolation, and documented contributor workflows. Evidence coverage: 155 of 239 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

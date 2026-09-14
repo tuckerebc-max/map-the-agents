@@ -1,0 +1,581 @@
+{
+  "applied_operation_id": "op_e7d77ed90f5043e09226d5ce6b79b42e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_caebe72601b17f80ddb6c1159a90fea84a793edaa0f60c8de3addc9fd4d7c9a4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L28-L31"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e3f41f2bd25f5343bee9a32ca8c4813d6b659532266ca05686d22c117d4030c",
+        "slc_f28e6a23235826739568c5487cd02fb195d7b529b294028fbef35ac87a436312"
+      ],
+      "text": "Thrush offers two modes in one UI: Assist, where the agent drafts edits and the user approves before files are written, and Auto, where the agent attempts a full task in isolation and returns a report and diff."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb8a432e7cfe1bdf21b8a023f1eff93e4828ede144acb95f3bef8d40e8ef5d2b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L197-L197"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L33-L33"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 138,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L133-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c59ae45ca7fad22453b62dcfadaef33c3ef870454f241b4feef81b5f9a2a846",
+        "slc_5a304ef4f0873beb720b5e73bb0214c4b96285b6a4516f38ac46a16bbe0f232c",
+        "slc_a0f3be3217620a47293b0e9519720d7258d31fcf71a7d38ee875b591c1909dd7"
+      ],
+      "text": "Auto Mode runs mini-swe-agent in a separate Git worktree under data/auto-runs/<autoRunId>/worktree on a branch auto/<autoRunId>, leaving the main workspace unchanged; Draft PR creation is a user action, not automatic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e6464333ecf12589fc953d9d751453083ee9243650e60a1f3ab0b41c14c0a89",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L37-L43"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "98bdd7cc444c61211d9599717f8e626a778d7350",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/adr/0003-bundle-mini-swe-agent.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/docs/adr/0003-bundle-mini-swe-agent.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a7a725328fa6b10989303bdd054e6668cf1d31711ec4c0218a89f717e6f6351",
+        "slc_ef165f5ab5983eab1c5670d49faf6a1c1e729e0f04510573602e1441eb39d8f7"
+      ],
+      "text": "Auto Mode is backed by a bundled mini-swe-agent checkout in vendor/mini-swe-agent with a non-interactive runner at scripts/mini-auto-run.py; an ADR states the bundled copy should be managed as a Git submodule or clearly tracked vendored dependency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93207794c906f7a5a3a5e6e38ba6ddc9a9805a92efd99242a9b5a319a3bdb448",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L37-L43"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 129,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L125-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a7a725328fa6b10989303bdd054e6668cf1d31711ec4c0218a89f717e6f6351",
+        "slc_277da580540d210fcd37f7facb9b33b8d68ef2201fdb25b8a0e5d337a3120629"
+      ],
+      "text": "Before Auto starts, an Environment Doctor checks Git clean state, Docker availability, mini runtime readiness, model API key configuration, and GitHub readiness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4dbc1854ca6ee65c4edb73b974457d5cb7c7e3fe0a2d7143f1c3ed208d30ff4e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L37-L43"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 138,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L133-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a7a725328fa6b10989303bdd054e6668cf1d31711ec4c0218a89f717e6f6351",
+        "slc_a0f3be3217620a47293b0e9519720d7258d31fcf71a7d38ee875b591c1909dd7"
+      ],
+      "text": "Auto runs collect diff, diff stat, changed files, logs, and trajectory, and generate a human-readable Auto Report shown with these artifacts in a side drawer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da554f128ee17778a6872f38ab62432877141a3474cb58e3567b7d1f19ffd8b1",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L37-L43"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 191,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L185-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a7a725328fa6b10989303bdd054e6668cf1d31711ec4c0218a89f717e6f6351",
+        "slc_d3962538468def20acecce37a530d7dce0e43921ac14489d9b9f5d318f93a52c"
+      ],
+      "text": "Local state lives under data/: a SQLite database (thrush.db) with separate tables for Auto runs, events, artifacts, and presets, plus workspace, auto-runs, mini-venv, and pip/uv cache directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c2f5390bbb0afe128de2d0e68b8c9e306100cf4913dec904c880f587b3b2d1a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L37-L43"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 18,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L13-L18"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a7a725328fa6b10989303bdd054e6668cf1d31711ec4c0218a89f717e6f6351",
+        "slc_86e31d1d9d4969a29074f80ad3ffda0a15e9580b9a0465904e8694067fee1184",
+        "slc_bcac2d0cce8e068b22a4c5dd5efd35c03b11d8b7f19e3e0e28583b5325330fe4"
+      ],
+      "text": "The app is built with Next.js 15 and TypeScript 5, uses SQLite for local state, and bundles mini-swe-agent; a bootstrap step prepares data/mini-venv with the bundled agent and Python dependencies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f2bc33ea7684df7f6a7858e9d8226ef2e94d3c3d788a7b3926bba918a7b18b80",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 87,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L82-L87"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 179,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L162-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e4178b6b92b0d1d40dd369c445921ac0c29a249c54d042100f827ab1d3ce984",
+        "slc_4cb9ff8c86b100cf59206dd51419d1ad35fa93ae7525192f07c4fcc305dd8bf9"
+      ],
+      "text": "Model providers are configurable via environment variables: MODEL_PROVIDER supports deepseek (default), openai, or anthropic, with per-provider API key, base URL, and model variables, plus an AGENT_API_SECRET bearer token for /api/agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e8315007274e6a17064b2d3d7e1cb1b81721f103b1bff49beab64cb58bfdca43",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 224,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L219-L224"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 152,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L152-L152"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_049fb6fdbf9c30b2d693f571b69bdad40a8c518f0c669101abba0ee051033d6d",
+        "slc_a73413a7fc92855870ece6bc3ff8b17ed8607e5a892954c33097bc94ef8cd779"
+      ],
+      "text": "In Assist Mode the agent can inspect files, search code, read pages, and run allowlisted commands; file writes are staged as pending drafts requiring explicit approval, and file tools reject paths outside the active workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_699acd4ba97d5823bd8f1cabd51fefe13fb8f06327cffd3255dc264d1b2d93bc",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "ec43da0d3a06bbecfdb9e0f4ae6d7ab9480f26f4",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/adr/0001-default-auto-runs-to-docker.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/docs/adr/0001-default-auto-runs-to-docker.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6d4f4e3ac80cea5161eda791ffd71e8d5903423e38664ea7a2dd3efb4a7fff0"
+      ],
+      "text": "Auto Runs execute mini-swe-agent in a Docker environment by default because the agent runs autonomously; local shell execution is an explicit advanced opt-in that gives the agent unrestricted host command access."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_74652a3b62831b900d747c1d380e7ea37a89a2a8214fd7a361482d0593421807",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "e1058d42b393bb28ce2ff0862af1ac4b5d224a97",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/adr/0004-use-auto-worker.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/docs/adr/0004-use-auto-worker.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d95104f0cff6eaa9779a44235d7d60414656388f49fe3efd0ad75d768c52be2"
+      ],
+      "text": "A local Auto Worker claims queued runs, manages mini-swe-agent processes, handles cancellation, and writes events and artifacts, keeping long-running jobs separate from request handling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8dbd520fe1832b697c76f960007c48bfad79cb9920a451cc59687cd6e6dde45",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 215,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L215-L215"
+        },
+        {
+          "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+          "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+          "line_end": 213,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "shoyann/thrush-swe-agent",
+          "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md#L209-L213"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15ee5c43a103a3ee4da43c412b824f779275d6e95387a8a58288203757ec8a6d",
+        "slc_1b559a4e20fc08921e54b907b17419240ab5425492eeca9fe21c76ea50f72c83"
+      ],
+      "text": "Repository development practice: contributors run npm run test, npx tsc --noEmit, and npm run lint; the repo includes tests for Auto data flow, readiness checks, recommended environments, the mini resolver, and runner behavior with fake mini results."
+    }
+  ],
+  "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 228,
+        "path": "README.md",
+        "size": 8085
+      },
+      {
+        "lines": 29,
+        "path": "CONTEXT.md",
+        "size": 1149
+      },
+      {
+        "lines": 3,
+        "path": "docs/adr/0001-default-auto-runs-to-docker.md",
+        "size": 401
+      },
+      {
+        "lines": 3,
+        "path": "docs/adr/0002-auto-runs-review-before-pr.md",
+        "size": 334
+      },
+      {
+        "lines": 3,
+        "path": "docs/adr/0003-bundle-mini-swe-agent.md",
+        "size": 397
+      },
+      {
+        "lines": 3,
+        "path": "docs/adr/0004-use-auto-worker.md",
+        "size": 407
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/design/auto-mode-technical-design.md",
+        "reason": "file-budget",
+        "size": 11816
+      },
+      {
+        "path": "docs/prd/auto-mode.md",
+        "reason": "file-budget",
+        "size": 8036
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 96,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_519f897d762651bf857a541012d7ecba",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/shoyann/thrush-swe-agent/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/ad148bedd351dcd1/manifest.json",
+  "package_id": "pkg_55bc1986abbdc7d91ce0a94a242444e2452f7b1e4df7d5f68b15cc1260109fbb",
+  "repo": "shoyann/thrush-swe-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6c4dab636d6713dc91942a5ecc3237e2e01aa5ccbe73f21986ff444c7eace6b3",
+  "snapshot_id": "ad148bedd351dcd1",
+  "sources": [
+    {
+      "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+      "git_sha": "fc23a31861efcba087655704f458179029149f6a",
+      "lines": 29,
+      "path": "CONTEXT.md",
+      "repository": "shoyann/thrush-swe-agent",
+      "sha256": "8e21f7473549950368e5e90cd8addc187f40d77899839dad2da33d3a896aaae2",
+      "source_id": "src_50b90743dd8f5af2999a62450736ff82",
+      "stored": "context.md-86fee53c3330.md",
+      "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/CONTEXT.md"
+    },
+    {
+      "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+      "git_sha": "6301c2af1b121753ffa568db15ef2dbfba4ba14c",
+      "lines": 228,
+      "path": "README.md",
+      "repository": "shoyann/thrush-swe-agent",
+      "sha256": "7975b08005587688e963e7a4a4e85b1f26627f1080c9a4d7402b3614d795c003",
+      "source_id": "src_2f501cf3fdf6502f8d9676eea2fd6654",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/README.md"
+    },
+    {
+      "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+      "git_sha": "ec43da0d3a06bbecfdb9e0f4ae6d7ab9480f26f4",
+      "lines": 3,
+      "path": "docs/adr/0001-default-auto-runs-to-docker.md",
+      "repository": "shoyann/thrush-swe-agent",
+      "sha256": "d3385484a484b8fbf436d1fa7cc004a3775206d874f8fbb415bced8bcdccd98b",
+      "source_id": "src_0545ea67657053e89b075342eb81c6a1",
+      "stored": "0001-default-auto-runs-to-docker.md-a1db4d92898f.md",
+      "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/docs/adr/0001-default-auto-runs-to-docker.md"
+    },
+    {
+      "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+      "git_sha": "7607f90bdc8bbf81822229ab13fccf4fc7ed204b",
+      "lines": 3,
+      "path": "docs/adr/0002-auto-runs-review-before-pr.md",
+      "repository": "shoyann/thrush-swe-agent",
+      "sha256": "4375f7d8839501714d5a65dc72b6269438ec28bc723e52ab16f22025d87e7ce7",
+      "source_id": "src_d32675c96333592eb7277eaad55c20fc",
+      "stored": "0002-auto-runs-review-before-pr.md-1d1c7cda9c38.md",
+      "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/docs/adr/0002-auto-runs-review-before-pr.md"
+    },
+    {
+      "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+      "git_sha": "98bdd7cc444c61211d9599717f8e626a778d7350",
+      "lines": 3,
+      "path": "docs/adr/0003-bundle-mini-swe-agent.md",
+      "repository": "shoyann/thrush-swe-agent",
+      "sha256": "adfe6ffe30656e7ae143e867074db06ea534a25cf3e700ed9f9f22e708ea2eec",
+      "source_id": "src_c0b0146fd12c539e8c23340f4af53345",
+      "stored": "0003-bundle-mini-swe-agent.md-78f574e06c54.md",
+      "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/docs/adr/0003-bundle-mini-swe-agent.md"
+    },
+    {
+      "commit": "daef0a6d6a6d8c59cb53aa9b01b220f32a617a35",
+      "git_sha": "e1058d42b393bb28ce2ff0862af1ac4b5d224a97",
+      "lines": 3,
+      "path": "docs/adr/0004-use-auto-worker.md",
+      "repository": "shoyann/thrush-swe-agent",
+      "sha256": "a42a88a53f5aeb4ebed853ff6b832cb4bbba5f6dc3338d82d11c8e8c66857adf",
+      "source_id": "src_c30d1eaf229a53b0909062233d684a85",
+      "stored": "0004-use-auto-worker.md-19dfd397b072.md",
+      "url": "https://github.com/shoyann/thrush-swe-agent/blob/daef0a6d6a6d8c59cb53aa9b01b220f32a617a35/docs/adr/0004-use-auto-worker.md"
+    }
+  ],
+  "summary": "Thrush is a local dual-mode SWE agent workbench (Next.js/TypeScript/SQLite) with an Assist mode that stages edits for approval and an Auto mode that runs bundled mini-swe-agent in an isolated worktree/Docker, producing reviewable artifacts. Evidence is documentation-based (README, ADRs, CONTEXT.md); no runtime code is in the snapshot.",
+  "superseded_claim_ids": []
+}

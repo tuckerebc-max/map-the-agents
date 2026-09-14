@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_02c7c85b764f82551e3be1c1f76199e4a895b004381ecf913f5ccd010b6d21cd
+- clm_104052cd48530dba26b10fbc924c2b1b379beaa6e0bd0c9c9ffdf46ea07e2308
+- clm_11e1922f20ee797131209d767d7333c239c3f4c95bd42d49ddc9f93844d45b67
+- clm_49f704eeb0d9b9a90ad308cd35a3ab921995ef1e8e05be2b18173556b4b9286e
+- clm_4d4b4671a5e4e639625ad1a8f20b4ee32dbde9c72d130035ae8b4febd5f58ed4
+- clm_68edf777afcc475e24a9a5d420a7b74072198676eca161d1336f60d4fca16cc3
+- clm_78ca9928c3e6d330d2e96098ec1c3dfd9b205e961d2c80f2bdd360247afb8ea3
+- clm_9350d38132507e1d1b05e60f50176e371cc9a0c9fd30e2ddeb841e4685339e00
+- clm_c8301ed2f4185ff103918a501c63bf8eef7fb0148942c1c62ac8bd555a6d3d05
+- clm_fa4be3aebef193acf831fc5152163ace14b285fdeaf35156ebe5c6c5480628be
+maturity: draft
+page_id: pg_c9ebe43a337e53a4a9e600830452d63f
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: duckdb/extension-ci-tools
+updated_at: '2026-09-14T03:47:49Z'
+---
+
+# duckdb/extension-ci-tools
+
+<!-- rcw:begin owner=entity:ent_4c2dc0f8a12552c4a562ab14623f2081 block=evidence -->
+- duckdb/extension-ci-tools is mentioned in this evidence. [@claim:clm_02c7c85b764f82551e3be1c1f76199e4a895b004381ecf913f5ccd010b6d21cd] [@claim:clm_104052cd48530dba26b10fbc924c2b1b379beaa6e0bd0c9c9ffdf46ea07e2308] [@claim:clm_11e1922f20ee797131209d767d7333c239c3f4c95bd42d49ddc9f93844d45b67] [@claim:clm_49f704eeb0d9b9a90ad308cd35a3ab921995ef1e8e05be2b18173556b4b9286e] [@claim:clm_4d4b4671a5e4e639625ad1a8f20b4ee32dbde9c72d130035ae8b4febd5f58ed4] [@claim:clm_68edf777afcc475e24a9a5d420a7b74072198676eca161d1336f60d4fca16cc3] [@claim:clm_78ca9928c3e6d330d2e96098ec1c3dfd9b205e961d2c80f2bdd360247afb8ea3] [@claim:clm_9350d38132507e1d1b05e60f50176e371cc9a0c9fd30e2ddeb841e4685339e00] [@claim:clm_c8301ed2f4185ff103918a501c63bf8eef7fb0148942c1c62ac8bd555a6d3d05] [@claim:clm_fa4be3aebef193acf831fc5152163ace14b285fdeaf35156ebe5c6c5480628be]
+<!-- rcw:end owner=entity:ent_4c2dc0f8a12552c4a562ab14623f2081 block=evidence -->
+
+## Researcher notes
+

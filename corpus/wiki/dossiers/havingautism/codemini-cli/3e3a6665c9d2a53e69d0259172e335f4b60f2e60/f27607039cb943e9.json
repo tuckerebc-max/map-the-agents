@@ -1,0 +1,885 @@
+{
+  "applied_operation_id": "op_a090432cf1024b07bd72145317ef1772",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_67591fa88eca82da71e254d7e0fb5bb48276b96048f06b2f4cf036026b608808",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L3-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8629d3e9c553c571f7e4befb24f6b1017b1903f0f30e710e287228c2e3bc1b11"
+      ],
+      "text": "The repository contains a design RFC (status: Design RFC) scoped to Codemini CLI / WebUI / Agent Runtime, proposing a memory subsystem with SQLite FTS5 + BM25 as default retrieval and embeddings explicitly optional."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_981fd41c2f871b8eeca1d771e0087c16c838d49219bab39635015a7dcfd6921c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9003bc5b25a930cfcfd00d4f9ecf2210d48e187710184959230af2420045c0fd"
+      ],
+      "text": "The design targets four goals: cross-session memory, task-relevant recall rather than stuffing all memory into the prompt, learning reusable engineering experience from failure-to-verification cycles, and long-term governance (dedup, expiry, conflict handling, eviction)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80a9555406e787020f7d5065dd8b3a09326de0c0abb2a297f3e31a804fe99ae3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 76,
+          "line_start": 73,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L73-L76"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 69,
+          "line_start": 64,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L64-L69"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L71-L71"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_965ec7b3f9d7dbdf56a79188639783bec634358f816c995453b6f078bd4216d3",
+        "slc_b64edf463af241d9e1a8f70707bba02281fe4227d6fcc019f040a0203db5f711",
+        "slc_d147ca229d1ca1e0de200fbcfca4e231103abfa3c42d985a2b8a7c34e3c6fbdd",
+        "slc_ec80597d73fe65f10f9e866de5e90ea8e170048195428b958bc3d28abd31247f"
+      ],
+      "text": "The architecture separates understanding from retrieval: the LLM judges what is worth remembering, extracts atomic facts, classifies scope/family/kind, and detects conflicts, while FTS5/BM25 handles retrieval, filtering, ranking, and top-K recall; embeddings are not relied on by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7fe49ddae134949dea32796528999879ef0ec76ae331200b8be06432dbb0f21f",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 96,
+          "line_start": 94,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L94-L96"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L98-L98"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 90,
+          "line_start": 86,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L86-L90"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L92-L92"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 474,
+          "line_start": 474,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L474-L474"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L84-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ead88eecd9d524a4e2f7a639524fdfa01b8e2f0e6631573ffedfaa7ff841e49",
+        "slc_0fba3f33190dd1d1735a523521394ed094ace6a3c1861b2f9bcdb642e2604a75",
+        "slc_85626489d02ec6ad0fcfd275d713e7bea9f28c90f895a0a0ec5e7b00900df2cd",
+        "slc_95c44bcf896a5ecb6538fb58dcd09b1fabe924244c4dcead41169616ecc69731",
+        "slc_d3ffba1a49ee8590703bb422db7160d75577ce3bb36d831bd2ccd91ffe867c26",
+        "slc_d7731180f3f989bd989b9da02548bce11c0f5fdcbfbc92fe5671b9867e600247"
+      ],
+      "text": "Canonical memory is the single source of truth; the FTS retrieval index is derived data that must be rebuildable when corrupted, without affecting the memory itself."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e9238398b75f82ae956eb6a9d096302ea36cc6e1699b19aa0bf939d3d08031f6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 191,
+          "line_start": 187,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L187-L191"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 185,
+          "line_start": 185,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L185-L185"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 275,
+          "line_start": 270,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L270-L275"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 203,
+          "line_start": 199,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L199-L203"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 246,
+          "line_start": 241,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L241-L246"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_138de303d1039f69ee42968c2826e345e95adb61c5f0a0632bd88eb032de4d18",
+        "slc_a031f5732c5563950c5f083a30e6dd3bbe6683bba838edf84a3d5bd04ef6c67a",
+        "slc_a185a77e64224123845fa462c2892820548534b691eaac08d78da134898e8723",
+        "slc_b5770be2809bffbe196ebe4e663b5149de69544e91d355ad26590a83eb8f1fa8",
+        "slc_e5a75adbc514b33106416a22c20dcb5228ef628ebdca59b3c8194a83cbc11f94"
+      ],
+      "text": "Memory records are typed along three orthogonal dimensions: scope (user/global/project), family (personal/repo/coding/procedure), and kind (preference/convention/lesson/note)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ede699310232f10c3cb894f289da582653ff1ef7bfee6ecb1efb7e2d44a732ef",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 334,
+          "line_start": 333,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L333-L334"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 322,
+          "line_start": 321,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L321-L322"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 319,
+          "line_start": 319,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L319-L319"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 296,
+          "line_start": 294,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L294-L296"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 309,
+          "line_start": 309,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L309-L309"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 325,
+          "line_start": 324,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L324-L325"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 307,
+          "line_start": 307,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L307-L307"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03f226883bd2b2064691654e8e4ff00201692e74e69bb2be1004dc50307de82d",
+        "slc_06563efed9d5db643ac9416622ce6f88a32ff2c7388f44a4126e01d9e312b3d8",
+        "slc_36ccdc0881f25d9ca9ae4d93fee241237edcc156361e125952e30778caf08efc",
+        "slc_4e97a2df88b3f26e2bccce856f345b1afa8121a0dd38b0b06cb1525dce679ff9",
+        "slc_6a14b08674de123dc356c7993fa4f162e0f9c47f87528ffacb0aa78a9693fdbd",
+        "slc_756e57a3a82ff224520204bdb29fa310d844492963028460efcbd04e7b457f30",
+        "slc_f990ef8aff529317b22c07876c15a69a320eb110c477d6aec02d1b2f32c04d85"
+      ],
+      "text": "A proposed MemoryRecord interface includes lifecycle (operational/longterm/archived), confidence, source/session/branch metadata, counters for confirmations, accesses, successes and failures, expected validity days, pinned flag, and revision number."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6f242e1b03985c0a39ef933636482c724b96dd542bc2462c075b9f52430973d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 376,
+          "line_start": 374,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L374-L376"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 345,
+          "line_start": 345,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L345-L345"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 378,
+          "line_start": 378,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L378-L378"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 360,
+          "line_start": 358,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L358-L360"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_081b9824c290a084dddae69363c463dfd8168d3ef85ee924bf1cde92258acce7",
+        "slc_613893d8f4224d179a95807f47113060d63852cccca026904ed42716423bbcf2",
+        "slc_69d1c49092377c12571cae00761c3e3c5e3445422cb92aad0e56fcde0fd4d269",
+        "slc_86c253fb0fb07873ff33bebac86c1216bd78f70a41d0d9e2c2e7ce59adcb6b72"
+      ],
+      "text": "Storage is local-first: user/global memories go in codemini.sqlite, while project memories live in <repo>/.codemini/index.sqlite alongside the repository, avoiding global absolute-path mapping."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_76471ab999d41388d8657f3b86b3fb872196e9360c2388a86c66024f301d69c8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 525,
+          "line_start": 525,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L525-L525"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 545,
+          "line_start": 543,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L543-L545"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 533,
+          "line_start": 529,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L529-L533"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 523,
+          "line_start": 518,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L518-L523"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 539,
+          "line_start": 537,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L537-L539"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 527,
+          "line_start": 527,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L527-L527"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38c27d9fa51ef46137688203673979765c2958e7ff24fcc78337026aa77ced46",
+        "slc_5d7db57691630f5c302c1aee223adc67e860aba4628a8e111be0996fe5850769",
+        "slc_6493dbee2e45ea3768d0a07f6cc150476990e6107b603ad2c7355b2328f3b464",
+        "slc_7460a3812c693e03db74e35925297b23e5ac86034f090e105e8b6222904a0d85",
+        "slc_7fc66cd05484bcc3bb19c2dcc3a63fdc8e059d3e698fb7ee3d65ef59a4fdd381",
+        "slc_b3a6877db03dd253c7a1c5ef50cdcaec7c6106d34a4eb51e199c90ba12a99ffe"
+      ],
+      "text": "A unified MemoryRetrievalAdapter interface is specified with search, upsert, remove, and rebuild methods; the default implementation is FTS5RetrievalAdapter, with a HybridRetrievalAdapter mentioned as a possible future extension."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_63567129734f146b1d51efb17811a6838506f397b13556fbf09fe84b80287d2f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 500,
+          "line_start": 500,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L500-L500"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 502,
+          "line_start": 502,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L502-L502"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 480,
+          "line_start": 480,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L480-L480"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 510,
+          "line_start": 506,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L506-L510"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 486,
+          "line_start": 482,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L482-L486"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a41139dba23d82efdb18f9fe7dcdbf2ada15f2f318bb85964d6ef13a9751240",
+        "slc_0d58e451e7a3fd2166bb2c10986e0b9a88ed5d61876fc406807057a68e4b4ded",
+        "slc_7b02cee427b55b1d8b44b785596d22ebf62207ebfd419c79252db14948e04bcc",
+        "slc_8704e611067ca5a2635ca54ba7bd37e3c643e45690ed3d6c90df3993a9e7f7c5",
+        "slc_e940a69ad6b982a8dccf95b9afbc95369a51caaf02cf0908d0b6683653d964a7"
+      ],
+      "text": "Chinese-text retrieval is handled by pre-segmenting with Node's native Intl.Segmenter (zh, word granularity) into the FTS search_text, while canonical content keeps the original text; if segmentation is unavailable, unicode61 plus substring fallback is used."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd80a5674ec93833de497ea6bd01db01080cacdeb4f0bf6c10c9741159f6aace",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 614,
+          "line_start": 614,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L614-L614"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 588,
+          "line_start": 587,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L587-L588"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 596,
+          "line_start": 596,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L596-L596"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 594,
+          "line_start": 590,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L590-L594"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 622,
+          "line_start": 622,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L622-L622"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d5b004262f928766b3e7a767dfa41f6bc903287fd3175b39a8c5b6eff7a8757",
+        "slc_44abc598df3a510d2cf64e15df12439a74c22307bb4bfa5e89562a7949aa2791",
+        "slc_961cef1097b09f3d9b724b38eba4b93132ffa5178dd610ca1693855a7c939b19",
+        "slc_e27456109a19d19336c90f7b21d874d335aa481643ddd0af4c6cf34da50a5747",
+        "slc_f2dddea7562498042215f0497c0d69f8ff9577977b79cebc4ba9bc1ce5fd7e47"
+      ],
+      "text": "First-version retrieval ranking is a weighted blend: BM25 relevance 70%, confidence 15%, verification 10%, recency 5%, with project exact-scope applied as a filter rather than a soft weight; retrieval score and long-term retention score are kept as separate concepts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c7be0fa0a0792cb48537eeb61fdb4224e7ac1b347035b9a1b4aa002baf387c9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 715,
+          "line_start": 705,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L705-L715"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 703,
+          "line_start": 703,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L703-L703"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 734,
+          "line_start": 734,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L734-L734"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 682,
+          "line_start": 674,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L674-L682"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 628,
+          "line_start": 628,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L628-L628"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 634,
+          "line_start": 634,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L634-L634"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06b37138904bd90ae85585d68ca02edd8b6ec9971bcc290ee2f0163aaa7d49fb",
+        "slc_22cc16297c7bad33c15f3cd61c474b66d6c2865b0abcf729da2aa0c0489cd025",
+        "slc_4b9ad6ae4f961520a228ac106f922eaa927bc78f0ab1aa0293d681f7e174f01b",
+        "slc_67eb32905fc52a774b2cb80b429bb4c99aeb3a7978348269204a560fdfbfc41c",
+        "slc_89389345aeae4d38d1bf55d7244a418887c102561e482fe700ceb1cd19b36f16",
+        "slc_f25e97caad98e9e906786d783d00500bf84240b00bb9dfe1bb89529d247644ce"
+      ],
+      "text": "Three recall paths are specified: bootstrap recall injecting a small stable profile at session start, per-turn recall of top 3-5 repo/coding/procedure memories, and failure-triggered recall of 1-3 coding memories after a tool failure; retrieval before every tool call is explicitly discouraged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_588a7c859133f273b0cff80a2f3b1b70077d50aa75b2336ddd8293c4e71296c6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 172,
+          "line_start": 171,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L171-L172"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 169,
+          "line_start": 166,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L166-L169"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 179,
+          "line_start": 177,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L177-L179"
+        },
+        {
+          "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+          "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+          "line_end": 164,
+          "line_start": 164,
+          "path": "codemini-memory-2.1-design.md",
+          "repository": "havingautism/codemini-cli",
+          "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L164-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ad8d01896c97ba250c88366dff90bdd8ebb021bfba50fdaab4c439cce93da1f",
+        "slc_70ff56abb0846a40642fe7d299464638c07227415c40cfe56a7383faa6de9be2",
+        "slc_9f155914268d682aa9cf58ebf792b3e00053f17981ac1c77c2b87dd89ff69d4f",
+        "slc_ff86193af6a85b9dada5b511882e759f7f8d40d0d95c32f9bc703ee0039f4283"
+      ],
+      "text": "The design mandates graceful degradation so memory is never a single point of failure: FTS failure leads to rebuild then substring fallback, writeback failure is skipped, and a disabled memory subsystem leaves the normal agent loop intact."
+    }
+  ],
+  "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 478,
+        "path": "README.md",
+        "size": 19809
+      },
+      {
+        "lines": 2965,
+        "path": "codemini-memory-2.1-design.md",
+        "size": 46159
+      },
+      {
+        "lines": 212,
+        "path": "deployment.md",
+        "size": 3532
+      },
+      {
+        "lines": 294,
+        "path": "OPERATIONS.md",
+        "size": 9893
+      },
+      {
+        "lines": 37,
+        "path": "RELEASE_CHECKLIST.md",
+        "size": 794
+      },
+      {
+        "lines": 43,
+        "path": "AGENTS.md",
+        "size": 2940
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 581,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1800,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_f3ce42a258915d058792f8913cd0f3f6",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 4,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9/manifest.json",
+  "package_id": "pkg_47f0672b213f3692f91f5aebf66c304dbeb4c9689cf6bcbf75c5aa9aa7c33d40",
+  "repo": "havingautism/codemini-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2160a5cf7438ecdd0d5bb8370edf21376383692ea28ed1d53584d1b2f09fe316",
+  "snapshot_id": "f27607039cb943e9",
+  "sources": [
+    {
+      "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+      "git_sha": "1c546f583ab5bf2e3439f3fd16b4954677d35d62",
+      "lines": 43,
+      "path": "AGENTS.md",
+      "repository": "havingautism/codemini-cli",
+      "sha256": "d83233f02ffd636ca9a5cc1fb8cd39723a1b087cd4ac5d3c22f42def2c17553b",
+      "source_id": "src_e8bb07e44a485513ab80bc581bcfc03a",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/AGENTS.md"
+    },
+    {
+      "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+      "git_sha": "e3b0f676b8b038447a226c45900b966aa8a0c750",
+      "lines": 294,
+      "path": "OPERATIONS.md",
+      "repository": "havingautism/codemini-cli",
+      "sha256": "041570c3a339bb24d319c6120677e7653ebb340ea986a6ef8ab872e3fa0068f1",
+      "source_id": "src_4472164327735c04a017d56b268578db",
+      "stored": "operations.md-fb2c4fc67269.md",
+      "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/OPERATIONS.md"
+    },
+    {
+      "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+      "git_sha": "4732bbee8bd9d13863675c9a8df19bb14c4a3b11",
+      "lines": 478,
+      "path": "README.md",
+      "repository": "havingautism/codemini-cli",
+      "sha256": "db7baae0b9adcb815dae3f2d8a76b91981180f24a527366ed4bb3a9b6e44666c",
+      "source_id": "src_b6b479cca15b5dd58ff5c0f4862900ec",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/README.md"
+    },
+    {
+      "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+      "git_sha": "dfa615a4faf40843b5e22b4b7af460f0dc93c1fc",
+      "lines": 37,
+      "path": "RELEASE_CHECKLIST.md",
+      "repository": "havingautism/codemini-cli",
+      "sha256": "ebeec18ecf585264aa9d32c9d555e76d982266724b5838ac022811c0eca4e09d",
+      "source_id": "src_e034eedfd67a5c468756c68c8f4d6841",
+      "stored": "release_checklist.md-6022994b9700.md",
+      "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/RELEASE_CHECKLIST.md"
+    },
+    {
+      "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+      "git_sha": "8a2c1603f58be95e15a13d5ddb4153fc249b1bf3",
+      "lines": 2965,
+      "path": "codemini-memory-2.1-design.md",
+      "repository": "havingautism/codemini-cli",
+      "sha256": "43850407d34cf49c9f57789ee241f4c3a701f37a2755efc30645e87caf10fd07",
+      "source_id": "src_3fbdf62866815843a69214e39c9f8001",
+      "stored": "codemini-memory-2.1-design.md-9acb1dc7d757.md",
+      "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md"
+    },
+    {
+      "commit": "3e3a6665c9d2a53e69d0259172e335f4b60f2e60",
+      "git_sha": "628ffbd135adef329b5e7534979bd4228f3b6e74",
+      "lines": 212,
+      "path": "deployment.md",
+      "repository": "havingautism/codemini-cli",
+      "sha256": "3c01d8edb5b1b9564e229cce94cc1d00b936d1aceaf38e397ba20f31dc10dd71",
+      "source_id": "src_eeff7e3171b55d87bfa572527b8acf28",
+      "stored": "deployment.md-46128d29935e.md",
+      "url": "https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/deployment.md"
+    }
+  ],
+  "summary": "The evidence consists solely of a Chinese-language design RFC (codemini-memory-2.1-design.md) describing a proposed 'Memory 2.1' subsystem for Codemini CLI/Web, covering storage, retrieval, taxonomy, and pipelines. All claims below describe the documented design, not verified shipped behavior. Evidence coverage: 250 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

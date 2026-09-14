@@ -1,0 +1,552 @@
+{
+  "applied_operation_id": "op_8d4401d8b3644dac8cca4642992bb6a8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_eddbfac44151134d0154d3e70ac8751f06ebb85505daf44d9c7af8c0c3bf7d6e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 182,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L158-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a2ade2e6c7384b6d1f9312f5d425ec2b38c68a7126aab62c2f7a7f03be23b93"
+      ],
+      "text": "The repository contains a TPM plugin entry point, hook scripts for Claude/Cursor session tracking and cleanup, an OpenCode session-tracker plugin, and save/restore hook scripts under scripts/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5ca70b369b3dac6ea6e45ae0a645a5cb66535c66005fd29bd3bf306d631cef4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L57-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4433b979d419727f08ef835155924937a4980ac31ade9cca06bd0139a1447c32"
+      ],
+      "text": "Assistant detection is done by taking a single ps snapshot, finding children of each tmux pane shell, and matching known assistant binary names such as claude, copilot, opencode, codex, pi, omp, and grok."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c47a528f4cade39b27cd923adade4faf36585946df8d1c5759439f36797f2aa7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 78,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L75-L78"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 73,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L64-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_331422a98e98b113a54cb303638ed952dbe89e072b1e142eb6d0fb362e6861ef",
+        "slc_78320c933283ed438f9d5691019c3119f5e21b0a6dd7ed40e67e0331b459ed82"
+      ],
+      "text": "Each supported tool has a primary session-ID extraction method plus fallbacks (e.g. hook state files, process args, transcript or SQLite lookups) to handle cases where hooks have not yet fired after a restore."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb7f6b92f53837337a58f43e13abfc95062996f10da5313fade246aff13ab9e2",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 422,
+          "line_start": 421,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L421-L422"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 432,
+          "line_start": 424,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L424-L432"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dfdca74f3c4aa1771469f7f1b2637a73fbea9c5b4d3a446f9e1564b8a2f0e850",
+        "slc_e63ea6d3d53c302ceceaf430b70142f4863959a805aa9ed2a763b536fff35fea"
+      ],
+      "text": "Session tracking files are written to $HOME/.local/state/tmux-assistant-resurrect on every platform; the path deliberately uses a plain $HOME literal so the assistant-side hook and tmux-server-side save hook agree even when their environments differ."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71395645f768abdd863a4e73ce3d0e39ecd736fa1d759025027c0aa4b3667977",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 452,
+          "line_start": 448,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L448-L452"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a364bfa6145cb4396026e98a5c8191d26a6b621869096e72f0aeb3ea5f45493"
+      ],
+      "text": "The save hook sweeps state files whose process has exited on every run, so the state directory does not grow without bound; the persistent sidecar assistant-sessions.json is what restore reads."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c28ede6b860bccaeb08fa5c8cedaa55f1ed530ffa995fee51ddf17f4188ef66",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 689,
+          "line_start": 687,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L687-L689"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 478,
+          "line_start": 476,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L476-L478"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 554,
+          "line_start": 551,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L551-L554"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 567,
+          "line_start": 564,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L564-L567"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 640,
+          "line_start": 640,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L640-L640"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_351952cffd8d8911dea7cf5ed893d1306ac2d0f06660579ea70b2af3d33e53c8",
+        "slc_a0faed4d67a5776f29a657bbc50b12cafcca75b3d88ef81d5f07aa44b9a462b2",
+        "slc_a6daa9fe5f82bf751679073c2d09d4869ebe88bb4011315ef8231cd4d52b29ce",
+        "slc_b59d566a35b79040c27f1e9d321697e3e0db4e73e91e1864b8a5874f8e727cb3",
+        "slc_bc3ac3d3b03c63014e13b7bd74926abda59decda74b410273ebf34a27da22f51"
+      ],
+      "text": "The plugin exposes tmux options including @assistant-resurrect-capture-env for extra environment variables, per-tool and global drop-flags/drop-env exclusions, @assistant-resurrect-relaunch, and a save-timeout watchdog option."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11b73566a7f2715ef5d53706c983c00895b8f8c168dec5279eefc64dc41827fd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 634,
+          "line_start": 629,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L629-L634"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 627,
+          "line_start": 621,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L621-L627"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 610,
+          "line_start": 607,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L607-L610"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_046581a8ea47aa676f9d58e2f086c33a994539077f5fd86ed7b206e4f0114a70",
+        "slc_346c53e602887bcde7f1af9789a41ab10f1718a8ceb55e61f95496a706e7c267",
+        "slc_669cb9fe5b68094e655a2e47380f3e63accbe23f586faa7b46e88e0773807b55"
+      ],
+      "text": "Session-less commands such as 'claude agents' are only relaunched if the user explicitly vouches the exact canonical command in a plain-text voucher file; restore reads the current voucher, never the sidecar value, and missing vouchers leave panes as bare shells."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79199f603a043259d0c68cb23f64d22c70a30a9f777242e3fe58a18d2661e44f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 102,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L98-L102"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 86,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L82-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ee70994147fdeccb77912540f4c26d8c16147cb1295a6b64e967643256cce27",
+        "slc_5e34bda5e8a2359a03f19cf0fa5f7b1198f6222e6026f6568da730bc407df2bb"
+      ],
+      "text": "Prerequisites are tmux (tested 3.4-3.7), TPM, jq, and at least one supported assistant CLI; the plugin also integrates with tmux-resurrect and tmux-continuum."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c87dc7d4735372f543545e2827b0e8d13a4352432c630ff5744436ea00cc8133",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 539,
+          "line_start": 535,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L535-L539"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e3888cf258d157fcf788a3bc67b109457d822de88cd483cd8df14cf7f4b53a8e"
+      ],
+      "text": "Credential-flag stripping matches flag names only, so a secret embedded inside an opaque value (e.g. inside a --settings JSON document) is persisted as written; protection relies on file permissions instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_01606217d66b74f7db75c72ad19c6ff690d73ffd661fcb960a4f186ee94f1cb9",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 498,
+          "line_start": 492,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L492-L498"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 504,
+          "line_start": 500,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L500-L504"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ead31471d708dc0a820877133419746723a240617bdac6c4577d27638b3a0ab",
+        "slc_6a64dd00ef292c60b0b1961e70fd6cad39cd3f4ad22d29e7b20e36dcd660d904"
+      ],
+      "text": "On macOS, reading another process's environment is not possible unprivileged, so hookless tools (Copilot, Codex, Pi, Oh My Pi, Grok) capture no extra environment variables at save time there; /proc-based capture works on Linux/WSL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6bab8e8645d9b365e849c0122f0feaae5159d6a340cc9e5a2a793fe8a7b8631a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L188-L188"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 192,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L190-L192"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 211,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L203-L211"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 201,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L196-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_205696bdc93ad9d583b5a180ad6bfca1c722a90281c9affaa0e1fc71559964bf",
+        "slc_281119781de3f85632888996396a3b392fc7e9985254c29dbf046e668d39cbcc",
+        "slc_3f802e1f92c1bf80b24c2c82cf3e9983520e4c823dec4e9604d5e72a4e9c5566",
+        "slc_e665e42b24b04d2bb2ca6c8c9d54553ab8712ea17fb18dcf6ec3e635c006b3ee"
+      ],
+      "text": "Repository development practice: the full test suite runs in Docker with real CLI binaries via 'just test', covering install, save, restore, uninstall, hooks, session ID extraction, and regression scenarios; fast hermetic suites exist for save hardening, restore, cursor, and plugin hardening."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0fee14fdb77b10f2cae1af975bfbc5526b6f69cab61b4f81827abbc807df066c",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 219,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L217-L219"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 215,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L215-L215"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 231,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L230-L231"
+        },
+        {
+          "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+          "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+          "line_end": 235,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "timvw/tmux-assistant-resurrect",
+          "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md#L233-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24c8bb55eacdb2878d90c19a58154054fa1e1fd04e0afad4d8ab968bee6dfe78",
+        "slc_2522f73558eecea80d6a8184c8b076ede83e6fa48470c3d28f933ea180dd4043",
+        "slc_6a218ac76d4ddf810af3019e659bf120dd870bc9ec99518c1200fce77dd36b25",
+        "slc_ecc3fc80e0455ba213ebf54d4ae3b98bddcf7f4514e1074e03758068db9cc764"
+      ],
+      "text": "A Docker benchmark matrix measures save-hook performance, producing CSV and Markdown summaries in test-results/ and running on every push/PR in GitHub Actions with published step summaries and artifacts."
+    }
+  ],
+  "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 946,
+        "path": "README.md",
+        "size": 47560
+      },
+      {
+        "lines": 148,
+        "path": "docs/design-principles.md",
+        "size": 8262
+      }
+    ],
+    "omitted": [
+      {
+        "path": "AGENTS.md",
+        "reason": "byte-budget",
+        "size": 35838
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 56,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": false,
+      "omitted": 1,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_d242fc117f915972abbf2f23bba44350",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/timvw/tmux-assistant-resurrect/4d740923614a522e984885a75041baf1bf1c6b5c/819817bffcc019b3/manifest.json",
+  "package_id": "pkg_7f32d97e212240f9b897bd16fcb8060c58337c0bd392a47a03cae1edb053fe48",
+  "repo": "timvw/tmux-assistant-resurrect",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b26e249091b38c7751736c3c7ebfcc54685b59400b2fa03351c80f71505de154",
+  "snapshot_id": "819817bffcc019b3",
+  "sources": [
+    {
+      "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+      "git_sha": "071166c3eb851576c53cf2caf928b6691e6e1b8a",
+      "lines": 946,
+      "path": "README.md",
+      "repository": "timvw/tmux-assistant-resurrect",
+      "sha256": "943e8b7b1e97a70140b695dfdfd3d334505a2532a7869c93bb10a9075bdddebd",
+      "source_id": "src_83420083763d561d8bfa6086401cb304",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/README.md"
+    },
+    {
+      "commit": "4d740923614a522e984885a75041baf1bf1c6b5c",
+      "git_sha": "777a81676f39f4064180f627f39f44b737357317",
+      "lines": 148,
+      "path": "docs/design-principles.md",
+      "repository": "timvw/tmux-assistant-resurrect",
+      "sha256": "5b624ba6a0fd67d7e69fb4a720af0af80647b2e5da427cb1b56a42aaf353dd9d",
+      "source_id": "src_fffeb7dae4ac5b1cb437dc60967479d6",
+      "stored": "design-principles.md-e44a93e91d5c.md",
+      "url": "https://github.com/timvw/tmux-assistant-resurrect/blob/4d740923614a522e984885a75041baf1bf1c6b5c/docs/design-principles.md"
+    }
+  ],
+  "summary": "A tmux-resurrect plugin that saves and restores AI coding assistant sessions (Claude Code, Cursor, Copilot, OpenCode, Codex, Pi, Oh My Pi, Grok) by detecting assistant processes, extracting session IDs via hooks/plugins/process args, and replaying resume commands after tmux restarts. Evidence is README-only documentation of the product's design, configuration, and testing workflow. Evidence coverage: 134 of 163 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

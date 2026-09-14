@@ -1,0 +1,667 @@
+{
+  "applied_operation_id": "op_a067f423887d4e82be9d896000d8faf8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ad387874998c477d65e534b082df5c31930a6f284ae3fa473681a04188e59af",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L123-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd8b8c55c98510613bca73584f566534fa9894ed2d1bcd40f88df76caa494f54"
+      ],
+      "text": "A CLI drives visible Garcon chats through a running server, supporting catalog discovery, sync/detached starts and resumes, steering, status, transcript search and reads, export, handoff, and stop controls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_432a5f146be6dfa7357a70ab0968d76a9d30e955e7d1a768ac4eae3b442bfa4e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e45c3ff4fb8fbdde2b59c188985429810c35bcee07aa11690a4274be08c557a"
+      ],
+      "text": "The web UI is served at http://127.0.0.1:8080 by default; first launch requires creating an account at /setup, and authentication is enabled by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_658acd5967d19269261de486795c819c53fbd3ce86521543847477224059ec5b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 133,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L132-L133"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 129,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L127-L129"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 139,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L136-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5e35e505d2adcb7e863d6c0dd39210f515cb05b92840d61afe602b54a154876",
+        "slc_ce00de365854a22ffb8bae296a97c8088d962a6ced1c438e5e45d13ce47e1b80",
+        "slc_e14dfff5175982a6924e3c12889ccb3737dbcdb3104444d91c5e6f576ee1e969"
+      ],
+      "text": "The CLI is invoked as `bun cli/main.ts --workspace <name>` with subcommands such as start-async, search, read, status, and resume-async, including flags like --parent, --agent, --model, and --permissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e84ccf9c333cc2fd9e51fd973c59808460c778a86ea5c652c65a1f9f9d0081fe",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 194,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L190-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08c514c38c101ddc8f68e9308cf19df16e8e1846bff84cbd5a9973b30ad201cb"
+      ],
+      "text": "The repository is organized into a SvelteKit/Svelte 5 frontend (web/), a Bun server handling chat lifecycle, providers, Git, auth, and notifications (server/), agent-specific runtimes (server-agents/), shared contracts (common/), and black-box integration tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1153a4567aec63fd56e8be5a7dd02c17e75fd2e75c08868e4254c1b62812af99",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L42-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d0bddc727b9e79e08f743b06f7e4e6c2f4e22b51a687617ccdd34bdad50ecd3"
+      ],
+      "text": "Running Garcon requires Bun, git, and a modern browser, plus at least one coding agent or API provider; optional pull-request support needs an authenticated GitHub CLI on the host."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_20d068f8e1cc00d3c29622ac36ed14acbac868546f854d3defa14d68c512b99a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L111-L111"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L113-L113"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L109-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_402fe3493d8719412c7a4637fc6550b30c8d8b280d7e4d2e69cd2308029cc88c",
+        "slc_b6752c89643efd318a291fa3e3b1350a9647dc3bb72686cc176d215a2913f893",
+        "slc_e04c839371518f77887c6f7b5b8ac2de38e623fc454f87cb2c2f54c58a35f95d"
+      ],
+      "text": "Garcon supports Claude Code, Codex, Cursor Agent, OpenCode, Amp, Factory Droid, and Pi as coding agents, plus direct Anthropic Messages and OpenAI Responses/Chat Completions compatible endpoints and provider presets like Ollama and OpenRouter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_82abca4e5a09be83ec4f3a4e34c315073c324ad2d1cb545e7908398138ab7318",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L117-L117"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9a8a911bba374f41e9c511cb198604ba58186cd099cd59577c5a5798662739b7",
+        "slc_bd0ece6af7939c9467b634450c41bbc3651342355372490853f6338bd1ca171d"
+      ],
+      "text": "Model names may carry a `[Nk]` suffix (100-1000, thousands of tokens) that sets a per-chat Claude auto-compaction window; the annotation overrides CLAUDE_CODE_AUTO_COMPACT_WINDOW for that child process only and requires Claude Code 2.1.238+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1bde8ef6a719c03ac9426124604535b8752b557e99fda47e06b319acc6d4e02",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 60,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L54-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cef3b824b7444cc7aa0cef932b3ed7c482098d13692ee19f3a54c1b134312b16"
+      ],
+      "text": "Chats can exchange provenance-labeled messages, launch delegated child chats, and receive their final results while keeping parentage auditable; the workspace tiles up to four resizable windows and tracks lineage in Chat Map."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75ea4fe2e40dac035fe3fb43623545ee8ca4d97c38e4839f6114275d94f1e545",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 165,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L165-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_291e3f59fed178724c14fd59c7a7363026c73dde398dd274f022c447b596dda0"
+      ],
+      "text": "Tickets persist in the workspace's tickets.sqlite, independent of chats and transcripts; a damaged or unknown-schema store is left unavailable for explicit recovery rather than rebuilt from transcripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_721a26cbe454ea51cd3886d428dd9aa26b99ebcd449bae9258ea426ec338d9e8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L27-L27"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L179-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b2dcda6381ff7b7adf7b1f5b0fbb7ff723052ed1a3bc98da36c65d04289b6159",
+        "slc_f7ed3c3eb3c07d669fceefdaa6071dd73f31a8041e0aefdb613cbcaf03b2fff3"
+      ],
+      "text": "Garcon does not sandbox agents or their commands, which run on the host under the user's account; the README warns against exposing an unauthenticated instance to an untrusted network."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33b52fd12413901b72a930d99ec0b3a6fb790c9f23501134f7fb474d98d3f506",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 147,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L145-L147"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L155-L155"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L143-L143"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+          "line_end": 153,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md#L149-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e009c4021b4ffa8add13fb7c5919f4a481aead7aa22de48ea3df9c708e541c9",
+        "slc_3f9be0d70e639096bfd409647fb96688796c5c9b573994a220ac488b3a1562f4",
+        "slc_64179a2c86902ba4e6b8affc0f9ac1e6a39663d48b7ddd2db6780a4c88ebc614",
+        "slc_9e2fc24a676c04aeed66ada43559d5a9a13b30ea67a38381f640aec6d2f5ce79"
+      ],
+      "text": "A companion garcon-skills package exposes the control plane to skill-aware agents via skills like garcon-captain, garcon-agent, garcon-task, garcon-message, garcon-schedule, and garcon-amp, installed with a link.sh script."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7ec9f7aee411fe82f84ae67049157813defb12b06b4478849a051a175ca4285",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 37,
+          "line_start": 7,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L7-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33009858f068c0825da973e8645424416b55eec7105fd3e792df58684a4376bb"
+      ],
+      "text": "Repository development practice: AGENTS.md directs contributors to use bun instead of npm, run `bun run test` to validate changes, start new servers on different ports rather than killing running ones, and treat the git tree as read-only unless instructed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b63d0f83240485fa164f987a9fa4d1fadac8469dd1500f42e2c2317a222e4da",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L56-L60"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L50-L52"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7cdce43f998c02313ece7a850e6e54aa488b0c522e75d4bf536934460f3ccb63",
+        "slc_b6c981e48b86721d1752a6b60abf00e9a2ed5f0fa68e33d42102fdf10326418e",
+        "slc_b949777fac9981cf2c64d00de168ad7d06aba2a79e0c9476b876bcdfc1e5c1df"
+      ],
+      "text": "Repository development practice: every WebSocket/API contract change requires updated type definitions, sender and receiver logic, tests, and a migration note in the PR description when behavior changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3df0c98e0533218c819df3ddc92e8f3d89a964db4f3f9b9546fd63c0e3f9683a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 409,
+          "line_start": 406,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L406-L409"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 402,
+          "line_start": 402,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L402-L402"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_205da7f6552cf7117bdb4885874f456d678f48925fb262d1f94dfac6646be6b8",
+        "slc_69d33293495bc5ececb2b763685c2e001ae04f834076e539451fd9b90be9a021"
+      ],
+      "text": "Repository development practice: integration coverage is mandatory when correctness crosses server, transport, persistence, provider, or SPA boundaries, with black-box server tests under integration-tests/tests/server and live-agent suites kept under test:live:* gated by PR CI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0021cf51c63bd3e36b565e6987acf9faddc9d7814c113f8c4c95e0ebbeb952c0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 307,
+          "line_start": 306,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L306-L307"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 312,
+          "line_start": 311,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L311-L312"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 293,
+          "line_start": 289,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L289-L293"
+        },
+        {
+          "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+          "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+          "line_end": 322,
+          "line_start": 321,
+          "path": "AGENTS.md",
+          "repository": "cfal/garcon",
+          "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md#L321-L322"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42097853f0b2679ef977634b8b11bf5e05012e3ab55cb99fc917a9ce093899cf",
+        "slc_5e0be3ad67e4c30fdc0bd73b66f7401f2c22035bcc042d4e6926158530c09b57",
+        "slc_956d05e38e21deab7a3962b589e6487a64463abe67d8dd7f8a2fd20b7d227e50",
+        "slc_d18a524c41c075c173261d483cfd98e6c0e97e7812cf908d6dc4cc290d70d591"
+      ],
+      "text": "Repository development practice: the frontend must follow canonical Svelte 5 patterns, including $state/$derived/$effect rune usage, callback props instead of createEventDispatcher, and typed context helpers rather than string-keyed context."
+    }
+  ],
+  "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 196,
+        "path": "README.md",
+        "size": 13567
+      },
+      {
+        "lines": 515,
+        "path": "AGENTS.md",
+        "size": 31159
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 9
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 805
+      },
+      {
+        "path": "SPLIT_PANES.md",
+        "reason": "file-budget",
+        "size": 122486
+      },
+      {
+        "path": "docs/brand/README.md",
+        "reason": "file-budget",
+        "size": 3532
+      },
+      {
+        "path": "docs/cli.md",
+        "reason": "file-budget",
+        "size": 28322
+      },
+      {
+        "path": "docs/docker.md",
+        "reason": "file-budget",
+        "size": 3874
+      },
+      {
+        "path": "docs/local-models.md",
+        "reason": "file-budget",
+        "size": 2611
+      },
+      {
+        "path": "docs/provider-compaction-rows-design.md",
+        "reason": "file-budget",
+        "size": 6734
+      },
+      {
+        "path": "docs/security.md",
+        "reason": "file-budget",
+        "size": 1678
+      },
+      {
+        "path": "docs/transcript-ledger-v5-cts.md",
+        "reason": "file-budget",
+        "size": 140740
+      },
+      {
+        "path": "docs/transcript-ledger-v5-design.md",
+        "reason": "file-budget",
+        "size": 205346
+      }
+    ],
+    "omitted_count": 10,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3396,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 10,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_05a22a852d2753b1bbd968eb223d7ee7",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/cfal/garcon/42a5322794a9a755a9eee34f707aeb7e72ee6331/76fa39f541038aba/manifest.json",
+  "package_id": "pkg_87269213c12b77b0e341f4140d36a86256256cc2da541268a15dc8c4dcbc81ca",
+  "repo": "cfal/garcon",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8ebf27a41a1498a452439d2019159c0973687008947f88625c49b5e0b9b9426d",
+  "snapshot_id": "76fa39f541038aba",
+  "sources": [
+    {
+      "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+      "git_sha": "7604e34eb3b20f51339a4927a0d4a838aceba416",
+      "lines": 515,
+      "path": "AGENTS.md",
+      "repository": "cfal/garcon",
+      "sha256": "85f628fc64ae55e7ad086ff9500dacebb63e5026eccb926f6836b98ccbbc398e",
+      "source_id": "src_9002e17cd985507394a8f1977ab77890",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/AGENTS.md"
+    },
+    {
+      "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+      "git_sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "cfal/garcon",
+      "sha256": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9",
+      "source_id": "src_16ec7b0daa145a8aa77cc7262db94694",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/CLAUDE.md"
+    },
+    {
+      "commit": "42a5322794a9a755a9eee34f707aeb7e72ee6331",
+      "git_sha": "65fe5fb6da95e36d26184e72662543d6929214ef",
+      "lines": 196,
+      "path": "README.md",
+      "repository": "cfal/garcon",
+      "sha256": "ae28ed09f9fd5eb1ae1d522fe1c39d109fe885fee4878fc3226612bcae5a9a51",
+      "source_id": "src_d065bd85d7505ba6802d09640821a8d4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/cfal/garcon/blob/42a5322794a9a755a9eee34f707aeb7e72ee6331/README.md"
+    }
+  ],
+  "summary": "Garcon is a self-hosted browser workspace for running and coordinating multiple coding agents, with a CLI, agent skills package, ticket store, and Git/terminal integration. Evidence covers product features from README plus extensive contributor development rules in AGENTS.md. Evidence coverage: 132 of 144 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

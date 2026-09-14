@@ -254,7 +254,10 @@ def test_archive_pages_excluded_by_default_and_labelled_when_included(corpus: Pa
     maps.build(root)
     default = maps.query(root, "bosun supervision")
     assert not any(r["path"].startswith(f"{wiki.WIKI_DIR}/pages/") for r in default["results"])
-    with_archive = maps.query(root, "bosun supervision", include_archive=True)
+    # max_chars raised: the facet-major map/features/*.md pages add same-scored "map/" competitors for this
+    # exact phrase, and the default 4000-char budget can fill on those before an alphabetically-later
+    # archive path is ever reached; a real corpus-wide search still finds the archive hit given more room.
+    with_archive = maps.query(root, "bosun supervision", include_archive=True, max_chars=8000)
     archive_hits = [r for r in with_archive["results"] if r["path"].startswith(f"{wiki.WIKI_DIR}/pages/")]
     assert archive_hits, "the kernel's own source page should match once the archive is explicitly included"
     assert all(h.get("archive") is True and "repo" not in h for h in archive_hits)

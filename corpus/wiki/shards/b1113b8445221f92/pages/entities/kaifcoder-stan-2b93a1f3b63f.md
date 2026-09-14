@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1b0b7c9471764cb980e7c120330e4ee05a0aa511d08249533c3cc086c7657974
+- clm_1def8f168a5bc4e4ca3c248894be49a97c85d4a5d7726e0d9bb71f3f51997f7a
+- clm_294dba8915e7fd7c2f69ad7e2c6b3f77e30a287d7096298bd0813bf6bfe2869d
+- clm_310e8a56cd8a1ad8aeaa66f3b694020f9934e3747bd977738b69c42dcb2946ab
+- clm_41ab05c379f7d3e3db0a81f4e81b5bd707612d5311373695e478ece92b2c5d69
+- clm_4477e8e1539884346bbf4c35761306b1408acb1854d46e623debd9357372ee96
+- clm_a39e5a323c816da39bf8bc43f61cfe8ae92dd819e8abffb5f66fb6be15cbead1
+- clm_e12f7b05f69a011e6fc1447ba5de9766064c260c4949ec4c307749489cc3ad08
+- clm_ea23be52fee1ca54f94ce5902c091ee3d9bf54bb3b86c6a3aaf75a19d5057fd0
+maturity: draft
+page_id: pg_a2569f7913f9519c80762b93a1f3b63f
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: kaifcoder/stan
+updated_at: '2026-09-14T04:43:58Z'
+---
+
+# kaifcoder/stan
+
+<!-- rcw:begin owner=entity:ent_df6a6540f11c53fb83da9b9c0e3d5eb1 block=evidence -->
+- kaifcoder/stan is mentioned in this evidence. [@claim:clm_1b0b7c9471764cb980e7c120330e4ee05a0aa511d08249533c3cc086c7657974] [@claim:clm_1def8f168a5bc4e4ca3c248894be49a97c85d4a5d7726e0d9bb71f3f51997f7a] [@claim:clm_294dba8915e7fd7c2f69ad7e2c6b3f77e30a287d7096298bd0813bf6bfe2869d] [@claim:clm_310e8a56cd8a1ad8aeaa66f3b694020f9934e3747bd977738b69c42dcb2946ab] [@claim:clm_41ab05c379f7d3e3db0a81f4e81b5bd707612d5311373695e478ece92b2c5d69] [@claim:clm_4477e8e1539884346bbf4c35761306b1408acb1854d46e623debd9357372ee96] [@claim:clm_a39e5a323c816da39bf8bc43f61cfe8ae92dd819e8abffb5f66fb6be15cbead1] [@claim:clm_e12f7b05f69a011e6fc1447ba5de9766064c260c4949ec4c307749489cc3ad08] [@claim:clm_ea23be52fee1ca54f94ce5902c091ee3d9bf54bb3b86c6a3aaf75a19d5057fd0]
+<!-- rcw:end owner=entity:ent_df6a6540f11c53fb83da9b9c0e3d5eb1 block=evidence -->
+
+## Researcher notes
+

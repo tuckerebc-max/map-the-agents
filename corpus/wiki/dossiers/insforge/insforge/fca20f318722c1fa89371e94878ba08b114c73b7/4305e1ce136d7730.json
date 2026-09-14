@@ -1,0 +1,1604 @@
+{
+  "applied_operation_id": "op_8fd3ab65918a43d2888429a07c889da6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9be7ae9c62ec7cf80a116e03fa39b0691304a6c4bc55a753bf1885b8884afb39",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7930585795c9ff930fedfbdcfc114b05be90ec6faf1ab3940293dbf9d2debba9"
+      ],
+      "text": "InsForge is described as an all-in-one, open-source backend platform for agentic coding, giving coding agents database, auth, storage, compute, hosting, and an AI gateway."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b75a5618cf4e209f2bebc0f44ba8868fe6e714c40d1f93dd87cdcdf77e9fcb32",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L48-L48"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 51,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L50-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ee47bcca72c570dab457384d80962a2081f7a73ca9ebfb5bcb19ffc63cf4b1f",
+        "slc_9c9fe9f8f0bd61f1ee9ed081d8ba7e7296d28d65d92b83cca3d9f3b6a5cad9e0"
+      ],
+      "text": "Coding agents interact with InsForge through two interfaces: an MCP server (self-hosted and cloud) exposing operations as tools, and a cloud-only CLI paired with Skills invoked from the terminal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a66169c6735c64d625bfcc66d3c2af4c6fc85dc313cbf2fc1eb94a82120524d6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 98,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L92-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0990d4e468972dd63037a9a7fad1a244478e07f7399e4d3d972bbee08b431d5a"
+      ],
+      "text": "Core products include authentication, Postgres database, S3-compatible storage, an OpenAI-compatible model gateway, edge functions, compute (private preview), and site deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af3e6a0b6e84ccc9de090eb958405c7395e59ddf0000400fdaf20281c5eb503e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 56,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L55-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ca56ef6d4edd7d7d750d648c0260a9b5b5f8f76e4a66804592a45a6a19128a27"
+      ],
+      "text": "Through its interfaces agents can read backend context (docs, schemas, metadata such as deployed functions, bucket contents, auth config, and runtime logs) and configure primitives like edge functions, migrations, buckets, and auth providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5874fc9623ba53d553a62dcd8cf353b45dc57071eb322eb85f75e1978c7a36f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "9442c9d3e4d203c3924b9a9d9edb649aa2ac2ff8",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "docs/alternatives.mdx",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/docs/alternatives.mdx#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d99a3ab8fa51028e926b767a1eb7e16c94579183377a043b6154b4feb0c4a672"
+      ],
+      "text": "The MCP server and CLI expose infrastructure as structured, machine-readable context so AI coding agents can plan and execute operations autonomously within scoped permissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e9b9f7552a2ec2507f84366960cf6d977dbdfe73deb2dd863905f2b420dea60d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L117-L117"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 129,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L125-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24afb37fc52853d7722929965636b4c8d4763ef4957ebfa9068e2927ed4b70d0",
+        "slc_abb9808e7fff685af5ab6331363dc7ac7501495c782e7c8ad327754b3047b2f8"
+      ],
+      "text": "Self-hosting via Docker Compose requires Docker with Compose v2; a setup script generates secrets including JWT_SECRET, ENCRYPTION_KEY, POSTGRES_PASSWORD, ROOT_ADMIN_PASSWORD, and access keys into ~/insforge/.env (mode 600) without starting anything."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f47cfeb9ba25e69371a41a477e70c85c55351d62d75b01d9e20a4ae598d4126",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 240,
+          "line_start": 240,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L240-L240"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 234,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L233-L234"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 251,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L251-L251"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 231,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L231-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22a71907c1dde5d84d645fcff24da4a48aa5069bb4047b639fda92ded79ca027",
+        "slc_3848a0921260df10e44b2fc75b944e309b5f70032c7632f7c9b780e99e25345c",
+        "slc_a53c6e359e0507b6f9fc50b63320499f17d2a71940f3374442ce0fede689bc42",
+        "slc_cc32f4d251aa12ae61a55912cd1486590f28e4297ff20030e11e0610f66db60c"
+      ],
+      "text": "Storage defaults to the local filesystem; S3-compatible backing storage enables an S3 gateway at /storage/v1/s3, with bundled MinIO or RustFS compose overlays or bring-your-own S3 settings (S3_BUCKET, S3_REGION, keys, optional endpoint and presigned-URL mode)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77710d899fdccae6207da39f19fbeb307462896b6b5aafb612a49c4a89ca939d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 197,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L194-L197"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 219,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L218-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ab7d94d347a1a1dbbeddd938bae0bee5a26038358ba44a1d1e523e28e839653",
+        "slc_f60ac0d9121f9408d3b37afc7da7d07dbcbca534fa05fb6dace71a3840b8fa19"
+      ],
+      "text": "Multiple isolated instances are supported by giving each project its own directory, COMPOSE_PROJECT_NAME, and ports; directories sharing a project name share containers, while distinct names yield separate containers, volumes, databases, and secrets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd373b5f39446aff159818ab6d913fdb04971853d72ae498e94408d0a947609f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "2f017fed787cbace4ebc7819d66dfe12a9fc485e",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "GOOGLE_OAUTH_SETUP.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GOOGLE_OAUTH_SETUP.md#L54-L54"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "2f017fed787cbace4ebc7819d66dfe12a9fc485e",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "GOOGLE_OAUTH_SETUP.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GOOGLE_OAUTH_SETUP.md#L32-L32"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "2f017fed787cbace4ebc7819d66dfe12a9fc485e",
+          "line_end": 45,
+          "line_start": 37,
+          "path": "GOOGLE_OAUTH_SETUP.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GOOGLE_OAUTH_SETUP.md#L37-L45"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "2f017fed787cbace4ebc7819d66dfe12a9fc485e",
+          "line_end": 71,
+          "line_start": 68,
+          "path": "GOOGLE_OAUTH_SETUP.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GOOGLE_OAUTH_SETUP.md#L68-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4bdc0a937fe113da6ec71ae3c4551e95eda1403a88d21d0c00981bed397555cb",
+        "slc_61ed38e72fc24cfc76a442d2d2206d4b37036299fd4b5ee456b6a16f55ecc5ed",
+        "slc_9f13ee88061a1849a44ff4e9ada82b06be3f5e1573f46c33b03a8053b06f1f71",
+        "slc_f84baa3f574ba6a26e3513053b82965f5c23ad9306233065f19dbbd9bd0b595a"
+      ],
+      "text": "Google OAuth is documented with endpoints GET /api/auth/v1/google-auth (returns an auth_url) and GET /api/auth/oauth/google/callback, which redirects with token (JWT), user_id, email, and name as URL parameters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7894865097da0a5b2acecb2cfd153df29f711987cc62fa75444943d9c5c69223",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "2f017fed787cbace4ebc7819d66dfe12a9fc485e",
+          "line_end": 90,
+          "line_start": 85,
+          "path": "GOOGLE_OAUTH_SETUP.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GOOGLE_OAUTH_SETUP.md#L85-L90"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "2f017fed787cbace4ebc7819d66dfe12a9fc485e",
+          "line_end": 82,
+          "line_start": 76,
+          "path": "GOOGLE_OAUTH_SETUP.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GOOGLE_OAUTH_SETUP.md#L76-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c492ec6e6190f5c248af7d6e96df36ca0c01aa95dcd1f4da4be0317902bd0a20",
+        "slc_e0a34ab0e8ffcfaee75ede254372e55a1a1383b03183032971cf25bd66566cbf"
+      ],
+      "text": "On first Google login the system creates records in auth, identifies, and profiles tables; returning users are looked up by provider and provider_id in the identifies table and have last_login_at updated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38afe73055d6ed8e4fb0e2cb16e8a2f7ae324c4289896a46f041d49c75031588",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "e73f0901fcdd0a0fdc3843ce298047d9b83a241d",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "docs/asset-guidelines.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/docs/asset-guidelines.md#L77-L80"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "e73f0901fcdd0a0fdc3843ce298047d9b83a241d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/asset-guidelines.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/docs/asset-guidelines.md#L3-L3"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "e73f0901fcdd0a0fdc3843ce298047d9b83a241d",
+          "line_end": 73,
+          "line_start": 68,
+          "path": "docs/asset-guidelines.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/docs/asset-guidelines.md#L68-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04fb85cb8208cd7b2e68353966d7a447cb8b99c08f612f927412e855eecfd7ae",
+        "slc_c88374658ef9efb2c85b14a7f10ffa81a9a045eb7be7137af6d3c89352420fbd",
+        "slc_e2a0e036c547807477999a400b27f3112d1fa2706fc1363ce09c03e05fe8da40"
+      ],
+      "text": "Repository development practice: docs/asset-guidelines.md instructs contributors to review and optimize documentation media before committing, with a PR checklist and recommended tools (FFmpeg, pngquant, jpegoptim, SVGO)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77f6f395e94062ce53ef8efd9b3aa11d765bcd636a40278a3b5aa99e4037d835",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "1d6b48b9397bfd40b03552da63ec72fcfda90766",
+          "line_end": 72,
+          "line_start": 69,
+          "path": "CLAUDE_PLUGIN.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/CLAUDE_PLUGIN.md#L69-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45fa002d63036b43e63ac72e73bd392933c407a663cbd3e485cf2c43b2e78254"
+      ],
+      "text": "Repository development practice: the .claude/skills and .agents/skills directories are internal contributor skills for working on the InsForge OSS repository, distinct from the public plugin maintained in InsForge/insforge-skills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_268fa60143b4e9deb04a145622a3f2e61dde914be20d16d007fda4c47fa92cff",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+          "line_end": 285,
+          "line_start": 285,
+          "path": "README.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md#L285-L285"
+        },
+        {
+          "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+          "git_sha": "1d6b48b9397bfd40b03552da63ec72fcfda90766",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "CLAUDE_PLUGIN.md",
+          "repository": "insforge/insforge",
+          "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/CLAUDE_PLUGIN.md#L89-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d91e0c7e8300f33d7a1118c2fd3d728e68dddd899a2e376c0a6ce14345d71c5",
+        "slc_a886abd84f0ecd775a350e685d7cd9fa0b39435a14428b38932f72a9c1015588"
+      ],
+      "text": "The project is licensed under Apache License 2.0, while the public InsForge skills plugin is MIT-licensed."
+    }
+  ],
+  "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 357,
+        "path": "README.md",
+        "size": 14130
+      },
+      {
+        "lines": 89,
+        "path": "CLAUDE_PLUGIN.md",
+        "size": 2782
+      },
+      {
+        "lines": 49,
+        "path": "GITHUB_OAUTH_SETUP.md",
+        "size": 2624
+      },
+      {
+        "lines": 148,
+        "path": "GOOGLE_OAUTH_SETUP.md",
+        "size": 4371
+      },
+      {
+        "lines": 80,
+        "path": "docs/alternatives.mdx",
+        "size": 3663
+      },
+      {
+        "lines": 80,
+        "path": "docs/asset-guidelines.md",
+        "size": 2203
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/faq.mdx",
+        "reason": "file-budget",
+        "size": 19221
+      },
+      {
+        "path": "docs/introduction.mdx",
+        "reason": "file-budget",
+        "size": 3431
+      },
+      {
+        "path": "docs/mcp-setup.mdx",
+        "reason": "file-budget",
+        "size": 20996
+      },
+      {
+        "path": "docs/oauth-server.mdx",
+        "reason": "file-budget",
+        "size": 16038
+      },
+      {
+        "path": "docs/partnership.mdx",
+        "reason": "file-budget",
+        "size": 22876
+      },
+      {
+        "path": "docs/pricing.mdx",
+        "reason": "file-budget",
+        "size": 3557
+      },
+      {
+        "path": "docs/products.mdx",
+        "reason": "file-budget",
+        "size": 3146
+      },
+      {
+        "path": "docs/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 1746
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 1413
+      },
+      {
+        "path": "docs/referral-program.mdx",
+        "reason": "file-budget",
+        "size": 2133
+      },
+      {
+        "path": "docs/showcase.mdx",
+        "reason": "file-budget",
+        "size": 2747
+      },
+      {
+        "path": "docs/agent-native/branching.mdx",
+        "reason": "file-budget",
+        "size": 1981
+      },
+      {
+        "path": "docs/agent-native/cli-harness.mdx",
+        "reason": "file-budget",
+        "size": 5142
+      },
+      {
+        "path": "docs/agent-native/config-as-code.mdx",
+        "reason": "file-budget",
+        "size": 11049
+      },
+      {
+        "path": "docs/agent-native/diagnostics.mdx",
+        "reason": "file-budget",
+        "size": 3588
+      },
+      {
+        "path": "docs/agent-native/overview.mdx",
+        "reason": "file-budget",
+        "size": 3778
+      },
+      {
+        "path": "docs/agent-native/vscode-extension.mdx",
+        "reason": "file-budget",
+        "size": 2359
+      },
+      {
+        "path": "docs/deployment/deploy-to-aws-ec2.md",
+        "reason": "file-budget",
+        "size": 12271
+      },
+      {
+        "path": "docs/deployment/deploy-to-azure-virtual-machines.md",
+        "reason": "file-budget",
+        "size": 11495
+      },
+      {
+        "path": "docs/deployment/deploy-to-containarium.md",
+        "reason": "file-budget",
+        "size": 11541
+      },
+      {
+        "path": "docs/deployment/deploy-to-coolify.md",
+        "reason": "file-budget",
+        "size": 3873
+      },
+      {
+        "path": "docs/deployment/deploy-to-dokploy.md",
+        "reason": "file-budget",
+        "size": 3802
+      },
+      {
+        "path": "docs/deployment/deploy-to-google-cloud-compute-engine.md",
+        "reason": "file-budget",
+        "size": 14028
+      },
+      {
+        "path": "docs/deployment/deploy-to-hetzner.md",
+        "reason": "file-budget",
+        "size": 12134
+      },
+      {
+        "path": "docs/deployment/deployment-security-guide.md",
+        "reason": "file-budget",
+        "size": 32778
+      },
+      {
+        "path": "docs/deployment/README.md",
+        "reason": "file-budget",
+        "size": 4885
+      },
+      {
+        "path": "docs/deployment/self-host-storage.mdx",
+        "reason": "file-budget",
+        "size": 8139
+      },
+      {
+        "path": "docs/deployment/telemetry.mdx",
+        "reason": "file-budget",
+        "size": 3010
+      },
+      {
+        "path": "docs/es/alternatives.mdx",
+        "reason": "file-budget",
+        "size": 4395
+      },
+      {
+        "path": "docs/es/faq.mdx",
+        "reason": "file-budget",
+        "size": 21346
+      },
+      {
+        "path": "docs/es/introduction.mdx",
+        "reason": "file-budget",
+        "size": 3789
+      },
+      {
+        "path": "docs/es/mcp-setup.mdx",
+        "reason": "file-budget",
+        "size": 21430
+      },
+      {
+        "path": "docs/es/oauth-server.mdx",
+        "reason": "file-budget",
+        "size": 17010
+      },
+      {
+        "path": "docs/es/partnership.mdx",
+        "reason": "file-budget",
+        "size": 22844
+      },
+      {
+        "path": "docs/es/pricing.mdx",
+        "reason": "file-budget",
+        "size": 4296
+      },
+      {
+        "path": "docs/es/products.mdx",
+        "reason": "file-budget",
+        "size": 3568
+      },
+      {
+        "path": "docs/es/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 1941
+      },
+      {
+        "path": "docs/es/referral-program.mdx",
+        "reason": "file-budget",
+        "size": 2422
+      },
+      {
+        "path": "docs/es/showcase.mdx",
+        "reason": "file-budget",
+        "size": 2954
+      },
+      {
+        "path": "docs/examples/overview.mdx",
+        "reason": "file-budget",
+        "size": 2294
+      },
+      {
+        "path": "docs/integrations/auth0.mdx",
+        "reason": "file-budget",
+        "size": 4724
+      },
+      {
+        "path": "docs/integrations/better-auth.mdx",
+        "reason": "file-budget",
+        "size": 4910
+      },
+      {
+        "path": "docs/integrations/clerk.mdx",
+        "reason": "file-budget",
+        "size": 6547
+      },
+      {
+        "path": "docs/integrations/kinde.mdx",
+        "reason": "file-budget",
+        "size": 4482
+      },
+      {
+        "path": "docs/integrations/overview.mdx",
+        "reason": "file-budget",
+        "size": 903
+      },
+      {
+        "path": "docs/integrations/stytch.mdx",
+        "reason": "file-budget",
+        "size": 4461
+      },
+      {
+        "path": "docs/integrations/workos.mdx",
+        "reason": "file-budget",
+        "size": 4329
+      },
+      {
+        "path": "docs/snippets/kotlin-sdk-installation.mdx",
+        "reason": "file-budget",
+        "size": 8291
+      },
+      {
+        "path": "docs/snippets/sdk-installation.mdx",
+        "reason": "file-budget",
+        "size": 521
+      },
+      {
+        "path": "docs/snippets/service-icons.mdx",
+        "reason": "file-budget",
+        "size": 894
+      },
+      {
+        "path": "docs/snippets/swift-sdk-installation.mdx",
+        "reason": "file-budget",
+        "size": 1497
+      },
+      {
+        "path": "docs/zh-Hant/alternatives.mdx",
+        "reason": "file-budget",
+        "size": 3409
+      },
+      {
+        "path": "docs/zh-Hant/faq.mdx",
+        "reason": "file-budget",
+        "size": 19394
+      },
+      {
+        "path": "docs/zh-Hant/introduction.mdx",
+        "reason": "file-budget",
+        "size": 3543
+      },
+      {
+        "path": "docs/zh-Hant/mcp-setup.mdx",
+        "reason": "file-budget",
+        "size": 19482
+      },
+      {
+        "path": "docs/zh-Hant/oauth-server.mdx",
+        "reason": "file-budget",
+        "size": 16253
+      },
+      {
+        "path": "docs/zh-Hant/partnership.mdx",
+        "reason": "file-budget",
+        "size": 20848
+      },
+      {
+        "path": "docs/zh-Hant/pricing.mdx",
+        "reason": "file-budget",
+        "size": 3735
+      },
+      {
+        "path": "docs/zh-Hant/products.mdx",
+        "reason": "file-budget",
+        "size": 3128
+      },
+      {
+        "path": "docs/zh-Hant/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 1694
+      },
+      {
+        "path": "docs/zh-Hant/referral-program.mdx",
+        "reason": "file-budget",
+        "size": 1854
+      },
+      {
+        "path": "docs/zh-Hant/showcase.mdx",
+        "reason": "file-budget",
+        "size": 2637
+      },
+      {
+        "path": "docs/zh/alternatives.mdx",
+        "reason": "file-budget",
+        "size": 3461
+      },
+      {
+        "path": "docs/zh/faq.mdx",
+        "reason": "file-budget",
+        "size": 19333
+      },
+      {
+        "path": "docs/zh/introduction.mdx",
+        "reason": "file-budget",
+        "size": 3534
+      },
+      {
+        "path": "docs/zh/mcp-setup.mdx",
+        "reason": "file-budget",
+        "size": 19424
+      },
+      {
+        "path": "docs/zh/oauth-server.mdx",
+        "reason": "file-budget",
+        "size": 16180
+      },
+      {
+        "path": "docs/zh/partnership.mdx",
+        "reason": "file-budget",
+        "size": 20771
+      },
+      {
+        "path": "docs/zh/pricing.mdx",
+        "reason": "file-budget",
+        "size": 3729
+      },
+      {
+        "path": "docs/zh/products.mdx",
+        "reason": "file-budget",
+        "size": 3154
+      },
+      {
+        "path": "docs/zh/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 1706
+      },
+      {
+        "path": "docs/zh/referral-program.mdx",
+        "reason": "file-budget",
+        "size": 1874
+      },
+      {
+        "path": "docs/zh/showcase.mdx",
+        "reason": "file-budget",
+        "size": 2674
+      },
+      {
+        "path": "docs/core-concepts/ai/overview.mdx",
+        "reason": "file-budget",
+        "size": 3657
+      },
+      {
+        "path": "docs/core-concepts/analytics/overview.mdx",
+        "reason": "file-budget",
+        "size": 5498
+      },
+      {
+        "path": "docs/core-concepts/authentication/overview.mdx",
+        "reason": "file-budget",
+        "size": 5027
+      },
+      {
+        "path": "docs/core-concepts/compute/overview.mdx",
+        "reason": "file-budget",
+        "size": 10806
+      },
+      {
+        "path": "docs/core-concepts/database/backups.mdx",
+        "reason": "file-budget",
+        "size": 2902
+      },
+      {
+        "path": "docs/core-concepts/database/migrations.mdx",
+        "reason": "file-budget",
+        "size": 3406
+      },
+      {
+        "path": "docs/core-concepts/database/overview.mdx",
+        "reason": "file-budget",
+        "size": 4009
+      },
+      {
+        "path": "docs/core-concepts/database/pgvector.mdx",
+        "reason": "file-budget",
+        "size": 2995
+      },
+      {
+        "path": "docs/core-concepts/functions/overview.mdx",
+        "reason": "file-budget",
+        "size": 4582
+      },
+      {
+        "path": "docs/core-concepts/functions/schedules.mdx",
+        "reason": "file-budget",
+        "size": 2340
+      },
+      {
+        "path": "docs/core-concepts/messaging/custom-smtp.mdx",
+        "reason": "file-budget",
+        "size": 3022
+      },
+      {
+        "path": "docs/core-concepts/messaging/overview.mdx",
+        "reason": "file-budget",
+        "size": 4413
+      },
+      {
+        "path": "docs/core-concepts/payments/overview.mdx",
+        "reason": "file-budget",
+        "size": 4974
+      },
+      {
+        "path": "docs/core-concepts/payments/razorpay.mdx",
+        "reason": "file-budget",
+        "size": 8524
+      },
+      {
+        "path": "docs/core-concepts/payments/stripe.mdx",
+        "reason": "file-budget",
+        "size": 9306
+      },
+      {
+        "path": "docs/core-concepts/realtime/overview.mdx",
+        "reason": "file-budget",
+        "size": 6986
+      },
+      {
+        "path": "docs/core-concepts/sites/overview.mdx",
+        "reason": "file-budget",
+        "size": 4498
+      },
+      {
+        "path": "docs/core-concepts/storage/overview.mdx",
+        "reason": "file-budget",
+        "size": 3975
+      },
+      {
+        "path": "docs/core-concepts/storage/s3-compatibility.mdx",
+        "reason": "file-budget",
+        "size": 2364
+      },
+      {
+        "path": "docs/core-concepts/webscraper/overview.mdx",
+        "reason": "file-budget",
+        "size": 6884
+      },
+      {
+        "path": "docs/es/agent-native/branching.mdx",
+        "reason": "file-budget",
+        "size": 2366
+      },
+      {
+        "path": "docs/es/agent-native/cli-harness.mdx",
+        "reason": "file-budget",
+        "size": 4732
+      },
+      {
+        "path": "docs/es/agent-native/config-as-code.mdx",
+        "reason": "file-budget",
+        "size": 12610
+      },
+      {
+        "path": "docs/es/agent-native/diagnostics.mdx",
+        "reason": "file-budget",
+        "size": 3967
+      },
+      {
+        "path": "docs/es/agent-native/overview.mdx",
+        "reason": "file-budget",
+        "size": 4224
+      },
+      {
+        "path": "docs/es/agent-native/vscode-extension.mdx",
+        "reason": "file-budget",
+        "size": 2766
+      },
+      {
+        "path": "docs/es/deployment/deploy-to-aws-ec2.md",
+        "reason": "file-budget",
+        "size": 13408
+      },
+      {
+        "path": "docs/es/deployment/deploy-to-azure-virtual-machines.md",
+        "reason": "file-budget",
+        "size": 12513
+      },
+      {
+        "path": "docs/es/deployment/deploy-to-containarium.md",
+        "reason": "file-budget",
+        "size": 12645
+      },
+      {
+        "path": "docs/es/deployment/deploy-to-coolify.md",
+        "reason": "file-budget",
+        "size": 4152
+      },
+      {
+        "path": "docs/es/deployment/deploy-to-dokploy.md",
+        "reason": "file-budget",
+        "size": 4131
+      },
+      {
+        "path": "docs/es/deployment/deploy-to-google-cloud-compute-engine.md",
+        "reason": "file-budget",
+        "size": 15264
+      },
+      {
+        "path": "docs/es/deployment/deployment-security-guide.md",
+        "reason": "file-budget",
+        "size": 34801
+      },
+      {
+        "path": "docs/es/deployment/telemetry.mdx",
+        "reason": "file-budget",
+        "size": 2935
+      },
+      {
+        "path": "docs/es/examples/overview.mdx",
+        "reason": "file-budget",
+        "size": 2542
+      },
+      {
+        "path": "docs/examples/framework-guides/nextjs.mdx",
+        "reason": "file-budget",
+        "size": 4118
+      },
+      {
+        "path": "docs/examples/framework-guides/nuxt.mdx",
+        "reason": "file-budget",
+        "size": 4788
+      },
+      {
+        "path": "docs/examples/framework-guides/react.mdx",
+        "reason": "file-budget",
+        "size": 4793
+      },
+      {
+        "path": "docs/examples/framework-guides/svelte.mdx",
+        "reason": "file-budget",
+        "size": 4573
+      },
+      {
+        "path": "docs/examples/framework-guides/vue.mdx",
+        "reason": "file-budget",
+        "size": 4608
+      },
+      {
+        "path": "docs/sdks/kotlin/ai.mdx",
+        "reason": "file-budget",
+        "size": 2959
+      },
+      {
+        "path": "docs/sdks/kotlin/auth.mdx",
+        "reason": "file-budget",
+        "size": 15031
+      },
+      {
+        "path": "docs/sdks/kotlin/database.mdx",
+        "reason": "file-budget",
+        "size": 8683
+      },
+      {
+        "path": "docs/sdks/kotlin/functions.mdx",
+        "reason": "file-budget",
+        "size": 5692
+      },
+      {
+        "path": "docs/sdks/kotlin/overview.mdx",
+        "reason": "file-budget",
+        "size": 1757
+      },
+      {
+        "path": "docs/sdks/kotlin/realtime.mdx",
+        "reason": "file-budget",
+        "size": 4007
+      },
+      {
+        "path": "docs/sdks/kotlin/storage.mdx",
+        "reason": "file-budget",
+        "size": 6496
+      },
+      {
+        "path": "docs/sdks/rest/ai.mdx",
+        "reason": "file-budget",
+        "size": 5297
+      },
+      {
+        "path": "docs/sdks/rest/auth.mdx",
+        "reason": "file-budget",
+        "size": 34176
+      },
+      {
+        "path": "docs/sdks/rest/database.mdx",
+        "reason": "file-budget",
+        "size": 19086
+      },
+      {
+        "path": "docs/sdks/rest/functions.mdx",
+        "reason": "file-budget",
+        "size": 8349
+      },
+      {
+        "path": "docs/sdks/rest/overview.mdx",
+        "reason": "file-budget",
+        "size": 3104
+      },
+      {
+        "path": "docs/sdks/rest/realtime.mdx",
+        "reason": "file-budget",
+        "size": 8789
+      },
+      {
+        "path": "docs/sdks/rest/storage.mdx",
+        "reason": "file-budget",
+        "size": 12525
+      },
+      {
+        "path": "docs/sdks/swift/ai.mdx",
+        "reason": "file-budget",
+        "size": 2938
+      },
+      {
+        "path": "docs/sdks/swift/auth.mdx",
+        "reason": "file-budget",
+        "size": 11385
+      },
+      {
+        "path": "docs/sdks/swift/database.mdx",
+        "reason": "file-budget",
+        "size": 7310
+      },
+      {
+        "path": "docs/sdks/swift/functions.mdx",
+        "reason": "file-budget",
+        "size": 2738
+      },
+      {
+        "path": "docs/sdks/swift/overview.mdx",
+        "reason": "file-budget",
+        "size": 2003
+      },
+      {
+        "path": "docs/sdks/swift/realtime.mdx",
+        "reason": "file-budget",
+        "size": 3390
+      },
+      {
+        "path": "docs/sdks/swift/storage.mdx",
+        "reason": "file-budget",
+        "size": 7049
+      },
+      {
+        "path": "docs/sdks/typescript/ai.mdx",
+        "reason": "file-budget",
+        "size": 7842
+      },
+      {
+        "path": "docs/sdks/typescript/auth.mdx",
+        "reason": "file-budget",
+        "size": 17581
+      },
+      {
+        "path": "docs/sdks/typescript/database.mdx",
+        "reason": "file-budget",
+        "size": 9065
+      },
+      {
+        "path": "docs/sdks/typescript/email.mdx",
+        "reason": "file-budget",
+        "size": 2109
+      },
+      {
+        "path": "docs/sdks/typescript/functions.mdx",
+        "reason": "file-budget",
+        "size": 4255
+      },
+      {
+        "path": "docs/sdks/typescript/overview.mdx",
+        "reason": "file-budget",
+        "size": 2039
+      },
+      {
+        "path": "docs/sdks/typescript/payments-razorpay.mdx",
+        "reason": "file-budget",
+        "size": 7597
+      },
+      {
+        "path": "docs/sdks/typescript/payments-stripe.mdx",
+        "reason": "file-budget",
+        "size": 8352
+      },
+      {
+        "path": "docs/sdks/typescript/payments.mdx",
+        "reason": "file-budget",
+        "size": 2198
+      },
+      {
+        "path": "docs/sdks/typescript/realtime.mdx",
+        "reason": "file-budget",
+        "size": 11347
+      },
+      {
+        "path": "docs/sdks/typescript/storage.mdx",
+        "reason": "file-budget",
+        "size": 4470
+      },
+      {
+        "path": "docs/zh-Hant/agent-native/branching.mdx",
+        "reason": "file-budget",
+        "size": 1939
+      },
+      {
+        "path": "docs/zh-Hant/agent-native/cli-harness.mdx",
+        "reason": "file-budget",
+        "size": 3984
+      },
+      {
+        "path": "docs/zh-Hant/agent-native/config-as-code.mdx",
+        "reason": "file-budget",
+        "size": 10273
+      },
+      {
+        "path": "docs/zh-Hant/agent-native/diagnostics.mdx",
+        "reason": "file-budget",
+        "size": 3287
+      },
+      {
+        "path": "docs/zh-Hant/agent-native/overview.mdx",
+        "reason": "file-budget",
+        "size": 3489
+      },
+      {
+        "path": "docs/zh-Hant/agent-native/vscode-extension.mdx",
+        "reason": "file-budget",
+        "size": 2357
+      },
+      {
+        "path": "docs/zh-Hant/deployment/deploy-to-aws-ec2.md",
+        "reason": "file-budget",
+        "size": 12046
+      },
+      {
+        "path": "docs/zh-Hant/deployment/deploy-to-azure-virtual-machines.md",
+        "reason": "file-budget",
+        "size": 11658
+      },
+      {
+        "path": "docs/zh-Hant/deployment/deploy-to-containarium.md",
+        "reason": "file-budget",
+        "size": 11708
+      },
+      {
+        "path": "docs/zh-Hant/deployment/deploy-to-coolify.md",
+        "reason": "file-budget",
+        "size": 3815
+      },
+      {
+        "path": "docs/zh-Hant/deployment/deploy-to-dokploy.md",
+        "reason": "file-budget",
+        "size": 3718
+      },
+      {
+        "path": "docs/zh-Hant/deployment/deploy-to-google-cloud-compute-engine.md",
+        "reason": "file-budget",
+        "size": 13821
+      },
+      {
+        "path": "docs/zh-Hant/deployment/deployment-security-guide.md",
+        "reason": "file-budget",
+        "size": 32309
+      },
+      {
+        "path": "docs/zh-Hant/deployment/telemetry.mdx",
+        "reason": "file-budget",
+        "size": 2298
+      },
+      {
+        "path": "docs/zh-Hant/examples/overview.mdx",
+        "reason": "file-budget",
+        "size": 2185
+      },
+      {
+        "path": "docs/zh/agent-native/branching.mdx",
+        "reason": "file-budget",
+        "size": 1923
+      },
+      {
+        "path": "docs/zh/agent-native/cli-harness.mdx",
+        "reason": "file-budget",
+        "size": 3947
+      },
+      {
+        "path": "docs/zh/agent-native/config-as-code.mdx",
+        "reason": "file-budget",
+        "size": 10258
+      },
+      {
+        "path": "docs/zh/agent-native/diagnostics.mdx",
+        "reason": "file-budget",
+        "size": 3293
+      },
+      {
+        "path": "docs/zh/agent-native/overview.mdx",
+        "reason": "file-budget",
+        "size": 3460
+      },
+      {
+        "path": "docs/zh/agent-native/vscode-extension.mdx",
+        "reason": "file-budget",
+        "size": 2312
+      },
+      {
+        "path": "docs/zh/deployment/deploy-to-aws-ec2.md",
+        "reason": "file-budget",
+        "size": 11972
+      },
+      {
+        "path": "docs/zh/deployment/deploy-to-azure-virtual-machines.md",
+        "reason": "file-budget",
+        "size": 11470
+      },
+      {
+        "path": "docs/zh/deployment/deploy-to-containarium.md",
+        "reason": "file-budget",
+        "size": 11611
+      },
+      {
+        "path": "docs/zh/deployment/deploy-to-coolify.md",
+        "reason": "file-budget",
+        "size": 3809
+      },
+      {
+        "path": "docs/zh/deployment/deploy-to-dokploy.md",
+        "reason": "file-budget",
+        "size": 3708
+      },
+      {
+        "path": "docs/zh/deployment/deploy-to-google-cloud-compute-engine.md",
+        "reason": "file-budget",
+        "size": 13785
+      },
+      {
+        "path": "docs/zh/deployment/deployment-security-guide.md",
+        "reason": "file-budget",
+        "size": 32138
+      },
+      {
+        "path": "docs/zh/deployment/telemetry.mdx",
+        "reason": "file-budget",
+        "size": 2319
+      },
+      {
+        "path": "docs/zh/examples/overview.mdx",
+        "reason": "file-budget",
+        "size": 2198
+      },
+      {
+        "path": "docs/es/core-concepts/ai/overview.mdx",
+        "reason": "file-budget",
+        "size": 4222
+      },
+      {
+        "path": "docs/es/core-concepts/analytics/overview.mdx",
+        "reason": "file-budget",
+        "size": 6235
+      },
+      {
+        "path": "docs/es/core-concepts/authentication/overview.mdx",
+        "reason": "file-budget",
+        "size": 5709
+      },
+      {
+        "path": "docs/es/core-concepts/compute/overview.mdx",
+        "reason": "file-budget",
+        "size": 12044
+      },
+      {
+        "path": "docs/es/core-concepts/database/backups.mdx",
+        "reason": "file-budget",
+        "size": 2963
+      },
+      {
+        "path": "docs/es/core-concepts/database/migrations.mdx",
+        "reason": "file-budget",
+        "size": 3817
+      },
+      {
+        "path": "docs/es/core-concepts/database/overview.mdx",
+        "reason": "file-budget",
+        "size": 4501
+      },
+      {
+        "path": "docs/es/core-concepts/database/pgvector.mdx",
+        "reason": "file-budget",
+        "size": 3246
+      },
+      {
+        "path": "docs/es/core-concepts/functions/overview.mdx",
+        "reason": "file-budget",
+        "size": 5145
+      },
+      {
+        "path": "docs/es/core-concepts/functions/schedules.mdx",
+        "reason": "file-budget",
+        "size": 1879
+      },
+      {
+        "path": "docs/es/core-concepts/messaging/custom-smtp.mdx",
+        "reason": "file-budget",
+        "size": 3801
+      },
+      {
+        "path": "docs/es/core-concepts/messaging/overview.mdx",
+        "reason": "file-budget",
+        "size": 4988
+      },
+      {
+        "path": "docs/es/core-concepts/payments/overview.mdx",
+        "reason": "file-budget",
+        "size": 5562
+      },
+      {
+        "path": "docs/es/core-concepts/payments/razorpay.mdx",
+        "reason": "file-budget",
+        "size": 9237
+      },
+      {
+        "path": "docs/es/core-concepts/payments/stripe.mdx",
+        "reason": "file-budget",
+        "size": 9982
+      },
+      {
+        "path": "docs/es/core-concepts/realtime/overview.mdx",
+        "reason": "file-budget",
+        "size": 7694
+      },
+      {
+        "path": "docs/es/core-concepts/sites/overview.mdx",
+        "reason": "file-budget",
+        "size": 4389
+      },
+      {
+        "path": "docs/es/core-concepts/storage/overview.mdx",
+        "reason": "file-budget",
+        "size": 4511
+      },
+      {
+        "path": "docs/es/core-concepts/storage/s3-compatibility.mdx",
+        "reason": "file-budget",
+        "size": 2388
+      },
+      {
+        "path": "docs/es/core-concepts/webscraper/overview.mdx",
+        "reason": "file-budget",
+        "size": 8041
+      },
+      {
+        "path": "docs/es/examples/framework-guides/nextjs.mdx",
+        "reason": "file-budget",
+        "size": 4294
+      },
+      {
+        "path": "docs/es/examples/framework-guides/nuxt.mdx",
+        "reason": "file-budget",
+        "size": 5080
+      },
+      {
+        "path": "docs/es/examples/framework-guides/react.mdx",
+        "reason": "file-budget",
+        "size": 4974
+      },
+      {
+        "path": "docs/es/examples/framework-guides/svelte.mdx",
+        "reason": "file-budget",
+        "size": 4835
+      },
+      {
+        "path": "docs/es/examples/framework-guides/vue.mdx",
+        "reason": "file-budget",
+        "size": 4871
+      }
+    ],
+    "omitted_count": 351,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1840,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 357,
+      "complete": false,
+      "omitted": 351,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_01169b83b82a57708ceb7f483acd7cdb",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/insforge/insforge/fca20f318722c1fa89371e94878ba08b114c73b7/4305e1ce136d7730/manifest.json",
+  "package_id": "pkg_ca07711b07c79510abaa1d0866678dd5d53466f8c74a595c7ec1be47dfbe5b98",
+  "repo": "insforge/insforge",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "48eaf5f6f318b2efe76753425f59143c867c3f28e804a819a631908b974903f7",
+  "snapshot_id": "4305e1ce136d7730",
+  "sources": [
+    {
+      "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+      "git_sha": "1d6b48b9397bfd40b03552da63ec72fcfda90766",
+      "lines": 89,
+      "path": "CLAUDE_PLUGIN.md",
+      "repository": "insforge/insforge",
+      "sha256": "350a8d3e6e61ae9f9cc6a1fc7321d5a4adc608d81669a65e3def8d705da1216f",
+      "source_id": "src_da608a059f8c55a9b9c1cc1134a164b2",
+      "stored": "claude_plugin.md-3d2f0d66ac1f.md",
+      "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/CLAUDE_PLUGIN.md"
+    },
+    {
+      "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+      "git_sha": "4da64a7f42cf87022c3377a2c47179c6697a2076",
+      "lines": 49,
+      "path": "GITHUB_OAUTH_SETUP.md",
+      "repository": "insforge/insforge",
+      "sha256": "c01a9e703184a4ea6fb828bae9dd4dea5cc49444d08eec6ed497cf1edf7428c2",
+      "source_id": "src_7107b85dc3355b679ae279b766880394",
+      "stored": "github_oauth_setup.md-b90a0b6f5ed1.md",
+      "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GITHUB_OAUTH_SETUP.md"
+    },
+    {
+      "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+      "git_sha": "2f017fed787cbace4ebc7819d66dfe12a9fc485e",
+      "lines": 148,
+      "path": "GOOGLE_OAUTH_SETUP.md",
+      "repository": "insforge/insforge",
+      "sha256": "3f98e6bb53f264dfce3c189732e19d008dec1bc97c48802b11196243217a2f30",
+      "source_id": "src_f60fece758c35da9a6f66af656569fe0",
+      "stored": "google_oauth_setup.md-9d47e4a8033a.md",
+      "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/GOOGLE_OAUTH_SETUP.md"
+    },
+    {
+      "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+      "git_sha": "f6e13a43227b606991caf9fff12c6e1eacd13fae",
+      "lines": 357,
+      "path": "README.md",
+      "repository": "insforge/insforge",
+      "sha256": "655f385f5a44060911eb5d48435ea2434e203c9ff3666f49151f978cc6213430",
+      "source_id": "src_429f822567d35259b1c6730bfe03ca2c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/README.md"
+    },
+    {
+      "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+      "git_sha": "9442c9d3e4d203c3924b9a9d9edb649aa2ac2ff8",
+      "lines": 80,
+      "path": "docs/alternatives.mdx",
+      "repository": "insforge/insforge",
+      "sha256": "395b746c62f37709d57aeaeec320ec07ba29c66c15f89225a37c5b26c267f659",
+      "source_id": "src_49bebbd4b0a85197b41820350750b9a0",
+      "stored": "alternatives.mdx-5ed80602bb21.txt",
+      "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/docs/alternatives.mdx"
+    },
+    {
+      "commit": "fca20f318722c1fa89371e94878ba08b114c73b7",
+      "git_sha": "e73f0901fcdd0a0fdc3843ce298047d9b83a241d",
+      "lines": 80,
+      "path": "docs/asset-guidelines.md",
+      "repository": "insforge/insforge",
+      "sha256": "6e1747e9021ad047568548a01f0a2da311bdd36cf0aacda6189e717f4521d760",
+      "source_id": "src_054e429d418d560ea71423aee215e2b0",
+      "stored": "asset-guidelines.md-eaddce778a7a.md",
+      "url": "https://github.com/InsForge/InsForge/blob/fca20f318722c1fa89371e94878ba08b114c73b7/docs/asset-guidelines.md"
+    }
+  ],
+  "summary": "Selected evidence records: InsForge is described as an all-in-one, open-source backend platform for agentic coding, giving coding agents database, auth, storage, compute, hosting, and an AI gateway. Coding agents interact with InsForge through two interfaces: an MCP server (self-hosted and cloud) exposing operations as tools, and a cloud-only CLI paired with Skills invoked from the terminal.",
+  "superseded_claim_ids": []
+}

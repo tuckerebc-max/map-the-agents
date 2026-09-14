@@ -1,0 +1,36 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_05c49c7f061f2577c264bfed044d9cf5699043cb7bfddeb4d99a52ce7f1cee4e
+- clm_0cc75a22024aad26e8453bee1a5cc33e8ed64977c296bd49f5a99b3a2fc3365b
+- clm_13e9b53afeb5b1ad5683251ca565c447384cb764940cdab88d9081fae6ba443c
+- clm_31195ee357d60e1e935e1089b12926ea4413d7f06cc344ce6ff1c2d0ae05e2dd
+- clm_3158b8cb060794bf05d52211b89716dc03385b2210d9fa9d05dfbc5b2252dc7f
+- clm_4339294350734eaa18b2b393ea07acf402d37b655856e01e5a3c2e18a6bde4e8
+- clm_5b235ada0b054a12ce2cf13e967dc354b11e830b1e3eb53c2007eeeff5817918
+- clm_708e8213cbef4edeadd0e6bce91ab5690be99c80743a5c016f5248266cbcb0f8
+- clm_7983e151a1f8bce73529748f71f650ca916d0b64a78b239a8c5a8da4b009d2ef
+- clm_8222af8f603c45275c6dd83c3cf5757b5f6763f95a0e357de8cbd6f91ba5f55c
+- clm_951a8996036178eb825f1eb437f925b2e4931fc271d360103f429c358923e3ed
+- clm_b344a7464127cffa6abd53d81c9a7c4817f507c424c098f0d167cb985faba34a
+- clm_d98cb2d625d1c5e6360346843fb38fa933fd5b4fb95dc6ff97017b7792b69b64
+- clm_e6934df5417b0f87f2df25e5713839db5b8778cd40cd67c1192276f92595ee74
+maturity: draft
+page_id: pg_7018fb69e4945922893f69c68eafd6f8
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: anaconda-labs/building-intelligent-apps-with-anaconda
+updated_at: '2026-09-14T03:33:51Z'
+---
+
+# anaconda-labs/building-intelligent-apps-with-anaconda
+
+<!-- rcw:begin owner=entity:ent_3adb6bca7b705fdfb5ade0b54039cadb block=evidence -->
+- anaconda-labs/building-intelligent-apps-with-anaconda is mentioned in this evidence. [@claim:clm_05c49c7f061f2577c264bfed044d9cf5699043cb7bfddeb4d99a52ce7f1cee4e] [@claim:clm_0cc75a22024aad26e8453bee1a5cc33e8ed64977c296bd49f5a99b3a2fc3365b] [@claim:clm_13e9b53afeb5b1ad5683251ca565c447384cb764940cdab88d9081fae6ba443c] [@claim:clm_31195ee357d60e1e935e1089b12926ea4413d7f06cc344ce6ff1c2d0ae05e2dd] [@claim:clm_3158b8cb060794bf05d52211b89716dc03385b2210d9fa9d05dfbc5b2252dc7f] [@claim:clm_4339294350734eaa18b2b393ea07acf402d37b655856e01e5a3c2e18a6bde4e8] [@claim:clm_5b235ada0b054a12ce2cf13e967dc354b11e830b1e3eb53c2007eeeff5817918] [@claim:clm_708e8213cbef4edeadd0e6bce91ab5690be99c80743a5c016f5248266cbcb0f8] [@claim:clm_7983e151a1f8bce73529748f71f650ca916d0b64a78b239a8c5a8da4b009d2ef] [@claim:clm_8222af8f603c45275c6dd83c3cf5757b5f6763f95a0e357de8cbd6f91ba5f55c] [@claim:clm_951a8996036178eb825f1eb437f925b2e4931fc271d360103f429c358923e3ed] [@claim:clm_b344a7464127cffa6abd53d81c9a7c4817f507c424c098f0d167cb985faba34a] [@claim:clm_d98cb2d625d1c5e6360346843fb38fa933fd5b4fb95dc6ff97017b7792b69b64] [@claim:clm_e6934df5417b0f87f2df25e5713839db5b8778cd40cd67c1192276f92595ee74]
+<!-- rcw:end owner=entity:ent_3adb6bca7b705fdfb5ade0b54039cadb block=evidence -->
+
+## Researcher notes
+

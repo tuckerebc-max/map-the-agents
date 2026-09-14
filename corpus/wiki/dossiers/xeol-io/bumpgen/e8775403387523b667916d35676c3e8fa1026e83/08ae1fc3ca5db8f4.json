@@ -1,0 +1,435 @@
+{
+  "applied_operation_id": "op_c82ea4c001f444d8bff7bd925c1a9aca",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_85cdd73eaaa0530f55fc31a2eb585b3ee0300af95e1d7666da8bcbd777284885",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e5ac2439e04d065984572c0e18b24b53b2b34cbc7f44d83f71c9c7c1bd1af603"
+      ],
+      "text": "bumpgen upgrades TypeScript/TSX dependencies and makes code changes automatically when the upgrade breaks things."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_067cbf8536c1bb049b1ef5affd32f37cc54f39af436b1cf3d3dab38b70fff627",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L36-L39"
+        },
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 160,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L160-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_731f471ad673473be57ed1b7304ac59878aef3ed9a5a0280055fd922510f63bb",
+        "slc_dda5d5be4b2df5b3a933308a70806c67011f78b8830d9369cceafac5b6959618"
+      ],
+      "text": "The tool builds the project to detect what broke after a dependency bump, then uses ts-morph to build an AST of the code and obtain type definitions for external methods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_801a07e51f0af58a4857e24a99b6f6372bd7cad91779bc1304c0e6ce2b78ff50",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 164,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L164-L164"
+        },
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_269117885c66366ade7a7db5ca3eeda36a1189f285825f97b8ed898678284a3f",
+        "slc_731f471ad673473be57ed1b7304ac59878aef3ed9a5a0280055fd922510f63bb"
+      ],
+      "text": "bumpgen creates a plan-graph DAG, based on Microsoft's codeplan paper, to execute changes in order and propagate fixes for second-order breakages across the codebase."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a10ec0d61ea6394c831623a41ed8424b1491431675edc570712caae38325f4a0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L59-L59"
+        },
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 55,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L50-L55"
+        },
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L57-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ea5e6ca51e2ce77a7aae969ea64fe077fd7aa8c8bf311d2eacf1b69acc232fa",
+        "slc_880dedf09af1d89fbf7ef2aa6d133d90cd2d7f0780aedcc96dc98ca3819e793d",
+        "slc_897a34fde8bcb9f298c4ec983eafe841a871c163a5cc5a02a68ba3de297fc535"
+      ],
+      "text": "The CLI accepts a package name and target version (e.g. bumpgen @tanstack/react-query 5.28.14), can be run without arguments to pick a package from a menu, and offers --help for options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b28559f3a71e2ab0fee914ae754d3ca73f2453c56933e9b029a720f1c82631a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L46-L46"
+        },
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L172-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_180c6a2f7935390024123ca1639ce1ab75ad4c6f53426b6a75a787b214acbdc9",
+        "slc_4d16bd9a8f844413973da5bb80f5eb2329f8486ef3c4ca71b8e7275847fb2d46"
+      ],
+      "text": "bumpgen requires an OpenAI API key and only supports the gpt-4-turbo-preview model at this time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d93adaef855c9fe4ac22f3e91846228d9666f035ec05f1c1bc0040f410905235",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f3f0fc33b9904363741faa00e875c80d832b5dbbcbf63f47c74402388470e96"
+      ],
+      "text": "A GitHub action runs bumpgen, intended to trigger on dependabot or renovatebot PRs, committing fixes to the PR branch when breaking changes are detected."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ccd43d9f1943141113d18c83d92287cad6bb0477e372f2d419de896beb673ec3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 97,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L82-L97"
+        },
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 80,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L78-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22b3ac10aa33f3e0ba4a5fca273f49a699294e3c7a26fe9038aceeba862f7cf2",
+        "slc_b74264f8b39a52fcccc06a8e5f223dc37b2560dab20b46a6e1959a209a1714f0"
+      ],
+      "text": "The example GitHub workflow grants pull-requests:read and contents:write permissions and passes path, llm_key, and github_token inputs to the bumpgen action."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_24adb78441e4d943d442e45b9ee6d41cfd161b2e80cc65dbf5325f1b679411cc",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L106-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4245ca4148b44ad398c519be08549be28532213419a9b5ad3db793d34c34462c"
+      ],
+      "text": "bumpgen relies on build errors, so behavioral changes that don't produce build errors go undetected."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bdb5b21184d1a2b4e1c5ffe4819fd0ea82a70716ed3144b885d8470837a864ec",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L106-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4245ca4148b44ad398c519be08549be28532213419a9b5ad3db793d34c34462c"
+      ],
+      "text": "bumpgen cannot handle multiple packages at once, failing on upgrades needing simultaneous peer-dependency updates, and struggles with very large framework upgrades like vue 2 to 3."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dcdd4b5e64d3c0f445f526367a3ebde2bb42740cbd6965f90c16eddfd3ee6eba",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 184,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L184-L184"
+        },
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 182,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L180-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35137eb8561e653173fde973dda02d901f38fd2516d74f598d1687adfd7bf24f",
+        "slc_753fef690e81f49ddec381631cf8b9ed468f2237e7ed96cd155c810f7ab94d67"
+      ],
+      "text": "bumpgen with GPT-4 Turbo scored 45% (67 tasks) on a benchmark suite of version bumps with breaking changes (swe-bump-bench), with evals published in that repo."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_500ceac0eecbdb80ead5f18294a98f8e11d857a8a07d5858732f03a2c22f8cfc",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 168,
+          "line_start": 168,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L168-L168"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f80c579b8c70de482faf775c6a5c3b8008a20dcbfadd11bd68e53eba7a251592"
+      ],
+      "text": "The plan graph, the error, and the file containing the breaking change are passed to the LLM as context to maximize its ability to fix the issue."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0671b268d93ea651a0a351e525bc4695b9a04cc12412b557fc0d66af3e12757a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+          "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "xeol-io/bumpgen",
+          "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md#L188-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d4a7e4796bba3d50a8819b200b63a706a516addee6fe1278e9666419f7e9e35"
+      ],
+      "text": "Repository development practice: contributions are welcome and setup for development is documented in .github/development.md."
+    }
+  ],
+  "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 201,
+        "path": "README.md",
+        "size": 11919
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 97,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_761a0c7da00556828d09dd249ac34130",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/xeol-io/bumpgen/e8775403387523b667916d35676c3e8fa1026e83/08ae1fc3ca5db8f4/manifest.json",
+  "package_id": "pkg_e471bab4ee98fe606e7710c14976f62788b83f06e71a14c17d674ed1de1c1f4c",
+  "repo": "xeol-io/bumpgen",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "461c2a2fb5b90ed9fba158a62410deb3b9bd3337dc07e95ebb12970bd6706e5e",
+  "snapshot_id": "08ae1fc3ca5db8f4",
+  "sources": [
+    {
+      "commit": "e8775403387523b667916d35676c3e8fa1026e83",
+      "git_sha": "4e398328e766bf71b6dd916f9473748c024c3403",
+      "lines": 201,
+      "path": "README.md",
+      "repository": "xeol-io/bumpgen",
+      "sha256": "84caa519b8b256f9f4e130bc7b8216af250dfd5e5ab1ab8cd736f1f385762de0",
+      "source_id": "src_9df2608b0b37581a8723947d9355ae4e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/xeol-io/bumpgen/blob/e8775403387523b667916d35676c3e8fa1026e83/README.md"
+    }
+  ],
+  "summary": "bumpgen is a CLI/GitHub-action tool that upgrades TypeScript/TSX dependencies and uses build errors, a ts-morph AST, and a plan-graph DAG with GPT-4 Turbo to fix resulting breakages. Evidence covers its architecture, usage, limitations, and a benchmark against swe-bump-bench.",
+  "superseded_claim_ids": []
+}

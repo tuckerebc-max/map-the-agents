@@ -1,0 +1,709 @@
+# Agentic Coding with ~~Gemini CLI~~ Antigravity
+
+This short handout is for developers who are already comfortable writing code in R and/or Python, but who are new to AI coding tools. The goal is not to turn programming into button-pushing. The goal is to understand a new kind of interface: one where you can ask for reasoning, editing, search, shell commands, file inspection, and workflow execution from inside the same working session.
+
+The tool used here is [Google Antigravity](https://antigravity.google), Google's agentic development platform: an AI-powered editor and an "agent-first" workspace where the agent can plan, edit files, run commands, and even drive a browser on your behalf. The official download is at [antigravity.google/download](https://antigravity.google/download).
+
+> **A note before we begin — and the first lesson.** When this handout was first drafted, the obvious entry point was Google's ~~Gemini CLI~~. By the time it was delivered, Google's recommended starting tool had shifted to **Antigravity** — a different product, with a different interface and different limits. The strikethrough in the title is intentional. The half-life of any *specific* tool in this space is now measured in months. That is exactly why most of what follows is about the things that change slowly: what an agent is, how context and tokens work, and the habits for working with real files. Learn those, and you can pick up whatever tool is current the week you read this.
+
+Although the examples here use Antigravity, the core workflow generalizes well to other coding agents such as Claude Code and Codex-style tools. The vocabulary and config file names vary, but the underlying pattern is similar: work inside a real repository, let the tool inspect actual files, and keep important project instructions in versioned text files.
+
+## Table of Contents
+
+- [Why this is different from a chatbot](#why-this-is-different-from-a-chatbot)
+- [What agentic coding tools are good at](#what-agentic-coding-tools-are-good-at)
+- [Beyond code: agents for knowledge work](#beyond-code-agents-for-knowledge-work)
+- [Core idea: from "answering" to "acting"](#core-idea-from-answering-to-acting)
+- [The right mental model: colleague, not oracle](#the-right-mental-model-colleague-not-oracle)
+- [Understanding context: tokens and the context window](#understanding-context-tokens-and-the-context-window)
+  - [Tokens](#tokens)
+  - [The context window](#the-context-window)
+- [Agentic frameworks: model versus agent](#agentic-frameworks-model-versus-agent)
+- [Security and permissions](#security-and-permissions)
+- [Tools, skills, and MCP](#tools-skills-and-mcp)
+  - [Tools](#tools)
+  - [Skills](#skills)
+  - [MCP](#mcp)
+- [Markdown as memory, process, and decision record](#markdown-as-memory-process-and-decision-record)
+- [Managing context well](#managing-context-well)
+  - [Clear the context between unrelated tasks](#clear-the-context-between-unrelated-tasks)
+  - [Skills versus one large instruction file](#skills-versus-one-large-instruction-file)
+  - [A short checklist](#a-short-checklist)
+- [Installing Antigravity](#installing-antigravity)
+  - [A note on the free tier](#a-note-on-the-free-tier)
+- [A very small hello-world example](#a-very-small-hello-world-example)
+- [A note on leaderboards and benchmarks](#a-note-on-leaderboards-and-benchmarks)
+  - [1. Aider polyglot leaderboard](#1-aider-polyglot-leaderboard)
+  - [2. SWE-bench](#2-swe-bench)
+- [Suggested references for a short session](#suggested-references-for-a-short-session)
+- [Four projects to try](#four-projects-to-try)
+  - [1. Explore a Bioconductor repository](#1-explore-a-bioconductor-repository)
+  - [2. Extract structure from a messy text file](#2-extract-structure-from-a-messy-text-file)
+  - [3. Audit a small command-line workflow](#3-audit-a-small-command-line-workflow)
+  - [4. Survey foundation models for transcriptomics and spatial transcriptomics](#4-survey-foundation-models-for-transcriptomics-and-spatial-transcriptomics)
+- [A note on tokens and model costs](#a-note-on-tokens-and-model-costs)
+- [Paying for tools: an honest recommendation](#paying-for-tools-an-honest-recommendation)
+- [Closing idea](#closing-idea)
+- [AI assistance](#ai-assistance)
+
+## Why this is different from a chatbot
+
+Many developers first meet AI through a web chat window. That is a useful starting point, but it encourages a weak workflow:
+
+1. Ask a question in a browser tab.
+2. Copy a code snippet.
+3. Paste it into your editor.
+4. Notice it does not quite fit your repository.
+5. Go back and repeat.
+
+That is the "cut-and-paste" approach. It can help with isolated questions, but it breaks down once the task depends on the actual state of your project.
+
+<p align="center">
+  <img src="assets/chatbot-vs-agentic.svg" alt="Side-by-side comparison. Left: a chatbot drives an Ask, Copy, Paste, 'doesn't fit' loop that repeats and never connects to your repository. Right: an agentic coding tool runs a Plan, Act, Observe, Revise loop that stays in sync with your repository through files, shell, git, and MCP." width="820">
+</p>
+
+An **agentic coding tool** works differently. It is not just producing text. It can usually:
+
+- inspect files on disk
+- search a codebase
+- edit files
+- run shell commands
+- keep track of session context
+- follow repository-specific instructions
+- use external tools through protocols such as MCP
+
+That changes the unit of work. Instead of asking for "a regex in Python," you can ask:
+
+> "Open this repository, find the script that reads the TSV, explain how the columns are normalized, and then add a small validation check before write-out."
+
+That is the key distinction. A chatbot answers from a prompt window. An agentic coding tool can operate in the environment where the work actually lives.
+
+## What agentic coding tools are good at
+
+Agentic coding tools are especially strong whenever the task depends on **files on disk**. That includes:
+
+- understanding an unfamiliar repository
+- editing several files consistently
+- updating documentation after code changes
+- running tests or linters
+- searching logs, configs, notebooks, and scripts together
+- tracing where a function, dataset path, or environment variable is used
+- applying a repeated refactor across many files
+
+For Python and R users, this matters because so much day-to-day work is file-shaped: scripts, notebooks, CSV/TSV files, environment files, package metadata, Quarto or R Markdown, Snakemake or Nextflow pipelines, and test fixtures. If the tool can read the actual repository state, it can reason with fewer guesses.
+
+## Beyond code: agents for knowledge work
+
+Everything so far has been framed around code, but the same capabilities — reading files on disk, following instructions, calling tools, and holding context — apply just as well to the document-heavy work that fills a research week. Modern agents can read and write PDFs, Word documents, Excel spreadsheets, PowerPoint decks, and Markdown, so the real boundary is not "code vs. not code." It is *"does the task depend on real files and real context?"* — and most knowledge work does.
+
+A few examples that map onto common graduate-research tasks. (These slides were built this way; see the [`slides/`](slides/) directory.)
+
+**Deep research and literature synthesis.** Instead of reading twenty tabs by hand, point the agent at the question and let it gather, read, and compare sources, then write something you can act on.
+
+```text
+Search the web and PubMed for recent reviews of spatial transcriptomics
+normalization methods. Read the most-cited and most-recent sources, then write a
+one-page synthesis with citations. Note explicitly where sources disagree, and
+end with the three open questions that come up most often.
+```
+
+**Extracting structure from PDFs.** Stacks of PDFs — applications, CVs, papers, supplementary files — are a classic "messy input" that agents are good at turning into a table.
+
+```text
+This folder has ~40 applicant CVs as PDFs. For each one, extract: name, degree,
+years since PhD, methods used (e.g., scRNA-seq, imaging, ML), and number of
+first-author papers. Score each against the rubric in rubric.md, output a ranked
+CSV with a one-line justification per applicant, and flag anyone missing a
+required item.
+```
+
+**Building and editing slide decks.** Agents can draft a deck from notes, restructure an existing one, and even generate figures — the workflow used to produce this talk.
+
+```text
+Turn outline.md into a 12-slide deck: one idea per slide, speaker notes on each,
+and a simple diagram for the methods section. Keep it readable from the back of
+a room.
+```
+
+**Editing and tightening documents.** Grants, manuscripts, and theses are long, structured, and full of internal consistency you have to maintain by hand.
+
+```text
+Read aims.md (a grant Specific Aims page). Tighten it to one page while keeping
+my voice, flag every claim that needs a citation, and list any place where the
+aims and the one-paragraph summary contradict each other.
+```
+
+**Brainstorming with real context.** The agent is a better thinking partner when it can see your actual material — the papers, the data, the current draft — rather than a paraphrase.
+
+```text
+Here are three papers (PDFs) and my current slide deck. Given what these papers
+show, suggest three follow-up experiments and the figure each one would produce.
+Then push back on the weakest part of my current framing.
+```
+
+The thread is identical to the coding case: the agent is most useful when you hand it the *real material* — the PDFs, the spreadsheet, the draft, the slides — instead of describing it. And the same habits carry over: keep the context focused, put durable instructions in a file, and review the output the way you would review a colleague's draft.
+
+## Core idea: from "answering" to "acting"
+
+The simplest way to explain agentic coding is this:
+
+- A chatbot mainly produces text.
+- An agentic coding tool produces text **and can take bounded actions**.
+
+That does not mean it should be allowed to do everything automatically. Good tools expose actions with approvals, scope, logs, and context. But the important shift is that the tool is no longer disconnected from the codebase.
+
+Antigravity is explicitly built around that model. Google describes it as an "agentic development platform" in which the agent autonomously plans, executes, and verifies its work across the editor, the terminal, and a built-in browser — going well beyond plain text generation:
+
+- [Build with Google Antigravity (announcement)](https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/)
+- [Antigravity home and download](https://antigravity.google)
+
+## The right mental model: colleague, not oracle
+
+A common mistake when starting with agentic coding tools is to treat them as infallible oracles. They are not. A more useful mental model is a **capable but junior colleague**: someone who can read quickly, write reasonable first drafts, run commands, search for things, and follow instructions, but who needs clear direction, makes mistakes, and benefits from review.
+
+The developer's job does not disappear. It shifts:
+
+- from writing every line to **directing what to write and why**
+- from remembering all context to **providing context clearly**
+- from fixing bugs alone to **reviewing agent output the way you would review a pull request**
+- from one-shot commands to **iterating with feedback**
+
+Think of it less like consulting an expert and more like working with a new team member who happens to read code very fast and never gets tired. You would not hand a new team member an ambiguous task and walk away. You would give them a clear goal, check in on their progress, catch errors early, and push back when the approach is wrong.
+
+That framing also helps calibrate frustration. When an agent makes a wrong assumption, the right response is usually a clearer prompt or more explicit context, not a different tool. The bottleneck is almost always the quality of the instructions.
+
+## Understanding context: tokens and the context window
+
+Before going further, it helps to understand what the model is actually reading. Almost everything about quality, cost, and the habits in the rest of this document follows from two ideas: **tokens** and the **context window**.
+
+### Tokens
+
+A model does not read characters or words the way you do. It reads **tokens**: short chunks of text, usually a few characters each. A useful rule of thumb for English is:
+
+> 1 token ≈ 4 characters ≈ about ¾ of a word. So roughly **100 tokens ≈ 75 words**.
+
+Code, file paths, identifiers, and non-English text tend to break into *more* tokens per word, so a screen full of R or Python usually costs more tokens than a screen full of prose. Every model uses its own tokenizer, so these numbers are approximate — but the rule of thumb is good enough for planning.
+
+Tokens come in two flavors, and the distinction matters more than people expect:
+
+- **Input tokens** are everything the model *reads*: your prompt, the files it opens, earlier turns in the conversation, and the output of any tools it runs.
+- **Output tokens** are everything the model *writes*: explanations, code, edits, and tool calls.
+
+The reason to care is cost. **Output tokens are typically several times more expensive than input tokens — often 4x to 8x.** As of mid-2026, for example, one widely used model charges about \$3 per million input tokens and \$15 per million output tokens (a 5x gap); another charges roughly \$1.25 in and \$10 out (an 8x gap). Exact prices change constantly, so treat the figures as illustrative — but the *shape* is stable: reading is cheap, writing is expensive. That is why asking for a focused, well-scoped edit usually costs far less than asking for a sprawling rewrite, even when the model reads the same files in both cases.
+
+### The context window
+
+The **context window** is the maximum number of tokens the model can consider at once: the prompt, the files, the conversation history, and the answer it is generating all have to fit inside it. It is a finite budget, and *everything competes for the same space*.
+
+```text
+        ┌──────────────  CONTEXT WINDOW (a fixed token budget)  ──────────────┐
+        │  system + instructions │ files opened │ conversation so far │ output │
+        └─────────────────────────────────────────────────────────────────────┘
+                                          ↑
+                  as the session grows, the earlier parts crowd the budget
+```
+
+Modern windows are large — as of mid-2026, frontier models advertise context windows from a few hundred thousand tokens up to about a million. That sounds like effectively unlimited room, but two things complicate the picture:
+
+1. **Bigger is not free.** Every token in the window is an input token you pay for on each turn. A long, cluttered session re-reads its entire history every time the model responds, so cost grows with the conversation, not just with the task.
+2. **Bigger is not always better.** Research on long context — notably the *"Lost in the Middle"* finding (Liu et al., 2023) — shows that models attend best to information at the *start* and *end* of the window and can miss material buried in the middle. More recent work on *"context rot"* (2025) found that answer quality can degrade as the input grows long, sometimes well below the advertised limit. A million-token window does not guarantee a million tokens of reliable attention.
+
+Most tools soften the first problem with **prompt caching**: a stable chunk of context, such as a repository instruction file, can be cached so that re-reading it on later turns costs a small fraction of the normal input price (often around a tenth). This is one reason durable instructions belong in a file rather than being re-typed each session — caching is part of why that habit is also cheap. It does not solve the second problem, though: a cached-but-bloated context is still a bloated context. Both problems point to the same habit, covered later under [Managing context well](#managing-context-well): keep the working context lean and relevant.
+
+## Agentic frameworks: model versus agent
+
+One source of confusion is that people often talk about the model and the agent as if they were the same thing. They are not.
+
+The **LLM** is the reasoning engine that predicts text, plans, explains, and decides what to do next. The **agentic framework** is the layer that gives that model structured access to tools, memory, control flow, permissions, and execution state.
+
+Without the framework layer, you mostly have a strong text model. With the framework layer, you have a system that can repeatedly inspect files, choose an action, observe results, and continue.
+
+```mermaid
+flowchart TD
+	U[User Request] --> F
+
+	subgraph F[Agentic Framework or Coding Agent]
+		D[Planner and Control Loop]
+		M[Memory and Session State]
+		P[Permissions and Guardrails]
+		T[Tool Router]
+	end
+
+	D --> L[LLM]
+	L --> D
+	D --> T
+	T --> FS[Files and Directories]
+	T --> SH[Shell and Tests]
+	T --> GIT[Git and Code Search]
+	T --> MCP[MCP or External Services]
+
+	FS --> O[Observed Results]
+	SH --> O
+	GIT --> O
+	MCP --> O
+	O --> D
+```
+
+The distinction matters because you can often swap one model for another while keeping much of the agent framework the same. In other words, the model supplies intelligence, but the framework supplies the workflow.
+
+In practice, the framework layer is what usually handles:
+
+- the loop of plan, act, observe, and revise
+- tool calling and tool output handling
+- file editing, shell execution, and search orchestration
+- session memory and repository instruction files
+- approval rules, sandboxes, and other safety controls
+
+This is why it helps to separate questions like these:
+
+- "Which model should I use?"
+- "Which agent or framework gives the model the right tools?"
+- "Which product wraps this in a usable coding workflow?"
+
+Examples of agentic frameworks and scaffolds include projects such as LangGraph, AutoGen, OpenAI Agents SDK, PydanticAI, and smolagents. They differ in ergonomics and abstractions, but they are all trying to solve a similar problem: how to let a model operate as part of a controlled multi-step system instead of a one-shot text generator.
+
+For day-to-day coding, you may interact with a finished tool such as Gemini CLI, Claude Code, Aider, or another editor-integrated agent rather than building directly on a framework. Even so, the same architectural split still applies: one layer is the model, and another layer is the agent system that turns the model into something that can work on a repository.
+
+## Security and permissions
+
+It is worth knowing that agentic coding tools usually expose security and permission settings. These controls differ by product, but they often cover questions such as whether the agent can edit files automatically, run shell commands, access the network, or call external tools without asking first.
+
+You do not need to memorize every option at the start. The practical point is simply that these settings exist, and they are worth reviewing before you let a tool operate broadly in a real repository.
+
+## Tools, skills, and MCP
+
+These three ideas are worth separating clearly.
+
+### Tools
+
+In an agentic coding environment, a **tool** is a capability the model can call to do something concrete. Antigravity, like other agents, ships with built-in tools for file access, shell execution, and even browser control — the mechanism that lets the model go beyond plain text generation.
+
+Examples of tool-like actions include:
+
+- reading a file
+- listing a directory
+- running `pytest`, `Rscript`, or `git status`
+- fetching a web page
+- saving a memory
+
+This is why agentic systems are so useful for real coding work. The model does not have to imagine what `analysis.py` contains; it can open `analysis.py`.
+
+### Skills
+
+A **skill** is a reusable bundle of instructions and assets for a specific kind of task. Skills are becoming a first-class concept across agents: a way to package "specialized expertise, procedural workflows, and task-specific resources" that the agent loads only when a task calls for it. (In Antigravity, project skills are reported to live under a `.agents/` directory; Claude Code uses a `skills/` convention. The exact location varies by tool — the idea does not.)
+
+It helps to think of a skill as a small, sharable playbook:
+
+- when to use it
+- what steps to follow
+- what scripts, templates, or references belong with it
+
+This is a powerful pattern for teams. A lab, research group, or engineering team can encode habits such as:
+
+- "how we review a pull request"
+- "how we run a reproducible R analysis"
+- "how we audit API endpoints"
+- "how we prepare a release"
+
+Other tools use different names for roughly the same idea. Claude Code tends to lean more on instruction files and prompt conventions than on a named "skills" abstraction, and Codex-based workflows may package reusable guidance through repository instructions, prompt files, or host-specific agent definitions. The important point is not the label. It is that teams can externalize repeatable workflows so the agent does not have to rediscover them from scratch each session.
+
+### MCP
+
+**MCP** stands for **Model Context Protocol**. It is an open protocol for connecting AI applications to external tools and data sources.
+
+- [What is MCP?](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [MCP specification](https://modelcontextprotocol.io/specification/2025-06-18/basic)
+
+The official MCP introduction describes it as a kind of "USB-C port for AI applications." That analogy is useful: the point is standardization. Instead of every tool inventing a different one-off integration, MCP provides a common way to expose tools, resources, and prompts.
+
+Antigravity and the other major agents all support MCP servers, so the same external tool can be reused across whichever agent you happen to be running:
+
+In practice, MCP is what lets an agentic tool extend beyond the local filesystem. For example, you might connect a coding agent to:
+
+- GitHub
+- a database
+- an internal documentation system
+- cloud services
+- a domain-specific tool maintained by your team
+
+## Markdown as memory, process, and decision record
+
+One of the most important habits in agentic coding is using Markdown files to capture project memory.
+
+This matters for two reasons. First, the AI needs stable context. Second, human teams need stable context. A good Markdown file serves both.
+
+Different tools expose this idea differently. Antigravity's documented mechanism is **Artifacts** (saved plans, task lists, and records of what the agent did) together with a **Knowledge Base** for durable context; it is also reported to pick up a plain-text repository instruction file automatically — `AGENTS.md`, and it recognizes `GEMINI.md` and `CLAUDE.md` as well. Earlier CLIs such as Gemini CLI and Claude Code popularized the single-file approach (`GEMINI.md`, `CLAUDE.md`). The filename matters far less than the habit:
+
+This is more than configuration trivia. It suggests a very practical point:
+
+> Markdown files are a low-friction way to encode how a codebase works, what decisions were made, and how the agent should behave.
+
+This is also a good place to point out cross-tool differences. Claude Code commonly uses `CLAUDE.md` for repository guidance. Codex-oriented workflows often use a repository instruction file such as `AGENTS.md` or another tool-specific prompt/config file, depending on the editor or wrapper in use. The exact filename matters less than the habit: keep durable instructions in the repository, in plain text, where both humans and agents can find them.
+
+Examples of useful Markdown memory:
+
+- repository conventions
+- coding style
+- testing expectations
+- architecture notes
+- deployment steps
+- analysis assumptions
+- "do not touch this generated directory"
+- "always update the changelog when schema files change"
+
+For R and Python teams, this can be especially effective because so many projects already rely on text-first artifacts such as `README.md`, `CONTRIBUTING.md`, `analysis-plan.md`, `methods.md`, `CHANGELOG.md`, and lab notebooks.
+
+The larger lesson is that agentic coding rewards explicitness. If a decision matters repeatedly, put it in a Markdown file instead of repeating it in chat forever.
+
+If you work with more than one tool, it is worth keeping this explicit: `GEMINI.md` and `CLAUDE.md` are not just random dotfiles. They are examples of a broader pattern of repository-scoped AI instructions.
+
+## Managing context well
+
+If [tokens and the context window](#understanding-context-tokens-and-the-context-window) explain *what* the model reads, this section is about the single most useful operational habit: deciding what *should* be in the window at any moment. Good context management improves both quality and cost at the same time, which is rare enough to be worth taking seriously.
+
+The guiding principle is simple:
+
+> Keep the working context **lean and relevant**. Add what the task needs; remove what it does not.
+
+### Clear the context between unrelated tasks
+
+A long-running session accumulates history: files you opened three tasks ago, output from commands that no longer matter, a tangent you abandoned. All of it is still in the window, still being re-read on every turn, and — per the *lost-in-the-middle* and *context-rot* findings above — still competing for the model's attention. The symptoms are familiar: the agent starts referring to stale details, mixes up two problems, or gets slower and more expensive without getting better.
+
+The fix is to start fresh when you switch problems. Most tools provide a way to do this:
+
+- a command to **clear** the conversation and begin a new one (for example, `/clear` in Claude Code, or simply starting a new session);
+- a command to **compact** or summarize the session so far — replacing a long history with a short summary and continuing from there (for example, `/compact`);
+- starting a clean session and pointing the tool back at the repository, where the durable context lives in the instruction file anyway.
+
+A practical rhythm is **one objective per conversation**. Finish a task, capture anything durable in a Markdown file, then clear before the next unrelated task. This is the everyday version of the cost advice later in this document: a focused session is both cheaper and sharper.
+
+### Skills versus one large instruction file
+
+As teams encode more knowledge for the agent, a tension appears between two ways of storing it:
+
+- **One large instruction file** (`GEMINI.md`, `CLAUDE.md`, `AGENTS.md`). Everything the agent should know lives in a single document that is loaded into context every session.
+- **Skills** (and similar modular conventions). Knowledge is split into small, named, task-specific bundles — see [Skills](#skills) above — that are loaded *only when relevant*.
+
+The trade-off is about context budget. A single file is easy to find and reason about, but everything in it occupies the window on every turn, whether or not the current task needs it. A monolithic file that has grown to cover release steps, data-cleaning conventions, review checklists, and deployment notes spends tokens — and attention — on all of them even when you are just renaming a variable.
+
+A reasonable rule of thumb:
+
+- Keep **broadly applicable, always-true** facts in the main instruction file: project layout, core conventions, "do not touch this generated directory." These earn their permanent place in the window, and because the file is stable, [prompt caching](#the-context-window) makes re-reading it cheap.
+- Move **task-specific procedures** into skills or separate documents that load on demand: "how we cut a release," "how we run a reproducible R analysis," "how we audit an API endpoint."
+
+The result is the same lean-context principle applied to your own configuration: the agent carries a small, stable core at all times and pulls in specialized playbooks only when the task calls for them.
+
+### A short checklist
+
+- One objective per conversation; clear or compact before switching tasks.
+- Open only the files the task needs; close the loop on long tool output.
+- Put durable facts in a stable instruction file (cheap to cache, easy to share).
+- Put task-specific procedures in skills or separate docs that load on demand.
+- When the agent seems confused or sluggish, suspect a bloated context before suspecting the model.
+
+## Installing Antigravity
+
+Antigravity is a downloadable application that runs on **macOS, Windows, and Linux**. The current download and overview are here:
+
+- [Antigravity download](https://antigravity.google/download)
+- [Build with Google Antigravity (overview)](https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/)
+
+The typical path is:
+
+1. Download Antigravity for your platform from [antigravity.google/download](https://antigravity.google/download).
+2. Install and launch it like any other desktop application.
+3. **Sign in with a Google account** when prompted.
+4. Open a project folder and choose a model to back the agent.
+
+Because Antigravity is model-flexible, you can usually pick which model drives the agent. At the time of writing that includes **Gemini 3 Pro** alongside options such as **Claude Sonnet 4.5** and open models. The "2.0" release (announced at Google I/O 2026) also added a standalone desktop app for orchestrating several agents at once, a command-line interface, and an SDK — so you are not limited to the editor if you prefer a terminal.
+
+### A note on the free tier
+
+Antigravity is free to use in public preview, which is part of why it is a reasonable starting point for a class. Be aware, though, that the **free tier is rate-limited**, the limits are deliberately not published, and they have changed repeatedly. Google now applies a **weekly** ceiling to free users (paid Google AI Pro/Ultra plans get larger quotas that refresh every few hours). Community trackers have reported the free allowance at roughly **20 requests per day** on the fast model — treat that as unofficial and likely to change. This matters for planning a session and is picked up again under [Paying for tools: an honest recommendation](#paying-for-tools-an-honest-recommendation): a focused exercise fits comfortably inside the free tier, but a sustained afternoon of real work can hit the wall quickly.
+
+For what it is worth if you work in these languages, Google documents both **Python** and **R** among its well-supported coding languages.
+
+## A very small hello-world example
+
+If you are just getting started, avoid beginning with "build a web app." Start with a local file and a concrete edit. That shows what is distinctive about an agentic tool.
+
+Create a directory and a tiny Python file:
+
+```bash
+mkdir hello-agent
+cd hello-agent
+
+cat > hello.py <<'EOF'
+name = "world"
+print(f"Hello, {name}!")
+EOF
+```
+
+Now open that folder in your agent — in Antigravity, open the project; in a terminal agent such as Claude Code, start it inside the directory. Then try prompts like these:
+
+```text
+Explain this small project.
+```
+
+```text
+Open hello.py and explain what it does in plain English for a beginner.
+```
+
+```text
+Edit hello.py so that it accepts a command-line argument for the name, and defaults to "world" if no argument is provided.
+```
+
+```text
+Now add a second file called test_hello.py with one simple pytest test.
+```
+
+This is a better first exercise than a standalone browser chat because you can watch the tool reason about the actual file, modify it, and create a second file that fits the task.
+
+The same structure works well in Claude Code or Codex-style environments. You do not need a different exercise; you mostly need to translate the prompt and point the tool at the right repository instruction file.
+
+If you want an R-flavored version, try using the prompt to :
+
+```text
+Create an R version of this project. The main script should be called hello.R and the test script should be test_hello.R using the testthat framework.
+```
+
+Take a look at the generated files. Notice how the agentic tool can create a consistent set of files that work together, instead of just generating one snippet in isolation.
+
+You can keep going by turning the R version into a proper package structure with `DESCRIPTION`, `NAMESPACE`, and a `tests/` directory. That shows how the tool can manage multiple files and understand project conventions.
+
+```text
+Refactor the R version of this project into a proper R package structure. Create a DESCRIPTION file, a NAMESPACE file, and move the test script into a tests/ directory following standard R package conventions. 
+```
+
+The agentic tool should be able to create a more complex project structure with multiple files that follow the conventions of an R package. That is a concrete example of how these tools can manage real codebases, not just generate snippets.
+
+You can also ask it to run the tests from the command line:
+
+```text
+Run the tests for the R package you just created and report the results.
+```
+
+## A note on leaderboards and benchmarks
+
+A leaderboard can be helpful, but it is important to explain what is being measured.
+
+Most public leaderboards do **not** rank an agent such as Antigravity by itself. They usually rank:
+
+- language models
+- full agent systems
+- benchmark scaffolds
+- combinations of model plus prompting plus tool setup
+
+Still, two benchmark families are worth knowing about because they help explain why agentic coding is now taken seriously.
+
+### 1. Aider polyglot leaderboard
+
+- [Aider LLM Leaderboards](https://aider.chat/docs/leaderboards/)
+
+This is a practical coding benchmark based on code editing tasks across several languages. It is useful because it evaluates whether a model can actually make correct edits, not just talk about code fluently.
+
+### 2. SWE-bench
+
+- [SWE-bench leaderboard](https://www.swebench.com/)
+- [SWE-bench Verified](https://www.swebench.com/verified.html)
+- [SWE-bench paper (OpenReview)](https://openreview.net/forum?id=VTF8yNQM66)
+
+SWE-bench is important because it is based on real GitHub issues and real repositories. That makes it closer to the sort of messy, multi-file work that professional developers actually do.
+
+The key message is not "which model is number one this week." The key message is:
+
+> modern coding agents are now good enough that repository-aware, tool-using workflows are worth learning as a normal part of software practice.
+
+## Suggested references for a short session
+
+If you want a compact reading list, start with these:
+
+- [Google Antigravity](https://antigravity.google)
+- [Antigravity download](https://antigravity.google/download)
+- [Build with Google Antigravity (announcement)](https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/)
+- [Claude Code](https://claude.com/product/claude-code)
+- [Claude pricing](https://claude.com/pricing)
+- [Model Context Protocol introduction](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [SWE-bench paper](https://openreview.net/forum?id=VTF8yNQM66)
+- [SWE-bench leaderboards](https://www.swebench.com/)
+
+## Four projects to try
+
+If you want to move beyond toy examples, the best next step is to give the agent a task that depends on real files, real conventions, and real decisions. The three projects below are meant to exercise different parts of agentic coding.
+
+### 1. Explore a Bioconductor repository
+
+**Why this is useful:** Bioconductor packages are a good test of repository understanding because they mix code, documentation, vignettes, metadata, and domain-specific conventions. This is a realistic example of the kind of codebase that is difficult to understand through snippets alone.
+
+Pick a Bioconductor repository that looks interesting to you. Good candidates are packages with active documentation and a non-trivial codebase, such as `DESeq2`, `GenomicRanges`, `BiocFileCache`, or `SingleCellExperiment`.
+
+Start by cloning one repository and opening it in your coding environment. Then ask the agent to do tasks like these:
+
+```text
+Explain the purpose of this package in plain language, then identify the most important source files and describe how they fit together.
+```
+
+```text
+Find one exported function that seems central to the package. Trace where it is implemented, how it is documented, and which tests exercise it.
+```
+
+```text
+Read the vignette and summarize the main user workflow, then compare that workflow to the internal code structure.
+```
+
+This project exercises codebase search, file inspection, documentation reading, and cross-referencing between source, tests, and user-facing materials.
+
+### 2. Extract structure from a messy text file
+
+**Why this is useful:** Many real tasks are not "write a new function" tasks. They are "take this messy text artifact and turn it into structured data" tasks. This is a good way to see whether the agent can combine file creation, parsing logic, validation, and command-line execution.
+
+Create a file called `field_notes.txt` with content like this:
+
+```text
+2026-04-10 | Site A | observer: Kim | species: heron | count: 12 | notes: 3 near marsh edge
+2026-04-10 | Site B | observer: Rao | species: egret | count: 7 | notes: one tag unreadable
+2026-04-11 | Site A | observer: Kim | species: heron | count: twelve | notes: transcription uncertain
+2026-04-11 | Site C | observer: Patel | species: ibis | count: 4 | notes: weather windy
+2026-04-11 | Site B | observer: Rao | species: egret | notes: count missing
+```
+
+Then give the agent a task such as:
+
+```text
+Create a Python script that parses field_notes.txt into a CSV file, flags rows with invalid or missing counts, and prints a short summary by species. Add one or two tests for the parser.
+```
+
+You can extend the exercise by asking the agent to produce both a "clean" table and a separate "problems" report.
+
+This project exercises local file creation, parsing, validation, error handling, tests, and iterative refinement after inspecting bad input.
+
+More generally, agents can usually read PDFs, HTML files, and other text-based formats. At this point, many can also parse word documents, excel files, powerpoint presentations, etc. That makes them useful for extracting structured data from a wide variety of messy sources.
+
+### 3. Audit a small command-line workflow
+
+**Why this is useful:** Agentic tools are especially helpful when you need to understand not just one file, but how files and commands interact. A small workflow audit is a compact way to practice that skill.
+
+Create a tiny project with three files:
+
+- `download_data.sh`
+- `analyze.py`
+- `README.md`
+
+Put a few deliberate rough edges into it. For example, let the shell script write to a hard-coded path, let the Python script assume a column name that is not documented, and let the README omit one setup step.
+
+Note that you can also JUST ASK THE AGENT TO CREATE THIS MINI-PROJECT. That is a good way to see how it handles multiple files and cross-file consistency.
+
+Then ask the agent to do this:
+
+```text
+Review this mini-project and identify the assumptions that would cause it to break on another machine. Then fix the problems, update the README, and explain the changes.
+```
+
+You can make the exercise richer by asking for a Makefile, a simple test, or a more portable way to pass paths and parameters.
+
+This project exercises repository inspection, shell understanding, documentation repair, and the ability to connect user instructions to actual executable code.
+
+### 4. Survey foundation models for transcriptomics and spatial transcriptomics
+
+**Why this is useful:** The landscape of foundation models for single-cell and spatial transcriptomics moves fast and is genuinely hard to navigate. Published papers often describe models that have prototype code but are not practically installable. At the same time, a smaller number of projects are actively maintained, well-documented, and used by real lab workflows. Agentic tools with web access are well-suited to doing this kind of structured literature and code survey, because the task involves reading many sources, comparing them against consistent criteria, and producing a summary you can actually act on.
+
+The prompt below is designed to yield a comparative table rather than a flat list, and to explicitly probe usability signals that papers and abstracts tend to omit.
+
+```text
+Search the web and GitHub for foundation models designed for single-cell transcriptomics or
+spatial transcriptomics. Identify at least ten distinct models. For each one, collect the
+following information and produce a Markdown table:
+
+- Model name and primary citation or preprint
+- Modalities supported (scRNA-seq, spatial, multiome, ATAC, etc.)
+- GitHub repository URL, if one exists
+- Number of GitHub stars and date of most recent commit
+- Whether a pip- or conda-installable package exists (yes / no / partial)
+- Whether tutorial notebooks or vignettes are present in the repository (yes / no)
+- Whether the documentation covers installation for a user who is not the author (yes / no)
+- A one-sentence description of the primary task the model was designed for
+
+After the table, write a short paragraph distinguishing the models that appear to be
+actively maintained and accessible to a working bioinformatician from those that appear to
+be research prototypes unlikely to be usable without significant effort. Use the GitHub
+activity and packaging signals as your primary evidence, not the citation count.
+```
+
+If the agent returns a table faster than you expected, a good follow-up is:
+
+```text
+For the two or three models you rated as most accessible, check whether their GitHub issues
+show evidence of community use: recent issues opened by external users, pull requests from
+non-authors, or explicit questions about installation and data formats. Report what you find.
+```
+
+This project exercises web search, GitHub repository inspection, structured comparison across many sources, and evidence-based judgment rather than recitation of abstracts.
+
+## A note on tokens and model costs
+
+This section builds directly on [Understanding context: tokens and the context window](#understanding-context-tokens-and-the-context-window) and [Managing context well](#managing-context-well). Those sections explain what tokens are and why a lean context helps; this one is the practical cost angle. As you start using agentic coding tools on real projects, it helps to track token usage and model cost. Most tools expose some combination of usage metrics, rate limits, or billing dashboards.
+
+A simple mental model is:
+
+- more input context (large files, long chats, many tool outputs) usually means more tokens
+- more turns in a session usually means more tokens
+- output tokens usually cost several times more than input tokens (often 4x–8x), so the size of the *answer* matters, not just the size of the *prompt*
+- larger or premium models usually cost more per token than smaller models
+
+Practical ways to manage cost without losing quality:
+
+- start with focused prompts and only include the files that matter
+- summarize or trim very long outputs before the next step
+- use a smaller model for exploration, then switch to a stronger model for critical edits or review
+- reset or branch a conversation when context becomes noisy
+- check usage reports periodically so cost does not become a surprise
+
+Worked example (illustrative only):
+
+- Session A (focused): 6 turns, about 2,000 tokens per turn on average -> about 12,000 total tokens
+- Session B (broad and noisy): 14 turns, about 8,000 tokens per turn on average -> about 112,000 total tokens
+
+Even before model pricing differences, Session B uses about 9 times more tokens than Session A. If Session B also uses a higher-cost model tier, total spend can rise much faster than expected.
+
+One practical budgeting pattern is:
+
+- do discovery and file triage with a lower-cost model
+- switch to a stronger model only for the final implementation pass and review
+- keep each conversation scoped to one objective
+
+You do not need exact pricing memorized. The important habit is to treat tokens as a real resource, just like compute time or API calls.
+
+## Paying for tools: an honest recommendation
+
+You can do everything in this handout on a free tier, and you should start there. But it is worth being straight with you about where the free path runs out, because pretending otherwise is its own kind of unfair.
+
+**The free tiers are demo-grade.** They are excellent for learning and for finishing a scoped exercise. They are not sized for a sustained afternoon of real work. Antigravity's free allowance is currently the tightest of the major tools — a weekly ceiling, reported at roughly twenty requests a day on the fast model — so the people most likely to hit a wall mid-task are exactly the ones who paid nothing. If a class quietly splits into students who can keep going and students whose quota has died, *that* is the equity problem, not the twenty-dollar tool.
+
+So here is the honest recommendation, framed as a fork rather than a hurdle:
+
+> **Today works on free.** If you want to keep doing real work after this week, the tool most worth paying for is a **Claude Pro** subscription, which includes **Claude Code** for interactive use.
+
+A few things that make this an easy call:
+
+- **It is cheap, and it is a rental, not a purchase.** Claude Pro is **$20/month** (about **$17/month billed annually**), cancelable the day the course ends. Compare that to a textbook in the not-so-distant past: $100–200, non-refundable, obsolete in two years. Adjusted for inflation, a one-month rental of a professional-grade agent is among the cheapest serious tool access this field has ever offered.
+- **Many of you can expense it.** PI funds, training-grant professional-development lines, and lab budgets routinely cover $20 of tooling for a working scientist. Ask. For most trainees this is reimbursable — which dissolves much of the discomfort about recommending a paid product.
+- **The recommendation was tested, not assumed.** Free terminal tools were tried for this kind of cowork-heavy task and came up short; Claude Code is what actually did the job. Recommending the tool that works, *after* trying the alternatives, is the point of having an instructor.
+
+A couple of honest caveats, because this space is volatile (figures here are mid-2026):
+
+- **There is no individual student discount.** Anthropic runs an institutional *Claude for Education* program (free premium access, but only at partner universities) and a campus-ambassador program; there is no `.edu` checkout for an individual. The closest thing to a price break is annual billing. If your institution is a Claude for Education partner, check whether you already have access before paying.
+- **The free Claude tier is effectively the trial** — no expiry, no card required — and Max subscribers can share **7-day guest passes** that include Claude Code, which is a low-friction way to try the full experience before subscribing.
+
+None of this is gatekeeping. The free path is real and we will use it. This is simply naming, out loud, that the free tiers are demo-grade — and handing you the cheapest honest on-ramp to the real thing.
+
+## Closing idea
+
+If you remember only one thing from this document, let it be this:
+
+**Agentic coding tools are most useful when the work depends on the state of real files, real commands, and real project context.**
+
+That is what separates them from ordinary chatbots and from the copy/paste workflow. They are not just text generators. They are becoming practical collaborators inside the working environment where software and analysis are actually built.
+
+## AI assistance
+
+This document was structured, edited, and written with the help of AI tools, including Claude Code, Gemini CLI, Antigravity, OpenAI Codex, and GitHub Copilot. That is intentional: using agentic and AI-assisted tools to produce a document about agentic and AI-assisted tools is itself a reasonable demonstration of the workflow described here. (The slide decks in [`talks/`](talks/) were built the same way.)

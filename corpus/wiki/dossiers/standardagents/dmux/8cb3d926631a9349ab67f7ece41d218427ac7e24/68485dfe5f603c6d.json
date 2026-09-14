@@ -1,0 +1,391 @@
+{
+  "applied_operation_id": "op_bf129ea16a344358bb452a71858a433d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1fd614cc3c0aa6da097b4ddff74c6cdfdf6c90e08d40e958ebd47715400d9b9a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L7-L10"
+        },
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f74b99cff8c41631f6e63a3c2545ea07ed05a8402bea7136f256692d4ced80f",
+        "slc_c67af16dc8d90e25340257a84c479f253b5ca5bd2aaaea6a486c82f08e185e3f"
+      ],
+      "text": "dmux manages multiple AI coding agents in parallel, giving each task a tmux pane backed by its own isolated git worktree and branch, with merge or GitHub PR actions to bring work back."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31fa6019a9afaeb2a140f3728cfda459cc486dbe77acef77d1f279fe087c33fe",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 86,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L73-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ee1421e4db545f7aa8f67db1561070caa785fe313c6cce2276d3f8f98eddf05f"
+      ],
+      "text": "The TUI exposes single-key shortcuts: n for a new worktree pane, t for a terminal pane, m for the pane menu, f for file browsing, s for settings, and q to quit, among others."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25f1318024e3c5f39e490b50c2837f71d733d0fc13fae68b439dfd79956b8413",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 60,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L49-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bc19712a8faf6d0f1690fe06eae112c7131d63bb3f3082ee4adf142c70c94a5"
+      ],
+      "text": "dmux supports launching many agent CLIs, including Claude Code, Codex, OpenCode, Cline, Gemini, Qwen, Amp, pi, Cursor, Copilot, and Crush, with multi-select of several agents per prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_30ebe052a252f4f3d418e66abc46856e4df763a60814ec8cd706a230d16b190c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 60,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L49-L60"
+        },
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bc19712a8faf6d0f1690fe06eae112c7131d63bb3f3082ee4adf142c70c94a5",
+        "slc_c67af16dc8d90e25340257a84c479f253b5ca5bd2aaaea6a486c82f08e185e3f"
+      ],
+      "text": "Each pane is a full working copy in its own worktree so agents do not conflict; merging auto-commits, merges, and cleans up in one step."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad52f889b36563b378c4d8e21d39598c8fbd65f030586f6ad710404c5dedba7f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 69,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L66-L69"
+        },
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L64-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72a0894474088e40921b2647d35855e46a2834332d9cfa08699e54c6e8916feb",
+        "slc_e7038e8c375b967e51c9e34dfaeca26e51955fe7e0b19ece9abb7724c65e13dd"
+      ],
+      "text": "Branch handling defaults to automatic worktree/branch naming, but users can optionally pick a different base branch per pane or supply an explicit name, with agent-specific suffixes for multi-agent launches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de5e65aff50500448b78c8245d5fd64dad7ecafc4096a7681d7e636491bca986",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 94,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L90-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cbd749cb5460a777ccd3b23727009e97208e42875313f1cd900472cd5df15b5c"
+      ],
+      "text": "Runtime requirements are tmux 3.0+, Node.js 18+, Git 2.20+, at least one supported agent CLI, and optionally an inference provider key or Codex/Grok Build login for AI naming and analysis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ca2535e9cd3aefa16624b70b766816eb9d102ca625e13b0048fdbce44f7a110",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c40a9baf33f5a0dd003d9bd143b76f78d0cdb94ab1768f639a2cd81d69bf6bb"
+      ],
+      "text": "First-run setup can configure a primary inference provider and optional backup, discovering models from the provider and supporting API keys, custom OpenAI-compatible endpoints, or Codex/Grok Build logins; reopened via the settings key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03d1cda9d0f4667c59638b15cdc530df60a442a727fac112811de53219a744d8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "e1222d999ef6222a5733f1b26f6ce1974bc3d9cb",
+          "line_end": 172,
+          "line_start": 169,
+          "path": "AGENTS.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/AGENTS.md#L169-L172"
+        },
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "e1222d999ef6222a5733f1b26f6ce1974bc3d9cb",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "AGENTS.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/AGENTS.md#L109-L109"
+        },
+        {
+          "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+          "git_sha": "e1222d999ef6222a5733f1b26f6ce1974bc3d9cb",
+          "line_end": 177,
+          "line_start": 174,
+          "path": "AGENTS.md",
+          "repository": "standardagents/dmux",
+          "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/AGENTS.md#L174-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19438e08c5b8cc4f268a87641963821e09534d701d3734913d904197b38d2853",
+        "slc_5f913a5a525bbe340cb7480529e4ecd0ac2c4434f873ff0b19aa22c86e396fc0",
+        "slc_9e3241a9f918c7ba53fc23e39fd8b546440236ed7f8396d3ae2e8ce6e3075d78"
+      ],
+      "text": "Repository development practice: maintainers use a 'dmux-on-dmux' loop via pnpm dev, and the recommended PR workflow runs pnpm run typecheck and pnpm run test before submitting."
+    }
+  ],
+  "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 106,
+        "path": "README.md",
+        "size": 5298
+      },
+      {
+        "lines": 184,
+        "path": "AGENTS.md",
+        "size": 8516
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 9
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2967
+      },
+      {
+        "path": "README.ja.md",
+        "reason": "file-budget",
+        "size": 5095
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 927
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 820,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": false,
+      "omitted": 3,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3a2d8535ce6f533a92e1caf30314bfca",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/standardagents/dmux/8cb3d926631a9349ab67f7ece41d218427ac7e24/68485dfe5f603c6d/manifest.json",
+  "package_id": "pkg_4710e3e5fcba4b363b0ed276ec7b0994984eacecbbdf77b18fe56a8c3e3ac190",
+  "repo": "standardagents/dmux",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e5ac81754a8fe17764263669593a0c0b80b57187798b682b2e9a534aa05d4f86",
+  "snapshot_id": "68485dfe5f603c6d",
+  "sources": [
+    {
+      "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+      "git_sha": "e1222d999ef6222a5733f1b26f6ce1974bc3d9cb",
+      "lines": 184,
+      "path": "AGENTS.md",
+      "repository": "standardagents/dmux",
+      "sha256": "7bcfbc772208ba93d87d920426e8da32a6a456c1bbc9b2797172bc0ccd2555aa",
+      "source_id": "src_d95d0d896138577ba05d4dc9d11b8745",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/AGENTS.md"
+    },
+    {
+      "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+      "git_sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "standardagents/dmux",
+      "sha256": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9",
+      "source_id": "src_d5403e0a7afc5d4a829fa49e002ab594",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/CLAUDE.md"
+    },
+    {
+      "commit": "8cb3d926631a9349ab67f7ece41d218427ac7e24",
+      "git_sha": "f16e4eca1ea359ddad0044884480215f6c766e38",
+      "lines": 106,
+      "path": "README.md",
+      "repository": "standardagents/dmux",
+      "sha256": "b0122ffa4da1caa174a1da70c85cb578bc38591d449c0e1a8bb6c852a124b37d",
+      "source_id": "src_d5e3df68bbb354df8d87abe1d11141f1",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/standardagents/dmux/blob/8cb3d926631a9349ab67f7ece41d218427ac7e24/README.md"
+    }
+  ],
+  "summary": "dmux manages multiple AI coding agents in parallel, giving each task a tmux pane backed by its own isolated git worktree and branch, with merge or GitHub PR actions to bring work back. The TUI exposes single-key shortcuts: n for a new worktree pane, t for a terminal pane, m for the pane menu, f for file browsing, s for settings, and q to quit, among others.",
+  "superseded_claim_ids": []
+}

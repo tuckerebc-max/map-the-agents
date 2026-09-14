@@ -1,0 +1,1025 @@
+{
+  "applied_operation_id": "op_da24757a30a14e74aa77ce193315b5f9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4e8dffc705d6d5d9604455e4e8c6b1c83098d5d5907292a740affe97ccd3051",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0396e99c9c2c915ad1dd285c182ead3fb771c7b6ede5b4d94bb5a2930340bbcc"
+      ],
+      "text": "Enola maps a repository's structure before a change and compares it afterward, reporting only what that specific change introduced rather than pre-existing issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bbe9ee0411bc8f0bb1f7adfe65dbdba7ca9ba39ce08d8686aaafa0c0fad4e949",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L12-L14"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 375,
+          "line_start": 375,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L375-L375"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36a6b8ea7f8b27a0c543118ff06c9b14a44beabd151078ce420610ebb6e9fcd4",
+        "slc_53216e909c664c2b9ce3cb40c3f256cd744afbfed7e59648d8e2b4419628894b"
+      ],
+      "text": "The tool computes its graph from parsed source with graph algorithms, using no language model, embeddings, upload, account, or license check."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc8bf2e743fb48171bbc4956e6a7b27b22154626741eaf0e03b66bee1c0199ba",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 243,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L243-L243"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 260,
+          "line_start": 247,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L247-L260"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ff9bda5a569daaa4a640f93f9d78ebd02be6572c31a58c6c71a6e009233e740",
+        "slc_ffbb2d92569ece1c1c90ebc192d776cf2ee978bdf62182a9979176e29d40bd93"
+      ],
+      "text": "Enola runs nineteen checks it calls explainers (e.g. layers, cycles, intent, god-class, hotspots, unused-routes, coverage) on every run; a policy flag decides which findings may set the exit code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8269f58fafef5fb3e7ec45f72b80b0b501e8da1df970a13605ed65ca27f9214",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 24,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L22-L24"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 407,
+          "line_start": 405,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L405-L407"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 149,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L147-L149"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 158,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L157-L158"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 284,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L277-L284"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 137,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L135-L137"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 101,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L99-L101"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 162,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L160-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22c439d159707ab667cd16307e972c706df356a6bbe9fb4e9508cc90ab0085e5",
+        "slc_61b39781a9f1ccbf01fc8d63d668cb14ee5c3ffdfdf94fc141451e962b0e18d8",
+        "slc_a4c8241757c2a877829de268d3a5fd15253740804395ce1621cbe92d6c761b70",
+        "slc_b792d1dd88663264f1297fbfd7a16c71016404cdaf9558b24efb744ef9e1e470",
+        "slc_d2c143d8ca741f56b4c4b38e54c0a5a0be8062ca714554030f5c069b391c7557",
+        "slc_df38ce45399a57e31053257595fd55b4a72016b78017087fe58cf16172dcea4c",
+        "slc_df3aef5659cb6bedb4c2cec7b8cea1715037d5dcd45fa60f231f4f027796142b",
+        "slc_f20e8455da5f7b74b93870a773cf48d5f31b5c8f922e2487036addcb8d9fe1f8"
+      ],
+      "text": "The CLI includes commands such as enola --explain, baseline pin, check, doctor, dashboard, coverage, install --hooks, uninstall and upgrade, with flags like --fail-on, --min-confidence, --target and --max-spillover."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5a2f1a131fb798463a022fe9acde6cbd134976fa8cb43ff180e856cb224eb96f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 114,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L107-L114"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 127,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L119-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b1c535345cad7714df814ce2fc8d91ad7be85275ff4b45b933fc077241b9a59",
+        "slc_3edf12f6ed5881d1f2cdbf713d77fdd707754d8d89f14790b4a47b299773b2c1"
+      ],
+      "text": "Enola exposes itself to coding agents as an MCP server launched via the command 'enola', with per-client setup for Claude Code, Copilot, Cursor, opencode and Codex."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_30381593ac7bd0fe372d626ab85d94466bb8cc2a44ab9803156e2b25d6b35329",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 245,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L245-L245"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 205,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L204-L205"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a52b70e79bba53d2a0af04db076621f92ab733f174d268be67fb51474cfd50c",
+        "slc_c540f37a9b400f10980b8eabe85e83d636657848510a3834a106a8fae34b8f30"
+      ],
+      "text": "By default no policy is set: all findings are reported, the run exits 0, and the output explicitly states that nothing was enforced."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_956ba2112f601871b425a5a32e040b1a049dd25f8f23105188bab4ceaee625a9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 344,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L338-L344"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 273,
+          "line_start": 273,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L273-L273"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e1bcf46d536bd334df0b1882ca8c3554abefa57f31a75352ff7153067002aa3",
+        "slc_c5e69e52c89c9e430f569c08cf4540073023d8a8ee592135d2e8b3e97c5d9ea1"
+      ],
+      "text": "Only cycles, intent, constraints and a declared layer order reach confidence 1.00; heuristic explainers are capped at 0.95, so gating on them requires lowering --min-confidence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_17ab7b4c5db75d06c2d0633b4b1556a4501c71674fda9031fb1b5f6bf2750457",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fafd1a4a987d5942857fdaad72d36fdf718f4acffa5b7b0dd2dd8ea3ea91a8a7"
+      ],
+      "text": "enola install --hooks writes instructions into agent-read files and adds hooks that grade each session; in opencode, which lacks such hooks, it installs a plugin that refuses the first grep/glob/list to surface the enola tool, bounded to two refusals."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a37e51a604c5e223ed6909dfb7901109ace002c977661f5873a12a63de4d8eb",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fafd1a4a987d5942857fdaad72d36fdf718f4acffa5b7b0dd2dd8ea3ea91a8a7"
+      ],
+      "text": "The install command previews every change and asks before writing, never creates shared files like AGENTS.md that did not already exist, and uninstall reverses everything byte-for-byte."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3abc2a8a413516a167aabdc54193d5aab26e3d7a57421fcd8a7febc94323827c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 83,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L81-L83"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 79,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L77-L79"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L85-L85"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 67,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L65-L67"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_484bd21196242af601349c7584222c3da0c1ecade348ec70414a1eeb31b10095",
+        "slc_596b81f5c574bf23901e0c306a023cc0dc774edc257a797ddd585f6bd4b661a4",
+        "slc_8920739bba01864bc5d453ac1a3c6c38256f469800eb5130c704e6d6dec455a1",
+        "slc_c92393097599357e747cd2cf224127b6177d61c87ee1ba00357587a7cb301b49",
+        "slc_d537f75d68d466674f1e2abdfe38d1dc769a3235cf997ddd1bbd0b96ed210ddb"
+      ],
+      "text": "The single binary is distributed via an install script, PyPI (enola-cli), Ruby gems, and package indexes, targeting Linux, macOS (amd64/arm64) and Windows without a Go toolchain or C compiler."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f00cd44491716a4c0d31905d48cd028d4be5d145619c23e2d2757d24ab8cd73",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L12-L14"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 375,
+          "line_start": 375,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L375-L375"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 442,
+          "line_start": 417,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L417-L442"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36a6b8ea7f8b27a0c543118ff06c9b14a44beabd151078ce420610ebb6e9fcd4",
+        "slc_53216e909c664c2b9ce3cb40c3f256cd744afbfed7e59648d8e2b4419628894b",
+        "slc_ee948cf24482ea01c33fcb3513bc4db8d7d672511ceb4cf08a36218980256b30"
+      ],
+      "text": "Enola parses source with tree-sitter plus language-specific extractors, detecting 23 languages and formats automatically, with framework awareness for Go, Spring, Next.js, Angular, FastAPI, Django and others."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8ca93c57131625a6ae879718cf53c2cf256ec50b5dda62143862890d1e3d422",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 379,
+          "line_start": 379,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L379-L379"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 377,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L377-L377"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37acad77a0660d9be6be9942f065b6c70610c129af9af8838b7b3cc25febb9c1",
+        "slc_972a03b1755d1a4b8b4b7807606c44ddc5827132da04b4d0c6a9e45e74a8a6bd"
+      ],
+      "text": "Across 81 open-source repositories indexed three times each, all produced byte-identical snapshot IDs and fact files over 7.0 million facts with zero parse errors; warm re-index benchmarks include grafana at 7.5s and the Linux kernel at 52.6s."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65ae7c153485bac708252d00680e10c5267d22ed648d972211bafa6446dc65e7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 344,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L338-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e1bcf46d536bd334df0b1882ca8c3554abefa57f31a75352ff7153067002aa3"
+      ],
+      "text": "Enola models only static structure and has no representation of runtime behavior such as timeouts, retry budgets, or message loss; the gate also grades only the delta, so pre-existing findings stay silent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_13852f3c2da46286bcb81fc0a43532735ff05b758365dce8e93ef9fc3b23efe8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 344,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L338-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e1bcf46d536bd334df0b1882ca8c3554abefa57f31a75352ff7153067002aa3"
+      ],
+      "text": "Most findings are advisory: across the benchmark corpus 96.3% could not fail a build under the default policy, and outlier thresholds are per-repository so a clean check means only that nothing new was introduced."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65dddb94ae9f1f8264852000bc8570251295d5fab0a806088e5ac22dd0c748af",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 143,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L141-L143"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 377,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L377-L377"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03bbad7fccfdbba6a046544433e2b8b007634a65dc379a7efd6a1e6c6a19bb35",
+        "slc_972a03b1755d1a4b8b4b7807606c44ddc5827132da04b4d0c6a9e45e74a8a6bd"
+      ],
+      "text": "Snapshots carry a receipt with enola's version, git ref, dirty-tree status, extractors used, and a sha256-based snapshot ID; baselines pinned by a different version or ignore rules are deemed incomparable until re-pinned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70441d945b106704853d1f6b588ac9f195990c2555d0f6a9c4be6421c38850ec",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 371,
+          "line_start": 371,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L371-L371"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29bcad1aefdb903545df321e547a36512f3aa9127042312022117f8f3795254a",
+        "slc_ed5f011e18ddb70cb477b243d246d6773c34edc7291eec94f4309fd2a9ff5b79"
+      ],
+      "text": "Enola targets AI-assisted development where agents write code faster than humans can review, catching structural regressions like layer violations and scope spillover that builds and tests miss."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4036197ae948109e5e6509d36150809c5942d38b6720e970c93fdca589123429",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 271,
+          "line_start": 270,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L270-L271"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L49-L49"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 162,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L160-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57a0b65e3a98a8e9782d3ae2d0a85bcae539591177b1e59e91cbbf5077493f72",
+        "slc_9b071bcb83fd8aedd3224da30b78c206756051ef310227424475c4bba8389c0e",
+        "slc_f20e8455da5f7b74b93870a773cf48d5f31b5c8f922e2487036addcb8d9fe1f8"
+      ],
+      "text": "enola check uses four exit codes: 0 for pass, 1 for a failing finding or spillover, 2 for a missing baseline or bad flag, and 3 for a baseline incomparable to the current code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12be7aae2975973d72f7e3158abfb3ec18b957082231bae78d7fd4913dd63900",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L151-L151"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L145-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3cf59492ebede05fe36eb670c0806adcfb903a09e748fcc7c8155cce83e425fe",
+        "slc_ee083519059f04db73404871e424d30ed70e5e55b8c4a0876ee8e7ecb0327fd3"
+      ],
+      "text": "A read-only local dashboard visualizes snapshots with findings, architectural changes, lifetime usage and diagnostics tabs, and shows the generation command when no snapshot exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_542cd0352f1b9b0c46c3f159e8d17856e6d2fe06721e4ffc471826c38e28ce1d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 399,
+          "line_start": 399,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L399-L399"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 391,
+          "line_start": 391,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L391-L391"
+        },
+        {
+          "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+          "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+          "line_end": 409,
+          "line_start": 409,
+          "path": "README.md",
+          "repository": "enola-labs/enola",
+          "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md#L409-L409"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e75dd3dcdb85bbf083af7198e2104ac124fde94848b7f5ac6e9e3b250e8d124",
+        "slc_6333a8a966fc2aab743087a9a3f6378fa427ff8a9c62231caa60b2ece0fde133",
+        "slc_e2578161c5279d062ddd7a6b872efd64a7d65d5d7f6ba979fb88c7046915e181"
+      ],
+      "text": "Cross-repo analysis joins clients and services into one graph, resolving route prefixes interprocedurally across files and packages, and enola coverage reports per service how many outbound calls could not be matched to a route."
+    }
+  ],
+  "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 496,
+        "path": "README.md",
+        "size": 39519
+      },
+      {
+        "lines": 926,
+        "path": "docs/BENCHMARKS.md",
+        "size": 53757
+      },
+      {
+        "lines": 329,
+        "path": "docs/BLIND-SPOTS.md",
+        "size": 18182
+      },
+      {
+        "lines": 185,
+        "path": "docs/CLUSTERS.md",
+        "size": 6762
+      }
+    ],
+    "omitted": [
+      {
+        "path": "ARCHITECTURE.md",
+        "reason": "byte-budget",
+        "size": 235150
+      },
+      {
+        "path": "docs/CLI.md",
+        "reason": "byte-budget",
+        "size": 72198
+      },
+      {
+        "path": "docs/CONSTRAINTS.md",
+        "reason": "byte-budget",
+        "size": 104605
+      },
+      {
+        "path": "docs/DASHBOARD.md",
+        "reason": "byte-budget",
+        "size": 6522
+      },
+      {
+        "path": "docs/EXPLAINERS.md",
+        "reason": "byte-budget",
+        "size": 18700
+      },
+      {
+        "path": "docs/EXTENDING.md",
+        "reason": "byte-budget",
+        "size": 21409
+      },
+      {
+        "path": "docs/FIRST-CHANGE.md",
+        "reason": "byte-budget",
+        "size": 8096
+      },
+      {
+        "path": "docs/GLOSSARY.md",
+        "reason": "byte-budget",
+        "size": 9706
+      },
+      {
+        "path": "docs/HISTORY.md",
+        "reason": "byte-budget",
+        "size": 13087
+      },
+      {
+        "path": "docs/INTEGRATING.md",
+        "reason": "byte-budget",
+        "size": 8301
+      },
+      {
+        "path": "docs/INTENT.md",
+        "reason": "byte-budget",
+        "size": 24776
+      },
+      {
+        "path": "docs/PROVIDERS.md",
+        "reason": "byte-budget",
+        "size": 13228
+      },
+      {
+        "path": "docs/RAILS.md",
+        "reason": "byte-budget",
+        "size": 11158
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "byte-budget",
+        "size": 4407
+      },
+      {
+        "path": "docs/SNAPSHOTS.md",
+        "reason": "byte-budget",
+        "size": 17006
+      },
+      {
+        "path": "docs/extraction/ansible.md",
+        "reason": "byte-budget",
+        "size": 3652
+      },
+      {
+        "path": "docs/extraction/asyncapi.md",
+        "reason": "byte-budget",
+        "size": 6173
+      },
+      {
+        "path": "docs/extraction/cpp.md",
+        "reason": "byte-budget",
+        "size": 5271
+      },
+      {
+        "path": "docs/extraction/dart.md",
+        "reason": "byte-budget",
+        "size": 15303
+      },
+      {
+        "path": "docs/extraction/dotnet.md",
+        "reason": "byte-budget",
+        "size": 58202
+      },
+      {
+        "path": "docs/extraction/go.md",
+        "reason": "byte-budget",
+        "size": 12002
+      },
+      {
+        "path": "docs/extraction/grpc-openapi.md",
+        "reason": "byte-budget",
+        "size": 6670
+      },
+      {
+        "path": "docs/extraction/hcl.md",
+        "reason": "byte-budget",
+        "size": 4719
+      },
+      {
+        "path": "docs/extraction/java.md",
+        "reason": "byte-budget",
+        "size": 5238
+      },
+      {
+        "path": "docs/extraction/kotlin.md",
+        "reason": "byte-budget",
+        "size": 5314
+      },
+      {
+        "path": "docs/extraction/php.md",
+        "reason": "byte-budget",
+        "size": 5628
+      },
+      {
+        "path": "docs/extraction/python.md",
+        "reason": "byte-budget",
+        "size": 6918
+      },
+      {
+        "path": "docs/extraction/README.md",
+        "reason": "byte-budget",
+        "size": 7198
+      },
+      {
+        "path": "docs/extraction/ruby.md",
+        "reason": "byte-budget",
+        "size": 17541
+      },
+      {
+        "path": "docs/extraction/rust.md",
+        "reason": "byte-budget",
+        "size": 7657
+      },
+      {
+        "path": "docs/extraction/scala.md",
+        "reason": "byte-budget",
+        "size": 11801
+      },
+      {
+        "path": "docs/extraction/swift.md",
+        "reason": "byte-budget",
+        "size": 5655
+      },
+      {
+        "path": "docs/extraction/typescript.md",
+        "reason": "byte-budget",
+        "size": 30197
+      },
+      {
+        "path": "docs/schema/facts.md",
+        "reason": "byte-budget",
+        "size": 15446
+      },
+      {
+        "path": "docs/schema/insights.md",
+        "reason": "byte-budget",
+        "size": 2373
+      },
+      {
+        "path": "docs/schema/README.md",
+        "reason": "byte-budget",
+        "size": 2496
+      },
+      {
+        "path": "docs/schema/receipt.md",
+        "reason": "byte-budget",
+        "size": 3300
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 44403
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "byte-budget",
+        "size": 2471
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "byte-budget",
+        "size": 7490
+      }
+    ],
+    "omitted_count": 40,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1389,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 44,
+      "complete": false,
+      "omitted": 40,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_ef28a56247f95059be228c2c363f1246",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 4,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/enola-labs/enola/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/832a935ff1466519/manifest.json",
+  "package_id": "pkg_9d0560db8fa7022fa03c6f0224869859fdc0c0d396676faad7829f707464f08f",
+  "repo": "enola-labs/enola",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a1c119c9406ab7f5b55d935bc3559d3160ec0b17d8fa909b0a010bbb7ba72e53",
+  "snapshot_id": "832a935ff1466519",
+  "sources": [
+    {
+      "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+      "git_sha": "34feb179b5441923aa3ef34391a8814c6dfc0cd3",
+      "lines": 496,
+      "path": "README.md",
+      "repository": "enola-labs/enola",
+      "sha256": "09170ab28cdf8956cc5314ebfee9dd54f65957c668ff246c70cf3b3b9fd920d1",
+      "source_id": "src_1eced62061dc507897d6df530257edfe",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/README.md"
+    },
+    {
+      "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+      "git_sha": "31b68d87db0ef883be58d0ce8ca1783eeec8fe07",
+      "lines": 926,
+      "path": "docs/BENCHMARKS.md",
+      "repository": "enola-labs/enola",
+      "sha256": "2d45e355363c78b69569498d2e98b2c132a90c2df08995ada04db109e64d38f0",
+      "source_id": "src_321be74506ae5e46b37c7a4d3963bcd5",
+      "stored": "benchmarks.md-441b051d19c0.md",
+      "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/docs/BENCHMARKS.md"
+    },
+    {
+      "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+      "git_sha": "123037054056e208b13fe4aab4cf42288b223dc3",
+      "lines": 329,
+      "path": "docs/BLIND-SPOTS.md",
+      "repository": "enola-labs/enola",
+      "sha256": "cd1d6522bc7ef1b8f7c6cf8c6a65fa192f05e8fcf7a7a24926df4a2edb9c29da",
+      "source_id": "src_26f1477bf36354eb9cb9c62cf645c698",
+      "stored": "blind-spots.md-e259cf141947.md",
+      "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/docs/BLIND-SPOTS.md"
+    },
+    {
+      "commit": "f34e1998d5c41eeeb14e95f6c3584b8fee0746c6",
+      "git_sha": "f769be62d4da939a459b40a00dda1ef3b34898c6",
+      "lines": 185,
+      "path": "docs/CLUSTERS.md",
+      "repository": "enola-labs/enola",
+      "sha256": "b36f20207e0a60ccf0b0ea15d78a98888b68cfd3676d107a90fb7d1660536272",
+      "source_id": "src_22b1395ae7755b03aa521c789cfb14d3",
+      "stored": "clusters.md-9ab6ed13dfac.md",
+      "url": "https://github.com/enola-labs/enola/blob/f34e1998d5c41eeeb14e95f6c3584b8fee0746c6/docs/CLUSTERS.md"
+    }
+  ],
+  "summary": "Enola is a local, deterministic architectural regression-testing CLI/MCP tool that parses source into a code graph, pins baselines, and grades structural deltas of a change with configurable failure policies. Evidence is README-only documentation of the product's commands, explainers, agent integration, and documented limitations. Evidence coverage: 133 of 367 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

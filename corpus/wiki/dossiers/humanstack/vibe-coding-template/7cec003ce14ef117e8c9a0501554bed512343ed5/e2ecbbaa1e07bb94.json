@@ -1,0 +1,539 @@
+{
+  "applied_operation_id": "op_49741b2f13544dff8591645a5c8164b9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_55039d88b7f6199ff53bd05094fc6da687beed15f61b036c7a0cfc91111a2a96",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 49,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L35-L49"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7b0b3a84889122ac5d729082f91cbf2ac0259e7be90a6b98a14e7f039676da02",
+        "slc_fc1c159a637c5ee956d28c56d6bbd5fb9f9b1a64e5d1e29f531469d68d68b35e"
+      ],
+      "text": "The template ships a Python FastAPI backend with Supabase integration for auth, database, realtime, storage, and migrations, plus LLM and vector-database services."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_287aee8924c465f7f7b7f7bef87e62f69e59866dfebe153659e629292ecbfa43",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 56,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L52-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07fb9564e2b7741956b45047e9fda3b5a467fdb6cab81d0954383d1d6a643319"
+      ],
+      "text": "The frontend is a Next.js application using Tailwind CSS with a Supabase client and complete auth flows including login, signup, and password reset."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25ae4abfc6c9793739a041f533e38bbe5dbea58ddd02c9a078d24bfaf67e6bbe",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 49,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L35-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7b0b3a84889122ac5d729082f91cbf2ac0259e7be90a6b98a14e7f039676da02"
+      ],
+      "text": "The backend includes an abstracted LLM service supporting OpenAI and Claude, a vector embeddings service, and Qdrant integration with document storage and semantic search."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_26899ffffbf601995b0801b92d4d3240569253ceb5d717a2c01bf2f188ace99e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 49,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L35-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7b0b3a84889122ac5d729082f91cbf2ac0259e7be90a6b98a14e7f039676da02"
+      ],
+      "text": "The vector database layer falls back automatically to a local in-memory database when Qdrant is unavailable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a2202f3089e9aa0c7d5bd0c536377bdb4631a1a215bd56952a5dd52d13a8cc1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 92,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L89-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ebee59ef2993d9e265071d9d67253bfee6d93014b40c53ec1a52b738db507df"
+      ],
+      "text": "Running the dev environment exposes the frontend at localhost:3000, the backend API at localhost:8000, and API docs at localhost:8000/docs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea0dbbe6943764224bbd0c0a94e65958c9e38ac07ac843724a62cbae00bf8f7b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 175,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L173-L175"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L179-L179"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 169,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L167-L169"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 187,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L183-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c7e8153c7780bc29d0fa06ad8d0944cd8b7c1a54c3ee6a6cbc4bcfd03dd9ebf",
+        "slc_7b01c56e78a3653c41e055bd1bc99ba8a6bf4b2f226e7ce5dfb22d0f57a3567d",
+        "slc_b12a1a3bf1726191c719852520bb8958cff507007ac05e5b08bf940b59c329e2",
+        "slc_eefc76e835ddb9f4f3018da934ce32e9731534743462cdbdedcd72e1987b11cd"
+      ],
+      "text": "A Makefile provides commands such as make dev, prod variants, clean, and database migration commands like db-migration-new, db-apply, db-list, db-status, and db-push."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4947b76bfe1e4c6475b49cd09b21b62f6e86f1e6415a272e6eb1f47de2c79b14",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 65,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L61-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fe47f9c67f5de6ca6da930796be47bbadf0e9688c08b8e1e21f7f34fa58d11e7"
+      ],
+      "text": "Prerequisites include Docker and Docker Compose, Make, Node.js 18+, Python 3.10+, and the Supabase CLI for migrations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_882e0ef5c44847fbbfcf2ee55d63250d4cfa5668906cdf26953d0e697807fcb1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "c98c189d3f2bfba39a4411eb1dc69e2bb4f08a19",
+          "line_end": 117,
+          "line_start": 114,
+          "path": "AGENTS.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/AGENTS.md#L114-L117"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 111,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L108-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bec44c0d76682b0622324cf6e8da8cca3fdf47adb76edeb11f3ce9801cbc2fb4",
+        "slc_c21aec1f9414bbf21b4fcdffc61b8650be8b44d93693c823333644c4491d908c"
+      ],
+      "text": "Environment configuration requires Supabase URL and service key, OpenAI and/or Anthropic API keys for LLM features, and optionally Qdrant credentials."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_74bb134fed878fee0dd04037ea8429f83cef4375f994ee23791b3c30129981c1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "c98c189d3f2bfba39a4411eb1dc69e2bb4f08a19",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "AGENTS.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/AGENTS.md#L16-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e5c6fbf5187df61005de43dd77f758c1b42fa2ff49bfb057e3df0dae7ed2ebb9"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributors to use TypeScript for frontend files, Python type hints and async/await in the backend, and snake_case/camelCase naming conventions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_039e5eba9047527a91a5127d99b36bc73b24ed56f04c2514735793253c6b9feb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "c98c189d3f2bfba39a4411eb1dc69e2bb4f08a19",
+          "line_end": 27,
+          "line_start": 23,
+          "path": "AGENTS.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/AGENTS.md#L23-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae121b27f969a1eef760baf1e12f2bd863b345acef3d92550203369bdf0ac50a"
+      ],
+      "text": "Repository development practice: contributors are told to follow the service layer pattern, use Pydantic models for validation, and use the generic SupabaseDatabaseService for database operations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6e674f5040deb64a79525f1a7570968541277baa9ab46141462f23aebf9951c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 17,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L14-L17"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 198,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L196-L198"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e4f9382654006594411d8183eff2dfe000dcd25719f53704de12ef58c9698ca",
+        "slc_63d21908121b7dbdc1ed742f0e04be5e9ad734cc87568934168d6410a6208323"
+      ],
+      "text": "Repository development practice: the repo includes Cursor rules under .cursor/rules/ that apply automatically based on edited files, with templates like @api-endpoint-template and @react-component-template."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e214456fd9a250d4bc11bc5352c910f5687496e0ecce1393e8b65f4a81418228",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 116,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L113-L116"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 106,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L103-L106"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 82,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L75-L82"
+        },
+        {
+          "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+          "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+          "line_end": 101,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "humanstack/vibe-coding-template",
+          "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md#L98-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16ca28e2c8740512f618cd50ca1caa4f912bb66989be21b74e3f3223440f6596",
+        "slc_63e4c4ef823158c2121f7b20958068a8d6cd674ea0cf044810cdf33cb2a26363",
+        "slc_661fd0e6aadee08de5245f86d92c04fcbc1159ff6023b991b54c9869a40a9a23",
+        "slc_dee72430df36e5dc33e9e67dbdf0fcc8a46159dd5a126aae9c6ce531ed8d37d1"
+      ],
+      "text": "Repository development practice: setup is via ./first-time.sh (tool checks, API key prompts, .env generation) or manually by copying .env.example files, then make dev."
+    }
+  ],
+  "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 223,
+        "path": "README.md",
+        "size": 7769
+      },
+      {
+        "lines": 234,
+        "path": "AuthSetup.md",
+        "size": 6751
+      },
+      {
+        "lines": 82,
+        "path": "FutureImprovements.md",
+        "size": 2257
+      },
+      {
+        "lines": 129,
+        "path": "AGENTS.md",
+        "size": 4302
+      },
+      {
+        "lines": 87,
+        "path": "CHANGELOG.md",
+        "size": 3957
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 70,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_40b88b8fcb5e55808055624db716eae5",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/humanstack/vibe-coding-template/7cec003ce14ef117e8c9a0501554bed512343ed5/e2ecbbaa1e07bb94/manifest.json",
+  "package_id": "pkg_acbb3cf2a585bc73c87dcbbc8174bb204ee90382ed1154359478900f88ec2018",
+  "repo": "humanstack/vibe-coding-template",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "bcf2bd87a13ca6d17dc3b820b03bcc7198cdb314384d58f11e5d2cda7de9d4a7",
+  "snapshot_id": "e2ecbbaa1e07bb94",
+  "sources": [
+    {
+      "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+      "git_sha": "c98c189d3f2bfba39a4411eb1dc69e2bb4f08a19",
+      "lines": 129,
+      "path": "AGENTS.md",
+      "repository": "humanstack/vibe-coding-template",
+      "sha256": "118ebef63b556a80da041513fded1f997102c80ea50ca6e498649ce330b0fb10",
+      "source_id": "src_522601b9619d56a89d11326b9530e9c2",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/AGENTS.md"
+    },
+    {
+      "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+      "git_sha": "8843be49e8f326902813b42d7330f18ae3a289a2",
+      "lines": 234,
+      "path": "AuthSetup.md",
+      "repository": "humanstack/vibe-coding-template",
+      "sha256": "5b554f7629e75481d42cad14633081606c6f5cd76369593d984df43cafd0c36f",
+      "source_id": "src_8c577f0284d45829a1ae77962afe0605",
+      "stored": "authsetup.md-577fbd2bded2.md",
+      "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/AuthSetup.md"
+    },
+    {
+      "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+      "git_sha": "fab02eaf536fed81f7166bf5c8cd967580f31587",
+      "lines": 87,
+      "path": "CHANGELOG.md",
+      "repository": "humanstack/vibe-coding-template",
+      "sha256": "29ef59f477fbac5bd450f771e9209610b48c6bc6a35f624c80ab967e94a0bc99",
+      "source_id": "src_bd5182e0be4b5aab99a44340d27ab82d",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/CHANGELOG.md"
+    },
+    {
+      "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+      "git_sha": "b4c0b03b17ba13538e2967fe6c29e3119f08097b",
+      "lines": 82,
+      "path": "FutureImprovements.md",
+      "repository": "humanstack/vibe-coding-template",
+      "sha256": "d701f7ffb949d2299cd765fec4de410149fa96b7702740971f71c2e2772449fd",
+      "source_id": "src_3b258b344c705a4ba6a9ed8fcbbfae1a",
+      "stored": "futureimprovements.md-43c064d541bf.md",
+      "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/FutureImprovements.md"
+    },
+    {
+      "commit": "7cec003ce14ef117e8c9a0501554bed512343ed5",
+      "git_sha": "d0a91d8a9122b439b2edf695cc666b3ac54a786c",
+      "lines": 223,
+      "path": "README.md",
+      "repository": "humanstack/vibe-coding-template",
+      "sha256": "acca6b1a0cd3075dde8635725ec60350960b32c44b87506bb8fd9d34984460d3",
+      "source_id": "src_5bfb50cfdf6c5f2e8fe0ec5af803394c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/humanstack/vibe-coding-template/blob/7cec003ce14ef117e8c9a0501554bed512343ed5/README.md"
+    }
+  ],
+  "summary": "The repository is a full-stack starter template pairing a Next.js frontend with a Python FastAPI backend, Supabase auth/database/storage, LLM services (OpenAI/Anthropic), and Qdrant vector search, plus Cursor rules and AGENTS.md guidance for AI-assisted development. Evidence is documentation-only; no source code slices are present.",
+  "superseded_claim_ids": []
+}

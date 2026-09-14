@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_145836d0beb30ca5569c3981c915713a2a8ca1fb00a7baf035bc00654046f8b2
+- clm_213984ff31c39f425659fcedf28a2d87a39721b2a5c175a981d972d28dc8ae7f
+- clm_24dcbcbee0c12da42c957262f707352c027c7396f5b97dbcf240ae48b137acf6
+- clm_34ae20392277f257008de74af2b8f58f37eee3067997cb9be87d382573626574
+- clm_45e5d22019fdd444a92e0dcb68aa9ea0fd2a14026c039ecd8364160c0fd97fc2
+- clm_510c3efe689bfbecbc6cd41ec8fe39e9ed787ec21b8edb9b5f880657259966cc
+- clm_6fbb0121b7a8f435cf25d02d7b43de1b6b6e060cc973ba6f9bec9ddc7db98863
+- clm_92d93707395d57482d26ea74abe6e78e22599b50543652e6292255078a21521e
+- clm_f043110ee059a9ebdfcf68b8ee6300de8d7f94706f72ed48205b039949353c3b
+maturity: draft
+page_id: pg_fee5e22d488c54b2bcdda2abe35f7b46
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: commandcodeai/command-code
+updated_at: '2026-09-14T01:44:05Z'
+---
+
+# commandcodeai/command-code
+
+<!-- rcw:begin owner=entity:ent_39c7c28f888b5c4caff3f609c316be48 block=evidence -->
+- commandcodeai/command-code is mentioned in this evidence. [@claim:clm_145836d0beb30ca5569c3981c915713a2a8ca1fb00a7baf035bc00654046f8b2] [@claim:clm_213984ff31c39f425659fcedf28a2d87a39721b2a5c175a981d972d28dc8ae7f] [@claim:clm_24dcbcbee0c12da42c957262f707352c027c7396f5b97dbcf240ae48b137acf6] [@claim:clm_34ae20392277f257008de74af2b8f58f37eee3067997cb9be87d382573626574] [@claim:clm_45e5d22019fdd444a92e0dcb68aa9ea0fd2a14026c039ecd8364160c0fd97fc2] [@claim:clm_510c3efe689bfbecbc6cd41ec8fe39e9ed787ec21b8edb9b5f880657259966cc] [@claim:clm_6fbb0121b7a8f435cf25d02d7b43de1b6b6e060cc973ba6f9bec9ddc7db98863] [@claim:clm_92d93707395d57482d26ea74abe6e78e22599b50543652e6292255078a21521e] [@claim:clm_f043110ee059a9ebdfcf68b8ee6300de8d7f94706f72ed48205b039949353c3b]
+<!-- rcw:end owner=entity:ent_39c7c28f888b5c4caff3f609c316be48 block=evidence -->
+
+## Researcher notes
+

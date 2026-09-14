@@ -1,0 +1,35 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1efe4dedd499521a2fe52f75d95d77a9f926a1019bea6668dfe5d0a3258fcea3
+- clm_5495ba05242f8dcb8c464cc80b4d168b5c27f2897691973c04c86526136793b9
+- clm_565f1f6b30a56a95b108c0d90ba45bfa03bc0058668e6c298ba88e5e6ac64f17
+- clm_668da093690b69c89271a2987827b9fe77ed62998975deb44cff48ee2ee34a99
+- clm_6e150bab3f132cd8b409bce5ecfe7c57b5095e48415595db98c8570f40b6aaad
+- clm_78c3e75eb41584e7ab49659c0d6993be4702580e4bfd6708fd319fe5324c6209
+- clm_7e3a496d41c6b15da5f9cd4761429c801e355372a08a62a370be88a3661481e7
+- clm_b3b0e08acf4f2370c5aaff4dd5ec63aabc6ce406d45576f6119550c62b144dce
+- clm_ba80ba319ebf84f768efca30c786fef102536c92f64ed39c68f69b5512540b4a
+- clm_bcb6b6a111ceb495611b5bbc85b345a9000da0d27ac36f5ea81d02ca5390db1c
+- clm_c18926456ba7136304a277cbaa30f8db247666acc9013e6d313f45920eade665
+- clm_c442d7274061534187febb62c8bcc2de7ab3f4016a616cb8b9b02a4722b231a8
+- clm_f1068bb5760d38090d2cc4ca98c542567d7ca3b390d60c1be08c6b8d2aff71b7
+maturity: draft
+page_id: pg_15cc330d6e7857219d9b691fe13283cc
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: openchamber/openchamber
+updated_at: '2026-09-14T03:11:17Z'
+---
+
+# openchamber/openchamber
+
+<!-- rcw:begin owner=entity:ent_0ffbac376ab55942beed91c2b7e1b5de block=evidence -->
+- openchamber/openchamber is mentioned in this evidence. [@claim:clm_1efe4dedd499521a2fe52f75d95d77a9f926a1019bea6668dfe5d0a3258fcea3] [@claim:clm_5495ba05242f8dcb8c464cc80b4d168b5c27f2897691973c04c86526136793b9] [@claim:clm_565f1f6b30a56a95b108c0d90ba45bfa03bc0058668e6c298ba88e5e6ac64f17] [@claim:clm_668da093690b69c89271a2987827b9fe77ed62998975deb44cff48ee2ee34a99] [@claim:clm_6e150bab3f132cd8b409bce5ecfe7c57b5095e48415595db98c8570f40b6aaad] [@claim:clm_78c3e75eb41584e7ab49659c0d6993be4702580e4bfd6708fd319fe5324c6209] [@claim:clm_7e3a496d41c6b15da5f9cd4761429c801e355372a08a62a370be88a3661481e7] [@claim:clm_b3b0e08acf4f2370c5aaff4dd5ec63aabc6ce406d45576f6119550c62b144dce] [@claim:clm_ba80ba319ebf84f768efca30c786fef102536c92f64ed39c68f69b5512540b4a] [@claim:clm_bcb6b6a111ceb495611b5bbc85b345a9000da0d27ac36f5ea81d02ca5390db1c] [@claim:clm_c18926456ba7136304a277cbaa30f8db247666acc9013e6d313f45920eade665] [@claim:clm_c442d7274061534187febb62c8bcc2de7ab3f4016a616cb8b9b02a4722b231a8] [@claim:clm_f1068bb5760d38090d2cc4ca98c542567d7ca3b390d60c1be08c6b8d2aff71b7]
+<!-- rcw:end owner=entity:ent_0ffbac376ab55942beed91c2b7e1b5de block=evidence -->
+
+## Researcher notes
+

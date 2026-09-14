@@ -1,0 +1,526 @@
+{
+  "applied_operation_id": "op_8be18b33b8654d1aac5cfc1bee291acb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f770a7da148a22dc7c290bd622544031dc09e63d261359e243ba1b971b87fe73",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 163,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L161-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bc7d3c0cd2dc975d749e5d4d2c046754ea0845f74c9259b9f6f338a9c7b1fa90"
+      ],
+      "text": "The product exposes a `paperbanana` command whose default form launches a GUI frontend on port 8501, equivalent to `paperbanana gui`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1237b87b10953e38c7cb8aab718dcc62c645bbd626c91b2ae6bf8ea340c4a33f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 195,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L188-L195"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 184,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L182-L184"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20f098e57c65a581c7730bf0ae7cf5a2ec5b61ee37cd747e7d27218f86112df7",
+        "slc_26845c4e067f189963bd4e05e3e528a7f136f647c14f4eb37d3b2d78e3114d7d"
+      ],
+      "text": "A CLI batch mode exists via `paperbanana run` with parameters including `--task_name` (diagram/plot), `--exp_mode`, `--provider`, `--max_critic_rounds`, `--retrieval_setting`, and `--resume`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f835d5bb76b505be2e094af333cd641ffe2b0b689e8862a47e15a80d8d82a959",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 204,
+          "line_start": 201,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L201-L204"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ef2f532252fb4a2cacbf62ad1e83d7d6b2070a1990a4fe0be4e162c05348b15"
+      ],
+      "text": "A viewer subcommand offers `paperbanana viewer evolution` for pipeline evolution and `paperbanana viewer eval` for evaluation-with-reference review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a466f19b3198a1faef61d08b80bd5b16594978d7455e4387f93f708b6d2af9dc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 219,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L212-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dbaf78ef6cbb65aadd004b2015c1749d53867111349df363737e52e1d3bfd4db"
+      ],
+      "text": "The documented pipeline comprises six stages: Retriever (few-shot retrieval), Planner (structured visual descriptions), Stylist, Visualizer (image or Matplotlib code), Critic (multi-round review), and optional Polish."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a201638417ed92d8adc18ed4a376bafe0763cbeebf626a1a947b0ab287344fb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 40,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L29-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ba665a3e2cb576870e84fa62a0b0e8e3a6e73c43b82ceeb509aaf0e56492b50"
+      ],
+      "text": "The README describes a registry-driven pipeline (Pipeline Registry) intended to replace hardcoded branching so new flows can be added via configuration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1561d16e3c18bdfa2a4e070c416a37d8e71cd3c1c116ca66ad29d27714773882",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 40,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L29-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ba665a3e2cb576870e84fa62a0b0e8e3a6e73c43b82ceeb509aaf0e56492b50"
+      ],
+      "text": "Generation runs as background async jobs with a real-time event timeline, supporting 40+ concurrent candidates, and results are packaged in a `Bundle v1` `.bundle.json` format preserving timelines and review records."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5588a8342f3ace10314a02d4cebd747ff1937202b4528caa37e4fd5e7f8876df",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L78-L78"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 40,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L29-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6363b40955ddcf90a65903b09e763d1bc51d4a6cb8d5051aec1c535f9a507fdb",
+        "slc_9ba665a3e2cb576870e84fa62a0b0e8e3a6e73c43b82ceeb509aaf0e56492b50"
+      ],
+      "text": "A refinement workspace supports 2K/4K upscaling with concurrent multi-version redraws, tree-shaped version chains, and rollback to any historical version."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0bc7f42fde1e400631e8ccbd4af452b56b3082bc6269ef5a45363d645f48a89",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 21,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L12-L21"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "7fe2c98f14f8479d4f7f0c63cce81733a3b4d744",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "requirements.txt",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/requirements.txt#L3-L3"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 124,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L118-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03cf6ad3179278059ffa702cd9d12d5fe78117c1cd4cf5ee38da3f5275f97ddd",
+        "slc_4a2ebb9339242e53cea6108f1be312386f12cfb17b3b805626df240a86f6404e",
+        "slc_dac8fd494cc2dccc35dc94917f06456ded3b59d19246a9b6cc9b7c1ea02aa63b"
+      ],
+      "text": "The project targets Python 3.12 or later, installs via `uv sync --locked` plus `uv tool install --editable .`, and requirements.txt contains an editable self-dependency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3f3f6931e228ef502bad0b250cdb3cbdc3f47c8b06d880259acdfc7db7d5b8e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L148-L148"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 40,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L29-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b7600a246b60dcc5ee12d1d7964dd693dc0303ea60f17cb6bdc34da78574b03",
+        "slc_9ba665a3e2cb576870e84fa62a0b0e8e3a6e73c43b82ceeb509aaf0e56492b50"
+      ],
+      "text": "Four providers are officially supported: Gemini, OpenAI, Openrouter, and Evolink; any OpenAI-compatible API can also be added by supplying a Base URL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac03c62e4edd93b3f87de8f7adbb13defc4dbcadc0059ee6f5fd6bbc7d9ba421",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 263,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L263-L263"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc73d2469803f0f2abfbb552d82978622d8d785c80ca72d3dc8f924025f8aa0c"
+      ],
+      "text": "The README states Google has patented the original PaperBanana multi-agent pipeline methodology, so the pipeline logic must not be used commercially, a restriction that also applies to PaperBanana-Pro."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5d4dcb7b586f28bac7bfe1d42d60acdf54d61e75267bedc718a63e234ba6942",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L135-L135"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md#L133-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4861cfd084056a1f344ac5c088e944d0203ae403a9d85b1a855173cde65b6c47",
+        "slc_7649ed7997c7477e786ca716479f90302409441a72e9ad87592e5116f9476f97"
+      ],
+      "text": "The optional PaperBananaBench dataset (dwzhu/PaperBananaBench on Hugging Face) supplies few-shot reference examples and an evaluation benchmark; retrieval can be set to `none` to skip it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5eb7e59133e88a78f602a2472254c1f35fcea3f6e3ac1f60dfef5b2bc4152a89",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "9a86ba025d83dfc39db62d84ee7cac0a9da1ac08",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "CONTRIBUTING.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/CONTRIBUTING.md#L20-L23"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "9a86ba025d83dfc39db62d84ee7cac0a9da1ac08",
+          "line_end": 12,
+          "line_start": 8,
+          "path": "CONTRIBUTING.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/CONTRIBUTING.md#L8-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13080bcddc417dbd080bc752556cfdb245e5ea7294f0c4bca702b7fa82d0e600",
+        "slc_15eef6f774a2223ff242b2c96753598166add78ca8e5b32f4cbf71cdfabed907"
+      ],
+      "text": "Repository development practice: contributions require a Contributor License Agreement, and all submissions—including those from project members—must go through GitHub pull-request review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3f187c26298c37cd29811b8009d101f660b3bfdfc58683e88e02b7084d909dc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "6070ae1cd721d0ecd2dd92b993db72dc4a7f59d0",
+          "line_end": 95,
+          "line_start": 93,
+          "path": "code-of-conduct.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/code-of-conduct.md#L93-L95"
+        },
+        {
+          "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+          "git_sha": "9a86ba025d83dfc39db62d84ee7cac0a9da1ac08",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "CONTRIBUTING.md",
+          "repository": "elpsykongloo/paperbanana-pro",
+          "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/CONTRIBUTING.md#L27-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6319139e5f51d0ddefd911930b848d171d52ce4ba3a79bc52a29664104bb1a2a",
+        "slc_a89dd01f1a363c16ff8068c71e6a86eb7c9176e5ee6884006f959d9f62b1617a"
+      ],
+      "text": "Repository development practice: the project adopts a Contributor Covenant v1.4-based code of conduct and follows Google's Open Source Community Guidelines."
+    }
+  ],
+  "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 263,
+        "path": "README.md",
+        "size": 10118
+      },
+      {
+        "lines": 95,
+        "path": "code-of-conduct.md",
+        "size": 4599
+      },
+      {
+        "lines": 3,
+        "path": "requirements.txt",
+        "size": 133
+      },
+      {
+        "lines": 28,
+        "path": "CONTRIBUTING.md",
+        "size": 1097
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 148,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_ef0dcc9df43b56709f2ce975536fe801",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/elpsykongloo/paperbanana-pro/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/b699785fdaa1e74d/manifest.json",
+  "package_id": "pkg_38723456db5a65e597b511ea6c7042abd15587b2e29750559b5947c1f0413771",
+  "repo": "elpsykongloo/paperbanana-pro",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d7b3db044a7718aa2aeee806b1e7c50714a410dde00e8c91aa9d4371dbbf87f5",
+  "snapshot_id": "b699785fdaa1e74d",
+  "sources": [
+    {
+      "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+      "git_sha": "9a86ba025d83dfc39db62d84ee7cac0a9da1ac08",
+      "lines": 28,
+      "path": "CONTRIBUTING.md",
+      "repository": "elpsykongloo/paperbanana-pro",
+      "sha256": "9eae2d3ef13b017df0e8401b053625fd7c0a1caadf6d6f32e462511eb5b7eb21",
+      "source_id": "src_354551622fe655f693959acf1483ac3d",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/CONTRIBUTING.md"
+    },
+    {
+      "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+      "git_sha": "bef926f5296f1ca96bc234f2e1c2c622cd20066e",
+      "lines": 263,
+      "path": "README.md",
+      "repository": "elpsykongloo/paperbanana-pro",
+      "sha256": "581892dc5265dbf763a68d9ccc6d792966b7fee085f69ba0c8502f34a56b896e",
+      "source_id": "src_2d809baffcdf5c63acdcf2b26e2d84b4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/README.md"
+    },
+    {
+      "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+      "git_sha": "6070ae1cd721d0ecd2dd92b993db72dc4a7f59d0",
+      "lines": 95,
+      "path": "code-of-conduct.md",
+      "repository": "elpsykongloo/paperbanana-pro",
+      "sha256": "9fd3c55a53aa393d0416ceb4051a967429e7ef11a4c710b58b447d5f550e54cd",
+      "source_id": "src_95d880446aec5942bed246d710084c8b",
+      "stored": "code-of-conduct.md-f1a69a41a835.md",
+      "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/code-of-conduct.md"
+    },
+    {
+      "commit": "3d9d1f11647ee956ec2b1e4c690f06f8942d4af4",
+      "git_sha": "7fe2c98f14f8479d4f7f0c63cce81733a3b4d744",
+      "lines": 3,
+      "path": "requirements.txt",
+      "repository": "elpsykongloo/paperbanana-pro",
+      "sha256": "9c58e283fabcddf4edbcb0a0fa55581a3fe0f0e0b65e019770d9931ede4a308d",
+      "source_id": "src_4d1662b6173a59ee98247d8b8c8b1d44",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/elpsykongloo/PaperBanana-Pro/blob/3d9d1f11647ee956ec2b1e4c690f06f8942d4af4/requirements.txt"
+    }
+  ],
+  "summary": "Evidence consists of README, CONTRIBUTING, code-of-conduct, and a requirements file for PaperBanana-Pro, a Chinese-language academic-figure generation tool with GUI/CLI/Viewer entry points and a multi-agent pipeline. No source code slices are present, so all claims are documentation-based.",
+  "superseded_claim_ids": []
+}

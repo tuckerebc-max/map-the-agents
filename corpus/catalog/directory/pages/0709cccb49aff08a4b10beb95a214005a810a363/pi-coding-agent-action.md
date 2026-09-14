@@ -1,0 +1,36 @@
+---
+name: "pi-coding-agent-action"
+slug: "pi-coding-agent-action"
+layout: "agent.njk"
+category: "other"
+maker: "shaftoe"
+license: "MIT"
+url: "https://github.com/shaftoe/pi-coding-agent-action"
+source_code_url: "https://github.com/shaftoe/pi-coding-agent-action"
+source_available: "True"
+platforms: []
+first_released: "2026-03-21"
+current_release: "2026-08-08"
+stars: "62"
+language: "TypeScript"
+homepage: "https://github.com/shaftoe/pi-coding-agent-action"
+mcp_support: "no"
+plugin_support: "True"
+claude_code_plugin: "False"
+subagents: "True"
+hooks: "no"
+plan_mode: "no"
+model_providers: "openai, google, anthropic, amazon-bedrock, google-vertex, custom (OpenAI-compatible)"
+pricing: "Free / open source (MIT)"
+install_method: "GitHub Action: uses: shaftoe/pi-coding-agent-action@v2 in workflow YAML; requires Node.js 22+"
+docs_url: "https://pi.dev/docs/latest"
+plugin_docs_url: "https://pi.dev/docs/latest/extensions"
+config_docs_url: "https://pi.dev/docs/latest/custom-provider"
+download_url: "https://github.com/marketplace/actions/pi-github-action"
+maintained: "active"
+sources:
+  - "github_topic2"
+what_makes_it_special: "CI/CD GitHub Action integrating the Pi coding agent with git hosting platform workflows (GitHub, Codeberg, Forgejo); enables interactive (/pi in comments) and non-interactive agent runs for issue assistance, PR reviews, automated code reviews; extensible via npm packages, git repos, and local .ts files"
+---
+
+pi-coding-agent-action puts the pi coding agent inside continuous-integration workflows so repositories get an agent that responds to /pi-prefixed comments on issues and pull requests, reviews PRs, and executes scheduled maintenance such as dependency audits or documentation syncs. The action wraps the pi SDK with built-in tools for GitHub APIs — commenting, reviewing, opening PRs — and loads the same skills, extensions, and AGENTS.md files a local pi session would, so behavior matches between terminal and CI. It also targets Codeberg and self-hosted Forgejo or Gitea instances, covering the GitHub-API-compatible forge ecosystem rather than GitHub alone. Sessions can be exported as HTML or JSONL artifacts or shared as gist links for postmortems. Released under MIT with semantic-release automation, it serves maintainers who want agent-powered automation on infrastructure they control.

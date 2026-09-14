@@ -1,0 +1,701 @@
+{
+  "applied_operation_id": "op_5cdb538348354c13ae60e49d50595313",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1fd868764ed5482baf33cc8e1d18703c4d6c95fd3b5a8f62897b7f8a9471760",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L38-L41"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_095a6c79d5d87056f7ba1ec2a7487ecc093d7ff46b4b29fcdd08638811773567",
+        "slc_7cd52b85bac3185fe12c97c3abe881e86fa9f6aeb21edceea151c34eb3d40d88"
+      ],
+      "text": "HCF separates planning (human-in-the-loop, where human and AI collaborate on requirements) from execution (fully autonomous parallel TDD implementation)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f51c45a1a4ce58c4ab963021a224c1c4427c9047e7b438c397d1c1353f14f676",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 351,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L318-L351"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22a1c36c091f6db85cd80cc1840af8464d2807881c4b76f7e870da16382629f9"
+      ],
+      "text": "The plugin ships three agents (devils-advocate, tdd-worker, standards-enforcer), four skills (project-setup, project-update, plan-create, plan-orchestrate), and hook scripts including discover-hooks.sh and gate scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9853db6953e2fc767c1c9772724e6686d1136010d2c46d6e3c2ee9530564080",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 307,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L302-L307"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 427,
+          "line_start": 427,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L427-L427"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 300,
+          "line_start": 300,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L300-L300"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d4bfcfdddc55f2e8b26fd7337422d7a30b84f08a288c4290f38831922107816",
+        "slc_78b85d1e9b109b3addec228b71a837cece23efed9c3e63973684e7908285ab70",
+        "slc_a04c85f1a84a2fc46d2daf85d828bb215ad344ce20746f77b6769ccb17561abf"
+      ],
+      "text": "Skills are invocable as slash commands (/project-setup, /plan-create, /plan-orchestrate) and can also auto-trigger when a user request matches their description; project-setup and project-update are manual-invocation only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f143f5a5703c82c46fd9c8b872a0a079ffd96ad0d3899d151ee75cb4a0562322",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 233,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L230-L233"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 237,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L237-L237"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 245,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L245-L245"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 243,
+          "line_start": 239,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L239-L243"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0cb207ef123caa6243f40299386d1f13b60320c3536512f0fc50a7cdf36bd401",
+        "slc_56525f62874a4867d876601e6a83a2c2933b2c0450c249402dcd6ccadbf9baf4",
+        "slc_b7fa803ab365470feefe9d2a8b3a203ec74994deb8e0b9892ac417d4db658c8e",
+        "slc_d98e73125f096eea36d2cf92bbb8337232f88d52afbca22d1bf9e8548030acd5"
+      ],
+      "text": "plan-orchestrate builds batches from the task dependency graph and runs independent tasks in parallel workers, so many tasks complete in a handful of batches rather than sequentially."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_96f842bf8e895a2de6454b7538dfd6e88a8c2c30cc55336fb7ecab92d332f69a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 100,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L100-L100"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 314,
+          "line_start": 311,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L311-L314"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29693f12511aa9e6c3b2a9ff69af40e4dc330fcf3b44db1cd16d858c27e97a9e",
+        "slc_3c416851f7816b63313a0aa0b7313538185c49b170909b12594552d8bbd68406"
+      ],
+      "text": "Run state such as task statuses, requirement checkboxes, and retry counts lives in the plan files, so an interrupted run resumes by re-running the plan; terminal outputs are ALL_TASKS_COMPLETE or TASKS_BLOCKED."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8172659147badc30166238ef254e289de08d98f567d9a76a391721e474daa679",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L121-L121"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 155,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L151-L155"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 142,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L142-L142"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 149,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L144-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f785af46b2c17db3d2588dada8364a4607a2538337227bc7dfd878a27931fd3",
+        "slc_917c96f9cfd1c54b2001fe09d440a70ad009f6b01d1b487c9b290ce12fbc5988",
+        "slc_d3bf7f082484e716ebcf95517a6bc5b4b07c0641f54ae7d01a82e4d434676e5d",
+        "slc_fd1704efd799a99628d97e3226db864ca99b3e993727fc261543da1566aee1b5"
+      ],
+      "text": "The pipeline uses convention over configuration: there is no central registry, and each agent enrolls itself by declaring a phase, order, and mode in its own YAML frontmatter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_433cada7fa89f58dbd215a6c3e8c801ec05d337a9ea357d572c94827dd697e36",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 161,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L161-L161"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L138-L138"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 174,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L163-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09ba908d8540c6778cb507c5b8f3a2a9cb7996cda602f5292e2d82a625dcb1f4",
+        "slc_34371244a8f7849fd02c9b93678df15c163841c59d1fcc12f3ef35bf7cabe5ef",
+        "slc_4ad71c82a9f844a2bab4af8c86f35aaba1e6ca380ea97b5ef01be1edf1d4cf26"
+      ],
+      "text": "Only devils-advocate is enrolled by default (at post-plan); standards-enforcer ships with its enrollment commented out and can be enabled by uncommenting its phase key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c36484d66c9001ef9c48d7ed1505cc9193e6632f1e0a53a49028da3fcf77a6a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "cb57263fcf6d256f8ddc4f540e75f4859dec84cd",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "CHANGELOG.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/CHANGELOG.md#L27-L27"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 385,
+          "line_start": 381,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L381-L385"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f1765b2af99215bf8405a7585068e7cc7157e07f4161f22b2831114bb5cc73d",
+        "slc_b24b3e6b9ccfe44eab9ff50048cc26f30bf57f23e522fe679e7b9f6fbf542800"
+      ],
+      "text": "A malformed plansDir value (absolute path, .. segment, or empty string) stops the run rather than falling back to the default plans directory, and the resolver avoids a jq dependency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_716a96a96797970e9ee08444fe74a273caaefed612d85446a447e038a9ef7ebe",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 379,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L377-L379"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 371,
+          "line_start": 367,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L367-L371"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 365,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L364-L365"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 375,
+          "line_start": 373,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L373-L375"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b0a80ff2ad3fde78c085c2d93bd6ddfababc5bb9e3518048d6a4de6bfc9820de",
+        "slc_d6eff9839241cffc77767f2f50178af4a339a506b4bcd983a31101b25c6ff444",
+        "slc_e30e8fc783b7c5889d52a6d7e78a4e44fa833cb867b237ea4236b3a766047ef0",
+        "slc_f44cb8bb02e9aa57609ca3ef802897db6be8a774144323034dba785864e33eb8"
+      ],
+      "text": "Plans default to .claude/plans/ but a project can set a relative plansDir in an optional .claude/hcf.json; no skill creates or modifies that file, and project-update only validates it if present."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_395fd764caa9be497350bddccba2d3f89a06f0dfd932c4008f5ff2eae243dee5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 412,
+          "line_start": 410,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L410-L412"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c1a1a808d3f3d1a4b06830bd8569ec65620903e20e8fe4514ae72be87da29cda"
+      ],
+      "text": "Running HCF requires the Claude Code CLI, a Git repository, and a test framework configured in the project."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8313bf54a7739d54148bc81fcc6939fd4770d682ef263649a5ad94d6bbeec5c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 390,
+          "line_start": 387,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L387-L390"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "cb57263fcf6d256f8ddc4f540e75f4859dec84cd",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "CHANGELOG.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/CHANGELOG.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03ae9e15bb79ecbc15cb61ba39d6258e8491e8bac0e99ad2a588e7212a201121",
+        "slc_0d5fac308d706f73d9bd6080b8905be13cf32832bc57031d64ca30acb6b69c56"
+      ],
+      "text": "HCF does not migrate plan folders when the plans directory changes; the user must move them, and project-update warns if .claude/plans still holds plan folders after a move."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c82bcc38c5d66716392763634a1e48caa3203ca3a2d272fc543266900f08a203",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "cb57263fcf6d256f8ddc4f540e75f4859dec84cd",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "CHANGELOG.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/CHANGELOG.md#L62-L64"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 487,
+          "line_start": 483,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L483-L487"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_028117664e275d792c7d467697da13c6f373be552d7b4e314ea53612376b0a7c",
+        "slc_58638d6b0acfb327704d5ae99705cbf894bb84ae85a3c27b54ef02df5e9a5c82"
+      ],
+      "text": "Repository development practice: contributors fork, create a feature branch, test locally with --plugin-dir, add a CHANGELOG [Unreleased] entry for user-visible changes, and submit a pull request; the repo's own test suite runs via ./tests/run-tests.sh with no dependencies beyond bash/awk/sed/sort/grep."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_562b20ffe41f6baf0180df973be426249164a5f1cf12287b20b26847ef55943e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 463,
+          "line_start": 461,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L461-L463"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 416,
+          "line_start": 416,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L416-L416"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 420,
+          "line_start": 418,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L418-L420"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 425,
+          "line_start": 422,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L422-L425"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1334947cb61c74b397ef2315db9f320dfa2a6bcb3063e238bb6230a3fc7d30bd",
+        "slc_c649c4b8bc40da1d64e57b961666296be6e986cdc8dc077bcd58b0877fc07c9d",
+        "slc_c7686046b19cf6c8c299a29b0d7dfbf048670e455b0868e8ab487b5ea6658b1d",
+        "slc_d59727fcdeec46f209142bad2645282e061737f56fffd073ac8d15aff67af528"
+      ],
+      "text": "Repository development practice: the plugin can be tested locally without publishing using claude --plugin-dir /path/to/hcf, with skills namespaced as /hcf:skill-name and debug output via --debug."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2be8e669245e73cc1a5935749e4217e8a86014a82241f7843fb5fc865f164ad",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "3812a5c30eb498c393732f500ce1a69708b28117",
+          "line_end": 36,
+          "line_start": 31,
+          "path": "HOOKS.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/HOOKS.md#L31-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a511eda5dabf2905d831de22c1ed2c7f3bd03f8170958550dad017bda6ef5b9d"
+      ],
+      "text": "There is deliberately no 'execution' hook; the implementation loop is already covered by the pre/post-implementation and pre/post-batch hooks, so an execution hook would only duplicate them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43e04a65e57fe98db28e142c59b407dfe49e3fa4eb704b861079c96124795628",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "cb57263fcf6d256f8ddc4f540e75f4859dec84cd",
+          "line_end": 59,
+          "line_start": 55,
+          "path": "CHANGELOG.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/CHANGELOG.md#L55-L59"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+          "line_end": 214,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md#L214-L214"
+        },
+        {
+          "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+          "git_sha": "cb57263fcf6d256f8ddc4f540e75f4859dec84cd",
+          "line_end": 68,
+          "line_start": 67,
+          "path": "CHANGELOG.md",
+          "repository": "markshust/hcf",
+          "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/CHANGELOG.md#L67-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_77d5b3fc69405622e4903840d5976b6aafd8d7960bf0470fe026fb0137a75a4a",
+        "slc_79934d8807f8c2532636d88fbf0d79c32fb3a74ba74ae23e374caa13a38d1bad",
+        "slc_e03f09721c39db39fc5a04d2f2c4c58dd9bea23e65eed73dd7dc2211422c9e3e"
+      ],
+      "text": "Discovery failures are treated as hard errors (exit 3 for invalid phase/mode, exit 4 for mid-run enrollment change) rather than empty hooks, reflecting a design preference for failing loudly over silently running a different pipeline."
+    }
+  ],
+  "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 495,
+        "path": "README.md",
+        "size": 17867
+      },
+      {
+        "lines": 261,
+        "path": "HOOKS.md",
+        "size": 14266
+      },
+      {
+        "lines": 136,
+        "path": "CHANGELOG.md",
+        "size": 17769
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 54,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_26400508fb01532f85f63cb19b03c271",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/markshust/hcf/9cfca7de63c309ee6b5b38088cd446af85e9ff46/fd7ae5cfbe800a29/manifest.json",
+  "package_id": "pkg_a854d732fbcde193e43f693b4082c1987276d48aec6fd293b6ccc06db2b3247c",
+  "repo": "markshust/hcf",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d27d20a6145529ced4f2377f4da2e01dd0c1f5dc5c04395ead97202dc74bb1f8",
+  "snapshot_id": "fd7ae5cfbe800a29",
+  "sources": [
+    {
+      "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+      "git_sha": "cb57263fcf6d256f8ddc4f540e75f4859dec84cd",
+      "lines": 136,
+      "path": "CHANGELOG.md",
+      "repository": "markshust/hcf",
+      "sha256": "876382f4891e7a2b2d1a3c2df3cfde29e4f1667f13ed4eb12f80c47d99b408a7",
+      "source_id": "src_13d8ee4f54f95c4bacf29c91d3843b39",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/CHANGELOG.md"
+    },
+    {
+      "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+      "git_sha": "3812a5c30eb498c393732f500ce1a69708b28117",
+      "lines": 261,
+      "path": "HOOKS.md",
+      "repository": "markshust/hcf",
+      "sha256": "3863a6351b950234078a040610a8141178787aeab5160d4ed41e330f71a32e74",
+      "source_id": "src_cc12aac486fc5eaba47ec414b1dce3f0",
+      "stored": "hooks.md-05188e50c5b1.md",
+      "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/HOOKS.md"
+    },
+    {
+      "commit": "9cfca7de63c309ee6b5b38088cd446af85e9ff46",
+      "git_sha": "81fc90d7b2a09d071c73085bcfd8d60101d51049",
+      "lines": 495,
+      "path": "README.md",
+      "repository": "markshust/hcf",
+      "sha256": "db92275b470be87a7b321eacddb8b90114165cf08475f5035cd4a7aaa850ff6b",
+      "source_id": "src_51935a1d6afd5aa8979c5d3815e98a57",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/markshust/hcf/blob/9cfca7de63c309ee6b5b38088cd446af85e9ff46/README.md"
+    }
+  ],
+  "summary": "HCF is a Claude Code plugin that separates interactive planning from autonomous parallel TDD execution, with agents self-enrolling into 8 lifecycle hooks via YAML frontmatter. Evidence covers its skills, agents, hook pipeline, plans-directory configuration, and repository development practices. Evidence coverage: 128 of 162 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

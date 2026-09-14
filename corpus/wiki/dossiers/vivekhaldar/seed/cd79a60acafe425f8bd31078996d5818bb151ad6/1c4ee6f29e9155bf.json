@@ -1,0 +1,436 @@
+{
+  "applied_operation_id": "op_c5c7fa2a7f2748329b6516d55f3b1d58",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c21cb6e16de6c98bffd03a5bacee83ebb995cd1367701fc65ecb8807dbbf5c3",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L5-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c73d537d37cdadb3724e92bc9983b5148c2c7982b30387f913cab6f39e03ed4c"
+      ],
+      "text": "The README describes seed.py as calling a language model with a single exec tool that runs shell commands, loading its system prompt from self/SELF.md, with the agent able to edit self/ to retain tools, notes, and behavior between sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0cd2e8c122e601bf592a9351e866f9f379e5e2c585889bc9ed34600889af803",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 107,
+          "line_start": 101,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L101-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fb306a67e097e6df51102203cd5e22e867ee77a633e271f634ca15425271f637"
+      ],
+      "text": "The design doc states the one irreducible primitive is exec: the seed ships exactly one tool that runs a bash command and returns its output, with every other capability expressed through it rather than compressed further."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ccdf33d506a3508ca4925ede4604280a7f8cae461bb8f01c7a5879cbcb880ab",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 209,
+          "line_start": 198,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L198-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84b3bd16c8aac6c17cb92d151a14a4f0e6de8c00bad3a740cbd84bfb0b3bf70d"
+      ],
+      "text": "The risk register documents ungated exec as a consciously accepted risk: the agent runs arbitrary bash as the invoking user with no sandbox or approval gate, though every command and its output is printed to the terminal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_caa1e9c43fbcf3d467be6d59e5648a07cfc0d73779707ab8f83efa73f16a1425",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 45,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L42-L45"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 132,
+          "line_start": 127,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L127-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_803abcfa1c669721b5ae87c37a9167c8616676476519833c9bc616ea7ccd9012",
+        "slc_9ff5c87d37d66bf1492de2dda29e2d19ad8e717e185fbe5a49fc00169508e1a7"
+      ],
+      "text": "Documentation states each session is fresh and its conversation is discarded on exit, so nothing survives except what the agent wrote into self/; a separate verbatim transcript is recorded per session as a flight recorder that is never loaded at boot."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_20cf0afd1bfc4fbfa799056a44053e60c1ad0c62da330a877eb445ace790d2ed",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 125,
+          "line_start": 116,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L116-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99bda921e5574741d312ccd450aa931ffc3f6625a67a4fdebf1845a26b32b210"
+      ],
+      "text": "The design doc states the seed prompt and the agent's self-description were collapsed into the same mutable file: the loop's only hardcoded context decision is reading self/SELF.md, re-read every turn so self-edits take effect immediately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4ac7621e362e7ff4a6a5eaa471539192141fd7f2d8c224814b79729ccfbf7448",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 55,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L52-L55"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 194,
+          "line_start": 175,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L175-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ab1ec9f24c751b306e9e591acc61104a53fbbf1703dca93ac65099d4eaae7db",
+        "slc_d13afdd823439521dba68886d1b82f62d38bde2efa0a05d2040dd28587f68f19"
+      ],
+      "text": "Documentation states models and keys are handled by Simon Willison's llm library, chosen over LiteLLM, PydanticAI, and a raw OpenAI SDK/OpenRouter combination for its multi-provider plugin model, per-conversation session state, and plain-function tool calling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c51554f832154dc9ec002117528db5497c86f528de2a0c23195766dc20bd08b1",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 83,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L79-L83"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 55,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L52-L55"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 25,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L20-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22751520ea9ffcce4afb02be120d26ed3184a820dfc7e2cb1d2dfedd328cf1bf",
+        "slc_4ab1ec9f24c751b306e9e591acc61104a53fbbf1703dca93ac65099d4eaae7db",
+        "slc_a6999b7fd3604ff45d7d9fdf562ebff00eabb2f0c99050a3d9779b88e243bf57"
+      ],
+      "text": "Setup is documented as detecting an existing provider credential or asking interactively, verifying it with one minimal model request unless --no-verify is passed, and storing a pasted key only in llm's user-level key store, never writing it into run_seed.sh, seed.py, or git."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7579999285389999537281730cc0a3fe6ef67362161033c0032b571d2eb7cb78",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 158,
+          "line_start": 151,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L151-L158"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 173,
+          "line_start": 160,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L160-L173"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 32,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L27-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_205590af98e8011834f593ebfaeb5aebb348c33b9fe2c4249880f494b194cc78",
+        "slc_637a75d49983a2f4230fbd44ab0cb71b4a4f622222fd423d5f9fa0951110ed7e",
+        "slc_c724a52cd8dd5c635d3a33c4dda0bc5845848e36adee5693d57c4413cb158269"
+      ],
+      "text": "Documentation states planting creates a fresh, private git repo at the target directory (or nests git under self/ inside an existing repo) and never overwrites an existing seed.py or run_seed.sh, so a grown loop cannot be clobbered by a later plant."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7470a553d2958b5c1989a003d9ebff2ee12c2ab84ae770dc2593dbcacde1fcf5",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+          "line_end": 97,
+          "line_start": 92,
+          "path": "docs/DESIGN.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md#L92-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c1c27a332feb29a2f4b212b2e332bb267ab100a5c9a45bf1506af08b1702c126"
+      ],
+      "text": "The design document frames its distinct claim as germinating a personal agent from an auditable seed in dialogue, with conversation as selection pressure rather than a benchmark-driven optimization loop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_52f744dcb896bdb82625534c942f6a7320cc5677be56c04fbb8d0b68b5776252",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "392af0ba220d951942e70118e4cb9ba2e538aa70",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "SovereignLicense.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/SovereignLicense.md#L135-L135"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "392af0ba220d951942e70118e4cb9ba2e538aa70",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "SovereignLicense.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/SovereignLicense.md#L11-L11"
+        },
+        {
+          "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+          "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+          "line_end": 101,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "vivekhaldar/seed",
+          "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md#L99-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2912f24040e533ffd73cda45dc626bff1ddfc1ace98dde85da176f9a4763b32e",
+        "slc_8d47cf26d5217e1fb2acb64fc78123dbaaf6fb5af5bfc4f24d25f653431e651a",
+        "slc_cf2d26e5ecfb3dbf296e41b854c774df5f58905caba2b0face33b840c26725ee"
+      ],
+      "text": "The license text labels itself Sovereign Source License v0.3 and describes an Apache 2.0 extension with optional development-data services. It says basic use under Apache 2.0 terms involves no data collection."
+    }
+  ],
+  "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 105,
+        "path": "README.md",
+        "size": 4474
+      },
+      {
+        "lines": 453,
+        "path": "SovereignLicense.md",
+        "size": 29701
+      },
+      {
+        "lines": 231,
+        "path": "docs/DESIGN.md",
+        "size": 13011
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 9,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_f1b7de7f63905d078fcc3f0466a92835",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/vivekhaldar/seed/cd79a60acafe425f8bd31078996d5818bb151ad6/1c4ee6f29e9155bf/manifest.json",
+  "package_id": "pkg_d1db991c9729d54a73e20bad1f9b4db37ab33be6637039ce7e04847af88be02c",
+  "repo": "vivekhaldar/seed",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e7c46f1cdb4afd983240ef7573f79e1ef7108b6aa08b4caae8ece221ab1e2d51",
+  "snapshot_id": "1c4ee6f29e9155bf",
+  "sources": [
+    {
+      "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+      "git_sha": "792625886bdb1b62378aedbe9d2c13d0dda295d7",
+      "lines": 105,
+      "path": "README.md",
+      "repository": "vivekhaldar/seed",
+      "sha256": "ecac2154979b31863d189e4b2b5bb91e78e0db498ce814a508bcf6a32bf8817d",
+      "source_id": "src_eb80f4fa79135291822c7d1cf90b863a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/README.md"
+    },
+    {
+      "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+      "git_sha": "392af0ba220d951942e70118e4cb9ba2e538aa70",
+      "lines": 453,
+      "path": "SovereignLicense.md",
+      "repository": "vivekhaldar/seed",
+      "sha256": "cb1af8b1406c5505e90fda58d3996bbc9831c6231d0db12f943cf20996b1c803",
+      "source_id": "src_e09479005b3154c2825f71b48afc19be",
+      "stored": "sovereignlicense.md-f1ac53718b42.md",
+      "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/SovereignLicense.md"
+    },
+    {
+      "commit": "cd79a60acafe425f8bd31078996d5818bb151ad6",
+      "git_sha": "7a10c81129d8ecb30bdbfec61caaad632c7a2630",
+      "lines": 231,
+      "path": "docs/DESIGN.md",
+      "repository": "vivekhaldar/seed",
+      "sha256": "876970c5c384683fff315feb8dacfef5586e965d71597e744723855b75617eb7",
+      "source_id": "src_de619aa1d3955a94b6495120e2652153",
+      "stored": "design.md-27a16279e23c.md",
+      "url": "https://github.com/vivekhaldar/seed/blob/cd79a60acafe425f8bd31078996d5818bb151ad6/docs/DESIGN.md"
+    }
+  ],
+  "summary": "seed is documented as a minimal terminal coding agent: a single script calling a model with one exec tool, growing all further capability into a self/ directory the agent edits itself. Its design doc frames this as a deliberately auditable, ungated kernel with no sandbox, positioned against prior minimal-agent and self-improving-agent research. Evidence: all 3 of 3 candidate files stored (README.md, docs/DESIGN.md, SovereignLicense.md); selection complete.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,703 @@
+{
+  "applied_operation_id": "op_7e4359d7749a40eb8d8380fdf3aaf21d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_17b4253abbac653d1a99289c146b6c999295746a473a54357a5558d34c19ccce",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L7-L7"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1358490e59207d3482dc3fd2478a0b3f4f6175e008d310269ba425b7f74e4581",
+        "slc_ac1b0badcc7675ae4d2c89d648a9417a854f01d8e3e2e2c6c21cb0e8c65c63e7"
+      ],
+      "text": "The product consists of a GPU terminal engine, a background daemon that owns sessions/splits/scrollback, and a harness-cli, all written in first-party Swift as one self-contained app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27188dabee1e60b6f804f6a09a8e4c807274279b8f9d53fa413d2a63e6fb5a12",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ac1b0badcc7675ae4d2c89d648a9417a854f01d8e3e2e2c6c21cb0e8c65c63e7"
+      ],
+      "text": "The only external dependency is Sparkle, the macOS auto-update framework, which is GUI-only per the README."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_261b505e60e72cdcb80af4a8a4432ea2b131fec3045972a42d1df6a9cc51779d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L83-L83"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L86-L86"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 77,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L69-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13c9e4f51a4ca09bd73ce0866ee48eb95b24167f20177d706a5d6ca00b18baa2",
+        "slc_632d7e16f7a5d1732d6fb5834b4e048e0b95a91d9e3476c179c5b130ae8bb59f",
+        "slc_f0527a0e4386ff2fe170b3e194faf7d2a3dbc68166a1ed64a5636cbd1332573c"
+      ],
+      "text": "harness-cli exposes commands such as list-surfaces, new-session, new-tab, send-keys, notify, capture-pane, color-check, and theme-preview, and can be installed onto PATH from the app bundle or a source build."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b017e9da4456ae0d374087939540d099f3cf663c1985cb3c681de87682ed5dee",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 104,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L100-L104"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 119,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L118-L119"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 116,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L109-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31e7c36e8b4312794a2a570c2d9a68d2356ac1aebbe1ce0002674169a83ba153",
+        "slc_b57b6e7337381d6b1cd8abb6d33413080332dee7d8c17da7f2c2e61b869a0d06",
+        "slc_fae2d7ea4f8395edb3e2dc661c953791865c3f900a29b428dc2fe13490d2cd32"
+      ],
+      "text": "Any harness-cli command accepts a global --host flag to target a headless or remote daemon over an SSH tunnel that forwards the remote control socket, reusing existing SSH trust; remotes are registered with 'remote add' and extra SSH options pass via --ssh-arg."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_554ab49f5056dba5cfe068fe0b3f70a93c6d2c6b583f41c20a818cbd17676707",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L37-L37"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L32-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b9e99c959fa4efc94622c01e8172ec8a60e3a334c5fea3c9c574a7fe2d3035e",
+        "slc_8a358a1c6bf7c6920e1c7648805a4050e8f44506c8390add653a9aff0ba10a9a"
+      ],
+      "text": "Four experience modes are offered: Plain Terminal (sessions close on quit), Persistent Terminal, Full Terminal (prefix, status line, copy mode, paste buffers, full CLI), and Agent Workspace with detection and notifications enabled up front; new installs start in Plain."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1d1e347261ce7ec9a3abcc7810dd35b25399a372e5f523df18909ef27338ce9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L7-L7"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1358490e59207d3482dc3fd2478a0b3f4f6175e008d310269ba425b7f74e4581",
+        "slc_554844b995ce283337c35dfa4f400ed8290d768052719091996069275b47cb5d"
+      ],
+      "text": "Harness detects agents like Claude Code, Codex, and Cursor by their process tree, shows which session runs what, and notifies when an agent stops or requests approval; Cmd+Shift+U jumps to the waiting agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_37247f9beba8fcb9b424bd24135fc61bd237cfa87911425f4deff8ca3872c797",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L130-L130"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L125-L128"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L123-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6302d776c17aa22dfa84029fe3b82236ccaf360d4a2a8e744513461040c4bd8f",
+        "slc_70cb219577edf64e7f7f7f3849dfc7f83c3a717fbf60691885fc204a56b3f2b3",
+        "slc_b4804a4b569c6ecb568a9b8aefe4db4b1c84cac54b6a1f0c53ab0155a02dc97a"
+      ],
+      "text": "HARNESS_SURFACE is set in every Harness pane so agents can notify the exact tab they run in, and 'harness-cli install-hooks claude-code' installs per-agent hooks; agents without hook support fall back to built-in activity detection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27eaee531bfc71a17a05c10cf1ee4d54881000b8961357400e35f8b4b2bc3552",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81c6ef40d34cc2898989eaff752ef11ca943ad5079ec836d9de304c4eabeec3d"
+      ],
+      "text": "The audit roadmap states the daemon uses single-lock serialization as a documented correctness invariant, and the daemon control socket is secured with 0o600 permissions plus a peer-UID check; OSC 52 clipboard reads are silently refused."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90d3b8925815020f79f9825b279882d53aaec44863bdc1c977f7334035f8c52c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 165,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L160-L165"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 156,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L151-L156"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 167,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L167-L167"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07114fd1d171bf966e8e43df47e44d0599278ca6efa1ac69b943d6947f38c85b",
+        "slc_077ee0a413f92537fac5cdd3e81fbd0b9f637c18edbab00bc4193d69a8ca7bbc",
+        "slc_f04eed2344d0c570b37fe8e996420a80083f600725281593f573f3b4217b36f7"
+      ],
+      "text": "Repository development practice: contributors build with 'make release' or swift build, run 'swift test' plus HARNESS_LIVE_DAEMON_TESTS=1 for real socket/PTY tests, and CI runs the deterministic suite, live daemon tests, and a release build on every push."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6287023967a7768b3a4b4772c5c6f75eccb93667b2eaf2d0a0687c471bc8f245",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+          "line_end": 175,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md#L175-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f324d097076a166f24645e58141351bd0e6a598cec1efcc2f962e5ea4fac4d7d"
+      ],
+      "text": "Repository development practice: Harness.xcodeproj is generated from project.yml via XcodeGen, and the app target bundles HarnessDaemon and harness-cli into the app's MacOS directory so Xcode runs match the release layout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1634d253f6758eb84a9ec13893d3bc44540d0943bade947bf17ef5b7f8255ec0",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L12-L12"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 35,
+          "line_start": 20,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L20-L35"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L10-L10"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12c462c86097f71d624f9e67fd3fd3b270c425c7875ff225b2574eaa1be7f8f2",
+        "slc_5368acc1aa3dad338f547969ad07b3cb4c031858da1678188c732978bba2de0b",
+        "slc_a2e0c43dde5aa8cfaca69f4f87043f15fbcd07b74f0c183184d2dab315093ad4",
+        "slc_a355e651c4bcd8f48fcda92ee8b135bd3dda69fd9f64533fde0fc1755faab51a"
+      ],
+      "text": "A 42-agent audit workflow (parallel finders, adversarial verification, synthesis, completeness critic) produced 101 findings with 28 adversarially verified, and reported parity scores such as VT core 90%, input protocols 92%, and tmux commands 85% versus ghostty/tmux."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_81d61ef732659003886a59996f86a6b7832915a08f68cf51a0e5a23cb08c3302",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 214,
+          "line_start": 205,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L205-L214"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 50,
+          "line_start": 47,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L47-L50"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 77,
+          "line_start": 74,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L74-L77"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 72,
+          "line_start": 69,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L69-L72"
+        },
+        {
+          "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+          "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+          "line_end": 121,
+          "line_start": 118,
+          "path": "docs/AUDIT_ROADMAP.md",
+          "repository": "robzilla1738/harness-terminal",
+          "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md#L118-L121"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_022e6e6d89e96b0a6db91bb60255268ab2a43728e39a8a5ca526fd3722f23755",
+        "slc_025239d128d8cb872cd0fec8bb30228e9162044e59695a6f09996ba88b2b7188",
+        "slc_a84b9e1bde754c3276d15c67934da501b984e99b72d58b6653efe25ab86f88fc",
+        "slc_b809bc7f2d4b539a38480af285c24b3bf1ba74c238a5d6ee25c62241e5de63d0",
+        "slc_b8c50a22da4f072c071568febc564d359c7bf3d508922fadb71c90adce3e6a51"
+      ],
+      "text": "The audit identified gaps later fixed via shipped PRs, including a paste escape-injection bug, missing DECSTR/REP/IRM/DECOM handlers, DCS misrouting into the Sixel decoder, and Kitty graphics being display-only; animation (a=a) and iTerm2 multipart upload remain deliberately deferred."
+    }
+  ],
+  "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 204,
+        "path": "README.md",
+        "size": 13508
+      },
+      {
+        "lines": 268,
+        "path": "docs/AUDIT_ROADMAP.md",
+        "size": 40937
+      },
+      {
+        "lines": 142,
+        "path": "docs/KEYBINDINGS.md",
+        "size": 6083
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 91881
+      },
+      {
+        "path": "docs/AGENT-HANDBOOK.md",
+        "reason": "byte-budget",
+        "size": 74626
+      },
+      {
+        "path": "docs/COMMANDS.md",
+        "reason": "byte-budget",
+        "size": 18906
+      },
+      {
+        "path": "docs/HARNESS_TMUX_CAPABILITIES.md",
+        "reason": "byte-budget",
+        "size": 17027
+      },
+      {
+        "path": "docs/MIGRATION.md",
+        "reason": "file-budget",
+        "size": 6395
+      },
+      {
+        "path": "docs/MODES.md",
+        "reason": "file-budget",
+        "size": 3309
+      },
+      {
+        "path": "docs/MULTIPLEXER_GUIDE.md",
+        "reason": "file-budget",
+        "size": 20372
+      },
+      {
+        "path": "docs/RELEASE.md",
+        "reason": "file-budget",
+        "size": 4489
+      },
+      {
+        "path": "docs/SCORECARD.md",
+        "reason": "file-budget",
+        "size": 7665
+      },
+      {
+        "path": "docs/SECURITY-POSTURE.md",
+        "reason": "file-budget",
+        "size": 6109
+      },
+      {
+        "path": "docs/THIRD-PARTY-NOTICES.md",
+        "reason": "file-budget",
+        "size": 1960
+      },
+      {
+        "path": "docs/TMUX_PARITY.md",
+        "reason": "file-budget",
+        "size": 12018
+      },
+      {
+        "path": "docs/V1_10_ROADMAP.md",
+        "reason": "file-budget",
+        "size": 29014
+      },
+      {
+        "path": "docs/agent-hooks/README.md",
+        "reason": "file-budget",
+        "size": 3134
+      },
+      {
+        "path": "docs/agent-hooks/claude-code.md",
+        "reason": "file-budget",
+        "size": 2359
+      },
+      {
+        "path": "docs/agent-hooks/codex.md",
+        "reason": "file-budget",
+        "size": 1721
+      },
+      {
+        "path": "docs/agent-hooks/cursor.md",
+        "reason": "file-budget",
+        "size": 1886
+      },
+      {
+        "path": "docs/agent-hooks/grok.md",
+        "reason": "file-budget",
+        "size": 1610
+      },
+      {
+        "path": "docs/agent-hooks/hermes.md",
+        "reason": "file-budget",
+        "size": 1270
+      },
+      {
+        "path": "docs/agent-hooks/openclaw.md",
+        "reason": "file-budget",
+        "size": 1367
+      },
+      {
+        "path": "docs/agent-hooks/opencode.md",
+        "reason": "file-budget",
+        "size": 1605
+      },
+      {
+        "path": "docs/agent-hooks/pi.md",
+        "reason": "file-budget",
+        "size": 1387
+      },
+      {
+        "path": "docs/shell-integration/README.md",
+        "reason": "file-budget",
+        "size": 2303
+      }
+    ],
+    "omitted_count": 23,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 590,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 26,
+      "complete": false,
+      "omitted": 23,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_45d1a5618fe2587c803b175322f1ac40",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/robzilla1738/harness-terminal/923f44e6447359c752b15b60f0e90eb7382e0001/b4ca97a39b361395/manifest.json",
+  "package_id": "pkg_b5719ade601b7825a8ae1c2adca2d1fe4796a523f5c3cf2541267ce50cc48943",
+  "repo": "robzilla1738/harness-terminal",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1b661df6edbdc38b20eab01cbbd44c0625102eb8202746c12a11b8bf98efb48e",
+  "snapshot_id": "b4ca97a39b361395",
+  "sources": [
+    {
+      "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+      "git_sha": "2da97711e4ce3c4c557648605991931fdd6d422e",
+      "lines": 204,
+      "path": "README.md",
+      "repository": "robzilla1738/harness-terminal",
+      "sha256": "6105a689b491d9d9efc63bc395bda15214a78f422f101360602d82d9464e62eb",
+      "source_id": "src_df83fd5d596a59f288f6190f4b7438f7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/README.md"
+    },
+    {
+      "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+      "git_sha": "f0abf7839a9276176adda3b341f58de7a834b351",
+      "lines": 268,
+      "path": "docs/AUDIT_ROADMAP.md",
+      "repository": "robzilla1738/harness-terminal",
+      "sha256": "f29e0d5a6093c80bbe889f8a2987c3b9eef36f43de1a97257f4c68de4c19ca7a",
+      "source_id": "src_0028f77469c653dc80ecd2d75df26e43",
+      "stored": "audit_roadmap.md-b1883d587fba.md",
+      "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/AUDIT_ROADMAP.md"
+    },
+    {
+      "commit": "923f44e6447359c752b15b60f0e90eb7382e0001",
+      "git_sha": "e0b88318f3c9d49d0ffc3ff4a52b9cc3f5090572",
+      "lines": 142,
+      "path": "docs/KEYBINDINGS.md",
+      "repository": "robzilla1738/harness-terminal",
+      "sha256": "4e811b8907dd616397877ff1151ae1e6208df5897f5e790ffce157cf0afe9ea9",
+      "source_id": "src_254659a0154e5f4ab1b9744c1feda23e",
+      "stored": "keybindings.md-c6c09264bc3a.md",
+      "url": "https://github.com/robzilla1738/harness-terminal/blob/923f44e6447359c752b15b60f0e90eb7382e0001/docs/KEYBINDINGS.md"
+    }
+  ],
+  "summary": "Harness is a native macOS GPU terminal with a daemon-owned session model, a first-party Swift CLI, agent detection/notifications, and tmux-style multiplexing; the README documents product behavior and build/test workflows, and docs/AUDIT_ROADMAP.md records a 42-agent audit with parity scores and shipped fixes. Evidence coverage: 81 of 111 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

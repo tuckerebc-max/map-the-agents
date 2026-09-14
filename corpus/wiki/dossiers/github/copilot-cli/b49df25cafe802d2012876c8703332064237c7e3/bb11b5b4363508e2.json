@@ -1,0 +1,587 @@
+{
+  "applied_operation_id": "op_85a4e63b584746809a423cee2f2a9288",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_da860a3e29d6a6e11a2424d7284ef3b24a5a71e841e32daaddfe931d7a7ffb2f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 103,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L101-L103"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L120-L120"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L3-L3"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0833bc3beb1d1ed600eaf663a03a531063ef4b1ac032abcca602b857bfe23906",
+        "slc_243f51421a3dd4dfbb73e82ce1009f57577bae9a2565d5156265b3f4da6b32b0",
+        "slc_728ba9807159d7ec8f0387010c531bb513f86b1df5c28b42067d9847c09edb25",
+        "slc_d1e29a695e9d6653e0901e92d960aac4d744eb5cbdacf19a575e5a63754321e2"
+      ],
+      "text": "Copilot CLI is a terminal application launched with the `copilot` command, offering natural-language conversations to build, debug, and understand code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b939717ed8ebab2d7756343ccae25547f8143c9920764e03d4b238bce8d49fa5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L16-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_571b40c53502abc39508db9791e82f4f5d60062617ba3be1e24e24e3f7d02b44"
+      ],
+      "text": "The CLI previews every action before execution and requires explicit user approval, so nothing runs without consent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2cc582112bf37de6e49f82990ba6b3037b71aa56e91dab63988949f039ec7736",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L16-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_571b40c53502abc39508db9791e82f4f5d60062617ba3be1e24e24e3f7d02b44"
+      ],
+      "text": "The agent ships with GitHub's MCP server by default and supports adding custom MCP servers to extend its capabilities."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_89eb8a456c13f9e497dcb8ed8364a31b217b91e37f0e10fff0a382d7be13d8cc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L14-L14"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c40f8936ba25be9ebcaf7ec2fb5a01abe94e88bae4d74a1aaea64a9c132eaacc",
+        "slc_d1e29a695e9d6653e0901e92d960aac4d744eb5cbdacf19a575e5a63754321e2"
+      ],
+      "text": "It uses the same agentic harness as GitHub's Copilot coding agent, working locally and synchronously in the terminal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e691c77568270a4b4fe0e52594e69333f2c834c511ebb552ead9284362d89af",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 194,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L194-L194"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L107-L107"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 129,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L128-L129"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 184,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L184-L184"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L122-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0424ea4094a8d2b1a614c400f1c8b3026c7d94ddb8ee6e454af9520cf0eadd77",
+        "slc_4d93021c06e020bb8f77680399cfb1a717772f040d316fd66b015cb3d141d1f8",
+        "slc_76a5fb03d4f24d7bd399c324089a23fdfc7b69a74882cfa8311c12819b7f42e9",
+        "slc_8bc433742d6d94319acb6147f22780fbc511dd8c2811be4ec3a7f34e203edc52",
+        "slc_d2017185ade0bb87fca3810363cc4cc2bda5d685d367ccdc6a94f1beac5cadb7"
+      ],
+      "text": "Slash commands include `/login` for authentication, `/model` for model selection, `/experimental`, `/lsp` for LSP status, and `/feedback` for a confidential survey."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_764d416c745379f0a1888ede3abcf4ccfc173c9140d551001ec409104646ecec",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L122-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d2017185ade0bb87fca3810363cc4cc2bda5d685d367ccdc6a94f1beac5cadb7"
+      ],
+      "text": "By default the CLI uses Claude Sonnet 4.5, with other models such as Claude Sonnet 4 and GPT-5 selectable via `/model`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e7f30b9b2ed81dd7587fed1aad297df587c1782344ab1d6baff21eaf80c2f80",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 160,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L159-L160"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L143-L143"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L157-L157"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 163,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L162-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_307fff46f666ecd007b153c333c461e163b60dbc612c15c39b582135900ac3e1",
+        "slc_327a45bf633eb7b9e688522c5c670eee40b5e26a1236d5ec9ecbdb2f9b31e724",
+        "slc_399198414cb1722d31b7f6771f2e26ae464d726644c6fc89a4115faf7b50a58a",
+        "slc_c122c66d8982ad9bfa6d7ba90ed8a81c94970912ca8c945617b771c6f7a06225"
+      ],
+      "text": "LSP support provides go-to-definition, hover information, and diagnostics; servers are configured in `~/.copilot/lsp-config.json` (user level) or `.github/lsp.json` (repository level)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5f48f9b5728efeffe61568054bf7fd697f8efb2af7c5db5b95aa37e8f1c44d4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L147-L147"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 151,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L149-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a9922134d00c8c3d36834a9ecd341e74bd936d82e984469bacbb4182818ebda",
+        "slc_8c2217340311d4997212bf9a537d27653551a3c7ad9f0d28a3480a73ab784752"
+      ],
+      "text": "The CLI does not bundle LSP servers; users must install language servers such as typescript-language-server separately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3258a2086b6292153bc148f74b67c37d71a2888dd2c50b2fdfea6bc88714b21f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L137-L137"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 35,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L34-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_517aaa730db369dd1cdcf2771f7c106fa2f38d99f548bba5db61ab4c921b1035",
+        "slc_9a6345e8238aa48ae882588348b9898da5dda7764136a5071fd0eb74694182eb"
+      ],
+      "text": "Each submitted prompt reduces the user's monthly premium-requests quota by one, requiring an active Copilot subscription."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1452fa9735708195c43a44bc44fe8a0fe11c6051aded5261b21f65ba8d47163c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L107-L107"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L111-L111"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 116,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L113-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d93021c06e020bb8f77680399cfb1a717772f040d316fd66b015cb3d141d1f8",
+        "slc_51ad1da1783e5e45c9ee1f4f409079e3f3f3f2e64560b18d64bdf40ebf5f4d3c",
+        "slc_aa3bbd6558a0d68d44f96b55648875b082543b55692e0d0f93663fb62ba42645"
+      ],
+      "text": "Authentication uses GitHub account login or a fine-grained PAT with the 'Copilot Requests' permission, supplied via `GH_TOKEN` or `GITHUB_TOKEN` (in that precedence order)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36e3fb628626eb1f605020bd4d97ef34115b013520bc6bbdbdac705269553d3e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L126-L126"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L135-L135"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 129,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L128-L129"
+        },
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L131-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_160e74f72ac9a9a2a8d5eef4d324af2d95d7cf73952bb8678070baae6551e751",
+        "slc_6e00eb42dee350c4c2ba54ce467d070576f219692baac8471a10bb57a9a2ca57",
+        "slc_76a5fb03d4f24d7bd399c324089a23fdfc7b69a74882cfa8311c12819b7f42e9",
+        "slc_a30e03b4b34a83c20e655264b1c0559bdd80f0d043110dab6e153b6dfa18f8f2"
+      ],
+      "text": "An experimental mode, enabled via the `--experimental` flag or `/experimental` command and persisted in config, unlocks in-development features like Autopilot mode cycled with Shift+Tab."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d50c7e68a25fb2e2cc8b9b143fc20640537c27999caaee9141287c9270f5e2aa",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+          "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "github/copilot-cli",
+          "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e554a25ce3a3148ea6895cdd79610e1c246e55daf6ecc0470521ef5cccafaab3"
+      ],
+      "text": "Organization or enterprise administrators can disable Copilot CLI access for their members via policy settings."
+    }
+  ],
+  "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 194,
+        "path": "README.md",
+        "size": 7740
+      },
+      {
+        "lines": 36,
+        "path": "LICENSE.md",
+        "size": 3553
+      }
+    ],
+    "omitted": [
+      {
+        "path": "changelog.md",
+        "reason": "byte-budget",
+        "size": 240923
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 18,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": false,
+      "omitted": 1,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_88d85ff77a0f51d2b3c98c0744413464",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/github/copilot-cli/b49df25cafe802d2012876c8703332064237c7e3/bb11b5b4363508e2/manifest.json",
+  "package_id": "pkg_4b07790e5f9bb13e65c6e111e03e7475646147481db25c9e4248200044162e84",
+  "repo": "github/copilot-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3c73e0c4eeca5ec16eae6fc15f83c8df807a59571f21140285b5640eb6dc947d",
+  "snapshot_id": "bb11b5b4363508e2",
+  "sources": [
+    {
+      "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+      "git_sha": "4826459a60423f33c3767c3f0b0e1d400d0c0edf",
+      "lines": 36,
+      "path": "LICENSE.md",
+      "repository": "github/copilot-cli",
+      "sha256": "c694e2d9b3f3bb40704ca9bdc823dc90269999ab4c013dfd8a52c407046074b4",
+      "source_id": "src_87b0434503ef5b6d86fa3488c2f816f8",
+      "stored": "license.md-4673a3aba018.md",
+      "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/LICENSE.md"
+    },
+    {
+      "commit": "b49df25cafe802d2012876c8703332064237c7e3",
+      "git_sha": "347cf2dcbfd43632662496991582cf860bedd715",
+      "lines": 194,
+      "path": "README.md",
+      "repository": "github/copilot-cli",
+      "sha256": "33657f2e7383f2167b47d5f8c549a6071905a5c93d5d67d17e5c5399f126f07b",
+      "source_id": "src_876858093c1a5d6fbbad71e924b3c865",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/github/copilot-cli/blob/b49df25cafe802d2012876c8703332064237c7e3/README.md"
+    }
+  ],
+  "summary": "The snapshot is README and license documentation for GitHub Copilot CLI, a terminal-based AI coding agent with GitHub integration, MCP extensibility, LSP support, and multiple install/auth paths. No source code or development-practice files are present in the evidence.",
+  "superseded_claim_ids": []
+}

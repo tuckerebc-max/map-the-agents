@@ -1,0 +1,1682 @@
+{
+  "applied_operation_id": "op_0d71a754a1f74968b54bf71dad72be86",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b939ff66b7d240c5b52b1c64425f0d9394eaa0d72a77f46e6c19dd785f98bdf4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9a36e4b635d8ee59341f1ace94e0909b10d691fe774932fdb42c04e59392b053"
+      ],
+      "text": "OpenBitFun is described as an open-source desktop workspace for AI agents combining a Rust Agent Runtime, an Agent Harness, and a desktop experience."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c38dd7476873e8563488efce6677d7f5362422155f605224d63accb6cc836cbe",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L29-L29"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 38,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L33-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29d0e6c689ee7671285c7ce0e56c140dc89ba9a092540031fbaa5baeb8abdb17",
+        "slc_9ab26a84e8d6f50e3f79acd15467c0533b88252389ac9385eeb3b12e899463c8"
+      ],
+      "text": "The Agent Harness offers four working modes: Minimal (direct collaboration), Standard (multi-step tasks), Ultimate (delegating work across agents), and Creative (building Mini Apps and extending the interface)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a24a2c8ad44cba053884c9da04a3195b24c4ff18f0f471ed2a2ac7575e080d12",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L29-L29"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 38,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L33-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29d0e6c689ee7671285c7ce0e56c140dc89ba9a092540031fbaa5baeb8abdb17",
+        "slc_9ab26a84e8d6f50e3f79acd15467c0533b88252389ac9385eeb3b12e899463c8"
+      ],
+      "text": "The harness plans steps, manages context, calls tools, coordinates multiple agents, and combines their results; the Ultimate mode is aimed at dividing demanding work among agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0b7dbfc2de6c5fd308044162f24407bb00f5086cc01dc994ba13a21f9771643",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0de2023b538f725383de284c169ca29f2dadc06822bb3137f1713879074c2945"
+      ],
+      "text": "The Rust Agent Runtime reportedly manages session state and context, with persistent sessions, interruption recovery, long-term memory, context compression, and cache reuse for longer runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_96c9a3fc45e780028dae252cdc7ceda4201741d9c18e8bf90d13c55096543670",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L71-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_794b74a9e8fd8ff0aec1a287c64ecdd3f138cff3928faff42a844178e832f4a7"
+      ],
+      "text": "The product supports connecting tools via MCP, turning repeatable processes into Skills, customizing task execution with Hooks, and installing skins or modifying UI, tools, and runtime source."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80846968bd57c2e5bd773565f6a623930cdbcb0906157d5d0f1904471d087fff",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L53-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_750d60ec26966c901447164d7df05ab1ec0cc225119833c195b1b58148304d47"
+      ],
+      "text": "Users can work over SSH on remote hosts, jump hosts, or containers, with files, commands, and agent execution in the target environment; the desktop app and CLI share core execution capabilities."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec3d047ef60974e175befcf23d3de1847434f9ce52dbc2df978f4468430db617",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L53-L53"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L55-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_750d60ec26966c901447164d7df05ab1ec0cc225119833c195b1b58148304d47",
+        "slc_cb26ece8786754f7dd56cd3408e9c0ab5b1985d4ec0117da408da8a0e02325ea"
+      ],
+      "text": "Cross-device account login, synchronization, and control run through a self-deployable Relay server, with mobile clients and messaging bots as additional ways to control tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_346fbd0f216a9c269cf0bb56466e0fe3f202dbe9ad890b120f862bda2f1aeedc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L65-L65"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L61-L61"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_502b3ff062c174ddb073d332fcc57aec499cb95721e8edee5cd2b0454ce3a622",
+        "slc_9bc7866e5458f6a47f1087f81df7b76cb2a819988bb2b018b3cf1a0b3855c542",
+        "slc_f3dda5efff1fcd30ccd6ac5b87535c910b4701adcb25890d61e8bb66fa9c268e"
+      ],
+      "text": "Mini Apps pair a dedicated interface with an agent conversation, can be built by describing needs to the agent, and can be installed, reused, or shared via a marketplace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b56111df1b6e259aad79f5765a75e60066483a6e40e5511c372d0119da6f09d3",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L83-L83"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 86,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L85-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b78b57376eaedb08fd30861ca24749e5558a7f3056af354625b7ff9831032c1",
+        "slc_dfd840358443d755d3f83af237080aa5a315cfb76d93eb25abd89eb19b6886aa"
+      ],
+      "text": "A reported DeepSWE v1.1 evaluation gives OpenBitFun a 64.6% pass rate with 42.9-minute median runtime on GLM-5.3-Flash and 56.6% with 19.6 minutes on DeepSeek-V4-Flash."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d44257328f992eaf2466c90d6ea982d1d2f1d151f820b74948c6c23f3ed4d06c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L5-L5"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L5-L5"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L123-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31ab92228f73fef161176a477ed8e36abf6355ae2355eb38d3d0e8a8a23b4911",
+        "slc_5c757c22933b119e83802105a212cb58626d82ceffb788b79db0b5dd5e8745f0",
+        "slc_d820758afd26b40682c6d5f20dc91083b72992a7d7e3a1afa7f80eed8e0bf55e"
+      ],
+      "text": "Running from source requires Node.js 22.12+, pnpm 10.15.0, the Rust toolchain, and Tauri prerequisites; the project is a Rust workspace with a React/TypeScript frontend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_884b8370b306205f7a65ff15e4d6907816b87a3bd3a42c74d15748474e147382",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L70-L70"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 53,
+          "line_start": 52,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L52-L53"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L125-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38321e8f56ed23c0f4c227870f4dbcbc109ad3ab7fcea2386e02c6a42f7f853c",
+        "slc_741b7f3c5de723602d4f6fc7888c0c08fd7cbc5d32b06c5f1776bf084d0582ef",
+        "slc_9c192df6d7bf20d6f386b91022d43fd4444a0ce72dcb6dd35aa1819bf2debf64"
+      ],
+      "text": "Repository development practice: contributors run `pnpm install` and `pnpm run desktop:dev` for full hot reload (Vite HMR plus automatic Rust rebuild), with a lighter `desktop:preview:debug` mode that reuses a prebuilt binary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7be599558f7b69a28305799d16a29e259bb599963ba48fe601918e12f896695",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 129,
+          "line_start": 124,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L124-L129"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 150,
+          "line_start": 150,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L150-L150"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L133-L133"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L146-L146"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L122-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a4739a01116379756e12010422324b8525a5065e6d0d0362c4bfb074a2d571b",
+        "slc_95295c864745c8041902ba8f98d7bd351b1476ddf947a2d0ae56fbf0b2d1a09e",
+        "slc_99ebd02a487bf156415255c7886ac10b113b20f8075e96ac4242359cb967eb9c",
+        "slc_b790d1a21a8ce16d5806f05ba57ff3923172695661e2e5ac04f4557d932c1f5d",
+        "slc_d060cc5096278936d4ecb807bd93f37d806749e8938cee5a19696deffcf59828"
+      ],
+      "text": "Repository development practice: PRs go directly to the `main` branch, should use Conventional Commits-style titles, stay small and focused, and AI-assisted output must be declared with its testing level."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a2051265d85dda7cc4eadb003032ee852168005a1996830163403673858ecd9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 142,
+          "line_start": 137,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L137-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b4cea8a35815227a5b7ebf902e704f0a60243762a0aa7365d3a3e080acc4ca44"
+      ],
+      "text": "Repository development practice: a repository object-size check rejects Git objects over 5 MiB, including files added and later deleted in intermediate commits, with a script available to check before pushing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11c8f0bf4cd9c5ed0c5b817f74ca77c6f4b0e3e065756f756420f7b88468675b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L7-L7"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 90,
+          "line_start": 84,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L84-L90"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 129,
+          "line_start": 127,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L127-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a79f5dc0806db1643b03986b59d07eefe69d5b0286e4c0622f33bec3b20d5786",
+        "slc_c0f9635565804090a747032eeb3e1087bb92d6431b777853f49c1463e82505bf",
+        "slc_e9230b808c8e9e207da23af0e8e9b2cfc298ebfc29191b43a10106a344b47efb"
+      ],
+      "text": "The architecture keeps product logic platform-independent and exposes capabilities through platform adapter layers; shared core must avoid host APIs like Tauri's AppHandle in favor of shared abstractions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44e437980b43550add7d25f9c2b5f81bd5668e9b6f4d0f381b46f8ec3ab74f6d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 141,
+          "line_start": 136,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L136-L141"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 154,
+          "line_start": 145,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L145-L154"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 134,
+          "line_start": 133,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L133-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_220cb8a8e3601f19c1c6a561f6e3881e8932d631542a9414d65630f7858888c2",
+        "slc_c63770b65b6c333be7ef836b5845b0d3206c07cad814abb0c6374808718e5f34",
+        "slc_fe874a422a6b269f3323e3802dc96f0faaee4fdb118588fddb08cdc6d5acc50b"
+      ],
+      "text": "Remote scenarios (remote workspaces, remote control, peer-device mode, and detached task dispatch) are treated as first-class design targets, with rules requiring explicit unsupported states and reconnect-tolerant, resumable behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07d3cf8a7a37e4765de55ad081fc1326904f26ecc8c4f5e6690be026beb9ace1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+          "line_end": 110,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md#L108-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e15dfc53c77eefea5e43b42a33bf38f7064a5877020365f51009e37329f37442"
+      ],
+      "text": "Optional legacy data migration uses a separately downloaded Data Migrator that runs independently and is not bundled with or launched by the main application."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_94a5e729008de8450df67e98a4127ed817354a8284e431506314a3fc00ff3ded",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L56-L60"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_470fc15bb0cb81a98348a349008572d2bbd6123f6c0e0e39d011ac416d5f234b",
+        "slc_6d021c7194a743df8905da7e4006ceb79077cb6eabf6de045068d36c830a8699"
+      ],
+      "text": "Repository development practice: Rust files should be formatted with `pnpm run fmt:rs` targeting only changed or staged files, and repo-level checks include hygiene, GitHub config, and core-boundaries scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71e59a435c3f9c1e1adbb44c94e3aa932622c1fd0b8e50b8e76ca57f290e5b0c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 282,
+          "line_start": 276,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L276-L282"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 274,
+          "line_start": 274,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L274-L274"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 155,
+          "line_start": 154,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L154-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_89bd72a217a4d64734bdd2a0d6c8922e8103880b53fc6c318052d4fa66153a69",
+        "slc_a3b6fca9ebf0b632c7d21be2c31e5112a41db4c7325a758d0ab8609fd1b52623",
+        "slc_cee1a9bd75db2bb4780c75463959564b74c8730960331c3e067649646ae2c966"
+      ],
+      "text": "Repository development practice: verification scope is owner-determined; contributors pick the narrowest focused command near the change and leave broad builds and platform matrices to CI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a08034b0c94e5bdfa336b43231f768fd2bf16d3e40ae7cb3279f97816e295817",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 111,
+          "line_start": 110,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L110-L111"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L103-L103"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 90,
+          "line_start": 84,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L84-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45c0bb6b20ccf1557a6e306550eaba7fb978b162150b61aed83bf8ee7a360dfe",
+        "slc_6e5ecfb3ff39e492072d4ca6b3d1186719d062a1076da2d6cbc423be6f9fef4a",
+        "slc_c0f9635565804090a747032eeb3e1087bb92d6431b777853f49c1463e82505bf"
+      ],
+      "text": "Repository development practice: logs must be English-only without emoji, and Tauri commands use snake_case names with structured request parameters passed from TypeScript."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dadecfda4d2a15e1bc428c991384154601d37ce0758c59e36bf5d56eaaef43a8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+          "line_end": 209,
+          "line_start": 207,
+          "path": "AGENTS-CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md#L207-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55d70ce39196264c3866480b8f87bb59a085d4a431d6841ad76d8609c7f0d52f"
+      ],
+      "text": "Native user Hooks implement the Codex Hook contract, with the portable hook engine in `openbitfun-agent-runtime::native_hooks` and hooks from user config, plugins, or built-ins registered in a shared HookRegistry."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2cc43472c3d2aeb849b67cd1af27408b04cb7b7f998a23c228a9bbaef480b44",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 45,
+          "line_start": 38,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L38-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f7a710771fd5c88cf614e0e596866028bf0ec637a307b8fcca478690b6c6b68"
+      ],
+      "text": "The sherpa-onnx prebuilt library is downloaded from GitHub at build time by sherpa-onnx-sys, with a `SHERPA_ONNX_LIB_DIR` fallback to a local prebuilt copy when downloads fail."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aac7a47abf47c581964215b7ac990254f9a0379e4631e7b5c4114971886a05ef",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L27-L29"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 34,
+          "line_start": 31,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L31-L34"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+          "line_end": 45,
+          "line_start": 38,
+          "path": "CONTRIBUTING_CN.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md#L38-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c5a5890819ac23ab16333cb6194099c53b2d61af3a7d057b8c98560c5dac1fa",
+        "slc_3a8b201f1691e5b67c8c3dbd5341b7c06e74b9c3d71ce71cc3c3d30f0efb100b",
+        "slc_7f7a710771fd5c88cf614e0e596866028bf0ec637a307b8fcca478690b6c6b68"
+      ],
+      "text": "Repository development practice: a build prerequisites checker (`pnpm run check:build-prereqs`) diagnoses missing node_modules, mobile-web dist output, or sherpa-onnx libraries, with an optional --fix mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e36aaa753c71bac933786437c1ad38d6c5021363215b6559c41947e5f089a024",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "2df801d9c7ef039b10c4c81a75e4a1257a619e32",
+          "line_end": 150,
+          "line_start": 143,
+          "path": "docs/sdlc-harness/design.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/docs/sdlc-harness/design.md#L143-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d6710b22d4345b631ac8ca523e59640838c12a64ba03e3d3075ef8592f50719"
+      ],
+      "text": "The SDLC harness design specifies a configuration hierarchy where organizational mandates and security boundaries outrank team rules, workspace config, session overrides, and user defaults."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86539d6bd157bef0fd42c3377ce24be1e43930972be82d364c95ac0165b1dbce",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "2df801d9c7ef039b10c4c81a75e4a1257a619e32",
+          "line_end": 99,
+          "line_start": 87,
+          "path": "docs/sdlc-harness/design.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/docs/sdlc-harness/design.md#L87-L99"
+        },
+        {
+          "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+          "git_sha": "2df801d9c7ef039b10c4c81a75e4a1257a619e32",
+          "line_end": 18,
+          "line_start": 8,
+          "path": "docs/sdlc-harness/design.md",
+          "repository": "gcwing/openbitfun",
+          "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/docs/sdlc-harness/design.md#L8-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31d361bc3144ec5d1b354a2aec1811528d10b3aa80486eda5052b2d3630ebc87",
+        "slc_8e62bfb631c61a32e78f19231d8e32b946c41af79b75b2aa7c35e2cc61e9d7ad"
+      ],
+      "text": "The SDLC harness design separates execution security from quality governance, keeps safety boundaries prior to user overrides, and requires every prompt, escalation, block, or override to be explainable with source and reason."
+    }
+  ],
+  "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 134,
+        "path": "README.md",
+        "size": 8889
+      },
+      {
+        "lines": 193,
+        "path": "docs/sdlc-harness/design.md",
+        "size": 18110
+      },
+      {
+        "lines": 289,
+        "path": "AGENTS-CN.md",
+        "size": 22163
+      },
+      {
+        "lines": 180,
+        "path": "CONTRIBUTING_CN.md",
+        "size": 8892
+      },
+      {
+        "lines": 136,
+        "path": "README.zh-CN.md",
+        "size": 8402
+      },
+      {
+        "lines": 59,
+        "path": "SECURITY_CN.md",
+        "size": 2997
+      }
+    ],
+    "omitted": [
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "reason": "file-budget",
+        "size": 3042
+      },
+      {
+        "path": "docs/verify-downloads.md",
+        "reason": "file-budget",
+        "size": 3051
+      },
+      {
+        "path": "docs/verify-downloads.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2993
+      },
+      {
+        "path": "docs/architecture/agent-runtime-deployment-design.md",
+        "reason": "file-budget",
+        "size": 48404
+      },
+      {
+        "path": "docs/architecture/agent-runtime-lifecycle-sequence.md",
+        "reason": "file-budget",
+        "size": 31354
+      },
+      {
+        "path": "docs/architecture/agent-runtime-services-design.md",
+        "reason": "file-budget",
+        "size": 69120
+      },
+      {
+        "path": "docs/architecture/agent-sdk-product-architecture.md",
+        "reason": "file-budget",
+        "size": 48684
+      },
+      {
+        "path": "docs/architecture/app-server-architecture.md",
+        "reason": "file-budget",
+        "size": 37056
+      },
+      {
+        "path": "docs/architecture/appearance-package-system.md",
+        "reason": "file-budget",
+        "size": 26007
+      },
+      {
+        "path": "docs/architecture/cache-friendly-message-structure.md",
+        "reason": "file-budget",
+        "size": 10612
+      },
+      {
+        "path": "docs/architecture/cli-product-line-design.md",
+        "reason": "file-budget",
+        "size": 11952
+      },
+      {
+        "path": "docs/architecture/deep-review.md",
+        "reason": "file-budget",
+        "size": 38411
+      },
+      {
+        "path": "docs/architecture/detached-task-dispatch.md",
+        "reason": "file-budget",
+        "size": 24487
+      },
+      {
+        "path": "docs/architecture/i18n.md",
+        "reason": "file-budget",
+        "size": 7569
+      },
+      {
+        "path": "docs/architecture/model-request-cache-reuse.md",
+        "reason": "file-budget",
+        "size": 18787
+      },
+      {
+        "path": "docs/architecture/peer-device-mode.md",
+        "reason": "file-budget",
+        "size": 27962
+      },
+      {
+        "path": "docs/architecture/platform-portability-design.md",
+        "reason": "file-budget",
+        "size": 10728
+      },
+      {
+        "path": "docs/architecture/product-architecture.md",
+        "reason": "file-budget",
+        "size": 77318
+      },
+      {
+        "path": "docs/architecture/product-control-plane.md",
+        "reason": "file-budget",
+        "size": 11037
+      },
+      {
+        "path": "docs/architecture/product-customization-blueprint.md",
+        "reason": "file-budget",
+        "size": 19552
+      },
+      {
+        "path": "docs/architecture/remote-surface-contract.md",
+        "reason": "file-budget",
+        "size": 10239
+      },
+      {
+        "path": "docs/architecture/remote-workspace-transport.md",
+        "reason": "file-budget",
+        "size": 25753
+      },
+      {
+        "path": "docs/architecture/review-lifecycle.md",
+        "reason": "file-budget",
+        "size": 26733
+      },
+      {
+        "path": "docs/architecture/rust-build-dependency-boundaries.md",
+        "reason": "file-budget",
+        "size": 25963
+      },
+      {
+        "path": "docs/architecture/session-projection.md",
+        "reason": "file-budget",
+        "size": 20414
+      },
+      {
+        "path": "docs/architecture/theme-token-optimization.md",
+        "reason": "file-budget",
+        "size": 21908
+      },
+      {
+        "path": "docs/development/communications-e2e.zh-CN.md",
+        "reason": "file-budget",
+        "size": 39586
+      },
+      {
+        "path": "docs/development/i18n.md",
+        "reason": "file-budget",
+        "size": 5772
+      },
+      {
+        "path": "docs/development/releasing.md",
+        "reason": "file-budget",
+        "size": 7793
+      },
+      {
+        "path": "docs/development/ui-testids-CN.md",
+        "reason": "file-budget",
+        "size": 35009
+      },
+      {
+        "path": "docs/development/ui-testids.md",
+        "reason": "file-budget",
+        "size": 34862
+      },
+      {
+        "path": "docs/features/agent-hooks.md",
+        "reason": "file-budget",
+        "size": 15302
+      },
+      {
+        "path": "docs/features/agent-hooks.zh-CN.md",
+        "reason": "file-budget",
+        "size": 14232
+      },
+      {
+        "path": "docs/features/remote-workspaces.md",
+        "reason": "file-budget",
+        "size": 14125
+      },
+      {
+        "path": "docs/features/session-runtime-usage-report-design.md",
+        "reason": "file-budget",
+        "size": 102999
+      },
+      {
+        "path": "docs/interactive-capabilities/README.md",
+        "reason": "file-budget",
+        "size": 8455
+      },
+      {
+        "path": "docs/performance/01-compile-performance.md",
+        "reason": "file-budget",
+        "size": 40503
+      },
+      {
+        "path": "docs/performance/02-runtime-performance.md",
+        "reason": "file-budget",
+        "size": 34395
+      },
+      {
+        "path": "docs/performance/03-interaction-fluency.md",
+        "reason": "file-budget",
+        "size": 26567
+      },
+      {
+        "path": "docs/performance/04-startup-and-bundle-size.md",
+        "reason": "file-budget",
+        "size": 15814
+      },
+      {
+        "path": "docs/plans/core-decomposition-completed.md",
+        "reason": "file-budget",
+        "size": 18321
+      },
+      {
+        "path": "docs/plans/core-decomposition-plan.md",
+        "reason": "file-budget",
+        "size": 12861
+      },
+      {
+        "path": "docs/plans/desktop-window-fullscreen-plan.md",
+        "reason": "file-budget",
+        "size": 6874
+      },
+      {
+        "path": "docs/plans/edit-constraint-guard-plan.md",
+        "reason": "file-budget",
+        "size": 8361
+      },
+      {
+        "path": "docs/plans/opencode-extension-compatibility-plan.md",
+        "reason": "file-budget",
+        "size": 37707
+      },
+      {
+        "path": "docs/plans/product-architecture-evolution-plan.md",
+        "reason": "file-budget",
+        "size": 15390
+      },
+      {
+        "path": "docs/plans/tui-app-server-decoupling-refactor-plan.md",
+        "reason": "file-budget",
+        "size": 8809
+      },
+      {
+        "path": "docs/remote-connect/feishu-bot-setup.md",
+        "reason": "file-budget",
+        "size": 2389
+      },
+      {
+        "path": "docs/remote-connect/feishu-bot-setup.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2308
+      },
+      {
+        "path": "docs/sdlc-harness/agent-workflow-staged-plan.md",
+        "reason": "file-budget",
+        "size": 15824
+      },
+      {
+        "path": "docs/sdlc-harness/implementation-plan.md",
+        "reason": "file-budget",
+        "size": 40926
+      },
+      {
+        "path": "docs/sdlc-harness/product-requirements-agent-workflow-adjustment.md",
+        "reason": "file-budget",
+        "size": 32836
+      },
+      {
+        "path": "docs/sdlc-harness/product-requirements.md",
+        "reason": "file-budget",
+        "size": 27643
+      },
+      {
+        "path": "docs/sdlc-harness/README.md",
+        "reason": "file-budget",
+        "size": 6598
+      },
+      {
+        "path": "docs/sdlc-harness/traceability-matrix.md",
+        "reason": "file-budget",
+        "size": 8360
+      },
+      {
+        "path": "docs/architecture/extensions/capability-runtime-integration-design.md",
+        "reason": "file-budget",
+        "size": 41494
+      },
+      {
+        "path": "docs/architecture/extensions/external-ai-work-sources-design.md",
+        "reason": "file-budget",
+        "size": 96279
+      },
+      {
+        "path": "docs/architecture/extensions/opencode-config-assets-adapter-design.md",
+        "reason": "file-budget",
+        "size": 52939
+      },
+      {
+        "path": "docs/architecture/extensions/opencode-extension-compatibility.md",
+        "reason": "file-budget",
+        "size": 61903
+      },
+      {
+        "path": "docs/architecture/extensions/opencode-external-integration-adapter-design.md",
+        "reason": "file-budget",
+        "size": 8177
+      },
+      {
+        "path": "docs/architecture/extensions/opencode-plugin-runtime-adapter-design.md",
+        "reason": "file-budget",
+        "size": 40099
+      },
+      {
+        "path": "docs/architecture/extensions/opencode-tui-plugin-adapter-design.md",
+        "reason": "file-budget",
+        "size": 26638
+      },
+      {
+        "path": "docs/architecture/extensions/plugin-runtime-design.md",
+        "reason": "file-budget",
+        "size": 18272
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.agents.md",
+        "reason": "file-budget",
+        "size": 3551
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.ai-assistant.md",
+        "reason": "file-budget",
+        "size": 5660
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.browser.md",
+        "reason": "file-budget",
+        "size": 6558
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.canvas.md",
+        "reason": "file-budget",
+        "size": 3821
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.code-review.md",
+        "reason": "file-budget",
+        "size": 3420
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.computer-use.md",
+        "reason": "file-budget",
+        "size": 3555
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.desktop-pet.md",
+        "reason": "file-budget",
+        "size": 3695
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.detached-dispatch.md",
+        "reason": "file-budget",
+        "size": 3990
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.ecosystem-compatibility.md",
+        "reason": "file-budget",
+        "size": 4722
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.files-editor.md",
+        "reason": "file-budget",
+        "size": 4455
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.git.md",
+        "reason": "file-budget",
+        "size": 3560
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.insights.md",
+        "reason": "file-budget",
+        "size": 3070
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.miniapps.md",
+        "reason": "file-budget",
+        "size": 5856
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.pages.md",
+        "reason": "file-budget",
+        "size": 3197
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.personal-assistants.md",
+        "reason": "file-budget",
+        "size": 5296
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.projects.md",
+        "reason": "file-budget",
+        "size": 3655
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.remote-connect.md",
+        "reason": "file-budget",
+        "size": 3611
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.remote-workspaces.md",
+        "reason": "file-budget",
+        "size": 4261
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.skills.md",
+        "reason": "file-budget",
+        "size": 3599
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.tasks-automation.md",
+        "reason": "file-budget",
+        "size": 3307
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.terminal.md",
+        "reason": "file-budget",
+        "size": 3408
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/feature.voice-input.md",
+        "reason": "file-budget",
+        "size": 4025
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.ai.memory.md",
+        "reason": "file-budget",
+        "size": 5522
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.ai.models.md",
+        "reason": "file-budget",
+        "size": 4731
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.application.appearance.md",
+        "reason": "file-budget",
+        "size": 4094
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.application.development.md",
+        "reason": "file-budget",
+        "size": 6264
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.application.general.md",
+        "reason": "file-budget",
+        "size": 4398
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.application.input.md",
+        "reason": "file-budget",
+        "size": 3086
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.application.pet.md",
+        "reason": "file-budget",
+        "size": 2956
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.application.shortcuts.md",
+        "reason": "file-budget",
+        "size": 2152
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.application.terminal.md",
+        "reason": "file-budget",
+        "size": 2215
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.data.archived.md",
+        "reason": "file-budget",
+        "size": 2849
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.data.diagnostics.md",
+        "reason": "file-budget",
+        "size": 3723
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.data.usage.md",
+        "reason": "file-budget",
+        "size": 3037
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.tools.acp.md",
+        "reason": "file-budget",
+        "size": 3626
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.tools.automation.md",
+        "reason": "file-budget",
+        "size": 3819
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.tools.browser-control.md",
+        "reason": "file-budget",
+        "size": 2073
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.tools.desktop-control.md",
+        "reason": "file-budget",
+        "size": 2071
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.tools.execution.md",
+        "reason": "file-budget",
+        "size": 6360
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.tools.mcp.md",
+        "reason": "file-budget",
+        "size": 3961
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.tools.web-search.md",
+        "reason": "file-budget",
+        "size": 3088
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.workspace.session.md",
+        "reason": "file-budget",
+        "size": 3720
+      },
+      {
+        "path": "docs/interactive-capabilities/capabilities/setting.workspace.worktrees.md",
+        "reason": "file-budget",
+        "size": 4142
+      },
+      {
+        "path": "docs/sdlc-harness/architecture/agent-workflow-design.md",
+        "reason": "file-budget",
+        "size": 8281
+      },
+      {
+        "path": "docs/sdlc-harness/architecture/artifact-graph.md",
+        "reason": "file-budget",
+        "size": 6826
+      },
+      {
+        "path": "docs/sdlc-harness/architecture/evidence-pack.md",
+        "reason": "file-budget",
+        "size": 11310
+      },
+      {
+        "path": "docs/sdlc-harness/architecture/project-profile-integration.md",
+        "reason": "file-budget",
+        "size": 11001
+      },
+      {
+        "path": "docs/sdlc-harness/architecture/quality-data-plane.md",
+        "reason": "file-budget",
+        "size": 13100
+      },
+      {
+        "path": "docs/sdlc-harness/architecture/security-boundary.md",
+        "reason": "file-budget",
+        "size": 14935
+      },
+      {
+        "path": "docs/sdlc-harness/features/agent-evaluation.md",
+        "reason": "file-budget",
+        "size": 9997
+      },
+      {
+        "path": "docs/sdlc-harness/features/configurable-policy-profile.md",
+        "reason": "file-budget",
+        "size": 8110
+      },
+      {
+        "path": "docs/sdlc-harness/features/opencode-compatibility.md",
+        "reason": "file-budget",
+        "size": 7447
+      },
+      {
+        "path": "docs/sdlc-harness/features/pr-quality-gate.md",
+        "reason": "file-budget",
+        "size": 10139
+      },
+      {
+        "path": "docs/sdlc-harness/features/requirement-impact-analysis.md",
+        "reason": "file-budget",
+        "size": 7136
+      },
+      {
+        "path": "docs/sdlc-harness/features/risk-classifier.md",
+        "reason": "file-budget",
+        "size": 8894
+      },
+      {
+        "path": "docs/sdlc-harness/governance/metrics-spec.md",
+        "reason": "file-budget",
+        "size": 12353
+      },
+      {
+        "path": "docs/sdlc-harness/governance/self-governance-notes.md",
+        "reason": "file-budget",
+        "size": 4123
+      },
+      {
+        "path": "docs/sdlc-harness/research/external-research.md",
+        "reason": "file-budget",
+        "size": 15427
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-14-cli-login-tui.md",
+        "reason": "file-budget",
+        "size": 1303
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-14-cli-peer-host.md",
+        "reason": "file-budget",
+        "size": 1736
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-21-subscription-auth-as-model-api.md",
+        "reason": "file-budget",
+        "size": 899
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-cargo-target-latest-only-gc.md",
+        "reason": "file-budget",
+        "size": 1688
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-cli-account-sync-panel-design.md",
+        "reason": "file-budget",
+        "size": 1809
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-cli-login-tui-design.md",
+        "reason": "file-budget",
+        "size": 1059
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-cli-peer-host.md",
+        "reason": "file-budget",
+        "size": 3289
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-16-mobile-web-login-device-switch-design.md",
+        "reason": "file-budget",
+        "size": 7579
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-19-relay-deploy-log-and-docker-cache-design.md",
+        "reason": "file-budget",
+        "size": 1514
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-20-desktop-streaming-typewriter-design.md",
+        "reason": "file-budget",
+        "size": 3210
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-20-mobile-web-account-pairing-and-device-refresh-design.md",
+        "reason": "file-budget",
+        "size": 3352
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-21-subscription-auth-as-model-api-design.md",
+        "reason": "file-budget",
+        "size": 2313
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-cargo-target-latest-only-gc-design.md",
+        "reason": "file-budget",
+        "size": 2905
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-mobile-web-resume-card-and-autoreconnect-design.md",
+        "reason": "file-budget",
+        "size": 3454
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-24-relay-deploy-cn-mirrors-design.md",
+        "reason": "file-budget",
+        "size": 4363
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-28-flowchat-collapse-smoothness-design.md",
+        "reason": "file-budget",
+        "size": 7085
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 24434
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 9892
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 3176
+      }
+    ],
+    "omitted_count": 140,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 7945,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 146,
+      "complete": false,
+      "omitted": 140,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_26ce21d4b9cb5f42b2314fbac8133d35",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 5,
+    "evaluation": 1,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 7
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/gcwing/openbitfun/32b20c5b291d0e281b3920c84606e646e0e3524a/8a36a510244d7500/manifest.json",
+  "package_id": "pkg_b74667260c8cfdb4b4f48e41a9c041ef37305f0669ec426cac4cb34b90df8fe9",
+  "repo": "gcwing/openbitfun",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c4893c77ed8a3c36c3cd9ec610e1acd641066623efcda84f77b801640ede9cde",
+  "snapshot_id": "8a36a510244d7500",
+  "sources": [
+    {
+      "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+      "git_sha": "8efdb9c53a31bc1fdcb10ffb1db3adb7d6132bf4",
+      "lines": 289,
+      "path": "AGENTS-CN.md",
+      "repository": "gcwing/openbitfun",
+      "sha256": "3a407881a84c379c2ba1e62df0b450255b8b6b02221ce4bb4e77421be742f531",
+      "source_id": "src_224550d58ffb5ceda3bd9e91548547b5",
+      "stored": "agents-cn.md-b7155c95433c.md",
+      "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/AGENTS-CN.md"
+    },
+    {
+      "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+      "git_sha": "d51a4a9ffa708e9fe19c028efee6bc9cec2d10d3",
+      "lines": 180,
+      "path": "CONTRIBUTING_CN.md",
+      "repository": "gcwing/openbitfun",
+      "sha256": "32cee67d346fad114f5757eb726a3fc5e7f444a0a58b10666b7002c4080ea999",
+      "source_id": "src_0e2033bc46fd59d9bb4b1b888ce6b92c",
+      "stored": "contributing_cn.md-0511b080d87b.md",
+      "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/CONTRIBUTING_CN.md"
+    },
+    {
+      "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+      "git_sha": "524d80a94d10c97cc528a08ce93cb013f9efaa40",
+      "lines": 134,
+      "path": "README.md",
+      "repository": "gcwing/openbitfun",
+      "sha256": "45b04d3531485c31ee85de267550cfe345c201b53c74706193b4e4e286e69b7a",
+      "source_id": "src_4d809b0b96105c71b821dc5d7e40b5d5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.md"
+    },
+    {
+      "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+      "git_sha": "7c500d8543dbc8c5fb3c7cf17fb67f2e46637a90",
+      "lines": 136,
+      "path": "README.zh-CN.md",
+      "repository": "gcwing/openbitfun",
+      "sha256": "a43f983fd3af37e14186e9466592778bcf80b014f4ea0d72f5b056b639913eb9",
+      "source_id": "src_f9852b062acf5d98acddefc44765c673",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/README.zh-CN.md"
+    },
+    {
+      "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+      "git_sha": "56835252ae828cb5481e3a073eac41dce1fe6fac",
+      "lines": 59,
+      "path": "SECURITY_CN.md",
+      "repository": "gcwing/openbitfun",
+      "sha256": "a71d41f6d568b451e3b7de8b8aa1b0c52ab3b18f7cef646428b2eb66a34aa39e",
+      "source_id": "src_1b861ada6a2e5d248e312f0c2c8810b3",
+      "stored": "security_cn.md-d7681c59a82c.md",
+      "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/SECURITY_CN.md"
+    },
+    {
+      "commit": "32b20c5b291d0e281b3920c84606e646e0e3524a",
+      "git_sha": "2df801d9c7ef039b10c4c81a75e4a1257a619e32",
+      "lines": 193,
+      "path": "docs/sdlc-harness/design.md",
+      "repository": "gcwing/openbitfun",
+      "sha256": "931499ba69762864440248141e98947608dfe6c5c06740415461ca7b9a2fd5f0",
+      "source_id": "src_4c6e2cf9000d593abbb67b3844eebf16",
+      "stored": "design.md-51929baf9743.md",
+      "url": "https://github.com/GCWing/OpenBitFun/blob/32b20c5b291d0e281b3920c84606e646e0e3524a/docs/sdlc-harness/design.md"
+    }
+  ],
+  "summary": "The snapshot is the README, contributor guides (AGENTS-CN.md, CONTRIBUTING_CN.md), and an SDLC-harness design doc for OpenBitFun, an open-source desktop AI-agent workspace built on a Rust runtime with a React/TypeScript frontend. Evidence supports product claims about its harness modes, multi-device/remote architecture, memory/session handling, and a reported DeepSWE benchmark, plus extensive contributor workflow rules. Evidence coverage: 154 of 226 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

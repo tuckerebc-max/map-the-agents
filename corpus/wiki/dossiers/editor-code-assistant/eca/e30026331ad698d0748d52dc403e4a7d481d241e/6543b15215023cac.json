@@ -1,0 +1,1071 @@
+{
+  "applied_operation_id": "op_83736ac7b167414d88aa4f1f2c3981f7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_bcaa4dd7944a227363f2f5b75e98e84d92c9f50f8b84ff41ee7bdb5f209112e4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "a5e73c827fd9c021c5afffd2d49d14cfd8a4e3c4",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/README.md#L43-L43"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "a5e73c827fd9c021c5afffd2d49d14cfd8a4e3c4",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/README.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce95d79e60afa4f59219506f070ef5e401929bf5102ede93bef3f299249c9e54",
+        "slc_d6f1d8dd36f488e08b0c2cb33f934b34df0844b6dbbddebd74359d69f326df8c"
+      ],
+      "text": "Editors spawn the server via `eca server` and communicate over stdin/stdout using a JSON-RPC protocol inspired by LSP, so any editor can integrate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc6f81e534358cc1add6c2cfaba0c304997b1d8654e23a187fac6f7e41eb3612",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "a5e73c827fd9c021c5afffd2d49d14cfd8a4e3c4",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/README.md#L43-L43"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 56,
+          "line_start": 18,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L18-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce95d79e60afa4f59219506f070ef5e401929bf5102ede93bef3f299249c9e54",
+        "slc_f9b64a00adb78f610ab798bea10149463e805bd3f8e029bd6a6a6cd5b9a84ab3"
+      ],
+      "text": "The server is written in Clojure with a layered layout: handlers.clj receives all JSON-RPC requests, db.clj holds in-memory state, llm_api.clj is the LLM facade, and llm_providers/ holds vendor adapters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_58069c3585076b2b2d16173260158378e67d1a445e64939f04dac93538e92d0d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L60-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8775f9eba4657afca665824b4fc9f82d94233577d711b3e4b1c3f7b64a1f8c9"
+      ],
+      "text": "The documented request flow is: client/editor → stdin JSON-RPC → handlers → features → llm_api → llm_provider, with results streamed back via messenger."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dbf5003be61d4eb18234969493881dc5e366c687a57e421a870f21f14719789a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "a5e73c827fd9c021c5afffd2d49d14cfd8a4e3c4",
+          "line_end": 50,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/README.md#L45-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a3e2d8c91239457ec92812a8956b6714801d8c07b177480fcc908101bd3f1380"
+      ],
+      "text": "ECA places a server between editors and LLMs to centralize tool-call management, multi-LLM interaction, telemetry, and a single configuration shared across editors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc297a72bf081d7431be1cf606dbf20e3aa81f9aca554cea28643cd311290f09",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 56,
+          "line_start": 18,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L18-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f9b64a00adb78f610ab798bea10149463e805bd3f8e029bd6a6a6cd5b9a84ab3"
+      ],
+      "text": "Configuration is centralized and resolved from multiple sources: global config, local config, environment variables, and initializationOptions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6e51bd0e157050c65bac269326ace240333014f81612bda305d3a63d2e4461d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L11-L13"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b2036b7716cdc296d5854b0ae373e31c8e2cad1936ff8013d870ac7151c46a4",
+        "slc_6f32e61ce331ad19f78196a1f90ed5ccb20ec456b57abd85f3c2c72d4e231c49"
+      ],
+      "text": "ECA supports three tool types: native tools (edit_file, write_file, read, etc.), configured MCP servers, and user-defined custom CLI tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd1571767c47fb08c21ec0b4c007f6a644525053b30c9e4e428bc7c5a24118c4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+          "line_end": 51,
+          "line_start": 50,
+          "path": "docs/config/skills.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md#L50-L51"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+          "line_end": 76,
+          "line_start": 55,
+          "path": "docs/config/skills.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md#L55-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_785959a0b070de103d071f9385ee0212cb6d3b3c5a8c045769f5dbb1c381bf12",
+        "slc_c23985fd6852e9ac8bf41bf55d6a928b043dd575007bd8f68425a65e1534522a"
+      ],
+      "text": "Tool-call approval is configurable globally or per agent with allow/deny rules and argsMatchers, e.g. denying `eca__skill` globally while allowing a specific skill name for one agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53d48f2581e309b150970a6e2ae6a2b9a4c64cfddc8c3acaf2d93c273d0cc84a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 243,
+          "line_start": 239,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L239-L243"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 245,
+          "line_start": 245,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L245-L245"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 235,
+          "line_start": 235,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L235-L235"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 237,
+          "line_start": 237,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L237-L237"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c01f72c80140e8b4b00ba754ada80b8582bed4eb7960d848d3dced8da9d140d",
+        "slc_66195aa742dc048f44c5e36a0f6613229a87b2fc46598cbc9d386a0ae2a34593",
+        "slc_7149e36362e430cc9ad732ed64fc0bb5ffa80c9d36d804c52de712e46a2ad90b",
+        "slc_cc44882ef72291edfb7991deb484f97f06ebe2a4baf4639ebb57dc6f94d46a2c"
+      ],
+      "text": "Custom tools are defined in config with a description, a command string containing {{argument_name}} placeholders replaced by LLM-supplied values, and a schema of parameters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_019a6d1b9241994c986dbbcc918fea4e0ec992c4ef898a4938edf78e9aafa185",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "docs/config/skills.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md#L9-L10"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "docs/config/skills.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ccf7f358ac093e2359a8f3b0490835f948672e9ad7bb89000fc04cf158aedd40",
+        "slc_fcfd2b7dab2ab17975661f873c73e708512df791b079d7dda15b4af70e175674"
+      ],
+      "text": "Skills are SKILL.md folders following the agentskills standard, searched in ~/.config/eca/skills, .eca/skills, and .agents/skills; only name and description are sent to the LLM, which loads a skill via the `eca__skill` tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e4d1d0f957eabf056848f842ee69da2d9a1060de36538c50b9379a62b37c164",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "docs/config/skills.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md#L110-L110"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "docs/config/skills.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md#L92-L92"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "docs/config/skills.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_470f8691ebbd8c07c427097f8f2751616779c6c41eb263dd18e378d9aafee135",
+        "slc_5d5bf76543390cc735bb32db0904a6e60784051695b37b601eae3a42fe45b8b6",
+        "slc_f5354988c740bef0bedce7dc0d48347eb02257b06ab31c000e4a42162b706620"
+      ],
+      "text": "Skills can be parameterized as slash commands using $ARGS, $ARGUMENTS, and positional variables; when arguments are given, ECA substitutes them into the skill body instead of using the eca__skill tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c6b83246d050c5a920f328a5e560024391d0bf578276efe022c78151e4d191e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "a5e73c827fd9c021c5afffd2d49d14cfd8a4e3c4",
+          "line_end": 37,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/README.md#L31-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a7c17e00168f032a0605156111b7ead1bfddc552bd400b84d0a45664b289c0df"
+      ],
+      "text": "ECA supports configuring multiple agents/subagents, each with different models, tools, and behaviors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1250660aa7f98281ad294ecb84885b03eece47645ec19e5fdff809bb4499d82",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 56,
+          "line_start": 18,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L18-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f9b64a00adb78f610ab798bea10149463e805bd3f8e029bd6a6a6cd5b9a84ab3"
+      ],
+      "text": "The project builds with Babashka tasks (bb.edn) and Clojure deps.edn including a native GraalVM image target; the server wires together via jsonrpc4clj."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df94f3c9cc1b97bc1ae558e66262dfab16bb3bf7cb5251c037875bdd52f5f621",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 56,
+          "line_start": 18,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L18-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f9b64a00adb78f610ab798bea10149463e805bd3f8e029bd6a6a6cd5b9a84ab3"
+      ],
+      "text": "All runtime state — sessions, chats, and tool servers — lives in an in-memory atom (`db*`) in db.clj."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bcffd2f1369425f3d43da287d372c0c299c641b3f439ce02cf5f2a0415e23d13",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L31-L31"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 29,
+          "line_start": 23,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L23-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b205b5b3ed7834210090da7837601149cd274098ba406e0ff6381ddc36d6689",
+        "slc_d4542703c9a0b30eedfa9b14b7d2c0f37fdbdcda76ad3e53457f0068ed52bbc3"
+      ],
+      "text": "Locally, ECA stores config in ~/.config/eca/config.json, auth tokens in ~/.cache/eca/db.transit.json, and per-workspace conversation history plus truncated tool outputs auto-deleted after 7 days, respecting XDG paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49283325dde0ef9b2855f4e8d28c1ee9f2e4f8de53273c89474436b3984c4dca",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L77-L77"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 75,
+          "line_start": 65,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L65-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7648e099ff5c4a472b339aa00aab686181535d193937e3ef59df43785d9a17a2",
+        "slc_c4f0748968dd9550f74eeeeaf1e53fc4634d456ca4d9f88b0fe0ff6f7e2bb8ce"
+      ],
+      "text": "Documented providers include Anthropic, OpenAI, GitHub Copilot, Google Gemini, Azure OpenAI, DeepSeek, OpenRouter, xAI, and locally running Ollama, plus custom providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0eab46df40bddd7555e009676fe811f0cf24613ad4038b8be85e26296b909ab8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 46,
+          "line_start": 38,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L38-L46"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 32,
+          "line_start": 21,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L21-L32"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 219,
+          "line_start": 219,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L219-L219"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L34-L34"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L17-L17"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+          "line_end": 99,
+          "line_start": 98,
+          "path": "docs/config/tools.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md#L98-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b645e9dd0d8c33d806f9323c8b26729a787ffbe59849a9d7a8322b09ffa0b61",
+        "slc_2bb5635463696d38054ee47e2a96b4e3f8e934a7129f40354307f70c17aaa9f3",
+        "slc_3b1bbbc85d856dd4c1222f0f716a58d92384ef079be9ac5e9ec01b34645c14b1",
+        "slc_685b4fd62078b94ad02d78271c497897b5f71dce316c92b993806e645f34781b",
+        "slc_7d1db4a4f7c26aa0a6012c8d8b7b96b0a337a66b338d047cf81073f9a30512cc",
+        "slc_b15713268a4426aa2785e898d98a2fa257e312720794ba966eeae9a6b2c1913d"
+      ],
+      "text": "MCP servers are configured via an `mcpServers` key supporting stdio commands and HTTP (streamable or SSE) URLs, with OAuth discovery, static Authorization headers, and a `disabled` flag."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd26149171401eb9d477820d0a500ae91440461cb0627f210095ffea76fef8f2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 133,
+          "line_start": 103,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L103-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b151abdf965a8bf00d1f496c2e133c20e9693e63bd873e757360c34c0c7514d0"
+      ],
+      "text": "The new-editor checklist documents protocol methods including initialize/initialized, exit/shutdown, chat/prompt, chat/contentReceived, chat/queryContext, chat/toolCallApprove/Reject, and chat/queryCommands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_410b6a3eb93f3428668a9f23bf20cd1f32dd150b1e63ab94d2bb4fd93c567ecd",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 86,
+          "line_start": 81,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L81-L86"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L7-L7"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L41-L41"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "PRIVACY.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3266fba9c0717d2a1f01e9133928a56fe185502a18e2e723ddea4bd7169f41b0",
+        "slc_4c80d1f3bfe41277e6f620921ed33de82f34a229e09eefc56d39a38f8f4ba6e6",
+        "slc_88795781e49dafaf51390329aa30db208a6f1bcdb517fa0f8472f2c03e60b8e1",
+        "slc_b43f01a6d7e19d23ca76bcfec9dd018063a5b6bc73790d2d5de3a0aa081e9d42"
+      ],
+      "text": "Per its privacy policy, ECA runs entirely locally with no hosted service, no accounts, no analytics or tracking, and ships with no MCP servers enabled by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f7c14c99f4f427934720a2d66c6a69b3d3b1dc9f6878121068a9ad5b7f3b6d0",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L70-L70"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6fb58a69cd780e1ecaea4cd9435340141ba42a0358cf3a4fe8b11030e4b5efc3",
+        "slc_9ffd09b52cd61f0ecef7b5b52105446ff2f41d002d5094357c79bffaf16bc404"
+      ],
+      "text": "No evidence in this snapshot describes benchmarks or success-rate evaluation of the agent; the only test-related material is the repository's own unit and integration test suites."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe481f51f9018c41875141329e76601e840885d80e441d8f5022c3529712ce9c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 76,
+          "line_start": 74,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L74-L76"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L70-L70"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L80-L80"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_621ccd44e5351278313db91631f204c0ac3d0d9f1bbb336eff89b33660aca0e6",
+        "slc_6fb58a69cd780e1ecaea4cd9435340141ba42a0358cf3a4fe8b11030e4b5efc3",
+        "slc_9ffd09b52cd61f0ecef7b5b52105446ff2f41d002d5094357c79bffaf16bc404",
+        "slc_d89b4cf0cab6dedcc0c9cbb0221095f2f701bb6e2c7995a78d8e1e7b8cdec6a6"
+      ],
+      "text": "Repository development practice: contributors run unit tests with `bb test` (CI runs the same task), single namespaces via kaocha focus, and integration tests with `bb integration-test`, which spawns the server over JSON-RPC with mocked LLM and MCP servers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9bba2c9d7fbacad909f4c7adea10fc9cb6e0c9dc690ad9484c53a06d4ab0b505",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 95,
+          "line_start": 92,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L92-L95"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L9-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_162c32a932a1cdddb0bb0a42820186735930989318e31ccf56cba27eb8911652",
+        "slc_abf3ba1339cd52a947a12c122ac0bab41fe9de1c46e5a19e2314a546549ef92a"
+      ],
+      "text": "Repository development practice: a local debug binary is built with `bb debug-cli` (requires babashka), and contributors can attach to the nREPL port printed on stderr to modify the running ECA process."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4241fbeac06d3e97c164183b8465546028cd82147fed26bbac5c926376569049",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L99-L99"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+          "line_end": 133,
+          "line_start": 103,
+          "path": "docs/development.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md#L103-L133"
+        },
+        {
+          "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+          "git_sha": "a5e73c827fd9c021c5afffd2d49d14cfd8a4e3c4",
+          "line_end": 100,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "editor-code-assistant/eca",
+          "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/README.md#L99-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44db4000c2b331d9ab16ce0cbc0e989486969120b95e7f2f4a4aae51b65ae5ba",
+        "slc_b151abdf965a8bf00d1f496c2e133c20e9693e63bd873e757360c34c0c7514d0",
+        "slc_d9350ae1f77afc2ee3897b2faded6a75a87490c9a0db0e4c2dd1519d5f427efb"
+      ],
+      "text": "Repository development practice: contributions are welcomed via issue discussion or pull request with developer details in the development docs, and new-editor integrations follow a UX-consistency checklist."
+    }
+  ],
+  "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 104,
+        "path": "README.md",
+        "size": 6392
+      },
+      {
+        "lines": 40,
+        "path": "docs/workflows.md",
+        "size": 2094
+      },
+      {
+        "lines": 112,
+        "path": "docs/config/skills.md",
+        "size": 3734
+      },
+      {
+        "lines": 660,
+        "path": "docs/config/tools.md",
+        "size": 25128
+      },
+      {
+        "lines": 97,
+        "path": "PRIVACY.md",
+        "size": 6225
+      },
+      {
+        "lines": 137,
+        "path": "docs/development.md",
+        "size": 8443
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/features.md",
+        "reason": "file-budget",
+        "size": 11678
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 385
+      },
+      {
+        "path": "docs/install.md",
+        "reason": "file-budget",
+        "size": 244
+      },
+      {
+        "path": "docs/protocol.md",
+        "reason": "file-budget",
+        "size": 95136
+      },
+      {
+        "path": "docs/read-chat.md",
+        "reason": "file-budget",
+        "size": 6781
+      },
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 60
+      },
+      {
+        "path": "docs/terms.md",
+        "reason": "file-budget",
+        "size": 4035
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 2788
+      },
+      {
+        "path": "docs/config/chat-inline.md",
+        "reason": "file-budget",
+        "size": 1144
+      },
+      {
+        "path": "docs/config/commands.md",
+        "reason": "file-budget",
+        "size": 3462
+      },
+      {
+        "path": "docs/config/completion.md",
+        "reason": "file-budget",
+        "size": 532
+      },
+      {
+        "path": "docs/config/context-management.md",
+        "reason": "file-budget",
+        "size": 5074
+      },
+      {
+        "path": "docs/config/examples.md",
+        "reason": "file-budget",
+        "size": 21303
+      },
+      {
+        "path": "docs/config/hooks.md",
+        "reason": "file-budget",
+        "size": 26225
+      },
+      {
+        "path": "docs/config/introduction.md",
+        "reason": "file-budget",
+        "size": 10133
+      },
+      {
+        "path": "docs/config/metrics.md",
+        "reason": "file-budget",
+        "size": 733
+      },
+      {
+        "path": "docs/config/models.md",
+        "reason": "file-budget",
+        "size": 27929
+      },
+      {
+        "path": "docs/config/network.md",
+        "reason": "file-budget",
+        "size": 5251
+      },
+      {
+        "path": "docs/config/plugins.md",
+        "reason": "file-budget",
+        "size": 10909
+      },
+      {
+        "path": "docs/config/remote.md",
+        "reason": "file-budget",
+        "size": 6113
+      },
+      {
+        "path": "docs/config/rewrite.md",
+        "reason": "file-budget",
+        "size": 1066
+      },
+      {
+        "path": "docs/config/rules.md",
+        "reason": "file-budget",
+        "size": 7490
+      },
+      {
+        "path": "docs/config/sandboxing.md",
+        "reason": "file-budget",
+        "size": 6650
+      },
+      {
+        "path": "docs/config/variants.md",
+        "reason": "file-budget",
+        "size": 8529
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5317
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 89666
+      },
+      {
+        "path": "docs/config/agents.md",
+        "reason": "file-budget",
+        "size": 13155
+      }
+    ],
+    "omitted_count": 27,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 331,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 33,
+      "complete": false,
+      "omitted": 27,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_242fad596a8857ae9ce8c7692b215c92",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 3,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/editor-code-assistant/eca/e30026331ad698d0748d52dc403e4a7d481d241e/6543b15215023cac/manifest.json",
+  "package_id": "pkg_f47e344e1f9952e201221f4be5de8bb3d64ebf15f908224b14aae35e4c9fc899",
+  "repo": "editor-code-assistant/eca",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5fad1dceb6b987d6950b44cb9811317f778fc451cca21c99bdfbbd880599cd54",
+  "snapshot_id": "6543b15215023cac",
+  "sources": [
+    {
+      "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+      "git_sha": "7f2170e64ca05ea55407622713b0a01f270c5269",
+      "lines": 97,
+      "path": "PRIVACY.md",
+      "repository": "editor-code-assistant/eca",
+      "sha256": "68cc1af58e823634180d1cd164a8ce1c0accf9917e97f222459e851beef747fb",
+      "source_id": "src_584caea6a24d5407bb692358b5e4745f",
+      "stored": "privacy.md-ee5dfa56c2aa.md",
+      "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/PRIVACY.md"
+    },
+    {
+      "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+      "git_sha": "a5e73c827fd9c021c5afffd2d49d14cfd8a4e3c4",
+      "lines": 104,
+      "path": "README.md",
+      "repository": "editor-code-assistant/eca",
+      "sha256": "8c1fa7a74fb294f01b1df2c9d49a791cf3106f2d4c63a8b0744da34bd55dd5ae",
+      "source_id": "src_458988914bc75d8787fca99800aeaaa1",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/README.md"
+    },
+    {
+      "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+      "git_sha": "68fb9b2e98a9b4c638ada9fc2f0d3c1ab657dba6",
+      "lines": 112,
+      "path": "docs/config/skills.md",
+      "repository": "editor-code-assistant/eca",
+      "sha256": "f85fa90ea397ff8ccff8ba4ef71b73f854c82b141f13e0d447794659ff652662",
+      "source_id": "src_d3c3442a2cb35f4b92143775a9f91ccb",
+      "stored": "skills.md-e34cb851ae9d.md",
+      "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/skills.md"
+    },
+    {
+      "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+      "git_sha": "100c306b9251a8e6a577de48de8382b2f577fa2a",
+      "lines": 660,
+      "path": "docs/config/tools.md",
+      "repository": "editor-code-assistant/eca",
+      "sha256": "d1621a55001b4e97fc31dadc6be66c537707339534f0df09982a84f2bbec1103",
+      "source_id": "src_b107abf72ecc5e23a4054c09d6ccef48",
+      "stored": "tools.md-af4cc2dc8a72.md",
+      "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/config/tools.md"
+    },
+    {
+      "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+      "git_sha": "da827142112397d23fc7b83a532425519d7b0db9",
+      "lines": 137,
+      "path": "docs/development.md",
+      "repository": "editor-code-assistant/eca",
+      "sha256": "e38fabf7be3ef6ddfed78d6434482b9c94c8da0e716ef2afbeb88860fc58bb53",
+      "source_id": "src_e7a8321878f35a30854832ccae1a5175",
+      "stored": "development.md-97db29a79153.md",
+      "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/development.md"
+    },
+    {
+      "commit": "e30026331ad698d0748d52dc403e4a7d481d241e",
+      "git_sha": "18e66af94ac0c0f96fc9ac3e08a5593a1c366c27",
+      "lines": 40,
+      "path": "docs/workflows.md",
+      "repository": "editor-code-assistant/eca",
+      "sha256": "e768b72c03d4c273cd0b646b8d9020a6aba34b514823eb349fd244f28ccdb67a",
+      "source_id": "src_6b13fbe0c39a59729d42a9a8340d3142",
+      "stored": "workflows.md-bd573a35fde7.md",
+      "url": "https://github.com/editor-code-assistant/eca/blob/e30026331ad698d0748d52dc403e4a7d481d241e/docs/workflows.md"
+    }
+  ],
+  "summary": "ECA is a Clojure, editor-agnostic AI coding-assistant server speaking JSON-RPC over stdin/stdout, with configurable tools, MCP servers, skills, and agents, storing data locally per its privacy doc. Development docs describe Babashka-based build/test workflows for contributors. Evidence coverage: 148 of 239 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

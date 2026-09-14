@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0436209ef852dd338c900e39c51d48a306cf3a966dc2918c489f69eef0125c6e
+- clm_2b22143d3cf95c1ad03c3f603d1a011fbbaa82ed5abd65f03e7dff85519072ea
+- clm_3c5eb670348609270c58dd03f215b215170a981fa86e4873bcd2f8f709c47e32
+- clm_458290ce0cec9216c8529a93ea557244643ee0ea10748d51bf418aba8b1832b4
+- clm_4da748aae36a90b763a4ba489d4c77c9e8dacfc8aa4f443de44255eea849fd69
+- clm_6f46da09f01f8f4fbb504f94ec6ba6954cada1f6c12de35fe1a79fc90d8e500d
+- clm_7c3c8e33ea673ee045120f56fd2f7f5d3fa44547b5052051ad11eb443dd5adc2
+- clm_a241be97bb6392c5c92af01a4325785a07afe6971d37be755619c05464f9a5cf
+- clm_a9d862bd996c17a0cc96d717d242af9d59c40dded5027b9eea95079926d1d6c8
+- clm_b12d3939de92810272ac8350ac8eae7ea253e04c5566756493dcad43c197b74d
+- clm_ca3a616c6fd860ddc4d82c8d2bcaa9dd0a61063ee489c742f945655ee36fb377
+- clm_ed0e187f0f434b0fcbc5e29f295ff9e2bf9df6f9b6b4eeada36d4a42539ee90c
+maturity: draft
+page_id: pg_ac9288958e1a5bf0afbd0c5a536a70b1
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_7525875336325448b9fb07fb41083eaa
+title: seandavi/agentic-coding-intro/README.md @ f3a290d2df43
+updated_at: '2026-09-14T04:19:38Z'
+---
+
+# seandavi/agentic-coding-intro/README.md @ f3a290d2df43
+
+<!-- rcw:begin owner=source:src_7525875336325448b9fb07fb41083eaa block=evidence -->
+- The handout teaches a conceptual distinction between the LLM (reasoning engine) and the agentic framework layer, which supplies the plan/act/observe/revise loop, tool routing, session memory, and permission guardrails. [@claim:clm_0436209ef852dd338c900e39c51d48a306cf3a966dc2918c489f69eef0125c6e]
+- The handout warns that Antigravity's free tier is rate-limited with unpublished, changing limits and a reported weekly ceiling (roughly 20 requests per day on the fast model, described as unofficial), so sustained work can exhaust it quickly. [@claim:clm_2b22143d3cf95c1ad03c3f603d1a011fbbaa82ed5abd65f03e7dff85519072ea]
+- The handout targets developers already comfortable writing code in R and/or Python who are new to AI coding tools, aiming to teach the agentic interface rather than replace programming skill. [@claim:clm_3c5eb670348609270c58dd03f215b215170a981fa86e4873bcd2f8f709c47e32]
+- A worked hello-world exercise walks through creating a small Python file, then prompts to explain, edit with a CLI argument, add a pytest test, and extend to an R package structure with DESCRIPTION, NAMESPACE, and tests/. [@claim:clm_458290ce0cec9216c8529a93ea557244643ee0ea10748d51bf418aba8b1832b4]
+- The title deliberately strikes through 'Gemini CLI' to illustrate that specific tools change within months, so the handout emphasizes slowly-changing concepts like agents, context, tokens, and file-based habits. [@claim:clm_4da748aae36a90b763a4ba489d4c77c9e8dacfc8aa4f443de44255eea849fd69]
+- Antigravity is a downloadable desktop application for macOS, Windows, and Linux requiring sign-in with a Google account; it is model-flexible, with Gemini 3 Pro, Claude Sonnet 4.5, and open models mentioned as options. [@claim:clm_6f46da09f01f8f4fbb504f94ec6ba6954cada1f6c12de35fe1a79fc90d8e500d]
+- The document advocates Markdown files as project memory and decision records, noting Antigravity's Artifacts and Knowledge Base and its reported automatic pickup of AGENTS.md, GEMINI.md, and CLAUDE.md instruction files. [@claim:clm_7c3c8e33ea673ee045120f56fd2f7f5d3fa44547b5052051ad11eb443dd5adc2]
+- The document cites research findings ('Lost in the Middle', Liu et al. 2023, and 2025 'context rot' work) showing model attention degrades on long inputs, so large advertised context windows do not guarantee reliable attention. [@claim:clm_a241be97bb6392c5c92af01a4325785a07afe6971d37be755619c05464f9a5cf]
+- The handout describes MCP (Model Context Protocol) as an open standard for connecting AI applications to external tools and data, letting agents reach beyond the local filesystem to services like GitHub or databases. [@claim:clm_a9d862bd996c17a0cc96d717d242af9d59c40dded5027b9eea95079926d1d6c8]
+- The document's stated tool is Google Antigravity, described as Google's agentic development platform where an agent can plan, edit files, run commands, and drive a browser; the official download link is provided. [@claim:clm_b12d3939de92810272ac8350ac8eae7ea253e04c5566756493dcad43c197b74d]
+- The handout recommends keeping broadly applicable facts in one stable instruction file while moving task-specific procedures into skills or separate documents that load on demand, to conserve context budget. [@claim:clm_ca3a616c6fd860ddc4d82c8d2bcaa9dd0a61063ee489c742f945655ee36fb377]
+- The handout explains tokens and the context window, including the ~4-characters-per-token rule of thumb, higher tokenization cost for code, and that output tokens typically cost 4x-8x more than input tokens. [@claim:clm_ed0e187f0f434b0fcbc5e29f295ff9e2bf9df6f9b6b4eeada36d4a42539ee90c]
+<!-- rcw:end owner=source:src_7525875336325448b9fb07fb41083eaa block=evidence -->
+
+## Researcher notes
+

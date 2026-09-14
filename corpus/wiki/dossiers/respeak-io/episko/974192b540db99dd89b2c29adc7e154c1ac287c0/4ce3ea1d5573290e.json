@@ -1,0 +1,599 @@
+{
+  "applied_operation_id": "op_42d951e5c8e3444c995397f51bca083f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f723a986601aab63a03fdc1f1d0673b3deb16cf23fb23408fb86a3e98396b525",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 73,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L69-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a49707b3f61e3d06da0cbd111d802202edbe15e5a54a03b83c14fb4507fd2a22"
+      ],
+      "text": "The app is built on Tauri v2 with a Rust backend and system WebView frontend, uses portable-pty for PTYs (forkpty on macOS, ConPTY on Windows), tiny_http as a localhost telemetry receiver, and xterm.js for terminal rendering."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2dcc3989d0b6b40663e797f5005a2a58a72f5c14f8a00c44668b7b263e68a213",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44263469b7f1573b6f9102cbec2b75435175ce455147a3742d636af39f3a4445"
+      ],
+      "text": "Episko gives each coding-agent session its own real terminal; Claude Code and Codex are first-class integrated providers, while other installed CLIs work through a terminal-only adapter pane."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5fdb4a55b5f93b8e54ab4685d3897a0a1f243dcb65affd7316d34188af16d0ca",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 28,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L13-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d81fec555331ff11678c41fdc26c05a6d7824f7c7929414a1ca35e0d34869f3c"
+      ],
+      "text": "When Claude or Codex requests to run something, the app surfaces the command with a risk read and lets the user allow, deny, or hand it to the terminal; starting permission/sandbox policy is stored per integrated agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e49b74051b68b59b2510320f15ea466d3feb96182df10ee601e2eb6e1d9226fe",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L61-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7d5e7db638f1f6f8622d411683c5b2f4ba6a59e07676b32a17d19687a3556dc1"
+      ],
+      "text": "On each Claude launch the app writes a throwaway --settings file whose statusLine command and lifecycle hooks POST to a tiny_http server on an ephemeral localhost port; Codex launches use a loopback App Server, and both transports feed one provider-neutral event reducer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_58d49cb0f4bbf07aa2f5bbceb66c3bb570d386c58df373e7437011bad4b2d702",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f772959393d6d131f590e167a39fd0675cf472e6fe8122deadfbfe3bd8a0e971"
+      ],
+      "text": "Telemetry POSTs are tagged with a launch id so events route to the correct pane, and routing survives /clear, /compact and /resume, each of which makes Claude mint a new runtime session_id; the permission hook is a blocking call held open until answered."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fc01ec2cf3f6d16e7e7d84b6c7883a00215834cb8cdad4775c380061ee79393",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L43-L43"
+        },
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_80ef9988802e8a6e5892d9d1ec830fbdd933a8ca2cf31dd3508c498ca7b90933",
+        "slc_9c4c1bea01026a2293c16dc7b34ecc28318fef03c6a887b4ab27b75dacb2d648"
+      ],
+      "text": "The app discovers and runs tasks the project already ships — .episko/tasks.toml, .vscode/tasks.json and launch.json, package.json scripts, justfile, Taskfile.yml, mise.toml, Makefile, Cargo.toml — in the same PTY panes as agent sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02a67e5fbd8668710ef87e77d6a7f37949cf8271012baeaaa6a29ba1a0cc7255",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 55,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L53-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6302e04c66335cb7455fe0e748c18734c5425be52c505b9eecb07f97f7531cc2"
+      ],
+      "text": "Task discovery never executes the project: just --dump, task --list and mise tasks ls sit behind a trust gate, Makefiles are parsed statically, and tasks that cannot run are shown greyed with the reason rather than hidden."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68b982be134a8e8f6e2c67f9ad093146411768073c38a57ca7321ec7be2855b5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 37,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L34-L37"
+        },
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 55,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L53-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a7dabc68cb66e7a1d95740d0470a609c26d5e00125b164eff3c44613a9ca6e6",
+        "slc_6302e04c66335cb7455fe0e748c18734c5425be52c505b9eecb07f97f7531cc2"
+      ],
+      "text": "Personal preferences go to localStorage while project facts go to .episko/tasks.toml, described as the only file the app writes, edited via toml_edit so comments and ordering survive; shared digests and notes can be committed as .episko/digest.md and .episko/notes.toml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5166c510d594cfebe5ac17cd5ea67ddfbf4a3f819e189c51f5806b84a072ea55",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 105,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L103-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a042382aed963ef1aeffdc986f1f730501e68543f3aac88fbef0d4ba1f306bed"
+      ],
+      "text": "Building from source requires Node.js 18+, pnpm, stable Rust with Tauri system dependencies, and at least one supported coding-agent CLI on PATH."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_308719839b799042f0d33499aa4b79f1fcaa4c07a263ae45f87f5b02c9a32039",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L81-L81"
+        },
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L137-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_369f89eacc7d9dafc5f06bc4125cef50997f6b9b08b1edd1cab9c5b7d27e5163",
+        "slc_9b2d159e8168cef1bbfba60d7eba085b65ad86dd0c897ebf6b9d2926611c2628"
+      ],
+      "text": "Release builds target Apple-silicon macOS and Windows x64; Intel Macs are not covered and Linux is not packaged. The macOS build is self-signed but not notarized, so Gatekeeper quarantines the download and users must clear the quarantine flag before opening."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6b21826e31b91d28a20606c7db0ad041f1309935f98c49d0766efa6068f5a83",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 37,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L34-L37"
+        },
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a7dabc68cb66e7a1d95740d0470a609c26d5e00125b164eff3c44613a9ca6e6",
+        "slc_abc41734915764b5ce3138f6bd0a791053a86bbe5a525520856575550055c7f8"
+      ],
+      "text": "Each project gets a dashboard with per-day commit and session summaries, issues with triage suggestions, GitHub claims that mark an issue as taken by an agent, and worktree checkouts; feature depth degrades for plain git repos and bare folders."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0ead2dfe1eb6f65a6454b29a6307f741f7cd1533a730aa3dea386e76c6535bc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "aaa95a459a1af8007911c4072e14a32c1997f0df",
+          "line_end": 467,
+          "line_start": 460,
+          "path": "RELEASE.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/RELEASE.md#L460-L467"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a63f0b5c11ecfd3c4ae7ad7d335fdcbc18b74ee814f2191f7359901a7dee250"
+      ],
+      "text": "The app detects external Claude sessions started outside Episko and shows them as read-only mirrors in the sidebar, and can jump to the terminal tab or window hosting such a session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea76b3cd23d31bb7c1bd2f03431942a813d45aae3a2ed963f18ed0290a1ef2fb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "aaa95a459a1af8007911c4072e14a32c1997f0df",
+          "line_end": 22,
+          "line_start": 17,
+          "path": "RELEASE.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/RELEASE.md#L17-L22"
+        },
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "aaa95a459a1af8007911c4072e14a32c1997f0df",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "RELEASE.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/RELEASE.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f26496fd72c6444e8c01dd5df8032e54f28b555ce765d745e51c643367e83e8",
+        "slc_5cb8b077b9be7dae5990c93fe75ec8b3860fa1277c932db609404a3d42401ed6"
+      ],
+      "text": "Repository development practice: CI runs on every push and PR to dev/main on both macOS and Windows, covering strict tsc typecheck, vitest suites (~1,535 it blocks), cargo check/test --locked (~270 #[test] functions) and clippy with -D warnings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f91685431e1d62c25b8b3b80a97ba9903b98796c4b53200736b3eeef2492cb50",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "aaa95a459a1af8007911c4072e14a32c1997f0df",
+          "line_end": 57,
+          "line_start": 54,
+          "path": "RELEASE.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/RELEASE.md#L54-L57"
+        },
+        {
+          "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+          "git_sha": "aaa95a459a1af8007911c4072e14a32c1997f0df",
+          "line_end": 82,
+          "line_start": 61,
+          "path": "RELEASE.md",
+          "repository": "respeak-io/episko",
+          "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/RELEASE.md#L61-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83192df6117242c879a681256d1315f542ea98f506c0e6b60df0aaf9f16b1e2a",
+        "slc_9f57bf24fe854fccb376ec585c53f3139cab4019d331c48eedc8c5d1f25310ff"
+      ],
+      "text": "Repository development practice: ignored cargo contract tests against real Claude Code (instrumentation, permission modes, temp-dir layout) are run manually via cargo test -- --ignored because CI lacks claude on PATH; one of them spends tokens and needs authentication."
+    }
+  ],
+  "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 171,
+        "path": "README.md",
+        "size": 15863
+      },
+      {
+        "lines": 20,
+        "path": "AGENTS.md",
+        "size": 988
+      },
+      {
+        "lines": 591,
+        "path": "RELEASE.md",
+        "size": 38836
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 98157
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "byte-budget",
+        "size": 86301
+      },
+      {
+        "path": "PLAN.md",
+        "reason": "byte-budget",
+        "size": 80658
+      },
+      {
+        "path": "SPIKE.md",
+        "reason": "file-budget",
+        "size": 4982
+      },
+      {
+        "path": "docs/architecture.md",
+        "reason": "file-budget",
+        "size": 35966
+      },
+      {
+        "path": "docs/commit-graph.md",
+        "reason": "file-budget",
+        "size": 4709
+      },
+      {
+        "path": "docs/dashboard.md",
+        "reason": "file-budget",
+        "size": 23084
+      },
+      {
+        "path": "docs/explorer.md",
+        "reason": "file-budget",
+        "size": 4790
+      },
+      {
+        "path": "docs/macos-access.md",
+        "reason": "file-budget",
+        "size": 4414
+      },
+      {
+        "path": "docs/native-ui.md",
+        "reason": "file-budget",
+        "size": 6907
+      },
+      {
+        "path": "docs/providers.md",
+        "reason": "file-budget",
+        "size": 6700
+      },
+      {
+        "path": "docs/releases.md",
+        "reason": "file-budget",
+        "size": 2662
+      },
+      {
+        "path": "docs/sessions.md",
+        "reason": "file-budget",
+        "size": 43604
+      },
+      {
+        "path": "docs/settings.md",
+        "reason": "file-budget",
+        "size": 5880
+      },
+      {
+        "path": "docs/sounds.md",
+        "reason": "file-budget",
+        "size": 6436
+      },
+      {
+        "path": "docs/tasks.md",
+        "reason": "file-budget",
+        "size": 17603
+      },
+      {
+        "path": "docs/testing.md",
+        "reason": "file-budget",
+        "size": 7824
+      },
+      {
+        "path": "docs/tour.md",
+        "reason": "file-budget",
+        "size": 15823
+      },
+      {
+        "path": "docs/worktrees.md",
+        "reason": "file-budget",
+        "size": 43758
+      }
+    ],
+    "omitted_count": 19,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 300,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 22,
+      "complete": false,
+      "omitted": 19,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_c9d8cc22c6c7567799e0f10379a16d1e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/respeak-io/episko/974192b540db99dd89b2c29adc7e154c1ac287c0/4ce3ea1d5573290e/manifest.json",
+  "package_id": "pkg_028296fe94a658b3dd5ad30c87b65b72eadf5ba290ea0723051ea806ae5f15f1",
+  "repo": "respeak-io/episko",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2c0cc6e6055764f75da6ab01a778324715fcba06b7744c3487f6b8ada5b1ac3b",
+  "snapshot_id": "4ce3ea1d5573290e",
+  "sources": [
+    {
+      "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+      "git_sha": "3d3ecf2417e7ed02ec99492cefe3ed27cb7803fb",
+      "lines": 20,
+      "path": "AGENTS.md",
+      "repository": "respeak-io/episko",
+      "sha256": "4a17354552ec3982290e9e9270994790d24cce299584bf55ce0feeb9a64a05ec",
+      "source_id": "src_a8e6501bb231544e9b107fd6737b6c5c",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/AGENTS.md"
+    },
+    {
+      "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+      "git_sha": "0e7e40f0dfa7cbc62342c3ae4839fd7adba54685",
+      "lines": 171,
+      "path": "README.md",
+      "repository": "respeak-io/episko",
+      "sha256": "4c3a31f9da4a086d250732ad5a779d01ec7cf8f9e8d7ce3d0753eb102f98b1f9",
+      "source_id": "src_074816f558215de0a5e8986c98cdcc40",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/README.md"
+    },
+    {
+      "commit": "974192b540db99dd89b2c29adc7e154c1ac287c0",
+      "git_sha": "aaa95a459a1af8007911c4072e14a32c1997f0df",
+      "lines": 591,
+      "path": "RELEASE.md",
+      "repository": "respeak-io/episko",
+      "sha256": "5383e1949371e65b88a4d1d841805587dcf2bed2f7286f46d5111b4bb94d4111",
+      "source_id": "src_6760d0311ba75608abc669476b6bc308",
+      "stored": "release.md-2b1b69303b92.md",
+      "url": "https://github.com/respeak-io/episko/blob/974192b540db99dd89b2c29adc7e154c1ac287c0/RELEASE.md"
+    }
+  ],
+  "summary": "Episko is a Tauri v2 desktop app for running many coding-agent sessions in real PTY terminals with live telemetry, in-app permission answering, project dashboards, and task running. Evidence is largely README product documentation plus a release procedure document. Evidence coverage: 102 of 116 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

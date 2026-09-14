@@ -1,0 +1,616 @@
+{
+  "applied_operation_id": "op_ed8b945d28aa4763ae4aa9f74db5227c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ed679f2e3751906f4447a3da39fcd759fca00470c005f58ce48157e09f8fb21",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e2a0158313aba9106d7a983fba89b2b90b2c7f744b73e9abc41984d8a4c80469"
+      ],
+      "text": "Needle 2 is described as an open 45M-parameter model for tool calling, device use and structured extraction, shipped as a single 14MB binary that runs a session in about 28MB of RAM."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_527cef466feb87996281312d8fba7dd5282bf122bbcd45f59b202a367e63e0c3",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e2a0158313aba9106d7a983fba89b2b90b2c7f744b73e9abc41984d8a4c80469"
+      ],
+      "text": "The model is said to be compressed to CQ2-bit via Cactus Quants and built on the Simple Attention Network findings, baked into its own engine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d420df65fb5faf82007fa72f2259b0162051296301856c51f473b188d73b4ee",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_abca5874d924a9e74cbe18b4092da5b6e0e265d813fb53e7c1b8cf81ca19d99b"
+      ],
+      "text": "The repository is the Python package cactus-needle covering inference, LoRA fine-tuning, and export; the inference engine is fetched once from Hugging Face and cached."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8073d6887fd543270ac5fc17e391f6154679e4a3bb9390a7be34bc512635444",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+          "line_end": 127,
+          "line_start": 120,
+          "path": "doc/apis.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md#L120-L127"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L9-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47c24118572fe5d7703f67968c7d27df6cf7152ea66e8a13ebe371699c829689",
+        "slc_a8f4810d0ae7feb0f44dff0493f947c29f4cc19fe6aa96fca513db44575dabab"
+      ],
+      "text": "Tool calls are constrained by a byte-level grammar compiled from the declared schemas, so output is structured JSON and cannot be malformed; the reasoning field is generated unconstrained."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_270696d65805383ec97ef3c7814e31ec64b6b883df3b13e64def131e237f870e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "doc/apis.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md#L171-L171"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L9-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_210c9c5476b77edeb071303404ea42bbc168eb8dffbc78259260304204f56f15",
+        "slc_a8f4810d0ae7feb0f44dff0493f947c29f4cc19fe6aa96fca513db44575dabab"
+      ],
+      "text": "Every response carries a calibrated confidence score from a learned head, defined as the minimum of a post-hoc head score and the decoding probability of the call tokens; users set a threshold and escalate below it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f170c7f8620d525fa3b69b90323ac4653aa4e10ee719e0d73995ee1b1e7814fe",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+          "line_end": 167,
+          "line_start": 167,
+          "path": "doc/apis.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md#L167-L167"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L9-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_604f67c766af41949871b9cefd3c641d40963a0b4b2a6e4415bb13f6f7e35a27",
+        "slc_a8f4810d0ae7feb0f44dff0493f947c29f4cc19fe6aa96fca513db44575dabab"
+      ],
+      "text": "For catalogues above five tools, a built-in contrastive retrieval head embeds schemas at init and renders only the top five tools per turn, rebuilding the grammar over that subset."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df2769309b4444b276236564b419700a85cde2a56aa5b21b4954b96582998b69",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L9-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a8f4810d0ae7feb0f44dff0493f947c29f4cc19fe6aa96fca513db44575dabab"
+      ],
+      "text": "The runtime uses a 256-token sliding window with tools pinned as KV sinks, which the README says keeps total memory near 28MB regardless of conversation length."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10ec3ced1b0716cebbcbd2a2c3d7862b2d8fcb258afb359b76c7612a6414e80e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "a9e2ca6d608d1e2645add2eaa0bf5663736b7786",
+          "line_end": 28,
+          "line_start": 18,
+          "path": "llms.txt",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/llms.txt#L18-L28"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+          "line_end": 12,
+          "line_start": 3,
+          "path": "doc/apis.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md#L3-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6adcca52300f405fdca7e2b086119d1af9136377331fbcbd9280e83a85cd1540",
+        "slc_abdd01234c4fcf6619c8018957ef23c177273e8c48c9899590c69b9c23717b2e"
+      ],
+      "text": "The Python API exposes needle.Needle(tools, system, weights, tool_index_path, buffer_size), agent.run/complete/embed/reset, needle.tool, needle.Field, and needle.extract; tools can be decorated functions, Pydantic models, raw JSON schemas, or a JSON string."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b073d68618295e2f8c1f250d99780f2a392de26d6043f2bd702bafa0c830bf56",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+          "line_end": 114,
+          "line_start": 101,
+          "path": "doc/apis.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md#L101-L114"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "a9e2ca6d608d1e2645add2eaa0bf5663736b7786",
+          "line_end": 106,
+          "line_start": 102,
+          "path": "llms.txt",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/llms.txt#L102-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_732c35294f0b0c85cb8e6ca23ae8cb522daeef5104e0da2273cf6916317bd7a3",
+        "slc_c44e0cf4e6b611bc5d39159fb1b454d62e202bd84c70e5cde3de70b1d708da14"
+      ],
+      "text": "Each turn returns one JSON object with fields including type, success, error, function_calls, reasoning, confidence, prefill_tps, decode_tps, and peak_ram_mb; empty function_calls is the off-topic refusal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_91ac23d2434e7ee7770189d0be48da5f1878558cfb6ba0ee877e442f96305f56",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+          "line_end": 127,
+          "line_start": 120,
+          "path": "doc/apis.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md#L120-L127"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+          "line_end": 12,
+          "line_start": 3,
+          "path": "doc/apis.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md#L3-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47c24118572fe5d7703f67968c7d27df6cf7152ea66e8a13ebe371699c829689",
+        "slc_abdd01234c4fcf6619c8018957ef23c177273e8c48c9899590c69b9c23717b2e"
+      ],
+      "text": "agent.run() drives a full agentic loop (max_steps=8 default): the model picks calls, Needle executes the user's Python functions, feeds results back, and returns final results; ungrounded fields are refused unless strict=False."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6dc5efe24d6c7f87c67060a7435ab98d951335969ae7f7e09b193b4d8c77b5ee",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L126-L126"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "a9e2ca6d608d1e2645add2eaa0bf5663736b7786",
+          "line_end": 82,
+          "line_start": 76,
+          "path": "llms.txt",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/llms.txt#L76-L82"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L132-L132"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "a9e2ca6d608d1e2645add2eaa0bf5663736b7786",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "llms.txt",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/llms.txt#L14-L14"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 34,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L33-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51c56e67ce798cf3b53b867d12603bc531a9a6d6b069559abdbcb53d80007a9f",
+        "slc_730632fbb3a6c5b235c103b43226e4e14990de9347bb91b4161f295d07947577",
+        "slc_9ac4aad13806c1af10f8e144cb9e35333240f7d20810d33f82ab8a5e549d7214",
+        "slc_ac568c93d69c4fa320a3182879fcd85ae01e48c99372cb649021de385a8ac253",
+        "slc_f4452e194dc93b031c0cc100527b7f8032febb7cc31787b34f477db3cfc3d94c"
+      ],
+      "text": "The runtime install excludes training; fine-tuning and export need the [train] extra (JAX, imported lazily), with [train,gpu] for CUDA and [train,metal] for Apple Silicon; Pydantic is used for typed extraction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_348d2201733e5695078f30a40b91ddafa25cf0cd2b2e0e7d87ac019012ff9b96",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L138-L138"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L124-L124"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L99-L99"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 142,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L140-L142"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L107-L107"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 113,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L109-L113"
+        },
+        {
+          "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+          "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+          "line_end": 122,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "cactus-compute/needle",
+          "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md#L119-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_061fcd79aa13a53d20f6471ef6f4e2eb2bebb4e0d22e9575a2634b48a35c1582",
+        "slc_13b5fafd709523a20be3e7e1847a86f1b91622b78aa5f4c9dbdad7495d950b43",
+        "slc_24415a5d878c5c858a9a69125e056b9158a7d29fe1307dd5a160238bd7b1c681",
+        "slc_614158e154a81800e08a1964101192a4092a369d7418d6c6ddfde9ab35b277ee",
+        "slc_768e6c87b955793c8c9423401895616ce4abb9e3e91a2ea78a2b2c93baf4c5dd",
+        "slc_cc955ab81bdead23e5fd3f39e4fa8335c6edb1c51d43058f3ed24a4cb11908d7",
+        "slc_f97eb3b972379e184614508aa69fb26262c29d402e94b890f411206c7a0e833d"
+      ],
+      "text": "The documented fine-tuning workflow is: optionally synthesize data via needle generate-data (needs OPENROUTER_API_KEY), LoRA fine-tune with needle finetune (defaults epochs 3, lora-rank 16, lr 1e-4), then merge and quantize with needle build into a .cact archive."
+    }
+  ],
+  "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 173,
+        "path": "README.md",
+        "size": 10276
+      },
+      {
+        "lines": 221,
+        "path": "llms.txt",
+        "size": 12217
+      },
+      {
+        "lines": 9,
+        "path": "requirements-train.txt",
+        "size": 116
+      },
+      {
+        "lines": 2,
+        "path": "requirements.txt",
+        "size": 39
+      },
+      {
+        "lines": 197,
+        "path": "doc/apis.md",
+        "size": 13423
+      },
+      {
+        "lines": 118,
+        "path": "doc/environments.md",
+        "size": 5684
+      }
+    ],
+    "omitted": [
+      {
+        "path": "doc/finetuning.md",
+        "reason": "file-budget",
+        "size": 7407
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 63,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_3e234a27953b544d9162005867da651d",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/cactus-compute/needle/956840ff176bfe179bb2f230b726f4be44fb11cf/60917bc650675824/manifest.json",
+  "package_id": "pkg_32798c460ea09986eb4eca2fdb85021a9d2faadf629bb8ac9b12564e835001a7",
+  "repo": "cactus-compute/needle",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "286a0d3ed79105667b301b8ec4cd6abb45b390a9a58f23a62146f9f081759df1",
+  "snapshot_id": "60917bc650675824",
+  "sources": [
+    {
+      "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+      "git_sha": "d407c57824b8cf4d96af6c136717995ecd2aae9a",
+      "lines": 173,
+      "path": "README.md",
+      "repository": "cactus-compute/needle",
+      "sha256": "9719db4e38f758256e70b584ca02ccdc2c08f98919382e14429246007d3135d3",
+      "source_id": "src_b88739974450536385313501a8bc2262",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/README.md"
+    },
+    {
+      "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+      "git_sha": "9b8999ae26d44eea4914c69c2d9127c6c9eab886",
+      "lines": 197,
+      "path": "doc/apis.md",
+      "repository": "cactus-compute/needle",
+      "sha256": "cbd954ad7a16f57f6dc701d9a6c56d70630624bd460da9fd6d749ff569b02b4a",
+      "source_id": "src_6559d3ef6e4d5fb5b8414d9e38d4fe96",
+      "stored": "apis.md-3bbe69a7d91c.md",
+      "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/apis.md"
+    },
+    {
+      "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+      "git_sha": "421eb7013b329a2deba8f791c4c9579677554747",
+      "lines": 118,
+      "path": "doc/environments.md",
+      "repository": "cactus-compute/needle",
+      "sha256": "218977e19de0de916f67cb18045a1847162a022745c81c786ae0742ca435e01d",
+      "source_id": "src_5f1f3735d50456a8b4d335484f60d7dc",
+      "stored": "environments.md-188d615a2bc4.md",
+      "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/doc/environments.md"
+    },
+    {
+      "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+      "git_sha": "a9e2ca6d608d1e2645add2eaa0bf5663736b7786",
+      "lines": 221,
+      "path": "llms.txt",
+      "repository": "cactus-compute/needle",
+      "sha256": "2beabbefafa987e86c20fe870890dffcfdb26377cce3bd1a485cba50a43bcfb3",
+      "source_id": "src_76c380e9f3915540bfc83d876ba7e8f5",
+      "stored": "llms.txt-f43a9e2f7da8.txt",
+      "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/llms.txt"
+    },
+    {
+      "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+      "git_sha": "3b6ac3f6e345b4a102ae2e3ac722324e7dded41c",
+      "lines": 9,
+      "path": "requirements-train.txt",
+      "repository": "cactus-compute/needle",
+      "sha256": "5283b1181ae92f95316de73b6a11d161a013da447be6769712f856b8fc5dec5e",
+      "source_id": "src_af9db1b157db5615be92d22600ba0f9e",
+      "stored": "requirements-train.txt-31b547e95d9e.txt",
+      "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/requirements-train.txt"
+    },
+    {
+      "commit": "956840ff176bfe179bb2f230b726f4be44fb11cf",
+      "git_sha": "72a6100bdaeab4050cc65efcf228917120e96b2f",
+      "lines": 2,
+      "path": "requirements.txt",
+      "repository": "cactus-compute/needle",
+      "sha256": "1e3262fd9a636a32e24d6bd3a716d931692d03877e2f2003fe8d646a2d0d6565",
+      "source_id": "src_1b45786231cc581dae05dc141288fcd7",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/cactus-compute/needle/blob/956840ff176bfe179bb2f230b726f4be44fb11cf/requirements.txt"
+    }
+  ],
+  "summary": "Evidence describes Needle 2, a 45M-parameter tool-calling model shipped as a Python package (cactus-needle) with inference, LoRA fine-tuning, and export, plus documented API, environments, and offline/WASM distribution. Claims below rest on README and doc text only. Evidence coverage: 134 of 160 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

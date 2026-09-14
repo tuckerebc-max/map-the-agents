@@ -1,0 +1,591 @@
+{
+  "applied_operation_id": "op_7c6fc34d27694a61813073175c49cdee",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_88f93e79164fa4465e0844b3e24c700547d3db554b8a634db9a3cc58110d81dc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 144,
+          "line_start": 144,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L144-L144"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 160,
+          "line_start": 152,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L152-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6628c5b6faa971463deaa745414120e1595b3b24f263d3f574cb6f17aa060446",
+        "slc_8e69324ef102dd86bd5fcaae026d1d8cb57d2a1e72aa154dffd7b6f0a0790ca4"
+      ],
+      "text": "With --json, the tool outputs a JSON object containing prompt, directory_name, token_count, model_info, and files fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc95c53df1713d43524d914e9f11599fe20256de2aacb1b677414078af46ceac",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "0c1254f7e4a8127c09ae9e898ae6d7e49957c684",
+          "line_end": 65,
+          "line_start": 52,
+          "path": "llms-install.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/llms-install.md#L52-L65"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "0c1254f7e4a8127c09ae9e898ae6d7e49957c684",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "llms-install.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/llms-install.md#L3-L3"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "0c1254f7e4a8127c09ae9e898ae6d7e49957c684",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "llms-install.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/llms-install.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6424519d2910fba875bebfc02bec7229fac35a30e51f0984918b93fd05dc6304",
+        "slc_a5848e8f07f6c519f33f08b928976803797b6a51f34a22bdf4bc9d23115ce46c",
+        "slc_f5bcf1eaecfcb8b5a8a9031e1329ba1c5659df31ee76d580e347538c0dbcaac5"
+      ],
+      "text": "The project ships an MCP server (code2prompt-mcp) that exposes codebase context generation to LLM applications like Claude Desktop, Cursor, Roo Code, and Cline, configured via an mcpServers JSON entry."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9021b31f6a2716e56028a92d3444c4426037dd3a5439242180b3ea43fd5aa884",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L109-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6438b5244e37a4e2c1d30e5167a71be6b49c31957af8cb29f1fcb303238edb5"
+      ],
+      "text": "The ecosystem comprises a Rust core library for file traversal, gitignore handling, and Git metadata; a CLI/TUI; a Python SDK with bindings to the Rust core published on PyPI; and an MCP server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b102fe8eeff36f54ad5676bb23d1a70c2d64747b8c9e6786e5bbd5a96fa8295",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 128,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L121-L128"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 37,
+          "line_start": 28,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L28-L37"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L98-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_234951f33f61d0dffe05854d548a48cd4517ddbe4f42c8bd0165fecb65531e83",
+        "slc_cb341f163c4c094ead6841b05689d6cb1a64801a9f6e623000b83ef8d25c79e2",
+        "slc_f17f55bc429265f059fd13c5dc4d70f258058f658725016e3ced713d536a4137"
+      ],
+      "text": "Prompt generation respects .gitignore rules, supports glob-based include/exclude filtering, and uses Handlebars templates that users can customize."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8d18be7088dd821d582f6aee9e3a54df42f184f13ce6f9d36272c5aa065f051",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 128,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L121-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_234951f33f61d0dffe05854d548a48cd4517ddbe4f42c8bd0165fecb65531e83"
+      ],
+      "text": "Token counts are estimated via parallel per-file counts plus estimated template overhead; the full rendered prompt is not re-tokenized and the JSON envelope is excluded from the estimate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f45a47bfd2091789a085d9887f7d884344134876c4b4e611feaaf2a25072287f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 239,
+          "line_start": 239,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L239-L239"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 241,
+          "line_start": 241,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L241-L241"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 237,
+          "line_start": 237,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L237-L237"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44d24c4cf5bc24c058b0191a7d8a36db2569011b84985d21d3f6f80b64703754",
+        "slc_9475e9e43f5f35c72b7e81fe992c3ecb0aefb4520af7d5e1cc2c733310d58aa9",
+        "slc_acb51176f02e7c8577fd1227417ea51b9cafff152945f8fc1dfd545021fc257f"
+      ],
+      "text": "Templates can include user-defined variables outside the default context (absolute_code_path, source_tree, files); the tool prompts the user for their values at generation time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22d3e8339c0a7c3eb8a1111cf7b5ad3495c48728818bf597fce2a95d3eab0692",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 136,
+          "line_start": 134,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L134-L136"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 247,
+          "line_start": 247,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L247-L247"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+          "line_end": 255,
+          "line_start": 249,
+          "path": "README_ES.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md#L249-L255"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_237112e85c07ff715b84941c0b346b5cc0c411f11744133cd3804501182334e7",
+        "slc_7f5001816323340e810cf73f2bd8c3e38979771841c990c63a903243f457f450",
+        "slc_b6c6597ef674dd1c4a5ef7f6d35af96fc6de01588bdb7b42a938e9df7366c617"
+      ],
+      "text": "Tokenization is implemented with tiktoken-rs, supporting encodings cl100k_base, p50k_base, p50k_edit, r50k_base, and o200k_base for OpenAI model families."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1bf8957122c5db5db52bd23a0d3416154f87ae22df82df1bd95d938759b3c41b",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 87,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L85-L87"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 83,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L82-L83"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 93,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L89-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75f4e7afb4ee8c7ce2c3c139c038274adc579c0f952438147e8432fea0268068",
+        "slc_a7f26e72196a0ced5ea8e333ff4284f983495deefe201e3ec659026db355af68",
+        "slc_b3cf6b14a9ef7700f031723f9bbb6ea63d963ead2c82be32e11ab3dd518fde66"
+      ],
+      "text": "An installable agent skill (skills/code2prompt/SKILL.md) teaches coding agents to use code2prompt for repository navigation and scoped context gathering, installable via the Skills CLI (npx skills add mufeedvh/code2prompt)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac3eff7f44cd12487c2e51b7b902e8c857b0e7d4b2ffc51be50b7659668fdf32",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 97,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L95-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_924cb90fa59e9a90fd429f42c28fa32c326fe1d496138b9228b79fa6918f62b3"
+      ],
+      "text": "The skill installer adds only the skill folder and its template, possibly cloning the repository temporarily; the rest of the repository is not installed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_138b4163003d8f6b373a9a28adfb8451b8b0a6ed5a223a033a0f667dd8ba9661",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "bc2b811d4bf74eb81ced2519dc9bff3f72e6bbef",
+          "line_end": 19,
+          "line_start": 9,
+          "path": "AGENTS.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/AGENTS.md#L9-L19"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "bc2b811d4bf74eb81ced2519dc9bff3f72e6bbef",
+          "line_end": 28,
+          "line_start": 23,
+          "path": "AGENTS.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/AGENTS.md#L23-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bda4cb12337ed241d77c024f5bf1b41789fa9807d29a0902a24a9d4e0eee0996",
+        "slc_c7dbab55e18fdac0e285becc07676b93281ebb0efd1e0621bde0ad5a41f5b61c"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributors to follow existing patterns, place reusable logic in code2prompt-core, keep Python bindings thin, include regression tests for bug fixes, and map changed paths to verification skills (verify-core, verify-cli, verify-python, verify-website)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72a6c3746aaefe962cb95fbcf90706785c204331ccd0cf25f8d5c3116e5772f7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "bc2b811d4bf74eb81ced2519dc9bff3f72e6bbef",
+          "line_end": 31,
+          "line_start": 30,
+          "path": "AGENTS.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/AGENTS.md#L30-L31"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "bc2b811d4bf74eb81ced2519dc9bff3f72e6bbef",
+          "line_end": 19,
+          "line_start": 9,
+          "path": "AGENTS.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/AGENTS.md#L9-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad1b448e025e81b6ecd59b737825c1ab4cd6651ff81ec7c063986a2d72b595cc",
+        "slc_bda4cb12337ed241d77c024f5bf1b41789fa9807d29a0902a24a9d4e0eee0996"
+      ],
+      "text": "Repository development practice: root cargo test does not exercise the Python bindings, and contributors should not claim completion until the relevant verification skill passes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_89f6e0da0c6cdbf76dd21284ed73c7529549a2c1467d25bdc56724c0812de97d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 128,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L121-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_234951f33f61d0dffe05854d548a48cd4517ddbe4f42c8bd0165fecb65531e83"
+      ],
+      "text": "The token estimate is approximate by design: it relies on per-file counts and estimated template overhead rather than tokenizing the fully rendered prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5a8dd5955c8625c98428866b0f3c363cd47a414d854ac7ab96d1a89ed61445d",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L119-L119"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L36-L36"
+        },
+        {
+          "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+          "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "mufeedvh/code2prompt",
+          "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md#L109-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a6de78574b48abc2e5178f1bbb87ec74c59b156c7cfa87688ba6e0038e5b209f",
+        "slc_de3c78e865a01abfbc4b2038b80803c99c87d03dbc4a2d0ea67cde043ca254cf",
+        "slc_f6438b5244e37a4e2c1d30e5167a71be6b49c31957af8cb29f1fcb303238edb5"
+      ],
+      "text": "The tool targets LLM context preparation: generating prompts from codebases for chat models, AI agents, RAG pipelines, and MCP-based agentic workflows."
+    }
+  ],
+  "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 172,
+        "path": "README.md",
+        "size": 7790
+      },
+      {
+        "lines": 92,
+        "path": "llms-install.md",
+        "size": 2942
+      },
+      {
+        "lines": 279,
+        "path": "README_ES.md",
+        "size": 11332
+      },
+      {
+        "lines": 31,
+        "path": "AGENTS.md",
+        "size": 1393
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 357,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_da0009bbd1c951b7a96a20279d3d829a",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/mufeedvh/code2prompt/66585136062c04275ddd5a01c5518a4d78c4aa76/44061f456b2f99ce/manifest.json",
+  "package_id": "pkg_9b054fa9cefe49a01d438e132bcf95d8654fb34ee9c3441f49d80c4ce2e3bdcd",
+  "repo": "mufeedvh/code2prompt",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c313cc357e6d40e72090954262a63fcf84c745311b3d93c48e548b22c96d55e4",
+  "snapshot_id": "44061f456b2f99ce",
+  "sources": [
+    {
+      "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+      "git_sha": "bc2b811d4bf74eb81ced2519dc9bff3f72e6bbef",
+      "lines": 31,
+      "path": "AGENTS.md",
+      "repository": "mufeedvh/code2prompt",
+      "sha256": "b043eabc6877503057fd64138b881eb49b7fb1ed6b294cafe835266d20ef2d96",
+      "source_id": "src_6185adaa3b6856e6a7d804b4ecd9ea3c",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/AGENTS.md"
+    },
+    {
+      "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+      "git_sha": "70bb36263b10e3db52b7ec8f07d3b790d739cdb7",
+      "lines": 172,
+      "path": "README.md",
+      "repository": "mufeedvh/code2prompt",
+      "sha256": "02c325bcd6f3d4f506d70b44e472e1255fa6fc62ce7e860577165fc5ca26360f",
+      "source_id": "src_d08230c9a04658cabe5a4047f45c353b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README.md"
+    },
+    {
+      "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+      "git_sha": "478eec38beba6c22c2db40e1d999de2412f91fc4",
+      "lines": 279,
+      "path": "README_ES.md",
+      "repository": "mufeedvh/code2prompt",
+      "sha256": "36bbfdbb1bb003ea9525625a7a3bbdcb7be8375f48ed8dd656a7c5a7ea8a00cc",
+      "source_id": "src_2985f599f9645955a9888b518229e23b",
+      "stored": "readme_es.md-5fbc192ef533.md",
+      "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/README_ES.md"
+    },
+    {
+      "commit": "66585136062c04275ddd5a01c5518a4d78c4aa76",
+      "git_sha": "0c1254f7e4a8127c09ae9e898ae6d7e49957c684",
+      "lines": 92,
+      "path": "llms-install.md",
+      "repository": "mufeedvh/code2prompt",
+      "sha256": "0d81205827aeb12f3489ace75a9e969af801c7cc3b6255b5250e89d8d27b795c",
+      "source_id": "src_29d14331ef8054cf91cfc9171bceaabc",
+      "stored": "llms-install.md-b9b42aca0710.md",
+      "url": "https://github.com/mufeedvh/code2prompt/blob/66585136062c04275ddd5a01c5518a4d78c4aa76/llms-install.md"
+    }
+  ],
+  "summary": "With --json, the tool outputs a JSON object containing prompt, directory_name, token_count, model_info, and files fields. The project ships an MCP server (code2prompt-mcp) that exposes codebase context generation to LLM applications like Claude Desktop, Cursor, Roo Code, and Cline, configured via an mcpServers JSON entry.",
+  "superseded_claim_ids": []
+}

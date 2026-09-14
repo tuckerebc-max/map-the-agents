@@ -1,0 +1,584 @@
+{
+  "applied_operation_id": "op_b29132fd10404e2cb41a1b696f8176bd",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f26a783b75d186b1cc6cbde785c1c7acf10460c68c1ef2e7c546c4dfba651c89",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 51,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L47-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d569c995111f5f25b4f8cc5394d7a3ad1882db14e6f5826ebbb7ce0062ee085"
+      ],
+      "text": "The system uses five agents: a Supervisor Agent plus Order Management, Product Recommendation, Troubleshooting, and Personalization agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6b8fda0168e8f29e41afefd86ec7b4f64112e182212ee066711a59b69a2ff56",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L55-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f9e66f1b3f6c430dfbcd14de827b7bbbcaac2c25636f4d5961e152eed656e7d4"
+      ],
+      "text": "The runtime chatbot is a React website using a WebSocket API and Lambda functions that call the Amazon Bedrock Converse API and action groups for text-to-SQL against Athena."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d009005c4f2750eff47d27b58bb84141913fda465a84e6fc2e853059f4a0f418",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L68-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_628a1a289194da40b66ae6141e489cab332dad57896fd4c1e8d18566dffee898"
+      ],
+      "text": "The Bedrock Supervisor Agent analyzes user queries for intent, routes them to suitable sub-agents, and maintains conversation context as the central orchestrator."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5a1d32eae9a403a5524b02fee998ded80d910cb262dc89ce7aefec68a927ce2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "672c40d166d4b1cf15dbcee491c71b63c50d5e26",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README-Amplify-WebSocket-Workflow.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README-Amplify-WebSocket-Workflow.md#L20-L20"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "672c40d166d4b1cf15dbcee491c71b63c50d5e26",
+          "line_end": 90,
+          "line_start": 78,
+          "path": "README-Amplify-WebSocket-Workflow.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README-Amplify-WebSocket-Workflow.md#L78-L90"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "672c40d166d4b1cf15dbcee491c71b63c50d5e26",
+          "line_end": 103,
+          "line_start": 96,
+          "path": "README-Amplify-WebSocket-Workflow.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README-Amplify-WebSocket-Workflow.md#L96-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e4600197434939973a8aa9426aeabca76e731e9cd283408b5fb602725869a84",
+        "slc_6ac906bb73c289ef5bfd906ee587b1c2d3f44a5395965950cf9ec634e6787d06",
+        "slc_aa8f97b86d16deb83119746569f0de6fd0ff1e4284afe8c0060947dc3a52f5c7"
+      ],
+      "text": "Frontend-backend communication uses AWS AppSync GraphQL subscriptions; chat is sent via a sendChat mutation and responses arrive as onUpdateChat subscription messages with assistant text and trace data."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b005c62cdff2c918ddb4511f25ce9ebd1038d455eb7d1debd2b97ee0a29a45f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "672c40d166d4b1cf15dbcee491c71b63c50d5e26",
+          "line_end": 202,
+          "line_start": 198,
+          "path": "README-Amplify-WebSocket-Workflow.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README-Amplify-WebSocket-Workflow.md#L198-L202"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "672c40d166d4b1cf15dbcee491c71b63c50d5e26",
+          "line_end": 196,
+          "line_start": 188,
+          "path": "README-Amplify-WebSocket-Workflow.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README-Amplify-WebSocket-Workflow.md#L188-L196"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "672c40d166d4b1cf15dbcee491c71b63c50d5e26",
+          "line_end": 208,
+          "line_start": 204,
+          "path": "README-Amplify-WebSocket-Workflow.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README-Amplify-WebSocket-Workflow.md#L204-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a7d58556a9f539ec07d1d6a9eefcdfd267f51d7756550695620017c2f1bb337",
+        "slc_75d33d7ab45a0da294739d7360a281cfc05ca483b9ea01154e268315d7bf71fd",
+        "slc_bf9ff46a93c7f85110d126dc7c377bf530f5a9390c684bd40f44e6ceed387bc5"
+      ],
+      "text": "The GraphQL schema defines Chat and Session models with owner-based auth rules, plus a custom sendChat mutation restricted to Cognito user pools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7287e8f4c5c582953f8355f27164dfd12e9feaf1736efc793c0bc3548e555829",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L74-L74"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L76-L76"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_82584f1b9c3bf7fe41d764628eb690fc54b89c4ce28443ff956890b9daacb3c9",
+        "slc_c69d917373b87b4ebaff0bfe65c03ae7464bb33a96ff6fe442eec9a7721d6ce2",
+        "slc_cf6d34ac037fbeb60f1304b75a9d9aaa633aa5dfd131bdcfe2f7d38ec2e361ec"
+      ],
+      "text": "Sub-agents access data through Bedrock Action Groups: Order Management and Personalization execute SQL against Athena tables, while the Troubleshooting Agent relies only on its knowledge base without Action Groups."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f491900a0c01084876d568fa99068540f4811b9919243833ec551eb93f734bf",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 99,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L98-L99"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L64-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15104f30bdd3bd1cceb131d847499f0d9f10c6472af4f3f3f04b0e78b0ef7463",
+        "slc_63eefb021f22b0bc0a8bf8b969af6750d57a225519be1778e6ce7fe26d07fe85"
+      ],
+      "text": "Session data is stored in Amazon DynamoDB, and the Personalization Agent maintains a persistent customer profile recalling prior interactions across support sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8511e23e6a01331aed3af1c66b2bb4ab9a306e4e7f7c1505baac6397f6b37b4c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 210,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L210-L210"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 217,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L213-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54bf2abe4456adca7588295452cb6f3e097004ea3a736c40af893006bee8e6b3",
+        "slc_8241a7309adb66624bf299646b5791292048acc39c3d6c4c557b82cf8d426ee2"
+      ],
+      "text": "Bedrock agent IDs are managed via environment variables dynamically exported from the CDK stack at build time, avoiding hardcoded IDs in source or config files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bfb7b9fa279a5d645b2481181c9e23318a782c21f652b2ead36e10e4a984d7f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L62-L62"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "1d0e3a16bcd2cf2b2a050dfdae432156ec56acb7",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "README.demo.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.demo.md#L17-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50be1a6972ab07f70859088cf2043be2cb439e761a24105bc43de53bed38b822",
+        "slc_55997b9dfd852c442b72b4206af5a55c2e28ac5483f3aff6b9cfc2d1c545d505"
+      ],
+      "text": "The frontend is served from a private S3 bucket via CloudFront with Origin Access Control, protected by a CloudFront-scoped WAF using AWS managed rule sets, with Cognito handling authentication."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_011e4b3447c3906f226d37a71154bf42c183830d82e79666c22c749f05db86a1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 153,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L145-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9fcbabb66be9fd776230e5e74a32fc12df81b6468e51f3fb5061f250994be536"
+      ],
+      "text": "The application requires several Bedrock models to be enabled, including Cohere Embed English V3, Nova Pro/Lite/Micro, Claude Sonnet 3.5 (V1 and V2), Claude 3 Haiku, and Haiku 3.5."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83743b3490a9421e8f382650944a4e1b91b495bebb0f366768beb69120f12831",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 252,
+          "line_start": 252,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L252-L252"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 194,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L192-L194"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 188,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L185-L188"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 225,
+          "line_start": 225,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L225-L225"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 200,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L198-L200"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 254,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L254-L254"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12656ceb0ded4f508da36fe4c452451ca5deba7d496220926a918dc1c638a9c1",
+        "slc_3de41541c0d45262514b8249a8dc3aab0f52f9485838c375f44c424ea0fa2654",
+        "slc_7f9433a41db0a2616a056c26943ec3a69a109de4e2f67eca53df92b3667cb731",
+        "slc_8937dbdf2644ab4480b61e7441f51346cbb4a02b80e7e4e7ab62fc53073824dd",
+        "slc_d9610174bc43ae9b03fd656d6a11d1346fac694301f17fba4ae58fe72c661c4e",
+        "slc_fef3b10ff3adb0c85256335500b7a8f16c8aefa2cbd82554f15fab4934385868"
+      ],
+      "text": "Repository development practice: setup involves cloning the repo, running npm i, bootstrapping CDK, editing config/project-config.json with the account number, and deploying via the starter-kit CLI options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b3c5e8ce29873fcb1847644611009c0104af4633e5cee8fd52bc93a68c86cc0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 269,
+          "line_start": 265,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L265-L269"
+        },
+        {
+          "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+          "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+          "line_end": 258,
+          "line_start": 257,
+          "path": "README.md",
+          "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+          "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md#L257-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53abdb0faf51d7424e422a7bb1f157920be99de1bac60b3b40a0ae4d6fdb4767",
+        "slc_ce6a982439371c531e65c1138399d0aa354aaa02f8f4a71284167d8045055602"
+      ],
+      "text": "Repository development practice: before running the app, the Athena query result location must be manually set to an S3 prefix in the Athena console; the README notes this will be automated in a future revision."
+    }
+  ],
+  "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 299,
+        "path": "README.md",
+        "size": 16803
+      },
+      {
+        "lines": 302,
+        "path": "README-Amplify-WebSocket-Workflow.md",
+        "size": 9641
+      },
+      {
+        "lines": 121,
+        "path": "README.demo.md",
+        "size": 9639
+      },
+      {
+        "lines": 19,
+        "path": "docs/kit/cognito-user-creation.md",
+        "size": 857
+      },
+      {
+        "lines": 5,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 310
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 209,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_3c3006dafac9576c9214ab750a244811",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/058f08e4/32cd7998/092b5d81c5dc9e39162d9a554bdf1642b4036202/80f619fc8f826a70/manifest.json",
+  "package_id": "pkg_1f92b6a512822ac3bf628be8437b5aefc3b6bf317484b76013b499faaf66c16b",
+  "repo": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a2652873831758aa0607a22e69598bd29e8a9e6398b275f57277646247276201",
+  "snapshot_id": "80f619fc8f826a70",
+  "sources": [
+    {
+      "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+      "git_sha": "ec98f2b76e807645bee6a9099d60086ecefe33b2",
+      "lines": 5,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+      "sha256": "ed2df233298615a89ef99e5df17269e4839e95126ed7c823e9daccc254c67991",
+      "source_id": "src_a7f3025a78195502a2afcaede1aad354",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+      "git_sha": "672c40d166d4b1cf15dbcee491c71b63c50d5e26",
+      "lines": 302,
+      "path": "README-Amplify-WebSocket-Workflow.md",
+      "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+      "sha256": "f720880bccc3151b4dd6a8c9e3da9cbc624bf4ca1e45ce644f5a218e8e505ca2",
+      "source_id": "src_3e1e634a91485184b21ba92ea00a1390",
+      "stored": "readme-amplify-websocket-workflow.md-15d8c7a3f625.md",
+      "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README-Amplify-WebSocket-Workflow.md"
+    },
+    {
+      "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+      "git_sha": "1d0e3a16bcd2cf2b2a050dfdae432156ec56acb7",
+      "lines": 121,
+      "path": "README.demo.md",
+      "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+      "sha256": "93740f0739d2052a8b5921b9c8a2bc4dfd96e0910f4b6d3e488f2922d6f71b3a",
+      "source_id": "src_3b78bc6244ad5ab1a2a293e2e9793850",
+      "stored": "readme.demo.md-be8240699b0f.md",
+      "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.demo.md"
+    },
+    {
+      "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+      "git_sha": "77b654ebfb3dee4ff3338c4eaa87d4633cf80ccc",
+      "lines": 299,
+      "path": "README.md",
+      "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+      "sha256": "ffee33aeeabbf03a6141cf6e999a38bc3ca5ce3bb629d682c828a697ea26a741",
+      "source_id": "src_45f3744283755ba6a6684e820468cd68",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/README.md"
+    },
+    {
+      "commit": "092b5d81c5dc9e39162d9a554bdf1642b4036202",
+      "git_sha": "44c6d447e375dadf666d9af720a3cead662c229a",
+      "lines": 19,
+      "path": "docs/kit/cognito-user-creation.md",
+      "repository": "aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws",
+      "sha256": "2f2ef3c74ee770f7f691580106eace87a6322b07e7f4cc87c103a7b90e6c1192",
+      "source_id": "src_6deedb320c4d59f5a33df82157195ceb",
+      "stored": "cognito-user-creation.md-6c0eff849595.md",
+      "url": "https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws/blob/092b5d81c5dc9e39162d9a554bdf1642b4036202/docs/kit/cognito-user-creation.md"
+    }
+  ],
+  "summary": "The repository documents a multi-agent Amazon Bedrock customer-support demo: a React frontend served via CloudFront/WAF/Cognito, an AppSync GraphQL WebSocket streaming layer, a Lambda resolver invoking a Bedrock Supervisor Agent that routes to four specialized sub-agents using Athena SQL action groups and knowledge bases. Evidence is documentation-only; no evaluation or benchmark material appears.",
+  "superseded_claim_ids": []
+}

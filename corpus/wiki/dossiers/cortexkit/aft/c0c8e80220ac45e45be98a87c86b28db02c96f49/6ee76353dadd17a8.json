@@ -1,0 +1,674 @@
+{
+  "applied_operation_id": "op_72a54b98d4a44e8db960e10077377a13",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_92e2335f67aa067d8c69d1b4bddf0cbec100549622391cc8b34df4ed467aca09",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L52-L52"
+        },
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 20,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L13-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_887c28da76eaa56128224f649fb1b4c7502a9c8c7c4d23fc55e8f497a3228d1c",
+        "slc_fb7dd4e256c3ad1bf1e8991e8c4af5f760d7c281730692b16abe5ddcabe4ebb7"
+      ],
+      "text": "AFT ships as a Rust binary with thin TypeScript adapter packages for OpenCode, Pi, and OMP, distributed via crates.io and npm."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6314dbfccd3808b30e8364578bb547a53dacfbdbfc33aa18676700529bfc314b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 229,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L229-L229"
+        },
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 198,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L198-L198"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a121d5d8fe9feb2a8b7f35564910912abeee24cd9c7e16360d5f827f9eafc0ec",
+        "slc_b37e0b384aa21d6fc3a9d10055a8593c13902af1735e265421571a554bcd75f6"
+      ],
+      "text": "The Rust core communicates with adapters over a JSON-over-stdio request/response protocol, with one persistent process per project root shared across sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11e64d916805d30c3201bd8bb7f526120ca0edd22553aa3f51477bbedc88ecf3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 227,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L200-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cd4393dfc2b51c7a3462cef6b5f2899a443b28023d1430ba7a88f6865b59c9b7"
+      ],
+      "text": "The Rust core includes tree-sitter parsing for ~30 languages, symbol/call-graph computation, diff/format/backup, an LSP client, trigram index, and semantic index."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28cb513f6d52157a603006b66b91e06b62146aa13cdf1bcbec39b30d29363502",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 117,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L112-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d0b3193b7b414956670fc130dfc3f4fc639f6da6762799693dc4fe7fe9357e41"
+      ],
+      "text": "Sensory tools include aft_outline, aft_zoom, aft_search (hybrid semantic+lexical), aft_callgraph, aft_inspect, and trigram-indexed grep/glob backed by a file watcher."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08a4698c9777671be9af674afd88ad7bf562e08fb16927831b1c2aa65f8d37dc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 131,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L127-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_576b4205048867e190ba1007ac8d85504eaf352b2cc42e64790945c76e0d1140"
+      ],
+      "text": "Motor tools include edit with fuzzy matching and multi-file transactions, write, apply_patch with atomic rollback, aft_import, and ast_grep_search/ast_grep_replace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35cf78ed31309ee492e2cd5dcc181c6e135756570a97199ec494a264d21350a6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 143,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L139-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f43309cfe3e6050991efc230b0600a60e0180812f39064913245f006b4b01f68"
+      ],
+      "text": "The brainstem layer provides background bash tasks (bash_status, bash_kill, bash_watch) that survive restarts, PTY sessions driven via bash_write, and multi-tier output compression."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ac38f5ead68ab71d3f9f64df8cf27b16796aebca0ab83673ae06b0722dec6b0",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "9052f97ffe8482e2cd53b2fe1f4db21095671fef",
+          "line_end": 128,
+          "line_start": 123,
+          "path": "ARCHITECTURE.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/ARCHITECTURE.md#L123-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34d89c5d8ea9e072b12e3002ecdd1956f9148087842ed4c95f77331a1ce78b17"
+      ],
+      "text": "Under sandbox.enabled, first-party bash commands run through Landlock (Linux) or Seatbelt (macOS); unsupported non-Unix platforms fail closed with sandbox_unavailable, and a one-command host escape prompts via an escalation permission ask."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1053f8fd5691740716296e86212648ba500b433e6a59381242ce6f3293afeef",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 76,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L74-L76"
+        },
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7635e0ef79535d924b224331e4f1a5b8b9b4520cccdce01674dbb6abcd192c3d",
+        "slc_887c28da76eaa56128224f649fb1b4c7502a9c8c7c4d23fc55e8f497a3228d1c"
+      ],
+      "text": "Adapters hoist the host's built-in read/write/edit/grep tool slots so existing tool names are backed by AFT, while also registering an aft_-prefixed tool family; hoist_builtin_tools toggles this behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fa1cd83424ef363126652a1a8a3442d99677a29993f358988b3d95d8c8bb0b9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 231,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L231-L231"
+        },
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 143,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L139-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e7bb7dc60daff774cfd28913e6e5982a3386d4f603f3e5f3714f2e9e25b4850b",
+        "slc_f43309cfe3e6050991efc230b0600a60e0180812f39064913245f006b4b01f68"
+      ],
+      "text": "AFT data (backups, search indexes, LSP servers) persists under ~/.local/share/cortexkit/aft/, and aft_safety provides a per-file undo stack with named checkpoints that survives restarts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a592963e2cb61660455d4eb346b1ad8c10d3ca9818595bac5bf61172e6c4633",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 85,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L82-L85"
+        },
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 88,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L87-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_880d7cd144b3813179d0493bb4938273610d740d427dae7377ac309f47552687",
+        "slc_de1d77b550943f6743a836d70dfa1ef38ee7b9a91c4667cc1eafa59cb15eb542"
+      ],
+      "text": "AFT has no uninstall CLI verb; doctor --clear only clears selected caches, not registration, config, or shared storage, and removal requires manual harness de-registration steps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_630c05f2e5bb06b805cec0874d81445f7dde6597b376b95493115579a3a21adb",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L149-L149"
+        },
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L151-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d1a7c821cc065920bcaad15663ce7d170853a1a89a81033a02dc14894815632",
+        "slc_f46657c05f516a2c7b8cce26c41a3065dbfb65e8bc2e7d79a111b98db2fb6e00"
+      ],
+      "text": "A benchmark suite covering search latency, retrieval quality, bash-output token reduction, and end-to-end agent task success is described as in progress, with numbers not yet published."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f40bae198e20f25b8d59f031a691403ec4dd07a3ded0cf5a51f51b5bf35660e3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 301,
+          "line_start": 301,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L301-L301"
+        },
+        {
+          "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+          "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+          "line_end": 303,
+          "line_start": 303,
+          "path": "README.md",
+          "repository": "cortexkit/aft",
+          "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md#L303-L303"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_357821fd2140abb1752e6aa493f9192b670691c92c45ecdfb3c6a15c3eb25b4f",
+        "slc_5b145cdf2b099ac58b18cc1fca7138790ce6c714295376696600b77e92594cdd"
+      ],
+      "text": "Repository development practice: contributions require an issue with the design-approved label before a PR is reviewable (typo fixes exempt), and bun run format plus cargo fmt must be run before submitting since CI rejects unformatted code."
+    }
+  ],
+  "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 318,
+        "path": "README.md",
+        "size": 20548
+      },
+      {
+        "lines": 560,
+        "path": "ARCHITECTURE.md",
+        "size": 97488
+      },
+      {
+        "lines": 38,
+        "path": "docs/benchmarks.md",
+        "size": 1507
+      },
+      {
+        "lines": 7,
+        "path": "docs/investigations/views-soak-2026-09/summary.md",
+        "size": 375
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/config.md",
+        "reason": "byte-budget",
+        "size": 42495
+      },
+      {
+        "path": "docs/tools.md",
+        "reason": "byte-budget",
+        "size": 44284
+      },
+      {
+        "path": "STRUCTURE.md",
+        "reason": "byte-budget",
+        "size": 33973
+      },
+      {
+        "path": "docs/borrowed-search-exec-investigation.md",
+        "reason": "byte-budget",
+        "size": 18647
+      },
+      {
+        "path": "docs/cli.md",
+        "reason": "byte-budget",
+        "size": 3881
+      },
+      {
+        "path": "docs/hashline.md",
+        "reason": "byte-budget",
+        "size": 2865
+      },
+      {
+        "path": "docs/health-digest.md",
+        "reason": "byte-budget",
+        "size": 2031
+      },
+      {
+        "path": "docs/memory-census.md",
+        "reason": "byte-budget",
+        "size": 3042
+      },
+      {
+        "path": "docs/standing-roots-s2-transition-ledger.md",
+        "reason": "byte-budget",
+        "size": 3534
+      },
+      {
+        "path": "docs/v0.49-unified-tool-surface-spec.md",
+        "reason": "byte-budget",
+        "size": 37059
+      },
+      {
+        "path": "docs/audits/agent-text-habit-audit-2026-07.md",
+        "reason": "byte-budget",
+        "size": 17649
+      },
+      {
+        "path": "docs/audits/gh-routing-shim-caller-audit-v1.md",
+        "reason": "byte-budget",
+        "size": 2571
+      },
+      {
+        "path": "docs/design/content-addressed-index-views.md",
+        "reason": "byte-budget",
+        "size": 18345
+      },
+      {
+        "path": "docs/design/github-integration-product-map.md",
+        "reason": "byte-budget",
+        "size": 26856
+      },
+      {
+        "path": "docs/design/opencode-v2-plugin-playbook.md",
+        "reason": "byte-budget",
+        "size": 17360
+      },
+      {
+        "path": "docs/investigations/bash-task-erasure-census-2026-08-30.md",
+        "reason": "byte-budget",
+        "size": 7272
+      },
+      {
+        "path": "docs/investigations/build-breaker-windows-ci-flake-2026-08-30.md",
+        "reason": "byte-budget",
+        "size": 5623
+      },
+      {
+        "path": "docs/investigations/callgraph-refresh-write-amplification-2026-09.md",
+        "reason": "byte-budget",
+        "size": 9311
+      },
+      {
+        "path": "docs/investigations/cpu-hunt-2026-09.md",
+        "reason": "byte-budget",
+        "size": 31907
+      },
+      {
+        "path": "docs/investigations/disk-write-hunt-2026-09.md",
+        "reason": "byte-budget",
+        "size": 26875
+      },
+      {
+        "path": "docs/investigations/embed-body-cap-ab-2026-09.md",
+        "reason": "byte-budget",
+        "size": 8159
+      },
+      {
+        "path": "docs/investigations/fsevents-overflow-2026-09.md",
+        "reason": "byte-budget",
+        "size": 43152
+      },
+      {
+        "path": "docs/investigations/graphify-vs-aft-2026-09.md",
+        "reason": "byte-budget",
+        "size": 48743
+      },
+      {
+        "path": "docs/investigations/macos-gatekeeper-assessment.md",
+        "reason": "byte-budget",
+        "size": 6708
+      },
+      {
+        "path": "docs/investigations/path-resolution-audit-2026-09.md",
+        "reason": "byte-budget",
+        "size": 24490
+      },
+      {
+        "path": "docs/investigations/query-instruction-ab-2026-09.md",
+        "reason": "byte-budget",
+        "size": 8419
+      },
+      {
+        "path": "docs/investigations/ripwire-vs-aft-2026-09.md",
+        "reason": "byte-budget",
+        "size": 39491
+      },
+      {
+        "path": "docs/investigations/row-facts-spike-2026-09.md",
+        "reason": "byte-budget",
+        "size": 15906
+      },
+      {
+        "path": "docs/investigations/semantic-chunk-census-2026-09.md",
+        "reason": "byte-budget",
+        "size": 12894
+      },
+      {
+        "path": "docs/investigations/standing-index-census-2026-09.md",
+        "reason": "byte-budget",
+        "size": 9834
+      },
+      {
+        "path": "docs/investigations/subc-client-bg-dispatch-2026-08-11.md",
+        "reason": "byte-budget",
+        "size": 2005
+      },
+      {
+        "path": "docs/investigations/subc-egress-hol-2026-07-14.md",
+        "reason": "byte-budget",
+        "size": 14222
+      },
+      {
+        "path": "docs/investigations/watcher-backends-reference.md",
+        "reason": "byte-budget",
+        "size": 14473
+      },
+      {
+        "path": "docs/investigations/windows-ci-flake-family-census-2026-08-29.md",
+        "reason": "byte-budget",
+        "size": 15006
+      },
+      {
+        "path": "docs/investigations/zoom-refusal-steering-census-2026-08-30.md",
+        "reason": "byte-budget",
+        "size": 3351
+      },
+      {
+        "path": "docs/investigations/views-soak-2026-09/branch-drill.md",
+        "reason": "byte-budget",
+        "size": 5697
+      },
+      {
+        "path": "docs/investigations/data/standing-index-census-2026-09/census-summary.md",
+        "reason": "byte-budget",
+        "size": 22658
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "byte-budget",
+        "size": 934
+      }
+    ],
+    "omitted_count": 38,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3429,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 42,
+      "complete": false,
+      "omitted": 38,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_77ad5b1949705ad1bd68cfa8d9a8e908",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/cortexkit/aft/c0c8e80220ac45e45be98a87c86b28db02c96f49/6ee76353dadd17a8/manifest.json",
+  "package_id": "pkg_6e632b00e6f1acefd6b798b561726b7b1dcdba57f00d9216515d487ff458394e",
+  "repo": "cortexkit/aft",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a320fa435853cf49ec502db92895b97a45ea93d6c4789af39b1fe04122b699eb",
+  "snapshot_id": "6ee76353dadd17a8",
+  "sources": [
+    {
+      "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+      "git_sha": "9052f97ffe8482e2cd53b2fe1f4db21095671fef",
+      "lines": 560,
+      "path": "ARCHITECTURE.md",
+      "repository": "cortexkit/aft",
+      "sha256": "73ac6a67874cc61d1ea79547590127f8de540415a401d673a27c1b9964c4e399",
+      "source_id": "src_aef02dcc5e6158c0b2e0ab1d4fd39212",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/ARCHITECTURE.md"
+    },
+    {
+      "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+      "git_sha": "d9f992ecaf64117fcc7f093e2bb3313298ff6994",
+      "lines": 318,
+      "path": "README.md",
+      "repository": "cortexkit/aft",
+      "sha256": "a2d4488c6c9b52935c9b42bc12ba6bbe6e38e065cda9a9bc8192ee378eb88091",
+      "source_id": "src_84c0c3e796265a29bd591ca9b8bbc0e1",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/README.md"
+    },
+    {
+      "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+      "git_sha": "8d217131e70916820df8c1b4355127bd216bf4ef",
+      "lines": 38,
+      "path": "docs/benchmarks.md",
+      "repository": "cortexkit/aft",
+      "sha256": "a48328bce415f2d5f32dd922645d5deb3e67b27cbdd8a9799b1e77062784105a",
+      "source_id": "src_fdeb36c92b925a94ae3344c073fd92fa",
+      "stored": "benchmarks.md-19bfed5d24d8.md",
+      "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/docs/benchmarks.md"
+    },
+    {
+      "commit": "c0c8e80220ac45e45be98a87c86b28db02c96f49",
+      "git_sha": "0830f7b19236791084bfdcef912b54381e12a217",
+      "lines": 7,
+      "path": "docs/investigations/views-soak-2026-09/summary.md",
+      "repository": "cortexkit/aft",
+      "sha256": "7c2c6fd6dc14b43d2d2c013370347e9f7c12e8a74433a856f5ad6d42a221b83c",
+      "source_id": "src_e7172cb060a852f9b54da820d5e41792",
+      "stored": "summary.md-02c0f4cb10d1.md",
+      "url": "https://github.com/cortexkit/aft/blob/c0c8e80220ac45e45be98a87c86b28db02c96f49/docs/investigations/views-soak-2026-09/summary.md"
+    }
+  ],
+  "summary": "AFT is a Rust binary plus TypeScript harness adapters (OpenCode, Pi, OMP) that replaces and augments coding agents' file/shell tools with tree-sitter parsing, indexed search, call graphs, background bash, and undo/safety features. Evidence is mostly README/ARCHITECTURE documentation; benchmarks are documented as not yet published. Evidence coverage: 98 of 202 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

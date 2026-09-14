@@ -26,6 +26,29 @@ linked pages. Narrower query terms alone do not repair coverage. `--include-arch
 historical kernel pages explicitly. Cite the map's immutable source links; keep inferences and
 unknowns visible. A discovered lead is an observation, not an assessed evaluation candidate.
 
+A design agent's usual path: `AGENTS_CORPUS.md` -> a class/component/pattern/gap/freshness index
+-> a bounded `query` to narrow candidates -> a repository's own dossier page under `map/repos/`
+for its exact source-linked claims and unknowns -> once enough repositories are distilled for the
+question at hand, the comparative
+[architecture](../../docs/selection/architecture.md) or
+[coding-and-evaluation](../../docs/selection/coding-and-evaluation.md) selection guide for a
+cross-repository comparison. Every hop keeps the same distinctions: observation vs. inference,
+documented vs. code-inspected, partial snapshot coverage, and an explicit unknown for any facet no
+current claim supports -- never read a missing claim as a confirmed absence.
+
+## Directory catalog layer
+
+`map/directory/` preserves the whole alltheagents.org site (published index plus every
+`agents/<slug>.md` page, including entries with no GitHub repository) as concise, source-linked
+Markdown, separate from the source-supported repo dossiers under `map/repos/`:
+
+```sh
+uv run --python 3.12 python -m map_agents --root corpus directory --limit 50
+```
+
+Run `catalog` at least once first; `directory` reads its recorded backing-feed commit. See
+[operations](../../docs/operations.md) for resume, failure and evidence-attribution behavior.
+
 ## Retain every research lead
 
 When researching repositories, collect all public GitHub candidates, including those omitted

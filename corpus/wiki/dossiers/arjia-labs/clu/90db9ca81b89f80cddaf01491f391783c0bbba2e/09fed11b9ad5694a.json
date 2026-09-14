@@ -1,0 +1,682 @@
+{
+  "applied_operation_id": "op_be59827b3be54f25a5bba1301d21119a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_807a85aa25ddb22a9c690cc33c372bf030666323ceefe7818e3547b8b515d832",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L7-L10"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L48-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d9dc61f32add6646c9fa324ebfdb74cd2e10716abcad2fb80b7fbf4a6be3676",
+        "slc_5b158629dfeb1142ee75dba004f48952e17a77524588e38ff266fdcec76f2603"
+      ],
+      "text": "clu is a SQLite-backed issue tracker CLI intended for coordinating AI coding agents working on a single machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2343ef742e1d6c68ce88d6877e3e259127f62289472efa26095c23a25d21b4ab",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 21,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L12-L21"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 69,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L52-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_523f5496666f77e170c699ac7859829e83e6058df63da7859b16d291c155ca9b",
+        "slc_9d629952e339785f1c967cebcab7f3cd5738415f4f44cfb9e048747f7f06b63d"
+      ],
+      "text": "The project is written in Go (badges indicate Go 1.26+) and uses the pure-Go modernc.org/sqlite driver, so it needs no CGo or system SQLite libraries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f85cd6e3e400bf943c5b23fdeceee6fb900770b65eef929b4843eade7d10e5d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L48-L48"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 69,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L52-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b158629dfeb1142ee75dba004f48952e17a77524588e38ff266fdcec76f2603",
+        "slc_9d629952e339785f1c967cebcab7f3cd5738415f4f44cfb9e048747f7f06b63d"
+      ],
+      "text": "clu is local-first: a single binary over one SQLite file at .clu/data.sqlite, with no daemon, server, account, or network access; config.yaml is committed while the DB is gitignored."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8f72c3f6bec6017379865c1a7d3abd8dd8e35f6194faae4de0157a34b0ec8dd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 110,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L106-L110"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 122,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L120-L122"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L124-L124"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 116,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L112-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53718524677e047d679a246960b180305ae1cb97a2fdbab14d6c75be9653b7b3",
+        "slc_a24b5d6d46903aec66db976301c521199002b2334f21d9327a978a4ad14b91f6",
+        "slc_b32bca337f0e35b111fcbab7f2444ed5b63be4edb098427be07ac66f1e33c66e",
+        "slc_c13ef90300f7c14f5b1d5e1bd5cd4940c3effbb57b3b2ff34afce4ba47724a5a"
+      ],
+      "text": "The core CLI loop is clu init, create (with -p priority and -d dependency wiring), ready, claim --context, and close, with clu brief printing an agent guide plus declared and live agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7884fc4d50d800e3e258e554857b286bd0602ac6201b56c7652e32126f506422",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 69,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L52-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d629952e339785f1c967cebcab7f3cd5738415f4f44cfb9e048747f7f06b63d"
+      ],
+      "text": "Claims are atomic via an UPDATE ... RETURNING query with a subquery, so racing agents receive different issues rather than colliding on the same task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_498f544aa4dcb531a2058a78f9a2edb3f03da53645882055a6cb0865be550782",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 176,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L176-L176"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 166,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L157-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_92e51177f3aca96295b53bdf198515fc0e6c0974489eaa59be611115f2433cdb",
+        "slc_b39b57fb4ec6c02a2831d01cc6fa24e2ee32453ecab023a5888aa10b6667e276"
+      ],
+      "text": "Agents are declared in .clu/config.yaml with capabilities; capability-tagged issues in the default lane flow to whichever agent advertises that capability, or coordinators can assign directly with -a."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5db8606c5a0f94fc1f0054a07dafe0b560d9df5d3d0416d7acf5dc1907edb8a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 194,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L191-L194"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 196,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L196-L196"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 189,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L182-L189"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96198a7e8224a6c0d5bcc328b9717d0edacf73e2dad89d7c03fc88499fe5b279",
+        "slc_9a0510d06258edb39faf78c31bcda550df18ef55048c8b62bbcfc545da93b0a2",
+        "slc_e74ead4f876a755ad6ccdceb94c60649c48d2ccfc9ee988804b6d4d4b7858284"
+      ],
+      "text": "clu agent start launches a configured agent command with layered prompts (shared .clu/agents/_shared/ markdown prepended to per-agent prompts) and heartbeats it; the command is runtime-agnostic (e.g. claude or codex)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_826168e8357e786653d8b27a1cf61d27287ceb7a263da3bf0bd8f8a0173d0f3d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 232,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L231-L232"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 224,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L219-L224"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 247,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L245-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a284ef22c72f12c7e559bf44d1d230b8795cc761a5d3030b0e37f7fb6cc0cd79",
+        "slc_a8f9dbeda97cd7640940d77b783314110c9fb22567310d7cff30b27993815da7",
+        "slc_cd4cbcabb0974d4871561d7a1fb98b378035feafd47f3953e4e67ecbe6769c3b"
+      ],
+      "text": "clu batch accepts a JSON array of issues referencing each other by alias, validates the whole graph (acyclic, resolvable references, valid fields), and writes it in one transaction; a key field makes re-runs idempotent with --on-existing skip or update."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ccb4eea8cd264cd1b115d878078b1594aa9197a8c76e89a00cff7e539a31554",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L73-L73"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 304,
+          "line_start": 304,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L304-L304"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_599fdfc5825b39045cf8a394ec84e3bf9f121a142400fd32e15f6f0ccf89297b",
+        "slc_623a30e9542b662b4a012f660be6ba14e35b0dc8c9e2e3c783f77ceb45427e1a"
+      ],
+      "text": "clu web serves a local read/write dashboard on port 5757 over the same SQLite file, backed by an in-process REST API that clu http can expose standalone; it includes a kanban board, issue list, dependency graph, and approvals queue."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_192b3041acb3db583e0dfc43750e01e6f0cab241bc87c227acf4d3a1da7a4ecd",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 296,
+          "line_start": 296,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L296-L296"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 294,
+          "line_start": 291,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L291-L294"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 289,
+          "line_start": 289,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L289-L289"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_290a7d800c55aa2d3674637ab79d029221baea1e05b1d019d7efa15b070faeb4",
+        "slc_7f17900c2afbf4bad56ab4b9bb3fd0b16a1d2a105b8f3a23548a520d013e5fad",
+        "slc_dac21739d091bf114360479f9802da02992aa7f9a905bd3b784bf052521305e3"
+      ],
+      "text": "Every write is recorded in an append-only event log; clu history shows one issue's timeline and clu log filters the global stream by actor, kind, issue, or time window, with the actor resolved from --agent or $USER."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4dda02683c30cda8b08bbfbf77729daac24860772b04d72f2761c54f407d5e09",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 133,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L128-L133"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L151-L151"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L135-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_172b780bf984bc1eda9e04993c7ccf6ee78b4a7c3f7a1f61237650b444b8e075",
+        "slc_9eaca5c5c4424b819e745f7cb22b00f2830e14572fa62258b9f43f7af570ed95",
+        "slc_b0309cab7f688b4667dca796db194361a5e0f972b452c452b3101296a1a189d9"
+      ],
+      "text": "Status semantics: closed issues unblock dependents, cancelled issues leave dependents blocked, and clu cancel cascades cancellation to all transitive descendants; milestone issues auto-close when their dependencies close."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c6ec23c91aff3f8c8a8d63669299c86c56b5e8685bb71968ff528addc131e503",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 316,
+          "line_start": 310,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L310-L316"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 321,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L318-L321"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b686fba665ae55c2e7d4c51f01c07d7c92d6c15396c63c86cb3b4dadab2f56a",
+        "slc_f8508b76c22c3bbff765f74a62a9be2a71a4b01a185ce210f45fb57791c898c5"
+      ],
+      "text": "Coordination primitives include TTL'd named locks (clu lock with auto-release), fire-and-forget inter-agent messaging (clu ping / clu inbox), git worktree bootstrapping, and an experimental clu sync that stores issue state as JSONL on a refs/clu/store git ref."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_735fb0047d297ebb8d3bbd1f86c0e23ea5441286d6e53dc095c1006df951150a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 389,
+          "line_start": 386,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L386-L389"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 321,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L318-L321"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f70f1d6ce1c64104f55797228a00c00968b43a5d93f7e746e99b079153f8c80",
+        "slc_f8508b76c22c3bbff765f74a62a9be2a71a4b01a185ce210f45fb57791c898c5"
+      ],
+      "text": "The project explicitly excludes being a live server-backed sync layer, a generic project-management tool, a live GitHub/Linear/Jira bridge, or an agent runtime; sync across machines is manual push/pull and marked experimental."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4762820a9919a22d7c52360ab82efbd53f0fe613caab24203c3fbe8e388d40cd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "afb9bee438f468c14b055ff6ecfe1843c25d5267",
+          "line_end": 70,
+          "line_start": 64,
+          "path": "CLAUDE.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/CLAUDE.md#L64-L70"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 398,
+          "line_start": 395,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L395-L398"
+        },
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+          "line_end": 400,
+          "line_start": 400,
+          "path": "README.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md#L400-L400"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a4fef54f5d80dd6632c46972fb79f9662bd05c3b9ecb4613b0fac9c59b61a04",
+        "slc_5896932d99f0039d33bf46c0d992dd7037b79dbd06de4f6ef74f59cd3d42955b",
+        "slc_837f3fd2227aaa1675e46285b55095bd51561addc2466efef8c6166ebb74b402"
+      ],
+      "text": "Repository development practice: contributors are told to run go build ./... && go test ./... before every commit, exercise demo.sh and demo-workflow.sh as end-to-end smoke tests, and follow CLAUDE.md conventions such as one file per kong command and entity-specific sentinel errors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb51967f16c338ff97592f8ab3ef5b13c9405b7895c26980574562f28e9c036b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+          "git_sha": "afb9bee438f468c14b055ff6ecfe1843c25d5267",
+          "line_end": 164,
+          "line_start": 156,
+          "path": "CLAUDE.md",
+          "repository": "arjia-labs/clu",
+          "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/CLAUDE.md#L156-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b86d4421cc78f490f8e9e5d8b91badfdc773257cff57ca8a6411c0d346cf0bd"
+      ],
+      "text": "Repository development practice: CLAUDE.md instructs breaking batch work into per-group commits that compile and pass tests, fixing bugs in priority order with separate commits, and running an end-to-end smoke test before declaring multi-file features done."
+    }
+  ],
+  "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 408,
+        "path": "README.md",
+        "size": 19837
+      },
+      {
+        "lines": 1,
+        "path": "AGENTS.md",
+        "size": 22
+      },
+      {
+        "lines": 164,
+        "path": "CLAUDE.md",
+        "size": 8432
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3884
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2368
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 258,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": false,
+      "omitted": 2,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_499025fdde5f51b08a34619f3fcaa887",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 4,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/arjia-labs/clu/90db9ca81b89f80cddaf01491f391783c0bbba2e/09fed11b9ad5694a/manifest.json",
+  "package_id": "pkg_ee1c6e01618743ee245155e7d345d1a49da9e20fd4b94cb62195c7ceb90e3f31",
+  "repo": "arjia-labs/clu",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c8b909d4d73f10a5f1c616d472a9ba0409bf85222478c24fd779375e0fd15166",
+  "snapshot_id": "09fed11b9ad5694a",
+  "sources": [
+    {
+      "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+      "git_sha": "d0dfe42784719cc02783bb3c91b9118609c7a992",
+      "lines": 1,
+      "path": "AGENTS.md",
+      "repository": "arjia-labs/clu",
+      "sha256": "174b8fb86623b6ab6608272bce35838dc59d841710b3e362dff9991ac28627f2",
+      "source_id": "src_861b3961e765569999eb41c59f03430b",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/AGENTS.md"
+    },
+    {
+      "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+      "git_sha": "afb9bee438f468c14b055ff6ecfe1843c25d5267",
+      "lines": 164,
+      "path": "CLAUDE.md",
+      "repository": "arjia-labs/clu",
+      "sha256": "f00d0982dccfebc08c7aea6adee675697fd800cdfac5d61c0a554f606f7a720d",
+      "source_id": "src_a3fd4f00274653a785c215fd6869dfb2",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/CLAUDE.md"
+    },
+    {
+      "commit": "90db9ca81b89f80cddaf01491f391783c0bbba2e",
+      "git_sha": "731cfa4b435abe96d5ad6ef04d27377f67436f1e",
+      "lines": 408,
+      "path": "README.md",
+      "repository": "arjia-labs/clu",
+      "sha256": "dc413603992a505d019b307e83b41c054f8cba0adfb1e0ff68ab20a2cc67bf20",
+      "source_id": "src_0e41427458db5111b4aba1e956ea7046",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Arjia-Labs/clu/blob/90db9ca81b89f80cddaf01491f391783c0bbba2e/README.md"
+    }
+  ],
+  "summary": "clu is a single-binary, pure-Go SQLite-backed issue tracker CLI for coordinating multiple AI coding agents on one machine, with atomic claims, capability routing, bulk graph instantiation, workflow templates, a web dashboard, and an experimental git-ref sync. Evidence is README plus contributor notes (CLAUDE.md); no code slices are present, so behavior claims rest on documentation.",
+  "superseded_claim_ids": []
+}

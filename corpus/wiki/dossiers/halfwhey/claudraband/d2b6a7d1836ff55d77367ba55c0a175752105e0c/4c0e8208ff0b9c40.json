@@ -1,0 +1,653 @@
+{
+  "applied_operation_id": "op_337a8354a992446a8fa4ab090c6a43e1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6248154111f65c677675a3ddc13a16e7e6b48fde8fad797e12892503c1ff0bd8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c76ec58e7315bbc563ecea7bbdb5b45bf969f128ebcd1dec07e5ce7d5c57601"
+      ],
+      "text": "The project provides resumable non-interactive workflows, an HTTP daemon for remote or headless session control, an ACP server for editor integration, and a TypeScript library for building custom tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_63b640d92add1000117cdb2530236ce74657f5c002214bc4993b8cfc68705c73",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L19-L19"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 31,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L30-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_90ea2a1deebe43bcb615e99741784c4d108c15fd534a801585c5efb8910e5ed9",
+        "slc_fe26a2b877b7b817e5f3d52b65960cf3a212d7d4a719dbd398b217017e175803"
+      ],
+      "text": "The tool wraps the official Claude Code TUI in a controlled terminal rather than replacing it; it does not touch OAuth, and every interaction runs through a real Claude Code session with authentication via Claude Code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87b62e767427d1031de95864644fb992ad7f3d919ec509c36e0ea92afaf119c0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L14-L14"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L53-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_df6c4f11791d3dd5ac81567ac000236ec098165f22c23409e83987bf261e5119",
+        "slc_eb481a058f257a794cf1ee33b2e30d83858d05f40e05e8f98bbd2d41f3657a88"
+      ],
+      "text": "The package bundles Claude Code @anthropic-ai/claude-code@2.1.96, and the CLAUDRABAND_CLAUDE_PATH environment variable can override the binary path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55afbbcbf562191b1161845d4c711601b71ea07acf2250a10ce06bb87f23a909",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 40,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L38-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c1e1bf3ff9d743f2a9efc4f58d98f8c45f495c98051772f9ae3ea3c8faf674e5"
+      ],
+      "text": "Runtime requirements are Node.js or Bun, an already-authenticated Claude Code, and tmux for the first-class local and daemon-backed workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd6613998a07343aedc784d43582ad4524a9058a26287cb7fa7955b368ce15df",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L115-L115"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 98,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L93-L98"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 129,
+          "line_start": 129,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L129-L129"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 144,
+          "line_start": 133,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L133-L144"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 89,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L82-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08deb868be60347b3f1f580adab715296d76698477b7dc02a95a6ef5b26a0b2b",
+        "slc_2dbd22325dd07e629534335d655f2b25c77441a79bd41fb8e85cedddbf195aa0",
+        "slc_5529eaffee4d088a008d0ba733d044543acf72c4a88877ca69ff72fab365c7dc",
+        "slc_ab4c7679d1cc2924e6860de8856ba464de268d1b02347a4eb367cf7ce6543c3b",
+        "slc_b21b141e1cdd7df2bfd8e5bf052476618f6c7306f3def3a8eb9dcde1a56536ec"
+      ],
+      "text": "The CLI offers prompt, send, watch, interrupt, status, last, attach, sessions (with close), serve, and acp commands, with flags such as --session, --select, --model, --permission-mode, --backend, and --connect."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d9665f090b2c247f9936ab72b25265b23363cbdc18d2c9b4ad7a749efdc45c9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L17-L17"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 276,
+          "line_start": 276,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L276-L276"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 287,
+          "line_start": 282,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L282-L287"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 27,
+          "line_start": 19,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L19-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2025b13557ac5b5d32429fd53897d489a995f83657e995ceb52867ac18d4ed0e",
+        "slc_a0918dd67818a286040868919c41ffdc56c5ce2cc69c119eeea33ed9474bbad2",
+        "slc_d798e8092e80e84e5d9424d76512b57b5eb9fd871d69ff5de1f775a2143642bb",
+        "slc_dc583b3fb5a4146b9580fd10d39674cab1080ce4c4be670ac6aa793bfc444c1a"
+      ],
+      "text": "The daemon exposes an HTTP API mirroring CLI verbs: POST /sessions, /prompt, /send, /interrupt, GET /sessions/:id/status, /last, and an SSE /watch endpoint, with JSON error bodies and 400/404/409/500 statuses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b66cb0c76f0df4396995fb17655289c3576156910a1254b20e646a8955b36732",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 238,
+          "line_start": 238,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L238-L238"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 266,
+          "line_start": 266,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L266-L266"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 262,
+          "line_start": 255,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L255-L262"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+          "line_end": 244,
+          "line_start": 244,
+          "path": "docs/daemon-api.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md#L244-L244"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22cebe48e86d1295d80a4c565e9eb7953859774eafc3d9d54f39c798589a1641",
+        "slc_469822b01e5b1cae77fa58a30438b11e75bd85d61f1dd0fd55405d25cee7909f",
+        "slc_acdc3682d1dc67a0462353f68715acdb25ab85aa4340a94ad5829c4c5e479d64",
+        "slc_b1c801ed0aad79448bf5c8dcb40b2c5de54808442514eb6e845944ef2cec140b"
+      ],
+      "text": "The SSE watch stream sends a ready event, then JSON events with monotonically increasing seq values; kinds include user_message, assistant_text, assistant_thinking, tool_call, tool_result, turn_end, system, and error, plus permission_request events."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1994a38214d3ac14c93e344c135617c9cd90e713ee0c3db67fa8eddaa4e301b4",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 127,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L123-L127"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L121-L121"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_59d42ee54e7923deb8564a692e86f69c9e55fc6efa6b405a01e6427040ae0f8a",
+        "slc_9b9d2afa13501bf91eaf81f8298d989a027f6aa18b2f6a4e59b2c2703c684493",
+        "slc_ddca066174c0b7a78b094f3afbe409f8347e9824b0a133424ac21a0140a2d6f6"
+      ],
+      "text": "Live sessions are tracked in ~/.claudraband/; the sessions command lists only live entries, while prompt or send with --session auto-resume saved sessions even when no longer live."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d4690e8a4fb811178d51adfe17e5d2a0053ec2459e03cdc5304b7a4408b62ad",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L117-L117"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 199,
+          "line_start": 195,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L195-L199"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L104-L104"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 100,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L100-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6c67152263868c6d735b514bebc8d0075b9cd04a64bd507daed836d2a7af720d",
+        "slc_cab485b9ba1fcb002934bf0acbb43e32f7fed3001c1836c92a89695b2104adac",
+        "slc_e3f4f7504396535c486117d26de10eb05e212ce70224b8c5c8693a2cc004f83e",
+        "slc_fc592dc7423ba48bb7225a391ac99ebffcc1de603714a330ed92aa7cd8897ea0"
+      ],
+      "text": "Sessions run inside tmux by default both locally and in the daemon; an experimental, slower headless xterm backend exists as a fallback, and the auto backend prefers tmux then xterm."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25625fcc2fee98b48d6ce5c43514c0b1adae142e47bd124fe765b4e4adf498b3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L28-L32"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 217,
+          "line_start": 214,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L214-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_002d820ab957ab6bf4b76b9f6b479fe0bcf3439cdc00c73c3eeac6710c931e2d",
+        "slc_e3a7a8910585dabdcd0656745d0ac56d8f571019a6aa8db6b8543c629488dbc0"
+      ],
+      "text": "The --select flag answers pending AskUserQuestion or permission prompts using Claude's raw option numbers (the bypass-permissions warning is option 2); prompt --select waits for the following turn while send --select is fire-and-forget."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_58f61386aa9b2856f068b87dc4cef410fecf5f78dbed43e20b5c8cf5f8e8c015",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L9-L9"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "docs/cli.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md#L93-L93"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 127,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L123-L127"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 31,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L30-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24ffb6859ae782d25669c084e7e1d6f952ced78ecac9b1955fac24df9f2759ca",
+        "slc_4869fac55aee026324bea432a92fe0e2995c6c30e40e2f17e312922d5f377aa8",
+        "slc_59d42ee54e7923deb8564a692e86f69c9e55fc6efa6b405a01e6427040ae0f8a",
+        "slc_fe26a2b877b7b817e5f3d52b65960cf3a212d7d4a719dbd398b217017e175803"
+      ],
+      "text": "The project is explicitly experimental and geared toward personal, ad-hoc usage rather than replacing the Claude SDK; attach only works on live sessions and does not restart dead ones."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee9d8bd75283c9a5b79f7174b9e3a64fdbcb7158f8f948ce0a1c6e885e46d27c",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L117-L117"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L139-L139"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L143-L143"
+        },
+        {
+          "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+          "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "halfwhey/claudraband",
+          "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md#L149-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fa8ce2b005249a125144bda2178f64229ad9296f015a49a56d4873ccfbc4683",
+        "slc_c4f80433ce687304c222e7a2927e47e62513852f6d000ff05a885b2d4efe9ff3",
+        "slc_e52f50a15509647800fe8c0f30332c0a13db0493b7cfab4b7957c21f21e93a08",
+        "slc_f5cfa9626f46fc438f17b5d7865c3d9ce276b0b3a9bcc3d72f4b1487bc96f0eb"
+      ],
+      "text": "ACP support lets external frontends such as Toad and Zed drive Claude Code through claudraband, with session follow and resume supported while a real Claude Code pane remains underneath."
+    }
+  ],
+  "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 193,
+        "path": "README.md",
+        "size": 6641
+      },
+      {
+        "lines": 217,
+        "path": "docs/cli.md",
+        "size": 8187
+      },
+      {
+        "lines": 287,
+        "path": "docs/daemon-api.md",
+        "size": 8348
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/docker.md",
+        "reason": "file-budget",
+        "size": 2386
+      },
+      {
+        "path": "docs/library.md",
+        "reason": "file-budget",
+        "size": 10360
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 86,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": false,
+      "omitted": 2,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_9e8383d115a056d299261c4ef158c3e7",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/halfwhey/claudraband/d2b6a7d1836ff55d77367ba55c0a175752105e0c/4c0e8208ff0b9c40/manifest.json",
+  "package_id": "pkg_2c7431ab71c28fb2d9ae511efd42f17145672340efa518c810ed9b8b5fdc1123",
+  "repo": "halfwhey/claudraband",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2a6df7ac5afc9445f99ee9b046a152f3da6fb85d6534bcba37239b97c7ed94c2",
+  "snapshot_id": "4c0e8208ff0b9c40",
+  "sources": [
+    {
+      "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+      "git_sha": "e6202c9c01c54e5db782da782ca6fa5bdad18ec3",
+      "lines": 193,
+      "path": "README.md",
+      "repository": "halfwhey/claudraband",
+      "sha256": "213ca6a5ce9c39b3edf47b8af877f2e2041af99fc0836bbedb45191ff63e584e",
+      "source_id": "src_cd8f2d1b608f5409945f74809316fa30",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/README.md"
+    },
+    {
+      "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+      "git_sha": "a305257be260f3e3f9c2d49b89865491e6b41a6d",
+      "lines": 217,
+      "path": "docs/cli.md",
+      "repository": "halfwhey/claudraband",
+      "sha256": "452aa8f71cce1ab29c42488bdf87782f365e8865e362d1feeaf89403fa1a260f",
+      "source_id": "src_4aaf7a35bb9d5b6e80ba4c2a7d77bc8d",
+      "stored": "cli.md-27c8c22b4560.md",
+      "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/cli.md"
+    },
+    {
+      "commit": "d2b6a7d1836ff55d77367ba55c0a175752105e0c",
+      "git_sha": "0b9fe26d80b812ba8ef7a797278e7b16db375a45",
+      "lines": 287,
+      "path": "docs/daemon-api.md",
+      "repository": "halfwhey/claudraband",
+      "sha256": "0c9489df97db655b58be2461680d5ba528f22e045f01efa13823b55d63058c28",
+      "source_id": "src_857348cfc3515ede89022d65dcb6b326",
+      "stored": "daemon-api.md-aec3ea181aab.md",
+      "url": "https://github.com/halfwhey/claudraband/blob/d2b6a7d1836ff55d77367ba55c0a175752105e0c/docs/daemon-api.md"
+    }
+  ],
+  "summary": "Claudraband is a documented CLI/daemon/library wrapper that runs the official Claude Code TUI inside controlled tmux (or experimental xterm) terminals, exposing resumable sessions via CLI commands, an HTTP daemon API with SSE streaming, and an ACP server for editor frontends.",
+  "superseded_claim_ids": []
+}

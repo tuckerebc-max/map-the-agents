@@ -1,0 +1,751 @@
+{
+  "applied_operation_id": "op_df20977a884a494a8a61150159f9f604",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_04d08ece3e59789e2123736bd0be72b93e3aa34ff53d91a6b01a689cfe1e4ad7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L3-L4"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L10-L10"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 14,
+          "line_start": 13,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L13-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4da845aa0cf52e4b9349d1fd3dfa568c5d9832d7aa68f32f5e126912f50f149b",
+        "slc_6acb0531504e7cb4587b2224e657bda9c6b18b1db4d55a464af07023bfb4ab24",
+        "slc_fff1c02bdbc1693d8d41e7d4f1a673a70fb1bf6ba363937e9699314a14cf8ad7"
+      ],
+      "text": "scode speaks the Agent Communication Protocol natively over two transports sharing one handler chain: `scode acp` over stdio and `scode acp serve --port N` over WebSocket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ccf0cc1810d8b21b293ba31acfef57dc1cd325ffc4097959cfd7e39aed03dca",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 22,
+          "line_start": 21,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L21-L22"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46f49378d0299d489bdc24c83c9f478acaa91e8620fca4d240dcb439e50cfe51",
+        "slc_b17e00692278c5601d4f5a10dcdab16e4ce052c9118c5461a4f8a618bad22826"
+      ],
+      "text": "The WebSocket server exposes JSON-RPC at ws://localhost:8080/ws plus an embedded interactive Web UI at http://localhost:8080/; both transports share streaming, tool use, elicitation and permission prompting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c12ebc788c4fab2c9191876d5b65f2fdd3723ad1837703a063e03cbc4c81d403",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 106,
+          "line_start": 92,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L92-L106"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 82,
+          "line_start": 79,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L79-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8133a77e8e7d22d86f8d551ac8da1bbefcd5a34c4efa1edbbf75f221832ca497",
+        "slc_e75b468f024fbd7dcb5351df03bb8ffd7e688a13911d8c456d43b826f6633b7e"
+      ],
+      "text": "ACP sessions accept `_meta.sudocode.systemPrompt` (replaces built-in static system-prompt blocks) and `appendSystemPrompt` (appended after them); non-string or empty values are rejected with invalid_params (-32602)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_417cdff9cb1fb7401495ead4fb2d106bb82922ce1beaf903f85af3be8fbe5b6d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 175,
+          "line_start": 166,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L166-L175"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 164,
+          "line_start": 161,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L161-L164"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 182,
+          "line_start": 180,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L180-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09ad19031a6e176fc8256d9ee2394591d87a327c6d3324b02997bcdb760966ac",
+        "slc_585f80d03c78d2cd3557670c1aa4f91b32aa7cbfb5a0af6f629f5a7d836fa7dc",
+        "slc_a1953025280766cd3f52e221841a60d499a450a212b36120dd7618e2a84b20fa"
+      ],
+      "text": "A session/prompt starting with `/` runs as a slash command (e.g. /help, /status, /cost, /model, /compact, /diff, /doctor), and the agent advertises the command table via a session/update notification after session/new or session/load."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08645cf940261c73a8ca3456e070460e7304f72a72951d88369390f182ee166f",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 279,
+          "line_start": 274,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L274-L279"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 272,
+          "line_start": 267,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L267-L272"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_287f59ed8d7c1a2200fd8a6276a7631b7aac1b447e230fed70c48bd7fb8316a8",
+        "slc_fc85dfbea88ec50245773114d1c2517c60f2e1b00f438278b79a82e6ae86ca03"
+      ],
+      "text": "Sessions persist as JSONL under `<cwd>/.scode/sessions/<workspace-fingerprint>/`; session/load restores transcript, model, compaction state and fork lineage, but not permission-mode overrides, background commands, or MCP servers not passed in the request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_691a52f2580adc08639655701c876431c5dfc948220c486c9175eb04fba15791",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 157,
+          "line_start": 135,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L135-L157"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 113,
+          "line_start": 110,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L110-L113"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 131,
+          "line_start": 127,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L127-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_033c4f9aa75be75ffbdfac4542cf66d423c3efc4d2898e24091d3fc3dfb6b6f4",
+        "slc_266dc27d6190a524f72dd8da700f73977137ac1164d4b8651802f37a38e4f40b",
+        "slc_cdf68dae14346eedbd90d4a44ec5e3c718ca7e206cf68ec44f1443d30d527c1e"
+      ],
+      "text": "Per-session memory is controlled via `_meta.sudocode.memory`; 'disabled' means the session neither reads nor writes the persistent memory directory, and disabling never deletes existing entries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80a98ef88606fed64048f87c211ad90e4cd57298bde92d2733167287334378b1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c01435ce20fa62ae1ef9ab7bb55476519e1de625",
+          "line_end": 10,
+          "line_start": 6,
+          "path": "docs/authentication.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/authentication.md#L6-L10"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c01435ce20fa62ae1ef9ab7bb55476519e1de625",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "docs/authentication.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/authentication.md#L3-L4"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c01435ce20fa62ae1ef9ab7bb55476519e1de625",
+          "line_end": 18,
+          "line_start": 14,
+          "path": "docs/authentication.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/authentication.md#L14-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef4b366dc6045db242ced62b130dc8c37c05eb1be96c3ffb324e7573c1efa003",
+        "slc_f98d725f484a4eb0075b7360047828ad7a6510f1995b0ca175e58ec03740f420",
+        "slc_fa2c12cca658fdd449d5bd5882b17ed95a6a2873be1647e190f9478ce43072b5"
+      ],
+      "text": "Authentication supports three modes — subscription (CLAUDE_CODE_OAUTH_TOKEN), proxy (PROXY_AUTH_TOKEN + PROXY_BASE_URL), and api-key (Anthropic, OpenAI, xAI, Gemini, DashScope keys) — with auto-detection in that order."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f7c23209a3ab0f22735ca3e247b046d219f653cb2cd8c0dadf75f4ba8787cd7d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+          "line_end": 104,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md#L92-L104"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+          "line_end": 119,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md#L108-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_461ca7afa2d8e69a907307165106408ba854c182acc41df27f674a78708b95cc",
+        "slc_77d1c45fb8b0e0879c6abc3fcafb0870e5a57adb0ac80e7ff10f70be49cea206"
+      ],
+      "text": "The project commits to inline-only terminal output (no alternate-screen TUI, no ratatui), local-first operation with zero telemetry by default, and semver stability with no forced auto-updates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c84ee8add798f08a7ed95ba56f65344fd49176ca2362cb12c366dbcadea80c4",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+          "line_end": 133,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md#L125-L133"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+          "line_end": 166,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md#L165-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52cfe3f22f5f70f7d3335ae492e9be6c25df2293679b573dec7c54d019178d20",
+        "slc_8afe2da1da8ee7a4bf1a5e770e10936c989822a93d2eccf0ace923ea47307af6"
+      ],
+      "text": "Sudo Code positions itself as an agent unit, not an orchestrator: it plugs into a nexus-VFS `chat-with-me` mailbox primitive so humans, orchestrators, or peer agents over ACP can drive it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c70c1ca32d78f554c24a1a2ad80cb4101849d6686668fe0a8ad47c9895a27d56",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+          "line_end": 171,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md#L170-L171"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+          "line_end": 195,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md#L192-L195"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+          "line_end": 190,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md#L188-L190"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_445e2e5f41b48b48dcd122fb4c20760768e7290919aff38bd7025b0cd67a889e",
+        "slc_4de484dd58d99bcef36a1d221d9939411921768d09e8d1166e092401c4a3232a",
+        "slc_e0f35ae0aad9d483930cf162ae0e2ff507f53ac5f68e740f7ea23a82b2277837"
+      ],
+      "text": "One scode binary serves copilot, worker, or standalone roles depending on the FsBackend implementation: StdFsBackend (host std::fs), NexusVfsFsBackend (gRPC to remote kernel), or KernelFsBackend (in-process syscalls)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b502023c83300e2516d2a13d7084bab111158fc3a64c1a2a1e6ac27308de8618",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 330,
+          "line_start": 325,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L325-L330"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 297,
+          "line_start": 291,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L291-L297"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1084dcee38a3b482411b0a70bf2954a2b65e740853c0660b6b5e626e0325f44a",
+        "slc_4d0ba25e405743969524faec8dec907d9086cbcb5c88d69f5954ff5d921360d1"
+      ],
+      "text": "Forking via `session/new` with `_meta.sudocode.forkFrom` copies the source transcript into a new first-class session under the new cwd; the source is read, never modified, and the initialize response advertises sessionFork for feature detection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b6ad02d2676386c1605fc8e4caefab386d742f10aa740c46abf7fe901633200",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 245,
+          "line_start": 236,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L236-L245"
+        },
+        {
+          "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+          "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+          "line_end": 263,
+          "line_start": 258,
+          "path": "docs/acp.md",
+          "repository": "sudoprivacy/sudocode",
+          "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md#L258-L263"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_348ea9b88caf15622a7544fba624428aa3c2373a83e66ef71a2f3ec3562b3f97",
+        "slc_69c2a8f29b446ee70d4e2b5bf5b5754486b380f028afec6526f537e10f789282"
+      ],
+      "text": "Automatic compaction trims oversized tool text (over 8,192 code points) to a head/tail with marker before running a checkpoint pipeline; successful replacement archives the original transcript as `<transcript>.before-compact-<timestamp>`."
+    }
+  ],
+  "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 368,
+        "path": "README.md",
+        "size": 15030
+      },
+      {
+        "lines": 225,
+        "path": "CHANGES.md",
+        "size": 20077
+      },
+      {
+        "lines": 330,
+        "path": "docs/acp.md",
+        "size": 16763
+      },
+      {
+        "lines": 106,
+        "path": "docs/authentication.md",
+        "size": 3728
+      },
+      {
+        "lines": 140,
+        "path": "docs/container.md",
+        "size": 3222
+      },
+      {
+        "lines": 352,
+        "path": "docs/linux-bundle-install.zh-CN.md",
+        "size": 5880
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/linux-deb-install.md",
+        "reason": "file-budget",
+        "size": 4110
+      },
+      {
+        "path": "docs/mock-parity-harness.md",
+        "reason": "file-budget",
+        "size": 1461
+      },
+      {
+        "path": "docs/models.md",
+        "reason": "file-budget",
+        "size": 7807
+      },
+      {
+        "path": "docs/parity-claw-code-sync-2026-W24.md",
+        "reason": "file-budget",
+        "size": 60401
+      },
+      {
+        "path": "docs/permissions-and-sandbox.md",
+        "reason": "file-budget",
+        "size": 1666
+      },
+      {
+        "path": "docs/plugins.md",
+        "reason": "file-budget",
+        "size": 15213
+      },
+      {
+        "path": "docs/plugins_zh.md",
+        "reason": "file-budget",
+        "size": 14703
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 2384
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 3630
+      },
+      {
+        "path": "docs/design/unified-agent-pid-tools.md",
+        "reason": "file-budget",
+        "size": 208
+      },
+      {
+        "path": "docs/release-notes/v0.2.0.md",
+        "reason": "file-budget",
+        "size": 4000
+      },
+      {
+        "path": "docs/release-notes/v0.2.1.md",
+        "reason": "file-budget",
+        "size": 1477
+      },
+      {
+        "path": "docs/release-notes/v0.2.10.md",
+        "reason": "file-budget",
+        "size": 2113
+      },
+      {
+        "path": "docs/release-notes/v0.2.2.md",
+        "reason": "file-budget",
+        "size": 2292
+      },
+      {
+        "path": "docs/release-notes/v0.2.3.md",
+        "reason": "file-budget",
+        "size": 2774
+      },
+      {
+        "path": "docs/release-notes/v0.2.4.md",
+        "reason": "file-budget",
+        "size": 3033
+      },
+      {
+        "path": "docs/release-notes/v0.2.5.md",
+        "reason": "file-budget",
+        "size": 2960
+      },
+      {
+        "path": "docs/release-notes/v0.2.7.md",
+        "reason": "file-budget",
+        "size": 5120
+      },
+      {
+        "path": "docs/release-notes/v0.2.9.md",
+        "reason": "file-budget",
+        "size": 3162
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-21-linux-deb-installer.md",
+        "reason": "file-budget",
+        "size": 6620
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-linux-bundle-installer.md",
+        "reason": "file-budget",
+        "size": 4750
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-21-linux-deb-installer-design.md",
+        "reason": "file-budget",
+        "size": 12743
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 583
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 20662
+      }
+    ],
+    "omitted_count": 24,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 396,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 30,
+      "complete": false,
+      "omitted": 24,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_d34412fe51a255c5ba6b6e1385a43044",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 0,
+    "memory-state": 3,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sudoprivacy/sudocode/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/8fb393471e10b339/manifest.json",
+  "package_id": "pkg_5506f7e58f6d59efb3b546b52f9d00f236f3854d5d9ef0d34a62b570c5d84e11",
+  "repo": "sudoprivacy/sudocode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9e1836bb10a24d83fdcc40fb334013157c10b4cf85393a21d075d0efb6e72818",
+  "snapshot_id": "8fb393471e10b339",
+  "sources": [
+    {
+      "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+      "git_sha": "aedc8012345738f580e27dfd6a2fac8ac78e7346",
+      "lines": 225,
+      "path": "CHANGES.md",
+      "repository": "sudoprivacy/sudocode",
+      "sha256": "22cea26fd5a074de6aff25d23ed6d7d551039c3427553a507a33e07d3fde8fee",
+      "source_id": "src_8d0f7011430c5a81980d57e482fedeb7",
+      "stored": "changes.md-d975bf659606.md",
+      "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/CHANGES.md"
+    },
+    {
+      "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+      "git_sha": "6cebc074550eb3baa1c38440d204adfa4583b0cf",
+      "lines": 368,
+      "path": "README.md",
+      "repository": "sudoprivacy/sudocode",
+      "sha256": "43ae827af3f202f54f4a171bac5410b44fcb8ff25ab5a52b94ab7ed8ead20099",
+      "source_id": "src_f26e4333dde05645a1d409ce68f0408b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/README.md"
+    },
+    {
+      "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+      "git_sha": "c0a17aabe528053229f7fe3624aea66af1542249",
+      "lines": 330,
+      "path": "docs/acp.md",
+      "repository": "sudoprivacy/sudocode",
+      "sha256": "255e5183e3b057d20da79e4a0a84a8a0a2184f84e5050f04a966e0a1ab8376da",
+      "source_id": "src_b91a8fc98a015822b63b5babccdb5ccc",
+      "stored": "acp.md-4ed479dc9d94.md",
+      "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/acp.md"
+    },
+    {
+      "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+      "git_sha": "c01435ce20fa62ae1ef9ab7bb55476519e1de625",
+      "lines": 106,
+      "path": "docs/authentication.md",
+      "repository": "sudoprivacy/sudocode",
+      "sha256": "7726887736aefdb78794cf48bf58cf9828fee2978a651cc3e083c7ee5c3ec2b1",
+      "source_id": "src_5d4e89750e125dbeaa6e4b50435091ec",
+      "stored": "authentication.md-d668c4928a76.md",
+      "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/authentication.md"
+    },
+    {
+      "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+      "git_sha": "6b6dda46131aa7b4c38085cf19ff86b6fe0032ba",
+      "lines": 140,
+      "path": "docs/container.md",
+      "repository": "sudoprivacy/sudocode",
+      "sha256": "3b3f2e578fd02be7d96fdd790a626ac0874f3780b59f32cd51c756e3e4f5a158",
+      "source_id": "src_9f5affe23d905588a5138f5cef085fdb",
+      "stored": "container.md-10ae8b4d21d0.md",
+      "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/container.md"
+    },
+    {
+      "commit": "a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408",
+      "git_sha": "b394299507b31d50d786298e5ba7b8efd9f2f294",
+      "lines": 352,
+      "path": "docs/linux-bundle-install.zh-CN.md",
+      "repository": "sudoprivacy/sudocode",
+      "sha256": "d429b0b7070bc60caa82ec1f0fb93d7531e890d43c09024dbeff9ffa05176497",
+      "source_id": "src_70fb1e1e85fa5049bc0313f3f2d65712",
+      "stored": "linux-bundle-install.zh-cn.md-45f32d79049f.md",
+      "url": "https://github.com/sudoprivacy/sudocode/blob/a67bb90f5c4b8de1b9b6aee32bc3c0df73c81408/docs/linux-bundle-install.zh-CN.md"
+    }
+  ],
+  "summary": "Sudo Code (scode) is a Rust CLI coding agent speaking ACP over stdio and WebSocket, with three auth modes, JSONL session persistence, per-session system-prompt/memory controls, and a stated inline-only, model-agnostic, local-first design. The nexus-VFS mailbox integration and FsBackend deployment modes are described as design/architecture in README docs. Evidence coverage: 133 of 300 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,870 @@
+{
+  "applied_operation_id": "op_697dce27368a4a3299f1a3a4c5e3fa58",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f9e074f5905c940945bf1c2385b5fd1eb77dab5fd165bb7fb7c49bf543e6a43",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 16,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L13-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc36db6fe5e4d3135ca3e3e9080bffceae1a227353b6e4cb433f7b150d8087d4"
+      ],
+      "text": "Forge is an open-source terminal coding environment for working with AI agents, combining agent conversations, file explorer, Vim-style editing, shell, diffs, approvals, and multiple durable sessions in one keyboard-driven TUI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e8b1ab54a7767968ef7d016dd5901c93c862096a3aa551c5868fc04edd750dc2",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 24,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L23-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ceb00562590a2f00c2a06dd6c0004a8c9cc40629d3c2d05714b5a88bd1cfe333"
+      ],
+      "text": "The project describes itself as alpha software and advises reviewing every approval prompt and using it first in a disposable or backed-up repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44790f6e238d6f684721058537202ab184ad2ca2faae0c54a5402860211a23df",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 603,
+          "line_start": 597,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L597-L603"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 595,
+          "line_start": 595,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L595-L595"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d388eb671efbf0de465a16480c9ae61fc627a455d1d07bb51cf46cdd1892a1b",
+        "slc_9aac8ac1bb666530345bd880f6356366dc4abbc0c619f839ea514da957bf5fc7"
+      ],
+      "text": "Forge is a Rust workspace whose main crates include forge-cli (entry point), forge-tui (terminal interface), forge-core (agent loop and session lifecycle), forge-model, forge-connect, forge-tools, and forge-durable (SQLite journals)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a49fbf0a2901f77043dfa1125fb220fa55b3e5dde68153e2d4e45de5c5b33cd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 192,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L173-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bf765a1fc8a34a06ed54bf8af13e770c150ca4c26015391d7a7ba0299072cd0"
+      ],
+      "text": "The TUI exposes in-app slash commands such as /connect, /model, /resume, /continue, /fork, /compact, /terminal, /theme, /effort, /thinking, /status, and /quit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e3af8244a399c9f3eb7c4ea4dbfed9c3a92356209e70f61777d686269145c48",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 196,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L194-L196"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 566,
+          "line_start": 560,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L560-L566"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 115,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L114-L115"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 550,
+          "line_start": 548,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L548-L550"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 553,
+          "line_start": 552,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L552-L553"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 558,
+          "line_start": 555,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L555-L558"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 112,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L110-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b4a747d9cf7ab7b5db45963e9daeb8bbf02caffb6359b9b4ad9e6247a9e962c",
+        "slc_3430d711f0af2f7eea30c17d198cceeeca8223fdc82b6d2c23a6981d4119c96a",
+        "slc_348465bf555a2522918413ae0211fdcc921e3a460998851ca90ae93c1ca1858e",
+        "slc_507a985f90ca0e2f430ad19d7808c657d037acbfd209d6002d0f65558e05eb32",
+        "slc_aa7023497da0a5dc04a8bf7e45a71a3c7cc8c1e5f4bada3cdcf5b3314bb2f17f",
+        "slc_b155f6e7d342985ab3e90f1893ffdcef4ddde55b655fd7c0bf92f46ba29153f0",
+        "slc_fdb25bf2c0b706042809b7f108554962c19b269c2cd9e0cb8c7df4550d01e854"
+      ],
+      "text": "Documented CLI forms include bare `forge`, `forge --continue`, `forge --resume [<session-id>]`, and `forge --fork <session-id>`; the default workspace is the current directory, overridable via FORGE_WORKSPACE."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_67640a0e890da21b03556ddc5384e06873f35d807db5ddd49ce0d9cd099f667f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 127,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L125-L127"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 138,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L129-L138"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 142,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L140-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46000153ef786d47794c0c3bc0d22ac95e93eb550e98a002fd2ef4feaa6d23c9",
+        "slc_47787a8a7b651d9976d07a7da2afdced39d14b9c49efff1d6339aa0234dc27a8",
+        "slc_d66a04d215398a344c2cb0d712240109b579797cc5f974fcb5760d311673d5e9"
+      ],
+      "text": "A frontend-independent `forge bench` entry point accepts a piped prompt with flags like --workspace, --journal, --model, --route-id, --effort, and --approve-all, emitting one JSON response on stdout and logs on stderr."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fb4701a399e7d8cd1af279124588feefdbf202127eb9d51b4e6f8a65f6ea989e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 21,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L18-L21"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 428,
+          "line_start": 424,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L424-L428"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 433,
+          "line_start": 430,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L430-L433"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 352,
+          "line_start": 348,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L348-L352"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 54,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L40-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0249edb547069a2a2343804d3f1be3a0793202dfefa189d731dbb1030829393a",
+        "slc_1228763fd976c6450c1b0b87e0addec937234e7d9b92534bb5748bd5ae56d234",
+        "slc_5e9e62494a1cf02271d71372c1777f222d99f08c3727120422497c6fddfbdcf4",
+        "slc_7d2a3cc2c3f8ae8cd003de0c0024eaa350b710fa7d698810585921e0e54c64c5",
+        "slc_f0099459c634d885760774ed9ae5c3b94313f0c4be0060eef35fc2d4c5068c33"
+      ],
+      "text": "Agent shell commands run under an OS sandbox (Seatbelt on macOS, bubblewrap on Linux, WSL2's Linux sandbox on Windows) confined to the workspace, with network egress denied by default and opened only through explicit host rules via a filtering proxy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36ad4581810a9b3ba367fe9537726bf8263a1b1a873ee7a1830e6ac5b7ed8d6c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 502,
+          "line_start": 498,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L498-L502"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_70cbe7bb2c2b28076f79be44beb5958f21e21d8473964332b7b9aa026cf593ff"
+      ],
+      "text": "There is no permission-mode setting: shell commands and file writes run unprompted with the sandbox as the boundary, MCP tools still prompt, and a deny pattern re-prompts even for shell; ACL denies are hard blocks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_575f64b10a34fc4f795dc20341257980e7b8276348252b4a6c946d9ca189e831",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 466,
+          "line_start": 461,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L461-L466"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e3555fb19cad0f98a811c5acc2ba087609ef49b606359f9bda3736639715f05"
+      ],
+      "text": "Permission rules come from a personal permissions.toml and a workspace .forge/permissions.toml; the repo-committed file's allow entries are ignored while its deny entries are always honored, so a checked-out repo cannot widen its own blast radius."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a2ade14295af315d95c6976d9acaad90f58486b83c2d96147f32573119c9ee4c",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 21,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L18-L21"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 540,
+          "line_start": 536,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L536-L540"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 54,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L40-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0249edb547069a2a2343804d3f1be3a0793202dfefa189d731dbb1030829393a",
+        "slc_676c227d45af60e48f8ababd354612cdfb9b0a6d28f80316c5c8b3d249954df9",
+        "slc_f0099459c634d885760774ed9ae5c3b94313f0c4be0060eef35fc2d4c5068c33"
+      ],
+      "text": "Sessions preserve transcripts, task state, queued follow-ups, and unfinished work in a local SQLite journal so they survive process restarts; each managed session has its own durable state and isolated linked Git worktree."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00f42cfcc0b379883aaaeecde4e70528988009e3f419d37b2d9b0dcf0bd2396c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 282,
+          "line_start": 278,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L278-L282"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa459bf382d0911670f357bb76d154c164602916bd6480398dd73621e8780109"
+      ],
+      "text": "Agent orchestration is enabled by default: the model can spawn child agents via spawn_agent, send_message, followup_task, wait_agent, list_agents, and interrupt_agent; children run in isolated worktrees, inherit parent model/governance/policy, and can be tool-narrowed with tool_allowlist."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59070727be783aac589a7d99229d4f6816f4a4d4b8ddaeaf9f8019347bd29880",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L91-L91"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L83-L83"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L77-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bfd499393fff09b01484f5c4bbd6a972d13774b2189fcef81096c12e104eb0f",
+        "slc_a7cfd657cf7a6a55969b698708d0eda83a58a7495966943b1ad54e283a68b06a",
+        "slc_ca30cedacef37a681571f0fea873ab3ad8a3918c9aa22db0f92b289b886052dc"
+      ],
+      "text": "On Linux the installer installs the sandbox dependencies bubblewrap and socat if missing (supporting apt, dnf, yum, pacman, zypper, apk); macOS needs nothing extra, and building from source requires Git and Rust 1.97.1 or newer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8dabe99f628269fcc9df8fd081fbbc9fa831e954d274b63a42a533887f568276",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 87,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L85-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61a48b2c28ee687701efa515bab83be6bc9a54b892070c3a4fc016187bbcba57"
+      ],
+      "text": "There is no native Windows build; Forge runs under WSL2 using the Linux sandbox, and the PowerShell installer detects WSL2 and points to the Linux installer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c0151c114a9c6cff8e06e509deccdc9d39182f24734c4ffb908c25ee3ef9533",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 416,
+          "line_start": 404,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L404-L416"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_186e6c9714b04116fcd9b8f7967d6d1d1fba85609e13fa90aff526b254822d1b"
+      ],
+      "text": "The README documents a residual Linux sandbox gap: read-only mounts do not stop Unix socket connections, so sockets under /var or /opt remain reachable despite masking of /run, /tmp, and home trees; tracked in issue #392."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d86aed90dcb22d75feb37762f854c5875bdb35d1aa2c0371bab5e645679b7263",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 420,
+          "line_start": 418,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L418-L420"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_251a731c0545d4617bb94ba8f9ff56b94446de8c58e7c4f55e4453e4b06b3754"
+      ],
+      "text": "If the OS cannot confine (e.g. bubblewrap missing or unsupported platform), Forge refuses to start, printing the reason on stderr; there is no setting that turns oversight off without an enforcement floor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_329d4d587ab06c1de9527723944f91bdebdb923df166e7c19d052cd93396dcb3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 611,
+          "line_start": 607,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L607-L611"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 605,
+          "line_start": 605,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L605-L605"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 613,
+          "line_start": 613,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L613-L613"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2938f879d7c21450cc2d69411457257b2ea8423aa1e05be9d38bb63180d85bee",
+        "slc_47e1c21413930f5848c462d49945439f80835f35990731fbb9b1b781c3ac7d66",
+        "slc_744e22be7b503fbc377eecf3da44ea40e3d00ebb3d96dc3d93af883e5b586410"
+      ],
+      "text": "Repository development practice: contributors are told to run cargo fmt --check, cargo clippy with -D warnings, and cargo test --workspace before submitting a change, with further guidance in CONTRIBUTING.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_066e542d2001fc7243fb5864bd33c099e22e6736f4e36f596d3fe680e8dab508",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "a00d5bdd9b17eb51610ecf522ccdbf4fad12c99a",
+          "line_end": 208,
+          "line_start": 208,
+          "path": "FORGE-DESIGN.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/FORGE-DESIGN.md#L208-L208"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "a00d5bdd9b17eb51610ecf522ccdbf4fad12c99a",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "FORGE-DESIGN.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/FORGE-DESIGN.md#L171-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1d4572b1f36568ab128631ea179dba84749c952a5c0b59b58cff80eb33b1c94",
+        "slc_b03be6c2da7eaf8e71c840c7242c5d5a2f3718219e53db97297165468e14efe6"
+      ],
+      "text": "Colours are semantic tokens defined per theme rather than fixed hex values, and the design system names ACCENT_STATUS_MIN_HUE_DISTANCE as its single hardest rule, asserted over built-in themes in tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f1cbf5530a23deda01537e2cedf676823793c19414529ea1dde1db0fdacd123",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "a00d5bdd9b17eb51610ecf522ccdbf4fad12c99a",
+          "line_end": 167,
+          "line_start": 157,
+          "path": "FORGE-DESIGN.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/FORGE-DESIGN.md#L157-L167"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e1a196263c5b3de892ccb59e5c8674a8b0c0b037225b762ca94a638db877ee96"
+      ],
+      "text": "Core UX invariants include exactly one effective keyboard owner at a time, colour never being the sole state indicator, approvals and failures outranking routine activity, and refusing to render below an enforced minimum of 80x18."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2bd9adf3c6409ae8bbc9a0427adb94f8964331ed8a290cb59f5fa2717ffc2f3e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 169,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L167-L169"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 154,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L148-L154"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 165,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L164-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ab35d95382ecef40e63da674c1b712e185f6d670f45e25858d3a3935de15ec0",
+        "slc_3f4ed5b045e0097ac7c9af1a2eaac6e1c72387acaf30a64ad573d736e568c58b",
+        "slc_4899b97de1d05fa12c15a279562298ed8102fb02cc234b2494a8a6380fb44eb7"
+      ],
+      "text": "Forge ships native provider routes for OpenAI, Anthropic, xAI Grok (OAuth), OpenAI Codex subscriptions, OpenCode Go, OpenCode Zen, and local Ollama, configured via API-key environment variables or /connect."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_258d1f7c307c6485d625c5e905f073f8ded7623b61fa492ac3a4ed1acefff646",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 326,
+          "line_start": 325,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L325-L326"
+        },
+        {
+          "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+          "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+          "line_end": 256,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "norvialabs/forge",
+          "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md#L254-L256"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_024cf1c79b0a9b629ae47d0668841f004eba8dd4d25f34cd07473ab58132a416",
+        "slc_8a7c63f50fdf3a51209d54bbf14d59314cb6693ca66436450e698b84e70addbf"
+      ],
+      "text": "Configuration is layered from defaults, a user config file, a forge.toml in the working directory, and environment variables, with environment variables overriding file configuration; MCP servers are configured in trusted user config or explicitly managed configuration."
+    }
+  ],
+  "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 617,
+        "path": "README.md",
+        "size": 26171
+      },
+      {
+        "lines": 797,
+        "path": "FORGE-DESIGN.md",
+        "size": 47924
+      },
+      {
+        "lines": 352,
+        "path": "docs/issue-193-implementation-handoff.md",
+        "size": 13553
+      },
+      {
+        "lines": 76,
+        "path": "docs/sandboxing-followup.md",
+        "size": 4291
+      },
+      {
+        "lines": 86,
+        "path": "AGENTS.md",
+        "size": 3927
+      },
+      {
+        "lines": 29,
+        "path": "CLAUDE.md",
+        "size": 1424
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 2365
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3590
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 5926
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 286,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 3,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_18e669875bf259b594e81de625315e88",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 3,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 3,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/norvialabs/forge/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/d8ce37fcadf8e938/manifest.json",
+  "package_id": "pkg_a13f04d5b04bee7793418be8f606d067236daa07fe50d5fb2f41d3e2100a673f",
+  "repo": "norvialabs/forge",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3f595a49ad74f6187359f5ea895cf6d4bab11d80060a38ee0bcdad1f429a3d88",
+  "snapshot_id": "d8ce37fcadf8e938",
+  "sources": [
+    {
+      "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+      "git_sha": "12fa321e5181a2faf4ff87cded1a5e4bfe2edd38",
+      "lines": 86,
+      "path": "AGENTS.md",
+      "repository": "norvialabs/forge",
+      "sha256": "5a5469eff9ca51fb0d14d8f7e1a5647829a9963d354685b5e240bbe7e3106375",
+      "source_id": "src_d1f182089ffd54cca4d6dc8789258a92",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/AGENTS.md"
+    },
+    {
+      "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+      "git_sha": "a567085efad81f7385664c22d98189b13101946d",
+      "lines": 29,
+      "path": "CLAUDE.md",
+      "repository": "norvialabs/forge",
+      "sha256": "1dc86006f998f2cd6df3b55c05a1412c01454853758d95ac351b14a4e1137ef4",
+      "source_id": "src_6fd9653c2b0454fdade932077f7ee467",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/CLAUDE.md"
+    },
+    {
+      "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+      "git_sha": "a00d5bdd9b17eb51610ecf522ccdbf4fad12c99a",
+      "lines": 797,
+      "path": "FORGE-DESIGN.md",
+      "repository": "norvialabs/forge",
+      "sha256": "17d60e9b9523b7eb1ce53fa77e44db8222cd8f80aae3902f01fc56d4e606a3b2",
+      "source_id": "src_5388956710b25682926147d6be88924f",
+      "stored": "forge-design.md-b614897d38a5.md",
+      "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/FORGE-DESIGN.md"
+    },
+    {
+      "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+      "git_sha": "698c28da5d77150eb5b080c0c86bf8790801314e",
+      "lines": 617,
+      "path": "README.md",
+      "repository": "norvialabs/forge",
+      "sha256": "645c71bfd9323e1e3f15ac81dab37838cde7bee5953c06c10eda71673aa0f64f",
+      "source_id": "src_baf994dcafae5fa59ab3a0c74139341e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/README.md"
+    },
+    {
+      "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+      "git_sha": "610c2be50f73dd5aaf1725cd3c3fb4b7180db73f",
+      "lines": 352,
+      "path": "docs/issue-193-implementation-handoff.md",
+      "repository": "norvialabs/forge",
+      "sha256": "f0e68ae65aa337f736becaf6f2d2ece2007080c0f1493af826721651fd786f15",
+      "source_id": "src_40897b58dbf45eccaccc255e5b247df0",
+      "stored": "issue-193-implementation-handoff.md-a6f75670bf66.md",
+      "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/docs/issue-193-implementation-handoff.md"
+    },
+    {
+      "commit": "8a1c5e85ec5cd0dce38ba64a205d212c822488d2",
+      "git_sha": "67a77d955be9a3ec14b160ff52446e69119fe3ad",
+      "lines": 76,
+      "path": "docs/sandboxing-followup.md",
+      "repository": "norvialabs/forge",
+      "sha256": "6cd1c3f39e1af139299d0c0439e6dba05389285ef716f09854674ac2ccc49446",
+      "source_id": "src_b3197af2d8825ff29864a59043e069a2",
+      "stored": "sandboxing-followup.md-270b92340dc1.md",
+      "url": "https://github.com/NorviaLabs/forge/blob/8a1c5e85ec5cd0dce38ba64a205d212c822488d2/docs/sandboxing-followup.md"
+    }
+  ],
+  "summary": "Forge is an open-source Rust terminal coding environment (alpha) combining agent sessions, editing, shell, and sandboxed tool execution in one TUI, with durable SQLite journals, child-agent orchestration, and OS-enforced sandboxing with proxy-controlled network egress. All prior claims were verified against the cited slices except the design-system hue-invariant claim, which was revised to only what its cited slice states. Evidence coverage: 130 of 315 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

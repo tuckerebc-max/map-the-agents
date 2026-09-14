@@ -1,0 +1,583 @@
+{
+  "applied_operation_id": "op_e917682f1a204ae39e15c6542eb282a5",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_95a653ba569c170b4303dfea9742f8f672457d1cd8fe96567894ebf7a9ad2632",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L9-L9"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_82b24e4a0bb58f53c0eac53d98e28524b0428350d100f7ac946a97d78d5f918e",
+        "slc_fea4b5d69dd1100afdff67d2376ff788471f844050830bcd1d75af1354662804"
+      ],
+      "text": "kkirikkiri is a Claude Code plugin that takes a plain-language goal, asks only for missing decisions, scans the environment, and runs an approved agent team or Workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5eda18cb33add8db489a45a606ee3f61c21e647f33145cfd45b4449e0678fe65",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L29-L31"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L46-L48"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L23-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2702424be6e8ac3959e9e1f48e24a2d56a8c0a0393ff17f8c1f35f03b6eae9ff",
+        "slc_88b4845c305fdccd4a42c8e02c698c68931322456bfc64e5c34770d27a9b68fc",
+        "slc_ef0f5bf094343cacb6c9c34ce0ad9aaa91439b2544f03f934daa8c93373b4342"
+      ],
+      "text": "The product is invoked via a /kkirikkiri slash command (e.g. '/kkirikkiri build me a research team') after installing from a plugin marketplace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8584bbe79eddc0ddec2ae35ed860cfa49f3d136d8cd9e6bedbd54cb2d0bed7bd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 79,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L69-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fb44c19aec1f5c7228c7be2ea277e6c15a8a84ccf9261ef5b87cc130357f825d"
+      ],
+      "text": "Execution follows an eight-step pipeline: intent/preset matching, parallel environment scan, interview, team composition, user confirmation, shared-memory init, quality validation, and report collection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a6af3e7ea044000ddd3793fdb33078ae900a109006e3725494cf3f174b4383b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+          "line_end": 208,
+          "line_start": 205,
+          "path": "CHANGELOG.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md#L205-L208"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 61,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L54-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47f346040e4b4d21e67df6a63b42e8296856917e5816846a6fa4a14670e1b0f0",
+        "slc_c64d1739313901657730061f93fb0bdc72a7434c14936c88d63cb1b7d54e7f50"
+      ],
+      "text": "Two execution substrates are offered: a live collaborating Agent Teams mode or a deterministic Workflow pipeline for high-volume fan-out work; the user picks between them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f4af1bb55fb0e07df543d85bc12db5227e537ef3aa6ec865720210834dcb08d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 124,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L119-L124"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L117-L117"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L126-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21e333ba595fe60a9360daf125da6a1172ee6e8e545666dc1a9584608404ffa9",
+        "slc_8a22326994062d72b4c18e1a3fc39cc93e884134919d5992dd2f57242535b7a9",
+        "slc_9805c34b3609f950f81e122fd4633e39df6313f218dadcf1c0e05e8cd8b8bcef"
+      ],
+      "text": "Teams write session-scoped files under .kkirikkiri/teams/{team_name}/ (TEAM_PLAN.md, TEAM_PROGRESS.md, TEAM_FINDINGS.md, report.md), while saved teams persist cross-session under .kkirikkiri/shared/saved-teams/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44b3ffddb82b45d500b26d1a11689fd4d67a34338ed0d2089e69bdfea443be95",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 134,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L130-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b394f04b99fcbaadccf35be244c801363d435a8380eff48ae74441ec0018d3e"
+      ],
+      "text": "The validation loop runs at most two rounds by default: round 1 is the original team, round 2 an auto-judge choosing keep, full replacement, or partial swap; further rounds need explicit approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed8461dbe64fcabfaa6586e88ce08e6a69d0f87226846da8050a5f0d430ad37e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 111,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L105-L111"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L113-L113"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11fd9ded478fd1479a693e897f7f65a6ad5f4b5e8bdd6ca2ba59023b90f2d5bf",
+        "slc_cf4eaac176f2f56f6b9b14516f3564cbf0011bdc1c3ae37c80902add4a2ede5a",
+        "slc_d4012cd9bde5ac92b47249262b24becf86681dde14f9a190dc44733923c495d1"
+      ],
+      "text": "Five built-in presets (Research, Development, Analysis, Content, Product/PM) are matched by natural-language trigger words and serve only as starting points for the final team."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5186fdfe2d8d001b2c69f34b2d7fa52e1100420ca65e28d92d5c9fcc0bcf6be",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 183,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L172-L183"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 191,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L187-L191"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 193,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L193-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85d3cc3a19dced5b418991231631f6abcc526fc395f36de2cc284eb98fe1f81d",
+        "slc_96a4d874b61ad1256f7bdd9adf675985df4fb5f38c898dada466bf57de2b16c0",
+        "slc_ce237611e617c71bc270018620714209df259e7223f5c2bda1e6b715603fe527"
+      ],
+      "text": "Requires Claude Code with the CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 env flag and Node.js; tmux is optional, and external CLIs (Codex, Antigravity agy, Grok) are optional since Claude alone can run the full team."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e058d91f5fab7be25fda81680cd62504d2b0ecfd1865625e730bb3c471daf567",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "CHANGELOG.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md#L33-L36"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "CHANGELOG.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md#L57-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_baf2cd70f6cc5a9b8ca2a06e25c63b20f948d9f16fbc5695e0ee106c29bec523",
+        "slc_f898bf9219049d07b2225ef362044bdd5299182cc2ddac2930f8af64364c3657"
+      ],
+      "text": "Hook-based gates enforce write boundaries at runtime: gate-spawn blocks spawning a member whose write_scope overlaps another member's declared scope, and blocks spawns lacking tool/read-only/write_scope/stop declarations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de65a34c4bf86ee8b14d771c02e1eccc7f541c8e99f9fe10cdb225c6eaf9cbc4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+          "line_end": 50,
+          "line_start": 48,
+          "path": "CHANGELOG.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md#L48-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8159d78c42c6b577713eff3cd978eaa02ad125458eea3450a5c63c9750e37c4a"
+      ],
+      "text": "The changelog explicitly notes a known limit: gates verify that write_scope declarations exist but cannot judge actual compliance without per-member output isolation, deferred to a v0.25 backlog."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_69210465d4e48c55c184d3b0ee9154dca80b249543ef129e81d26fe77bdbce7e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+          "line_end": 21,
+          "line_start": 14,
+          "path": "CHANGELOG.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md#L14-L21"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13b1920f7158f487e374423b622984eba6a7d7cc96224548075e026dfa126530",
+        "slc_567f7bb7d3f5c79e95d047bfe77f2d9863a6095b14d18c7fbff60f769dbef11b"
+      ],
+      "text": "The opt-in preparation pilot generates cards and Agent requests from one approved plan but is explicitly not a runtime permission sandbox, and no OS sandbox or write serialization for concurrent sessions is newly guaranteed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4eb4f4f0e76508af22b9aaa7e34e3254c8c9eb3aae69a2f908f27aa336195e19",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+          "line_end": 174,
+          "line_start": 169,
+          "path": "CHANGELOG.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md#L169-L174"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L138-L138"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+          "line_end": 143,
+          "line_start": 128,
+          "path": "CHANGELOG.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md#L128-L143"
+        },
+        {
+          "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+          "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+          "line_end": 191,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "fivetaku/kkirikkiri",
+          "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md#L187-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_174333d1d36c40a87c807e0589bb5800f73c5f649da4bba4e2ff49bdfff7bc4f",
+        "slc_2cfc733229e8bb0faf50e6de615088f54d369a83b9f43e1c806e2e82b7bdb753",
+        "slc_4ea1b5dd1c6b95e54ecd9d920e260a7085d6df3731d3c4f15a1e4ec8c8a575eb",
+        "slc_96a4d874b61ad1256f7bdd9adf675985df4fb5f38c898dada466bf57de2b16c0"
+      ],
+      "text": "Multi-model support appears to work by shelling out to installed external CLIs (Codex, agy, grok, gjc) with per-provider flags and model-override env vars like KKIRIKKIRI_GROK_MODEL."
+    }
+  ],
+  "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 217,
+        "path": "README.md",
+        "size": 7778
+      },
+      {
+        "lines": 528,
+        "path": "CHANGELOG.md",
+        "size": 46179
+      },
+      {
+        "lines": 55,
+        "path": "DISCLAIMER.md",
+        "size": 2812
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README.es.md",
+        "reason": "file-budget",
+        "size": 8417
+      },
+      {
+        "path": "README.ja.md",
+        "reason": "file-budget",
+        "size": 9570
+      },
+      {
+        "path": "README.ko.md",
+        "reason": "file-budget",
+        "size": 8360
+      },
+      {
+        "path": "README.zh.md",
+        "reason": "file-budget",
+        "size": 7615
+      },
+      {
+        "path": "VERSIONING.md",
+        "reason": "file-budget",
+        "size": 1339
+      },
+      {
+        "path": "docs/REDESIGN-v0.20.0.md",
+        "reason": "file-budget",
+        "size": 16926
+      }
+    ],
+    "omitted_count": 6,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 71,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 6,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_7e8c034c865a5935a66fecab06222c5e",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/fivetaku/kkirikkiri/99df0f40feb6011b62094677b86260acc9fbb575/93071784013c9844/manifest.json",
+  "package_id": "pkg_b6428ee2385d628df20d0c9c4dd1e7cfc3a00e0a8b4e8479ddb5632e32287327",
+  "repo": "fivetaku/kkirikkiri",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b136a9cfd0445c208ffc6da45019d04c96317e4d6bc481181dfa5cb4e195c784",
+  "snapshot_id": "93071784013c9844",
+  "sources": [
+    {
+      "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+      "git_sha": "ab3c6e0b34847e1b517acb7fee0351d51f49ed5e",
+      "lines": 528,
+      "path": "CHANGELOG.md",
+      "repository": "fivetaku/kkirikkiri",
+      "sha256": "31faf17efa47f3b04fcafeb33ce0d2fed4e0218a59dd5e5f2818a0f92d55e851",
+      "source_id": "src_90f471204588504a843d111df6f10efc",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/CHANGELOG.md"
+    },
+    {
+      "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+      "git_sha": "393439bfb8b408ed9bcd5432d50278c7016dda7a",
+      "lines": 55,
+      "path": "DISCLAIMER.md",
+      "repository": "fivetaku/kkirikkiri",
+      "sha256": "883530b2ff1e95f8b923eb28aea60f6fe3e669841eaddb3dcfe4a76558ab5b51",
+      "source_id": "src_b355df0d64d95ba68e504d0bdfc3fda1",
+      "stored": "disclaimer.md-43619c02edb8.md",
+      "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/DISCLAIMER.md"
+    },
+    {
+      "commit": "99df0f40feb6011b62094677b86260acc9fbb575",
+      "git_sha": "b4a50800fdb9624c25b192ae99d5afba8d1a05f3",
+      "lines": 217,
+      "path": "README.md",
+      "repository": "fivetaku/kkirikkiri",
+      "sha256": "574bec0df628b9b29d73f47ea5a7c4a9657d10a7416f5e502c67d4378e591918",
+      "source_id": "src_89f38b532cf45eef933013187117090c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/fivetaku/kkirikkiri/blob/99df0f40feb6011b62094677b86260acc9fbb575/README.md"
+    }
+  ],
+  "summary": "kkirikkiri is a Claude Code plugin that turns a natural-language goal into an approved, multi-agent team or Workflow, with session-scoped shared memory, hook-based gates, and optional external CLI providers. Evidence is mostly README and CHANGELOG documentation; no source code slices are present. Evidence coverage: 131 of 134 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

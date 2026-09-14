@@ -1,0 +1,786 @@
+{
+  "applied_operation_id": "op_7e77fbfb7b3a4d168c9a0188ac545a3b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_90214120fc7c6c43456a3c439bbafaa64df0858f5b31ea0370771579741c66a8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L9-L9"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 434,
+          "line_start": 430,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L430-L434"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 428,
+          "line_start": 428,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L428-L428"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5705e868b29f3c05abde0d03a469e19ea85020573613a8de41b9d296ed1b829d",
+        "slc_b416fffb798c08ba9014f4429db54fce6da2d72b64b42af6fe509d1e7b8382a7",
+        "slc_f0fdd0dcf86ab30a9e22728d83acbef4633ac2b332bd3814ab710961d389b667"
+      ],
+      "text": "ZAP is a terminal-first, local AI coding agent written in Rust, distributed as a single statically-linked binary with no runtime dependency on Python, Node.js, or Docker."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1498106074384681347da2843fe5328e05416eb8f52482ec873661a6ae3a16a3",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 150,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L150-L150"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 172,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L161-L172"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 157,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L154-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_306e7494a6e97269dbc34c3904952659607401eed3167bc82734275bdff06f2b",
+        "slc_60b97f9546fb9df6a26cfbdf1384739af8b7fbf3c4a08a47f192cac0a5d9214f",
+        "slc_7152d791d049ba9a0802a710cda6a55217f9490ca090aa9aa5580f5b85de0b89"
+      ],
+      "text": "ZAP uses a skill system of markdown files injected only when triggered: always-on skills (e.g. karpathy-guidelines) fire every turn, while triggered skills like rust, git, or security fire on keyword matches in the user's message."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_437bc316111fa639905d9ef1f01b02ba11e20b0d58eca3a8f0700980d973dd07",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 187,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L187-L187"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L218-L218"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 216,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L212-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_583464bafb7cbc1f2a93bef6d143e2f70b453b1f712b0333d535f50e5b745ae7",
+        "slc_7028eb3700c8cdc9d47355e97643d91ae118005fbbfc65b52abc9a6989de23e5",
+        "slc_fa46d99d5e27b880a989d5c01c7aa631c736e5978778cf2e71396fcba892afec"
+      ],
+      "text": "Skills resolve by priority: project-level .zap/skills/ overrides personal ~/.zap/skills/, which overrides built-in defaults compiled into the binary; same-name custom skills override built-ins."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_631282014c8209c51c393c78a6d12ab03ff84cbfb48f1af94e14e7f18fae2e74",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 227,
+          "line_start": 220,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L220-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1722fe45dc63f0d161512c2c14a991093e7bbbfd736ff112407584e35e87040f"
+      ],
+      "text": "Slash commands manage skills, including /skill list, show, export, create, and capture, the last of which extracts instructions from the current session into a reusable skill."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db5e90f1f143c0e21a75cfdd920a931e1fc29f0de292f09282d0346c854690d8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 125,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L115-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b288af13b0e148212183ccf511f04733ba68f8c68d4bf7e7baa8766f8a7d2153"
+      ],
+      "text": "A documented domain map lists modules including agent_core, llm_client, tools with permission_manager and shell_runner, context_manager, code_index, mcp, persistence, skill_manager, and remote session sharing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31ca53605b9ffa5e977bdd5f2fa1b0d79a8db1e1fa219394e3bc8c90ff791fca",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 365,
+          "line_start": 365,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L365-L365"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 267,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L267-L267"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 279,
+          "line_start": 279,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L279-L279"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 233,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L233-L233"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_234054f4c50082ad1d374f01d6c81651b325ec0b4e00063c96d31a9beefa64a4",
+        "slc_844966537ea9db193ff0eb1c36f052c2185de27f5805f68a72461685bb561e0a",
+        "slc_f0ca00228dfe43a2df9dba473b9732b20f1c76b8476a9990823d7d6212b2913e",
+        "slc_f3c27d79cbead3d510bf2a2278232109e56a9d40cca5064c5e9caac767732ce7"
+      ],
+      "text": "The AST code index is built at startup with tree-sitter and SQLite, stored at .zap/code.db, supports Rust, Python, TypeScript, JavaScript, Go, and Java, and reindexes edited files before the next LLM turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b47aa5719529611de33ff28e629038b70b6ef95b0d773e78ac8e61d6727c0978",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 296,
+          "line_start": 283,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L283-L296"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf9179042494d2753854378e5eb89f4422eff88d7a8421255f7317523dd940d5"
+      ],
+      "text": "Index-backed tools include code_map, find_definition, find_references, who_calls, file_imports, where_imported, find_subtypes/supertypes, pack_context, ripple_analysis, get_diagnostics, lsp_definition, and lsp_type_at."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d79d9ee3e5e097013e2922a6f27049a5b22d0170005b88d0d25946628c4af597",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 86,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L81-L86"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L88-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10be78e546db4dea73e57394a059a9fb9aad1cf052d4d553c1b74622b76b0502",
+        "slc_67dbc951202e47a62b220a160d0e319546dccbcede041e91aafc13a527ca93d9"
+      ],
+      "text": "ZAP maintains four context files (ZAP.md, .zap/understanding.md, .zap/context.md, .zap/session_log.md) updated at defined times and loaded on demand via read_file rather than pre-loaded into context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0cbadcc8047e32e3963c954f3489b3da7a3337759c1bc723495f9c02f6481fc3",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 475,
+          "line_start": 470,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L470-L475"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 468,
+          "line_start": 468,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L468-L468"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 459,
+          "line_start": 459,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L459-L459"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_829ed67459678e00cd277f0b829fd9d4494e31e69fc1cb8afb4bc76134fd738d",
+        "slc_b9098e58e7d0f380d5f58087b5731f67d9a2000a5227bf1f907ad9fb6d556731",
+        "slc_f13438eac7a2af3e010fbe66a4243824fc0621ce748555014f981270f0fe339a"
+      ],
+      "text": "MCP servers stay pending at startup with only a lightweight mcp_connect stub in context; the server process is spawned and its real tool schemas fetched only when the model calls mcp_connect."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8271009ffd6728d4cec7df24567777d0afd05ba58c2218f451f4bab9b8712a4c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 501,
+          "line_start": 496,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L496-L501"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 511,
+          "line_start": 511,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L511-L511"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 513,
+          "line_start": 513,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L513-L513"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 509,
+          "line_start": 505,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L505-L509"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_744cfb707eaa66191ef887cbd0435888aa253456e467052dd48d7f5c368afd1c",
+        "slc_ac2f3f45e1f4a48d400e1c9fa65095277e1f6785e6061e8b85f709469071f342",
+        "slc_d77aa5cb46a964292b0502fa73c97050790597bd6df6c4da21bbb581a09ea58d",
+        "slc_db6ba23db67f35e0c46f26c20b2d2dcf7cf71937e885dfa03aab46757f4d85aa"
+      ],
+      "text": "ZAP has three permission modes — ask (default, prompts before writes and shell), auto, and deny (read-only) — switchable via /permissions, plus a shell sandbox with workdir and container (Docker/Podman, network disabled) modes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d46bb3a2ee2ab34a435799916aacc0d0fa234728a33e36364e961b58b1ac404",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 529,
+          "line_start": 529,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L529-L529"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 525,
+          "line_start": 525,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L525-L525"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 523,
+          "line_start": 519,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L519-L523"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 517,
+          "line_start": 517,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L517-L517"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_154ab766ad40bda9e3759a4ee2dc7a2a694ed3c3d88892eea565350bde470b48",
+        "slc_40a419a3259b793bcba09dfa73ba4b55331072980bb50688a1f07df8acd5b054",
+        "slc_6a3a1630881e3756bdc497f8dd398520665087c03ead6e010ea909d31251957c",
+        "slc_c6716538351d826f9c0e4c447c01f38c485c2d4cd806dfec71f0dfab988ae441"
+      ],
+      "text": "Before content is sent to a cloud LLM, a secret scanner checks patterns including API keys, VCS tokens, AWS/GCP credentials, PEM blocks, and JWTs, blocking matches with a redacted warning; every tool call is appended to ~/.zap/audit.jsonl."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_402d827ddfa00ffec9ef659ce16cfce5f421717d11e0af792f5e9ba0ef730ab2",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L54-L54"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 46,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L42-L46"
+        },
+        {
+          "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+          "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+          "line_end": 57,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "zap-coding-agent/zap-coding-agent",
+          "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md#L56-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_604b1cf84500d93892e7d6b05892672da3009b7d0bb71a42fa8c19a591f36a45",
+        "slc_6807da892df6a3000e65f57c496fcd487f273a71035fcc486a9991aaceb13a58",
+        "slc_a0e160c8e9840f2be6fdd0dbed75651684caf03ff43f878f7a3d8ee0ea9a39f2"
+      ],
+      "text": "The README reports a token-efficiency comparison claiming ZAP sends task-specific prompts (1,889 vs 1,661 tokens for Spring Boot vs React) versus identical static prompts from Gemini CLI and OpenCode, with methodology in a linked evidence file."
+    }
+  ],
+  "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1452,
+        "path": "README.md",
+        "size": 69102
+      },
+      {
+        "lines": 168,
+        "path": "ARCHITECTURE.md",
+        "size": 9637
+      },
+      {
+        "lines": 146,
+        "path": "docs/archive/design.md",
+        "size": 5360
+      },
+      {
+        "lines": 26,
+        "path": "ZAP.md",
+        "size": 600
+      },
+      {
+        "lines": 201,
+        "path": "docs/backlog-crush-features.md",
+        "size": 8984
+      },
+      {
+        "lines": 226,
+        "path": "docs/code-graph-decisions.md",
+        "size": 14223
+      }
+    ],
+    "omitted": [
+      {
+        "path": "FEATURES.md",
+        "reason": "byte-budget",
+        "size": 242303
+      },
+      {
+        "path": "docs/comparison-pi.md",
+        "reason": "file-budget",
+        "size": 7341
+      },
+      {
+        "path": "docs/opus-4.8-review-v2.md",
+        "reason": "file-budget",
+        "size": 11808
+      },
+      {
+        "path": "docs/opus-4.8-worldclass-plan.md",
+        "reason": "file-budget",
+        "size": 23507
+      },
+      {
+        "path": "docs/security-review-v2.md",
+        "reason": "file-budget",
+        "size": 11952
+      },
+      {
+        "path": "docs/security-review-v3.md",
+        "reason": "file-budget",
+        "size": 8718
+      },
+      {
+        "path": "docs/security-review.md",
+        "reason": "file-budget",
+        "size": 16520
+      },
+      {
+        "path": "docs/slm-support.md",
+        "reason": "file-budget",
+        "size": 19805
+      },
+      {
+        "path": "docs/archive/01-code-indexing-catches-duplication.md",
+        "reason": "file-budget",
+        "size": 11766
+      },
+      {
+        "path": "docs/archive/backlog.md",
+        "reason": "file-budget",
+        "size": 9274
+      },
+      {
+        "path": "docs/archive/FILE_BROWSER_GUIDE.md",
+        "reason": "file-budget",
+        "size": 5807
+      },
+      {
+        "path": "docs/archive/gemini-login.md",
+        "reason": "file-budget",
+        "size": 8863
+      },
+      {
+        "path": "docs/archive/IMPLEMENTED_FEATURES.md",
+        "reason": "file-budget",
+        "size": 9927
+      },
+      {
+        "path": "docs/archive/memory-session-comparison.md",
+        "reason": "file-budget",
+        "size": 11786
+      },
+      {
+        "path": "docs/archive/opus-4.8-review.md",
+        "reason": "file-budget",
+        "size": 16590
+      },
+      {
+        "path": "docs/archive/PHASE1_COMPLETE.md",
+        "reason": "file-budget",
+        "size": 5733
+      },
+      {
+        "path": "docs/archive/provider-auto-detection.md",
+        "reason": "file-budget",
+        "size": 6829
+      },
+      {
+        "path": "docs/archive/requirements.md",
+        "reason": "file-budget",
+        "size": 2398
+      },
+      {
+        "path": "docs/archive/system-prompt-comparison.md",
+        "reason": "file-budget",
+        "size": 35634
+      },
+      {
+        "path": "docs/archive/tasks.md",
+        "reason": "file-budget",
+        "size": 11280
+      },
+      {
+        "path": "docs/archive/TUI_ENHANCEMENTS.md",
+        "reason": "file-budget",
+        "size": 8543
+      },
+      {
+        "path": "docs/specs/2026-06-25-code-graph-v2-design.md",
+        "reason": "file-budget",
+        "size": 11615
+      },
+      {
+        "path": "docs/specs/2026-07-05-background-agents-design.md",
+        "reason": "file-budget",
+        "size": 9009
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-20-lsp-integration.md",
+        "reason": "file-budget",
+        "size": 46085
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-05-background-agents.md",
+        "reason": "file-budget",
+        "size": 68730
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1196
+      },
+      {
+        "path": "docs/SECURITY.md",
+        "reason": "file-budget",
+        "size": 8536
+      }
+    ],
+    "omitted_count": 27,
+    "omitted_slices": 93,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 426,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 33,
+      "complete": false,
+      "omitted": 27,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_261e4f6f4ce35d169c67c2b3ad0a89a6",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 3,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zap-coding-agent/zap-coding-agent/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/e16dd8e1241033bc/manifest.json",
+  "package_id": "pkg_c25b17d6fa5fce1f36c2f54a40255f494ad32c8a9f4a5c528467d0d28a5a4ef7",
+  "repo": "zap-coding-agent/zap-coding-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a316b8171abcf86f7c7bc929495a78698d0ac13a312d0ce089fd41beba8a36f0",
+  "snapshot_id": "e16dd8e1241033bc",
+  "sources": [
+    {
+      "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+      "git_sha": "ca62e88ae0449ada7d0d5ae3b196e5012232616d",
+      "lines": 168,
+      "path": "ARCHITECTURE.md",
+      "repository": "zap-coding-agent/zap-coding-agent",
+      "sha256": "30c146ae51994c2a5fcce081814507bef8fa5157d29847c2cafdbb4ffb1ef604",
+      "source_id": "src_9ad565c173e654c0b79550eae0b3414e",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/ARCHITECTURE.md"
+    },
+    {
+      "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+      "git_sha": "76fe6fe27e6d7e0b847ea31b8770b52fdaf3c96a",
+      "lines": 1452,
+      "path": "README.md",
+      "repository": "zap-coding-agent/zap-coding-agent",
+      "sha256": "c859857099255967ad1a72a5cb49923f35e26ddfcdaa86b3e9a3316368b79510",
+      "source_id": "src_566f9cc73b1a506ba0c6356333b29a40",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/README.md"
+    },
+    {
+      "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+      "git_sha": "5e64a86110f9822df5485dfc8c7fd5d232b7beaf",
+      "lines": 26,
+      "path": "ZAP.md",
+      "repository": "zap-coding-agent/zap-coding-agent",
+      "sha256": "5fd8cb82c22d2738c3d4110577f969dba6384c7c13ad9cc0edcf645d330e9407",
+      "source_id": "src_415f62425b4a5adc87dc3926ca561b3a",
+      "stored": "zap.md-2e3690c4fee4.md",
+      "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/ZAP.md"
+    },
+    {
+      "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+      "git_sha": "463280f6735ff3075593cd1f7596989fafdeee76",
+      "lines": 146,
+      "path": "docs/archive/design.md",
+      "repository": "zap-coding-agent/zap-coding-agent",
+      "sha256": "31b98d945415d4af361f3616a8bd6029a12fcd3b2108328fb19c213bd9b0db42",
+      "source_id": "src_b3b90bef6d76512badcb9a75dc784961",
+      "stored": "design.md-a3dc89a45253.md",
+      "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/docs/archive/design.md"
+    },
+    {
+      "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+      "git_sha": "f1b5cc2a7a529281d4099546785c4c6fa0ac856e",
+      "lines": 201,
+      "path": "docs/backlog-crush-features.md",
+      "repository": "zap-coding-agent/zap-coding-agent",
+      "sha256": "bab6d889952b3e1285d911bed63fbec7f322cc91a98c5667970d499c903bea7f",
+      "source_id": "src_9ae7a5cce98352db8a6de96fffda43d4",
+      "stored": "backlog-crush-features.md-ed25540975c6.md",
+      "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/docs/backlog-crush-features.md"
+    },
+    {
+      "commit": "6ab48b82c15ea52b82ed8fa3598e4118cd4b2914",
+      "git_sha": "d38e0e4c902211d7d4e70853546a3a559e853b50",
+      "lines": 226,
+      "path": "docs/code-graph-decisions.md",
+      "repository": "zap-coding-agent/zap-coding-agent",
+      "sha256": "bb96bc545069425e803c68c93a20b5f95b01c21cbf59ad9548415b3cd1d05b2a",
+      "source_id": "src_20be623cc6e257099a009b95d9f995b5",
+      "stored": "code-graph-decisions.md-1309b7a98bfe.md",
+      "url": "https://github.com/zap-coding-agent/zap-coding-agent/blob/6ab48b82c15ea52b82ed8fa3598e4118cd4b2914/docs/code-graph-decisions.md"
+    }
+  ],
+  "summary": "ZAP is a terminal-first, local AI coding agent written in Rust and shipped as a single statically-linked binary, featuring keyword-triggered skill injection, a tree-sitter/SQLite AST code index, lazy-loaded MCP servers, three permission modes, secret scanning with audit logging, and four on-demand project context files. Evidence coverage: 147 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

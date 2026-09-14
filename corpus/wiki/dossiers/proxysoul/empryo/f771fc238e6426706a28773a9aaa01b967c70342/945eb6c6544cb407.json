@@ -1,0 +1,741 @@
+{
+  "applied_operation_id": "op_7ee34c06088e4f39a222392b77393db3",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_21b796a4bf6d31a5ce6e41b8ee98702675533a89284c8c96e62cb6aea1cf082c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 56,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L53-L56"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11399e156483bc2e8671a9beedd1d71f0713320d62d2bac79c294394b7a96a8e",
+        "slc_549363dc20c50dd9b5a6a1ec1143b81c0cdf4e6c91a1d484872cf86c52989f39"
+      ],
+      "text": "Empryo builds codebase understanding before mutating code: on launch, tree-sitter parses the repo into a live graph of symbols, imports, and call sites ranked by PageRank and git co-change."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d782d826851893b948b1e0bdd2a9f31d84714013714695bd66b66957966293a7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 56,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L53-L56"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 69,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L60-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11399e156483bc2e8671a9beedd1d71f0713320d62d2bac79c294394b7a96a8e",
+        "slc_151b45187c17c29abde124fc56d21567439c4cbcf5e2959c5be042d443a69a06"
+      ],
+      "text": "The product offers 65+ symbol-level AST editing operations with atomic all-or-nothing rollback and structural edits across 30+ languages, with a typecheck as the gate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e8e585d9f5405bcd4ce7afe08b501f314913f8a68cbb7687cd53fa5ef4e4f0f1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 69,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L60-L69"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L77-L77"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 168,
+          "line_start": 159,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L159-L168"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 85,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L81-L85"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L73-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_151b45187c17c29abde124fc56d21567439c4cbcf5e2959c5be042d443a69a06",
+        "slc_4feaea91d3a21112ff1966bb07d991d048bd966a753c21d76981b2e490c118a7",
+        "slc_b0cb64f4ba8c3e487574dc81df42533a5aef96fd32cb388745dd2c03da3c8eab",
+        "slc_ca1f12f6795b0684f801fcf649902015f8435e5d00491cf824ecbc7dfd9d6b72",
+        "slc_d0f1929479c348e71b91b80e745594ab9c04fcbb5d2215dbba2e1ee40d219f2c"
+      ],
+      "text": "A task router assigns models to ten routable roles (e.g. spark for read-only scouting, ember for code edits, verify for review), configurable per tab, per project, or globally, with custom agents definable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11b155fae820130f6b2e57ed1cff76ebe9979c2126b04a30ad99827e1b97982b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 69,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L60-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_151b45187c17c29abde124fc56d21567439c4cbcf5e2959c5be042d443a69a06"
+      ],
+      "text": "Three surfaces share one code graph: a native desktop app, a full terminal UI, and a headless CLI for scripts and CI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc4a6bb564069f27c0d5319a2da08da825a1957874b72f846fab1e3a7dac4c62",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 134,
+          "line_start": 132,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L132-L134"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L25-L25"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 142,
+          "line_start": 142,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L142-L142"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 128,
+          "line_start": 128,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L128-L128"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 149,
+          "line_start": 144,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L144-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d4bcfc9cf16399eccab937722ba2e2cf0c7c67471f8ae44b24910f5db7596c8",
+        "slc_70bad8cd3a10e1189c4ed441288c0fb4343b34206252389c7a19e1fdb00f391a",
+        "slc_952aafa3119e0a52d1d532e1a225fe67a74d78c36df65a7085a7e6ae87b45f64",
+        "slc_ccf3970c5f980151723d8d29390f0a238b1820b24cfcfd91ec60bb72e0ff8a6e",
+        "slc_d2343202ee9d53d4b6e1e8eeae4bdc1964fef1cea01360d7d5d0eaa48e08cd10"
+      ],
+      "text": "The terminal UI embeds a real Neovim instance (Ctrl+E toggles focus), with config modes selectable via /nvim-config (auto, user, default, none)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65bb86ae4149ee01a598b845f4810bd16c8906b4a3ff354f060fff5d2bfe939b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L42-L42"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L21-L21"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L7-L7"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L38-L38"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0291de58d5680e21e1770547adeb9f76b1ca33273ca10d8e076d3cd42920491e",
+        "slc_2cdf71cdae216fcb550329b8dafc7d57756287f3bad8bbc3415c7e303e71558a",
+        "slc_2f6a0e5fe470acde3af19a958d4d5a9eb39e18d3fc6281aaa4d2441028df4041",
+        "slc_3fe3daf7cf618f1e22c10c9fa6c89b30f7f9a40f7aac417afd4bbb15cecb59a8",
+        "slc_c47bd9af9158700d63b533ede98523aa61f22e9cd91d10b5807e02e302a0671e"
+      ],
+      "text": "Source/npm installs require Bun (>= 1.0) rather than Node.js; Neovim >= 0.11 is needed for the embedded editor; a Nerd Font is needed for icons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_61a3f5fdf3ef12024c7679ea81d7e75b70628f52267a52f7c64c0a252618a4fa",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L102-L102"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "5e4c94f2a06491c33ad15b063e66f5dc38686549",
+          "line_end": 32,
+          "line_start": 18,
+          "path": "BACKERS.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/BACKERS.md#L18-L32"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L73-L73"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L131-L131"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "5e4c94f2a06491c33ad15b063e66f5dc38686549",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "BACKERS.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/BACKERS.md#L77-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_487d708a874bd7a688f87081d13c042f03664426e505d8344b7800f2c74bf2fb",
+        "slc_88493c91fc5d3b14b2639258af926652a4fd1488bfb2a63018fc57df8d1b4fd3",
+        "slc_d0f1929479c348e71b91b80e745594ab9c04fcbb5d2215dbba2e1ee40d219f2c",
+        "slc_ed007e4f37af973224125d5df19b6ecaab26d9c5c33439ae860859d26aed8d9b",
+        "slc_f4e22927eb3305710f1c215ea2a146c93289b3e9125d9c674388eac575b0040d"
+      ],
+      "text": "The agent supports 22 LLM providers including Anthropic, OpenAI, Google, Groq, DeepSeek, and Bedrock, plus OpenAI-compatible endpoints and fully local Ollama/LM Studio; an llmgateway provider ships built in."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fcb6c2beae5b10a5987a3aa1cedfc2527b715afdfa144f0b361c969edf116b18",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 271,
+          "line_start": 270,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L270-L271"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 268,
+          "line_start": 268,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L268-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c24a761e638cefd4691098aedcd0aa1621cc21b0d6a5b99cbd86d2f588f8e7b",
+        "slc_cb12beae8e9d8586a363137c1e2de92315cec0b8421258b2eb7325640800ed79"
+      ],
+      "text": "A SQLite-backed memory system stores decisions, patterns, and preferences across conversations, with write scope configurable to session, project, or global and memories injected into the system prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93b032eebe4dc60c8a58ea9bd5727dd46e4cdf57e03e718bcba44e8326b77175",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 69,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L60-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_151b45187c17c29abde124fc56d21567439c4cbcf5e2959c5be042d443a69a06"
+      ],
+      "text": "Every prompt creates a git checkpoint ('time machine'), letting users rewind code and conversation together to any turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb92a300bee440aec290092a449a3b1a5f28f2f8b55a49f2ec8126820988591e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L292-L292"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 285,
+          "line_start": 285,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L285-L285"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+          "line_end": 290,
+          "line_start": 287,
+          "path": "GETTING_STARTED.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md#L287-L290"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_002f93bfaea2cd3f42572fc699c53e5d1f96c52bb7661cc10464465916caef21",
+        "slc_7c3985f6cf57366a4739c5f208f82a22d7c571676207d3568c0cf6659e3f3bf1",
+        "slc_fb3f9bd56250734d6d8093b0f2d186608993cb9dbe620b9513ea52cc09e192da"
+      ],
+      "text": "A privacy feature lets users block file patterns (e.g. .env, secrets/**) via /privacy add; the agent then refuses to read, display, or access matching files even through shell commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ea081c8d8f82949a172903bc4b5b471f3eff431a7c530630f335d28997d2ceb",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L98-L98"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L89-L89"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md#L91-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b0e600569dcf3fad63608776e838be09cc0dd4ac3cb2c9cf8980cae0cf12d46",
+        "slc_cdb860d370ce6cdd117873aa9efb37604d0d36b61c7fb9babfb2c7e14d2fa67e",
+        "slc_d0317467740e2b350ea03f52ba9cb2bc1f85a3058204108e0ba3f9cd87cf8ae1"
+      ],
+      "text": "The README reports head-to-head benchmarks against pi on bug-fixing tasks (e.g. 8/9 vs 7/9 bugs fixed, 28% lower cost, 57% faster), with methodology and a reproduction repo at proxysoul/pi-vs-empryo-bench."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_540ba59c06c8b213f82a74893bba6f3b845dc479f45a6dff28e32ea533cb1b8c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "bc9f3d71a33f5959a64ddf866c8f7c726258a6db",
+          "line_end": 26,
+          "line_start": 17,
+          "path": "GOVERNANCE.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GOVERNANCE.md#L17-L26"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "bc9f3d71a33f5959a64ddf866c8f7c726258a6db",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "GOVERNANCE.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GOVERNANCE.md#L3-L3"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "bc9f3d71a33f5959a64ddf866c8f7c726258a6db",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "GOVERNANCE.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GOVERNANCE.md#L36-L36"
+        },
+        {
+          "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+          "git_sha": "bc9f3d71a33f5959a64ddf866c8f7c726258a6db",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "GOVERNANCE.md",
+          "repository": "proxysoul/empryo",
+          "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GOVERNANCE.md#L40-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40e134830854fe69e1964d946f5d89a13b0af24b33f6ac7a4a50ceff14e34252",
+        "slc_743cc6e9c5a50db3fdeb015f20c1f469ef2435133b209fd8ac6f40ccc5b2efa1",
+        "slc_aa80a4cc3d5abf2bae9c071d42aaca48f0c349b08f137df3ddea9dcf64281027",
+        "slc_ef1c8e05539a30ad85ca692aacbd13def6e16142b22564ffb0a724e27259a7f3"
+      ],
+      "text": "Repository development practice: governance is single-maintainer; architecture changes and public API/SDK changes require opening an issue first, and CODEOWNERS prevents self-merging of PRs touching IP-sensitive paths."
+    }
+  ],
+  "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 135,
+        "path": "README.md",
+        "size": 7608
+      },
+      {
+        "lines": 97,
+        "path": "BACKERS.md",
+        "size": 2936
+      },
+      {
+        "lines": 27,
+        "path": "COMMERCIAL_LICENSE.md",
+        "size": 1154
+      },
+      {
+        "lines": 324,
+        "path": "GETTING_STARTED.md",
+        "size": 12527
+      },
+      {
+        "lines": 68,
+        "path": "GOVERNANCE.md",
+        "size": 4128
+      },
+      {
+        "lines": 114,
+        "path": "PRIVACY.md",
+        "size": 5562
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SOULFORGE.md",
+        "reason": "file-budget",
+        "size": 6887
+      },
+      {
+        "path": "THIRD_PARTY_LICENSES.md",
+        "reason": "file-budget",
+        "size": 23325
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 106316
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 2620
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1540
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 17419
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2575
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 696,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 7,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_d7eeee221be65c3683e243a39f5cc0c6",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/proxysoul/empryo/f771fc238e6426706a28773a9aaa01b967c70342/945eb6c6544cb407/manifest.json",
+  "package_id": "pkg_0475d863ac90dd5c07eb1fe85d7c63e67e2a601a65b4d57b948901a4a6d90407",
+  "repo": "proxysoul/empryo",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "40a567b3d97bced27e690d1a0a203a0ffc0b22e598078c48c5cbae4405cc0c02",
+  "snapshot_id": "945eb6c6544cb407",
+  "sources": [
+    {
+      "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+      "git_sha": "5e4c94f2a06491c33ad15b063e66f5dc38686549",
+      "lines": 97,
+      "path": "BACKERS.md",
+      "repository": "proxysoul/empryo",
+      "sha256": "42782967d0ac24fb0d1ff7922efff566dd33a507ff88b7195856b75ffb8a0f8e",
+      "source_id": "src_d64f47cc058c515a9a1f59b33142b059",
+      "stored": "backers.md-9d2e6541ed79.md",
+      "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/BACKERS.md"
+    },
+    {
+      "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+      "git_sha": "18e143ff8c85613b98634af2055da36efc0e1d46",
+      "lines": 27,
+      "path": "COMMERCIAL_LICENSE.md",
+      "repository": "proxysoul/empryo",
+      "sha256": "c52d4cf0029a2fe53a28895fedd192191199d8161152e6259edb3c8ba991db33",
+      "source_id": "src_a27d53c05ecf53da829d3a9be58a2dbf",
+      "stored": "commercial_license.md-49fc2eaed3d4.md",
+      "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/COMMERCIAL_LICENSE.md"
+    },
+    {
+      "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+      "git_sha": "ab4cf54c522d951e83dc5b142d68aa3f0f159698",
+      "lines": 324,
+      "path": "GETTING_STARTED.md",
+      "repository": "proxysoul/empryo",
+      "sha256": "88dc3489cd6bd97b2d06270503f7da2b7c062cf63ad35cfb53e04c1d7ed77122",
+      "source_id": "src_7e611332507650c2979c57a00839aba1",
+      "stored": "getting_started.md-d0243df16bd9.md",
+      "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GETTING_STARTED.md"
+    },
+    {
+      "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+      "git_sha": "bc9f3d71a33f5959a64ddf866c8f7c726258a6db",
+      "lines": 68,
+      "path": "GOVERNANCE.md",
+      "repository": "proxysoul/empryo",
+      "sha256": "492da74e3d8dcf103494542772f1fbf5bf917ed779338c69bf2e4b796f32334f",
+      "source_id": "src_2d8994836b3c5d2b8d9090f19017de77",
+      "stored": "governance.md-b60c6a93e9f7.md",
+      "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/GOVERNANCE.md"
+    },
+    {
+      "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+      "git_sha": "fe2488c66eff22f444685b9db61dcc76fcf94384",
+      "lines": 114,
+      "path": "PRIVACY.md",
+      "repository": "proxysoul/empryo",
+      "sha256": "2627b2b7ed111a202ac9ce05820f092262b8fcfdd4d2e3440a9d1d9e9df4509e",
+      "source_id": "src_d5998fff621b57298322fab5c83cc87c",
+      "stored": "privacy.md-ee5dfa56c2aa.md",
+      "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/PRIVACY.md"
+    },
+    {
+      "commit": "f771fc238e6426706a28773a9aaa01b967c70342",
+      "git_sha": "e1329510a5ca1b3bb2d552343898ad177d6767ef",
+      "lines": 135,
+      "path": "README.md",
+      "repository": "proxysoul/empryo",
+      "sha256": "304ba4dc8751e26ec4c962f204c269b281693209d377ed28f04be44a89ce8886",
+      "source_id": "src_8a57cf60df025ae5a1deb672ab8df8b1",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/proxysoul/Empryo/blob/f771fc238e6426706a28773a9aaa01b967c70342/README.md"
+    }
+  ],
+  "summary": "The repository is the public home for Empryo (formerly SoulForge), a local-first AI coding agent with a tree-sitter code graph, symbol-level AST editing, a multi-model task router, and desktop/terminal/CLI surfaces. Evidence is documentation-only (README, GETTING_STARTED, governance and license docs); no runtime source code is included in the snapshot. Evidence coverage: 171 of 199 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

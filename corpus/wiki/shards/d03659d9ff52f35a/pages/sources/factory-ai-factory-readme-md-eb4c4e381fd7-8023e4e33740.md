@@ -1,0 +1,40 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0a927fc68a1c362083ee38eb4f91bf3f433ba08488534f49d804c850cafa556b
+- clm_0de514154a023649a354c2035decb2781fe0f26da8ee88837b1461e59c776266
+- clm_672eacd23d72fe270f89d6d688273a3c7c56f3e9d1d4d520255b67e0167b58f3
+- clm_6ceed9ac2415c6f903d6b2b5cb54d0be7bd17a2c0513191578fb3ff0a1fd426e
+- clm_73df4562039154cf9245765a234026d6da5be232b2b46198ce84e33db62a6b18
+- clm_b887ad0315f8bd03dca455b8ac89f930a8ef3742caa604f1060f45436f6737f8
+- clm_b915261df90e00e1095f729f77b75e67590977b9354564cdfba430fcf7dde2f6
+- clm_cc0302d865251d47c4ea2d5e95597a0cc28747fbc31dc794974ea6434324b6e8
+- clm_e09e3161f2b5746dee163af3404f8ee17286668fb9477ee6959fa080ff0420e0
+maturity: draft
+page_id: pg_4cc556c9d6c45b19b85c8023e4e33740
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_4ed0f5f054675e48b7c48db972eb7144
+title: Factory-AI/factory/README.md @ eb4c4e381fd7
+updated_at: '2026-09-14T01:49:08Z'
+---
+
+# Factory-AI/factory/README.md @ eb4c4e381fd7
+
+<!-- rcw:begin owner=source:src_4ed0f5f054675e48b7c48db972eb7144 block=evidence -->
+- A Droid GitHub Action is referenced that runs AI-powered code reviews, security scans, and PR description generation on pull requests. [@claim:clm_0a927fc68a1c362083ee38eb4f91bf3f433ba08488534f49d804c850cafa556b]
+- The product's agent is named Droid and is distributed as a CLI; users start a session by running `droid` inside a project directory. [@claim:clm_0de514154a023649a354c2035decb2781fe0f26da8ee88837b1461e59c776266]
+- Installation options include a curl shell script for macOS/Linux, a PowerShell command for Windows, and a global npm install of the `droid` package. [@claim:clm_672eacd23d72fe270f89d6d688273a3c7c56f3e9d1d4d520255b67e0167b58f3]
+- The evidence consists only of README/docs marketing and setup text; no source code appears in the snapshot, so runtime internals of Droid cannot be verified from this evidence. [@claim:clm_6ceed9ac2415c6f903d6b2b5cb54d0be7bd17a2c0513191578fb3ff0a1fd426e]
+- The README links a VS Code extension and notes ACP support for JetBrains IDEs and Zed. [@claim:clm_73df4562039154cf9245765a234026d6da5be232b2b46198ce84e33db62a6b18]
+- The ecosystem links include a plugins marketplace and an ESLint plugin repository. [@claim:clm_b887ad0315f8bd03dca455b8ac89f930a8ef3742caa604f1060f45436f6737f8]
+- Factory is described as an agent-native development platform available across CLI, Web, Slack/Teams, Linear/Jira, and Mobile. [@claim:clm_b915261df90e00e1095f729f77b75e67590977b9354564cdfba430fcf7dde2f6]
+- The README claims Droid is top performing in terminal benchmarks; this is a self-reported marketing statement, not an eval harness in the repo. [@claim:clm_cc0302d865251d47c4ea2d5e95597a0cc28747fbc31dc794974ea6434324b6e8]
+- Separate TypeScript and Python SDK repositories for Droid are linked from the README. [@claim:clm_e09e3161f2b5746dee163af3404f8ee17286668fb9477ee6959fa080ff0420e0]
+<!-- rcw:end owner=source:src_4ed0f5f054675e48b7c48db972eb7144 block=evidence -->
+
+## Researcher notes
+

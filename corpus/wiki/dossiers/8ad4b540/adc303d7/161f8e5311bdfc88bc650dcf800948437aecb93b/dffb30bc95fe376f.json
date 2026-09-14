@@ -1,0 +1,679 @@
+{
+  "applied_operation_id": "op_4fa9bbd9608c40b2a0df9c3d08c54771",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c90b86d4e8b96db524ccf6dcd9f644b80fcb71a713068a8aa99dca13fd6d17b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L17-L21"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "f34b10d1c7423b09f786bea68160745d3eefad41",
+          "line_end": 62,
+          "line_start": 60,
+          "path": "01-methodology-overview.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/01-methodology-overview.md#L60-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0245fc10e91342b3fc972c22b3d9d5c79647f7a3f49ccd24c5fdcff83fbe57fb",
+        "slc_43d842e7fda9bb8a617cee7299c8cdafb4ea329aaad7cd2ba34a6ba08b294bd9"
+      ],
+      "text": "The toolkit prescribes a traceable artifact chain — PRD (what), SPEC (how), ADR (why), TASK (steps) — flowing through code, review, deploy, and closed by a sprint retrospective."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f36c5ea8b6ce0a874be89d00de2a3c9c45d6479e32ba7b4c75b8ea395571645",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L114-L114"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 123,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L116-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4482fe661f9f9a8e6e1e61e29b52c1ea9a68720f01eaefc262a7487d55f0e962",
+        "slc_ae8cd6387191558fc21343ab0f9ccf12ea9ed3a5083daae1e0b9991a6d5ced05"
+      ],
+      "text": "Every artifact carries a traceability ID in YAML frontmatter with defined formats such as PRD-NNN, SPEC-NNN, ADR-NNN, TASK-NNN, S-NN, and PV-NNN."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c7ce68dbbf6eee3d825392e647d9a80732755843ada1872d762ea421e26cc1d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 129,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L125-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76ae4502a3a1604aa241083023547dff429f7e28f91db323aaa02fab6c9c25a2"
+      ],
+      "text": "Traceability links are asymmetric: children reference parents (e.g., SPECs reference parent PRD-NNN; TASKs reference spec and ADRs), while PRDs reference nothing upstream."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7fc09b5b0759d72c0499d8cf22b7d2352a6042e18241b3089ba761325f1831d3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 82,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L29-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2584ad299a66befc046da946208fe4636039c35a66838dda604fafe7fe5c2b99"
+      ],
+      "text": "The repository ships copy-and-fill templates including PRD, SPEC, TASK, sprint plan, and four ADR variants: core MADR-style, model-selection, prompt-strategy, and agent-orchestration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27451c3268805d2a8496acaa1f7f12edf909de6bba7c96be5d90dfd8a709318f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L139-L139"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L135-L135"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L141-L141"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L137-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41daaa0801464db0a8ec530b7778c1f35a1fe2094ad0268b89c05e749c87d461",
+        "slc_5b9df057c9f7471e5d9837794e5be9c9a2036490f9e2c5b0d16464e69ebfb7e8",
+        "slc_97d30d555a44bf5e945b830ab64c538cd4104c272ca4efd235f9f5021c41ba7b",
+        "slc_f837c2d27f86c6bdb30cd6ef846e45ee75ccf0409a90283b3a5e21d4582d71ad"
+      ],
+      "text": "Beyond standard ADRs, the toolkit defines three AI-native ADR categories — model selection, prompt strategy, and agent orchestration — each with its own template."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dfe5c310551a8491fba786290eca9de173a77b7e8ec36553d5581f721ae32a9b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "533870f364b73577c4e8c5ae895aae69f1543a2a",
+          "line_end": 18,
+          "line_start": 13,
+          "path": "03-sprint-workflow.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/03-sprint-workflow.md#L13-L18"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "533870f364b73577c4e8c5ae895aae69f1543a2a",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "03-sprint-workflow.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/03-sprint-workflow.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ddca09a8f59c821d303186872965cc75b0f80e08eb9ea4361efd8a594451ecd",
+        "slc_c68f896de4949195e2b5fa15f708efa5c5cb601126bffaea15a0684caf9620ac"
+      ],
+      "text": "A sprint is defined as a two-week cycle with four phases: specification (days 1-2), planning (days 3-5), implementation (week 2 days 1-3), and integration/evaluation/deploy/retro (days 4-5)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12b749dc1f0360ef014f0c64bbc9a34af1029f8baef28c4f52cab1799af67eff",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "533870f364b73577c4e8c5ae895aae69f1543a2a",
+          "line_end": 150,
+          "line_start": 148,
+          "path": "03-sprint-workflow.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/03-sprint-workflow.md#L148-L150"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "533870f364b73577c4e8c5ae895aae69f1543a2a",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "03-sprint-workflow.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/03-sprint-workflow.md#L146-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33c0ba8e0a39ada27282b120f1a61fc4c1b04cdc2b165b62485c00f9fbe9ba96",
+        "slc_fd24ea0304c3bc6d7966e7a676d14f6dd35882e3c4951e1cf5059c1d5a9f5d71"
+      ],
+      "text": "The methodology mandates a test-first gate for AI-generated code: write tests, confirm they fail and commit that state, then implement without modifying test files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_963c787ab7734db7a8ac55e168c1b2a9805c3d78d97907350bd2021e61dae5a5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "a1b862f8235d6d0824ccf0ac46d3fc14bf7104d6",
+          "line_end": 52,
+          "line_start": 47,
+          "path": "00-getting-started.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/00-getting-started.md#L47-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cade6207b343d5b5aacc3f704923ec654cbe2e4c6c54b0a9047255880f79d89"
+      ],
+      "text": "The init.sh setup script updates CLAUDE.md and AGENTS.md, creates a project ADR registry, initializes the first sprint folder, adds .gitignore entries, and installs pre-commit hooks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5698cc0922bb2b43e84506d7ff25c6d2666d1f57189c5abd5f82b9172ca83c7",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "533870f364b73577c4e8c5ae895aae69f1543a2a",
+          "line_end": 215,
+          "line_start": 215,
+          "path": "03-sprint-workflow.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/03-sprint-workflow.md#L215-L215"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "533870f364b73577c4e8c5ae895aae69f1543a2a",
+          "line_end": 213,
+          "line_start": 210,
+          "path": "03-sprint-workflow.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/03-sprint-workflow.md#L210-L213"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b2c15891b1b94eb70afbf9f1adbd3abdf67ada8f14d86e3693842e903213833",
+        "slc_d5d8664d657a97813634dfb389cbd0cd064e2efc930b7a43672596e62c27f1b3"
+      ],
+      "text": "For AI-native features, the methodology prescribes running a promptfoo eval suite before merging, with the pass threshold defined in the feature's SPEC acceptance criteria; unmet thresholds mean the task is not done."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_593672f44c90e85d98355683a3e2fc7479392707d952363053aa7e9dcbbf2c30",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "a1b862f8235d6d0824ccf0ac46d3fc14bf7104d6",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "00-getting-started.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/00-getting-started.md#L17-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_817db3f6ad590af508d4374ebd0e726b7ed7d0d2f329146366dd965ca1af50da"
+      ],
+      "text": "Prerequisites listed are Claude Code (installed via npm), Node.js 18+, configured Git, a GitHub account, and optionally RuFlo for multi-agent orchestration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4949b5e8e914295888f8c48e7d8702fc6ce3eca18815cc1c8d3e26dda8ada960",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "a1b862f8235d6d0824ccf0ac46d3fc14bf7104d6",
+          "line_end": 65,
+          "line_start": 62,
+          "path": "00-getting-started.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/00-getting-started.md#L62-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_268688f98c04bcceb36649db68468f40a4a2a4592ee48a6c0893a71f0f719194"
+      ],
+      "text": "Skills in .claude/skills/ are exposed as available slash-commands in Claude Code, and path-scoped rules in .claude/rules/ load when relevant files are opened."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a62a0b97bad6c36191699dc2cdf0c0e2576a5162cbc4d85f869a3020fae4cff5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "a1b862f8235d6d0824ccf0ac46d3fc14bf7104d6",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "00-getting-started.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/00-getting-started.md#L9-L9"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29d4bcb54a10fc1fc4f0d42b793e482d74ac07f0d3b63239ec2f6d443073a4e0",
+        "slc_ffc8ae4670038874d3cc22c8445ca60806f887264dd0ae6a0af539d0225c3ac7"
+      ],
+      "text": "The methodology assigns RuVector the role of maintaining persistent memory across sessions so agent context does not start cold; RuFlo optionally orchestrates agents across the artifact chain."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4b1ff73576888c48feeb92f86ad5c0a074f1abb8d16c1b66019a397cc770dcf",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L163-L163"
+        },
+        {
+          "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+          "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+          "line_end": 161,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+          "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md#L161-L161"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_249b941594a7afcefd4879fffa8c4febf4a0e0fd2c124cb2591d3ab863b9a638",
+        "slc_a9f329659df859b6b56e9f447fb4638e11e750eb5eb62e3bccea54e778d4c7f9"
+      ],
+      "text": "The toolkit is released under the MIT License, with copyright attributed to BarryHurd.com."
+    }
+  ],
+  "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 183,
+        "path": "README.md",
+        "size": 8311
+      },
+      {
+        "lines": 105,
+        "path": "architecture.md",
+        "size": 2488
+      },
+      {
+        "lines": 164,
+        "path": "00-getting-started.md",
+        "size": 4635
+      },
+      {
+        "lines": 110,
+        "path": "01-methodology-overview.md",
+        "size": 7951
+      },
+      {
+        "lines": 265,
+        "path": "03-sprint-workflow.md",
+        "size": 10174
+      },
+      {
+        "lines": 189,
+        "path": "04-context-management.md",
+        "size": 8472
+      }
+    ],
+    "omitted": [
+      {
+        "path": "05-ai-native-patterns.md",
+        "reason": "file-budget",
+        "size": 10597
+      },
+      {
+        "path": "07-ruflo-ruvector-setup.md",
+        "reason": "file-budget",
+        "size": 8785
+      },
+      {
+        "path": "ADR-001-model-selection.md",
+        "reason": "file-budget",
+        "size": 6782
+      },
+      {
+        "path": "ADR-AGENT-ORCHESTRATION.md",
+        "reason": "file-budget",
+        "size": 8499
+      },
+      {
+        "path": "ADR-MODEL-SELECTION.md",
+        "reason": "file-budget",
+        "size": 6138
+      },
+      {
+        "path": "ADR-PROMPT-STRATEGY.md",
+        "reason": "file-budget",
+        "size": 6175
+      },
+      {
+        "path": "ai-native-rules.md",
+        "reason": "file-budget",
+        "size": 2527
+      },
+      {
+        "path": "code-reviewer.md",
+        "reason": "file-budget",
+        "size": 5014
+      },
+      {
+        "path": "GUARDRAILS-SPEC-TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 7347
+      },
+      {
+        "path": "methodology-rules.md",
+        "reason": "file-budget",
+        "size": 2433
+      },
+      {
+        "path": "PRD-001-rag-chat.md",
+        "reason": "file-budget",
+        "size": 3839
+      },
+      {
+        "path": "PRD-TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 3921
+      },
+      {
+        "path": "PROMPT-REGISTRY.md",
+        "reason": "file-budget",
+        "size": 1610
+      },
+      {
+        "path": "PULL_REQUEST_TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 2641
+      },
+      {
+        "path": "SKILL.md",
+        "reason": "file-budget",
+        "size": 4613
+      },
+      {
+        "path": "SPEC-TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 6644
+      },
+      {
+        "path": "spec-writer.md",
+        "reason": "file-budget",
+        "size": 4037
+      },
+      {
+        "path": "SPRINT-PLAN-TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 5296
+      },
+      {
+        "path": "TASK-TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 6965
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 4415
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 3303
+      }
+    ],
+    "omitted_count": 21,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 34,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 27,
+      "complete": false,
+      "omitted": 21,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_9c19cec188c257379960cf713e729d2e",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 3,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/8ad4b540/adc303d7/161f8e5311bdfc88bc650dcf800948437aecb93b/dffb30bc95fe376f/manifest.json",
+  "package_id": "pkg_d474e19694d0ebfb4af6eb748a13a6959f166e105e14a5de0b7157dd863ad756",
+  "repo": "polymathwizard/bhil-ai-first-development-toolkit",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2fd01d5dba166a5921071c275bb2ed61f1544e32d89eb3b5aea72e2078e87576",
+  "snapshot_id": "dffb30bc95fe376f",
+  "sources": [
+    {
+      "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+      "git_sha": "a1b862f8235d6d0824ccf0ac46d3fc14bf7104d6",
+      "lines": 164,
+      "path": "00-getting-started.md",
+      "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+      "sha256": "2bbb22158ff5b8fbacb444fbde22a51906b458abce8f9bd6505c280c3a816bb3",
+      "source_id": "src_535bf78b4ecb55d1b1cb469439d35d2f",
+      "stored": "00-getting-started.md-6705d0b0033a.md",
+      "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/00-getting-started.md"
+    },
+    {
+      "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+      "git_sha": "f34b10d1c7423b09f786bea68160745d3eefad41",
+      "lines": 110,
+      "path": "01-methodology-overview.md",
+      "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+      "sha256": "83612d61bdad80a344348def0bfe4970c7d5ae5389329f37aeb7bd1154d0dfab",
+      "source_id": "src_422bf43bb6c7517498436983e31c26c6",
+      "stored": "01-methodology-overview.md-e24649ca1a58.md",
+      "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/01-methodology-overview.md"
+    },
+    {
+      "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+      "git_sha": "533870f364b73577c4e8c5ae895aae69f1543a2a",
+      "lines": 265,
+      "path": "03-sprint-workflow.md",
+      "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+      "sha256": "c1225260a684b86ae020d6a7a6cf6f1eea72f58e8a8b69b51156a15b09681569",
+      "source_id": "src_a8c4bbb666585a6a85316b670ce64910",
+      "stored": "03-sprint-workflow.md-aeb5b6269cf5.md",
+      "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/03-sprint-workflow.md"
+    },
+    {
+      "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+      "git_sha": "e34240d92108d4db54afbd8cc8bba37507a445ad",
+      "lines": 189,
+      "path": "04-context-management.md",
+      "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+      "sha256": "3de55cc0a998de89264ce02887bdeea002a324c451be6d2272f91f64bedc5d82",
+      "source_id": "src_4ab22bd61696576986794e81c8b7c5fc",
+      "stored": "04-context-management.md-970978d28b81.md",
+      "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/04-context-management.md"
+    },
+    {
+      "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+      "git_sha": "6c719284c222e48115c28d2ea1bd457d98b4dc1a",
+      "lines": 183,
+      "path": "README.md",
+      "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+      "sha256": "8f88fd7b3317b1bcedfcc7c4d93edb61bfdc53a7dc2354cd120f1c9efabab873",
+      "source_id": "src_842d991c73375108b27a474a2492c958",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/README.md"
+    },
+    {
+      "commit": "161f8e5311bdfc88bc650dcf800948437aecb93b",
+      "git_sha": "8a21878d3beb30188bf0f6fe27782fe2e91a21a5",
+      "lines": 105,
+      "path": "architecture.md",
+      "repository": "polymathwizard/bhil-ai-first-development-toolkit",
+      "sha256": "371122e8a4cb596a03b07c521feea2908926290512074901fa724f57fe441ed5",
+      "source_id": "src_896f2a5921b552c1bd89b7f08727469c",
+      "stored": "architecture.md-4e03c430fc7f.md",
+      "url": "https://github.com/PolymathWizard/BHIL-AI-First-Development-Toolkit/blob/161f8e5311bdfc88bc650dcf800948437aecb93b/architecture.md"
+    }
+  ],
+  "summary": "The repository is a documented AI-first development methodology toolkit: an artifact chain (PRD→SPEC→ADR→TASK→CODE→REVIEW→DEPLOY) with YAML traceability IDs, copy-and-fill templates including three AI-native ADR types, a two-week sprint workflow with a test-first gate and promptfoo evaluation, and optional RuFlo orchestration with RuVector persistent memory. It is MIT-licensed per the README. Evidence coverage: 169 of 253 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

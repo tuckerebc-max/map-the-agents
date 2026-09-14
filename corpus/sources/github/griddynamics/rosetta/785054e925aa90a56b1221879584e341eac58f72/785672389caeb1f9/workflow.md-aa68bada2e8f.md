@@ -1,0 +1,98 @@
+---
+name: "<workflow name; MUST match the file name without extension>"
+description: "Workflow for <what it does + when to use; dense keywords; MUST be < ~15 tokens>"
+# alwaysApply — keep false; true injects this into EVERY context (bloat); set true ONLY with explicit user approval [boolean] [Cursor]
+alwaysApply: false
+
+# Knowledge Base Tags — shared tag bundles related artifacts; publisher auto-adds parent-folder + file-name tags; remove if empty [array] [ex: ["tag-1", "tag-2"]]
+tags: []
+
+# do not remove baseSchema!
+baseSchema: docs/schemas/workflow.md
+---
+
+[MAIN INTENTION: workflows defined here should be reusable and adaptable, the file must be small and short, skills already define how things work! Be concise! Save tokens! Recommend skills, but do not limit, add hook to add any currently available and useful]
+
+[ONLY FOR TEMPLATE EXECUTOR: imperative bullet points, shorter lines, distinguish references to repository files vs instructions; skill/subagent names will be in context already, so just reference it. the rest of instruction folder files: rules/templates/workflows/assets/subfolders of skill/etc must be loaded via the typed aliases (USE SKILL/FLOW, INVOKE SUBAGENT, APPLY PHASE, READ|APPLY RULE|TEMPLATE|SKILL FILE, LIST) to be used]
+
+[Latest Models: Anthropic (claude-opus-5, claude-sonnet-5, claude-haiku-4-5), OpenAI (gpt-5.6-sol, gpt-5.6-terra, gpt-5.6-luna), Google (gemini-3.7-flash), Cursor (grok-4.6, composer-2.5), Z.ai (glm-5).]
+
+[Model families: large (smart and slow) {opus, high, sol}, medium (workhorse) {sonnet, medium, glm-5, kimi-k2.5, minimax-m2.5, terra, grok-4.6}, small (fast, not smart) {haiku, glm-4.7, flash, mini, low, luna, composer-2.5} ]
+
+<[the_workflow_name]>
+
+<description_and_purpose>
+
+[KEEP THIS VERY SHORT. What this flow does and its purpose in the overall process. Define a problem and retrospectively introspectively validation proof that this prompt actually solves the problem.]
+
+</description_and_purpose>
+
+<workflow_phases>
+
+[Orchestrator may not have clear picture, instruct it to trust the system, skills define that, and it should NOT try to execute those itself]
+[Tell how phases and steps are executed: sequentially or parallel]
+
+<prerequisites phase="0" applies="ALL">
+
+1. All Rosetta prep steps MUST be FULLY completed.
+2. MUST USE SKILL `load-project-context` (required: all), `orchestration` (all except trivial), `hitl` (all, unless `No HITL` or `Fully Autonomous`).
+3. MUST ALWAYS use todo tasks ledger, ASAP. Phases are sequential. Independent tasks can run in parallel.
+4. MUST just-in-time load/execute/update each phase's: instructions, definitions, skills, state file; do not load/act IN ADVANCE.
+5. Workflow state MUST be saved to `agents/TEMP/<FEATURE>/[the_workflow_name]-flow-state.md` file.
+
+</prerequisites>
+
+<[phase_name] phase="N" [dimension]="[value]" subagent="[subagent name]" role="[subagent role with specialization to assume, brilliant and short]" subagent_required_model="[comma separate list of models]" [optional: must-be-subagent]>
+
+[add attribute must-be-subagent for phases where fresh eyes are critical: reviewers/validator/etc.]
+
+1. [High-level brief description, the phase itself should be a separate file if requires multiple steps to be executed]
+2. [Briefly inputs, outputs, responsibilities contract]
+3. [Required|Recommended] skills: [comma separated list of skills]
+4. Update `agents/[workflow]-state.md` [required]
+5. HITL get approval [optional, when it is needed]
+
+[THE FOLLOWING SECTION IS OPTIONAL]
+[ADDITIONALLY, IF WORKFLOW IS LARGE - USE SEPARATE PHASE TEMPLATE]
+<[step_name] step="N.Y" [dimension]="[value]">
+[IF NEEDED ADD ADDITIONAL ATTRIBUTES IF STEP IS LARGE AND SUBAGENT IS REQUIRED: subagent="<subagent name>" role="<subagent role with specialization to assume, brilliant and short>" subagent_required_model="<comma separate list of models extracted from subagent frontmatter itself, plus normalize claude-* to canonical list above, example claude-opus-5-high to claude-opus-5>" ]
+
+1. [Actions to be taken]
+
+</[step_name]>
+
+</[phase_name]>
+
+</workflow_phases>
+
+<references>
+
+[Optional, Any other references]
+
+- [Type of object referenced] [Reference] [Description, optional]
+
+</references>
+
+<best_practices>
+
+[Optional, KEEP THIS VERY SHORT. best practices to follow]
+
+</best_practices>
+
+<validation_checklist>
+
+[Optional, KEEP THIS VERY SHORT, do NOT repeat the rest of the prompt, it must not just restate the same: prompt tells what to do, instead it should be proof-oriented — observable evidence that the output is correct, proof that work was done correctly]
+
+- Checkpoint 1
+- Checkpoint 2
+  ...
+
+</validation_checklist>
+
+<pitfalls>
+
+[Optional, KEEP THIS VERY SHORT, do NOT repeat, provide unexpected mistakes, edge cases, caveats, unusual, errors, gotchas, traps, non-obvious patterns or issues to take into account or avoid]
+
+</pitfalls>
+
+</[the_workflow_name]>

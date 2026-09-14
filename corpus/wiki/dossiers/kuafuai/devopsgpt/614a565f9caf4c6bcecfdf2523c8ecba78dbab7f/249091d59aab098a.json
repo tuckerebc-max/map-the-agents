@@ -1,0 +1,536 @@
+{
+  "applied_operation_id": "op_3af051b6407b4f0188ec9e45c51ee3b4",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_dcd259440e0f8ff1e883120724f94880557e045fa00926a0cbee16bf257b1d83",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c577abdaa1fd4e70529a03631b1f130bd5df7c67881267e3f79c8e29a1dbdfac"
+      ],
+      "text": "The product combines LLMs with DevOps tools to turn natural-language requirements into working software, per its README introduction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_89d4bd26b39a9c62375362319aa4aff3c0fa08397a7b71d2fa7e35da0adf453e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 50,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L45-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cdc91f80dde89245217824aa51bf9eac461f75115e0cb2d9b2a43c28d7dd96f1"
+      ],
+      "text": "The documented workflow proceeds through clarifying requirements, generating interface documentation, writing pseudocode from existing projects, refining code, continuous integration, and version release."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be23fac78b44c36be90216041dea5f3b3bdb6326cf80382a60080c442d73ec2f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 63,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L57-L63"
+        },
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 76,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L65-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_494a9abbc9b3fc82607e43b232652e0e29376b28bf85cb0e1af39eb4e072c92e",
+        "slc_8cbedfa44ae34bef4535228de769036b7fa980e2c2f0c06b6a52086bd32071b4"
+      ],
+      "text": "The service is accessed through a browser, defaulting to http://127.0.0.1:8080, with generated code viewable in the ./workspace directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b00f26c3df84718f71d47e6fc92231278ca8c4543e9707210f56eeb58f9b9e40",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "8f883baee007a6d8cc77bdf5979d5a00c95a799f",
+          "line_end": 19,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/requirements.txt#L1-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a8e2343324cc55741259ac846ac628aa5182ca3e06ea85978f80c57ac5b879a"
+      ],
+      "text": "requirements.txt pins Flask 2.2.5, flask-sqlalchemy 3.1.1, flask-cors, openai 1.8.0, python-gitlab, Aliyun SDKs, boto3, and payment SDKs (paypalrestsdk, alipay-sdk-python)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8407bf282fbc1a3f86b8258b660a49d97c26d84a140880cd3a37d32b7617b67",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 63,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L57-L63"
+        },
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 19,
+          "line_start": 14,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L14-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_494a9abbc9b3fc82607e43b232652e0e29376b28bf85cb0e1af39eb4e072c92e",
+        "slc_9e8c3785a9fc545b0988d28a45d542e18205b2d169e4f7aedffe6a88eef4f565"
+      ],
+      "text": "Configuration uses an env.yaml file (copied from env.yaml.tpl) holding settings such as GPT_KEYS for OpenAI/Azure, LLM_MODEL, ports, and USERS login configuration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec7bfa6d10ccfc0777ea5288a5fb7d67aba567e34238be6e0a0b7a1f5a9aaa70",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L23-L23"
+        },
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 30,
+          "line_start": 25,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L25-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41d935285d38949b9e485105d55b89956dbea5e8e6b56416e4861a5b5b030e20",
+        "slc_bf613567c11f69f445f2c2c96995812d45784eb79f3a6d454883486e2110df91"
+      ],
+      "text": "When Git integration is enabled via GIT_ENABLED and related settings (GIT_URL, GIT_TOKEN, GIT_USERNAME, GIT_EMAIL), development tasks can pull and push code from Git."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8fe6b7d3954a008b3c2bdac834c7f5586d428c1333cb306a49d690b50ccc816",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L40-L43"
+        },
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L34-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a70a0c0c89021c1c32f3d01635f3d14bae9d8bad22d3ae8c2ccdeab44d95f2d",
+        "slc_a02a95486d562e1166633533c272bfc6e38c809440fa48be61ee49fa83288bb4"
+      ],
+      "text": "The product supports CI tool integration with GitlabCI and GitHub Actions, triggering pipelines on code submission via a configured GIT_API address."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47f8d5dc4a26b0bc697855485e3dd50c04619010ebd406468ad6ae60c7bf7d9e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 58,
+          "line_start": 53,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L53-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5fcbb25d965833b0af14d894d6eac5d40815d4bf2c84f56b308fd64e17e0182"
+      ],
+      "text": "Automated deployment to cloud services is configured with CD_ACCESS_KEY, CD_SECRET_KEY, CD_REGION, CD_EIP, CD_SECURITY, and CD_SWITCH, exemplified with Alibaba Cloud."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_98191c94cc274ecb59c6d9d3b0426d1a9751f98b178632b73c95cf89949f52f2",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 78,
+          "line_start": 64,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L64-L78"
+        },
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "docs/DOCUMENT.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_59b38872af9c5f87948a4b8664700bd53957b906f751776f9924405456bc030c",
+        "slc_7d696a852f486a00710758c0c4f1228d7b32cad31e8105e01e28e6deb5330ddd"
+      ],
+      "text": "APPS configuration holds per-application and per-service metadata (name, base_prompt, intro, api_doc, struct, lib, specification) that guides how tasks are designed; in the open-source version it is maintained manually."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d81cccaf3dfd4467559e81b54707f535f0773f38fb1f0a5a74e4f05c5a7c038b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 85,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L84-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8925393e594b7723bcc94d9c7b70d9e89871be7af879ad441c4154ea57d627e7"
+      ],
+      "text": "The README states requirement/interface documentation may be imprecise in complex scenarios, and the current version cannot automatically understand existing project code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66059f6cbfea8e70608b9541c90550babcab54222ffdad19d6c89e37ad991725",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L101-L101"
+        },
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L103-L103"
+        },
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae4671a44ad4681f2d583216be9b178b9530cea04bd6225220dac7501529e454",
+        "slc_d308ea6c8fbd9745cf6307c3fd3b04fde0f203209430fd53bf2a6d4130e1ed97",
+        "slc_e345b82d038cc07eaad895fc3958746e63d3b0dfd1ed849b134d86298b15591c"
+      ],
+      "text": "The project is described as an experimental application provided as-is without warranty, and users bear responsibility for token costs, legal compliance, and outcomes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_931f841a71cf7092cd71876662f55704ff5264e2cdcf615c23797d8da4a4b92a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+          "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+          "line_end": 31,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "kuafuai/devopsgpt",
+          "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md#L25-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9106ffdb95dd4a6e78d2f1f7f99465688dcea94c7c79dab19f7be648350f72d0"
+      ],
+      "text": "Enterprise Edition features (existing-project analysis, stronger model selection, more DevOps platforms) appear to be commercial-only differentiators from the open-source edition."
+    }
+  ],
+  "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 110,
+        "path": "README.md",
+        "size": 9360
+      },
+      {
+        "lines": 21,
+        "path": "requirements.txt",
+        "size": 344
+      },
+      {
+        "lines": 14,
+        "path": "docs/CONFIG_CHANGE.md",
+        "size": 534
+      },
+      {
+        "lines": 5,
+        "path": "docs/CONTACT.md",
+        "size": 181
+      },
+      {
+        "lines": 78,
+        "path": "docs/DOCUMENT.md",
+        "size": 5493
+      },
+      {
+        "lines": 79,
+        "path": "docs/DOCUMENT_CN.md",
+        "size": 4941
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/README_CN.md",
+        "reason": "file-budget",
+        "size": 8593
+      },
+      {
+        "path": "docs/README_JA.md",
+        "reason": "file-budget",
+        "size": 10767
+      },
+      {
+        "path": "docs/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 753
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 326,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 3,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_9d893160991353c694065db5b0a9aa74",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 3,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/kuafuai/devopsgpt/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/249091d59aab098a/manifest.json",
+  "package_id": "pkg_23e496db11570df51cf300d09b69ebd40015d41999d58a9d3d6c6162e92f25e3",
+  "repo": "kuafuai/devopsgpt",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0636cb7340f8b45b93c3996fc9147ae56cd611769366888934baf61cbfd7f63a",
+  "snapshot_id": "249091d59aab098a",
+  "sources": [
+    {
+      "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+      "git_sha": "cfb172c99c1ea699736755f5f5586fa5b10cfa5a",
+      "lines": 110,
+      "path": "README.md",
+      "repository": "kuafuai/devopsgpt",
+      "sha256": "73dfb5af83757afde47c713df85d715ce29b4b688d6aa79801013ea05b247c73",
+      "source_id": "src_e5fb705d7e435957b4d891fbad93d871",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/README.md"
+    },
+    {
+      "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+      "git_sha": "119610f44871cad1118aad01738080b19ae5555b",
+      "lines": 14,
+      "path": "docs/CONFIG_CHANGE.md",
+      "repository": "kuafuai/devopsgpt",
+      "sha256": "283cee00a9e28e0b543192ca0def65265c69c6744b39892bc3d6ccead253af42",
+      "source_id": "src_0fdd2ff92f655a9b96e8853bba5b5474",
+      "stored": "config_change.md-9d868d6fe961.md",
+      "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/CONFIG_CHANGE.md"
+    },
+    {
+      "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+      "git_sha": "687fcef21b25713d3c613587fdb57eab1886ef19",
+      "lines": 5,
+      "path": "docs/CONTACT.md",
+      "repository": "kuafuai/devopsgpt",
+      "sha256": "878f81d04409ba8e46487998a96abdfcf77046b8f84361bddbefe3c95b04d287",
+      "source_id": "src_2f7e6584606e5b9493e2491db9da5552",
+      "stored": "contact.md-836b5b507f33.md",
+      "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/CONTACT.md"
+    },
+    {
+      "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+      "git_sha": "f498e2352afc0b28abcaa70fc8e09fb3fb4afad1",
+      "lines": 78,
+      "path": "docs/DOCUMENT.md",
+      "repository": "kuafuai/devopsgpt",
+      "sha256": "8f91f9b7e1743a893dd0cef35575af0917b3a65a68a4b083d674a1e9c70e5c6e",
+      "source_id": "src_7c5bc53ab480521087a616b0697a7f27",
+      "stored": "document.md-3d1f82c66b6b.md",
+      "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT.md"
+    },
+    {
+      "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+      "git_sha": "a630fe105a624994b539cc3ee26e665fcb4e56b7",
+      "lines": 79,
+      "path": "docs/DOCUMENT_CN.md",
+      "repository": "kuafuai/devopsgpt",
+      "sha256": "20f578bda303391fd0cd90da975312f255262c8d1c636dc409395553b7fa7418",
+      "source_id": "src_d6006fed98f25d858ef5531385e6ed59",
+      "stored": "document_cn.md-b132f0ff3ece.md",
+      "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/docs/DOCUMENT_CN.md"
+    },
+    {
+      "commit": "614a565f9caf4c6bcecfdf2523c8ecba78dbab7f",
+      "git_sha": "8f883baee007a6d8cc77bdf5979d5a00c95a799f",
+      "lines": 21,
+      "path": "requirements.txt",
+      "repository": "kuafuai/devopsgpt",
+      "sha256": "f36c2317d241c0e12df2f45cb80b5dd5cb83d0e95ad9cb932ee97a5318b67fb3",
+      "source_id": "src_edb01fc6489d56888a661d998eb88127",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/kuafuai/DevOpsGPT/blob/614a565f9caf4c6bcecfdf2523c8ecba78dbab7f/requirements.txt"
+    }
+  ],
+  "summary": "DevOpsGPT is an LLM-plus-DevOps tool that converts natural-language requirements into working software, with documented workflow stages, Git/CI/CD integrations, and configuration via env.yaml. Evidence is mostly README/docs; no code slices are present, so all claims are documented rather than code-inspected.",
+  "superseded_claim_ids": []
+}

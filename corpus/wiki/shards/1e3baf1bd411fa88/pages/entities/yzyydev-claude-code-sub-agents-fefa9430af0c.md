@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0ee5aab3308f4b7c541935a0e0bd551e1c83eaec4f64943a411fdc3adcb069b8
+- clm_347e818d022ca924c2e4f460408d60de8993eea6e1198e30412e127efa54bd0f
+- clm_4025e2ff96479edc96fdbf8634a50bb5078542b248b3f25a7a9cc622bf4450d0
+- clm_48ba97847fc9570ecccf2e99e6a1e68313a59f13059ef244e300720d8c59c8b3
+- clm_72bab8cb2be86b2d6bc9436e12a7d76c88549c9135d96232501c2a910715a907
+- clm_85e7512abb6858f0001a716b6591d767f9be01d4c7a2979ac6f8d8dfe7ae5f69
+- clm_8e3dd30f22df69a287584913406984bdf0602f86fc77d9c87ba80dff20d3fa95
+- clm_d316800e0d3027abc6413e5fdb6a8da8f4b3e4186e68182b4898be9322f2330c
+- clm_d7f7ac577f2025c35d3806958bf28488b6ba0e54e1f87af8ff17db63965ac328
+- clm_ff2be5fd26603e1cbd8f7316ec1fdf0221493770a7b830700609c66c977d3610
+maturity: draft
+page_id: pg_8cdfd8c668cd5a849c74fefa9430af0c
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: yzyydev/claude_code_sub_agents
+updated_at: '2026-09-14T04:32:33Z'
+---
+
+# yzyydev/claude_code_sub_agents
+
+<!-- rcw:begin owner=entity:ent_06a713e6a1005328bf7b9ed5b3b604fc block=evidence -->
+- yzyydev/claude_code_sub_agents is mentioned in this evidence. [@claim:clm_0ee5aab3308f4b7c541935a0e0bd551e1c83eaec4f64943a411fdc3adcb069b8] [@claim:clm_347e818d022ca924c2e4f460408d60de8993eea6e1198e30412e127efa54bd0f] [@claim:clm_4025e2ff96479edc96fdbf8634a50bb5078542b248b3f25a7a9cc622bf4450d0] [@claim:clm_48ba97847fc9570ecccf2e99e6a1e68313a59f13059ef244e300720d8c59c8b3] [@claim:clm_72bab8cb2be86b2d6bc9436e12a7d76c88549c9135d96232501c2a910715a907] [@claim:clm_85e7512abb6858f0001a716b6591d767f9be01d4c7a2979ac6f8d8dfe7ae5f69] [@claim:clm_8e3dd30f22df69a287584913406984bdf0602f86fc77d9c87ba80dff20d3fa95] [@claim:clm_d316800e0d3027abc6413e5fdb6a8da8f4b3e4186e68182b4898be9322f2330c] [@claim:clm_d7f7ac577f2025c35d3806958bf28488b6ba0e54e1f87af8ff17db63965ac328] [@claim:clm_ff2be5fd26603e1cbd8f7316ec1fdf0221493770a7b830700609c66c977d3610]
+<!-- rcw:end owner=entity:ent_06a713e6a1005328bf7b9ed5b3b604fc block=evidence -->
+
+## Researcher notes
+

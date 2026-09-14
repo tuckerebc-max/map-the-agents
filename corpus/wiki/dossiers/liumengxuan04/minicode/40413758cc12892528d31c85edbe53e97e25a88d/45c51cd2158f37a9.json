@@ -1,0 +1,468 @@
+{
+  "applied_operation_id": "op_91bb3d96df354a6396727bdaa47d32e8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_746138e03329d7aaf8438de9d29b59a80e2f4c46a2a41af5401b95ad04f025be",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L26-L26"
+        },
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2727284922802a5b3823054e4adf2134c568bc63f28ddeb2df5621b0912dc4d",
+        "slc_f4d78ef743c48414ee9268f55d591ab96f5ef11c7a59857177a95874cbb39085"
+      ],
+      "text": "The README describes MiniCode as a lightweight terminal coding assistant for local development, offering Claude Code-like workflow and architectural ideas in a much smaller implementation aimed at learning, experimentation, and custom tooling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49627410332c511d185a16e477eecb60833204ead2a36933c7761350a2d2e518",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 136,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L125-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6589827965ed3041611eaf6039dc702223a97b5551d1c4f407d2e3d745b8fc71"
+      ],
+      "text": "Documented core capabilities include multi-step tool execution within a single turn, forming a model-to-tool-to-model loop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72f5babcd14862814804547e09713d8b4dd2fab801551c1bcc46938470d0bbc5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "9726b30de3643ab84bc925d345271949242bf137",
+          "line_end": 87,
+          "line_start": 83,
+          "path": "ARCHITECTURE.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/ARCHITECTURE.md#L83-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aaefda37c71ef1de51fb89e943014fe1cfb9b7008bf6bc2bdc8ab14eb91b62cd"
+      ],
+      "text": "Documentation describes a root agent that can spawn up to three concurrent read-only sub-agents restricted to file search/read, skill loading, and web research tools; sub-agents cannot edit files, run commands, ask the user, or spawn further agents, and the root owns every code change."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dca464b68ac577dbf8fb71231ce1326e3f24725f39a523ad159ca7bb687f524c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "9726b30de3643ab84bc925d345271949242bf137",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "ARCHITECTURE.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/ARCHITECTURE.md#L89-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5255c13fcea2ad38a620f68e4ae50c1cb732366ddd5fb10eebe5b20525154f79"
+      ],
+      "text": "Documentation states this multi-agent MVP does not persist workers, load .claude/agents, support nesting, isolate worktrees, or allow live user steering, framing itself as a minimal teaching implementation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_114825a60fc34c1d8d312ca1f7f56dce379c14b0e1f7b1c7460e98bae80d9baa",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "9726b30de3643ab84bc925d345271949242bf137",
+          "line_end": 40,
+          "line_start": 31,
+          "path": "ARCHITECTURE.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/ARCHITECTURE.md#L31-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5ba49b56a0c6b1f018f3b70dc9833325c06e02d8aa388b7f107603d1b27a9b8"
+      ],
+      "text": "Documentation lists planned-but-not-built items including full Ink/React rendering, bridge/IDE two-way communication, remote sessions, LSP support, and a skill marketplace, while noting a minimal sub-agent runtime and basic layered memory loading are already implemented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c019ef5a773046599f77e39a45913620653c5c44c0177de1818ae771b0fea28",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "9726b30de3643ab84bc925d345271949242bf137",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "ARCHITECTURE.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/ARCHITECTURE.md#L72-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ac489b4de7f24582cb67f42475344c0076a95f6f3ea842457771404bf2f59a7"
+      ],
+      "text": "Documented runtime state keeps conversation messages in memory during a turn, appends them to a per-project session log after each successful turn, and treats fresh provider-reported usage as the source of truth for context accounting, with local token estimation only as a fallback or a tail estimate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40dc4f5aef9806c88552096ddcb9375b567853316f3303e9b0a1ef977b11fcd0",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "9726b30de3643ab84bc925d345271949242bf137",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "ARCHITECTURE.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/ARCHITECTURE.md#L72-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ac489b4de7f24582cb67f42475344c0076a95f6f3ea842457771404bf2f59a7"
+      ],
+      "text": "Documentation states very large tool outputs are moved out of the prompt context and stored on disk, leaving the model a preview and a path to the full output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d421d22562b7bb527ea10cec246578cb8fff75827e6a436c6038e20690e5f91",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 190,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L178-L190"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_593c536de0565590822a091be625b2c4bac8f181d880cf7cb5c204f032128f62"
+      ],
+      "text": "Documented slash commands include /plan for an in-memory Todo list, /goal with pause/resume for a Goal that persists across turns, and /loop for a recurring prompt with a default ten-minute interval and a one-minute minimum."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0edf5e8ace2f01205b327aa8b3d78fcc88f576721201043a63721ea1ad96b9ae",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 136,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L125-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6589827965ed3041611eaf6039dc702223a97b5551d1c4f407d2e3d745b8fc71"
+      ],
+      "text": "Documentation states file edits follow a review-before-write flow with path and command permission checks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_422237ee93d4c0d224dcf35b07e48b67a517cfe6a4a33c9c14e4e742a512c375",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 136,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L125-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6589827965ed3041611eaf6039dc702223a97b5551d1c4f407d2e3d745b8fc71"
+      ],
+      "text": "Documented local skills are discovered through SKILL.md files, alongside MCP tools, resources, and prompts reachable over stdio or remote HTTP."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4dec81d428bee0b11483dff8f673d5685c95e7f99a88428e2a3381ca91cdc979",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 154,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L154-L154"
+        },
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L149-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_040b505c0e68085529bcd529a3a261d0f09341476bec59c8f2e852723076b078",
+        "slc_b9afc817eff227e3f8832bc864616a9be79b09f2939bb3d4341251e3f6bccb82"
+      ],
+      "text": "The documented installer asks for a model name plus ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN, storing configuration under a dedicated home directory that can be relocated with the MINI_CODE_HOME variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fef0f9b8cbeaeb0ae6dac1162487b8615c3878a13255360894637978ab0ad2be",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 222,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L222-L222"
+        },
+        {
+          "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+          "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+          "line_end": 220,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "liumengxuan04/minicode",
+          "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md#L217-L220"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1990ae8840af3e597114ad92971508c1b12aa3999f6d0f841a82e15dc74ffd1f",
+        "slc_1d6b23825b15bffb52857190034c952cd0d7236d1943e0400ee54bdd66c5175e"
+      ],
+      "text": "Repository development practice: Documented development commands are npm run check and npm test, alongside a stated goal of keeping the architecture understandable, hackable, and easy to extend."
+    }
+  ],
+  "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 222,
+        "path": "README.md",
+        "size": 9158
+      },
+      {
+        "lines": 113,
+        "path": "ARCHITECTURE.md",
+        "size": 7823
+      },
+      {
+        "lines": 115,
+        "path": "ARCHITECTURE_ZH.md",
+        "size": 7353
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE_CODE_PATTERNS.md",
+        "reason": "file-budget",
+        "size": 9306
+      },
+      {
+        "path": "CLAUDE_CODE_PATTERNS_ZH.md",
+        "reason": "file-budget",
+        "size": 9255
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 5026
+      },
+      {
+        "path": "CONTRIBUTING_ZH.md",
+        "reason": "file-budget",
+        "size": 4646
+      },
+      {
+        "path": "README.zh-CN.md",
+        "reason": "file-budget",
+        "size": 8676
+      },
+      {
+        "path": "ROADMAP.md",
+        "reason": "file-budget",
+        "size": 7994
+      },
+      {
+        "path": "ROADMAP_ZH.md",
+        "reason": "file-budget",
+        "size": 7256
+      },
+      {
+        "path": "USAGE.md",
+        "reason": "file-budget",
+        "size": 23155
+      },
+      {
+        "path": "USAGE_ZH.md",
+        "reason": "file-budget",
+        "size": 21503
+      }
+    ],
+    "omitted_count": 9,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 132,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 12,
+      "complete": false,
+      "omitted": 9,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_626c6d5a90a056448ee937fd520362bf",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/liumengxuan04/minicode/40413758cc12892528d31c85edbe53e97e25a88d/45c51cd2158f37a9/manifest.json",
+  "package_id": "pkg_aa18cc3de7f52e757c039bafb6861756a9090d3170694a69eea8558bda2d5a17",
+  "repo": "liumengxuan04/minicode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "db9153dfac018bba4a26808d6e1040d9c1b1d0d8e3978ef17cf00a6f4249df03",
+  "snapshot_id": "45c51cd2158f37a9",
+  "sources": [
+    {
+      "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+      "git_sha": "9726b30de3643ab84bc925d345271949242bf137",
+      "lines": 113,
+      "path": "ARCHITECTURE.md",
+      "repository": "liumengxuan04/minicode",
+      "sha256": "b272d53bc6e666ff577a0cd91253b172543f0039c46e749707088c28c6a95938",
+      "source_id": "src_1df7d36e31f75ccb8cb7b51e102d35c9",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/ARCHITECTURE.md"
+    },
+    {
+      "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+      "git_sha": "1b1038fc709084c6b6b0f47f9f834bf8f97e671c",
+      "lines": 115,
+      "path": "ARCHITECTURE_ZH.md",
+      "repository": "liumengxuan04/minicode",
+      "sha256": "69c0df59f52d1af4561b9c03cc6db0602a8111d4493d6c06e676b7e597cea783",
+      "source_id": "src_1ab5ead77eff5712bfb7d6d8890f4bab",
+      "stored": "architecture_zh.md-1dd34eec8cfc.md",
+      "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/ARCHITECTURE_ZH.md"
+    },
+    {
+      "commit": "40413758cc12892528d31c85edbe53e97e25a88d",
+      "git_sha": "3d70af3159020184408f5ac297c23d44bf13df04",
+      "lines": 222,
+      "path": "README.md",
+      "repository": "liumengxuan04/minicode",
+      "sha256": "de797f1a70ef6cb35315d07896af1f1d6dbfed8c0227007e7509bc49cf247f5c",
+      "source_id": "src_ce4aa2ed2a995be3a9b644207b7d6a9c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/LiuMengxuan04/MiniCode/blob/40413758cc12892528d31c85edbe53e97e25a88d/README.md"
+    }
+  ],
+  "summary": "MiniCode is documented as a lightweight terminal coding assistant with a model-tool-model loop, a bounded read-only multi-agent MVP, session persistence backed by provider-reported usage, local skills and MCP tools, and review-before-write file edits. Its docs list several planned-but-not-built features and explicit MVP limitations.",
+  "superseded_claim_ids": []
+}

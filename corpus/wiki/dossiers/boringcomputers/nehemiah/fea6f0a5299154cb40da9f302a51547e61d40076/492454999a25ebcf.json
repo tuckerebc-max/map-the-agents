@@ -1,0 +1,623 @@
+{
+  "applied_operation_id": "op_ac83769c39cc487f925292aee1794aca",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae6737a936e8bc68260bf5dd36c5888da7c61e3071fb7c20dbde768e804bcf57",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "bcce19c4386cf7a9907072ad461f51e699c1905e",
+          "line_end": 172,
+          "line_start": 169,
+          "path": "docs/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/architecture.md#L169-L172"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "bcce19c4386cf7a9907072ad461f51e699c1905e",
+          "line_end": 182,
+          "line_start": 174,
+          "path": "docs/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/architecture.md#L174-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad65844e4c5dc6b3ae894f9ecc856dcd2f66f5299cb720627a10ca743d98c302",
+        "slc_cd1ec195c2a6187c7c8b21676a67c55c1126c6bd204c3dc8ccf8be5eec1e35ca"
+      ],
+      "text": "The local daemon exposes a REST API on port 8080 (machine create/list/get/delete, branch, and a /tty WebSocket with binary frames) plus an open /healthz endpoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7170227d3bda5cb1fdc4dc7708451a7879aa84ad27d64922ec960c1d430e7bfa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 94,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L84-L94"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 82,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L80-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29bf78e64335feddba4416f6ca7264be4df4e78a02861e2010dbe09a439a6464",
+        "slc_555f1a92f02cca88fddc93fa5dee32ec38dc920aa80c906288543decd6f9dc1a"
+      ],
+      "text": "An MCP server package (nehemiah-mcp) lets clients like Claude Desktop and Cursor spin up and drive Nehemiah computers as a tool, configured via npx with a NEHEMIAH_URL env var."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c6e2a602675cae366b0be89cf922f8135be106869c65a19921311896fa5adf1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L111-L111"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 119,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L113-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21a4aeab5be883b9defee083ac255e641d84278a9776a26e3b0291237b877c0f",
+        "slc_433c99a368a2a1ec32880f7f0ba77974e47aeb31ced24ef34c1e538787ab4e13"
+      ],
+      "text": "The repo is a Turborepo/npm-workspaces monorepo: apps/web (SvelteKit site), nehemiahd (Go host daemon), packages/sdk (Effect-native TypeScript client), packages/mcp, and infra/latitude provisioning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36e37e49562b2b017ce12be1619d556474c724bd230b1c52a17f99bd2a1ada70",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 12,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L7-L12"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 107,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L101-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e17b25c2abb7ed5817eed64602d081c3fb14d785dd493876736f66e3b3f6c4e",
+        "slc_da7400870965a372bb7b53b8de3fb04f477da2d7653fea6173df357a40c6fae5"
+      ],
+      "text": "Each machine is a hardware-virtualized Firecracker microVM with its own kernel, jailed and resource-capped, restored from a memory snapshot in milliseconds, with guests network-isolated behind an egress firewall."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a76a549662b2421f785e6ccdb42c4f38db9fe766c43ed4b58f73a2b59a93389",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "bcce19c4386cf7a9907072ad461f51e699c1905e",
+          "line_end": 141,
+          "line_start": 139,
+          "path": "docs/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/architecture.md#L139-L141"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "bcce19c4386cf7a9907072ad461f51e699c1905e",
+          "line_end": 137,
+          "line_start": 136,
+          "path": "docs/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/architecture.md#L136-L137"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "bcce19c4386cf7a9907072ad461f51e699c1905e",
+          "line_end": 134,
+          "line_start": 133,
+          "path": "docs/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/architecture.md#L133-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d70c5508f17ece800491579273a8c5aa4a0437bafd0e827806400d231e09ff1",
+        "slc_59feb2542c89afe4ea4143d0fa7d0522b7186b186ff5e09c5dbd7b705c8b0502",
+        "slc_d40f5aba64ff32246bcd2dfce9b978da49ea16f32cfee4fc0d579e414435d4dc"
+      ],
+      "text": "In local mode the guest shell runs over serial: the kernel boots with console=ttyS0 and nehemiahd pumps the Firecracker child's stdin/stdout as the terminal, working identically for cold-boot and snapshot-restored VMs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2e3794f01aab746fc7dda899a695426344f9c6c9a78fbc6579a0ba48eafd8831",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "6c9865766e168cac3b3ab45a237e0b485da57a13",
+          "line_end": 154,
+          "line_start": 152,
+          "path": "docs/nehemiah/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/architecture.md#L152-L154"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "6c9865766e168cac3b3ab45a237e0b485da57a13",
+          "line_end": 143,
+          "line_start": 134,
+          "path": "docs/nehemiah/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/architecture.md#L134-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bfacbbb82cf473c528b1ea114a9b3d8606948fcc94de6e90c3347b4410c255d",
+        "slc_9ec6fe1c2be48ec60b42715595a7941de2f97833a97a110eee3aa9377f39067f"
+      ],
+      "text": "Managed machines move through persisted lifecycle states (requested, placing, starting, running, stopping, stopped, failed, lost); terminal records never regress, and a machine declared lost is never presented as recovered."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f730ad3510737a84b75bedd0560736e078d47424bb18529a606e56cb6c785f7c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "6c9865766e168cac3b3ab45a237e0b485da57a13",
+          "line_end": 212,
+          "line_start": 208,
+          "path": "docs/nehemiah/architecture.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/architecture.md#L208-L212"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3080fa9f97cd3223aec0e265048a557e7ff127674974983697863da497d7aa23"
+      ],
+      "text": "The scheduler filters hosts by region, architecture, size, template availability, health, and hard quotas, reserving capacity in one PostgreSQL transaction and preferring hosts with the requested template cached."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3919cbdc044126fbc9daea90f000aa2f1855cd501eefc732da80825d116b3a4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "959d6e47efd7d71e9dd5a635b17fc1f3981c0f04",
+          "line_end": 47,
+          "line_start": 41,
+          "path": "docs/nehemiah/api-contract.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/api-contract.md#L41-L47"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "959d6e47efd7d71e9dd5a635b17fc1f3981c0f04",
+          "line_end": 66,
+          "line_start": 59,
+          "path": "docs/nehemiah/api-contract.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/api-contract.md#L59-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_762dd7c72931a6b773244bb796d94501d35b135c6bfa345a239c579727b67b79",
+        "slc_fc28d9677c261f7075c7b0af37db4d808a668190b0ea1210e844aa919c758321"
+      ],
+      "text": "File access uses capability-scoped session tokens sent only as bearer headers; query tokens, cookies, and redirects are forbidden, uploads are capped at 16 MiB, and sessions can be revoked with a typed DELETE endpoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b0e262d57faa44b56d27264b0a2bbe7ef8c715c3f5fcd150ed319347f33d110",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "959d6e47efd7d71e9dd5a635b17fc1f3981c0f04",
+          "line_end": 86,
+          "line_start": 81,
+          "path": "docs/nehemiah/api-contract.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/api-contract.md#L81-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fbeee25785b4127a9a7c5e0df5f0f68adf41807db62233824ba05dfa4bf9574"
+      ],
+      "text": "Managed OCI image import/pull is not implemented: requests receive a typed 501 not_supported response, and the field is documented only as a deprecated reserved field."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ce63f73fc921269d564c3fb8a18964c6ca7e74625abbc3e7eb1671dd9146aaa",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "959d6e47efd7d71e9dd5a635b17fc1f3981c0f04",
+          "line_end": 92,
+          "line_start": 88,
+          "path": "docs/nehemiah/api-contract.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/api-contract.md#L88-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5260d21021aa32810e66c3be6904571419ef1351e05e98c3fb5b47c73de4cd4e"
+      ],
+      "text": "Managed host-local LLM agents are not implemented; agent-capability session issuance fails with typed not_supported, and users are directed to run agents inside the guest via exec/TTY/file primitives."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_616922b72dacd88ed2014b9ecf1c50ce4239a640098c3e2837e8098b0eb00d73",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 132,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L131-L132"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "959d6e47efd7d71e9dd5a635b17fc1f3981c0f04",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "docs/nehemiah/api-contract.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/api-contract.md#L15-L20"
+        },
+        {
+          "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+          "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+          "line_end": 127,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "boringcomputers/nehemiah",
+          "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md#L121-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75770eef67ba8efcaff1f35e8e5d0dddc236e1205dc2847ba7f924e93fd03e99",
+        "slc_8577d8dfdee8cc2affb1190d9ba0d31218a4d344072b65e63e49f488d2760fcb",
+        "slc_e9abda318d14f5f3966182c8eaa295578987d53d33333274f64aaa71603885f1"
+      ],
+      "text": "Repository development practice: contributors use npm workspaces commands (npm run dev/build/check/lint) and are pointed to CONTRIBUTING.md; a route-inventory test fails if the exported OpenAPI contract drifts."
+    }
+  ],
+  "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 132,
+        "path": "README.md",
+        "size": 5293
+      },
+      {
+        "lines": 196,
+        "path": "docs/architecture.md",
+        "size": 11532
+      },
+      {
+        "lines": 302,
+        "path": "docs/nehemiah/architecture.md",
+        "size": 19051
+      },
+      {
+        "lines": 104,
+        "path": "docs/nehemiah/api-contract.md",
+        "size": 6432
+      },
+      {
+        "lines": 251,
+        "path": "docs/nehemiah/distribution.md",
+        "size": 19625
+      },
+      {
+        "lines": 197,
+        "path": "docs/nehemiah/dogfood.md",
+        "size": 13816
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/nehemiah/implementation-status.md",
+        "reason": "file-budget",
+        "size": 24058
+      },
+      {
+        "path": "docs/nehemiah/managed-host-logging.md",
+        "reason": "file-budget",
+        "size": 1984
+      },
+      {
+        "path": "docs/nehemiah/metering.md",
+        "reason": "file-budget",
+        "size": 13059
+      },
+      {
+        "path": "docs/nehemiah/security-checklist.md",
+        "reason": "file-budget",
+        "size": 18235
+      },
+      {
+        "path": "docs/nehemiah/slo.md",
+        "reason": "file-budget",
+        "size": 10531
+      },
+      {
+        "path": "docs/nehemiah/threat-model.md",
+        "reason": "file-budget",
+        "size": 22926
+      },
+      {
+        "path": "docs/nehemiah/volumes.md",
+        "reason": "file-budget",
+        "size": 5788
+      },
+      {
+        "path": "docs/nehemiah/adr/0001-control-and-data-plane.md",
+        "reason": "file-budget",
+        "size": 4127
+      },
+      {
+        "path": "docs/nehemiah/adr/0002-host-connectivity.md",
+        "reason": "file-budget",
+        "size": 4305
+      },
+      {
+        "path": "docs/nehemiah/adr/0003-tenant-identity.md",
+        "reason": "file-budget",
+        "size": 7311
+      },
+      {
+        "path": "docs/nehemiah/adr/0004-metering-ledger.md",
+        "reason": "file-budget",
+        "size": 5215
+      },
+      {
+        "path": "docs/nehemiah/runbooks/capacity-exhaustion.md",
+        "reason": "file-budget",
+        "size": 6197
+      },
+      {
+        "path": "docs/nehemiah/runbooks/database-outage.md",
+        "reason": "file-budget",
+        "size": 7683
+      },
+      {
+        "path": "docs/nehemiah/runbooks/debug-machine.md",
+        "reason": "file-budget",
+        "size": 11982
+      },
+      {
+        "path": "docs/nehemiah/runbooks/host-lifecycle.md",
+        "reason": "file-budget",
+        "size": 4847
+      },
+      {
+        "path": "docs/nehemiah/runbooks/host-loss.md",
+        "reason": "file-budget",
+        "size": 8368
+      },
+      {
+        "path": "docs/nehemiah/runbooks/production-promotion.md",
+        "reason": "file-budget",
+        "size": 6306
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1951
+      }
+    ],
+    "omitted_count": 18,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 516,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 24,
+      "complete": false,
+      "omitted": 18,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_f4fb5e0a8a535226b81fbb6ce8d22a3f",
+  "facets": {
+    "components": 1,
+    "dependencies": 0,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/boringcomputers/nehemiah/fea6f0a5299154cb40da9f302a51547e61d40076/492454999a25ebcf/manifest.json",
+  "package_id": "pkg_c03d0fd3dca264bf1d45664defecaaf0d859db97237e42d50001a3d2e2543eca",
+  "repo": "boringcomputers/nehemiah",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "82387372e6918d9259a1e581b21d3f3ca08fab452908306ded8178b959ae998f",
+  "snapshot_id": "492454999a25ebcf",
+  "sources": [
+    {
+      "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+      "git_sha": "02b5341eef80021f9a95fb0f2ece74bcc6798c6a",
+      "lines": 132,
+      "path": "README.md",
+      "repository": "boringcomputers/nehemiah",
+      "sha256": "c338e02476f75edcb60dd3ea282ef83f157ecd313d1d1759f5d0bf85e96051d1",
+      "source_id": "src_98ba94c2a3d259a7b62a3161e96047a2",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/README.md"
+    },
+    {
+      "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+      "git_sha": "bcce19c4386cf7a9907072ad461f51e699c1905e",
+      "lines": 196,
+      "path": "docs/architecture.md",
+      "repository": "boringcomputers/nehemiah",
+      "sha256": "234f4004b73b7210b7ad82278dc96a3b1443074e696a6cc166faa069551c138d",
+      "source_id": "src_bd14f38d5319510aaa5289cafd1e81ba",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/architecture.md"
+    },
+    {
+      "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+      "git_sha": "959d6e47efd7d71e9dd5a635b17fc1f3981c0f04",
+      "lines": 104,
+      "path": "docs/nehemiah/api-contract.md",
+      "repository": "boringcomputers/nehemiah",
+      "sha256": "3d0f734a6905cbdad384e676f2807ed0fcbe5ad5c2f313d3cd03943797c197b0",
+      "source_id": "src_3f90deb4003b5c8e84e129b05844b381",
+      "stored": "api-contract.md-f9632ec4cc44.md",
+      "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/api-contract.md"
+    },
+    {
+      "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+      "git_sha": "6c9865766e168cac3b3ab45a237e0b485da57a13",
+      "lines": 302,
+      "path": "docs/nehemiah/architecture.md",
+      "repository": "boringcomputers/nehemiah",
+      "sha256": "564bc99f940c0588e8227fa60cf01c06f211bfbeb9e4ec0c416268f2cb931df3",
+      "source_id": "src_6e8b487ed9c85c17a5aa3ee67e177818",
+      "stored": "architecture.md-7901ddd8c3a6.md",
+      "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/architecture.md"
+    },
+    {
+      "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+      "git_sha": "2e0029e3fbe92bb1916c17e6fe1a19058b9337be",
+      "lines": 251,
+      "path": "docs/nehemiah/distribution.md",
+      "repository": "boringcomputers/nehemiah",
+      "sha256": "991ae23aafe4367a1783a87abbc8180bb19532effbcee31e065bdfb879163133",
+      "source_id": "src_09b26bf0ad5654dabdf44ffc1ab1a420",
+      "stored": "distribution.md-1acdc024e891.md",
+      "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/distribution.md"
+    },
+    {
+      "commit": "fea6f0a5299154cb40da9f302a51547e61d40076",
+      "git_sha": "d9da9fa05e6ce1e31b59aa3eb676f0cc3b1d4557",
+      "lines": 197,
+      "path": "docs/nehemiah/dogfood.md",
+      "repository": "boringcomputers/nehemiah",
+      "sha256": "2183e737bfc97fd6bafbbcbc37882126f5692f5b2b1e2786b18bdfd29d2a4ed9",
+      "source_id": "src_278b580ffa0a5b36b730d9316fe08ba9",
+      "stored": "dogfood.md-1978200fd477.md",
+      "url": "https://github.com/boringcomputers/nehemiah/blob/fea6f0a5299154cb40da9f302a51547e61d40076/docs/nehemiah/dogfood.md"
+    }
+  ],
+  "summary": "The local daemon exposes a REST API on port 8080 (machine create/list/get/delete, branch, and a /tty WebSocket with binary frames) plus an open /healthz endpoint. An MCP server package (nehemiah-mcp) lets clients like Claude Desktop and Cursor spin up and drive Nehemiah computers as a tool, configured via npx with a NEHEMIAH_URL env var. Evidence coverage: 110 of 179 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

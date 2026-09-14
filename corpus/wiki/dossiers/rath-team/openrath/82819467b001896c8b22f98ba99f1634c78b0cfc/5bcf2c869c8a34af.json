@@ -1,0 +1,548 @@
+{
+  "applied_operation_id": "op_df889bacf4cc48f6a526752b2e076f63",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_08718dcc1fef5a641dca9dda41c0404fbe8391f1f35a2f5867e70d534f375033",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L23-L23"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 33,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L27-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2145ab3a99a1ff6bc49e5f879e235c78111c56075f1a4236fac868a55ba17468",
+        "slc_61746d896dc890c7d27c3ba7b3e62491f2f2a95f12c3ab54de716049cf7648aa"
+      ],
+      "text": "OpenRath exposes core runtime objects: Session (conversation state and inter-agent lineage), Sandbox (tool execution placement), Memory, Tool, Agent, Workflow, and Selector."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7ce7641325d7e898a88e7ce3727c8d0058aead33d66d77ac684ce34d486ef6a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 51,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L43-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b5b8e206b9a7d0e9357dadd0c73d0165e4538135969b9614140dd12e434d15e"
+      ],
+      "text": "The framework maps PyTorch concepts to agent concepts: Session as Tensor, Sandbox/Backend as Device, Memory as Parameter, Tool as Function, Agent as nn.Linear, Workflow as nn.Module, Selector as control flow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_112583f5488ba75ac71dfdff75a6004fbb69b0176ae060e156d58c592f860d16",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L53-L53"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L147-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1db2c3cc968689bdb300cc8a44f77a074ba0b5d0b255485241dd747ebbf48e8b",
+        "slc_ab65f64fd9a7ad29d43e7320c634456162bb9fb170977e6a7d347887aed4504c"
+      ],
+      "text": "OpenRath is Session-first rather than agent-loop-first, so multi-agent, multi-branch, durable-memory, sandboxed, and lineage-traced workloads share one flowing value."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d01fec61cdeb3004392391a2f7f7613a4271fecb15a19289a9f7d4b885aeabcc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 246,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L241-L246"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 237,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L237-L237"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66684fa69109e40ae3ecf2b1a370794861f00337629e7f60e4f1113e79e9d002",
+        "slc_b8ce462b80f490782c41f926ae025c86c7c78af1d7c418f41787f1be4ea4463d"
+      ],
+      "text": "Session supports fork(), detach(), merge(...), JSONL serialization, sandbox binding via session.to(\"local\", spec=\"./\"), plus from_user_message and from_agent_prompt constructors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c98292f853f8b96fc40a1eab42ed11bdd2a74a143a3e6475b35b8c1c0bb50be",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 287,
+          "line_start": 286,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L286-L287"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 280,
+          "line_start": 280,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L280-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d18e61fb7ea7f5cfe7ea20640216cbf5b2cef7d7e5298b536992ba8c86cfc3d",
+        "slc_f86b0ccba2f2292ef09d87de8e81f87e70b55976f8df6cff7af53262c6f9d887"
+      ],
+      "text": "FlowToolCall is the model-visible tool abstraction combining name, description, JSON schema, and a Python call over a Session; BackendTool* is the lower-level payload consumed by sandbox backends."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1852125020a00c78d41062e27ac626a7968f037f65ea2b915751bc1190436146",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 302,
+          "line_start": 299,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L299-L302"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 297,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L297-L297"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 304,
+          "line_start": 304,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L304-L304"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37bcb37a1f7adc968b42a8ceac016c6dc586e75c552debbdb72be59bcae7247f",
+        "slc_dc861cb3fa338ea31486c1ad83cdcfa35a6cbc40d70f18b7ac105ce4ded4211f",
+        "slc_f1ba0700c4a8d7e7c407b03b6e00ade4c9647e8bfd080902d07e2e7b6f243d8d"
+      ],
+      "text": "flow.Workflow subclasses implement forward(session) -> Session, enabling nesting of agents, forks, compression, tools, and child workflows without a new state format per layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49417797f1e066ab07af0988d4b1eae418d4468cad7a05388f58a570e0a198b4",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 314,
+          "line_start": 308,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L308-L314"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 306,
+          "line_start": 306,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L306-L306"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15848e1fd25cc37fa4b96fbd92a65daa2983818b1298843ff62f24d9ef6798e4",
+        "slc_4943fc941acad46c843723da6d2cccbe98f39b1249046d66effb8702e63e6bd2"
+      ],
+      "text": "flow.Selector is an LLM-backed router over self-describing workflows that returns the next workflow or a no-op EmptyWorkflow, keeping if/while control flow in plain Python."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31844418c3a3884a082d24b4c0f1d764099194d7490a33c3b4e96ca73ef41422",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 262,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L262-L262"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a88e569228fd1c57ca9f7d2c868928a109bb9ad7462b93d18a74a4e3d553157"
+      ],
+      "text": "The base install ships a zero-dependency local memory backend storing data under .openrath/memory/ with lexical BM25 recall, optional embeddings, and OpenViking as an optional external backend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6db68cdcf5b34a58d1f53f3a04071a9c48a45f1162deccfc420c66a24a997b0",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 276,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L272-L276"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_123618e4dbf374ca3348e0b5bde0778d1b291315379193f342e2df6a9b9607bb"
+      ],
+      "text": "Agent memory APIs include memory= binding at construction, remember_memory, recall_memory, commit_memory, and commit_on_forward=True for automatic commits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e95c12ebf221e044c86c9e88c869045b330a658c505877b799cb53e830883f1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 80,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L73-L80"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 62,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L59-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_687f20e0d1de64c1493d5920759d7db0375a34147fa85f47f0532d0dc7d98acf",
+        "slc_fe35cfa723ed4eabdf6da28f4777be7a45e18ae6fb9bcb83781e37299ef6d728"
+      ],
+      "text": "v2.0.0 adds a durable production layer: @step/@router boundaries compile to immutable plans; Runs, Events, and Checkpoints survive process and worker restarts, with leases, fencing, retries, and resumable queues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a950178b278ee9d18014302a270ca3c6d4b51880d7d4a6088e9066b3efd07f7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 80,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L73-L80"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 101,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L97-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_687f20e0d1de64c1493d5920759d7db0375a34147fa85f47f0532d0dc7d98acf",
+        "slc_bfc87d6c805eccfaabd345378e88237943e422293caeae4505ff6d753d4c3867"
+      ],
+      "text": "The production data plane uses PostgreSQL as source of truth, Redis for signaling acceleration, and S3-compatible artifact storage; the server/postgres extra installs via pip with openrath-migrate for schema migration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc51bb8c513d4cb9cf1120639ce7323b7cf3d265a68b8d419d4de3e721849bf6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 106,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L103-L106"
+        },
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 80,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L73-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_049eefc979591987510d0eb54f106e53ef78caf96b4587d30d5492aaf8445984",
+        "slc_687f20e0d1de64c1493d5920759d7db0375a34147fa85f47f0532d0dc7d98acf"
+      ],
+      "text": "Agent Server tokens carry explicit action grants, object access is tenant/project scoped, runtime identities need no DDL privileges, and an Effect Ledger stops ambiguous non-idempotent effects in NEEDS_REVIEW rather than replaying them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3026dac26635880504341eefcd0002bf4313ac5a9108b68e5c4a278a5c5dc412",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 115,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L108-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7fa4898994f2c7ddaefacbb1791ebe2f583755231a5f58cfe698ff45cdff43fa"
+      ],
+      "text": "The Agent Server HTTP surface is explicitly labeled Beta, and v1 JSONL imports are historical records rather than resumable active Runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa38937715b490a22fcdeaf2587b1bd5715f19976b50cb48cf360a275894066c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+          "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+          "line_end": 256,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "rath-team/openrath",
+          "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md#L256-L256"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5095cf5fd347c0ca54735d3327eab194e35ff902c45932cf32b74dfcf7f7e186"
+      ],
+      "text": "The local sandbox backend is always available and runs file, command, and code tools against the host workspace; an optional opensandbox backend connects the same tool layer to a containerized runtime, and sessions retain sandbox ownership across tool calls."
+    }
+  ],
+  "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 400,
+        "path": "README.md",
+        "size": 19629
+      },
+      {
+        "lines": 113,
+        "path": "CONTRIBUTING.md",
+        "size": 4713
+      },
+      {
+        "lines": 393,
+        "path": "README_zh.md",
+        "size": 18986
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 464,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_70d41f376219529eabd14780b5ee8152",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/rath-team/openrath/82819467b001896c8b22f98ba99f1634c78b0cfc/5bcf2c869c8a34af/manifest.json",
+  "package_id": "pkg_6472baf1ae35b64e667f8b89478b7936cc3e22172cb17abd182c515728964bc9",
+  "repo": "rath-team/openrath",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6867841a91a548971ce80d5fae2e303030c0354799244efcfecf507de2347aa9",
+  "snapshot_id": "5bcf2c869c8a34af",
+  "sources": [
+    {
+      "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+      "git_sha": "6db8d61b4b49a63dc93a9a28136d595899abf9b0",
+      "lines": 113,
+      "path": "CONTRIBUTING.md",
+      "repository": "rath-team/openrath",
+      "sha256": "cf5d5d1b2e3b27c161e614739e4a75e88ee81a0e7a60809de9e13db50c731369",
+      "source_id": "src_6348978ebb8750ad96b3d624606dedc3",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/CONTRIBUTING.md"
+    },
+    {
+      "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+      "git_sha": "83ad6c4d31834de6757c01336afde3ac3a913f34",
+      "lines": 400,
+      "path": "README.md",
+      "repository": "rath-team/openrath",
+      "sha256": "6703156063316a46614963a8aa25b86da3b433f79009e39e0d1360fc1504ad0d",
+      "source_id": "src_4347e70250ca59d3a74f138eeee67b26",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README.md"
+    },
+    {
+      "commit": "82819467b001896c8b22f98ba99f1634c78b0cfc",
+      "git_sha": "5e42b89b3206c93e19b9b2687bbb9499ce5aab73",
+      "lines": 393,
+      "path": "README_zh.md",
+      "repository": "rath-team/openrath",
+      "sha256": "8c8f6ccb3d33704074afd65ba6e14b9126cf78b5a1e990f0b8f8d4cd517e46dc",
+      "source_id": "src_a5ea2d8cc1a75222b5c48137bab2f139",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/Rath-Team/OpenRath/blob/82819467b001896c8b22f98ba99f1634c78b0cfc/README_zh.md"
+    }
+  ],
+  "summary": "OpenRath is a PyTorch-like multi-agent, multi-session Python framework whose core runtime objects are Session, Sandbox, Memory, Tool, Agent, Workflow, and Selector, with a v2.0.0 durable production layer (PostgreSQL/Redis/S3 data plane, Agent Server, effect ledger). Evidence is README documentation only; no code-inspected behavior is available. Evidence coverage: 161 of 218 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

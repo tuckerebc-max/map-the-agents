@@ -1,0 +1,654 @@
+{
+  "applied_operation_id": "op_ba954430b879456fa1e6599cb581e387",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_58973e8fe85ab373e8755372f95391b1ac06356fb2abea79894a7de474fb6a4a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 11,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L1-L11"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 200,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L197-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d334d4bc34e0173a5eb9ae1f0c24732cc321816c914c98c1541cd7dde167b13",
+        "slc_a7a4190c88eaf20cc7ce3f8e7a6d4989ffd86b3893536afe23ffc430732cb93a"
+      ],
+      "text": "Construct is a single Rust binary that includes a TUI, control CLI, daemon, ACP stdio server, an internal MCP bridge, and harness adapters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_161bcf4eddb511af5b2f7ff00ae51ed2c69e4692e7f4292ab68abd5b64b771ab",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 32,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L25-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5019dc8519656fe93bd8aac6f4a642b2d54df36013a634e5c652b75d06c8c54f"
+      ],
+      "text": "Sessions live in the daemon rather than the terminal, so SSH drops or laptop sleep do not stop agents, and users can reattach with scrollback intact."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_127af993f42400a88dd4141a77e2e2c5e02f31dad4eed105f7fe14e6e3dcd847",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 32,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L25-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5019dc8519656fe93bd8aac6f4a642b2d54df36013a634e5c652b75d06c8c54f"
+      ],
+      "text": "Lineage lets sessions branch like ideas: a session can be forked for a parallel attempt, including cross-harness forks, and results merged back."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4d9c60a321fbb971b5ef835cfab111699ffb331093beebdc2ad24b6dccb01067",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 59,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L57-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c3aab37459df30d26170e1062715c9073d5313d3daa2e8a8692265e8741e6d70"
+      ],
+      "text": "The harness adapter protocol uses separate adapter processes speaking JSON-RPC over stdio, so new tools can plug in without changing the daemon."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8120fae9c74cc2c013fd43d002e3f8705a2e2fa1653f571606615604cd03424",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 177,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L176-L177"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 185,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L183-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37bfeef7a41808e825af1ee5683b8dd3b2a6671a02b264ab7ce1c7af1f1fb91e",
+        "slc_8afc62305931b15721880b7364c6e1b001a992f664dd55d093631e100b73edac"
+      ],
+      "text": "`construct acp` runs an Agent Client Protocol stdio server that auto-starts the daemon if needed and maps ACP session lifecycle calls onto daemon sessions, with --harness/--model/--cwd defaults."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_017faa0cbaaf43ee23a1d3ec997a9dfb42a1d566b7437d275029ac48a5b64949",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 50,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L39-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96494452e8e6dec1c0dd7b7b4045811b4a369f67840b09b11ed6b58d0039cdb9"
+      ],
+      "text": "Every session gets construct's MCP tools, letting any harness spawn subagents, send them input, and read their output for agent-to-agent orchestration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f781504c28d792a98b1db39c555896954a53e7c1415b1f8ae0f0e1642040448f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 110,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L108-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c565343822b0150417b3ec86ada54fd336c64731d2359b3f4f78a2ce2fce2eab"
+      ],
+      "text": "The TUI supports `?` for help and `M-x` for a command palette, and users can create sessions, switch agents, send input, inspect diffs, and interrupt work from it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02011da69bbf74c81888bbae3faca43846633aa9a8c78a4f06a1e71fb4cdc6c2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 81,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L69-L81"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 67,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L65-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88df3751d9ac69b4d42a66c8f4f8e6cd1eaa8b0d7c47a2d1ce122c0a3118a5a4",
+        "slc_9e84ded9781e976114b062dde1cb89b97fd4fd982292c206bdbde2413ff24b8f"
+      ],
+      "text": "Construct wraps CLIs already on the machine; users must install and authenticate harnesses such as codex, claude, opencode, agy, grok, muse, and prime-agent, while smith is built in."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ffc63cbc0879acdda1390af2392c9e6e1b71bf70bc50be7b539ca1d18fd655e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 149,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L143-L149"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 141,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L140-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0213b0f5dbee8e4c6d8abeec3e99821c1543d056cfc6b52a476655e676287052",
+        "slc_156ed70d4ffcce236a51593727dfbd8e1333ac7318a0f9ab575b242a6df16b10"
+      ],
+      "text": "The daemon owns sessions, persists state, and exposes the local IPC socket used by clients; lifecycle helpers include daemon start/stop/restart with session-safe stop variants."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc9074d29ede2832838747342a54e50e667e6b6505a9de115bab1a05c57661bd",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 106,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L104-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5dc05abab4cafa9e7687226d14d973b8b1a2e187b1141ab2a5e79688fb9668e7"
+      ],
+      "text": "Running `construct` auto-starts a background daemon and attaches if none is running; this can be disabled with CONSTRUCT_NO_AUTOSTART=1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1eca237c3520f8342d800282c4ad374bc38ecc2dcb9c110ec69fa8c2f95fcd42",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+          "line_end": 55,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md#L52-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_260f5d843d365e4fec4d3f6e8c83fb396c289887de9f56f6168cc535232351da"
+      ],
+      "text": "`/remote-control` opens a browser-accessible web client with a QR code so users can connect from a phone without service signup or setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99974a2a443b6b6850c621fc6d6f9fb06f9e4d2eaae7bfa6339ae7b264581f50",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L5-L5"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 18,
+          "line_start": 7,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L7-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_304b07241c903bbe986e385eaca5e1d1b693b26de4b5f109c008e954e47b53d1",
+        "slc_4ff561b7d3780172c71c64b72247155d4dff066d7fcefebe6dff4004ef4c2039"
+      ],
+      "text": "Repository development practice: all code changes go through a branch, git worktree under .claude/worktrees, and a PR, with no direct pushes to main and no Co-Authored-By: Claude trailers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a5e62f4808b3113dc67e6a6075c4fa9f7ad9d2deaad9917c09277b780015fd2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L117-L120"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 110,
+          "line_start": 106,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L106-L110"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L104-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05ac4f6344310bf919bee597499d30792fbe968e8c130d29f86b190dad951961",
+        "slc_4d9e8472b17264a943983b579f8fab4cb71122a8e3ba6d07165030abc14adfe7",
+        "slc_c3c67b65a8fa67a71c126b7e99038fd8ae23f2d795055ca79e44096e530ea2a9"
+      ],
+      "text": "Repository development practice: durable design decisions are recorded as focused spec files in specs/ named NNNN-title-kebab-case.md with status, date, area, scope, decision, reason, and consequences sections."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_296548d6b664097c80f0efa5d78661e0d361c1ec3a7ccf9f814c56a2429c03af",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 90,
+          "line_start": 88,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L88-L90"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 34,
+          "line_start": 24,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L24-L34"
+        },
+        {
+          "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+          "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "AGENTS.md",
+          "repository": "construct-worlds/construct",
+          "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5138899664a37c08718924d0a4a70fbd31e0d352992d4f3ddaa49f577297815a",
+        "slc_621d2437e679521b8e6d2f0a19dec67bd2209236b665b825db9370230362f465",
+        "slc_ab3a2f7456d68b18144d822c8f7d23457ba3ea5ceb8ca67c55df570e058868a3"
+      ],
+      "text": "Repository development practice: TUI demo clips are recorded deterministically with vhs against isolated per-recording daemon state directories, then verified with a midpoint frame before attaching to the PR."
+    }
+  ],
+  "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 245,
+        "path": "README.md",
+        "size": 11580
+      },
+      {
+        "lines": 160,
+        "path": "AGENTS.md",
+        "size": 13158
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 11
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4419
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "reason": "file-budget",
+        "size": 2936
+      },
+      {
+        "path": "gallery.md",
+        "reason": "file-budget",
+        "size": 438
+      },
+      {
+        "path": "docs/RELEASING.md",
+        "reason": "file-budget",
+        "size": 4668
+      },
+      {
+        "path": "docs/adding-a-harness.md",
+        "reason": "file-budget",
+        "size": 21060
+      },
+      {
+        "path": "docs/architecture.md",
+        "reason": "file-budget",
+        "size": 6606
+      },
+      {
+        "path": "docs/configuration.md",
+        "reason": "file-budget",
+        "size": 7834
+      },
+      {
+        "path": "docs/creator-micro.md",
+        "reason": "file-budget",
+        "size": 3726
+      },
+      {
+        "path": "docs/generative-widgets.md",
+        "reason": "file-budget",
+        "size": 4097
+      },
+      {
+        "path": "docs/harnesses.md",
+        "reason": "file-budget",
+        "size": 17635
+      },
+      {
+        "path": "docs/memory.md",
+        "reason": "file-budget",
+        "size": 1045
+      },
+      {
+        "path": "docs/midi.md",
+        "reason": "file-budget",
+        "size": 14647
+      },
+      {
+        "path": "docs/model-routing.md",
+        "reason": "file-budget",
+        "size": 15544
+      },
+      {
+        "path": "docs/operators.md",
+        "reason": "file-budget",
+        "size": 11270
+      },
+      {
+        "path": "docs/playbook-verbs.md",
+        "reason": "file-budget",
+        "size": 7234
+      },
+      {
+        "path": "docs/playbook.md",
+        "reason": "file-budget",
+        "size": 8764
+      },
+      {
+        "path": "docs/plugins.md",
+        "reason": "file-budget",
+        "size": 7895
+      },
+      {
+        "path": "docs/remote-control.md",
+        "reason": "file-budget",
+        "size": 5270
+      },
+      {
+        "path": "docs/smith.md",
+        "reason": "file-budget",
+        "size": 23961
+      },
+      {
+        "path": "docs/unified-tool-layer.md",
+        "reason": "file-budget",
+        "size": 6592
+      }
+    ],
+    "omitted_count": 20,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 500,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 23,
+      "complete": false,
+      "omitted": 20,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_f3bc3d80bad05d5d8c71a0de4efb449a",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/construct-worlds/construct/cf75b7398c784566b7003d7f63253be1b88d9186/c959755ce3b13c69/manifest.json",
+  "package_id": "pkg_cccb22dafc7e58d407e336e25ae04fee97c8d4041035d1d6692da94e09c5e5a7",
+  "repo": "construct-worlds/construct",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a748b9a82744993e60b4b62caa4a1ba9bdbbdefe3accb3870e8f58405eefc904",
+  "snapshot_id": "c959755ce3b13c69",
+  "sources": [
+    {
+      "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+      "git_sha": "d56eaa654f57e3b21a9b7dbb98c7b1c75a70b41e",
+      "lines": 160,
+      "path": "AGENTS.md",
+      "repository": "construct-worlds/construct",
+      "sha256": "a1360e18f5a85ef883f25a44a79bff49135f7fb9618afd5367574ab8b0279963",
+      "source_id": "src_5099209dfb4b55099db1adde99c6b52f",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/AGENTS.md"
+    },
+    {
+      "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+      "git_sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "construct-worlds/construct",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "source_id": "src_e449fb17ea69528b97f378056ff242e8",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/CLAUDE.md"
+    },
+    {
+      "commit": "cf75b7398c784566b7003d7f63253be1b88d9186",
+      "git_sha": "9da83576bb5981cee20d999f39273413304372e2",
+      "lines": 245,
+      "path": "README.md",
+      "repository": "construct-worlds/construct",
+      "sha256": "82636f9b502b5d41b4c7a2a52bdc112edb22cbb2021f72172c46a330c66bc80e",
+      "source_id": "src_7a0a58936ecc5662b59e0741d37b912f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/construct-worlds/construct/blob/cf75b7398c784566b7003d7f63253be1b88d9186/README.md"
+    }
+  ],
+  "summary": "The snapshot shows construct, a Rust terminal-native agent fleet manager with a daemon/client split, multi-harness adapters, ACP/MCP interfaces, and contributor workflow rules in AGENTS.md. No evaluation or benchmark evidence is present.",
+  "superseded_claim_ids": []
+}

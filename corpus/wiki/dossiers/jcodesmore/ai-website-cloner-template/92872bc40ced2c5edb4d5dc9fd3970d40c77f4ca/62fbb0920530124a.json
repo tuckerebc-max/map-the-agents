@@ -1,0 +1,563 @@
+{
+  "applied_operation_id": "op_97a8bb0a8ac44811b2143f78ac9057d9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f9bcac516bed6ffbb4c6aca94e675ff63fe7aa921ca25898c2a16be956caa7a",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L117-L117"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 131,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L127-L131"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 125,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L119-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1da1aec8269ed0db3dd334dc851a87ede689861acf604fe2dc8bef929e7e3bf2",
+        "slc_37c3d5b58a4c1d6efea879a526afe03bc57ed51012fa8dcc102e0b95b24919ca",
+        "slc_6099eb46a73b37c38a48a21c0a10c1c3d89712b884e0269de3116c96d25adfc3"
+      ],
+      "text": "The template provides a /clone-website skill that runs a multi-phase pipeline: reconnaissance, foundation, component specs, parallel build, and assembly with QA."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf5528087e0968b4b4128db77023e9ef928106830b2a712126fd204ab690189a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 131,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L127-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37c3d5b58a4c1d6efea879a526afe03bc57ed51012fa8dcc102e0b95b24919ca"
+      ],
+      "text": "During the parallel-build phase, builder agents are dispatched in git worktrees, one per section or component, and later merged during assembly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a32e741f42fa393f8ee16b7c0e80be316102b78fcb1b07d9e552302a2887f94",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L133-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e11f8a543600254eca00340e1119b29b3346b6f418042afbe7ef9159479397c"
+      ],
+      "text": "Each builder agent receives the full component specification inline, including exact getComputedStyle() values, interaction models, multi-state content, breakpoints, and asset paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_546cb1170bc17b24351ba8bd52a70aad077cc8b1814c020cc3ec909903d228a9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L83-L83"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 81,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L69-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55aeeead3e6f75f8f312678ec360839021041d248a6131a15947d5cf537b2c17",
+        "slc_e329abf6d17bc916c93915340f7317b72a6c5c9f91a6e31acf7b9aa90ecc9489"
+      ],
+      "text": "The skill is invoked as /clone-website <target-url1> [<target-url2> ...]; clients that activate skills via natural language accept a phrasing like 'Clone <target-url> using the clone-website workflow'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff33e314ee2f04f198b39a38cd20eedeaef7e109616e9f488193793f2905eaa2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "d6120607c60919bccbd598c3bc8f6a9e37eef1ad",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "AGENTS.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/AGENTS.md#L17-L21"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 113,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L110-L113"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 106,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L105-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b530f22d57acb4092fa682cc5010d40070d0dff3317adb84f2873a6a29d1098",
+        "slc_bacc5f018f0f1dc3b5d9d0e0222cbb0e282eee20ac4d482143374aec93d9eb7e",
+        "slc_c172dfbc91abc5c3461846b478351f9040c60bd226d06b3165ff8cc67dc90f8a"
+      ],
+      "text": "The scaffolded stack is Next.js 16 (App Router, React 19, TypeScript strict), shadcn/ui with Radix primitives, Tailwind CSS v4 with oklch tokens, and Lucide React icons; Node.js 24+ is a prerequisite."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc5140e0b7097647a709261cee312af234132f18ada63181e6a0cd041829198d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 196,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L196-L196"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 203,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L203-L203"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "GEMINI.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/GEMINI.md#L1-L1"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 201,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L198-L201"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 175,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L149-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fb64f51854597947875af1dbd2a571dee35bb8ff63fa34da3d1d1c7adc2bf00",
+        "slc_8a5b2597ed71af43a515f2877fbf76220842de9c07ed4a8554b9db8b31fda183",
+        "slc_8c391f20099210993d00452e51cddac9f1dadc0fc6bef3234e24b4c87415da5e",
+        "slc_a2a406ece6381b9fa00b5b5bf047fe6a0106ea761e1eacf47b2d7e0a0f201b34",
+        "slc_c76a184ed30f2ff30efc977edaaf7e8d0169a32db7b7e8f93759b028115c90e9"
+      ],
+      "text": "Repository development practice: AGENTS.md is the single source of truth for agent instructions; scripts/sync-agent-rules.sh and scripts/sync-skills.mjs regenerate platform-specific copies, and CLAUDE.md/GEMINI.md import AGENTS.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7713799186334ef82c44617c7cc8c305a93dce9fdbad4e101d9bb8c001d9209c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 192,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L189-L192"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 185,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L179-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7bf4b00380cbed31b0645f21751ba84a54ecd121f738c1d67d36c681a88b4c37",
+        "slc_9341981dd1d6010c20478f3c9709012eced4af05d0bdc0d10c4c7a915259dad1"
+      ],
+      "text": "Repository development practice: contributors run npm run dev/build/lint/typecheck/check, and Docker users can run the app or dev mode on port 3001 via docker compose."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3d87e2b9002e1a8ddce800c4c44f532b2ee04a293bcdde7dc49b558e401f9a7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "d6120607c60919bccbd598c3bc8f6a9e37eef1ad",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "AGENTS.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/AGENTS.md#L5-L5"
+        },
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "d6120607c60919bccbd598c3bc8f6a9e37eef1ad",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "AGENTS.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/AGENTS.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b26ee8617ab5fcbfbb522ebe801acaf4c4f7fd38de95dcc7596ecbd70ac5c90",
+        "slc_e5a284d56e8f3b03a61bf4a6361e8c9e81b62f7e5bfb6407cb324fe4466834b7"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs agents that this Next.js version has breaking changes and to read bundled docs in node_modules/next/dist/docs/ before writing code; the block is re-added by next dev."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9fea65200e655fec4a48fc9ec744f63253b3794aad7c70d19cf5b428759944d7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "d6120607c60919bccbd598c3bc8f6a9e37eef1ad",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "AGENTS.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/AGENTS.md#L31-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c64fa7a79b1b06ecf981e5bcbeff8168065001d9b99a7bb650658de2cc569a9a"
+      ],
+      "text": "Repository development practice: code style rules include TypeScript strict with no any, named exports, Tailwind utility classes without inline styles, 2-space indentation, and mobile-first responsive design."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ccf2c19cdbe8db5522c36985f55b0114a5d9e62cf22940674ba50f54392f894",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 145,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L143-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cdee0cf2cf6761fb35d354441b50c875aa6e254bb96e3073bac03d5b5338a646"
+      ],
+      "text": "The project explicitly states it must not be used for phishing, impersonation, passing off others' designs, or violating sites' terms of service regarding scraping or reproduction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79ef548ad5a9fdd5b006f3fada7ff3124eb36286ba116ffe0b7b15ddbf94410f",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+          "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+          "line_end": 139,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "jcodesmore/ai-website-cloner-template",
+          "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md#L137-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd58d0f6165a44a88c4d0557229ab3c00ffd5a3007c07589b1709523a521b2e8"
+      ],
+      "text": "Stated use cases are migrating sites from WordPress/Webflow/Squarespace to Next.js, recovering lost source for live sites, and learning how production sites implement layouts and animations."
+    }
+  ],
+  "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 214,
+        "path": "README.md",
+        "size": 11140
+      },
+      {
+        "lines": 1,
+        "path": "GEMINI.md",
+        "size": 11
+      },
+      {
+        "lines": 196,
+        "path": "README.ja.md",
+        "size": 12543
+      },
+      {
+        "lines": 196,
+        "path": "README.zh-CN.md",
+        "size": 9979
+      },
+      {
+        "lines": 80,
+        "path": "docs/research/INSPECTION_GUIDE.md",
+        "size": 3724
+      },
+      {
+        "lines": 69,
+        "path": "AGENTS.md",
+        "size": 3389
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 5668
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 11
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3122
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1998
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 73,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 4,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_50a14a13a329514c80b78ff6565d3f68",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jcodesmore/ai-website-cloner-template/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/62fbb0920530124a/manifest.json",
+  "package_id": "pkg_a8330d89b4967bf8f0d967540eae38f11198b6582b0038caa8513a8b2ab5cb25",
+  "repo": "jcodesmore/ai-website-cloner-template",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7b1c2787acfde500c6328446543509436fc363c183a39547f79546887b4f0570",
+  "snapshot_id": "62fbb0920530124a",
+  "sources": [
+    {
+      "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+      "git_sha": "d6120607c60919bccbd598c3bc8f6a9e37eef1ad",
+      "lines": 69,
+      "path": "AGENTS.md",
+      "repository": "jcodesmore/ai-website-cloner-template",
+      "sha256": "3063a51d18ac05c8f7860f66e376f724c85ef641429ec78bd6ada2a6d0920136",
+      "source_id": "src_7abeaba2fecd5942b36780f32ec2a630",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/AGENTS.md"
+    },
+    {
+      "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+      "git_sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+      "lines": 1,
+      "path": "GEMINI.md",
+      "repository": "jcodesmore/ai-website-cloner-template",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "source_id": "src_45908de924b650cbbeb85de919db319d",
+      "stored": "gemini.md-399080f41ccf.md",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/GEMINI.md"
+    },
+    {
+      "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+      "git_sha": "eb05bbb06410965bbc403a1b296b2b7f2d9db5e2",
+      "lines": 196,
+      "path": "README.ja.md",
+      "repository": "jcodesmore/ai-website-cloner-template",
+      "sha256": "4c246b9902ceca5277d8518b94a520f8559e3f1a023a86f2689246e266903cbc",
+      "source_id": "src_c65c8d7719ac505794863583401748a7",
+      "stored": "readme.ja.md-b3fc642ee979.md",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.ja.md"
+    },
+    {
+      "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+      "git_sha": "2aa0acadd651df08a6548928cd726065aaf9047f",
+      "lines": 214,
+      "path": "README.md",
+      "repository": "jcodesmore/ai-website-cloner-template",
+      "sha256": "078d43e603c1e5b40f9faa72b0677e098917f8242df451cdecf35214ab084365",
+      "source_id": "src_0e69bacd42b955efa1ea7e508154f3a6",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.md"
+    },
+    {
+      "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+      "git_sha": "297907e56d6ddf65c1bccbf336b2ae0b3ed29f32",
+      "lines": 196,
+      "path": "README.zh-CN.md",
+      "repository": "jcodesmore/ai-website-cloner-template",
+      "sha256": "5bf31f51f6ae96f08916e6a594178107dd6bfdd4b33884778feae08d82fedee0",
+      "source_id": "src_0a39feb5a0dc5805abf23265b6086cd7",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/README.zh-CN.md"
+    },
+    {
+      "commit": "92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca",
+      "git_sha": "88afaf287ab3c9ced6be5fb06e5686a01a0097dd",
+      "lines": 80,
+      "path": "docs/research/INSPECTION_GUIDE.md",
+      "repository": "jcodesmore/ai-website-cloner-template",
+      "sha256": "202a9e02411056ed1894f1c9c647443913e8e5a68b600adc28fbda7cc481b5d5",
+      "source_id": "src_04baa0cdcc3054849bf0bac7a88858ed",
+      "stored": "inspection_guide.md-15ec1762f4cb.md",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template/blob/92872bc40ced2c5edb4d5dc9fd3970d40c77f4ca/docs/research/INSPECTION_GUIDE.md"
+    }
+  ],
+  "summary": "The template provides a /clone-website skill that runs a multi-phase pipeline: reconnaissance, foundation, component specs, parallel build, and assembly with QA. During the parallel-build phase, builder agents are dispatched in git worktrees, one per section or component, and later merged during assembly. Evidence coverage: 141 of 142 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

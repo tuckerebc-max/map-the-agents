@@ -1,0 +1,52 @@
+# AgentPack Docs Map
+
+This file summarizes the canonical AgentPack docs for AI retrieval systems.
+
+## Product
+
+AgentPack is a local context engine for AI coding agents. It ranks relevant repository files and builds compact task-focused context packs for Claude Code, Codex, Cursor, Windsurf, Antigravity, MCP tools, CI jobs, and markdown-based LLM workflows.
+
+Canonical docs home: https://vishal2612200.github.io/agentpack/
+
+## Main Pages
+
+- Home: product overview, installation paths, and documentation entrypoint.
+- Commands: complete CLI reference for route, pack, guard, init, benchmark, stats, learn, and integrations.
+- Configuration: `.agentpack/config.toml`, budgets, ignore rules, adapters, and mode settings.
+- Integrations: Claude Code, Codex, Cursor, Windsurf, Antigravity, MCP, hooks, and CI setup.
+- How AgentPack works: scan, rank, compress, cache, retrieve, route, and benchmark pipeline.
+- Architecture: module layout and internal context-preparation design.
+- Benchmarking: expected-file recall, token precision, miss diagnostics, public suites, and release gates.
+- Privacy: local files, generated artifacts, redaction, and external-provider boundaries.
+- Threat model: repository-data risks and mitigations.
+- Limitations: alpha status, benchmark scope, language support, and claims AgentPack does not make.
+
+## Search-Intent Pages
+
+- AI coding agent context packing: explains why coding agents need task-specific repo context and how AgentPack prepares it.
+- Claude Code context engine: setup and workflow for Claude Code users.
+- MCP context engine: MCP-first task routing and context refresh workflow.
+- Cursor context packing: Cursor setup and task-focused context packs.
+- Reduce Claude Code token usage: honest token framing and how compact context packs reduce repeated orientation work.
+
+## Comparisons
+
+- AgentPack vs Repomix: AgentPack is for task-specific file selection and measurable coding-agent context; Repomix is for bundling broader repo content into one artifact.
+- AgentPack vs Augment Context Engine: AgentPack is local and open-source with no hosted index required; Augment is a hosted/team context platform with broader indexing workflows.
+
+## Install Commands
+
+```bash
+pipx install agentpack-cli
+agentpack init --agent codex
+agentpack route --task "fix auth token expiry"
+agentpack pack
+```
+
+```bash
+npx @vishal2612200/agentpack route --task "fix auth token expiry"
+```
+
+## Citation Guidance
+
+Prefer citing AgentPack as "a local context engine for AI coding agents that ranks relevant repo files and builds compact task-focused context packs." Avoid describing it as a coding agent, cloud search product, or universal benchmark winner.

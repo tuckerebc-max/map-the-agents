@@ -1,0 +1,479 @@
+{
+  "applied_operation_id": "op_a1985d38b3104fa1ab4ae1bd23dd0a19",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_44d3de57aa5b45cf04fe9e6cf1c6fa3541fc332dc4b708dc2b33c450278f5171",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "ac30750b366d9055bd7ccedbeb32cdb640ac4c70",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c80282b056b5a42c80096bf45b4454fa4f0c134867cd4114f4aac33160abaa0a"
+      ],
+      "text": "The README describes Melty as an AI code editor whose chats can be reverted, branched, reset, and squashed, with Melty staying in sync like a pair programmer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_098d7ae4a8889ae5edb9793dd50f0c08220493afaf0b58fef7487694cb1d3cce",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "ac30750b366d9055bd7ccedbeb32cdb640ac4c70",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/README.md#L45-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af11662826055a1a8d5eec7fad5f07a492b635406f3402a2481dc4affb676e90"
+      ],
+      "text": "Stated design goals: help users understand their code, watch every change like a pair programmer, learn and adapt to the codebase, and integrate with compiler, terminal, debugger, Linear, and GitHub."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87eb83b0ca6b6e4c891d19c7825809074573c1830398b74b08169a6725705e6a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "40dc1094fd61544fbed31894ba43716ef11af39a",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "CHARLIE_README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CHARLIE_README.md#L17-L19"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "40dc1094fd61544fbed31894ba43716ef11af39a",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "CHARLIE_README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CHARLIE_README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35781807351e81a4b2bd34999400ec9c68476efcf06408d33f9c513715305a10",
+        "slc_68d1503df7cbd7c16ba65eb7701728edb96e778e2443d4adb84d5b17321a4284"
+      ],
+      "text": "A webview contract documents calling humanXYZ() on user actions, then startBotTurn() to return control, with stopBotTurn() as needed; task updates flow via updateTask, and an endBotTurn notification is planned but not yet needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_063fe1d5a089e9181f2bf2eb75e42222e81b0a22c20d0cfea074543feab4b13c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L37-L37"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 33,
+          "line_start": 32,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L32-L33"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L35-L35"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L25-L25"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18b9f0ab79bf880ace5bd20d0292308d4a440dabd05031424f05928b3289346c",
+        "slc_2a863ad1af834bcc55cf379d599f7575a0cfea4b3fbd6bfde1795b66751f085a",
+        "slc_7740c3f5af7af1c4ee8f68ab00165b07885ffeafcb51e1417651f63d16ec8a2f",
+        "slc_cd0ffe176cd14cd37a3b653e8ce9a8bb053d7d9cca7b23103cc9fabe64e7e4cd",
+        "slc_fb704a8c7a658fd7bf32de34b5c91b42b872190eb2f8d256b35c207c6122b529"
+      ],
+      "text": "Repository development practice: local development involves cloning the repo, running yarn run melty:install and yarn run melty:extension-dev, then the default debug configuration; changes to extensions/spectacular are watched and require reloading the editor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c6c88762fc3550cd07c5b1e122cb640ba1acdf8d7f268e8c9f18fe5f3f17cbce",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 17,
+          "line_start": 15,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L15-L17"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c65480a2cc681129556f057d185ccfa0da8ae0ccc0efad3ed67ff5adaafae56b",
+        "slc_de76a42674c2ecdd10a6f70ef1479200f1d4028b56f72655b6be1d3fc8e10b85"
+      ],
+      "text": "Repository development practice: contributors are asked to reach out before adding features, and bug reports should include the Melty version, operating system, and Dev Tools console errors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f931f884ba739f10f429abf787110e4b23bfff55f4501774d530f56aa5c7bee5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "40dc1094fd61544fbed31894ba43716ef11af39a",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "CHARLIE_README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CHARLIE_README.md#L11-L11"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "40dc1094fd61544fbed31894ba43716ef11af39a",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "CHARLIE_README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CHARLIE_README.md#L7-L9"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "40dc1094fd61544fbed31894ba43716ef11af39a",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "CHARLIE_README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CHARLIE_README.md#L29-L29"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "40dc1094fd61544fbed31894ba43716ef11af39a",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "CHARLIE_README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CHARLIE_README.md#L33-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_665768ddfa4b5f63046f591b5f5143d30daf8ae84b1dad542d8c8645f1d7aef1",
+        "slc_9805a1913bf741b4625c598c2924acd008deeca0324f65026b3334e46ed1c4f1",
+        "slc_d05278e936feaef1ce282d899aff41431345ef56fe2e50d3ebab308a65c0247c",
+        "slc_ee35aa4db6d12af6cdf2fc3a6130d3d21a9b606a79351cadecf17e429d5dbbe9"
+      ],
+      "text": "Repository development practice: a CHARLIE_README gives React conventions for RPC calls (wrap in useCallback, avoid putting rpcClient in dependency arrays) and troubleshooting tips such as restarting VS Code or running yarn watch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cff194588240d8463d1d611bc7eeafbd6d70fa0c10020c40dfb009e807ba4209",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L41-L41"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+          "line_end": 45,
+          "line_start": 43,
+          "path": "CONTRIBUTING.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md#L43-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a6b07ed5598c9a8c9b9e2573ffaaf48b7c9b365ee51c956c32b7fdb0d25a511",
+        "slc_811928ee9fa2041fe2aee694792c0f8415584870d1a8e090ebf1660102684e92"
+      ],
+      "text": "Repository development practice: contributors may need to set the melty.anthropicApiKey setting via preferences, indicating the product uses Claude."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1794d4d21e930c5113cd14c004fd40bea290d549c525a1e02da4469bda578aaa",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "ac30750b366d9055bd7ccedbeb32cdb640ac4c70",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/README.md#L5-L5"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "ac30750b366d9055bd7ccedbeb32cdb640ac4c70",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/README.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28c0409e366c3587952035c6b7635ba78528fa52be115f4061169a3d596a0497",
+        "slc_d1454e1b6a31f010cc9cb59cf5b627ed5ecde4dcaf3c022d26062179982f87ca"
+      ],
+      "text": "The README indicates version 0.2 was not yet generally released and access was gated through a waitlist and early-access signup form."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_788afe073f25e59ef0a4a3d25ea3dac332328e26af2ed6394c83be81aaefaa7b",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "0ac28ee234d232ac0691f39cebf95bf6b2a763a5",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "LICENSE.txt",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/LICENSE.txt#L3-L3"
+        },
+        {
+          "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+          "git_sha": "0ac28ee234d232ac0691f39cebf95bf6b2a763a5",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "LICENSE.txt",
+          "repository": "meltylabs/melty",
+          "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/LICENSE.txt#L1-L1"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8567339832fdfb033f73bfa54aac026f90915a9746e37f2fb6deb52a77d61c2e",
+        "slc_9b172fc5b540f08f0533ec92e38564bace23c0c6157376b121ef1050f4c300a5"
+      ],
+      "text": "The repository is licensed under the MIT License, with the license text carrying a Microsoft Corporation copyright notice."
+    }
+  ],
+  "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 58,
+        "path": "README.md",
+        "size": 2886
+      },
+      {
+        "lines": 33,
+        "path": "CHARLIE_README.md",
+        "size": 1377
+      },
+      {
+        "lines": 45,
+        "path": "CONTRIBUTING.md",
+        "size": 1509
+      },
+      {
+        "lines": 21,
+        "path": "LICENSE.txt",
+        "size": 1088
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 7634,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_19c760f677e057dda98fc4ed06fd7881",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/meltylabs/melty/3b7046ff22539168ae480918445ad704bdd4d5c4/53899bace69fad19/manifest.json",
+  "package_id": "pkg_4d70cde692c64c242c456baf4e8e28beae8659f42b7feaa4f303f4502be0a234",
+  "repo": "meltylabs/melty",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c3740c866e78ee183aaaff29809d895cf707362c4c72de7098d1c3a2c7b3f193",
+  "snapshot_id": "53899bace69fad19",
+  "sources": [
+    {
+      "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+      "git_sha": "40dc1094fd61544fbed31894ba43716ef11af39a",
+      "lines": 33,
+      "path": "CHARLIE_README.md",
+      "repository": "meltylabs/melty",
+      "sha256": "d76fb52e5c75763063683d586878a6057f90652f57ae40c79a5a83142e1a2567",
+      "source_id": "src_37cddd0447555bf38bbeab9b018b0679",
+      "stored": "charlie_readme.md-d8e4844d277a.md",
+      "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CHARLIE_README.md"
+    },
+    {
+      "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+      "git_sha": "832d45ea4a8db5f6dc4a298936c1e0cf75723e66",
+      "lines": 45,
+      "path": "CONTRIBUTING.md",
+      "repository": "meltylabs/melty",
+      "sha256": "0e116060258984620656735e2207af2e47561f758e239d69c791b7630d61a3db",
+      "source_id": "src_84ed3241a3ca5288952e6572e19d935d",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/CONTRIBUTING.md"
+    },
+    {
+      "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+      "git_sha": "0ac28ee234d232ac0691f39cebf95bf6b2a763a5",
+      "lines": 21,
+      "path": "LICENSE.txt",
+      "repository": "meltylabs/melty",
+      "sha256": "9480271317925265e806a9a196aaa33410a962fa9d4d1e248a4a5187bc8c9df9",
+      "source_id": "src_75e0fd83a0275d578856c2bc0a421cf7",
+      "stored": "license.txt-d0ed4cc3fb70.txt",
+      "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/LICENSE.txt"
+    },
+    {
+      "commit": "3b7046ff22539168ae480918445ad704bdd4d5c4",
+      "git_sha": "ac30750b366d9055bd7ccedbeb32cdb640ac4c70",
+      "lines": 58,
+      "path": "README.md",
+      "repository": "meltylabs/melty",
+      "sha256": "3724a844582ca76a1d441b1b2351bcd73d5ed24c69e2d8d06406454152f92e8d",
+      "source_id": "src_201c0ad7b13d5b7f8fa1273df24103b0",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/meltylabs/melty/blob/3b7046ff22539168ae480918445ad704bdd4d5c4/README.md"
+    }
+  ],
+  "summary": "README describes Melty as an AI code editor with chat-level git operations (revert, branch, reset, squash) and lists design goals; CHARLIE_README documents a webview contract; CONTRIBUTING gives contributor setup instructions; the repo carries an MIT license attributed to Microsoft Corporation.",
+  "superseded_claim_ids": []
+}

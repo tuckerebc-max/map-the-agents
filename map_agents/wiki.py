@@ -20,8 +20,14 @@ from . import collect, core, intake
 RCW_SCRIPT = Path(__file__).resolve().parents[1] / "vendor" / "research-corpus-wiki" / "scripts" / "rcw.py"
 WIKI_DIR, SOURCES_DIR, PACKET_DIR, PROPOSAL_DIR = "wiki", "sources", "packets", "proposals"
 SEAL_DIR, DOSSIER_DIR = "state/packets", "wiki/dossiers"  # dossiers sit outside rcw's canonical digest
+SHARD_DIR = "shards"  # partitioned per-repository kernels live under wiki/shards/<stable-hash>/, disjoint from dossiers/
+LAYOUT_FILE = "state/wiki-layout.json"
+LAYOUT_SCHEMA = "map-agents.wiki-layout/1"
+LAYOUTS = ("shared", "partitioned")
 OP_RE = re.compile(r"^op_[0-9a-f]{32}$")
 CODE_SUFFIXES = collect.SOURCE_SUFFIXES - collect.DOC_SUFFIXES - collect.RCW_SUFFIXES  # .py .ts .toml .yaml ...
+HTML_SUFFIXES = collect.HTML_SUFFIXES
+VERBATIM_FORMAT = "verbatim"  # collect.py's marker for an HTML/HTM source stored as real, line-accurate text
 PACKET_SCHEMA, DOSSIER_SCHEMA = "map-agents.packet/1", "map-agents.dossier/1"
 FACETS = ("specifications", "components", "design-choices", "workflows", "skills-patterns", "interfaces",
           "memory-state", "orchestration", "tools-permissions", "evaluation", "dependencies", "limitations", "relevance")
@@ -34,6 +40,7 @@ BOUNDS = {"max_claims": 40, "min_claim_chars": 12, "max_claim_chars": 400, "max_
           "max_slice_chars": 1500, "max_packet_bytes": 2_000_000}
 CLAIM_KEYS = {"facet", "text", "slice_ids", "kind", "basis"}
 DOSSIER_KEYS = {"schema_version", "operation_id", "repo", "commit", "snapshot_id", "base_digest", "summary", "claims"}
+COVERAGE_KEYS = {"files", "explicit_paths", "selection", "repository", "omitted", "omitted_count", "omitted_slices"}
 KERNEL_TIMEOUT = 300.0
 MAX_DOSSIER_BYTES = 2_000_000
 SCOPE_KEYS = ("population", "jurisdiction", "timeframe", "setting", "method", "instrument_status", "qualifiers")
@@ -82,6 +89,15 @@ class DossierInvalid(WikiError):
     code = 15
 
 
+class UnsafeHtmlSource(WikiError):
+    """An HTML/HTM source in this snapshot predates the verbatim-text storage fix: the pinned kernel
+    would have rendered it into reflowed visible text, so its line locators do not correspond to the
+    real GitHub source lines. Recapture the snapshot (`collect.snapshot`) before preparing a packet
+    or trusting a dossier built over it; never silently relabeled or treated as line-accurate."""
+
+    code = 20
+
+
 class KernelError(WikiError):
     """The kernel refused an operation; `rcw_code` is its stable error code."""
 
@@ -90,6 +106,19 @@ class KernelError(WikiError):
     def __init__(self, rcw_code: str, message: str) -> None:
         super().__init__(f"{rcw_code}: {message}")
         self.rcw_code = rcw_code
+
+
+def _html_storage_trusted(f: dict) -> bool:
+    """True only for an HTML/HTM snapshot file record that is BOTH marked verbatim AND actually
+    stored that way. The `format` marker alone is not proof: a snapshot record and its stored file
+    are independent -- a `stored` name can be edited or a file renamed without touching `format`, as
+    a real reproduced probe demonstrated (a fresh, correctly captured `.txt`-stored file was renamed
+    to `.html` with `snapshot.files[]`/`manifest.files[]` adjusted to match but `format: "verbatim"`
+    left untouched, and the pinned kernel still line-numbered the file's kernel-rendered visible text).
+    The deterministic storage name ensures the file reaches the kernel's literal-text parser:
+    an HTML/HTM original path must map to its expected `.txt` wrapper.
+    """
+    return f.get("format") == VERBATIM_FORMAT and f.get("stored") == collect.storage_name(f["path"])
 
 
 def _sha256(data: bytes) -> str:
@@ -201,15 +230,83 @@ def _wiki_root(root: Path) -> Path:
     return Path(root) / WIKI_DIR
 
 
-def _ensure_wiki(root: Path) -> bool:
-    """Initialize the rcw corpus once, with sources/ and wiki/ as disjoint sibling roots."""
-    wiki = _wiki_root(root)
-    if (wiki / "wiki.yaml").exists():
-        return False
-    (root / SOURCES_DIR).mkdir(parents=True, exist_ok=True)
-    rcw(wiki, "init", str(wiki), "--sources", str(root / SOURCES_DIR), "--profile", "mixed",
-        "--access", "internal", "--title", "Map the Agents evidence corpus")
-    return True
+def load_layout(root: Path) -> dict:
+    """Repo-owned, Git-tracked, versioned wiki layout config. Absent means the default shared layout.
+
+    Refuses (rather than silently orphaning evidence) when the config resolves to shared while
+    initialized partitioned kernels still exist on disk: that combination only arises from editing or
+    deleting the config after `enable_partitioned` was used, which is an unsupported downgrade.
+    """
+    root = Path(root)
+    path = root / LAYOUT_FILE
+    if not path.is_file():
+        data = {"schema_version": LAYOUT_SCHEMA, "layout": "shared"}
+    else:
+        data = _parse_object(_read_bounded(path, 4096, "wiki layout config", WikiError), "wiki layout config", WikiError)
+        if data.get("schema_version") != LAYOUT_SCHEMA or data.get("layout") not in LAYOUTS or set(data) != {"schema_version", "layout"}:
+            raise WikiError("wiki layout config is invalid or unversioned")
+    if data["layout"] == "shared":
+        shards = _wiki_root(root) / SHARD_DIR
+        if shards.is_dir() and any((p / "wiki.yaml").is_file() for p in shards.iterdir() if p.is_dir()):
+            raise WikiError("wiki layout config was downgraded to shared but partitioned kernel evidence exists; refusing")
+    return data
+
+
+def enable_partitioned(root: Path) -> dict:
+    """Opt in to the partitioned per-repository kernel layout.
+
+    Refuses (no silent migration) when the shared kernel already carries canonical claims or any
+    catalog record already has indexed dossier evidence, since those would need an explicit migration
+    this command does not perform.
+    """
+    root = Path(root)
+    with core.writer_lock(root):
+        core.init_locked(root)
+        current = load_layout(root)
+        if current["layout"] == "partitioned":
+            return {"root": str(root), "layout": "partitioned", "changed": False}
+        if (_wiki_root(root) / "wiki.yaml").exists():
+            raise WikiError("refusing to enable partitioned layout: the shared wiki kernel is already initialized")
+        for key, record in core.load_repos(root).items():
+            if record.get("status") == "distilled" or record.get("indexed_snapshot_id"):
+                raise WikiError(f"refusing to enable partitioned layout: {key} already has indexed dossier evidence")
+        core.write_if_changed(root / LAYOUT_FILE, core.dump_json({"schema_version": LAYOUT_SCHEMA, "layout": "partitioned"}))
+    return {"root": str(root), "layout": "partitioned", "changed": True}
+
+
+def _shard_id(key: str) -> str:
+    """Stable, portable (host-independent) directory name for a repository's pinned-kernel partition."""
+    return _sha256(key.encode("utf-8"))[:16]
+
+
+def _kernel_root(root: Path, key: str, layout: dict | None = None) -> Path:
+    """The exact pinned-kernel directory that owns `key`'s evidence, trusted-config only (never proposal input)."""
+    layout = layout or load_layout(root)
+    if layout["layout"] == "partitioned":
+        return _wiki_root(root) / SHARD_DIR / _shard_id(key)
+    return _wiki_root(root)
+
+
+def _kernel_sources_root(root: Path, key: str, layout: dict) -> Path:
+    """The sources root a kernel is initialized against: the whole shared tree, or just one repo's snapshots."""
+    if layout["layout"] == "partitioned":
+        storage_owner, storage_name = collect.storage_segments(root, key)
+        return root / collect.SOURCE_DIR / storage_owner / storage_name
+    return root / SOURCES_DIR
+
+
+def _ensure_wiki(root: Path, key: str) -> tuple[bool, Path]:
+    """Initialize this repository's kernel once, with its sources and kernel roots disjoint."""
+    layout = load_layout(root)
+    kernel = _kernel_root(root, key, layout)
+    if (kernel / "wiki.yaml").exists():
+        return False, kernel
+    sources_root = _kernel_sources_root(root, key, layout)
+    sources_root.mkdir(parents=True, exist_ok=True)
+    title = "Map the Agents evidence corpus" if layout["layout"] == "shared" else f"Map the Agents evidence corpus ({key})"
+    rcw(kernel, "init", str(kernel), "--sources", str(sources_root), "--profile", "mixed",
+        "--access", "internal", "--title", title)
+    return True, kernel
 
 
 def _record(root: Path, repo: str) -> tuple[str, dict[str, dict], dict]:
@@ -228,7 +325,23 @@ def _locator(source: dict, line_start: int | None = None, line_end: int | None =
            "git_sha": source["git_sha"], "url": source["url"]}
     if line_start is not None:
         loc.update({"line_start": line_start, "line_end": line_end, "url": f"{source['url']}#L{line_start}-L{line_end}"})
+    if source.get("format"):  # only ever set for HTML/HTM sources; every other locator is unchanged
+        loc["format"] = source["format"]
     return loc
+
+
+def _snapshot_coverage(snapshot: dict, omitted_slices: int) -> dict:
+    """Truthful, mechanically re-derivable coverage of one snapshot's file selection, repository tree
+    completeness and omitted packet slices. Individual included slices can also be text-truncated;
+    this field is not a count of those truncations. This is selection/tree coverage, never a claim that
+    all product features or all repository code were inspected. Built only from the byte-verified snapshot
+    record (never from a model or worker proposal), so it cannot be independently edited before apply."""
+    return {
+        "files": [{"path": f["path"], "lines": f["lines"], "size": f["size"]} for f in snapshot["files"]],
+        "explicit_paths": snapshot.get("explicit_paths", []), "selection": snapshot["selection"],
+        "repository": snapshot["repository"], "omitted": snapshot["omitted"], "omitted_count": snapshot["omitted_count"],
+        "omitted_slices": omitted_slices,
+    }
 
 
 def prepare(root: Path, repo: str) -> dict:
@@ -239,9 +352,16 @@ def prepare(root: Path, repo: str) -> dict:
         key, _repos, record = _record(root, repo)
         active = record["latest_snapshot"]
         snapshot, _manifest = verify_snapshot(root, key, active)  # bytes and metadata checked before any kernel call
-        initialized = _ensure_wiki(root)
-        wiki = _wiki_root(root)
-        rel = Path(active["package"]).relative_to(SOURCES_DIR).as_posix()
+        for f in snapshot["files"]:
+            if Path(f["path"]).suffix.lower() in HTML_SUFFIXES and not _html_storage_trusted(f):
+                raise UnsafeHtmlSource(
+                    f"{key}: {f['path']} is not a verified verbatim-text HTML/HTM capture (either a "
+                    "pre-fix capture, or its stored file/record do not match the deterministic "
+                    "verbatim storage name) -- its line locators may not be reliable; recapture this "
+                    "repository (collect.snapshot) before preparing a packet")
+        initialized, wiki = _ensure_wiki(root, key)
+        sources_root = _kernel_sources_root(root, key, load_layout(root))
+        rel = (root / active["package"]).relative_to(sources_root).as_posix()
         item = next((i for i in rcw(wiki, "inventory", str(wiki))["items"] if i["path"] == rel), None)
         if item is None:
             raise WikiError(f"kernel inventory does not list the active package: {rel}")
@@ -256,7 +376,8 @@ def prepare(root: Path, repo: str) -> dict:
                 raise WikiError(f"kernel source not in snapshot record: {src['path']}")
             sources[src["id"]] = {"source_id": src["id"], "stored": info["stored"], "repository": key, "commit": active["commit"],
                                   "path": info["path"], "git_sha": info["git_sha"], "sha256": info["sha256"],
-                                  "url": info["url"], "lines": info["lines"]}
+                                  "url": info["url"], "lines": info["lines"],
+                                  **({"format": info["format"]} if info.get("format") else {})}
         slices, omitted = [], 0
         for s in packet["slices"]:
             if len(slices) >= BOUNDS["max_packet_slices"]:
@@ -272,8 +393,9 @@ def prepare(root: Path, repo: str) -> dict:
             "inventory_key": item["key"], "package_id": item["package_id"], "package_status": item["status"],
             "base_digest": packet["base_digest"], "source_tree_digest": packet["source_tree_digest"],
             "created_at": packet["created_at"], "already_indexed": record.get("indexed_snapshot_id") == active["snapshot_id"],
-            "rcw_packet": f"{WIKI_DIR}/state/operations/{packet['operation_id']}/packet.json",
+            "rcw_packet": (wiki.relative_to(root) / "state" / "operations" / packet["operation_id"] / "packet.json").as_posix(),
             "sources": sorted(sources.values(), key=lambda v: v["path"]), "slices": slices, "omitted_slices": omitted,
+            "coverage": _snapshot_coverage(snapshot, omitted),
             "facets": list(FACETS), "kinds": list(KINDS), "bases": list(BASES), "bounds": dict(BOUNDS),
             "proposal_schema": PROPOSAL_JSON_SCHEMA,
             "proposal_contract": {
@@ -319,6 +441,16 @@ def load_packet(root: Path, packet_path: Path) -> dict:
     return packet
 
 
+def _code_inspectable(locator: dict) -> bool:
+    """True for an ordinary code/config slice, or an HTML/HTM slice specifically captured through the
+    verbatim-text storage fix (`locator["format"] == "verbatim"`) -- never a legacy HTML/HTM capture,
+    whose reflowed-text line numbers describe rendered content, not real code."""
+    suffix = Path(locator["path"]).suffix.lower()
+    if suffix in CODE_SUFFIXES:
+        return True
+    return suffix in HTML_SUFFIXES and locator.get("format") == VERBATIM_FORMAT
+
+
 def validate_proposal(proposal: dict, packet: dict) -> list[dict]:
     """Strict dossier proposal check against its packet. Returns normalized claims."""
     keys = set(proposal)
@@ -355,8 +487,7 @@ def validate_proposal(proposal: dict, packet: dict) -> list[dict]:
         foreign = [i for i in ids if i not in known]
         if foreign:
             raise ProposalRejected(f"claim {n} cites slice IDs outside this packet: {foreign[0][:80]}")
-        if claim["basis"] == "code-inspected" and not any(
-                Path(known[i]["locator"]["path"]).suffix.lower() in CODE_SUFFIXES for i in ids):
+        if claim["basis"] == "code-inspected" and not any(_code_inspectable(known[i]["locator"]) for i in ids):
             raise ProposalRejected(f"claim {n} is code-inspected but cites no code/config slice (documentation only)")
         identity = (text, tuple(sorted(ids)))
         if identity in seen:
@@ -411,11 +542,12 @@ def seal(dossier: dict) -> dict:
 
 def _finish(root: Path, packet: dict, proposal: dict, claims: list[dict], rows: list[dict], result: dict, repos: dict, record: dict) -> dict:
     """Auxiliary writes after a confirmed kernel commit: sealed dossier, then catalog record."""
-    wiki, key = _wiki_root(root), packet["repo"]
+    key = packet["repo"]
+    wiki = _kernel_root(root, key)
     entity = next((r["id"] for r in _rows(wiki, "entities") if r.get("external_ids", {}).get("github") == key), None)
     slices = {s["slice_id"]: s for s in packet["slices"]}
-    owner, name = key.split("/")
-    dossier_path = root / DOSSIER_DIR / owner / name / packet["commit"] / f"{packet['snapshot_id']}.json"
+    storage_owner, storage_name = collect.storage_segments(root, key)
+    dossier_path = root / DOSSIER_DIR / storage_owner / storage_name / packet["commit"] / f"{packet['snapshot_id']}.json"
     prior = _parse_object(_read_bounded(dossier_path, MAX_DOSSIER_BYTES, "dossier", DossierInvalid), "dossier", DossierInvalid) if dossier_path.is_file() else {}
     current_ids = {r["id"] for r in rows}
     superseded = sorted((set(prior.get("superseded_claim_ids", [])) | {c["claim_id"] for c in prior.get("claims", [])}) - current_ids)
@@ -431,7 +563,7 @@ def _finish(root: Path, packet: dict, proposal: dict, claims: list[dict], rows: 
         "facets": {f: sum(1 for c in claims if c["facet"] == f) for f in FACETS},
         "gaps": [{"facet": f, "status": "unknown", "reason": "no source-linked claim submitted for this facet"}
                  for f in FACETS if f not in present],
-        "sources": packet["sources"],
+        "sources": packet["sources"], "coverage": packet["coverage"],
     })
     dossier_changed = core.write_if_changed(dossier_path, core.dump_json(dossier))
     record.pop("last_error", None)
@@ -449,12 +581,13 @@ def apply(root: Path, packet_path: Path, proposal_path: Path) -> dict:
     packet = load_packet(root, packet_path)
     proposal = _read_json(Path(proposal_path), BOUNDS["max_proposal_bytes"], "proposal")
     claims = validate_proposal(proposal, packet)
-    wiki, op = _wiki_root(root), packet["operation_id"]
+    op = packet["operation_id"]
     translated = translate(claims, packet)
     proposal_sha = _sha256(core.dump_json({"summary": proposal["summary"].strip(), "claims": claims}))
     kernel_sha = _kernel_digest({k: v for k, v in translated.items() if k != "operation_id"})
     with core.writer_lock(root):
         key, repos, record = _record(root, packet["repo"])
+        wiki = _kernel_root(root, key)
         if record["latest_snapshot"]["snapshot_id"] != packet["snapshot_id"]:
             raise StalePacket(f"packet snapshot {packet['snapshot_id']} superseded by {record['latest_snapshot']['snapshot_id']}")
         receipt_path = root / SEAL_DIR / f"{op}.receipt.json"
@@ -496,8 +629,9 @@ def load_dossier(root: Path, repo: str, tables: dict | None = None) -> dict:
     Raises DossierInvalid; never trusts the auxiliary JSON alone. Passing `tables` avoids re-reading kernel JSONL.
     Validation covers evidence linkage and integrity, not the truth of any claim.
     """
-    root, wiki = Path(root), _wiki_root(Path(root))
+    root = Path(root)
     key, _repos, record = _record(root, repo)
+    wiki = _kernel_root(root, key)
     rel = record.get("dossier")
     _check(isinstance(rel, str) and rel.startswith(f"{DOSSIER_DIR}/") and ".." not in Path(rel).parts, "record has no dossier path")
     _check((wiki / "wiki.yaml").is_file(), "record claims distilled evidence but the wiki is not initialized")
@@ -513,6 +647,29 @@ def load_dossier(root: Path, repo: str, tables: dict | None = None) -> dict:
     t = tables or {name: {r["id"]: r for r in _rows(wiki, name)} for name in ("claims", "slices", "sources", "operations")}
     op = t["operations"].get(dossier["applied_operation_id"])
     _check(op is not None and op["state"] == "applied", "applied operation is not in the kernel operations table")
+    # Bound to the dossier's OWN snapshot/package, not necessarily the currently active one: a stale dossier
+    # (freshness already permitted above) is still validated against the exact evidence it was distilled from.
+    pkg_dir = Path(dossier["package"]).parent.as_posix()
+    snapshot, _manifest = verify_snapshot(root, key, {"snapshot_id": dossier["snapshot_id"], "commit": dossier["commit"],
+                                                       "package": dossier["package"], "dir": pkg_dir,
+                                                       "snapshot": f"{pkg_dir}/{collect.SNAPSHOT_FILE}"})
+    if "coverage" in dossier:
+        # Backward compatible: a dossier written before this field existed is accepted without it, and
+        # nothing here pretends an absent field means complete coverage.
+        cov = dossier["coverage"]
+        _check(isinstance(cov, dict) and set(cov) == COVERAGE_KEYS, "coverage shape")
+        snapshot_sources = {sid for sid, src in t["sources"].items()
+                            if src.get("metadata", {}).get("identifiers", {}).get("repository") == key
+                            and src["metadata"]["identifiers"].get("snapshot_id") == dossier["snapshot_id"]}
+        slice_count = sum(s["source_id"] in snapshot_sources for s in t["slices"].values())
+        _check(type(cov.get("omitted_slices")) is int, "coverage omitted_slices must be an integer")
+        expected = _snapshot_coverage(snapshot, max(0, slice_count - BOUNDS["max_packet_slices"]))
+        _check(cov == expected, "coverage differs from the verified, immutable bound snapshot")
+        kernel_paths = {src["metadata"]["identifiers"]["path"] for src in t["sources"].values()
+                        if src.get("metadata", {}).get("identifiers", {}).get("repository") == key
+                        and src["metadata"]["identifiers"].get("snapshot_id") == dossier["snapshot_id"]}
+        _check({f["path"] for f in cov["files"]} <= kernel_paths, "coverage lists files the kernel never ingested for this snapshot")
+    snapshot_files_by_path = {f["path"]: f for f in snapshot["files"]}
     facets = {f: 0 for f in FACETS}
     for c in dossier["claims"]:
         _check(set(c) == {"claim_id", "review_state", "facet", "text", "slice_ids", "kind", "basis", "evidence_type", "locators"},
@@ -530,41 +687,86 @@ def load_dossier(root: Path, repo: str, tables: dict | None = None) -> dict:
             src = t["sources"].get(s_["source_id"]) if s_ else None
             _check(s_ is not None and src is not None, f"slice/source not in kernel: {sid[:20]}")
             ids = src["metadata"]["identifiers"]
-            _check(loc == {"repository": ids["repository"], "commit": ids["commit"], "path": ids["path"], "git_sha": ids["git_sha"],
-                           "line_start": s_["locator"]["line_start"], "line_end": s_["locator"]["line_end"],
-                           "url": f"{src['metadata']['url']}#L{s_['locator']['line_start']}-L{s_['locator']['line_end']}"}
+            expected_loc = {"repository": ids["repository"], "commit": ids["commit"], "path": ids["path"], "git_sha": ids["git_sha"],
+                            "line_start": s_["locator"]["line_start"], "line_end": s_["locator"]["line_end"],
+                            "url": f"{src['metadata']['url']}#L{s_['locator']['line_start']}-L{s_['locator']['line_end']}"}
+            if Path(ids["path"]).suffix.lower() in HTML_SUFFIXES:
+                # A legacy, or falsely marked, HTML/HTM capture's line locators describe kernel-
+                # rendered visible text, not the real source lines: never trust or re-derive them as
+                # accurate here. The marker alone is not proof -- see `_html_storage_trusted`.
+                sf = snapshot_files_by_path.get(ids["path"])
+                _check(isinstance(sf, dict) and _html_storage_trusted(sf),
+                       f"{ids['path']} is not a verified verbatim-text HTML/HTM capture; recapture "
+                       f"this repository before trusting this dossier: {sid[:20]}")
+                expected_loc["format"] = VERBATIM_FORMAT
+            _check(loc == expected_loc
                    and ids["repository"] == key and ids["commit"] == dossier["commit"] and ids["snapshot_id"] == dossier["snapshot_id"],
                    f"locator differs from kernel slice/source: {sid[:20]}")
         facets[c["facet"]] += 1
     _check(dossier["facets"] == facets and [g["facet"] for g in dossier["gaps"]] == [f for f in FACETS if not facets[f]]
            and all(g["status"] == "unknown" for g in dossier["gaps"]), "facet counts or gaps do not match the claims")
-    pkg_dir = Path(dossier["package"]).parent.as_posix()
-    verify_snapshot(root, key, {"snapshot_id": dossier["snapshot_id"], "commit": dossier["commit"], "package": dossier["package"],
-                                "dir": pkg_dir, "snapshot": f"{pkg_dir}/{collect.SNAPSHOT_FILE}"})
     return dossier
 
 
-def audit(root: Path, level: str = "working") -> dict:
-    """Real kernel audit plus full dossier/record/kernel correspondence for every distilled record. Never writes."""
-    root, wiki = Path(root), _wiki_root(Path(root))
+def audit(root: Path, level: str = "working", repos: list[str] | None = None) -> dict:
+    """Audit every initialized kernel and dossier by default. An explicit repo list scopes a partitioned
+    maintenance audit (including an empty selection); the result labels that narrower scope. Shared kernels
+    always receive a full audit. Never writes."""
+    root = Path(root)
     if level not in ("working", "pr"):
         raise WikiError("level must be working or pr")
-    initialized = (wiki / "wiki.yaml").is_file()
-    report = rcw(wiki, "audit", str(wiki), "--level", level) if initialized else {"ok": True, "errors": [], "warnings": []}
-    tables = {n: {r["id"]: r for r in _rows(wiki, n)} for n in ("claims", "slices", "sources", "operations")} if initialized else None
+    layout = load_layout(root)
+    repo_records = core.load_repos(root)
+    if repos is not None:
+        if (not isinstance(repos, list) or any(not isinstance(k, str) for k in repos)
+                or len(set(repos)) != len(repos) or any(k not in repo_records for k in repos)):
+            raise WikiError("audit repos must be a list of distinct known repository keys")
+    scoped = layout["layout"] == "partitioned" and repos is not None
+    scope = {"kind": "selected" if scoped else "full", "repositories": sorted(repos or []) if scoped else None}
+    if scoped:
+        repo_records = {k: repo_records[k] for k in repos}
+    kernel_repos: dict[Path, list[str]] = {}
+    if layout["layout"] == "partitioned":
+        for key in repo_records:
+            kernel_repos.setdefault(_kernel_root(root, key, layout), []).append(key)
+        if not scoped:
+            shard_root = _wiki_root(root) / SHARD_DIR
+            if shard_root.is_dir():
+                for shard in shard_root.iterdir():
+                    if shard.is_dir() and (shard / "wiki.yaml").is_file():
+                        kernel_repos.setdefault(shard, [])
+            if (_wiki_root(root) / "wiki.yaml").is_file():
+                kernel_repos.setdefault(_wiki_root(root), [])
+    else:
+        kernel_repos[_wiki_root(root)] = sorted(repo_records)
+    partitions: dict[str, dict] = {}
+    tables_by_kernel: dict[Path, dict | None] = {}
+    all_ok, all_errors, warnings_total, any_initialized = True, [], 0, False
+    for kernel in sorted(kernel_repos, key=lambda p: p.as_posix()):
+        initialized = (kernel / "wiki.yaml").is_file()
+        any_initialized = any_initialized or initialized
+        report = rcw(kernel, "audit", str(kernel), "--level", level) if initialized else {"ok": True, "errors": [], "warnings": []}
+        tables_by_kernel[kernel] = {n: {r["id"]: r for r in _rows(kernel, n)} for n in ("claims", "slices", "sources", "operations")} if initialized else None
+        all_ok = all_ok and bool(report["ok"])
+        all_errors.extend(report.get("errors", []))
+        warnings_total += len(report.get("warnings", []))
+        partitions[kernel.relative_to(root).as_posix()] = {"ok": bool(report["ok"]), "initialized": initialized,
+                                                            "errors": report.get("errors", [])[:20], "warnings": len(report.get("warnings", []))}
     repos, problems, freshness = {}, 0, {}
-    for key, record in core.load_repos(root).items():
+    for key, record in repo_records.items():
         freshness[record.get("freshness", "pending")] = freshness.get(record.get("freshness", "pending"), 0) + 1
         if not record.get("indexed_snapshot_id") and record.get("status") != "distilled":
             continue
         entry = {"freshness": record.get("freshness"), "indexed_snapshot_id": record.get("indexed_snapshot_id"), "problems": []}
         try:
+            tables = tables_by_kernel.get(_kernel_root(root, key, layout))
             dossier = load_dossier(root, key, tables)
             entry.update({"claims": len(dossier["claims"]), "gaps": len(dossier["gaps"]), "operation_id": dossier["applied_operation_id"]})
         except core.WorkbenchError as exc:
             entry["problems"].append(f"{type(exc).__name__}: {str(exc)[:200]}")
         problems += len(entry["problems"])
         repos[key] = entry
-    return {"ok": bool(report["ok"]) and problems == 0, "level": level, "wiki_initialized": initialized,
-            "rcw": {"ok": report["ok"], "errors": report.get("errors", [])[:20], "warnings": len(report.get("warnings", []))} if initialized else None,
+    return {"ok": all_ok and problems == 0, "level": level, "wiki_initialized": any_initialized, "layout": layout["layout"], "scope": scope,
+            "rcw": {"ok": all_ok, "errors": all_errors[:20], "warnings": warnings_total} if any_initialized else None,
+            "partitions": partitions if layout["layout"] == "partitioned" else None,
             "repos": repos, "freshness": dict(sorted(freshness.items())), "problems": problems}

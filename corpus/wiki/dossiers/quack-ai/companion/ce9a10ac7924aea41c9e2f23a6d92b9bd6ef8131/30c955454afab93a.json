@@ -1,0 +1,691 @@
+{
+  "applied_operation_id": "op_ab2ca8a1fe69400c82e3a088ea237c1a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a7b2c2a1c47d5470773e1fc2e962cdb5331c1dfa017704324a31ac9c8bb8e4d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "8d24b841a14eeddaadaeed9fcbcc952fecaddd35",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/README.md#L65-L65"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "8d24b841a14eeddaadaeed9fcbcc952fecaddd35",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/README.md#L67-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33b63fe18e437a533d2f509845f477dbed9be60aed5665797ae485e27c4b9992",
+        "slc_9b6eeb92f46ecd84e957a2f827c2848d054716a43ad1b569850d4a28931b0124"
+      ],
+      "text": "The product exposes a REST API for guideline management and LLM inference, browsable via Swagger docs at localhost:5050/docs or through HTTP requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4530cec3cddd4e68c27607137f5dd083f721264c868049af5ec0433fce43a2da",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "8d24b841a14eeddaadaeed9fcbcc952fecaddd35",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36ca1eb39ea6a9a8dbbb42570804455cfc58bf03042cb8b6f2ada0254f733ebe"
+      ],
+      "text": "A code chat endpoint is offered as a coding-specific LLM chat, with the backend API acting as gatekeeper for an Ollama-powered inference container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0c2a2898f9f9ef3d08827e52a68b8953193e960ded1b6d40c0186ff94f60961",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "8d24b841a14eeddaadaeed9fcbcc952fecaddd35",
+          "line_end": 108,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/README.md#L105-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b95fcde9f40691d31063563d5b65b21dadbecd755b5e82694493fdffba02154b"
+      ],
+      "text": "A deployment includes a backend API on port 5050, an APM dashboard on port 3000, and a Gradio chat interface on port 7860."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cb942447a13189d9f297255c689e772652df493ae1b9c3acd8a1c542e9094a5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "8d24b841a14eeddaadaeed9fcbcc952fecaddd35",
+          "line_end": 77,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/README.md#L74-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_087388188e905f2809d7c89795f6d03bec78f5c17255ac8bddd150333959b839"
+      ],
+      "text": "Running the service requires Git, Docker, Docker Compose, and the NVIDIA Container Toolkit with a GPU of at least 6 GB VRAM for good latency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd64fc060e3d56266bf5a6177c8de4845c82d069cec515b103c81fceaa50123a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d6e9beca3a849b77f96211dfb6e12abdc3612f41",
+          "line_end": 39,
+          "line_start": 35,
+          "path": "docs/community/faq.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/faq.mdx#L35-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc4c88dacf9fffaa174e92626c358866fb0b7507bbe1303593927649067ead3c"
+      ],
+      "text": "The community edition lets users choose their own locally-run open-source models; recommended options include Deepseek Coder 6.7B, Gemma 7b, and Dolphin Mistral 7b."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e3a016b1349fb661a4c0363bce2456acc990b786e32e0fdb8b74480f99c0445",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "f62cb99d0be771482d1d7aeac58044b2b4f5c0d4",
+          "line_end": 38,
+          "line_start": 29,
+          "path": "docs/dbdiagram.txt",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/dbdiagram.txt#L29-L38"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "f62cb99d0be771482d1d7aeac58044b2b4f5c0d4",
+          "line_end": 5,
+          "line_start": 2,
+          "path": "docs/dbdiagram.txt",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/dbdiagram.txt#L2-L5"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "f62cb99d0be771482d1d7aeac58044b2b4f5c0d4",
+          "line_end": 27,
+          "line_start": 19,
+          "path": "docs/dbdiagram.txt",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/dbdiagram.txt#L19-L27"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "f62cb99d0be771482d1d7aeac58044b2b4f5c0d4",
+          "line_end": 17,
+          "line_start": 7,
+          "path": "docs/dbdiagram.txt",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/dbdiagram.txt#L7-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d516e1f5305e92478b35ef31cd8bdd640a64d06f62188ea0476e9bb7e16cb6e",
+        "slc_47af58e353f3248f5c4586843d6e26b6dc64f3935f4e3b7bd7d577772f4b17c6",
+        "slc_96292a3f0a7b6a98c66bf496e48cd9d810ff35cd5da89fda33ac8fcb85b909fe",
+        "slc_bcee270002c17ea6ded7350ce219c0d79cd01c094a01d4073f0032c3c9f26780"
+      ],
+      "text": "The database schema defines users with an access-type enum of user/admin, repositories keyed by provider repo id, and guidelines with content, creator, and timestamps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9423a92692f4411fd14f2cb3539111b32f0262ae37858bdfdf133e7733796527",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "4578f69bbf19fb47601e0a8bab3b8a8bb079c675",
+          "line_end": 10,
+          "line_start": 8,
+          "path": "docs/api-reference/authentication.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/api-reference/authentication.mdx#L8-L10"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "4578f69bbf19fb47601e0a8bab3b8a8bb079c675",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "docs/api-reference/authentication.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/api-reference/authentication.mdx#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a190358f08995650f7acf97fe7197d6eec04fc5124a47ca9d5aca5decb9eb3d8",
+        "slc_fe6d7471bc520bf8e009cd3d973e8dd2220ead0886a310d0221dcc699713a8f5"
+      ],
+      "text": "API requests authenticate with a token header of the form 'Authorization: Token <team_token>', and the docs include a Permissions section (placeholder body)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffeca12d02198a8f54567589c2e7b13e84e4f40f8ee2ef663145bc5a4f04d09a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d6e9beca3a849b77f96211dfb6e12abdc3612f41",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "docs/community/faq.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/faq.mdx#L27-L29"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d6e9beca3a849b77f96211dfb6e12abdc3612f41",
+          "line_end": 33,
+          "line_start": 31,
+          "path": "docs/community/faq.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/faq.mdx#L31-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fd256d73efa8780e7bfef41169b7b81df2b858343e4685a8c0dddfeb5e5e7e1",
+        "slc_ae4307766dc2677d70827ef5a7e30a88ea08641a3704ca538cc8b2128f80ad9e"
+      ],
+      "text": "IDE support currently covers VSCode only, with other development environments planned gradually; the best-supported languages so far are Python and JavaScript/TypeScript."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_613077cf9c3bcffc14243ff8a6f92bd761975cf23fcf12c8b60ddd222450c239",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "5b9bfaaf2ee01d4c2782a94ef9a95962b1477813",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "docs/community/roadmap.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/roadmap.mdx#L36-L38"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "5b9bfaaf2ee01d4c2782a94ef9a95962b1477813",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/community/roadmap.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/roadmap.mdx#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b1056d53e9eb7e05903d9eee7c3ec1f0274860f962ef357684d4d80919e5d0d3",
+        "slc_be614ff51a7a0ac5dc412cd323d4fd38e91a109f1cc42e6ff36693560879241b"
+      ],
+      "text": "The product is described as being in beta; code autocompletion that is guideline-aware is listed as coming soon rather than shipped."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9defe6bf36c82621edfc5fea7eca0ad5ea4085b320ae4fea1315123ad36f3b82",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d6e9beca3a849b77f96211dfb6e12abdc3612f41",
+          "line_end": 44,
+          "line_start": 41,
+          "path": "docs/community/faq.mdx",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/faq.mdx#L41-L44"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "8d24b841a14eeddaadaeed9fcbcc952fecaddd35",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/README.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e47ef6e3b7facf357bebf2d4f09bde3e223a0cdd537eb515b21e47ccd25ce4f",
+        "slc_d160031df4b4849d7580b64f24cf15237723a40223eea6e5b58c34acef280749"
+      ],
+      "text": "Quack Companion targets software teams, acting like an onboarded team member with knowledge of internal libraries and coding standards, and is positioned against GitHub Copilot with team-guideline context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f192e86daf0e6ef7398a3457fb27e3d7f8d865b4e154e389b01f9c77c126c970",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "docs/README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md#L44-L44"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "docs/README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md#L38-L38"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "docs/README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md#L46-L48"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+          "line_end": 59,
+          "line_start": 58,
+          "path": "docs/README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md#L58-L59"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "docs/README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md#L40-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18d5872a088966433b67cad7e9b977753f3cd74467020b0c2ec1a2116b2cbc4e",
+        "slc_57fa720c2e259a4b1aa1a040e3a5a191f8bba5c747e1bd54d4f7e8517373ec66",
+        "slc_5fd833b92bac94e2fe799e83184fa3bf889de044adb0c4969fbfcfd9e9a0bb55",
+        "slc_7e7e0494319919bb863e52ee052b19c3a3d89a5cae76871f402d6a8f3d11cf7a",
+        "slc_8268ec0ff647ccd8955b9afe66fdc0ae029672c4a011bf14178e1e66ddf6f5ee"
+      ],
+      "text": "Repository development practice: docs contributors install the Mintlify CLI globally and run 'mintlify dev' in the folder containing mint.json to preview changes locally."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b6dc6061f77c2bf20fd6b580f0959a4b8dc19abef8b668e8e302da4f15f4dda",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "docs/README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md#L52-L52"
+        },
+        {
+          "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+          "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "docs/README.md",
+          "repository": "quack-ai/companion",
+          "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33014efb744b801366661132370430d3cd2aa5d574a0285289cf054169b33278",
+        "slc_ac0774a8cd4d57bef5176dba47332585949db191b3134a08082a9f99a37c8057"
+      ],
+      "text": "Repository development practice: docs changes deploy to production automatically on push to the default branch, and pull requests generate preview links."
+    }
+  ],
+  "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 125,
+        "path": "README.md",
+        "size": 6197
+      },
+      {
+        "lines": 38,
+        "path": "docs/dbdiagram.txt",
+        "size": 665
+      },
+      {
+        "lines": 59,
+        "path": "docs/README.md",
+        "size": 2006
+      },
+      {
+        "lines": 22,
+        "path": "docs/api-reference/authentication.mdx",
+        "size": 1100
+      },
+      {
+        "lines": 48,
+        "path": "docs/community/faq.mdx",
+        "size": 3619
+      },
+      {
+        "lines": 40,
+        "path": "docs/community/roadmap.mdx",
+        "size": 1367
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/community/support.mdx",
+        "reason": "file-budget",
+        "size": 76
+      },
+      {
+        "path": "docs/developers/gpu-selection.mdx",
+        "reason": "file-budget",
+        "size": 8775
+      },
+      {
+        "path": "docs/developers/self-hosting.mdx",
+        "reason": "file-budget",
+        "size": 4660
+      },
+      {
+        "path": "docs/getting-started/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 2153
+      },
+      {
+        "path": "docs/home/introduction.mdx",
+        "reason": "file-budget",
+        "size": 1660
+      },
+      {
+        "path": "docs/home/quack.mdx",
+        "reason": "file-budget",
+        "size": 3110
+      },
+      {
+        "path": "docs/api-reference/code/chat.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/guidelines/create-guideline.mdx",
+        "reason": "file-budget",
+        "size": 42
+      },
+      {
+        "path": "docs/api-reference/guidelines/delete-guideline.mdx",
+        "reason": "file-budget",
+        "size": 58
+      },
+      {
+        "path": "docs/api-reference/guidelines/fetch-guidelines.mdx",
+        "reason": "file-budget",
+        "size": 41
+      },
+      {
+        "path": "docs/api-reference/guidelines/get-guideline.mdx",
+        "reason": "file-budget",
+        "size": 55
+      },
+      {
+        "path": "docs/api-reference/guidelines/update-guideline.mdx",
+        "reason": "file-budget",
+        "size": 55
+      },
+      {
+        "path": "docs/api-reference/login/request-token-from-creds.mdx",
+        "reason": "file-budget",
+        "size": 42
+      },
+      {
+        "path": "docs/api-reference/login/request-token-from-github.mdx",
+        "reason": "file-budget",
+        "size": 42
+      },
+      {
+        "path": "docs/api-reference/repos/delete-repo.mdx",
+        "reason": "file-budget",
+        "size": 48
+      },
+      {
+        "path": "docs/api-reference/repos/fetch-repos.mdx",
+        "reason": "file-budget",
+        "size": 36
+      },
+      {
+        "path": "docs/api-reference/repos/get-repo.mdx",
+        "reason": "file-budget",
+        "size": 45
+      },
+      {
+        "path": "docs/api-reference/repos/register-repo.mdx",
+        "reason": "file-budget",
+        "size": 37
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5222
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 10366
+      },
+      {
+        "path": "docs/community/changelog.mdx",
+        "reason": "file-budget",
+        "size": 98
+      },
+      {
+        "path": "docs/community/contributing.mdx",
+        "reason": "file-budget",
+        "size": 922
+      }
+    ],
+    "omitted_count": 22,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 132,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 28,
+      "complete": false,
+      "omitted": 22,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_c908ccb3fb405a1995fad2aaf4180eb2",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/quack-ai/companion/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/30c955454afab93a/manifest.json",
+  "package_id": "pkg_70a44a60a858662b1e775b99fde4afd99cb0147e45f9a6b7a6a506fd3a965836",
+  "repo": "quack-ai/companion",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4b1bb8903b3964b80ab2eccb1e797ac9f935dde4fd58b0153cb9a8793dfd9e20",
+  "snapshot_id": "30c955454afab93a",
+  "sources": [
+    {
+      "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+      "git_sha": "8d24b841a14eeddaadaeed9fcbcc952fecaddd35",
+      "lines": 125,
+      "path": "README.md",
+      "repository": "quack-ai/companion",
+      "sha256": "fdd1c97b7c490dc8c3b0bbecfec4bfd3fc56dc2ab958ff8a2fecb56364792eff",
+      "source_id": "src_46bdd9a644f35a928458901f0c83808a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/README.md"
+    },
+    {
+      "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+      "git_sha": "d143139b6383e8b8755d75164a24562a2863faf0",
+      "lines": 59,
+      "path": "docs/README.md",
+      "repository": "quack-ai/companion",
+      "sha256": "8f1d4c28c5987f2b6bd76ecf7c3e480862ecf593caa81d9dc3d722b9289da59d",
+      "source_id": "src_c46dcb55b53e5cd58ebe8e9177c12a62",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/README.md"
+    },
+    {
+      "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+      "git_sha": "4578f69bbf19fb47601e0a8bab3b8a8bb079c675",
+      "lines": 22,
+      "path": "docs/api-reference/authentication.mdx",
+      "repository": "quack-ai/companion",
+      "sha256": "5791bc95f59c929dc9f137ff99b2f3ccf6291fe5f65b7e2a79dd9eed5c752aa3",
+      "source_id": "src_d56df1837a6f52848e4bb193f1187d3a",
+      "stored": "authentication.mdx-5686c17696ec.txt",
+      "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/api-reference/authentication.mdx"
+    },
+    {
+      "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+      "git_sha": "d6e9beca3a849b77f96211dfb6e12abdc3612f41",
+      "lines": 48,
+      "path": "docs/community/faq.mdx",
+      "repository": "quack-ai/companion",
+      "sha256": "92d85ecb236e98f1b8e4ebb29962be9117dc6b319f13b51ab6c4eacf2dae2512",
+      "source_id": "src_d6bad29ab8f556d9a5df48ff0ce7fb13",
+      "stored": "faq.mdx-04cbcf452870.txt",
+      "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/faq.mdx"
+    },
+    {
+      "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+      "git_sha": "5b9bfaaf2ee01d4c2782a94ef9a95962b1477813",
+      "lines": 40,
+      "path": "docs/community/roadmap.mdx",
+      "repository": "quack-ai/companion",
+      "sha256": "e2b635e33f89bd411f079d3e08aa060854684b5a1ca78f4ef31297352d17c313",
+      "source_id": "src_74952c642a0e5dbcbe8ac5671025649d",
+      "stored": "roadmap.mdx-5d79ee5f4c8d.txt",
+      "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/community/roadmap.mdx"
+    },
+    {
+      "commit": "ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131",
+      "git_sha": "f62cb99d0be771482d1d7aeac58044b2b4f5c0d4",
+      "lines": 38,
+      "path": "docs/dbdiagram.txt",
+      "repository": "quack-ai/companion",
+      "sha256": "c2b2b7760c228656e9db81872851ab06061835de0b708f488b6b64944cf9be26",
+      "source_id": "src_0606bfd3afc9586ebf6217bacc9dbe3e",
+      "stored": "dbdiagram.txt-035989942184.txt",
+      "url": "https://github.com/quack-ai/companion/blob/ce9a10ac7924aea41c9e2f23a6d92b9bd6ef8131/docs/dbdiagram.txt"
+    }
+  ],
+  "summary": "Evidence covers Quack Companion's documentation and README: a self-hostable REST API for guideline management and LLM inference backed by Ollama, with a VSCode extension, Gradio chat UI, and Docker-based deployment. Much of the docs content is placeholder text, so several facets remain unsupported.",
+  "superseded_claim_ids": []
+}

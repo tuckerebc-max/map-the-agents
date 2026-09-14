@@ -1,0 +1,503 @@
+{
+  "applied_operation_id": "op_2a2ffa2dc68b4a0f806516a027199f92",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_de89e95e4705755ee9ee3c6a057f0863c6eb9aa899aa8557dc8225e3ed19e27b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 74,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L72-L74"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 84,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L78-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a940dfb9a12a66a113c24a324d9926120d7ca6776a95e96eeb8195ff23e858a",
+        "slc_baaca35bca8ca55bf5b8f528bdb0150fe314e34e9845bec1a8e89386ee563c82"
+      ],
+      "text": "Users place prompts between `//>` and `<//` markers in source files; generated code is shown with an accept-changes (y/n) prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d8f3ad8b839d85fcf56aae9baf20cd797cbbbc8cdb454fe554a0df6fc7f1318",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L25-L28"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "f1c4eaa325aba701d1ce86ca3c7687eefcb3d6bd",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "CHANGELOG.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/CHANGELOG.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a09d78763e6fa60ec379833c2bb66b8af282993f4306559069b594d62ad6824",
+        "slc_c8af54dbe4a41b65f10ccc20f6c2431e316690b0bb6b43b71c75939a19ffd22f"
+      ],
+      "text": "Code generation uses the OpenAI API; a changelog entry states all other platform support was removed, leaving OpenAI as the sole provider."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86653f1ed09282b8eeb5c6a0cabe77ff8e9bd95be1f87e07b2002e76648e1e60",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L25-L28"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L64-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a09d78763e6fa60ec379833c2bb66b8af282993f4306559069b594d62ad6824",
+        "slc_4d672d6f467b0698f80fa09ae3ac86619152653e3a06eb6916d8c073b02ab52b"
+      ],
+      "text": "A live file-monitoring component continuously watches project files for code-generation prompts and is started with `overide start`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da2dae9f8bd5e5c0e408a983c76ea2208987c55178141389c64caf78eb185bc2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 95,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L90-L95"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L88-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2555ae2be8ad1641e02f701eb812348b35f85242e5e65c76899bf9759c66d6a2",
+        "slc_8a8ca04b2c47a6fc989ec3149852afe92261810a3797b072e48d577637615be6"
+      ],
+      "text": "Projects are configured via an `oi-config.json` file holding a project name and an ignore list such as `node_modules` and `*.test.js`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83abf6fa2c88f84dab847835b8fe2b085873857643ccaba2aceb6f5c52aae768",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L25-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a09d78763e6fa60ec379833c2bb66b8af282993f4306559069b594d62ad6824"
+      ],
+      "text": "The tool is designed to be IDE-agnostic, working with any IDE or text editor rather than integrating with a specific one."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc10933c106f7960c562102b0eb0335cfcf449db7e1e65944e636791370bcf3a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "f1c4eaa325aba701d1ce86ca3c7687eefcb3d6bd",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "CHANGELOG.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/CHANGELOG.md#L16-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d00183ffb5a8f3f011fe5ad2fefa063e40cdeaa09473ec4aa9596d5c99842c6c"
+      ],
+      "text": "The `init` and `start` commands support a `--path` option so Overide can be initialized and started in any target directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_32d8af85e889ba4c4564e690dc7cf86c385cf2e44fda396e23ddabea443e60c1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 107,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L101-L107"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L117-L117"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 129,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L127-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01bf2f22b8143fe2f7721eeee6be1d3fbcda7dce57c5bc2a40059c6fab5d265d",
+        "slc_06ce8e8b0949e0d24eacb3f98a55185d79ed71ad22d1e8bed107e979f83f61ea",
+        "slc_9e5c0f1272d4004b5c28eb8c5e0b6e9e940da15be5427e15aa13b41b1f9d7871"
+      ],
+      "text": "Repository development practice: contributors branch from `dev`, merge PRs through `staging` to `main`, and create a changeset (patch/minor/major) before submitting a feature-branch PR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_587b6f5abbdd13896e8e632c2aa0fcdb74ee0afeb0f95efd919a4041bdd9f078",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 214,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L214-L214"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 233,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L231-L233"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 222,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L218-L222"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ca331f8c2097268400c1c3a13f1bd49165e2dc3a78c2580d9a07600f594497e",
+        "slc_5c3a34f31324aa738e8abf60db3edfb43633ba42e7f7945f48fff77e423ce682",
+        "slc_c2036a59f17e7945f74fbed6c27d7c5763b869b5dbc4a10e5334a72b5bd54d2c"
+      ],
+      "text": "Repository development practice: a GitHub Actions pipeline runs on PRs and pushes to `main` (pnpm install, lint, build, release PRs), and a publish workflow publishes to npm and syncs back to `staging`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_545f4f0e73a83c5743c95c2c82960e10c152c18bc335e98819dc6222cb507b2a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 178,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L176-L178"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 150,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L149-L150"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 172,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L169-L172"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L163-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04175ee07f45d8b4c3f516460c7b08376c2b89a7f70cc1b48f21be7dad7e7909",
+        "slc_76f4e46e7037ba659e6f90877635f0bb13a7835cd80068bb89f41a287915fac0",
+        "slc_7edbf850bf605998cb87244cc2d3443db29246006d8cc0d20f8b8f1feeb4ca13",
+        "slc_9c48e312c1cbbe9e7c5da28f77cbcfcc9fd262ff4165d536e2ff2226f4dc275c"
+      ],
+      "text": "Repository development practice: local development uses a hot-reloading watcher (`npm run dev` / `pnpm dev`) that rebuilds on source changes, and `npm run build` plus `npm link` to test the production CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dae48075a944e114291f56249ed071876c9bcb21fbc10a8f6256d34cbaa2535a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 240,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L237-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0edb39c8418397893e4c4c2870539db3ad4a02ac36cea3022bc7dee94023876a"
+      ],
+      "text": "Features listed under 'Future Plans (v2.0)' — local-parser context management, unified-diff insertion, multi-file edits, and script execution — appear not yet shipped in this version."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e72a944b1989230029106dbb170929e6bbadb306ff9b5fdc8e87142002b0163a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 135,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L133-L135"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L115-L115"
+        },
+        {
+          "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+          "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+          "line_end": 248,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "oi-overide/oi",
+          "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md#L248-L248"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_379902eed36c592cdc9625636156a473cb8e32b47ff7ea87cdbb01f2422d7772",
+        "slc_515d3b2244ea1a1a21372dccb37d0c47fd7abfca116321f5f3441a18e21c581f",
+        "slc_a217d35623623d1a1ea18ffc5656d1a76e13016298b2712f4b451634adfe2725"
+      ],
+      "text": "The project is licensed under GNU GPL-2.0 and uses changesets for version management and npm publishing."
+    }
+  ],
+  "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 248,
+        "path": "README.md",
+        "size": 5986
+      },
+      {
+        "lines": 62,
+        "path": "CHANGELOG.md",
+        "size": 1779
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 37,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_641806fecfad5812b135253b1821d5e1",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/oi-overide/oi/dc4904403f5013e31d436b03a5ea5f6d31201ef8/e9bfe679c94f5f47/manifest.json",
+  "package_id": "pkg_696a3f311e730b0e66c33a4a3c1f83ab9ade42174e439fa99ed4833cb947cfd9",
+  "repo": "oi-overide/oi",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "59a0b176d348347f0399d3ea383f6233fa479666496a06a710b0e0074d68db6b",
+  "snapshot_id": "e9bfe679c94f5f47",
+  "sources": [
+    {
+      "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+      "git_sha": "f1c4eaa325aba701d1ce86ca3c7687eefcb3d6bd",
+      "lines": 62,
+      "path": "CHANGELOG.md",
+      "repository": "oi-overide/oi",
+      "sha256": "5571bf7d1c2ee2ab3fcf4eb8510a1be714e7e53dccedef6f2122244e522cd625",
+      "source_id": "src_4ebd2915698a5fd388cd12ae51b152d6",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/CHANGELOG.md"
+    },
+    {
+      "commit": "dc4904403f5013e31d436b03a5ea5f6d31201ef8",
+      "git_sha": "0ce9c68bb11b58bc3aedab5fb4b2a810ca74192d",
+      "lines": 248,
+      "path": "README.md",
+      "repository": "oi-overide/oi",
+      "sha256": "3e4aaa67ed6c95b4aeffeb60d1b776c2654e7ca912169db0b2c03bfea54e1b9d",
+      "source_id": "src_6091829f7e815a32ac1bcadc9ba77b6d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/oi-overide/oi/blob/dc4904403f5013e31d436b03a5ea5f6d31201ef8/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: Users place prompts between `//>` and `<//` markers in source files; generated code is shown with an accept-changes (y/n) prompt. Code generation uses the OpenAI API; a changelog entry states all other platform support was removed, leaving OpenAI as the sole provider.",
+  "superseded_claim_ids": []
+}

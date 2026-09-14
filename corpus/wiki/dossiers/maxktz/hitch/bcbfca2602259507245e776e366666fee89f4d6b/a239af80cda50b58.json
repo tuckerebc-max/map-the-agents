@@ -1,0 +1,600 @@
+{
+  "applied_operation_id": "op_7bb4a4e40af647bf8b556245b8cd7ab2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_3681a4756ba766be2a278fad254b29188671aa3945b873d82a9ea4cc5bd01575",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5fcca206ff22eab0386931efbec086614030d4aac9c606d3a39c261052a95bc4"
+      ],
+      "text": "Hitch is a CLI for sharing the user's real terminal with AI coding agents; running `hitch` gives agents terminal context, ability to send keys or commands, and inspect output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6dc0f5014bf85f06a57fd01d44d3497ffac6a9cbf647cb8cbf2e9c6c278947af",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 24,
+          "line_start": 21,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L21-L24"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1902023e075ec92f42bb1b66ab014f3721f77882776a804512a42d5daada532c",
+        "slc_bf01543ef7b53db192270a9d1c5646c786f1ab43fa3240fabe49be2085fa1c0c"
+      ],
+      "text": "The `hitch context` command shows compact terminal state and recent output, with forms for all project terminals, a specific terminal, or `--all` including terminals outside the project."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b50d452eefc34b43471e6de22d31a722a804fe8e38b6eeb3fdda4c1b6459d56",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 58,
+          "line_start": 51,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L51-L58"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L36-L38"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 47,
+          "line_start": 42,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L42-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00e1e8028eca65660c1d64f11757d6c6d92bdabd37505d77b45587e084118978",
+        "slc_36d47b0744e428df5dc2a03a4c514ca871e075ba7c43058872a73e5925f0c4b3",
+        "slc_98e673b1c6378a49cc99aca8ce211531a18b3880b3cd74c5ce97aa414bda4f42"
+      ],
+      "text": "`hitch send-keys -t <terminal>` sends input to a terminal, supports keys like Enter, Tab, C-c, and options including --wait finish/quiet/time/output, --timeout (default 30s), --tail, and --force."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_52783d4ddb5d9029927b667fcfe7cef5edec8bd8404c7e2aacde3e259f84430a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L95-L95"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L83-L83"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 91,
+          "line_start": 87,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L87-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0050603d80c7637faae8894cef720b23b9226a932a4fd89d611665600e9549b8",
+        "slc_7c279c6f62ce9837adf87d1092e7c45671d7540f7396612f65eae2b949ee6710",
+        "slc_b7aeae6744642a74aafc451ea1d677fc7468ad2eb453addae2b93af77f77254f"
+      ],
+      "text": "`hitch capture` mirrors tmux capture-pane behavior with tmux-compatible options (-p, -S, -E, -e) and accepts no-op compatibility flags such as -C, -J, -N, -T, -a, -q."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97400cbe362db73191667eb7250e8c6c723d8c7fa3dcab69c865899f447cd763",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L73-L73"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 63,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L61-L63"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 71,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L70-L71"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 68,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L67-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_094c0972ae83a52ef6e5d25dd9da6c96d3403ca75839fd6bebecd3c84c3fb61b",
+        "slc_48bc8380478247c9848650430732c0b197c18a07b04dbc945777ff05efba9f32",
+        "slc_8716760e649a88cbb06da697f50cc27aa8836c52d39fb2457445a35e6c22e906",
+        "slc_8f7de37444c80d76690a95eea6269f0268cfed752f46c7214370764e19a40f5b"
+      ],
+      "text": "Human-facing usage is minimal: `hitch` starts sharing and `unhitch` or `hitch off` stops it; remaining commands are built for agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b27170cff80c1d0ab3195277abc8e6a772ee1e06f9ab06cdc70a865c8064b81",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7dd811b17fdd5c14cbbead10afbd8a3e788e9c58ba908b339d2f544cedaab5a2"
+      ],
+      "text": "Hitch is not a terminal multiplexer UI like tmux; the terminal feels like a normal shell while Hitch proxies input/output, records context, and exposes agent-friendly commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb46d937cfce6256437e956c6d4eb4e6b5f2af0137f98e5a865edb6ddfc6b331",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 106,
+          "line_start": 99,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L99-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a7f226f92bf630d663024bf63cff6bddb46083ce770cfaaf2f4293c5c3441107"
+      ],
+      "text": "Hitch refuses by default sending shell commands into terminals with running processes, printing terminal context instead; `--force` overrides this, and a sequence starting with C-c is allowed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2bf1f55bf4047ff84256f81224f2612b07336f861e47aaf8fd03feebf89ffe86",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 5,
+          "line_start": 1,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L1-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c36fc9cb14579c7e97e86ddc70142984e6682d15b7aca340696eb489e0e9f233"
+      ],
+      "text": "A SKILL.md (version 3) describes when agents should use hitch, e.g. before starting a dev server, watcher, tunnel, REPL, build, or log tail that may already be running."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ba161c12660d344be2c3507f0fdfb5068a0c68ced87cce3310cd76e0ff56d3e",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 106,
+          "line_start": 99,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L99-L106"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L77-L77"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+          "line_end": 32,
+          "line_start": 29,
+          "path": "SKILL.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md#L29-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a7f226f92bf630d663024bf63cff6bddb46083ce770cfaaf2f4293c5c3441107",
+        "slc_b5fc16530913028f03aa6cef128d19de6d570e27209355a2954f95579370dd07",
+        "slc_c43538eb03eef5f8a6988365d4fc2d966d83cca97e3dac27e1fd176efe4fe4b3"
+      ],
+      "text": "The skill instructs agents to prefer `hitch context` first, avoid --all by default, use --wait instead of sleep polling, and only use hitch for collaboration rather than short tool calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_173014819b1af3b4b441868ee2098845bf5b367c8e77a8cb4d24a31d65b0f2f6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 51,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L48-L51"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md#L55-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ccaceae983870a64b4a7f6f997ee64b27a3751500361784ca32dddce1513d765",
+        "slc_f59db15f1e43b888ce2ad8c7f728794ecbf275124f6c0c041f065b2dcfe9d6b6"
+      ],
+      "text": "Installation is via `npm install -g hitch-cli`; supported platforms are macOS and Linux on arm64 or x64."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8da2f6f795818f6575b7ae57a7877b48524e00fc9ebcf436419b60b05208b7d4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "f83260383705300fb5f2ca8189007c826416ad1b",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "CONTRIBUTING.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/CONTRIBUTING.md#L9-L12"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "f83260383705300fb5f2ca8189007c826416ad1b",
+          "line_end": 18,
+          "line_start": 16,
+          "path": "CONTRIBUTING.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/CONTRIBUTING.md#L16-L18"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "f83260383705300fb5f2ca8189007c826416ad1b",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "CONTRIBUTING.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/CONTRIBUTING.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15c1e74a184ebe0a53fb381d064cf4187f0597ad62f6ded8929dfbc07a68dfa6",
+        "slc_50a51aa045750c60eb7b238143a7443dae4aa0bb6b1e48b172bb62b10518f21b",
+        "slc_b9e1f18d6e60b7290576611af41c46cc69983513ec93499e028b369b6cf7f3f8"
+      ],
+      "text": "Repository development practice: contributors run `cargo fmt -- --check` and `cargo test` before committing, and build locally with `cargo build --release`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba1c5f2217655bdacc2ef49bd6ab15bda6303007ae37d5d7f8e601acb69d685d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "f83260383705300fb5f2ca8189007c826416ad1b",
+          "line_end": 27,
+          "line_start": 24,
+          "path": "CONTRIBUTING.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/CONTRIBUTING.md#L24-L27"
+        },
+        {
+          "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+          "git_sha": "f83260383705300fb5f2ca8189007c826416ad1b",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "CONTRIBUTING.md",
+          "repository": "maxktz/hitch",
+          "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/CONTRIBUTING.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50a317e7ff478a85605de0bc89055bdd00ba067dfd4f83eddecbb6cc3a77c8d3",
+        "slc_5a81b81e5fefb346cc92351bbde398bad886fc06f98bd49d3f5483a797840186"
+      ],
+      "text": "Repository development practice: releases use `npm run release -- <version>` and a tag push; GitHub Actions then builds native binaries, publishes hitch-cli to npm, and creates a GitHub release."
+    }
+  ],
+  "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 85,
+        "path": "README.md",
+        "size": 2532
+      },
+      {
+        "lines": 140,
+        "path": "SKILL.md",
+        "size": 7155
+      },
+      {
+        "lines": 30,
+        "path": "TODO.md",
+        "size": 1061
+      },
+      {
+        "lines": 15,
+        "path": "docs/ascii.md",
+        "size": 331
+      },
+      {
+        "lines": 75,
+        "path": "docs/stateful-context-idea.md",
+        "size": 1926
+      },
+      {
+        "lines": 29,
+        "path": "CONTRIBUTING.md",
+        "size": 446
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 31,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ab637be794715b78a5b41cf5610417e9",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/maxktz/hitch/bcbfca2602259507245e776e366666fee89f4d6b/a239af80cda50b58/manifest.json",
+  "package_id": "pkg_34de0e99b168b727d933093ef205dcee16cdc31411f57e5a9bcbd828efdb82be",
+  "repo": "maxktz/hitch",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0262ffa828a9fc7ad06685e4309df56078635456c8ad50a82388274895afb48c",
+  "snapshot_id": "a239af80cda50b58",
+  "sources": [
+    {
+      "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+      "git_sha": "f83260383705300fb5f2ca8189007c826416ad1b",
+      "lines": 29,
+      "path": "CONTRIBUTING.md",
+      "repository": "maxktz/hitch",
+      "sha256": "178bdb0497550107f27fe6c12b68bc6e5089d3069a9440a35fccf3b95113fc17",
+      "source_id": "src_ccdd2b54c3ea5a3db4becd00281f4a13",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/CONTRIBUTING.md"
+    },
+    {
+      "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+      "git_sha": "72e6157348d8fae2a2412b9e22aa49ca4bf0bda4",
+      "lines": 85,
+      "path": "README.md",
+      "repository": "maxktz/hitch",
+      "sha256": "7279a5638b08309fcf65442b9e28b282666a81ee533315e684877fa9bee6ed3b",
+      "source_id": "src_51665feb7651590dad68b90b8932db8d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/README.md"
+    },
+    {
+      "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+      "git_sha": "51e1ddff02941bf289bd7ef2b9eab9207099df18",
+      "lines": 140,
+      "path": "SKILL.md",
+      "repository": "maxktz/hitch",
+      "sha256": "808fd272901ac56917224277e77f815c3b2cc1e9726ef58e58a8f950cef3ee90",
+      "source_id": "src_549d3fc0112e5f72992f5f86e5f05550",
+      "stored": "skill.md-0e95f5a36660.md",
+      "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/SKILL.md"
+    },
+    {
+      "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+      "git_sha": "8bd2cc8fdae291871509eebf891ff7b65106aedc",
+      "lines": 30,
+      "path": "TODO.md",
+      "repository": "maxktz/hitch",
+      "sha256": "8502a3bccea32f8e7b7bac2b8173449f6b7ed74ec60403a960697ccc696df258",
+      "source_id": "src_f6e32248fa5457c28ffc982f1b5a8cb9",
+      "stored": "todo.md-5c6a1301c6b5.md",
+      "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/TODO.md"
+    },
+    {
+      "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+      "git_sha": "6a633d10b8deb23af3a222bd748d2ef2f6074cf3",
+      "lines": 15,
+      "path": "docs/ascii.md",
+      "repository": "maxktz/hitch",
+      "sha256": "2948f49edfc6888a30a7f46772d084783a02cfa0ab593b4916dca2fa8b137686",
+      "source_id": "src_f12fe9dec90c5193990d3a07377ef262",
+      "stored": "ascii.md-bd8c5ce0cd6f.md",
+      "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/docs/ascii.md"
+    },
+    {
+      "commit": "bcbfca2602259507245e776e366666fee89f4d6b",
+      "git_sha": "92397759bc38fad7ece7284866a2320bfb7830f0",
+      "lines": 75,
+      "path": "docs/stateful-context-idea.md",
+      "repository": "maxktz/hitch",
+      "sha256": "81b6722199285b8d6d72f2c6577e3e6ba5c03c2205484c2d575a8a20fbe0c732",
+      "source_id": "src_118cdd2d89e15f94aac65beb7fb6b37a",
+      "stored": "stateful-context-idea.md-eb9ff27b055d.md",
+      "url": "https://github.com/maxktz/hitch/blob/bcbfca2602259507245e776e366666fee89f4d6b/docs/stateful-context-idea.md"
+    }
+  ],
+  "summary": "Hitch is a Rust CLI distributed via npm as hitch-cli that shares a user's real terminal with AI coding agents, exposing agent commands like context, send-keys, and capture, with a SKILL.md agent skill and documented contributor workflows.",
+  "superseded_claim_ids": []
+}

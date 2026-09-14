@@ -1,0 +1,721 @@
+{
+  "applied_operation_id": "op_83eb460cb828491ab4988bb7b3317629",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_400b79043bcfea23abe44a308a3ebc957910fd32a1a2083d4346b8402ee0a593",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 178,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L166-L178"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 351,
+          "line_start": 339,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L339-L351"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29716fbbab6e47a433ed4d0ee431e0cce3aceb0ed22bca6032e1e8427b7222e4",
+        "slc_ff45dcfc401aed9e302f8d49124f2ab301aaf69d1d832a3f6a8ee5f9aa78932a"
+      ],
+      "text": "The project is a Cargo workspace split by responsibility into crates including aether-core (text buffer, lexer, search), aether-render (Direct2D rendering/themes), aether-win32 (native UI layer), aether-lsp, aether-dap, aether-remote, aether-ai, aether-tree-sitter, aether-plugin, aether-shared, and aether-cli."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a2b19b57ba367a9da947395975c931a256bee6881a1685017fa611aa91f89965",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 287,
+          "line_start": 287,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L287-L287"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 291,
+          "line_start": 290,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L290-L291"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 118,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L117-L118"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L114-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09019ec691b4f5f5c7eb698964276de08b1e4864c8ad4eb616ea01166bd71628",
+        "slc_4d8e92fe906ef5df76129cfd56155eb41b179aeda82d17fd57a95f70d8bac6c0",
+        "slc_93c2fe413fcab164d8d9ac7cc09b496d42d9d619ee8c4214b938061d489fbf8b",
+        "slc_e4d24d8e810655485189dc7fa21d56e7beb9eb7cd53f5ceaf78aa23a97a07ca6"
+      ],
+      "text": "The aether CLI can launch the GUI, open a file path, and navigate to a line:column position such as file.txt:10:5."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d9479f40a9a351c7e75764f50ed2accd83361ff9eefe7c41f2c0486c05a5967b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 238,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L223-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9b883f2963bfa3f2e0f197709ef5da111a32ca3d131aff6fddf0cbfe4e906cc4"
+      ],
+      "text": "Per the Chinese feature list, the aether CLI supports --wait and --new-window flags in addition to opening paths and locating line/column positions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2c46354b04eeaf6b5ee9790071705c34ef7881be0a1311269792fabdd8d7417",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 65,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L50-L65"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 238,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L223-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27a4551b0a9b1a83443589235b6a79c8055a1d76f5036c4ca826b6b1ccfc8453",
+        "slc_9b883f2963bfa3f2e0f197709ef5da111a32ca3d131aff6fddf0cbfe4e906cc4"
+      ],
+      "text": "The editor uses a Piece Table text buffer with multi-cursor support, undo/redo history, syntax highlighting, find/replace, and auto-indentation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1df5d36482c628b390891f91bd2c4e42dfacfd1e5b2f3e1cf62d05ae8a7df3e8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 65,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L50-L65"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 238,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L223-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27a4551b0a9b1a83443589235b6a79c8055a1d76f5036c4ca826b6b1ccfc8453",
+        "slc_9b883f2963bfa3f2e0f197709ef5da111a32ca3d131aff6fddf0cbfe4e906cc4"
+      ],
+      "text": "The UI is self-rendered via a Direct2D/DirectWrite pipeline with themes, translucent backgrounds, shadows, animations, and dirty-rectangle optimization, on a Win32 window with DWM immersive dark mode and high-DPI support."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36335f66754aa7540421f29eb5f9a920fb55979496c35d3e9503177854992ac9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 65,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L50-L65"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 238,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L223-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27a4551b0a9b1a83443589235b6a79c8055a1d76f5036c4ca826b6b1ccfc8453",
+        "slc_9b883f2963bfa3f2e0f197709ef5da111a32ca3d131aff6fddf0cbfe4e906cc4"
+      ],
+      "text": "AI integration is HTTP-based LLM interaction with DeepSeek and Kimi presets, offering code explanation, rewrite, inline suggestions, agent tool-result feedback, and an API configuration panel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6f3af944d23d376866c241ba1daf64e9b58315403c9d90eabd1f47c3c05de1b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "f12f6537c2655058832cbd3e1df803f4a357cc8f",
+          "line_end": 11,
+          "line_start": 5,
+          "path": "AGENT_SPEC.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/AGENT_SPEC.md#L5-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_de500e63bc8d150f8794a052a1a1cd0c4dafd9e13c48a1004f592c5cca1b61e9"
+      ],
+      "text": "AGENT_SPEC.md sets goals of production-grade Git support, SSH remote connections, Acrylic/glass UI, 60fps rendering with sub-16ms input latency, and configurable LLM API keys (OpenAI, Claude, Kimi)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43366760b3184d893c2923802d1e949bb19867412af520144e55020e081102fc",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "f12f6537c2655058832cbd3e1df803f4a357cc8f",
+          "line_end": 17,
+          "line_start": 14,
+          "path": "AGENT_SPEC.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/AGENT_SPEC.md#L14-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e37bd5627d361a8aa891b09de3d38ebe0e2a5645256a7506ce3662819ae2dee"
+      ],
+      "text": "AGENT_SPEC.md lists non-goals: no new LSP/DAP features, no new plugin-system features, no additional localization, and no cloud sync or collaborative editing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41018fc6304a989dcee919a9cb64b0045cfb80858b43d3f097c3a7dd71f52338",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "f12f6537c2655058832cbd3e1df803f4a357cc8f",
+          "line_end": 36,
+          "line_start": 21,
+          "path": "AGENT_SPEC.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/AGENT_SPEC.md#L21-L36"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "f12f6537c2655058832cbd3e1df803f4a357cc8f",
+          "line_end": 72,
+          "line_start": 65,
+          "path": "AGENT_SPEC.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/AGENT_SPEC.md#L65-L72"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "f12f6537c2655058832cbd3e1df803f4a357cc8f",
+          "line_end": 54,
+          "line_start": 48,
+          "path": "AGENT_SPEC.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/AGENT_SPEC.md#L48-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51300a0efd896b63f5457dc2970bdea7c60b371790341729fdeb9ce83f444c40",
+        "slc_627090473fab3e80ccd4025410aad2e98fc8905f139694ef64ff77ae7b0529bb",
+        "slc_d95c0ffb7af4f567326612318b7f9c9c6daa0dea54c4fdd341f25c0ddabc748e"
+      ],
+      "text": "AGENT_SPEC.md records that aether-ai, aether-shared, and aether-terminal crates were missing (directories present but empty) at spec time, and plans an AiClient with a complete(prompt) async method plus an AppSettings struct covering AI, UI, and remote settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_efc3db0ad90748a6fc14286ab0201f689380daf83b294216402cae9af2185a3c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "171894008a007288e9c34c823de2e41953691863",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "CONTRIBUTING.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/CONTRIBUTING.md#L9-L9"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "171894008a007288e9c34c823de2e41953691863",
+          "line_end": 95,
+          "line_start": 94,
+          "path": "CONTRIBUTING.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/CONTRIBUTING.md#L94-L95"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "171894008a007288e9c34c823de2e41953691863",
+          "line_end": 143,
+          "line_start": 134,
+          "path": "CONTRIBUTING.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/CONTRIBUTING.md#L134-L143"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "171894008a007288e9c34c823de2e41953691863",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "CONTRIBUTING.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/CONTRIBUTING.md#L115-L115"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "171894008a007288e9c34c823de2e41953691863",
+          "line_end": 91,
+          "line_start": 86,
+          "path": "CONTRIBUTING.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/CONTRIBUTING.md#L86-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11810501d9f7805ca3f4e468cdcdb8fbb9c1b227acae5b45adcfec674fe2ad1a",
+        "slc_1d9fad4a8e326ec34736a21f1cd81d133c9afa8b7dc53569ea35a5bdfb43f513",
+        "slc_7bd75a3c53cc3902b3561e157a36bcc207ed94ef7836acfbb74a4a4f0696d8ea",
+        "slc_94fc86b5134a228c40c1e42fcac597f28a7614800874e2cedd6691220df5301d",
+        "slc_e4849000efa1ae1df561f62fe6d5748a739dba3fc022c9d5b6467d199e941cf9"
+      ],
+      "text": "Repository development practice: CONTRIBUTING.md requires external contributors to use a fork workflow, branch from dev (temp/ or fix/ prefixes), target PRs at dev rather than main, and follow a <type>(<scope>): <description> commit format with types like feat, fix, perf, and refactor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6d18f4ce77c2fa6edf69eb5426a5fe440bf8fc20586030948f1c4233057af85",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 142,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L141-L142"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 132,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L131-L132"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 146,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L145-L146"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L135-L135"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "171894008a007288e9c34c823de2e41953691863",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "CONTRIBUTING.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/CONTRIBUTING.md#L103-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a967500df882000417d455704b66a515a79eacc9b9c86e6737637c9e78651b5",
+        "slc_7f57f195a350dbdedf84e00bc49fcbcb75870c9f20a28fe4ba7d3d0040d00059",
+        "slc_83cef2b82bb4e97513a3ba9b33d81d965ccbce44ff509d2bf685590a609f57c4",
+        "slc_a878cdd525a45796ac638f985b97ce602ba3062890d53e0348a223994b135f3a",
+        "slc_b78af5de7549b14277eda925f9aaf6c015e407566e2dd21cd78b480adea4be55"
+      ],
+      "text": "Repository development practice: a pre-push checklist mandates cargo fmt --check, cargo check -p aether-win32, and cargo test --workspace --lib --no-fail-fast; the README also documents workspace tests run with CARGO_INCREMENTAL=0 to avoid an ICE, clippy with -D warnings, a GUI smoke test script, and a coverage script."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e9f67a36b6e3a57a448d175052b56300bef5811d39f79bbd4d5bffe22704637",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L148-L148"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 331,
+          "line_start": 323,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L323-L331"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 158,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L150-L158"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_209090f228161bcb49f3ba7c1b0a1e3fa583a67ccb0c25356aa238f47ced98b7",
+        "slc_4ba5911a6ab745ee6a6034ca7fe859905be663c54bcddca644905f49d3a57511",
+        "slc_b2786293adfb7022536bbede44b54f612021eac1c9698653f54a7124ddbe0b39"
+      ],
+      "text": "Repository development practice: the README reports a test snapshot (dated 2026-07-06) of 793 passing unit tests, coverage of about 47.8% regions / 43.7% lines, a successful GUI smoke test, ~67MB memory, and a lexer benchmark of roughly 500-650 MiB/s."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d40631a4abd79ccd20a4e57fa1415db23824a3cb9f38a55814c4ec5bb84a9f38",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 92,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L89-L92"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 265,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L262-L265"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d26c09879cfb59bf922eeabc566f1b263a67dcc87bd1ae19ae9aa28101430ced",
+        "slc_e29e0422e3b401e5c73290c9aaec259801ad68f6dcf841afa209abe5f357ce8a"
+      ],
+      "text": "Building requires Windows 10 1809+ (Windows 11 recommended), a Rust stable toolchain pinned via rust-toolchain.toml, Visual Studio 2022 or Windows SDK build tools, and the x86_64-pc-windows-msvc target."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e566c9e832b219f65dc74af7cf2cd5281569e30f38e2a488a3b9d42023ad8bd7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 219,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L219-L219"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md#L46-L46"
+        },
+        {
+          "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+          "git_sha": "f12f6537c2655058832cbd3e1df803f4a357cc8f",
+          "line_end": 36,
+          "line_start": 21,
+          "path": "AGENT_SPEC.md",
+          "repository": "aetherstudio-cn/aetherstudio",
+          "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/AGENT_SPEC.md#L21-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11cc4407362c458a500ecea5208652a7e27180fc426279f97779c5aaedf077ef",
+        "slc_2968b40f02544af7c27ae58361f6413b7a4a6c6476bdfa449510bb351bf78943",
+        "slc_51300a0efd896b63f5457dc2970bdea7c60b371790341729fdeb9ce83f444c40"
+      ],
+      "text": "The product currently targets only Windows 10 1809+ and Windows 11; AGENT_SPEC.md also notes the build environment lacked a Rust toolchain, so code correctness had to be ensured without compile verification."
+    }
+  ],
+  "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 384,
+        "path": "README.md",
+        "size": 16932
+      },
+      {
+        "lines": 96,
+        "path": "AGENT_SPEC.md",
+        "size": 4517
+      },
+      {
+        "lines": 269,
+        "path": "CONTRIBUTING.md",
+        "size": 6683
+      },
+      {
+        "lines": 21,
+        "path": "LICENSE.txt",
+        "size": 1090
+      },
+      {
+        "lines": 1,
+        "path": "TEST_WORKFLOW.md",
+        "size": 176
+      },
+      {
+        "lines": 54,
+        "path": "赞助.md",
+        "size": 1745
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 746,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_de388e0e09515b3e8b42a983904d3344",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 3,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aetherstudio-cn/aetherstudio/f7fcd26149f22f88c90354ef297aac400d8c20d4/9dbf470b8b2608bc/manifest.json",
+  "package_id": "pkg_44a4185dcd60640753c0bd882360cf7276c72d3f5179eb451b5a46ec45574048",
+  "repo": "aetherstudio-cn/aetherstudio",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c7f73aa21e4d7c595f53b19167de0096b6ac96e117612a0330764be594ffa0e2",
+  "snapshot_id": "9dbf470b8b2608bc",
+  "sources": [
+    {
+      "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+      "git_sha": "f12f6537c2655058832cbd3e1df803f4a357cc8f",
+      "lines": 96,
+      "path": "AGENT_SPEC.md",
+      "repository": "aetherstudio-cn/aetherstudio",
+      "sha256": "02efdf90aac5dd13bddf3708b9699534ce4eadbb7059f9481c5fe956b2bb5524",
+      "source_id": "src_d1676137d63651adb39a2a6da77daa21",
+      "stored": "agent_spec.md-42cbb8e87359.md",
+      "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/AGENT_SPEC.md"
+    },
+    {
+      "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+      "git_sha": "171894008a007288e9c34c823de2e41953691863",
+      "lines": 269,
+      "path": "CONTRIBUTING.md",
+      "repository": "aetherstudio-cn/aetherstudio",
+      "sha256": "25c660f3fae49ff619be143420998582ebc32b0fec1b31d35c5587b9ba3c70ae",
+      "source_id": "src_4d237f01b686541eb87386cb5f8a0e86",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/CONTRIBUTING.md"
+    },
+    {
+      "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+      "git_sha": "1101cf5995062e856059d619d3852b2794c395ab",
+      "lines": 21,
+      "path": "LICENSE.txt",
+      "repository": "aetherstudio-cn/aetherstudio",
+      "sha256": "ddcf3337a19cd33082b63654750f368f3742d00dbbe5a78e9b38bcd9213c66ac",
+      "source_id": "src_cf7ff58108425328aad941ef507fd9f7",
+      "stored": "license.txt-d0ed4cc3fb70.txt",
+      "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/LICENSE.txt"
+    },
+    {
+      "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+      "git_sha": "fe8942374449972b1daddd8fb5f88466124d9202",
+      "lines": 384,
+      "path": "README.md",
+      "repository": "aetherstudio-cn/aetherstudio",
+      "sha256": "ad6c81d301f380be393c0bf181357dd17755c20a70bcbc4703bc0a94cca5a2ad",
+      "source_id": "src_9c71f133e81b550881db667060ce31fc",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/README.md"
+    },
+    {
+      "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+      "git_sha": "8c5c7d7ab72b507698a8dfe30bbd111b494ddc6c",
+      "lines": 1,
+      "path": "TEST_WORKFLOW.md",
+      "repository": "aetherstudio-cn/aetherstudio",
+      "sha256": "4bffcdff785f931d12f941d4c6327652759d85f6a69a2e3ed8446fd261b11f7d",
+      "source_id": "src_2911f690c5165c4fa7ce8efc7846e84d",
+      "stored": "test_workflow.md-7960bdb6a2d3.md",
+      "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/TEST_WORKFLOW.md"
+    },
+    {
+      "commit": "f7fcd26149f22f88c90354ef297aac400d8c20d4",
+      "git_sha": "78e2b5eed34c590222cb69492c47411d12bd1112",
+      "lines": 54,
+      "path": "赞助.md",
+      "repository": "aetherstudio-cn/aetherstudio",
+      "sha256": "e6fa13997f8637a04e06414cf28998c796c038383b8890b1699f59ab577d0d12",
+      "source_id": "src_119cec2499ee5458a86ceac36cc4f6a6",
+      "stored": "md-4e62358f0e2b.md",
+      "url": "https://github.com/aetherstudio-cn/AetherStudio/blob/f7fcd26149f22f88c90354ef297aac400d8c20d4/%E8%B5%9E%E5%8A%A9.md"
+    }
+  ],
+  "summary": "README documents Aether Studio, a Rust + Win32 native Windows code editor organized as a multi-crate Cargo workspace with AI, LSP/DAP, Tree-sitter, remote, and plugin features; AGENT_SPEC.md describes planned production-grade goals, and CONTRIBUTING.md defines the commit/PR workflow.",
+  "superseded_claim_ids": []
+}

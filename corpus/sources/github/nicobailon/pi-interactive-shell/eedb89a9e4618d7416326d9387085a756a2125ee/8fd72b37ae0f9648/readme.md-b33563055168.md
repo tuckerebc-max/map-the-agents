@@ -1,0 +1,655 @@
+<p>
+  <img src="banner.png" alt="pi-interactive-shell" width="1100">
+</p>
+
+# Pi Interactive Shell
+
+An extension for [Pi coding agent](https://github.com/badlogic/pi-mono/) that lets Pi autonomously run interactive CLIs in an observable TUI overlay. Pi controls the subprocess while you watch - take over anytime.
+
+https://github.com/user-attachments/assets/76f56ecd-fc12-4d92-a01e-e6ae9ba65ff4
+
+```typescript
+interactive_shell({ command: 'vim config.yaml' })
+```
+
+Important: the `interactive_shell({...})` snippets in this README are tool calls made by Pi (or extension/prompt authors). End users do not type these directly into chat. As a user, ask Pi to run something (for example: "run this in dispatch mode") or use `/spawn`, `/attach`, and `/dismiss` commands.
+
+## Why
+
+Some tasks need interactive CLIs - editors, REPLs, database shells, long-running processes. Pi can launch them in an overlay where:
+
+- **User watches** - See exactly what's happening in real-time
+- **User takes over** - Type anything to gain control
+- **Agent monitors** - Query status, send input, decide when done
+
+Works with any CLI: `vim`, `htop`, `psql`, `ssh`, `docker logs -f`, `npm run dev`, `git rebase -i`, etc.
+
+## Install
+
+```bash
+pi install npm:pi-interactive-shell
+```
+
+The `interactive-shell` skill is automatically symlinked to `~/.pi/agent/skills/interactive-shell/`.
+
+**Requires:** Node.js. PTY support uses `zigpty` prebuilt binaries (no `node-gyp` toolchain required on supported platforms).
+
+## Modes
+
+| Mode | Agent waits? | How output reaches agent | Best for |
+|---|---|---|---|
+| **Interactive** (default) | No | Stable `sessionId` for input/status | Editors, REPLs, SSH — when the agent or user will drive the shell |
+| **Hands-free** | No | Poll with `sessionId` plus quiet updates | Dev servers, builds — when you want to watch progress and send follow-up commands |
+| **Dispatch** | No | Notification on completion via `triggerTurn` | Delegating tasks to subagents — fire and forget |
+| **Monitor** | No | Notification on structured monitor trigger events | Watchers, logs, tests, and state checks — wake only when something specific happens |
+
+**Interactive** — The overlay opens and returns a stable `sessionId` immediately. The user can type directly, and the agent can send `input` with `submit: true`, check status, or background the same id. Use for editors (`vim`), database shells (`psql`), SSH, or manual CLI flows where the next step is still interactive.
+
+**Hands-free** — The overlay opens and returns a stable `sessionId` immediately. The agent polls periodically with `sessionId` and also receives quiet/output updates. Good for long-running builds or dev servers where you want to react mid-flight (send input, check logs, kill when ready).
+
+**Dispatch** — Returns immediately. No polling. The agent gets woken up via `triggerTurn` only when the session completes (natural exit, timeout, quiet detection, or user kill). The notification includes a tail of the output. This is the default for delegating work to subagents. Add `background: true` to skip the overlay entirely.
+
+**Monitor** — Returns immediately. The agent gets woken up when a configured monitor trigger emits an event, and when the monitor lifecycle stops. Supports stream triggers, poll-diff checks, first-class file watching, optional cooldowns, persistence controls, detector commands, and event history queries. Runs headless; attach to inspect if needed.
+
+## Quick Start
+
+The examples below show agent-side tool calls. They are not chat commands for end users.
+
+### Structured Spawn
+
+For Pi, Codex, Claude, and Cursor, the agent can use structured spawn params instead of building command strings by hand:
+
+```typescript
+// User says: "Spawn pi so I can edit files interactively"
+interactive_shell({ spawn: { agent: "pi" }, mode: "interactive" })
+
+// User says: "Delegate this refactor to codex and notify me when it's done"
+interactive_shell({ spawn: { agent: "codex" }, mode: "dispatch" })
+
+// User says: "Ask cursor to review the diffs in dispatch mode"
+interactive_shell({ spawn: { agent: "cursor", prompt: "Review the diffs" }, mode: "dispatch" })
+
+// User says: "Ask claude to review the diffs in dispatch mode"
+interactive_shell({ spawn: { agent: "claude", prompt: "Review the diffs" }, mode: "dispatch" })
+
+// User says: "Start claude in a worktree for hands-free monitoring"
+interactive_shell({ spawn: { agent: "claude", worktree: true }, mode: "hands-free" })
+
+// User says: "Fork my current pi session" (Pi-only)
+interactive_shell({ spawn: { mode: "fork" }, mode: "interactive" })
+```
+
+Structured `spawn` uses the same resolver and config defaults as the user-facing `/spawn` command. Raw `command` is still supported for arbitrary CLIs and custom launch strings. For unattended coding-agent work in a repository, prefer structured `spawn` with `worktree: true` or set an explicitly isolated `cwd`; a raw agent command runs in the supplied working directory and can change its Git state.
+
+Any extra key you add under `spawn.commands` becomes a first-class spawn agent, usable as `spawn: { agent: "aider" }` and `/spawn aider`, with its own `spawn.defaultArgs` entry, worktree support, and prompt passthrough. `fork` stays Pi-only. Agent names must start with a letter or digit, may contain letters, digits, `.`, `_`, and `-`, and cannot be `fresh` or `fork`, because those are `/spawn` keywords.
+
+For Codex image or design work, Codex can invoke `gpt-image-2` directly from the prompt. Natural language is usually enough, and `$imagegen` forces the image-generation tool when you need it. Attach references with `-i` for edits and iterations. See the bundled `codex-cli` skill for concrete examples. For Cursor CLI-specific command references, see the optional `examples/skills/cursor-cli` skill. Cursor structured spawn defaults to `--model composer-2-fast`, which explicitly selects Cursor's Composer 2 Fast model.
+
+### Interactive
+
+```typescript
+// User says: "Open package.json in vim"
+interactive_shell({ command: 'vim package.json' })
+
+// User says: "Connect to the postgres database"
+interactive_shell({ command: 'psql -d mydb' })
+
+// User says: "SSH into the server"
+interactive_shell({ command: 'ssh user@server' })
+```
+
+The tool returns a stable `sessionId` immediately. The agent can drive the same shell with `interactive_shell({ sessionId, input, submit: true })`, while the user can still type directly in the focused overlay.
+
+### Hands-Free
+
+```typescript
+// Start a long-running process
+interactive_shell({
+  command: 'npm run dev',
+  mode: "hands-free",
+  reason: "Dev server"
+})
+// → { sessionId: "calm-reef", status: "running" }
+
+// User says: "Check on the dev server status"
+interactive_shell({ sessionId: "calm-reef" })
+// → { status: "running", output: "Server ready on :3000", runtime: 45000 }
+
+// Send input when needed
+interactive_shell({ sessionId: "calm-reef", input: "/run review", submit: true })
+interactive_shell({ sessionId: "calm-reef", inputKeys: ["ctrl+c"] })
+
+// Kill when done
+interactive_shell({ sessionId: "calm-reef", kill: true })
+// → { status: "killed", output: "..." }
+```
+
+The overlay opens for the user to watch. The agent checks in periodically. User can type anything to take over control. After taking over a monitored hands-free or dispatch session, press `Ctrl+G` to return control to the agent.
+
+### Dispatch
+
+```typescript
+// User says: "Delegate refactoring the auth module to pi and notify me when done"
+interactive_shell({
+  command: 'pi "Refactor the auth module"',
+  mode: "dispatch",
+  reason: "Auth refactor"
+})
+// → Returns immediately: { sessionId: "calm-reef" }
+// → Agent ends turn or does other work.
+```
+
+When the session completes, the agent receives a compact notification on a new turn:
+
+```
+Session calm-reef completed successfully (5m 23s). 847 lines of output.
+
+Step 9 of 10
+Step 10 of 10
+All tasks completed.
+
+Attach to review full output: interactive_shell({ attach: "calm-reef" })
+```
+
+The notification includes a brief tail (last 5 lines) and a reattach instruction. The PTY is preserved for 5 minutes so the agent can attach to review full scrollback.
+
+Dispatch defaults `autoExitOnQuiet: true` — the session gets a 15s startup grace period, then auto-closes after output goes silent (8s by default). The completion notification and details set `completionReason: "auto-close-quiet"`; this is not a terminal command verdict. Tune the grace period with `handsFree: { gracePeriod: 60000 }` or opt out entirely with `handsFree: { autoExitOnQuiet: false }`.
+
+For an external gate, use this provider-agnostic watch-until-terminal pattern. The watcher must print one of the terminal lines and exit only after it has a verdict:
+
+```typescript
+interactive_shell({
+  command: "your-watch-command",
+  mode: "monitor",
+  handsFree: { autoExitOnQuiet: false },
+  timeout: 20 * 60_000,
+  monitor: {
+    strategy: "stream",
+    triggers: [
+      { id: "ready", literal: "ready" },
+      { id: "blocked", literal: "blocked" },
+      { id: "stale-head", literal: "stale-head" }
+    ]
+  }
+})
+```
+
+This works with CI, deploy, health, and custom CLI watchers. If raw dispatch is required, disable quiet auto-close and treat `completionReason: "auto-close-quiet"` as non-terminal.
+
+The overlay still shows for the user, who can Ctrl+T to transfer output, Ctrl+B to background, take over by typing, or Ctrl+Q for more options. `Ctrl+G` only becomes meaningful after the user has taken over a monitored hands-free or dispatch session.
+
+### Background Dispatch (Headless)
+
+```typescript
+// No overlay — runs completely invisibly
+interactive_shell({
+  command: 'pi "Fix all lint errors"',
+  mode: "dispatch",
+  background: true
+})
+// → { sessionId: "calm-reef" }
+// → User can /attach calm-reef to peek
+// → Agent notified on completion, same as regular dispatch
+```
+
+Multiple headless dispatches can run concurrently alongside a single interactive overlay. This is how you parallelize subagent work — fire off three background dispatches and process results as each completion notification arrives.
+
+### Monitor (Event-Driven)
+
+These examples are **agent tool calls**. End users should ask in natural language (for example: "watch my tests and alert me on failures"), and Pi should invoke `interactive_shell` with the monitor config.
+
+Wake the agent when monitor triggers emit events — no polling and no waiting for process completion.
+
+```typescript
+// User says: "Watch my tests and alert me on failures or errors"
+interactive_shell({
+  command: 'npm test --watch',
+  mode: "monitor",
+  monitor: {
+    strategy: "stream",
+    triggers: [
+      { id: "failed", literal: "FAIL" },
+      { id: "error", regex: "/error|exception/i" }
+    ],
+    throttle: { dedupeExactLine: true },
+    persistence: { stopAfterFirstEvent: false }
+  }
+})
+
+// User says: "Monitor the health endpoint and tell me when it changes"
+interactive_shell({
+  command: 'curl -sf http://localhost:3000/health',
+  mode: "monitor",
+  monitor: {
+    strategy: "poll-diff",
+    triggers: [{ id: "changed", regex: "/./" }],
+    poll: { intervalMs: 5000 }
+  }
+})
+
+// User says: "Alert me when NVDA drops below $120"
+interactive_shell({
+  command: 'curl -s https://api.example.com/quote/NVDA',
+  mode: "monitor",
+  monitor: {
+    strategy: "stream",
+    triggers: [
+      {
+        id: "nvda-below-120",
+        regex: "/NVDA:\\s*\\$?(\\d+(?:\\.\\d+)?)/",
+        threshold: { captureGroup: 1, op: "lt", value: 120 }
+      }
+    ]
+  }
+})
+
+// User says: "Watch the uploads folder for new PDF files and notify me"
+interactive_shell({
+  mode: "monitor",
+  monitor: {
+    strategy: "file-watch",
+    fileWatch: { path: "./uploads", recursive: true, events: ["rename", "change"] },
+    triggers: [{ id: "pdf", regex: "/\\.pdf$/i" }]
+  }
+})
+```
+
+Monitor mode emits structured payloads (`sessionId`, `eventId`, `timestamp`, `strategy`, `triggerId`, `matchedText`, `lineOrDiff`, `stream`) and now also emits lifecycle notifications when a monitor stops (stream ended, script failed, stopped, or timed out). `monitorFilter` was removed in favor of the structured `monitor` object.
+
+```typescript
+interactive_shell({ monitorStatus: true, monitorSessionId: "calm-reef" })
+interactive_shell({ monitorEvents: true, monitorSessionId: "calm-reef" })
+interactive_shell({ monitorEvents: true, monitorSessionId: "calm-reef", monitorSinceEventId: 42 })
+interactive_shell({ monitorEvents: true, monitorSessionId: "calm-reef", monitorTriggerId: "error" })
+interactive_shell({ monitorEvents: true, monitorSessionId: "calm-reef", monitorEventLimit: 50, monitorEventOffset: 20 })
+```
+
+Monitor sessions run headless and can be managed like other background sessions (`listBackground`, `/attach`, `dismissBackground`).
+
+### Timeout
+
+Capture output from TUI apps that don't exit cleanly:
+
+```typescript
+interactive_shell({
+  command: "htop",
+  mode: "hands-free",
+  timeout: 3000  // Kill after 3s, return captured output
+})
+```
+
+## Features
+
+### Auto-Exit on Quiet
+
+For fire-and-forget single-task delegations, enable auto-exit to kill the session after 8s of output silence:
+
+```typescript
+interactive_shell({
+  command: 'pi "Fix the bug in auth.ts"',
+  mode: "hands-free",
+  handsFree: { autoExitOnQuiet: true }
+})
+```
+
+A 15s startup grace period prevents the session from being killed before the subprocess has time to produce output. Customize it per-call with `gracePeriod`:
+
+```typescript
+interactive_shell({
+  command: 'pi "Run the full test suite"',
+  mode: "hands-free",
+  handsFree: { autoExitOnQuiet: true, gracePeriod: 60000 }
+})
+```
+
+The default grace period is also configurable globally via `autoExitGracePeriod` in the config file.
+
+For multi-turn sessions where you need back-and-forth interaction, leave it disabled (default) and use `kill: true` when done.
+
+### Send Input
+
+```typescript
+// Text only (types text but does not submit)
+interactive_shell({ sessionId: "calm-reef", input: "SELECT * FROM users;" })
+
+// Type text and press Enter
+interactive_shell({ sessionId: "calm-reef", input: "SELECT * FROM users;", submit: true })
+
+// Named keys
+interactive_shell({ sessionId: "calm-reef", inputKeys: ["ctrl+c"] })
+interactive_shell({ sessionId: "calm-reef", inputKeys: ["down", "down", "enter"] })
+
+// Bracketed paste (multiline without execution)
+interactive_shell({ sessionId: "calm-reef", inputPaste: "line1\nline2\nline3" })
+
+// Hex bytes (raw escape sequences)
+interactive_shell({ sessionId: "calm-reef", inputHex: ["0x1b", "0x5b", "0x41"] })
+
+// Combine text with keys
+interactive_shell({ sessionId: "calm-reef", input: "y", inputKeys: ["enter"] })
+```
+
+For editor-based TUIs like pi, raw `input` only types text. It does not submit the prompt. Prefer `submit: true` or `inputKeys: ["enter"]` instead of relying on `\n`.
+
+### Configurable Output
+
+```typescript
+// Default: 20 lines, 5KB
+interactive_shell({ sessionId: "calm-reef" })
+
+// More lines (max: 200)
+interactive_shell({ sessionId: "calm-reef", outputLines: 100 })
+
+// Incremental pagination (server tracks position)
+interactive_shell({ sessionId: "calm-reef", outputLines: 50, incremental: true })
+
+// Drain mode (raw stream since last query)
+interactive_shell({ sessionId: "calm-reef", drain: true })
+```
+
+### Transfer Output to Agent
+
+When a subagent finishes work, press **Ctrl+T** to capture its output and send it directly to the main agent:
+
+```
+[Subagent finishes work]
+        ↓
+[Press Ctrl+T]
+        ↓
+[Overlay closes, main agent receives full output]
+```
+
+The main agent then has the subagent's response in context and can continue working with that information.
+
+**Configuration:**
+- `transferLines`: Max lines to capture (default: 200)
+- `transferMaxChars`: Max characters (default: 20KB)
+
+### Background Sessions
+
+Sessions can be backgrounded by the user (Ctrl+B, or Ctrl+Q → "Run in background") or by the agent:
+
+```typescript
+// Agent backgrounds an active session
+interactive_shell({ sessionId: "calm-reef", background: true })
+// → Overlay closes, process keeps running
+
+// List background sessions
+interactive_shell({ listBackground: true })
+
+// Reattach with a specific mode
+interactive_shell({ attach: "calm-reef" })                      // interactive (blocking)
+interactive_shell({ attach: "calm-reef", mode: "hands-free" })  // hands-free (poll)
+interactive_shell({ attach: "calm-reef", mode: "dispatch" })    // dispatch (notified)
+
+// Dismiss background sessions
+interactive_shell({ dismissBackground: true })               // all sessions
+interactive_shell({ dismissBackground: "calm-reef" })        // specific session
+```
+
+Monitor sessions work the same way — they're headless background sessions that wake you on monitor events instead of completion.
+
+User can also `/spawn` to launch the configured default spawn agent, `/spawn codex`, `/spawn cursor`, `/spawn claude`, `/spawn pi`, `/spawn fork`, `/spawn pi fork`, or `/spawn <custom-agent>` for any agent added to `spawn.commands`. Add `--worktree` to spawn in a separate git worktree, for example `/spawn cursor --worktree`, `/spawn codex --worktree`, or `/spawn pi fork --worktree`. Plain `/spawn cursor` stays a normal interactive overlay. `fork` is Pi-only. Worktrees are left in place and the overlay will tell you where they were created. `/attach` or `/attach <id>` reattaches, and `/dismiss` or `/dismiss <id>` cleans up from the chat. The keyboard spawn shortcut is separate from `/spawn` and uses `spawn.shortcut`.
+
+### Prompt-Bearing `/spawn`
+
+Quoted prompt text plus `--hands-free` or `--dispatch` turns `/spawn` into a monitored delegated run instead of a plain interactive overlay. This shares the same resolver and defaults as structured `interactive_shell({ spawn: ... })`. Plain `/spawn` stays interactive. `Ctrl+G` only applies after you take over one of these monitored sessions.
+
+```bash
+/spawn cursor "review the diffs" --dispatch
+/spawn claude "review the diffs" --dispatch
+/spawn codex "fix the failing tests" --hands-free
+/spawn pi fork "continue from here" --dispatch
+```
+
+## Keys
+
+| Key | Action |
+|-----|--------|
+| Ctrl+T | **Transfer & close** - capture output and send to main agent |
+| Ctrl+B | Background session (dismiss overlay, keep running) |
+| Ctrl+Q | Session menu (transfer/background/kill/cancel) |
+| Shift+Up/Down | Scroll history |
+| Alt+Shift+F (default) | Toggle focus between overlay and main chat (`focusShortcut`) |
+| Ctrl+G | Return to agent monitoring (only after taking over a monitored hands-free or dispatch session) |
+| Alt+Shift+P (default) | Launch the configured default spawn agent (`spawn.shortcut`) |
+| Any key (hands-free) | Take over control |
+
+## Deferred tool loading
+
+`interactive_shell` is active by default. Set `"defer": true` to keep its large tool definition out of the initial model request:
+
+```json
+{
+  "defer": true
+}
+```
+
+Pi then exposes the small `enable_interactive_shell` loader. When a task needs the shell, the agent calls the loader and `interactive_shell` becomes available on the next model turn. `/spawn`, `/attach`, `/dismiss`, and the keyboard shortcuts continue to work directly.
+
+Each reloaded, new, resumed, or forked session starts with `interactive_shell` inactive again. Pi versions without the active-tool API print a warning and keep the tool active. A CLI `--tools` allowlist must include both `enable_interactive_shell` and `interactive_shell`; deferred activation cannot override an allowlist that excludes the target tool.
+
+Deferred mode omits `interactive_shell`'s `promptSnippet`; the same operating guidance remains in the tool description. This keeps the system-prompt prefix stable when Pi uses native deferred loading.
+
+## Config
+
+Configuration files (project overrides global):
+- **Global:** `~/.pi/agent/interactive-shell.json`
+- **Project:** `.pi/interactive-shell.json`
+
+### Shell selection
+
+New sessions use the same Bash resolver as Pi rather than the ambient `$SHELL`
+or `COMSPEC`. On Unix, this changes the default from `$SHELL`/`/bin/sh` to
+Pi's Bash selection (`/bin/bash`, then `bash` on `PATH`, with Pi's documented
+fallback). On Windows, Pi discovers Git Bash in its standard install
+locations, then `bash.exe` on `PATH`.
+
+To choose a specific Bash executable, set Pi's `shellPath` in
+`~/.pi/agent/settings.json` (or trusted project `.pi/settings.json`):
+
+```json
+{
+  "shellPath": "C:/Program Files/Git/bin/bash.exe"
+}
+```
+
+Project settings follow Pi's trust rules: a trusted project's `shellPath`
+overrides the global setting, while an untrusted project's setting is ignored.
+`shellPath` must select a Bash-compatible executable; PowerShell and `cmd.exe`
+are not interactive-shell transports. Pi's legacy WSL `bash.exe` uses
+stdin-only command transport and is rejected for interactive PTYs; select Git
+Bash instead.
+
+Deferred loading and shortcut settings are pinned at startup. If you change `defer`, `focusShortcut`, or `spawn.shortcut`, reload or restart Pi to apply them.
+
+```json
+{
+  "defer": false,
+  "overlayWidthPercent": 95,
+  "overlayHeightPercent": 60,
+  "overlayAnchor": "center",
+  "focusShortcut": "alt+shift+f",
+  "spawn": {
+    "defaultAgent": "pi",
+    "shortcut": "alt+shift+p",
+    "commands": {
+      "pi": "pi",
+      "codex": "codex",
+      "claude": "claude",
+      "cursor": "agent",
+      "aider": "aider"
+    },
+    "defaultArgs": {
+      "pi": [],
+      "codex": [],
+      "claude": [],
+      "cursor": ["--model", "composer-2-fast"],
+      "aider": ["--yes-always"]
+    },
+    "worktree": false,
+    "worktreeBaseDir": "../repo-worktrees"
+  },
+  "scrollbackLines": 5000,
+  "exitAutoCloseDelay": 10,
+  "minQueryIntervalSeconds": 60,
+  "transferLines": 200,
+  "transferMaxChars": 20000,
+  "completionNotifyLines": 50,
+  "completionNotifyMaxChars": 5000,
+  "handsFreeUpdateMode": "on-quiet",
+  "handsFreeUpdateInterval": 60000,
+  "handsFreeQuietThreshold": 8000,
+  "autoExitGracePeriod": 15000,
+  "handsFreeUpdateMaxChars": 1500,
+  "handsFreeMaxTotalChars": 100000,
+  "handoffPreviewEnabled": true,
+  "handoffPreviewLines": 30,
+  "handoffPreviewMaxChars": 2000,
+  "handoffSnapshotEnabled": false,
+  "ansiReemit": true
+}
+```
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `defer` | `false` | Start each session with only `enable_interactive_shell`; the full tool loads on demand |
+| `overlayWidthPercent` | 95 | Overlay width (10-100%) |
+| `overlayHeightPercent` | 60 | Overlay height (20-90%) |
+| `overlayAnchor` | "center" | Overlay position: `center`, `top-left`, `top-center`, `top-right`, `left-center`, `right-center`, `bottom-left`, `bottom-center`, `bottom-right` |
+| `focusShortcut` | "alt+shift+f" | Toggle focus between overlay and main chat |
+| `spawn.defaultAgent` | "pi" | Configured default spawn agent for `/spawn`, the spawn shortcut, and agent-side structured spawn |
+| `spawn.shortcut` | "alt+shift+p" | Keyboard shortcut that launches the configured default spawn agent |
+| `spawn.commands.<agent>` | `pi` / `codex` / `claude` / `agent` (cursor) | Executable or path per spawn agent. Extra keys define custom spawn agents |
+| `spawn.defaultArgs.<agent>` | `[]` (Cursor defaults to `--model composer-2-fast`) | Extra default CLI args per spawn agent |
+| `spawn.worktree` | `false` | Launch spawns in a separate git worktree by default |
+| `spawn.worktreeBaseDir` | unset | Optional base directory for generated worktrees |
+| `scrollbackLines` | 5000 | Terminal scrollback buffer |
+| `exitAutoCloseDelay` | 10 | Seconds before auto-close after exit |
+| `minQueryIntervalSeconds` | 60 | Rate limit between agent queries |
+| `transferLines` | 200 | Lines to capture on Ctrl+T transfer (10-1000) |
+| `transferMaxChars` | 20000 | Max chars for transfer (1KB-100KB) |
+| `completionNotifyLines` | 50 | Lines in dispatch completion notification (10-500) |
+| `completionNotifyMaxChars` | 5000 | Max chars in completion notification (1KB-50KB) |
+| `handsFreeUpdateMode` | "on-quiet" | "on-quiet" or "interval" |
+| `handsFreeQuietThreshold` | 8000 | Silence duration before update (ms) |
+| `autoExitGracePeriod` | 15000 | Startup grace before `autoExitOnQuiet` kill (ms) |
+| `handsFreeUpdateInterval` | 60000 | Max interval between updates (ms) |
+| `handsFreeUpdateMaxChars` | 1500 | Max chars per update |
+| `handsFreeMaxTotalChars` | 100000 | Total char budget for updates |
+| `handoffPreviewEnabled` | true | Include tail in tool result |
+| `handoffPreviewLines` | 30 | Lines in tail preview (0-500) |
+| `handoffPreviewMaxChars` | 2000 | Max chars in tail preview (0-50KB) |
+| `handoffSnapshotEnabled` | false | Write transcript on detach/exit |
+| `ansiReemit` | true | Preserve ANSI colors in output |
+
+## How It Works
+
+```
+interactive_shell → zigpty → subprocess
+                  ↓
+            xterm-headless (terminal emulation)
+                  ↓
+            TUI overlay (pi rendering)
+```
+
+Full PTY. The subprocess thinks it's in a real terminal.
+
+## Example Workflow: Plan, Implement, Review
+
+The `examples/prompts/` directory includes three opt-in prompt templates that chain together into a complete development workflow using Codex CLI. Each template loads the example `gpt-5-4-prompting` skill by default, falls back to `codex-5-3-prompting` when the user explicitly asks for Codex 5.3, and launches Codex in an interactive overlay with Codex CLI's preferred `gpt-5.5` model.
+
+### The Pipeline
+
+```
+Write a plan
+    ↓
+/codex-review-plan path/to/plan.md        ← Codex verifies every assumption against the codebase
+    ↓
+/codex-implement-plan path/to/plan.md     ← Codex implements the reviewed plan faithfully
+    ↓
+/codex-review-impl path/to/plan.md        ← Codex reviews the diff against the plan, fixes issues
+```
+
+### Installing the Templates
+
+Install the package first for the extension and core `pi-interactive-shell` skill:
+
+```bash
+pi install npm:pi-interactive-shell
+```
+
+The Codex workflow prompts and supporting skills are opt-in examples. Copy them into your agent config if you want to use them:
+
+```bash
+# Prompt templates (slash commands)
+cp ~/.pi/agent/extensions/pi-interactive-shell/examples/prompts/*.md ~/.pi/agent/prompts/
+
+# Optional skills used by the templates
+cp -r ~/.pi/agent/extensions/pi-interactive-shell/examples/skills/codex-cli ~/.pi/agent/skills/
+cp -r ~/.pi/agent/extensions/pi-interactive-shell/examples/skills/gpt-5-4-prompting ~/.pi/agent/skills/
+cp -r ~/.pi/agent/extensions/pi-interactive-shell/examples/skills/codex-5-3-prompting ~/.pi/agent/skills/
+
+# Optional CLI reference skill
+cp -r ~/.pi/agent/extensions/pi-interactive-shell/examples/skills/cursor-cli ~/.pi/agent/skills/
+```
+
+### Usage
+
+Say you have a plan at `docs/auth-redesign-plan.md`:
+
+**Step 1: Review the plan** — Codex reads your plan, then verifies every file path, API shape, data flow, and integration point against the actual codebase. Fixes issues directly in the plan file.
+
+```
+/codex-review-plan docs/auth-redesign-plan.md
+/codex-review-plan docs/auth-redesign-plan.md pay attention to the migration steps
+```
+
+**Step 2: Implement the plan** — Codex reads all relevant code first, then implements bottom-up: shared utilities first, then dependent modules, then integration code. No stubs, no TODOs.
+
+```
+/codex-implement-plan docs/auth-redesign-plan.md
+/codex-implement-plan docs/auth-redesign-plan.md skip test files for now
+```
+
+**Step 3: Review the implementation** — Codex diffs the changes, reads every changed file in full (plus imports and dependents), traces code paths across file boundaries, and fixes every issue it finds. Pass the plan to verify completeness, or omit it to just review the diff.
+
+```
+/codex-review-impl docs/auth-redesign-plan.md              # review diff against plan
+/codex-review-impl docs/auth-redesign-plan.md check cleanup ordering
+/codex-review-impl                                          # just review the diff, no plan
+/codex-review-impl focus on error handling and race conditions
+```
+
+### How They Work
+
+These templates demonstrate a "meta-prompt generation" pattern:
+
+1. **Pi gathers context** — reads the plan, runs git diff, and loads the copied local `gpt-5-4-prompting` or `codex-5-3-prompting` skill
+2. **Pi generates a calibrated prompt** — tailored to the specific plan/diff, following the selected skill's best practices
+3. **Pi launches Codex in the overlay** — defaulting to `-m gpt-5.5 -a never` and switching to `-m gpt-5.3-codex -a never` only when the user explicitly asks for Codex 5.3
+
+The user watches Codex work in the overlay and can take over anytime (type to intervene, Ctrl+T to transfer output back to pi, Ctrl+Q for options).
+
+### Customizing
+
+These are starting points. Fork them and adjust:
+
+- **Model/flags** — swap `gpt-5.3-codex` for another model, change reasoning effort
+- **Review criteria** — add project-specific checks (security policies, style rules)
+- **Implementation rules** — change the 500-line file limit, add framework-specific patterns
+- **Other agents** — adapt the pattern for Claude (`claude "prompt"`), Gemini (`gemini -i "prompt"`), or any CLI
+
+See the [pi prompt templates docs](https://github.com/badlogic/pi-mono/) for the full `$1`, `$@` placeholder syntax.
+
+## Advanced: Multi-Agent Workflows
+
+For orchestrating multi-agent chains (scout → planner → worker → reviewer) with file-based handoff and auto-continue support, see:
+
+**[pi-foreground-chains](https://github.com/nicobailon/pi-foreground-chains)** - A separate skill that builds on interactive-shell for complex agent workflows.
+
+## Limitations
+
+- macOS tested, Linux experimental
+- 60s rate limit between queries (configurable)
+- Some TUI apps may have rendering quirks

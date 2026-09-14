@@ -1,0 +1,578 @@
+{
+  "applied_operation_id": "op_67a94360591641c0a408e029327e2500",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad2bb538fb90c3bc61469d1b465199b517a3ffcfd2b5fedea4f16525e0783c35",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L10-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fbe64318ad5a41f5629d052838bddc0c557024236a3c8ac28caad45ca418e244"
+      ],
+      "text": "Mole is a deep-research agent that decomposes a question, searches, extracts claims, quote-checks each against its source, detects contradictions, and writes a cited answer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d03659d538be2699885d99bc76202f05203bbe79a349eda801f3ff3d322b443",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 34,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L31-L34"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L10-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_916b33948d51ba8d10714655c5e7aeb84eedaf39e015f632854be4a0d158f429",
+        "slc_fbe64318ad5a41f5629d052838bddc0c557024236a3c8ac28caad45ca418e244"
+      ],
+      "text": "Every model call is reserved before it happens and settled after, against a ledger with non-negative constraints in the database schema, so a set budget ceiling is enforced rather than estimated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1531260f91c653fa4c15b7c41d95a9ea9c4f142a9fe5e0507c4f2ecc01fb1d5a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 40,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L36-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4265b6a48bb38730f064b7031a582298ad570d9526de2b6abf1fc6eeed4fa3e8"
+      ],
+      "text": "Claims whose quotes do not appear verbatim in the mined page are discarded at extraction; surviving claims can be re-read against sources and marked unsupported in the report."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e590d26b6adf75a691a8925dd138f07fe0c29bf8f51145627a10a10c8b467f32",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 46,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L42-L46"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 195,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L193-L195"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf03e9534a9c80b77f4caea0b5125b92329c50987cd64fcb39faa5416fb0c027",
+        "slc_d99d6bd51ab0a7368b9e892bf87650cf19674d0f279197722574d7ce874ee48d"
+      ],
+      "text": "For local data, the model only picks a hypothesis template and column names; mole renders and runs the SQL, and only aggregates covering at least five records may leave the machine, with `mole crossings` showing what was sent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_452ecfe8a0d36f6915ac00b185c19e61165c13ed3084eec5974b604104394ad8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 270,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L267-L270"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 265,
+          "line_start": 255,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L255-L265"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a959327b2bf3671537afa26fac274daab2d4ae2bf4ab5df50d24ea30184c1031",
+        "slc_dfd9f82f533e86214c1b2fe90a842042da57130b082257b5c7aeac84a292bca4"
+      ],
+      "text": "The pipeline runs planner, executor, actor (search/fetch/extract/mine), verifier (pairing, adjudication, claim graph, re-read sampling), and output stages, with three actor types: web, academic (Crossref, OpenAlex, arXiv, PubMed), and local_compute."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cf3d97f1febdc9766ac5836e7d427d736e2fae0e272230e807300788d0a2b77",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 241,
+          "line_start": 234,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L234-L241"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 232,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L231-L232"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 220,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L218-L220"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8edbfef8412d2e2bb3a7ee83601f522f9fc0a29225b80963973ad98524559bc9",
+        "slc_a0bd5cb4c450ca04b011554885100de82277b1ba89e13cab48786cad70634c6f",
+        "slc_c00a64b8b429a9ba556f313a2d5f716d6879bc521ff7b84e891e1ea82e841c2d"
+      ],
+      "text": "Toolkit mode (`mole serve --toolkit`) exposes fourteen `mole.<tool>` tools alongside the research tools, including search/fetch through an SSRF guard, robots handling and rate limiter, plus verify_quote, claim_add, aggregate and dataset tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_84543e5ada30fb8932ed4193251aec378a6f9f4ea09ef3a75d4f7ae6fc67dae7",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 292,
+          "line_start": 285,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L285-L292"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 283,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L282-L283"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13849b3ebb5af7a3b5eabe2a826e84b9a0ccb9eab4aba6902c88dd8d1575d9c3",
+        "slc_72d0b5fd28b53ceff462d8d99f7afb0c5a79715ff67fa29fd12db098fb38802f"
+      ],
+      "text": "Mole grades its own runs: `mole eval <session-id>` prints a scorecard, and reported metrics include 0% budget overshoot, 100% claim integrity and citation accuracy, 80% grounding rate, and 70% contradiction precision with the confirm pass."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1a7d73e5dbd257e6e1b261e3a0e5d064f034c6784b6b9ee6269d590ba9a5ebd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L105-L107"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c58769ce2ddb91c2b638d1bc8b2868144889fda0bb213972776665d20ee4b2f",
+        "slc_a00b6d9cb0e890f3e30d865b5937ca1e3dea623c460aee72219af905e175cfc8"
+      ],
+      "text": "Installs produce two static binaries built with CGO_ENABLED=0 and no runtime dependencies; the database is SQLite created on first use under the XDG data directory, and building from source needs Go 1.25+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb86068238d8c481dce6683e1a576c19b52f099c16b234acf533f3c3189763e4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f72fd513fa7f9f43e418c17e0c5f3d517e2027fc",
+          "line_end": 70,
+          "line_start": 68,
+          "path": "RELEASING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/RELEASING.md#L68-L70"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f72fd513fa7f9f43e418c17e0c5f3d517e2027fc",
+          "line_end": 78,
+          "line_start": 76,
+          "path": "RELEASING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/RELEASING.md#L76-L78"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 195,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L193-L195"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_742c9d357d7af05601117ce2def32539f10dedd77584248f822fc064cb264b87",
+        "slc_d86ad1992d7ce72b23b3a508984f3b5555dc1d33f092705ea208c55a57fdd5b2",
+        "slc_d99d6bd51ab0a7368b9e892bf87650cf19674d0f279197722574d7ce874ee48d"
+      ],
+      "text": "Local-data analysis supports CSV, TSV, JSON and JSONL but not Parquet; release binaries are unsigned, so macOS users may need to clear the Gatekeeper quarantine attribute manually."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d459809a90f8e3cb3877a46ae4678c5148ef17fd01d65c9a5428fc1bdb399ea9",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f72fd513fa7f9f43e418c17e0c5f3d517e2027fc",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "RELEASING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/RELEASING.md#L111-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24aa041927e38414657a68e7378b71385d80f717907cd955d31fde23cdaf9b05"
+      ],
+      "text": "The database schema migrates forward automatically but has no down-migrations, so downgrading across a schema change requires restoring a database copy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b202a97f65e3f8f609c8c5afeffafc22b7823e43a831e3626077f005d65d7251",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f2e787414b216b8ddd23d774f302ea4ee7f7cc32",
+          "line_end": 45,
+          "line_start": 42,
+          "path": "CONTRIBUTING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CONTRIBUTING.md#L42-L45"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 300,
+          "line_start": 298,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L298-L300"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f2e787414b216b8ddd23d774f302ea4ee7f7cc32",
+          "line_end": 68,
+          "line_start": 65,
+          "path": "CONTRIBUTING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CONTRIBUTING.md#L65-L68"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 307,
+          "line_start": 304,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L304-L307"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+          "line_end": 313,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md#L309-L313"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f2e787414b216b8ddd23d774f302ea4ee7f7cc32",
+          "line_end": 118,
+          "line_start": 113,
+          "path": "CONTRIBUTING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CONTRIBUTING.md#L113-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5177e8c5dfddc62c103d586d2419acb256bdf1b3ae8153ef58d285457fd82c38",
+        "slc_8ab180efe449f4c6aba9b93da044ca37a8131ff8adf79a5e04ca6658960f633a",
+        "slc_8ae569d0c73f74a3b6587bef69f845f3c4155b92e3e7ae1a77e8503466ae2aed",
+        "slc_c4f49252544e1ef5d5754cf7599553c96e38f890c32d74187e52022f42f4fcb0",
+        "slc_d8d7f311a1be8102793f146b614ec8d18974eb9f31e2d0237562410e95153897",
+        "slc_dedde189cc426292337df6346ef7acf00396a8547ce0e0a5870115698f16267b"
+      ],
+      "text": "Repository development practice: code contributions require a CLA plus Signed-off-by (DCO) on every commit; the project's non-negotiable practice is to falsify your own fix by reverting the mechanism and confirming the test fails, and PRs must pass gofmt, go build, go test (no new skips) and go vet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_149cb5c751712fb390528802a0796354c2c561cc09448e346f00c4544903597f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f2e787414b216b8ddd23d774f302ea4ee7f7cc32",
+          "line_end": 103,
+          "line_start": 101,
+          "path": "CONTRIBUTING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CONTRIBUTING.md#L101-L103"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f2e787414b216b8ddd23d774f302ea4ee7f7cc32",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "CONTRIBUTING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CONTRIBUTING.md#L107-L109"
+        },
+        {
+          "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+          "git_sha": "f2e787414b216b8ddd23d774f302ea4ee7f7cc32",
+          "line_end": 129,
+          "line_start": 126,
+          "path": "CONTRIBUTING.md",
+          "repository": "lajosdeme/mole",
+          "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CONTRIBUTING.md#L126-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_095c1b7f974f7bc5f576a30d1836e1e65597c02a3538dd27ae00ae8e27d8ee2c",
+        "slc_79e89dc7dbb5276dd833f47de19190ffe2895a754abd9a94cbb18de8e82c2362",
+        "slc_b9fdf2f201d7cb1cef2d8d30b4428d0428e11295f9c2f5f1e1cd24e52f19aff1"
+      ],
+      "text": "Repository development practice: dependencies policy forbids copyleft (GPL/LGPL/MPL/AGPL) and cgo-requiring dependencies, one change per pull request, and Conventional Commits subjects with explanatory bodies."
+    }
+  ],
+  "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 319,
+        "path": "README.md",
+        "size": 11536
+      },
+      {
+        "lines": 213,
+        "path": "CLA.md",
+        "size": 9107
+      },
+      {
+        "lines": 113,
+        "path": "RELEASING.md",
+        "size": 4207
+      },
+      {
+        "lines": 144,
+        "path": "CONTRIBUTING.md",
+        "size": 6331
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 292,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_fcac5208efa75ec7a783323ba5d007b3",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 0,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/lajosdeme/mole/fcb92379120d1d4205f1ac1276c41c0abbd20042/955c751591a38231/manifest.json",
+  "package_id": "pkg_f0051b7e28e9ad13dbdbeb5111e6b1b8f134c343ed92405670e33a65afd06d81",
+  "repo": "lajosdeme/mole",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ba50ef86135ef1f5fe2e45898574d7ecd76badc7fe035bfb9b6c376f9e1c83e5",
+  "snapshot_id": "955c751591a38231",
+  "sources": [
+    {
+      "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+      "git_sha": "aa191130ea7ca12ee93dcd9abc3ae379d676b4a4",
+      "lines": 213,
+      "path": "CLA.md",
+      "repository": "lajosdeme/mole",
+      "sha256": "d536e1e6d17173de13ee527424a4342275d8cde0427052635dc2f933e68d2c37",
+      "source_id": "src_d2984bd77cb95120adcf040526f66363",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CLA.md"
+    },
+    {
+      "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+      "git_sha": "f2e787414b216b8ddd23d774f302ea4ee7f7cc32",
+      "lines": 144,
+      "path": "CONTRIBUTING.md",
+      "repository": "lajosdeme/mole",
+      "sha256": "febf8bff817847892b203be25c0fd4cb99056158a86639d6a9c00568a749877f",
+      "source_id": "src_f588c7167cb8588288d537f96c168ed2",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/CONTRIBUTING.md"
+    },
+    {
+      "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+      "git_sha": "af6669fbd5f3fb9fb4c359a7255688ea8780e96f",
+      "lines": 319,
+      "path": "README.md",
+      "repository": "lajosdeme/mole",
+      "sha256": "ec1e1363f718453bf922bd5dcc89d39bce3722b0a3f2671f88d6a58ec6ee4b7d",
+      "source_id": "src_e0deca96a36857d8bcfcad0322447ca2",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/README.md"
+    },
+    {
+      "commit": "fcb92379120d1d4205f1ac1276c41c0abbd20042",
+      "git_sha": "f72fd513fa7f9f43e418c17e0c5f3d517e2027fc",
+      "lines": 113,
+      "path": "RELEASING.md",
+      "repository": "lajosdeme/mole",
+      "sha256": "15a17b8a325e391b583776d771cdcb315af9e2c58e5380b4216939a6c6056c08",
+      "source_id": "src_85f7c8213a41561784ca11f14eda6720",
+      "stored": "releasing.md-87d6a57a759f.md",
+      "url": "https://github.com/lajosdeme/mole/blob/fcb92379120d1d4205f1ac1276c41c0abbd20042/RELEASING.md"
+    }
+  ],
+  "summary": "Selected evidence records: Mole is a deep-research agent that decomposes a question, searches, extracts claims, quote-checks each against its source, detects contradictions, and writes a cited answer. Every model call is reserved before it happens and settled after, against a ledger with non-negative constraints in the database schema, so a set budget ceiling is enforced rather than estimated.",
+  "superseded_claim_ids": []
+}

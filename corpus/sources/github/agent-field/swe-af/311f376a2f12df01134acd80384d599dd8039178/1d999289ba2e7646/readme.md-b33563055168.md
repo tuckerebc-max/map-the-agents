@@ -1,0 +1,1020 @@
+<div align="center">
+
+# SWE-AF
+
+### Autonomous Engineering Team Runtime Built on [AgentField](https://github.com/Agent-Field/agentfield)
+
+**Pronounced:** _"swee-AF"_ (one word)
+
+[![Public Beta](https://img.shields.io/badge/status-public%20beta-0ea5e9?style=for-the-badge)](#)
+[![Python](https://img.shields.io/badge/python-3.12%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-16a34a?style=for-the-badge)](LICENSE)
+[![Tests](https://img.shields.io/badge/Tests-make%20check-blue?style=for-the-badge)](.github/workflows/ci.yml)
+[![Built with AgentField](https://img.shields.io/badge/Built%20with-AgentField-0A66C2?style=for-the-badge)](https://github.com/Agent-Field/agentfield)
+[![More from Agent-Field](https://img.shields.io/badge/More_from-Agent--Field-111827?style=for-the-badge&logo=github)](https://github.com/Agent-Field)
+![WorldSpace Community Developer](https://img.shields.io/badge/WorldSpace-Community%20Developer-111827?style=for-the-badge)
+[![Example PR](https://img.shields.io/badge/Example-PR%20%23179-ff6b35?style=for-the-badge&logo=github)](https://github.com/Agent-Field/agentfield/pull/179)
+
+**One API call → full engineering team → shipped code.**
+
+<p>
+  <a href="#quick-start">Quick Start</a> •
+  <a href="#why-swe-af">Why SWE-AF</a> •
+  <a href="#in-action">In Action</a> •
+  <a href="#adaptive-factory-control">Factory Control</a> •
+  <a href="#benchmark">Benchmark</a> •
+  <a href="#operating-modes">Modes</a> •
+  <a href="#api-reference">API</a> •
+  <a href="docs/ARCHITECTURE.md">Architecture</a>
+</p>
+
+</div>
+
+One API call spins up a full autonomous engineering team — product managers, architects, coders, reviewers, testers — that scopes, builds, adapts, and ships complex software end to end.
+SWE-AF is a first step toward **autonomous software engineering factories**, scaling from simple goals to hard multi-issue programs with hundreds to thousands of agent invocations.
+
+<p align="center">
+  <img src="assets/banner.jpg" alt="SWE-AF autonomous engineering fleet banner" width="100%" />
+</p>
+
+## One-Call DX
+
+Trigger it with the `af` CLI (requires af ≥ 0.1.87) — it streams live progress and prints the result:
+
+```bash
+af call swe-planner.build --in '{
+  "goal": "Refactor and harden auth + billing flows",
+  "repo_url": "https://github.com/user/my-project",
+  "config": {
+    "runtime": "claude_code",
+    "models": { "default": "sonnet", "coder": "opus", "qa": "opus" },
+    "enable_learning": true
+  }
+}'
+```
+
+Prefer raw HTTP? Hit the API directly with curl:
+
+```bash
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Refactor and harden auth + billing flows",
+    "repo_url": "https://github.com/user/my-project",
+    "config": {
+      "runtime": "claude_code",
+      "models": {
+        "default": "sonnet",
+        "coder": "opus",
+        "qa": "opus"
+      },
+      "enable_learning": true
+    }
+  }
+}
+JSON
+```
+
+Swap `models.default` and any role key (`coder`, `qa`, `architect`, etc.) to any model your runtime supports.
+
+## Operating Modes
+
+SWE-AF works in two modes: point it at a single repository, or orchestrate coordinated changes across multiple repos in one build.
+
+### Single-Repository Mode
+
+The default. Pass `repo_url` (remote) or `repo_path` (local) and SWE-AF handles everything:
+
+```bash
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d '{
+    "input": {
+      "goal": "Add JWT auth",
+      "repo_url": "https://github.com/user/my-project"
+    }
+  }'
+```
+
+### Multi-Repository Mode
+
+When your work spans multiple codebases — a primary app plus shared libraries, monorepo sub-projects, or dependent microservices — pass `config.repos` as an array with roles:
+
+```bash
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d '{
+    "input": {
+      "goal": "Add JWT auth across API and shared-lib",
+      "config": {
+        "repos": [
+          {
+            "repo_url": "https://github.com/org/main-app",
+            "role": "primary"
+          },
+          {
+            "repo_url": "https://github.com/org/shared-lib",
+            "role": "dependency"
+          }
+        ],
+        "runtime": "claude_code",
+        "models": {
+          "default": "sonnet"
+        }
+      }
+    }
+  }'
+```
+
+**Roles:**
+- `primary` — The main application. Changes here drive the build; failures block progress.
+- `dependency` — Libraries or services modified to support the primary repo. Failures are captured but don't block.
+
+**Use cases:**
+- Primary app + shared SDK or utilities library
+- Monorepo sub-projects that live in separate repos
+- Feature spanning multiple microservices (e.g., API + worker queue)
+
+## Autonomous Build Spotlight
+
+Rust-based Python compiler benchmark (built autonomously):
+
+| Metric                 | CPython (subprocess) | RustPython (SWE-AF)          | Improvement             |
+| ---------------------- | -------------------- | ---------------------------- | ----------------------- |
+| Steady-state execution | Baseline (~19ms)     | Optimized in-process runtime | **88.3x-602.3x faster** |
+| Geometric mean         | 1.0x baseline        | 253.8x                       | **253.8x**              |
+| Peak throughput        | ~52 ops/s            | 31,807 ops/s                 | **~612x**               |
+
+<details>
+<summary>Measurement methodology</summary>
+
+Throughput comparison measures different execution models: CPython subprocess spawn (~19ms per call → ~52 ops/s) vs RustPython pre-warmed interpreter pool (in-process). This is the real-world tradeoff the system was built to optimize — replacing repeated subprocess invocations with a persistent pool for short-snippet execution.
+
+</details>
+
+Artifact trail includes **175 tracked autonomous agents** across planning, coding, review, merge, and verification.
+
+Details: [`examples/llm-rust-python-compiler-sonnet/README.md`](examples/llm-rust-python-compiler-sonnet/README.md)
+
+## Why SWE-AF
+
+Most agent frameworks wrap a single coder loop. SWE-AF is a coordinated engineering factory — planning, execution, and governance agents run as a control stack that adapts in real time.
+
+- **Hardness-aware execution** — easy issues pass through quickly, while hard issues trigger deeper adaptation and DAG-level replanning instead of blind retries.
+- **Factory architecture** — not a single-agent wrapper. Planning, execution, and governance agents run as a coordinated control stack — the architecture encodes the engineering strategy, not the prompts (see [The Atomic Unit of Intelligence](https://www.santoshkumarradha.com/writing/atomic-unit-of-intelligence)).
+- **Multi-model, multi-provider** — assign different models per role (`coder: opus`, `qa: haiku`). Works with Claude, OpenRouter, OpenAI, and Google.
+- **Continual learning** — with `enable_learning=true`, conventions and failure patterns discovered early are injected into downstream issues.
+- **Agent-scale parallelism** — dependency-level scheduling + isolated git worktrees allow large fan-out without branch collisions.
+- **Fleet-scale orchestration** — many SWE-AF nodes can run continuously in parallel via AgentField, driving thousands of agent invocations across concurrent builds.
+- **Explicit compromise tracking** — when scope is relaxed, debt is typed, severity-rated, and propagated.
+- **Long-run reliability** — checkpointed execution supports `resume_build` after crashes or interruptions.
+
+## In Action
+
+[PR #179: Go SDK DID/VC Registration](https://github.com/Agent-Field/agentfield/pull/179) — built entirely by SWE-AF (Claude runtime with haiku-class models). One API call, zero human code.
+
+| Metric              | Value              |
+| ------------------- | ------------------ |
+| Issues completed    | 10/10              |
+| Tests passing       | 217                |
+| Acceptance criteria | 34/34              |
+| Agent invocations   | 79                 |
+| Model               | `claude-haiku-4-5` |
+| **Total cost**      | **$19.23**         |
+
+<details>
+<summary>Cost breakdown by agent role</summary>
+
+| Role                               | Cost  | %     |
+| ---------------------------------- | ----- | ----- |
+| Coder                              | $5.88 | 30.6% |
+| Code Reviewer                      | $3.48 | 18.1% |
+| QA                                 | $1.78 | 9.2%  |
+| GitHub PR                          | $1.66 | 8.6%  |
+| Integration Tester                 | $1.59 | 8.3%  |
+| Merger                             | $1.22 | 6.3%  |
+| Workspace Ops                      | $1.77 | 9.2%  |
+| Planning (PM + Arch + TL + Sprint) | $0.79 | 4.1%  |
+| Verifier + Finalize                | $0.34 | 1.8%  |
+| Synthesizer                        | $0.05 | 0.2%  |
+
+79 invocations, 2,070 conversation turns. Planning agents scope and decompose; coders work in parallel isolated worktrees; reviewers and QA validate each issue; merger integrates branches; verifier checks acceptance criteria against the PRD.
+
+</details>
+
+**Claude, open-source, and Codex models supported**: Run builds with any runtime and tune models per role in one flat config map.
+- `runtime: "claude_code"` maps to Claude backend.
+- `runtime: "open_code"` maps to OpenCode backend (OpenRouter/OpenAI/Google/Anthropic model IDs).
+- `runtime: "codex"` maps to the OpenAI Codex CLI backend.
+
+## Adaptive Factory Control
+
+SWE-AF uses three nested control loops to adapt to task difficulty in real time:
+
+| Loop        | Scope         | Trigger              | Action                                                                             |
+| ----------- | ------------- | -------------------- | ---------------------------------------------------------------------------------- |
+| Inner loop  | Single issue  | QA/review fails      | Coder retries with feedback                                                        |
+| Middle loop | Single issue  | Inner loop exhausted | `run_issue_advisor` retries with a new approach, splits work, or accepts with debt |
+| Outer loop  | Remaining DAG | Escalated failures   | `run_replanner` restructures remaining issues and dependencies                     |
+
+This is the core factory-control behavior: control agents supervise worker agents and continuously reshape the plan as reality changes.
+
+## Quick Start
+
+### Install into AgentField (`af install`)
+
+Already running an [AgentField](https://github.com/Agent-Field/agentfield) control plane? Install SWE-AF straight from GitHub — no clone, no local Python setup:
+
+```bash
+af install https://github.com/Agent-Field/SWE-AF
+af run swe-planner
+```
+
+`af install` clones the repo, provisions an isolated Python environment, and registers the `swe-planner` node with your control plane. On first `af run` you're prompted for the one required secret — an LLM provider key (`ANTHROPIC_API_KEY` **or** `OPENROUTER_API_KEY`) — which is stored encrypted and reused across every node, so you enter it only once. (Add `GH_TOKEN` when you want builds to clone private repos and open pull requests.) Then kick off a build:
+
+```bash
+af call swe-planner.build --in '{"goal": "Add JWT auth", "repo_url": "https://github.com/user/my-repo"}'
+```
+
+New to AgentField? Install the control plane first with `curl -fsSL https://agentfield.ai/install.sh | bash`, or use the Railway / local options below.
+
+### Deploy with Railway (fastest)
+
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/agentfield-engineering-team)
+
+One click deploys SWE-AF + AgentField control plane + PostgreSQL. Exactly **one** environment variable is required in Railway — an LLM provider key:
+
+- `OPENROUTER_API_KEY` — **recommended, simplest**. One key, 200+ open and proprietary models. With only this set (no `ANTHROPIC_API_KEY`, no `SWE_DEFAULT_RUNTIME`), SWE-AF auto-selects the `open_code` runtime and defaults every role to `openrouter/deepseek/deepseek-v4-flash-0731` — no further configuration needed.
+- *Alternative:* `ANTHROPIC_API_KEY`, or `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` in [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (uses Pro/Max subscription credits), to run the `claude_code` runtime instead.
+
+Optional:
+
+- `GH_TOKEN` — GitHub personal access token with `repo` scope. Needed only to clone **private** repos, push branches, and open pull requests; builds against public repos work without it.
+
+Once deployed, trigger a build:
+
+```bash
+curl -X POST https://<control-plane>.up.railway.app/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: this-is-a-secret" \
+  -d '{"input": {"goal": "Add JWT auth", "repo_url": "https://github.com/user/my-repo"}}'
+```
+
+### 1. Requirements (local)
+
+- Python 3.12+
+- AgentField control plane (`af`)
+- AI provider API key (Anthropic, OpenRouter, OpenAI, or Google)
+
+### 2. Install
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
+```
+
+### 3. Run
+
+```bash
+af                 # starts AgentField control plane on :8080
+python -m swe_af   # registers node id "swe-planner"
+```
+
+### 4. Trigger a build
+
+```bash
+# Default (uses Claude)
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Add JWT auth to all API endpoints",
+    "repo_url": "https://github.com/user/my-project"
+  }
+}
+JSON
+
+# With open-source runtime + flat role map
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Add JWT auth",
+    "repo_url": "https://github.com/user/my-project",
+    "config": {
+      "runtime": "open_code",
+      "models": {
+        "default": "openrouter/minimax/minimax-m2.5"
+      }
+    }
+  }
+}
+JSON
+
+# With Codex CLI runtime
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Add JWT auth",
+    "repo_url": "https://github.com/user/my-project",
+    "config": {
+      "runtime": "codex",
+      "models": {
+        "default": "gpt-5.3-codex"
+      }
+    }
+  }
+}
+JSON
+
+# Fast mode with Codex CLI runtime
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-fast.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Add a focused bug fix",
+    "repo_url": "https://github.com/user/my-project",
+    "config": {
+      "runtime": "codex",
+      "models": {
+        "default": "gpt-5.3-codex"
+      }
+    }
+  }
+}
+JSON
+
+# Local workspace mode (repo_path) + targeted role override
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Refactor and harden auth + billing flows",
+    "repo_path": "/path/to/repo",
+    "config": {
+      "runtime": "claude_code",
+      "models": {
+        "default": "sonnet",
+        "coder": "opus",
+        "qa": "opus"
+      },
+      "enable_learning": true
+    }
+  }
+}
+JSON
+```
+
+For OpenRouter with `open_code`, use model IDs in `openrouter/<provider>/<model>` format (for example `openrouter/minimax/minimax-m2.5`).
+
+For Infron with `open_code`, set `INFRON_API_KEY` and use `infron/<provider>/<model>` (for example `infron/moonshotai/kimi-k2.6`). Infron is an OpenAI-compatible gateway serving the standard `<provider>/<model>` ids, so moving a role across is a prefix swap and nothing else changes:
+
+```bash
+SWE_DEFAULT_MODEL=infron/moonshotai/kimi-k2.6
+```
+
+With **only** an `INFRON_API_KEY` set (no `ANTHROPIC_API_KEY`, no other gateway key, no `SWE_DEFAULT_RUNTIME`), SWE-AF auto-selects the `open_code` runtime and defaults to `infron/deepseek/deepseek-v4-flash-0731` — the same rule the existing gateway path already follows. A gateway key already configured keeps precedence, so adding an Infron key never reroutes an existing deployment on its own.
+
+> Docker and Railway deployments using Infron must set `HARNESS_MODEL=infron/deepseek/deepseek-v4-flash-0731` (or another `infron/...` id) in the environment. The image bakes an `openrouter/...` value that the `open_code` model cascade reads after the Infron auto default and would otherwise override it. `SWE_DEFAULT_MODEL` pins every role model but does not feed OpenCode's `small_model`; set `HARNESS_MODEL` for that path (setting both is fine).
+
+### MiniMax direct providers
+
+The Docker images include direct MiniMax provider entries for both supported regions and API compatibility modes. `MiniMax-M3` and `MiniMax-M2.7` are available in every entry.
+
+| Region | OpenAI-compatible `open_code` model IDs | Anthropic-compatible `open_code` model IDs | Anthropic base URL |
+|---|---|---|---|
+| Global | `minimax-global-openai/MiniMax-M3`, `minimax-global-openai/MiniMax-M2.7` | `minimax-anthropic/MiniMax-M3`, `minimax-anthropic/MiniMax-M2.7` | `https://api.minimax.io/anthropic` |
+| China | `minimax-cn-openai/MiniMax-M3`, `minimax-cn-openai/MiniMax-M2.7` | `minimax-anthropic/MiniMax-M3`, `minimax-anthropic/MiniMax-M2.7` | `https://api.minimaxi.com/anthropic` |
+
+| Model | Context window | Input modalities | Thinking | Input / output / cache read / cache write per million tokens |
+|---|---:|---|---|---|
+| `MiniMax-M3` | 1,000,000 | text, image, video | adaptive or disabled | $0.30 / $1.20 / $0.06 / not charged |
+| `MiniMax-M2.7` | 204,800 | text | always on | $0.30 / $1.20 / $0.06 / $0.375 |
+
+`MiniMax-M3` pricing is tiered by input length: requests over 512K input tokens are billed at $0.60 / $2.40 / $0.12 instead. The baked provider metadata uses the standard ≤512K tier, which is what normal coding requests hit.
+
+For the direct OpenAI-compatible path, set `MINIMAX_API_KEY`, use `runtime: "open_code"`, and select one of the `minimax-global-openai/*` or `minimax-cn-openai/*` model IDs above. The configured OpenAI-compatible base URLs are `https://api.minimax.io/v1` and `https://api.minimaxi.com/v1`.
+
+For the Anthropic-compatible OpenCode path, set `MINIMAX_API_KEY`, set `ANTHROPIC_BASE_URL` to either regional `/anthropic` URL shown above, use `runtime: "open_code"`, and select `minimax-anthropic/MiniMax-M3` or `minimax-anthropic/MiniMax-M2.7`. The provider configuration appends `/v1`; keep `ANTHROPIC_BASE_URL` at the regional `/anthropic` URL.
+
+For the Anthropic-compatible Claude path, set `ANTHROPIC_AUTH_TOKEN`, set `ANTHROPIC_BASE_URL` to the regional `/anthropic` URL shown above, use `runtime: "claude_code"`, and select `MiniMax-M3` or `MiniMax-M2.7`. Do not append `/v1`; Claude Code adds `/v1/messages` to the configured base URL. Unset `ANTHROPIC_API_KEY` (and `CLAUDE_CODE_OAUTH_TOKEN`) in that deployment — an Anthropic credential left in the environment can be sent to the non-Anthropic endpoint.
+
+`ANTHROPIC_BASE_URL` is process-wide, so one deployment cannot route Claude and MiniMax Anthropic-compatible traffic to different endpoints.
+
+For Codex with ChatGPT subscription auth, install the Codex CLI on the host, run `codex login`, leave `OPENAI_API_KEY` unset for this process, and set `SWE_CODEX_AUTH_MODE=chatgpt` or `auto`. For OpenAI API-platform billing, set `SWE_CODEX_AUTH_MODE=api_key` and `OPENAI_API_KEY`.
+
+> The Docker image bakes `HARNESS_MODEL=openrouter/deepseek/deepseek-v4-flash-0731` so OpenCode's `small_model` config interpolation always has a value. `HARNESS_MODEL` only affects the `open_code` runtime — `claude_code` and `codex` deployments resolve their own runtime defaults (codex picks its model by auth mode) and can override per role via `SWE_DEFAULT_MODEL` / `models` as usual.
+
+> Codex CLI's `workspace-write` sandbox uses bubblewrap (`bwrap`) and needs Linux user namespaces enabled on the host. Most production Linux hosts and managed container runtimes (Railway, etc.) allow this by default, but local Docker on WSL2 or hardened environments may refuse with `bwrap: No permissions to create a new namespace`. If the verifier reports that error, the coder ran but couldn't write files — enable user namespaces on the host before relying on the codex runtime there.
+
+### Optional: web search
+
+Coding and review agents can look up external documentation, library APIs, error messages, and version/deprecation status during a build. This is opt-in via two env vars on the deployment:
+
+```
+OPENCODE_ENABLE_EXA=1
+EXA_API_KEY=...
+```
+
+When set, opencode's built-in `websearch` and `webfetch` tools become available to every reasoner running through the open runtime — the model decides when to use them based on the task. Get a key at [exa.ai](https://exa.ai/).
+
+The coder reasoner additionally gets a brief restraint guideline appended to its system prompt, so a long coding loop doesn't rabbit-hole on searches it could answer by reading the codebase. No setup required beyond the env vars; the wiring inherits parent env naturally through agentfield's CLI harness.
+
+This works on the open runtime (opencode). The Claude runtime uses Anthropic's first-party `WebSearch`/`WebFetch` and is currently not wired here — file an issue if you want it.
+
+## What Happens In One Build
+
+- Architecture is generated and reviewed before coding starts
+- Issues are dependency-sorted and run in parallel across isolated worktrees
+- Each issue gets dedicated coder, tester, and reviewer passes
+- Failed issues trigger advisor-driven adaptation (split, re-scope, or escalate)
+- Escalations trigger replanning of the remaining DAG
+- End result is merged, integration-tested, and verified against acceptance criteria
+
+<p align="center">
+  <img src="assets/archi.png" alt="SWE-AF architecture" width="100%" />
+</p>
+
+> Typical runs spin up 400-500+ agent instances across planning, execution, QA, and verification. For larger DAGs and repeated adaptation/replanning cycles, SWE-AF can scale into the high hundreds to thousands of agent invocations in a single build.
+
+## Benchmark
+
+**95/100 with haiku and MiniMax**: SWE-AF scored 95/100 with both Claude haiku-class routing ($20) and MiniMax M2.5 via open runtime ($6), outperforming Claude Code sonnet (73), Codex o3 (62), and Claude Code haiku (59) on the same prompt.
+
+| Dimension       | SWE-AF (haiku) | SWE-AF (MiniMax) | CC Sonnet | Codex (o3) | CC Haiku |
+| --------------- | -------------- | ---------------- | --------- | ---------- | -------- |
+| Functional (30) | **30**         | **30**           | **30**    | **30**     | **30**   |
+| Structure (20)  | **20**         | **20**           | 10        | 10         | 10       |
+| Hygiene (20)    | **20**         | **20**           | 16        | 10         | 7        |
+| Git (15)        | **15**         | **15**           | 2         | 2          | 2        |
+| Quality (15)    | 10             | 10               | **15**    | 10         | 10       |
+| Total           | **95**         | **95**           | **73**    | **62**     | **59**   |
+| **Cost**        | **~$20**       | **~$6**          | ?         | ?          | ?        |
+| **Time**        | ~30-40 min     | 43 min           | ?         | ?          | ?        |
+
+<details>
+<summary><strong>Full benchmark details and reproduction</strong></summary>
+
+Same prompt tested across multiple agents. SWE-AF with Claude runtime (haiku-class model mapping) used 400+ agent instances; SWE-AF with MiniMax M2.5 via open runtime achieved identical quality at 70% cost savings.
+
+**Prompt used for all agents:**
+
+> Build a Node.js CLI todo app with add, list, complete, and delete commands. Data should persist to a JSON file. Initialize git, write tests, and commit your work.
+
+### Scoring framework
+
+| Dimension  | Points | What it measures                                 |
+| ---------- | ------ | ------------------------------------------------ |
+| Functional | 30     | CLI behavior and passing tests                   |
+| Structure  | 20     | Modular source layout and test organization      |
+| Hygiene    | 20     | `.gitignore`, clean status, no junk artifacts    |
+| Git        | 15     | Commit discipline and message quality            |
+| Quality    | 15     | Error handling, package metadata, README quality |
+
+### Reproduction
+
+```bash
+# SWE-AF (Claude runtime, haiku-class mapping) - $20, 30-40 min
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Build a Node.js CLI todo app with add, list, complete, and delete commands. Data should persist to a JSON file. Initialize git, write tests, and commit your work.",
+    "repo_path": "/tmp/swe-af-output",
+    "config": {
+      "runtime": "claude_code",
+      "models": {
+        "default": "haiku"
+      }
+    }
+  }
+}
+JSON
+
+# SWE-AF (MiniMax M2.5 via OpenRouter runtime) - $6, 43 min
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Build a Node.js CLI todo app with add, list, complete, and delete commands. Data should persist to a JSON file. Initialize git, write tests, and commit your work.",
+    "repo_path": "/workspaces/todo-app-benchmark",
+    "config": {
+      "runtime": "open_code",
+      "models": {
+        "default": "openrouter/minimax/minimax-m2.5"
+      }
+    }
+  }
+}
+JSON
+
+# Claude Code (haiku)
+claude -p "Build a Node.js CLI todo app with add, list, complete, and delete commands. Data should persist to a JSON file. Initialize git, write tests, and commit your work." --model haiku --dangerously-skip-permissions
+
+# Claude Code (sonnet)
+claude -p "Build a Node.js CLI todo app with add, list, complete, and delete commands. Data should persist to a JSON file. Initialize git, write tests, and commit your work." --model sonnet --dangerously-skip-permissions
+
+# Codex (gpt-5.3-codex)
+codex exec "Build a Node.js CLI todo app with add, list, complete, and delete commands. Data should persist to a JSON file. Initialize git, write tests, and commit your work." --full-auto
+```
+
+**MiniMax M2.5 Measured Metrics (Feb 2026):**
+- 99.22% code coverage (only agent with measured coverage)
+- 4 custom error types (TodoError, ValidationError, NotFoundError, StorageError)
+- 999 LOC, 4 modules, 74 tests, 9 commits
+
+**Production Quality Analysis:** [Objective comparison](examples/agent-comparison/PRODUCTION_QUALITY_ANALYSIS.md) of measurable metrics across all agents.
+
+Benchmark assets, logs, evaluator, and generated projects live in [`examples/agent-comparison/`](examples/agent-comparison/).
+
+</details>
+
+> **Ship code, then audit it:** [SEC-AF](https://github.com/Agent-Field/sec-af) runs the same multi-agent architecture against your codebase — 250 agents, 94% noise reduction, every finding proven.
+
+## Docker
+
+```bash
+cp .env.example .env
+# Uncomment exactly ONE provider key: OPENROUTER_API_KEY (recommended),
+# ANTHROPIC_API_KEY, CLAUDE_CODE_OAUTH_TOKEN, OPENAI_API_KEY, or GOOGLE_API_KEY
+# Optionally add GH_TOKEN (private-repo clones, pushing branches, opening PRs)
+
+docker compose up -d
+```
+
+> `.env.example` ships with **every** provider key commented out — uncomment
+> exactly one. In particular, don't leave a placeholder `ANTHROPIC_API_KEY`
+> value in place: any non-empty value forces the `claude_code` runtime and
+> breaks an OpenRouter-only setup.
+
+Submit a build:
+
+```bash
+# Default runtime (auto-selected from whichever provider key is in .env)
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Add JWT auth",
+    "repo_url": "https://github.com/user/my-repo"
+  }
+}
+JSON
+
+# With open-source runtime (set OPENROUTER_API_KEY in .env)
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Add JWT auth",
+    "repo_url": "https://github.com/user/my-repo",
+    "config": {
+      "runtime": "open_code",
+      "models": {
+        "default": "openrouter/minimax/minimax-m2.5"
+      }
+    }
+  }
+}
+JSON
+
+# Local workspace mode (repo_path)
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "goal": "Add JWT auth",
+    "repo_path": "/workspaces/my-repo"
+  }
+}
+JSON
+```
+
+Scale workers:
+
+```bash
+docker compose up --scale swe-agent=3 -d
+```
+
+Use a host control plane instead of Docker control-plane service:
+
+```bash
+docker compose -f docker-compose.local.yml up -d
+```
+
+## GitHub Repo Workflow (Clone -> Build -> PR)
+
+Pass `repo_url` instead of `repo_path` to let SWE-AF clone and open a PR after execution.
+
+```bash
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.build \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "repo_url": "https://github.com/user/my-project",
+    "goal": "Add comprehensive test coverage",
+    "config": {
+      "runtime": "claude_code",
+      "models": {
+        "default": "sonnet",
+        "coder": "opus",
+        "qa": "opus"
+      }
+    }
+  }
+}
+JSON
+```
+
+Requirements:
+
+- `GH_TOKEN` in `.env` with `repo` scope — required for *this* workflow, since
+  it clones private repos, pushes the branch, and opens the PR. Builds that
+  stay local (`repo_path`) or target a public repo don't need it.
+- Repo access for that token
+
+### Post-PR CI gate
+
+After SWE-AF pushes the integration branch and opens a PR (ready for review,
+not draft), it watches GitHub Actions on that PR until checks are
+conclusive. If they fail, a bounded fix-and-repush loop runs an agent that
+is explicitly forbidden from silencing tests (no `pytest.skip`, no `xfail`,
+no commenting tests out, no loosening assertions) — it must produce a
+legitimate fix in the production code and push a new commit. When CI is
+green, the gate returns success; when CI fails after fix attempts, the PR
+stays open with visible failing checks so a human reviewer can step in.
+
+Configuration on `BuildConfig`:
+
+| Field | Default | Purpose |
+|---|---|---|
+| `check_ci` | `true` | Run the post-PR CI gate. Set `false` to return immediately after the PR is created. |
+| `max_ci_fix_cycles` | `2` | Cap on watch → fix → repush iterations after the initial push. |
+| `ci_wait_seconds` | `1500` | Wall-clock cap per `gh pr checks` watch (25 min). |
+| `ci_poll_seconds` | `30` | Poll interval for `gh pr checks`. |
+
+## Use SWE-AF as a Sub-Harness (Issue-Level Builds)
+
+The full `build` pipeline is **feature-level**: it plans, decomposes, and
+verifies a whole feature, which takes hours. When the caller is itself a
+coding harness — Claude Code, Codex, OpenCode — it has already done the
+planning. For that case SWE-AF exposes an **issue-level** entry point,
+`implement_issue`, that skips every planning agent and runs just the coding
+loop on an isolated branch. Delegating well-scoped issues to SWE-AF on cheap
+or open-weight models keeps the main harness's token budget for the work that
+needs it.
+
+Rule of thumb for the two prompt shapes:
+
+| Prompt shape | Entry point |
+| --- | --- |
+| "Implement X feature" (needs decomposition) | `swe-planner.build` / `swe-fast.build` |
+| "Change this code in this file, like this" (fully scoped, context supplied) | `swe-planner.implement_issue` / `swe-fast.implement_issue` |
+
+A harness does not need this table hardcoded: both entry points register with
+the control plane carrying an `entrypoint` tag and a routing description, so
+`af ls --entrypoints` (or `GET /api/v1/discovery/capabilities`) lists them —
+with when-to-use guidance — on any AgentField control plane the node joins
+(agentfield ≥ 0.1.113).
+
+Each call creates its own git worktree and an `issue/<build_id>-<slug>` branch
+off `base_branch` (default: the current branch), implements the issue with the
+coder → reviewer loop (a QA + synthesizer path when `needs_deeper_qa` is set),
+optionally runs one verifier pass against the acceptance criteria, removes the
+worktree, and returns the branch. The caller's checkout, current branch, and
+`git status` are untouched — so a main harness can fan out several issues
+against the same `repo_path` concurrently and merge the returned branches
+itself. Nothing is pushed and no PR is opened unless `enable_github_pr` is set:
+the caller owns merge and CI. Typical cost is 4–8 LLM calls (vs hundreds for a
+feature-level build).
+
+```bash
+# Delegate one scoped issue (async; returns an execution_id immediately)
+curl -X POST http://localhost:8080/api/v1/execute/async/swe-planner.implement_issue \
+  -H "Content-Type: application/json" \
+  -d @- <<'JSON'
+{
+  "input": {
+    "issue": {
+      "title": "Add retry with exponential backoff to fetch_user",
+      "description": "In src/api/client.py, wrap fetch_user's HTTP call in a retry helper: 3 attempts, 0.5s base delay, doubling. Reuse the existing logger for retry warnings.",
+      "acceptance_criteria": [
+        "fetch_user retries up to 3 times on ConnectionError",
+        "tests cover the retry-then-succeed path"
+      ],
+      "files_to_modify": ["src/api/client.py"],
+      "testing_strategy": "pytest tests/api/test_client.py"
+    },
+    "repo_path": "/workspaces/my-project",
+    "base_branch": "main",
+    "config": { "models": { "default": "haiku" } }
+  },
+  "webhook": { "url": "https://my-harness.example/hooks/swe-af" }
+}
+JSON
+
+# Poll instead of (or in addition to) the webhook
+curl http://localhost:8080/api/v1/executions/<execution_id>
+# Progress notes while it runs
+curl http://localhost:8080/api/v1/executions/<execution_id>/notes
+```
+
+The result's `branch` field is the deliverable:
+
+```json
+{
+  "success": true,
+  "outcome": "completed",
+  "branch": "issue/a1b2c3d4-add-retry-with-exponential-backoff",
+  "base_branch": "main",
+  "commits": ["<sha>"],
+  "files_changed": ["src/api/client.py", "tests/api/test_client.py"],
+  "iterations": 1,
+  "verification": { "passed": true, "criteria_results": ["..."] },
+  "debt_items": [],
+  "pr_url": ""
+}
+```
+
+`issue` fields: `title` + `description` (required), `acceptance_criteria`,
+`files_to_create` / `files_to_modify`, `testing_strategy`, `needs_deeper_qa`
+(routes through QA + reviewer + synthesizer), `estimated_complexity`, `name`.
+`additional_context` (top-level) is appended to the description.
+
+`config` keys (full schema: [`swe_af/issue/schemas.py`](swe_af/issue/schemas.py)):
+
+| Key | Default | Description |
+| --- | --- | --- |
+| `runtime` / `models` | as in `build` | Same runtime + flat role map; valid role keys: `default`, `coder`, `code_reviewer`, `qa`, `qa_synthesizer`, `verifier`, `git` |
+| `max_coding_iterations` | `3` | Inner-loop budget (the feature-level default is 5) |
+| `verify` | `true` | One verifier pass against the acceptance criteria |
+| `enable_github_pr` | `false` | Push the branch and open a PR (needs an `origin` remote) |
+| `agent_timeout_seconds` | `1800` | Per-agent timeout |
+| `agent_max_turns` | `50` | Tool-use turn budget per agent |
+| `keep_worktree` | `false` | Leave the worktree in place for debugging |
+
+Notes for main-harness authors:
+
+- `repo_path` must be a checkout the SWE-AF node can reach (same machine, or
+  the shared `workspaces` volume in the Docker setup) with at least one commit.
+- Uncommitted changes in the caller's tree are **not** visible to the issue
+  branch — it is created from the committed base state.
+- A failed build with commits still returns the branch (`success: false`) so
+  the caller can triage; a build that produced no commits deletes its branch
+  and returns `branch: ""`.
+- Cap your fan-out: each delegation is a paid multi-agent run. A handful of
+  concurrent issues per repo is the sweet spot — the node also bounds its own
+  concurrency.
+- Available identically on `swe-fast.implement_issue`, and on the Go
+  implementation under those same node ids.
+
+A ready-made Claude Code skill for this flow ships in
+[`.claude/skills/delegate-issue/`](.claude/skills/delegate-issue/SKILL.md).
+
+## API Reference
+
+<details>
+<summary><strong>Agent endpoints</strong></summary>
+
+Core async endpoints (returns an `execution_id` immediately):
+
+```bash
+# Full build: plan -> execute -> verify
+POST /api/v1/execute/async/swe-planner.build
+
+# Issue-level build (sub-harness entry): coding loop only, no planning
+POST /api/v1/execute/async/swe-planner.implement_issue
+
+# Plan only
+POST /api/v1/execute/async/swe-planner.plan
+
+# Execute a prebuilt plan
+POST /api/v1/execute/async/swe-planner.execute
+
+# Resume after interruption
+POST /api/v1/execute/async/swe-planner.resume_build
+```
+
+Monitoring:
+
+```bash
+curl http://localhost:8080/api/v1/executions/<execution_id>
+```
+
+Every specialist is also callable directly:
+
+`POST /api/v1/execute/async/swe-planner.<agent>`
+
+</details>
+
+<details>
+<summary><strong>Agent execution flow</strong></summary>
+
+| Agent                    | In -> Out                                            |
+| ------------------------ | ---------------------------------------------------- |
+| `run_product_manager`    | goal -> PRD                                          |
+| `run_architect`          | PRD -> architecture                                  |
+| `run_tech_lead`          | architecture -> review                               |
+| `run_sprint_planner`     | architecture -> issue DAG                            |
+| `run_issue_writer`       | issue spec -> detailed issue                         |
+| `run_coder`              | issue + worktree -> code + tests + commit            |
+| `run_qa`                 | worktree -> test results                             |
+| `run_code_reviewer`      | worktree -> quality/security review                  |
+| `run_qa_synthesizer`     | QA + review -> FIX / APPROVE / BLOCK                 |
+| `run_issue_advisor`      | failure context -> adapt / split / accept / escalate |
+| `run_replanner`          | build state + failures -> restructured plan          |
+| `run_merger`             | branches -> merged output                            |
+| `run_integration_tester` | merged repo -> integration results                   |
+| `run_verifier`           | repo + PRD -> acceptance pass/fail                   |
+| `generate_fix_issues`    | failed criteria -> targeted fix issues               |
+| `run_github_pr`          | branch -> push + PR                            |
+
+</details>
+
+<details>
+<summary><strong>Configuration</strong></summary>
+
+Pass `config` to `build` or `execute`. Full schema: [`swe_af/execution/schemas.py`](swe_af/execution/schemas.py)
+
+| Key                       | Default         | Description                                           |
+| ------------------------- | --------------- | ----------------------------------------------------- |
+| `runtime`                 | `"claude_code"` | Model runtime: `"claude_code"`, `"open_code"`, or `"codex"`. The default also honors the `SWE_DEFAULT_RUNTIME` env var when no `runtime` is passed in `config` — set it on the deployment so callers don't need to plumb a config through. |
+| `models`                  | `null`          | Flat role-model map (`default` + role keys below). Without a caller-supplied value, the `SWE_DEFAULT_MODEL` env var is used as the default for all roles — set it on the deployment to pin a model without code changes. Caller `models.default` or per-role keys still win. |
+| `max_coding_iterations`   | `5`             | Inner-loop retry budget                               |
+| `max_advisor_invocations` | `2`             | Middle-loop advisor budget                            |
+| `max_replans`             | `2`             | Build-level replanning budget                         |
+| `enable_issue_advisor`    | `true`          | Enable issue adaptation                               |
+| `enable_replanning`       | `true`          | Enable global replanning                              |
+| `enable_learning`         | `false`         | Enable cross-issue shared memory (continual learning) |
+| `agent_timeout_seconds`   | `2700`          | Per-agent timeout                                     |
+| `agent_max_turns`         | `150`           | Tool-use turn budget                                  |
+
+</details>
+
+<details>
+<summary><strong>Model Role Keys</strong></summary>
+
+`models` supports:
+
+- `default`
+- `pm`, `architect`, `tech_lead`, `sprint_planner`
+- `coder`, `qa`, `code_reviewer`, `qa_synthesizer`
+- `replan`, `retry_advisor`, `issue_writer`, `issue_advisor`
+- `verifier`, `git`, `merger`, `integration_tester`
+
+</details>
+
+<details>
+<summary><strong>Resolution order</strong></summary>
+
+`runtime defaults` < `models.default` < `models.<role>`
+
+</details>
+
+<details>
+<summary><strong>Config examples</strong></summary>
+
+Minimal:
+
+```json
+{
+  "runtime": "claude_code"
+}
+```
+
+Codex:
+
+```json
+{
+  "runtime": "codex",
+  "models": {
+    "default": "gpt-5.3-codex"
+  }
+}
+```
+
+Fully customized:
+
+```json
+{
+  "runtime": "open_code",
+  "models": {
+    "default": "openrouter/minimax/minimax-m2.5",
+    "pm": "openrouter/qwen/qwen-2.5-72b-instruct",
+    "architect": "openrouter/qwen/qwen-2.5-72b-instruct",
+    "coder": "openrouter/deepseek/deepseek-chat",
+    "qa": "openrouter/deepseek/deepseek-chat",
+    "verifier": "openrouter/qwen/qwen-2.5-72b-instruct"
+  },
+  "max_coding_iterations": 6,
+  "enable_learning": true
+}
+```
+
+</details>
+
+<details>
+<summary><strong>Artifacts</strong></summary>
+
+```text
+.artifacts/
+├── plan/           # PRD, architecture, issue specs
+├── execution/      # checkpoints, per-issue logs, agent outputs
+└── verification/   # acceptance criteria results
+```
+
+</details>
+
+<details>
+<summary><strong>Development</strong></summary>
+
+```bash
+make test
+make check
+make clean
+make clean-examples
+```
+
+</details>
+
+<details>
+<summary><strong>Security and Community</strong></summary>
+
+- Contribution guide: [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md)
+- Code of conduct: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+- Security policy: [`SECURITY.md`](SECURITY.md)
+- Changelog: [`CHANGELOG.md`](CHANGELOG.md)
+- License: [`Apache-2.0`](LICENSE)
+
+</details>
+
+---
+
+## Go implementation
+
+The node under [`go/`](go/README.md) is what `af install` gives you, and it
+registers under the same ids as everything above — `swe-planner` and
+`swe-fast` — so no trigger, reasoner name, or API shape changes with it. The
+repo-root manifest declares itself `superseded_by` `//go`, so
+`af install https://github.com/Agent-Field/SWE-AF` lands there and replaces an
+existing Python install in place, keeping its node-scoped secrets.
+
+The Python implementation is unchanged and still what `python -m swe_af` and
+the compose stack in `docker-compose.yml` run. Because the two now answer to
+the same node ids, running both against one control plane needs an explicit
+`NODE_ID` on one of them — `docker-compose.go.yml` does that. See
+[`go/README.md`](go/README.md) for build, run, and Docker instructions.
+
+### Coding engine (beta)
+
+The Go node ships a prebuilt high-performance coding engine next to the classic
+coding loop. Whether it runs depends on how you got the node:
+
+| How you run SWE-AF | Engine | To change it |
+| --- | --- | --- |
+| `af install` / AgentField Desktop | **On by default** — `go/agentfield-package.yaml` declares `SWE_PRO_ENGINE` with `default: "1"`, and the installer injects it | `SWE_PRO_ENGINE=0` for the classic loop |
+| Clone, fork, `docker-compose.go.yml`, or a bare binary | **Off** — nothing changes unless you ask for it | `SWE_PRO_ENGINE=1` to opt in |
+
+The gate is purely the environment variable; the manifest is simply what sets
+it for you on an `af install`. With the engine on, builds route per-issue
+coding through it — everything else, including branch/push/PR, stays with the
+standard pipeline. Turn it off and the node returns to the classic
+coder → reviewer/QA loop. Reasoner names and input/output shapes are identical
+either way, so switching costs nothing but a restart.
+
+If the binary isn't present or isn't runnable, the node logs a warning and
+keeps using the classic loop, so the flag is safe to leave on.
+
+Tuning knobs (`SWE_PRO_VARIANT`, `SWE_PRO_MAX_COST`, `SWE_PRO_PUBLIC_URL`)
+and the full env surface are documented in
+[`go/docs/pro-engine.md`](go/docs/pro-engine.md).
+
+---
+
+### Also built on AgentField
+
+> **[SEC-AF](https://github.com/Agent-Field/sec-af)** — AI-native security auditor. 250 agents per audit, 94% noise reduction, every finding proven exploitable.
+>
+> **[Contract-AF](https://github.com/Agent-Field/contract-af)** — Legal contract risk analyzer. Agents spawn agents at runtime. Adversarial review catches what solo LLMs miss.
+
+[All repos →](https://github.com/Agent-Field)
+
+---
+
+SWE-AF is built on [AgentField](https://github.com/Agent-Field/agentfield) as a first step from single-agent harnesses to autonomous software engineering factories. [See what else we're building →](https://github.com/Agent-Field)

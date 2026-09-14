@@ -1,0 +1,541 @@
+{
+  "applied_operation_id": "op_c74696ab4229405586942d9e64e727a9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bcc419129d27e87ff2979e99634f8aef8cb6c74d7e3d4d28ef3b4d9837b26d0",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 24,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L16-L24"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c750f2ace9684a530b2b84eb0fbbbdbdb7126b587e2627eba80708e08f2970a",
+        "slc_eb1a915dad6366db6a1761aededa7914b54d5f421f49f573579bfd43928d8426"
+      ],
+      "text": "mindwalk is a visualization tool that replays coding-agent sessions as light moving through a night-style map of the codebase, showing where the agent searched, read, and edited."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_adf0b9118e971e9cc57d7e5480c0497635cd8926d28d18dea801d458be25d7d4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 54,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L46-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b9e9843c70926e8a99eac9068e87a39e5ac9896ac56617b7c3c780dad2811857"
+      ],
+      "text": "The CLI offers serve, open, map, build, trace, and analyze subcommands, with flags such as --port, --no-open, per-agent session dirs, --judge, --model, and --no-rubric."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7bb51eb85d7c77ca6627777e149ed7dd8ced48b99511ea2fef7687fe93b25982",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 147,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L137-L147"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 150,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L149-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26b57f7d83349f9cda2595340a97602035bdfcae865f2771e53f7fcc7d5667b9",
+        "slc_8b398085d3862add2eca0dfcda00d1b94705b45801ea24f9702451b3a26d7130"
+      ],
+      "text": "The system separates three artifacts: a normalized trace (internal/adapter, one adapter per agent format), a deterministic citymap (internal/citymap), and an LLM-judge report (internal/judge), joined by a local Go server serving a React/Three.js frontend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6fd95171d84cb28be7cff5efa13b7c50098d12f6142e3809cf72fb226bde7876",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+          "line_end": 55,
+          "line_start": 52,
+          "path": "docs/dynamic-rubric-evaluation.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md#L52-L55"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+          "line_end": 41,
+          "line_start": 35,
+          "path": "docs/dynamic-rubric-evaluation.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md#L35-L41"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 126,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L120-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0da7b82d9bc71241bed605c659cef09c65176d949a6a335a474610796719438c",
+        "slc_3ea28068867c5788d6910c658ccb043a48c1fbd53dcc597ebed6f4962ab33ecc",
+        "slc_da45ec911978e0a6e1288eebf771990fb36c868067f95994705061a9edc16dfc"
+      ],
+      "text": "Session evaluation uses up to two sealed judge calls via the user's own claude or codex CLI: one drafting task-specific criteria from user messages, one unified scoring pass over four fixed process dimensions plus those criteria."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_20f2dcb8b073e39e03dfea3cd5967653eaeb5aaef156f94d2139a5fea584a27f",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+          "line_end": 61,
+          "line_start": 57,
+          "path": "docs/dynamic-rubric-evaluation.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md#L57-L61"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 111,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L105-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e0866d9f0629d2a55eb245e1506ad86442a6e9c76e2dbd92a8b4a52514ca4fc",
+        "slc_cef49873a4f5f6312e4f0cb7aa8addfb57596db3d33d308ed0f9f5c444d9cb14"
+      ],
+      "text": "Verdicts are never decided by the model: Go mechanically rolls up dimension and criterion verdicts from finding severities and coverage grades, strips hallucinated citations, and retries once on invalid output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33f2d1659583ddf2381bc63fb576f774a8853987e03230f16968b1ae9a670e51",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+          "line_end": 103,
+          "line_start": 101,
+          "path": "docs/dynamic-rubric-evaluation.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md#L101-L103"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 126,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L120-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16542d6c339347936ede50d82bfe9f2262957ad5efc682c4e7a9e55c22a00361",
+        "slc_da45ec911978e0a6e1288eebf771990fb36c868067f95994705061a9edc16dfc"
+      ],
+      "text": "The judge subprocess runs sealed: it gets no tools, no MCP servers, no user or project settings, and no session persistence, and it only receives the evaluated session's summary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d37ba67b7f4146dd98677d44f7ebdfffdc98277eab73f5a148d3723863acbdf",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+          "line_end": 83,
+          "line_start": 79,
+          "path": "docs/dynamic-rubric-evaluation.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md#L79-L83"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 131,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L128-L131"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+          "line_end": 86,
+          "line_start": 85,
+          "path": "docs/dynamic-rubric-evaluation.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md#L85-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05782425f89f70067ec94fc11b3adc96503bed7eb1076125e2f78c68590b3fa0",
+        "slc_23b976d5656e1ab2f3aa53dcb75a5b0c63244ff6bbed5c1f642848d93dafc75f",
+        "slc_b3a8c4c76d0ec0a44b4326382b8fe381d7429a0b9e1089652f1863d1ab4cdc61"
+      ],
+      "text": "Evaluation reports are cached one per session in ~/.mindwalk/reports, go stale without auto-rerun when session content changes, and reuse the drafted rubric when task wording is unchanged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9800024d7ab05d152206febdf72c2e1ae16bfaba7e0fd4e138a12049706a31ef",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "18478f7ec59c174cd273efbd1ac1e042b114afde",
+          "line_end": 54,
+          "line_start": 44,
+          "path": ".impeccable.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/.impeccable.md#L44-L54"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "18478f7ec59c174cd273efbd1ac1e042b114afde",
+          "line_end": 34,
+          "line_start": 22,
+          "path": ".impeccable.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/.impeccable.md#L22-L34"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 83,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L58-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37801c80fdfd340648029f764d79f3c78664eeb237bc48052c76562d70620356",
+        "slc_bbcff1f45e162c3af7d3f77c45d624a0bd864f87cdf647577304eeb8d841396a",
+        "slc_c11ef8bc41d30e54890cc1f99c1f9fa81868c1be31afdb246294542f9c5d33a7"
+      ],
+      "text": "The UI encodes touch state as light on a dark ink-blue map (seen green, read blue, edited amber), with tree and terrain views, a playback histogram where observation stays cool and mutation glows warm, and glow treated strictly as data."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44a094a2ff181810d8f487d8c2ecd5ffd28f0fd9c0411e6fefc77714e262c135",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 171,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L165-L171"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 161,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L156-L161"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "b1b54b3e98d804b571a53ac74153f234eb19cacb",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "AGENTS.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/AGENTS.md#L43-L43"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "b1b54b3e98d804b571a53ac74153f234eb19cacb",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "AGENTS.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/AGENTS.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33c5ad35f3106f718efb335d6bed22fa76ea41a62a2589486676105b2acdb3de",
+        "slc_5a9b5925aa4df5426ae5ce9e8c9047ea4b440010dfbcc72b738095cc959d0221",
+        "slc_8ed8b0cffebe99e820e3ca3693eff4daca11602c7c01799ee160c920723e62e3",
+        "slc_cb842bc7fb07229e545fdbf62d3c8b61d31ff3897a889f2198cbb0095419cfb8"
+      ],
+      "text": "Repository development practice: contributors run make setup, make serve (dev server on :8765), make test before sending a PR, and make build to regenerate embedded assets; Go code must stay gofmt-ed and internal/server/static must never be hand-edited."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d95e2692b6e32a30cce8164c78142f2e27290b79468b305ec90a4090ef071293",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 24,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L16-L24"
+        },
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+          "line_end": 126,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md#L120-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c750f2ace9684a530b2b84eb0fbbbdbdb7126b587e2627eba80708e08f2970a",
+        "slc_da45ec911978e0a6e1288eebf771990fb36c868067f95994705061a9edc16dfc"
+      ],
+      "text": "The product is a single Go binary that runs fully locally; viewing sends nothing anywhere, with the only network use being the optional evaluation through the user's own agent CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac9b82cfa8f0e7c9e321440ad868bcf358d1acde8b87332207d98bff3a24385e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+          "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+          "line_end": 16,
+          "line_start": 12,
+          "path": "docs/dynamic-rubric-evaluation.md",
+          "repository": "cosmtrek/mindwalk",
+          "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md#L12-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c3aa72814aedc18353b45f44fc4352195deb8393864e2cde6b2b7c3a83eddc1"
+      ],
+      "text": "The fixed process dimensions (exploration, scope, wandering, verification) are tuned for code-editing work and can be systematically too harsh on research, debugging, or documentation sessions, per the project's own design doc."
+    }
+  ],
+  "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 185,
+        "path": "README.md",
+        "size": 9892
+      },
+      {
+        "lines": 54,
+        "path": ".impeccable.md",
+        "size": 3040
+      },
+      {
+        "lines": 103,
+        "path": "docs/dynamic-rubric-evaluation.md",
+        "size": 5074
+      },
+      {
+        "lines": 45,
+        "path": "AGENTS.md",
+        "size": 4158
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 11
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 120,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_b31d80f1098e58ddae6184f949467974",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/cosmtrek/mindwalk/77cd79596a1b7f9f62256ea06485e15182a09566/979a5969183bf46b/manifest.json",
+  "package_id": "pkg_6307936f008ada35f26c436799b787cca283736453a098f30d770b589bc02c20",
+  "repo": "cosmtrek/mindwalk",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "81d0a7e82b8172e45fb0faac42aa4b13a4d26c30805096922bd872d573e085b5",
+  "snapshot_id": "979a5969183bf46b",
+  "sources": [
+    {
+      "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+      "git_sha": "18478f7ec59c174cd273efbd1ac1e042b114afde",
+      "lines": 54,
+      "path": ".impeccable.md",
+      "repository": "cosmtrek/mindwalk",
+      "sha256": "070a36f62848e53fc5482e1ef66dde02c4c0d198d09d38c917d71bd14de78bf0",
+      "source_id": "src_05dcd8cf9d445a1bb00475d28d585947",
+      "stored": "impeccable.md-7fb1534b0977.md",
+      "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/.impeccable.md"
+    },
+    {
+      "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+      "git_sha": "b1b54b3e98d804b571a53ac74153f234eb19cacb",
+      "lines": 45,
+      "path": "AGENTS.md",
+      "repository": "cosmtrek/mindwalk",
+      "sha256": "fa435f02a4aa89c9a28e6ac3951110cf3340a0033486b247f926eaa700618ac5",
+      "source_id": "src_8c0d0761fb995c53ace293dbf423b0f0",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/AGENTS.md"
+    },
+    {
+      "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+      "git_sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "cosmtrek/mindwalk",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "source_id": "src_6dea928fef4556b98d831737733413e5",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/CLAUDE.md"
+    },
+    {
+      "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+      "git_sha": "72a25414fca410b38b069f8c800942e8d2763a1f",
+      "lines": 185,
+      "path": "README.md",
+      "repository": "cosmtrek/mindwalk",
+      "sha256": "f6e3b973342f41500f118ec99c3193d77f1c026f413a63bbd3ad00e5fa2c85be",
+      "source_id": "src_e00dfd2542fd5abbb900b598ef04f362",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/README.md"
+    },
+    {
+      "commit": "77cd79596a1b7f9f62256ea06485e15182a09566",
+      "git_sha": "c6801cb5c2ee09a0a03affa94e4d3f53bca093c9",
+      "lines": 103,
+      "path": "docs/dynamic-rubric-evaluation.md",
+      "repository": "cosmtrek/mindwalk",
+      "sha256": "ed2b0941ce4831f38f57d2de763088cf81a6b6e46c5620262d040d300375e83e",
+      "source_id": "src_035c9a49c9dc5f369e041896e498e515",
+      "stored": "dynamic-rubric-evaluation.md-ca2c13663329.md",
+      "url": "https://github.com/cosmtrek/mindwalk/blob/77cd79596a1b7f9f62256ea06485e15182a09566/docs/dynamic-rubric-evaluation.md"
+    }
+  ],
+  "summary": "mindwalk is a visualization tool that replays coding-agent sessions as light moving through a night-style map of the codebase, showing where the agent searched, read, and edited. The CLI offers serve, open, map, build, trace, and analyze subcommands, with flags such as --port, --no-open, per-agent session dirs, --judge, --model, and --no-rubric.",
+  "superseded_claim_ids": []
+}

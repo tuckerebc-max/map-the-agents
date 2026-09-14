@@ -1,0 +1,588 @@
+{
+  "applied_operation_id": "op_9b48d9cf65874e348981096b3aeb9729",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_dfd3d700facb847df55d031de518534d764fc9e08928c73fb8ea4759d941020c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7cfc896ce19f2b96ce3596973bddd65cc116b850e40a7eae1ce789e5bd9368c7"
+      ],
+      "text": "FinRobot is described as an AI agent platform for financial applications that unifies LLMs, reinforcement learning, and quantitative analytics for investment research, trading strategies, and risk assessment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f6d17bd470abb1cb40ad92ef567440f381e4a30d7f7a5656d2eb10ec10da925",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L31-L31"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_059a28b0442949c8685870727d6dcffd6151cdb316efb0fca130fc96e6eb4f53",
+        "slc_ce07088eaf8dc967d709e5e8ca9cee6f9600d1318b81b763411f85119812aab7"
+      ],
+      "text": "The project deliberately avoids tying itself to one agent framework; each generation adopts new agent architectures while keeping the financial domain layer, tools, and deterministic computation at the core."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d937a316be820bfa268a9922d46f964857cdc41018e450df7a36cbe1981385e3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 38,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L33-L38"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 47,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L44-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_71d4741e594f61f2710e1d55432ee53978b620eda79dfa3464fac36af9715d32",
+        "slc_945dfd25f1ab4ef5924370b3fffc90fe0fd42c7892e25e51ca9dce2c90eca1b7"
+      ],
+      "text": "The repository hosts V0 (AutoGen-based FinRobot) and V1 (finrobot_equity, equity-research agents and report generation) as open source; V2 is online-only with source not yet open-sourced, and V3 is in development."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36ce7f34f5dc2ccd950d5d0e9ee69f10e66fbd4d330bb171043a576634e07d39",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 110,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L100-L110"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 96,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L94-L96"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7a683a2de76663ab3d87b98223ef5d3a47d9335bfa81d2ac34ee7e6d95880ec",
+        "slc_c7ff081bbe8b25cb02a93e183b837f93912313d1dce51158c6f303c6f4ac3ea0",
+        "slc_e927fc3e448fc917d695bb492889f66ac1f0e1407e1dac49d05df65c4e759537"
+      ],
+      "text": "The desktop product's multi-agent architecture uses one Lead Agent orchestrating five role-based sub-agents (data, analysis, modeling, synthesis, reporting) plus three debate agents (bull, bear, judge) in a pipeline flow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b72a4d026ce0ce80d19d89a28cffc7bdf9ec9bcbd6a52fca48016e50739d95f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L114-L114"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 124,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L120-L124"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L116-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13229ec05391ec459e1ac2d3cc8605005d9d5a68f1267b7d80bd9fcbfb2baab8",
+        "slc_31e754fd490f5ba090bbb282fd52973ff172ea8263da2798bbde4e802d0f6148",
+        "slc_a23a235b4bb89c07f38e5d254e36f76d9a06fb40caab5db8d807b1b961ff816d"
+      ],
+      "text": "A stated core principle is strict separation of deterministic financial computation from LLM narration: valuation numbers (DCF, DDM, LBO, WACC, comps, Monte Carlo) come from pure-Python code paths, while the LLM handles reasoning and report writing, with provenance tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e5c9911d1db9d0ea5b66361f035ee1f7370a4f096981dd8f849b0bf2d18b8e4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 134,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L127-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61ea3b0ad7109f3c38dd9c2a9364896420f656d159882e1326f9b9ba0e0e8af5"
+      ],
+      "text": "The codebase snapshot lists 9 agents, 7 research pipelines (company research, DCF, comps, LBO, DDM, earnings, IC memo), 30 pure-Python compute operators with 7 coordinators, and 7 data providers with failover including FMP, Finnhub, yfinance, and SEC EDGAR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_13d44be4a2a29f5389827f1c7d65d6682b76993bf7c0baff716ecebee6cdc800",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "f94f77d749e4f746841da91059c1961861ab2fa6",
+          "line_end": 7,
+          "line_start": 4,
+          "path": "requirements-equity.txt",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/requirements-equity.txt#L4-L7"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "f94f77d749e4f746841da91059c1961861ab2fa6",
+          "line_end": 26,
+          "line_start": 25,
+          "path": "requirements-equity.txt",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/requirements-equity.txt#L25-L26"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "f94f77d749e4f746841da91059c1961861ab2fa6",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "requirements-equity.txt",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/requirements-equity.txt#L11-L13"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "f94f77d749e4f746841da91059c1961861ab2fa6",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "requirements-equity.txt",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/requirements-equity.txt#L46-L46"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "f94f77d749e4f746841da91059c1961861ab2fa6",
+          "line_end": 40,
+          "line_start": 38,
+          "path": "requirements-equity.txt",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/requirements-equity.txt#L38-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c4d7fc2c9421ac0f3f8900be9148b87be9390092f25cd93459d545abb38b3f9",
+        "slc_1d3a80c80d8556affb43ea2fecf674d92a5a037c921cd3100f9c3a0c5a6b488b",
+        "slc_582e454b2840c84df7e0f5c937074c55586f5fe3e1938036dc60ca75e1783f15",
+        "slc_7652f88d9db5cf559090ea5e215c4be1bec189a569fce2fd8ecb89bd90aa30ff",
+        "slc_f24bc71ee4e0c29e98b337d855ee6cb12c1990d1eb7c0b1c05615d0b68ef38e2"
+      ],
+      "text": "requirements-equity.txt pins pandas 2.x, numpy 1.x, openai 1.x, openai-agents, pydantic 2.x, FastAPI, SQLAlchemy, yfinance, reportlab/weasyprint for PDF, and pg8000 for Cloud SQL PostgreSQL deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af52e26dded544f1e9344a8e63340e87eb06697a39b31e3a9c11e0b5f863b558",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 195,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L190-L195"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 204,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L198-L204"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 178,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L173-L178"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43ec0f5db63fce5ac863b1505294a6c90b59e267c4b938fe20f04d34c08676dc",
+        "slc_52a79f5c86d82fa70aeeb9955e487e02fb74615b652a7a1ef420bc736a46d765",
+        "slc_c83c6539c6be641f1394e0b4142c24b1220af7e0d347be66129134f02e417f88"
+      ],
+      "text": "The finrobot_equity CLI exposes scripts such as generate_financial_analysis.py and create_equity_report.py taking flags like --company-ticker, --peer-tickers, and --analysis-csv, and a web app accessible at http://127.0.0.1:8001."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5c74921209acfcf7e8451eb875046977c993b6e9d6f5e354629238e22caa099",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 185,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L180-L185"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 352,
+          "line_start": 330,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L330-L352"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 165,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L155-L165"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 178,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L173-L178"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a4e017b98cffb8ea79b165d3348416d89632a08f8e4af8466786b5e2ae1172d",
+        "slc_8beb12e7e75452c0cdd5e9b5a5e1bcf656fc2faa3a0c1e2d3e76c2aa19c76bed",
+        "slc_b02f386a2851c44676efdcffd554989c84bc1fbd951ed810a7b1fa0ad78d119d",
+        "slc_c83c6539c6be641f1394e0b4142c24b1220af7e0d347be66129134f02e417f88"
+      ],
+      "text": "Setup involves copying config.ini.example and OAI_CONFIG_LIST_sample / config_api_keys_sample templates and adding OpenAI, Finnhub, FMP, and SEC API keys; deployment is via deploy.sh start/stop/restart/status or a manual venv plus run_web_app.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_874b4bfc3d4d8709f5db802555ac1fae55199e8a7b9bec3516d42360bc39bbcc",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L67-L67"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L71-L71"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 75,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L73-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f48d2627e6f3b4666232f7b9ac922f7fbb1225f6464a16b6244e3f6c9110b73",
+        "slc_7fa177ff18d317bbefff717f6ad979e41b2120c287775213b7ac1d04c4622c79",
+        "slc_f90ecc738241bf38741bab3ccc362565d4bd07f476cd77fdf47a5f39f436ac2e"
+      ],
+      "text": "FinRobot Desktop v0.1.0 supports only Apple Silicon Macs (M1-M3 or later) with no Intel builds, and the app is not yet Apple-notarized, so users must clear the quarantine attribute via xattr before first launch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3a8808dfbccf47f484fffc3fca49e060595647ff1cd29c6d848cc92af9a7ba3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 274,
+          "line_start": 274,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L274-L274"
+        },
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 314,
+          "line_start": 276,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L276-L314"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_840344428bad3619834779eae84a44035803b291071942712bf412a536226315",
+        "slc_b0e3680cd6c06feeb648de25037390a1a967e44911a3334a764a4aa8f431e0ab"
+      ],
+      "text": "The legacy finrobot package is organized into agents (agent_library.py, workflow.py), data_source (finnhub, finnlp, fmp, sec, yfinance utils), and functional modules (analyzer, charting, coding, quantitative, reportlab, text), with beginner and advanced tutorial notebooks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b1554e8b231179756ffad361f6bd64d6631e948134b62112cc7f07611e09c2b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+          "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+          "line_end": 416,
+          "line_start": 408,
+          "path": "README.md",
+          "repository": "ai4finance-foundation/finrobot",
+          "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md#L408-L416"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72c3280febd235b534dd8ed6e8a6dfef1cf3e36448bbd28d7c9e21fdd3df2e51"
+      ],
+      "text": "The README's disclaimer states the code is Apache-2.0 licensed and must not be construed as financial counsel or trading recommendations."
+    }
+  ],
+  "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 423,
+        "path": "README.md",
+        "size": 23299
+      },
+      {
+        "lines": 62,
+        "path": "TRADEMARK_POLICY.md",
+        "size": 1825
+      },
+      {
+        "lines": 49,
+        "path": "requirements-equity.txt",
+        "size": 984
+      }
+    ],
+    "omitted": [
+      {
+        "path": "requirements.txt",
+        "reason": "file-budget",
+        "size": 542
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 145,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": false,
+      "omitted": 1,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_1f37a2a5e7695dd2975a5726c8fd2e9e",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ai4finance-foundation/finrobot/6d6ccd32c1b8b1904dc656cf06897438aba3daec/41e01cd34f0a44ae/manifest.json",
+  "package_id": "pkg_30b3e9531cdb0260ad6b114e78baa84c514470e0a3d8489b84e0caf71d9a3faf",
+  "repo": "ai4finance-foundation/finrobot",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1e30b6f1c1fedb2a6ad40ef2fdfd1fcaeb3a571acf203530ebec1c5aa882506b",
+  "snapshot_id": "41e01cd34f0a44ae",
+  "sources": [
+    {
+      "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+      "git_sha": "346ae27955e7257bca2674fca1905903a5c9c9a0",
+      "lines": 423,
+      "path": "README.md",
+      "repository": "ai4finance-foundation/finrobot",
+      "sha256": "d1877852c6e711c18238cfb859aaedcb2c8c8f11e511a24c6b5f00eea487563a",
+      "source_id": "src_c05da2e14faf5e7097c1bff3bafe4364",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/README.md"
+    },
+    {
+      "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+      "git_sha": "3c0a9297b07c7b5c6748aac41096a0ab56c96708",
+      "lines": 62,
+      "path": "TRADEMARK_POLICY.md",
+      "repository": "ai4finance-foundation/finrobot",
+      "sha256": "28d544a54523e7119a7e4e29e17a2dd532e2c611b8f1991c591fb460dafc81f6",
+      "source_id": "src_c35f3aef82a0572eaccb83768a897c46",
+      "stored": "trademark_policy.md-10f5d39e329a.md",
+      "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/TRADEMARK_POLICY.md"
+    },
+    {
+      "commit": "6d6ccd32c1b8b1904dc656cf06897438aba3daec",
+      "git_sha": "f94f77d749e4f746841da91059c1961861ab2fa6",
+      "lines": 49,
+      "path": "requirements-equity.txt",
+      "repository": "ai4finance-foundation/finrobot",
+      "sha256": "7b6ddb60add459012eb95ab7435e72e593a8c7922c7f01982f7e9d007bbddf67",
+      "source_id": "src_78ca751b89305d48977184caaad50aa8",
+      "stored": "requirements-equity.txt-bf28c352275d.txt",
+      "url": "https://github.com/AI4Finance-Foundation/FinRobot/blob/6d6ccd32c1b8b1904dc656cf06897438aba3daec/requirements-equity.txt"
+    }
+  ],
+  "summary": "The snapshot is README-and-manifest evidence for FinRobot, an open-source AI agent platform for financial applications spanning a legacy AutoGen-based framework, a finrobot_equity research pipeline, and a PydanticAI/FastAPI/React/Tauri desktop product. Claims below rest on documented README text and dependency listings; no code was inspected.",
+  "superseded_claim_ids": []
+}

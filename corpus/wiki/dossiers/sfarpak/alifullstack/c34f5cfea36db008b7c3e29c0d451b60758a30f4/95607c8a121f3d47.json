@@ -1,0 +1,761 @@
+{
+  "applied_operation_id": "op_d7b5815e376a45519c6494097963f07e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_dbc9c924f27f4bea7ee61cfecf0978cba724dc9d2b9fe2f474a8200c0be24ef1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L11-L11"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6cd2e9bb6f491771a82613531679ecedccd386703e0a5973fcffd916e34297a3",
+        "slc_c4425d78928661688beffdea8bd6fc02ed4c97346ba5ec36ac7551332ffb68f5"
+      ],
+      "text": "AliFullStack is an Electron desktop app with a sandboxed renderer process for the React UI and a privileged Node.js main process, communicating via IPC."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abd49e09e6341098acb9293f5aa4af67e54811ca7eb79a95dc4e2e80e7614579",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L17-L19"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_184f28aad8730be6425f918e4186b7d82d11760ebdb9a12cbdd747e8f694cbda",
+        "slc_3de2aaf426c4465a9efccd7c92c3d23e003434fe4032628d18625d212b0d9265"
+      ],
+      "text": "The system prompt instructs the LLM to respond using XML-like tags such as <alifullstack-write>, which a specialized Markdown parser renders in the UI and a response processor executes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca9f5f9f2c87b2eb058e09776795403a329eec0ba07805a5d6d3d36977116a0f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L31-L32"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34745c39943bf2effb84b013cbd6c92d0159321cb8f6376d5320d9d5743faf52",
+        "slc_59ccedbf094228d733aafa8d1c48eeb020f904aab5abc0bfdaaa19063f193baa"
+      ],
+      "text": "The project deliberately simulates tool calling with XML-like tags instead of native function calling, citing support for many simultaneous calls and evidence that JSON-embedded code degrades quality."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eea60684e3ef061c2f2b2f4e4dc2ee6cf431226acdc5b21ab9d5cc3e29a67920",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L40-L40"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_622237334846dae27e34d9597e9b66e6f25e56b2705c787dd2268c6f7b94d804",
+        "slc_ebef83b1245cf6b095462ef0ce734dbdfd3e059980ab06544a632fb06d6be521"
+      ],
+      "text": "The agentic loop is intentionally simple: typically a single LLM request per user prompt, with optional TypeScript auto-fix, avoiding complex multi-step agent workflows to control cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49a0589fea1c5337f79148f7c5f3bac3fc0f43cbcfd76179ea3c05b4f73437c8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L50-L50"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L48-L48"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_961f0c58fe6ef9d54a72b2ef537ecc1dbdb157ba86120b47c0d4f8da421695af",
+        "slc_a0e88ca622eef6432330dac702f25c7a9e4160444d426d08849ba80b9131a69e",
+        "slc_da037045185879f5c458daaa53104cbf91de69c6c83e7ed3402b9ad03f9f74d0"
+      ],
+      "text": "By default each LLM request includes the entire codebase as context; a Smart Context feature uses smaller models to filter important files, and agentic codebase search is avoided for cost reasons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4ffb3e9ca4010e6a905e2af3b7379c50fa9545ce38b76f1836ee799dcf2d398d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L147-L147"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 165,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L162-L165"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 188,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L185-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7d818784a08d35a815ab59e36e88b6b65c8ffd3722d5687aa5b988818e052f97",
+        "slc_bcecc700517318e44a30bd54b696a820d27c36dd19bd21eeae23c93ca34aa0b1",
+        "slc_d1d6dcef06a2b573c84e4637cdb52c9b76626881259184f4db03abe929896584"
+      ],
+      "text": "Setup requires creating a userData directory for the database and applying Drizzle migrations via npm run db:generate and db:push; Drizzle Studio can inspect the database."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ea742a2514684521e227cc6151ccfc2b0759477f4959c7e83c2ba1c1aaf3b0e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 128,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L127-L128"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 171,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L169-L171"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 173,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L173-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5504d2af7e59f76fa0e4f855eccff05ec54555e8251291bf41a55e4973395532",
+        "slc_5849593e277189557727e0d47497faefc46f65987f618ab2cd0066dd3a427460",
+        "slc_ba8b316f1aed8830d07efb89e4be33470b678afbec3e72e36d581947e3ac8cb6"
+      ],
+      "text": "Prerequisites are Node.js >=20 with npm or pnpm (pnpm recommended); the app runs in development mode via npm start as an Electron app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5297982905ed3de5de6e4276ff9dea54727f562eb26e775371e98ed0e6074eb9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 214,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L214-L214"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 233,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L233-L233"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 198,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L198-L198"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 204,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L202-L204"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 192,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L192-L192"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 177,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L177-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67648f7116b6db3775ecc7fcd23dbdfbdb6cd324cbff5ca049bf4f4490f9c471",
+        "slc_82b6878be4c61999d43639e70401f3930bbf3b6176859a26ca57d1b3113bf2db",
+        "slc_8519c79b97f1deb70baf0a9c96b1c0c8f6d5be7baebe2ed7cc4d6f8d68bd7699",
+        "slc_e2ae04c47d921396b8c5aed43bd0b6393ed506ed8fa9fb539eb4b04069c5df90",
+        "slc_fc7f9295105cd76a9f6b9d67d7a9260a0aa4322fcd0a827673b3510d43f9aa08",
+        "slc_fd32ca17a280db2019d2abec866a17dceaf2a98fc566cbf155de57c099dad032"
+      ],
+      "text": "Repository development practice: contributors are told to set up pre-commit hooks (recommended), run unit tests with npm test, run E2E tests after npm run pre:e2e, and submit PRs from feature branches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_709458d070e718dcacc711daced80098b9d75218aa290c5b6cd94c34dd348aa4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L106-L106"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L96-L96"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L124-L124"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L133-L133"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L5-L5"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L87-L87"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 19,
+          "line_start": 11,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L11-L19"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L115-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b984a9d63c61a82fc3698689daff9eb1627b7a3d7b70c21f03eff68c1c02f93",
+        "slc_4a008bbab201272a725d297b5fd93a856559835ee1732886fd2e892590a075d0",
+        "slc_79181a76c20649aacbc1989c48a420e662ee26ac0e3804792627f673ce1db7f4",
+        "slc_8970f91bd1a6cc3fd6860cba6e8d1e2f2e5919921d80da09409a106ffe3136d9",
+        "slc_c3735ebdc0c1b8028a94b68fa1d0fb3826e75ffd0042636fa0406556fab81253",
+        "slc_cbaf36c9d2a8d11d5a65af57c45ea4b820d8a5f8d3a2785ce86af2f666170d8c",
+        "slc_cf6f3df3e1ae7f47a74e9824031c9ab7ea1491792fca3480986fd94fa4220671",
+        "slc_eec52b716a132cf3a7e13da75be3d5d4cecf012e3715c61e534e1e79486a006e"
+      ],
+      "text": "Repository development practice: a functional Selenium test plan (Java/TestNG, WireMock, H2) is outlined covering app creation, chat, integrations, data persistence, errors, and performance suites."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c20989b80e2b6f41b85e74cd7411d5620889402f272d8349028797a08938afbc",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L38-L38"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "docs/architecture.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_613503f824cadd8d5bc45cd2536846785b8476e020d6f9cae0c61b17102a0583",
+        "slc_622237334846dae27e34d9597e9b66e6f25e56b2705c787dd2268c6f7b94d804"
+      ],
+      "text": "The architecture doc acknowledges AliFullStack is less agentic than tools like Cursor, which plan, search codebases, run linters/tests, and auto-fix code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b9b930f752094d0d97aedbd9ade491c93274c3ddfbc5879e0c45d40553825703",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 71,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L65-L71"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 61,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L55-L61"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+          "line_end": 86,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md#L75-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29d5ed944563ba5553fa24571f345c00e545b9df898bbadbfa3b43978908fd0d",
+        "slc_6e5c2ecee4fcad9704e6f2a0886086544da12bcf83d9d51d1bd582ac9ab85b13",
+        "slc_acc047965d8535e93acee12b4bee9e1fd420134847e51ec19d410ca4dee3aa25"
+      ],
+      "text": "The roadmap marks React, Next.js, Vue 3, Django, FastAPI, Flask, Node.js, and multiple LLM providers (OpenAI, Gemini, Claude, Bedrock, etc.) as supported, with Angular, Rails, Mistral and others planned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fd33eb8dd77e4f614721f403745f83d1a9074b319b69f27651606b391ca72aa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 331,
+          "line_start": 331,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L331-L331"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L106-L106"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 111,
+          "line_start": 108,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L108-L111"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 314,
+          "line_start": 314,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L314-L314"
+        },
+        {
+          "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+          "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+          "line_end": 297,
+          "line_start": 297,
+          "path": "functional_selenium_test_plan.md",
+          "repository": "sfarpak/alifullstack",
+          "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md#L297-L297"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07e104d901a0472c053965d11df9634d113ca39afcb666ff46b1e8b1a2197aad",
+        "slc_1b984a9d63c61a82fc3698689daff9eb1627b7a3d7b70c21f03eff68c1c02f93",
+        "slc_3dd154e57751311bd806fa2c062038055f1f86f1e2247b5ad1ab7fa887824cee",
+        "slc_4e1ab2d0573c0b66e3eb14ebf5aedea07e9d54287b2ae5c2dbb2e26800c1694c",
+        "slc_67712c6fa22283e4235a87d67b6e5222d961ac34c99472e5113091aca84d8ed4"
+      ],
+      "text": "The product appears to integrate with external services including Supabase, GitHub, Vercel, and Neon, based on the integration test cases described in the test plan."
+    }
+  ],
+  "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 289,
+        "path": "README.md",
+        "size": 7746
+      },
+      {
+        "lines": 52,
+        "path": "docs/architecture.md",
+        "size": 6725
+      },
+      {
+        "lines": 87,
+        "path": "AI_RULES_3D.md",
+        "size": 3278
+      },
+      {
+        "lines": 594,
+        "path": "functional_selenium_test_plan.md",
+        "size": 15575
+      },
+      {
+        "lines": 82,
+        "path": "GIT_PUSH_ISSUES.md",
+        "size": 3336
+      },
+      {
+        "lines": 601,
+        "path": "integrated_selenium_test_plan.md",
+        "size": 19088
+      }
+    ],
+    "omitted": [
+      {
+        "path": "QWEN.md",
+        "reason": "file-budget",
+        "size": 0
+      },
+      {
+        "path": "selenium_test_plan.md",
+        "reason": "file-budget",
+        "size": 9055
+      },
+      {
+        "path": "terminal_integration_summary.md",
+        "reason": "file-budget",
+        "size": 5415
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2239
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 499
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3136,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6051be0db85455a6bc36e88ba1baa71b",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sfarpak/alifullstack/c34f5cfea36db008b7c3e29c0d451b60758a30f4/95607c8a121f3d47/manifest.json",
+  "package_id": "pkg_ac926dea75834c9e84ddda52ed82b65eb261c96ee3680816efa2b3158fa97f12",
+  "repo": "sfarpak/alifullstack",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4b9fd884f7b2f8d557bdcb9c9973323a95476a0fe7a43196ff17b5adeeb1f658",
+  "snapshot_id": "95607c8a121f3d47",
+  "sources": [
+    {
+      "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+      "git_sha": "978c81fceaf74b02fd984889451e4db07d4b582d",
+      "lines": 87,
+      "path": "AI_RULES_3D.md",
+      "repository": "sfarpak/alifullstack",
+      "sha256": "3c355698fee7e95edd3869623903afe5bdb3093cc13cd480f4a32440f8d7fe9d",
+      "source_id": "src_6077ffdff213514d802f9c2d7c557c98",
+      "stored": "ai_rules_3d.md-662ac270b125.md",
+      "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/AI_RULES_3D.md"
+    },
+    {
+      "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+      "git_sha": "9c9258319aabb4fcb2334402b69e116319a7e73b",
+      "lines": 82,
+      "path": "GIT_PUSH_ISSUES.md",
+      "repository": "sfarpak/alifullstack",
+      "sha256": "b9ba2290653eeeb2c9f9c38c43630249cbcfe8b1792ef7ad2227fe1702905132",
+      "source_id": "src_03298d042d325b1fbcccbd93f88c6608",
+      "stored": "git_push_issues.md-1bb0895a4cf6.md",
+      "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/GIT_PUSH_ISSUES.md"
+    },
+    {
+      "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+      "git_sha": "b24dee0effb5d817da4dc633791ec433a6348864",
+      "lines": 289,
+      "path": "README.md",
+      "repository": "sfarpak/alifullstack",
+      "sha256": "183d1ec02bcfe58648b49fef0fd412bd43e5511b081a34c3320c7964ab4150e9",
+      "source_id": "src_cae1b7f5eeb15379a8ad950b011f61e6",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/README.md"
+    },
+    {
+      "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+      "git_sha": "403a61180a6e3fe6e4dbd15c9d3f4db3b4a42c88",
+      "lines": 52,
+      "path": "docs/architecture.md",
+      "repository": "sfarpak/alifullstack",
+      "sha256": "c37e1d8a3eea4e8b57fe5c31603867f9d8244d03e9d780850df263c0158a9440",
+      "source_id": "src_c753d63e5cea570eac7b3b89ae74132d",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/docs/architecture.md"
+    },
+    {
+      "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+      "git_sha": "bc45f404d20f13a1135eab7ac875cfa555c0cdf9",
+      "lines": 594,
+      "path": "functional_selenium_test_plan.md",
+      "repository": "sfarpak/alifullstack",
+      "sha256": "9f659a8cd59ca16c06d563a316f8d5094f3d47b6fc7dd4c98873b896adf83b2b",
+      "source_id": "src_139d44195bbd5b28873d918cf33c9ad4",
+      "stored": "functional_selenium_test_plan.md-cf6a55e54ee3.md",
+      "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/functional_selenium_test_plan.md"
+    },
+    {
+      "commit": "c34f5cfea36db008b7c3e29c0d451b60758a30f4",
+      "git_sha": "c79f361145825be03c3689c2472edd4849464f4f",
+      "lines": 601,
+      "path": "integrated_selenium_test_plan.md",
+      "repository": "sfarpak/alifullstack",
+      "sha256": "9ff93308100c0c4ae5612ddd987f58f2043c194306c2d506d8380a09bcd3fff8",
+      "source_id": "src_f92da4edd1495867be019473e954ed20",
+      "stored": "integrated_selenium_test_plan.md-df7085e9a429.md",
+      "url": "https://github.com/SFARPak/AliFullStack/blob/c34f5cfea36db008b7c3e29c0d451b60758a30f4/integrated_selenium_test_plan.md"
+    }
+  ],
+  "summary": "Evidence consists of README, an AI rules file, an architecture doc, and a Selenium test plan for AliFullStack, an Electron-based local AI app builder. Claims cover its Electron architecture, XML-like tool simulation, context strategy, and contributor workflows. Evidence coverage: 181 of 333 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

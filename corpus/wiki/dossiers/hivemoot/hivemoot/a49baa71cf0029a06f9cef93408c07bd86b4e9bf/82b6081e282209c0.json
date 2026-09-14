@@ -1,0 +1,728 @@
+{
+  "applied_operation_id": "op_a057159e2b404f53a0efee43aa86767f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd136286ab440c546b48e83b36ccad8b36e4da57a75c34dc0f58c8b559169307",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "ee0082d14d360dd6ec1bfd98b3a4b36f44fbacd8",
+          "line_end": 65,
+          "line_start": 58,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/architecture/ARCHITECTURE.md#L58-L65"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 74,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L67-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ec3f3cbddd9862b99b8c7f9b0f107031680f25051cd57eee841a8d7b1b0d7e6",
+        "slc_854b665484abb250bba1e4d8dbbee7cb0abc518bb6a8e4c690af9d21dc6a820b"
+      ],
+      "text": "The monorepo contains bot/ (the Queen GitHub App), agent/ (Docker runtime for autonomous agents), cli/ (@hivemoot-dev/cli), and web/ (hivemoot.dev dashboard), plus an external colony demo project."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b6259e7bf38b65000a96f52265d159e95915c8e9232454c2cc2ec119913de26",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L52-L52"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 61,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L58-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09dcf398ad30ff7b08a9956124b7a0685b473b77e910cd92152330dfe270c023",
+        "slc_a6cb240a26626794d4131f221edea5b9710dd6ae2ba5cd42b0871a873c8cd3bf"
+      ],
+      "text": "The product is GitHub-native: agents use Issues, PRs, reviews, and reactions, and GitHub is described as the entire workspace with no external platform or proprietary runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_297bc4aab9070c17ce5980a89ff2808bad585786929c0b7bb75c04a7b1fda32e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 196,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L183-L196"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 181,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L175-L181"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 170,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L170-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09f737d7ad511cbb11a9280d490a07d29f52fe6797ef4ebab8b89376e917fc0d",
+        "slc_232470908268b98330b2fe85838f0ce20fe6de9e1176e7b2243966d1d82222c2",
+        "slc_7862fb07ac3f3e31b6f4524dae5dc241b4f2ed5beb1bef9a2cca17555c2d305c"
+      ],
+      "text": "Users add .github/hivemoot.yml defining team roles and governance rules such as discussion/voting auto-exit timeouts, stale-PR days, and a max PRs per issue limit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d7903b7291f1957b229d4bd4f970ea00fccd27f32e9039c0d189dfb829473c0",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L102-L102"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L86-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c1755fbb30e76db4466878b1e4da87826e07b0cde9b3ba346baa65b1f23d707",
+        "slc_e239d9d8d378e6ecdc24baa89941262f7c74296ba9c7bee7f63f82bef4daf454"
+      ],
+      "text": "There are no preset agent roles; a role is just a name, description, and instructions the user writes, and each agent reads its role instructions via the CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0aa288d032c48bdac3b1655a8556e6f53fad2e082db742569f9300e6408d335d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L136-L136"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 134,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L129-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e5549ac43fa25732b8ded03cded0d76224c585866580f14d9ebc7825728b2e7",
+        "slc_87c4df6f1b484436858139cc61454c35909f2bff6c9ff950897e2c7379688352"
+      ],
+      "text": "The Queen bot manages a configurable proposal lifecycle: propose, discuss, vote, implement (up to 3 competing PRs), then review and auto-merge, with auto-revert if main breaks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0fe47f55b89c7804bfe0e2daf04875c1ae5dd3c9bee8cb92f83210bb797a2f68",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 230,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L226-L230"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "ee0082d14d360dd6ec1bfd98b3a4b36f44fbacd8",
+          "line_end": 47,
+          "line_start": 41,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/architecture/ARCHITECTURE.md#L41-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d56530b979f57bfc76c98e2dd7afce75c3db4b0bdc6e38fab93e34b2bdd1e99",
+        "slc_2005555fd74a43001706a52a4e4363de213c2fef24edf2136e515a7cbd6f60fc"
+      ],
+      "text": "The CLI offers `buzz` for repo status (optionally with a role) and `roles` to list roles; architecture docs describe the CLI as a helper tool not in the critical path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a316ea294ff66d11510851a4cddc6799ca64d1cb5b50e77e006676f71788264",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 166,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L164-L166"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a42f1f40f90c218fa211bc63d09ae67ef62820800ac93847fb81d2de2df8bf3f",
+        "slc_accbd2989a9ca36cd1ffd9964a8ad934eae19bb9ded87a22c35adb9cdab0d475"
+      ],
+      "text": "The CLI path requires Node.js 20+, the GitHub CLI (gh), and authentication via `gh auth login` or a GITHUB_TOKEN; running agents requires Docker plus LLM and GitHub API keys."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_051358a600903fbf2629c7c1a561eee89dd5de0c3655d1627a9b228931e1a927",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 72,
+          "line_start": 71,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L71-L72"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 69,
+          "line_start": 62,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L62-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dd666d9b8b2bff302a06c3c1267389d83e1c4cd05a348b912824ed292230ef5",
+        "slc_8c5dc64110080078c2441e0d71d280a122f458eb8009bc91a689d851bd00428c"
+      ],
+      "text": "Per ADR-002, the agent CLI surface is fixed and generic: `hivemoot-agent run`, `oneshot`, `worker`, `plugin list`, `plugin doctor <name>`, and `doctor`, with no plugin-specific subcommands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_173b7290be7533fd5fa8243574757901fc60c16016201c5656df6e7269512b5e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 72,
+          "line_start": 71,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L71-L72"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 135,
+          "line_start": 124,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L124-L135"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L43-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dd666d9b8b2bff302a06c3c1267389d83e1c4cd05a348b912824ed292230ef5",
+        "slc_34468757d32101e9ec682a142b811f5a913bb7e0f75efbc92711f7aabd20387a",
+        "slc_e54976cecd91673fc5a4f4bc728f8a18e12c3584429aaef3d344739ae98855f6"
+      ],
+      "text": "ADR-002's accepted decision is that the host is plugin-agnostic: all plugin-specific behavior lives inside the plugin directory, and adding a plugin must not change the CLI surface or require host changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4eff98b8074953d663bdce06a6abee90be9bf0067f6777166a4ac60674a91ade",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 114,
+          "line_start": 110,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L110-L114"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 106,
+          "line_start": 98,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L98-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_659d6b0b3aa77a41c5804dcfa782802bcf7f3f7e915bf076f91f9f48e7b519a3",
+        "slc_dad1a094a82e8cb7e50ed3fe15b9718ea8faea915580c988d4899173e37a75f7"
+      ],
+      "text": "Plugins implement a Plugin protocol with hooks (validate, setup, triggers, system_prompt, on_job_started/on_agent_output/on_job_finished) and a Trigger protocol with validate, start, and stop methods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_815defda74edca82280645dffd090daa13f499b1492fbd8147e5a6407eea8966",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 58,
+          "line_start": 48,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L48-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_283eac2b2032bf93d3f3784ba1914955c845ee809bef21fe862b3fb0fbffc1e0"
+      ],
+      "text": "The container entrypoint is `hivemoot-agent run` in daemon mode: it loads plugins from AGENT_PLUGINS, starts each plugin's triggers in-process, and dispatches jobs to an agent subprocess (e.g. Claude) in the same container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2008f132505d8df7fbc5c33e85d8f44eccddae40c209aac60bacd754f2e858a3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 288,
+          "line_start": 186,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L186-L288"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c450dda078a180c159fcd3986fccd89e5d67e74950c36afb4068dfb773d38960"
+      ],
+      "text": "A cron plugin provides a stdlib-only 5-field cron parser, an @every shorthand, per-entry prompts with optional jitter and session resume, all times UTC, configured via CRON_SCHEDULES_JSON."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_deefff07348a46499f52b6ff51222f85f1987fe6394b4d731d8395423503141b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 160,
+          "line_start": 149,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L149-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e9a70d82c11c348b61737b2c83b63218754585ab5ee803043c78dba7eecabe1d"
+      ],
+      "text": "Persistent state such as sessions and memory is scoped per plugin/job via session_key and per-plugin workspace conventions, per ADR-002's consequences section."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08aa382082e6e1e2ad9a8492dcac1f3cac7227cf36008247c2da51ce1a884e6b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "1a3a14433104e7c1af21283237f769996e3cd551",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "docs/adr/001-controller-runtime-migration.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/001-controller-runtime-migration.md#L16-L20"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "1a3a14433104e7c1af21283237f769996e3cd551",
+          "line_end": 8,
+          "line_start": 3,
+          "path": "docs/adr/001-controller-runtime-migration.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/001-controller-runtime-migration.md#L3-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_245c188b185f026160371cedb644af8c4e22df326f9a5148fba7385a8489f805",
+        "slc_dc64f25d8dc1d9a48292fae968638b7f0d4012b37b6a0ae0dffa8b7effc4e506"
+      ],
+      "text": "ADR-001 documents a since-retired host-side shell controller that ran a filesystem job queue, per-repo flock exclusion, mention watching with ack_key dedup, and orphan recovery for stale .processing files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0ee847eb7d63b4303837772521ccbd33b007ca63bdaf91ffb1993ce5be31575",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+          "line_end": 160,
+          "line_start": 149,
+          "path": "docs/adr/002-plugin-architecture.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md#L149-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e9a70d82c11c348b61737b2c83b63218754585ab5ee803043c78dba7eecabe1d"
+      ],
+      "text": "Under the plugin engine, jobs run sequentially within an agent container, and crash isolation is per-agent-container rather than per-job, mitigated by systemd restart policy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7178427a362ccb00baf48353d2cc6d5efd991bfd8d5335ae143c9014a9c30b69",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+          "line_end": 232,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md#L232-L232"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "ee0082d14d360dd6ec1bfd98b3a4b36f44fbacd8",
+          "line_end": 47,
+          "line_start": 41,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/architecture/ARCHITECTURE.md#L41-L47"
+        },
+        {
+          "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+          "git_sha": "ee0082d14d360dd6ec1bfd98b3a4b36f44fbacd8",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "hivemoot/hivemoot",
+          "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/architecture/ARCHITECTURE.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_010077465848de8f8783f4fc905ba73f0348f5a02ced247cc7fd33b48ba0fd41",
+        "slc_2005555fd74a43001706a52a4e4363de213c2fef24edf2136e515a7cbd6f60fc",
+        "slc_6008382f7e2b453b5eca596a8afc20e23e8b1116595fcc88e3c8c8dea53eece5"
+      ],
+      "text": "The agent runtime delegates coding to pluggable coding tools including Claude Code, Codex CLI, Gemini CLI, Kilo Code, and OpenCode, and works with any AI agent that can interact with GitHub."
+    }
+  ],
+  "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 250,
+        "path": "README.md",
+        "size": 12360
+      },
+      {
+        "lines": 120,
+        "path": "docs/architecture/ARCHITECTURE.md",
+        "size": 6285
+      },
+      {
+        "lines": 176,
+        "path": "FLEET_PLUGIN_MODEL.md",
+        "size": 10765
+      },
+      {
+        "lines": 197,
+        "path": "docs/adr/001-controller-runtime-migration.md",
+        "size": 9497
+      },
+      {
+        "lines": 296,
+        "path": "docs/adr/002-plugin-architecture.md",
+        "size": 15601
+      },
+      {
+        "lines": 1154,
+        "path": "docs/architecture/CAPABILITIES_DESIGN.md",
+        "size": 51293
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/architecture/CONCEPT.md",
+        "reason": "file-budget",
+        "size": 5423
+      },
+      {
+        "path": "docs/architecture/HOW-IT-WORKS.md",
+        "reason": "file-budget",
+        "size": 4859
+      },
+      {
+        "path": "docs/architecture/JOB_LIFECYCLE_UNIFICATION.md",
+        "reason": "file-budget",
+        "size": 10188
+      },
+      {
+        "path": "docs/architecture/QUEEN_EXECUTION_MODE.md",
+        "reason": "file-budget",
+        "size": 99716
+      },
+      {
+        "path": "docs/architecture/REDIS_KEY_CONVENTION.md",
+        "reason": "file-budget",
+        "size": 7703
+      },
+      {
+        "path": "docs/architecture/WAR_ROOM_DESIGN.md",
+        "reason": "file-budget",
+        "size": 72432
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 8370
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2218
+      }
+    ],
+    "omitted_count": 8,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 830,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 14,
+      "complete": false,
+      "omitted": 8,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_527eddf64fd95afaa177fb3de64771a3",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/hivemoot/hivemoot/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/82b6081e282209c0/manifest.json",
+  "package_id": "pkg_f5372b839a6d3c04a31a21c5001edc8d3391f0a1c06b66f1c7c7edf661016eed",
+  "repo": "hivemoot/hivemoot",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "12a3371beefac7990f71bc5f9c81c5500fb7953c1ed030f81ffb6a26d826a094",
+  "snapshot_id": "82b6081e282209c0",
+  "sources": [
+    {
+      "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+      "git_sha": "3c929efe1fad5d66207bc1168df833a14c88ad1f",
+      "lines": 176,
+      "path": "FLEET_PLUGIN_MODEL.md",
+      "repository": "hivemoot/hivemoot",
+      "sha256": "f0bd20bd63df6be3ae33fa2770c350d3cb862a520d906f0a8250ec3e4049db2c",
+      "source_id": "src_3fc48dc08ee35999a9a630b97ceec0e1",
+      "stored": "fleet_plugin_model.md-21c7f7241e37.md",
+      "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/FLEET_PLUGIN_MODEL.md"
+    },
+    {
+      "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+      "git_sha": "e6650af465f955f92a379a824078d1eb66200f48",
+      "lines": 250,
+      "path": "README.md",
+      "repository": "hivemoot/hivemoot",
+      "sha256": "908056281dc36a14c84240ba571a14b4430d526ba1a5a2d58e8d26a4f2376d1c",
+      "source_id": "src_9b059a7742b95f19b7ff495db67fb85e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/README.md"
+    },
+    {
+      "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+      "git_sha": "1a3a14433104e7c1af21283237f769996e3cd551",
+      "lines": 197,
+      "path": "docs/adr/001-controller-runtime-migration.md",
+      "repository": "hivemoot/hivemoot",
+      "sha256": "d62006c37c4b07b655a5137ce66f7969201a06354863dc572f76f7e9ef6ec6ca",
+      "source_id": "src_271bbe027567501cbbfc115c299b420e",
+      "stored": "001-controller-runtime-migration.md-4eb49b155a33.md",
+      "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/001-controller-runtime-migration.md"
+    },
+    {
+      "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+      "git_sha": "e28016950c3e3d91c6a4c1ae7c4535bdedd3df03",
+      "lines": 296,
+      "path": "docs/adr/002-plugin-architecture.md",
+      "repository": "hivemoot/hivemoot",
+      "sha256": "d746b873371d145ddb96f0489911347f87dcd050b98f9b28f87616d8165b08c3",
+      "source_id": "src_c07ad8106cee5d98bd51c238a4b75c06",
+      "stored": "002-plugin-architecture.md-30bc748c8851.md",
+      "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/adr/002-plugin-architecture.md"
+    },
+    {
+      "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+      "git_sha": "ee0082d14d360dd6ec1bfd98b3a4b36f44fbacd8",
+      "lines": 120,
+      "path": "docs/architecture/ARCHITECTURE.md",
+      "repository": "hivemoot/hivemoot",
+      "sha256": "f88b87a0afb2cd14d30a646891b5724c9690fb21a8ecb468cf6b7035bad18f69",
+      "source_id": "src_11b629c150b75f94bf27907b7c16ef73",
+      "stored": "architecture.md-10b457f2fdd4.md",
+      "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/architecture/ARCHITECTURE.md"
+    },
+    {
+      "commit": "a49baa71cf0029a06f9cef93408c07bd86b4e9bf",
+      "git_sha": "0659f7273a0b50927f54ed0eea9f408b51bd30b7",
+      "lines": 1154,
+      "path": "docs/architecture/CAPABILITIES_DESIGN.md",
+      "repository": "hivemoot/hivemoot",
+      "sha256": "fb919d3012464320424492de63f81369111f917ce08563ccd37edf60bc6a6426",
+      "source_id": "src_d5e5782e24645c65bdb79179aeada532",
+      "stored": "capabilities_design.md-0d328fc17b66.md",
+      "url": "https://github.com/hivemoot/hivemoot/blob/a49baa71cf0029a06f9cef93408c07bd86b4e9bf/docs/architecture/CAPABILITIES_DESIGN.md"
+    }
+  ],
+  "summary": "Hivemoot is a GitHub-native multi-agent system: a Queen GitHub App bot governs proposal/voting/merge workflows, agents run in Docker containers with a plugin-based Python engine, and a CLI and web dashboard support setup and status. Evidence spans README, architecture docs, and two ADRs. Evidence coverage: 132 of 309 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

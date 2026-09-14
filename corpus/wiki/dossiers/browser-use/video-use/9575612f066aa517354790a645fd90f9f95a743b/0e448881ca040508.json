@@ -1,0 +1,607 @@
+{
+  "applied_operation_id": "op_6b63cf2f9cb7416eadcb74f98eae0243",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6be59e5437a83962e159b3e71ae1025d596b4947d261194c03d16ca8a7fc0faa",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L49-L49"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 79,
+          "line_start": 74,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L74-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7cc819cb8b407d2a86a2a1868cd26669bc847f9b77f193d15478cfaea77c02e8",
+        "slc_7dc58af29c8e747f70aa9b90d173871bd03ca138b33cd00a8665e6b906077324"
+      ],
+      "text": "The skill ships helper scripts including transcribe.py, transcribe_batch.py, pack_transcripts.py, timeline_view.py, render.py, and grade.py, invoked directly as python helpers/<name>.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1cf926f717c38d13c7ee6546b33f5d5267566ee407b242d65b8523cd21a26243",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L73-L73"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L87-L87"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L79-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8b15d75a3478cdfd8f91b92cd639fe2e00779d27c7f0cdb67d7a9f644ea1246",
+        "slc_e155cd5807403c8d1ad4beadf934f3621940c204984909f306107a620dfb00cc",
+        "slc_ee4d07bd3296608db7d7749390c1c808b14ff025cbe3164c7fcc22dcf6f507e6"
+      ],
+      "text": "The LLM never watches the video; it reasons from a packed word-level transcript plus on-demand visual composites (filmstrip + waveform PNGs) generated only at decision points."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba0a88598ad55009d14b96d84a4b5ec10476baef8d4f42511f0f36f15496f17e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 289,
+          "line_start": 289,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L289-L289"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 287,
+          "line_start": 270,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L270-L287"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05fcae7952c36281d38ee18585f78a6d79d5ff779179b4e8b4b5c8c0117a5ecd",
+        "slc_9192d988ae9ae58db373d234fbdade7dc34eeff05ebdf9c9d46358dd38ece001"
+      ],
+      "text": "Cut decisions are expressed as an edl.json file with sources, time ranges with beat/quote/reason, a grade (preset name or raw ffmpeg filter), overlay clips, optional subtitles, and total duration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cd86aae3491204cb697df5141dde3bc09c770f16910c9b4793d3135185860d5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 293,
+          "line_start": 293,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L293-L293"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+          "line_end": 21,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L15-L21"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 33,
+          "line_start": 22,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L22-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1960a58bb46edc01685c1510802184637a446d28b4117a83e442ecebe6685d7c",
+        "slc_22baf580a607e900c0640d2bee1b6f9535797af7e12b68e952a4b5c2309aadc0",
+        "slc_b186f4d27f4cd9f79cf0d778218502025ac3fe23de11f3ab9ad8308194ad6511"
+      ],
+      "text": "Session memory persists in <videos_dir>/edit/project.md, appended each session so later sessions resume prior context; transcripts are also cached per source and never re-transcribed unless the file changed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6eb5c1dd6d80fb2bab2dc640cbb7a53749d9b2a77f9e5e96942ee515bb8633e1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 33,
+          "line_start": 22,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L22-L33"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 262,
+          "line_start": 262,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L262-L262"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 249,
+          "line_start": 249,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L249-L249"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b186f4d27f4cd9f79cf0d778218502025ac3fe23de11f3ab9ad8308194ad6511",
+        "slc_c637707cfe1bde4c26ed9139c48b31d375017c9e74260b57b4a139503564d1c5",
+        "slc_c8fc9c9d20b0298cbe92b218cb4574f7fdfa6067efb3eebb504b8ddc6a8acf16"
+      ],
+      "text": "Multiple animations are built by parallel sub-agents spawned via the Agent tool, one sub-agent per animation slot with a self-contained prompt and unique output filenames."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff1f1174c991c2b9f10f9261d8b51d1ac9350c843f6c099ee6e079d9341f69d7",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 100,
+          "line_start": 99,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L99-L100"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L96-L100"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L102-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1861128914beb7e08324f1cea5a238e6a0e8b35f1f8dcb23da0570224596142b",
+        "slc_7d7a77ebcb5b0fce2ea83ac06d6ebd6437bcf722349f96dad0a5d417a7c3ac79",
+        "slc_e35a6622d6aa3aa296991fd88a5ccbecdeef2820a27834ad85c974523bd13025"
+      ],
+      "text": "A self-eval loop runs timeline_view on the rendered output at every cut boundary to catch visual jumps, audio pops, and hidden subtitles, capped at 3 fix-and-re-render passes before flagging issues to the user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d22a1356d705cadd61f4b1b0cd4653eb2706a23b2fe945b9c246b1df39e81eeb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L53-L53"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L49-L49"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L94-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7646c9daff126e925935f1d506beedb75e567abcf711d0d5a5e0433e642830c7",
+        "slc_7cc819cb8b407d2a86a2a1868cd26669bc847f9b77f193d15478cfaea77c02e8",
+        "slc_9f4b194dd61fdf1621242da7de0bc778aabcf54f9484e66028cd7a9818d6b045"
+      ],
+      "text": "Python dependencies are requests, librosa, matplotlib, pillow, and numpy; ffmpeg and ffprobe are hard requirements, yt-dlp is optional, and an ElevenLabs API key is required for Scribe transcription."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22a5f068dd9d869c544ebf8abf4dab345d92ef90dc150b6e3a9a03dda7350c55",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+          "line_end": 57,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L56-L57"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L72-L72"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 79,
+          "line_start": 76,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L76-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31a94c84627d89e09b039e2b4dd12d334a4e94725ead17dbc62f22389d9fa86f",
+        "slc_4c124a4d43f53a01d7696fb678fd3d68ef30864e7fd6b8485fee6b053f830986",
+        "slc_5cc08a58675f092fd892835e64017ac422f04d28403fe847dc81d20b22bcdd98"
+      ],
+      "text": "The repo is installed as an agent skill by symlinking the whole directory into the agent's skills folder (e.g. ~/.claude/skills/video-use), keeping SKILL.md and helpers/ as siblings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c66aa905b7d4da8c920a39493b50fa5c334f5a6b7afc3cb8ad623affb7a61016",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L26-L29"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L116-L116"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "install.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md#L137-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_663147f29c356f16e3dfbfc06ea28ac7986421d132cc615d6ef6fa872bbe39a7",
+        "slc_c8b1965c794ac0cab3c7ebc17639da6ba6558b37e468283b00866bab1bcbe6de",
+        "slc_d4574c8b1311f56c07188134c5733c9b356ed9df31378743708e02ccbb10a826"
+      ],
+      "text": "Repository development practice: install.md instructs the installing agent to verify with one real command (not file-existence checks), never run transcription during install verification because Scribe costs money, and never echo or commit the API key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe8af2e6db8e6f20015286cd4219d99912f120c7efe4b3378bdb57421b8bc562",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 110,
+          "line_start": 104,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L104-L110"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 33,
+          "line_start": 22,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L22-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_977bae3fe8e39fb2f0258940b8ce75d1b1d52066309e01c35690f8ffc45fb23e",
+        "slc_b186f4d27f4cd9f79cf0d778218502025ac3fe23de11f3ab9ad8308194ad6511"
+      ],
+      "text": "Editing is audio-first: cut candidates come from word boundaries and silence gaps, cuts never fall inside a word, edges are padded 30-200ms to absorb Scribe timestamp drift, and 30ms audio fades prevent pops."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dee29301d8f550c6800b6b7815755548b67f9fcaa7aa57ced1d9453ae70c5e1e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 172,
+          "line_start": 170,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L170-L172"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 79,
+          "line_start": 74,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L74-L79"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 266,
+          "line_start": 266,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L266-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6da3f8c7745edbb9dcb2b2cbad9bbfe38c5dce020c00a2ac193568943c499242",
+        "slc_7dc58af29c8e747f70aa9b90d173871bd03ca138b33cd00a8665e6b906077324",
+        "slc_8a525581d8fe0b2ed390d91ef6f63212cdd73ee0377909e4dc578b0250682d67"
+      ],
+      "text": "render.py defaults output scale to 1080p from any source and supports a --preview 720p fast mode; grade.py offers presets like warm_cinematic and neutral_punch plus a --filter flag for arbitrary ffmpeg chains."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ba71e2ab07599a4fa64fd07e0d4c724e389e1c76816e1eb50d2a6635d0ea495",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L20-L20"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L35-L35"
+        },
+        {
+          "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+          "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+          "line_end": 33,
+          "line_start": 22,
+          "path": "SKILL.md",
+          "repository": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L22-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d02475144f89708ffb67133df1681858ca1b4c665b0f08d98a5e0037ae9a036",
+        "slc_4ab6ca1f02373b74ae79f15777a2fc98a0e8a12d7369c07049b32d7aa09a16e7",
+        "slc_b186f4d27f4cd9f79cf0d778218502025ac3fe23de11f3ab9ad8308194ad6511"
+      ],
+      "text": "The skill separates non-negotiable production-correctness hard rules (e.g. subtitles applied last in the filter chain) from artistic choices, which are treated as worked examples the agent may deviate from."
+    }
+  ],
+  "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 112,
+        "path": "README.md",
+        "size": 5645
+      },
+      {
+        "lines": 162,
+        "path": "install.md",
+        "size": 7739
+      },
+      {
+        "lines": 322,
+        "path": "SKILL.md",
+        "size": 22984
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 35,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_d316aa0b48385b87b78a4292aebd1b5e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/browser-use/video-use/9575612f066aa517354790a645fd90f9f95a743b/0e448881ca040508/manifest.json",
+  "package_id": "pkg_cd61481e333b808487d21aaa72f511644e47095f763c556f9ed992853591efae",
+  "repo": "browser-use/video-use",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3b0824a936ef66884e6969bb28ec4abbf3a31959a5c04c19d2b7742cf135df3d",
+  "snapshot_id": "0e448881ca040508",
+  "sources": [
+    {
+      "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+      "git_sha": "0f7b264913faf30f4744162c0ae45edc99de424d",
+      "lines": 112,
+      "path": "README.md",
+      "repository": "browser-use/video-use",
+      "sha256": "612bca23557cfc4501e80d3ce4babbe086dba77a70fa3a74ae5c0170393ece8f",
+      "source_id": "src_05639d90f96a53e3acb37e27cd0394a3",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md"
+    },
+    {
+      "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+      "git_sha": "fa4b776d94cbc6ae500c1a8e2c1be9b2486a93d2",
+      "lines": 322,
+      "path": "SKILL.md",
+      "repository": "browser-use/video-use",
+      "sha256": "37b24f7ec55473996c3eecd5ffb4d62ee4021f2c9bc947da49483cc5c65fe4eb",
+      "source_id": "src_011f6104b74950aba1746daa5ce48413",
+      "stored": "skill.md-0e95f5a36660.md",
+      "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md"
+    },
+    {
+      "commit": "9575612f066aa517354790a645fd90f9f95a743b",
+      "git_sha": "b3b4d7fff39a9b1d36bdddf31ff40e894dc056a1",
+      "lines": 162,
+      "path": "install.md",
+      "repository": "browser-use/video-use",
+      "sha256": "9a78c92932864a728cfe80700d1a6bd5a4c4b4cf2d3f4694f3fd53b49fc93394",
+      "source_id": "src_7f9f1b45f5f15ce38184740e65c4d8e4",
+      "stored": "install.md-f8e5611542ba.md",
+      "url": "https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/install.md"
+    }
+  ],
+  "summary": "video-use is an open-source skill that lets an LLM agent (Claude Code, Codex, etc.) edit raw video footage conversationally via ffmpeg/PIL helper scripts, transcript-driven cut planning, and a self-eval render loop. Evidence covers its helper tooling, EDL interface, memory file, sub-agent orchestration, dependencies, and agent-facing install workflow. Evidence coverage: 137 of 141 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

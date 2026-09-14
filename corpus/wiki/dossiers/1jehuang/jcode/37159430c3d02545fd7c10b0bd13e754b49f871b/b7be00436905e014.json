@@ -1,0 +1,1122 @@
+{
+  "applied_operation_id": "op_981d8a7b4711404a99cb46f533b71b4f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ade5080eaf55fd5d31ad6fa69138bf5b3a981a0fab3661047f7d99e6b6efcd6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 289,
+          "line_start": 287,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L287-L289"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d3a483b6d33160223271fe41a6c8599ce783d5b9ab01da15aba94159ebf0692"
+      ],
+      "text": "Each conversation turn is embedded as a semantic vector and queried against a memory graph via cosine similarity; hits are injected into the conversation, optionally after verification by a memory sideagent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c7d255f2686db133ffc6430b5e57137d9ff644101c1a5efb4e457729e319c5c",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 289,
+          "line_start": 287,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L287-L289"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d3a483b6d33160223271fe41a6c8599ce783d5b9ab01da15aba94159ebf0692"
+      ],
+      "text": "Memories are extracted by a memory sideagent at triggers such as semantic drift, a K-turn interval, or session end, and added to the memory graph."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_882610b9676cf4753adab4f2c626c4225531e12cc5205089b5e0efb0d26b6048",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 291,
+          "line_start": 291,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L291-L291"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18eacb2001e4c88a03d72d68d7c6cad6b45859b1c00d27ca8bb20300454d4d9d"
+      ],
+      "text": "Besides passive background recall, jcode provides explicit memory tools for active search/store, plus session search performing traditional RAG over previous sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f675a67985250349fafd70ccc92c0370485350ded68446fc7c749e17a1dcc20b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 293,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L293-L293"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e589ce2ea817ee4babe3e896d25267acff2330efc3414ba8935a1493bb4aa23"
+      ],
+      "text": "An ambient mode periodically consolidates memories, reorganizing them and checking for staleness and conflicts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e0adbd6ce51b05c6f2d4d1f6234706c1011a17c36a8530edefbd67001bdb400",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 330,
+          "line_start": 330,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L330-L330"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45621a313931a309eb6a58e5f49e2a28a133155a15d49563ec69f35984863121"
+      ],
+      "text": "Multiple agents spawned in the same repo are managed by a server: when one agent edits a file another has read, the server notifies the reader, which can ignore it or check the diff; agents can DM, broadcast, or message repo-scoped peers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a133509c1534db3799addcdf629d5139f7dd41f5ada37c9dd1cb8038e7e4c7f6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 342,
+          "line_start": 342,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L342-L342"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8225cbf7e16059afb34f5d0effc747f1563bde4a76bf73345436776040aa666f"
+      ],
+      "text": "Agents have a swarm tool to autonomously spawn teammates for parallel work, turning the main agent into a coordinator; groups, messaging channels, and completion statuses are managed automatically, headed or headless."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a5ded1a1c5b93ca80c76384e555bc464ac45aeebf72322a9a6605fb24a0f77e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 364,
+          "line_start": 352,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L352-L364"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_80d5817d59778f5a55aba7deeb018b8cecb21cd8f51fd55c5aa35d9f28190e5b"
+      ],
+      "text": "jcode offers built-in login flows via `jcode login --provider <id>` for providers including claude, openai, gemini, copilot, azure, fireworks, novita, minimax, lmstudio, ollama, and custom OpenAI-compatible endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f452482d459dd2daa950150229f9c172a02906230f3beb49f31ddcad4b06ae1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 575,
+          "line_start": 573,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L573-L575"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 569,
+          "line_start": 568,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L568-L569"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 584,
+          "line_start": 577,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L577-L584"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_415fc313ddd94b84d3e062596e7a54d0814cc5a25f4219900b34b1a7929c33b8",
+        "slc_7f8fde1d85b4471d532986d49ae19b105d46ee5967f75208fcc11d1cec21842a",
+        "slc_c9baa248870be85ae8da4066a07c2a185a9c5b76f8efd28bc85b4e79946f8741"
+      ],
+      "text": "MCP servers are configured in ~/.jcode/mcp.json (global) and .jcode/mcp.json (project-local); Claude Code config files (~/.claude.json, .mcp.json, .claude/mcp.json) are read live, and a one-time import from ~/.codex/config.toml is performed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0dc258fa4732a92229eba3bc9faa2d4ba08da316ae3d719c4f3030657196a529",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 586,
+          "line_start": 586,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L586-L586"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_77cddaa116ba669fbf08cea045a8225d22c829752a0fbc3d792e8e707781ada1"
+      ],
+      "text": "jcode currently supports only stdio (command-based) MCP servers; HTTP/SSE entries are recognized and skipped with a log line."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e3923c2064cf33c4bb6802dd198b485082c3ef9c22f63b33bb819cb503afe6d1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 627,
+          "line_start": 626,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L626-L627"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 620,
+          "line_start": 618,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L618-L620"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 611,
+          "line_start": 611,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L611-L611"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 609,
+          "line_start": 609,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L609-L609"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_077743e5d29dd7f30c5088405c10fdc98f4c740b763577c916f8df950742aa21",
+        "slc_157c90f6bedb99acbe4c3fa7227438f23fa883698c88644da1df43aae6594f25",
+        "slc_6d16e7c04b0cacf55c8cafcad8595eb6318ab9c76fb74e12dff52cc457fcd662",
+        "slc_eb261a48d1f6d0ac60e7ee0466bdebe6b5007d5301b494b820a5792e89e4d468"
+      ],
+      "text": "Headless OAuth is supported via --no-browser (printing auth URL/QR for manual paste), and a two-step --print-auth-url / --callback-url or --auth-code pattern exists for openai, gemini, claude, and antigravity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19f58047b4b99221f073f6d7dc26569123c7ba80507fb7dfb645ed33cf625183",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 238,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L229-L238"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 223,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L223-L223"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 219,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L210-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3adf6397bc50d90c49f35089f1736d5fb42ebedb6db760d5d48fd680ebbe4636",
+        "slc_6860ed09523dc38f0ff6c19266788184bac1c07b413551cc77de9bc31dafb244",
+        "slc_c7c201948d75f16eadcbaff36c78f6cb7e52a76ac9d7d758e4255950aa2ff61c"
+      ],
+      "text": "The README reports self-measured benchmarks: jcode at 14.0 ms time-to-first-frame and 48.7 ms time-to-first-input versus slower figures for Codex CLI, Claude Code, OpenCode, Cursor Agent, and others, across 10 interactive PTY launches on one Linux machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97ee62fef9916269e668e2a36f42572e7a030d34e3e231b5138b45c402cc8c28",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 258,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L248-L258"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 270,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L263-L270"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_282d32bd1e72fdc4e30edb5768b5a66854e46e11827d29780ff984d9c894e0ec",
+        "slc_c675d3bc91839820d764082ff0b267d2799c83db6616946ceac08a6275c4751e"
+      ],
+      "text": "A memory-scaling comparison reports ~9.9-10.4 MB extra PSS per added jcode session versus larger figures for competing tools, with tested versions listed (e.g. jcode v0.9.1888-dev, codex-cli 0.120.0, Claude Code 2.1.86)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_946e9862b151210f9e8e21927e398d7321c285fe58037da8ce21403c3ad7eb2e",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 680,
+          "line_start": 680,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L680-L680"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fcfa204de0e16357d13d21852631f345b47ef13eb1577c2a84de8ea4b3e9b01f"
+      ],
+      "text": "Skills are not all loaded at startup; embedding hits on the conversation inject relevant skills automatically, and skills can also be activated manually via a skill tool or slash commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_17707422749be4f1f2051cd4ff5d261b46a5237d84496d4ca284af084a492e14",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 672,
+          "line_start": 672,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L672-L672"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_024f35bb933d3451c8e78d39525dfd493f1ba03736b6e2e003c91c3728ee0d98"
+      ],
+      "text": "User input is interleaved with the working agent as soon as it can be sent without breaking the KV cache; shift-enter instead queues the message until the agent finishes its turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a37ac9b968663d997b15d6d4b41befb623754fd2f6ad7a1d146a64c157e241d8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 670,
+          "line_start": 670,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L670-L670"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a100f68548427932f89f1f65b3f1011899042c162eef9815aa1cf5fd3d1ce4b"
+      ],
+      "text": "An 'agent grep' tool augments grep output with file structure information (function lists, offsets) and adaptively truncates results based on what the agent has already seen to save context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b31bb09421f7fd4a18d467167ae822772ff4a3546a6a76301388ffa285661b1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 320,
+          "line_start": 320,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L320-L320"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_589c05cec6096be9672277f2d40a951af91d4525962ce22ca8819e1e1c05808b"
+      ],
+      "text": "Smooth partial-line scrolling is not possible with jcode's custom scrollback in normal terminals due to a terminal-level limitation; the author's separate Handterm terminal with a native scroll API is a work in progress addressing this."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5c2440557548e283a75276e3dceb87733471b3fa63efe430c3e7da4856609a7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 312,
+          "line_start": 311,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L311-L312"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_469ce9359073a46e2aba03b71fe962ed0f44b6cf79d8ffbd31a41b9960b07fe8"
+      ],
+      "text": "The side panel can display files updated in real time, receive agent-written content, act as a diff viewer, and render mermaid diagrams inline in both panel and chat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_01af36b892d1797872911d773e5ba85d9fa61e41494b21d224e51f3322be7088",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 314,
+          "line_start": 314,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L314-L314"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b0fb265c31468ef673c32f31d477fe43068b412b66c5ecab5a0a8e6ff4e2fa5"
+      ],
+      "text": "The author wrote a separate Rust mermaid rendering library (mermaid-rs-renderer) with no browser or TypeScript dependency, claimed to render diagrams 1800x faster."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0385d37866a63894f262dca3a002077ddb37e023ae5803fe01bd8c9bc847f5ab",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L50-L52"
+        },
+        {
+          "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+          "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+          "line_end": 59,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "1jehuang/jcode",
+          "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md#L54-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28230a1f03803257fb92170799820f76fb2b749283a8cd1225714ac0d9569177",
+        "slc_d5714b4a85d764d3d99e4e3ba0605cc8fb9cbef5bde5be18082388e5afa57ae2"
+      ],
+      "text": "Updates run via /update in the TUI or `jcode update`; dev builds compare the running binary's Git commit against the release tag and stop rather than risk a downgrade when ancestry cannot be verified."
+    }
+  ],
+  "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 956,
+        "path": "README.md",
+        "size": 42875
+      },
+      {
+        "lines": 381,
+        "path": "OAUTH.md",
+        "size": 18375
+      },
+      {
+        "lines": 179,
+        "path": "RELEASING.md",
+        "size": 7857
+      },
+      {
+        "lines": 444,
+        "path": "TELEMETRY.md",
+        "size": 28789
+      },
+      {
+        "lines": 343,
+        "path": "docs/AGENT_NATIVE_VCS_CORE_BEHAVIOR.md",
+        "size": 10591
+      },
+      {
+        "lines": 44,
+        "path": "docs/AGENTCARD_DISCOVERY_DEMO.md",
+        "size": 1903
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/AMBIENT_MODE.md",
+        "reason": "file-budget",
+        "size": 32252
+      },
+      {
+        "path": "docs/ATTRIBUTION_BENCHMARK.md",
+        "reason": "file-budget",
+        "size": 4668
+      },
+      {
+        "path": "docs/AUTH_CREDENTIAL_SOURCES.md",
+        "reason": "file-budget",
+        "size": 7027
+      },
+      {
+        "path": "docs/AWS_BEDROCK_PROVIDER.md",
+        "reason": "file-budget",
+        "size": 5035
+      },
+      {
+        "path": "docs/BROWSER_PROVIDER_PROTOCOL.md",
+        "reason": "file-budget",
+        "size": 17650
+      },
+      {
+        "path": "docs/CHATGPT_API_EQUIVALENT_USAGE.md",
+        "reason": "file-budget",
+        "size": 2371
+      },
+      {
+        "path": "docs/COMPILE_TIME_ISOLATION_REFACTOR.md",
+        "reason": "file-budget",
+        "size": 7657
+      },
+      {
+        "path": "docs/CRATE_OWNERSHIP_BOUNDARIES.md",
+        "reason": "file-budget",
+        "size": 14889
+      },
+      {
+        "path": "docs/DESKTOP_AUTH_SDK.md",
+        "reason": "file-budget",
+        "size": 3574
+      },
+      {
+        "path": "docs/DISCOVERY_BENCHMARK.md",
+        "reason": "file-budget",
+        "size": 5139
+      },
+      {
+        "path": "docs/DISCOVERY_CONVERSION_ANALYSIS.md",
+        "reason": "file-budget",
+        "size": 7404
+      },
+      {
+        "path": "docs/DISCOVERY_ELICITATION_SPEC.md",
+        "reason": "file-budget",
+        "size": 11390
+      },
+      {
+        "path": "docs/DISCOVERY_RATE_BENCHMARK.md",
+        "reason": "file-budget",
+        "size": 14351
+      },
+      {
+        "path": "docs/GMAIL_COMPOSIO_BACKEND.md",
+        "reason": "file-budget",
+        "size": 4459
+      },
+      {
+        "path": "docs/HERDR.md",
+        "reason": "file-budget",
+        "size": 4574
+      },
+      {
+        "path": "docs/HISTORY_RESPONSE_STATS.md",
+        "reason": "file-budget",
+        "size": 2463
+      },
+      {
+        "path": "docs/HOOKS.md",
+        "reason": "file-budget",
+        "size": 5172
+      },
+      {
+        "path": "docs/IOS_APP.md",
+        "reason": "file-budget",
+        "size": 5731
+      },
+      {
+        "path": "docs/JCODE_CLOUD_AWS.md",
+        "reason": "file-budget",
+        "size": 7937
+      },
+      {
+        "path": "docs/KEYMAP_CONFLICTS.md",
+        "reason": "file-budget",
+        "size": 4082
+      },
+      {
+        "path": "docs/MEMORY_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 25577
+      },
+      {
+        "path": "docs/MEMORY_BUDGET.md",
+        "reason": "file-budget",
+        "size": 5336
+      },
+      {
+        "path": "docs/MEMORY_INCIDENT_RUNBOOK.md",
+        "reason": "file-budget",
+        "size": 6651
+      },
+      {
+        "path": "docs/MERMAID_RENDERING_REDESIGN.md",
+        "reason": "file-budget",
+        "size": 7257
+      },
+      {
+        "path": "docs/MESSAGE_VOICE.md",
+        "reason": "file-budget",
+        "size": 2356
+      },
+      {
+        "path": "docs/MODEL_USAGE.md",
+        "reason": "file-budget",
+        "size": 4088
+      },
+      {
+        "path": "docs/MODULAR_ARCHITECTURE_RFC.md",
+        "reason": "file-budget",
+        "size": 35966
+      },
+      {
+        "path": "docs/MULTI_SESSION_CLIENT_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 16702
+      },
+      {
+        "path": "docs/NATIVE_SSH.md",
+        "reason": "file-budget",
+        "size": 23205
+      },
+      {
+        "path": "docs/ONBOARDING_SANDBOX.md",
+        "reason": "file-budget",
+        "size": 7147
+      },
+      {
+        "path": "docs/ONBOARDING_STATE_GRAPH.md",
+        "reason": "file-budget",
+        "size": 18116
+      },
+      {
+        "path": "docs/OPENAI_WEBSOCKET.md",
+        "reason": "file-budget",
+        "size": 4558
+      },
+      {
+        "path": "docs/OPENAI_WEBSOCKET_VALIDATION.md",
+        "reason": "file-budget",
+        "size": 16558
+      },
+      {
+        "path": "docs/OPENRELAY_DISCOVERY_TEST.md",
+        "reason": "file-budget",
+        "size": 2080
+      },
+      {
+        "path": "docs/PROVIDER_DOCTOR.md",
+        "reason": "file-budget",
+        "size": 8251
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 1371
+      },
+      {
+        "path": "docs/REFACTORING.md",
+        "reason": "file-budget",
+        "size": 2632
+      },
+      {
+        "path": "docs/REMOTE_HANDOFF.md",
+        "reason": "file-budget",
+        "size": 7116
+      },
+      {
+        "path": "docs/REMOTE_LOGIN_UX_VALIDATION.md",
+        "reason": "file-budget",
+        "size": 11111
+      },
+      {
+        "path": "docs/RENDER_PARITY_ACCEPTANCE_CRITERIA.md",
+        "reason": "file-budget",
+        "size": 6400
+      },
+      {
+        "path": "docs/RESUME_BEHAVIOR.md",
+        "reason": "file-budget",
+        "size": 1447
+      },
+      {
+        "path": "docs/RETENTION_READINESS.md",
+        "reason": "file-budget",
+        "size": 4697
+      },
+      {
+        "path": "docs/SAFETY_SYSTEM.md",
+        "reason": "file-budget",
+        "size": 15883
+      },
+      {
+        "path": "docs/SECURITY_DEPENDENCIES.md",
+        "reason": "file-budget",
+        "size": 6069
+      },
+      {
+        "path": "docs/SERVER_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 7501
+      },
+      {
+        "path": "docs/SESSION_CREATION_LATENCY.md",
+        "reason": "file-budget",
+        "size": 6041
+      },
+      {
+        "path": "docs/SHIFT_ENTER.md",
+        "reason": "file-budget",
+        "size": 2868
+      },
+      {
+        "path": "docs/SOFT_INTERRUPT.md",
+        "reason": "file-budget",
+        "size": 11373
+      },
+      {
+        "path": "docs/SPAWN_HOOK.md",
+        "reason": "file-budget",
+        "size": 6924
+      },
+      {
+        "path": "docs/SPONSOR_IMPLEMENTATION.md",
+        "reason": "file-budget",
+        "size": 3161
+      },
+      {
+        "path": "docs/SPONSORED_DISCOVERY_SPONSOR_ONBOARDING.md",
+        "reason": "file-budget",
+        "size": 17727
+      },
+      {
+        "path": "docs/SWARM_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 12668
+      },
+      {
+        "path": "docs/SWARM_TASK_GRAPH.md",
+        "reason": "file-budget",
+        "size": 29445
+      },
+      {
+        "path": "docs/SYSTEM_PROMPT_CONFIG.md",
+        "reason": "file-budget",
+        "size": 1992
+      },
+      {
+        "path": "docs/TERMINAL_BENCH.md",
+        "reason": "file-budget",
+        "size": 3514
+      },
+      {
+        "path": "docs/TERMINAL_CAPABILITIES.md",
+        "reason": "file-budget",
+        "size": 13529
+      },
+      {
+        "path": "docs/TUI_COLOR_CONFIGURATION.md",
+        "reason": "file-budget",
+        "size": 10101
+      },
+      {
+        "path": "docs/TUI_TEST_FLAKINESS.md",
+        "reason": "file-budget",
+        "size": 3396
+      },
+      {
+        "path": "docs/TUISTATE_TRAIT_DECOMPOSITION.md",
+        "reason": "file-budget",
+        "size": 6588
+      },
+      {
+        "path": "docs/WINDOWS.md",
+        "reason": "file-budget",
+        "size": 8686
+      },
+      {
+        "path": "docs/WRAPPERS.md",
+        "reason": "file-budget",
+        "size": 2621
+      },
+      {
+        "path": "docs/audits/claude-opus-5-capability-audit.md",
+        "reason": "file-budget",
+        "size": 2977
+      },
+      {
+        "path": "docs/audits/CODE_QUALITY_AUDIT_2026-04-18.md",
+        "reason": "file-budget",
+        "size": 26153
+      },
+      {
+        "path": "docs/audits/provider-model-catalog-audit.md",
+        "reason": "file-budget",
+        "size": 6041
+      },
+      {
+        "path": "docs/audits/PROVIDER_SESSION_SHARED_CONTRACT_AUDIT.md",
+        "reason": "file-budget",
+        "size": 12536
+      },
+      {
+        "path": "docs/dev/ACCOUNT_CONTRACT_CONFORMANCE_TESTS.md",
+        "reason": "file-budget",
+        "size": 12034
+      },
+      {
+        "path": "docs/dev/ACCOUNT_FLOWS_OBSERVABILITY_PRIVACY.md",
+        "reason": "file-budget",
+        "size": 8511
+      },
+      {
+        "path": "docs/dev/crate-splitting-plan.md",
+        "reason": "file-budget",
+        "size": 2864
+      },
+      {
+        "path": "docs/plans/CLIENT_CORE_PRESENTATION_SPLIT_PLAN.md",
+        "reason": "file-budget",
+        "size": 23693
+      },
+      {
+        "path": "docs/plans/CODE_QUALITY_10_10_PLAN.md",
+        "reason": "file-budget",
+        "size": 9931
+      },
+      {
+        "path": "docs/plans/CODE_QUALITY_TODO.md",
+        "reason": "file-budget",
+        "size": 39068
+      },
+      {
+        "path": "docs/plans/COMPILE_PERFORMANCE_PLAN.md",
+        "reason": "file-budget",
+        "size": 66927
+      },
+      {
+        "path": "docs/plans/MCP_SKILLS_PLAN.md",
+        "reason": "file-budget",
+        "size": 3308
+      },
+      {
+        "path": "docs/plans/MEMORY_GRAPH_PLAN.md",
+        "reason": "file-budget",
+        "size": 15221
+      },
+      {
+        "path": "docs/plans/OPENAI_COMPATIBLE_PROFILE_RUNTIME_PLAN.md",
+        "reason": "file-budget",
+        "size": 4774
+      },
+      {
+        "path": "docs/plans/SERVER_SERVICE_SPLIT_PLAN.md",
+        "reason": "file-budget",
+        "size": 18578
+      },
+      {
+        "path": "docs/plans/UNIFIED_SELFDEV_SERVER_PLAN.md",
+        "reason": "file-budget",
+        "size": 6573
+      },
+      {
+        "path": "docs/proposals/computer-use-maximal-control.md",
+        "reason": "file-budget",
+        "size": 10919
+      },
+      {
+        "path": "docs/proposals/computer-use-tool.md",
+        "reason": "file-budget",
+        "size": 6843
+      },
+      {
+        "path": "docs/proposals/CROSS_DEVICE_WORKTREE_SYNC.md",
+        "reason": "file-budget",
+        "size": 8905
+      },
+      {
+        "path": "docs/sponsors/agentcard.md",
+        "reason": "file-budget",
+        "size": 4300
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 2813
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 327
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2305
+      }
+    ],
+    "omitted_count": 84,
+    "omitted_slices": 42,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1898,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 90,
+      "complete": false,
+      "omitted": 84,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2cb14b52b0d65853a7982022e6e52992",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 2,
+    "interfaces": 5,
+    "limitations": 2,
+    "memory-state": 4,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/1jehuang/jcode/37159430c3d02545fd7c10b0bd13e754b49f871b/b7be00436905e014/manifest.json",
+  "package_id": "pkg_d6abfa53079bc49df1c3cae067779565aca4889b04ba16da186e163f71330432",
+  "repo": "1jehuang/jcode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "de0a99f53269cf969c1f90ff95a848d54851f69d8aa19d0322bb8e76d691cdf5",
+  "snapshot_id": "b7be00436905e014",
+  "sources": [
+    {
+      "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+      "git_sha": "e7275a157c5eb57db840cd7867e9303f6d04c08b",
+      "lines": 381,
+      "path": "OAUTH.md",
+      "repository": "1jehuang/jcode",
+      "sha256": "549f3e14cbb53a8afdaf4d1e9510036800b33ad7ba0cf19ba0fe7e4730ed0d74",
+      "source_id": "src_153dbbf87d0b5bb38544d0f4d052de1f",
+      "stored": "oauth.md-6b8c8e8bd0af.md",
+      "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/OAUTH.md"
+    },
+    {
+      "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+      "git_sha": "99abe8fa61fb3004f509ebbc9cadb884efa16b70",
+      "lines": 956,
+      "path": "README.md",
+      "repository": "1jehuang/jcode",
+      "sha256": "646062a29f7547f58d7f4525d3c02a9da5a8dee2fcabe1e11145272b711f624a",
+      "source_id": "src_57e5fe2c807c5815812977626e431470",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/README.md"
+    },
+    {
+      "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+      "git_sha": "46c45462c26802e94420012ea1022f0f2513c14e",
+      "lines": 179,
+      "path": "RELEASING.md",
+      "repository": "1jehuang/jcode",
+      "sha256": "ec0c0c816018a794c93823fe226e24207d1c3f4e16ad95b7f39488d7c0a6ac63",
+      "source_id": "src_cdffb808d142549c97deae425f23ae40",
+      "stored": "releasing.md-87d6a57a759f.md",
+      "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/RELEASING.md"
+    },
+    {
+      "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+      "git_sha": "85ad064337fbff25ec8d2b000d4c4965aca4dfac",
+      "lines": 444,
+      "path": "TELEMETRY.md",
+      "repository": "1jehuang/jcode",
+      "sha256": "1d03741188073921924adeb6a2d31fcf766cae35532f2de7bb3c04ab1e6937b6",
+      "source_id": "src_a499e493eb265ac7a0f66483cb51a6c7",
+      "stored": "telemetry.md-1807265761e5.md",
+      "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/TELEMETRY.md"
+    },
+    {
+      "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+      "git_sha": "6cfa491d87a9a55ee0b15c4bd4514d2ff33f2cff",
+      "lines": 44,
+      "path": "docs/AGENTCARD_DISCOVERY_DEMO.md",
+      "repository": "1jehuang/jcode",
+      "sha256": "0e1fa5d94c36ecd0170acc6c113095a6348b8ff93b6deb3b49adb9f875361c9a",
+      "source_id": "src_cd0412ce58835c8a8a9fc6e65f3497bc",
+      "stored": "agentcard_discovery_demo.md-f4b6100473c6.md",
+      "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/docs/AGENTCARD_DISCOVERY_DEMO.md"
+    },
+    {
+      "commit": "37159430c3d02545fd7c10b0bd13e754b49f871b",
+      "git_sha": "7789b38a8fc6d7c2704fea745830d1665f38b14a",
+      "lines": 343,
+      "path": "docs/AGENT_NATIVE_VCS_CORE_BEHAVIOR.md",
+      "repository": "1jehuang/jcode",
+      "sha256": "c6bfaaf7fc6e08e63955c0b68f3e718d86d0e591da45e9bf478642cf7dac8fa5",
+      "source_id": "src_2cc74557b8375a15a4aa46211fd4526c",
+      "stored": "agent_native_vcs_core_behavior.md-0855359ee31e.md",
+      "url": "https://github.com/1jehuang/jcode/blob/37159430c3d02545fd7c10b0bd13e754b49f871b/docs/AGENT_NATIVE_VCS_CORE_BEHAVIOR.md"
+    }
+  ],
+  "summary": "Selected evidence records: Each conversation turn is embedded as a semantic vector and queried against a memory graph via cosine similarity; hits are injected into the conversation, optionally after verification by a memory sideagent. Memories are extracted by a memory sideagent at triggers such as semantic drift, a K-turn interval, or session end, and added to the memory graph.",
+  "superseded_claim_ids": []
+}

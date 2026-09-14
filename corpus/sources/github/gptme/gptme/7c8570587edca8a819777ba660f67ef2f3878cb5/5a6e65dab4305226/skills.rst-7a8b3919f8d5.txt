@@ -1,0 +1,492 @@
+:audience: power-user
+
+Skills
+======
+
+gptme's skill system fully conforms to the `Agent Skills open standard
+<https://agentskills.io>`_, the cross-vendor format originally developed by
+Anthropic and adopted by 26+ tools (Claude Code, OpenAI Codex, Gemini CLI,
+GitHub Copilot, Cursor, and more). Skills authored for gptme work in those
+tools, and vice versa — the same interop play gptme makes for :doc:`MCP <mcp>`.
+
+Looking for something to install? See the :doc:`skills-gallery` — a curated
+selection of community skills from gptme-contrib.
+
+.. toctree::
+   :hidden:
+
+   Gallery <skills-gallery>
+
+Explicit invocation telemetry
+-----------------------------
+
+``/skill:<name>`` writes lifecycle evidence to ``skill-events.jsonl`` beside the
+conversation log. Ambient matching and instruction injection do not count as
+invocations. Each invocation has a stable ID; queueing records ``queued``, while
+terminal adapters record ``completed``, ``failed``, or ``abandoned``. Completed
+means the runtime finished responding, not that arbitrary skill instructions
+achieved their intended outcome.
+
+Accounting fields use schema version 2. Readers accept version 1 history without
+rewriting it. Upgrade processes sharing a conversation before resuming writes:
+older version 1 writers reject the newer ledger and stop recording events.
+
+When telemetry is enabled, successful ledger appends also emit
+``gptme_skill_invocations``, ``gptme_skill_completions``,
+``gptme_skill_duration_seconds``, ``gptme_skill_tokens``, and
+``gptme_skill_cost_usd`` through the existing metrics exporter. Labels are limited
+to skill name and surface, plus terminal status, the boolean ``usage_available``
+on completions, and token type on token counters. Session IDs, invocation IDs,
+paths, and error details remain in the ledger. Export failure does not prevent
+invocation; these live metrics are best-effort and are not replayed from history.
+
+Cost and token fields are deltas from the existing ``CostTracker`` over the
+inclusive admission-to-terminal window. They are available only when both ends
+observe the same tracker for the same conversation. A reset, missing tracker, or
+foreign conversation produces ``usage: null`` and ``usage_available=false``;
+it does not produce a zero-cost measurement. Overlapping invocations can have
+overlapping cost windows, so these values must not be summed as exclusive billing.
+
+Frontend accounting coverage remains separate from lifecycle coverage. In
+particular, the TUI does not yet initialize session cost tracking, and native
+server request workers do not consistently retain its ownership. Their lifecycle
+counts and durations remain useful while unmeasurable costs stay unknown. CLI
+invocations can use their existing session tracker. Cross-harness adapters and
+end-to-end accounting parity are separate work.
+
+.. note::
+
+   Skills are a **special case of lessons** using the Agent Skills open standard format.
+   In gptme, skills auto-load when their **name appears in the message** (e.g.,
+   mentioning "python-repl" loads that skill). This differs from lessons which
+   auto-load by keywords/patterns/tools. For deep runtime integration, use
+   :doc:`plugins`.
+
+The skills system extends gptme's :doc:`lessons` to support reusable workflow
+instructions following the Agent Skills open standard.
+
+Overview
+--------
+
+**Skills** are lessons that follow the Agent Skills open standard format and can include:
+
+- Instructional content (like lessons)
+- References to helper files colocated with ``SKILL.md``
+
+Skills complement lessons by providing a standard way to package reusable guidance.
+
+Key Difference: Matching Behavior
+---------------------------------
+
+The most important difference between lessons and skills is **how they are auto-loaded**:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 40 40
+
+   * - Format
+     - Auto-loading Trigger
+     - Example
+   * - **Lessons**
+     - Keywords, patterns, tools in conversation
+     - Mentioning "git commit" loads git lesson
+   * - **Skills**
+     - Skill name appears in message, or ``SKILL.md`` explicitly read
+     - Mentioning "python-repl" loads that skill
+
+This means:
+
+- **Lessons** are proactive: they appear when relevant context is detected
+- **Skills** are explicit: they appear when specifically mentioned by name
+
+Skill vs. Lesson vs. Plugin
+---------------------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 15 28 28 29
+
+   * - Feature
+     - Lesson
+     - Skill
+     - Plugin
+   * - Purpose
+     - Guidance and patterns
+     - Reusable workflow guidance
+     - Deep runtime integration
+   * - Auto-loading
+     - Keywords, patterns, tools
+     - Name only
+     - N/A (always loaded)
+   * - Content
+     - Instructions, examples
+     - Instructions (+ optional colocated files)
+     - Tools, hooks, commands
+   * - Scripts
+     - None
+     - Referenced manually (no auto-loading)
+     - Via custom tools
+   * - Dependencies
+     - None
+     - Documented manually (no auto-install)
+     - Python package dependencies
+   * - Hooks
+     - No
+     - No
+     - Yes
+   * - Custom Tools
+     - No
+     - No
+     - Yes
+   * - Frontmatter
+     - ``match: {keywords, tools}``
+     - ``name:``, ``description:``
+     - N/A
+
+**When to use**:
+
+- **Lesson**: Teaching patterns, best practices, tool usage
+- **Skill**: Providing reusable workflow guidance (lightweight)
+- **Plugin**: Runtime hooks, custom tools, deep gptme integration (see :doc:`plugins`)
+
+Skill Format
+------------
+
+Skills use YAML frontmatter following the Agent Skills open standard format:
+
+.. code-block:: yaml
+
+    ---
+    name: skill-name
+    description: Brief description of what the skill does and when to use it
+    ---
+
+    # Skill Title
+
+    Skill description and usage instructions...
+
+.. note::
+
+   Skills are intentionally lightweight and standards-aligned. gptme can discover
+   and load ``SKILL.md`` content, but does **not** implement custom dependency
+   resolution or automatic script loading/execution for skills.
+
+   If your workflow requires runtime dependency management, tool registration,
+   hooks, or script execution orchestration, use :doc:`plugins`.
+
+Directory Structure
+-------------------
+
+Skills are organized parallel to lessons:
+
+.. code-block:: text
+
+    gptme/
+    └── lessons/           # Unified knowledge tree
+        ├── tools/        # Tool-specific lessons
+        ├── patterns/     # General patterns
+        ├── workflows/    # Workflow lessons
+        └── skills/       # Skills (Agent Skills open standard format)
+            └── python-repl/
+                ├── SKILL.md
+                ├── python_helpers.py
+                └── requirements.txt
+
+.. _supported paths:
+
+Skill Loading Directories
+-------------------------
+
+Skills are loaded from the following directories (if they exist):
+
+**User-level:**
+
+1. ``~/.config/gptme/skills/`` - gptme native skills (or ``$XDG_CONFIG_HOME/gptme/skills/`` if ``XDG_CONFIG_HOME`` is set)
+2. ``~/.claude/skills/`` - Claude CLI compatibility (share skills with Claude CLI)
+3. ``~/.agents/skills/`` - Cross-platform standard
+
+**Workspace-level:**
+
+4. ``./skills/`` - Project-specific skills
+5. ``./.gptme/skills/`` - Hidden project-local skills
+
+The ``~/.agents/`` and ``~/.claude/`` paths provide cross-platform compatibility,
+enabling skills to be shared between gptme and other AI tools.
+
+Discovering Skills
+------------------
+
+Use the utility CLI to see what the current workspace already knows about:
+
+.. code-block:: bash
+
+    gptme-util skills list
+    gptme-util skills list --all
+    gptme-util skills show python-repl
+    gptme-util skills dirs
+
+``skills list`` shows skill names and descriptions. ``--all`` includes regular
+lessons in the same discovery pass, and ``skills dirs`` shows exactly which
+directories are being scanned. For the full list of subcommands, run
+``gptme-util skills --help``.
+
+Install a skill from the default ``gptme-contrib`` registry with
+(use ``gptme-util skills dirs`` to see exactly where it lands):
+
+.. code-block:: bash
+
+    gptme-util skills install home-assistant
+
+See the :doc:`skills-gallery` for a curated list of community skills and the
+same install command.
+
+Invoking Skills as Commands
+---------------------------
+
+Every discovered skill is also registered as a slash command, matching how
+Claude Code and Codex expose skills. Inside a chat (CLI, TUI, or server/WebUI),
+``/skill:<name> [args]`` queues the skill body as your next user prompt (with a
+``Skill invoked:`` header) so the assistant acts on it immediately:
+
+.. code-block:: text
+
+    /skill:end                # canonical form, never collides
+    /end                      # bare alias, only if no command/tool is named "end"
+    /skill:review src/app.py  # arguments are passed through
+
+In the skill body, ``$ARGUMENTS`` expands to the full argument string and
+``$ARGUMENTS[N]`` / ``${N}`` to the N-th (0-based) whitespace-separated
+argument (curly braces are required for positional references to avoid
+ambiguity with literal dollar amounts like ``$100`` in skill prose).
+Use ``/skills read <name>`` to view a skill without invoking it.
+
+Invocation evidence
+~~~~~~~~~~~~~~~~~~~
+
+Explicit slash-command invocations append versioned records to
+``<conversation>/skill-events.jsonl``. Each invocation gets a UUID, carried through
+the prompt queue into message metadata as ``skill_invocation_id``. The ledger
+records skill identity, source path, invocation surface, run identity, timestamp,
+and phase. It does not record arguments or skill contents. Ambient skill matching
+and injection do not create invocation events.
+
+``started`` means the prompt was built; ``queued`` means it was admitted to the
+queue. Queue errors record ``failed`` with the exception class, without its text.
+Neither admission nor a normal turn/session hook establishes skill completion.
+The explicit ``record_skill_phase`` API accepts a later ``completed`` or ``failed``
+event from a caller with execution evidence; terminal transitions are idempotent.
+
+On CLI exit, unresolved invocations from that run become ``abandoned``. This means
+no completion evidence was recorded, and does not establish that the skill's work
+failed. Nested and resumed CLI runs and each TUI app have separate UUIDs.
+
+The TUI records ``completed`` when its worker produces a nonempty final response
+with no runnable tools, or receives the explicit session-complete signal. Errors
+record ``failed``; interruption, declined tools, step limits, cancellation, and
+app exit abandon unfinished invocations. A response containing tools keeps the
+invocation open until the tool loop reaches a final response.
+
+The native V2 server tracks invocation ownership per conversation session across
+generation and tool-confirmation workers. A nonempty, tool-free response completes
+an invocation only after pending and executing tools have drained. Generation/tool
+exceptions fail it; skipped tools, interrupts, session removal, and expiry abandon
+it. Revoked generation epochs cannot finalize a replacement worker's invocation.
+Server admission records retain the conversation path as their session identity;
+execution ownership is scoped to the invocation IDs in the latest user turn.
+
+``completed`` describes the runtime response boundary, not independent verification
+that the skill achieved its goal. ACP execution, queued server commands that never
+reach a step, abrupt-process recovery, cost attribution, and OTEL metrics remain
+follow-up work. Storage failures are logged and never prevent skill execution.
+Malformed ledgers are preserved and refuse further writes until repaired, rather
+than risking duplicate terminal events.
+
+Creating Skills
+---------------
+
+1. Design the Skill
+~~~~~~~~~~~~~~~~~~~
+
+Identify:
+
+- What workflow or automation does it provide?
+- What scripts/utilities are needed?
+- What dependencies are required?
+
+2. Create Skill Directory
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Create a skill directory in one of the `supported paths`_ above (e.g. ``~/.config/gptme/skills/skill-name/`` or ``./skills/skill-name/``) with at minimum:
+
+**SKILL.md** (Agent Skills open standard format):
+
+.. code-block:: yaml
+
+    ---
+    name: skill-name
+    description: Brief description of what the skill does
+    ---
+
+    # Skill Title
+
+    ## Overview
+    Detailed description and use cases.
+
+    ## Reference Scripts
+    Describe each included script (for manual use, not auto-loaded).
+
+    ## Usage Patterns
+    Show common usage examples.
+
+    ## Dependencies
+    List required packages (detailed in requirements.txt).
+
+(Optional) Add helper files (for humans/agents to run manually):
+
+.. code-block:: text
+
+    requirements.txt   # optional, documentation only (no automatic install)
+    helper.py          # optional, run manually if needed
+
+3. Create Optional Helper Scripts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You may place helper scripts in the same directory as the skill for manual use:
+
+.. code-block:: python
+
+    #!/usr/bin/env python3
+    """Helper script for skill."""
+
+    def helper_function():
+        """Does something useful."""
+        pass
+
+4. Test the Skill
+~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    from gptme.lessons.parser import parse_lesson
+    from pathlib import Path
+
+    # Parse skill from unified lessons tree
+    skill = parse_lesson(Path("gptme/lessons/skills/my-skill/SKILL.md"))
+    assert skill.metadata.name == "my-skill"
+    assert skill.metadata.description
+
+What Skills Support (and Don't)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To stay compatible with the Agent Skills open standard and avoid inventing
+tool-specific conventions, gptme currently supports:
+
+- Skill discovery and listing
+- Loading skill content from ``SKILL.md``
+- Name-based skill triggering
+
+gptme intentionally does **not** add skill-specific conventions for:
+
+- Dependency management/resolution
+- Automatic script loading/execution
+
+For these capabilities, use :doc:`plugins`.
+
+Deep Integration with Plugins
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**For runtime integration (hooks, custom tools, commands), use** :doc:`plugins`.
+
+Skills are lightweight knowledge bundles. For deeper integration with gptme's runtime:
+
+- **Hooks**: Register lifecycle callbacks (see :doc:`hooks`)
+- **Custom Tools**: Add new capabilities (see :ref:`creating-a-plugin`)
+- **Commands**: Add CLI commands (see :ref:`plugin-command-modules`)
+
+**Example**: For a skill that needs hooks, create a plugin instead:
+
+.. code-block:: python
+
+    # In a plugin: my_plugin/hooks/setup.py
+    from gptme.hooks import HookType, register_hook
+
+    def setup_environment(logdir, workspace, initial_msgs):
+        """Initialize environment at session start."""
+        # Your hook logic here
+        yield
+
+    def register():
+        register_hook("my_plugin.setup", HookType.SESSION_START, setup_environment)
+
+See :doc:`plugins` for complete examples.
+
+Use Cases
+---------
+
+Data Analysis Skill
+~~~~~~~~~~~~~~~~~~~
+
+- Bundles pandas, numpy helpers
+- Provides import patterns and library setup guidance
+- Provides data inspection utilities
+- Includes plotting helpers
+
+Testing Skill
+~~~~~~~~~~~~~
+
+- Bundles pytest configuration
+- Provides test utilities
+- Includes test discovery patterns
+- Formats test reports
+
+API Development Skill
+~~~~~~~~~~~~~~~~~~~~~
+
+- Bundles FastAPI templates
+- Provides auth helpers
+- Includes validation utilities
+- Documents OpenAPI doc generation patterns
+
+Integration with Lessons
+------------------------
+
+Skills complement lessons:
+
+- **Lesson teaches** the pattern
+- **Skill provides** the tooling
+
+**Common pattern**: A lesson can suggest relevant skills. Since lessons auto-load by
+keywords while skills require explicit mention, a lesson can bridge this gap:
+
+.. code-block:: markdown
+
+    ---
+    match:
+      keywords: [data analysis, pandas, dataframe]
+    ---
+
+    # Data Analysis Best Practices
+
+    When analyzing data, follow these patterns...
+
+    ## Related Skills
+
+    For bundled utilities, mention "python-repl" to load helper functions.
+
+This allows keyword-triggered guidance to point users toward relevant skills.
+
+Example:
+
+- Lesson: ``lessons/patterns/testing.md`` - Testing best practices
+- Skill: ``skills/testing-skill.md`` - Bundled pytest utilities
+
+Related
+-------
+
+- :doc:`skills-gallery` - Curated community skills to install
+- :doc:`lessons` - Core knowledge system
+- :doc:`plugins` - For hooks, custom tools, and deep integration
+- :doc:`hooks` - Lifecycle callbacks (plugins only)
+- `Issue #686 <https://github.com/gptme/gptme/issues/686>`_ - Phase 4: Skills Integration
+- `Issue #1170 <https://github.com/gptme/gptme/issues/1170>`_ - Phase 4.2+ roadmap
+- `Claude Skills <https://simonwillison.net/2025/Oct/10/claude-skills/>`_ - Inspiration

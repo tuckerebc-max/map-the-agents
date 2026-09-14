@@ -1,0 +1,637 @@
+{
+  "applied_operation_id": "op_2e6be22e02c94138ac4a706ea0019246",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f886137322c968ff06bdae0f53712257db1ed8b7a884c8feee04995700b3bf7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L29-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_390c59e04da5f5fce453bb5f4a5322b032cb5defd87fbc0ae08ff78120349e5d"
+      ],
+      "text": "Weaver is a CLI over a local SQLite store with no cloud account, remote sync, coordination daemon, or MCP server; Git stays authoritative for code and the CLI for coordination."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8418c0ab7953e285b5cc16510a2b493aa0a851a23d27afc7374613c42d5d3595",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 16,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L13-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81602d9851e162962adbda914ec9b2e21850d28fd2ffce9c5ef1a38d436fcded"
+      ],
+      "text": "The product provides a status→task→claim→done coordination loop, live sessions, advisory file claims, recent activity, optional Markdown scratchpads, and durable Repository Facts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73e7cdb88e75296202af70f403b799f451e874f4c5f6ac3e799a0f00491e6068",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 204,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L200-L204"
+        },
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 198,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L195-L198"
+        },
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 193,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L188-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_168517cb8d47b46f2dafb8f6fa9d3bb34571c4eae35517e1a235c96982ec2ffb",
+        "slc_3f1105aa74033383df9d84cf43f2be273c5ee42332158512a37eec7a5d17a49c",
+        "slc_e1950c68b43aeb185e755f9c9a1625a0a6ad1d44fefd5f22c4bc15097ed0dea4"
+      ],
+      "text": "The CLI exposes scratchpad commands (list/create/read/use/edit-section/archive/trash/recover), coordination commands (status, task, claim, preflight, done, fact/forget), and setup commands (init, disable, deinit, upgrade, uninstall)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fee3c2c3de339a8678f4c312be7cd48b0092e511b69e47d06b9863ed41f0b43d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 118,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L114-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f5ffdf96e6c2da3c271c4cd308c891b217fe1ffbc262ea4837b16c8a6778483"
+      ],
+      "text": "The scratchpads web UI supports WYSIWYG and Markdown source modes, autosave with revision conflict handling, search, revision history, and shows sessions, claims, activity, and Facts; it binds only to loopback with an unguessable launch capability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_61b171794e50af4426f16980e6c5292f69f962efafcc85fe5e8929cc7c5354aa",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 176,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L172-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ef740920d386cbed8a0719238af6e858ab01886cd7fa956a0cef9e4ceb1335f"
+      ],
+      "text": "Claims are advisory and TTL-bound; a claim exit code 1 means the claim was recorded with an overlap found, and different-worktree overlaps are informational because files are isolated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b86c7a3a42e7f0968cb408ad731d76a3734209fec33e6c1431013648f560a94a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 94,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L92-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02bf4000ab7c378e86506bb8be5445a4295f70c11fec03469a5d42fba3403803"
+      ],
+      "text": "Every scratchpad mutation creates a revision, and passing --revision prevents a stale writer from replacing a newer edit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f8801ef03dd66024c5b3eec22051d56413b3aa7dba68620ae27c6b291cc81b5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 222,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L210-L222"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_697fd324dacd1c4c11caa50a79867ffec57f0d641f4ae1d38713a494a6fc50d0"
+      ],
+      "text": "Stores live under ~/.weaver/ with one SQLite database per repository identity; scratchpads, facts, intents, and reasons are plaintext local data, and there is no telemetry."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df5f37479e54adc8e9ff5573202bad5481d3630b5b002defafb70c7ce6628c6b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 125,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L120-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b213041629b1b08be1385b0ec591457100b2702d9c424a7633245eb1058a9c6b"
+      ],
+      "text": "The first scratchpads invocation owns a foreground server per project store and OS user; later invocations reuse it, and worktrees sharing repo identity and WEAVER_HOME share the instance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5470496c16381c00da9f4e1a1e4117470f26ca8555a7a3147e27236d0d4c3a55",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L29-L31"
+        },
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 151,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L150-L151"
+        },
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 168,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L164-L168"
+        },
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 162,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L153-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_390c59e04da5f5fce453bb5f4a5322b032cb5defd87fbc0ae08ff78120349e5d",
+        "slc_47739376582c1632780cc1a09ae775235d27c44d338b9874c83fac632cdf5051",
+        "slc_8de592e3fd8f87ec9be4174cc348f1ef9191ee1cf84c21e0a94fc475b0a73745",
+        "slc_bb6f9a89e1768231b0d1a7fa640c9c4206e1daf2c425b31fe622f095b8df287b"
+      ],
+      "text": "The OpenCode plugin (installed via init --hooks) provides fixed-operation tools such as weaver_scratchpad_* and weaver_fact_* that invoke the CLI contract, with stdin Markdown, JSON reads, and explicit revisions for mutations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d488d60cf0d9212bb0f3d245d22a2082cbcfdff6a7051842fee8f51aad88acfc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 42,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L41-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_91aa735d8d1b4c33eaa6dd2014e1881c716d2a6c7c623e157aa492f228dee959"
+      ],
+      "text": "The self-contained binary supports macOS and Linux on arm64/x64 (WSL2 on Windows), installs to ~/.local/bin/weaver, and requires no Node, npm, server, or account."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57a4b6731a8f14e357541188dd6fa769bb9fa1540c48bd60f2b1f64ad97ec3bc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 151,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L150-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47739376582c1632780cc1a09ae775235d27c44d338b9874c83fac632cdf5051"
+      ],
+      "text": "The generated OpenCode plugin file has no dependency on the Weaver npm package, suggesting the installed integration is self-contained."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f167678b215908ecd09ffc520142bdf74c0c4a12438bf081b94bc18944bb28c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+          "line_end": 99,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md#L96-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_86b10c14c7282cf1975b2156a9b13977febaccfc23ed12021b0d46ea8130824e"
+      ],
+      "text": "There is no individual permanent-purge command for scratchpads; pads move through active→archived or trash with restore/recover operations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f684634f85579c3dce135998a0672517376d5c6341e7ce0cea1775366be85623",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "e8bb4cd9ee6697cc8ddc70cc93d8d4268db402ef",
+          "line_end": 22,
+          "line_start": 15,
+          "path": "AGENTS.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/AGENTS.md#L15-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_378dad7db9fab2416353f48b34265a5c7000a1656ff93ecc6a2b2b227da87bf6"
+      ],
+      "text": "Repository development practice: contributors run tests with npm test (node --test) and npm run test:bun (bun test), both of which must pass, plus npm run typecheck and npm run build."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fdae64f4fe72ba2fca9a00ff7f238827f62f72e697e6e5aa745fd85f50b9a0e0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "e8bb4cd9ee6697cc8ddc70cc93d8d4268db402ef",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "AGENTS.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/AGENTS.md#L38-L41"
+        },
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "e8bb4cd9ee6697cc8ddc70cc93d8d4268db402ef",
+          "line_end": 34,
+          "line_start": 26,
+          "path": "AGENTS.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/AGENTS.md#L26-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa6f802a548e36caa4e23af050eb08fdd37ed15355a27cd5baa0b4d05476b1da",
+        "slc_ce8f555dcc144ebc07e25a510283d1c056d1d754987df3875070b0a8774bdeea"
+      ],
+      "text": "Repository development practice: Conventional Commits are mandatory and drive versioning via release-please; releases are cut by merging the release-please PR rather than hand-creating releases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c942ed358ecbf9eae68ee3ea5904c196f4269e1d945b9346186cb49dbf973bea",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+          "git_sha": "e8bb4cd9ee6697cc8ddc70cc93d8d4268db402ef",
+          "line_end": 34,
+          "line_start": 26,
+          "path": "AGENTS.md",
+          "repository": "sean35mm/weaver",
+          "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/AGENTS.md#L26-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce8f555dcc144ebc07e25a510283d1c056d1d754987df3875070b0a8774bdeea"
+      ],
+      "text": "Repository development practice: tests use node:test with node:assert/strict, relative imports use explicit .ts extensions, pure logic is clock-injectable, and the core stays zero-runtime-dependency except picomatch."
+    }
+  ],
+  "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 249,
+        "path": "README.md",
+        "size": 11664
+      },
+      {
+        "lines": 61,
+        "path": "AGENTS.md",
+        "size": 3342
+      },
+      {
+        "lines": 139,
+        "path": "CHANGELOG.md",
+        "size": 6466
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1193
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3443
+      },
+      {
+        "path": "RELEASING.md",
+        "reason": "file-budget",
+        "size": 4002
+      },
+      {
+        "path": "docs/src/content/docs/concepts/conflicts.md",
+        "reason": "file-budget",
+        "size": 4252
+      },
+      {
+        "path": "docs/src/content/docs/concepts/how-it-works.md",
+        "reason": "file-budget",
+        "size": 4355
+      },
+      {
+        "path": "docs/src/content/docs/concepts/why-cli-not-mcp.md",
+        "reason": "file-budget",
+        "size": 3829
+      },
+      {
+        "path": "docs/src/content/docs/contributing.md",
+        "reason": "file-budget",
+        "size": 1686
+      },
+      {
+        "path": "docs/src/content/docs/for-llms.md",
+        "reason": "file-budget",
+        "size": 1781
+      },
+      {
+        "path": "docs/src/content/docs/getting-started/install.md",
+        "reason": "file-budget",
+        "size": 3466
+      },
+      {
+        "path": "docs/src/content/docs/getting-started/quickstart.md",
+        "reason": "file-budget",
+        "size": 3600
+      },
+      {
+        "path": "docs/src/content/docs/guides/claude-code-hooks.md",
+        "reason": "file-budget",
+        "size": 3896
+      },
+      {
+        "path": "docs/src/content/docs/guides/configuration.md",
+        "reason": "file-budget",
+        "size": 1597
+      },
+      {
+        "path": "docs/src/content/docs/guides/dashboard.md",
+        "reason": "file-budget",
+        "size": 5401
+      },
+      {
+        "path": "docs/src/content/docs/guides/multiple-agents.md",
+        "reason": "file-budget",
+        "size": 4935
+      },
+      {
+        "path": "docs/src/content/docs/guides/opencode-plugin.md",
+        "reason": "file-budget",
+        "size": 4895
+      },
+      {
+        "path": "docs/src/content/docs/guides/scratchpads.md",
+        "reason": "file-budget",
+        "size": 7113
+      },
+      {
+        "path": "docs/src/content/docs/guides/using-from-an-agent.md",
+        "reason": "file-budget",
+        "size": 5049
+      },
+      {
+        "path": "docs/src/content/docs/reference/architecture.md",
+        "reason": "file-budget",
+        "size": 7906
+      },
+      {
+        "path": "docs/src/content/docs/reference/commands.md",
+        "reason": "file-budget",
+        "size": 10948
+      },
+      {
+        "path": "docs/src/content/docs/reference/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 8336
+      },
+      {
+        "path": "docs/src/content/docs/releasing.md",
+        "reason": "file-budget",
+        "size": 1236
+      },
+      {
+        "path": "docs/src/content/docs/roadmap.md",
+        "reason": "file-budget",
+        "size": 4234
+      }
+    ],
+    "omitted_count": 22,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 159,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 25,
+      "complete": false,
+      "omitted": 22,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_b261ac12c511503eb732b44c765ec847",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sean35mm/weaver/e5f41572c338f41e402e9ea309088d74d10a6f68/f18b9c6d31110a99/manifest.json",
+  "package_id": "pkg_ba9118c13a0b175caa36566f4243d77546e46225585a16d33623029b50c17c8f",
+  "repo": "sean35mm/weaver",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2d7760640c4a55ce3cac13b8f441b05ccae795ae0082ff357770ad0012d9dd25",
+  "snapshot_id": "f18b9c6d31110a99",
+  "sources": [
+    {
+      "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+      "git_sha": "e8bb4cd9ee6697cc8ddc70cc93d8d4268db402ef",
+      "lines": 61,
+      "path": "AGENTS.md",
+      "repository": "sean35mm/weaver",
+      "sha256": "60f0aab48b17bea453aec5b4531eb61c8ed07aad0e20d1bdfbc78439aca766fa",
+      "source_id": "src_01def46fb45d53969c69b2fa33529280",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/AGENTS.md"
+    },
+    {
+      "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+      "git_sha": "79c55000797c13a35c016c49f673666851d724c7",
+      "lines": 139,
+      "path": "CHANGELOG.md",
+      "repository": "sean35mm/weaver",
+      "sha256": "c907066150ce6b9b7a7e8ab20f106bf498839231d807f2dcfb0ea6e72d14ab7f",
+      "source_id": "src_d22903bfbc5e516eb843396b88361373",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/CHANGELOG.md"
+    },
+    {
+      "commit": "e5f41572c338f41e402e9ea309088d74d10a6f68",
+      "git_sha": "6765c3a259cc8846310367a64cca740478159266",
+      "lines": 249,
+      "path": "README.md",
+      "repository": "sean35mm/weaver",
+      "sha256": "9bfc911772ee634e0eff41133b422611199dd1fff30c2efa87c5c9c4104b6be4",
+      "source_id": "src_07648eff57c85f7db581a954b4ae1299",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sean35mm/weaver/blob/e5f41572c338f41e402e9ea309088d74d10a6f68/README.md"
+    }
+  ],
+  "summary": "Weaver is a local CLI over SQLite that coordinates multiple coding agents via sessions, advisory file claims, revision-safe Markdown scratchpads, and Repository Facts, with an optional loopback web dashboard and OpenCode plugin. Contributor instructions in AGENTS.md describe development practice and are reported only under workflows.",
+  "superseded_claim_ids": []
+}

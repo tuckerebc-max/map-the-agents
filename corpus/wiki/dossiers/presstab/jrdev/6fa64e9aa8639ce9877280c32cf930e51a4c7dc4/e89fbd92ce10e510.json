@@ -1,0 +1,564 @@
+{
+  "applied_operation_id": "op_222f49717790435e947355ffc48e587d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_3aeb69d5a95d2257952df8e7216efcc09db6703b4d78f23ac799b587d89a08e9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "d38d16767e87b68156a2f80a9a0aadf11d13deef",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/README.md#L36-L36"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "5ca52770888685615f015ab7f8aded71ecb2bd48",
+          "line_end": 8,
+          "line_start": 6,
+          "path": "docs/code.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/code.md#L6-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65928eb81af988328ec9d1e6bb9699441329ae91a0d5908fbd64c27bf8c846fd",
+        "slc_d892f05968f241845e36ad8822f4997e584f1d7c2baec85b96311504d0626f03"
+      ],
+      "text": "JrDev runs in the user's current working directory, started by entering 'jrdev' in a project directory, with commands like /init and /code typed into a Command Input field."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_426a84bdac74b688192cf0b1631beb17609fb60c06034f6f1b59cb1480019ab5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "74ff5adf8e012f9eef55f221e7d610ef34437d94",
+          "line_end": 29,
+          "line_start": 23,
+          "path": "docs/project_context.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/project_context.md#L23-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bfe1b761b1908381b349cee4e18bd6e6c612cf0ed81a50455fb29e2feb0e6aef"
+      ],
+      "text": "The /projectcontext command supports subcommands on|off, status, list, view <filepath>, update, refresh <filepath>, add <filepath>, and remove <filepath> for managing project context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4ce6139859d9ec23a9d3f4043cdcf61322a2b029a877baa0c1ef5d567963102",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "f74ade81b3b64c72d0129051ae39c91c6e6a0f02",
+          "line_end": 14,
+          "line_start": 7,
+          "path": "docs/threads.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/threads.md#L7-L14"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "f74ade81b3b64c72d0129051ae39c91c6e6a0f02",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "docs/threads.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/threads.md#L25-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b82a811a03bcf11b349f8fc5593a4a88656b8c4ce307f4cff6e6448c291cd85",
+        "slc_7cd103afeaac4a62f57aaf5d2789cb88afb223e3af6217e26021e5635b07c0f5"
+      ],
+      "text": "Thread commands include /thread new [NAME], list, switch THREAD_ID, name-all, info, and view [COUNT]; the active thread is indicated in the prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_873d656b10fdc5e96fc4ad47e7ec24e948d552a22db668fb4078a2978ca71a17",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "5ca52770888685615f015ab7f8aded71ecb2bd48",
+          "line_end": 75,
+          "line_start": 40,
+          "path": "docs/code.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/code.md#L40-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09dd69b938c86a02fbf241728dc08d090939df3a92697a08e0865bb54d42e42b"
+      ],
+      "text": "The /code agent runs a six-phase pipeline: Analyze, Fetch Context, Plan, Execute, Review, and Validate, ending with files updated on disk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d51c758a2fa42ddb1ac8ca5620779caf3aa72a2986e7391fb9c06e0006937ef9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "5ca52770888685615f015ab7f8aded71ecb2bd48",
+          "line_end": 168,
+          "line_start": 164,
+          "path": "docs/code.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/code.md#L164-L168"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5123424cec96e744c6cddfe704a96d7e4f6a33f764a1ade6ba06ac16dcf1936"
+      ],
+      "text": "If the Review phase finds changes insufficient, the pipeline returns to the Analyze phase with the failed review, forming an agentic loop; a passing review proceeds to validation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8bde0e16789966adb0e710ef3dede923d7116834fe2dba46e41274fed2a22144",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "5ca52770888685615f015ab7f8aded71ecb2bd48",
+          "line_end": 127,
+          "line_start": 117,
+          "path": "docs/code.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/code.md#L117-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d456f51c67bbff95bb83a0574b233ba7b16672838e8047738168c175429abbb1"
+      ],
+      "text": "The Plan phase produces an ordered JSON plan of file-modification steps, validates each filename against loaded files, and offers accept, edit, accept-all, reprompt (restarting at Analyze), or cancel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_17e4b85ab737f1088da52831ac5693893f077b83799472b3db792e4029c3c504",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "d38d16767e87b68156a2f80a9a0aadf11d13deef",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/README.md#L70-L70"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "d38d16767e87b68156a2f80a9a0aadf11d13deef",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/README.md#L72-L77"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "d38d16767e87b68156a2f80a9a0aadf11d13deef",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/README.md#L79-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_658739a659a71eba3671eff2bcb395155eecdf0a3b1f63ff49906926163fbd7c",
+        "slc_7237800c9dbce2a34ea5f945660241dd6b47d3f2dd8829d77ca826fa051f676a",
+        "slc_e98be15852e114f268ff438e5d207207b6445beac64ec215f8659098d1a9b3a9"
+      ],
+      "text": "JrDev uses named model profiles (advanced_reasoning, advanced_coding, intermediate_reasoning, quick_reasoning, intent_router, low_cost_search) to match model cost and capability to each task; defaults depend on the provided API key and are customizable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb69fd348ee217f0bd0a37562962196fffc520cb0e68a89881920b27879d1f59",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "74ff5adf8e012f9eef55f221e7d610ef34437d94",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "docs/project_context.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/project_context.md#L13-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8ae15158941bfbac53681412ac90a4770731446cbdea5267cfad71b633da9622"
+      ],
+      "text": "The /init command builds persistent project context: a file tree scan, AI-selected key files (up to 20), machine-readable file summaries in .jrdev/context/, plus generated jrdev_conventions.md and jrdev_overview.md in .jrdev."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18d5627d2211c8599bc39302273b1f50d3d3ce8fb81175ea2ef46e6c2512ce76",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "74ff5adf8e012f9eef55f221e7d610ef34437d94",
+          "line_end": 38,
+          "line_start": 35,
+          "path": "docs/project_context.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/project_context.md#L35-L38"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "74ff5adf8e012f9eef55f221e7d610ef34437d94",
+          "line_end": 29,
+          "line_start": 23,
+          "path": "docs/project_context.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/project_context.md#L23-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03b1274866bfda66ef6c795e665ddaf5dcd2f5034842c5d46f11b114d69932a0",
+        "slc_bfe1b761b1908381b349cee4e18bd6e6c612cf0ed81a50455fb29e2feb0e6aef"
+      ],
+      "text": "An index.json in .jrdev tracks context files, their last modification times, and summary file paths; /projectcontext update and refresh handle outdated files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_09442a3f2d32647a39236a415866c2f7418af75267d1c5ced65296ea12ee5650",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "f74ade81b3b64c72d0129051ae39c91c6e6a0f02",
+          "line_end": 21,
+          "line_start": 18,
+          "path": "docs/threads.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/threads.md#L18-L21"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "f74ade81b3b64c72d0129051ae39c91c6e6a0f02",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "docs/threads.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/threads.md#L25-L28"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "f74ade81b3b64c72d0129051ae39c91c6e6a0f02",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/threads.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/threads.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58ae2b863299cdf585ddbb0fb55bbc9b2f1889b57c10f640ed22596ae08ef42f",
+        "slc_7cd103afeaac4a62f57aaf5d2789cb88afb223e3af6217e26021e5635b07c0f5",
+        "slc_a02c3814c6d0c20a448da36d02ef1642269e98dbb9e214d1afb2cbd45be1a89f"
+      ],
+      "text": "Chat threads are isolated: each thread keeps its own message history and context files, and a main thread is created by default when JrDev starts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_54b74496b779163e5a040a56e6932b84535403d1dff4c43b3fd51202f64b8357",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "d38d16767e87b68156a2f80a9a0aadf11d13deef",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/README.md#L83-L83"
+        },
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "5ca52770888685615f015ab7f8aded71ecb2bd48",
+          "line_end": 150,
+          "line_start": 138,
+          "path": "docs/code.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/code.md#L138-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1742f3b1dc6e342809528414613a692ffe860eea80aeb2fecadf2a13cc53102a",
+        "slc_da0cf36b4dd82690d0c26c9819055307273c211eda52d252e2e1809b3b442ce5"
+      ],
+      "text": "The tool can modify project files and prompts for confirmation unless in 'Accept All' mode; execute-phase diffs offer Accept, Accept All, Edit, No, or Request Change options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35d83bd06d87b30e3a02d225c11144021bdb3ff81ff91cd2b7f5748a0f5bad7c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "fc74f025112365c91e67140edfc7df05b36cb6f7",
+          "line_end": 14,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/requirements.txt#L1-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36df00b5ec15a53c35082d9328fa0f0b6149ada98640589414279849d49941f6"
+      ],
+      "text": "requirements.txt lists openai, anthropic, google-genai, pydantic, httpx, textual[syntax], tiktoken and others, with pyreadline3, windows-curses, and colorama gated to Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c809ea76ef676bc5213c63292fd1740acc7d25dd3498c997c4bba325b151d8cd",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+          "git_sha": "d38d16767e87b68156a2f80a9a0aadf11d13deef",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "presstab/jrdev",
+          "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1742f3b1dc6e342809528414613a692ffe860eea80aeb2fecadf2a13cc53102a"
+      ],
+      "text": "The README marks JrDev as early-access software subject to rapid changes including breaking changes and experimental features, and strongly recommends committing work under version control before use."
+    }
+  ],
+  "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 103,
+        "path": "README.md",
+        "size": 5147
+      },
+      {
+        "lines": 14,
+        "path": "requirements.txt",
+        "size": 251
+      },
+      {
+        "lines": 189,
+        "path": "docs/code.md",
+        "size": 10728
+      },
+      {
+        "lines": 66,
+        "path": "docs/project_context.md",
+        "size": 6083
+      },
+      {
+        "lines": 138,
+        "path": "docs/threads.md",
+        "size": 4115
+      },
+      {
+        "lines": 77,
+        "path": "AGENTS.md",
+        "size": 4605
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 186
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 251,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_95b814c38ab05ba5b1289667f441c425",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 3,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/presstab/jrdev/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/e89fbd92ce10e510/manifest.json",
+  "package_id": "pkg_2b3b14bdcb4dde86bcaf7ec2425151f66102469c850cd1b0378e7e6dcc637c03",
+  "repo": "presstab/jrdev",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b572bdc5252d479eb1d24eeb619fc2d5c002fa755fc293ff700c72f816a83c4f",
+  "snapshot_id": "e89fbd92ce10e510",
+  "sources": [
+    {
+      "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+      "git_sha": "418f06848aad5b9ab7ff49e84bb18ea5b8a51430",
+      "lines": 77,
+      "path": "AGENTS.md",
+      "repository": "presstab/jrdev",
+      "sha256": "376c7e5f6481948b5082520e9e329b13ec4ffb733d4ca220f8674e16a79bf78e",
+      "source_id": "src_3490dfa7944354789d466e7fd9a456e2",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/AGENTS.md"
+    },
+    {
+      "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+      "git_sha": "d38d16767e87b68156a2f80a9a0aadf11d13deef",
+      "lines": 103,
+      "path": "README.md",
+      "repository": "presstab/jrdev",
+      "sha256": "4df5ba47513359776fd09d11c73c42bb12bd01ca874001ea2d707395e0902b3f",
+      "source_id": "src_635d3730573d568e8e78061c64856d3c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/README.md"
+    },
+    {
+      "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+      "git_sha": "5ca52770888685615f015ab7f8aded71ecb2bd48",
+      "lines": 189,
+      "path": "docs/code.md",
+      "repository": "presstab/jrdev",
+      "sha256": "a867b375187cd1e54a928cab7ef68c923054de1cd7b1bf898a1ac47d98bf27aa",
+      "source_id": "src_d2c7fec36eba5ae48e0d0b0086f942ea",
+      "stored": "code.md-b062aa8aac67.md",
+      "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/code.md"
+    },
+    {
+      "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+      "git_sha": "74ff5adf8e012f9eef55f221e7d610ef34437d94",
+      "lines": 66,
+      "path": "docs/project_context.md",
+      "repository": "presstab/jrdev",
+      "sha256": "8567d66010d8729597be38d5a611547f4b1e17fd69827d9a64d5b89b5a906cc0",
+      "source_id": "src_7474f03bafcd55e4b59591f81b5b63fe",
+      "stored": "project_context.md-844c5643d9e0.md",
+      "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/project_context.md"
+    },
+    {
+      "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+      "git_sha": "f74ade81b3b64c72d0129051ae39c91c6e6a0f02",
+      "lines": 138,
+      "path": "docs/threads.md",
+      "repository": "presstab/jrdev",
+      "sha256": "fcf7cf87c1469d8c3d21a3630622a3c0a16d22e0f723cf7a0f30355d14696aba",
+      "source_id": "src_5c4f118038d35c7e8c59f7b6b6ab1434",
+      "stored": "threads.md-b599f7967df3.md",
+      "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/docs/threads.md"
+    },
+    {
+      "commit": "6fa64e9aa8639ce9877280c32cf930e51a4c7dc4",
+      "git_sha": "fc74f025112365c91e67140edfc7df05b36cb6f7",
+      "lines": 14,
+      "path": "requirements.txt",
+      "repository": "presstab/jrdev",
+      "sha256": "3dc4f40f5a0ea56f510cdd782b9829690a46329277516f00df40b7fbb5df355c",
+      "source_id": "src_4ed91b79cab5521b920a307dd64d9b9b",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/presstab/jrdev/blob/6fa64e9aa8639ce9877280c32cf930e51a4c7dc4/requirements.txt"
+    }
+  ],
+  "summary": "JrDev is a terminal-based AI coding assistant with a six-phase /code agent pipeline, a persistent project context system stored in .jrdev, isolated chat threads, and named model profiles for cost-aware model switching. Evidence is documentation-based; no eval harness or product-side permission model beyond change confirmations is documented.",
+  "superseded_claim_ids": []
+}

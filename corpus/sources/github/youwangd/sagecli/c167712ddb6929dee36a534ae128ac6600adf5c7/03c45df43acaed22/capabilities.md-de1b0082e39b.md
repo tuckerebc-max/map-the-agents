@@ -1,0 +1,180 @@
+# SageCLI Capabilities (auto-updated)
+
+## Commands
+- `sage acp`
+- `sage alias`
+- `sage attach`
+- `sage call`
+- `sage checkpoint`
+- `sage clean`
+- `sage clone`
+- `sage completions`
+- `sage config`
+- `sage context`
+- `sage create`
+- `sage dashboard`
+- `sage demo`
+- `sage diff`
+- `sage doctor`
+- `sage env`
+- `sage export`
+- `sage help`
+- `sage history`
+- `sage inbox`
+- `sage info`
+- `sage init`
+- `sage logs`
+- `sage ls`
+- `sage mcp`
+- `sage memory`
+- `sage merge`
+- `sage msg`
+- `sage peek`
+- `sage plan`
+- `sage rename`
+- `sage replay`
+- `sage restart`
+- `sage restore`
+- `sage recover`
+- `sage result`
+- `sage rm`
+- `sage runs`
+- `sage send`
+- `sage skill`
+- `sage start`
+- `sage stats`
+- `sage status`
+- `sage steer`
+- `sage stop`
+- `sage task`
+- `sage tasks`
+- `sage tool`
+- `sage trace`
+- `sage upgrade`
+- `sage version`
+- `sage wait`
+- `sage watch`
+
+## Runtimes
+- bash
+- claude-code
+- cline
+- gemini-cli
+- codex
+- kiro
+- ollama
+- llama-cpp
+
+## Features
+- Git worktree isolation (create --worktree, merge, merge --dry-run, diff --branch for full branch review)
+- Headless/CI mode (send --headless, --json, action.yml)
+- Stdin pipe support (echo "msg" | sage send agent — Unix pipeline integration)
+- MCP server registry (mcp add/ls/rm, create --mcp, mcp tools)
+- Custom tool scripts (tool add/ls/rm/run/show — register with descriptions, list with metadata, remove, execute, and inspect custom tool scripts; tool ls --json emits machine-readable JSON array with name/description for scripted registry introspection; tool rm <name> --dry-run previews .sh path and optional .desc path without deleting, mirroring skill rm --dry-run for safe destructive-op preview)
+- Skills system (skill install/ls/rm/show/run, create --skill, registries; skill ls --count emits plain integer of installed skills for scripted registry introspection, e.g. `[ $(sage skill ls --count) -ge 1 ] || exit 1`, completes --count scripted-polling family alongside tasks/history/msg ls/inbox/ls/runs)
+- Shared context store (context set/get/ls/rm/clear, auto-inject; clear --dry-run previews keys that would be removed without deleting, mirroring memory clear --dry-run for safe destructive-op preview)
+- Per-agent persistent memory (memory set/get/ls/rm/clear, auto-inject into prompts, ls --json for scripting)
+- Per-agent environment variables (env set/get/ls/rm/scope; get prints plain value for scripted retrieval e.g. TOKEN=$(sage env get bot API_KEY), ls masks values for display, ls --json emits masked JSON object)
+- Inter-agent messaging (msg send/ls/clear, auto-inject on send; inbox --from <agent> for sender filter; inbox --count emits plain number for scripted polling, composable with --from; msg ls <agent> --count emits plain number of pending messages for scripted polling, e.g. while [ $(sage msg ls worker --count) -gt 0 ]; do ...)
+- Agent chaining (send --then, multi-step pipelines)
+- Failure callback (send --on-fail <command> — run command on task failure with SAGE_FAIL_AGENT/TASK/OUTPUT env vars)
+- Completion callback (send --on-done <command> — run command on ANY task completion with SAGE_DONE_AGENT/TASK/STATUS/OUTPUT env vars)
+- Full agent cloning (clone --full — copy memory and env vars alongside config, for preserving learned context)
+- Agent export/import (export, create --from file/URL, diff)
+- Agent guardrails (--timeout, --max-turns, --retry, --allow-env, max-agents concurrency limit)
+- Dry-run mode (send --dry-run — preview assembled prompt with all injected context/memory/messages without executing)
+- Per-task timeout (send --headless --timeout <duration> — kill task after Nm/Nh/Ns, exit 124 on timeout, works with --json/--on-fail/--on-done)
+- Command aliases (alias set/get/ls/rm — reusable shortcuts for common workflows, like git aliases; alias get <name> prints plain expansion for scripted retrieval without jq parsing)
+- File attachment (send --attach <file> — append file contents as context alongside message, multiple files supported, 100KB limit)
+- Task tagging (send --tag <label> — tag tasks for filtering, history --tag <label> filters by tag, multiple tags supported, shown in history output)
+- Time-based history filter (history --since <duration> — filter tasks by age: 30m, 2h, 1d, 1w, combines with --tag and --agent)
+- History search (history --grep <pattern> — case-insensitive search across task text, combines with --agent/--tag/--since)
+- History pruning (history --prune <duration> — delete task history older than a time window, combines with --agent for per-agent cleanup; history --prune <duration> --dry-run previews count ('would prune N task(s)') without deleting, mirroring context/memory clear --dry-run for safe destructive-op preview)
+- History status filter (history --status <done|failed> — filter tasks by completion status, combines with --agent/--tag/--since/--grep/--json)
+- History count (history --count — plain integer count of matching entries after all filters applied, ignores -n; composable for scripted monitoring: `while [ $(sage history --count --agent worker --status failed --since 1h) -gt 0 ]; do alert; done`)
+- Security audit (doctor --security — report agents missing guardrails with exit code)
+- Runtime dependency check (doctor --agents — verify each agent's runtime binary is installed)
+- Unified health check (doctor --all — run basic + security + agents + mcp checks in one pass)
+- Doctor JSON output (doctor --json — machine-readable health check output for CI/monitoring; works with --all, --security, --agents, --mcp)
+- Runs JSON output (runs --json — machine-readable list of task runs with run_id/status/current_cycle/goal; composes with --active for monitoring: sage runs --active --json | jq ...)
+- Status JSON output (status --json — machine-readable system state in one call: sage_home, tmux {session, running}, agents [{name, runtime, status, pid, inbox, task, last_active}]; enables CI/monitoring scripts: sage status --json | jq '.agents[] | select(.status=="running") | .name')
+- Tasks count (tasks [name] [--status X] --count — plain integer count of matching tasks after filters; composable with name + --status for scripted state polling: `while [ $(sage tasks --status running --count) -gt 0 ]; do sleep 5; done`)
+- Runs count (runs [--active] --count — plain integer count of task runs, composable with --active for scripted active-run polling: `while [ $(sage runs --active --count) -gt 0 ]; do sleep 5; done`; completes the --count scripted-polling family across tasks, history, msg ls, inbox, ls --count, runs)
+- Aliases JSON output (alias ls --json — machine-readable JSON object of aliases; empty returns {}; composes with jq: sage alias ls --json | jq -r 'keys[]' or jq '.review' for specific lookups)
+- Skills JSON output (skill ls --json — machine-readable JSON array of installed skills with name/version/description fields; empty returns []; composes with jq: sage skill ls --json | jq -r '.[].name' for script-friendly skill iteration)
+- MCP JSON output (mcp ls --json — machine-readable JSON array of registered MCP servers with name/command/args fields; empty returns []; composes with jq: sage mcp ls --json | jq -r '.[].name' for script-friendly server iteration and config introspection)
+- MCP count (mcp ls --count — plain integer count of registered MCP servers for scripted registry introspection e.g. `[ $(sage mcp ls --count) -ge 1 ] || exit 1` for CI MCP-registration verification; extends --count scripted-polling family across tasks, history, msg ls, inbox, ls, runs, skill, mcp)
+- Tool count (tool ls --count — plain integer count of registered bash tools for scripted registry introspection e.g. `[ $(sage tool ls --count) -ge 1 ] || exit 1` for CI tool-registration verification; extends --count scripted-polling family across tasks, history, msg ls, inbox, ls, runs, skill, mcp, tool)
+- Alias count (alias ls --count — plain integer count of registered aliases for scripted registry introspection e.g. `[ $(sage alias ls --count) -ge 1 ] || exit 1` for CI alias-bootstrap verification; extends --count scripted-polling family across tasks, history, msg ls, inbox, ls, runs, skill, mcp, tool, alias)
+- Env count (env ls <agent> --count — plain integer count of env vars for an agent for scripted env introspection e.g. `[ $(sage env ls myagent --count) -ge 3 ] || exit 1` for CI env-bootstrap verification; extends --count scripted-polling family across tasks, history, msg ls, inbox, ls, runs, skill, mcp, tool, alias, env)
+- Context count (context ls --count — plain integer count of stored context keys for scripted context introspection e.g. `[ $(sage context ls --count) -ge 1 ] || exit 1` for CI context-bootstrap verification; extends --count scripted-polling family to 12 commands)
+- Config count (config ls --count — plain integer count of set config keys for scripted config introspection e.g. `[ $(sage config ls --count) -ge 1 ] || exit 1` for CI config-bootstrap verification; extends --count scripted-polling family to 13 commands)
+- Memory count (memory ls <agent> --count — plain integer count of memory keys for an agent for scripted per-agent memory introspection e.g. `[ $(sage memory ls myagent --count) -ge 1 ] || exit 1` for CI memory-bootstrap verification; extends --count scripted-polling family to 14 commands)
+- Checkpoint count (checkpoint --ls --count — plain integer count of saved checkpoints for scripted checkpoint introspection e.g. `[ $(sage checkpoint --ls --count) -ge 1 ] && sage restore --all` for CI/reboot restore verification; extends --count scripted-polling family to 15 commands)
+- Trace count (trace --count — plain integer count of trace events after all filters (agent, --since, -n) applied e.g. `[ $(sage trace --count) -ge 1 ] || exit 1` for CI agent-activity verification, `while [ $(sage trace --since 5m --count) -eq 0 ]; do alert; done` for stale-agent monitoring; extends --count scripted-polling family to 16 commands)
+- MCP server health check (doctor --mcp — verify registered MCP server command binaries exist)
+- Per-agent environment (env set/ls/rm/scope, create --env, env var allowlist, ls --json for scripting)
+- Agent checkpointing (checkpoint <name|--all|--ls>, restore <name|--all> — save/restore runtime config, env vars, MCP servers, steer file to JSON; checkpoint --ls lists existing checkpoints with name/runtime/timestamp so users see what's restorable without browsing ~/.sage/checkpoints/)
+- Agent status filter (ls --running/--stopped — filter agents by status, works with -l/--json, enables scripting: sage ls --running | xargs sage stop)
+- Failed agents filter (ls --failed — show agents whose most recent task exited non-zero; combines with -q/--json/--runtime; enables: sage ls --failed -q | xargs sage logs)
+- Agent count (ls --count — prints just the number of matching agents for monitoring: if [ $(sage ls --count --failed) -gt 0 ]; then alert; fi)
+- Failed logs tail (logs --failed [--tail N] — tails logs from only agents whose most recent task exited non-zero, with === agent === headers, for fast post-fan-out triage)
+- Failed results (result --failed [--json] — show most recent results from only agents whose latest task exited non-zero; implicit --all; composes with ls --failed workflow)
+- Runtime filter (ls --runtime <name> — filter agents by runtime type, works with -l/--json/--running/--stopped, enables: sage ls --runtime ollama | xargs sage stop)
+- Sortable listing (ls --sort <field> — sort agents by name/runtime/status/last_active, works with -l/--json and all filters)
+- Quiet listing (ls -q/--quiet — output bare agent names one per line for Unix pipeline scripting, like docker ps -q; works with --running/--stopped/--runtime/--sort filters)
+- Broadcast send (send --all --headless "msg" — send same task to all running agents in parallel for ad-hoc fan-out without plan YAML; works with --json/--tag/--timeout)
+- Failed retry (send --failed --headless "msg" — broadcast task to only the running agents whose latest task exited non-zero; completes ls --failed → logs --failed → result --failed triage with one-shot remediation)
+- Aggregate results (result --all — show most recent task result from every agent in one view; --json outputs array of {agent, status, task_id, output}; skips agents with no tasks)
+- Bulk remove (rm --stopped — remove all stopped agents in one command with --dry-run preview; skips running agents; cleans up worktrees)
+- Bulk remove failed (rm --failed [--dry-run] — remove stopped agents whose latest task exited non-zero; running-failed agents are skipped; composes with ls --failed / logs --failed post-triage)
+- Stop failed (stop --failed [--graceful <dur>] [--dry-run] — kill only RUNNING agents whose latest task exited non-zero; use after fan-out when runtimes hang/flap post-failure; composes with --graceful for SIGTERM wait)
+- Graceful stop (stop --graceful <duration> — sends SIGTERM first, waits up to <duration> for clean exit, then SIGKILL if still alive; like Docker/systemd; works with --all; preserves mid-task writes/API calls)
+- Restart failed (restart --failed [--dry-run] — bulk-restarts agents whose most recent task exited non-zero; composes with ls --failed triage; --dry-run previews without acting)
+- Verbose version (version --verbose — shows sage version plus bash/jq/tmux versions, SAGE_HOME, agent count, and detected runtime binaries; for bug reports and CI diagnostics)
+- Custom task ID (send --id <custom-id> — assign a user-chosen task ID for easy lookup with result <custom-id>, validated alphanumeric/hyphens/underscores, max 64 chars, rejects duplicates)
+- Output to file (send --output-file <path> — write task output directly to a file, creates parent dirs, works with --json for structured output, ideal for CI pipelines)
+- Ad-hoc task env vars (send --env KEY=VAL — pass environment variables to a single task without modifying agent's persistent env, repeatable, ideal for CI pipelines)
+- Enhanced agent listing (ls -l shows MODEL and LAST_ACTIVE columns; ls --json includes model and last_active fields — see at a glance which agents are stale)
+- Observability (history, info, stats, ls -l/--json, token counting per agent, cost estimation per runtime, efficiency metrics, stats --agent for per-agent stats, stats --since for time-windowed stats, stats --tag <label> for tag-filtered stats, tasks --json for scripting, tasks --status for filtering)
+- Plan orchestrator (plan, wave-based dependency execution)
+- ACP protocol support (persistent sessions)
+- Shell completions (bash/zsh tab-completion for commands, agents, runtimes)
+- Per-command help (sage help <command> — focused usage, flags, and examples for send, create, plan, logs, history, config, memory, context, env, tool, mcp, skill, msg)
+- Swarm patterns (plan --pattern fan-out, pipeline, debate, map-reduce + composable YAML pattern files via plan --run)
+- Dashboard (sage dashboard — agent overview with status, runtime, --json for scripting, --live interactive mode with keyboard shortcuts)
+- File watcher (sage watch — poll-based dir watcher with debounce, triggers agent, runs command, or re-runs plan YAML on file changes)
+- Plan progress visualization (sage plan --show — wave-by-wave task status with color-coded icons)
+- Multi-agent log tailing (sage logs --all [-f] — color-coded interleaved output from all agents, live tail with -f)
+- Log search (sage logs --grep <pattern> — case-insensitive search with color highlighting, works with --all)
+- Log tail control (sage logs --tail <N> — show last N lines instead of default 50, works with --all and --grep)
+- Time-filtered logs (sage logs --since <duration> — show only log lines within a time window: 30m, 2h, 1d, 1w; works with --all, --grep, --tail)
+- Follow + filter (sage logs -f --grep <pattern> --since <duration> — combine live tailing with grep and time filters for real-time filtered log watching)
+- Task completion notification (sage send --notify — ring terminal bell when task finishes, works with --headless/--json/--on-done for audible alerts on long-running tasks)
+- Agent tree view (sage ls --tree — show parent/child agent hierarchy as indented tree with Unicode box-drawing chars, works with --running/--stopped/--runtime filters)
+- Cleanup preview (sage clean --dry-run — preview what would be cleaned with item count, without deleting)
+- Agent checkpoint/restore (sage checkpoint/restore — save and resume agent state across reboots)
+- Session recovery (sage recover — detect and fix orphaned/dead agent sessions after crash or reboot)
+- Plan recovery (sage plan --recover — detect and resume interrupted plans after reboot)
+- Plan validation (sage plan --validate — check plan YAML/JSON structure, fields, and dependency cycles without executing)
+- Local model support (ollama + llama-cpp runtimes — run agents with local models, no cloud API needed)
+- Default result lookup (sage result with no args shows most recent task result by timestamp, no task-id needed)
+- Agent-scoped result (sage result --agent <name> — show most recent result for a specific agent, scopes task-id search to that agent)
+- Branch diff (sage diff <agent> --branch — show all commits and changes on agent's worktree branch vs base, works with --stat for summary)
+- Aggregate diff (sage diff --all — show uncommitted changes across all worktree agents with agent name headers, works with --stat and --cached)
+- Wait all (sage wait --all — block until all running agents finish, prints each agent name on completion, exits 124 on --timeout)
+- Context from file (sage context set <key> --file <path> — load persistent shared context from file, 100KB limit, multiline preserved)
+- Context listing (sage context ls — truncated values >80 chars, byte size per key; sage context ls --json for scripting)
+- Config JSON output (sage config ls --json — machine-readable config for scripting and CI)
+- Trace export (sage trace --json — output filtered trace events as JSON array for scripting, observability, and CI analysis)
+- Trace time filter (sage trace --since <duration> — filter trace events by age: 30m, 2h, 1d, 1w; works with --json, --tree, agent filter, and -n)
+- History task text (sage history shows MESSAGE column with task text preview; task_text stored in status.json for debugging multi-agent workflows)
+- Status active task (sage status shows TASK column with current task text preview for agents with queued/running tasks)
+- Task replay (sage replay [task-id] — re-send a previous task to the same agent; --agent to override target; --dry-run to preview; no args replays most recent task)
+- Task JSON output (sage tasks --json — machine-readable task list for scripting; --status <filter> to show only done/failed/running/queued tasks)- Memory clear preview (sage memory clear <agent> --dry-run — preview count and key names that would be wiped without deleting; safety affordance for destructive op; empty memory reports 0 keys; prevents accidental wipes of persistent per-agent memory)
+- Skill rm preview (sage skill rm <name> --dry-run — preview skill dir path and file count that would be deleted without removing; safety rail on destructive rm -rf of skill directory; errors on missing skill before dry-run check)
+- MCP rm preview (sage mcp rm <name> --dry-run — preview .json path that would be deleted without removing; errors on missing server before dry-run check; completes the dry-run safety pattern across destructive ops: tool rm, skill rm, memory clear, context clear, history --prune)
+- Msg clear preview (sage msg clear <agent> --dry-run — preview count of inter-agent messages that would be wiped without deleting; reports 0 for empty/absent message dir; extends dry-run safety pattern from storage destructive ops to the msg subsystem)
+- Env rm preview (sage env rm <agent> <KEY> --dry-run — preview key removal without modifying env file; reports 'not set' if key absent; extends dry-run safety pattern to the env subsystem, matching tool rm / skill rm / mcp rm / memory clear / context clear / history --prune / msg clear)
+- Alias rm preview (sage alias rm <name> --dry-run — preview alias and expansion ('would remove alias <name> → <expansion>') without modifying aliases.json; errors on missing alias before dry-run check; extends dry-run safety pattern to the alias subsystem, completing coverage across all destructive ops: tool rm / skill rm / mcp rm / env rm / memory clear / context clear / history --prune / msg clear)
+- Memory rm preview (sage memory rm <agent> <key> --dry-run — preview key name and value ('would remove <key> from <agent>: <value>') without deleting the memory file; errors on missing key before dry-run check; complements memory clear --dry-run for per-key (not whole-memory) preview; protects auto-injected per-agent memory that can hold sensitive context/api keys)

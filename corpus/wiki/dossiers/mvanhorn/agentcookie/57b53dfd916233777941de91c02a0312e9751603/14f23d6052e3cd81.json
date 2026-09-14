@@ -1,0 +1,838 @@
+{
+  "applied_operation_id": "op_507b7ee63ad34e088f0d46f3ea6a9bfb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_883b948f84a528007a60465948774ffebb85547487ba73c9af168c262550a91f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 52,
+          "line_start": 51,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L51-L52"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 60,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L59-L60"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 57,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L40-L57"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32ee6e2adef4b4297fa041d46cad2d8ff7177640f943624e7fd35194902d77c2",
+        "slc_6a18889519f16d6d336617e3d4c8d6bebbb7a27f73489abbb5454d91c367a133",
+        "slc_6f933d0d58724d97d18f4c7e559f6e4bdba0907567a5a5b8c6e10f1c9622d6bc",
+        "slc_8bad1f207eb655ae71f940ec4b8a882c8ba0e49f35acc94117e6a3b92431a7a5"
+      ],
+      "text": "On Linux the sink injects cookies directly into Chrome's in-memory store via the Chrome DevTools Protocol (Storage.setCookies) instead of rewriting Chrome's SQLite, and Chrome must be started with a remote-debugging port such as 9223."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_91834bd6d42db94bc7be4e4c04a3ffd9aa54c988570999df7e25a41d21e6b36b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 116,
+          "line_start": 108,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L108-L116"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 104,
+          "line_start": 100,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L100-L104"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 72,
+          "line_start": 62,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L62-L72"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36e44491d7f49bedc881916d8a13c7f452462dc9499cacd65a6b1e7044ad42d1",
+        "slc_60b5227ed191ade19bd47fcc3963926b2e561b13062f84528f663bf5930fbb71",
+        "slc_aaafdff3b3b7c61fc1ad476c7f1226e136b2afcb04d728023c584ef16b99dcbd",
+        "slc_d5edea7563807b7a409e7ee6bc4335c94fde75d6485d97b078245b7b2aeb575e"
+      ],
+      "text": "Cookies are sealed with AES-GCM using per-peer keys derived from an X25519 + HKDF pairing handshake in which the pairing code is mixed into the HKDF salt; key files are stored mode 0600."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_856e0652a55416bf71836e48d841e20d891b59ab0ea81d7d9fa4afa804896462",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 96,
+          "line_start": 89,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L89-L96"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 116,
+          "line_start": 108,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L108-L116"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 85,
+          "line_start": 76,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L76-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2258385578b48c7198800f1b832380203448861f90fb03795f1b333884106b15",
+        "slc_36e44491d7f49bedc881916d8a13c7f452462dc9499cacd65a6b1e7044ad42d1",
+        "slc_b754624343542ffdc086eff87a61d69805a290bf76cd7c805cc61d4fd398d2c4"
+      ],
+      "text": "The sync protocol carries a versioned SyncEnvelope with a monotonic Sequence; the sink rejects wrong keys with 401, version mismatches with 400, and replays via an in-memory SequenceTracker with 409."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bdbef00468a7bee0142a460ce108d9509a632462ac71580b6fcee6f34f3ba592",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 246,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L246-L246"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 236,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L236-L236"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 58,
+          "line_start": 54,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L54-L58"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5fa6ff8e144de57221788c959f7b11b59e70e5cc",
+          "line_end": 166,
+          "line_start": 165,
+          "path": "docs/consumption.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/consumption.md#L165-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1968cc094d1efd9d2d0452edd16d833224a30f066f764c5b44ece220e54bab70",
+        "slc_60a609b63115ff4fde34fbfa01e059eece091afddeec8806c7049f74e78d5ffa",
+        "slc_76050c1b47535b02b3ea22addc55047afa4f39c5cb88c8f57df1acdd2c2d294a",
+        "slc_fef0e04909089f39e2138d2f7bf0f1ec4825035c86f9a65d5b6cc861391614ca"
+      ],
+      "text": "On Linux, a missing blocklist.yaml or omitted policy field means the sink ships nothing (allowlist-empty) as a security default; sync-all requires an explicit blocklist policy with an empty domains list, described as an operator choice rather than the code default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_64e50074d85103060014dfd2e404f3e16bc8ddc9960953cf5e4abbb269b2dbcc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 106,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L104-L106"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 52,
+          "line_start": 51,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L51-L52"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5fa6ff8e144de57221788c959f7b11b59e70e5cc",
+          "line_end": 110,
+          "line_start": 109,
+          "path": "docs/consumption.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/consumption.md#L109-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dcea1f5d673ac6fc2889fe4d8bc17605610b812a210adb25c489afe48dadb80",
+        "slc_32ee6e2adef4b4297fa041d46cad2d8ff7177640f943624e7fd35194902d77c2",
+        "slc_42ec2c7d0ea9cd3953c6866db42248a2b2be17801f09fdf1a88a7acfd38b64fb"
+      ],
+      "text": "The product requires Tailscale and Chrome on both machines, and the Linux sink must bind a Tailscale 100.x address, refusing to start without the tailnet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e5b51b9f28b3198359239f7bf0607ffac6d2ad00667c36b734e911c0270ef58",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 335,
+          "line_start": 328,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L328-L335"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 309,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L309-L309"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L5-L5"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 305,
+          "line_start": 305,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L305-L305"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e4c9655f36969f3e39cb866d662426f51fbbba71108990b47a3c9aedf543236",
+        "slc_9d3128955e3889ca1ac8c35bc5cd62b1706be3cf5fd20071f05041eaf67870ed",
+        "slc_b07188b4889f2171d39897849fe584a53be4ace411cbdcea2da796054403fb69",
+        "slc_ef699c9513d2db0fdb4e9450782d7be672a4e05b624504023017061a32c441d3"
+      ],
+      "text": "Chrome's DBSC binds Google/Workspace sessions to device keys, so copied cookies for such sites stop working within minutes; the documented workaround is signing the sink's Chrome into the same Google account locally."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7256e87791e180d626c0c934abb3abb1ec3b4dc5357f284109e1efaad611ee31",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 335,
+          "line_start": 328,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L328-L335"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e4c9655f36969f3e39cb866d662426f51fbbba71108990b47a3c9aedf543236"
+      ],
+      "text": "Documented limits include a plaintext-at-rest sidecar at ~/.agentcookie/cookies-plain.db, a loopback-only CDP port that same-user processes can read, no live key rotation (wizard re-run required), and unread Linux extra-profile Chrome SQLite."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4ebb241bef483db16875c3200ded1bc1161a8e5fda6c40278524e8292397151",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 301,
+          "line_start": 301,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L301-L301"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 277,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L277-L277"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_275ca68091456a66b7fd1e4b972cf16e6226ae119543aa3b1f34e1dd030eef3b",
+        "slc_4cd8a4ac1c4748f54d6d57fb94a3be325420c7bae985eba559fd7c02126847c9"
+      ],
+      "text": "One source can fan out to multiple sinks, reading and filtering cookies once then sealing and POSTing to each sink with that sink's own paired key; an unreachable sink fails in isolation, and every sink receives the full cookie and secret set."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_217080b97abe02d053cebc2bc97c0b61f0e170fc479bf358fb0fbb352db7e033",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+          "line_end": 72,
+          "line_start": 62,
+          "path": "docs/architecture.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md#L62-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aaafdff3b3b7c61fc1ad476c7f1226e136b2afcb04d728023c584ef16b99dcbd"
+      ],
+      "text": "The architecture doc lays out Go packages including cmd/agentcookie (cobra CLI), internal/cli, internal/chrome, internal/transport, internal/config, internal/pairing, internal/keystore, internal/protocol, and internal/cdp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d6fc2d31418ac32fc0e08e547f64d2584594935ea06f01db111b7b5f0cddc09",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+          "line_end": 324,
+          "line_start": 317,
+          "path": "README.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md#L317-L324"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cb133efc3d83be2ba4232b0a19413f275233807a399e98fbc5f8eade3e264d51"
+      ],
+      "text": "Repository development practice: the README's working-today list cites 520+ unit tests across 26 packages, a repository test-suite figure rather than any agent-performance evaluation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3bdfe49a653f7efc4f6a54cba39d3e4fecc418e0f7d60b0923ac74172adbea4a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "7678ef4de1b6df25f41e9e713687874fa73bc1f4",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "docs/dry-run-2026-05-19.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/dry-run-2026-05-19.md#L26-L26"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "7678ef4de1b6df25f41e9e713687874fa73bc1f4",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/dry-run-2026-05-19.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/dry-run-2026-05-19.md#L32-L32"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "7678ef4de1b6df25f41e9e713687874fa73bc1f4",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "docs/dry-run-2026-05-19.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/dry-run-2026-05-19.md#L20-L20"
+        },
+        {
+          "commit": "57b53dfd916233777941de91c02a0312e9751603",
+          "git_sha": "7678ef4de1b6df25f41e9e713687874fa73bc1f4",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "docs/dry-run-2026-05-19.md",
+          "repository": "mvanhorn/agentcookie",
+          "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/dry-run-2026-05-19.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56815bfbc7ece974dd19d3f7a4a632fc0de0a06725d8fc2b3f4cde477c11b819",
+        "slc_77c38d1d7aa5ac76e4b1c4e71e5aa9de75bbae979b56a33686971a12377b14bd",
+        "slc_ada2af1e90f5eb96dfad44713c742f005989725163c18722f2ac79520fbd5cb4",
+        "slc_e42454c9820b6136f8af0687cc164145b56ea9efb237209dfb5c596e5ef07514"
+      ],
+      "text": "A recorded 2026-05-19 dry run of the closed-beta installer on a clean Mac mini concluded it was not ready for the first invite, citing blockers including broken tarball extraction, missing --code/--pair-url passthrough, and a key-file hostname mismatch that silently broke syncing."
+    }
+  ],
+  "commit": "57b53dfd916233777941de91c02a0312e9751603",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 358,
+        "path": "README.md",
+        "size": 14736
+      },
+      {
+        "lines": 118,
+        "path": "docs/architecture.md",
+        "size": 8131
+      },
+      {
+        "lines": 211,
+        "path": "docs/consumption.md",
+        "size": 7577
+      },
+      {
+        "lines": 93,
+        "path": "docs/dry-run-2026-05-19.md",
+        "size": 11180
+      },
+      {
+        "lines": 96,
+        "path": "docs/dry-run-2026-05-21.md",
+        "size": 7611
+      },
+      {
+        "lines": 100,
+        "path": "docs/faq.md",
+        "size": 8720
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/protocol.md",
+        "reason": "file-budget",
+        "size": 5445
+      },
+      {
+        "path": "docs/quickstart-beta.md",
+        "reason": "file-budget",
+        "size": 9951
+      },
+      {
+        "path": "docs/quickstart.md",
+        "reason": "file-budget",
+        "size": 5072
+      },
+      {
+        "path": "docs/runbook-adoption-manifest-author.md",
+        "reason": "file-budget",
+        "size": 5805
+      },
+      {
+        "path": "docs/runbook-agent-sync.md",
+        "reason": "file-budget",
+        "size": 3376
+      },
+      {
+        "path": "docs/runbook-secrets-bus-adoption.md",
+        "reason": "file-budget",
+        "size": 8020
+      },
+      {
+        "path": "docs/runbook-secrets-bus-gh-example.md",
+        "reason": "file-budget",
+        "size": 5143
+      },
+      {
+        "path": "docs/runbook-v0.10-keychain-access.md",
+        "reason": "file-budget",
+        "size": 5960
+      },
+      {
+        "path": "docs/runbook-v0.11-adapter-cookie-push.md",
+        "reason": "file-budget",
+        "size": 5895
+      },
+      {
+        "path": "docs/runbook-v0.12-codesign.md",
+        "reason": "file-budget",
+        "size": 9086
+      },
+      {
+        "path": "docs/runbook-v0.12-security-hardening.md",
+        "reason": "file-budget",
+        "size": 6307
+      },
+      {
+        "path": "docs/runbook-v0.13-one-password-keychain.md",
+        "reason": "file-budget",
+        "size": 8071
+      },
+      {
+        "path": "docs/runbook-v0.9-soup-to-nuts.md",
+        "reason": "file-budget",
+        "size": 3701
+      },
+      {
+        "path": "docs/spec-agentcookie-secrets-bus-v1.md",
+        "reason": "file-budget",
+        "size": 34769
+      },
+      {
+        "path": "docs/spec-agentcookie-secrets-bus-v2-adoption.md",
+        "reason": "file-budget",
+        "size": 25645
+      },
+      {
+        "path": "docs/threat-model.md",
+        "reason": "file-budget",
+        "size": 14044
+      },
+      {
+        "path": "docs/audits/2026-05-22-pp-cli-auth-inventory.md",
+        "reason": "file-budget",
+        "size": 29255
+      },
+      {
+        "path": "docs/handoff-guides/for-last30days-team.md",
+        "reason": "file-budget",
+        "size": 5622
+      },
+      {
+        "path": "docs/handoff-guides/for-printing-press-team.md",
+        "reason": "file-budget",
+        "size": 8402
+      },
+      {
+        "path": "docs/plans/2026-05-21-001-feat-headless-sink-click-free-plan.md",
+        "reason": "file-budget",
+        "size": 30241
+      },
+      {
+        "path": "docs/plans/2026-05-22-001-feat-marketing-readme-rewrite-plan.md",
+        "reason": "file-budget",
+        "size": 14719
+      },
+      {
+        "path": "docs/plans/2026-05-22-002-feat-secrets-bus-plan.md",
+        "reason": "file-budget",
+        "size": 42076
+      },
+      {
+        "path": "docs/plans/2026-05-22-003-feat-secrets-bus-adoption-standard-plan.md",
+        "reason": "file-budget",
+        "size": 53748
+      },
+      {
+        "path": "docs/plans/2026-05-23-001-feat-readme-scope-refresh-plan.md",
+        "reason": "file-budget",
+        "size": 10760
+      },
+      {
+        "path": "docs/plans/2026-05-31-001-feat-generic-consumption-bridge-plan.md",
+        "reason": "file-budget",
+        "size": 19731
+      },
+      {
+        "path": "docs/plans/2026-05-31-004-feat-one-password-keychain-onboarding-plan.md",
+        "reason": "file-budget",
+        "size": 23117
+      },
+      {
+        "path": "docs/plans/2026-05-31-005-fix-universal-delivery-launch-blocker-plan.md",
+        "reason": "file-budget",
+        "size": 28898
+      },
+      {
+        "path": "docs/plans/2026-05-31-006-docs-readme-web-universal-delivery-plan.md",
+        "reason": "file-budget",
+        "size": 11633
+      },
+      {
+        "path": "docs/plans/2026-05-31-007-feat-tesla-agentcookie-manifest-plan.md",
+        "reason": "file-budget",
+        "size": 15361
+      },
+      {
+        "path": "docs/plans/2026-05-31-008-feat-tesla-agentcookie-everyone-plan.md",
+        "reason": "file-budget",
+        "size": 26641
+      },
+      {
+        "path": "docs/plans/2026-06-03-001-feat-cmux-cookie-delivery-surface-plan.md",
+        "reason": "file-budget",
+        "size": 20462
+      },
+      {
+        "path": "docs/plans/2026-06-03-002-feat-cmux-local-loop-plan.md",
+        "reason": "file-budget",
+        "size": 17540
+      },
+      {
+        "path": "docs/plans/2026-06-03-003-feat-cmux-default-on-plan.md",
+        "reason": "file-budget",
+        "size": 18381
+      },
+      {
+        "path": "docs/plans/2026-08-13-1515-feat-chrome-extra-profile-discovery-plan.md",
+        "reason": "file-budget",
+        "size": 13584
+      },
+      {
+        "path": "docs/plans/2026-08-13-1720-feat-readme-howto-release-plan.md",
+        "reason": "file-budget",
+        "size": 8357
+      },
+      {
+        "path": "docs/plans/2026-08-13-2206-fix-pp-cli-toml-secrets-carriage-plan.md",
+        "reason": "file-budget",
+        "size": 22865
+      },
+      {
+        "path": "docs/plans/2026-09-09-1436-feat-multi-sink-cookie-fanout-plan.md",
+        "reason": "file-budget",
+        "size": 26237
+      },
+      {
+        "path": "docs/research/chrome-144-remote-debugging.md",
+        "reason": "file-budget",
+        "size": 11866
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 32558
+      }
+    ],
+    "omitted_count": 39,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 297,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 45,
+      "complete": false,
+      "omitted": 39,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2394f2bff786534d8488b3eaeb8ec6df",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 3,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/mvanhorn/agentcookie/57b53dfd916233777941de91c02a0312e9751603/14f23d6052e3cd81/manifest.json",
+  "package_id": "pkg_286371809b19d2ec1152b232836fa07380fd6d2fc8634e797913f939faebfb32",
+  "repo": "mvanhorn/agentcookie",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "782ae7c53d210611f1e4b6ee7523cab80b471a877787170f230358ee4fbf5af7",
+  "snapshot_id": "14f23d6052e3cd81",
+  "sources": [
+    {
+      "commit": "57b53dfd916233777941de91c02a0312e9751603",
+      "git_sha": "99ccbc2ea83b82528e59b6c14c853493b5a29732",
+      "lines": 358,
+      "path": "README.md",
+      "repository": "mvanhorn/agentcookie",
+      "sha256": "e97053085cc05017d5b4acfc67eaaef0107a4d45874d00207a95c41e152a0497",
+      "source_id": "src_e274ec2eb4135ca694d54c11b952f1f9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/README.md"
+    },
+    {
+      "commit": "57b53dfd916233777941de91c02a0312e9751603",
+      "git_sha": "5637142e6bca9f80a5715aa013b628f0cab902bb",
+      "lines": 118,
+      "path": "docs/architecture.md",
+      "repository": "mvanhorn/agentcookie",
+      "sha256": "f1a0e5a0cf50e9421bf125da80b965c39e7663e38c78df87d0a0e2690d5d27c7",
+      "source_id": "src_aa0a3da2a74b5c549a74b52329b95a00",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/architecture.md"
+    },
+    {
+      "commit": "57b53dfd916233777941de91c02a0312e9751603",
+      "git_sha": "5fa6ff8e144de57221788c959f7b11b59e70e5cc",
+      "lines": 211,
+      "path": "docs/consumption.md",
+      "repository": "mvanhorn/agentcookie",
+      "sha256": "604af6e255c50e57a616eb516cbf134286d618fafc0108efd6f41dee43d1e56a",
+      "source_id": "src_55dfcec9a5085a97866e4ed74cec5710",
+      "stored": "consumption.md-e855e710ced6.md",
+      "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/consumption.md"
+    },
+    {
+      "commit": "57b53dfd916233777941de91c02a0312e9751603",
+      "git_sha": "7678ef4de1b6df25f41e9e713687874fa73bc1f4",
+      "lines": 93,
+      "path": "docs/dry-run-2026-05-19.md",
+      "repository": "mvanhorn/agentcookie",
+      "sha256": "360b1068a221d337c1c64bca7eb9762ecbcefbf97ab4b7b791e0affce7c41cbb",
+      "source_id": "src_63778faccc16571dab3447172b8e5978",
+      "stored": "dry-run-2026-05-19.md-20df401e42a2.md",
+      "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/dry-run-2026-05-19.md"
+    },
+    {
+      "commit": "57b53dfd916233777941de91c02a0312e9751603",
+      "git_sha": "7f531491698302cf38b7fd0f69deffe065bede1b",
+      "lines": 96,
+      "path": "docs/dry-run-2026-05-21.md",
+      "repository": "mvanhorn/agentcookie",
+      "sha256": "fde8af6615ab847a56d72e62237bed1f32f5af3994f5b6fe3fd716e6f78b3748",
+      "source_id": "src_28083275121157a486536ba06239ddb6",
+      "stored": "dry-run-2026-05-21.md-bc6563b1e970.md",
+      "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/dry-run-2026-05-21.md"
+    },
+    {
+      "commit": "57b53dfd916233777941de91c02a0312e9751603",
+      "git_sha": "2b2c2e2236751df49a7da8ee3f352d1ae9c4bce0",
+      "lines": 100,
+      "path": "docs/faq.md",
+      "repository": "mvanhorn/agentcookie",
+      "sha256": "addc134a6f3d397a090d1250bdb7ae5e883e778a5c9da2466cacdec1293706c4",
+      "source_id": "src_c840b75f6ae75b4488a698ad7c461d33",
+      "stored": "faq.md-57cdcc6b6701.md",
+      "url": "https://github.com/mvanhorn/agentcookie/blob/57b53dfd916233777941de91c02a0312e9751603/docs/faq.md"
+    }
+  ],
+  "summary": "Selected evidence records: On Linux the sink injects cookies directly into Chrome's in-memory store via the Chrome DevTools Protocol (Storage.setCookies) instead of rewriting Chrome's SQLite, and Chrome must be started with a remote-debugging port such as 9223. Cookies are sealed with AES-GCM using per-peer keys derived from an X25519 + HKDF pairing handshake in which the pairing code is mixed into the HKDF salt; key files are stored mode 0600.",
+  "superseded_claim_ids": []
+}

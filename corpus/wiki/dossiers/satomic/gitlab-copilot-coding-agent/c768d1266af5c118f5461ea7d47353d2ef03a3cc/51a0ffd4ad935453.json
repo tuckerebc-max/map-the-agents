@@ -1,0 +1,709 @@
+{
+  "applied_operation_id": "op_fb4725da58bb4ac9aef826da9c667b40",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_43632538e87cec24e44c80e7b40a36822cd97a9d653fbbd36dea38738c19f99d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8db0e38fc19322d3ce87c1cd3b02f1ab96152df97e944ed19f224d4279d99717"
+      ],
+      "text": "Described as a fully automated coding agent powered by GitHub Copilot CLI and GitLab CI/CD, enabling autonomous code implementation and code review via issue assignments, MR comments, and reviewer assignments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4345d6750b6d14407d424b5bfe1012c2eff0595532f85e5cc041928504c6144",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L62-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d8d4830af01ad245ccfd3a6bebd086db64d7ddea54f3c4d76281e3e98833c6a"
+      ],
+      "text": "Three components are documented: the app repository, a Flask-based webhook relay service that captures GitLab events, and the Copilot Coding Agent repository acting as a CI/CD orchestrator."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72536333c7c793ba870a4ba4be0d1bf872fb64e0d504f0033f8873bd1d40dbc4",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 38,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L34-L38"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 32,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L26-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_039deffc13f3a62d60a8f19643d5ed2046abe4f0aef91cde392896339203f781",
+        "slc_4198c96962da46a442fd6d99d58a42498bab26cf8a8cdc230be28e57422e9d84"
+      ],
+      "text": "GitLab events trigger a webhook to a Flask service, which validates and extracts pipeline variables and triggers a CI/CD pipeline via the GitLab API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e6851815c2ce30f189a35140e5f9a100621090323206c0133ec883dd69f342b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 32,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L26-L32"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 49,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L40-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4198c96962da46a442fd6d99d58a42498bab26cf8a8cdc230be28e57422e9d84",
+        "slc_c61c6fbf434edc9fdadac7a334425d4bd6fa4273e466a1385e4cd31edfb5e41b"
+      ],
+      "text": "Three trigger interfaces are supported: assigning an issue to Copilot, commenting @copilot-agent in an MR, and assigning Copilot as an MR reviewer; each maps to a distinct workflow (issue, mr_update, mr_review)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9403cd0b695475c6d2b96b8d8a1985f786158ec68fa5299a7a865523839c1627",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 73,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L68-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e67c1686974dae603d3a357949384207783be7a8e8c495df5da9cb1a613f76ff"
+      ],
+      "text": "The issue assignment workflow proceeds: acknowledge issue, generate TODO plan, create MR, implement code, push changes, then update MR and issue."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_440ed5900c4740f3c390a655c43ea9b937adace09b9c422d03665c6526c300a1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 80,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L75-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47d284e2193a8f7230976bba72f36259ea8629365d2ee79b600d24125cbe5e07"
+      ],
+      "text": "The MR note workflow handles quick updates: a comment triggers the pipeline, the agent acknowledges, implements changes, pushes to the source branch, and posts a summary comment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d121a1e6e67f340b74b3c93ceb145b7eeb44207fafa79dbdb17212231740dac",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 87,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L82-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61ed4f0fae233572c56f2896b7306b9e7040c03dea77b2d9bfab0b3787cbc865"
+      ],
+      "text": "The MR reviewer workflow performs code review: acknowledge, analyze code changes, perform a comprehensive review, and post a detailed review comment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34d98dff602041712f0da0f8860ef2215c02baad62c1f40b10fd63d0eed944aa",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 95,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L92-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d2a5149a75118d74793d53dce7f6d60c17607fa9ceef6a62c3dd8106245d318"
+      ],
+      "text": "Required tools include a GitLab account with API access, a GitLab Runner with Docker/Kubernetes executor, GitHub Copilot CLI access with subscription, and optionally Docker for the webhook service."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b600718a0bf4d4355fd2ef5d8fdacd99ae51e13550758ff37ea3992c8415de7e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 103,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L98-L103"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 154,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L150-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a3e943dcffc1a0be1c37165dcb6e93ff99dd77a7404d094d32d98660dda2be9",
+        "slc_f445ab10b91619e726d9f543f3a28b16bb5dbd3370e553781da51bb1e254d410"
+      ],
+      "text": "The runtime requires a GitLab personal access token with api, read_repository, and write_repository scopes, plus a GITHUB_TOKEN fine-grained PAT with the Copilot Requests permission."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d589d239ecadb56a6ad6176c4add302ca480e84a80ff6bcac35eddb276f8bb2e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 197,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L182-L197"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b4dca17f8e38457f4c67a46a4d9e49cf0d261adf7d87aa725c386ee7f5c7ca33"
+      ],
+      "text": "The webhook service is configured via environment variables including PIPELINE_TRIGGER_TOKEN, PIPELINE_PROJECT_ID, WEBHOOK_SECRET_TOKEN, COPILOT_AGENT_USERNAME, LISTEN_HOST/PORT, ENABLE_INLINE_REVIEW_COMMENTS, and COPILOT_LANGUAGE."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4b1d90f39e1985ac74d7012b09b3c9e31020172bca4200bf62f688c3b292dd2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 302,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L302-L302"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d3e5f8e7a19f735fbb44cb640360d0d52d67a95f30a4da747e32c2a78911e0c"
+      ],
+      "text": "If a merge request already exists for an issue, the agent detects it and posts a notification asking the user to continue in the existing MR rather than creating a duplicate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_274d9c5bc685894d98202309a89da6715ab58f2a758c6c6e4c68c93fac071d4b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 351,
+          "line_start": 347,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L347-L351"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c3d08e8cc93e512611530877f9452e859f2c85b3f1c3e62e2a25cdb1a231987"
+      ],
+      "text": "The review report includes an overall assessment, issues categorized by severity (Critical, Major, Minor, Suggestions), file locations with fix recommendations, and a final recommendation of APPROVE, REQUEST_CHANGES, or NEEDS_DISCUSSION."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f725a17c68aa85dd29a37d6f0b2ef9794fe80fc6a2342b7e45ed786a4cd43f8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 382,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L377-L382"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44bc9be20d5e391ed0fa6d48f5f52e74b63ea3588b7cf7a1650d8d9772f509e8"
+      ],
+      "text": "Intermediate execution files such as patch_raw.txt, todo.md, plan.json, commit_msg.txt, and mr_summary.txt are generated during runs but excluded from commits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1977c01e07b5b1436c7bee93d36b24c13b51256357834247cecf52c9e327f1a8",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 14,
+          "line_start": 9,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L9-L14"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 110,
+          "line_start": 106,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L106-L110"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L104-L104"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 100,
+          "line_start": 20,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L20-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05282b356c89c93a4a4ed2dc297d7af215d50c55b8606736a3b98ae9760ee065",
+        "slc_065ad08a0b0afcfd6855c734b013ca920077c0e8793b77b0447576726d4db6fc",
+        "slc_2b06b3467e32b7feac76c00c781d51e104b02a7cc5049ac3fd2c5dda31663838",
+        "slc_7439f438ed40aec87c0cf38c1915ca8063da26da9abc77acac0f50dcdd965e82"
+      ],
+      "text": "Prompt templates are organized per language (en, zh, ja, hi, ko, th) under prompts/ directories, with a scripts/load_prompt.sh loader that selects language via COPILOT_LANGUAGE and falls back to English."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_353a722eed04348ada31e670ce124f7e38c530ecec07f3b641d1b0765dd6112b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 110,
+          "line_start": 106,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L106-L110"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L218-L218"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 318,
+          "line_start": 318,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L318-L318"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_065ad08a0b0afcfd6855c734b013ca920077c0e8793b77b0447576726d4db6fc",
+        "slc_20fa5eefcd2067443838ea76cc4b2c0e5ecc06183fb0484a4b0f9744f7ba828c",
+        "slc_bf3fdd82d46d37dc7cf588cd23c03578248a29fd9684ef402dee69680ee9a5fc"
+      ],
+      "text": "The prompt loader supports template variable substitution using {variable_name} syntax, accepting variables from environment or arguments, with Python-based safe substitution for special characters and emojis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7304bf37728c311a589239b04da7353396c380af3a88003280fef7bf7130ede",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 167,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L165-L167"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 176,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L174-L176"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 178,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L178-L178"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d8b140110b3e2bdfdedf76d49396675fff8f5e13d36b3daef3aafd0dda122a7",
+        "slc_5e219b46fcf6a0e1c57e7d256cb61a3aa17bc9b05b73440bc4b8a2446150f98b",
+        "slc_fae7b7e2133d1b96d84c45f78e951216a30a404e2a4c31b74cd9a84792961927"
+      ],
+      "text": "CI/CD execution uses a Docker image satomic/copilot-cli:latest with GitHub Copilot CLI installed and authentication pre-configured to read the GITHUB_TOKEN environment variable; users may alternatively build their own image."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c51d71c880f0159a7ee75efc8a0340e83e96d317bf2d1cd2ae8fd3e91fae572",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 235,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L230-L235"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+          "line_end": 223,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md#L206-L223"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4274fa25c337fbbcf01517ea753438264d55f732383b4a025b3940539746514b",
+        "slc_aba5bb908ef524f8981957fdee975f46d5ce86a6070c7fef2e6d3f6289d94067"
+      ],
+      "text": "The webhook service can run as a Docker container (satomic/gitlab-copilot-coding-agent-hook:latest, port 8080) or from source via python3 main.py, exposing a /webhook endpoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1626cc95090f2e367a7d996c268861164d4a1142daeb9a0247156a54d9141e2e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 325,
+          "line_start": 322,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L322-L325"
+        },
+        {
+          "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+          "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+          "line_end": 264,
+          "line_start": 264,
+          "path": "I18N_README.md",
+          "repository": "satomic/gitlab-copilot-coding-agent",
+          "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md#L264-L264"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c718a6aad865594f00f8874f1df999f402a7482ccc970ac17789b6f64383736",
+        "slc_49b3147cfc192a614f567593bc5d1f16912cba29a7a5fe9439ecc3ec1cc11590"
+      ],
+      "text": "The i18n documentation lists future enhancements including dynamic language detection from GitLab user preferences, language-specific formatting rules, and automated template validation; UI message localization is marked optional."
+    }
+  ],
+  "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 398,
+        "path": "README.md",
+        "size": 15671
+      },
+      {
+        "lines": 325,
+        "path": "I18N_README.md",
+        "size": 9002
+      },
+      {
+        "lines": 2,
+        "path": "requirements.txt",
+        "size": 30
+      },
+      {
+        "lines": 398,
+        "path": "docs/README_AR.md",
+        "size": 20037
+      },
+      {
+        "lines": 404,
+        "path": "docs/README_CN.md",
+        "size": 14988
+      },
+      {
+        "lines": 398,
+        "path": "docs/README_HI.md",
+        "size": 28071
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/README_JA.md",
+        "reason": "file-budget",
+        "size": 18933
+      },
+      {
+        "path": "docs/README_KO.md",
+        "reason": "file-budget",
+        "size": 16829
+      },
+      {
+        "path": "docs/README_TH.md",
+        "reason": "file-budget",
+        "size": 26560
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 128,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 3,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_4df4dad990c657cab9ba59ad862ae91d",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/satomic/gitlab-copilot-coding-agent/c768d1266af5c118f5461ea7d47353d2ef03a3cc/51a0ffd4ad935453/manifest.json",
+  "package_id": "pkg_b4618b1bbce2dd51f9effd060c04edc90debe06a1b2d1cecebad1ccb4673f21f",
+  "repo": "satomic/gitlab-copilot-coding-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "98025d58451bef37644130e81cf41d6fd13d3913a1ba6b909c77b0bdea45a891",
+  "snapshot_id": "51a0ffd4ad935453",
+  "sources": [
+    {
+      "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+      "git_sha": "2943a7d6054555454c120777193a7901814befcb",
+      "lines": 325,
+      "path": "I18N_README.md",
+      "repository": "satomic/gitlab-copilot-coding-agent",
+      "sha256": "3b56a65c328909f46bf5bbbb9583b578b2f132713ea33237c29f53738f770fd0",
+      "source_id": "src_bfe3843cead35ffaa6244197a9d66247",
+      "stored": "i18n_readme.md-865009ca3122.md",
+      "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/I18N_README.md"
+    },
+    {
+      "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+      "git_sha": "6a8cb8d78e545c543db0ab1593515d9be8f25daa",
+      "lines": 398,
+      "path": "README.md",
+      "repository": "satomic/gitlab-copilot-coding-agent",
+      "sha256": "e735d05cbe19a688ad44d10f622d58c80c8f0f0bdaebfb825494c601caa368ea",
+      "source_id": "src_a3728f42523853ac8dd20bd602915066",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/README.md"
+    },
+    {
+      "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+      "git_sha": "f1e5555b529a060aee29b92f2a8bf15d57fbe4c7",
+      "lines": 398,
+      "path": "docs/README_AR.md",
+      "repository": "satomic/gitlab-copilot-coding-agent",
+      "sha256": "c0217f67f62bd72091de1bbca11207896fe5047b652e33d63f6128e9d7602aa7",
+      "source_id": "src_02bb6bb078af5a0fb8aaa7abc4d38c23",
+      "stored": "readme_ar.md-94f074633c7c.md",
+      "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/docs/README_AR.md"
+    },
+    {
+      "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+      "git_sha": "98aee5aa572eafcb05aeb7f40aa454b1d93a1e47",
+      "lines": 404,
+      "path": "docs/README_CN.md",
+      "repository": "satomic/gitlab-copilot-coding-agent",
+      "sha256": "a15e68b41f9b994ce3f4904b29eaa0d228c55cb1b5d53a6652f3d730acbb6908",
+      "source_id": "src_6bc1fdca753152e39b2a0dce504f443f",
+      "stored": "readme_cn.md-1cfbee3bb872.md",
+      "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/docs/README_CN.md"
+    },
+    {
+      "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+      "git_sha": "f63805db55b0b3ab5aad4dabec143b27e714aa98",
+      "lines": 398,
+      "path": "docs/README_HI.md",
+      "repository": "satomic/gitlab-copilot-coding-agent",
+      "sha256": "e12e0555c575d1d85c11411ed72050b0497986faeb87943ee798800e2d26f027",
+      "source_id": "src_15b69ba2b5c75c499c98680cdb6c503c",
+      "stored": "readme_hi.md-0e9077734124.md",
+      "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/docs/README_HI.md"
+    },
+    {
+      "commit": "c768d1266af5c118f5461ea7d47353d2ef03a3cc",
+      "git_sha": "eab2b35b097f5663376c8c16d33b15a3bb648fbc",
+      "lines": 2,
+      "path": "requirements.txt",
+      "repository": "satomic/gitlab-copilot-coding-agent",
+      "sha256": "70ffb26273dbff4ed6dedb4833d43230736dbb64faf51af03589a0da145fbe29",
+      "source_id": "src_9dc7901b6a5451b68ec2af04a0abd12a",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/satomic/gitlab-copilot-coding-agent/blob/c768d1266af5c118f5461ea7d47353d2ef03a3cc/requirements.txt"
+    }
+  ],
+  "summary": "The evidence (README.md and I18N_README.md) documents a GitLab-based coding agent that relays issue/MR events through a Flask webhook service to CI/CD pipelines running GitHub Copilot CLI, with three workflows (issue assignment, MR note updates, MR review) and multilingual prompt templates. Evidence coverage: 149 of 302 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

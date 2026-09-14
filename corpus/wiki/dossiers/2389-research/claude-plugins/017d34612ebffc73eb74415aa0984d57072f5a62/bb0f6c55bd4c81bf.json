@@ -1,0 +1,1029 @@
+{
+  "applied_operation_id": "op_a67d5047774e4ae09777c5a0106f2425",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6958916bfa90d723cf5f585a5c3c6b0fe08bcc8f6e2211dfec689a95f558e77c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L6-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52ca2d5742c694de9df1423c2c105424affdc456d78f86d9bbd3996847d2dde2"
+      ],
+      "text": "The repository is a marketplace of 28 plugins and MCP servers for Claude Code covering parallel exploration, iterative refinement, binary reverse engineering, and structured decision-making."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_30d3b35379f60d8f0917647627dcfc8073b0a1728cb175477537cf0a191f75df",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L14-L14"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 18,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L16-L18"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "ae43208a68cfb3c04876d58e11bc15184551431d",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "docs/index.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/index.md#L9-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32a3d834eccf1403849aaa227e08b1896a52b7ef4d14fb9d6774142682dc0a03",
+        "slc_3d786320a7453de350c059134fde820973a9fc461e2f0d3b56a11500df1442fa",
+        "slc_ba2695395e5a8c96e7087b38a2930f31e40689c22aef424bf8d880e3e52511fb"
+      ],
+      "text": "Plugins can be installed in any agent (Claude Code, Cursor, Codex) via vercel-labs/skills using 'npx skills add 2389-research/<plugin>'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3bc70f454faed6412c3f84621b845dc5f4b8289c4991103006c79d7b7ee1867",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L24-L26"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "0cf18aca183c5fb6ecc1bb7cf969e0408f3fedca",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "docs/llms.txt",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/llms.txt#L15-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c84f7cd8d10f9be7cb80d1b3cac142e6ed09d95298f0db32d5eb919d38468192",
+        "slc_f4e5d148400aeda68356d2613c1bbe1f63c17ba51b5d7e35f4e04fcf1c58fa2c"
+      ],
+      "text": "Native Claude Code installation uses '/plugin marketplace add 2389-research/claude-plugins' followed by '/plugin install <plugin>@2389-research'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd0894890cdff7c2bd4f24dffd90a58ddfb4d6e45efd76fd2db1a788a48bd8fb",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ca3c42bd56f7443fe4802a4c74385a1866cbe50adf98fd264e9fc5f10315e59d"
+      ],
+      "text": "The four MCP servers (journal, socialmedia, slack-mcp, agent-drugs) install via Claude Code only and ship no skills for npx."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e774cb2c29cd89db77b6cabfb3c6b2e48ad61363f1387f8db0c26747d047eb6f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 51,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L42-L51"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 64,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L55-L64"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "ae43208a68cfb3c04876d58e11bc15184551431d",
+          "line_end": 42,
+          "line_start": 35,
+          "path": "docs/index.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/index.md#L35-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a6a4f2b957d0f2db68e2f0d397c0731ae2f81d387b8ceb80f25e218c678b239",
+        "slc_99d222b6903e3333e8c98babfedcd7b26d53276337feeb407f503c7fc73caac1",
+        "slc_d101372de3684d1da8a950fc6403acd78a3ecfbe1860b7d6d5dcb5ef851732d8"
+      ],
+      "text": "The catalog includes plugins such as simmer (iterative refinement with investigation-first judges), test-kitchen (parallel implementation exploration), thrifty (tiered Sonnet/Haiku delegation), and binary-re (ELF reverse engineering)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd771ce5f8d5eb61eb1233ea25f693cd3a7a5d71b273abd19b54b2649f5d15c1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 89,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L84-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8ee3ca8c93ec819de9711665a73e58fa7c528e88e26bbc80ea256ff2bb465c6a"
+      ],
+      "text": "The marketplace lists four MCP servers: agent-drugs, socialmedia, journal, and slack-mcp, providing behavior modification, social media, journaling, and Slack integration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ffeacd238e9e66ec3ac2078cc8f66e39d8f483f8ea73120274975deb9275860",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L56-L60"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e900b6ffa17c6ae8f186bfa1880404d6e763b85e1342bbd0aa0b87783717cd5",
+        "slc_7ed67b44d828d47a1b7066d0d8336ee00e8676d75c6f851f223b7b32b6642956"
+      ],
+      "text": "Skills are defined in SKILL.md markdown files with YAML frontmatter containing a name and a description used for auto-detection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2083a220943671988732b903870f908fc87a3a9ca3faeb6e857176ad30bbb22",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 46,
+          "line_start": 7,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L7-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d20d8c2b76125c1b8453743729864b2a147e65e18de74d21e89c5582a138a45c"
+      ],
+      "text": "The css-development and firebase-development plugins use a main orchestrator SKILL.md plus sub-skill directories (e.g., create-component, validate, refactor; project-setup, add-feature, debug)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4e0b0b632a3adb7cc9c1085183f87f44e2bea3ea8f7506840d0b3eb4d5b9d09",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 159,
+          "line_start": 159,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L159-L159"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f4787f235417470b83172279d0e52a2ff3a99d2c7dfc012944ba3842274a5fb2"
+      ],
+      "text": "All Firebase patterns are centralized in the main firebase-development SKILL.md (1323 lines), and sub-skills reference them via '@firebase-development/pattern-name' syntax."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f93c4b67dac4fbe0eb8cd8f9c8d4bf5c1d0d7c42b988e07a7fdad30c40b83110",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 148,
+          "line_start": 144,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L144-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d5605ce6e8c77a81c7995d45061b1548d6a7afc2cabb57ea29e945e3e267145"
+      ],
+      "text": "Key CSS patterns include semantic class naming, Tailwind composition with @apply, dark mode by default, and static plus component-rendering test coverage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9781279ae74a51310e0d834cc581a3d0c107d9dcc5512a4b1796c01c81674eac",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 96,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L93-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_375945c75aa440ae7018d03751d59e216c1a5238212020b9c247dc890babb27c"
+      ],
+      "text": "Repository development practice: adding a plugin requires creating a repo under 2389-research/, adding a marketplace.json entry, running 'npm run generate', then committing and pushing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cbad277d11aa5beb31b33f70cedd99d942b51f055853150bf9894e34b7e5c41c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 81,
+          "line_start": 78,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L78-L81"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L87-L87"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 93,
+          "line_start": 89,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L89-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_286d775ddcf6c0678b644290740811f9c7cd056438eb5ea43eca3c8cf070bd1b",
+        "slc_6251cd038ad5df1b4925e494a68ef41c4782c17d2ab1a7820a19c691bf83f027",
+        "slc_91ee42a0e742260e568027ec9035c60e20accf0137879ca244a0b46386313c34"
+      ],
+      "text": "Repository development practice: after modifying a skill, contributors copy it into ~/.claude/skills/, test manually against tests/integration scenarios, and verify auto-detection, TodoWrite checklists, and step ordering."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1276ffb54e4b6331b803d996ab074d2565f301e8cbf03d0f3c2592d4fc0abd83",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 312,
+          "line_start": 304,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L304-L312"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_993d6bd904f73e540b77c7aafea4bbe16690a1d2b822bed572ea3e4e8c0d8bc8"
+      ],
+      "text": "Repository development practice: a manual testing checklist covers auto-detection, sub-skill routing, TodoWrite checklists, correct tool use (Read, Edit, Write, Grep), and output format."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9afb7575a6f2604fac857d102c0d280dd985a9605f32b3feaca1c1ecae041022",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 271,
+          "line_start": 271,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L271-L271"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 267,
+          "line_start": 263,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L263-L267"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 285,
+          "line_start": 285,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L285-L285"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+          "line_end": 341,
+          "line_start": 337,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md#L337-L341"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_246060cefb458bfbcb8574f5b4ff18444cc8d5186d19a8d45e0d53b5fe04c4b2",
+        "slc_7910a4bf94e0deaa0b3ed82f6585223a91a670a008ae640e2fd90a4d567efd03",
+        "slc_96620fb3d0060b1d33f3e72578d25e03a5ee5bf02461b68f68a5b0b6ff609022",
+        "slc_eea961c5c6363d275568129f79016f403af5fce5f0f46f3b1008bf3583cab966"
+      ],
+      "text": "Repository development practice: skill authoring guidance requires granular TodoWrite items (2-5 minutes each), complete runnable code examples, and exact file paths rather than vague references."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_060003b334feee4cddf876978ffc53b64a5dacca9898cd2aef0df35b2cddc67b",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "ae43208a68cfb3c04876d58e11bc15184551431d",
+          "line_end": 52,
+          "line_start": 48,
+          "path": "docs/index.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/index.md#L48-L52"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 51,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L42-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16e7aa900b7c71d8431c19517ba364356e2f04b28f2eb9512d981e001d7f3c50",
+        "slc_7a6a4f2b957d0f2db68e2f0d397c0731ae2f81d387b8ceb80f25e218c678b239"
+      ],
+      "text": "The thrifty plugin is documented as benchmarked at roughly 64% lower cost than Opus at equal quality, suggesting some agent-performance evaluation exists, though no eval harness appears in the evidence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0eb584d15c32d9fff22c924f023a6f20b4292f4de364a71bdf55a90e8740cde6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "ae43208a68cfb3c04876d58e11bc15184551431d",
+          "line_end": 29,
+          "line_start": 23,
+          "path": "docs/index.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/index.md#L23-L29"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "0cf18aca183c5fb6ecc1bb7cf969e0408f3fedca",
+          "line_end": 30,
+          "line_start": 24,
+          "path": "docs/llms.txt",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/llms.txt#L24-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2dd4b4e9e5d18539634db0cc2575f1376b4c0370e10799a206dea0145f84370a",
+        "slc_65ab495f3a40f5ffc9cf82c5c60b15fcfc17c7188f8294d3be7caceeb2bfd9e9"
+      ],
+      "text": "The binary-re plugin relies on radare2, Ghidra, GDB, and QEMU for hypothesis-driven ELF analysis across ARM64, ARMv7, and x86_64."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3edc6e7356fbf196323c375ff47fe6508351c9179b362c1d562d50b700d7cba",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "ae43208a68cfb3c04876d58e11bc15184551431d",
+          "line_end": 29,
+          "line_start": 23,
+          "path": "docs/index.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/index.md#L23-L29"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "0cf18aca183c5fb6ecc1bb7cf969e0408f3fedca",
+          "line_end": 30,
+          "line_start": 24,
+          "path": "docs/llms.txt",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/llms.txt#L24-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2dd4b4e9e5d18539634db0cc2575f1376b4c0370e10799a206dea0145f84370a",
+        "slc_65ab495f3a40f5ffc9cf82c5c60b15fcfc17c7188f8294d3be7caceeb2bfd9e9"
+      ],
+      "text": "The speed-run plugin uses a hosted LLM (Cerebras) for token-efficient parallel code generation, claiming about 60% token savings, and includes an MCP server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b96ffcab46e1fec9c2749f3b96f41c7e2b26b4af0d2a2bf93cf6ee67d3a678fe",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L106-L106"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L10-L10"
+        },
+        {
+          "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+          "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "2389-research/claude-plugins",
+          "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md#L110-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b744e154a0823409a874d2d72fd07aadb14334658fe370453feb7684b618650",
+        "slc_85378d8a48c8553c7489d4eb627c54852f8eb3197e750ef0ef81f6463d674b84",
+        "slc_b8dc398f86ff1d1f6353800f09bdf356fc839040426144d47de228cc3f3a193a"
+      ],
+      "text": "The marketplace is MIT-licensed, published by 2389 Research, browsable at 2389-research.github.io/claude-plugins, with contact email hello@2389.ai."
+    }
+  ],
+  "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 110,
+        "path": "README.md",
+        "size": 5717
+      },
+      {
+        "lines": 401,
+        "path": "docs/DEVELOPMENT.md",
+        "size": 11866
+      },
+      {
+        "lines": 80,
+        "path": "docs/index.md",
+        "size": 6896
+      },
+      {
+        "lines": 80,
+        "path": "docs/llms.txt",
+        "size": 7032
+      },
+      {
+        "lines": 6,
+        "path": "docs/robots.txt",
+        "size": 136
+      },
+      {
+        "lines": 41,
+        "path": "docs/sitemap.md",
+        "size": 6433
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/glossary/index.md",
+        "reason": "file-budget",
+        "size": 1196
+      },
+      {
+        "path": "docs/plans/100-ideas-for-100-stars.md",
+        "reason": "file-budget",
+        "size": 13067
+      },
+      {
+        "path": "docs/plans/2025-01-08-skill-quality-remediation.md",
+        "reason": "file-budget",
+        "size": 4925
+      },
+      {
+        "path": "docs/plans/2025-10-15-plugin-marketplace.md",
+        "reason": "file-budget",
+        "size": 9942
+      },
+      {
+        "path": "docs/plans/2025-11-14-readme-redesign-implementation.md",
+        "reason": "file-budget",
+        "size": 11718
+      },
+      {
+        "path": "docs/plans/2025-11-14-readme-redesign.md",
+        "reason": "file-budget",
+        "size": 8143
+      },
+      {
+        "path": "docs/plans/2025-12-03-skills-migration-design.md",
+        "reason": "file-budget",
+        "size": 5348
+      },
+      {
+        "path": "docs/plans/2025-12-03-skills-migration-implementation.md",
+        "reason": "file-budget",
+        "size": 14644
+      },
+      {
+        "path": "docs/plans/2025-12-05-monorepo-plugin-split-design.md",
+        "reason": "file-budget",
+        "size": 12180
+      },
+      {
+        "path": "docs/plans/2025-12-05-monorepo-plugin-split-implementation.md",
+        "reason": "file-budget",
+        "size": 50106
+      },
+      {
+        "path": "docs/plans/2026-02-06-speed-run-plugin.md",
+        "reason": "file-budget",
+        "size": 8512
+      },
+      {
+        "path": "docs/plans/2026-03-11-plugin-page-install-template-design.md",
+        "reason": "file-budget",
+        "size": 1762
+      },
+      {
+        "path": "docs/plans/2026-03-11-plugin-page-install-template.md",
+        "reason": "file-budget",
+        "size": 3562
+      },
+      {
+        "path": "docs/plans/2026-03-31-100-stars-sprint.md",
+        "reason": "file-budget",
+        "size": 11267
+      },
+      {
+        "path": "docs/plans/2026-04-07-tier1-repo-plans.md",
+        "reason": "file-budget",
+        "size": 8633
+      },
+      {
+        "path": "docs/plans/2026-04-07-tier2-tier3-batch-plan.md",
+        "reason": "file-budget",
+        "size": 6349
+      },
+      {
+        "path": "docs/simmer/iteration-0-candidate.md",
+        "reason": "file-budget",
+        "size": 4730
+      },
+      {
+        "path": "docs/simmer/iteration-1-candidate.md",
+        "reason": "file-budget",
+        "size": 7874
+      },
+      {
+        "path": "docs/simmer/iteration-2-candidate.md",
+        "reason": "file-budget",
+        "size": 8383
+      },
+      {
+        "path": "docs/simmer/iteration-3-candidate.md",
+        "reason": "file-budget",
+        "size": 8153
+      },
+      {
+        "path": "docs/simmer/result.md",
+        "reason": "file-budget",
+        "size": 7791
+      },
+      {
+        "path": "docs/simmer/trajectory.md",
+        "reason": "file-budget",
+        "size": 754
+      },
+      {
+        "path": "docs/plugins/agent-drugs/index.md",
+        "reason": "file-budget",
+        "size": 4386
+      },
+      {
+        "path": "docs/plugins/binary-re/index.md",
+        "reason": "file-budget",
+        "size": 3993
+      },
+      {
+        "path": "docs/plugins/building-multiagent-systems/index.md",
+        "reason": "file-budget",
+        "size": 5135
+      },
+      {
+        "path": "docs/plugins/ceo-personal-os/index.md",
+        "reason": "file-budget",
+        "size": 4217
+      },
+      {
+        "path": "docs/plugins/css-development/index.md",
+        "reason": "file-budget",
+        "size": 2212
+      },
+      {
+        "path": "docs/plugins/deliberation/index.md",
+        "reason": "file-budget",
+        "size": 4124
+      },
+      {
+        "path": "docs/plugins/documentation-audit/index.md",
+        "reason": "file-budget",
+        "size": 947
+      },
+      {
+        "path": "docs/plugins/firebase-development/index.md",
+        "reason": "file-budget",
+        "size": 2676
+      },
+      {
+        "path": "docs/plugins/fresh-eyes-review/index.md",
+        "reason": "file-budget",
+        "size": 2980
+      },
+      {
+        "path": "docs/plugins/git-repo-prep/index.md",
+        "reason": "file-budget",
+        "size": 2189
+      },
+      {
+        "path": "docs/plugins/jam/index.md",
+        "reason": "file-budget",
+        "size": 4315
+      },
+      {
+        "path": "docs/plugins/journal/index.md",
+        "reason": "file-budget",
+        "size": 12083
+      },
+      {
+        "path": "docs/plugins/landing-page-design/index.md",
+        "reason": "file-budget",
+        "size": 3881
+      },
+      {
+        "path": "docs/plugins/prbuddy/index.md",
+        "reason": "file-budget",
+        "size": 886
+      },
+      {
+        "path": "docs/plugins/remote-system-maintenance/index.md",
+        "reason": "file-budget",
+        "size": 4300
+      },
+      {
+        "path": "docs/plugins/review-squad/index.md",
+        "reason": "file-budget",
+        "size": 3933
+      },
+      {
+        "path": "docs/plugins/scenario-testing/index.md",
+        "reason": "file-budget",
+        "size": 4821
+      },
+      {
+        "path": "docs/plugins/sift/index.md",
+        "reason": "file-budget",
+        "size": 2180
+      },
+      {
+        "path": "docs/plugins/simmer/index.md",
+        "reason": "file-budget",
+        "size": 9914
+      },
+      {
+        "path": "docs/plugins/slack-mcp/index.md",
+        "reason": "file-budget",
+        "size": 3222
+      },
+      {
+        "path": "docs/plugins/socialmedia/index.md",
+        "reason": "file-budget",
+        "size": 4034
+      },
+      {
+        "path": "docs/plugins/speed-run/index.md",
+        "reason": "file-budget",
+        "size": 6484
+      },
+      {
+        "path": "docs/plugins/summarize-meetings/index.md",
+        "reason": "file-budget",
+        "size": 3288
+      },
+      {
+        "path": "docs/plugins/terminal-title/index.md",
+        "reason": "file-budget",
+        "size": 3661
+      },
+      {
+        "path": "docs/plugins/test-kitchen/index.md",
+        "reason": "file-budget",
+        "size": 5843
+      },
+      {
+        "path": "docs/plugins/thrifty/index.md",
+        "reason": "file-budget",
+        "size": 12163
+      },
+      {
+        "path": "docs/plugins/trace/index.md",
+        "reason": "file-budget",
+        "size": 1522
+      },
+      {
+        "path": "docs/plugins/travel-agent/index.md",
+        "reason": "file-budget",
+        "size": 2515
+      },
+      {
+        "path": "docs/plugins/worldview-synthesis/index.md",
+        "reason": "file-budget",
+        "size": 2900
+      },
+      {
+        "path": "docs/plugins/xtool/index.md",
+        "reason": "file-budget",
+        "size": 2028
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-02-monorepo-to-multi-repo-split.md",
+        "reason": "file-budget",
+        "size": 26600
+      },
+      {
+        "path": "docs/superpowers/specs/2026-04-02-monorepo-to-multi-repo-split-design.md",
+        "reason": "file-budget",
+        "size": 6890
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 10617
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1670
+      },
+      {
+        "path": "docs/AGENTS.md",
+        "reason": "file-budget",
+        "size": 1767
+      }
+    ],
+    "omitted_count": 57,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 254,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 63,
+      "complete": false,
+      "omitted": 57,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_342ad50479b151b1bca3c92dd70f19de",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 4,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/claude-plugins/017d34612ebffc73eb74415aa0984d57072f5a62/bb0f6c55bd4c81bf/manifest.json",
+  "package_id": "pkg_b061a8e685f137e2ec1a252f9dc5923d10d28f7b945c448421dd0c7cd5b7473f",
+  "repo": "2389-research/claude-plugins",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5f5fb9b21bd3a4fd6c6ee10a991984082a4063242845f1ba50a4193b472f65f8",
+  "snapshot_id": "bb0f6c55bd4c81bf",
+  "sources": [
+    {
+      "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+      "git_sha": "4373d4933f2fb10857bf90eacd4b745d8f404dda",
+      "lines": 110,
+      "path": "README.md",
+      "repository": "2389-research/claude-plugins",
+      "sha256": "167ef28597b68cbe772ee16ffa777fc909ca119c4e665dd9eef5c9c83fecbe8a",
+      "source_id": "src_bf87810bf3e05ea191273485af8a8373",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/README.md"
+    },
+    {
+      "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+      "git_sha": "1112601ea02e269c3d6233b0c4e9881db775d73c",
+      "lines": 401,
+      "path": "docs/DEVELOPMENT.md",
+      "repository": "2389-research/claude-plugins",
+      "sha256": "b82ca4ed107b041e42e942fd3f487873264e89c4d82bb4a6a19b39dfbdf864a2",
+      "source_id": "src_51aa2609c6805ea88a967845b632fa2f",
+      "stored": "development.md-d9657425e036.md",
+      "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/DEVELOPMENT.md"
+    },
+    {
+      "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+      "git_sha": "ae43208a68cfb3c04876d58e11bc15184551431d",
+      "lines": 80,
+      "path": "docs/index.md",
+      "repository": "2389-research/claude-plugins",
+      "sha256": "22268dc35e27e8d4bf6d4dde4e5e866efb0ef7cbae9f692353dbf3e00cc01a01",
+      "source_id": "src_9dc02ab6ad355f8394ccf0310fcb90be",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/index.md"
+    },
+    {
+      "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+      "git_sha": "0cf18aca183c5fb6ecc1bb7cf969e0408f3fedca",
+      "lines": 80,
+      "path": "docs/llms.txt",
+      "repository": "2389-research/claude-plugins",
+      "sha256": "607b530d4eca04ed665ddbcbc76c64f9ded11cf42f666b953275a880a9bc71de",
+      "source_id": "src_5e0e386c395c5a7c81685ba8017d392b",
+      "stored": "llms.txt-c3766b99af4d.txt",
+      "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/llms.txt"
+    },
+    {
+      "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+      "git_sha": "aec6e0ae2e8fec3d0b3cebb54298b912fb4f0d7a",
+      "lines": 6,
+      "path": "docs/robots.txt",
+      "repository": "2389-research/claude-plugins",
+      "sha256": "a6b100f8eaa28f3bdfe6d42520acb15ee25d62a1e309495cb7da3f49752415f4",
+      "source_id": "src_a817debb03c55409abf1396c9c87215f",
+      "stored": "robots.txt-e0fdde07b3ef.txt",
+      "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/robots.txt"
+    },
+    {
+      "commit": "017d34612ebffc73eb74415aa0984d57072f5a62",
+      "git_sha": "10919de6eefc5d7ee540968ba3eab4bfd400358c",
+      "lines": 41,
+      "path": "docs/sitemap.md",
+      "repository": "2389-research/claude-plugins",
+      "sha256": "e8237c95237bcef07ff7d1f1d3df86e3b1f90f07f4872c8a9132a8e3e09595aa",
+      "source_id": "src_b8042aec43fc5e2b80c87ce67f10111d",
+      "stored": "sitemap.md-186c9c78a8d6.md",
+      "url": "https://github.com/2389-research/claude-plugins/blob/017d34612ebffc73eb74415aa0984d57072f5a62/docs/sitemap.md"
+    }
+  ],
+  "summary": "This repository is the 2389 Research Claude Code plugin marketplace: documentation and site content cataloging ~28 plugins and 4 MCP servers, plus a development guide for maintaining the CSS and Firebase skills. Evidence is mostly documentation; no plugin implementation code appears in the slices.",
+  "superseded_claim_ids": []
+}

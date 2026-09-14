@@ -1,0 +1,1636 @@
+{
+  "applied_operation_id": "op_b2b08058540b4eb6a74b8b1871fc3f73",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f5b8d354985e383a29a2f959a0a64561bd323450e0fd6de1fb3cdd01a47273b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "f118cf10a7499c0ec508023cb1dc0ca55c9048c4",
+          "line_end": 30,
+          "line_start": 11,
+          "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md#L11-L30"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 21,
+          "line_start": 12,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L12-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ab9b6504f84c1b215c6a2f1df87951140853ea9bf983a2324795325ef34ef29",
+        "slc_e1ad7d37083e6901d8092c08326e9981b298f19bd3507922d600d377c74d1cd7"
+      ],
+      "text": "The crate is organized into main.rs (entrypoint with dotenv, robot-mode detection, CLI parsing), lib.rs (Clap command surface and dispatch), connectors, indexer, storage, search, pages/html_export, analytics, and sources modules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31043c1a5824fd53811fcc3fe206217ebee6d7bfde3ee343cfc4b9f4509e6cbf",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+          "line_end": 19,
+          "line_start": 12,
+          "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md#L12-L19"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "f118cf10a7499c0ec508023cb1dc0ca55c9048c4",
+          "line_end": 42,
+          "line_start": 34,
+          "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md#L34-L42"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2165e33c52bfb147190d3aff2fc96f734d21de968d9478e862de4dc0e086fc26",
+        "slc_d11f8dd58a67b7512facfd6b414a861a0b172046e2fce5248c7ad952e63f122a",
+        "slc_e9254e23a81f8fb8204a6bd7c1f3a8354b2011154452b7e6646769852299f35f"
+      ],
+      "text": "frankensqlite-backed SQLite storage is the durable source of truth, while lexical and semantic search assets are treated as derived state rebuilt from it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_109a5e847d816ce1754fcfc79c183c2be56f93f187917029de41383be3dc63c8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+          "line_end": 19,
+          "line_start": 12,
+          "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md#L12-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2165e33c52bfb147190d3aff2fc96f734d21de968d9478e862de4dc0e086fc26"
+      ],
+      "text": "Hybrid search is designed to fail open to lexical results with truthful metadata, and lexical publish uses atomic swap/retention semantics that must not be bypassed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8fa0eab95bdd69795ce40223e6b1ed98adb29171bef9dd0c99e68945c0db22ea",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md#L22-L26"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "f118cf10a7499c0ec508023cb1dc0ca55c9048c4",
+          "line_end": 55,
+          "line_start": 46,
+          "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md#L46-L55"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78cc8cafb1a88fb7da62544537c6da32796399cf505d485fe5126ff78ae5109c",
+        "slc_9ded4d5640b3600293a56dfa23dc3885c9dd60a7c41083647f5f957c2ccaa5f6",
+        "slc_e9254e23a81f8fb8204a6bd7c1f3a8354b2011154452b7e6646769852299f35f"
+      ],
+      "text": "cass exposes a human/TUI surface plus a robot-mode JSON API, with stable robot JSON schemas, error kind values, and exit codes treated as user contracts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb25b36eb2fd33a049bc4e96f740b6c7f9e258ab12b6c2124c224a2cc04dce85",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+          "line_end": 19,
+          "line_start": 12,
+          "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md#L12-L19"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "f118cf10a7499c0ec508023cb1dc0ca55c9048c4",
+          "line_end": 30,
+          "line_start": 11,
+          "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md#L11-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2165e33c52bfb147190d3aff2fc96f734d21de968d9478e862de4dc0e086fc26",
+        "slc_4ab9b6504f84c1b215c6a2f1df87951140853ea9bf983a2324795325ef34ef29"
+      ],
+      "text": "Connector modules are compatibility re-export stubs over franken_agent_detection, normalizing provider sessions into internal Conversation, Message, and Snippet types."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bead293f6fc9391d43054144e36b96740b23bac43deb581f0af24319ca03b877",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "f118cf10a7499c0ec508023cb1dc0ca55c9048c4",
+          "line_end": 30,
+          "line_start": 11,
+          "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md#L11-L30"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md#L22-L26"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ab9b6504f84c1b215c6a2f1df87951140853ea9bf983a2324795325ef34ef29",
+        "slc_78cc8cafb1a88fb7da62544537c6da32796399cf505d485fe5126ff78ae5109c",
+        "slc_e9254e23a81f8fb8204a6bd7c1f3a8354b2011154452b7e6646769852299f35f"
+      ],
+      "text": "New SQLite code must use frankensqlite rather than adding new rusqlite, which is described as legacy debt in the storage layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3d99482ea732b2f6038dd8b9f46604b671ea0af4db8c8c5392cc23f06dee88b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 16,
+          "line_start": 3,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L3-L16"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 566,
+          "line_start": 561,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L561-L566"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51d6b082b50f92677d8ae290fe5d6148488cf0e2e2b867513168ab3a95558938",
+        "slc_6e871a744ef7e40f0cef18b2c2d88a3bd15154cc5a99e28e2fa2f692ebf413c4"
+      ],
+      "text": "The changelog research records published FAD dependency 0.2.4, crossbeam-channel 0.5.17, asupersync 0.4.11 as a pending candidate, and final engine/search versions 0.3.18 and 0.4.3."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7fb4b4f974ffe82f73bba6f06b353327d19e17f0a8747fd3b619408a2cdc2cb",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 289,
+          "line_start": 280,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L280-L289"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 44,
+          "line_start": 35,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L35-L44"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 239,
+          "line_start": 224,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L224-L239"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 430,
+          "line_start": 410,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L410-L430"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45a02124aede6c907f7bc4ebf7a67accdee0d32a8a69f759e5ee3462c6a840aa",
+        "slc_7af3ade566e771d6efc0b81f3683a16faeca0833bbd0874fbcb9b80242cb0491",
+        "slc_987f55c3a3c8ae677ed2010fb06d31b71ec9fd993ee714e029046f720f7a637e",
+        "slc_d29846c15a379f72bae4f536c624a3b918b7d4ee18c305ac6497d8aca37e47a1"
+      ],
+      "text": "The strict UBS scanner gate repeatedly remained red, with Rust module timeouts at 300 seconds and various critical/warning findings left unresolved and unsuppressed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_978bca506c757231bcf6baf148816908a69e9524dff3d276c14adfdfff789d80",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 313,
+          "line_start": 306,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L306-L313"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31e57957996d6c8bb48ac3b4b85ef86c55a7feb862f6b4bd07ef91beb0aa5380"
+      ],
+      "text": "Default hybrid search matched lexical results without a model download, so neural semantic retrieval and archive-scale performance were not validated by the live SSH harness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47d2840c083ab9007273e9a8ac1363246b97a7a7f6a3ee83c6622b7e968d66d5",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+          "line_end": 268,
+          "line_start": 261,
+          "path": "CHANGELOG_RESEARCH.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md#L261-L268"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "f118cf10a7499c0ec508023cb1dc0ca55c9048c4",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md#L5-L7"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3753e7c683da36311d72c8499deeb261980785495c214e36b72db8e7e683cffe",
+        "slc_d7661bcad72402d370eedc3d29f59681f57a83f8821d60b7642562b40c3fe91a",
+        "slc_e9254e23a81f8fb8204a6bd7c1f3a8354b2011154452b7e6646769852299f35f"
+      ],
+      "text": "cass indexes local and remote coding-agent conversation histories into a unified archive and provides search across providers, with optional Tailscale-based fleet discovery wired through discovery and setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3facd194f76ab95f5f0e27cbca895b78fe47b2eed0b2d94f9785dffd80d7b803",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md#L22-L26"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78cc8cafb1a88fb7da62544537c6da32796399cf505d485fe5126ff78ae5109c",
+        "slc_e9254e23a81f8fb8204a6bd7c1f3a8354b2011154452b7e6646769852299f35f"
+      ],
+      "text": "Repository development practice: AGENTS.md is authoritative for repo-local safety rules including no file deletion, no destructive git/filesystem commands, no new rusqlite, and no script-based code rewrites."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b1904770a1c00dab97d68a30f68cede318cb5635112c72df6da8017d6b046a6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md#L22-L26"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L32-L34"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md#L25-L28"
+        },
+        {
+          "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+          "git_sha": "0f1d10243fa32a0f9954b36442773be87bd40def",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/architecture.md",
+          "repository": "dicklesworthstone/coding_agent_session_search",
+          "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/architecture.md#L3-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78cc8cafb1a88fb7da62544537c6da32796399cf505d485fe5126ff78ae5109c",
+        "slc_83cdbaf6743c4dedc169cec8c8dfec51f7db98798452c092180a32997246ca86",
+        "slc_f0b1071d998f5ac1e5293efc7b3c3be80622313488e4ab3d65d09fb3617e19e9",
+        "slc_fe662d4ff00590868715ee1f5aea8c642f9118315fcf2cf2ec603f085ef986ce"
+      ],
+      "text": "Repository development practice: refactor passes follow one lever per pass with one commit each, a proof card, and a fresh-eyes review prompt before closeout, while avoiding peer-dirty high-blast-radius files like indexer and storage."
+    }
+  ],
+  "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 26,
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+        "size": 2582
+      },
+      {
+        "lines": 34,
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+        "size": 3278
+      },
+      {
+        "lines": 7,
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/architecture.md",
+        "size": 586
+      },
+      {
+        "lines": 56,
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+        "size": 2667
+      },
+      {
+        "lines": 921,
+        "path": "CHANGELOG_RESEARCH.md",
+        "size": 62542
+      },
+      {
+        "lines": 195,
+        "path": "RELEASE_TODO.md",
+        "size": 20105
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README.md",
+        "reason": "byte-budget",
+        "size": 194016
+      },
+      {
+        "path": "SKILL.md",
+        "reason": "file-budget",
+        "size": 26874
+      },
+      {
+        "path": "docs/ACCESSIBILITY.md",
+        "reason": "file-budget",
+        "size": 5515
+      },
+      {
+        "path": "docs/COVERAGE_POLICY.md",
+        "reason": "file-budget",
+        "size": 7541
+      },
+      {
+        "path": "docs/DOCUMENTATION_STYLE.md",
+        "reason": "file-budget",
+        "size": 6145
+      },
+      {
+        "path": "docs/ERROR_CODES.md",
+        "reason": "file-budget",
+        "size": 9310
+      },
+      {
+        "path": "docs/FRANKENTUI_UX_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 12233
+      },
+      {
+        "path": "docs/ftui_visual_parity_rubric.md",
+        "reason": "file-budget",
+        "size": 21170
+      },
+      {
+        "path": "docs/INSTALLER_SPEC.md",
+        "reason": "file-budget",
+        "size": 2740
+      },
+      {
+        "path": "docs/LIMITS.md",
+        "reason": "file-budget",
+        "size": 5574
+      },
+      {
+        "path": "docs/perf-evidence-ledgers.md",
+        "reason": "file-budget",
+        "size": 1481
+      },
+      {
+        "path": "docs/PERFORMANCE.md",
+        "reason": "file-budget",
+        "size": 12905
+      },
+      {
+        "path": "docs/PROOF_RECIPE.md",
+        "reason": "file-budget",
+        "size": 17373
+      },
+      {
+        "path": "docs/RECOVERY.md",
+        "reason": "file-budget",
+        "size": 12217
+      },
+      {
+        "path": "docs/RESILIENCE_TEST_MATRIX.md",
+        "reason": "file-budget",
+        "size": 13561
+      },
+      {
+        "path": "docs/ROBOT_MODE.md",
+        "reason": "file-budget",
+        "size": 16037
+      },
+      {
+        "path": "docs/SECURITY_AUDIT_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 8413
+      },
+      {
+        "path": "docs/SECURITY_AUDIT_REPORT.md",
+        "reason": "file-budget",
+        "size": 7434
+      },
+      {
+        "path": "docs/SUBSYSTEM_COVERAGE_MATRIX.md",
+        "reason": "file-budget",
+        "size": 12133
+      },
+      {
+        "path": "docs/test-coverage-audit.md",
+        "reason": "file-budget",
+        "size": 10856
+      },
+      {
+        "path": "docs/tui_keymap_rfc.md",
+        "reason": "file-budget",
+        "size": 39930
+      },
+      {
+        "path": "docs/tui_style_spec.md",
+        "reason": "file-budget",
+        "size": 6774
+      },
+      {
+        "path": "docs/UNIT_TEST_HARNESS_REQUIREMENTS.md",
+        "reason": "file-budget",
+        "size": 9651
+      },
+      {
+        "path": "docs/VERSION_HISTORY.md",
+        "reason": "file-budget",
+        "size": 3500
+      },
+      {
+        "path": "docs/artifacts/no-mock-audit.md",
+        "reason": "file-budget",
+        "size": 1623
+      },
+      {
+        "path": "docs/artifacts/README.md",
+        "reason": "file-budget",
+        "size": 1329
+      },
+      {
+        "path": "docs/assets/README.md",
+        "reason": "file-budget",
+        "size": 536
+      },
+      {
+        "path": "docs/perf/baseline_round1.md",
+        "reason": "file-budget",
+        "size": 6969
+      },
+      {
+        "path": "docs/planning/AGENT_FRIENDLINESS_REPORT.md",
+        "reason": "file-budget",
+        "size": 5033
+      },
+      {
+        "path": "docs/planning/AGENT_INTRODUCTION.md",
+        "reason": "file-budget",
+        "size": 3177
+      },
+      {
+        "path": "docs/planning/ANSWER_PACKS_CONFORMANCE_MATRIX.md",
+        "reason": "file-budget",
+        "size": 34538
+      },
+      {
+        "path": "docs/planning/ANSWER_PACKS_CONTRACT.md",
+        "reason": "file-budget",
+        "size": 24024
+      },
+      {
+        "path": "docs/planning/CASS_INDEXING_HISTORICAL_BENCHMARK_RESULTS.md",
+        "reason": "file-budget",
+        "size": 136006
+      },
+      {
+        "path": "docs/planning/cli-robot-enhancements.md",
+        "reason": "file-budget",
+        "size": 25424
+      },
+      {
+        "path": "docs/planning/DOCTOR_V2_RELEASE_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 14040
+      },
+      {
+        "path": "docs/planning/IDEA_WIZARD_SWARM_NEXT_LEVEL.md",
+        "reason": "file-budget",
+        "size": 16764
+      },
+      {
+        "path": "docs/planning/MODES_OF_REASONING_REPORT_AND_ANALYSIS_OF_PROJECT.md",
+        "reason": "file-budget",
+        "size": 31721
+      },
+      {
+        "path": "docs/planning/PLAN_FOR_ADVANCED_OPTIMIZATIONS_ROUND_1__GPT.md",
+        "reason": "file-budget",
+        "size": 38181
+      },
+      {
+        "path": "docs/planning/PLAN_FOR_ADVANCED_OPTIMIZATIONS_ROUND_1__OPUS.md",
+        "reason": "file-budget",
+        "size": 24607
+      },
+      {
+        "path": "docs/planning/PLAN_TO_ADD_LIGHTWEIGHT_SEMANTIC_AND_HYBRID_SEARCH_TO_CASS.md",
+        "reason": "file-budget",
+        "size": 65274
+      },
+      {
+        "path": "docs/planning/PLAN_TO_COMPUTE_ANALYTICS_STATS_IN_CASS__CODEX.md",
+        "reason": "file-budget",
+        "size": 22193
+      },
+      {
+        "path": "docs/planning/PLAN_TO_COMPUTE_ANALYTICS_STATS_IN_CASS__OPUS.md",
+        "reason": "file-budget",
+        "size": 28221
+      },
+      {
+        "path": "docs/planning/PLAN_TO_CREATE_GH_PAGES_WEB_EXPORT_APP.md",
+        "reason": "file-budget",
+        "size": 145000
+      },
+      {
+        "path": "docs/planning/PLAN_TO_MAKE_CODING_AGENT_SESSION_SEARCH.md",
+        "reason": "file-budget",
+        "size": 45390
+      },
+      {
+        "path": "docs/planning/PLAN_TO_PORT_INSTALL_SCRIPTS_TO_RUST.md",
+        "reason": "file-budget",
+        "size": 2796
+      },
+      {
+        "path": "docs/planning/REALITY_CHECK_AND_BRIDGE_PLAN_2026-09-01.md",
+        "reason": "file-budget",
+        "size": 145232
+      },
+      {
+        "path": "docs/planning/RECOVERY_RUNBOOK.md",
+        "reason": "file-budget",
+        "size": 13981
+      },
+      {
+        "path": "docs/planning/RESEARCH_FINDINGS.md",
+        "reason": "file-budget",
+        "size": 11370
+      },
+      {
+        "path": "docs/planning/RUST_CLI_TOOLS_BEST_PRACTICES_GUIDE.md",
+        "reason": "file-budget",
+        "size": 72770
+      },
+      {
+        "path": "docs/planning/SEMANTIC_SEARCH_BEADS.md",
+        "reason": "file-budget",
+        "size": 33809
+      },
+      {
+        "path": "docs/planning/SUGGESTED_IMPROVEMENTS_TO_CASS_BASED_ON_CMS.md",
+        "reason": "file-budget",
+        "size": 19928
+      },
+      {
+        "path": "docs/planning/SWARM_OPERATIONS_CONTRACT.md",
+        "reason": "file-budget",
+        "size": 25113
+      },
+      {
+        "path": "docs/planning/SYNC_STRATEGY.md",
+        "reason": "file-budget",
+        "size": 1035
+      },
+      {
+        "path": "docs/planning/TESTING.md",
+        "reason": "file-budget",
+        "size": 25934
+      },
+      {
+        "path": "docs/planning/TOON_INTEGRATION_BRIEF.md",
+        "reason": "file-budget",
+        "size": 19032
+      },
+      {
+        "path": "docs/planning/UPGRADE_LOG.md",
+        "reason": "file-budget",
+        "size": 16515
+      },
+      {
+        "path": "docs/reference/CASS_ARCHITECTURE_SUMMARY.txt",
+        "reason": "file-budget",
+        "size": 24501
+      },
+      {
+        "path": "docs/reference/cass_bakeoff_validation.md",
+        "reason": "file-budget",
+        "size": 5239
+      },
+      {
+        "path": "docs/reference/CASS_SEARCH_PATTERNS.md",
+        "reason": "file-budget",
+        "size": 18914
+      },
+      {
+        "path": "docs/reference/E2E_LOGGING_SCHEMA.md",
+        "reason": "file-budget",
+        "size": 18620
+      },
+      {
+        "path": "docs/reference/QUICK_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 13378
+      },
+      {
+        "path": "docs/reference/SEARCH_PATTERNS_INDEX.md",
+        "reason": "file-budget",
+        "size": 11346
+      },
+      {
+        "path": "docs/artifacts/ftui-parity/baseline_bundle.md",
+        "reason": "file-budget",
+        "size": 5353
+      },
+      {
+        "path": "docs/artifacts/ftui-parity/feature_audit.md",
+        "reason": "file-budget",
+        "size": 7269
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/baseline_binary_size.txt",
+        "reason": "file-budget",
+        "size": 122
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/baseline_clippy.txt",
+        "reason": "file-budget",
+        "size": 92
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/baseline_connector_lines.txt",
+        "reason": "file-budget",
+        "size": 530
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/baseline_deps.txt",
+        "reason": "file-budget",
+        "size": 3016
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/baseline_fmt.txt",
+        "reason": "file-budget",
+        "size": 17
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/baseline_search_lines.txt",
+        "reason": "file-budget",
+        "size": 589
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/BASELINE_SUMMARY.md",
+        "reason": "file-budget",
+        "size": 5881
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/baseline_test_summary.txt",
+        "reason": "file-budget",
+        "size": 601
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/binary_size.txt",
+        "reason": "file-budget",
+        "size": 206
+      },
+      {
+        "path": "docs/artifacts/migration-baseline/SUMMARY.md",
+        "reason": "file-budget",
+        "size": 3669
+      },
+      {
+        "path": "docs/planning/upgrade-logs/2026-05-05-franken-agent-detection.md",
+        "reason": "file-budget",
+        "size": 1606
+      },
+      {
+        "path": "docs/planning/upgrade-logs/2026-05-08-franken-agent-detection.md",
+        "reason": "file-budget",
+        "size": 1714
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T222109Z-codex-simplify/baseline_loc_wc.txt",
+        "reason": "file-budget",
+        "size": 4798
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T222109Z-codex-simplify/DASHBOARD.md",
+        "reason": "file-budget",
+        "size": 3760
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T222109Z-codex-simplify/duplication_map.md",
+        "reason": "file-budget",
+        "size": 746
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T222109Z-codex-simplify/isomorphism_html_export_error_derive.md",
+        "reason": "file-budget",
+        "size": 1712
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T222109Z-codex-simplify/slop_scan.md",
+        "reason": "file-budget",
+        "size": 52593
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/DASHBOARD.md",
+        "reason": "file-budget",
+        "size": 3621
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass10_final_rescan.md",
+        "reason": "file-budget",
+        "size": 5224
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass1_trait_boilerplate.md",
+        "reason": "file-budget",
+        "size": 4029
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass2_wrapper_collapse.md",
+        "reason": "file-budget",
+        "size": 3276
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass3_rule_of_3_helper.md",
+        "reason": "file-budget",
+        "size": 4192
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass4_constant_literal_consolidation.md",
+        "reason": "file-budget",
+        "size": 4617
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass5_error_mapping.md",
+        "reason": "file-budget",
+        "size": 4028
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass6_option_default_flow.md",
+        "reason": "file-budget",
+        "size": 4939
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass7_test_fixture_dry.md",
+        "reason": "file-budget",
+        "size": 2837
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass8_control_flow_tightening.md",
+        "reason": "file-budget",
+        "size": 3987
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260424T230127Z-repeated-simplify/pass9_alias_reexport_audit.md",
+        "reason": "file-budget",
+        "size": 3416
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 1399
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/DASHBOARD.md",
+        "reason": "file-budget",
+        "size": 2546
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass10_final_rescan_encrypt_error.md",
+        "reason": "file-budget",
+        "size": 3470
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass1_derive_error_boilerplate.md",
+        "reason": "file-budget",
+        "size": 3892
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass2_private_wrapper_collapse.md",
+        "reason": "file-budget",
+        "size": 3862
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass3_json_output_plumbing.md",
+        "reason": "file-budget",
+        "size": 4636
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass4_search_filters_fixture_helper.md",
+        "reason": "file-budget",
+        "size": 2837
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass5_wizard_option_fallbacks.md",
+        "reason": "file-budget",
+        "size": 2881
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass6_config_env_error_mapping.md",
+        "reason": "file-budget",
+        "size": 2470
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass7_cloudflare_env_constants.md",
+        "reason": "file-budget",
+        "size": 2563
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass8_breakdown_row_projection.md",
+        "reason": "file-budget",
+        "size": 2544
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/pass9_remove_chart_slice_alias.md",
+        "reason": "file-budget",
+        "size": 2143
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 1252
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/DASHBOARD.md",
+        "reason": "file-budget",
+        "size": 2034
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass10_docs_assertion_macro.md",
+        "reason": "file-budget",
+        "size": 3359
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass1_ssh_error_derive.md",
+        "reason": "file-budget",
+        "size": 2132
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass2_sources_alias_audit.md",
+        "reason": "file-budget",
+        "size": 2102
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass3_cloudflare_fixture_helper.md",
+        "reason": "file-budget",
+        "size": 2139
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass4_docs_version_constant.md",
+        "reason": "file-budget",
+        "size": 2036
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass5_docs_date_fallback.md",
+        "reason": "file-budget",
+        "size": 2037
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass6_analytics_query_error_helper.md",
+        "reason": "file-budget",
+        "size": 2400
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass7_rollup_stats_projection.md",
+        "reason": "file-budget",
+        "size": 2288
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass8_inline_js_assertion_macro.md",
+        "reason": "file-budget",
+        "size": 2407
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/pass9_setup_wrapper_collapse.md",
+        "reason": "file-budget",
+        "size": 2187
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 931
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/DASHBOARD.md",
+        "reason": "file-budget",
+        "size": 2395
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass10_final_rescan.md",
+        "reason": "file-budget",
+        "size": 3234
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass1_analytics_error_derive.md",
+        "reason": "file-budget",
+        "size": 2214
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass2_metric_as_str.md",
+        "reason": "file-budget",
+        "size": 2157
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass3_drift_signal_json.md",
+        "reason": "file-budget",
+        "size": 2169
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass4_group_by_test_matrix.md",
+        "reason": "file-budget",
+        "size": 2101
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass5_status_table_constants.md",
+        "reason": "file-budget",
+        "size": 2083
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass6_token_usage_agent_fallback.md",
+        "reason": "file-budget",
+        "size": 2284
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass7_key_slot_error_helper.md",
+        "reason": "file-budget",
+        "size": 2100
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass8_encrypt_assert_helper.md",
+        "reason": "file-budget",
+        "size": 2258
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/pass9_key_management_wrapper_collapse.md",
+        "reason": "file-budget",
+        "size": 2166
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 1857
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/final_dashboard.md",
+        "reason": "file-budget",
+        "size": 1896
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass10_path_mode_rescan.md",
+        "reason": "file-budget",
+        "size": 1225
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass1_simulation_failure_error_derive.md",
+        "reason": "file-budget",
+        "size": 2037
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass2_sync_method_as_str.md",
+        "reason": "file-budget",
+        "size": 1610
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass3_master_key_backup_json.md",
+        "reason": "file-budget",
+        "size": 1964
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass4_source_filter_cycle_matrix.md",
+        "reason": "file-budget",
+        "size": 1542
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass5_master_key_note_constant.md",
+        "reason": "file-budget",
+        "size": 1447
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass6_config_input_defaults.md",
+        "reason": "file-budget",
+        "size": 1228
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass7_analytics_cli_error_helper.md",
+        "reason": "file-budget",
+        "size": 1237
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass8_bookmark_search_assertion_helper.md",
+        "reason": "file-budget",
+        "size": 1142
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/pass9_setup_wrapper_inline.md",
+        "reason": "file-budget",
+        "size": 1016
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 1442
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/final_dashboard.md",
+        "reason": "file-budget",
+        "size": 2748
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass10_docs_date_format_rescan.md",
+        "reason": "file-budget",
+        "size": 1695
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass1_preview_error_derive.md",
+        "reason": "file-budget",
+        "size": 1813
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass2_preview_mime_constants.md",
+        "reason": "file-budget",
+        "size": 1671
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass3_export_hit_json_helper.md",
+        "reason": "file-budget",
+        "size": 1611
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass4_preview_site_fixture.md",
+        "reason": "file-budget",
+        "size": 1504
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass5_docs_url_fallback.md",
+        "reason": "file-budget",
+        "size": 1448
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass6_key_slot_id_helper.md",
+        "reason": "file-budget",
+        "size": 1551
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass7_share_profile_parse_labels.md",
+        "reason": "file-budget",
+        "size": 1425
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass8_export_json_assertion_helper.md",
+        "reason": "file-budget",
+        "size": 1475
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T213512Z-sixth-simplify/pass9_export_extra_json_inline.md",
+        "reason": "file-budget",
+        "size": 1523
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 2281
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/final_dashboard.md",
+        "reason": "file-budget",
+        "size": 2788
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass10_db_error_derive.md",
+        "reason": "file-budget",
+        "size": 2451
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass1_pages_decrypt_error_derive.md",
+        "reason": "file-budget",
+        "size": 1711
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass2_update_asset_constants.md",
+        "reason": "file-budget",
+        "size": 1360
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass3_cloudflare_project_body_helper.md",
+        "reason": "file-budget",
+        "size": 1532
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass4_cloudflare_prereq_fixture.md",
+        "reason": "file-budget",
+        "size": 1475
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass5_no_limit_budget_helper.md",
+        "reason": "file-budget",
+        "size": 1430
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass6_fastembed_unavailable_helper.md",
+        "reason": "file-budget",
+        "size": 1333
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass7_semantic_policy_as_str.md",
+        "reason": "file-budget",
+        "size": 1211
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass8_cloudflare_missing_assertion.md",
+        "reason": "file-budget",
+        "size": 1744
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260425T234742Z-seventh-simplify/pass9_github_resolve_site_wrapper.md",
+        "reason": "file-budget",
+        "size": 2045
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 1353
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/final_dashboard.md",
+        "reason": "file-budget",
+        "size": 1689
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass10_dim_as_str.md",
+        "reason": "file-budget",
+        "size": 1340
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass1_size_error_derive.md",
+        "reason": "file-budget",
+        "size": 1340
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass2_message_role_display_table.md",
+        "reason": "file-budget",
+        "size": 1375
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass3_sync_schedule_literals.md",
+        "reason": "file-budget",
+        "size": 1541
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass4_unencrypted_config_helper.md",
+        "reason": "file-budget",
+        "size": 1440
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass5_username_fallback.md",
+        "reason": "file-budget",
+        "size": 1706
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass6_embedder_unavailable_helper.md",
+        "reason": "file-budget",
+        "size": 1644
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass7_remote_spec_wrapper.md",
+        "reason": "file-budget",
+        "size": 1509
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass8_embedder_registry_fixture.md",
+        "reason": "file-budget",
+        "size": 1446
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T155536Z-eighth-simplify/pass9_group_by_as_str.md",
+        "reason": "file-budget",
+        "size": 1301
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 669
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/final_dashboard.md",
+        "reason": "file-budget",
+        "size": 2729
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass1_setup_error_derive.md",
+        "reason": "file-budget",
+        "size": 1443
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass2_password_strength_tables.md",
+        "reason": "file-budget",
+        "size": 1227
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass3_source_filter_literals.md",
+        "reason": "file-budget",
+        "size": 1768
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass4_export_json_payload.md",
+        "reason": "file-budget",
+        "size": 2131
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass5_config_time_range.md",
+        "reason": "file-budget",
+        "size": 1748
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass6_reranker_error_constructor.md",
+        "reason": "file-budget",
+        "size": 1833
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass7_pages_export_temp_path_inline.md",
+        "reason": "file-budget",
+        "size": 1629
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass8_reranker_registry_fixture.md",
+        "reason": "file-budget",
+        "size": 1588
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T163300Z-ninth-simplify/pass9_password_strength_visuals.md",
+        "reason": "file-budget",
+        "size": 1516
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 2145
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/final_dashboard.md",
+        "reason": "file-budget",
+        "size": 1601
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass1_model_fixture_helper.md",
+        "reason": "file-budget",
+        "size": 2255
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass2_progress_snapshot_helper.md",
+        "reason": "file-budget",
+        "size": 2339
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass3_export_format_table.md",
+        "reason": "file-budget",
+        "size": 1790
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass4_pipeline_assertion_dedupe.md",
+        "reason": "file-budget",
+        "size": 1865
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass5_stale_config_env_helper.md",
+        "reason": "file-budget",
+        "size": 2090
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass6_inline_track_a_rebuild_check.md",
+        "reason": "file-budget",
+        "size": 1786
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass7_shared_db_id_helpers.md",
+        "reason": "file-budget",
+        "size": 687
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass8_worker_config_fixture.md",
+        "reason": "file-budget",
+        "size": 596
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260426T210630Z-tenth-simplify/pass9_worker_model_literals.md",
+        "reason": "file-budget",
+        "size": 688
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260427T023153Z-eleventh-simplify/baseline.md",
+        "reason": "file-budget",
+        "size": 1044
+      },
+      {
+        "path": "docs/artifacts/refactor-runs/20260427T023153Z-eleventh-simplify/final_dashboard.md",
+        "reason": "file-budget",
+        "size": 2279
+      }
+    ],
+    "omitted_count": 247,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3753,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 253,
+      "complete": false,
+      "omitted": 247,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2fc928470b2d5592b72618740c383aac",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/cd35e742/aa4f3fb5/6d445f64db1a61c302afdc7d0e38137d1f192c2e/ec453b73017ae594/manifest.json",
+  "package_id": "pkg_1a6736178de6388aff3ac25c890c3f802dcea4b8e45629b72ab6f517db49fbda",
+  "repo": "dicklesworthstone/coding_agent_session_search",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5bf7a23ceee43cf6292220db07c86701bf00c654f6c6dcae5f3c870cea8b6843",
+  "snapshot_id": "ec453b73017ae594",
+  "sources": [
+    {
+      "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+      "git_sha": "b180e40d2453f914c0cefa8e19608604d4ca05fa",
+      "lines": 921,
+      "path": "CHANGELOG_RESEARCH.md",
+      "repository": "dicklesworthstone/coding_agent_session_search",
+      "sha256": "b9239514b122d28d0f014aa5c653e44c45853fd91ec89248928c8997b6003097",
+      "source_id": "src_1bdab01390505af2be366b3c82d27fbe",
+      "stored": "changelog_research.md-15d280ad0b04.md",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/CHANGELOG_RESEARCH.md"
+    },
+    {
+      "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+      "git_sha": "be16a20adbf9b1e9051d5f944965867359b96ca3",
+      "lines": 195,
+      "path": "RELEASE_TODO.md",
+      "repository": "dicklesworthstone/coding_agent_session_search",
+      "sha256": "6dd59202c72e74d65b798ea038d5025aa6fcdfe24488755dc39cc34c24c1c643",
+      "source_id": "src_a3e65e8e511c51c69bd9b3299764b8d3",
+      "stored": "release_todo.md-333780d18ab9.md",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/RELEASE_TODO.md"
+    },
+    {
+      "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+      "git_sha": "8a426e58c51bffb9acfd5b150327ccb989527a27",
+      "lines": 26,
+      "path": "docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md",
+      "repository": "dicklesworthstone/coding_agent_session_search",
+      "sha256": "904d809e37989854126c222bd47eba8c6157beb57f2e85c2e59322c9298f60df",
+      "source_id": "src_dc1ff6b128335c42bd685531b22ad977",
+      "stored": "architecture.md-9d6a8ab76d6a.md",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T024205Z-second-simplify/architecture.md"
+    },
+    {
+      "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+      "git_sha": "8c169c1660712abc709e07e3233d63190b0dcc11",
+      "lines": 34,
+      "path": "docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md",
+      "repository": "dicklesworthstone/coding_agent_session_search",
+      "sha256": "ab63880f87e07506036ed5789df3cff8fc02137ba193193eb14e7d476fec0d30",
+      "source_id": "src_acb276c9802f50e8b4be84a7b6dcfb6b",
+      "stored": "architecture.md-205e7c02f126.md",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T154730Z-third-simplify/architecture.md"
+    },
+    {
+      "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+      "git_sha": "0f1d10243fa32a0f9954b36442773be87bd40def",
+      "lines": 7,
+      "path": "docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/architecture.md",
+      "repository": "dicklesworthstone/coding_agent_session_search",
+      "sha256": "b3ec1cc434aa4bcbcee8278a9539bfa82875a97c8a8f951dce0bc255911dc5f6",
+      "source_id": "src_36e04a2dfd675ac6beca1fd809d0ab64",
+      "stored": "architecture.md-8c0e97d72d5d.md",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T180745Z-fourth-simplify/architecture.md"
+    },
+    {
+      "commit": "6d445f64db1a61c302afdc7d0e38137d1f192c2e",
+      "git_sha": "f118cf10a7499c0ec508023cb1dc0ca55c9048c4",
+      "lines": 56,
+      "path": "docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md",
+      "repository": "dicklesworthstone/coding_agent_session_search",
+      "sha256": "41ca7b4a211628beb01f54f4aea895e8cf397654d245199cf3a49c48a5427ad9",
+      "source_id": "src_ca676734f2d35fd2a0d470ce3f5d1812",
+      "stored": "architecture.md-fca607f4f078.md",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search/blob/6d445f64db1a61c302afdc7d0e38137d1f192c2e/docs/artifacts/refactor-runs/20260425T184600Z-fifth-simplify/architecture.md"
+    }
+  ],
+  "summary": "Evidence describes 'cass', a Rust 2024 CLI/TUI that indexes and searches local coding-agent session histories, with architecture notes from several refactor-run artifacts and a detailed changelog research file covering release validation. Most slices document development/refactor practice; product architecture, interfaces, dependencies, and some limitations are also supported. Evidence coverage: 64 of 100 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

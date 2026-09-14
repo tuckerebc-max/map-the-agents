@@ -1,0 +1,534 @@
+{
+  "applied_operation_id": "op_675772a436bd41d7bb645899d5f29408",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d864208656c219dba9bf6098875b0b273af5369e56538de528e888b4d34ff782",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L3-L7"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L1-L1"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9a4b8388f3fad1adaab01151d0b92ee041aa70dfb81dc4bbc944c35f7c4fb3e5",
+        "slc_a70c4d4a8f0b7a16634a84ad738c8352a7e8cd4fe7d64d06f0be1bcf44574896"
+      ],
+      "text": "miii is a local terminal AI coding agent that runs against Ollama with no API keys or cloud, positioned as an offline alternative to cloud coding assistants."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_015d9311a3c7d0f494195148097418c2e38216355fd50d2d9df6823d17301dd4",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 14,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L9-L14"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L34-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20078a2a89a60912b7dd4be41acc93082874dfdde0baf3a11b43743bae72f171",
+        "slc_2e231b27b3d6463bdccc1802a46572beb639dc0af226634f16d7a2b63342e734"
+      ],
+      "text": "The tool requires Node 18 or newer and Ollama, and is distributed as the npm package miii-agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc53973488d3af3a7d5ef5139cd7fa5f1176027f60bcd24e79fc937dd8d0fdcd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 164,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L152-L164"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 150,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L134-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0877a319ec502300b1801533697e6cec536f9a1c8c443da57547505e42da2871",
+        "slc_b2fd64c793a47c10133f54ddd52d1ea5acbe3d6e691c46a73846f2e7704f834f"
+      ],
+      "text": "The CLI exposes slash commands (/plan, /permissions, /models, /sessions, /compact, /copy, /clear, /exit), a command palette on '/', and keyboard shortcuts such as Shift+Tab for permission modes and Ctrl+V for image paste."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f27c42c8ce85e6ab374d2c3e35cb02b98de5e69d2a04290925a6703d95af998a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 82,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L74-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_766bf7ec399d5775a1ce1d3f711770884e351f110081461bddaad0ac80f831ea"
+      ],
+      "text": "Built-in agent tools include read_file, write_file, edit_file, glob, grep, run_bash, and write_todos for tracking multi-step work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47e0a3693cdf4b5803d63499e9b3b036fdc0155079da584746be22a3bae2f439",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 85,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L84-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8dbdef07cfa68946763aee42e376bcb4a5a947101dc58a95bc669a782f926ba9"
+      ],
+      "text": "File tools reject ../ traversal and absolute paths outside the workspace, while run_bash is not path-confined and is bounded only by the permission prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8507b87c0fbe5a1bea32b5da0b1b64a9e902ea5fc29da90240584449cc439107",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 109,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L104-L109"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L92-L92"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bba34190f31104a573ef5b754c919b5074cb54a8798bb9e7f63ae2cc5cf60db",
+        "slc_26656bc0489e966d05c11ef31b5665bffd920770fd75fa26fc828dd47fc738b0",
+        "slc_c16fc178c93a468f60a279224468e67e6dbf83eb8b9d4737b15bf4e0d9f828b2"
+      ],
+      "text": "Four permission modes cycle via shift+tab: normal, plan (read-only), auto-accept edits, and bypass; 'always' approvals save exact commands plus globs that never span command boundaries or match destructive programs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bb8339a525f232b1789181de9300440f42109a223e51726b4ac71a3ab0c1c0b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 164,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L152-L164"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L94-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0877a319ec502300b1801533697e6cec536f9a1c8c443da57547505e42da2871",
+        "slc_114fa58744d5efacb4912de97b79c0742c5e2b2f817cb626620c048c7f329091"
+      ],
+      "text": "Saved approval rules live in .miii/permissions.json per project (with an optional global ~/.miii/permissions.json), and sessions can be saved and resumed via /new and /sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8788b4ff918329fb1db305305d5e066e956a8b27f70667dc5de361a421a333ca",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 209,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L209-L209"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 218,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L217-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1953ed8a854b93e1ef9cec05c872dbb397220d54d61f1b819ec777e0c16f922d",
+        "slc_379f94a31c98d3a5a613c3fab90c59b4fa46da46a16f7571ea23f131ccae81a5"
+      ],
+      "text": "Tool output over ~10K bytes is spilled to ~/.miii/output/<id>.txt with a head/tail preview inline; the model pages through the file with ranged reads and spill files are garbage-collected after 24 hours."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f44125e1bc73a93e9e2034bd71bdcb86376fe7b3ccc3b5ccf612c2ab1f5f3f82",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L126-L126"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L117-L117"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 129,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L128-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_741a7ca6131782634c5d9f47b0155761d19bdd86241303184b72cfc3b2531aa3",
+        "slc_833a3aa82ca81f6067a698ec98096c2227740509f3c6c582ee9078e719af98e2",
+        "slc_9f5bd83783f6b1e0f7d31d15318f66693b727e068cb0133e40c4b3fdc68718f0"
+      ],
+      "text": "Custom slash commands are Markdown files in .miii/commands/ (project scope) or ~/.miii/commands/ (personal), supporting $ARGUMENTS and $1-$9 substitution, with project commands shadowing personal ones but never built-ins."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eaaa84747daa921a19272b09fbbaf34be6318692c9dbbee2d887a8b860f04ebc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 195,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L195-L195"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 183,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L183-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98d612333e94521616486f6f671986ad9f7fc479d16bd0aa3bb3866a91be9c80",
+        "slc_d7d459fc2cd83c929c9ab0b550e256c062a3f12643d3e7d5429df0073421da08"
+      ],
+      "text": "Besides Ollama, miii can talk to any OpenAI-compatible local server such as llama.cpp, LM Studio, or vLLM, selected via config providers or --provider at launch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71db020bbd3913059e2e39478ff3b91b20476bf96f50e9f47f41f691d3345d68",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 65,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L58-L65"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 263,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L263-L263"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2976525d5df4e1ba4d4dafde8ab9edcefe84d33a36ae5ea71471d610f235258",
+        "slc_e850565fa15815bac5233dfa0f23dd68b47340d0d9d552b891c61830ed875a2b"
+      ],
+      "text": "The product includes `miii doctor`, which grades the user's installed local models on real engineering tasks to check whether they can drive an agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d46e7893c507521421fae6db105bdf2cb65ba526029dfe820d8e16d8d61f972",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 65,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L58-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2976525d5df4e1ba4d4dafde8ab9edcefe84d33a36ae5ea71471d610f235258"
+      ],
+      "text": "The agent repairs malformed tool calls from small models and sizes its prompt to the model's context window, and a MIII.md file in the repo is read every turn to teach project conventions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c42c0120ad210182b0a99d55f402b56119ddd26b3132858890aa43b95a634c2b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 239,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L236-L239"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 249,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L248-L249"
+        },
+        {
+          "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+          "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+          "line_end": 246,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "maruakshay/miii-cli",
+          "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md#L241-L246"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_364996c4b9203c1c8803dc8c317b7c309edb806e19295f57a75737f755dd8f50",
+        "slc_78e351abb0a138e557d44de52aba59af288ea4449a25f90491d7eee43f7320a2",
+        "slc_dd66cc78f8719adef439ace212b16e28cab200fbfed786181d53f1633ae6206c"
+      ],
+      "text": "Repository development practice: contributors clone the repo, run npm install && npm run dev, and use npm run build, npm run typecheck, npm test, and npm run eval (a regression gate powering miii doctor); npm run build && npm link runs the working tree as the global miii."
+    }
+  ],
+  "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 277,
+        "path": "README.md",
+        "size": 13927
+      },
+      {
+        "lines": 434,
+        "path": "CHANGELOG.md",
+        "size": 31830
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 101,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_aa04272e92ce5305abd76f01877fa15f",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/maruakshay/miii-cli/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/5960cfd3fa980381/manifest.json",
+  "package_id": "pkg_7391ca2b3bd32d9d89f2f951ceae4273d7c10efb1cbbff75044bc70a44b63539",
+  "repo": "maruakshay/miii-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4437f2afbc2d7b9c679298778e3c399e4b1623665e89b1efee0f22b04e763765",
+  "snapshot_id": "5960cfd3fa980381",
+  "sources": [
+    {
+      "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+      "git_sha": "6fcb00bac1454cd4ad987bc85963e47822138321",
+      "lines": 434,
+      "path": "CHANGELOG.md",
+      "repository": "maruakshay/miii-cli",
+      "sha256": "a24d6756f29062aae5d6eeea005c70aefc5bfbeb184c70cd209a05d5a1e9426f",
+      "source_id": "src_b132aee314005fc6aec03462ce57f263",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/CHANGELOG.md"
+    },
+    {
+      "commit": "0a712d9f2d68236ddeb53ee1ce10471ae59193bc",
+      "git_sha": "2f462a1e7cf2b16b022ddf75ecbacdc0c4cc745b",
+      "lines": 277,
+      "path": "README.md",
+      "repository": "maruakshay/miii-cli",
+      "sha256": "5335e47dd323e5c4ec1799234bbb471ecb5510cea076cbd86609ef5d17d334fd",
+      "source_id": "src_e60d147462be5bbdbd24840007b0c4ef",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/maruakshay/miii-cli/blob/0a712d9f2d68236ddeb53ee1ce10471ae59193bc/README.md"
+    }
+  ],
+  "summary": "README-documented product: miii is a local, offline terminal AI coding agent running on Ollama or OpenAI-compatible local servers, with built-in tools, permission modes, custom slash commands, sessions, output spill, and an miii doctor model grader; development commands are documented separately as contributor workflows.",
+  "superseded_claim_ids": []
+}

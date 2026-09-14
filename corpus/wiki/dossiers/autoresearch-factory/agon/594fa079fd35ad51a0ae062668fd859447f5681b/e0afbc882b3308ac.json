@@ -1,0 +1,451 @@
+{
+  "applied_operation_id": "op_cb2ca2cdd9f24f4caf80101579cfb07a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2037a2ac15cea07ab11a24c027f964f1507be5fe8d93061fe5a64e4f70c85315",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L45-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_878ad1f4e1e32fd8f63a8653fa42fb756491ed0230f2e169ab1f7bac99e544fe"
+      ],
+      "text": "Agon exposes four Claude Code slash commands: /idea-tick, /proposal-tick, /experiment-tick, and /deep-lit-tick, which advance the research pipeline stages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fec97295778d9ab6dbc636a12ef3af5c2db8c9b5c8eac8f3f483472fea66d914",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 59,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L52-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc20cf058e126b46fc3f113a9831b87842e0d9f06eed1a5b87d63e50e393edfa"
+      ],
+      "text": "Commands accept free-form arguments, e.g. /experiment-tick can be told a run is a debugging run and asked to pause for user approval after each agent call."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7d74802cdc6f33baa2c18e5eb85c867efa0489c746d2b16a8f4d05540b128cd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L45-L48"
+        },
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_878ad1f4e1e32fd8f63a8653fa42fb756491ed0230f2e169ab1f7bac99e544fe",
+        "slc_fef07213946825cdd21544d5f32017e08606260c9057e240ac278a95dc4fa61d"
+      ],
+      "text": "The experiment stage coordinates scientist, coder, auditor, and reviewer roles for a single workspace, with agents planning, implementing, auditing, and reviewing each other in closed loops."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6bbcfccf943725ed5768b60ec4ad878744343ec367a1269890f2dbb4b622652d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fef07213946825cdd21544d5f32017e08606260c9057e240ac278a95dc4fa61d"
+      ],
+      "text": "Every handoff between agents goes through a file on disk, which the README says makes runs recoverable, auditable, and reusable across projects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7382fc1984d7f6b750735be2f4c418330933e09b9c4818da9beefe665f0694aa",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fef07213946825cdd21544d5f32017e08606260c9057e240ac278a95dc4fa61d"
+      ],
+      "text": "The pipeline is deliberately minimal and explicit: topic → idea → proposal → experiment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c88b05c0f0a9968f55e450b838c8340e6091848d401a932f4200f947de1b174",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L36-L39"
+        },
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bdd4beb6d0ab33b9333c1e90a1ddda01e889376b37eccdfee4c159f281f4d03e",
+        "slc_dc3ea99d65dda2fddf4f69577a07f34dfeaf082bd9b2c058c507218f14340f85"
+      ],
+      "text": "Running Agon requires launching Claude Code with --dangerously-skip-permissions, because unattended subagents write files, launch experiments, and call tools for hours and a permission prompt would stall the run; the README suggests isolating it on its own machine, container, or account."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ce10a40342d33d1f64fd8762117b8a3bfbe9c2a036c9bc2b68882e7a4b2a51c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L63-L63"
+        },
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L19-L19"
+        },
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 24,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L21-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56d9ac8d08eb5e068ce7f515f26d2de74056b8536f2eab6b7f0212be2e92aa3d",
+        "slc_6f97ce3e4d37e3dee50f4712b24438aa9e3e5364210674ea1e4aa7a33ce28d6c",
+        "slc_e6103db754b04f3710ea5c28af9cd1c473b7b27ef7cb043d915df416a6a8f111"
+      ],
+      "text": "Agon is a Claude Code plugin intended to run from a separate data workspace repository (agon-artifacts), cloned side by side with the plugin directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd1414a1a5ff11465105437d2c8309260d4ef8a8fc1e856aff583595889f9753",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 103,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L85-L103"
+        },
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0004602490aaf9ccf9ba164daaecf4254128c31351d88157d49f7390a90fa5b9",
+        "slc_211f3c8caf558ec56cd25872cd983ac171b80c4ed26580b62e8ac3062872002a"
+      ],
+      "text": "The README documents an optional claude-ds wrapper that runs Claude Code against DeepSeek's Anthropic-compatible API endpoint using DEEPSEEK_API_KEY, with deepseek-v4-pro and deepseek-v4-flash model mappings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_085b409c65bc72d04a3bf4523fd417806f0d5aa999d1701f0b237c6b054956c2",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 113,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L109-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be83f9e28a0197174f27ae986badde5a4387dc759f1cc0aee35b1d3b0aefa508"
+      ],
+      "text": "The documented setup enables CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS so the main agent can resume background subagents and subagents can message each other, and sets cleanupPeriodDays to 3650 to retain session history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a81397c17629b2c2a4e4f7c749ad1c30606a56e61ce8c6f2f45d93d805f6d71",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 72,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L67-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b64ea460c3f8056247445cbf75e5f6ab27b8cb7adfe06b93600dfa2e066df530"
+      ],
+      "text": "The data workspace layout (topics/, ideas/, workspace/ directories) appears to be where the file-based artifacts of each pipeline stage are stored."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93476d5e54ca4db3a2c03e97b3de20d05a4038ff63ae25b25fcfced5431f3c41",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L74-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f1676b768cc021ce6d6a717eb5ebad2f26d64bcb7c850aa434bf1fc8fd1cf22c"
+      ],
+      "text": "Optional local configuration lives in .settings.toml, with a .settings.example.toml template for customizing model routing and parallelism."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b496447f0261313a510f71ee64399609b27bbdb370ea357e4a3fdd775eff6d3b",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L13-L13"
+        },
+        {
+          "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+          "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+          "line_end": 131,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "autoresearch-factory/agon",
+          "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md#L121-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11901017c7c8eb637223aa37cb38d6500b4edc0a56ea7a4efa71ea4cf589a2ef",
+        "slc_de98a64d92655007d81b6f0c4d5452f759b5c4f20b90916fdd16b6b4ffde8a4d"
+      ],
+      "text": "Agon is presented as an autonomous large-scale omnidisciplinary research system built on Prompt Economy, with an accompanying arXiv paper (2606.24177) reporting deployments across more than ten research domains."
+    }
+  ],
+  "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 141,
+        "path": "README.md",
+        "size": 6720
+      },
+      {
+        "lines": 139,
+        "path": "README_zh.md",
+        "size": 6383
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 93,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_d9b9e441c52c582aa431ac09c81a2085",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/autoresearch-factory/agon/594fa079fd35ad51a0ae062668fd859447f5681b/e0afbc882b3308ac/manifest.json",
+  "package_id": "pkg_cceba8183f82aa0c0e5877832aa75f75c57769964fce9c84991e43e1e57f4366",
+  "repo": "autoresearch-factory/agon",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ee36326ecc4d2fcb0ecf548ff5a4792456ea3146c0b0feb9ef1ff633ebe93223",
+  "snapshot_id": "e0afbc882b3308ac",
+  "sources": [
+    {
+      "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+      "git_sha": "2b6a19a8a69c8c8a72bd0ed8715c41f48ea18bed",
+      "lines": 141,
+      "path": "README.md",
+      "repository": "autoresearch-factory/agon",
+      "sha256": "04f82c8f5b8d40eea51537c5cbc84bb395e98adb96f174e42299b946c6e2cd86",
+      "source_id": "src_87ca0f19531152328ef02897af9d7996",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README.md"
+    },
+    {
+      "commit": "594fa079fd35ad51a0ae062668fd859447f5681b",
+      "git_sha": "f39cc6a856a6c56349e41cf4dd0b0d885803e9c6",
+      "lines": 139,
+      "path": "README_zh.md",
+      "repository": "autoresearch-factory/agon",
+      "sha256": "672b4210ffa45749f25c9cd8b582376d0024773f577a227c84215dfd8380191b",
+      "source_id": "src_31d8d62e880f5e82ac3f80ff7b51ffd3",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/AutoResearch-Factory/Agon/blob/594fa079fd35ad51a0ae062668fd859447f5681b/README_zh.md"
+    }
+  ],
+  "summary": "The snapshot contains only README documentation (English and Chinese) describing Agon, a Claude Code plugin that drives autonomous research from topic to experiment via slash commands and multi-agent loops with file-based handoffs. No source code is present in the evidence, so claims are limited to what the README documents.",
+  "superseded_claim_ids": []
+}

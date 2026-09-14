@@ -1,0 +1,62 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_01711f2fdead377bf7f04a760325929316bac472befa423baa88aeb7f32cdd55
+- clm_07e61166e02e006eadadc263d7c6305e22ece1bf8f8f7fdcdfe5b5e829e6a2ae
+- clm_080b1f5f453171e29b63660d69c9c2b98eac18068d0d64efb1997af9fc23a615
+- clm_15693131a7e4d2c461a0dfc2e15659b09d4156fc9b7600418f116d630900337e
+- clm_29bf2d6f0a45f0496ae3846729452abbd53f7c85d24ad6462aa6ea8c105b09bb
+- clm_476905049b6a57a6236546ea54f59ae288eb7f728f565a11f16cd31222c7455c
+- clm_6f3aa1b01844e56b2fd31d8c038278c02b27a5a7e84044fbe2df1af11a8a6de9
+- clm_8e3ac48445948cd819795c05d0f63d7662b5d5602bf1cf47b5a94826ad9aba5d
+- clm_9f62331c5650a82ea4704e5594a77d33578039f522966b513d945630bfd83a13
+- clm_b077a3d34ec28fa2eefdee7350430a793c916292561ef60df558e34894ac0733
+- clm_ba5988dffa1f8669b535e1764a480b9ae58a9b2e912cec2170f99cff33eb0765
+- clm_bccf8c3837cb10d79465eaf2b07d0c3a7b7c5e64796e1f26ddb3198d52bcb882
+- clm_c68efe2d806c40f6837680faeb8cbfba647e1d3092e788004f840a1a392dab44
+- clm_c7669d6f1cfa1f10a66db4ad5dbdc2fc1f2d37bd46c85894f2b3e73dfd50efa1
+- clm_d5bd91cc7b9707dc6b81263e37d3caf092541479f4f2996098b8a0b300d45509
+- clm_d5cdf680c0f5c61034e77464009389fae85eb98155a022f0ae08fb1fb328728f
+- clm_e19688f777d6dcb8a13aa289229d3674bbcf2a28a236d43ffd9b94d87e383b43
+- clm_e2f206886c7ab0b249b1bf934a69282191c031b65cf83a25a5b3ed78edf013ed
+- clm_e46cda62bc9fc3e8dbc223ebc9b69aed69a968af80ac943e6990bc5d75c6f534
+- clm_e72675cece2ecb11d243fd2ed1a4cbb4664b7bb10ec6060362858f3bf8e4fca0
+maturity: draft
+page_id: pg_d9683e01ee715089aaa29243d42ae58f
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_032a7bdd99d2580f8a51b80fe281bdd0
+title: cpoile/claudemacs/README.md @ 1f2fe7bbc718
+updated_at: '2026-09-14T03:42:59Z'
+---
+
+# cpoile/claudemacs/README.md @ 1f2fe7bbc718
+
+<!-- rcw:begin owner=source:src_032a7bdd99d2580f8a51b80fe281bdd0 block=evidence -->
+- The project's stated design philosophy is simplicity: let the LLM CLI run in the terminal without agents, MCP, or IDE integration, which the README says would consume context. [@claim:clm_01711f2fdead377bf7f04a760325929316bac472befa423baa88aeb7f32cdd55]
+- Claudemacs exposes a transient menu (default binding C-c C-e) with core commands for starting, switching, resuming, listing, and killing sessions, plus action commands like fix-error-at-point and implement-comment. [@claim:clm_07e61166e02e006eadadc263d7c6305e22ece1bf8f8f7fdcdfe5b5e829e6a2ae]
+- On macOS, clicking a system notification does not bring focus to Emacs; the README notes this limitation and solicits ideas. [@claim:clm_080b1f5f453171e29b63660d69c9c2b98eac18068d0d64efb1997af9fc23a615]
+- When claudemacs-prefer-projectile-root is set, the tool's cwd uses the projectile root instead of the git root, letting Claude Code read and edit files across sibling repos in a monorepo layout. [@claim:clm_15693131a7e4d2c461a0dfc2e15659b09d4156fc9b7600418f116d630900337e]
+- Sessions are workspace-aware: the session is keyed to the Doom/Perspective workspace and the tool's cwd defaults to the project's git root, enabling separate sessions per workspace in a monorepo. [@claim:clm_29bf2d6f0a45f0496ae3846729452abbd53f7c85d24ad6462aa6ea8c105b09bb]
+- A configurable tool registry defines which AI CLI tools are available, with defaults Claude, Codex, and Gemini, each with program, switches, and model-types entries; users can add tools like aider. [@claim:clm_476905049b6a57a6236546ea54f59ae288eb7f728f565a11f16cd31222c7455c]
+- Claudemacs presents the same session and action commands regardless of which terminal backend is in use. [@claim:clm_6f3aa1b01844e56b2fd31d8c038278c02b27a5a7e84044fbe2df1af11a8a6de9]
+- Action commands accept a C-u prefix to broadcast the action to all active sessions. [@claim:clm_8e3ac48445948cd819795c05d0f63d7662b5d5602bf1cf47b5a94826ad9aba5d]
+- The start-session submenu offers a -d switch to skip permissions (--dangerously-skip-permissions or equivalent) when launching a tool. [@claim:clm_9f62331c5650a82ea4704e5594a77d33578039f522966b513d945630bfd83a13]
+- The package supports multiple terminal backends: Ghostel is selected automatically when available, otherwise it falls back to Eat; the backend can be forced via claudemacs-terminal-backend. [@claim:clm_b077a3d34ec28fa2eefdee7350430a793c916292561ef60df558e34894ac0733]
+- Only the selected terminal backend is loaded; both Eat and Ghostel need not be installed, but the chosen backend must be installed and loadable before starting a session. [@claim:clm_ba5988dffa1f8669b535e1764a480b9ae58a9b2e912cec2170f99cff33eb0765]
+- System notifications fire (with sound) when the AI tool awaits input or finishes, with per-OS configuration for macOS sounds, Linux notify-send auto-dismiss and canberra sounds, and Windows toast timeouts. [@claim:clm_bccf8c3837cb10d79465eaf2b07d0c3a7b7c5e64796e1f26ddb3198d52bcb882]
+- The terminal buffer has two interaction modes: a semi-char mode for typing directly to the AI tool and an Emacs mode (C-c C-e) for editing terminal contents, with C-c C-j returning to semi-char mode. [@claim:clm_c68efe2d806c40f6837680faeb8cbfba647e1d3092e788004f840a1a392dab44]
+- In semi-char mode, C-q acts as a quoted-input escape hatch to send literal control characters (e.g., C-q C-g sends Ctrl-g to Claude Code), while C-g itself is mapped to send ESC. [@claim:clm_c7669d6f1cfa1f10a66db4ad5dbdc2fc1f2d37bd46c85894f2b3e73dfd50efa1]
+- Requirements are Emacs 28.1+, the Eat package or Ghostel with its native module, transient (built-in since Emacs 28), and a supported AI CLI such as Claude Code. [@claim:clm_d5bd91cc7b9707dc6b81263e37d3caf092541479f4f2996098b8a0b300d45509]
+- Terminal-emulator interactions with Claude Code can cause scroll-popping, a stuck input box, or border-drawing issues after window resize; a 'u' unstick command resets the buffer for both backends. [@claim:clm_d5cdf680c0f5c61034e77464009389fae85eb98155a022f0ae08fb1fb328728f]
+- Session buffers are named *claudemacs:TOOL(-N):SESSION-ID*, where SESSION-ID is the workspace name or project path and -N distinguishes multiple instances of the same tool. [@claim:clm_e19688f777d6dcb8a13aa289229d3674bbcf2a28a236d43ffd9b94d87e383b43]
+- Sessions can be resumed using tool-specific resume flags, and the resume submenu supports resuming a Codex session by UUID. [@claim:clm_e2f206886c7ab0b249b1bf934a69282191c031b65cf83a25a5b3ed78edf013ed]
+- M-x claudemacs-session-list shows a table of live sessions with workspace, tool instance, and project directory columns; exited sessions disappear on refresh and no CLI history is shown. [@claim:clm_e46cda62bc9fc3e8dbc223ebc9b69aed69a968af80ac943e6990bc5d75c6f534]
+- The backend selector is checked only at session start and affects new sessions; an invalid or unloadable selection raises an error rather than silently falling back to another backend. [@claim:clm_e72675cece2ecb11d243fd2ed1a4cbb4664b7bb10ec6060362858f3bf8e4fca0]
+<!-- rcw:end owner=source:src_032a7bdd99d2580f8a51b80fe281bdd0 block=evidence -->
+
+## Researcher notes
+

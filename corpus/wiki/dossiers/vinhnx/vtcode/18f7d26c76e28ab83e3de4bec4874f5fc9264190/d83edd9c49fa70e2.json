@@ -1,0 +1,1569 @@
+{
+  "applied_operation_id": "op_d7081122d750425fa14073511dacc7bc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_16010ea108571dcb7a1d265fd945fe8ae46bc81d8f684e5b1dc761a0613afeb9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "876410aaafcc724688bcd43fd3d7c05575789d58",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/README.md#L7-L7"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "876410aaafcc724688bcd43fd3d7c05575789d58",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/README.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36ca04af144d8dbb97e7ac702e325816b067ada6ef254a0bad1ebfeef01e33ef",
+        "slc_e130fb059d7d72bfab7b19917172d3f48a14de79e27b374d596245c1353978eb"
+      ],
+      "text": "VT Code is described as a secure, open-source terminal coding agent written in Rust, shipped as a single static binary for interactive and long-running autonomous work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e5dbab108180acb00e3375600d1ea7b54fd606a3842be6720d12cccf0297428",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 30,
+          "line_start": 26,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L26-L30"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "876410aaafcc724688bcd43fd3d7c05575789d58",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/README.md#L64-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c65edfad8185d067da11dd848b28ca44ecbb933132fa5e765ac58c48a50d6a1",
+        "slc_54e61181b2465da6a2de2586781fe19caa9fea734278433067f7f2f5d9a48e83"
+      ],
+      "text": "The architecture separates the model (reasoning) from the harness (runtime supplying tools, context, sandboxing, state, and verification), organized as seven reinforcing subsystems."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ef343e7928a4cf6ae926150393063eea497ee91f908e4d7e43fef9a518d0da1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 111,
+          "line_start": 108,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L108-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be888c6362ce48c9a4412ce117604ce993e9950258578fe5f45e40ca734063a3"
+      ],
+      "text": "The CLI separates data on stdout from diagnostics on stderr, uses clap for argument parsing, isolates subcommands (ask, exec, chat) in dedicated modules, and handles SIGINT/SIGTERM gracefully."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e3bec124a4f73f70cdf323253c0b20a1b3e5515deefecf78676e391cf00e36a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 198,
+          "line_start": 196,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L196-L198"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a21dd0cc1da4794db55471751738b07ef1d1679e95d95daaffbaae9d3e287b8"
+      ],
+      "text": "Default public tool surface includes exec_command (shell via policy/sandbox/approvals), write_stdin for live-session continuation, and apply_patch with workspace-boundary checks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_48a6b59da80c47ab9878bd8c7835334964a4fd640576244c5919012c21f24dc0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "876410aaafcc724688bcd43fd3d7c05575789d58",
+          "line_end": 97,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/README.md#L91-L97"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e7ed3914acbcea1ac24c94cc6fa082e1a1d640fc7b111a6651e74c1384058bb",
+        "slc_3498a156e7cdc70219eb88cbea450063f7c01fa28e3b9efca905ed94466bf6bd"
+      ],
+      "text": "ThreadEvent (vtcode-exec-events) is the authoritative runtime event contract feeding replay, checkpoints, memory, and trajectory export; follow-up inputs queue and inject one at a time at idle boundaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f3c0cc587b459a327597326855b28aedbc7c126ef8e0074808864109c192089",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 42,
+          "line_start": 34,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L34-L42"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 93,
+          "line_start": 89,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L89-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50c5e114c1c2448005189b6479c33f78a16554c163c11f54042327682c9c5e3f",
+        "slc_5c5e24880780e8da23e1f5f6c55f9ac176751b31bac4ecc3e23d102692b6dd17"
+      ],
+      "text": "A persisted SessionMemoryEnvelope summarizes objective, constraints, touched files, grounded facts, verification status, and delegated findings for resume and summarized-fork handoff."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a30db75e4cf6eaa56af6b0f0b2b3580641747e16e5690c7ce11bacaf859a410a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 75,
+          "line_start": 74,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L74-L75"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L77-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9517c0ec4eab67dad8fea48bbf11547e42499b7188f4974523d0e2a65a9a4a31",
+        "slc_c38a17a13af176c37622b47d0179249ef908d432e849934bd5130d06c091e750"
+      ],
+      "text": "With agent.harness.orchestration_mode = plan_build_evaluate, a planner writes spec/contract artifacts, the generator runs on the main session, and an evaluator performs a skeptical post-build pass; failed evaluation triggers bounded revision rounds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60046b34315663cfb147fe9d6b65a77b114c523287e08877ed52c61fda45c7d6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 93,
+          "line_start": 89,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L89-L93"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c5e24880780e8da23e1f5f6c55f9ac176751b31bac4ecc3e23d102692b6dd17",
+        "slc_dbc3dd6fa979e00f0ba56e53e809b8da56dfd5ee4be2208c0616c098ec082cf0"
+      ],
+      "text": "Delegation is modeled as explicit thread spawning: child agents do bounded sidecar work, their output is advisory until the parent validates and merges it into the SessionMemoryEnvelope at turn boundaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_663bfe81efe3364e76cb4773e59ac35b9d050340db2ddc8ec8612fe76ca3cd33",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 34,
+          "line_start": 31,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L31-L34"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e755fccbddfe91301646b5c54c3bcfe834482fac4f0754c18de41bde73059f02",
+        "slc_ef84115347a23a17659d48b19ac9448dcbbde324392e5604eac19ee3a133b5ce"
+      ],
+      "text": "Configuration uses vtcode.toml at workspace or platform config-directory layers, with environment-variable overrides and a legacy $VTCODE_HOME path kept as a migration source."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_162178fbb2ce931ce2e8e56772ac5136101131a67ab3b9465378587ac3b73c5c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 81,
+          "line_start": 75,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L75-L81"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 86,
+          "line_start": 83,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L83-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c7d2faeec251c9969d2b63cbe4dfce87e4b682e8964dd07a6567107cd21970b",
+        "slc_649252cd18a97b668228f5465396d1a733018a244b81811c678f247d295b0422"
+      ],
+      "text": "Interactive sessions live-reload watched config changes with debouncing; safe settings apply without restart, and malformed edits keep the last valid configuration with a warning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_caa9a1ab5e14a82f06aaa03c7761877c88dbc28176966cac348494764dcc4a4a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 124,
+          "line_start": 120,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L120-L124"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 136,
+          "line_start": 132,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L132-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46b64c5fdd4195f5f1accea6f676fe0047f4ee4841fb8ca643569b57fbd54787",
+        "slc_8101f9822ef175fc4c18c8b151a63d5652413278caa2e23a5ae5c1792a29094d"
+      ],
+      "text": "The agent.provider setting supports many providers including openai, anthropic, google, deepseek, ollama, lmstudio, and others, with per-provider base_url and API-key environment variables configurable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0318e6798c363c9641107dd48e241fd62305b43e7c61e6e9182808db47b777ef",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 112,
+          "line_start": 106,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L106-L112"
+        },
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+          "line_end": 102,
+          "line_start": 96,
+          "path": "docs/config/config.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md#L96-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b2eeb82aa63fe819cee1d56a53c80979ed0e36034dbe27a1b183a9b2432e2eab",
+        "slc_f8acee6957987340426128d4339db4e9b19399a2889a4e8016ae32f33c1dc9eb"
+      ],
+      "text": "Feature flags include human_in_the_loop (tool approval prompts, default true) and mcp_enabled (default false), toggled via the [features] table in vtcode.toml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8273e1126f3d9d7e38cf1b03c1ba2438054b74ed3c5244b458a991fc86deda54",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+          "git_sha": "876410aaafcc724688bcd43fd3d7c05575789d58",
+          "line_end": 68,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "vinhnx/vtcode",
+          "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/README.md#L66-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d90cf7ce1e5077bf01c5dceea3555dadeea640f19a23433e23796fe78b398a9"
+      ],
+      "text": "The README states the project is in active development and that local inference and some automation flows are experimental and may change between releases."
+    }
+  ],
+  "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 416,
+        "path": "README.md",
+        "size": 26040
+      },
+      {
+        "lines": 289,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 17810
+      },
+      {
+        "lines": 1299,
+        "path": "docs/config/config.md",
+        "size": 65424
+      },
+      {
+        "lines": 88,
+        "path": "docs/guides/permissions.md",
+        "size": 2829
+      },
+      {
+        "lines": 29,
+        "path": "CONTEXT.md",
+        "size": 1009
+      },
+      {
+        "lines": 67,
+        "path": "docs/INDEX.md",
+        "size": 4603
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/styling/ARCHITECTURE.md",
+        "reason": "byte-budget",
+        "size": 12524
+      },
+      {
+        "path": "docs/COMPATIBILITY.md",
+        "reason": "byte-budget",
+        "size": 10422
+      },
+      {
+        "path": "docs/concurrency-improvements-report.md",
+        "reason": "byte-budget",
+        "size": 11744
+      },
+      {
+        "path": "docs/FAQ.md",
+        "reason": "byte-budget",
+        "size": 9264
+      },
+      {
+        "path": "docs/loop-engineering.md",
+        "reason": "file-budget",
+        "size": 2778
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 21881
+      },
+      {
+        "path": "docs/signal_handling.md",
+        "reason": "file-budget",
+        "size": 8777
+      },
+      {
+        "path": "docs/a2a/a2a-protocol.md",
+        "reason": "file-budget",
+        "size": 12224
+      },
+      {
+        "path": "docs/a2a/README.md",
+        "reason": "file-budget",
+        "size": 7761
+      },
+      {
+        "path": "docs/acp/ACP_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 10519
+      },
+      {
+        "path": "docs/acp/ACP_QUICK_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 7220
+      },
+      {
+        "path": "docs/analysis/BLOATY_ANALYSIS.md",
+        "reason": "file-budget",
+        "size": 6330
+      },
+      {
+        "path": "docs/analysis/DRY_DUPLICATION_AUDIT.md",
+        "reason": "file-budget",
+        "size": 7284
+      },
+      {
+        "path": "docs/ansi/ANSI_STRIPPING_GUIDE.md",
+        "reason": "file-budget",
+        "size": 4839
+      },
+      {
+        "path": "docs/ansi/ANSTYLE_CROSSTERM_IMPROVEMENTS.md",
+        "reason": "file-budget",
+        "size": 6088
+      },
+      {
+        "path": "docs/ansi/ANSTYLE_PARSE_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 13814
+      },
+      {
+        "path": "docs/async/README.md",
+        "reason": "file-budget",
+        "size": 702
+      },
+      {
+        "path": "docs/audits/agent-harness-duplication-report.md",
+        "reason": "file-budget",
+        "size": 13252
+      },
+      {
+        "path": "docs/audits/code-review-2026-08-07.md",
+        "reason": "file-budget",
+        "size": 5253
+      },
+      {
+        "path": "docs/audits/code-review-2026-08-10.md",
+        "reason": "file-budget",
+        "size": 4129
+      },
+      {
+        "path": "docs/benchmarks/BENCHMARK_COMPARISON.md",
+        "reason": "file-budget",
+        "size": 9280
+      },
+      {
+        "path": "docs/benchmarks/CHART_GUIDE.md",
+        "reason": "file-budget",
+        "size": 2331
+      },
+      {
+        "path": "docs/benchmarks/COMPARISON.md",
+        "reason": "file-budget",
+        "size": 3174
+      },
+      {
+        "path": "docs/benchmarks/HUMANEVAL_2025-10-22.md",
+        "reason": "file-budget",
+        "size": 7426
+      },
+      {
+        "path": "docs/benchmarks/performance_benchmarks.md",
+        "reason": "file-budget",
+        "size": 8316
+      },
+      {
+        "path": "docs/benchmarks/README.md",
+        "reason": "file-budget",
+        "size": 9719
+      },
+      {
+        "path": "docs/benchmarks/SUMMARY.md",
+        "reason": "file-budget",
+        "size": 2364
+      },
+      {
+        "path": "docs/benchmarks/VISUALIZATION.md",
+        "reason": "file-budget",
+        "size": 5363
+      },
+      {
+        "path": "docs/blog/building-vt-code-a-year-in.md",
+        "reason": "file-budget",
+        "size": 20774
+      },
+      {
+        "path": "docs/build-with-claude/migrating-to-claude-opus-5.md",
+        "reason": "file-budget",
+        "size": 32533
+      },
+      {
+        "path": "docs/config/CONFIG_FIELD_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 123576
+      },
+      {
+        "path": "docs/config/CONFIGURATION_PRECEDENCE.md",
+        "reason": "file-budget",
+        "size": 10241
+      },
+      {
+        "path": "docs/config/TOOLS_CONFIG.md",
+        "reason": "file-budget",
+        "size": 2748
+      },
+      {
+        "path": "docs/context/context_engineering.md",
+        "reason": "file-budget",
+        "size": 12656
+      },
+      {
+        "path": "docs/development/ADDING_MODELS.md",
+        "reason": "file-budget",
+        "size": 9528
+      },
+      {
+        "path": "docs/development/ai-tool-surface-eval-report.md",
+        "reason": "file-budget",
+        "size": 3632
+      },
+      {
+        "path": "docs/development/ai-tool-surface-migration.md",
+        "reason": "file-budget",
+        "size": 2842
+      },
+      {
+        "path": "docs/development/ALLOCATOR_MEMORY.md",
+        "reason": "file-budget",
+        "size": 4812
+      },
+      {
+        "path": "docs/development/asset-synchronization.md",
+        "reason": "file-budget",
+        "size": 1743
+      },
+      {
+        "path": "docs/development/async-performance-audit.md",
+        "reason": "file-budget",
+        "size": 21207
+      },
+      {
+        "path": "docs/development/CGP_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 19431
+      },
+      {
+        "path": "docs/development/CHANGELOG_GENERATION.md",
+        "reason": "file-budget",
+        "size": 6330
+      },
+      {
+        "path": "docs/development/ci-cd.md",
+        "reason": "file-budget",
+        "size": 10152
+      },
+      {
+        "path": "docs/development/COMMAND_SECURITY_MODEL.md",
+        "reason": "file-budget",
+        "size": 22932
+      },
+      {
+        "path": "docs/development/configuration-reload.md",
+        "reason": "file-budget",
+        "size": 3495
+      },
+      {
+        "path": "docs/development/CPP_CORE_GUIDELINES_ADOPTION.md",
+        "reason": "file-budget",
+        "size": 1861
+      },
+      {
+        "path": "docs/development/cross-compilation.md",
+        "reason": "file-budget",
+        "size": 3545
+      },
+      {
+        "path": "docs/development/DESIRE_PATHS.md",
+        "reason": "file-budget",
+        "size": 4992
+      },
+      {
+        "path": "docs/development/DEVELOPMENT_SETUP.md",
+        "reason": "file-budget",
+        "size": 2792
+      },
+      {
+        "path": "docs/development/EXECUTION_POLICY.md",
+        "reason": "file-budget",
+        "size": 11369
+      },
+      {
+        "path": "docs/development/EXTENDED_THINKING.md",
+        "reason": "file-budget",
+        "size": 10907
+      },
+      {
+        "path": "docs/development/EXTENSION_BOUNDARIES.md",
+        "reason": "file-budget",
+        "size": 3827
+      },
+      {
+        "path": "docs/development/fuzzing.md",
+        "reason": "file-budget",
+        "size": 1741
+      },
+      {
+        "path": "docs/development/grep-quick-reference.md",
+        "reason": "file-budget",
+        "size": 6736
+      },
+      {
+        "path": "docs/development/grep-tool-guide.md",
+        "reason": "file-budget",
+        "size": 9074
+      },
+      {
+        "path": "docs/development/model-profiles.md",
+        "reason": "file-budget",
+        "size": 2731
+      },
+      {
+        "path": "docs/development/MODEL_ADDITION_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 7244
+      },
+      {
+        "path": "docs/development/MODEL_ADDITION_WORKFLOW.md",
+        "reason": "file-budget",
+        "size": 6367
+      },
+      {
+        "path": "docs/development/performance-hasher-policy.md",
+        "reason": "file-budget",
+        "size": 985
+      },
+      {
+        "path": "docs/development/performance.md",
+        "reason": "file-budget",
+        "size": 16561
+      },
+      {
+        "path": "docs/development/preview-budget-blocked-replan.md",
+        "reason": "file-budget",
+        "size": 5044
+      },
+      {
+        "path": "docs/development/PROCESS_HARDENING.md",
+        "reason": "file-budget",
+        "size": 4028
+      },
+      {
+        "path": "docs/development/README.md",
+        "reason": "file-budget",
+        "size": 3578
+      },
+      {
+        "path": "docs/development/runtime-guidance.md",
+        "reason": "file-budget",
+        "size": 8317
+      },
+      {
+        "path": "docs/development/rust-performance-principles.md",
+        "reason": "file-budget",
+        "size": 34982
+      },
+      {
+        "path": "docs/development/session-persistence.md",
+        "reason": "file-budget",
+        "size": 2336
+      },
+      {
+        "path": "docs/development/testing.md",
+        "reason": "file-budget",
+        "size": 20761
+      },
+      {
+        "path": "docs/development/tool-summary-display.md",
+        "reason": "file-budget",
+        "size": 6234
+      },
+      {
+        "path": "docs/development/TUI_ONLY_REFACTORING.md",
+        "reason": "file-budget",
+        "size": 6831
+      },
+      {
+        "path": "docs/development/vtcode-binary-gotchas.md",
+        "reason": "file-budget",
+        "size": 14604
+      },
+      {
+        "path": "docs/development/vtcode-crate-audit.md",
+        "reason": "file-budget",
+        "size": 14249
+      },
+      {
+        "path": "docs/development/webmcp.md",
+        "reason": "file-budget",
+        "size": 19548
+      },
+      {
+        "path": "docs/environment/ALLOWED_COMMANDS_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 8414
+      },
+      {
+        "path": "docs/environment/ENVIRONMENT_SETUP_GUIDE.md",
+        "reason": "file-budget",
+        "size": 11817
+      },
+      {
+        "path": "docs/examples/background-subagent-demo.md",
+        "reason": "file-budget",
+        "size": 817
+      },
+      {
+        "path": "docs/features/FILE_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 2832
+      },
+      {
+        "path": "docs/features/GPU_POD_MANAGER.md",
+        "reason": "file-budget",
+        "size": 2516
+      },
+      {
+        "path": "docs/features/SHELL_SNAPSHOT.md",
+        "reason": "file-budget",
+        "size": 6306
+      },
+      {
+        "path": "docs/guides/acp-registry-release-checklist.md",
+        "reason": "file-budget",
+        "size": 3758
+      },
+      {
+        "path": "docs/guides/agent-capability-composition.md",
+        "reason": "file-budget",
+        "size": 5535
+      },
+      {
+        "path": "docs/guides/agent-loop-contract.md",
+        "reason": "file-budget",
+        "size": 28832
+      },
+      {
+        "path": "docs/guides/agent-plugins.md",
+        "reason": "file-budget",
+        "size": 5434
+      },
+      {
+        "path": "docs/guides/async-architecture.md",
+        "reason": "file-budget",
+        "size": 27393
+      },
+      {
+        "path": "docs/guides/cargo-unmaintained.md",
+        "reason": "file-budget",
+        "size": 4741
+      },
+      {
+        "path": "docs/guides/code-organization-patterns.md",
+        "reason": "file-budget",
+        "size": 5348
+      },
+      {
+        "path": "docs/guides/COLOR_GUIDELINES.md",
+        "reason": "file-budget",
+        "size": 6555
+      },
+      {
+        "path": "docs/guides/eval.md",
+        "reason": "file-budget",
+        "size": 2760
+      },
+      {
+        "path": "docs/guides/full-automation.md",
+        "reason": "file-budget",
+        "size": 8724
+      },
+      {
+        "path": "docs/guides/hooks-guide.md",
+        "reason": "file-budget",
+        "size": 8308
+      },
+      {
+        "path": "docs/guides/INIT_COMMAND_GUIDE.md",
+        "reason": "file-budget",
+        "size": 5388
+      },
+      {
+        "path": "docs/guides/inline-ui.md",
+        "reason": "file-budget",
+        "size": 2774
+      },
+      {
+        "path": "docs/guides/lifecycle-hooks.md",
+        "reason": "file-budget",
+        "size": 22281
+      },
+      {
+        "path": "docs/guides/local-models.md",
+        "reason": "file-budget",
+        "size": 4206
+      },
+      {
+        "path": "docs/guides/macos-alt-shortcut-troubleshooting.md",
+        "reason": "file-budget",
+        "size": 8656
+      },
+      {
+        "path": "docs/guides/mcp-integration.md",
+        "reason": "file-budget",
+        "size": 14022
+      },
+      {
+        "path": "docs/guides/memory-management.md",
+        "reason": "file-budget",
+        "size": 13180
+      },
+      {
+        "path": "docs/guides/minimax-integration.md",
+        "reason": "file-budget",
+        "size": 5786
+      },
+      {
+        "path": "docs/guides/oauth-authentication.md",
+        "reason": "file-budget",
+        "size": 16788
+      },
+      {
+        "path": "docs/guides/output_styles.md",
+        "reason": "file-budget",
+        "size": 2165
+      },
+      {
+        "path": "docs/guides/planning-workflow.md",
+        "reason": "file-budget",
+        "size": 32759
+      },
+      {
+        "path": "docs/guides/pty-integration-testing.md",
+        "reason": "file-budget",
+        "size": 3776
+      },
+      {
+        "path": "docs/guides/responses-api-reasoning.md",
+        "reason": "file-budget",
+        "size": 11478
+      },
+      {
+        "path": "docs/guides/status-line.md",
+        "reason": "file-budget",
+        "size": 3436
+      },
+      {
+        "path": "docs/guides/terminal-optimization.md",
+        "reason": "file-budget",
+        "size": 7849
+      },
+      {
+        "path": "docs/guides/terminal-rendering-best-practices.md",
+        "reason": "file-budget",
+        "size": 9383
+      },
+      {
+        "path": "docs/guides/tool_registry.md",
+        "reason": "file-budget",
+        "size": 5908
+      },
+      {
+        "path": "docs/guides/tui-event-handling.md",
+        "reason": "file-budget",
+        "size": 9954
+      },
+      {
+        "path": "docs/guides/tui-library.md",
+        "reason": "file-budget",
+        "size": 1883
+      },
+      {
+        "path": "docs/guides/UPDATE_SYSTEM.md",
+        "reason": "file-budget",
+        "size": 12010
+      },
+      {
+        "path": "docs/guides/user-data-directories.md",
+        "reason": "file-budget",
+        "size": 7852
+      },
+      {
+        "path": "docs/guides/zed-acp.md",
+        "reason": "file-budget",
+        "size": 17472
+      },
+      {
+        "path": "docs/harness/AGENT_LEGIBILITY_GUIDE.md",
+        "reason": "file-budget",
+        "size": 3645
+      },
+      {
+        "path": "docs/harness/ARCHITECTURAL_INVARIANTS.md",
+        "reason": "file-budget",
+        "size": 17245
+      },
+      {
+        "path": "docs/harness/CORE_BELIEFS.md",
+        "reason": "file-budget",
+        "size": 8770
+      },
+      {
+        "path": "docs/harness/EXEC_PLANS.md",
+        "reason": "file-budget",
+        "size": 4607
+      },
+      {
+        "path": "docs/harness/INDEX.md",
+        "reason": "file-budget",
+        "size": 6998
+      },
+      {
+        "path": "docs/harness/prompt-architecture.md",
+        "reason": "file-budget",
+        "size": 7220
+      },
+      {
+        "path": "docs/harness/QUALITY_SCORE.md",
+        "reason": "file-budget",
+        "size": 36892
+      },
+      {
+        "path": "docs/harness/SESSION_LOG_REVIEW.md",
+        "reason": "file-budget",
+        "size": 46243
+      },
+      {
+        "path": "docs/harness/TECH_DEBT_TRACKER.md",
+        "reason": "file-budget",
+        "size": 57229
+      },
+      {
+        "path": "docs/harness/ZEN_ALIGNMENT.md",
+        "reason": "file-budget",
+        "size": 4780
+      },
+      {
+        "path": "docs/huggingface/index.md",
+        "reason": "file-budget",
+        "size": 4806
+      },
+      {
+        "path": "docs/huggingface/vtcode.md",
+        "reason": "file-budget",
+        "size": 5741
+      },
+      {
+        "path": "docs/ide/cursor-windsurf-setup.md",
+        "reason": "file-budget",
+        "size": 3941
+      },
+      {
+        "path": "docs/ide/downloads.md",
+        "reason": "file-budget",
+        "size": 3908
+      },
+      {
+        "path": "docs/ide/editor-context-bridge.md",
+        "reason": "file-budget",
+        "size": 2182
+      },
+      {
+        "path": "docs/ide/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 3162
+      },
+      {
+        "path": "docs/installation/DEVELOPERS.md",
+        "reason": "file-budget",
+        "size": 7908
+      },
+      {
+        "path": "docs/installation/NATIVE_INSTALLERS.md",
+        "reason": "file-budget",
+        "size": 1473
+      },
+      {
+        "path": "docs/installation/QUICK_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 4454
+      },
+      {
+        "path": "docs/installation/README.md",
+        "reason": "file-budget",
+        "size": 6276
+      },
+      {
+        "path": "docs/mcp/MCP_INTEGRATION_GUIDE.md",
+        "reason": "file-budget",
+        "size": 13937
+      },
+      {
+        "path": "docs/modules/println_tui_audit.md",
+        "reason": "file-budget",
+        "size": 4055
+      },
+      {
+        "path": "docs/modules/vtcode_a2a.md",
+        "reason": "file-budget",
+        "size": 2216
+      },
+      {
+        "path": "docs/modules/vtcode_agent_plugins.md",
+        "reason": "file-budget",
+        "size": 3750
+      },
+      {
+        "path": "docs/modules/vtcode_bash_runner.md",
+        "reason": "file-budget",
+        "size": 5623
+      },
+      {
+        "path": "docs/modules/vtcode_commons_reference.md",
+        "reason": "file-budget",
+        "size": 3391
+      },
+      {
+        "path": "docs/modules/vtcode_config_migration.md",
+        "reason": "file-budget",
+        "size": 4978
+      },
+      {
+        "path": "docs/modules/vtcode_docs_map.md",
+        "reason": "file-budget",
+        "size": 87023
+      },
+      {
+        "path": "docs/modules/vtcode_exec_events.md",
+        "reason": "file-budget",
+        "size": 8880
+      },
+      {
+        "path": "docs/modules/vtcode_indexer.md",
+        "reason": "file-budget",
+        "size": 4002
+      },
+      {
+        "path": "docs/modules/vtcode_llm.md",
+        "reason": "file-budget",
+        "size": 3235
+      },
+      {
+        "path": "docs/modules/vtcode_llm_environment.md",
+        "reason": "file-budget",
+        "size": 7366
+      },
+      {
+        "path": "docs/modules/vtcode_markdown_store.md",
+        "reason": "file-budget",
+        "size": 3954
+      },
+      {
+        "path": "docs/modules/vtcode_mcp.md",
+        "reason": "file-budget",
+        "size": 2389
+      },
+      {
+        "path": "docs/modules/vtcode_safety.md",
+        "reason": "file-budget",
+        "size": 2176
+      },
+      {
+        "path": "docs/modules/vtcode_skills.md",
+        "reason": "file-budget",
+        "size": 2576
+      },
+      {
+        "path": "docs/modules/vtcode_tools_policy.md",
+        "reason": "file-budget",
+        "size": 1281
+      },
+      {
+        "path": "docs/modules/vtcode_ui.md",
+        "reason": "file-budget",
+        "size": 1833
+      },
+      {
+        "path": "docs/project/code-review-action-plan.md",
+        "reason": "file-budget",
+        "size": 10648
+      },
+      {
+        "path": "docs/project/PLAN-loop-engineering.md",
+        "reason": "file-budget",
+        "size": 3766
+      },
+      {
+        "path": "docs/project/ROADMAP.md",
+        "reason": "file-budget",
+        "size": 10712
+      },
+      {
+        "path": "docs/project/TODO.md",
+        "reason": "file-budget",
+        "size": 0
+      },
+      {
+        "path": "docs/project/vtcode-project-info.md",
+        "reason": "file-budget",
+        "size": 682
+      },
+      {
+        "path": "docs/protocols/ATIF_TRAJECTORY_FORMAT.md",
+        "reason": "file-budget",
+        "size": 7932
+      },
+      {
+        "path": "docs/protocols/KITTY_KEYBOARD_PROTOCOL_RESTORATION.md",
+        "reason": "file-budget",
+        "size": 6841
+      },
+      {
+        "path": "docs/protocols/LANGUAGE_SUPPORT.md",
+        "reason": "file-budget",
+        "size": 2583
+      },
+      {
+        "path": "docs/protocols/OPEN_RESPONSES.md",
+        "reason": "file-budget",
+        "size": 14670
+      },
+      {
+        "path": "docs/protocols/XDG_DIRECTORY_SPECIFICATION.md",
+        "reason": "file-budget",
+        "size": 6564
+      },
+      {
+        "path": "docs/protocols/ZED_EXTENSION_FILE_SEARCH.md",
+        "reason": "file-budget",
+        "size": 8773
+      },
+      {
+        "path": "docs/providers/atlascloud.md",
+        "reason": "file-budget",
+        "size": 5362
+      },
+      {
+        "path": "docs/providers/copilot.md",
+        "reason": "file-budget",
+        "size": 1836
+      },
+      {
+        "path": "docs/providers/llamacpp.md",
+        "reason": "file-budget",
+        "size": 2119
+      },
+      {
+        "path": "docs/providers/lmstudio-quick-reference.md",
+        "reason": "file-budget",
+        "size": 3218
+      },
+      {
+        "path": "docs/providers/lmstudio.md",
+        "reason": "file-budget",
+        "size": 7541
+      },
+      {
+        "path": "docs/providers/LMSTUDIO_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 9254
+      },
+      {
+        "path": "docs/providers/local-servers.md",
+        "reason": "file-budget",
+        "size": 9542
+      },
+      {
+        "path": "docs/providers/merge-gateway-quick-reference.md",
+        "reason": "file-budget",
+        "size": 1700
+      },
+      {
+        "path": "docs/providers/merge-gateway.md",
+        "reason": "file-budget",
+        "size": 7012
+      },
+      {
+        "path": "docs/providers/meta-quick-reference.md",
+        "reason": "file-budget",
+        "size": 585
+      },
+      {
+        "path": "docs/providers/meta.md",
+        "reason": "file-budget",
+        "size": 2223
+      },
+      {
+        "path": "docs/providers/nvidia-quick-reference.md",
+        "reason": "file-budget",
+        "size": 732
+      },
+      {
+        "path": "docs/providers/nvidia.md",
+        "reason": "file-budget",
+        "size": 2148
+      },
+      {
+        "path": "docs/providers/ollama-quick-reference.md",
+        "reason": "file-budget",
+        "size": 3240
+      },
+      {
+        "path": "docs/providers/ollama.md",
+        "reason": "file-budget",
+        "size": 8307
+      },
+      {
+        "path": "docs/providers/OLLAMA_INDEX.md",
+        "reason": "file-budget",
+        "size": 9712
+      },
+      {
+        "path": "docs/providers/omniroute.md",
+        "reason": "file-budget",
+        "size": 3953
+      },
+      {
+        "path": "docs/providers/openrouter.md",
+        "reason": "file-budget",
+        "size": 2856
+      },
+      {
+        "path": "docs/providers/PROVIDER_GUIDES.md",
+        "reason": "file-budget",
+        "size": 34415
+      },
+      {
+        "path": "docs/providers/vercel-ai-gateway-quick-reference.md",
+        "reason": "file-budget",
+        "size": 1469
+      },
+      {
+        "path": "docs/providers/vercel-ai-gateway.md",
+        "reason": "file-budget",
+        "size": 5254
+      },
+      {
+        "path": "docs/providers/zai-quick-reference.md",
+        "reason": "file-budget",
+        "size": 993
+      },
+      {
+        "path": "docs/providers/zai.md",
+        "reason": "file-budget",
+        "size": 6363
+      },
+      {
+        "path": "docs/pty/PTY_ANSI_HANDLING.md",
+        "reason": "file-budget",
+        "size": 6089
+      },
+      {
+        "path": "docs/pty/PTY_PIPE_INFRASTRUCTURE.md",
+        "reason": "file-budget",
+        "size": 11981
+      },
+      {
+        "path": "docs/reference/ansi-escape-sequences.md",
+        "reason": "file-budget",
+        "size": 26415
+      },
+      {
+        "path": "docs/reference/ansi-in-vtcode.md",
+        "reason": "file-budget",
+        "size": 16902
+      },
+      {
+        "path": "docs/reference/ansi-quick-reference.md",
+        "reason": "file-budget",
+        "size": 5719
+      },
+      {
+        "path": "docs/reference/README.md",
+        "reason": "file-budget",
+        "size": 6870
+      },
+      {
+        "path": "docs/reference/webmcp.md",
+        "reason": "file-budget",
+        "size": 5255
+      },
+      {
+        "path": "docs/sandbox/SANDBOX_DEEP_DIVE.md",
+        "reason": "file-budget",
+        "size": 7319
+      },
+      {
+        "path": "docs/sandbox/SANDBOX_FIELD_GUIDE.md",
+        "reason": "file-budget",
+        "size": 7021
+      },
+      {
+        "path": "docs/security/SECURITY_DOCUMENTATION_INDEX.md",
+        "reason": "file-budget",
+        "size": 5533
+      },
+      {
+        "path": "docs/security/SECURITY_MODEL.md",
+        "reason": "file-budget",
+        "size": 16256
+      },
+      {
+        "path": "docs/security/SECURITY_WEB_FETCH.md",
+        "reason": "file-budget",
+        "size": 5373
+      },
+      {
+        "path": "docs/security/UNSAFE_INVENTORY.md",
+        "reason": "file-budget",
+        "size": 3681
+      },
+      {
+        "path": "docs/skills/AGENT_SKILLS_SPEC_IMPLEMENTATION.md",
+        "reason": "file-budget",
+        "size": 2046
+      },
+      {
+        "path": "docs/skills/CONTAINER_GUIDE.md",
+        "reason": "file-budget",
+        "size": 8279
+      },
+      {
+        "path": "docs/skills/NATIVE_PLUGIN_GUIDE.md",
+        "reason": "file-budget",
+        "size": 13210
+      },
+      {
+        "path": "docs/skills/NATIVE_PLUGIN_IMPLEMENTATION.md",
+        "reason": "file-budget",
+        "size": 12832
+      }
+    ],
+    "omitted_count": 240,
+    "omitted_slices": 55,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3201,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 246,
+      "complete": false,
+      "omitted": 240,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_20dc6fb8c9c15a1a8effe78f2b3a1f7e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/vinhnx/vtcode/18f7d26c76e28ab83e3de4bec4874f5fc9264190/d83edd9c49fa70e2/manifest.json",
+  "package_id": "pkg_6f8d2d96e6faa5d07b94593700fcc2625caa57a77f3aac35afc90646c357b047",
+  "repo": "vinhnx/vtcode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "efb7f0f156d988cd5eb7feecb5075ca839d15a93d6dacdba5fa705cbedbf53c5",
+  "snapshot_id": "d83edd9c49fa70e2",
+  "sources": [
+    {
+      "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+      "git_sha": "3b05a657abcc325c8c865091f7abf962fda64418",
+      "lines": 29,
+      "path": "CONTEXT.md",
+      "repository": "vinhnx/vtcode",
+      "sha256": "242449769d76a39a85f674b7c9d3863b4245cf7bed97ae646d01e17ccae4a728",
+      "source_id": "src_9602389844c656088b8839c860a61877",
+      "stored": "context.md-86fee53c3330.md",
+      "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/CONTEXT.md"
+    },
+    {
+      "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+      "git_sha": "876410aaafcc724688bcd43fd3d7c05575789d58",
+      "lines": 416,
+      "path": "README.md",
+      "repository": "vinhnx/vtcode",
+      "sha256": "9b0333f52b11a56190ee16df7fbbcde54a68e697b34ce8a81e4f561e78c7184b",
+      "source_id": "src_8f7d27a517cb545db73607c1d4b75f5f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/README.md"
+    },
+    {
+      "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+      "git_sha": "e5b98c21ae5dd89b178571b5e4f4b196c3b71104",
+      "lines": 289,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "vinhnx/vtcode",
+      "sha256": "10df301179438bb8049ad017f5f69689f5649882fc146e39d83cea70490f084a",
+      "source_id": "src_9bc7d5b495a655f68373ea3e83f82d48",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/ARCHITECTURE.md"
+    },
+    {
+      "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+      "git_sha": "756202058e1a2d9dd87d12aac2838219d480d1e9",
+      "lines": 67,
+      "path": "docs/INDEX.md",
+      "repository": "vinhnx/vtcode",
+      "sha256": "71eb022a9edaf9446b1a40dbffe96a8e709d073fd39f6e9db066ffee5562c701",
+      "source_id": "src_b48375c53ecf55bba1a14f5e287dce67",
+      "stored": "index.md-d08e66411886.md",
+      "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/INDEX.md"
+    },
+    {
+      "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+      "git_sha": "7252a534621ef116f2fec0e32612a8be9fd177cc",
+      "lines": 1299,
+      "path": "docs/config/config.md",
+      "repository": "vinhnx/vtcode",
+      "sha256": "ab0f43b1a5acc631ec2a61dd16070303e7bc1f28c01a660bc708fe831f27977b",
+      "source_id": "src_5774b46e756b59c487a8c1654de38cd9",
+      "stored": "config.md-bcc8bf4beca3.md",
+      "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/config/config.md"
+    },
+    {
+      "commit": "18f7d26c76e28ab83e3de4bec4874f5fc9264190",
+      "git_sha": "34c27e89e7064e0e9aa89953e1913c93a880e099",
+      "lines": 88,
+      "path": "docs/guides/permissions.md",
+      "repository": "vinhnx/vtcode",
+      "sha256": "53eb976ddb163b6c51d41bc8a498b01a650a5cc6c16d637c7ef71a9fdc9f5e7f",
+      "source_id": "src_59adfdfb964b57698e066fc5ae971008",
+      "stored": "permissions.md-7f673e3f283d.md",
+      "url": "https://github.com/vinhnx/VTCode/blob/18f7d26c76e28ab83e3de4bec4874f5fc9264190/docs/guides/permissions.md"
+    }
+  ],
+  "summary": "VT Code is a Rust terminal coding agent with a harness architecture (tools, sandbox, context compaction, event stream), TOML-based layered configuration with live reload, and documented plan/build/evaluate orchestration and delegation semantics. Evidence is documentation-heavy; no contributor workflow or eval-harness execution evidence appears in these slices. Evidence coverage: 132 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

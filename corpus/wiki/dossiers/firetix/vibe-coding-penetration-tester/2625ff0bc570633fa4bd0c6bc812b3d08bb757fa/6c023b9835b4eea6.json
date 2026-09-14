@@ -1,0 +1,581 @@
+{
+  "applied_operation_id": "op_6703a04bdc4f40cc88801baf7c3f0d28",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6f460a68f770910367b48ae7e4e9f815391d8b7a7b9b45bd3e2fa149886465d2",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bf8a1a96c6d764da24c6be19af1f3c78a58e5bd9071f708abc5385900488f1a6"
+      ],
+      "text": "The tool coordinates specialized security agents to discover and validate common web vulnerabilities and generates reproducible Markdown and JSON reports."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_626a316d06dbb7623bb1e571087a3af8450e71dc2cc21e998b84bd7b3801d1a2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 31,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L23-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_601a2b4bab176e60ceab97ef47f6a6ce4fc5e0ddc891bb0dfa9a81046957ba32"
+      ],
+      "text": "The repository includes a CLI entrypoint (main.py), modular Flask web API (run_web.py, web_api/), a legacy web_ui.py, agents/, tools/, and sample reports directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f51319fe06d48e12e29f488bae3973f72bbab7ae627bbfd60afe833ce4cb0c3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 142,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L134-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_826d23061ddb036c1ac19af1950801ae5b63ab3c382f92976e5b4c9412f752f9"
+      ],
+      "text": "The CLI accepts --url (required), --model (default gpt-5.2), --provider (openai/anthropic/ollama), --scope, --output, --verbose, and --ollama-url options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e5c65a5f83a2f8f61e998d1dc8051d28918a78f9111e0b7711ba0aae5150e8c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 181,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L169-L181"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0548b17dda210725cdd79ed43e4e69c6d8074b9dcb0a8ee91e34de96b995a2c8"
+      ],
+      "text": "The modular web app exposes session, scan, activity, logs, and report endpoints such as POST /api/scan/start, POST /api/scan/cancel, and GET /api/report/<report_id>."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0707f126ddaecea3908de8cce39a5b9d9b743e28a547e1e5dde62cf52a7aa2fe",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 189,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L185-L189"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e3729715ed6bfc7afdc3099452ff8919397abc3561a0c5fc44e8a8f62c16042"
+      ],
+      "text": "Optional hosted/billing endpoints include GET /api/entitlements, POST /api/billing/checkout, and POST /api/billing/webhook, plus a mock checkout route for local/test setups."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_679ef622b467298283b7c8bb9e00843c131bb668c3c01447ac8d229363a45304",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 19,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L13-L19"
+        },
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 142,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L134-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6dd601d52fbe6cf9cad9f2bd5a25aa6711f646bb7f3b524d185988bddcd47102",
+        "slc_826d23061ddb036c1ac19af1950801ae5b63ab3c382f92976e5b4c9412f752f9"
+      ],
+      "text": "Scanning is scope-aware with three scope modes: url, domain, and subdomain."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87ca730efa1d9fe6ab0bcd3f89805a1b759f4929b8fdd78256393e0629272474",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "4f24c47956e6b5d12c923c97454703f1c1c410dd",
+          "line_end": 17,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/requirements.txt#L1-L17"
+        },
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "4f24c47956e6b5d12c923c97454703f1c1c410dd",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "requirements.txt",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/requirements.txt#L20-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_555e28c7e4d832333804b2f6f094a336c8794c9a7eea9decbf8133c362debb0a",
+        "slc_948b69275a5930c24e1ff8fd16c32bbe6a557a7724df6c6e6c1769ec1b27cb17"
+      ],
+      "text": "requirements.txt pins openai, anthropic, playwright, flask, fastapi, uvicorn, pydantic, PyJWT, psycopg, and pytest-based test dependencies, among others."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_139af722d641765e06102a34b79f07fcbd173fd9e1f336b8fe2cf4e055c645e9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 40,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L35-L40"
+        },
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 65,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L61-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_092e50ae6643746af18cd06684f97a3a76e4b957261ce3a5691ade9c88da2885",
+        "slc_23e41bed1bd6386308d52fd8368adcad0e1b5c7503787a7555d822de4b8cf8d0"
+      ],
+      "text": "The tool requires at least one LLM provider: an OpenAI API key, an Anthropic API key, or an Ollama server (default localhost:11434)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a96814219c2c3881607dc4a6d540fffa933bdb3c6484f45011dbcc4af020bc12",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 19,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L13-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6dd601d52fbe6cf9cad9f2bd5a25aa6711f646bb7f3b524d185988bddcd47102"
+      ],
+      "text": "A multi-agent scan workflow covers discovery, planning, and vulnerability testing, with browser automation via Playwright for realistic interaction testing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef92a2c52270253cf575972246765e73d36efe62c92582a23b59fa0a5963c1b4",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "cf112b21d7100ab636289c83fa81a76305315d23",
+          "line_end": 56,
+          "line_start": 50,
+          "path": "README_SESSION_FIX.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README_SESSION_FIX.md#L50-L56"
+        },
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "cf112b21d7100ab636289c83fa81a76305315d23",
+          "line_end": 18,
+          "line_start": 14,
+          "path": "README_SESSION_FIX.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README_SESSION_FIX.md#L14-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ea81e4841eafb0f86d9c9521e604b727676596d581486cbeed6c3742ee861e5",
+        "slc_744bfbd7794580a4ead2985f35ac3162eaf587ba8ac8fe119bfa7880d22dfc19"
+      ],
+      "text": "A session fix added Flask session cookies, cookie-prioritized session tracking, and file-based session persistence so sessions survive server restarts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_709d309b198df576f606e6af6f740b58aead3524c8d51bfaa114081ac1011434",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 209,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L203-L209"
+        },
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 195,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L195-L195"
+        },
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 211,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L211-L211"
+        },
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 199,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L197-L199"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01b75a612854c9805d7e6bcef4112f349a5e4c345dfba7b0425e30dcac8b9d92",
+        "slc_141fd355248827b4b96ff740749bde065db27d7a542343decd1f47aa8e886eac",
+        "slc_1ab6627455b603f53ce1f6061a53ed8dc9916113b1cc463540b1f6b47f36b697",
+        "slc_1e3d5fd37596d068476176251b98344793f32694ae9ae18a31c8225c9ab5e111"
+      ],
+      "text": "Repository development practice: tests are run via ./run_tests.sh or focused pytest suites (unit, integration, API E2E, frontend E2E, Vercel preview) with markers defined in pytest.ini."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4354df2c66fca2a8a051be85864e2fc8b18947e1e5550c73beedabeb8b226ee0",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+          "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+          "line_end": 228,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "firetix/vibe-coding-penetration-tester",
+          "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md#L228-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_156023bfc3366fcc66425287fedefb4b19854853415cb5054685b1c71a815277"
+      ],
+      "text": "The tool is restricted by its own notice to targets the user owns or has explicit authorization to test; unauthorized scanning may violate law and policy."
+    }
+  ],
+  "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 236,
+        "path": "README.md",
+        "size": 6974
+      },
+      {
+        "lines": 42,
+        "path": "BACKLOG.md",
+        "size": 1400
+      },
+      {
+        "lines": 56,
+        "path": "README_SESSION_FIX.md",
+        "size": 3558
+      },
+      {
+        "lines": 63,
+        "path": "README_WEB_UI.md",
+        "size": 1332
+      },
+      {
+        "lines": 17,
+        "path": "requirements-vercel.txt",
+        "size": 347
+      },
+      {
+        "lines": 23,
+        "path": "requirements.txt",
+        "size": 385
+      }
+    ],
+    "omitted": [
+      {
+        "path": "VERCEL_DEPLOYMENT.md",
+        "reason": "file-budget",
+        "size": 5213
+      },
+      {
+        "path": "walkthrough_juice_shop.md",
+        "reason": "file-budget",
+        "size": 16583
+      },
+      {
+        "path": "docs/endpoints.md",
+        "reason": "file-budget",
+        "size": 6777
+      },
+      {
+        "path": "docs/learned.md",
+        "reason": "file-budget",
+        "size": 4974
+      },
+      {
+        "path": "docs/owasp_juice_shop_improvements.md",
+        "reason": "file-budget",
+        "size": 7166
+      },
+      {
+        "path": "docs/refactoring_summary.md",
+        "reason": "file-budget",
+        "size": 5123
+      },
+      {
+        "path": "docs/saas_readiness.md",
+        "reason": "file-budget",
+        "size": 7920
+      },
+      {
+        "path": "docs/security_improvements.md",
+        "reason": "file-budget",
+        "size": 7386
+      },
+      {
+        "path": "docs/ssrf_agent_implementation.md",
+        "reason": "file-budget",
+        "size": 3858
+      },
+      {
+        "path": "docs/vercel_deployment_fix.md",
+        "reason": "file-budget",
+        "size": 2931
+      },
+      {
+        "path": "docs/web_api_refactoring.md",
+        "reason": "file-budget",
+        "size": 4361
+      },
+      {
+        "path": "docs/webui-description.txt",
+        "reason": "file-budget",
+        "size": 1094
+      },
+      {
+        "path": "docs/xss_agent_implementation.md",
+        "reason": "file-budget",
+        "size": 7225
+      }
+    ],
+    "omitted_count": 13,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 174,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 19,
+      "complete": false,
+      "omitted": 13,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_3fe9d3134f7956a293587d3b44dfb777",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/firetix/vibe-coding-penetration-tester/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/6c023b9835b4eea6/manifest.json",
+  "package_id": "pkg_efb043d04b027212608992297c4dc058faeab1c4bdbd6d927d943250fcd257a2",
+  "repo": "firetix/vibe-coding-penetration-tester",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7d55a2f4e288143f8a2e3184604902eddafa7ce17ede201d7d3ab786a44b4cd1",
+  "snapshot_id": "6c023b9835b4eea6",
+  "sources": [
+    {
+      "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+      "git_sha": "a679d547f6266b501a2bccdda14b145f8d57c63e",
+      "lines": 42,
+      "path": "BACKLOG.md",
+      "repository": "firetix/vibe-coding-penetration-tester",
+      "sha256": "7ec8bee7beedb8641446ff4007e745c988408d2c26a2e501024c67d64e10f8af",
+      "source_id": "src_ef57be9fffda5c779f863aa708367867",
+      "stored": "backlog.md-7f701df4f6df.md",
+      "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/BACKLOG.md"
+    },
+    {
+      "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+      "git_sha": "6ee5076cc22af0fd09b6c5002cc9cd1e9fe5a2dc",
+      "lines": 236,
+      "path": "README.md",
+      "repository": "firetix/vibe-coding-penetration-tester",
+      "sha256": "b012a52e778690e8049541848212376462404dc2034d1f5c1f93b6d64b1d4a60",
+      "source_id": "src_f1ff546ea227596882f7f4dce678ca93",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README.md"
+    },
+    {
+      "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+      "git_sha": "cf112b21d7100ab636289c83fa81a76305315d23",
+      "lines": 56,
+      "path": "README_SESSION_FIX.md",
+      "repository": "firetix/vibe-coding-penetration-tester",
+      "sha256": "4a559ebff2b6213f07664d9a9cf86a9decb7b660bab1e9a4b9cac4ae13cc9520",
+      "source_id": "src_960f9bf097fb5d389393bb0c3ead840d",
+      "stored": "readme_session_fix.md-4d5bf1b67ac2.md",
+      "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README_SESSION_FIX.md"
+    },
+    {
+      "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+      "git_sha": "2a2ca3268a147a2e249da44eec773607a09f3bb5",
+      "lines": 63,
+      "path": "README_WEB_UI.md",
+      "repository": "firetix/vibe-coding-penetration-tester",
+      "sha256": "4f5c4fa906219fd1ecd753d1aa593b96db4d08c0bb7740738fb1d761cb48076e",
+      "source_id": "src_d93b51889e0050909a7a9fe04eef7f62",
+      "stored": "readme_web_ui.md-623ae2e607c3.md",
+      "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/README_WEB_UI.md"
+    },
+    {
+      "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+      "git_sha": "42f4fd7fed3a44682f0429c311f8ae75d4f4a7ab",
+      "lines": 17,
+      "path": "requirements-vercel.txt",
+      "repository": "firetix/vibe-coding-penetration-tester",
+      "sha256": "c067d4f299a0a0d60de6a1a2e041db554c889be604f9bf0de69f9e27d6431ba8",
+      "source_id": "src_1a1f0a27c01653569538f35f9f43304c",
+      "stored": "requirements-vercel.txt-d5e7c12bd7e2.txt",
+      "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/requirements-vercel.txt"
+    },
+    {
+      "commit": "2625ff0bc570633fa4bd0c6bc812b3d08bb757fa",
+      "git_sha": "4f24c47956e6b5d12c923c97454703f1c1c410dd",
+      "lines": 23,
+      "path": "requirements.txt",
+      "repository": "firetix/vibe-coding-penetration-tester",
+      "sha256": "4d00c2654777feb3920b63c6d71d2caac66d08eabea7f255634ee039f65473cb",
+      "source_id": "src_98ea06f052425155a5b79383a3433dd8",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/firetix/vibe-coding-penetration-tester/blob/2625ff0bc570633fa4bd0c6bc812b3d08bb757fa/requirements.txt"
+    }
+  ],
+  "summary": "VibePenTester is an AI-assisted web security scanner with a multi-agent CLI and Flask web UI, supporting OpenAI/Anthropic/Ollama providers, Playwright automation, scope-aware scanning, and Markdown/JSON report generation. Evidence is mostly README documentation; no agent source code is included in the slices.",
+  "superseded_claim_ids": []
+}

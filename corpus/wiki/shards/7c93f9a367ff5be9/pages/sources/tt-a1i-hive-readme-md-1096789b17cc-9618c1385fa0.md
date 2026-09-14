@@ -1,0 +1,52 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_06eeb9b112005d4f77656715d8e43968151aff2864ba5ded782ac5967ebb0b1b
+- clm_14a7556807ef01215f295139cef32b37e1adfaf16290c5fcf174b9d2add04045
+- clm_1f30d7325dee632d4e90818049be47911d2f936c813f7323da9584967dc6e44d
+- clm_275ef0ca4ddc880471f825963dee1fe42aa3e6acd15dfefc46f37d6f765712e6
+- clm_2c8f27c6e25a8b43d64c55dfb011a70ee27104b315e06d764f385195438b8596
+- clm_31a60a9f9b9229542963b9ff3473fa0aeccdf2771f9a11da9896ce8c64dbb783
+- clm_370da2c42b4f1bb160c4f4bb855465d7a231e71a15f6b57e211124eae72a6c9a
+- clm_545826e3e56ae737a858c1c5741e46b7508d82fb8aa20bd7338db4fda4c517f5
+- clm_7741b9c5651ebf26cf106aff78086a89cea6d7e17c1efc939f9ba1f46106bae3
+- clm_815b740adffdb023271ef1961cb39cee10173648245cdda3f4760f496689b819
+- clm_95c31f7f9e6ac56d3d42db7a1bdf29808e32383b1e78f700e9e59904b6f7940d
+- clm_b856361d8448c23b5ed4eb44f2b868a2f4875fc74461780e281f23fc28adae3c
+- clm_cc624db332fe4912c8f74607df88f39cd1efd535f6ec9489af09c300c9792b71
+- clm_eae4861820d35373f3b20253dd2983e74635ee9065b4dd4534f56527111d061b
+- clm_f70a5580df06360455211a27adfac197f86b2a2ffcf00c6dfe1d0903d23ea8ba
+maturity: draft
+page_id: pg_662b4871b60e5f8692069618c1385fa0
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_c3192e1b0d6b56b18d51856b0b18c0bd
+title: tt-a1i/hive/README.md @ 1096789b17cc
+updated_at: '2026-09-14T04:59:23Z'
+---
+
+# tt-a1i/hive/README.md @ 1096789b17cc
+
+<!-- rcw:begin owner=source:src_c3192e1b0d6b56b18d51856b0b18c0bd block=evidence -->
+- Hive does not provide sandboxing, multi-user authentication, or any bundled agent model; it coordinates CLIs the user already runs locally, and same-machine processes reaching the local port are treated as trusted. [@claim:clm_06eeb9b112005d4f77656715d8e43968151aff2864ba5ded782ac5967ebb0b1b]
+- The web shell is installable as a PWA in Chromium browsers via the omnibox install icon, with a service worker that caches the SPA shell and assets but never intercepts /api/*, /ws/*, or non-GET requests. [@claim:clm_14a7556807ef01215f295139cef32b37e1adfaf16290c5fcf174b9d2add04045]
+- Hive is local-first: the runtime binds to 127.0.0.1, stores SQLite metadata under ~/.config/hive (or %APPDATA%\hive on Windows, or $HIVE_DATA_DIR), and the browser UI talks to it over HTTP and WebSocket. [@claim:clm_1f30d7325dee632d4e90818049be47911d2f936c813f7323da9584967dc6e44d]
+- An experimental Workflows feature (off by default) lets the Orchestrator author and run multi-stage multi-agent workflows, with a Workflows panel showing runs, phase results, logs, schedules, and stop controls, plus a CLI policy for workflow-created agents. [@claim:clm_275ef0ca4ddc880471f825963dee1fe42aa3e6acd15dfefc46f37d6f765712e6]
+- Hive runs CLI agents (Claude Code, Codex, Gemini, OpenCode, Qwen, and others) as real PTY processes on the local machine, with a browser workbench where an Orchestrator plans and delegates to workers. [@claim:clm_2c8f27c6e25a8b43d64c55dfb011a70ee27104b315e06d764f385195438b8596]
+- The shared task graph is a markdown file at `<workspace>/.hive/tasks.md` that users can inspect or edit outside the app, and the editor handles external-file conflicts with Reload/Keep Local options. [@claim:clm_31a60a9f9b9229542963b9ff3473fa0aeccdf2771f9a11da9896ce8c64dbb783]
+- Repository development practice: contributors develop with pnpm (`pnpm install`, `pnpm dev`, `pnpm check`, `pnpm build`, `pnpm test`); dev mode runs the runtime on port 4010 with Vite on 5180 proxying API and WebSocket traffic. [@claim:clm_370da2c42b4f1bb160c4f4bb855465d7a231e71a15f6b57e211124eae72a6c9a]
+- Hive targets users who already run CLI agents and want coordination for multi-agent work such as implement/review splits, parallel bug hunts, and research/draft/fact-check pipelines, without juggling terminal windows. [@claim:clm_545826e3e56ae737a858c1c5741e46b7508d82fb8aa20bd7338db4fda4c517f5]
+- Optional Remote access (off by default) pairs a phone to the desktop via a desktop-confirmed pairing flow and relays through an end-to-end encrypted gateway; paired devices have the same authority as the local browser and can be revoked, and CLI subcommands like `hive remote login/status/devices/revoke` manage it. [@claim:clm_7741b9c5651ebf26cf106aff78086a89cea6d7e17c1efc939f9ba1f46106bae3]
+- Hive requires Node.js 22 or newer and depends on native packages node-pty and better-sqlite3, so native build tooling may be needed when prebuilt binaries are unavailable; agent CLIs must be installed and authenticated by the user, not by Hive. [@claim:clm_815b740adffdb023271ef1961cb39cee10173648245cdda3f4760f496689b819]
+- No evidence in the provided slices describes any benchmark or success-rate evaluation of the agent system; the only test-related material is the repository's own `pnpm test` check, so agent performance evaluation appears undocumented here. [@claim:clm_95c31f7f9e6ac56d3d42db7a1bdf29808e32383b1e78f700e9e59904b6f7940d]
+- A fully client-side demo mode (fake orchestrator plus two workers with prerecorded scrollback and a prefilled task list) is available from the first-run wizard without a server or any real CLI agent. [@claim:clm_b856361d8448c23b5ed4eb44f2b868a2f4875fc74461780e281f23fc28adae3c]
+- The Orchestrator is itself a real agent CLI process, not a scripted manager; it dispatches tasks with `team send <worker> "<task>"` and workers report back with `team report`. [@claim:clm_cc624db332fe4912c8f74607df88f39cd1efd535f6ec9489af09c300c9792b71]
+- Auto-staff (experimental, on by default) lets the Orchestrator `team spawn` temporary coders, testers, and reviewers sized to the task, and Hive dismisses those ephemeral workers once their dispatch reports back. [@claim:clm_eae4861820d35373f3b20253dd2983e74635ee9065b4dd4534f56527111d061b]
+- Built-in agent presets intentionally launch CLIs in bypass/non-interactive modes (e.g. `--dangerously-skip-permissions` for Claude Code, `--yolo` for Gemini), so workers can run arbitrary shell commands in the workspace; Hive provides no sandboxing or multi-user auth. [@claim:clm_f70a5580df06360455211a27adfac197f86b2a2ffcf00c6dfe1d0903d23ea8ba]
+<!-- rcw:end owner=source:src_c3192e1b0d6b56b18d51856b0b18c0bd block=evidence -->
+
+## Researcher notes
+

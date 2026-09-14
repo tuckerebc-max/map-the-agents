@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_12927fb27a32f0a9d9073ba18ca2356d23821e5278496157d0bab9c01285491a
+- clm_2da8b55a893cf688d69a9bc5e006ef3e86df49a93363fea71d6c5e071f245fe0
+- clm_32d70eea2e0174e3c1a33f7b777aab2607f88ea168831d9fbf731cdca11f97ae
+- clm_57ea161699f57efae65e1ac91d6b813e860bcfa53d7f4ca1714d4d1e3ce2db41
+- clm_85a40ca1ad8383ee2b6bdcaecb2efa89537a1eb64a2ef5e4642c562cf0fcbf2b
+- clm_c21c62bcdd3cd4f8a8777b7169b7049a84dc31f39687fb31a73ed2168a0088b1
+- clm_cc931935eb009d5c110d53a5f12435ad566803ede7cbc6a16a295e257b8130fe
+- clm_f8738aa59c6a9d429b4c4be962882be6d0d059c199050f6e2301a83eaa0d849b
+- clm_fccc32c68bfcc4fac2f1abec9278309c026b0787818b993b90ecbc9df7c45425
+maturity: draft
+page_id: pg_32f9235a510b548f92a0a76efc1793cf
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: tegridydev/multi-agent-secops-llm
+updated_at: '2026-09-14T04:25:30Z'
+---
+
+# tegridydev/multi-agent-secops-llm
+
+<!-- rcw:begin owner=entity:ent_fd13bfe2408358ee966ac9624d9b13f7 block=evidence -->
+- tegridydev/multi-agent-secops-llm is mentioned in this evidence. [@claim:clm_12927fb27a32f0a9d9073ba18ca2356d23821e5278496157d0bab9c01285491a] [@claim:clm_2da8b55a893cf688d69a9bc5e006ef3e86df49a93363fea71d6c5e071f245fe0] [@claim:clm_32d70eea2e0174e3c1a33f7b777aab2607f88ea168831d9fbf731cdca11f97ae] [@claim:clm_57ea161699f57efae65e1ac91d6b813e860bcfa53d7f4ca1714d4d1e3ce2db41] [@claim:clm_85a40ca1ad8383ee2b6bdcaecb2efa89537a1eb64a2ef5e4642c562cf0fcbf2b] [@claim:clm_c21c62bcdd3cd4f8a8777b7169b7049a84dc31f39687fb31a73ed2168a0088b1] [@claim:clm_cc931935eb009d5c110d53a5f12435ad566803ede7cbc6a16a295e257b8130fe] [@claim:clm_f8738aa59c6a9d429b4c4be962882be6d0d059c199050f6e2301a83eaa0d849b] [@claim:clm_fccc32c68bfcc4fac2f1abec9278309c026b0787818b993b90ecbc9df7c45425]
+<!-- rcw:end owner=entity:ent_fd13bfe2408358ee966ac9624d9b13f7 block=evidence -->
+
+## Researcher notes
+

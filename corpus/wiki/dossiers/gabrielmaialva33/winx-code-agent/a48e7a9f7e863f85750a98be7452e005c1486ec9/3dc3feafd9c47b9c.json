@@ -1,0 +1,556 @@
+{
+  "applied_operation_id": "op_bb941566565546969d278ba2daf94899",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d90c1e8ff044aa2a9a6b34cbda42fc588922e04af9c4a8ec87dcddba1b1134a2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 103,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L100-L103"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 38,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L35-L38"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 693,
+          "line_start": 692,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L692-L693"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00c6262b49321c8a68b13d0d882b2164834f47275ea2b0324878f8480548c8fc",
+        "slc_5dc63bfb69ddf5d2cc41c9f1f016cbe1838e4c4a4211e8de25ce0fe8913e796a",
+        "slc_7f8da783eeef86c2da825c9d8bdfa66b11312f6a13af2d4490d7cfe258e34249"
+      ],
+      "text": "Winx is a remote-first MCP runtime exposing a Streamable HTTP endpoint at /mcp (default 127.0.0.1:8000) plus a stdio transport for local clients like Claude Code, Cursor, and VS Code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d461971413b29e13aa6de780592d6e79d453b1308a861ac4eacf1169117ac81",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 44,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L40-L44"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 328,
+          "line_start": 325,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L325-L328"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a2409efce6f1abc32da7527c5d3b80e4839b18fb24d24e8b107b36271e3ff94",
+        "slc_44e4f1846afd41d712c5ab13577f775aa05e44461ca53b948bb4cdd029deb134"
+      ],
+      "text": "On Unix, the MCP adapter is separated from PTY-owning processes: winxd manages the control plane and one winx-guardian per session keeps shells alive across disconnects and adapter upgrades."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8e4d665c37d330a8a24ba66bf52949e3d865968f2595414dd4a8a11446a144e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 191,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L137-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cb3ef2abc9ad8145b3634a4ee4f1b1bd157376a786c84fbbe14aab98d48440ad"
+      ],
+      "text": "Workspaces have three modes: wcgw (full access), architect (read-only), and code_writer (command allowlist plus write globs), with the allowlist parsed via tree-sitter to check every command including pipelines and substitutions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed8671aa6e67eae8708539aaf717048ad72fa9b209551d701e557448b1f64aba",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 220,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L219-L220"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 209,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L204-L209"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 202,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L199-L202"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fa3ec6362a6b228c0547fe31cb6188cf0a18cef9d9e83c13f4b049af3c530f8",
+        "slc_c7197b9bbcf3658572fee21e7639a552ca14556c56b66281f88355efd0d4ad46",
+        "slc_f2c85b6c5fb800e2e64c58c3a4b07356d3c4e80de340d9d78c2f3bf19c3e98c2"
+      ],
+      "text": "Tool catalogs are profiled as terminal (2 tools), read-only (4), coding (5), and full (7), or an exact per-principal allowlist; policy is enforced at both discovery and dispatch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c76755fb1b3d5d067bce1993547f1583eb8a2554b909a991373d96dee48dbb01",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 239,
+          "line_start": 234,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L234-L239"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 197,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L195-L197"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 96,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L82-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08fde4655742d1aee01952b5e7a56e4031f4aa946adf4bc51777a73693626c32",
+        "slc_eaf423b31b0d6ad0c36307a0cf499d20d8dccd4f517ca96dfca7bc1359ef8fbf",
+        "slc_fb659b1e4396f4c62b3c1207bc7c88436993d68786b425d3b430f92f41166f6b"
+      ],
+      "text": "The single mutation tool EditFiles supports replace, SEARCH/REPLACE, revision-bound line patches, atomic batches, verification, and undo, with legacy edit names kept as hidden compatibility aliases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11ff99f9eb38a7e680c02a6444ea1f3dae14710abfec58990717c078d122ee6b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 314,
+          "line_start": 300,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L300-L314"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3367d413bbf8bf725d933ab6db268038703e71c516ad4221de80b60aa1d63409"
+      ],
+      "text": "The SEARCH/REPLACE matcher tolerates model mistakes: indentation adjustment, smart-quote normalization, line-number stripping, neighbor-block disambiguation, and one retry on over-escaped quotes, while refusing heavily fuzzy matches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c44421c9e3214370ff6ae51fa9e18ea24e9810789938d65cee3b1a07512b48d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 647,
+          "line_start": 643,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L643-L647"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a59c729842f1ce8ac604bad63c2feec981799fcccb67e17267235f20fe64895"
+      ],
+      "text": "Durable sessions survive HTTP disconnects: guardians are capped at 32 by default with tiered idle retention (30 minutes never-used, 24 hours used), and active commands are never evicted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca797917cdac719391d5d6289ae7a93bf16460945d5ba98c6eb1925691caa934",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 280,
+          "line_start": 268,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L268-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_050757e7fd9b1a3104bd6edd87a1d4a3c903279ac623c8a2fad54f669936170f"
+      ],
+      "text": "MCP Tasks on BashCommand are capability-driven: adaptive promotes only after runtime state is running, until_complete creates a Task immediately, and return_early never does; cancellation is generation-bound with a fail-closed fallback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_13bd3a346b30c7b50bf5512510615d7a0bb26734cea32f4b292e980193f8b699",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 776,
+          "line_start": 763,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L763-L776"
+        },
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 96,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L82-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_760980da607591c94cde9fde24642aea8c209edc90abc6fb27570a908c30dfe5",
+        "slc_fb659b1e4396f4c62b3c1207bc7c88436993d68786b425d3b430f92f41166f6b"
+      ],
+      "text": "HTTP security defaults include loopback-only binding, 32-byte minimum bearer tokens, chmod-600 token files, DNS-rebinding host checks, 64 MiB body cap, 120 req/min per-IP rate limiting, and delayed invalid-auth responses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be9e773f1613dfe0ba8f4a425042b68bc83be5f11c0ae3fcba71ea2e1d0128ab",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 266,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L241-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e0364828fc324fce09d337e41e2c494e3d5ca5ad13880d90411770855ec0de3"
+      ],
+      "text": "Winx advertises MCP 2026-07-28; every tool publishes an outputSchema and returns a structuredContent envelope whose authoritative status field enumerates states like completed, conflict, needs_read, and denied."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd2cba8dbd10a6a67da84f4938f0cda1e96b2ac009fe6ba4aba5a595464a10a8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 333,
+          "line_start": 330,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L330-L333"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c240f09bd525f93b10ef930589417116fab89d8eaa539b9748a623628ac37e50"
+      ],
+      "text": "Building requires Rust 1.88+ and bash; the durable daemon runtime is supported on Linux/macOS/WSL2, while native Windows uses an embedded runtime with sessions tied to the server process."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_498d289ab333b26845e9bea1a7442bd09115936d7e574d82a70753ff9058492c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+          "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+          "line_end": 795,
+          "line_start": 791,
+          "path": "README.md",
+          "repository": "gabrielmaialva33/winx-code-agent",
+          "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md#L791-L795"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28115d11fc7dd16d83ae7a637f8be199dce5e703e6bd6626263823b999c99747"
+      ],
+      "text": "The README warns that a valid principal is equivalent to shell and file access as the OS user, and that BashCommand in wcgw mode is not workspace-confined."
+    }
+  ],
+  "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 905,
+        "path": "README.md",
+        "size": 63965
+      },
+      {
+        "lines": 170,
+        "path": "docs/architecture.md",
+        "size": 10744
+      },
+      {
+        "lines": 600,
+        "path": "README.pt.md",
+        "size": 26913
+      },
+      {
+        "lines": 36,
+        "path": "AGENTS.md",
+        "size": 3997
+      },
+      {
+        "lines": 73,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 3307
+      },
+      {
+        "lines": 101,
+        "path": "CONTRIBUTING.md",
+        "size": 3685
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README.zh.md",
+        "reason": "byte-budget",
+        "size": 24269
+      },
+      {
+        "path": "docs/streamable-http.md",
+        "reason": "byte-budget",
+        "size": 39929
+      },
+      {
+        "path": "docs/streamable-http.pt.md",
+        "reason": "byte-budget",
+        "size": 24808
+      },
+      {
+        "path": "docs/streamable-http.zh.md",
+        "reason": "byte-budget",
+        "size": 21758
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 8920
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 192,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_e7cf475b778e5f759db13a44e9f35fca",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 3,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/gabrielmaialva33/winx-code-agent/a48e7a9f7e863f85750a98be7452e005c1486ec9/3dc3feafd9c47b9c/manifest.json",
+  "package_id": "pkg_e34255ed0fb3bc9d2b385f0b086e0c2b0c3a7e1c534d1aa6804801f2778e7a4d",
+  "repo": "gabrielmaialva33/winx-code-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ea2c689441960ba1b31696c1e7c63512ea65dfd34ff1c3a338593d6243a2300c",
+  "snapshot_id": "3dc3feafd9c47b9c",
+  "sources": [
+    {
+      "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+      "git_sha": "cc7b5e8a9fe9d04febbd8a39178352507541411e",
+      "lines": 36,
+      "path": "AGENTS.md",
+      "repository": "gabrielmaialva33/winx-code-agent",
+      "sha256": "c8d9308e90a34f619a813c2d85c1fc386456be97e5680a927a2a0461ce0446df",
+      "source_id": "src_9c16441b70125d679003ed3939ea3906",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/AGENTS.md"
+    },
+    {
+      "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+      "git_sha": "7dff402269bad55a80dc7eda92b0ea48a2095398",
+      "lines": 73,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "gabrielmaialva33/winx-code-agent",
+      "sha256": "ce6025b797527951baa7b6fb2aa0fa78f95d3fde7c7c6f5267c2a07358e615c7",
+      "source_id": "src_853b5ddc3f9a5cb3a09127cad044e07e",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+      "git_sha": "575adac4fbd73eecdb87f09ae3ec5ed2fd0ab684",
+      "lines": 101,
+      "path": "CONTRIBUTING.md",
+      "repository": "gabrielmaialva33/winx-code-agent",
+      "sha256": "364a941eae22a889aed93b999a50166ccd352cbf609f7744f72d07afe90c634e",
+      "source_id": "src_f8e16be269325b498e8e996195246c87",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/CONTRIBUTING.md"
+    },
+    {
+      "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+      "git_sha": "af0fa17aac35716b8cb1919306e611f3acba3ada",
+      "lines": 905,
+      "path": "README.md",
+      "repository": "gabrielmaialva33/winx-code-agent",
+      "sha256": "fdc84134858e78780edc9cc5ef23edbc899d345c49188cb9f06f45388acda80c",
+      "source_id": "src_6ce5b3301cc853339f515f7626188d8c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.md"
+    },
+    {
+      "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+      "git_sha": "20a3d1bba5b4d97b0d91ac7700f39658a6fe0add",
+      "lines": 600,
+      "path": "README.pt.md",
+      "repository": "gabrielmaialva33/winx-code-agent",
+      "sha256": "67d4d316b28de7585c44dc9fc96c28f39d175b92ca5d44282ae0c4c489a2bd88",
+      "source_id": "src_626945a575e6511e95cda9fbe2f34c98",
+      "stored": "readme.pt.md-822bdbb1cbe3.md",
+      "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/README.pt.md"
+    },
+    {
+      "commit": "a48e7a9f7e863f85750a98be7452e005c1486ec9",
+      "git_sha": "f5382ded65ee110f014d46cd8413a4d8bf8eb913",
+      "lines": 170,
+      "path": "docs/architecture.md",
+      "repository": "gabrielmaialva33/winx-code-agent",
+      "sha256": "a80faf7311cd887b63dd96b590315474e6875473030d6aebf67321cafb490c21",
+      "source_id": "src_3718406092185d95a692a11917130937",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/gabrielmaialva33/winx-code-agent/blob/a48e7a9f7e863f85750a98be7452e005c1486ec9/docs/architecture.md"
+    }
+  ],
+  "summary": "Winx is a Rust MCP runtime (MCP 2026-07-28) offering durable PTY shell sessions, guarded file editing, and repository navigation over Streamable HTTP and stdio, with a Unix daemon architecture (winxd + per-session winx-guardian). Evidence is README-only documentation. Evidence coverage: 133 of 339 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

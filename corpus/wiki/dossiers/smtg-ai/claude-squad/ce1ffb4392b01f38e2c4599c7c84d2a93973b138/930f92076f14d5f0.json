@@ -1,0 +1,573 @@
+{
+  "applied_operation_id": "op_761875c9fd34461c962d578ff399bf0d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_711115868d893aa61ac071c5bf63b3a281fd1da0050acbcd8dd73c87aab2c3df",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03013e0cf3750c27e1ce612017a627ad02f27d5a59804a59af1ea1e9a7ecbaf9"
+      ],
+      "text": "Claude Squad is a terminal application that manages multiple local AI coding agents such as Claude Code, Codex, Gemini, and Aider in separate workspaces for parallel tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87fa88b518a1a8d3f6b426cf0bb27a06902e993999f3aee5cbd238108a4f72e1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 154,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L152-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f1b86ecd7057740d1a6437cb086e8b01dde6055a578cd6fe071efc61d6c13f45"
+      ],
+      "text": "The app uses tmux for isolated per-agent terminal sessions and git worktrees so each session works on its own branch, with a TUI for navigation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_092df2b58322bc5b0db1807afeea6943b7cfdcb411ddb0f68adab51406f7b4b7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L22-L22"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 57,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L54-L57"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 64,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L59-L64"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 70,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L66-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00b7df266b28284ab358859bec1555523097dd8af4c3a108ad1e9e3d37a83735",
+        "slc_868d2b5c70f90700bb4db8c966a02bd1fe1adb3e04026ad4bccb3f8f75438672",
+        "slc_8cf347f6451bfa469db230bf042d3935acda9be1498e6ed370ba35d684820cd5",
+        "slc_cec02285a0d26419b1b143b57d636defe73ab215cd7c8ddf18196650fe91f7e4"
+      ],
+      "text": "The CLI is invoked as `cs` with subcommands including completion, debug, help, reset, and version, plus flags like --autoyes and --program."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec68ea97733d3e9f6bf9e6118d1fcc6e9c3f74de0dc4656a8e5937bea7e7874c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L109-L111"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 106,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L101-L106"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 98,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L95-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50caf6df99601c9a34c9f966e749de41a737c71e17501dfb3a3a7ec4b542651d",
+        "slc_552b2bef0eb3d9ccc8da6ecf0687d58c9f2de5894e594f805a6311141a0004c2",
+        "slc_b1d7314f3ebaacab9155d46bafcc0eab796c874f81f51b4611c58e236719f6cd"
+      ],
+      "text": "Keybindings support session creation (`n`, `N`), deletion (`D`), attach/detach (`↵/o`, ctrl-q), commit-push (`s`), checkout (`c`), resume (`r`), and diff-view navigation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7a576cc5d4dbd0b750ed866770788ffc74a0c575e71acfdd3dbdfa63dc8a725",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 87,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L81-L87"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 70,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L66-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3172b84ebdc2f6e28f5bf4a0ce3c917e3ddb41b6062a042bd002889207f0b129",
+        "slc_cec02285a0d26419b1b143b57d636defe73ab215cd7c8ddf18196650fe91f7e4"
+      ],
+      "text": "The `-p/--program` flag lets users launch a chosen agent command in new instances, e.g. `cs -p \"codex\"` or an aider command with a specific model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ce9e1559ffd1d59cfae0f909159c1c503f6688c82e50994060f220ae5a4f55f",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L115-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f35f54d0f99fa1f3aef2bfc2b0958f664583153a68594c90ccba78ec83fcac25"
+      ],
+      "text": "Configuration is stored in `~/.claude-squad/config.json`, and the exact path can be found via `cs debug`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a05a6ed103a32d9e76cb1cc9d13c11420b416513972d622c55262b5bbc62428c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L119-L119"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 139,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L136-L139"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 132,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L123-L132"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L121-L121"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a3d3de258c23316b0d816b806b47d7fb6a82cdb303b40ddd58d20a7a8b6e68db",
+        "slc_a7178253dde0a5bd3373a7943fe260e011f22f80c67177eeebad7e1db0137a3c",
+        "slc_aa3d048de334df93e78fca1b9316a8d9874ad3fac6833114f4a068ddf47b1269",
+        "slc_b1f445d8d7b744c7266b3f5ab4a79cf587e9cdda3192a7bb5ce2aa3a4bace852"
+      ],
+      "text": "Profiles allow named program configurations selectable at session creation; a `profiles` array with name/program fields and `default_program` is set in the config file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c82fe4ca46b5ab66e1f81c45f62240767ab8507bb10bfa4c82aea8e29f36f76",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 77,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L74-L77"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L141-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63a37ebb6572a8e2b7f78795568b88b27e625ae898a6a7d42a5362710d27d670",
+        "slc_8c74e2c730ebfc008d24bf29d7bc06c7cf84f88e2ef278a988130239a6eea773"
+      ],
+      "text": "When no profiles are defined, the app uses `default_program` directly as the launch command, defaulting to `claude`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7dad2ea275be19f97b0732252b4ea4997f0fcf395afcb4b914787055811e1c1",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L9-L12"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 70,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L66-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_581442384ab3846550400c2bf6b118e4f054c8ac1274f96c247111e4cb1d3d69",
+        "slc_cec02285a0d26419b1b143b57d636defe73ab215cd7c8ddf18196650fe91f7e4"
+      ],
+      "text": "An experimental `-y/--autoyes` flag makes all instances automatically accept prompts for Claude Code and Aider; the README also mentions background yolo/auto-accept mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fc6e84aa2b46ee403a7ecbf24736f6bfca79214ba07886e912ea130eaca3f2a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md#L49-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e416ccec4b44a09fa1594b1f0be27a30c065d48442da0a44869a758b9c695fec"
+      ],
+      "text": "The product requires tmux and the GitHub CLI (gh) as prerequisites."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_352ccb9ba0b662ed239955b7c0a63b6973eb7575ffcfd10321b2d471ec37c622",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "cc140007946a66852d1210a560b89fb11df1a37f",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "CONTRIBUTING.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CONTRIBUTING.md#L18-L20"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "cc140007946a66852d1210a560b89fb11df1a37f",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "CONTRIBUTING.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CONTRIBUTING.md#L24-L24"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "cc140007946a66852d1210a560b89fb11df1a37f",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "CONTRIBUTING.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CONTRIBUTING.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05184de94f2eb20a7308ab38a99f427926d545bb32f402e334a61cfa3f603d14",
+        "slc_58359bd181e2413300c804fc254d795d32d45aa63d371dae43d3f0e2b0970d3b",
+        "slc_8acfaefdadd17af950e9d5b8bff42c5f6349d7894cfff80175dff23f60a0fbb4"
+      ],
+      "text": "Repository development practice: contributors fork and clone the repo, add upstream, run `go mod download`, lint with `gofmt -w .`, and should include tests for new features or fixes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e42b0a0f69ea04047b0f745732a5d4b22c772ca9fb0c97ee06a247e403191bd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "bc5711a25cd838e5d63a452eaa4fb93202173c15",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "CLA.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CLA.md#L43-L43"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "bc5711a25cd838e5d63a452eaa4fb93202173c15",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "CLA.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CLA.md#L19-L19"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "bc5711a25cd838e5d63a452eaa4fb93202173c15",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "CLA.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CLA.md#L35-L35"
+        },
+        {
+          "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+          "git_sha": "bc5711a25cd838e5d63a452eaa4fb93202173c15",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "CLA.md",
+          "repository": "smtg-ai/claude-squad",
+          "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CLA.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6169c23045ebeda0fc466157a0d66c725101c0bb339568fe2f50bb1a5eca2795",
+        "slc_676ff1f0080b4707f1a3e0a7e9501a7d1032702e987e045b9fca308484b6a197",
+        "slc_aa07aee93f01c69e229ff81016694f070fb56b44edb43ccb2f1448b78f5d5c91",
+        "slc_ee08900b01b9c2415385ae4354554a8f1a63eda750957c32c4bd3f0bf9b1f9ef"
+      ],
+      "text": "Repository development practice: contributors accept a CLA via the CLA assistant bot on their first pull request, granting copyright, patent, and relicensing rights to maintainers."
+    }
+  ],
+  "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 162,
+        "path": "README.md",
+        "size": 5539
+      },
+      {
+        "lines": 51,
+        "path": "CLA.md",
+        "size": 2540
+      },
+      {
+        "lines": 29,
+        "path": "CONTRIBUTING.md",
+        "size": 651
+      }
+    ],
+    "omitted": [
+      {
+        "path": "LICENSE.md",
+        "reason": "file-budget",
+        "size": 34260
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 86,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": false,
+      "omitted": 1,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_ac20d170b5e35d1ba63097e7402a1fce",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/smtg-ai/claude-squad/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/930f92076f14d5f0/manifest.json",
+  "package_id": "pkg_7311ec304d65987748a1554da29ab4fd0162ee5a32f9cee7ef8e87ab973d92fd",
+  "repo": "smtg-ai/claude-squad",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "508d639d3b69bad36791614cb242aa8ef6ceafd96d24d5213e60da5c42d330cd",
+  "snapshot_id": "930f92076f14d5f0",
+  "sources": [
+    {
+      "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+      "git_sha": "bc5711a25cd838e5d63a452eaa4fb93202173c15",
+      "lines": 51,
+      "path": "CLA.md",
+      "repository": "smtg-ai/claude-squad",
+      "sha256": "33ba98ed78886702e0be8e8ee421b548ee96c54b031efa179a84b2e519d19f79",
+      "source_id": "src_38b6660bf19b5dde9b2919142c409f94",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CLA.md"
+    },
+    {
+      "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+      "git_sha": "cc140007946a66852d1210a560b89fb11df1a37f",
+      "lines": 29,
+      "path": "CONTRIBUTING.md",
+      "repository": "smtg-ai/claude-squad",
+      "sha256": "441c4af29b5f915c888a524d758ff0e88f0dfe959c6b8aac51b49b52275ffa58",
+      "source_id": "src_f7fb1b5067905b3280ac41554f72a74e",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/CONTRIBUTING.md"
+    },
+    {
+      "commit": "ce1ffb4392b01f38e2c4599c7c84d2a93973b138",
+      "git_sha": "5c13a39a8e7e65ee05280feba5ac781d899b77a3",
+      "lines": 162,
+      "path": "README.md",
+      "repository": "smtg-ai/claude-squad",
+      "sha256": "0a8dbbac05f9860e9daa186f7bf9c53f788f9d7b01c2588871e6ad3d3f04ceb9",
+      "source_id": "src_c7c41fc7632d5b258cc6d29ce33b666e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/smtg-ai/claude-squad/blob/ce1ffb4392b01f38e2c4599c7c84d2a93973b138/README.md"
+    }
+  ],
+  "summary": "Claude Squad is a terminal TUI app that manages multiple AI coding agents (Claude Code, Codex, Gemini, Aider) in isolated tmux/git-worktree workspaces. Evidence covers its CLI, keybindings, configuration, and contributor docs; no code internals or evaluation results are shown.",
+  "superseded_claim_ids": []
+}

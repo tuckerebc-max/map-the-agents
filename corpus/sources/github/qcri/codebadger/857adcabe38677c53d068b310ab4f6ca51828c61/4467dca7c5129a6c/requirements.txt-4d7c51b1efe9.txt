@@ -1,0 +1,34 @@
+# Core dependencies
+fastmcp>=3.4.2
+mcp>=1.27.2
+httpx>=0.28.1
+aiohttp>=3.14.1
+uvicorn>=0.49.0
+websockets>=16.0
+pydantic>=2.13.4
+docker==7.1.0
+gitpython==3.1.50
+PyYAML==6.0.3
+psutil==7.2.2
+
+# Postgres backend (REQUIRED — catalog, cache, findings, durable job queue).
+# The [pool] extra adds psycopg_pool for connection reuse; without it the store
+# falls back to per-operation connects.
+psycopg[binary,pool]>=3.3.4
+# Redis cross-process coordination (REQUIRED for pool-mode multi-process state).
+redis>=8.0.0
+
+# Telemetry (optional - OpenTelemetry)
+opentelemetry-api>=1.42.1
+opentelemetry-sdk>=1.42.1
+opentelemetry-exporter-otlp>=1.42.1
+
+# Development dependencies
+pytest==9.0.3
+pytest-asyncio==1.4.0
+pytest-mock==3.15.1
+black==26.5.1
+isort==8.0.1
+flake8==7.3.0
+mypy==2.1.0
+autopep8==2.3.2

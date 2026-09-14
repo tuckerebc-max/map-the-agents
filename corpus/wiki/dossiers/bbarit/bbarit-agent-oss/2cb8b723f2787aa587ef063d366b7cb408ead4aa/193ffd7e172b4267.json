@@ -1,0 +1,611 @@
+{
+  "applied_operation_id": "op_88aeff92b7b54c65a6517cc2833be3bc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc1b26950ae3976bd5ce0545393c5a1df4c917f8dd1ccf912e10f6bdc6901884",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 125,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L120-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a3fd01f9d898b86ccd19cc90bcfc158448050a4310fc1d2a9c2bacd535e6bc06"
+      ],
+      "text": "bbarit-oss is a terminal-native AI coding agent CLI that reads, writes, and edits code, runs shell commands, and ships as a single static Rust binary with no runtime to install."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2216021a569e5d05ee9360ead06317cddca241b8f08b657b52b1573d8af78ed1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 304,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L293-L304"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 658,
+          "line_start": 655,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L655-L658"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c385613b7cbfda2df3511bd630586ccbae625143219adec71748735a225fe159",
+        "slc_ff37b6766a595b7c741231358e56f97a96bf42a69924bb0808712e3c708d574a"
+      ],
+      "text": "The agent supports many LLM providers from one registry — Anthropic, OpenAI/Codex, Google Gemini/Vertex, OpenRouter, Groq, Mistral, Together, Fireworks, DeepSeek, Cerebras, Bedrock, GitHub Copilot, plus local models via Ollama."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40f14afbb5963c5b28f4e7f166b8f9262af9cb5302881db6a464ffda24591dcb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 320,
+          "line_start": 312,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L312-L320"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6b320899e5b4246f42e2444a35cd7c2a9b2e14ae74c8dad05ec61249249b215"
+      ],
+      "text": "Built-in tools called autonomously in the agent loop include read/write/edit, bash, grep/find/ls/tree, hybrid BM25+semantic code_search, web_search/web_fetch, a task sub-agent spawner, and an opt-in computer tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_545317dd3eaa1072c408e37c1a38a844c81a14519918735d036f7a7fceef88fc",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 265,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L263-L265"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 268,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L267-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a984ed4731f8e6351e36941c098ff7f12b6a55e651e717246b5d09582221bbe4",
+        "slc_f76b7aade3b0de11f63156c4cdf2c40025b9d7ff0bc5c836593494172617bb4f"
+      ],
+      "text": "The --orchestrate flag runs each given task as an independent sub-agent process in parallel and collects the results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d2659750fde538df5d7143adc5b3aed6bfb7122f0f496fc1fbb508b9e641166",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 430,
+          "line_start": 426,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L426-L430"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 434,
+          "line_start": 432,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L432-L434"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 441,
+          "line_start": 436,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L436-L441"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c3ba544e0256a2f77fc7ba709611710acb36254d1eedb14a16964fe9d60a76d",
+        "slc_8b8bcd49fb2f61c10dc1ef1002694d944bc69cf1e59907b45e90f2472b3a3842",
+        "slc_bbbc3bc1c611f6f25007187b1ba57cd153806bf02955eab513155b463891e75c"
+      ],
+      "text": "Auto-memory recalls stored facts at turn start via keyword-overlap scoring without an LLM call, and a background sub-agent extracts durable facts typed as user, feedback, project, or reference after each turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_886300953789434820012f23e9ebf531b7a208f80f526dafa7d086ccded84ce1",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 447,
+          "line_start": 443,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L443-L447"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 452,
+          "line_start": 449,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L449-L452"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3386e656957ebd815e3d408f7096104c1b4addb58ea8f308ab6152b2e739492e",
+        "slc_5521ba14d8cc151fc5a5bee2773b999174c8bbf6e15c56e42f5885ccc9f0c6b7"
+      ],
+      "text": "Memories are stored as plain markdown files with a MEMORY.md index that users can edit, and the agent treats user edits as truth; sub-agents never extract memories to avoid recursion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2a95d8cbae6aa5f551d5fa3228eb60c7c096beeb8b9a552d592b06dce5bdb26",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 468,
+          "line_start": 464,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L464-L468"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 488,
+          "line_start": 484,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L484-L488"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 474,
+          "line_start": 470,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L470-L474"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_544cbc13947fea93b1f2b1d6f23fd7e149b64ebc18955e6f3ce6e243cec806d2",
+        "slc_f5536e46841a2bb51fb1e1669d52e21fd34e85a5a9af64e92362dfc0d62288c4",
+        "slc_fca3b4b13a780d468b9a260943d8479f3ab4995b18993ebb689aead2c088588e"
+      ],
+      "text": "A per-project wiki stores markdown pages in a shared vault scoped per project, with get/set/list/search/delete actions, and mutating wiki actions are blocked in plan mode and under read-only personas."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_daf19df9497a7f4e192d7217bffd7111d70db9189c524157b402c9168e3ec635",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 254,
+          "line_start": 253,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L253-L254"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 259,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L258-L259"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52952a819ad53fe2cff29efda1cd3e8c221a8c89f8e8886bb01b1e924ac210e9",
+        "slc_f42c1027d93f96335333d7b7ea782c9f0f9b5b1bd58d73cf87fa82ba92431f79"
+      ],
+      "text": "Non-interactive modes include --print, where stdout carries only the final answer while narration goes to stderr, and --mode json, which streams newline-delimited JSON events for programmatic consumers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe30cc7c849992853597789d7326ad6dbab30f982ee605925992e62db11ffe63",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 323,
+          "line_start": 322,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L322-L323"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 418,
+          "line_start": 414,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L414-L418"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be300ea0a374d40990ab199892b31388860818322a8699e0cb2078fdbc1f55fe",
+        "slc_c6c8243744b29c06f3c6be64e48787015f8d94ef687717816bdc5bf805e6f727"
+      ],
+      "text": "Tool access can be restricted with --tools/--exclude-tools/--no-tools, mutations can be gated behind project trust via --approve, and read-only personas refuse mutating tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_863dd1715948e36c66c02042ae25f0c66b9459d7802f9066feb311d32ee6f979",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 349,
+          "line_start": 345,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L345-L349"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 397,
+          "line_start": 392,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L392-L397"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 412,
+          "line_start": 409,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L409-L412"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a3d51fd6e304028f64a387b45a336da71b2326adcfc7d6dfa9f162b239b7788",
+        "slc_93f2991fc265b4616267aea63b170972ae638f0ae493eb4fd29485bef1fd1e0f",
+        "slc_e79d3bd803b5a809ce073f8f4a2f6069f2fba8748a89ab97314942ace5ddd73b"
+      ],
+      "text": "The agent ships 295 curated personas across 30 domains, each a markdown brief at personas/<division>/<id>.md; user-added .md files join the library without code changes, and personas are injected into the system prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad9a0ff6b6e1ab57eb7b022bb83aa89f269b48140885f637d9bc6d884ffa98f8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 510,
+          "line_start": 505,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L505-L510"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 516,
+          "line_start": 516,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L516-L516"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 514,
+          "line_start": 512,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L512-L514"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 522,
+          "line_start": 518,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L518-L522"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45e1dd2ecd3a2fcd950eb41297af947668febe155078a816bf85a9ecdcd7cdc0",
+        "slc_8848a36eac327835be475c2bbcc980d456341dce4278ebb44365dba273d334a7",
+        "slc_96def9816ad365b7934612194fb201f96302319199d0aca959ac7fdbd51d1dd7",
+        "slc_e4b9a5f05e9eb5c73b900e024cc4daba4f3565aed349c94d39fa4a454948bb51"
+      ],
+      "text": "An /interop toggle (off by default) lets the agent read Claude Code and Codex MCP-server and skill configs as-is, read-only, using only stdio servers and skipping disabled entries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39129cf851bec6feea686110a067281614344a4fc4498b6affae232c4134aaca",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 641,
+          "line_start": 640,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L640-L641"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 638,
+          "line_start": 634,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L634-L638"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "b9753abf90f5315fe69b38fe3874c4ba432e6faa",
+          "line_end": 47,
+          "line_start": 40,
+          "path": "ARCHITECTURE.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/ARCHITECTURE.md#L40-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e5ad5d81ece6d64c45911cc4428cfb8aadc8c5e3430818f17ab4117250bd7e3",
+        "slc_5a1504a87b8c837544c5870717796d246c0fce862b2c010bcded8906bdd80812",
+        "slc_6af835f0fb682d011f62ac744af8224ea96232d8d255d2b350c1c9cfb4ab4efe"
+      ],
+      "text": "Repository development practice: contributors run cargo fmt --all, cargo build, and cargo test; CI runs fmt, build, and tests on Linux and macOS with clippy advisory, and fmt is treated as a hard gate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eeab7c0cdc6bce37b079f2d2836d6c821cd287ada12a72134fd4d2a6a22694ac",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 612,
+          "line_start": 612,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L612-L612"
+        },
+        {
+          "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+          "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+          "line_end": 81,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "bbarit/bbarit-agent-oss",
+          "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md#L24-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c9be2f16c6ba9019bef2ea37d05c49d509baa8fa7c4d2b3702c8687783b24d3a",
+        "slc_f8e2b325c182c5fef9ebe069a4a192c471028cb99732aac8d95640858b31d0d3"
+      ],
+      "text": "The project is a from-scratch Rust rewrite of Pi (MIT), keeping Pi's small agent-loop philosophy and provider-agnostic registry while adding an orchestrator, wiki, personas, and semantic code search; it reports near-zero source overlap with Pi."
+    }
+  ],
+  "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 704,
+        "path": "README.md",
+        "size": 33351
+      },
+      {
+        "lines": 71,
+        "path": "ARCHITECTURE.md",
+        "size": 4991
+      },
+      {
+        "lines": 124,
+        "path": "CHANGELOG.md",
+        "size": 5901
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLI.md",
+        "reason": "file-budget",
+        "size": 4500
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1233
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1747
+      },
+      {
+        "path": "PROVENANCE.md",
+        "reason": "file-budget",
+        "size": 9092
+      },
+      {
+        "path": "RELEASE.md",
+        "reason": "file-budget",
+        "size": 3294
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 397,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 5,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_1102b898d495504e98f2f0ab4ea3ebe4",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 3,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/bbarit/bbarit-agent-oss/2cb8b723f2787aa587ef063d366b7cb408ead4aa/193ffd7e172b4267/manifest.json",
+  "package_id": "pkg_4220e31a189cc166f6000d26f69ba0cecbc4325a365b48e4302720e54ede5eae",
+  "repo": "bbarit/bbarit-agent-oss",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "398b42731a3a6f7a35c4f6678a190c64334c1dc96f679a3347e4332a676c2a85",
+  "snapshot_id": "193ffd7e172b4267",
+  "sources": [
+    {
+      "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+      "git_sha": "b9753abf90f5315fe69b38fe3874c4ba432e6faa",
+      "lines": 71,
+      "path": "ARCHITECTURE.md",
+      "repository": "bbarit/bbarit-agent-oss",
+      "sha256": "772b9246075b35a12f210334b8753fb2d74611d08940562f7d68df25dff253cc",
+      "source_id": "src_f3ec632d5330500eb001b8bb435d369b",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/ARCHITECTURE.md"
+    },
+    {
+      "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+      "git_sha": "7a9b6306548265beef93ad9dc468a01b79392fd9",
+      "lines": 124,
+      "path": "CHANGELOG.md",
+      "repository": "bbarit/bbarit-agent-oss",
+      "sha256": "1f2da8a9fed39eeaff80560fd444d9cc2fd2ed2e8fb044b7f28133b93b1be0ab",
+      "source_id": "src_b9b6b267d21d50d2bd27b50b45e94a2a",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/CHANGELOG.md"
+    },
+    {
+      "commit": "2cb8b723f2787aa587ef063d366b7cb408ead4aa",
+      "git_sha": "54f390884b8ff696ad9e7b1bb3effb36b294c6a1",
+      "lines": 704,
+      "path": "README.md",
+      "repository": "bbarit/bbarit-agent-oss",
+      "sha256": "231ff41d4a06af39718f08b9c3f712930df45dca38024c961ea5b3b39e698c02",
+      "source_id": "src_d3be3296417550ee831e3d75febaf08f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/bbarit/bbarit-agent-oss/blob/2cb8b723f2787aa587ef063d366b7cb408ead4aa/README.md"
+    }
+  ],
+  "summary": "README, ARCHITECTURE, and CHANGELOG slices describe bbarit-oss, a terminal AI coding agent in Rust with multi-provider LLM support, tools, personas, memory, wiki, and orchestration; contributor workflow details appear in the Contributing and Architecture sections. Evidence coverage: 121 of 124 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

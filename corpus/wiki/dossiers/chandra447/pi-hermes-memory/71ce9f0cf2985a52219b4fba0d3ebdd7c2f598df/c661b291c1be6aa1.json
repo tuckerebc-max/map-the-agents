@@ -1,0 +1,957 @@
+{
+  "applied_operation_id": "op_872da1d25964457584d7ae325047402c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_549b4cc1458defe07304f3f91f87f8a9fa2be589e1464d010f413fa1495f0aa5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 85,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L81-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_702f669c7e601e883de37b0e3bd3a4036cd07a427b6295cd125a24e10a5db376"
+      ],
+      "text": "The extension manages three knowledge types: MEMORY.md facts (5,000-char cap), USER.md profile (5,000-char cap), and Pi-native SKILL.md procedures with unlimited size."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71c1269ca8202fddf04f70b3b22db72280b795be23766a866cf9bbe9b6d514dc",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 175,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L172-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cfed6609627be9d6d8fd9b8aa334c267d328b92cc46253881e3e23ef26e9fa04"
+      ],
+      "text": "Memory is stored at two tiers: global facts under ~/.pi/agent/pi-hermes-memory/ and per-project facts under ~/.pi/agent/projects-memory/<project>/, with project memories searchable when the cwd matches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6d54ad2abe524e1dd97076f7acc92ba99b5c23b081c67117ab2d66b9828e645",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 177,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L177-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fe632a7a9ef6267fe044e717dfb36d049137471993fdab101be43f3b79e984c0"
+      ],
+      "text": "By default full Markdown memories are not injected into the system prompt; instead a <memory-policy> block tells the agent when to call memory_search, keeping first-turn token usage low."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_deeb1d9cfe252fe7a36fe1ed59c9c8e77687df74ff488f6d1486bdee6e0b3dfd",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 389,
+          "line_start": 387,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L387-L389"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 391,
+          "line_start": 391,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L391-L391"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 385,
+          "line_start": 382,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L382-L385"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 380,
+          "line_start": 380,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L380-L380"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34ab79747f8e6afeb76d27968cabb825383f4e2969a66e6ccc8aaa17eb76369e",
+        "slc_4950acf20077b0e23411c4874b02c9a063ba93cf7aa2e0ddd694c6d6d16336b6",
+        "slc_5345f388ec1936878d1941a75df869dc08b96e82546602e236fa16d92af37367",
+        "slc_a124a218769ef484227a615ea97faaee8cecfd4315870c6eca31e248c36bad04"
+      ],
+      "text": "A hybrid architecture keeps Markdown as the human-readable source of truth while mirroring successful writes into a SQLite store (sessions.db) queried via memory_search; failed core writes are not silently spilled into SQLite-only storage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_840b3c4c74a5ae2f348ac648de9d507d6b14ff232c355c08ccad8e9b6823f0fa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 280,
+          "line_start": 274,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L274-L280"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 268,
+          "line_start": 268,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L268-L268"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 266,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L262-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12196cff9e26db36268224256dacb3d4d7382e648dea40a9b3cc6c1f272380e7",
+        "slc_8ecd09de4576c76e0a3ef49793ce234f241af298fac86bbe7881c0783857a1ce",
+        "slc_d5fca4de0c3d3ee44efbc2ce6d0b9e57d3442bcb425a749136b71dce04723372"
+      ],
+      "text": "The agent gets memory write tools memory_add, memory_replace, and memory_remove with targets memory, user, project, and failure, plus a skill_manage tool with create, view, patch, update, and delete actions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db4b31709c9d5819e3c3635381caf139c887469b57fba85194e2aca9e57210e7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 368,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L364-L368"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 362,
+          "line_start": 359,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L359-L362"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 357,
+          "line_start": 357,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L357-L357"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7764135082265e2158759acb8e1a15b4c27c85309d2d556a9ac207bb3db45b8a",
+        "slc_8e07d515898847691d8666d5c1107006117f9272dc2e6d2af7d4001fed8953da",
+        "slc_b630f944d1ae89e6d41222eb8f059469a7cfb81d5503c75c26784522d83e6339"
+      ],
+      "text": "Search tools include session_search over past conversations and memory_search over the extended store; FTS5 with a trigram tokenizer supports multi-word, quoted-phrase, OR-operator, and CJK substring queries of three or more characters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a0d9d2138ba89ac9efa0eb7b9b1122d1d0f01a5c2e3f9ca9486a5bbbd7ab184",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 459,
+          "line_start": 449,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L449-L459"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 203,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L198-L203"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad37226c8e3978d3b4396b0cc0e5979c6fc049991d9a17a2cae19ddb3a866277",
+        "slc_cbc7ecf0185725c1c3cae0f46d385ef890cd08c4b65a9d8a311fec5aecd09ab1"
+      ],
+      "text": "Slash commands include /memory-insights, /memory-skills, /memory-consolidate, /memory-interview, /memory-index-sessions, /memory-sync-markdown, /memory-preview-context, /memory-pin, and /learn-memory-tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bf8d5fecb60836b6e1d053e2ec3841f211f82ef69f3d17d804384d046475a70",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 395,
+          "line_start": 395,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L395-L395"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 419,
+          "line_start": 419,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L419-L419"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 422,
+          "line_start": 421,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L421-L422"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 424,
+          "line_start": 424,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L424-L424"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5eb968aafacd068d53d9e7b5abaaac4966d874535b9674f257679727aa088f25",
+        "slc_793875f8b324a0e1b6312b003158125516344a0d2efe32ae8b5893950cad37ca",
+        "slc_c3987ccbb436d8139c95cf71c056878446b7fa640716c8ea7a1d2ae5417b1ea8",
+        "slc_c6807086b65a5d4fa34dd093bc2dc636e2edeb11542fdb46b2f8d949571ac31e"
+      ],
+      "text": "Background review triggers every 10 turns or every 15 tool calls, with both counters reset after each review; correction detection saves immediately when the user corrects the agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5a94283b8169a656389fee0af3cd4a261aa7698c18e07c334ad0707c65578e74",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 430,
+          "line_start": 430,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L430-L430"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 437,
+          "line_start": 434,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L434-L437"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 428,
+          "line_start": 428,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L428-L428"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_114df55e3ff261450a817739be72319eb38db99d8bc9f5f6718f1d173a108438",
+        "slc_2347d71021abc12f1ac6370b8b7d6b8a8e5c733449e3bc67715cff979088ec5c",
+        "slc_320eec8f451a9e721976ce563dc9474e4c7f7ed4af4d0d3f077c65cf3a954c0f"
+      ],
+      "text": "By default review, flush, correction save, and manual consolidation use an in-process completeSimple() side-channel, falling back to a pi -p --no-session subprocess on failure; reviewTransport can force subprocess-only behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ed3a5f6dada7c30fad190e6409b953dac3904594f4c982c92b894d0af241f3e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 415,
+          "line_start": 415,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L415-L415"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 413,
+          "line_start": 410,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L410-L413"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 408,
+          "line_start": 408,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L408-L408"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cbeabec93f88b812f959465c06c588c7f21ec5df14845eb5e9b3613072f4657",
+        "slc_7a8b0d021a56e44d1069bff8437c03facc5b667dded6905c964dafa870a103dd",
+        "slc_8a6594bb9ae1e641950ad1ccb44443556e85bd7677d843b2c1843e7137382c64"
+      ],
+      "text": "In legacy-inject mode, when memory hits its character limit the extension spawns a one-shot consolidation child process that merges entries, then reloads and retries the save; in policy-only mode SQLite is the query authority and consolidation is manual via /memory-consolidate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11d11a9e7a75fb82606133515004e925b83d48417c6f2e400d51fb980408e806",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 196,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L196-L196"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 212,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L207-L212"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 216,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L216-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65ad05ccf52b38aacb48215b9dc3f25f27c19b35d48ee1251c79c658a69355d2",
+        "slc_a18c0bf164a057ce53fa9cac3baef20088803277d64e3a106ee8334791b9fac4",
+        "slc_dc04b701da61b0198af18e921084f21f45bc4e3feb3419816c173f80a1688a5e"
+      ],
+      "text": "Standing instructions (/memory-pin) are a user-authored file injected into every session in every memory mode, capped at 20 entries / 2,000 characters, stored in STANDING.md which background processes cannot write; the feature is explicitly not tool enforcement."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97623f29447ae2caf1d26dfed8c6ad193480464a0fe682bc2d4815325d48ef54",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 252,
+          "line_start": 252,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L252-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62932d9019e1d2fe93cb42ede3171c0246fdd477821ff23dda90a569662bc4c8"
+      ],
+      "text": "Memory blocks are wrapped in <memory-context> XML tags with a guard note stating they are not new user input, to prevent the model from treating stored facts as instructions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d68f1b0302c53cf03ffc047b53c7189bbdd59481ef8649e35b563222ffde01be",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 164,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L161-L164"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L153-L153"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 159,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L159-L159"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d10c0c1750b6fe682b6f62a1016189334d422f54227e86ad0fd5a2c5b3f59e2",
+        "slc_b55ec66a0aebfbf903be6a519e73266865cdeef9a67609afd93d532d301cabd1",
+        "slc_e2f9de2fe764c77cb03406bd34ea6718b75e5fd7d4c004e6df29009d315aa299"
+      ],
+      "text": "The extension depends on better-sqlite3, a native addon that can fail with Node ABI mismatches (e.g. Homebrew-installed Pi); it attempts one automatic npm rebuild and documents a manual rebuild path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_76e9df803ff5ea59a70ef0967467ffa240b208119eb05bab76f37c58969014b5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 712,
+          "line_start": 712,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L712-L712"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 368,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L364-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_043efd4003f28318811147de8ae2d4499b02806c478b10d36416ce8f9fc326a3",
+        "slc_7764135082265e2158759acb8e1a15b4c27c85309d2d556a9ac207bb3db45b8a"
+      ],
+      "text": "Documented limitation: the FTS5 trigram tokenizer only supports CJK substring search for terms of three or more characters; one- and two-character memory_search terms may not match."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65d316b872c5828ec056e7cb0e120cb7d9a838d388c2be0335f396ee71ae598d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 194,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L194-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ef8b8d8d2975c8dc6f3e64c0a94b8ae11c5c86d58e9d24f1b232a97f516d0d9"
+      ],
+      "text": "Recall in policy-only mode is probabilistic: a stored rule only takes effect if the agent calls memory_search before the relevant action, so prohibitions may be missed while preferences survive a missed lookup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_174d6ccc66bb2780849db40869c7a507e5576cd8de47c0b52f2b4e43cf640d3a",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 307,
+          "line_start": 305,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L305-L307"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 294,
+          "line_start": 294,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L294-L294"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 301,
+          "line_start": 301,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L301-L301"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 299,
+          "line_start": 296,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L296-L299"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e120c7675965feca51ee138e60c6c6737fe5c45a49c61d51470cd255cf5370f",
+        "slc_3d416bd57f5fd3317c5916d7b7df1587066fae896f993589a364e1f231740d01",
+        "slc_8a7eef41aef5a9ea335b0b1c9c01e7cb62ac9a7f85c6b3bbfb1f0628bb2721f1",
+        "slc_b387d77d00ff6f0a17753497d1312781edbe541db03309701835c1ca0113a261"
+      ],
+      "text": "For create and update, skill_manage prefers structured fields (when_to_use, procedure_steps, pitfalls, verification_steps) rendered into SKILL.md sections, and global creation has duplicate/similarity guards blocking exact slug matches and near-name collisions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66ed01198b939cf0e662e3121f2f3041bd65a0d953c2f47f0f71bc8d4e4835a5",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 343,
+          "line_start": 343,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L343-L343"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 337,
+          "line_start": 337,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L337-L337"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 339,
+          "line_start": 339,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L339-L339"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52845e7165067962440bfd4d9db5c05785d89bc0b46b047d777b6cee06681daf",
+        "slc_ac1962a12e14a6a4ffe13d3bb51c4bb01d77cb2830165b9b2ee0df15bc4136f5",
+        "slc_eb1b276afb0b9aba132a3a04439a50e007adc9bae406f4a4545f9ba52fac1bbe"
+      ],
+      "text": "Project-scoped skills are exposed to Pi via the resources_discover hook, which returns the active project's skills directory so Pi discovers them natively without copying into the global folder."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_720499bf6eb3082cf3586fdb2a464558987791b361f1c13cc447401faf30a128",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 610,
+          "line_start": 606,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L606-L610"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 638,
+          "line_start": 638,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L638-L638"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 636,
+          "line_start": 614,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L614-L636"
+        },
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 593,
+          "line_start": 553,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L553-L593"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29a7308274cb07b9ca3448aa194b8bc084bc5aeb7d7a3fae5fedfa04757e323e",
+        "slc_2ea86ae32ccad599f9d90a0db8f46a42c84409bf757941e62238d29180141120",
+        "slc_5792ae81e55ff5e2c5198e62ac8365ef0fe7935a5d047bf9ddec3435886f03c4",
+        "slc_735b3d9b43e35b0ad9666c00859f8adf4dabbcfdd505dade21c0633f8fd59f4d"
+      ],
+      "text": "An optional lazyInitialization mode defers Markdown/SQLite sync, memory loading, maintenance, and session indexing until the first memory operation, while pinned STANDING.md instructions and skill discovery remain available at startup; legacy-inject ignores the option."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a9b488cd6ef4296820e19d84378c46a25e9de0be7474e2b5399c67e39398847",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+          "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+          "line_end": 376,
+          "line_start": 376,
+          "path": "README.md",
+          "repository": "chandra447/pi-hermes-memory",
+          "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md#L376-L376"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ccd6da6ccea68956f89ddc198f8c3e71b0305124d01b602f37c15328464fb71"
+      ],
+      "text": "An opt-in sessionSearch.variant of 'anchors' makes session_search read session JSONL files directly and return path:startLine-endLine anchors with short reasons instead of summaries."
+    }
+  ],
+  "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 743,
+        "path": "README.md",
+        "size": 41681
+      },
+      {
+        "lines": 1011,
+        "path": "PLAN.md",
+        "size": 43336
+      },
+      {
+        "lines": 149,
+        "path": "docs/PUBLISHING.md",
+        "size": 3806
+      },
+      {
+        "lines": 468,
+        "path": "docs/ROADMAP.md",
+        "size": 25237
+      },
+      {
+        "lines": 113,
+        "path": "docs/0.4/TASKS.md",
+        "size": 3420
+      },
+      {
+        "lines": 57,
+        "path": "docs/0.6/CHANGELOG.md",
+        "size": 2173
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/0.1/TASKS.md",
+        "reason": "byte-budget",
+        "size": 12412
+      },
+      {
+        "path": "docs/0.2/PLAN.md",
+        "reason": "byte-budget",
+        "size": 12197
+      },
+      {
+        "path": "docs/0.2/TASKS.md",
+        "reason": "byte-budget",
+        "size": 6907
+      },
+      {
+        "path": "docs/0.2/TEST-PLAN.md",
+        "reason": "byte-budget",
+        "size": 11511
+      },
+      {
+        "path": "docs/0.3/PLAN.md",
+        "reason": "byte-budget",
+        "size": 14136
+      },
+      {
+        "path": "docs/0.3/TASKS.md",
+        "reason": "byte-budget",
+        "size": 6659
+      },
+      {
+        "path": "docs/0.4/PLAN.md",
+        "reason": "byte-budget",
+        "size": 6484
+      },
+      {
+        "path": "docs/0.6/PLAN.md",
+        "reason": "byte-budget",
+        "size": 6609
+      },
+      {
+        "path": "docs/0.6/TASKS.md",
+        "reason": "byte-budget",
+        "size": 4725
+      },
+      {
+        "path": "docs/0.7/PLAN.md",
+        "reason": "byte-budget",
+        "size": 12921
+      },
+      {
+        "path": "docs/0.7/TASKS.md",
+        "reason": "byte-budget",
+        "size": 5395
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "byte-budget",
+        "size": 3259
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 53550
+      }
+    ],
+    "omitted_count": 13,
+    "omitted_slices": 74,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 157,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 19,
+      "complete": false,
+      "omitted": 13,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_730bb899eebe5b989071b8ee01eec29c",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 2,
+    "memory-state": 4,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/chandra447/pi-hermes-memory/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/c661b291c1be6aa1/manifest.json",
+  "package_id": "pkg_850dde030711ecce3bd6a40b9af5572f7641efe143c4e2364ca36c1b173d32d3",
+  "repo": "chandra447/pi-hermes-memory",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b9b639b80d522bece9d6b39b1342ea2aad47edad8e45c46940008e70f19db199",
+  "snapshot_id": "c661b291c1be6aa1",
+  "sources": [
+    {
+      "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+      "git_sha": "4011190919c20ee3c32fd6d460c6f61a3272fc7c",
+      "lines": 1011,
+      "path": "PLAN.md",
+      "repository": "chandra447/pi-hermes-memory",
+      "sha256": "485d78cc3f98050fd7df03e8c5927b0903c06695dc534e75a2e19204c938bc3e",
+      "source_id": "src_92e25ef1ad8f5487860471aab34d291c",
+      "stored": "plan.md-1d972b4ac04c.md",
+      "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/PLAN.md"
+    },
+    {
+      "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+      "git_sha": "803c726679c120838b7edf286967f6d8c7c50819",
+      "lines": 743,
+      "path": "README.md",
+      "repository": "chandra447/pi-hermes-memory",
+      "sha256": "ba00ce65c6db60899e00b86b09c544f4eac1a5d9b6d03968f18c36eeb04d59b0",
+      "source_id": "src_032573c44b4453b9b740d354a30300ba",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/README.md"
+    },
+    {
+      "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+      "git_sha": "df53727f6c1ba44729506f684f162f44bf9213ba",
+      "lines": 113,
+      "path": "docs/0.4/TASKS.md",
+      "repository": "chandra447/pi-hermes-memory",
+      "sha256": "65276d8e6cab6c7e64f524dd76c002224294db0ca1177e6b6886591fb5fe8e9b",
+      "source_id": "src_822e908eacd9500ab45fcc879a3db98e",
+      "stored": "tasks.md-27626c61e77d.md",
+      "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/docs/0.4/TASKS.md"
+    },
+    {
+      "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+      "git_sha": "b5cabb305b48ff8bb96de3348cb9073537c4830c",
+      "lines": 57,
+      "path": "docs/0.6/CHANGELOG.md",
+      "repository": "chandra447/pi-hermes-memory",
+      "sha256": "d72550ced1779d1e1cdf1cbef258987d5973e95847618a8a91c81ee1b1031f30",
+      "source_id": "src_5db1a3e4350e5618b66920c8b0562bc8",
+      "stored": "changelog.md-e68d694a817b.md",
+      "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/docs/0.6/CHANGELOG.md"
+    },
+    {
+      "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+      "git_sha": "dafc13479ee3c0485e2240e1fcef65988110fe6b",
+      "lines": 149,
+      "path": "docs/PUBLISHING.md",
+      "repository": "chandra447/pi-hermes-memory",
+      "sha256": "017b4fffb52426879a4c720bea2c4a9fd47762323b75153d8e3e317030c0836d",
+      "source_id": "src_502b9bdcab075ca3baa9bfbba6cc00b8",
+      "stored": "publishing.md-babe6f3c124a.md",
+      "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/docs/PUBLISHING.md"
+    },
+    {
+      "commit": "71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df",
+      "git_sha": "a470857c82c265ca29b7679f457f484d2df57407",
+      "lines": 468,
+      "path": "docs/ROADMAP.md",
+      "repository": "chandra447/pi-hermes-memory",
+      "sha256": "7306c73d816b480f3c5dc6914848cc749edd308f7beb5706550a621d32e0127c",
+      "source_id": "src_8dd910a4b6175a1a99701b8acce17d5b",
+      "stored": "roadmap.md-0d96796e2b2a.md",
+      "url": "https://github.com/chandra447/pi-hermes-memory/blob/71ce9f0cf2985a52219b4fba0d3ebdd7c2f598df/docs/ROADMAP.md"
+    }
+  ],
+  "summary": "Selected evidence records: The extension manages three knowledge types: MEMORY.md facts (5,000-char cap), USER.md profile (5,000-char cap), and Pi-native SKILL.md procedures with unlimited size. Memory is stored at two tiers: global facts under ~/.pi/agent/pi-hermes-memory/ and per-project facts under ~/.pi/agent/projects-memory/<project>/, with project memories searchable when the cwd matches.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,693 @@
+{
+  "applied_operation_id": "op_4d820ab67d9644448acf59d83f44b7b6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf1e3d45dca2818e5e4e6aaa8935aab5b327ca3b878bd33aea79a99a259e5582",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 24,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L7-L24"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L42-L42"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "f25cc07db7a708eec30339534317768b579f89cc",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/CASE_STUDY.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/docs/CASE_STUDY.md#L5-L5"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f9724e66a823200f8629e43235326fb8c90a6632dc794ac1aba27a344a31b45",
+        "slc_88c0216f25b6fa7911742729e515849358f24e64e5abc2cd9772b67c11da656a",
+        "slc_cc226254d518a484f807bf3b261e1e898d9f61abf159d35e0fa659f43709787e",
+        "slc_d552102d4fb343c62c6fe946ea56b75691a86c31ced5e223672534d65d991770"
+      ],
+      "text": "Shotgun is described as a spec-driven development CLI that reads the whole codebase, plans features upfront, and splits work into staged PRs with file-by-file instructions for AI coding agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44ad574cf9b9121fe5a6ad9ef72908997f7519cf88e3f3aeda7452349213480c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 193,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L181-L193"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 195,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L195-L195"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L179-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_296010de73382ffe43ce4a6721dcbaf4de9d2d739cabd1f973b5cf57ec339b61",
+        "slc_88ab49bdf8fa4f5f50c0ade3ce3cdc04224fa0f8638484fb6886be3588cd60fd",
+        "slc_da828746f703dc9c7b6bbeaea40959a17205bfdcb5a1d3130114b975efd0a982"
+      ],
+      "text": "A Router internally dispatches specialized sub-agents across Research, Specify, Plan, Tasks, and Export phases; users control only the Planning and Drafting execution modes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_870dcb4e0d70138c7db12e6e236616b85f246a5be147737561e5a75d967ad90e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 174,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L171-L174"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 176,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L176-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1797b10f6fdca26ea7fc85f65e42f2d22b201ea0812e9f196df81261bafa494c",
+        "slc_4afb761623b3feb144583e76141b4c9bc96f1a5937190493a14d31c601d9d9f2"
+      ],
+      "text": "Planning mode proposes a plan with confirmation checkpoints before file-changing agents run, while Drafting runs the full plan without intermediate prompts; Shift+Tab switches modes and '/' opens the command palette."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77571a0f2de0d4af5d0ad6d9076ba71dc0fa5f53972c5c5a94a554396d601999",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 207,
+          "line_start": 201,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L201-L207"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e5dede21c4d57dc175d4ffbeeb8b06426b30dcf94ce33f098c849385a242d3c8"
+      ],
+      "text": "Keyboard shortcuts include Shift+Tab for mode switching, Ctrl+C to cancel, Escape to exit Q&A or stop an agent, and Ctrl+U to view usage stats."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f6f7f2bfcd7279a4e02c023558757a3b9c8fb22ad1d8650485edc200fc459b7",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 377,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L377-L377"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 359,
+          "line_start": 359,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L359-L359"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd6dff69e729e574f977c24ac585d86c494c1537921fba581f4beb6f740268c9",
+        "slc_e8e5cbe87f2ed45c330cce94accf7141b414f3b8830c6a429ed7f4596b6fb100"
+      ],
+      "text": "Codebase indexing runs locally using tree-sitter parsing, producing a searchable code graph stored under ~/.shotgun-sh/codebases/ that the FAQ says is never sent to a server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5c1b216c29d31b9179623560b2f58bafc001c7b3ef489e42b96f9da4d720d04",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 369,
+          "line_start": 369,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L369-L369"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 373,
+          "line_start": 373,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L373-L373"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 365,
+          "line_start": 365,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L365-L365"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ce8d79774b67b198b859ca037b18a05032c50870caf0b2fe1026817561c9164",
+        "slc_23ab81ce082bec8678641c1f7cc149dc17f58567579ca826b686c4482557c186",
+        "slc_c39a7d0e2d8a8273c2e810950d05415aa9aa915b1de83cabafe4cc34e283209a"
+      ],
+      "text": "Supported LLM providers are OpenAI, Anthropic (Claude), and Google Gemini; local LLM support is stated as planned, and internet access is required for LLM API calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47ddd1ae8467f7be96a97695d56c45ff34ad9028c0bf9da8ca38d8069eb5cb22",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 260,
+          "line_start": 259,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L259-L260"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 323,
+          "line_start": 315,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L315-L323"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 242,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L242-L242"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 244,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L244-L244"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16aacf143951119c707b2ab16543c85581bdb6b5b5fda8f49500c0b9e72499b6",
+        "slc_63b17e8366b143d7d145585bdc5c9561b4aff2382d699acff95ead2c437c45c7",
+        "slc_cb488fda2a8b9ae4d1d7d55d07b14479505e46c4252ea7ebce0bfed57a53f9dd",
+        "slc_df7c7813261cf7e9a9b2d631632682c7f096ca93043a6416fb940c21ada4423b"
+      ],
+      "text": "Specs can be exported as AGENTS.md files for tools like Cursor, Claude Code, Windsurf, and Lovable, and shared to a workspace as versioned snapshots on paid plans, leaving local .shotgun/*.md files unchanged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7966cd9bce6febff9fd6e88692784866d379d3ff15884ac345056398f6dde81",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 303,
+          "line_start": 295,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L295-L303"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e78067f6caee56f94fdb635ed6e54b7f8e7e830a0293a4a1bba79ef41f627c4"
+      ],
+      "text": "Each phase (research, spec, plan, tasks, export) uses a separate specialized agent with phase-tailored prompts rather than a single general-purpose agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8df1d931bdb2261cdf91dcfcc816469147bd78c479a618093881da892e8dfe5f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 382,
+          "line_start": 382,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L382-L382"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 404,
+          "line_start": 400,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L400-L404"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 388,
+          "line_start": 386,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L386-L388"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7404297229cf72d2371c912153ee5570a51dd3d1312d4afcd9c3e742728b76e4",
+        "slc_958e794cb0d4f49a4072ee1004227cba9a58d54041ac5e35ed86461f8b810f8d",
+        "slc_e1683f6827e38506732d253c769d8fcb884d6a99e7d007df0f7e479fee190ebd"
+      ],
+      "text": "Repository development practice: the README points contributors to a Contributing Guide, Git Hooks (Lefthook, trufflehog, security scanning), CI/CD via GitHub Actions, observability, and Docker docs, and welcomes bug/feature/doc issue templates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da039d8b31fc7b68a6a652c0b282b46542bf848061d2f8d73e79deb3f12ed034",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 121,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L118-L121"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 84,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L82-L84"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 67,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L66-L67"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L63-L63"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L71-L73"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L123-L123"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 116,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L115-L116"
+        },
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 90,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L88-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f55f8c4ac7e304e49a482404a4c048ecfc2229dac767f98bb10ef4896bb8145",
+        "slc_109a461110c9fa1bb4b7dbe782213ecc2d0b6be97af6678ce86fc1c822b61a18",
+        "slc_1552651eef511a2d0af70add9bbfd7baffee5d22e603ed31dc212cc1a3a12ecf",
+        "slc_40e69a8eb00381287bcedf2e15f16350cabecfba49a975efe5af4a12fb454050",
+        "slc_631db7d3accd4bb12beeba390e3a044a38a5ca4be1c32710ee9f17c7e5030951",
+        "slc_a1f2e3cb6adfb16f86287bdc55d5b1e489ced3ac74a1438facfb10546e651aec",
+        "slc_d57372a3effcd08468a8a9e53be4e5e2206bf2fff497db5cfc5dd7096583669a",
+        "slc_fca292564610551c49943c217aa54563d2bc806d1ff9222bae846d4ef8199ab9"
+      ],
+      "text": "Installation uses uv (via Homebrew or curl) and running 'uvx shotgun-sh@latest'; on Windows, PowerShell is required with x64 and Python 3.11-3.13 supported, while 32-bit Python and 3.14+ are not supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_040e22b3eb948f4668f1332a875f3149005ef39721dd769c2b8aca0070d1f5ef",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+          "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+          "line_end": 355,
+          "line_start": 355,
+          "path": "README.md",
+          "repository": "shotgun-sh/shotgun",
+          "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md#L355-L355"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9089c7553bd3d2153c7bbb903337b1cd0e9352ca5159fd9c1440a1eb80ed7562"
+      ],
+      "text": "The FAQ states only minimal anonymous event telemetry (e.g., install, server start, tool call) is collected via PostHog, without collecting event content."
+    }
+  ],
+  "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 448,
+        "path": "README.md",
+        "size": 15824
+      },
+      {
+        "lines": 110,
+        "path": "PIPX_MIGRATION.md",
+        "size": 3217
+      },
+      {
+        "lines": 215,
+        "path": "docs/CASE_STUDY.md",
+        "size": 12231
+      },
+      {
+        "lines": 385,
+        "path": "docs/CI_CD.md",
+        "size": 8610
+      },
+      {
+        "lines": 94,
+        "path": "docs/CLI.md",
+        "size": 2519
+      },
+      {
+        "lines": 373,
+        "path": "docs/DOCKER.md",
+        "size": 9062
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/GIT_HOOKS.md",
+        "reason": "file-budget",
+        "size": 5407
+      },
+      {
+        "path": "docs/OBSERVABILITY.md",
+        "reason": "file-budget",
+        "size": 7422
+      },
+      {
+        "path": "docs/PIPX_MIGRATION.md",
+        "reason": "file-budget",
+        "size": 3217
+      },
+      {
+        "path": "docs/README_DOCKER.md",
+        "reason": "file-budget",
+        "size": 2820
+      },
+      {
+        "path": "docs/testing-tui-with-playwright.md",
+        "reason": "file-budget",
+        "size": 16080
+      },
+      {
+        "path": "docs/architecture/context7-mcp-integration.md",
+        "reason": "file-budget",
+        "size": 6019
+      },
+      {
+        "path": "docs/architecture/graph-database-scoping.md",
+        "reason": "file-budget",
+        "size": 5482
+      },
+      {
+        "path": "docs/architecture/ollama-local-models.md",
+        "reason": "file-budget",
+        "size": 5005
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 15584
+      },
+      {
+        "path": "CODE_OF_CONDUCT.MD",
+        "reason": "file-budget",
+        "size": 8701
+      },
+      {
+        "path": "docs/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 6775
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 620,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 17,
+      "complete": false,
+      "omitted": 11,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2a654c1a33565339be50c501cf9e5efd",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/shotgun-sh/shotgun/4d344d5a46aafc815de441ff670d4131187f33e6/8d70e09acc259e1e/manifest.json",
+  "package_id": "pkg_ffb2c3ee8471c2195a5b50d5a986bf718f2f81484adc0333e6b38412a23a13c9",
+  "repo": "shotgun-sh/shotgun",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0fa843fde205bbb9493865bef0bfdb5be58ae85ac56461410b76ff8746b5afdc",
+  "snapshot_id": "8d70e09acc259e1e",
+  "sources": [
+    {
+      "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+      "git_sha": "73f1eaf04d6be76f198303ef11fed3ef3f3bd8ad",
+      "lines": 110,
+      "path": "PIPX_MIGRATION.md",
+      "repository": "shotgun-sh/shotgun",
+      "sha256": "9e5aeb25e5442c44fdc2645751cde99265019172ebd3b13f2933600c9604619c",
+      "source_id": "src_40185a4423ea553da20d258e9f1e3ade",
+      "stored": "pipx_migration.md-b6b63a778f5e.md",
+      "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/PIPX_MIGRATION.md"
+    },
+    {
+      "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+      "git_sha": "cd7d14afc5233076edbaa9d34ad6107c6af124ec",
+      "lines": 448,
+      "path": "README.md",
+      "repository": "shotgun-sh/shotgun",
+      "sha256": "40d47ba76951d48b03f2287d73ba2683446b92c786c73a952d4a745c706e2731",
+      "source_id": "src_d37a3dd78c8d54ea88edb73d8bc52f28",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/README.md"
+    },
+    {
+      "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+      "git_sha": "f25cc07db7a708eec30339534317768b579f89cc",
+      "lines": 215,
+      "path": "docs/CASE_STUDY.md",
+      "repository": "shotgun-sh/shotgun",
+      "sha256": "c941dcd96dc692349e3fba59c92d8ad95eafe07f671f440233bb31ea7e97cc23",
+      "source_id": "src_8f7bffbcd0e45b69b8f9f8bc4dde13be",
+      "stored": "case_study.md-74ec1e1d2abd.md",
+      "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/docs/CASE_STUDY.md"
+    },
+    {
+      "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+      "git_sha": "26433f48dc362c33d3aba830a9696d2bc84f191f",
+      "lines": 385,
+      "path": "docs/CI_CD.md",
+      "repository": "shotgun-sh/shotgun",
+      "sha256": "1f2537d6da878f4491e1bfb25ed17f3e88120d6e8834ed9763cca8c73c73ad38",
+      "source_id": "src_603468b7d9cb5ca784d09148f0ada7d8",
+      "stored": "ci_cd.md-6537e8c6490c.md",
+      "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/docs/CI_CD.md"
+    },
+    {
+      "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+      "git_sha": "0d022cc8ad51acab7fd57400fcaf90743185f014",
+      "lines": 94,
+      "path": "docs/CLI.md",
+      "repository": "shotgun-sh/shotgun",
+      "sha256": "6c3f23777c9886a105acc4ac2425389e64bb2e6a04275960ae8303090830442d",
+      "source_id": "src_78addf9ad4be5f93b3622e8f0f1994e7",
+      "stored": "cli.md-7340b8a6d2c5.md",
+      "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/docs/CLI.md"
+    },
+    {
+      "commit": "4d344d5a46aafc815de441ff670d4131187f33e6",
+      "git_sha": "750f03fd76b09b855bebf574ab6d111011d7f204",
+      "lines": 373,
+      "path": "docs/DOCKER.md",
+      "repository": "shotgun-sh/shotgun",
+      "sha256": "d1acdfa9a72bec01aa6e8655909d95feaa3e5c1c2ae36444112dbd856833bb66",
+      "source_id": "src_ae4fd82221d25970b62ce902488b3192",
+      "stored": "docker.md-005fcade827e.md",
+      "url": "https://github.com/shotgun-sh/shotgun/blob/4d344d5a46aafc815de441ff670d4131187f33e6/docs/DOCKER.md"
+    }
+  ],
+  "summary": "Selected evidence records: Shotgun is described as a spec-driven development CLI that reads the whole codebase, plans features upfront, and splits work into staged PRs with file-by-file instructions for AI coding agents. A Router internally dispatches specialized sub-agents across Research, Specify, Plan, Tasks, and Export phases; users control only the Planning and Drafting execution modes.",
+  "superseded_claim_ids": []
+}

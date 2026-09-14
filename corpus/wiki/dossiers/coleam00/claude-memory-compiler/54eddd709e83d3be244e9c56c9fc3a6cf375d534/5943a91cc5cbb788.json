@@ -1,0 +1,346 @@
+{
+  "applied_operation_id": "op_b9107da52eff42cf8a391741d752c095",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9bd29ac93cfd95b40f97f92463ad2fb3ae8bfd2708344661fc49cbef39b1f8e7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "1039e31914d906521176d615208f27767b37880e",
+          "line_end": 361,
+          "line_start": 361,
+          "path": "AGENTS.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md#L361-L361"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56241dfab6337a7c48d0392b59600dc65883b25efc09cbd80d96d8246e4ccd37",
+        "slc_f3a0e3980341a91015c3e3c26ec99e2dc790787cda9b017fdbdb3b0ab15a9a22"
+      ],
+      "text": "Claude Code hooks (SessionEnd and PreCompact) capture the conversation transcript and spawn a background process using the Claude Agent SDK to extract decisions, lessons, patterns, and gotchas into a daily log."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d00b1b71e808634fe8d50f904944659727f2b56d8487ddabd23f2bfac7780f6d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+          "line_end": 34,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md#L30-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_982622cb28ea4835ec50d6109ff95ca854aef6ce66c95c2ae57e6d63f81a00a0"
+      ],
+      "text": "The system comprises hooks for capture, flush.py for SDK-based extraction, compile.py for building knowledge articles, query.py for index-guided retrieval, and lint.py running seven health checks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c26497e22b6c2a1adf5c72fb421130389719576176f439889d7789d0ba6bfef",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md#L48-L48"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_773af6bbb3c42e30f4a42fc870be246e6171d147f673b911f9fc0a47c7b8016d",
+        "slc_f3a0e3980341a91015c3e3c26ec99e2dc790787cda9b017fdbdb3b0ab15a9a22"
+      ],
+      "text": "Retrieval deliberately avoids RAG: no vector database or embeddings, just a markdown index file, on the rationale that at 50-500 articles an LLM reading a structured index outperforms cosine similarity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b781dc566a6f4c7c518a18731a6c1a62497c274aa5e0eb70b53772607a3ecb6e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md#L20-L20"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "1039e31914d906521176d615208f27767b37880e",
+          "line_end": 379,
+          "line_start": 371,
+          "path": "AGENTS.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md#L371-L379"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01c9cf236a7009a298ce25bdf68acf65b226d1ae52cd77e028a12ce1c4f70f36",
+        "slc_6f86fee1d2b34de459acf90998b51e0aba7c6d8d3f84bed16f76ae4aa9fb816b"
+      ],
+      "text": "After 6 PM local time (COMPILE_AFTER_HOUR=18), a flush that detects a changed daily log spawns compile.py as a detached background process, giving once-daily automatic compilation without cron."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e89ef6519370e91cd18133768ecf48ea613ae356e5b9eec0a38cd060eba138a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "1039e31914d906521176d615208f27767b37880e",
+          "line_end": 441,
+          "line_start": 441,
+          "path": "AGENTS.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md#L441-L441"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "1039e31914d906521176d615208f27767b37880e",
+          "line_end": 461,
+          "line_start": 457,
+          "path": "AGENTS.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md#L457-L461"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "1039e31914d906521176d615208f27767b37880e",
+          "line_end": 439,
+          "line_start": 435,
+          "path": "AGENTS.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md#L435-L439"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "1039e31914d906521176d615208f27767b37880e",
+          "line_end": 427,
+          "line_start": 421,
+          "path": "AGENTS.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md#L421-L427"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+          "line_end": 44,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md#L38-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09f73acb348ffcb6b80c326fdfcbade72efd9473958f7b8132609b1ee49cd10e",
+        "slc_335f22311bc79ee4b1102beaa445b6edf935b49b88b6d56d43b511b7da54d0b6",
+        "slc_53727305d92011c41b7f3f72397d2a5a5d03bb7183c8b014abc3861f96615c87",
+        "slc_59fe5d4415755cba0aba016e46c6270e3a1b798955e648f654ee9560bafbb1b6",
+        "slc_6385d628abd3314f4750b493b6de9afdd9955db3c2d99b4c67affabbdad6e0da"
+      ],
+      "text": "CLI commands include compile.py (with --all, --file, --dry-run flags), query.py with an optional --file-back flag that saves the answer as a qa/ article, and lint.py with --structural-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1ac2e69d6a66b47aaf9bab86db25d9c066cce057e174ecb91a198063f3f56f1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md#L48-L48"
+        },
+        {
+          "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+          "git_sha": "1039e31914d906521176d615208f27767b37880e",
+          "line_end": 518,
+          "line_start": 518,
+          "path": "AGENTS.md",
+          "repository": "coleam00/claude-memory-compiler",
+          "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md#L518-L518"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_773af6bbb3c42e30f4a42fc870be246e6171d147f673b911f9fc0a47c7b8016d",
+        "slc_80a3e4dc696518dcf81c806a61c7d9cb7a6e55de870d069990536ad2899bf54a"
+      ],
+      "text": "The index-guided retrieval approach is documented to break down at roughly 2,000+ articles (~2M+ tokens) when the index exceeds the context window, at which point hybrid RAG is suggested."
+    }
+  ],
+  "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 52,
+        "path": "README.md",
+        "size": 3865
+      },
+      {
+        "lines": 518,
+        "path": "AGENTS.md",
+        "size": 18229
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 15,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_db39ebe6eca2550d947943f2470e7b2b",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/coleam00/claude-memory-compiler/54eddd709e83d3be244e9c56c9fc3a6cf375d534/5943a91cc5cbb788/manifest.json",
+  "package_id": "pkg_c5f2709a48b41d22734030cbf01585ca8b5268efd3b7a30595bdc56e37d36e78",
+  "repo": "coleam00/claude-memory-compiler",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c037800f198a45cc8f5df9d3cbf17cd84c846ac11b14ff9b1479b69f3f895f33",
+  "snapshot_id": "5943a91cc5cbb788",
+  "sources": [
+    {
+      "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+      "git_sha": "1039e31914d906521176d615208f27767b37880e",
+      "lines": 518,
+      "path": "AGENTS.md",
+      "repository": "coleam00/claude-memory-compiler",
+      "sha256": "99aea66a1d4b6a5498d40310f5397215e3218a2bf3af2a36277e25e95f982ce4",
+      "source_id": "src_ba7f6c584d5a5e28af7e942aa9e69f3f",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/AGENTS.md"
+    },
+    {
+      "commit": "54eddd709e83d3be244e9c56c9fc3a6cf375d534",
+      "git_sha": "10268d15cbc4461968ad07e2e501a32fbd382aa8",
+      "lines": 52,
+      "path": "README.md",
+      "repository": "coleam00/claude-memory-compiler",
+      "sha256": "2a285afe73580399653f47adbab88d019c74d92200a56f7bc805b2a306c942e0",
+      "source_id": "src_228b40f1f0955159828cecbb9c1c2854",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/coleam00/claude-memory-compiler/blob/54eddd709e83d3be244e9c56c9fc3a6cf375d534/README.md"
+    }
+  ],
+  "summary": "Claude Code hooks (SessionEnd and PreCompact) capture the conversation transcript and spawn a background process using the Claude Agent SDK to extract decisions, lessons, patterns, and gotchas into a daily log. The system comprises hooks for capture, flush.py for SDK-based extraction, compile.py for building knowledge articles, query.py for index-guided retrieval, and lint.py running seven health checks.",
+  "superseded_claim_ids": [
+    "clm_8e3480b4087b5b0969d9240171eb776cc6a42ba8f7a35f5b7e6b29f22beef498",
+    "clm_ddf08fb63d0fd44d03965017ea4e1dfc8addc74711d2add130ee736252994c04"
+  ]
+}

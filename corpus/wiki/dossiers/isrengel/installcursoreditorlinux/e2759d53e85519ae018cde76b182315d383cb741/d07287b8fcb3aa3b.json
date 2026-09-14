@@ -1,0 +1,473 @@
+{
+  "applied_operation_id": "op_c112c89f35814f06870384373c8a5a1a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e668155c6de290f7f3b86e04b729c0f49bdc54283041df17401c0cce079f1bca",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L7-L7"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68e33cb6a18b1533b6dcdae2d1bae61fe584f8dc58e9cae951a3a01697e01c7e",
+        "slc_bf480be267b1f866f462e1badace577f6c955f76b1939c24785cb22f6fc22053"
+      ],
+      "text": "The project is deprecated: it was created when Cursor Editor was distributed exclusively as an AppImage, and Cursor now offers an official .deb package for Linux that makes this installer unnecessary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8c2018dc54ce25e0cafd8983fefd2a98fa89f067fbbea812ee3bc4d7b4ff9a7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L12-L12"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L9-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_357e629d5a0068a61c29c61c6a61d03a5b8480fe228ca26fa6a8fa258ca6a434",
+        "slc_f61f9b82410aee757f717cd63119c14c8212938f860f6fdcec6d8ce53ca16838"
+      ],
+      "text": "The repository is kept only for historical and educational purposes, and users are directed to cursor.com for the official Cursor Editor installation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ddba213812cdea99461a536c824979a4c1ef6faecd2efa90891154a6929ae4b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L28-L30"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 97,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L94-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24f6a28de65cd3648510f67a674179c44ebe4d1a46a46e2ed51f735565ca4fa4",
+        "slc_2e4f81ec358df4ffc08b93db16bbd1b4f9634c3646b8136d32cf57480fc3d70f"
+      ],
+      "text": "The installer is a Bash script (install.sh) that downloads the Cursor IDE application, sets it up as a desktop application, creates a .desktop menu entry, and configures an automatic update script using systemd."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56c4a45c1ee3d3185c1dbb1f71598a75c0b382ac89e9c6811cd4693196265ab5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L46-L46"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L28-L30"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L76-L76"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L38-L38"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L54-L54"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L69-L69"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L61-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21a6926316cbeace4af2fd1c058f03043eb69719119b95a61f767d9ff546fc99",
+        "slc_24f6a28de65cd3648510f67a674179c44ebe4d1a46a46e2ed51f735565ca4fa4",
+        "slc_4878e110a854fb6a265c9949084bfd5b50c72b834020f6b1e6aeb920043709fb",
+        "slc_5e4d73bfb4e07b86ed980ae7c2648619deab798846ff3d209a93bdfca7b6dc43",
+        "slc_5f457d2d5354f021f73f6665b2faec649aff218244ee31b6600e4a9a6ca8bf51",
+        "slc_7b4f5c3e8b13cc969b2deb2891d9709917de2734bb2129d5715ab37e00fc6319",
+        "slc_ad345758e0f0bae2a7e530bb04e2641c5804680d3bbec75e7f7f65bba74295a7"
+      ],
+      "text": "The installation requires Git (to clone the repository), Curl (to download installation files), and Bash, with per-distribution install commands given for Debian/Ubuntu, Arch, Fedora, OpenSUSE, Gentoo, and Solus."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb7ad368d020f497525c5aa1fc6d9f6ca13cbf959bad48cb0d19d3a78bfb60d1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 90,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L88-L90"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L86-L86"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L101-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53c7081b13123af4577bedaeb3861384a9b78a66e5ce194b1c4ef34f09f739bd",
+        "slc_c48df0f183ba23bdc68c1d3ecb7b41c1714e58f2c845ecd9e78341b388fad00e",
+        "slc_c8df0f7c5811b1529931c8655e28f67377132acdfa111518102f7c8c829a8a6c"
+      ],
+      "text": "The documented install workflow clones the repo with --depth=1, runs ./install.sh, then removes the cloned directory; users may edit install.sh beforehand to change settings such as the default installation path of /opt/cursor/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4e35970b48b0fd150efbde2a6059ca1be8d77e946a13f6d0ae994c4b02a9746",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 139,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L137-L139"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 115,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L113-L115"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 148,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L143-L148"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L111-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e7b280ff6418e36113f5c6fa3e0bf4b820765149a8d89a4a2c59228ce2437cc",
+        "slc_1232a5685bcc291193fdf8a0639640c478fcf31a12ad18e6db3d5b0fa343934b",
+        "slc_3ddfc2322d3c19596721d00c9afca8717667f9b4f39f8bdd887e082dd5461a92",
+        "slc_7ec2382ae3a436948717e270a902cf2686ee9f8445c7162e630588c3118bda20"
+      ],
+      "text": "After installation, a `cursor` command is available in the terminal, e.g. `cursor --help`, and uninstallation can be done via `cursor --uninstall` or by manually removing /opt/cursor, the /usr/local/bin/cursor binary, and the update-cursor systemd service."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f502858b04e04c39fe9109b0b93fda6ee0b3f229e01493cb849e1293f07f8e6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 123,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L121-L123"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 129,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L127-L129"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L119-L119"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 125,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L125-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_722b68933d9e177f1bdcf24a659473045b65e9d7f56c8c89737eb432a04978f7",
+        "slc_76147f8c463a068ee0e22ca42f6c82675100c58bfcf893eeb76efd1082f5aea3",
+        "slc_84f3c7a7e79d8cc3de2ad19efe1576dd7d12d313e071709f4602365378f27ef9",
+        "slc_f9787e465467ebae191a7e8af88a1659bf2896bb7b48d82aebd6bda5057918bf"
+      ],
+      "text": "The installer configures a systemd service (update-cursor.service) that checks for and installs Cursor IDE updates; it can be triggered manually with systemctl start or enabled at startup with systemctl enable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_402b1da94ccf7d73d058acf7b551d18c362988805ed64f2d4ce921a5c12625ad",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L16-L16"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L20-L20"
+        },
+        {
+          "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+          "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "isrengel/installcursoreditorlinux",
+          "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md#L105-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5da034d43b78f1e9ec80e161733a62ee8c91fa0da56c7be8be56164c84b157ef",
+        "slc_8d8adffd34df0865d343a5180d5798e01c29e25d11b009d314180741ff7abeb6",
+        "slc_dd3701ee468077acbc34c3f53ff27b79c152f81d369106c8845ad070222b7bf5"
+      ],
+      "text": "The guide targets installing Cursor AI Code Editor as a desktop application on any Linux distribution, describing Cursor as a VSCode-based, AI-powered editor with ChatGPT integration."
+    }
+  ],
+  "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 159,
+        "path": "README.md",
+        "size": 4419
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 17,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_5d770ebb65ae53ffb47351dd447429b6",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/isrengel/installcursoreditorlinux/e2759d53e85519ae018cde76b182315d383cb741/d07287b8fcb3aa3b/manifest.json",
+  "package_id": "pkg_53e67228accad3c88e4ecb35793b91616d0930daa6c9248cd176c89d95611e89",
+  "repo": "isrengel/installcursoreditorlinux",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5fb83a0fc14e6aa9eebb69145d5a04714cf11b35650267946c11e147cf83b709",
+  "snapshot_id": "d07287b8fcb3aa3b",
+  "sources": [
+    {
+      "commit": "e2759d53e85519ae018cde76b182315d383cb741",
+      "git_sha": "dd0dd8455dd5b16e68753098d199c37796aefc43",
+      "lines": 159,
+      "path": "README.md",
+      "repository": "isrengel/installcursoreditorlinux",
+      "sha256": "4910582e83df962a474c2a7b665f812dd49e232575c33db33286cbd11e8e495b",
+      "source_id": "src_f096c4f9bcba5d42a93ca5d0b6e608ab",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/IsRengel/InstallCursorEditorLinux/blob/e2759d53e85519ae018cde76b182315d383cb741/README.md"
+    }
+  ],
+  "summary": "The snapshot is a README-only view of a deprecated Linux installer for Cursor Editor, which was needed only when Cursor shipped as an AppImage and is now superseded by an official .deb package. The README documents prerequisites, an install.sh-driven setup with a systemd update service, CLI usage, and uninstall steps.",
+  "superseded_claim_ids": []
+}

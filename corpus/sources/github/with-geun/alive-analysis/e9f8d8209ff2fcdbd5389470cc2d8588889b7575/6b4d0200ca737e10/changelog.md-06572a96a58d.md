@@ -1,0 +1,256 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## [1.4.0] - 2026-05-27
+
+Analysis Memory System — decisions that persist, knowledge that compounds.
+
+### Highlights
+- **Analysis Decision Records (DR)**: append-only methodology decision log, adapted from software ADR concept
+- DR types: Metric, Methodology, Scope, Model, Principle — each prevents AI from re-proposing rejected alternatives
+- **Analysis Wiki**: AI-maintained knowledge base compiled from archived analyses (based on Andrej Karpathy's LLM Wiki, April 2026)
+- Wiki compiles structured pages per metric, pattern, and hypothesis — knowledge compounds as analyses accumulate
+- 6 specialist agents now check Decision Records before suggesting methodology alternatives
+- Session hook enhanced: DR count + Wiki page count in status line
+- Stop hook added: session-end audit log in `.analysis/session-log.txt`
+
+### Added
+- `core/decisions/GUIDE.md` — DR writing principles, types, template, philosophy
+- `core/decisions/INDEX.md` — DR index (empty state, auto-updated by `/analysis-dr`)
+- `core/decisions/DR-001.md` — example DR (Metric type: Active User Definition)
+- `core/wiki/GUIDE.md` — wiki concept, page types, relationship to search/retro/dashboard
+- `core/wiki/templates/metric.md` — metric wiki page template
+- `core/wiki/templates/pattern.md` — pattern wiki page template
+- `core/wiki/templates/hypothesis.md` — hypothesis results index template
+- `/analysis-dr` command (Claude Code + Cursor): `new` / `scan` / `list` / `show {NNN}`
+- `/analysis-wiki` command (Claude Code + Cursor): `update` / `check` / `show {entity}`
+- `platforms/cursor/rules/alive-decisions.mdc` — Cursor DR check rule with 4-step protocol
+
+### Changed
+- `core/agents/router.yml`: `decision_check` policy added — 6 agents declared DR-aware
+- `core/agents/prompts/hypothesis-gen.md`: Step 1.5 DR check added
+- `core/agents/prompts/stats-agent.md`: Step 1.5 DR check added
+- `core/agents/prompts/metric-definer.md`: Step 1.5 DR check added
+- `core/agents/prompts/metric-translator.md`: Step 1.5 DR check added
+- `core/agents/prompts/experiment-designer.md`: Step 1.5 DR check added
+- `core/agents/prompts/causal-agent.md`: Step 1.5 DR check added
+- `platforms/{claude-code,cursor}/commands/analysis-next.md`: Step 4.4/4.5 Decision Records check added before agent dispatch
+- `platforms/claude-code/commands/analysis-init.md`: `analyses/decisions/` and `analyses/wiki/` now created with seeded INDEX files at init time
+- `platforms/claude-code/hooks/session-start.sh`: DR count + Wiki page count in status line
+- `platforms/claude-code/hooks/hooks.json`: Stop hook added for session-end audit log
+- `platforms/cursor/rules/alive-agents.mdc`: Decision Records Check section added before agent dispatch
+- `install.sh`: `core/decisions/` and `core/wiki/` copy blocks added for both Claude Code and Cursor
+- Both SKILL.md files: Analysis Memory System section added (Claude Code full, Cursor quick-reference)
+- `README.md`: Analysis Memory System section, updated command tables, file structure, platform table
+
+## [1.3.0] - 2026-03-23
+
+Team Dashboard — visualize your analysis history as an interactive node graph.
+
+### Highlights
+- Single HTML file dashboard, no backend, no server — open directly in browser
+- Force-directed node graph: each analysis is a node, follow-up connections are edges
+- Click a node → connected analyses highlight, the rest dim (3-level opacity system)
+- Filter by type, status, period, analyst (multi-select), tags (multi-select)
+- ⌘K search across title, ID, analyst, tags
+- `export.sh` script scans `analyses/` folder and generates dashboard JSON
+- Optional `meta.yml` per analysis for analyst, tags, followups, keyFinding
+- Obsidian-compatible: open `analyses/` as vault, `[[wiki-links]]` become graph edges
+- New command: `/analysis-dashboard` (Claude Code + Cursor)
+
+### Added
+- `dashboard/alive-dashboard.html` — standalone team dashboard (Canvas-based D3 graph)
+- `dashboard/export.sh` — bash export script: `analyses/` → dashboard JSON
+- `dashboard/README.md` — setup and usage guide
+- `/analysis-dashboard` command added to both SKILL.md files
+- `mcp/` — MCP server (`alive-analysis-mcp` npm package)
+  - `alive_list` — list analyses with type/stage/status/analyst/tags filters
+  - `alive_get` — read full analysis content by ID
+  - `alive_search` — full-text search with file:line snippets
+  - `alive_dashboard_export` — export JSON for ALIVE Dashboard
+  - Compatible with Claude Code, Zed, Windsurf, Continue, and any MCP client
+
+## [1.2.0] - 2026-03-03
+
+Sub-agent Dispatch System — 31 specialist agents with deterministic routing.
+
+### Highlights
+- 4 required quality gates auto-run on signals: scope, data quality, ethics, reproducibility
+- 27 optional specialists recommended at each stage (top 3, one confirmation question)
+- Deterministic routing: per-stage scoring rules, suppression history, user config overrides
+- New command: `/analysis-agent` (Claude Code + Cursor)
+
+### Added
+- `core/agents/registry.yml` — 31 agent definitions with metadata, signals, and I/O contracts
+- `core/agents/router.yml` — per-stage scoring rules, gate conditions, suppression policy
+- `core/agents/runtime.md` — invocation/merge policy, parallelism rules, state tracking
+- `core/config/agents.yml` — user-overridable config (enable/disable, auto_run, verbosity, max_recos)
+- `core/agents/prompts/` — 31 prompt files
+  - ASK: `problem-framer`, `hypothesis-gen`, `metric-translator`
+  - LOOK: `data-scout`, `tracking-auditor`, `lineage-mapper`, `sampling-designer`, `sql-writer`
+  - INVESTIGATE: `eda-agent`, `stats-agent`, `experiment-designer`, `causal-agent`, `root-cause-analyst`, `ml-agent`, `forecast-agent`, `anomaly-detector`
+  - VOICE: `chart-recommender`, `dashboard-designer`, `narrative-agent`, `exec-summarizer`, `decision-memo-writer`
+  - EVOLVE: `metric-definer`, `semantic-layer-engineer`, `dre-agent`, `data-product-manager`, `governance-steward`
+  - Required gates: `scope-guard`, `data-quality-sentinel`, `ethics-guard`, `reproducibility-keeper`
+  - Cross-cutting: `peer-reviewer`
+- `/analysis-agent` command for Claude Code and Cursor: show recommendations, run by number or alias
+- `platforms/cursor/rules/alive-agents.mdc` — Sub-agent Dispatch rule for Cursor
+
+### Changed
+- `/analysis-next` updated with Step 4.5: auto-run gates + recommendation block at every stage transition
+- `install.sh` updated to copy `core/agents/` and `core/config/` to target project
+- Both SKILL.md files updated with Sub-agent Dispatch section (~1,870 lines Claude Code, ~340 lines Cursor)
+- README.md updated: command count 20 → 21, Sub-agent Dispatch section added, roadmap updated
+- `platforms/cursor/rules/alive-agents.mdc` expanded: 9 → 31 agent full reference table with stage-grouped descriptions and "Quick help by task" lookup
+
+### Improved
+- **All 31 agent prompts rewritten** with a consistent quality framework:
+  - Step 1 "Read and internalize" — extracts primary metric, domain, trigger before generating output
+  - Decision framework tables — context-based method selection (test type, chart type, causal method, etc.)
+  - Conditional sections — irrelevant sections are explicitly skipped, not left blank
+  - Output enforcement — no generic placeholders; formulas, exact text citations, and specific values required
+  - Self-check checklist (5 items) — validates output quality before finalizing
+  - Concrete rules — specific prohibitions with stated alternatives
+- Stage-specific highlights:
+  - ASK: bundled-question detection pattern table, "Decision this enables" enforcement
+  - LOOK: survivorship bias check, Simpson's paradox detection protocol, SQL sanity check query
+  - INVESTIGATE: traffic sufficiency first, history sufficiency check, stopping criteria with threshold
+  - VOICE: finding-as-title rule, quantification enforcement (no adjective-only findings), single-action rule
+  - EVOLVE: STEDII evidence specificity standard, breaking change assessment, named-owner enforcement
+  - CROSS: k-anonymity quasi-identifier check, 🔴 risk blocking enforcement
+
+## [1.1.0] - 2026-02-19
+
+Education Mode — learn data analysis thinking through guided practice scenarios.
+
+### Highlights
+- 7 practice scenarios (3 Beginner + 4 Intermediate) covering all 4 analysis types
+- 4 new commands × 2 platforms: `analysis-learn`, `learn-next`, `learn-hint`, `learn-review`
+- Rubric-based 100-point scoring with Common Mistakes targeted feedback
+- 3-level progressive hints and stage-gated data reveals
+- Graduation path: Beginner → Intermediate → Production analysis
+
+### Added
+- `core/education/` directory with pedagogy guide, templates, and 7 scenario packages
+- Beginner scenarios (Quick format): signup drop investigation (b1), onboarding comparison (b2), turnover cost quantification (b3)
+- Intermediate scenarios (Full format): DAU drop investigation (i1), delivery fee simulation (i2), A/B test checkout experiment (i3), churn prediction modeling (i4)
+- Each scenario includes: metadata, briefing, stage-gated data, 3-level hints (5 stages), reference solution, rubric with Common Mistakes
+- `/analysis-learn` command: start a learning session with difficulty and scenario selection
+- `/analysis-learn-next` command: stage review with rubric scoring + Common Mistakes feedback, then advance
+- `/analysis-learn-hint` command: 3-level progressive hints (direction → specific → near-answer)
+- `/analysis-learn-review` command: full completion review with per-stage scoring, key takeaways, and next scenario recommendation
+- Education Mode sections in both SKILL.md files (Claude Code + Cursor)
+- `.analysis/education/progress.md` for learning progress tracking and Skill Radar
+
+### Changed
+- `install.sh` updated to copy `core/education/` directory with dynamic scenario discovery
+- README.md updated with Education Mode section, command count 16 → 20, roadmap updated
+
+## [1.0.0] - 2026-02-14
+
+First stable release. All features complete, dual-platform support.
+
+### Highlights
+- ALIVE loop with Full/Quick modes, 3 analysis types (Investigation, Modeling, Simulation)
+- A/B test experiments, metric monitoring, model registry
+- Insight search (`/analysis-search`) and auto retrospectives (`/analysis-retro`)
+- Claude Code + Cursor 2.4+ dual-platform optimization
+- 16 commands, quality checklists, archive system
+- 40+ QA simulation tests across diverse roles, industries, and languages
+
+### Added
+- `/analysis-search` command: deep full-text search across all analyses with context snippets, cross-reference analysis, and learning suggestions
+- `/analysis-retro` command: automatic retrospective report generation from archived analyses with impact tracking summary, pattern detection, and follow-up tracking
+- `analyses/.retro/` directory for retrospective reports
+- Insight Search & Retrospective section in SKILL.md (both platforms)
+
+## [0.3.0] - 2026-02-14
+
+### Added
+- Platform separation: `platforms/claude-code/` and `platforms/cursor/` with optimized files for each
+- Cursor slim SKILL.md (~265 lines) with batch-oriented methodology summary
+- 16 Cursor-optimized command files with batch question flow and file-based state management
+- Cursor `.mdc` agent-requested rule (`alive-analysis.mdc`) for automatic activation
+- `core/` directory as single source of truth for shared methodology
+- `core/references/` for analytical methods, conversation examples, experiment statistics
+- `core/examples/` for Full and Quick analysis samples
+- Platform comparison section in README.md
+- `--claude` flag for install.sh (Claude Code only)
+
+### Changed
+- Restructured repository: `references/` → `core/references/`, `examples/` → `core/examples/`
+- Moved `skills/alive-analysis/SKILL.md` → `platforms/claude-code/SKILL.md`
+- Moved `commands/` → `platforms/claude-code/commands/`
+- Moved `hooks/` → `platforms/claude-code/hooks/` and `platforms/cursor/hooks/`
+- Updated `install.sh` to copy from `platforms/` structure with `--claude`/`--cursor`/`--both` flags
+- Updated all `references/` paths to `core/references/` in SKILL.md
+- INSTALL.md rewritten with platform-specific manual setup sections
+- CONTRIBUTING.md updated with new project structure
+
+## [0.2.1] - 2026-02-14
+
+### Added
+- GLOSSARY.md with definitions of key analysis terms
+- README.ko.md (Korean translation)
+- Non-SaaS example analyses (logistics, HR/finance)
+- Cursor 2.4+ native support with separate hooks format
+- hooks-cursor.json for Cursor-compatible hook configuration
+- install.sh `--cursor` and `--both` flags
+- install.sh directory validation and error recovery (jq fallback, malformed JSON backup)
+
+### Fixed
+- SHAP explanation in analytical-methods.md (corrected to additive contributions, not percentages)
+- `find` command grouping bug in session-start.sh (`-o` without parentheses)
+- install.sh path confusion when running from inside alive-analysis repo
+- Inline term explanations in examples (pp, Simpson's Paradox, counter-metric, D7/D30)
+
+### Changed
+- .gitignore now separates framework files (committed) from user data (excluded)
+- README compatibility table updated with correct Cursor paths
+- INSTALL.md rewritten with Cursor setup section and clearer instructions
+- install.sh auto-detects .cursor/ directory for dual installation
+
+## [0.2.0] - 2026-02-14
+
+### Added
+- A/B test experiment module (Full and Quick modes)
+- Metric monitoring with STEDII validation
+- Alert escalation logic (Warning → Critical → Investigation)
+- Quick→Full analysis promotion with complexity signals
+- Tags for connecting related analyses
+- Model registry for deployed ML models
+- Counter-metric monitoring (Goodhart's Law prevention)
+- Segment-level monitoring (Simpson's Paradox detection)
+- Impact tracking in EVOLVE stage
+- Simulation analysis type with Monte Carlo support
+- Analysis independence protocol (anti p-hacking)
+- Scope creep and rabbit hole guard protocols
+- Data quality emergency protocol
+- Non-analyst guides for experiments and monitoring
+- install.sh automated installer
+
+### Changed
+- SKILL.md refactored: educational content moved to references/
+- README overhauled with "Why" section and PM guide
+- Init command supports --quick flag for fast setup
+
+## [0.1.0] - 2026-01-15
+
+### Added
+- ALIVE loop (Ask, Look, Investigate, Voice, Evolve)
+- Full analysis mode (5 files per analysis)
+- Quick analysis mode (single file)
+- Three analysis types: Investigation, Modeling, Simulation
+- Stage checklists with quality gates
+- Analysis archive with searchable summaries
+- Metric proposal conversation in EVOLVE
+- Structured data request framework (5 elements)
+- Hypothesis tree methodology
+- Multi-lens analysis (macro/meso/micro)
+- Sensitivity analysis framework
+- Audience-specific communication guide
+- Metric framework (North Star, Leading, Guardrail, Diagnostic)
+- SKILL.md open standard (Claude Code, Cursor, Codex compatible)

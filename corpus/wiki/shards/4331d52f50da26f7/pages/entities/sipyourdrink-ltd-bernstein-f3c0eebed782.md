@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_13ac6865f2dc9682ee16f009703530addada0796f1539cf0d1828b475a359a66
+- clm_1f1dc01c0820dba305326130bbf571201bdaadab1e6d52f74cd6bec1699931f9
+- clm_24b48cfaf202ca21249154cfe5d376d482f770b9e5743a3908602581d21a96f9
+- clm_30baedf91f92c1f02efc97178cb0e217e8876fe0cc41365e146b423d57b5bc55
+- clm_587f4e0bee99f1d4a569b68b5914f1ab5d931735e118a675b35b9b3bbdc01b6c
+- clm_5d1e66f623075314a51fcf11be130f3b3b8a31bfd9796e1654645e763070de4f
+- clm_86720398fff7f344e1d1b38cfcd51aed69ca2788453df3828eba6e18d87da653
+- clm_9a4dd64a7a3eecb1a0aed8ed6d90bf6af73529b3ec4bb9f4f62d3ec8b92780cb
+- clm_aacb4e5277f4c603c2fb561322cfad94c777f5c72965b6ee1da0bcf98c4c310d
+- clm_bfc7ebce5ce6e4415806c3018a6a5963ee577342abc517038d699d809e1e5a1e
+- clm_ec6127f7c96f95933f033be31f1faa794485ef1a6cda73a9abe39dbfc7e10088
+- clm_f6f971e5b4d98701fbd3d303301d5dde08acb83da7ac3bfefdce9a5f55675b4c
+maturity: draft
+page_id: pg_354ad75a8adf5708a1b7f3c0eebed782
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: sipyourdrink-ltd/bernstein
+updated_at: '2026-09-14T04:21:54Z'
+---
+
+# sipyourdrink-ltd/bernstein
+
+<!-- rcw:begin owner=entity:ent_55055efce662567db2f2f076b4391d3d block=evidence -->
+- sipyourdrink-ltd/bernstein is mentioned in this evidence. [@claim:clm_13ac6865f2dc9682ee16f009703530addada0796f1539cf0d1828b475a359a66] [@claim:clm_1f1dc01c0820dba305326130bbf571201bdaadab1e6d52f74cd6bec1699931f9] [@claim:clm_24b48cfaf202ca21249154cfe5d376d482f770b9e5743a3908602581d21a96f9] [@claim:clm_30baedf91f92c1f02efc97178cb0e217e8876fe0cc41365e146b423d57b5bc55] [@claim:clm_587f4e0bee99f1d4a569b68b5914f1ab5d931735e118a675b35b9b3bbdc01b6c] [@claim:clm_5d1e66f623075314a51fcf11be130f3b3b8a31bfd9796e1654645e763070de4f] [@claim:clm_86720398fff7f344e1d1b38cfcd51aed69ca2788453df3828eba6e18d87da653] [@claim:clm_9a4dd64a7a3eecb1a0aed8ed6d90bf6af73529b3ec4bb9f4f62d3ec8b92780cb] [@claim:clm_aacb4e5277f4c603c2fb561322cfad94c777f5c72965b6ee1da0bcf98c4c310d] [@claim:clm_bfc7ebce5ce6e4415806c3018a6a5963ee577342abc517038d699d809e1e5a1e] [@claim:clm_ec6127f7c96f95933f033be31f1faa794485ef1a6cda73a9abe39dbfc7e10088] [@claim:clm_f6f971e5b4d98701fbd3d303301d5dde08acb83da7ac3bfefdce9a5f55675b4c]
+<!-- rcw:end owner=entity:ent_55055efce662567db2f2f076b4391d3d block=evidence -->
+
+## Researcher notes
+

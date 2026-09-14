@@ -1,0 +1,1037 @@
+{
+  "applied_operation_id": "op_1ab179ee10ac4b19899376bde9da721f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_63e23efd773529940518f1fb1ce334167c0f19ea98a08093c016937cdda4a626",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 45,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L38-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_736bfd374959588c6a44feb9c27243ca4659256e434b6ea4b9e433ad2e555f6f"
+      ],
+      "text": "Langroid is a Python framework for building LLM applications where users set up Agents equipped with optional components (LLM, vector-store, tools/functions) that collaborate by exchanging messages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3191dcf4143f79c4fb19ea234222695139f58cf52755d67df8f048376c2b19bc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 45,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L38-L45"
+        },
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 50,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L47-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_736bfd374959588c6a44feb9c27243ca4659256e434b6ea4b9e433ad2e555f6f",
+        "slc_f6ed399752416a7986efd113e5fd14280156870e3bdd8bf35a43fe5ea57cbf16"
+      ],
+      "text": "The multi-agent paradigm is inspired by the Actor model, and the framework does not use LangChain or any other LLM framework, aiming to work with practically any LLM."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_82a9b318f87f6bab08b904e3ceddbf455d44f7628120e764f98a211bcb9096a2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 493,
+          "line_start": 455,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L455-L493"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44f4100f9a4e8b8b53d9ddd56b164674fe8ff9b400ce6798b2eb2a7bc518988b"
+      ],
+      "text": "The Agent class encapsulates LLM conversation state plus an optional vector-store and tools, acts as a message transformer, and by default provides three responder methods corresponding to LLM, Agent, and User."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6b6bb1b173887469c6bc272f026fd36266b6eb3c1e241aa55ca6297870462a3",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 493,
+          "line_start": 455,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L455-L493"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44f4100f9a4e8b8b53d9ddd56b164674fe8ff9b400ce6798b2eb2a7bc518988b"
+      ],
+      "text": "A Task wraps an Agent, manages iteration over the agent's responder methods, and orchestrates multi-agent interaction via hierarchical, recursive task delegation; sub-tasks are treated as additional responders used round-robin after the agent's own responders."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80fdc521582a18fe7e7fdd580f8894a842527d41b76ecb654c9c982dcd58771a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 862,
+          "line_start": 857,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L857-L862"
+        },
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 883,
+          "line_start": 876,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L876-L883"
+        },
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 911,
+          "line_start": 901,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L901-L911"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b92c9d22fcdd7580e73cf93b41cb93220f7c9e5a19cf64072f1592d1edb6b93",
+        "slc_938ef641df0120eee70eb4f06fb29135bcdcf45d496cab25ceaa30d18cc60055",
+        "slc_cee29964b57577c43bf818c59c77b7770a6a6a7aa442f154a3b7c000002cbc6e"
+      ],
+      "text": "Tools are defined by subclassing ToolMessage with a request field naming the handling agent method, a purpose description, and typed arguments; agents enable tools via enable_message, and Pydantic validation errors are sent back to the LLM for self-correction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ef3ce00978788541270b7a15de8d3f87b6d107643f1ed25178f001d2b6e9c23",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 1000,
+          "line_start": 992,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L992-L1000"
+        },
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 986,
+          "line_start": 981,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L981-L986"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24722645d653f6fa15a05a275bd938a13ecd2ecb943efbb79bb37fac6f966ec3",
+        "slc_d8d34368ba95c835dbaf5c36dffbcf8c777e12db0435f599fa58144127509b1d"
+      ],
+      "text": "DocChatAgent supports chat with documents by sharding, embedding, storing in a vector DB, and retrieval-augmented answer generation, configured via DocChatAgentConfig with doc_paths and a vecdb setting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07cfa57fc6c9a1515ef4ed7bb048d6400d32f6afd273fd5629568d660376234e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 1028,
+          "line_start": 1025,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L1025-L1028"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f58e8c78c60adf70baaba9bf2308ed0a9b27d49504c237f36317cad4caa500ea"
+      ],
+      "text": "TableChatAgent accepts a dataset (file path, URL, or dataframe) and answers queries by having its LLM generate Pandas code via function-calling, which the agent's handler method executes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b13ffd944d0f7dc057cb755b8c52656adb56f47168a16b9f93cac31770e969a6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 530,
+          "line_start": 500,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L500-L530"
+        },
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 544,
+          "line_start": 536,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L536-L544"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c7bd3c93d3040660ad9208e02e173cb8b4b2ca7f2b083fe1110932aa9d81d63",
+        "slc_3deed355f0930270b81de163e5647fd616d42eb8d61242e47a0766a751aeddcd"
+      ],
+      "text": "Langroid requires Python 3.11+ and is installable from PyPI, with optional extras including hf-embeddings, doc-chat, db, postgres, and all (the latter increasing install size and startup time)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4ecd45cf5e980d9619f4da4a10d9a286eb069c826ba5feb85edbf7d2726aa029",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 659,
+          "line_start": 626,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L626-L659"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_261a81012f9db01fd2ce5c58697aa0974f279f69b452391379eace243bd45d46"
+      ],
+      "text": "Supported vector stores include Qdrant cloud, Chroma (local storage, no API key needed), LanceDB, and Milvus; Milvus defaults to local storage at ./milvus.db, and Milvus Lite is unavailable on Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e3b75c74fb8d812792a7023149e3e7b5cff8f9663d6aa8bad5c08d4e7ebd56d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 659,
+          "line_start": 626,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L626-L659"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_261a81012f9db01fd2ce5c58697aa0974f279f69b452391379eace243bd45d46"
+      ],
+      "text": "LLM API responses can be cached via Redis or Momento (CACHE_TYPE=momento); if Redis settings are absent, Langroid falls back to a pure-Python in-memory cache via Fakeredis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e52077b2ff559f444cf17922e622a22f36aeb92e4fad3c7aad1473fd83d4472",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 109,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L106-L109"
+        },
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 781,
+          "line_start": 776,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L776-L781"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e812365bd8a81d93d315f6fc64952c1f0bee57cc942b4d8e97e69f3051be5c4",
+        "slc_d8981a29230065c0f092c06dbbc2a4e2abc719e80a9285e709b517a33f632ab2"
+      ],
+      "text": "LLM configuration supports OpenAI models, any model behind an OpenAI-compatible API (e.g. \"ollama/mistral\"), and local models via chat_model strings such as \"local/localhost:8000\"."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ec032ee593f0791bdc1b2469a1b5fa0d82c4459385576b8462ec324a22263c5",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 53,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L52-L53"
+        },
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 555,
+          "line_start": 552,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L552-L555"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09776f22241a49978d5483498ad132d1cc47a4851fa804d12f5c61880a420fc7",
+        "slc_0eb7d420f67621d99b23a67dea6e1671ab46970206e4de104bcacbc617bce45e"
+      ],
+      "text": "A Claude Code plugin provides two skills: langroid:patterns for generating Langroid multi-agent code using proper design patterns, and langroid:add-pattern for recording newly learned patterns for future reference."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be4165d8851873e314cff6b0f4875327711e4547bc9e5555bfee0b296c128b57",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 61,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L59-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f8ce40c27b9d796c2489152de85779aa7251075daa2e62206daf3d5a1d54757e"
+      ],
+      "text": "Langroid includes an MCP tool adapter that converts an MCP server's tools into Langroid ToolMessage instances so any LLM agent can leverage MCP servers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73ab4c005b47f9449826fc998b23b84346f099d698f87957cbe10bc2766a1e9d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+          "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+          "line_end": 735,
+          "line_start": 730,
+          "path": "README.md",
+          "repository": "langroid/langroid",
+          "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md#L730-L735"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2786d16fa10435f757dc126e92fbbe729483e3ed182262d7dee1e8cd5b22a5a3"
+      ],
+      "text": "The README states the prompts and instructions have been tested to work well with GPT-4 (and to some extent GPT-4o); other LLMs may yield inferior results unless prompts or the multi-agent setup are adjusted."
+    }
+  ],
+  "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1096,
+        "path": "README.md",
+        "size": 60828
+      },
+      {
+        "lines": 11,
+        "path": "chainlit.md",
+        "size": 491
+      },
+      {
+        "lines": 103,
+        "path": "PR_954_REVIEW.md",
+        "size": 3341
+      },
+      {
+        "lines": 88,
+        "path": "PR_REVIEW_975.md",
+        "size": 3799
+      },
+      {
+        "lines": 466,
+        "path": "docs/FAQ.md",
+        "size": 24188
+      },
+      {
+        "lines": 77,
+        "path": "docs/index.md",
+        "size": 5035
+      }
+    ],
+    "omitted": [
+      {
+        "path": "llms-compressed.txt",
+        "reason": "byte-budget",
+        "size": 2738981
+      },
+      {
+        "path": "llms-no-tests-compressed.txt",
+        "reason": "byte-budget",
+        "size": 2188914
+      },
+      {
+        "path": "llms-no-tests-no-examples-compressed.txt",
+        "reason": "byte-budget",
+        "size": 1597954
+      },
+      {
+        "path": "llms-no-tests-no-examples.txt",
+        "reason": "byte-budget",
+        "size": 2526863
+      },
+      {
+        "path": "llms-no-tests.txt",
+        "reason": "byte-budget",
+        "size": 3620528
+      },
+      {
+        "path": "llms.txt",
+        "reason": "byte-budget",
+        "size": 5005125
+      },
+      {
+        "path": "docs/blog/index.md",
+        "reason": "file-budget",
+        "size": 8
+      },
+      {
+        "path": "docs/examples/agent-tree.md",
+        "reason": "file-budget",
+        "size": 10528
+      },
+      {
+        "path": "docs/examples/guide.md",
+        "reason": "file-budget",
+        "size": 5735
+      },
+      {
+        "path": "docs/notes/async-streaming.md",
+        "reason": "file-budget",
+        "size": 700
+      },
+      {
+        "path": "docs/notes/attachment-token-preflight.md",
+        "reason": "file-budget",
+        "size": 2330
+      },
+      {
+        "path": "docs/notes/azure-openai-models.md",
+        "reason": "file-budget",
+        "size": 3080
+      },
+      {
+        "path": "docs/notes/batch-processing.md",
+        "reason": "file-budget",
+        "size": 3298
+      },
+      {
+        "path": "docs/notes/chat-history-snapshots.md",
+        "reason": "file-budget",
+        "size": 2415
+      },
+      {
+        "path": "docs/notes/chunking.md",
+        "reason": "file-budget",
+        "size": 3992
+      },
+      {
+        "path": "docs/notes/code-injection-protection.md",
+        "reason": "file-budget",
+        "size": 4744
+      },
+      {
+        "path": "docs/notes/context-overflow.md",
+        "reason": "file-budget",
+        "size": 4294
+      },
+      {
+        "path": "docs/notes/crawl4ai.md",
+        "reason": "file-budget",
+        "size": 13576
+      },
+      {
+        "path": "docs/notes/custom-azure-client.md",
+        "reason": "file-budget",
+        "size": 2289
+      },
+      {
+        "path": "docs/notes/enriching-for-retrieval.md",
+        "reason": "file-budget",
+        "size": 4128
+      },
+      {
+        "path": "docs/notes/file-input.md",
+        "reason": "file-budget",
+        "size": 6039
+      },
+      {
+        "path": "docs/notes/gemini.md",
+        "reason": "file-budget",
+        "size": 3581
+      },
+      {
+        "path": "docs/notes/glhf-chat.md",
+        "reason": "file-budget",
+        "size": 1344
+      },
+      {
+        "path": "docs/notes/handle-llm-no-tool.md",
+        "reason": "file-budget",
+        "size": 6316
+      },
+      {
+        "path": "docs/notes/html-logger.md",
+        "reason": "file-budget",
+        "size": 2820
+      },
+      {
+        "path": "docs/notes/knowledge-graphs.md",
+        "reason": "file-budget",
+        "size": 1082
+      },
+      {
+        "path": "docs/notes/langdb.md",
+        "reason": "file-budget",
+        "size": 3755
+      },
+      {
+        "path": "docs/notes/large-tool-results.md",
+        "reason": "file-budget",
+        "size": 1921
+      },
+      {
+        "path": "docs/notes/litellm-proxy.md",
+        "reason": "file-budget",
+        "size": 2012
+      },
+      {
+        "path": "docs/notes/llama-cpp-embeddings.md",
+        "reason": "file-budget",
+        "size": 5008
+      },
+      {
+        "path": "docs/notes/llm-none-content.md",
+        "reason": "file-budget",
+        "size": 1022
+      },
+      {
+        "path": "docs/notes/llm-pdf-parser.md",
+        "reason": "file-budget",
+        "size": 1958
+      },
+      {
+        "path": "docs/notes/markdown-html-parsing.md",
+        "reason": "file-budget",
+        "size": 4555
+      },
+      {
+        "path": "docs/notes/marker-pdf.md",
+        "reason": "file-budget",
+        "size": 3208
+      },
+      {
+        "path": "docs/notes/markitdown.md",
+        "reason": "file-budget",
+        "size": 2241
+      },
+      {
+        "path": "docs/notes/mcp-tools.md",
+        "reason": "file-budget",
+        "size": 18754
+      },
+      {
+        "path": "docs/notes/message-routing.md",
+        "reason": "file-budget",
+        "size": 4122
+      },
+      {
+        "path": "docs/notes/milvus.md",
+        "reason": "file-budget",
+        "size": 2740
+      },
+      {
+        "path": "docs/notes/openai-client-caching.md",
+        "reason": "file-budget",
+        "size": 1852
+      },
+      {
+        "path": "docs/notes/openai-http-client.md",
+        "reason": "file-budget",
+        "size": 5216
+      },
+      {
+        "path": "docs/notes/overview.md",
+        "reason": "file-budget",
+        "size": 74
+      },
+      {
+        "path": "docs/notes/pgvector.md",
+        "reason": "file-budget",
+        "size": 4409
+      },
+      {
+        "path": "docs/notes/pinecone.md",
+        "reason": "file-budget",
+        "size": 5706
+      },
+      {
+        "path": "docs/notes/portkey.md",
+        "reason": "file-budget",
+        "size": 11173
+      },
+      {
+        "path": "docs/notes/pydantic-v2-migration.md",
+        "reason": "file-budget",
+        "size": 8044
+      },
+      {
+        "path": "docs/notes/qdrant-resource-cleanup.md",
+        "reason": "file-budget",
+        "size": 2087
+      },
+      {
+        "path": "docs/notes/quiet-mode.md",
+        "reason": "file-budget",
+        "size": 1145
+      },
+      {
+        "path": "docs/notes/reasoning-content.md",
+        "reason": "file-budget",
+        "size": 3750
+      },
+      {
+        "path": "docs/notes/rotating-api-keys.md",
+        "reason": "file-budget",
+        "size": 7810
+      },
+      {
+        "path": "docs/notes/seltz_search.md",
+        "reason": "file-budget",
+        "size": 1936
+      },
+      {
+        "path": "docs/notes/serpapi_search.md",
+        "reason": "file-budget",
+        "size": 1079
+      },
+      {
+        "path": "docs/notes/structured-output.md",
+        "reason": "file-budget",
+        "size": 3303
+      },
+      {
+        "path": "docs/notes/task-termination.md",
+        "reason": "file-budget",
+        "size": 18685
+      },
+      {
+        "path": "docs/notes/task-tool.md",
+        "reason": "file-budget",
+        "size": 5227
+      },
+      {
+        "path": "docs/notes/tavily_search.md",
+        "reason": "file-budget",
+        "size": 1954
+      },
+      {
+        "path": "docs/notes/tool-handler-resolution.md",
+        "reason": "file-budget",
+        "size": 2326
+      },
+      {
+        "path": "docs/notes/tool-message-handler.md",
+        "reason": "file-budget",
+        "size": 6817
+      },
+      {
+        "path": "docs/notes/tool-origin-taint.md",
+        "reason": "file-budget",
+        "size": 6598
+      },
+      {
+        "path": "docs/notes/twitter-search.md",
+        "reason": "file-budget",
+        "size": 1296
+      },
+      {
+        "path": "docs/notes/url_loader.md",
+        "reason": "file-budget",
+        "size": 9039
+      },
+      {
+        "path": "docs/notes/vecstore-env-prefix.md",
+        "reason": "file-budget",
+        "size": 4163
+      },
+      {
+        "path": "docs/notes/weaviate.md",
+        "reason": "file-budget",
+        "size": 3358
+      },
+      {
+        "path": "docs/notes/xml-tools.md",
+        "reason": "file-budget",
+        "size": 2498
+      },
+      {
+        "path": "docs/quick-start/chat-agent-docs.md",
+        "reason": "file-budget",
+        "size": 9050
+      },
+      {
+        "path": "docs/quick-start/chat-agent-tool.md",
+        "reason": "file-budget",
+        "size": 10555
+      },
+      {
+        "path": "docs/quick-start/chat-agent.md",
+        "reason": "file-budget",
+        "size": 8280
+      },
+      {
+        "path": "docs/quick-start/index.md",
+        "reason": "file-budget",
+        "size": 537
+      },
+      {
+        "path": "docs/quick-start/llm-interaction.md",
+        "reason": "file-budget",
+        "size": 4518
+      },
+      {
+        "path": "docs/quick-start/multi-agent-task-delegation.md",
+        "reason": "file-budget",
+        "size": 5212
+      },
+      {
+        "path": "docs/quick-start/setup.md",
+        "reason": "file-budget",
+        "size": 9949
+      },
+      {
+        "path": "docs/quick-start/three-agent-chat-num-router.md",
+        "reason": "file-budget",
+        "size": 4534
+      },
+      {
+        "path": "docs/quick-start/three-agent-chat-num.md",
+        "reason": "file-budget",
+        "size": 4349
+      },
+      {
+        "path": "docs/quick-start/two-agent-chat-num.md",
+        "reason": "file-budget",
+        "size": 5213
+      },
+      {
+        "path": "docs/tutorials/langroid-tour.md",
+        "reason": "file-budget",
+        "size": 5834
+      },
+      {
+        "path": "docs/tutorials/llm-usage-options.md",
+        "reason": "file-budget",
+        "size": 12445
+      },
+      {
+        "path": "docs/tutorials/local-llm-setup.md",
+        "reason": "file-budget",
+        "size": 14699
+      },
+      {
+        "path": "docs/tutorials/non-openai-llms.md",
+        "reason": "file-budget",
+        "size": 9432
+      },
+      {
+        "path": "docs/tutorials/postgresql-agent.md",
+        "reason": "file-budget",
+        "size": 8823
+      },
+      {
+        "path": "docs/tutorials/supported-models.md",
+        "reason": "file-budget",
+        "size": 4226
+      },
+      {
+        "path": "docs/blog/posts/chat-completion.md",
+        "reason": "file-budget",
+        "size": 9696
+      },
+      {
+        "path": "docs/blog/posts/langroid-architecture.md",
+        "reason": "file-budget",
+        "size": 12741
+      },
+      {
+        "path": "docs/blog/posts/langroid-intro.md",
+        "reason": "file-budget",
+        "size": 4817
+      },
+      {
+        "path": "docs/blog/posts/langroid-knowledge-graph.md",
+        "reason": "file-budget",
+        "size": 4216
+      },
+      {
+        "path": "docs/blog/posts/langroid-lancedb.md",
+        "reason": "file-budget",
+        "size": 9913
+      },
+      {
+        "path": "docs/blog/posts/local-llm-formatting.md",
+        "reason": "file-budget",
+        "size": 3814
+      },
+      {
+        "path": "docs/blog/posts/local-llm.md",
+        "reason": "file-budget",
+        "size": 3940
+      },
+      {
+        "path": "docs/blog/posts/malade.md",
+        "reason": "file-budget",
+        "size": 12490
+      },
+      {
+        "path": "docs/blog/posts/multi-agent-debate.md",
+        "reason": "file-budget",
+        "size": 9035
+      },
+      {
+        "path": "docs/blog/posts/test.md",
+        "reason": "file-budget",
+        "size": 941
+      },
+      {
+        "path": "docs/demos/targeting/audience-targeting.md",
+        "reason": "file-budget",
+        "size": 3693
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 11044
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5222
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 14256
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 6340
+      }
+    ],
+    "omitted_count": 94,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 763,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 100,
+      "complete": false,
+      "omitted": 94,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_89ec189bd02952899b3a8d0a0bc92912",
+  "facets": {
+    "components": 4,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/langroid/langroid/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/15dd2d992e81e966/manifest.json",
+  "package_id": "pkg_ac4a09e5e0236143531ea6457c7a8bb253ffc48582dd12ea899d21e39373485b",
+  "repo": "langroid/langroid",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a6a698097076be23c3f8d3808a73a438ea219976af2c236e0d701d43e809ffc7",
+  "snapshot_id": "15dd2d992e81e966",
+  "sources": [
+    {
+      "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+      "git_sha": "e2c1502b89ef4dd1f8eaf132103d675abab42928",
+      "lines": 103,
+      "path": "PR_954_REVIEW.md",
+      "repository": "langroid/langroid",
+      "sha256": "55d76c6be8c4b8d002add78d488bc2c0d6938eeadb6eeaf16a16270c18c258af",
+      "source_id": "src_3844c57d52f655b9bae077a2c827c1d7",
+      "stored": "pr_954_review.md-7d522ed840e1.md",
+      "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/PR_954_REVIEW.md"
+    },
+    {
+      "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+      "git_sha": "6ca14413baf3c7b4734132be00882457035fd521",
+      "lines": 88,
+      "path": "PR_REVIEW_975.md",
+      "repository": "langroid/langroid",
+      "sha256": "25bd9ac29e2456604143adb3c31fa54757f04a0ba6c7708e4bf257aab422a411",
+      "source_id": "src_85901380582c5fe5a049f94960e8732d",
+      "stored": "pr_review_975.md-6d1900cc6567.md",
+      "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/PR_REVIEW_975.md"
+    },
+    {
+      "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+      "git_sha": "038442b6b4ebca040309a8d7314c4c61ea8fbf35",
+      "lines": 1096,
+      "path": "README.md",
+      "repository": "langroid/langroid",
+      "sha256": "eff4414612b85d88c1cfda627d1ff3530ccb1a6ad1ea7844a01641f47a21906e",
+      "source_id": "src_962ebf85bc9053058727328062747ed1",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/README.md"
+    },
+    {
+      "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+      "git_sha": "8e790826631d85f823e391b58a14efe0da84b05a",
+      "lines": 11,
+      "path": "chainlit.md",
+      "repository": "langroid/langroid",
+      "sha256": "ca758578dbb1d930a5eb8753eba1cbfe4ed10ea267dc0c5866fb2d86cf21e0f8",
+      "source_id": "src_3c79e31c36a856e7919a7f8777b26724",
+      "stored": "chainlit.md-62b515a671f8.md",
+      "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/chainlit.md"
+    },
+    {
+      "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+      "git_sha": "2642779c893a868f251a45c16f8b87b5745a03ee",
+      "lines": 466,
+      "path": "docs/FAQ.md",
+      "repository": "langroid/langroid",
+      "sha256": "aac93239d2509d982d474989f2c0b7e7af4139f2a266c76c52c5cd139849c075",
+      "source_id": "src_06f92a0e5294518ebea16df93ef74908",
+      "stored": "faq.md-0bb42a85d04c.md",
+      "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/docs/FAQ.md"
+    },
+    {
+      "commit": "53c01d4e1a9e7c1dd829c97513aaf57f23b2945f",
+      "git_sha": "b89960a557cf9737935852c6a93c6bcc7d34f6b0",
+      "lines": 77,
+      "path": "docs/index.md",
+      "repository": "langroid/langroid",
+      "sha256": "7054f5c92bc32106eb05fcf0169b8998b228af0feadf63cf2696ef9c8eca34d2",
+      "source_id": "src_9d376a4d097b58ea82d89c15e434f82e",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/langroid/langroid/blob/53c01d4e1a9e7c1dd829c97513aaf57f23b2945f/docs/index.md"
+    }
+  ],
+  "summary": "Langroid is a Python multi-agent framework for LLM applications built around Agent and Task abstractions, tool/function-calling via ToolMessage, and specialized agents like DocChatAgent and TableChatAgent, with configurable LLM, vector-store, and cache backends. Evidence is README documentation only; no code inspection in this snapshot. Evidence coverage: 134 of 278 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

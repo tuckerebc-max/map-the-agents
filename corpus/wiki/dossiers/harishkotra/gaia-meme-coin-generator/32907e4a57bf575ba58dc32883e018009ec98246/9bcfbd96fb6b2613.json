@@ -1,0 +1,490 @@
+{
+  "applied_operation_id": "op_775e12a49b2045a1b6555b2dc8b54cf4",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_08a5664c91b722949f727cff1fad8ad68822f7817d4ad1850d0a9de7d28021e5",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f925b71c1ef5fc70a27cf20a400d415086cffd003069c2f1d958402a504571f9"
+      ],
+      "text": "The tool automates meme token creation: it uses Gaia's AI node to generate token names and themes, computes tokenomics, and deploys a limit-based token contract."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5d0b60e33ab546081d11c93c9c2a86ed9343fd99febc7d2a3d124a2fae61568",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f925b71c1ef5fc70a27cf20a400d415086cffd003069c2f1d958402a504571f9"
+      ],
+      "text": "The tool calls a Gaia AI node at the llama3b.gaia.domains/v1 endpoint for creative naming, per the README."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7b18bf8319471c7b471be9b03c89651b4f6bb989a67b334557737fac9d6a114",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L45-L48"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L37-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bfe357036669b583796f91cc5478fa1f726d1996da12419a6d321d29c0d8f7fd",
+        "slc_cef3083c173dc97513c0bdf87207eff8c9ad481b94463d3cde178f095539e39c"
+      ],
+      "text": "Configuration is via a .env file with GAIA_URL, GAIA_MODEL, BASE_NODE_URL, and PRIVATE_KEY variables; the tool is run with npm start."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_456bcdc421f64885f73f4b1faf14e4814129ab9ff3c6c33a171d1558910e6072",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 78,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L74-L78"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 22,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L15-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5dc80be4328657476946cbce4b2263af266e04ef0f25255fab10fcdd4149897d",
+        "slc_9354b6134e1b6048812f7b80505d5cd96acae78b855420c9117e2335f60e3cba"
+      ],
+      "text": "Generated tokens include safety features: maximum transaction limits, maximum wallet limits, and excludable addresses for CEX/DEX purposes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2c2e3fcc8d731e43ecbcb866e6bac8d2afc51d09674fa02a5304b8ba42151f4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 87,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L82-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c973cdc484b05d852f3a1fed04f81cef97d333fc3bb0d502ed8c2aa304d07ac"
+      ],
+      "text": "The deployed contract is described as ERC20-compliant with ownership controls, a transaction limit system, wallet restrictions, and an address exclusion mechanism."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7651cdd6a09a600105d1ea05d5d6155025415f624b09c17d00b2fd2a9b395e43",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 151,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L146-L151"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 130,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L123-L130"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13257fe796a48d5fadf42f99d7754237fa836ef0d58b359cf95deff48763e05e",
+        "slc_6d721d2ae9fdb47326cbc1f1a6a5ceaae9111ad99ac4f8381101264652dbcda5"
+      ],
+      "text": "Tokenomics are auto-generated with example values of 500,000,000 total supply, 75% initial liquidity, 1% transaction limit, and 2% max wallet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_600e65b51ce5786526bec0d389cbf687371886cec9e6ad7f556aae4199742e54",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L32-L35"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L45-L48"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 30,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L26-L30"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L37-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_921fec1497db29f119d9bccdac3f15007e7f6f8696468cb401520414be22441f",
+        "slc_bfe357036669b583796f91cc5478fa1f726d1996da12419a6d321d29c0d8f7fd",
+        "slc_cdce7d947cbad1a4f2132d4913d87b79f66d67ee113703df2f8c86b51b28bcf4",
+        "slc_cef3083c173dc97513c0bdf87207eff8c9ad481b94463d3cde178f095539e39c"
+      ],
+      "text": "Setup workflow: clone the repo, run npm install, create a .env file, then run the generator with npm start."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72c17d4a1e5de96e6d9dbbdc49e0f5adb07f4df83e70ae7cc844deed67aaae44",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 103,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L99-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d9017aabf842f6b2fc743bd954830ad67a8fb33626c59a585c64ba4b9391c32"
+      ],
+      "text": "Repository development practice: contributions are welcomed via opening issues, submitting PRs, suggesting improvements, and adding new features."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_766e8ae6676bd63b92404c6fa566d6810a2c6bef927e11fd21ae09ca078035bf",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 95,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L91-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01cdd978ec769ec5b51a92b851ab9dbe85a1139efb4b5cdc6d1476dbfa48c1fe"
+      ],
+      "text": "The README positions the tool for testnet experimentation and advises thorough testing, contract review, and regulatory-compliance consideration before mainnet use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ae4418941f6c3ce58b32e453869c5e08286055a6c50bbf6867b2669247e02ad",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 151,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L146-L151"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 155,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L153-L155"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 121,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L110-L121"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 144,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L137-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13257fe796a48d5fadf42f99d7754237fa836ef0d58b359cf95deff48763e05e",
+        "slc_25729cddad5f0253e5d75e6c6068167d6a1ec249c441370077f6e40640817085",
+        "slc_93390a9943cfb3cc268b54a7455394fb98145bbd5c9028d25fe0efa3ddbe8d8e",
+        "slc_ca1a3897ec0b8ac052b3a2d3137494ce64425b43465afa0ab7d90acaa6fcc26d"
+      ],
+      "text": "Example output shows the tool prints generated coin details, deployment address and transaction hash, tokenomics, a deployment_details.json record, and a Base Sepolia explorer verification link."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_82b956559b621dfdc0bf80b136329fa6ac62ebd7f06232338a480f68d0581e16",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d2e233255c609e59d226f61ff5f6a356b9540bcb14ed3eee57bf3124131e3036"
+      ],
+      "text": "The project targets Base Sepolia by default but is described as easily adaptable to other networks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a2ef527ad0f22222bf6260b8a5f710448dbecdac7cbc72c40c5add310558291",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 65,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L62-L65"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L57-L60"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 70,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L67-L70"
+        },
+        {
+          "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+          "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+          "line_end": 55,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "harishkotra/gaia-meme-coin-generator",
+          "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md#L52-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62e4e214c1d8155a8b27c8b2b88551482057c6793dca8adc9b3313bff34ef3d9",
+        "slc_68f7cc1a12d1e33f49033abb0feaeb7ee976d3129417e7bdee496d83bb500236",
+        "slc_82505b953ebac16a114d581dca0cb5775bbf8e150af7e9145f68d3295753827e",
+        "slc_f827dcdac4a9e0d4be6e875d7d8f47219a61d39f639a5b7afe3a75159db08bf6"
+      ],
+      "text": "Stated use cases include token launch platforms, community/fan tokens, educational testnet practice, and marketing campaign tokens."
+    }
+  ],
+  "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 155,
+        "path": "README.md",
+        "size": 4191
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 12,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_b9f852055c265d3d920d2b684a0fb631",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/harishkotra/gaia-meme-coin-generator/32907e4a57bf575ba58dc32883e018009ec98246/9bcfbd96fb6b2613/manifest.json",
+  "package_id": "pkg_5907c52a96bd2bd51c6369c912fa05018380f5d742c361c31d4b63077d52c256",
+  "repo": "harishkotra/gaia-meme-coin-generator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fe513cc6f1ab7daa57adeb7d2b68c06c85acc22faa1a6c0139d81e7b6ac7b8b5",
+  "snapshot_id": "9bcfbd96fb6b2613",
+  "sources": [
+    {
+      "commit": "32907e4a57bf575ba58dc32883e018009ec98246",
+      "git_sha": "57bd0605c06b3ee7557d73a5713554f7740d550a",
+      "lines": 155,
+      "path": "README.md",
+      "repository": "harishkotra/gaia-meme-coin-generator",
+      "sha256": "7f9425bd934518350b45efe3ed25623e5ecce5cf99854e00d9da21cdb81a4a4e",
+      "source_id": "src_509412f0923a57d595c41aa6de538218",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/harishkotra/gaia-meme-coin-generator/blob/32907e4a57bf575ba58dc32883e018009ec98246/README.md"
+    }
+  ],
+  "summary": "README-only evidence for a Gaia-powered meme coin generator that uses an AI node to name tokens and generate tokenomics, then deploys an ERC20 contract with transaction/wallet limits to Base Sepolia. No source code is present in the snapshot, so claims rest on documentation.",
+  "superseded_claim_ids": []
+}

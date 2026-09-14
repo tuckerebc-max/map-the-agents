@@ -1,0 +1,620 @@
+{
+  "applied_operation_id": "op_3a9e28afbb5140fb9c5ef991e321c3d3",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad24844036b5d2e52a06e5d6e4292615aae35b03d8d091eca0810e17cdba1980",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 207,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L204-L207"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 301,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L297-L301"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 68,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L59-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73099ea49583d00ad95f33bcb653d37fd1306e1dcd7cbe438fde6487dfa71714",
+        "slc_83c31eac897fe9cba41cdb2aec4340e7df6c7840ee74e869e595ba92345ccda3",
+        "slc_feff4727829b964ee0eb5210cddf65db3a518e5fbae6dce5f0680bdd77fa9fed"
+      ],
+      "text": "The CLI supports flags including --status, --backend (ds/or/fw/anthropic), --cost, --benchmark, --switch, and --remote, per the usage examples."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87d0e4d80cd9787e07a75fb6e29a853bec628cb3afdb7c8200502c51a3e291d5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 162,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L162-L162"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 173,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L164-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ec3638bdf989375624fa74a8389f8aa55c62a9cd512bebc81ca774ad1039c1a",
+        "slc_8fdd99e2c492a00b4c026c114b5a33f92622299c045624a3a26e1fadf71115de"
+      ],
+      "text": "A local proxy on localhost:3200 exposes control endpoints: POST /_proxy/mode to switch backends, GET /_proxy/status, and GET /_proxy/cost, forwarding /v1/messages to the active backend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8c3083374e2a38acf7ea39d2f836aad77e8e441cb78b9fc1ba52d741eff5f93",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 81,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L74-L81"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L72-L72"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bd2e99fed72b2933f30514546046c7c55fb148d8d5d3c553d9daeb3d8d61057",
+        "slc_f4fcafe11d98b9237c9c9562dc1806bba91272f17db92329239d137fbf0c9519",
+        "slc_fb6d3d653cc5e8a8f020ad0888ecd4c5e2bca9bdef50b0ecea9c8c4b18d9aef6"
+      ],
+      "text": "The tool sets Claude Code environment variables (e.g. ANTHROPIC_BASE_URL, ANTHROPIC_AUTH_TOKEN, model-tier variables) per session and restores original settings on exit rather than persisting them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79365cc07170d0ad05b9891ea3960ae2b545b6d2da3ccd81455e5bd514b5a2a9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 150,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L150-L150"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 207,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L204-L207"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 177,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L177-L177"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 200,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L200-L200"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 232,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L211-L232"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bc031af72fae7d430eccc6a59b46c28b9e0f4de0eb674620a2b241b682e0089",
+        "slc_73099ea49583d00ad95f33bcb653d37fd1306e1dcd7cbe438fde6487dfa71714",
+        "slc_797a6e02ca9b3d495198e1b5693728b350280459e411f82c608eae9c27524a48",
+        "slc_99297f5bc0dca230352878b2c9ed05f325a66a1df67ba436f20d09fa2f2c7b06",
+        "slc_fc8e3bf5f4073f1c493921c764a3f2e60fa2b935abe73a5c29f3e612eb4f2586"
+      ],
+      "text": "Backend switching works mid-session without restart via slash commands, a CLI --switch flag, or VS Code tasks that POST to the proxy's mode endpoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55127b79e3a893c302f1682bde7603b03b196c7e3f8c500e5d3d9d7e654ed110",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 320,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L318-L320"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L96-L100"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 112,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L108-L112"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 106,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L102-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c6933f5d2c3631b27d8b5d9bc79b0777eb1c54132e112a970d5bdb0759e2811",
+        "slc_39b922c5cd241bcdf9bfd114a9ee9d05868d3efa3c24c7247e99f57c93414912",
+        "slc_88dfd262843cfb8e383cdfdedd88ce82d0981394f63201c79500d30b0677e4e9",
+        "slc_c48a2a52df8695bb1997c46e4edc9be30e89e1d99c27f4bb314176cf31ca1ed2"
+      ],
+      "text": "Prerequisites are a logged-in Claude Code install, a claude.ai subscription (the remote bridge is Anthropic infrastructure), Node.js 18+ for the proxy, and backend API keys such as DEEPSEEK_API_KEY."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df2f2873b71a5ce3656a5c44182210eb57e4b68cb432980097b6ee757d0f748b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 142,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L137-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dfda66d799328e9ce11c3a85099cd261ec6d92a7f0f13c46dce63049ea5def6c"
+      ],
+      "text": "Documented degraded features: no image/vision input through DeepSeek's endpoint, no MCP server tools via the compatibility layer, sequential tool calls by default, and Anthropic cache_control ignored."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77f453c6f5fa5bce0b17f3791f04517206cbe88926f87ee483b34de3ca5e2540",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 146,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L145-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96ec39bb9aa1d201899bcdf90e45d2001ee78891d53dd42d89a54b20d9da462e"
+      ],
+      "text": "The README states Claude Opus is stronger on complex reasoning, recommending --backend anthropic for hard problems while DeepSeek is comparable on routine tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e284560b6b4f2f3799eb14e8284c132c293700e3108fc22161292077c6e0308e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 55,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L51-L55"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 320,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L318-L320"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L45-L45"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 322,
+          "line_start": 322,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L322-L322"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b9a899e819d7dd812237d071f8907f557a6be843a06b451ecc231e41abbe4e2",
+        "slc_1c6933f5d2c3631b27d8b5d9bc79b0777eb1c54132e112a970d5bdb0759e2811",
+        "slc_41198527f0ce1775271b3813e0566d3beb12b9d8c3ba931db5c49caa0a2d788c",
+        "slc_57b3bc0805e729d70279f1d6d905a0e7488bd2ef33a9c05d888d4011c1549821"
+      ],
+      "text": "The product consists of platform launcher scripts (deepclaude.ps1 for Windows, deepclaude.sh for macOS/Linux) plus a Node-based local proxy component."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10f056634a8ba8b8c19d9a383d353e5e14f763387c0d820f7213d2807bd6f8fb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 246,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L244-L246"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 264,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L248-L264"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f4f297c39bce1085e5d0cb1c04117f086639cf9b6cd8694bbdd3451a33c1b22",
+        "slc_f064467aa7e6fce3e726d6f484418d92f1371e09070b846738f0f4602252bbfe"
+      ],
+      "text": "The --cost endpoint returns per-backend token counts, request counts, cost, an anthropic_equivalent figure, and total savings as JSON."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_886d0c6a2de6f7863af35c2fce74e9e8327895e56bc9413e142f40377f86b15c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 295,
+          "line_start": 295,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L295-L295"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 307,
+          "line_start": 307,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L307-L307"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 303,
+          "line_start": 303,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L303-L303"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 315,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L309-L315"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b9973cdd441fb1a0deb387bd1d4f8047aa9a0e4b21bce7387bac36aef66228b",
+        "slc_0bdec08117de038ed39e50d4e783399451ffdef3c3415e1928989f51f9f62dfc",
+        "slc_71f52f7209111de7449d9075e8492d52ebadba22e24fb7842d2fd5ea3dcad341",
+        "slc_902825c924711cdfb89e2c75fdc6c8485d58dfea22b6effc2c201d53916a3334"
+      ],
+      "text": "Remote control mode prints a claude.ai/code session URL usable from a browser, keeping the WebSocket bridge on Anthropic while model calls route through the local proxy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6f7da39702c1469dbdc0ad7fcd32088c414bb9e2c039a57a1c5f896117ebd39f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 55,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L51-L55"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L45-L45"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L25-L25"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 32,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L29-L32"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 38,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L34-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b9a899e819d7dd812237d071f8907f557a6be843a06b451ecc231e41abbe4e2",
+        "slc_41198527f0ce1775271b3813e0566d3beb12b9d8c3ba931db5c49caa0a2d788c",
+        "slc_88e9bc435a0c91d99bc20de9bc9bfe93b0292775dfdd150e2998cfbebc5c91e6",
+        "slc_c38226e74a5a59700b66a5404647e06e3d0a616077d54d00a08f9fbbe17aa107",
+        "slc_de3bc6a5f38ea24c889e09634b869892e92f55178cfa6ec4253d1158a4ec1276"
+      ],
+      "text": "Setup involves obtaining a DeepSeek API key, setting DEEPSEEK_API_KEY via setx or shell profile, and installing the script on PATH by copy or symlink."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6d8ebc3451893026b5439c68d442fd320654961279eca38fefba7340977d4e8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 173,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L164-L173"
+        },
+        {
+          "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+          "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+          "line_end": 315,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "aattaran/deepclaude",
+          "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md#L309-L315"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8fdd99e2c492a00b4c026c114b5a33f92622299c045624a3a26e1fadf71115de",
+        "slc_902825c924711cdfb89e2c75fdc6c8485d58dfea22b6effc2c201d53916a3334"
+      ],
+      "text": "The proxy appears to pass through non-/v1/messages traffic to Anthropic unchanged, so only model API calls are rerouted."
+    }
+  ],
+  "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 326,
+        "path": "README.md",
+        "size": 10329
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 10,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_ad6179ef3f545224b3e94585acef47b3",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aattaran/deepclaude/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/5d655440a2eb307f/manifest.json",
+  "package_id": "pkg_034292458d7a87c20ea53c2272b8cf6e448f2408fb8d83b56f1b334256321aa1",
+  "repo": "aattaran/deepclaude",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "198961f685b520678be9f8406092b2880b79a1a88507b1be7c50f65640241285",
+  "snapshot_id": "5d655440a2eb307f",
+  "sources": [
+    {
+      "commit": "70518b6cdcf3cc488e62e817b86da4b550dd7dfa",
+      "git_sha": "a90821d566154580409c7fb38ad51f60b14c0432",
+      "lines": 326,
+      "path": "README.md",
+      "repository": "aattaran/deepclaude",
+      "sha256": "4a55b291a9d4f0e9350ad7ae42edfb458d71882dd2b03653e28e58a242e0ae31",
+      "source_id": "src_6b7e20d6d7ca545faa55377453a09397",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aattaran/deepclaude/blob/70518b6cdcf3cc488e62e817b86da4b550dd7dfa/README.md"
+    }
+  ],
+  "summary": "README-only evidence for deepclaude, a shell-script wrapper plus local proxy that routes Claude Code API calls to DeepSeek/OpenRouter/Fireworks/Anthropic backends, with CLI flags, slash-command switching, cost tracking, and documented limitations.",
+  "superseded_claim_ids": []
+}

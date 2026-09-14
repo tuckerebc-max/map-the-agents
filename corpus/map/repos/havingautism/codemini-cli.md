@@ -1,0 +1,43 @@
+# havingautism/codemini-cli
+
+Status: distilled - Freshness: current
+Catalog classes: agent
+Origins: alltheagents.org-backing - Projects: none
+Latest snapshot: commit 3e3a6665c9d2 @ f27607039cb943e9
+
+## Summary (orientation draft, not independently verified)
+
+The evidence consists solely of a Chinese-language design RFC (codemini-memory-2.1-design.md) describing a proposed 'Memory 2.1' subsystem for Codemini CLI/Web, covering storage, retrieval, taxonomy, and pipelines. All claims below describe the documented design, not verified shipped behavior. Evidence coverage: 250 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.
+
+## Source coverage
+
+Source coverage (complete): 6 of 6 candidate file(s) selected; repository tree complete. Claims by basis: 12 documented, 0 code-inspected. A current commit is not the same as complete source coverage.
+
+## Facets
+
+12 claim(s) across 5 facet(s); 8 facet(s) unknown.
+
+- specifications (1 claim(s)):
+  - [observation/documented] The repository contains a design RFC (status: Design RFC) scoped to Codemini CLI / WebUI / Agent Runtime, proposing a memory subsystem with SQLite FTS5 + BM25 as default retrieval and embeddings explicitly optional. -- evidence: [codemini-memory-2.1-design.md#L3-L7](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L3-L7)
+- components: unknown (no source-linked claim submitted for this facet)
+- design-choices (5 claim(s)):
+  - [observation/documented] The design targets four goals: cross-session memory, task-relevant recall rather than stuffing all memory into the prompt, learning reusable engineering experience from failure-to-verification cycles, and long-term governance (dedup, expiry, conflict handling, eviction). -- evidence: [codemini-memory-2.1-design.md#L17-L20](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L17-L20)
+  - [observation/documented] The architecture separates understanding from retrieval: the LLM judges what is worth remembering, extracts atomic facts, classifies scope/family/kind, and detects conflicts, while FTS5/BM25 handles retrieval, filtering, ranking, and top-K recall; embeddings are not relied on by default. -- evidence: [codemini-memory-2.1-design.md#L73-L76](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L73-L76), [codemini-memory-2.1-design.md#L64-L69](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L64-L69), [codemini-memory-2.1-design.md#L71-L71](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L71-L71), [codemini-memory-2.1-design.md#L78-L78](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L78-L78)
+- workflows: unknown (no source-linked claim submitted for this facet)
+- skills-patterns: unknown (no source-linked claim submitted for this facet)
+- interfaces (1 claim(s)):
+  - [observation/documented] A unified MemoryRetrievalAdapter interface is specified with search, upsert, remove, and rebuild methods; the default implementation is FTS5RetrievalAdapter, with a HybridRetrievalAdapter mentioned as a possible future extension. -- evidence: [codemini-memory-2.1-design.md#L525-L525](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L525-L525), [codemini-memory-2.1-design.md#L543-L545](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L543-L545), [codemini-memory-2.1-design.md#L529-L533](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L529-L533), [codemini-memory-2.1-design.md#L518-L523](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L518-L523), [codemini-memory-2.1-design.md#L537-L539](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L537-L539), [codemini-memory-2.1-design.md#L527-L527](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L527-L527)
+- memory-state (4 claim(s)):
+  - [observation/documented] Canonical memory is the single source of truth; the FTS retrieval index is derived data that must be rebuildable when corrupted, without affecting the memory itself. -- evidence: [codemini-memory-2.1-design.md#L94-L96](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L94-L96), [codemini-memory-2.1-design.md#L98-L98](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L98-L98), [codemini-memory-2.1-design.md#L86-L90](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L86-L90), [codemini-memory-2.1-design.md#L92-L92](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L92-L92), [codemini-memory-2.1-design.md#L474-L474](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L474-L474), [codemini-memory-2.1-design.md#L84-L84](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L84-L84)
+  - [observation/documented] Memory records are typed along three orthogonal dimensions: scope (user/global/project), family (personal/repo/coding/procedure), and kind (preference/convention/lesson/note). -- evidence: [codemini-memory-2.1-design.md#L187-L191](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L187-L191), [codemini-memory-2.1-design.md#L185-L185](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L185-L185), [codemini-memory-2.1-design.md#L270-L275](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L270-L275), [codemini-memory-2.1-design.md#L199-L203](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L199-L203), [codemini-memory-2.1-design.md#L241-L246](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L241-L246)
+- orchestration (1 claim(s)):
+  - [observation/documented] Three recall paths are specified: bootstrap recall injecting a small stable profile at session start, per-turn recall of top 3-5 repo/coding/procedure memories, and failure-triggered recall of 1-3 coding memories after a tool failure; retrieval before every tool call is explicitly discouraged. -- evidence: [codemini-memory-2.1-design.md#L705-L715](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L705-L715), [codemini-memory-2.1-design.md#L703-L703](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L703-L703), [codemini-memory-2.1-design.md#L734-L734](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L734-L734), [codemini-memory-2.1-design.md#L674-L682](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L674-L682), [codemini-memory-2.1-design.md#L628-L628](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L628-L628), [codemini-memory-2.1-design.md#L634-L634](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L634-L634)
+- tools-permissions: unknown (no source-linked claim submitted for this facet)
+- evaluation: unknown (no source-linked claim submitted for this facet)
+- dependencies: unknown (no source-linked claim submitted for this facet)
+More evidence: [full detail](codemini-cli.detail.md)
+
+Metadata and full claim list: [full detail](codemini-cli.detail.md)
+Human notes ([notes](codemini-cli.notes.md), never overwritten by build)
+
+[Back to map index](../../index.md)

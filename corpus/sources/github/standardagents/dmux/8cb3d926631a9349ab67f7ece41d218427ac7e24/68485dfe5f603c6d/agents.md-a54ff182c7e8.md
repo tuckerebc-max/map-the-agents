@@ -1,0 +1,184 @@
+# AGENTS.md - dmux Maintainer Guide
+
+This file is the maintainer-focused source of truth for working on dmux itself.
+
+## Docs map
+
+- `README.md`: end-user overview and install/usage.
+- `CONTRIBUTING.md`: local development loop and PR workflow.
+- `AGENTS.md` (this file): maintainer behavior, architecture landmarks, and current dev-mode workflow.
+
+`CLAUDE.md` is a symlink to this file for tool compatibility.
+
+## Project overview
+
+dmux is a TypeScript + Ink TUI for managing parallel AI-agent work in tmux panes backed by git worktrees.
+
+Core behavior:
+
+- One project-scoped dmux session (stable name based on project root hash)
+- One worktree per work pane
+- Durable regular terminals restored in their last observed working directories
+- Agent launch + prompt bootstrap in each pane
+- Merge/close actions with worktree cleanup hooks
+- Optional multi-project grouping in one session
+
+## Important architecture landmarks
+
+- `src/index.ts`: startup, tmux session attach/create, control pane management, dev-mode startup behavior
+- `src/DmuxApp.tsx`: main TUI state, status/footer, input hookups, source switching
+- `src/services/DmuxFocusService.ts`: macOS helper lifecycle, fully-focused pane tracking, helper-backed native notifications
+- `src/services/DmuxAttentionService.ts`: attention-notification coordinator for idle/waiting panes
+- `src/services/InferenceService.ts`: provider-neutral text inference, dynamic model discovery, and primary/backup failover
+- `src/services/CodexAppServerClient.ts`: ChatGPT subscription auth/model/inference bridge through Codex app-server
+- `src/services/TerminalPaneNamingService.ts`: LLM-based naming for regular terminals — untitled panes are checked aggressively and named from streaming output; titled panes only rename from settled output on a relaxed cadence; human names are protected
+- `src/utils/paneAgentTracking.ts`: process-tree detection for agents launched manually in any pane, plus exact Claude/Codex session capture used by crash restoration
+- `src/hooks/usePaneLoading.ts`: persisted pane loading/rebinding and recreation for both worktree and terminal panes
+- `src/hooks/useInputHandling.ts`: keyboard and menu action handling
+- `src/services/PopupManager.ts`: popup launch + data plumbing
+- `src/actions/types.ts`: action registry and menu visibility rules
+- `src/actions/implementations/closeAction.ts`: close behavior + source fallback on source-pane removal
+- `src/components/panes/*`: pane list rendering (includes source indicator)
+- `src/utils/sidebarMouse.ts` + `src/hooks/useSidebarMouse.ts`: sidebar mouse support; mouse escape sequences are stripped from Ink's stdin via a proxy stream and re-emitted as events. Click highlights a row without changing tmux pane focus, double-click activates it (pane menu / action button), wheel steps the selection. `kebabMenuPopup` uses the same scheme so menu items are clickable
+
+## Native helper
+
+dmux ships a macOS helper daemon implemented in `native/macos/dmux-helper.swift`.
+
+What it does:
+
+- Release packages ship a prebuilt `dmux-helper.app` bundle under `native/macos/prebuilt/`
+- On macOS, dmux syncs that packaged app bundle into `~/.dmux/native-helper/dmux-helper.app`
+- If the packaged bundle is unavailable (for example in a source checkout without a prepack step), dmux can still build the helper app bundle on demand from `native/macos/dmux-helper.swift`
+- Auto-starts behind a Unix socket at `~/.dmux/native-helper/run/dmux-helper.sock`
+- Tracks the actual frontmost macOS app/window via CoreGraphics + Accessibility
+- Correlates the active terminal window/tab back to a specific dmux instance using a short token injected into the terminal title
+- Delivers macOS notifications for panes that need attention
+- The square helper icon source lives at `native/macos/dmux-helper-icon.png`; it is derived from `docs/public/favicon.svg` so the docs/favicon mark and native helper branding stay aligned
+- Bundles custom notification sounds from `native/macos/sounds/` and randomly chooses from the configured enabled set for each background alert
+- Startup also removes the legacy `~/.dmux/macos-notifier` helper if it still exists from older dmux releases
+- This is progressive enhancement only: on non-macOS platforms the helper path must stay inert and dmux should continue working without native focus/notification integration
+
+Focus model:
+
+- `DmuxFocusService` writes a per-instance token into the terminal title.
+- The helper looks at the frontmost visible app window and its title.
+- A pane is considered "fully focused" only when:
+  - the frontmost app bundle matches the terminal app running this dmux instance, and
+  - the focused window title contains this dmux instance's token, and
+  - tmux reports that pane as the selected pane.
+
+Notification model:
+
+- Worker heuristics + `PaneAnalyzer` first decide whether a pane is still working or has settled into `idle` / `waiting`.
+- `StatusDetector` emits attention events only after LLM-backed analysis succeeds.
+- `DmuxAttentionService` only sends a native notification when that pane is not the fully focused pane for this dmux instance.
+
+If focus behavior changes, update this section and keep `CLAUDE.md` as a symlink to `AGENTS.md`.
+
+## Adding a new agent to the registry
+
+The agent registry is centralized in `src/utils/agentLaunch.ts`.
+
+1. Add the new ID to `AGENT_IDS` (this updates the `AgentName` type).
+2. Add a full entry in `AGENT_REGISTRY` for that ID with:
+   - metadata (`name`, `shortLabel`, `description`, `slugSuffix`)
+   - install detection (`installTestCommand`, `commonPaths`)
+   - launch behavior (`promptCommand`, `promptTransport`, plus `promptOption` or `sendKeys*` fields when needed)
+   - permission mapping (`permissionFlags`) and `defaultEnabled`
+   - optional resume behavior (`resumeCommandTemplate`) and startup command split (`noPromptCommand`)
+3. Keep `shortLabel` unique and exactly 2 characters (enforced at runtime).
+
+Most UI/settings surfaces consume `getAgentDefinitions()`, so they pick up registry additions automatically (for example, enabled-agents settings and chooser popups).
+
+Related places to verify after adding an agent:
+
+- `src/utils/agentDetection.ts` for install detection behavior
+- `__tests__/agentLaunch.test.ts` for registry/permission/command expectations
+- `docs/src/content/agents.js` (static docs page; update supported-agent docs when behavior changes)
+
+Recommended validation:
+
+```bash
+pnpm run typecheck
+pnpm run test
+```
+
+## Maintainer local workflow (dmux-on-dmux)
+
+`pnpm dev` is the standard entry point when editing dmux.
+
+What it does:
+
+1. Bootstraps local docs/hooks (`dev:bootstrap`)
+2. Compiles TypeScript once
+3. Launches dmux in dev mode from `dist/index.js` (built runtime parity)
+4. Auto-promotes to watch mode when launched in tmux
+
+Result: changes in this worktree should recompile/restart automatically without repeated manual relaunches.
+
+## Dev-mode source workflow
+
+In DEV mode, a single source path is active at a time.
+
+- Use pane menu action: `[DEV] Use as Source`
+- Hotkey equivalent: `S`
+
+Toggle semantics:
+
+- Toggling on a non-source worktree pane switches source to that worktree.
+- Toggling on the currently active source pane switches source back to project root.
+- If the active source pane/worktree is closed or removed, source automatically falls back to project root.
+
+UI cues:
+
+- Footer shows `DEV MODE source: <branch>`
+- Active source pane is marked with `[source]` in the pane list
+- Dev-only actions are prefixed with `[DEV]` and only shown in DEV mode
+
+## Dev diagnostics
+
+Use:
+
+```bash
+pnpm run dev:doctor
+```
+
+Checks include:
+
+- session exists
+- control pane validity
+- watch command detection
+- active source path
+- generated docs file presence
+- local hooks presence
+
+## Hooks and generated docs
+
+`pnpm dev` and `pnpm dev:watch` both ensure generated hooks docs exist before runtime.
+
+Key artifacts:
+
+- `src/utils/generated-agents-doc.ts`
+- local hooks under `.dmux-hooks/` (notably `worktree_created`, `pre_merge`)
+
+## Pull request workflow
+
+Recommended:
+
+1. Run dmux from a maintainer worktree with `pnpm dev`.
+2. Create worktree panes for features/fixes.
+3. Iterate and merge via dmux.
+4. Run checks before PR:
+
+```bash
+pnpm run typecheck
+pnpm run test
+```
+
+## Notes for maintainers
+
+- Keep `pnpm dev` as the default path for dmux development.
+- Treat `dev:watch` as internal machinery behind the default `dev` entrypoint.
+- Keep dev-only controls hidden outside DEV mode.
+- Update this file when dev workflow behavior changes.

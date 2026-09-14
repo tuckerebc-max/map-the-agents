@@ -1,0 +1,839 @@
+{
+  "applied_operation_id": "op_008bcd2bf2e842b3ad6af2cc9950a622",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_45ee35485f6fb08a9641f7fdbf320af99e88e35f867ef8d8b5e0bbd13b749fb8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 80,
+          "line_start": 74,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L74-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_293308e2bdc1a70cf66d34ce6e8f9b7f4a05bf04e6ecc69221dbcd1e71c87efb"
+      ],
+      "text": "The Rust workspace contains the main `claw` CLI (rusty-claude-cli), an `api` crate for provider clients and streaming, a `runtime` crate with sessions and permission policy/enforcer, a `tools` crate, `claw-analog`, and `claw-rag-service`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b59504dbc6a2e2fc2c5b091b4799ff2ae0f423adfcf2c99403f04520f9ca65fb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01e359205c90db982bf3243fbe8a5d7b74e105869f98b53614cb5c15a94da6ee"
+      ],
+      "text": "The main `claw` CLI is described as a full agent with a REPL, OAuth, an extended toolset including bash, MCP and plugins, streaming, and integration with Anthropic, OpenAI-compatible, and xAI providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3d8e4b253000de701b7c2fc4ab91385f78dcb218ff881074ae495b0471d9843",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L13-L15"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 190,
+          "line_start": 180,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L180-L190"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L92-L92"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01e359205c90db982bf3243fbe8a5d7b74e105869f98b53614cb5c15a94da6ee",
+        "slc_62200463861aba44a09fd7f432052c9facf190b0b56554517c62c1565c1c867e",
+        "slc_8784ac29082da60a7fe6df7bb4e1e2e56692143b050b04047a19cb8933a4b451",
+        "slc_acf54e7980b97e48e391dc0d95af439b77728c861ef4d996f15ff43a38433896"
+      ],
+      "text": "claw-analog is a lean agent on the same API layer with a narrow filesystem-only toolset (read_file, list_dir, glob_workspace, grep_workspace, git_diff, git_log, optional write_file and retrieve_context) and no arbitrary shell, MCP, or plugins."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9faca4de03ad88168dcc7b9fdfda5a72ca44e8f2328f8aad9de107c44c51907",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L13-L15"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 80,
+          "line_start": 74,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L74-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01e359205c90db982bf3243fbe8a5d7b74e105869f98b53614cb5c15a94da6ee",
+        "slc_293308e2bdc1a70cf66d34ce6e8f9b7f4a05bf04e6ecc69221dbcd1e71c87efb"
+      ],
+      "text": "claw-rag-service is a separate process that indexes a repository into SQLite chunks plus embeddings and exposes an HTTP API with routes including /, /health, /v1/stats, and /v1/query, plus a minimal web UI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27fb9b7b9870be1372716dbbee667b3005fdc2cd0a72ba2618c32c9873d04939",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L57-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_420f85f5e60f1c92eb6f1b400d7e9c2bafa1be489286ce52a5eba51d2f26700d"
+      ],
+      "text": "Heavy indexing and embedding storage are deliberately kept out of claw-analog; the agent only calls retrieval over HTTP so the vector store and embedding secrets can be scaled or changed independently."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab162e8dc66e92a32ac979db517974f05fa7fa925f586657879566d9a5b12804",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 68,
+          "line_start": 63,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L63-L68"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 198,
+          "line_start": 194,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L194-L198"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 150,
+          "line_start": 145,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L145-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73d6e9238be8cab6921a2961451cf40e2a822a394423b9026bf5ff5d1d03db06",
+        "slc_7f44e1cb38f23db62e3fd19652f9ab2cb769e6cc19d9cef65058d873006a9ede",
+        "slc_b8919c95ca221ad43063061f4b412eb5a5d0d7a384ecb5affdfc3e9190d3aba7"
+      ],
+      "text": "claw-analog enforces a canonical workspace root with relative paths, no `..`, and symlink/canonicalize containment checks; a PermissionPolicy and PermissionEnforcer gate tools, and dangerous modes are blocked in non-interactive runs unless explicitly accepted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_84d30e9a9f5496a3e59d34b72ac62b55cf4d7995dddbb03bbffad299ce02f9d8",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 150,
+          "line_start": 145,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L145-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b8919c95ca221ad43063061f4b412eb5a5d0d7a384ecb5affdfc3e9190d3aba7"
+      ],
+      "text": "Permission modes include read-only, workspace-write, prompt, and danger-full-access/allow; write_file is unavailable in read-only and prompt modes, and danger modes are forbidden non-interactively without an explicit accept flag."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b5dd0e031cb9792a299221ab42700412b646fa9e72f6dce5e7483ecd9168e041",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 158,
+          "line_start": 158,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L158-L158"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 160,
+          "line_start": 160,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L160-L160"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 162,
+          "line_start": 162,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L162-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_459aafad5c879c49a685e57446915223232d71d62141966b882c7d038e9e28d7",
+        "slc_b31a9a49d7062821336844bc8c79dbcf04f3bc0aefc1e802b640ed77fe63b507",
+        "slc_c5c4654d0ab811b32c1f5505560f0b897d8d3d39c7087f13a6cd155ca25ecaad"
+      ],
+      "text": "claw-analog supports JSON session files (version 1) holding workspace, model, optional preset, and API-format messages; history is loaded on resume and saved after each tool round, with a --save-session export path and warnings about secrets and token cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0337996feec59dd33c4b3d34b8c3696c00cea779d6897ef81fa7f83a0f43d5d6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L43-L43"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L22-L22"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 47,
+          "line_start": 45,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L45-L47"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 29,
+          "line_start": 24,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L24-L29"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L58-L58"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18fb0a714990e09b0b0cc1cfa91d9d0427a9ad858eee165d343b7a84b6769473",
+        "slc_40915a9938a0001502db1b81133f017cab39ae2dc3361d6fc563cd54c18ed2c9",
+        "slc_6a09225b4d3cdd6b249ac09673d87c2c859e290c66581612aab8b21d655b6bf6",
+        "slc_cd6449e37ff857fa8bd94068f4ed79d84c3e85df724c9e47f4c48e9095a72163",
+        "slc_d95c5ead2e0375eb29c6318ccb61cd7d3fc1e4fbf93c5f9c5fcdc66a1add0608",
+        "slc_e0b91c453555e5a286ff37be07dc274868a1c6fb0c20cb6881d9bb24ddcdf6b6"
+      ],
+      "text": "claw-analog exposes subcommands including doctor (config preview, env status, workspace search, optional build, TCP ping), config validate (offline TOML/profile check with --strict), and complete for shell completion in bash, zsh, fish, and powershell."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c92e9683047e7cc46371c8efb77ae3c8a9fdc89743ad0b7a5f5546bad0378ee",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 204,
+          "line_start": 204,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L204-L204"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+          "line_end": 29,
+          "line_start": 23,
+          "path": "concept.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md#L23-L29"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 112,
+          "line_start": 96,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L96-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_433a58ae827ec2fe89ed4273705ae2bcb419f89a2e912df47ed17d298c5e81fd",
+        "slc_51c1b20bdcc293cf95844ca17975d3c79066c5675a1825b7fdaf10c500af4746",
+        "slc_66f31de196681ed3b488024fb24fb9b32f50f04b6fd7ac357c9c8baa3eae0457"
+      ],
+      "text": "claw-analog supports --output-format json emitting NDJSON on stdout for scripts and CI, --stream for SSE streaming, and explicit limits such as --max-turns (default 24), --max-read-bytes (262144), and glob/grep caps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc0ca2b1acb13829948672687f021a4f5a2398436377757e0d766360e323ebc3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "8f41d4ffafd0fc0ff15aea54a665dfc6af5a8dbc",
+          "line_end": 102,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/README.md#L99-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5836b77b72a3e0d2fdd68b3f5928b431d98e0ba3dc5bf8ba25d937f08121e245"
+      ],
+      "text": "The README states claw-code does not yet ship an ACP/Zed daemon or JSON-RPC entrypoint; `claw acp serve` is only a discoverability alias returning status with exit code 0, with real ACP support tracked in the roadmap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b63bdd1252f44f770530105f49c0abbb4468ec8bede2531f73554ade123d25a2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "8f41d4ffafd0fc0ff15aea54a665dfc6af5a8dbc",
+          "line_end": 263,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/README.md#L263-L263"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "8f41d4ffafd0fc0ff15aea54a665dfc6af5a8dbc",
+          "line_end": 127,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/README.md#L125-L127"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "8f41d4ffafd0fc0ff15aea54a665dfc6af5a8dbc",
+          "line_end": 121,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/README.md#L115-L121"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "8f41d4ffafd0fc0ff15aea54a665dfc6af5a8dbc",
+          "line_end": 268,
+          "line_start": 265,
+          "path": "README.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/README.md#L265-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_054652d461d2bd475e0bbec5824254ea5bc31f49996e844414afac0adacb108e",
+        "slc_0818f83c7a68e3fbc32ad7678f91444a244bc6ecbec4fee9724ae36feea1814e",
+        "slc_48e5f97f4e6621adfa38687fba41e710ec8a4f48e29d5090f30314872d359ac1",
+        "slc_b3fd6ffd1e98bc87e0bcc84c5728a93b5b46cf583a21aca2f6292d3923e01473"
+      ],
+      "text": "Repository development practice: the README instructs building from source via `cargo build --workspace` in rust/, warns against `cargo install claw-code` (a deprecated stub), and says to run `cargo test --workspace` after verifying the binary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_533c81dd384a202572178406512950b400861323cee51997ca4c6a69a627fce7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L3-L3"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "8f41d4ffafd0fc0ff15aea54a665dfc6af5a8dbc",
+          "line_end": 261,
+          "line_start": 260,
+          "path": "README.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/README.md#L260-L261"
+        },
+        {
+          "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+          "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "how_to_run.md",
+          "repository": "ultraworkers/claw-code",
+          "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md#L9-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5be6fb9c73f17908f802a7e9b3303ded0ec85e2232f4d06bbe08cb43f53c1596",
+        "slc_9b13ff59272813a04b72c67d68b11d94fa54a3315509cdae461d18d1b45473eb",
+        "slc_e989ba16f634b23eede4bc92795726460a3b1affdf92015ba73bb53e0bf7217c"
+      ],
+      "text": "The harness requires a provider API key (e.g. ANTHROPIC_API_KEY or OPENAI_API_KEY); Claude subscription login is not a supported auth path, and claw-analog selects providers by model and environment variables."
+    }
+  ],
+  "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 299,
+        "path": "README.md",
+        "size": 14152
+      },
+      {
+        "lines": 125,
+        "path": "concept.md",
+        "size": 11457
+      },
+      {
+        "lines": 389,
+        "path": "how_to_run.md",
+        "size": 27905
+      },
+      {
+        "lines": 190,
+        "path": "PARITY.md",
+        "size": 13752
+      },
+      {
+        "lines": 114,
+        "path": "PHILOSOPHY.md",
+        "size": 4053
+      },
+      {
+        "lines": 378,
+        "path": "progress.txt",
+        "size": 19087
+      }
+    ],
+    "omitted": [
+      {
+        "path": "ROADMAP.md",
+        "reason": "file-budget",
+        "size": 1187599
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 761
+      },
+      {
+        "path": "USAGE.md",
+        "reason": "file-budget",
+        "size": 34159
+      },
+      {
+        "path": "docs/anti-slop-triage.md",
+        "reason": "file-budget",
+        "size": 3537
+      },
+      {
+        "path": "docs/container.md",
+        "reason": "file-budget",
+        "size": 3763
+      },
+      {
+        "path": "docs/g002-security-verification-map.md",
+        "reason": "file-budget",
+        "size": 11872
+      },
+      {
+        "path": "docs/g003-boot-session-verification-map.md",
+        "reason": "file-budget",
+        "size": 7353
+      },
+      {
+        "path": "docs/g004-events-reports-contract.md",
+        "reason": "file-budget",
+        "size": 7652
+      },
+      {
+        "path": "docs/g004-events-reports-verification-map.md",
+        "reason": "file-budget",
+        "size": 4828
+      },
+      {
+        "path": "docs/g005-branch-recovery-verification-map.md",
+        "reason": "file-budget",
+        "size": 3749
+      },
+      {
+        "path": "docs/g006-task-policy-board-verification-map.md",
+        "reason": "file-budget",
+        "size": 3897
+      },
+      {
+        "path": "docs/g007-mcp-lifecycle-mapping.md",
+        "reason": "file-budget",
+        "size": 5547
+      },
+      {
+        "path": "docs/g007-plugin-mcp-verification-map.md",
+        "reason": "file-budget",
+        "size": 5083
+      },
+      {
+        "path": "docs/g009-windows-docs-release-verification-map.md",
+        "reason": "file-budget",
+        "size": 7224
+      },
+      {
+        "path": "docs/g010-clone-disambiguation-metadata.md",
+        "reason": "file-budget",
+        "size": 7397
+      },
+      {
+        "path": "docs/g010-session-hygiene-verification-map.md",
+        "reason": "file-budget",
+        "size": 2755
+      },
+      {
+        "path": "docs/g011-acp-json-rpc-status-contract.md",
+        "reason": "file-budget",
+        "size": 1804
+      },
+      {
+        "path": "docs/g011-ecosystem-ops-ux-verification-map.md",
+        "reason": "file-budget",
+        "size": 7831
+      },
+      {
+        "path": "docs/g012-final-release-readiness-report.md",
+        "reason": "file-budget",
+        "size": 8099
+      },
+      {
+        "path": "docs/g013-roadmap-pinpoints-693-695-verification-map.md",
+        "reason": "file-budget",
+        "size": 2393
+      },
+      {
+        "path": "docs/local-openai-compatible-providers.md",
+        "reason": "file-budget",
+        "size": 8142
+      },
+      {
+        "path": "docs/MODEL_COMPATIBILITY.md",
+        "reason": "file-budget",
+        "size": 9939
+      },
+      {
+        "path": "docs/navigation-file-context.md",
+        "reason": "file-budget",
+        "size": 3495
+      },
+      {
+        "path": "docs/personal-assistant-roadmap.md",
+        "reason": "file-budget",
+        "size": 4690
+      },
+      {
+        "path": "docs/pr-issue-resolution-gate.md",
+        "reason": "file-budget",
+        "size": 4537
+      },
+      {
+        "path": "docs/rag-web-ui.md",
+        "reason": "file-budget",
+        "size": 5938
+      },
+      {
+        "path": "docs/roadmap-pr-goals.md",
+        "reason": "file-budget",
+        "size": 6246
+      },
+      {
+        "path": "docs/windows-install-release.md",
+        "reason": "file-budget",
+        "size": 6265
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 6316
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1181
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1192
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3230
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1777
+      }
+    ],
+    "omitted_count": 33,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 395,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 39,
+      "complete": false,
+      "omitted": 33,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_f7f0125a9ee2565e996d35a719c7c33b",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ultraworkers/claw-code/08106b0c3771ef5b4a5aa176acccd460e88b7325/3672b0345a23b5ad/manifest.json",
+  "package_id": "pkg_600b24f8dbf6926b726a062392f1762ca33e1e92be9ade4c6ad46aa26ffb0793",
+  "repo": "ultraworkers/claw-code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3efeae36a2df023c1b6148e9070f128d3631f041ee1aecc807bb909c7529663e",
+  "snapshot_id": "3672b0345a23b5ad",
+  "sources": [
+    {
+      "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+      "git_sha": "2af136cd84bd196c23ba94b0abaf91400a828b77",
+      "lines": 190,
+      "path": "PARITY.md",
+      "repository": "ultraworkers/claw-code",
+      "sha256": "5104c831ab8f590c8a94dc484507365ebf2a1f952c32a99fecd83f6bea5232b0",
+      "source_id": "src_626ea9c558465167a64a72fcc51bca97",
+      "stored": "parity.md-40b130ce50bc.md",
+      "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/PARITY.md"
+    },
+    {
+      "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+      "git_sha": "1914cf71739c2be1c66b31ddc4a7c2e5af691b60",
+      "lines": 114,
+      "path": "PHILOSOPHY.md",
+      "repository": "ultraworkers/claw-code",
+      "sha256": "2610c059198a603c17196066ca59c4a9f6def99e6ca3489494520d700f4a2f17",
+      "source_id": "src_7b5f0948e4ae5078a3dcd0f362fae913",
+      "stored": "philosophy.md-0ecf9cd08dea.md",
+      "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/PHILOSOPHY.md"
+    },
+    {
+      "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+      "git_sha": "8f41d4ffafd0fc0ff15aea54a665dfc6af5a8dbc",
+      "lines": 299,
+      "path": "README.md",
+      "repository": "ultraworkers/claw-code",
+      "sha256": "e7881ed93bbf9219394e0d1e39168bfad9c5a59d955c1ecaa77e7c375abbabfc",
+      "source_id": "src_523a9c1b71a3574b89f93a961d79cb7d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/README.md"
+    },
+    {
+      "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+      "git_sha": "5139ade9ca49a4657576ed3a12e6b94d842f8a3c",
+      "lines": 125,
+      "path": "concept.md",
+      "repository": "ultraworkers/claw-code",
+      "sha256": "5cec4d9eb7dfaf7d771c0a6bf763dc47542264b08693839e27f7eee0b280c7a7",
+      "source_id": "src_99a905feba42511ba6fb11182ff62324",
+      "stored": "concept.md-7681bd32d1a8.md",
+      "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/concept.md"
+    },
+    {
+      "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+      "git_sha": "ac8cba72d99965c3ea625422fa9ca3404378d76e",
+      "lines": 389,
+      "path": "how_to_run.md",
+      "repository": "ultraworkers/claw-code",
+      "sha256": "95ca3afbc1a155d6de97b94abe315aa790172a398819e540706cd503fbdbf9e4",
+      "source_id": "src_9bcd6d7a96365db1ac42b8c81f113522",
+      "stored": "how_to_run.md-83ad0066cc6f.md",
+      "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/how_to_run.md"
+    },
+    {
+      "commit": "08106b0c3771ef5b4a5aa176acccd460e88b7325",
+      "git_sha": "d7953a171e240be6ceb309b649c105806c32179b",
+      "lines": 378,
+      "path": "progress.txt",
+      "repository": "ultraworkers/claw-code",
+      "sha256": "e4a8c6c535e31fc185bdbc6414dda1dbbe75eced03be7c528c30c27b544da7e2",
+      "source_id": "src_f950f13142455eb58cd0460e4ecc47d8",
+      "stored": "progress.txt-221f0f585ac2.txt",
+      "url": "https://github.com/ultraworkers/claw-code/blob/08106b0c3771ef5b4a5aa176acccd460e88b7325/progress.txt"
+    }
+  ],
+  "summary": "The repository documents Claw Code, a Rust implementation of the `claw` CLI agent harness with a full CLI, a lean `claw-analog` agent, and a separate RAG service; evidence is mostly README/concept/how-to-run documentation describing product surface, permissions, sessions, and setup workflows. Evidence coverage: 137 of 276 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

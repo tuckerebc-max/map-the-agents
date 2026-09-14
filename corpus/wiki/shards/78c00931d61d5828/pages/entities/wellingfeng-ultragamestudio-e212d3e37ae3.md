@@ -1,0 +1,35 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_322478ee9294fd68dadfe7516285ccf3206f89c5046b34aaec97722196127a5b
+- clm_515824913163e5afa7d73f33f7697120c7c9619afb69adab39c6bb59027c37ed
+- clm_548618c90af4c1a89aaefdcffc39efb3ff3156501eb9cfaa369a7796c65c6503
+- clm_587a3b3bdfffa88a4fd1a1cd60f840dbe048965f4dc6cc57362c2812f7aa592c
+- clm_7942c565752f3d37f0cb9021bad2e02682e869d5b220ad8cf34cce6b5b7096b4
+- clm_7e84c9bdf4f55d12a16e1bb2ae41e88816c4cc4fa28666df3057b5ecd9a564ca
+- clm_93a2f19a2722cf1e1db90b738671f4460fafe7bf4eae4e7ae4673dab23409aaf
+- clm_947bcb067c6603f001ca66d896e113baf273ac50251fd2a1e4bf9ee0d0c36143
+- clm_a417f8bd57b85928f4ac80cd3c0d5a677e7962fc4d0515c83217e40e7dd3cf7a
+- clm_badf96a20a9f857a7e17b9d1a4d984042532ddab3b4390ea7972f21e3d31826a
+- clm_c7ebfc5f4c708c03640b862adfd4dfbf3d2f5a68a470ad28c8b7ac1a17533ee0
+- clm_ca34d827653f2bf0eae583919f995abb4e891ed7d6bedcb1013fcb271370d7f2
+- clm_f2befee603eba2c798721201d2639b80a623459ee046a467f4f403cc8148d4c8
+maturity: draft
+page_id: pg_5d25974c0f77505cbd99e212d3e37ae3
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: wellingfeng/ultragamestudio
+updated_at: '2026-09-14T03:22:47Z'
+---
+
+# wellingfeng/ultragamestudio
+
+<!-- rcw:begin owner=entity:ent_a3b7531f625355309a3b408a92a55b99 block=evidence -->
+- wellingfeng/ultragamestudio is mentioned in this evidence. [@claim:clm_322478ee9294fd68dadfe7516285ccf3206f89c5046b34aaec97722196127a5b] [@claim:clm_515824913163e5afa7d73f33f7697120c7c9619afb69adab39c6bb59027c37ed] [@claim:clm_548618c90af4c1a89aaefdcffc39efb3ff3156501eb9cfaa369a7796c65c6503] [@claim:clm_587a3b3bdfffa88a4fd1a1cd60f840dbe048965f4dc6cc57362c2812f7aa592c] [@claim:clm_7942c565752f3d37f0cb9021bad2e02682e869d5b220ad8cf34cce6b5b7096b4] [@claim:clm_7e84c9bdf4f55d12a16e1bb2ae41e88816c4cc4fa28666df3057b5ecd9a564ca] [@claim:clm_93a2f19a2722cf1e1db90b738671f4460fafe7bf4eae4e7ae4673dab23409aaf] [@claim:clm_947bcb067c6603f001ca66d896e113baf273ac50251fd2a1e4bf9ee0d0c36143] [@claim:clm_a417f8bd57b85928f4ac80cd3c0d5a677e7962fc4d0515c83217e40e7dd3cf7a] [@claim:clm_badf96a20a9f857a7e17b9d1a4d984042532ddab3b4390ea7972f21e3d31826a] [@claim:clm_c7ebfc5f4c708c03640b862adfd4dfbf3d2f5a68a470ad28c8b7ac1a17533ee0] [@claim:clm_ca34d827653f2bf0eae583919f995abb4e891ed7d6bedcb1013fcb271370d7f2] [@claim:clm_f2befee603eba2c798721201d2639b80a623459ee046a467f4f403cc8148d4c8]
+<!-- rcw:end owner=entity:ent_a3b7531f625355309a3b408a92a55b99 block=evidence -->
+
+## Researcher notes
+

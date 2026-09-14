@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0c80a46056aec90c887962663eb117275288b568e1b63f27f87c879813995a53
+- clm_15c4d538d8e3074ef66be9f9abdbeb9e57e8205d4178487d51517dd90050bf73
+- clm_2bbc74fb0f9d11e4019b0ed32ca9991e5aee39c2434e134dc6382c0a2197a071
+- clm_39f29d021fe53d75d1fbf63f98aefd0da98544a82f616f291dd9b957ea17659a
+- clm_a7cdae4ec2134903d7234aee4c6c6b2ed3b05331c292212b4154e1b2c1952088
+- clm_b3675f3d00a4347391610dd9563ff390ec30845ff2261464da3dc18a400df504
+- clm_cf0b98befba12dcf131c8b19b71e45bf94eb40028c21ca31a9eaa4168b12cf4b
+- clm_d535373a82465b57b854512d9094172028f7d24f96a0abdc3c882f983b4ef1af
+- clm_db344ba69b818fe8a89da5de9a96c3e7d701b4e42a91a40f706cdd60449a730c
+- clm_f8231f521c334c5e98ee8a021ecb07ab70e823a923b3271ffac70bda32b1bfea
+maturity: draft
+page_id: pg_53383d4569375bec8b3b01ad61c3ca41
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: hofstadter-io/hof
+updated_at: '2026-09-14T03:57:29Z'
+---
+
+# hofstadter-io/hof
+
+<!-- rcw:begin owner=entity:ent_47201cd8201959f8af05d8214cb60d78 block=evidence -->
+- hofstadter-io/hof is mentioned in this evidence. [@claim:clm_0c80a46056aec90c887962663eb117275288b568e1b63f27f87c879813995a53] [@claim:clm_15c4d538d8e3074ef66be9f9abdbeb9e57e8205d4178487d51517dd90050bf73] [@claim:clm_2bbc74fb0f9d11e4019b0ed32ca9991e5aee39c2434e134dc6382c0a2197a071] [@claim:clm_39f29d021fe53d75d1fbf63f98aefd0da98544a82f616f291dd9b957ea17659a] [@claim:clm_a7cdae4ec2134903d7234aee4c6c6b2ed3b05331c292212b4154e1b2c1952088] [@claim:clm_b3675f3d00a4347391610dd9563ff390ec30845ff2261464da3dc18a400df504] [@claim:clm_cf0b98befba12dcf131c8b19b71e45bf94eb40028c21ca31a9eaa4168b12cf4b] [@claim:clm_d535373a82465b57b854512d9094172028f7d24f96a0abdc3c882f983b4ef1af] [@claim:clm_db344ba69b818fe8a89da5de9a96c3e7d701b4e42a91a40f706cdd60449a730c] [@claim:clm_f8231f521c334c5e98ee8a021ecb07ab70e823a923b3271ffac70bda32b1bfea]
+<!-- rcw:end owner=entity:ent_47201cd8201959f8af05d8214cb60d78 block=evidence -->
+
+## Researcher notes
+

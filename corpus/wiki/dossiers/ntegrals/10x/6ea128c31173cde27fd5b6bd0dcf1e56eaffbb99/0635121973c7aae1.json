@@ -1,0 +1,421 @@
+{
+  "applied_operation_id": "op_56b9a3a6e0224737a1ec23ea2bd1ca02",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f96a30e9a9691e65e6cfcdeee5b3cd7d9b1965d56dfa80b0cafbeef55db7330",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 112,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L106-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49163d1f94cbe1151b481f2f117943f5f3be55e358081e30a0f561a20be405e2"
+      ],
+      "text": "The 10x CLI supports an interactive session mode, --byok for a user-supplied OpenRouter key, --model <tier>, --resume <name>, and -x to run a prompt and exit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_994e3a8c1ab4d37d71ea2bb46b8ed17e9ca0912b020bea59bb11da58574108b6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L39-L39"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 48,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L41-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53b2d6dc8744a00434395bca2d70c068bb64c1cfaf7ec571cd4cee28ffbf0d38",
+        "slc_cbb5278e5f606edcc5b95df0e0f5828d7cfe3e32297a6fab1653c2c948f5842b"
+      ],
+      "text": "Built-in slash commands include /review, /pr, /refactor, /debug, /explain, and /test, each described as a multi-step workflow such as reproduce-analyze-fix debugging."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a4893a4a8c3314de4be26e298bcfbbf9aa2b8b50328c53ab5d63acd6f0c1c26",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53b2d6dc8744a00434395bca2d70c068bb64c1cfaf7ec571cd4cee28ffbf0d38"
+      ],
+      "text": "Superpowers are multi-step AI workflows that chain different models, with each step routed to the fastest model tier able to handle it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef2b047440486ff18ab2935861ab8b8cfe9e070a4813c00ce485e8628cc9cefe",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 75,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L71-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12565287c4e77f61e7adaa745690f305a20a7f14f7ff2bf50419b9bccbf87b0e"
+      ],
+      "text": "Three model tiers are documented: Superfast (GPT OSS 20B), Fast (Kimi K2 1T), and Smart (Claude Opus 4), mapped to simple queries, code generation, and complex reasoning respectively."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_617352d91521eb027205187aa439629e6079bdf39d63941a1dae858285ad2af3",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L52-L52"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 58,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L54-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b412c62f891276f43372d58cb9892ed281aed0a642cab5ba1e25c672906c304",
+        "slc_d36bc7b61c39c56134eede06b166de94b60abfa01b4f759bfc40b8c46a14e3e4"
+      ],
+      "text": "Users can define custom superpowers in .10x/superpowers/ or ~/.config/10x/superpowers/ using markdown files with name and trigger frontmatter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_133b57361aeb4d574e8faf8a26510625dd582a37874c3847b5e4707ccd8f0824",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L102-L102"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L92-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_289c2a82077900c21d1312e4b0b736579db85e46451d91c1d31e4e56b44cb00d",
+        "slc_61cfca45db2a7be7f625f6adb83eb50a255d2d2b740af80565053bbe9581be95"
+      ],
+      "text": "Custom skills are markdown prompts stored in .10x/skills/ or ~/.config/10x/skills/ and invoked via /<skill-name>."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e295077c8e49dd9263dd6cff874443f82acf94bbca43bed135a4a0813b21a57d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L81-L81"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 88,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L86-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c800da0fd634887d1d876cc131d3a1e61abde247a6091fee75ad73582a4947b",
+        "slc_52165e7bffa50c2ff4c189c80f2ca76c1afc2e6244d1477dc6336f9642aac3d9"
+      ],
+      "text": "Project context is provided via a 10X.md file in the project root, e.g. listing tech stack and conventions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14b6695957fe224cf83773e8f570b8b9baa2b96370afad9bd9bfdbe66f84d4f2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L7-L11"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 22,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L21-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a049ea3c1427a62b147e3ba9b8034a61c66c091714de288b1ba8668c85255b5f",
+        "slc_f321f7be5a50f539403d41eaa94130ae36afdb6c4402a522e01f930183ada8a8"
+      ],
+      "text": "The tool is distributed as the npm package 10x-cli and installed globally with npm install -g 10x-cli."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8625a882bd1e1d8518cbcce9d8503f569ef2ae7927bb74b0967f57848fd134c2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L116-L116"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 35,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L29-L35"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35c887f6e9736d407e70ba6ed0b8121c61bdeb8899c9b26a2534e90c5fdc9c07",
+        "slc_8ed14d89cb805da4a0c7972b4b26aca0fe3b3af2c756a4c6b4d94f28953176cc",
+        "slc_a049ea3c1427a62b147e3ba9b8034a61c66c091714de288b1ba8668c85255b5f"
+      ],
+      "text": "The project is MIT licensed and advertises BYOK (bring your own key) for cost control, in contrast to subscription-only competitors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff7b1f525bb97dce2c0dd599aa65b37830ef47560e46fb273afd31e15533b551",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 75,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L71-L75"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L3-L5"
+        },
+        {
+          "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+          "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+          "line_end": 35,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "ntegrals/10x",
+          "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md#L29-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12565287c4e77f61e7adaa745690f305a20a7f14f7ff2bf50419b9bccbf87b0e",
+        "slc_6097d001bbfc191845afb168a474af4d9fb2e123095212ca526cf081ec7d13f2",
+        "slc_8ed14d89cb805da4a0c7972b4b26aca0fe3b3af2c756a4c6b4d94f28953176cc"
+      ],
+      "text": "The 'up to 20x faster' speed figures appear to be marketing claims tied to the tier table rather than results of a documented benchmark methodology."
+    }
+  ],
+  "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 116,
+        "path": "README.md",
+        "size": 4013
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 194,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_bd03d2d8ee0552d9a110e93a808db45a",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ntegrals/10x/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/0635121973c7aae1/manifest.json",
+  "package_id": "pkg_b7aa1ed23777edbc7f5b08f9d37b36993bcc4617ab940318416375d4898d1f78",
+  "repo": "ntegrals/10x",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "51ddbd2b74b7f34c4df6e3f0908a8ebe27c99333a85e22eebcf46e154235694a",
+  "snapshot_id": "0635121973c7aae1",
+  "sources": [
+    {
+      "commit": "6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99",
+      "git_sha": "1c34041c1d791fd65884b8a3aafe3d4322234682",
+      "lines": 116,
+      "path": "README.md",
+      "repository": "ntegrals/10x",
+      "sha256": "ccc3985ea98add62d74957010a7e467ae5c3adf07d28324cfd8bb6abaf966bfa",
+      "source_id": "src_bc54d5d7a0d853e38ba3309d64d7036e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ntegrals/10x/blob/6ea128c31173cde27fd5b6bd0dcf1e56eaffbb99/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only README.md for '10x', an npm-distributed MIT-licensed CLI coding assistant that chains models in multi-step 'Superpowers' workflows with tiered model routing, custom skills, and BYOK via OpenRouter.",
+  "superseded_claim_ids": [
+    "clm_27f5795e0e7fcc415b17c12ff59cce9b144882e74b66a93773439efd17c43117"
+  ]
+}

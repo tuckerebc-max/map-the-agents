@@ -1,0 +1,773 @@
+{
+  "applied_operation_id": "op_ce87ec39c6b34517970734b4be6dda69",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_89193ffc48b5cc932f30f17491e81c404bdadc81f538f16036743e039e7772da",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 448,
+          "line_start": 446,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L446-L448"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 443,
+          "line_start": 435,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L435-L443"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_369c2594ef8cf53647f0e7a6b39ce86a64b53bfbbf76a42e77f87ce75bbb5d5b",
+        "slc_a672222637f9eadeb4816e375053f771f692ac1b668b1780fcf49a1dc774f1d8"
+      ],
+      "text": "The product exposes a CLI with subcommands including tui, web, login, logout, config, and --version, plus a headless -p/--print mode for non-interactive runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd8e59df63c9985e56a68be3ab6edab7b4cb77583fa2d97b90df7199eaa7da93",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 406,
+          "line_start": 406,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L406-L406"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c6bddf162896ab2804789f2a1703afc4dccb82218581cf703f7ed156d5e7b0a9"
+      ],
+      "text": "The interactive UI is a TypeScript Ink TUI that spawns a Python agent-server child and communicates over an NDJSON pipe; running clawcodex with no mode flags launches it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25363152c452bf19e2efff6645efd956dda603d3d67890705a6b148a13fcd562",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 429,
+          "line_start": 424,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L424-L429"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 640,
+          "line_start": 634,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L634-L640"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 431,
+          "line_start": 431,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L431-L431"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_108fc733535ed7e90c7b493a8684eb8c6d290b2791a6e3ecd3e990dcd95b206a",
+        "slc_23342a3384f1c8d3ef14a9851ddf7af6ca086e08772f7e48e7298f4fc9a24920",
+        "slc_f1ac540537e1d2823d715be4424a211dbab25fb4e9fd098f010bc3f93c50b702"
+      ],
+      "text": "clawcodex web serves the same agent in a browser at 127.0.0.1:8081 by default, mounting the web bundle on the serve process rather than running a second server, and binds loopback unless --allow-remote is passed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c79820599b47901ecaf86d19b08f1f1c08c90782a6a2f78dfbac736a84f7524f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 448,
+          "line_start": 446,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L446-L448"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 452,
+          "line_start": 451,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L451-L452"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_369c2594ef8cf53647f0e7a6b39ce86a64b53bfbbf76a42e77f87ce75bbb5d5b",
+        "slc_4eafba5db555cf9387e441413c8e8347471acc776f15345456b9fc5260708e8a"
+      ],
+      "text": "Headless runs support --output-format json and stream-json output with stream-json input, plus per-run overrides like --provider, --model, --max-turns, and --allowed-tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93c86f2ea07832d91898efac8f6deadeda74daf039e17593bae5f99b0781601c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 469,
+          "line_start": 465,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L465-L469"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 463,
+          "line_start": 462,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L462-L463"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 475,
+          "line_start": 471,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L471-L475"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_086b5f8f3b48b19e83131e509196d50f27b2b7d2e078553738d8af089e55d6da",
+        "slc_13f2c32a20db07e4d452913c7628e711f68cf23774272cf2da67aba7da458e11",
+        "slc_82e46b1fe2cc45933722b31d164a0a2aa61e13886e8d0f0b3b0a7500be43a3a1"
+      ],
+      "text": "Interactive sessions start in Full Access by default; /permissions offers Ask-for-approval, Approve-for-me, and Full Access levels, saved to permissions.defaultMode in ~/.clawcodex/settings.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79168ca2e27fe6ccb120922c70890011ca9f3f9a5ac7a19e6bd2f456999f5418",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 481,
+          "line_start": 477,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L477-L481"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f5c1eee5b6811ae682337d81b9756efd62a9ca447cc071bbbc7ec2db176da336"
+      ],
+      "text": "Headless -p runs default to the 'default' permission mode; a saved Full Access setting dials headless down rather than up, and --dangerously-skip-permissions or --permission-mode can override per run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66878d1f6fee583094ae9c6151f3dcb479e003a46bb4700ec648826b1c1bc992",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 499,
+          "line_start": 491,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L491-L499"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c73672925cb7e962036c01faab104d4734b6c3b832ced18b0368c29df564494e"
+      ],
+      "text": "Repo-shipped .clawcodex/settings.json may only set defaultMode to default or dontAsk, and is ignored if looser than what would otherwise apply; administrators can disable Full Access via config or managed policy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f35e9bc0609b7279d2048abd6c2481ca26394699048b8a75c0409ec6b2f67234",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L163-L163"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 161,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L147-L161"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98af7a93bbc5ae1ba7fe7e7ca95e8001e345fc310b041cf0c92ad9f9e1e8e1f9",
+        "slc_a01da9cb306b3a0c1c31979d155bb802a2964141b3ae8d14b0b6d626d6b7ce0d"
+      ],
+      "text": "The WebSearch tool requires a Tavily API key (TAVILY_API_KEY), configurable in the env block of ~/.clawcodex/config.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3a4e56397ed1074775915d9272892e82c7c6af80c816538cf40010a0dab808c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 592,
+          "line_start": 582,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L582-L592"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17ebf5536ae74eb7a2eed1e8c41d8ddbabedb40305092c13b0f6d654dc4dc08a"
+      ],
+      "text": "The tool system implements file operations (Read/Write/Edit/Glob/Grep), Bash, WebFetch/WebSearch, task management, agent tools, and configuration tools; MCP tools are wired but the full client/runtime is still evolving."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7652b0d38c95dc1984745935570a94ebeb6206f5bdb5552daeb71599207824ba",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 378,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L377-L378"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 372,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L364-L372"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bcc9b5ac36c58ed6168b78b84689407dc75de50ad22d683f0016a35629d6fef",
+        "slc_ad9ea3d358f8907a0e245482f649ec4a3ac4a367ed641925da1f8ed10deb2369"
+      ],
+      "text": "Skills are markdown SKILL.md slash commands with front matter supporting descriptions, allowed-tools limits, and named arguments, available at project and user scope."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_374016996a4d2382d1e3d0ccb3ea5e011050353cd60b43d2faaeae96b0922d3e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 230,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L224-L230"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 328,
+          "line_start": 321,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L321-L328"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d5a49fd6d8740df23ead3c0145e12f6d12fc80de813237696947111db6288bf",
+        "slc_7afe1c961e58080524ee45db5ce30f20f003bf9eb86ba257c28ec945a1b070a6"
+      ],
+      "text": "The /eco mode compresses model-bound Bash output with deterministic filters (failure-focused summaries, ceremony stripping, dedup, head-caps), discards any compression not better than the raw rendering, and tees lossy output to disk with a recovery hint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53902dd8776d89510703a7dd1bda9b61368e18f63af2b5d7f0d973d4b3f1227e",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 337,
+          "line_start": 334,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L334-L337"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 273,
+          "line_start": 255,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L255-L273"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 253,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L248-L253"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02df259a716f96011ce97a45fa4ada6159021b119562b22b5dd513ab6be824ed",
+        "slc_2c63a7ef89a19d73635075243f6ecbe367bc38339120f2d491394b29c944e698",
+        "slc_516fad2a642f47c97107958fcb3c9de10b82678a053d73eaaf9d6a33a610383b"
+      ],
+      "text": "An /eco benchmark replayed 27 real captured command outputs through the production pipeline, measuring 92,989 to 17,767 tokens (-80%) with tiktoken cl100k_base counting; reproduction scripts are provided under eval/eco."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dad4471422640d70dc5d7332b0f51f110adc65e0dda3e27001cd915b2706cf6c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 396,
+          "line_start": 384,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L384-L396"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 16,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L13-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_057ce934d1a6f47c4d5a6e0bfac4a96501cdf16f9afe2e333f2d1befe7a4e1c2",
+        "slc_836fc175d5568ebdcf0fbe3ae3dfae81c7d59a03fa3b3913b1d5a0dbda197b22"
+      ],
+      "text": "The runtime targets Python 3.10+ and lists roughly 30 LLM providers including native formats (Anthropic, DeepSeek, Gemini, OpenAI), OpenAI-compatible vendors, and local servers (Ollama, vLLM, SGLang) requiring no API key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6340f4b40d39a6ebae702045c6865b9f3c824e9d12c7a3187aa4d03d2a2d2b74",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 592,
+          "line_start": 582,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L582-L592"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 601,
+          "line_start": 596,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L596-L601"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17ebf5536ae74eb7a2eed1e8c41d8ddbabedb40305092c13b0f6d654dc4dc08a",
+        "slc_fed24af6e4652fcf52cca84773f836acf4dd11ce20224edab92e68a31d69ea96"
+      ],
+      "text": "The README marks MCP support as partial: tools are wired but the full client/runtime is still evolving, and roadmap phases 3-4 are in progress with phase 5 pending."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a041c22429b3f898fc6663f9bc8f495341370d26bd4840f4a588de114d90462",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 70,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L69-L70"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 74,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L72-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b5b6de01e34005ec51715ec098c84c6a143e01255139292c79e008c0c401518",
+        "slc_b50a9babf534405d0d3e5762e516916938eccbf41ec59b5b13751e5ed9df0d3e"
+      ],
+      "text": "Requests keep a byte-stable prefix so DeepSeek's prompt cache covers system, tools, and history across turns; /cost is stated to follow DeepSeek's peak/off-peak pricing schedule."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e43de4b7fb7ca21bff6665ba8ea2333da2ead8c78ccaeb2df3cc93f6c3fa145",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 619,
+          "line_start": 617,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L617-L619"
+        },
+        {
+          "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+          "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+          "line_end": 610,
+          "line_start": 607,
+          "path": "README.md",
+          "repository": "agentforce314/clawcodex",
+          "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md#L607-L610"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_397d90e8a5257c409dd21d63290eb2bb63c2f6ea14eaea5489c5f9877f994a98",
+        "slc_5d41f47ccdd18d77d3f31d51dec0493596257b2fd18054c49ecb43c2939f0e54"
+      ],
+      "text": "A native desktop app (clawcodex desktop) shares the same backend, config, and session store as the CLI/TUI, booting its own backend via clawcodex serve with loopback HTTP and WebSocket gateway."
+    }
+  ],
+  "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1041,
+        "path": "README.md",
+        "size": 64521
+      },
+      {
+        "lines": 168,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 8052
+      },
+      {
+        "lines": 614,
+        "path": "FEATURE_LIST.md",
+        "size": 25179
+      },
+      {
+        "lines": 13,
+        "path": "requirements.dev.txt",
+        "size": 386
+      },
+      {
+        "lines": 40,
+        "path": "requirements.txt",
+        "size": 1664
+      },
+      {
+        "lines": 102,
+        "path": "TODOS.md",
+        "size": 9149
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/agent-server.md",
+        "reason": "file-budget",
+        "size": 8349
+      },
+      {
+        "path": "docs/nano.md",
+        "reason": "file-budget",
+        "size": 5700
+      },
+      {
+        "path": "docs/NEWS.md",
+        "reason": "file-budget",
+        "size": 27489
+      },
+      {
+        "path": "docs/workflow-commands-and-ultracode-plan.md",
+        "reason": "file-budget",
+        "size": 7339
+      },
+      {
+        "path": "docs/workflow-engine-port-plan.md",
+        "reason": "file-budget",
+        "size": 39925
+      },
+      {
+        "path": "docs/workflow-engine.md",
+        "reason": "file-budget",
+        "size": 24500
+      },
+      {
+        "path": "docs/guide/SETUP_GUIDE.md",
+        "reason": "file-budget",
+        "size": 5255
+      },
+      {
+        "path": "docs/guide/TESTING.md",
+        "reason": "file-budget",
+        "size": 8789
+      },
+      {
+        "path": "docs/i18n/README_AR.md",
+        "reason": "file-budget",
+        "size": 14020
+      },
+      {
+        "path": "docs/i18n/README_FR.md",
+        "reason": "file-budget",
+        "size": 12906
+      },
+      {
+        "path": "docs/i18n/README_HI.md",
+        "reason": "file-budget",
+        "size": 18536
+      },
+      {
+        "path": "docs/i18n/README_PT.md",
+        "reason": "file-budget",
+        "size": 12511
+      },
+      {
+        "path": "docs/i18n/README_RU.md",
+        "reason": "file-budget",
+        "size": 16555
+      },
+      {
+        "path": "docs/i18n/README_ZH.md",
+        "reason": "file-budget",
+        "size": 43689
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 55772
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7871
+      }
+    ],
+    "omitted_count": 16,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3815,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 22,
+      "complete": false,
+      "omitted": 16,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2534d4b7a44a583b8d24ce37b516b4a1",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 5,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 3,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/agentforce314/clawcodex/4706a57fc29fb6f3512e4162eb9adbe4709a5035/920fad287979953b/manifest.json",
+  "package_id": "pkg_18cd5bcffd2b6dcdbf94955b6f5e8bd548773f7e15d7d9c766e23296aaaec157",
+  "repo": "agentforce314/clawcodex",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "487fad93f7e0d4d605954a7beb8cb84fd23a27fe337dd6713c78ff767521e1de",
+  "snapshot_id": "920fad287979953b",
+  "sources": [
+    {
+      "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+      "git_sha": "bfe2b9eaa4de3fdb96f81784ef3f2102298fdf9a",
+      "lines": 614,
+      "path": "FEATURE_LIST.md",
+      "repository": "agentforce314/clawcodex",
+      "sha256": "8482b214ad37a5c89de00a03a4d790a222b95cacad1bf9cd81ffdf89c5b77f3b",
+      "source_id": "src_dd3bf0c003295617a21ba638b354be47",
+      "stored": "feature_list.md-f84ab4538e81.md",
+      "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/FEATURE_LIST.md"
+    },
+    {
+      "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+      "git_sha": "37bd65ab5ed7085dcdfbe85b7ffb2f3086ed2446",
+      "lines": 1041,
+      "path": "README.md",
+      "repository": "agentforce314/clawcodex",
+      "sha256": "c2aad6c61c59637e78807df72e41c1a28e003a951fb865b75a7207002b7a5663",
+      "source_id": "src_9226b8c15a4055bc9ff0c9e30ea8324a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/README.md"
+    },
+    {
+      "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+      "git_sha": "f5510de061ea4eb98121abb083ae00e848b28afe",
+      "lines": 102,
+      "path": "TODOS.md",
+      "repository": "agentforce314/clawcodex",
+      "sha256": "87e1fcddb4c5fa9c1a1738222d3f756580c0d74411c0ada8778fc974f3146990",
+      "source_id": "src_1c0a144e41ee5670af2a65405bae3d17",
+      "stored": "todos.md-686ce996223e.md",
+      "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/TODOS.md"
+    },
+    {
+      "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+      "git_sha": "047b12ccf71ff438dc456b8653ffef00f1ea6fa8",
+      "lines": 168,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "agentforce314/clawcodex",
+      "sha256": "9ede0720aa0c75d473bc689c4dc30c759b77fb2b7d6fd0506735c986a4f007c9",
+      "source_id": "src_984fe0c908d154af9188e65704f5aebd",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/docs/ARCHITECTURE.md"
+    },
+    {
+      "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+      "git_sha": "09282b3d0018a5e1bfb898d9395969e9f3db9139",
+      "lines": 13,
+      "path": "requirements.dev.txt",
+      "repository": "agentforce314/clawcodex",
+      "sha256": "994231394960040f68db4728720b3dcf3c293e9201d2fb6ff1b6a556c152c663",
+      "source_id": "src_34411c0895c851ba892e90c50c23500e",
+      "stored": "requirements.dev.txt-66bb0bc92455.txt",
+      "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/requirements.dev.txt"
+    },
+    {
+      "commit": "4706a57fc29fb6f3512e4162eb9adbe4709a5035",
+      "git_sha": "31ebd4c30460935b911b77c705de5ddbd6610de0",
+      "lines": 40,
+      "path": "requirements.txt",
+      "repository": "agentforce314/clawcodex",
+      "sha256": "077079dd8c9a63f600363e34fad804e8d728378b926746ea12c5c9cfe3d49bdf",
+      "source_id": "src_d2f4afe488bd544db10d36045a95a050",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/agentforce314/clawcodex/blob/4706a57fc29fb6f3512e4162eb9adbe4709a5035/requirements.txt"
+    }
+  ],
+  "summary": "Selected evidence records: The product exposes a CLI with subcommands including tui, web, login, logout, config, and --version, plus a headless -p/--print mode for non-interactive runs. The interactive UI is a TypeScript Ink TUI that spawns a Python agent-server child and communicates over an NDJSON pipe; running clawcodex with no mode flags launches it.",
+  "superseded_claim_ids": []
+}

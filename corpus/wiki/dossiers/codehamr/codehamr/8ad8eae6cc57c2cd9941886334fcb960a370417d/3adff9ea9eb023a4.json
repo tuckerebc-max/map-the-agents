@@ -1,0 +1,420 @@
+{
+  "applied_operation_id": "op_2ac18e71bbde44e7aa1191650fd2bed7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_06731ae1bf9be4a80775b4297bb526d6fb1627e95041a92d7607ce640c091bd7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_568c423ce3247438d4230e4583100c74cddb0342abb85580acd706777e13ef3e"
+      ],
+      "text": "codehamr is described as a minimal coding agent for the terminal, built for local LLMs and also able to run against OpenAI-compatible endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f44b5b0405ec7c5b12c29e4b696279af46c3380db6d592b93f5372b7d7f49a5c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L15-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41ae4455376efc037d4e064e3811999eeffafd8928fcf9906549c9a1624db19d"
+      ],
+      "text": "The design deliberately favors simplicity: three slash commands, one embedded system prompt, and no router, sub-agents, skill system, or MCP."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_975914a3a92def0d0398365969d5760cb849511bb6ab981071432ed73fa3c5ba",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 23,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L18-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dd7942eefe3d8d8432a8bf8e2319709b4563be26b047814c9695daca545b157"
+      ],
+      "text": "The agent runs a single plain loop: it calls tools until the work is done, then replies, rather than using a more elaborate orchestration scheme."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4d3375c1a8ab72fe4dc67d439b4a846c9c88e7a60c546a2603234128347dc3e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 23,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L18-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dd7942eefe3d8d8432a8bf8e2319709b4563be26b047814c9695daca545b157"
+      ],
+      "text": "The agent works with four tools — bash, read_file, write_file, and edit_file — investigating the project directly rather than guessing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2175083c3dcb190b435d97a079ae4d1c8d53512ea22eeb5b7e106169d2c8cc18",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_068ca43f83024cbd102d531968856a5da15a8e3b80f2727d1cb803a5587ea2c9"
+      ],
+      "text": "The /models command lists configured model profiles, and /models <name> switches the active profile."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_859bdae9fd107b26ea877b737486d593b395bcf705a276877fdb214df15d0010",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L49-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c0f1ae4a7e2da972c8b3abc80a20b0e82d552b9bc57bc9dac9e63687d6250ec"
+      ],
+      "text": "On first run codehamr seeds .codehamr/config.yaml with a local profile (Ollama, vLLM, LM-Studio) and a hamrpass profile; the system prompt is embedded in the binary, not stored on disk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cbf01476c59872491735309e1c80dc42314bd89480d130ddac832fea7d976d21",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 55,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L54-L55"
+        },
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 79,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L63-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3976d6dd4f8d972dba600aea69e952b86c5f92c85916417c317b6ed1aa525718",
+        "slc_44f98627139cb851a0d032a484eda9f6efdc7e158e3aee2aa537f559170ce7f9"
+      ],
+      "text": "Configuration supports OpenAI-compatible endpoints; the example config defines local, openai, and hamrpass profiles with llm and url fields, and the local and openai profiles also carry key and context_size fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d65741c07a4ebb1b146c5b58bde38272e132c77810c32373f05e176f6784b9f",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08b71e3fa19fe45d82c95e4b157f3c6ef2b0186ca651c56e7e48da0ff4863dc3"
+      ],
+      "text": "On Windows the bash tool requires a POSIX shell (/bin/sh), so the agent should be run inside WSL2 or a devcontainer rather than from a bare cmd/PowerShell host."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ac704a82a26b8e0a4489f382f603a83766291ab2e253241b2d269c3a8642a83",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b016e98353d29424a736f09f004cbfb8ca175896436e6c0d306872ae8ed2cbe5"
+      ],
+      "text": "Because Ollama's /v1 endpoint reports no context-window header, codehamr packs to the configured context_size; if the server honors less, it silently front-truncates and the agent can lose its system prompt and earlier tool results mid-task with no error."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_684300096fdef39891470e9b9b7cbcd1718f7cd06b8b0b6f8716605eda7c3eb8",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b80d6d70de8ac0a994bfbb2dc0b0a317ab40b1e2d0092fbf45bf700e0c88596"
+      ],
+      "text": "The README warns that the agent runs model-generated shell commands with full filesystem access and recommends running it inside sandboxes such as devcontainers or isolated VMs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b7b754c0f0e3292dda630170bf04de8fa048a7ad9ce165ac5a154bc8a52908c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L95-L95"
+        },
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 23,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L18-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47f0ddd87103ca5366a44da32b692862d81a8b16ae0a156bcba18a29d2dc857f",
+        "slc_9dd7942eefe3d8d8432a8bf8e2319709b4563be26b047814c9695daca545b157"
+      ],
+      "text": "Self-verification (running tests, compiling, loading the page) is instilled by the system prompt as a habit rather than a blocking gate; when a check cannot run, the agent reports 'unverified:' instead of pretending success."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e76eaafdbf6155822d2ddf78e24f24e3c3e3fad2ccae972dc11d971717dc6055",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 111,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L108-L111"
+        },
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L119-L119"
+        },
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 117,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L113-L117"
+        },
+        {
+          "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+          "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "codehamr/codehamr",
+          "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md#L123-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_136054d061bcb919d98e838f6d155c2e17605682d68b051964d0c93362fa7434",
+        "slc_1a7bdbe76bb2106234b640c76dbea26cd2c11dea73466178cd76a128be11a926",
+        "slc_b36204186afef20fa660ef20f4fa2f1775cafdef1f886af9ca79736cec0754d2",
+        "slc_ec8c50cd38570a7606434bfa5c1769fdb70bd2bd553270026f990038d608537d"
+      ],
+      "text": "The project is MIT licensed and open source; HamrPass, a hosted endpoint with tuned model defaults, is optional and will only be built if waitlist demand appears."
+    }
+  ],
+  "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 133,
+        "path": "README.md",
+        "size": 7329
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 63,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_6176470a0b6f56bb889fac2768fa0261",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/codehamr/codehamr/8ad8eae6cc57c2cd9941886334fcb960a370417d/3adff9ea9eb023a4/manifest.json",
+  "package_id": "pkg_797d4158911d289a1eb8ea5c431079f1c6e664997947328c7626b8fb67ac7878",
+  "repo": "codehamr/codehamr",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "115a2c4181ffb796eb6bee86efce2494bcc596598f82ae64f2fed88e4add604e",
+  "snapshot_id": "3adff9ea9eb023a4",
+  "sources": [
+    {
+      "commit": "8ad8eae6cc57c2cd9941886334fcb960a370417d",
+      "git_sha": "642c22d8ce7a386107dee288a996bea4f8dff7b6",
+      "lines": 133,
+      "path": "README.md",
+      "repository": "codehamr/codehamr",
+      "sha256": "b604f09f74183b0156227a794ce75cde0c57d320547142db4adfdffd0f1d813f",
+      "source_id": "src_8db6fa9a716e500ca7ac8c89403b0dc6",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/codehamr/codehamr/blob/8ad8eae6cc57c2cd9941886334fcb960a370417d/README.md"
+    }
+  ],
+  "summary": "The snapshot is README-only documentation for codehamr, a minimal terminal coding agent for local LLMs and OpenAI-compatible endpoints, describing a single tool-calling loop, four tools, YAML model profiles, and several documented limitations. No code or contributor-workflow slices are present.",
+  "superseded_claim_ids": []
+}

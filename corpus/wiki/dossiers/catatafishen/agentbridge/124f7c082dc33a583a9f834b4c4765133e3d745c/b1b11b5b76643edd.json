@@ -1,0 +1,970 @@
+{
+  "applied_operation_id": "op_bd05abd910b94a1daac291222a892953",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed4818d03f7661d2cfd36990f33326d945a6494211b133a47371424f74092505",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "ba5c6e5ae6fc9f934b49d9853ec50afadb3dadbe",
+          "line_end": 17,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/README.md#L14-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_335167a9a25b010079160cc1ef58b27bb378fcac64cfaa59126901f691cd79cc"
+      ],
+      "text": "AgentBridge is a JetBrains IDE plugin that bridges AI coding agents to IntelliJ platform APIs through 120+ native MCP tools, letting agents use inspections, refactorings, test runner, build system, and Git."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b39b57cee49e9ff1b17db2ac48e16e7a2b3d66fd2da8d38db51a63fe42cb2f02",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L107-L109"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 105,
+          "line_start": 105,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L105-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c30c9db1d20d4575ce69c15b2b0d9fd75a1e8863cf61d492d9c415929d069414",
+        "slc_ca8ea788abf81364e82e435ea3f325043e6491a3c3a93cfa0c4c0121b4743a30"
+      ],
+      "text": "PsiBridgeService is a project-level HTTP server exposing 92 IntelliJ-native MCP tools; it starts on a dynamic localhost port and accesses PSI, VFS, Document API, and Git4Idea."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7339f8d9961d29657d3a874ee10528a3ccee764aa73bc3f3561efb95c4fd9cea",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 86,
+          "line_start": 82,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L82-L86"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L77-L80"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L75-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_95dc6f7e8122b6b7360159f3e795e9b0bb68684f71695119547820693be50fba",
+        "slc_9911a6a246ace8552144e271785673409463dacc23ef0e2aa68495939e8dda88",
+        "slc_a2bdc34ab2cd678e95a99518912665245c10d8ab7c0adb51c340fcb40474f142"
+      ],
+      "text": "ActiveAgentManager is a project-level service that stores the active AgentProfile, owns the AbstractAgentClient, and handles client start/stop/restart/dispose."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8220283b6f24daf8fa48bee41bdffcb9db8036298ee3188d63201bfaf39d9bbc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L113-L113"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 129,
+          "line_start": 124,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L124-L129"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 118,
+          "line_start": 115,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L115-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d9e72f44f8668c0d3014953a490d759453ea83137077b0b3f4070147200bd5ce",
+        "slc_e8ff59d763c8eb4a173ffce9d3e91ade0adbea71a1ad45df49c3848823236c3f",
+        "slc_ef10790cc8ea9ec6d44b11bff233a4e638723cebd9e2ecb67bdd0ce2c8ff0352"
+      ],
+      "text": "Agent clients extend AbstractAgentClient, which provides session management (create, prompt, cancel), model selection, event streaming, and connection lifecycle; ACP clients include CopilotClient, JunieClient, KiroClient, and OpenCodeClient."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12d51da79cca6258d6bdcead0501445207a230da1473ff296b1658fc725cadfb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L122-L122"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 162,
+          "line_start": 160,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L160-L162"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 45,
+          "line_start": 36,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L36-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_452a4782b09cd06308e2e1fdb8dbb10fc69fb308b5dc02d012bc28e2f99f364b",
+        "slc_a057c6e0841bd49350dd4746c24c49c0b61158a33cdefe6adc224a0f0d2d8956",
+        "slc_b3516efbd6bbe00770b927e158b9441c3b654c892803ffb480fb4e03f702e99e"
+      ],
+      "text": "The plugin communicates with agent CLIs over the Agent Client Protocol (JSON-RPC 2.0 via stdin/stdout); the MCP server JAR receives tool calls via stdio and forwards them to the PSI bridge over HTTP POST on localhost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b755d2d5c4dfc5642a3599e739e4b79e063d95f4e0e5639d93e6ff5937931eb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 261,
+          "line_start": 259,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L259-L261"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 162,
+          "line_start": 160,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L160-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ca04c502fa1edd0380e4fcce2f76a0af5b80e7aaa423f774f069b88e94d15cc",
+        "slc_a057c6e0841bd49350dd4746c24c49c0b61158a33cdefe6adc224a0f0d2d8956"
+      ],
+      "text": "The bridge port is shared via a file at ~/.copilot/psi-bridge.json, which the MCP server reads to reach the in-IDE HTTP service."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d790359331b940c57cec521de6257da3d43a38b8feff8d4d171fe6f4e74db636",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 235,
+          "line_start": 231,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L231-L235"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+          "line_end": 227,
+          "line_start": 225,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md#L225-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01ab29bda533d7cdfc1a6e8a2b421a20dc1d5e381de85d708caddb05b76867ad",
+        "slc_0c369b8e91b3b9dd3dddd80ac8c469316a6280af463511930c2a9c9292d29c0d"
+      ],
+      "text": "Tool permissions support three modes: deny (never execute), ask (prompt user for approval), and allow (execute without prompt); sensitive operations like force git push, shell commands, file deletions, and out-of-root operations always require approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b76aa0aae8156d0a5b9ddf1a202b2192834f734a633e1001149ec94f2d921dfe",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 245,
+          "line_start": 230,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L230-L245"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 249,
+          "line_start": 247,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L247-L249"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 228,
+          "line_start": 228,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L228-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_290060b5f476a78876b8c2b6acdf90a2a985e1529a181853a712e36876470d8b",
+        "slc_82b9c22b5c4af4457503d74c05a97fe8a250d005dfc3ca82245532f6cd8cb48b",
+        "slc_a78409278c98b0c52d3c228f96e4160950342c1647a86837fc2cbeb6bf775e34"
+      ],
+      "text": "For Copilot, built-in file operations are denied so all writes route through IntelliJ's Document API; denied permission kinds include edit, create, read, execute, and runInTerminal, with an auto-retry prompting the agent to use write_file instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0cffae3b4741825d2b7ae4b0ab69b235baf9102e1c5a22e4a31b1983a24692e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 271,
+          "line_start": 271,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L271-L271"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 265,
+          "line_start": 265,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L265-L265"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 269,
+          "line_start": 267,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L267-L269"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ac3359011409a8a17e3c9f197c3dc5796b53b057e0301765e899e4db26dbab2",
+        "slc_ca0202192fb0c6c7e19f8648365dbf1fb632ade04a91501a15f4671f475e0d2f",
+        "slc_d3f7b5f92dc395414d2ea0be55930ffef6bf8b5e85d8c39000690a4534fc8da1"
+      ],
+      "text": "Every file write via write_file triggers document commit, import optimization, and reformatting inside a single undoable command group on the EDT."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_67a1bf0556e9e36bd2a6326ed8f753243c91478c542bafe7076ac745e34a7b72",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "ba5c6e5ae6fc9f934b49d9853ec50afadb3dadbe",
+          "line_end": 26,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/README.md#L21-L26"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "ba5c6e5ae6fc9f934b49d9853ec50afadb3dadbe",
+          "line_end": 72,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/README.md#L71-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d379f1d662d4a646699bcb905a8bd3cba21d68881221dcd4371e641ea46595c",
+        "slc_d7629b1b1c164da45cc2428d32a4e997cce878ba35906867e8d3cc41299e2807"
+      ],
+      "text": "The plugin supports nine agents (Copilot, Claude Code, Codex, Kiro, Junie, OpenCode, Hermes Agent, Mistral Vibe, Goose) switchable with one click, each with its own connection settings, tool permissions, and custom instructions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ae6b247be1606d74b118c3c7b06de7a63f3fbb1e482cb2f4141326f43baafd3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L7-L10"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 15,
+          "line_start": 12,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L12-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_888d4df86bb91d7a4e1f24f8a9b2efafd4a6aff1eacb1f4023601d5d1ad4ad96",
+        "slc_e966c492891f1535bfb23ad5e48273ae3cff42c89dd169aa91065f11dacd5635"
+      ],
+      "text": "Development requires JDK 21 (Gradle JVM pinned via gradle.properties) and an installed, authenticated GitHub Copilot CLI; the Gradle wrapper JAR is not checked into the repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2afd9d890f85af613bd60ce8a308e9b5930ea14e3d8641feeee40df233aa7d98",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 220,
+          "line_start": 218,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L218-L220"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 216,
+          "line_start": 213,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L213-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28ab7843636b5f4922a2c63b2374b2fe56efa523dd9885d1e1ecd4605cb7813b",
+        "slc_bf609b5fb0789ead11953d84ea8740691bddc75a8d023cc751671af2b5929000"
+      ],
+      "text": "GitHub Copilot surfaces ACP resource references only as tagged-file metadata without content, so the plugin appends referenced file content as plain text after the user's message as a workaround."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a0096434ea9902cf184244dc53bbf0f4ca0357bb2109aee4f0ea8295c34a1e6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 296,
+          "line_start": 281,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L281-L296"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 277,
+          "line_start": 275,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L275-L277"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 304,
+          "line_start": 300,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L300-L304"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_693a66703121d26f7239d9a88502d69f8000a7052447e9403f3aac52c2d129b8",
+        "slc_93b96a8cfd4027491452e61fe94f49c1b60e4e496f5e4bfbe5c10f7427d972ef",
+        "slc_bbc7ae7a30bba9f62be0fb4c265b90c494aee02b57cfd1f0caef80e7c1f908da"
+      ],
+      "text": "A prolonged EDT freeze (30+ seconds) can permanently stall the JCEF off-screen renderer; defenses include an EdtFreezeRecovery heartbeat monitor and a 2-second cooldown on file-open navigations to prevent cascading VCS git log/blame operations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19242d54bb7e1cdfdaef9042ca269d2d7c1ed5697ce38e39aab5664405572981",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L40-L42"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 185,
+          "line_start": 180,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L180-L185"
+        },
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "DEVELOPMENT.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md#L33-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1de04c44696923ca78508810db656954778ce7faa643b545a8fbc19f3b4d16b1",
+        "slc_1f387ebdc446e5de9e14a7633b618b9a0c8504ce20c1558b3791645d5289de9c",
+        "slc_7cc5f35a88f418cebe9aa5052981a892c94a448001fcf22603b138f08ffbf60f"
+      ],
+      "text": "Repository development practice: tests run via Gradle (./gradlew test, :plugin-core:test, :mcp-server:test, with -Dinclude.integration=true for integration tests), and the project builds two plugin ZIPs (plugin-core and plugin-experimental) via buildPlugin tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2c9f88286e0deded5400c6cd97b75690e3b0527d5808ef103269b8ee36a9be0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+          "git_sha": "ba5c6e5ae6fc9f934b49d9853ec50afadb3dadbe",
+          "line_end": 49,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "catatafishen/agentbridge",
+          "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/README.md#L45-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4904d4204f4df10f1b639b48913ad9fa713d675aaeb22f661f55a736c9968f1a"
+      ],
+      "text": "Repository development practice: the maintainer reviews agent-authored changes mostly alone and seeks collaborators, believing important agent-made changes should get at least two pairs of human eyes."
+    }
+  ],
+  "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 399,
+        "path": "README.md",
+        "size": 21262
+      },
+      {
+        "lines": 239,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 6856
+      },
+      {
+        "lines": 317,
+        "path": "docs/PERMISSIONS.md",
+        "size": 11851
+      },
+      {
+        "lines": 774,
+        "path": "DEVELOPMENT.md",
+        "size": 36606
+      },
+      {
+        "lines": 384,
+        "path": "FEATURES.md",
+        "size": 20528
+      },
+      {
+        "lines": 183,
+        "path": "INSTALLATION.md",
+        "size": 4406
+      }
+    ],
+    "omitted": [
+      {
+        "path": "QUICK-START.md",
+        "reason": "file-budget",
+        "size": 2712
+      },
+      {
+        "path": "ROADMAP.md",
+        "reason": "file-budget",
+        "size": 3571
+      },
+      {
+        "path": "TESTING.md",
+        "reason": "file-budget",
+        "size": 9059
+      },
+      {
+        "path": "TODO.md",
+        "reason": "file-budget",
+        "size": 80
+      },
+      {
+        "path": "docs/A2A-INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 32455
+      },
+      {
+        "path": "docs/ACCEPTED-API-WARNINGS.md",
+        "reason": "file-budget",
+        "size": 10916
+      },
+      {
+        "path": "docs/ACP-TOOL-INTERCEPTION.md",
+        "reason": "file-budget",
+        "size": 7286
+      },
+      {
+        "path": "docs/AUTH-HANDLING.md",
+        "reason": "file-budget",
+        "size": 7159
+      },
+      {
+        "path": "docs/AUTHENTICATION.md",
+        "reason": "file-budget",
+        "size": 1371
+      },
+      {
+        "path": "docs/BILLING.md",
+        "reason": "file-budget",
+        "size": 5964
+      },
+      {
+        "path": "docs/BOT-IDENTITY-HOOKS.md",
+        "reason": "file-budget",
+        "size": 6399
+      },
+      {
+        "path": "docs/BRANCH-USAGE-STATS.md",
+        "reason": "file-budget",
+        "size": 1649
+      },
+      {
+        "path": "docs/CI-SECURITY.md",
+        "reason": "file-budget",
+        "size": 6420
+      },
+      {
+        "path": "docs/CONVERSATION-DB-SCHEMA.md",
+        "reason": "file-budget",
+        "size": 7791
+      },
+      {
+        "path": "docs/CONVERSATION-PERSISTENCE.md",
+        "reason": "file-budget",
+        "size": 13359
+      },
+      {
+        "path": "docs/copilot-tool-use-reasoning.md",
+        "reason": "file-budget",
+        "size": 9696
+      },
+      {
+        "path": "docs/DATABASE-TOOLS.md",
+        "reason": "file-budget",
+        "size": 7402
+      },
+      {
+        "path": "docs/DESIGN-PRINCIPLES.md",
+        "reason": "file-budget",
+        "size": 7288
+      },
+      {
+        "path": "docs/GROUNDED-MEMORY.md",
+        "reason": "file-budget",
+        "size": 20038
+      },
+      {
+        "path": "docs/IDE-NATIVE-CODING-AGENTS.md",
+        "reason": "file-budget",
+        "size": 12173
+      },
+      {
+        "path": "docs/INLINE-DIFF-REVIEW.md",
+        "reason": "file-budget",
+        "size": 29106
+      },
+      {
+        "path": "docs/INTERACTIVE-POPUP-HANDLING.md",
+        "reason": "file-budget",
+        "size": 12532
+      },
+      {
+        "path": "docs/JUNIE-CLI-TOOL-FILTERING.md",
+        "reason": "file-budget",
+        "size": 3021
+      },
+      {
+        "path": "docs/JUNIE-TOOL-WORKAROUND.md",
+        "reason": "file-budget",
+        "size": 12527
+      },
+      {
+        "path": "docs/KNOWLEDGE-GRAPH-UI-WIREFRAME.md",
+        "reason": "file-budget",
+        "size": 19482
+      },
+      {
+        "path": "docs/KNOWLEDGE-GRAPH.md",
+        "reason": "file-budget",
+        "size": 8341
+      },
+      {
+        "path": "docs/MCP-ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 20916
+      },
+      {
+        "path": "docs/MCP-TOOL-HOOKS.md",
+        "reason": "file-budget",
+        "size": 37299
+      },
+      {
+        "path": "docs/MEMORY-IMPROVEMENTS.md",
+        "reason": "file-budget",
+        "size": 16391
+      },
+      {
+        "path": "docs/MESSAGE-STORAGE-FORMAT.md",
+        "reason": "file-budget",
+        "size": 21811
+      },
+      {
+        "path": "docs/MULTI-IDE-COMPATIBILITY.md",
+        "reason": "file-budget",
+        "size": 20575
+      },
+      {
+        "path": "docs/NOTEBOOK-TOOLS.md",
+        "reason": "file-budget",
+        "size": 6426
+      },
+      {
+        "path": "docs/NUDGE-ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 7130
+      },
+      {
+        "path": "docs/PAUSE-RESUME.md",
+        "reason": "file-budget",
+        "size": 4186
+      },
+      {
+        "path": "docs/RETRY-PROMPT-MECHANISM.md",
+        "reason": "file-budget",
+        "size": 7699
+      },
+      {
+        "path": "docs/RUN-CONFIG-TYPE-DISCOVERY.md",
+        "reason": "file-budget",
+        "size": 8330
+      },
+      {
+        "path": "docs/SCORECARD-SETUP.md",
+        "reason": "file-budget",
+        "size": 2536
+      },
+      {
+        "path": "docs/SEMANTIC-MEMORY.md",
+        "reason": "file-budget",
+        "size": 33949
+      },
+      {
+        "path": "docs/SESSION-RESUME.md",
+        "reason": "file-budget",
+        "size": 49644
+      },
+      {
+        "path": "docs/tool-execution-correlation.md",
+        "reason": "file-budget",
+        "size": 10074
+      },
+      {
+        "path": "docs/TOOL-GUARDRAILS.md",
+        "reason": "file-budget",
+        "size": 6457
+      },
+      {
+        "path": "docs/bugs/CLI-BUG-556-WORKAROUND.md",
+        "reason": "file-budget",
+        "size": 23310
+      },
+      {
+        "path": "docs/bugs/COMMIT-NOT-FOUND-IN-LOG-BUG.md",
+        "reason": "file-budget",
+        "size": 22282
+      },
+      {
+        "path": "docs/bugs/FOCUS-STEALING-BUG.md",
+        "reason": "file-budget",
+        "size": 34714
+      },
+      {
+        "path": "docs/bugs/issue-794-bug-inventory.md",
+        "reason": "file-budget",
+        "size": 44355
+      },
+      {
+        "path": "docs/bugs/OPENFILE-TRANSACTIONGUARD-WARNING.md",
+        "reason": "file-budget",
+        "size": 4927
+      },
+      {
+        "path": "docs/bugs/SCREEN-TEARING-BUG.md",
+        "reason": "file-budget",
+        "size": 50093
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 32559
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5481
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7217
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 727
+      }
+    ],
+    "omitted_count": 51,
+    "omitted_slices": 58,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1517,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 57,
+      "complete": false,
+      "omitted": 51,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_8018ad49c4805c29a9674ab5b1bc5ec5",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/catatafishen/agentbridge/124f7c082dc33a583a9f834b4c4765133e3d745c/b1b11b5b76643edd/manifest.json",
+  "package_id": "pkg_00d6795f243e95910ed5de6494720bc1822e79c2df7c843ea31be0eab37a5840",
+  "repo": "catatafishen/agentbridge",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "afcfe6a3cac5a3019aa05de360cb13f8ab1bab4ee98301f363749e61a447bae4",
+  "snapshot_id": "b1b11b5b76643edd",
+  "sources": [
+    {
+      "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+      "git_sha": "2a5a50a4070fbf21189e70f32596a0fe35847b19",
+      "lines": 774,
+      "path": "DEVELOPMENT.md",
+      "repository": "catatafishen/agentbridge",
+      "sha256": "06c56b27b3a223e76ce30b4a7713cb8e7e0e707c33e4194a6ecf9c2f963e703f",
+      "source_id": "src_2c1a93c3237959a99d58abdbf4a9cf2c",
+      "stored": "development.md-fc2a310fcfed.md",
+      "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/DEVELOPMENT.md"
+    },
+    {
+      "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+      "git_sha": "314521d185b0cb886fbc4911db597a074d4e2db3",
+      "lines": 384,
+      "path": "FEATURES.md",
+      "repository": "catatafishen/agentbridge",
+      "sha256": "73d466853425f4f4448e47f79d75fe02810e9b3a1d8f6b57b5d7af845ad66823",
+      "source_id": "src_7dc40c288a345f3baa1a0231277eb2b5",
+      "stored": "features.md-0e40b74646ed.md",
+      "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/FEATURES.md"
+    },
+    {
+      "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+      "git_sha": "d93004c54feef46837ee7df49e3e1288c5ebf8cd",
+      "lines": 183,
+      "path": "INSTALLATION.md",
+      "repository": "catatafishen/agentbridge",
+      "sha256": "68e7761ed17a1b9ece4d8e77062a50ad10341635a80ba9a27cac0a3467110b22",
+      "source_id": "src_752f18cec19a5b1a9a9ce8843e517e56",
+      "stored": "installation.md-908320a79e08.md",
+      "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/INSTALLATION.md"
+    },
+    {
+      "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+      "git_sha": "ba5c6e5ae6fc9f934b49d9853ec50afadb3dadbe",
+      "lines": 399,
+      "path": "README.md",
+      "repository": "catatafishen/agentbridge",
+      "sha256": "45c1ee1d04ebcc4492266bfdf939db77da9d96b3ff79ab7db614f048d8590d0b",
+      "source_id": "src_ecdb65c3133256878bccd2456c14aa13",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/README.md"
+    },
+    {
+      "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+      "git_sha": "7619c0d6ac75e1ea02785bbefe24c3863fcd1e74",
+      "lines": 239,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "catatafishen/agentbridge",
+      "sha256": "1fbc6dabf80e45d0ecfaa2d024e3662183c039365ba3f8a73bc6446bbaec8293",
+      "source_id": "src_51f3220a2ed759aeba46239e52e7d750",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/ARCHITECTURE.md"
+    },
+    {
+      "commit": "124f7c082dc33a583a9f834b4c4765133e3d745c",
+      "git_sha": "98f1e66098d34f14acb6d84266809630320614ca",
+      "lines": 317,
+      "path": "docs/PERMISSIONS.md",
+      "repository": "catatafishen/agentbridge",
+      "sha256": "8ca6e2d23b6486b73a327cc9dcfeb56c3c56ef50c1652eafd9e12f7b4b7f53b4",
+      "source_id": "src_b0e59ce84ede5c8596d08edb7a8332d1",
+      "stored": "permissions.md-4b5aabb82f1f.md",
+      "url": "https://github.com/catatafishen/agentbridge/blob/124f7c082dc33a583a9f834b4c4765133e3d745c/docs/PERMISSIONS.md"
+    }
+  ],
+  "summary": "AgentBridge is a JetBrains IDE plugin that connects AI coding agents to IntelliJ platform APIs via 120+ MCP tools, using ACP/JSON-RPC over stdio to agent CLIs and an HTTP bridge to an in-IDE PSI service. Evidence covers architecture, agent support, permissions, and development workflows. Evidence coverage: 150 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

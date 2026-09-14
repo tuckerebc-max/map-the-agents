@@ -1,0 +1,585 @@
+{
+  "applied_operation_id": "op_3d7f1c119f1c4814a29d11f758b368c6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_67acda3a4f656d110d3cc1f516153c97d1261e1600b7139d0e7939c04e5e2f32",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "2c1622da884a6b15b108f2f47eaa99b1da8ff58d",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/README.md#L3-L7"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "2c1622da884a6b15b108f2f47eaa99b1da8ff58d",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/README.md#L79-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b5d2750d1162877aa8328b0c27c47c17981fb6d68120929c268294a783537b21",
+        "slc_e6a689bbbb66531d277cf3e321b4e813a888b4d0a7f00151268fadd7912ad363"
+      ],
+      "text": "sandboxd is an open-source, self-hosted AI app builder: a prompt causes a coding agent to build a real app in an isolated sandbox on the user's server, each app live at a preview URL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25c10b740f7138f0607433ae782c7879e69fb45e395fa2cecc99a2d2eec56cd4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 65,
+          "line_start": 48,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L48-L65"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 28,
+          "line_start": 12,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L12-L28"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 70,
+          "line_start": 68,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L68-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ddf3a6f61bcdfadb59489d7420b114a474ca3aeed49557f3b9223bbe8f91d93",
+        "slc_9a795d59d3793ee8f47ef253d1a0852b4cfe0982f445dc6a1a20a6dd0b337870",
+        "slc_d798dec3e57b1a84bf379842b1eb07d44f5c7bea483c67a71252d4497fb87e96"
+      ],
+      "text": "The system is a single Go control-plane binary that shells out to the Docker CLI (no SDK), fronted by Traefik for preview routing, with SQLite (WAL) as the source of truth and an in-sandbox supervisor called runtimed baked into the base image."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8cbd2e7199062aab13b507b0bf4591f3c4747abd761fb8f1efbf2bba847c7ed5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 128,
+          "line_start": 102,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L102-L128"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "65e00df648b6f93d5f5c96397d78f1a392321ced",
+          "line_end": 100,
+          "line_start": 97,
+          "path": "AGENTS.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/AGENTS.md#L97-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50f6c446799329b10e5b42121b0f0cea518017e4ce229f94ab77a8c3b59ee002",
+        "slc_8111bc65ed4f56804485bfa66ecca51429edcd5c8db5aa3c2f78608a9849e8d1"
+      ],
+      "text": "Agent credentials never enter a sandbox: a control-plane-side auth proxy holds the real keys and injects Authorization/X-Api-Key on the wire, giving the sandbox only a base URL and a dummy key; credential-shaped env vars are scrubbed from agent processes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39193b384bd8514484a026e19972e97238779c8b5b22456acf87ff3b40d3c7c5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 234,
+          "line_start": 224,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L224-L234"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bcaa90d1a4ea4625cbea6e0c5a15285d95cf9b09afd2a7316b588904b160c933"
+      ],
+      "text": "Each sandbox exposes exactly one public preview endpoint (the manifest's web.port); HTTP, WebSocket upgrades, and SSE all work on that single port, while multi-port apps are not reachable on a second port (multi-port is roadmap, not current behaviour)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d23df24be027342632044db5df6a1ad4e1f3468865c2175e324ea82e033ae1a6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 167,
+          "line_start": 161,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L161-L167"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3184890d4358653ae3abd680f025232fb4a2bdc79618effe57b17823a355784b"
+      ],
+      "text": "Sandboxes run under hardened runc with all capabilities dropped, no-new-privileges, a read-only rootfs with tmpfs /tmp, a hard memory ceiling, pids limit, and fd ulimits; the threat model is authenticated users running their own code, not hostile multi-tenancy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb1ea4d0c150f30055784d8e55d2a215367413a8720316182b7714ca95760e5f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 65,
+          "line_start": 48,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L48-L65"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 157,
+          "line_start": 151,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L151-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ddf3a6f61bcdfadb59489d7420b114a474ca3aeed49557f3b9223bbe8f91d93",
+        "slc_eb2b794df89de5c11d3b98f61a5a9152b1c6c87922350804848230c2e5434666"
+      ],
+      "text": "The control plane runs an idle reaper that stops sandboxes past an idle threshold and a pressure reaper that stops sandboxes when host memory is low; a wake path starts a stopped container on the first preview request and serves a warming page."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39b6b7a89fcb55dc055d665d7f35047a2b89091a28d718484b734e9f615865f9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 65,
+          "line_start": 48,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L48-L65"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 179,
+          "line_start": 178,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L178-L179"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 176,
+          "line_start": 171,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L171-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ddf3a6f61bcdfadb59489d7420b114a474ca3aeed49557f3b9223bbe8f91d93",
+        "slc_8dfda5094e337126cd5a1c8d77011849f3c9f6beee0ad48a98f316eaeb8f9490",
+        "slc_e6400749a91ba1a968ffda78da997bd8a74df96cc78e905d1401cbb6b9d5fa63"
+      ],
+      "text": "Workspaces live under SANDBOXD_DATA_DIR/workspaces/<id> as bind mounts and survive stop and reboot; control-plane state is a SQLite file; the container writable layer is none (read-only rootfs) and /tmp is tmpfs, so only /home/sandbox is writable in-sandbox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_468c5c1ae1ae6b478fc7ff3d1c29c1f008e0c5d7059cd5c600a6781644b11068",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "2c1622da884a6b15b108f2f47eaa99b1da8ff58d",
+          "line_end": 162,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/README.md#L159-L162"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "2c1622da884a6b15b108f2f47eaa99b1da8ff58d",
+          "line_end": 166,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/README.md#L164-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_308153086e5efa7eb323d68d09951b80c176dc81640c6b6c96b73de8afa39cce",
+        "slc_9440681256107780a727c90ccbdb3e64ce49fa81f2a4368c1aa4e0d01beaf62f"
+      ],
+      "text": "Running sandboxd requires Docker plus the Compose plugin and git on Linux (macOS via Docker Desktop is best-effort), runs natively on amd64 and arm64, and installs via a one-line curl script."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75b5815b0090f20052326fae8ec7601288a8ef2a5e94d455fa4506bd6e8514b8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "2c1622da884a6b15b108f2f47eaa99b1da8ff58d",
+          "line_end": 282,
+          "line_start": 279,
+          "path": "README.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/README.md#L279-L282"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_455565c864a7b48753ee5d65de5e5a28ec3232d45aa4018751a106fb2f3e2ac4"
+      ],
+      "text": "The project is beta 0.x: isolation is containers rather than VMs, it is single-server, API auth is off by default, and breaking changes are expected before 1.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27c2cdae83c088c029611f5af0bc7b75dd52ee21d0bfd1d820ef60ac1e2159b7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 220,
+          "line_start": 210,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L210-L220"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+          "line_end": 244,
+          "line_start": 238,
+          "path": "ARCHITECTURE.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md#L238-L244"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_944c5d1a48d7c999e2fd0df7f5f4f4958687884d1e9fd422777101fa517dff1f",
+        "slc_cbd91ba60a590bf33f54c3deb782c58013b89338a4461f69936005f3851ce431"
+      ],
+      "text": "Documented trade-offs include no per-workspace disk quota, default-allow unlogged egress, one instance-wide base image with no per-app image selection, experimental snapshots on directory storage, and no in-sandbox service layer for Postgres/MySQL/Redis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e00752f04b3c9ba228ac94d7b44c043cd359127834ca14226a42ee9322f09d6e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "65e00df648b6f93d5f5c96397d78f1a392321ced",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "AGENTS.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/AGENTS.md#L3-L6"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "65e00df648b6f93d5f5c96397d78f1a392321ced",
+          "line_end": 31,
+          "line_start": 23,
+          "path": "AGENTS.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/AGENTS.md#L23-L31"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "65e00df648b6f93d5f5c96397d78f1a392321ced",
+          "line_end": 145,
+          "line_start": 139,
+          "path": "AGENTS.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/AGENTS.md#L139-L145"
+        },
+        {
+          "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+          "git_sha": "65e00df648b6f93d5f5c96397d78f1a392321ced",
+          "line_end": 128,
+          "line_start": 119,
+          "path": "AGENTS.md",
+          "repository": "tastyeffectco/sandboxd",
+          "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/AGENTS.md#L119-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22f64ff1032fd050924606b6c7e493962c60339332fd43ea04e6a0099ac5dd4d",
+        "slc_9451486a9028b234f335f3e02703d06b30abf97a2422b4f36326a1dac2c498ad",
+        "slc_d88349d9b241dd8acb2cbd438fed1fb4ead611963ad81aea9736bca8bb6f8139",
+        "slc_e11f5d5ebbfc17d9d8e6ef6acf76923779d39e7aeead707b0d03c641120f7c37"
+      ],
+      "text": "Repository development practice: AGENTS.md is a copy-pasteable runbook for an AI agent or human to install (./install.sh), operate, drive the API, run the console profile, and uninstall (./uninstall.sh with --images/--data flags) sandboxd."
+    }
+  ],
+  "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 311,
+        "path": "README.md",
+        "size": 20842
+      },
+      {
+        "lines": 157,
+        "path": "AGENTS.md",
+        "size": 7477
+      },
+      {
+        "lines": 256,
+        "path": "ARCHITECTURE.md",
+        "size": 15771
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 10731
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1448
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2781
+      },
+      {
+        "path": "ROADMAP.md",
+        "reason": "file-budget",
+        "size": 3284
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2387
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 930
+      },
+      {
+        "path": "docs/APP-CATALOG-CONTRACT.md",
+        "reason": "file-budget",
+        "size": 12973
+      },
+      {
+        "path": "docs/adr/0001-app-catalog-scope-and-runtimes.md",
+        "reason": "file-budget",
+        "size": 6523
+      },
+      {
+        "path": "docs/agent-auth.md",
+        "reason": "file-budget",
+        "size": 13301
+      },
+      {
+        "path": "docs/base-image.md",
+        "reason": "file-budget",
+        "size": 6072
+      },
+      {
+        "path": "docs/git-workflow.md",
+        "reason": "file-budget",
+        "size": 10746
+      },
+      {
+        "path": "docs/gvisor.md",
+        "reason": "file-budget",
+        "size": 3694
+      },
+      {
+        "path": "docs/isolation.md",
+        "reason": "file-budget",
+        "size": 5542
+      },
+      {
+        "path": "docs/production-safety.md",
+        "reason": "file-budget",
+        "size": 2647
+      },
+      {
+        "path": "docs/sandbox-manifest.md",
+        "reason": "file-budget",
+        "size": 10484
+      },
+      {
+        "path": "docs/telemetry.md",
+        "reason": "file-budget",
+        "size": 4920
+      },
+      {
+        "path": "docs/upgrading.md",
+        "reason": "file-budget",
+        "size": 3077
+      },
+      {
+        "path": "docs/web-framework-recipes.md",
+        "reason": "file-budget",
+        "size": 11955
+      }
+    ],
+    "omitted_count": 18,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 482,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 21,
+      "complete": false,
+      "omitted": 18,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_7d5933b7a31053e7bc587acc630777c6",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tastyeffectco/sandboxd/146711407bb9b3b0354b87758e3f9132e6616e12/f76f0ae5fc6ee5ae/manifest.json",
+  "package_id": "pkg_5c6430ff80758fccc56c374fb3e29ac4bf12cba2e9280a9dbb92193b4d3c5e30",
+  "repo": "tastyeffectco/sandboxd",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "128caf944c8ee074e9e67e18fd25a7b125e295d00353d3d64f1d9c48da6ee352",
+  "snapshot_id": "f76f0ae5fc6ee5ae",
+  "sources": [
+    {
+      "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+      "git_sha": "65e00df648b6f93d5f5c96397d78f1a392321ced",
+      "lines": 157,
+      "path": "AGENTS.md",
+      "repository": "tastyeffectco/sandboxd",
+      "sha256": "703cbef8add869196758155ce1441e35f2e7d8637045885c742080ca14b51ae6",
+      "source_id": "src_ecc21651c8ef5e77ad2a66e5a420d273",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/AGENTS.md"
+    },
+    {
+      "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+      "git_sha": "3fa8a1a6e25c8e1b6e2c92cc2a731e0ad5abf11b",
+      "lines": 256,
+      "path": "ARCHITECTURE.md",
+      "repository": "tastyeffectco/sandboxd",
+      "sha256": "51f651849fb847a3a3f360fafad2f6a12e6259b119072520ffd7dcfe1c7d6631",
+      "source_id": "src_c01c22871b1156a3b740a4f963ee2552",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/ARCHITECTURE.md"
+    },
+    {
+      "commit": "146711407bb9b3b0354b87758e3f9132e6616e12",
+      "git_sha": "2c1622da884a6b15b108f2f47eaa99b1da8ff58d",
+      "lines": 311,
+      "path": "README.md",
+      "repository": "tastyeffectco/sandboxd",
+      "sha256": "049fa927d41c220c21465ae6e19c58f8ce6cad1e3650834d25d8d38f2a5fd3d7",
+      "source_id": "src_283a78178ec25110ae9839024a84a29d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/tastyeffectco/sandboxd/blob/146711407bb9b3b0354b87758e3f9132e6616e12/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: sandboxd is an open-source, self-hosted AI app builder: a prompt causes a coding agent to build a real app in an isolated sandbox on the user's server, each app live at a preview URL. The system is a single Go control-plane binary that shells out to the Docker CLI (no SDK), fronted by Traefik for preview routing, with SQLite (WAL) as the source of truth and an in-sandbox supervisor called runtimed baked into the base image.",
+  "superseded_claim_ids": []
+}

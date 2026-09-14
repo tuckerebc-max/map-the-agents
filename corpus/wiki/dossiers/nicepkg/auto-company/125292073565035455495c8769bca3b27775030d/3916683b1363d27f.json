@@ -1,0 +1,549 @@
+{
+  "applied_operation_id": "op_cf33699ac5644b5086751eaef320644e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_336d49c8f2fd8b9e537bf891e30a061b30c4c13ca93ab6cdca2694fefc169a62",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L7-L8"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46d488bf7ad6d3f171e51480c59d50da806c574c5f53ff566f80dfb7e087781b",
+        "slc_ea4e8648f015d5c46c5f1bf91ec551b7d29746a1bdf36649991b848054639370"
+      ],
+      "text": "The product is described as a fully autonomous AI company of 14 agents that conceives products, makes decisions, writes code, deploys, and markets with no human involvement, driven by Claude Code Agent Teams."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5db5de085a051b95c994193a9d557fcface3741461a1bc2cf93b02cf985067b5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 39,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L27-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ed6cf3af5b3389929299db4ae5e21fe16378cb8940bf6643eb8d10cfce66cc0"
+      ],
+      "text": "A launchd-managed auto-loop.sh runs an endless cycle: read PROMPT.md and consensus.md, drive one work period via `claude -p`, then handle failures (rate-limit waits, circuit breaker, consensus rollback) and sleep before the next round."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c737d3f8bdb7d62887074d3cb1e00d4b1dcc0f4dc9fa838db7c0bf05257a3815",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "25ee02bd03ad1554b7e517c65ef981226fdff2ff",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "PROMPT.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/PROMPT.md#L26-L26"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L41-L41"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "25ee02bd03ad1554b7e517c65ef981226fdff2ff",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "PROMPT.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/PROMPT.md#L44-L44"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "25ee02bd03ad1554b7e517c65ef981226fdff2ff",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "PROMPT.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/PROMPT.md#L47-L47"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "25ee02bd03ad1554b7e517c65ef981226fdff2ff",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "PROMPT.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/PROMPT.md#L35-L35"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "25ee02bd03ad1554b7e517c65ef981226fdff2ff",
+          "line_end": 53,
+          "line_start": 50,
+          "path": "PROMPT.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/PROMPT.md#L50-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d450aa6b2acdf3b6db474c440cf283be9191a76264fbbff3bbb9c9f9353c604",
+        "slc_4e97b314a8feac01b842d49cc3d26f3af1294f99783f516f91229d35544bcf49",
+        "slc_9e816cbc48e4f15796f99d626ae61c10dc0b01d2082b93c2f60f4ddbea2c2d12",
+        "slc_bf3e4f96c96c5c5a3d0886775364964ba16fb4fde028454995e77840af87ccc9",
+        "slc_e0fbf19c4b595965e817c217a130a09a6d3e2f2067f599f0ae172ed15a045a57",
+        "slc_f5c7bee5846b41960f20cc207b8d41599f331678981effa53fde1f8723eee2df"
+      ],
+      "text": "Each cycle is an independent `claude -p` call, and memories/consensus.md is stated to be the only cross-cycle state, like a relay baton; the prompt requires updating it before each cycle ends with fields such as Current Phase, Key Decisions, Active Projects, Next Action, and Company State."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80d97e2f431a312847f8eea4efa9a659b7c2964a4ad53fba526284b96386bba7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 62,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L47-L62"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L64-L64"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 193,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L175-L193"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "CLAUDE.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28b942a34587745ccb180cfdfdbe18d2ff91c782f92b3440e09ef136e560987b",
+        "slc_3e35087eea6259be226ca823a15066c0543e438a730698dd066c52bd9bda60be",
+        "slc_5f9612d999af8b879af83130caa167b7e22da596cbbbab1511bd12f8bdfbaf98",
+        "slc_e208abca4d0c94afa6bb97d09e3c24adbcdb7497a0c6506d83ae90a9ded332ec"
+      ],
+      "text": "The repo ships 14 agent persona definitions under .claude/agents (e.g. ceo-bezos, cto-vogels, critic-munger, fullstack-dhh, qa-bach, devops-hightower, cfo-campbell, research-thompson) plus 30+ skills under .claude/skills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c823a96cae53118e686fd8a8e57cab5c4377e9707e5e7788223aee602bc2da8c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L45-L45"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+          "line_end": 86,
+          "line_start": 80,
+          "path": "CLAUDE.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md#L80-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99ad0255e85fc58b763cd8f88a756eb6a785af062a762747a0c800615d321a67",
+        "slc_ec28a0040ffb56939e0ffbe95208dc5cbb3f714bdd8abb413d01d1cc3f6f3e74"
+      ],
+      "text": "Agents are prompted as real-world luminaries (e.g. 'you are DHH' rather than 'you are a developer') to activate the LLM's deep domain knowledge, and the charter sets decision principles like Ship > Plan > Discuss and monolith-first boring technology."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12aab05b3b2550f770c5cc2bdf91244b629d5986ddf2e8eee126c5f57285f87f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 137,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L130-L137"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "25ee02bd03ad1554b7e517c65ef981226fdff2ff",
+          "line_end": 65,
+          "line_start": 61,
+          "path": "PROMPT.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/PROMPT.md#L61-L65"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+          "line_end": 97,
+          "line_start": 92,
+          "path": "CLAUDE.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md#L92-L97"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 126,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L122-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_159e8b333b923b19b89361e798cd748621cc596bedbdc7e2ffaff47b87276d41",
+        "slc_2a1c80bf1d1bdb2f20b160f3fffe8b86ace6e33c84b4e98c0334869773cdb570",
+        "slc_9ec92da2c80dc998dffd0e91038536d29e4f61ed79dd79c5bd3a7773089481d1",
+        "slc_dc06075f54d63c48ead35236b6c8ecfd7f28f02e66cc5d0349f86373bbf3fafa"
+      ],
+      "text": "Six standard collaboration chains are defined (new product evaluation, feature development, launch, pricing, weekly review, opportunity discovery), and convergence rules force concrete output: cycle 1 brainstorm, cycle 2 GO/NO-GO pre-mortem, and from cycle 3 onward pure discussion is forbidden."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d9ede3bdb71359c304722ebf12833eae9e6e08d7667dd74c7186cd2c28a4d1a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 101,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L87-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37cdfd0da5eae713b7aeaa018628225dd41c8bd92820b9fd8c2a55add57c73fe"
+      ],
+      "text": "Users control the loop through make targets: start, start-awake, stop, status, monitor, last, cycles, awake, install/uninstall (launchd daemon), pause, and resume."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_081ef3c5eb9b1353da916b373f3648a5b174b903adc88474ae04ad6062cb7ae6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "CLAUDE.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md#L122-L122"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+          "line_end": 133,
+          "line_start": 126,
+          "path": "CLAUDE.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md#L126-L133"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+          "line_end": 29,
+          "line_start": 21,
+          "path": "CLAUDE.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md#L21-L29"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 160,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L154-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_488cde575294456d25e55da7dfc8757a81b580952497ae8b7815eb0d33a10101",
+        "slc_7709cf47c3ed998502f51acf3a97a74da38d457c4b766b055131c7d38bdf9933",
+        "slc_8e656fa84a11e31bc62a54161827ee4fa4c677effdb996c2567a433707d30ea4",
+        "slc_e4b52bbd9fbd827a8cac6072d8012c4ce8c2323573c44b77d67931da91f022f0"
+      ],
+      "text": "The runtime charter grants agents all terminal tools (gh, wrangler, git, node/npm, uv/python, curl/jq listed as available) with hard safety red lines: no repo deletion, no wrangler delete, no deleting system files, no credential leaks, no force-push to main/master, and new projects must live under projects/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a34ca7be637b13d909aef57592040cf966f4027b92dd1861863a36839dae0ef0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 204,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L197-L204"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_74ad899b4299853be8dcb436f27fa5530d437c639b84f7f2cad8d685e444e711"
+      ],
+      "text": "Requirements are macOS (launchd-based daemon; Linux/systemd listed as future), an installed and logged-in Claude Code CLI, and a Claude subscription (Max or Pro recommended); jq, gh, and wrangler are optional."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d654b0e9ae9a8452f2c1abbb956a698063c87c2fc677fbebb6d073683e9cbb4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L17-L17"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 214,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L210-L214"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c69aab828c1cc0af3258f1f5ce1e2748236ff0103ff5d818f40bcf25e7e0028",
+        "slc_13645650301f5c07dabdd3b1aef790ffec5c0039572ac93475e8d2323060f4ad"
+      ],
+      "text": "The project is flagged experimental: macOS-only, running but not guaranteed stable, consumes Claude API quota each cycle, acts fully autonomously without asking humans, and carries no warranty that the AI won't build unexpected things."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf1dea5425fa0402ae0d898bce0423797394e7b2d18b8d4d6f92998194082f44",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+          "line_end": 148,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md#L143-L148"
+        },
+        {
+          "commit": "125292073565035455495c8769bca3b27775030d",
+          "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "CLAUDE.md",
+          "repository": "nicepkg/auto-company",
+          "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02b218ba81a22c7430c7c48c29144a065be8470818bb963d1231de062418cf95",
+        "slc_580092af10a51313586c1ef112a2513ded780deb13059fbacacccd81a40ff24e"
+      ],
+      "text": "Human steering appears to be intentionally limited to editing the 'Next Action' in memories/consensus.md (plus pause/resume), since the charter says humans guide direction only through that file while everything else stays autonomous."
+    }
+  ],
+  "commit": "125292073565035455495c8769bca3b27775030d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 226,
+        "path": "README.md",
+        "size": 8905
+      },
+      {
+        "lines": 65,
+        "path": "PROMPT.md",
+        "size": 1864
+      },
+      {
+        "lines": 234,
+        "path": "CLAUDE.md",
+        "size": 12342
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 210,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_d6f91503be3c53dfbd4cfb7bef161824",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/nicepkg/auto-company/125292073565035455495c8769bca3b27775030d/3916683b1363d27f/manifest.json",
+  "package_id": "pkg_0b14b3f3c8f135c473179ca61fe52b87937b29a1e0756ddf35e17c4395cc7e9f",
+  "repo": "nicepkg/auto-company",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "70c6fe335ee1352f12f17e84095ad7ddc869e0136f42924a762446256da85c41",
+  "snapshot_id": "3916683b1363d27f",
+  "sources": [
+    {
+      "commit": "125292073565035455495c8769bca3b27775030d",
+      "git_sha": "11753c6f4b29773113c80db3d95fad12cf5be60d",
+      "lines": 234,
+      "path": "CLAUDE.md",
+      "repository": "nicepkg/auto-company",
+      "sha256": "1fa81c1df7f4ffde120be0fbe61511038e5cedb78d7f0ebb999b4c3ad91b96c5",
+      "source_id": "src_0b45e1fb262953889a5a3f5d9086e7a4",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/CLAUDE.md"
+    },
+    {
+      "commit": "125292073565035455495c8769bca3b27775030d",
+      "git_sha": "25ee02bd03ad1554b7e517c65ef981226fdff2ff",
+      "lines": 65,
+      "path": "PROMPT.md",
+      "repository": "nicepkg/auto-company",
+      "sha256": "34bb9a5097bb48a13ed89a03f7302a74a4abdd501276d9226764bf1c58b7b9fe",
+      "source_id": "src_d66d11299f5a5f5089443c1f688ccaf0",
+      "stored": "prompt.md-93f277324bed.md",
+      "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/PROMPT.md"
+    },
+    {
+      "commit": "125292073565035455495c8769bca3b27775030d",
+      "git_sha": "cb92faf4655329b85217692d65416471d32214a3",
+      "lines": 226,
+      "path": "README.md",
+      "repository": "nicepkg/auto-company",
+      "sha256": "0f851be93df2de5e5f1409bced1e8ab7f30237dd44ac47f2f8e0eb4ed83915da",
+      "source_id": "src_7a72052a02cd5032b888579c9b517a59",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/nicepkg/auto-company/blob/125292073565035455495c8769bca3b27775030d/README.md"
+    }
+  ],
+  "summary": "The product is described as a fully autonomous AI company of 14 agents that conceives products, makes decisions, writes code, deploys, and markets with no human involvement, driven by Claude Code Agent Teams. A launchd-managed auto-loop.sh runs an endless cycle: read PROMPT.md and consensus.md, drive one work period via `claude -p`, then handle failures (rate-limit waits, circuit breaker, consensus rollback) and sleep before the next round.",
+  "superseded_claim_ids": []
+}

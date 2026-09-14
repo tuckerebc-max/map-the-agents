@@ -1,0 +1,580 @@
+{
+  "applied_operation_id": "op_82da3b06a9694c988a90bb9cac27370e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6a6bb6d0a0846b23212350a09a7c521a5e4e2c8c7cb80b3a45d23b0fb487e85",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 6,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L1-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85a97007939530b1bb078d0ac72e16aef16973a7854cae984903ee271cd7d814"
+      ],
+      "text": "Athas is described as a lightweight, cross-platform code editor built with Tauri (Rust and React), featuring Git support, AI agents, and vim keybindings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5f18da6bf371f32e26682844338a491a0e17902157eb4f4a800410910623f0a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 18,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L10-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62529672ce0d88b7f0223c145293c63e627cdd0cf0625ca698f18afa73e2eae0"
+      ],
+      "text": "Documented features include AI agents, Git integration, syntax highlighting, LSP support, vim keybindings, an integrated terminal, database viewers, collaboration, and enterprise policy controls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25a1f9e1f3e7d64a0e20f339a89ac24fc80526829811130b40473dcec2f92ba8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 18,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L10-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62529672ce0d88b7f0223c145293c63e627cdd0cf0625ca698f18afa73e2eae0"
+      ],
+      "text": "Enterprise policy controls are documented as including a managed mode plus an extension allowlist."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5fc42169e4a5e30d20dbf4412fb6fe91b0ce1ca6f131348dbaa6dc003f2b5585",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L32-L34"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L26-L28"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17fd24c9822bcf96834f46a9ceb0104f01377ecc0809dbfe2ab5e8cef1ac4788",
+        "slc_66474696eb6910094a95d295d7b2023f536c96db0339040b1f5e764508dce62e",
+        "slc_c2b8f9084ee8c944719112be1ea4c0ddeebbf4c6e817b0dc311d0ca1ac4ecf58"
+      ],
+      "text": "Install scripts for macOS/Linux and Windows are provided, and the scripts detect OS and architecture, download the latest stable release, and verify a SHA256 checksum when available."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0915ad336fa9788d2e17c1ea059939e630eb486229479e1b16f6e441e0086209",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 45,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L43-L45"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a70fadfb21b2ace5dd472503a9d29bddf3c2e94cd4a2153ecaab82e9fbc5c0c",
+        "slc_d9ce5261e23fce58c666337b050993878ad2203bffefadd52a569d1767aecc56"
+      ],
+      "text": "A preview release channel exists: passing --preview to the macOS/Linux install script installs the latest preview release."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f101b71b47025b77e249e6f50e30a1d8f8e91b0dd2cb858e42eedd00c011ace",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 72,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L70-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d306137aad221fdebb4534eb747d76f296123a2d155e2a70745e13f8c3e5534"
+      ],
+      "text": "Prebuilt packages are distributed for macOS, Windows, and Linux, with Linux releases including .deb, .rpm, and portable .tar.gz bundles."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec381a2666fe8ae6c41dcfd1978a2d209ceb2ed5c04799cffb1c40b9a5559d33",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 53,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L51-L53"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 59,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L57-L59"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 66,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L63-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_253f19aaac8033707b62420c2966d20c85923d83f1a929a7a2fed99172ae092f",
+        "slc_96c40ee0cc1f454c01a6ef1b49f0ad8519e6cd21be563e7e95dadb27a01bea41",
+        "slc_a5bf8f22a532ac63ccc1eb70ea34ca35f3070336b55e96251129fc8206a35568"
+      ],
+      "text": "The editor can be installed via Homebrew (cask athas), WinGet (athasdev.Athas), and Scoop from a dedicated bucket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c65313307628752102b90e2ba101a04551b47966dc77b2492f28c32b7cc73a52",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 91,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L89-L91"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 80,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L79-L80"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 87,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L82-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8010d6ec33019eefc3ad9c671b90fc15cc5934e3fa53ecd32b4356611dd27015",
+        "slc_8e53e71a2eb85ae411ae3818849c929b56b5aef911a4789ec58f13d66ff6aadf",
+        "slc_bd36f4ecf7d0b1a949f363bf709119d05a4e3981e65b84e21fc14cd204d687c9"
+      ],
+      "text": "Repository development practice: building from source requires Node.js 24, Bun 1.3.14, and Rust, then running git clone, bun setup, and bun dev; bun setup installs dependencies and checks native platform requirements."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d781957c755dffdd34c4b0d9a353c64d4a4320d35c21e9656e7bebf13ae00e05",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "82003c839cd234f00239314b22e079bf62816df3",
+          "line_end": 20,
+          "line_start": 11,
+          "path": "AGENTS.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/AGENTS.md#L11-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d478a8dd8060874fcc2107c98ae5a3670366307f85f869e7d6b740995487f5b2"
+      ],
+      "text": "Repository development practice: AGENTS.md specifies Bun 1.3.2, Node.js 22+, and Rust as the required environment, with bun install, bun dev, bun check, bunx vp test run, bun typecheck, and bun check:rust as validation commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_052710bfaca1007b4e2605f8e0c85a5dde8d618ea616e6a7368384c34b74b917",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "530b3d6395fb194afe02526387344a32c2c68df8",
+          "line_end": 48,
+          "line_start": 41,
+          "path": "CONTRIBUTING.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/CONTRIBUTING.md#L41-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b56d44f8f94bac310d1fcde97d2d7e8a9275e6beb9c5b90a20e84797418d2d4b"
+      ],
+      "text": "Repository development practice: Rust unit tests live in #[cfg(test)] modules beside the code or in src/<module>/tests.rs, integration tests go in crates/<crate>/tests/, and bun check:rust should run before submitting Rust changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a3b1c8c818d9ce1418c18c29d05ab29fb03e2181de0e5ac3ce7817ebe93c9ee",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "82003c839cd234f00239314b22e079bf62816df3",
+          "line_end": 122,
+          "line_start": 118,
+          "path": "AGENTS.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/AGENTS.md#L118-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b07dae6cf81bcedc924ca2dca86a6b32c2961be170b3a7c3a26dc96dbba69382"
+      ],
+      "text": "Repository development practice: release automation is triggered by pushing v* tags, Windows MSI versioning must stay numeric-only, and release changes should be validated with a dry-run before publishing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a15739888bdf3c8f4983074c357c21166122adf3a6b4f40387981422a130d70",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "530b3d6395fb194afe02526387344a32c2c68df8",
+          "line_end": 30,
+          "line_start": 22,
+          "path": "CONTRIBUTING.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/CONTRIBUTING.md#L22-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c1bbd41ce9f458d6ba3e5eb3e8c87293637deb6053cbf0d2f46ccb9b7af46120"
+      ],
+      "text": "Repository development practice: contributors must pass bun check, may use bun fix and bun format, rebase on master, squash commits, and agree to the Contributor License and Feedback Agreement before submitting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2fd219f7f81e0050c94207cb81b28cee9b49ed68caf6069519eb04d55a91f5d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "83b476c98da44967ab0b9b4c9eaae8faba5fa5cb",
+          "line_end": 64,
+          "line_start": 63,
+          "path": "CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md#L63-L64"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "83b476c98da44967ab0b9b4c9eaae8faba5fa5cb",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md#L28-L30"
+        },
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "83b476c98da44967ab0b9b4c9eaae8faba5fa5cb",
+          "line_end": 49,
+          "line_start": 47,
+          "path": "CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md#L47-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2655d7b611709dfcb8b4ed149e4123d785dc8838aaba54415491656fb7cf4b89",
+        "slc_5feb9ae028a366120e8d62c93f830cbb867aa634df84aac419f849931465d62a",
+        "slc_7db1f62810cd03dd38f7b2b8447602f4f457c2e236f4ca267964ca60c8ce09bb"
+      ],
+      "text": "Repository development practice: submitting a pull request, commit, patch, or issue constitutes acceptance of the Contributor License and Feedback Agreement, under which contributions are licensed AGPL-3.0 and feedback is licensed to maintainers without compensation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_665f5047232138456d7ceb224abf98bbcd910940b390c8203ac811b2d1d1ec35",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+          "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "athasdev/athas",
+          "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md#L109-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e628fc08351e300abd4e8f3fb820f4ef1259a89e5a073e53af1ae64bd78f13d"
+      ],
+      "text": "The project is licensed under AGPL-3.0."
+    }
+  ],
+  "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 109,
+        "path": "README.md",
+        "size": 2823
+      },
+      {
+        "lines": 64,
+        "path": "CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md",
+        "size": 2483
+      },
+      {
+        "lines": 122,
+        "path": "AGENTS.md",
+        "size": 10438
+      },
+      {
+        "lines": 48,
+        "path": "CONTRIBUTING.md",
+        "size": 1568
+      },
+      {
+        "lines": 13,
+        "path": "SECURITY.md",
+        "size": 492
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3202,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_b2e2e688da0c5f40b69f3cf37d7f8288",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 6
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/athasdev/athas/42ef5d128147eb4c6adf0ce957618ad814345743/f8ffb2c0e80b53b0/manifest.json",
+  "package_id": "pkg_9c62042441e177e15a3c7f91924e9e498ccd897df3e2a5f3a993cde07430efd2",
+  "repo": "athasdev/athas",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "78500098c2525b78485e888adfebca6a9867fa065a7b36917309a87c59a0e45d",
+  "snapshot_id": "f8ffb2c0e80b53b0",
+  "sources": [
+    {
+      "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+      "git_sha": "82003c839cd234f00239314b22e079bf62816df3",
+      "lines": 122,
+      "path": "AGENTS.md",
+      "repository": "athasdev/athas",
+      "sha256": "4078dff0c43c4f5600610aa5e4951816f5aca71c8e67688fe1fc5ae0a82dc611",
+      "source_id": "src_249d0b4005cc5c059601569f1116fbed",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/AGENTS.md"
+    },
+    {
+      "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+      "git_sha": "530b3d6395fb194afe02526387344a32c2c68df8",
+      "lines": 48,
+      "path": "CONTRIBUTING.md",
+      "repository": "athasdev/athas",
+      "sha256": "753e0fb108c97a945f019dcc739b3db12798150cf176b84f0e733a8ec0b0cedd",
+      "source_id": "src_47cea7ccb5005a7b87066e68466ec3e8",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/CONTRIBUTING.md"
+    },
+    {
+      "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+      "git_sha": "83b476c98da44967ab0b9b4c9eaae8faba5fa5cb",
+      "lines": 64,
+      "path": "CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md",
+      "repository": "athasdev/athas",
+      "sha256": "399c3a0592e82e7d85cac5e34f6a20cd28de1344f565d8b08321fafdd07366bc",
+      "source_id": "src_462ee6bbb25b5263b4464ce706bc53de",
+      "stored": "contributor_license_and_feedback_agreeme-e99d7cbf32e5.md",
+      "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/CONTRIBUTOR_LICENSE_AND_FEEDBACK_AGREEMENT.md"
+    },
+    {
+      "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+      "git_sha": "dbbb2816037608deebe3bb887bd8a4f928588979",
+      "lines": 109,
+      "path": "README.md",
+      "repository": "athasdev/athas",
+      "sha256": "d0ec53473afef89b417aac4276bb142c888f6e90b4548cc7f80fdf6edc434deb",
+      "source_id": "src_589435b1888051d5b5cdd6bf006c1822",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/README.md"
+    },
+    {
+      "commit": "42ef5d128147eb4c6adf0ce957618ad814345743",
+      "git_sha": "409583283a6a1ff0f297cae1b802106d46040fc7",
+      "lines": 13,
+      "path": "SECURITY.md",
+      "repository": "athasdev/athas",
+      "sha256": "fd1c6cb298debf2935333c5c0e3300ca0846a4e6cf19a27658bfcc9d0e98802a",
+      "source_id": "src_46cc9b43625e5d04923be78b7ee08b16",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/athasdev/athas/blob/42ef5d128147eb4c6adf0ce957618ad814345743/SECURITY.md"
+    }
+  ],
+  "summary": "The snapshot is mostly README and contributor documentation for Athas, a Tauri-based desktop code editor; product claims are limited to documented features, installation channels, and licensing, while build/test instructions are contributor practice only.",
+  "superseded_claim_ids": []
+}

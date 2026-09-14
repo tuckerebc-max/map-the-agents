@@ -1,0 +1,661 @@
+{
+  "applied_operation_id": "op_177575d15fca43ad8a67b42c36670c89",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1b89d0f1bd9fb8c0bf46d8ca9695479f2bd9250246977494ab184f583b2cd33",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 42,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L41-L42"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ac130da41e40724ad9cf590ea283e2e92a2c5c053faba11e4009b0bc13a1290",
+        "slc_8e191a5d86ed2ab000eb3ef1838bc79830883c4dc70e2c271f565a31d71310b4"
+      ],
+      "text": "Prime Agent is built around two abstractions: a Recursive Language Model that treats context as variables and subagents as function calls in a persistent REPL, and a Continual Harness storing prompts, memories, skills, and subagent specs as durable state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b04524e197dab269ff66e0c843216a1797ccd61b8bf14b515393a8dfa89c6410",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 52,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L46-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce07b7a70fbc5a4311ac936c2b5a2bb17818428c31a45bf25ff2105a9744140e"
+      ],
+      "text": "A persistent Python REPL is the built-in model tool; file operations, shell commands, tool use, subagents, and context management all happen through code in that environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87edfd5b81ea0ea137590a463c845eaa3fa78c95cd2c38e6406e34f9baed78e5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L91-L96"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 52,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L46-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_150039d9d4dd5d483b8264117d9ade701f30e3382047468bd93cc2f43efee415",
+        "slc_ce07b7a70fbc5a4311ac936c2b5a2bb17818428c31a45bf25ff2105a9744140e"
+      ],
+      "text": "rlm.spawn(...) creates real child agents for parallel or background work and returns their results programmatically; running agents can also discover and message each other directly without routing through the user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b5b07ce0d0748a7343ff6dbb7bd2aa2090b114eca059631e075abcbf3cd6eee0",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L91-L96"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 52,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L46-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_150039d9d4dd5d483b8264117d9ade701f30e3382047468bd93cc2f43efee415",
+        "slc_ce07b7a70fbc5a4311ac936c2b5a2bb17818428c31a45bf25ff2105a9744140e"
+      ],
+      "text": "The /refine command reviews the current trajectory and can apply small, evidence-backed updates to supplemental harness state (prompts, memories, skill descriptions, subagent specs), never rewriting the immutable base system prompt, with snapshots supporting rollback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b0d22519987c8435f5ce90f15786149e6ebaf8d09b5b56fbd843ed2eae7da76",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 52,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L46-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce07b7a70fbc5a4311ac936c2b5a2bb17818428c31a45bf25ff2105a9744140e"
+      ],
+      "text": "Skills are importable Python packages, and a built-in skill creator can turn recurring workflows into project or personal skills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0843c43cea0f7f996fc3b06433579df628af2ddbe539b6c955859f959f4df2d7",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L91-L96"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 52,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L46-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_150039d9d4dd5d483b8264117d9ade701f30e3382047468bd93cc2f43efee415",
+        "slc_ce07b7a70fbc5a4311ac936c2b5a2bb17818428c31a45bf25ff2105a9744140e"
+      ],
+      "text": "Daemon-backed agents keep running when the terminal disconnects and can be reattached; heartbeats, schedules, persistent goals, automatic compaction, and bounded autonomous mode preserve progress across turns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bbffd5adecbe54708ec900cf447a5058d406c69f88287aad12f40877bb20cd0f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 86,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L78-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c721619e4b713b2eba83dace023adf55c5a2ca9b7adca76d70a1695abb6863cf"
+      ],
+      "text": "The CLI includes commands such as prime-agent agents, attach, --resume, status, doctor, update, and shutdown for browsing sessions, managing background services, and stopping all agents and workers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf49f10a0168185ef7656dc83c2ddee53ca330ce482b4786c2c72acae16608c0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 108,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L100-L108"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L89-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b7dd3e6d9069260ac7f1d9b373e04c5ee3cf081c90c03ff8f074151ff2463c5",
+        "slc_d04a574138a4b5a595c736c6da173432ae7c0a741af53c24417c15898989c670"
+      ],
+      "text": "Documentation references JSON mode and RPC mode for headless automation and integrations, alongside a TUI for interactive use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b941c6f97c66cb7d9beb6a957b1a2ff36f5da1485463d1811a7381500b2ef3a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62c9e89ea63c21f02550142ad68424753bca9cd99740dd1bd31354e6301375da"
+      ],
+      "text": "The installer requires HTTPS for release downloads and verifies the archive against the release origin's SHA-256 inventory; the README notes HTTPS itself is the authenticity boundary since inventory and archive share an origin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d063fda099910beb7928a5bcaa44ea620041349f2e50eb321101157d5ffc111",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 74,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L73-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6190932a3a2c70cd797ff55826db1cf77ec0f191d42c3998d747f950f7b5c7f7"
+      ],
+      "text": "The README warns that Prime Agent executes model-generated Python and project commands with the user's permissions; worker and kernel processes improve lifecycle isolation but are not a security sandbox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3b729945ed711ee85cd235743e325bd06bb55af181f7279ab969c0fb5c7c5b9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+          "line_end": 118,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md#L118-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d1559e14ff8dfe23b95576419ebc6aa65f3593be64ef0d9bea0635f85ef7a9c"
+      ],
+      "text": "The agent and TUI are built on top of the open-source 'pi' project, which the README acknowledges."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eda536769e487f7f55ad542d0a4bdf6ef1f8dcfe1c9d0c0033febbfcb2069107",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "85e64ff351c4fdf861ae8d370980276bc10d8bcc",
+          "line_end": 33,
+          "line_start": 25,
+          "path": "AGENTS.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/AGENTS.md#L25-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_499c646a8589a6ac29e7806d45197707830bb716195721d9e1d8a54de920c68c"
+      ],
+      "text": "Repository development practice: AGENTS.md requires running 'npm run check' after code changes, forbids npm run dev/build/test, and mandates running any created or modified test file until it passes, using the faux provider harness for coding-agent suite tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70b43fb7575e858260bd5ffdfb710010c9ddc07fff55009392bf4f487892f316",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "85e64ff351c4fdf861ae8d370980276bc10d8bcc",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "AGENTS.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/AGENTS.md#L46-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e7cf048d8aed690776616e28cbb344d420b344b6bcc50f59c6e59ff596eb5cc4"
+      ],
+      "text": "Repository development practice: dependency updates are subject to a 7-day minimum release age enforced via .npmrc min-release-age=7 and a matching Dependabot cooldown, with an explicit override flag for urgent security patches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a103463d5a6d4767b5c300625bdee71a25cc1fd7237eff4073f91752785ac62",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "85e64ff351c4fdf861ae8d370980276bc10d8bcc",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "AGENTS.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/AGENTS.md#L111-L111"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "cb693bd65bc5f4bef09c20d65d195ff86cbf4620",
+          "line_end": 50,
+          "line_start": 45,
+          "path": "CONTRIBUTING.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/CONTRIBUTING.md#L45-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e45a710312df5f453955d2a913fd4b62c7aff9f0d8360cdfecaa55de61eedee",
+        "slc_82ee781e06eb284f239735c8b27b83af71f496e55a76b57b4d856a59f2657c67"
+      ],
+      "text": "Repository development practice: changelog entries are added as fragment files under packages/<pkg>/.changes/ rather than editing CHANGELOG.md directly, and PRs touching package src without a fragment fail CI unless labeled no-changelog."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6c11274fc4d88ec8234e80fcb71a122220c0dd8ca6197b8fabcafdaa0ec57a8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "85e64ff351c4fdf861ae8d370980276bc10d8bcc",
+          "line_end": 216,
+          "line_start": 210,
+          "path": "AGENTS.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/AGENTS.md#L210-L216"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "85e64ff351c4fdf861ae8d370980276bc10d8bcc",
+          "line_end": 227,
+          "line_start": 222,
+          "path": "AGENTS.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/AGENTS.md#L222-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7825d49e6eee92af8efa276fc3f1a48437a0aea31c2c214a0f9911401aa02bf2",
+        "slc_b1a739374ba3293d779e6ea890a03814d026b4f392ce8575413a8b553580210f"
+      ],
+      "text": "Repository development practice: parallel agents in one worktree must stage only their own files (never git add -A), and destructive operations like git reset --hard, git clean -fd, and commit --no-verify are forbidden."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c33ddd33cb35a484a2cb9490e2faec4c8cf4d0dee9eac6761b193656bed4dd8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "cb693bd65bc5f4bef09c20d65d195ff86cbf4620",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "CONTRIBUTING.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/CONTRIBUTING.md#L27-L27"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "cb693bd65bc5f4bef09c20d65d195ff86cbf4620",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CONTRIBUTING.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/CONTRIBUTING.md#L3-L3"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "cb693bd65bc5f4bef09c20d65d195ff86cbf4620",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CONTRIBUTING.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/CONTRIBUTING.md#L5-L5"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "cb693bd65bc5f4bef09c20d65d195ff86cbf4620",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "CONTRIBUTING.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/CONTRIBUTING.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03103c19c8138e6e3fcfb6873dd29190d0479f25d45d40be138066b6fd3fc5f2",
+        "slc_e1c22551f3c19c8691aefa727ddb5141df0386a064653779dd6c29ed486cd344",
+        "slc_fa8fbd109fdf6eefaeb40c5913f943fac44aca21cc14cacbc73914c3cdcf0744",
+        "slc_fbd3dd0712bbef5ff8aa31a5f909cc97bb6cae63ee707b8c716f02dd603e8f28"
+      ],
+      "text": "Repository development practice: public contributions start in GitHub Discussions; unsolicited pull requests are not reviewed, and PRs are limited to maintainers and explicitly vouched trusted contributors, with unvouched PRs automatically closed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10f22556452cb5352867155618ce28444e071b1faad62052e54f69164c3d7ce5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "85e64ff351c4fdf861ae8d370980276bc10d8bcc",
+          "line_end": 42,
+          "line_start": 37,
+          "path": "AGENTS.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/AGENTS.md#L37-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_180fcff24662d44bc2b7d61463e1aa4c8ba2206c4f5a4fc0f40595c9abf7d4ba"
+      ],
+      "text": "Repository development practice: daemon protocol changes must be classified as backward-compatible, capability-gated, or incompatible; incompatible changes require bumping DAEMON_PROTOCOL_VERSION and updating schema revision and compatibility tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f85d34bce0cd37760c01d05c9775f0848bbbaf83ccaf0ef70027028aa512740",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "13bf794d1cda44fe7bbaccd9b1c3d4012c4f5a98",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "SECURITY.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/SECURITY.md#L7-L7"
+        },
+        {
+          "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+          "git_sha": "13bf794d1cda44fe7bbaccd9b1c3d4012c4f5a98",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "SECURITY.md",
+          "repository": "primeintellect-ai/prime-agent",
+          "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/SECURITY.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af4872680e8a7e60c777d2d278e9833b755002dee394387d3a4d3895ccf97272",
+        "slc_c953d583ce3d1da0c7a82f4381e73e7d835872c9ae5c318581d55fe299bb99f8"
+      ],
+      "text": "Repository development practice: security vulnerabilities must be reported privately to security@primeintellect.ai, never through public Issues, Discussions, or pull requests."
+    }
+  ],
+  "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 137,
+        "path": "README.md",
+        "size": 9595
+      },
+      {
+        "lines": 254,
+        "path": "AGENTS.md",
+        "size": 12883
+      },
+      {
+        "lines": 52,
+        "path": "CONTRIBUTING.md",
+        "size": 3950
+      },
+      {
+        "lines": 25,
+        "path": "SECURITY.md",
+        "size": 1268
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1404,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_7be1b5294aa85a099599862095007fc4",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 7
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/primeintellect-ai/prime-agent/1fc1adb6e8062bf871a9b59705c1d15468e589f0/500e7d550bac7429/manifest.json",
+  "package_id": "pkg_9ff220a9c404f5c814e0e1ead2a99bd21f0ca0eab6b67283b6645633a7ae90a9",
+  "repo": "primeintellect-ai/prime-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "43a57f6dbae825593ee27d1a48f86df77fd1f18118eaff1eda04168675e42f2e",
+  "snapshot_id": "500e7d550bac7429",
+  "sources": [
+    {
+      "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+      "git_sha": "85e64ff351c4fdf861ae8d370980276bc10d8bcc",
+      "lines": 254,
+      "path": "AGENTS.md",
+      "repository": "primeintellect-ai/prime-agent",
+      "sha256": "66a17646a3cb576ea237d072b20d15a998eb9d82c1d057822d8000cd4522249d",
+      "source_id": "src_790fb802493a5233be0f69b905c98090",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/AGENTS.md"
+    },
+    {
+      "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+      "git_sha": "cb693bd65bc5f4bef09c20d65d195ff86cbf4620",
+      "lines": 52,
+      "path": "CONTRIBUTING.md",
+      "repository": "primeintellect-ai/prime-agent",
+      "sha256": "12a9d5dbb3590d12320d0cc34f4547ddd695ba386c8c902e5d6a453c8a7cd726",
+      "source_id": "src_af2c932bea7354d38dd5566e43af546b",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/CONTRIBUTING.md"
+    },
+    {
+      "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+      "git_sha": "d059b87af002b112573dc9c15d645a877195344d",
+      "lines": 137,
+      "path": "README.md",
+      "repository": "primeintellect-ai/prime-agent",
+      "sha256": "b726c09cfd58907152b6fce319205c48855042d677b8dbcc06ae43ef7d70f046",
+      "source_id": "src_7305b7512bc25bbaa92b5721bc981ef2",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/README.md"
+    },
+    {
+      "commit": "1fc1adb6e8062bf871a9b59705c1d15468e589f0",
+      "git_sha": "13bf794d1cda44fe7bbaccd9b1c3d4012c4f5a98",
+      "lines": 25,
+      "path": "SECURITY.md",
+      "repository": "primeintellect-ai/prime-agent",
+      "sha256": "41227834748299e0448ec2cb3b0fe936ee6bc56ad10d843ffdfb9d7cfb0d4454",
+      "source_id": "src_8365574d48495dac9bc43e6f63abd87d",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent/blob/1fc1adb6e8062bf871a9b59705c1d15468e589f0/SECURITY.md"
+    }
+  ],
+  "summary": "README documents Prime Agent as an open-source self-improving RLM coding/research agent with a persistent Python REPL, subagents, durable harness state, and daemon-backed long-running sessions; AGENTS.md and CONTRIBUTING.md define contributor workflows. No agent-performance evaluation evidence is present.",
+  "superseded_claim_ids": []
+}

@@ -45,6 +45,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           paths=(corpus/catalog corpus/sources corpus/wiki corpus/map corpus/AGENTS_CORPUS.md
                  corpus/state/catalog-cursor.json corpus/state/catalog-published.json
+                 corpus/state/directory-cursor.json corpus/state/directory-published.json
                  corpus/state/maintenance.json corpus/state/inbox.json)
           for path in "${paths[@]}"; do
             if [ -e "$path" ] || [ -n "$(git ls-files -- "$path")" ]; then
@@ -63,6 +64,8 @@ jobs:
           path: |
             work/maintenance-summary.json
             corpus/state/catalog-cursor.json
+            corpus/state/directory-cursor.json
+            corpus/state/directory-published.json
             corpus/state/maintenance.json
             corpus/state/inbox.json
           if-no-files-found: ignore

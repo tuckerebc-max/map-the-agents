@@ -1,0 +1,592 @@
+{
+  "applied_operation_id": "op_c81cc84b4d3a43259c615f48a4266bae",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d32e1ab6efdbc6ca898ebed2bc6735352397d1f30806cbeba97599adfe1c2174",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "84fa36cedcaf508f6b518a4292041d1f998c6752",
+          "line_end": 110,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/README.md#L102-L110"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "84fa36cedcaf508f6b518a4292041d1f998c6752",
+          "line_end": 100,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/README.md#L100-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1472ffba3484944cb6dc0540b0451ebc32d0bf8886ad0f83e5116da23134dd96",
+        "slc_2dfbfd5f7c088f66d1657a222d1451aca7e769a32a369861270cdbb212592292"
+      ],
+      "text": "The README calls out open-source dependencies including Tokio, NuShell, Alacritty, Hyper, FontKit, Smol, Fig completion specs, and the warp server framework."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa4e524f10c87a45e56ba83c230708116e7fb8adf4eb1c97772dea0e025332cf",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L93-L93"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L99-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7226d19e5e9959896d55548dab7191571d7753bd0d55fb83589afd1c92bb0b3d",
+        "slc_74ad5858ce95c59fab189ee054ca8c77e6732fa170e8771f027acda5a57365f8"
+      ],
+      "text": "The server, Warp Drive backend, hosted authentication, and the Oz agent orchestration layer are not in this repository and remain proprietary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8de74709cf5dc0277db517103889e498b0541c16aee968091c2ddbf899124843",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a2e949a0c6e8cfaace9f2e7e9c20614c1b1c12d9ce1488fecbbcae6555a6e38"
+      ],
+      "text": "Warp's built-in agent harness runs server-side and is not open in this repository, so Codex or Claude models cannot currently be used with existing subscriptions in Warp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_297ba371e28c71fed9f839583e66a8e7e3da8167d748ac379e216e8dca401548",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7aa6aa0059382ea27790b198e99dc02db4b8c296ba4fbf4f877cd01e5ad242d0"
+      ],
+      "text": "Running Warp provides a /feedback command that files an issue with logs and environment details attached automatically."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_edd5773819d5ba003096fbc343c4b26e572b9fbdc085294431c4ced4b2a96e0e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L69-L69"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L67-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84ecda32c9e3aed096ca9471f1a77b97f8ff98b59ed86bfd7c3d1a699d9e8c98",
+        "slc_b8b286d9ea9c29d72f5d656b9f4b83f3791c1e83986810d6a957467ceba3f29e"
+      ],
+      "text": "The team plans to support the Agent Client Protocol (ACP) in Warp so other models or subscriptions could connect directly; this is tracked on their roadmap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d82042df7cf48253c27f0a9a7220288d44c40d5603848b02cd3603158acb4cd7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L27-L27"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "84fa36cedcaf508f6b518a4292041d1f998c6752",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/README.md#L69-L69"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L9-L9"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L19-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c4603231afe3bbb58d92803f67c487f0d363d7b5c02243d1397318201543484",
+        "slc_dd9132667fc4b91076b72060ea649a104d60ed8cd094a1c524f5a79c66294ee9",
+        "slc_ef3d580f829da36ae6dda8d80563ac236d772f54b3d05e18f026ed3e3db70aa2",
+        "slc_efeaecaf29bd1baf5954ce3c750f5b608445175dddeff2dc4e47ce4c819d4ee2"
+      ],
+      "text": "Repository development practice: contributions start with a GitHub issue; maintainers apply readiness labels (ready-to-spec, ready-to-implement, needs-mocks), and feature work requires a spec PR adding product.md and tech.md under specs/GH<issue-number>/ before code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1faf50466731188deb092a2eae9e830216a4182f981198225bbd539488a0f07",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L41-L41"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e1bce9820e804aad2fdb53576d8397ece631c14eb4c09b3cacc1084ab2b2bb56",
+        "slc_f8f1fc06facd2bda011cd0aed9cffad7f6ba6ba37497b07cb919754d88ed1cff"
+      ],
+      "text": "Repository development practice: opened PRs are auto-assigned to Oz for an initial review, then a Warp subject-matter expert is requested; contributors can comment /warp-agent-review up to three times per PR for re-review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b5f9b3c639ca7fe384065b7558a08b8ac24d2eb63eed2c6750b6b5f4771932e7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "76cefd15aa99a26b3ab3cd50367a2218b1a723f1",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "AGENTS.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/AGENTS.md#L28-L30"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "84fa36cedcaf508f6b518a4292041d1f998c6752",
+          "line_end": 79,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/README.md#L75-L79"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L31-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6092adcdb4aa323984150a4b6d355dce33b56987d677fb8def71964ef406fefa",
+        "slc_9614b45222b57511684137af68e4a5754ee584773904611c498a3df2266881f3",
+        "slc_b0b882515801632d534cb7745d21af73d708f485b522fc99d77e53431b5ed868"
+      ],
+      "text": "Repository development practice: build and run locally via ./script/bootstrap and ./script/run (or cargo run), with ./script/presubmit running fmt, clippy, and tests; tests can also run via cargo nextest."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9776c75c1dbb5f245d29ac1780a8202acc203318ef5002964930c24e0ff5d9f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 144,
+          "line_start": 144,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L144-L144"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "748e7ecd494c4f8b1a9aba8c0731ff26dfc034a4",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "SECURITY.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/SECURITY.md#L7-L7"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "748e7ecd494c4f8b1a9aba8c0731ff26dfc034a4",
+          "line_end": 12,
+          "line_start": 11,
+          "path": "SECURITY.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/SECURITY.md#L11-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ec4a71a9fc94eff716cd17befac7ff3917fa57ad13f102c7ef79bc555cb80d6",
+        "slc_8f707888108bd58761c82fc8b69ac52fc5f167d886f83d45aafc1e1a2416fa39",
+        "slc_acf0edd735083776a2067e689bc0e858205b2f09e7ecc1525b77e976053e98f4"
+      ],
+      "text": "Repository development practice: security vulnerabilities must not be opened as public issues; they are reported via security@warp.dev or a private GitHub Security Advisory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abb8854e58d35956b509194910b8753a0a99655e88ffdcf6a513cff0ea91ad67",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L75-L75"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_744ad2fcf5466901b0f2e0e2e11ab4cbec8f8ec3e30398cc6016b558c772a181",
+        "slc_f112b830517eac74db655e4c2367974947fbe46c827117252d133bfcd1db4179"
+      ],
+      "text": "Repository development practice: collaborators — contributors with a track record of merged PRs — can apply labels, dispatch Oz directly with @oz on ready issues, and use complimentary Oz credits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c5f892d169b977226e2500467871b71343df62d2d007f33437254d597d624be",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L115-L115"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "84fa36cedcaf508f6b518a4292041d1f998c6752",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/README.md#L56-L56"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "84fa36cedcaf508f6b518a4292041d1f998c6752",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/README.md#L54-L54"
+        },
+        {
+          "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+          "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "FAQ.md",
+          "repository": "warpdotdev/warp",
+          "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md#L117-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57c72f150211287cf3ade904344931251c249ae7ae2a95e96cad72e5676d5e4b",
+        "slc_620b018338a51404480fd3c37ef3e37cafb47dbf87422fc17f5b0ec13efccc75",
+        "slc_9ee9c29a0c45b709cd56533f23ae3c5f3e6a595d1d405380bad6021728dff0cd",
+        "slc_deac7066b8e6b583b78c475e456614572ba6aea8ee7b39d402441a744bee6c96"
+      ],
+      "text": "The client app is licensed AGPL v3 to keep derivatives open, while the warpui_core and warpui UI framework crates are MIT-licensed to maximize reuse."
+    }
+  ],
+  "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 110,
+        "path": "README.md",
+        "size": 5882
+      },
+      {
+        "lines": 144,
+        "path": "FAQ.md",
+        "size": 10049
+      },
+      {
+        "lines": 244,
+        "path": "AGENTS.md",
+        "size": 17971
+      },
+      {
+        "lines": 83,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 5484
+      },
+      {
+        "lines": 215,
+        "path": "CONTRIBUTING.md",
+        "size": 17313
+      },
+      {
+        "lines": 14,
+        "path": "SECURITY.md",
+        "size": 756
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6248,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_12319802e09e5aaa8d061ffdfcf3a9e9",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 5
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/warpdotdev/warp/3959ea72141fc0ecd007665029a8058e0e6db0f8/afc2f384249b5adc/manifest.json",
+  "package_id": "pkg_dfcf3d7b128cb39f2082d6b3603e050712ff15269fbdc2863a46f2d40bd1e1c5",
+  "repo": "warpdotdev/warp",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b9205e649baa885e97d8b3a9730e8f8aa4db249ce24f9e27d3c75343c7ba0b04",
+  "snapshot_id": "afc2f384249b5adc",
+  "sources": [
+    {
+      "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+      "git_sha": "76cefd15aa99a26b3ab3cd50367a2218b1a723f1",
+      "lines": 244,
+      "path": "AGENTS.md",
+      "repository": "warpdotdev/warp",
+      "sha256": "478af39161df17e28619bd7ea38ea5f97377f636c1e14d647538467a1ce51fab",
+      "source_id": "src_e245e22be2265ad59da1a5149bf95018",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/AGENTS.md"
+    },
+    {
+      "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+      "git_sha": "ea0d4f5d5d5aaa6914df8e6ac4f017d19443eafa",
+      "lines": 83,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "warpdotdev/warp",
+      "sha256": "5ba77412e8aa1399b5cad34796c589ed7f19a2c60bfb12462d9d17b00a72496f",
+      "source_id": "src_8905716b250052da9252da5637c8d97b",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+      "git_sha": "032da6715ad43b066eaf86f50ef1fe1407196b78",
+      "lines": 215,
+      "path": "CONTRIBUTING.md",
+      "repository": "warpdotdev/warp",
+      "sha256": "72f64aa3d8d6202c26c789557306e2ad341185df3ac3eb9024547e40b382e953",
+      "source_id": "src_1d8658e940ac5e64b9e6a3c947b48677",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/CONTRIBUTING.md"
+    },
+    {
+      "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+      "git_sha": "da40a99d4ed0c9e5fd03d2272fb9cae3f9592d1c",
+      "lines": 144,
+      "path": "FAQ.md",
+      "repository": "warpdotdev/warp",
+      "sha256": "9081e746dcb78df0d0f6c509c63d0701a2e01fa3da31af17664ebe19572e2d2c",
+      "source_id": "src_b55ff0a089b55d44b84243f22aef37b0",
+      "stored": "faq.md-c7bd425fd98a.md",
+      "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/FAQ.md"
+    },
+    {
+      "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+      "git_sha": "84fa36cedcaf508f6b518a4292041d1f998c6752",
+      "lines": 110,
+      "path": "README.md",
+      "repository": "warpdotdev/warp",
+      "sha256": "c40ae3d2a7b34e5c06aa09b57aa2a494bbd662f6308be9eaa7efcf16d704d291",
+      "source_id": "src_13e7842fe45a502a877ecf2c03133646",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/README.md"
+    },
+    {
+      "commit": "3959ea72141fc0ecd007665029a8058e0e6db0f8",
+      "git_sha": "748e7ecd494c4f8b1a9aba8c0731ff26dfc034a4",
+      "lines": 14,
+      "path": "SECURITY.md",
+      "repository": "warpdotdev/warp",
+      "sha256": "9a18dc91f6aad6b632e48615dbb06b2fa672ee7cac2d6e14cb41db4ae8ae9cee",
+      "source_id": "src_95c5e9d385845de885670a0867cf206f",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/warpdotdev/warp/blob/3959ea72141fc0ecd007665029a8058e0e6db0f8/SECURITY.md"
+    }
+  ],
+  "summary": "The README calls out open-source dependencies including Tokio, NuShell, Alacritty, Hyper, FontKit, Smol, Fig completion specs, and the warp server framework. The server, Warp Drive backend, hosted authentication, and the Oz agent orchestration layer are not in this repository and remain proprietary. Evidence coverage: 123 of 181 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

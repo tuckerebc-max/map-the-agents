@@ -1,0 +1,823 @@
+{
+  "applied_operation_id": "op_da7b5ee221864b2ca1d46665e94f76b6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d48cb196ea12f9523eb26ff71576bfdc99d70e096073bb8b715deb5ada93811",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L97-L97"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L103-L103"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e4d92330f67272d4210ba6ee78ee972c41970a55aad6b4e06e4d01a358df6bb",
+        "slc_6d77714d744871c9aed86581da11f64bbd812e0e22326e32c62466cb231266a8",
+        "slc_74bf71174eef203d5bdbe83970194765c7d992611f836bed4b10b41d1df5038a"
+      ],
+      "text": "The orchestrator is deliberately just bash: each agent is its own Linux user running an official coding CLI as a systemd service, with no framework, protocol, or broker; agents coordinate by invoking one shared 5dive CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abd22f7ea7acdd2a5dc01c842a56c88e8cbb9d7956ee370b44548ea42dbc5730",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L81-L81"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L40-L40"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 293,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L293-L293"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 280,
+          "line_start": 280,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L280-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2daff642756946278300f1fd619450f04b3e7ccf651a0fe651798de035097493",
+        "slc_428910358f7b24439860a04e41e2cef28b44d73240afa94b1fadd2b1ea0c9904",
+        "slc_9a56a4fb60d24ef9a42b55d4e18c150f54f3f09f0fdf3ad9f030853d4a16f0f8",
+        "slc_b06f90fe678767a343198324acaa4ce32f31d5497a2d8a1d5befefa899388845"
+      ],
+      "text": "Agents take work from a shared SQLite task queue on one host, report up an org chart, hand work to each other, and escalate to a human via Telegram only when a decision is needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a747d4b3299db6f04e4ef4107e25799d1f69e8bf800cd34ecc57a3b1b2f7fbf",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 119,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L109-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4129424c227cb909277a0b7baa7725221c905d5cbae047b51713c04ea05d3891"
+      ],
+      "text": "Multiple agent types are supported, including claude, codex, antigravity, grok, devin, hermes, openclaw, opencode, and pi, each with its own auth options and channel support (Telegram and/or Discord)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da3186d6d657068d89b343e6e34d5752d1349c292065e6b460461d58d35cc523",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 395,
+          "line_start": 385,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L385-L395"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 473,
+          "line_start": 473,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L473-L473"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 377,
+          "line_start": 369,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L369-L377"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 383,
+          "line_start": 379,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L379-L383"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 367,
+          "line_start": 361,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L361-L367"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12b5779eb48df8ab8347d7dd0aaca06488fd7c412943987833dbafafc8de3cb4",
+        "slc_1e99a483d6c9a1818195d03360d77b0d5fc68f8b73610ecb6c06edf885407309",
+        "slc_67262c77c7933ece0fe6be24b157325a478dd6634c4684e6b6acc36164159119",
+        "slc_bcde2100c24e4f27ad36d1ed762b338f53be65e6f21a1dea20d5c584b3b7f3c7",
+        "slc_cbf507fbe5d88a982cdf051800d503dfb01edf46bca6a6da24dd22037b63649b"
+      ],
+      "text": "The 5dive CLI exposes verbs for agent lifecycle (create/start/stop/logs/config), tasks, goals, loops, council, trace, run metrics, memory search, triggers, heartbeat, org, ui, account, and team import; every command accepts --json with an {ok,data}/{ok:false,error} envelope and exit codes matching error.code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b06e6c4010e23dfcb83ee5b4f1fc476d9626a873362249d303b7b150748598d7",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 246,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L246-L246"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 252,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L248-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_315cb1a298b5f16c209044d8243c2a61b018dd3f283ddec3a0be74455827798b",
+        "slc_886f691c023212cb8b59f16beb8bb1d8ebb3e653532a3882a411f7e956c1bb30"
+      ],
+      "text": "Each agent runs as its own Linux user under one of three isolation tiers: standard (shared read, limited write), admin (full host, auto-granted to the first agent on a fresh box), or sandboxed (own home, no sudo, systemd resource limits)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66444387b3258616d3bbadd052d91a323811eb6e43a72b0c2af8738ebbdebae4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 418,
+          "line_start": 418,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L418-L418"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 431,
+          "line_start": 427,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L427-L431"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9f20a46b857afe5e435d86bfc0c9701a687910494fccb7d83079ec65c4ea47cf",
+        "slc_ecb26c8b39050217fa13ccc34871362625272f69a2e6ca5f89cd7a2f4d7b181c"
+      ],
+      "text": "Delegated git push uses the operator's own GitHub App: the agent never holds a token; pushes are gate-gated on a human- or reviewer-cleared ship gate, restricted to one non-protected branch, and executed in a root-only helper with a repo-scoped short-lived token."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a22dca3a726dfdf22e94c4ac2871ffd25f03069392b9b244ceb86f273859797",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "1fa39902c388f1d769697e538d5dda7cf5286d8d",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "docs/constitution.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/docs/constitution.md#L3-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f1adae6ad6d494074bdd9d2fa7575e5d39184d24f822f02f2e5279297e6ae38"
+      ],
+      "text": "Governance policy can be loaded from a constitution.yaml in the state dir (or FIVEDIVE_CONSTITUTION_FILE); if the file is absent or malformed the loader falls back atomically to shipped defaults and never applies a partial document."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a59cd720f80a3546294818c84947c582c058c394fd37939bb205a65e92046e7a",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 217,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L216-L217"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 455,
+          "line_start": 455,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L455-L455"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d4de1643994edae95bd5c1d6435fac36f633401b27129124f49446b9751eea36",
+        "slc_e2734ca67da7c84199c416663550342be5f595eca087c0d1513af48affd8873d"
+      ],
+      "text": "The CLI offers durable team memory with provenance via `5dive memory search`, and Claude-runtime agents keep project memory under ~/.claude/projects/<dir>/memory/ across restarts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c962fe3fb8b0e08eb4bdf0e27182a7f2325d4d2afd11a5fc27945859c97a218",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 357,
+          "line_start": 357,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L357-L357"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 348,
+          "line_start": 346,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L346-L348"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 355,
+          "line_start": 352,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L352-L355"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16634bdfcb8dffd0696a0a49b04d34751923e45c5628a7f8c8dd1eb3085757e1",
+        "slc_52054c365769f20c1313a7de0e238357ccaa168f9c200c556b14222d72519b23",
+        "slc_9385fc9ec27a9539fd8327fad132fd6bbca71f59fd8b2b2c09ef8dcd8da0143c"
+      ],
+      "text": "`5dive ui` serves a local, read-only web UI on loopback (default port 8735) with org chart, queue, gates, and triggers views; it refuses routable --host addresses unless FIVE_UI_ALLOW_REMOTE=1 is set."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1fc47716ca4b45f065ea8e07ee736ebbfe058da967728431cee52df7cf8fdeeb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 460,
+          "line_start": 459,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L459-L460"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 462,
+          "line_start": 462,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L462-L462"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 442,
+          "line_start": 437,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L437-L442"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d1844ee652ce48590c13ff78b4903894cfa1c9e45510468a444ec5ed07bece5",
+        "slc_51af5eb024095db806e7627a6aaf433a4eef00566f3514fb25b799ee059bdcbc",
+        "slc_d81de0e57da5c3cb56fe19f8a8d61da778526f93287fb70c441260ed9eca732f"
+      ],
+      "text": "Requirements are a Linux host with systemd (Ubuntu 22.04+ recommended) and root for install; the installer apt-installs jq, tmux, and other dependencies, and a Docker image exists for hosts without systemd or root."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66e6bb78e704f367e2b9a731507899d964beeab371eee0a20ceaa69f9ebe1572",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 453,
+          "line_start": 446,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L446-L453"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f732a8572abfebf825091215851709e9984a713527fbb74ae0ffbb85cce74aa"
+      ],
+      "text": "5dive does not auto-update; operators run `5dive self-update` manually or on a cron schedule, which refreshes the CLI, hooks, skills, and plugins and restarts running agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7a1ffcb8a8c306e0b48d2a89a74ef43c3ab9877882a23caaa64246620817d9a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 497,
+          "line_start": 497,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L497-L497"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d1344603dc5931926bb7fd2d0f37dfe1ddb66d6cc72a33f884cc918880ca338e"
+      ],
+      "text": "Repository development practice: the 5dive bundle at the repo root is built from src/ via ./build.sh, and CI enforces that the bundle does not drift; contributing guidance lives in CONTRIBUTING.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a69b4f8637668c206f48411b24049dc5fa7d07abf8d9bd116ac5ec19364de449",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L44-L44"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+          "line_end": 18,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md#L14-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0cf44968367da5b1a768869dddb62455904028e43aabd3d362484be53e6bd155",
+        "slc_e21bade0e82fb8f6bfae852fd1fd0a6c5e3cb889406f9dd1ac5aea655e35c98c"
+      ],
+      "text": "The repo publishes a 'zero-human' badge measured as releases shipped versus decisions escalated to a human, presented as evidence that the agents building 5dive.ai operate autonomously on the same binary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_016102a7f5d09a07c02fe344ff7c04c359b5701b0727b50a8d0f5966ba443c71",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "d8786de2556af7115c5d1e9cd8a135a85516e2cb",
+          "line_end": 33,
+          "line_start": 28,
+          "path": "docs/agenticloops-decentralized-install.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/docs/agenticloops-decentralized-install.md#L28-L33"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "d8786de2556af7115c5d1e9cd8a135a85516e2cb",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "docs/agenticloops-decentralized-install.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/docs/agenticloops-decentralized-install.md#L3-L7"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "d8786de2556af7115c5d1e9cd8a135a85516e2cb",
+          "line_end": 64,
+          "line_start": 57,
+          "path": "docs/agenticloops-decentralized-install.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/docs/agenticloops-decentralized-install.md#L57-L64"
+        },
+        {
+          "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+          "git_sha": "d8786de2556af7115c5d1e9cd8a135a85516e2cb",
+          "line_end": 21,
+          "line_start": 16,
+          "path": "docs/agenticloops-decentralized-install.md",
+          "repository": "5dive-ai/5dive",
+          "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/docs/agenticloops-decentralized-install.md#L16-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3411ecaf3f1e5b5982940eecf0a6a2bc8ef6878829eb0671a570317b77c09279",
+        "slc_b596fbd9a734424e71224abbf183111562d588d5dcbba8cbdc5670897cc7207f",
+        "slc_c3a918e443d1e9f484d7a26eebe9c89415c29050cecd9fb9d231e80ea80878dd",
+        "slc_ca8bba7989675de61079294a786dc875f6376354d277eb453113f927be17f328"
+      ],
+      "text": "A design doc proposes decentralizing loop installation so `5dive loop install` resolves refs from any author-hosted github:/https: manifest, with the central index demoted to an optional discovery list and optional ed25519 signature verification; this appears to be a spec, not yet shipped behavior."
+    }
+  ],
+  "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 501,
+        "path": "README.md",
+        "size": 26774
+      },
+      {
+        "lines": 180,
+        "path": "CLAUDE.md",
+        "size": 12212
+      },
+      {
+        "lines": 184,
+        "path": "CONTRIBUTING.md",
+        "size": 8717
+      },
+      {
+        "lines": 481,
+        "path": "README.zh-CN.md",
+        "size": 27133
+      },
+      {
+        "lines": 80,
+        "path": "ROADMAP.md",
+        "size": 3898
+      },
+      {
+        "lines": 18,
+        "path": "explore-agent.md",
+        "size": 805
+      },
+      {
+        "lines": 10,
+        "path": "model-tiering-CLAUDE.md",
+        "size": 900
+      },
+      {
+        "lines": 40,
+        "path": "operational-comms-CLAUDE.md",
+        "size": 1784
+      },
+      {
+        "lines": 104,
+        "path": "projects-CLAUDE.md",
+        "size": 6728
+      },
+      {
+        "lines": 23,
+        "path": "telegram-agent-CLAUDE.md",
+        "size": 1368
+      },
+      {
+        "lines": 87,
+        "path": "docs/agenticloops-decentralized-install.md",
+        "size": 4950
+      },
+      {
+        "lines": 67,
+        "path": "docs/constitution.md",
+        "size": 2967
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 1017458
+      },
+      {
+        "path": "docs/delegated-push.md",
+        "reason": "file-budget",
+        "size": 9501
+      },
+      {
+        "path": "docs/fleet-supervisor-design.md",
+        "reason": "file-budget",
+        "size": 6751
+      },
+      {
+        "path": "docs/host-verbs.md",
+        "reason": "file-budget",
+        "size": 6563
+      },
+      {
+        "path": "docs/human-gates.md",
+        "reason": "file-budget",
+        "size": 4062
+      },
+      {
+        "path": "docs/triggers.md",
+        "reason": "file-budget",
+        "size": 3958
+      },
+      {
+        "path": "docs/zero-human.md",
+        "reason": "file-budget",
+        "size": 9069
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1026,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 19,
+      "complete": false,
+      "omitted": 7,
+      "stored": 12
+    }
+  },
+  "entity_id": "ent_f0e7e299b09f519f991ef71ab37fd0ea",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/5dive-ai/5dive/420651c634b0180b8efc189a357a47ea8f02ceb3/00021c2ed875dd28/manifest.json",
+  "package_id": "pkg_8f4e69b00abe463c87ce543413d94b3598b4bb66ed0ec75401ba5d319d0afbc2",
+  "repo": "5dive-ai/5dive",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "17bef02c668ad5e9a0114094e49a224adb22ff22352dc517a1d273a3dfeab2fd",
+  "snapshot_id": "00021c2ed875dd28",
+  "sources": [
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "c63b1d00985db05140927d96c9e8f993337dcbf2",
+      "lines": 180,
+      "path": "CLAUDE.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "0fdd6896eecddafe217102c1ae1b110bb9f9f7f013923d8335efc1d03f99cc33",
+      "source_id": "src_8198abbee1c05bedaaf883243f1eb444",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/CLAUDE.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "6ff48e1109721fb8d26eb7804a31b911426b7340",
+      "lines": 184,
+      "path": "CONTRIBUTING.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "f6c080451a570d317d80f4f52a33f37e6d48fac190f3737f90c8452cb29f1ae4",
+      "source_id": "src_f8419820ef3c5eaca4cd891c6d78fa7c",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/CONTRIBUTING.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "a989828c444321f2b7c6f37c373a470510984a40",
+      "lines": 501,
+      "path": "README.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "a28291d4058d7b1bca964bf8fd05400d3f22f61d3d8103c9278afa4363026b25",
+      "source_id": "src_ff9a427c49fc59cc8faf4740846b85d5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "4e61eb894cda990c34800c5ef87040dc0138bc82",
+      "lines": 481,
+      "path": "README.zh-CN.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "42ecc0311b032991c7c6e590f85f1f71de467c925bcc0a99b56f01d727b116ed",
+      "source_id": "src_9e28443fcf0f5513a275a0ac0eda1c0f",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/README.zh-CN.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "920468253a0babc84ac192a83ddfa7761d8783b9",
+      "lines": 80,
+      "path": "ROADMAP.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "53388196848fea313dab6ea37a1e2ace57c247161db0f606546fa20114ab2cb8",
+      "source_id": "src_a3167a44996053fd840cabefacb376e0",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/ROADMAP.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "d8786de2556af7115c5d1e9cd8a135a85516e2cb",
+      "lines": 87,
+      "path": "docs/agenticloops-decentralized-install.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "ec196e43a1c4eed2570b3a7a7e88a5688bc0dfe7160c3a27cdd5d8cf6effb865",
+      "source_id": "src_1d863078a1a05ef683da885f1b41ef93",
+      "stored": "agenticloops-decentralized-install.md-e4554bfa1779.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/docs/agenticloops-decentralized-install.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "1fa39902c388f1d769697e538d5dda7cf5286d8d",
+      "lines": 67,
+      "path": "docs/constitution.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "859bff37851cebc2f5d179c01f04e5e7efcc1df5961b14456cf265651b828410",
+      "source_id": "src_53f49a35a6a558be915c78c211a43a3b",
+      "stored": "constitution.md-fd340640155d.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/docs/constitution.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "37269f91dc839441cf829d8b6d39928f4c469f37",
+      "lines": 18,
+      "path": "explore-agent.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "705e351cd89e90cee0b1eef59a3ede362dcca50da83519096a00664d3cb746a6",
+      "source_id": "src_1f9079a3d1a35401bd233b3757e68816",
+      "stored": "explore-agent.md-1eacc229455b.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/explore-agent.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "6280e9069ef9c45761b8ef3c7411cb7e8e84937d",
+      "lines": 10,
+      "path": "model-tiering-CLAUDE.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "ce4463b1291b73dc0466196493aa5babc96994c81849178354423edd840d6655",
+      "source_id": "src_68d2633b5dad5c688fc789df2aec86b0",
+      "stored": "model-tiering-claude.md-84b20f1f4f35.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/model-tiering-CLAUDE.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "31cd77b6fd7c89ec05ab5669e6a1fc5c9eeb0555",
+      "lines": 40,
+      "path": "operational-comms-CLAUDE.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "1e9510aef390536be1eaea88f02b166c751ffdc0edf39ee435a77b13adf3bc27",
+      "source_id": "src_8c3c6082152c5f4eb5749b3a659df7ac",
+      "stored": "operational-comms-claude.md-ca947ee90a07.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/operational-comms-CLAUDE.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "1b68fefd564d73717851560e17b376be1c818ff7",
+      "lines": 104,
+      "path": "projects-CLAUDE.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "80c43d39d264b50d6388cf1b18beb198cc59f8581cee6bd8264804cc562cf763",
+      "source_id": "src_63a2f1770ea059ad9da7f383eb643110",
+      "stored": "projects-claude.md-5533e742503b.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/projects-CLAUDE.md"
+    },
+    {
+      "commit": "420651c634b0180b8efc189a357a47ea8f02ceb3",
+      "git_sha": "5eafdfe62c4e79c5b8adccd588451e5b7ce97098",
+      "lines": 23,
+      "path": "telegram-agent-CLAUDE.md",
+      "repository": "5dive-ai/5dive",
+      "sha256": "ac3ca24c0f6d89f1f0093b565828e371f63c415e85c7904acd977a89730c6cc8",
+      "source_id": "src_e1e28040a725589983f9a5f48e606ecc",
+      "stored": "telegram-agent-claude.md-5aa8fe151290.md",
+      "url": "https://github.com/5dive-ai/5dive/blob/420651c634b0180b8efc189a357a47ea8f02ceb3/telegram-agent-CLAUDE.md"
+    }
+  ],
+  "summary": "5dive is a self-hosted multi-agent runtime where each agent is its own Linux user running an official coding CLI as a systemd service, coordinated through a single bash CLI over a shared SQLite task queue. Evidence covers the CLI surface, isolation tiers, delegated push, constitution loading, memory, UI, and a not-yet-shipped decentralized loop-install spec. Evidence coverage: 151 of 375 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,239 @@
+{
+  "applied_operation_id": "op_3c558278a6e0466bb80dffd0890b4e36",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2756b025cc88bdbe5cd1e146e0e404e9085ebb27406fd3cd204ef3aa08241586",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+          "git_sha": "d659168f224401d150b007a59b7544f63947add2",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "amsilf/sc-helm-app",
+          "url": "https://github.com/amsilf/sc-helm-app/blob/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a5a98b33155aac720b534a0765923f503f47ac833218b9d5c435f5f13e3c78f"
+      ],
+      "text": "The repo includes a Helm chart under helm/ that deploys a simple Nginx server serving a Hello World page."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35a234b8ddd65193d2b2748350f2cad2e89ed599f9bb257cf8558509ff2f420b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+          "git_sha": "d659168f224401d150b007a59b7544f63947add2",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "amsilf/sc-helm-app",
+          "url": "https://github.com/amsilf/sc-helm-app/blob/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/README.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e59278ead22dddc32e7395c4c26087a21f5ab0a282b5a19cca86d31dbcfc6ef"
+      ],
+      "text": "OPA policies in the opa/ directory verify the Helm chart against predefined rules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0538a75c7e28daf97f53c0890e1324cefbffafb99d8cd5b91d4276550e32cb76",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+          "git_sha": "d659168f224401d150b007a59b7544f63947add2",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "amsilf/sc-helm-app",
+          "url": "https://github.com/amsilf/sc-helm-app/blob/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/README.md#L21-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e92a8fcf3a683cb80d885e700bee2f1d300178a1521f75f867ebcf1c12eecb1a"
+      ],
+      "text": "A verification script detects OPA policy violations, uses ChatGPT to suggest fixes, applies them, creates a new branch, pushes it, and opens a pull request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_728e5096fa13320e74535571de90b548d6d629c3c81bd10d3f69593660130aa3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+          "git_sha": "d659168f224401d150b007a59b7544f63947add2",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "amsilf/sc-helm-app",
+          "url": "https://github.com/amsilf/sc-helm-app/blob/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/README.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49544ed015ec9a7ee6b9dff042b5005e7555eaff2130c9392d1206830ed94df0"
+      ],
+      "text": "Prerequisites listed are Helm 3+, OPA, Python 3+, and an OpenAI API key for the ChatGPT integration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e00b2400117359d2a54423b3f68f9e898d3157a5cc91af96020ade52dcb6327",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+          "git_sha": "d659168f224401d150b007a59b7544f63947add2",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "amsilf/sc-helm-app",
+          "url": "https://github.com/amsilf/sc-helm-app/blob/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/README.md#L7-L10"
+        },
+        {
+          "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+          "git_sha": "d659168f224401d150b007a59b7544f63947add2",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "amsilf/sc-helm-app",
+          "url": "https://github.com/amsilf/sc-helm-app/blob/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/README.md#L21-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49544ed015ec9a7ee6b9dff042b5005e7555eaff2130c9392d1206830ed94df0",
+        "slc_e92a8fcf3a683cb80d885e700bee2f1d300178a1521f75f867ebcf1c12eecb1a"
+      ],
+      "text": "The ChatGPT fix mechanism appears to rely on the OpenAI API, since an OpenAI API key is listed as a prerequisite for that integration."
+    }
+  ],
+  "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 25,
+        "path": "README.md",
+        "size": 805
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 14,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_d09bea1e1d055170ad01631c91d171d6",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/amsilf/sc-helm-app/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/2404526c351a141d/manifest.json",
+  "package_id": "pkg_ca03629a3f5dd4fa2d92c57ebc704c7a5a4b91fa77d614554288f78ac2354392",
+  "repo": "amsilf/sc-helm-app",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8a492a4eab7a71e452b92dd7382e98e84d0a425296179911884d65f6ac5c5099",
+  "snapshot_id": "2404526c351a141d",
+  "sources": [
+    {
+      "commit": "3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd",
+      "git_sha": "d659168f224401d150b007a59b7544f63947add2",
+      "lines": 25,
+      "path": "README.md",
+      "repository": "amsilf/sc-helm-app",
+      "sha256": "f702ed6728d287cc878b6850dc3dbed04265743e44b7f509b15ea38fc20e33f2",
+      "source_id": "src_0dde84ef43535b379e2692968cf4d57e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/amsilf/sc-helm-app/blob/3006ac63cae4b46639fdfc3a1d4ec2b59b9d07bd/README.md"
+    }
+  ],
+  "summary": "A small repository providing a Helm chart for a Hello World Nginx app, OPA policy verification, and an AI-assisted (ChatGPT) fix workflow that applies fixes and opens a pull request.",
+  "superseded_claim_ids": []
+}

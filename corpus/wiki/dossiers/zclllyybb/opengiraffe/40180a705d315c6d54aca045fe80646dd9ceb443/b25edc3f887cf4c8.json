@@ -1,0 +1,541 @@
+{
+  "applied_operation_id": "op_be8e1eb6d17e49ad84af7a2e03aabef2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6edc40b15353de5bafd9bec25b3e10c88544ec4a9d6a8271f19b97618d5c73d9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_903e6980bc8a38e87fab1c572d80ceb4ac6e5c7ad27b935dc135ff50287762f0"
+      ],
+      "text": "The system is described as a persistent daemon-based multi-agent system using opencode to explore, plan, implement, and review code changes, with tasks running in parallel git worktrees."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da028f348fa1bfe15b76d22784ab9b0a62a323a5f44263081739a473e00cde1e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 118,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L92-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75ac12e7041115fa7c375ee01b1b7f7d0cba7ccafeebf8e6becdeacadf9cbbdc"
+      ],
+      "text": "Tasks follow a Planner → Coder → Reviewer pipeline: the planner assesses complexity and may split work into sub-tasks dispatched independently, and rejected code re-enters a retry loop up to a max_retries limit before failing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_493879dd99ecb73f373d99ab813d0eb1eddea01255e1b0e8c2aef5b4671cdd83",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 31,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L23-L31"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 118,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L92-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_644d0b354cbc0a3d026f7f5f9cbb7875ceba6812541f6d644d1b6252479ed0d1",
+        "slc_75ac12e7041115fa7c375ee01b1b7f7d0cba7ccafeebf8e6becdeacadf9cbbdc"
+      ],
+      "text": "Multiple reviewer models vote on each change, and all reviewers must approve for a task to pass; any REQUEST_CHANGES feeds reviewer feedback back to the coder."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2321c170e48e377e07980ae065f13978f2f930720148a3264dde720c5e0e5702",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L13-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a6477e7010c946286b7e84d50de25e96c1b77d38e9c34659c3729ff0590f53fe"
+      ],
+      "text": "Tasks, agent runs, and review history are stored in SQLite, so the daemon can be stopped and resumed after a reboot."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9be778ad228b262eb0492c6354e4d6a2613dccc99ee29c3599597b79883e2b0d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 164,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L160-L164"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 175,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L174-L175"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 171,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L167-L171"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 157,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L155-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03d4fab1725eb86794d309cc673048da901575edc4749d733474fef576ff4797",
+        "slc_4b1a49647cec20d9a8c958cf86a5f51ea1631eb5369751e8bb2cc72a4597ba52",
+        "slc_74b3cc0ff430ec885a36d67c5eec6bf2719b39c2d1ea78c21416d392363f61de",
+        "slc_f624bce39eedcf0bb7e92cbadd0eb295b4e794a70bf1cadcd9651a584ee9241b"
+      ],
+      "text": "A CLI exposes daemon control (start/stop/status), task submission and dispatch, TODO scanning/analysis/dispatch, and a synchronous run-one command for testing a single task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ca2d173bb5943d6815c3e23a298acb5285f41bbb0d61d78c0911c14d4835c6a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 88,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L59-L88"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L179-L179"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 186,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L181-L186"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_094607b2d4dc25ab8825d2745b775f9e39a7facb9634f298eb956b84edc89f07",
+        "slc_56d655130bc8a0018a66cff0fc6cd28d2a77e72ad8c2116b366a9a42ee7af593",
+        "slc_d45ffec46c2825a5c57065a703b67d5bd43d735c0f2b36eda568b1435d950716"
+      ],
+      "text": "A web dashboard (FastAPI with single-file HTML/JS) served by default on port 8778 provides tabs for the Explorer loop, task management, scanned TODOs, and live model configuration that persists to config.yaml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f38f25403ace2d37a9dbdcc163905ade68f939104a3d78f3f364840c4dcc9a07",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L120-L120"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 118,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L92-L118"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L13-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_048528bf30e03b5b49aa448e0571c5c38b2a557427cf9ebf3bdf914f2747f503",
+        "slc_75ac12e7041115fa7c375ee01b1b7f7d0cba7ccafeebf8e6becdeacadf9cbbdc",
+        "slc_a6477e7010c946286b7e84d50de25e96c1b77d38e9c34659c3729ff0590f53fe"
+      ],
+      "text": "Each task runs in its own git worktree and branch (agent/task-<id>-<slug>) so parallel tasks do not conflict; completed branches can be published with a push, revised with human feedback, or cleaned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b4d7766ba7179e12bc118a871de7686f386d98cca80becf85f9bfdf4a2ca773",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 31,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L23-L31"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L37-L37"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_644d0b354cbc0a3d026f7f5f9cbb7875ceba6812541f6d644d1b6252479ed0d1",
+        "slc_d01c3e0a3a4b8091447f21d732bc7ef7c173f06e95467b4e69620e66a1e8ef9a",
+        "slc_da6418d22c2122a85501127de25b3a626179ce06c961cb74b51639bac9b821fe"
+      ],
+      "text": "A free-running Project Explorer agent continuously crawls the codebase to map structure and dependencies, surfacing refactors, bugs, and missing tests, and its proposals become prioritized tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0347ac01d4688494556d6e84c979ec96a47c8389b044e2be299147c5e2248eb4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 31,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L23-L31"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L53-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_644d0b354cbc0a3d026f7f5f9cbb7875ceba6812541f6d644d1b6252479ed0d1",
+        "slc_7fd37859ae5cae0a7d9db73f2fc16108c6a1f6bcb06b9c1d21604f3cfc9e012a"
+      ],
+      "text": "The system scans repositories for TODO/FIXME comments and uses an AI analyzer to score each item's feasibility and difficulty, producing a backlog that can be selectively dispatched as tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef6c888076b2cef2229a43b350446cf9afd96d5506eef909ea5df492f519b9ee",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "4f4125389bc24d012ab5a78129189158b2a08fbb",
+          "line_end": 7,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/requirements.txt#L1-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6717f1f2024f529858afc060da3dcf245f3ca8739057e0928dd98de9393aaea9"
+      ],
+      "text": "requirements.txt lists fastapi, uvicorn, pyyaml, aiosqlite, jinja2, python-multipart, and pytest as dependencies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7aaaa7164e3519847225bd89432390c4d4e3576511b27e2460c4769fa9b33db7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 128,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L126-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ed82f031f1fb3946f265ca930a032d1ab4e2cf3561ae5c98d9c55374ac8341d"
+      ],
+      "text": "Running the product requires Python 3.11+, the opencode CLI configured with at least one model provider, and a git repository to operate on."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43a5a9c1c4c513e0fdf209e8c3e37569af8cb98d85ac855d123422fb271e549e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L138-L138"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 203,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L203-L203"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L141-L141"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 207,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L207-L207"
+        },
+        {
+          "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+          "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+          "line_end": 135,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "zclllyybb/opengiraffe",
+          "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md#L134-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_150f542b7a251ac18ab230b9b8c0363e43799f44cf096c1c4ae78e982b9686cd",
+        "slc_459f1fb187b41f84f45f1330d9145cd7d8bb3932e6e95e7b56ae089dfd07aa0a",
+        "slc_95fec7fa9e1f822da62d82078b2b1078ea455e07095be7482946283134ae7456",
+        "slc_eb793582558715e95fce31b90f7f0983b74d4ec794e5091ee131934e2d908d45",
+        "slc_ef4eedf3f6807bc88e024621ad61d9ad115f83afee0f1311f5ea4806eaa0e297"
+      ],
+      "text": "Repository development practice: the project uses pytest with tests in tests/ where all model I/O is mocked, run via python -m pytest tests/ -v; setup involves cloning, pip installing requirements, and copying config.yaml.template."
+    }
+  ],
+  "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 224,
+        "path": "README.md",
+        "size": 12913
+      },
+      {
+        "lines": 7,
+        "path": "requirements.txt",
+        "size": 113
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 112,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_9b5bf1967b2a55b0943354d6ad9564f4",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zclllyybb/opengiraffe/40180a705d315c6d54aca045fe80646dd9ceb443/b25edc3f887cf4c8/manifest.json",
+  "package_id": "pkg_4684b82f0ba50534ceddd7044ad141fa670d0ff3ee4e9a69f99be2d89e05c869",
+  "repo": "zclllyybb/opengiraffe",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fd4d70878e48c7ec317c5745c5f536e69a65bc62def3acac9511bbcefc584497",
+  "snapshot_id": "b25edc3f887cf4c8",
+  "sources": [
+    {
+      "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+      "git_sha": "38be76628c91b8572062206685b76a5d0f0164ce",
+      "lines": 224,
+      "path": "README.md",
+      "repository": "zclllyybb/opengiraffe",
+      "sha256": "413df0e0cf446d7b390750d7bfdbfc8ac7ef170716e7f7d3709aa5387e966278",
+      "source_id": "src_e74699f9a19c5b9da9f50f5287ab9b2a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/README.md"
+    },
+    {
+      "commit": "40180a705d315c6d54aca045fe80646dd9ceb443",
+      "git_sha": "4f4125389bc24d012ab5a78129189158b2a08fbb",
+      "lines": 7,
+      "path": "requirements.txt",
+      "repository": "zclllyybb/opengiraffe",
+      "sha256": "0781fc607599e9f4e24814fbd2ed7fc6bbe8879b235d180c6416b104c36053f2",
+      "source_id": "src_0ccf27d8c84c5ae69b65035e47f10eb1",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/zclllyybb/OpenGiraffe/blob/40180a705d315c6d54aca045fe80646dd9ceb443/requirements.txt"
+    }
+  ],
+  "summary": "The evidence is README-only documentation for Open Giraffe, a daemon-based multi-agent coding orchestrator built on the opencode CLI, describing its pipeline, CLI, dashboard, configuration, and dependencies. No source code is included in the slices, so all claims are documented rather than code-inspected.",
+  "superseded_claim_ids": []
+}

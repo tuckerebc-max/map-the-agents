@@ -1,0 +1,722 @@
+{
+  "applied_operation_id": "op_5e7d7b136e9b4d7dbd2d7ab16a1938b2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0270bff2999b9c39fc4194091e796a3d89370c583c390b8821e1e4dbe90b530f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64a67dd702c108246bda7fd17080cd0c836f15886de621e79de8dce524d2adad"
+      ],
+      "text": "Demo2APK is described as a one-click packaging tool that turns AI-generated demos or projects into installable APKs without requiring users to set up an Android development environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a22a0ce6b7cbcd7776363bf09bed70ec71149088007629f5f80fb8049c7af4b6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "b63419ded5e94b8f2de76093b0068bf343e70531",
+          "line_end": 6,
+          "line_start": 5,
+          "path": "docs/API.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/API.md#L5-L6"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "b63419ded5e94b8f2de76093b0068bf343e70531",
+          "line_end": 17,
+          "line_start": 10,
+          "path": "docs/API.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/API.md#L10-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21a6959f2bc21493588cb7ebd9f6d24aaad52e8a0f277d95d26d0eb4d54c1bea",
+        "slc_9b6ecf6e8b2bb6c74c37dfef81f5c307a5756dbec6541d69f5f8cfe3b1ad47e5"
+      ],
+      "text": "The REST API exposes GET /health, POST /api/build/html, POST /api/build/zip, GET /api/build/:taskId/status, GET /api/build/:taskId/download, and DELETE /api/build/:taskId, using multipart/form-data uploads and JSON responses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e318b7f7c0a936b6e02535323d8fdf44258d2fa9f79256818bcbd9e5a3c48ec",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "b63419ded5e94b8f2de76093b0068bf343e70531",
+          "line_end": 50,
+          "line_start": 45,
+          "path": "docs/API.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/API.md#L45-L50"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "b63419ded5e94b8f2de76093b0068bf343e70531",
+          "line_end": 74,
+          "line_start": 69,
+          "path": "docs/API.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/API.md#L69-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_022053edc717b2c5f2cbb6b15c2bf6d53204b117f45b50fb3039e69645fa01c6",
+        "slc_adb35e5cd9d3771a3926dd952507d51759254c40390d048bf170c5f9d0dfa467"
+      ],
+      "text": "Build endpoints accept optional appName, appId, and publishPwa fields; appName defaults differ per endpoint (MyVibeApp for HTML, MyReactApp for ZIP)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6180aefa02712763c546bc0b570b9d9c7348b61f9ab2aef449ac7845977f0566",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "b63419ded5e94b8f2de76093b0068bf343e70531",
+          "line_end": 91,
+          "line_start": 87,
+          "path": "docs/API.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/API.md#L87-L91"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "b63419ded5e94b8f2de76093b0068bf343e70531",
+          "line_end": 108,
+          "line_start": 95,
+          "path": "docs/API.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/API.md#L95-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a7884b39e025e3e2888c0bddf7a008c9d873bc120953921feb916a0b3e2deff",
+        "slc_13504a93ca93e3c759ee58cc9bd584a952609ab6e50ed97acc3afe998612dc17"
+      ],
+      "text": "Task status queries return pending, active, completed, or failed states, with progress including a message and percentage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4c63bec5d0fa8f5b2b1e4b9689e5f2aa8e2bab70a06839b7cb0d60a076223c7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 46,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L31-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e8da9f4e9697de557bc0bd16349eaeacb87d289747e02f0d17b7bf83c400c75c"
+      ],
+      "text": "The tool auto-detects input type (HTML, React, ZIP) and picks a build strategy, supporting single files (.html/.js/.jsx/.ts/.tsx), pasted code, and ZIP archives of React/Vite or multi-file HTML projects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_251f8c3a6d7bbee16e6799ae6c93dda4c268bdd0716f7b62703d3c368877d072",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 46,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L31-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e8da9f4e9697de557bc0bd16349eaeacb87d289747e02f0d17b7bf83c400c75c"
+      ],
+      "text": "Users can customize app name, version, icon, and select Android permissions via the UI, defaulting to INTERNET only; optional PWA generation is available alongside the APK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf3fe1f77c2ec377089cda246bd6835295bd977cc8376d8d8a4f1f04df747ef8",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 209,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L208-L209"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 227,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L223-L227"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 204,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L204-L204"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7523d60a29353c73af8bf92e701af5d292b09f3d717bb3bb8ddd6703072a580c",
+        "slc_c01b97e75717f90658e5281ce42488b2f8ccc12d3c8f237b9a3a1083997656cf",
+        "slc_ea1c0d94cf0d8a80ae2fabcad8860668731c13726a629702ff45a3f5283fc9a7"
+      ],
+      "text": "Builds run through a queue backed by BullMQ and Redis, with configurable worker concurrency (default 2) and excess builds queued automatically."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_397f60455153d3ef1b4a7e4e47bb29194f3fdd93da0c9a6ecb15504e5a753915",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 166,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L165-L166"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L172-L172"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 176,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L175-L176"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L163-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4581e74e2f92f470f3b22441aa49033e9bc93b15af7d7f3b0e1263736dc89667",
+        "slc_e6ed81ec27d6a7388d54c9e64c64677a45dff9f1834605f7748f8dd357a24ad6",
+        "slc_e95bfe14fa05709c1978309d73b01689c3e33ec80ede103e1d61d1071b85325a",
+        "slc_ee4b88040e1dfecac7afca5cabc98fda7d86cba60d27ad4f1f55543fa44a84eb"
+      ],
+      "text": "Rate limiting is enabled by default at 5 requests per hour per IP, configurable or disableable via RATE_LIMIT_ENABLED and RATE_LIMIT_MAX environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ab121a079c5034376db1f78cf1526943a23dfde72e7928495d0a374fd54dbd2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 189,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L189-L189"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 200,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L198-L200"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 183,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L182-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53689905b23e000007c3f767c38a3e1f3a87322cee2eebd61053f8920c0da603",
+        "slc_981f82d2cd687707636d5d3387639c9c55bd81a6959b99001cd03afe132478dc",
+        "slc_f3ebcce23a4bab724fba298b74cb7c74e73282a5fffacc3291070f63529a857b"
+      ],
+      "text": "Generated APKs and temp files are deleted after 2 hours by default, with a background cleanup worker scanning every 30 minutes; retention and cleanup are configurable via environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed7ba9ac84b9af261223676423343b7df889f41b6f6ba76b23b06590aaf3b4e9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 227,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L223-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c01b97e75717f90658e5281ce42488b2f8ccc12d3c8f237b9a3a1083997656cf"
+      ],
+      "text": "The stated tech stack is React/Vite/Tailwind frontend, Node.js/Fastify/TypeScript backend, BullMQ with Redis for queuing, and Cordova, Capacitor, and Gradle for APK building."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b90ff9d224ba999ff0d4fdbdb24b0b4a83732cadc22826e6bab5e4a1b4cac05",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "20dd0fa29438a85e22d2aeddcf9ccd8710057dc4",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "DEPLOYMENT.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/DEPLOYMENT.md#L5-L5"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L77-L77"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "20dd0fa29438a85e22d2aeddcf9ccd8710057dc4",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "DEPLOYMENT.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/DEPLOYMENT.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c130a95cb13423a9d42937a39075f85d0312c2156d35b918a13bf1df2fbe785",
+        "slc_756a4c9596fd0205caacdf1e025eff1fc36ccd8f401a5773396bada4a83d4c50",
+        "slc_e08c18ad8f79607bd433e19a5cfb4cbbd4693aa1feb4ea68f30fa9f66666a7d1"
+      ],
+      "text": "Prebuilt Docker images support only linux/amd64; macOS and ARM users are directed to local development mode instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a37f5bbc9ec7a5de37a77de719d276b15e81f79e00e41d47f8ec971053c6474",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "fecd247c536e450324c27b2fadfebfaac48e2018",
+          "line_end": 54,
+          "line_start": 53,
+          "path": "docs/ARM64_BUILD_ISSUES.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/ARM64_BUILD_ISSUES.md#L53-L54"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "fecd247c536e450324c27b2fadfebfaac48e2018",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/ARM64_BUILD_ISSUES.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/ARM64_BUILD_ISSUES.md#L17-L17"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "fecd247c536e450324c27b2fadfebfaac48e2018",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "docs/ARM64_BUILD_ISSUES.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/ARM64_BUILD_ISSUES.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cda0f10e26916263cd926642e45daeea163247669e54d537be763b8819e6872",
+        "slc_90213fceb69bb3170b5bb82cd4abd79ad2a8a3a6e2e454fcce17298b5c7bb34b",
+        "slc_ae3174861c8f72bd603266a9dca0abdfdf79a89f0830131d587df2bdbe032883"
+      ],
+      "text": "Google does not publish Linux ARM64 Android build-tools (notably aapt2), so ARM64 Docker builds rely on a temporary Rosetta x86_64 emulation workaround that is slower than native."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d2fd09085052fbe4070a8dad70b35c230583b33f6f7b85c6f435fefb22daf1f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L111-L111"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L117-L120"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L114-L114"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L108-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ce201a4b84cc0060d3883540afc6a96bb495916bd756988cf9e1e941b9239ed",
+        "slc_3e1499199c602cdecf411fc7cd93728df6666b1500842d9378a03d3117bb5267",
+        "slc_4291b8c84b44a2ed8e196fee9bd72e924f46f3105615eed213c3170d5094f314",
+        "slc_7849201589646036be4223e92a248089d987b595a5eb2049239e903b80a4644b"
+      ],
+      "text": "Repository development practice: local development runs pnpm install, a Redis container, pnpm build, then pnpm dev/worker/frontend in separate terminals serving ports 3000 and 5173."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_927abcb32a4fd6176cc302fa5b1a5b1c0878a2e279c489e79c680220ebbfb611",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 67,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L60-L67"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L50-L50"
+        },
+        {
+          "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+          "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+          "line_end": 54,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "deadwavewave/demo2apk",
+          "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md#L52-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09045757c5310e80e7a8af491e1e1fe52e55d3c6f3aad8f76327730228c81cf6",
+        "slc_1ad24fcc8bc0ac77037b380c1b17b279c7a289ace877b34041f08e0f0913d941",
+        "slc_f2814b20f0367b940f3accb71832c1bf07dd585e3239ba66afc7b45dff771d6c"
+      ],
+      "text": "Repository development practice: React/Vite projects targeting APK output are advised to add @vitejs/plugin-legacy with terser, set legacy targets like chrome >= 52 / android >= 5, and use a relative base ('./') to avoid blank screens."
+    }
+  ],
+  "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 235,
+        "path": "README.md",
+        "size": 7700
+      },
+      {
+        "lines": 124,
+        "path": "docs/API.md",
+        "size": 2905
+      },
+      {
+        "lines": 558,
+        "path": "DEPLOYMENT.md",
+        "size": 11936
+      },
+      {
+        "lines": 236,
+        "path": "README_CN.md",
+        "size": 7934
+      },
+      {
+        "lines": 89,
+        "path": "docs/ARM64_BUILD_ISSUES.md",
+        "size": 3357
+      },
+      {
+        "lines": 121,
+        "path": "docs/ENV_VARIABLES.md",
+        "size": 5078
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/LOGGING.md",
+        "reason": "file-budget",
+        "size": 9759
+      },
+      {
+        "path": "docs/PWA_PUBLISHING.md",
+        "reason": "file-budget",
+        "size": 6340
+      },
+      {
+        "path": "docs/REACT_PROJECT_REQUIREMENTS.md",
+        "reason": "file-budget",
+        "size": 6545
+      },
+      {
+        "path": "docs/RELEASE_GUIDE.md",
+        "reason": "file-budget",
+        "size": 2351
+      },
+      {
+        "path": "docs/archive/QUICKSTART.md",
+        "reason": "file-budget",
+        "size": 6614
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 5560
+      }
+    ],
+    "omitted_count": 6,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 108,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 12,
+      "complete": false,
+      "omitted": 6,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ac350b0723915b69b1c1875ea1ba1318",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 4,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/deadwavewave/demo2apk/1405c4405c96e8ee5e8143f47c39d28203fc6e89/df9b1e3a27b62d02/manifest.json",
+  "package_id": "pkg_129f19283d731f88fd6ad12e047a9e78bfcceb98b01dd88c19f371497944d0eb",
+  "repo": "deadwavewave/demo2apk",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "bf1e9b130f5d80142064a2a4aaba965e1bad0ab01f563d8a1b8e5856c8769a42",
+  "snapshot_id": "df9b1e3a27b62d02",
+  "sources": [
+    {
+      "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+      "git_sha": "20dd0fa29438a85e22d2aeddcf9ccd8710057dc4",
+      "lines": 558,
+      "path": "DEPLOYMENT.md",
+      "repository": "deadwavewave/demo2apk",
+      "sha256": "abaf7d188ee05d6786d9e7c4e84102e17b2e4d88823e31231e93ed9d33c6a92a",
+      "source_id": "src_ff0fbb1b51615038b82abd365fc5ffc9",
+      "stored": "deployment.md-04615394c116.md",
+      "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/DEPLOYMENT.md"
+    },
+    {
+      "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+      "git_sha": "1db40a9e8184007191fef83cdbef28459c7fd53b",
+      "lines": 235,
+      "path": "README.md",
+      "repository": "deadwavewave/demo2apk",
+      "sha256": "6fff22f84bcac3fca06cf256d1bd67e608c5610ecd3d00e52bc2f1c8e24fa592",
+      "source_id": "src_8bf4a062790f5a19af7c33c7542aeafd",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README.md"
+    },
+    {
+      "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+      "git_sha": "55b1c9f38f370c1ad6ae51ba50dd15fd47fc12b8",
+      "lines": 236,
+      "path": "README_CN.md",
+      "repository": "deadwavewave/demo2apk",
+      "sha256": "f2121205ac91c48fc7479889ec73a0e36f6a7f3e406baac643e1d67a061f9751",
+      "source_id": "src_01117926182150208e82ffc059fd445a",
+      "stored": "readme_cn.md-e6db595f1598.md",
+      "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/README_CN.md"
+    },
+    {
+      "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+      "git_sha": "b63419ded5e94b8f2de76093b0068bf343e70531",
+      "lines": 124,
+      "path": "docs/API.md",
+      "repository": "deadwavewave/demo2apk",
+      "sha256": "63ccedd03eec1007c3b6179fc14381d69baa403fb5072ecdeb5ea8aefa45156b",
+      "source_id": "src_dbd8de46135153a181a7426f96fb3645",
+      "stored": "api.md-b57590968a12.md",
+      "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/API.md"
+    },
+    {
+      "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+      "git_sha": "fecd247c536e450324c27b2fadfebfaac48e2018",
+      "lines": 89,
+      "path": "docs/ARM64_BUILD_ISSUES.md",
+      "repository": "deadwavewave/demo2apk",
+      "sha256": "d925145f2738837ac25a68560748278fefce85c4b849beb3c8633366f7582d0b",
+      "source_id": "src_5b257e03a2d05950b72d6df8041406b1",
+      "stored": "arm64_build_issues.md-4396035ab6ce.md",
+      "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/ARM64_BUILD_ISSUES.md"
+    },
+    {
+      "commit": "1405c4405c96e8ee5e8143f47c39d28203fc6e89",
+      "git_sha": "1e69242117e3a84196d833bfe26ce5c179aff2cb",
+      "lines": 121,
+      "path": "docs/ENV_VARIABLES.md",
+      "repository": "deadwavewave/demo2apk",
+      "sha256": "e991f465e0b49e1a2233c9a4ede6b133affff4c26722303f899ea74f3bfa4fb7",
+      "source_id": "src_de00aa9435ea598eb5f418e3c60603e4",
+      "stored": "env_variables.md-8f319bbe8203.md",
+      "url": "https://github.com/DeadWaveWave/demo2apk/blob/1405c4405c96e8ee5e8143f47c39d28203fc6e89/docs/ENV_VARIABLES.md"
+    }
+  ],
+  "summary": "Demo2APK is a self-hostable web service that packages uploaded HTML/JS/React/ZIP projects into installable Android APKs via a Cordova/Capacitor/Gradle pipeline, with a REST API, Redis/BullMQ build queue, and configurable rate limiting and file retention. Evidence is documentation-only (README, API docs, deployment and ARM64 notes); no source code or eval harness appears in the snapshot. Evidence coverage: 209 of 306 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,992 @@
+{
+  "applied_operation_id": "op_8e4fdedec8d544e4be85bc88193c10dd",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_327828a440937367a150deb050e5ba08f9d713b5038c163d6163fcec99e96709",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L24-L24"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24ff3cb31f92a94ae311822ec34efe16a82c17adae622a22a40cc1ce53f00165",
+        "slc_99388358e0c71edfa4c853bf1a21eec2b5b373d39d6441bca4cff5945fafc6b4"
+      ],
+      "text": "Dinotty is described as a terminal built for coding agents, letting users run Claude Code, opencode, Codex, or OpenClaw on any device with multi-device session continuity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e961c520bbe8e278f7f24922b134f59a1c29e52a680b64db2d767a77bc657b79",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 149,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L130-L149"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 157,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L153-L157"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 275,
+          "line_start": 275,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L275-L275"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1921627c7e0aa64218e047d28adb699c62a4828ae6e2eba477c831eaae1e7b7f",
+        "slc_1d4355b89524e29784d43c57e04a25243989f51715ebb9a164fe83b1b4df984a",
+        "slc_4783e955e6fa482332567133db895dce4d11d7b2ce946913e24a14591fe145a4"
+      ],
+      "text": "The product uses a server-side virtual terminal: a full VTE parser runs on the server so it knows exact screen state, enabling session recovery and screen snapshots rather than acting as a WebSocket-to-PTY pipe."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a52f411821b431f916e5ec025b42339d70e56b84a8e0e0971550e6cd87cfa59",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 241,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L241-L241"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 209,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L209-L209"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 213,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L211-L213"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20e4b2978a6e4e4cebb3adbe78aee7930cd43d066207b86b0a51d36fc0d18305",
+        "slc_39edbf0692f50955fcc505fd372bd5058998098971289c0b186ef6cd2a909f04",
+        "slc_8e10811065df5c0f98e9f6103f8d91394b0e9a131bd5b7af84f3e47bb88d6ef7"
+      ],
+      "text": "The server defaults to port 8999, accepts a -p flag for a custom port, and is accessed via browser at http://<ip>:8999."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d4904ee0d9cd448f68a8e636c13d2e2678e9103316d5b18ba9c8cbe21d1ea57",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 207,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L207-L207"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 205,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L203-L205"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1d2e4e88b8c38282831e3361be14bcc5148ee4a3bdb97d8120b9d28710ab710",
+        "slc_dc2b2240b764a19d2de17e718d637c815860daef0c2eeefbf6914dc2ae3e7e27"
+      ],
+      "text": "On Windows the default shell is resolved in order DINOTTY_SHELL, pwsh.exe, powershell.exe, then %ComSpec%/cmd.exe, and DINOTTY_SHELL can override auto-detection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad5ff4d42ed18b2dcdbdc097107ab78881e9de0ab1529fd89e68dd9bd142be3b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 273,
+          "line_start": 269,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L269-L273"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b15bf8b4797e31ca245ddd163e7fff063264a712576cec1d11296dc86e7b8a09"
+      ],
+      "text": "The tech stack is Rust with Axum 0.7, Tokio, portable-pty, vte, russh, and russh-sftp on the backend; Vue 3, TypeScript, Vite, and xterm.js 5 on the frontend; Tauri for desktop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ba3e8b1149572aea89407f5a496ca087ed3c790077661672e3868fff681339d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 149,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L130-L149"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L34-L34"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L86-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1921627c7e0aa64218e047d28adb699c62a4828ae6e2eba477c831eaae1e7b7f",
+        "slc_82f9502eca498646d758f0265ed134515b3f4f65129932c9b6d6877b189968a9",
+        "slc_fb5fafba5d60408142aa825455e48cb25762a6cfc78a0d1613bd052ccaae2f1b"
+      ],
+      "text": "The UI treats terminals, plugins, files, SSH sessions, and web previews as draggable panes, with split panes, multi-tab management, and cross-tab pane moves."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d19ce7efd39552779f364d828d9294a2f823fa5bd8901fd1cabbe34579ab64d8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 149,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L130-L149"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L68-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1921627c7e0aa64218e047d28adb699c62a4828ae6e2eba477c831eaae1e7b7f",
+        "slc_f09903cf6e088a711e910cba4b8a30f4711a0a5c97ad69160c1f1c9ef92969cb"
+      ],
+      "text": "Dinotty includes a built-in SSH client supporting password and key auth, with SFTP file browsing, editing, upload, and download auto-enabled over SSH connections."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_866ed5a8d49dd5f4862de64277097f58b3f46fb18ca2d5b6ce9fd4f3bebcbf64",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L80-L80"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L102-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65404af3cd4734aa293301d3e985378931f2f7905e097a1527e186d03dd31b76",
+        "slc_ce91c54fd566034f10b30eafbee5d8c6714e3a476ab53a6cb5c537657cbb0066"
+      ],
+      "text": "A plugin system supports hot-reloadable JavaScript plugins with an API for custom commands, terminal interaction, event subscriptions, and CLI integration; built-ins include CC Switch and JSON Formatter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e0eaa98a7875abc9ea0ead65b0c1b3b3356de85b27fdc35fdfc3c8518fdd5ce",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 149,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L130-L149"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1921627c7e0aa64218e047d28adb699c62a4828ae6e2eba477c831eaae1e7b7f",
+        "slc_5b1b3b06bd6e87265674d4c436792771ab0f6bfe8ffa5c656b0e40151c2e1c93"
+      ],
+      "text": "PTY processes survive disconnection with auto-reconnect using exponential backoff; refreshing the page restores the session where it left off."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e5e8eba659fa5cc0ed6a9da852dd166456e37e47faa1e5de7d32d8de78b76037",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 259,
+          "line_start": 259,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L259-L259"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_abbef8e42716ed9f5fc77bbe11903d32e8695ff58655a4857130119db2ec166a"
+      ],
+      "text": "Access control includes a default token login plus a mutually exclusive 6-digit verification-code mode: codes are server-generated, pushed via a notifier plugin, valid 5 minutes, single-use, and invalidated after 5 wrong attempts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7b19fc28e6a895181ffd780e67090e25872687f745634b8f80260fd16c37b8f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 261,
+          "line_start": 261,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L261-L261"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bb60295928e0cfab466d7ab1692d28440faddebcf2a54c1c7cc09e5758cca78"
+      ],
+      "text": "Verification-code login requires a notifier plugin subscribed to the auth.verification_code event; uninstalling such a plugin while that mode is active is rejected with HTTP 409 to prevent lockout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e172be5daf7108b12c0f42d2bfc0608625abd8bc1b6b0f904b7f3171213b7b4a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L114-L114"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 275,
+          "line_start": 275,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L275-L275"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16ccf84b88e88fef4ef8424222f1c39e1f16a4f74eafb696c38fb9514bb64d51",
+        "slc_4783e955e6fa482332567133db895dce4d11d7b2ce946913e24a14591fe145a4"
+      ],
+      "text": "The server is described as a single Rust binary with zero dependencies, self-hosted with no subscription or relay, keeping data on the user's machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f84b58cda54efe646e02dd7e19008779928e9b62f92e3b782a5df1e44365d7f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 227,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L226-L227"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 223,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L223-L223"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 245,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L245-L245"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 220,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L219-L220"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 249,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L248-L249"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3701ead66c7921bb5a3ea5ac746df5be4fdb030b0dac2e378bd4ab7033258c67",
+        "slc_4a69159d3bea3eb30229ae19ff21c29d48b8b2947128e27dbd167c6b6a2e463a",
+        "slc_71c8feddff1ba50d5e6d4b9f220eb9d0ec97410e328729bed72d9ebd5eca8c21",
+        "slc_f06af0d8c586c3a14f235a90ea59d68632afcfb4bd67a80427a2ee08e49ebe0e",
+        "slc_fedcda12a70fe1837dd00ca00a403e62c84e134282f31032b13cff0e119a771d"
+      ],
+      "text": "Repository development practice: building from source involves a shallow clone of the dev branch, pnpm install and build in frontend/, then cargo run; debug logging uses RUST_LOG=debug and the frontend type-checks with npx vue-tsc --noEmit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b582603b3caec7536325a359f622ce4cbb9bc577954b352c2a8869cb02fda0a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 173,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L173-L173"
+        },
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 177,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L175-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e314bb9f289bab94333495721279b787ae7ee51d8dbaaf8db1c5f6c783f9682",
+        "slc_cf419344656be39ecb2a8e5bfac1afb9a71d6a37bc3f3d5ff781344807565932"
+      ],
+      "text": "The macOS app is unsigned, so macOS may report it as damaged; the README instructs running 'xattr -cr /Applications/Dinotty.app' after installation to remove the restriction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ddcbc6ca82ab604c7f4d80f3b52f7e2100bee9f42bf6f8ca9acd27d7dedfc03",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+          "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+          "line_end": 291,
+          "line_start": 279,
+          "path": "README.md",
+          "repository": "xichan96/dinotty",
+          "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md#L279-L291"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2be8bd3774d6e8967d9a20f514259f0ed7ddaaa86b3d8db7c60e0b908f206a03"
+      ],
+      "text": "A built-in MCP JSON-RPC server is documented, allowing AI assistants to operate terminal sessions."
+    }
+  ],
+  "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 307,
+        "path": "README.md",
+        "size": 14697
+      },
+      {
+        "lines": 281,
+        "path": "docs/README.de.md",
+        "size": 13630
+      },
+      {
+        "lines": 281,
+        "path": "docs/README.es.md",
+        "size": 14358
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/README.fr.md",
+        "reason": "file-budget",
+        "size": 14307
+      },
+      {
+        "path": "docs/README.ko.md",
+        "reason": "file-budget",
+        "size": 14252
+      },
+      {
+        "path": "docs/README.pt.md",
+        "reason": "file-budget",
+        "size": 14018
+      },
+      {
+        "path": "docs/README.ru.md",
+        "reason": "file-budget",
+        "size": 20816
+      },
+      {
+        "path": "docs/README.zh.md",
+        "reason": "file-budget",
+        "size": 13781
+      },
+      {
+        "path": "docs/en/api/clipboard-api.md",
+        "reason": "file-budget",
+        "size": 899
+      },
+      {
+        "path": "docs/en/api/index.md",
+        "reason": "file-budget",
+        "size": 4868
+      },
+      {
+        "path": "docs/en/api/mcp-server.md",
+        "reason": "file-budget",
+        "size": 10967
+      },
+      {
+        "path": "docs/en/api/mission-control-api.md",
+        "reason": "file-budget",
+        "size": 7810
+      },
+      {
+        "path": "docs/en/api/open-api.md",
+        "reason": "file-budget",
+        "size": 13603
+      },
+      {
+        "path": "docs/en/api/tabs-panes-api.md",
+        "reason": "file-budget",
+        "size": 14959
+      },
+      {
+        "path": "docs/en/features/file-editor.md",
+        "reason": "file-budget",
+        "size": 3982
+      },
+      {
+        "path": "docs/en/features/notifications.md",
+        "reason": "file-budget",
+        "size": 8653
+      },
+      {
+        "path": "docs/en/getting-started/comparison.md",
+        "reason": "file-budget",
+        "size": 3613
+      },
+      {
+        "path": "docs/en/getting-started/contributing.md",
+        "reason": "file-budget",
+        "size": 2295
+      },
+      {
+        "path": "docs/en/getting-started/deployment.md",
+        "reason": "file-budget",
+        "size": 14494
+      },
+      {
+        "path": "docs/en/getting-started/releasing.md",
+        "reason": "file-budget",
+        "size": 10771
+      },
+      {
+        "path": "docs/en/guide/appearance.md",
+        "reason": "file-budget",
+        "size": 3176
+      },
+      {
+        "path": "docs/en/guide/broadcast.md",
+        "reason": "file-budget",
+        "size": 2336
+      },
+      {
+        "path": "docs/en/guide/command-favorites.md",
+        "reason": "file-budget",
+        "size": 2537
+      },
+      {
+        "path": "docs/en/guide/mobile-keyboard.md",
+        "reason": "file-budget",
+        "size": 3498
+      },
+      {
+        "path": "docs/en/guide/multi-device-sync.md",
+        "reason": "file-budget",
+        "size": 3263
+      },
+      {
+        "path": "docs/en/guide/ssh-sftp.md",
+        "reason": "file-budget",
+        "size": 3792
+      },
+      {
+        "path": "docs/en/guide/system-monitor.md",
+        "reason": "file-budget",
+        "size": 2508
+      },
+      {
+        "path": "docs/en/guide/tabs-and-panes.md",
+        "reason": "file-budget",
+        "size": 3585
+      },
+      {
+        "path": "docs/en/guide/web-preview.md",
+        "reason": "file-budget",
+        "size": 3304
+      },
+      {
+        "path": "docs/en/guide/workspace.md",
+        "reason": "file-budget",
+        "size": 2754
+      },
+      {
+        "path": "docs/en/index.md",
+        "reason": "file-budget",
+        "size": 3418
+      },
+      {
+        "path": "docs/en/installation.md",
+        "reason": "file-budget",
+        "size": 6813
+      },
+      {
+        "path": "docs/en/internals/audit-webhook.md",
+        "reason": "file-budget",
+        "size": 5689
+      },
+      {
+        "path": "docs/en/internals/dev-map.md",
+        "reason": "file-budget",
+        "size": 4062
+      },
+      {
+        "path": "docs/en/internals/event-bus.md",
+        "reason": "file-budget",
+        "size": 4508
+      },
+      {
+        "path": "docs/en/internals/float-previews.md",
+        "reason": "file-budget",
+        "size": 15698
+      },
+      {
+        "path": "docs/en/internals/notification-driven-supervision.md",
+        "reason": "file-budget",
+        "size": 13268
+      },
+      {
+        "path": "docs/en/internals/token-system.md",
+        "reason": "file-budget",
+        "size": 6327
+      },
+      {
+        "path": "docs/en/introduction.md",
+        "reason": "file-budget",
+        "size": 3752
+      },
+      {
+        "path": "docs/en/plugins/plugin-development.md",
+        "reason": "file-budget",
+        "size": 30444
+      },
+      {
+        "path": "docs/en/plugins/plugins.md",
+        "reason": "file-budget",
+        "size": 6767
+      },
+      {
+        "path": "docs/en/roadmap.md",
+        "reason": "file-budget",
+        "size": 5085
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 536
+      },
+      {
+        "path": "docs/zh/api/clipboard-api.md",
+        "reason": "file-budget",
+        "size": 1590
+      },
+      {
+        "path": "docs/zh/api/index.md",
+        "reason": "file-budget",
+        "size": 4792
+      },
+      {
+        "path": "docs/zh/api/mcp-server.md",
+        "reason": "file-budget",
+        "size": 10328
+      },
+      {
+        "path": "docs/zh/api/mission-control-api.md",
+        "reason": "file-budget",
+        "size": 7636
+      },
+      {
+        "path": "docs/zh/api/open-api.md",
+        "reason": "file-budget",
+        "size": 13347
+      },
+      {
+        "path": "docs/zh/api/tabs-panes-api.md",
+        "reason": "file-budget",
+        "size": 14730
+      },
+      {
+        "path": "docs/zh/features/file-editor.md",
+        "reason": "file-budget",
+        "size": 3770
+      },
+      {
+        "path": "docs/zh/features/notifications.md",
+        "reason": "file-budget",
+        "size": 7946
+      },
+      {
+        "path": "docs/zh/getting-started/comparison.md",
+        "reason": "file-budget",
+        "size": 3334
+      },
+      {
+        "path": "docs/zh/getting-started/contributing.md",
+        "reason": "file-budget",
+        "size": 2197
+      },
+      {
+        "path": "docs/zh/getting-started/deployment.md",
+        "reason": "file-budget",
+        "size": 13145
+      },
+      {
+        "path": "docs/zh/getting-started/releasing.md",
+        "reason": "file-budget",
+        "size": 9774
+      },
+      {
+        "path": "docs/zh/guide/appearance.md",
+        "reason": "file-budget",
+        "size": 3062
+      },
+      {
+        "path": "docs/zh/guide/broadcast.md",
+        "reason": "file-budget",
+        "size": 2192
+      },
+      {
+        "path": "docs/zh/guide/command-favorites.md",
+        "reason": "file-budget",
+        "size": 2317
+      },
+      {
+        "path": "docs/zh/guide/mobile-keyboard.md",
+        "reason": "file-budget",
+        "size": 3394
+      },
+      {
+        "path": "docs/zh/guide/multi-device-sync.md",
+        "reason": "file-budget",
+        "size": 3084
+      },
+      {
+        "path": "docs/zh/guide/ssh-sftp.md",
+        "reason": "file-budget",
+        "size": 3479
+      },
+      {
+        "path": "docs/zh/guide/system-monitor.md",
+        "reason": "file-budget",
+        "size": 2330
+      },
+      {
+        "path": "docs/zh/guide/tabs-and-panes.md",
+        "reason": "file-budget",
+        "size": 3477
+      },
+      {
+        "path": "docs/zh/guide/web-preview.md",
+        "reason": "file-budget",
+        "size": 3190
+      },
+      {
+        "path": "docs/zh/guide/workspace.md",
+        "reason": "file-budget",
+        "size": 2633
+      },
+      {
+        "path": "docs/zh/index.md",
+        "reason": "file-budget",
+        "size": 3257
+      },
+      {
+        "path": "docs/zh/installation.md",
+        "reason": "file-budget",
+        "size": 6661
+      },
+      {
+        "path": "docs/zh/internals/audit-webhook.md",
+        "reason": "file-budget",
+        "size": 5384
+      },
+      {
+        "path": "docs/zh/internals/event-bus.md",
+        "reason": "file-budget",
+        "size": 4336
+      },
+      {
+        "path": "docs/zh/internals/token-system.md",
+        "reason": "file-budget",
+        "size": 5893
+      },
+      {
+        "path": "docs/zh/introduction.md",
+        "reason": "file-budget",
+        "size": 3460
+      },
+      {
+        "path": "docs/zh/plugins/plugin-development.md",
+        "reason": "file-budget",
+        "size": 29242
+      },
+      {
+        "path": "docs/zh/plugins/plugins.md",
+        "reason": "file-budget",
+        "size": 5971
+      },
+      {
+        "path": "docs/zh/roadmap.md",
+        "reason": "file-budget",
+        "size": 4471
+      }
+    ],
+    "omitted_count": 71,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 928,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 74,
+      "complete": false,
+      "omitted": 71,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_940112ee4f7c56f6ab5a1bf0b0ef842d",
+  "facets": {
+    "components": 4,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/xichan96/dinotty/b8081196ed619e30ca758c7f763187d160e6ec93/4521443326693707/manifest.json",
+  "package_id": "pkg_8285e2c52eff162bfcf579f59774c6330de49926504e0a8ead9c32c476119002",
+  "repo": "xichan96/dinotty",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e34f52445b9c6659964939a37889e6f29d492cf16f69c857648e58e95f5b1ecf",
+  "snapshot_id": "4521443326693707",
+  "sources": [
+    {
+      "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+      "git_sha": "c48d5990f85f6960c23f518d152408bfab5b90d5",
+      "lines": 307,
+      "path": "README.md",
+      "repository": "xichan96/dinotty",
+      "sha256": "0fc8db293a57f5280f538b49dcb1abbfd3e628d24fc0de436d3a7b33ed7d099e",
+      "source_id": "src_1b0d30a9c5a1523e89703c91ef5375fc",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/README.md"
+    },
+    {
+      "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+      "git_sha": "db9fd50449965f81dc55698bf162721223ed3bd3",
+      "lines": 281,
+      "path": "docs/README.de.md",
+      "repository": "xichan96/dinotty",
+      "sha256": "224d7ed94aabae229a8e368227b54f8872e0b4e8868e4afeb70ca33d4bb5403a",
+      "source_id": "src_e3c6dadc7bf9541cac707c47ec6be7e2",
+      "stored": "readme.de.md-4fc89010b0a1.md",
+      "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/docs/README.de.md"
+    },
+    {
+      "commit": "b8081196ed619e30ca758c7f763187d160e6ec93",
+      "git_sha": "4f7fafccbe44a804015e6a0a61f956aa9e885943",
+      "lines": 281,
+      "path": "docs/README.es.md",
+      "repository": "xichan96/dinotty",
+      "sha256": "ef06bca54413b2c8157dfafa4e6cf044f03aefd2bdf9a0de506b4e1019b2600d",
+      "source_id": "src_5f6d6a74614656b3b7b436299dce8de3",
+      "stored": "readme.es.md-1a9fe4a98e10.md",
+      "url": "https://github.com/xichan96/dinotty/blob/b8081196ed619e30ca758c7f763187d160e6ec93/docs/README.es.md"
+    }
+  ],
+  "summary": "Evidence consists of README files (English and German) describing Dinotty, a self-hosted Rust/Vue 3 web terminal for running coding agents across devices, with feature lists, install instructions, and tech-stack tables. No source code slices are present, so claims are documentation-based. Evidence coverage: 158 of 211 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

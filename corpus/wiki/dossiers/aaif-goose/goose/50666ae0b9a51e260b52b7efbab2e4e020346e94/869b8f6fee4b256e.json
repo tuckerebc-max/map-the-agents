@@ -1,0 +1,848 @@
+{
+  "applied_operation_id": "op_98aac828ce044e049048a5d8b1ca8dcd",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a4145ef059b19ee79bc1c92cba481d8b6bb6239009d12ab07e59ae746e2d13d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md#L5-L5"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f48b5b1e8ec3fabc8634d372fec1ef681f8b9b9b80c7e946e1e815ac2c9effc1",
+        "slc_f6e3ebaa870d34c147aafbefd1241b4d26f11f69b6495a766f47b449e7a76e25"
+      ],
+      "text": "goose ships as a native desktop app for macOS, Linux, and Windows, a full CLI, and an API for embedding it elsewhere."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65c502908ece83f62016ad90af3aaf8f19a08de6ed3a62e7d7802efebe77b8ab",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43a2888cfc3a95cbb168d5fd58376f950047e5e3957d91a6b22ca4baed627672"
+      ],
+      "text": "The README states goose works with 15+ LLM providers (Anthropic, OpenAI, Google, Ollama, OpenRouter, Azure, Bedrock, and more) and connects to 70+ extensions via the Model Context Protocol."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d92175391619bafe7f38c4633892ad507f2b7ff19e9319c54169ad9419cad65b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 41,
+          "line_start": 18,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L18-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_db5faa1fbeed4de4e9c1b884d182a9649960750999f2ee5b60549afc75176d54"
+      ],
+      "text": "The architecture diagram shows user interfaces (CLI, Electron desktop, custom UIs) above a 'goose serve' ACP HTTP/WebSocket server, above a core goose crate containing providers, MCP extensions, and config/recipes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1272a5154c94de24c28edaa07fccd41d1dcdb0ec32db30a12ac5bb10f2c32726",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6e3ebaa870d34c147aafbefd1241b4d26f11f69b6495a766f47b449e7a76e25"
+      ],
+      "text": "The project is built in Rust, which the README cites for performance and portability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a89211a7d43fa48df74a4fe55671a463eca887a2b9bbe563c8949f09fbf518e3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 24,
+          "line_start": 19,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L19-L24"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 79,
+          "line_start": 74,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L74-L79"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 142,
+          "line_start": 140,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L140-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_187b297ea3768dc913f2032b4c6ce3c25fb4b7cd91f3ff7d6663f10c2c368217",
+        "slc_2043f9fb02d1b4a36a0e493fc6c8552c245ca3b8d3dff21fcf1dd3e4bc7d5ffa",
+        "slc_efc3302bf9a1ddbbe6d385d40ffecc1c94cff1999c43b452b5d666050db336d9"
+      ],
+      "text": "Docker usage is configured via environment variables such as GOOSE_PROVIDER, GOOSE_MODEL, and provider API keys, with CLI commands like 'goose run -t'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_151f0ba04ec45bbfd9aaa4d4fcf3aee489ea7326f329d757729311ef827a3d6a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 50,
+          "line_start": 47,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L47-L50"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 215,
+          "line_start": 212,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L212-L215"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33ec43c7200f0768e77c2d3cf350bd3c12b2185026ac82c749352468d59f10c3",
+        "slc_35aa265c70d494190b281eef4e447e916f22027a975f77ae5abe921389adcc28"
+      ],
+      "text": "The Docker image is a multi-stage Debian Bookworm Slim build of about 340MB containing a 32MB goose binary at /usr/local/bin/goose, optimized with LTO, stripping, and size optimization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15490f3078da6e183c015211675e10a52eaafd70862b8b3efc917a6c4e2d3298",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L155-L155"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 229,
+          "line_start": 225,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L225-L229"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 221,
+          "line_start": 219,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L219-L221"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26694a7b3ef856578a37780532efa1d14cf84ec1572d33468d3bb4ba77551864",
+        "slc_4ef03211f305bee082efc88f44bbc4107d64edb4465462dc17ddbd3cc87607f1",
+        "slc_98a4b7f7ca389383da637284e794725ac5239dd7e9e66ba41d65be6be300dc02"
+      ],
+      "text": "The Docker image runs as a non-root 'goose' user (UID 1000) by default and includes git, curl, ca-certificates, and basic shell utilities."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f82b335d9ae867b65a424b52e048569e3e278dfd7a60edd0785cfd823ad4ed2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 56,
+          "line_start": 53,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L53-L56"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 172,
+          "line_start": 171,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L171-L172"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 97,
+          "line_start": 94,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L94-L97"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 72,
+          "line_start": 70,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L70-L72"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 105,
+          "line_start": 102,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L102-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06017d599e6b783328a24d814bb80767ab05879af2b7fde5ee11302c1bffc0b4",
+        "slc_af3cb097bacdeeffc82b43373fe9ad8958341500633bbfa10a44652388f34fed",
+        "slc_ddd5f440314c027e988c71a864fe8d6fe70e40296cee76140a871c4ba86b8349",
+        "slc_edc1046f755a2b6672265b2acd5dc23596a9286415ebb5893c3c83430b680d66",
+        "slc_f3d273b384e5c4cad76e7db4d7a1ef2cd7b8e874383a7a0c188ede98295bf4dc"
+      ],
+      "text": "Repository development practice: building the Linux desktop app requires Rust, Node.js 22.9.0+, pnpm 10+, and 'just'; the CLI is built with 'cargo build --release -p goose-cli --bin goose' and packaged via Electron Forge (ZIP recommended, plus DEB and Flatpak)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dbddcc38b05e8a4bfafc9d6d60a0c60d47b6799e4246a7cc512151f50251663f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 213,
+          "line_start": 213,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L213-L213"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 218,
+          "line_start": 215,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L215-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19a6d595c306441fa82cc1965fbe0c850c59792f61f8f25530edf36304018d0e",
+        "slc_b5a009005a9b57b712b6a0e2b759977a9ea4adbc8b0de32ba0191521d4a6b9f4"
+      ],
+      "text": "Repository development practice: BUILDING_LINUX.md asks contributors to Linux build changes to test on multiple distributions, update documentation, and consider CI/CD implications."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c3e989bc28ce205ed545b9052e385e3a34da21cc423d6fa21e05995bbb9ffe8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 316,
+          "line_start": 312,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L312-L316"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+          "line_end": 310,
+          "line_start": 310,
+          "path": "BUILDING_DOCKER.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md#L310-L310"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_652d5b33cbccff5b693b5e54dea1abcec6d81617d059fa81fe151cd979c0023c",
+        "slc_8630eecbd2fa49f00757636de40cede1fdabdc24c13431676cc9186243c93cbf"
+      ],
+      "text": "Repository development practice: BUILDING_DOCKER.md asks contributors to Docker changes to test builds on amd64 and arm64, keep image size reasonable, update docs, and test with various LLM providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b839e6628490757b93b6a2352615f2e97932532f3ce9dd0286566deeb78ebd1",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 168,
+          "line_start": 166,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L166-L168"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b41079cc723688d6ef606b4c310a3def64aa8bead6383a9bfa711b1b6ef4d118"
+      ],
+      "text": "Secrets are stored via a SecretStorage mechanism that uses the system keyring by default with a file-based fallback available, and configuration lives at ~/.config/goose/config.yaml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4eaff013ceb7098aa8ce1901e121ba4af682b7fbedc9ef142f3ed788185ea054",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 311,
+          "line_start": 311,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L311-L311"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 315,
+          "line_start": 315,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L315-L315"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 41,
+          "line_start": 18,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L18-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_312db50e9783c953a4706ee2bd8405c057b02e8a6fabebd27f6f2c3509a8ce4c",
+        "slc_33f23972fc59a0273ef3a702b7f6f7d8fab65b4bcfa16716584108d3c4d35aa4",
+        "slc_db5faa1fbeed4de4e9c1b884d182a9649960750999f2ee5b60549afc75176d54"
+      ],
+      "text": "Custom clients can integrate over ACP using 'goose serve', an HTTP/WebSocket server started with a GOOSE_SERVER__SECRET_KEY environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90a58d313ca8dbf01d77aefe432f3a49763619610c7fa359392d60ef7295e5a3",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 54,
+          "line_start": 45,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L45-L54"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 228,
+          "line_start": 218,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L218-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a999b571e07030881bdc2118e138824110826dc7e1f206a502550f5c2bd62ee",
+        "slc_7a7171e3068f0915c1d3d7ba444eaba10397f9bcceeb58011013b6ed93481013"
+      ],
+      "text": "Recipes are YAML-based task definitions that can bundle extensions and, with sub-recipes and subagents, express multi-step workflows; an example recipe declares extensions with stdio type, command, and args."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44a2fcf77239b74a2f11e3ded86372429bb38a3d8196604332da2f10bdba3608",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 136,
+          "line_start": 134,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L134-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4fcf7cc1fe995edbad3337fbbe3582638d62e311f7974d96bd0eb9833cea399c"
+      ],
+      "text": "Configuration precedence is documented as environment variables, then config.yaml, then defaults."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55667549ff19c7a0476eb1387484a9f91aa9273427d87e6ac1bf61fef7ade92b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+          "line_end": 94,
+          "line_start": 92,
+          "path": "CUSTOM_DISTROS.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md#L92-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d1c33abcb28b7dd4308c75f5044a98bfbaa998d216331af35e0694f91a291c21"
+      ],
+      "text": "Telemetry via PostHog is optional and can be disabled by setting GOOSE_DISABLE_TELEMETRY=1, or redirected to a custom PostHog instance by modifying posthog.rs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1c47154b93baa5cc2a617ab589cd5938ceafbb4fd59216e03d5dcc312c749e4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 47,
+          "line_start": 46,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L46-L47"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 177,
+          "line_start": 177,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L177-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dd7c0b3f060d448b83548f374f971eb3fa1cae373314ead8c262be7c57b9e85",
+        "slc_eadd49c511aee9ae5cd179a8e0e68cc345d83408612e063d38d5f8233b3d376a"
+      ],
+      "text": "The musl/portable Linux build disables local-inference (V8) and system-keyring (D-Bus SecretService) because neither is available on Android, and Snap packaging is not currently supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eae365bc1e2cc59600e948b8b4b2b2e3c80ecde0f81b14017aa760033b516687",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L20-L23"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L9-L13"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L25-L28"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "BUILDING_LINUX.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md#L15-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a1e3b1d7b23e90442f822d0e51a76e1cde2d664790a59fb0db30df72c8fd94f",
+        "slc_410df34de2734866da39d71d93d4403df154ea065c54b8504703ec9ba04fac69",
+        "slc_d30b2b2ef98c9ecf441d69dc49a4fe0becb5e38c6c050836bb0ea4c00a1d3d2c",
+        "slc_d602d9c3bdf7222a84c7ae0dec75fad97ec77647517b212c08f07e20ffab6114"
+      ],
+      "text": "BUILDING_LINUX.md gives separate package commands for Debian/Ubuntu, Fedora, openSUSE, and Arch/Manjaro. The Debian command includes protobuf-compiler and libxcb1-dev; Fedora includes libxcb-devel. Its Arch command uses shaderc, while Debian, Fedora, and openSUSE list glslc."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d42dd68b7e82dc402a9e019bf601d1d1dedd3afe2874cd8889545d6903ea5d2a",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md#L23-L23"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+          "line_end": 16,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md#L7-L16"
+        },
+        {
+          "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+          "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "aaif-goose/goose",
+          "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29fbe2bfd04ab1e7d33563a1d0bf7297571f016e7c6e69d954e57397740c2cc7",
+        "slc_92e7a3ddb914c9c37d7102c3c3529ad3222d606eb9bd8fe96736ee6dd30e0ac1",
+        "slc_fd1a436bce9a2e7a4503592444d43d40760bb1e1742c22533be95e5cf127cd42"
+      ],
+      "text": "goose is a general-purpose AI agent that runs locally, intended not just for code but also research, writing, automation, and data analysis; it is part of the Agentic AI Foundation at the Linux Foundation and Apache-2.0 licensed."
+    }
+  ],
+  "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 63,
+        "path": "README.md",
+        "size": 3449
+      },
+      {
+        "lines": 322,
+        "path": "BUILDING_DOCKER.md",
+        "size": 7273
+      },
+      {
+        "lines": 218,
+        "path": "BUILDING_LINUX.md",
+        "size": 5678
+      },
+      {
+        "lines": 812,
+        "path": "CUSTOM_DISTROS.md",
+        "size": 28327
+      },
+      {
+        "lines": 199,
+        "path": "GOVERNANCE.md",
+        "size": 10503
+      },
+      {
+        "lines": 179,
+        "path": "I18N.md",
+        "size": 6158
+      }
+    ],
+    "omitted": [
+      {
+        "path": "MAINTAINERS.md",
+        "reason": "file-budget",
+        "size": 772
+      },
+      {
+        "path": "MERGE_FIXES.md",
+        "reason": "file-budget",
+        "size": 10620
+      },
+      {
+        "path": "RELEASE.md",
+        "reason": "file-budget",
+        "size": 2378
+      },
+      {
+        "path": "RELEASE_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 1046
+      },
+      {
+        "path": "RISCV_SETUP.md",
+        "reason": "file-budget",
+        "size": 8342
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 6076
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 11
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 8513
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 16647
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2551
+      }
+    ],
+    "omitted_count": 10,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2465,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 16,
+      "complete": false,
+      "omitted": 10,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6fa80b0cd22d5aef87a2982a20a20038",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 4,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/869b8f6fee4b256e/manifest.json",
+  "package_id": "pkg_9de5af136f43e86c721076aaca2d2dc85acc2a6fe580eb2675554184cc557784",
+  "repo": "aaif-goose/goose",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "433e5da718f02e0aa14d595aa44cff36b8083fdfb6bfe9de59c9c119b9ba478d",
+  "snapshot_id": "869b8f6fee4b256e",
+  "sources": [
+    {
+      "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+      "git_sha": "a86bd5661ca08d67d8986e17eabe3b3e3bdee87c",
+      "lines": 322,
+      "path": "BUILDING_DOCKER.md",
+      "repository": "aaif-goose/goose",
+      "sha256": "7d97ce6e9012d07437486a3a85a8940bc4733ff2eb2a5b53697cc433c33b1568",
+      "source_id": "src_7ddb8b523268544eb325b86d839f1db7",
+      "stored": "building_docker.md-3435da089dbd.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_DOCKER.md"
+    },
+    {
+      "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+      "git_sha": "b4b563bea221e2f42d1cbb1109a555f82cc1f805",
+      "lines": 218,
+      "path": "BUILDING_LINUX.md",
+      "repository": "aaif-goose/goose",
+      "sha256": "ce33b534e76d158aa2ffd0305c0ad7dca5f728abc2aaa7afa83783104f2e372a",
+      "source_id": "src_a26c391fc90d5d6282f317051e3b615b",
+      "stored": "building_linux.md-5b33cfccaa7e.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/BUILDING_LINUX.md"
+    },
+    {
+      "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+      "git_sha": "be9373337100c79a753c863ab9a40c28164460f8",
+      "lines": 812,
+      "path": "CUSTOM_DISTROS.md",
+      "repository": "aaif-goose/goose",
+      "sha256": "d0192ad958ad1bd86a1aebcee1112afdc1d57bdb8e4f291c6fcd4a133167cfe3",
+      "source_id": "src_beba001ea77254e881b5df000113c564",
+      "stored": "custom_distros.md-876fd94766c7.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/CUSTOM_DISTROS.md"
+    },
+    {
+      "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+      "git_sha": "ff574e9f4eccd8aea6baec0a7df1b270964a7966",
+      "lines": 199,
+      "path": "GOVERNANCE.md",
+      "repository": "aaif-goose/goose",
+      "sha256": "abc55bd3bd1c7aa822ad3b89a6c8a2ada4b226a3b37311f0260ac46153fd68d0",
+      "source_id": "src_ee408228d6bc5fa881d16c44ebc98bc9",
+      "stored": "governance.md-b60c6a93e9f7.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/GOVERNANCE.md"
+    },
+    {
+      "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+      "git_sha": "c07792efc85845cd026db4ac49352cf9cef03a6f",
+      "lines": 179,
+      "path": "I18N.md",
+      "repository": "aaif-goose/goose",
+      "sha256": "bd31ae74c5423cd3580162cbcf527c54eeeb92fe4c6f7dc5365d20e3d157c489",
+      "source_id": "src_e02ac7afd55e5bf3911c3067bb92ca5c",
+      "stored": "i18n.md-a5c36a989aad.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/I18N.md"
+    },
+    {
+      "commit": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+      "git_sha": "44c960f0193de1ccd3a13721cfe2daf5e7707ac5",
+      "lines": 63,
+      "path": "README.md",
+      "repository": "aaif-goose/goose",
+      "sha256": "0f1df85a0c457caf1f3c4e1c0370f2da3887fffa588d207862cfc298c1d39755",
+      "source_id": "src_262fba8f3da458d18ba0d74d0ab68bd5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/README.md"
+    }
+  ],
+  "summary": "goose is a Rust-based general-purpose AI agent shipped as a desktop app, CLI, and API, with an ACP server for custom clients, MCP-based extensions, Docker packaging, and YAML recipes. Evidence: 6 of 16 candidate files stored (README.md, Docker/Linux build guides, custom-distro guide, GOVERNANCE.md, I18N.md); 10 omitted by file budget, including AGENTS.md, CONTRIBUTING.md and SECURITY.md; selection incomplete.",
+  "superseded_claim_ids": [
+    "clm_6aca70ea501e8838794eca00c3323edfba8a0c58e4ec1e89fd5137932db5eaa9",
+    "clm_8cae85cc8fc38cb9f8343095f8344e7624137f84ebe9177b48f35eed61162cb8",
+    "clm_bc74ff3d8dfffbca044e8f01b6b2c3b9122f513aa9de23291ef74d2289830c7b"
+  ]
+}

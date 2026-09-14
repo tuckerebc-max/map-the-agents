@@ -1,0 +1,392 @@
+{
+  "applied_operation_id": "op_6641f160cdcb463c83be09a833f25a5c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_410f8c64d8d2a41acdbd4252ef064d2ad8bbb3ca71df8615e749353624829e11",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98730b427cafca8641eed4f23d28c442aee088694657d6d0979706ada6d1bebf"
+      ],
+      "text": "The repository contains code for the web interface used in the MARG user study and serves as a demo of the multi-agent review generation system for scientific papers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb5edc2ccfb25e6b2cfd22e0e0285a1a306ea6197ef2249e7bd00039bc1a8a19",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L5-L10"
+        },
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_786218ae3fa59ae24c029fe47fa18b2151da5249c6529d6b586cbf6e58b7d2ee",
+        "slc_c3715281fa1f35ee13ae0aea1da346c110f62c9dc621ac47880be2f929a0db26"
+      ],
+      "text": "Running the demo requires Docker (and possibly docker-compose), plus a .env file with an OpenAI API key; AWS credentials are optional and only needed for email notifications via Amazon SES."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_870e0816c05087d97250011ddac8bd78c2106fce4922b1f6833c77e3ff515c14",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L19-L19"
+        },
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e6b8ec68b0d6b03343ce756491e555f7719ddd6c48bb524a1dbaaafdcc4112f",
+        "slc_2cf6e92ee6bcfd143b1ca57052da15fb75002fae460fa2ebea1f3fb74d795917"
+      ],
+      "text": "The demo runs as a web application on localhost port 8080, where papers can be submitted on the main page and results viewed at a /list-results page."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7590d98a2276240f8b314c203826b7ef66a0fd4ce1d63a4adc32e5597ba110af",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cf6e92ee6bcfd143b1ca57052da15fb75002fae460fa2ebea1f3fb74d795917"
+      ],
+      "text": "Submitted papers are reviewed by three methods: SARG-B (\"barebones\"), LiZCa (\"liang_etal\"), and MARG-S (\"multi_agent_specialized\")."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c835b02424166d36c3e0b4d4144cd2cbdd3838ef07d3a43068858de89b78048",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_066aa322822dcdfde046b046134c4db98ee6004c85b27ed826c4df63d5b2a494"
+      ],
+      "text": "Results are accessible via two page types: a /result/ page suited to local use, and a /survey/ page that hides method names and randomizes review order."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f30c794b517ee1802d239a08bd3ed92db84bbccb9f1576bc62862149e6e99217",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L21-L21"
+        },
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cf6e92ee6bcfd143b1ca57052da15fb75002fae460fa2ebea1f3fb74d795917",
+        "slc_c3715281fa1f35ee13ae0aea1da346c110f62c9dc621ac47880be2f929a0db26"
+      ],
+      "text": "Email notifications on review completion are handled through Amazon SES, with the outgoing address configured via OUTGOING_EMAIL in review_worker/run_reviewgen.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed5cd658a9c052d71acbd49d5a3cc81761eaaa64c0d1b786a1f28551858f56f0",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ce279393beb723e71df4077430cf0623fb8be2c7dbf682e41402c344b753787"
+      ],
+      "text": "Alignment/metrics code for reproducing the paper's Table 2 experiments lives in review_worker/paper_align_eval_repro.py, with experiment configs and outputs under review_worker/data/paper_align_eval/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa6ba8e7b398de003ebffb5fe8f30b81ed31beb7d4e55f5bac9bed628f8af3d2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 34,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L30-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dee41c69de89518379ce33f540004c278ed83d57a12d33d5f514a0806b38af6f"
+      ],
+      "text": "Reproducing experiments requires the ARIES dataset (paper texts and human reviewer data) downloaded from a public S3 bucket, plus a provided compressed GPT request cache (gpt3_cache.sqlite.xz)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1eac8139e923f61c2d04ba50ac18d766ac0c850117cfe846ed9c4168f04e499",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07fbe94970e82b9640600f7d3455023787c231b0226e9a2cf8d09ef8f133c34d"
+      ],
+      "text": "By default the reproduction pipeline uses the cached GPT responses from the paper to ensure reproducibility; the cache can be disabled by deleting the sqlite file or editing align_config.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e79cb9524a663e1123804584369004a0e795290949dd97a8bfba7e731eab4c2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 34,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L30-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dee41c69de89518379ce33f540004c278ed83d57a12d33d5f514a0806b38af6f"
+      ],
+      "text": "The documented reproduction workflow involves decompressing the GPT cache, syncing the ARIES dataset, building and entering the review_worker Docker container, and running paper_align_eval_repro.py per config directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dca51674df8f390cf11f0a6b23e09f60d1f77f6c3157e11516fb76e3c0f8f9d9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L42-L42"
+        },
+        {
+          "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+          "git_sha": "47870439fd436a37c398978394afd1204167c236",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "allenai/marg-reviewer",
+          "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_467472fde2053ccd14902d1357a07b98eabd1b7bbffd67a3d7d55b5917bc2039",
+        "slc_b6a205b5ef76f4196a65383fc9a00f0313fd9e893ad8f8a0b981742ac86b6140"
+      ],
+      "text": "The code is licensed under Apache 2.0 and copyrighted 2023 by the Allen Institute for Artificial Intelligence."
+    }
+  ],
+  "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 42,
+        "path": "README.md",
+        "size": 3383
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 121,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_57d8429dfcbb5fc38b8de0d6e8b34d2d",
+  "facets": {
+    "components": 2,
+    "dependencies": 3,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/allenai/marg-reviewer/e4acd42e3a1c39d993258b5409a332b2c20f433c/6bbc26d2ddc7a913/manifest.json",
+  "package_id": "pkg_633f7303ac9f02315afc82f88c424e3557e18e14c7e6d914877aa8495b268e50",
+  "repo": "allenai/marg-reviewer",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f16fd230d6d3ec15e02c35939112332840d2ef46d3a06a5558653b33dee60eb1",
+  "snapshot_id": "6bbc26d2ddc7a913",
+  "sources": [
+    {
+      "commit": "e4acd42e3a1c39d993258b5409a332b2c20f433c",
+      "git_sha": "47870439fd436a37c398978394afd1204167c236",
+      "lines": 42,
+      "path": "README.md",
+      "repository": "allenai/marg-reviewer",
+      "sha256": "9b9919c8b20a0c1cce3f2e7dcb2eb042d3d6279a516efb19e0aec5e977faec1a",
+      "source_id": "src_6f31f37a180a5812b5cade6ea6c7628a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/allenai/marg-reviewer/blob/e4acd42e3a1c39d993258b5409a332b2c20f433c/README.md"
+    }
+  ],
+  "summary": "The README documents a Docker-based demo of the MARG multi-agent scientific review generation system, including required API keys, three review-generation methods, email notifications via AWS SES, and steps to reproduce the paper's Table 2 experiments using a GPT cache and the ARIES dataset.",
+  "superseded_claim_ids": []
+}

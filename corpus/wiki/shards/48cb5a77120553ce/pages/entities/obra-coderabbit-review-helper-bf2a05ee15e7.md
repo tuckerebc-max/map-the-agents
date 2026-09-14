@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_3466017212161a35658797a5ac9315b5c9486621ecd027eff50a5d895d2f3864
+- clm_3fd957df9f901be7306f6fa827c387f905b4691e3ec9cd56917019c3c8a6c988
+- clm_475b4e74ab2d89b96f846561c2cd5e04b27e6078e7eb0ff152b193d476ea9031
+- clm_4aea7d6fc977893c12a5b9ea77bca2020c020b14d1e72b957eb6ecafebb1f988
+- clm_588732bca7cd5a27c1da5c12b6be4da08970a198ec35fab3eddd87733ef1349d
+- clm_6904c9bc3951dcb7ee5c50aff53dc63e5d09abbcb38bddab0ca3b4a3a691bdf1
+- clm_ad550ff1ea1b7d8a9eae51253dc193f5d4401671561d8280a9fdcbcc53ca8377
+- clm_d30cf7656c08b6db7b696d1f60c166868b915388aa022838f60999f0f933dbf7
+- clm_dc91efe3e73677a97abb3b9ddaba079fddbecc060356f6444be13efb08c9da9b
+- clm_ef043f95d45372e533ba352c512edd009853723e55bb7173a8eb0fe7568bc1bc
+maturity: draft
+page_id: pg_fea568b30280556b9eeebf2a05ee15e7
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: obra/coderabbit-review-helper
+updated_at: '2026-09-14T04:13:15Z'
+---
+
+# obra/coderabbit-review-helper
+
+<!-- rcw:begin owner=entity:ent_ce2d4d55d97c51908cb89ade23d3fa17 block=evidence -->
+- obra/coderabbit-review-helper is mentioned in this evidence. [@claim:clm_3466017212161a35658797a5ac9315b5c9486621ecd027eff50a5d895d2f3864] [@claim:clm_3fd957df9f901be7306f6fa827c387f905b4691e3ec9cd56917019c3c8a6c988] [@claim:clm_475b4e74ab2d89b96f846561c2cd5e04b27e6078e7eb0ff152b193d476ea9031] [@claim:clm_4aea7d6fc977893c12a5b9ea77bca2020c020b14d1e72b957eb6ecafebb1f988] [@claim:clm_588732bca7cd5a27c1da5c12b6be4da08970a198ec35fab3eddd87733ef1349d] [@claim:clm_6904c9bc3951dcb7ee5c50aff53dc63e5d09abbcb38bddab0ca3b4a3a691bdf1] [@claim:clm_ad550ff1ea1b7d8a9eae51253dc193f5d4401671561d8280a9fdcbcc53ca8377] [@claim:clm_d30cf7656c08b6db7b696d1f60c166868b915388aa022838f60999f0f933dbf7] [@claim:clm_dc91efe3e73677a97abb3b9ddaba079fddbecc060356f6444be13efb08c9da9b] [@claim:clm_ef043f95d45372e533ba352c512edd009853723e55bb7173a8eb0fe7568bc1bc]
+<!-- rcw:end owner=entity:ent_ce2d4d55d97c51908cb89ade23d3fa17 block=evidence -->
+
+## Researcher notes
+

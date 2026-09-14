@@ -1,0 +1,476 @@
+{
+  "applied_operation_id": "op_9cff3bd119624badacf9a7467aca74be",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8cbd85d3da138c27986b2cee0f3b2b16d04f20e37eb37b63e29c21ec6d76dbf6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ebc8bb580f1e7b81ec45cfffcdf95f94e89c5d7b8e2fc50cb3ae6ebdec4ccaf"
+      ],
+      "text": "The product is described as an LLM-based automated code review assistant that listens to PR/MR changes via GitHub/GitLab webhooks, analyzes code with AI, and posts review comments automatically."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77a60106b50a8efcf8930d54d6c1044dbc5ed8dae3ac1fe253d9c87f22823919",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 42,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L21-L42"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 112,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L105-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a1722d86fc1737e5129488b86476d4db34abc4b594f10aa8d59a8b4b2acba92",
+        "slc_7c6fb8c359723dd8299828b7b2855a5d52cabbb2394546ed38725bf532b0f572"
+      ],
+      "text": "Detailed review mode exposes endpoints /github_webhook and /gitlab_webhook, where the AI analyzes each changed file and the system converts JSON model output into multiple structured comments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3044d8e0829b9033c758033e1648098b154eea21e3fee1a48508f3c9f3592065",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 42,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L21-L42"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 112,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L105-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a1722d86fc1737e5129488b86476d4db34abc4b594f10aa8d59a8b4b2acba92",
+        "slc_7c6fb8c359723dd8299828b7b2855a5d52cabbb2394546ed38725bf532b0f572"
+      ],
+      "text": "General review mode uses /github_webhook_general and /gitlab_webhook_general endpoints, producing one Markdown summary comment per changed file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68018abaa9014456143de0f2fff6cad64915eb4d9f678bd3697f56be506d768d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 87,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L81-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58f0d0da334ebed33f6834024c386119fb9cd339b34315f9f31d924b0036a6d4"
+      ],
+      "text": "A web admin panel at /admin and a RESTful config API under /config/* manage webhook secrets, tokens, LLM parameters, and notification URLs; API calls require an X-Admin-API-Key header."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cbff012f3a7b26bf9641db0e59fabdfc3190c788db2c395a756ce8bbee7960a4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 42,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L21-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a1722d86fc1737e5129488b86476d4db34abc4b594f10aa8d59a8b4b2acba92"
+      ],
+      "text": "The service posts review comments asynchronously, publishes a summary comment after all files are reviewed, and uses Redis to prevent duplicate reviews of the same commit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a033501be3f935dcac4603724d8dd5cad1bcb8df43119dac84db8cdc79cf62d7",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 91,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L89-L91"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 140,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L137-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85682b0db91bd419abe6e3a6fc5e634c0ec95acd2331a6f611830a929aa105ae",
+        "slc_a31243c6c72d28cc1de12d631d3a3cb1abddd9111290663b3bafd00b9ace4419"
+      ],
+      "text": "Redis stores repository/project configuration, processed commit SHAs, and AI review results with a default 7-day expiry; records for closed/merged PRs/MRs are cleaned up, and the service strongly depends on Redis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e9d76b9a1962ebf159b63d5bd6a70101ab75927f87d220b7f62a4e4ea606c28",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "799904056dbccdd4da2d141e5de5a06abe6e6941",
+          "line_end": 5,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/requirements.txt#L1-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9aa0ab41b9e00ea385a70a51759fefe03717a536010ab14391ac1857ed98c54b"
+      ],
+      "text": "The requirements file lists Flask, openai, requests, redis, and pyyaml as dependencies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ce1fa3b20b7cc33e0e8c5d38e4d76cd84a5d5e9dd570e746367f5eaa2041c6fe",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 58,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L49-L58"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 78,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L68-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64b6e5936c1304802dbb1b94373546f8d3708d5eb32b7133e619b44357623cc3",
+        "slc_a1da9198694744d525583d464f3d529d0c52987f957abb3de58998782f934c39"
+      ],
+      "text": "Configuration uses OpenAI-compatible LLM settings (OPENAI_API_KEY, OPENAI_MODEL defaulting to gpt-4o, and an optional OPENAI_API_BASE_URL)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2f8e3791403402fcbcaba41b263f0cd625cf38438b5dd1c956aad14f498420e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 87,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L81-L87"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 78,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L68-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58f0d0da334ebed33f6834024c386119fb9cd339b34315f9f31d924b0036a6d4",
+        "slc_a1da9198694744d525583d464f3d529d0c52987f957abb3de58998782f934c39"
+      ],
+      "text": "All admin operations are authenticated with a key set via the ADMIN_API_KEY environment variable, whose default value is documented and flagged as must-change."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_396e42fa69bc837f1a30d9234051ea7a4a9f83ba4a702fdb5ac1fc5a20972ac4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 91,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L89-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85682b0db91bd419abe6e3a6fc5e634c0ec95acd2331a6f611830a929aa105ae"
+      ],
+      "text": "Global configuration is loaded from environment variables; runtime changes made via the admin panel take effect immediately but are reloaded from environment variables on restart, so env vars are recommended for persistent global config."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90d14d723cedaa225fa03f89f1a71b2ea300a22381b6ca7a81e49949f3837a5b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 42,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L21-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a1722d86fc1737e5129488b86476d4db34abc4b594f10aa8d59a8b4b2acba92"
+      ],
+      "text": "Review summaries including PR/MR links, branch info, and result overviews can be sent to WeCom (enterprise WeChat) bots and custom webhook URLs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6138bea51456dccdd3e0db49e591a3621735e944f7a9ca3fa801c056b6caace6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L130-L130"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 134,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L133-L134"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 118,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L117-L118"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 122,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L121-L122"
+        },
+        {
+          "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+          "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+          "line_end": 125,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "usagi-org/ai-code-review-helper",
+          "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md#L125-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ce41c64bb912c3c896ce2bbed0f0d7256b0ea6e3d28a66ab17e451ff0dcea68",
+        "slc_5783d5180ac883dc04a055d4377d3ff4a3909b277a42028dcf86cdc011cbdcac",
+        "slc_63c7d6e2b615888c432328d5391e91e6c3adf7c19fc311101cb450e2e8d620ef",
+        "slc_922d161acb2ed6d87a0759d856a410048fefa75938121a017068f3bb5c7da587",
+        "slc_acb63639ca17d15360b1101517c243d79d3bc23fbc11f731eb8ef49cde41914f"
+      ],
+      "text": "Repository development practice: local development involves cloning the repo, creating a virtualenv, installing requirements.txt, starting via python -m api.ai_code_review_helper, and optionally running tests with python -m unittest discover tests."
+    }
+  ],
+  "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 144,
+        "path": "README.md",
+        "size": 8867
+      },
+      {
+        "lines": 5,
+        "path": "requirements.txt",
+        "size": 34
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 33,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_d91af7588f295676a1c9540f0b36b79a",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/usagi-org/ai-code-review-helper/d5fe002184e934d39c5032a584f23015cbc33919/af94f1b37c8fe238/manifest.json",
+  "package_id": "pkg_a8a55a6c679990a9434886c1e8bb86ea39a3dd4e725b942be016352869a2df25",
+  "repo": "usagi-org/ai-code-review-helper",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "309fff4e38f8f8375e2057f9432e07e7e2a4f7ec462aa15cd81d99dddcf6eab2",
+  "snapshot_id": "af94f1b37c8fe238",
+  "sources": [
+    {
+      "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+      "git_sha": "06d8b96574b5a583b0879b4a42bde9963ae86d91",
+      "lines": 144,
+      "path": "README.md",
+      "repository": "usagi-org/ai-code-review-helper",
+      "sha256": "f6920f810976aedddaedc4dc507cc7b8db591ec56daace0b518bd60b5dddeded",
+      "source_id": "src_b2718afb11f55f5ebf6a124f1e05e591",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/README.md"
+    },
+    {
+      "commit": "d5fe002184e934d39c5032a584f23015cbc33919",
+      "git_sha": "799904056dbccdd4da2d141e5de5a06abe6e6941",
+      "lines": 5,
+      "path": "requirements.txt",
+      "repository": "usagi-org/ai-code-review-helper",
+      "sha256": "f34494e07026f224eb147ff24747414675be375e08e5125426afa6cc63c4029d",
+      "source_id": "src_f84e12de96e153349ab9ca1bbec7fcf8",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/Usagi-org/ai-code-review-helper/blob/d5fe002184e934d39c5032a584f23015cbc33919/requirements.txt"
+    }
+  ],
+  "summary": "README evidence describes an LLM-based automated code review service that listens to GitHub/GitLab webhooks, posts AI review comments, uses Redis for config/result storage, and is deployed via Docker or Python. Evidence is documentation-only; no source code slices are present.",
+  "superseded_claim_ids": []
+}

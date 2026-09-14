@@ -1,0 +1,573 @@
+{
+  "applied_operation_id": "op_25d17800b46f456f8ba4aea0cdc352b4",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_273ecf2e26657f36e9b4e1e39db069e89145da377309e5a78d35f8cf641b7377",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_faf59122eccaf21e7ecb9ca73b974d0a2f3ff109ad5ce8cdc0af1d03e6a97cb3"
+      ],
+      "text": "PocketShell is described as a self-hosted, mobile-first remote terminal that brings a dev machine's terminal sessions into a phone browser for CLI/TUI coding agents or plain shell use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c92c27e17d99410b79ddf603180a2e429b34d19daca72a5a9854925a3c41c780",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 312,
+          "line_start": 304,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L304-L312"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68f5bcd7abe3cba4914a039325d237978d2ec846a3a16c8b7b01e2df417f0ad1"
+      ],
+      "text": "The stack comprises a Svelte 5 + Vite + xterm.js + CodeMirror 6 frontend, a Bun/TypeScript backend serving the embedded frontend and WebSocket on one port, tmux-managed PTYs, and bun:sqlite storage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8ea8456ee61f3d65b0718c09571cc313b30d3d416b1b9c84af419d7e69e5110",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 83,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L78-L83"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a62afe326316f7ed960bf88085db08c101f328dd640436241d91c59aff34f72e",
+        "slc_ccc956852096942a91ae3a4c2d14722a36dfefcc7da1163a622ef63ad74303f5"
+      ],
+      "text": "Sessions are tmux-managed server-side so tasks keep running while the phone is offline; on reconnect, per-session lastSeq accounting replays only the missing output gap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab2b9420a2497a7cebb8556c20256ceafc10fb51c929a8b8ac5e01becb986b48",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "f28575c0eaedf29ea0115515d9eff0235d741b91",
+          "line_end": 216,
+          "line_start": 213,
+          "path": "DEPLOYMENT-CN.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/DEPLOYMENT-CN.md#L213-L216"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 157,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L154-L157"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L188-L188"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L145-L145"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 177,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L177-L177"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 264,
+          "line_start": 260,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L260-L264"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 184,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L179-L184"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17fd01054a91b3dcbda6944927d354db60341ae743677ff573d09ab53eab80ae",
+        "slc_2054ef59904f41e535dfaab4e96b9bbe4ed3c87d7870ec5bb559a746316a1ec7",
+        "slc_43ba119510c5ac04ce0a35abe7ee092ff80845228488766ef4a970233e033772",
+        "slc_62ea938ae1bc6f064c0bfbb32ec53699cc81f33900a5dc6dda8fe235abc847dc",
+        "slc_7821f1790b07c2c5e443604d4850d4023182cd44d982f87e6150fb8dd68d233b",
+        "slc_cc19be62b2d0784b99de3de61a2791c531bfce58ef7afbdebfca7955a50e5787",
+        "slc_e52aff45fe1700224403307ad3588da51be400d10d546be5eece6c2b339951e1"
+      ],
+      "text": "The Agent CLI includes install (requiring --advertise, default port 8722 bound to 127.0.0.1), pair, devices list/remove, uninstall, and tunnel setup subcommands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ef47e41acfb022f1ee4994e8ef68c52b78ef2b205f81448db759ee4898d4e94",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 272,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L272-L272"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 110,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L105-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b244aaedf9d3e7c980d52ce4f584b83dba004ddedd63059ea696e6f4dd179b5",
+        "slc_eb2719b24fb5fd6c5b5227e9b2a5d631a91b8be36701cfc47bd283586910c8de"
+      ],
+      "text": "The Agent idempotently writes a notify hook into supported tools' configs (Claude Code, Codex, opencode, Kimi CLI), each toggleable in settings, and removes exactly that entry when disabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be6b8b7162cd6dd706e6119385554312d22b94bb4b10c697b8160f3e37a26cbe",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 227,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L227-L227"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 312,
+          "line_start": 304,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L304-L312"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 129,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L129-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62bc875d96e24f329458db9ced1d8188bd23e50a0062e4229a4a9e11f5cf0791",
+        "slc_68f5bcd7abe3cba4914a039325d237978d2ec846a3a16c8b7b01e2df417f0ad1",
+        "slc_925364a1887dbcb2ff1f0006778de2cb00c5052a653f5ea786654a5a75d26874"
+      ],
+      "text": "The host needs tmux and git; the binary is a single-file Bun compile with pure-JS crypto (sodium-javascript, noise-handshake) and no native addons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02757861e6bb828e8a86aef7a0aa71744bb668ab03c763274fcd1b55208479f3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 254,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L254-L254"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bbaff62777874674231cb118623dcfb7f671ab438b5ce49d3cf97eb458319fd1"
+      ],
+      "text": "Every connection performs a Noise IK handshake with mutual authentication and forward secrecy; unregistered devices cannot pass it, and keys live only in KEY_DIR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16692059aaa17a7c3964ce2840fa0b2389dc48d817c6680aa38b22cea81db380",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 256,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L256-L256"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 72,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L69-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ea42163128fc0e05cd08c59531823b4ad01e9f2b67a9080087caf62ef03ba45",
+        "slc_d185a642756b165661962f5e48d14ebb9ec2293959500c9355682a5f9853ddcb"
+      ],
+      "text": "Windows hosts are not supported yet; the auth boundary is the Agent process's own permissions with no extra sandbox, so access should be constrained via process permissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0431ba3e449a8844be2faa0dc6f0ab1e20200d4061e717afec37fbab87fa9be",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 297,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L297-L297"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 300,
+          "line_start": 299,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L299-L300"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58c79072aeae8a3c13072e058813c1bbdddc179889833ac60062e4893adb4822",
+        "slc_753d80fc353e6712388d1d22d7a1a3a1713b64ee10bcfa5cad76557e4789b4a7"
+      ],
+      "text": "The Agent supports in-app auto-update via GitHub Releases with SHA256 verification and automatic binary swap and restart, disableable with POCKETSHELL_UPDATE=0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c6a5e8b9e258e7546ca0f291a608380a3fb8d46115e82390ae30d42525044125",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 93,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L87-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_529f2caf17af4850b1317e1e72c517dd6c8e640db40bf9ba497bafd5e38d336c"
+      ],
+      "text": "The phone UI offers three keyboard layouts (Classic default, Layered, Flick), an IME whole-segment input mode whose buffer survives disconnects, and a quick-actions panel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_488a8832d978b452e10467b08271331b7456bb02e9fbac74af5e4d3ccdf19d4b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 338,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L338-L338"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 336,
+          "line_start": 332,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L332-L336"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ab76a05626dc9e6ad3c1050bf991fda3f6948dc93327beee95303f3e924a2cc",
+        "slc_b410248d5e0e19278d25a28c282861051576824dedb14fd130cc63e914582982"
+      ],
+      "text": "Repository development practice: contributors fork, branch as feat/your-feature, and open PRs; protocol changes start in agent/src/protocol.ts with app/src/lib/protocol.ts as a verbatim mirror, and bun test plus bun run typecheck must pass on both sides."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c557c737ac4d5c7a3ac50515bd4075576dd0318e0456fa23eca6d7c8572a6a28",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 199,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L199-L199"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 227,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L227-L227"
+        },
+        {
+          "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+          "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+          "line_end": 203,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "big-pony/pocketshell",
+          "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md#L202-L203"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dcbf1abea382e89b7ab010fd56b7b270411578a5854dee088d622cb02543cce",
+        "slc_62bc875d96e24f329458db9ced1d8188bd23e50a0062e4229a4a9e11f5cf0791",
+        "slc_9b09fd94639647072ecd45df98e9ace08a51e5549cdd231c042239553811bd65"
+      ],
+      "text": "Repository development practice: running from source uses Bun — backend via 'cd agent && bun install && bun run start', frontend via 'cd app && bun install && bun run dev' on port 5173; building requires Bun >= 1.3."
+    }
+  ],
+  "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 360,
+        "path": "README.md",
+        "size": 23115
+      },
+      {
+        "lines": 413,
+        "path": "DEPLOYMENT-CN.md",
+        "size": 22017
+      },
+      {
+        "lines": 422,
+        "path": "DEPLOYMENT.md",
+        "size": 23310
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README-CN.md",
+        "reason": "file-budget",
+        "size": 20999
+      },
+      {
+        "path": "THIRD-PARTY-FONTS.md",
+        "reason": "file-budget",
+        "size": 3320
+      },
+      {
+        "path": "THIRD-PARTY-THEMES.md",
+        "reason": "file-budget",
+        "size": 6123
+      },
+      {
+        "path": "USAGE-CN.md",
+        "reason": "file-budget",
+        "size": 9123
+      },
+      {
+        "path": "USAGE.md",
+        "reason": "file-budget",
+        "size": 9627
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 566,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 5,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_e02deb450a7c5928aa65a7703871fb01",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/big-pony/pocketshell/8aa6474e81400fa1896369f3920dbffaa6465585/ee6c89f3609269d6/manifest.json",
+  "package_id": "pkg_52b64c4a8b2168a8e5593d6e0a64a6478b2127468fe157fd8a55be670b9e16a8",
+  "repo": "big-pony/pocketshell",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "74dada38011ed088d46804596d61ba6b1a1d30413a16b93941afc473ca640faa",
+  "snapshot_id": "ee6c89f3609269d6",
+  "sources": [
+    {
+      "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+      "git_sha": "f28575c0eaedf29ea0115515d9eff0235d741b91",
+      "lines": 413,
+      "path": "DEPLOYMENT-CN.md",
+      "repository": "big-pony/pocketshell",
+      "sha256": "40ec9e380b8b8efbd864a8fc1b8bf2ecaed2e229f088c68ddd526b9899fb799d",
+      "source_id": "src_7af9268fd56c5d8ab238e978d4f47d87",
+      "stored": "deployment-cn.md-ea9c8da2e877.md",
+      "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/DEPLOYMENT-CN.md"
+    },
+    {
+      "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+      "git_sha": "7a95051852ee60c01c8f37437c6b0dc0b7890935",
+      "lines": 422,
+      "path": "DEPLOYMENT.md",
+      "repository": "big-pony/pocketshell",
+      "sha256": "4890a292aeb390b6bfd52210b5cce98f15f92bc18e12bb3a11ed1fb72e0b94db",
+      "source_id": "src_9d8b980224e556898a9a097e5e175bca",
+      "stored": "deployment.md-04615394c116.md",
+      "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/DEPLOYMENT.md"
+    },
+    {
+      "commit": "8aa6474e81400fa1896369f3920dbffaa6465585",
+      "git_sha": "96575e49d64142cdee2b5703bc78239ea59631c7",
+      "lines": 360,
+      "path": "README.md",
+      "repository": "big-pony/pocketshell",
+      "sha256": "72d89b60ba433b61f86980d51618eb501c5773a73f4afcf8fabecc7428926e0e",
+      "source_id": "src_7665d5b4c720530e8b9a2ada40835f17",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Big-Pony/pocketshell/blob/8aa6474e81400fa1896369f3920dbffaa6465585/README.md"
+    }
+  ],
+  "summary": "PocketShell is a self-hosted, mobile-first remote terminal that proxies tmux-backed terminal sessions to a phone browser, with server-side task continuation, gap-only replay on reconnect, push/webhook notifications, and Noise IK end-to-end encryption, shipped as a single-file Bun binary. Evidence is documentation-only (README and deployment guide); no runtime source code appears in the slices. Evidence coverage: 162 of 318 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

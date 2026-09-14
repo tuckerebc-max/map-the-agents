@@ -1,0 +1,450 @@
+{
+  "applied_operation_id": "op_f6c2da5949ee4bedbb103db185eb4d23",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6c22cb8d58a465c4f994f555d9443d76c4ee20eb58e1e62737d783ab8b2e4c4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L3-L3"
+        },
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f63255842f85852fc703897db221b19199d1d0b61cefedf1824fcf7f5521329",
+        "slc_9fbebf47911457bd1b5655670af9f166bf29021bafc6aee76d8824701f3bedd1"
+      ],
+      "text": "The action is triggered by /claude or /codex commands posted in GitHub Issues or Pull Request comments, which start Claude Code or Codex respectively."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2136fc581bc324dda620c8b510e5629c3fa3771ec054cc5e38910c98dce0720",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9fbebf47911457bd1b5655670af9f166bf29021bafc6aee76d8824701f3bedd1"
+      ],
+      "text": "When the AI modifies code, the action automatically creates a Pull Request or commits the changes; if no changes result, it posts the AI output as a comment instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f2e158264533e9a18167909d159f61362cf7956e965129364841300a48304de9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 45,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L39-L45"
+        },
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 54,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L47-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_296a307a9c0abb5c611ada1df92a9abb6bd51ebbe4c1a873c32429748ac1d479",
+        "slc_423768cd66380399be25760257fcbe1ec46ddb238508d13cca071816ff314b8f"
+      ],
+      "text": "The recommended workflow listens on issue opened, issue_comment created, and pull_request_review_comment created events, and skips runs triggered by bot senders."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_064e9f75cff07110587e514b5ec13ca8d95d905fff135f81c873498350853852",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 117,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L113-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ec51237468afaf755a0bb3c1666c860197944aed3962c355f8073b3b04237121"
+      ],
+      "text": "The action exposes inputs including github-token (required), event-path, and a timeout for AI processing defaulting to 600 seconds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c92274d6401d9ffb7b11c520453a78adea193cb8553307ba6a631f86183049f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 143,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L141-L143"
+        },
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L25-L25"
+        },
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 123,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L121-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c4124acb7c5e145bd2a41dbcf58b6535831f57955377f7777f4100bfd611c5c",
+        "slc_823cc498db60824870f90b2bed65653f0be9f5beb52ae0fa89fde20f6c518f70",
+        "slc_888a264bb84bf1a22b1de6a48f329be8abb308daea2e7e4b4e53cfc8fa6d5854"
+      ],
+      "text": "Claude Code mode requires an anthropic-api-key input, while Codex mode requires an openai-api-key input, typically supplied from repository secrets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6663f7732baa53bb3594160ba5376605db4d9123bd1d97cb0f2f9a508101880",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 137,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L127-L137"
+        },
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 68,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L59-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c50e6ca0ede5fa3e02046760fee2c5a1437e7d6ef54d2a6d6d39158c92aa2c1",
+        "slc_f27e93a7cb8528622f895e9f83bdedc1f8206aedf7fad26ed243f48f0f91de47"
+      ],
+      "text": "Optional Claude Code inputs cover base URL, model selection, a small fast model for tasks like commit message generation, AWS Bedrock usage with AWS credentials, and disabling prompt caching."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5fabc880ff7d347032c3e48fb91e460b324442dfd7dddb72a20ea7ca86d5469",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 75,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L73-L75"
+        },
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 150,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L148-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f6ecde943a43e465eacac2eae207d9da96cb669fc6823282ac6a3e872d05db5",
+        "slc_9155631cf6384f7432ab3603d492779d4af697cadc55cd18e10e4d664c513c8e"
+      ],
+      "text": "Codex mode supports an optional openai-base-url input to override the OpenAI API base URL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e0d72ca8f38b04f44b8d0792fd678d6ccacbb8a5fd4dfdb9f7fc5919819ce6d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 155,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L154-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5351766551e29c48ea4827224db45bdda919ec0fc7d236ab3cc6aef4f39880d0"
+      ],
+      "text": "Before running core logic, the action checks that the triggering user has write or admin permission on the repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c4132ddb371e882f0ac42b6727153d36920cdbdc675520783c88e7f9177115f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 155,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L154-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5351766551e29c48ea4827224db45bdda919ec0fc7d236ab3cc6aef4f39880d0"
+      ],
+      "text": "Secrets such as the GitHub token, API keys, and AWS credentials are masked as *** in any output the action posts to GitHub."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e96fa3bdee1afca238fa91d99038f9300fc372641f7c76399b3df3ab2ca8901d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a7d00c5893fa50f7d4aa7de285b9e5eef88a5bf28917656f52ab0e79f58624a4"
+      ],
+      "text": "Setup requires repository workflow permissions for read/write access and allowing GitHub Actions to create and approve pull requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc250a920487ba5b685476dcf17cc710188bd70d678dc6a3c012ef443cf41c56",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f63255842f85852fc703897db221b19199d1d0b61cefedf1824fcf7f5521329"
+      ],
+      "text": "The product depends on external AI CLIs, Claude Code by Anthropic and Codex by OpenAI, which it invokes on behalf of the user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffc1dd6a7b4929c1e00fe3c61c4dbe643f46311de456cdbfe0758e5328389d4d",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L3-L3"
+        },
+        {
+          "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+          "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "potproject/code-agent",
+          "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md#L79-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f63255842f85852fc703897db221b19199d1d0b61cefedf1824fcf7f5521329",
+        "slc_6a903715b0ddced7e552e03fe52e47f3ce648bb311b011e8c2f1704d76808697"
+      ],
+      "text": "The tool appears aimed at automating code changes directly from GitHub conversations, with an example repository linked for issues and pull requests."
+    }
+  ],
+  "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 155,
+        "path": "README.md",
+        "size": 5437
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 26,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_522db808d5c15102ad69aa9f64cd0df1",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/potproject/code-agent/8b17068f090ddc32ccb05956e08f9ca9f740fdab/c663c1a26b3610b0/manifest.json",
+  "package_id": "pkg_b8aa6953d96b7614de0cf8698ae73c75eaff5988527e1c46846758b71780bdad",
+  "repo": "potproject/code-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0a5bb0e3d80aff30535549ed51871378d02319d6a024a99cd414fd08abe9b03b",
+  "snapshot_id": "c663c1a26b3610b0",
+  "sources": [
+    {
+      "commit": "8b17068f090ddc32ccb05956e08f9ca9f740fdab",
+      "git_sha": "0505e5075f82d4aa3b7087049b6408dd7ab08487",
+      "lines": 155,
+      "path": "README.md",
+      "repository": "potproject/code-agent",
+      "sha256": "408a19a9917078d37e8711051dfa4cd8e0bde96d6780653b51acc23cb9b9069a",
+      "source_id": "src_9824adad08f25e3c9e8393f64b39ebe4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/potproject/code-agent/blob/8b17068f090ddc32ccb05956e08f9ca9f740fdab/README.md"
+    }
+  ],
+  "summary": "The snapshot is a README describing potproject/code-agent, a GitHub Action that runs Claude Code or Codex from issue/PR comments via /claude and /codex commands and automates commits or pull requests. Evidence covers its commands, workflow setup, action inputs, and security behaviors; no contributor-facing development guidance or evaluation evidence is present.",
+  "superseded_claim_ids": []
+}

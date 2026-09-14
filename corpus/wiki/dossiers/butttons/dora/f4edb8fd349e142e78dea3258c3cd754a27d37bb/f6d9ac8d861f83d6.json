@@ -1,0 +1,689 @@
+{
+  "applied_operation_id": "op_162cafdec75f4d0ba4c9e50992162cff",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e919bf4b9d9b9ea868e5d50e32d0d09af50c686a99106ea5dde81f9ab303a42",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aaa2ee48c0078cb42df1a45e00ddf5731196e6aee20971cfff93c1efcf5f141b"
+      ],
+      "text": "dora is a CLI that turns a SCIP index into a queryable SQLite database, giving AI agents structured answers about a codebase instead of grepping files and reading imports."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d28b22943393267a15dc812adabd93cf55e44a24e944f47405e9a0b0ffca1b9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 158,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L158-L158"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 160,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L160-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3480f8446ec5ddd0f8dfbc865250a3071e6d7beae390a67981348fae24f03d93",
+        "slc_e3a86ad5299998928ca6546e1d77e7a50e7f699dd4d2c004f63e8c96f8508419"
+      ],
+      "text": "The tool has two layers: a SCIP layer that runs a configured indexer, parses the resulting protobuf, and loads symbols, references, and file dependencies into SQLite; and a tree-sitter layer that parses source on demand via WebAssembly grammars for things SCIP doesn't cover."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fdae466263ac23313f2e20b0c854cacdb6f206eff1a5bab5d3c94bd4c3887ef0",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 162,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L162-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d5bdb0b6d1cd227a2520cde69f7e13c3d766bdf396ae458f89e1e96d8947e8d"
+      ],
+      "text": "The SQLite schema stores denormalized counts (symbol_count, dependency_count, dependent_count, reference_count) so most queries are index lookups rather than aggregations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_37104d1129062a232a57c7f1f11cebc15b81f698e1cc3b9190afb4f21fdce60b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L138-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f013b925733d9a946d9e0bf71c65147e3f647062e4b69b2f393bbafda76bea80"
+      ],
+      "text": "All commands output TOON, a compact JSON encoding optimized for LLM token usage, by default; passing --json yields standard JSON."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_760156e21eee44caf72ee36d291528f44b65817e153f285d4355db1979ee54bb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 134,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L133-L134"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 130,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L129-L130"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a95ff7022141353fbdf70da48257746e50813733245844fe065ca754ff0b59c",
+        "slc_d4b0bf81f0ea8469c02fd44af7a0c1780046a5e34b3b8396a1823cb68d6c719a"
+      ],
+      "text": "dora mcp starts an MCP server over stdio, and the README shows registering it with Claude Code via 'claude mcp add --transport stdio dora -- dora mcp'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_885f600a74850f1b837bec893cf6d63953483884f6b797d056f681636bb0ceac",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L56-L56"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 169,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L164-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6de6bdc1494a405c8f6c7b588d290aec5b0e48bce320bc25bb6f362a5fb5a1b2",
+        "slc_ec7c6939a341bff2a1d36396f4a11a88d0acc17c38072e80708691efd988818b"
+      ],
+      "text": "dora init creates a .dora directory containing config.json (indexer command, ignore patterns, grammar paths), index.scip (raw SCIP protobuf), and dora.db, the SQLite database dora queries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45d5e65643661d3da840a80567cccfb9c8273c0f6c35adcfb3ea2564d1e12d45",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L39-L39"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L43-L44"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8240e0f32e60b208633c29e5023a581c45d12903842d41ddfd1a24c77e86d39e",
+        "slc_b0462f914207229bfdc9005a36bd07fafc933470b4636bf1b0ed2fe083349cee",
+        "slc_fb9e0e1d68a69c3469989e99e8785af841a21227784e63ffc35977cc4a0ac0a6"
+      ],
+      "text": "dora requires a SCIP indexer for its language; scip-typescript is shown for TypeScript/JavaScript, with pointers to scip-java, rust-analyzer, scip-python, scip-ruby, scip-clang, scip-dotnet, and scip-dart for other languages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5f4a228921bdc03131df538603c408e5c964166680773112d9fe9fefa45e76c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 98,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L96-L98"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L94-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58b2a8108f9a0dbdeb46edbdb714bb7864aff2e4282b39735f12966df78aaf6b",
+        "slc_cc229362d3cdb379044b73e4c89dd1638001064d214c63a6e8b8fbf7dffb1a06"
+      ],
+      "text": "Tree-sitter analysis commands need a grammar installed, e.g. 'bun add -g tree-sitter-typescript' for TypeScript/JavaScript."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d557d7446b3445b1ad5bb33ee5eb7c151a6c45743052d9ed9b3abbb94b72335",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 20,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L19-L20"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L33-L35"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L31-L31"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L27-L29"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 24,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L23-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c7228e4d018823b256c4a62c0fec11317129604a714abf2c2ed8f3867fa30ba",
+        "slc_2425093b5ff1754788a152895f6ce60e3678a2ddb5077f0cb917b33d3236d37a",
+        "slc_7b5b17d04ff410344488f6a9821ec24c51670e778eed6b383b5f56830cfbc705",
+        "slc_7f3d8ac4dee7a6d552ebd8a18dc3eef8d3e937be2eb431163a659499837ad2b8",
+        "slc_fe473397f7336ed220410fb21d6447630fd9ef70f15de08ac9b143632f1da00c"
+      ],
+      "text": "Besides prebuilt binaries for macOS ARM, macOS Intel, and Linux x64, dora can be installed via npm using Bun ('bun install -g @butttons/dora')."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a513641a3709b6126506161f775b82272758c1c6004d881bdd7d2a6d4d946cb0",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 90,
+          "line_start": 88,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L88-L90"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L110-L110"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 461,
+          "line_start": 458,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L458-L461"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 478,
+          "line_start": 476,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L476-L478"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 82,
+          "line_start": 79,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L79-L82"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L75-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1212487bb4926d9b3b83a0d394ae6e4b24804dfb262e5565bd7914cf3b95e3f6",
+        "slc_163591367aba01e459b9e313ae17bd30e5903cb5c11c0b301972e0f4bcd1f0a4",
+        "slc_2d5e7d766d3176bd1bd63d10e6b25a3aaa1d0c38535850870ff10e97b3e2391c",
+        "slc_8d4b9ec72f90294f8fa3a3cee9e3fc0ca415c87a34b3cf4818d7aedf07e63b0e",
+        "slc_9c7a67cdea8fce57eacffc273af9acdeda7a033901f86649e5723717388c8f27",
+        "slc_dbacd676a1255ec79cacad5e8d77c12cbd620815b17bbf60340c7e036fba2aa1"
+      ],
+      "text": "dora generates integration assets under .dora/docs (SKILL.md, SNIPPET.md) that can be symlinked into .claude/skills/dora or .windsurf/skills/dora and appended to CLAUDE.md or AGENTS.md, enabling a /dora skill reference."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac732d9bb10f785bbae8c01fc456c00e2a0b5a099ffa19fd408e395737257c46",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 182,
+          "line_start": 182,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L182-L182"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 67,
+          "line_start": 39,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L39-L67"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 180,
+          "line_start": 171,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L171-L180"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "AGENTS.README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md#L71-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0679333665b21f9dbd305ecbb43c761b80ef442e085723cdf56ebedf85d5beff",
+        "slc_72365ba7b30131e579bc96283f434aecf2fcffed11edf097f141ba2f8249376c",
+        "slc_9cfd2fc7c4fb0ae91f4fcc679bdfb0aeff1eeb36c4bb7b19a7425495afdf3b5d",
+        "slc_f3d51386bcaaa38e9aac6c894405b74cd20451948fc51a99c7d14af1df465915"
+      ],
+      "text": "The documented agent integrations pre-approve dora commands: Claude Code settings allow Bash(dora:*) and Skill(dora), and OpenCode configs set bash permission 'dora *' to allow so commands run without permission prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f5634f937a51529796a4915551cd5cff065b87a01049173f29270017b85b815",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "817dd80690254ec75c227497a46150b5c623d566",
+          "line_end": 39,
+          "line_start": 32,
+          "path": "docs/README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/docs/README.md#L32-L39"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "817dd80690254ec75c227497a46150b5c623d566",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/docs/README.md#L30-L30"
+        },
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "817dd80690254ec75c227497a46150b5c623d566",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "docs/README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/docs/README.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ffb64a257410ad27f94309ffecea9f71d0de8104876b486cf9d06516046cfa3",
+        "slc_6e3a9cb58ce4caa1e4cdf2139390c999d2f274e501a7b4054de49a5db5ddc092",
+        "slc_cfc20684ef4b1afcc8f5c026690c2f421f85f7c1f2efa702b1aec195c38d8721"
+      ],
+      "text": "Repository development practice: the docs/ directory is an Astro starter template; its README instructs contributors to scaffold with 'pnpm create astro' and run pnpm install/dev/build/preview from the project root to develop and build the docs site."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_513c84712bc0f64731b3d55104fc2792c1b66a2c56beb489c67af108bd8167c7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+          "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+          "line_end": 173,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "butttons/dora",
+          "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md#L173-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b37485d43c1daff0020801154400b4ef15ba2c743b041f40c0adbb1f20ff6a5"
+      ],
+      "text": "Repository development practice: the root README points contributors to CONTRIBUTING.md for contribution guidance."
+    }
+  ],
+  "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 177,
+        "path": "README.md",
+        "size": 5872
+      },
+      {
+        "lines": 792,
+        "path": "AGENTS.README.md",
+        "size": 20304
+      },
+      {
+        "lines": 43,
+        "path": "docs/README.md",
+        "size": 1591
+      },
+      {
+        "lines": 270,
+        "path": "docs/public/llm.txt",
+        "size": 9413
+      },
+      {
+        "lines": 4,
+        "path": "docs/public/robots.txt",
+        "size": 72
+      },
+      {
+        "lines": 80,
+        "path": "AGENTS.md",
+        "size": 3359
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 7640
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4899
+      },
+      {
+        "path": "docs/AGENTS.md",
+        "reason": "file-budget",
+        "size": 1219
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 148,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 3,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_c04d5998bab9571b82f8039c93efcc91",
+  "facets": {
+    "components": 0,
+    "dependencies": 3,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/butttons/dora/f4edb8fd349e142e78dea3258c3cd754a27d37bb/f6d9ac8d861f83d6/manifest.json",
+  "package_id": "pkg_5104714d758eeedfa572f959b9ce9ee3404cbd1c9ece23e9ff176267b26bfafc",
+  "repo": "butttons/dora",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0399cc5713026e40c0c3fc33c3eac0187e594bd0dbc810dbcde91ddbea91ac96",
+  "snapshot_id": "f6d9ac8d861f83d6",
+  "sources": [
+    {
+      "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+      "git_sha": "ac822d0c7e24d0292326f86641264566ff796fa0",
+      "lines": 792,
+      "path": "AGENTS.README.md",
+      "repository": "butttons/dora",
+      "sha256": "859101a435559b13332c2f9a84b60e2e7fa554e48639fd763b3cb670287342de",
+      "source_id": "src_cc44d5c621415ea882668f68a103a8cb",
+      "stored": "agents.readme.md-df4bd7398a0a.md",
+      "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.README.md"
+    },
+    {
+      "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+      "git_sha": "2d65db953861fbec96dd58c507ca7ee883af6ae0",
+      "lines": 80,
+      "path": "AGENTS.md",
+      "repository": "butttons/dora",
+      "sha256": "ec296c574c674ef82847bcd412eeec2e499d534ea4175f99e824074523a0908b",
+      "source_id": "src_05242555cc095549ae97d4e17efe5d12",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/AGENTS.md"
+    },
+    {
+      "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+      "git_sha": "ed9dd02df8d35ffd823e2bc3d22351c4df881263",
+      "lines": 177,
+      "path": "README.md",
+      "repository": "butttons/dora",
+      "sha256": "198f3def5c9345f4b851cafc9f797a5e522c6dc23709fa49c2a67c04900bf9a5",
+      "source_id": "src_10833c0aa20554bd99c20c03e8eb03ea",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/README.md"
+    },
+    {
+      "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+      "git_sha": "817dd80690254ec75c227497a46150b5c623d566",
+      "lines": 43,
+      "path": "docs/README.md",
+      "repository": "butttons/dora",
+      "sha256": "86318c6d34df5b5208fa136244150123c12e8ef5c1d0bad759732d4b88f5ada0",
+      "source_id": "src_0a9b7e06b8f151e5a91a02b21a76fcd2",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/docs/README.md"
+    },
+    {
+      "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+      "git_sha": "6280945f8c11ed4773c215d50257c54449640190",
+      "lines": 270,
+      "path": "docs/public/llm.txt",
+      "repository": "butttons/dora",
+      "sha256": "b2d94d7feefd39671f4584a967e9954693d75d3ce38d5c8e81b5af81539c79cd",
+      "source_id": "src_6882471dea2455f6b3b7762e5a1ae719",
+      "stored": "llm.txt-b1b07d73343d.txt",
+      "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/docs/public/llm.txt"
+    },
+    {
+      "commit": "f4edb8fd349e142e78dea3258c3cd754a27d37bb",
+      "git_sha": "c0f7cc5417a4a0dc26ed199f7247b76e6f5767bd",
+      "lines": 4,
+      "path": "docs/public/robots.txt",
+      "repository": "butttons/dora",
+      "sha256": "e571853b977462d44fb6ce249f2f4dd172e4f6cb6030dad8c39f4442e8a9aac8",
+      "source_id": "src_45ae1ed51fe75c2ea111b8b5b81e8882",
+      "stored": "robots.txt-2b69b8df40ae.txt",
+      "url": "https://github.com/butttons/dora/blob/f4edb8fd349e142e78dea3258c3cd754a27d37bb/docs/public/robots.txt"
+    }
+  ],
+  "summary": "dora is a CLI that turns a SCIP index into a queryable SQLite database, giving AI agents structured answers about a codebase instead of grepping files and reading imports. The tool has two layers: a SCIP layer that runs a configured indexer, parses the resulting protobuf, and loads symbols, references, and file dependencies into SQLite; and a tree-sitter layer that parses source on demand via WebAssembly grammars for things SCIP doesn't cover. Evidence coverage: 199 of 319 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,553 @@
+{
+  "applied_operation_id": "op_e95efa96110a4b11bd7646d292a828d5",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ddf7bebf19103cf7014976772071eeaffe604f74483163030d7c717d51b26995",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 60,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L53-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3a1bb7376934b3373644003fea7fda82727140042f796191a13225bb0874401"
+      ],
+      "text": "The CLI exposes commands including chub search [query], chub get <id> [--lang py|js], chub annotate (note, --clear, --list), and chub feedback <id> <up|down>."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1a200125d6287a726b95e49e67d77bf0706484d7044ff58b506f5e74d1b348b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 47,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L44-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c250a60a923041d4c1be160a6980c3af2cc536070fe7cf9b8ff7e708580360b"
+      ],
+      "text": "Fetches support language variants via --lang (e.g. py or js) for the same doc ID such as openai/chat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2aff4e41def7e685b8214d11777e2457e9bb71ffa196269a587af06a507e0703",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a3c7a670f5bf9bfa78fd55eaa1a58c29792ea5ef606b28cb5f90c1c86c419a76"
+      ],
+      "text": "Docs can have multiple reference files; --file fetches specific references and --full fetches everything, aimed at avoiding wasted tokens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea370d5d003fee4a5b2ab5de8e0636c9ac0ee741992678599ef1d8231aa34b84",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L91-L91"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L68-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ac36e6c03dfb0cdec8fa6b2b51e1f9fa040f79a39bb8441a6019d0ce4e18816",
+        "slc_0f06b00859a90655c06e3901295b82209411edeea9c6d400215d2ac00313c5a7"
+      ],
+      "text": "Annotations are local notes persisted across sessions and re-injected on future fetches only with --with-annotations, which is off by default, with contents treated as untrusted input."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a6716dcba05b3390693224fe5a4befc9aa70c5bde4f88c309b9686b1baf7067",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L38-L38"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64eb1bec88a4a820c686f5e5d983677eb25e3b1cf01c3b062589db38a8831df0",
+        "slc_b1f91dc19900c67154894d4faa0336873af0f89e7e5ba0f7f54ef2cfa62b7d64"
+      ],
+      "text": "Feedback is up/down ratings sent to doc authors so content improves for everyone, separate from local annotations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8beffb885d0430f3af8f61df56c218d13dea62acc9794a8099b920d9810a6d8f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L5-L7"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_090c8cdc7bd9a459958af2f3d8700be433b1e0ef56fdb4796de62ddad765b7e2",
+        "slc_a092760ac699cf277f3a8a44010f5848a148c95c97df80e48aff32d813e46f6e"
+      ],
+      "text": "The product is an npm-distributed CLI requiring Node.js >= 18, installed globally as @aisuite/chub."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cbf258251a6c39233fdad18cb3adff84bd46f3a411329ebde6d8445eeb4ecb74",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f540bb7ef320e88a081ef3f535e69814c654ef82cda48461590e6e7f6a2710f2"
+      ],
+      "text": "Agents can use Chub via a SKILL.md agent skill; for Claude Code the README suggests placing it in ~/.claude/skills/get-api-docs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75bada682e3c02b1d3c1799549b4228f0a4cee047384e838d16f3b98b2c01da5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 45,
+          "line_start": 40,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L40-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b864bd94a439f52baedcdc0ef6f5ac961a4b12833eb92d128366b69cb4fc6da5"
+      ],
+      "text": "Repository development practice: contributors fork from main, add/update tests, run 'cd cli && npm test', validate with 'chub build content/ --validate-only', then submit a pull request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_daa641780112880aa40395ed10bd7f94a67f5004ed2764a36028560de3a3a853",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 34,
+          "line_start": 29,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L29-L34"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 73,
+          "line_start": 56,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L56-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e38a6f0d1003a1dcf4675c8c9bcb9c1f6e123ceb0a14f376a96c12491cb3a110",
+        "slc_ee90a2da63bb013b00b631b143de1fcb9428b5dbc52a631c15477b5e2c7c9ef9"
+      ],
+      "text": "Repository development practice: tests run via npm test, test:watch, and test:coverage inside the cli directory, using Vitest unit tests plus e2e/integration tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f8944ac89337ced4a0e703faf602ddc92fe82a7ababae91e71d35ca126df6b7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 99,
+          "line_start": 98,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L98-L99"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 104,
+          "line_start": 103,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L103-L104"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 94,
+          "line_start": 84,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L84-L94"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 82,
+          "line_start": 81,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L81-L82"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 114,
+          "line_start": 106,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L106-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d90bae2b032d5ae1a728cd58c8cf4584a95b81102f62e0ba1d03337551f86a3",
+        "slc_65c59b1aed01fd3f3682e07973b5cfce71accf18947872684e866ab6d326bc29",
+        "slc_805a001fb9a0c14e18c53ead4bd1b9855f9e4161069bb22de10516a88cc710bf",
+        "slc_92d41ea49b2c73c22c226f97bc1463a68ecc1681d719fb63af9cb9038b125f42",
+        "slc_e926dcad9e17f8c56bd887b989e695ba6d4d56b8e1563813aa4f256ad9deca90"
+      ],
+      "text": "Repository development practice: docs are contributed as <author>/docs/<name>/DOC.md with YAML frontmatter (name, description, languages, versions, tags, updated-on) and optional references/ files; skills follow a similar SKILL.md pattern."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4495b0f0d6f599d45e2e0d2e66b278c7eee21af0e6c4c0d5c8b735ff6d35fd7d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "CONTRIBUTING.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md#L49-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_238e376080cfb79bd1435fc933b7306799a0bcbb277cfcc425b5620e552c595c"
+      ],
+      "text": "Repository development practice: code style mandates ES modules, no build step, minimal dependencies preferring Node built-ins, and every command supporting --json output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca0862d3589d7febbe2cdfebec82f61c6aa66f02e0d1e1d97fb728d475802d31",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L101-L101"
+        },
+        {
+          "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+          "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "andrewyng/context-hub",
+          "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5b2014ee5c98cd25b0501eb20cf916551ad896e9ddd82355b9aa6058eef0ffa",
+        "slc_fdd46b88172603f57fe21448cee0e5017c3056add48a523153c60472688ab138"
+      ],
+      "text": "The project is MIT licensed and content is plain markdown with YAML frontmatter maintained in the repo."
+    }
+  ],
+  "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 101,
+        "path": "README.md",
+        "size": 5124
+      },
+      {
+        "lines": 52,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 2051
+      },
+      {
+        "lines": 134,
+        "path": "CONTRIBUTING.md",
+        "size": 3633
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1005
+      },
+      {
+        "path": "llms.txt",
+        "reason": "file-budget",
+        "size": 6843
+      },
+      {
+        "path": "docs/byod-guide.md",
+        "reason": "file-budget",
+        "size": 2252
+      },
+      {
+        "path": "docs/cli-reference.md",
+        "reason": "file-budget",
+        "size": 7893
+      },
+      {
+        "path": "docs/content-guide.md",
+        "reason": "file-budget",
+        "size": 6656
+      },
+      {
+        "path": "docs/design.md",
+        "reason": "file-budget",
+        "size": 26393
+      },
+      {
+        "path": "docs/features/agent-annotations.md",
+        "reason": "file-budget",
+        "size": 4054
+      },
+      {
+        "path": "docs/features/search-ranking.md",
+        "reason": "file-budget",
+        "size": 4890
+      },
+      {
+        "path": "docs/feedback-and-annotations.md",
+        "reason": "file-budget",
+        "size": 4774
+      },
+      {
+        "path": "docs/private-content.md",
+        "reason": "file-budget",
+        "size": 1221
+      }
+    ],
+    "omitted_count": 10,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1857,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 10,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_7bd86a737778571faa39725f4f516f40",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/andrewyng/context-hub/67dcbeb2eb42c808549f08397920ad58be7c2206/1791801ae21ba245/manifest.json",
+  "package_id": "pkg_b9b02d67aa9d880468dd621add285f464ac431c81177fec2595b4bd19d7e4629",
+  "repo": "andrewyng/context-hub",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "938a9b29e14f39fb378b7cbd360ade8c94c06a53d067dcb019c63890c7d576b4",
+  "snapshot_id": "1791801ae21ba245",
+  "sources": [
+    {
+      "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+      "git_sha": "4be408c6b6fea688c27fa5f08bac3d5ce1b3ab8f",
+      "lines": 52,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "andrewyng/context-hub",
+      "sha256": "d7191ff62cf423ec0bcc0f6e09284cbe150bd0a985e2d12adbef48dc3e57658d",
+      "source_id": "src_7af0b682537359d782f31ef331b1f037",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+      "git_sha": "1e8f3d5b8c898a5383eafeafaa60debeab096074",
+      "lines": 134,
+      "path": "CONTRIBUTING.md",
+      "repository": "andrewyng/context-hub",
+      "sha256": "4a945f115e5c39e251c308d75caaeb6f9b88965e4c4b521211823dc2d979de16",
+      "source_id": "src_45045710554b52eea01c302b89fe2bde",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/CONTRIBUTING.md"
+    },
+    {
+      "commit": "67dcbeb2eb42c808549f08397920ad58be7c2206",
+      "git_sha": "946455a8cc7e1e8d7c0013a17c7303b1378230ae",
+      "lines": 101,
+      "path": "README.md",
+      "repository": "andrewyng/context-hub",
+      "sha256": "45f23233aca189cd917f7569450e28158b0b7519b042f3a3d4c84aec2254b1a7",
+      "source_id": "src_4f4c7fac03c65112adc2bcf67130f190",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/andrewyng/context-hub/blob/67dcbeb2eb42c808549f08397920ad58be7c2206/README.md"
+    }
+  ],
+  "summary": "Context Hub is an MIT-licensed npm CLI (@aisuite/chub) that gives coding agents curated, versioned markdown API docs with search/fetch, local annotations, and up/down feedback; evidence is mostly README plus contributor docs, with no code slices.",
+  "superseded_claim_ids": []
+}

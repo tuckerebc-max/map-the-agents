@@ -1,0 +1,780 @@
+{
+  "budgets": {
+    "bytes_stored": 50588,
+    "max_bytes": 70000,
+    "max_files": 3
+  },
+  "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+  "commit_date": "2026-08-28T02:09:42Z",
+  "default_branch": "main",
+  "dir": "sources/github/atomgit-atomcode/atomcode/287bff70f9400c24f4afd8fcf4762fbab63d8efa/b2f57fae7d62214d",
+  "explicit_paths": [],
+  "files": [
+    {
+      "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+      "lines": 839,
+      "path": "README.md",
+      "raw_url": "https://raw.githubusercontent.com/atomgit-atomcode/atomcode/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md",
+      "sha256": "e8aae0347c27fab884c66307a071f111a90af338312146161dc0df8ac73a7653",
+      "size": 37605,
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md"
+    },
+    {
+      "git_sha": "d191cd5f1b6aab86fbcfb01a667a58d22fd317bf",
+      "lines": 123,
+      "path": "AGENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/atomgit-atomcode/atomcode/287bff70f9400c24f4afd8fcf4762fbab63d8efa/AGENTS.md",
+      "sha256": "6561acc7978d17b64607c4597c0490da0a9b553dc637e80ba861018b07da9ef4",
+      "size": 9482,
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/AGENTS.md"
+    },
+    {
+      "git_sha": "7694327716773114ca646629b7c53ec3cfd6189c",
+      "lines": 61,
+      "path": "CONTEXT.md",
+      "raw_url": "https://raw.githubusercontent.com/atomgit-atomcode/atomcode/287bff70f9400c24f4afd8fcf4762fbab63d8efa/CONTEXT.md",
+      "sha256": "48f45e13b48b4ba5e7ec97c9c416755555601cd6e0a249fed6c294e894eff181",
+      "size": 3501,
+      "stored": "context.md-86fee53c3330.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/CONTEXT.md"
+    }
+  ],
+  "full_name": "atomgit-atomcode/atomcode",
+  "license": "MIT",
+  "omitted": [
+    {
+      "path": "README.zh-CN.md",
+      "reason": "file-budget",
+      "size": 36607
+    },
+    {
+      "path": "docs/HOOK_DOC_UPDATE_SPEC.md",
+      "reason": "file-budget",
+      "size": 16255
+    },
+    {
+      "path": "docs/acp-sdk-handler-notes.md",
+      "reason": "file-budget",
+      "size": 1471
+    },
+    {
+      "path": "docs/adr/0001-runtime-owned-session-transitions.md",
+      "reason": "file-budget",
+      "size": 993
+    },
+    {
+      "path": "docs/adr/0002-runtime-owned-dynamic-mcp-tool-catalog.md",
+      "reason": "file-budget",
+      "size": 3688
+    },
+    {
+      "path": "docs/adr/0003-runtime-owned-turn-execution-policy.md",
+      "reason": "file-budget",
+      "size": 2093
+    },
+    {
+      "path": "docs/architecture.md",
+      "reason": "file-budget",
+      "size": 9969
+    },
+    {
+      "path": "docs/async-webhook-guide.md",
+      "reason": "file-budget",
+      "size": 11268
+    },
+    {
+      "path": "docs/async-webhook-summary.md",
+      "reason": "file-budget",
+      "size": 10064
+    },
+    {
+      "path": "docs/coding-runtime-incremental-migration.md",
+      "reason": "file-budget",
+      "size": 57601
+    },
+    {
+      "path": "docs/coding-runtime-native-migration-design.md",
+      "reason": "file-budget",
+      "size": 46709
+    },
+    {
+      "path": "docs/compact-durable-checkpoint-design.md",
+      "reason": "file-budget",
+      "size": 7568
+    },
+    {
+      "path": "docs/compact-native-migration-retrospective.md",
+      "reason": "file-budget",
+      "size": 21432
+    },
+    {
+      "path": "docs/custom-endpoint-guide.md",
+      "reason": "file-budget",
+      "size": 3844
+    },
+    {
+      "path": "docs/hook-architecture.md",
+      "reason": "file-budget",
+      "size": 16034
+    },
+    {
+      "path": "docs/hook-cli-guide.md",
+      "reason": "file-budget",
+      "size": 10272
+    },
+    {
+      "path": "docs/hook-expansion-summary.md",
+      "reason": "file-budget",
+      "size": 9325
+    },
+    {
+      "path": "docs/hook-implementation-summary.md",
+      "reason": "file-budget",
+      "size": 8089
+    },
+    {
+      "path": "docs/hook-timing-complete.md",
+      "reason": "file-budget",
+      "size": 8512
+    },
+    {
+      "path": "docs/hooks.md",
+      "reason": "file-budget",
+      "size": 12593
+    },
+    {
+      "path": "docs/i18n-style.md",
+      "reason": "file-budget",
+      "size": 4862
+    },
+    {
+      "path": "docs/kernel-parity-backlog.md",
+      "reason": "file-budget",
+      "size": 11499
+    },
+    {
+      "path": "docs/live-transport-convergence-plan.md",
+      "reason": "file-budget",
+      "size": 11380
+    },
+    {
+      "path": "docs/mcp-rmcp-feasibility.md",
+      "reason": "file-budget",
+      "size": 13833
+    },
+    {
+      "path": "docs/mcp.md",
+      "reason": "file-budget",
+      "size": 14040
+    },
+    {
+      "path": "docs/mcp/github.md",
+      "reason": "file-budget",
+      "size": 5317
+    },
+    {
+      "path": "docs/plans/2026-07-23-windows-qr-rendering.md",
+      "reason": "file-budget",
+      "size": 2436
+    },
+    {
+      "path": "docs/plans/2026-07-24-busy-continue-fork.md",
+      "reason": "file-budget",
+      "size": 3740
+    },
+    {
+      "path": "docs/plans/2026-07-25-provider-retry-consolidation.md",
+      "reason": "file-budget",
+      "size": 4056
+    },
+    {
+      "path": "docs/plans/2026-07-25-subtasks-footer-panel.md",
+      "reason": "file-budget",
+      "size": 2812
+    },
+    {
+      "path": "docs/plans/2026-07-26-atomgit-production-tools.md",
+      "reason": "file-budget",
+      "size": 2262
+    },
+    {
+      "path": "docs/plans/2026-07-26-busy-continue-fork-gc.md",
+      "reason": "file-budget",
+      "size": 2230
+    },
+    {
+      "path": "docs/plans/2026-07-26-model-cost-attribution.md",
+      "reason": "file-budget",
+      "size": 4164
+    },
+    {
+      "path": "docs/plans/2026-07-26-provider-accounts-model-profiles-design.md",
+      "reason": "file-budget",
+      "size": 19990
+    },
+    {
+      "path": "docs/plans/2026-07-26-provider-accounts-model-profiles-plan.md",
+      "reason": "file-budget",
+      "size": 14147
+    },
+    {
+      "path": "docs/plans/2026-07-27-models-dev-pricing-design.md",
+      "reason": "file-budget",
+      "size": 2339
+    },
+    {
+      "path": "docs/plans/2026-07-28-provider-panel-ui-design.md",
+      "reason": "file-budget",
+      "size": 6996
+    },
+    {
+      "path": "docs/plans/2026-07-28-rewind-design.md",
+      "reason": "file-budget",
+      "size": 4579
+    },
+    {
+      "path": "docs/plans/2026-07-28-rewind-implementation-plan.md",
+      "reason": "file-budget",
+      "size": 5037
+    },
+    {
+      "path": "docs/plans/2026-07-31-native-runtime-datalog.md",
+      "reason": "file-budget",
+      "size": 3827
+    },
+    {
+      "path": "docs/plans/2026-08-02-session-recovery-design.md",
+      "reason": "file-budget",
+      "size": 3560
+    },
+    {
+      "path": "docs/plans/2026-08-02-session-recovery-implementation-plan.md",
+      "reason": "file-budget",
+      "size": 1717
+    },
+    {
+      "path": "docs/plans/2026-08-06-internal-continuation-compaction-design.md",
+      "reason": "file-budget",
+      "size": 2149
+    },
+    {
+      "path": "docs/plans/2026-08-07-config-panel-implementation-plan.md",
+      "reason": "file-budget",
+      "size": 3408
+    },
+    {
+      "path": "docs/plans/2026-08-07-lightweight-lsp-phase-one.md",
+      "reason": "file-budget",
+      "size": 4304
+    },
+    {
+      "path": "docs/plans/2026-08-07-request-user-input-review-design.md",
+      "reason": "file-budget",
+      "size": 2388
+    },
+    {
+      "path": "docs/plans/2026-08-07-tasks-long-line-rendering.md",
+      "reason": "file-budget",
+      "size": 2052
+    },
+    {
+      "path": "docs/plans/2026-08-10-first-stage-planning-quality-design.md",
+      "reason": "file-budget",
+      "size": 3382
+    },
+    {
+      "path": "docs/plans/2026-08-11-provider-form-horizontal-editing-design.md",
+      "reason": "file-budget",
+      "size": 1504
+    },
+    {
+      "path": "docs/plans/2026-08-11-todo-agent-body-projection-design.md",
+      "reason": "file-budget",
+      "size": 1671
+    },
+    {
+      "path": "docs/plans/2026-08-14-webui-browser-notification-design.md",
+      "reason": "file-budget",
+      "size": 13507
+    },
+    {
+      "path": "docs/plans/2026-08-15-webui-blocking-interaction-dock.md",
+      "reason": "file-budget",
+      "size": 2776
+    },
+    {
+      "path": "docs/plans/2026-08-17-acp-sdk-2.0-protocol-roadmap.md",
+      "reason": "file-budget",
+      "size": 38954
+    },
+    {
+      "path": "docs/plans/2026-08-17-project-input-history-design.md",
+      "reason": "file-budget",
+      "size": 4154
+    },
+    {
+      "path": "docs/plans/2026-08-20-code-review-deep-mode-fanout-design.md",
+      "reason": "file-budget",
+      "size": 12336
+    },
+    {
+      "path": "docs/plans/2026-08-20-code-review-deep-mode-fanout-plan.md",
+      "reason": "file-budget",
+      "size": 40067
+    },
+    {
+      "path": "docs/plans/2026-08-20-code-review-deep-verify-phase2-plan.md",
+      "reason": "file-budget",
+      "size": 29161
+    },
+    {
+      "path": "docs/plans/2026-08-21-external-agent-subagent-drivers-spec.md",
+      "reason": "file-budget",
+      "size": 18084
+    },
+    {
+      "path": "docs/plans/2026-08-23-deepseek-v4-flash-evaluation-design.md",
+      "reason": "file-budget",
+      "size": 5350
+    },
+    {
+      "path": "docs/plans/2026-08-23-deepseek-v4-flash-evaluation.md",
+      "reason": "file-budget",
+      "size": 5877
+    },
+    {
+      "path": "docs/plans/2026-08-23-headless-eval-controls.md",
+      "reason": "file-budget",
+      "size": 1990
+    },
+    {
+      "path": "docs/pr-descriptions/2026-04-27-vscode-extension-ui-mcp.md",
+      "reason": "file-budget",
+      "size": 7327
+    },
+    {
+      "path": "docs/pr-hook-test-command.md",
+      "reason": "file-budget",
+      "size": 3717
+    },
+    {
+      "path": "docs/release-v5.0.1-current-branch-change-report.md",
+      "reason": "file-budget",
+      "size": 12047
+    },
+    {
+      "path": "docs/security/permission-model.md",
+      "reason": "file-budget",
+      "size": 9386
+    },
+    {
+      "path": "docs/session-convergence-plan.md",
+      "reason": "file-budget",
+      "size": 56957
+    },
+    {
+      "path": "docs/superpowers/2026-07-27-release-v5.0.3-test-checklist.md",
+      "reason": "file-budget",
+      "size": 7209
+    },
+    {
+      "path": "docs/superpowers/plans/2026-04-19-tuix-ink-cell-diff.md",
+      "reason": "file-budget",
+      "size": 6702
+    },
+    {
+      "path": "docs/superpowers/plans/2026-04-19-tuix-retained-mode-rewrite.md",
+      "reason": "file-budget",
+      "size": 26482
+    },
+    {
+      "path": "docs/superpowers/plans/2026-04-23-agent-harness-principles.md",
+      "reason": "file-budget",
+      "size": 10394
+    },
+    {
+      "path": "docs/superpowers/plans/2026-04-23-cadence-reflection.md",
+      "reason": "file-budget",
+      "size": 20440
+    },
+    {
+      "path": "docs/superpowers/plans/2026-04-23-merge-current-task-into-cadence.md",
+      "reason": "file-budget",
+      "size": 19955
+    },
+    {
+      "path": "docs/superpowers/plans/2026-05-08-vision-preprocessor-auto-config.md",
+      "reason": "file-budget",
+      "size": 33395
+    },
+    {
+      "path": "docs/superpowers/plans/2026-05-08-vision-preprocessor.md",
+      "reason": "file-budget",
+      "size": 41231
+    },
+    {
+      "path": "docs/superpowers/plans/2026-05-25-tuix-unified-in-app-scroll.md",
+      "reason": "file-budget",
+      "size": 80547
+    },
+    {
+      "path": "docs/superpowers/plans/2026-05-29-webui.md",
+      "reason": "file-budget",
+      "size": 74766
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-09-cache-friendly-compaction.md",
+      "reason": "file-budget",
+      "size": 26303
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-27-v2-rate-limit-pause-resume.md",
+      "reason": "file-budget",
+      "size": 42107
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-29-acp-agent.md",
+      "reason": "file-budget",
+      "size": 45485
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-03-terminal-status-glyph.md",
+      "reason": "file-budget",
+      "size": 17173
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-06-double-esc-undo-cooldown.md",
+      "reason": "file-budget",
+      "size": 11171
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-11-persistent-todo-panel.md",
+      "reason": "file-budget",
+      "size": 39162
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-12-github-style-diff.md",
+      "reason": "file-budget",
+      "size": 26844
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-13-selectable-approval.md",
+      "reason": "file-budget",
+      "size": 35307
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-22-batch-user-questions-persona-nudge.md",
+      "reason": "file-budget",
+      "size": 6952
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-22-brainstorming-request-user-input.md",
+      "reason": "file-budget",
+      "size": 10192
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-22-deepseek-skill-first-reminder.md",
+      "reason": "file-budget",
+      "size": 17463
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-22-multi-question-request-user-input.md",
+      "reason": "file-budget",
+      "size": 33854
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-22-request-user-input-custom-and-submit-spacing.md",
+      "reason": "file-budget",
+      "size": 21648
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-24-retire-core-conversation-tui-port.md",
+      "reason": "file-budget",
+      "size": 19826
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-24-skills-multi-compose.md",
+      "reason": "file-budget",
+      "size": 12959
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-24-windows-native-tls-schannel-fallback.md",
+      "reason": "file-budget",
+      "size": 10826
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-25-retire-core-provider-A-compact.md",
+      "reason": "file-budget",
+      "size": 11043
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-25-retire-core-provider-B-vision.md",
+      "reason": "file-budget",
+      "size": 27164
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-25-retire-core-provider-C2-conversation-transport.md",
+      "reason": "file-budget",
+      "size": 12171
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-25-retire-core-tool-ball-D.md",
+      "reason": "file-budget",
+      "size": 9301
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-25-round-cap-checkpoint.md",
+      "reason": "file-budget",
+      "size": 35367
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-29-webui-sync-compact.md",
+      "reason": "file-budget",
+      "size": 13048
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-31-local-scheduled-tasks-phase1.md",
+      "reason": "file-budget",
+      "size": 23704
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-31-local-scheduled-tasks-phase2.md",
+      "reason": "file-budget",
+      "size": 19327
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-31-project-memory-dir-override.md",
+      "reason": "file-budget",
+      "size": 10387
+    },
+    {
+      "path": "docs/superpowers/specs/2026-04-23-p2-doctor-review-notebook-todo-design.md",
+      "reason": "file-budget",
+      "size": 2492
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-08-vision-preprocessor-design.md",
+      "reason": "file-budget",
+      "size": 14151
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-25-tuix-unified-in-app-scroll-design.md",
+      "reason": "file-budget",
+      "size": 17131
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-29-provider-add-simplify-design.md",
+      "reason": "file-budget",
+      "size": 9680
+    },
+    {
+      "path": "docs/superpowers/specs/2026-05-29-webui-design.md",
+      "reason": "file-budget",
+      "size": 14766
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-07-headless-output-format-json-design.md",
+      "reason": "file-budget",
+      "size": 8726
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-09-cache-friendly-compaction-design.md",
+      "reason": "file-budget",
+      "size": 9955
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-27-v2-rate-limit-pause-resume-design.md",
+      "reason": "file-budget",
+      "size": 8662
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-29-acp-agent-design.md",
+      "reason": "file-budget",
+      "size": 14054
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-03-terminal-status-glyph-design.md",
+      "reason": "file-budget",
+      "size": 6955
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-06-double-esc-undo-cooldown-design.md",
+      "reason": "file-budget",
+      "size": 4551
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-11-persistent-todo-panel-design.md",
+      "reason": "file-budget",
+      "size": 11445
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-13-selectable-approval-design.md",
+      "reason": "file-budget",
+      "size": 8332
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-22-batch-user-questions-persona-nudge-design.md",
+      "reason": "file-budget",
+      "size": 4571
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-22-brainstorming-request-user-input-design.md",
+      "reason": "file-budget",
+      "size": 6293
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-22-deepseek-skill-first-reminder-design.md",
+      "reason": "file-budget",
+      "size": 6158
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-22-multi-question-request-user-input-design.md",
+      "reason": "file-budget",
+      "size": 9075
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-22-request-user-input-custom-and-submit-spacing-design.md",
+      "reason": "file-budget",
+      "size": 6304
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-24-retire-core-conversation-tui-port-design.md",
+      "reason": "file-budget",
+      "size": 8075
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-24-skills-multi-compose-design.md",
+      "reason": "file-budget",
+      "size": 6868
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-24-windows-native-tls-schannel-fallback-design.md",
+      "reason": "file-budget",
+      "size": 8413
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-25-retire-core-provider-A-compact-design.md",
+      "reason": "file-budget",
+      "size": 5552
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-25-retire-core-provider-B-vision-design.md",
+      "reason": "file-budget",
+      "size": 8636
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-25-retire-core-provider-C-conversation-design.md",
+      "reason": "file-budget",
+      "size": 8267
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-25-retire-core-tool-ball-D-design.md",
+      "reason": "file-budget",
+      "size": 6224
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-25-round-cap-checkpoint-design.md",
+      "reason": "file-budget",
+      "size": 11110
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-29-user-input-background-block-design.md",
+      "reason": "file-budget",
+      "size": 5536
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-29-webui-sync-compact-design.md",
+      "reason": "file-budget",
+      "size": 5974
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-30-progress-signposts-preamble-design.md",
+      "reason": "file-budget",
+      "size": 6807
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-30-workflow-intent-understanding-design.md",
+      "reason": "file-budget",
+      "size": 7146
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-31-local-scheduled-tasks-design.md",
+      "reason": "file-budget",
+      "size": 7717
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-31-local-scheduled-tasks-phase2-design.md",
+      "reason": "file-budget",
+      "size": 8230
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-31-project-memory-dir-override-design.md",
+      "reason": "file-budget",
+      "size": 6722
+    },
+    {
+      "path": "docs/target-architecture.md",
+      "reason": "file-budget",
+      "size": 6203
+    },
+    {
+      "path": "docs/telemetry.md",
+      "reason": "file-budget",
+      "size": 5533
+    },
+    {
+      "path": "docs/testing/release-v5.0.0-acceptance.md",
+      "reason": "file-budget",
+      "size": 16628
+    },
+    {
+      "path": "docs/testing/release-v5.0.3-core-retirement-acceptance.md",
+      "reason": "file-budget",
+      "size": 14302
+    },
+    {
+      "path": "docs/testing/windows-path-normalization.md",
+      "reason": "file-budget",
+      "size": 4595
+    },
+    {
+      "path": "docs/v5.0.0-retire-bridge-core-progress.md",
+      "reason": "file-budget",
+      "size": 10947
+    },
+    {
+      "path": "docs/vscode-i18n-implementation-plan-2026-06-30.md",
+      "reason": "file-budget",
+      "size": 4828
+    },
+    {
+      "path": "docs/webhook-guide.md",
+      "reason": "file-budget",
+      "size": 10690
+    },
+    {
+      "path": "docs/webhook-implementation-summary.md",
+      "reason": "file-budget",
+      "size": 7895
+    }
+  ],
+  "omitted_count": 143,
+  "package": "sources/github/atomgit-atomcode/atomcode/287bff70f9400c24f4afd8fcf4762fbab63d8efa/b2f57fae7d62214d/manifest.json",
+  "repo": "atomgit-atomcode/atomcode",
+  "repository": {
+    "complete": true,
+    "tree_blobs": 1099,
+    "tree_truncated": false
+  },
+  "selection": {
+    "candidates": 146,
+    "complete": false,
+    "omitted": 143,
+    "stored": 3
+  },
+  "snapshot_id": "b2f57fae7d62214d",
+  "tree_sha": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+  "url": "https://github.com/atomgit-atomcode/atomcode"
+}

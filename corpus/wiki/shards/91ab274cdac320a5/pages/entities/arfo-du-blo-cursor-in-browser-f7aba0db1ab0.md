@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_17d422b228a73f179d320671f97c534d01ef5c3e7a891b020b1cf265f1259100
+- clm_1df9617b3b8875a3183b2cc1246e4ff6104bcad1115cb76eae5c3f160ae244f3
+- clm_31cbfe80f1a4f1b782a65b0c1db65bc8f3af3e4cc75ab5253449b5fc9e684335
+- clm_469e42d86c416f7a1f82c0dcda63f18cdc1147d25341b6d50a1d9a4f947585ef
+- clm_47d9e5faa4311d3ae0fbd10983330c6047dd0d9e00a64cfc4ac5d1690d0c1ef9
+- clm_5dda39d62153b14f99b81cdffccf592cca235e447b9677275e54521f245699b0
+- clm_7ac2c15ad361e20923a29a2c9b38a13c4816992894a5413899256e87870e6e7f
+- clm_7ae78ebd74cc346bd53a0993c5bab5b79adfa60b65f4ae2cfea7fe730dc2fb22
+- clm_94f6824941f7f6f5ce7807da29954b9f1b384f1dd71fc4ad29309881fee16933
+- clm_b04b47561fb4f08f1ed08ff4f942e83244e22933a8c12dafd4db44914301e616
+- clm_f53e747c6e86c5e0934c01844a3bf4fc6331363148c1361e15369f1aa344b584
+maturity: draft
+page_id: pg_cb0b409761035762807df7aba0db1ab0
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: arfo-du-blo/cursor-in-browser
+updated_at: '2026-09-14T03:35:01Z'
+---
+
+# arfo-du-blo/cursor-in-browser
+
+<!-- rcw:begin owner=entity:ent_28623df78c935962ad006c38eda2f52d block=evidence -->
+- arfo-du-blo/cursor-in-browser is mentioned in this evidence. [@claim:clm_17d422b228a73f179d320671f97c534d01ef5c3e7a891b020b1cf265f1259100] [@claim:clm_1df9617b3b8875a3183b2cc1246e4ff6104bcad1115cb76eae5c3f160ae244f3] [@claim:clm_31cbfe80f1a4f1b782a65b0c1db65bc8f3af3e4cc75ab5253449b5fc9e684335] [@claim:clm_469e42d86c416f7a1f82c0dcda63f18cdc1147d25341b6d50a1d9a4f947585ef] [@claim:clm_47d9e5faa4311d3ae0fbd10983330c6047dd0d9e00a64cfc4ac5d1690d0c1ef9] [@claim:clm_5dda39d62153b14f99b81cdffccf592cca235e447b9677275e54521f245699b0] [@claim:clm_7ac2c15ad361e20923a29a2c9b38a13c4816992894a5413899256e87870e6e7f] [@claim:clm_7ae78ebd74cc346bd53a0993c5bab5b79adfa60b65f4ae2cfea7fe730dc2fb22] [@claim:clm_94f6824941f7f6f5ce7807da29954b9f1b384f1dd71fc4ad29309881fee16933] [@claim:clm_b04b47561fb4f08f1ed08ff4f942e83244e22933a8c12dafd4db44914301e616] [@claim:clm_f53e747c6e86c5e0934c01844a3bf4fc6331363148c1361e15369f1aa344b584]
+<!-- rcw:end owner=entity:ent_28623df78c935962ad006c38eda2f52d block=evidence -->
+
+## Researcher notes
+

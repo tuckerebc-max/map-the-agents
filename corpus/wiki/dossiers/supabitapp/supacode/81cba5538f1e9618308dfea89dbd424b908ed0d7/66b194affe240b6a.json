@@ -1,0 +1,523 @@
+{
+  "applied_operation_id": "op_c9d11a9b992e4ee0bd2de32d87b3cbdc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_48b385d754319bff29becc4179c6723523812ddeb10ed4b5e8e1cff98cdc9a75",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L3-L3"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 76,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L73-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3342e9b6cae668780004853c546f1f1a458d492a8c1252d4b427b1d368d773d3",
+        "slc_d1e2283b217a625986858acb3a44d048fda931d2c033c858a2de61b4f4fa8656"
+      ],
+      "text": "Supacode is a native macOS application (macOS 26.0+ required) that acts as a command center for running coding agents in parallel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_efd1bb32ede8674e3d21bf6832a8092f258a99af4fdaab2dd71da7d9c011ad88",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L5-L7"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L17-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b3d07674ebc9c186dec7ba6cdceb37aeb85a75a9abca4338def48be39ce5eb4f",
+        "slc_f56dca3cefa2695d60c536f10d63c9f7dfa840af2f8a7b50bc1ab05bbb65d840"
+      ],
+      "text": "Each task gets its own git worktree and real terminal so agents run in parallel without colliding; worktrees can be created from the sidebar, hotkey, command palette, CLI, or deeplink."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e34f8bfa3b5989771a5febc10c07025fa8b4c72ae26bc09f9adc23b33bd62fc",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 27,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L25-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a596bbc279933987d72e144c5ae32d059936264c59dc43bc093bc03407e7fa60"
+      ],
+      "text": "Sessions run inside zmx, a session daemon, rather than as app children, so quitting and relaunching reattaches sessions with scrollback; this is on by default with an optional teardown quit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_efcc6ae171408e9bb261b1a8236a8fc211f10be1aa829a8eff985b5f2f538449",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L31-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c223811e5a634567dc2180a3f7541b0a86751bb1d4474286c836b929deebcabe"
+      ],
+      "text": "Remote SSH repositories are supported in beta: git probes and terminals share one multiplexed SSH connection, and with zmx on the host, remote sessions survive dropped connections and sleep."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ca17220c02cf118c478f77e87464e44a03671b15f270792a0d3810537f52b85",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 54,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L51-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c32d638bc850b053ec4433c0696121fc397d08857021e4354f72df2bc4a185a"
+      ],
+      "text": "A `supacode` CLI manages worktrees, tabs, splits, and repos; sessions export repo, worktree, tab, and surface IDs, and `supacode://` deeplinks mirror CLI actions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5a7b591406a7b56b73604c4bc37ab25a0676b514e26b453f693b7a76dc094aa",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 47,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L45-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99e27c4aa6d4cc85932376e1f6d8131b4450d1e3465466c31f9adfa5557256ff"
+      ],
+      "text": "The app detects the coding agent per pane (busy, awaiting input, idle) via installed hooks, supporting Claude, Codex, and Copilot locally and over SSH, and drives notifications."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e6ade29cc1fa6f941efcaaa365948cd4e3ecf6f380355301efb2c4541a9d5a4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 41,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L39-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_129080a4b6e9ed8870c7b20efc9fa9786ae98d43d73c07834cc5f088b9b07f8b"
+      ],
+      "text": "Plain folders are first-class alongside git repos, getting a persistent terminal with tabs, scripts, and pinning but without git-only tools; remote URLs can be cloned into a folder."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbd2c36d4c3662bb20f026d01467ae112b5cb0ef9fae0dfe63eb0e6a792f7104",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 69,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L58-L69"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 130,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L128-L130"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_089567cdaede062e95219583f9a7875be8e86b734461eb9b39390f013f1dd3e9",
+        "slc_3e30cf437c538a5ad9cc8099eb75d285988ab9d5acb69bd4cf61adf024f7747e"
+      ],
+      "text": "Terminal rendering uses libghostty with tabs, splits, per-surface backgrounds, and theme sync; auto-updates come through Sparkle with a selectable channel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e9f9f2cc74f20d628e884dc302b8f6db8d319e9f5ce0e1d0789172f7f56c5286",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 69,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L58-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_089567cdaede062e95219583f9a7875be8e86b734461eb9b39390f013f1dd3e9"
+      ],
+      "text": "With GitHub integration enabled, each worktree's PR state, checks, and merge readiness display in the sidebar and refresh live with a configurable merge strategy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c2c27d715b8bd31b8112f00542baa3a50f5307df3d4aab7ed85cd430168ac74",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 130,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L128-L130"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "a199c815017a6ee961a62027c12f6b3f428b03ca",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "AGENTS.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/AGENTS.md#L15-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e30cf437c538a5ad9cc8099eb75d285988ab9d5acb69bd4cf61adf024f7747e",
+        "slc_bdb9bd6d4d5523a4279a0c14c6b098a8d9ca9e8b0cdd283885deda7857ebb96e"
+      ],
+      "text": "Key dependencies include The Composable Architecture for app state, GhosttyKit as the terminal emulator, Sparkle for updates, PostHog for analytics, and Sentry for error tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_758b40717cbc9dcbcf1720de55c49469e07c1d43675592a097640d4ebaa68915",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 98,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L94-L98"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 86,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L80-L86"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 108,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L102-L108"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 76,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L73-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12a305fba8d4de3eb4d1292f23dd90ec2c3a5e82fb6bfca915b3cf72102f659c",
+        "slc_16d422d87c4acc51cd28c30cbc241f3a2c2f3e434b9bb167eab6266b781198e9",
+        "slc_3e72cb1bd80bb368cfe2bcd57cc5acfd28cd29e30a983b11bd0fb25ff807ada3",
+        "slc_d1e2283b217a625986858acb3a44d048fda931d2c033c858a2de61b4f4fa8656"
+      ],
+      "text": "Repository development practice: contributors use mise for a pinned toolchain, git submodules, and make targets (doctor, build-ghostty-xcframework, build-app, run-app); on macOS 26.4+ Xcode 26.3 is needed because the pinned Zig 0.15.2 linker cannot link that SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6e32765a27d77f4a7b859e4b7fa018a79ab2107199e41f1cbff84b6f7a47b33",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 124,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L120-L124"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "a199c815017a6ee961a62027c12f6b3f428b03ca",
+          "line_end": 39,
+          "line_start": 24,
+          "path": "AGENTS.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/AGENTS.md#L24-L39"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "a199c815017a6ee961a62027c12f6b3f428b03ca",
+          "line_end": 55,
+          "line_start": 51,
+          "path": "AGENTS.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/AGENTS.md#L51-L55"
+        },
+        {
+          "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+          "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+          "line_end": 137,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "supabitapp/supacode",
+          "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md#L134-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f77aaad71f732504a026d355947da064aed77ae5becab9bfbdb5ac6eefa5c55",
+        "slc_6bfba5f83a02b6b6a0961e23fdad9269c29445284e9f99540d174cb0499fbd88",
+        "slc_81baa837ce7aa51e645b1450d851b683861eeb614d4bfa11fafccc2e9dab6fa9",
+        "slc_dbb2aacef72790e3a358ab1052b3320d2fda9e8f46dbb5964120f65ffe11dc5f"
+      ],
+      "text": "Repository development practice: contributions require opening an issue first, waiting for a `ready` label, then a focused linked PR; a human, never an AI agent, must be the accountable author, and code follows Swift 6/TCA style rules checked by `make check`."
+    }
+  ],
+  "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 145,
+        "path": "README.md",
+        "size": 6658
+      },
+      {
+        "lines": 55,
+        "path": "AGENTS.md",
+        "size": 5709
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 9
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 4181
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4544
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 828
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 683,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": false,
+      "omitted": 3,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_5695e15ff6535c43823d07d245f67015",
+  "facets": {
+    "components": 5,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/supabitapp/supacode/81cba5538f1e9618308dfea89dbd424b908ed0d7/66b194affe240b6a/manifest.json",
+  "package_id": "pkg_0c09a837e686968a30c7c5fde2f1df6a835a88dd020b670201c3cbc336048a21",
+  "repo": "supabitapp/supacode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "73e1aee6e81670fe8f5604199531edcbcb37a545e18445b8968c1d66c2912079",
+  "snapshot_id": "66b194affe240b6a",
+  "sources": [
+    {
+      "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+      "git_sha": "a199c815017a6ee961a62027c12f6b3f428b03ca",
+      "lines": 55,
+      "path": "AGENTS.md",
+      "repository": "supabitapp/supacode",
+      "sha256": "2cccc47d54befe8e79d6190498a34c71bc39eff5d8d6a370828084c03319f5aa",
+      "source_id": "src_d53e5dccfbbd5a82802a212999f37b3f",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/AGENTS.md"
+    },
+    {
+      "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+      "git_sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "supabitapp/supacode",
+      "sha256": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9",
+      "source_id": "src_77033d17ddf75d8cb357eadd78bf6055",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/CLAUDE.md"
+    },
+    {
+      "commit": "81cba5538f1e9618308dfea89dbd424b908ed0d7",
+      "git_sha": "43ca1b7e2ce103d28c02bca16ae300dcd9acc537",
+      "lines": 145,
+      "path": "README.md",
+      "repository": "supabitapp/supacode",
+      "sha256": "36a24c6c315c8b76ccbe1514f7dac72bec6dbac2886046afe8235c135d136101",
+      "source_id": "src_464ab6303eae54498ea24394368c4b63",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/supabitapp/supacode/blob/81cba5538f1e9618308dfea89dbd424b908ed0d7/README.md"
+    }
+  ],
+  "summary": "Supacode is a native macOS app for running coding agents in parallel via git worktrees, with persistent zmx-backed sessions, SSH remote repos, a CLI/deeplink interface, and GitHub PR tracking. The evidence is mostly README product documentation plus contributor build/coding guidelines.",
+  "superseded_claim_ids": []
+}

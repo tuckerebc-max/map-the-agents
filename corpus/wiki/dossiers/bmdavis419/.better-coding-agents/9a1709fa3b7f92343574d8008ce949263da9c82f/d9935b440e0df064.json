@@ -1,0 +1,376 @@
+{
+  "applied_operation_id": "op_2bf68551ee354d588eceea2a89391d31",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cab1afe4ca8d4f20db94815ec135a8b5cfef355f339cf6ff5f5fb3f08cdf872b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_785342a6482c2d0f7537bb584a2f63f6f79c45881824d1e8ecf191e0a9e0358b"
+      ],
+      "text": "The approach is to clone a library's entire source repo as a git subtree so an agent can search the codebase to answer questions about that library."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_152c56215d1894fa60d554233b33b3f5605e1b245e39c626728bc9b33efef897",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L9-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f4043826333a27c25374587f4b277f775f9579bae53cd5afbc84ae60f4198ca"
+      ],
+      "text": "The repository ships preconfigured setups for svelte & sveltekit, effect.ts, neverthrow, and opencode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6dbf7ae307f51ff96a04a4ab15fc23716bd76498e7f2b4d86cb0529bcf9a5c2c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c1570060a1dd3f9f8747a7897d6e6c551fafc43798406b600cb974fbd8454797"
+      ],
+      "text": "After setup, users get slash commands for the covered libraries in OpenCode and Cursor, plus a special OpenCode agent that searches the codebase for answers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4a9a2c784200ab4ec69aa53ef9a45268b40f1068d2654879cabf7217cc30d22",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c6502cb3348f5c9e343f0541ebf6432a0ab1f440ffcfa9ea3df1cfe106e682c6"
+      ],
+      "text": "An init command configures the user's machine by upserting OpenCode commands and agents and Cursor commands, updating existing files or creating new ones."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6bf4185bfa989a0f1cf31d1cb1e7943e9d48d808541e434d2d0acf6f889c5ae",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L43-L43"
+        },
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L49-L50"
+        },
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L46-L46"
+        },
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 40,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L38-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01210237cec71c71de961fe17c26c796149adbd070e6e45aff1c23414137d1da",
+        "slc_3b5fdfc095a005330bacaaf9f4162e06144493508f3e4c487df2e4db01470ff5",
+        "slc_975ab8bcd28f8aff3a3aa89b0c7477691297538c65049bfbe9fd5ccdf1561731",
+        "slc_98c25f506fb4ae2418dcaba046d490c37d76ecefd96496f6dba808632d2d3b66"
+      ],
+      "text": "Setup involves copying OPENCODE_ASSETS agent, command, and theme files into ~/.config/opencode subdirectories (agent, command, themes) after creating them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4aae6828c37d27a354b50839a7007d5bb59496d84f77a6e61761fca9ddadafd5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 62,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L61-L62"
+        },
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bdc37aace9ea0a5eaf400f3e79c7b4bbbccdcb31724a70cb4fcb83303e06ce6",
+        "slc_8aa52d04ebd37df70ecd9d1a0c8b73de108eebdff41257a76c73a72851a0887a"
+      ],
+      "text": "Cursor setup copies CURSOR_ASSETS/commands markdown files into ~/.cursor/commands, creating the directory if needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34d8a3e68972ad2f117a1955c44f84c3e4e9c1e2d96966c3fac155180fda3e96",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 69,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L66-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11fc42f8785b34ff9a88cffb627c17ce4e7051b4e0e5c9d9151245845f7d0f7c"
+      ],
+      "text": "The copy steps use cp -u so existing files are overwritten only when the source is newer, and parent directories are created if missing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c3cd18776cd5796e4fdb54569d63d6649f47f20ee0d62c524990666298c5bd4",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 17,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L16-L17"
+        },
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a724499f0bdb9d4b773607944b783e031235afa4ce1ab9bf2a7d731e59ff1ace",
+        "slc_c1570060a1dd3f9f8747a7897d6e6c551fafc43798406b600cb974fbd8454797"
+      ],
+      "text": "The tooling targets OpenCode and Cursor as the consuming coding-agent environments, with the repo expected to be cloned to ~/.better-coding-agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f319fd9fe1d16f4159f59b6d15c09840f1ef57c7c5f4b0ab9ce4ba685988728e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L49-L50"
+        },
+        {
+          "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+          "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "bmdavis419/.better-coding-agents",
+          "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b5fdfc095a005330bacaaf9f4162e06144493508f3e4c487df2e4db01470ff5",
+        "slc_769df784211870d583420c04820bf09581cb34e32382f23131fd11dc754c03fb"
+      ],
+      "text": "The repository also includes a color theme ported to OpenCode as part of its assets."
+    }
+  ],
+  "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 69,
+        "path": "README.md",
+        "size": 2416
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6418,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_36c598c98da15638aa6dbdf3967fec7b",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/bmdavis419/.better-coding-agents/9a1709fa3b7f92343574d8008ce949263da9c82f/d9935b440e0df064/manifest.json",
+  "package_id": "pkg_6af37580cb109fc0a0bd6d2c2372cd604f6a4c29ac6c8f8bffb8e3e67e667de7",
+  "repo": "bmdavis419/.better-coding-agents",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "01510a54d4effa582c9f7da3173fb55c510bd728cc063fa89d0abe452cf4b75e",
+  "snapshot_id": "d9935b440e0df064",
+  "sources": [
+    {
+      "commit": "9a1709fa3b7f92343574d8008ce949263da9c82f",
+      "git_sha": "01813a189e653ebe4f2989903c1c5d9986de21b3",
+      "lines": 69,
+      "path": "README.md",
+      "repository": "bmdavis419/.better-coding-agents",
+      "sha256": "6fb7277df4dda361d0c6b720f8a6e4037a1a7f3a7450db94bf1cbc28b1336ec0",
+      "source_id": "src_5a8788cbeeeb5b8a8cadf36ffcd7c1f7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/bmdavis419/.better-coding-agents/blob/9a1709fa3b7f92343574d8008ce949263da9c82f/README.md"
+    }
+  ],
+  "summary": "The repository provides prebuilt OpenCode and Cursor configuration assets (commands, agents, themes) that let coding agents answer questions by searching git-subtree copies of library source code; the README documents an init command and manual copy steps.",
+  "superseded_claim_ids": []
+}

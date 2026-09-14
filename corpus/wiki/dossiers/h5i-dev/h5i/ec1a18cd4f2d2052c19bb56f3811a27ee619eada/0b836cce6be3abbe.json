@@ -1,0 +1,658 @@
+{
+  "applied_operation_id": "op_b8a5cb02e7a74616b47e4c7a7f9e3e78",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a6b5bcd7d94345e631ed06921e78a771c7af6fa484985289b04469997fc6340",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 149,
+          "line_start": 137,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L137-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cae121c3977de3cb8cc0ddf905113dfea715e44c5fc7f8d632a3541443ad298d"
+      ],
+      "text": "The manual's command table lists groups including browser, box, box share, ui, runner, skill, plugin, websec, recon, join, and shell completions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_54d1a8c542f6fc1c53662bb895bfdc1d229de4e5a4068bcffb3f5b2a8b86eaf2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "5351337d00c70b14eca232657e477fb9c4011c4a",
+          "line_end": 107,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/README.md#L99-L107"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "5351337d00c70b14eca232657e477fb9c4011c4a",
+          "line_end": 44,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/README.md#L39-L44"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 173,
+          "line_start": 165,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L165-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_465b1ce7f06f344a9c52e1f1584b75ac694ea8491cc54cee8b457515a20d76bc",
+        "slc_e02b4d7874ca7c1ef300b700a97430f6b13ca6b65c4e10f11f1f93e6a311e10f",
+        "slc_fd12d1107a9eb9cbbb1bf1e98334d60620b0c5d78c0074d8c27a2eef2f6f57bd"
+      ],
+      "text": "Browser sessions are driven by verbs such as open, snapshot, click, type, extract, markdown, requests, audit, screenshot, reload, and close, with @ref handles identifying page elements."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70494c6b379bdb0bd2eb145eeb4e30c2d4330a0c548f4f72b530f2eeb593eab0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 211,
+          "line_start": 208,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L208-L211"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 193,
+          "line_start": 190,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L190-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32da8e818999398c9d0d103123b5bfc8f110f21adfda28b991adb1e43cda4264",
+        "slc_c4560b6dda2926cbcdccdae37ffc31689c42798b6c730a251217c801708ea93a"
+      ],
+      "text": "Verbs resolve a session via --session name or id, the H5I_BROWSER_SESSION variable, or the last-opened session; there is deliberately no single-live-session default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d00511d06a0790e4de2617a462177f4d28cd89472f34b6e6c1092f4f66bc45c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 234,
+          "line_start": 229,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L229-L234"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 16,
+          "line_start": 14,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L14-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_455932f028b6a501e1f86b5d9f6054dfbcc7c5feffdba29a50891aa38653c4e5",
+        "slc_b84b8dd112e2f7b88b8caf5a6e611c0ea8beea98e81e3f5ef9299ceaa40afc5d"
+      ],
+      "text": "The engine is the HTTP client: every request is policy-checked and recorded before bytes move, and a fetch that cannot be recorded is refused, so the log is a decision record."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38ba189317864945afe8c1d41cb03d4d03fa179bae3ce0d11de810b9b754496d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 254,
+          "line_start": 252,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L252-L254"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 250,
+          "line_start": 245,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L245-L250"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67bb2e2876343478d6228f50d25bfd4bb8ec2c2600b2a6ce702c4c5830f91561",
+        "slc_e9e67b03aec161b157f60c7e468ace90dc9c77d6cb67c38445726dc24db35884"
+      ],
+      "text": "A session grants only the origin it was opened on; --allow adds named origins, loopback is reachable by default unless --no-loopback, and off-origin subresources are refused and logged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ab328624b2f95a74a76b5c6f16456314774aac88a2ede622f236c238d2f2cc6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 227,
+          "line_start": 225,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L225-L227"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 339,
+          "line_start": 334,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L334-L339"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 373,
+          "line_start": 369,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L369-L373"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5234288b0ea2d24873328a443fd78ece3b1344bdfde0c0edf40b7d4f6ac13783",
+        "slc_9f9c145bbb88b27d36df23f7b6cad66773d612280c06ccf89249cb276156b82b",
+        "slc_d1cc0b203b91d82abcdf98e349b9893fbde1fe4c79596ac39acfaec36cfd2b45"
+      ],
+      "text": "By default a session runs unsandboxed on the host machine; --in places it in a box whose egress allowlist is enforced at a network boundary outside the engine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18a7e7f62eecae052005e8ee7f6437bae63aca2c6beb93a38d4d6027c83440fd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 50,
+          "line_start": 35,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L35-L50"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 96,
+          "line_start": 93,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L93-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_089aa3ee69e638a55437f29df42ad684ef592d4f36a18e77837362e683d5c527",
+        "slc_68b9d5cb23223ad40d355682652c58357849bc71d0f9d10b4389f31cebe569fe"
+      ],
+      "text": "Boxes are disposable environments holding code, agent, toolchain and optionally the browser session; box export produces a patch, report, receipt and timelines, and the agent has no direct host write path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45dd7056130d09882cca1838a55ae14d96c23f2d76aad537f1fab23caa36cba0",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 70,
+          "line_start": 58,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L58-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b3d1d5e614ef3c72989970761bf0f001f0bf3d76766bc65b262a7e1c13ab6407"
+      ],
+      "text": "The manual states the browser is incomplete: Canvas, WebSockets, Workers and IndexedDB are absent, and of twenty SPAs measured, eighteen read usefully and one not at all."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b0ca20ffdf79af0f570cfc76422ddf2c23e0b5f74647cd3983fd9de50ad20b7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 382,
+          "line_start": 375,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L375-L382"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 412,
+          "line_start": 408,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L408-L412"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63f664dae5971501c7d26cba4155b32c56a2274187fea5903cdb45370466b8e7",
+        "slc_eae6f9f97e638fa3967bd1f4119c308256623e70e9ec9b4a5dfd6263746e8aa7"
+      ],
+      "text": "Resident sessions in a box on Linux require a tier that keeps the engine alive; the supervised tier cannot hold a resident process because its seccomp-notify gate dies with the starting command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_874bc843f28ba695dcd5feb2c491b275a844395f747185bb0650c700608c102f",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 311,
+          "line_start": 310,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L310-L311"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 308,
+          "line_start": 304,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L304-L308"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_209aee9009f1514ca1ec6396398581c0b78c1664b28da558d03e3c47a4fc3be4",
+        "slc_f28b6d00d7fb373fc9b25c5f189c7ea7f8da9d5b063d1407e196f668084496db"
+      ],
+      "text": "Only the firefox-143-linux identity is currently supported; Chrome identities need client hints and WebGL capabilities the engine lacks, and identity consistency is explicitly not anonymity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ce1c36a01b02366afdc324ae26bd0a02a9424c21a966f7670075322b204ee98",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L29-L29"
+        },
+        {
+          "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+          "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "MANUAL.md",
+          "repository": "h5i-dev/h5i",
+          "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md#L117-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31936cea9b240539ee74216949d301b7b97e38d32892e8d8e9367f8ca72958da",
+        "slc_3e8560b751ac7ba1e3dce674ced567aa5f5486d8058c11821399c6a00315ea67"
+      ],
+      "text": "h5i is one Rust binary with no server, daemon, or SaaS; websec and recon are optional plugins shipped as separate archives and registered via h5i plugin install."
+    }
+  ],
+  "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 394,
+        "path": "README.md",
+        "size": 15172
+      },
+      {
+        "lines": 1908,
+        "path": "MANUAL.md",
+        "size": 85934
+      },
+      {
+        "lines": 99,
+        "path": "ROADMAP.md",
+        "size": 6481
+      },
+      {
+        "lines": 7,
+        "path": "SHOWCASE.md",
+        "size": 867
+      },
+      {
+        "lines": 126,
+        "path": "docs/content-style-guide.md",
+        "size": 5570
+      },
+      {
+        "lines": 36,
+        "path": "docs/robots.txt",
+        "size": 875
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/llms.txt",
+        "reason": "byte-budget",
+        "size": 12723
+      },
+      {
+        "path": "docs/roadmap-history.md",
+        "reason": "byte-budget",
+        "size": 551432
+      },
+      {
+        "path": "docs/benchmarks/env-overhead.md",
+        "reason": "file-budget",
+        "size": 6122
+      },
+      {
+        "path": "docs/benchmarks/microvm-boot.md",
+        "reason": "file-budget",
+        "size": 20085
+      },
+      {
+        "path": "docs/benchmarks/microvm-exec-tunnel.md",
+        "reason": "file-budget",
+        "size": 6294
+      },
+      {
+        "path": "docs/benchmarks/recon.md",
+        "reason": "file-budget",
+        "size": 3090
+      },
+      {
+        "path": "docs/demo/README.md",
+        "reason": "file-budget",
+        "size": 5474
+      },
+      {
+        "path": "docs/design/design-browser.md",
+        "reason": "file-budget",
+        "size": 43358
+      },
+      {
+        "path": "docs/design/design-console.md",
+        "reason": "file-budget",
+        "size": 11123
+      },
+      {
+        "path": "docs/design/design-credential-proxy.md",
+        "reason": "file-budget",
+        "size": 6789
+      },
+      {
+        "path": "docs/design/design-detect.md",
+        "reason": "file-budget",
+        "size": 23271
+      },
+      {
+        "path": "docs/design/design-h5i-ir.md",
+        "reason": "file-budget",
+        "size": 43268
+      },
+      {
+        "path": "docs/design/design-interminal-browser.md",
+        "reason": "file-budget",
+        "size": 13400
+      },
+      {
+        "path": "docs/design/design-policy.md",
+        "reason": "file-budget",
+        "size": 8511
+      },
+      {
+        "path": "docs/design/design-recon.md",
+        "reason": "file-budget",
+        "size": 35592
+      },
+      {
+        "path": "docs/design/design-runner.md",
+        "reason": "file-budget",
+        "size": 22730
+      },
+      {
+        "path": "docs/design/design-test.md",
+        "reason": "file-budget",
+        "size": 2608
+      },
+      {
+        "path": "docs/design/design-websec.md",
+        "reason": "file-budget",
+        "size": 56001
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1771
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 14677
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 20457
+      }
+    ],
+    "omitted_count": 22,
+    "omitted_slices": 79,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 493,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 28,
+      "complete": false,
+      "omitted": 22,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_688d197a13215fa3bcdbb3931e3c5d66",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 3,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/h5i-dev/h5i/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/0b836cce6be3abbe/manifest.json",
+  "package_id": "pkg_9492337a55c5155f15e6e041007588c9868c29c87d73273391e26c6a9405dfa6",
+  "repo": "h5i-dev/h5i",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1d7bdd47171a37e22eeba2821a9e2238bc5cd102d59f7a6eb03ec7ede6f08f10",
+  "snapshot_id": "0b836cce6be3abbe",
+  "sources": [
+    {
+      "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+      "git_sha": "c35ea49e63fd2ad0a7df853ea2e372e820507127",
+      "lines": 1908,
+      "path": "MANUAL.md",
+      "repository": "h5i-dev/h5i",
+      "sha256": "b8b6d1394893523c1b3613eb448cee337b009e0be74af1ec8cb04ced4b8e7450",
+      "source_id": "src_113d32534a8d5bd295d4a96cbb95e77b",
+      "stored": "manual.md-201a2f185bb0.md",
+      "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/MANUAL.md"
+    },
+    {
+      "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+      "git_sha": "5351337d00c70b14eca232657e477fb9c4011c4a",
+      "lines": 394,
+      "path": "README.md",
+      "repository": "h5i-dev/h5i",
+      "sha256": "94a7ffa5528af2a0356dc7de74b08650d1d4822308e2dfe3069719b6f1194cc0",
+      "source_id": "src_bc80a7762df55ceb850378ff6ec95a08",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/README.md"
+    },
+    {
+      "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+      "git_sha": "680060bb06b0bb24d5949db85781b063a912d200",
+      "lines": 99,
+      "path": "ROADMAP.md",
+      "repository": "h5i-dev/h5i",
+      "sha256": "a62fad7cb97c20daf00d0c48574e52b6db5f82f757f5e35c364e7fe754f25ef8",
+      "source_id": "src_3cd821e883a75e45a81cd4b5d18180ed",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/ROADMAP.md"
+    },
+    {
+      "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+      "git_sha": "c33e7ce76889f69ef71cea0a8c7e3826b50abe4b",
+      "lines": 7,
+      "path": "SHOWCASE.md",
+      "repository": "h5i-dev/h5i",
+      "sha256": "fb5570cdb5a582a67d9dafb544636501919bcaa8d1fca397f52657c423e44ca0",
+      "source_id": "src_f9c95c560935588caef4ffa6220327b0",
+      "stored": "showcase.md-d16764cc1397.md",
+      "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/SHOWCASE.md"
+    },
+    {
+      "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+      "git_sha": "92cfcae41a8781bc1b5ef0e930d815eb84fd7522",
+      "lines": 126,
+      "path": "docs/content-style-guide.md",
+      "repository": "h5i-dev/h5i",
+      "sha256": "be4d8d711dd9b111bdf19641ad79c08d4258057a0420c844c799afe2060708cb",
+      "source_id": "src_09ac793ae4d954bdbaaa59811c9148f3",
+      "stored": "content-style-guide.md-266f158e1bb5.md",
+      "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/docs/content-style-guide.md"
+    },
+    {
+      "commit": "ec1a18cd4f2d2052c19bb56f3811a27ee619eada",
+      "git_sha": "f553175cc92e96fccc4482a4d68c882de90e040d",
+      "lines": 36,
+      "path": "docs/robots.txt",
+      "repository": "h5i-dev/h5i",
+      "sha256": "60b9efa7ca33e89b69b91684323495c807604b6614cc5dc46ed2685cdc63bf21",
+      "source_id": "src_de7e0766c5a75c7fb520e851d0a8199a",
+      "stored": "robots.txt-e0fdde07b3ef.txt",
+      "url": "https://github.com/h5i-dev/h5i/blob/ec1a18cd4f2d2052c19bb56f3811a27ee619eada/docs/robots.txt"
+    }
+  ],
+  "summary": "Selected evidence records: The manual's command table lists groups including browser, box, box share, ui, runner, skill, plugin, websec, recon, join, and shell completions. Browser sessions are driven by verbs such as open, snapshot, click, type, extract, markdown, requests, audit, screenshot, reload, and close, with @ref handles identifying page elements.",
+  "superseded_claim_ids": []
+}

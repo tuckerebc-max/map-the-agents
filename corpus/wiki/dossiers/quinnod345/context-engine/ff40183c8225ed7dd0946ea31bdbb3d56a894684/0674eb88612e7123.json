@@ -1,0 +1,639 @@
+{
+  "applied_operation_id": "op_02cdb06a8ba24ea09df01eb813e9795d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a834fc855c29950e54cd13bb89643557b957fc3492d8223c4ce589c95dcb712b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L5-L5"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_893762d862b93b36917689d86139bdeba70a2ecb9e17829ff809087af7a2b42d",
+        "slc_eab9fe2688d0ea7dd4b1f403b4901ec8849c3e2541929cbebba8f7847370734a"
+      ],
+      "text": "The npm package context-engine-ai lets AI agents ingest events from any source and query them in natural language, returning ranked, time-decayed results without a vector database, API keys, or configuration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c925389e44174a63b1ec3ee249137b688005b76fa8d38638435e34281f21adcf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 256,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L249-L256"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 215,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L213-L215"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 209,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L206-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bb484145aa81de978e95b6b1dff48e7838b8ef77ceb3f060891b287e5297752",
+        "slc_9654590c99a2b7942ad390b3535b5d957fe14405d81cc32c8dc74c36d093854e",
+        "slc_a678e637f9ed7c634d5da35d30dcbfb44c3215ec0f6be2f0b969e220129b89de"
+      ],
+      "text": "The HTTP server mode exposes REST endpoints including POST /ingest, GET /context?q=..., GET /recent, GET /count, DELETE /events, and GET /health, startable via ctx.serve(3334) or an npx CLI command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62ac101334cc26dc67708e0ca602d248c3ffd7410fed72b2908d6e438b4343df",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 243,
+          "line_start": 239,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L239-L243"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 219,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L219-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3dadd36ef67aa6bbc36a88465640d24efffaa8ca3911eabc53246ffbff41a3db",
+        "slc_eee6aba16e1ed3ba010aa2ff37368bc35ea910c7c8910fea8a889db0eb68b09b"
+      ],
+      "text": "An MCP server example lets MCP-compatible clients such as Claude Desktop, Cursor, and Windsurf call ingest_event, query_context, get_recent, and clear_context as native tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_172ff492b6da7011519f6f386e6da314825e9c1fe8172b12c6515ce5a5beed24",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 486,
+          "line_start": 486,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L486-L486"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 490,
+          "line_start": 490,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L490-L490"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 432,
+          "line_start": 432,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L432-L432"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8182a42c6b3f78c0813af6ec133ad43810a1f0130cdf6c9df8c8763a738c1a1e",
+        "slc_a16f72a77041ae677cb568abf837e9aae98cc70c1170c1caeef8d6c4d83a986b",
+        "slc_df215a933696329ef43266f82745505421b56f19046a47ffe81eae01bdb37704"
+      ],
+      "text": "Default embeddings use TF-IDF with locality-sensitive hashing projected to 128 dimensions, deterministic and network-free; an optional OpenAI text-embedding-3-small provider offers 1536-dimensional semantic search."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3e0f3cecb7c769c587ee060ea186b6ee29890340a1e1adf613b58012535a04a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 465,
+          "line_start": 459,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L459-L465"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "715d7232b0b7baca7da8190c5fb85ca37ee66372",
+          "line_end": 103,
+          "line_start": 101,
+          "path": "docs/architecture.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/architecture.md#L101-L103"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "715d7232b0b7baca7da8190c5fb85ca37ee66372",
+          "line_end": 108,
+          "line_start": 105,
+          "path": "docs/architecture.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/architecture.md#L105-L108"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 413,
+          "line_start": 411,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L411-L413"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6690c94da9e4a7f636391e7f31ff897108dbe64a806914207e42720244eee8c",
+        "slc_c6a0bba871e4265b85cf7b2dacb17c1776aa19395f3af27c596e22de7ae4eb60",
+        "slc_cdd1a49a76f15d1c75fd96c647fbba77bb4d9190ad6a526731534865d2f53513",
+        "slc_e047bce99a06d69ab7c441c4613f50e456de709512f61d1e5296c23ec5f4dabc"
+      ],
+      "text": "Query ranking multiplies cosine similarity by relevance and an exponential half-life decay factor 0.5^(age/halfLife), with a configurable decayHours defaulting to 24 hours."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d70d0317c3cd9762ab4916376e83f6bae00080a6381467626055aedb2db5ffdc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "715d7232b0b7baca7da8190c5fb85ca37ee66372",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "docs/architecture.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/architecture.md#L114-L114"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 465,
+          "line_start": 459,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L459-L465"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "715d7232b0b7baca7da8190c5fb85ca37ee66372",
+          "line_end": 120,
+          "line_start": 116,
+          "path": "docs/architecture.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/architecture.md#L116-L120"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 405,
+          "line_start": 405,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L405-L405"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63a8fd5e2afd959b259db14e3edda012f0e889b5f1ab1f2b4a2347a1bd433c2d",
+        "slc_b6690c94da9e4a7f636391e7f31ff897108dbe64a806914207e42720244eee8c",
+        "slc_d0ee6f8fb2b4413492d6497588abe058076c4eee9c42a25d1b2310ac8174ea1c",
+        "slc_e8927274f995dbf89b5cf12e28b0f18550aaf0d05b5c196488ee93082498b0ce"
+      ],
+      "text": "Ingest deduplicates events whose cosine similarity exceeds a configurable threshold (default 0.95) within a time window (default 60s), merging timestamps, boosting relevance, and tracking a _mergeCount field."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c80934970d1b411abe7318837ce23bd19b65bd4e2444b9ecc746e350818a20e4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "715d7232b0b7baca7da8190c5fb85ca37ee66372",
+          "line_end": 78,
+          "line_start": 75,
+          "path": "docs/architecture.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/architecture.md#L75-L78"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "715d7232b0b7baca7da8190c5fb85ca37ee66372",
+          "line_end": 71,
+          "line_start": 68,
+          "path": "docs/architecture.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/architecture.md#L68-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_517f8a7a8a9f69452063460be82710a62fae00db77f0d2a7aed451deae4043b6",
+        "slc_eee6dab17965d79fda6cd39d9bf530b8120469389d3944aff99ed5681b1773fd"
+      ],
+      "text": "Storage adapters include SQLiteStorage built on better-sqlite3 with brute-force JS cosine search suited to roughly 10,000 events, and PostgresStorage using pgvector's cosine-distance operator for production scale."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed3a3be63b906075cb697552bc7f8c1f44a5bf1d5b1cf016a9fe43b4859d0b50",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 191,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L188-L191"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 471,
+          "line_start": 471,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L471-L471"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8512aea0ee7da088b2dd208ea116d39d96d8225008ee70b17bfceedb12d7e1a7",
+        "slc_ff2a5dd2423495abfce406f24d629a1b9dd3c6663d7746d30cb387e2f08adb9e"
+      ],
+      "text": "By default the engine runs in-memory with events lost on restart; passing dbPath persists events to a standard SQLite file that survives restarts and can be inspected with SQLite tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1c9ea2c49ed3db2b097bb569eecc7c5e2290c8818bf50b1dbcb221bfd8fed4f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 656,
+          "line_start": 653,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L653-L656"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c586f6971cdae6c6263a21e99c3380cb61f18ecd3fa8a4982397637f2b8d639"
+      ],
+      "text": "Requirements are Node.js >= 18 with no external services in default configuration; PostgreSQL with the pgvector extension and an OpenAI API key are optional for production scale and higher-quality embeddings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d45a47f23e8857fcadb8367e30be2c8eae6ca6ed5cf4bd0fabe7c64048406dbc",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 137,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L134-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8166f13298808bcdee5e156a72b989b561022c094250998372ff70f9fea50ca9"
+      ],
+      "text": "The README states the tool is not the right fit for searching large documents or PDFs, for months-long persistent memory, or for indexing millions of documents, suggesting RAG frameworks or dedicated vector databases instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3375bd7d96c37283510074684d048f80fb8eadb3e7139066606bd023050a3f76",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 442,
+          "line_start": 438,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L438-L442"
+        },
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 436,
+          "line_start": 436,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L436-L436"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_736d0b49dd8df601b6b58e31e4493af9f630b381d5573d07e941a0434db656e1",
+        "slc_869588304939aa62e56d6665196ab223419bee542a7ffda89b47491e5717afe7"
+      ],
+      "text": "The README reports benchmarks on Apple Silicon with local TF-IDF and in-memory SQLite: roughly 0.1ms per ingest, 0.1ms per query across 1000 events, and about 20MB heap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_393e16452ac0102fa33cdb383582e16a025092145c30b744f6bf2ffb51581cfd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 669,
+          "line_start": 662,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L662-L669"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22c767556ecafb53f72ffdf459a6920fc342f1bbd2c29371186a402e12df2f64"
+      ],
+      "text": "Repository development practice: contributors clone the repo, run npm install, npm run build to compile TypeScript, npm test for the test suite, and npm run dev for watch mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ee1877b255298700fc3ceab20ffa98073ad6bd574c91d49654b0c572b04179a",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+          "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+          "line_end": 132,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "quinnod345/context-engine",
+          "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md#L127-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e05c9f91cc79f2b6ff29845cf33a64dde4207606db012c988c12290bc6aef4a"
+      ],
+      "text": "The project positions itself for agents needing real-time situational awareness, semantic search over structured event streams, and quick prototypes with built-in temporal decay and deduplication."
+    }
+  ],
+  "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 688,
+        "path": "README.md",
+        "size": 26012
+      },
+      {
+        "lines": 122,
+        "path": "docs/architecture.md",
+        "size": 3935
+      },
+      {
+        "lines": 93,
+        "path": "awesome-list-submission.md",
+        "size": 4058
+      },
+      {
+        "lines": 200,
+        "path": "blog-post-devto.md",
+        "size": 8320
+      },
+      {
+        "lines": 228,
+        "path": "LAUNCH.md",
+        "size": 7260
+      },
+      {
+        "lines": 127,
+        "path": "docs/custom-adapters.md",
+        "size": 3423
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/deployment.md",
+        "reason": "file-budget",
+        "size": 3108
+      },
+      {
+        "path": "docs/pricing.md",
+        "reason": "file-budget",
+        "size": 2410
+      },
+      {
+        "path": "docs/quick-start.md",
+        "reason": "file-budget",
+        "size": 2465
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 2750
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3763
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 43,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_c4b8684d6ae654039d7b404c6204e400",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/quinnod345/context-engine/ff40183c8225ed7dd0946ea31bdbb3d56a894684/0674eb88612e7123/manifest.json",
+  "package_id": "pkg_cfe7e414cc3d83699ff0d3c0472287f12c70d23b08e3dd8cbe3245c465b2bf69",
+  "repo": "quinnod345/context-engine",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "eb717f8ab383785275f23c9236ef8fa8c655ff5e035f85d5d77666c88ea07a9c",
+  "snapshot_id": "0674eb88612e7123",
+  "sources": [
+    {
+      "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+      "git_sha": "3b2e2a0d455a73a9ca085fb1cce3790c742e66ce",
+      "lines": 228,
+      "path": "LAUNCH.md",
+      "repository": "quinnod345/context-engine",
+      "sha256": "f11e7215dfb2b6f124dc574b028a89567eba67dd8722f2aad2982598dd0273ca",
+      "source_id": "src_dd60e28985c253a5b4ab4bdfd188e19d",
+      "stored": "launch.md-9bec8c099881.md",
+      "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/LAUNCH.md"
+    },
+    {
+      "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+      "git_sha": "1288880bf3da4b48f9ea6ead455209553ed64371",
+      "lines": 688,
+      "path": "README.md",
+      "repository": "quinnod345/context-engine",
+      "sha256": "eee19149af5c06ae8cb0c9d71f3e01512c4db597a7fb9c6677817717579655a6",
+      "source_id": "src_2249690a32225f4ba85618e6a039b162",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/README.md"
+    },
+    {
+      "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+      "git_sha": "339853f00d861c03276e72f2b2bf4d449eeea05c",
+      "lines": 93,
+      "path": "awesome-list-submission.md",
+      "repository": "quinnod345/context-engine",
+      "sha256": "fd06eb1f0fef0902112077fe09ad4d1a3b9816450a5d0003c4425095e8b9e438",
+      "source_id": "src_e549867e3743553ab651a84a61b3e511",
+      "stored": "awesome-list-submission.md-6c60aa7bcd70.md",
+      "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/awesome-list-submission.md"
+    },
+    {
+      "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+      "git_sha": "1f8ad0f6f8ad21af966555ee5099a435b823f2b4",
+      "lines": 200,
+      "path": "blog-post-devto.md",
+      "repository": "quinnod345/context-engine",
+      "sha256": "b085fa6197f038d7d4823c28639f3b0fb5dbea1d48ef034fc39be04c1a2037c1",
+      "source_id": "src_cdff5ed0001e5bd3b81541f7346f4c8b",
+      "stored": "blog-post-devto.md-40a739cdd857.md",
+      "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/blog-post-devto.md"
+    },
+    {
+      "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+      "git_sha": "715d7232b0b7baca7da8190c5fb85ca37ee66372",
+      "lines": 122,
+      "path": "docs/architecture.md",
+      "repository": "quinnod345/context-engine",
+      "sha256": "520493de72b5ec9d930b0ecdebe91b4a688b60e2b9a3050c014b99e7064c5348",
+      "source_id": "src_c9d358687d7e5041944a558ebba23e23",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/architecture.md"
+    },
+    {
+      "commit": "ff40183c8225ed7dd0946ea31bdbb3d56a894684",
+      "git_sha": "84b753e51e03dbb39ea70fce9e9de10ae655222d",
+      "lines": 127,
+      "path": "docs/custom-adapters.md",
+      "repository": "quinnod345/context-engine",
+      "sha256": "4d5f4ed8f334aaf87a206b173584c1b4520f7eca84d0685428e33e8059a0b8b9",
+      "source_id": "src_49c1da1ac6b656efac6855bfb59945e1",
+      "stored": "custom-adapters.md-5f9071b20592.md",
+      "url": "https://github.com/Quinnod345/context-engine/blob/ff40183c8225ed7dd0946ea31bdbb3d56a894684/docs/custom-adapters.md"
+    }
+  ],
+  "summary": "The npm package context-engine-ai lets AI agents ingest events from any source and query them in natural language, returning ranked, time-decayed results without a vector database, API keys, or configuration. The HTTP server mode exposes REST endpoints including POST /ingest, GET /context?q=..., GET /recent, GET /count, DELETE /events, and GET /health, startable via ctx.serve(3334) or an npx CLI command. Evidence coverage: 161 of 326 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

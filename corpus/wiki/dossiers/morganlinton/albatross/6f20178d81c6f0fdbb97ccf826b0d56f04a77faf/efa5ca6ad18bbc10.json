@@ -1,0 +1,616 @@
+{
+  "applied_operation_id": "op_ceb2ef3200344c7a98ea28eabf8f320d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_169a5d896953bb4718358a2326a51ee6477c4cc6e10460db0f4dad53bc923e27",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 45,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L41-L45"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 453,
+          "line_start": 419,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L419-L453"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 278,
+          "line_start": 259,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L259-L278"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 127,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L125-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25a1b184e4720768bed96d4175cf69063fa47d18fa7ed1bf46106610d4ee274b",
+        "slc_850980bbef26dac0e560fe2c73318e080ffc82e5f53455597e225988f306b504",
+        "slc_b1ddb6da5daa5f9940b34606f820519244a4ce5f6c18d2a4ce7bc1dfd5a36ce3",
+        "slc_ee50863c65e838bae52d4a3d6c3160b15d4397e15c2fe8aceb8ed0b07d3502e5"
+      ],
+      "text": "Albatross is a terminal TUI coding agent launched via the `albatross` binary, with slash commands including /provider, /model, /plan, /ship, /undo, /auto, and `--continue` to resume the most recent session in the cwd."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1b2c7777481bb71b5fa25435a3fb99209ddb3456449508f2b36a986a72fd613",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 351,
+          "line_start": 346,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L346-L351"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9f93fadeb584a9c052f1c6f126fedb25347e26b33943ce07a5e73626d5f2e1bc"
+      ],
+      "text": "The tool surface includes read tools (file_read, grep, list_dir, glob, repo_search), approval-gated mutation tools (file_write, file_edit, apply_patch, batch_edit, shell), workflow tools such as run_tests and web_fetch, and MCP tools surfaced as mcp__<server>__<tool>."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_104a5121b42ac65e6501769453435fc6832556e16812cebc5ec71405cbc7905f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 213,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L213-L213"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L135-L135"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 223,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L222-L223"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f69694b40e40d7903e59b43c0aa52a753e8a0907b18172f4a293af07e40e593",
+        "slc_20557155591a420e2e64728517637018e16a73dbc8f25230a725b064fd628b57",
+        "slc_df17e844166534b89534c9a62ab1c2decaa3c09def62ab09e92dd3b848b20933"
+      ],
+      "text": "The agent talks to one provider at a time, but providers can be switched mid-session with /provider while tools, commands, and the session log stay unchanged; Ollama is the default provider."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3e2512549683fb2c1cf62f95632718471d5096ac69f5973029bb8e04443ac71",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 294,
+          "line_start": 284,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L284-L294"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 326,
+          "line_start": 316,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L316-L326"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f6912d9ac947399e560778ed161b059a85f92baba986e6fe747a9c6f69c60e3",
+        "slc_b9a99ed74463c066918e83deaef31c065bde54f314ae65a2e574298252091c68"
+      ],
+      "text": "Supported providers include Ollama, LM Studio, MLX, llama.cpp, OpenRouter, OpenAI, Anthropic, openai-codex (ChatGPT subscription OAuth), and grok (SuperGrok OAuth), each with documented default URLs and default models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0aa5ee71275493ddc270b05e814695539f4c62ab8988f950459e13c9cc4c098d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 365,
+          "line_start": 361,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L361-L365"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 368,
+          "line_start": 367,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L367-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88dd71f1d2cd5ebcaf256491100bc638e2692ad16e03919c13ab7c3a48b42762",
+        "slc_bce8326901b025141c687de0cb2866e37fd1f66c5524c789a0a702dcd1efa8fc"
+      ],
+      "text": "Approval policies are always (default, prompts with diff preview), dangerous-only (prompts on non-obviously-safe mutations and strips hydrated API-key env vars from shell children), and never; per-prompt options include always-for-this-tool and session-allow for the exact call."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3783a970a91bd025085e5a00090ede0952c975b4aba919c3a5026258cc897d46",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 776,
+          "line_start": 771,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L771-L776"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 783,
+          "line_start": 780,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L780-L783"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 807,
+          "line_start": 804,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L804-L807"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 764,
+          "line_start": 762,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L762-L764"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_131968743ba52990536722eabb2602d4151629a11b94f861046544ae21238ce8",
+        "slc_35b36949a7732257a8818f50785da549a3ff49dc95dd16b56b60baf00e9daaca",
+        "slc_4ea83828660467083058eb673494df0ed56f5a39de6abc1f7b27cde4bf3a9134",
+        "slc_ef1e62cb8c0d7f1918d410422925b320661cff02a22148cbfe7ef6f81d8c5064"
+      ],
+      "text": "MCP servers and extensions are executable programs that are not auto-spawned when new or changed; users must review and trust them, trust is stored per workspace and config hash, and their tool calls remain approval-gated by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_372a50951c15889a12c71a995249715fccdf0c21afba89ad3600cfad0a1c7747",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 641,
+          "line_start": 636,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L636-L641"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 651,
+          "line_start": 649,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L649-L651"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29a0be34efc78deb2ec09323e41170e49fd8d0910478e9165c23d07747dece5b",
+        "slc_30e822b01cf9943e33b6d5f90f90f35add591ee7413fecc0f906659e08a84b0d"
+      ],
+      "text": "/plan route builds a low/medium/high task graph in .albatross/plan.json using a configurable planner model, and /plan execute runs ready tasks sequentially, switching backend/model per task, with --yolo for unattended auto-approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_173a216713cb24d0d66f9771f92bab2b63d569a916bdc6d1445a0bd9f795e8aa",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 683,
+          "line_start": 676,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L676-L683"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 674,
+          "line_start": 668,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L668-L674"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_583a51a15d19ee4fb1ad5af42809b2fc843e336b6e99934757a3b8a8051baf84",
+        "slc_a1a0a6995242101efcc0d1162b3de66387dbcd6ff2de9b9500f138bca2cbf754"
+      ],
+      "text": "/iterate runs a generate-evaluate loop where a separate read-only critic agent scores work 0-10 against a weighted rubric; the harness itself computes the weighted total and pass/fail, and an optional evaluator model can differ from the generator."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3dca4499469dcfeab060e0021b7c4be17ade50d3ad8c4a7b25727a3cfee3579",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 705,
+          "line_start": 701,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L701-L705"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 737,
+          "line_start": 728,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L728-L737"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 726,
+          "line_start": 717,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L717-L726"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_391f8aded6e7d73eab833fb2b52406d65e928e340995637b0394527531ccb1aa",
+        "slc_4051531e8d2881d9c7e8af4a7841a5e07b822c04e24d6350683e7f18091c0d80",
+        "slc_60e8ae60ae995bf73f7d9cfb784e7472b36d18cdac268170e9f9b683dd638ec9"
+      ],
+      "text": "/auto repeats the iterate loop unattended with budget, deadline, round-ceiling, and stall-detection bounds, auto-fires /reset on context fill, and writes a report with verdict, per-round scores, criteria checklist, cost, and reset count."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c43095695e7fb51ac011438e4a1b9b176b80be40736eff18437f0deed7a769b1",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 697,
+          "line_start": 690,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L690-L697"
+        },
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 470,
+          "line_start": 455,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L455-L470"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_610216c23ce1a01630ab21fcd72c5c687a789e715e75e27fb7f4b3ad49e2dfb7",
+        "slc_8c51de0f793ef260477ad4f3aff4339999f465fa1bd71062771a466631b43308"
+      ],
+      "text": "Session memory features include /index and /map for project memory, /remember and /forget for durable notes, /compact for in-place summarization, and /reset which writes a handoff artifact to .albatross/continue.md and starts a fresh session seeded only with it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1888bef8deb5d8db0e08c31706c228c2b77003987352aac9eeac7a629b5af2e8",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 837,
+          "line_start": 832,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L832-L837"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5d38bef8accdb5030346e479b58c04251aa99324f27b93fa8a08fbb703d32eb"
+      ],
+      "text": "Albatross supports the open Agent Skills directory/frontmatter standard, discovering skills from project and user roots plus installed packages; only names and descriptions enter the initial prompt, with full instructions loaded on demand."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06a561b957412edea50d5b34afd55116963c8fd64d61219c2bcf8a84db8f47fe",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+          "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+          "line_end": 27,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "morganlinton/albatross",
+          "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md#L19-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9f466c731e43b67ef117a3d3a0ce6fa950739baa0349a414f322ef4c24569ae2"
+      ],
+      "text": "Repository development practice: the README shows a GitHub Actions CI badge for the repository's ci.yml workflow, indicating automated CI runs on the project."
+    }
+  ],
+  "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1469,
+        "path": "README.md",
+        "size": 63393
+      },
+      {
+        "lines": 57,
+        "path": "docs/SKILLS.md",
+        "size": 3014
+      },
+      {
+        "lines": 410,
+        "path": "Quickstart.md",
+        "size": 11318
+      },
+      {
+        "lines": 225,
+        "path": "docs/EXTENSIONS.md",
+        "size": 5952
+      },
+      {
+        "lines": 149,
+        "path": "docs/PACKAGES.md",
+        "size": 5220
+      },
+      {
+        "lines": 76,
+        "path": "docs/RELEASE.md",
+        "size": 2902
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/SDK.md",
+        "reason": "file-budget",
+        "size": 5358
+      },
+      {
+        "path": "docs/assets/demo/README.md",
+        "reason": "file-budget",
+        "size": 423
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 1739
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 47539
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 145,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 4,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ccc4e7994c6e520fb0b4693b5d4fc567",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/morganlinton/albatross/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/efa5ca6ad18bbc10/manifest.json",
+  "package_id": "pkg_5cae8ca2f3dd7948be84478ced4ce733d9a825b9bb5f61b142003a8f7b621955",
+  "repo": "morganlinton/albatross",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "41e9b156598fcbf22a4818128b907ac2568867f01fbfffc60f173528ab63d314",
+  "snapshot_id": "efa5ca6ad18bbc10",
+  "sources": [
+    {
+      "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+      "git_sha": "77f2fe6ddfdc1f255ebfd2181eb1c42d5367e36e",
+      "lines": 410,
+      "path": "Quickstart.md",
+      "repository": "morganlinton/albatross",
+      "sha256": "889ee6dc09a224d492b4c1c7cb28805da3d6fe561b8eded6e5eab22b4c5fd08d",
+      "source_id": "src_3f9c502d1196510da969160a14e4e49a",
+      "stored": "quickstart.md-2f4fc85740b1.md",
+      "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/Quickstart.md"
+    },
+    {
+      "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+      "git_sha": "4d9d49f83e3e2137416823a9f44711e0435f8e79",
+      "lines": 1469,
+      "path": "README.md",
+      "repository": "morganlinton/albatross",
+      "sha256": "c6f2bab3c84ea0adcd858f463b511f3bc16347662c5f8561d05fbee9a9942107",
+      "source_id": "src_5664aa6a6ad353fcbf3ec91e36d43a8b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/README.md"
+    },
+    {
+      "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+      "git_sha": "e524ca6867fc8fb0fac729f8d6fba84037619cc9",
+      "lines": 225,
+      "path": "docs/EXTENSIONS.md",
+      "repository": "morganlinton/albatross",
+      "sha256": "503f2db4066e6455e4c9f9ae728b2f01932157da9f1fda161238e87d4b74920c",
+      "source_id": "src_1fb75434b94c54faa3f43872b35d5dc9",
+      "stored": "extensions.md-4d19514e7fce.md",
+      "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/docs/EXTENSIONS.md"
+    },
+    {
+      "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+      "git_sha": "e8a3aca14d2acdec8ef1ae4c8028fec25c0e33f9",
+      "lines": 149,
+      "path": "docs/PACKAGES.md",
+      "repository": "morganlinton/albatross",
+      "sha256": "cc0c795863e2a50d7a9de7df1b0106cf126999722b33dcdbc541f0cb63705efb",
+      "source_id": "src_8ca63afb45fd55bf9d444b4d5e98941e",
+      "stored": "packages.md-53d28bfea06f.md",
+      "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/docs/PACKAGES.md"
+    },
+    {
+      "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+      "git_sha": "89f82d04d0b11301532bfcc818375ab96744cbda",
+      "lines": 76,
+      "path": "docs/RELEASE.md",
+      "repository": "morganlinton/albatross",
+      "sha256": "5ba1a1e30b7598f961048061189a5a155b25ebe5dcc6ab44b511e73e433f9e14",
+      "source_id": "src_b8f6c5351466598c9f5269e304954bcc",
+      "stored": "release.md-9c4ae3b5f667.md",
+      "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/docs/RELEASE.md"
+    },
+    {
+      "commit": "6f20178d81c6f0fdbb97ccf826b0d56f04a77faf",
+      "git_sha": "121cc98ebe63fd47e55477de0ba446edccdee1b4",
+      "lines": 57,
+      "path": "docs/SKILLS.md",
+      "repository": "morganlinton/albatross",
+      "sha256": "905d588b3aba0c493ed8a2e8314a1b6feb5e435a2c267fbfd4d0cd2ee5d71d84",
+      "source_id": "src_1ee500bcbdef52aca8f05419bfd28f83",
+      "stored": "skills.md-575f437adbaa.md",
+      "url": "https://github.com/morganlinton/Albatross/blob/6f20178d81c6f0fdbb97ccf826b0d56f04a77faf/docs/SKILLS.md"
+    }
+  ],
+  "summary": "Albatross is a terminal-first coding agent (v2.4.0, Rust) supporting local and cloud model providers, approval-gated tools, MCP/extensions/skills/packages, routed planning, an iterate/auto evaluation loop, and a local quality-PR scorecard. Evidence is README documentation only; no runtime code slices are present. Evidence coverage: 128 of 368 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

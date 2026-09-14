@@ -1,0 +1,540 @@
+{
+  "applied_operation_id": "op_870a8017155c4b83a732a3f4253d6312",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_67d12d7ab85fa33885beda9102dbb4fd24d797f13692586957683ae9ab8e1504",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L5-L5"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 16,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L11-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e1a2eb3cd1ded91328dc2796db768b20b25fd2744e50e307d0a702e44ca5b42",
+        "slc_be2cdddadcd2ea11599c431097fc35ff68a1b941c6e1411d9c78f9e01c9aacd7"
+      ],
+      "text": "CoreCoder is a Python 3.10+ coding-agent engine, MIT-licensed and published on PyPI as 'corecoder', described as a ~1,171-line engine within 2,398 total lines of pure Python."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_118ad66701349223fd4d3c55e7ab88986120a50f572fe97d253e307e131ef864",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 112,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L88-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_df9b4a4e5718c814feea1142bf51172ec5730f33f9062ef6a905e8cffeb34cfd"
+      ],
+      "text": "The package layout includes agent.py (main loop, 213 lines), llm.py (streaming client, retry, cost, 267 lines), context.py (three-tier compaction), session.py, permissions.py, hooks.py, mcp.py, cli.py, config.py, and a tools/ directory with bash, edit, grep, glob, read, write, todo, and sub-agent tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0dbc28bf1e3bd2d2515e96271083a6becc65a96db72e04bc918953d55618d222",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 198,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L189-L198"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 82,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L79-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e3890f8757b8b6d96550ee756602bcfc9a04e82eacd220e84e226af67ed8d69",
+        "slc_59c166c2233de80fda2ea3afc08bb500f7a61633ebcc3aa799f348709f32a8e1"
+      ],
+      "text": "The product ships a CLI with an interactive REPL and a one-shot mode ('corecoder -p \"...\"' that exits when done), plus REPL slash commands such as /model, /compact, /tokens, /diff, /undo, /plan, /save, and /sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e7c4f8a1c92969547ddb06f9656e35e1e3979573fe0517fd072764f31ca9dcd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 174,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L172-L174"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 167,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L164-L167"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a812e8e43e8349255b4f2c860bb6bfb14ac91075b421065b0bff5969417172b9",
+        "slc_cab028894b431b14bb1753d48bf7f5af1dee9dd9b6053d9a27babe92c4c448ad"
+      ],
+      "text": "The package can be imported as a library: the top level exports Agent, LLM, and Config, and an example constructs an LLM with model, api_key, and base_url and calls Agent(llm=llm).chat(...)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2596d0ba20be1cd1ae724990abf96e64a718d61b59cff28eec02b938b27078d0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 73,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L68-L73"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L66-L66"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L75-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2853ebd8a9710800372c8f105fd7fa40449919fd5a1f3c39871ea32d2e7931f3",
+        "slc_4b86c6689fce72ab1dc96f7d7c4380492dcec75377e3d8569a84644539a30a36",
+        "slc_4bc7fa148d5826819fabfaa103358f9ceb1c6e988e2fead4192ff40a8c483345"
+      ],
+      "text": "The agent speaks the OpenAI-compatible API by default; providers are configured via environment variables (OPENAI_API_KEY, OPENAI_BASE_URL, CORECODER_MODEL), with an optional LiteLLM extra routing to a hundred-plus providers and .env loading at startup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0a446043b2de82103f2b1847f4212b9cc2d8a1edbf1ae603b0d006585756db9",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 204,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L204-L204"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 208,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L206-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c17fe36589c2970f42a7a43b65684794da9aff07f2ce83929acfbe55838b7881",
+        "slc_fc56de2641daf92dc21b659c721c1166851253b65d954db3a052fdbeeedbfda7"
+      ],
+      "text": "Read-only tools (read_file, glob, grep, todo_write) run immediately, while mutating tools (edit_file, write_file, bash, sub-agent spawning) stop for user consent; the REPL offers allow-once, always-allow-per-tool, or deny, and one-shot mode refuses mutating calls unless --yes is passed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af02ca7869f469958835534f5ea616551575e61d3ba11059d328967af0976a16",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 130,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L125-L130"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17a7e1f5f5dd730fac71085fec55e3bb8a625ff392148405df321cfc1b0392fc"
+      ],
+      "text": "The agent loop is a bounded loop: it queries the model, runs requested tool calls in parallel, feeds results back, and returns when the model stops requesting tools, with a round limit preventing runaway execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4bb5be2414b53f5f84636bfd8af20d00f735c9a812888b4eced17696053f9ef9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L143-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c628ba761e95c02c7b82a010aa726df8e2c0f25b95e0072ccb5f4b3facb2ecb"
+      ],
+      "text": "Sub-agents get an isolated context and history with a toolset exactly one item shorter (lacking the agent tool, preventing recursive spawning), reuse the parent's model connection, truncate output past 5,000 characters, and run on a shorter round limit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffaf9029ce4641281d0c03dfa8831e498b21446dfd358b4c83f0ab03f8ff499d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L141-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2fb2c37644a2137fa314b9d13018988f6709d41b36310fb206d8e2b365a43f9c"
+      ],
+      "text": "Context is compacted in three tiers: at 50% full it trims over-long tool outputs mechanically, at 70% the model summarizes older turns while keeping recent ones verbatim, and at 90% it compresses everything to its tightest form."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1525f581855ad425a957acebc0f6b4e1b386a2b20fcf223c174c3ff0a0a1745b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 198,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L189-L198"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 200,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L200-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e3890f8757b8b6d96550ee756602bcfc9a04e82eacd220e84e226af67ed8d69",
+        "slc_c82474a21d987d8835e1ca3ea977ff1aa31de5826486f01d8de740fb693eebeb"
+      ],
+      "text": "Sessions can be saved and listed under ~/.corecoder/sessions; session IDs are sanitized to safe filename characters so a malicious session name cannot traverse out of the directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f409b7a6cf74d358673d6cadfcecfa9ed67682fe9dcc31ec896434f3fe0bd2fd",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L139-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c188f7cb66dd8f4df0f487f7cd87d3af6ed74d325f4309f1fd2a1ac1ca2361e0"
+      ],
+      "text": "edit_file uses unique-match search-and-replace rather than line numbers: no match returns the file start for re-anchoring, multiple matches require more context, and success returns a diff."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_143e501554c75df257e6d5f7fb7f71a5686ac1e73a517369b02ea9093763ffcb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 264,
+          "line_start": 264,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L264-L264"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 254,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L254-L254"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14adac8dd0227a44d599e454085fc205c4e4fe5ecf962081cf78fdfba7ac5ddd",
+        "slc_2122ec6e560b444ff2b61c4adf407de07599e35988b24c84e513d45efcb5621d"
+      ],
+      "text": "If ~/.corecoder/mcp.json exists, MCP servers start as stdio subprocesses and their tools register as mcp__<server>__<tool>, treated like built-ins by hook matchers and the consent gate; the client implements only initialize, tools/list, and tools/call, with 15s handshake and 60s call timeouts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25353ac3b64ca924ddd111940ddcb15eb41c75a9c5558bc5f9ac4e83b253e624",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 225,
+          "line_start": 225,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L225-L225"
+        },
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 216,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L216-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_90fc7a2884552fc6200666df94f3c110c4775e34c10814cd5e0f8bfc7e9e0b1c",
+        "slc_d3cfbe5011fa4d4b1f75df40a46d52cbf6d8cd344977388f89f0893c05734f9f"
+      ],
+      "text": "Hooks configured in ~/.corecoder/hooks.json run user shell commands around tool calls: pre hooks receive tool_name/tool_input on stdin and can veto with exit code 2 (stderr returned to the model), post hooks only observe, and hooks that error or exceed ten seconds are skipped with a warning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb211f51f14236693c91a63d65896b07cd9aba11f68cd33cfaa4fda3ad0d866b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 212,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L212-L212"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d939dba8bd45ac9e349524038d1bc35492bc6c7ff12aa285207784d0fe7f3905"
+      ],
+      "text": "Plan mode, toggled via /plan, refuses all mutating calls (writes, edits, bash, MCP tools, sub-agents) and returns refusals to the model as ordinary tool results until the user approves the presented plan; it is a single Agent flag plus a refusal branch ahead of the consent gate, with no plan file persisted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02bf3680c86e6f29590633c15bd7cf3e2ab09589845a3b75f9599ca5c2312ae4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+          "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+          "line_end": 181,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "he-yufeng/corecoder",
+          "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md#L178-L181"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_621ae31c1d41fc920fa3371d1bba8321fd5b90a1e0b6daeaf2d9c7c5eef53e13"
+      ],
+      "text": "By design, the product omits several capabilities: bash dangerous-command blocking is only a regex blacklist (not a sandbox), retry is exponential backoff only (no fallback model or dollar budget), sub-agents are synchronous only, there is no RAG, and the MCP client implements no resources or prompts."
+    }
+  ],
+  "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 284,
+        "path": "README.md",
+        "size": 23813
+      },
+      {
+        "lines": 283,
+        "path": "README_CN.md",
+        "size": 21862
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 64,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_11ebedfbf1bd5da28cabc956ea264840",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/he-yufeng/corecoder/069948d180cb0ceb1a6d7aafeb0e141c166a009d/3c89ac2ec67501ad/manifest.json",
+  "package_id": "pkg_05c6a7df547aafb3185e30f07444249a127daddb6b1b70bac0284a39624244d9",
+  "repo": "he-yufeng/corecoder",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8824976b4a281759a791b74ee92666dad6d63fc815668ee8f3f41f17145463b4",
+  "snapshot_id": "3c89ac2ec67501ad",
+  "sources": [
+    {
+      "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+      "git_sha": "d2e5bb8f79714a83cd35adf3b4108136de0ac169",
+      "lines": 284,
+      "path": "README.md",
+      "repository": "he-yufeng/corecoder",
+      "sha256": "92075e34e1a16d5f3a975d7603045d7c9e73021affe6dca63c61a9a2ed9ade33",
+      "source_id": "src_d81855c1790553b290c6da2c923539bc",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README.md"
+    },
+    {
+      "commit": "069948d180cb0ceb1a6d7aafeb0e141c166a009d",
+      "git_sha": "14547bc6e791b54b526bcfddb3ad6a504ada2e1c",
+      "lines": 283,
+      "path": "README_CN.md",
+      "repository": "he-yufeng/corecoder",
+      "sha256": "a3c2602455da250dff7ecb9f5562f0795e9e6b73c6cea6a3cd7a31c7252d8f21",
+      "source_id": "src_4760d0bff05c582ea4ac07862b607c7d",
+      "stored": "readme_cn.md-e6db595f1598.md",
+      "url": "https://github.com/he-yufeng/CoreCoder/blob/069948d180cb0ceb1a6d7aafeb0e141c166a009d/README_CN.md"
+    }
+  ],
+  "summary": "CoreCoder is a minimal, MIT-licensed Python coding-agent engine (~1,171-line engine, 2,398 total lines) published on PyPI, featuring a bounded agent loop, eight built-in tools, consent-gated mutating tools, three-tier context compaction, sessions, plan mode, hooks, and an MCP stdio client. All claims below are product/runtime statements from the README; contributor-instruction claims were omitted per correction. Evidence coverage: 134 of 140 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

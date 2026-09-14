@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1304e3d5fa0059933a0148e844ef87ef4a705a77900b1005bd4a1660c4609230
+- clm_5366a4a13191dc83de1becc51c4a41ed544186f2a4060b0135f9198aa0c75489
+- clm_578356617ec97a0d348c676410cb8e1332b8e53cbd3264af94b5f58fb8855bcc
+- clm_65886b7a0b7ca92aaa7c3b9e783ee3791441b0643b4b04c3965a11504b16dc78
+- clm_685300f577cc0943a7cea70792fb0bce36a7bc23c841dc22928f742f0200c116
+- clm_8c80167e586d2e5227097dd9f204d893934dbbf1852539d1792c743d660e280d
+- clm_92f1fdcb1e5d344e90b93dbeb00e1a386f53dabeb77c97d091451753a3375933
+- clm_aa12aa208a1ff22974cc318ae010668b8baf0dd422496c20ded7a076a57e66f6
+- clm_c2d3c71a6b36fc0829c12dd768cde8d54a846dedccf7684b563c4e1a5d72316d
+- clm_c56b90f92aa0978e189f9e3590f538c141f5fabaa805547a97a2a4b4e2c0b564
+maturity: draft
+page_id: pg_b6bea6df568f536aad5024454f1ae4a8
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: aurasgit/public-agent-framwork
+updated_at: '2026-09-14T01:59:36Z'
+---
+
+# aurasgit/public-agent-framwork
+
+<!-- rcw:begin owner=entity:ent_0d3591faf7e15644807d43ba1d771250 block=evidence -->
+- aurasgit/public-agent-framwork is mentioned in this evidence. [@claim:clm_1304e3d5fa0059933a0148e844ef87ef4a705a77900b1005bd4a1660c4609230] [@claim:clm_5366a4a13191dc83de1becc51c4a41ed544186f2a4060b0135f9198aa0c75489] [@claim:clm_578356617ec97a0d348c676410cb8e1332b8e53cbd3264af94b5f58fb8855bcc] [@claim:clm_65886b7a0b7ca92aaa7c3b9e783ee3791441b0643b4b04c3965a11504b16dc78] [@claim:clm_685300f577cc0943a7cea70792fb0bce36a7bc23c841dc22928f742f0200c116] [@claim:clm_8c80167e586d2e5227097dd9f204d893934dbbf1852539d1792c743d660e280d] [@claim:clm_92f1fdcb1e5d344e90b93dbeb00e1a386f53dabeb77c97d091451753a3375933] [@claim:clm_aa12aa208a1ff22974cc318ae010668b8baf0dd422496c20ded7a076a57e66f6] [@claim:clm_c2d3c71a6b36fc0829c12dd768cde8d54a846dedccf7684b563c4e1a5d72316d] [@claim:clm_c56b90f92aa0978e189f9e3590f538c141f5fabaa805547a97a2a4b4e2c0b564]
+<!-- rcw:end owner=entity:ent_0d3591faf7e15644807d43ba1d771250 block=evidence -->
+
+## Researcher notes
+

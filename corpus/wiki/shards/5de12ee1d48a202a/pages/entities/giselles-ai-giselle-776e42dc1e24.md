@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_3711e4941978bca9141534343174dbf449ed4e428938ac2ec75875dc15fc2f10
+- clm_38aba3dcb5dad85f9cfaf7e31956c8c083556a52cc5cd75c8d18035320270f73
+- clm_4275190ae9c7a2fa9f707adfc322091bcfb7822596acf91da3b10a0b79f43c97
+- clm_4de8a7e1fcc5d8fcb4858097a717051a9839936e7aa515fc552afd8acc230479
+- clm_7c34b727992804b238658c0cbb43004479b4e1e0738db4121476609212066617
+- clm_a397ac3eebaf6f69522daa2644358902ebe60f2cfe3d3e2cd04808a5ae24a032
+- clm_b2c00a40e97faa9d205359046ebf0e030b1a9eac7520a13d922bb0d6aa81fc9e
+- clm_ca937638a1bad53963bca30a0416ef7750d718699d1c43c0a71cd7a6076f0693
+- clm_fb1bfd42fa778168d0d6958b2a39efa4a5cb8cc7c81bbe1f0c2087a0f1771b14
+maturity: draft
+page_id: pg_14c7b306f81c58f6a90d776e42dc1e24
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: giselles-ai/giselle
+updated_at: '2026-09-14T03:07:58Z'
+---
+
+# giselles-ai/giselle
+
+<!-- rcw:begin owner=entity:ent_4dd5242e7bca56b0a5142fc8fa467f0f block=evidence -->
+- giselles-ai/giselle is mentioned in this evidence. [@claim:clm_3711e4941978bca9141534343174dbf449ed4e428938ac2ec75875dc15fc2f10] [@claim:clm_38aba3dcb5dad85f9cfaf7e31956c8c083556a52cc5cd75c8d18035320270f73] [@claim:clm_4275190ae9c7a2fa9f707adfc322091bcfb7822596acf91da3b10a0b79f43c97] [@claim:clm_4de8a7e1fcc5d8fcb4858097a717051a9839936e7aa515fc552afd8acc230479] [@claim:clm_7c34b727992804b238658c0cbb43004479b4e1e0738db4121476609212066617] [@claim:clm_a397ac3eebaf6f69522daa2644358902ebe60f2cfe3d3e2cd04808a5ae24a032] [@claim:clm_b2c00a40e97faa9d205359046ebf0e030b1a9eac7520a13d922bb0d6aa81fc9e] [@claim:clm_ca937638a1bad53963bca30a0416ef7750d718699d1c43c0a71cd7a6076f0693] [@claim:clm_fb1bfd42fa778168d0d6958b2a39efa4a5cb8cc7c81bbe1f0c2087a0f1771b14]
+<!-- rcw:end owner=entity:ent_4dd5242e7bca56b0a5142fc8fa467f0f block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,450 @@
+{
+  "applied_operation_id": "op_e8a12b9f1e7e489da6d8ed6072cd26a2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_111333e0ec5f4641838fcd7bdf3220a76191363e4640ae84c236f6fe940eb7b0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 15,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L1-L15"
+        },
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 99,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L97-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a4c6ea4c7250298e4fdf71698c228dc3bf16738ff09c8ef9149f40b23b1c0bdd",
+        "slc_af0b23b6bd34156f14f5c36e55f0661d7056bc19aa8f0562e6e5a760e5fb313f"
+      ],
+      "text": "pi-mem is a memory package for the pi coding agent, installable via 'pi install git:github.com/jo-inc/pi-mem'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d99197d77b03246bf9966e916cfebd819dd43c3167bdc2627ee31a99d60690de",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L23-L23"
+        },
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 81,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L74-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1833fef75eb97e2f7b96f0f311abb12e9ec6100dcfa688e39ea9721f6d686021",
+        "slc_370d24c26b1453ae9d8e7794929036e237e8a59ac0c33ac8789bfa049a13b166"
+      ],
+      "text": "Memory files live under ~/.pi/agent/memory/ by default, overridable via the PI_MEMORY_DIR environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_620008029b840c2f25863d3d1c3c672a238390191135ad0196dacae85337a154",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 30,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L25-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08f188128254c6cb17bc85a26cf4d9c2b8c224a2b1fe0234b30cba3ef6c259f7"
+      ],
+      "text": "The memory layout includes MEMORY.md (curated long-term memory), SCRATCHPAD.md (checklist), daily/YYYY-MM-DD.md append-only logs, and LLM-created notes/*.md files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35cbb63a9e2dd4fa78dec510a42a690cd88eb139e0f87a0c57a4d2680307596e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 41,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L36-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ac079b951e200b7c9e4c2aacdb316e9f80b6e85e102228c4856b0b19494b723"
+      ],
+      "text": "Exposes tools memory_write (long_term/daily/note targets with append and overwrite modes), memory_read (long_term, scratchpad, daily, note, file, list), memory_search, and a scratchpad checklist tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f88027b7f1be01fe37654700cd607e314ad93535b2a4bf063b7c568c268a07f3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 41,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L36-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ac079b951e200b7c9e4c2aacdb316e9f80b6e85e102228c4856b0b19494b723"
+      ],
+      "text": "memory_search performs case-insensitive keyword search over filenames and content across root, notes/, and daily/ directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9dd4d526b9ec87c46ba77d37fc07ddce5ae522cb5c9c998b58cd4efa1787123",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 50,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L47-L50"
+        },
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dedabbdd8855ef78ba0710b1fe0d97c66f9cae226ebece46b1a10214b9473d9",
+        "slc_d2827e23182eafa84fc86d89be60dc4b16e4acc17ae54567f3e904840c5e6d8c"
+      ],
+      "text": "Before every agent turn, the system prompt is automatically injected with PI_CONTEXT_FILES entries, MEMORY.md, open SCRATCHPAD.md items, and today's and yesterday's daily logs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e2b150bff901d759eb53891ea1e31a7105affd6394c98af17ffcb1a9b02eba42",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b996fd7ec2c369cce042781f2709f6c70ce4349519764b6dc8f4f5f5898caea"
+      ],
+      "text": "Notes files and older daily logs are deliberately not injected into context; they remain accessible on demand via memory_search and memory_read."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8307ac53e12a541524e3f2da5e7e18e92c209253b3fb6d0b946271e0c60d6fcb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L56-L56"
+        },
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4cfd0182126f26be1fdfdd3d0ddf4a98a3294d15f46e996357bddd96b9159793",
+        "slc_f50e931a3081394d1c7bbb82af96d2f015b5e90f3bb7569fc882a13227a11572"
+      ],
+      "text": "Configuration is via environment variables or a .pi-mem.json file in the memory directory, with environment variables taking precedence when both are set."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8e66a000b23991763ca64ecaa7bfb9653601054c36ec2ac57f0621d11cdf58c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 81,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L74-L81"
+        },
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 68,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L62-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_370d24c26b1453ae9d8e7794929036e237e8a59ac0c33ac8789bfa049a13b166",
+        "slc_ae92ee6ef3bf2bc2a420f4ce5967f779612b441141441c23a72403b291a6c861"
+      ],
+      "text": "Supported settings include searchDirs, contextFiles, and autocommit in .pi-mem.json, plus env vars PI_MEMORY_DIR, PI_DAILY_DIR, PI_CONTEXT_FILES, PI_SEARCH_DIRS, PI_AUTOCOMMIT, and PI_TIMEZONE."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6efb3d94c59d592d18e89f0f33ae4ff8382e062f7afbb69c9695155d8f124663",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 81,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L74-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_370d24c26b1453ae9d8e7794929036e237e8a59ac0c33ac8789bfa049a13b166"
+      ],
+      "text": "When PI_AUTOCOMMIT is 1 or true, the tool auto-commits memory changes to git after every write; it defaults to false."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62de6e6420ef19144425acf55d975c9a5d9c0019ff3d7fd9c1b74ad2d7a4215f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 89,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L85-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd9342b652814504ce23b8c3cf2527eca45b6454ebc1c3476a92638202980809"
+      ],
+      "text": "A dashboard widget shows an auto-generated 'Last 24h' summary at session start and switch, scanning recent session files for titles, costs, and sub-agent counts, grouping topics via an LLM call with a flat-list fallback, rebuilt every 15 minutes in the background, and also showing open scratchpad items."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb47de5620060f9f1d740b292106a2816903214d62491807e6cd87520afffeec",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 113,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L107-L113"
+        },
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 15,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L1-L15"
+        },
+        {
+          "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+          "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "jo-inc/pi-mem",
+          "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2899cf1bfcc4270e6ef0b44dc28bbdf0e2e9cf8180324ee20b26a3e0523b51a2",
+        "slc_a4c6ea4c7250298e4fdf71698c228dc3bf16738ff09c8ef9149f40b23b1c0bdd",
+        "slc_f798fcbc40626a3c301e38a4fe05ffed78d9673b761b9200f24c8e5a69b05fab"
+      ],
+      "text": "The project is MIT-licensed, published on npm as @askjo/pi-mem, and part of a pi ecosystem including pi-reflect, pi-boss, and pi-room."
+    }
+  ],
+  "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 113,
+        "path": "README.md",
+        "size": 5181
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 21,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_8f407fbfe130523bb460222038461cdf",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jo-inc/pi-mem/ffb706b8805d64e04919ceff4c82084a67504e5d/58a9a9ca9ca30992/manifest.json",
+  "package_id": "pkg_fd3862a65d93c3fa4b3270fd69984520a2593b454794b96a39ffcef51239021e",
+  "repo": "jo-inc/pi-mem",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "775d20e95c52e98ff3565049fd02b0f7420af3c8e1070ffd662eb0692f993748",
+  "snapshot_id": "58a9a9ca9ca30992",
+  "sources": [
+    {
+      "commit": "ffb706b8805d64e04919ceff4c82084a67504e5d",
+      "git_sha": "ca7fde7968c2f9824e74441a078457db15e19a77",
+      "lines": 113,
+      "path": "README.md",
+      "repository": "jo-inc/pi-mem",
+      "sha256": "1de7d4bfd298d726054871e5ea80d2b1e40b7d9a66c0b5bdc24aa48634f4ecf0",
+      "source_id": "src_e9a9ea742c28567390a52a64ee936617",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/jo-inc/pi-mem/blob/ffb706b8805d64e04919ceff4c82084a67504e5d/README.md"
+    }
+  ],
+  "summary": "pi-mem is a memory extension for the pi coding agent, providing file-based memory under ~/.pi/agent/memory with tools for reading/writing/searching memory, automatic context injection, configuration via env vars or .pi-mem.json, and a dashboard widget. Evidence is README-only.",
+  "superseded_claim_ids": []
+}

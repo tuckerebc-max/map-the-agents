@@ -1,0 +1,456 @@
+{
+  "applied_operation_id": "op_fccde22f514547aaab5ff9382ca8aa28",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_65bb3e9986beb8e87c4acd126a61f3302b1e8e832d41cb4b8b06ea1cd3aa514f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L27-L28"
+        },
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 23,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L22-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_240ebff84dcb12a5b8c4050843434c9b5a51703cdd22d6ff36dbaaf723de3dfa",
+        "slc_7e6a4c128828be539d56af8b594f74023e4a18a651bb315f252491957c226a91"
+      ],
+      "text": "MapCoder uses four LLM agents mirroring the human programming cycle: retrieval, planning, code generation, and debugging."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dfcc1581b76db3195dc0ae2686f8f7cbd82de3e7cd383edb9faabec05e0005f7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5137c52f8f71deb737982d541a49c359abda263ba8ec366529a1fbe9da17697d"
+      ],
+      "text": "The retrieval agent generates k user-defined similar problems using the LLM itself, without manual crafting or external retrieval models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c627d387a63a52867a02a44c4075f93d34f10b7af632d43a8b8d1594783151ae",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L27-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_240ebff84dcb12a5b8c4050843434c9b5a51703cdd22d6ff36dbaaf723de3dfa"
+      ],
+      "text": "MapCoder features an adaptive agent traversal schema that dynamically routes among agents, e.g. iteratively fixing bugs, rather than a fixed pipeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a37229610a9c1c2f8a435551b8748ef0ace7f16091e4786c83f6f1cd2a4bfd2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c9f8f3291ab6db3191b45ebae00d2534a72d2a7560c236d9804e2f97c1c8d40"
+      ],
+      "text": "The coding agent turns a plan into code, tests it on sample I/O, hands failures to the debugging agent, and otherwise predicts it as the final solution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_371fa80e9df7d9688d4d16b159bb446cd67e5b3098ff6523d1907dfbcf6791bf",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_77290d753687dc490d22f8a3ec71fd2d0df1b9ce41ee1497e30794c93c0e320f"
+      ],
+      "text": "The debugging agent is supplemented with plans from the planning agent, analogous to humans cross-checking their plan while fixing bugs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e57b8870ee84ed513f5c2ef1d953f2b15e2f7aa7676beeb4c8fa29b00eb85f4",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 58,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L44-L58"
+        },
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 23,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L22-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_596d7d45fdd4e1a3d2a2a746fe6a20f81cfa873ae786127fffdf300d26890544",
+        "slc_7e6a4c128828be539d56af8b594f74023e4a18a651bb315f252491957c226a91"
+      ],
+      "text": "Reported pass@1 results include HumanEval 93.9%, MBPP 83.1%, APPS 22.0%, CodeContests 28.5%, and xCodeEval 45.3%."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff8558af8873181748d1d3df15b05b0d968c75e813dbbd75359ee99e04bc632d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 83,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L80-L83"
+        },
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 78,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L75-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3147ad7fc14814c615372d1381ad90a2ee4aae6a2ad9f513bec04d645ba9beac",
+        "slc_720f0e84549fff71ac4961f12c6bc5c9c1bf46b424d02955fc641518e8788c49"
+      ],
+      "text": "The CLI entry point is src/main.py with options such as --model, --dataset, and --strategy (e.g. ChatGPT, HumanEval, MapCoder)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34376950ec19436ab95f6fd7ee6e5ccf7856c724f4113d9bb98df83474357519",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "5f8710dc7b3644fd96ca8216288d070f4cdd4432",
+          "line_end": 15,
+          "line_start": 2,
+          "path": "requirements.txt",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/requirements.txt#L2-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_560f32857192e2cafe454478b0a46ee150d49d70fde7ad8f5832d828ceaa9d43"
+      ],
+      "text": "Dependencies include openai, google-generativeai, tiktoken, gensim, accelerate, and others listed in requirements.txt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40504d8871a31ad1ecbfc1a4487073194aed3c3dcc79d8f1cb096254c8814d1c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L73-L73"
+        },
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 66,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L63-L66"
+        },
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 71,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L68-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68cbd4dc27b369436706da0333e4478a2bedd71dbf6084fcd32081ed18b3f6f7",
+        "slc_7945312ed0970e13ef07e682457dc8c09cf74675bccc4688ce6a04a3b9cd912c",
+        "slc_87fbffffa677a3786a722453de98b08d3272475b3c90c6f3f4e62fe68b6bdc97"
+      ],
+      "text": "Setup involves cloning the repo, creating a conda or python virtual environment, installing requirements.txt, and configuring a .env file from an example."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62e8f3b06aa27555d282fd737b09c62952d0e587b15c70eefb1707925ae4e213",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L85-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0313cc71c75d619b2d5ff59aaad8237f12b922cb74c7e3ef739a56e635059f06"
+      ],
+      "text": "Running competitive datasets requires setting up ExecEval in a Docker container on port 5000, with configuration in src/evaluations/api_comm.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac44dfdac7f8f2b421de1ee901045777f8432fc23e21a3c6939818cc5bfd04a8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L15-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57e27a151a686bac2f2b00c88a815c59582b445f66269867fc3cce092e6dab9e"
+      ],
+      "text": "The maintainers state this repository will no longer be maintained, pointing users to an improved model called CodeSIM."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_408633720bddb37404dbffb772876b50b49b92b1133c4eaf6d2d6952c134e1c8",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L15-L18"
+        },
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 12,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L8-L12"
+        },
+        {
+          "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+          "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+          "line_end": 96,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "md-ashraful-pramanik/mapcoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md#L89-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57e27a151a686bac2f2b00c88a815c59582b445f66269867fc3cce092e6dab9e",
+        "slc_6e43144bcecfc16861ff5783316ba5915aa5fd07feccfd1c8ae2fd9febabad97",
+        "slc_c4ac84306ebb32cfc4309297ec6e16ba524401add45eb2ee10017097685a40b8"
+      ],
+      "text": "The work was accepted at ACL 2024, released under the MIT License, and has an associated arXiv paper (2405.11403)."
+    }
+  ],
+  "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 96,
+        "path": "README.md",
+        "size": 7858
+      },
+      {
+        "lines": 15,
+        "path": "requirements.txt",
+        "size": 145
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 199,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_88a48fe2540b5c75b289688d211c9e28",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/md-ashraful-pramanik/mapcoder/c87e6d914d196e12fa2b144882122459a4b98007/2850d7b1842d8acf/manifest.json",
+  "package_id": "pkg_6f1a69f7371be96f3e536a1525f913c84b1a47e88b1fa66714abbbd569df066c",
+  "repo": "md-ashraful-pramanik/mapcoder",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "28933c2c835f0764d90692a265919c2c6a6feb9e5860f01d633e60dfe3fb716a",
+  "snapshot_id": "2850d7b1842d8acf",
+  "sources": [
+    {
+      "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+      "git_sha": "543753d2a7ae464d4795bcad3911df413162e225",
+      "lines": 96,
+      "path": "README.md",
+      "repository": "md-ashraful-pramanik/mapcoder",
+      "sha256": "392e0d0ff06c95206e52cf51e75a0152d31d133574bd718de7f0abf69f8c758f",
+      "source_id": "src_c6aafec9faef522795fb398a0f98c078",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/README.md"
+    },
+    {
+      "commit": "c87e6d914d196e12fa2b144882122459a4b98007",
+      "git_sha": "5f8710dc7b3644fd96ca8216288d070f4cdd4432",
+      "lines": 15,
+      "path": "requirements.txt",
+      "repository": "md-ashraful-pramanik/mapcoder",
+      "sha256": "e438e8955f56c52d511ba8ee28e4a4230fbac33cddea514705f4619df11717d0",
+      "source_id": "src_c814367296735c41abf162b038b99e8c",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder/blob/c87e6d914d196e12fa2b144882122459a4b98007/requirements.txt"
+    }
+  ],
+  "summary": "MapCoder is a multi-agent LLM code-generation framework with retrieval, planning, coding, and debugging agents, evaluated on competitive-programming benchmarks; the README documents CLI usage, setup steps, and notes the repo is no longer maintained.",
+  "superseded_claim_ids": []
+}

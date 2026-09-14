@@ -1,0 +1,520 @@
+{
+  "applied_operation_id": "op_5189b22dd7374fad89b15e86accb86f6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_82abb1410525838df3370e0fc34fba9bc7b342aa9c55cbc5af4bdfd9281dbf1b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 58,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L49-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c44db886621bec120145a114b94b132bd827a90e4c62f6a07af8c1818e66b82e"
+      ],
+      "text": "The project comprises main.py (a sample FastAPI app), api_tester.py (CLI logic for plan/generate/run/feedback), agent_tools.py, agent.py, and generated_tests.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79b2770a077d8ef0ec6678dcc1dad579d5c5c8a8f7f403dfaac97f04dbb58a0c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 43,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L39-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4109dd4fdcd586163b581449a5f16b78519a3f04e368b5bae5dd7a26fe925eb0"
+      ],
+      "text": "agent.py is a LangChain chatbot whose actions (Plan, Generate, Run, Feedback) invoke tools in agent_tools.py, which run api_tester.py commands in subprocesses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b70563049e3fd3bbd9ac81b3757869ecb3dc00b4105630f289cb0d4e15f5477",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 125,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L122-L125"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 116,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L109-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5d91083f7d98dc50b7f7c96fc46d71f43948b532298d07e8e06cb606793eaaa",
+        "slc_e206461f1395784a00e07d49b03abefbb325b215514e68b9c08fea5876556cbd"
+      ],
+      "text": "api_tester.py exposes a command-line interface with subcommands plan, generate, run, and feedback, usable directly without the chat agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac2acb17d2057bccb2fb785b33b632d3b18a8513d532d502e94f29cb2a3a0cee",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 105,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L105-L105"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L99-L99"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 103,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L101-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f9bc3e5c2ff06a88599bc0a6f20d486bb42abf236b820ab18f660c2d66a5ab7",
+        "slc_a74b33783482549942bef2ea207554ea84d36779633f865f744ccb8585f0636d",
+        "slc_af569059491e7385356be3bb186efa8abf0cb7817a97a720508d43dab3e5c07a"
+      ],
+      "text": "Running python agent.py starts an interactive prompt where the user types commands or instructions, with 'quit' or 'exit' to stop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e85ccd13fce97bd1a1bf72dd5d76ea778cabcec5ea42a7ae8b01c94f646ae4d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L64-L66"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 69,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L68-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d1aae0dec320697561737a0bf16ad7c59851f6ba598727485c082e399b46f34",
+        "slc_a1b8b344b17b6ad93a8beb583a11c7acf825ab7940d05e7d34f4b2f703c53cf2"
+      ],
+      "text": "The README's example install lists fastapi, uvicorn, requests, pytest, langchain, and openai as pip dependencies, and requires an OpenRouter API key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ec4f1864ea1df81abc4350f7db662fba130a7c1bfec7893dcffd8327d81d84a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c8d847b57f258e830c9aba8fd521460419bbda61db77dcda4e6ab2d2c21a2f3"
+      ],
+      "text": "By default the agent assumes the target API has specific REST routes like /api/endpoint, but users can customize this via prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07e1c93d49d31ce6288d8e82d222bed09a892e7b2b2d9fc8217b37808565b401",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 81,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L78-L81"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 72,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L71-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7112e1baf3069d73aedb445734ba655276f1f66c40181589c5f8d5489257480",
+        "slc_ec33a4ca5493380d644cc8a332caa0bf171823285350a5f709d08804843917ab"
+      ],
+      "text": "Generated tests target TEST_API_URL if set, otherwise defaulting to http://localhost:8000."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f7a986a587365d9051db61fe4529228e363262057fb45cbb633d4ea973b8b220",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 144,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L143-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b83ea37c5c30ca08ee368c7f320c6094c3ff215491fdf12614befbc04a3486f"
+      ],
+      "text": "The README suggests setting temperature to 0.0 in api_tester.py to reduce randomness and obtain more deterministic LLM output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3dc4b18bbf3f1aca95d741cb9625569498d2e8887fcbec0ea5005f19e9b1c98",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 135,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L133-L135"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 141,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L140-L141"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 138,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L137-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3cd6acf2fe5155ee34499017b80b26212839608c2e8ea1d95914e0c2e3fa5913",
+        "slc_5e1eb9396584b4db35e1044826fe03e2d6c144da83497d1cb8941b563967adae",
+        "slc_a583eb45ecad7702e562824b95931b12149b6c11a8a72671580726b5cbb54c7e"
+      ],
+      "text": "Prompting guidance advises explicitly describing endpoints, specifying desired test names and structure, and providing example test-code skeletons to steer output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_04db88fb63a2efe1ef38ef689517acf615396ebce448d789cec943d943850f39",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L89-L89"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L97-L97"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L91-L91"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L99-L99"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 116,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L109-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4846b67bfe25a40d2de0ab2a084251acdd18cefeea3628733d787f9a22969580",
+        "slc_87f1ad43c432a21497e636aa923b56b91323ca58fbf0b206a76f56e0dc745551",
+        "slc_9dd4ce61a2adc3e3982887599cecd661b4bb5715a18bd3e1f71947c4cba13bec",
+        "slc_a74b33783482549942bef2ea207554ea84d36779633f865f744ccb8585f0636d",
+        "slc_e206461f1395784a00e07d49b03abefbb325b215514e68b9c08fea5876556cbd"
+      ],
+      "text": "Documented usage workflow: start the API with uvicorn on port 8000, run python agent.py in a second terminal, then issue Plan/Generate/Run/Feedback commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55e8736a2fb6f34fd32cb93f9ce01a2bc4215fc526cb95629c9015fcd287e12c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 156,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L155-L156"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 159,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L158-L159"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 162,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L161-L162"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 165,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L164-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ae0c888f539a926361e85f0e59af98db719107ea58418faeafe482ee74f4a7f",
+        "slc_4250083a0b82c715e03dcf0fe6b14159b6ee1220e81cdafabea0add1fde55f39",
+        "slc_7e66f100da09f6a26e5da472dba7e429584bc3adf103bc5b6dd01af19cc0d11c",
+        "slc_a30fc3b4adb6b9f84ac46a17766530d6a3731eeeecaea5a8dac6eb10f76fa4c7"
+      ],
+      "text": "Troubleshooting guidance covers missing OPENROUTER_API_KEY, unexpected 401 responses needing an Authorization header, and mismatched generated routes, suggesting explicit prompts or feedback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9896ac42d13832ca47b3f02b068423d4bed36ab030c8a6514b454a41493ee773",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 159,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L158-L159"
+        },
+        {
+          "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+          "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "furudo-erika/ai-testing-agent",
+          "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md#L131-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4250083a0b82c715e03dcf0fe6b14159b6ee1220e81cdafabea0add1fde55f39",
+        "slc_a0b4440b9bf194969d1190498758eb918208c605219d52a3ce4f4599f1c23351"
+      ],
+      "text": "Generated test quality appears heavily dependent on user prompting; the README notes LLM output quality depends heavily on how it is prompted and may invent routes not present in the real API."
+    }
+  ],
+  "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 169,
+        "path": "README.md",
+        "size": 6257
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 10,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_ea2646e4cf4e50858292b609461f5e3e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/furudo-erika/ai-testing-agent/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/9e7a156f697edc7b/manifest.json",
+  "package_id": "pkg_b6004626059d4ec6da38d482710f3b1f7db5c98194812a59d343e13621ae9e8c",
+  "repo": "furudo-erika/ai-testing-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8793f967bd6e4e075066ab6a6b2b5bf1c5710a148e59c2e125bc29722daa21f9",
+  "snapshot_id": "9e7a156f697edc7b",
+  "sources": [
+    {
+      "commit": "051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c",
+      "git_sha": "e4c8a568b0eaa487d21905bfba703813a10bbd03",
+      "lines": 169,
+      "path": "README.md",
+      "repository": "furudo-erika/ai-testing-agent",
+      "sha256": "951a6b5d53dcf1596e99aad8e76fbb851bc81b3f386da4c453160239b79e7f33",
+      "source_id": "src_1595b7df46a7593980cc84a1417717a4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/furudo-erika/ai-testing-agent/blob/051b0888e9d381e7ba3940ec4d7a52e3e7e61f9c/README.md"
+    }
+  ],
+  "summary": "The snapshot is a README-only view of an AI Testing Agent that uses an LLM via OpenRouter to plan, generate, run, and iteratively refine pytest tests for a user's API. Evidence covers architecture, CLI commands, environment variables, and prompting guidance; no code or contributor/eval evidence is present.",
+  "superseded_claim_ids": []
+}

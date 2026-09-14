@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1315df89df82000c625cb3d2e66ffc1898fcd0d6d10b6931ce6b9698b988233c
+- clm_2d9c0f2e9710647416e3482b48333648a8ac944452663eb290b55f034330d6b7
+- clm_47f6e97ad5957559af391d24c14892c9fb07288f307132003c7803bed7ff86fb
+- clm_5357fc972619d888cff6862fc348954cd6e48f58a1baca4a47e5e6d48fa67b77
+- clm_602640ce2f8f1c779b0d18d64e0609903abab40919224bf51dbc4d1f1232ad49
+- clm_6c1a8449d7cd4dbf2d5fa15a8f1d33f934ef26a3e6cef0454ad887d074bac2c5
+- clm_81085ad6524008d5a892eb78e264cd6970690474918c4775a59b0f35d5361e86
+- clm_bd0a8d51b40d02d6545bf1ad88860cbb23e085f31b576b9dc21531726bbff62c
+- clm_bf844e3fbf6c50af75ffcce3aca5fb3162100a476f8cb4300b1d91a411709dfb
+- clm_d1f55727feb9c14ae9695332488343c17e748734be04c50d6d1d4b489dde96b5
+- clm_faf36636d66ed888746ba65eb6e25110f67436d01494b23a52804e9bd1067e24
+- clm_ffe68a71dfb6df0148324894367c17c37af104d0c16387a5101774adbdfce0de
+maturity: draft
+page_id: pg_729938afb95d52cbbc156ca357d5122f
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: aws-samples/amazon-mwaa-examples
+updated_at: '2026-09-14T03:36:04Z'
+---
+
+# aws-samples/amazon-mwaa-examples
+
+<!-- rcw:begin owner=entity:ent_27602ed90c6e51cbae3ad2ffc2b116ad block=evidence -->
+- aws-samples/amazon-mwaa-examples is mentioned in this evidence. [@claim:clm_1315df89df82000c625cb3d2e66ffc1898fcd0d6d10b6931ce6b9698b988233c] [@claim:clm_2d9c0f2e9710647416e3482b48333648a8ac944452663eb290b55f034330d6b7] [@claim:clm_47f6e97ad5957559af391d24c14892c9fb07288f307132003c7803bed7ff86fb] [@claim:clm_5357fc972619d888cff6862fc348954cd6e48f58a1baca4a47e5e6d48fa67b77] [@claim:clm_602640ce2f8f1c779b0d18d64e0609903abab40919224bf51dbc4d1f1232ad49] [@claim:clm_6c1a8449d7cd4dbf2d5fa15a8f1d33f934ef26a3e6cef0454ad887d074bac2c5] [@claim:clm_81085ad6524008d5a892eb78e264cd6970690474918c4775a59b0f35d5361e86] [@claim:clm_bd0a8d51b40d02d6545bf1ad88860cbb23e085f31b576b9dc21531726bbff62c] [@claim:clm_bf844e3fbf6c50af75ffcce3aca5fb3162100a476f8cb4300b1d91a411709dfb] [@claim:clm_d1f55727feb9c14ae9695332488343c17e748734be04c50d6d1d4b489dde96b5] [@claim:clm_faf36636d66ed888746ba65eb6e25110f67436d01494b23a52804e9bd1067e24] [@claim:clm_ffe68a71dfb6df0148324894367c17c37af104d0c16387a5101774adbdfce0de]
+<!-- rcw:end owner=entity:ent_27602ed90c6e51cbae3ad2ffc2b116ad block=evidence -->
+
+## Researcher notes
+

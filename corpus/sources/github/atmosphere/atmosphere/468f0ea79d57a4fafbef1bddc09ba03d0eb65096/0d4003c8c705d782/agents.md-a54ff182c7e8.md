@@ -1,0 +1,587 @@
+## Build System: Maven
+
+**This project uses Apache Maven with the Maven Wrapper (`./mvnw`).**
+
+### Commands
+| Task | Command |
+|------|---------|
+| Full build | `./mvnw install` |
+| Fast build (skip checks) | `./mvnw install -Pfastinstall` |
+| Compile only | `./mvnw compile` |
+| Run tests | `./mvnw test` |
+| Run single test | `./mvnw test -pl modules/cpr -Dtest=BroadcasterTest` |
+| Skip tests | `./mvnw install -DskipTests` |
+| Checkstyle only | `./mvnw checkstyle:checkstyle` |
+| PMD only | `./mvnw pmd:check` |
+
+### Module Build
+Build a specific module (faster iteration):
+```bash
+# Build only atmosphere-runtime (cpr)
+./mvnw install -pl modules/cpr -DskipTests
+
+# Build only spring-boot-starter
+./mvnw install -pl modules/spring-boot-starter -DskipTests
+
+# Build only quarkus extension
+./mvnw install -pl modules/quarkus-extension -DskipTests
+```
+
+## Git Workflow
+
+### Hooks Setup
+**Run this at the START OF EVERY SESSION:**
+```bash
+git config core.hooksPath .githooks
+```
+This enables pre-commit, commit-msg, and pre-push hooks. Sessions get archived/revived, so this must run EVERY time you start working.
+
+**NEVER use `--no-verify` when committing or pushing.** The hooks enforce:
+- Apache 2.0 copyright headers on all Java source files
+- No unused or duplicate imports in staged Java files
+- Commit message format (max 2 lines, conventional commits recommended)
+- No AI-generated commit signatures
+- Pre-push: Maven build must pass (via validation marker)
+
+### Commit Message Format
+Use conventional commit prefixes. The commit-msg hook warns if missing:
+```
+type(scope): description
+```
+Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`, `build`, `revert`
+
+Examples:
+```
+feat(cpr): add WebSocket reconnection support
+fix(spring-boot): resolve auto-configuration ordering
+chore: update Jetty to 12.0.16
+```
+
+Rules enforced by hooks:
+- Maximum 2 non-empty lines (summary + optional detail)
+- First line under 100 characters (50-72 recommended)
+- No AI-generated signatures (`Co-Authored-By: Claude`, `Generated with`, etc.)
+- **NEVER add `Co-authored-by: Copilot` or any AI co-author trailer** — the commit-msg hook will reject it
+- Do not add ANY trailer lines (Co-authored-by, Signed-off-by, etc.) to commit messages
+
+### Branch Strategy
+- Main branch: `main` (development), `atmosphere-2.6.x` (legacy)
+- Feature branches for new features
+- Bug fixes go directly to `main`
+
+## Project Structure
+
+```
+atmosphere/
+├── config/                        (checkstyle, PMD rulesets)
+├── modules/
+│   ├── cpr/                       (atmosphere-runtime - core framework)
+│   ├── spring-boot-starter/       (Spring Boot 4.0 integration)
+│   └── quarkus-extension/         (Quarkus 3.21+ integration)
+│       ├── runtime/
+│       └── deployment/
+├── samples/
+│   ├── chat/                      (Jetty embedded sample)
+│   ├── embedded-jetty-websocket-chat/
+│   ├── spring-boot-chat/
+│   └── quarkus-chat/
+├── atmosphere.js/                 (TypeScript client library)
+├── assembly/
+└── pom.xml                        (4.0.57-SNAPSHOT, JDK 21)
+```
+
+### Key Artifacts
+| Module | ArtifactId | Description |
+|--------|-----------|-------------|
+| Core | `atmosphere-runtime` | Main framework JAR |
+| Spring Boot | `atmosphere-spring-boot-starter` | Spring Boot 4.0 auto-configuration |
+| Quarkus Runtime | `atmosphere-quarkus-extension` | Quarkus 3.21+ runtime |
+| Quarkus Deployment | `atmosphere-quarkus-extension-deployment` | Quarkus build-time processing |
+
+## Writing Code
+
+- Java version: **21** (configured in root pom.xml `<release>21</release>`)
+- License: Apache 2.0
+- All Java files MUST have the copyright header (enforced by pre-commit hook)
+- Commit without AI assistant-related commit messages
+- Do not add AI-generated commit text in commit messages
+- **NEVER add `Co-authored-by:` trailers to commits** — no Copilot, no Claude, no AI attribution of any kind
+- NEVER USE `--no-verify` WHEN COMMITTING CODE
+- Match the style and formatting of surrounding code
+- Make the smallest reasonable changes to get to the desired outcome
+- NEVER remove code comments unless you can prove they are actively false
+
+### Copyright Header (Required)
+All Java source files must start with:
+```java
+/*
+ * Copyright 2008-2026 Async-IO.org
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+```
+
+### Java Code Style
+- Prefer composition over inheritance
+- Use `try-with-resources` for all `AutoCloseable` resources
+- Prefer `Optional` over null returns for public APIs
+- Use `var` for local variables when the type is obvious from context
+- Prefer `switch` expressions (JDK 21) over if/else chains for enum handling
+- Use sealed classes/interfaces where appropriate
+- Use records for immutable data carriers
+- Use pattern matching (`instanceof` patterns, switch patterns) where it improves readability
+- Avoid raw types - always parameterize generics
+- Use `@Override` on all overriding methods
+- Prefer `StringBuilder` over string concatenation in loops
+- Use `List.of()`, `Map.of()`, `Set.of()` for unmodifiable collections
+- All tests use JUnit 5 (`org.junit.jupiter`)
+
+### Build Enforcement
+- **Compiler**: `javac -Xlint:all,-processing,-serial` is enabled — the compiler flags unused imports, unchecked casts, deprecation usage, raw types, and other issues as warnings. **Zero compiler warnings are required.**
+- **Checkstyle**: runs in `validate` phase (failsOnError=true). Enforces `UnusedImports` and `RedundantImport` rules — the build fails if unused or duplicate imports are present. Config in `config/atmosphere-checkstyle.xml`.
+- **PMD**: runs in `validate` phase (failsOnError=true). Config in `config/atmosphere-pmd-ruleset.xml`.
+- **Pre-commit hook**: blocks commits containing unused or duplicate imports in staged Java files
+- All checks can be skipped with `-Pfastinstall` for local iteration, but **you MUST run a full `./mvnw compile` (without `-Pfastinstall`) before committing** to verify zero warnings.
+- **Do NOT introduce new `@SuppressWarnings` annotations** without justification. If a suppression is necessary (e.g., unavoidable raw type from a third-party API), add a comment explaining why.
+
+## Correctness Invariants (Blocking)
+
+Violations of these rules are **release-blocking** regardless of feature scope. These invariants exist because ~45 bugs (2 P0, 15 P1) were traced to their absence during a 2-week review.
+
+### 1. Ownership: Only the creator of a resource may release/close/shutdown it
+- **Do not destroy, release, or shut down resources you did not create.** Track ownership explicitly.
+- When accepting external resources (executors, pools, connections), wrap them to prevent lifecycle operations.
+- Every `start()` must have a symmetric `stop()` that undoes all registrations.
+- Registration actions (listeners/handlers/hooks) MUST have explicit uninstall/removal on stop.
+- Netty/direct buffers MUST be released on all terminal/error/removal paths.
+
+### 2. Terminal Path Completeness: Every exit path must complete/release/reset
+- **Every terminal path (success, failure, cancel, timeout, reject) must leave the system in a completed state.**
+- Futures must be resolved. Flags must be reset. Buffers must be released.
+- Close must be idempotent (CAS or close-once pattern).
+- If a guard checks a counter, the counter must actually be incremented somewhere.
+
+### 3. Backpressure: Never ignore rejection or capacity signals
+- **Never ignore backpressure or rejection signals.** Check return values of `offer()`, handle `RejectedExecutionException`.
+- Every cache and buffer must declare a size bound or eviction policy.
+- Unbounded data structures fed by external input are a DoS vector.
+
+### 4. Boundary Safety: Validate/encode/frame at every boundary
+- **At every boundary (wire, filesystem, shell, URL, HTTP), validate and encode before interpretation.**
+- Decode text only from complete framed messages, never from raw transport chunks.
+- Do not mutate binary payloads (no appending delimiters to byte arrays).
+- Normalize and validate all filesystem paths (`resolve().normalize()` + `startsWith()` check).
+- Use shell arrays for argument lists; never expand unquoted variables.
+- URL-encode all dynamic query/path components.
+- Content-type matching must be case-insensitive.
+- Return 400 (not 500) for malformed user input; catch parse exceptions at the boundary.
+
+### 5. Runtime Truth: Advertise only confirmed runtime state
+- **Advertise and report only confirmed runtime state, never configuration intent or classpath presence.**
+- Capability flags must reflect actual running state.
+- Info/discovery endpoints must return runtime-resolved values.
+- Feature advertisement (Alt-Svc, transport support) must be suppressed when startup fails.
+- Classpath detection must be gated on runtime evidence, not just `Class.forName()` success.
+
+### 6. Security: Every mutating surface requires explicit authorization
+- **Every mutating/admin endpoint requires explicit authentication and authorization.** Default deny.
+- Security/integrity verification MUST fail closed by default; any fail-open mode must be explicit and non-default.
+- All filesystem paths derived from user/content metadata MUST use strict input validation (reject `..`, separators, empty segments).
+- Never ship insecure defaults in production code paths — gate behind explicit opt-in with startup warnings.
+- Samples must not regress auth posture — if auth exists, it must work out-of-box or be explicitly disabled with documentation.
+
+### 7. Mode Parity: Sync/async/stream variants must behave identically
+- **If a feature exists in multiple invocation modes (sync/async/stream), semantics must match across all modes.**
+- Error handling, lifecycle events, observability, and completion behavior must be consistent.
+- If a mode has intentionally different behavior, document it explicitly and test it.
+- When adding a feature to one path, verify it works in all paths.
+
+### Testing & CI Quality Gates
+- Every P0/P1 bugfix MUST include a regression test reproducing the failing scenario.
+- No placeholder/no-op tests are allowed in required CI matrices.
+- Flaky-test quarantine requires owner + expiry + tracking issue; quarantined tests must run in a scheduled lane.
+- Workflow path filters MUST include all behavior-affecting scripts/config locations for the feature area.
+- E2E tests MUST assert the specific feature under test, not just "server started".
+- Tests must assert the specific behavior they claim to verify — `expect(true).toBe(true)` is forbidden.
+
+### Correctness Review Checklist
+Before committing, verify these for every changed file:
+
+1. **Ownership** — Does this code close/release/shutdown only resources it created?
+2. **Terminal paths** — Are success/failure/cancel/timeout/reject all handled symmetrically?
+3. **Backpressure** — Are queue-full, rejected-execution, and partial-write signals handled (not ignored)?
+4. **Boundaries** — Are path/URL/shell/wire/content-type inputs validated, encoded, and framed correctly?
+5. **Runtime truth** — Are capabilities and info based on confirmed runtime state (not config/classpath)?
+6. **Authorization** — Do all mutating/admin endpoints require authn/authz?
+7. **Mode parity** — If sync/async/stream variants exist, do they behave consistently?
+
+## Testing
+
+### Running Tests
+```bash
+# Run all tests in a specific module
+./mvnw test -pl modules/cpr
+
+# Run a single test class
+./mvnw test -pl modules/cpr -Dtest=BroadcasterTest
+
+# Run a single test method
+./mvnw test -pl modules/cpr -Dtest=BroadcasterTest#testBroadcast
+
+# Run with debug output
+./mvnw test -pl modules/cpr -Dtest=BroadcasterTest -Dsurefire.useFile=false
+```
+
+### Test Notes
+- Surefire uses `--add-opens` for concurrent locks (configured in root pom.xml)
+- Some tests excluded on JDK 25+ (BlockingIOCometSupport incompatibility)
+- `JSR356WebSocketTest` excluded (Mockito cannot mock sealed interfaces on JDK 21+)
+- `BroadcasterCacheTest` excluded (BlockingIOCometSupport incompatibility)
+- JUnit 5 is the test framework for all modules
+- Spring Boot starter uses JUnit 5 via `spring-boot-starter-test`
+- Quarkus extension uses JUnit 5 via `quarkus-junit5`
+
+## Pre-Commit Validation
+
+### Quick Iteration (during development)
+```bash
+# 1. Build the module you changed
+./mvnw compile -pl modules/cpr
+
+# 2. Run targeted tests
+./mvnw test -pl modules/cpr -Dtest=YourTest
+```
+
+### Before Committing
+```bash
+# 1. Compile and verify ZERO warnings (mandatory — do not skip)
+./mvnw compile -pl modules/cpr
+
+# 2. Full build of changed module with tests
+./mvnw install -pl modules/cpr
+
+# 3. Verify checkstyle and PMD pass
+./mvnw checkstyle:checkstyle pmd:check -pl modules/cpr
+```
+
+**Do NOT commit or push if the build produces warnings.** Treat compiler warnings, deprecation warnings, and static analysis warnings as errors. Fix them before committing. The compiler runs with `-Xlint:all,-processing,-serial` and Checkstyle enforces `UnusedImports`/`RedundantImport` — both will catch common issues.
+
+### Before Pushing
+The pre-push hook blocks `git push` unless you run the validation script first. The script is **diff-aware**: it classifies the changeset against `origin/main` and only builds the reactor modules that are actually affected.
+
+```bash
+# Incremental build (default) — only affected modules + their -am closure
+./scripts/pre-push-validate.sh
+
+# Force a full reactor build (same as the old behavior)
+./scripts/pre-push-validate.sh --full
+
+# Classify the diff without running Maven (useful for debugging the script)
+./scripts/pre-push-validate.sh --dry-run
+
+# Override the diff base (e.g. when working off the legacy branch)
+BASE_REF=origin/atmosphere-2.6.x ./scripts/pre-push-validate.sh
+```
+
+The script picks one of three modes from the diff:
+
+| Mode | Trigger | Maven invocation |
+|------|---------|------------------|
+| `full` | `pom.xml` / `modules/pom.xml` / `bom/pom.xml` / `assembly/pom.xml` / `.mvn/*` / `config/*` changed, or `--full` flag | `./mvnw install -q` |
+| `none` | only `*.md`, `docs/`, `.github/`, `scripts/`, `atmosphere.js/`, `.claude/` changed | Maven skipped (architectural-validation only) |
+| `incremental` | any Java / leaf-module `pom.xml` change | main checkout: `./mvnw install -q -Dgib.disable=false -Dgib.baseBranch=refs/remotes/$BASE_REF` (routed through the Gitflow Incremental Builder extension declared in `.mvn/extensions.xml`)<br>worktree: `./mvnw install -q -pl <modules> -am` (GIB's JGit backend does not support separate worktrees, so the script falls back to manual `-pl` scoping) |
+
+The script stamps a marker in `.git/validation-passed` valid for 30 minutes. The pre-push hook checks the marker is fresh and matches the current commit.
+
+**Gotcha for worktrees**: if `git rev-parse --git-dir` differs from `git rev-parse --git-common-dir` (i.e. you're in `.claude/worktrees/*`), GIB self-disables and the script takes the manual `-pl ... -am` path. Same end result; the diagnostic banner prints `Worktree: true` so you can tell which path ran.
+
+**Always cancel previous GitHub Actions runs on the branch before pushing** to avoid runner congestion:
+```bash
+gh run list --branch $(git branch --show-current) --json databaseId,status -q '.[] | select(.status == "queued" or .status == "in_progress") | .databaseId' | xargs -I{} gh run cancel {}
+```
+This frees up runners for the new push. Without this, stale queued runs accumulate and block CI for all branches.
+
+### Before Merging / PR
+```bash
+# Full build with all checks
+./mvnw install
+```
+
+## Spring Boot Starter Notes
+- Target: Spring Boot 4.1.0, Spring Framework 7.0
+- Set object factory BEFORE init()
+- Expose AtmosphereFramework bean but NOT BroadcasterFactory
+- Override parent POM's SLF4J/Logback versions for Spring Boot 4 compatibility
+
+## Quarkus Extension Notes
+- Target: Quarkus 3.21+ (tested on 3.36.0)
+- Config prefix: `quarkus.atmosphere.*`
+- `loadOnStartup` must be > 0 (Quarkus skips if <=0)
+- Use `BUILD_AND_RUN_TIME_FIXED` for config used in `@BuildStep`
+- `Recorder` cannot pass `Class<?>` objects; use class name strings
+
+## atmosphere.js (TypeScript Client)
+- Location: `atmosphere.js/`
+- Package manager: npm (uses package-lock.json)
+- Build: `npm run build`
+- Test: `npm test`
+- Version: 5.0.32
+
+## Sample Applications
+
+Samples in `samples/` are **the first thing users see** — they must be production-quality, not stubs.
+
+### Rules for Samples
+- **Actually use the integration you claim to demonstrate.** If a sample is called `spring-boot-rag-chat`, it MUST use the real Spring AI `VectorStore` API — not fake it with an in-memory map. If you can't make the real integration work, say so and ask for help.
+- **Never create per-runtime sample apps** (`spring-boot-<runtime>-chat`). The `AgentRuntime` SPI promise is "swap one Maven dep, the same sample works." Document framework-specific extensions in the runtime's module README, not via a dedicated sample.
+- **No mock/stub implementations disguised as real code.** Comments like "in a real app, you would call X" are a red flag — the sample should BE the real app.
+- **Read the third-party library's actual API** (use `javap`, inspect JARs, read source) before writing integration code. Do not guess at APIs.
+- **Each sample must compile.** Run `./mvnw compile -pl samples/<name>` before committing.
+- **Each sample must have a README.md** explaining what it does, how to run it, and what the key code does.
+
+### Third-Party Integrations
+When writing code that integrates with an external library (Embabel, LangChain4j, Spring AI, etc.):
+1. **Inspect the actual dependency JARs** in `~/.m2/repository/` to find real class names and method signatures
+2. **Use `javap -public`** to read the public API of key classes
+3. **Never invent API calls** — if `agentPlatform.runAgent(prompt)` doesn't exist, don't write it
+4. **Check for auto-configuration** — most Spring ecosystem libraries provide starter/autoconfigure modules; use them instead of manual wiring
+
+## No Hallucinations — Verify Before Claiming
+
+**Every factual claim in docs, CHANGELOG entries, commit messages, marketing copy, and
+user-facing text must correspond to something that exists in the code or the git history.**
+Do not invent features, method names, backend implementations, capability sets, metric numbers,
+sample counts, or fix commits. The project has been burned by this before — every instance
+costs credibility and has to be chased down and rolled back.
+
+### Rules
+
+1. **Numerical claims require a source.** If you write "7 runtimes", "20 samples", "9 templates",
+   "5 CheckpointStore backends", etc., first verify the number against the actual code:
+   - Sample count → `cli/samples.json` + `ls samples/`
+   - Runtime count → enumerate `modules/*/src/main/**/*AgentRuntime.{java,kt}` or `capabilities()` sites
+   - CLI templates → `cmd_new` template map in `cli/atmosphere` (each entry sparse-clones a sample
+     listed in `cli/samples.json`; there is no longer a standalone generator)
+   - Capability rows → the `capabilities()` method of each runtime (pinned via
+     `AbstractAgentRuntimeContractTest.expectedCapabilities()` — do not bypass)
+   - Module/backend counts → `ls modules/` for the relevant family (e.g., CheckpointStore
+     backends: `InMemory` + `Sqlite` ship in `modules/checkpoint/src/main/**`, and `Postgres`
+     ships as the separate `modules/checkpoint-postgres` reactor module; Redis is pluggable via
+     the SPI, NOT in-tree. Always check sibling `*-postgres` modules — a too-narrow
+     `ls modules/checkpoint/` is what made an earlier audit pass wrongly call the Postgres store "not shipped")
+
+2. **CHANGELOG entries must match real commits.** Before writing a "Fixed" or "Added" bullet,
+   run `git log --oneline --grep='<keyword>'` and confirm the described change exists. If the
+   bullet describes a fix, quote the commit hash in the internal draft before promoting to the
+   CHANGELOG. **Never** compose a plausible-sounding fix entry from memory or intuition — if
+   you cannot find the commit, the fix did not happen.
+
+3. **API surface claims require a source read.** Before writing
+   `TokenUsage(input, output, total)` in a doc, `cat` the actual `TokenUsage.java` record to
+   confirm the field list. Before writing `@AiEndpoint.promptCache()` as an annotation method,
+   grep for the method in the `AiEndpoint.java` source.
+
+3a. **"Shipped" / "wired" / "integrated" claims require a production consumer, not just an SPI.**
+    SPI presence is not runtime presence. Before calling a primitive shipped in a gist, README,
+    CHANGELOG, or release note, run:
+    ```
+    git grep '<ClassName>' -- ':!**/test/**' ':!**/*Test.java'
+    ```
+    and confirm at least one hit is on the critical path reached from a user action — not the
+    primitive's own package, not a reference impl, not a @Deprecated dead path. Zero qualifying
+    hits = "API + reference impl, integration pending"; do not promote to "shipped." For
+    cross-runtime claims ("works across the seven runtimes") grep each runtime's
+    `*AgentRuntime.{java,kt}` individually for the call — "all N runtimes do X" is almost
+    always wrong. Extends Correctness Invariant #5 (Runtime Truth) from capability flags
+    to SPI adoption.
+
+4. **Competitor claims must be stable facts, not numbers.** Writing "LiteLLM: 100+ LLM APIs"
+   or "Vercel AI SDK: 20+ providers" is a hostage to fortune — those numbers change quarterly
+   and can't be verified from this repo. Use stable descriptors ("OpenAI-compatible proxy",
+   "Provider abstraction", "TypeScript only") instead.
+
+5. **When a fact cannot be verified, either remove it or mark it explicitly as
+   "not yet verified"** and ask the project maintainer before publishing. Silent best-guesses are the
+   failure mode.
+
+### What to do when you catch yourself hallucinating
+
+- **Stop immediately.** Do not commit. Do not push.
+- **Report the finding transparently** — quote the false claim, quote the ground truth, explain
+   how it slipped through (usually: "I inferred from the narrative/plan instead of reading the code").
+- **Fix all copies of the claim** (CHANGELOG, docs, website, sample READMEs — a hallucination
+   often metastasizes across multiple files).
+- **Add a verification step** to future work so the class of error is closed
+   — e.g., pinning capability sets in contract tests so doc/code drift breaks the build.
+
+### Known drift patterns
+
+- **CHANGELOG "Fixed" bullets** — the most common hallucination vector. If you don't have a
+  commit hash in hand, you're making it up.
+- **Sample counts, template counts, number of anything** — always verify against the source
+  of truth (`cli/samples.json`, `cli/atmosphere` `cmd_new` template map, `modules/` listing, etc.).
+- **Capability matrices** — see `tutorial/11-ai-adapters.md` + `AbstractAgentRuntimeContractTest.expectedCapabilities()`.
+  Do not update one side without the other.
+- **Backend/store implementations** — enumerating "SQLite, Redis, Postgres" when only SQLite
+  ships is a classic. Check the actual `src/main` directory for concrete implementations.
+- **"All seven runtimes do X"** — verify each runtime individually. Blanket "all runtimes"
+  claims are almost always wrong because framework runtimes routinely lack features the
+  Built-in runtime has.
+- **`COVERED` in a self-assessment matrix** (OWASP/compliance) — must mean a *default-on,
+  genuinely-wired* protection, not an SPI/reference-impl an operator could opt into. Flag-off,
+  opt-in, or citation-only primitives go in the row's *notes* prose, never the load-bearing
+  evidence list; downgrade the row to `PARTIAL` if the genuinely-on protection is thinner than
+  the claim. Forcing a primitive default-on to make `COVERED` true only counts if it's *safe*
+  to force on — an unbounded-map guardrail (DoS, Inv#3), a response-PII hard-block (kills legit
+  answers), or an ALLOW-all policy (no-op) recreates the overstatement in a new form. (4.0.59:
+  `AgentStateIntegrity` was cited as A03 `COVERED` with zero real consumers.)
+- **A gate that walks its own artifact** — any CI test that greps `src/main` to validate an
+  artifact X (a matrix, a manifest) MUST exclude X from the walk and strip import/comment/Javadoc
+  lines before matching, or X's own citations self-satisfy the check. `EvidenceConsumerGrepPinTest`
+  certified citation-only evidence for months because it walked the matrix files themselves with a
+  bare `contains()`. Self-referential gates give false confidence; add a regression that a
+  comment-only mention reads as zero-consumer.
+
+## Persona Handle — NEVER in committed artifacts
+
+The project maintainer has a private role-play handle in their local
+`~/.claude/CLAUDE.md` that you will see addressed to you during agent
+sessions. **It must not appear in any committed file** — not in
+drift-log entries, not in CHANGELOG prose, not in commit messages, not
+in test fixtures or sample personas, not in Javadoc examples or CI
+workflow comments, and **not in `.harness/` artifacts either**. Use
+"the project maintainer" for narrative prose; use neutral names like
+"Alice" / "Alex" / "Bob" for test/sample personas; use the actual
+handle `jfarcand` only when referring to the GitHub identity. The
+handle is meaningful inside the agent session and meaningless (or
+worse, a private-handle leak) to anyone reading the public repo.
+
+The validator `scripts/validate-no-private-handle.sh` enforces this on
+every push. The validator skips `.claude/**` (agent-private workspace)
+and `.harness/sessions/**` (transient agent transcripts) by default;
+everything else is in scope, including `.harness/drift-log.md`. If you
+catch the handle in a draft, scrub it before committing — do not
+allowlist the path unless the reference is genuinely needed and
+cannot be rewritten (e.g. a historical citation that would falsify
+the record).
+
+## Honesty and Integrity — Don't Lie to the project maintainer
+
+The "No Hallucinations" section above covers *factual* dishonesty (inventing
+features, commits, numbers). This section covers *behavioral* dishonesty —
+patterns where every individual statement is defensible but the framing
+misleads. Both cost credibility; behavioral dishonesty is harder to catch
+because nothing in isolation is a lie.
+
+### Anti-patterns (do not repeat)
+
+1. **Fabricating a rule conflict to pick the easy path.**
+   When two memories seem to conflict, one is the governing rule for the
+   situation and the other is being misapplied to dodge work. If you find
+   yourself reaching for a rule to justify *not* doing hard work, stop —
+   the rule demanding the work almost always wins. Concrete failure:
+   citing `feedback_no_adjacent_debt_cleanup.md` to justify leaving red CI
+   on `main`, when `feedback_ci_accountability.md` is the actual governing
+   rule ("red CI blocks all devs — fix immediately").
+
+2. **Cherry-picking which memory to cite.**
+   Quoting one feedback memory while a contradicting one exists in
+   `MEMORY.md` is dishonest, even if every quote is real. Before citing
+   a memory as authority, search `MEMORY.md` for related entries on the
+   same topic and reconcile them in the open.
+
+3. **Reporting status that the rules say not to report.**
+   `feedback_no_prompt_on_failure.md` and `feedback_ci_accountability.md`
+   say "fix red CI autonomously, do NOT report red CI — only report when
+   green." A "CI status: 1 red, here's the diagnosis" message *is* the
+   failure mode those memories forbid. Following the letter of
+   "transparency" while breaking the spirit of "don't make the project maintainer
+   babysit broken CI" is dishonesty. If CI is red, the next message
+   should be the green-CI confirmation, not a status report.
+
+4. **"Pre-existing failure" / "not my regression" as an exit ramp.**
+   Accountability for `main` transfers on every push. If you push and the
+   pipeline is red — for *any* reason — it is your job to get it green
+   before walking away. "It was already red" is a description, not an
+   excuse.
+
+5. **Asking permission for actions memory has already mandated.**
+   "Want me to dig into the CLI failure?" when `feedback_ci_accountability.md`
+   says "fix red CI immediately" is a stall, not a question. Before
+   drafting a "Should I…?" message, grep `MEMORY.md` for prior guidance —
+   if the answer is already there, just do the work.
+
+6. **Declaring victory mid-task.**
+   Finishing one milestone (e.g. "MCP outbound demo works in browser")
+   and defaulting to "wait for direction" mode while related work remains
+   (red CI, missing tests, broken docs) reports partial completion as
+   full. The honest signal lists what is *not yet done* alongside what
+   is, and keeps going on the open items unless the project maintainer redirects.
+
+### Tiebreakers when rules appear to conflict
+
+When two rules in this file appear to point opposite directions, do **not**
+pick the one that lets you do less work — that pattern is anti-pattern #1
+above. Apply these tiebreakers, in order:
+
+1. **Safety beats brevity.** If a brevity / "be terse" instruction conflicts
+   with a Correctness Invariant (Ownership, Terminal Path Completeness,
+   Backpressure, Boundary Safety, Runtime Truth, Security, Mode Parity),
+   the invariant wins. Verbose-but-correct beats concise-but-unsafe.
+2. **Verification beats memory.** If a memory file disagrees with what the
+   code says now, the code wins. Update or remove the stale memory, do not
+   quote it. "Memory is point-in-time observations" — the system reminders
+   on each memory file say so explicitly.
+3. **Doing beats asking.** If a feedback memory mandates the action and a
+   different rule would let you ask permission, just do the action. Asking
+   permission for something already mandated is anti-pattern #5.
+4. **Scope discipline beats scope expansion.** If you are tempted to bundle
+   adjacent cleanup into a feature branch, `feedback_no_adjacent_debt_cleanup.md`
+   wins unless `feedback_ci_accountability.md` (red CI on main) is in play.
+
+### When you catch yourself doing one of these
+
+- **Name the pattern out loud** — "I just fabricated a rule conflict" /
+  "I just asked permission for something memory already covers."
+  Surfacing the pattern is the first step to not repeating it.
+- **Do the work the rule actually mandated.** Don't negotiate around the
+  caught lie — just do the thing.
+- **The apology is not the work.** Don't ship a "sorry, here's my plan"
+  message and then stop. The work is the work.
+
+## Getting Help
+- Always ask for clarification rather than making assumptions
+- If you're having trouble with something, stop and ask for help
+
+## Knowledge Vault & Documentation Routing
+
+<important if="you are saving a doc, plan, ADR, runbook, audit, or report — or need prior decisions/context">
+
+`../atmosphere-vault` is the shared Atmosphere knowledge base. **Read it first** for prior decisions, designs, and context before starting structured work, and **write durable outputs there** — never leave structured docs only in chat (chat isn't durable).
+
+Routing (use the `obsidian-writer` skill, which writes to the live vault):
+
+| Doc type | Destination |
+|---|---|
+| ADR / decision | atmosphere-vault `Architecture/ADRs/` |
+| Plan / phased build | atmosphere-vault `Claude Plans/` |
+| Runbook / oncall procedure | atmosphere-vault `Development/Runbooks/` |
+| Audit / design analysis / session handoff / report | atmosphere-vault `Claude Outputs/` |
+| Reference docs that ship | repo `docs/` |
+| Directory-scoped specs | repo `<module>/README.md` |
+
+- **Local Claude Code (this CLI):** prefer the vault via `obsidian-writer`. Avoid `gh gist create` for the doc types above — gists aren't vault-searchable or wikilinkable.
+- **Claude Code for Web (containerized, no vault checkout):** `gh gist create` is the only durable output — acceptable there as a fallback; drop the gist link in chat so a later local session can backfill it into the vault.
+- Gists are also fine for pasteable snippets, cross-project material, and ephemeral share-with-stranger artifacts.
+- Writing markdown via the Write tool is limited to the `claude_docs/` folder under the repo — a per-dev, gitignored symlink into the vault's `Claude Outputs/` (run `/obsidian-vault-setup` to create it if missing; without the symlink, output stays local and never reaches the vault).
+</important>

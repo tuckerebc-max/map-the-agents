@@ -1,0 +1,820 @@
+{
+  "applied_operation_id": "op_2be23d4685b745c394c83e37e7cf3309",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4795b7829a32e794d7ffaa6710fc796bae5316f23f6a7b22d0b3d60fba598e9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 27,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L25-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_136b7e601e2c7192185f802b5f1ff9a75c6c52b63e335440bb38bb3d000d8768"
+      ],
+      "text": "Zeroshot turns a software goal into an explicit multi-agent graph: one agent implements, independent agents review, failures route into bounded repair, and delivery happens only after the graph's checks pass."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44cf8958e4c800f453c1a19c8554b615d2ed9a324fbda16a9e7d5ebf8ec742ec",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 54,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L50-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11f8c4516b5331b8558d3508290d43be530243e4f335e0751ae20846f15a88de"
+      ],
+      "text": "The built-in software-change graph gives the goal to a worker, runs acceptance and code review in parallel, routes rejections to a repair worker with repeated reviews, and delivers accepted changes through Git, CI, and merge, routing delivery conflicts back through repair."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83ac5da94762939e603a1f3c8de18751326c883212be1f91ba75b9281a196049",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 46,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L44-L46"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 57,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L56-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e7825c0cd0459849e6ce733c0579172b140da8e246bc3156751c09d4bed589f",
+        "slc_c095d041f49829f786b80e2e92279508f008d2a04c201f6c9efb56eb76804bea"
+      ],
+      "text": "Control flow is authored data rather than hidden in prompts: sequence, parallel review, retry paths, delivery, and exit conditions are explicit before a run starts, and no runtime agent chooses the next step."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_818463f4c2fa684eb98b22c72ada80d4bbad26936c4723c22692fa2849cc23b6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 57,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L56-L57"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "17816f16ff5ed9ad6f90b07c1c28ccefe2bd06b0",
+          "line_end": 24,
+          "line_start": 23,
+          "path": "docs/index.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/index.md#L23-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c095d041f49829f786b80e2e92279508f008d2a04c201f6c9efb56eb76804bea",
+        "slc_d40136d5d413f67cc2a5c0f3fa94e023f4e4ae0dc2751494f469753cbb651d0c"
+      ],
+      "text": "Every graph transition event is written to a durable SQLite ledger; after validating graph, runtime plan, and input, Zeroshot opens a durable ledger recording each node result."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c374aeaa18fbc6ff6b01e3a2e06bef25ff39748067004a4a869353ca43ae0ea",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 30,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L29-L30"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 88,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L81-L88"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 70,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L67-L70"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 37,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L34-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18ac4f06b2e87b9729be2e314b5d4f9793c4209201a999aca4fc37524f0ec793",
+        "slc_63e9071dbfb06dd0bd12a5c90bea699cdbebe360a7675248f2e336a38ef7a52f",
+        "slc_86f2f74d8d9e810d305e9ab77d3b0a9c6b00b9909c6d89732176eedc32085075",
+        "slc_c263daefbfb8dcbdad39f7890c844aa669590b46e175b01b38b613f5a3b842bd"
+      ],
+      "text": "The product is a native `zeroshot` executable (v8 hard cutover, former Node.js runtime retired), installed via npm and providing commands like `zeroshot run`, `zeroshot version`, and `zeroshot template list/show`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1a4692a07a47c5a390306622ba5d6831a7c2387dc56bb1ad9af16920a256934",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "a53d0192809f5ad25b52cede81060049c2ffb059",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/reference/cluster/api.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/reference/cluster/api.md#L21-L21"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "a53d0192809f5ad25b52cede81060049c2ffb059",
+          "line_end": 28,
+          "line_start": 23,
+          "path": "docs/reference/cluster/api.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/reference/cluster/api.md#L23-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21a70b24cdbf798f292dbd7043254486678105c00505f45ff46185e9dd54588f",
+        "slc_ce3b3883f3c55a2c3be853b035586336e3e0b05d7b3f7fd715738c5d31490a6b"
+      ],
+      "text": "Subscription methods use generic framing: watch, logs, and agent/attach (and run/* equivalents) establish subscriptions via one JSON-RPC result, then use generic event, subscription/cancel, subscription/closed, and $/cancelRequest notifications; no method-specific event/cancel/closed methods exist on the wire."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bf189be40418d5352fa500818c5d34366893c975a0305374c19194d3d815d4e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "17816f16ff5ed9ad6f90b07c1c28ccefe2bd06b0",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "docs/index.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/index.md#L17-L21"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "17816f16ff5ed9ad6f90b07c1c28ccefe2bd06b0",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/index.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/index.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24740c1bf0e0a0b48e1cc07a16e7a16ea0dd948c2f0598b4e5b4c54e815580b0",
+        "slc_d812e6554c65948df6371afe4e7eafd283bdd9558b506108dd6d5cfc1cf5cbda"
+      ],
+      "text": "A run consists of three authored values: a graph defining control flow and typed state, a runtime plan binding each executable node to a harness, provider, model, and named connections, and caller-owned initial input validated against the graph before execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_246f7f6c5217275aa6f4507f546b7ae82c5504c858d4240f3bc115fd1fce90a0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "17816f16ff5ed9ad6f90b07c1c28ccefe2bd06b0",
+          "line_end": 41,
+          "line_start": 40,
+          "path": "docs/index.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/index.md#L40-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98851e04199b55cca5dec804c15bf49fb36445ada501318542f6a9add906f21c"
+      ],
+      "text": "Besides the software-change template, a single-worker template exists for work that does not need the review loop, and custom graphs follow the same protocol contracts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b36816531b234873ae6b87619536c3d41015b7014f52bae6ea833c7181fe4a4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L74-L74"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "17816f16ff5ed9ad6f90b07c1c28ccefe2bd06b0",
+          "line_end": 64,
+          "line_start": 63,
+          "path": "docs/index.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/index.md#L63-L64"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 110,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L109-L110"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 93,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L92-L93"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 79,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L78-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2192257a947429d55554eca0ed09452ffd52e33c93965a5852782fecb66e32d1",
+        "slc_784f743bf40947d3741b07f6430267b79f8e93b26bb131a80edb334ae0653caf",
+        "slc_9e7983b80a28dadebc0a800e72ec0553d29f1b6defae8d615a516eb34df6ce56",
+        "slc_cd761cc1ca32a75276ccbb0100499d4ce5f851fa293b313e928cef3528fa7aeb",
+        "slc_e3d31bb09e4e007abec2f26f7570dbf45e263c1438ca998ae89804360a479b92"
+      ],
+      "text": "Three execution targets share the same graph and runtime plan: local mode in the current Git worktree reusing Codex or Claude Code logins, a self-hosted Docker target image bundling the engine plus pinned Codex and Claude harness CLIs, and a managed Zeroshot Cloud target."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e8d6d2cd50de0453cfb951f727b93071589e7c5f0dbcc7b3e2ab91ab8bd7145",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "eac121202f3a8d38164e817e97f9c67b7c8ebf13",
+          "line_end": 19,
+          "line_start": 10,
+          "path": "PUBLISHING.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/PUBLISHING.md#L10-L19"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 40,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L39-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c6436f3a0567965b1eed57e4b205cf3a4aeb48bf53ecb18bc3be1dc33cae1d8",
+        "slc_c84ded3ab6adb4fa9b310c76fbb3931407cfb855ea8f5b19ff6cf1ef7ab12d3a"
+      ],
+      "text": "The npm package installs a verified native binary for Linux x64/arm64, macOS x64/arm64, and Windows x64; native archives and SHA256 checksums are attached to each canonical vX.Y.Z GitHub Release."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d7f16957cc3edf5b02e5eb85c29ab46993c957f3da6345feb27984c9b136078",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 137,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L133-L137"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 140,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L139-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5842a1fdbef6ceab712cfc4c8c284e3b1e339240aec987f9d73a9abcc598dfc",
+        "slc_f63b8311165fe29d651af8e02678d605bd48838a2788e44c541fe719813fd01d"
+      ],
+      "text": "Repository development practice: contributors run `npm ci`, `npm run check`, and `cargo test --workspace`; Node.js is repository tooling and the npm delivery mechanism only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e78f5ad236b981937399a0a2c600ce61826b2de844ff2aa0c9369a95b00ea6e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "eac121202f3a8d38164e817e97f9c67b7c8ebf13",
+          "line_end": 19,
+          "line_start": 10,
+          "path": "PUBLISHING.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/PUBLISHING.md#L10-L19"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "eac121202f3a8d38164e817e97f9c67b7c8ebf13",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "PUBLISHING.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/PUBLISHING.md#L37-L37"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "eac121202f3a8d38164e817e97f9c67b7c8ebf13",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "PUBLISHING.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/PUBLISHING.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c6436f3a0567965b1eed57e4b205cf3a4aeb48bf53ecb18bc3be1dc33cae1d8",
+        "slc_0d9d7b0af6fad38a3672f16bb157f0341c3bc7c04ca57df82525fba5ec141a1f",
+        "slc_e6da58dac3544f36793b10b0bb88d177dea64369bd12ab6c6eed0824a56a0e7d"
+      ],
+      "text": "Repository development practice: releases publish one canonical version across GitHub tag, native archives, checksum manifest, npm package, target image, Python wheels, and versioned docs via a release workflow using GitHub OIDC trusted publishing, with no long-lived npm or PyPI tokens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de70252ddfbb707f3760df8955f60a739f681e71e19939772634fdbc98dafdb1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "eac121202f3a8d38164e817e97f9c67b7c8ebf13",
+          "line_end": 99,
+          "line_start": 97,
+          "path": "PUBLISHING.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/PUBLISHING.md#L97-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85f7c0e5cccd9f4750c88c1b7fc896a9cc07bd67de3e98a09b7259bb3c980f9d"
+      ],
+      "text": "Repository development practice: release jobs verify already-published immutable artifacts before completing missing steps, and recovery must use the same version, tag, and source commit without overwriting different artifacts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40fc69a90fc002613f7a30a1c6064415511c6b0478f2b0a5eab373826fffe3c5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+          "line_end": 129,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md#L121-L129"
+        },
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "66fd060725b3f6d980f77432069ec657ef9a0243",
+          "line_end": 18,
+          "line_start": 3,
+          "path": "docs/reference/python/configuration.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/reference/python/configuration.md#L3-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aaf18992084ecdf2cc87ca6fc6e194d59ba362b00def52bf2a35804f8acdbe8e",
+        "slc_b22cbb1edef665bfd896716ada44d5c9fa617771498821b24700d9aa839e1c59"
+      ],
+      "text": "A Python SDK is provided with public objects including LocalTarget, DirectTarget, HostedTarget, Target, Preset, GraphSpec, UniformRuntime, RuntimePlan, RunRequest, and MergePlanRequest."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05b338388db00e1953361e1fec360ebd07ee8cdf92a5aee08d3f298e53a22a04",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+          "git_sha": "a53d0192809f5ad25b52cede81060049c2ffb059",
+          "line_end": 82,
+          "line_start": 76,
+          "path": "docs/reference/cluster/api.md",
+          "repository": "the-open-engine/zeroshot",
+          "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/reference/cluster/api.md#L76-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d265e36c8581591d2c7320d62f5acac136c56f2ecb044c40ec47cdb9eb6d7305"
+      ],
+      "text": "The apply method supports dryRun, ifGeneration optimistic concurrency, and idempotencyKey parameters, suggesting the cluster API is designed for safe, repeatable graph applications."
+    }
+  ],
+  "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 144,
+        "path": "README.md",
+        "size": 5916
+      },
+      {
+        "lines": 390,
+        "path": "docs/reference/cluster/api.md",
+        "size": 15369
+      },
+      {
+        "lines": 18,
+        "path": "docs/reference/python/configuration.md",
+        "size": 352
+      },
+      {
+        "lines": 103,
+        "path": "PUBLISHING.md",
+        "size": 5544
+      },
+      {
+        "lines": 86,
+        "path": "docs/index.md",
+        "size": 2969
+      },
+      {
+        "lines": 5,
+        "path": "docs/requirements.txt",
+        "size": 103
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/zeroshot-cli.md",
+        "reason": "file-budget",
+        "size": 24625
+      },
+      {
+        "path": "docs/zeroshot-distribution.md",
+        "reason": "file-budget",
+        "size": 3514
+      },
+      {
+        "path": "docs/brand/README.md",
+        "reason": "file-budget",
+        "size": 2697
+      },
+      {
+        "path": "docs/concepts/execution.md",
+        "reason": "file-budget",
+        "size": 3682
+      },
+      {
+        "path": "docs/concepts/runtimes-and-connections.md",
+        "reason": "file-budget",
+        "size": 3239
+      },
+      {
+        "path": "docs/concepts/targets.md",
+        "reason": "file-budget",
+        "size": 2852
+      },
+      {
+        "path": "docs/getting-started/first-run.md",
+        "reason": "file-budget",
+        "size": 2640
+      },
+      {
+        "path": "docs/getting-started/install.md",
+        "reason": "file-budget",
+        "size": 1872
+      },
+      {
+        "path": "docs/guides/observe-and-control.md",
+        "reason": "file-budget",
+        "size": 2078
+      },
+      {
+        "path": "docs/guides/python-sdk.md",
+        "reason": "file-budget",
+        "size": 5337
+      },
+      {
+        "path": "docs/project/versioning.md",
+        "reason": "file-budget",
+        "size": 4760
+      },
+      {
+        "path": "docs/reference/python.md",
+        "reason": "file-budget",
+        "size": 1095
+      },
+      {
+        "path": "docs/reference/cluster/admission.md",
+        "reason": "file-budget",
+        "size": 4535
+      },
+      {
+        "path": "docs/reference/cluster/data-plane.md",
+        "reason": "file-budget",
+        "size": 7430
+      },
+      {
+        "path": "docs/reference/cluster/graph.md",
+        "reason": "file-budget",
+        "size": 16993
+      },
+      {
+        "path": "docs/reference/cluster/lifecycle.md",
+        "reason": "file-budget",
+        "size": 9133
+      },
+      {
+        "path": "docs/reference/cluster/portable-bindings.md",
+        "reason": "file-budget",
+        "size": 1909
+      },
+      {
+        "path": "docs/reference/cluster/watch.md",
+        "reason": "file-budget",
+        "size": 6639
+      },
+      {
+        "path": "docs/reference/python/client.md",
+        "reason": "file-budget",
+        "size": 151
+      },
+      {
+        "path": "docs/reference/python/errors.md",
+        "reason": "file-budget",
+        "size": 359
+      },
+      {
+        "path": "docs/reference/python/results.md",
+        "reason": "file-budget",
+        "size": 278
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 19889
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 717
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 2897
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1431
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3451
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1083
+      }
+    ],
+    "omitted_count": 27,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 942,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 33,
+      "complete": false,
+      "omitted": 27,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_bfd8a8908348564082e36915fbaad095",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/the-open-engine/zeroshot/b550c15279c9972a541f04c6d5925a5fa174363a/2ab85c8a6208f2d8/manifest.json",
+  "package_id": "pkg_c6e527c75beeb6232d80308a103316ff84a20a60bcf556f8325e86e170e8a202",
+  "repo": "the-open-engine/zeroshot",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "37cf2d322b90b963eba8901c3c30f903b18e642870a88888c4bdc6834461668b",
+  "snapshot_id": "2ab85c8a6208f2d8",
+  "sources": [
+    {
+      "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+      "git_sha": "eac121202f3a8d38164e817e97f9c67b7c8ebf13",
+      "lines": 103,
+      "path": "PUBLISHING.md",
+      "repository": "the-open-engine/zeroshot",
+      "sha256": "099cdf167bc57d47dd250dc4e5331a678d6125a2eb747cbe6fc1892fb3cd7519",
+      "source_id": "src_7f9af73b820450c1915da1e829aee56b",
+      "stored": "publishing.md-1b582d20fea2.md",
+      "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/PUBLISHING.md"
+    },
+    {
+      "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+      "git_sha": "4402c524110187d8ea2f2bafa1148ed15b47d037",
+      "lines": 144,
+      "path": "README.md",
+      "repository": "the-open-engine/zeroshot",
+      "sha256": "7057771fa34e933a67593ff204ce66606f8fa91c773c3b4b6366412d9d51d2a7",
+      "source_id": "src_52f9aac99ed75406b7827ef4d501d57b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/README.md"
+    },
+    {
+      "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+      "git_sha": "17816f16ff5ed9ad6f90b07c1c28ccefe2bd06b0",
+      "lines": 86,
+      "path": "docs/index.md",
+      "repository": "the-open-engine/zeroshot",
+      "sha256": "addb0dc5bd2236f8e47c03f1a589f6765a7815134ef69080fb54c0e685a88ae8",
+      "source_id": "src_9e6d59903dd75171b4088f2fa3c55749",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/index.md"
+    },
+    {
+      "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+      "git_sha": "a53d0192809f5ad25b52cede81060049c2ffb059",
+      "lines": 390,
+      "path": "docs/reference/cluster/api.md",
+      "repository": "the-open-engine/zeroshot",
+      "sha256": "6a05d9c00cb41ece771a4878674330ca2bfe0a6b61539dabd9023ee8acfddf99",
+      "source_id": "src_90b0c78528935a3e8e11aa0e72f252c5",
+      "stored": "api.md-ef0066e0851b.md",
+      "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/reference/cluster/api.md"
+    },
+    {
+      "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+      "git_sha": "66fd060725b3f6d980f77432069ec657ef9a0243",
+      "lines": 18,
+      "path": "docs/reference/python/configuration.md",
+      "repository": "the-open-engine/zeroshot",
+      "sha256": "09980f21aabdd32630ecd520d4a6eeb7bf1dafcd1eb784bcf2fece91a8d5a828",
+      "source_id": "src_db796d69c1fc52398e74d1a6b44b913e",
+      "stored": "configuration.md-74460c0051ac.md",
+      "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/reference/python/configuration.md"
+    },
+    {
+      "commit": "b550c15279c9972a541f04c6d5925a5fa174363a",
+      "git_sha": "6b33c389231f9261326d98a3990ad3fde9d3bb22",
+      "lines": 5,
+      "path": "docs/requirements.txt",
+      "repository": "the-open-engine/zeroshot",
+      "sha256": "6411024e1027239adbe658ec0a2958b10950c294a92f758ee8a2b2b2f860434c",
+      "source_id": "src_2b930e51e3b452f196b9f4dcc4d7030b",
+      "stored": "requirements.txt-2c9c11d26b09.txt",
+      "url": "https://github.com/the-open-engine/zeroshot/blob/b550c15279c9972a541f04c6d5925a5fa174363a/docs/requirements.txt"
+    }
+  ],
+  "summary": "Zeroshot turns a software goal into an explicit multi-agent graph: one agent implements, independent agents review, failures route into bounded repair, and delivery happens only after the graph's checks pass. The built-in software-change graph gives the goal to a worker, runs acceptance and code review in parallel, routes rejections to a repair worker with repeated reviews, and delivers accepted changes through Git, CI, and merge, routing delivery conflicts back through repair.",
+  "superseded_claim_ids": []
+}

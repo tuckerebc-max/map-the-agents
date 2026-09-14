@@ -1,0 +1,717 @@
+{
+  "applied_operation_id": "op_65f79b7b45f94d408841e9ad5aa2bc3d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c8f27c6e25a8b43d64c55dfb011a70ee27104b315e06d764f385195438b8596",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L11-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d94fb6da19ab732d998b9b4f9d44def3f81a2ded7752d26600df3ed388fafc0f"
+      ],
+      "text": "Hive runs CLI agents (Claude Code, Codex, Gemini, OpenCode, Qwen, and others) as real PTY processes on the local machine, with a browser workbench where an Orchestrator plans and delegates to workers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc624db332fe4912c8f74607df88f39cd1efd535f6ec9489af09c300c9792b71",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 175,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L169-L175"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 57,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L53-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3cdf3c81e093d522b7998fc3ce0d5df868ffcb4629ed70955b702899b5cc62b2",
+        "slc_bf25715da738919bc7e2560fa1d6326003749887d8ec8e31aaa10ce1b7b7c15b"
+      ],
+      "text": "The Orchestrator is itself a real agent CLI process, not a scripted manager; it dispatches tasks with `team send <worker> \"<task>\"` and workers report back with `team report`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31a60a9f9b9229542963b9ff3473fa0aeccdf2771f9a11da9896ce8c64dbb783",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 220,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L215-L220"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 57,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L53-L57"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 430,
+          "line_start": 429,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L429-L430"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6fdae164bd86489f2dc647b6cc66f578fd26bddfbd43654e5d656e22f6f6a723",
+        "slc_bf25715da738919bc7e2560fa1d6326003749887d8ec8e31aaa10ce1b7b7c15b",
+        "slc_e1e33eae6615547c0a7113ff1f9258286b46e27e48345b9c25332773d961ef7a"
+      ],
+      "text": "The shared task graph is a markdown file at `<workspace>/.hive/tasks.md` that users can inspect or edit outside the app, and the editor handles external-file conflicts with Reload/Keep Local options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f30d7325dee632d4e90818049be47911d2f936c813f7323da9584967dc6e44d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 318,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L302-L318"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 207,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L191-L207"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 35,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L28-L35"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 260,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L242-L260"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ca0a3adea50d2aff534494fa7e75235bcfd817a27bb6b4bf4e6dff550afe8d5",
+        "slc_7bd8e00e97cf112d019bc674e7f9b1e94dafa9918d8303e0ae2bd8dfab5b77dc",
+        "slc_988466ea6d491b1fe93d7522163ad78410ceb3d3b319b274e44085819951e852",
+        "slc_f1fd372fffd5545185ec551eb4db31a19568241b72216f43e5d085066d56928f"
+      ],
+      "text": "Hive is local-first: the runtime binds to 127.0.0.1, stores SQLite metadata under ~/.config/hive (or %APPDATA%\\hive on Windows, or $HIVE_DATA_DIR), and the browser UI talks to it over HTTP and WebSocket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f70a5580df06360455211a27adfac197f86b2a2ffcf00c6dfe1d0903d23ea8ba",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 318,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L302-L318"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 263,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L262-L263"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 235,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L224-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ca0a3adea50d2aff534494fa7e75235bcfd817a27bb6b4bf4e6dff550afe8d5",
+        "slc_aa7de37107f9c80a10698e86101e93b3a945012d7baa99736680f3d7c54fa68b",
+        "slc_f72056b5f879415a51ab9dbe11c7feb742d67372868cfeb02917562dfc104d45"
+      ],
+      "text": "Built-in agent presets intentionally launch CLIs in bypass/non-interactive modes (e.g. `--dangerously-skip-permissions` for Claude Code, `--yolo` for Gemini), so workers can run arbitrary shell commands in the workspace; Hive provides no sandboxing or multi-user auth."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eae4861820d35373f3b20253dd2983e74635ee9065b4dd4534f56527111d061b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 260,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L242-L260"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 180,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L177-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f1fd372fffd5545185ec551eb4db31a19568241b72216f43e5d085066d56928f",
+        "slc_f5f70ad95b80f27b2531dd5c1eb8014263de2ada282e2fac5e8ef3a826edc69b"
+      ],
+      "text": "Auto-staff (experimental, on by default) lets the Orchestrator `team spawn` temporary coders, testers, and reviewers sized to the task, and Hive dismisses those ephemeral workers once their dispatch reports back."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_275ef0ca4ddc880471f825963dee1fe42aa3e6acd15dfefc46f37d6f765712e6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 187,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L182-L187"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 260,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L242-L260"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ff23993eaf5758d41ef93b478f2b9c10ddc20bc47d027a5c1a55102f96aefa0",
+        "slc_f1fd372fffd5545185ec551eb4db31a19568241b72216f43e5d085066d56928f"
+      ],
+      "text": "An experimental Workflows feature (off by default) lets the Orchestrator author and run multi-stage multi-agent workflows, with a Workflows panel showing runs, phase results, logs, schedules, and stop controls, plus a CLI policy for workflow-created agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7741b9c5651ebf26cf106aff78086a89cea6d7e17c1efc939f9ba1f46106bae3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "4813f2e1def2f06dc36b6d7e307c818b27cf51ca",
+          "line_end": 57,
+          "line_start": 35,
+          "path": "CHANGELOG.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/CHANGELOG.md#L35-L57"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 271,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L267-L271"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 284,
+          "line_start": 275,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L275-L284"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e0801fc28865861d5b95d7206153bab117af7b3f1ca56846a7b539ba1e91c08",
+        "slc_ed9ecfbc0c3e89583207318799c3c3e0940f18fb77f50b2c810d936ab00d341e",
+        "slc_f85e5214c352e30e1491c06168ae7fa6eaaa6c51c449d824009799100fa6fe36"
+      ],
+      "text": "Optional Remote access (off by default) pairs a phone to the desktop via a desktop-confirmed pairing flow and relays through an end-to-end encrypted gateway; paired devices have the same authority as the local browser and can be revoked, and CLI subcommands like `hive remote login/status/devices/revoke` manage it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_815b740adffdb023271ef1961cb39cee10173648245cdda3f4760f496689b819",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 296,
+          "line_start": 294,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L294-L296"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 370,
+          "line_start": 368,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L368-L370"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L106-L108"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 238,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L237-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_307f6403befbbbd661fa09fed70106fac637a4138c3f59f96da9633a037ff145",
+        "slc_4161a994a45a54b48c717bf632106e831b74295089861244383a2808eb612091",
+        "slc_7abb5f6f80b92e138a096f288230561aabeb2437d6376142d5ec4a591f296267",
+        "slc_824af8b5c909d49c95228528c94db1f4d6f4b098a0e0f2ff15f6c1d6f0f47488"
+      ],
+      "text": "Hive requires Node.js 22 or newer and depends on native packages node-pty and better-sqlite3, so native build tooling may be needed when prebuilt binaries are unavailable; agent CLIs must be installed and authenticated by the user, not by Hive."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06eeb9b112005d4f77656715d8e43968151aff2864ba5ded782ac5967ebb0b1b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 318,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L302-L318"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 263,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L262-L263"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ca0a3adea50d2aff534494fa7e75235bcfd817a27bb6b4bf4e6dff550afe8d5",
+        "slc_aa7de37107f9c80a10698e86101e93b3a945012d7baa99736680f3d7c54fa68b"
+      ],
+      "text": "Hive does not provide sandboxing, multi-user authentication, or any bundled agent model; it coordinates CLIs the user already runs locally, and same-machine processes reaching the local port are treated as trusted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_370da2c42b4f1bb160c4f4bb855465d7a231e71a15f6b57e211124eae72a6c9a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 446,
+          "line_start": 445,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L445-L446"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 454,
+          "line_start": 450,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L450-L454"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 443,
+          "line_start": 440,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L440-L443"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18ae7fa4ed5d724aabeec63ed30f814cff5811d5b48e1809aeeddf250bdc3ac8",
+        "slc_ac75df6905eab78d2cb778a4f7f72d6cbb40a91ad3e63c1c952cf40d507adc60",
+        "slc_b30229368f5d3531fa1b264a1d333ee7c6faef7429c4d726b8ec696df2b29d96"
+      ],
+      "text": "Repository development practice: contributors develop with pnpm (`pnpm install`, `pnpm dev`, `pnpm check`, `pnpm build`, `pnpm test`); dev mode runs the runtime on port 4010 with Vite on 5180 proxying API and WebSocket traffic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_545826e3e56ae737a858c1c5741e46b7508d82fb8aa20bd7338db4fda4c517f5",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L15-L15"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L61-L61"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L83-L83"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L43-L44"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72332034750644b56d56b2eae6e76e18cf7c6b9d39e1481c4c03e2194a01bdf2",
+        "slc_9d77ff5d3ba52a30c936b2296cf57414c514e6fd5fdd56161472c36679b30e72",
+        "slc_a6097e397eeb9025a0a23a1c02824fec961ed26e52941617d8cd5e106c70206b",
+        "slc_aabf8eb698a32c0ddf47b7c43eb4a0534677b15e054ff89e7709dab23bac1927",
+        "slc_c47cf771dc05e7ccdb4518f5c3cf574610d05a23ddba518c6e9581456838196c"
+      ],
+      "text": "Hive targets users who already run CLI agents and want coordination for multi-agent work such as implement/review splits, parallel bug hunts, and research/draft/fact-check pipelines, without juggling terminal windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b856361d8448c23b5ed4eb44f2b868a2f4875fc74461780e281f23fc28adae3c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L96-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e7a43b4e0a6dad58f14ff570af6cf1b009952145f8b2ab2d815914d0ac2298bb"
+      ],
+      "text": "A fully client-side demo mode (fake orchestrator plus two workers with prerecorded scrollback and a prefilled task list) is available from the first-run wizard without a server or any real CLI agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14a7556807ef01215f295139cef32b37e1adfaf16290c5fcf174b9d2add04045",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 151,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L146-L151"
+        },
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "4813f2e1def2f06dc36b6d7e307c818b27cf51ca",
+          "line_end": 243,
+          "line_start": 174,
+          "path": "CHANGELOG.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/CHANGELOG.md#L174-L243"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3bb6d1d8d208f6e2f153278da298a30b4225cb236d0068767943eeb33f46c99f",
+        "slc_bdedc4e10f61c897dbc583043d087674c9a3aba595072827a8c9d846acaeaaed"
+      ],
+      "text": "The web shell is installable as a PWA in Chromium browsers via the omnibox install icon, with a service worker that caches the SPA shell and assets but never intercepts /api/*, /ws/*, or non-GET requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95c31f7f9e6ac56d3d42db7a1bdf29808e32383b1e78f700e9e59904b6f7940d",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+          "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+          "line_end": 454,
+          "line_start": 450,
+          "path": "README.md",
+          "repository": "tt-a1i/hive",
+          "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md#L450-L454"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ac75df6905eab78d2cb778a4f7f72d6cbb40a91ad3e63c1c952cf40d507adc60"
+      ],
+      "text": "No evidence in the provided slices describes any benchmark or success-rate evaluation of the agent system; the only test-related material is the repository's own `pnpm test` check, so agent performance evaluation appears undocumented here."
+    }
+  ],
+  "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 501,
+        "path": "README.md",
+        "size": 21037
+      },
+      {
+        "lines": 76,
+        "path": "AGENTS.md",
+        "size": 2350
+      },
+      {
+        "lines": 543,
+        "path": "CHANGELOG.md",
+        "size": 29051
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1699
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2351
+      },
+      {
+        "path": "README.en.md",
+        "reason": "file-budget",
+        "size": 181
+      },
+      {
+        "path": "README.zh.md",
+        "reason": "file-budget",
+        "size": 20095
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 3334
+      },
+      {
+        "path": "TRADEMARK.md",
+        "reason": "file-budget",
+        "size": 1692
+      }
+    ],
+    "omitted_count": 6,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 848,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 6,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_34652f69faa05f0a8662fa0114371116",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tt-a1i/hive/1096789b17cc8215869616d21aa6e76cd139eb19/70e013b173adfc67/manifest.json",
+  "package_id": "pkg_062dc6fdb809fdb42fe0df53a2fa33480b96ef110680e6cd5e9b31bdf80580f8",
+  "repo": "tt-a1i/hive",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "cf83573bcdeb0900ddb26d35a69db98bcc8cd89c80dec1953ec16261af49c3eb",
+  "snapshot_id": "70e013b173adfc67",
+  "sources": [
+    {
+      "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+      "git_sha": "94598a67cea33fd2b5aefd9eae1e306b927d68e3",
+      "lines": 76,
+      "path": "AGENTS.md",
+      "repository": "tt-a1i/hive",
+      "sha256": "2f31936999d7a719d37c11c79216fcd131f69eb0b4b8328aaeae9b35dc9fbbc4",
+      "source_id": "src_05f40ac1da705e819c62e058c3c0dcf7",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/AGENTS.md"
+    },
+    {
+      "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+      "git_sha": "4813f2e1def2f06dc36b6d7e307c818b27cf51ca",
+      "lines": 543,
+      "path": "CHANGELOG.md",
+      "repository": "tt-a1i/hive",
+      "sha256": "60aaa8fda14f7eb912cd1bdc85433e7b1ff95047391d6648953f4457597c553f",
+      "source_id": "src_5c2ec21c3c925da6b24593d4ae2dc6f1",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/CHANGELOG.md"
+    },
+    {
+      "commit": "1096789b17cc8215869616d21aa6e76cd139eb19",
+      "git_sha": "5192a14df794e329f8cc4cfdde065ce7722b3247",
+      "lines": 501,
+      "path": "README.md",
+      "repository": "tt-a1i/hive",
+      "sha256": "b40bf6508110dd07d99b9a4ab1f2b97acd8a373e1435575e1d14081388aa892f",
+      "source_id": "src_c3192e1b0d6b56b18d51856b0b18c0bd",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/tt-a1i/hive/blob/1096789b17cc8215869616d21aa6e76cd139eb19/README.md"
+    }
+  ],
+  "summary": "Hive runs CLI agents (Claude Code, Codex, Gemini, OpenCode, Qwen, and others) as real PTY processes on the local machine, with a browser workbench where an Orchestrator plans and delegates to workers. The Orchestrator is itself a real agent CLI process, not a scripted manager; it dispatches tasks with `team send <worker> \"<task>\"` and workers report back with `team report`. Evidence coverage: 136 of 173 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

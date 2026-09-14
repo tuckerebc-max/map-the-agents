@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1297a97530c4f35c3178146d49cc1b374257d48a5ea11d2d886ba5c376c3e0c7
+- clm_409507ef3f7ca6b46b71f5ed4e9e3c5c7333d920ca4d1320808c001a5f891280
+- clm_43256bd1a511301b6a167572c49d2680c08d862ae148eefa9f82cadc45baf3cb
+- clm_587de6c3d9a6220bb7943b1e9cef4eedaa2c3ed6e55dfb79e4e2a194e351cd08
+- clm_9b6a21dd19cdb3fead9abc5e06971ef8f3b928c2c700df100d6963c93b6cacb3
+- clm_b55694aa9292bc4c85687c1de0479fd64a16219c3438dc60b97042fc161ddad9
+- clm_e1d167e97b4261f5fd746ccf0d8cc3e2bc855d7e12cf51aeceda7541a5f716de
+- clm_f995f17f10bbd53aefb4c1c0d1802777100d5a65724189639c80407a5714ffa0
+- clm_f9bdc52c9d99326662f9e02578e55ad0aaefc40e03d72313f4a7159dace34a87
+maturity: draft
+page_id: pg_d85353544bf55960b312eab782bbdab2
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: weiyangzen/mbti-coding-agents
+updated_at: '2026-09-14T04:31:22Z'
+---
+
+# weiyangzen/mbti-coding-agents
+
+<!-- rcw:begin owner=entity:ent_bbe5227424df5244a6a80a301fd065b7 block=evidence -->
+- weiyangzen/mbti-coding-agents is mentioned in this evidence. [@claim:clm_1297a97530c4f35c3178146d49cc1b374257d48a5ea11d2d886ba5c376c3e0c7] [@claim:clm_409507ef3f7ca6b46b71f5ed4e9e3c5c7333d920ca4d1320808c001a5f891280] [@claim:clm_43256bd1a511301b6a167572c49d2680c08d862ae148eefa9f82cadc45baf3cb] [@claim:clm_587de6c3d9a6220bb7943b1e9cef4eedaa2c3ed6e55dfb79e4e2a194e351cd08] [@claim:clm_9b6a21dd19cdb3fead9abc5e06971ef8f3b928c2c700df100d6963c93b6cacb3] [@claim:clm_b55694aa9292bc4c85687c1de0479fd64a16219c3438dc60b97042fc161ddad9] [@claim:clm_e1d167e97b4261f5fd746ccf0d8cc3e2bc855d7e12cf51aeceda7541a5f716de] [@claim:clm_f995f17f10bbd53aefb4c1c0d1802777100d5a65724189639c80407a5714ffa0] [@claim:clm_f9bdc52c9d99326662f9e02578e55ad0aaefc40e03d72313f4a7159dace34a87]
+<!-- rcw:end owner=entity:ent_bbe5227424df5244a6a80a301fd065b7 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,337 @@
+# 🧬 CodeDNA — Quick Start
+
+Get CodeDNA working in your project in under 2 minutes. Pick your AI tool below.
+
+> **💡 Less prompt engineering needed.** CodeDNA annotations help AI agents follow the `used_by:` graph to find related files that may need changes. You describe the problem — the annotations provide architectural context.
+
+---
+
+## CodeDNA + your tool's native memory
+
+CodeDNA does **not** replace your tool's native memory — it is additive.
+
+| Layer | Lives in | Who sees it |
+|---|---|---|
+| **CodeDNA** (`.codedna` + annotations) | git repo | every agent, every tool, every machine |
+| **Native tool memory** | local / tool cloud | that tool only |
+
+Every agentic tool has its own persistent memory (Claude auto-memory, Cursor memory, Windsurf memories, Devin session memory, …). CodeDNA is the layer underneath that all of them share. The two are complementary:
+
+- **CodeDNA** → architectural truth that travels with the code across clones, tools, and team members
+- **Native memory** → user preferences, feedback, and tool-specific context that belongs outside the repo
+
+Use both. At session start, read `.codedna` first, then your tool's native memory.
+
+---
+
+## Step 0 — Quick Install (CLI)
+
+Run this from the root of your project:
+
+```bash
+pipx install git+https://github.com/Larens94/codedna.git
+codedna install --path . --tools codex --no-wiki-sync
+codedna init . --no-llm
+codedna doctor --path .
+```
+
+Replace `codex` with the tool you use, or pass several values for a mixed team:
+
+```bash
+codedna install --path . --tools claude codex opencode --no-wiki-sync
+```
+
+Supported values: `claude` · `codex` · `aider` · `cursor` · `copilot` · `cline` · `windsurf` · `opencode` · `agents` · `all`.
+
+The installer adds the tool's native instructions, the available enforcement hooks or plugin, the shared Git pre-commit gate, and `.codedna`. Existing instruction files and Git hooks are preserved.
+
+The older curl installer remains available as a prompt-only fallback when the CLI cannot be installed:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/Larens94/codedna/main/integrations/install.sh) codex
+```
+
+> Use `--tools all` only when the repository is genuinely edited with every supported tool.
+
+---
+
+## Modes
+
+After installing, add `mode:` to your `.codedna` file:
+
+```yaml
+mode: semi    # human | semi | agent
+```
+
+All modes include L1 headers + L2 function Rules: + `rules:` + `agent:`.
+
+| Mode | `message:` | Semantic naming | For whom |
+|---|---|---|---|
+| **human** | ❌ | ❌ | Human teams — full annotations, no inter-agent chat |
+| **semi** | ✅ | ❌ | Human + AI together — agents communicate via `message:` (default) |
+| **agent** | ✅ | ✅ | AI-first codebases — full protocol + semantic variable naming |
+
+---
+
+## Step 1 — Install for your AI tool
+
+### Antigravity
+
+The one-line installer (`agents` option) writes:
+
+- `AGENTS.md` at repo root — always-on rules (Antigravity v1.20.3+, also read by OpenCode, Cursor, Claude Code)
+- `.agent/workflows/codedna.md` — workflow triggered with `/codedna` in agent chat
+
+Note: Antigravity's directory is `.agent/` (singular). See the [official docs](https://antigravity.google/docs/rules-workflows).
+
+Manual fallback — paste the following in `~/.gemini/GEMINI.md`, `<project>/AGENTS.md`, or `<project>/.agent/rules/codedna.md`:
+
+```
+You follow the CodeDNA v0.9 Annotation Standard (github.com/Larens94/codedna).
+
+ON READ: parse the CodeDNA module header first (first 8–12 lines). Check `rules:` before
+writing. Check `used_by:` to understand who depends on this file. Read `Rules:` in
+function docstrings before writing logic in that function.
+
+ON WRITE: every new source file must start with a CodeDNA header in its native comment syntax.
+For Python, use the canonical module docstring:
+  """filename.py — <purpose ≤15 words>.
+  exports: function(arg) -> type
+  used_by: consumer.py → function
+  rules:   <hard constraint never to violate>
+  """
+  For critical functions, add a docstring with Rules:.
+
+ON EDIT: first re-read `rules:` and `Rules:`. Check `used_by:` for affected callers.
+
+EXPORTS are public contracts — never rename without explicit instruction and updating
+all `used_by` callers.
+```
+
+---
+
+### Cursor
+
+Create `.cursorrules` at the root of your project:
+
+```
+# CodeDNA v0.9 — cursor rules
+
+ON READ
+- Parse the CodeDNA module header (first 8–12 lines) before reading code.
+- Respect `rules:` as hard constraints.
+- Check `used_by:` to understand who depends on this file.
+- Read `Rules:` in function docstrings before writing logic.
+
+ON WRITE
+- Begin every new source file with a native CodeDNA header (exports/used_by/rules).
+- For critical functions, add docstring with Rules:.
+- Use semantic naming: list_dict_users_from_db = get_users()
+
+ON EDIT
+- First re-read `rules:` and any `Rules:` in function docstrings.
+- Check `used_by:` targets after editing (especially `[cascade]`-tagged ones).
+- If you discover a constraint, add a Rules: annotation for the next agent.
+
+NEVER rename `exports:` symbols without explicit instruction and updating all `used_by` callers.
+```
+
+Or copy the full version: [`integrations/.cursorrules`](./integrations/.cursorrules)
+
+---
+
+### Claude Code
+
+Create `CLAUDE.md` at the root of your project:
+
+```markdown
+# CodeDNA v0.9
+
+This project follows the CodeDNA Annotation Standard (github.com/Larens94/codedna).
+
+## On every READ
+1. Parse the module docstring (first 8–12 lines) before reading code
+2. Respect `rules:` as absolute constraints
+3. Check `used_by:` to understand impact of changes
+4. Read `Rules:` in function docstrings before writing logic there
+
+## On every WRITE (new file)
+1. Begin with a module docstring: exports / used_by / rules
+2. For critical functions: add docstring with Rules:
+3. Use semantic naming: list_dict_users_from_db = get_users()
+
+## On every EDIT
+1. Re-read `rules:` and `Rules:` before writing any logic
+2. Check `used_by:` targets after changes (especially `[cascade]`-tagged ones)
+3. Never rename `exports:` without updating all `used_by` callers
+4. If you discover a constraint, add a Rules: annotation
+```
+
+Or copy the full version: [`integrations/CLAUDE.md`](./integrations/CLAUDE.md)
+
+---
+
+### GitHub Copilot
+
+Create `.github/copilot-instructions.md`:
+
+```markdown
+# CodeDNA v0.9 Instructions
+
+This repository uses the CodeDNA Annotation Standard.
+
+When reading files: parse the module docstring first (first 8–12 lines).
+Respect `rules:`. Check `used_by:` for impact. Read `Rules:` in function docstrings.
+
+When writing new files: start with module docstring (exports/used_by/rules).
+For critical functions: add docstring with Rules:.
+
+When editing: re-read `rules:` first. Check `used_by:` targets.
+Never rename `exports:` without updating `used_by` callers.
+```
+
+Or copy the full version: [`integrations/copilot-instructions.md`](./integrations/copilot-instructions.md)
+
+---
+
+### Windsurf / Codeium
+
+Create `.windsurfrules` at the root of your project (same format as Cursor):
+
+```
+# CodeDNA v0.9
+
+ON READ: parse module docstring first. Respect `rules:`. Check `used_by:` for impact.
+ON WRITE: begin new files with module docstring. Add Rules: to critical functions. Use semantic naming.
+ON EDIT: re-read `rules:` first. Check `used_by:` targets. Never rename `exports:`.
+```
+
+---
+
+### Any other LLM (ChatGPT, Gemini, etc.)
+
+Paste this as system prompt or at the start of your conversation:
+
+```
+You follow the CodeDNA v0.9 Annotation Standard.
+
+Rules:
+1. READ: always parse the module docstring (first 8–12 lines). Respect `rules:` hard constraints.
+2. IMPACT: check `used_by:` to understand which files depend on the one you're editing.
+3. WRITE: new files start with module docstring (exports/used_by/rules).
+   Critical functions: add docstring with Rules:.
+4. EDIT: re-read `rules:` first. Check `used_by:` targets (especially `[cascade]`-tagged ones).
+5. NAMING: list_dict_users_from_db = get_users(), int_cents_price_from_req = ...
+6. CONTRACTS: never rename `exports:` without updating all `used_by` callers.
+7. KNOWLEDGE: if you discover a constraint, add a Rules: annotation for the next agent.
+
+Full spec: github.com/Larens94/codedna/blob/main/SPEC.md
+```
+
+---
+
+## Step 2 — Annotate your first file
+
+Ask your AI tool:
+
+> *"Annotate this file following the CodeDNA v0.9 standard (github.com/Larens94/codedna). Add the module docstring header with exports, used_by, and rules."*
+
+Or annotate an entire codebase automatically with the CLI:
+
+```bash
+pipx install git+https://github.com/Larens94/codedna.git
+codedna init . --no-llm  # free structural pass; auto-detects all supported languages
+codedna update .         # incremental — only unannotated files
+codedna check .          # coverage report, no changes
+codedna verify .         # structural drift report after edits
+```
+
+No API key is required for `--no-llm`. To generate semantic `rules:` with a model, pass `--model <provider/model>` and configure that provider separately.
+
+### Optional: wiki layer *(v0.9 experimental)*
+
+```bash
+codedna wiki bootstrap ./   # per-file Obsidian vault under docs/wiki/
+codedna wiki sync ./        # one narrative docs/codedna-wiki.md (project sky-view)
+```
+
+The vault renders `used_by:` + `related:` as [[wikilinks]] — open `docs/wiki/` in [Obsidian](https://obsidian.md) to browse the graph. The narrative wiki is a 7-section overview (identity, topology, workflows, hotspots, refresh protocol). Wire `codedna wiki sync` to a post-commit hook to keep it current.
+
+---
+
+## The Module Docstring (reference)
+
+```python
+"""filename.py — <≤15 words describing what this file does>.
+
+exports: public_function(arg) -> return_type
+used_by: consumer_file.py → consumer_function
+related: sibling.py — shares same pattern (no import)
+wiki:    docs/wiki/filename.md
+rules:   <hard constraint agents must never violate>
+"""
+```
+
+| Field | Required | Rule |
+|---|---|---|
+| First line | ✅ | `filename.py — <purpose ≤15 words>` |
+| `exports:` | ✅ | Public API with return type |
+| `used_by:` | ✅ | Who calls this file's exports |
+| `related:` | ⬜ | Semantic siblings — same logic, no import (v0.9) |
+| `wiki:` | ⬜ | Opt-in pointer to a curated markdown under `docs/wiki/` (v0.9 experimental) |
+| `rules:` | ✅ | Hard constraints — the inter-agent communication channel |
+
+---
+
+## Function-Level Rules (reference)
+
+Add `Rules:` to functions with non-obvious domain constraints:
+
+```python
+def my_function(arg: type) -> return_type:
+    """Short description.
+
+    Rules:   MUST cap value before returning; exceed = compliance bug.
+    """
+```
+
+`Rules:` grow organically — agents add them as they discover constraints during their work.
+
+---
+
+## Semantic Naming (reference)
+
+Format: `<type>_<shape>_<domain>_<origin>`
+
+| Type prefix | Means |
+|---|---|
+| `int_` | integer |
+| `str_` | string |
+| `list_` | list |
+| `dict_` | dict |
+| `list_dict_` | list of dicts |
+| `bool_` | boolean |
+
+Origin suffixes: `_from_db`, `_from_req`, `_from_env`, `_from_cache`
+
+```python
+# Examples
+int_cents_price_from_req     = request.json["price"]
+list_dict_orders_from_db     = get_active_orders()
+str_email_user_from_session  = session["email"]
+bool_is_admin_from_db        = user["role"] == "admin"
+```
+
+---
+
+## Full Spec
+
+→ [`SPEC.md`](./SPEC.md)
+
+## Scientific Paper
+
+→ [`paper/codedna_paper_v0.9.html`](./paper/codedna_paper_v0.9.html) (v0.9, April 2026 — English + [Italian](./paper/codedna_paper_v0.9_IT.html)) · [v0.7 on Zenodo](https://doi.org/10.5281/zenodo.19158336)
+
+## Benchmark Code
+
+→ [`benchmark_agent/`](./benchmark_agent/)

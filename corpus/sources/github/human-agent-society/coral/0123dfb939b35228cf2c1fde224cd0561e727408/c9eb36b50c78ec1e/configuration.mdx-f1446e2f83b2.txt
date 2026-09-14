@@ -1,0 +1,254 @@
+---
+title: Configuration
+description: Full reference for task.yaml configuration.
+---
+
+
+Every CORAL task is defined by a `task.yaml` file. This page documents all available options.
+
+## Full example
+
+```yaml
+task:
+  name: "my-task"
+  description: "Optimize solution.py to maximize accuracy."
+  tips: "numpy and scipy are available. Timeout is 300s."
+
+grader:
+  entrypoint: "my_task_grader.grader:Grader"
+  setup:
+    - "uv pip install -e ./grader"
+  timeout: 300
+  direction: maximize
+  private:
+    - "answers/test_data.csv"
+  args:
+    program_file: "solution.py"
+
+agents:
+  count: 2
+  runtime: claude_code
+  model: claude-sonnet-4-6
+  max_turns: 200
+  timeout: 3600
+  research: true
+  heartbeat:
+    - name: reflect
+      every: 1
+    - name: consolidate
+      every: 10
+      global: true
+
+islands:
+  count: 1
+  migration:
+    enabled: true
+    every: 50
+    rank_window: 20
+    min_evals: 3
+    dest_weighting: score
+    max_per_cycle: 2
+    notify_island: true
+
+sharing:
+  attempts: true
+  notes: true
+  skills: true
+
+workspace:
+  results_dir: "./results"
+  repo_path: "."
+```
+
+## `preset` field
+
+A top-level `preset:` pulls in a reusable bundle of config defaults so tasks
+that share a setup (runtime, gateway, session, grader install step) don't
+repeat the same boilerplate.
+
+```yaml
+preset: docker-opencode      # built-in preset name
+# preset: ./shared.yaml      # — or — a local YAML file, resolved next to task.yaml
+
+task:
+  name: "Circle Packing"
+  description: "..."
+
+grader:
+  entrypoint: "circle_packing_grader.grader:Grader"   # task-specific keys still go here
+```
+
+The preset forms a layer between the schema defaults and the task's own keys:
+
+```
+schema defaults  <  preset  <  task.yaml  <  CLI dotlist overrides
+```
+
+So **anything the task.yaml sets explicitly wins** over the preset, and CLI
+`key=value` overrides still win over everything.
+
+- A **bare name** (no `/` and no `.yaml`/`.yml` suffix) refers to a built-in
+  preset shipped with CORAL under `coral/template/presets/`.
+- Anything else is a **path**: absolute, or relative to the directory holding
+  your `task.yaml`.
+- **Stacking is not supported** — a preset file may not itself declare a
+  `preset:` key.
+
+The resolved run's `config.yaml` is fully expanded (the `preset:` reference is
+flattened away), so `coral resume` and the grader daemon never depend on the
+preset file still being present.
+
+### Built-in presets
+
+| Name | What it sets |
+|------|--------------|
+| `local-claude` | 4× `claude_code` / `opus` agents, `run.session: tmux`, `grader.setup` install step |
+| `docker-opencode` | 1× `opencode` agent through the LiteLLM gateway, `run.session: docker`, `grader.setup` install step |
+
+`examples/circle_packing/task.yaml` uses `preset: docker-opencode` as a
+worked example.
+
+## `task` section
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `name` | string | *required* | Task identifier |
+| `description` | string | *required* | What agents should do — included in CORAL.md |
+| `tips` | string | `""` | Additional hints shown to agents |
+
+## `grader` section
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `entrypoint` | string | *required* | Setuptools-style `module.path:ClassName` resolved inside the grader venv. |
+| `setup` | list[string] | `[]` | Shell commands run inside `.coral/private/grader_venv/` at `coral start` / `coral validate` time (typically `uv pip install -e ./grader`). |
+| `timeout` | int | `300` | Eval timeout in seconds (0 = no limit) |
+| `direction` | string | `"maximize"` | `"maximize"` or `"minimize"` — which direction is better |
+| `private` | list[string] | `[]` | Files copied to `.coral/private/` (hidden from agents) |
+| `args` | dict | `{}` | Extra arguments passed to the grader (accessible as `self.args`) |
+
+The legacy `grader.type` and `grader.module` fields have been removed.
+Tasks that still set them fail to load with a migration error pointing at
+`grader.entrypoint`.
+
+### Loading your grader
+
+CORAL bootstraps a venv at `.coral/private/grader_venv/`, runs every
+command in `grader.setup` inside it, and spawns a worker subprocess from
+that venv whenever an attempt needs grading.
+
+`grader.entrypoint` is required — leaving it empty is an error at load
+time. See [Writing a Custom Grader](/docs/guides/custom-grader) for the
+packaged-grader layout.
+
+## `agents` section
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `count` | int | `1` | Number of agents to spawn |
+| `binding` | string | – | Name of a user-level [agent binding](/docs/guides/agent-bindings) to expand into `runtime`/`model`/`runtime_options`. Explicit fields here override the binding. |
+| `runtime` | string | `"claude_code"` | Agent runtime: `claude_code`, `codex`, `dsh`, `opencode`, `cursor_agent`, `kiro`, or `pi` |
+| `model` | string | `"sonnet"` | Model to use (e.g. `opus`, `sonnet`, `haiku`, or full model ID) |
+| `max_turns` | int | `200` | Maximum conversation turns per agent |
+| `timeout` | int | `3600` | Agent session timeout in seconds |
+| `research` | bool | `true` | Enable web search in agent workflow |
+| `heartbeat` | list | see below | Periodic actions triggered during eval loop |
+
+### Heartbeat actions
+
+Heartbeat actions run at regular intervals based on eval count:
+
+```yaml
+heartbeat:
+  - name: reflect        # Built-in: agent reviews progress
+    every: 1             # After every eval
+  - name: consolidate    # Built-in: agents share knowledge
+    every: 10
+    global: true         # Uses global eval count (all agents combined)
+```
+
+You can also define custom heartbeat actions with a prompt:
+
+```bash
+coral heartbeat set review --every 5 --prompt "Review your approach and consider alternatives."
+```
+
+## `islands` section
+
+Multi-island mode partitions a run into isolated agent groups. Agents on the
+same island share attempts, notes, skills, heartbeat state, roles, and logs.
+Agents on different islands evolve independently until migration moves an
+agent between islands.
+
+```yaml
+agents:
+  count: 4
+
+islands:
+  count: 2
+  migration:
+    enabled: true
+    every: 50
+    rank_window: 20
+    min_evals: 3
+    dest_weighting: score
+    max_per_cycle: 2
+    notify_island: true
+```
+
+You can also enable it from the command line:
+
+```bash
+coral start -c task.yaml agents.count=4 islands.count=2
+```
+
+`islands.count` defaults to `1`, which preserves the normal single-island
+layout. When `islands.count > 1`, the total number of agents must be at least
+the number of islands. With `agents.assignments`, the total agent count is the
+sum of all assignment counts.
+
+CORAL distributes agents round-robin across islands and rewrites IDs with a
+birth-island prefix, for example `0-agent-1`, `0-agent-2`, `1-agent-1`,
+`1-agent-2`. The prefix records where the agent started; after migration, the
+agent may live on a different island.
+
+From inside an agent worktree, CLI commands such as `coral status`,
+`coral log`, `coral notes`, `coral skills`, `coral wait`, `coral checkout`,
+and `coral heartbeat` are scoped to that agent's current island. From outside
+an agent worktree, read commands aggregate across islands.
+
+### Migration options
+
+Migration is ignored when `islands.count == 1`.
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `count` | int | `1` | Number of isolated islands. Must be `<=` total agents. |
+| `migration.enabled` | bool | `true` | Enable agent migration between islands. |
+| `migration.every` | int | `50` | Run a migration cycle every N finalized real evals. |
+| `migration.rank_window` | int | `20` | Rank candidate agents by their best score over the last N real evals. Must be `<= every`. |
+| `migration.min_evals` | int | `3` | Minimum real evals an agent needs before it can migrate. |
+| `migration.dest_weighting` | string | `"score"` | Destination policy: `score`, `uniform`, or `round_robin`. |
+| `migration.max_per_cycle` | int | `2` | Maximum migrations to apply in one cycle. |
+| `migration.notify_island` | bool | `true` | Drop an arrival note on the destination island when an agent migrates. |
+
+When an agent migrates, its role, per-agent heartbeat config, attempts, and
+eval logs move with it. Notes and skills stay on the source island as
+island-local knowledge.
+
+## `sharing` section
+
+Controls what shared state is enabled in `.coral/public/`:
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `attempts` | bool | `true` | Share attempt scores between agents |
+| `notes` | bool | `true` | Enable shared notes |
+| `skills` | bool | `true` | Enable shared skills |
+
+## `workspace` section
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `results_dir` | string | `"./results"` | Where to store run results |
+| `repo_path` | string | `"."` | Path to the git repository root |

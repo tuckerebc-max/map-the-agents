@@ -1,0 +1,1046 @@
+{
+  "applied_operation_id": "op_f30e69f6ea4a4f288e91d1c09762bf24",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba17d2a74b1da070ec8360db1bc4fd0f4148d9f60c613f9e82a33e72cafbf119",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+          "line_end": 17,
+          "line_start": 11,
+          "path": "docs/docs/misc/architecture.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx#L11-L17"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/docs/misc/architecture.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8aea7bdd1bc9d3bd7d3dbf278d36e87989f422dd15391e5bb40fc9a42740cd24",
+        "slc_bb5ecbf475a0fd4ce99cb9fdd068fe5950fb5557202f78e570510534e459ab3d"
+      ],
+      "text": "Sourcebot ships as a single Docker container running multiple services under supervisord, including a Next.js web server, a Node.js backend worker, Zoekt, Postgres, and a Redis job queue used with BullMQ."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_635fbf9564f50329643ec3cd0a2e82da528441ed8ad4ab924b9d327b263a0a5e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+          "line_end": 17,
+          "line_start": 11,
+          "path": "docs/docs/misc/architecture.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx#L11-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8aea7bdd1bc9d3bd7d3dbf278d36e87989f422dd15391e5bb40fc9a42740cd24"
+      ],
+      "text": "The backend worker incrementally syncs with code hosts such as GitHub and GitLab and asynchronously indexes configured repositories; Zoekt is the trigram indexing search engine powering Sourcebot."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1e152ff8b87012459d303f8a81c321258a9c8460fcba834bf2c892fe78477d9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+          "line_end": 17,
+          "line_start": 11,
+          "path": "docs/docs/misc/architecture.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx#L11-L17"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/docs/misc/architecture.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8aea7bdd1bc9d3bd7d3dbf278d36e87989f422dd15391e5bb40fc9a42740cd24",
+        "slc_e7ccd58dad1866fb6f5c439c9aba868e41220a73aca6f0fbd007a3ad6574e1be"
+      ],
+      "text": "A `.sourcebot/` file-system cache stores persistent data, and managed Redis/Postgres can run outside the container via the REDIS_URL and DATABASE_URL environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68698d2f00d264be4b7298b62bd4d4005fba6438a841674a17cb9afa965c8fc3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "50d5575f974bc54b5e0aa80da82b51a87d2743c0",
+          "line_end": 98,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/README.md#L82-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f58dd0398f0fd9f7975eb6cb47d35432d1ee4396547e2a6ea6d293f3d56cd74"
+      ],
+      "text": "Sourcebot is configured through a JSON config file (with a schema and comment support) that defines connections, which repositories to index, language model providers, and auth providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93320c74f21cb81d44c89b1cb83313b63b7278409e5c59b429ee5bd76705c92b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "50d5575f974bc54b5e0aa80da82b51a87d2743c0",
+          "line_end": 103,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/README.md#L100-L103"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "50d5575f974bc54b5e0aa80da82b51a87d2743c0",
+          "line_end": 106,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/README.md#L105-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6151cb25b9f64e8b2e1f4879641ed2cb3281dc65f6d5153b6eba38f27225dc7c",
+        "slc_de36895c269f6c8eebfcc36bba2cf8efc903c87fc893b09764b328c99d439be9"
+      ],
+      "text": "After deployment via docker compose, the product is accessed at http://localhost:3000."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd3e569a8fef081afb7aa44f7e2d2ac9e95656dd5b9ebc95947aed1cc397c2c5",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 60,
+          "line_start": 59,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L59-L60"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L57-L57"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 6,
+          "line_start": 5,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L5-L6"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 27,
+          "line_start": 24,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L24-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b6a83a78d3fa3d4dcf1e751bef238d81748d1b4b274f9b74df9f31571bf33a0",
+        "slc_2e9c70aa77d8e4e3a1295526a003fc826ec73193fd5398659c32b36ad344cd8c",
+        "slc_726255dda3461fc52b05726b0c2dd34d5a1ab6d85b388a96886b6f7118e64b1e",
+        "slc_8b22ccb9ac0bcaa22bf776123bab967c614f4e13b5660c545f73aeb1c17d37d6"
+      ],
+      "text": "Skills are reusable context for Ask Sourcebot with four fields (name, command, description, instructions), invoked via slash commands like /deep-research, and can be personal or shared within a workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec2ee541c08154080dd6a44af122f3f84eaac9525ef27e16ad7e8b8607aa83c6",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L74-L74"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L92-L92"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L18-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08d3cc209b1409fd4002c09115f38c04e9c3db42a94eb1c9283705fef9e73537",
+        "slc_094dc24b9eec950c6bcb9143565b253d6f5cfd6a39db2dfcb05a724b9e634744",
+        "slc_1a57244343f41bc28fa62ee86a6282f7b9a8ecba5fa62a4d1f9106cf8f3d39dc"
+      ],
+      "text": "Skills can be created directly, imported from local .md/.markdown files (front matter prefills name, command, description), or imported from an indexed repository and kept synced to that file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_682f0cb823cf1f791bfffd2e73a5318e9ef3867784ea8b14556697d1fbe7659f",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L109-L109"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "docs/docs/features/ask/skills.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx#L111-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73d88c77901836794bea836143c47021216dfcc8d07cc92f37bf782b18e13d99",
+        "slc_93f03a650df549c03c6f799d09978d231d749bd0865bf8e92515d1e4730b8a49"
+      ],
+      "text": "Synced skills are shown only to users who can access the source repository, and sharing one warns before publishing when repository permission syncing is enabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a2d889e660e5a8c3d6d03fb2de84ebeeb6de7b6bc654467b3225f0b7d0536ae2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "50d5575f974bc54b5e0aa80da82b51a87d2743c0",
+          "line_end": 112,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/README.md#L110-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f770057f7ab6bdcac38283cb77a55274563d93ed8819af75a37d92d215dad57"
+      ],
+      "text": "Sourcebot collects anonymous usage data by default; this can be disabled by setting the SOURCEBOT_TELEMETRY_DISABLED environment variable to true."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b56f1a275c7b156c416a124e6cf338aceec4ede0b834559e0da6f60c94f22511",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "8494d5ed4d410cc01cbc6291101950f9fbe6fb60",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/docs/activating-a-subscription.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/activating-a-subscription.mdx#L24-L24"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "8494d5ed4d410cc01cbc6291101950f9fbe6fb60",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "docs/docs/activating-a-subscription.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/activating-a-subscription.mdx#L22-L22"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "8494d5ed4d410cc01cbc6291101950f9fbe6fb60",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "docs/docs/activating-a-subscription.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/activating-a-subscription.mdx#L10-L10"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "8494d5ed4d410cc01cbc6291101950f9fbe6fb60",
+          "line_end": 13,
+          "line_start": 12,
+          "path": "docs/docs/activating-a-subscription.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/activating-a-subscription.mdx#L12-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_408f13f928b207026268789030bbc4a0549300d3e236d5ac2efb6d7ff14d328e",
+        "slc_5ae76ce757cad3688be387153f1a95cfad835c19bf6f24f9df0023bfad300f5d",
+        "slc_77d4c3e3287ee767acb3c69bc5fb7f2dc4f0570d342a9df15b4cc2ab103f6d3a",
+        "slc_a33eb0a0223e021b100d157a306f47490e979a58eaa9b937a504b999653bc888"
+      ],
+      "text": "Paid subscriptions activate by default via an Activation Code requiring periodic service pings; deployments failing to ping for 7 days downgrade to the free plan, and offline License Key activation is available on request via SOURCEBOT_EE_LICENSE_KEY."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_48f97af79ce101c738b634bb6bf4cf59c00ffe056ed237866765fd8cca45eb82",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+          "line_end": 17,
+          "line_start": 11,
+          "path": "docs/docs/misc/architecture.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx#L11-L17"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/docs/misc/architecture.mdx",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8aea7bdd1bc9d3bd7d3dbf278d36e87989f422dd15391e5bb40fc9a42740cd24",
+        "slc_bb5ecbf475a0fd4ce99cb9fdd068fe5950fb5557202f78e570510534e459ab3d"
+      ],
+      "text": "The product depends on Zoekt (Sourcegraph's open-source trigram search engine), Postgres, Redis with BullMQ, and supervisord within its container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c251b59b2e9868eefd9ac0888864c2634c58d6c866e2c7d0773b5472255c10d3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "a0e7716975ac7261d39a74e88dfc34eb6a3ce838",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "docs/README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/README.md#L31-L32"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "50d5575f974bc54b5e0aa80da82b51a87d2743c0",
+          "line_end": 116,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/README.md#L115-L116"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "a0e7716975ac7261d39a74e88dfc34eb6a3ce838",
+          "line_end": 23,
+          "line_start": 21,
+          "path": "docs/README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/README.md#L21-L23"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "a0e7716975ac7261d39a74e88dfc34eb6a3ce838",
+          "line_end": 17,
+          "line_start": 15,
+          "path": "docs/README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/README.md#L15-L17"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "a0e7716975ac7261d39a74e88dfc34eb6a3ce838",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "docs/README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/README.md#L13-L13"
+        },
+        {
+          "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+          "git_sha": "50d5575f974bc54b5e0aa80da82b51a87d2743c0",
+          "line_end": 118,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "sourcebot-dev/sourcebot",
+          "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/README.md#L118-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_507b435e522fccd3d0fb7dc334336046fd7a0639967f49caa11d4218edd0bad5",
+        "slc_5b41b123d4b01745e94b1cd83bf48412a2889dbb0a7ca163ec085273e4a58ad9",
+        "slc_8b14b5df2fdd61a966a371ff474427e7456017d450cddbeede7ae399109f3fcf",
+        "slc_97ca889b3a55929e6f6cfb3945cbd98343c6509b239f8d63f395e393d19d2e3d",
+        "slc_e5dfc1730d1da6a3045782590ab0a59ec9ca7e7ed08e818c7f2f8c3579656344",
+        "slc_e838df14bb934cd9c10270e762d920a0db1fcb05ff81bb238d38df9659f59676"
+      ],
+      "text": "Repository development practice: docs previewing uses the Mintlify CLI (npm i -g mintlify, then mintlify dev in the folder containing docs.json), and building Sourcebot from source for contribution is described in CONTRIBUTING.md."
+    }
+  ],
+  "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 119,
+        "path": "README.md",
+        "size": 5454
+      },
+      {
+        "lines": 19,
+        "path": "docs/docs/misc/architecture.mdx",
+        "size": 1318
+      },
+      {
+        "lines": 5,
+        "path": "docs/docs/deployment/infrastructure/architecture.mdx",
+        "size": 102
+      },
+      {
+        "lines": 130,
+        "path": "docs/docs/features/ask/skills.mdx",
+        "size": 5314
+      },
+      {
+        "lines": 32,
+        "path": "docs/README.md",
+        "size": 957
+      },
+      {
+        "lines": 39,
+        "path": "docs/docs/activating-a-subscription.mdx",
+        "size": 2323
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/docs/free-trial.mdx",
+        "reason": "file-budget",
+        "size": 2127
+      },
+      {
+        "path": "docs/docs/overview.mdx",
+        "reason": "file-budget",
+        "size": 1238
+      },
+      {
+        "path": "docs/docs/seat-reconciliation.mdx",
+        "reason": "file-budget",
+        "size": 2472
+      },
+      {
+        "path": "docs/snippets/experimental-feature-warning.mdx",
+        "reason": "file-budget",
+        "size": 242
+      },
+      {
+        "path": "docs/snippets/license-key-required.mdx",
+        "reason": "file-budget",
+        "size": 158
+      },
+      {
+        "path": "docs/snippets/platform-support.mdx",
+        "reason": "file-budget",
+        "size": 1974
+      },
+      {
+        "path": "docs/docs/api-reference/authentication.mdx",
+        "reason": "file-budget",
+        "size": 2744
+      },
+      {
+        "path": "docs/docs/configuration/audit-logs.mdx",
+        "reason": "file-budget",
+        "size": 7469
+      },
+      {
+        "path": "docs/docs/configuration/config-file.mdx",
+        "reason": "file-budget",
+        "size": 7999
+      },
+      {
+        "path": "docs/docs/configuration/declarative-config.mdx",
+        "reason": "file-budget",
+        "size": 1026
+      },
+      {
+        "path": "docs/docs/configuration/environment-variables.mdx",
+        "reason": "file-budget",
+        "size": 9583
+      },
+      {
+        "path": "docs/docs/configuration/idp.mdx",
+        "reason": "file-budget",
+        "size": 36686
+      },
+      {
+        "path": "docs/docs/configuration/language-model-providers.mdx",
+        "reason": "file-budget",
+        "size": 15281
+      },
+      {
+        "path": "docs/docs/configuration/structured-logging.mdx",
+        "reason": "file-budget",
+        "size": 1361
+      },
+      {
+        "path": "docs/docs/configuration/transactional-emails.mdx",
+        "reason": "file-budget",
+        "size": 1202
+      },
+      {
+        "path": "docs/docs/connections/ado-cloud.mdx",
+        "reason": "file-budget",
+        "size": 4148
+      },
+      {
+        "path": "docs/docs/connections/ado-server.mdx",
+        "reason": "file-budget",
+        "size": 4623
+      },
+      {
+        "path": "docs/docs/connections/bitbucket-cloud.mdx",
+        "reason": "file-budget",
+        "size": 6626
+      },
+      {
+        "path": "docs/docs/connections/bitbucket-data-center.mdx",
+        "reason": "file-budget",
+        "size": 7278
+      },
+      {
+        "path": "docs/docs/connections/generic-git-host.mdx",
+        "reason": "file-budget",
+        "size": 1003
+      },
+      {
+        "path": "docs/docs/connections/gerrit.mdx",
+        "reason": "file-budget",
+        "size": 2276
+      },
+      {
+        "path": "docs/docs/connections/gitea.mdx",
+        "reason": "file-budget",
+        "size": 3884
+      },
+      {
+        "path": "docs/docs/connections/github.mdx",
+        "reason": "file-budget",
+        "size": 9970
+      },
+      {
+        "path": "docs/docs/connections/gitlab.mdx",
+        "reason": "file-budget",
+        "size": 5814
+      },
+      {
+        "path": "docs/docs/connections/indexing-your-code.mdx",
+        "reason": "file-budget",
+        "size": 3692
+      },
+      {
+        "path": "docs/docs/connections/local-repos.mdx",
+        "reason": "file-budget",
+        "size": 3448
+      },
+      {
+        "path": "docs/docs/connections/request-new.mdx",
+        "reason": "file-budget",
+        "size": 323
+      },
+      {
+        "path": "docs/docs/deployment/deploy-sourcebot.mdx",
+        "reason": "file-budget",
+        "size": 684
+      },
+      {
+        "path": "docs/docs/deployment/docker-compose.mdx",
+        "reason": "file-budget",
+        "size": 3979
+      },
+      {
+        "path": "docs/docs/deployment/k8s.mdx",
+        "reason": "file-budget",
+        "size": 93
+      },
+      {
+        "path": "docs/docs/deployment/sizing-guide.mdx",
+        "reason": "file-budget",
+        "size": 5347
+      },
+      {
+        "path": "docs/docs/features/analytics.mdx",
+        "reason": "file-budget",
+        "size": 2607
+      },
+      {
+        "path": "docs/docs/features/code-navigation.mdx",
+        "reason": "file-budget",
+        "size": 2406
+      },
+      {
+        "path": "docs/docs/features/mcp-server.mdx",
+        "reason": "file-budget",
+        "size": 24679
+      },
+      {
+        "path": "docs/docs/features/permission-syncing.mdx",
+        "reason": "file-budget",
+        "size": 15879
+      },
+      {
+        "path": "docs/docs/misc/scalability.mdx",
+        "reason": "file-budget",
+        "size": 773
+      },
+      {
+        "path": "docs/docs/misc/service-ping.mdx",
+        "reason": "file-budget",
+        "size": 3317
+      },
+      {
+        "path": "docs/docs/misc/telemetry.mdx",
+        "reason": "file-budget",
+        "size": 1212
+      },
+      {
+        "path": "docs/docs/upgrade/v2-to-v3-guide.mdx",
+        "reason": "file-budget",
+        "size": 4032
+      },
+      {
+        "path": "docs/docs/upgrade/v3-to-v4-guide.mdx",
+        "reason": "file-budget",
+        "size": 4135
+      },
+      {
+        "path": "docs/docs/upgrade/v4-to-v5-guide.mdx",
+        "reason": "file-budget",
+        "size": 13416
+      },
+      {
+        "path": "docs/docs/configuration/auth/access-settings.mdx",
+        "reason": "file-budget",
+        "size": 1950
+      },
+      {
+        "path": "docs/docs/configuration/auth/authentication.mdx",
+        "reason": "file-budget",
+        "size": 2316
+      },
+      {
+        "path": "docs/docs/configuration/auth/faq.mdx",
+        "reason": "file-budget",
+        "size": 2531
+      },
+      {
+        "path": "docs/docs/configuration/auth/providers.mdx",
+        "reason": "file-budget",
+        "size": 1313
+      },
+      {
+        "path": "docs/docs/configuration/auth/roles-and-permissions.mdx",
+        "reason": "file-budget",
+        "size": 3450
+      },
+      {
+        "path": "docs/docs/configuration/auth/scim.mdx",
+        "reason": "file-budget",
+        "size": 5923
+      },
+      {
+        "path": "docs/docs/deployment/infrastructure/redis.mdx",
+        "reason": "file-budget",
+        "size": 1818
+      },
+      {
+        "path": "docs/docs/features/agents/review-agent.mdx",
+        "reason": "file-budget",
+        "size": 8127
+      },
+      {
+        "path": "docs/docs/features/ask/add-model-providers.mdx",
+        "reason": "file-budget",
+        "size": 130
+      },
+      {
+        "path": "docs/docs/features/ask/ask-sourcebot.mdx",
+        "reason": "file-budget",
+        "size": 3252
+      },
+      {
+        "path": "docs/docs/features/ask/chat-sharing.mdx",
+        "reason": "file-budget",
+        "size": 2121
+      },
+      {
+        "path": "docs/docs/features/ask/connectors.mdx",
+        "reason": "file-budget",
+        "size": 4864
+      },
+      {
+        "path": "docs/docs/features/search/ai-search-assist.mdx",
+        "reason": "file-budget",
+        "size": 781
+      },
+      {
+        "path": "docs/docs/features/search/code-search.mdx",
+        "reason": "file-budget",
+        "size": 1918
+      },
+      {
+        "path": "docs/docs/features/search/multi-branch-indexing.mdx",
+        "reason": "file-budget",
+        "size": 3927
+      },
+      {
+        "path": "docs/docs/features/search/search-contexts.mdx",
+        "reason": "file-budget",
+        "size": 6043
+      },
+      {
+        "path": "docs/docs/features/search/syntax-reference.mdx",
+        "reason": "file-budget",
+        "size": 3610
+      },
+      {
+        "path": "docs/snippets/schemas/v1/index.schema.mdx",
+        "reason": "file-budget",
+        "size": 10934
+      },
+      {
+        "path": "docs/snippets/schemas/v2/index.schema.mdx",
+        "reason": "file-budget",
+        "size": 81806
+      },
+      {
+        "path": "docs/snippets/schemas/v3/app.schema.mdx",
+        "reason": "file-budget",
+        "size": 3829
+      },
+      {
+        "path": "docs/snippets/schemas/v3/azuredevops.schema.mdx",
+        "reason": "file-budget",
+        "size": 7530
+      },
+      {
+        "path": "docs/snippets/schemas/v3/bitbucket.schema.mdx",
+        "reason": "file-budget",
+        "size": 6394
+      },
+      {
+        "path": "docs/snippets/schemas/v3/connection.schema.mdx",
+        "reason": "file-budget",
+        "size": 47905
+      },
+      {
+        "path": "docs/snippets/schemas/v3/environmentOverrides.schema.mdx",
+        "reason": "file-budget",
+        "size": 2921
+      },
+      {
+        "path": "docs/snippets/schemas/v3/genericGitHost.schema.mdx",
+        "reason": "file-budget",
+        "size": 3548
+      },
+      {
+        "path": "docs/snippets/schemas/v3/gerrit.schema.mdx",
+        "reason": "file-budget",
+        "size": 4185
+      },
+      {
+        "path": "docs/snippets/schemas/v3/gitea.schema.mdx",
+        "reason": "file-budget",
+        "size": 5977
+      },
+      {
+        "path": "docs/snippets/schemas/v3/github.schema.mdx",
+        "reason": "file-budget",
+        "size": 7756
+      },
+      {
+        "path": "docs/snippets/schemas/v3/gitlab.schema.mdx",
+        "reason": "file-budget",
+        "size": 8083
+      },
+      {
+        "path": "docs/snippets/schemas/v3/identityProvider.schema.mdx",
+        "reason": "file-budget",
+        "size": 76657
+      },
+      {
+        "path": "docs/snippets/schemas/v3/index.schema.mdx",
+        "reason": "file-budget",
+        "size": 416727
+      },
+      {
+        "path": "docs/snippets/schemas/v3/languageModel.schema.mdx",
+        "reason": "file-budget",
+        "size": 110218
+      },
+      {
+        "path": "docs/snippets/schemas/v3/searchContext.schema.mdx",
+        "reason": "file-budget",
+        "size": 2445
+      },
+      {
+        "path": "docs/snippets/schemas/v3/shared.schema.mdx",
+        "reason": "file-budget",
+        "size": 5716
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 3466
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 120115
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 20014
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7379
+      },
+      {
+        "path": "LICENSE.md",
+        "reason": "file-budget",
+        "size": 4281
+      },
+      {
+        "path": "docs/docs/features/agents/agents.mdx",
+        "reason": "file-budget",
+        "size": 529
+      }
+    ],
+    "omitted_count": 81,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1718,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 87,
+      "complete": false,
+      "omitted": 81,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_59fd63ded92853b78fe14bb8aafe1c81",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 3,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sourcebot-dev/sourcebot/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/cedbf25d27012bb1/manifest.json",
+  "package_id": "pkg_bbd291a96750c6aa1bd37a5fad97073ff31bdc571095746d2dbcf6285c739514",
+  "repo": "sourcebot-dev/sourcebot",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "478b6d7ea48c31ea44f127c4488dbef3713410b7ecd3c12e22efd43f5e303a24",
+  "snapshot_id": "cedbf25d27012bb1",
+  "sources": [
+    {
+      "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+      "git_sha": "50d5575f974bc54b5e0aa80da82b51a87d2743c0",
+      "lines": 119,
+      "path": "README.md",
+      "repository": "sourcebot-dev/sourcebot",
+      "sha256": "1d4c3f3666a3088cc8b25a1966b61fb333c05391c04a160aa10655d0764405d3",
+      "source_id": "src_b1ba5a60f15356159224f7475798e335",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/README.md"
+    },
+    {
+      "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+      "git_sha": "a0e7716975ac7261d39a74e88dfc34eb6a3ce838",
+      "lines": 32,
+      "path": "docs/README.md",
+      "repository": "sourcebot-dev/sourcebot",
+      "sha256": "e91c79de0fe9bbd761a739da935f84a8178d811cc7154fe1b054c297ba17da5b",
+      "source_id": "src_51adfa05c187583e9ae9ba2b9d43f57c",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/README.md"
+    },
+    {
+      "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+      "git_sha": "8494d5ed4d410cc01cbc6291101950f9fbe6fb60",
+      "lines": 39,
+      "path": "docs/docs/activating-a-subscription.mdx",
+      "repository": "sourcebot-dev/sourcebot",
+      "sha256": "da78a02126b93dd098c94d5019284c2db71d5106cf006a3e923ec770e27b5af9",
+      "source_id": "src_7d62500df7065eb3841d09c1fa67133e",
+      "stored": "activating-a-subscription.mdx-c1407bfedf92.txt",
+      "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/activating-a-subscription.mdx"
+    },
+    {
+      "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+      "git_sha": "ba58e09604d5ef6eb8a3ccf251ec63f5d24f345a",
+      "lines": 5,
+      "path": "docs/docs/deployment/infrastructure/architecture.mdx",
+      "repository": "sourcebot-dev/sourcebot",
+      "sha256": "5a999719a35037f203321b09febab9c15a88218deda8335b74a90441aaf6d68b",
+      "source_id": "src_13bb689c576a54aa84f1fabc51e86cc4",
+      "stored": "architecture.mdx-c1f47448ea10.txt",
+      "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/deployment/infrastructure/architecture.mdx"
+    },
+    {
+      "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+      "git_sha": "e974b3e8ddaf87ebbb91ce40ce8b2d500bce055f",
+      "lines": 130,
+      "path": "docs/docs/features/ask/skills.mdx",
+      "repository": "sourcebot-dev/sourcebot",
+      "sha256": "240c1f349d2cc025fd4e1d8a7d89aaa58b0e37e12eb3c16555a1ef087c376966",
+      "source_id": "src_b3850885a4b95cddb707a03b2877a176",
+      "stored": "skills.mdx-a208fa3a4ed3.txt",
+      "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/features/ask/skills.mdx"
+    },
+    {
+      "commit": "c0d0df91a6b962234263dac6a6b3ebc500ae7fb0",
+      "git_sha": "ad496f6ae97bf9ede096cd031c03ab9e806dab71",
+      "lines": 19,
+      "path": "docs/docs/misc/architecture.mdx",
+      "repository": "sourcebot-dev/sourcebot",
+      "sha256": "6b395d5f4599cfaec7ef0b6c440a65f8988c23c477511fe95c151e39a7cb8655",
+      "source_id": "src_ee14423fd26d57ccb6f5ccebaf40064b",
+      "stored": "architecture.mdx-3908ea07a125.txt",
+      "url": "https://github.com/sourcebot-dev/sourcebot/blob/c0d0df91a6b962234263dac6a6b3ebc500ae7fb0/docs/docs/misc/architecture.mdx"
+    }
+  ],
+  "summary": "Evidence shows Sourcebot is a self-hosted code-understanding tool (README) shipped as a single Docker container running a Next.js web server, Node.js backend worker, Zoekt, Postgres, and a Redis/BullMQ job queue under supervisord, with a JSON config file, skills for Ask Sourcebot, telemetry, and subscription licensing; docs preview uses the Mintlify CLI.",
+  "superseded_claim_ids": []
+}

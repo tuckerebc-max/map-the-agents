@@ -1,0 +1,692 @@
+{
+  "applied_operation_id": "op_a75868b70eb14dcd90540e0787753f06",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d24ed14641295eb070664321cded4fd8d939cdefad886571ffc6408f72f30129",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L82-L82"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L68-L68"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L70-L70"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L64-L64"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L58-L58"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L62-L62"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0da5af325e3af248547f9b92a7484da57fb1b1ca05aee1975d3437fc4abbed4a",
+        "slc_63047c28b99b23e98f772cef3b11904ce55f5949297cf898792f586b1af9dd8a",
+        "slc_868b4f5c55bf42bb36c7981ba65e2728b182e01349ddcc3a73dd3d1ad5498d49",
+        "slc_ad776b8ed06a2a2f9a4bf8f73f7c1ffde80eefcc72dd4054c39abb15555d0efc",
+        "slc_c95d5278e30845b8722b89416a92edf85975ff7766bfbc9f32285b1ce4bd1b15",
+        "slc_ce04ef5911acacb0c857d520a776778486012bee671fa0c28962124f0516e3aa",
+        "slc_ecae484a0fec974ca80dfa370cfd5e212a097c3f823d64d62af8af1c8f425c11"
+      ],
+      "text": "The tool is invoked via a main.py CLI with options such as --model, --sourcedir, --sourcelang, --targetdir, --targetlang, --step, and --sourceport."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b76fe8ee8efbc01ee45e59161801fb6db31d0e2f70fd090c41293136ad71e6f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L52-L52"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L60-L60"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72467a3d08bcc69e457f6ba55f89f5095ce5c9eca0fc65f5a5e6b466411ce02a",
+        "slc_b92f09d3bb68e50cb5c02027d34eb37d505e0fdb97ad395d7ee8a40d9b3dbe4e",
+        "slc_c95d5278e30845b8722b89416a92edf85975ff7766bfbc9f32285b1ce4bd1b15"
+      ],
+      "text": "Default model is gpt-4-32k with temperature 0; the default run executes a flask-to-nodejs benchmark migration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b00c974eda846503cb539b5bdad18d76cc864e7038c512f8ef47772727d3e0c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 107,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L100-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0897671b384fcdd1bb44385d01cc3a7eea481b97b890c3777da7ff9d07689eb7"
+      ],
+      "text": "The migration pipeline runs steps: setup a Docker environment for the target language, map third-party dependencies, rebuild code recursively from the source entrypoint, then test and debug iteratively."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_decb6af9d933176906475763e6deb85be27eaa0f6396403408cc10f32cb5d984",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 107,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L100-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0897671b384fcdd1bb44385d01cc3a7eea481b97b890c3777da7ff9d07689eb7"
+      ],
+      "text": "During debugging the agent chooses actions like moving, creating, or editing files, and asks for user clearance before executing shell scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b72322cf5da3162144752c19c451904b16cef6f2f030daadd634d3fdc5198b5",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 107,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L100-L107"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L78-L78"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L76-L76"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0897671b384fcdd1bb44385d01cc3a7eea481b97b890c3777da7ff9d07689eb7",
+        "slc_11fda559f1236b6e2c423c8f3bf1c14e9102187e1e1bf6e1941c83d4389644dc",
+        "slc_5c0f24ed6c87cc7972ac1477ad8b9e1ab1e4cf90da192b7af15de0307eecba2a",
+        "slc_5e122b524b05cf5b59e5d6eed2d09e800a6a82c30374b3e32ff0e77f4c8a7632"
+      ],
+      "text": "The tool generates unit tests with Python's unittest framework, optionally validating them against the original app on --sourceport before testing the migrated app on --targetport."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22ab54ddc70729b5958a0d402500a801ac8363db033cd328757e5852fc8ae4cf",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 129,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L129-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d88586d009734a24ed885ce2ac2e69a192b025c6f71cc8f0f53ee8d2b0a335cb"
+      ],
+      "text": "The project reports benchmark performance: simple benchmarks pass for easy languages like Python or JavaScript about 50% of the time, while complex languages like C++ or Rust need human assistance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b9e98de084412fc15ea66d03ddd4ad20697cf5f650520212c4429d963be34ac",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L42-L44"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L26-L26"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L30-L30"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L40-L40"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L34-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ac7679f349c51ef25a18f88dd3b58e4e95710b0fb180a669fbdb1d3ac5094a1",
+        "slc_733a927855e874bbc60d49b8723268e215e63f3cebbec19e0ab6319815184fcd",
+        "slc_d3a90eb9fd3444ff7459106c30f12a5342841f3480df118d3943fb616d5dca83",
+        "slc_e0b045ff2700327e672ba0cb9cc4c8eef784fa082fb355342583eaf4120e293f",
+        "slc_fc3baf2debbea73368690cd805ffaa136493e4c2069c09ea834bda926f0e8689"
+      ],
+      "text": "Installation uses Poetry (poetry install) or pip with requirements.txt, and requires Docker to be installed and running; API keys for OpenRouter (default) and/or OpenAI are set via environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c0fd6ac9b00475fb1ae8241d3000c8a8f3d461bc65a6ef3421ba8b1e0426df7f",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "e2323f06d87ac3bb3374f818bdb16ef7d421ea1f",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "TERMS.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/TERMS.md#L9-L9"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "e2323f06d87ac3bb3374f818bdb16ef7d421ea1f",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "TERMS.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/TERMS.md#L5-L5"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 129,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L129-L129"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d0939f082532dbbeedf6eaec242703f0c8047b2fde6d455ba545af3714c2868",
+        "slc_30bd48622c40595c716bca6d61e5960894335283b32835a4cf2afeeba8abba77",
+        "slc_d88586d009734a24ed885ce2ac2e69a192b025c6f71cc8f0f53ee8d2b0a335cb",
+        "slc_f27628d3505575f4efedebab1d632ceac1356366432c9f77dd4098269ced00a1"
+      ],
+      "text": "The project is described as a development alpha not ready for production, and users are warned not to trust output blindly since it may rewrite an entire codebase at significant token cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c88d4ea5db2a52a6869de38e8fb33ee3d6929a5597f75137779d5c8fc31c95e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 117,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L113-L117"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L121-L121"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L111-L111"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 125,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L123-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_154cfb16ce4eed8e0f67badba71b14de10140f00624eb03b76632de2d92dd87a",
+        "slc_42566f56f94b88eb9bae9fc18fd3c5d9bfd7c28e267dc12a26dd7643dd52b30e",
+        "slc_8c4cd481f01d6cce7f099bc6101eeb9a9630922d4702bc24ab5c2effaf27fd68",
+        "slc_c1246dd76ba8dc2df5fc084120493a271830aed48f6ac8ed563170997e60b4da"
+      ],
+      "text": "Prompts are composed from tagged subprompts in four preference levels (HIERARCHY, p1-p4) via a prompt_constructor() function that yields a formattable string."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5364096ee916bfcf8782082548ae9a0d1aa1ac37cd8ba32f0167ac808772acb1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "94fd900680f37a5e2e2cd29093685e37dd5cdf42",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/CODE_OF_CONDUCT.md#L9-L9"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "94fd900680f37a5e2e2cd29093685e37dd5cdf42",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/CODE_OF_CONDUCT.md#L5-L5"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "94fd900680f37a5e2e2cd29093685e37dd5cdf42",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/CODE_OF_CONDUCT.md#L29-L29"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "94fd900680f37a5e2e2cd29093685e37dd5cdf42",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/CODE_OF_CONDUCT.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12ece6b05d9c1ab95c57e4e4817e5527945809a8c0270910723b3d06671ca0b8",
+        "slc_4d6d1f201a6f6b76df5263af7bb786b19f5b36bdc0a865272949662070750095",
+        "slc_784223d39fa9fa9e0417d32429fe2eb50b9fb0559d8c03e80df0476edcbd90d3",
+        "slc_f05e82b9277af90c2b5f53805f658c7aa5b61aca3199d19fd6156b0a615bb8ae"
+      ],
+      "text": "Repository development practice: contributors are governed by a Contributor-Covenant-based Code of Conduct covering issues, PRs, and code reviews, with violations reportable to maintainers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d1170d8496eda62d56066010b0ae0d7c218596663688ab215ff2e0485e7a463",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 148,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L145-L148"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 153,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L152-L153"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L137-L137"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L141-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_053bcef62c8e19b81bab8837f748de5ca02f5d753fbaf4c4f0968eb8a97eb8ce",
+        "slc_29d0c21f1ee24cf00d382fafdfec074f61498b82261d2cad4477ca2e046a4657",
+        "slc_3381de6791dfab76c3d2c8b1db26180ddfaaece1bd8017590e6ffd0fb04eeae9",
+        "slc_f96c4ecf8e9a63cf4a68b32b6b559cf4c0c1bec815239ba092702827046794c8"
+      ],
+      "text": "Repository development practice: the roadmap invites PRs for improvements such as model input size limiting, project-wide unit tests with CI/CD, more benchmarks, and support for other LLMs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ba3936cace82b81a7f2a469aee2b1a2ffe6e44b3930e663d7dc524f6f05c41b",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L5-L5"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 161,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L161-L161"
+        },
+        {
+          "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+          "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "joshpxyne/gpt-migrate",
+          "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md#L16-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42be521de443aac389c4ddcae7ed32dc43fd4ac7bab04fb1047d23c12b30361b",
+        "slc_7f6c2b160ff5b657f008209b38470e89e62d712ace32bcbbc4c004b0e45006c3",
+        "slc_e58e18994076bdf44adf4e104c3cc2effa22c86c9037534ff19a121ecd9bce4d"
+      ],
+      "text": "The tool targets developers facing costly framework or language migrations, and an expert-assisted migration service is offered at gpt-migrate.com."
+    }
+  ],
+  "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 163,
+        "path": "README.md",
+        "size": 10078
+      },
+      {
+        "lines": 15,
+        "path": "TERMS.md",
+        "size": 2049
+      },
+      {
+        "lines": 39,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 1814
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 61,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_bda6e9435a065384831f4d18d48ba4bd",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 2,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/joshpxyne/gpt-migrate/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/ee5798d35a63a1da/manifest.json",
+  "package_id": "pkg_a4bffd828d9619ec539d7289183bb8ee0201ad2d96ed711d9a4d2c14696535d4",
+  "repo": "joshpxyne/gpt-migrate",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "09cbb25ab09b08b91a5457567415afe54d81869d352b868008f7d62ad5987aad",
+  "snapshot_id": "ee5798d35a63a1da",
+  "sources": [
+    {
+      "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+      "git_sha": "94fd900680f37a5e2e2cd29093685e37dd5cdf42",
+      "lines": 39,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "joshpxyne/gpt-migrate",
+      "sha256": "004ee149b42f16cc871ceb2a65bf10140cde2297cb58a1191eff5bc9c381f5fb",
+      "source_id": "src_c3ee1c181a625b22b52a52f1b7475ec1",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+      "git_sha": "69ef7a631499381c9dbc8bb835c5f0ed39592739",
+      "lines": 163,
+      "path": "README.md",
+      "repository": "joshpxyne/gpt-migrate",
+      "sha256": "ee4c13ded59eddb21813747536dc84dd4682634b8d945f1f73ea764ea71491c4",
+      "source_id": "src_83b80405f0b850e9be848267390190cb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/README.md"
+    },
+    {
+      "commit": "262cabb5e8dae57f03e80a7c06cf0edfbc67d410",
+      "git_sha": "e2323f06d87ac3bb3374f818bdb16ef7d421ea1f",
+      "lines": 15,
+      "path": "TERMS.md",
+      "repository": "joshpxyne/gpt-migrate",
+      "sha256": "bdad7b9e5ff5c6d06070d06ef26d91dadde5678d4dfe508c6206930872560192",
+      "source_id": "src_ba10cbc7edda5b9f8e88be9db08d806e",
+      "stored": "terms.md-81d1c5494f6c.md",
+      "url": "https://github.com/joshpxyne/gpt-migrate/blob/262cabb5e8dae57f03e80a7c06cf0edfbc67d410/TERMS.md"
+    }
+  ],
+  "summary": "GPT-Migrate is an LLM-driven tool that migrates codebases between languages/frameworks using Docker environments, iterative debugging, and generated unit tests. Evidence is limited to README, CODE_OF_CONDUCT, and TERMS files; no source code slices are present.",
+  "superseded_claim_ids": []
+}

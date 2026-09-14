@@ -1,0 +1,490 @@
+{
+  "applied_operation_id": "op_572c0227dd3e4e168f944cf062f2fc76",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b33568fe926ea67cf93306ba8ce7c2d87deb94900dae16b10eadc450134ccec",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18931e9d4f96d7f51501a4333e0da0ce0576de44c1465ae8cb5de9805435990d"
+      ],
+      "text": "Traycer is described as an AI orchestration app that runs multiple agents in parallel while sharing memory across all models and providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7816c5179581b6c9c6eda32da210956dd8caec7136de7ebcca79c4d86ad0a5a1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L28-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad6f5da91ba628a2296d13453d0aca9d5fd8e1c6355a8fd12eedd35b98d9e8d9"
+      ],
+      "text": "The product supports agent-to-agent communication, letting users create automated loops where agents debate architecture or peer-review each other's code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7f4cdbcf9c202ddcaf3dde6c2e668e664a85710fcde72f22220bf9a60e1eb2c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L49-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07f3d0d55151574d6f850a8aa144e03aa2877c12ac3f6a43368fdde2e0b4c462"
+      ],
+      "text": "An agent is a durable session inside a Task that the user interacts with through a Chat or Terminal interface, powered by an underlying coding-agent provider."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c14b4e5828cd3462e071b73b16a80b387c562512346a94243b9836f038d1ffb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 43,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L36-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ab77d4a160e0cca3dabbbab8041644c1c0335d2b69df5ae0e9158f547c18605"
+      ],
+      "text": "Desktop builds are distributed for macOS (arm64 and x64 .dmg), Linux (AppImage, .deb, .rpm), and Windows x64 .exe via GitHub Releases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e57e8738a6be0a0ed4f5d6a8bd6615bff103ba3dd1a8945f545be9c989a1bf8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 57,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L51-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7e5ae3bf2bbb08eb5b134c81f46307200795757f267d827e0c8e2f9db1720ea0"
+      ],
+      "text": "Supported coding agents listed as fully supported are Claude Code, Codex, Cursor, and OpenCode, plus Traycer's own native inference subscription."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d566ebf3b2cc9cf44854006c0c434451d89ec3915437b48b3aff2d5e1b94e0c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L22-L22"
+        },
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L28-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69fa49b04f2b8328d3df077372e2ce6879597680804e8ebac7e0e899ff7c6585",
+        "slc_ad6f5da91ba628a2296d13453d0aca9d5fd8e1c6355a8fd12eedd35b98d9e8d9"
+      ],
+      "text": "The context window is shared across providers, so users can switch models within the same agent without losing context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3adeef74486337eb88fe0290f71b09fdf88a4f496269034887ea72917a8185ce",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L28-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad6f5da91ba628a2296d13453d0aca9d5fd8e1c6355a8fd12eedd35b98d9e8d9"
+      ],
+      "text": "Agent-to-agent abilities such as reading a transcript or delivering a message are narrower and depend on the user, Host, and runtime, per a capability matrix."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7ed14339efd97dff1b26a7a3c3633906c97c0bfcca9bce95f8739e2a233e976",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L69-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d59124c2419b255472682fbbc5ba9bfe006ce353b2cbe08bd09b801b76f38331"
+      ],
+      "text": "Privacy documentation states code is processed in-memory and never stored or used for training, with a Privacy Mode defaulting on for Team plans."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df431e42e62aac8deb9f94d13c79c402be1d86440ba1988de47b346e9fbf261d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "145b5d7ed83db753a735f35a6cd466d27022c01e",
+          "line_end": 46,
+          "line_start": 42,
+          "path": "AGENTS.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/AGENTS.md#L42-L46"
+        },
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "145b5d7ed83db753a735f35a6cd466d27022c01e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "AGENTS.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/AGENTS.md#L3-L3"
+        },
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "145b5d7ed83db753a735f35a6cd466d27022c01e",
+          "line_end": 33,
+          "line_start": 26,
+          "path": "AGENTS.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/AGENTS.md#L26-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1691bf59bc86f98a732852bae74e5172fc5ee9095837905f13e2d71291bc997b",
+        "slc_4df58e6823fc6eb38f7dcdd22878ec327b108b4e50d986c1e84a4cfce4da7948",
+        "slc_e950e75399ea0ae99a379cbd0558ccc17fb1082c795f80966caa97b5dfcfd3d8"
+      ],
+      "text": "Repository development practice: contributors use Bun 1.3.12 workspaces with Nx, run build/compile/lint/format via bun scripts, and commits require DCO sign-off; tests run in CI, not pre-commit hooks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_210b97eed9bce74aee8ec375093c95733656c3f3c9c2f432a2b158b009b08808",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "145b5d7ed83db753a735f35a6cd466d27022c01e",
+          "line_end": 46,
+          "line_start": 42,
+          "path": "AGENTS.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/AGENTS.md#L42-L46"
+        },
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "145b5d7ed83db753a735f35a6cd466d27022c01e",
+          "line_end": 40,
+          "line_start": 39,
+          "path": "AGENTS.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/AGENTS.md#L39-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1691bf59bc86f98a732852bae74e5172fc5ee9095837905f13e2d71291bc997b",
+        "slc_cd1bfec3754e989bb874eb5ace20199f7a712f5ef5c93ac8a91835c146be6822"
+      ],
+      "text": "Repository development practice: commits must not manually run compile/build/lint/format beforehand because pre-commit runs affected workspace checks, and make dev-desktop targets the production cloud with no local backends."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff6b7269561edf32772d284441145e3b286b6b4385983594aece2ab4b4bbb6af",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 95,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L93-L95"
+        },
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L81-L81"
+        },
+        {
+          "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+          "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "traycerai/traycer",
+          "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md#L99-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a4b65778a4c4886d1c06a060eb806df4baad60fea1d39a09e7480ebbdd37606e",
+        "slc_a66056e4f3a99fa09498d1439fd954a66268e9718baaa7f2fc14f407347cdfb3",
+        "slc_f71380e3d7c2c7da0aedffeb685f0617a07dbb69efaddc4988940e91eca86228"
+      ],
+      "text": "The project is MIT-licensed open source with community channels on Discord, X, and YouTube, and accepts contributions under a DCO."
+    }
+  ],
+  "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 99,
+        "path": "README.md",
+        "size": 7499
+      },
+      {
+        "lines": 89,
+        "path": "AGENTS.md",
+        "size": 3943
+      },
+      {
+        "lines": 10,
+        "path": "CHANGELOG.md",
+        "size": 356
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5400
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2624
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 586
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 362
+      },
+      {
+        "path": "docs/DEVELOPMENT.md",
+        "reason": "file-budget",
+        "size": 3451
+      },
+      {
+        "path": "docs/adr/0001-browser-tile-rendering.md",
+        "reason": "file-budget",
+        "size": 7413
+      },
+      {
+        "path": "docs/theme-customization.md",
+        "reason": "file-budget",
+        "size": 12229
+      }
+    ],
+    "omitted_count": 8,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 7790,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 8,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_35a3f85896325d01b7fe0072cbe8840c",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/traycerai/traycer/b12949767727955f2b68546b772000c98d73e2b9/6d5e53e24e3c3dec/manifest.json",
+  "package_id": "pkg_bab56c35d73d155dd841aa3f4f41db3eb06ec936c34c68e3575920fe54fe157e",
+  "repo": "traycerai/traycer",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0d46c97d29f6b41c56f9d6d9b3c8bcefd78940add6ff41f30907c679173cdb8d",
+  "snapshot_id": "6d5e53e24e3c3dec",
+  "sources": [
+    {
+      "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+      "git_sha": "145b5d7ed83db753a735f35a6cd466d27022c01e",
+      "lines": 89,
+      "path": "AGENTS.md",
+      "repository": "traycerai/traycer",
+      "sha256": "97cf255ef00b30a64733198b41e42ac148aaa5ac1fc7bc993a36cf1ee416f93a",
+      "source_id": "src_d458a280775e594ba83a4f6f86c1081d",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/AGENTS.md"
+    },
+    {
+      "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+      "git_sha": "6cbb706d8431b6e172f8faa5aff1419f77053a21",
+      "lines": 10,
+      "path": "CHANGELOG.md",
+      "repository": "traycerai/traycer",
+      "sha256": "71a6e1eba87785617ffbec376a316ef1912a505e922f06115b50d6db24dcbb46",
+      "source_id": "src_c568a16a6abf5afbb1dff1d6daf3c317",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/CHANGELOG.md"
+    },
+    {
+      "commit": "b12949767727955f2b68546b772000c98d73e2b9",
+      "git_sha": "854587351a53bed3fabf3731cbcdf9ceb8678ac9",
+      "lines": 99,
+      "path": "README.md",
+      "repository": "traycerai/traycer",
+      "sha256": "6d5981e3fb12eff94320584464d5f1f70f6e91156a40f1092afedb326a9959fd",
+      "source_id": "src_b4d174736d825f1fbe0e035035766015",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/traycerai/traycer/blob/b12949767727955f2b68546b772000c98d73e2b9/README.md"
+    }
+  ],
+  "summary": "Traycer is described as an AI orchestration app that runs multiple agents in parallel while sharing memory across all models and providers. The product supports agent-to-agent communication, letting users create automated loops where agents debate architecture or peer-review each other's code.",
+  "superseded_claim_ids": []
+}

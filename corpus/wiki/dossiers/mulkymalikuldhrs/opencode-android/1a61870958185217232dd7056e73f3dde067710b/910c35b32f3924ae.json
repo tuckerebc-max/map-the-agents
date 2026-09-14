@@ -1,0 +1,844 @@
+{
+  "applied_operation_id": "op_3eecbc4445704752a528cd8eb2eefaa2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_36b5129967135d141a9cef627a65ce7e9a87f32592a6893c8085f0b48b160f6c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L28-L28"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3aaf0f2504ddb929694bf62c876105b2906319afbaa41282c06b26442e642f9d",
+        "slc_669fd3e50c20d9c938ee1ba7df02df6c92a5fe109a8440014789400a4a020ec8"
+      ],
+      "text": "Opencode Android is a native Android client for the OpenCode AI coding agent; it requires a running OpenCode server and is not a standalone AI tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bda2774173097270afa60f1e9297c0182df02be3a4509184d8fc8b4ce8e651da",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L28-L28"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3aaf0f2504ddb929694bf62c876105b2906319afbaa41282c06b26442e642f9d",
+        "slc_cf14127c6c4fd5ab23c7c139bfeaf3898a8bfebba20ad3a6676a0a2a0374fb45"
+      ],
+      "text": "The architecture follows a thin client-server model: AI processing, file operations, and command execution happen on the server, while the app handles only UI presentation and interaction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b795014839e08d1f7e7c0910b3b6b192a7187fd9b178f6b5f814a92f03ca156",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L30-L30"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 113,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L101-L113"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 91,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L86-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bd50f86a06267ec6a91216cb567f9faf4e79db184ba0d07dc23b27146d33c90",
+        "slc_d094ba6c84e7102854264b20ed8e1a0d7277f5f5c1ad713097e219c5f4384d44",
+        "slc_d68fddd7fe79a3b860c2654a23c51ab326ee09ed995bb3d9c3462a20fe3d0e15"
+      ],
+      "text": "The app communicates with the server over HTTP with SSE for real-time streaming, WebSocket for the terminal shell, and TLS (HTTPS/WSS) as the transport security layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06b73ef2e169bc74cc2449be74467790642436374b82494973419253dfdc50e0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L30-L30"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 261,
+          "line_start": 249,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L249-L261"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bd50f86a06267ec6a91216cb567f9faf4e79db184ba0d07dc23b27146d33c90",
+        "slc_a88504b7073e134b2ba99ec957ea5a16810f109e928994dec398fd88443e6daa"
+      ],
+      "text": "The OpenCodeClient implements 50+ API endpoints spanning sessions, messages, files, providers, commands, LSP, MCP, auth, and TUI control categories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65bbbb870160779148f4342d46b550acc60a692df498c33445d95a753c70621b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 316,
+          "line_start": 313,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L313-L316"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 119,
+          "line_start": 114,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L114-L119"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 110,
+          "line_start": 107,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L107-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fc83d6d9586314aee5e10047659c43ace89e9ac1129379017bddf7f8e38f8b9",
+        "slc_33b11fe0399955931446c7c018d5b350c6b278c92fde3e823dd1fbd311e735c0",
+        "slc_e5d0d4d5ec40cd063eb50a6037969022de174d1db24bea9c764b306056371f48"
+      ],
+      "text": "Main UI components include ConnectionActivity (connection wizard with health check), MainActivity with bottom navigation, and Chat, Terminal, FileManager, and CodeEditor fragments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35ffb6c285e1acd8c72a531b01c3bdcec719899648a8e4cc4380abace37f9e51",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 285,
+          "line_start": 285,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L285-L285"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 291,
+          "line_start": 287,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L287-L291"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 139,
+          "line_start": 137,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L137-L139"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 293,
+          "line_start": 293,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L293-L293"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e94a9f22badc62edafac4ad00022fab10dda1211f8811296f2c6b366e1d6d62",
+        "slc_8f1155eb558145a3b3076f174caa18c8d7eaaa5faf8837b6c2e331a239148ec1",
+        "slc_a2f89df3ed54a3109b8ff97d46c37b2902722147606691f550d518cb537fa805",
+        "slc_f698e5df5f7ca239e00bb79f966fb0a3c914cd7dbe3d10cd5d2d32448cf1ef6d"
+      ],
+      "text": "SessionManager is the central state coordinator tracking current session, session list, SSE event stream, message state, and connection state, exposed via StateFlow/SharedFlow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac45c502b5455375c57935f27315b01541cb76c939e2d175b11d8d1e183e656a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 145,
+          "line_start": 143,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L143-L145"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 348,
+          "line_start": 348,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L348-L348"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 354,
+          "line_start": 354,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L354-L354"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_139999cab7a8c51dc963d3711da49fec6e27ec50c900cf5dc41d815bf8cca6c1",
+        "slc_9ae78052e05b98600efb16a8700a559c8bb25002cde906e7c6bd72f4bab08b52",
+        "slc_a5aee513d55e4a687e454ab440ae155757656be0077459e4df0fea294e9087a5"
+      ],
+      "text": "OpenCodeService is a foreground service (dataSync type) that keeps the SSE connection alive in the background and shows a persistent notification."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ed6e37bf4f83150533190d86433525a25571b3167868bbfefc909aaa9447ebb",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 372,
+          "line_start": 372,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L372-L372"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 301,
+          "line_start": 297,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L297-L301"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d6bb7a39a974eb336e27bb4e097c78004a4a1ee10917ba17338dc6b76b3e28c",
+        "slc_b410777600948e0667ed641914a10aaea023f123241b34017a28bdec48bf955e"
+      ],
+      "text": "Connection settings (server URL, username, password, auto-connect) are persisted in SharedPreferences, using EncryptedSharedPreferences when available on newer Android versions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1a302757549887bb2be1a7e096be004c28f5913dd521427e6f69a6c1e7f9fc5d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L47-L47"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L45-L45"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L53-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ebecd8114bef183c661469f4b8040b5084443136f8e6248fe82d6ec9fe51436",
+        "slc_b4b29f5a4781c60d32c0ef71eee852ffb9f5ac068be9c67ea7e7f9e2e910eeef",
+        "slc_d6838a42a75df37692bfd6af197b6d567670ca9825e1b323bf3294a0fbd28747"
+      ],
+      "text": "The project intentionally keeps dependencies minimal, using OkHttp for HTTP/SSE, AndroidX for UI, Kotlin coroutines and Flow for async work, and org.json for parsing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2300c952f365aae8c47c31b67948fd703cb149658e6eddc2ab92b536e8813d8d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 388,
+          "line_start": 382,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L382-L388"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cee774736479d5bf342dba12969f3049b1c4b93e4bd1839fcf2a5b1454cfeeab"
+      ],
+      "text": "The app requests INTERNET, ACCESS_NETWORK_STATE, legacy external storage, FOREGROUND_SERVICE, POST_NOTIFICATIONS (SDK 33+), and WAKE_LOCK permissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b056b000b1b94550ad130857738f8304a667a6c3188efe28c76450437a6c0f5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 70,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L62-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_920f6193d3f21af03236dda35919e7dc3d95b457306f4f4fd13c71faca01d7ec"
+      ],
+      "text": "Documented limitations: no AI runs on the device, terminal commands execute on the server machine, file operations target the server filesystem, and there is no offline functionality."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b47efb18c8ebf2ffa815b4409fe0355f34f377c673f389911c346f4218a119f",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 235,
+          "line_start": 235,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L235-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6f104d396a623d2238ada93e43b105e6a246ba56624408bf433675d9a2c8bae"
+      ],
+      "text": "A maturity note states the code editor and file manager support only basic operations, and security hardening such as certificate pinning and encrypted preferences is only partially implemented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59109a9d66c6174c5c016da985069bbdab3296a7ec6926f6c0526312c0865105",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 377,
+          "line_start": 373,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L373-L377"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 385,
+          "line_start": 381,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L381-L385"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69fa80756f461c210d30b8c588055cce91344465b633014f2fd05117c7dd1439",
+        "slc_6a1250312322c9b9196022b5b4bac7b87f5acebedce7f13c4e57529de0f56163"
+      ],
+      "text": "Repository development practice: contributors should follow existing Kotlin style, write unit tests, ensure ./gradlew test passes, keep PRs focused, and follow a fork-branch-PR workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_67c0276a0c8ac364e7efe91a790646585c199771f0a3a21db615d237745e1f19",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 353,
+          "line_start": 353,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L353-L353"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 350,
+          "line_start": 350,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L350-L350"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 271,
+          "line_start": 271,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L271-L271"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 334,
+          "line_start": 331,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L331-L334"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 278,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L277-L278"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16cf63404e073717d89d156eff8d750c6c0f755b3dbebee2470821957a006c28",
+        "slc_418bc0d2b9aed7ad19ed736df809a2dae02a82c077a081b5aecaf6258711e779",
+        "slc_761a494a6b79979c462b99eb674d8906ebe89033f92cfb11dd8c8cd63d01784b",
+        "slc_7dd25dbf4d8529f5ddf27a8cc5831ba2c081905fa631b4bd22fcb72d9c8e9f90",
+        "slc_f5556bfbb45e0ec8fb1d7491e0eb1495d5f9ca43bdec4defb0067bd2e43adcce"
+      ],
+      "text": "Repository development practice: building requires Android Studio Hedgehog+, JDK 17+, Android SDK API 34, and the included Gradle 8.x wrapper; debug/release builds and unit and instrumented tests run via Gradle tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39d0b98d3dd9dda9e4f9b0ba2e016407aa721bf8374bf06a1edcb7af3ada43d7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L47-L47"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L49-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ea8d2176d15a633dec499bdfbd9ac496ee5942d991a2fe14ab1d735f2939439",
+        "slc_ce97dfafd654af9123cf1ff3dac3be35c1f28bf4334b97f4cab85c8f48c19eef"
+      ],
+      "text": "The UI uses Material Design 3 with a dark theme as primary identity, bottom-tab navigation with four sections, and dynamic color support on Android 12+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95a5fb2e98f1eb12ccf26f0165993e9d7a4a48a72334eef016a89807861cf437",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 362,
+          "line_start": 362,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L362-L362"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 378,
+          "line_start": 376,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L376-L378"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 368,
+          "line_start": 368,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L368-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24a91c8df7c2f3611a227bb64d25001239a1ebb0449cae273d113e76a7f7c2b0",
+        "slc_6ebb8ffb65f0a29eb3c42d5421c5d33d2c78820996d87e333aa07adf42e5b994",
+        "slc_85e75ee761605db276e58bbb8cd821756f0c4aac72cd8273d2c7322ffc1e9c37"
+      ],
+      "text": "The app uses HTTP Basic Authentication included in the Authorization header of every request; cleartext traffic is disabled by default except for localhost in development."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7ffc10be066676ba76f6955a7fdaa867a4de34527d6d86821e824b1d74290f4",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 405,
+          "line_start": 398,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L398-L405"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+          "line_end": 37,
+          "line_start": 32,
+          "path": "ARCHITECTURE.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md#L32-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e9975a4a7a0277d8d0894f849ece494e6f949940c38866dc52f2a351e67e270",
+        "slc_e3318f9f834622182af21c2afa4ed5f818e0fbc5f69d561ebcb6022792476837"
+      ],
+      "text": "The app targets Android 7.0 (API 24) minimum and SDK 34, is written in Kotlin, uses package ai.opencode.mobile, and is version 2.0.0 (versionCode 2)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7838936fa626d94250d46eafb08c80c9d3441c6a2a469cfb6c0b45600043de6",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 389,
+          "line_start": 389,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L389-L389"
+        },
+        {
+          "commit": "1a61870958185217232dd7056e73f3dde067710b",
+          "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+          "line_end": 391,
+          "line_start": 391,
+          "path": "README.md",
+          "repository": "mulkymalikuldhrs/opencode-android",
+          "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md#L391-L391"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25740eeb096977b9fccfef676c79d4bbc6aef64927f808a8172ed47b714ad928",
+        "slc_26f082eab1eac76dd72f6c02d6a15b1e6db7ac7a13367bc2e9fd43c4e8d6b952"
+      ],
+      "text": "The project is explicitly provided for educational and research purposes only, with authors disclaiming liability for its use."
+    }
+  ],
+  "commit": "1a61870958185217232dd7056e73f3dde067710b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 416,
+        "path": "README.md",
+        "size": 17146
+      },
+      {
+        "lines": 498,
+        "path": "ARCHITECTURE.md",
+        "size": 23824
+      },
+      {
+        "lines": 283,
+        "path": "README_id.md",
+        "size": 6989
+      },
+      {
+        "lines": 283,
+        "path": "README_zh.md",
+        "size": 6877
+      },
+      {
+        "lines": 279,
+        "path": "TERMUX_SETUP_GUIDE.md",
+        "size": 6038
+      },
+      {
+        "lines": 300,
+        "path": "CHANGELOG.md",
+        "size": 11880
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5488
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4590
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 519
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 87,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 3,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_8125f36276ad565a80c94eea493f434e",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/mulkymalikuldhrs/opencode-android/1a61870958185217232dd7056e73f3dde067710b/910c35b32f3924ae/manifest.json",
+  "package_id": "pkg_8a6c064b03022907fb87adfb775b4a6697bce9e502ece47a6e5d048e36d32a5d",
+  "repo": "mulkymalikuldhrs/opencode-android",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2b701fb14d350a8203ffc94b0bea1d284a2beff36fe870d8c26cc811c0650897",
+  "snapshot_id": "910c35b32f3924ae",
+  "sources": [
+    {
+      "commit": "1a61870958185217232dd7056e73f3dde067710b",
+      "git_sha": "e16f6930cbca68ceae1ff892b842b1ca32b0c84c",
+      "lines": 498,
+      "path": "ARCHITECTURE.md",
+      "repository": "mulkymalikuldhrs/opencode-android",
+      "sha256": "d81c7d159babb2019eacd731f637c7c6c43b6ff0329340ba9f4ab8ad916faf35",
+      "source_id": "src_e6400a023e4657958bf1eb0ac5a4ed48",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/ARCHITECTURE.md"
+    },
+    {
+      "commit": "1a61870958185217232dd7056e73f3dde067710b",
+      "git_sha": "30db82d4f091a461acacf0df37f44ba7c763731f",
+      "lines": 300,
+      "path": "CHANGELOG.md",
+      "repository": "mulkymalikuldhrs/opencode-android",
+      "sha256": "4bc939cac1da14bbdef5967d96d202798e3029ee87b6d2e7d27191ac8ad1dd96",
+      "source_id": "src_67d7fb68b428559c8d4700a0e81bdb8f",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/CHANGELOG.md"
+    },
+    {
+      "commit": "1a61870958185217232dd7056e73f3dde067710b",
+      "git_sha": "82aaa7aca06dfd60388b4e1ec9ea798ef2bfb4d7",
+      "lines": 416,
+      "path": "README.md",
+      "repository": "mulkymalikuldhrs/opencode-android",
+      "sha256": "52e54407dd713889e16bfe3895a6ecab54789a2ff39fd1754cc60fbe683bda6f",
+      "source_id": "src_3db9ebfff63a57209e2341ced72f04eb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README.md"
+    },
+    {
+      "commit": "1a61870958185217232dd7056e73f3dde067710b",
+      "git_sha": "45dd988a363524738b49dce97278699f6a89dd69",
+      "lines": 283,
+      "path": "README_id.md",
+      "repository": "mulkymalikuldhrs/opencode-android",
+      "sha256": "25b11449513a37a43c1c2de3b74a6224e968f91f4e6470a1fb71c0eeb3129331",
+      "source_id": "src_713e7fdd65165d129529ad0809296ce4",
+      "stored": "readme_id.md-31944ad6513f.md",
+      "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README_id.md"
+    },
+    {
+      "commit": "1a61870958185217232dd7056e73f3dde067710b",
+      "git_sha": "5435bedd5993c98aaf3f2a83451a8b3b88257f6d",
+      "lines": 283,
+      "path": "README_zh.md",
+      "repository": "mulkymalikuldhrs/opencode-android",
+      "sha256": "777b541ae7f32e6a4ba99a5f3a25e4e594715b6cde4dd6f5b59f7c3e3fdd1638",
+      "source_id": "src_05f1e7c40a3a556da612713dfda13172",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/README_zh.md"
+    },
+    {
+      "commit": "1a61870958185217232dd7056e73f3dde067710b",
+      "git_sha": "e0de08d650f9a27e9dd92af8d0fc80cee136b247",
+      "lines": 279,
+      "path": "TERMUX_SETUP_GUIDE.md",
+      "repository": "mulkymalikuldhrs/opencode-android",
+      "sha256": "b5065473680d75498a4793978e894e2a65844ceccdd6cb1cfc9cc24bd37dda8a",
+      "source_id": "src_b27137ed797c516f97a05adfc30afd8c",
+      "stored": "termux_setup_guide.md-724938f95774.md",
+      "url": "https://github.com/mulkymalikuldhrs/opencode-android/blob/1a61870958185217232dd7056e73f3dde067710b/TERMUX_SETUP_GUIDE.md"
+    }
+  ],
+  "summary": "Opencode Android is a documented thin-client Android app for the OpenCode AI coding agent, connecting over HTTP/SSE/WebSocket to a required server that performs all AI, shell, and file operations. Claims are drawn from README and ARCHITECTURE.md product documentation; the previously flagged Basic Auth claim was revised to remove an uncited implementation detail. Evidence coverage: 135 of 368 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

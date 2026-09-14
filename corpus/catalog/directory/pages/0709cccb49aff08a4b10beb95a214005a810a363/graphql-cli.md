@@ -1,0 +1,37 @@
+---
+name: "Graphql-Cli"
+slug: "graphql-cli"
+layout: "agent.njk"
+category: "other"
+maker: "Urigo"
+license: "MIT"
+url: "https://github.com/Urigo/graphql-cli"
+source_code_url: "https://github.com/Urigo/graphql-cli"
+source_available: "Yes"
+platforms:
+  - "CLI"
+first_released: "2017-07-17"
+current_release: "2026-06-02"
+stars: "2019"
+language: "TypeScript"
+homepage: "https://graphql-cli.com"
+mcp_support: "no"
+plugin_support: "yes"
+claude_code_plugin: "no"
+subagents: "no"
+hooks: "no"
+plan_mode: "no"
+model_providers: "none"
+pricing: "open-source"
+install_method: "npm"
+docs_url: "https://graphql-cli.com"
+plugin_docs_url: "https://github.com/Urigo/graphql-cli/blob/main/docs/CUSTOM_EXTENSION.md"
+config_docs_url: "https://graphql-config.com/docs/introduction"
+download_url: "https://npmjs.org/package/graphql-cli"
+maintained: "active"
+sources:
+  - "jim"
+what_makes_it_special: "Command line tool for common GraphQL development workflows with a modular plugin architecture where each command is a separate package; integrates with GraphQL Code Generator, Graphback, and GraphQL Inspector, and supports schema init from OpenAPI/Swagger endpoints."
+---
+
+graphql-cli is a command-line toolkit from The Guild covering routine GraphQL development workflows: project scaffolding, code generation, schema diffing, coverage analysis, validation, and a local mock server. Its architecture makes each command an independently installable npm package configured through the extensions field of a project's graphql-config file, so teams install only the commands they use and can publish their own plugins against the same interface. Because it reads the standard graphql-config file, its behavior stays consistent between the CLI and editor integrations. The project has been maintained since 2017 with a v4 line that introduced breaking changes from 3.x, and it contains no AI features — its inclusion in an agent census rests solely on its plugin architecture.

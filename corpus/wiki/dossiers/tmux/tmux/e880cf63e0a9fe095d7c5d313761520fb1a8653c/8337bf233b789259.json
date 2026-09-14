@@ -1,0 +1,458 @@
+{
+  "applied_operation_id": "op_6b0d4fd4e4bc43a6a34e16a4576ff320",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6971708f0f82f801bb8f6910b6ed8650bb7ad0ccfb91bde49be79de8c62b65c7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "56f11f8aea708bb670b15389f8d7dd953e2b1527",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "SECURITY.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SECURITY.md#L1-L1"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8cfc47b8f91d906a3e028cdec26d0d3b567603247dc819bb26af4bc282e095d9"
+      ],
+      "text": "Repository development practice: security issues are reported by email to nicholas.marriott@gmail.com per SECURITY.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abaf41c91a4195f72f30d51363a9feb9a6902999967da1567841af94b676a9ec",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L3-L3"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_053f9ecdc53e7aedd6c9e6db58321f92b80ca9428786cd0688f59fbe1712adfc",
+        "slc_be7b230b8bb46fc90d42f1a1885cb695d4b56227b9737cfb08f3ebcfc991f5ad"
+      ],
+      "text": "Repository development practice: tmux portable is maintained from two repositories — the portable repo (portability layer, autotools build files, regression tests, docs) and the tmux-openbsd-cutover repo holding OpenBSD tmux history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffe31cf9f6457fcf780241967a4e36e44e9507fef73317e0951bf56ba9418e6a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 22,
+          "line_start": 19,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L19-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e6cde6670230b9abe9fd2260eec215a25c2e6876307c51b8f1884aa6cd4e1581"
+      ],
+      "text": "Repository development practice: an update automation filters OpenBSD's usr.bin/tmux/ into an openbsd-git branch, cherry-picks new commits onto cutover master, then merges cutover master into portable master."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27c5fd616a6bb78ce44e987b77dd2849d5a1d674de895175f8fe837439961dd3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 55,
+          "line_start": 50,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L50-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6992b2ca2ac4ad36c90c8f1c2d545c6fd261447ec1fae71db63781e818e85d98"
+      ],
+      "text": "Repository development practice: the cutover repository has three branches — master (consumed by portable, tmux source only), openbsd-git (raw filtered OpenBSD history), and an orphan automation branch holding the GitHub Actions workflow so workflow files are not merged into portable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3c06bca6452961bc73c755ac617d5677c0fdba160034ac05b905170e618c5aa",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 90,
+          "line_start": 85,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L85-L90"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 83,
+          "line_start": 82,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L82-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04dcda79d9810e104e1da4f6196647ce7e6b1fca2167183a9c4e045ce093034a",
+        "slc_32e47d4850c1ce4bc295e1d2df2fb3e4c2029f1e90a9d873ec00ba003838743f"
+      ],
+      "text": "Repository development practice: the normal sync runs via a GitHub Actions workflow that blobless-clones OpenBSD src, filters usr.bin/tmux/, updates openbsd-git, cherry-picks onto cutover master, merges into portable master, and pushes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9da3ebf2dc5c7b4247249dc256fdba2993dab45209210e763aa8fd4a939069c2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 165,
+          "line_start": 164,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L164-L165"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 100,
+          "line_start": 99,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L99-L100"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 123,
+          "line_start": 121,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L121-L123"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 125,
+          "line_start": 125,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L125-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e7c8d8422d155a60e5f821f633eb212552a24d3283cb11a8941530ef130d069",
+        "slc_58fde73e9dfc6920892735eb954cbd42699f0e176fa936f61704fa1b35a2c176",
+        "slc_613c0342c7a30652516b3f7f069d11a6ce7cf3775f633eac6566a4daa7695ebb",
+        "slc_e3d4b8501f954f9d3df2273f2937a3127baa14b0208f08ff91a2acd1a1b188c1"
+      ],
+      "text": "Repository development practice: if the automated merge into portable fails, maintainers merge locally with --no-ff --log, resolve conflicts by deciding whether portable or OpenBSD owns each file, then push and rerun the workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d952bf274531ce9f46fcc62b8f7da2493203d2cf1108fff0fbc9ee5f316681f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 171,
+          "line_start": 169,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L169-L171"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 189,
+          "line_start": 184,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L184-L189"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 192,
+          "line_start": 191,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L191-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_95c0483091e875ab4ec544756df55f23f335e0f8906905d9d44ab2aa0268db6e",
+        "slc_a207adb25419e4ab1a8554906e7919c54b0f9e3c4a0f0985c24bbe88474754f5",
+        "slc_d1f4586f0b9fe607e6837e44609d739819d50bdfdc972275ac55fb5cc038ba83"
+      ],
+      "text": "Repository development practice: manual cutover updates cherry-pick the origin/openbsd-git..openbsd-git range onto cutover master and push both branches; workflow files must stay off cutover master."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e867879afd43104d0451c4171b89a378eff0933180e32bca3c879a68a7871040",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 199,
+          "line_start": 196,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L196-L199"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b41bca5c154904481fc0c41cfe234469885b1773a62b249e3673568dedecaa21"
+      ],
+      "text": "Repository development practice: much of tmux's compat/ code comes from OpenBSD libraries such as imsg, so maintainers are advised to periodically check OpenBSD libutil changes and sync relevant files into compat/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_92518f96d15259b252a258bc8fb5945243c130ed4f3068e35bc29c05c4af6bbb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 234,
+          "line_start": 229,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L229-L234"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 212,
+          "line_start": 210,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L210-L212"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 223,
+          "line_start": 222,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L222-L223"
+        },
+        {
+          "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+          "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+          "line_end": 208,
+          "line_start": 203,
+          "path": "SYNCING.md",
+          "repository": "tmux/tmux",
+          "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md#L203-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0692759c2a758a97eeb109c5bd97565469d1b29046375e557dda3415515bc3cc",
+        "slc_54b05bfb367ba27d8cafcc680da343ec214c0b49c0f6b451de04ea25eeffa307",
+        "slc_e8d0db30a92f0d49f5feda9d16b12de0066ec267ebbf2e2481c13e6f5df31872",
+        "slc_f9e0420420eb7d260abdbfa2f9bb9d220cc02655165306a36b59a7aad8344737"
+      ],
+      "text": "Repository development practice: the release process updates README and CHANGES, bumps the version in configure.ac, tags (e.g. git tag -a 2.X), builds a tarball with make dist, uploads it to a GitHub release, and updates the tmux.github.io RELEASE version."
+    }
+  ],
+  "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 234,
+        "path": "SYNCING.md",
+        "size": 6435
+      },
+      {
+        "lines": 1,
+        "path": "SECURITY.md",
+        "size": 62
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README",
+        "reason": "unsafe-path:unsupported-file-type",
+        "size": 2231
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 570,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": false,
+      "omitted": 1,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_816c9fbb64855f9e80cdb0cc13807fa5",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 9
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tmux/tmux/e880cf63e0a9fe095d7c5d313761520fb1a8653c/8337bf233b789259/manifest.json",
+  "package_id": "pkg_0e45149ad45bc73737592444f93c4125e9ddbb948312f52e09886df929314848",
+  "repo": "tmux/tmux",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a75ef0493afae25a22d808c1fa9d33d0abfb0e65f61a518085c668c9bf497ba0",
+  "snapshot_id": "8337bf233b789259",
+  "sources": [
+    {
+      "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+      "git_sha": "56f11f8aea708bb670b15389f8d7dd953e2b1527",
+      "lines": 1,
+      "path": "SECURITY.md",
+      "repository": "tmux/tmux",
+      "sha256": "7ccd2429678bb68130cbdd0ec2dc283b1002409c5136164f43f715e704eb5517",
+      "source_id": "src_1c50a70754405eada777bb2c8380364d",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SECURITY.md"
+    },
+    {
+      "commit": "e880cf63e0a9fe095d7c5d313761520fb1a8653c",
+      "git_sha": "9b710a4636d864733cd77452a60639308c7d785c",
+      "lines": 234,
+      "path": "SYNCING.md",
+      "repository": "tmux/tmux",
+      "sha256": "2918f0428e8083caf81ecdd2205ae21cdda971fa00cb84d3c2172b7f1e6fb424",
+      "source_id": "src_c2047b91d510565c9fac6ccddddd7a04",
+      "stored": "syncing.md-d014d6683876.md",
+      "url": "https://github.com/tmux/tmux/blob/e880cf63e0a9fe095d7c5d313761520fb1a8653c/SYNCING.md"
+    }
+  ],
+  "summary": "The snapshot contains only repository maintenance documentation: a security contact and SYNCING.md describing tmux's dual-repository syncing workflow, automation, manual merge procedures, and release steps. No product runtime behavior is evidenced.",
+  "superseded_claim_ids": []
+}

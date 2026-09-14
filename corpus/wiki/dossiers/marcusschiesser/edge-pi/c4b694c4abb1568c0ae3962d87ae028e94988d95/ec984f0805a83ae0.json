@@ -1,0 +1,691 @@
+{
+  "applied_operation_id": "op_aaf441acb38645dd8a67821f3a5a14df",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d874e68176a02760795f9054c986e252f513ceff1eb8f6955ed19524d1a8560e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L3-L3"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63a160129991ac1c4b752ac2720906e151061def04def8c30fcc47efbd46a4d4",
+        "slc_b2c9eb8704366120fad3fc7658557dc3d521415ff2dba3373cabda44d806c934"
+      ],
+      "text": "Edge-Pi is a lightweight coding agent library built on the Vercel AI SDK, providing primitives for tool support, session management, and context compaction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be80024b9d295bc38041217eccdd4eae86261657a919461c580876ad7d6c955a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b2c9eb8704366120fad3fc7658557dc3d521415ff2dba3373cabda44d806c934"
+      ],
+      "text": "The project positions itself as an open replacement for Anthropic's proprietary Claude Agent SDK, working with any LLM provider via the Vercel AI SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_633f2cbdd6d69285ebc9e8a15677228e1bae2ad5a90fc9e5498d7b09e26f8de8",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f2df8274fe7133d41f76599293e407be21f89059eab1ac7f2d33f8d94fc20352"
+      ],
+      "text": "The `epi` CLI is a full-featured coding agent with multi-provider support and skills, described as a proof of concept for using the SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d71fa897e9d0d658adea3b0dd229a2e0f56c543ca155465065327095becd55c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+          "line_end": 20,
+          "line_start": 14,
+          "path": "architecture.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md#L14-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c81dbee641e31c6b7daffa529d80d69bc213dbb17fde727199caf5f87b9bba97"
+      ],
+      "text": "The edge-pi core package contains CodingAgent, Tool Factory with tools, SessionManager, Compaction, and a runtime abstraction, per the architecture diagram."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_67ad10e89a7923ace210d22446d9c69172612e9134c448dc7edb3e470feee622",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+          "line_end": 12,
+          "line_start": 7,
+          "path": "architecture.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md#L7-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_80fb07478ec30867abc5dd076fe03827b9792f24afc441f60cbca4053674ab08"
+      ],
+      "text": "The edge-pi-cli package handles CLI args and modes, a model factory, auth storage/OAuth, and settings, skills, prompts, and context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_964871baad4c438d10f588df9ac25162e45c57e7ad330dbede75e17c51868bd3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+          "line_end": 28,
+          "line_start": 22,
+          "path": "architecture.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md#L22-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ac3fec1a9c3c573e8a38300b738a99820dacc8f6c010c04c7290f15e77d0a09"
+      ],
+      "text": "The architecture diagram lists external provider integrations: Anthropic SDK, OpenAI SDK, Google SDK, a GitHub Copilot endpoint, and the Vercel AI SDK ToolLoopAgent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4917f5b93f267eb7f12d19d69c5f015b87b5f82a279fe6d06a61aa9516e2da7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 33,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L31-L33"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L19-L21"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 27,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L25-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e84aa156ad8b2b4094a403807b67f8bb23a223d8739169aceea76915c4d5651",
+        "slc_cc09f1b0805cecef581ee81816bf77f054862b87e07ff8ae1a793648a35b6488",
+        "slc_fffeae7451a54ca8659fdf122e295af5f83e83e13dc1806bb1dfd570380380af"
+      ],
+      "text": "The CLI is installed globally via `npm install -g edge-pi-cli` and run with the `epi` command, with `epi --help` for more information."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c6a2d9d2b1788e90147936eebd885332bc0b7a292aa5d66e87d8dd8d5cecb631",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "dac5bd9aefca09001477b4db531761f75780703c",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/CHANGELOG.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/docs/CHANGELOG.md#L7-L7"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+          "line_end": 35,
+          "line_start": 30,
+          "path": "architecture.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md#L30-L35"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+          "line_end": 57,
+          "line_start": 48,
+          "path": "architecture.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md#L48-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9fe1c88bf420a94f5054aaf28adc0170bf304405eea51e47c839415d5a7e1adc",
+        "slc_c5aa68257361301231d064322013ff5e7a798bcd7b6c366a272d4363c7f4c97b",
+        "slc_daf5bb0899a4fe796dd85ebb8b08fb089c9e114926e448043634ab9af766857c"
+      ],
+      "text": "Sessions are persisted as JSONL files, and a changelog entry says SessionManager is integrated with CodingAgent so history is auto-restored and persisted during generate() and stream()."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_725048b93485263b33e8782ef66faa3d0c29a58d759f2a96f66ebf83751589c7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+          "line_end": 35,
+          "line_start": 30,
+          "path": "architecture.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md#L30-L35"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+          "line_end": 57,
+          "line_start": 48,
+          "path": "architecture.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md#L48-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5aa68257361301231d064322013ff5e7a798bcd7b6c366a272d4363c7f4c97b",
+        "slc_daf5bb0899a4fe796dd85ebb8b08fb089c9e114926e448043634ab9af766857c"
+      ],
+      "text": "The runtime abstraction connects tools to a local filesystem/shell environment, with optional WebContainer and Vercel Sandbox execution environments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ac1c5cf9b9d4c67b5cd3b6deaeeb5e25f2c5dde1ae1ab2abdb76107eb6ba8bf",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "6fb43c14d9a0918e471b6dfbf582b542ee8540ec",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "CONTRIBUTING.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/CONTRIBUTING.md#L38-L38"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7d65b155ef7c6e075fa613703780f0af2f8d22f2a2e17413b618f4e86b78f4b2",
+        "slc_af9dfaee1e6a11260a632c7189207b241f07e5580386fe8f20ca963608c5e602"
+      ],
+      "text": "The codebase is based on the pi coding agent by Mario Zechner, and the SDK is intentionally minimal with features that don't belong there directed to the CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3190afb783f44a3eb2985ee3cc353803ef9af2a39b57c3ba098855c90129f2dc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 28,
+          "line_start": 23,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L23-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a8a6a738fc568fcb8f9c05a736867297bcae31b5af6eeab6048591dd021fa8b"
+      ],
+      "text": "Repository development practice: AGENTS.md forbids running `npm run dev`, `npm run build`, or `npm test`, requires `npm run check` after code changes, and forbids committing unless the user asks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19fb234177892fa52e4e056ef848616f55fcbef6538e7a1f3fd6be16cd5517dd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "6fb43c14d9a0918e471b6dfbf582b542ee8540ec",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "CONTRIBUTING.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/CONTRIBUTING.md#L15-L15"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "6fb43c14d9a0918e471b6dfbf582b542ee8540ec",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "CONTRIBUTING.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/CONTRIBUTING.md#L23-L23"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "6fb43c14d9a0918e471b6dfbf582b542ee8540ec",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "CONTRIBUTING.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/CONTRIBUTING.md#L17-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b09fd4ba513a765b75656530fb73f70371f751bf07ca3bccc48fb437c3ebd62",
+        "slc_4d4c0562c9ab72fc687eeee408643a2be9b38faabadea0ab78cd29063750f746",
+        "slc_ce0ca8b16af843000bbb3d0be8b2ca8c9b55ed3116bf170be4502e6d603c740e"
+      ],
+      "text": "Repository development practice: first-time contributors must open an issue and receive a maintainer `lgtm` approval before submitting PRs, a gate intended to filter low-quality AI-generated contributions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_798cef45b4812898f3a82990ee0af671fe2e90a2626afcd1069029f3e404b123",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "6fb43c14d9a0918e471b6dfbf582b542ee8540ec",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "CONTRIBUTING.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/CONTRIBUTING.md#L27-L30"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "6fb43c14d9a0918e471b6dfbf582b542ee8540ec",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "CONTRIBUTING.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/CONTRIBUTING.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a963adbe9cf955329c2d3c4463a1393251af85de16e351f4aecf54b2c3e38a3",
+        "slc_fdf390f1a10c7f84015d218766ebad85282d3dde688ad5dc71390a148aa47c8a"
+      ],
+      "text": "Repository development practice: PRs require `npm run check` and `./test.sh` to pass, and contributors must not edit CHANGELOG.md files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4cbd1e6ec2e2d69019d4a124f1955aaa9cf52ad885e123bfea8e2fad296f78e0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L132-L132"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 152,
+          "line_start": 149,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L149-L152"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 147,
+          "line_start": 144,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L144-L147"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 142,
+          "line_start": 139,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L139-L142"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 135,
+          "line_start": 134,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L134-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b34a1628405fe62943248328aa8f4e47f6ff933d3303b640000ddf94c3be83d",
+        "slc_4770552087684cc969f89454adda6231caf4e8fa890e2b248b5545954c74cdd3",
+        "slc_4792936c85908cc82c775b1bd6b7dc02c56be908b8cb1d5c8cb0d0e2d1b2a4bd",
+        "slc_a12b6e5c24a66802f4718614df82fac967e980a0688a07e0c2dbb09450d3ad9a",
+        "slc_e442b327fcb81734921ff5ca6c829aafcc3c0f6b3c5b70c6e3c3d4bd116d2d99"
+      ],
+      "text": "Repository development practice: releases use Changesets with lockstep versioning via fixed groups, using `npm run changeset`, `npm run version`, and `npm run release`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_23fc9875d2e536a0021c76d856a7548e540004ef8e3b90fccbfdcbea24d96743",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 179,
+          "line_start": 175,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L175-L179"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+          "line_end": 169,
+          "line_start": 165,
+          "path": "AGENTS.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md#L165-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83d30f4244fa7143c17cd0586c06ab8b301be911b3c16546e8965dbb4ccc1f62",
+        "slc_951181b3acb92711f9722e733b6ed41072221f8b3a8ba72a2a92bdfa5ad8b48b"
+      ],
+      "text": "Repository development practice: parallel agents must stage only their own files with explicit paths, never use `git add -A`, and avoid destructive commands like `git reset --hard` or `git stash`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_014ed5aa1174708bc93fcb7593ee46bb4fcafd84f05c3588dd31c34f9d6886bc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L37-L43"
+        },
+        {
+          "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+          "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "marcusschiesser/edge-pi",
+          "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6be5ddf294e531fb35d1f388ca28949c51f53f05944cc13d22fa018a5b83cf98",
+        "slc_9468a245df905433bcb72cc638bafcf139bfa48291436fbe8c04d4615995340c"
+      ],
+      "text": "Repository development practice: the README documents dev commands including npm install, build, check, ./test.sh (which skips LLM-dependent tests without API keys), and ./epi.sh from the repo root."
+    }
+  ],
+  "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 49,
+        "path": "README.md",
+        "size": 1559
+      },
+      {
+        "lines": 57,
+        "path": "architecture.md",
+        "size": 1054
+      },
+      {
+        "lines": 202,
+        "path": "AGENTS.md",
+        "size": 6738
+      },
+      {
+        "lines": 38,
+        "path": "CONTRIBUTING.md",
+        "size": 1587
+      },
+      {
+        "lines": 9,
+        "path": "docs/CHANGELOG.md",
+        "size": 675
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 188,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_55064a6bfe745195bc2196d47ec55b19",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 3,
+    "tools-permissions": 0,
+    "workflows": 6
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/marcusschiesser/edge-pi/c4b694c4abb1568c0ae3962d87ae028e94988d95/ec984f0805a83ae0/manifest.json",
+  "package_id": "pkg_2e5958dd5d456bb28d3dfaab2f542abde1b92a8a82253f4b16cad4b393b69d9b",
+  "repo": "marcusschiesser/edge-pi",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0b537241033fab48c7539364da1edb2681819112f3958d82fc03ab2fcea18e3a",
+  "snapshot_id": "ec984f0805a83ae0",
+  "sources": [
+    {
+      "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+      "git_sha": "89faecb136424a2c74cbfe15649ff8205639fb56",
+      "lines": 202,
+      "path": "AGENTS.md",
+      "repository": "marcusschiesser/edge-pi",
+      "sha256": "964eb55cdf71d1bddf2480744e3b224775dcce8d2e140e8b554835dc2b052e07",
+      "source_id": "src_c32bc15fefff5c039ea319078f183c7c",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/AGENTS.md"
+    },
+    {
+      "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+      "git_sha": "6fb43c14d9a0918e471b6dfbf582b542ee8540ec",
+      "lines": 38,
+      "path": "CONTRIBUTING.md",
+      "repository": "marcusschiesser/edge-pi",
+      "sha256": "337dc30272de9a736d0dd9b4cc514bbebb2c600dfe9164568a53b39178b118ea",
+      "source_id": "src_44b022171e6a5d589d0dd7f5b44f44c9",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/CONTRIBUTING.md"
+    },
+    {
+      "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+      "git_sha": "8bf4aeefac7e220d542755a8b76a694df0a756c9",
+      "lines": 49,
+      "path": "README.md",
+      "repository": "marcusschiesser/edge-pi",
+      "sha256": "379d192919675aa7fc086c9fcc9ae2e8aaddcfcb4e2d181600c5744828fdff42",
+      "source_id": "src_2935ea53bbdb5469b681a0d0b3e804de",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/README.md"
+    },
+    {
+      "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+      "git_sha": "a5ec38b590d7f3b8b7057ed06c2c5071ee6eddfc",
+      "lines": 57,
+      "path": "architecture.md",
+      "repository": "marcusschiesser/edge-pi",
+      "sha256": "07e62fc117c38c088e1259d0790df9deb99c6b59075ea4fe06a8adde4a84fc2e",
+      "source_id": "src_ccf55178811f5c3d983967135e21c3bd",
+      "stored": "architecture.md-4e03c430fc7f.md",
+      "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/architecture.md"
+    },
+    {
+      "commit": "c4b694c4abb1568c0ae3962d87ae028e94988d95",
+      "git_sha": "dac5bd9aefca09001477b4db531761f75780703c",
+      "lines": 9,
+      "path": "docs/CHANGELOG.md",
+      "repository": "marcusschiesser/edge-pi",
+      "sha256": "0cee3a49173f2b06e51bde865d6b83e8c72163d50aeeae8aa3067a2815bb6fee",
+      "source_id": "src_d2fb357849ac554b942a7d1adb6d182e",
+      "stored": "changelog.md-2bfab3db5cc1.md",
+      "url": "https://github.com/marcusschiesser/edge-pi/blob/c4b694c4abb1568c0ae3962d87ae028e94988d95/docs/CHANGELOG.md"
+    }
+  ],
+  "summary": "Edge-Pi is a Vercel AI SDK-based coding agent SDK plus an `epi` CLI proof-of-concept, with documented architecture spanning model factories, tools, sessions, and compaction. Most other evidence covers contributor workflows (AGENTS.md, CONTRIBUTING.md).",
+  "superseded_claim_ids": []
+}

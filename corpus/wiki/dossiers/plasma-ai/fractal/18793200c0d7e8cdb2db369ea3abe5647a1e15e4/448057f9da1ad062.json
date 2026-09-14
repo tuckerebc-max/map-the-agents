@@ -1,0 +1,683 @@
+{
+  "applied_operation_id": "op_f8909e523a7743ddb94dd5b5fdd7d3b9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca8d630fc8b0ba34f6e1291385fabc70f4b6bd1706ab8de0fb0a8a679efef197",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 19,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L13-L19"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 105,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L101-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eb357e709185f6936ab61f3fb90c1589bb4bd4d636a58a1be1651a92083c71d",
+        "slc_d301f5bcf5f4d325605f46c6beba4e1087c0607a0c0729d2c448f9f1521bd0d2"
+      ],
+      "text": "Agent loops arrange into a tree of git worktrees: a node iterates toward a goal and spawns child nodes for separable subtasks, so the tree grows to fit the problem rather than following a fixed plan."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7353749749fe72459707aca87dcf12fcf1bb6fd4852ceb9398ad26fc5fe2b76f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 19,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L13-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eb357e709185f6936ab61f3fb90c1589bb4bd4d636a58a1be1651a92083c71d"
+      ],
+      "text": "Each loop is bounded by hard caps on iterations, depth, children, cost, and time, and an operator can steer or stop it at any point."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aac1b603c26d0a704e01a646184d33f08e271fdab997e7b1ea52410684c2a583",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 19,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L13-L19"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 105,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L101-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eb357e709185f6936ab61f3fb90c1589bb4bd4d636a58a1be1651a92083c71d",
+        "slc_d301f5bcf5f4d325605f46c6beba4e1087c0607a0c0729d2c448f9f1521bd0d2"
+      ],
+      "text": "All state — runs, iterations, steps, costs, and signals — is tracked in a local SQLite database that can be interacted with live in a terminal UI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38064d19540729b12ea6de440cab3b14ab349a21c6cab3023d586669bb17a657",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 32,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L23-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d4abfc05ac279eed6878abaa8ff66bdd0ef785f5f0ffffc9c99987aaa984486"
+      ],
+      "text": "Nodes run their agents without permission prompts by default: seeded configs disable approval gates (e.g. Claude bypassPermissions, Codex danger-full-access), and the per-node worktree isolates only the branch, not the filesystem or network."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbda7301173f5d07e230dd79c0f3eec4e0177d2bf7b5d88132926368e900fd47",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 112,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L107-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f87f044dad5be8238c9099598eef5d5a3d408aaa067349e4be126e18a882bc4d"
+      ],
+      "text": "Five agent backends are supported — Claude Code, Codex, Grok Build, OpenCode, and Oh My Pi — selected per node with --agent, with OpenRouter routing available via --provider=openrouter or native model ids."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ec9812806f4f85adeb4fe3c3f68d995c04650e714826ddaaa4ec1107eec2921",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 116,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L114-L116"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 124,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L118-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ef354d9f57808bf1e71087ad50662375c3b1f56ca488f04d873730585db459c",
+        "slc_48a4cbe69bbb425a4821d43120a6095104da29d02968f019093d73952bada94b"
+      ],
+      "text": "The /fractal skill takes a plain-language directive, distills NODE.md instructions and a parameter table, asks for anything it could not infer, and launches the node in a tmux session once approved."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_17fd4c65296c6d73ffa4e5be34e760b87a1e82383e0fc43bf5346128bf0e8e0c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 71,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L70-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ee71cc728bb7779b7d03292268c36c8db3aded71841bca3813df130f8e789033"
+      ],
+      "text": "The fractal CLI exposes commands such as 'fractal open' to launch the dashboard from a project root (requires an initialized fractal), with a --light flag for light terminal color schemes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05af5b814a1cbf5c2e845cc41e492577d47cae6367f9d8b4ff8c798e534f746a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 59,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L57-L59"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9c7bd0662a173032c565bc7d819adeab0958161a",
+          "line_end": 485,
+          "line_start": 484,
+          "path": "CHANGELOG.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/CHANGELOG.md#L484-L485"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 65,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L61-L65"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 53,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L51-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_279b2f56eeddf5c753f840d5dc1abe324a2e682f8e1beb65faf8bbc6ca0f2e93",
+        "slc_3428e29c95772ec8aa67443db526ac21cfead744297c760b321ba203a5987581",
+        "slc_8468ccfc6329c81f82448eb1ccbfb762a3f0da33bc014df7f3d7d8f42a1afe13",
+        "slc_91c25f7f9debd1c9c45e871ad42b22e9eba9a1166abd22580837f4025ebfe307"
+      ],
+      "text": "The package installs from PyPI as plasma-fractal (or via the fractal pointer dist); pipx/uv tool installs additionally require installing plasma-wiki, which a plain pip install pulls automatically."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d37ffad7aee44c8cc1ccf58e09bc7ab4d59413fea5ed4948e551f8dee681a5e2",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 86,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L84-L86"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 81,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L80-L81"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 76,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L75-L76"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 94,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L92-L94"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 90,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L88-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1219361ac47e71c7682ba7a81d207c5f76cfb06bfe10eb8e8c3cab340e9e6d99",
+        "slc_59854d98a2f84ef90216a198cf724d5b45fb6e0ff39b81e40778095bfd457633",
+        "slc_6eae663b039d7a9c887e392d19f875e64f1b44169bd2b086b6f389ed173055fb",
+        "slc_b2b4a2d612a7f4b03fbfe0c4c97a1182b5d765d9c7baf1f5a752e050ebf40413",
+        "slc_d1c8f92a86b229851b46e158210ed5ac2867bc5c0d59cf6f00222310aedbc28e"
+      ],
+      "text": "The fractal skill can be installed via plugin marketplace for Claude Code and Codex, or via 'fractal install', which copies or symlinks skills into ~/.claude/skills and ~/.agents/skills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2731eef859ee02b9120860244c4b1c0c7465d362958a6a9d12dc6c8c50b6f958",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9c7bd0662a173032c565bc7d819adeab0958161a",
+          "line_end": 423,
+          "line_start": 420,
+          "path": "CHANGELOG.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/CHANGELOG.md#L420-L423"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9c7bd0662a173032c565bc7d819adeab0958161a",
+          "line_end": 418,
+          "line_start": 414,
+          "path": "CHANGELOG.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/CHANGELOG.md#L414-L418"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bdb9813876e808be6c4c649f6f5e7fe960494c48278b9e7ca5e2b540f1b6886",
+        "slc_84b977a1f43edc8467e97c5bde2668e73e60fd3119a893def8295cdd3f6c4783"
+      ],
+      "text": "'node stop' waits for the in-flight agent to complete rather than tearing the running seat, and cascades over the target's entire subtree children-first; 'node kill' remains the immediate path and can reap booting spawns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_636240a2f69e93500e7e4b8ac2d65f1f31b0d95b4afa7fd55c0737bdabf90a55",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "5529f4c24c266dae0880cb5fc3b2d65f1f442eb0",
+          "line_end": 74,
+          "line_start": 72,
+          "path": "AGENTS.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/AGENTS.md#L72-L74"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 207,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L206-L207"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 204,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L202-L204"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_353fc0fe4fdd9da87979cdbfd21870a66c1c294c2088f0c68275484b6121a207",
+        "slc_b321baff5dcfc4cf44fa229bfd972c2411897731605f0aa5f29116e941375ca3",
+        "slc_d35b80b493cb1e9bd633f7fac1f24143f3fb693c692d59ca915908fcb629a8a7"
+      ],
+      "text": "Repository development practice: the test suite runs with pytest and --doctest-modules, and integration tests create real git repositories and worktrees, session-scoped to avoid repeated node-init overhead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_67119f3542a0adba768ff8a080c6c85d931708962c7b17ba3befcde6bc9afece",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 178,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L176-L178"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 230,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L229-L230"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 215,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L213-L215"
+        },
+        {
+          "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+          "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+          "line_end": 186,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "plasma-ai/fractal",
+          "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md#L184-L186"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cd470baeae11a120f6dde28da6e17ebc062d4ec4cd18677c048c01caf2646b1",
+        "slc_693d3bba5416b61830ebbf39e54eb3519a2de70f9dd955ec01994e806669cfd3",
+        "slc_813da4fd9e3f7fd8f3cf8a3a1cd98d7c614ea20de2934d474604625a70d35fd9",
+        "slc_b591cd3aaf3668f395cbaae50c0390a144b1b6a1ac33db392b630ef36492d040"
+      ],
+      "text": "Repository development practice: pull requests should branch from and target 'dev' rather than 'main', which advances only at releases; setup uses install.sh or uv sync with pre-commit hooks."
+    }
+  ],
+  "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 237,
+        "path": "README.md",
+        "size": 10275
+      },
+      {
+        "lines": 491,
+        "path": "AGENTS.md",
+        "size": 27040
+      },
+      {
+        "lines": 490,
+        "path": "CHANGELOG.md",
+        "size": 31869
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "docs/_static/fonts/OFL.txt",
+        "reason": "file-budget",
+        "size": 4455
+      },
+      {
+        "path": "docs/api.rst",
+        "reason": "file-budget",
+        "size": 158
+      },
+      {
+        "path": "docs/cli/fractal.rst",
+        "reason": "file-budget",
+        "size": 17114
+      },
+      {
+        "path": "docs/cli/index.rst",
+        "reason": "file-budget",
+        "size": 6754
+      },
+      {
+        "path": "docs/cli/node.rst",
+        "reason": "file-budget",
+        "size": 33615
+      },
+      {
+        "path": "docs/cli/plan.rst",
+        "reason": "file-budget",
+        "size": 3472
+      },
+      {
+        "path": "docs/cli/radio.rst",
+        "reason": "file-budget",
+        "size": 25667
+      },
+      {
+        "path": "docs/configuration.rst",
+        "reason": "file-budget",
+        "size": 22957
+      },
+      {
+        "path": "docs/examples.rst",
+        "reason": "file-budget",
+        "size": 8140
+      },
+      {
+        "path": "docs/going-further.rst",
+        "reason": "file-budget",
+        "size": 238
+      },
+      {
+        "path": "docs/guide/agents.rst",
+        "reason": "file-budget",
+        "size": 15877
+      },
+      {
+        "path": "docs/guide/architecture.rst",
+        "reason": "file-budget",
+        "size": 9268
+      },
+      {
+        "path": "docs/guide/getting-started.rst",
+        "reason": "file-budget",
+        "size": 13028
+      },
+      {
+        "path": "docs/guide/index.rst",
+        "reason": "file-budget",
+        "size": 247
+      },
+      {
+        "path": "docs/guide/lifecycle.rst",
+        "reason": "file-budget",
+        "size": 28891
+      },
+      {
+        "path": "docs/guide/loop.rst",
+        "reason": "file-budget",
+        "size": 35163
+      },
+      {
+        "path": "docs/guide/plans.rst",
+        "reason": "file-budget",
+        "size": 14079
+      },
+      {
+        "path": "docs/guide/radio.rst",
+        "reason": "file-budget",
+        "size": 21453
+      },
+      {
+        "path": "docs/index.rst",
+        "reason": "file-budget",
+        "size": 698
+      },
+      {
+        "path": "docs/recipes.rst",
+        "reason": "file-budget",
+        "size": 13345
+      },
+      {
+        "path": "docs/reference.rst",
+        "reason": "file-budget",
+        "size": 183
+      },
+      {
+        "path": "docs/skill.rst",
+        "reason": "file-budget",
+        "size": 17427
+      },
+      {
+        "path": "docs/tui.rst",
+        "reason": "file-budget",
+        "size": 17782
+      }
+    ],
+    "omitted_count": 24,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 355,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 27,
+      "complete": false,
+      "omitted": 24,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_97030ed4b09a55c1ba1a2f69f679e8b0",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/plasma-ai/fractal/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/448057f9da1ad062/manifest.json",
+  "package_id": "pkg_8fb14f4ec21f14f64c2922d581629b1baf26096a1cc1b3e6c9390644fbee20b0",
+  "repo": "plasma-ai/fractal",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ef61dd44f86f79d6bf70615d59a77b835b28b399bc71b9c8895d0c0032fe4c1a",
+  "snapshot_id": "448057f9da1ad062",
+  "sources": [
+    {
+      "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+      "git_sha": "5529f4c24c266dae0880cb5fc3b2d65f1f442eb0",
+      "lines": 491,
+      "path": "AGENTS.md",
+      "repository": "plasma-ai/fractal",
+      "sha256": "bd8325f1f564d52c8dbb0ef37be4f58cc27524cb33145463a901ce23475e7d65",
+      "source_id": "src_b3ac798603eb52eb84536fdc15ef8485",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/AGENTS.md"
+    },
+    {
+      "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+      "git_sha": "9c7bd0662a173032c565bc7d819adeab0958161a",
+      "lines": 490,
+      "path": "CHANGELOG.md",
+      "repository": "plasma-ai/fractal",
+      "sha256": "d45e6176de283dc9f022cb839aea234b28f155249f281bb5f89355a7bed5ca8b",
+      "source_id": "src_8065af0adf255028bd9d481965a173ba",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/CHANGELOG.md"
+    },
+    {
+      "commit": "18793200c0d7e8cdb2db369ea3abe5647a1e15e4",
+      "git_sha": "9e0fdbfc3b5c10c5f667bb794ed877b734629904",
+      "lines": 237,
+      "path": "README.md",
+      "repository": "plasma-ai/fractal",
+      "sha256": "6b179fd07ffb9a5efe97ab0c7b4109c7a11bfba9f3bdf01e6294ff68df691189",
+      "source_id": "src_aa3a00d6d7ab5ff7b5801bbcc485ea9b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/plasma-ai/fractal/blob/18793200c0d7e8cdb2db369ea3abe5647a1e15e4/README.md"
+    }
+  ],
+  "summary": "Fractal is a Python CLI/TUI tool that organizes autonomous agent loops into a tree of git worktrees with hard caps, SQLite-tracked state, and five agent backends; evidence is mostly README/CHANGELOG documentation plus contributor guidance in AGENTS.md. Evidence coverage: 108 of 117 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

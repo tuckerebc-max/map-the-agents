@@ -1,0 +1,603 @@
+{
+  "applied_operation_id": "op_ac297f1ce9c344df8a3b75b6ef87d711",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1047981bf7a5ace77373b236635df1c3c2a48a2fd9893bb6424620a34f2b94dc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 358,
+          "line_start": 358,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L358-L358"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b8427b3173b373dac1dab511bfe11013ad815e7c9a18b6b36e76a07862b4bd9",
+        "slc_bf5507d247a9bca1e9d8d25e46f2ce7445c0111daa00bf11e2950e231b61696d"
+      ],
+      "text": "The framework runs a Python hooks system that executes intelligent actions automatically across the Claude Code session lifecycle, using Ollama for smart decisions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c7c8f3ec6818cbc6b89ce396933848b7eb757f9c44c255c328a970671f7edda",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 919,
+          "line_start": 879,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L879-L919"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ab9e1dab3b9b1df8b6436981a388002749dba4bd2bd8aabfc5c412f08450d47"
+      ],
+      "text": "The layout includes .claude/hooks (core modules base_hook.py, ollama_client.py, document_manager.py, config.py, logger.py plus handler entry scripts), .claude/commands, .claude/skills, and settings.json for hooks configuration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af7447bcd959616a0fdba4f03abfe178a0702ef43fb3060d576314d3826d94fa",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 363,
+          "line_start": 360,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L360-L363"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L93-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a5a0134b3e6acea5562cd010735fc3324ecfac30ccea93f8c4b646583c7b27e",
+        "slc_85b32ce4db862a4dc5eb8b25920f883eb1d2e675cd3ecc77b6c32c629a8ffb88"
+      ],
+      "text": "The design is document-driven: three core documents (DEVELOPMENT.md, KNOWLEDGE.md, CHANGELOG.md) are read and injected at session start, replacing Memory MCP to avoid context explosion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6cf669def3ea9f68db4d73af4a2031b9795c595e0b1d114ae5e71d65c0f8d327",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 1031,
+          "line_start": 1031,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L1031-L1031"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 501,
+          "line_start": 496,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L496-L501"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f470622a23446b99ac803e60e225f2a1b8a09a88d626cb851fe3d8cdee88dfa",
+        "slc_930fb85e628fc0b83d51cacda6350fa2c31de1fbb10fe37ad06d387631667d06"
+      ],
+      "text": "All prompt templates are stored in .claude/hooks/prompts.json with variable placeholders, grouped by hook type, for tuning and version control; edits load on the next hook run without restart."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2bf68fff7ca5965dad9e5d0ebf45d22e9c413814bd08eafd34441d4c8139ed1e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 410,
+          "line_start": 409,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L409-L410"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 382,
+          "line_start": 382,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L382-L382"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b6c32a8a7fd0c6443cae4457e0a16344b21d23294b4fd975391bebac8cf4959",
+        "slc_88f732a921377a00e93c5259739abf1fecccd52959fc46e6fc53a81070ff3bdd"
+      ],
+      "text": "Hooks return JSON with an exit_code where 0 allows the operation to continue and 2 blocks it, e.g. when a dangerous command is detected."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00509537fda793b930838d331b1929656cd53e2f7b3e4879744599c38fb1a65f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 290,
+          "line_start": 288,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L288-L290"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 528,
+          "line_start": 520,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L520-L528"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d84d614fb29aa0d86b3022581fccbe9eb8a9eaa3066b21a81cdecd285166b39",
+        "slc_c5ac1a4bbf60a3a20b07890036c89badcbffed5c287d36416cbdfdee2cb7f970"
+      ],
+      "text": "Skills are invoked via slash commands like /backend-specialist; the flow reads the skill's SKILL.md, parses YAML frontmatter, and uses Ollama to optimize the prompt before executing as an expert persona."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b58ec41a536d6ae823ab3633701c9b82fadb7a415f35f8f2c64f5b0897afc72",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 701,
+          "line_start": 700,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L700-L701"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 564,
+          "line_start": 558,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L558-L564"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 550,
+          "line_start": 532,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L532-L550"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 556,
+          "line_start": 556,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L556-L556"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 821,
+          "line_start": 820,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L820-L821"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 767,
+          "line_start": 766,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L766-L767"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 595,
+          "line_start": 594,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L594-L595"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 646,
+          "line_start": 645,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L645-L646"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02f3c5841ecf1acf3945228a576748bb078893f60d2efb8703657f6ef69a61ac",
+        "slc_0d0d002f92e00d07705d310a2e3b8d1cce56c14f18e28adb445335f8897245d0",
+        "slc_2aa227559b035001015ff2ffef03085e4d39ee333177801b2f3709044f5e54af",
+        "slc_4013f48c9a2f5d14cdd63b0e23892e513e6a96617a4e415a25c340bfacff5531",
+        "slc_b5fb0e1cc25ce284d672f27679afee3ee538694d1ef01b115a4c11bea57e836c",
+        "slc_b960cb6a81633a6b6d206a63350f08373a02718b138ccbaf6764252daae2bc56",
+        "slc_f11998e85f559bc6e1cbe89ca8804dab684f08e261698aad9a62dcd660f843f3",
+        "slc_fd6a5811036fd70e06535bbea31c496ddd8aee998d5f01c71c9fdb2d04d47001"
+      ],
+      "text": "Each skill requires a SKILL.md with YAML frontmatter (shown fields: name, description, version, author) and may include a references/ directory; example skills include code-review, test-generator, api-designer, database-optimizer, and doc-writer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffdc16a1fd3c0be5de5fe38ff24a516ef21d0223596f12d7634f9472af0b2d38",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 445,
+          "line_start": 445,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L445-L445"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 441,
+          "line_start": 441,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L441-L441"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 455,
+          "line_start": 455,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L455-L455"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 262,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L258-L262"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 437,
+          "line_start": 437,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L437-L437"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 451,
+          "line_start": 449,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L449-L451"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f87fcbd590dc86f088f5b4f46f0eb3e08ad867e786b5b99a7d963ebbe60a1a1",
+        "slc_30260c2094c02f826e461607c9ad134c3beee38eba88ec09084ebc6ccba632b3",
+        "slc_358a542dc0b7fe0d73dc7f8d3af618d8471d12a7b1e18cd6dee3dbeffcbb92b3",
+        "slc_48a0d147cc94f205e73e8907d2018cffaf18d99340906ef01da014bcd557fcbe",
+        "slc_afdf030a873b6b078963d6dcf9414cfedf5f6afa883da526fffdfc6118d44ae6",
+        "slc_cf8d9246c0eaebc4fe62ac4896e32ab079949efd14d0505fdbf8da165e97d9f5"
+      ],
+      "text": "On session start, the SessionStart hook detects the project type via Ollama, scans and loads skills, initializes the document system, and checks Git configuration such as .gitignore and branch strategy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_724dcb027f0f353fe8e8236012ec42498193e55d23408d7882dde2b60af9a8dc",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 997,
+          "line_start": 965,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L965-L997"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_976600c6d6e913a9e7caa53d772e0a01442ad6a9e4c40c0bb26bc828542f36a8"
+      ],
+      "text": "The shipped settings.json grants permissions for Bash(mkdir:*), Bash(uv:*), Bash(chmod:*), Write, and Edit, and wires SessionStart, UserPromptSubmit, and PostToolUse hooks to uv-run Python scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6599a10518aad93da85dea7b59e11afc926d2a4370309761667d8205d2cbb09f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 955,
+          "line_start": 955,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L955-L955"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 235,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L232-L235"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 256,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L254-L256"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L132-L132"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 251,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L251-L251"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L109-L111"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 136,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L135-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a19e27a14437dfc0630b5d8f3e5fb35e208b98c7a7125fb8af381831fc7b5dc",
+        "slc_77a198b96cb3b7c6848f1708d34e068faaa6d3b7cb0526701ae7d20b372c448e",
+        "slc_c32ebebf1590ab0c62670da5fb49e669ac179a3cd4b47cdf7f287105e451b8f3",
+        "slc_cee42cb91c44354fa85bb2ee20bfb674f4268a11802eb4adfe7f26d2700d335e",
+        "slc_d9fe4c7c12578ff776dfa3008fb566a427a202402a9f139bec2084b21716936f",
+        "slc_e0d28b522a450f4ee48dfdabf719ffc94973840694e56526a63e140b15269cf3",
+        "slc_fabfc7a069952ad7d301dc3207c059c72251c3c8a79ac05c3a432ccbb4dee7d0"
+      ],
+      "text": "The project depends on Ollama (recommended, with gemma3:1b as the suggested lightweight model and llama3.2:3b optional) and uv for Python dependency management, with optional TTS via pyttsx3 configured through environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95bbd9ec01b6a844d1355c63697db5c3f7a9a37f0e83eb5c137fb0cb66fecac1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 1071,
+          "line_start": 1071,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L1071-L1071"
+        },
+        {
+          "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+          "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+          "line_end": 1054,
+          "line_start": 1041,
+          "path": "README.md",
+          "repository": "prorise-cool/claude-code-multi-agent",
+          "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md#L1041-L1054"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7482e387edcc03e8d9f45f1b8617e467133d4b430ad591fc2c96c4f3308f9a11",
+        "slc_fc3d233bbcbaf3b955d58a17bf60f160119227d6392f0bd94667f10cb4d3b72d"
+      ],
+      "text": "Repository development practice: contributors are told to fork the repo, create a feature branch, commit, push, and open a pull request, and to set up the dev environment with uv sync."
+    }
+  ],
+  "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1317,
+        "path": "README.md",
+        "size": 35815
+      },
+      {
+        "lines": 91,
+        "path": "CLAUDE.md",
+        "size": 5234
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 805,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_103b53853e985a8a8f4f6184eeae4595",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/prorise-cool/claude-code-multi-agent/0dc13057c17fb4591fdd5f02deb170ffacf981d2/f6186454c59968b4/manifest.json",
+  "package_id": "pkg_05f7bdd4e9564cfeda380c5e4800fd97d1d3d7f9d4a2782d74677e904c1253a2",
+  "repo": "prorise-cool/claude-code-multi-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ce256491982c34958addee11010cd557db78825720e0d2758a9d8633e92dd8a4",
+  "snapshot_id": "f6186454c59968b4",
+  "sources": [
+    {
+      "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+      "git_sha": "6241546dda6210e854d714707f67781cd539af94",
+      "lines": 91,
+      "path": "CLAUDE.md",
+      "repository": "prorise-cool/claude-code-multi-agent",
+      "sha256": "d947d24959e57f31e832e3277317ed88c656ff4200fc6e1c59caaa30514ef651",
+      "source_id": "src_f38a46e833265d469cdecf8893567eed",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/CLAUDE.md"
+    },
+    {
+      "commit": "0dc13057c17fb4591fdd5f02deb170ffacf981d2",
+      "git_sha": "744084d0bcf5be58022f6394388aefba47cb8e29",
+      "lines": 1317,
+      "path": "README.md",
+      "repository": "prorise-cool/claude-code-multi-agent",
+      "sha256": "200bd77db2852acd3832cf13f5c51c0187b6d833f5ea69c3363e75ac7f80fad0",
+      "source_id": "src_2eafaa34153e5fe5a252b19dff81cd61",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Prorise-cool/Claude-Code-Multi-Agent/blob/0dc13057c17fb4591fdd5f02deb170ffacf981d2/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The framework runs a Python hooks system that executes intelligent actions automatically across the Claude Code session lifecycle, using Ollama for smart decisions. The layout includes .claude/hooks (core modules base_hook.py, ollama_client.py, document_manager.py, config.py, logger.py plus handler entry scripts), .claude/commands, .claude/skills, and settings.json for hooks configuration.",
+  "superseded_claim_ids": []
+}

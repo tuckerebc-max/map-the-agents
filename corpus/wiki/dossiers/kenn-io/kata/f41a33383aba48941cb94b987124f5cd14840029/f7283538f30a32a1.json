@@ -1,0 +1,1046 @@
+{
+  "applied_operation_id": "op_4da85783a9e641e4b7f030e2fecda46f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ea7f8f489d5b6ec35b8382ef7a8e28bf02a6179c72919e880d6269ccf334bea",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L3-L3"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 20,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L5-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e5ec4f604e488adff9b277f38ab49ff883228e0661c4f217b4efdd98a5178b6",
+        "slc_7d8eb9a34e805859fb7cea7b2d9e0f3c57887db6b8367d3c4facfcbc9caae89d"
+      ],
+      "text": "kata is a durable task ledger for coding agents and humans: agents create, claim, relate, and close issues with evidence via CLI, while humans supervise in a terminal UI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7558ec539179c9b0b5fb17d46dba15625093c92aca35bbcbfbbfb1866c250621",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L11-L13"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 120,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L109-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_95eaaeb42dfc1ecf63c77e3bfa20bc196b49eba290458cf307bac6e89bf40f73",
+        "slc_cd6f8efbee49d81c80f30155e654411a7617333b8fcbe0f5ddb587dbef0d1b01"
+      ],
+      "text": "The product ships as one Go binary with a CLI, a long-lived daemon, a TUI, and a browser UI served by the daemon with no separate backend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00e40100e2d03306aae4a59f12b46d255a26fd1fb10d9dd744ec3f3b94cdeb7f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 20,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L5-L20"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 120,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L109-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7d8eb9a34e805859fb7cea7b2d9e0f3c57887db6b8367d3c4facfcbc9caae89d",
+        "slc_cd6f8efbee49d81c80f30155e654411a7617333b8fcbe0f5ddb587dbef0d1b01"
+      ],
+      "text": "By default issue state lives in a local SQLite database under KATA_HOME; teams can opt into a remote daemon or federation, and a shared daemon can use Postgres via KATA_DSN."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a93491b1c047b51d85a89b0e727b42c6a4d70169445e82ef1e16ead53e4c486",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 53,
+          "line_start": 47,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L47-L53"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 20,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L5-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ded19ad812834fc6ee90adfbc71246d55346854f9c07fc2507da88e1245310a",
+        "slc_7d8eb9a34e805859fb7cea7b2d9e0f3c57887db6b8367d3c4facfcbc9caae89d"
+      ],
+      "text": "All reads and writes go through kata's HTTP API; no client opens SQLite or Postgres directly, and a Go app can mount the listener-free service in-process."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22c69789f13d00e4cc72b49dc5ad28928c01efea182316a37a049d6e99ab22d5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L15-L18"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 120,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L109-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ad0d5c8a434ab38435a2d79a718f94ade27e6c5670dbd62dccd219ecc6a9e3c",
+        "slc_cd6f8efbee49d81c80f30155e654411a7617333b8fcbe0f5ddb587dbef0d1b01"
+      ],
+      "text": "The CLI offers agent-oriented ergonomics: stable short refs, --json and --agent output, idempotent creates, semantic-aware search, a claim flow, and predictable failure modes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a667136be04ff445a4314681169935c2946185001a53320c731d2f92174a6d3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 100,
+          "line_start": 89,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L89-L100"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 87,
+          "line_start": 86,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L86-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_107b8524b5c4c9009aa02a4606722ad2eb2a7688853e7802b668d354a6e67205",
+        "slc_25192760c404293ca186f32be37ed51ed0892784943957d40d9c4b5f121ec879"
+      ],
+      "text": "Projects are bound to workspaces explicitly via a committed .kata.toml, never inferred from the current directory; outside a bound workspace every command except kata init fails with project_not_initialized."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d3002806729950234aaffc9759ad092cfbd88ac69489d08cef8df52280d327b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 112,
+          "line_start": 104,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L104-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25abe0d2e116de1f9f243dde501f4ac97234ade4d98579d4ef49af6b80feb042"
+      ],
+      "text": "Workspace identity derives from the normalized git remote URL rather than the filesystem path, so clones resolve to the same project; one git repository attaches to exactly one project."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0069618a1905deb33c4a79b04f7b94e692c96adbd183f122581c028cddf9779a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 170,
+          "line_start": 167,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L167-L170"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 120,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L109-L120"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 179,
+          "line_start": 172,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L172-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a34adc00dbe00effe11599c1adb71f0026577ed15c70f31c2972567167d753a",
+        "slc_cd6f8efbee49d81c80f30155e654411a7617333b8fcbe0f5ddb587dbef0d1b01",
+        "slc_f7f3d2310290422b96354177e0c770493e560dec805157decacdaa644f073158"
+      ],
+      "text": "Closing an issue is an explicit API mutation carrying a reason, message, typed evidence, and actor attribution; kata never infers closure from git history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e3425fb2166eb68f9fdb901185b35e92b3106eab6b25f1057027a73901f37c1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 32,
+          "line_start": 25,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L25-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_853b9e49b5be2a024291eabd41c360c06691672e5675ba62fdf702e0b55a58bc"
+      ],
+      "text": "The surface is deliberately small: three relationship types, labels, owners, comments, and a constrained integer priority 0-4; there is no in_progress status, severity field, threaded replies, reactions, attachments, or markdown rendering."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d761045d120ea8923262dbdeef993672c801706f18f46f8bb703e82304d9a4b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L20-L23"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 163,
+          "line_start": 160,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L160-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_442c955dd7cbf0796049350f64daf5441373a59278ceb7c017fe06f6efa9f137",
+        "slc_b3a20587b1e0538665557753cc6e4a85418afbb80a869a78d37713ec57ecf6ff"
+      ],
+      "text": "Every state change appends to an immutable event log with the actor recorded; actors are free-form snapshots on events, not foreign keys, and there is no global user registry."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_970a78ae79337d59265c6517bb5db2f6b618efc17772bf26735c3df95c7e145b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 195,
+          "line_start": 186,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L186-L195"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 184,
+          "line_start": 183,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L183-L184"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d084558596d87946c23ac86524252bf21149a6e0f0876d543c991a2a07265888",
+        "slc_f19a9ac8fb70f91cf96b9da955461b9aef2dfbe1d2cd9933f5f07a8baa47f288"
+      ],
+      "text": "Hooks run local commands after database commit on a bounded worker pool, invoked without a shell via exec.Command with event data as JSON on stdin; hooks are not a sandbox and run with the daemon's OS user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c52c55eccbd5b2c6970defb70c71ad8b502d7ea2e24c19825928526eb60a8e3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 149,
+          "line_start": 141,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L141-L149"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 125,
+          "line_start": 120,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L120-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b46859e0174aa29d7b233b5cb40ab6763b06bd31d2937cfe84a4ca454ffed794",
+        "slc_bbf05df1606171a8bd499efd03af2522400b0d72c8f26074975afa99697a2bef"
+      ],
+      "text": "Local mode trusts the OS user with no authentication on a Unix socket or loopback listener; shared/remote modes require a bearer token and explicit trust opt-in before credentials cross a plaintext non-loopback connection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_89e6452e8b4e8fd72736a2a91c39c87bf02b8a3ac5d94656580e0409a83deccc",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 125,
+          "line_start": 120,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L120-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bbf05df1606171a8bd499efd03af2522400b0d72c8f26074975afa99697a2bef"
+      ],
+      "text": "The loopback HTTP server rejects non-empty Origin headers, requires application/json Content-Type on mutations, and emits no CORS headers to resist drive-by browser requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e78ed48a486b339474f3c80394ef7cb852392df2973ed88bd44f00e912a91e4",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 43,
+          "line_start": 36,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L36-L43"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 120,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L109-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_010d4e2a4ee75597d6e6b1b7f2d8be039169d388bc5d47766b021d0b6b9c7b10",
+        "slc_cd6f8efbee49d81c80f30155e654411a7617333b8fcbe0f5ddb587dbef0d1b01"
+      ],
+      "text": "kata uses pure-Go SQLite via modernc.org/sqlite with no CGO, a Huma-based HTTP API over a Unix socket, and claims no runtime dependencies beyond the single binary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea2766fb551d3f1dade01d0efad98044e1306d493c4a47acb41a524aee85aab8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 71,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L69-L71"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 63,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L60-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27d5660c007d55d2b8617a2627a9662efb83af61f8771254c4c1834b7aa2d709",
+        "slc_beb9903c8ac1f53a8f0a4776b5ed295bd2a73da3c30ebc6ebd67694ec5a47769"
+      ],
+      "text": "Building from source requires Go 1.27 or later; module-source installs include the CLI, daemon, and TUI but not the compiled browser bundle needed for `kata ui`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_960e338f85662cc0c11127b6beb4ae253fe01e2900c159e686918c1478ef2d5a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 230,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L228-L230"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d3b608053c491579f068a3f3b0d7766a1c7a22e92a01df05affda45883c2d6e"
+      ],
+      "text": "Repository development practice: contributors should see docs/development/contributing.md for repository layout and local checks including make test, make lint, make vet, and make nilaway."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba58060823cb522ae4a6d787c5fda77807758d646cc0968665252665c62fd0eb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 183,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L178-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d94d3ea17fa4c99ee4b268e1455b4300f0868ba0c4f32d4f7cd4bc7285e4679"
+      ],
+      "text": "kata quickstart (alias kata agent-instructions) prints an operating contract for coding agents: search before creating, pass idempotency keys, prefer --agent output, claim work, and close only verified work with evidence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_668d7dd62c30f29502c922545840f93b4560fba604e36c08db8b26a90b460872",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 105,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L100-L105"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 224,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L221-L224"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33a206a06f9972077f24fc0fa24981eb5a797feaa6ce4d7e11b844c6a5d63734",
+        "slc_737b8477b05664a1aadf77ef623d42acb3c46be42bec2b92e01c47445dd5eef8"
+      ],
+      "text": "kata init --with-agents writes a managed briefing into AGENTS.md/CLAUDE.md without overwriting existing content, and --with-codex-hooks installs structured Codex SessionStart hooks in .codex/hooks.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7dbb4dd46e57259ad759c2c67680af5cc34dab6e9cfbd95fda4154a0cd21a92f",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 126,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L124-L126"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+          "line_end": 144,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md#L136-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_084ff3d404f275eded50f1fe759e70ebf57b1913b0a2921db7bfff180ee96e16",
+        "slc_b8880c24f1714c05576ae535aa7d5e2c3c6599a7854e63da81d55fee81fe26f1"
+      ],
+      "text": "kata is intentionally not a project-management suite, git workflow engine, agent worker pool, or SaaS tracker; it does not ride git remotes for sharing, relying on the remote daemon and federation instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6535b61aee64a46d6b5d041021467c3238e8df80651fc688e233d709c10108e2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+          "line_end": 223,
+          "line_start": 216,
+          "path": "docs/design/architecture.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md#L216-L223"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c9ae50c6c3bf852fb1a70f8efca8fb1e4d27b74fd71d3f26195c6d01a323b4d2"
+      ],
+      "text": "Permanent non-goals include workspace-local behavior overrides, per-issue SSE subscriptions, bulk mutation endpoints, remote webhooks, and a (kata-#N) commit-message convention."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2cb762dd951f0df0bc2aa614f13ca8aa4c7feaf13a95ec1136cdf1683d910641",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "4680ea315daa139d45a0a559d7328a41b94da3d2",
+          "line_end": 139,
+          "line_start": 135,
+          "path": "docs/design/autostart-idle-shutdown.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/autostart-idle-shutdown.md#L135-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e9c0eccac019a0d3089aadfaa997233ada6dd8c5c9438b659f31dbb7b601ed1c"
+      ],
+      "text": "On an idle-enabled auto-start daemon, scheduled work is opportunistic: timers do not keep the process resident, so continuous sync, federation, timed claims, embeddings, or hooks need an explicit service-managed daemon."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16169b53e2cc0e4832f4a8f9eee939ee0aa5b6f4c8d37ddc2a7e78cae1340972",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "4680ea315daa139d45a0a559d7328a41b94da3d2",
+          "line_end": 27,
+          "line_start": 23,
+          "path": "docs/design/autostart-idle-shutdown.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/autostart-idle-shutdown.md#L23-L27"
+        },
+        {
+          "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+          "git_sha": "4680ea315daa139d45a0a559d7328a41b94da3d2",
+          "line_end": 9,
+          "line_start": 3,
+          "path": "docs/design/autostart-idle-shutdown.md",
+          "repository": "kenn-io/kata",
+          "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/autostart-idle-shutdown.md#L3-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d5141f08eb7ddbcc4f6978ce1aa54d90b6cc0ec6514a0459cefd27c449383cc",
+        "slc_5da49345e12910118af44d9c894d289fdc7245af03e244ef391c0fd35b54c83c"
+      ],
+      "text": "Clients auto-start a local daemon when none is reachable; an autostart_idle_timeout lets such a narrowly scoped daemon exit after foreground use stops, while explicit daemons remain long-running."
+    }
+  ],
+  "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 230,
+        "path": "README.md",
+        "size": 9561
+      },
+      {
+        "lines": 223,
+        "path": "docs/design/architecture.md",
+        "size": 12999
+      },
+      {
+        "lines": 691,
+        "path": "docs/reference/configuration.md",
+        "size": 32600
+      },
+      {
+        "lines": 130,
+        "path": "docs/index.md",
+        "size": 6012
+      },
+      {
+        "lines": 61,
+        "path": "docs/llms.txt",
+        "size": 2832
+      },
+      {
+        "lines": 139,
+        "path": "docs/design/autostart-idle-shutdown.md",
+        "size": 7324
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/design/data-model.md",
+        "reason": "file-budget",
+        "size": 12855
+      },
+      {
+        "path": "docs/design/federation.md",
+        "reason": "file-budget",
+        "size": 39371
+      },
+      {
+        "path": "docs/design/github-sync.md",
+        "reason": "file-budget",
+        "size": 6642
+      },
+      {
+        "path": "docs/design/hosted-mode.md",
+        "reason": "file-budget",
+        "size": 1560
+      },
+      {
+        "path": "docs/design/index.md",
+        "reason": "file-budget",
+        "size": 943
+      },
+      {
+        "path": "docs/design/semantic-search.md",
+        "reason": "file-budget",
+        "size": 33334
+      },
+      {
+        "path": "docs/development/deploying-docs.md",
+        "reason": "file-budget",
+        "size": 4255
+      },
+      {
+        "path": "docs/development/embedding.md",
+        "reason": "file-budget",
+        "size": 18807
+      },
+      {
+        "path": "docs/development/packaging.md",
+        "reason": "file-budget",
+        "size": 4220
+      },
+      {
+        "path": "docs/development/postgres-migrations.md",
+        "reason": "file-budget",
+        "size": 3211
+      },
+      {
+        "path": "docs/get-started/install.md",
+        "reason": "file-budget",
+        "size": 5924
+      },
+      {
+        "path": "docs/get-started/quickstart.md",
+        "reason": "file-budget",
+        "size": 8692
+      },
+      {
+        "path": "docs/guide/comparisons.md",
+        "reason": "file-budget",
+        "size": 4279
+      },
+      {
+        "path": "docs/guide/concepts.md",
+        "reason": "file-budget",
+        "size": 5001
+      },
+      {
+        "path": "docs/guide/migrating-from-beads.md",
+        "reason": "file-budget",
+        "size": 7070
+      },
+      {
+        "path": "docs/guide/semantic-search.md",
+        "reason": "file-budget",
+        "size": 10122
+      },
+      {
+        "path": "docs/guide/web-ui.md",
+        "reason": "file-budget",
+        "size": 6505
+      },
+      {
+        "path": "docs/guide/workspaces-projects.md",
+        "reason": "file-budget",
+        "size": 5046
+      },
+      {
+        "path": "docs/operations/agent-orchestration.md",
+        "reason": "file-budget",
+        "size": 13782
+      },
+      {
+        "path": "docs/operations/backup-restore.md",
+        "reason": "file-budget",
+        "size": 7235
+      },
+      {
+        "path": "docs/operations/federation.md",
+        "reason": "file-budget",
+        "size": 43676
+      },
+      {
+        "path": "docs/operations/github-sync.md",
+        "reason": "file-budget",
+        "size": 10305
+      },
+      {
+        "path": "docs/operations/hosted-mode.md",
+        "reason": "file-budget",
+        "size": 2728
+      },
+      {
+        "path": "docs/operations/postgres.md",
+        "reason": "file-budget",
+        "size": 13379
+      },
+      {
+        "path": "docs/operations/remote-daemon.md",
+        "reason": "file-budget",
+        "size": 15618
+      },
+      {
+        "path": "docs/reference/agent-output.md",
+        "reason": "file-budget",
+        "size": 12255
+      },
+      {
+        "path": "docs/reference/cli.md",
+        "reason": "file-budget",
+        "size": 45088
+      },
+      {
+        "path": "docs/reference/connector-protocol.md",
+        "reason": "file-budget",
+        "size": 6590
+      },
+      {
+        "path": "docs/reference/daemon-discovery.md",
+        "reason": "file-budget",
+        "size": 4140
+      },
+      {
+        "path": "docs/reference/http-api.md",
+        "reason": "file-budget",
+        "size": 28713
+      },
+      {
+        "path": "docs/reference/mcp.md",
+        "reason": "file-budget",
+        "size": 17053
+      },
+      {
+        "path": "docs/reference/metadata.md",
+        "reason": "file-budget",
+        "size": 8888
+      },
+      {
+        "path": "docs/screenshots/README.md",
+        "reason": "file-budget",
+        "size": 2269
+      },
+      {
+        "path": "docs/website/guide.md",
+        "reason": "file-budget",
+        "size": 4692
+      },
+      {
+        "path": "docs/website/index.md",
+        "reason": "file-budget",
+        "size": 6111
+      },
+      {
+        "path": "docs/workflows/sharing.md",
+        "reason": "file-budget",
+        "size": 2409
+      },
+      {
+        "path": "docs/website/fonts/licenses/Inter-OFL-1.1.txt",
+        "reason": "file-budget",
+        "size": 4380
+      },
+      {
+        "path": "docs/website/fonts/licenses/JetBrains-Mono-OFL-1.1.txt",
+        "reason": "file-budget",
+        "size": 4398
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 22463
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "docs/changelog.md",
+        "reason": "file-budget",
+        "size": 53092
+      },
+      {
+        "path": "docs/development/contributing.md",
+        "reason": "file-budget",
+        "size": 5279
+      },
+      {
+        "path": "docs/workflows/agents.md",
+        "reason": "file-budget",
+        "size": 10727
+      }
+    ],
+    "omitted_count": 43,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1734,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 49,
+      "complete": false,
+      "omitted": 43,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6980fe2a40e15d21985258af7a5a3dfc",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 4,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 3,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/kenn-io/kata/f41a33383aba48941cb94b987124f5cd14840029/f7283538f30a32a1/manifest.json",
+  "package_id": "pkg_d026ce8433c3d525bbe8d8a864901ece76dec118e78f6943e0907d2a0d18e781",
+  "repo": "kenn-io/kata",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "09ec0d0972099c900f3cb44dbcce9c9c6ee9ed2750a52892548539da731226c1",
+  "snapshot_id": "f7283538f30a32a1",
+  "sources": [
+    {
+      "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+      "git_sha": "bd2861e5a466b56e1523b89dcba5fa67ee3ba3e1",
+      "lines": 230,
+      "path": "README.md",
+      "repository": "kenn-io/kata",
+      "sha256": "069017289e105c9cb90f962c4f0ae6d35fb9843619b353293472f5650a91712a",
+      "source_id": "src_b7638ca697075274a0e1a3eb1157bafe",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/README.md"
+    },
+    {
+      "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+      "git_sha": "be64daf8afb2185f68de75218f60338efabf7ab1",
+      "lines": 223,
+      "path": "docs/design/architecture.md",
+      "repository": "kenn-io/kata",
+      "sha256": "2fb91f69a9763a60a147f3e5bdbb0ca65c8f09461c7f1060c1dc19d990e7e7ad",
+      "source_id": "src_f8e530c979eb5711b2ebbde75659c344",
+      "stored": "architecture.md-6eaa01b68d81.md",
+      "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/architecture.md"
+    },
+    {
+      "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+      "git_sha": "4680ea315daa139d45a0a559d7328a41b94da3d2",
+      "lines": 139,
+      "path": "docs/design/autostart-idle-shutdown.md",
+      "repository": "kenn-io/kata",
+      "sha256": "314f3706125988ed7833c76a101cd7a46df82acb04349bf9456d88d394971cee",
+      "source_id": "src_c2d21531c29051979a0326fc4156b243",
+      "stored": "autostart-idle-shutdown.md-6c7b7a0c5876.md",
+      "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/design/autostart-idle-shutdown.md"
+    },
+    {
+      "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+      "git_sha": "904d6566f3647c1b706b07e58c90ae221a834fe9",
+      "lines": 130,
+      "path": "docs/index.md",
+      "repository": "kenn-io/kata",
+      "sha256": "0da303631b9a9468e59252c6b219b63f84b2a64402393dfaf0b9b6b475c23894",
+      "source_id": "src_5016410ef55151a79f8bdb117e1d230d",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/index.md"
+    },
+    {
+      "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+      "git_sha": "337179bafe162abd141b6031602cb6b88e4736be",
+      "lines": 61,
+      "path": "docs/llms.txt",
+      "repository": "kenn-io/kata",
+      "sha256": "6ebb5b61099d957e36b8aaf01639eaf7c026c45cec718f23f3e63c1294dfe177",
+      "source_id": "src_7fd20564584b5ad3b7d44d0513bafd96",
+      "stored": "llms.txt-c3766b99af4d.txt",
+      "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/llms.txt"
+    },
+    {
+      "commit": "f41a33383aba48941cb94b987124f5cd14840029",
+      "git_sha": "088245ddc089153abd078d513bbed4d1ab3c8e1f",
+      "lines": 691,
+      "path": "docs/reference/configuration.md",
+      "repository": "kenn-io/kata",
+      "sha256": "81bc1d313e33233981ec4b42c30219dc9d91d3002773c5b840d5f5f71643ae63",
+      "source_id": "src_1931f2a1efd75e7d81f9b7e86b81bde5",
+      "stored": "configuration.md-5812cf0d04cc.md",
+      "url": "https://github.com/kenn-io/kata/blob/f41a33383aba48941cb94b987124f5cd14840029/docs/reference/configuration.md"
+    }
+  ],
+  "summary": "kata is a durable task ledger for coding agents and humans: agents create, claim, relate, and close issues with evidence via CLI, while humans supervise in a terminal UI. The product ships as one Go binary with a CLI, a long-lived daemon, a TUI, and a browser UI served by the daemon with no separate backend. Evidence coverage: 122 of 232 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

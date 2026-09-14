@@ -1,0 +1,508 @@
+{
+  "applied_operation_id": "op_b0bc20a177c643068b2ac516fec98e43",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_532b10bde929022cee04542b26cdb8863958e14e4f4147c9deb75815d8c8a783",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L3-L3"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0254fc7102e321b1c891204beccca6c433f36e4ef5a653f4be5eff9cfe5892e8",
+        "slc_aacbd2fa520a88bc22500ec299d3742dbcf5f2c8e6c8915e940f2d49784b7db6"
+      ],
+      "text": "TypeChat is a library for building natural language interfaces using types, replacing prompt engineering with schema engineering."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f97560752a84efde2f19f2f57b465a5a28565a0cd5af09a7c7fbc3754326c52",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_348779bcd092b4d017be84621a04e58550bcf0253dacec1d9d65f52eb99e4529"
+      ],
+      "text": "Developers define types representing supported intents, from simple sentiment classification to complex schemas like shopping carts or music apps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e110ca5bc9af171f6664a5f13c876e8ff70e185056b53c30c00ec9d6f873b2bb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_348779bcd092b4d017be84621a04e58550bcf0253dacec1d9d65f52eb99e4529"
+      ],
+      "text": "Schemas can be extended by adding types to a discriminated union, and made hierarchical via a meta-schema that selects sub-schemas from user input."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_833b73fc6fcb8c19819e08dd75a0cea1cff58094a461d768b704cb27450210ba",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_525e99ce2b02b9bada680ee4c7354089fb228860fdff31c4e648400880d6e094"
+      ],
+      "text": "TypeChat's pipeline: builds an LLM prompt from the types, validates the response against the schema, and repairs invalid output through further model interaction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b39565381a90c73d1973b5d86ba82d4504246e11cbc9f91e7da9121b5824cdc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_525e99ce2b02b9bada680ee4c7354089fb228860fdff31c4e648400880d6e094"
+      ],
+      "text": "After validation, TypeChat summarizes the resulting instance succinctly without using an LLM to confirm alignment with user intent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95141e5104f1d5ceb2589152e36b25d1a42396038a93da37f965079cb19d7f0e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L41-L43"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L23-L25"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7a122e7a330901e70190c9ee9aad98009efdd6ca2712cf7482be79194fd9535",
+        "slc_d2f84efc495393138d8fa467174c38909738d6690bca1e8818f8ad21a98cd99d",
+        "slc_e9962956db04579c5f2b0aef9420abcc2d19804a6707533bdf1e49ef6ca31d5e"
+      ],
+      "text": "The TypeScript/JavaScript package is installed via npm install typechat; Python and C#/.NET variants exist, with .NET hosted in a separate TypeChat.net repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1ab767e14284b8f7931aaf04f85dc87163584baa15c8e8bf2c3a3fa599e97b6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L47-L47"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57aa0673b02b1c1b5eae835d86e4b4e8183c2cd0ea1c74d0208ea915af60d88f",
+        "slc_f2798adee14894d037a2fca35ba5e666346fcbe535252e75e772bb7e0bc3eb51"
+      ],
+      "text": "Example projects live under typescript/examples and can be run locally or in a GitHub Codespace; documentation is hosted at microsoft.github.io/TypeChat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e965e0095096478658bda15e03ee67bae21f69fe50f67ebd798df3e44983e30",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 57,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L55-L57"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 53,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L51-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a080fda2f76696d7f1693b80fb060c3009a2198b562c7d0566da15a8a27111d",
+        "slc_eed1a5bedd1d09787047d9da88d698182858a1434a06e241ea201574ba76759b"
+      ],
+      "text": "Repository development practice: contributions require agreeing to a Contributor License Agreement, with a CLA bot decorating pull requests to determine status."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05c69a67ddc6f59acf6925fecd08da692e8e4509a1e112e765fd4df62a0289be",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "f9ba8cf65f3e3104dd061c178066ec8247811f33",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/CODE_OF_CONDUCT.md#L3-L3"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+          "line_end": 61,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md#L59-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_102f0ce5934e8451cfa31e34f26dfacdd73bdafb45e4574e477c0e510c257507",
+        "slc_fed92644014507f122b0ff5189ce65e1fe0cee348e744413f6a91d2cd5b34b93"
+      ],
+      "text": "Repository development practice: the project adopts the Microsoft Open Source Code of Conduct, with questions directed to opencode@microsoft.com."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_633fc8f798ebd83452a9e608fb486c1bb293190a57d1ca935f7d4efda0751b99",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "e138ec5d6a77c5e6e09346a69cbdc90c85a3806f",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "SECURITY.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SECURITY.md#L13-L13"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "e138ec5d6a77c5e6e09346a69cbdc90c85a3806f",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "SECURITY.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SECURITY.md#L11-L11"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "e138ec5d6a77c5e6e09346a69cbdc90c85a3806f",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "SECURITY.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SECURITY.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_256a26e8bd620c8976de3419be52a2fd44cdd1d8f1683b274d658b855983eb7d",
+        "slc_619282c1e3a8a8687956ca5ec3b2d630cfb4da8c41cd335c2466c4a87b131bb4",
+        "slc_6de266bcc63c3835d1dcc82d5d4e4cdc3c0ae35e26c7cde0c8d1f0bf44875e26"
+      ],
+      "text": "Repository development practice: security vulnerabilities must not be filed as public GitHub issues; they go to MSRC via its report form or secure@microsoft.com, preferably encrypted with Microsoft's PGP key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a9010f0c190ff7f4944ef91b666c6708cf6fda6be5ea4d01b0618b78ff206f08",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "09ff9afcf609fb24cb62a2236b205b1dc86855fd",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "SUPPORT.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SUPPORT.md#L5-L7"
+        },
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "09ff9afcf609fb24cb62a2236b205b1dc86855fd",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "SUPPORT.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SUPPORT.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_124c5026937f492c033a0750a7daae4f8b9f5c8d690f49861e693c106f883fe3",
+        "slc_79cc7d5e2037138bd8d5328c694cf5846f0d4df460c31053352096a1ed2f27b3"
+      ],
+      "text": "Repository development practice: bugs and feature requests are tracked via GitHub Issues (search first for duplicates), while usage questions go to GitHub Discussions or Stack Overflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_82ce99fd8b0d3c37efd0f0c08a57b835102217be22c10a70e75874913fab79e2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+          "git_sha": "09ff9afcf609fb24cb62a2236b205b1dc86855fd",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "SUPPORT.md",
+          "repository": "microsoft/typechat",
+          "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SUPPORT.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e988c8c6dd07c8c4fb12ae3f0ada333acfd39faab83828b4e09413d7a942105d"
+      ],
+      "text": "Support for the project is limited to the listed community resources; Microsoft does not provide additional support channels for it."
+    }
+  ],
+  "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 69,
+        "path": "README.md",
+        "size": 3841
+      },
+      {
+        "lines": 13,
+        "path": "SUPPORT.md",
+        "size": 499
+      },
+      {
+        "lines": 9,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 444
+      },
+      {
+        "lines": 41,
+        "path": "SECURITY.md",
+        "size": 2757
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 276,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_65aef9213aab536c91fa605cee3f4620",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/microsoft/typechat/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/607b40318815028b/manifest.json",
+  "package_id": "pkg_093940a47f0ef7630430c9ac5fb107fe89da1db739fe15f73ac6403e74763d7b",
+  "repo": "microsoft/typechat",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "75bea0f61908c82eb37db7d215d6ea716dd4e24fa7f054f52b359768990370e3",
+  "snapshot_id": "607b40318815028b",
+  "sources": [
+    {
+      "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+      "git_sha": "f9ba8cf65f3e3104dd061c178066ec8247811f33",
+      "lines": 9,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "microsoft/typechat",
+      "sha256": "9daeae709a0bd71bcfd1c96dc5822ecec5210327eff929da64b0ae7f8faf1444",
+      "source_id": "src_34a647d6709350ea99548a36a5505352",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+      "git_sha": "4513aa5965101ad22aff9b7c40c10ffee264403b",
+      "lines": 69,
+      "path": "README.md",
+      "repository": "microsoft/typechat",
+      "sha256": "7de12cb3b53a4430c90c3eefb46ba802d46f9fdd8caecbed362dd70b4effde5c",
+      "source_id": "src_aed61469778d5f4da9cea1dc23c8db47",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/README.md"
+    },
+    {
+      "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+      "git_sha": "e138ec5d6a77c5e6e09346a69cbdc90c85a3806f",
+      "lines": 41,
+      "path": "SECURITY.md",
+      "repository": "microsoft/typechat",
+      "sha256": "430987b8c5f30c366ecd501bc344c8b29b6280e8a10174376a769f7443a187cd",
+      "source_id": "src_d7a08019d3245165ae65b638946ef10a",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SECURITY.md"
+    },
+    {
+      "commit": "83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc",
+      "git_sha": "09ff9afcf609fb24cb62a2236b205b1dc86855fd",
+      "lines": 13,
+      "path": "SUPPORT.md",
+      "repository": "microsoft/typechat",
+      "sha256": "04582c21dca3eb8532d12b3f51fb6e4b6dcc27458f2b223b6eb01c36bbb8da56",
+      "source_id": "src_2da9c7d11a66541295b98273de6c5e98",
+      "stored": "support.md-c5fe610b0215.md",
+      "url": "https://github.com/microsoft/TypeChat/blob/83caa1242d9a9a707a4a66bfbc5fe6174cbcb8dc/SUPPORT.md"
+    }
+  ],
+  "summary": "Evidence is limited to the top-level README and community/support files of microsoft/typechat. It documents TypeChat as a library for building natural-language interfaces from types, its schema-engineering approach and pipeline, plus contribution, security, and support policies; no code internals are shown.",
+  "superseded_claim_ids": []
+}

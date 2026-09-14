@@ -1,0 +1,533 @@
+{
+  "applied_operation_id": "op_cb38dc0b2a8640328cc6a61c9cf8003d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a1f7bdc44b030bb0cd5e85635d43795e9c9ed65c1f2c68c1aae310c0d21ad06",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "e175e5976015d7851bfdb12321cd8e4901c31c64",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/README.md#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d9b94daf3c5d4c7b3cde0e9703c3d30c65be38729d046069f8411a98d9984269"
+      ],
+      "text": "lazyide is a lightweight terminal IDE written in Rust with ratatui, shipped as a single binary with file tree, tabbed editing, LSP, syntax highlighting, folding, git integration, project search, 32 themes, and customizable keybindings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1dd30162aac2892624a2be780d1a6c703c94ff38c3ddbf1730af1a7a94ba2a5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "e175e5976015d7851bfdb12321cd8e4901c31c64",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/README.md#L63-L63"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "e175e5976015d7851bfdb12321cd8e4901c31c64",
+          "line_end": 195,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/README.md#L191-L195"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2df8107e6f62c9e72dec419ed16449e1770d0358ae7c68d6fe99c82b1b523088",
+        "slc_88414a47382fa74aa91d58303684c1e7f85a1d71615c854899fea0af8252b499"
+      ],
+      "text": "The product exposes a `--setup` CLI flag that detects and installs optional tools (rust-analyzer, ripgrep), and is run as `lazyide` (or `cargo run -- /path/to/project`) inside a terminal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db15d92c7985ee8ad9593d82e6b532eda70e1a24110b9012d272b23353c825f4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L122-L122"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 127,
+          "line_start": 124,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L124-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32d2e07b2b447bd730929323bae0094f01831cd304cd3a1e3d00e41760ed19f0",
+        "slc_8adeba1468638b6ed519c46842ec4ad0f6090555d1ac54c96bf7ada01c91a364"
+      ],
+      "text": "LSP support is implemented by spawning a rust-analyzer child process over JSON-RPC, with a background stdout reader thread and per-frame polling that matches responses to pending completion/definition requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d39f520e0eba27be3e961603fd9120c421afe83b3a104584ccd1b59f4d64203",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 152,
+          "line_start": 152,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L152-L152"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 159,
+          "line_start": 154,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L154-L159"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09039f2891744edf8a8a122b8abf3096e8117d93b4ce294ecf803d816d864439",
+        "slc_d92bee1716dd534da3e51ea63e0cb0b737998e79f2d4fcfdb4665c25ded9ddd3"
+      ],
+      "text": "Git integration shells out to the `git` binary rather than using libgit2, using commands like `git rev-parse`, `git status --porcelain -z`, and `git diff HEAD` for branch, status, and line-level diff data."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2eb9ddae7c129961a65df2c7a09a36fab51bea743278b4abe55bf9a353f3b43d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L42-L42"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0202ada36b181f903584c9ff9b42599993f13e72897e3cfaffede729488b3af4",
+        "slc_55b2879ff7548d230fb7e73f42f23bfaac75e967eaa4fd0ba8bd85daa688c99f"
+      ],
+      "text": "All application state lives in a single `App` struct with methods split across `app/*.rs` impl blocks; UI rendering functions take `&App` and never mutate state, which happens only in `app/` methods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05fb9e66743f1c5906fefab6582e25832e4ffdffc4ce4e6aaf9ef9ab2b5a2091",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f2a9c88d2118e73363046e691730bf0829c6532e8d694922c04060257e01f31c"
+      ],
+      "text": "Two editor panes are implemented via a state-swap: the focused pane's fields live on `App` and the other pane in `App::other_pane`, so existing active-tab code paths need no pane awareness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5db2b1aa864e46049c5cd5cc81ec371f4c8d4ef36c5df686481a792b8d28b4a2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 142,
+          "line_start": 142,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L142-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7864c5c664dc4267f156ce3b2fa3947c25633490518264ca70a7ad3c873aeff6"
+      ],
+      "text": "Syntax highlighting is line-at-a-time keyword/string/comment matching with bracket depth tracking, not AST-based, covering 11 language families detected by file extension."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7ef6ef6e84a4172b22e75b24420486d37da5349677f73d5f43fb7dc89796ef8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "e175e5976015d7851bfdb12321cd8e4901c31c64",
+          "line_end": 175,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/README.md#L175-L175"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L48-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2821dbc0c6f6dff4bc0901864b7b9d91336900fa558899e05a1eb14fbbf55715",
+        "slc_d764cce431cc7f6365a154d55ba45a7bd5b60243612d81f3362f798a5e3d1f71"
+      ],
+      "text": "Keybindings are data-driven: ~40 actions in a `KeyAction` enum with defaults in `KeyBindings::defaults()`, user overrides loaded from `~/.config/lazyide/keybinds.json`, and a two-pass lookup that first requires exact modifier match then falls back to a Shift-lenient match."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f4e57c4cacd889b20b2c6058efadbf6b1bd6d6746988a679ad742e6c6299bf56",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 64,
+          "line_start": 52,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L52-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d150cd80146f0e3d00c0ca440ddbd289794a528c1a0f3c39a5c632cc2c4454d"
+      ],
+      "text": "The main event loop polls LSP responses, a debounced (120ms) file watcher, and autosave (every 2s) each iteration, draws a frame, then waits up to 100ms for terminal key/mouse events."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_76ce59ad7c6c56f99dc1ece0cff836f147134b3309c8c8d2e450d2703c3aaf59",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "cf06f993664b62260c9548cd3a0edc5b780996cc",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "CLAUDE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/CLAUDE.md#L50-L52"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "e175e5976015d7851bfdb12321cd8e4901c31c64",
+          "line_end": 205,
+          "line_start": 201,
+          "path": "README.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/README.md#L201-L205"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b97fb99893c3f66424696198363bb8a0782dcc4315835952e15358f6bd09b285",
+        "slc_bd1afe70c8f33508a6760b144d2aa2cb3e6a752138da88033bd7edb723d3c32d"
+      ],
+      "text": "Optional external tools are rust-analyzer (LSP completions/diagnostics/go-to-definition), ripgrep (project-wide search), and git (branch display, gutter markers); the system clipboard is accessed via the arboard crate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93cb96735cba6cc5868e325c1714aa64e9a1e3fc50d962eb9535c1154a4bdb3e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L163-L163"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md#L171-L171"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "e175e5976015d7851bfdb12321cd8e4901c31c64",
+          "line_end": 195,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/README.md#L191-L195"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "f5c16f088615fd27b1ca6073c4890feabec68e60",
+          "line_end": 119,
+          "line_start": 115,
+          "path": "CONTRIBUTING.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/CONTRIBUTING.md#L115-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02c6ac768ee4cff172e5b6fd5ce439f67d77e158cce27852c3bf22fc73df12e3",
+        "slc_06308b813f2a54b8db293d7153b87212d5367db0f35559f8d296a20fa00a6ebd",
+        "slc_88414a47382fa74aa91d58303684c1e7f85a1d71615c854899fea0af8252b499",
+        "slc_e6196ef04c043dbd79993ac35706db1d9d8793d2af5cc3a7615be6fd13d47411"
+      ],
+      "text": "Repository development practice: contributors build with cargo (build/run/test), tests are inline `#[cfg(test)]` modules (about 300 tests), and CONTRIBUTING.md asks for an issue before large changes, minimal diffs, and a PR workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4823c52e39b36ec80fd8477b1a443289e01f19422c9c8282f95d48a919245bad",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "cf06f993664b62260c9548cd3a0edc5b780996cc",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "CLAUDE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/CLAUDE.md#L7-L7"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "cf06f993664b62260c9548cd3a0edc5b780996cc",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "CLAUDE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/CLAUDE.md#L18-L18"
+        },
+        {
+          "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+          "git_sha": "cf06f993664b62260c9548cd3a0edc5b780996cc",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CLAUDE.md",
+          "repository": "tysonlabs/lazyide",
+          "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/CLAUDE.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29d25ed414f0bfc6665f3c00194caeae1a3e5338999f74a4012084d78009007e",
+        "slc_79d315673875a852764fa5b768cc4be0364de45fa5b4221e405152fe9032e6a8",
+        "slc_9d101b2984d4f62a97fdb4b6908d92ef4b71eb26c637d52b22531cf88ac9657e"
+      ],
+      "text": "Repository development practice: CLAUDE.md guides Claude Code when working in the repo, stating the project should stay minimal, avoid heavy abstractions, and noting Rust 2024 edition with no custom build scripts or CI/CD."
+    }
+  ],
+  "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 217,
+        "path": "README.md",
+        "size": 7282
+      },
+      {
+        "lines": 181,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 12314
+      },
+      {
+        "lines": 89,
+        "path": "CLAUDE.md",
+        "size": 4259
+      },
+      {
+        "lines": 136,
+        "path": "CONTRIBUTING.md",
+        "size": 4256
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 77,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_004c629422c15084addcb615f187158c",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tysonlabs/lazyide/7496b58b7782dd7d0534c0db29bc61b3171f0df2/f12e7adbb1301325/manifest.json",
+  "package_id": "pkg_15b91603ad1b485ecdadbb258a2d9d99e64ffac6b9417616d1a21e413bb9528e",
+  "repo": "tysonlabs/lazyide",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "11dff9e99280e79976115a25c2c9891f4925c7c366fbf0f50bb8102891c62f21",
+  "snapshot_id": "f12e7adbb1301325",
+  "sources": [
+    {
+      "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+      "git_sha": "cf06f993664b62260c9548cd3a0edc5b780996cc",
+      "lines": 89,
+      "path": "CLAUDE.md",
+      "repository": "tysonlabs/lazyide",
+      "sha256": "47e0c4abaad49727f868b9f62d26d6f821cf9550be8c5f44b325a3f35be5c4ff",
+      "source_id": "src_828e7cd37f075970a68e70d0792c644c",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/CLAUDE.md"
+    },
+    {
+      "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+      "git_sha": "f5c16f088615fd27b1ca6073c4890feabec68e60",
+      "lines": 136,
+      "path": "CONTRIBUTING.md",
+      "repository": "tysonlabs/lazyide",
+      "sha256": "857d7ab2ce2aa645be3dfefa3d9f181e6d2d20d749c124b7e32960017cf2fcb9",
+      "source_id": "src_5722485071985d059f4e560943aed56c",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/CONTRIBUTING.md"
+    },
+    {
+      "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+      "git_sha": "e175e5976015d7851bfdb12321cd8e4901c31c64",
+      "lines": 217,
+      "path": "README.md",
+      "repository": "tysonlabs/lazyide",
+      "sha256": "41ccff137fad33d61789614b8a359545cadbd8361e190fac115e16f0661e1ed2",
+      "source_id": "src_bd8d8c1fd54e52c18c60ffe852826b08",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/README.md"
+    },
+    {
+      "commit": "7496b58b7782dd7d0534c0db29bc61b3171f0df2",
+      "git_sha": "f4b9c3713bfd245beb6eb5a42a1ccb422391b52f",
+      "lines": 181,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "tysonlabs/lazyide",
+      "sha256": "32aaf4a430b184857b33f579b6413d71e64a5cbad998b73ea3363dd2ab63c201",
+      "source_id": "src_9d6b58263dc85c3d8d28ea01e3d379a9",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/TysonLabs/lazyide/blob/7496b58b7782dd7d0534c0db29bc61b3171f0df2/docs/ARCHITECTURE.md"
+    }
+  ],
+  "summary": "lazyide is a Rust/ratatui terminal IDE with LSP, syntax highlighting, git integration, themes, and split panes; evidence is mostly README/docs describing product features plus contributor guidance.",
+  "superseded_claim_ids": []
+}

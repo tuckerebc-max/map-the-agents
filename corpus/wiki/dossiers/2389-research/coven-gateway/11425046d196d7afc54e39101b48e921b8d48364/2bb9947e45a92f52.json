@@ -1,0 +1,948 @@
+{
+  "applied_operation_id": "op_8e5f710a7f714253a11f7171010b8469",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a011f7c81a9e1278e455a6f50311fd3981e913f586e8ebb6e42e8b6d73345da9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 57,
+          "line_start": 53,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L53-L57"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L49-L49"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L47-L47"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10efd1c3791554e8c2ef7860d0aa1df4144d61700cd7c9cafab7bdacc3d082fb",
+        "slc_29787b4177b29081d6d01db5b9ae83ae32d9a9c4d5b67f30236e33cb123660c9",
+        "slc_6226017cc823ed30e0ecd7845acccd1bc3ca1fb13894340fc2a062e1c518f82d",
+        "slc_f6362877021480484df4c16d2f1c165231305f215fa3406e4df1c381b5dbc7e3"
+      ],
+      "text": "Agents connect over a bidirectional gRPC stream to the AgentStream RPC of the coven.CovenControl service, defaulting to port 50051."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11c174646ea441616ad37e2461eef5f12563c89163630b1b52428ff0b7761350",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 191,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L191-L191"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 218,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L217-L218"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 214,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L214-L214"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 211,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L209-L211"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 201,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L199-L201"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 196,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L194-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26bab8d54384df9545cd32cbcbfec8df489f87c32c6d28aa126ee6ef32f8584e",
+        "slc_2b5fe76588f4bd95d9672cf8641d911012efcd39fa0ca23d3649274814ae4c38",
+        "slc_38e9bcbdbc40c961383a778e059f533f59089d976fb1dcd8ab18b1257fea5ef7",
+        "slc_3c5c4bf115c8e6c14c96d0ff988de93ea11d909729764c040a459ea90e421a24",
+        "slc_46aa7ea732f21d642e73871f49f279c142fbdaf248f14b3ae9435099ef1a5708",
+        "slc_f726aeecadfbcd26680c59f88bebb13ff8cb18e34bc6629ee825a757a8b7aa4d"
+      ],
+      "text": "The gateway exposes an HTTP API on port 8080 with endpoints for listing agents, sending messages with SSE streaming responses, health/readiness checks, and channel-binding CRUD."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1e6545c9d253fb6f03e4e8998182479064f125e8eb7ac791e80f06c6f65c845",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 236,
+          "line_start": 223,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L223-L236"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 73,
+          "line_start": 63,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L63-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f8935c6ffd3251285012c85534b675cbe0ba9e8f53ffd96b00888d504dad595",
+        "slc_8be795a5b5dfcf10f4a56ffccc7b7e5e726b6280814e6900f5460ac1f53db0d4"
+      ],
+      "text": "Agent-to-gateway messages use an AgentMessage wrapper (register, response, heartbeat, injection_ack, execute_pack_tool) and gateway-to-agent messages use a ServerMessage wrapper (welcome, send_message, shutdown, tool_approval, inject_context, cancel_request, pack_tool_result, registration_error)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1927dcf64aec32ce21111fbc053ca5a52e260bafec228141bd7986c6f4b089d0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 332,
+          "line_start": 312,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L312-L332"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08ea5bf81172a15134980606333366de0ff212b6e706059a5c639bc299285484"
+      ],
+      "text": "The repository layout includes an agent manager with connection registry and channel bindings, a gateway orchestrator with gRPC and HTTP API handlers, a config loader, and a SQLite persistence store."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c3b28d9db15231e4826b283f7baad112332ab89ab7b004a04998dfb1429c83a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 205,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L205-L205"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 98,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L90-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e48a3a82f461c1a27ac50843653fcb9e0c2eefd6da7e885d0619128347147e20",
+        "slc_ec0039b15c5bc14aac9aeb05dbb5a2ec5f584ce167cf2943853ad7874500d3dd"
+      ],
+      "text": "Routing uses channel bindings that map frontend channels (e.g., Slack, Matrix) to specific agents for sticky agent assignment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6f4552093dfc4819b70703c4e690cfa18a763faf6a7289354f21332e5e96e1eb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 228,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L227-L228"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 98,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L90-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37a61eb60d6bfac05103b296a940fa25e55b16c6c06651948197c0430c2a5952",
+        "slc_ec0039b15c5bc14aac9aeb05dbb5a2ec5f584ce167cf2943853ad7874500d3dd"
+      ],
+      "text": "SQLite persistence for threads and messages is implemented in pure Go without CGO, and the database path is configurable, including an in-memory option for testing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_afc8ade0ea6c85b25b4ef3e57dc11a9116bb41e606d958856d16ea0d58867ead",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 253,
+          "line_start": 242,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L242-L253"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_720b16fba41bbb9641718873e8de2808559e9afeaf3f3fe11c4598f9faf583d9"
+      ],
+      "text": "On registration the gateway returns a Welcome message containing server and agent IDs, an instance ID, principal UUID, available pack tool definitions, an MCP token and endpoint, and resolved secrets for the agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fe335e50ed11a94e8a7fd71b15ac2dba989a475fc560b4b74b26a3ebc499083",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 387,
+          "line_start": 383,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L383-L387"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 309,
+          "line_start": 303,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L303-L309"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 399,
+          "line_start": 389,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L389-L399"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+          "line_end": 163,
+          "line_start": 144,
+          "path": "docs/AGENT_PROTOCOL.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md#L144-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1df342fe7cbffab00b4bab59e489f15ea0debf7e74ad87b73d665bd9d9644309",
+        "slc_569721d076fc3ceb58c435f38aab674be1373750755179192b96314c66b4e61a",
+        "slc_64043923f603abbc3abc13d57162d429df941e6b192b36514ddbb0f775ba7bf0",
+        "slc_72d084bef814883005de823f4dd8a435228332436831f0eeb66839511b148331"
+      ],
+      "text": "The protocol includes a tool-approval flow: agents can request human approval for tool use, and the gateway replies with ToolApprovalResponse indicating approve, skip, or approve-all for the request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2ac3148178583ac309ce8e6cbbd29842dd95093d9f926c4897e70afe1877f92",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 432,
+          "line_start": 432,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L432-L432"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 359,
+          "line_start": 359,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L359-L359"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 46,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L44-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5436df45b6e742b1fba86fe8a40d10f930ac0fdc38e9ebe707d17f65b64ba1ea",
+        "slc_6b2755cf0dc332e8006b7837af4f49266928748b573b4be63a242a2ab92b1d97",
+        "slc_70b60a294150574200b5a93f3d80249537964484d5a32bb7e01344c12040ef24"
+      ],
+      "text": "Building requires Go 1.22+, the protoc compiler, and proto generation expects the coven-agent repository checked out as a sibling directory; the project is MIT licensed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60f633ba7bb8669426b272cdd46dc41f97f90ed0949912390425759dfd2055df",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 395,
+          "line_start": 395,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L395-L395"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 348,
+          "line_start": 348,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L348-L348"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 392,
+          "line_start": 391,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L391-L392"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 345,
+          "line_start": 345,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L345-L345"
+        },
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 351,
+          "line_start": 351,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L351-L351"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0758880bb9b3077905ed16c38db68878d827cfaafc035d73d53912ead8aec981",
+        "slc_18d2982e83ee8eb342473012c2388df8393832eee51d9c122fbf7a6bed0eb073",
+        "slc_2179622e05bf1d988b8ed136dfdfdfd0cac4074122609d9b2e96ae5ea8c5b667",
+        "slc_26821bf558d5a46b361ae64b73ca5cae682f5305ee5c8ca9ad458afa8839cfbd",
+        "slc_d090c4771414f4f31ff0acabe576f1d67da5f26893c722a1b172f6273799aea2"
+      ],
+      "text": "Repository development practice: contributors build with make (proto plus binaries), run tests via go test ./... (optionally with -race), and can install pre-commit hooks running go fmt, go vet, go test, and go mod tidy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bbfae7a8e419e3065d9568805753f398f9d4ea0b5681ec04bc6b6155913143e7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+          "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+          "line_end": 104,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "2389-research/coven-gateway",
+          "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md#L102-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78c0003c9bf068fa6fb4962191562f827b3a81a00258295f343bcf79fc5c7fab"
+      ],
+      "text": "The README lists Slack frontend integration, Prometheus metrics, and mTLS agent authentication as planned rather than implemented, indicating these capabilities are not yet shipped in Phase 1."
+    }
+  ],
+  "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 432,
+        "path": "README.md",
+        "size": 13054
+      },
+      {
+        "lines": 277,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 10783
+      },
+      {
+        "lines": 113,
+        "path": "docs/plans/client-message-routing/design.md",
+        "size": 3586
+      },
+      {
+        "lines": 10,
+        "path": "gotchas.md",
+        "size": 2388
+      },
+      {
+        "lines": 617,
+        "path": "docs/AGENT_PROTOCOL.md",
+        "size": 19451
+      },
+      {
+        "lines": 809,
+        "path": "docs/CLIENT_PROTOCOL.md",
+        "size": 19562
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/coven-proto-enhancements.md",
+        "reason": "file-budget",
+        "size": 13221
+      },
+      {
+        "path": "docs/DEPLOYMENT.md",
+        "reason": "file-budget",
+        "size": 6851
+      },
+      {
+        "path": "docs/DEVELOPMENT.md",
+        "reason": "file-budget",
+        "size": 6047
+      },
+      {
+        "path": "docs/archive/original-spec.md",
+        "reason": "file-budget",
+        "size": 16338
+      },
+      {
+        "path": "docs/plans/2025-01-16-coven-test-first-foundation.md",
+        "reason": "file-budget",
+        "size": 25835
+      },
+      {
+        "path": "docs/plans/2025-01-19-tool-packs-design.md",
+        "reason": "file-budget",
+        "size": 10037
+      },
+      {
+        "path": "docs/plans/2026-01-15-affinity-routing-design.md",
+        "reason": "file-budget",
+        "size": 3392
+      },
+      {
+        "path": "docs/plans/2026-01-15-affinity-routing-impl.md",
+        "reason": "file-budget",
+        "size": 24299
+      },
+      {
+        "path": "docs/plans/2026-01-18-agent-identity-and-client-flow-design.md",
+        "reason": "file-budget",
+        "size": 10989
+      },
+      {
+        "path": "docs/plans/2026-01-18-agent-identity-implementation.md",
+        "reason": "file-budget",
+        "size": 21776
+      },
+      {
+        "path": "docs/plans/2026-01-18-bindings-flow-design.md",
+        "reason": "file-budget",
+        "size": 4960
+      },
+      {
+        "path": "docs/plans/2026-01-18-bindings-flow-implementation.md",
+        "reason": "file-budget",
+        "size": 23323
+      },
+      {
+        "path": "docs/plans/2026-01-26-bridge-architecture-design.md",
+        "reason": "file-budget",
+        "size": 11942
+      },
+      {
+        "path": "docs/plans/2026-01-26-coven-matrix-rs-implementation.md",
+        "reason": "file-budget",
+        "size": 36009
+      },
+      {
+        "path": "docs/plans/2026-01-26-multi-tenancy-design.md",
+        "reason": "file-budget",
+        "size": 11712
+      },
+      {
+        "path": "docs/plans/2026-01-28-builtin-tool-packs-design.md",
+        "reason": "file-budget",
+        "size": 9404
+      },
+      {
+        "path": "docs/plans/2026-01-28-builtin-tool-packs-implementation.md",
+        "reason": "file-budget",
+        "size": 56525
+      },
+      {
+        "path": "docs/plans/2026-01-28-settings-modal-consolidation.md",
+        "reason": "file-budget",
+        "size": 3983
+      },
+      {
+        "path": "docs/plans/2026-01-28-web-chat-redesign.md",
+        "reason": "file-budget",
+        "size": 10313
+      },
+      {
+        "path": "docs/plans/2026-02-05-admin-agent-messages.md",
+        "reason": "file-budget",
+        "size": 14344
+      },
+      {
+        "path": "docs/plans/2026-02-17-frontend-redesign-design.md",
+        "reason": "file-budget",
+        "size": 31866
+      },
+      {
+        "path": "docs/plans/2026-07-06-security-critical-fixes.md",
+        "reason": "file-budget",
+        "size": 15886
+      },
+      {
+        "path": "docs/plans/2026-07-08-runtime-fixes.md",
+        "reason": "file-budget",
+        "size": 27572
+      },
+      {
+        "path": "docs/plans/2026-07-09-security-hardening.md",
+        "reason": "file-budget",
+        "size": 24928
+      },
+      {
+        "path": "docs/plans/2026-07-13-backlog-fixes-56-60.md",
+        "reason": "file-budget",
+        "size": 36737
+      },
+      {
+        "path": "docs/plans/2026-07-14-docker-frontend-assets-design.md",
+        "reason": "file-budget",
+        "size": 1632
+      },
+      {
+        "path": "docs/plans/2026-07-14-docker-frontend-assets.md",
+        "reason": "file-budget",
+        "size": 7858
+      },
+      {
+        "path": "docs/plans/2026-07-15-frontend-verification-repair.md",
+        "reason": "file-budget",
+        "size": 20764
+      },
+      {
+        "path": "docs/plans/2026-07-15-goreleaser-frontend-assets-design.md",
+        "reason": "file-budget",
+        "size": 1497
+      },
+      {
+        "path": "docs/plans/2026-07-15-goreleaser-frontend-assets.md",
+        "reason": "file-budget",
+        "size": 3518
+      },
+      {
+        "path": "docs/plans/2026-08-22-frontend-toolchain-cleanup.md",
+        "reason": "file-budget",
+        "size": 44525
+      },
+      {
+        "path": "docs/plans/2026-08-23-formattime-e2e-token.md",
+        "reason": "file-budget",
+        "size": 19273
+      },
+      {
+        "path": "docs/plans/2026-08-23-post-cleanup-followups.md",
+        "reason": "file-budget",
+        "size": 18247
+      },
+      {
+        "path": "docs/plans/2026-08-23-qr-pairing-gateway-design.md",
+        "reason": "file-budget",
+        "size": 14450
+      },
+      {
+        "path": "docs/plans/2026-08-23-qr-pairing-gateway-implementation.md",
+        "reason": "file-budget",
+        "size": 74908
+      },
+      {
+        "path": "docs/plans/frontend-redesign/cross-phase-risks.md",
+        "reason": "file-budget",
+        "size": 8813
+      },
+      {
+        "path": "docs/plans/frontend-redesign/phase-1-foundation.md",
+        "reason": "file-budget",
+        "size": 5866
+      },
+      {
+        "path": "docs/plans/frontend-redesign/phase-2-design-system.md",
+        "reason": "file-budget",
+        "size": 5317
+      },
+      {
+        "path": "docs/plans/frontend-redesign/phase-3-chat-migration.md",
+        "reason": "file-budget",
+        "size": 6270
+      },
+      {
+        "path": "docs/plans/frontend-redesign/phase-4-dashboard-admin.md",
+        "reason": "file-budget",
+        "size": 4364
+      },
+      {
+        "path": "docs/plans/frontend-redesign/phase-5-login-auth.md",
+        "reason": "file-budget",
+        "size": 3985
+      },
+      {
+        "path": "docs/plans/frontend-redesign/phase-6-spa-evaluation.md",
+        "reason": "file-budget",
+        "size": 3549
+      },
+      {
+        "path": "docs/plans/frontend-redesign/README.md",
+        "reason": "file-budget",
+        "size": 2757
+      },
+      {
+        "path": "docs/plans/frontend-redesign/RUNBOOK.md",
+        "reason": "file-budget",
+        "size": 9244
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-15-frontend-verification-repair-design.md",
+        "reason": "file-budget",
+        "size": 5206
+      },
+      {
+        "path": "docs/thrifty/coverage-80/baseline-covfunc-gateway.txt",
+        "reason": "file-budget",
+        "size": 9597
+      },
+      {
+        "path": "docs/thrifty/coverage-80/baseline-covfunc-webadmin.txt",
+        "reason": "file-budget",
+        "size": 14218
+      },
+      {
+        "path": "docs/thrifty/coverage-80/CONTRACT.md",
+        "reason": "file-budget",
+        "size": 6441
+      },
+      {
+        "path": "docs/thrifty/coverage-80/LEDGER.md",
+        "reason": "file-budget",
+        "size": 5930
+      },
+      {
+        "path": "docs/plans/client-message-routing/cookoff/result.md",
+        "reason": "file-budget",
+        "size": 1611
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-001.md",
+        "reason": "file-budget",
+        "size": 4171
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-002.md",
+        "reason": "file-budget",
+        "size": 3297
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-003.md",
+        "reason": "file-budget",
+        "size": 3067
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-004.md",
+        "reason": "file-budget",
+        "size": 2752
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-005.md",
+        "reason": "file-budget",
+        "size": 4021
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-006.md",
+        "reason": "file-budget",
+        "size": 2219
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-007.md",
+        "reason": "file-budget",
+        "size": 3304
+      },
+      {
+        "path": "docs/thrifty/coverage-80/briefs/UNIT-008.md",
+        "reason": "file-budget",
+        "size": 4291
+      },
+      {
+        "path": "docs/plans/client-message-routing/cookoff/impl-1/plan.md",
+        "reason": "file-budget",
+        "size": 5985
+      },
+      {
+        "path": "docs/plans/client-message-routing/cookoff/impl-2/plan.md",
+        "reason": "file-budget",
+        "size": 4634
+      },
+      {
+        "path": "docs/plans/client-message-routing/cookoff/impl-3/plan.md",
+        "reason": "file-budget",
+        "size": 7920
+      },
+      {
+        "path": "docs/plans/web-chat/cookoff/impl-2/plan.md",
+        "reason": "file-budget",
+        "size": 5033
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 13455
+      }
+    ],
+    "omitted_count": 63,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 401,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 69,
+      "complete": false,
+      "omitted": 63,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_9abbc1b7345450fd9b5a443a8145d82e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/coven-gateway/11425046d196d7afc54e39101b48e921b8d48364/2bb9947e45a92f52/manifest.json",
+  "package_id": "pkg_fecc0428fb817b580be3f3423fba0666f52b4a2cd95bdd30941248cfddff53ae",
+  "repo": "2389-research/coven-gateway",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "38073ba95bb85d1b4c62fb30e3a6887b0c87aab9c000081d989d2733f1793a0d",
+  "snapshot_id": "2bb9947e45a92f52",
+  "sources": [
+    {
+      "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+      "git_sha": "2aa65d04cd0657caf3d300e6bacdc0307934a474",
+      "lines": 432,
+      "path": "README.md",
+      "repository": "2389-research/coven-gateway",
+      "sha256": "fb4d9e1db003377d475c6416cbf095ac4e41f6691af2accf78190af3a278dd5f",
+      "source_id": "src_e426ba9267a55086860f5f7eeeb5052c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/README.md"
+    },
+    {
+      "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+      "git_sha": "03dcfbe8f7bfd235270d94216ea17f693a50b4e1",
+      "lines": 617,
+      "path": "docs/AGENT_PROTOCOL.md",
+      "repository": "2389-research/coven-gateway",
+      "sha256": "4104dabff5b32c52f1ca89e8887956fe9856b2077441d8a5577578d74fa13f6a",
+      "source_id": "src_fc274a5c209e585a890e1d331284d5fb",
+      "stored": "agent_protocol.md-9708df31fa66.md",
+      "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/AGENT_PROTOCOL.md"
+    },
+    {
+      "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+      "git_sha": "b620159aec18a1f8493aade1b34386ff84458a2b",
+      "lines": 277,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "2389-research/coven-gateway",
+      "sha256": "c10ad8ce3327a427d41027a7dbbca5ac725d4808e89dfb4c76787d44b4531249",
+      "source_id": "src_16389cc5825c53a9b20c137c02aed3e1",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/ARCHITECTURE.md"
+    },
+    {
+      "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+      "git_sha": "22d3370b8144b51f29b3ec01a285ec746b568b1d",
+      "lines": 809,
+      "path": "docs/CLIENT_PROTOCOL.md",
+      "repository": "2389-research/coven-gateway",
+      "sha256": "5210d4e096636d0fa92669ce1b1b7789a616669da0fe3795ec94ec0c59eb180e",
+      "source_id": "src_aa93ea62f134592a8a789e609a2a6a45",
+      "stored": "client_protocol.md-40916111493c.md",
+      "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/CLIENT_PROTOCOL.md"
+    },
+    {
+      "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+      "git_sha": "a77827b197baf85e38fe05fc4b9a313587264237",
+      "lines": 113,
+      "path": "docs/plans/client-message-routing/design.md",
+      "repository": "2389-research/coven-gateway",
+      "sha256": "f734e387c49adcde123386183e67eea7160a6a46d8885041c1d8899c16ffe73c",
+      "source_id": "src_a0c466097c67582e9a0fef9dfeb427d2",
+      "stored": "design.md-10e8bd41be72.md",
+      "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/docs/plans/client-message-routing/design.md"
+    },
+    {
+      "commit": "11425046d196d7afc54e39101b48e921b8d48364",
+      "git_sha": "6621e80dae40976480cca328d82cbb4947cc62dd",
+      "lines": 10,
+      "path": "gotchas.md",
+      "repository": "2389-research/coven-gateway",
+      "sha256": "6469ab5e5f0491add80030d745529572585bef85f001f35f0b9ae0757631137e",
+      "source_id": "src_cecb7537c9dd5e0fb2d3f94b13c085ff",
+      "stored": "gotchas.md-073a031c919e.md",
+      "url": "https://github.com/2389-research/coven-gateway/blob/11425046d196d7afc54e39101b48e921b8d48364/gotchas.md"
+    }
+  ],
+  "summary": "Agents connect over a bidirectional gRPC stream to the AgentStream RPC of the coven.CovenControl service, defaulting to port 50051. The gateway exposes an HTTP API on port 8080 with endpoints for listing agents, sending messages with SSE streaming responses, health/readiness checks, and channel-binding CRUD. Evidence coverage: 170 of 361 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

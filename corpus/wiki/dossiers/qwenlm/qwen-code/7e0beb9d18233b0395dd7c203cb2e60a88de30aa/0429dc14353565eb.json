@@ -1,0 +1,1596 @@
+{
+  "applied_operation_id": "op_622df7aed7584006b02a904d5b42cb09",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_254bea1c00a829fc129a389f13de362f4c10ee854fbfdd18b64958c24034b408",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 74,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L71-L74"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7c6a2c887868c254473d35ec8b2a96f71a7812e4",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "docs/developers/architecture.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/developers/architecture.md#L17-L21"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L105-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9aff7da9a99737baacf1cdd15de6805ef2db3a8db9b26a58d6c8083747803362",
+        "slc_b08d3a38753888d5afb2f2232c1d001e358506a5396930a19bd963d3e9415741",
+        "slc_e35d897f6ddbc0b96063f90f239b0110d3ef925bc39292a1f49a8b9a253878fd"
+      ],
+      "text": "The product offers multiple invocation surfaces: an interactive `qwen` TUI started in a project directory, headless `qwen -p \"...\"` for scripts/CI, and an experimental `qwen serve` daemon exposing HTTP + SSE (ACP)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea38d7ebb4fdafa5771e94f673c8eb20e4362289e183ac1bb1dd18d6796e71de",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 125,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L118-L125"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 129,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L127-L129"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L115-L115"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L105-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14fcb3076f5c7f822c19826db246ade7bbfe839191a41d0be483b11539db4cdc",
+        "slc_a9839df6edc826248331356efa992ae148f592a04977e6165e61cc5f0be72fa5",
+        "slc_bf2f06486eb10835c6ea291f893795116748bd3fd84ab00d943da6cbb923b724",
+        "slc_e35d897f6ddbc0b96063f90f239b0110d3ef925bc39292a1f49a8b9a253878fd"
+      ],
+      "text": "SDKs exist for TypeScript, Python, and Java; the Python SDK exposes an async `query()` taking a cwd and path to the qwen executable, streaming messages from which result messages are printed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e0cb7db4b61a63442af47fb149dede015d4c3bfecf21cc08189cabeb5a57040",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L26-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b485e05a89c15ab4b8b018771513f15993fe425bcd6743fa602282b6fe6dab72"
+      ],
+      "text": "The agent supports multiple model protocols — OpenAI, Anthropic, Gemini, and Qwen APIs — plus third-party or local providers (Ollama/vLLM), switchable at runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e578832269ca9d7a4f80cefa8da12ade2d771e104b97f986b1ab9a323cbda68",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 74,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L71-L74"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L76-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9aff7da9a99737baacf1cdd15de6805ef2db3a8db9b26a58d6c8083747803362",
+        "slc_c10f885ab0f5b3547927e6c8f0db3106e47f58909d2a5f190182c751349d2963"
+      ],
+      "text": "Inside a session, `/auth` configures the provider and API key; the CLI is started by running `qwen` in a project directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba678e712368f880bc4037da02af772d1e5c5aab114626cc48b30580e2e968fd",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7c6a2c887868c254473d35ec8b2a96f71a7812e4",
+          "line_end": 95,
+          "line_start": 80,
+          "path": "docs/developers/architecture.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/developers/architecture.md#L80-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cee93e1b0ef189f31c9e79be1e5b96a3d94699dc31958ff05e0da50511c8ee2f"
+      ],
+      "text": "Key monorepo packages: `packages/cli` (executable, arg parsing, Ink TUI, headless output, ACP entry, `qwen serve`), `packages/core` (agent orchestration, tools, permissions, sessions, memory), and `packages/acp-bridge` (ACP channel lifecycle, session multiplexing, permission mediation)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39be8499f6049f7de9d74a1031bfb54c3919074de076ba21029a6c507251d9ff",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7c6a2c887868c254473d35ec8b2a96f71a7812e4",
+          "line_end": 129,
+          "line_start": 127,
+          "path": "docs/developers/architecture.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/developers/architecture.md#L127-L129"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7c6a2c887868c254473d35ec8b2a96f71a7812e4",
+          "line_end": 125,
+          "line_start": 120,
+          "path": "docs/developers/architecture.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/developers/architecture.md#L120-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10222c4ab9e4c8088d6acd61d8be0444b5be6f8b471fea04ac3773beecbff756",
+        "slc_eeb5aefce36b903e1785393cc267583829a7c5c3b5a33f0850bb42f3cc3f69cd"
+      ],
+      "text": "The core runtime owns the agent loop — model requests, conversation context, tool dispatch, permission policy — while display and transport decisions are deliberately kept in the CLI, bridge, SDK, and UI layers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08d2e35bb045bb91e815fa67d94fae91be0691738d13f973553a59e88ddd6232",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7c6a2c887868c254473d35ec8b2a96f71a7812e4",
+          "line_end": 189,
+          "line_start": 185,
+          "path": "docs/developers/architecture.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/developers/architecture.md#L185-L189"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81761c39ba4b6d215f182dba35262bcb263d5dbf0da98ff353424e54faaed6e2"
+      ],
+      "text": "In daemon mode with multi-workspace sessions, each live workspace runtime owns its own bridge and `qwen --acp` child, with filesystem access, environment overlays, MCP transports, and sessions scoped to that runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_087625134d58de08f29b7d6db36d59d42238b63c6209f66d7963572e6ca75ff6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L53-L53"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L3-L6"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 210,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L210-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_020698bbf964dbd2b4da9a1f94857c279cdfa6eef68bcdbf034c06c10e8c139a",
+        "slc_23b4d2b2ec23d72e847ead2d641fe968e3b549068912a8eaaa45259b9087a5c7",
+        "slc_a7081fa328637e98ddeacff589a30720aa949cb849978a5614504ee83fcefd8b"
+      ],
+      "text": "NPM installation requires Node.js 22+; the project was originally based on Google Gemini CLI v0.8.2 but stopped syncing upstream starting from Qwen Code v0.1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cda91ac3d6e68c0fe48d71a3c99e331cf3416a0f6c067eb357cdfd29248ae0c2",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 170,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L162-L170"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 182,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L174-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c6e531e262b0dae1b6c3b3f6c0873591a5af700930394e544b8fb3376557e460",
+        "slc_fa3ba3f60732fd6af77c5b91db580f4125ab399ec21fcdb6903359bb0695fdd6"
+      ],
+      "text": "The README reports a SWE-bench Verified evaluation (500 cases, 3 trials per version, model Qwen 3.7 Max) with average scores between roughly 76.4% and 77.8% across seven Qwen Code versions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d93e84acb57184c6b602b37a0466ed377676b55cf30dc20766760a81754e90d4",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 156,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L141-L156"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L10-L10"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L139-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c2922ee503097d0b2cb76f608b44faaa2367919ba99a9b75815fa75cbc2b950",
+        "slc_b70135d777f5ce7054e4e2b801a23c66c5768cafce3aa4a7754ae3bed239d841",
+        "slc_dcad4ae28a128b953bf811814d18b7d426b99994893abfea994bde88e594e344"
+      ],
+      "text": "Qwen Code is positioned as an open-source AI coding agent for terminal, editor, desktop, browser, and chat, aiming for feature parity with Claude Code plus multi-protocol and daemon-mode extras."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99f38ef03d95427a3ef5cbefaf52bf96b869e3dbe35dea01b1159a008c70eab8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "fe38e357ce49143a1f9e164f7d897fb100f1ab39",
+          "line_end": 59,
+          "line_start": 56,
+          "path": "docs/design/daemon-sidechannel-coordination/design.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/design/daemon-sidechannel-coordination/design.md#L56-L59"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "fe38e357ce49143a1f9e164f7d897fb100f1ab39",
+          "line_end": 118,
+          "line_start": 115,
+          "path": "docs/design/daemon-sidechannel-coordination/design.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/design/daemon-sidechannel-coordination/design.md#L115-L118"
+        },
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "fe38e357ce49143a1f9e164f7d897fb100f1ab39",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "docs/design/daemon-sidechannel-coordination/design.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/design/daemon-sidechannel-coordination/design.md#L157-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21380e9ddad84a224ad2d48a60ed8863c03647070142e0282d2ec4a382b9cddb",
+        "slc_35da8b11939860901c47889de3ce858fe19c62ae7a781502be4b5743022ed4bf",
+        "slc_bcb582d24d78a0871c6aecdca091584f6cd7f49b7436f23ff6d7ed8f6dbae27e"
+      ],
+      "text": "A daemon side-channel coordination design doc specifies that in-session model changes are demuxed from `extNotification()` while approval-mode changes use the ACP `current_mode_update` sessionUpdate, since no `current_model_update` ACP type exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_110a3814d4d12db7b301a02be5711930193930f1730ac15a4b35f6e90ddcae23",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+          "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+          "line_end": 206,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md#L206-L206"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f84a414bfc2bd9074b24d28926f9c54b3997d829d78ccf988a067f411782076e"
+      ],
+      "text": "Repository development practice: contributions are directed to CONTRIBUTING.md for guidelines."
+    }
+  ],
+  "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 210,
+        "path": "README.md",
+        "size": 13047
+      },
+      {
+        "lines": 229,
+        "path": "docs/developers/architecture.md",
+        "size": 13139
+      },
+      {
+        "lines": 398,
+        "path": "docs/design/daemon-sidechannel-coordination/design.md",
+        "size": 67203
+      },
+      {
+        "lines": 91,
+        "path": "docs/developers/tools/sandbox.md",
+        "size": 3049
+      },
+      {
+        "lines": 265,
+        "path": "docs/users/features/memory.md",
+        "size": 13251
+      },
+      {
+        "lines": 251,
+        "path": "docs/users/features/sandbox.md",
+        "size": 8559
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/design/ctrl-o-detail-expand/design.md",
+        "reason": "byte-budget",
+        "size": 111631
+      },
+      {
+        "path": "docs/design/vp-mouse-selection/design.md",
+        "reason": "byte-budget",
+        "size": 35679
+      },
+      {
+        "path": "docs/users/features/skills.md",
+        "reason": "file-budget",
+        "size": 24376
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 729
+      },
+      {
+        "path": "docs/design/2026-05-15-async-memory-recall-design.md",
+        "reason": "file-budget",
+        "size": 8640
+      },
+      {
+        "path": "docs/design/2026-05-21-memory-pressure-monitor-design.md",
+        "reason": "file-budget",
+        "size": 5990
+      },
+      {
+        "path": "docs/design/2026-05-26-daemon-logger-design.md",
+        "reason": "file-budget",
+        "size": 18394
+      },
+      {
+        "path": "docs/design/2026-05-27-daemon-workspace-service-design.md",
+        "reason": "file-budget",
+        "size": 30316
+      },
+      {
+        "path": "docs/design/2026-06-12-session-shell-permission-policy.md",
+        "reason": "file-budget",
+        "size": 4582
+      },
+      {
+        "path": "docs/design/2026-06-13-file-history-snapshot-persistence.md",
+        "reason": "file-budget",
+        "size": 2243
+      },
+      {
+        "path": "docs/design/2026-06-15-simulated-sed-file-history.md",
+        "reason": "file-budget",
+        "size": 3176
+      },
+      {
+        "path": "docs/design/2026-06-23-fix-conflicts-command.md",
+        "reason": "file-budget",
+        "size": 1920
+      },
+      {
+        "path": "docs/design/2026-06-24-daemon-clientid-self-heal-design.md",
+        "reason": "file-budget",
+        "size": 10153
+      },
+      {
+        "path": "docs/design/2026-06-24-stream-inactivity-timeout-design.md",
+        "reason": "file-budget",
+        "size": 9554
+      },
+      {
+        "path": "docs/design/2026-06-30-unified-reasoning-effort-cli.md",
+        "reason": "file-budget",
+        "size": 16263
+      },
+      {
+        "path": "docs/design/2026-07-01-channel-lifecycle-status-adapters.md",
+        "reason": "file-budget",
+        "size": 6931
+      },
+      {
+        "path": "docs/design/2026-07-01-channel-lifecycle-status-umbrella.md",
+        "reason": "file-budget",
+        "size": 6793
+      },
+      {
+        "path": "docs/design/2026-07-01-channel-p0-identity-task-lifecycle-design.md",
+        "reason": "file-budget",
+        "size": 8787
+      },
+      {
+        "path": "docs/design/2026-07-05-large-frame-handling-measurement.md",
+        "reason": "file-budget",
+        "size": 4879
+      },
+      {
+        "path": "docs/design/2026-07-06-session-start-profiler.md",
+        "reason": "file-budget",
+        "size": 2961
+      },
+      {
+        "path": "docs/design/2026-07-07-bounded-replay-snapshot-window.md",
+        "reason": "file-budget",
+        "size": 5619
+      },
+      {
+        "path": "docs/design/2026-07-09-webshell-user-message-input-annotations.md",
+        "reason": "file-budget",
+        "size": 22194
+      },
+      {
+        "path": "docs/design/2026-07-11-daemon-persistent-workspace-registration.md",
+        "reason": "file-budget",
+        "size": 4040
+      },
+      {
+        "path": "docs/design/2026-07-11-daemon-workspace-runtime-removal.md",
+        "reason": "file-budget",
+        "size": 5074
+      },
+      {
+        "path": "docs/design/2026-07-11-managed-memory-microcompaction.md",
+        "reason": "file-budget",
+        "size": 2693
+      },
+      {
+        "path": "docs/design/2026-07-11-tool-call-preparing-events.md",
+        "reason": "file-budget",
+        "size": 8989
+      },
+      {
+        "path": "docs/design/2026-07-13-cold-first-session-support.md",
+        "reason": "file-budget",
+        "size": 14288
+      },
+      {
+        "path": "docs/design/2026-07-13-pdf-vision-bridge-fallback.md",
+        "reason": "file-budget",
+        "size": 4210
+      },
+      {
+        "path": "docs/design/2026-07-13-workspace-skills-installed-path.md",
+        "reason": "file-budget",
+        "size": 1266
+      },
+      {
+        "path": "docs/design/2026-07-14-chat-record-daemon-transcript-block-projection.md",
+        "reason": "file-budget",
+        "size": 40477
+      },
+      {
+        "path": "docs/design/2026-07-14-dingtalk-webhook-direct-message.md",
+        "reason": "file-budget",
+        "size": 6189
+      },
+      {
+        "path": "docs/design/2026-07-14-silent-command-heartbeat.md",
+        "reason": "file-budget",
+        "size": 11081
+      },
+      {
+        "path": "docs/design/2026-07-14-web-shell-readonly-daemon-transcript.md",
+        "reason": "file-budget",
+        "size": 28622
+      },
+      {
+        "path": "docs/design/2026-07-15-daemon-log-stable-rotation.md",
+        "reason": "file-budget",
+        "size": 12317
+      },
+      {
+        "path": "docs/design/2026-07-15-daemon-session-source-metadata.md",
+        "reason": "file-budget",
+        "size": 3154
+      },
+      {
+        "path": "docs/design/2026-07-15-dingtalk-interactive-cards.md",
+        "reason": "file-budget",
+        "size": 48916
+      },
+      {
+        "path": "docs/design/2026-07-16-default-background-subagents.md",
+        "reason": "file-budget",
+        "size": 6200
+      },
+      {
+        "path": "docs/design/2026-07-16-subagent-prompt-guardrails.md",
+        "reason": "file-budget",
+        "size": 1371
+      },
+      {
+        "path": "docs/design/2026-07-17-adaptive-tool-call-cap.md",
+        "reason": "file-budget",
+        "size": 7504
+      },
+      {
+        "path": "docs/design/2026-07-17-daemon-workspace-trust-hot-reload.md",
+        "reason": "file-budget",
+        "size": 6435
+      },
+      {
+        "path": "docs/design/2026-07-17-observed-channel-delivery-targets.md",
+        "reason": "file-budget",
+        "size": 7257
+      },
+      {
+        "path": "docs/design/2026-07-17-plan-mode-shell-routing.md",
+        "reason": "file-budget",
+        "size": 10675
+      },
+      {
+        "path": "docs/design/2026-07-17-workspace-session-info.md",
+        "reason": "file-budget",
+        "size": 1960
+      },
+      {
+        "path": "docs/design/2026-07-18-daemon-workspace-display-names.md",
+        "reason": "file-budget",
+        "size": 4031
+      },
+      {
+        "path": "docs/design/2026-07-18-observed-channel-group-names.md",
+        "reason": "file-budget",
+        "size": 3786
+      },
+      {
+        "path": "docs/design/2026-07-19-lazy-telemetry-sdk-loading.md",
+        "reason": "file-budget",
+        "size": 11932
+      },
+      {
+        "path": "docs/design/2026-07-19-telemetry-protocol-split.md",
+        "reason": "file-budget",
+        "size": 6908
+      },
+      {
+        "path": "docs/design/2026-07-20-background-agent-hot-continuation.md",
+        "reason": "file-budget",
+        "size": 7984
+      },
+      {
+        "path": "docs/design/2026-07-20-plan-mode-mid-turn-guidance.md",
+        "reason": "file-budget",
+        "size": 4178
+      },
+      {
+        "path": "docs/design/2026-07-20-skills-default-disabled.md",
+        "reason": "file-budget",
+        "size": 2563
+      },
+      {
+        "path": "docs/design/2026-07-20-worktree-empty-state-toggle.md",
+        "reason": "file-budget",
+        "size": 5021
+      },
+      {
+        "path": "docs/design/2026-07-21-headless-fork-subagents.md",
+        "reason": "file-budget",
+        "size": 2357
+      },
+      {
+        "path": "docs/design/2026-07-21-lazy-undici-loading.md",
+        "reason": "file-budget",
+        "size": 5694
+      },
+      {
+        "path": "docs/design/2026-07-21-tool-result-vision-bridge.md",
+        "reason": "file-budget",
+        "size": 5025
+      },
+      {
+        "path": "docs/design/2026-07-22-background-agent-roster-restore.md",
+        "reason": "file-budget",
+        "size": 3409
+      },
+      {
+        "path": "docs/design/2026-07-22-daemon-mcp-force-reconnect.md",
+        "reason": "file-budget",
+        "size": 1795
+      },
+      {
+        "path": "docs/design/2026-07-22-lazy-google-genai-loading.md",
+        "reason": "file-budget",
+        "size": 10004
+      },
+      {
+        "path": "docs/design/2026-07-22-webshell-session-git-mode.md",
+        "reason": "file-budget",
+        "size": 13031
+      },
+      {
+        "path": "docs/design/2026-07-23-defer-acp-telemetry-initialization.md",
+        "reason": "file-budget",
+        "size": 10155
+      },
+      {
+        "path": "docs/design/2026-07-24-generation-stats.md",
+        "reason": "file-budget",
+        "size": 3888
+      },
+      {
+        "path": "docs/design/2026-07-24-webshell-git-status-fast-path.md",
+        "reason": "file-budget",
+        "size": 11397
+      },
+      {
+        "path": "docs/design/2026-07-25-channel-interaction-presentation-contract.md",
+        "reason": "file-budget",
+        "size": 21245
+      },
+      {
+        "path": "docs/design/2026-07-25-pinned-memory-protection.md",
+        "reason": "file-budget",
+        "size": 3935
+      },
+      {
+        "path": "docs/design/2026-07-26-manual-plan-exit-notice-delivery.md",
+        "reason": "file-budget",
+        "size": 4669
+      },
+      {
+        "path": "docs/design/2026-07-27-auto-skill-curator.md",
+        "reason": "file-budget",
+        "size": 5637
+      },
+      {
+        "path": "docs/design/2026-07-27-github-channel-reason-dispatch.md",
+        "reason": "file-budget",
+        "size": 1728
+      },
+      {
+        "path": "docs/design/2026-07-27-revert-pattern-triage-gate.md",
+        "reason": "file-budget",
+        "size": 10507
+      },
+      {
+        "path": "docs/design/2026-07-28-user-prompt-submit-context-provenance.md",
+        "reason": "file-budget",
+        "size": 4102
+      },
+      {
+        "path": "docs/design/2026-07-28-web-shell-composer-intent-suggestions.md",
+        "reason": "file-budget",
+        "size": 3398
+      },
+      {
+        "path": "docs/design/2026-07-29-github-channel-publication-contract.md",
+        "reason": "file-budget",
+        "size": 3090
+      },
+      {
+        "path": "docs/design/2026-07-29-handle-bound-text-range-reads.md",
+        "reason": "file-budget",
+        "size": 10081
+      },
+      {
+        "path": "docs/design/2026-07-29-session-delete-hook.md",
+        "reason": "file-budget",
+        "size": 1320
+      },
+      {
+        "path": "docs/design/2026-07-30-external-tool-guard-provider.md",
+        "reason": "file-budget",
+        "size": 16854
+      },
+      {
+        "path": "docs/design/2026-07-30-host-tool-invocation-guard.md",
+        "reason": "file-budget",
+        "size": 7616
+      },
+      {
+        "path": "docs/design/2026-07-30-web-shell-ask-user-question-submit-retry.md",
+        "reason": "file-budget",
+        "size": 961
+      },
+      {
+        "path": "docs/design/2026-07-31-daemon-capacity-model-and-memory-bounds.md",
+        "reason": "file-budget",
+        "size": 39562
+      },
+      {
+        "path": "docs/design/2026-07-31-desktop-web-shell-release.md",
+        "reason": "file-budget",
+        "size": 10039
+      },
+      {
+        "path": "docs/design/2026-07-31-tool-execution-status.md",
+        "reason": "file-budget",
+        "size": 7083
+      },
+      {
+        "path": "docs/design/2026-08-01-caller-supplied-session-id.md",
+        "reason": "file-budget",
+        "size": 10162
+      },
+      {
+        "path": "docs/design/2026-08-03-acp-tool-result-text-projection.md",
+        "reason": "file-budget",
+        "size": 3232
+      },
+      {
+        "path": "docs/design/2026-08-03-web-shell-channel-session-scope.md",
+        "reason": "file-budget",
+        "size": 1616
+      },
+      {
+        "path": "docs/design/2026-08-03-web-shell-channel-session-sidebar.md",
+        "reason": "file-budget",
+        "size": 3430
+      },
+      {
+        "path": "docs/design/2026-08-05-feishu-ask-user-question-cards.md",
+        "reason": "file-budget",
+        "size": 12558
+      },
+      {
+        "path": "docs/design/2026-08-05-sse-stream-client-observability.md",
+        "reason": "file-budget",
+        "size": 6664
+      },
+      {
+        "path": "docs/design/2026-08-06-active-work-health.md",
+        "reason": "file-budget",
+        "size": 15449
+      },
+      {
+        "path": "docs/design/2026-08-07-issue-auto-assignment.md",
+        "reason": "file-budget",
+        "size": 6547
+      },
+      {
+        "path": "docs/design/2026-08-07-safe-session-restore-timeout.md",
+        "reason": "file-budget",
+        "size": 13769
+      },
+      {
+        "path": "docs/design/2026-08-08-native-memory-recall-reliability.md",
+        "reason": "file-budget",
+        "size": 16500
+      },
+      {
+        "path": "docs/design/2026-08-08-read-only-git-config-safety.md",
+        "reason": "file-budget",
+        "size": 916
+      },
+      {
+        "path": "docs/design/2026-08-08-selective-session-restore.md",
+        "reason": "file-budget",
+        "size": 93710
+      },
+      {
+        "path": "docs/design/2026-08-09-bounded-memory-recall-candidates.md",
+        "reason": "file-budget",
+        "size": 6428
+      },
+      {
+        "path": "docs/design/2026-08-09-desktop-default-workspace.md",
+        "reason": "file-budget",
+        "size": 1224
+      },
+      {
+        "path": "docs/design/2026-08-10-tool-output-offload-preview.md",
+        "reason": "file-budget",
+        "size": 11467
+      },
+      {
+        "path": "docs/design/2026-08-10-tool-output-offload-preview.zh-CN.md",
+        "reason": "file-budget",
+        "size": 10647
+      },
+      {
+        "path": "docs/design/2026-08-10-web-shell-ask-user-question-keyboard.md",
+        "reason": "file-budget",
+        "size": 1921
+      },
+      {
+        "path": "docs/design/2026-08-11-prompt-safe-session-navigation.md",
+        "reason": "file-budget",
+        "size": 3682
+      },
+      {
+        "path": "docs/design/2026-08-12-headless-tool-result-text-projection.md",
+        "reason": "file-budget",
+        "size": 2173
+      },
+      {
+        "path": "docs/design/2026-08-13-active-work-background-shell.md",
+        "reason": "file-budget",
+        "size": 5571
+      },
+      {
+        "path": "docs/design/2026-08-13-privacy-safe-tool-result-boundary-diagnostics.md",
+        "reason": "file-budget",
+        "size": 6653
+      },
+      {
+        "path": "docs/design/2026-08-13-review-platform-provider-abstraction.md",
+        "reason": "file-budget",
+        "size": 45142
+      },
+      {
+        "path": "docs/design/2026-08-13-web-shell-sidebar-session-details.md",
+        "reason": "file-budget",
+        "size": 2093
+      },
+      {
+        "path": "docs/design/2026-08-14-web-shell-collapsed-session-switcher.md",
+        "reason": "file-budget",
+        "size": 1214
+      },
+      {
+        "path": "docs/design/2026-08-15-review-aone-provider.md",
+        "reason": "file-budget",
+        "size": 10348
+      },
+      {
+        "path": "docs/design/2026-08-15-user-facing-release-notes.md",
+        "reason": "file-budget",
+        "size": 9723
+      },
+      {
+        "path": "docs/design/2026-08-16-workspace-session-live-state.md",
+        "reason": "file-budget",
+        "size": 34024
+      },
+      {
+        "path": "docs/design/2026-08-17-review-approach-signal.md",
+        "reason": "file-budget",
+        "size": 6141
+      },
+      {
+        "path": "docs/design/2026-08-18-acp-child-peak-old-generation-measurement.md",
+        "reason": "file-budget",
+        "size": 20688
+      },
+      {
+        "path": "docs/design/2026-08-18-autofix-handoff-bilingual.md",
+        "reason": "file-budget",
+        "size": 9018
+      },
+      {
+        "path": "docs/design/2026-08-18-daemon-http-inbound-trace-context.md",
+        "reason": "file-budget",
+        "size": 8281
+      },
+      {
+        "path": "docs/design/2026-08-18-workspace-session-live-state-updated-at.md",
+        "reason": "file-budget",
+        "size": 36612
+      },
+      {
+        "path": "docs/design/2026-08-19-duplicate-provider-toolcall-id-guard.md",
+        "reason": "file-budget",
+        "size": 9677
+      },
+      {
+        "path": "docs/design/2026-08-19-prompt-terminal-ledger-design.md",
+        "reason": "file-budget",
+        "size": 22537
+      },
+      {
+        "path": "docs/design/2026-08-20-webshell-session-pr-binding.md",
+        "reason": "file-budget",
+        "size": 21209
+      },
+      {
+        "path": "docs/design/2026-08-21-review-aone-pr-context.md",
+        "reason": "file-budget",
+        "size": 16154
+      },
+      {
+        "path": "docs/design/2026-08-21-review-aone-removed-line-anchoring.md",
+        "reason": "file-budget",
+        "size": 18554
+      },
+      {
+        "path": "docs/design/2026-08-21-vp-scroll-frame-pacing.md",
+        "reason": "file-budget",
+        "size": 2731
+      },
+      {
+        "path": "docs/design/2026-08-22-rename-gemini-fork-residue.md",
+        "reason": "file-budget",
+        "size": 13979
+      },
+      {
+        "path": "docs/design/2026-08-22-serve-open-with-auth.md",
+        "reason": "file-budget",
+        "size": 19866
+      },
+      {
+        "path": "docs/design/2026-08-22-session-storage-lifecycle-repair.md",
+        "reason": "file-budget",
+        "size": 5285
+      },
+      {
+        "path": "docs/design/2026-08-23-approval-mode-contract.md",
+        "reason": "file-budget",
+        "size": 1427
+      },
+      {
+        "path": "docs/design/2026-08-23-computer-use-skill.md",
+        "reason": "file-budget",
+        "size": 3737
+      },
+      {
+        "path": "docs/design/2026-08-23-vscode-web-shell-cutover.md",
+        "reason": "file-budget",
+        "size": 10246
+      },
+      {
+        "path": "docs/design/2026-08-23-web-shell-sidebar-test-harness.md",
+        "reason": "file-budget",
+        "size": 1502
+      },
+      {
+        "path": "docs/design/2026-08-23-web-shell-sidebar-test-harness.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1484
+      },
+      {
+        "path": "docs/design/2026-08-24-daemon-ask-user-question-timeout.md",
+        "reason": "file-budget",
+        "size": 1537
+      },
+      {
+        "path": "docs/design/2026-08-24-daemon-channel-transport-liveness.md",
+        "reason": "file-budget",
+        "size": 6395
+      },
+      {
+        "path": "docs/design/2026-08-24-debug-log-session-routing-residuals.md",
+        "reason": "file-budget",
+        "size": 3458
+      },
+      {
+        "path": "docs/design/2026-08-24-scheduled-task-current-session-entrypoints.md",
+        "reason": "file-budget",
+        "size": 16183
+      },
+      {
+        "path": "docs/design/2026-08-24-signal-driven-early-floor.md",
+        "reason": "file-budget",
+        "size": 8164
+      },
+      {
+        "path": "docs/design/2026-08-25-acp-workspace-event-capability.md",
+        "reason": "file-budget",
+        "size": 920
+      },
+      {
+        "path": "docs/design/2026-08-25-agent-execution-mode-projection.md",
+        "reason": "file-budget",
+        "size": 940
+      },
+      {
+        "path": "docs/design/2026-08-25-goal-draft-skill.md",
+        "reason": "file-budget",
+        "size": 8284
+      },
+      {
+        "path": "docs/design/2026-08-25-pr-evidence-oss-hosting.md",
+        "reason": "file-budget",
+        "size": 4441
+      },
+      {
+        "path": "docs/design/2026-08-25-web-shell-context-boundary.md",
+        "reason": "file-budget",
+        "size": 887
+      },
+      {
+        "path": "docs/design/2026-08-26-scheduled-task-empty-session-persistence.md",
+        "reason": "file-budget",
+        "size": 3639
+      },
+      {
+        "path": "docs/design/2026-08-27-review-critical-axes.md",
+        "reason": "file-budget",
+        "size": 8295
+      },
+      {
+        "path": "docs/design/2026-08-27-session-pr-aone-provider.md",
+        "reason": "file-budget",
+        "size": 19120
+      },
+      {
+        "path": "docs/design/2026-08-27-webshell-session-issue-binding.md",
+        "reason": "file-budget",
+        "size": 9475
+      },
+      {
+        "path": "docs/design/2026-08-28-opentui-migration-design.md",
+        "reason": "file-budget",
+        "size": 20830
+      },
+      {
+        "path": "docs/design/2026-08-28-trusted-loopback-full-api.md",
+        "reason": "file-budget",
+        "size": 35434
+      },
+      {
+        "path": "docs/design/2026-08-29-dingtalk-permission-cards.md",
+        "reason": "file-budget",
+        "size": 7678
+      },
+      {
+        "path": "docs/design/2026-08-29-dingtalk-permission-cards.zh-CN.md",
+        "reason": "file-budget",
+        "size": 7035
+      },
+      {
+        "path": "docs/design/2026-08-29-pnpm-worktree-bootstrap.md",
+        "reason": "file-budget",
+        "size": 5300
+      },
+      {
+        "path": "docs/design/2026-08-29-user-level-language-sync.md",
+        "reason": "file-budget",
+        "size": 9171
+      },
+      {
+        "path": "docs/design/2026-08-30-turn-error-provider-detail.md",
+        "reason": "file-budget",
+        "size": 9008
+      },
+      {
+        "path": "docs/design/2026-08-31-release-quality-sharding.md",
+        "reason": "file-budget",
+        "size": 3370
+      },
+      {
+        "path": "docs/design/2026-08-31-web-shell-session-content-search.md",
+        "reason": "file-budget",
+        "size": 3231
+      },
+      {
+        "path": "docs/design/2026-09-01-qwen-live-tool-continuation-permission-resume.md",
+        "reason": "file-budget",
+        "size": 4779
+      },
+      {
+        "path": "docs/design/2026-09-01-standalone-initial-model-options.md",
+        "reason": "file-budget",
+        "size": 3236
+      },
+      {
+        "path": "docs/design/2026-09-01-web-shell-clear-manual-title.md",
+        "reason": "file-budget",
+        "size": 546
+      },
+      {
+        "path": "docs/design/2026-09-02-goal-pause-reasons.md",
+        "reason": "file-budget",
+        "size": 8734
+      },
+      {
+        "path": "docs/design/2026-09-02-output-style-files.md",
+        "reason": "file-budget",
+        "size": 5768
+      },
+      {
+        "path": "docs/design/2026-09-02-peer-inbox-reachability.md",
+        "reason": "file-budget",
+        "size": 7205
+      },
+      {
+        "path": "docs/design/2026-09-02-peer-messaging-child-token.md",
+        "reason": "file-budget",
+        "size": 4887
+      },
+      {
+        "path": "docs/design/2026-09-02-peer-messaging-receipts-expiry.md",
+        "reason": "file-budget",
+        "size": 6574
+      },
+      {
+        "path": "docs/design/2026-09-02-qwen-live-visual-input.md",
+        "reason": "file-budget",
+        "size": 8048
+      },
+      {
+        "path": "docs/design/2026-09-02-relaxed-standalone-daemon-ownership.md",
+        "reason": "file-budget",
+        "size": 63303
+      },
+      {
+        "path": "docs/design/2026-09-02-web-shell-session-artifacts-change.md",
+        "reason": "file-budget",
+        "size": 4275
+      },
+      {
+        "path": "docs/design/2026-09-03-client-filesystem-bridge.md",
+        "reason": "file-budget",
+        "size": 38676
+      },
+      {
+        "path": "docs/design/2026-09-03-opentui-batch8-submit-exit-parity.md",
+        "reason": "file-budget",
+        "size": 18828
+      },
+      {
+        "path": "docs/design/2026-09-03-opentui-batch9-transcript-visibility.md",
+        "reason": "file-budget",
+        "size": 40950
+      },
+      {
+        "path": "docs/design/2026-09-03-outbound-session-id-header.md",
+        "reason": "file-budget",
+        "size": 4485
+      },
+      {
+        "path": "docs/design/2026-09-03-peer-messaging-gate-matrix.md",
+        "reason": "file-budget",
+        "size": 7338
+      },
+      {
+        "path": "docs/design/2026-09-04-model-configured-reasoning.md",
+        "reason": "file-budget",
+        "size": 1813
+      },
+      {
+        "path": "docs/design/2026-09-04-opentui-batch10-parity-closeout.md",
+        "reason": "file-budget",
+        "size": 32092
+      },
+      {
+        "path": "docs/design/2026-09-04-qwen-live-proactive.md",
+        "reason": "file-budget",
+        "size": 10277
+      },
+      {
+        "path": "docs/design/2026-09-05-qwen-live-audit-fixes.md",
+        "reason": "file-budget",
+        "size": 4987
+      },
+      {
+        "path": "docs/design/2026-09-05-qwen-live-memory.md",
+        "reason": "file-budget",
+        "size": 6661
+      },
+      {
+        "path": "docs/design/2026-09-06-live-orb-refinements.md",
+        "reason": "file-budget",
+        "size": 3823
+      },
+      {
+        "path": "docs/design/2026-09-06-live-status-layout.md",
+        "reason": "file-budget",
+        "size": 1980
+      },
+      {
+        "path": "docs/design/2026-09-06-qwen-live-orb-interaction.md",
+        "reason": "file-budget",
+        "size": 3916
+      },
+      {
+        "path": "docs/design/2026-09-07-goal-continuation-budget.md",
+        "reason": "file-budget",
+        "size": 6244
+      },
+      {
+        "path": "docs/design/2026-09-07-goal-no-progress-pause.md",
+        "reason": "file-budget",
+        "size": 12060
+      },
+      {
+        "path": "docs/design/2026-09-07-live-language-and-settings.md",
+        "reason": "file-budget",
+        "size": 3857
+      },
+      {
+        "path": "docs/design/2026-09-07-live-subagents-refinement.md",
+        "reason": "file-budget",
+        "size": 4622
+      },
+      {
+        "path": "docs/design/2026-09-07-live-subagents.md",
+        "reason": "file-budget",
+        "size": 5482
+      },
+      {
+        "path": "docs/design/2026-09-07-peer-admission-control.md",
+        "reason": "file-budget",
+        "size": 9745
+      },
+      {
+        "path": "docs/design/2026-09-07-web-shell-split-usability.md",
+        "reason": "file-budget",
+        "size": 4110
+      },
+      {
+        "path": "docs/design/2026-09-08-live-device-and-status.md",
+        "reason": "file-budget",
+        "size": 4356
+      },
+      {
+        "path": "docs/design/2026-09-08-live-open-config.md",
+        "reason": "file-budget",
+        "size": 3212
+      },
+      {
+        "path": "docs/design/2026-09-08-live-upstream-migration.md",
+        "reason": "file-budget",
+        "size": 3241
+      },
+      {
+        "path": "docs/design/2026-09-08-reasoning-model-presets.md",
+        "reason": "file-budget",
+        "size": 7166
+      },
+      {
+        "path": "docs/design/2026-09-08-reasoning-model-presets.zh-CN.md",
+        "reason": "file-budget",
+        "size": 6649
+      },
+      {
+        "path": "docs/design/2026-09-08-session-live-state-poll-interval.md",
+        "reason": "file-budget",
+        "size": 2653
+      },
+      {
+        "path": "docs/design/2026-09-09-daemon-sessions-in-directory.md",
+        "reason": "file-budget",
+        "size": 8532
+      },
+      {
+        "path": "docs/design/2026-09-09-daemon-sessions-in-directory.zh-CN.md",
+        "reason": "file-budget",
+        "size": 8187
+      },
+      {
+        "path": "docs/design/2026-09-09-goal-turn-and-time-budget.md",
+        "reason": "file-budget",
+        "size": 15616
+      },
+      {
+        "path": "docs/design/2026-09-09-goal-turn-and-time-budget.zh-CN.md",
+        "reason": "file-budget",
+        "size": 15462
+      },
+      {
+        "path": "docs/design/2026-09-09-live-display-capture.md",
+        "reason": "file-budget",
+        "size": 4372
+      },
+      {
+        "path": "docs/design/2026-09-09-live-display-capture.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4104
+      },
+      {
+        "path": "docs/design/2026-09-09-live-monitor-diagnostics.md",
+        "reason": "file-budget",
+        "size": 2891
+      },
+      {
+        "path": "docs/design/2026-09-09-live-monitor-diagnostics.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2676
+      },
+      {
+        "path": "docs/design/2026-09-09-live-review-corrections.md",
+        "reason": "file-budget",
+        "size": 5351
+      },
+      {
+        "path": "docs/design/2026-09-09-live-subagent-controls.md",
+        "reason": "file-budget",
+        "size": 10500
+      },
+      {
+        "path": "docs/design/2026-09-09-live-subagent-controls.zh-CN.md",
+        "reason": "file-budget",
+        "size": 9431
+      },
+      {
+        "path": "docs/design/2026-09-09-low-risk-nav-review.md",
+        "reason": "file-budget",
+        "size": 4711
+      },
+      {
+        "path": "docs/design/2026-09-09-low-risk-nav-review.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4232
+      },
+      {
+        "path": "docs/design/2026-09-09-split-export-transcript-css.md",
+        "reason": "file-budget",
+        "size": 12511
+      },
+      {
+        "path": "docs/design/2026-09-09-split-export-transcript-css.zh-CN.md",
+        "reason": "file-budget",
+        "size": 12226
+      },
+      {
+        "path": "docs/design/2026-09-09-web-shell-question-message.md",
+        "reason": "file-budget",
+        "size": 4468
+      }
+    ],
+    "omitted_count": 821,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 8399,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 827,
+      "complete": false,
+      "omitted": 821,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_f3550580286e5f3f952b9286533e6fc4",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/qwenlm/qwen-code/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/0429dc14353565eb/manifest.json",
+  "package_id": "pkg_0968cdccec200489f981c4787736b01d2f9067b701ec3c4cd506a62c3eb6b143",
+  "repo": "qwenlm/qwen-code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8f639f0ecd7662a138c6f25d5294c91f7e7ff59de8bf87119fd0cb792d343381",
+  "snapshot_id": "0429dc14353565eb",
+  "sources": [
+    {
+      "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+      "git_sha": "7632076d18c8b1363dcc3dcfce04063f1003aef7",
+      "lines": 210,
+      "path": "README.md",
+      "repository": "qwenlm/qwen-code",
+      "sha256": "0fc2159f9ab32e6d28a9f47a692002540537421525e96cd3a7e37c01ceb9fdde",
+      "source_id": "src_0223cfa9e0ba5300ab46d42e77375e48",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/README.md"
+    },
+    {
+      "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+      "git_sha": "fe38e357ce49143a1f9e164f7d897fb100f1ab39",
+      "lines": 398,
+      "path": "docs/design/daemon-sidechannel-coordination/design.md",
+      "repository": "qwenlm/qwen-code",
+      "sha256": "d666aa87ab3d691bcccfb896acf4465e5af32e84e9e3c1f6860e8fb712f64803",
+      "source_id": "src_3987d8bc94a15f189c12bede1626f7e0",
+      "stored": "design.md-343d9f79cd06.md",
+      "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/design/daemon-sidechannel-coordination/design.md"
+    },
+    {
+      "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+      "git_sha": "7c6a2c887868c254473d35ec8b2a96f71a7812e4",
+      "lines": 229,
+      "path": "docs/developers/architecture.md",
+      "repository": "qwenlm/qwen-code",
+      "sha256": "7e24d9a88a8c7afc4771923da5f4a8b3b5b9436b0bd8613cd5c46bdd17052499",
+      "source_id": "src_d7eeff27735e54acaabd783ed77d565f",
+      "stored": "architecture.md-03d66c03b914.md",
+      "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/developers/architecture.md"
+    },
+    {
+      "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+      "git_sha": "6c4959401d0a36925cfc3ffdf8c0e77f42b8356e",
+      "lines": 91,
+      "path": "docs/developers/tools/sandbox.md",
+      "repository": "qwenlm/qwen-code",
+      "sha256": "e8480bff870c5b877fe63998f1be8a53d01c2e63f6ae0808227440cf2252e14a",
+      "source_id": "src_70fc1b27f24555b5b58e95999ada87e5",
+      "stored": "sandbox.md-079176f1c442.md",
+      "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/developers/tools/sandbox.md"
+    },
+    {
+      "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+      "git_sha": "93eceef0827ec276efc5622f8a230524a1e77b19",
+      "lines": 265,
+      "path": "docs/users/features/memory.md",
+      "repository": "qwenlm/qwen-code",
+      "sha256": "f607c75d6235ed723cdd333f38df2d8f67d72d48f642ea31da1afd7e791d3e8c",
+      "source_id": "src_5c1f74dffab2504b829825663a1c2929",
+      "stored": "memory.md-d02d3f5be5a8.md",
+      "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/users/features/memory.md"
+    },
+    {
+      "commit": "7e0beb9d18233b0395dd7c203cb2e60a88de30aa",
+      "git_sha": "c1b764be0a06bddefcdba6c91c1c15e3ff8431f8",
+      "lines": 251,
+      "path": "docs/users/features/sandbox.md",
+      "repository": "qwenlm/qwen-code",
+      "sha256": "ec5b413deb39c1eb2909ca1c5710be203e1d6c97ca44fe3a24567ed522766699",
+      "source_id": "src_b2a5690c3f145707bb9b60345a7e84b3",
+      "stored": "sandbox.md-e4edbfec96cb.md",
+      "url": "https://github.com/QwenLM/qwen-code/blob/7e0beb9d18233b0395dd7c203cb2e60a88de30aa/docs/users/features/sandbox.md"
+    }
+  ],
+  "summary": "Qwen Code is an open-source, multi-protocol AI coding agent distributed as an npm package with terminal, headless, daemon, SDK, and IDE surfaces; the snapshot includes README product docs, an architecture overview, and a daemon side-channel coordination design doc. Evidence coverage: 110 of 329 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

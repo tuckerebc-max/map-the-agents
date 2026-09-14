@@ -1,0 +1,38 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_044dbb67ebe1fc3f807f439c4ade2350b2031f114db7f08df66e4f5f24e16eee
+- clm_1189cd1007dcacfe44f0d8c50adda666214a8b4164830ac0159340984e029a12
+- clm_543877fb5fafa70c2676ea33ca38049716d88697921cbfe8da2142b842e4f3c1
+- clm_57adb9a4119b9d7bfd78760096451720f4ddcadb983cebd927e2b5c1a6c67eea
+- clm_9756c8d5953c65d597777e1ba7f82e9464d7184188d049d93c7366f91afa7ba0
+- clm_9bb4946b6d58de1d570c5bf3462fa766b05d6c742b8ab5577bdbbc72158fd7d2
+- clm_c7e2d8f9cb51c47d6f59710b0e242e6c0ca5ca9f6a812814566b727bde6b3caa
+- clm_ccd0ceff5349a90fc9886ea596b9bf674f9bc730396bd700a610ee1cfbd287df
+maturity: draft
+page_id: pg_35508fa4f2705718a3f9c0315f251e7b
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_83d3ea754eb15ee7b49b4034bff5436d
+title: JogendraSingh1879/Agentic-AI-/README.md @ 7784daeecbb3
+updated_at: '2026-09-14T04:01:15Z'
+---
+
+# JogendraSingh1879/Agentic-AI-/README.md @ 7784daeecbb3
+
+<!-- rcw:begin owner=source:src_83d3ea754eb15ee7b49b4034bff5436d block=evidence -->
+- The Order Agent receives order details (size, type, quantity), validates availability, requests inventory checks, and handles payment processing. [@claim:clm_044dbb67ebe1fc3f807f439c4ade2350b2031f114db7f08df66e4f5f24e16eee]
+- The Order Agent communicates with the Inventory Agent via API calls, which may be synchronous or asynchronous, to check ingredient availability before confirming orders. [@claim:clm_1189cd1007dcacfe44f0d8c50adda666214a8b4164830ac0159340984e029a12]
+- The Inventory Agent manages pizza ingredients such as cheese, dough, and toppings, checks sufficiency for orders, and updates stock after each order. [@claim:clm_543877fb5fafa70c2676ea33ca38049716d88697921cbfe8da2142b842e4f3c1]
+- The system is exposed as a REST API built with FastAPI, with the Order Agent and Inventory Agent as separate endpoints. [@claim:clm_57adb9a4119b9d7bfd78760096451720f4ddcadb983cebd927e2b5c1a6c67eea]
+- The stated goal is to let a customer place a pizza order, verify sufficient ingredients in inventory, and confirm the order after payment. [@claim:clm_9756c8d5953c65d597777e1ba7f82e9464d7184188d049d93c7366f91afa7ba0]
+- The system comprises two agents: an Order Agent that takes pizza orders and processes payment, and an Inventory Agent that manages ingredient stock. [@claim:clm_9bb4946b6d58de1d570c5bf3462fa766b05d6c742b8ab5577bdbbc72158fd7d2]
+- The README references a deployed instance on an AWS host with a Swagger docs page including an order POST endpoint at /order. [@claim:clm_c7e2d8f9cb51c47d6f59710b0e242e6c0ca5ca9f6a812814566b727bde6b3caa]
+- The architecture appears to favor a service-oriented multi-agent design where each agent is independently reachable as its own HTTP endpoint rather than in-process function calls. [@claim:clm_ccd0ceff5349a90fc9886ea596b9bf674f9bc730396bd700a610ee1cfbd287df]
+<!-- rcw:end owner=source:src_83d3ea754eb15ee7b49b4034bff5436d block=evidence -->
+
+## Researcher notes
+

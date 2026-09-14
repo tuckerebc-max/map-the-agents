@@ -1,0 +1,597 @@
+{
+  "applied_operation_id": "op_00ebb5e715e84a1db1293524ade23643",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae0271fae68ec1f787bd8958fd953443d651599cf2aa7e97e1d1cf55903657ce",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "3a91be3a770a7f3f5c58a317293a0e67ea36d016",
+          "line_end": 22,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/README.md#L17-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_876acf829c342eeb77300f8bdf832b3abd875b1dbad966f283f3698a85cdcb55"
+      ],
+      "text": "The README advertises a ReAct (Reasoning & Acting) pattern implementation as a core feature of the agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_142aa1ab5d39a3fc8cec97df5df6ba57cf5eae66f4ed9350700145b0b998f63c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "3a91be3a770a7f3f5c58a317293a0e67ea36d016",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/README.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c6dad03019b427b53e530b521030dee1b6344b388ce9eec64523bb96f371ac26"
+      ],
+      "text": "The project positions itself as a tinier, cleaner, less cluttered alternative to Eliza."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_77e00c46cd02a6f9d08325b5d0bc0b50619912d6994148731918f78d584db585",
+      "evidence_type": "contextual_fact",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 23,
+          "line_start": 15,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L15-L23"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be824bbcbd083505178ce20bfd2ad8b73634650f428b6df853fbe3f6aeb9cf0b",
+        "slc_d1d1ea5fed15e3859eec7e1c1a5d3108bf437d3eb46ac4aced7753c6f3c095e1"
+      ],
+      "text": "A ReactAgentRuntime class implements IAgentRuntime, holding an LLMEngine, tools, providers, clients, state, and a message buffer."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_efd654a61f1bab9ba1b02582a6721c5b905b9d2071e2fbf0ad403f3b6407e6c4",
+      "evidence_type": "contextual_fact",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L11-L11"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 60,
+          "line_start": 47,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L47-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07d534d660ae6eb09795c91b38d771e6031024792a5ac77e2e74d29237e12bf5",
+        "slc_bf185a86e5475f50f3012f1e101fb15ca662c3108ff4c6cf8d6a10e1e7412457"
+      ],
+      "text": "The runtime loops calling _step() until state.completed is set; with SAFE_MODE enabled it stops after MAX_STEPS steps (default 20 from the MAX_STEPS env var)."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_9b9395caa51b0c884f89e569ffc219122b021a5f0128953bb7d9258eafb9c376",
+      "evidence_type": "contextual_fact",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 92,
+          "line_start": 90,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L90-L92"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 88,
+          "line_start": 86,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L86-L88"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L77-L81"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 84,
+          "line_start": 83,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L83-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d85f778d9e6bf490a94c2c3d06a7bae340eb82b7cc4d942c3c8955c32ff5f27",
+        "slc_dbb52b25a7fd757080f21cb893432c6e9fcc70b89eef823115f51ee7b06a6569",
+        "slc_ef7a871583850c085a032b167e5a1fef157396aaa5d3faa850884eb19a64f763",
+        "slc_f24b7dc71f03416639dd8c966369d5023be42f8173ebc23ca663017dd1c7e607"
+      ],
+      "text": "Each step builds a context from a React template and a system prompt from a personality template, generates text via the LLM engine, and parses a JSON block from the response."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_ce1fbfb04a9709b6aa96cf5679f538def96df57b59f027a9981ae973bdb03a53",
+      "evidence_type": "contextual_fact",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 99,
+          "line_start": 98,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L98-L99"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 122,
+          "line_start": 108,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L108-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23920193450e8f02347a0cd50f6daa567f7986175ceb3f563638fdbe12d99f79",
+        "slc_bb6ef42f3b1db85b4dabeb803db94b5ac9c80c454ebf617435d1d23a5e782c98"
+      ],
+      "text": "Parsed responses append Thought/Action/Observation entries to a scratchpad; actions are matched to tools by name and executed with the action input, with unknown tools logged as an observation."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_27543b930701c920272a3b40b09909e94d0831ca67bb9b24d05503bb88d6a7f6",
+      "evidence_type": "contextual_fact",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 178,
+          "line_start": 173,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L173-L178"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 106,
+          "line_start": 101,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L101-L106"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 23,
+          "line_start": 15,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L15-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e770359703d3cc4b4cd7552a08f629f9e26b50859cd2bb1d4b28b2a193f8919",
+        "slc_53c590458f23eca051322e1240c37204c1e091699f2f30db283ea56080d41966",
+        "slc_be824bbcbd083505178ce20bfd2ad8b73634650f428b6df853fbe3f6aeb9cf0b"
+      ],
+      "text": "The scratchpad is capped at 33 steps (oldest trimmed) and the message buffer at 33 messages with oldest-message eviction."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_8884f29d1726d1e73b8999f7cf01cc19927c0e1c0fdbdbc27387525ee8f1ba7a",
+      "evidence_type": "contextual_fact",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "937f96e8070e5564342ced1327d29fad3bec327f",
+          "line_end": 16,
+          "line_start": 4,
+          "path": "src/context.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/context.ts#L4-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_566dd298b6a9fd09f6724f78acee6ad3494b445d0d3ef96cf67902d79acd54b2"
+      ],
+      "text": "buildContext substitutes {{key}} placeholders in templates with string values from the agent state."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_b287b4de7a75e9387c63bf06e93a9e4044a2af33d96872883ca83c662a713f43",
+      "evidence_type": "contextual_fact",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "937f96e8070e5564342ced1327d29fad3bec327f",
+          "line_end": 45,
+          "line_start": 42,
+          "path": "src/context.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/context.ts#L42-L45"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "937f96e8070e5564342ced1327d29fad3bec327f",
+          "line_end": 54,
+          "line_start": 53,
+          "path": "src/context.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/context.ts#L53-L54"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "937f96e8070e5564342ced1327d29fad3bec327f",
+          "line_end": 48,
+          "line_start": 47,
+          "path": "src/context.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/context.ts#L47-L48"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "937f96e8070e5564342ced1327d29fad3bec327f",
+          "line_end": 51,
+          "line_start": 50,
+          "path": "src/context.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/context.ts#L50-L51"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "937f96e8070e5564342ced1327d29fad3bec327f",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "src/context.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/context.ts#L56-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ba3352ac940581a9ee43e789593dc4938c4a7cf8703d2e3dc190511534d8f58",
+        "slc_4651ee3f93a57c6635097e722b2e9f7e8ab24488b4291738483f8450664b3d1d",
+        "slc_97f00899b8ddb1e74449ce8e6bc1a85f24d5e8732b076eb67b07c5832951a598",
+        "slc_d3f2f313f78376f8c719e879fb8ab1091e29345399212acf132d30728a66f379",
+        "slc_e3cd3cf7465b58802c47071cca3745489622eb532138cf8a1ca56f4e8164e0dc"
+      ],
+      "text": "formatPersonality renders an IAgentPersonality into prompt sections: Identity, Biography, Background Lore, Personality Style, and Rules."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_86f277892e2f2221b21f5e995766cdb9f650b7a75d06db8aaee5d39ac928ab52",
+      "evidence_type": "contextual_fact",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 151,
+          "line_start": 149,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L149-L151"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 171,
+          "line_start": 169,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L169-L171"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 139,
+          "line_start": 137,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L137-L139"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 159,
+          "line_start": 157,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L157-L159"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+          "line_end": 189,
+          "line_start": 184,
+          "path": "src/runtimes/reactRuntime.ts",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts#L184-L189"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21c44527080a1b368605eb23e7b61e1d8174f2a13a41be825c3c82694c0aaa47",
+        "slc_33b1742c51868e6e3744fde58bca89f5e8552243d5ccc50a4c97a34293934277",
+        "slc_7880d2e8658a0aa5927317894aecdd478184756286f8f32a3921fe79f3572096",
+        "slc_a73f1226d417a831d0c2c40daba79efb3a507a1932b658bb83375a628a985901",
+        "slc_f20ead1b6de6d73704da39dc86d41211779b76fdec0cf3b42290ea595e04ff88"
+      ],
+      "text": "The runtime provides public methods to add clients, tools and providers, merge state updates, and disconnect all registered clients."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_98a214d5f2b19ca9dce9cfca1629c910e119ea54dbbdbf8d831c42243f5b859d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "3a91be3a770a7f3f5c58a317293a0e67ea36d016",
+          "line_end": 32,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/README.md#L29-L32"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "3a91be3a770a7f3f5c58a317293a0e67ea36d016",
+          "line_end": 42,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/README.md#L39-L42"
+        },
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "3a91be3a770a7f3f5c58a317293a0e67ea36d016",
+          "line_end": 37,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/README.md#L34-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51107245f693928f97f03e38ec8d61fec50d98b47b0fd2ae9df8eafdcce7aa4d",
+        "slc_7f949ecf75fbb1cde467a020660c7767becc984c2680b0aea0594f235b8dc8c7",
+        "slc_ef5fb73cfc830bb18b23fa2c19757ac4e8c9cb5aaf4aa07183e1ddbd3ad25811"
+      ],
+      "text": "Repository development practice: setup instructions say to install dependencies with pnpm install, copy .env.example to .env, and run the agent with pnpm dev."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85f25c666cabbcce24b537db05da1f153ba53ea74cfedba5a9d51fe061f73cfc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+          "git_sha": "3a91be3a770a7f3f5c58a317293a0e67ea36d016",
+          "line_end": 22,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "bombap/tiny-agent",
+          "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/README.md#L17-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_876acf829c342eeb77300f8bdf832b3abd875b1dbad966f283f3698a85cdcb55"
+      ],
+      "text": "The README lists a configurable personality system, extensible tool system, multi-client support, and modular architecture as features."
+    }
+  ],
+  "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+  "coverage": {
+    "explicit_paths": [
+      "src/runtimes/reactRuntime.ts",
+      "src/context.ts"
+    ],
+    "files": [
+      {
+        "lines": 42,
+        "path": "README.md",
+        "size": 721
+      },
+      {
+        "lines": 189,
+        "path": "src/runtimes/reactRuntime.ts",
+        "size": 6795
+      },
+      {
+        "lines": 61,
+        "path": "src/context.ts",
+        "size": 2074
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 31,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3975e471bf4e5a44ae783596c0171f07",
+  "facets": {
+    "components": 3,
+    "dependencies": 0,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/bombap/tiny-agent/58ecae062ec6a7d405bda84447d774e5070bfa4d/f365606f97822f06/manifest.json",
+  "package_id": "pkg_f13919f025e6453d92ae639ee55af0ac74718d3be795746efbf40217dc48b09e",
+  "repo": "bombap/tiny-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2d9511b69f8a44fd7110dedde1c81ba1abd47b375ccd39209a93507392961a7a",
+  "snapshot_id": "f365606f97822f06",
+  "sources": [
+    {
+      "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+      "git_sha": "3a91be3a770a7f3f5c58a317293a0e67ea36d016",
+      "lines": 42,
+      "path": "README.md",
+      "repository": "bombap/tiny-agent",
+      "sha256": "56377a278ef7f81bab7f9095d42c6eaf5bc188f1e482f31375a24da3f6ffc145",
+      "source_id": "src_cbd5288a34f15825b9f697115ff287b4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/README.md"
+    },
+    {
+      "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+      "git_sha": "937f96e8070e5564342ced1327d29fad3bec327f",
+      "lines": 61,
+      "path": "src/context.ts",
+      "repository": "bombap/tiny-agent",
+      "sha256": "e2bea0715141a4d1aa763ac4f278dffd51d678a770fe21fead29b5caa5de1ce7",
+      "source_id": "src_eb2a7e10e9255dae99c9a37c64b25e09",
+      "stored": "context.ts-0cd594dddd6a.txt",
+      "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/context.ts"
+    },
+    {
+      "commit": "58ecae062ec6a7d405bda84447d774e5070bfa4d",
+      "git_sha": "df9a2c66a01d1101bfe806ae3dfc99a0d10f161c",
+      "lines": 189,
+      "path": "src/runtimes/reactRuntime.ts",
+      "repository": "bombap/tiny-agent",
+      "sha256": "5801f77d85d982079109b9877cb042196f8875a2ebdf196ed83ae00a44de9fbb",
+      "source_id": "src_6395b34e471355a897ba0d61b909fd3d",
+      "stored": "reactruntime.ts-0ad5ba3ad72d.txt",
+      "url": "https://github.com/bombap/tiny-agent/blob/58ecae062ec6a7d405bda84447d774e5070bfa4d/src/runtimes/reactRuntime.ts"
+    }
+  ],
+  "summary": "TinyAgent is a minimal ReAct-pattern agent runtime in TypeScript with a configurable personality prompt system, extensible tools/providers, and a bounded message buffer; evidence covers README features and the ReactAgentRuntime/context source.",
+  "superseded_claim_ids": [
+    "clm_e518af201242fa346508b809e3d2fc4167332afb53bed9bab43b187a3b772242"
+  ]
+}

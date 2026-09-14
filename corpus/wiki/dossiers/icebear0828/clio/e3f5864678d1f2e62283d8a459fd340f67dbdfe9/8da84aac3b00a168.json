@@ -1,0 +1,806 @@
+{
+  "applied_operation_id": "op_f4bba5217ec04e02907695d0e8b1be87",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4207b564eeaf373f2cd8eaa82d0b75a00b0ef0b05aa47c204b60ca0c328c4b76",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_205607177052bf556e9ecb48858a8970635a9b9b33318d87f5e30f1a0dca3411"
+      ],
+      "text": "Clio is a feature-rich terminal Claude Code clone connecting to the Anthropic API or compatible endpoints, providing an interactive agentic coding assistant with local tool execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd2df90e4b0bee877f3b4587fa36c417a1d09d6820a8d89023e9901a23092a4c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fdaac107c4aba9c89b19b7501edbcd97095d4356d93fb72d7310ddc36c7b6a7b"
+      ],
+      "text": "The project has 46 source files of roughly 9200 lines of TypeScript, with zero external runtime dependencies besides fast-glob."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e7468765b6b9829a0d5a2b53081fe43f3023950049b678848ace93682b95c1e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 87,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L72-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d0ba242b80169de2bdf62274e639f302935e3844caf651b585e152ba4d0f0fa"
+      ],
+      "text": "The CLI exposes flags including --api-url, --api-key, --api-format (anthropic|openai), --model, --resume, --fork-session, --thinking, --permission-mode, --allow/--deny patterns, --allow-outside-cwd, and --dangerously-skip-permissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03c1b857b0e7d65ad731b02ba59df5e43765b8f0b706edb98383c1d9178e7d81",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 157,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L139-L157"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 367,
+          "line_start": 313,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L313-L367"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bd5f2e9e4785de0c1a85032c7624f634be1d0b6ed8f3cbd6061c6b5888b11ff",
+        "slc_bf357833b95ba990e81f2ca61543a64d7c497da84e95326cec3c28a6623ab54b"
+      ],
+      "text": "The REPL provides 17 slash commands such as /commit, /pr, /review, /compact, /context, /cost, /doctor, /init, /model, /sessions, /settings, and /theme."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c04da05f6c5df5e4fac3e4d21f828010b8f42bd8f6bc81cfb4ef87e135017bd",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 66,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L36-L66"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 210,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L188-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d40162bb9c61abd9c28ab58593cc6e98910327446cbd47ed0f3a69ae3412141",
+        "slc_9910c30459f49221bd727da34a724291c57842f429e4257c91b99e177c7f4d27"
+      ],
+      "text": "The tool set includes 21 tools spanning Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch, Agent, task tracking tools, Skill, ToolSearch, team tools, and SendMessage, categorized as safe, write, or dangerous."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3aa84c2ebaf3b2507135a428f264b653642958c2b6f5a891e62e1b97ca29a7d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 215,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L212-L215"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64af71bcee39d980ecfb70764dfe97655798ae98afcc376176e09bdd34016d7b"
+      ],
+      "text": "The runtime permission model has three modes: default (safe tools auto-allowed, dangerous/write prompt Y/n/a), auto (all allowed with deny rules), and plan (dangerous/write silently denied), cycled with Shift+Tab."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c46b75261ff414c073a34eb0cfb4253abec72733a41903b666434b02a175524e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 220,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L217-L220"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 367,
+          "line_start": 313,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L313-L367"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 133,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L113-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bbb6e14666e23731e2f9080a64cb1f9a2473b57c438e49dbd9f30240daf34b1d",
+        "slc_bf357833b95ba990e81f2ca61543a64d7c497da84e95326cec3c28a6623ab54b",
+        "slc_e7c18fd3e1aea0729dc4cdbe9d137f16cfa15252a2d018d2b649df6c9413b833"
+      ],
+      "text": "Bash command allow/deny rules use glob patterns, configurable via --allow/--deny flags or settings allowRules/denyRules, and a two-stage auto classifier combines pattern matching with an LLM (Haiku)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ea6614f60246abb509e0b60c2f1fc822c18160183cc4623539cc4303cf01404",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 224,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L224-L224"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 232,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L226-L232"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 237,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L237-L237"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc0b5e4eb441097f6ea9210f918cb80e4941df1d909667cabdca9b8bf608cdf5",
+        "slc_f62f4779811a10a04479fc41f012f7bc4afeb091dd10fc0b870a04ff42ec6a95",
+        "slc_fde5b0bf2065caa3c9b51d3ca4c706148dc624e4534f0d5836506e1b76b145ad"
+      ],
+      "text": "Custom agents are defined in .clio/agents/*.md with front-matter specifying tools, model, and max_iterations, and are invoked via the Agent tool with a subagent_type parameter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_771d0f5f429c7524b6326d38784d8ca6426e1e8b74cd1137c6f9402e3a8aa8f6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 252,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L243-L252"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 241,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L241-L241"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 254,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L254-L254"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f8c9bc54dbf6fab7ca2a770c77ed8fa095ca37f92911b595e03eadae5cb757f",
+        "slc_60a822bea10de6e8475cc53398e6ad5e35a8f90f0c7b0d7ee543e8cd3bbe583d",
+        "slc_b597c9ebcb26202669910657b50ad521e9580cecc0880bf2e0a86cab5a8618aa"
+      ],
+      "text": "MCP servers are configured in settings.json, communicate over JSON-RPC 2.0 via stdio, and their tools are auto-discovered at startup with an mcp__<server>__<tool> prefix."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b6f93f49c114a273f30f2627ebfe11f893c80e1e067b8fc94f1eab70c8754b1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 66,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L36-L66"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "97a0c0f42eadc14aea621cab77c66a9bb26886c0",
+          "line_end": 66,
+          "line_start": 36,
+          "path": "README_zh.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README_zh.md#L36-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d40162bb9c61abd9c28ab58593cc6e98910327446cbd47ed0f3a69ae3412141",
+        "slc_91e7fe4457bf38e7c0e14db6e86b2450b6001fc523cc219afa60ee0742ec1195"
+      ],
+      "text": "Sub-agents support background execution via run_in_background with completion notifications, and can run in isolated git worktrees; agent teams enable messaging between agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_21032f2b4b2e959e961de0e5faebdc525db6258352775c4924aec217ca033a74",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 305,
+          "line_start": 305,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L305-L305"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 298,
+          "line_start": 298,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L298-L298"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 309,
+          "line_start": 308,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L308-L309"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_350cf2f06fa1169ad02d5f7b2ef0773133640a8a55e411b463f2416f5a014477",
+        "slc_a0f8673b4ebdf89c7817cc69c993957a5540601070f6c52199044fd58a18309d",
+        "slc_aa0003a6a349d8da07ebf209df132f66a60a967bac0f304de5dfad1ccb7404bf"
+      ],
+      "text": "Conversations auto-save to ~/.clio/sessions/{id}.json after each turn and can be resumed with --resume or forked with --fork-session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bfa9d1f55e6588b2fb0cc2cfde93d1e2db98493769e1e5d5d9f1825e1ea3c441",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L102-L102"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L135-L135"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 109,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L104-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ab61e8ca73ac6e090443b5d2ab4645f3d23ffea3018c29a662f71959ac8a841a",
+        "slc_abf437655169f299b6e51e592ca264b561f68707fc699cc436ec674e00198096",
+        "slc_f3382fc32c78744fff53ae98483c5797e35a59bac61c986f9dc040d1f2a9d8f1"
+      ],
+      "text": "Settings use a four-level hierarchy (global and project, each with committed and gitignored local files) where arrays concatenate across layers and scalars override."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5deb774308069090023fb0d878f269bab66dbecb12040eaaea06511eb2ed9d3e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 276,
+          "line_start": 273,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L273-L276"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 258,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L258-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2315e48e06ce766263cddf2acd05b8ab4d6f17bfe6b43a9af38f49c4ee18fe2e",
+        "slc_d48a6b12b4308a2a17fa1c12061509efb3eea01efb578c3d43e95c84184d7f81"
+      ],
+      "text": "Hooks run shell commands before or after tool execution; a non-zero pre-hook exit blocks the tool while post-hook failures only log a warning, with CLIO_TOOL_NAME, CLIO_TOOL_INPUT, and CLIO_HOOK_PHASE environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49f68e04d3bcf9bcd053b1ed6d0e6d371401c99cda1b5086db98b1cdb1b0dc4f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 66,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L36-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d40162bb9c61abd9c28ab58593cc6e98910327446cbd47ed0f3a69ae3412141"
+      ],
+      "text": "The system prompt auto-loads CLAUDE.md files via upward directory traversal plus git branch/status/commit context, and prompt caching via cache_control is claimed to save about 90% of input tokens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3cf1b6a36fa7c3e7d829af6daa5c5d69fad56f6ed450a72a3a1cb905ddd062e6",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 371,
+          "line_start": 371,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L371-L371"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7737445a965d8b3f32e6e26f43fa2b9a508b6e11e757953d02bd4d6e86f6b5e6"
+      ],
+      "text": "A benchmark report compares Clio against Claude Code on latency, token usage, cache efficiency, and correctness across five task types."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f14ae4102753168e6be3ecb5af255f53bc439c3851cfa706783c60d7b1ee159b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 153,
+          "line_start": 148,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L148-L153"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 13,
+          "line_start": 7,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L7-L13"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 141,
+          "line_start": 138,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L138-L141"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 99,
+          "line_start": 95,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L95-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_370a474efe6757af7dba57b319e94b020cdca8e3dc878729aa47c9e1c0e82508",
+        "slc_5e2eb261b0ba9a9000e67a88d8ff73c8c0626735979762aa26f7fd82b1e551c0",
+        "slc_9d7f149fc38d01395c46fb80f127a0720e4991a01b600c84dc75d7d0b3b5b05c",
+        "slc_bd5762e8a7c684cab68a946381cf589cc221586133559f1e78e463a23e2b9db0"
+      ],
+      "text": "Repository development practice: CLAUDE.md instructs contributors to run npm run dev/build/test (vitest), keep TypeScript strict with no any, use ESM .js import extensions, and add tests per module."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b52e39c7a437d1c026f0486fe732f30933c74b9d27a8085c26ac857e4962295",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 107,
+          "line_start": 106,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L106-L107"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L117-L120"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ff4ba630b3d17f33cc3f3f22abcec6156347d4dd74a375835d69e3218a9c83d",
+        "slc_5c75c9affff8c7027c629db8b85866584c113c80cbba1dca9edec154c7768f30",
+        "slc_93326715015dc6a4c2d6e6e6917b3ba602285e24ca38c13de621382da89c0884"
+      ],
+      "text": "Repository development practice: the project is intended for self-modification by Clio (dogfooding), with .clio/settings.json hooks running tsc and test gates after edits and writes, and a 3-strike rollback rule."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40269df1a87035cb15ce359a2152659fe937197ff90cb229dfbcb93506620f2e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L135-L135"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+          "line_end": 133,
+          "line_start": 123,
+          "path": "CLAUDE.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md#L123-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_93d3bd869d359db32fe63cc7c701d8c199dcb4e0a1e45dc860ed2ab4c5a82939",
+        "slc_e8c63df42fb914ff89fd90af9eccaf45494264aa7ea24e314caf6ea81c1a4abe"
+      ],
+      "text": "Repository development practice: autonomous git workflow requires feature branches and PRs (never pushing directly to master), conventional commits, and a self-review sub-agent that approves or requests changes via gh."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4038043727826f38921c5c9d1a95897b36834567bd72e748d4bd32b816ed702",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "97a0c0f42eadc14aea621cab77c66a9bb26886c0",
+          "line_end": 286,
+          "line_start": 286,
+          "path": "README_zh.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README_zh.md#L286-L286"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 286,
+          "line_start": 286,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L286-L286"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 289,
+          "line_start": 289,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L289-L289"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1953815c08eb9c9be3d38f8d89a1bfb0651ef972ba5509c5cc89363e0b51e050",
+        "slc_55c078796cf26d0504d94aa19f1fe8619dd1e335d0e1a8f997ae32d176a97189",
+        "slc_caa0a5316d80a6cc86dc4ed8298122d35baefb196f2d91a319431cdd74a76dbd"
+      ],
+      "text": "The CLI supports OpenAI-compatible endpoints and custom gateways via --api-format openai and --api-url, in addition to the default direct Anthropic API connection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16bec364e7e037352e659ca34bc3aa2e5918d6cd68606fef919f5cb3274a7d7c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "97a0c0f42eadc14aea621cab77c66a9bb26886c0",
+          "line_end": 367,
+          "line_start": 313,
+          "path": "README_zh.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README_zh.md#L313-L367"
+        },
+        {
+          "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+          "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+          "line_end": 367,
+          "line_start": 313,
+          "path": "README.md",
+          "repository": "icebear0828/clio",
+          "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md#L313-L367"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00115857ccba80a09f8b7605b8b7b5931b2764aefebf8e52561aa49447553470",
+        "slc_bf357833b95ba990e81f2ca61543a64d7c497da84e95326cec3c28a6623ab54b"
+      ],
+      "text": "The codebase appears organized into core engine modules (agent loop, streaming client, permissions, sandbox, session, settings) and a tools layer including checkpoint, hooks, MCP, LSP, subagent, tasks, teams, and worktree files."
+    }
+  ],
+  "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 375,
+        "path": "README.md",
+        "size": 16246
+      },
+      {
+        "lines": 168,
+        "path": "CLAUDE.md",
+        "size": 9441
+      },
+      {
+        "lines": 375,
+        "path": "README_zh.md",
+        "size": 15725
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 76,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_56aee75ace9f50a3bef7dd1bd352a058",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/icebear0828/clio/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/8da84aac3b00a168/manifest.json",
+  "package_id": "pkg_ba36e3035451ca2d843c2c6a96258e8e92aaa053549c2e03cbbd42dce5f831c3",
+  "repo": "icebear0828/clio",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6f6bac55afe38e78bbb7095ca5a8bfced78fadfa34b3630f5beca90a425999f5",
+  "snapshot_id": "8da84aac3b00a168",
+  "sources": [
+    {
+      "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+      "git_sha": "bd4c7c64cf1a2cedb4f3cd292f30d515c881d6f6",
+      "lines": 168,
+      "path": "CLAUDE.md",
+      "repository": "icebear0828/clio",
+      "sha256": "c0044ff514e472754ef08a8befbc59a2a015eef80a4993055203de7fd50241f2",
+      "source_id": "src_abda8853b81056c6b63a75a5670a8d7f",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/CLAUDE.md"
+    },
+    {
+      "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+      "git_sha": "c4b183055a6c6602cc42fa1fa71aadff8ff0f6e1",
+      "lines": 375,
+      "path": "README.md",
+      "repository": "icebear0828/clio",
+      "sha256": "e664f21e0d3a5354c27e7bd52891ec9ce14de1f2c6216f8d93d6874342885959",
+      "source_id": "src_065bc73fa81354318187ee3f451c7ec4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README.md"
+    },
+    {
+      "commit": "e3f5864678d1f2e62283d8a459fd340f67dbdfe9",
+      "git_sha": "97a0c0f42eadc14aea621cab77c66a9bb26886c0",
+      "lines": 375,
+      "path": "README_zh.md",
+      "repository": "icebear0828/clio",
+      "sha256": "a84aa64881fb8b5974a44e9661a578357fadf943bb0031f029a7f9c94f576a73",
+      "source_id": "src_f90f79e676015f2499f556bf85fd5945",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/icebear0828/clio/blob/e3f5864678d1f2e62283d8a459fd340f67dbdfe9/README_zh.md"
+    }
+  ],
+  "summary": "Clio is a terminal-based Claude Code clone written in TypeScript (~9.2k lines, 46 files) whose only runtime dependency is fast-glob, offering an agentic coding loop with 21 tools, permission modes, MCP support, sessions, and hooks. Evidence is mostly README documentation plus contributor instructions in CLAUDE.md.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,691 @@
+{
+  "applied_operation_id": "op_2c1dc487a15a4f02bca39204ffbae07e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d652a84e4fb02101de726a314085753f6b3c2f3856c9550093cfc122f7199d7a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c273e2c5b3e2e38b93e842a70304d10597949f0f38d594ed182100d74506f02f"
+      ],
+      "text": "The product is a terminal workspace where Claude Code, Codex, OpenCode, Grok, Gemini CLI, Pi, Command Code, and Hermes Agent run side by side, each in its own persistent tmux session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_848d73a953683d5679c7886f24ddbee1f880a31e45f4752cc3f12cc627b528b6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53bcb4671e8b8bbacd1c133e27e3fe5822c48e2f0c4cc568c7ddabbd914986f3"
+      ],
+      "text": "The tool is described as a thin layer over the user's installed CLIs: sessions launch the user's own tool with its login, config, and MCP servers intact."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0e1c445473e94ad7dd52287a8d331cb13fc22e1954e2638c03e4e0fec3556d0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69a92f297a9a8b5eac54f78ebf37c83d7e0b0ad5f3540ed97c86e8ad1cb5762c"
+      ],
+      "text": "Sessions show in one list with live status grouped into a foldable project tree; space sends a prompt into a session's pane or spawns a new agent in the selected group."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5479739fc7d94f57e46d707a9e8060d45143601a0c50fab5848071087b4cb7ee",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69a92f297a9a8b5eac54f78ebf37c83d7e0b0ad5f3540ed97c86e8ad1cb5762c"
+      ],
+      "text": "ctrl+r opens a syntax-highlighted full-file diff of an agent's changes; line comments are sent back to the agent's pane as one review prompt when pressing C."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90676f13d7c01fc9ad34b332e004ca6cd2031884ca810c7ced91d94e1ba95bb6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L40-L40"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69a92f297a9a8b5eac54f78ebf37c83d7e0b0ad5f3540ed97c86e8ad1cb5762c",
+        "slc_ea8e6861f211e4a81f62629c63d425bc3f724ef1648aec5ea2d0242e2395cafe"
+      ],
+      "text": "Pressing f forks a session's conversation into a separate named fork, and v revives a dead session on its own conversation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_268e9cd23d33acdcad65fc800712eb26ea2e8cd488347aba211f67efb54e39dc",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_95b9881155d98cccae31496784c66ed75a9397bfa67d81cdbbd536ac43907a1c"
+      ],
+      "text": "An agent can spawn another agent, send it a message, and wait until it is done; every MCP-capable session carries those tools on launch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_788cfa0229c15a90813cb802336b72edb9b39c8307aa6be60386d561e5e94b08",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b05c720400d108a4d3aa9f3645ecbbb0c9991f973f93369900731b6dc2a4cf9d"
+      ],
+      "text": "The README states cost tracking and mouse-driven list navigation are not yet implemented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cfcdb84c60a65d0822d02b5b5372e54fc3b218a91cb6559915dd26a93772bf6a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L64-L64"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64458d63421b3f5369054cb713f9f6771043d05dd23dcacbce3270eab04b6a04",
+        "slc_abd4840cd70bfba5c9201ccadde4f05eec2be909a4d0d5869b8afc04e05cdcb4"
+      ],
+      "text": "The product depends on tmux (3.1+ per the install script) and git; the Homebrew tap installs tmux if missing, and the install script offers to install missing dependencies via the detected package manager."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5846a60cef94e6c76f8226bbd4ce3b1e3372bb22730c3f45cd18ffad99b0622e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L84-L84"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L82-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_582552204f68f07810e90dbb15811f14926a07626b5beb9f1ee1a73fe3c6c814",
+        "slc_836a9ab62ac6ffd9ef6f04e7f7cacee4af6414183d24936352e486469e0548a1"
+      ],
+      "text": "Agent sessions run on a private tmux server named agentmgr with am_* session names, isolated from the user's own tmux; reachable via tmux -L agentmgr."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a129c3e2722c338e58a04205d72d293a5a9ffd7038dcb295461d01c8f3cb16a8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L82-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_836a9ab62ac6ffd9ef6f04e7f7cacee4af6414183d24936352e486469e0548a1"
+      ],
+      "text": "Keybindings are configurable via [keybindings.session] and [keybindings.list] tables in config.toml, with esc and ctrl+c kept fixed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41b3ab4699836279ba1617a58cbc12c7dbf7eb7b6082ebb5d5727e98d457026e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 100,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L100-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3ac0ff8d9fd0a84177abdc1f33d9ee38b201adcc02cd493b7365a4d7592ccd3"
+      ],
+      "text": "Sessions can spawn into their own git worktree under <repo>-worktrees/<name> on branch am/<name>, toggled on the new-session form or set as default in Settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53343d20c7fd8c8bfb24b4790d6e52c440df2b136d40e299e16d0617dbd10b88",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4bc69083463093837cd89750e463eb7f1700c5df2445140945458355ecdd7525"
+      ],
+      "text": "Status detection rules for the eight supported CLIs ship in the binary, so upgrades bring current launch, revive, fork, and status rules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b49bc5398d6def9b474b252c6b7aaca31b5c5c8aff7e7740aa2653ce4572abf",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13811337f103d07ef6f176efcf38cc73341b631f45692830d492fd37fcbd982c"
+      ],
+      "text": "The tool runs on macOS and Linux, and on Windows inside WSL2."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62085de4d234eeab867452262617fd7f9cabaa0f86ccd118681a61536a98c244",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "805e1bd7b55ac0c795af1b58fec3e2a78785901e",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "DESIGN.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/DESIGN.md#L59-L59"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "805e1bd7b55ac0c795af1b58fec3e2a78785901e",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "DESIGN.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/DESIGN.md#L70-L70"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "805e1bd7b55ac0c795af1b58fec3e2a78785901e",
+          "line_end": 64,
+          "line_start": 61,
+          "path": "DESIGN.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/DESIGN.md#L61-L64"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "805e1bd7b55ac0c795af1b58fec3e2a78785901e",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "DESIGN.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/DESIGN.md#L55-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c557e739baf1cfa8acc9df0b1236ff798c56a8c584abeddabc78276f575b29d",
+        "slc_24c96f9f46e7f1b3f9215705e8305a81925fe65f4ab1ec2112346ca2367900ef",
+        "slc_28874c02fa1a862d917029531b5104a6fc8b29398a6c43f6c069b3afea2f49ee",
+        "slc_ed3036cfc1524e9b694ec968ee2d9e765b53714e651df008ac33b21b3848cd07"
+      ],
+      "text": "DESIGN.md specifies a terminal-native, keyboard-first, information-dense aesthetic: monospace-only type, semantic theme tokens instead of hard-coded colors, and status color always paired with a glyph or label."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e825889515b7b4d46bbba3f986dfce0fd01d2296ad5d01838eba3c9e68362f59",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L21-L25"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L34-L34"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 32,
+          "line_start": 27,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L27-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_382e84ce90285ce309a74d7bd725a6bb604e404c8a943badd5959a235533b74c",
+        "slc_661dd618dd08e903331035021e80ef037a4f6c4211fdcf67ce72c20a9e7c0a25",
+        "slc_a51bd069673c422ed6ada019a12930479a86e12dd88ec8cdcf9c07a312bae3ea"
+      ],
+      "text": "Repository development practice: tests must run as `env -u TMUX TMUX_TMPDIR=/tmp/amtest go test ./...` because the suite drives a real tmux server and a bare go test could hit the live socket; gofmt and go vet must be clean before finishing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c5da556c2d145f176791006c1991c10606765cb95c5a2a80826063e8e001420",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 54,
+          "line_start": 48,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L48-L54"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L56-L58"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 46,
+          "line_start": 45,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L45-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ebe5e229e31eac32f3d0c9f5ad9c1bbf2c2ff192d5fac6e40b29303fbd00398",
+        "slc_50606c4ea63acb5b5afdd1b0642664b04fcff3c9863da880cbaf38548172314a",
+        "slc_f808f77ca7a176bcfae509a88ace1dc819a5f092c488db7fd16ac93cbc378d93"
+      ],
+      "text": "Repository development practice: releases are cut locally with goreleaser from a clean worktree at the tag, with no release workflow in CI; AUR_KEY is required or the Arch package publish silently skips."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_393a89decc217335128a19a8061fcb03c78a04fcd9620f35e34b405bae33eaaa",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 101,
+          "line_start": 92,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L92-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6c8ee3a8635aad2cf76e92a82b5b8455589b3cd9b194f1798580429932df8b17"
+      ],
+      "text": "Repository development practice: the codebase layout is main.go dispatching subcommands, internal/ui as a Bubble Tea program, internal/tmux for the dedicated socket, internal/store for SQLite state, and internal/status for classifying pane output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4bb283606bcd897a87dc54c262f3e8ad737dbbb46739f2b0d5983c60f5b0a0e9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 17,
+          "line_start": 11,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L11-L17"
+        },
+        {
+          "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+          "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "AGENTS.md",
+          "repository": "yoanwai/agent-manager",
+          "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ca38d44b39897ac2e2e59e733099d6de703bffa193889a2c3262ce843e7788f1",
+        "slc_d1e63ed5f6894b6b25e51ae7afb2d74983b380833d48c51ee4b033c6818c8304"
+      ],
+      "text": "Repository development practice: contributors should keep the product a thin wrapper around supported TUIs, avoiding hardcoded models and provider-specific features, and do feature work in an isolated git worktree."
+    }
+  ],
+  "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 134,
+        "path": "README.md",
+        "size": 11186
+      },
+      {
+        "lines": 112,
+        "path": "AGENTS.md",
+        "size": 5357
+      },
+      {
+        "lines": 116,
+        "path": "DESIGN.md",
+        "size": 4426
+      }
+    ],
+    "omitted": [
+      {
+        "path": "PRODUCT.md",
+        "reason": "file-budget",
+        "size": 4372
+      },
+      {
+        "path": "REVIEW.md",
+        "reason": "file-budget",
+        "size": 1468
+      },
+      {
+        "path": "docs/brand/README.md",
+        "reason": "file-budget",
+        "size": 899
+      },
+      {
+        "path": "docs/configuration.md",
+        "reason": "file-budget",
+        "size": 6865
+      },
+      {
+        "path": "docs/install.md",
+        "reason": "file-budget",
+        "size": 3916
+      },
+      {
+        "path": "docs/notifications.md",
+        "reason": "file-budget",
+        "size": 3373
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 56741
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 281,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 7,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_6a9821118cae50648f9aa9bc434028dc",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 7,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/yoanwai/agent-manager/0f40e31fb1cab86e38748f8677cbf58e4029df69/39eac2119f1af8d9/manifest.json",
+  "package_id": "pkg_87b5e0fb533c19f1643907f2b26a52980705b424a99c89be70a763949037d864",
+  "repo": "yoanwai/agent-manager",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ce9414000d9e3ee3846402d5b0fbffaf01086253df80a1d822106d78e4d2d576",
+  "snapshot_id": "39eac2119f1af8d9",
+  "sources": [
+    {
+      "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+      "git_sha": "c3a92f4d2fb7b0a59148af46dfe0ee274a72e0b6",
+      "lines": 112,
+      "path": "AGENTS.md",
+      "repository": "yoanwai/agent-manager",
+      "sha256": "31dea5436b1a8635e696a875a1526359b294a0980758afffe141642bfa3729bd",
+      "source_id": "src_00685acfe4df544897473a3f347220b6",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/AGENTS.md"
+    },
+    {
+      "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+      "git_sha": "805e1bd7b55ac0c795af1b58fec3e2a78785901e",
+      "lines": 116,
+      "path": "DESIGN.md",
+      "repository": "yoanwai/agent-manager",
+      "sha256": "4d6560733bfb533381edbac5badcfacffb23f7c4b5989e203f55256cd9b344bb",
+      "source_id": "src_152303f6edaf5c9891adc1ac4f3398da",
+      "stored": "design.md-3dc5dd454e08.md",
+      "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/DESIGN.md"
+    },
+    {
+      "commit": "0f40e31fb1cab86e38748f8677cbf58e4029df69",
+      "git_sha": "a0fa578b81f9c6e12a6916449ff909b613d11264",
+      "lines": 134,
+      "path": "README.md",
+      "repository": "yoanwai/agent-manager",
+      "sha256": "5d2d57b70f8764a1e2e42d6e48c6bf012d9fa501ed1da429a6dd5f066d1b72b5",
+      "source_id": "src_282e43fd453957c497eace1166cd636c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/YoanWai/agent-manager/blob/0f40e31fb1cab86e38748f8677cbf58e4029df69/README.md"
+    }
+  ],
+  "summary": "agent-manager is a Go terminal (TUI) workspace for running multiple AI coding agent CLIs side by side in persistent tmux sessions, with status detection, diff review, forking, and agent-to-agent spawning. Evidence covers product behavior from README/DESIGN plus contributor workflow instructions in AGENTS.md.",
+  "superseded_claim_ids": []
+}

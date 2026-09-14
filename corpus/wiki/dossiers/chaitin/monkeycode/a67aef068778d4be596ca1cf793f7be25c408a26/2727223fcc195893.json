@@ -1,0 +1,954 @@
+{
+  "applied_operation_id": "op_0073be04ef3e4503a0e3393011850f02",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_574db900ad1c95baab900c5ddf1bdb682715c08d5bc929ec8b50a6133c01cff6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b11922ded7abdadc5f82afee9e41627cdd9a9394b7c3fd90527ff3ed0c31901b"
+      ],
+      "text": "MonkeyCode is described as an open-source enterprise-grade AI development platform combining development environment management, AI model/task management, and project requirement management."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51a375d178a48a2c0674497c3190b18f7e85fc72b0bc0adbb1f5f8109a297734",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 26,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L25-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85fab18f1097b83ac366572be872e44e83d1fb3bd286ffb0edb7e5059758b293"
+      ],
+      "text": "The product targets deployment inside enterprise networks shared with an R&D team, with an online hosted environment (managed dev environments, built-in LLMs, mobile support) as an alternative."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_000e608dbcf5f6733e241207f06231e40a66814076f6af739dc71ea1db9bfa95",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 66,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L61-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c593a0fb02f4e1a46f114a7a5abbc647a9efc64240f8ed21eda91da28eeab5e3"
+      ],
+      "text": "Tasks run in server-side cloud development environments; build, test, and preview workflows are executed in the cloud rather than on local machines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ccf94eed339c67bc763a66aa2ab40dabaa36447202723e0d309b4e71f2619314",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 66,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L61-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c593a0fb02f4e1a46f114a7a5abbc647a9efc64240f8ed21eda91da28eeab5e3"
+      ],
+      "text": "The platform integrates multiple LLMs including GLM, Kimi, MiniMax, Qwen, and DeepSeek, switchable per task type or chosen manually."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee1c7e3a469c40ab4b52dfe691caee5df7fb176dd2c62451cce7378de60c88ec",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 66,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L61-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c593a0fb02f4e1a46f114a7a5abbc647a9efc64240f8ed21eda91da28eeab5e3"
+      ],
+      "text": "Native iOS and Android support is claimed, keeping PC and mobile data in sync so agents can continue running tasks while the user is away."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0376602231b7ac1f2b44c49e737a237c4746a29a9cb94e742b776d435792f50",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 81,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L80-L81"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 87,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L85-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4fcd3ff7f5a97c02c73813e0ea3dcdb2eb5215630f48fe5111b50ead09e7cdaa",
+        "slc_d32dfd9bdfbdfd180f2b19e999af57eca767eb3cccbee7c8a26a8c410efe4a3e"
+      ],
+      "text": "Self-hosted install is via a curl-fetched bash script, with recommended minimums of 2C/4GB/40GB for the console and 8C/16GB/100GB for development-environment hosts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db9e030816a1592753a254da052d257dbcd03a2e68f50a318caab0d71429e76e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 105,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L93-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52d4dfa351fa58a3434cf8f39fd025c1a9316ccfa644c87671c8c741886512c0"
+      ],
+      "text": "A comparison table marks MonkeyCode as lacking local IDE, local CLI, and code completion, while claiming cloud environments, automated PR/MR review, team collaboration, and private deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_64995ba91e0cfddc951404233511f0b11cb53da4b5972692b22b337e8b30e6d6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ff431a24b4f6a34230c123a261b7481a55e7d4f317fa228e76448bb734443cec"
+      ],
+      "text": "The MonkeyAI admin console manages user identity, AI resources, session usage, credit billing, and admin audit within a single instance, explicitly without multi-tenancy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c4f5657f926b0d8587c99ff25c11ef08b959c6e2af1641c2ab0b1cfe4849d42",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L105-L107"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 17,
+          "line_start": 15,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L15-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_39da6cdc0ff0bce370ffad0ccde3ff3d52367d2da3a7e7ffd245033e0247a9d5",
+        "slc_4de11ac8ab31bb43c452e35b4a892f8c32cde4f69c487908890688a0929ab7f4"
+      ],
+      "text": "Users are organized in a tree expanding from a unique root group; group authorization covers descendant groups, and quotas inherit from the nearest parent group when unset."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f77e93194bca2d26a0a0bb68a939caeb6084a33c3c6bc7c6d3c077a86bb95328",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 51,
+          "line_start": 49,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L49-L51"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 47,
+          "line_start": 45,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L45-L47"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 59,
+          "line_start": 57,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L57-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_802604e3c10e2a05eb667fa33b00d544a81a1aca0c682ca6ff2c306d8c08849c",
+        "slc_a5cc57e63b4e3ea2f3ce787ccaadbeb1cd13cd3d076bac251ac241dacd68a512",
+        "slc_b1f8f20f3d02bd6328555d5d30efd0ffa74ca6c934c48e8ae9adc8f7f1bb7c8c"
+      ],
+      "text": "Resource sharing supports read-only and read-write levels; read-write excludes sharing, deletion, or ownership transfer, and system rules can be forced onto target users or groups."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95d91e9bdd23f93ed0d1357e3367f872766d741981e2f487a1c59fd5aee0df64",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L71-L73"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 77,
+          "line_start": 75,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L75-L77"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L79-L81"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 89,
+          "line_start": 87,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L87-L89"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 85,
+          "line_start": 83,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L83-L85"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 69,
+          "line_start": 67,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L67-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29b17295ff34a6ac2007452689c3fef58a01072f9e4147eaede3f8cf0c665a43",
+        "slc_2c0141de3e08902e5474f763ce581fb13957c3a58848d66b5880805f3738666e",
+        "slc_3574103a1f2252a81b3b6f881ac94559c9e3790c95e1011f66e539c59bb786e1",
+        "slc_449ef0070a46577e7488d44b46bb1bdc7c1743f5b2c96d9fee04e20b07c412be",
+        "slc_8e936f4f4f71700e44d258b059f3da5ebc8de1e7ad4b18cd00ca240fa7fd42cd",
+        "slc_b215b7f49558e22c355ffd1d5aa13f7b948f2cdf63361dccfb3c1d9681fb3abe"
+      ],
+      "text": "AI resources include models, skills, rules, MCP services, individually toggleable MCP tools, and Experts (system-level agent presets combining role prompts, MCP tools, rules, and skills)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d89d3aa8ebdbd1f4a057a1a098d05d3c6fd97d75d016fb584c80a29fb2989ac",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 115,
+          "line_start": 113,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L113-L115"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L109-L111"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+          "line_end": 103,
+          "line_start": 101,
+          "path": "CONTEXT.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md#L101-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40b2c0ea2a401cf0e1422812bef2e6ff92f84b9149feb08eda22b759b6c74bb4",
+        "slc_7d89cec439861d4ed7b8b9fd208f970b8d0bbcf5db427701710ace0b2c5cedc7",
+        "slc_a4d4a2109741606fc3177b1b1fc250cb5d03b4396daf6a5e3910f8a9007e4c39"
+      ],
+      "text": "Billing uses an internal credit unit with per-cycle quotas, credit accounts, and immutable ledger records for deductions, grants, refunds, resets, and manual adjustments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bab0f642bd4682e07151be6145be1d06974dfbd81a29c020aa8737539c19000e",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 334,
+          "line_start": 334,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L334-L334"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 325,
+          "line_start": 325,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L325-L325"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 332,
+          "line_start": 327,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L327-L332"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 396,
+          "line_start": 396,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L396-L396"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04fec04fdf9e2b0d9081a0b1d8bb54ce291bf5a7ecd54b768fec8dde5b220d37",
+        "slc_10550eda321237cc5dc3ec2d110357a2812eafca61692f3f42f3b4f360446b38",
+        "slc_96b88b63ac2b12984a21f2da5fe81bf7cb22c0bbf116871b66a9d9f9fb3a9bc8",
+        "slc_e336b44ccee92979f52c919e15b2ff358413785e7abf1ce177162bfc70cc8d01"
+      ],
+      "text": "A design-workflow plan proposes extracting design patterns via Skills/Atoms (code-import, design-extract, token-map, rewrite-plan), saved as Design System Packages with revisions so re-extraction creates a new revision rather than overwriting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb0c595ad37cead759be14608f5c310a64d9f8337ff3bd0a0b22ccef951e4cf2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 571,
+          "line_start": 571,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L571-L571"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 583,
+          "line_start": 575,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L575-L583"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_813f1ec4f1d45c2cabffe80ec2448b08e420c967e5a9568e17250c6c84101c48",
+        "slc_de8fa0de060f78d7c25891adf12874ee24ae11c1d63123f445e82f822f3c0faa"
+      ],
+      "text": "The plan proposes new agent-client protocol messages (design/start-choice, template/reference/pattern selection, redesign-level) because plain AskUserQuestion cannot carry images; these appear to be proposals, not shipped behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16217d9acbcbc15cb19c14496e29cddb8589dab2e0b9ebd5a2823bc10ea93135",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 740,
+          "line_start": 727,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L727-L740"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 725,
+          "line_start": 725,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L725-L725"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a120648a91b50d54e756fbcc296ddbf3b39baa650d5843d54ffa87602aabffaa",
+        "slc_ca33c2f8882cb2c25194859f50d06fe8dffdd308c52c030d20827c15534bff3a"
+      ],
+      "text": "A DesignFlowState state machine is proposed so the design flow persists explicit stage state rather than relying on model memory; it appears to be a design proposal, not verified shipped code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2babaa4f99befd1e281460e2df19a1ad90982116b00736448176f48a9a48e494",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 714,
+          "line_start": 714,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L714-L714"
+        },
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 721,
+          "line_start": 716,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L716-L721"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dd8f809cd528686baaa738773ffbcfca25c6f2379508d590183da002f2126ad8",
+        "slc_f8597a4097a9616299093de3287f8218b7cf0abd74ccd307c976a8d87ec2f202"
+      ],
+      "text": "The plan lists non-goals including Figma two-way sync, a public design-pattern marketplace, multi-user collaboration and org-level permissions, and automatic production deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c3a5f1370a4fd338e36f3b39026d555ec610090021541e41fd60c25542c6532",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+          "line_end": 710,
+          "line_start": 703,
+          "path": "docs/plans/monkeydesign-design-workflow.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md#L703-L710"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15982d4018357c8919b4e75993c55c9198a336029ea7e531a547b5b7b522a463"
+      ],
+      "text": "The plan notes the image generation provider is not yet integrated into the current MonkeyDesign runtime, and Open Design code/assets licensing needs confirmation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49697c7cb891b4b63b16615681881eaf974ac2bfd21baafd84239ebd9c7ae350",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+          "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "chaitin/monkeycode",
+          "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md#L133-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a613a2120f7c7888ca273d4a3789b025a67ef34ae964418b1be334fbdb3729f"
+      ],
+      "text": "MonkeyCode is licensed under the GNU Affero General Public License v3.0."
+    }
+  ],
+  "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 133,
+        "path": "README.md",
+        "size": 6357
+      },
+      {
+        "lines": 115,
+        "path": "CONTEXT.md",
+        "size": 4185
+      },
+      {
+        "lines": 132,
+        "path": "readme.cn.md",
+        "size": 5946
+      },
+      {
+        "lines": 61,
+        "path": "docs/architecture/observability-glossary.md",
+        "size": 3298
+      },
+      {
+        "lines": 1075,
+        "path": "docs/plans/monkeydesign-design-workflow.md",
+        "size": 26494
+      },
+      {
+        "lines": 380,
+        "path": "docs/plans/open-design-capabilities-integration.md",
+        "size": 9044
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/testing/monkeydesign-e2e-test-guide.md",
+        "reason": "file-budget",
+        "size": 18587
+      },
+      {
+        "path": "docs/architecture/adr/0001-backend-distributed-tracing.md",
+        "reason": "file-budget",
+        "size": 8576
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-14-skill-search.md",
+        "reason": "file-budget",
+        "size": 6160
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-15-task-skill-wheel-scroll.md",
+        "reason": "file-budget",
+        "size": 10219
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-17-long-input-txt-upload.md",
+        "reason": "file-budget",
+        "size": 24777
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-17-preserve-task-model-selection.md",
+        "reason": "file-budget",
+        "size": 3678
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-21-task-skills-dialog-overflow.md",
+        "reason": "file-budget",
+        "size": 9509
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-agent-restart-dialog-keyboard.md",
+        "reason": "file-budget",
+        "size": 8214
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-25-mobile-chat-input-overlap.md",
+        "reason": "file-budget",
+        "size": 17171
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-26-online-captcha-preview-stability.md",
+        "reason": "file-budget",
+        "size": 19632
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-26-online-preview-font-stability.md",
+        "reason": "file-budget",
+        "size": 9249
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-27-mobile-task-header-layout.md",
+        "reason": "file-budget",
+        "size": 9807
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-27-mobile-task-toolbar-and-locator.md",
+        "reason": "file-budget",
+        "size": 26297
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-27-mobile-top-tools-and-scroll-bottom.md",
+        "reason": "file-budget",
+        "size": 25036
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-29-mobile-header-original-size-and-locator-clearance.md",
+        "reason": "file-budget",
+        "size": 12997
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-29-mobile-model-button-original-width.md",
+        "reason": "file-budget",
+        "size": 6060
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-29-mobile-model-row-tools-and-index-actions.md",
+        "reason": "file-budget",
+        "size": 9781
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-29-mobile-task-tools-below-theme.md",
+        "reason": "file-budget",
+        "size": 8234
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-29-mobile-task-tools-model-row-alignment.md",
+        "reason": "file-budget",
+        "size": 6431
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-30-mobile-tools-english-width.md",
+        "reason": "file-budget",
+        "size": 5966
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-05-issue-936-task-dialog-overflow.md",
+        "reason": "file-budget",
+        "size": 5223
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-27-git-platform-interface-abstraction-design.md",
+        "reason": "file-budget",
+        "size": 16420
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-12-local-agent-design.md",
+        "reason": "file-budget",
+        "size": 14677
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-skill-search-design.md",
+        "reason": "file-budget",
+        "size": 2561
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-15-task-skill-wheel-scroll-design.md",
+        "reason": "file-budget",
+        "size": 3495
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-17-long-input-txt-upload-design.md",
+        "reason": "file-budget",
+        "size": 7616
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-17-preserve-task-model-selection-design.md",
+        "reason": "file-budget",
+        "size": 2092
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-21-task-skills-dialog-overflow-design.md",
+        "reason": "file-budget",
+        "size": 2959
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-agent-restart-dialog-keyboard-design.md",
+        "reason": "file-budget",
+        "size": 2240
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-25-mobile-chat-input-overlap-design.md",
+        "reason": "file-budget",
+        "size": 5961
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-26-online-captcha-preview-stability-design.md",
+        "reason": "file-budget",
+        "size": 6364
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-26-online-preview-font-stability-design.md",
+        "reason": "file-budget",
+        "size": 4604
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-27-mobile-task-header-layout-design.md",
+        "reason": "file-budget",
+        "size": 5769
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-27-mobile-task-toolbar-and-locator-design.md",
+        "reason": "file-budget",
+        "size": 9136
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-27-mobile-top-tools-and-scroll-bottom-design.md",
+        "reason": "file-budget",
+        "size": 9879
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-28-mobile-tools-vertical-menu-design.md",
+        "reason": "file-budget",
+        "size": 4837
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-29-mobile-header-original-size-and-locator-clearance-design.md",
+        "reason": "file-budget",
+        "size": 5754
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-29-mobile-task-tools-below-theme-design.md",
+        "reason": "file-budget",
+        "size": 6338
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-30-mobile-tools-english-width-design.md",
+        "reason": "file-budget",
+        "size": 1874
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-05-issue-936-task-dialog-overflow-design.md",
+        "reason": "file-budget",
+        "size": 4684
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-16-desktop-split-view-design.md",
+        "reason": "file-budget",
+        "size": 49310
+      }
+    ],
+    "omitted_count": 41,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3075,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 47,
+      "complete": false,
+      "omitted": 41,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_e5ab8f1efaed56fba29f22b060daf3ca",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 3,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/chaitin/monkeycode/a67aef068778d4be596ca1cf793f7be25c408a26/2727223fcc195893/manifest.json",
+  "package_id": "pkg_aaf37cafeb890e73b6f53049a11b41841c9184150b53b96d0b1e894a0658589c",
+  "repo": "chaitin/monkeycode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fe6ea060e651ebda1c43cba4af4a2b42862b2f4b8ddfbc01ca2b4261f83ff1bd",
+  "snapshot_id": "2727223fcc195893",
+  "sources": [
+    {
+      "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+      "git_sha": "3d90cb023b4c8d15f2b503895045a9d095b3b556",
+      "lines": 115,
+      "path": "CONTEXT.md",
+      "repository": "chaitin/monkeycode",
+      "sha256": "83b6fb16463d590511aa0600c23327cca6c62b35f857955657fdaf74f7a4d078",
+      "source_id": "src_2af4acfd73f952daa1d0ade3ed316e28",
+      "stored": "context.md-86fee53c3330.md",
+      "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/CONTEXT.md"
+    },
+    {
+      "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+      "git_sha": "efb93335404115c2965791295923e3e2edd329e6",
+      "lines": 133,
+      "path": "README.md",
+      "repository": "chaitin/monkeycode",
+      "sha256": "d1340bd4b5d3db9d70d017be234db62e49138711919c86e830e414bf5f119b26",
+      "source_id": "src_19babcfda8f35910893d52760d613d38",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/README.md"
+    },
+    {
+      "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+      "git_sha": "7f2035664aed825268748584f7f1556cc1e678a2",
+      "lines": 61,
+      "path": "docs/architecture/observability-glossary.md",
+      "repository": "chaitin/monkeycode",
+      "sha256": "172f3023707e2914e1e6f46ec132cde0be0554cc85464d337631b18875b5732c",
+      "source_id": "src_2cef6fe491c85f52915f208c3aaaebf6",
+      "stored": "observability-glossary.md-5503ff9088df.md",
+      "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/architecture/observability-glossary.md"
+    },
+    {
+      "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+      "git_sha": "e1eeebe55d140f5dee7a6d785386aae858d8dfe4",
+      "lines": 1075,
+      "path": "docs/plans/monkeydesign-design-workflow.md",
+      "repository": "chaitin/monkeycode",
+      "sha256": "bd8dc62829d15348aa4ed0daa6116b9e81ddb988e0e458b507855b6d44a8a3ee",
+      "source_id": "src_5d714be338465d1bb615a87deb8aeaa1",
+      "stored": "monkeydesign-design-workflow.md-9016794787bd.md",
+      "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/monkeydesign-design-workflow.md"
+    },
+    {
+      "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+      "git_sha": "9037ac66149fad817221c7fee78b9b37c4f7aa9e",
+      "lines": 380,
+      "path": "docs/plans/open-design-capabilities-integration.md",
+      "repository": "chaitin/monkeycode",
+      "sha256": "7f98ece1671c2427d6ea89cc789c81eb1a0af59e30ae23edb7398204c9518f04",
+      "source_id": "src_a4edd836b7c95c3b9e6b1c4f4593ccd0",
+      "stored": "open-design-capabilities-integration.md-bd30b45977ac.md",
+      "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/docs/plans/open-design-capabilities-integration.md"
+    },
+    {
+      "commit": "a67aef068778d4be596ca1cf793f7be25c408a26",
+      "git_sha": "21c351fcd7bf7762b2e11bb4f6981144e21d31bc",
+      "lines": 132,
+      "path": "readme.cn.md",
+      "repository": "chaitin/monkeycode",
+      "sha256": "fa6a493f46845b3ba21c15d06cb5cf39acf1b233510622f8dc447ab9b73c308c",
+      "source_id": "src_c5cd7a52d0df530c8ea48d0c9904c8aa",
+      "stored": "readme.cn.md-6883234b9eb1.md",
+      "url": "https://github.com/chaitin/MonkeyCode/blob/a67aef068778d4be596ca1cf793f7be25c408a26/readme.cn.md"
+    }
+  ],
+  "summary": "MonkeyCode is documented as an open-source (AGPL-3.0) enterprise AI development platform with cloud dev environments, multi-model support, and mobile access; CONTEXT.md defines a single-instance admin console with credit billing, and a plan document proposes a design-workflow feature set largely not yet shipped. Evidence coverage: 211 of 369 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

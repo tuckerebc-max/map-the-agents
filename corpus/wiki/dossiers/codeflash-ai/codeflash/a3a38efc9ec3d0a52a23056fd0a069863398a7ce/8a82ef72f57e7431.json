@@ -1,0 +1,756 @@
+{
+  "applied_operation_id": "op_75bcd916bde248c0a225297f3b7f3bf4",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_949d5e5f97b915ae92efd84e17da8aefe4c561a33d93b3e1991be4db652b3fb6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "b5ad060c9851b2d66253976480f8f7f37ca87399",
+          "line_end": 13,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/README.md#L12-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e07ef8501fe0e04226158b2f66ca0c96da0406b93c0ac110059f7eb77ef3594"
+      ],
+      "text": "Codeflash is described as a general-purpose Python optimizer that uses LLMs to generate optimization candidates, tests them for correctness, benchmarks them, and opens merge-ready pull requests with the best optimization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d851ecef6911863daab06c55a31ba9fc467ce58a588135d3f7d21ef4eeda081",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+          "line_end": 39,
+          "line_start": 34,
+          "path": "docs/index.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx#L34-L39"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "b5ad060c9851b2d66253976480f8f7f37ca87399",
+          "line_end": 54,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/README.md#L46-L54"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "b5ad060c9851b2d66253976480f8f7f37ca87399",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/README.md#L15-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a73582a810f921adbee1ecc0c39af7e2e55d3e16918d8e87abb42d794b5b0ce",
+        "slc_30fbad1a960cca8d764b9f5c62e9c2a376b78547360642db8970cfccc8ca9c00",
+        "slc_bb2aaf0879659642a57f943c759f256ae6d9e3a9b46a0dce8fc8222e1fe4fec5"
+      ],
+      "text": "The CLI supports optimizing a whole codebase with `codeflash --all`, a single script with `codeflash optimize myscript.py`, and per docs a single function via `codeflash --file path --function name`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_443a7019da2bc313b421ebb210b9d5a9bc971491012c9cd5519842374c8b0653",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "b5ad060c9851b2d66253976480f8f7f37ca87399",
+          "line_end": 44,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/README.md#L36-L44"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 90,
+          "line_start": 87,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L87-L90"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 100,
+          "line_start": 98,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L98-L100"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 65,
+          "line_start": 63,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L63-L65"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L79-L81"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L71-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21a91509032c99cea4efe2eaf212d1263303f26b132c738f7f7c45726c6156d8",
+        "slc_95e557d794d9d074870962afbda761d99cf11889ba5f86c5d054147111fcaefe",
+        "slc_ad20cd2834cbd11736ed9db574e54a962ac076379619d599461312f5d884104b",
+        "slc_d59923b358e7129c1b6f282c40739f5d7ebf00e5cebe887aa9a8d37891c17fe0",
+        "slc_f2074ad2a1091f44756cedc79b5c772d3470d37225798e08c7d89748013388ee",
+        "slc_ff24a409eddea73c06f91313c6df465d60bee30c5c93b9f0db34ae4cc1179890"
+      ],
+      "text": "Configuration is stored in the project's `pyproject.toml` under a `[tool.codeflash]` section, with settings such as module-root, tests-root, formatter-cmds, git-remote, ignore-paths, override-fixtures, and benchmarks-root."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1cd4481dfccd6da77691397a5e48a57c608e2a95dbab46da31867bac4f8d692",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 131,
+          "line_start": 128,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L128-L131"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L126-L126"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L23-L23"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "docs/editor-plugins/vscode/configuration.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx#L133-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76d57cc8de8376ab29eb12005743b238ffee7cec9d70e97784ed4a2ecc76b90e",
+        "slc_b8520d2263d793fcfab8f633fdfeed9977988e30d16e7d0f048e16bbe09017bf",
+        "slc_c73b0533d14c6f712f163206eb863996ecd5b1ab24ea0686ab4c363220ff710c",
+        "slc_f9d03accaf7a4b995324314e7e1f157c728858cbb122921dc0a0dfe81df0d614"
+      ],
+      "text": "A VS Code extension provides a sidebar configuration page for editing the project's pyproject.toml settings, validates configuration, and shows error messages for missing files, syntax errors, or conflicting settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8885e8b091a26cc1def242f0b638286df8674b6d7f4e008c3a55ada4269f68da",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "f2afff145f1858c01ab2ba201330ce1329ee0b43",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "docs/install.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/install.md#L25-L28"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "b5ad060c9851b2d66253976480f8f7f37ca87399",
+          "line_end": 32,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/README.md#L29-L32"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "f2afff145f1858c01ab2ba201330ce1329ee0b43",
+          "line_end": 124,
+          "line_start": 120,
+          "path": "docs/install.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/install.md#L120-L124"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "f2afff145f1858c01ab2ba201330ce1329ee0b43",
+          "line_end": 116,
+          "line_start": 111,
+          "path": "docs/install.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/install.md#L111-L116"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "f2afff145f1858c01ab2ba201330ce1329ee0b43",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "docs/install.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/install.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e9249bde5ba107e9481dca7abb44067eacfa15d29b8df98dd8e3885f46bc6da",
+        "slc_2cb01b94a0613f39cfb3c5e326179a4fb06c018e8fa1303343d649f492c10bf3",
+        "slc_ac31a964e674d0c5c89f7d806a4a703b376216827a200f5a143c40aa0dc7483e",
+        "slc_d81094a8e3bbc05a75f7afb0cb108b16d7d3be08367188e083f75852e9d2e1ce",
+        "slc_db6a8b44727c9b42d20b4eae9ad3be89116379f9b6805e63d2c5fdb7917a68d7"
+      ],
+      "text": "The Python tool is installed via pip (or as a dev dependency with uv/poetry) and requires Python 3.9 or above; setup includes generating a Codeflash API key and installing a GitHub app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c81a7a0a69b6b8ddbde60ad0b128bd2e0590a879c01e815ef77971ad99e0e72a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+          "line_end": 28,
+          "line_start": 18,
+          "path": "docs/index.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx#L18-L28"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "f2afff145f1858c01ab2ba201330ce1329ee0b43",
+          "line_end": 152,
+          "line_start": 150,
+          "path": "docs/install.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/install.md#L150-L152"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+          "line_end": 9,
+          "line_start": 8,
+          "path": "docs/index.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx#L8-L9"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+          "line_end": 72,
+          "line_start": 62,
+          "path": "docs/index.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx#L62-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4efb1a92ed3b6ee56fe633bed524bedceb5ff956a7a52d407432cb40b227e199",
+        "slc_5eed4c36ae44c3eae6f9c8bb1818892c96b90ec7572c4cf44425ae10db1c391f",
+        "slc_8de60d1ed7c23912ffd46f17c97b5c243b41b2eedd58625a078efe2883a4cc6a",
+        "slc_ac0c2bdba9eb8b695fa73b02ffd7732098c73133ec4796ac3ac2403d7f8353fc"
+      ],
+      "text": "Per docs, Codeflash also supports JavaScript/TypeScript (installed via npm/yarn/pnpm/bun, configured in package.json or codeflash.config.js) and Java (via uv, with Maven/Gradle and JUnit/TestNG support)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f84177d489d5765cb0a35b244fdd9d23c13b735374a3618f73318232da4bbabc",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+          "line_end": 78,
+          "line_start": 76,
+          "path": "docs/index.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx#L76-L78"
+        },
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+          "line_end": 83,
+          "line_start": 82,
+          "path": "docs/index.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx#L82-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_802d162619b0b36b5aee49a5180e978d0b525a47ad9360487566c017ed793ed4",
+        "slc_bf3bd0f37f9b43dea71d5c80a8c1bb81fc7259320e722436e92ee45b8389117d"
+      ],
+      "text": "The product verifies optimization correctness by generating and running new regression tests alongside existing tests, and reports percentage speed increases and proofs of correctness in PR explanations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72df9db2574fecf503da4c8eeecbeab13b4e8233897038f6e2ea0329da49cb43",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+          "line_end": 12,
+          "line_start": 11,
+          "path": "docs/index.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx#L11-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d4fd64eaf335c0c55c7c4f773f4af854dc6c6cb7e78e72a61ee815c9459f6d2f"
+      ],
+      "text": "The optimizer aims to find better algorithms, remove wasteful compute, and use caching or more efficient library methods, but does not modify the system architecture of the code it optimizes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47d965e16f03b9c347c381c072580f51987897b1c70306b225b37ebc44b9dc32",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "9945a15329ed87b77896179efe1b0c3e7dee7145",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "docs/getting-the-best-out-of-codeflash.mdx",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/getting-the-best-out-of-codeflash.mdx#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07f93b6c7a5bd64a2bf3d9f8454474c479ad863ac2748e0fffde8d5034dbed5e"
+      ],
+      "text": "Because the tool uses generative AI, the docs caution that optimized code may behave differently from the original under certain conditions, and recommend reviewing all PRs it opens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3b01842074750b7ecb87e003c5037c6ffad8900dff8c4e0f79b6cfb4dc5f4fb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "c163d0be0e9526e2c5d3ad131becf7cff57114a3",
+          "line_end": 36,
+          "line_start": 1,
+          "path": "mypy_allowlist.txt",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/mypy_allowlist.txt#L1-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c885bbbc34766c01e60cc0820baffbb5c6d3aaa24cd9cfd980fd3a8970e6f009"
+      ],
+      "text": "The codebase appears organized into modules including tracing, result/PR creation, optimization, verification, github, api (aiservice/cfapi), telemetry, cli_cmds, and language-specific python context and static analysis packages, based on the mypy allowlist."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad7cbcf346ff1ecaee03bb24de569cb8a162116527d59b7c9aeabfacbbe5174a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "c163d0be0e9526e2c5d3ad131becf7cff57114a3",
+          "line_end": 36,
+          "line_start": 1,
+          "path": "mypy_allowlist.txt",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/mypy_allowlist.txt#L1-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c885bbbc34766c01e60cc0820baffbb5c6d3aaa24cd9cfd980fd3a8970e6f009"
+      ],
+      "text": "Repository development practice: the repo includes a mypy_allowlist.txt listing many source files exempted from type checking, indicating mypy is part of the project's development tooling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4da67cf2db1de57602f9f12efb6f10d84078dbe9d67c80f563c968c5c977e02",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+          "git_sha": "b5ad060c9851b2d66253976480f8f7f37ca87399",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "codeflash-ai/codeflash",
+          "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/README.md#L84-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22e81bd93124e378c9c244706aba15275d618d6c7b86121ba96e861db67947d3"
+      ],
+      "text": "The tool is licensed under the BSL-1.1 license, with the LICENSE file located in the codeflash directory of the repository."
+    }
+  ],
+  "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 84,
+        "path": "README.md",
+        "size": 4560
+      },
+      {
+        "lines": 149,
+        "path": "docs/editor-plugins/vscode/configuration.mdx",
+        "size": 4739
+      },
+      {
+        "lines": 36,
+        "path": "mypy_allowlist.txt",
+        "size": 1228
+      },
+      {
+        "lines": 36,
+        "path": "docs/getting-the-best-out-of-codeflash.mdx",
+        "size": 2652
+      },
+      {
+        "lines": 89,
+        "path": "docs/index.mdx",
+        "size": 4082
+      },
+      {
+        "lines": 167,
+        "path": "docs/install.md",
+        "size": 4261
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/claude-code-plugin/getting-started.mdx",
+        "reason": "file-budget",
+        "size": 3602
+      },
+      {
+        "path": "docs/claude-code-plugin/troubleshooting.mdx",
+        "reason": "file-budget",
+        "size": 2716
+      },
+      {
+        "path": "docs/claude-code-plugin/usage-guide.mdx",
+        "reason": "file-budget",
+        "size": 1850
+      },
+      {
+        "path": "docs/codeflash-concepts/benchmarking-gpu-code.mdx",
+        "reason": "file-budget",
+        "size": 4722
+      },
+      {
+        "path": "docs/codeflash-concepts/benchmarking.mdx",
+        "reason": "file-budget",
+        "size": 7641
+      },
+      {
+        "path": "docs/codeflash-concepts/how-codeflash-works.mdx",
+        "reason": "file-budget",
+        "size": 5572
+      },
+      {
+        "path": "docs/configuration/java.mdx",
+        "reason": "file-budget",
+        "size": 4621
+      },
+      {
+        "path": "docs/configuration/javascript.mdx",
+        "reason": "file-budget",
+        "size": 11059
+      },
+      {
+        "path": "docs/configuration/python.mdx",
+        "reason": "file-budget",
+        "size": 2289
+      },
+      {
+        "path": "docs/getting-started/java-installation.mdx",
+        "reason": "file-budget",
+        "size": 5954
+      },
+      {
+        "path": "docs/getting-started/javascript-installation.mdx",
+        "reason": "file-budget",
+        "size": 10334
+      },
+      {
+        "path": "docs/getting-started/local-installation.mdx",
+        "reason": "file-budget",
+        "size": 7257
+      },
+      {
+        "path": "docs/optimizing-with-codeflash/benchmarking.mdx",
+        "reason": "file-budget",
+        "size": 3902
+      },
+      {
+        "path": "docs/optimizing-with-codeflash/codeflash-all.mdx",
+        "reason": "file-budget",
+        "size": 3379
+      },
+      {
+        "path": "docs/optimizing-with-codeflash/codeflash-github-actions.mdx",
+        "reason": "file-budget",
+        "size": 7225
+      },
+      {
+        "path": "docs/optimizing-with-codeflash/one-function.mdx",
+        "reason": "file-budget",
+        "size": 2876
+      },
+      {
+        "path": "docs/optimizing-with-codeflash/review-optimizations.mdx",
+        "reason": "file-budget",
+        "size": 2071
+      },
+      {
+        "path": "docs/optimizing-with-codeflash/trace-and-optimize.mdx",
+        "reason": "file-budget",
+        "size": 10313
+      },
+      {
+        "path": "docs/support-for-jit/index.mdx",
+        "reason": "file-budget",
+        "size": 10294
+      },
+      {
+        "path": "docs/editor-plugins/vscode/features.mdx",
+        "reason": "file-budget",
+        "size": 7797
+      },
+      {
+        "path": "docs/editor-plugins/vscode/index.mdx",
+        "reason": "file-budget",
+        "size": 7326
+      },
+      {
+        "path": "docs/editor-plugins/vscode/troubleshooting.mdx",
+        "reason": "file-budget",
+        "size": 6698
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1247
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7857
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1246
+      }
+    ],
+    "omitted_count": 25,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1212,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 31,
+      "complete": false,
+      "omitted": 25,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_10827e10e05d5e709f5b2a088ce91b28",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/codeflash-ai/codeflash/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/8a82ef72f57e7431/manifest.json",
+  "package_id": "pkg_a96d7b543fad7b7422f1f18994a2e2340d0c258dd5c346b5e5c5fcbe9493afa5",
+  "repo": "codeflash-ai/codeflash",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "dfcef87bbe3db3a2d41af6bae8891706f73ff51c48e6fcf2a831c52d8fa0f058",
+  "snapshot_id": "8a82ef72f57e7431",
+  "sources": [
+    {
+      "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+      "git_sha": "b5ad060c9851b2d66253976480f8f7f37ca87399",
+      "lines": 84,
+      "path": "README.md",
+      "repository": "codeflash-ai/codeflash",
+      "sha256": "7eb9ec9cdb4fdb9e9b70526c926618821b9986e48ab8021da156cd1d6652cd2f",
+      "source_id": "src_c610bb39b97f5455b12eada4e7a77247",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/README.md"
+    },
+    {
+      "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+      "git_sha": "d8a113a2dd72fa8def78a72201dbb8c98f8b70e7",
+      "lines": 149,
+      "path": "docs/editor-plugins/vscode/configuration.mdx",
+      "repository": "codeflash-ai/codeflash",
+      "sha256": "e4d02a7bad639bb3e25aa21a6d130d9380615edb4718d0a1a381aae9eeab2c18",
+      "source_id": "src_563647eb4e0e56d5b1a910fc463a6d67",
+      "stored": "configuration.mdx-ea83ba2b31c6.txt",
+      "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/editor-plugins/vscode/configuration.mdx"
+    },
+    {
+      "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+      "git_sha": "9945a15329ed87b77896179efe1b0c3e7dee7145",
+      "lines": 36,
+      "path": "docs/getting-the-best-out-of-codeflash.mdx",
+      "repository": "codeflash-ai/codeflash",
+      "sha256": "3609ed3e9b72f97acc10e1efdccb59582cf89e4d68579e92846cad7b38a03629",
+      "source_id": "src_7e7b2b05d7fa535abf2def71379ace91",
+      "stored": "getting-the-best-out-of-codeflash.mdx-4d0fffa879e6.txt",
+      "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/getting-the-best-out-of-codeflash.mdx"
+    },
+    {
+      "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+      "git_sha": "8f55107603a8501943bb512d4c3d3311be960af9",
+      "lines": 89,
+      "path": "docs/index.mdx",
+      "repository": "codeflash-ai/codeflash",
+      "sha256": "a1bb91bd24c9b6662bf0464c8c9e9c602b261d19f16763f9d5772b17535e609a",
+      "source_id": "src_4f1df9a7ef9952c3a549d6c509aeeb49",
+      "stored": "index.mdx-135108c7d936.txt",
+      "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/index.mdx"
+    },
+    {
+      "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+      "git_sha": "f2afff145f1858c01ab2ba201330ce1329ee0b43",
+      "lines": 167,
+      "path": "docs/install.md",
+      "repository": "codeflash-ai/codeflash",
+      "sha256": "90a81774f5d44efd474106d84d9ca281e5f5650db6a0afa657f2555f8b669034",
+      "source_id": "src_ce84e9609305585fbf9076c4ff634693",
+      "stored": "install.md-162b45a313f5.md",
+      "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/docs/install.md"
+    },
+    {
+      "commit": "a3a38efc9ec3d0a52a23056fd0a069863398a7ce",
+      "git_sha": "c163d0be0e9526e2c5d3ad131becf7cff57114a3",
+      "lines": 36,
+      "path": "mypy_allowlist.txt",
+      "repository": "codeflash-ai/codeflash",
+      "sha256": "947292bf163134059b3f3f0c2660e954dfdee80cd3ad458bd142fee0bc7074be",
+      "source_id": "src_74dffd09e3635143a15a3dc3b52a22c3",
+      "stored": "mypy_allowlist.txt-10cad8629330.txt",
+      "url": "https://github.com/codeflash-ai/codeflash/blob/a3a38efc9ec3d0a52a23056fd0a069863398a7ce/mypy_allowlist.txt"
+    }
+  ],
+  "summary": "The snapshot is documentation-heavy: README and docs describe Codeflash, an LLM-based Python (and per docs, JS/TS and Java) performance optimizer that verifies correctness via tests and opens merge-ready PRs, plus a VS Code extension and CLI configuration model. No source code beyond a mypy allowlist file list is present, so runtime internals remain largely unknown.",
+  "superseded_claim_ids": []
+}

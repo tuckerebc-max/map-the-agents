@@ -1,0 +1,689 @@
+{
+  "applied_operation_id": "op_bc6d55fd3dbb467a9391cbb738906c30",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_89579bb0a3b7e75dfbf98f5c07f2a9fe61367af88859ad0add90cc312b958728",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 98,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L97-L98"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 417,
+          "line_start": 407,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L407-L417"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 281,
+          "line_start": 280,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L280-L281"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_203217bc77d907b35345afd21a0bd8ae60cd3082eb5a18cf6dae2f9e3d15baf7",
+        "slc_90d1905c6e323590ba8cec3ccdd4a3bbc0de8c88f9480d17e6fd3bf9a9bb26a9",
+        "slc_a56249fd8b1f95f306adb0143560f5308cdeca66a511e76b9eb48247dd578e73"
+      ],
+      "text": "The product runs a local MCP server at http://127.0.0.1:8787/mcp, with a /healthz health endpoint and a dashboard at http://127.0.0.1:8790/ui."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc73aadc7a904f5079a9bb70230080f4a80b0837598ad3805945390ca30dd5ad",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 376,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L364-L376"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83978bc5f957248ba793c6425fcbf94195e42c52a3332ae6603a836fe3c0e033"
+      ],
+      "text": "The MCP tool surface includes workspace tools (workspace_info, workspace_snapshot, repo_map), file tools (read_file, write_file, apply_patch), search, command execution, git, and approval tools such as request_approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4aed66098a4dceab0d94a3238a002c95c66a500a0d4a01f9802c970f3f512325",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 241,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L232-L241"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 212,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L206-L212"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1148091e058a7d35af153e996e4611948722bfdad677f04987513080dead8f85",
+        "slc_c3daf64134cd4075f3b7c8ffbd992a535d5c25abf6ee6ee15f2a8811be824770"
+      ],
+      "text": "A CLI (scripts/lca) offers install/setup/start lifecycle commands plus status, doctor, update, skills, open, stop, logs, and url subcommands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d672b780cbd6dc2dfce77fb59f27ff545a3a5ab58ade77206ce54ee431258c8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 246,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L245-L246"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e2d7460f2d0c21598e63e834b4c31d897fbc7f9c1a889fdbff89cd1a9554ae9"
+      ],
+      "text": "An Electron tray app for Windows and macOS acts as a GUI supervisor for the same local server and tunnel, storing secrets with Windows DPAPI or macOS Keychain."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af807de68fb2f81d33ce10fe4db442f60accc29a0e124251de1729090c4cae7a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 81,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L73-L81"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 293,
+          "line_start": 291,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L291-L293"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 309,
+          "line_start": 306,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L306-L309"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 314,
+          "line_start": 311,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L311-L314"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_020519114f1f0b23366e2f6a643826647b9ea1fbdbd9af9cdf13664e85788fda",
+        "slc_1d6c170e3c53318c7c4653fe9e46cbfae7e171e9ba5fd05b2c498f35ec8d0162",
+        "slc_43584a6477004b24fb448713fd5a7709a5a485f23155941764f3222352862f39",
+        "slc_5815fde86e8f7822ac3d9c0906d9c65638a71f625d22ff6154f0ab2e0d77cb0f"
+      ],
+      "text": "Shipped helper scripts include local-coding-agent.mjs (prompt/setup-wizard/skills doctor), network-doctor.mjs, and support-report.mjs, which writes a redacted support-report.txt without keys or tokens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6001a12496929674c33d85d51307cafcf0836a238c92edd75a8968d7841a6b7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 403,
+          "line_start": 397,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L397-L403"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 393,
+          "line_start": 389,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L389-L393"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ed8116e00f215bb23f95423ae48e10f6aca8e9b92dffb22378532ccf4b10d22",
+        "slc_dd04a3e85a5aa45502d3e7ab4f1371b367cd842c4b2ed5e984b079c20976d6ad"
+      ],
+      "text": "Recommended safety defaults are AGENT_MODE=safe, AGENT_POLICY=balanced, and DASHBOARD_PORT=8790; file tools are confined to configured workspace roots and risky actions require local approval under balanced policy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07e0271147c8c75f6824a20937b4c70c82c77cf3c5f074596abbac3fe8802acd",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 320,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L318-L320"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 331,
+          "line_start": 322,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L322-L331"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4921316a70b9b0218f4aa7a8bd7f2046e728341cf5b4604a911e13b43806ca64",
+        "slc_d2c83aa2cf40623fc40d3a66bc08d51d5ddb3157b4098877fcda51eeb934e75f"
+      ],
+      "text": "Since v4.4.3, default tool outputs are kept small (tighter read_file/run_command output, smaller read_many batch caps) to reduce ChatGPT Web lag, with per-call parameters like max_chars and head_lines to raise limits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_64d622a49b09798748c876e8da5bd7862de3802f9dbf1c746d9383af55607964",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 360,
+          "line_start": 356,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L356-L360"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 347,
+          "line_start": 342,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L342-L347"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1edfd121f3ab4f248178482bcb1f2cc9b498d29430637702acb3ec0c0cad2e68",
+        "slc_d9ef641ca13a9388eb197d0f054946b8367cd49a791f793c5007b4184c7ef59c"
+      ],
+      "text": "compact_context stores a local structured checkpoint (goal, decisions, tasks, git state) under server/data/ with best-effort credential redaction, and resume_context loads it in a fresh chat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4816bb6f39271ce632c9df6825326e4c2271d3181868f044e170fd734540184f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 18,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L10-L18"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 54,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L47-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_186e1a5a1d9b8bd476ff1f4541addec86dedd85e7aebf8a25454691340e2ea08",
+        "slc_57dfcb5bcd12362271052ffd6e607f866b2e977d2479befdd0c3bb2c8d2d593b"
+      ],
+      "text": "The project requires Node.js >= 18, and the proprietary tunnel client is user-supplied rather than bundled in releases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe9793973a4e6b5921fcdfd551c1e2ee7adb2aaf4c9203dc8075137b0c513aef",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 403,
+          "line_start": 397,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L397-L403"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 38,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L37-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ed8116e00f215bb23f95423ae48e10f6aca8e9b92dffb22378532ccf4b10d22",
+        "slc_95859af8bd39af27fe91012fd03a3dbf218a966d012825b907ca13f51a262bdd"
+      ],
+      "text": "The tool can run commands on the host and is explicitly not an OS sandbox; the README advises connecting only trusted workspaces and using a VM/container for untrusted repositories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35146fba8236a8e469ca6b2745b58a22746d95c2fa20eed48bcd94d1215741c4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 340,
+          "line_start": 339,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L339-L340"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 360,
+          "line_start": 356,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L356-L360"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10d34b24a7b43efd93131436ec3660ca817f52ad4f893cbbf1f9af0f966bef69",
+        "slc_1edfd121f3ab4f248178482bcb1f2cc9b498d29430637702acb3ec0c0cad2e68"
+      ],
+      "text": "The agent cannot read or replace ChatGPT Web's internal context window; it only estimates MCP tool-traffic pressure, not actual token or context-window usage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b1100b6207b80961552b6cafa826975ebaf8573009a1fc501124bbba1b1dc9b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 437,
+          "line_start": 434,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L434-L437"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 430,
+          "line_start": 423,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L423-L430"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bee93d5945267f1915d88529e84f80eccbc7960d6c24ee67d451d964be49becb",
+        "slc_c431d0ae938d3aef18e81d6f0d6809a66265d5c0eb960fd226fa7e1d990522d3"
+      ],
+      "text": "Repository development practice: server tests run from the server directory via npm run test:agent, test:pro, test:security, test:hardening, and npm run eval; the tray app builds with dotnet build."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_437f2da30ba5cd49970f41a3ede7b033354b906c8fa17402c4d7c4eaca0f8057",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L7-L8"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 25,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L20-L25"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L40-L43"
+        },
+        {
+          "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+          "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+          "line_end": 443,
+          "line_start": 441,
+          "path": "README.md",
+          "repository": "longngn204/local-coding-agent",
+          "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md#L441-L443"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_415842172d79bafa4ead407a1c4bbcfc59c4ad9f4abed1d8a5956b0b478d833c",
+        "slc_5d2d7c566c8c020685744e0c3dab41e9bb7097a5fbbc9deb12882b2ce6ef1338",
+        "slc_842377e59de28c191743ecde958f86fb5c72efa3b32aeeb9e0fc3a8c79ccf93a",
+        "slc_ff1aa1bb55ac97c6c968ab3badd4914ec9277f290050660c95c478737d40e763"
+      ],
+      "text": "The project turns a machine into a local MCP coding workspace for AI agents (Claude Code, Codex, Cursor, ChatGPT Web), licensed AGPL-3.0-or-later as a Community Edition; the latest stable release is v5.0.1."
+    }
+  ],
+  "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 770,
+        "path": "README.md",
+        "size": 31811
+      },
+      {
+        "lines": 68,
+        "path": "BRAND-GUIDELINES.md",
+        "size": 2938
+      },
+      {
+        "lines": 50,
+        "path": "NOTICE.md",
+        "size": 2873
+      },
+      {
+        "lines": 102,
+        "path": "TRADEMARKS.md",
+        "size": 5030
+      },
+      {
+        "lines": 139,
+        "path": "docs/AI_AGENT_SETUP_PROMPT.md",
+        "size": 4289
+      },
+      {
+        "lines": 121,
+        "path": "docs/CHATGPT_WEB_COMPACT.md",
+        "size": 4326
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/CUSTOMER_UPDATE_PROMPT.md",
+        "reason": "file-budget",
+        "size": 3098
+      },
+      {
+        "path": "docs/NETWORK_DOCTOR.md",
+        "reason": "file-budget",
+        "size": 3425
+      },
+      {
+        "path": "docs/RELEASE_NOTES_V5.md",
+        "reason": "file-budget",
+        "size": 3527
+      },
+      {
+        "path": "docs/RELEASE_NOTES_V5_0_1.md",
+        "reason": "file-budget",
+        "size": 2082
+      },
+      {
+        "path": "docs/TRADEMARK-REGISTRATION-CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 5446
+      },
+      {
+        "path": "docs/V5.md",
+        "reason": "file-budget",
+        "size": 11219
+      },
+      {
+        "path": "docs/V5_MULTI_ROOT_PERMISSIONS.md",
+        "reason": "file-budget",
+        "size": 4168
+      },
+      {
+        "path": "docs/V5_SUBAGENTS.md",
+        "reason": "file-budget",
+        "size": 15104
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 3360
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 32330
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 4860
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 257,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 17,
+      "complete": false,
+      "omitted": 11,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_95e154b8699a5f239851bb17b231d955",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/longngn204/local-coding-agent/95144e610ddcc3bb5a879117803907c008b1a88e/0ba6128836bbd797/manifest.json",
+  "package_id": "pkg_d4b23e779741eb4b4202f4780573678ba5894fc5b7a80e832203b6a36d9caf4e",
+  "repo": "longngn204/local-coding-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "71391a95427283f6c43bf9bc35f9b6e8ff442c71dbef1711e9a27af874f176df",
+  "snapshot_id": "0ba6128836bbd797",
+  "sources": [
+    {
+      "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+      "git_sha": "d0ffe6578440d71cd96f1d6278ad4ede3ef4be2e",
+      "lines": 68,
+      "path": "BRAND-GUIDELINES.md",
+      "repository": "longngn204/local-coding-agent",
+      "sha256": "819fbd0f724a7d0a1fc7a19c346c180749a3e67371d8f739cdf1458c2c2484d5",
+      "source_id": "src_023c9dc713d659399c1d0f77bca6cd56",
+      "stored": "brand-guidelines.md-b7c6da15ec65.md",
+      "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/BRAND-GUIDELINES.md"
+    },
+    {
+      "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+      "git_sha": "b6e1a03086f611d952f303d35a8b04e206751e84",
+      "lines": 50,
+      "path": "NOTICE.md",
+      "repository": "longngn204/local-coding-agent",
+      "sha256": "0618b196f21c3daef436d35257c45f52f06e5a6d8f434166cdd2c3322106595d",
+      "source_id": "src_b840c90f1f665ad7a7037b9f9cadb4f1",
+      "stored": "notice.md-53337bf7ea91.md",
+      "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/NOTICE.md"
+    },
+    {
+      "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+      "git_sha": "a59ed4bc5b3fa43de63e5dc079c0456d7fbd54ff",
+      "lines": 770,
+      "path": "README.md",
+      "repository": "longngn204/local-coding-agent",
+      "sha256": "5e387532fd34a6bca6a65302b8786da77a1a3368400710973bf4752b694c32c8",
+      "source_id": "src_dd0ab0ca85d75acb8744477fe085cd7e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/README.md"
+    },
+    {
+      "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+      "git_sha": "40a4a4ea852f85a79286960cdbfd50f1ba1b0028",
+      "lines": 102,
+      "path": "TRADEMARKS.md",
+      "repository": "longngn204/local-coding-agent",
+      "sha256": "5e2fefb40b802ad595b870ffc67ff493e62697cad51f1a17d2a01590b2c9b6b2",
+      "source_id": "src_818f7e5111875cbf973e9fbea623d32c",
+      "stored": "trademarks.md-9431126dfa5a.md",
+      "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/TRADEMARKS.md"
+    },
+    {
+      "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+      "git_sha": "fb8016c9fa4cb94990c8ad876b004590f2ec21fd",
+      "lines": 139,
+      "path": "docs/AI_AGENT_SETUP_PROMPT.md",
+      "repository": "longngn204/local-coding-agent",
+      "sha256": "63fba66d4d3cd337f7f4f3cd74c8242a599d40161fd520627b399a6a941e19cf",
+      "source_id": "src_ce4f07b4eb945fac99b4cbbc617bb4ca",
+      "stored": "ai_agent_setup_prompt.md-fa69b06e8ee3.md",
+      "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/docs/AI_AGENT_SETUP_PROMPT.md"
+    },
+    {
+      "commit": "95144e610ddcc3bb5a879117803907c008b1a88e",
+      "git_sha": "dcfdca93057a127871f60bd200ad1a97251ac32e",
+      "lines": 121,
+      "path": "docs/CHATGPT_WEB_COMPACT.md",
+      "repository": "longngn204/local-coding-agent",
+      "sha256": "b2df9cc9113bf8ee991e97f1270b62218e360dd0021bf3c7518285a1d0c58bb9",
+      "source_id": "src_f90fc5f65ce753d7a1ff149db824d1f3",
+      "stored": "chatgpt_web_compact.md-1cfa182327a1.md",
+      "url": "https://github.com/LongNgn204/local-coding-agent/blob/95144e610ddcc3bb5a879117803907c008b1a88e/docs/CHATGPT_WEB_COMPACT.md"
+    }
+  ],
+  "summary": "Local Coding Agent is a local MCP server (v5.0.1) exposing workspace/file/search/command/git/approval tools with a dashboard and Electron tray supervisor, connecting AI coding agents like ChatGPT Web and Claude Code to a local machine. Claims below are drawn only from the supplied README/docs slices; development-practice items are prefixed accordingly. Evidence coverage: 145 of 227 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

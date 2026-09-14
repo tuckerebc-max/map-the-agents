@@ -1,0 +1,247 @@
+{
+  "applied_operation_id": "op_346e3111d0e64b098dc68f6e8814e504",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_112e7983845734b8ffc5e374c75b1ae0ff50869ffd60a243c7c7ae63c4e76513",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+          "git_sha": "e2e02ddf0ab1c73f90e8779fb6d63dbb3c8dadc8",
+          "line_end": 18,
+          "line_start": 3,
+          "path": "AGENTS.md",
+          "repository": "aniket-508/vercel-doctor",
+          "url": "https://github.com/Aniket-508/vercel-doctor/blob/cf8a44364048257a5a7c6355bcada1f944652a6e/AGENTS.md#L3-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62c6a7918d7b3f8a7c6ee483141310bff8db9f9b229f1f166068daeb6d065c56"
+      ],
+      "text": "Repository development practice: contributors must follow TypeScript conventions including interfaces over types, arrow functions, kebab-case file names, descriptive variable names, and avoiding type casts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_76d81581bcae7add04c447f2c42e01f7a78769db6474a90cb49059e5a339949e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+          "git_sha": "e2e02ddf0ab1c73f90e8779fb6d63dbb3c8dadc8",
+          "line_end": 18,
+          "line_start": 3,
+          "path": "AGENTS.md",
+          "repository": "aniket-508/vercel-doctor",
+          "url": "https://github.com/Aniket-508/vercel-doctor/blob/cf8a44364048257a5a7c6355bcada1f944652a6e/AGENTS.md#L3-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62c6a7918d7b3f8a7c6ee483141310bff8db9f9b229f1f166068daeb6d065c56"
+      ],
+      "text": "Repository development practice: magic numbers belong in constants.ts using SCREAMING_SNAKE_CASE with unit suffixes, and small focused utilities go in utils/ with one utility per file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33009d60afaa1faf9a8b51e4e008b417c6b02962228f5cb6a61d70092d6f523a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+          "git_sha": "e2e02ddf0ab1c73f90e8779fb6d63dbb3c8dadc8",
+          "line_end": 28,
+          "line_start": 22,
+          "path": "AGENTS.md",
+          "repository": "aniket-508/vercel-doctor",
+          "url": "https://github.com/Aniket-508/vercel-doctor/blob/cf8a44364048257a5a7c6355bcada1f944652a6e/AGENTS.md#L22-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_acf11f7b36fec05bd3de8299ffa5efee6309119552255cb69ccd168ff32ffc35"
+      ],
+      "text": "Repository development practice: agents are told to minimize token usage by batching edits, not re-reading files they just wrote, skipping confirmations, and not echoing large code blocks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d4b8c66e049785f8b7f46dbc60a8305a4fcb42b9e35711917b467fd825d7429",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+          "git_sha": "e2e02ddf0ab1c73f90e8779fb6d63dbb3c8dadc8",
+          "line_end": 39,
+          "line_start": 34,
+          "path": "AGENTS.md",
+          "repository": "aniket-508/vercel-doctor",
+          "url": "https://github.com/Aniket-508/vercel-doctor/blob/cf8a44364048257a5a7c6355bcada1f944652a6e/AGENTS.md#L34-L39"
+        },
+        {
+          "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+          "git_sha": "e2e02ddf0ab1c73f90e8779fb6d63dbb3c8dadc8",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "AGENTS.md",
+          "repository": "aniket-508/vercel-doctor",
+          "url": "https://github.com/Aniket-508/vercel-doctor/blob/cf8a44364048257a5a7c6355bcada1f944652a6e/AGENTS.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_576dbf3e83275cc553f65cd2851fa8fc3a0e79b3f87008f44afbf87f5d24fab0",
+        "slc_9c118fb8f527d858322825da436209fff1f64b67099d75f9e2e1e4b3b4745687"
+      ],
+      "text": "Repository development practice: checks should always be run before committing, using pnpm test (e2e tests), pnpm lint, pnpm typecheck, and pnpm format."
+    }
+  ],
+  "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1,
+        "path": "README.md",
+        "size": 32
+      },
+      {
+        "lines": 39,
+        "path": "AGENTS.md",
+        "size": 1808
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 438,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_7cf81064a5835312aa701a1e9329fd2c",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aniket-508/vercel-doctor/cf8a44364048257a5a7c6355bcada1f944652a6e/12ec492fc1c7c664/manifest.json",
+  "package_id": "pkg_29147c4c9de49ee5b41a95ecaeb7844f0dd1026a90f42941c15130ee95c8dd27",
+  "repo": "aniket-508/vercel-doctor",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e71a0e8418f7ce1021dbd8d151a7ee3c858e0e517dc207164407792f04f33240",
+  "snapshot_id": "12ec492fc1c7c664",
+  "sources": [
+    {
+      "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+      "git_sha": "e2e02ddf0ab1c73f90e8779fb6d63dbb3c8dadc8",
+      "lines": 39,
+      "path": "AGENTS.md",
+      "repository": "aniket-508/vercel-doctor",
+      "sha256": "f3aec5c9e9f45baffa99508af3855e23c32d5fb990691e00eb9fd6143e6c111e",
+      "source_id": "src_219d0e4be4dd5f4688e342a382853772",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/Aniket-508/vercel-doctor/blob/cf8a44364048257a5a7c6355bcada1f944652a6e/AGENTS.md"
+    },
+    {
+      "commit": "cf8a44364048257a5a7c6355bcada1f944652a6e",
+      "git_sha": "19a490045b81c5d78d1fbe6516b885d216cf9eb2",
+      "lines": 1,
+      "path": "README.md",
+      "repository": "aniket-508/vercel-doctor",
+      "sha256": "947fd8742714e249b0df0fc9910e427bca2a9b75551af9dc7e35eca1e703153d",
+      "source_id": "src_788f36b05a50559186106b0267dbd247",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Aniket-508/vercel-doctor/blob/cf8a44364048257a5a7c6355bcada1f944652a6e/README.md"
+    }
+  ],
+  "summary": "The snapshot's only substantive evidence is AGENTS.md contributor guidance (coding conventions, token-efficiency rules, pre-commit pnpm checks); no product runtime behavior is evidenced. The README slice is just a path reference and supports no claim.",
+  "superseded_claim_ids": []
+}

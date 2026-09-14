@@ -1,0 +1,740 @@
+{
+  "applied_operation_id": "op_53ae1b6cb36c447db113d6dc1d68299a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bfbc75d615a2cecf48f59390929509be33027166156568dcfb249a83a42a76e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L20-L20"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 5,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L1-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36207d4fb385d58573d7189c76950a98e8d223f28df27d7c4a50432c211272aa",
+        "slc_a35d1e1999e38ee962d1ed649f58ae74e710fd8d1d1889daa71cdba297196153"
+      ],
+      "text": "Anima is described as an open-source Agent OS for intelligent hardware, aiming to give home devices perceptive, decision-making, learning, and extensible AI capabilities rather than being a device control panel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f7cebc7de082417d4e66dbf9851a0ded38ceeb64b50e8d3bc6fe47c09d7a1a9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L51-L51"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 344,
+          "line_start": 321,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L321-L344"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 38,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L34-L38"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 64,
+          "line_start": 55,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L55-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d37e032fb8a8329b9f64d26b35fa927c7ad9506b5732c9564899e41f50febfe",
+        "slc_9f3972301e4687c16a5b2fb2a8115eb029bab84ac976a4a3c141575b9002c818",
+        "slc_ab10b23025da6f8b0e3ed541a043b6c9acaaac93984fadb93ebc3754e3acba65",
+        "slc_c393116fd8b924fc73f3efa2832665e90b8a86ae3c609a642444a9a9bdab51a7"
+      ],
+      "text": "The runtime comprises a Brain decision layer, device Skills, a layered Memory system, hardware Adapters, a FastAPI backend, and a React dashboard; core/main.py is the composition root and startup entrypoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a845cbbe42e0dbab1b9910a112b73e90d5b4b8825b52114fe6bae39db771b91",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L115-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0cd1ba25b28f614db0a494a05bc35b9b1fe7ac1763a83079bb96681ee26d1872"
+      ],
+      "text": "The Brain is designed to decide within explicit skill boundaries, device capabilities, and safety rules rather than letting an LLM control devices freely."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2a37ddc35ea3edae99c44735ac7b4ff4032d906d0b0f84365cbbbe71ca98a16",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 129,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L121-L129"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43474650649931feac451ed3be835a12442faaa3183528697a4e978addedef3b",
+        "slc_e1876d58aa89c32960f7ec806d2bea856b5a1f89c27796b8dcf13f42ca8d8537"
+      ],
+      "text": "Skills are device domain-knowledge packages with a defined layout: SKILL.md metadata, references (knowledge, decide, learn prompts), and scripts/actions.py as the structured action execution entrypoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06c1ddab72c98cb7ae04d2a0a4338c012c93c39dd4bb96b75e90300769f9c015",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 144,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L144-L144"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 142,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L133-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b4a7b8b045a2277d6219fcf9eb0012094e086408951156678287cab6bae7c27",
+        "slc_b3502bc25a12a49f084eab67ecc9ed79b7400dd1b55b618d540ad6e540e30fc3"
+      ],
+      "text": "Built-in skills include light, humidifier, air_conditioner, air_purifier, speaker, coordinator, device_discovery, and skill_creator; custom skills can be added under skills/custom/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc9846b5244a7ee7f2c545ee5cbd6d77e0a722dc20dc5273b0368db3654620a8",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 167,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L165-L167"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 160,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L158-L160"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 163,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L162-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11b0a3e01159c46f0292bde226906a06a387cc57628d68027ffc4f48f5486f4f",
+        "slc_16b7674de93fc288860897d5f5ce862aa0a82a1806a862f9ec6c0f1bfaaee772",
+        "slc_3b6633bf9631663b90aa3ab29d756f03977988826c366db91f8fa038a6be7266"
+      ],
+      "text": "Memory is layered: L1 core identity loaded on every request, L2 a memory directory for the planner, and L3 detailed memories retrieved by device type and task before skill execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2af37671bd9d163d8a0142d3b9265e01aa97d55f4257982f064e9826f6831d29",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 185,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L179-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa180b9248ec6e73f541a9057ef786ccb07179fa8b9fff6b69e6ec46433a6316"
+      ],
+      "text": "Extracted memories use a schema with claim_type categories (explicit/implicit preferences, routines, aliases, constraints, home context), positive/negative evidence, and status values candidate/confirmed/rejected/stale; only confirmed memory enters skill decisions by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3cc0c015e1d3d540c24426639c96a0e46790fe4e6630f6827b1389e96558072e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 369,
+          "line_start": 354,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L354-L369"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 375,
+          "line_start": 373,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L373-L375"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f2574dd94b18ae5527294f79697f7130a2a99ab4c1e1ad64a3bb973c1c86d19",
+        "slc_dbbbfd20777876572941974b8d82e27caf6789f6bd78601a3cfadaa98147edb7"
+      ],
+      "text": "The backend exposes REST endpoints including /health, /api/devices, /api/chat, /api/environment, /api/scan, /api/memory, /api/settings, and Xiaomi QR login start/poll endpoints, with Swagger at localhost:8080/docs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4dd9ff3566948e4f7a033d05a2775970da5d48c66c8305cf750c4a48e8faa60a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 286,
+          "line_start": 286,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L286-L286"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L84-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00376015f02a3442a94a5eecdffe1f9df539d70301d14ceed659287cb7fe0c4f",
+        "slc_e4675e8a62c956cb65bcca3d6613be9a1c52480420366fd7baa06d5a9a733a84"
+      ],
+      "text": "LLM integration is OpenAI-compatible, configured via ANIMA_LLM_API_KEY and optionally ANIMA_LLM_BASE_URL, supporting OpenAI, DeepSeek, Doubao, proxied Anthropic, and Ollama-compatible endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b51c7b503d41e58c67777bcd68227a0a910dc0444c3b5a01c2658667ccae212",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 16,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L10-L16"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 220,
+          "line_start": 220,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L220-L220"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d67395b70c12eee6cc56c9e9b51966f08456c27910305fcb55461a3709191a6",
+        "slc_dd6480af61c73379006e4c5e7ce88f69187b1f1b9a0673629655cd5ab3158725"
+      ],
+      "text": "The stack is Python 3.11-3.13 with FastAPI and LangGraph plus a React dashboard; Docker Compose is the recommended deployment, requiring only Docker Desktop or Docker Engine with the Compose plugin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3925c94946030187bae7ab5c4896b19dd9292b98494c8f077ef30b82c49e9296",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "4d1f19a5eb82cae64589fa3b3335a5e284d092ce",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "ARCHITECTURE_GUARDRAILS.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/ARCHITECTURE_GUARDRAILS.md#L13-L13"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L92-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10b44618fac72132d426f5531a6ed7f9915a6f7a6c12a59513004f5f5f1162e0",
+        "slc_9a07d48a6f75f1cb21cab690098e8e2eb50ce4894d1596fd2eebf57f381eedac"
+      ],
+      "text": "The runtime chain is device discovery, sensor/event updates, a rules fast path for safety, an LLM slow path, command execution via adapters, memory/history writes, and dashboard visibility."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0d994ab5624ad8f9917691c96dba6bb59b93eb5e075f052efd887ed929297db",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 37,
+          "line_start": 30,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L30-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cff5c6ff7d795160283c4475709794a9c64d30c7363f445961c372b4e822341"
+      ],
+      "text": "Per AGENT.md, the implemented system is a single-process Python backend under core/ with file-based memory in data/memory and a polling-based frontend refresh."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dcb6f79a76322ed93536504e7876c5d0492ef4b4c1679d92c37873c4674aca7d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+          "line_end": 200,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md#L200-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_153c91b6bb5825363eba7f2c7b0a4795fb1d188a3e888f552abf3f0f4db7b33d"
+      ],
+      "text": "MIoT command execution depends on each device's reachable local IP and token; Xiaomi Cloud login is mainly for discovery and token acquisition, not universal cloud remote control."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78b9daea3331e0375dc183432c508859db32ba23556679864b75aa73a34b9cfd",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 212,
+          "line_start": 211,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L211-L212"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 207,
+          "line_start": 205,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L205-L207"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 222,
+          "line_start": 221,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L221-L222"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 217,
+          "line_start": 216,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L216-L217"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 45,
+          "line_start": 41,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L41-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fa09c7a605c87120dbd8d2c787a1a8d957138da502606e4d61963462f6dc7f6",
+        "slc_5dcb2925051d488c8af7d7b0a1e2702bb0355a05fbffa9b01528247352b54f20",
+        "slc_907c5b09e695c708d23fc84903f234938db4414fbb5fce024fe0aeb0c11d05ce",
+        "slc_a83a0bf89721c22d20ee401d8a4ccde6fc76e29c18a9a5562b7fb99fb22b3ef1",
+        "slc_da25e6de42d8b1c8a6a30595559fe59d112f7420b2093dd038b369a1ad015ef6"
+      ],
+      "text": "Per AGENT.md, MQTT is not the main production event path, the dashboard is polling-based rather than realtime, room modeling is weak, and chat is narrow task routing rather than a full assistant."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_247e5c7fedb850fedcfd3756826acdf3774a04afad92b0cd48c6470bd61e3a78",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 279,
+          "line_start": 279,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L279-L279"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 226,
+          "line_start": 226,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L226-L226"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 283,
+          "line_start": 281,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L281-L283"
+        },
+        {
+          "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+          "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "AGENT.md",
+          "repository": "fullive-ai/anima",
+          "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46c409be122d506ef880603e80764c195328a6fee2bf3d884b584b9c7228bcdd",
+        "slc_4b9a5c51566e7409dfb9b676b944673346ba874feded0c7eeaf596e028193148",
+        "slc_66b71c3ad7549ef084d2a78a9a9693fbb2569a2889d01bf26d9207d0ff1147d3",
+        "slc_76ce7283a3bde19501bc7c05c2c34e9baf1d70e987bd6151b4a0a9b9c8075bcb"
+      ],
+      "text": "Repository development practice: AGENT.md and ARCHITECTURE_GUARDRAILS.md target coding agents contributing to the repo, defining module ownership boundaries, change heuristics, and testing expectations such as running tests under tests/ before considering work complete."
+    }
+  ],
+  "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 495,
+        "path": "README.md",
+        "size": 20961
+      },
+      {
+        "lines": 489,
+        "path": "docs/plans/design.md",
+        "size": 15680
+      },
+      {
+        "lines": 296,
+        "path": "AGENT.md",
+        "size": 9762
+      },
+      {
+        "lines": 290,
+        "path": "ARCHITECTURE_GUARDRAILS.md",
+        "size": 9013
+      },
+      {
+        "lines": 290,
+        "path": "ARCHITECTURE_GUARDRAILS.zh-CN.md",
+        "size": 8317
+      },
+      {
+        "lines": 497,
+        "path": "README.zh-CN.md",
+        "size": 19378
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/plans/2026-03-17-anima-design.md",
+        "reason": "file-budget",
+        "size": 18010
+      },
+      {
+        "path": "docs/plans/2026-03-17-anima-design.zh-CN.md",
+        "reason": "file-budget",
+        "size": 17071
+      },
+      {
+        "path": "docs/plans/2026-03-17-anima-v01-impl.md",
+        "reason": "file-budget",
+        "size": 101750
+      },
+      {
+        "path": "docs/plans/design.zh-CN.md",
+        "reason": "file-budget",
+        "size": 14769
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 1586
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1091
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2610
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1522
+      }
+    ],
+    "omitted_count": 8,
+    "omitted_slices": 146,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 221,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 14,
+      "complete": false,
+      "omitted": 8,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_81f7ab5288a45f5aad5807ddaae97436",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/fullive-ai/anima/ea1542ff8420d37089926d558ff0d6cc2174eac8/5a37690defbc92d2/manifest.json",
+  "package_id": "pkg_6fc130c38f224935a086cb851014393831f8d956981c71163cac6b5c5a378d86",
+  "repo": "fullive-ai/anima",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "99a4fa77e8b69e2988381ce524be77ef79fd1d58ca758a3b9ffb70cb2179545f",
+  "snapshot_id": "5a37690defbc92d2",
+  "sources": [
+    {
+      "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+      "git_sha": "d37f31ef81bdc9852b47d14c79031c996a5dece2",
+      "lines": 296,
+      "path": "AGENT.md",
+      "repository": "fullive-ai/anima",
+      "sha256": "123c7902114be482ac7cf8882ecec8dc129ce8cb4512d17b1c30bbbed67b6095",
+      "source_id": "src_b387f6512ee75993a72b3b3dcb570c73",
+      "stored": "agent.md-c1e87407ce72.md",
+      "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/AGENT.md"
+    },
+    {
+      "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+      "git_sha": "4d1f19a5eb82cae64589fa3b3335a5e284d092ce",
+      "lines": 290,
+      "path": "ARCHITECTURE_GUARDRAILS.md",
+      "repository": "fullive-ai/anima",
+      "sha256": "f6b452ab51f39c42930f813f914c6dd2ea7bdf929055bc5ead58c651d0850d19",
+      "source_id": "src_caa814f5e98e550683e582e6aefa174b",
+      "stored": "architecture_guardrails.md-29c1bd115386.md",
+      "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/ARCHITECTURE_GUARDRAILS.md"
+    },
+    {
+      "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+      "git_sha": "24ecd5d6060e9bc1aec910695c4cfb635cb0fcda",
+      "lines": 290,
+      "path": "ARCHITECTURE_GUARDRAILS.zh-CN.md",
+      "repository": "fullive-ai/anima",
+      "sha256": "95a9d141154d90ea9ac91742f9344ffe7b7b8b6906b951b769bec726496b9bf2",
+      "source_id": "src_68946fb9dccf51bea454310fd80086b5",
+      "stored": "architecture_guardrails.zh-cn.md-a8649a067695.md",
+      "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/ARCHITECTURE_GUARDRAILS.zh-CN.md"
+    },
+    {
+      "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+      "git_sha": "c77a4cf238af3caadaac00106f4d75d73dd6f5a5",
+      "lines": 495,
+      "path": "README.md",
+      "repository": "fullive-ai/anima",
+      "sha256": "5e299cc4029ff17c98933cc1fa52804250aef3ab5c445fc4fac833b20fcab95d",
+      "source_id": "src_6b0f225720f35491b2bcfe2b16b66859",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.md"
+    },
+    {
+      "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+      "git_sha": "8cce09cfa4d20757025715470052cdcc370b53ed",
+      "lines": 497,
+      "path": "README.zh-CN.md",
+      "repository": "fullive-ai/anima",
+      "sha256": "8ec2a3a45988e9ae0dce5f81fa7ac72df5802aa06426dad7041e04be1b80b0b2",
+      "source_id": "src_3d6dae0b021f59d6930c31a9362464b4",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/README.zh-CN.md"
+    },
+    {
+      "commit": "ea1542ff8420d37089926d558ff0d6cc2174eac8",
+      "git_sha": "09897637f07b458b5f92dd68747590c92b3bae6e",
+      "lines": 489,
+      "path": "docs/plans/design.md",
+      "repository": "fullive-ai/anima",
+      "sha256": "0a5a0c1bff920a97781b095ba7a2d2cff9545a86c748c86c83e322e9667e2fc1",
+      "source_id": "src_69c1e0df49295058ab655d5fd8562d6d",
+      "stored": "design.md-e28ff41bb0fd.md",
+      "url": "https://github.com/Fullive-AI/Anima/blob/ea1542ff8420d37089926d558ff0d6cc2174eac8/docs/plans/design.md"
+    }
+  ],
+  "summary": "Anima is an open-source Agent OS for intelligent hardware: a Python/FastAPI backend with a LangGraph Brain, device Skills, layered file-based memory, MIoT adapters, and a React polling dashboard, currently supporting Xiaomi/Mi Home devices. AGENT.md and ARCHITECTURE_GUARDRAILS.md provide contributor-facing architecture and testing guidance. Evidence coverage: 166 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_00b64d4fc89cbbac4d61f0c72a9c8d63a830d5186df13ed4079c9dd0f673e806
+- clm_0c1acfce035cac258a4252b9795239285620ac5e4a1367ab0e9a9fe8cc4645eb
+- clm_10625900b6bcd50ce341aace770a2ffee83746f000eff44217c40b045277c762
+- clm_222183e44d19853f990d7750bf7056b4fd3433af45a89f83f67ab478896adfe9
+- clm_5bd86a176b0ca6d102fefff6471bb8064b4f4c545edde3058e3b2673df1f123e
+- clm_5f3b5c11ac21fd3f6fb9fd5eb94b91361a6111842ccea9df18f910b5b6711447
+- clm_8374dc02f69b3172629dc4caa07855541a082f9fd28b09a67d82c0f2116f1d40
+- clm_8d0ebe51fa2e298efbe5d7827e8c40102e0618c67ad9d86e13bec686a68c300a
+- clm_973419ecabeb941eff6d37a2020ab402bec76b60777e073359002896a9082282
+- clm_abb9184e4f4e1323a35e46449a81b612ceb78060e0b602414552e5712ead0c36
+- clm_d4600d40b4ec87764d5a4e3d2bbc4a44181c480908cffe2605fadba37a617de5
+- clm_e0965db7b31f26265365f50a28c564600061b44d6920c277ed06128da701d620
+maturity: draft
+page_id: pg_e33f5c09daeb590db67b0983742ff5fc
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_063842ea336b5246a2c6960d583dc223
+title: ref-tools/ref-tools-mcp/README.md @ 83970a356277
+updated_at: '2026-09-14T04:18:52Z'
+---
+
+# ref-tools/ref-tools-mcp/README.md @ 83970a356277
+
+<!-- rcw:begin owner=source:src_063842ea336b5246a2c6960d583dc223 block=evidence -->
+- Ref is a Model Context Protocol server that gives AI coding tools or agents access to documentation for APIs, services, and libraries in a token-efficient way. [@claim:clm_00b64d4fc89cbbac4d61f0c72a9c8d63a830d5186df13ed4079c9dd0f673e806]
+- Ref uses MCP sessions to track search trajectory and minimize context usage. [@claim:clm_0c1acfce035cac258a4252b9795239285620ac5e4a1367ab0e9a9fe8cc4645eb]
+- When reading a documentation page, Ref uses the session's search history to drop less relevant sections and return the most relevant 5k tokens instead of pulling in 20k+ tokens. [@claim:clm_10625900b6bcd50ce341aace770a2ffee83746f000eff44217c40b045277c762]
+- For OpenAI deep-research clients, the same tools are provided under different names: ref_search_documentation(query) becomes search(query) and ref_read_url(url) becomes fetch(id). [@claim:clm_222183e44d19853f990d7750bf7056b4fd3433af45a89f83f67ab478896adfe9]
+- Two setup modes exist: a recommended streamable-HTTP server and a legacy local stdio server, which is what this repository contains. [@claim:clm_5bd86a176b0ca6d102fefff6471bb8064b4f4c545edde3058e3b2673df1f123e]
+- Within a session, repeated similar searches never return duplicate results, letting the agent both page deeper and adjust its prompt. [@claim:clm_5f3b5c11ac21fd3f6fb9fd5eb94b91361a6111842ccea9df18f910b5b6711447]
+- The README describes coding agents performing one or more searches and then reading a few resources in depth, refining queries iteratively for complex prompts. [@claim:clm_8374dc02f69b3172629dc4caa07855541a082f9fd28b09a67d82c0f2116f1d40]
+- Repository development practice: local development uses npm install/build/watch/dev, and the MCP Inspector (npm run inspect) is suggested for debugging server interactions. [@claim:clm_8d0ebe51fa2e298efbe5d7827e8c40102e0618c67ad9d86e13bec686a68c300a]
+- A ref_read_url tool fetches a URL, converts the content to markdown, takes a required url parameter, and is designed to pair with search results. [@claim:clm_973419ecabeb941eff6d37a2020ab402bec76b60777e073359002896a9082282]
+- The server exposes a ref_search_documentation tool with a required query parameter, described as a full sentence or question, for searching public web/GitHub docs and private resources like repos and PDFs. [@claim:clm_abb9184e4f4e1323a35e46449a81b612ceb78060e0b602414552e5712ead0c36]
+- The tools are designed to match how models search while minimizing context, aiming to reduce context rot and find exactly the context a coding agent needs. [@claim:clm_d4600d40b4ec87764d5a4e3d2bbc4a44181c480908cffe2605fadba37a617de5]
+- The stdio server runs via npx ref-tools-mcp@latest with a REF_API_KEY environment variable; the hosted HTTP endpoint at api.ref.tools/mcp also uses an API key. [@claim:clm_e0965db7b31f26265365f50a28c564600061b44d6920c277ed06128da701d620]
+<!-- rcw:end owner=source:src_063842ea336b5246a2c6960d583dc223 block=evidence -->
+
+## Researcher notes
+

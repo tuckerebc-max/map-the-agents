@@ -1,0 +1,708 @@
+{
+  "applied_operation_id": "op_86ea5abc6f9243168ea093ee895997e9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_85d2e6c5e459a9c4debfe69bc38d8c3634831d5484052752daa242f1f613ee2b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L35-L35"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L50-L50"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 39,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L37-L39"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_338da72c223a4525f34376004c7f4ad2a89ba99afa79cafa11ef6a69e0193c65",
+        "slc_44d7e24173f52f4ef1b4306d1cd73b9a4b4a8f3bb968677a724e17b232cedfbf",
+        "slc_5d6a876419149313c509697233710f40878730c3def576f9174ecb96a019c75e",
+        "slc_7d5e1f34a481842cf6527fcddc2f3de85aa8ed411e399db70f6edbcd329d68a7"
+      ],
+      "text": "The CLI exposes an `init` command that asks prompt questions and generates a project with a GraphQL Config setup, and can also generate a project from an existing `.graphqlrc.yml` file's instructions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e290a127ca32f945e7675e72cb8b4ecf24629815ed547f5e623775d81e1398fa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "f3be0d7ead1110adca0179a5c38d8d9d9af4406f",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "website/docs/codegen.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/codegen.md#L63-L63"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "f3be0d7ead1110adca0179a5c38d8d9d9af4406f",
+          "line_end": 74,
+          "line_start": 67,
+          "path": "website/docs/codegen.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/codegen.md#L67-L74"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "f3be0d7ead1110adca0179a5c38d8d9d9af4406f",
+          "line_end": 59,
+          "line_start": 57,
+          "path": "website/docs/codegen.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/codegen.md#L57-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2aa5e45ea45316f5b5ee151cb45e60bf20052f8fb773ecf773e033772db99a57",
+        "slc_91600dfe9f1a2de58b7134b33bd986944ea602ecfeb526fc88d584ba9620d1d8",
+        "slc_e511b35780e1cbf60da4d01e822b113b1fa4e70a83d5ec18b59a274582462b90"
+      ],
+      "text": "The `codegen` command runs GraphQL Code Generator with no positional arguments, supporting options `--config`/`-c`, `--watch`/`-w`, `--require`/`-r`, `--overwrite`/`-o`, `--silent`/`-s`, and `--project`/`-p`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_204e17db33abf1a41bc6f41792fa78d972d4a19ab3754738d97efe0ae8f3a037",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "b92d05eeea7ee12856796aeb13da09d7eccc415b",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "website/docs/coverage.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/coverage.md#L40-L42"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "b92d05eeea7ee12856796aeb13da09d7eccc415b",
+          "line_end": 60,
+          "line_start": 53,
+          "path": "website/docs/coverage.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/coverage.md#L53-L60"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "b92d05eeea7ee12856796aeb13da09d7eccc415b",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "website/docs/coverage.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/coverage.md#L46-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f24222d1f92eb230ff382f50bc05aab20cf1f964065d2010fb6329b4eac4827",
+        "slc_e5d9c2a28d19f2a5ad898d20f32d5367a6da55012c84b287c46e09f28125cd46",
+        "slc_fe7e23d738d86ae31eb6e85c1d2ac56ab77d559be4004c7260899b8566d1bb2b"
+      ],
+      "text": "The `coverage` command takes DOCUMENTS and SCHEMA arguments defaulting to the GraphQL Config file's `documents` and `schema` properties, with options including `--write`, `--deprecated`, `--token`, and `--header`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f15ce7e7b9ef3f951eeecaa96d46cdd6337ac19bba5df7aa3044993f49a4b65",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L91-L96"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "a0eb8d8d6003cf40cfcd9b5082b619ee0048ffb4",
+          "line_end": 91,
+          "line_start": 88,
+          "path": "docs/MIGRATION.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/docs/MIGRATION.md#L88-L91"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "a0eb8d8d6003cf40cfcd9b5082b619ee0048ffb4",
+          "line_end": 86,
+          "line_start": 82,
+          "path": "docs/MIGRATION.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/docs/MIGRATION.md#L82-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2788402eb4747088131b7354e0fb0f1acd14ecf4a1fe3c184183546a280b87cb",
+        "slc_8d8a43c1d36854d425714153e642446cf9e91c14a2597364fdcc617da90bb787",
+        "slc_cc4442d03d071755cc2ece2ca20d825d79d94a202d3ea4f3b3c8ee3639638638"
+      ],
+      "text": "The `diff` command compares the configured schema against another schema given on the command line as a URL, Git reference, or local file pointer, e.g. `graphql diff git:origin/master:schema.graphql`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_979f780a01d6ddc74c5dbb28b6bef53bc0897f685bdd1211cd6bc80c1e430529",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fba2c0be6498554837e804884654e626e475ea84cff54e1e37891f40196d01b4"
+      ],
+      "text": "Each GraphQL CLI command is a separate npm package installed under the `@graphql-cli/[COMMAND-NAME]` naming scheme, so users can add their own plugins or maintained ones."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_072e51fbae25e526773295d0a2ff9b7074f1170dbbc16e4b5e953a7fe92f7a4b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 103,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L100-L103"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L58-L58"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 85,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L60-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6097a851d145f0d8e8c6c84bbd28173466aa6319118b1c3fa4aa0810c3e5a3b2",
+        "slc_6af95cbcc2c2e8d8083f5325e916751e0e694895e229327545773c1f036d3f1b",
+        "slc_9ac90f81c0852de2791f7bae62eaca324ee63124244203379e36656e046c090a"
+      ],
+      "text": "Plugins are configured through the `extensions` field of the project's GraphQL Config file (`.graphqlrc.yml`), as shown for codegen and diff (`baseSchema`) settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_621c23f0fed67734c41c074db6bcb4c673b05de82d83594ffb333eeb39c5ec51",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "a0eb8d8d6003cf40cfcd9b5082b619ee0048ffb4",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "docs/MIGRATION.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/docs/MIGRATION.md#L31-L31"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L33-L33"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "a0eb8d8d6003cf40cfcd9b5082b619ee0048ffb4",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "docs/MIGRATION.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/docs/MIGRATION.md#L27-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_220e65e7c1ad1540f8c5296e48e9802099e105ac96bdf51788d09d7c9ba94d53",
+        "slc_521d9c38676a45009eecc5529dfadc386059f921cac70f18ee4ca9d479f32660",
+        "slc_a08e39b3c12e387146efe238c32cd15b15ac0d467e3b0b3de9b45361ab65345a"
+      ],
+      "text": "The CLI is built around GraphQL Config: the config file tells the tools where GraphQL documents and operations live, and the `schema` field accepts URL endpoints, Git URLs, or local file globs and is used by all commands and plugins."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28e8e225fdd459e68eb3490e69de9e28102b9bcb45ea232186142099fec1bc18",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L91-L96"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L105-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2788402eb4747088131b7354e0fb0f1acd14ecf4a1fe3c184183546a280b87cb",
+        "slc_e89df69dacc94be746e392c6333f30d9d0df636a96ebb9f295ca2769847ec8ec"
+      ],
+      "text": "Documented commands include init, codegen (GraphQL Code Generator), generate (Graphback), coverage and diff (GraphQL Inspector), similar and validate (GraphQL Inspector), and serve, which serves a GraphQL server with an in-memory database."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cdae27720466d25922ac09f521107c3a966a1a2363c3147211d1a7549e7548fa",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "website/docs/custom-commands.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md#L11-L11"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "website/docs/custom-commands.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07935a26ade00b21ff7aa3b5c51b619b92185eacd62a0d65c650456c132d2ce9",
+        "slc_8a7bf0424c5217aac42537c152d360ecd871f6d374c2f6e4b49b4b6b06214b88"
+      ],
+      "text": "The CLI's command management is implemented with Yargs, and plugins/extensions are NodeJS modules written in JavaScript or TypeScript, loaded by name from `node_modules`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_32f10a0f778c4da145c4ba86b8cab51e3ca03ec2f760442feda6804396366ab5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "website/docs/custom-commands.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md#L110-L110"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+          "line_end": 48,
+          "line_start": 39,
+          "path": "website/docs/custom-commands.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md#L39-L48"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "website/docs/custom-commands.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md#L27-L27"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+          "line_end": 98,
+          "line_start": 77,
+          "path": "website/docs/custom-commands.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md#L77-L98"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+          "line_end": 125,
+          "line_start": 115,
+          "path": "website/docs/custom-commands.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md#L115-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_263f0413e9ea96bea232b8ca4b410139922770482bd12d38fc7e566f6a2df538",
+        "slc_82640b624f207970d573c2a437454345a1c5b8f7dcc13a6925333de11a45f616",
+        "slc_ba0e59093da9527031542c93b4d2ae9d4d357f387a09dd568dd1e27cf0571764",
+        "slc_c3798b79cb9b3e72a1ed1bdb293f75ef94d41bea539c6b16db69befe34991854",
+        "slc_fce7a1efd49fdb3168f970fca2dca7f0b1469e33b53cc28ae638417a29e5831d"
+      ],
+      "text": "Plugin authors use the `defineCommand` utility from `@graphql-cli/common`, returning an object with `command` and `handler` (and optionally a Yargs `builder` for options); errors thrown in a handler report failure back to the CLI host."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44353a70114b0bb994101b14d91c3b34c5f316e383e786a86cde357ee6d7fb70",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 9,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L8-L9"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L121-L121"
+        },
+        {
+          "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+          "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "urigo/graphql-cli",
+          "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md#L113-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1349e4149bc5224f62f20a114fc75866753a173a3ded35cfbbb0fc994e72b1b3",
+        "slc_5d486a147db780c3c8fb1d8100349ef8bcdf1cc39b653b3aa90507f92ed48fb6",
+        "slc_68e3bc2b4c211937a9dc1de3ac473b41f3e2650f514c833df926785ae794468d"
+      ],
+      "text": "Repository development practice: contributors are directed to read the CONTRIBUTING.md guidelines, and the README invites feedback and plugin contributions via the project's Discord channel."
+    }
+  ],
+  "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 121,
+        "path": "README.md",
+        "size": 6933
+      },
+      {
+        "lines": 119,
+        "path": "docs/CUSTOM_EXTENSION.md",
+        "size": 3782
+      },
+      {
+        "lines": 173,
+        "path": "docs/MIGRATION.md",
+        "size": 7030
+      },
+      {
+        "lines": 74,
+        "path": "website/docs/codegen.md",
+        "size": 1891
+      },
+      {
+        "lines": 60,
+        "path": "website/docs/coverage.md",
+        "size": 1493
+      },
+      {
+        "lines": 125,
+        "path": "website/docs/custom-commands.md",
+        "size": 3852
+      }
+    ],
+    "omitted": [
+      {
+        "path": "website/docs/diff.md",
+        "reason": "file-budget",
+        "size": 1241
+      },
+      {
+        "path": "website/docs/discover.md",
+        "reason": "file-budget",
+        "size": 257
+      },
+      {
+        "path": "website/docs/generate.md",
+        "reason": "file-budget",
+        "size": 1286
+      },
+      {
+        "path": "website/docs/init.md",
+        "reason": "file-budget",
+        "size": 1188
+      },
+      {
+        "path": "website/docs/introduction.md",
+        "reason": "file-budget",
+        "size": 3353
+      },
+      {
+        "path": "website/docs/introspect.md",
+        "reason": "file-budget",
+        "size": 1174
+      },
+      {
+        "path": "website/docs/migration.md",
+        "reason": "file-budget",
+        "size": 7111
+      },
+      {
+        "path": "website/docs/serve.md",
+        "reason": "file-budget",
+        "size": 3819
+      },
+      {
+        "path": "website/docs/similar.md",
+        "reason": "file-budget",
+        "size": 1279
+      },
+      {
+        "path": "website/docs/validate.md",
+        "reason": "file-budget",
+        "size": 1723
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 353
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 152,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 17,
+      "complete": false,
+      "omitted": 11,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_aa80207738175394ad98d307500fbf85",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/urigo/graphql-cli/aa709566b74a3ee177c54f7dca909c1c4f75a598/a1fae112f055a480/manifest.json",
+  "package_id": "pkg_6c127eb5516354a71dc855ef0015aadacff972d429a7debb925e485cf7e111ac",
+  "repo": "urigo/graphql-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "25b5f59a5b0b0184f016a4ed38c9ec12fd636b62d3a4d35b3a160a79c0f951a9",
+  "snapshot_id": "a1fae112f055a480",
+  "sources": [
+    {
+      "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+      "git_sha": "9fe5c68b79bd9e33e2feb18d7be974153e0d138b",
+      "lines": 121,
+      "path": "README.md",
+      "repository": "urigo/graphql-cli",
+      "sha256": "eac500c163f83076bc29789d7758e94f56cde3dffb1321ac8ce88149f5515c1e",
+      "source_id": "src_78a5f297319957d4a23a3a6411b76b72",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/README.md"
+    },
+    {
+      "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+      "git_sha": "ab13c613c12d10d55c14a8b5cba18bd1e9e480b4",
+      "lines": 119,
+      "path": "docs/CUSTOM_EXTENSION.md",
+      "repository": "urigo/graphql-cli",
+      "sha256": "fbcfa7d9aaadb89a1831e61a5d6593a556709ebd9e50df3c0a2b3fce92377185",
+      "source_id": "src_e3ca0bc4e00051b49fbaaa6a0d13e362",
+      "stored": "custom_extension.md-f56919c13668.md",
+      "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/docs/CUSTOM_EXTENSION.md"
+    },
+    {
+      "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+      "git_sha": "a0eb8d8d6003cf40cfcd9b5082b619ee0048ffb4",
+      "lines": 173,
+      "path": "docs/MIGRATION.md",
+      "repository": "urigo/graphql-cli",
+      "sha256": "a8e0ea2c60ac8a340e3991c8394b0bb30c521b2179b397d8710322bcaed20a0d",
+      "source_id": "src_bf8290ae18535524bfde9ce592462495",
+      "stored": "migration.md-9069ee5e7690.md",
+      "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/docs/MIGRATION.md"
+    },
+    {
+      "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+      "git_sha": "f3be0d7ead1110adca0179a5c38d8d9d9af4406f",
+      "lines": 74,
+      "path": "website/docs/codegen.md",
+      "repository": "urigo/graphql-cli",
+      "sha256": "49e42dc13dc612d9cc1d2bdb18e0c90cfcf9dc62399e16b673214894d4fbc7bb",
+      "source_id": "src_35979bc0c7115856a164557fc8209d00",
+      "stored": "codegen.md-6e2ace1c7093.md",
+      "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/codegen.md"
+    },
+    {
+      "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+      "git_sha": "b92d05eeea7ee12856796aeb13da09d7eccc415b",
+      "lines": 60,
+      "path": "website/docs/coverage.md",
+      "repository": "urigo/graphql-cli",
+      "sha256": "24e34b8bff1cab6b30ecd26255914e305727f0615e02136d17bb29e2b4f6995e",
+      "source_id": "src_364046ce45b15f8a9a93bf7902f00e2d",
+      "stored": "coverage.md-96e3385ed582.md",
+      "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/coverage.md"
+    },
+    {
+      "commit": "aa709566b74a3ee177c54f7dca909c1c4f75a598",
+      "git_sha": "60fa21cb3e272556b1e91fe1fa4a6f0acdc032dc",
+      "lines": 125,
+      "path": "website/docs/custom-commands.md",
+      "repository": "urigo/graphql-cli",
+      "sha256": "60c88f45bf713b09e5a461247c0e1e14ab0c8dd8d5e482cc3f51668335e8787e",
+      "source_id": "src_8b068587ef5b52348e6bfab27deb01b4",
+      "stored": "custom-commands.md-1eb51498b51b.md",
+      "url": "https://github.com/Urigo/graphql-cli/blob/aa709566b74a3ee177c54f7dca909c1c4f75a598/website/docs/custom-commands.md"
+    }
+  ],
+  "summary": "Selected evidence records: The CLI exposes an `init` command that asks prompt questions and generates a project with a GraphQL Config setup, and can also generate a project from an existing `.graphqlrc.yml` file's instructions. The `codegen` command runs GraphQL Code Generator with no positional arguments, supporting options `--config`/`-c`, `--watch`/`-w`, `--require`/`-r`, `--overwrite`/`-o`, `--silent`/`-s`, and `--project`/`-p`.",
+  "superseded_claim_ids": []
+}

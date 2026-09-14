@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_15454c73785ef57c3b1c4629fa8ae01d9134bbb1d58128a9e52101200039614c
+- clm_301c251ee30bb2e6d9a8bbb5131b3aee2b8812ab9b4e5e513b3c97658a3bb9f2
+- clm_3b9f1b8bab828c88490c7363aeb29eaeaf7105504dc0d697ee89b64664ac4e76
+- clm_4e856b55ad8676a1ee82770d0d2d422ab5bbccf9ff41fb705b29d53102c37903
+- clm_5aae5dbfae7e8a4b86700d84d8d4ad7234f1c196fb26a8c1127643784d251657
+- clm_5f5319eb0bf52e661b73fa4e74541a0b2322cf25f0937b2773e333256fc13011
+- clm_9c200ff1d124a1fbb2cc9780e8a34fc34505fb26b8a215ca1955d968066ddc1e
+- clm_b28146f8d94733d0b082dba93642eedef168f04fd46152f622bf74709cd60486
+- clm_b81839f5d62f46b84e40c9fa26510844bfd46bf38313300ae75413b6d29e07d9
+- clm_b9dce0875e4c48132add211b4b48f2df1a66780671df0c199513aea3ce910484
+- clm_bd25f9ec6611bc75a0ebed1641909eae0aaaa5383df405b9f73c62cb924cb4e3
+maturity: draft
+page_id: pg_ee4854fd4bbd5de38ca7030eb9b45ec2
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: packtpublishing/30-agents-every-ai-engineer-must-build
+updated_at: '2026-09-14T04:15:30Z'
+---
+
+# packtpublishing/30-agents-every-ai-engineer-must-build
+
+<!-- rcw:begin owner=entity:ent_4eb37d841ac85ac492ef7a6b33f044a5 block=evidence -->
+- packtpublishing/30-agents-every-ai-engineer-must-build is mentioned in this evidence. [@claim:clm_15454c73785ef57c3b1c4629fa8ae01d9134bbb1d58128a9e52101200039614c] [@claim:clm_301c251ee30bb2e6d9a8bbb5131b3aee2b8812ab9b4e5e513b3c97658a3bb9f2] [@claim:clm_3b9f1b8bab828c88490c7363aeb29eaeaf7105504dc0d697ee89b64664ac4e76] [@claim:clm_4e856b55ad8676a1ee82770d0d2d422ab5bbccf9ff41fb705b29d53102c37903] [@claim:clm_5aae5dbfae7e8a4b86700d84d8d4ad7234f1c196fb26a8c1127643784d251657] [@claim:clm_5f5319eb0bf52e661b73fa4e74541a0b2322cf25f0937b2773e333256fc13011] [@claim:clm_9c200ff1d124a1fbb2cc9780e8a34fc34505fb26b8a215ca1955d968066ddc1e] [@claim:clm_b28146f8d94733d0b082dba93642eedef168f04fd46152f622bf74709cd60486] [@claim:clm_b81839f5d62f46b84e40c9fa26510844bfd46bf38313300ae75413b6d29e07d9] [@claim:clm_b9dce0875e4c48132add211b4b48f2df1a66780671df0c199513aea3ce910484] [@claim:clm_bd25f9ec6611bc75a0ebed1641909eae0aaaa5383df405b9f73c62cb924cb4e3]
+<!-- rcw:end owner=entity:ent_4eb37d841ac85ac492ef7a6b33f044a5 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,705 @@
+{
+  "applied_operation_id": "op_16bf1e3e6c5b430986eccdcc1bef5cc8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_88fba53b26ee6c87ae903460f0a6d8330d2367ef590cb063ef64808b92d9f1bd",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L9-L15"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L3-L3"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_897ed27ea9e4134d898e8f2c425e32a1fe79301a8ca39891ce244049e7018b9e",
+        "slc_c4ac5d70facff075e409617a79059c7c6202d95340629587ed1a1450c874befd",
+        "slc_c62ffd1401104757a34249cb00916c7de00445edb0b4db1932d2f7a3365c9383"
+      ],
+      "text": "indxr maintains an incremental binary cache at .indxr-cache/cache.bin that avoids re-parsing unchanged files, making subsequent runs faster."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df73c6644b6cb9df8ea5125c282f00c57a6c8ce52cc08e921a746a2a7738067b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L9-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_897ed27ea9e4134d898e8f2c425e32a1fe79301a8ca39891ce244049e7018b9e"
+      ],
+      "text": "Cache validation is two-tier: a quick mtime+size check, with an xxh3 content-hash fallback for cases like touch where metadata changed but content did not."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a9e45fed2dc67da8d4191779770165095fb70c14b172609f7da6436b8f335ca7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 34,
+          "line_start": 31,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L31-L34"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L46-L48"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c855ffb9aba5e29ac3d5f46be86a8c5f7d18d00c76af9ae69e9a652dd6be6c0",
+        "slc_6aa9782243731d2a8e50c0b72152cd95b83ceafa1d2385275b157a724c9f319c",
+        "slc_8afae81616b8208421ebc7af84ae0b4d6ba82644f924f164b0dbac6530797149"
+      ],
+      "text": "The CLI exposes cache options: --cache-dir for a custom location and --no-cache, which creates a no-op cache that never hits, useful for benchmarking or guaranteed fresh parses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2df115fd8555e7e06e2a2952be9bc865d465a030b49c161650f29564e752abca",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L56-L60"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a54ebe50d4fe46bfcd735892dc7d678942984f8e4dbcf8b3e084c897f20d6f4",
+        "slc_0d48576e612c02a36e2fd3ecc0778a2fb35a5fbc4f7e49be41e6325d30d3458a"
+      ],
+      "text": "The cache is serialized with bincode, and each entry stores relative file path, mtime, size, an xxh3_64 content hash, and the parsed FileIndex."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0945cc6eeb9b42d020570081bdda5f29473d269ed19a6019a09fa8403a23166a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43d5787500781a64f02e84bd468da0cb6a48184925f5ffbac9891c3e45b7f1da"
+      ],
+      "text": "The cache file carries a version marker; on a version mismatch after an upgrade the cache is discarded and rebuilt from scratch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4df344e5bb4e82a9936f620cc4bbc9c086415d3a77b444169e175c21854d7eb",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "af44ea012b624d102f4f1868b005ca62a3784fec",
+          "line_end": 158,
+          "line_start": 143,
+          "path": "INDEX.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/INDEX.md#L143-L158"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "af44ea012b624d102f4f1868b005ca62a3784fec",
+          "line_end": 163,
+          "line_start": 160,
+          "path": "INDEX.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/INDEX.md#L160-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5741d86b8ff3f03bfb7ee1093b62c339cc4810034a9b4f7f1e08b98212b22a7a",
+        "slc_c3990eb0bf63218d9644116750532e8ac77df3952372d730776dbee7c2a2ebf5"
+      ],
+      "text": "The repo includes an accuracy benchmark (accuracy_bench.py, accuracy_questions.json) measuring LLM answer quality with full-file context versus indxr structural context, scoring answers and writing JSON results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_297f237a7776543742cc3e0a64151bb81573a75b51674ffec99bd6fd851c53df",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 70,
+          "line_start": 66,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L66-L70"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b2706a19008137c4ae8e67c2316ebb48211444e6c5cc49bb1e3ff14fdc02aad4",
+        "slc_d8ff8101a5df07dab255abec05514e4103047955a29bca0481045e8237271e0a"
+      ],
+      "text": "Documented cache performance numbers show warm runs roughly 3.3x-7.3x faster than cold runs across three codebase sizes, with speedup growing with codebase size."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f3c19690890f47eff21452a5e31c924ba8c72201bfe21c9c474f283df8ae326",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L47-L47"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L11-L11"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L7-L9"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L3-L3"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L28-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0572e49800c57c85da4416b170988a18a1c3e22933cd1efc8225f723049288eb",
+        "slc_136e9a99fb86135dd3e610b48711239bfc680fc69178affc657e2701048ee00e",
+        "slc_319f27ef8c84f5f24221cbe71fca72631bc8c54513eef7fbbefbb44656501e7c",
+        "slc_a07926bbfad0ccc2b201c8f46b9cbd66f6795ea0a81aeea3f8363e12b182cb03",
+        "slc_df21d2cf4289795afa250a55a0db84c35975381b73f19a9bee2eb2f19639b217"
+      ],
+      "text": "indxr --graph generates dependency graphs in DOT, Mermaid, or JSON, with --graph-level choosing file or symbol granularity and --graph-depth limiting hops."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d2f28b52e659da80fcf9714be090d7a4ed3c65e6a50f175044c7fc7d6f142a7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 128,
+          "line_start": 121,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L121-L128"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L130-L130"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "docs/dep-graph.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49000431843460fa546540d41c9b022fd7ce0cb065146a3618c2858f72823d4c",
+        "slc_660f92695b302cad80020b1c0a0b340cb205e83a4f50cd312c074ed5271efca6",
+        "slc_fbfe752a7dbec997f4c764dd3b3cc7582595bd5712730f5976d5e7b38338839a"
+      ],
+      "text": "The MCP tool get_dependency_graph exposes graph generation to live agent queries with parameters path, level, format, and depth."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3023e70f7f07e0cfd78df2e957b6459d6ea2a6b88e1736ed42593fb095bc2b75",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/filtering.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md#L23-L23"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "docs/filtering.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md#L9-L13"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/filtering.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md#L32-L32"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/filtering.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md#L15-L15"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "docs/filtering.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md#L62-L62"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "docs/filtering.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md#L79-L81"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+          "line_end": 56,
+          "line_start": 38,
+          "path": "docs/filtering.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md#L38-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dce232e1c80f2a22451a4ac0b19439eb92adaf6499f3a7f0baba273f8b11be7",
+        "slc_23a9383678b5fd20f63341fb40bdc8bac60e63766c74bf283453c35db9513ea7",
+        "slc_283ffe1ec2557a5db1ae6014d301e435e3d1c2bd92fbc3a659b94b3f28365566",
+        "slc_3b7904a62c5b5a9094d42358eb209e03d14f23fd7128fd371028674f1f2ca2a5",
+        "slc_4525df386764dcd4da26b365c8bcf60d85e893d1efd3ca3c9090f0d3ed2f00fa",
+        "slc_c6e20887ba0cd2a81c656f077607cc8cbd8f625ff8a10c13832f2e343d2bcce9",
+        "slc_f1ab0977bd6c9ce49bfe5f42e34e58d825e05c6265504872b6b1db5ef76ed8ea"
+      ],
+      "text": "Filtering options include --filter-path (prefix match on relative paths), -l for case-insensitive language selection, --kind for declaration kind, --symbol for case-insensitive substring search, and --public-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1514c1576f4a8644b5c8db9956b2a73d1a011d14cc1906b0ac4c36297c33b9a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "docs/caching.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17f00b33d49f69eb64edbdfd274134c2a8e162e6ff0659e7fb2f79522f77df37"
+      ],
+      "text": "The MCP server (indxr serve) indexes the project once at startup and serves from an in-memory index, with the on-disk cache accelerating that startup parse."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec39bf530a20abbe49557c6d9e2dcdc7a1d2c2c849754a3c68460f39e6b1b6df",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "af44ea012b624d102f4f1868b005ca62a3784fec",
+          "line_end": 100,
+          "line_start": 8,
+          "path": "INDEX.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/INDEX.md#L8-L100"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "af44ea012b624d102f4f1868b005ca62a3784fec",
+          "line_end": 662,
+          "line_start": 656,
+          "path": "INDEX.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/INDEX.md#L656-L662"
+        },
+        {
+          "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+          "git_sha": "af44ea012b624d102f4f1868b005ca62a3784fec",
+          "line_end": 689,
+          "line_start": 679,
+          "path": "INDEX.md",
+          "repository": "bahdotsh/indxr",
+          "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/INDEX.md#L679-L689"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57f7091787fe6ed3fabf9003063ac8e92aecc453b3d67dd0135e98f3171b0626",
+        "slc_da0fb322c83553dae86f6bea7b22a3d7160703bdf388b485469d54d6a1f4590f",
+        "slc_ff3f172d2e7ed8451f452f17a8d9b2a1029abac76ab19d19b093f4ac6b492398"
+      ],
+      "text": "The source tree includes tree-sitter query-based extractors for C, C++, Go, Java, JavaScript, Python, Rust, and TypeScript, plus a regex parser and a ParserRegistry."
+    }
+  ],
+  "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 334,
+        "path": "README.md",
+        "size": 14923
+      },
+      {
+        "lines": 3323,
+        "path": "INDEX.md",
+        "size": 94746
+      },
+      {
+        "lines": 87,
+        "path": "docs/caching.md",
+        "size": 2615
+      },
+      {
+        "lines": 140,
+        "path": "docs/dep-graph.md",
+        "size": 3014
+      },
+      {
+        "lines": 171,
+        "path": "docs/filtering.md",
+        "size": 3561
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/agent-integration.md",
+        "reason": "byte-budget",
+        "size": 21579
+      },
+      {
+        "path": "docs/cli-reference.md",
+        "reason": "byte-budget",
+        "size": 16224
+      },
+      {
+        "path": "docs/git-diffing.md",
+        "reason": "byte-budget",
+        "size": 4237
+      },
+      {
+        "path": "docs/languages.md",
+        "reason": "byte-budget",
+        "size": 7001
+      },
+      {
+        "path": "docs/mcp-server.md",
+        "reason": "byte-budget",
+        "size": 34001
+      },
+      {
+        "path": "docs/output-formats.md",
+        "reason": "byte-budget",
+        "size": 4884
+      },
+      {
+        "path": "docs/token-budget.md",
+        "reason": "byte-budget",
+        "size": 3391
+      },
+      {
+        "path": "docs/wiki.md",
+        "reason": "byte-budget",
+        "size": 8824
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "byte-budget",
+        "size": 17074
+      }
+    ],
+    "omitted_count": 9,
+    "omitted_slices": 833,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 104,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 14,
+      "complete": false,
+      "omitted": 9,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_1ea06e0d87995700bea77c36d3ca3abb",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 2,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/bahdotsh/indxr/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/0ad631914a9cdd40/manifest.json",
+  "package_id": "pkg_27d08ddad51156f341f117a8ee90a4d3ded5880a340de852af0d3977361a8e68",
+  "repo": "bahdotsh/indxr",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "76ee4703763f16ae9b6f25cf785db831863a8db9773940607f54e0beae8feaed",
+  "snapshot_id": "0ad631914a9cdd40",
+  "sources": [
+    {
+      "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+      "git_sha": "af44ea012b624d102f4f1868b005ca62a3784fec",
+      "lines": 3323,
+      "path": "INDEX.md",
+      "repository": "bahdotsh/indxr",
+      "sha256": "0e0ed98ef2246c2e8b9f15ba5ff0e313b48e74f1902d6a078621669f62fe8ed8",
+      "source_id": "src_d7bbf1bb30f1503c80909e71363ae5dd",
+      "stored": "index.md-869681e91b57.md",
+      "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/INDEX.md"
+    },
+    {
+      "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+      "git_sha": "49e2804bf1f04c0df170e0b69f84b4161794684c",
+      "lines": 334,
+      "path": "README.md",
+      "repository": "bahdotsh/indxr",
+      "sha256": "f080733dd3eb8f7470d5b7c9a77dad5ff6ebe9202e4cfae7a6cb5eb80b6cb6b1",
+      "source_id": "src_e2392d549057544ca30cfd8af8be5fdb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/README.md"
+    },
+    {
+      "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+      "git_sha": "ca506a2d3e27321d944e88078a658d69a8602039",
+      "lines": 87,
+      "path": "docs/caching.md",
+      "repository": "bahdotsh/indxr",
+      "sha256": "58fdcc3cdf6e6d495b202ca6c984f8b24ebca62ca186cf2f348cdf7e498f01ab",
+      "source_id": "src_5b15d93ea61a50cdabc964a46f919ed5",
+      "stored": "caching.md-68a93cfd67d0.md",
+      "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/caching.md"
+    },
+    {
+      "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+      "git_sha": "02aea31bcc4d17685ee95ca9bf096ff8674918ec",
+      "lines": 140,
+      "path": "docs/dep-graph.md",
+      "repository": "bahdotsh/indxr",
+      "sha256": "edd2addd16175205bbef37cef129172860b4ff8d9af75833d03d4a4a35be3ab1",
+      "source_id": "src_665d5522244054fb9cb229b1cc2ca40c",
+      "stored": "dep-graph.md-fd80540abb90.md",
+      "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/dep-graph.md"
+    },
+    {
+      "commit": "fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc",
+      "git_sha": "884ec2fe47a391ca2add9ac1d4d42a9f8798a847",
+      "lines": 171,
+      "path": "docs/filtering.md",
+      "repository": "bahdotsh/indxr",
+      "sha256": "7bc22b7f51621b73d996733ea31657db3f65c5356bd262fbcc9caa057c64c24a",
+      "source_id": "src_c20cc5666d6a502c8e26c2e38fed08a3",
+      "stored": "filtering.md-20344f05dc54.md",
+      "url": "https://github.com/bahdotsh/indxr/blob/fbcbe9451605c4f2f8c9ee320b5cf80d69ce05bc/docs/filtering.md"
+    }
+  ],
+  "summary": "Evidence documents indxr, a Rust codebase-indexing CLI with an incremental binary cache, dependency-graph generation, filtering, an MCP server, and a benchmark harness comparing LLM answer quality with indxr context versus full-file context. Evidence coverage: 159 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

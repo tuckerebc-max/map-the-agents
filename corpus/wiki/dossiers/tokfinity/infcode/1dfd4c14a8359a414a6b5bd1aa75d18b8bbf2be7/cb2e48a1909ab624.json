@@ -1,0 +1,593 @@
+{
+  "applied_operation_id": "op_306572f1a828442db9cd5cc9c465d93f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_fb6caf8bfa167f383a746f378b714a3736ac956fb5f44764a5533ba02123d692",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L6-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_71fec820e0a3fe32c6198a23e594cc80873dc73b2969c5368d9615964b330164"
+      ],
+      "text": "InfCode is described as an adversarial multi-agent code agent system that uses LLMs to automatically analyze and fix repository issues, developed by Tokfinity's Code Research team and Beihang University."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7952de424bdccaa9757528a2c39691c57e1fdf44db4aefb5cd1350c785ff456b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dddb022ecff8df0fd22278327003b4e609ebc21a7538e7a3c4679340d00e31b4"
+      ],
+      "text": "The system uses a dual-agent adversarial refinement framework that iteratively improves both test patches and code patches, aiming to produce fixes verified under strengthened test suites."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3544f193d90f5b2941cdd929e21f436acdb86c45b50b5769f2813f8eb7efe4f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2827fd89db7e8bf793c073cc18f52dee8edb7b5100de557975486197fee0fbbd"
+      ],
+      "text": "InfCode adopts a generate-select architecture: Patch Generation produces candidate patches and Patch Selection picks the optimal one."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd762139d56f0054f80cc703d8b9ef917667b0b5d9c823951b496d87dec5898a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f8e0c7c2eefa0796380eda765a08f8bb5636c80b2130302d6731bc3cbb0a035a"
+      ],
+      "text": "The Patch Generator registers multiple generator groups, each in a separate container generating and repairing candidate patches in parallel, running up to 5 attempts and gathering all produced patches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ca9a74339684ca7084e23faf0f2c19201ce74cac3f66e6acb7a1fcfa36cb04d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_723c57118c16b71691adb483a3a267631b64c79d423e8322469725ba48575ec7"
+      ],
+      "text": "Inside the Generator, a Test Patch Generator strengthens tests to expose faults while a Code Patch Generator refines patches to satisfy the enhanced tests, in an adversarial loop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c01104390a38d7a52a30d586ad8825f364021fad2769f4141ed439c20c96294",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L32-L32"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L34-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72db6f05d9c735de37b79056b6c77e9a111ba0403d0fc213256f61bc4d6f8f2c",
+        "slc_ded871867bc415bda4c64a7e38cf57e5555039df93d31351057b2627d9b777a0"
+      ],
+      "text": "Auxiliary modules include an Image Builder (per-example container images stored locally and reused), a Tool Executor (runs commands in containers and returns outputs), and an LLM API Manager."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e63cb73bd39e0753070f26cf188b3e805abc93c03a9e30544fc2e32f9d3281ff",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L34-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ded871867bc415bda4c64a7e38cf57e5555039df93d31351057b2627d9b777a0"
+      ],
+      "text": "The LLM API Manager invokes models via the completion endpoint and supports OpenAI, OpenRouter, DeepSeek clients, and self-hosted LLM instances."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aec938a77df1928f5bb99a69206768dc87853469b26ed6afef15d3e09e595909",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L27-L27"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 48,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L44-L48"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 59,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L57-L59"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L62-L64"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L50-L52"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cd8b0d8d6c08d65bc5491467630db237955e927fb23647585392e5dc6014d3a",
+        "slc_33502d94fab3cde6986e9f027b2e3f0b925e67afcffab0620a33cc71f3bf35f3",
+        "slc_5a5f4760ff225f7730615d167518972604a70877c4d69fe73e79681ab9a90fce",
+        "slc_bd10c0fae2c6fce5b2212b40385a4f93a53ea696dd16cde8456558ec5a30464f",
+        "slc_dfa097f71046fa231f0c08a29e0a3992fc7d8e134af1085a2fcc48f16c989882",
+        "slc_f8e0c7c2eefa0796380eda765a08f8bb5636c80b2130302d6731bc3cbb0a035a"
+      ],
+      "text": "Agents interact with tools including File Editor (view/create/str_replace/insert), File Searcher, Bash Executor, and Result Submitter, all operating within containerized environments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f08e2eb308c1ce923702c5c449c2f9455d107f26d0a41c54db007862c128b6a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L62-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd10c0fae2c6fce5b2212b40385a4f93a53ea696dd16cde8456558ec5a30464f"
+      ],
+      "text": "The Result Submitter tool runs git diff inside the container to obtain and return the generated patch content after the LLM finishes patch generation and testing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd4c4cb8b488ebfb9b85a4cf0a29023e340da6238da6bf33a37545cc49510146",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99c016629568e52d270c97670a328a17313e1f562d27438c1bd4d3d106073c30"
+      ],
+      "text": "The File Searcher tool is implemented on top of ripgrep, chosen for speed over traditional grep and fuzzy-matching support."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7635ee7dfab8b20122b5594403f9ee5467e48055bf0638cfe69f984a7b98ea8a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 92,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L90-L92"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 102,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L96-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e1be8739003b2b732887bf768ee8a6e93631a3ebb1dd886fdd955b4eb4bd7f7",
+        "slc_8e0458204972cb7d11807f331df98bbe9cd7569fd598be1bd3b2f60d00827e26"
+      ],
+      "text": "A batch CLI (_batch_run.py) accepts flags for config file, run name, issue list, concurrency (default 20), output directory cleaning, and output directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68005e7d743b28f600a450b55d3e52d11d23f90e9887c1e525323b5d20690e08",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 118,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L113-L118"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L107-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e7f46f56e3a0597c44624b29e00b04d3c95b043af6f7feaf3a48da89fcc9e839",
+        "slc_f4e4bbf842e3333ae7627eba3f4ef54a4638e23fbebe19b0bcee1509314351f5"
+      ],
+      "text": "An eval.sh script verifies generated patches using the official SWE-bench evaluation tool, with multi-process parallel evaluation (default 20 workers) and results including pass rates and failure reasons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef6ccd1b88ec1c77f1d64c49abe2b8ed49747036ae78e3e4e466f868ed2b0a34",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f1d4e4fad19cbc5ba0ca2734ff7ce0d7a86f8ac94ed1a4e953d53eeedee8b263"
+      ],
+      "text": "The README reports a 79.4% solution rate on SWE-Bench Verified, claimed as latest SOTA performance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db0689e4e1fc9fdfb930d96977d0c4203bde1e3d566e80f497b11a4d0db06956",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L72-L72"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 83,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L80-L83"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 135,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L132-L135"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 77,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L76-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62050bf54c12451e0c6c94a3f2529cd6fac79de564a37d907f0f3ded3df9fdc0",
+        "slc_8537d108239085d636981465f098ee0d639f7ab49f79ad456a26aef414c068da",
+        "slc_a36cbe1dc0d9d985116f4359719092e1a87a83051c5c3523da43376bc68fee2e",
+        "slc_e3a3839fcb09acc3fdca2cf035590e3590f53226df6a2d43eccac78571a7284e"
+      ],
+      "text": "Repository development practice: setup instructions direct users to create a .env file with API keys (e.g. OPENROUTER_API_KEY), install pip dependencies from requirements.txt, and ensure Docker is installed and running."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5cf254e6e1ed8c90a8b86f0f9e196079f6f64f54c43385de4e18c8055eb6fae0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 127,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L123-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf87a2ca86b183d84a235ffbd9ba0d616f4f1caa774052cbf3f73a9dfdeba872"
+      ],
+      "text": "Repository development practice: configuration lives in config/config.yaml with sections for providers, runner (concurrency, iterations), builder (Docker image build), and log settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae595767ed99c65b1312ade293bba5579142d045a5280cd2af734742293dd025",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 166,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L166-L166"
+        },
+        {
+          "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+          "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "tokfinity/infcode",
+          "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md#L163-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9088baf91a72e82e7b56193daf5cfbf8bfe9bf28e8ed11bc5190c7a8b59c5ba4",
+        "slc_95f0e1071f81678d3311b690d770fc6bb8d3bafbc58644e6bc98cdb75cb4202b"
+      ],
+      "text": "The project appears MIT-licensed and acknowledges anthropic-quickstart and bytedance's trae-agent as references for tool building."
+    }
+  ],
+  "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 168,
+        "path": "README.md",
+        "size": 7452
+      },
+      {
+        "lines": 41,
+        "path": "requirements.txt",
+        "size": 584
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 61,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_b08734f8a6df50c19c42f15c9faae6d1",
+  "facets": {
+    "components": 3,
+    "dependencies": 3,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tokfinity/infcode/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/cb2e48a1909ab624/manifest.json",
+  "package_id": "pkg_f058e74a1fdcf51fdc2945588be50e3f05f5acaf5cfc4b83d5ce13de7c99be34",
+  "repo": "tokfinity/infcode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7d01a445e1d196302033e4dc2fd381ec52e9e141889464750f7b6aced2b84343",
+  "snapshot_id": "cb2e48a1909ab624",
+  "sources": [
+    {
+      "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+      "git_sha": "fcd1d2cf58df82607a0f445c675cb582581d5972",
+      "lines": 168,
+      "path": "README.md",
+      "repository": "tokfinity/infcode",
+      "sha256": "bf87227c2a6434f8f5dc602c6ced90628b5e8e68ba2cac5882bce88550cc2209",
+      "source_id": "src_01d5a0a2df025f53aa60aaed62f93ecb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/README.md"
+    },
+    {
+      "commit": "1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7",
+      "git_sha": "f8fa64b69a7f1303111886b0540b25fb615ea71e",
+      "lines": 41,
+      "path": "requirements.txt",
+      "repository": "tokfinity/infcode",
+      "sha256": "d22350530043dd624060e6bdfb834a7865336e25b2c326ad339fdd2a23db943c",
+      "source_id": "src_94a46e2e941d562389e23ed3e632b172",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/Tokfinity/InfCode/blob/1dfd4c14a8359a414a6b5bd1aa75d18b8bbf2be7/requirements.txt"
+    }
+  ],
+  "summary": "InfCode is described as an adversarial multi-agent code agent system that uses LLMs to automatically analyze and fix repository issues, developed by Tokfinity's Code Research team and Beihang University. The system uses a dual-agent adversarial refinement framework that iteratively improves both test patches and code patches, aiming to produce fixes verified under strengthened test suites.",
+  "superseded_claim_ids": []
+}

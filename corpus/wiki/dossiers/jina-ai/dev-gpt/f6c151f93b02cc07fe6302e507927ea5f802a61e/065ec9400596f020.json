@@ -1,0 +1,592 @@
+{
+  "applied_operation_id": "op_c19434b5c5f2462ead59f82c49eaa930",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_00896d16911fa13278a20a73a998cf876e35e0d609573e3e072e59d46c78dba0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L103-L107"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 115,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L110-L115"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 77,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L69-L77"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 95,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L85-L95"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 66,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L63-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_125ba69edf0526cb8e46fe7beb9ccbf0dac7c92b271104ac1fc7701c2c634edc",
+        "slc_3e24e976c9e10219422b8ff7d613cb8912ab6aeb5aad2b59ad8f20f88200d6c6",
+        "slc_66081bb7d2e66585343b9095d9705caafaf3441f73d0cc38cd3bec3e6c03e955",
+        "slc_e4862b303b8175a5e1b951afdf1c36d43947ab20e02c3b66c21e86978fc67a36",
+        "slc_fc748f845366a62208d66ddc8c31bd041f1fb73b0811105c608b432d42e94fb6"
+      ],
+      "text": "Dev-GPT is a CLI tool with subcommands including generate, run, deploy, and configure, invoked as 'dev-gpt <command>' with flags like --description, --model, and --path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f5d7ef2d0ea6424c4bf23b0bef8e4debbef750a5ecb4f2fe813ac7f6629f93c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 26,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L9-L26"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L28-L31"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 59,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L57-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_452a998942f5fd41d73ed2f9675fed5b1e3457cf3a274cc9eb3c7c981a820d89",
+        "slc_c8ec02fc08820eb267e98cdab611d68942a46a99c510e3634dc5d3f2ca91f87b",
+        "slc_cfdb1aa70d6c068bfe2e2cf93f183ad3ea059e0743faff1678c452dcd29e31f9"
+      ],
+      "text": "The tool is framed as a virtual three-role team — Product Manager, Developer, and DevOps — that builds microservices from a natural-language description."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8559396a59c34645883cfd92b96d9ab9a228d3c551116f6ea4f5d3388acb0cdc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "8836425c823910a979571fb5cec865687f375e27",
+          "line_end": 12,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/requirements.txt#L1-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a9effeb627d56f952d808da1a25f4ac6f29a60f746bfec4d4de42a9edfb7889d"
+      ],
+      "text": "Runtime dependencies include jina 3.15.1.dev14, openai>=0.27.5, langchain 0.0.153, streamlit 1.9.0, jcloud, jina-hubble-sdk, click, psutil, and pinned pydantic/typing packages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_732c881cdea996b29070c46aaac0c869d88cfaf28bac6908c1bd1d3b04104649",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "7f6cef7b26c92da44a06db624661937f150725d0",
+          "line_end": 2,
+          "line_start": 1,
+          "path": "requirements-test.txt",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/requirements-test.txt#L1-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07087c43d0b3d693b27d3aa05172238988da8e22085b00394fc74aa4982a25be"
+      ],
+      "text": "Test dependencies are pytest and pytest-split, listed in requirements-test.txt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ec997263490fac80df01d97630b5606cd6420398616fa52a91140365d325001",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 517,
+          "line_start": 505,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L505-L517"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 485,
+          "line_start": 485,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L485-L485"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 491,
+          "line_start": 491,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L491-L491"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 473,
+          "line_start": 473,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L473-L473"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 493,
+          "line_start": 493,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L493-L493"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12a68755260b34a9403a27978bf9c24490a4c68d67e9cb18a422546c52e619e2",
+        "slc_6b201d6ef3a551222ba26107af87e9cc06fe81b60f5a0de4738756cce018e419",
+        "slc_84a6885967afe0776d2f68f4b53e13a402d698f30d349c5fc02bf957ca77d782",
+        "slc_c40a773b763f025c724423fc03d71b6a57f132e9f7a8670d6bed360769792dec",
+        "slc_ddee4ae994bdf4ded84e9e589ce6b774f0433e231f1c9cb73e476d4ecf565f32"
+      ],
+      "text": "Generation works by proposing multiple implementation strategies, generating code plus tests and a Dockerfile per strategy, building the image, and using build error messages to retry; after 10 consecutive failures it moves to the next strategy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e651c96b6ac8f9f80baa4703aafe8633dbcc081752a76433e266879463f0686d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 517,
+          "line_start": 505,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L505-L517"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12a68755260b34a9403a27978bf9c24490a4c68d67e9cb18a422546c52e619e2"
+      ],
+      "text": "For each strategy the generator produces microservice.py, test_microservice.py, requirements.txt, and a Dockerfile whose build also runs the tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_812e7cda94851aa9114e2ecc72cbc6b206da2fe6bde4a5ea226edf4a0a98e34c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L103-L107"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 517,
+          "line_start": 505,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L505-L517"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 497,
+          "line_start": 497,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L497-L497"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 499,
+          "line_start": 499,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L499-L499"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_125ba69edf0526cb8e46fe7beb9ccbf0dac7c92b271104ac1fc7701c2c634edc",
+        "slc_12a68755260b34a9403a27978bf9c24490a4c68d67e9cb18a422546c52e619e2",
+        "slc_9a50bc9bfd57d697586263e51b00f25e251f6a484f079ef258b02f7b4f9b79a3",
+        "slc_d43dc8e94cdbd4c9fc85cea16a4e1cb42ef06d87ee8147e5f66cad3e0203ea19"
+      ],
+      "text": "After a successful build the tool pushes the Docker image to a registry, deploys the microservice, and generates a Streamlit playground for testing it in the browser."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d94335e85be3acf3c95ae3352c62319c54e8110b39a88dda20e55d18626f2861",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L79-L81"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 77,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L69-L77"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 95,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L85-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_389807460e3d4ce4bfcc6ed9d14df5ef4d6e22d083f9b51f743b47b933c77865",
+        "slc_66081bb7d2e66585343b9095d9705caafaf3441f73d0cc38cd3bec3e6c03e955",
+        "slc_e4862b303b8175a5e1b951afdf1c36d43947ab20e02c3b66c21e86978fc67a36"
+      ],
+      "text": "The product requires an OpenAI API key with gpt-4 access (gpt-3.5-turbo also accepted for generation), and optionally GOOGLE_API_KEY and GOOGLE_CSE_ID to enable web-content search."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad205eb121e6f371542b12f04732a09cc7950edbb017482e3ec9e37a77ad618c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 95,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L85-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e4862b303b8175a5e1b951afdf1c36d43947ab20e02c3b66c21e86978fc67a36"
+      ],
+      "text": "The model choice is user-selectable between gpt-3.5-turbo and gpt-4, with gpt-3.5-turbo described as roughly 10x cheaper but less capable of complex microservices; default is the largest model the key can access."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6db79062a171a2c4beeb8a509cd7728288648e8b2390173c24d6c8a35cd9f62d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 525,
+          "line_start": 524,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L524-L525"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 531,
+          "line_start": 527,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L527-L531"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 563,
+          "line_start": 534,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L534-L563"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a0f785730e9ba4cc3599a208a6eddceeb8ca7b2bb1313860082d1e6f0d01e90d",
+        "slc_bfd661029392f5dd7dd9f1f2e5f01d8470011e9c976592b40110a3af481b36de",
+        "slc_fcb23fd0c52bcc0ce01b6ba588d138a717aea7d6840c3fe112172248d3fc584d"
+      ],
+      "text": "Repository development practice: contributors are invited to open PRs or issues, and a checklist of next steps and nice-to-haves (e.g. verifying Windows/Linux support, adding tests, cleaning up duplicate code) is maintained in the README."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f56a3beb137933338722346b9f8dae0ec26e14a498605017c10d6c9dbcbabb96",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L5-L7"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 531,
+          "line_start": 527,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L527-L531"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_334a116d0741d4882c4dd50223d377ffaf4c92cbb86fbf23bd1b01ca4f765472",
+        "slc_bfd661029392f5dd7dd9f1f2e5f01d8470011e9c976592b40110a3af481b36de"
+      ],
+      "text": "The README marks the project as an experimental version, and notes a known bug where code generation can hang forever, requiring aborting and redoing the generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0cc6a55a8446676b17aff36c276c71afda1ac001ec0d598273c945b93635f797",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 98,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L97-L98"
+        },
+        {
+          "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+          "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+          "line_end": 100,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "jina-ai/dev-gpt",
+          "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md#L100-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e7d1249d6fcde771c5a6945a9347ebb014a6731e7d7a074ec321535540270f1",
+        "slc_d37a16ed9719592f70f7470bcd3d106d583fd71a4e7651cdbd6fc57305e97bdd"
+      ],
+      "text": "Documented cost and time bounds: generation takes about 5–15 minutes and costs roughly $0.50–$3.00 per microservice on GPT-4 or $0.05–$0.30 on GPT-3.5-turbo."
+    }
+  ],
+  "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 567,
+        "path": "README.md",
+        "size": 20820
+      },
+      {
+        "lines": 2,
+        "path": "requirements-test.txt",
+        "size": 19
+      },
+      {
+        "lines": 12,
+        "path": "requirements.txt",
+        "size": 183
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 156,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_90684f0915f35d7e9cc3b9fbd0aafe0d",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jina-ai/dev-gpt/f6c151f93b02cc07fe6302e507927ea5f802a61e/065ec9400596f020/manifest.json",
+  "package_id": "pkg_2178aa075f1c91209e93b0fc18611f1354b37204e6f33d80e780730aa2528030",
+  "repo": "jina-ai/dev-gpt",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7a9988c4bff861d263447db5432005ec5c245bd8287e7e645141e491025d3772",
+  "snapshot_id": "065ec9400596f020",
+  "sources": [
+    {
+      "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+      "git_sha": "b3a6b893b8132667f43b068d1b172c01026b30d6",
+      "lines": 567,
+      "path": "README.md",
+      "repository": "jina-ai/dev-gpt",
+      "sha256": "db920cbbba0fa8cf0e34b3df85f8b83ac8a9f92a5bc8b4040e23214c37f1d81f",
+      "source_id": "src_88332432106155bc87df5a9423a67213",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/README.md"
+    },
+    {
+      "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+      "git_sha": "7f6cef7b26c92da44a06db624661937f150725d0",
+      "lines": 2,
+      "path": "requirements-test.txt",
+      "repository": "jina-ai/dev-gpt",
+      "sha256": "a2516eeb2ac1313fec5ba45229fc2c7b9bbcf8f10adad6ea382e292dc423aa2c",
+      "source_id": "src_445bed1e63ed537081452df70279bc30",
+      "stored": "requirements-test.txt-685da804fbca.txt",
+      "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/requirements-test.txt"
+    },
+    {
+      "commit": "f6c151f93b02cc07fe6302e507927ea5f802a61e",
+      "git_sha": "8836425c823910a979571fb5cec865687f375e27",
+      "lines": 12,
+      "path": "requirements.txt",
+      "repository": "jina-ai/dev-gpt",
+      "sha256": "36a8d6b60017fd0b059a5eb6871ab4744b8b3b9e71580318f54e8891d6e3f410",
+      "source_id": "src_728a35f58ebc52788d26b1b3b9f996ad",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/jina-ai/dev-gpt/blob/f6c151f93b02cc07fe6302e507927ea5f802a61e/requirements.txt"
+    }
+  ],
+  "summary": "The evidence consists of README documentation for Dev-GPT, a CLI tool that generates, runs, and deploys Python microservices using OpenAI models, plus dependency lists. No source code slices are present, so all claims are documentation-based.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,639 @@
+{
+  "applied_operation_id": "op_33005e104d1b4cc393fdc947ccdcacc3",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_01cde71315c5786f9cc38c2179754e84a7f3050de3f0084236847c83267d4d2e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 83,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L67-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6e8f4d5df79a9289bcede3b36f655b424f99d014493565a13bd4e3645273d62"
+      ],
+      "text": "The template ships .claude/commands files (generate-prp.md, execute-prp.md), a PRPs folder with a base template and an example PRP, an examples/ folder, CLAUDE.md, INITIAL.md, and INITIAL_EXAMPLE.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_81386967363afd72d458ae2f37681a1fd019adc10495df94f1265e749eb58272",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 30,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L29-L30"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L25-L25"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 139,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L137-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_060785d27c365ea4bb467bed0d901eb21eb5b2680fbd9bbf7233de4dfd8a0b76",
+        "slc_6f5d4e5aaaa37b17de62fb4cb4fa138f363668c186efcc7e82b8bdcd1244da9f",
+        "slc_a559b3e598e911d37dc119643ae3f21234afb917eb3af89a5bc5fe8ee6a1029b"
+      ],
+      "text": "Two custom Claude Code slash commands are exposed: /generate-prp, which takes a feature-request file, and /execute-prp, which takes a generated PRP file path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1028e4fd45bf9a6aef86cff52d0800b238449ee229e3e5e84d5d2a57fe291069",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L141-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_de08dc1a5bdf8db32a57e9da0f5b368a249f8685668e9dcef6edc21c97f451a2"
+      ],
+      "text": "The slash commands use a $ARGUMENTS variable that receives whatever the user passes after the command name, such as INITIAL.md or a PRP path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb7cfcf7207a26b6543a2a305f2c9d854edb4c918cc8f1ca3b56e93ad8046b39",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L123-L123"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L130-L130"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L125-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33ebff88e14ce80b542d87e1b47e238192dd181535837002ee121a6ede9ed0a8",
+        "slc_71ca82b33258d346bd026f8b44d652978c5cf5d4bd72d26d60f2ad79294a1aa2",
+        "slc_e8782e4dbebd2e413a4936e335e254282d8ca846665011387f03eeec40290a34"
+      ],
+      "text": "The approach centers on PRPs (Product Requirements Prompts), described as comprehensive implementation blueprints with context, validation steps, error-handling patterns, and test requirements, tailored for AI coding assistants."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_345b3e681017ff9985bcc4bc40c489b3ff055ccd5867781f818e3ebd159dec47",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L85-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f366f220f329a7e4761a1684fd6a6b2a1996866f2070865c984869943fc77d1c"
+      ],
+      "text": "The template deliberately excludes RAG and tooling aspects of context engineering, which the author says are planned for future work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd9658e039571d2d7b5a9c353750502d92b1aba4b9e2924ef6e729c6838cd010",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 198,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L195-L198"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 203,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L200-L203"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 212,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L210-L212"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 208,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L205-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6785f919d076c0521cea287383cd56340811e987af489dd012192fd13b7ea109",
+        "slc_8d8a85947ef5bddc5cf11fa77ddc5f1e93a35c210805febaaffac2b5fdf3c288",
+        "slc_92b14d0d2000aec3cf614a517192174c18766621eff63ef621af5f1d17b7958e",
+        "slc_bfe8bd04a426c501509d287c91a2798a8d6fa3e44d7be7c9abd4c82b3036eefc"
+      ],
+      "text": "Repository development practice: the generate-prp command is documented to research codebase patterns, gather documentation, create a blueprint with validation gates, and score its own confidence from 1 to 10."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c42238bc3d90497cb4016cca0da178b5da8fe909c1a62a25a974a50fbbd151dd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 221,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L216-L221"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e08c1ee79fad033eae74e6d249004b10bf71a7a08b181432539bff24f2befbf9"
+      ],
+      "text": "Repository development practice: the execute-prp flow is documented as loading the PRP, planning tasks with TodoWrite, implementing components, running tests and linting, and iterating on failures."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ce60749007deb18e542be94cf56e325fa3e39b3f18764c2d12457f647e425dee",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "f0423f5470947f5fa1079748955fb8b3af4c8de8",
+          "line_end": 5,
+          "line_start": 2,
+          "path": "CLAUDE.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/CLAUDE.md#L2-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_326d10f111737d8687dcf7528081b010aa048999399d1ca1f334f145b3ba7bc1"
+      ],
+      "text": "Repository development practice: CLAUDE.md instructs the assistant to read PLANNING.md at conversation start, check TASK.md before tasks, and use the venv_linux virtual environment for Python commands including tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b31bfec61ab8ff4bcfaeabf9aca3f2f10aba5b972d6033b58d921f4c9723138",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "f0423f5470947f5fa1079748955fb8b3af4c8de8",
+          "line_end": 25,
+          "line_start": 19,
+          "path": "CLAUDE.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/CLAUDE.md#L19-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2437d65b8eea3f99a5bd8076da496a5e8be02e82694e84ddc751953206856cf3"
+      ],
+      "text": "Repository development practice: CLAUDE.md mandates Pytest unit tests for new features in a /tests folder mirroring app structure, with at least an expected-use, edge-case, and failure-case test."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b445fa9a7e8dcab7c1596b72875e28792722badbd5456c27e7521d78ad108b13",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "f0423f5470947f5fa1079748955fb8b3af4c8de8",
+          "line_end": 40,
+          "line_start": 32,
+          "path": "CLAUDE.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/CLAUDE.md#L32-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bd527897266e7510a8a72462dca8236345c5f8e4527cf596495884723338b75"
+      ],
+      "text": "Repository development practice: CLAUDE.md sets style rules including Python, PEP8, type hints, black formatting, pydantic validation, and Google-style docstrings for every function."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e66fe7aa5b91cc24d539b2498347f2b46de279790c58326f18a2840b15725b31",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "f0423f5470947f5fa1079748955fb8b3af4c8de8",
+          "line_end": 59,
+          "line_start": 56,
+          "path": "CLAUDE.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/CLAUDE.md#L56-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_603f8e4e4487ec1200a9af63edd5bca0d6bde1c257bbc2eea0dcdc99b57640b4"
+      ],
+      "text": "Repository development practice: CLAUDE.md behavior rules forbid assuming missing context, hallucinating libraries, referencing unverified file paths, and deleting existing code without explicit instruction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1799224fe324850a11a203060a508f098b6ecdb388ac5efad2cd98e5eb83b77",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "80e88f55be9e5fce71e11815af44a28d8d8e8a9c",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "INITIAL.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/INITIAL.md#L3-L3"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "c7fca8364752e9e2cd22f166e5b6d26a71267ee4",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "INITIAL_EXAMPLE.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/INITIAL_EXAMPLE.md#L3-L6"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "80e88f55be9e5fce71e11815af44a28d8d8e8a9c",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "INITIAL.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/INITIAL.md#L15-L15"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "80e88f55be9e5fce71e11815af44a28d8d8e8a9c",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "INITIAL.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/INITIAL.md#L11-L11"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "80e88f55be9e5fce71e11815af44a28d8d8e8a9c",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "INITIAL.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/INITIAL.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dbf4dbaa5f850e0910a4fc021c29c615a3a4eaee9677f4f266877d3079b96c6",
+        "slc_3a6d45d9e51208928ea008073273066c69d315fa0435ebdcc386c29f866c62ad",
+        "slc_a95397032f40f6c0b3452989b2b5b52d386c90dd50ac7cd5130cee7637c8fe38",
+        "slc_cd1e577279487af58a39319a4e47cc14e6341118364000ae0959fe4473e8bad6",
+        "slc_ea9785197f07f0df19464a78bb6b60e89eb6276848f7a8545ac6606006e019be"
+      ],
+      "text": "INITIAL.md is a fill-in template with FEATURE, EXAMPLES, DOCUMENTATION, and OTHER CONSIDERATIONS sections, and an INITIAL_EXAMPLE.md demonstrates a filled version describing a Pydantic AI multi-agent CLI with Gmail and Brave integrations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_284aba45a62cf86086eaeb918fba55850f15690162052996d11916f8b7fbe600",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 227,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L227-L227"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 234,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L231-L234"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 244,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L241-L244"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 249,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L246-L249"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 239,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L236-L239"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14e1669a7d7203ec9dba86eb298e77f55dc3b52e1fcbe20271b9970215dc6795",
+        "slc_4764d6ab4859203d5a2c80056fd907f6a04c08daec2d25e299c57f1c35dc9c89",
+        "slc_69b8d1a05fb57b0c9404eab014da49d5161bcc769698e9e4e679e013ad3c6653",
+        "slc_962096aa0c201bd2872456fbe976b2675a6e1e60aa86734642c5ed29b9769ed6",
+        "slc_d2cbd3077a5d52b57bfb2653e495d33fdaf38ceec3d6efebcc2d032028b5175e"
+      ],
+      "text": "The examples/ folder is treated as critical to the method's success, with the README advising users to include code-structure, testing, integration, and CLI patterns for the AI to mimic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d688749afa8c5aa51f96ab47ca90b5b6f12daa18d776b94b04f361e9f443f7e4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 139,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L137-L139"
+        },
+        {
+          "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+          "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+          "line_end": 83,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "coleam00/context-engineering-intro",
+          "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md#L67-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a559b3e598e911d37dc119643ae3f21234afb917eb3af89a5bc5fe8ee6a1029b",
+        "slc_b6e8f4d5df79a9289bcede3b36f655b424f99d014493565a13bd4e3645273d62"
+      ],
+      "text": "The evidence consists only of README, CLAUDE.md, and INITIAL template files; no implementation code for the slash commands' behavior appears in the provided slices, so their described steps appear to be documentation rather than inspected code."
+    }
+  ],
+  "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 296,
+        "path": "README.md",
+        "size": 9600
+      },
+      {
+        "lines": 15,
+        "path": "INITIAL.md",
+        "size": 465
+      },
+      {
+        "lines": 26,
+        "path": "INITIAL_EXAMPLE.md",
+        "size": 1296
+      },
+      {
+        "lines": 59,
+        "path": "CLAUDE.md",
+        "size": 3051
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 247,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_14ba13b26c3a5f77b7ceaa827680541a",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 6
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/coleam00/context-engineering-intro/a2d84b021cee1e2f4e77ba854bba0be8cb319035/a72b1e0983fece30/manifest.json",
+  "package_id": "pkg_190557e20d378383372dab756d64f8f29019a153166e4c4b3ebdeb28cd830eb5",
+  "repo": "coleam00/context-engineering-intro",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ae9b46ca5dbbf20c1077a8cf00466fdd00cf4b6b3630bd42938d43b027e93d20",
+  "snapshot_id": "a72b1e0983fece30",
+  "sources": [
+    {
+      "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+      "git_sha": "f0423f5470947f5fa1079748955fb8b3af4c8de8",
+      "lines": 59,
+      "path": "CLAUDE.md",
+      "repository": "coleam00/context-engineering-intro",
+      "sha256": "7e355492496ca520a75e8a1cffe5ff5142b87b943fc893a8c44fbefd77ab054f",
+      "source_id": "src_1c14e9bddd315930b2a1a83868db4d06",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/CLAUDE.md"
+    },
+    {
+      "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+      "git_sha": "80e88f55be9e5fce71e11815af44a28d8d8e8a9c",
+      "lines": 15,
+      "path": "INITIAL.md",
+      "repository": "coleam00/context-engineering-intro",
+      "sha256": "0010d542d9daac30a32f8c1d43c5e5ac415bd6cd188099071478fc5f5c247e3d",
+      "source_id": "src_351319bcb4305ad29462f55f9155690b",
+      "stored": "initial.md-8673a868f379.md",
+      "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/INITIAL.md"
+    },
+    {
+      "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+      "git_sha": "c7fca8364752e9e2cd22f166e5b6d26a71267ee4",
+      "lines": 26,
+      "path": "INITIAL_EXAMPLE.md",
+      "repository": "coleam00/context-engineering-intro",
+      "sha256": "7c9a8dec9578f45903e890dc7235a1f9963e67c63df7d96481bf2c22188f0513",
+      "source_id": "src_9c4018beb3fa5dbb9b854637fbba14b3",
+      "stored": "initial_example.md-b77c07e48138.md",
+      "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/INITIAL_EXAMPLE.md"
+    },
+    {
+      "commit": "a2d84b021cee1e2f4e77ba854bba0be8cb319035",
+      "git_sha": "d1843daca8d0ada1f680d4a6153636ceb5a2d047",
+      "lines": 296,
+      "path": "README.md",
+      "repository": "coleam00/context-engineering-intro",
+      "sha256": "ab659339a50f0f8ab4e5383d3d9edbe85cf49f014cfd968544ecb2fd1759531c",
+      "source_id": "src_677ae73c9785588a80fc13ccdedc7b37",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/coleam00/context-engineering-intro/blob/a2d84b021cee1e2f4e77ba854bba0be8cb319035/README.md"
+    }
+  ],
+  "summary": "The repository is a documentation/template project for 'context engineering' with Claude Code, containing slash-command definitions, PRP templates, example feature requests, and a CLAUDE.md rules file; evidence is almost entirely instructional documentation rather than shipped runtime code.",
+  "superseded_claim_ids": []
+}

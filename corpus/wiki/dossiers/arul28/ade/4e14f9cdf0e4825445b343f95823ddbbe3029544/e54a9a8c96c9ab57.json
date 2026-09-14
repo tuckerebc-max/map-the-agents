@@ -1,0 +1,1082 @@
+{
+  "applied_operation_id": "op_1f75b89fa75845bfbfd3b2502927ecd1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_391a72e5e594caef77f2e63ad172d47e3c3ef1967208491db6d14a80506b64cb",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb8bae1fb88427e8c3e5e33c24b720e617daea2e94a96271e7c4229e1657a08f"
+      ],
+      "text": "ADE runs Claude Code, Codex, Cursor, Factory Droid, and OpenCode in one workspace reachable from any machine, the web, or a mobile app, and is described as free."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c94e3b8ec1f9d816c000a00c64b432928f2615611fcfa1b78bed6a3a7562ba0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 195,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L189-L195"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd81698591e113385a29a7497847697b1d6aa0a418d7ee7c44e7fb591cfac570"
+      ],
+      "text": "The repo contains apps/ade-cli (Brain, CLI, and ade code TUI), apps/desktop (Electron), apps/ios (SwiftUI), and apps/web (website and downloads)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39fb79aa6e34a28abb3e1c9877d6af6cf773a596633261506314d3165df81380",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 187,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L187-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b459982783fc1d9134eb81541ed803d0bdaa436c0b21423dd50300416cb7e933"
+      ],
+      "text": "ADE is local-first: the Brain is the always-on process owning the project catalog, sync websocket, and authority to run things; project data lives in .ade/ per repo and machine state in ~/.ade."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_428422f5bf33b6035bd67118e332a58b18b1f8448fc011b768351955b1b021ce",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 181,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L174-L181"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L172-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46679865bbac351261d8a54de6e94de16a76333e2b701838531358a33e80afe9",
+        "slc_c3c980b36bdc4030cfcdd1aad3a00452093a4e74d0297fe5bba68ee7dfa2f88d"
+      ],
+      "text": "The ade CLI offers subcommands such as desktop, brain status, code, lanes create, prs checks, and actions list, sharing the same binary that runs the Brain."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51b6229c10720b1fa2bc44b7ab902b8ad05ad60aa405094e14644448b7a9e599",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L157-L157"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 166,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L161-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1206b7e25bad44d6264092a89c7f84c0282a3c66a333b54a0dff9a07a1571596",
+        "slc_39caa570e56315b50c045627e8d014e6a8c0fe2f57225a809df8bc1b1fdfb92c"
+      ],
+      "text": "ade connect links a machine to an ADE account, with flags --status --text, --headless for SSH device flow, and --no-login for local/LAN-only service setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_702a2f27ac3b1c92b23ba7a3bb13943dec811f47852df38e914cc057f7afd860",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L141-L141"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L139-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c1c59dbbdda88d34644a463986f75ce8146b7e3cf0b970ebec6476799a4c6a3b",
+        "slc_c61507d66f5ee576de70f02561108aaa80bc8e12b1d0180886aa8026628e7979"
+      ],
+      "text": "The installer supports overrides including ADE_VERSION, ADE_INSTALL_DIR, ADE_HOME, ADE_INSTALL_NO_PATH, and ADE_INSTALL_NO_PROMPT, and skips prompts when no terminal is attached."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_012ba13d2f4d1fd053e2a4741a45e129204ae2293fcd2b9c4dd13c9dbf1aecc8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 222,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L222-L222"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 224,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L224-L224"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_184b8de6153f2bf6a6865c72e3c50193db440cf3c192d53160c0dfc8ce9360a7",
+        "slc_d20c3d9a7b187f72625691f8dd608a628ac58579458b269b1ddf9b04330a070d"
+      ],
+      "text": "The project is licensed AGPL-3.0, while the @ade-dev/sdk and @ade-dev/chat-ui npm packages are MIT and an ADE Runtime Embedding Exception covers shipping the runtime binary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_319c7100f3669aad8b19cc32ec4f3bfb641c3040da6efacc725033c7c684e915",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L109-L109"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 127,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L127-L127"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L121-L121"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_326113a509bff462e4c8ef60dcf3781153646a70b77320e12e7d7023d7b894f2",
+        "slc_4605b17684732b6fb5da337d687eda585f3cde801172ecf8ebe372bf8c7e78b6",
+        "slc_534278800fce9f7d7cf561d768124c81da3dff4eb55943b699286a2c9eea8f86",
+        "slc_5fb2bb55696e8f1e612091e804b2e0c3eed984d1a5e90cbf489d4d979c523a2a"
+      ],
+      "text": "There is no Linux desktop app yet; Linux can run only the Brain, and the Windows desktop app is beta with some macOS features unavailable and ARM64 unsupported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b674c37448cbbdfc81ad60e44f7457796b14d5e5a754a210e102d627394e1c4a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L151-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_268b0c5b2da2f692778a933b97774deea0f0b4928ce09ade923ef10311834383"
+      ],
+      "text": "Mobile connections prefer LAN, then Tailscale, falling back to ADE's own relay service; without an account, pairing is possible via QR/link, LAN/Tailscale scan, or SSH."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_371dbe999fffc43586ceb731c6e0f7127169cd9a15471601d1c40e20a4fbe90c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L17-L17"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 22,
+          "line_start": 19,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L19-L22"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 15,
+          "line_start": 12,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L12-L15"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03ca225ce95865ae59cee183212fe857ca437935653175df2ceee63767a02a68",
+        "slc_6128a8879d0a9a30b61f5463996a0cbabb416043efdcb130f9b99ec40f841f0c",
+        "slc_6567472a44defc1b57d5762b38f6d6c2b6b18694585bda9169a51b02fcabef6d",
+        "slc_ae208a2743359cf7431dbb124873fadeca0d8159b36315b3df02a7923b09b052"
+      ],
+      "text": "Repository development practice: AGENTS.md defines a five-stage dev loop (/context, /quality, /test, /ship plus utilities) implemented as agent skills under .agents/skills/, with /ship wrapping an autonomous PR-to-merge playbook."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e2d3c884f44e5bd60f5b2f4685dc485d194085cb4c761bfabb917e00970e6a09",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 91,
+          "line_start": 79,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L79-L91"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+          "line_end": 210,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md#L210-L210"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 141,
+          "line_start": 138,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L138-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33665c00c1ca626657a5e35609a9f5ba57b1529660740e6b8c2a35528fdeede5",
+        "slc_a38856d439fbe826b867932e0da80f750a9406a7f95926bb6cb07c798100e915",
+        "slc_bcd1ad475895eeeaa06e1b68d81f90bddb3fcdcbd033d1fe55fa1ad128488a52"
+      ],
+      "text": "Repository development practice: validation uses desktop and CLI typecheck/test/build commands, with the large desktop suite sharded and the smallest relevant subset run first."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_26a3cb98ff4cdd901a66252b198b2a330bcb13341a0b6ee95eb9e61acc711143",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 75,
+          "line_start": 72,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L72-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c061a54b94175210a00c1e7e779f4633877baa8762bf5458fbd0b46721ee87bd"
+      ],
+      "text": "Repository development practice: PRs require conventional-commit titles, a Problem/Cause/Change/Verification body, before/after images for UI changes, and one concern per PR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86c97dce700ad06af87539ba3420dc4f7ce2ceae3803f6ed57a648725d74f707",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 132,
+          "line_start": 130,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L130-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e0413cb546d8dabd197dba85952587211db2ef3184ce7e6e1bd4f6aa9fe23fa7"
+      ],
+      "text": "Repository development practice: releases are cut by tagging main with vX.Y.Z, triggering a workflow that publishes a draft GitHub Release; Windows builds are gated behind the ADE_WINDOWS_PUBLIC_RELEASE_ENABLED variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43718c723c662d9363f9bac9c02387d673d9097229f989d4643de9a45f1c205d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+          "line_end": 141,
+          "line_start": 138,
+          "path": "AGENTS.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md#L138-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bcd1ad475895eeeaa06e1b68d81f90bddb3fcdcbd033d1fe55fa1ad128488a52"
+      ],
+      "text": "Repository development practice: Node.js 22.x is required because node:sqlite is the primary database engine, and each app under apps/ has independent node_modules with no npm workspaces."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d5f630cd576c60ceb970eb682533a265871f265386a62d220c502ec0b53c396",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "fb2cd2c1d251aaacfc3ab4f52d6adfbb97060774",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CLAUDE.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/CLAUDE.md#L3-L3"
+        },
+        {
+          "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+          "git_sha": "fb2cd2c1d251aaacfc3ab4f52d6adfbb97060774",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CLAUDE.md",
+          "repository": "arul28/ade",
+          "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/CLAUDE.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_270aada00c0812929b163492b052f70d15058907508316922b02629571eff497",
+        "slc_8556cd9e7a9f022d0baed7fe81b2d06da6b194c07a4c520c4d80fbb53db6f26a"
+      ],
+      "text": "Repository development practice: CLAUDE.md assigns Claude-specific model roles, designating one model as PM/coordinator that delegates implementation to Opus 5 subagents."
+    }
+  ],
+  "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 224,
+        "path": "README.md",
+        "size": 13680
+      },
+      {
+        "lines": 190,
+        "path": "AGENTS.md",
+        "size": 23376
+      },
+      {
+        "lines": 5,
+        "path": "CLAUDE.md",
+        "size": 551
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 126781
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1272
+      },
+      {
+        "path": "RUNTIME-EMBEDDING-EXCEPTION.md",
+        "reason": "file-budget",
+        "size": 3123
+      },
+      {
+        "path": "RUNTIME-SYNC-RECONCILIATION.md",
+        "reason": "file-budget",
+        "size": 42896
+      },
+      {
+        "path": "WINDOWS_PORT.md",
+        "reason": "file-budget",
+        "size": 21545
+      },
+      {
+        "path": "docs/ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 368346
+      },
+      {
+        "path": "docs/OPTIMIZATION_OPPORTUNITIES.md",
+        "reason": "file-budget",
+        "size": 8807
+      },
+      {
+        "path": "docs/PRD.md",
+        "reason": "file-budget",
+        "size": 22812
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 5974
+      },
+      {
+        "path": "docs/bug-ledger-web-client.md",
+        "reason": "file-budget",
+        "size": 74652
+      },
+      {
+        "path": "docs/design/ask-question-redesign.md",
+        "reason": "file-budget",
+        "size": 13229
+      },
+      {
+        "path": "docs/development/local-development.md",
+        "reason": "file-budget",
+        "size": 15726
+      },
+      {
+        "path": "docs/development/windows-port-lane.md",
+        "reason": "file-budget",
+        "size": 14671
+      },
+      {
+        "path": "docs/development/windows-release-proof.md",
+        "reason": "file-budget",
+        "size": 15731
+      },
+      {
+        "path": "docs/development/windows-support.md",
+        "reason": "file-budget",
+        "size": 21127
+      },
+      {
+        "path": "docs/examples/statuslines/README.md",
+        "reason": "file-budget",
+        "size": 585
+      },
+      {
+        "path": "docs/features/ade-code/README.md",
+        "reason": "file-budget",
+        "size": 95290
+      },
+      {
+        "path": "docs/features/agents/README.md",
+        "reason": "file-budget",
+        "size": 29346
+      },
+      {
+        "path": "docs/features/agents/identity-and-personas.md",
+        "reason": "file-budget",
+        "size": 12864
+      },
+      {
+        "path": "docs/features/agents/tool-registration.md",
+        "reason": "file-budget",
+        "size": 23373
+      },
+      {
+        "path": "docs/features/automations/README.md",
+        "reason": "file-budget",
+        "size": 57767
+      },
+      {
+        "path": "docs/features/automations/guardrails.md",
+        "reason": "file-budget",
+        "size": 9836
+      },
+      {
+        "path": "docs/features/automations/triggers-and-actions.md",
+        "reason": "file-budget",
+        "size": 30106
+      },
+      {
+        "path": "docs/features/automations/ui-design.md",
+        "reason": "file-budget",
+        "size": 12120
+      },
+      {
+        "path": "docs/features/chat/README.md",
+        "reason": "file-budget",
+        "size": 398555
+      },
+      {
+        "path": "docs/features/chat/acp-providers-spec.md",
+        "reason": "file-budget",
+        "size": 28909
+      },
+      {
+        "path": "docs/features/chat/acp-verification-brief.md",
+        "reason": "file-budget",
+        "size": 6826
+      },
+      {
+        "path": "docs/features/chat/agent-routing.md",
+        "reason": "file-budget",
+        "size": 72541
+      },
+      {
+        "path": "docs/features/chat/composer-and-ui.md",
+        "reason": "file-budget",
+        "size": 215505
+      },
+      {
+        "path": "docs/features/chat/tool-system.md",
+        "reason": "file-budget",
+        "size": 24397
+      },
+      {
+        "path": "docs/features/chat/transcript-and-turns.md",
+        "reason": "file-budget",
+        "size": 66894
+      },
+      {
+        "path": "docs/features/computer-use/README.md",
+        "reason": "file-budget",
+        "size": 16600
+      },
+      {
+        "path": "docs/features/computer-use/app-control.md",
+        "reason": "file-budget",
+        "size": 33412
+      },
+      {
+        "path": "docs/features/computer-use/artifact-broker.md",
+        "reason": "file-budget",
+        "size": 14584
+      },
+      {
+        "path": "docs/features/computer-use/backends.md",
+        "reason": "file-budget",
+        "size": 12094
+      },
+      {
+        "path": "docs/features/computer-use/settings-and-readiness.md",
+        "reason": "file-budget",
+        "size": 9515
+      },
+      {
+        "path": "docs/features/conflicts/README.md",
+        "reason": "file-budget",
+        "size": 13188
+      },
+      {
+        "path": "docs/features/conflicts/detection.md",
+        "reason": "file-budget",
+        "size": 9410
+      },
+      {
+        "path": "docs/features/conflicts/simulation.md",
+        "reason": "file-budget",
+        "size": 11172
+      },
+      {
+        "path": "docs/features/cto/README.md",
+        "reason": "file-budget",
+        "size": 59298
+      },
+      {
+        "path": "docs/features/deeplinks/README.md",
+        "reason": "file-budget",
+        "size": 27287
+      },
+      {
+        "path": "docs/features/files-and-editor/README.md",
+        "reason": "file-budget",
+        "size": 49549
+      },
+      {
+        "path": "docs/features/files-and-editor/editor-surfaces.md",
+        "reason": "file-budget",
+        "size": 20919
+      },
+      {
+        "path": "docs/features/files-and-editor/file-watcher-and-trust.md",
+        "reason": "file-budget",
+        "size": 16545
+      },
+      {
+        "path": "docs/features/history/README.md",
+        "reason": "file-budget",
+        "size": 30248
+      },
+      {
+        "path": "docs/features/history/recording-and-export.md",
+        "reason": "file-budget",
+        "size": 16814
+      },
+      {
+        "path": "docs/features/ios-simulator/README.md",
+        "reason": "file-budget",
+        "size": 40089
+      },
+      {
+        "path": "docs/features/ios-simulator/inspector.md",
+        "reason": "file-budget",
+        "size": 12945
+      },
+      {
+        "path": "docs/features/lanes/README.md",
+        "reason": "file-budget",
+        "size": 105898
+      },
+      {
+        "path": "docs/features/lanes/oauth-redirect.md",
+        "reason": "file-budget",
+        "size": 14418
+      },
+      {
+        "path": "docs/features/lanes/runtime.md",
+        "reason": "file-budget",
+        "size": 22713
+      },
+      {
+        "path": "docs/features/lanes/stacking.md",
+        "reason": "file-budget",
+        "size": 12262
+      },
+      {
+        "path": "docs/features/lanes/worktree-isolation.md",
+        "reason": "file-budget",
+        "size": 14667
+      },
+      {
+        "path": "docs/features/linear-integration/README.md",
+        "reason": "file-budget",
+        "size": 26992
+      },
+      {
+        "path": "docs/features/onboarding-and-settings/README.md",
+        "reason": "file-budget",
+        "size": 126760
+      },
+      {
+        "path": "docs/features/onboarding-and-settings/agent-tools-cache.md",
+        "reason": "file-budget",
+        "size": 29510
+      },
+      {
+        "path": "docs/features/onboarding-and-settings/configuration-schema.md",
+        "reason": "file-budget",
+        "size": 24275
+      },
+      {
+        "path": "docs/features/onboarding-and-settings/desktop-auto-update.md",
+        "reason": "file-budget",
+        "size": 25917
+      },
+      {
+        "path": "docs/features/onboarding-and-settings/first-run.md",
+        "reason": "file-budget",
+        "size": 4187
+      },
+      {
+        "path": "docs/features/onboarding-and-settings/usage-tracking.md",
+        "reason": "file-budget",
+        "size": 31702
+      },
+      {
+        "path": "docs/features/personal-chats/README.md",
+        "reason": "file-budget",
+        "size": 23552
+      },
+      {
+        "path": "docs/features/proof.md",
+        "reason": "file-budget",
+        "size": 22566
+      },
+      {
+        "path": "docs/features/pull-requests/README.md",
+        "reason": "file-budget",
+        "size": 191857
+      },
+      {
+        "path": "docs/features/pull-requests/conflict-simulation.md",
+        "reason": "file-budget",
+        "size": 10385
+      },
+      {
+        "path": "docs/features/pull-requests/github-stacked-prs.md",
+        "reason": "file-budget",
+        "size": 8414
+      },
+      {
+        "path": "docs/features/remote-runtime/README.md",
+        "reason": "file-budget",
+        "size": 115100
+      },
+      {
+        "path": "docs/features/remote-runtime/internal-architecture.md",
+        "reason": "file-budget",
+        "size": 47203
+      },
+      {
+        "path": "docs/features/sdk/README.md",
+        "reason": "file-budget",
+        "size": 49733
+      },
+      {
+        "path": "docs/features/search/README.md",
+        "reason": "file-budget",
+        "size": 16839
+      },
+      {
+        "path": "docs/features/storage-and-recovery/README.md",
+        "reason": "file-budget",
+        "size": 109203
+      },
+      {
+        "path": "docs/features/sync-and-multi-device/README.md",
+        "reason": "file-budget",
+        "size": 277522
+      },
+      {
+        "path": "docs/features/sync-and-multi-device/crdt-model.md",
+        "reason": "file-budget",
+        "size": 26868
+      },
+      {
+        "path": "docs/features/sync-and-multi-device/cross-machine-session-handoff.md",
+        "reason": "file-budget",
+        "size": 22432
+      },
+      {
+        "path": "docs/features/sync-and-multi-device/ios-companion.md",
+        "reason": "file-budget",
+        "size": 299168
+      },
+      {
+        "path": "docs/features/sync-and-multi-device/push-notifications.md",
+        "reason": "file-budget",
+        "size": 69361
+      },
+      {
+        "path": "docs/features/sync-and-multi-device/remote-commands.md",
+        "reason": "file-budget",
+        "size": 59747
+      },
+      {
+        "path": "docs/features/terminals-and-sessions/README.md",
+        "reason": "file-budget",
+        "size": 177660
+      },
+      {
+        "path": "docs/features/terminals-and-sessions/external-session-import.md",
+        "reason": "file-budget",
+        "size": 47902
+      },
+      {
+        "path": "docs/features/terminals-and-sessions/pty-and-sessions.md",
+        "reason": "file-budget",
+        "size": 57782
+      },
+      {
+        "path": "docs/features/terminals-and-sessions/runtime-isolation.md",
+        "reason": "file-budget",
+        "size": 6516
+      },
+      {
+        "path": "docs/features/terminals-and-sessions/settle-teardown-design.md",
+        "reason": "file-budget",
+        "size": 47836
+      },
+      {
+        "path": "docs/features/terminals-and-sessions/ui-surfaces.md",
+        "reason": "file-budget",
+        "size": 108336
+      },
+      {
+        "path": "docs/features/web-client/README.md",
+        "reason": "file-budget",
+        "size": 87516
+      },
+      {
+        "path": "docs/features/workspace-graph/README.md",
+        "reason": "file-budget",
+        "size": 18483
+      },
+      {
+        "path": "docs/features/workspace-graph/data-sources.md",
+        "reason": "file-budget",
+        "size": 12388
+      },
+      {
+        "path": "docs/logging.md",
+        "reason": "file-budget",
+        "size": 62739
+      },
+      {
+        "path": "docs/mobile-sync-incident-and-recovery-handoff.md",
+        "reason": "file-budget",
+        "size": 16935
+      },
+      {
+        "path": "docs/perf/files-universal-editing-2026-07-13/README.md",
+        "reason": "file-budget",
+        "size": 3510
+      },
+      {
+        "path": "docs/perf/ios-mobile-action-inventory.md",
+        "reason": "file-budget",
+        "size": 83626
+      },
+      {
+        "path": "docs/perf/prs-tab-action-inventory.md",
+        "reason": "file-budget",
+        "size": 11277
+      },
+      {
+        "path": "docs/perf/work-tab-action-inventory.md",
+        "reason": "file-budget",
+        "size": 115125
+      },
+      {
+        "path": "docs/plans/prs-tab-grievances.md",
+        "reason": "file-budget",
+        "size": 20643
+      },
+      {
+        "path": "docs/playbooks/ship-lane.md",
+        "reason": "file-budget",
+        "size": 67544
+      },
+      {
+        "path": "docs/playbooks/windows-pr3-computer-use-proof.md",
+        "reason": "file-budget",
+        "size": 15804
+      },
+      {
+        "path": "docs/playbooks/windows-signed-release.md",
+        "reason": "file-budget",
+        "size": 28333
+      },
+      {
+        "path": "docs/triage/PLAYBOOK.md",
+        "reason": "file-budget",
+        "size": 16975
+      }
+    ],
+    "omitted_count": 96,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 4481,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 99,
+      "complete": false,
+      "omitted": 96,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_464c9e2e5dec58d6809318c1e58a50a0",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 6
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/arul28/ade/4e14f9cdf0e4825445b343f95823ddbbe3029544/e54a9a8c96c9ab57/manifest.json",
+  "package_id": "pkg_14035c135e1c8a7f1f1772140dbf25331f28e02ee9a956b06b604e927589ac90",
+  "repo": "arul28/ade",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a1256d60455d5c98f8c243f583eafa8841b67e5b2e0b122cd3a45175afb5fa14",
+  "snapshot_id": "e54a9a8c96c9ab57",
+  "sources": [
+    {
+      "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+      "git_sha": "e7dbacf56662fabecfefb6883b05b32697bd6ab0",
+      "lines": 190,
+      "path": "AGENTS.md",
+      "repository": "arul28/ade",
+      "sha256": "162b9b8457a8c4c07a6b3c370bf50b9580e93958229a97828f901d40f2639482",
+      "source_id": "src_8fbff41946485f0a956bf1043fcdf893",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/AGENTS.md"
+    },
+    {
+      "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+      "git_sha": "fb2cd2c1d251aaacfc3ab4f52d6adfbb97060774",
+      "lines": 5,
+      "path": "CLAUDE.md",
+      "repository": "arul28/ade",
+      "sha256": "de01fb65a8e418f37d34605b17b871cc83c1c046dda6e7f455dd54c53c7b1519",
+      "source_id": "src_97ba429f190f5627822804edf1a9b27e",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/CLAUDE.md"
+    },
+    {
+      "commit": "4e14f9cdf0e4825445b343f95823ddbbe3029544",
+      "git_sha": "2f86bbbb257c78cb5768d4acbab21a9f015e5dff",
+      "lines": 224,
+      "path": "README.md",
+      "repository": "arul28/ade",
+      "sha256": "bab3cc763f8f6e378a710178a5a069a236583f7c41a4dbc7cc35e08b232bb9d8",
+      "source_id": "src_4086424b20115afdac9a9e897a4c7e73",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/arul28/ADE/blob/4e14f9cdf0e4825445b343f95823ddbbe3029544/README.md"
+    }
+  ],
+  "summary": "ADE is a local-first workspace for running multiple AI coding agents across desktop, web, terminal, and iOS clients, all attached to an always-on 'ADE Brain' process. Most evidence is README product description plus contributor instructions in AGENTS.md/CLAUDE.md.",
+  "superseded_claim_ids": []
+}

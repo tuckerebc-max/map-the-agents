@@ -1,0 +1,738 @@
+{
+  "applied_operation_id": "op_9384116a7fd94931a94c4112732bc885",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5854007065684055c855d94df624dd9f0a36471a76945da39c1f8f84c88d5f4e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 87,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L85-L87"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 79,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L73-L79"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 56,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L53-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_803933a95941f7dcb4c6ab1e7754d484d59bbb6726b7eeb59567e3df4e5cd461",
+        "slc_93a4e15c13a0a7ba1e0d2c6f7f94c9d98554ad9c2c8429503c851f581363c143",
+        "slc_a93d7e68eba0fec399da7cd92b3b263cd330dc219e7d25f01caa20625e537ebe"
+      ],
+      "text": "The product ships a CLI with `mobilevc start`, `status`, `logs` (with --follow), `config`, `stop`, and `public --relay` for relay connectivity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_513665df0e4f00cd3040a50ed51424803870a49ac3f762059ba1eaa21b19be34",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 157,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L155-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_771a912f80b17b9eacb7bce19c9f4f7e5148c58d98a99f19a2e8f19df4425c62"
+      ],
+      "text": "The Go server exposes `/ws`, `/healthz`, `/download`, and `/api/tts/synthesize`, and orchestrates sessions, permissions, files, logs, Skill/Memory, and ADB debugging."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d47ea68779a889a57e81b8bcbdb0c3ef7b2f3cba52bb6ebe5f0e8757089098b9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 151,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L140-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d000e6932de58827c6e4e03d1aea03ced717765f35e4e88f4fc703e4f2059b49"
+      ],
+      "text": "Architecture comprises a mobile browser/Flutter app, a Go server with WebSocket event stream, PTY/assistant runtime, ADB + WebRTC bridge, session store, and an optional ChatTTS sidecar."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8cc1bb28d6c871b2542b614e9651fddef5099262425981457c7ffb8d3c5ed9a6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 164,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L161-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a34a5f1a587d5bbfa81f5779a3223a986b18cdaca086042edba9d93d67f5ed0"
+      ],
+      "text": "The Flutter client entry is `mobile_vc/lib/main.dart`; root state is driven by `SessionController` and the home page `SessionHomePage` renders backend events."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41a99956f6398e284c6cfef71be3e1e4b15a02d0bc7aa3eed7f252d475ceb0aa",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L95-L95"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 93,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L91-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_880468f08bccce68d800a0af1cb80ec44fe33901f7fafda31cbd0788aac89cc6",
+        "slc_892ffa611fdeb4ee5ccc671e8543479db1242dbc63f787b7382d9820c9afb55b"
+      ],
+      "text": "Relay mode forwards only encrypted packets so the relay server cannot see plaintext; keys are exchanged out-of-band via QR scan, and a relay-only network exposure mode exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_109e8e5631ba526bcf34e3775c58f778e8c2d234534ec4604f0d5bd47bb18319",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L100-L101"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 234,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L224-L234"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 108,
+          "line_start": 107,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L107-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_360e243db352f2f826545882e45b9ea39b214afe70bad46706031e469a7e68f4",
+        "slc_3973e7010786355bc395fccac78fb393c538eedc2c166377930e2ad7e227215a",
+        "slc_56ac1cc559fe7582575864f87a2b314f575d8d7ea84980523ebaf78d9520ece6"
+      ],
+      "text": "Flutter Web assets are embedded in the Go backend binary with shared web/mobile UI and state logic; `npm run sync:web` copies build output into `cmd/server/web/`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60b605fa4e6a0de5dc4a5d6c568b7658afaed093fcd53cd03698c64c4017590d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 96,
+          "line_start": 95,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L95-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d19b544416edb3399adc2801d16daf34a9ee3d851a0cf8ab53b5754b844fd4a2"
+      ],
+      "text": "Sessions can be restored from native Claude CLI history mirrored from `~/.claude/projects/<cwd>/*.jsonl`, with missing assistant replies backfilled from that JSONL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc90637298acc50e9bd0367b221f2ecceac8272720a7eb1a4f01416c20a8d323",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L13-L15"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 76,
+          "line_start": 75,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L75-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cd6dd6f8b24479a9f36419e7df9031898438ff0bde39648cc96f2ea9ede4066",
+        "slc_c5f08d703f1a53a11ba14179f15bef3e54ff1044af9bd92ac88af16d78c8bb56"
+      ],
+      "text": "Session history length is configurable with resumed history converged to that window; reconnect can resume a selected session via `session_resume` with client cursor/runtime state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bff4e20a71f6a5f66d867ee2dca5609610bbbd44a0838e2939f4a5566eb9224a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 234,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L224-L234"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L15-L20"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3973e7010786355bc395fccac78fb393c538eedc2c166377930e2ad7e227215a",
+        "slc_6c90f3c24fef246e47da5d7ae98d502f34d0d6389341e4e47ea83adce7661756",
+        "slc_e4df2f7a014541e88210a3754ef26822abd4f0f68a3b865857042f5eb2acf074"
+      ],
+      "text": "Badges indicate Go 1.25 and Flutter 3.41; the npm package `@justprove/mobilevc` (version 0.2.10) distributes prebuilt platform backend binaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_61de1120ae6753d4517c66f1a20d8b122b42e8a2a2855a8a42728d6cc71f54f0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 113,
+          "line_start": 112,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L112-L113"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 120,
+          "line_start": 119,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L119-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a231c190ce6d9566c7324601ef72dfc4e3f9538edc8846da89d0aa87e8f9783",
+        "slc_871016b9b7c51162a966ef5c6bb0bbc3d985209628a8ab7d5d636d050eabdfb1"
+      ],
+      "text": "Firebase was removed as a dependency from the Web build while mobile push support, including iOS APNs, was retained."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ccfaa6b1b30b9bfe894db467e358a64958b1ba94f7988bdf7932aeca4e4677ec",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 122,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L114-L122"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 37,
+          "line_start": 35,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L35-L37"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 45,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L40-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_836a62c633768efd53e4a25b4e6ef4b450ffd41a8ecaee09933254298f856e42",
+        "slc_ac020884f6bffcbdd899c94a670c58054e871b6ff5ce6018c641ab89c11777d4",
+        "slc_df34cf2492cae9577e454cffbd92817c96f9dac1c8da737e912813113be3bf27"
+      ],
+      "text": "The product lets users manage Skill / Memory / Session Context from the phone, and recent updates optimized the mobile Skill/Memory management entry and display experience."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1da346edfde5449801f23c77c08e4e73ee4dbfe7122e19811a3f2e9ed8c70576",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "CHANGELOG.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md#L13-L15"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 108,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L103-L108"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 122,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L114-L122"
+        },
+        {
+          "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+          "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+          "line_end": 45,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "jaycrl/mobilevc",
+          "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md#L40-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cd6dd6f8b24479a9f36419e7df9031898438ff0bde39648cc96f2ea9ede4066",
+        "slc_7347d17c7c601a5d016129b923a0df073da153aa0df996bed7273a2655729a9d",
+        "slc_836a62c633768efd53e4a25b4e6ef4b450ffd41a8ecaee09933254298f856e42",
+        "slc_df34cf2492cae9577e454cffbd92817c96f9dac1c8da737e912813113be3bf27"
+      ],
+      "text": "The mobile client surfaces permission requests and Plan Mode handling for Claude/Codex, and recent updates added Codex sandbox mode settings with finer-grained permission control."
+    }
+  ],
+  "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 257,
+        "path": "README.md",
+        "size": 8320
+      },
+      {
+        "lines": 125,
+        "path": "CHANGELOG.md",
+        "size": 5704
+      },
+      {
+        "lines": 68,
+        "path": "CLAUDE.md",
+        "size": 2171
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODEX_LONG_OUTPUT_FIX.md",
+        "reason": "file-budget",
+        "size": 13194
+      },
+      {
+        "path": "TODO.md",
+        "reason": "file-budget",
+        "size": 7080
+      },
+      {
+        "path": "呜呜呜.txt",
+        "reason": "file-budget",
+        "size": 0
+      },
+      {
+        "path": "啊哈哈哈.txt",
+        "reason": "file-budget",
+        "size": 0
+      },
+      {
+        "path": "测试.txt",
+        "reason": "file-budget",
+        "size": 0
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 1651
+      },
+      {
+        "path": "docs/architecture/BACKEND_ANALYSIS.md",
+        "reason": "file-budget",
+        "size": 12351
+      },
+      {
+        "path": "docs/architecture/BACKEND_RESTRUCTURE_PLAN.md",
+        "reason": "file-budget",
+        "size": 18903
+      },
+      {
+        "path": "docs/architecture/CONTEXT.md",
+        "reason": "file-budget",
+        "size": 43670
+      },
+      {
+        "path": "docs/architecture/blueprint.md",
+        "reason": "file-budget",
+        "size": 8112
+      },
+      {
+        "path": "docs/architecture/current-logic.md",
+        "reason": "file-budget",
+        "size": 5653
+      },
+      {
+        "path": "docs/archive/bugfix-plan.md",
+        "reason": "file-budget",
+        "size": 1329
+      },
+      {
+        "path": "docs/archive/npm-publish-summary.md",
+        "reason": "file-budget",
+        "size": 2152
+      },
+      {
+        "path": "docs/archive/npm-publish-v0.1.12.md",
+        "reason": "file-budget",
+        "size": 3175
+      },
+      {
+        "path": "docs/archive/push-integration-summary.md",
+        "reason": "file-budget",
+        "size": 6253
+      },
+      {
+        "path": "docs/archive/scratch/README.md",
+        "reason": "file-budget",
+        "size": 212
+      },
+      {
+        "path": "docs/archive/scratch/hello.txt",
+        "reason": "file-budget",
+        "size": 19
+      },
+      {
+        "path": "docs/archive/scratch/optimization_suggestions.txt",
+        "reason": "file-budget",
+        "size": 3263
+      },
+      {
+        "path": "docs/archive/scratch/origin-promot/add.txt",
+        "reason": "file-budget",
+        "size": 2065
+      },
+      {
+        "path": "docs/archive/scratch/origin-promot/add2.txt",
+        "reason": "file-budget",
+        "size": 2650
+      },
+      {
+        "path": "docs/archive/scratch/origin-promot/add3.txt",
+        "reason": "file-budget",
+        "size": 1346
+      },
+      {
+        "path": "docs/archive/scratch/origin-promot/add4.txt",
+        "reason": "file-budget",
+        "size": 2585
+      },
+      {
+        "path": "docs/archive/scratch/origin-promot/add5.txt",
+        "reason": "file-budget",
+        "size": 2197
+      },
+      {
+        "path": "docs/archive/scratch/request.txt",
+        "reason": "file-budget",
+        "size": 3410
+      },
+      {
+        "path": "docs/archive/scratch/test.txt",
+        "reason": "file-budget",
+        "size": 27
+      },
+      {
+        "path": "docs/archive/scratch/test_permission.txt",
+        "reason": "file-budget",
+        "size": 19
+      },
+      {
+        "path": "docs/archive/scratch/today_branch_smoke.txt",
+        "reason": "file-budget",
+        "size": 19
+      },
+      {
+        "path": "docs/archive/web-migration-complete.md",
+        "reason": "file-budget",
+        "size": 4719
+      },
+      {
+        "path": "docs/archive/web-migration-done.md",
+        "reason": "file-budget",
+        "size": 1878
+      },
+      {
+        "path": "docs/archive/web-migration.md",
+        "reason": "file-budget",
+        "size": 4505
+      },
+      {
+        "path": "docs/guides/push-integration-checklist.md",
+        "reason": "file-budget",
+        "size": 5051
+      },
+      {
+        "path": "docs/guides/push-setup.md",
+        "reason": "file-budget",
+        "size": 8090
+      },
+      {
+        "path": "docs/guides/relay-deployment.md",
+        "reason": "file-budget",
+        "size": 7838
+      },
+      {
+        "path": "docs/guides/relay-user-guide.md",
+        "reason": "file-budget",
+        "size": 1338
+      },
+      {
+        "path": "docs/guides/testing-log.md",
+        "reason": "file-budget",
+        "size": 9349
+      },
+      {
+        "path": "docs/guides/web-embed-path.md",
+        "reason": "file-budget",
+        "size": 2769
+      },
+      {
+        "path": "docs/project-index.md",
+        "reason": "file-budget",
+        "size": 6950
+      },
+      {
+        "path": "docs/troubleshooting/flutter-web-blank-screen.md",
+        "reason": "file-budget",
+        "size": 2883
+      }
+    ],
+    "omitted_count": 38,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 991,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 41,
+      "complete": false,
+      "omitted": 38,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_399b67d77d6e5cc79fd631cb72e47564",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jaycrl/mobilevc/8f9eb5a13f41bee177383776a50db8b868c5b989/3de314f7245aeedf/manifest.json",
+  "package_id": "pkg_b0c328371a47c76e7423ae3b73d21dccd84f871442318228432e35b452af01a1",
+  "repo": "jaycrl/mobilevc",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ea2dbbcc7ea1376eedbcc7229749f6a704c6033a8fbbb1222fbe70babccb7b08",
+  "snapshot_id": "3de314f7245aeedf",
+  "sources": [
+    {
+      "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+      "git_sha": "d8096fb1e61b216f64cf1ba2d3ef0e8e7f9db12b",
+      "lines": 125,
+      "path": "CHANGELOG.md",
+      "repository": "jaycrl/mobilevc",
+      "sha256": "fa8ab618047493e268967eccf0d579445e7f2c3227cef9315f85b55be444cce7",
+      "source_id": "src_cee28cc954ad5197a0b1851936c2fd32",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CHANGELOG.md"
+    },
+    {
+      "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+      "git_sha": "2c5e154640636655f84b5c6f8d442a11f86df5b9",
+      "lines": 68,
+      "path": "CLAUDE.md",
+      "repository": "jaycrl/mobilevc",
+      "sha256": "7a11edf88c037e5409f33dcf4dba615d3d22589c5fd8600799fd89a11dac7cc9",
+      "source_id": "src_65f8be59c6d2512187c75ed409220cdf",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/CLAUDE.md"
+    },
+    {
+      "commit": "8f9eb5a13f41bee177383776a50db8b868c5b989",
+      "git_sha": "93152aa81ffcbdd96ac569792f2244d8fefcfa37",
+      "lines": 257,
+      "path": "README.md",
+      "repository": "jaycrl/mobilevc",
+      "sha256": "38610ff28eccfa4c1119b54587c79c2e094d179a22c263a9a09585c321d5fe9d",
+      "source_id": "src_db3f6c8c9d775f33b82f1e4cbb8cae21",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/JayCRL/MobileVC/blob/8f9eb5a13f41bee177383776a50db8b868c5b989/README.md"
+    }
+  ],
+  "summary": "MobileVC is a Go backend plus Flutter client that lets a phone control local Claude/Codex CLI sessions over LAN or an encrypted relay, distributed via npm with prebuilt binaries. Evidence covers architecture, CLI/HTTP interfaces, relay security design, session history handling, and dependencies; contributor-instruction-only claims were omitted per correction scope.",
+  "superseded_claim_ids": []
+}

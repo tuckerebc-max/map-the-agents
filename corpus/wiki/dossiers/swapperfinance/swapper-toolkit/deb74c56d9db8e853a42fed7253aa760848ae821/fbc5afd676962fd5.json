@@ -1,0 +1,440 @@
+{
+  "applied_operation_id": "op_a62ba7d8262846e090b9fb069276df7a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a11d99b58dee6a10a0333147bc03c3d6c71d737e65e2e519732872f43bab6b4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L11-L13"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e758bde1bc8f88eb90902e809e36284b38013426edb0fc22b30f0c6a55d874f",
+        "slc_9cbdbaf4b4bc9021f5f3510b8085772363962b3482dcecfda2ed6548046848b8"
+      ],
+      "text": "The toolkit is installed into agents via 'npx skills add swapperfinance/swapper-toolkit' and advertises compatibility with Claude Code, Cursor, Windsurf, Copilot, CrewAI, AutoGPT and any framework supporting the open skills standard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f68e3fc9817198e49428809fe178d0caca78ea8295accdf2c2b0749680d9df01",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 30,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L26-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e13ff618e5d725858d332b568ded57d2013474f368735d04cc4a6e2736b2d3f5"
+      ],
+      "text": "The /swapper-deposit skill triggers when a user asks to deposit, fund, top-up or bridge assets, when an agent detects insufficient wallet funds mid-task, or when fiat-to-crypto funding is wanted before a strategy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e721df561eeacba4c47142f3afc0c9ab6b09088d17ef1c3cac5edbc580a469d9",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 35,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L34-L35"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 42,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L37-L42"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 45,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L44-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06295247b9f576f53efe9b0485119ffbd6ec3468a150a2e6a417df687ca8c6fb",
+        "slc_8bc91ea9cf930c91a0cc2bc418faa73bd2eaa96860fa97ea4c0938123bc9fe58",
+        "slc_aa4223c74ba29bcebbea51666d5a227ec5ba3a47b35b270bdc345ea1d8cc753b"
+      ],
+      "text": "An example deposit interaction shows the skill resolving chain (Base 8453), token (USDC), protocol (Aave) and amount, then producing a deposit link the user confirms in a browser."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59aaa9bbd5212179867626b3db6ed82760c0a176ba749c657a5cc315806b8449",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 45,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L44-L45"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 93,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L90-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa4223c74ba29bcebbea51666d5a227ec5ba3a47b35b270bdc345ea1d8cc753b",
+        "slc_fc019967ae5ee4d89f6d43cd94d52d1aa2c9c7010a0bb4b59c4164a7a75b44a4"
+      ],
+      "text": "The deposit flow is link-based: the skill generates a deposit link for browser confirmation rather than executing transactions itself, and every transaction requires explicit user approval with fees and risks surfaced beforehand."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a09cd3ad3b5258c6d7805f362061e65343fbc6c9c74d2e450adffbd5873e284b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 93,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L90-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc019967ae5ee4d89f6d43cd94d52d1aa2c9c7010a0bb4b59c4164a7a75b44a4"
+      ],
+      "text": "The toolkit states private keys are never stored or accessed and transactions are never auto-approved."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31b6a4b0c1ce574ed9ae994fa86be01b29cc059c9729b7bd3f4c6cf0a0dc36f1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L7-L7"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 99,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L97-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_630aef782e30fbd6707b65ccc3a0e4497e2a7b377b492f7d12e9f4c52a4c9cc3",
+        "slc_6399fd4b8708452e775a1a76733a0038848c0b7146565b8fb567ed55cc801917"
+      ],
+      "text": "The product relies on Chainlink CRE for deposit/compliance/settlement orchestration, Chainlink CCIP for cross-chain interoperability (60+ blockchains), and Mastercard for card processing in 170+ countries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5edadca7d368cae93da13666235d11c6f318f95953cb3e95712d699b44c82618",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 86,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L78-L86"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 76,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L75-L76"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L71-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08311eb53e2b4865676a76d3849432b93d0c64f2e19755942882fcfd9de69e2a",
+        "slc_a26f6c887e8a5e859771831e7a521bda7a2dac7d848f1f2606b5a44e72016e1a",
+        "slc_b48116417af9fd5a1b6f7a2e1b3bc0c42ffcd1b7ae1de9f521a8797619ef393a"
+      ],
+      "text": "An npm SDK, @swapper-finance/deposit-sdk, exposes openSwapperModal accepting integratorId, destination chain ID and token address, deposit wallet address, theme styles, and supported deposit options like transferCrypto and depositWithCash."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6103ce019f3f96fba8e601eb08f91fc6d96b77fd6b98f7b6c894b1da705805c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 24,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L21-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ed09c26e5f240dddc87a1c9f84d89c20d62930bd96c7749880f8daf65c789464"
+      ],
+      "text": "Deposits support direct transfers to any wallet address, cross-chain bridging via CCIP, protocol deposits into lending, staking and liquidity pools, and fiat on-ramps via Mastercard, Visa, Apple Pay and Google Pay."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_585e6782acb0c8494b60f8ead209e8e776a125511b6395d26a10a26c25e7de39",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9a3f323cfd9f225647d56c1340bb15251bba6b487b5195e6719b7b25e3d8c775"
+      ],
+      "text": "Supported deposit chains are listed as Ethereum, Base, Arbitrum, Optimism, Polygon, Fast, Solana, HyperEVM, BNB Chain and Avalanche."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b22d0316aaa81831498e8675d4894f0362fad00469007437eb218765b3a30bd0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "8e47e9cb33f8eefc77095e0be2866167f6e4ffa5",
+          "line_end": 64,
+          "line_start": 60,
+          "path": "CLAUDE.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/CLAUDE.md#L60-L64"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "8e47e9cb33f8eefc77095e0be2866167f6e4ffa5",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "CLAUDE.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/CLAUDE.md#L36-L38"
+        },
+        {
+          "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+          "git_sha": "8e47e9cb33f8eefc77095e0be2866167f6e4ffa5",
+          "line_end": 41,
+          "line_start": 40,
+          "path": "CLAUDE.md",
+          "repository": "swapperfinance/swapper-toolkit",
+          "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/CLAUDE.md#L40-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63fdfe85340e62cc2b4a318ab68acd122c0a66ec9a9a61f37a6bd20c5775431f",
+        "slc_bd359475b81ed6b6188e98f7693963396468e3193dff20143ee6f131c1f50c06",
+        "slc_ea29b85ec171ddae80e52c97f31b05b61f6521411857f9754af4d164438c9d35"
+      ],
+      "text": "Repository development practice: CLAUDE.md instructs that the deposit skill builds a Swapper deeplink with a hardcoded integratorId, uses the zero address for native tokens, and that agents must display the full deeplink URL, never auto-approve transactions, surface fees and risks, and never store or access private keys."
+    }
+  ],
+  "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 108,
+        "path": "README.md",
+        "size": 3509
+      },
+      {
+        "lines": 64,
+        "path": "CLAUDE.md",
+        "size": 2453
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 7,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_580f349e82545d14b8336113f52cff79",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/swapperfinance/swapper-toolkit/deb74c56d9db8e853a42fed7253aa760848ae821/fbc5afd676962fd5/manifest.json",
+  "package_id": "pkg_fa5949f21d1c4ffc34f05ec2a33ee3f89bb0e98527e3f2c526bf983b8b25903f",
+  "repo": "swapperfinance/swapper-toolkit",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "248a6bd8e2b3df65583cc60e9473743c79a8f5bb3852be9155dc199831c6a2f0",
+  "snapshot_id": "fbc5afd676962fd5",
+  "sources": [
+    {
+      "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+      "git_sha": "8e47e9cb33f8eefc77095e0be2866167f6e4ffa5",
+      "lines": 64,
+      "path": "CLAUDE.md",
+      "repository": "swapperfinance/swapper-toolkit",
+      "sha256": "6dc3fe7c47e0165f0dd5f84c320b1b310fca1bd5ac33a68900ca84d9ae067afa",
+      "source_id": "src_6c177a8e26ac5c65abc4af03c37a5bd8",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/CLAUDE.md"
+    },
+    {
+      "commit": "deb74c56d9db8e853a42fed7253aa760848ae821",
+      "git_sha": "c689c728f7e83b79f769a169139667f4737a0826",
+      "lines": 108,
+      "path": "README.md",
+      "repository": "swapperfinance/swapper-toolkit",
+      "sha256": "0ae22f5f2a0f7e8d7be29f009155119e5d58ef76c62189fc9dad0496782955ca",
+      "source_id": "src_2d56c04eca73554e98f71095f3f89c10",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/swapperfinance/swapper-toolkit/blob/deb74c56d9db8e853a42fed7253aa760848ae821/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The toolkit is installed into agents via 'npx skills add swapperfinance/swapper-toolkit' and advertises compatibility with Claude Code, Cursor, Windsurf, Copilot, CrewAI, AutoGPT and any framework supporting the open skills standard. The /swapper-deposit skill triggers when a user asks to deposit, fund, top-up or bridge assets, when an agent detects insufficient wallet funds mid-task, or when fiat-to-crypto funding is wanted before a strategy.",
+  "superseded_claim_ids": []
+}

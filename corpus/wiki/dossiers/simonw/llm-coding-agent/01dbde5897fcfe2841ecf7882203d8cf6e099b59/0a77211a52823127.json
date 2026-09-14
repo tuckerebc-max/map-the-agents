@@ -1,0 +1,597 @@
+{
+  "applied_operation_id": "op_b56015c5c5d941728652e2ed3622ab01",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_05a130e5c22ae8f56894e63c7adbc40240b8c70ecb7926309e1f96f2b2008b3c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84c78b4ab044f1c529cf4f23241fa2fd2c96fe42561eba4f036c8d383866b33b"
+      ],
+      "text": "Installing the package as an LLM plugin adds an `llm code` command that starts an interactive coding agent session in the current directory with any tool-capable model LLM supports."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b973c5f241e60d897fa48bc5fceb0613d81ffe76c19e9fa6ef59c839a042462",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 68,
+          "line_start": 56,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L56-L68"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 38,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L32-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26ae0ac19bf14a4879ac6f03b81fc6870ef3d9daa4bce288d0be1a7a026d88e1",
+        "slc_b2e856c40ce8928ff6296c1f7bb4095cf61b886338a8917d7a9ef4a62c906bca"
+      ],
+      "text": "The `llm code` CLI accepts options including an initial prompt, -m/--model, -s/--system, -d/--directory, --yolo, repeatable --allow glob patterns, --no-tool, -c/--continue, --cid, -o model options, and --chain-limit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ead4edc1fbfe73e19563b5d0b12b3892066e45adec7c08ece3fb294e4f3d1ccb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 74,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L73-L74"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 233,
+          "line_start": 223,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L223-L233"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 71,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L63-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_524dc18ac76d079eb9991c707138eddb60777090dee455ed655e9adbbd3f1f2f",
+        "slc_f12816577fd3022b4b4c994701dd4051e47071ca8178c613150983aa6b605bfe",
+        "slc_feafb8594dbf98a14c5321bf57770e080dd231f01a2221f84e9128a0467e6673"
+      ],
+      "text": "A Python API exposes CodingAgent with model, root, approve, and chain_limit parameters; run() returns final text plus tool call/result pairs, and subsequent run() calls continue the same conversation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77c31256546cc921ba24364dc1db10558798a76b2e05b6d3f52701f826c9df48",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L111-L113"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 105,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L102-L105"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L86-L86"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L91-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a013b61966e4538cc287b967d4d8970370160573e9504a709dd1c1d9620286b",
+        "slc_94688e68be36921fc3ba477117d2b6e485c19f3c7825aad73959ff68ca030681",
+        "slc_ae1845c9359f652ef9c6051dbccf2e324ec94cda4d18629b78661cf366a8c006",
+        "slc_c459be00212b59aa2affcad3b5b77e9b86a6aca1f7a94eec8207801051d549fe"
+      ],
+      "text": "CodingTools is an llm.Toolbox confined to a root directory providing read_file, write_file, edit_file, list_files, search_files, and execute_command tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c1c5848689dbe4f5688bfedf3b1342d78ee8fd27a944634004f90efa1827a65",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L98-L98"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 130,
+          "line_start": 125,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L125-L130"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_553a56b7fe11977c2ec9d3b4c91fa69c083d123ccde57827838ebe88fa9d95c2",
+        "slc_71e050135180f5a6becab5389a82b17caadee1212e531fce756866590c168780"
+      ],
+      "text": "edit_file performs exact string replacement requiring old_string to appear exactly once unless replace_all is set, and returns a unified diff so the model can verify its edit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_01e602b4a3b3c60f70407054fd9b8dbfb7f0bc9c6a149bd07577933ebe8e0ac9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 103,
+          "line_start": 99,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L99-L103"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L117-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04dc95e39c2a848b9957859705b579199cb3b46b8dd6fabd1b0c82ab11dc2709",
+        "slc_15311fceded8c8772d1400d062f7ba27d3cff4da50eef02f4e548ee349ead733"
+      ],
+      "text": "All file access is confined to the session root: paths escaping via '..', absolute paths, or symlinks return an 'Error:' string instead of content, letting the model self-correct."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_37698841144f6e248c0570549c1451204410ec42d3e5e15ea26e0dcbea3b680c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 183,
+          "line_start": 173,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L173-L183"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d5adc85d761ae7a84bad4b082aa455dd160d83390624ee001220fe920f8c04d",
+        "slc_551f96d9e25b42e8f7d9a4778ac9b1393cfdf53d1d4715128846a7c20387e9e4"
+      ],
+      "text": "Read-only tools run freely, while writes, edits, and shell commands require approval; 'y' approves once, 'a' approves similar actions for the session, and denial is reported back to the model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00e53cc6633f6bddee4cade1ed3598f8dc6cd73854e7f8671bd2dded45883172",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 161,
+          "line_start": 161,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L161-L161"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 183,
+          "line_start": 173,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L173-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b99a56f3cd7da051965fde8dc51cbb5d2deabbb4b9b8ec483f172d6e5978c05",
+        "slc_4d5adc85d761ae7a84bad4b082aa455dd160d83390624ee001220fe920f8c04d"
+      ],
+      "text": "The permission system is implemented as a before_call callback on the chain (raising llm.CancelToolCall on denial), with --allow patterns and --yolo skipping prompts; approvals are session-scoped and not persisted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba6ecd1deaba4c0493baada9920faa08f560a8dba835e9484a48deda377495b2",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L82-L82"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 216,
+          "line_start": 209,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L209-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78045b98c2c0f0b432d46a927b1dad9cf1a1a0a9b81ef21b225a52ae5c5cbeb7",
+        "slc_ce478fd42d49b205f68f9c93fe90f14ea2ecda46f4c9ca3063d88a0055c5a572"
+      ],
+      "text": "The agent loop uses conversation.chain with a chain_limit (default 25) bounding tool-execution rounds per run; hitting the limit sets result.hit_limit and returns control to the user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_32ed866bcd5a9f97c53a291aabbd26ec1f96a6bc3e8608f9f366cd3b7c11ced8",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 88,
+          "line_start": 87,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L87-L88"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L42-L42"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 48,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L44-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c82a614e7f8e5f3d783c5e87f542224fc4150e13c973775714b6f0080227950",
+        "slc_79e09faf58d2ab11b7d05ddde280c2a1a33427b14cb81fb145fbd0096733f4e3",
+        "slc_b47bcea6a58d8dce5c23a972f621694d8286a6a11074d18bba6d337f43cd6751"
+      ],
+      "text": "Sessions are logged to LLM's SQLite database like `llm chat`, so `llm logs` shows full transcripts including tool calls, and conversations can be resumed via -c or --cid."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70a40b8d7668a1e5e247e0904d1dbb2ba96dfcd85cde3b714f0ad26761eaff98",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 37,
+          "line_start": 30,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L30-L37"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 43,
+          "line_start": 39,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L39-L43"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 25,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L22-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ff536fb74d86e068d11627fcaebe44882a5c63f459bdc846aaec8b791a49a1f",
+        "slc_b3144c80a06655358e7a15206c2c03574bc5e91e4e625845d11163921ce73e67",
+        "slc_cde09404f4b444bc3fb06c396c75261bbf3d8dd247e7510ca2675eef637fb308"
+      ],
+      "text": "The package requires Python 3.10+ and pins llm>=0.32a3, needing pip install --pre until LLM 0.32 is stable; it has no other runtime dependencies beyond what llm brings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7de350f2d97856f6fd0b7302d524d57ba3d6ed9b52bfc97373fa184b6958693",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 26,
+          "line_start": 21,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L21-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eaa110d9951adc13a1a24f06d9acca3d1dd81080cfbcf77c04d7cf331b235da6"
+      ],
+      "text": "The spec lists non-goals for the initial release: no sandboxing or containerization (safety comes from the approval flow), no MCP, sub-agents, git or IDE integration, and no Windows-specific shell handling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_933b7538f182d389a8a6f45f7f4832787bb3819eb9e261eda01d65ce6550c0ee",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 134,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L121-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bc36f1701343407b846db7778d0a5fd64e30b51f9b05cd67552ac19682645d55"
+      ],
+      "text": "Repository development practice: contributors create a virtualenv, install with `python -m pip install -e '.[test]'`, and run tests via `python -m pytest`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5646bd937c74811f9b3f8697396fc75138c43621b9eb60ac2686a896068a30f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md#L107-L107"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 138,
+          "line_start": 134,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L134-L138"
+        },
+        {
+          "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+          "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+          "line_end": 144,
+          "line_start": 142,
+          "path": "spec.md",
+          "repository": "simonw/llm-coding-agent",
+          "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md#L142-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4be47f213f392e56f2feb28d8448afe50d920bbd4c7b2239f4593f64e763fe14",
+        "slc_83bd748ce473105113ebffad9b77f9a8634a34f532ccb58c96778a1243e2bc80",
+        "slc_a4d5ee19ff1a9af731b0cda5d44f03f1123280c59a57b64afdf780bf54fe568e"
+      ],
+      "text": "search_files appears to use ripgrep when installed with a pure-Python fallback producing identical output; list_files reportedly respects .gitignore, delegating to git ls-files when available."
+    }
+  ],
+  "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 134,
+        "path": "README.md",
+        "size": 6740
+      },
+      {
+        "lines": 286,
+        "path": "spec.md",
+        "size": 13417
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 17,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_86dd568100505697845538997842187e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/simonw/llm-coding-agent/01dbde5897fcfe2841ecf7882203d8cf6e099b59/0a77211a52823127/manifest.json",
+  "package_id": "pkg_440edfa9d45788705c037f7814ba8e56af3f243e3b144a4e162cdee2ba9b6d09",
+  "repo": "simonw/llm-coding-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fdb7f8509093e8e7f0a5576aa14e33626c408094d86abb208503e1a66a32c74f",
+  "snapshot_id": "0a77211a52823127",
+  "sources": [
+    {
+      "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+      "git_sha": "ac7be5f0a54872e77a83ecc272868133b47fca7d",
+      "lines": 134,
+      "path": "README.md",
+      "repository": "simonw/llm-coding-agent",
+      "sha256": "e92195585e098a5cc9642ef5cebe1582461a5dd4e4d7e3b40e35e11bdf915f5e",
+      "source_id": "src_564dd00c461252a69e0de3c384820aa7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/README.md"
+    },
+    {
+      "commit": "01dbde5897fcfe2841ecf7882203d8cf6e099b59",
+      "git_sha": "75668f25655da4f0830ad24061b6e87a33662f11",
+      "lines": 286,
+      "path": "spec.md",
+      "repository": "simonw/llm-coding-agent",
+      "sha256": "616673f4269cdbf994b32440054f7f02fb29eec55793e78ae8bb09bf96733ce0",
+      "source_id": "src_4f339094fadb542a85605b599c4b63de",
+      "stored": "spec.md-bc6661da34ec.md",
+      "url": "https://github.com/simonw/llm-coding-agent/blob/01dbde5897fcfe2841ecf7882203d8cf6e099b59/spec.md"
+    }
+  ],
+  "summary": "The evidence describes llm-coding-agent, an LLM-plugin coding agent exposing an `llm code` CLI and a Python CodingAgent/CodingTools API with file, search, and shell tools, an approval-based permission system, and SQLite session logging. Most content is specification/README documentation rather than inspected code.",
+  "superseded_claim_ids": []
+}

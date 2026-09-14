@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_133420f4dd77732e0c2e4b41a5ff5826abac6b40e9da6bff45f0df62049ef718
+- clm_3728e21889e280730ab313dfa91344b6d4c623b3fe6c7e3b4699db6c0bcc8662
+- clm_3801c964b65f7597e9f7d60c83e516427857fc463d38a22dd9951f39b241316c
+- clm_459d1d3409a0f762b8c5c8a4f05d750889efd66644741280692140c278ae0f57
+- clm_5afac29e65f2a744ccd53415708faba7d284228d4e24087666ba00adb469b167
+- clm_a196e6acf6b38ed34c09a53d3a17eef2d4471ce58d48636aee99c0aab893dd8c
+- clm_ca10673160b6c8c0d06449a0bfeda3d4d41ab9209dad96cfe35ac0ee2ba0f9ef
+- clm_dd204cc880db3b1d3d59bef29e7f49bb5b0ec30ee2c7454cb5176801dddab402
+- clm_e0858bc1e1de53a7384d5215cceb8947b4f0dd4996bc0790ee0e32af7fba82cf
+- clm_ea442db9360db0c3bb535b5fcf3892009a02367fb8d3690c4e28ef41ffe3e467
+maturity: draft
+page_id: pg_ddab850026445fdcb3e34f83dbc4055a
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: syncora-ai/synthetic-ai-developer-productivity-dataset
+updated_at: '2026-09-14T04:24:35Z'
+---
+
+# syncora-ai/synthetic-ai-developer-productivity-dataset
+
+<!-- rcw:begin owner=entity:ent_f76bcf19ab51550595de94f0d15a85e0 block=evidence -->
+- syncora-ai/synthetic-ai-developer-productivity-dataset is mentioned in this evidence. [@claim:clm_133420f4dd77732e0c2e4b41a5ff5826abac6b40e9da6bff45f0df62049ef718] [@claim:clm_3728e21889e280730ab313dfa91344b6d4c623b3fe6c7e3b4699db6c0bcc8662] [@claim:clm_3801c964b65f7597e9f7d60c83e516427857fc463d38a22dd9951f39b241316c] [@claim:clm_459d1d3409a0f762b8c5c8a4f05d750889efd66644741280692140c278ae0f57] [@claim:clm_5afac29e65f2a744ccd53415708faba7d284228d4e24087666ba00adb469b167] [@claim:clm_a196e6acf6b38ed34c09a53d3a17eef2d4471ce58d48636aee99c0aab893dd8c] [@claim:clm_ca10673160b6c8c0d06449a0bfeda3d4d41ab9209dad96cfe35ac0ee2ba0f9ef] [@claim:clm_dd204cc880db3b1d3d59bef29e7f49bb5b0ec30ee2c7454cb5176801dddab402] [@claim:clm_e0858bc1e1de53a7384d5215cceb8947b4f0dd4996bc0790ee0e32af7fba82cf] [@claim:clm_ea442db9360db0c3bb535b5fcf3892009a02367fb8d3690c4e28ef41ffe3e467]
+<!-- rcw:end owner=entity:ent_f76bcf19ab51550595de94f0d15a85e0 block=evidence -->
+
+## Researcher notes
+

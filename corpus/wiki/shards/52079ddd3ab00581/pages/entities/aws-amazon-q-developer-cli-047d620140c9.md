@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0347fc06cd25320cbcfff0e1a47b120b65f0d1a7e260f64fb9b4fcf72826693d
+- clm_11c8952ee4dd045db2b1fbf14af4701ddfc82f9c64f2da36143ddb7ad079735a
+- clm_2983288e6f8844552e4040f302925ec47a6bce3b5b90f6dbaf1b4984126eee0c
+- clm_38051fa623c098bb314426402b8dabfb3b1c0c20d449a21a2eb35b7d131dd7b0
+- clm_3e682aabc706c0737272b81f88722d17e5bd166111b55b7246566d6e4cca40fc
+- clm_7451d006a5619d5533b960dffee79cf6d97616c0c27a6a6636d9e3ebe58f24ab
+- clm_9588730130eae209277eb1411013cf5ee0f6c00f94cf86f230e03afe80245f6a
+- clm_9a049dcd95f0f40120b9ef413d96e2b257fb9044fb65bcf28f5ed458e3edb1ec
+- clm_9f9dbec13c96aa90485a5264c296454d5fe870c6d999f4073489024bb72706d0
+- clm_b400a4c7ebbb5a9d4ec926f0792c8c0de9874fbd1a0c8c6bb60e5425a4fdd314
+- clm_e73a9f1cec7ee8e60e3c1afbf841c371d725b5d8b6390a1ca2ef22aba960911b
+maturity: draft
+page_id: pg_0ca7e61c979a5db3b445047d620140c9
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: aws/amazon-q-developer-cli
+updated_at: '2026-09-14T01:59:48Z'
+---
+
+# aws/amazon-q-developer-cli
+
+<!-- rcw:begin owner=entity:ent_3088beb5436053cc81772da38a3a675a block=evidence -->
+- aws/amazon-q-developer-cli is mentioned in this evidence. [@claim:clm_0347fc06cd25320cbcfff0e1a47b120b65f0d1a7e260f64fb9b4fcf72826693d] [@claim:clm_11c8952ee4dd045db2b1fbf14af4701ddfc82f9c64f2da36143ddb7ad079735a] [@claim:clm_2983288e6f8844552e4040f302925ec47a6bce3b5b90f6dbaf1b4984126eee0c] [@claim:clm_38051fa623c098bb314426402b8dabfb3b1c0c20d449a21a2eb35b7d131dd7b0] [@claim:clm_3e682aabc706c0737272b81f88722d17e5bd166111b55b7246566d6e4cca40fc] [@claim:clm_7451d006a5619d5533b960dffee79cf6d97616c0c27a6a6636d9e3ebe58f24ab] [@claim:clm_9588730130eae209277eb1411013cf5ee0f6c00f94cf86f230e03afe80245f6a] [@claim:clm_9a049dcd95f0f40120b9ef413d96e2b257fb9044fb65bcf28f5ed458e3edb1ec] [@claim:clm_9f9dbec13c96aa90485a5264c296454d5fe870c6d999f4073489024bb72706d0] [@claim:clm_b400a4c7ebbb5a9d4ec926f0792c8c0de9874fbd1a0c8c6bb60e5425a4fdd314] [@claim:clm_e73a9f1cec7ee8e60e3c1afbf841c371d725b5d8b6390a1ca2ef22aba960911b]
+<!-- rcw:end owner=entity:ent_3088beb5436053cc81772da38a3a675a block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1ddcc2f3ba435779332b7fc26cfe40eb7fc9c299f1650767e9a508b214ff629f
+- clm_264f186b7d3181da23bee4b706e4acaf3ce0087d544c74a78089e42b21d13f0d
+- clm_29831ec274fcf5937cae4b3b81c1c5fcdab06c0e5dd9191045fdfcb3dc124e2f
+- clm_508610f86caa71d8a60c0007f703645378f9a5f78c5389e42bc0fc152b606f99
+- clm_5b62beeddb41f0cceebcf6b71ebd7ff84918cc5f5101daf82cc12153526f4c07
+- clm_7f1c67ae36e7a9343a45f00c40ceede4f15996adf247c77133a51d4f1beb6e93
+- clm_8374dcf6a5449d05bc5027669e5d3eef0dd0489cc761195d0962650a7f29ee71
+- clm_bd944c45bd695753a1a2348fdd9ad8d9a9dbb3c45171cf89d457a37e536eadbe
+- clm_c210ef6ff92d634ad5e213f0898363670b8f34945e7c5920323c7154ea61b5ab
+- clm_ca0202b988c8d7907b8680595a89a1420534460b8d6bd605e8ccf58feb8bc9f1
+- clm_faefd5fdf77346e204c2b2d6ae2944222a61de8860daf1eed8b67f20029a7618
+maturity: draft
+page_id: pg_521868e604ca5b26898cde63895d196f
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: charmbracelet/fantasy
+updated_at: '2026-09-14T03:06:09Z'
+---
+
+# charmbracelet/fantasy
+
+<!-- rcw:begin owner=entity:ent_e46a7b3590c05daba2d6296403a771f9 block=evidence -->
+- charmbracelet/fantasy is mentioned in this evidence. [@claim:clm_1ddcc2f3ba435779332b7fc26cfe40eb7fc9c299f1650767e9a508b214ff629f] [@claim:clm_264f186b7d3181da23bee4b706e4acaf3ce0087d544c74a78089e42b21d13f0d] [@claim:clm_29831ec274fcf5937cae4b3b81c1c5fcdab06c0e5dd9191045fdfcb3dc124e2f] [@claim:clm_508610f86caa71d8a60c0007f703645378f9a5f78c5389e42bc0fc152b606f99] [@claim:clm_5b62beeddb41f0cceebcf6b71ebd7ff84918cc5f5101daf82cc12153526f4c07] [@claim:clm_7f1c67ae36e7a9343a45f00c40ceede4f15996adf247c77133a51d4f1beb6e93] [@claim:clm_8374dcf6a5449d05bc5027669e5d3eef0dd0489cc761195d0962650a7f29ee71] [@claim:clm_bd944c45bd695753a1a2348fdd9ad8d9a9dbb3c45171cf89d457a37e536eadbe] [@claim:clm_c210ef6ff92d634ad5e213f0898363670b8f34945e7c5920323c7154ea61b5ab] [@claim:clm_ca0202b988c8d7907b8680595a89a1420534460b8d6bd605e8ccf58feb8bc9f1] [@claim:clm_faefd5fdf77346e204c2b2d6ae2944222a61de8860daf1eed8b67f20029a7618]
+<!-- rcw:end owner=entity:ent_e46a7b3590c05daba2d6296403a771f9 block=evidence -->
+
+## Researcher notes
+

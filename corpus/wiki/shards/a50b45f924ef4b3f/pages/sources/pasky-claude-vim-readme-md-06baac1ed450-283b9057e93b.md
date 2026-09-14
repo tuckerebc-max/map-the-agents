@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_102203d8abce7135a0eda9395204ea40176213c405f41e2ddd949ec85a883032
+- clm_1bed4b64f90aa730550980d6038a12ae1b89a4f7b6e93917efa00c2098c63947
+- clm_2d71c488f932588b7bc7560de473d884f49277e963c58828ca1d89853f9e43f8
+- clm_4923a2a6b08b23d4247ede45e8b579681767f28167a0d3466c2ad141d0f1083b
+- clm_517af2b4125878100c8cbde83c2e48511aef95c9f18dcdb2ef122a5e167df5f0
+- clm_7a7f496c7ca0f7e03673acdcd4dc8a08960f48a0ba2816147f5b25b490769ab7
+- clm_a132885a2e579777985788b683f9fae055de7ef82cef7db8797388673df713de
+- clm_a7e1944d19dafdbc9423b023d42332b8175d6210863e4cd985c584943fdb9b5c
+- clm_b3d2a3a113433b0327b82fa572039d0c4b5894c27b9ac6db331414f61fdd689d
+- clm_b5abb95f3f3e6459767f2ef32c921303392f5208cc71734431185a594b389226
+- clm_c69732881bc932410b70b0e14693d641e63037117e45487d31382d250f02d5e9
+- clm_f8a16fedbc10325381988940ccf8620333b547224957949982543fab8ebe159c
+maturity: draft
+page_id: pg_e5231ba713df5181b822283b9057e93b
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_868fbc5fc430505f91f505dce3fd2bf0
+title: pasky/claude.vim/README.md @ 06baac1ed450
+updated_at: '2026-09-14T02:30:00Z'
+---
+
+# pasky/claude.vim/README.md @ 06baac1ed450
+
+<!-- rcw:begin owner=source:src_868fbc5fc430505f91f505dce3fd2bf0 block=evidence -->
+- In chat mode Claude sees the full content of all buffers listed in :buffers, and proposed code changes pop up a diff mode for review when possible. [@claim:clm_102203d8abce7135a0eda9395204ea40176213c405f41e2ddd949ec85a883032]
+- Because Sonnet 3.5 is not deemed capable of fully autonomous complex tasks, the design keeps the human in control: users chat, review, and can reject changes and tool execution attempts. [@claim:clm_1bed4b64f90aa730550980d6038a12ae1b89a4f7b6e93917efa00c2098c63947]
+- The current version can also execute shell scripts, and the plugin can search the web when it lacks knowledge, with web access requiring elinks or felinks installed. [@claim:clm_2d71c488f932588b7bc7560de473d884f49277e963c58828ca1d89853f9e43f8]
+- The plugin offers two main interaction modes: a simple implementation assistant (ClaudeImplement) and a chat interface (ClaudeChat). [@claim:clm_4923a2a6b08b23d4247ede45e8b579681767f28167a0d3466c2ad141d0f1083b]
+- The plugin is explicitly not code completion like Copilot; it provides a chat/instruction-centric interface optimized for human collaboration, with chat history access and vimdiff review as key features. [@claim:clm_517af2b4125878100c8cbde83c2e48511aef95c9f18dcdb2ef122a5e167df5f0]
+- Chat history is sent to Claude with each request; previous interactions are folded in the buffer and users can edit or delete the history to redact it. [@claim:clm_7a7f496c7ca0f7e03673acdcd4dc8a08960f48a0ba2816147f5b25b490769ab7]
+- ClaudeImplement works on a visual-mode selection: the selected block is all Claude sees, with no additional context, and proposed changes are reviewed in diff mode. [@claim:clm_a132885a2e579777985788b683f9fae055de7ef82cef7db8797388673df713de]
+- The README warns this is early alpha software expected to evolve rapidly, possibly in backwards-incompatible ways. [@claim:clm_a7e1944d19dafdbc9423b023d42332b8175d6210863e4cd985c584943fdb9b5c]
+- The plugin uses the Anthropic Claude API by default (API key set via g:claude_api_key), with AWS Bedrock available as an alternative provider via g:claude_use_bedrock. [@claim:clm_b3d2a3a113433b0327b82fa572039d0c4b5894c27b9ac6db331414f61fdd689d]
+- Web access depends on installing elinks or felinks; Google search additionally requires a one-time manual cookie-consent step in elinks. [@claim:clm_b5abb95f3f3e6459767f2ef32c921303392f5208cc71734431185a594b389226]
+- Every Q&A roundtrip sends full chat history and all buffer content, which can consume tokens quickly and incur real API costs; users are advised to prune history and watch billing. [@claim:clm_c69732881bc932410b70b0e14693d641e63037117e45487d31382d250f02d5e9]
+- The plugin can open files and execute vim commands via a Claude Tools interface, and can evaluate Python expressions only with the user's case-by-case consent. [@claim:clm_f8a16fedbc10325381988940ccf8620333b547224957949982543fab8ebe159c]
+<!-- rcw:end owner=source:src_868fbc5fc430505f91f505dce3fd2bf0 block=evidence -->
+
+## Researcher notes
+

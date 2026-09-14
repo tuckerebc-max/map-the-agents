@@ -1,0 +1,622 @@
+{
+  "applied_operation_id": "op_26ffd482152b4679b5a9c5ba9f00f9fb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a75a4d27cc4d14393c3120aac57a6589b182dd3a492d09bb3b03271f1a52ff2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 80,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L71-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6592c8a4ed97504f0bb70217a7d8ebf942d38b8b660027d576cedbb3c793f104"
+      ],
+      "text": "The CLI accepts options including --port (default 3000), --hostname, --verbose, --password, --executable, --claude-dir, --api-only, and --base-path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c19be55894d6b155d12bce17b5c562df6ddd5866e7c7fa9a8bf1bb147037ea66",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L153-L153"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 151,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L150-L151"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L148-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7fb973dda9fd19288b106890fc6fe67854d5f649fa56d71f82e176173b64c5be",
+        "slc_ec83c77e4f3518550527a1357115e359ddd3776af204774deeff549fef48b2df",
+        "slc_f0f21462de98e2834bd4228ab3c081fc8a4fa6c5a2b40322022b57265ed8fef7"
+      ],
+      "text": "When a password is configured, /api routes require authentication via a ccv-session cookie from /api/auth/login or an Authorization: Bearer header; without a password, API auth is disabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34eded67735cdb475367893e9b5d1a3c68ff89c5a4f8849f7e5749a23ccb74f1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L124-L124"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 144,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L142-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cfd5ce8db6a85b9fb21d3c6315787c8858486b88adc3feeb77f1b8cacabe5694",
+        "slc_df217140a686e87ff2a9e38d68c6070b37b57dac7e7b992983fb5ae794888dd3"
+      ],
+      "text": "Configuration can come from command-line options or environment variables such as CCV_PASSWORD and CCV_CC_EXECUTABLE_PATH, with CLI options taking precedence over environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5723cc779483262d08a585035b807ad0de57d3d9783ee789b735cf4a7cc5e573",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 238,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L236-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37ebbe06ca62c038ba80803ebb5a6e0be5b15cea727e815064063b3d9169d676"
+      ],
+      "text": "The app reads Claude Code conversation logs from ~/.claude/projects/<project>/<session-id>.jsonl JSONL files and automatically discovers new projects and sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_746ef0fe0c9accc687c12d9e413503b3793e5ba8d1732072afdcad8f150a61a5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 289,
+          "line_start": 284,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L284-L289"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81306a6b389efed831b94da605291ebf7c34ede7e06aa89ce069e4c9fbc44d8c",
+        "slc_8c25ee66122085212697ea4ba482352a6d5d74d53112213aa3110ed343b1a2ea"
+      ],
+      "text": "Conversation data is preserved through strict Zod schema validation, with a progressive-disclosure UI that reveals details on demand."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5a1107dda98ff15127b004cd1344fbbad907ac83e0de2cced33132769a78917c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05c0575ce9b028737c2a6e6345c5fab6c85d2db958d6038c9c0a94084fc1ae58"
+      ],
+      "text": "The product includes an integrated terminal emulator in a bottom panel, letting users launch Claude Code from the browser without leaving it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ccf7a6c54579992915405c6872f10fe6159e863d602ff78a992e9fd81ad6d70",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2bac14ef13f07dd1e33dd7b6eb50de4faae9401e890ac24020874647c1f52c4e"
+      ],
+      "text": "It is a PWA supporting Add to Home Screen on mobile with an optimized UI and push notifications when sessions complete."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e4fe6e5ab1edc977fee4541dcee497d40d94170acd03d167f94bab1a4daec14d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 45,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L43-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a783e8d596abbdbd25c63254d77cd3f9d783d48dab11ca65aa6ff2c5900d474"
+      ],
+      "text": "Requires Node.js 22.13.0 or later and Claude Code v1.0.125 or later; supported operating systems are macOS and Linux only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_143129fed5c74c2b08085027c7d259866a219fb5de706fc546ac687d61cb57e5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 45,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L43-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a783e8d596abbdbd25c63254d77cd3f9d783d48dab11ca65aa6ff2c5900d474"
+      ],
+      "text": "Windows is not supported as an operating system."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f63fcea83df9c64a7e2afc1fa98e24a7486380e044b5384b17ce2b4d8513fd81",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 247,
+          "line_start": 240,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L240-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ac795c8a707edd7e5efac2f2f893d71440a4b307b5fdd61913bb636eb6fbe5d5"
+      ],
+      "text": "The viewer makes no backups of session files, so when Claude Code's default 30-day cleanup deletes .jsonl transcripts those sessions disappear; users can raise cleanupPeriodDays in ~/.claude/settings.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8265f2721d7e550113969bba288222b30882bdf6e1c101229720a3e9744bed4a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 302,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L302-L302"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02e5775f4e891037251df13f0b0abadb5aad0959107d94b869d0e5d12232944a"
+      ],
+      "text": "Authentication is a simple single-password mechanism without multi-user support, role-based access control, or OAuth; more sophisticated access control is left to infrastructure like reverse proxies or VPNs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e07fa3d4ceb04642151a02c248f057b4661abbcc030e20ac4b81dac0d9891b37",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L15-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1319d946bb81546f6178e4161503526b1a7e145778c553fad4e4881ab9344767"
+      ],
+      "text": "Due to Anthropic ToS ambiguity for subscription accounts, chat sending, session resuming, permission approval, and AskUserQuestion are opt-in; read-oriented features work independently of the Agent SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e50e74f6baaf851763a416dd06162a72582f819ff925771c02d6363680b256ac",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 27,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L26-L27"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0421aa07a15ef37ee3236f5c15ccbf65e7255a3ca5cf2f52066d6a4fb43985b3",
+        "slc_05c0575ce9b028737c2a6e6345c5fab6c85d2db958d6038c9c0a94084fc1ae58"
+      ],
+      "text": "In subscription mode the chat input becomes a copy mode that produces an equivalent claude CLI command, which can be pasted into the built-in terminal to start or resume a session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_186cb8add44bf060085b77e93c463d5e5ed1332b870f225165f71605fcf3e7d3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+          "line_end": 21,
+          "line_start": 18,
+          "path": "AGENTS.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md#L18-L21"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "AGENTS.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md#L11-L14"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "AGENTS.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md#L77-L80"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "AGENTS.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md#L69-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a2c04ba89c6b0f4e5d25a03e11a46b3c1bd13bf22a45a4f39e36b69a2a018f2",
+        "slc_ae1fcdceca0cd269833631aa12c8c24f6b2d0d5c949c4c2ee01d6a9e4c154553",
+        "slc_bcdd1c9f5e33435d0cabb944c7d9cdcad0cef825c6953e187b30b039e2d203ee",
+        "slc_f134082bd2f10c46600b1e26401684ff11af5ad7f26efb836860b040be39ee5b"
+      ],
+      "text": "Repository development practice: contributors must avoid 'as' casting, raw fetch, dev servers, and node built-ins; use Effect-TS and Hono RPC + TanStack Query, follow TDD, and run pnpm gatecheck check and lingui-check before committing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f359b953a53a103814198fb9b11001caef39b6bb7fd9e521e21bce05deb399c0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "AGENTS.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md#L25-L25"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "AGENTS.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md#L38-L38"
+        },
+        {
+          "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+          "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+          "line_end": 36,
+          "line_start": 31,
+          "path": "AGENTS.md",
+          "repository": "d-kimuson/claude-code-viewer",
+          "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md#L31-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2998ea6419c2cd29b34b4ea70032940d7ea075befb428c37397137b92bafd5f8",
+        "slc_ae68d580966924515c0dc4be77cea960bf657798d3419b8a765815d8fdcdedfc",
+        "slc_f001c3d0cd6e2aaed6d5f7cbab40fe1281cfd8099c3896c171d7ce1b62a8c47e"
+      ],
+      "text": "Repository development practice: commit messages follow Conventional Commits, appear in release notes, and 'fix' is reserved for user-facing bugs while internal fixes use 'chore'."
+    }
+  ],
+  "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 314,
+        "path": "README.md",
+        "size": 39214
+      },
+      {
+        "lines": 186,
+        "path": "AGENTS.md",
+        "size": 6223
+      },
+      {
+        "lines": 198,
+        "path": "CLAUDE.md",
+        "size": 7408
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 55916
+      },
+      {
+        "path": "PRIVACY.md",
+        "reason": "file-budget",
+        "size": 1031
+      },
+      {
+        "path": "docs/claude-code-tasks.md",
+        "reason": "file-budget",
+        "size": 13023
+      },
+      {
+        "path": "docs/dev.md",
+        "reason": "file-budget",
+        "size": 8419
+      },
+      {
+        "path": "docs/guidelines/branch_naming.md",
+        "reason": "file-budget",
+        "size": 992
+      },
+      {
+        "path": "docs/guidelines/commit_message.md",
+        "reason": "file-budget",
+        "size": 1926
+      },
+      {
+        "path": "docs/guidelines/definition_of_done.md",
+        "reason": "file-budget",
+        "size": 446
+      },
+      {
+        "path": "docs/guidelines/internal_review.md",
+        "reason": "file-budget",
+        "size": 1024
+      },
+      {
+        "path": "docs/guidelines/qa_guideline.md",
+        "reason": "file-budget",
+        "size": 1548
+      }
+    ],
+    "omitted_count": 9,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 792,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 12,
+      "complete": false,
+      "omitted": 9,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_fa742bbd3d0b5f098a4bdfcd3712b6a9",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 3,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/d-kimuson/claude-code-viewer/9367cf006be9965c954e6cd36526f2195dce67ea/d2e4b2b80b9562f7/manifest.json",
+  "package_id": "pkg_ec75688d4c0f7d503cfc33d4293df7347bf9c160eed98047120762270f29d408",
+  "repo": "d-kimuson/claude-code-viewer",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9d6f4c63e89b913ca01c944c25ae8a27e6e0cad2f8408a3310558e8644db3be8",
+  "snapshot_id": "d2e4b2b80b9562f7",
+  "sources": [
+    {
+      "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+      "git_sha": "d5240f631a4670de401818dedb1511fc9854ef05",
+      "lines": 186,
+      "path": "AGENTS.md",
+      "repository": "d-kimuson/claude-code-viewer",
+      "sha256": "32b5bbe52ce14be92922fed7bb5ba4980d996a68803a9e50fd1884df8ad3ad81",
+      "source_id": "src_9ec3f70f133a593b995a9936418f370b",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/AGENTS.md"
+    },
+    {
+      "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+      "git_sha": "d22678368d11d552b06d9e65e771ec2d6940d6f2",
+      "lines": 198,
+      "path": "CLAUDE.md",
+      "repository": "d-kimuson/claude-code-viewer",
+      "sha256": "171534c8a44c77cc83a7e8d065579b61e5be840e89397394176df35d3cd1c3c8",
+      "source_id": "src_ee07c25e70c35cf68e061b9c12dd6a62",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/CLAUDE.md"
+    },
+    {
+      "commit": "9367cf006be9965c954e6cd36526f2195dce67ea",
+      "git_sha": "69ccaf6b50ecc6ec946ad46a45650964d3c93b7f",
+      "lines": 314,
+      "path": "README.md",
+      "repository": "d-kimuson/claude-code-viewer",
+      "sha256": "3a93463b108f3d2245e2c417cb86f4a94da68e68f746a019848e77d9e2f49ae9",
+      "source_id": "src_b38396e590ec5341831a0c43366658e9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/d-kimuson/claude-code-viewer/blob/9367cf006be9965c954e6cd36526f2195dce67ea/README.md"
+    }
+  ],
+  "summary": "Claude Code Viewer is a self-hosted web client that reads Claude Code JSONL session logs from ~/.claude/projects, offers real-time viewing, Git operations, an integrated terminal, and Agent-SDK chat features gated by authentication mode. Contributor rules in AGENTS.md/CLAUDE.md are development practice, not product behavior. Evidence coverage: 157 of 162 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

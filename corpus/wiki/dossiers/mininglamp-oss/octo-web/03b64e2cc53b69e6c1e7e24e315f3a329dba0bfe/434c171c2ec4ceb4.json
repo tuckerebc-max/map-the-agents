@@ -1,0 +1,650 @@
+{
+  "applied_operation_id": "op_0af4e5a37712461eb48aea75db1d03e3",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_7114e9ab302d865e3d3fc593d3cb0dc52b3770f51f2755dc827798921162e77d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 34,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L31-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f46bc58915ef814d9f9265d5ab824cdefb703df4ff1a3ef8fafddf20d08ce48"
+      ],
+      "text": "octo-web is a TypeScript/React front-end that communicates with octo-server over REST and WebSocket, and ships as both a browser build and an Electron-packaged desktop client."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06ac04a20d191b2643cec1d3105cf59fd4c93b0f93ac305d66dc3a4747478b5f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 67,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L59-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a417d75efbef6c2af2c6c0186170558135d8fa38f5ca58b4c183cac45832b46"
+      ],
+      "text": "The repository layout includes route-level pages (chat, channels, org, settings), a shared UI kit, client state, a REST/WebSocket API client, i18n resources, and an Electron bootstrap directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d8dcf0fffa51a55c83dca8c94ec91aba69f050ddd03015af9de60aa95d59a9d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 80,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L78-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fad24ec2b0e4f4147273cff0459f455b6a544c279c5a9c65aead494e812a1df9"
+      ],
+      "text": "The Electron PC shell is intentionally thin: it hosts the same React app and forwards IPC for native capabilities such as tray, notifications, file drop, and auto-update, while the browser build runs without any Electron dependency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec08e473455bfef0440bdf4ed256e442fab74e2e2dfc445123ae4f610c1bdcb8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 40,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L38-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ac0927718f5bab1ba29c21a4d117146c6bca6042b79263a255d07ce38df7ba1"
+      ],
+      "text": "The UI provides first-class surfaces for AI agent conversations, including streaming replies, typing indicators, inline tool-call previews, read receipts, and agent-vs-human identity chips."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b608a62d7b8f4005a0c4ad085dfd42eed12afa73e2e5b71b78befd618d2d4ab0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 53,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L51-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66d7e132b80bc136bca2851df44493de2ba830d0f5e47e40383521aa0e9b932d"
+      ],
+      "text": "By default the web build expects an octo-server instance at http://localhost:8080, configurable via VITE_API_* values in a .env.local file copied from .env.example."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_093c4f407480827a2441f70b02b22315356aed11eea9310237d0dd7ee2b12132",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 99,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L94-L99"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 116,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L106-L116"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 104,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L101-L104"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 92,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L86-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fd33262e9a08122f3ba6bac83f0bde1640b51100d100c5f71fe55523a42199b",
+        "slc_27829f58639dcd879e1ae51ef08934e57bb6f160074d602adb03905864bd6191",
+        "slc_451cb1aaaf76b89dac7b62f25ee1762f91893670d970e5e3cb8a29e200a5220e",
+        "slc_c16cd82896be0195501c0f257be040329357c2e9143be3b08f34f49ab65b2316"
+      ],
+      "text": "The client is part of an ecosystem where octo-web, Android, iOS, and admin clients connect to octo-server, which in turn links to task, AI-summary, and adapter services built on a shared Go library."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d20650047d91a77b346ebcd94f87f7ff1a5b3a6f922e37706cd6829271e040f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 156,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L155-L156"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6e82a18d81c55dd42212aebb97cef2fa571558b491089c10c9f9c3eea7ada11"
+      ],
+      "text": "The project's original scaffolding derives from TangSengDaoDaoWeb, and octo-server is described as driving a WuKongIM real-time messaging core behind this client."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_563666c1db14778b2324b9af50140a2acbd6344b892630441de5e430ac7e06db",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md#L149-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c951cefe415337507d488c860fd9c3a732f693df36662aca12bdec914cbc3de"
+      ],
+      "text": "The project is licensed under Apache License 2.0, with third-party attributions listed in a NOTICE file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7cee3a7ea22493fa8a16b0754c10eb015e5d3e090325ba9435102108b59193d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "0bb3f729a2a9be4c442669da2285c0e961bb72c0",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "AGENTS.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/AGENTS.md#L13-L13"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "0bb3f729a2a9be4c442669da2285c0e961bb72c0",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "AGENTS.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/AGENTS.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_202d5b90a0787f4900d3c67875be3fb9fb06e6eba73e1ce9efa2e06596057d90",
+        "slc_2f88eb0fc919f70d142202bbc8195002f9a77af25596a45c59a0265e2f390c08"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributors to work in an assigned worktree rather than the main repository directory, and to consult DEVELOPMENT.md's quick-reference sections before starting tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef563e2e9aa80d0f2de18c5ba0374143c18fb5e9a5c3727c7edf5eb1110cbd2c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "c540963a05146238ed72f98d3887ff0d7e7a7f2e",
+          "line_end": 51,
+          "line_start": 38,
+          "path": "CLAUDE.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/CLAUDE.md#L38-L51"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "c540963a05146238ed72f98d3887ff0d7e7a7f2e",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "CLAUDE.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/CLAUDE.md#L9-L12"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "c540963a05146238ed72f98d3887ff0d7e7a7f2e",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "CLAUDE.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/CLAUDE.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c71122116869e0d5b399c7edc1028ca75dd09f1f9abc23105feb33904f94ff3",
+        "slc_83cd990dea9048083bb4e7e5682f050350200abbcfd0cdabbf7bf315ebfe8298",
+        "slc_c0c894b2b715934bea94e1002b0a95e13fbcb08f1294a57acbfbee10275be1b2"
+      ],
+      "text": "Repository development practice: CLAUDE.md documents a pnpm monorepo with Turborepo, Vite, and Vitest, with apps for the main web application and a browser extension plus shared dmwork packages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee45d5d48d2d7ffcd371df0fd6c5c79c2b27cc2504e2d53ec8e1c9fea3a3a4ef",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "c540963a05146238ed72f98d3887ff0d7e7a7f2e",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "CLAUDE.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/CLAUDE.md#L63-L63"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "c540963a05146238ed72f98d3887ff0d7e7a7f2e",
+          "line_end": 102,
+          "line_start": 93,
+          "path": "CLAUDE.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/CLAUDE.md#L93-L102"
+        },
+        {
+          "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+          "git_sha": "c540963a05146238ed72f98d3887ff0d7e7a7f2e",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "CLAUDE.md",
+          "repository": "mininglamp-oss/octo-web",
+          "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/CLAUDE.md#L55-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a5b9b0f39922f3b75a291e690885502e1a6e7db4d17df7343c53c286efbc3df",
+        "slc_682d6d4140a3daf28c45f39a277669f9bacd0bb37ef26d9304401a5c5b78917f",
+        "slc_7706cbb5d2f81cba3ade6aa55b282832f652a46cde876f1e530f3391cfe398cf"
+      ],
+      "text": "Repository development practice: CLAUDE.md prescribes coding conventions including Conventional Commits, PascalCase component directories, ProviderListener-based ViewModels instead of Redux/Zustand, and routing API calls through WKApp.apiClient."
+    }
+  ],
+  "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 166,
+        "path": "README.md",
+        "size": 7203
+      },
+      {
+        "lines": 60,
+        "path": "AGENTS.md",
+        "size": 2246
+      },
+      {
+        "lines": 102,
+        "path": "CLAUDE.md",
+        "size": 3145
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 2399
+      },
+      {
+        "path": "CODE_OF_CONDUCT.zh.md",
+        "reason": "file-budget",
+        "size": 1808
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3273
+      },
+      {
+        "path": "CONTRIBUTING.zh.md",
+        "reason": "file-budget",
+        "size": 2865
+      },
+      {
+        "path": "DEVELOPMENT.md",
+        "reason": "file-budget",
+        "size": 17955
+      },
+      {
+        "path": "README.zh.md",
+        "reason": "file-budget",
+        "size": 6959
+      },
+      {
+        "path": "RELEASING.md",
+        "reason": "file-budget",
+        "size": 2620
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1535
+      },
+      {
+        "path": "SECURITY.zh.md",
+        "reason": "file-budget",
+        "size": 1091
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 1439
+      },
+      {
+        "path": "docs/channel-search-ui-implementation.md",
+        "reason": "file-budget",
+        "size": 18540
+      },
+      {
+        "path": "docs/chat-capability-integration-options-report.md",
+        "reason": "file-budget",
+        "size": 20099
+      },
+      {
+        "path": "docs/chat-capability-validation-runbook.md",
+        "reason": "file-budget",
+        "size": 14291
+      },
+      {
+        "path": "docs/chat-capability-vertical-slice-implementation-report.md",
+        "reason": "file-budget",
+        "size": 19189
+      },
+      {
+        "path": "docs/chat-composer-architecture.md",
+        "reason": "file-budget",
+        "size": 11773
+      },
+      {
+        "path": "docs/docs-client-forward-bridge.md",
+        "reason": "file-budget",
+        "size": 3880
+      },
+      {
+        "path": "docs/docs-voice-host-compatibility.md",
+        "reason": "file-budget",
+        "size": 2812
+      },
+      {
+        "path": "docs/e2e-baseline-strategy.md",
+        "reason": "file-budget",
+        "size": 3629
+      },
+      {
+        "path": "docs/electron-oidc-migration.md",
+        "reason": "file-budget",
+        "size": 4415
+      },
+      {
+        "path": "docs/expert-search-issue81.md",
+        "reason": "file-budget",
+        "size": 4195
+      },
+      {
+        "path": "docs/i18n-agent-guide.md",
+        "reason": "file-budget",
+        "size": 7080
+      },
+      {
+        "path": "docs/integration/docs-convert-port.md",
+        "reason": "file-budget",
+        "size": 8797
+      },
+      {
+        "path": "docs/integration/summary-docs-host-adapter.md",
+        "reason": "file-budget",
+        "size": 7797
+      },
+      {
+        "path": "docs/integration/summary-docs-review-fixes.md",
+        "reason": "file-budget",
+        "size": 3919
+      },
+      {
+        "path": "docs/mail-junk-allowlist-implementation-plan.md",
+        "reason": "file-budget",
+        "size": 2179
+      },
+      {
+        "path": "docs/my-publications-scroll-issue85.md",
+        "reason": "file-budget",
+        "size": 4406
+      },
+      {
+        "path": "docs/native-desktop-contacts-plan.md",
+        "reason": "file-budget",
+        "size": 4238
+      },
+      {
+        "path": "docs/native-desktop-modules-plan.md",
+        "reason": "file-budget",
+        "size": 2576
+      },
+      {
+        "path": "docs/native-desktop-presentation-plan.md",
+        "reason": "file-budget",
+        "size": 8956
+      },
+      {
+        "path": "docs/new-module-development-guide.md",
+        "reason": "file-budget",
+        "size": 8340
+      },
+      {
+        "path": "docs/render-profile-local-validation.md",
+        "reason": "file-budget",
+        "size": 2499
+      },
+      {
+        "path": "docs/search-service-ui-migration.md",
+        "reason": "file-budget",
+        "size": 4901
+      },
+      {
+        "path": "docs/space-review-auto-approve.md",
+        "reason": "file-budget",
+        "size": 4753
+      },
+      {
+        "path": "docs/summary-apps-artifact-implementation-report.md",
+        "reason": "file-budget",
+        "size": 12038
+      },
+      {
+        "path": "docs/summary-apps-artifact-review-fixes.md",
+        "reason": "file-budget",
+        "size": 18162
+      },
+      {
+        "path": "docs/test-plans/mcp-market.md",
+        "reason": "file-budget",
+        "size": 12171
+      }
+    ],
+    "omitted_count": 36,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3994,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 39,
+      "complete": false,
+      "omitted": 36,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_0f5156ff997a5e6dbdaa196c778f236e",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/mininglamp-oss/octo-web/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/434c171c2ec4ceb4/manifest.json",
+  "package_id": "pkg_41dd75fe3d1cb4b9d0afca13fcfc88bfc2649fb9923bc53e5ce3140893fa5702",
+  "repo": "mininglamp-oss/octo-web",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "45eed268a84267fc6f5b9a819cf2898fc2d395260b6e4ad0f0b4722a31f5187c",
+  "snapshot_id": "434c171c2ec4ceb4",
+  "sources": [
+    {
+      "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+      "git_sha": "0bb3f729a2a9be4c442669da2285c0e961bb72c0",
+      "lines": 60,
+      "path": "AGENTS.md",
+      "repository": "mininglamp-oss/octo-web",
+      "sha256": "4ad19bc6f0f31a16c6d341d912f226ee89e17fc3074e6889b36ec75f4cbd318d",
+      "source_id": "src_7a08f6f64a9c5c16bc11c7ab443402e3",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/AGENTS.md"
+    },
+    {
+      "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+      "git_sha": "c540963a05146238ed72f98d3887ff0d7e7a7f2e",
+      "lines": 102,
+      "path": "CLAUDE.md",
+      "repository": "mininglamp-oss/octo-web",
+      "sha256": "9fb6018abadd13bfc288182e34a7e04c1c57185ed9864ecff21464c080b2308e",
+      "source_id": "src_e922c8ef802a5b69a7e8b4c45a5fa776",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/CLAUDE.md"
+    },
+    {
+      "commit": "03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe",
+      "git_sha": "dcad017f0ecb4cf6ab3183c226603fa28a95de48",
+      "lines": 166,
+      "path": "README.md",
+      "repository": "mininglamp-oss/octo-web",
+      "sha256": "0640288322c598cca3ad21d359d151c7b96445e28ad8eed7e871db9569d99651",
+      "source_id": "src_8462aa04b91950bea8d81cce2d0697ea",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Mininglamp-OSS/octo-web/blob/03b64e2cc53b69e6c1e7e24e315f3a329dba0bfe/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: octo-web is a TypeScript/React front-end that communicates with octo-server over REST and WebSocket, and ships as both a browser build and an Electron-packaged desktop client. The repository layout includes route-level pages (chat, channels, org, settings), a shared UI kit, client state, a REST/WebSocket API client, i18n resources, and an Electron bootstrap directory.",
+  "superseded_claim_ids": []
+}

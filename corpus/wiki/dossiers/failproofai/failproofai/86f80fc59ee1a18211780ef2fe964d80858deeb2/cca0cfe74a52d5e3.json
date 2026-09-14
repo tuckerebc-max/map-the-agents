@@ -1,0 +1,1501 @@
+{
+  "applied_operation_id": "op_50925e4ab72a4317bb5c08c0b9e136dc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3ba2c513f47868d14f2b6b4eff747d2036179598cf9abee9c673560a6068fa8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L17-L21"
+        },
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L33-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5694e28a514928909c7ad94a0f61599e3fe985c4e2aca4587fea6bbff6d393b2",
+        "slc_d78e4123de1bf422073e33fd66277fcc63573055d44f84f939492da71ebefb88"
+      ],
+      "text": "The product hooks into 12 agent harnesses in two classes: ten coding CLIs (e.g. Claude Code, Codex) and two chat/assistant gateways (Hermes, OpenClaw), with the same events and policies across them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3cb98631c03fcb2b1556c1b93a2bedd6f431f8d5d2155750a63a3c55fd15c637",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 39,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L37-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ffc82a323ccda94a09e2bf4de79f3c484f0a4aa0cf3cfa45a3be70c276c854f4"
+      ],
+      "text": "Agents outside supported harnesses can report via a Python SDK providing tracing, sessions and audits; enforcement there requires a hook in the user's own runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4e41cdc9b7c5ad3fc9cd74329ca984b9a373e5a4e8289930c5c3be5ef864de0",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 192,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L188-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05a6dcae50487e0d8ac0f9df485a3d449df1697dbb77e1342f99b9b1bf2190a9"
+      ],
+      "text": "Policies return one of three decisions: allow() permits the operation, deny(message) blocks it and returns the message to the agent, and instruct(message) lets it pass while adding context to the agent's next prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_82581b1582d7667b196012cb16fa81d864344db38de083cb8979b582a32eb87b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 158,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L149-L158"
+        },
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L143-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4969eba81462601b04009136272519555fedf345e61bc86ff6ce8b040a7a40d8",
+        "slc_5e3aaf6ad6cad2855f727027b436b7c2cc8c6572bdfc0392c7e4ea2de35ae080"
+      ],
+      "text": "39 built-in policies ship with the tool and activate immediately on install; examples include blocking .env reads, sudo, rm -rf, force pushes, destructive SQL, and unreviewed terraform/kubectl changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c0982328557c797273d1738618266d07074dd42a3e37ed058b3b50e31e6d8fd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 170,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L169-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42c35fe291c4b978c03655a9aee73f3fee65be6391848be6ca4949cbd1f27e17"
+      ],
+      "text": "Custom policies are JS files dropped into .failproofai/policies/ that load automatically without flags, and can be committed so the whole team receives them on pull."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9e3d7d8905aedd84a24c98a4568e3545b84f73a5ec20252c1965974e3aeb891",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 184,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L175-L184"
+        },
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 173,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L172-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_722ce834e26f2b89e6f25040d4e70e1371d70b5a3ac68bf9b39b0fe6cd39cd36",
+        "slc_f01b6c01851df78b308680ea61f5b4a2878520757c57fc49f7a089c6f4f7ef96"
+      ],
+      "text": "Custom policies are registered via a customPolicies.add() API from the failproofai package, matching events such as PreToolUse and receiving a context with tool input."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a9cf62070de819442d116355e30a898ccbb653a3c9347fc4334913a7de2f37b0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 207,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L202-L207"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d537b12501ffffcb7b01e5a428855aa0a405caf0b8fa27fb0b006041dd1c6f16"
+      ],
+      "text": "Running failproofai with no arguments serves a local dashboard on localhost:8020 reading existing run history with no account or data leaving the machine; an audit command scans history for risky patterns and suggests policies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fc58f555374c73ba3593a36b58c429093665a06e18105fa687d178ea654f010",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 220,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L213-L220"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b9c5a3b1f53e3474158a5f5789d1f67c215556aa0a754264ebb0e1c21d2d328"
+      ],
+      "text": "A hosted observability product offers fleet-wide runs, execution graphs with parallel sub-agent lanes, latency percentiles, per-model cost tracking, SQL over traces, scheduled audits, and Slack/email/webhook alerts; self-hosting is Enterprise-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c06879da3b4891c713f59e5490bae36fe4aab8287854faf5f9d42bf25c35d9e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L5-L5"
+        },
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 141,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L137-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b8bb8416329cad2fd71b2f0738fb3e5d777cde919f335fa56e757ceeb1d48f5d",
+        "slc_d572900a490b29de2be9aaa247d73a570969cec5cc161ef710424fbbf465a09e"
+      ],
+      "text": "The package is distributed via npm as failproofai and installed globally with npm install -g; the project is written in TypeScript per its Trendshift badge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c2e691b4bd5850923f0c27528ee0e6aa4d0b68ee9419075ca225fba2a3dfcbf",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 258,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L258-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ac15e5c4ca3e9acc7483cc6f51d920bc6464f24355b408753f5f084c617cbdd"
+      ],
+      "text": "The tool is licensed under MIT plus the Commons Clause: free for internal and personal use, but commercial resale of failproofai itself requires a separate agreement."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1acd9739e57a064b485bd19f156b5419178846af13464452495d41b9c85f9c08",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+          "line_end": 270,
+          "line_start": 266,
+          "path": "README.md",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md#L266-L270"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_baa193a1996442823e4c0a4be056ab9f7329bed5da36148a2a2e70c3a7713618"
+      ],
+      "text": "Repository development practice: contributors must run 'bun install && bun run build' before starting, because the repo runs failproofai's own hooks on itself and they resolve the import against the compiled dist/ bundle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56923caf6f1aab338303927ede002b6badf18d71960544c6652e03a2f6e6bd91",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+          "git_sha": "8fd036a46ef0e90b1283f5ee1e802fef8fd9099c",
+          "line_end": 25,
+          "line_start": 16,
+          "path": "docs/sessions/tools.mdx",
+          "repository": "failproofai/failproofai",
+          "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/docs/sessions/tools.mdx#L16-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c3a9c5560775c7157682fdda4dfdb2d9fb775a15635a7e1ba4831e02f6a4460"
+      ],
+      "text": "A CLI 'fp' supports commands like 'fp list tools' and 'fp events --event-type tool_use,tool_result --env production --since 24h', with JSON output options for full session events."
+    }
+  ],
+  "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 274,
+        "path": "README.md",
+        "size": 12875
+      },
+      {
+        "lines": 25,
+        "path": "docs/sessions/tools.mdx",
+        "size": 815
+      },
+      {
+        "lines": 25,
+        "path": "docs/ar/sessions/tools.mdx",
+        "size": 1197
+      },
+      {
+        "lines": 25,
+        "path": "docs/de/sessions/tools.mdx",
+        "size": 928
+      },
+      {
+        "lines": 25,
+        "path": "docs/es/sessions/tools.mdx",
+        "size": 998
+      },
+      {
+        "lines": 25,
+        "path": "docs/fr/sessions/tools.mdx",
+        "size": 998
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/he/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 982
+      },
+      {
+        "path": "docs/hi/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 1281
+      },
+      {
+        "path": "docs/it/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 977
+      },
+      {
+        "path": "docs/ja/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 1121
+      },
+      {
+        "path": "docs/ko/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 996
+      },
+      {
+        "path": "docs/pt-br/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 963
+      },
+      {
+        "path": "docs/ru/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 1399
+      },
+      {
+        "path": "docs/tr/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 999
+      },
+      {
+        "path": "docs/vi/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 1074
+      },
+      {
+        "path": "docs/zh/sessions/tools.mdx",
+        "reason": "file-budget",
+        "size": 848
+      },
+      {
+        "path": "docs/index.mdx",
+        "reason": "file-budget",
+        "size": 1992
+      },
+      {
+        "path": "docs/admin/keys-and-permissions.mdx",
+        "reason": "file-budget",
+        "size": 3567
+      },
+      {
+        "path": "docs/admin/overview.mdx",
+        "reason": "file-budget",
+        "size": 1688
+      },
+      {
+        "path": "docs/admin/settings-and-security.mdx",
+        "reason": "file-budget",
+        "size": 3550
+      },
+      {
+        "path": "docs/admin/usage.mdx",
+        "reason": "file-budget",
+        "size": 1327
+      },
+      {
+        "path": "docs/admin/users-and-organizations.mdx",
+        "reason": "file-budget",
+        "size": 1942
+      },
+      {
+        "path": "docs/ar/index.mdx",
+        "reason": "file-budget",
+        "size": 2770
+      },
+      {
+        "path": "docs/audits/agent-contracts.mdx",
+        "reason": "file-budget",
+        "size": 3869
+      },
+      {
+        "path": "docs/audits/alerts.mdx",
+        "reason": "file-budget",
+        "size": 2869
+      },
+      {
+        "path": "docs/audits/cadence.mdx",
+        "reason": "file-budget",
+        "size": 1937
+      },
+      {
+        "path": "docs/audits/findings-and-issues.mdx",
+        "reason": "file-budget",
+        "size": 5154
+      },
+      {
+        "path": "docs/audits/local-audit.mdx",
+        "reason": "file-budget",
+        "size": 3594
+      },
+      {
+        "path": "docs/audits/overview.mdx",
+        "reason": "file-budget",
+        "size": 2570
+      },
+      {
+        "path": "docs/audits/recipes.mdx",
+        "reason": "file-budget",
+        "size": 2607
+      },
+      {
+        "path": "docs/audits/run.mdx",
+        "reason": "file-budget",
+        "size": 4456
+      },
+      {
+        "path": "docs/audits/setup.mdx",
+        "reason": "file-budget",
+        "size": 1933
+      },
+      {
+        "path": "docs/de/index.mdx",
+        "reason": "file-budget",
+        "size": 2307
+      },
+      {
+        "path": "docs/es/index.mdx",
+        "reason": "file-budget",
+        "size": 2316
+      },
+      {
+        "path": "docs/fr/index.mdx",
+        "reason": "file-budget",
+        "size": 2469
+      },
+      {
+        "path": "docs/he/index.mdx",
+        "reason": "file-budget",
+        "size": 2589
+      },
+      {
+        "path": "docs/hi/index.mdx",
+        "reason": "file-budget",
+        "size": 3275
+      },
+      {
+        "path": "docs/i18n/README.ar.md",
+        "reason": "file-budget",
+        "size": 17491
+      },
+      {
+        "path": "docs/i18n/README.de.md",
+        "reason": "file-budget",
+        "size": 15902
+      },
+      {
+        "path": "docs/i18n/README.es.md",
+        "reason": "file-budget",
+        "size": 16059
+      },
+      {
+        "path": "docs/i18n/README.fr.md",
+        "reason": "file-budget",
+        "size": 16366
+      },
+      {
+        "path": "docs/i18n/README.he.md",
+        "reason": "file-budget",
+        "size": 16678
+      },
+      {
+        "path": "docs/i18n/README.hi.md",
+        "reason": "file-budget",
+        "size": 21412
+      },
+      {
+        "path": "docs/i18n/README.it.md",
+        "reason": "file-budget",
+        "size": 15724
+      },
+      {
+        "path": "docs/i18n/README.ja.md",
+        "reason": "file-budget",
+        "size": 17316
+      },
+      {
+        "path": "docs/i18n/README.ko.md",
+        "reason": "file-budget",
+        "size": 16153
+      },
+      {
+        "path": "docs/i18n/README.pt-br.md",
+        "reason": "file-budget",
+        "size": 15889
+      },
+      {
+        "path": "docs/i18n/README.ru.md",
+        "reason": "file-budget",
+        "size": 19688
+      },
+      {
+        "path": "docs/i18n/README.tr.md",
+        "reason": "file-budget",
+        "size": 15967
+      },
+      {
+        "path": "docs/i18n/README.vi.md",
+        "reason": "file-budget",
+        "size": 16771
+      },
+      {
+        "path": "docs/i18n/README.zh.md",
+        "reason": "file-budget",
+        "size": 15294
+      },
+      {
+        "path": "docs/it/index.mdx",
+        "reason": "file-budget",
+        "size": 2245
+      },
+      {
+        "path": "docs/ja/index.mdx",
+        "reason": "file-budget",
+        "size": 2733
+      },
+      {
+        "path": "docs/ko/index.mdx",
+        "reason": "file-budget",
+        "size": 2472
+      },
+      {
+        "path": "docs/policies/builtin-catalog.mdx",
+        "reason": "file-budget",
+        "size": 7251
+      },
+      {
+        "path": "docs/policies/builtin.mdx",
+        "reason": "file-budget",
+        "size": 1880
+      },
+      {
+        "path": "docs/policies/custom.mdx",
+        "reason": "file-budget",
+        "size": 3127
+      },
+      {
+        "path": "docs/policies/deploy.mdx",
+        "reason": "file-budget",
+        "size": 2784
+      },
+      {
+        "path": "docs/policies/editor.mdx",
+        "reason": "file-budget",
+        "size": 2844
+      },
+      {
+        "path": "docs/policies/failure-behavior.mdx",
+        "reason": "file-budget",
+        "size": 3425
+      },
+      {
+        "path": "docs/policies/fleet.mdx",
+        "reason": "file-budget",
+        "size": 1773
+      },
+      {
+        "path": "docs/policies/local-configuration.mdx",
+        "reason": "file-budget",
+        "size": 3257
+      },
+      {
+        "path": "docs/policies/overview.mdx",
+        "reason": "file-budget",
+        "size": 2689
+      },
+      {
+        "path": "docs/policies/packs.mdx",
+        "reason": "file-budget",
+        "size": 5300
+      },
+      {
+        "path": "docs/policies/publish-a-pack.mdx",
+        "reason": "file-budget",
+        "size": 4040
+      },
+      {
+        "path": "docs/policies/rollback.mdx",
+        "reason": "file-budget",
+        "size": 1838
+      },
+      {
+        "path": "docs/pt-br/index.mdx",
+        "reason": "file-budget",
+        "size": 2314
+      },
+      {
+        "path": "docs/reference/cloud-cli.mdx",
+        "reason": "file-budget",
+        "size": 19698
+      },
+      {
+        "path": "docs/reference/custom-agents.mdx",
+        "reason": "file-budget",
+        "size": 10201
+      },
+      {
+        "path": "docs/reference/evaluator-sdk.mdx",
+        "reason": "file-budget",
+        "size": 8552
+      },
+      {
+        "path": "docs/reference/events-and-configuration.mdx",
+        "reason": "file-budget",
+        "size": 3741
+      },
+      {
+        "path": "docs/reference/failproof-cli.mdx",
+        "reason": "file-budget",
+        "size": 8201
+      },
+      {
+        "path": "docs/reference/harnesses.mdx",
+        "reason": "file-budget",
+        "size": 7416
+      },
+      {
+        "path": "docs/reference/http-api.mdx",
+        "reason": "file-budget",
+        "size": 3494
+      },
+      {
+        "path": "docs/reference/local-dashboard.mdx",
+        "reason": "file-budget",
+        "size": 4218
+      },
+      {
+        "path": "docs/reference/overview.mdx",
+        "reason": "file-budget",
+        "size": 4016
+      },
+      {
+        "path": "docs/reference/policy-sdk.mdx",
+        "reason": "file-budget",
+        "size": 13147
+      },
+      {
+        "path": "docs/reference/self-hosting.mdx",
+        "reason": "file-budget",
+        "size": 7999
+      },
+      {
+        "path": "docs/reference/troubleshooting.mdx",
+        "reason": "file-budget",
+        "size": 8039
+      },
+      {
+        "path": "docs/ru/index.mdx",
+        "reason": "file-budget",
+        "size": 3630
+      },
+      {
+        "path": "docs/sessions/assistant.mdx",
+        "reason": "file-budget",
+        "size": 2623
+      },
+      {
+        "path": "docs/sessions/dashboards.mdx",
+        "reason": "file-budget",
+        "size": 1887
+      },
+      {
+        "path": "docs/sessions/errors.mdx",
+        "reason": "file-budget",
+        "size": 1766
+      },
+      {
+        "path": "docs/sessions/evaluations.mdx",
+        "reason": "file-budget",
+        "size": 2299
+      },
+      {
+        "path": "docs/sessions/hooks.mdx",
+        "reason": "file-budget",
+        "size": 832
+      },
+      {
+        "path": "docs/sessions/live-events.mdx",
+        "reason": "file-budget",
+        "size": 2262
+      },
+      {
+        "path": "docs/sessions/metrics.mdx",
+        "reason": "file-budget",
+        "size": 1062
+      },
+      {
+        "path": "docs/sessions/models.mdx",
+        "reason": "file-budget",
+        "size": 1049
+      },
+      {
+        "path": "docs/sessions/overview.mdx",
+        "reason": "file-budget",
+        "size": 2817
+      },
+      {
+        "path": "docs/sessions/policy-decisions.mdx",
+        "reason": "file-budget",
+        "size": 1124
+      },
+      {
+        "path": "docs/sessions/queries.mdx",
+        "reason": "file-budget",
+        "size": 2258
+      },
+      {
+        "path": "docs/sessions/read-a-trace.mdx",
+        "reason": "file-budget",
+        "size": 2148
+      },
+      {
+        "path": "docs/start/concepts.mdx",
+        "reason": "file-budget",
+        "size": 1742
+      },
+      {
+        "path": "docs/start/first-audit.mdx",
+        "reason": "file-budget",
+        "size": 2475
+      },
+      {
+        "path": "docs/start/first-policy.mdx",
+        "reason": "file-budget",
+        "size": 2452
+      },
+      {
+        "path": "docs/start/integrations.mdx",
+        "reason": "file-budget",
+        "size": 3928
+      },
+      {
+        "path": "docs/start/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 4064
+      },
+      {
+        "path": "docs/start/setup.mdx",
+        "reason": "file-budget",
+        "size": 3012
+      },
+      {
+        "path": "docs/tr/index.mdx",
+        "reason": "file-budget",
+        "size": 2429
+      },
+      {
+        "path": "docs/vi/index.mdx",
+        "reason": "file-budget",
+        "size": 2730
+      },
+      {
+        "path": "docs/zh/index.mdx",
+        "reason": "file-budget",
+        "size": 2061
+      },
+      {
+        "path": "docs/ar/admin/keys-and-permissions.mdx",
+        "reason": "file-budget",
+        "size": 4907
+      },
+      {
+        "path": "docs/ar/admin/overview.mdx",
+        "reason": "file-budget",
+        "size": 2314
+      },
+      {
+        "path": "docs/ar/admin/settings-and-security.mdx",
+        "reason": "file-budget",
+        "size": 5406
+      },
+      {
+        "path": "docs/ar/admin/usage.mdx",
+        "reason": "file-budget",
+        "size": 1959
+      },
+      {
+        "path": "docs/ar/admin/users-and-organizations.mdx",
+        "reason": "file-budget",
+        "size": 2764
+      },
+      {
+        "path": "docs/ar/audits/agent-contracts.mdx",
+        "reason": "file-budget",
+        "size": 5282
+      },
+      {
+        "path": "docs/ar/audits/alerts.mdx",
+        "reason": "file-budget",
+        "size": 4196
+      },
+      {
+        "path": "docs/ar/audits/cadence.mdx",
+        "reason": "file-budget",
+        "size": 2853
+      },
+      {
+        "path": "docs/ar/audits/findings-and-issues.mdx",
+        "reason": "file-budget",
+        "size": 6865
+      },
+      {
+        "path": "docs/ar/audits/local-audit.mdx",
+        "reason": "file-budget",
+        "size": 5135
+      },
+      {
+        "path": "docs/ar/audits/overview.mdx",
+        "reason": "file-budget",
+        "size": 3709
+      },
+      {
+        "path": "docs/ar/audits/recipes.mdx",
+        "reason": "file-budget",
+        "size": 3789
+      },
+      {
+        "path": "docs/ar/audits/run.mdx",
+        "reason": "file-budget",
+        "size": 6616
+      },
+      {
+        "path": "docs/ar/audits/setup.mdx",
+        "reason": "file-budget",
+        "size": 2461
+      },
+      {
+        "path": "docs/ar/policies/builtin-catalog.mdx",
+        "reason": "file-budget",
+        "size": 9158
+      },
+      {
+        "path": "docs/ar/policies/builtin.mdx",
+        "reason": "file-budget",
+        "size": 2685
+      },
+      {
+        "path": "docs/ar/policies/custom.mdx",
+        "reason": "file-budget",
+        "size": 4147
+      },
+      {
+        "path": "docs/ar/policies/deploy.mdx",
+        "reason": "file-budget",
+        "size": 3817
+      },
+      {
+        "path": "docs/ar/policies/editor.mdx",
+        "reason": "file-budget",
+        "size": 3948
+      },
+      {
+        "path": "docs/ar/policies/failure-behavior.mdx",
+        "reason": "file-budget",
+        "size": 4831
+      },
+      {
+        "path": "docs/ar/policies/fleet.mdx",
+        "reason": "file-budget",
+        "size": 2572
+      },
+      {
+        "path": "docs/ar/policies/local-configuration.mdx",
+        "reason": "file-budget",
+        "size": 4383
+      },
+      {
+        "path": "docs/ar/policies/overview.mdx",
+        "reason": "file-budget",
+        "size": 3783
+      },
+      {
+        "path": "docs/ar/policies/packs.mdx",
+        "reason": "file-budget",
+        "size": 7000
+      },
+      {
+        "path": "docs/ar/policies/publish-a-pack.mdx",
+        "reason": "file-budget",
+        "size": 5396
+      },
+      {
+        "path": "docs/ar/policies/rollback.mdx",
+        "reason": "file-budget",
+        "size": 2644
+      },
+      {
+        "path": "docs/ar/reference/cloud-cli.mdx",
+        "reason": "file-budget",
+        "size": 24871
+      },
+      {
+        "path": "docs/ar/reference/custom-agents.mdx",
+        "reason": "file-budget",
+        "size": 13363
+      },
+      {
+        "path": "docs/ar/reference/evaluator-sdk.mdx",
+        "reason": "file-budget",
+        "size": 11033
+      },
+      {
+        "path": "docs/ar/reference/events-and-configuration.mdx",
+        "reason": "file-budget",
+        "size": 5074
+      },
+      {
+        "path": "docs/ar/reference/failproof-cli.mdx",
+        "reason": "file-budget",
+        "size": 11143
+      },
+      {
+        "path": "docs/ar/reference/harnesses.mdx",
+        "reason": "file-budget",
+        "size": 10136
+      },
+      {
+        "path": "docs/ar/reference/http-api.mdx",
+        "reason": "file-budget",
+        "size": 4535
+      },
+      {
+        "path": "docs/ar/reference/local-dashboard.mdx",
+        "reason": "file-budget",
+        "size": 6070
+      },
+      {
+        "path": "docs/ar/reference/overview.mdx",
+        "reason": "file-budget",
+        "size": 5459
+      },
+      {
+        "path": "docs/ar/reference/policy-sdk.mdx",
+        "reason": "file-budget",
+        "size": 16690
+      },
+      {
+        "path": "docs/ar/reference/self-hosting.mdx",
+        "reason": "file-budget",
+        "size": 11363
+      },
+      {
+        "path": "docs/ar/reference/troubleshooting.mdx",
+        "reason": "file-budget",
+        "size": 10502
+      },
+      {
+        "path": "docs/ar/sessions/assistant.mdx",
+        "reason": "file-budget",
+        "size": 3525
+      },
+      {
+        "path": "docs/ar/sessions/dashboards.mdx",
+        "reason": "file-budget",
+        "size": 2849
+      },
+      {
+        "path": "docs/ar/sessions/errors.mdx",
+        "reason": "file-budget",
+        "size": 2508
+      },
+      {
+        "path": "docs/ar/sessions/evaluations.mdx",
+        "reason": "file-budget",
+        "size": 3219
+      },
+      {
+        "path": "docs/ar/sessions/hooks.mdx",
+        "reason": "file-budget",
+        "size": 1126
+      },
+      {
+        "path": "docs/ar/sessions/live-events.mdx",
+        "reason": "file-budget",
+        "size": 3398
+      },
+      {
+        "path": "docs/ar/sessions/metrics.mdx",
+        "reason": "file-budget",
+        "size": 1507
+      },
+      {
+        "path": "docs/ar/sessions/models.mdx",
+        "reason": "file-budget",
+        "size": 1538
+      },
+      {
+        "path": "docs/ar/sessions/overview.mdx",
+        "reason": "file-budget",
+        "size": 3958
+      },
+      {
+        "path": "docs/ar/sessions/policy-decisions.mdx",
+        "reason": "file-budget",
+        "size": 1568
+      },
+      {
+        "path": "docs/ar/sessions/queries.mdx",
+        "reason": "file-budget",
+        "size": 3241
+      },
+      {
+        "path": "docs/ar/sessions/read-a-trace.mdx",
+        "reason": "file-budget",
+        "size": 3017
+      },
+      {
+        "path": "docs/ar/start/concepts.mdx",
+        "reason": "file-budget",
+        "size": 2465
+      },
+      {
+        "path": "docs/ar/start/first-audit.mdx",
+        "reason": "file-budget",
+        "size": 3204
+      },
+      {
+        "path": "docs/ar/start/first-policy.mdx",
+        "reason": "file-budget",
+        "size": 3298
+      },
+      {
+        "path": "docs/ar/start/integrations.mdx",
+        "reason": "file-budget",
+        "size": 4838
+      },
+      {
+        "path": "docs/ar/start/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 5306
+      },
+      {
+        "path": "docs/ar/start/setup.mdx",
+        "reason": "file-budget",
+        "size": 4132
+      },
+      {
+        "path": "docs/de/admin/keys-and-permissions.mdx",
+        "reason": "file-budget",
+        "size": 4292
+      },
+      {
+        "path": "docs/de/admin/overview.mdx",
+        "reason": "file-budget",
+        "size": 1917
+      },
+      {
+        "path": "docs/de/admin/settings-and-security.mdx",
+        "reason": "file-budget",
+        "size": 4176
+      },
+      {
+        "path": "docs/de/admin/usage.mdx",
+        "reason": "file-budget",
+        "size": 1563
+      },
+      {
+        "path": "docs/de/admin/users-and-organizations.mdx",
+        "reason": "file-budget",
+        "size": 2402
+      },
+      {
+        "path": "docs/de/audits/agent-contracts.mdx",
+        "reason": "file-budget",
+        "size": 4659
+      },
+      {
+        "path": "docs/de/audits/alerts.mdx",
+        "reason": "file-budget",
+        "size": 3352
+      },
+      {
+        "path": "docs/de/audits/cadence.mdx",
+        "reason": "file-budget",
+        "size": 2395
+      },
+      {
+        "path": "docs/de/audits/findings-and-issues.mdx",
+        "reason": "file-budget",
+        "size": 6043
+      },
+      {
+        "path": "docs/de/audits/local-audit.mdx",
+        "reason": "file-budget",
+        "size": 4221
+      },
+      {
+        "path": "docs/de/audits/overview.mdx",
+        "reason": "file-budget",
+        "size": 2946
+      },
+      {
+        "path": "docs/de/audits/recipes.mdx",
+        "reason": "file-budget",
+        "size": 3079
+      },
+      {
+        "path": "docs/de/audits/run.mdx",
+        "reason": "file-budget",
+        "size": 5381
+      },
+      {
+        "path": "docs/de/audits/setup.mdx",
+        "reason": "file-budget",
+        "size": 2276
+      },
+      {
+        "path": "docs/de/policies/builtin-catalog.mdx",
+        "reason": "file-budget",
+        "size": 7963
+      },
+      {
+        "path": "docs/de/policies/builtin.mdx",
+        "reason": "file-budget",
+        "size": 2212
+      },
+      {
+        "path": "docs/de/policies/custom.mdx",
+        "reason": "file-budget",
+        "size": 3689
+      },
+      {
+        "path": "docs/de/policies/deploy.mdx",
+        "reason": "file-budget",
+        "size": 3329
+      },
+      {
+        "path": "docs/de/policies/editor.mdx",
+        "reason": "file-budget",
+        "size": 3542
+      },
+      {
+        "path": "docs/de/policies/failure-behavior.mdx",
+        "reason": "file-budget",
+        "size": 4336
+      },
+      {
+        "path": "docs/de/policies/fleet.mdx",
+        "reason": "file-budget",
+        "size": 2255
+      },
+      {
+        "path": "docs/de/policies/local-configuration.mdx",
+        "reason": "file-budget",
+        "size": 4003
+      },
+      {
+        "path": "docs/de/policies/overview.mdx",
+        "reason": "file-budget",
+        "size": 3183
+      },
+      {
+        "path": "docs/de/policies/packs.mdx",
+        "reason": "file-budget",
+        "size": 6439
+      },
+      {
+        "path": "docs/de/policies/publish-a-pack.mdx",
+        "reason": "file-budget",
+        "size": 4792
+      },
+      {
+        "path": "docs/de/policies/rollback.mdx",
+        "reason": "file-budget",
+        "size": 2379
+      },
+      {
+        "path": "docs/de/reference/cloud-cli.mdx",
+        "reason": "file-budget",
+        "size": 22311
+      },
+      {
+        "path": "docs/de/reference/custom-agents.mdx",
+        "reason": "file-budget",
+        "size": 12035
+      },
+      {
+        "path": "docs/de/reference/evaluator-sdk.mdx",
+        "reason": "file-budget",
+        "size": 9557
+      },
+      {
+        "path": "docs/de/reference/events-and-configuration.mdx",
+        "reason": "file-budget",
+        "size": 4255
+      },
+      {
+        "path": "docs/de/reference/failproof-cli.mdx",
+        "reason": "file-budget",
+        "size": 9321
+      },
+      {
+        "path": "docs/de/reference/harnesses.mdx",
+        "reason": "file-budget",
+        "size": 8611
+      },
+      {
+        "path": "docs/de/reference/http-api.mdx",
+        "reason": "file-budget",
+        "size": 4098
+      },
+      {
+        "path": "docs/de/reference/local-dashboard.mdx",
+        "reason": "file-budget",
+        "size": 5166
+      },
+      {
+        "path": "docs/de/reference/overview.mdx",
+        "reason": "file-budget",
+        "size": 4621
+      },
+      {
+        "path": "docs/de/reference/policy-sdk.mdx",
+        "reason": "file-budget",
+        "size": 15306
+      },
+      {
+        "path": "docs/de/reference/self-hosting.mdx",
+        "reason": "file-budget",
+        "size": 9399
+      },
+      {
+        "path": "docs/de/reference/troubleshooting.mdx",
+        "reason": "file-budget",
+        "size": 9583
+      },
+      {
+        "path": "docs/de/sessions/assistant.mdx",
+        "reason": "file-budget",
+        "size": 3016
+      },
+      {
+        "path": "docs/de/sessions/dashboards.mdx",
+        "reason": "file-budget",
+        "size": 2282
+      },
+      {
+        "path": "docs/de/sessions/errors.mdx",
+        "reason": "file-budget",
+        "size": 2146
+      },
+      {
+        "path": "docs/de/sessions/evaluations.mdx",
+        "reason": "file-budget",
+        "size": 2786
+      },
+      {
+        "path": "docs/de/sessions/hooks.mdx",
+        "reason": "file-budget",
+        "size": 936
+      },
+      {
+        "path": "docs/de/sessions/live-events.mdx",
+        "reason": "file-budget",
+        "size": 2626
+      },
+      {
+        "path": "docs/de/sessions/metrics.mdx",
+        "reason": "file-budget",
+        "size": 1239
+      },
+      {
+        "path": "docs/de/sessions/models.mdx",
+        "reason": "file-budget",
+        "size": 1181
+      },
+      {
+        "path": "docs/de/sessions/overview.mdx",
+        "reason": "file-budget",
+        "size": 3311
+      },
+      {
+        "path": "docs/de/sessions/policy-decisions.mdx",
+        "reason": "file-budget",
+        "size": 1372
+      },
+      {
+        "path": "docs/de/sessions/queries.mdx",
+        "reason": "file-budget",
+        "size": 2769
+      }
+    ],
+    "omitted_count": 1034,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2850,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1040,
+      "complete": false,
+      "omitted": 1034,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6736f4b7ccbd528488068fc29f88c69a",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 6,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/failproofai/failproofai/86f80fc59ee1a18211780ef2fe964d80858deeb2/cca0cfe74a52d5e3/manifest.json",
+  "package_id": "pkg_0bc3d9b2d777c1d19a467898c7f3763008e33551fc57e327ca13db4365a20f18",
+  "repo": "failproofai/failproofai",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "544c4060a818a61ff97f56b587b994bf8cdd3ddb5334fc4ee648350e8393e330",
+  "snapshot_id": "cca0cfe74a52d5e3",
+  "sources": [
+    {
+      "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+      "git_sha": "636d2666bd3f24622e247b3b741143aed0c0ac72",
+      "lines": 274,
+      "path": "README.md",
+      "repository": "failproofai/failproofai",
+      "sha256": "abdb26b67da5e5bdff0f89f631891ea9823a3f8ffd7d1fbef9525edcf0fe8888",
+      "source_id": "src_1a8628246ced568db74fc033ad223936",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/README.md"
+    },
+    {
+      "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+      "git_sha": "11aa3911e1c0fdf227e66510150624228a2811ea",
+      "lines": 25,
+      "path": "docs/ar/sessions/tools.mdx",
+      "repository": "failproofai/failproofai",
+      "sha256": "1779a4c66384947a3358acefe81f7a9ce5255c2f4c28a8814fc9ea7d1917af6c",
+      "source_id": "src_1be8d5800c565dcf97d059bd1b4a7260",
+      "stored": "tools.mdx-fbe97e9126b8.txt",
+      "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/docs/ar/sessions/tools.mdx"
+    },
+    {
+      "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+      "git_sha": "ee0ee8dcf7d54eb99d6c045d1691676da7956a18",
+      "lines": 25,
+      "path": "docs/de/sessions/tools.mdx",
+      "repository": "failproofai/failproofai",
+      "sha256": "177ba8ae73e555458568df3ed1ae3e540d8f178ba622908e1bbe44e90265e314",
+      "source_id": "src_29ea1c12ab9b5731b919c142c11ed6cf",
+      "stored": "tools.mdx-781c39a29704.txt",
+      "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/docs/de/sessions/tools.mdx"
+    },
+    {
+      "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+      "git_sha": "42cb101606020fa3e17e0a2f0848d1ca21e4e699",
+      "lines": 25,
+      "path": "docs/es/sessions/tools.mdx",
+      "repository": "failproofai/failproofai",
+      "sha256": "c6c70521250f2e33bc55376af3091196e43dbb9cafcde18c24ccb5a1fdc280d3",
+      "source_id": "src_20ff5ca800435ed9b4a61a24b622652f",
+      "stored": "tools.mdx-36f0fabceb58.txt",
+      "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/docs/es/sessions/tools.mdx"
+    },
+    {
+      "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+      "git_sha": "549b507a7c71edc4c9baf6adcdfedd65654ada18",
+      "lines": 25,
+      "path": "docs/fr/sessions/tools.mdx",
+      "repository": "failproofai/failproofai",
+      "sha256": "02cb124eecbfd5d72dd1071cbeb07b2c54613d05a79114b11abc81b6b96d3971",
+      "source_id": "src_a90732233cf45414aa8d0048b3572f8e",
+      "stored": "tools.mdx-6eab87d1eb8c.txt",
+      "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/docs/fr/sessions/tools.mdx"
+    },
+    {
+      "commit": "86f80fc59ee1a18211780ef2fe964d80858deeb2",
+      "git_sha": "8fd036a46ef0e90b1283f5ee1e802fef8fd9099c",
+      "lines": 25,
+      "path": "docs/sessions/tools.mdx",
+      "repository": "failproofai/failproofai",
+      "sha256": "ec6e5f915bef33a770812656a4dc7317e9af212a7c9c308b365c84dedbe93440",
+      "source_id": "src_b9a21b8a47fe50e791e8dc4074486172",
+      "stored": "tools.mdx-9a935d5ba7df.txt",
+      "url": "https://github.com/FailproofAI/failproofai/blob/86f80fc59ee1a18211780ef2fe964d80858deeb2/docs/sessions/tools.mdx"
+    }
+  ],
+  "summary": "FailproofAI is a TypeScript npm package providing local hook-based observability and policy enforcement for 12 agent harnesses, with 39 built-in policies, a local dashboard on port 8020, and a hosted observability offering. Evidence is mostly README and translated docs; no source code slices are present.",
+  "superseded_claim_ids": []
+}

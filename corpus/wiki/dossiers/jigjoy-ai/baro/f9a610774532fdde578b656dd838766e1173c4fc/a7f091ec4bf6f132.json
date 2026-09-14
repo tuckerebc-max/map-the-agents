@@ -1,0 +1,800 @@
+{
+  "applied_operation_id": "op_3e0ba543d1cb4d9cbfb8ca48e67acd63",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6110d9ddb9d49432414558bbe8d4a4dc45ee554c44e9406e2bd440c0298a359",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L27-L30"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L32-L32"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L18-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21815ed8578b8be469a0f12a3417c9b0dd5217014d482438e0d0d323fe35c4b1",
+        "slc_4362ce943c03b59801c7c32fa62055afef7ed879d703d30a89ddc0b09f7a0700",
+        "slc_ca1991bff186b5e81d1498119ea4fdca8a9624978a77d66d36df98405c1e8e94"
+      ],
+      "text": "The product is installed globally via npm as baro-ai and is invoked as `baro \"<goal>\"` inside a repository, opening a TUI where intake asks questions, the user confirms the plan, and the run proceeds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3e7704c988709fe7a6c2df6530d7718a051a5dbe007aee06cf28061a80d8ca2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 58,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L46-L58"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 42,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L36-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29241bfba71b637c4134edad80f0465a107b8ecf4bf48272644317e8754a4ce8",
+        "slc_a596ed41d1d3a1a49fd47ea2bb3c861c6fade7f5476881fa8f04d1e649013b34"
+      ],
+      "text": "CLI commands include headless detached runs printing a run id, `watch` and `logs` for following runs, `runs`/`stop` for listing and stopping, `--resume` (never re-plans), `--continue` (always re-plans), `--doctor`, `login`, and `connect`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_766911624b7300063f436a3c324000b42f9c0aee1fb1362034b1a4ca01d22eb9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 23,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L22-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dd7472e3865d3e2627d037be93f0cb650c62d8c00c061a55a488879457efe262"
+      ],
+      "text": "The tool requires Node 20+, git, and at least one LLM backend: the claude CLI (default), codex, or any OpenAI-compatible endpoint; `baro --doctor` checks the setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac7cfaff3f1e8029288f36cb28451ce63f696ff44703e632c0749bbe48f91958",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_826e5ab814899292fbc988d977c838373b712f0eea2138f4076df080a29c9735"
+      ],
+      "text": "The architecture is described as a Rust TUI host plus a TypeScript orchestrator whose bounded contexts communicate over the Mozaik event bus, with machine gates in front of every merge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf08c9b4122ad876d30561aec0b4db4e355bcdc6c8d41d32d4170ff510a8fd1e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 11,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L8-L11"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 91,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L82-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_662e07efc11f5c5abd0d003727a1e6e39e4626268018ef3eb760bb590ba3557a",
+        "slc_ae87d5fc8640a00033bf1fee85c290f27d08dc21d425869ef73b8731a11d93c4"
+      ],
+      "text": "Goals are compiled by an architect into machine-checkable invariants before coding, split into a DAG of stories built in parallel across isolated git worktrees, with runtime replanning able to add and rewire stories mid-run and failed gates spawning remediation stories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1a78f2e24d029f64423c450abc8fb39f316d40b40233281a4d59ed951fb7e376",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 11,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L8-L11"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 91,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L82-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_662e07efc11f5c5abd0d003727a1e6e39e4626268018ef3eb760bb590ba3557a",
+        "slc_ae87d5fc8640a00033bf1fee85c290f27d08dc21d425869ef73b8731a11d93c4"
+      ],
+      "text": "Merges are blocked behind fail-closed gates: declared tests, build-before-commit, an evidence critic judging captured command output, and write-surface ownership; the human reviews a PR the gates already accepted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51bb064a0be450abf3833e9edcf1095eeac19fcfd26d96861f34fe203ab43cfe",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L7-L7"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b83cb6b8facc3914581a746d5644e1455cdc685bc83fc00a68575c8857ba45f",
+        "slc_5c4dd57c5df6d0e1cbc1d317cea83cc755a305389cb736eb6c4cb868b25a6efe"
+      ],
+      "text": "Collective coordination is the CLI default; a legacy Conductor mode (one owner of DAG levels, retries, completion) can be selected with `--coordination legacy` for A/B comparison."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae96de8fd332dcf0913d4e9163301ad6f790682478413c91bb7fb89f6c980274",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b83cb6b8facc3914581a746d5644e1455cdc685bc83fc00a68575c8857ba45f"
+      ],
+      "text": "In collective mode, workers publish credential-free capabilities and bids, a broker grants a correlated lease to a deterministic winner, and with the Critic enabled a story passes only after the acceptance verdict plus StoryMerged, not merely when the model process exits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e0cee3d0ef9fb48d2a64af69932471fa3a2d75b324d2a606248af898c4b840f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 37,
+          "line_start": 29,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L29-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06fec732226659c52339156c5c61e151d72d99bf68ce96abed66dd1859229589"
+      ],
+      "text": "Runtime replan proposals carry run/story/lease/generation and a graphVersion; invalid, stale, cyclic, unauthorized, over-budget or non-durable candidates get a correlated rejection and are never shown as applied just because a model requested them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb94c90bc24882cf73f385ce667a79ed9663f7f19767f5a5e236628239cba494",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b5425bd631a98e80e5f33e553493c7ec29eb9157",
+          "line_end": 53,
+          "line_start": 47,
+          "path": "docs/collective-runtime.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-runtime.md#L47-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_db3cbf9007c267be0d5c1aab7a1533dfc3c2641032302743508d087a7f72fb6f"
+      ],
+      "text": "The docs state Baro lacks a trusted per-story CandidateVerifier that executes new deterministic commands in the active worktree, so genuinely missing or fully stale command evidence stays inconclusive after bounded rechecks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d6a7d0597e6ca15591c35cdbf4113cdb7106ddda2212e97034005af8fda2239",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 322,
+          "line_start": 315,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L315-L322"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b5425bd631a98e80e5f33e553493c7ec29eb9157",
+          "line_end": 28,
+          "line_start": 21,
+          "path": "docs/collective-runtime.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-runtime.md#L21-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c4f64602749c880523b7dd64985b44234c400e430e4586a08840b7c83b5d881",
+        "slc_e6fe9f4eb4ce38c646b4b12d4d34f77a07f6daef934af062edb927dead15705a"
+      ],
+      "text": "Codex, OpenCode, and Pi workers are one-shot CLI processes that cannot consume corrective messages after exit; failed verdicts for those backends require a separate recovery execution rather than in-process revision."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9de5bb01170e5a33f41495cc23c00132ee1f87e71bca99c5775edf62c83a7fa6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 87,
+          "line_start": 75,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L75-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_732b4135da596c72e2bb1c5651557fef0a5d8086d0d136536640b85670b29fe5"
+      ],
+      "text": "The public CLI does not yet expose process-level run resumption: a restart creates a new run identity, keeps the graph version as baseline, resets the discovery budget, and does not expose the old decision ledger."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8d4ea05c10b8183558cf2b2dc435321fb6e914764821698ba41093323fa6efb",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 216,
+          "line_start": 206,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L206-L216"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 46,
+          "line_start": 39,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L39-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8cdef795b6d49eca2f8a2419a5df371c62104f4f820242be054b1cae8a69de5c",
+        "slc_98676e425d641f00b9ac1628d51c4701af22a0545a6865ebc33832d44d7567b1"
+      ],
+      "text": "The DialogueAgent is text-only with no codebase tools; it may send a bounded targeted message and one add-only delegation proposal of at most two stories, with no authority over removal, rewiring, priority, retries, model, route, lease, or merging."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_105014d924b25e519cecc21d417b0d2de15a7cdb764de15ab0c6e84752a8697f",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 73,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L62-L73"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 202,
+          "line_start": 201,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L201-L202"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dbd8de84705cd94922d72afa5abc6b5610b2f97e72502176cbd08e689cfd76c",
+        "slc_c56e113c2a19061005bb110ebe49af039d01327818ee1ba21752ad3fd479806b"
+      ],
+      "text": "`--local-only` disables pushes and PRs but is explicitly not an OS or network sandbox, since story agents can execute arbitrary shell commands; a hard no-push boundary requires removing git remotes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aad8c4d7e94fad5ffbc9d4e4979621a34a4ed639df0fb167335c949fc0a86df1",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 347,
+          "line_start": 328,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L328-L347"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 380,
+          "line_start": 369,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L369-L380"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 359,
+          "line_start": 359,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L359-L359"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 169,
+          "line_start": 162,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L162-L169"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 361,
+          "line_start": 361,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L361-L361"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16799e482e43cb26917ad5ce89583509067d403aa3c98769fa6fa9c5cf6e1e76",
+        "slc_23b9c216074e5d7ae97725eebcaf92a0913d55a4ccaeb7f509753ef8e45b86c2",
+        "slc_46d3c66b3113a2de6dda2b2c9a37c37d1b91bb7e6b826435584c66d42f5120b8",
+        "slc_cc929d56349d4531eaee08d5bdde30a4a6635739bd0db24484f48fa50505af3b",
+        "slc_e643fcee23b878b50f7d12955a06ac4ce45f951b3e364a5213543caacd2a0c76"
+      ],
+      "text": "A paired A/B harness (ab-run.ts) compares legacy vs collective coordination on identical PRD bytes across isolated clones, alternating arm order, hashing verify inputs, and producing per-trial artifacts including diff.patch, metrics.json, and audit logs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e5d29b6dedc005b653821275afa67ebd02afd880a6eb405e5eb7a196615fc8c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L143-L143"
+        },
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 182,
+          "line_start": 179,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L179-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bfef82491b37f41a283d7c23086735b3e96c17cc311a7ab3046838036c75b3c2",
+        "slc_dd91b5a36e911747be1671e0f407c8043cbc89ec12f6829104c5551eeea51ffd"
+      ],
+      "text": "Repository development practice: the experiment guide instructs preparing a clean git repo with an unexecuted prd.json whose stories have concrete acceptance criteria and test commands, and installing workspace dependencies with npm install before running trials."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_92d2d411d0709701e7fd56b0da87655c88254493c97f754d78e2ff67f56fa2c1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 73,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L62-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dbd8de84705cd94922d72afa5abc6b5610b2f97e72502176cbd08e689cfd76c"
+      ],
+      "text": "Flags include backend selection (--llm claude|codex|openai|opencode|pi|hybrid|jigjoy), model override, effort level, parallel agent count, execution mode, --quick, --local-only, per-command shell budget, custom OpenAI base URL, and per-tier backend mapping."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_baf49f898612c0d1607a2c499df6a0570704e54eef91703f124b0acef7b75aee",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+          "line_end": 87,
+          "line_start": 75,
+          "path": "docs/collective-experiment.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md#L75-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_732b4135da596c72e2bb1c5651557fef0a5d8086d0d136536640b85670b29fe5"
+      ],
+      "text": "Proposal IDs act as idempotency keys: exact re-delivery returns the remembered decision without reapplying, reuse with different content is rejected, and applied decisions can be restored from the PRD's runtimeGraph metadata when a host resumes the same runId."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_630a3eb1b0633aa3bc1604d67ebf3a855db38c1a79fa35bfc09e1a9b75b7e73c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "b5425bd631a98e80e5f33e553493c7ec29eb9157",
+          "line_end": 156,
+          "line_start": 151,
+          "path": "docs/collective-runtime.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-runtime.md#L151-L156"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53030689d1df9ad77ddd431c81be4532239c3b0c4a387b25b9ab6f48f1f1521a"
+      ],
+      "text": "The runtime is distributed but not leaderless: the Board serializes scheduling and durable graph commits while separate participants own goal meaning, route selection, lease granting, quality evaluation, merging, and verification."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31d494bd46599975f396e273b9c161237a5e8067e2bb73f2ce4cd14613a801eb",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+          "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+          "line_end": 119,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "jigjoy-ai/baro",
+          "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md#L116-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e152f18d0963f51c7edd3c7465c18d2c62c93f1d3cb110d5c8b00f27a703502"
+      ],
+      "text": "A cloud option runs the same fleet on a hosted site with isolated sandboxes and provider keys, or users can attach their own machine as a cloud runner via `baro login` and `baro connect --install-service`."
+    }
+  ],
+  "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 123,
+        "path": "README.md",
+        "size": 5916
+      },
+      {
+        "lines": 402,
+        "path": "docs/collective-experiment.md",
+        "size": 23382
+      },
+      {
+        "lines": 510,
+        "path": "docs/collective-runtime.md",
+        "size": 30827
+      },
+      {
+        "lines": 169,
+        "path": "docs/cooperative-suspension-lineage.md",
+        "size": 9716
+      },
+      {
+        "lines": 46,
+        "path": "docs/operator-protocol.md",
+        "size": 2637
+      },
+      {
+        "lines": 116,
+        "path": "docs/semantic-events.md",
+        "size": 7140
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/stream-protocols.md",
+        "reason": "file-budget",
+        "size": 10626
+      },
+      {
+        "path": "docs/tui-protocol-v2.md",
+        "reason": "file-budget",
+        "size": 4880
+      },
+      {
+        "path": "docs/tui-protocol-v3.md",
+        "reason": "file-budget",
+        "size": 3578
+      },
+      {
+        "path": "docs/adr/phase-boundaries.md",
+        "reason": "file-budget",
+        "size": 3749
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 2454
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 123706
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 3002
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 887,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 7,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_9064fdb3ecd2512282d6b58a2509530b",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 3,
+    "limitations": 4,
+    "memory-state": 1,
+    "orchestration": 4,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jigjoy-ai/baro/f9a610774532fdde578b656dd838766e1173c4fc/a7f091ec4bf6f132/manifest.json",
+  "package_id": "pkg_078eff3e76a7b90ad736187e0185c9bc541137462e00f9d6bf9e413cf44bf6d0",
+  "repo": "jigjoy-ai/baro",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d1dcf2cb2cae0895bd3f156cf5e7c9a91c358974a6177bda11f7ca6119cc9ce1",
+  "snapshot_id": "a7f091ec4bf6f132",
+  "sources": [
+    {
+      "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+      "git_sha": "fd5857b45f637d23cb1961ff000a385a80ce5aea",
+      "lines": 123,
+      "path": "README.md",
+      "repository": "jigjoy-ai/baro",
+      "sha256": "371d3ddf618ea98c0af7c990168b237e9f45a162d975d84761844c0038509c8a",
+      "source_id": "src_ddc01746f1165a62b36cb7b76b0fa1cc",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/README.md"
+    },
+    {
+      "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+      "git_sha": "b48cf4ca47126a2d98f9ec005fea207b65650249",
+      "lines": 402,
+      "path": "docs/collective-experiment.md",
+      "repository": "jigjoy-ai/baro",
+      "sha256": "bf06bc20f8510e31f543d51e902001ebafb04a70313a79423995171f5f487489",
+      "source_id": "src_9a5c51749a775bd7908166914ee6d87e",
+      "stored": "collective-experiment.md-f05d4ba93736.md",
+      "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-experiment.md"
+    },
+    {
+      "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+      "git_sha": "b5425bd631a98e80e5f33e553493c7ec29eb9157",
+      "lines": 510,
+      "path": "docs/collective-runtime.md",
+      "repository": "jigjoy-ai/baro",
+      "sha256": "3166d4dd7ceadbf4c4e8ed2193eb417a81aa8ac25bffd6341910ee952e63d7f4",
+      "source_id": "src_3e20a7f65eef5c579ad41eddb06e0f40",
+      "stored": "collective-runtime.md-1f55d78e083e.md",
+      "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/collective-runtime.md"
+    },
+    {
+      "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+      "git_sha": "7ae8e721e5916791b31a08c53f7e72d05acaed20",
+      "lines": 169,
+      "path": "docs/cooperative-suspension-lineage.md",
+      "repository": "jigjoy-ai/baro",
+      "sha256": "5ae8a54489484c085bb6221556a26be8a4795b3ab41b7dea3a1bb207754e4fc4",
+      "source_id": "src_1bd157914b1d562ea7639e9429e174bf",
+      "stored": "cooperative-suspension-lineage.md-0b3c22b55fac.md",
+      "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/cooperative-suspension-lineage.md"
+    },
+    {
+      "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+      "git_sha": "0f8e00a88427021cc7725ca295ae7a1f60af9f73",
+      "lines": 46,
+      "path": "docs/operator-protocol.md",
+      "repository": "jigjoy-ai/baro",
+      "sha256": "10cf625af06723ce7feef81777fc8b208117f8d7117b7d851920a998e3dea8ff",
+      "source_id": "src_9a72c9fbe381528ca8dfbe347abccd68",
+      "stored": "operator-protocol.md-3525ad21501e.md",
+      "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/operator-protocol.md"
+    },
+    {
+      "commit": "f9a610774532fdde578b656dd838766e1173c4fc",
+      "git_sha": "7f8e383c930c61c3af31270e3f192370d80c6e45",
+      "lines": 116,
+      "path": "docs/semantic-events.md",
+      "repository": "jigjoy-ai/baro",
+      "sha256": "64da3c943118b9305bfba3566f13b904151e2eb13d654e242284432eedafe0b0",
+      "source_id": "src_1e43ea7916c6575fbfbff4cfb013c4e4",
+      "stored": "semantic-events.md-7348b8aec55b.md",
+      "url": "https://github.com/jigjoy-ai/baro/blob/f9a610774532fdde578b656dd838766e1173c4fc/docs/semantic-events.md"
+    }
+  ],
+  "summary": "baro is an autonomous software-factory CLI (npm package baro-ai) that compiles a goal into a machine-checkable contract, plans a DAG of stories, runs story agents in parallel across isolated git worktrees, and gates merges behind tests, builds, an evidence critic, and write-surface ownership. Documentation also details a collective coordination mode, runtime DAG replanning, and a paired A/B experiment harness. Evidence coverage: 107 of 172 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

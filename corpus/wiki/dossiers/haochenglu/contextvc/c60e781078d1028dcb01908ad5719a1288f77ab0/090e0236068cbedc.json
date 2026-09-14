@@ -1,0 +1,632 @@
+{
+  "applied_operation_id": "op_fd8e4560e4044b219e6510b3acbfd397",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa75b0955a3f9dd7497ed68e01f42381b0c65412340385a7cf8c76fb7d0ab8c9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L5-L5"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53d6135e028dc37e3f2832aa7d085f88521a51b05b1aeb8ce79d0cc92fc262e6",
+        "slc_dcae26e2c81cc5ae6eb258eed12ca3f3e0c207ae316dcb1a29dc103e7dee1264"
+      ],
+      "text": "ContextVC is described as a Git-native context control plane for AI coding agents, storing rules, decisions, failure memory, how-tos, preferences, and code maps in `.context/`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e33f2a629f100f7d2ba5148153a6ab2ede0842178471e7253b3eb11fa8991ce9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 231,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L228-L231"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 118,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L99-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_79abc1ef92b5c73ee153ff645968353e8650caa15edc03a39fcebd2b710d2c0a",
+        "slc_e3eb363d7b9bbb36a4a5da1524f1ffcdc89fc9ce85433045edf583e91ab54e9e"
+      ],
+      "text": "The product exposes a `ctx` CLI with subcommands including init, adopt, render, check, precheck, review, merge, verify, log-event, serve-mcp, and repeatbench."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66e6dab94ec315fc9d5187e5029bd541a3b627779f9d0b8935d4e0fc982b3599",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 86,
+          "line_start": 81,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L81-L86"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L79-L79"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 78,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L74-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_454febc8b0ebe4d470421c56a9367a85c7e6c85fe5906fa2f096ac4cc0110bc8",
+        "slc_df1ddcd494b0813805c00bc568ce3f7903eb167ef1d7ab9ef21cbfd162cbe389",
+        "slc_fc68d1b4cb0d199ab31305ca7676826dd6d8c76f7cc4b0abc43c60158d80669e"
+      ],
+      "text": "`ctx serve-mcp` runs a local stdio MCP server exposing tools: context_brief, context_search, context_precheck, context_log, context_propose, and context_status."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e521869161dc13625bf816ea26b81e2b6410670ef84525194e245f8f7e542b1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4ffcd7a4c324b177a578ec83ba38dcab98085213",
+          "line_end": 52,
+          "line_start": 37,
+          "path": "docs/ocl-v0.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/ocl-v0.md#L37-L52"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 44,
+          "line_start": 37,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L37-L44"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4ffcd7a4c324b177a578ec83ba38dcab98085213",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "docs/ocl-v0.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/ocl-v0.md#L35-L35"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 31,
+          "line_start": 17,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L17-L31"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 263,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L263-L263"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_346fc092b1ec8d6c1c5a02ebfdde1bc8c668bc90759cfdf79fb30f104971a463",
+        "slc_5464f3ea07458b5e2e068355128b11f971f89b543f5a9dfec79d367678dabdfb",
+        "slc_7d93c83c94e44c0ae5a5d1ea20a1dc3c4edb865ce6687b5c954293beee9871b9",
+        "slc_8bf4324d058f574e327a608083e06593c974e250e0c50c96a54931526c0ff7bc",
+        "slc_c0e69afce6c0e353f910050f17802620ff1ad31bd73421fdd8f08eee187c4bb4"
+      ],
+      "text": "Knowledge objects are Markdown files with YAML frontmatter (id, type, scope, status, trust, confidence, evidence, bindings) stored under `.context/objects/` in six type directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db53d87a4bcbdfedcd0106e608eb2c975a47e4458e2d566e0302fff2d3e4418f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 13,
+          "line_start": 7,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L7-L13"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 141,
+          "line_start": 137,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L137-L141"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L135-L135"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 78,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L74-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1299b33bfa26d3c4d456b5572cc77b8efdcc29864f24b6c7aa30712e1949bf25",
+        "slc_6aa182ac45f7a0ff06593ce41c436fa81913d4abb5f34f78a174c5a404e30c4b",
+        "slc_a84dcf452fd47bb64c9f4f769ab8de225e247559ef2f9fa5b47c07f85bb632c2",
+        "slc_fc68d1b4cb0d199ab31305ca7676826dd6d8c76f7cc4b0abc43c60158d80669e"
+      ],
+      "text": "Design principles include Git-native versioning, local-first operation with no API key or hosted service, deterministic gates independent of model output, and human review before runtime learnings become formal objects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d70e544fb855bd596e99adaa10cee0d3f13410a4c66313a12f9e4c85ae9751c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4ffcd7a4c324b177a578ec83ba38dcab98085213",
+          "line_end": 89,
+          "line_start": 88,
+          "path": "docs/ocl-v0.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/ocl-v0.md#L88-L89"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 274,
+          "line_start": 274,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L274-L274"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_981ef16bcd3ca5a897ab468c5338299790de998cb6571d877e59babcbcf1a830",
+        "slc_a10a2108ef991044598794b20be74a501f8b027d25008366c5f63de27f75e793"
+      ],
+      "text": "Projection files use managed `ctx:begin`/`ctx:end` blocks; `ctx render` regenerates only managed blocks and preserves human-written text outside them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34ac5a4ebbea9767098180f3b5b5d5267d892535fbbe7c4125737889e539af5e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 98,
+          "line_start": 94,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L94-L98"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L92-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_418afb9201143540e0fa83fcb6ed8c317d31f216696a706300d7bb6fcfc64e4f",
+        "slc_84b449fb27837dcc1c4e75c993a80eb6aa67fbd04d66f04d547bd3e9ba3e5567"
+      ],
+      "text": "Generated hook adapters inject a brief at session start, run precheck before tool execution, log failures, distill proposals at stop, and add context before compaction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee4626da2fc8af0cad27bf5361e019b2f29d487a5c09e00b8936b640bb88ca57",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 125,
+          "line_start": 120,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L120-L125"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 95,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L84-L95"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 127,
+          "line_start": 127,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L127-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3da43bf3a9eb376a0ee7db21838369363470d7fb799495bf25d535d35e70b3a3",
+        "slc_9bde8e273b5d72599a8f68b47090ec7606428a2cad1eaebb536b14cab7470d64",
+        "slc_fe7b1001be53a3923787609fedbad2c6092faab3df9696160ce8e379626e4fb6"
+      ],
+      "text": "The precheck gate returns warn, ask, or block verdicts before risky actions, based on scope globs, bindings, failure history, stale hints, and snooze events; command matching is token-aware rather than substring-based."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b31ce64076e65640909b5a5a3639881a24fa13f41cff33d8d89e5bb119911d53",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 141,
+          "line_start": 137,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L137-L141"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L48-L48"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6aa182ac45f7a0ff06593ce41c436fa81913d4abb5f34f78a174c5a404e30c4b",
+        "slc_caaec1709339d8a200033f8dd1a04a7d6e4d6d3eb3633ecea2edb6d317c73527",
+        "slc_f7865248adf6426f8cdfc1186ed19c7e28f72af790d00167d48a5ef7135bbc06"
+      ],
+      "text": "Events are append-only JSONL with secret redaction and git context; proposals are candidate knowledge activated into objects only via `ctx review accept`, with rejects recorded as tombstones to avoid re-distillation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c26d3d26536a409bfd310cd3182a94f0f34c08e7624d42fc77659bf54073c2e4",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 43,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L38-L43"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L45-L45"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 34,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L31-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1be03b9b31a5e2649a67ba3bd9eae4a10bc3e90077a648061e1dafffe3e59276",
+        "slc_6beecc23904fc13f148f44a89936680b508678f262921d7a1c4fffe30dee69fb",
+        "slc_7b96f9da155d82962f667a458949b84fff8130c64057ff7ef9be5559fc560c68"
+      ],
+      "text": "The tool is written in Rust and installed via cargo; the stable Rust toolchain is required, and installation uses `cargo install --locked` from a tagged GitHub release or source."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e7bbbc3233201d4d77bd5e3239f1cc9b1d0082727047670b460e0537cc7263c",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 211,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L211-L211"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+          "line_end": 176,
+          "line_start": 176,
+          "path": "docs/design.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md#L176-L176"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 222,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L215-L222"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 231,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L228-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_122d787cac261bc781a3ea9f739b69227e36c2e128b9de28d7c0142299ca0a6d",
+        "slc_2cdffeab78f0100875bfddaffef9a9644ef9d96d1350bdec5e870ea7675da491",
+        "slc_586d0acd77337dfc29d3262449984fd3fda745b7a9401bc60d15406f5984616e",
+        "slc_79abc1ef92b5c73ee153ff645968353e8650caa15edc03a39fcebd2b710d2c0a"
+      ],
+      "text": "RepeatBench is a benchmark checking that known repeat failures are caught by the gate while safe actions pass; the committed summary reports 1 scenario, 1 gate hit, 0 misses, and 0.0 repeat failure rate, runnable via `ctx repeatbench --json`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70aa09977987b4a1a68b582a3197afb777d519a34440cf941365ec6b1c723322",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 293,
+          "line_start": 287,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L287-L293"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 249,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L243-L249"
+        },
+        {
+          "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+          "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+          "line_end": 241,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "haochenglu/contextvc",
+          "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md#L241-L241"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ed0ae818c9b95a8e85e6cbbfd1dae0a664c85a36ab068f5adb7f297375b4c05",
+        "slc_7c2719e2df7d74311288209e71a4c08421bfa64baa97d39d7a872161dc40c5ce",
+        "slc_b64374a947038658a65c63eda93600c4b168ae21963764c6aef6328f28176d22"
+      ],
+      "text": "Repository development practice: the included GitHub Actions workflow runs cargo fmt check, cargo test, release build, repeatbench, and git diff --check; local development uses the same commands."
+    }
+  ],
+  "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 307,
+        "path": "README.md",
+        "size": 10204
+      },
+      {
+        "lines": 202,
+        "path": "docs/design.md",
+        "size": 6993
+      },
+      {
+        "lines": 98,
+        "path": "docs/ocl-v0.md",
+        "size": 2415
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 57,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_33e153d2e78650628d8ae7c6739dc820",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/haochenglu/contextvc/c60e781078d1028dcb01908ad5719a1288f77ab0/090e0236068cbedc/manifest.json",
+  "package_id": "pkg_7d40331e6ef52df4a2be6a0eeb903e828186ac3c262840b14727fc38fb53bd43",
+  "repo": "haochenglu/contextvc",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8ebaef0ff99dc6cf31ee6ffd865f5f76a93d64543d837625885da0f820c4f8d0",
+  "snapshot_id": "090e0236068cbedc",
+  "sources": [
+    {
+      "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+      "git_sha": "4c63a303237bcec2ab698653bd5271d27118aa3c",
+      "lines": 307,
+      "path": "README.md",
+      "repository": "haochenglu/contextvc",
+      "sha256": "7fe778cdb2f4252d5d644f3ab3fffc9e38799f64d923e2497f9107fee6f19afe",
+      "source_id": "src_7212447f2a285dd9a6bbcbc45b2dda6d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/README.md"
+    },
+    {
+      "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+      "git_sha": "99d91bfb7884bb53909b08e34f3136c455127c16",
+      "lines": 202,
+      "path": "docs/design.md",
+      "repository": "haochenglu/contextvc",
+      "sha256": "f64453e7b21561dc4e67bb32be632b80875e8733d6f7f0c823355ae2c402d43e",
+      "source_id": "src_6f4388e4333c502fb97b7d23987f329c",
+      "stored": "design.md-b0929dacd4f1.md",
+      "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/design.md"
+    },
+    {
+      "commit": "c60e781078d1028dcb01908ad5719a1288f77ab0",
+      "git_sha": "4ffcd7a4c324b177a578ec83ba38dcab98085213",
+      "lines": 98,
+      "path": "docs/ocl-v0.md",
+      "repository": "haochenglu/contextvc",
+      "sha256": "62c7c3fb491b7f7ee9282164696071310b380be5f3dbc2bb10e342a87fa2ea50",
+      "source_id": "src_cb57ffa0354a5347add4cd9b5dd966b2",
+      "stored": "ocl-v0.md-54b3467b8a88.md",
+      "url": "https://github.com/HaochengLu/contextvc/blob/c60e781078d1028dcb01908ad5719a1288f77ab0/docs/ocl-v0.md"
+    }
+  ],
+  "summary": "ContextVC is a Rust CLI (`ctx`) that stores agent memory as Markdown objects in `.context/` and renders them into native files for multiple coding agents, with a deterministic precheck gate, MCP server, hooks, and a RepeatBench benchmark. Evidence is mostly README and design docs describing the shipped product.",
+  "superseded_claim_ids": []
+}

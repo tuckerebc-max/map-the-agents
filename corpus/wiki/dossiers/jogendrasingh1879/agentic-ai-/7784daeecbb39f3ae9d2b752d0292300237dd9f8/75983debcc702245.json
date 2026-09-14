@@ -1,0 +1,367 @@
+{
+  "applied_operation_id": "op_ca4038c101744bb4ba82890cf01d30b0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9bb4946b6d58de1d570c5bf3462fa766b05d6c742b8ab5577bdbbc72158fd7d2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L9-L11"
+        },
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73c75347c3916db4900508144c773f0fffb59d576de173c81779dfef862d3ae4",
+        "slc_e4afa6556e821a2a436b18a526e64e5f1795d22413214a2b317daa8818ac3fa0"
+      ],
+      "text": "The system comprises two agents: an Order Agent that takes pizza orders and processes payment, and an Inventory Agent that manages ingredient stock."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57adb9a4119b9d7bfd78760096451720f4ddcadb983cebd927e2b5c1a6c67eea",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L38-L41"
+        },
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L47-L47"
+        },
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L9-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28c33f6bcae62d8282493d3368b7a8c2e6a3e1bbd3736c12a767d6729d5829ca",
+        "slc_43f3a23d20800eda2d354ab2eaabc9b4dc8899004acf6efbf5ba1e2810e6e45e",
+        "slc_73c75347c3916db4900508144c773f0fffb59d576de173c81779dfef862d3ae4"
+      ],
+      "text": "The system is exposed as a REST API built with FastAPI, with the Order Agent and Inventory Agent as separate endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1189cd1007dcacfe44f0d8c50adda666214a8b4164830ac0159340984e029a12",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28c33f6bcae62d8282493d3368b7a8c2e6a3e1bbd3736c12a767d6729d5829ca"
+      ],
+      "text": "The Order Agent communicates with the Inventory Agent via API calls, which may be synchronous or asynchronous, to check ingredient availability before confirming orders."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_044dbb67ebe1fc3f807f439c4ade2350b2031f114db7f08df66e4f5f24e16eee",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L25-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_da703cb2f7bb5230d92c7f25809d20d292624e8e52f3c88b5b6f1bbb7e2765a1"
+      ],
+      "text": "The Order Agent receives order details (size, type, quantity), validates availability, requests inventory checks, and handles payment processing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_543877fb5fafa70c2676ea33ca38049716d88697921cbfe8da2142b842e4f3c1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L32-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7ee25ae61b5d39ea35389e2ee57c7731e2e3f84b001edac0e7e5dce8bac4b12"
+      ],
+      "text": "The Inventory Agent manages pizza ingredients such as cheese, dough, and toppings, checks sufficiency for orders, and updates stock after each order."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9756c8d5953c65d597777e1ba7f82e9464d7184188d049d93c7366f91afa7ba0",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 19,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L16-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d0e66bf9f08a03c8cb43bd4da59643643516b7c6a8b04ec6be7b02b65966caf"
+      ],
+      "text": "The stated goal is to let a customer place a pizza order, verify sufficient ingredients in inventory, and confirm the order after payment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25e672f22a7063986cfc9bd67d1dc67559529684a5c63bc4ae7d15033c7a6177",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "4575fd5c707372a8f3a5a0783084763dbc3d905e",
+          "line_end": 4,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/requirements.txt#L1-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b49da490c3cc379cef5949b3e29b561ccb5c31bf64daf76eccb3262110816016"
+      ],
+      "text": "The requirements file lists FastAPI, pydantic, uvicorn, and requests as project dependencies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7e2d8f9cb51c47d6f59710b0e242e6c0ca5ca9f6a812814566b727bde6b3caa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 2,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L1-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f687d30528ed97b824573f4125c9cafce3099b1bdf36655b896c6af977ccf9e9"
+      ],
+      "text": "The README references a deployed instance on an AWS host with a Swagger docs page including an order POST endpoint at /order."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ccd0ceff5349a90fc9886ea596b9bf674f9bc730396bd700a610ee1cfbd287df",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L38-L41"
+        },
+        {
+          "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+          "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "jogendrasingh1879/agentic-ai-",
+          "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28c33f6bcae62d8282493d3368b7a8c2e6a3e1bbd3736c12a767d6729d5829ca",
+        "slc_43f3a23d20800eda2d354ab2eaabc9b4dc8899004acf6efbf5ba1e2810e6e45e"
+      ],
+      "text": "The architecture appears to favor a service-oriented multi-agent design where each agent is independently reachable as its own HTTP endpoint rather than in-process function calls."
+    }
+  ],
+  "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 49,
+        "path": "README.md",
+        "size": 2074
+      },
+      {
+        "lines": 4,
+        "path": "requirements.txt",
+        "size": 36
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 4,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_208a5d8c0d465780a3938601c064ab92",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jogendrasingh1879/agentic-ai-/7784daeecbb39f3ae9d2b752d0292300237dd9f8/75983debcc702245/manifest.json",
+  "package_id": "pkg_30fbe349e30f128dd9ddcf1050a78e1c7c6acc7aaff1f35c7e16624944bcfdef",
+  "repo": "jogendrasingh1879/agentic-ai-",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c7448836fb9d46854b618e7d93a4da4a685a19c0ab6bf48747dbfce16bab6821",
+  "snapshot_id": "75983debcc702245",
+  "sources": [
+    {
+      "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+      "git_sha": "5a0a3e6a795e490ab479dfea3af1dbe1c107bb1a",
+      "lines": 49,
+      "path": "README.md",
+      "repository": "jogendrasingh1879/agentic-ai-",
+      "sha256": "c09c5ce612cb2e3c19c0eb1e011d1ec80d682b02b625dfca545ad198026bd6bf",
+      "source_id": "src_83d3ea754eb15ee7b49b4034bff5436d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/README.md"
+    },
+    {
+      "commit": "7784daeecbb39f3ae9d2b752d0292300237dd9f8",
+      "git_sha": "4575fd5c707372a8f3a5a0783084763dbc3d905e",
+      "lines": 4,
+      "path": "requirements.txt",
+      "repository": "jogendrasingh1879/agentic-ai-",
+      "sha256": "78a1c29cc04bd706f3d39a447e92407b01e974caf7156afbe832a512aab7fa9f",
+      "source_id": "src_983a80c5198e5bd38c513598c22cf845",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/JogendraSingh1879/Agentic-AI-/blob/7784daeecbb39f3ae9d2b752d0292300237dd9f8/requirements.txt"
+    }
+  ],
+  "summary": "The repository documents a two-agent pizza-ordering system (Order Agent and Inventory Agent) exposed as a FastAPI REST API, with a deployed instance referenced in the README. Evidence is documentation-only; no code slices are present.",
+  "superseded_claim_ids": []
+}

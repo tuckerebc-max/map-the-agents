@@ -1,0 +1,561 @@
+{
+  "applied_operation_id": "op_eb7679b0425847648add0411ddf6185d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec655c89135001641b1a84c96b750ee762cb65a7cf6d01cb2c890735a08e424b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 24,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L21-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b1f472fdb96967080b004f6392006d36a2a3bba7e47ecf8a0d3ee52b872eabdf"
+      ],
+      "text": "ExAgent is a desktop-first agent workbench with a Rust runtime and Tauri/React GUI, aimed at long-running coding work in local projects with resumable sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73b8abcfc4bcace2d4eef3909a6d42d70d53bdc8084b051ed31836579b0f9edd",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 109,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L90-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dbca4e0c38837cfe77e78193dd339f660b909be619fe8291b2d2f5715ef3e274"
+      ],
+      "text": "Each thread runs behind an actor-backed ThreadRuntime that serializes turns while streaming snapshots, status, and events back to the GUI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8db05fe039abe8bf3c7748d54d0cfe1ce3968ddbd79a8bc21fddc178bee1bb3f",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 109,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L90-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dbca4e0c38837cfe77e78193dd339f660b909be619fe8291b2d2f5715ef3e274"
+      ],
+      "text": "Local durability is append-first: each thread has a rollout.jsonl ledger, and IndexDb stores cross-thread indexes for projects, threads, goals, memory, and review state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60f4b8e396cf16f26efef8bca8e617537b02d7e8120fe96379715a395f23400b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 40,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L33-L40"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 109,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L90-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c87c5b1c0c468619382d982ebfcfd1cb61a94bd8dc7f8d44e22d53647865602",
+        "slc_dbca4e0c38837cfe77e78193dd339f660b909be619fe8291b2d2f5715ef3e274"
+      ],
+      "text": "The memory system supports automatic prompt recall, explicit memory tools, candidate saves, local promote/archive/forget flows, and audit state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8adf95349c5360a706a6f293ca66e49b04d0ac4912b54632bc1d26daabc64700",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 109,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L90-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dbca4e0c38837cfe77e78193dd339f660b909be619fe8291b2d2f5715ef3e274"
+      ],
+      "text": "Agent policy gates both tool visibility and execution; tool contracts live in src/tools while per-turn orchestration lives in src/runtime/tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c591f429ce11725d0ecf9d96667a542347a3cbe8ff03f98460dea8b492012332",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 109,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L90-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dbca4e0c38837cfe77e78193dd339f660b909be619fe8291b2d2f5715ef3e274"
+      ],
+      "text": "The model layer normalizes provider-specific APIs into internal conversation, tool-call, multimodal, reasoning, and streaming types."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fa82defceb6b657527159a20818cff13f31664cc44bc90f22bb675ac4b9c273",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 88,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L86-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43eac45dbf327412d7e062947d3f676cd58a649e82d044c8535f0756d7a3a6c9"
+      ],
+      "text": "A typed app-server boundary exposes the local Rust runtime to the desktop; the Tauri shell stays project-aware while the runtime owns thread execution, model calls, tools, state, and live events."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3aca079e67dab1ac71213b2df71d0b370a09023ea41155b149fa449f0e410334",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "DESIGN.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md#L13-L13"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+          "line_end": 94,
+          "line_start": 92,
+          "path": "DESIGN.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md#L92-L94"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "DESIGN.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md#L11-L11"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+          "line_end": 101,
+          "line_start": 98,
+          "path": "DESIGN.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md#L98-L101"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+          "line_end": 88,
+          "line_start": 86,
+          "path": "DESIGN.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md#L86-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42787ea94fa55068c77a324737b1fb8a1db16ebddd8b2d64d0df4617e6cab90d",
+        "slc_53300756f53da8c488a409a2ce43ca907140d975917a0a4ab4533ed6b7560b94",
+        "slc_8e3fe1f4d30af51660d13aca009c7cdf772f7e13c55c8b3b48d315f6c5bc6841",
+        "slc_a91beec7044dc208aa51860763c3c2632b39839f582d960750a77ce4738d3b85",
+        "slc_f475874c260a5cbf8039e10ecf60b61a354d70bbe82b0de00528a886bd5473c0"
+      ],
+      "text": "The desktop UI uses a restrained neutral OKLCH-token palette with a semantic primary accent, a 4px spacing rhythm, and a sidebar/chat/inspector layout that collapses responsively below 1200px."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87e77132903f85b0b5c6010b6c23a53e29d920560f32c22a62a282a918901dda",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+          "line_end": 110,
+          "line_start": 107,
+          "path": "DESIGN.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md#L107-L110"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+          "line_end": 119,
+          "line_start": 114,
+          "path": "DESIGN.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md#L114-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fcb37a5dc61e17eb7a446e4fcd2083b409f34f317110a5f44120bca13693593",
+        "slc_c27fc1b2930334dd4333d713c1072c4eca6ef88d639dca3a9dde10b63734e1b4"
+      ],
+      "text": "The frontend uses shadcn/ui (new-york style, Radix primitives) as its component source system, with product components kept separate from low-level UI primitives."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_847e79c694dfa5a025b03991ded40c5a58c15365f1aa79bfaa55dbb9f8ab2733",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 141,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L139-L141"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 135,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L134-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38dc3183b700a12728e426181621788c67c8e10dccd39eae10a040bc895be8e0",
+        "slc_61b427831c875c480a436516c0e0932cd8159fec85a845be634ae575747692b0"
+      ],
+      "text": "The project states it currently targets personal workstation use, with non-goals including production-grade sandbox isolation, hosted collaboration, and a stable public SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b246bd719e68dffb364351d2812e94dc8b77841c791738109d13dc6bc7240379",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 130,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L124-L130"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 120,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L115-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f6a763f1f00b6ea6001c32fac95a3ca195ad3c73f9e67eccd867e715ca1d2fa",
+        "slc_5579bec99f1f597e9d64aae73b96646436cfdaf0936394964d44bd72974eff24"
+      ],
+      "text": "Repository development practice: contributors run npm ci, tauri:dev, test, and build commands, plus cargo test, fmt, clippy, and cargo deny checks for verification."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_298aa49449ca42a6869151a1e905cecbeeb70ec483dac8ea42332403613b2f2d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+          "line_end": 194,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md#L193-L194"
+        },
+        {
+          "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+          "git_sha": "21e4e692912ba3eb302b654ae7321ce6e530fefb",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "THIRD_PARTY_NOTICES.md",
+          "repository": "exqqstar/exagent",
+          "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/THIRD_PARTY_NOTICES.md#L17-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_80d3f2faa0b0576303c1074421e1da6e1ad1b114075561066e3741e211945d93",
+        "slc_dc4e170f67e0e98138753068b8ae6c74f73087aff791f1f181cbb3b612e6a0f2"
+      ],
+      "text": "The project is dual-licensed MIT OR Apache-2.0, and Rust dependency license policy is enforced via cargo deny configured in deny.toml."
+    }
+  ],
+  "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 196,
+        "path": "README.md",
+        "size": 7223
+      },
+      {
+        "lines": 183,
+        "path": "DESIGN.md",
+        "size": 7873
+      },
+      {
+        "lines": 11,
+        "path": "AUTHORS.md",
+        "size": 412
+      },
+      {
+        "lines": 49,
+        "path": "PRODUCT.md",
+        "size": 2950
+      },
+      {
+        "lines": 150,
+        "path": "README.zh-CN.md",
+        "size": 7013
+      },
+      {
+        "lines": 19,
+        "path": "THIRD_PARTY_NOTICES.md",
+        "size": 816
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/multimodal-input.md",
+        "reason": "file-budget",
+        "size": 5115
+      },
+      {
+        "path": "docs/demo/exagent-walkthrough.md",
+        "reason": "file-budget",
+        "size": 4003
+      },
+      {
+        "path": "docs/protocol/app-server-boundary-v2.md",
+        "reason": "file-budget",
+        "size": 28336
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1910
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1279
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 397,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_f4daf32ec2de54f685aae30ca29a0799",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/exqqstar/exagent/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/7e7049df465467e0/manifest.json",
+  "package_id": "pkg_1191f046a5897956cf77999370539ff8556192ae77b9fabfbf450fad92a3eaa5",
+  "repo": "exqqstar/exagent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "721874c78c03003cf17b5854cf8fce4a4fc5686afd2bb7fb32fc24b2084836cc",
+  "snapshot_id": "7e7049df465467e0",
+  "sources": [
+    {
+      "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+      "git_sha": "bfe34d30752d8cc5ea57b682ce49a44790b4fbfa",
+      "lines": 11,
+      "path": "AUTHORS.md",
+      "repository": "exqqstar/exagent",
+      "sha256": "13f602e6c9be91ecb9ec24d8ea3acee6729a4468b2ec67bcbb2d03089b9a8fa8",
+      "source_id": "src_0ffb673ae65a563f8c93095ecc8cc970",
+      "stored": "authors.md-784f358cf224.md",
+      "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/AUTHORS.md"
+    },
+    {
+      "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+      "git_sha": "6033f0fe35b7830fc23e210a518026a8bd344302",
+      "lines": 183,
+      "path": "DESIGN.md",
+      "repository": "exqqstar/exagent",
+      "sha256": "c016c7fb6010cc9ffb469cef280a9bf048c56f579e03c2839e6e28d17efa0b43",
+      "source_id": "src_24484d32bd095506bdfee91fa154669f",
+      "stored": "design.md-3dc5dd454e08.md",
+      "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/DESIGN.md"
+    },
+    {
+      "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+      "git_sha": "d6d22b8d3393e7de32e5ff5a051230675acb9812",
+      "lines": 49,
+      "path": "PRODUCT.md",
+      "repository": "exqqstar/exagent",
+      "sha256": "c0d04abbeed9080f97d8cde143def5c4c58376035d073d2c69ffacd0acf49f89",
+      "source_id": "src_f73d1d8b04b85f4586d96584ec30a2ab",
+      "stored": "product.md-211481d78d1a.md",
+      "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/PRODUCT.md"
+    },
+    {
+      "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+      "git_sha": "ebb66637405091bec69b2fc66ec1aae4d20c1dfd",
+      "lines": 196,
+      "path": "README.md",
+      "repository": "exqqstar/exagent",
+      "sha256": "bfb2eee42b00a6ef7e0433e7428c3fa9acf449b31a9cd1ae82d1d154c6592e52",
+      "source_id": "src_9f7165dbd30150229fafd313055e6bc0",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.md"
+    },
+    {
+      "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+      "git_sha": "83933864483235412aea9a1bc1dcf6519b29bc8f",
+      "lines": 150,
+      "path": "README.zh-CN.md",
+      "repository": "exqqstar/exagent",
+      "sha256": "b0afedb10852afba2d1371d1f42560172aa4e7b7feef90e842fce91443a9f4c3",
+      "source_id": "src_a37f6cd683eb5b44b7aef410a447143b",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/README.zh-CN.md"
+    },
+    {
+      "commit": "d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921",
+      "git_sha": "21e4e692912ba3eb302b654ae7321ce6e530fefb",
+      "lines": 19,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "repository": "exqqstar/exagent",
+      "sha256": "1e4650829c70ebee8b81924f1cdffd353407823de13c476bbe794d3920d6489f",
+      "source_id": "src_1b9f2dbbb3bb521d995d14b33d122a4c",
+      "stored": "third_party_notices.md-d448b8e7fefe.md",
+      "url": "https://github.com/exqqstar/ExAgent/blob/d9adbbd6f18ab53b3761eb7cbdb3cc6560f4b921/THIRD_PARTY_NOTICES.md"
+    }
+  ],
+  "summary": "ExAgent is a local desktop agent workbench (Rust runtime, Tauri/React GUI) with durable sessions, approval-gated tools, memory, goals, subagents, MCP tools, and workflows; evidence is documentation-only, with no code slices in the snapshot.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,673 @@
+{
+  "applied_operation_id": "op_6d2da894b45d49ea8b7db90d982c13e6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_13be2bd5dca4ca4b2a53cc04f88b8a5bb2f50c629f9f146f750d1b03d359389c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/index.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md#L7-L7"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27d29ec544917c7fd5a8e6188d448e3e89dd9660aac709eac6a7dea27d5ad1da",
+        "slc_4f469bb7097ba907f987c8f93d5ee0eb18bb9f7fdd22936fddf4cfbb15b5dad9"
+      ],
+      "text": "SWE-ReX exposes a runtime interface for interacting with sandboxed shell environments, letting an AI agent run arbitrary commands on arbitrary environments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97e3728d64d8e71b86e80ee6f665c875bb3f1e469962092042b26f1bef08bdb4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 15,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L14-L15"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "docs/index.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md#L9-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ccb497efe1adb33c589e9fd05d47cb7c6ecf18e69bde396bf9a535afa8a2f05",
+        "slc_fe17cf9db1026d14655dd63fbe1fd107f0701be34dc959137462ae4084c92ea1"
+      ],
+      "text": "Agent code stays the same regardless of whether commands run locally, in Docker containers, on AWS remote machines, Modal, or other backends."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65b7ca57b7e04f54978d8e21dbd08f485533eae2ea969aa8c1e0e7a438c09007",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "83507b63078e02a95f1361f9d714b2a9e055d6ca",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "docs/architecture.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/architecture.md#L3-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b185f4a9e227f23906c39c518d6d6ee877ca718401a9ee26cf206675e7a525d2"
+      ],
+      "text": "Deployment classes start the target environment (e.g. a Docker container or AWS instance) and hand back a RemoteRuntime instance as the main interface for interacting with the environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe5a5f4c8a1acaddc566865581f95a952cc0ee40235826056be2a4121408208a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "83507b63078e02a95f1361f9d714b2a9e055d6ca",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "docs/architecture.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/architecture.md#L17-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4496ea132da538356675210956e8bbedd65560e455122b53943c09ce00a3cad0"
+      ],
+      "text": "A FastAPI server inside the container forwards requests from RemoteRuntime to LocalRuntime, which actually executes commands; the two classes share the same interface, are interchangeable, and exceptions from LocalRuntime are transferred transparently."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fca8982ef3065dd80bfa6153eda29e1ffd6dd3c6ddcb626f0e2906a25e96411c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "83507b63078e02a95f1361f9d714b2a9e055d6ca",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "docs/architecture.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/architecture.md#L23-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d6fbba9d1ed3a29a1e1188b28d950c9800027bfe528246d091e999bb5a81efd"
+      ],
+      "text": "The Runtime class provides file read/write methods, an execute method for arbitrary commands, and a run_in_session method to run commands in an existing shell or interactive session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c125130d14929067f1b29e0a3a8139b8ae2cc7a95f969b3db26c7bde99c7955",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+          "line_end": 16,
+          "line_start": 14,
+          "path": "docs/index.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md#L14-L16"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L19-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_103196bb7eaff1a080466ed5ab0f912570b01ff9391e1df8411a6bd7eb248783",
+        "slc_f9656fb6cbc3e356f9dd7e2884d8a65924c850996c153e1cd312de1bf8193d77"
+      ],
+      "text": "SWE-ReX detects when shell commands finish, extracts output and exit code for the agent, supports interactive tools like ipython and gdb, and allows multiple parallel shell sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e6f5b67bc5ad37ea6c55e0261fba661529fcabeae8c2039d558481c1ea6b606",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L45-L45"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L49-L50"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 41,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L40-L41"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L43-L43"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ad18f889a158be668589bafbccb1afec5a0b5f830e520853a7c714e16375114",
+        "slc_70824331cb3c162a127977d212e1e71ad7df6290207c4ef426fac41a1777dfee",
+        "slc_a72ba5d1f6658d3093170d515dc504129ea770ce82c8784fd4fbfff90d2fb12f",
+        "slc_ae8f354e132b96cc4b1131da95840c0a68cbd36a2722d21e9ee010f3fdcc5ae4",
+        "slc_dbe9617fe8c3ff26f981710e56ce4e69cf9502498af828df4e2864025c8dd142"
+      ],
+      "text": "The package installs via pip as swe-rex, with optional extras for modal, fargate, and daytona, plus a dev extra for development setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ceea63df734e3e24a0c1b3ffedd73ccac359a5b4f3a6a546650c7bfbf9115f8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "aab72197edc70162602a8b1880ef41155e0e6301",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/api/deployments/config.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/api/deployments/config.md#L3-L3"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "aab72197edc70162602a8b1880ef41155e0e6301",
+          "line_end": 12,
+          "line_start": 10,
+          "path": "docs/api/deployments/config.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/api/deployments/config.md#L10-L12"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "aab72197edc70162602a8b1880ef41155e0e6301",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/api/deployments/config.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/api/deployments/config.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c3e9fe7454884fed38bfedaf8074eb1beab3ca7a670de14e83145963060c2539",
+        "slc_dc8843b8121f415dfb72f35ffa6754a56cd9114a386193fe6dfbff49e75a3ffa",
+        "slc_e7d5adfc81a1b6cdc791e4a9fc5bb7c9d05616e6282a81d4e8ffb441c57506e4"
+      ],
+      "text": "Deployment configuration objects such as DockerDeploymentConfig configure deployments; e.g. a config is created with an image name and get_deployment() returns the deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_445b71d725136ff071170149f409608a1e9a8249d2949602824188875d27eea9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "docs/index.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md#L27-L30"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "docs/index.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md#L23-L25"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L28-L30"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4cb0c37708e514e2972642ffcc12d8432a58bff3a26bb7bb7bcb7304a51ae089",
+        "slc_6aaf21161ab93bd645687978a8e5658aae4d107131a949a48d3ecef332a301d2",
+        "slc_a4f865c367adadc12902f2a920ef05c64c1f49e0cde92c9d001d52ad5f6eaa9b",
+        "slc_ce4fd68581ab90057b7bd3a760661987e31e98369d5709f038d3076da02f1f09"
+      ],
+      "text": "The project advertises fast, massively parallel agent runs, citing large-benchmark evaluation and a demo of SWE-agent running on 30 SWE-bench instances in parallel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_676de505113dc5cf97e52690cb4429cf449013796825a64325754d909d618429",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "docs/index.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md#L23-L25"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 26,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L25-L26"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md#L28-L30"
+        },
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+          "line_end": 21,
+          "line_start": 20,
+          "path": "docs/index.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md#L20-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6aaf21161ab93bd645687978a8e5658aae4d107131a949a48d3ecef332a301d2",
+        "slc_73f2787b2f06b82c333a90358e22417baddf86511ab3e62fd27b51d1a41fccc0",
+        "slc_a4f865c367adadc12902f2a920ef05c64c1f49e0cde92c9d001d52ad5f6eaa9b",
+        "slc_a7cf5f3385889464cb73518f00083174cb42e9bd7c333579e94c29dbc42ef54e"
+      ],
+      "text": "SWE-ReX originated from the SWE-agent and SWE-agent enigma projects and aims to disentangle agent logic from infrastructure concerns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2c20d571421fb60071f751de608eb7a21801a80ff28e944bb806d40a4832008",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+          "git_sha": "83507b63078e02a95f1361f9d714b2a9e055d6ca",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "docs/architecture.md",
+          "repository": "swe-agent/swe-rex",
+          "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/architecture.md#L17-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4496ea132da538356675210956e8bbedd65560e455122b53943c09ce00a3cad0"
+      ],
+      "text": "Because LocalRuntime can be used directly when code runs locally or in a sandboxed environment, the framework appears to support fully local usage without a remote deployment."
+    }
+  ],
+  "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 73,
+        "path": "README.md",
+        "size": 4258
+      },
+      {
+        "lines": 31,
+        "path": "docs/architecture.md",
+        "size": 2628
+      },
+      {
+        "lines": 20,
+        "path": "docs/api/deployments/config.md",
+        "size": 482
+      },
+      {
+        "lines": 47,
+        "path": "FOOTER_IMPLEMENTATION_SUMMARY.md",
+        "size": 1583
+      },
+      {
+        "lines": 21,
+        "path": "docs/_footer.md",
+        "size": 818
+      },
+      {
+        "lines": 35,
+        "path": "docs/index.md",
+        "size": 1902
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/installation.md",
+        "reason": "file-budget",
+        "size": 543
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 5673
+      },
+      {
+        "path": "docs/api/server.md",
+        "reason": "file-budget",
+        "size": 125
+      },
+      {
+        "path": "docs/api/deployments/abstract.md",
+        "reason": "file-budget",
+        "size": 49
+      },
+      {
+        "path": "docs/api/deployments/docker.md",
+        "reason": "file-budget",
+        "size": 46
+      },
+      {
+        "path": "docs/api/deployments/dummy.md",
+        "reason": "file-budget",
+        "size": 44
+      },
+      {
+        "path": "docs/api/deployments/fargate.md",
+        "reason": "file-budget",
+        "size": 1135
+      },
+      {
+        "path": "docs/api/deployments/local.md",
+        "reason": "file-budget",
+        "size": 43
+      },
+      {
+        "path": "docs/api/deployments/modal.md",
+        "reason": "file-budget",
+        "size": 43
+      },
+      {
+        "path": "docs/api/deployments/remote.md",
+        "reason": "file-budget",
+        "size": 45
+      },
+      {
+        "path": "docs/api/runtimes/abstract.md",
+        "reason": "file-budget",
+        "size": 44
+      },
+      {
+        "path": "docs/api/runtimes/data.md",
+        "reason": "file-budget",
+        "size": 234
+      },
+      {
+        "path": "docs/api/runtimes/dummy.md",
+        "reason": "file-budget",
+        "size": 38
+      },
+      {
+        "path": "docs/api/runtimes/local.md",
+        "reason": "file-budget",
+        "size": 38
+      },
+      {
+        "path": "docs/api/runtimes/remote.md",
+        "reason": "file-budget",
+        "size": 39
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 1157
+      },
+      {
+        "path": "LICENSE.txt",
+        "reason": "file-budget",
+        "size": 1089
+      },
+      {
+        "path": "docs/SECURITY.md",
+        "reason": "file-budget",
+        "size": 217
+      }
+    ],
+    "omitted_count": 18,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 95,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 24,
+      "complete": false,
+      "omitted": 18,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_133ad6cd24b755ba944ccaaceaeeb86e",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/swe-agent/swe-rex/5c995c365dfb1fd5bc56fda688be5d8538f9931f/acc27ffd0a3eab30/manifest.json",
+  "package_id": "pkg_60cbb7db657f247b65d17199a12366e3883f0da764c9256ef0762352cfb89e9e",
+  "repo": "swe-agent/swe-rex",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ec02c3740ec3b495f5f2bdfadaddf75107c8f14576f5b58ce0bc537a686954a7",
+  "snapshot_id": "acc27ffd0a3eab30",
+  "sources": [
+    {
+      "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+      "git_sha": "90fa2d797c8d7decc1f203469f28ceb81f961eb7",
+      "lines": 47,
+      "path": "FOOTER_IMPLEMENTATION_SUMMARY.md",
+      "repository": "swe-agent/swe-rex",
+      "sha256": "2f85258ee18cfbc435d768cd7929e69a9849142f7fc9ce7baeff49236fd1099b",
+      "source_id": "src_a3f705431e7d55baac33f7e9056621b4",
+      "stored": "footer_implementation_summary.md-a6753db94906.md",
+      "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/FOOTER_IMPLEMENTATION_SUMMARY.md"
+    },
+    {
+      "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+      "git_sha": "da0d6ec8714d77fa42d5e432e51d037fd2548f46",
+      "lines": 73,
+      "path": "README.md",
+      "repository": "swe-agent/swe-rex",
+      "sha256": "7fa51197d22214308ee18e12b8042b03e8a8c2442766110e3fadf975391a17ca",
+      "source_id": "src_472b7f295443531c80d668db702ff376",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/README.md"
+    },
+    {
+      "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+      "git_sha": "4832d8e934b0b54176ffe7dae1cadef858785926",
+      "lines": 21,
+      "path": "docs/_footer.md",
+      "repository": "swe-agent/swe-rex",
+      "sha256": "8f35d2ec4e574b946858fd048ebbac9ec1cb7e4e9ae3243cc29a3f4d8bbf1788",
+      "source_id": "src_0664a91e3ed954c1ac63b49fbcb294b0",
+      "stored": "_footer.md-b951a835c722.md",
+      "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/_footer.md"
+    },
+    {
+      "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+      "git_sha": "aab72197edc70162602a8b1880ef41155e0e6301",
+      "lines": 20,
+      "path": "docs/api/deployments/config.md",
+      "repository": "swe-agent/swe-rex",
+      "sha256": "00d852318822dff9385f2df08911837dd07506e59ef1e15dc5e250a65b0330c2",
+      "source_id": "src_9c1e6cbb99875771b62cc985c742253c",
+      "stored": "config.md-09f4fb5fe4dc.md",
+      "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/api/deployments/config.md"
+    },
+    {
+      "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+      "git_sha": "83507b63078e02a95f1361f9d714b2a9e055d6ca",
+      "lines": 31,
+      "path": "docs/architecture.md",
+      "repository": "swe-agent/swe-rex",
+      "sha256": "ba44bb512ad1ff63ea44a2b4a5b6b0890d339cfd20b7fcc6cb9c2786aa91bd9a",
+      "source_id": "src_17214af7ae105af48f573b3cafa9284d",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/architecture.md"
+    },
+    {
+      "commit": "5c995c365dfb1fd5bc56fda688be5d8538f9931f",
+      "git_sha": "7a2ba903d728d74483028846e4cbdf48b18fd5dc",
+      "lines": 35,
+      "path": "docs/index.md",
+      "repository": "swe-agent/swe-rex",
+      "sha256": "b759315fcf669a582a23af132f4a302dbd06f82b53d99c0a1797bf458f797e24",
+      "source_id": "src_536fb109f90f57a492782f454f8df7e1",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/SWE-agent/SWE-ReX/blob/5c995c365dfb1fd5bc56fda688be5d8538f9931f/docs/index.md"
+    }
+  ],
+  "summary": "SWE-ReX is a runtime interface for sandboxed shell environments that decouples agent code from execution backends (local, Docker, AWS, Modal), with interchangeable Remote/Local runtimes, parallel shell sessions, and pip-installable optional extras. Evidence is documentation-only; no code-inspected behavior is available in these slices.",
+  "superseded_claim_ids": []
+}

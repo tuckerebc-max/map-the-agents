@@ -1,0 +1,627 @@
+{
+  "applied_operation_id": "op_aa728a78c20745828d6ba859a88c0efb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_795605d98e326819d8e94b5cfb4f0aba6e3aed5806476995f9c15f1ea851eb32",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_89e17fa077f166df2e66095b589897b71af08ec0e99ca4947258a89797d4fb39"
+      ],
+      "text": "Waku is a native desktop app for working with local coding agents, built in Rust with GPUI, keeping projects, sessions, and transcripts on the user's machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_085b07a612db2e07162708ae125cc129b2f19a5720035fda27264efdb9064bf6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 63,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L55-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b557aaa132c65763866b0be86228c285a66cc91ae845830b714aef42f27a333c"
+      ],
+      "text": "The desktop is an RPC client of a standalone waku-daemon; provider sessions run in waku-core behind the authenticated, versioned WebSocket contract in waku-protocol, and the desktop depends on waku-client rather than the daemon implementation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_733a5bfff9a82b89ec02f46f4ca7aeae609e783eaa1da1b668053f0b27f814d8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 63,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L55-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b557aaa132c65763866b0be86228c285a66cc91ae845830b714aef42f27a333c"
+      ],
+      "text": "The daemon owns task SQLite data, uploaded attachments, provider-native session forks, and all workspace filesystem and Git operations, while the desktop retains only presentation state and a disposable preview cache."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_046516d0660add3425b55b7835541c16fe0b6f72128e9e8531aab9679b3f8615",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 71,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L65-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1feff8680f47f44703b548bdc949355880bce8cc291330a8fd80e48f52cd4700"
+      ],
+      "text": "A browser client lives at apps/web and uses a generated browser transport in packages/waku-client, with types generated from the Rust protocol and a WebSocket client implementing the same handshake, request IDs, subscriptions, deduplication, and replay cursors as the Rust client."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_403b5bd15160d4db108a59740d1c844418e7100cf38ac655c8f7bee21b37c44a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 82,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L77-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9276752b023b15163e2fc39b05e785a9155ff6e1d6929eb9fd7580e9f85efbe0"
+      ],
+      "text": "The desktop's Settings → Daemon page can expose the child daemon on a fixed port, configure exact browser origins, and copy its stable authentication token; the daemon remains loopback-only by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df56e4f993bd24a0f5564d2bde219886410cb90ed77ec2d51371c79e3e146636",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 82,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L77-L82"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 51,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L47-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9276752b023b15163e2fc39b05e785a9155ff6e1d6929eb9fd7580e9f85efbe0",
+        "slc_f68a543c2d28c892e40cefb8d09790b4a27f03dfede82d61278b018db07beee5"
+      ],
+      "text": "App state is stored locally with no Waku account or remote service required; configuration is split between ~/.waku/app.json (release desktop), temp/app.json (debug), and ~/.waku/settings.json for daemon provider and Computer Use settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d9cd668c8a8268e7957bb00b6e5b01e94116a4b7362bbe6b7f212e228eaea534",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 39,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L31-L39"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L41-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b01f604bf3a707f8280fdf38bfed8e83f0d70e99e0a45be16cb65ad138525d6",
+        "slc_973a5dc89f8fd191a6e97586e6d584eb2110dd9405a71419350246c726a459eb"
+      ],
+      "text": "Waku detects installed agent CLIs automatically and uses each provider's native structured protocol and session continuity; supported agents include Amp, Claude Code, Codex CLI, Cursor CLI, Fx, Grok Build, Kimi Code, OpenCode, and Pi."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3fa5df1dd0ae9d920e62a6e7a013929d934a74d6c7cd67267064401f56057e4",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "f9f7df082e15563d1a90e99cafda2e8df08cdeb4",
+          "line_end": 83,
+          "line_start": 76,
+          "path": "CHANGELOG.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/CHANGELOG.md#L76-L83"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "f9f7df082e15563d1a90e99cafda2e8df08cdeb4",
+          "line_end": 55,
+          "line_start": 49,
+          "path": "CHANGELOG.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/CHANGELOG.md#L49-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_de7032e8292be097db2fd5e2885d19b7315d8ab130e3c14eaca2e32bfea70079",
+        "slc_f90d31408d7f028046a6c4f9d83a9feea70cea5780cbc32fc6e3cf473ad6f9b2"
+      ],
+      "text": "Waku discovers provider-native slash commands and skills from installed agent CLIs, including multiline YAML descriptions, and invokes Codex, Pi, and Oh My Pi skills with their native syntax."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dee6181fcef070adbb566188d8cf6f6937b05a9f3ee6836a104e3ca4fa9f76f6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 75,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L73-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_39ee895a084e9114bea609fcc722170d044d797d256a4ab175ffd6a680c1af19"
+      ],
+      "text": "Projectless task workspaces live on the daemon host under ~/.waku/projects/<date>/<slug>, and the daemon migrates workspaces from the older ~/.waku/<date>/<slug> layout on first load."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9694f1930b71ce797e0d4c510a656d43de690afc22ddf864901b2eed36c4f55",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L107-L109"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 88,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L84-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5216d1e820415e694d48d57dd739f533f7f175499a666889f7cfc39c0b1630a4",
+        "slc_ed42356690321011560ca8043e38f155b5b4da997c5242c91c2a291aa96a2f0f"
+      ],
+      "text": "When connected to an externally managed daemon, the local folder picker and PTY are unavailable until the protocol gains daemon-host picker and terminal-stream endpoints; the embedded browser and experimental computer-use integration are currently macOS-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56b955c9ddec82b3784a6d0aa6a0842a33ba49d22ba7b3fb7db4aad578047550",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L96-L100"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 112,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L111-L112"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 105,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L102-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_91855a0bbcf29a6f86a35e0253bee89ee82f7b626536810f1cf642ad1e6eed4b",
+        "slc_9de6093c5f418aae11c91eafe733c5f200fcec2b8ce2ff13a90a7b7e8a56dffa",
+        "slc_fa235bb0f444a37950256c3d781a5532aa216ca3928af86222939db6b05c54d4"
+      ],
+      "text": "Repository development practice: development requires Rust 1.96 or newer and Bun, uses `bun install` and `bun run dev`, and contributors should read CONTRIBUTING.md for the workflow and checks; release maintainers should also read RELEASING.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fda8856e9c9d3c0133d1e9827f44d4a9cdc82c09d2a1f37db15efc6ce3b6168",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "3257ef382128fcd7e922ae57b09edea221d57e5d",
+          "line_end": 14,
+          "line_start": 5,
+          "path": "AGENTS.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/AGENTS.md#L5-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e94494f6da1ef9354337dc573853ecc907d09b16c7222a2c0e8bce3857a732dc"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributors to assume `bun ./scripts/dev.ts` is already running and owns the Waku Debug.app process, to avoid starting a second watcher or manually relaunching, and to validate the freshly rebuilt debug app after edits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16a73780e69fc98ea02150586325840d298e925cdbdc7d068a5a39ea14d633f6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L17-L19"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L13-L15"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L9-L9"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L21-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15b6de33165ad03d9690733177c649c597a118a2e8df8ee44ca6a002742e7bdb",
+        "slc_509dbcd2c09590089b90a68fa1858e24386164be82ddf813c5656e9399ac3165",
+        "slc_87587b6ae278ce3901df236f82bc82ad0a12d2970c52080e5c18aa088271d6db",
+        "slc_a57530a7a8e96b8a3419a8ceef61a112fa4949cbf1cc2592c68ed13df851196e"
+      ],
+      "text": "Installation is documented per platform: a signed self-updating .dmg on macOS, a curl-piped install script placing files in ~/.local without root on Linux, and a per-user self-updating Setup.exe plus portable .zip on Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_490f5b6ee1ee9bfacd9afba1f33d6809099828ec6fd0d995bd182f33e7e9394a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 51,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L47-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f68a543c2d28c892e40cefb8d09790b4a27f03dfede82d61278b018db07beee5"
+      ],
+      "text": "The app supports queueing or steering follow-up messages while an agent works, switching models, reasoning effort, and access modes from a shared interface, and rewinding Git-backed tasks with conversation-aware checkpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4adc0dc14740729545bd27049a2c4ff2baf938bd741d8fc031f7ca66c6eef03e",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L116-L116"
+        },
+        {
+          "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+          "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "egoist/waku",
+          "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md#L120-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_648f0aad3fc8b86a1af21febe7a4aa5ad97e62d44ef9a1ccc765e795a907078e",
+        "slc_e0e29d772b5175a3490df44b9a55f87fe12e7c52bfe4ddba84a6cd4ad165a42d"
+      ],
+      "text": "The project is licensed under GNU General Public License v3.0 only and accepts sponsorship via GitHub Sponsors."
+    }
+  ],
+  "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 120,
+        "path": "README.md",
+        "size": 4776
+      },
+      {
+        "lines": 104,
+        "path": "AGENTS.md",
+        "size": 6394
+      },
+      {
+        "lines": 174,
+        "path": "CHANGELOG.md",
+        "size": 6952
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 6363
+      },
+      {
+        "path": "RELEASING.md",
+        "reason": "file-budget",
+        "size": 15083
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 531
+      },
+      {
+        "path": "docs/commit-messages.md",
+        "reason": "file-budget",
+        "size": 8407
+      },
+      {
+        "path": "docs/computer-use.md",
+        "reason": "file-budget",
+        "size": 7014
+      },
+      {
+        "path": "docs/linux.md",
+        "reason": "file-budget",
+        "size": 5716
+      },
+      {
+        "path": "docs/performance.md",
+        "reason": "file-budget",
+        "size": 11103
+      },
+      {
+        "path": "docs/providers.md",
+        "reason": "file-budget",
+        "size": 54380
+      },
+      {
+        "path": "docs/sky-macos-accessibility-reverse-engineering.md",
+        "reason": "file-budget",
+        "size": 25958
+      },
+      {
+        "path": "docs/text-field-keys.md",
+        "reason": "file-budget",
+        "size": 7728
+      },
+      {
+        "path": "docs/titles.md",
+        "reason": "file-budget",
+        "size": 14225
+      },
+      {
+        "path": "docs/windows.md",
+        "reason": "file-budget",
+        "size": 6380
+      }
+    ],
+    "omitted_count": 13,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 847,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 16,
+      "complete": false,
+      "omitted": 13,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_0193b94895ff5a29a790a43244823593",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/egoist/waku/968d42dd38b78d28f46c36abb3d00410a4759957/623975403b923962/manifest.json",
+  "package_id": "pkg_bbace90ac203776acb611fc823023a162d647100413ca703f2da3f3c261e77f0",
+  "repo": "egoist/waku",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "efaf1442f087571d2bdea017af94f776f36d0b29644e5a4055e70b45d3292f07",
+  "snapshot_id": "623975403b923962",
+  "sources": [
+    {
+      "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+      "git_sha": "3257ef382128fcd7e922ae57b09edea221d57e5d",
+      "lines": 104,
+      "path": "AGENTS.md",
+      "repository": "egoist/waku",
+      "sha256": "07d767df2a90c8af589b91b1df710b87168a941a58237bd70f2e5f830e604e08",
+      "source_id": "src_45d13cafde7353339672c0cf83c05b4e",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/AGENTS.md"
+    },
+    {
+      "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+      "git_sha": "f9f7df082e15563d1a90e99cafda2e8df08cdeb4",
+      "lines": 174,
+      "path": "CHANGELOG.md",
+      "repository": "egoist/waku",
+      "sha256": "4ff51ffadd9af33b1721b4c3118210e2b1518aed841c312da82cdca9233535aa",
+      "source_id": "src_1a5e633947505ce285964dd9c4b42be0",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/CHANGELOG.md"
+    },
+    {
+      "commit": "968d42dd38b78d28f46c36abb3d00410a4759957",
+      "git_sha": "c70809ae586b8321f55427a0eec31ae87a239c3e",
+      "lines": 120,
+      "path": "README.md",
+      "repository": "egoist/waku",
+      "sha256": "2977009c0f83e80672d650ca1f1fb167b038f78105280254c558df76057b8f4a",
+      "source_id": "src_d76612cdd51155da99fc20dd87a3646e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/egoist/waku/blob/968d42dd38b78d28f46c36abb3d00410a4759957/README.md"
+    }
+  ],
+  "summary": "Waku is a Rust/GPUI native desktop app for working with local coding-agent CLIs, built around a standalone waku-daemon and a versioned WebSocket protocol, with a browser client sharing the same wire contract. Evidence covers product architecture, supported agents, install paths, changelog features, and contributor workflow rules.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1f84c5d7b724043e33a4dd54ba532282a1aed6f7cbdbb3d8879abfd6b7d214c0
+- clm_49b4294830a88a7e799db03b1cfca10fb8125e8b39b7d16e4ca0cc197593ea1f
+- clm_58854593a4f7b90e4e8d135ec4f12f8c91ee5d1430d03f0cd2458dde00e77858
+- clm_5b395fa597961f27b06eadc6e031e6477045deede9db7a963cd3117060a1fa10
+- clm_735f8b4431dd41abf3868175ade2230ff550082a0b768cf34718ee4c7a72bbf9
+- clm_841a98a4ee0753a13618047f0fce3b5ce88789934e5eba747c1f48d8e984e63b
+- clm_971f8ebe187e0f299ac9493069ba3952e3fefdfe66be60dabea2adca6d09f214
+- clm_a6144611811556b93584874be0eeaab48dd22ab66a85be0f2c3ced79caebf852
+- clm_c53309a951e85d864899bd535058b520c30b7b6aa1491c6403d71cc886b683f0
+- clm_c5e652784b83f814f02a35332d26c154343003f876425e4ed7a181199ee86fe1
+- clm_cf33e53f213e9887267011bdd2ba5390592790b706c44b7bf456cf9bed283230
+- clm_d4512348254cacf7dd13b4be2ae289228b0149c57a3e9345deb3ed1e8ce61a85
+maturity: draft
+page_id: pg_2c5f540b3e115dfb8227191bc9c1aa85
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: tractorjuice/arc-kit
+updated_at: '2026-09-14T04:27:55Z'
+---
+
+# tractorjuice/arc-kit
+
+<!-- rcw:begin owner=entity:ent_c8964bd0b23152899b76c7441c0ffb23 block=evidence -->
+- tractorjuice/arc-kit is mentioned in this evidence. [@claim:clm_1f84c5d7b724043e33a4dd54ba532282a1aed6f7cbdbb3d8879abfd6b7d214c0] [@claim:clm_49b4294830a88a7e799db03b1cfca10fb8125e8b39b7d16e4ca0cc197593ea1f] [@claim:clm_58854593a4f7b90e4e8d135ec4f12f8c91ee5d1430d03f0cd2458dde00e77858] [@claim:clm_5b395fa597961f27b06eadc6e031e6477045deede9db7a963cd3117060a1fa10] [@claim:clm_735f8b4431dd41abf3868175ade2230ff550082a0b768cf34718ee4c7a72bbf9] [@claim:clm_841a98a4ee0753a13618047f0fce3b5ce88789934e5eba747c1f48d8e984e63b] [@claim:clm_971f8ebe187e0f299ac9493069ba3952e3fefdfe66be60dabea2adca6d09f214] [@claim:clm_a6144611811556b93584874be0eeaab48dd22ab66a85be0f2c3ced79caebf852] [@claim:clm_c53309a951e85d864899bd535058b520c30b7b6aa1491c6403d71cc886b683f0] [@claim:clm_c5e652784b83f814f02a35332d26c154343003f876425e4ed7a181199ee86fe1] [@claim:clm_cf33e53f213e9887267011bdd2ba5390592790b706c44b7bf456cf9bed283230] [@claim:clm_d4512348254cacf7dd13b4be2ae289228b0149c57a3e9345deb3ed1e8ce61a85]
+<!-- rcw:end owner=entity:ent_c8964bd0b23152899b76c7441c0ffb23 block=evidence -->
+
+## Researcher notes
+

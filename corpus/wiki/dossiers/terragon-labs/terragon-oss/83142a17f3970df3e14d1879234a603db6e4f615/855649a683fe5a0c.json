@@ -1,0 +1,503 @@
+{
+  "applied_operation_id": "op_38b2d1d5186b4b858829498e3acb4a5e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a15105b67f635d6a2bf09b8b3d7a9f77367c3c5fbd7989c10208842137ea3794",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 20,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L13-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d680b2c1ce2f767e67f25f7fd2e020575ef8e1185ec272db7334a7ce754e8987"
+      ],
+      "text": "The product ships a 'terry' CLI for local task takeover and continuation, plus an MCP server so MCP-compatible clients like Cursor and Claude Code can create and manage tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d77f26f953f0469f28f0fdeb51fa9c2fc8dcac4185ab3bcec0691f6cc67e85a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 20,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L13-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d680b2c1ce2f767e67f25f7fd2e020575ef8e1185ec272db7334a7ce754e8987"
+      ],
+      "text": "Terragon supports multiple coding agents—Claude Code, OpenAI Codex, Amp, and Gemini—and is designed so support for additional agents can be added."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80b5f11c0dcbfbf96324b30e75167c52f71866eb3f1095fd8c3d9a7c1cfb33be",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 20,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L13-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d680b2c1ce2f767e67f25f7fd2e020575ef8e1185ec272db7334a7ce754e8987"
+      ],
+      "text": "Each agent runs in an isolated sandbox container with its own repository copy, letting it read files, edit, and run tests without affecting concurrent tasks or the local environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1c5a01a90d43b81498751c2f48461ded03005c665bca22a3dd20602ce3b5e79",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 20,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L13-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d680b2c1ce2f767e67f25f7fd2e020575ef8e1185ec272db7334a7ce754e8987"
+      ],
+      "text": "Tasks get unique branches, and agent work is checkpointed to GitHub with AI-generated commits and pull requests; this git workflow can be disabled for flexibility."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a86c9e5a572778cabeeff1d8b431befc950957eb5541254c3e18b6294a47f1a2",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 20,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L13-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d680b2c1ce2f767e67f25f7fd2e020575ef8e1185ec272db7334a7ce754e8987"
+      ],
+      "text": "The product offers automations: recurring tasks or event-triggered workflows, such as triggers on new issues or pull requests, to automate repetitive development work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad6b837c7f991284a6be97ae872399956885b2d86bc86dba20e236ddf592f329",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af411ae069e79aa5f6c927216342eba163190783972bbcc285c425d7fc4e509e"
+      ],
+      "text": "The repository is an as-is snapshot taken at Terragon's shutdown, with no guarantees of maintenance, support, or completeness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_09fa607ceb81ccc4a8b44c385ab92d5aee194654d77ba59c3e37f36a4fe8cf67",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 41,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L39-L41"
+        },
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 27,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L24-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4802903ab484616e3e86e53958608d261c7d0a921f2993c246340da0bc3df328",
+        "slc_ca7a43bfd0e77c199457f9fac86a218862b7a314610b46814001ee23e5e0b278"
+      ],
+      "text": "Repository development practice: local development requires Node.js 20+, pnpm 10.14.0+, Docker for PostgreSQL/Redis containers, and Stripe CLI for webhook forwarding; dependencies install via 'pnpm install'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bfe2ae56a802f0a7298b7b4fbc9b5c1ce9430ebdd46d88432d6f1f691b4135de",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L81-L81"
+        },
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 79,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L77-L79"
+        },
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L71-L73"
+        },
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md#L69-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44646c80d826da2a49446094e2d047841ad7ca157ce5b6c541f1239047b1a4a7",
+        "slc_51d6632a8be672d9ba5ab84131a8e191694376c9c47840c6bc0b40e0e8f4131b",
+        "slc_79e4ce19530ba114c12cf2086252bd704dded62fd743b3570fb6b99834d6a577",
+        "slc_9ffec3dfd4de4972814a515b92afe3804e5114c32275284c72a3af1f501c075f"
+      ],
+      "text": "Repository development practice: after schema changes, contributors push the Drizzle schema to the dev database with 'pnpm -C packages/shared drizzle-kit-push-dev', and 'pnpm dev' starts all development services."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6474bcc7f0094b6a068b4bc3c88cda8143a315a2d021da68a8c07f2cce6a5a3e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "AGENTS.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md#L46-L49"
+        },
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+          "line_end": 53,
+          "line_start": 52,
+          "path": "AGENTS.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md#L52-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b6c3df70a2ea59c765b107e96b55d5ad1ac74aa3ab06db23db45598db3f3b66",
+        "slc_cc2ec2bdd5cf7ec71792a88f754dca297fa986628aa16ec71eac38e218eb7e11"
+      ],
+      "text": "Repository development practice: tests run per workspace (apps/www, packages/shared, packages/daemon, packages/sandbox) via 'pnpm -C <dir> test', with type checking via 'pnpm tsc-check'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_24bdb411dddfa9489de24ea6b7a5d48de47deb39c609502cfb341ad185bbe47e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+          "line_end": 40,
+          "line_start": 32,
+          "path": "AGENTS.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md#L32-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6576e6d98a2ae4e7a894c6969782a1471d57331192eee358498f2404eb8b8b5c"
+      ],
+      "text": "Repository development practice: 'pnpm dev' starts Docker containers, the Next.js frontend, docs site, broadcast realtime service, daemon builds, an MCP server, an ngrok tunnel, cron jobs, and the CLI in dev mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cab5afd740fc4a66a7deb26c5baa56c673dd1c363aae41a391f54bff86aaef15",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "AGENTS.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md#L131-L131"
+        },
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "AGENTS.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md#L119-L119"
+        },
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+          "line_end": 148,
+          "line_start": 145,
+          "path": "AGENTS.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md#L145-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35366802765d17965300520c64d9c9428e9c26c19bcdd54afa859f462397a9a1",
+        "slc_6f3b74a6c3701076681cf622e776caeef12fcf89cde88de9a3d449e7e580d4f9",
+        "slc_79c6fb4ab0a60e9201b59f422360f51daf43f1f1e69a8fb6f1bf3325bbdd5556"
+      ],
+      "text": "Repository development practice: new feature flags are defined in feature-flags-definitions.ts, consumed via a useFeatureFlag hook, and configured on an admin page with global defaults and per-user overrides."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0418dbf22eebb19e47a0f85e24d9349d18e9432ef3a13cae1fd02785352eb18",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+          "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+          "line_end": 303,
+          "line_start": 301,
+          "path": "AGENTS.md",
+          "repository": "terragon-labs/terragon-oss",
+          "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md#L301-L303"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cb538737c98376538e843b78a9e9bc840985181d1b38dc498b9f4f12c9529d6"
+      ],
+      "text": "Repository development practice: after adding a release-notes entry, contributors must increment RELEASE_NOTES_VERSION in apps/www constants, which triggers the release-notes badge for users."
+    }
+  ],
+  "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 87,
+        "path": "README.md",
+        "size": 3890
+      },
+      {
+        "lines": 303,
+        "path": "AGENTS.md",
+        "size": 13547
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 11
+      }
+    ],
+    "omitted": [
+      {
+        "path": "TRADEMARKS.md",
+        "reason": "file-budget",
+        "size": 613
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 72
+      },
+      {
+        "path": "docs/ideas/new-agent-service.md",
+        "reason": "file-budget",
+        "size": 4090
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1110,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": false,
+      "omitted": 3,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3656c151285250a9ad78624058fd33b1",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 6
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/terragon-labs/terragon-oss/83142a17f3970df3e14d1879234a603db6e4f615/855649a683fe5a0c/manifest.json",
+  "package_id": "pkg_ffda4b977134e17e8a67703bb309d670fb54ec3080782d4996b1ee0fde19ecbc",
+  "repo": "terragon-labs/terragon-oss",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1f279955a28a574531d9ff162144013f9f788a33b310ba8b8c4998fe93308cd2",
+  "snapshot_id": "855649a683fe5a0c",
+  "sources": [
+    {
+      "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+      "git_sha": "61f87c26abb4e80e9b455627881423ba52e7d401",
+      "lines": 303,
+      "path": "AGENTS.md",
+      "repository": "terragon-labs/terragon-oss",
+      "sha256": "7f089e685f9dea4f2f757cf534ff018e934ffba3bad50d389035ae8d327de5d9",
+      "source_id": "src_dd5f29b4523b588dba2e152e5e155aba",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/AGENTS.md"
+    },
+    {
+      "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+      "git_sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "terragon-labs/terragon-oss",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "source_id": "src_90b8b307311152138a8378b116ad2954",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/CLAUDE.md"
+    },
+    {
+      "commit": "83142a17f3970df3e14d1879234a603db6e4f615",
+      "git_sha": "e0d82a5671dd5b743a34b679a847c121bd23d54f",
+      "lines": 87,
+      "path": "README.md",
+      "repository": "terragon-labs/terragon-oss",
+      "sha256": "aa1b48630867f65b0bbc95ae0874fccceb8beeebb9e49d708af44d19aba7b790",
+      "source_id": "src_b98c6b59adab5e4291b96d27db2ace43",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/terragon-labs/terragon-oss/blob/83142a17f3970df3e14d1879234a603db6e4f615/README.md"
+    }
+  ],
+  "summary": "The snapshot is Terragon, a cloud platform for delegating work to coding agents in sandboxed containers, with a terry CLI, MCP server, and GitHub-integrated task workflow. Most operational detail comes from README product descriptions and AGENTS.md contributor instructions; the repo is archived as-is with no maintenance guarantees.",
+  "superseded_claim_ids": []
+}

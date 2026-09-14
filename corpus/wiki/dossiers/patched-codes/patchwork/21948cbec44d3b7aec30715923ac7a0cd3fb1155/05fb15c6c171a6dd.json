@@ -1,0 +1,553 @@
+{
+  "applied_operation_id": "op_fc7daaf917a34b80b4790f6c97eb113e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_fabbbf3f4b19050237a43e34da3c6ffe92e35dba3c9f299ca5e1ec2c4331fb3e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L62-L64"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L60-L60"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 67,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L66-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d9b48c5dfc8bf8e7718506a69824144130d2b066bf6c920cc502926a3b5ff23",
+        "slc_c042c11513211042aa050655758c6a46f20cfd8b507b819bee9017625075e5fd",
+        "slc_c87234c790f720eb33588ad77f512d941b2ba62384474aaf475762a0681b4c62"
+      ],
+      "text": "The CLI runs patchflows with the syntax 'patchwork <PatchFlow> <?Arguments>'; arguments override patchflow attributes as key=value pairs, and valueless keys are treated as boolean True flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3c7c5b3e09dce8e228ddd65d370a6c1f9e3aaf2ad8139393c5482b1f24fc103",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L26-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cec1571e13010b74144bb425857bbea17e823efc6c942180f3993861b8c0502d"
+      ],
+      "text": "Patchwork is built from three key components: reusable atomic steps (e.g., create PR, commit changes, call an LLM), customizable prompt templates, and patchflows that combine steps and prompts into automations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75f6254c08b372942de2c68bb5b36429cb3889e0702246025a87d606ae2d89fc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 139,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L134-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d6c4a4de618488883e6354484a4b6eae2cd4a0587dacc07059f8faf5af794f1"
+      ],
+      "text": "Predefined patchflows include GenerateDocstring, AutoFix, PRReview, GenerateREADME, DependencyUpgrade, and ResolveIssue, each linked to its own directory in the repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1bbaba8205ee9df325123990282e47b1a15eb3e5527976716f1c00364c56160f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 52,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L48-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12b8bcfcff4722d17194bc342af1e3384f2491da9f0fd9fa73209a0389a75e9e"
+      ],
+      "text": "Optional pip dependency groups exist: 'security' (semgrep, depscan) required for AutoFix and DependencyUpgrade, 'rag' (chromadb) required for ResolveIssue, 'notifications' for notification steps, and 'all' which installs everything."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_802ca562c52decf5f6155c4b3b52df561ea956d672a7b2205962c5aec10351fe",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 52,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L48-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12b8bcfcff4722d17194bc342af1e3384f2491da9f0fd9fa73209a0389a75e9e"
+      ],
+      "text": "Installing patchwork-cli without any dependency group installs a core set of dependencies sufficient to run the GenerateDocstring, PRReview, and GenerateREADME patchflows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bcfb9b614523b974f2dc868d667ecd693f46fa6660ac174d75cde8ed6334078c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L96-L96"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 118,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L118-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c2c82718088f4dbf9fb05633ce5afdb8cd113ea33f9ec7c72fa625a1ab85699",
+        "slc_3f3a93dc2b87bf04afc8694fe222f2a57dd08372d99042ce7c2643546b267ba3"
+      ],
+      "text": "Patchwork supports any OpenAI-compatible endpoint, enabling models from providers like Groq, Together AI, or Hugging Face, and local models via llama.cpp, ollama, vllm, or tgi."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72b06c24e0f4a56797a3f1bd8e0e1589b98d7c34e9000f89a1c1714bd239a5fa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 92,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L90-L92"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 116,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L114-L116"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 110,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L106-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e416f0ccd3abbebc4b33fa6a267ab538ea1c46dcb41c2c68ffb0b3f23308b8f",
+        "slc_34edd5c615df28b2c08a13e05842f14c7a4e78eb45a8142158f4505cce9e0cd4",
+        "slc_b638afaa6d46b86c726321d0487413cac04236b261f8f653f5947c7c315e2a79"
+      ],
+      "text": "Patchflow configuration can be supplied via a --config flag pointing to a directory of patchflow defaults or to a config.yml file specifying keys such as openai_api_key, client_base_url, and model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd5514cb5bb578c53202434fd7f5d4a9fd1f940ecfd2d9489b350c8335be030b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 159,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L159-L159"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L143-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_39cb0bff6b65380e501571c10073c799cea4ffe9e85343c2dab5ef6b129880c6",
+        "slc_b69bb6508e33d792165d987e18ea3bd2dd373e9d755369ec46b8daa4de151fe3"
+      ],
+      "text": "Prompt templates use {{}} placeholder variables replaced at each run with data from steps or inputs; each patchflow ships with an optimized default template that users can override via prompt_template_file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb9b3d058152902a155c12a496f1b71be8082f6ae154e12501d250edcf0aa543",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L188-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b49dff61a12adc5ddebecb5fb319a3f12caff425ea5047b46f7f79ed3c8c51de"
+      ],
+      "text": "Patchwork is licensed under AGPL-3.0 terms, while the separate patchwork template repository for creating and sharing custom patchflows and steps is licensed under Apache-2.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07daf6fe71596bbf02fc228171e184fba93674dac7c8c42651c58df96c3c9020",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "78ca8d2be989f5e268e064a00b70c89c29c3f4f8",
+          "line_end": 8,
+          "line_start": 5,
+          "path": "INSTALL.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/INSTALL.md#L5-L8"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "78ca8d2be989f5e268e064a00b70c89c29c3f4f8",
+          "line_end": 13,
+          "line_start": 10,
+          "path": "INSTALL.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/INSTALL.md#L10-L13"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "78ca8d2be989f5e268e064a00b70c89c29c3f4f8",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "INSTALL.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/INSTALL.md#L25-L28"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "78ca8d2be989f5e268e064a00b70c89c29c3f4f8",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "INSTALL.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/INSTALL.md#L3-L3"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "78ca8d2be989f5e268e064a00b70c89c29c3f4f8",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "INSTALL.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/INSTALL.md#L20-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_576f59ccbd7353d4801e39ec0d71064d6c6f463ce10c538362ed381e1d3fb25b",
+        "slc_65b95259fca359926692a2848e4534bf5fa24981a7c1558093399d22783d5062",
+        "slc_7a15686f71b5ed91228300b9bc51ace656cab7e4aec261b57d25f733304fb4f8",
+        "slc_b405e3d9e673d419c011be8a3e8b35aecd3d082971e1092153ff27b5ae6a25f1",
+        "slc_e45d189b16bb4d0518e97aa5fae983bf5487f426f67c7e31f0f51c11fdaf0e87"
+      ],
+      "text": "Repository development practice: building from source uses Poetry, with documented steps to install Poetry, clone the repository, activate a poetry shell, and run 'poetry install --all-extras'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_686d0ae78a78b7abfa03495ae02af2d265d48d1fa0bd948217215401a41acff4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 166,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L165-L166"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L163-L163"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 170,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L170-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50ab7c46020b84045b8f343c02da4230913e115a9af7ba1511ba7415a586c939",
+        "slc_79034800779f8e12e109c4045f721ab17b30ad10a69b56fc1f22ac497ae8b31a",
+        "slc_ed4b0dc4101c4361dc1f9e42d414d9ee045ff60ff2c87cc86b00c287664df291"
+      ],
+      "text": "Repository development practice: contributions for new patchflows, steps, or the core framework are welcomed, with separate instruction documents for creating patchflows and steps, plus a HuggingChat assistant to help author them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_507a34e5525d06859c2507d4f1deaee89f176d0a63b70e3be9c8035475eb795d",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 139,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L134-L139"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L77-L77"
+        },
+        {
+          "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+          "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "patched-codes/patchwork",
+          "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md#L71-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d6c4a4de618488883e6354484a4b6eae2cd4a0587dacc07059f8faf5af794f1",
+        "slc_f260b866bde1fef783ec1ec1ed5f0996ace8d58bef3d9b847e10434a2ab9f501",
+        "slc_f796ba831cf776720a9a251bee6aa3fabcf87b5cf69a7e951d98402f02d77e1d"
+      ],
+      "text": "Patchwork appears relevant to security automation use cases, since its AutoFix patchflow patches vulnerabilities identified by Semgrep scans and DependencyUpgrade updates dependencies from vulnerable to fixed versions."
+    }
+  ],
+  "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 189,
+        "path": "README.md",
+        "size": 8748
+      },
+      {
+        "lines": 128,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 5223
+      },
+      {
+        "lines": 28,
+        "path": "INSTALL.md",
+        "size": 686
+      }
+    ],
+    "omitted": [
+      {
+        "path": "style.md",
+        "reason": "file-budget",
+        "size": 2241
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 338,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": false,
+      "omitted": 1,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_34e23fe2be0553b5b849524c1270a71e",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/patched-codes/patchwork/21948cbec44d3b7aec30715923ac7a0cd3fb1155/05fb15c6c171a6dd/manifest.json",
+  "package_id": "pkg_289509a0cfd6590909896f34c0a1f373667b5e19a0c7ded78c4c9f94b7723ce5",
+  "repo": "patched-codes/patchwork",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "54b483b5d4c5bb238afcac39230f53dd7d5d0417326faeb3ab1472dda83cf2c5",
+  "snapshot_id": "05fb15c6c171a6dd",
+  "sources": [
+    {
+      "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+      "git_sha": "0665cf6a9b7eefaac8d3afc5cfc25b65c55c06e6",
+      "lines": 128,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "patched-codes/patchwork",
+      "sha256": "50d26d1f5d6b7fedeed9d5369d81ec4d7cae15ff838305ad2beaeda1a11bb1c4",
+      "source_id": "src_a2d23c08e5a75e02a1fe91accb4a088e",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+      "git_sha": "78ca8d2be989f5e268e064a00b70c89c29c3f4f8",
+      "lines": 28,
+      "path": "INSTALL.md",
+      "repository": "patched-codes/patchwork",
+      "sha256": "59e6d70c4deff3546bafb84c4c17ded0b954c8bf8cb875cf022a761582379eac",
+      "source_id": "src_70c9e173c78d52cf843acce45e47323b",
+      "stored": "install.md-09b140a43ebf.md",
+      "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/INSTALL.md"
+    },
+    {
+      "commit": "21948cbec44d3b7aec30715923ac7a0cd3fb1155",
+      "git_sha": "512ce039864733a7194d006b42214eb3e9d8b9c3",
+      "lines": 189,
+      "path": "README.md",
+      "repository": "patched-codes/patchwork",
+      "sha256": "d69f4eef874eb6c3c491d18f606074a65ffd2056b3e8a033211c9ba7bc5aabe8",
+      "source_id": "src_40d8d0bdab2757c6bb5b492295d90375",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/patched-codes/patchwork/blob/21948cbec44d3b7aec30715923ac7a0cd3fb1155/README.md"
+    }
+  ],
+  "summary": "Patchwork is a CLI tool that automates development tasks such as PR reviews, bug fixing, and security patching using LLM-assisted patchflows built from reusable steps and prompt templates, installable via pip with optional dependency groups.",
+  "superseded_claim_ids": []
+}

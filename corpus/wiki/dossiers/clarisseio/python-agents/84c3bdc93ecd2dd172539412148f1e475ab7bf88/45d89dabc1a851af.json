@@ -1,0 +1,783 @@
+{
+  "applied_operation_id": "op_b8071f0fb3da45d89865505b463104e4",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e1d0808139d05dba3864b86d25529872625311a4effe2d41a99e60192c16b84",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 106,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L92-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07d66e6655b4706b4a33c184f12e16c28f65c7b0c45e7fe26247964a55128b7f"
+      ],
+      "text": "The framework ships modules for agents, LLMs, prompt templating (Mustache-based), memory, tools, cache, errors, adapters, and logger, with agents and LLMs described as base classes defining common interfaces."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dde7c03a70959a2e0be462959b04513032da6fa5df74c4f487b3c7f017da1258",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 67,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L61-L67"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 59,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L55-L59"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 70,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L69-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a53f838565433e9275692e1b770ffcf4f7db28f56081670f01a24e1be7778e6",
+        "slc_b473dea9e3dfb24d3778628a82bf8480115eb5a38e6af55412c0768326bbca4e",
+        "slc_b6b1e79d5fc84cfc53aab6b24e1c8c9e297a6f8afc9d994f924079dd749fe975"
+      ],
+      "text": "Agents are constructed with an LLM, memory, and tools, and run via an awaited run({prompt}) call whose result exposes response.result.text."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c4e6d06d460d4142badf7aa52e19bce7e1bccf67582aff4296e4ed4dc407e4e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 194,
+          "line_start": 192,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L192-L194"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 188,
+          "line_start": 178,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L178-L188"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 67,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L61-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2acb2f2a86f38aeb0686adf63975de1cc5aec8aa0aecb6ae28dd2326d61aa209",
+        "slc_77c4e892c9f922a1b6ceec9845faeda4fc909a9623ce7615b13437c7efb0e498",
+        "slc_8a53f838565433e9275692e1b770ffcf4f7db28f56081670f01a24e1be7778e6"
+      ],
+      "text": "The run method supports an observe callback exposing an emitter where listeners can subscribe to events such as 'update' during execution; observe is also supported on tools and LLMs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66b7a4cfb127b60833caf7c04e8539168c4f11e21546b810314e7ddcf9469ead",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 42,
+          "line_start": 39,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L39-L42"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 22,
+          "line_start": 20,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L20-L22"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L24-L26"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 37,
+          "line_start": 35,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L35-L37"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 331,
+          "line_start": 331,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L331-L331"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 33,
+          "line_start": 28,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L28-L33"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 372,
+          "line_start": 368,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L368-L372"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 366,
+          "line_start": 364,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L364-L366"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0110334e0896322f7e5cb225180a028eb71c9d01d19ff5784e7e394582548c78",
+        "slc_110f69352682445a84cb639d34c3f4ec9d7cbf822510a416ae7c93de57b8f9a7",
+        "slc_2230f81ad7e422583b14e88547c2da8152a5caf9ff0171747d870f9e39563f85",
+        "slc_3b5087bf8f7f486cf83531035f4911ebb72a2f13eaa2573730714db910397d89",
+        "slc_8f9f2267817e690642bd28c45f78445359c9b641ffabfd8538d538029390fc66",
+        "slc_bea208f64c3661ec1b84c121b254af10d196504da5746636c2c4ea5727265057",
+        "slc_f0a3c3c2d8cd08b14db55d823ae26335ac4cb95080cf1539b63827a60428c2ec",
+        "slc_fbee5b6ce5165173f6cc07724fcf59a1d96a93df2649ba6e1c5d3aa3f9f6c6fd"
+      ],
+      "text": "Caches expose async set/get/has/delete/clear/size operations, and custom caches are created by extending BaseCache, whose example also includes createSnapshot and loadSnapshot methods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_913dc7f704cc758ef9f4483e202bf62f82d35cb37c2e3ad7dfc780f94e846dd7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 99,
+          "line_start": 97,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L97-L99"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 294,
+          "line_start": 291,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L291-L294"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+          "line_end": 289,
+          "line_start": 287,
+          "path": "docs/cache.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md#L287-L289"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fbf558d411e13e508901ada15666e43fd0671b6bbafb3aade93d0112a0a59c0",
+        "slc_8c5fe24ba04f7c4d5b0eec4bd5e47e9112e4cb0f5a3b021f82fdd7e13a0bfe01",
+        "slc_d858c842fe79db4829e01a9694c0ddce6543cbd06bd366e1d4384347d3dce87f"
+      ],
+      "text": "Cache keys are produced by serializing function parameters with key order irrelevant; the default decorator key function is ObjectHashKeyFn, and SingletonCacheKeyFn yields a single shared key regardless of arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7e602b45d064b2a5569a86a027686ed51a26a0ad69d97c89f1d5fa88aa6a55e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L103-L107"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L100-L101"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 98,
+          "line_start": 97,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L97-L98"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L109-L111"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 95,
+          "line_start": 94,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L94-L95"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+          "line_end": 142,
+          "line_start": 141,
+          "path": "docs/emitter.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md#L141-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_182a59bdc18ea8e5d4e2269ddb6ff46f37662e76482ac81e5ece6a4c83c744d8",
+        "slc_2452cd98b9a9301b613af135730774379f9b81a9874cfefe860d0999e5f4f6fd",
+        "slc_774e91cdf528f09aacf4f1023df4480968a7acdc0028bf032b91eca559008fd2",
+        "slc_a8e170404b47ac13fb6e4ec556a06cc55b4dafdec6b54d64a378cd74e630aef3",
+        "slc_d4e0719f88251075e3a7e8802856d93ae31149b571519ed4058aea7b65c4938a",
+        "slc_f8ad04726eda2cddcf8b0db1859568f73ae530eeba4823a674e917cf9d181e84"
+      ],
+      "text": "An Emitter observability component lets code emit and match events by name, wildcard patterns, filter functions (e.g. creator instanceof BaseLLM), or regex, and supports piping events between emitters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d53a7077166165c222faeffffa1630d57fb4c192fa056703e754080a92e1e81",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "docs/memory.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/memory.md#L29-L33"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 64,
+          "line_start": 61,
+          "path": "docs/memory.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/memory.md#L61-L64"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 27,
+          "line_start": 21,
+          "path": "docs/memory.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/memory.md#L21-L27"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 39,
+          "line_start": 35,
+          "path": "docs/memory.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/memory.md#L35-L39"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/memory.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/memory.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_032f8c4db28911da92aeb1002c9fa67e760f1ac79284e7ea7a583f9d9d74c597",
+        "slc_733db3d7c057dedd78c2d52d529ed9c82e645bd89d060331bc037dd39d8b85ee",
+        "slc_7435f5131b5c6c47b18511385f99958b267acd8b91adaa95ce84a3018eb4cd8f",
+        "slc_a79c13909e128fd204137d12b813a719d18811c124dbd6c50504938d1f6785f4",
+        "slc_b2563e61b5da0a9b8666633985a4e87b667a51474cf914b08304934060097e1c"
+      ],
+      "text": "Memory classes such as UnconstrainedMemory store BaseMessage objects with add/addMany, expose messages, isEmpty, asReadOnly, and reset, and can be passed to LLM generate calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e323144efd2cd4e2b3eed95db1b65ff5f592b13cb7d11b6738292f13d1cc45e7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L40-L42"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L53-L53"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L34-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_86bc9cc8bd361210aee7c336fd9ca2fc9f8cfe37bf8fed5d7ca8f0255bc8bc04",
+        "slc_a0c7943233c7eb434571bfd8db64bfa54f91165e6ac1fef964f3d10ef7220517",
+        "slc_c483fe2c3cff88ee015f0b7e842f8d9d71f9f6eff850df852c232c49e68c6d81"
+      ],
+      "text": "The package installs via npm or yarn as 'Clarisse-agent-framework', and examples use an Ollama chat LLM adapter defaulting to llama3.1 (8B) with the 70B model recommended."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8de7343144be5b87745fe02e08557bee254684a2e777138baec5ccf4c9f557a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c67b37a900224e45929d69052a9aab2f5d3bdb55002d4a83315bfe70ab337885"
+      ],
+      "text": "The framework is designed to perform robustly with IBM Granite and Llama 3.x models, with optimization for other popular LLMs stated as ongoing work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f04908d4897156bb7710f69f1b00a1f1d173ef83a828ad73d94ebf0ca2c01ec2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 82,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L79-L82"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L86-L86"
+        },
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L121-L121"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_79a87d3152791866133b983322928c2c2a71f64496d7b5133969f6b78bb84983",
+        "slc_8927215d769333185286c6794f1271e0a34fdc37be414dcc996aa9f264331bdb",
+        "slc_e5761904baaab4630edba726b61f8fea5317569199300b73d8241b54d59f2daa"
+      ],
+      "text": "Repository development practice: local setup involves cloning, yarn install --immutable && yarn prepare, creating .env from .env.template, and running examples via yarn start with a file path; contributions follow CONTRIBUTING.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0f554009905401c66358f2863bc660907310f45ee2d059481676b150e47bcbf",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+          "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "clarisseio/python-agents",
+          "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md#L126-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa092580f5bb194ad72fe63e0c060d8169af0c8936c2c1e0d1ac76bf3992c035"
+      ],
+      "text": "The legal notice states the code is an IBM open-source project, not an IBM product, with no obligation to provide enhancements, updates, support, or ongoing maintenance."
+    }
+  ],
+  "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 126,
+        "path": "README.md",
+        "size": 7545
+      },
+      {
+        "lines": 291,
+        "path": "docs/memory.md",
+        "size": 9739
+      },
+      {
+        "lines": 475,
+        "path": "docs/tools.md",
+        "size": 17170
+      },
+      {
+        "lines": 18,
+        "path": "docs/_sidebar.md",
+        "size": 361
+      },
+      {
+        "lines": 376,
+        "path": "docs/cache.md",
+        "size": 11088
+      },
+      {
+        "lines": 202,
+        "path": "docs/emitter.md",
+        "size": 5906
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/errors.md",
+        "reason": "file-budget",
+        "size": 4859
+      },
+      {
+        "path": "docs/instrumentation.md",
+        "reason": "file-budget",
+        "size": 3520
+      },
+      {
+        "path": "docs/llms.md",
+        "reason": "file-budget",
+        "size": 9811
+      },
+      {
+        "path": "docs/logger.md",
+        "reason": "file-budget",
+        "size": 3843
+      },
+      {
+        "path": "docs/overview.md",
+        "reason": "file-budget",
+        "size": 3014
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 9366
+      },
+      {
+        "path": "docs/serialization.md",
+        "reason": "file-budget",
+        "size": 6150
+      },
+      {
+        "path": "docs/sql-tool.md",
+        "reason": "file-budget",
+        "size": 7729
+      },
+      {
+        "path": "docs/templates.md",
+        "reason": "file-budget",
+        "size": 5219
+      },
+      {
+        "path": "docs/version.md",
+        "reason": "file-budget",
+        "size": 531
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 58892
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 3425
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 590
+      },
+      {
+        "path": "docs/agents.md",
+        "reason": "file-budget",
+        "size": 5599
+      },
+      {
+        "path": "docs/CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 58892
+      },
+      {
+        "path": "docs/CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 3425
+      },
+      {
+        "path": "docs/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7466
+      },
+      {
+        "path": "docs/SECURITY.md",
+        "reason": "file-budget",
+        "size": 590
+      }
+    ],
+    "omitted_count": 18,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 100,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 24,
+      "complete": false,
+      "omitted": 18,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_02137493238c553bbd3cebf88faeb79b",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/clarisseio/python-agents/84c3bdc93ecd2dd172539412148f1e475ab7bf88/45d89dabc1a851af/manifest.json",
+  "package_id": "pkg_c4a6ad48fff9fe86c10f4800d58e2687e58b0dee63f4db0a44e3436d8a2f26ff",
+  "repo": "clarisseio/python-agents",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9dcfd101eb273f0b59ab9239a1fe8f7fc97b20cf70f45068ad8144685466e2b4",
+  "snapshot_id": "45d89dabc1a851af",
+  "sources": [
+    {
+      "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+      "git_sha": "d97f59cfbb5ffef27f10676f70f36a71db2aa10e",
+      "lines": 126,
+      "path": "README.md",
+      "repository": "clarisseio/python-agents",
+      "sha256": "a342525acf0e44d3e383f5063432973543ee18f0fbfd890d539ce83ac7baa8d1",
+      "source_id": "src_f18ca62e82445030871acb4bf623017b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/README.md"
+    },
+    {
+      "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+      "git_sha": "70cc90c817991dd249c6c03110c80fb06781b25c",
+      "lines": 18,
+      "path": "docs/_sidebar.md",
+      "repository": "clarisseio/python-agents",
+      "sha256": "6cf309b09aae816fabbabf315fa099ee644fbd5c253de1fc0dd32a8cdec8d18e",
+      "source_id": "src_ddca83a0c2875b5f9235c06c26207e13",
+      "stored": "_sidebar.md-2a55b1a76ffb.md",
+      "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/_sidebar.md"
+    },
+    {
+      "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+      "git_sha": "1b55467f3a8dac52ff10cb57bb2316e4964edc7e",
+      "lines": 376,
+      "path": "docs/cache.md",
+      "repository": "clarisseio/python-agents",
+      "sha256": "3352bec409802a584e0ecede8dabc78d4063c0602e6a337e697a5b8bdce5fed2",
+      "source_id": "src_4e01e6e7cf245ddf92cb578eb0846fc4",
+      "stored": "cache.md-356f6a855928.md",
+      "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/cache.md"
+    },
+    {
+      "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+      "git_sha": "6785afbe033cc14f5f507182115773424f6a3fde",
+      "lines": 202,
+      "path": "docs/emitter.md",
+      "repository": "clarisseio/python-agents",
+      "sha256": "8b67a59f4f2a16825f4264a8f886034cfe44a81fff09ee8873826de27a6d66c8",
+      "source_id": "src_764ad1d0e96b5ceb8dffb452451711af",
+      "stored": "emitter.md-c63b8b13c77d.md",
+      "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/emitter.md"
+    },
+    {
+      "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+      "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+      "lines": 291,
+      "path": "docs/memory.md",
+      "repository": "clarisseio/python-agents",
+      "sha256": "c45feea466eb6e2781c04cf24adc4655696b66477c373b7774292b8bbd424a73",
+      "source_id": "src_7fc872b5c47555819a045bc995aa3af0",
+      "stored": "memory.md-ad99d17d1a33.md",
+      "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/memory.md"
+    },
+    {
+      "commit": "84c3bdc93ecd2dd172539412148f1e475ab7bf88",
+      "git_sha": "ae650deb2b1c11c421d7a6ba2fe2650a481d3768",
+      "lines": 475,
+      "path": "docs/tools.md",
+      "repository": "clarisseio/python-agents",
+      "sha256": "14a05e1aaf679bc12e4c2c97986776b5c8aa5a958b1e5e9dc799a17f98fa9be4",
+      "source_id": "src_9747a14a02a45a86acd5b424d5d2768e",
+      "stored": "tools.md-1f2a04763330.md",
+      "url": "https://github.com/clarisseIO/python-agents/blob/84c3bdc93ecd2dd172539412148f1e475ab7bf88/docs/tools.md"
+    }
+  ],
+  "summary": "Selected evidence records: The framework ships modules for agents, LLMs, prompt templating (Mustache-based), memory, tools, cache, errors, adapters, and logger, with agents and LLMs described as base classes defining common interfaces. Agents are constructed with an LLM, memory, and tools, and run via an awaited run({prompt}) call whose result exposes response.result.text.",
+  "superseded_claim_ids": []
+}

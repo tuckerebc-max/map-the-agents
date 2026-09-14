@@ -1,0 +1,600 @@
+{
+  "applied_operation_id": "op_92952da76ed84164b5f1ebea875271be",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c124c3c6d625bde3c36424315838955023e0f13d0a3d53e915a0db28f88fb24a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_82cb2dad2af67510d4c192815f27f83356858225775d12ce466e9c1ddd46e782"
+      ],
+      "text": "Archon is described as a workflow engine for AI coding agents in which development processes (planning, implementation, validation, review, PR creation) are defined as YAML workflows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33347610d71307300dfcdd0e38fb21a5edc926addf3197ccc6e72331ba408f81",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 258,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L258-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_388dc1d4f1739060a6c74bebc2573e15d4b8db21858a48137db82e4c2bb447ec"
+      ],
+      "text": "The project ships 19 default workflows, and a router can select an appropriate workflow when the user describes what they want."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1df2c71a0b50eb66b1333572da6f56bc45b481c77553e5a94b1d3f152b1299f7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 69,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L64-L69"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 54,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L49-L54"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 37,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L33-L37"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L56-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1575738802bcb34f5c5957e0371209f86cb82becaf4f6dc39a429ba84eaae7c9",
+        "slc_7f66e344862b63199a53d92360ea87e64e387042864c06cda334557d4ecdd28c",
+        "slc_c85ecb1c0411254051d169d4bceadb1504d65a82e7927b9b22872e8a2b286906",
+        "slc_e23a4057adb6ffa02e0ed8aa19a4f3f4770f8856583d1e5ed899f79bca77ed32"
+      ],
+      "text": "Workflows compose deterministic nodes (bash scripts, tests, git operations) with AI nodes, so AI runs only where it adds value; the example includes a test loop iterating until tests pass and an interactive human approval gate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc2a879d8142ada95be7a78c10d7d55e7a0ca2927574dd892d0f80e3da889f58",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 37,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L33-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c85ecb1c0411254051d169d4bceadb1504d65a82e7927b9b22872e8a2b286906"
+      ],
+      "text": "Each workflow run gets its own git worktree, allowing multiple fixes to run in parallel without conflicts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88a3f2a04300e73d06e95ad91b35f97de0fc4081a45c7d035da680c2701978d3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 356,
+          "line_start": 356,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L356-L356"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 258,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L258-L258"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L218-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f03814daf0561bf313f829aec40e68636bd2dfda5a8222539f71ba852764a96",
+        "slc_388dc1d4f1739060a6c74bebc2573e15d4b8db21858a48137db82e4c2bb447ec",
+        "slc_8da09798a447ad9f2a6c21358f58df521a9a95e04b3fdaacbb1b05d595c393c9"
+      ],
+      "text": "The CLI includes commands such as `archon serve` (start the web dashboard), `archon workflow list`, `archon telemetry status/reset`, and `archon doctor`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa8471b8fe6df8093717d207f7218a81b4d3030fa6c22d04d22cb4eed87e3048",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 226,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L222-L226"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef5adce2c05f444a4ad05b9841de8d1fd5df11b1eb0fff08e6c8f08eb503d8c8"
+      ],
+      "text": "The web dashboard offers a chat page with streaming and tool-call visualization, a workflow monitoring dashboard, a drag-and-drop workflow builder for DAG workflows, and per-run execution views."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cee59ae989649fb8bb47173db4189f85648a49b07ee5adbe5701c17d3cd61ff3",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 273,
+          "line_start": 268,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L268-L273"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 228,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L228-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1a00d0d1a588c13319130ff1eb0223501d3bc0e6bf57221c67eb091f13206f7",
+        "slc_daf136aeca2c7157573823a9d8bfee10235a6f3a4d5e513559066fd367bbfcd2"
+      ],
+      "text": "Beyond the Web UI and CLI, optional chat-platform adapters for Telegram, Slack, GitHub webhooks, and Discord provide remote access, and the sidebar aggregates activity from all platforms."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9170c4e779383ced6acb1e5ad012ce04b66118dddc3405073fc8dea422edb2fe",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 310,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L277-L310"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cfad83b8dc416d9d44dd90bf45156ced9727447577afcaa9d18b5483a4c3ac3"
+      ],
+      "text": "The documented architecture layers platform adapters above an orchestrator, with a slash command handler, YAML workflow executor, AI assistant clients (Claude/Codex/Pi), and a SQLite/PostgreSQL store of 14 core tables covering codebases, conversations, sessions, and workflow runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_afaa62988b79901ba25cc46aea06f689fd12876bc255de89b6c3ec8851cd2ebc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L132-L132"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L109-L109"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 107,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L106-L107"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a36c760897311f678558f85e567ded779a56fdbe441e0df0c847c2a6457b1ea",
+        "slc_392d08747bb3213cfa78e517a755b60c90a58c5d6d0c0450bd963fff37063174",
+        "slc_d6882a37472f2ce1908a5ae5db751c436c37b0b8370dece649d98cf45340c81b",
+        "slc_e42f1e9db055e20c0121fe48e5d200a37ec5be3939736d8b214a91109bd64356"
+      ],
+      "text": "Full setup lists Bun, Claude Code, and the GitHub CLI as prerequisites, with platform-specific install commands provided."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_61ede137ce230e0ebf2f3f5775283ba15954a580226287791be20742bb6fcdf5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 167,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L164-L167"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 193,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L179-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ded7cfea02194cd09c412c7812a88c5372e41b7d98421f71e4c54f5ac6534608",
+        "slc_e968cc217df0c78505744c3070b22e2c04f0e6f06a796f4a7b31a15efa130d39"
+      ],
+      "text": "The macOS/Linux quick install requires AVX2 on x64 CPUs, and compiled binaries do not bundle Claude Code, so users must set CLAUDE_BIN_PATH or a config path; the Docker image ships Claude Code pre-installed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3cce7a9eabe16f04cae46ac22d9aedde8118a1edff17df88af2688066e0c259",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L153-L153"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 214,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L214-L214"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L104-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d890fb0734ee52edf401150be26a77ecac941b6ad80b40fbe1d5c13d0e102c1",
+        "slc_7ba62cb77eadd25bca71d09a8facbb981044007c1d3bf73829f9587d8d48bb38",
+        "slc_b33bbbfc1e5eb1f9cde34b419d5b849bc2bddfcd6bb2eebad08bf4a82114d4b0"
+      ],
+      "text": "The setup wizard copies the Archon skill into target projects, and users are told to run Claude Code from the target repo rather than the Archon repo."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e532d56a1b7977a4e3a5db667fff6411eada76c91d0590b4522d3d9c4ee298af",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 344,
+          "line_start": 344,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L344-L344"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 333,
+          "line_start": 333,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L333-L333"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 342,
+          "line_start": 335,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L335-L342"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 354,
+          "line_start": 354,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L354-L354"
+        },
+        {
+          "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+          "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+          "line_end": 352,
+          "line_start": 348,
+          "path": "README.md",
+          "repository": "coleam00/archon",
+          "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md#L348-L352"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d6b79480945ad8d614410643cf02059b7f547588b3886fddbd96ff9ddba2979",
+        "slc_210a077a2d1a3b50f7c8945bff5e1317ee1603bcdcc6bee4d401aae095733065",
+        "slc_3461b0aca95e04b76b6ab2f5b8794995af5f33e064d55b9069f7d5c4d7bb3779",
+        "slc_512ad091c4170d645cf1454e0bf83223a5c52e5a195bb1239e7f0a84b29fae05",
+        "slc_f5b004df3d6e513da9a29562679df0aedcbfcc07b2cad84df17ee61cce4ef7ed"
+      ],
+      "text": "Telemetry sends anonymous categorical events (bundled workflow names only, run outcomes, token/cost totals, machine context) with no PII; it can be disabled via environment variables and is auto-disabled when CI=true."
+    }
+  ],
+  "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 374,
+        "path": "README.md",
+        "size": 20637
+      },
+      {
+        "lines": 194,
+        "path": "AGENTS.md",
+        "size": 17390
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 29
+      },
+      {
+        "lines": 184,
+        "path": "CONTRIBUTING.md",
+        "size": 7015
+      },
+      {
+        "lines": 34,
+        "path": "SECURITY.md",
+        "size": 993
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 171960
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1568,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": false,
+      "omitted": 1,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_6f73b5ce610d5d43b096c4e63d6a3e20",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/coleam00/archon/a7e300b2a74051711b7de2262c267cb96d3002d2/dfc91846333717e8/manifest.json",
+  "package_id": "pkg_26b4368b6b4a8408aea62615a3516c9353c4534be0e48d0090303318b6eda17d",
+  "repo": "coleam00/archon",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4d27bb48142bee2522b5b055463f0a0bdd61109ccabe02f7f76b9fad3c838bec",
+  "snapshot_id": "dfc91846333717e8",
+  "sources": [
+    {
+      "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+      "git_sha": "0906038e8b9d40f7d2c9b7675277c30caaf6cfa0",
+      "lines": 194,
+      "path": "AGENTS.md",
+      "repository": "coleam00/archon",
+      "sha256": "c05a8c09d7583ad3af09dec56ea3078ec1ec66096837e8e95b701c29802241e0",
+      "source_id": "src_fc09eecbabfe5a999270a5c13ee72452",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/AGENTS.md"
+    },
+    {
+      "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+      "git_sha": "2dcb661e0a2121b11e27d74eeff16a9c1c0fe2c4",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "coleam00/archon",
+      "sha256": "73d280703740a4e1e4f42305b6320f4450fcb9e1b307bd7ed68781fb28ef677f",
+      "source_id": "src_6e21db7e424155dc84f5d89b36697113",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/CLAUDE.md"
+    },
+    {
+      "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+      "git_sha": "0e3d42abe46f2f8ed3395894e43d60c2201559b1",
+      "lines": 184,
+      "path": "CONTRIBUTING.md",
+      "repository": "coleam00/archon",
+      "sha256": "b632722f7e611ebf7d8488e7f4d1702c4bc9aa8b84d7672df30c021b39037a07",
+      "source_id": "src_18dbca62761652e78270cc8ec4f705b8",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/CONTRIBUTING.md"
+    },
+    {
+      "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+      "git_sha": "4a70f286b4e81fd545c49d04c2f2203aa6d59409",
+      "lines": 374,
+      "path": "README.md",
+      "repository": "coleam00/archon",
+      "sha256": "b88b895a9ad4030dd5ac1c74bf1b314ae90e7e2f42532d7823f63eab95aa0657",
+      "source_id": "src_643e1a72450654a2940c2b7bb406e24f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/README.md"
+    },
+    {
+      "commit": "a7e300b2a74051711b7de2262c267cb96d3002d2",
+      "git_sha": "52d3e316f100b6aad2bd71c4a05ad5566dc36d49",
+      "lines": 34,
+      "path": "SECURITY.md",
+      "repository": "coleam00/archon",
+      "sha256": "a5656be501ed4e5f1dd6b5bbeca96de78a473264b38983e88003e364aca062e4",
+      "source_id": "src_f7cf0b791060505294c3ed9f08f5a786",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/coleam00/Archon/blob/a7e300b2a74051711b7de2262c267cb96d3002d2/SECURITY.md"
+    }
+  ],
+  "summary": "Archon is a self-hostable workflow engine for AI coding agents: development processes are defined as YAML workflows mixing deterministic and AI nodes, exposed via CLI, web dashboard, and optional chat-platform adapters, backed by SQLite/PostgreSQL. Evidence is documentation-only (README, AGENTS.md, SECURITY.md); no runtime code slices were supplied. Evidence coverage: 121 of 156 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

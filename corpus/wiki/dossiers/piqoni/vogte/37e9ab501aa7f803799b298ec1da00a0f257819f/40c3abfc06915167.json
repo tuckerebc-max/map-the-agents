@@ -1,0 +1,475 @@
+{
+  "applied_operation_id": "op_ff79b1a2d2ed43228fae7fe75e1057ab",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e5d6ac3be06728a0e2d444a78812ac28fa9f123381d51eb26d69a8eec4358bd",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 9,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L1-L9"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 19,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L15-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23ea85aa639274078ae574ae93bb4f24dc3473c7b155827b58c0d21262c1e20f",
+        "slc_cd8c9cbd884d767239beba20ea16b552888b89b088ef8baf7ecdcf7c370e56a7"
+      ],
+      "text": "Vogte is described as an agentic terminal tool aimed at existing Go codebases, helping developers build and maintain Go projects with LLMs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab954c665c09aeacbdda48e27808afc9fdaa6d9a022fbc1237eb1c0ce56af530",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 19,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L15-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cd8c9cbd884d767239beba20ea16b552888b89b088ef8baf7ecdcf7c370e56a7"
+      ],
+      "text": "Because the language is assumed to be Go, the tool parses repositories with Abstract Syntax Trees to extract compressed, relevant context for LLM prompts, aiming for near-zero configuration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0fefc8983a25da6b8a888303adff7fa5910a0ab91bf6fd36670a728a0a79050b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 61,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L51-L61"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L29-L31"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L22-L27"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 69,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L63-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06c347a2ea10cccecff953760936126f3d3e3a45b3963089506ab5a79bda08f6",
+        "slc_2650c35a81780e3b7c6c6e17f7a96565dabee42519e42943990e3730d78c53de",
+        "slc_c0cb4097ebbf2c99f534e9dc9dceb4c5e837a179847b8173cc4b24fd984c075e",
+        "slc_e76f7108156dd2d9bd4e0638d708441771f0a30c5edc0f9d04b1a48cf24541c6"
+      ],
+      "text": "The tool offers a TUI with ask/agent modes and CLI flags including -review, -generate-context, -agent, -config, -dir, and -model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3718b27617026f67795f182acf1b56d516be18b29935004a2fbcdd672b7eec9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cd6b15587329d62e736811776e6eb7864953064b834a35873362d81dee924dd7"
+      ],
+      "text": "It uses a two-step flow: first it extracts structs/interfaces/methods signatures and asks the LLM which files are needed, then supplies those files in full so the LLM can produce a solution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b15b3a0acc12cfb42cd406210c022500552442ab28ae63bb377666e6e94740a1",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L71-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e4ed103fed3dd585d7381c5656fa547e1d22c328f107a6920e499344ead4fbb1"
+      ],
+      "text": "In agent mode (via -agent or the AGENT toggle) the tool edits files without user approval, and users are advised to rely on version control to avoid losing work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b92079fc233fee9e64deafadc83644f693358bd05878d83d92bda697ca0c43ee",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L22-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c0cb4097ebbf2c99f534e9dc9dceb4c5e837a179847b8173cc4b24fd984c075e"
+      ],
+      "text": "After applying patches, the tool runs a 'Sanity Check' (currently 'go vet ./...') and shows a project-health indicator for instant feedback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df6d86b6ac9992c779e04358c3d92ade1a62c15f15f0c80684f9a29a0250e8ef",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 47,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L46-L47"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L22-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c76d53f544003a7484ab8d26ccaddd3bc22674c84203343d632852b85e3aef9",
+        "slc_c0cb4097ebbf2c99f534e9dc9dceb4c5e837a179847b8173cc4b24fd984c075e"
+      ],
+      "text": "It works with OpenAI-compatible APIs (tested with GPT-4 and Claude Sonnet), supports AWS Bedrock for Anthropic models, and uses OPENAI_API_KEY or ANTHROPIC_API_KEY environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27ec768133466b800cbb7e200de2985e57d61ccea8d9be4c505d5c466a0bb13b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 79,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L78-L79"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L81-L81"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 69,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L63-L69"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 76,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L74-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38a801ab99609f208c4fe687c0f3e6af589dcda52bad1df0a6735a8f6acc1a7a",
+        "slc_78a1e7ad7e4b6ba1917f4f87736018664ba91cf5a581cdf569c2b9460b3359e9",
+        "slc_e76f7108156dd2d9bd4e0638d708441771f0a30c5edc0f9d04b1a48cf24541c6",
+        "slc_ebbac6d952b5ddc513c63ea01818d952f9897ea60fd9e75fbf8c0fc42993f03c"
+      ],
+      "text": "Running 'vogte -generate-context' writes a vogte-context.txt file in the current directory, and -dir lets users analyze a project in another directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8105f4f84e272cd463128a7920be5169e0abf5915b10566cfdb252b4ddde941",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 35,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L34-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_329ad614439fe91dcc30f05749975764a20721212f24849f5fe70ea034c70bd8"
+      ],
+      "text": "Each message is treated as a new, unrelated chat, and there is no agentic retry loop on failure, at least for now."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ab4ecd604cbb29ae58e316da0b3611ce9d184f0fffd0e7667ea46eb1b04b79e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L22-L27"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 19,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L15-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c0cb4097ebbf2c99f534e9dc9dceb4c5e837a179847b8173cc4b24fd984c075e",
+        "slc_cd8c9cbd884d767239beba20ea16b552888b89b088ef8baf7ecdcf7c370e56a7"
+      ],
+      "text": "Patch application is currently line-based; an AST-based patching approach is still being explored, and agent-mode patching is described as rough around the edges."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f989390f23016d3adbf3de8a2799ba83d9138a9c74cdf28d00c413c83a841b0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L49-L49"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L41-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d77e26093d373c07990451cb770f0ed01c104b1229cc56cb03c89af619122a0",
+        "slc_5ecf51931f73c5bb5be2b0e68573ed76e4c839e6e8b4cf56cbc9ae316ad62c27"
+      ],
+      "text": "Installation is via 'go install github.com/piqoni/vogte@latest'; the TUI exits via Ctrl+C or typing q, quite, or exit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b17e5d9ba469efa89c3e27ce21ed9e50d8c3a4d6305961ad18a846e27f87c93",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L29-L31"
+        },
+        {
+          "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+          "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+          "line_end": 69,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "piqoni/vogte",
+          "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md#L63-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2650c35a81780e3b7c6c6e17f7a96565dabee42519e42943990e3730d78c53de",
+        "slc_e76f7108156dd2d9bd4e0638d708441771f0a30c5edc0f9d04b1a48cf24541c6"
+      ],
+      "text": "The -review flag appears to perform a local LLM review of uncommitted changes against a base branch (default main), optionally accepting a change description message."
+    }
+  ],
+  "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 81,
+        "path": "README.md",
+        "size": 4747
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 24,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_d164731c3d2b582bb57647b78538d091",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/piqoni/vogte/37e9ab501aa7f803799b298ec1da00a0f257819f/40c3abfc06915167/manifest.json",
+  "package_id": "pkg_44da9fdfda2debb5ad60da7db1700ecbcbceabfb7e806738312856e304771f8d",
+  "repo": "piqoni/vogte",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8cd50b6e544c2c58b2d9d9c87e665f6afadeeb27ef9aa2ee4372906b7b131bcd",
+  "snapshot_id": "40c3abfc06915167",
+  "sources": [
+    {
+      "commit": "37e9ab501aa7f803799b298ec1da00a0f257819f",
+      "git_sha": "65f5517f94834e250b3b1910b324212bdd58cf3f",
+      "lines": 81,
+      "path": "README.md",
+      "repository": "piqoni/vogte",
+      "sha256": "464f927d119efef9391c76d28533c2d743395b7a102bc317c57d732aac6c5218",
+      "source_id": "src_eef05b8e4d5851b887c4bc5c5748b2fb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/piqoni/vogte/blob/37e9ab501aa7f803799b298ec1da00a0f257819f/README.md"
+    }
+  ],
+  "summary": "Vogte is a Go-focused, LLM-powered terminal tool (TUI and CLI) that builds compressed AST-based repository context, applies patches in agent mode, and offers local PR review and context generation. Evidence is README-only, so most claims are documented rather than code-inspected.",
+  "superseded_claim_ids": []
+}

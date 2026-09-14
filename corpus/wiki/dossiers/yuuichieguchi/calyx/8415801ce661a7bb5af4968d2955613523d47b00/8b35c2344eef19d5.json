@@ -1,0 +1,585 @@
+{
+  "applied_operation_id": "op_5f14268433344185b85ef32569c76a3b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_515bd0b95a78a485af9831c2786c43ec469ce0d2fe948138d2e20b4ea4be9ca4",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_db5083f4bd6f22b5ebe2b23512932405cba04bdef755361e62ecd8b29cb98c74"
+      ],
+      "text": "Calyx is a native macOS terminal for running and supervising coding agents (Claude Code, Codex, OpenCode, Hermes, Grok, pi) in parallel, with an approval inbox, live status, persistent sessions, and inline diff review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ac6a5dfd3e6bad357a2ddc1415902add787b8fadb954c56eac1cbdc96ff8ae5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 86,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L78-L86"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 254,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L254-L254"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34878cc712fb25976a21fff7bf8aa8d2227bbc85ddd95656a4677467a537213a",
+        "slc_a466feebfea889b74f510ea6cf35b9c0f2c34856dca706fcc32228d4cb164c75"
+      ],
+      "text": "The terminal engine is libghostty (Ghostty v1.3.1) providing Metal GPU-accelerated rendering; the tech stack is Swift 6.2, AppKit, SwiftUI, and XcodeGen."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_64a38775f0715bcaf3d5eb04efb7b66ea0474a330a057e2c962b174bffdd3a45",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b4b69db07dd3e8c69fcf50628635075e8c297c5ee96aaa669487af608009123"
+      ],
+      "text": "Calyx exposes panes, commands, captured output, browser tabs, language servers, and peer agents to agents through MCP and a bundled CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0110bf258516e4d42e4af88354022f4d07f5a2ef858b8a0bc70135370788740b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L169-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c2aae506743966e5b2b25059e9feaf269b70990b9736088695ef65eae169e29"
+      ],
+      "text": "The AI Agent IPC MCP server offers tools register_peer, list_peers, send_message, broadcast, receive_messages, and get_peer_status; receive_messages deletes messages on delivery so each is delivered once."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd19ee519dca136680f34a22e6e25f2c8d49aae1a051ed1ffcae7e3afdf09775",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L38-L38"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L171-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9be740f7698de1493336e4418dabc1c70e34564d1117048f7e3031c45bab5646",
+        "slc_b8eb310c90580d92b68e9625a31c8bccb33849299923c080cb41c7b958752e6c"
+      ],
+      "text": "The approval inbox is opt-in via Settings; nothing is automatically approved unless the user separately opts in, and cockpit tools like pane_run and pane_send_keys are approval-gated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3cb31e0e293324857fa7297c12039d754bd3e17199ff051e3e05d71b7fdaf67",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L171-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b8eb310c90580d92b68e9625a31c8bccb33849299923c080cb41c7b958752e6c"
+      ],
+      "text": "Command text and output are redacted for known secret patterns (tokens, passwords, API keys, JWTs) before agents can read them, with pending redaction reported via output_pending."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6adac92bb100e80c0cecd74afdb9c4815726681bc2c0ffe49ed96aba91dceca",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L34-L34"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 58,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L52-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c00b3a0f0f0bfbd20583a9019132af284794d3f648fc962f43b68e044be1c92",
+        "slc_b848cb65b14675fe8bb018691704efaaee3f95d383aa3f459cddb390631219e8"
+      ],
+      "text": "An Agents Sidebar shows each connected agent as working, blocked, idle, or done, with unread badges, click-to-focus navigation, and expandable subagent rows for CLIs that report them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3707a80a926d79d111432cea4a0d548748f1f2479d2259cd61fe8eb2c37c1857",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L42-L42"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 66,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L62-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_add087b8b8e50a36c8977924f49d412cff234b50ef2ac705f395e304a9a6a076",
+        "slc_e0d5c39d3d06ec6a14c9ba614df86585f92c7918f82b1bcd5ca74ef3ac7756e0"
+      ],
+      "text": "A Git sidebar shows working changes, staging state, commit graph, branch visualization, and inline diffs per repository, including linked worktrees and submodules, with per-line diff comments submittable to agent panes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8375d983b76f6c5fa66d12525c2bda557e96bf1f37d1fd5d673c5bed26f0b949",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 74,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L70-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dd8b63cba36a25e0d2ee58a39ea3820f49533edd87f97b2783435f0204faed7a"
+      ],
+      "text": "Persistent sessions are opt-in daemon-backed terminals that survive app quit and crashes, with a Session Browser, recovery flow, optional on-disk history, and remote sessions via calyx-session on SSH hosts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e969e6673a9218637c2eeec15c521fcb1bc36ad1811c20c2ce86aa5452fcf244",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 215,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L215-L215"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 189,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L189-L189"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 91,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L90-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d6d6881e849397de3ae50a75d7e7ee3994856f806c420e9d100e6294dc84cab",
+        "slc_45e2e001dd6cf29c2161185f4959191b06776bbe47b0dc249d4721d210f582fc",
+        "slc_e58ee6aa6ac0bc7f5d46f37f2cbcd5f52d65e79fa2baca68f53113b2ef889088"
+      ],
+      "text": "Browser tabs are non-persistent WKWebViews limited to http/https with popups blocked, scriptable via 25 bundled 'calyx browser' commands; the browser server listens on localhost:41840."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_815345e43a540db8fac1b5438599769c0530bbc3084ac1b746c99d9930dcbfd6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 177,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L177-L177"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 185,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L185-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_201a3f27e290ea21988bda3f9a70eafbd853a7fd90ec44df6afefcc8b56acb4f",
+        "slc_efda77a84e37bb7c4a8f4a6de7afae79986d4663e18f2eff9fbdc8d0a13c7054"
+      ],
+      "text": "An LSP proxy MCP exposes lsp_hover, lsp_definition, lsp_references, lsp_rename, and lsp_diagnostics to agents, keeping servers running in the background and starting the right one per workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87f3d6bbdd32bfd42319db95dbd2c5a5051ed6a753d86fa84c4ad664cd103c37",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 252,
+          "line_start": 250,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L250-L252"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 248,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L248-L248"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f931a17d21bd983d84c052da8acec946e499793c1acca45ae56f92ab9d0ba31",
+        "slc_ff505d3cb65120338788612a99dc4525f4d2991efb236c2f04e3f82950c85f6a"
+      ],
+      "text": "Architecture: AppKit handles window/tab/focus management with SwiftUI rendering bridged via NSHostingView; all ghostty C API calls go through a GhosttyFFI enum and @MainActor is enforced on UI and model code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97fdb7978ff94349707562434b5b3406db85e507a49709c3e308fa05c16094e8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 263,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L262-L263"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7d1990ae88bb2435bd74d2ef7e1edd8fdddf7af8abb4c1ce7c33e53ce3362ff2"
+      ],
+      "text": "Cursor click-to-move may be offset on Japanese/full-width text because Ghostty translates clicks into arrow-key steps over terminal cells; Calyx also overrides certain Ghostty config keys for Glass UI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3906595df4649609478cdaea6a2e18c09a5e745a0193766b0b5a87a248e4ac89",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "a56c9af55c927bf286b211b94e579c199a7a1ed0",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CONTRIBUTING.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/CONTRIBUTING.md#L5-L5"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "a56c9af55c927bf286b211b94e579c199a7a1ed0",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CONTRIBUTING.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/CONTRIBUTING.md#L3-L3"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 258,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L258-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42b93f9242860b144034a92b3ffa2e78ea9ce7b52108d151c408306da9b5381e",
+        "slc_eb3eede799881f51221a7f97bec908fdcf6870164ca9f5d1140de639a1811857",
+        "slc_fa4872b6bcd1dd7a580ff4aa2861aff3156cf7f3784ea41889a55866781d885f"
+      ],
+      "text": "Repository development practice: external pull requests are not accepted and are closed automatically without review; bug reports and feature ideas go through GitHub Issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb467ffddfbafe29774fbd87ccb2c473f2145693f01bdc30fd6d5295159d5f89",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 224,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L221-L224"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 244,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L242-L244"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 236,
+          "line_start": 234,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L234-L236"
+        },
+        {
+          "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+          "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+          "line_end": 231,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "yuuichieguchi/calyx",
+          "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md#L230-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a229c09d0c981597a75f8c09b6cfc39c3fb0656ff2089f16357269cab2c55d7",
+        "slc_6da27c6235c4ea101902f846c832cc90638a6551f27736b66315433433d35fc3",
+        "slc_95cea5b8f5b52b32bed6e74aa52b8090fab8ea358f98e9a07e4779a1723b6f0d",
+        "slc_cfa63ff17b986799f9c72ab2390e0e9e9e2408dc388cfb7521dde3d570924dec"
+      ],
+      "text": "Repository development practice: building requires macOS 26+, Xcode 26+, Zig matching ghostty's build.zig.zon, and XcodeGen; clone with submodules, build the GhosttyKit xcframework with zig, then generate the Xcode project and build with xcodebuild."
+    }
+  ],
+  "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 271,
+        "path": "README.md",
+        "size": 17354
+      },
+      {
+        "lines": 5,
+        "path": "CONTRIBUTING.md",
+        "size": 372
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 930,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_c2754bbd62de5211a825c669e51fd2d8",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/yuuichieguchi/calyx/8415801ce661a7bb5af4968d2955613523d47b00/8b35c2344eef19d5/manifest.json",
+  "package_id": "pkg_401c6675b8b1d07042280b4409a901c2e2314c7560162a492f3e2b0acbfe0aaa",
+  "repo": "yuuichieguchi/calyx",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e57d1910ee87a9a96d311ac2480d065601eb8d8f06722ee088666b395d369cb2",
+  "snapshot_id": "8b35c2344eef19d5",
+  "sources": [
+    {
+      "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+      "git_sha": "a56c9af55c927bf286b211b94e579c199a7a1ed0",
+      "lines": 5,
+      "path": "CONTRIBUTING.md",
+      "repository": "yuuichieguchi/calyx",
+      "sha256": "92bdd9a5c21f29205482da50567297bcba45e0a1ab67b4d9412a34656945e4ac",
+      "source_id": "src_199fef0496e8582bae0d8f72068f7bb8",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/CONTRIBUTING.md"
+    },
+    {
+      "commit": "8415801ce661a7bb5af4968d2955613523d47b00",
+      "git_sha": "ecf7c9840125d82c9fc90e6c83bc84eb956694b7",
+      "lines": 271,
+      "path": "README.md",
+      "repository": "yuuichieguchi/calyx",
+      "sha256": "24b7c421f896d5538603ca752bea68614e46eea67f118069a0f25324c376f6ab",
+      "source_id": "src_1a5e028046345d249ae06958f7b1686b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/yuuichieguchi/Calyx/blob/8415801ce661a7bb5af4968d2955613523d47b00/README.md"
+    }
+  ],
+  "summary": "Calyx is a native macOS terminal app for running and supervising multiple coding agents in parallel, with an approval inbox, agent status sidebar, MCP-based agent IPC, LSP proxy, browser automation, and persistent sessions. The README documents product features, build steps, and a no-external-PRs contribution policy.",
+  "superseded_claim_ids": []
+}

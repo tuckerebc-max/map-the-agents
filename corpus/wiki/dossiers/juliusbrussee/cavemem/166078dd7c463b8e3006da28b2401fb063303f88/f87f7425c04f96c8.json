@@ -1,0 +1,629 @@
+{
+  "applied_operation_id": "op_600549f9d99043a29fff3532a2af3d54",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_709d3de502f98f815dd6192a06d792030c4c8233931a2f2d64d83755f34a14af",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 128,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L114-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d2bdc885efa3d38110b16d8dc5a9978328c9748d1372d756d29fbd5cfe5ad86d"
+      ],
+      "text": "The CLI offers commands including install/uninstall per IDE, status, config show/get/set/open, viewer, doctor, search, compress, reindex, export/import JSONL, and an stdio MCP server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_678ba0783d1b892060edc42a069e4f41b9b62d173e8bcbc803e80e3812eb98f6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 144,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L138-L144"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L136-L136"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "3eff6720fb063be425651e8c3f68754071f23459",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/mcp.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/mcp.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_058fd12dffa0354c37f691fbc413e3da80dbe9d782fe7fbd69676f9c678485c1",
+        "slc_8f5b4754575639dec7b69d6fa3bb48e542ed852063bc27e3111003d75f3e7d45",
+        "slc_90c9d1464502f7c834975f6de5fc12bc295c5dbaa32131ba860e1b881d803f46"
+      ],
+      "text": "The MCP server exposes search, timeline, get_observations, and list_sessions, plus an opt-in enrich tool; search and timeline return compact results while get_observations fetches full bodies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79544db9a6dd960cbb0764a47337b6d8b58bb0b46c5b87effbfbcfc206148890",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "6e8950fd071b2b0a9aa7759200a2cd6f87279afb",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/compression.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/compression.md#L5-L7"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "6e8950fd071b2b0a9aa7759200a2cd6f87279afb",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/compression.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/compression.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1343f83ae7994fca9f5a68ecb90e57b63f2d97201c71c9ade2ae497f6b3a3d30",
+        "slc_c95a89e47314104245275b49bd33c1f8e4f09d71362e96dfb883e95f0d948e07"
+      ],
+      "text": "Compression is deterministic and offline, never invoking a model; technical tokens (code, URLs, paths, commands, versions, dates, numbers, identifiers) are preserved byte-for-byte and prose is lossy only on filler/hedging words."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_480027dceffab8387cd4e6f137c4e4000d2e01c942ca21d43dfd440fac4d33fb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "3eff6720fb063be425651e8c3f68754071f23459",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "docs/mcp.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/mcp.md#L26-L26"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 178,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L165-L178"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 35,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L28-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a63e8fe2d78b0752060bea94781307e4df2637fb5df06cabc4b222b818c4384",
+        "slc_171ca090bd906fabd72abe74ed88653143d40add1be8dd964f97b18f275554c0",
+        "slc_a93517ee3cbdf30121631792b0e6d55b1ed859a90ff631d9a78a0cb81df9942d"
+      ],
+      "text": "Search is hybrid: SQLite FTS5 BM25 keyword matching blended with a local vector index, weighted by the tunable search.alpha setting (default 0.5)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a40fa0208bb18e5513f35db0e9746a1e7c454a6c705c37c1d65d401f8d9120c",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "292d9d67ffbc2eb1699ce4f2baa8318d4ad5f8eb",
+          "line_end": 26,
+          "line_start": 21,
+          "path": "docs/architecture.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/architecture.md#L21-L26"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L49-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ed3b5a6520b9e1485f39b3e164237781e791d240dd3fd586dfc50ab418155ba",
+        "slc_f327b5976febad996c8d3bc9606688633b715d9f1cada4ab830ec9ff3725d5bb"
+      ],
+      "text": "Memory persists in a local SQLite database with FTS5 updated via triggers; embeddings are computed out-of-band by a background worker that auto-spawns on the first hook and self-exits when idle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2dc40f3f1621f08f7f134df1cf8eb2329213d80b85017dd08d9224d6d3095f15",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 180,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L180-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8db3172a59258e10cfc4e8d6684be93efca77eba91b33ac691d44cedd805b1a8"
+      ],
+      "text": "The viewer worker binds to 127.0.0.1 only, checks Host/Origin headers, and requires a local bearer token (mode 0600) on /api/* endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88e327d845e8cf0a9d80c8b1987b52295573e0bbd7f024ed555958ff70fda8a3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "3eff6720fb063be425651e8c3f68754071f23459",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "docs/mcp.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/mcp.md#L84-L84"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L146-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cbf71955eb16732d12c4d12f20310a262c158d6d9de5d27f7d556d86e2071b7",
+        "slc_80b4c5b1959519a8cdbd1e75066890091ca7d5a402cbbcb5d239486280619a23"
+      ],
+      "text": "The enrich tool is off by default and unregistered when disabled, so no network call occurs; when enabled it enforces SSRF protections, rejecting private, loopback, link-local, and unique-local targets including obfuscated numeric forms."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5876598e81e58c868cf404f2baa200a4126ea147b0101e82383e4a359dcaa183",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 65,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L55-L65"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41b15b978b3bcdcb84b4b3d19986bd1032d31d4871df45f38b7383e975bb225e",
+        "slc_8ac13039a4f5a2c4c9d0fa4b0958127189f8fc8e7ee24b86158aea83babdb763"
+      ],
+      "text": "Per-IDE installers wire hooks and MCP: Claude Code, OpenCode, Codex, Copilot, and Augment capture observations, while Cursor, Gemini CLI, Antigravity, and IBM Bob are query-only over memory captured elsewhere."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_351188e71d23d66b0f6244052fa9c8a7e615a26f9a71c7801bdce4688162ab51",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 47,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L41-L47"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 178,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L165-L178"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L9-L9"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "ce86160224acf161319f1d8bee30d40589e22566",
+          "line_end": 21,
+          "line_start": 13,
+          "path": "CLAUDE.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/CLAUDE.md#L13-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b5b1ca88238fea3cb8fca81be6909268e41ed21f0a3ea11f52c638adbaf3501",
+        "slc_171ca090bd906fabd72abe74ed88653143d40add1be8dd964f97b18f275554c0",
+        "slc_4e2d0629668d0a84d985808d28a389c4b38de011f6cc2842f9ed456894bc344d",
+        "slc_8477409ea9c173e81d5f8dacf03db450e1ee92a7f06df8b67169702e360e992e"
+      ],
+      "text": "The npm package cavemem installs globally via npm; the default embedding provider is local (Transformers.js per CLAUDE.md), with ollama and openai as opt-in remote providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18acbaf207d45397b5f47addc0e5747760c7e681967331a2aa39d8d00550abb7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md#L15-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2a18527d1bd7e038a9d71480eb4ad6449812305c1ff41a6a59eb9cd2e79d7bb"
+      ],
+      "text": "The project is frozen as of August 2026: no new features or fixes are expected, and development continues in the related caveman repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a2353bea03c8280a40b04662eb0a4d0823fb74a0e0d1cda4460d532d3c3faff",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "ce86160224acf161319f1d8bee30d40589e22566",
+          "line_end": 60,
+          "line_start": 52,
+          "path": "CLAUDE.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/CLAUDE.md#L52-L60"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "a83e52910432f3342d3aca10fffd51f0b1154f2a",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "docs/development.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/development.md#L42-L42"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "ce86160224acf161319f1d8bee30d40589e22566",
+          "line_end": 90,
+          "line_start": 89,
+          "path": "CLAUDE.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/CLAUDE.md#L89-L90"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "a83e52910432f3342d3aca10fffd51f0b1154f2a",
+          "line_end": 40,
+          "line_start": 35,
+          "path": "docs/development.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/development.md#L35-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32ab2f805438afdca447e9cb2c3be51c8e1c1b62d5e2a929411efee396201da4",
+        "slc_952fc91afd58a82219b722f09cfb5fa8858b666d4107b390c656795d3d498e6d",
+        "slc_be31b84ccb4ef9adcbbcfd9774c2cad43fadea627dd34423a4f637ab99d1bafd",
+        "slc_f21a8b9b63221b8fb9ac58e123141f8cb15473695b3ffe18b557aec33dcac4e9"
+      ],
+      "text": "Repository development practice: contributors must pass four gates (pnpm typecheck, lint, test, build) before merging, add changesets for package changes, use Conventional Commits, and get one review on PRs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c12ac598840de1d240853f7894df7c1af5156a02b57b7dc602dc169e4ad271c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "ce86160224acf161319f1d8bee30d40589e22566",
+          "line_end": 69,
+          "line_start": 66,
+          "path": "CLAUDE.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/CLAUDE.md#L66-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2a3ce1e3ed15f196a67b7382de9ec7de1297f397203d4b5a3b298fa8da4eebf"
+      ],
+      "text": "Repository development practice: an end-to-end publish script (scripts/e2e-publish.sh) must pass in CI before changeset publish, driving real hook events, FTS search, and the MCP server in an isolated install prefix."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bcab83a0d9115abec8ffdc6c784f16baca14f9faa4ad507429688007dac9c093",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "6e8950fd071b2b0a9aa7759200a2cd6f87279afb",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "docs/compression.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/compression.md#L50-L52"
+        },
+        {
+          "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+          "git_sha": "ce86160224acf161319f1d8bee30d40589e22566",
+          "line_end": 48,
+          "line_start": 33,
+          "path": "CLAUDE.md",
+          "repository": "juliusbrussee/cavemem",
+          "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/CLAUDE.md#L33-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31f48ea87868ff933d071b6f4f59bbd1891064bfef34537620d9ee8396f37148",
+        "slc_45da64b788a0a76bbf4700e4b66521849e50a5ca0b466414a7924f603cda2a1d"
+      ],
+      "text": "An evals/ harness measures compression performance: fixtures verify determinism and technical-token round-trip, and the benchmark corpus requires at least 30% average token reduction (targets of 40% at full and 55% at ultra intensity)."
+    }
+  ],
+  "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 203,
+        "path": "README.md",
+        "size": 13338
+      },
+      {
+        "lines": 38,
+        "path": "docs/architecture.md",
+        "size": 1258
+      },
+      {
+        "lines": 59,
+        "path": "docs/compression.md",
+        "size": 2504
+      },
+      {
+        "lines": 50,
+        "path": "docs/development.md",
+        "size": 701
+      },
+      {
+        "lines": 88,
+        "path": "docs/mcp.md",
+        "size": 3550
+      },
+      {
+        "lines": 94,
+        "path": "CLAUDE.md",
+        "size": 8711
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 199
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1425
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 179,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_0cb0a466330c5289890b975e3416d494",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/juliusbrussee/cavemem/166078dd7c463b8e3006da28b2401fb063303f88/f87f7425c04f96c8/manifest.json",
+  "package_id": "pkg_60d15f9a246c5a726016cf03c2cdfa31e4d138381cebfbc0a818f0ef825bcdb9",
+  "repo": "juliusbrussee/cavemem",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5806cc1fe292317710e39865c010a69b4421fcb7c7f71c34bc96fcd9df8774fa",
+  "snapshot_id": "f87f7425c04f96c8",
+  "sources": [
+    {
+      "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+      "git_sha": "ce86160224acf161319f1d8bee30d40589e22566",
+      "lines": 94,
+      "path": "CLAUDE.md",
+      "repository": "juliusbrussee/cavemem",
+      "sha256": "eb085fe4b66d543cfa40d7e351997035be5659fdf6bd2a628d1c5ca9cc71a09b",
+      "source_id": "src_e80b8b4502255bf190c104fc44e271dd",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/CLAUDE.md"
+    },
+    {
+      "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+      "git_sha": "08b6b9f96f73657eef0cf9f4d0bb82c9244a9c3b",
+      "lines": 203,
+      "path": "README.md",
+      "repository": "juliusbrussee/cavemem",
+      "sha256": "2bf4b960473c10f2f5e57df9e7b30f05c1e8ea11e1322fd60b0c2d9e4362f86a",
+      "source_id": "src_963027d9569757669775d414e46e68a8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/README.md"
+    },
+    {
+      "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+      "git_sha": "292d9d67ffbc2eb1699ce4f2baa8318d4ad5f8eb",
+      "lines": 38,
+      "path": "docs/architecture.md",
+      "repository": "juliusbrussee/cavemem",
+      "sha256": "556543b88164a35b98b13bbc0a30f7195fa03ef39e5b7aaa2f27840b4823422c",
+      "source_id": "src_b8ec8cca1475590ea11ce2aa10062ce8",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/architecture.md"
+    },
+    {
+      "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+      "git_sha": "6e8950fd071b2b0a9aa7759200a2cd6f87279afb",
+      "lines": 59,
+      "path": "docs/compression.md",
+      "repository": "juliusbrussee/cavemem",
+      "sha256": "dd97d3089be511e70b88b9fc6111369a194b6851895a80cd0062f786508a6892",
+      "source_id": "src_a50c3bd1b6a353988963cf933ebd8af6",
+      "stored": "compression.md-2b145c75d69e.md",
+      "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/compression.md"
+    },
+    {
+      "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+      "git_sha": "a83e52910432f3342d3aca10fffd51f0b1154f2a",
+      "lines": 50,
+      "path": "docs/development.md",
+      "repository": "juliusbrussee/cavemem",
+      "sha256": "012fa180c3b12682f5d0e0a890c38b65078e573367f85334734d96c54ea745f4",
+      "source_id": "src_270d18f6a49a59e59b16f14e2d9bf80c",
+      "stored": "development.md-97db29a79153.md",
+      "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/development.md"
+    },
+    {
+      "commit": "166078dd7c463b8e3006da28b2401fb063303f88",
+      "git_sha": "3eff6720fb063be425651e8c3f68754071f23459",
+      "lines": 88,
+      "path": "docs/mcp.md",
+      "repository": "juliusbrussee/cavemem",
+      "sha256": "cef0c9a6e321c6fec1ebc19e4466fe44a7a1b2059294e33588eb8dadcb1cdf0e",
+      "source_id": "src_ccfbe069f86c50da825cf1a154a54a0d",
+      "stored": "mcp.md-540fac6ea007.md",
+      "url": "https://github.com/JuliusBrussee/cavemem/blob/166078dd7c463b8e3006da28b2401fb063303f88/docs/mcp.md"
+    }
+  ],
+  "summary": "The CLI offers commands including install/uninstall per IDE, status, config show/get/set/open, viewer, doctor, search, compress, reindex, export/import JSONL, and an stdio MCP server. The MCP server exposes search, timeline, get_observations, and list_sessions, plus an opt-in enrich tool; search and timeline return compact results while get_observations fetches full bodies.",
+  "superseded_claim_ids": []
+}

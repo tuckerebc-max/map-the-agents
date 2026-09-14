@@ -1,0 +1,643 @@
+{
+  "applied_operation_id": "op_9f7260b1e8e047e2987f573dab8cf630",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7384455ef5657337aee8f18de3759367f7cdbe54b5f004d55836bbb51d187c4",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 110,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L107-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25ff90e0d6492ef5f68c8b2a3f6029facc3bab6490ba68e651db82fe33db33af"
+      ],
+      "text": "The product is a desktop app that wraps real terminal-agent CLIs as agents, wires them into a hive mind, and puts a clone agent (Michael) in charge of coordination."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_48f3414a230ea43a10887f6e6861efe1e4ff8fdc5440503271c72e6c675b624e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L103-L103"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L21-L25"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 101,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L87-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c654abb4d044b742e65a8b558d5f060addfafb7a1c2dbe7bc1e423ed8085117",
+        "slc_56d8108f38c2c40c02ef0bdcf39e71566db22c44234a80e1104d50fd47b7d26d",
+        "slc_cbd82dd5373722770ef39989252643868d872947d1c5b41491054088fa9d1fb1"
+      ],
+      "text": "Supported agent CLIs include Claude Code, Codex, Grok, Kimi, Gemini CLI, Antigravity, Qwen, OpenCode, Crush, pi.dev, Copilot CLI, and Cursor, plus custom commands and local models via Ollama, LM Studio, or vLLM."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fed551d34d91f84d971dd2a7474833e2a48bc6a5fa7203a9e8cd9a5daed43c3e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 119,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L112-L119"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L27-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_104d145b1c052f0de5612bbcc7a7cc0f4c869a0a86bb7436230d5e002be54510",
+        "slc_5e4ddeec59579dec5f0764e4f6f38a49a604f4310d522a79ecccda761159f554"
+      ],
+      "text": "The app is built with Electron, React, TypeScript, Pixi.js, xterm.js, and node-pty; each agent session runs as a real process in a pseudo-terminal rendered with xterm.js."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_94e66f6e6fbbcc586ddf284bd30d34f4d63364bfb126e87fff2ad7c1969488bb",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 119,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L112-L119"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 149,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L140-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_104d145b1c052f0de5612bbcc7a7cc0f4c869a0a86bb7436230d5e002be54510",
+        "slc_a6509e860c0d826e86f57c878515d10c0c8470704315bfefc8e47c9ab4901576"
+      ],
+      "text": "A GOD agent acts as orchestrator: it reads requests, resolves routine ones autonomously, routes messages between agent inboxes, and escalates critical items (spend, destructive ops, scope changes) to a human approvals queue."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c006d9232cba52d1aab4fd8e674d1604ad01321cb285cdcd3dc55e167d210632",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 149,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L140-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a6509e860c0d826e86f57c878515d10c0c8470704315bfefc8e47c9ab4901576"
+      ],
+      "text": "The hive is a local git repo of plain files: agents write to their own outbox, a router delivers to recipients' inboxes, and only the harness touches git (single-committer design to avoid index.lock corruption)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4f2c143576f72c17b29e346fd4affe3de9c10d38f31e299eb333f8a0697fd79",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 119,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L112-L119"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 325,
+          "line_start": 312,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L312-L325"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 190,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L189-L190"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_104d145b1c052f0de5612bbcc7a7cc0f4c869a0a86bb7436230d5e002be54510",
+        "slc_a8d79b66a248e900abc8b1a48fcb87d67b55d40bc796a78a7f8e1373d7d528f2",
+        "slc_dd2b39e93ea0d0378169050346f6744b3be39b57c303c1ccfe6663a0f760d75c"
+      ],
+      "text": "Each agent keeps markdown memory mined into a shared searchable memory palace with a semantic recall index, persisting across sessions; the semantic index is optional and markdown memory works without it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0ff5ac873f6207e95b546debce6147a2628a3f10d622477772e2d4c2f22ce7f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 252,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L249-L252"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 203,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L202-L203"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b4df65b5edc76785bd68e6375095d7bb4ac213e1352aef07cc7aa6c980e8eb8",
+        "slc_dc29586ff66200ceab3649806b1691cd89d007bc3a1bc664338e9c6c3992a6dd"
+      ],
+      "text": "Per-agent autonomy settings control how far agents act alone; spend, scope, and destructive operations escalate to the user, and a circuit breaker steers, constrains, then stops looping or runaway agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1d0bd3ef3c5bea3aa82d4ec6a60e604b755d58608782991a4227bf843176e33",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 354,
+          "line_start": 352,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L352-L354"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e177968ebbaad5295a685283b46e85acb140e7545431edaa0a53e9acb4234fc1"
+      ],
+      "text": "The architecture has two data planes — a terminal plane owning PTYs, filesystem and git, and an event plane running the hive, hook server, and router — with the renderer accessing both only through a typed bridge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_acb94360ef1f441b69bdbf73cde7c4ebbf6115edd3baa81bf45f616540ba7c18",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 257,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L254-L257"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6c307539a2d79269d4edd07c9261fe80518b39c9591c5af05fd0dec10616c97"
+      ],
+      "text": "The UI includes a Command Center with kanban tasks, scheduled missions, live fleet monitoring, memory search, a Skills catalog of 227 installable skills, and a built-in Monaco IDE with git rails; all fs/git access is brokered through main."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68821c5d4852b33fa4210e587093a776a5c9101453878e18dd635fc0b9b51fe2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 325,
+          "line_start": 312,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L312-L325"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a8d79b66a248e900abc8b1a48fcb87d67b55d40bc796a78a7f8e1373d7d528f2"
+      ],
+      "text": "Running from source requires Node.js 18+, npm, a C/C++ toolchain for node-pty's native addon, and at least one supported agent CLI on PATH; missing CLIs can self-heal via an in-terminal installer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14571f2290ebc55febcdc46a4bb40def3470ac79f66868295bcfdf15fabd0cea",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "4407152f407536d8dc7863b23657cb8fc6c4a24f",
+          "line_end": 98,
+          "line_start": 95,
+          "path": "CONTRIBUTING.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/CONTRIBUTING.md#L95-L98"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 397,
+          "line_start": 392,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L392-L397"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "4407152f407536d8dc7863b23657cb8fc6c4a24f",
+          "line_end": 77,
+          "line_start": 74,
+          "path": "CONTRIBUTING.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/CONTRIBUTING.md#L74-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5fd2b3097ee41f9eb8fc160c97540b7346ca0a3cca5b2c5636be1db248dddb7d",
+        "slc_79b348e4d0d094d1f32396513b1691e5b944584eaee5c2e3b10e59abde6ed065",
+        "slc_9a0792143de11ea68d52dc6ad03e0a80a0665299ac92dd45babe32e629fa6408"
+      ],
+      "text": "Repository development practice: every pull request must include before/after evidence under the PR template's '### Before' and '### After' headings, enforced by an automated 'PR evidence' check; PRs failing it do not merge, with only a maintainer-applied no-visual-change label as exemption."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65cf00780d4f07718226eae1a26da217219985d373045518e0de39091763f1bf",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "4407152f407536d8dc7863b23657cb8fc6c4a24f",
+          "line_end": 121,
+          "line_start": 102,
+          "path": "CONTRIBUTING.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/CONTRIBUTING.md#L102-L121"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+          "line_end": 390,
+          "line_start": 387,
+          "path": "README.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md#L387-L390"
+        },
+        {
+          "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+          "git_sha": "4407152f407536d8dc7863b23657cb8fc6c4a24f",
+          "line_end": 33,
+          "line_start": 17,
+          "path": "CONTRIBUTING.md",
+          "repository": "chaitanyagiri/munder-difflin",
+          "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/CONTRIBUTING.md#L17-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_104db1e21f515a662a6a730bb2e0e18def16eb8bc0fcc6a070a67dac61597be3",
+        "slc_424d549fcd93e009ae418d244b5fc857e4b2e21c1983a717f1c17eabc5fd9173",
+        "slc_83427b22fd8aaf4cadb6494a801d7e45e366b14ce52615aefc6c77462f91ea28"
+      ],
+      "text": "Repository development practice: contributors run npm install && npm run dev, keep npm run typecheck green, run npm run test:focused, confirm npm run build works, derive new UI from DESIGN.md tokens, and keep changes scoped to one improvement per PR."
+    }
+  ],
+  "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 444,
+        "path": "README.md",
+        "size": 26323
+      },
+      {
+        "lines": 85,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 5480
+      },
+      {
+        "lines": 198,
+        "path": "CONTRIBUTING.md",
+        "size": 9913
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 121605
+      },
+      {
+        "path": "CONTRIBUTORS.md",
+        "reason": "file-budget",
+        "size": 10646
+      },
+      {
+        "path": "DESIGN.md",
+        "reason": "file-budget",
+        "size": 26449
+      },
+      {
+        "path": "HIVE.md",
+        "reason": "file-budget",
+        "size": 11478
+      },
+      {
+        "path": "MEMORY_GRAPH_SPEC.md",
+        "reason": "file-budget",
+        "size": 15739
+      },
+      {
+        "path": "RELEASE-CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 5082
+      },
+      {
+        "path": "RELEASE.md",
+        "reason": "file-budget",
+        "size": 25091
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1408
+      },
+      {
+        "path": "SPEC.md",
+        "reason": "file-budget",
+        "size": 16479
+      },
+      {
+        "path": "TELEMETRY.md",
+        "reason": "file-budget",
+        "size": 6527
+      },
+      {
+        "path": "docs/ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 6214
+      },
+      {
+        "path": "docs/DESIGN.md",
+        "reason": "file-budget",
+        "size": 14517
+      },
+      {
+        "path": "docs/design/knowledge-graph.md",
+        "reason": "file-budget",
+        "size": 16525
+      },
+      {
+        "path": "docs/drops/v0.4.5-release.md",
+        "reason": "file-budget",
+        "size": 18756
+      },
+      {
+        "path": "docs/hires/README.md",
+        "reason": "file-budget",
+        "size": 2873
+      },
+      {
+        "path": "docs/hires/spec/HIRE_SPEC.md",
+        "reason": "file-budget",
+        "size": 4449
+      },
+      {
+        "path": "docs/llms-full.txt",
+        "reason": "file-budget",
+        "size": 5984
+      },
+      {
+        "path": "docs/llms.txt",
+        "reason": "file-budget",
+        "size": 3338
+      },
+      {
+        "path": "docs/media/README.md",
+        "reason": "file-budget",
+        "size": 1159
+      },
+      {
+        "path": "docs/media/demo/README.md",
+        "reason": "file-budget",
+        "size": 1889
+      },
+      {
+        "path": "docs/message-queue.md",
+        "reason": "file-budget",
+        "size": 7827
+      },
+      {
+        "path": "docs/pr-evidence/README.md",
+        "reason": "file-budget",
+        "size": 963
+      },
+      {
+        "path": "docs/release-drops.md",
+        "reason": "file-budget",
+        "size": 3584
+      },
+      {
+        "path": "docs/research/v0.3.4-implementation-plan.md",
+        "reason": "file-budget",
+        "size": 6042
+      },
+      {
+        "path": "docs/research/v0.3.5-feature-research.md",
+        "reason": "file-budget",
+        "size": 16354
+      },
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 376
+      }
+    ],
+    "omitted_count": 26,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1977,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 29,
+      "complete": false,
+      "omitted": 26,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_efd6b37f932953a9a9bdc3949598333d",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/chaitanyagiri/munder-difflin/417d8decf08c4e4da484a5c3c35aa6e8925e5989/ba331b94f28a7410/manifest.json",
+  "package_id": "pkg_45ee960232bb76c4f3550381e55f567ada7804b383ac61990bb3e25189121ce8",
+  "repo": "chaitanyagiri/munder-difflin",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "baae83d68d5b0d8dca3e5eba0ae29e84721dad164ef9ed58cbbac0ca40a7c9db",
+  "snapshot_id": "ba331b94f28a7410",
+  "sources": [
+    {
+      "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+      "git_sha": "903573714ea944eed0edd017911566f0e9b156b6",
+      "lines": 85,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "chaitanyagiri/munder-difflin",
+      "sha256": "977d781349351fd7c1f076e4c7dc7de2a05b40e12c773542c3815dd4ce7f37ba",
+      "source_id": "src_e5f1ccad7edf5ce2b8269ecd33548b29",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+      "git_sha": "4407152f407536d8dc7863b23657cb8fc6c4a24f",
+      "lines": 198,
+      "path": "CONTRIBUTING.md",
+      "repository": "chaitanyagiri/munder-difflin",
+      "sha256": "d62619edf21e4277f482cf3cca14e61f5a1bccb13375456ef4613859cf51f68c",
+      "source_id": "src_e51629529cdc5475a1629192aeef18ed",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/CONTRIBUTING.md"
+    },
+    {
+      "commit": "417d8decf08c4e4da484a5c3c35aa6e8925e5989",
+      "git_sha": "a717a50dbfb0172136e664b6284587d647111b72",
+      "lines": 444,
+      "path": "README.md",
+      "repository": "chaitanyagiri/munder-difflin",
+      "sha256": "f2db4ebd0f287f8eaf10662dc0b16f7f88f7b84d3509636037f673b270e116ff",
+      "source_id": "src_acb354116db656d79018bb0a218f23d6",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/chaitanyagiri/munder-difflin/blob/417d8decf08c4e4da484a5c3c35aa6e8925e5989/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The product is a desktop app that wraps real terminal-agent CLIs as agents, wires them into a hive mind, and puts a clone agent (Michael) in charge of coordination. Supported agent CLIs include Claude Code, Codex, Grok, Kimi, Gemini CLI, Antigravity, Qwen, OpenCode, Crush, pi.dev, Copilot CLI, and Cursor, plus custom commands and local models via Ollama, LM Studio, or vLLM.",
+  "superseded_claim_ids": []
+}

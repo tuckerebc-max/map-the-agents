@@ -1,0 +1,740 @@
+{
+  "applied_operation_id": "op_ea48b5e3effc4110bf0d82e07a9ead1f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_353d9a7d81fda036d67aa24bbca27f16df3d8c815e80f383cdcc589a5cb11f7e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c9dd785e997c57712ecacb01de615e499217ec0c797b851aa4501c026a42c30c"
+      ],
+      "text": "PilotDeck is an open-source agent operating system organized around a 'WorkSpace' concept, jointly developed by THUNLP, ModelBest, OpenBMB, and AI9Stars, targeting general-purpose multi-task scenarios."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_330c7d586383df4b4d3f15f05bb7ed63bc959977788cd8f00361dc0437651d4a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L63-L63"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L53-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23dbc364823e508feb68a01c7cdda73798b4d05a7e718639962a0d185b2134b5",
+        "slc_c60912cbfe53b8a215d6b05194776c66f33af20f9eeb0c8b5ad5268cfff719b6"
+      ],
+      "text": "The WorkSpace is the fundamental isolation unit: each project gets its own file system, memory store, and skill set, so parallel work does not interfere and retrieval stays scoped."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80c3f6bbe92b22ca892cc8aa682d73d0d7e22c2e5333ed8efdc9fc95a2b26f91",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 215,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L180-L215"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L74-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5714b968c6fc608c2c4e97983a4333f81aa798491c2d748024d36ed7b187b199",
+        "slc_945b5559f2211757e856ce789fb9be45747d7a0029d0118a4688fd05d18c6be4"
+      ],
+      "text": "Memory is white-box and traceable: generation, extraction, storage, and retrieval are visible, entries can be edited or deleted, and a Dream Mode consolidates memory in idle windows with one-click rollback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fca21040a10f86abb1ad201431e9a5425c52d01470b0fb53b7b7516b4e47214",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b4ae95c421188c3cc8a3a830112998aa17d3c979c3fe2399b260e6153915d76"
+      ],
+      "text": "Smart Routing auto-detects task difficulty and sends complex calls to flagship models while simple tasks go to lighter sub-agent models, aiming to reduce token cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_990900e6c75a742ff4b2374cdf41f966989cdd96f3cedc57301a713e5a858d37",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L98-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e42e29b6b5df186d6d478e12aec53651afb7674bf9f83f82f1ab52042248f7ed"
+      ],
+      "text": "The system supports always-on background execution: after the user signs off, the agent continues discovering tasks, running long-horizon monitors, and writing deliverables as local files with a summary report."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1514bca954507da6077cc47dfe99e0c4746f3602a85cbf7aa8e46ad417177ecf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L53-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c60912cbfe53b8a215d6b05194776c66f33af20f9eeb0c8b5ad5268cfff719b6"
+      ],
+      "text": "The system natively supports the Model Context Protocol (MCP) and is described as behaving consistently across Web, CLI, and IM front-ends."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c49998f58098f61fcbb321b230105bd82a5b7f69bed7607b0bd060939eff54eb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 221,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L221-L221"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 318,
+          "line_start": 315,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L315-L318"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d923e866952d033c65aca76cf3ce75494439248791f3322ab8257fe0033dcce",
+        "slc_1ae6ece43fc8bd98f3e69859d887494d07b23a91160573332d511ee3ffc0bd70"
+      ],
+      "text": "PilotDeck ships a Web UI with WorkSpace management, white-box memory editing, and visualization of multi-agent collaboration; the 'pilotdeck' command starts the server at http://localhost:3001."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6524358f8ea020f90c44269c575966149d3434d89aee58b1e6133b3ae65c0c51",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 404,
+          "line_start": 403,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L403-L404"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 406,
+          "line_start": 406,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L406-L406"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae37a06a2cf6b098837d62c366e43c33a96245f9c924520147f91dbd6dc91753",
+        "slc_b4df8752c97ac800265ed3f0d6f72e723148b123227e3a795ce210cccd59c48e"
+      ],
+      "text": "Configuration is read from ~/.pilotdeck/pilotdeck.yaml; if the file is missing, the Web UI starts without the Gateway, and saving a valid provider and key writes the config and starts the Gateway automatically."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29121366b984960178770f2b86797f3182694daa76db2f8371223a4b1998b4fa",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 335,
+          "line_start": 335,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L335-L335"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 303,
+          "line_start": 303,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L303-L303"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 376,
+          "line_start": 376,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L376-L376"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_318db432a992f199b906e5d228af5e3de2e3cd0039372018fc60ecfc857827a7",
+        "slc_616b8a95e79a446d78a5e00b78a2dd7155f2236f6aa488b823cb1b94831ea777",
+        "slc_c5b144fd205d719a0b8ff4f83d47f3173840dfa5a55b74dc4d8dee6c35d516d6"
+      ],
+      "text": "The installer requires Node.js 22.13+ and below v23 for the built-in SQLite runtime, and the Windows installer checks node:sqlite support and uses prebuilt native packages such as node-pty, better-sqlite3, bcrypt, and sharp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f841e2cca6472ab1ed2a2f8332dcb4a371dc86a91bb4e88bd3249d259d920201",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 437,
+          "line_start": 436,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L436-L437"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 404,
+          "line_start": 403,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L403-L404"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d4e82c405674b0482afe5bc8ad58ec7b9d06226ab44f41fb9a8a9d65f932a07",
+        "slc_ae37a06a2cf6b098837d62c366e43c33a96245f9c924520147f91dbd6dc91753"
+      ],
+      "text": "Supported model provider protocols include OpenAI, Anthropic, native Google Gemini, DeepSeek, Qwen, Kimi, MiniMax, and other OpenAI-compatible endpoints, including local Ollama without an API key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dffb020f6f5d6e1f8ada354fc07232594384f67d49a0e9626e78b0713830f1bf",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 479,
+          "line_start": 479,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L479-L479"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 484,
+          "line_start": 481,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L481-L484"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_986fb4fc6f34586dd6e9a8aae7f1c301f580c7dd1805747f6407c0e67a24f5d8",
+        "slc_c2c6a863e6e76d7359a126540810b8c9f08f143b910422acfe95faa82f491ef5"
+      ],
+      "text": "An open plugin architecture separates the open-source core from plugin customization, supporting MCP servers, custom tools and skills, lifecycle hooks such as PreToolUse and UserPromptSubmit, and pluggable memory store providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_46f587a7b683a4f1df69d9c6499f7610eaf58734ad6090d611497fbaec330ea4",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L148-L148"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 174,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L150-L174"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L114-L114"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 144,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L116-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2aaab013d800eb79d4d7f0e522c7dc04f8e4200b05617b9cea97f92074ec50c3",
+        "slc_71e74652fcf525aa5b5fee7f3a1e1c893940101e64c285e8564259964cd55a75",
+        "slc_97c5b3d5b2ce5f68ea0fa34b5e91764afd252a2d78938a802f1ec5549ebabc14",
+        "slc_f616445e7c56276c39c9c299dccfce1f891054ac60401448b2caecdba24b550d"
+      ],
+      "text": "The README reports benchmarks: on 7 complex tasks, a Sonnet 4.6 main plus MiniMax-M2.7 sub setup scored 70.6 at $3.15 versus 69.1 at $18.36 for a Sonnet 4.6 single agent, and Smart Routing cut a social-media workload's cost from $12.58 to $2.83."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f1b91cc92b93d26e096484baf5445f4dc5bd6b1aebf80fb42557d110037cd1a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 492,
+          "line_start": 492,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L492-L492"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 499,
+          "line_start": 498,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L498-L499"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ab0990d87d393695e30dcd10231ce4e0d321619c7a4bc4087014c4fa38e506e3",
+        "slc_d386010fb25315120acc5024c1683499a047e5d219bc2eb18b9a9eaccec456f8"
+      ],
+      "text": "Repository development practice: contributions follow a fork, feature branch, and pull-request workflow, and bugs or feature requests go through GitHub Issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f1d60229243aa44a3a735bef6e286a2059571f7dd5c510c5a9e8bf18861b637",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 388,
+          "line_start": 388,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L388-L388"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 399,
+          "line_start": 399,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L399-L399"
+        },
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 397,
+          "line_start": 394,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L394-L397"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_437061b9369eee3b97fbf8994242d7992cd54ac56eeb74a680c1ded11c0dc6a1",
+        "slc_7ed2728f0eb51637d34156d99e100c0e0adbdfadfd71eb5472429405199b1d1e",
+        "slc_881be3a36093e8773405db18304a114b1ea54fb6b93d907e58747f6fdbeb106b"
+      ],
+      "text": "Repository development practice: source installs use corepack pnpm with a committed pnpm-lock.yaml and workspace filters, and Git LFS demo media is skipped by default for a lightweight clone."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f68da8f92fe9fcafcc131e07be048059a7e17c7092b7a4adbb49ff6227598d5a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+          "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+          "line_end": 564,
+          "line_start": 564,
+          "path": "README.md",
+          "repository": "openbmb/pilotdeck",
+          "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md#L564-L564"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f663112db113d82cffa1b60686012307b13baa594e2497ae70f328a2e56bdc2c"
+      ],
+      "text": "The project is licensed under the GNU Affero General Public License v3.0."
+    }
+  ],
+  "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 564,
+        "path": "README.md",
+        "size": 22857
+      },
+      {
+        "lines": 390,
+        "path": "design-qa.md",
+        "size": 29016
+      },
+      {
+        "lines": 584,
+        "path": "README.zh.md",
+        "size": 25988
+      },
+      {
+        "lines": 193,
+        "path": "README_DOCKER.md",
+        "size": 6248
+      },
+      {
+        "lines": 193,
+        "path": "README_DOCKER.zh.md",
+        "size": 6097
+      },
+      {
+        "lines": 314,
+        "path": "README_SOURCE_INSTALL.md",
+        "size": 13542
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README_SOURCE_INSTALL.zh.md",
+        "reason": "file-budget",
+        "size": 13908
+      },
+      {
+        "path": "docs/agent-todo-workflow.md",
+        "reason": "file-budget",
+        "size": 4961
+      },
+      {
+        "path": "docs/dialog-improvement-api.md",
+        "reason": "file-budget",
+        "size": 18844
+      },
+      {
+        "path": "docs/funasr-installation.md",
+        "reason": "file-budget",
+        "size": 3257
+      },
+      {
+        "path": "docs/model-pool-settings-api.md",
+        "reason": "file-budget",
+        "size": 12382
+      },
+      {
+        "path": "docs/onboarding-api.md",
+        "reason": "file-budget",
+        "size": 13657
+      },
+      {
+        "path": "docs/onboarding-backend-trd.md",
+        "reason": "file-budget",
+        "size": 12872
+      },
+      {
+        "path": "docs/release.md",
+        "reason": "file-budget",
+        "size": 14595
+      },
+      {
+        "path": "docs/settings-redesign-integration.md",
+        "reason": "file-budget",
+        "size": 9614
+      },
+      {
+        "path": "docs/trd-dialog-improvement.md",
+        "reason": "file-budget",
+        "size": 16965
+      },
+      {
+        "path": "docs/web-update.md",
+        "reason": "file-budget",
+        "size": 6942
+      },
+      {
+        "path": "docs/telemetry/receiver-contract.md",
+        "reason": "file-budget",
+        "size": 5241
+      },
+      {
+        "path": "docs/trd/41-background-task.zh.md",
+        "reason": "file-budget",
+        "size": 2300
+      },
+      {
+        "path": "docs/trd/52-model-pool-settings-api.zh.md",
+        "reason": "file-budget",
+        "size": 8887
+      },
+      {
+        "path": "docs/trd/53-router-settings-api.zh.md",
+        "reason": "file-budget",
+        "size": 10947
+      },
+      {
+        "path": "docs/trd/54-search-settings-api.zh.md",
+        "reason": "file-budget",
+        "size": 8796
+      },
+      {
+        "path": "docs/trd/anthropic-prompt-cache.zh.md",
+        "reason": "file-budget",
+        "size": 5369
+      },
+      {
+        "path": "docs/trd/README.zh.md",
+        "reason": "file-budget",
+        "size": 808
+      }
+    ],
+    "omitted_count": 18,
+    "omitted_slices": 80,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1822,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 24,
+      "complete": false,
+      "omitted": 18,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_82f88581841d5901993364f01d563b59",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/openbmb/pilotdeck/97633a08a73eca3d65c79494f9aa31cc18fd019f/2d0f9ca69f85ae00/manifest.json",
+  "package_id": "pkg_696b1fb67e1cb35800781139e6591e77f5c0bff1b7a6f962cb407c923ebe259c",
+  "repo": "openbmb/pilotdeck",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e1d33efce5375836176050fb591fcaad62a34735e8ab5395fd3f41fc4670957f",
+  "snapshot_id": "2d0f9ca69f85ae00",
+  "sources": [
+    {
+      "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+      "git_sha": "04a2f465c75eaf03a6878d4a02da2ad04effa8e8",
+      "lines": 564,
+      "path": "README.md",
+      "repository": "openbmb/pilotdeck",
+      "sha256": "ed8f4ca5a48705042d28b3d66c2e2f0969a7b9de6a4a28d8987515bc3e22a42f",
+      "source_id": "src_feb76105800d589e9fbe93288d71fd7f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.md"
+    },
+    {
+      "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+      "git_sha": "69aa2386be1fca165b2db1d9fa5d901d91cbdf71",
+      "lines": 584,
+      "path": "README.zh.md",
+      "repository": "openbmb/pilotdeck",
+      "sha256": "4ac2333601b1a0d151143977c8690d04f735e38d479c0caabd191b44959e0a5b",
+      "source_id": "src_8f4d834628215e25826feb7a44f06d96",
+      "stored": "readme.zh.md-b024066e6d62.md",
+      "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README.zh.md"
+    },
+    {
+      "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+      "git_sha": "549c9cf33dca11b60a4767ea455cec1f8ed84db5",
+      "lines": 193,
+      "path": "README_DOCKER.md",
+      "repository": "openbmb/pilotdeck",
+      "sha256": "78ed0fd27ba5757252824403ff29fe1e96a72e0b254cef5e67712378553c96be",
+      "source_id": "src_11943b5e9e0250daa8f12dc4150b5f69",
+      "stored": "readme_docker.md-692614d9aef3.md",
+      "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README_DOCKER.md"
+    },
+    {
+      "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+      "git_sha": "b99b6c524aceb419d028333d69a6a9e35086d4f7",
+      "lines": 193,
+      "path": "README_DOCKER.zh.md",
+      "repository": "openbmb/pilotdeck",
+      "sha256": "16eae80f8d6deeab5a704191bd2f9452d92f4c9ddf74d8cce407c1883b613941",
+      "source_id": "src_a766226d38825704a0b5cd23288ae014",
+      "stored": "readme_docker.zh.md-5538630ff2f0.md",
+      "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README_DOCKER.zh.md"
+    },
+    {
+      "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+      "git_sha": "1f06431bf91841b8df20a1d217d187f52b99f4c8",
+      "lines": 314,
+      "path": "README_SOURCE_INSTALL.md",
+      "repository": "openbmb/pilotdeck",
+      "sha256": "f983183162315e6447dda5edb6a8f059108f354727cb1bda62a681f08fbe7e0d",
+      "source_id": "src_8b7646ba1b285aa289362908ef6499df",
+      "stored": "readme_source_install.md-1835d1baecd7.md",
+      "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/README_SOURCE_INSTALL.md"
+    },
+    {
+      "commit": "97633a08a73eca3d65c79494f9aa31cc18fd019f",
+      "git_sha": "d2adc582627629c486bd978fb012c13ca8d74faa",
+      "lines": 390,
+      "path": "design-qa.md",
+      "repository": "openbmb/pilotdeck",
+      "sha256": "1de7d591d09ae4b7f219bf450e6248bf3382c757cdeaf8e588b94b7dfc6dfb1a",
+      "source_id": "src_84c6abe85d3d50dfbc6bcc69bc4eb157",
+      "stored": "design-qa.md-d1a4c07405fe.md",
+      "url": "https://github.com/OpenBMB/PilotDeck/blob/97633a08a73eca3d65c79494f9aa31cc18fd019f/design-qa.md"
+    }
+  ],
+  "summary": "Selected evidence records: PilotDeck is an open-source agent operating system organized around a 'WorkSpace' concept, jointly developed by THUNLP, ModelBest, OpenBMB, and AI9Stars, targeting general-purpose multi-task scenarios. The WorkSpace is the fundamental isolation unit: each project gets its own file system, memory store, and skill set, so parallel work does not interfere and retrieval stays scoped.",
+  "superseded_claim_ids": []
+}

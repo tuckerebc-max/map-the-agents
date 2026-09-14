@@ -1,0 +1,701 @@
+{
+  "applied_operation_id": "op_a42e44b97d324dae98ba2b79642f4a5d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8709082d819b7fca2d3a86159e6e92c996cfaae5d7142acf31a44a9b5a345815",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L11-L13"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 167,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L167-L167"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_edfb6ff285997ce90f0662d1662fa45c3776053eb1447ff53622087fe4f629a5",
+        "slc_f8cd5b34b49a77ad09e9352e08851f4cacdd60243897a2f733819152886062e0"
+      ],
+      "text": "Open SWE is described as an open-source software factory built on Deep Agents by LangChain, licensed under the MIT License."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57ae1673933e78fc68cc5af1bc9edbb301a4cd3f050663dc4a67bc7346272d02",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L93-L93"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 101,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L95-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_768562dcf14abc6228993f0e650f055774cef93103a84e8b8996add3229d61b7",
+        "slc_d4aa9b9cce008b68237dfb0b9295a682ac5add51143271677cde6b863e7dddf6"
+      ],
+      "text": "The system ships five LangGraph graph entrypoints: Agent (implement/validate/deliver changes), Reviewer (read-only PR reviews), Analyzer (learns review style), Chat (PR Q&A), and Scheduler (recurring tasks and CI monitoring)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dca51135bd999b3d67cc382e6545de869ef2db8571144e680b7fe7e3f2c2efa9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ac545d0e97e1127a5303933fd553131ada8b9018dcb9d2164c9f99a807c1cb0"
+      ],
+      "text": "Deep Agents supplies planning, file operations, shell access, skills, state, and subagent primitives; Open SWE adds software-engineering tools, prompts, middleware, integrations, authorization, and product surfaces on top."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1da20a10437cc0a60885a64ee2488c4af45a021c523de6751280360a6d540ca0",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ec83dd0a54eece1081ead2972169d1fbc533de6779e8c47647228bd35390ac91"
+      ],
+      "text": "Each coding thread is bound to its own persistent sandbox; a thread is a durable conversation containing multiple invocations, independent threads run in parallel, and read-only PR chat needs no sandbox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e4a9dc1309f1e3977c989582be20d3107b77829e8af3f0b121ae62b1d9790866",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L93-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_768562dcf14abc6228993f0e650f055774cef93103a84e8b8996add3229d61b7"
+      ],
+      "text": "LangGraph provides durable execution and thread state, with each Open SWE invocation executing as a LangGraph run within a thread."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc22235b02dde51c1de34e7f47ce0c208d31078f8388be408f38db87866d5823",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 105,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L105-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04290ed2013e17d500db282938dec7d91f819420a63efcd1db3cd0cced7f07b1"
+      ],
+      "text": "Cloud work runs in isolated Linux sandboxes that persist with their thread; an unreachable coding sandbox is not silently replaced—the system fails safely rather than risk discarding uncommitted work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_577b614381fab4418b75ea648d9438ea1082f80f4351c694c135902468d1e5d2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L107-L107"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 66,
+          "line_start": 59,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L59-L66"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L57-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8854e15d8e1ea24c759996871534a366d5810fa3c2a8c82ec592cd0ebd2fe429",
+        "slc_8dcbeb44ec4a7eac28781dfa82437415845f69876f6f019d80fd0deb7a259026",
+        "slc_ad4832ef534fa7c36f076bd6a55598ac2ecd4b7c924961cee51b35da0dd1bd54"
+      ],
+      "text": "LangSmith is the default sandbox and tracing provider; Modal, Daytona, Runloop, E2B, and local execution are also supported via a pluggable provider interface selected by the SANDBOX_TYPE environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a7096f91a2eb545640a7b611de43e8f07921697dbbd5829272b7e4e5bfd6c94",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 132,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L125-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c1765cfa73e1c7244b247ddf3442944fde3fbdb1f8c2505a21679ada5d98f80b"
+      ],
+      "text": "Safety controls include per-thread sandbox isolation, GitHub App installation boundaries with optional per-user OAuth, org/repo allowlists with actor authorization checks, human approval before pushing workflow-file changes, and read-only reviewer/chat agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f26c6b8dede45e8fd1dbd978bc158faf62561c576a36b146af11efd8467db946",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 51,
+          "line_start": 50,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L50-L51"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L53-L53"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L48-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5df0ab40f2bfb573c6287cf704a97eef42a204ddaa9230c538f672fbac3e052d",
+        "slc_de6db1abfdcdf688234f8469b54375d99832cee5340bec3716ef188c06d0411c",
+        "slc_eb21e6833dcb07b9e77658d537ac5dc3986fa3fdd5134f8391f7d54f06ad7c42"
+      ],
+      "text": "For LangSmith sandboxes, GitHub proxy rules give github.com Basic auth for git-over-HTTPS and api.github.com Bearer auth for gh/REST; the proxy token is minted at runtime from GitHub App installation credentials rather than stored as env vars."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8de56af2cfa5a93a1bf4cb0e3cbfcc3c1da84b2dcf97ace0bd6bcd0b2722226d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 416,
+          "line_start": 407,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L407-L416"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 239,
+          "line_start": 234,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L234-L239"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a0bec6353af8bbf8f7af5008d22642d51bbac19805333420b285a90dbdddfa0",
+        "slc_9a926312596ba378133d91f37d0ada0fec618ba2d3a7d6fa23f6deefb50b6748"
+      ],
+      "text": "Admins can connect remote MCP servers whose enabled tools become available to all coding-agent users; personal MCP connections load only in private threads owned by the triggering user, and plan mode blocks workspace MCP tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aea4b775dd5aeb3ee6a208331d9419381c0290443220776fa6f1a20f1deb481a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L79-L79"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08b979d9845c55b4b539e39a6a06831140ed76b64f8efabbdf878ef582b5ba15",
+        "slc_1c4487b19851279f684277409660d1deb3dd4eed046505b4a8b2f2bf0dc31aa2"
+      ],
+      "text": "The custom FastAPI backend (agent.webapp:app) has a generated OpenAPI 3.1 contract in swagger.json, served live at /openapi.json and browsable at /docs; LangGraph runtime endpoints like /runs and /threads are not included in it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_feecdf62a6a0e6a2eca193e583e655be12eed01fd19d531b35ddff32ec96bb41",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 119,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L115-L119"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 68,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L65-L68"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_547cf2d1d00eff5384f9efcf8f8554d9926e9f441accb77248f3f42eb3f88d55",
+        "slc_689641eb21759994a480604a3c1b676afef03617febb2be0dd25a4f757df6404",
+        "slc_7297aaeedd78688a31983c988f84283b0120ef4252f120d8dc94f920db32e353"
+      ],
+      "text": "Tasks can be started from a web dashboard, GitHub, Slack, or Linear (or on a schedule), and an experimental desktop client runs the agent against local projects, with packaged releases currently targeting macOS."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_48a50b6f1cca70c7d6b6878699a9ad939c23417a1d9d36cd4415866b6e9e2d67",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L3-L3"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b99535898a37bd6d6ea84a3c0f3445d013f05a1fdaf8fbf1180228f6c1645c6c",
+        "slc_c96b409864f9df3af082c25ba84e98b47a77b0e90f1437147226fec94c0a83c6"
+      ],
+      "text": "The core agent is assembled in a single function, get_agent() in agent/server.py, where the sandbox, model, tools, and triggers can be swapped; custom sandbox providers implement SandboxBackendProtocol from deepagents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_676c40853ff37e9148beb3dd2417582aaf7277322c59750fe31050ca74c2b4ca",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L139-L139"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L146-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a993a77876b52414cead6d0a8b802cf3c5bed98aab5f4094aee3678d7e2c0df",
+        "slc_c770c122e29f4eed16ca816cf6d643fde5d3271a7786028e8f1c065415c02b01"
+      ],
+      "text": "Model defaults are configurable via LLM_MODEL_ID and LLM_REASONING_EFFORT; an Anthropic-only deployment defaults to anthropic:claude-opus-5, other deployments to openai:gpt-5.6-sol, with default reasoning effort medium."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d9fe1c643132a386b8e356e05b3d4fb227d30657f84769ceefdaae34fb26822e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "docs/CUSTOMIZATION.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md#L68-L68"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 30,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L29-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_598c393e0ed593c2d5e30a1a8df0181296efc316cd452dc67f10a2429df678f0",
+        "slc_fd5d016e85c8fae4a6e248f361012cad2463d03c9f44f08fa15694c49a715166"
+      ],
+      "text": "The project is under active development and its APIs, setup, and product surfaces may continue to evolve; the local sandbox provider runs commands directly on the host with no isolation and is intended only for development."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ba0395e23c00fa7a63ba7d2bf9acc190414b8ddeb54af265c21612edb07e4f5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L157-L157"
+        },
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 155,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L147-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c8e00e9d34261d0fccabba18440adb0902c80e13b1cbc709d67e3c3439f8e974",
+        "slc_dba1e44d164d0b59104ce5492d5e5668962557e329f7536cd85dd8545abfcbbd"
+      ],
+      "text": "Repository development practice: local development uses uv venv/uv sync, make build-dashboard, and make dev serving API and dashboard at localhost:2024, with make dev-ui for hot-reloading UI work and an ngrok tunnel exposing only /webhooks/* for webhooks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_52655e66584a87e1bb3ff6752f0d992b2dc84a1c3c2e38ac6d07175215fce278",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+          "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "langchain-ai/open-swe",
+          "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c4487b19851279f684277409660d1deb3dd4eed046505b4a8b2f2bf0dc31aa2"
+      ],
+      "text": "Repository development practice: regenerate swagger.json with make swagger after changing backend routes or models, per the customization documentation."
+    }
+  ],
+  "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 167,
+        "path": "README.md",
+        "size": 10685
+      },
+      {
+        "lines": 696,
+        "path": "docs/CUSTOMIZATION.md",
+        "size": 33887
+      },
+      {
+        "lines": 230,
+        "path": "docs/DEVELOPMENT.md",
+        "size": 20023
+      },
+      {
+        "lines": 403,
+        "path": "docs/INSTALLATION.md",
+        "size": 33584
+      },
+      {
+        "lines": 62,
+        "path": "AGENTS.md",
+        "size": 3920
+      },
+      {
+        "lines": 9,
+        "path": "CLAUDE.md",
+        "size": 133
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 91
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1272,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_e3d59af4a5ac540f924953b6529d1554",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 3,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/langchain-ai/open-swe/1aa5d3b068c06f83229adf500f56600519cf10a7/96ddadd1932f01c2/manifest.json",
+  "package_id": "pkg_18e8c6d963cab2ed2239240044e4e29548cbe8291cb6ff3398f509e2dc505b43",
+  "repo": "langchain-ai/open-swe",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b13abc1bbf5e017e29699360d7d889d27b61946f522e582d8d3687a4b0527965",
+  "snapshot_id": "96ddadd1932f01c2",
+  "sources": [
+    {
+      "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+      "git_sha": "4ad148701e65bf723818417683cddfe79860e051",
+      "lines": 62,
+      "path": "AGENTS.md",
+      "repository": "langchain-ai/open-swe",
+      "sha256": "ce501cf039b7075823161c8a13e504f99e11dd90a6037203e3629eccbf5e6f92",
+      "source_id": "src_194c21d83aed54f294e7fba0413bf86b",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/AGENTS.md"
+    },
+    {
+      "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+      "git_sha": "98b68bba4b3dc47870f53cb9221f3152680caf26",
+      "lines": 9,
+      "path": "CLAUDE.md",
+      "repository": "langchain-ai/open-swe",
+      "sha256": "9e516c1ad55d93008dd27daed1cf365f67b19da277e75a8500e10f43a621ffd0",
+      "source_id": "src_fda1dcc6224d5c61a90178eb0346688a",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/CLAUDE.md"
+    },
+    {
+      "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+      "git_sha": "15884fd2a2234587477ec53a629d14f83c7723b8",
+      "lines": 167,
+      "path": "README.md",
+      "repository": "langchain-ai/open-swe",
+      "sha256": "9cf4f5cb2d75a167cd56dc03c5f464acc99bbb9fef4146a1e54b2d5febc703b9",
+      "source_id": "src_8130f6f96f285e65a37437545da05e83",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/README.md"
+    },
+    {
+      "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+      "git_sha": "c25261e94e21455f69beddbd4d292697adb12805",
+      "lines": 696,
+      "path": "docs/CUSTOMIZATION.md",
+      "repository": "langchain-ai/open-swe",
+      "sha256": "2c600aa02f848dbfd5a275db2f0aedc791d13d83b172cd7e646447616a7c6438",
+      "source_id": "src_7b3ceefcc93454a881818cfa6136ac1f",
+      "stored": "customization.md-0182aa9c8e3a.md",
+      "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/CUSTOMIZATION.md"
+    },
+    {
+      "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+      "git_sha": "edc06a0336ec7def7b39b28354a7383db7d34a2c",
+      "lines": 230,
+      "path": "docs/DEVELOPMENT.md",
+      "repository": "langchain-ai/open-swe",
+      "sha256": "c8c36b3f160b5f78357d7fad452138d6b84f3a4f1511882f04863135afd67fa8",
+      "source_id": "src_cd2dd5ab230f5c8fadbde18a524d931c",
+      "stored": "development.md-d9657425e036.md",
+      "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/DEVELOPMENT.md"
+    },
+    {
+      "commit": "1aa5d3b068c06f83229adf500f56600519cf10a7",
+      "git_sha": "2ae455ea915d4e96710f2d063dca6779cb904de6",
+      "lines": 403,
+      "path": "docs/INSTALLATION.md",
+      "repository": "langchain-ai/open-swe",
+      "sha256": "d3a481f1faf8a39cee531cf74e3c8e8cf9f36fe413b6722e5f3434a817fc2cea",
+      "source_id": "src_4c88634b0a375fae881613e26849d510",
+      "stored": "installation.md-91e1e933898a.md",
+      "url": "https://github.com/langchain-ai/open-swe/blob/1aa5d3b068c06f83229adf500f56600519cf10a7/docs/INSTALLATION.md"
+    }
+  ],
+  "summary": "Open SWE is an open-source (MIT) software-engineering agent built on Deep Agents and LangGraph, with cloud sandboxes, PR review, CI monitoring, and integrations (GitHub, Slack, Linear, dashboard). Evidence is mostly README and customization documentation describing runtime behavior and configuration. Evidence coverage: 130 of 362 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

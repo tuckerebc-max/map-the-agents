@@ -1,0 +1,500 @@
+{
+  "applied_operation_id": "op_a019228e789743d7b982601e477b50e9",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_af20057da8241d9ee6384813c0f728ac2df2e9a9ffcbf80c1bfad96b4fc8f525",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 4,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L4-L4"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23611ecff59e200f0b218d8421274b3d0c847bdd9f8ba30a0b55b5b9b1586c7c",
+        "slc_c5e962ce37d5aeaf03cdd14e62108c1e2db3bf1bc9d16a3aec60b57358e5814d"
+      ],
+      "text": "The application uses Microsoft Azure OpenAI, Confluent, and Apache Flink to build an AI-based SDR that automates the lead management and outreach workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88d1b7fcf4516ecf35dce607ccd21aed943892b01488a05a2b12a5757acef60c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L10-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf5a3c83a9e63d3b6ea95d7316fdfa9ec40d6a907abdac0c786cbb31b20c3eda"
+      ],
+      "text": "The system includes five agents: Lead Ingestion, Lead Scoring, Active Outreach, Nurture Campaign, and Send Email, each handling a distinct lead-processing task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1acbc824acf66ffc8235e94f9bddc2a4de228ddf8f431037054be119bff63978",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L10-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf5a3c83a9e63d3b6ea95d7316fdfa9ec40d6a907abdac0c786cbb31b20c3eda"
+      ],
+      "text": "The Send Email Agent currently only prints the email to a terminal rather than actually sending it, which would require an email relay or service in a real deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_535c230bd39a799a0b3f1e49925000f5552e2ab2d40fad7ba0022daf9b864573",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 297,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L297-L297"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 438,
+          "line_start": 421,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L421-L438"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 380,
+          "line_start": 370,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L370-L380"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_208360955bf2a96fbb596c5c608a1d323f443bf1214f72549bedc91a03713c56",
+        "slc_9645e5e1fe38c92ab5636468ff73c9200ecdb34bd150a9ad8dd35448df08c35d",
+        "slc_9a3f097940818766b8f26c286451c4f7bad9ad6b12d96be25c7c51308a97c359"
+      ],
+      "text": "A Flink SQL job uses external model inference (an OpenAI gpt-4 model reference called agent_router) to map each agent_messages record to the next agent by name, writing results to agent_predictions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e24949ec60398aba793aee5e96276ef09dfa3eaf2272b9cbda84cc91c97741c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 413,
+          "line_start": 409,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L409-L413"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d0eeeb4394a1522ef299345fd4edbccf0be1b203a2b250956da0ce676e5f231"
+      ],
+      "text": "The router's system prompt instructs the model to output only a defined agent name, or NONE if it cannot confidently map the input to an agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a947ebcf1d0fe7176cd2f6d66d8677e630911ed691fd660b8c75d0a6ae46ac31",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 271,
+          "line_start": 271,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L271-L271"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 183,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L183-L183"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 116,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L110-L116"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 265,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L193-L265"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 191,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L185-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_238db47c68a2541725437691d85269bb8ebdc397116cb3ec5ca4bfa3ec12917a",
+        "slc_3a0cf2760d61782235a115e4fb901fa9859023c5afc0bb3734203245c0782a86",
+        "slc_7068cb57d8918cd318a50582cfdf12eccb20e3b4b6c70d0526530d72fa4d6c4e",
+        "slc_823e962d4ab060f80a51c727407f0a79d1543f3f8fba50ee8410b93a2860dc7e",
+        "slc_8e1557d9a4a20be1be057f9ecb0e620fe8d9118c1ec69f062f75230def5bfbed"
+      ],
+      "text": "Agent communication flows over Kafka topics agent_messages and agent_predictions, each governed by a JSON schema in Confluent Schema Registry; agent_predictions adds an agent_name field used for routing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9283fe5ae8ffb57bfd3b456b38c4a6b62c2c88c456ae4f39ed89f1b62e9551ba",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 271,
+          "line_start": 271,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L271-L271"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 293,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L293-L293"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 291,
+          "line_start": 288,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L288-L291"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_238db47c68a2541725437691d85269bb8ebdc397116cb3ec5ca4bfa3ec12917a",
+        "slc_87a08bc0d40c1960de60952f41d413779996b89a1d7896bc98009619c57d42d5",
+        "slc_dc928efbdbfad99e012cd4aedaa54c6708e21c6c8547712b87345abb58c4badc"
+      ],
+      "text": "HTTP sink connectors per agent deliver messages from agent_predictions to agent API endpoints, filtered by a Single Message Transform matching the agent's name."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2265ce135f8dc64370949aebc1f8324ef999e341e6c21c99258f2df640f0d39d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L34-L34"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15abaac9089fab0ccd322469baead6679c16e582d8aa7424d4ed9927ba103f8f",
+        "slc_27375320b087d1ef985c504549964fce9b55a73c1776269d3f45a606ad45d7f3"
+      ],
+      "text": "The project splits into a NextJS web-application (React frontend, Node backend, MongoDB) and a Python agents app exposing API endpoints that Confluent connectors call."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abfe578f84687bd4ff68b74398b07e817286a0a6c196780bd6099665d6246fa9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L63-L63"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L25-L28"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L65-L65"
+        },
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fc13eb7302680e9991aba9c73451d5f9f361b8987ded180595dc20c2278cd7e",
+        "slc_df676c0c78a61fa4023ed446484d29aa3ae91df3ff5e86f3ef0ee8aeb6069fdf",
+        "slc_dfdca5aa75eb84e06ec21424397124abe0b19a0c3a5aa02ec6b252a0f7129817",
+        "slc_ed6e80308405589a71f91dc5c110892c6827b9eedc6d2b1ddc6a50bdfd8fa800"
+      ],
+      "text": "Submitted leads are stored in a MongoDB database stratusdb (leads collection), and a MongoDB Atlas source connector publishes new leads into Kafka to kick off the workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7287e77f1cb7976e109843e7329621e63ce518929767bccd33fc93793808c23c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e2e4cec102c76ef5e1dccaf0294f20ce93a43b9c1e368b91ebe6ba626c4cab8"
+      ],
+      "text": "The web application is deliberately decoupled from the AI stack: it knows nothing about LLMs, Kafka, or Flink, which run on Confluent Cloud to move data between services."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_796714e23a955cde4a61be2aa37309ea5369a74af1d7afe47c40c7cc7570b84f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 50,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L46-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_873206ade2e979039db44ae3ee23b65ed8d05f36baaeddb9091805f868976e8d"
+      ],
+      "text": "Running the application requires Node v22.5.1+, Python 3.10+, a Confluent Cloud account, an Azure OpenAI API key, and a MongoDB account."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_536e071ebfbc508e414c28c61a727ae826fcfc63d102fba0be2f2458b2763d94",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+          "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+          "line_end": 37,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+          "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md#L36-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f559be44ca2f5cfe1d56d4ece1b42f513c1fc5eb73cda346fa21ba795818daf"
+      ],
+      "text": "The author notes MongoDB is used for lead storage only for demo purposes; in a real-world scenario leads would likely live in a marketing automation platform or CRM."
+    }
+  ],
+  "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 455,
+        "path": "README.md",
+        "size": 16515
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 75,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_0a3be857fcf852dd9a3ca03d0344972d",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/254986ae/6e488524/a23673a0060c791fbaff3c0598be5ebac05c35ed/00298777f2134b5f/manifest.json",
+  "package_id": "pkg_c45278c0f0b7be860a3e13f14afe60c41de2c0ef703d3e99ae61254fab13257c",
+  "repo": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8585eda373f462ace9c63f0084f645b595029c1ed2da32679d4bc5dbbb44fe08",
+  "snapshot_id": "00298777f2134b5f",
+  "sources": [
+    {
+      "commit": "a23673a0060c791fbaff3c0598be5ebac05c35ed",
+      "git_sha": "c7bb34761839bafc4d55d6e960313ae4e8235b16",
+      "lines": 455,
+      "path": "README.md",
+      "repository": "thefalc/multi-agent-ai-sdr-flink-orchestrator",
+      "sha256": "4bfe8475e027e3484064790c1ebdd5e99f15f5403aca09ac0986c717a6e9e042",
+      "source_id": "src_34ebeca89338519681132a82efc23551",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/thefalc/multi-agent-ai-sdr-flink-orchestrator/blob/a23673a0060c791fbaff3c0598be5ebac05c35ed/README.md"
+    }
+  ],
+  "summary": "The application uses Microsoft Azure OpenAI, Confluent, and Apache Flink to build an AI-based SDR that automates the lead management and outreach workflow. The system includes five agents: Lead Ingestion, Lead Scoring, Active Outreach, Nurture Campaign, and Send Email, each handling a distinct lead-processing task.",
+  "superseded_claim_ids": []
+}

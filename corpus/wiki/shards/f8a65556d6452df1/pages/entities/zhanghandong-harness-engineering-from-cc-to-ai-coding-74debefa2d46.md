@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_02aecaeb9271b034db13d867fa67d5299431b856111694d93bf48d73dc68a73d
+- clm_044d21217cc331a245272705b16a521986f4a86e87935dd140b675a111ce9c85
+- clm_087e28555c753195be5df8bd27fe3875f05dcd4debaa7e20d3f4ee1bc8c774d6
+- clm_48a928c702d8014b9b2d50e4885e749d886e6f4f04e44c00bc4acc0a92c4da21
+- clm_6605f5458a680287f86491998a219d1f0474d1deccfba36fb67f1095c8d65b99
+- clm_7c5c23748563c3cb6a05adca042fcc1cb3bcab17fd6cd0d9041c937a2fba43db
+- clm_98aca8401f700c9c2c2ba1cfabce9005f7a3833bcdb96c46e7e39e42506ae62a
+- clm_cd71afbcb3deec8c95e4e59d0dabd8d819818183e0194c3bcfc008fa032cf803
+- clm_dda0cc07a59f086ea92dae5bfcdba2ef43f33c0d1b81c3aa61e2b974b7711a21
+- clm_f7cca01e0c1bcb56006b8d6dc17cf8cf6d15811de0d5424c6c5680f10d414ba9
+- clm_fed995223ea96b889c9e91ffb9df1ff3e2f56c990417d4965eb88759f5c39f9f
+maturity: draft
+page_id: pg_1793b29eff0b59dd82fb74debefa2d46
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: zhanghandong/harness-engineering-from-cc-to-ai-coding
+updated_at: '2026-09-14T04:34:01Z'
+---
+
+# zhanghandong/harness-engineering-from-cc-to-ai-coding
+
+<!-- rcw:begin owner=entity:ent_d6a96532e17b55b1b98f93c227cd9f28 block=evidence -->
+- zhanghandong/harness-engineering-from-cc-to-ai-coding is mentioned in this evidence. [@claim:clm_02aecaeb9271b034db13d867fa67d5299431b856111694d93bf48d73dc68a73d] [@claim:clm_044d21217cc331a245272705b16a521986f4a86e87935dd140b675a111ce9c85] [@claim:clm_087e28555c753195be5df8bd27fe3875f05dcd4debaa7e20d3f4ee1bc8c774d6] [@claim:clm_48a928c702d8014b9b2d50e4885e749d886e6f4f04e44c00bc4acc0a92c4da21] [@claim:clm_6605f5458a680287f86491998a219d1f0474d1deccfba36fb67f1095c8d65b99] [@claim:clm_7c5c23748563c3cb6a05adca042fcc1cb3bcab17fd6cd0d9041c937a2fba43db] [@claim:clm_98aca8401f700c9c2c2ba1cfabce9005f7a3833bcdb96c46e7e39e42506ae62a] [@claim:clm_cd71afbcb3deec8c95e4e59d0dabd8d819818183e0194c3bcfc008fa032cf803] [@claim:clm_dda0cc07a59f086ea92dae5bfcdba2ef43f33c0d1b81c3aa61e2b974b7711a21] [@claim:clm_f7cca01e0c1bcb56006b8d6dc17cf8cf6d15811de0d5424c6c5680f10d414ba9] [@claim:clm_fed995223ea96b889c9e91ffb9df1ff3e2f56c990417d4965eb88759f5c39f9f]
+<!-- rcw:end owner=entity:ent_d6a96532e17b55b1b98f93c227cd9f28 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,735 @@
+{
+  "applied_operation_id": "op_846fc79f07074265b7cbc5780727f9c5",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c80167e586d2e5227097dd9f204d893934dbbf1852539d1792c743d660e280d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 106,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L92-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3069df908846fe36113e45d9dadfbb4f5fd9f07e96b176520508c79fbc476243"
+      ],
+      "text": "The framework ships modules including agents, llms, template (Mustache-based prompt templating), memory, tools, cache, errors, and adapters for different environments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_685300f577cc0943a7cea70792fb0bce36a7bc23c841dc22928f742f0200c116",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 67,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L61-L67"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 59,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L55-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23482f6c9f9e409026f2a8369d53a64d761a9143120a1a7a7a1ab963d31a5568",
+        "slc_84136c2a92df859b715600c2ea2835018ef69c689a4fd660ff7c82bdc7732fe7"
+      ],
+      "text": "Agents are constructed with an LLM, memory, and tools, and executed via an async run method taking a prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_578356617ec97a0d348c676410cb8e1332b8e53cbd3264af94b5f58fb8855bcc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 67,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L61-L67"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 188,
+          "line_start": 178,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L178-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23482f6c9f9e409026f2a8369d53a64d761a9143120a1a7a7a1ab963d31a5568",
+        "slc_87af1a25f1c07146f794111c5fd59ed654a2cf30ea82d95ba61be5908f03035a"
+      ],
+      "text": "Agent runs expose an observe method whose callback receives an emitter for streaming per-update events during execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c56b90f92aa0978e189f9e3590f538c141f5fabaa805547a97a2a4b4e2c0b564",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 354,
+          "line_start": 352,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L352-L354"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 346,
+          "line_start": 344,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L344-L346"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 331,
+          "line_start": 331,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L331-L331"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 362,
+          "line_start": 360,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L360-L362"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 350,
+          "line_start": 348,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L348-L350"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 358,
+          "line_start": 356,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L356-L358"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 342,
+          "line_start": 339,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L339-L342"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ababfa7447ab6b97c13df895785afe20905a2e7528f43618f664a5d06121099",
+        "slc_35c12e3fdbf7b053633755ee70d864a0b7b90a3ccc887ae88e1d1f7dc06a3f99",
+        "slc_5a64415c614480ec42ea3569c1519d80a8500e315f7a36cafc8205684937199a",
+        "slc_7a423465d7dd295c916f14147dca7b9092f5f4683f45a77ae01952d00d379e39",
+        "slc_80bb699b0a9410131f018e8fd2cd02e0c29149ecbe6ba6a4fbfed7d19cd62be3",
+        "slc_c1321cd5605231b72906a2dfbc9cbbb7b6037adb6fca7d11cf25cc237225dcf0",
+        "slc_d3a0d16d01d6f0460e8dd9919a7aa3bad1fde61a6e7689abce93eb217d1bacbe"
+      ],
+      "text": "Custom cache providers implement a BaseCache class with set, get, has, delete, clear, size, and snapshot methods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2d3c71a6b36fc0829c12dd768cde8d54a846dedccf7684b563c4e1a5d72316d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 93,
+          "line_start": 89,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L89-L93"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 127,
+          "line_start": 121,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L121-L127"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 99,
+          "line_start": 97,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L97-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d659d35996c600208f823f56fe037b991a3b98a5e2f7c25fd55e212d51ae535",
+        "slc_8b18409c91257cd1769514dbbf3f3e5d17a07f0aae6eed840eb23c8a4a54cd5d",
+        "slc_90ef4a7918b07e660e82025a02dee181015a5a37fabc0d3fd8380a0b7e07bc0c"
+      ],
+      "text": "Tool and LLM caching keys are created by serializing function parameters, with object key order not mattering; identical inputs are served from cache."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1304e3d5fa0059933a0148e844ef87ef4a705a77900b1005bd4a1660c4609230",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 142,
+          "line_start": 141,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L141-L142"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L5-L5"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L100-L101"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 98,
+          "line_start": 97,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L97-L98"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L109-L111"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L103-L107"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 23,
+          "line_start": 21,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L21-L23"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+          "line_end": 55,
+          "line_start": 48,
+          "path": "docs/emitter.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md#L48-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_152623fef01d351c0faf16c33e3865ffbd0d921e1bbd1292fe0976ed880862ce",
+        "slc_1733bf2ad4a9d171a4c611bb109fcec3acffb152dd12f8cc38c6cd1a2ba190af",
+        "slc_3690981f708b54783eb4b888cedaa668fd99d5e27059a6892ff45d4ac3aa3c6c",
+        "slc_4fdebec70e04c913db837550172a93109c658c7ce27d4756c601ff93e682c0c7",
+        "slc_6779370ee24894cae246a564988ff21fa1535d30c4e1cffb878ddbbe09d03f88",
+        "slc_9754edbcde5647b13565c06f075fd9c4e57a445066a154e82a16ac3f6ac6758b",
+        "slc_b18c331076d3e0e509d3c08caa521d9ac5c5a7418b338ee36553536d301d7769",
+        "slc_f85edec5ef0b7de29bd77d3215e26c6d141ff829209ec8e86be0f36160779ced"
+      ],
+      "text": "An Emitter system provides observability, supporting typed events, wildcard and regex matching, filter functions, namespaces, and piping events between emitters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_92f1fdcb1e5d344e90b93dbeb00e1a386f53dabeb77c97d091451753a3375933",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 39,
+          "line_start": 35,
+          "path": "docs/memory.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/memory.md#L35-L39"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 27,
+          "line_start": 21,
+          "path": "docs/memory.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/memory.md#L21-L27"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 17,
+          "line_start": 15,
+          "path": "docs/memory.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/memory.md#L15-L17"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "docs/memory.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/memory.md#L29-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50cf2281bb4f115601718d0abb558895316d8b8522193f55d4d159c8c04f18d4",
+        "slc_a199265460fcec83dff6d9792a7206d06cff365a2c6cec23f10364cf5fd9b9aa",
+        "slc_b52289988e0b628b80ff9bbc2e81965fda1b6e1fedecad67d040e44dc4fbb205",
+        "slc_f0013d6165e0e462bf65f684c9321265dfcdc6ba63c185d1e28f1f055b449918"
+      ],
+      "text": "The memory module offers UnconstrainedMemory storing BaseMessage objects with add, addMany, reset, asReadOnly, and isEmpty operations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65886b7a0b7ca92aaa7c3b9e783ee3791441b0643b4b04c3965a11504b16dc78",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L34-L36"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L40-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51c0248f54c61d2497cada0e6d4b2bb2322a0e2ef9f9b9579cd4d5630f68fccf",
+        "slc_890935eb51b8e59000cc09cdb8b0b2b533bf6025fd2c0da942de80845d6729b9"
+      ],
+      "text": "The framework is distributed as the npm package Auralia-agent-framework, installable with npm or yarn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5366a4a13191dc83de1becc51c4a41ed544186f2a4060b0135f9198aa0c75489",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c3e558e125d02286102b4afcb4db65fe4dcf300ced8ad2ac3182e6d879e8fdf"
+      ],
+      "text": "The framework is designed to perform robustly with IBM Granite and Llama 3.x models, with optimization for other LLMs in progress."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa12aa208a1ff22974cc318ae010668b8baf0dd422496c20ded7a076a57e66f6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md#L53-L53"
+        },
+        {
+          "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+          "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+          "line_end": 119,
+          "line_start": 110,
+          "path": "docs/cache.md",
+          "repository": "aurasgit/public-agent-framwork",
+          "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md#L110-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6daa3ffa667fc9afe6b3a480fb8262ff95944923e3c78ce0cf7a0cab35890ab6",
+        "slc_ff29b0c1b798609a55218bf544471b68410a8fef9b2378c587d25f88243a9e7e"
+      ],
+      "text": "LLM adapters include OllamaChatLLM, configurable with modelId, generation parameters, and an optional cache."
+    }
+  ],
+  "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 126,
+        "path": "README.md",
+        "size": 7501
+      },
+      {
+        "lines": 291,
+        "path": "docs/memory.md",
+        "size": 9739
+      },
+      {
+        "lines": 475,
+        "path": "docs/tools.md",
+        "size": 17170
+      },
+      {
+        "lines": 18,
+        "path": "docs/_sidebar.md",
+        "size": 361
+      },
+      {
+        "lines": 376,
+        "path": "docs/cache.md",
+        "size": 11068
+      },
+      {
+        "lines": 202,
+        "path": "docs/emitter.md",
+        "size": 5891
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/errors.md",
+        "reason": "file-budget",
+        "size": 4850
+      },
+      {
+        "path": "docs/instrumentation.md",
+        "reason": "file-budget",
+        "size": 3512
+      },
+      {
+        "path": "docs/llms.md",
+        "reason": "file-budget",
+        "size": 9811
+      },
+      {
+        "path": "docs/logger.md",
+        "reason": "file-budget",
+        "size": 3828
+      },
+      {
+        "path": "docs/overview.md",
+        "reason": "file-budget",
+        "size": 3014
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 9311
+      },
+      {
+        "path": "docs/serialization.md",
+        "reason": "file-budget",
+        "size": 6150
+      },
+      {
+        "path": "docs/sql-tool.md",
+        "reason": "file-budget",
+        "size": 7729
+      },
+      {
+        "path": "docs/templates.md",
+        "reason": "file-budget",
+        "size": 5219
+      },
+      {
+        "path": "docs/version.md",
+        "reason": "file-budget",
+        "size": 531
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 58892
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 3425
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 590
+      },
+      {
+        "path": "docs/agents.md",
+        "reason": "file-budget",
+        "size": 5585
+      },
+      {
+        "path": "docs/CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 58892
+      },
+      {
+        "path": "docs/CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 3425
+      },
+      {
+        "path": "docs/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7466
+      },
+      {
+        "path": "docs/SECURITY.md",
+        "reason": "file-budget",
+        "size": 590
+      }
+    ],
+    "omitted_count": 18,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 100,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 24,
+      "complete": false,
+      "omitted": 18,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_0d3591faf7e15644807d43ba1d771250",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aurasgit/public-agent-framwork/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/e342f0b1feb8ac41/manifest.json",
+  "package_id": "pkg_8f04f4fe7924753c25a5d2070524bd00bceef8a73c54c54809f92fe110c271a5",
+  "repo": "aurasgit/public-agent-framwork",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "bfc6bbbf570f46ca51202fff36fd13b9b142f6bfc49ffa3a31b79a1768a124d4",
+  "snapshot_id": "e342f0b1feb8ac41",
+  "sources": [
+    {
+      "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+      "git_sha": "3ff8c036eb2fefec39f760fdc8b40cf635749471",
+      "lines": 126,
+      "path": "README.md",
+      "repository": "aurasgit/public-agent-framwork",
+      "sha256": "749263c5d1ce4c17dcd574304ec6b48174931b6cb2db97070d6454cfd2569572",
+      "source_id": "src_33e26a9f01ac56de837846bae379b816",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/README.md"
+    },
+    {
+      "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+      "git_sha": "70cc90c817991dd249c6c03110c80fb06781b25c",
+      "lines": 18,
+      "path": "docs/_sidebar.md",
+      "repository": "aurasgit/public-agent-framwork",
+      "sha256": "6cf309b09aae816fabbabf315fa099ee644fbd5c253de1fc0dd32a8cdec8d18e",
+      "source_id": "src_4bee03f4ca9a5a1f9ae769feeac64ee7",
+      "stored": "_sidebar.md-2a55b1a76ffb.md",
+      "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/_sidebar.md"
+    },
+    {
+      "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+      "git_sha": "20de71cacffdaa8f993f44aac08fc72dcbd83530",
+      "lines": 376,
+      "path": "docs/cache.md",
+      "repository": "aurasgit/public-agent-framwork",
+      "sha256": "570d9ce932a6610b9a386e28b313facffd7121fee13203520714be68d5b9b76f",
+      "source_id": "src_cc6faa0dc9735747a21a887e38cdfb11",
+      "stored": "cache.md-356f6a855928.md",
+      "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/cache.md"
+    },
+    {
+      "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+      "git_sha": "1a1f5bd244a65118de8d30e25afff29151d9b47b",
+      "lines": 202,
+      "path": "docs/emitter.md",
+      "repository": "aurasgit/public-agent-framwork",
+      "sha256": "213b8e39d924fed735af17bc76be51517ff52ec16e94f274ad26ccdaf1b71fdf",
+      "source_id": "src_e75c9901915b590d8a0c8d781b72f32f",
+      "stored": "emitter.md-c63b8b13c77d.md",
+      "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/emitter.md"
+    },
+    {
+      "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+      "git_sha": "a46442ed77cbd64875849feeeff7eefb5b01055a",
+      "lines": 291,
+      "path": "docs/memory.md",
+      "repository": "aurasgit/public-agent-framwork",
+      "sha256": "c45feea466eb6e2781c04cf24adc4655696b66477c373b7774292b8bbd424a73",
+      "source_id": "src_a968e572cfa05eedb3423ca406c42319",
+      "stored": "memory.md-ad99d17d1a33.md",
+      "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/memory.md"
+    },
+    {
+      "commit": "f3f27582c6a2cc6d18c9856e8c0348c5418b3636",
+      "git_sha": "ae650deb2b1c11c421d7a6ba2fe2650a481d3768",
+      "lines": 475,
+      "path": "docs/tools.md",
+      "repository": "aurasgit/public-agent-framwork",
+      "sha256": "14a05e1aaf679bc12e4c2c97986776b5c8aa5a958b1e5e9dc799a17f98fa9be4",
+      "source_id": "src_c81cc07f68635041a5ba4448959732bc",
+      "stored": "tools.md-1f2a04763330.md",
+      "url": "https://github.com/aurasgit/public-agent-framwork/blob/f3f27582c6a2cc6d18c9856e8c0348c5418b3636/docs/tools.md"
+    }
+  ],
+  "summary": "Selected evidence records: The framework ships modules including agents, llms, template (Mustache-based prompt templating), memory, tools, cache, errors, and adapters for different environments. Agents are constructed with an LLM, memory, and tools, and executed via an async run method taking a prompt.",
+  "superseded_claim_ids": []
+}

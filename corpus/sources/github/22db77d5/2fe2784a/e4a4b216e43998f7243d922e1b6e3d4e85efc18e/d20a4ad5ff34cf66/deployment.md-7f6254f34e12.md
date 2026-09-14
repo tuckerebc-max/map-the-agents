@@ -1,0 +1,103 @@
+# Deploy to Databricks Apps
+
+## Prerequisites
+
+- A Databricks workspace with Model Serving endpoints enabled
+
+## Easy Start (Git Repo)
+
+The simplest way — no CLI, no cloning, everything stays in the Databricks UI.
+
+1. Go to **Databricks → Apps → Create App**
+2. Choose **Custom App** and connect this Git repo:
+   ```
+   https://github.com/datasciencemonkey/coding-agents-databricks-apps.git
+   ```
+3. Click **Deploy**
+4. Open the app — on first terminal session, paste a short-lived PAT when prompted
+
+The app pulls the code directly from Git. To update later, just re-deploy — it picks up the latest from the repo.
+
+> **Note:** On first startup, the app automatically removes the template's `.git` history and reinitializes a clean, remote-free git repo. This prevents accidental pushes back to the template repo from the in-browser terminal.
+
+> **Optional (Highly Recommended):** If you use [Databricks AI Gateway](https://docs.databricks.com/aws/en/ai-gateway/), also add `DATABRICKS_GATEWAY_HOST` as a secret or environment variable. Otherwise the app falls back to direct model serving endpoints.
+
+## Alternative: Deploy with CLI
+
+If you prefer working from the terminal or need more control:
+
+### 1. Clone the repo into your workspace
+
+```bash
+databricks repos create \
+  --url https://github.com/datasciencemonkey/coding-agents-databricks-apps.git \
+  --path /Workspace/Users/<your-email>/apps/coding-agents-databricks-apps
+```
+
+### 2. Configure `app.yaml`
+
+In the cloned workspace folder, copy the template and edit it:
+
+```bash
+cp app.yaml.template app.yaml
+```
+
+Set your `DATABRICKS_GATEWAY_HOST`, or remove the gateway lines to fall back to direct model serving endpoints.
+
+### 3. Create the app and deploy
+
+```bash
+databricks apps create <your-app-name>
+```
+
+No secrets or resources to configure. On first terminal session, paste a short-lived PAT when prompted — all CLIs are configured automatically.
+
+### 4. Deploy
+
+```bash
+databricks apps deploy <your-app-name> \
+  --source-code-path /Workspace/Users/<your-email>/apps/coding-agents-databricks-apps
+```
+
+> **Tip:** To update later, just `git pull` in the workspace repo and re-deploy.
+
+## Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `DATABRICKS_TOKEN` | No | Optional. If not set, the app prompts for a token on first session. Auto-rotated every 10 minutes |
+| `HOME` | Yes | Set to `/app/python/source_code` in app.yaml |
+| `ANTHROPIC_MODEL` | No | Claude model name (default: `databricks-claude-opus-4-7`) |
+| `CODEX_MODEL` | No | Codex model name (default: `databricks-gpt-5-5`) |
+| `GEMINI_MODEL` | No | Gemini model name (default: `databricks-gemini-2-5-pro`) |
+| `HERMES_MODEL` | No | Hermes model name (default: `databricks-claude-opus-4-7`) |
+| `DATABRICKS_GATEWAY_HOST` | No | AI Gateway URL override. Auto-discovered from `DATABRICKS_WORKSPACE_ID` if unset. Falls back to direct model serving if neither is available |
+
+## Security Model
+
+This is a **single-user, zero-config auth** app. No secrets or tokens are required at deploy time.
+
+1. **Owner resolution**: The app owner is determined from `app.creator` via the service principal + Apps API — no PAT needed
+2. **Authorization**: Each request's `X-Forwarded-Email` header is compared against `app.creator`. Non-matching users see 403
+3. **Interactive PAT setup**: On first terminal session, the user pastes a short-lived PAT interactively. All CLIs (Claude, Codex, OpenCode, Gemini, Hermes, Databricks) are configured automatically
+4. **Auto-rotation**: PAT rotates every 10 minutes with a 15-minute lifetime. Old tokens are proactively revoked. Maximum leaked-token exposure: 15 minutes
+5. **Session-aware**: Rotation is skipped when no active terminal sessions exist
+6. **On restart**: The user re-pastes a token (no persistence by design)
+
+## Gunicorn Configuration
+
+Production uses Gunicorn (`gunicorn.conf.py`) with:
+- `workers=1` — PTY file descriptors and in-memory session state can't survive forking
+- `threads=8` — Handles concurrent polling from the terminal client
+- `worker_class=gthread` — Single process + thread pool
+- `post_worker_init` hook calls `initialize_app()` to start setup
+
+## Workspace Sync
+
+Git commits automatically sync projects to Databricks Workspace:
+
+```
+/Workspace/Users/{email}/projects/{project-name}/
+```
+
+The post-commit hook uses `nohup ... & disown` to ensure the sync process survives across all coding agents, since some agents kill the entire process group when a shell command finishes.

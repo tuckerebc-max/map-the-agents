@@ -1,0 +1,581 @@
+{
+  "applied_operation_id": "op_b4c60094b5cd4e1c921e4ce136242946",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8d976f0cb09e9301e2c3c30d2d2020e352852401d942c7fddf5445d244a59f1",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e31e92a6e789c5489f6b42faa47b588123c3c2e8c00d0a0d41aa3ebe656eccdd"
+      ],
+      "text": "auto-co is described as a bash loop that invokes Claude Code every two minutes, letting 14 AI agents debate, decide, build, and deploy software continuously without human supervision."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dcd9ccd68aa128d21b14400f99a9a2ac6a5d5b69b7bf51efccf25c1ff072240d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 136,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L131-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73b9514f0207ddc25d6596624e59a33060a18103deaa067ee055bb1e969acb8f"
+      ],
+      "text": "Key runtime files include auto-loop.sh (the loop with monitoring, error handling, and adaptive frequency), PROMPT.md (per-cycle system prompt), memories/consensus.md, .claude/agents/*.md personas, and a Makefile of commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de7a4cdde55ae79390b307a73cf866d76afef04319135effca0e8a31e5185257",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L138-L138"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_792b21b168eb45f6951d366c32d112850ab753b20300acf4f851da475ef8e030",
+        "slc_dc40d854bc3b593c02909e93bd3f261edab8ffa063309e480827b356cd5d9ce1"
+      ],
+      "text": "The design deliberately avoids a database, server, or framework: state persists in markdown files plus git, with Claude Code as the sole dependency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6c36e215eeca7d418b2f7a389a2e01d4ac4270965798689bafac833f9cd1aa1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L82-L82"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 129,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L121-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05d266b96602545c819b594062aba235d923eb281045a7c4e873d61ae4ab9622",
+        "slc_a38de2262f0634c236b6778a9c930539572d7eababe727ba33953d4117bf6b35"
+      ],
+      "text": "Each cycle reads consensus.md, builds a prompt from PROMPT.md, calls 'claude -p', has agents update consensus, appends structured JSONL logs, then sleeps and repeats; each cycle selects 3-5 of the 14 relevant agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1798dfaec9bdee2883e3cd53b17f79eda74d5d6fc76f12dd61ff9effdf1f3568",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "6973397f00f5458fd3162011eb2ab6073a0bc2ea",
+          "line_end": 51,
+          "line_start": 47,
+          "path": "PROMPT.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/PROMPT.md#L47-L51"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 255,
+          "line_start": 255,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L255-L255"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 253,
+          "line_start": 251,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L251-L253"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_346225a19ddc679cba93f9246d2bfadf2d3bfa79416a1cefb65827748458c8d0",
+        "slc_63cd70ac542e6dd53cd9b3a6ebb6a96a08ba6a3ccb1bf69740b4c36844403024",
+        "slc_a0123eca0dc7c81d73ada338549b8468e7e1590b5a4042f03a56a312d9454fbe"
+      ],
+      "text": "Consensus.md acts as the relay baton carrying state between cycles, written atomically via a .consensus.tmp temp file and rename, with a .bak backup restored automatically on cycle failure."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cf8828ffe631e7bb38aec20284d51442fb3deade8d44cbc03745b551e94ba6f",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "6973397f00f5458fd3162011eb2ab6073a0bc2ea",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "PROMPT.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/PROMPT.md#L124-L124"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "ee5590798def46c1d4df424dd6cc5fd2b910a2c4",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/plans/2026-03-07-v2-improvements-design.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/plans/2026-03-07-v2-improvements-design.md#L21-L21"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "ee5590798def46c1d4df424dd6cc5fd2b910a2c4",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "docs/plans/2026-03-07-v2-improvements-design.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/plans/2026-03-07-v2-improvements-design.md#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_206fefb923d38c9a2b6489bb3ba7f590693f363e028a0478b8e1866c1fdaf76d",
+        "slc_98e3ab1d4f11f22df7b46eb6b9538150967b6694319ab11e9bdf2b2a821d89d5",
+        "slc_c76baa4b60db6aa27dad92c68adad383a4a4d824c83390ce4c636aacec42f0bc"
+      ],
+      "text": "Agents append structured records to four append-only JSONL files under state/: decisions, tasks, metrics, and artifacts, each with a defined schema; these files must never be overwritten or truncated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a74b819a7480753aa876342746598bdfe2258d89b2a31763bae36761d981001",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 245,
+          "line_start": 242,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L242-L245"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L49-L50"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 42,
+          "line_start": 39,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L39-L42"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 240,
+          "line_start": 240,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L240-L240"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 162,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L156-L162"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 65,
+          "line_start": 62,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L62-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_397eef0822d62c4a4188b3ebb999bdb0a2b8d32aae8d6d620f87a38bdabb46f3",
+        "slc_4e5d7a2d37d90a1da014c744d725dd68c8087cbcd146903d7961e97f4779073c",
+        "slc_613e87c12b85c01975f91ee4dd5652cd50d5437b06409ba1409c7f06f99da398",
+        "slc_b93bdf922f387736f7320719333126768dd1b98ba5b5afe489e6cab39a81b0a4",
+        "slc_d4f5fcf2e6042959752b4124973aadbe75b1df83c4114ded87dbe85c47641ef7",
+        "slc_fd74eebc3ad06d1f2d47d52e0dda1e571553cf73da55efe64b6d17f5b39e0664"
+      ],
+      "text": "The Makefile exposes operational commands such as make start, monitor, status, health, history, export, stop, pause, and resume, plus a Next.js dashboard runnable on port 3000."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8bac5388a7862c739ce4f150b191cfc5d1c1a50cfc84e7ea8a45ba7fb7a3b3a3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L107-L107"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 117,
+          "line_start": 109,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L109-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_421c65ff98fba52d7cbbfa2be3d92bc6585a914e2ee37d9b3058c8decd565ce0",
+        "slc_8fa019b1fda3d5931265fe8566fd11fdf438ced0aee0c7b0766b66684be23aad"
+      ],
+      "text": "Configuration is environment-based via .env, with documented variables including MODEL (default sonnet), LOOP_INTERVAL (120s), CYCLE_TIMEOUT_SECONDS (1800s), MAX_CONSECUTIVE_ERRORS (3), and COOLDOWN_SECONDS (300)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9fe278c0bbdac0610debda0408f1dc1b15947791c49d293626a6b4be2007ad5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 191,
+          "line_start": 188,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L188-L191"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+          "line_end": 175,
+          "line_start": 172,
+          "path": "docs/devops/runbook.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md#L172-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c8a04d226f06a89b321f19e5b87d6bd2f6314a1523b1dd7f1a8877067677a980",
+        "slc_c90dc326038aba7304e46a10da83ae8586cf22c3aee9c27fee97f26166f0114e"
+      ],
+      "text": "The loop includes resilience mechanisms: a circuit breaker after MAX_CONSECUTIVE_ERRORS failures with a cooldown, and automatic sleep of LIMIT_WAIT_SECONDS (default one hour) on API usage-limit errors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8b505c44e482774ae0d8d52ccb9ba7dc1df1cce8f8e2218aaa8d9843e2ba226",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 189,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L182-L189"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_866af6b26ef7801e237b31ff7abf8cda75b89062d324c16d1a113ca626d456ab",
+        "slc_ab49bf2eb442d3fbd64e67a24ce01098ce01f122e07776cdafba4b28692c1f0b"
+      ],
+      "text": "Claude Code installed and working is listed as the prerequisite; the comparison table states the only dependency is Claude Code itself, with no framework or database required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53894fc2f45808cad821dd913758373a096f20faed346d4a57c4854d2bd0df07",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "a69fb2733ecc93b471d60fe0012ae0c48573b740",
+          "line_end": 47,
+          "line_start": 42,
+          "path": "CLAUDE.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/CLAUDE.md#L42-L47"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "a69fb2733ecc93b471d60fe0012ae0c48573b740",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CLAUDE.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/CLAUDE.md#L5-L5"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "a69fb2733ecc93b471d60fe0012ae0c48573b740",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "CLAUDE.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/CLAUDE.md#L10-L10"
+        },
+        {
+          "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+          "git_sha": "a69fb2733ecc93b471d60fe0012ae0c48573b740",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "CLAUDE.md",
+          "repository": "nikitadmitrieff/auto-co-meta",
+          "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/CLAUDE.md#L16-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_399a7d1286928f396ccca517c9d8495c96eada7085ab6327796fce6f8947e613",
+        "slc_4fa8fd3863684b613c8b7f3435dbc6cabcc77913e54ba32c94d146096e00b679",
+        "slc_b951186aae736415441703645c60107851ad647db071e51fdc4c375b59b47214",
+        "slc_cc9d371bb8fcdf9d364a203cf6f109b6031c64e073882d69e283aab004f4c970"
+      ],
+      "text": "Repository development practice: CLAUDE.md instructs the operating agent instance to make auto-co production-ready, act autonomously without waiting for human approval, treat CEO (Bezos) as final decision-maker, and never modify safety red lines or break the loop."
+    }
+  ],
+  "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 230,
+        "path": "README.md",
+        "size": 8013
+      },
+      {
+        "lines": 141,
+        "path": "PROMPT.md",
+        "size": 5163
+      },
+      {
+        "lines": 268,
+        "path": "docs/devops/runbook.md",
+        "size": 6649
+      },
+      {
+        "lines": 54,
+        "path": "docs/plans/2026-03-07-v2-improvements-design.md",
+        "size": 2683
+      },
+      {
+        "lines": 277,
+        "path": "CLAUDE.md",
+        "size": 16772
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 289,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_22f34020719a581dbf9d77cc65d3ad6b",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/nikitadmitrieff/auto-co-meta/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/953e0670bb31dedd/manifest.json",
+  "package_id": "pkg_4a4cc6b59bc1ce6a32c6f53331a8497c6202ec86b501a7460867eb760f595220",
+  "repo": "nikitadmitrieff/auto-co-meta",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7e395c56ad58d86de1fda4d5eeb23d1aed5b98e84d1a5cf6a3ba01e2d8343070",
+  "snapshot_id": "953e0670bb31dedd",
+  "sources": [
+    {
+      "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+      "git_sha": "a69fb2733ecc93b471d60fe0012ae0c48573b740",
+      "lines": 277,
+      "path": "CLAUDE.md",
+      "repository": "nikitadmitrieff/auto-co-meta",
+      "sha256": "5b310ecb1f86faa50fa1cd9a835d7c29755ffffcb55bd36af0311e7a22ecdc3b",
+      "source_id": "src_b2ef17814a4e5fd094a5e9d67c8b5984",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/CLAUDE.md"
+    },
+    {
+      "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+      "git_sha": "6973397f00f5458fd3162011eb2ab6073a0bc2ea",
+      "lines": 141,
+      "path": "PROMPT.md",
+      "repository": "nikitadmitrieff/auto-co-meta",
+      "sha256": "174391e136c52d65041e6f7983ba19a2e407672d5268e6e1df85be52f51529be",
+      "source_id": "src_d3897964fcf259719897dc37b935b802",
+      "stored": "prompt.md-93f277324bed.md",
+      "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/PROMPT.md"
+    },
+    {
+      "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+      "git_sha": "bc147edc42515b743ffd80ec25d54f95e8d42a36",
+      "lines": 230,
+      "path": "README.md",
+      "repository": "nikitadmitrieff/auto-co-meta",
+      "sha256": "89eac92d02cea5930f4c197726e55696b4ecaf6791508710b0875aac7ed911f8",
+      "source_id": "src_3b703eb94fac525a82584ac59b1bdfa7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/README.md"
+    },
+    {
+      "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+      "git_sha": "efbcd46daa266ddf363053fae4fbc0f7b439e0fe",
+      "lines": 268,
+      "path": "docs/devops/runbook.md",
+      "repository": "nikitadmitrieff/auto-co-meta",
+      "sha256": "a1f422cc7831be19fb9f2c00eef1d9ecaa07234b6a4259bff8a6424da47dd0f5",
+      "source_id": "src_19e7da2c9bc25b5fb8b4da92a7dc3b6f",
+      "stored": "runbook.md-8188dfc1fd22.md",
+      "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/devops/runbook.md"
+    },
+    {
+      "commit": "5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e",
+      "git_sha": "ee5590798def46c1d4df424dd6cc5fd2b910a2c4",
+      "lines": 54,
+      "path": "docs/plans/2026-03-07-v2-improvements-design.md",
+      "repository": "nikitadmitrieff/auto-co-meta",
+      "sha256": "86cf2690cf860ec5e9aba55ab3e16ecd0f925cb4057325c45c143bb3e6aa70a0",
+      "source_id": "src_93d3b59ca8435889a4804e3064894c54",
+      "stored": "2026-03-07-v2-improvements-design.md-243b4c21bbe5.md",
+      "url": "https://github.com/NikitaDmitrieff/auto-co-meta/blob/5e6bb8a8765e10c482ba5e124bb0f2da4e6dc27e/docs/plans/2026-03-07-v2-improvements-design.md"
+    }
+  ],
+  "summary": "auto-co is described as a bash loop that invokes Claude Code every two minutes, letting 14 AI agents debate, decide, build, and deploy software continuously without human supervision. Key runtime files include auto-loop.sh (the loop with monitoring, error handling, and adaptive frequency), PROMPT.md (per-cycle system prompt), memories/consensus.md, .claude/agents/*.md personas, and a Makefile of commands. Evidence coverage: 172 of 198 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

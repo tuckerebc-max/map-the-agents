@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0c23ddbf3efa1da8b3519fecfcdb790257d5d5e1c1cbb9cf8c260ddcff804858
+- clm_3373bac4f62d048b8e682aefe70b6e5812e423ddf4c5733951079ca61171d3ed
+- clm_41bfb43dba6e4a6aa4dc31a581597fae0f4968c9dd25b806a9b8789ea7d28313
+- clm_5c8752a20aebcb66515d13b664ebffc71c25602f5648d9dc36369b88aa7bef1d
+- clm_736ff14632f01fa69b3721ec17d22e606d588117244a607efef13383b16b2ffa
+- clm_79f1ae175303448ac080ce8d2923ea98b5f7b6eb1abd7a603774d1860743b427
+- clm_7fc779315adb036e3e7614a3b76acc4dd7d046417269376774e297e68ad58a2f
+- clm_8aab6b6a87225a7b86eba49c7381aede3b034b56deb1a080e274e1a2bb6ede7f
+- clm_c231e83ca5eabf1fb43d94f3d642b2ac71a8a4a4cce4b9fa0a6a354c75986ea9
+- clm_edf7ca33fd184b87d4d1acb891149fbfd03d6fcd5d5e3fe15a00414d83837060
+maturity: draft
+page_id: pg_0387853679b15f3e93186c43a4775b32
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: maximilian-winter/llama-cpp-agent
+updated_at: '2026-09-14T02:17:51Z'
+---
+
+# maximilian-winter/llama-cpp-agent
+
+<!-- rcw:begin owner=entity:ent_4e49c8c57ffa59cc85ce2522c48b212a block=evidence -->
+- maximilian-winter/llama-cpp-agent is mentioned in this evidence. [@claim:clm_0c23ddbf3efa1da8b3519fecfcdb790257d5d5e1c1cbb9cf8c260ddcff804858] [@claim:clm_3373bac4f62d048b8e682aefe70b6e5812e423ddf4c5733951079ca61171d3ed] [@claim:clm_41bfb43dba6e4a6aa4dc31a581597fae0f4968c9dd25b806a9b8789ea7d28313] [@claim:clm_5c8752a20aebcb66515d13b664ebffc71c25602f5648d9dc36369b88aa7bef1d] [@claim:clm_736ff14632f01fa69b3721ec17d22e606d588117244a607efef13383b16b2ffa] [@claim:clm_79f1ae175303448ac080ce8d2923ea98b5f7b6eb1abd7a603774d1860743b427] [@claim:clm_7fc779315adb036e3e7614a3b76acc4dd7d046417269376774e297e68ad58a2f] [@claim:clm_8aab6b6a87225a7b86eba49c7381aede3b034b56deb1a080e274e1a2bb6ede7f] [@claim:clm_c231e83ca5eabf1fb43d94f3d642b2ac71a8a4a4cce4b9fa0a6a354c75986ea9] [@claim:clm_edf7ca33fd184b87d4d1acb891149fbfd03d6fcd5d5e3fe15a00414d83837060]
+<!-- rcw:end owner=entity:ent_4e49c8c57ffa59cc85ce2522c48b212a block=evidence -->
+
+## Researcher notes
+

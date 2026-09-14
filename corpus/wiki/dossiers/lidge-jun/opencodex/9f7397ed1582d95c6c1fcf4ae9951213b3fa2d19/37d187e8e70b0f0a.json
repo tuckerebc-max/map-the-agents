@@ -1,0 +1,756 @@
+{
+  "applied_operation_id": "op_073ad5213fb54340a221e6970362e102",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d487f157fa9c38f65f19c90f7d8b5624c9d8e739860fff0ed6459160dfe44da",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 314,
+          "line_start": 299,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L299-L314"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5a51a7c95ddda051418e14a5598690f0cd652ca7f35dfb792df998661c994dc"
+      ],
+      "text": "The product exposes a CLI including `ocx init`, `start`, `stop`, `service`, `codex-shim install`, `health`, `ready`, `status`, `gui`, plus subcommands for providers, accounts, combos, and v2 surface controls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f191ab9b9bf78fe94c2d944c012709b165babae3cd0b3163c6e102e2c9493375",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 324,
+          "line_start": 321,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L321-L324"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12b22e1f2b9602e0f7c45b840f81a6f2c41279d0741aa84c3ef33998665b9905"
+      ],
+      "text": "The proxy serves `GET /healthz` for liveness and an unauthenticated `GET /readyz` returning a sanitized JSON identity; ready returns 200 while pending/failed return 503 with Retry-After: 1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e4e3312513e7689faceaf727c36469b390712f4042e6640005fdef7df813732",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 286,
+          "line_start": 284,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L284-L286"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 282,
+          "line_start": 278,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L278-L282"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 276,
+          "line_start": 276,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L276-L276"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b7203147513751f3202af9b7b3b947cb9af5f0626c318fcd93758c8c1d7f45d",
+        "slc_9a3113bc16f61d373c3b0f0cdbc5549d16ba1e0e77b960cacc4bce7956354a29",
+        "slc_d7e7ea9bc94a73fe811c70d8f62381cb7f80ab3ce1a987dc3e7e3b798c4ecb6e"
+      ],
+      "text": "Models are targeted with a `provider/model` syntax (e.g. `codex -m \"anthropic/claude-opus-5\"`); omitting the prefix uses the default provider or name-pattern auto-matching, and inner slashes in provider model ids are aliased to `-`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e15bb6a783e8b1e534381dc9458c5e65d563b6c43a9634ee2555f091ffffdd4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 358,
+          "line_start": 355,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L355-L358"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f256017381fb013544f02e633d86db4b9204bbd7c68e02c928e8eea4ae5e9c1c"
+      ],
+      "text": "By default the proxy binds to 127.0.0.1 without authentication; binding beyond loopback requires OPENCODEX_API_AUTH_TOKEN, which every client request must carry as the `x-opencodex-api-key` header."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f420b19841d6e0c6f7fa840ccfc05c25f8038b0cf85495c69bc5369fb7c9f1c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L72-L77"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 100,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L90-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21dea0bf4e41c884f6673047429a7ab2c1302ba6dc5b87a78b48070e49b0eb4f",
+        "slc_581d336aeae051d8515ed960b9900301082b85fa06c083fffa63766dae39f476"
+      ],
+      "text": "The proxy can manage a ChatGPT account pool for Codex auth: quota-aware routing sends new sessions to the lowest-usage healthy account under quota policy, while existing threads normally keep affinity to their starting account, with rebinding on failover, exclusion, affinity expiry, or 401/403/429 recovery."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_574a4a9d05c6adc6cee83da3237d13974a067c6eead44a672081af1c207e9bfd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 247,
+          "line_start": 225,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L225-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c51dec4aa9a56be425af0f2ec7252d9f327e90ca6f803bfac34976afb8f7f28"
+      ],
+      "text": "Combos provide a single virtual model id with failover or weighted round-robin across providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_702709e4a1e295802072691dd637512dd7591828f2785eb8c77794f8de98ffb7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "2e8c7e3c635da5d150f38cd7fae4441e94ae3d19",
+          "line_end": 22,
+          "line_start": 19,
+          "path": "docs/codex-app-model-catalog.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/docs/codex-app-model-catalog.md#L19-L22"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "2e8c7e3c635da5d150f38cd7fae4441e94ae3d19",
+          "line_end": 17,
+          "line_start": 16,
+          "path": "docs/codex-app-model-catalog.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/docs/codex-app-model-catalog.md#L16-L17"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "2e8c7e3c635da5d150f38cd7fae4441e94ae3d19",
+          "line_end": 12,
+          "line_start": 11,
+          "path": "docs/codex-app-model-catalog.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/docs/codex-app-model-catalog.md#L11-L12"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "2e8c7e3c635da5d150f38cd7fae4441e94ae3d19",
+          "line_end": 25,
+          "line_start": 24,
+          "path": "docs/codex-app-model-catalog.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/docs/codex-app-model-catalog.md#L24-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_016addac6dbb93ffb2d11f9c8b904d5f6972a2255b90fd55d1a79b5313c0f1ba",
+        "slc_56c1646d686937bd42677149c31b41da287a8e00c1ded4c5e2d58658a3ef6939",
+        "slc_990045eb3de7a0e42f1fa50796bdc3335cb26b260da0547e16b52c557364be61",
+        "slc_9f8d00992e2188a53fa515a0c63b077a6d3db50818873194dfc5becd39e6ac5d"
+      ],
+      "text": "Integration with Codex works by writing Codex-native config and catalog files under CODEX_HOME (config.toml, opencodex.config.toml, opencodex-catalog.json, models_cache.json), so routed models appear in Codex's picker without patching Codex itself."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ace621e3a99791d266c18fbe2e8437a97b2aa7bfda5e41018b2b6228ebbe9e43",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 270,
+          "line_start": 269,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L269-L270"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 267,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L254-L267"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 252,
+          "line_start": 252,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L252-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7be76bdc16b9dcec835edbd1627b520ea77336c650fc9a2f93072e13b635c48",
+        "slc_d478fc05e6d2b158c1174c325534a6065ae18f58d91a0ca5e1ddad27b57fe2b0",
+        "slc_f54fc4f0ab378635613c53afa387730cb69bf93f6c0562b7c799f1b3eccd2c85"
+      ],
+      "text": "The runtime tracks 36 categories of retained process state: 12 byte-accounted stores evicted under a default 256 MiB budget, 4 monitored buffers, 24 state-store registrations with 60s expiry sweeps, and LRU-capped memos; live bytes are inspectable via GET /api/system/memory with the admin token."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4693d1cbb9ea8aaa67cc8aab0d05126d48132d4c15fb33e37ca2106285c5dab6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "05278f37cb9cb2023b1d7c2890d81d8f81092ad0",
+          "line_end": 37,
+          "line_start": 29,
+          "path": "AGENTS_INSTALL.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/AGENTS_INSTALL.md#L29-L37"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 202,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L199-L202"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40b59e06ea5ff4593c68fa0d889e42fe0d6289425352aad0eb7fb80ada184dd8",
+        "slc_a1a960f7e79068ff7917c081a1f37aca62ddc7677aab82b4389aa4b267d8c306"
+      ],
+      "text": "The management API refuses agent-driven star requests with `403 agent_consent_required`, and the CLI suppresses the interactive star prompt when an agent is detected, leaving the decision to the user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f4a7a386e93bbe17d59a42945df75697074332dfb854400cce04978625fbc62",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 216,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L214-L216"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 212,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L208-L212"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c927436cd69b8b8d686b6569b233bd9c37dcdef2b78b50fa231cdfa21cb8e52",
+        "slc_66b1b28ac16fc014d20f07925f2ba643778f456fbcdca6dc8b9f9d4e71e8757f"
+      ],
+      "text": "The package requires Node 18+ and bundles the Bun runtime on npm install, so no separate Bun installation (or WSL on Windows) is needed; supported OSes are macOS, Linux, and Windows x64 with launchd, systemd user units, or Task Scheduler/WinSW respectively."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cd40746fdc8c97761169b413aa712e807933bf95f18a882b3228b51084b9d72",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 386,
+          "line_start": 380,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L380-L386"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 388,
+          "line_start": 388,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L388-L388"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 378,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L377-L378"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a1ba6dc84188bfa0d341edb02448fcb5c72fc9be841f822f9ea42efbb9a61df",
+        "slc_a4329d47c2fba6a3070193cf1ad22c2218e50140173f32596b8eb6d2946b06c9",
+        "slc_fd4fabbba8cebdd24445b71c96b97c5e120d344883a2485d59f3ad00b87dd593"
+      ],
+      "text": "Repository development practice: source development requires the bun CLI on PATH (separate from the bundled runtime), and contributors run `bun install`, `bun run typecheck`, and `bun run test`; contributor setup lives in CONTRIBUTING.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e051d2f06c9c6681665a728e2c1e7938c74947be8a01a3bd78a219813f39afea",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 398,
+          "line_start": 398,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L398-L398"
+        },
+        {
+          "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+          "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+          "line_end": 396,
+          "line_start": 396,
+          "path": "README.md",
+          "repository": "lidge-jun/opencodex",
+          "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md#L396-L396"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e728925bdd73d243b406cbfb3993bc81c98428454e2fdfe23315b93deb1be61",
+        "slc_b6ac7421db014e23d0e2b9bcc435cf83148a51ccc9c0842b2d604a0283fb960e"
+      ],
+      "text": "The project warns it is community-maintained and unaffiliated with OpenAI or Anthropic, and that providers such as Anthropic may suspend accounts routing through third-party proxies, so use is at the user's own risk."
+    }
+  ],
+  "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 402,
+        "path": "README.md",
+        "size": 20141
+      },
+      {
+        "lines": 117,
+        "path": "AGENTS_INSTALL.md",
+        "size": 5876
+      },
+      {
+        "lines": 326,
+        "path": "CREDITS.md",
+        "size": 38867
+      },
+      {
+        "lines": 210,
+        "path": "MAINTAINERS.md",
+        "size": 13363
+      },
+      {
+        "lines": 105,
+        "path": "SPONSORS.md",
+        "size": 5123
+      },
+      {
+        "lines": 188,
+        "path": "docs/codex-app-model-catalog.md",
+        "size": 7717
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/codex-path-investigation.md",
+        "reason": "file-budget",
+        "size": 15661
+      },
+      {
+        "path": "docs/github-copilot-app.md",
+        "reason": "file-budget",
+        "size": 2785
+      },
+      {
+        "path": "docs/qoder-cli-provider.md",
+        "reason": "file-budget",
+        "size": 4571
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 460
+      },
+      {
+        "path": "docs/shadow-call-intercept.md",
+        "reason": "file-budget",
+        "size": 3185
+      },
+      {
+        "path": "docs/adr/0001-gui-update-worker.md",
+        "reason": "file-budget",
+        "size": 3133
+      },
+      {
+        "path": "docs/adr/0002-doctor-proxy-env-diagnostics.md",
+        "reason": "file-budget",
+        "size": 1426
+      },
+      {
+        "path": "docs/adr/0003-deepseek-v4-thinking-history.md",
+        "reason": "file-budget",
+        "size": 1165
+      },
+      {
+        "path": "docs/adr/0004-gui-toggle-contrast-and-nav-spacing.md",
+        "reason": "file-budget",
+        "size": 1149
+      },
+      {
+        "path": "docs/adr/0005-gui-design-token-system.md",
+        "reason": "file-budget",
+        "size": 2528
+      },
+      {
+        "path": "docs/adr/0006-provider-output-defaults-and-web-search-replay.md",
+        "reason": "file-budget",
+        "size": 2954
+      },
+      {
+        "path": "docs/adr/0007-headless-cli-parity.md",
+        "reason": "file-budget",
+        "size": 3983
+      },
+      {
+        "path": "docs/design-system/components.md",
+        "reason": "file-budget",
+        "size": 6657
+      },
+      {
+        "path": "docs/design-system/foundations.md",
+        "reason": "file-budget",
+        "size": 3788
+      },
+      {
+        "path": "docs/design-system/README.md",
+        "reason": "file-budget",
+        "size": 2606
+      },
+      {
+        "path": "docs/pr-assets/codex-spark-retirement/README.md",
+        "reason": "file-budget",
+        "size": 1240
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-26-oauth-reliability-integrity.md",
+        "reason": "file-budget",
+        "size": 27669
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-28-pr-quality-gates.md",
+        "reason": "file-budget",
+        "size": 23915
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-06-deepseek-responses-streaming-terminal-repair.md",
+        "reason": "file-budget",
+        "size": 25332
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-09-routed-computer-use-browser.md",
+        "reason": "file-budget",
+        "size": 13039
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-12-cl09-passive-production-evidence.md",
+        "reason": "file-budget",
+        "size": 4919
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-12-cl10-public-evidence-implementation.md",
+        "reason": "file-budget",
+        "size": 9559
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-13-cl10-deep-review-hardening.md",
+        "reason": "file-budget",
+        "size": 12183
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-14-cl10-final-review-closure.md",
+        "reason": "file-budget",
+        "size": 2435
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-26-discovered-model-display-names-core.md",
+        "reason": "file-budget",
+        "size": 19852
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-26-oauth-reliability-integrity-design.md",
+        "reason": "file-budget",
+        "size": 6029
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-28-pr-quality-gates-design.md",
+        "reason": "file-budget",
+        "size": 9056
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-02-pr-hygiene-design.md",
+        "reason": "file-budget",
+        "size": 1162
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-06-deepseek-responses-streaming-terminal-repair-design.md",
+        "reason": "file-budget",
+        "size": 14019
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-09-routed-computer-use-browser-design.md",
+        "reason": "file-budget",
+        "size": 11145
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-12-cl10-public-evidence-design.md",
+        "reason": "file-budget",
+        "size": 8696
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-26-discovered-model-display-names-design.md",
+        "reason": "file-budget",
+        "size": 11566
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 21880
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3987
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 4413
+      },
+      {
+        "path": "docs/design-system/contributing.md",
+        "reason": "file-budget",
+        "size": 2666
+      }
+    ],
+    "omitted_count": 36,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 8787,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 42,
+      "complete": false,
+      "omitted": 36,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_a8ed592f966552d8baaa1bb3bddcc48e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/lidge-jun/opencodex/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/37d187e8e70b0f0a/manifest.json",
+  "package_id": "pkg_aa330cb692cbea20eb3a68d193841c2e8e28726036d0a63177655a8a63ccb158",
+  "repo": "lidge-jun/opencodex",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d633f3a9d897995c09f07ebc9781e5c4e370d3f89d4493dbde4926e0e3fb9248",
+  "snapshot_id": "37d187e8e70b0f0a",
+  "sources": [
+    {
+      "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+      "git_sha": "05278f37cb9cb2023b1d7c2890d81d8f81092ad0",
+      "lines": 117,
+      "path": "AGENTS_INSTALL.md",
+      "repository": "lidge-jun/opencodex",
+      "sha256": "3091e03de3f1c754487840eca7c03bb7ef61ebefe1dfb1d0a6418df8b90843f6",
+      "source_id": "src_c5f404598f275482b8232f9d9e141f38",
+      "stored": "agents_install.md-da04027ba416.md",
+      "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/AGENTS_INSTALL.md"
+    },
+    {
+      "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+      "git_sha": "5737ed185ee9dffe53bf9fc6d27d8ebe6d090c4d",
+      "lines": 326,
+      "path": "CREDITS.md",
+      "repository": "lidge-jun/opencodex",
+      "sha256": "1993b914c4e436afeb6ea2a6cb042f41db6cab6226f27416c978a001a9ae93bb",
+      "source_id": "src_bab3383b87d55561b37ea651eab85c5f",
+      "stored": "credits.md-7ddc0d1fb1cd.md",
+      "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/CREDITS.md"
+    },
+    {
+      "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+      "git_sha": "4d04764956713e80cce36564c5dd2a00c69ea9cd",
+      "lines": 210,
+      "path": "MAINTAINERS.md",
+      "repository": "lidge-jun/opencodex",
+      "sha256": "ec04369be48c0942269316adc6c0e12759cf3864719fabc08cd1ca7ba5ee0395",
+      "source_id": "src_de2481b97860543699be98612a4c623f",
+      "stored": "maintainers.md-39da3bd6270d.md",
+      "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/MAINTAINERS.md"
+    },
+    {
+      "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+      "git_sha": "c7ce31acceb58b132285b3ff2cab0652f33b8187",
+      "lines": 402,
+      "path": "README.md",
+      "repository": "lidge-jun/opencodex",
+      "sha256": "7d10727da7d8914f77dde606a2f873db1361252d00c97de94be90d232ba1b791",
+      "source_id": "src_a158f48d66a65c32b7711029e4a77da5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/README.md"
+    },
+    {
+      "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+      "git_sha": "76a54c377b70f0c89b9e6165965026753c5a3354",
+      "lines": 105,
+      "path": "SPONSORS.md",
+      "repository": "lidge-jun/opencodex",
+      "sha256": "8e6d8aa714eea296b2a538c1da4bcd0356948962d4c28338e5f672711ded552c",
+      "source_id": "src_519a21d9253051b7b52d8b9337f333b8",
+      "stored": "sponsors.md-1a4aa2b2ccfa.md",
+      "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/SPONSORS.md"
+    },
+    {
+      "commit": "9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19",
+      "git_sha": "2e8c7e3c635da5d150f38cd7fae4441e94ae3d19",
+      "lines": 188,
+      "path": "docs/codex-app-model-catalog.md",
+      "repository": "lidge-jun/opencodex",
+      "sha256": "afa17040be626fee7f69844b81e9b62fa1b7f52e7eb8f9107528228e7ae07fa8",
+      "source_id": "src_8a3bad3f83415e2ead5c829da034247f",
+      "stored": "codex-app-model-catalog.md-0913b4e79a6f.md",
+      "url": "https://github.com/lidge-jun/opencodex/blob/9f7397ed1582d95c6c1fcf4ae9951213b3fa2d19/docs/codex-app-model-catalog.md"
+    }
+  ],
+  "summary": "opencodex is a local proxy (npm package, Node 18+, Bun runtime bundled) that translates Codex's Responses API to many LLM providers, with a CLI (`ocx`), web dashboard, ChatGPT account pooling, and Codex model-catalog integration. Evidence is mostly README/docs documentation; no code inspection and no agent-performance evaluation evidence is present. Evidence coverage: 135 of 213 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

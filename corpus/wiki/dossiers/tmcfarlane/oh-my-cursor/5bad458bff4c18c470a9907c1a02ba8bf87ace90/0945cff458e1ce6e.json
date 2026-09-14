@@ -1,0 +1,645 @@
+{
+  "applied_operation_id": "op_778ae61339d649c19b0d6086f2044915",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_911d9c9bd8f5e4a4a42658eb309c648c1814ba4608ba475e03839058f46bcbf8",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L18-L20"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5005b8b013fde7643d2edcbe77b51be8f885cd849f484ba68e2c871b05afeb02",
+        "slc_bfc6aab6f6415f43f91dda5a5849b071478a8be910aa0684ee04d2504bb270bc"
+      ],
+      "text": "The project ships 8 agent manifests, 8 slash commands, hooks, and one orchestration rule as pure Markdown/config files for Cursor, with no external runtime or wrapper CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cb6ed239ff8b943c9be60f56704dec43f47c49a25732229f61c4032a72f9b78",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L76-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13c2e9a355d2a86f3a64767a0c70e16a2884e6cf953476bef7cf23beefef8a82"
+      ],
+      "text": "The orchestrator rule makes the root thread a pure dispatcher whose only permitted tools are Task, TodoWrite, AskQuestion, and SwitchMode, delegating all work to specialist agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57651503d8478abd2c8bef4b5f0f2dc31262c0eeb8dbc9da2b1fd86d722e3671",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 367,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L364-L367"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 362,
+          "line_start": 362,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L362-L362"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c725c4266a0f2a10fbe355342010001cdd705a5ae71780e6a6363fc20115c38",
+        "slc_3eca53ca0c37df9aabe701e9a6313e26bd7bc1bd6bcad4366e3187dbb0329218"
+      ],
+      "text": "A '/cactus-juice' swarm mode decomposes requests into 5-10 independent single-file micro-tasks and spawns up to 10 parallel fast-model subagents, with the root collecting and verifying results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_50699e2f38d65fcdd6fd4838f1ea70160d72f821a047ca6018945507c6ceacdd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 407,
+          "line_start": 407,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L407-L407"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 403,
+          "line_start": 400,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L400-L403"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bf2ef1aab8dffc2a39a21a2dcdf7d6f2a61f3ac673d4d0f9b93c34b0e1b4aa0",
+        "slc_4aa6dd7c599217ff96ad12dc6539a47472b97bb26f36c1b3131c3f8b968ede59"
+      ],
+      "text": "On Cursor 3.4+ a two-tier swarm pattern applies: coordinators (Aang, Sokka, Katara, Appa) spawn worker agents (Toph, Momo) as leaf nodes with max depth 2; Zuko is root-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_218c206cdf72a2a5a326ac004db0c58386493041add66c49c1bd7dd5cf4f0c2e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 344,
+          "line_start": 334,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L334-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56ea8550b1611de1ae04372941cff187b741626c1cdafa83007f18c8e87aba93"
+      ],
+      "text": "Slash commands map to agents: /plan (Sokka), /build (Aang), /search (Toph), /fix (Katara), /tasks (Appa), /scout (Momo), /doc (Iroh), /image (Zuko), and /cactus-juice (swarm)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22d5c6340e728f553e5e992f22048e97181d9668881f11cfb8792ebfac3c00a5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 223,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L223-L223"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 310,
+          "line_start": 310,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L310-L310"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 231,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L227-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_711398fc53aa5fac860659823aa7681c0288ec0f7501cacdfa6de0b6254ae0d2",
+        "slc_7e0d32e4229e58fdfcf124e5c4a9f6dc11118c52f09e910a3afd18685b2f4841",
+        "slc_f81ec5c113912ec6706a53ad488f31a608b188a16105c4a32ac4cc8ab9cdabdc"
+      ],
+      "text": "Per-agent model routing uses Cursor's model: frontmatter field; the default is composer-2.5-fast, with Sokka and Iroh on claude-opus-4-8-thinking-high and Zuko on gemini-3.1-pro."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_843034a99a7e9a0c48e2ea18d0d59ff954b90d2711a91d5dc7cc2f097d36756d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 430,
+          "line_start": 426,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L426-L430"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 419,
+          "line_start": 416,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L416-L419"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49d3e11b648b69574119a5ac12e8624ee021a8a439c59ef535dcdac35ec10b61",
+        "slc_be7dde30efbb71b79f1b6b3864f00605bd465f48b518aca125282f542e7bb093"
+      ],
+      "text": "Hooks wired via .cursor/hooks.json include guard-shell.sh, which blocks destructive shell commands and commits containing anti-patterns like 'as any' or '@ts-ignore', returning allow/deny/ask decisions on beforeShellExecution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57bb1ec049a4b97399cd70947302af05245d4e61bccf10c0e369a52d2df1918f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 442,
+          "line_start": 438,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L438-L442"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20c4907cf6accbac622684068ffb7930bc0fe5ae5b2341cafd2f2dee44b05685"
+      ],
+      "text": "A permissions.json auto-review policy auto-runs safe calls (lints, tests, builds, read-only git) and holds risky ones (destructive filesystem, history rewrites, credential access, outbound network) for review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6da49be344dcd27065b82a9c85f22c10cca84912cc0b39e3a9b56eb6ed7fc0b4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 445,
+          "line_start": 444,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L444-L445"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e3af4ae9d46f7205feca92929f72f005931ddaae8ff7dfc9f5e8addda18328f"
+      ],
+      "text": "The README states hooks and auto-review are best-effort and not a security boundary, reducing footguns and approval spam without replacing real sandboxing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df796cde9d43da13b49cce5f3477cfbdaae861f3e215bf17c2befbdc90e5e277",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 324,
+          "line_start": 324,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L324-L324"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 328,
+          "line_start": 328,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L328-L328"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d14479810af33d55f4287486a2bc117f9a37196d7ffb2f5727c335fe44b8e0e",
+        "slc_867cd472d862e02fcd27f2133b8b58496a93f2a8cb97356d21a55fd0f586bae1"
+      ],
+      "text": "An invalid model slug does not error but silently falls back to composer-2.5-fast, so a typo can make an agent run the wrong model unnoticed; slugs also change between Cursor versions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff47ac7fd69edc911c5fe8b48e1923fc1a6d1356c594426f8fbdfa8eba518abe",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "67e9dbb21ff9dd7c374b65ca3fd733c2dc3b3a33",
+          "line_end": 8,
+          "line_start": 6,
+          "path": "CHANGELOG.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/CHANGELOG.md#L6-L8"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 549,
+          "line_start": 549,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L549-L549"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 25,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L22-L25"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 237,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L237-L237"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2531ff046eba8931cd0045d9e39f391155f47e9a84b683cfd48c2757a21b1e93",
+        "slc_45e6f1d7293d20d9e1bcbdbc6e8c1b295577e30a68d436c79f4086b99f6d63bf",
+        "slc_5df86475c44543535dd6c04d89ebf564424a4b9c84e7d591f18312a33259f627",
+        "slc_fc8b1318d449f35dfc9ef995ec220f375ba8f2a8dab42e6d826b772c9af50c6c"
+      ],
+      "text": "Requires Cursor 3.4+ with agent mode (subagents); the project is MIT licensed and validated against Cursor 3.8.23 and 3.9.8 per its badges and changelog."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_175a675379fb5ebfae4db9c351020961944ce3f75e6259db51a1a75ae6e0d90d",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 471,
+          "line_start": 471,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L471-L471"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 474,
+          "line_start": 473,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L473-L474"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54ac0fba809714740e8bad2d18ec6e2dc26545f17383b2fee32ea2310ad3dcae",
+        "slc_5b7f27ae82e46894516e4a35d00f06a58c80e0378e430c459c7cc4b20cff45fc"
+      ],
+      "text": "19 community-sourced skills are vendored in-repo as SKILL.md directories that Cursor auto-discovers, installed by default with a --no-skills option to skip them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28235d4db184be1f31a9edae28411c37017f841f75d732636de60e280a4979d8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 298,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L292-L298"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 257,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L248-L257"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e9f53ead37930a1a612bf4d968f8ecd1fce7f0ed509c57b94f0428768624e2e6",
+        "slc_f0750df42852a4ad9d185caddf74a4896ac4ad63d54b73024ae97966d3f2dbda"
+      ],
+      "text": "The installer supports user (default ~/.cursor) and project (./.cursor) scopes, plus --claude/--codex cross-tool installs, --dry-run, --force, --uninstall, and --disable/--enable orchestration flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c206cd08c2fabaeead0b2d3451a0e6333cf7a9d79f545d6a15205347648ff82",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 541,
+          "line_start": 541,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L541-L541"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c80bd5c02cb612820afdee25de9925f9fa51e10cb33a1caea95c4bbca573dde8"
+      ],
+      "text": "Repository development practice: contributors clone the repo and run bash install.sh (or install.ps1 on Windows) to install from source; changes to agents, rules, commands, or hooks take effect after reinstalling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1693add8051da1924624812cf80bf10efe56b6a4e275d472bd5c203f4e35094",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 450,
+          "line_start": 447,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L447-L450"
+        },
+        {
+          "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+          "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+          "line_end": 38,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "tmcfarlane/oh-my-cursor",
+          "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md#L29-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5fb9e8ba3f759dd6f0b7b59f1ddcf8d45a163b6d5d2d50021899aa442cc90825",
+        "slc_81e4fb187a0c65115e0325a1a010c4261ff56963cc65a12429f1596ec4437627"
+      ],
+      "text": "docs/E2E-TEST.md is described as a 15-check runbook (model routing, hook enforcement, auto-review) run attended against a live Cursor app, producing a pass/fail table; v0.4.1 validation moved from 13/15 to 15/15 on Cursor 3.9.8."
+    }
+  ],
+  "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 549,
+        "path": "README.md",
+        "size": 30453
+      },
+      {
+        "lines": 226,
+        "path": "VALIDATION.md",
+        "size": 12036
+      },
+      {
+        "lines": 294,
+        "path": "docs/E2E-TEST.md",
+        "size": 14665
+      },
+      {
+        "lines": 85,
+        "path": "docs/ROADMAP-v0.4.md",
+        "size": 5792
+      },
+      {
+        "lines": 109,
+        "path": "CHANGELOG.md",
+        "size": 6117
+      },
+      {
+        "lines": 24,
+        "path": "CONTRIBUTING.md",
+        "size": 1366
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1283
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 126,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_c7dddc262c2a508abad4137c68beeb9a",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tmcfarlane/oh-my-cursor/5bad458bff4c18c470a9907c1a02ba8bf87ace90/0945cff458e1ce6e/manifest.json",
+  "package_id": "pkg_103498c3145431632e5c642ad9fc8d1190f53d6bf7740410b4d81eca01603ed3",
+  "repo": "tmcfarlane/oh-my-cursor",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "510a86ee6d7ca0ef383a2a33a12316c413d6e71a8879dd2c74f6add53f2ccbb2",
+  "snapshot_id": "0945cff458e1ce6e",
+  "sources": [
+    {
+      "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+      "git_sha": "67e9dbb21ff9dd7c374b65ca3fd733c2dc3b3a33",
+      "lines": 109,
+      "path": "CHANGELOG.md",
+      "repository": "tmcfarlane/oh-my-cursor",
+      "sha256": "b613f8f708fe9b0f2c6b115f58d3c150f6857c3388b5a4a2622d9946609756f4",
+      "source_id": "src_d6ab6117abde5a5ca3cfbdb63da64fd7",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/CHANGELOG.md"
+    },
+    {
+      "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+      "git_sha": "2a6e7ad829fae7dc1c1e7696919ebd6167a3c810",
+      "lines": 24,
+      "path": "CONTRIBUTING.md",
+      "repository": "tmcfarlane/oh-my-cursor",
+      "sha256": "001b49dacdc06e2ea77e37c1be8dacb1083f56462fcc2e1bdf2bbaa39e30a2ed",
+      "source_id": "src_4b42faf2232f57eca1bd490ef20ed291",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/CONTRIBUTING.md"
+    },
+    {
+      "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+      "git_sha": "498b1716a890d213c75259ee4da65af8968a1d09",
+      "lines": 549,
+      "path": "README.md",
+      "repository": "tmcfarlane/oh-my-cursor",
+      "sha256": "072eb3b61867c16cd0e2544c4f8a581a9d4870eebae5c4d35df772a01ba05bd9",
+      "source_id": "src_448adfbd88f35385863558a3cbcfbc92",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/README.md"
+    },
+    {
+      "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+      "git_sha": "eed1738ee317a9ffd6de5d1994f3a97e73d34829",
+      "lines": 226,
+      "path": "VALIDATION.md",
+      "repository": "tmcfarlane/oh-my-cursor",
+      "sha256": "423d7f408dac810559d6e4f72c069dc7181f8bb60fdf61c22ee2654d38aa89cd",
+      "source_id": "src_5aa6c30c884156a48f03c990199771ab",
+      "stored": "validation.md-37959855b8c9.md",
+      "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/VALIDATION.md"
+    },
+    {
+      "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+      "git_sha": "c27ea9770e750e5ac784dd609d13c6575ce98248",
+      "lines": 294,
+      "path": "docs/E2E-TEST.md",
+      "repository": "tmcfarlane/oh-my-cursor",
+      "sha256": "7d99946b7ce286840b40761522d8d354bc0c03324d8f1f5e68085b15ef6205b7",
+      "source_id": "src_25f726b1881d5e5186100f97c80534e5",
+      "stored": "e2e-test.md-e447cdf25e29.md",
+      "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/docs/E2E-TEST.md"
+    },
+    {
+      "commit": "5bad458bff4c18c470a9907c1a02ba8bf87ace90",
+      "git_sha": "80ac826cbfee8596aac6ec5d7025112f8a30a683",
+      "lines": 85,
+      "path": "docs/ROADMAP-v0.4.md",
+      "repository": "tmcfarlane/oh-my-cursor",
+      "sha256": "fa77f6a1e3a2c419084eecabbf6dc684e4188f654e302f641a3f2328af14ab39",
+      "source_id": "src_a416720f309d538fa46480937d7c993c",
+      "stored": "roadmap-v0.4.md-728a24bc32a3.md",
+      "url": "https://github.com/tmcfarlane/oh-my-cursor/blob/5bad458bff4c18c470a9907c1a02ba8bf87ace90/docs/ROADMAP-v0.4.md"
+    }
+  ],
+  "summary": "The project ships 8 agent manifests, 8 slash commands, hooks, and one orchestration rule as pure Markdown/config files for Cursor, with no external runtime or wrapper CLI. The orchestrator rule makes the root thread a pure dispatcher whose only permitted tools are Task, TodoWrite, AskQuestion, and SwitchMode, delegating all work to specialist agents. Evidence coverage: 157 of 294 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

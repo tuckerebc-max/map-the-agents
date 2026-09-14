@@ -1,0 +1,591 @@
+{
+  "applied_operation_id": "op_bea5639e73094f5c9c9a1b560b66ecba",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_882b5a009d20356626caeca0fce2ef4dea0809cb8f0957a34a4b5c2818a6f74e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L5-L5"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L20-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4cfbbe256c57e3f9dabb9d3fd485dc16e1cc82a76a0c11dcdc90a66ac20a362a",
+        "slc_bce54f87ffd9e0e4d286a2a82944190fa309f21e0426f87c1a28ec05d0a9428e"
+      ],
+      "text": "Gadfly is a Socratic supervision layer that sits inside an AI coding agent's live tool-call loop, questioning consequential moves before they happen."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0cbd08a771b8296897647ddfd461fc3e6888d57b48c7d99de9159ad2aadd9598",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L16-L16"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 97,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L91-L97"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L89-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32b9cf194631355d749588daa6d86e5002398b6427021a1bd01d555f4e6c4945",
+        "slc_389014842bb46d9cf834934246f564e4c7be5113046cbd58ef12d5420010e1e0",
+        "slc_6659d19f16c94074bc2604c94095d7e9292fa243b6a68642190f892c123138b2"
+      ],
+      "text": "Two isolated, read-only supervisors review each action: an Architect (default Opus) catching spec drift and undiscussed decisions, and a Code Reviewer (default Sonnet) catching real defects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4ccc116b835aebcec2404e3f20b46b41253febeaa4e61885b1a909b70420d37",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 66,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L62-L66"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 33,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L28-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43e55d2f62613fb0f6317bfecdd6def2c12a44605f9c905b1ad2a7e49eb87667",
+        "slc_dde5348d0f8567107c8b5c64bfb10e68d57dc6e4b615de5ad9b02dbab14a251f"
+      ],
+      "text": "Reviews produce four verdicts: silent allow, a question sent back to the agent, a surface that pauses and asks the user, and a block on spec-violating or buggy actions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e22ef057fda910ee0e87b17b2ee20fd68a37cf0429878214ecf9f8f4a44e473",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 60,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L58-L60"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 40,
+          "line_start": 36,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L36-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38ca4d84db1c200178a60ad44c716edbd7ff6bb8b096fbc23fd94315f5583d7b",
+        "slc_c4593cd27c90ea5a06a6eabf8334462317002f1bc9aacc68afa7c1241495de04"
+      ],
+      "text": "A deterministic first pass auto-allows reads and safe commands without any model call, so LLM supervisors only engage for consequential actions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf256486053b36ff38b0f85aa8e9d829fe29d2a531e09a20927bda49a84ed054",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L28-L28"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 26,
+          "line_start": 20,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L20-L26"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 125,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L119-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44d6f512e194794ed8eac0db03a202fb5445c2c753efbc79b87385c1f2efbed0",
+        "slc_6f5b6708f3898d7e646681dd11f71a175810a831e7cb1231ebfc2af921d49a46",
+        "slc_97b6c0649fbbf3585df91866872dc02d3103b185dcb9246ec61502869165e0f2"
+      ],
+      "text": "Supervision is grounded in five project files: spec.md (human, required), claude.md (human, optional), codemap.md (builder), decisions.md and memory.md (Gadfly-owned), with a defined trust order."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab7e1510af2897fcc01b0870d5de99ed98701b21ec245f46ff92e20ea52ea3e9",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 129,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L127-L129"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 40,
+          "line_start": 36,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L36-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2147448dfe6e6fc094171524e29556212f3cacca0e3aa6fd2670f8985e7c70df",
+        "slc_c4593cd27c90ea5a06a6eabf8334462317002f1bc9aacc68afa7c1241495de04"
+      ],
+      "text": "The agent can read the memory files but is denied direct writes to spec.md, claude.md, and decisions.md; those files change only via the human or Gadfly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0376cb9dc1e4e5382f9316a143c5abb01fdd241ae52f39f4aae24c0426d57661",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L50-L50"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 151,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L149-L151"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L153-L153"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L147-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36d9524ce2809e4624d930f1b9e8ed621f5309da9cfd3c8872950320553ee042",
+        "slc_b50604a049c5741ea17d9df563a370f165db1745eedd151aeae27b289e93b33a",
+        "slc_c5f6600884721f4f4e60bbfb93cdd507cff528e321d479431e7325141b51ff81",
+        "slc_e5546f8b84e4e8054b53e82b3ef39c574b54b89032a23557c6303e733a6fdf88"
+      ],
+      "text": "An autonomy dial (autonomous, balanced, collaborative) controls how often undiscussed decisions surface to the user; irreversible operations always ask regardless of the setting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b5fca4fbdb8f61b809b951035372c2ae3c4e8d8a38433bd8551ab5727e836ea",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 184,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L178-L184"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 190,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L188-L190"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 169,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L167-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c5aaa06bc46dc6c7fa01e24c543d49c1da678b247962e0961069fbee83a39ef",
+        "slc_357d286050a34fb5f9fc38d67d81a29cb051ec5f5f425319a1124e0664b37dc1",
+        "slc_c75ded6cf768a97691ce52dd1e2f83e17b0880d0940a395ae4ac9dfe41a611e5"
+      ],
+      "text": "CLI commands include gadfly init (requires spec.md), status, config, disable/enable, and uninstall; configuration lives in gadfly.toml with optional keys and defaults."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d62a014318873671a1dfa88b3cdb168357da3e9f8df32c2eb7e4ff12429dbd5e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 161,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L159-L161"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L157-L157"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L11-L14"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 262,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L262-L262"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26539f87adf66ba3af51a671b2c9816f41f2934254c4b70ef8981f51ad30761e",
+        "slc_40ec1c22856d8df8f5823ae2f6fc09033b050acb4acee0af4744344a71cc339e",
+        "slc_bba7ae3e67e7221580f47ea1115dcfca334a162e669b7d0ee6fc374d32b302fb",
+        "slc_c440ad37ae688b7c69928548f9a5630f39d1752927d15d25c67615e585977041"
+      ],
+      "text": "The project advertises zero dependencies, targets Python 3.11+, is MIT licensed, and in v1 supervises only Claude Code, running on the user's existing subscription without an API key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2b7cb21345ad8a16acaf4d91a6e01487d384ea065d42a579f3337e120f6fb30",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 229,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L227-L229"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 80,
+          "line_start": 76,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L76-L80"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 244,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L231-L244"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32cedc6d333ec4bd3fd021379a50ae4bf09a0199f1cc6cc7c2ad9114affc728c",
+        "slc_5e22f7e59edae2d089c25403b8f15d4d9ea1a30f779774ebfcf102a8aeaa023c",
+        "slc_851f12f2a384faaadb1e65a007ae11d3d78e87555d9a1f2a3eebe74ab5417d93"
+      ],
+      "text": "Architecture is a pure, agent- and LLM-agnostic core wrapped by two swappable adapters (host-agent format and LLM provider); supervisors call a provider-neutral client with models set in config."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e571918b9f911e09e41297784035a7abce80eb813e933cfa8f90394559e46b12",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L68-L68"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L18-L18"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+          "line_end": 107,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md#L104-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6057d04f8c7d832f11839a9970b712c3574d72ca99a3ac1036ef8245145902cd",
+        "slc_cffe468b10d7747b6050ce82b7f14688f82a4043f6abe318c679f30c07336d07",
+        "slc_d608db5b02438a086a309c199418a89445751491f392b69b5d7d189bae4a22fe"
+      ],
+      "text": "An append-only edit-ledger records agent edits; out-of-band human edits are diffed against them by a separate idle-time extractor that distills generalizable corrections into durable rules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9fa9a915c32de59faea3bc7abde5774307efafd0cc54a1f1b389fa2352fc5bb5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L11-L14"
+        },
+        {
+          "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+          "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+          "line_end": 89,
+          "line_start": 84,
+          "path": "spec.md",
+          "repository": "touchpoint-labs/gadfly",
+          "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md#L84-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_017fe49bf3a0e817df150944ab4502adc199112ec718aba1f67867cabeda1833",
+        "slc_25482f682a6ebc6b971bfb4adf3b75e34ce8e90d734b890bca35e8003224ca25"
+      ],
+      "text": "Stated v1 non-goals include no post-hoc QA practitioner, no taskmaster, no full interactive or training mode, no daemon, and no adapters for other agents; supervisors never write code or run commands."
+    }
+  ],
+  "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 262,
+        "path": "README.md",
+        "size": 12948
+      },
+      {
+        "lines": 99,
+        "path": "spec.md",
+        "size": 17217
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 78,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_3d8a7b9e839e516cbeee406d6576ca8a",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/touchpoint-labs/gadfly/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/8e44562db5006424/manifest.json",
+  "package_id": "pkg_ee606e752364f1bb29164a8e88c0634336c8a12cf3acbde9d2e860df3f91a677",
+  "repo": "touchpoint-labs/gadfly",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "76ad9e2c0f6ae5b8830b7fe6fc6b34aaa7722aba22d447dd1da6503b67138731",
+  "snapshot_id": "8e44562db5006424",
+  "sources": [
+    {
+      "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+      "git_sha": "b44f4b3e3b3577ed93d9a0227da4e1253244b776",
+      "lines": 262,
+      "path": "README.md",
+      "repository": "touchpoint-labs/gadfly",
+      "sha256": "f299c91932a964212906f6b23ea879168c574c0dbc893d1041b516bb0bff7937",
+      "source_id": "src_f6eb8d6767735207bb507b7ed060384d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/README.md"
+    },
+    {
+      "commit": "2798406b5d27a87de29ca8e6d1b86cc7f25d6408",
+      "git_sha": "d79e454179055c859f1d2cc544bb7284296e588b",
+      "lines": 99,
+      "path": "spec.md",
+      "repository": "touchpoint-labs/gadfly",
+      "sha256": "93f07243e989c778418cda502df125d3c00a5ab02e1262b86192181faaf84fb4",
+      "source_id": "src_5254ed58687b593e9bbd66c99f4a2a50",
+      "stored": "spec.md-bc6661da34ec.md",
+      "url": "https://github.com/Touchpoint-Labs/Gadfly/blob/2798406b5d27a87de29ca8e6d1b86cc7f25d6408/spec.md"
+    }
+  ],
+  "summary": "Gadfly is a documented (README + spec.md) Socratic supervision layer for Claude Code that reviews tool calls pre-execution via two isolated read-only LLM supervisors, grounded in a five-file memory system with an autonomy dial and CLI commands. Evidence is documentation-only; no code inspection is available.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,815 @@
+{
+  "applied_operation_id": "op_64308dbc2b004dc5a6b2f4885ba03f2a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7adb9593037b46708b9de4fb2ac935cca4bc2cdede2093b45f3f8b6df7b7095",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21f8784f70f69cd832d564a88c0f35343a24ffb0511702a3ccf1ef4555f2012c"
+      ],
+      "text": "The project is a multi-agent marathon simulation built with Google ADK and Gemini in which agents plan a Las Vegas marathon route, simulate weather, traffic, and crowds, and run the race autonomously, communicating over the A2A protocol."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07384350314468305061486cc751e66711b92108a2feef66208f0c6ab4db1f11",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 129,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L122-L129"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 109,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L100-L109"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 120,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L111-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2be368ee9f52def9885fcf0f9be0bac23add654710acc137f00e9a3567bddf3d",
+        "slc_5a3ec83ef0ea78fa1bdb97388332a467340c23ef942ea9317a8adf6679b7df44",
+        "slc_922c3aa37e2f1b8e9232f01ecb99b381b33042480639921674ce54b77e90d372"
+      ],
+      "text": "The system comprises a Go/Gin WebSocket gateway that routes requests and manages sessions, Python ADK planner, simulator, and runner agents, an Angular 21 + Three.js 3D frontend, and infrastructure including Redis, Pub/Sub, and PostgreSQL with pgvector."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab19ed864feca7698f70ff936321f1e86841a9a3008d1abd9dac9a9b2abad6f8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 129,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L122-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2be368ee9f52def9885fcf0f9be0bac23add654710acc137f00e9a3567bddf3d"
+      ],
+      "text": "The planner ships in three variants: a base planner, one adding LLM-as-Judge evaluation, and one adding AlloyDB-backed route memory; the simulator runs a tick-based pipeline and spawns runner agents, which come in LLM-powered and deterministic autopilot variants."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f22814014385a78cc358b4a1dd40a6278e3de3a7971b5e92ca25fdc57794e03",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 229,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L229-L229"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 227,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L227-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9bf29114acfe9b4bada9c8e89962e02c604718476ffd006034ebea507f282b5b",
+        "slc_b505f1c41157f78698b4132b2098120f265985f0172ad6ce574842d17977ae37"
+      ],
+      "text": "The frontend boots in Cached mode by default, replaying NDJSON streams recorded from real agent runs so demos do not depend on live LLM calls or the network; Live mode instead talks to agents over WebSockets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8742dad4cf2c0d72d44e642c8ae2d042d4fc95c48af5e6e1dafce8ebf621bbb1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 367,
+          "line_start": 362,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L362-L367"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L29-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a20caf0b49b342bbc35b21a709335eb2ffbe21b8321fddba159417f5ca34bb6",
+        "slc_431ab4a4a7bd083e0ea037f89794fde027876b24d1ef645c46ba07687fee886f"
+      ],
+      "text": "A deterministic runner variant, runner_autopilot, makes the same shape of decisions as the LLM-powered runner with zero API calls, intended as a free baseline for load-testing the simulator."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8caff6869983a9e3fd3980a4682fa21d6e645241026f6cf66f1b4ac7a3915e89",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 346,
+          "line_start": 346,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L346-L346"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "466a65551c5c49b1cb8cb6f693be0ec69ca553be",
+          "line_end": 34,
+          "line_start": 23,
+          "path": "GEMINI.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/GEMINI.md#L23-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f14e827a6c3430638bc650c09ac27150e622e7ef1728efd823dbe2d3349bbb6",
+        "slc_f3ccd907bc62534bf648bffd53657cb7e3d8384c140b42aa40c503ae76c654a1"
+      ],
+      "text": "Agents expose agent cards at /.well-known/agent-card.json; the gateway fetches these cards at startup and routes messages to agents based on their declared skills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14d7aee4d1a81c05cbd7a1a9b74d7be831b68da85211545fe8f5e24b1530f021",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 231,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L231-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72955cb5576d8e3be4046702f24af9fd9482ccd595cd7b7fef3a7faf5e7f1cd7"
+      ],
+      "text": "The frontend supports toggling between Cached and Live modes via Ctrl+L or a segmented control in the chat panel's Settings dropdown, with a brief on-screen mode indicator."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6ca1c63c79bbd293614b84b5bebbb225a3824f68b7540a49142105eb584c56b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 358,
+          "line_start": 358,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L358-L358"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 356,
+          "line_start": 352,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L352-L356"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 350,
+          "line_start": 350,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L350-L350"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18054af96a27d4629e3b9c78673cd3f347700ba2c46cc7034f586b2a964ef452",
+        "slc_3a596cbf0181241483b23c754acf48d0e6aae178a6346f91bdbd920458be70f2",
+        "slc_50ad8f83e7522cc2b1b8a62eb325673e1c16501544aecc948b4fcae88d1930ba"
+      ],
+      "text": "The simulator runs a SequentialAgent pipeline: pre-race parsing and runner spawning, a LoopAgent race loop of up to 200 ticks, and post-race result compilation; each tick it updates conditions and broadcasts state to runner agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08285275a738636cff83ca2e7eb6a6f0378eefc402baa75a2f0285fc7db066ca",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L57-L57"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 422,
+          "line_start": 422,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L422-L422"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5fe41a8e5750753b05c911d943f2a3cfed29b0cdfa7e07f5d922105dca2c2cf4",
+        "slc_c627d64e3eee4691544e5fa6588d6c2c253b99efe3dc8f94e49ec9c48f301ff8"
+      ],
+      "text": "Locally the stack runs on Docker Compose with Redis, a Pub/Sub emulator, and PostgreSQL; in the cloud it deploys to Cloud Run, Vertex AI Agent Engine, AlloyDB, Memorystore Redis, and Pub/Sub."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe24c39259f2e97ef36afe41c747ddd523e4b8cf7b25d641874d7f83fa273cb7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 381,
+          "line_start": 379,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L379-L381"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 367,
+          "line_start": 362,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L362-L367"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 373,
+          "line_start": 373,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L373-L373"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 376,
+          "line_start": 376,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L376-L376"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 369,
+          "line_start": 369,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L369-L369"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01a84e1b01a5d3c9557b1cd3e53845e8b6688879607196f6c224964bdf5cb053",
+        "slc_1a20caf0b49b342bbc35b21a709335eb2ffbe21b8321fddba159417f5ca34bb6",
+        "slc_295d4f35269e477cbe82bed7496e2358b1aecedd35b75714d000b99d15b8cf76",
+        "slc_e3a418ccc2ff0c96c32fc0c068bc12f487d4c127ef5b751f633819b818f33146",
+        "slc_ff2ab44acda5c895b7957918e086e8e60b9bbf56c6376a04e900fbfbe6df0cc6"
+      ],
+      "text": "The runner model is configurable via RUNNER_MODEL in .env, defaulting to Gemini 3.1 Flash Lite, with documented Ollama (local Gemma 4) and vLLM-on-GKE alternatives."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aad5291d227734c04b9498aecaad6f039bb91c34651fde29a79057c5917b6c11",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 129,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L122-L129"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L29-L33"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 257,
+          "line_start": 257,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L257-L257"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2be368ee9f52def9885fcf0f9be0bac23add654710acc137f00e9a3567bddf3d",
+        "slc_431ab4a4a7bd083e0ea037f89794fde027876b24d1ef645c46ba07687fee886f",
+        "slc_9d541f948e9d11ec9a136a54a4cb08617256a402ea658b37c967382fd3f8a5e8"
+      ],
+      "text": "The planner_with_memory variant persists route memory and embeddings in AlloyDB (PostgreSQL with pgvector locally), and the Sandbox demo exposes this agent for ad-hoc queries like listing top routes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fff2bab0bada154ab9d84941d3f32689b1f2a8663038bef381b1d6caa791448c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 418,
+          "line_start": 406,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L406-L418"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "466a65551c5c49b1cb8cb6f693be0ec69ca553be",
+          "line_end": 34,
+          "line_start": 23,
+          "path": "GEMINI.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/GEMINI.md#L23-L34"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 470,
+          "line_start": 470,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L470-L470"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3191214a4e4a3b2330baa93f508dcde263eb4cb36850c61fa8adb460b4b7bdfe",
+        "slc_f3ccd907bc62534bf648bffd53657cb7e3d8384c140b42aa40c503ae76c654a1",
+        "slc_fbd8199eb4fb73762ff753137403a305acaf5be4e73db22f9fb197d5852a1874"
+      ],
+      "text": "Repository development practice: contributors use make targets for tests (Go, Python, web), linting, formatting, and coverage; Python tests run offline because a root conftest.py mocks google.auth.default credentials, and Go integration tests need Redis via docker compose."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0fe7b41816f8a9c7d3200b12342185ac681511119188f6b6e47a9f4f48b67af",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "466a65551c5c49b1cb8cb6f693be0ec69ca553be",
+          "line_end": 45,
+          "line_start": 41,
+          "path": "GEMINI.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/GEMINI.md#L41-L45"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L61-L61"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 92,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L87-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25a01cb91fa6ccd6b92ed94c1a49d0ea0157ab3b9c07187fb7a94fc943873e9d",
+        "slc_c3f34571f36fb3e65e5d14f03e8a9efe338c3a982d0ac3f7f7599d0b3cde0da0",
+        "slc_d5f494d76812a6b3c20a12966d5397835e165aa68bd41629c6463a7cebdc1ca9"
+      ],
+      "text": "Repository development practice: the repo ships an AGENTS.md plus four skill files under .claude/skills/ (getting-started, exploring-the-codebase, deploying, contributing) that AI coding assistants are directed to read for setup, architecture, deployment, and contribution tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5c45a1ff5abff37764c5f72b18989aa33a96c9f893c3ab6c98715f36ad94544",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L29-L33"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_431ab4a4a7bd083e0ea037f89794fde027876b24d1ef645c46ba07687fee886f",
+        "slc_805c7a038e8385443b2cbc332a7abf43a50784eed883db3dcbf0af2a980fdc9b"
+      ],
+      "text": "The repository is positioned as a working reference architecture for hard-to-study patterns: cached vs live replay, a deterministic runner baseline, a planner capability ladder, a Go gateway Hub session pattern with batching, and backend-driven UI via A2UI primitives."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f283717fb71ff55b80ceb65eb9bf99514237773e71ab2b976d42a14cb05c2592",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L45-L45"
+        },
+        {
+          "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+          "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "googlecloudplatform/race-condition",
+          "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md#L41-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e423110d696bf0a0ad5ba05b058905aa858a34b3d142d1f49924a69db3d3ac2",
+        "slc_bb974b8f4061aeacd158ed8fabd7d01cb82fa31b954657d7cfd3b12c7814a28d"
+      ],
+      "text": "Some keynote demo paths using private-preview products were cut from this release, and the default deployment scales compute to zero; preview-gated features are expected to return as those products reach public preview."
+    }
+  ],
+  "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 634,
+        "path": "README.md",
+        "size": 30559
+      },
+      {
+        "lines": 47,
+        "path": "GEMINI.md",
+        "size": 2119
+      },
+      {
+        "lines": 87,
+        "path": "tutorial.md",
+        "size": 4248
+      },
+      {
+        "lines": 84,
+        "path": "docs/glossary.md",
+        "size": 4706
+      },
+      {
+        "lines": 63,
+        "path": "docs/README.md",
+        "size": 3601
+      },
+      {
+        "lines": 152,
+        "path": "docs/troubleshooting.md",
+        "size": 6578
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/api/REFERENCE.md",
+        "reason": "file-budget",
+        "size": 96757
+      },
+      {
+        "path": "docs/architecture/a2ui_protocol.md",
+        "reason": "file-budget",
+        "size": 3849
+      },
+      {
+        "path": "docs/architecture/agent_architecture.md",
+        "reason": "file-budget",
+        "size": 6171
+      },
+      {
+        "path": "docs/architecture/communication_protocol.md",
+        "reason": "file-budget",
+        "size": 6914
+      },
+      {
+        "path": "docs/architecture/ports.md",
+        "reason": "file-budget",
+        "size": 3786
+      },
+      {
+        "path": "docs/architecture/README.md",
+        "reason": "file-budget",
+        "size": 926
+      },
+      {
+        "path": "docs/architecture/route_planning.md",
+        "reason": "file-budget",
+        "size": 4492
+      },
+      {
+        "path": "docs/architecture/system_architecture.md",
+        "reason": "file-budget",
+        "size": 5455
+      },
+      {
+        "path": "docs/design/adk-2x-litellm-cve-remediation.md",
+        "reason": "file-budget",
+        "size": 4509
+      },
+      {
+        "path": "docs/design/frontend-lockfile-package-manager-pin.md",
+        "reason": "file-budget",
+        "size": 4988
+      },
+      {
+        "path": "docs/design/gateway-messaging.md",
+        "reason": "file-budget",
+        "size": 7563
+      },
+      {
+        "path": "docs/guides/a2a-implementation-guide.md",
+        "reason": "file-budget",
+        "size": 9440
+      },
+      {
+        "path": "docs/guides/adk-agent-performance-optimization.md",
+        "reason": "file-budget",
+        "size": 28239
+      },
+      {
+        "path": "docs/guides/implementing_skills.md",
+        "reason": "file-budget",
+        "size": 8049
+      },
+      {
+        "path": "docs/guides/local-ollama-setup.md",
+        "reason": "file-budget",
+        "size": 9829
+      },
+      {
+        "path": "docs/guides/testing.md",
+        "reason": "file-budget",
+        "size": 5203
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 2119
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 2119
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 4594
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4302
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 329
+      }
+    ],
+    "omitted_count": 21,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 770,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 27,
+      "complete": false,
+      "omitted": 21,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_4a470db634aa53acaa6782ba81d79c63",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/googlecloudplatform/race-condition/26efc1b4674344d6303ee4226ec3204c08733fec/b66130ac402fcbca/manifest.json",
+  "package_id": "pkg_9f53c181e4cbebc887ca0a41c0d52207951b128ca8a16bbb567d60d25a223342",
+  "repo": "googlecloudplatform/race-condition",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "86ec98ab9819ec7c629b54347fbbfa8691982c097aaea4b4c43ba2cb9f20a65e",
+  "snapshot_id": "b66130ac402fcbca",
+  "sources": [
+    {
+      "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+      "git_sha": "466a65551c5c49b1cb8cb6f693be0ec69ca553be",
+      "lines": 47,
+      "path": "GEMINI.md",
+      "repository": "googlecloudplatform/race-condition",
+      "sha256": "6a73ffe8341f81d2e529e5346b6bde1d3882d442366017114cb520d94328be63",
+      "source_id": "src_71fc3729ed1258809e0018f9b6f9e632",
+      "stored": "gemini.md-399080f41ccf.md",
+      "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/GEMINI.md"
+    },
+    {
+      "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+      "git_sha": "281975f0ada8bb2a69602e75b0ded456641de207",
+      "lines": 634,
+      "path": "README.md",
+      "repository": "googlecloudplatform/race-condition",
+      "sha256": "22217e8d63293136aa5e15c37047d0915b5b648ed002621b9071c8a92d842c74",
+      "source_id": "src_cf031869ff5c57a5812245f23f1242f9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/README.md"
+    },
+    {
+      "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+      "git_sha": "f24c3759d561fe3839befcb7b796af0b00a0e85f",
+      "lines": 63,
+      "path": "docs/README.md",
+      "repository": "googlecloudplatform/race-condition",
+      "sha256": "c5866b55c0703e39428ba4509a13b028a6ae8de7bf8b9f870be371613d20d62e",
+      "source_id": "src_9898f5eb58775580bfd8f5cab785baeb",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/docs/README.md"
+    },
+    {
+      "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+      "git_sha": "a2cb519b7fad68443221ffdbbd0ff0cb7c9b6bae",
+      "lines": 84,
+      "path": "docs/glossary.md",
+      "repository": "googlecloudplatform/race-condition",
+      "sha256": "f0e8cb0bf4ee42a73228b1bef1bd7f41fdf2c1a2cf3f37bb50b4bceda1d906e0",
+      "source_id": "src_ade9426251e0561a992bb7c54edac14c",
+      "stored": "glossary.md-c42a05dfff78.md",
+      "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/docs/glossary.md"
+    },
+    {
+      "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+      "git_sha": "9252d0acdd6c7a814ed535466a39eac3876880b9",
+      "lines": 152,
+      "path": "docs/troubleshooting.md",
+      "repository": "googlecloudplatform/race-condition",
+      "sha256": "2958be04b9577be6fac1edb43b0e9477bc7401cac9c89de0f43fbb828c459963",
+      "source_id": "src_71ea4ac1491a55fd9e8904ce1d949bcd",
+      "stored": "troubleshooting.md-373ebedf1806.md",
+      "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/docs/troubleshooting.md"
+    },
+    {
+      "commit": "26efc1b4674344d6303ee4226ec3204c08733fec",
+      "git_sha": "0ed11ae08723f5bade6316d8794f6220bad1ec11",
+      "lines": 87,
+      "path": "tutorial.md",
+      "repository": "googlecloudplatform/race-condition",
+      "sha256": "dbf1e727614c50e6c3e640bbb9d41baddbb22b9193c1aab339d2ce76c800aeb7",
+      "source_id": "src_281e727d2f2d553196235f168acc9a46",
+      "stored": "tutorial.md-54d121b9f8f9.md",
+      "url": "https://github.com/GoogleCloudPlatform/race-condition/blob/26efc1b4674344d6303ee4226ec3204c08733fec/tutorial.md"
+    }
+  ],
+  "summary": "Selected evidence records: The project is a multi-agent marathon simulation built with Google ADK and Gemini in which agents plan a Las Vegas marathon route, simulate weather, traffic, and crowds, and run the race autonomously, communicating over the A2A protocol. The system comprises a Go/Gin WebSocket gateway that routes requests and manages sessions, Python ADK planner, simulator, and runner agents, an Angular 21 + Three.js 3D frontend, and infrastructure including Redis, Pub/Sub, and PostgreSQL with pgvector.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,764 @@
+{
+  "applied_operation_id": "op_771251794e604d528fa13b97d9873ba1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f065f41ad9c123b2e8360c8d16107a54b6417fbc9538e673b403ae7e3b7e57b8",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L7-L7"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_377847cafc967d85ae71151dd8a651ee686523bbf77702d0eda37f49fdb4c549",
+        "slc_41885b86c82c4aa4ba4ffdd88219d792b8407c482380146b756bf6af1032335f"
+      ],
+      "text": "KanVibe is a keyboard-first Kanban workspace for AI coding agents that tracks branch-based tasks on a real-time board and opens each task's tmux/zellij session in browser or desktop app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af04defe85e1125653f219c31c115eb2661244a2b13403735da90ccab9769ef1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 283,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L277-L283"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 177,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L177-L177"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 175,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L175-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_674cf721aa9667b5e8291b9a0375fe2fa02d8b8b2019c3bd9439a8532881b93b",
+        "slc_a02a90f9eb7966bfe0d21883e95cece8f1ae3d33e136cf7074ae7c35d1ef4cfc",
+        "slc_f87bffc629f5abe53352c6d869c68b6645da0f0bd3f700f8b0996c9bc9b71ee8"
+      ],
+      "text": "Tasks move through five statuses (TODO, PROGRESS, PENDING, REVIEW, DONE); moving a task to DONE automatically deletes its branch, worktree, and terminal session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f8b496ccf247f5a46663244fd35038467ebeae2b1480461bd42c99c372b3d94",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 171,
+          "line_start": 168,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L168-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2112c1ed5a0461ea01557ffc07b639ec24c42ad9ea6edbb6d96bf93da185cb42"
+      ],
+      "text": "Creating a task with a branch name automatically creates a git worktree, spawns a tmux window or zellij tab, and links the terminal session to the task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ad4b9c42679f4ec3450dd944ef01fbe0189930ccc40e8c30d9e1a032273b2c2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 386,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L377-L386"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03f143a7a84d3361a246845d72b52c1aab5195a2d0f484de0247a99674f2bd64"
+      ],
+      "text": "The stack is Next.js 16 with React 19 and TypeScript, SQLite via TypeORM and better-sqlite3, xterm.js with WebSocket and node-pty for terminals, and Electron for desktop packaging."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ad2729d4952797d7caa3424355902ac4cde1d08fb26097c26c6960bf3a3d8ad",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 353,
+          "line_start": 350,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L350-L353"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a05cc376fb1ee439c09a4368bc55fe95b5665155f986a934d0379a1ecf6d8a1a"
+      ],
+      "text": "Agent hooks call HTTP endpoints: POST /api/hooks/start creates a task, and POST /api/hooks/status updates status by branchName plus projectName, returning 404 with a notification if the target is missing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a7062891d8cc62cedc12374008b53656688d9ee91e7ff80fd80e0175a48f251",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 270,
+          "line_start": 270,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L270-L270"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 268,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L251-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23be787c659afbe509cdc4de835a06f1b18934084f15eb111442bf8b2bd74549",
+        "slc_ece21d797dd61ee39c43345e90b0371c8c4e347ec63071363b09c0545b09a633"
+      ],
+      "text": "The app exposes keyboard shortcuts including quick task search (Cmd/Ctrl+Shift+O), project filter, notifications, board navigation, and numbered task-detail dock shortcuts intercepted before terminal input."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc765022e56c859aa3acc83b8fe891692833a9d6fbb59749923b4ab6a40ca784",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 123,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L118-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_669ce6e9453ce4844ede57dae98f4bc007b1b536347f6b59ac597233bc87f930"
+      ],
+      "text": "Required runtime dependencies are git, tmux, and gh (with gh auth login); zellij is optional."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd2b61c0beaf27b55bbe1d4a8c85486acedb55b3b8967218c61a0f5901d7cfdb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L131-L131"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 136,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L133-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_97a0d52b61e82c1f333eed7de750a9191eba94fd78f803788e1c9e81bfb351bb",
+        "slc_ab3bbb32a29396100e4d02b11336ce736eeddd3b9c7865b3b3912efd4a29cf16"
+      ],
+      "text": "Installation is via a Homebrew cask from the rookedsysc/kanvibe tap until the app is accepted into the official Homebrew Cask repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_593ae9d5329599f43d4115183dc45781b7706df70038abe2c62baa1e86fa1134",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 275,
+          "line_start": 275,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L275-L275"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 328,
+          "line_start": 328,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L328-L328"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_946b68b3112292f548e3ecf4b0e19f33e6adb8eea423f2de7976236f5cf6ce0c",
+        "slc_f6a611ef473450ef92f86cbaf7705d9b3bec0dfb68e834edc85d0c173e3d65b7"
+      ],
+      "text": "KanVibe integrates Claude Code Hooks, Gemini CLI Hooks, Codex CLI, and OpenCode to track task status automatically; hooks are auto-installed when a project is registered or a worktree task is created."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_82aa1ea312ded4869fbf47eb5fab4caf2fe50efb067f20e87f66e6307d4d7931",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 326,
+          "line_start": 326,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L326-L326"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bc94207bba76322d6628b0a874f59bf325d43533dd696bcea6164aeaf63866bf"
+      ],
+      "text": "For OpenCode, KanVibe generates a TypeScript plugin at .opencode/plugins/kanvibe-plugin.ts using the @opencode-ai/plugin SDK, handling status updates in-process rather than via shell hooks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_685481ab31e97e3a957cbdc4cf588edfc8ab5ccea3bd5a2bf5143546f5050ab2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 299,
+          "line_start": 299,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L299-L299"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c60e03d190673eeb0a5c76d55eb46115fd887078125bcea8e0dd203c6547de0d"
+      ],
+      "text": "Gemini CLI lacks an equivalent to Claude Code's AskUserQuestion, so the PENDING status is not available for Gemini-driven tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_726403198d6dc35d67962823619f1e2f2288872a2160a78e061bb0ae5a6331d3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 228,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L221-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a5aa27976a4185a125ed39a187da0e9034d303e1d532c2dc377096a189da23b"
+      ],
+      "text": "Subtask counts in live session tracking are unavailable for Gemini CLI, version-dependent for OpenCode, and sessions outside tmux are judged only by transcript activity, so waiting sessions may appear idle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ba47ef0fd8583966ae4f3143cb80d70217000aa612750f84eef48bf9d6160be",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 79,
+          "line_start": 73,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L73-L79"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 61,
+          "line_start": 56,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L56-L61"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a7d5f89a60dd7a74a6edf4406f9363205575b5b5fc65ffd0379356cb27281079",
+        "slc_b9d4c553ccd916ed305276ab144989f4327699bcf4c396b681faa2302337c3f7",
+        "slc_c054c04d25eddf31a52b33d89ea15c65147b06b99b796b7e953127c654346672"
+      ],
+      "text": "Repository development practice: contributors must run pnpm build, pnpm check, and pnpm test before submitting, use Conventional Commits, and attach a screenshot or GIF; PRs without visual proof will not be merged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c699d39b52ad9f2d79adbf28fe0d790c563408118ce84b6c0e3ad5bb47f9bc43",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "7c906d4260e6ce8a04f79a1178849e85f82c8071",
+          "line_end": 23,
+          "line_start": 19,
+          "path": "CLAUDE.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CLAUDE.md#L19-L23"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "7c906d4260e6ce8a04f79a1178849e85f82c8071",
+          "line_end": 13,
+          "line_start": 5,
+          "path": "CLAUDE.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CLAUDE.md#L5-L13"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "7c906d4260e6ce8a04f79a1178849e85f82c8071",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "CLAUDE.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CLAUDE.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ee221728735b40d6ce28c41e6ca36ca9bd6364189bf3c9466f1c0c5bff2ab2e",
+        "slc_830bef8c737b1999821ceb3bf8a47f41435f8212c648c4c66a3a80d845829fb8",
+        "slc_f3345470663f95a47ee3427fb8e813b721a321e2b161de6cd4f532cff8080643"
+      ],
+      "text": "Repository development practice: CLAUDE.md forbids code that mutates process-wide or shell-wide environment variables, permitting only KanVibe-scoped KANVIBE_* names, with tmux set-clipboard as a narrowly approved exception."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea4d716f1733d3488d669bfd8661eb68370e5f2cd8268605032f3ea0c144a7e7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 98,
+          "line_start": 96,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L96-L98"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L94-L94"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L126-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_611f844ed947ec5d69b999cbe89e54c98a83b31f2d483dce729b5d819c40e3bd",
+        "slc_e8b1cd7690746b5f750c38297c21f2bd2e1761c65201e08e72a7112c439d964b",
+        "slc_f682538d0604d62d4448deb0e1f2b98cc8b03b8bac9c1aadc24dc10810c3277a"
+      ],
+      "text": "Repository development practice: all user-facing strings must be added to messages/ko.json, en.json, and zh.json, and all three language versions of README and CONTRIBUTING docs must be updated together."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af512e617b1631dd0a657f87220eea01c6f8dec7440b76e497e7703b111c818d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L13-L15"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L37-L37"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L41-L43"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a615a77a3838246b7ea76022d76a8f7f0db7acb7cb7b3443898714b679693e7",
+        "slc_96db42496fb752b7b3e785653119905167681fd941cde713f21f978c347f7f08",
+        "slc_b39e646b6e1c99308be2d8e4ae36bbbcba16a7a52adebd315e5c4130004fb3ce",
+        "slc_dd8542d81601c40b7ea34d2421e59c77ae9d3dd1bf2ed6bfa9bd5d3479861b47"
+      ],
+      "text": "Repository development practice: the contributing guide lists Node.js 24.x, pnpm, and tmux or zellij as prerequisites, with pnpm dev serving on localhost:4885 and pnpm dist producing a macOS DMG."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6348db81bbc336f2504697f79efe11ae90440f55f076863f41c0cb19145cc14",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+          "line_end": 134,
+          "line_start": 134,
+          "path": "CONTRIBUTING.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md#L134-L134"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 275,
+          "line_start": 275,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L275-L275"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_86ea0b89b96ad6df02caa8e505a7b7cd5baf1e232b5556e49cc25355f4a31699",
+        "slc_946b68b3112292f548e3ecf4b0e19f33e6adb8eea423f2de7976236f5cf6ce0c"
+      ],
+      "text": "The contributing guide states only Claude Code Hooks support is implemented with Gemini and Codex hooks under development, which appears to conflict with the README's claim of all four agents supported; the README is likely the more current document."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97b463905edc294543936e167727b1f677b765ad76e88638f67b02bd6827451e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 362,
+          "line_start": 359,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L359-L362"
+        },
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 357,
+          "line_start": 357,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L357-L357"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e61694bf6975ff995fbe9761d141cce4548034202be71fdc05af3fa2d7f622d",
+        "slc_fadcde1659685535150a4464067e0a08f1744bbc17e3f13989cc41ef56c77b61"
+      ],
+      "text": "The task detail page offers a GitHub-style diff view with a file tree sidebar, Monaco-based inline diff, browser edit mode, and viewed-file checkboxes, comparing changes against the base branch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c7dd8321f1703af716d4508d7638d974d3543df8707fbce8c20fb970d6f3b63",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+          "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+          "line_end": 247,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "rookedsysc/kanvibe",
+          "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md#L238-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6243d439cd118cab1d8a6ff51c7a39384e3ceaccac0dde61f6bb7f600dc48459"
+      ],
+      "text": "An AI usage panel reads remaining Claude, Codex, and Gemini subscription quota using each CLI's locally stored sign-in, requiring no extra API key, and manages accounts under Settings → AI accounts."
+    }
+  ],
+  "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 431,
+        "path": "README.md",
+        "size": 21963
+      },
+      {
+        "lines": 66,
+        "path": "CLAUDE.md",
+        "size": 7816
+      },
+      {
+        "lines": 153,
+        "path": "CONTRIBUTING.md",
+        "size": 4228
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/CONTRIBUTING.ko.md",
+        "reason": "file-budget",
+        "size": 4599
+      },
+      {
+        "path": "docs/CONTRIBUTING.zh.md",
+        "reason": "file-budget",
+        "size": 3906
+      },
+      {
+        "path": "docs/README.ko.md",
+        "reason": "file-budget",
+        "size": 21950
+      },
+      {
+        "path": "docs/README.zh.md",
+        "reason": "file-budget",
+        "size": 18665
+      },
+      {
+        "path": "docs/research/seo-geo-sitemap-ci.md",
+        "reason": "file-budget",
+        "size": 24935
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 564,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 5,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3e94873afdf75681abbb93b5f4861b75",
+  "facets": {
+    "components": 4,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 3,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/rookedsysc/kanvibe/05b9c147299aea8f2b6159f4305a19057382af15/ba6f843443fcb995/manifest.json",
+  "package_id": "pkg_002e1b187292077aa95a3419b95b17904076ba0de3370443a1912ae6891acf83",
+  "repo": "rookedsysc/kanvibe",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7372ddf8208ffe5daaeef3414fdcd4a0b7a2181b89fc74b04a4d26b2f50b286c",
+  "snapshot_id": "ba6f843443fcb995",
+  "sources": [
+    {
+      "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+      "git_sha": "7c906d4260e6ce8a04f79a1178849e85f82c8071",
+      "lines": 66,
+      "path": "CLAUDE.md",
+      "repository": "rookedsysc/kanvibe",
+      "sha256": "95da197aaafa6989a12c4222b4bb6ea08866227240bd91c193d57bd4907e3dc0",
+      "source_id": "src_27d8a7612d0e5835a89db00386161f28",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CLAUDE.md"
+    },
+    {
+      "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+      "git_sha": "5ad5e263300bbc5ab27bb0a13cc4b7f9ecb87aa8",
+      "lines": 153,
+      "path": "CONTRIBUTING.md",
+      "repository": "rookedsysc/kanvibe",
+      "sha256": "943f3c1a698f959085c1046c22d83417dd0a10dea465f8e3175eb674df3586b5",
+      "source_id": "src_ba681c3c3ec752eca029fc7cbb1b7785",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/CONTRIBUTING.md"
+    },
+    {
+      "commit": "05b9c147299aea8f2b6159f4305a19057382af15",
+      "git_sha": "e32b26f28c74dc9177c251f0873fe1d459a32ead",
+      "lines": 431,
+      "path": "README.md",
+      "repository": "rookedsysc/kanvibe",
+      "sha256": "6ccec694bee7b4b73fbdca98ffb3d37288378ed07abe8f3cd23cb6f0dffbfff3",
+      "source_id": "src_9785e2c5417e5fd59405bb2cb4c17b8f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/rookedsysc/kanvibe/blob/05b9c147299aea8f2b6159f4305a19057382af15/README.md"
+    }
+  ],
+  "summary": "KanVibe is a keyboard-first Kanban workspace for AI coding agents, integrating tmux/zellij terminal sessions, git worktrees, and agent hooks for Claude Code, Gemini CLI, Codex CLI, and OpenCode. Evidence is mostly README product documentation plus contributor guides (CLAUDE.md, CONTRIBUTING.md) covering development practice.",
+  "superseded_claim_ids": []
+}

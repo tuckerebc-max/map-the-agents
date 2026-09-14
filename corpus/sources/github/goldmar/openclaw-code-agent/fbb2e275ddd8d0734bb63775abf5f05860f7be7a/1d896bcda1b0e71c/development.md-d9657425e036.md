@@ -1,0 +1,185 @@
+# Development
+
+Contributor guide for `openclaw-code-agent`. For operator setup and runtime usage, see [REFERENCE.md](REFERENCE.md).
+
+## Local Setup
+
+```bash
+pnpm install
+pnpm verify
+```
+
+Build output is the ESM bundle at `dist/index.js`.
+`pnpm-lock.yaml` is the only committed JavaScript lockfile in this repo. Do not add `package-lock.json`; npm is only used for `npm publish` in release, while install, CI, and dependency resolution are all pnpm-based.
+
+## Repository Layout
+
+```text
+openclaw-code-agent/
+├── index.ts
+├── openclaw.plugin.json
+├── src/
+│   ├── actions/
+│   ├── application/
+│   ├── commands/
+│   ├── harness/
+│   ├── tools/
+│   ├── config.ts
+│   ├── session.ts
+│   ├── session-state.ts
+│   ├── session-manager.ts
+│   ├── session-interactions.ts
+│   ├── session-notifications.ts
+│   ├── session-worktree-controller.ts
+│   ├── worktree-lifecycle-resolver.ts
+│   ├── session-store.ts
+│   ├── session-metrics.ts
+│   ├── wake-dispatcher.ts
+│   ├── notifications.ts
+│   └── worktree.ts
+├── tests/
+├── docs/
+└── skills/
+```
+
+## Main Code Paths
+
+- `index.ts`: plugin registration, service lifecycle, startup cleanup
+- `src/session-manager.ts`: session control plane
+- `src/session.ts`: single-session lifecycle and event model
+- `src/session-state.ts`: reducer-backed lifecycle / approval / runtime / worktree transitions
+- `src/session-interactions.ts`: action-token creation and state-driven button sets
+- `src/session-notifications.ts`: delivery-state-aware wrapper around lifecycle notifications
+- `src/harness/*`: Claude Code, Codex, and experimental OpenCode integrations
+- `src/tools/*`: OpenClaw tool implementations
+- `src/commands/*`: chat command implementations
+- `src/worktree.ts`: git worktree, merge, and PR helpers
+- `src/worktree-lifecycle-resolver.ts`: lifecycle-first cleanup and `released` detection
+
+## Build And Test
+
+```bash
+pnpm verify
+```
+
+Use `pnpm verify` before merging behavior changes. CI and release workflows both gate on that exact command. `pnpm test` runs the stable per-file suite without force-exit, and `pnpm test:file tests/foo.test.ts` is the fastest way to rerun one file while debugging orchestration edge cases.
+
+## Security And Audits
+
+Use the repo's pnpm toolchain for dependency checks:
+
+```bash
+pnpm run audit:prod
+```
+
+Do not use `npm audit` here. npm audit expects an npm lockfile and fails with `ENOLOCK` when the repo only commits `pnpm-lock.yaml`.
+
+Security automation should work like this:
+
+- PR gating: GitHub Dependency Review checks dependency diffs in pull requests and works with `pnpm-lock.yaml`.
+- Runtime/package gate: `pnpm run audit:prod` audits the published dependency set in CI without introducing a second lockfile. Keep `.github/workflows/security-audit.yml` on that script; do not switch the workflow back to `npm audit`.
+- Version maintenance: Dependabot updates the JavaScript dependency set through the npm ecosystem support that covers pnpm projects.
+- Full snapshot audit: run `pnpm audit` when you need the current advisory set for the full resolved pnpm graph, including dev dependencies.
+
+Dependency updates are admitted by reproducible artifacts and verification rather than publication age. The repository sets pnpm's `minimumReleaseAge` to `0` because the pinned pnpm version otherwise applies a one-day default; do not add age exclusions, strict mode, cooldowns, or another elapsed-time gate. Regenerate `pnpm-lock.yaml` with pnpm and `npm-shrinkwrap.json` through `pnpm generate:npm-shrinkwrap`; then require frozen installation, exact runtime-version validation, the full build/test suite, production audit, dependency review, packed-consumer installation, and exact-head review. Do not hand-edit either lock artifact or weaken those gates for a newly published package.
+
+OpenClaw 2026.9.4 supports Node 24.16.0+ on Node 24 and Node 26.1.0+ on Node 26; Node 22 and 25 are unsupported. CI covers both supported lines and release verification pins Node 24.16.0. Plugin-behavior review should also include:
+
+```bash
+pnpm check-plugin-security
+```
+
+That checker packs and installs the plugin under an isolated temporary home, runs OpenClaw's deep static code-safety audit, and accepts only the two reviewed findings documented in [SECURITY.md](SECURITY.md). It fails for missing scans, scan errors, or additional dangerous-code patterns without reading or migrating operator state.
+
+This repo currently has dev-only transitive advisories coming from upstream dependencies, so a blanket failing `pnpm audit` step is not the right merge gate until those findings are either remediated upstream or intentionally allowlisted with pnpm audit configuration.
+
+For release preparation, also validate metadata parity explicitly:
+
+```bash
+pnpm run validate:release-metadata -- <version>
+```
+
+Release metadata for external plugin installs lives in `package.json` under `openclaw.compat` and `openclaw.build`, while the plugin manifest version and manifest-owned activation/setup descriptors live in `openclaw.plugin.json`. When cutting a release, keep the package/plugin versions aligned and update the manifest descriptors whenever the plugin-owned command or onboarding surface changes.
+
+Release-prep docs should also cover behavior that changed since the previous tag. Keep release-specific details in `CHANGELOG.md` and current user-facing docs, and avoid hardcoding one release's feature list into this permanent developer guide.
+
+Release-prep branches should stop after PR-ready changes and validation unless the maintainer explicitly asks to publish. Do not push a `v*` tag, dispatch `.github/workflows/release.yml`, or run `npm publish` / `clawhub package publish` during preparation-only work. Use `npm pack --dry-run` to check package contents without publishing.
+
+The manually dispatched release workflow verifies one selected `main` commit, packs one artifact, and publishes that exact tarball to npm and ClawHub. Both registries use Trusted Publishing through GitHub OIDC and the protected `release` environment; no npm or ClawHub publishing token is stored in GitHub.
+
+Additional smoke entry points:
+
+- `pnpm smoke:backend-parity` for the shared backend-contract surface
+- `pnpm smoke:codex-worktrees` for Codex plugin-managed worktree bootstrap and backend restore behavior
+- `pnpm test:integ:crabbox` for deterministic Codex proof/Crabbox harness coverage; live Telegram Desktop proof stays disabled unless `OPENCLAW_RUN_LIVE_TELEGRAM_PROOF=1` and `--allow-live` are both used
+- `pnpm smoke:codex-live` for opt-in real App Server validation when a live Codex environment is available
+- `pnpm smoke:codex-release` for the fuller opt-in operator/release check covering launch, `agent_respond`-style resume, structured plan delivery, restart/resume, and worktree restore behavior
+- `pnpm smoke:opencode-live` for opt-in real OpenCode server validation when `opencode >= 1.16.2` and provider auth are available
+
+### Live Codex Release Check
+
+Use `pnpm smoke:codex-release` only when you have a real Codex App Server environment available and want a release-confidence pass against the live protocol. It intentionally stays out of `pnpm verify`.
+
+Before running it:
+
+1. Make sure the local Codex App Server environment is configured and reachable.
+2. Run it from a workspace where creating plugin-managed worktrees and restoring Codex backend refs is acceptable.
+3. Treat failures as operator/runtime regressions first, not just test flakes.
+
+### Live OpenCode Smoke Check
+
+Use `pnpm smoke:opencode-live` only when a real OpenCode environment is available. It starts `opencode serve`, creates a trivial session, sends a prompt through the harness's OpenCode compatibility path, waits for completion, and verifies that an assistant response was produced. It intentionally stays out of `pnpm verify` because it depends on local OpenCode installation and provider auth.
+
+## Extending The Plugin
+
+### Add A Tool
+
+1. Create a file in `src/tools/`.
+2. Export a `makeAgentXxxTool()` factory.
+3. Register it in `index.ts`.
+4. Add or update tests.
+5. Document it in [REFERENCE.md](REFERENCE.md).
+
+### Add A Chat Command
+
+1. Create a file in `src/commands/`.
+2. Export `registerAgentXxxCommand()`.
+3. Register it in `index.ts`.
+4. Keep the behavior aligned with the corresponding tool when one exists.
+
+### Add A Harness
+
+1. Implement the `AgentHarness` interface in `src/harness/`.
+2. Register it in the harness registry.
+3. Define its default config shape in `src/config.ts`.
+4. Update `openclaw.plugin.json` if the harness adds user-facing config.
+5. Add launch, resume, and waiting-path tests.
+6. Document the harness behavior in [REFERENCE.md](REFERENCE.md) and [ARCHITECTURE.md](ARCHITECTURE.md).
+7. If the harness is experimental, mark that status in README, reference docs, manifest help text, and skill guidance without adding invalid config keys.
+
+## Contributor Notes
+
+- Keep docs and schema text aligned. `README.md`, `docs/REFERENCE.md`, `skills/.../SKILL.md`, and `openclaw.plugin.json` should agree on defaults and parameter names.
+- Prefer source-of-truth facts from `src/config.ts`, `src/types.ts`, and the tool factories.
+- When editing docs for lifecycle behavior, verify the notification and resume flow in `src/session-manager.ts` and `src/actions/respond.ts`.
+- When editing worktree behavior, verify the orchestration path in `src/session-manager.ts`, the lifecycle resolver in `src/worktree-lifecycle-resolver.ts`, and the git helper path in `src/worktree.ts`.
+- Keep first-run onboarding narrow. `uiHints` without `advanced: true` are what OpenClaw's plugin-config wizard prompts by default, so only genuinely first-run fields should remain non-advanced.
+- Treat `fallbackChannel` as routing metadata, not a secret. Multi-workspace maps like `agentChannels` should stay advanced/manual because the generic wizard cannot collect them well.
+- Do not re-surface deprecated legacy model keys in onboarding. New setup should point operators at `defaultHarness` and `harnesses.*` instead.
+
+## Service Lifecycle
+
+- `start()`: load config, create `SessionManager`, run orphan worktree cleanup, start periodic cleanup
+- `stop()`: kill active sessions, clear timers, drop the singleton
+
+## Docs Maintenance Checklist
+
+Before merging a behavior change, confirm:
+
+1. Tool parameters match the TypeBox schemas in `src/tools/*`.
+2. Config defaults match `src/config.ts` and `openclaw.plugin.json`.
+3. README only links to deeper docs; it should not become the full reference again.
+4. Historical implementation plans stay out of the main docs surface.
+5. `package.json` compatibility/build metadata matches the intended OpenClaw release floor.
+6. `package.json.version` and `openclaw.plugin.json.version` match the intended release version.
+7. Approval docs mention both interactive Approve / Revise / Reject buttons and plain-text fallback behavior.

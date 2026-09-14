@@ -1,0 +1,54 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_38972e350de6b1e829ad61e18ce6114f764dda412deacdb1f72d67782e17284c
+- clm_449c89ee99b6766c269e76fadb6b664b736cd5e8b88a53e5fe97dbf2b5849184
+- clm_6bf4e1595bd9b8d014aa9d7b30dada39875a7ca4d59420936785e44876a36770
+- clm_7d16f2456ae6967171e56d9953b5d508ac8d7d3c04802daa5687caf21784d2fb
+- clm_812f10d9e30520fd42f4c14871813e2892259a18396f5d4236c4601103d1409d
+- clm_99d9ed0006fcd6b92bb423d4c046192131c261faf446a2d50466e69b89572e39
+- clm_a004678d8d375f74679a0104b8468e0233309ae63e15b7ebba47d16d6c55fd0d
+- clm_a48bf6ed5befddc40fc9b2603017aeae6bde1420461cfdd8622becc2ef5fdf9e
+- clm_b95af7fbd951d9cb749761dd37c79fcf41fa575ee8f043a2a2374d17ea8a3a29
+- clm_ba26792d73d995f3e64a47691a543e8f9a86d4db83fae08709cb4abd6e8c470e
+- clm_bea295b58cbfeeae6da9caa7019e08f10173df9624d2be16b4808ad101e94c60
+- clm_cb97ecc66031d2a203d8cd67b96f9576654bb4cbc1948ec7ca0b74cf2b287be8
+- clm_cd14c83fbb2da5c49449bffb801b9670b500709a99bdcbc09082f30b1318eeb5
+- clm_d73c0706caecb027fb570982f0258d47329cd2ec6699150b7dd2f1f1e4c11074
+- clm_eeb776fc95745d48e9dd01795c82c60207e60651ec70662524c1b3168111cf73
+- clm_fba0db03cafb74c95c2c6940229309926e60d579c3a1ed781911d04d1274fcfd
+maturity: draft
+page_id: pg_0b15646867195694a99e5e533d1b0699
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_e4bc001edfa45da0ad29d33db1702160
+title: juggler-ai/juggler/README.md @ 9446fd2936f0
+updated_at: '2026-09-14T02:08:07Z'
+---
+
+# juggler-ai/juggler/README.md @ 9446fd2936f0
+
+<!-- rcw:begin owner=source:src_e4bc001edfa45da0ad29d33db1702160 block=evidence -->
+- For MCP tools, users can allow or deny individual tools, set fixed default arguments, and view approximate context cost; approval decisions are visible in the handoff record. [@claim:clm_38972e350de6b1e829ad61e18ce6114f764dda412deacdb1f72d67782e17284c]
+- LAN access to the server has no password, which the documentation itself flags as a constraint to consider on untrusted networks. [@claim:clm_449c89ee99b6766c269e76fadb6b664b736cd5e8b88a53e5fe97dbf2b5849184]
+- The backend is Go with Wails windowing; the UI is HTML and type-checked JavaScript served directly by the backend, with no Electron shell or frontend build step. [@claim:clm_6bf4e1595bd9b8d014aa9d7b30dada39875a7ca4d59420936785e44876a36770]
+- Users can inspect any recorded LLM transaction, seeing the system prompt, messages, tool schemas, output, token and cache usage, timing and stop reason. [@claim:clm_7d16f2456ae6967171e56d9953b5d508ac8d7d3c04802daa5687caf21784d2fb]
+- Repository development practice: CI is described as a sanity gate for linting, builds and tests that publishes no artifacts; official release builds come from a separate pipeline. [@claim:clm_812f10d9e30520fd42f4c14871813e2892259a18396f5d4236c4601103d1409d]
+- Most conversation capabilities are JavaScript extensions on a public SDK: context items defining tools like read/write/bash, strategies defining the LLM loop, slash commands, and UI cards or file viewers; MCP servers and skills enter through the same system. [@claim:clm_99d9ed0006fcd6b92bb423d4c046192131c261faf446a2d50466e69b89572e39]
+- Conversations are represented as persistent trees of typed items rather than scrolling transcripts, with Miller-column navigation and nested child threads that return results to their parent. [@claim:clm_a004678d8d375f74679a0104b8468e0233309ae63e15b7ebba47d16d6c55fd0d]
+- The product supports Anthropic/Claude Code, OpenAI/Codex, GitHub Copilot, Gemini, Mistral, Z.AI, Ollama, OpenRouter, DeepSeek and other OpenAI-compatible providers, plus local or remote MCP servers whose tools join the built-in toolset. [@claim:clm_a48bf6ed5befddc40fc9b2603017aeae6bde1420461cfdd8622becc2ef5fdf9e]
+- Context is editable: history can be folded into a thread, items moved or copied between branches, branches expanded back, and structural changes undone. [@claim:clm_b95af7fbd951d9cb749761dd37c79fcf41fa575ee8f043a2a2374d17ea8a3a29]
+- Juggler measures the full request before each model call, leaves room for the answer, and automatically compacts old history when a conversation exceeds the model's context window. [@claim:clm_ba26792d73d995f3e64a47691a543e8f9a86d4db83fae08709cb4abd6e8c470e]
+- Repository builds support local and LAN access only; WAN/internet reachability modes are included solely in official binaries from juggler.studio, per the licensing boundary. [@claim:clm_bea295b58cbfeeae6da9caa7019e08f10173df9624d2be16b4808ad101e94c60]
+- Repository development practice: builds require Go 1.26+ with vendored submodules; `make go-build` compiles, `make test` runs tests (race detector on by default), and `make test-full` with linting is expected before a PR. [@claim:clm_cb97ecc66031d2a203d8cd67b96f9576654bb4cbc1948ec7ca0b74cf2b287be8]
+- The desktop app and browser tabs are synchronized clients of the same server, so multiple clients can share one live session across machines or a phone. [@claim:clm_cd14c83fbb2da5c49449bffb801b9670b500709a99bdcbc09082f30b1318eeb5]
+- The server listens on localhost by default; LAN access is enabled via a keypress or `--public` flag and has no password, so the docs advise using it only on trusted networks. [@claim:clm_d73c0706caecb027fb570982f0258d47329cd2ec6699150b7dd2f1f1e4c11074]
+- Session documents live on disk and persist across quit or reconnect, including pending approvals; synchronization uses Yjs. [@claim:clm_eeb776fc95745d48e9dd01795c82c60207e60651ec70662524c1b3168111cf73]
+- Juggler ships a native desktop app plus a headless `juggler` CLI server that serves a web UI, prints its URL and QR code, and can open the browser on a keypress. [@claim:clm_fba0db03cafb74c95c2c6940229309926e60d579c3a1ed781911d04d1274fcfd]
+<!-- rcw:end owner=source:src_e4bc001edfa45da0ad29d33db1702160 block=evidence -->
+
+## Researcher notes
+

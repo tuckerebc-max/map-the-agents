@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_20c34998ce0fbaefa797a2ea97d5b5af26bdc1bd787828918d29490259ecdb51
+- clm_2b4ce1fcaaa9b325110611aeb45939749b51af055d34921db2081379dce1fe64
+- clm_2ff1c9e4eaa09a45f40438652f7487eb3f3530bc5b0f0ceb2c496c3d7c355c77
+- clm_44440998770eac8ecfb17e491f7078280ce04c6787646665b97b93b7aa49ab2d
+- clm_768c102d8d232c9c3804ff7c37e1faddf1832499f0a5c2eb2f5686b2e00625d3
+- clm_a8a9c847d6a89d12be9b453d73911c6e7b5127902ff84e334dd09a1023878449
+- clm_ac82ca8224b13346cfc243ee11ed2dc892d8069ce030a23f59cdb54ae230a169
+- clm_bfd55558b2797e345d4754e919f217eae47040b6d3a52a358dfc8681f15957a8
+- clm_db6412a692275e87d37a9a8400d6929cf9aecf2d8f45e48a26f5d0ced59ffd9b
+maturity: draft
+page_id: pg_fde625bfdb8251049f3e5025bfd66b6e
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: openai/multi-agent-emergence-environments
+updated_at: '2026-09-14T04:13:58Z'
+---
+
+# openai/multi-agent-emergence-environments
+
+<!-- rcw:begin owner=entity:ent_75692f7c925d5b48b82b60e802d8a30f block=evidence -->
+- openai/multi-agent-emergence-environments is mentioned in this evidence. [@claim:clm_20c34998ce0fbaefa797a2ea97d5b5af26bdc1bd787828918d29490259ecdb51] [@claim:clm_2b4ce1fcaaa9b325110611aeb45939749b51af055d34921db2081379dce1fe64] [@claim:clm_2ff1c9e4eaa09a45f40438652f7487eb3f3530bc5b0f0ceb2c496c3d7c355c77] [@claim:clm_44440998770eac8ecfb17e491f7078280ce04c6787646665b97b93b7aa49ab2d] [@claim:clm_768c102d8d232c9c3804ff7c37e1faddf1832499f0a5c2eb2f5686b2e00625d3] [@claim:clm_a8a9c847d6a89d12be9b453d73911c6e7b5127902ff84e334dd09a1023878449] [@claim:clm_ac82ca8224b13346cfc243ee11ed2dc892d8069ce030a23f59cdb54ae230a169] [@claim:clm_bfd55558b2797e345d4754e919f217eae47040b6d3a52a358dfc8681f15957a8] [@claim:clm_db6412a692275e87d37a9a8400d6929cf9aecf2d8f45e48a26f5d0ced59ffd9b]
+<!-- rcw:end owner=entity:ent_75692f7c925d5b48b82b60e802d8a30f block=evidence -->
+
+## Researcher notes
+

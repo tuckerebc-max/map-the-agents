@@ -1,0 +1,777 @@
+{
+  "applied_operation_id": "op_77b9841dca2a482ba3f7b1857685f1d2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ce09888fbf82b9c454d7b1a4716bc70a81765392471db529d048ac8f8cbccff6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 12,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L8-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_943e0e04331717a8f2dcf8483d642a3cfd78a45ae0f7df360bf1c3b88ff9b264"
+      ],
+      "text": "squarebox packages a terminal development environment—CLI tools, AI coding assistants, language SDKs, and shell aliases—into a single Docker container (Podman experimental), runnable on desktop, VPS, or Codespace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f244573f3442504fcb4647ceab3f0448e2d4e919f034c107e864982566ce2297",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 243,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L222-L243"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9afcaf981881a9d46742be08c34ef80de51954e68bee53db20994ca73b704780"
+      ],
+      "text": "The image ships CLI tools including bat, delta, difftastic, eza, fd, fzf, gh, glow, jq, just, mise, nano, ripgrep, starship, and bubblewrap (used by the Codex CLI sandbox)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f674de14d7e27e21f32aa0ca1acd98b70a7ec946151fb454b46f76eac8a02048",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 278,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L272-L278"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 301,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L297-L301"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 265,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L256-L265"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 291,
+          "line_start": 286,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L286-L291"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_185af40c17223ba8486fa1faaa498541727268a34f05075b9c5c798b1c532de9",
+        "slc_3a5eb8348c73e102e12622dd0c541788b15621ca1a28dd6c6fbbdd55b71f5ee9",
+        "slc_53a984cdd5cd8c2927d4d3d86ad5857202ae380b6d54fcb27806b8d5fd86c991",
+        "slc_6329630bb064d5f709297fe6752f48d654261c556ee29f6016bf76cd5fb5ca44"
+      ],
+      "text": "Optional first-run selections include AI assistants (Claude Code, Copilot CLI, Gemini CLI, Codex CLI, opencode, Pi, Oh My Pi), editors (micro, edit, fresh, helix, nvim), TUI tools, and multiplexers (tmux, zellij, herdr)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa9fa819bc9d7955bfb520d2fecf6c176a1a94763c819b0e6c1c7410310092f8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 107,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L97-L107"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 95,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L94-L95"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 120,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L113-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_150e39bea56029b6bd26a5ce82f979dd6f83ce4a71edca5b1d54b6b4f81af9e4",
+        "slc_8732b5e1540c2eac27e64e51d63da0518fd2044096ad3723f1e84793a8977b81",
+        "slc_97b28ec9260dfb79b4fa786f1e0262206c3108d246b31bfbff0788e1116fd513"
+      ],
+      "text": "Installers accept flags --build, --edge, --adopt, --verbose and environment variables such as SQUAREBOX_DIR, SQUAREBOX_TAG, SQUAREBOX_RUNTIME, PUID/PGID, and non-interactive toolset selectors like SQUAREBOX_AI and SQUAREBOX_SDKS."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6cd6a43ac673c6ea9313d97ebd1a9fdb92a4ddae23f1260b40fbadc693c1e343",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 366,
+          "line_start": 362,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L362-L366"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 449,
+          "line_start": 449,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L449-L449"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 357,
+          "line_start": 353,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L353-L357"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9f1e76450ea6fb11eedcb705b5b781bcffe5886508c99a988a364301eda76e89",
+        "slc_a519c6965ec11d65e39e9ba66a17080dc5c28abc8350b1fdcee79496529ac400",
+        "slc_c2773ee0bf628dba0ae943901b798d4b9982c72e0902b79e9381898f7ef54d3c"
+      ],
+      "text": "Inside the container, sqrbx-setup re-runs the configuration wizard (sections git, github, ai, editors, tuis, multiplexers, sdks, shell), sqrbx-update manages tool updates, and sqrbx-help lists the sqrbx-* commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3281b13f7cb96e2da3d15724ec7c8f0ca5330d27a1a8d8116aae15b0f6ab1a79",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 186,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L179-L186"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 210,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L206-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bf9d4729d1006875239466b002954d487a01458ebaa2ccbdceccbd610980eedd",
+        "slc_d811c508306f31b17f5241107907ce9f516ab025042aa0b40ab7f02fef53eab7"
+      ],
+      "text": "Per-user state (shell history, GitHub CLI auth, AI-assistant data, mise toolchains) lives in the squarebox-home named Docker volume that survives container replacement, while code lives on the host at the workspace bind mount."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cc592f3d8252fc87f9f8b6ca42f50632526d09d057485b66f198c61ed6baee1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 395,
+          "line_start": 371,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L371-L395"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 400,
+          "line_start": 397,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L397-L400"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_325eb6e7b80b15e8d90053c25c6ae070b3fd5d55f3f71edb83d177b5b396557b",
+        "slc_34c84295c2fab7b58c7e320970c50b1b5e0f5fe5a3a58211ce75f4dce617bb03"
+      ],
+      "text": "The box defines opinionated aliases (ls→eza, cat→bat, git shorthands) and generates *-yolo aliases for selected AI tools that disable approval prompts; codex-yolo additionally disables Codex's sandbox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc9612b2344883fa686cf9ee1a4bd918061a7ec5945e097518d2dcbdb639f9b8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 340,
+          "line_start": 337,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L337-L340"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ea9a734008ce34165d3fe4f09b0d95f16072ee34ba5c48cdc667cb36630215f"
+      ],
+      "text": "SDKs are managed exclusively through mise, with selections written to ~/.config/mise/config.toml and shims wired into bash, zsh, and fish via mise activate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ccb1ebce4407b2beabb3505ddd2f72cbc660e483c5d3f109a191e06d715c85fd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 198,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L196-L198"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 204,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L200-L204"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 194,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L191-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4355b7c2839244415d1d88330160d0f3987aaadd66af999cce043047ba239dba",
+        "slc_611af3f2a67da4106fec5de090dc766009f3f4cde16035cdaf741bf491dae826",
+        "slc_bad825f1949bd94e11689570970001771bbba15850b419f7d36b77b37ed8101d"
+      ],
+      "text": "For persistent server use (Unraid/NAS/VPS), the README directs users to run the prebuilt image via the bundled docker-compose.yml with PUID/PGID set in .env, attaching with docker compose exec -u dev."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06ed315b3b97e872ac31522735a193e8d19dbd9df81305e6e6d5c8c4d957fb07",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L48-L48"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L44-L44"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L30-L32"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L54-L54"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L27-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_122b4b640d21f8f4de5253700fa2e85310d9ae54f4330bc6d63056f801e898df",
+        "slc_6e8669ff3219963c626a9872cfc74ede28646c3ec8c877c36405f41dfd32abb4",
+        "slc_7ddb3354b3254b9f11294382b63f6bce43a1ba9d6bec1b87eb7b8344ff7f10f5",
+        "slc_f62034d7e88ade116b57ba450102ff3f684b7aa0856532119d1b64bb4886ab79",
+        "slc_f8882f360072e48d4bdd4078e269db5e68fbc084efda8d8be3058495258ddff0"
+      ],
+      "text": "Prerequisites are Docker (primary, tested) or Podman (experimental), plus Git; the installer auto-detects the runtime and offers a one-line Docker install path for macOS, Linux, and Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5faef4e2dbcc94a248da68394aada9779173c1b81dc6b68b23091bc5bd67590",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 39,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L34-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6df7b249ed70d8a7ffcea9f765bd2355997d0ca3ce5a30724cbab73f3dd61d0"
+      ],
+      "text": "Podman support is explicitly experimental, with possible rough edges around volume mounts, SSH agent forwarding, and rebuild flows; the rootless adapter disables SELinux container separation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02ebf76a05bd8cb850c17aa49a63d0f4f07f9da47fa51796d2542c48213fc273",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "2af40a5ef891154c6efdcee505f6163327f0eabc",
+          "line_end": 24,
+          "line_start": 17,
+          "path": "docs/adr/0001-fail-closed-artifact-installation.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/docs/adr/0001-fail-closed-artifact-installation.md#L17-L24"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "2af40a5ef891154c6efdcee505f6163327f0eabc",
+          "line_end": 36,
+          "line_start": 31,
+          "path": "docs/adr/0001-fail-closed-artifact-installation.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/docs/adr/0001-fail-closed-artifact-installation.md#L31-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7635aaf82f7b0c30b2e1d2433f7c859742a31cb6917264e40fd1bd46af921f92",
+        "slc_b284e60a70a350302b5aa0f69ee2c72c1faf6c5dccec81f04c7e2c151316a27e"
+      ],
+      "text": "The ADR notes its rollback guarantee is not crash atomicity—power loss during a multi-path commit can leave staged files needing inspection—and dpkg package operations fall outside the rollback guarantee."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_901e94172194af794762b741fb1af4ede0b419ea88fd915ad4147016079f3684",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "2af40a5ef891154c6efdcee505f6163327f0eabc",
+          "line_end": 15,
+          "line_start": 3,
+          "path": "docs/adr/0001-fail-closed-artifact-installation.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/docs/adr/0001-fail-closed-artifact-installation.md#L3-L15"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 542,
+          "line_start": 535,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L535-L542"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10df65f8ed8967463ca21421524cb919d9c29c1ebd5fff30fc2112d4e9150337",
+        "slc_cc5edac13cc5ba44cfb34992643789566bd7874dc6e121721737a8da9fb4fcd7"
+      ],
+      "text": "Artifact installation is fail-closed: GitHub-hosted optional tools require an exact release tag, one exactly named asset, and a matching SHA-256 digest, failing before download or extraction on missing or malformed metadata."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b25ecc6dd2e55d52276bf21caa1ec9a480944b8d63ebddf8a61b87d3cf10745",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 523,
+          "line_start": 506,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L506-L523"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 502,
+          "line_start": 499,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L499-L502"
+        },
+        {
+          "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+          "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+          "line_end": 210,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "squarewavesystems/squarebox",
+          "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md#L206-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_123162627e177cc36ebce18ce3eb6e3591e287a2d4053832bc646163b8d33e56",
+        "slc_719318053c6329e4ead614fa0c0b8c069eda034a43cd6eff02a7844dcb14d1fd",
+        "slc_d811c508306f31b17f5241107907ce9f516ab025042aa0b40ab7f02fef53eab7"
+      ],
+      "text": "The published image is multi-arch (amd64 + arm64), and the reviewed amd64 v1.1 candidate is roughly 900 MB in docker image ls, with optional components adding from ~7 MB (edit) to ~800 MB (.NET)."
+    }
+  ],
+  "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 633,
+        "path": "README.md",
+        "size": 31145
+      },
+      {
+        "lines": 28,
+        "path": "checksums.txt",
+        "size": 1871
+      },
+      {
+        "lines": 52,
+        "path": "CONTEXT.md",
+        "size": 2388
+      },
+      {
+        "lines": 27,
+        "path": "ROADMAP.md",
+        "size": 1567
+      },
+      {
+        "lines": 47,
+        "path": "uat-checklist.md",
+        "size": 3160
+      },
+      {
+        "lines": 36,
+        "path": "docs/adr/0001-fail-closed-artifact-installation.md",
+        "size": 2332
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/adr/0002-publish-immutable-release-identities.md",
+        "reason": "file-budget",
+        "size": 2972
+      },
+      {
+        "path": "docs/adr/0003-reconcile-selections-with-observed-state.md",
+        "reason": "file-budget",
+        "size": 317
+      },
+      {
+        "path": "docs/adr/0004-record-and-verify-install-identity.md",
+        "reason": "file-budget",
+        "size": 458
+      },
+      {
+        "path": "docs/adr/0005-report-assertion-evidence.md",
+        "reason": "file-budget",
+        "size": 277
+      },
+      {
+        "path": "docs/adr/0006-do-not-ship-disabled-learn-mode.md",
+        "reason": "file-budget",
+        "size": 283
+      },
+      {
+        "path": "docs/adr/0007-mechanically-verify-install-identity-schema.md",
+        "reason": "file-budget",
+        "size": 2472
+      },
+      {
+        "path": "docs/adr/0008-promote-box-replacements-transactionally.md",
+        "reason": "file-budget",
+        "size": 3321
+      },
+      {
+        "path": "docs/adr/0009-explicitly-convert-windows-adapter-state.md",
+        "reason": "file-budget",
+        "size": 1819
+      },
+      {
+        "path": "docs/agents/domain.md",
+        "reason": "file-budget",
+        "size": 512
+      },
+      {
+        "path": "docs/agents/issue-tracker.md",
+        "reason": "file-budget",
+        "size": 662
+      },
+      {
+        "path": "docs/agents/triage-labels.md",
+        "reason": "file-budget",
+        "size": 499
+      },
+      {
+        "path": "docs/releases/v1.1.0.md",
+        "reason": "file-budget",
+        "size": 5531
+      },
+      {
+        "path": "docs/releases/v1.2.1.md",
+        "reason": "file-budget",
+        "size": 4136
+      },
+      {
+        "path": "docs/releases/v1.3.0.md",
+        "reason": "file-budget",
+        "size": 962
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 7225
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 7922
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 8503
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 16866
+      }
+    ],
+    "omitted_count": 18,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 93,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 24,
+      "complete": false,
+      "omitted": 18,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_595a7fe8bc515cda913504c742c8671d",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/squarewavesystems/squarebox/8c1f97fcfb571473ea85251e78e5f020017e6d4f/49d1143036d8e9ff/manifest.json",
+  "package_id": "pkg_4ff36aed75ae789f01cde0156c6af069ef8252f333b75612c3d1d1ad226f217f",
+  "repo": "squarewavesystems/squarebox",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e051a1d095c4e862ec0ec39dcf6216dbde138149adc2f95052abc8ce65a474c4",
+  "snapshot_id": "49d1143036d8e9ff",
+  "sources": [
+    {
+      "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+      "git_sha": "15bb52ee8257c76abe578bae05876ba0f1d9b91c",
+      "lines": 52,
+      "path": "CONTEXT.md",
+      "repository": "squarewavesystems/squarebox",
+      "sha256": "0d01a51df9eca260e5f56cd6361940d4ce0afac6c98460cc6c7f31fe83964a29",
+      "source_id": "src_5dd36508d23d5c1a8d66511dad08d546",
+      "stored": "context.md-86fee53c3330.md",
+      "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/CONTEXT.md"
+    },
+    {
+      "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+      "git_sha": "a692051448934c195049bbc49f1afe958f2b8e7a",
+      "lines": 633,
+      "path": "README.md",
+      "repository": "squarewavesystems/squarebox",
+      "sha256": "dcfa1b9d883a8e7787c1257f5c1a05f373d84ec58371a9e974264794973e7fa4",
+      "source_id": "src_aa55d0785078586587919ed330a39396",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/README.md"
+    },
+    {
+      "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+      "git_sha": "b07519184fab527812319b686adceea29b32a17f",
+      "lines": 27,
+      "path": "ROADMAP.md",
+      "repository": "squarewavesystems/squarebox",
+      "sha256": "a1966d660ba36d76e3402bc12d77946b30863c1cc5a13d8da95cfd8abfdb07be",
+      "source_id": "src_2dbfbb76ed5054f8aaae768988ac112a",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/ROADMAP.md"
+    },
+    {
+      "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+      "git_sha": "04187c128400e2fa3adfaa48a4902af804a984db",
+      "lines": 28,
+      "path": "checksums.txt",
+      "repository": "squarewavesystems/squarebox",
+      "sha256": "1d9738655d596d4164d039bed9f009d15dc0ef7c8d104397947f1dc42ea27005",
+      "source_id": "src_d1a3eae2503754d4b7a81f7cbd91ffb3",
+      "stored": "checksums.txt-092ed35ce184.txt",
+      "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/checksums.txt"
+    },
+    {
+      "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+      "git_sha": "2af40a5ef891154c6efdcee505f6163327f0eabc",
+      "lines": 36,
+      "path": "docs/adr/0001-fail-closed-artifact-installation.md",
+      "repository": "squarewavesystems/squarebox",
+      "sha256": "de06ee8bd7c4ea5d521412b9ef389b0a08e9644df68187f14402c8a66670d8fe",
+      "source_id": "src_ca8490582aac55b2babb18e9f9f1c89a",
+      "stored": "0001-fail-closed-artifact-installation.m-74220d90128a.md",
+      "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/docs/adr/0001-fail-closed-artifact-installation.md"
+    },
+    {
+      "commit": "8c1f97fcfb571473ea85251e78e5f020017e6d4f",
+      "git_sha": "bb9d49e0474d37fe652ac0aa9331edfd5cae4805",
+      "lines": 47,
+      "path": "uat-checklist.md",
+      "repository": "squarewavesystems/squarebox",
+      "sha256": "5ebf61594f74d31b12a935d7977fa10828aa8d72d08b835eae43b3efe410f85f",
+      "source_id": "src_7735c8093f66529eb3d2079b7e5f685c",
+      "stored": "uat-checklist.md-a7e4397d57aa.md",
+      "url": "https://github.com/SquareWaveSystems/squarebox/blob/8c1f97fcfb571473ea85251e78e5f020017e6d4f/uat-checklist.md"
+    }
+  ],
+  "summary": "README and one ADR describe squarebox, a Docker/Podman container packaging CLI/TUI tools, AI coding assistants, and SDKs with lifecycle commands (sqrbx-*), persistent state via a named volume, and fail-closed artifact installation. Evidence is documentation-only; no dev-practice or evaluation material appears. Evidence coverage: 132 of 156 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

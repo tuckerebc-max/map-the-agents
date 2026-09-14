@@ -1,0 +1,390 @@
+{
+  "applied_operation_id": "op_82e696a4af954be8ac176971feeced4d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_03829bc430697e0d5f36a18217880cc4563cfef75e50068e789653eaa3e1d8ed",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7897052d2e5acb780740f06f5f1d180aa47667a558b531bc7d49b75a72a39cba"
+      ],
+      "text": "The project is described as a minimal codebase that generates synthetic coding agent session traces using the Pi coding-agent package."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_215efc569222f7db7773e6680b47fd2344eb32c11153f927502c9b9f4a5e521f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L18-L19"
+        },
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L16-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a60c6306c05fe5f6639ba8b373e6b9354c84f556a79293de840dede767cfb20",
+        "slc_a8d02366e06a1b47d018707168db4cbe809db535cc9b6930b3ee43dfe1ebdf3a"
+      ],
+      "text": "Each generated session pairs two models: a remotely hosted open model acting as the coding agent and a local llama.cpp model playing the user, within one of the project codebases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4bbde4198df54eeecaa506b36eb12fe55067cf54dd1d2ec341ff6a0719d6a4c6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a60c6306c05fe5f6639ba8b373e6b9354c84f556a79293de840dede767cfb20"
+      ],
+      "text": "The coding agent is equipped with the default Pi tools: read, write, edit, and bash."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b8245e480822bc4ae9d4fc652bc2b841086b273f3d90b7e1fa5f30f647941fa",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 54,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L35-L54"
+        },
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2487eec7614c21ef25cd0ceb36e3e387e540b77c999584e0998f465d5e1a6b25",
+        "slc_8a60c6306c05fe5f6639ba8b373e6b9354c84f556a79293de840dede767cfb20"
+      ],
+      "text": "The user model opens with one of the starting questions and drives the conversation with the agent over up to N turns, while the agent reads, edits, and runs against a locally cloned codebase."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85544aa3b9a575fa8c1e6060fdb73ac5af9e8c68ea8057afb51f8af5c28ee06e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14def9eb3e3e447e2703426e0e1691c0d6df95d6e7c7766f67ad2857e678f1cb"
+      ],
+      "text": "The full exchange is recorded as a trace, and the dataset is the cartesian product of agent model, user model, codebase, and starting question."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28e4ed529cdc705f5922d8ebb729937d071527ad9ab6c344d64692b7fbaecd1d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 31,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L25-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02527b3430b1ecca165e8c3ffefc1e0df739c31e53cc7b3ed6fd1ee726934827"
+      ],
+      "text": "The generation matrix comprises 20 agent models, 3 local user models, 20 codebases, and 20 starting questions, totaling 24,000 sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65844314ddddda643db529fb36a561736a813c922ef26fc168d8654ac95d904a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "f110c55dd48012d7a2c892b5cb45cfc66612ab43",
+          "line_end": 22,
+          "line_start": 1,
+          "path": "remote-models.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/remote-models.md#L1-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58ce2c7982208db7086dd901e98ae44970acb7862b98ce205358b2138191b50c"
+      ],
+      "text": "The 20 remote agent models are served by providers including novita, featherless-ai, together, groq, and nscale, per the listed model table."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b65dde6f0c2c6e84dca08d7db333007d5e55cbd7922643f8d0004341ed4e84d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 31,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L25-L31"
+        },
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02527b3430b1ecca165e8c3ffefc1e0df739c31e53cc7b3ed6fd1ee726934827",
+        "slc_8a60c6306c05fe5f6639ba8b373e6b9354c84f556a79293de840dede767cfb20"
+      ],
+      "text": "Local user models are GGUF quantizations (Q8_0) such as Qwen3.6-27B, Qwen3.6-35B-A3B-MTP, and gemma-4-26B-A4B-it, run via llama.cpp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b59d6e4bd9603dba68e8bbbb6dc79b31a21f21a7358b5af34374351160ef510",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_534a78b9148b748c49193628b723ad91ec33b88aabb3d34d3d344444c1b25b09"
+      ],
+      "text": "The README's final statistics section is a TODO, to be populated after generation with success rate, turn counts, and token counts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cdd5a4850da1a3efc4f8bf070c33f1e887112232f85e0b308bdc4dd8bea61b0",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 8,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L1-L8"
+        },
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L62-L64"
+        },
+        {
+          "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+          "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+          "line_end": 69,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "julien-c/synthtraces",
+          "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md#L68-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45b69619daad1203ac69fbf9fd6180dcadd138694910ed291fbdfe44004be297",
+        "slc_8f6b047e47cf3dae2617d9aef5a3aaa97c7bb9aa54f6abddfea8e3db8e6e2a5e",
+        "slc_ad6083f0cecb69d1cbcc9129754de4ccaeac227758f7079eb19507d33d75d6e3"
+      ],
+      "text": "The project is MIT-licensed, English-language, and links to a GitHub code repository and a Hugging Face dataset, both named julien-c/synthtraces."
+    }
+  ],
+  "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 69,
+        "path": "README.md",
+        "size": 3919
+      },
+      {
+        "lines": 22,
+        "path": "remote-models.md",
+        "size": 932
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 16,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_5c8823dccc755713b9cfcbb04192e9e2",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/julien-c/synthtraces/e5f8ec99d8140bcf650b61d9401af996c0c70789/255a7f2e31a09665/manifest.json",
+  "package_id": "pkg_872a7daa63f20e47aa6c104d1d7da8cef1820eaf6257a2d54dd782ee61b027f3",
+  "repo": "julien-c/synthtraces",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ed5c439e703728fa5c74043f6e85a611280c73c0ccafaf7cad9a3a271189530f",
+  "snapshot_id": "255a7f2e31a09665",
+  "sources": [
+    {
+      "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+      "git_sha": "b971ecaa2bffdc74f411300a8a224056b76c5ae0",
+      "lines": 69,
+      "path": "README.md",
+      "repository": "julien-c/synthtraces",
+      "sha256": "27402ae394abaa6b886c428351a54f1ca18c50c2a9e6e342061c88f54b29976c",
+      "source_id": "src_0531576aacba5fecab820aa20f4f8408",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/README.md"
+    },
+    {
+      "commit": "e5f8ec99d8140bcf650b61d9401af996c0c70789",
+      "git_sha": "f110c55dd48012d7a2c892b5cb45cfc66612ab43",
+      "lines": 22,
+      "path": "remote-models.md",
+      "repository": "julien-c/synthtraces",
+      "sha256": "dbfb5a6d41cf1a1a5fad5a6dbf60b6c3f47e5bc9824932c01ad466051dde66d6",
+      "source_id": "src_afa2eaf3ea895c26b1f2c28a269595c6",
+      "stored": "remote-models.md-2adab9d53d15.md",
+      "url": "https://github.com/julien-c/synthtraces/blob/e5f8ec99d8140bcf650b61d9401af996c0c70789/remote-models.md"
+    }
+  ],
+  "summary": "The repository is a minimal codebase for generating synthetic coding-agent session traces using Pi, pairing remote open agent models with local llama.cpp user models across a 24,000-session generation matrix. Evidence is limited to README and a model list; no code or workflow details are present.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,466 @@
+{
+  "applied_operation_id": "op_cce33c33b8584de3b079900ae7cabe13",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_01851f608d08b8fa0bf7220d297e644d7046d949fcffb58a72c766c88ef286b9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 4,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L4-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8da0fa372fc64e45041d6ef5830bb447b984aebdd4bb8840401e12bfd84d33b5"
+      ],
+      "text": "The project sets up an Amazon Bedrock agent with an action group that translates natural language into SQL queries, backed by Amazon Redshift Serverless and a Streamlit frontend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1d936fdf925853ab6baf684c24cb665ce0d9183afaf2a6fd1bb356503ec5b6c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 48,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L42-L48"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 75,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L65-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46b7fd85488d2e1e602ede30e8a29ada25e23edcd03d1a1f9ea5dd3622bcf430",
+        "slc_758f31311e9b9844028496d4625117ba212ecade71a139d60603e27145685c47"
+      ],
+      "text": "The solution comprises a Lambda function (lambda_function.py and redshift_serverless_functions.py), a Streamlit app directory, and a CloudFormation template (ec2-streamlit-template.yaml)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b522c66f1b77bd124acc8ba661fe733a83c7a2e83e33a703b4404294b1b92c8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 53,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L51-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d096b05643873a3fc68ec72814f191b2c926d114facf17aa46cb1d9494e057d"
+      ],
+      "text": "ACL mapping is hard-coded in the Lambda function to illustrate ACL logic; the README notes a production system would require proper authorization logic instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de57c981c5ef25063e8ef7308cfa32163e9e74dac5ab52497ebad515cce7babe",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 79,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L78-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b4f089b1cd38e3818eb88970ab4b9e8b4eeec2e3d1afc29f94c3de63e3e07169"
+      ],
+      "text": "Users access the Streamlit application in a browser at http://<EC2-Public-IP>:8501, with the EC2 public IP taken from the CloudFormation stack outputs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe3a2468b096eb0fdc611b2ec8e9bf76563aeaf13515cefb15b658df0c8baa90",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_081eab537d191df10a42b21e41c648677fe1d5e2291c910ed110c41aff5bdbe8"
+      ],
+      "text": "The setup requires an AWS account and Bedrock model access granted for Anthropic Claude 3 Sonnet, plus familiarity with Bedrock, S3, Lambda, Redshift Serverless, and EC2."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_339225efa510303286ae30410afd90a7194d90b4f5cb5ab0e031131993c69592",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 75,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L65-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_758f31311e9b9844028496d4625117ba212ecade71a139d60603e27145685c47"
+      ],
+      "text": "Deployment is orchestrated through a CloudFormation stack whose parameters include EC2 instance type, SSH key pair, Bedrock agent name, Redshift workgroup name, S3 bucket name, and an allowed IP for SSH."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8dbe5cbaa7c91bd0cd2be68a4cff33c096d63ef893388dd806654c6d989ac70",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 120,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L119-L120"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 144,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L144-L144"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 131,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L123-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e7c5a8d615854fd8a193d2dd8756684d75dd9fd765207a0c6a8ac6ae1136502",
+        "slc_adf2e0a2cdc7fae233617b83571a2e0bb7ab80405fce39261a0b6a818484ca5a",
+        "slc_ba94803700e5f439be2533b29d4ea519988c85a1d3f43015aed786efa7ef2e96"
+      ],
+      "text": "Configuration relies on environment variables: the Lambda uses REDSHIFT_WORKGROUP_NAME, while the EC2 instance's /etc/profile.d/bedrock_env.sh defines AGENT_ID, AGENT_ALIAS_ID, and AWS_REGION used by the Streamlit app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9da7af181ad30fe863046c9af84b143b441130f66a8e771aeab1898fbe1a2658",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 194,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L191-L194"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 215,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L205-L215"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 202,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L197-L202"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 240,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L237-L240"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 154,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L152-L154"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 188,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L185-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_365d72a02003d70e4452aa8d2ae5072e93ba8349239118da355253cfbc32b5e8",
+        "slc_81e0b57da7aea3999774dd947dc7ed658a6cccfad497c7238c5fc56308c00807",
+        "slc_95127256e645eaa4e9f6bc105dafe33ac59f065d70b078c5c0eb535045af989f",
+        "slc_9cdeee3a9084b4455e60c171dea65a4d048e41da450d0514f8c163abefe820f8",
+        "slc_bffc523866f8ea03c8d8fea236008b1496cc2f1754636b0ada5bb3923b3a1b95",
+        "slc_c760a6d8eeac41bb98de5204ec2c9991cb78440400d0c3d37b55fb30d3d5dcad"
+      ],
+      "text": "Troubleshooting guidance covers checking EC2 status, environment variables, cloud-init and Streamlit logs, Lambda configuration and invocations, Bedrock agent status, CloudWatch log groups, Redshift connectivity via Query Editor v2, and the CloudFormation events tab."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de3f0f6b9147f79724926b2c8dbbea6a309374a210d88491487af23331fc3322",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/CONTRIBUTING.md#L17-L20"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 37,
+          "line_start": 32,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/CONTRIBUTING.md#L32-L37"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/CONTRIBUTING.md#L54-L54"
+        },
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/CONTRIBUTING.md#L26-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c26a161676bd1491c9961ab26f6277a1c955f2c8c7beea6e9da20fcfc304dff",
+        "slc_3989e0053b3d999d0ddf9a5a23430ec12c91c8d5b442c2cdb912f7413d39151a",
+        "slc_a552d16129bfb7bb04c8910c09eebe0e8c2ee9fd2f25f878678ca68f580c7918",
+        "slc_d32e31dcda23d71dc809eaad49e78fb938a785b3ab4e0468e8bdfd1ade9e905f"
+      ],
+      "text": "Repository development practice: contributors should file GitHub issues with reproducible steps, base pull requests on the latest main branch, keep changes focused, ensure local tests pass, and monitor CI failures; security issues must go through AWS's vulnerability reporting page rather than public issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_81d2c24e710f453954c9180cc036afb4e198fad4c3edf827c30645d7ae471518",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+          "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+          "line_end": 53,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+          "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md#L51-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d096b05643873a3fc68ec72814f191b2c926d114facf17aa46cb1d9494e057d"
+      ],
+      "text": "The sample's access-control logic is only illustrative hard-coded ACL mapping in the Lambda function, so it is not production-grade authorization."
+    }
+  ],
+  "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 257,
+        "path": "README.md",
+        "size": 9710
+      },
+      {
+        "lines": 4,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 309
+      },
+      {
+        "lines": 59,
+        "path": "CONTRIBUTING.md",
+        "size": 3160
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 20,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_ad4de7b7d5fc5812bc02fa23efb02893",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/f5e8e9fb/6615ac42/892ead9ecba9927fe5f17bf9695de21589f2a634/7f8b0354074963f5/manifest.json",
+  "package_id": "pkg_776d5fdb5b43d5b9810f3eaed3efbc970d66692a5ad032329d32a0922f4d67df",
+  "repo": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fd61c9dd8d32e19a9243d4a1f9743ac5e49bc65dbbb08b4a69b7f3d7bc31cd13",
+  "snapshot_id": "7f8b0354074963f5",
+  "sources": [
+    {
+      "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+      "git_sha": "5b627cfa60b5313da2c7df81aab2340225c2329f",
+      "lines": 4,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+      "sha256": "34b6c98d5c23127ae6769e95e483e5bf6d3704ae1f0d3ae4e69d15f4ede118b6",
+      "source_id": "src_f80260f0784954d1a790e960cb9a7e7d",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+      "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+      "lines": 59,
+      "path": "CONTRIBUTING.md",
+      "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+      "sha256": "993e7639b93ea44d96be9813b63f5beada0deb2d4677d2e91ea96bc51e15b44b",
+      "source_id": "src_ec826b4f49d953bbad0a0bc6f9228602",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/CONTRIBUTING.md"
+    },
+    {
+      "commit": "892ead9ecba9927fe5f17bf9695de21589f2a634",
+      "git_sha": "3d245bb59b005f933e3f029ec0da32e7ee264571",
+      "lines": 257,
+      "path": "README.md",
+      "repository": "aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit",
+      "sha256": "ad134f191bbc491f2e2d6a2bd03be45bd2d038b5306bf7c511ca61d5d561e077",
+      "source_id": "src_96da25b1f1b45b27bc794d935a1a3196",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aws-samples/Setup-Amazon-Bedrock-Agent-for-Text2SQL-Using-Amazon-Redshift-Serverless-with-Streamlit/blob/892ead9ecba9927fe5f17bf9695de21589f2a634/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The project sets up an Amazon Bedrock agent with an action group that translates natural language into SQL queries, backed by Amazon Redshift Serverless and a Streamlit frontend. The solution comprises a Lambda function (lambda_function.py and redshift_serverless_functions.py), a Streamlit app directory, and a CloudFormation template (ec2-streamlit-template.yaml).",
+  "superseded_claim_ids": []
+}

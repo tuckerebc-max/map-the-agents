@@ -1,0 +1,921 @@
+{
+  "applied_operation_id": "op_8510fd2e1f2e475f889e72a7c094f764",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b75cb5f2ac81680daf71174d139e8913156e4e0bcd44a9b3a7c48fcbce2a1e0e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 176,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L176-L176"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 183,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L180-L183"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 187,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L186-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ba4529b593fac85b961044204a8f48a960b44b22c8adb3f265ca5c4715b3c0d",
+        "slc_b1763d345b3718fc01ae781ccb0bd7087d8de0c76b2d34e383ae9554292ae51b",
+        "slc_ffd65d345d88ee7ac0c4c7e438469e2cbd1e5f50194d2f805256d515930f3161"
+      ],
+      "text": "PR-Agent tools can be invoked by commenting commands like /describe, /review, /improve, and /ask on a pull request, or locally via a CLI such as 'pr-agent --pr_url <PR_URL> review'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1813c09faa7dd08f082d74dceb9c06b2709f075e7186a5162c470f0a7d67c70f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 86,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L72-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_847bb64dd7d870e95a5519bf0bb4c6abe64ea302b08b07a97ba8fc97ca2c4e37"
+      ],
+      "text": "The product can run as a GitHub Action triggered on pull_request opened/synchronize events, configured via a workflow file that supplies OPENAI_KEY and GITHUB_TOKEN secrets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ccc0fa8621d7ad72179b1753a5fe6ca5b90df03004fe386b49eab1cb7c1fb1e8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 97,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L92-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ddbc3b3a994bb8097afca929bce480a80be7083086aa0c2b953bb46283d657c"
+      ],
+      "text": "The tool is installable via pip ('pip install pr-agent') and run locally against a repository using an OPENAI_KEY environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38688547e6d89331173e2c045c5b354fcf7583b13a8876df055b0b65ea2eed51",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L114-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3d980e534da1b777f5711f1384f10a0520ce75c7324f364e7af91a06a6e6a27"
+      ],
+      "text": "Each core tool (/review, /improve, /ask) is described as using a single LLM call, taking roughly 30 seconds at low cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4ec3b97e2d827b15a60d5ebb8c0728b5319be39278b5e5ff1b5d31af4c381a1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L116-L116"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "9ac27c6304043bdc46c2cc4cd80e04c2b6b59d2b",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "docs/docs/index.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/index.md#L85-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a8848554190e7fb9c9d9d2283f82c69df326b79a21f8d99800cce32c7c4d8da9",
+        "slc_c3b8d859326cfc94c2f971f6b6416316e778d101556f38f3cac6cc4ade6f55ab"
+      ],
+      "text": "A PR compression strategy converts code diffs into manageable LLM prompts, and the README claims it handles both small and large PRs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3174da958940b56144bf39d271bb895e41d19347e22817c50f622b70d8756acc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 118,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L118-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b546208a295f10dc5655aa3a1cdf3446cd2d5ba540da08e82ed4c37862f4f8e1"
+      ],
+      "text": "Review behavior is customizable through JSON-based prompting in configuration files such as pr_agent/settings/configuration.toml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f85707b057404a08e08b15c62aaf8f1520fe49896268c867dae993e9e226d554",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 123,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L120-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_59ed17d748d9823ba61bbbc251a34c97899cd8bfa2d7a83138ac58ac39c102e5"
+      ],
+      "text": "Supported AI models include OpenAI GPT, Anthropic Claude, Google Gemini, DeepSeek, Mistral, and any model reachable through LiteLLM (e.g. Azure OpenAI, AWS Bedrock, Vertex AI, Ollama)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56a80641befb4b89feccbff5575c0bacc1720455b2a25aefdeb61daffc65d8ca",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "docs/docs/core-abilities/agent_skills.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md#L9-L13"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/docs/core-abilities/agent_skills.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1337e55247b25eaee62e71a911bcb620f4804d908f9e81cdc3478e050e85521e",
+        "slc_a60dec23bf880be31cbff6070bd627c954d89d955c38786f33a35fc96782de60"
+      ],
+      "text": "Agent Skills use a SKILL.md format: a directory with a markdown file whose YAML frontmatter carries name and description, followed by a markdown body of review guidance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c0562a4b7ea69a1b4fb73240a06fe56a04021739851f9883684dc7b67566a64",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "docs/docs/core-abilities/agent_skills.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f024b5152cd29327983be5fd8c09b07872c6765e3952be6d6e3f777ccfd54874"
+      ],
+      "text": "When enabled, PR-Agent discovers SKILL.md files under configured paths and injects each skill's name, description, and body into the /review, /improve, /describe, and top-level /ask prompts alongside extra_instructions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f642a8b20b4c16442496d356e6c8b9a98f08ce6e6b1c36742583cec868cf31b",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "docs/docs/core-abilities/agent_skills.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md#L44-L44"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+          "line_end": 42,
+          "line_start": 41,
+          "path": "docs/docs/core-abilities/agent_skills.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md#L41-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15ed15fc5bf68ecf97b65ed0fc0f3a19655e5cb314341794a364d734ff2736f1",
+        "slc_699c1eef992ce895e21945c632cb1092927b7d1caea0c831e9806b64f2f8f17f"
+      ],
+      "text": "skills.paths is host-level only: it cannot be set from a repository's .pr_agent.toml, and repo-supplied values are ignored with a warning, to prevent malicious repos from pointing the scan at sensitive host files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c36d6b0874ac3b687127139284eb154224f3a739e2d2e09bb467b08b77774e78",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "9ac27c6304043bdc46c2cc4cd80e04c2b6b59d2b",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "docs/docs/index.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/index.md#L52-L52"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L137-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19953e75c7d990e3f8e07a24b0c65dba755d509dbea4132e43470fd1cb5a7dad",
+        "slc_beab3fb9c8df8e67de2537019a5a65d9c81f4423a1a6f94ece3ea2c8edaba876"
+      ],
+      "text": "The /help_docs tool is temporarily disabled since v0.36.1 pending a fix for a credential-exposure issue (issue #2445)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d2a7d1e95113ebcbe914a5e8a694f4624d007c914b54c5939dc2ebe42da071c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "docs/docs/core-abilities/agent_skills.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md#L58-L58"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "docs/docs/core-abilities/agent_skills.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md#L50-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_660f0cc55627c96dc8c1b44df4371921748c125f75e16bf39410084a8dd74b59",
+        "slc_e207371e21bbd9ab5e7dfacdd901b9fbcab407cb598c9fd00625ceaa8c987b7f"
+      ],
+      "text": "Because PR-Agent makes single-shot model calls with no tool-use loop, the agent-skills progressive-disclosure model is not implementable; all enabled skill text is loaded into every prompt (bounded by max_skills_tokens), and skills needing script execution or binary assets will not work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0633550c31d74b3f5608a8a5176dd50d01a5f9153f6da5d17259870a9c51ca6d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 210,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L210-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dd8a215b30a6783776d25081187ec577799e300320f8fc8c3415989887d3605"
+      ],
+      "text": "Repository development practice: for local verification, run 'PYTHONPATH=. uv run pytest' from the repo root, which discovers the unit-test suite under tests/unittest; e2e tests under tests/e2e_tests need provider credentials and are invoked explicitly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_176b920dc593caafc5c5652ba98c8618da11994aad799ff3cd7704e813ce7c13",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 217,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L217-L217"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 219,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L219-L219"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L27-L27"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 229,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L229-L229"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c8a69cd8ce04493cdf15b4eac4d611599854c5c9040b68552d1d3b6bec2d715",
+        "slc_9da283d72261997263f945ab8717eadc75d227c89dabaa116e360f7802fafe1f",
+        "slc_aaa56cb1a2f424008174fe41b5a21c6e00a01a03bb1c5d80ee53a5af3c41a0c3",
+        "slc_cc2b2d68cf35eb292c957bfe9e0c02624a24808f5ec5e26f670ad221613d3e66"
+      ],
+      "text": "PR-Agent is an open-source, AI-powered code review agent donated by Qodo to the community; it is distinct from Qodo's primary commercial offering and now lives in the PR-Agent GitHub org with an external maintainer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b009da95f3270b7a6a88b3e347cce921fb4c46bcfe1970fd37c83357acdf06da",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+          "line_end": 62,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md#L61-L62"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "0d6bb41776a06c4b2eb0c11058091759659b5fee",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "RELEASE_NOTES.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/RELEASE_NOTES.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e67b8903d549f335893111d92b30d5e3455988e11fb44748a11caed7c392c47",
+        "slc_a2837a7485d1d77509d66d57ab1a165b1c1cf98e1622cdc20b1deab749a21cdf"
+      ],
+      "text": "Docker images for version 0.34.2 and later are published under the pragent/pr-agent Docker Hub namespace; older codiumai/pr-agent tags are a frozen archive with no new pushes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c09800861b24d85226afdcc851ff75b11e6666b2e9a770c16673083d3d4cd89a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "9ac27c6304043bdc46c2cc4cd80e04c2b6b59d2b",
+          "line_end": 50,
+          "line_start": 23,
+          "path": "docs/docs/index.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/index.md#L23-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_212d8a6350b2031473de735c7b81e8ce705e809298ba70a1a0b2798f45c103ab"
+      ],
+      "text": "The feature matrix lists tools including Describe, Review, Improve, Ask, Add Docs, Generate Labels, and Similar Issues, with per-provider support varying (e.g. Ask lacks Gitea support; Similar Issues is GitHub-only)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_857d53436936acd1bba85e66c6715e19a72907a4b60e5e8072d02c79fb020be7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "9ac27c6304043bdc46c2cc4cd80e04c2b6b59d2b",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/docs/index.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/index.md#L15-L15"
+        },
+        {
+          "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+          "git_sha": "9ac27c6304043bdc46c2cc4cd80e04c2b6b59d2b",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/docs/index.md",
+          "repository": "the-pr-agent/pr-agent",
+          "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/index.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_695b688db51ffa1ee153c2e5564296625f2e710704d67a25384c7d3386576f4d",
+        "slc_a0d0f10bb6d22b3fa0bee1c405ea0c6575b76e386e037b1903915e4ec747b358"
+      ],
+      "text": "A /help command lets users ask natural-language questions in a PR comment, and the bot responds with an answer including relevant documentation links."
+    }
+  ],
+  "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 229,
+        "path": "README.md",
+        "size": 8604
+      },
+      {
+        "lines": 136,
+        "path": "RELEASE_NOTES.md",
+        "size": 6258
+      },
+      {
+        "lines": 1,
+        "path": "docs/README.md",
+        "size": 53
+      },
+      {
+        "lines": 85,
+        "path": "docs/docs/index.md",
+        "size": 6797
+      },
+      {
+        "lines": 57,
+        "path": "docs/docs/summary.md",
+        "size": 2159
+      },
+      {
+        "lines": 58,
+        "path": "docs/docs/core-abilities/agent_skills.md",
+        "size": 4178
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/docs/core-abilities/compression_strategy.md",
+        "reason": "file-budget",
+        "size": 2493
+      },
+      {
+        "path": "docs/docs/core-abilities/dynamic_context.md",
+        "reason": "file-budget",
+        "size": 4693
+      },
+      {
+        "path": "docs/docs/core-abilities/fetching_ticket_context.md",
+        "reason": "file-budget",
+        "size": 9997
+      },
+      {
+        "path": "docs/docs/core-abilities/index.md",
+        "reason": "file-budget",
+        "size": 1636
+      },
+      {
+        "path": "docs/docs/core-abilities/metadata.md",
+        "reason": "file-budget",
+        "size": 2558
+      },
+      {
+        "path": "docs/docs/core-abilities/self_reflection.md",
+        "reason": "file-budget",
+        "size": 3259
+      },
+      {
+        "path": "docs/docs/faq/index.md",
+        "reason": "file-budget",
+        "size": 7383
+      },
+      {
+        "path": "docs/docs/installation/azure.md",
+        "reason": "file-budget",
+        "size": 5744
+      },
+      {
+        "path": "docs/docs/installation/bitbucket.md",
+        "reason": "file-budget",
+        "size": 2747
+      },
+      {
+        "path": "docs/docs/installation/gitea.md",
+        "reason": "file-budget",
+        "size": 3082
+      },
+      {
+        "path": "docs/docs/installation/github.md",
+        "reason": "file-budget",
+        "size": 34594
+      },
+      {
+        "path": "docs/docs/installation/gitlab.md",
+        "reason": "file-budget",
+        "size": 10768
+      },
+      {
+        "path": "docs/docs/installation/index.md",
+        "reason": "file-budget",
+        "size": 5466
+      },
+      {
+        "path": "docs/docs/installation/locally.md",
+        "reason": "file-budget",
+        "size": 6717
+      },
+      {
+        "path": "docs/docs/installation/mosaico_server.md",
+        "reason": "file-budget",
+        "size": 7163
+      },
+      {
+        "path": "docs/docs/installation/pr_agent.md",
+        "reason": "file-budget",
+        "size": 1005
+      },
+      {
+        "path": "docs/docs/overview/data_privacy.md",
+        "reason": "file-budget",
+        "size": 139
+      },
+      {
+        "path": "docs/docs/tools/add_docs.md",
+        "reason": "file-budget",
+        "size": 2327
+      },
+      {
+        "path": "docs/docs/tools/ask.md",
+        "reason": "file-budget",
+        "size": 3633
+      },
+      {
+        "path": "docs/docs/tools/describe.md",
+        "reason": "file-budget",
+        "size": 11789
+      },
+      {
+        "path": "docs/docs/tools/generate_labels.md",
+        "reason": "file-budget",
+        "size": 2380
+      },
+      {
+        "path": "docs/docs/tools/help.md",
+        "reason": "file-budget",
+        "size": 478
+      },
+      {
+        "path": "docs/docs/tools/help_docs.md",
+        "reason": "file-budget",
+        "size": 5217
+      },
+      {
+        "path": "docs/docs/tools/improve.md",
+        "reason": "file-budget",
+        "size": 19636
+      },
+      {
+        "path": "docs/docs/tools/index.md",
+        "reason": "file-budget",
+        "size": 4016
+      },
+      {
+        "path": "docs/docs/tools/review.md",
+        "reason": "file-budget",
+        "size": 14407
+      },
+      {
+        "path": "docs/docs/tools/similar_issues.md",
+        "reason": "file-budget",
+        "size": 4890
+      },
+      {
+        "path": "docs/docs/tools/update_changelog.md",
+        "reason": "file-budget",
+        "size": 1155
+      },
+      {
+        "path": "docs/docs/usage-guide/additional_configurations.md",
+        "reason": "file-budget",
+        "size": 29628
+      },
+      {
+        "path": "docs/docs/usage-guide/automations_and_usage.md",
+        "reason": "file-budget",
+        "size": 20406
+      },
+      {
+        "path": "docs/docs/usage-guide/changing_a_model.md",
+        "reason": "file-budget",
+        "size": 47327
+      },
+      {
+        "path": "docs/docs/usage-guide/configuration_options.md",
+        "reason": "file-budget",
+        "size": 10867
+      },
+      {
+        "path": "docs/docs/usage-guide/configuration_reference.md",
+        "reason": "file-budget",
+        "size": 30404
+      },
+      {
+        "path": "docs/docs/usage-guide/custom_ca_and_self_signed_certificates.md",
+        "reason": "file-budget",
+        "size": 2980
+      },
+      {
+        "path": "docs/docs/usage-guide/extending_pr_agent.md",
+        "reason": "file-budget",
+        "size": 4502
+      },
+      {
+        "path": "docs/docs/usage-guide/index.md",
+        "reason": "file-budget",
+        "size": 1395
+      },
+      {
+        "path": "docs/docs/usage-guide/introduction.md",
+        "reason": "file-budget",
+        "size": 1056
+      },
+      {
+        "path": "docs/docs/usage-guide/local_git_provider.md",
+        "reason": "file-budget",
+        "size": 3075
+      },
+      {
+        "path": "docs/docs/usage-guide/mail_notifications.md",
+        "reason": "file-budget",
+        "size": 1039
+      },
+      {
+        "path": "docs/docs/usage-guide/plain_diff_mode.md",
+        "reason": "file-budget",
+        "size": 4213
+      },
+      {
+        "path": "docs/docs/usage-guide/push_outputs.md",
+        "reason": "file-budget",
+        "size": 4063
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 11845
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 2700
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 177
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 2588
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1907
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 3017
+      }
+    ],
+    "omitted_count": 47,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 518,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 53,
+      "complete": false,
+      "omitted": 47,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_4199f9563e275d08ac4653bfcae0869e",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/the-pr-agent/pr-agent/d24b6f36e7871829ad8f29e884b4577fb3902f16/80d4ad7ef368be71/manifest.json",
+  "package_id": "pkg_92260eb57e8a7e2b7be45106a5d61f292677266e0a33c9f1516eb2db746d0f51",
+  "repo": "the-pr-agent/pr-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "466ffe82d95bc020305db4e65eb0efb3b2ebf8a3d0c0d37eb616ca6291fc28a4",
+  "snapshot_id": "80d4ad7ef368be71",
+  "sources": [
+    {
+      "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+      "git_sha": "0373ef7f60ff3f191b0e52f5f2efcf0732333744",
+      "lines": 229,
+      "path": "README.md",
+      "repository": "the-pr-agent/pr-agent",
+      "sha256": "7651c91c2d1526006c415da093646397c68f78d8cfbc0684a66be12ad0382efc",
+      "source_id": "src_eca5c23f34c858c182cb22116e53b9f3",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/README.md"
+    },
+    {
+      "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+      "git_sha": "0d6bb41776a06c4b2eb0c11058091759659b5fee",
+      "lines": 136,
+      "path": "RELEASE_NOTES.md",
+      "repository": "the-pr-agent/pr-agent",
+      "sha256": "742e9ac48689107d6308cf7071e69e5f3e0ace97ca584b9f909c64e85c49d5f8",
+      "source_id": "src_422360faf2ba59efb3a1efe6930de158",
+      "stored": "release_notes.md-68d24fa81558.md",
+      "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/RELEASE_NOTES.md"
+    },
+    {
+      "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+      "git_sha": "2a86ee0a178958d14492b860d031b114c310dbeb",
+      "lines": 1,
+      "path": "docs/README.md",
+      "repository": "the-pr-agent/pr-agent",
+      "sha256": "121d963070437a47ff3f30ca6e804ca415fae3d1e30a022d8640cf5226bb7487",
+      "source_id": "src_26a822824c3e5971aee4ec886505ec78",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/README.md"
+    },
+    {
+      "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+      "git_sha": "6288dbbd7e1b750debabb8292407cdddd506de70",
+      "lines": 58,
+      "path": "docs/docs/core-abilities/agent_skills.md",
+      "repository": "the-pr-agent/pr-agent",
+      "sha256": "623caa78091e9d6ae47f6e5abccadb1f78c1cc326f0e543ed1e34151a7681625",
+      "source_id": "src_37f82d16035951cfb0aa4b38872f0ef3",
+      "stored": "agent_skills.md-452d51e1fa20.md",
+      "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/core-abilities/agent_skills.md"
+    },
+    {
+      "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+      "git_sha": "9ac27c6304043bdc46c2cc4cd80e04c2b6b59d2b",
+      "lines": 85,
+      "path": "docs/docs/index.md",
+      "repository": "the-pr-agent/pr-agent",
+      "sha256": "247e98ef38b9693147da0ef2671967417b0f593d7db5303aed68be73e41a1583",
+      "source_id": "src_235fd772cca85b48a4cce9c4487ae92b",
+      "stored": "index.md-7dd3ba15306f.md",
+      "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/index.md"
+    },
+    {
+      "commit": "d24b6f36e7871829ad8f29e884b4577fb3902f16",
+      "git_sha": "568c943bafed131ffd60d54de6e5b7253954f5f1",
+      "lines": 57,
+      "path": "docs/docs/summary.md",
+      "repository": "the-pr-agent/pr-agent",
+      "sha256": "46c28de178df5582c2096a331ff4faf0a8b24201266b7c94be38f2aff75a703b",
+      "source_id": "src_96bc05ec44145ac790b2795254a55130",
+      "stored": "summary.md-c9bb2f375d2d.md",
+      "url": "https://github.com/The-PR-Agent/pr-agent/blob/d24b6f36e7871829ad8f29e884b4577fb3902f16/docs/docs/summary.md"
+    }
+  ],
+  "summary": "Evidence covers PR-Agent, an open-source AI code review agent (community-maintained legacy Qodo project) with comment/CLI/GitHub Action interfaces, multiple git providers and LLM backends, an agent-skills injection feature, and documented limitations. Development-practice guidance appears only in the contributing section.",
+  "superseded_claim_ids": []
+}

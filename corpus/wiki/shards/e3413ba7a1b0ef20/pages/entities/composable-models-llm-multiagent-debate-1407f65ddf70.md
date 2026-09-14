@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_11baeaae672ee54036db2c0b8542e601a36de7c3074b13584bab5fe738415b03
+- clm_20dc6ae33487f2d955f6f976e47908473003e85e5a44b714bec2a087582a8136
+- clm_22444835d11faf8ffb8f19dda5ba5f8748177023a40395279ec1b3be33c0236a
+- clm_4b475c9de024e71a72e9284553605942b02d56047a32dd7025651b8a4cd1b41b
+- clm_89f602a850c2b4130f53212036cad093da57506ce8adee6811212e4b4824f014
+- clm_a4e6c19ef2d944ad051d237165fc9443e7f4ebb8e6e326fefc1ca43546b84790
+- clm_cdde99fe7d15a7a5e7ffe04ab793464378d2c2ea3e02af6a0ca1b2028d8d525f
+- clm_e6b5cc6261313aee7520a2da63819a180831905d5ac13f4864933e25c037bcb7
+- clm_fcedf510b3af498c2e246b727cb4e41951891943445becf8c4966f75e32948f6
+maturity: draft
+page_id: pg_58d309e697e65700bda41407f65ddf70
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: composable-models/llm_multiagent_debate
+updated_at: '2026-09-14T03:41:49Z'
+---
+
+# composable-models/llm_multiagent_debate
+
+<!-- rcw:begin owner=entity:ent_b174624aea535762a9def9837073216f block=evidence -->
+- composable-models/llm_multiagent_debate is mentioned in this evidence. [@claim:clm_11baeaae672ee54036db2c0b8542e601a36de7c3074b13584bab5fe738415b03] [@claim:clm_20dc6ae33487f2d955f6f976e47908473003e85e5a44b714bec2a087582a8136] [@claim:clm_22444835d11faf8ffb8f19dda5ba5f8748177023a40395279ec1b3be33c0236a] [@claim:clm_4b475c9de024e71a72e9284553605942b02d56047a32dd7025651b8a4cd1b41b] [@claim:clm_89f602a850c2b4130f53212036cad093da57506ce8adee6811212e4b4824f014] [@claim:clm_a4e6c19ef2d944ad051d237165fc9443e7f4ebb8e6e326fefc1ca43546b84790] [@claim:clm_cdde99fe7d15a7a5e7ffe04ab793464378d2c2ea3e02af6a0ca1b2028d8d525f] [@claim:clm_e6b5cc6261313aee7520a2da63819a180831905d5ac13f4864933e25c037bcb7] [@claim:clm_fcedf510b3af498c2e246b727cb4e41951891943445becf8c4966f75e32948f6]
+<!-- rcw:end owner=entity:ent_b174624aea535762a9def9837073216f block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,579 @@
+# twing-cli
+
+twing helps multiple coding agents on a developer team coordinate with
+each other instead of quietly stepping on the same work. It's a CLI +
+hook for your coding agent (Claude Code today, others planned) plus a
+small server every agent's client talks to.
+
+Full design: `docs/orchestrator-and-verification-design-doc_v1.md`.
+
+## Getting started
+
+### 1. Install
+
+```sh
+npm install -g @twing/cli
+```
+
+Needs Node.js >= 20. No Go toolchain, no clone -- `twing-hook` (the
+client's Go-side hook binary) is fetched automatically the first time
+`twing init` needs one.
+
+### 2. Point it at a coordinator
+
+```sh
+cd ~/path/to/some-repo
+twing init --server https://coordination-server.twing.dev
+```
+
+`coordination-server.twing.dev` is twing's own hosted coordinator -- free
+to use, no invite needed for a GitHub-hosted repo (`init` authenticates
+you via GitHub itself, see step 2 of the walkthrough below). Once one
+person's run this, the server URL is committed to `.twing/twing.yml`, so
+everyone else afterward just runs plain `twing init`. Prefer to run your
+own instead? See "Self-hosting your own coordinator" below.
+
+`init` does three things:
+
+1. **Resolves the coordinator** -- from the repo's committed
+   `.twing/twing.yml`, `--server`/`TWING_SERVER`, or an interactive prompt
+   if neither exists yet (just press Enter to accept twing's own hosted
+   coordinator, shown as the default).
+2. **Authenticates** -- verifies your GitHub permissions on this repo and
+   mints a local PAT (only its hash reaches the server). Uses the `gh`
+   CLI's token when one is available, falling back to a browser OAuth
+   device flow. Admin/maintain access founds an untouched project and makes
+   you its admin; any other repo access just joins it. Non-GitHub repos
+   use a separate auth path -- see "Self-hosting your own coordinator"
+   below. If this makes you the project's admin -- founding it, or later
+   re-running `init` as one -- it also commits a bootstrap hook into this
+   repo's own `.claude/settings.json`, so every future teammate gets twing
+   set up automatically on their first edit; see "Zero-touch onboarding"
+   below.
+3. **Sets up the local pieces** -- installs `twing-hook`, wires it into
+   Claude Code's hooks (once per machine), and starts a background daemon.
+   The daemon exists because each hook invocation is a fresh, stateless
+   process; the daemon is the long-running piece that actually watches
+   your edits and syncs them to the server in the background.
+
+Safe to re-run any time -- later runs just re-verify and re-point rather
+than duplicating anything.
+
+### 3. Using it day to day
+
+Once `twing init` has run once on this machine, just work normally in
+Claude Code in any repo whose `.twing/twing.yml` declares a coordinator --
+hooks capture claims automatically in the background (divergence findings
+surface reactively, via a session-start notice or an alignment thread --
+`twing align` is there if you want to look yourself, but it's not something
+you're expected to run proactively), and twing evaluates all your edits for
+problems early on. It does this by doing the following:
+
+1. **Forces a design** -- before an agent's first `Edit`/`Write` in a
+   session, twing forces the agent to submit a design that describes what
+   changes the agent intends to make.
+2. **Checks constraints** -- if your codebase has protected areas set up
+   (optional), twing checks whether your design touches any of those areas
+   and, if so, submits a review for you. twing blocks further edits until
+   your review is approved.
+3. **Evaluates overlapping files** -- twing evaluates files that your agent
+   wants to update. If other agents are also trying to modify the same
+   files, it warns you.
+4. **Flags conflicting symbol edits** -- if two agents are trying to modify
+   the same symbol, twing flags and blocks. You can resolve it offline or
+   through [twing monitor](https://github.com/Twing-dev/twing-monitor), and
+   unblock yourself.
+5. **Flags semantic conflicts** -- if two designs have conflicts,
+   duplication, or tension between them, twing flags that. As above, you
+   can resolve it offline or through twing monitor, and unblock yourself.
+
+A full summary of what twing flags and when is below:
+
+## The design-conflict gate
+
+### The four conflict buckets
+
+Every conflict a design can hit collapses into exactly one of four buckets.
+One principle decides who resolves each: **approval belongs to whoever's
+authority you'd be overriding.** Overriding your own peer's declared or
+actual work is yours to waive; overriding a project-wide rule someone else
+wrote isn't.
+
+| #   | Bucket                 | Between                                                                                                                                                                 | Blocking?                                              | Resolved by                                                                                     | Sub-kinds                                                                                                                                                                                                                            |
+| --- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | `constraint_violation` | one design vs. a fixed project rule (`.twing/twing.yml`'s `constraints:`)                                                                                               | yes                                                    | **admin** approves (`twing design reviews --decide`)                                            | _(none -- `DesignConstraintType` is a single value, `"constraint"`)_                                                                                                                                                                 |
+| 2   | `file_overlap`         | two designs' _declared_ plans (self-reported `creates`/`touches`), before either has written a line                                                                     | no -- advisory only, never flags                       | nothing to resolve                                                                              | _(none)_                                                                                                                                                                                                                             |
+| 3   | `symbol_conflict`      | two designs' _actual edits_ -- a real edit lands on a symbol another open design's owner also edited, declared as their own scope, or whose signature it silently broke | yes, whichever side(s) have an open design at the time | **self** -- `twing design resolve --justify` clears your own block immediately, no admin needed | `real_edit_collision` (both sides genuinely wrote to the same symbol), `scope_intrusion` (your edit landed inside another design's _declared_ scope), `contract_break` (you changed a signature a caller/callee's design depends on) |
+| 4   | `llm_divergence`       | two designs' _stated intent_ -- judged by an LLM (Bedrock) on what each plan actually does, even when file lists never overlap                                          | yes                                                    | **self**, same as `symbol_conflict`                                                             | `duplication` (same problem solved twice), `contradictory_assumptions` (one plan assumes true what the other assumes false), `tension` (the two plans' changes to shared behavior/data/contracts don't agree on which wins)          |
+
+Implications of the split:
+
+- **Only bucket 1 ever needs a human.** Buckets 3 and 4 exist because two
+  peers' own work collided -- neither has more authority than the other, so
+  whichever side is blocked can justify and clear it themselves
+  (`resolve --justify` auto-decides "approve" the instant the review has no
+  constraint hit in it). A justification that _also_ touches a constraint
+  hit stays admin-gated regardless of what else is bundled with it.
+- **Bucket 2 never blocks anything.** It's a plan-vs-plan heads-up before
+  either side has actually touched a file -- useful context, never a gate.
+  If it later becomes real (someone actually edits the shared symbol), that
+  shows up separately as a bucket-3 `symbol_conflict`.
+- **Buckets 1 and 3/4 differ in what they're checked against.** Bucket 1 is
+  deterministic (a `.twing/twing.yml` rule, checked synchronously). Buckets
+  3 and 4 are sourced from real signal -- Tree-sitter-parsed `Claim`s for
+  bucket 3, an async Bedrock semantic-conflict pass for bucket 4 -- so
+  either can arrive _after_ the triggering `Edit`/`Write` already succeeded,
+  surfaced via `twing align` / an alignment thread rather than a synchronous
+  deny.
+
+```sh
+twing design register --summary "adds a retry wrapper" --touches src/net/retry.ts
+twing design amend --id <designId> --touches src/net/retry-config.ts
+twing design close --id <designId>
+```
+
+A deny message always names the exact command to run next (`register`,
+`amend`, `resume`, or `resolve --justify`) -- follow it, then retry. This
+repo dogfoods its own gate against a real coordinator; see its own
+`.twing/twing.yml` for a live example of the constraints it's checked
+against.
+
+A design left open past the point its work is actually done isn't harmless
+-- it's still-live scope other sessions' conflict checks compare against,
+so it can trigger a false overlap against someone else's genuinely
+unrelated work. `SessionEnd` best-effort-closes every open/flagged/dormant
+design for that session, and the TTL sweep eventually expires anything
+older, but neither is immediate -- `twing design close --id <designId>`
+closes one on demand, right when the work it named is finished, same as
+`resolve`/`amend` targeting one specific design by id. Safe to call more
+than once; closing an already-closed/superseded/expired design is a no-op.
+
+Constraints (the project rules a design gets checked against for bucket 1
+above, seeded from `.twing/twing.yml`'s `constraints:` section by
+`twing init`) are separate from designs -- `twing constraints
+list` shows what's currently enforced for a project, and any project admin
+can `twing constraints remove --id <constraintId>` to retire a stale one
+immediately. This is deliberately _unilateral_ -- one admin acting alone,
+same as seeding a new/changed constraint already works today -- not a
+second-admin-approves-first staged flow. That's a real gap (an admin could
+narrow away a rule nobody else agreed to loosen) tracked as separate
+follow-up work, not yet built.
+
+### Project settings
+
+`.twing/twing.yml` also carries a `settings:` block for the knobs a
+project's admins may want to tune. It reaches the coordinator the same way
+`constraints:` does -- pushed by `twing init`, which requires project
+`admin` role on an already-founded project -- so an edit only takes effect
+once someone with admin runs `init` on it:
+
+```yaml
+settings:
+  # How long a design can sit with no activity before the coordinator
+  # demotes it to `dormant` (excluded from conflict checks, still resumable
+  # with `twing design resume`). Default 7d; between 5m and 90d.
+  designDormantAfter: 7d
+```
+
+Durations are an integer plus `s`/`m`/`h`/`d` -- `7d`, `36h`, `90m`. A
+value that's unparseable or out of range is reported by `init` and ignored
+rather than rounded into range, and dropping the block entirely puts the
+project back on the default.
+
+Changing the window takes effect immediately, including for designs that
+are already open -- seeding re-times the project's live designs as well as
+setting the default for new ones, so shortening it doesn't wait out the old
+window before it starts working. Designs that have already gone dormant are
+left alone: their expiry is measured from the active window, so re-timing
+them would retroactively delete work that went quiet under the old policy.
+Once a design does go dormant it stays resumable for a further week before
+expiring for good, independently of this setting.
+
+## Zero-touch onboarding
+
+Separate from the design-conflict gate above, and aimed at a different
+problem: getting twing *onto* a teammate's machine without them having to do
+anything.
+
+Whoever founds a project (or already holds admin/maintain on it) has `init`
+commit two git-tracked files: `.twing/bootstrap-hook.sh`, a small POSIX
+shell script, and the `.claude/settings.json` entries that point Claude Code
+at it. Every clone of the repo carries both, and the script runs on every
+hook event -- the same set the machine-global wiring covers, so a machine
+driven only by the committed files still gets the whole product rather than
+just the gate. On a machine that has never run twing, it **installs twing
+itself**:
+
+```sh
+npm install --prefix ~/.twing/lib @twing/cli@latest
+node ~/.twing/lib/node_modules/@twing/cli/dist/index.js init --unattended
+```
+
+Nothing to type, no sudo, no browser -- the prefix is under your own home
+directory, unlike `npm install -g`, and `--unattended` skips the one
+privileged step. Installing into twing's own directory (rather than running
+straight from `npx`) is deliberate: the daemon launch marker records that
+path, and npm may evict its own cache at any time, which would leave a
+marker that works today and silently stops working weeks later. Once the
+binary is in place the hook `exec`s it, so the real design gate decides the
+verdict as usual. Later runs are a `test -x` plus an `exec` -- no network,
+no subprocess, no measurable cost.
+
+**Why it installs rather than instructs.** Earlier versions denied the edit
+and told the agent to run `npm install -g @twing/cli && twing init`. That
+failed twice over. An install instruction arriving as *denied tool output*
+is indistinguishable from a prompt-injection attempt, so a well-behaved
+agent refuses it -- confirmed live, a real session refused even after its
+operator explicitly said to proceed, and was right to. And `npm install -g`
+needs a writable global prefix, so on a system-Node box it needs `sudo`,
+which a hook (no TTY) can never supply: even a fully cooperative agent would
+have failed. Enforcement is unchanged -- twing ends up active either way --
+but the friction is gone.
+
+**Authentication comes along for the ride.** An install with no credential
+would just fail at the gate instead of at the install, so when running
+unattended twing reuses the GitHub token from the `gh` CLI (`gh auth
+token`) rather than starting the browser device flow. Same repo-permission
+check, same server-derived role -- one less thing a human has to be present
+for. If `gh` isn't installed or isn't logged in, the bootstrap reports that
+plainly; `gh auth login` (or one interactive `twing init`) fixes it.
+
+**It keeps itself current, too.** If the coordinator moves ahead of a
+machine's twing, the gate updates that machine in place and replays the same
+edit through the new binary -- so the edit simply proceeds. Nothing is asked
+of anyone: on a machine where nobody installed twing, no twing command is
+ever named, because none of them would run there (`npm install -g` needs
+sudo on a system-Node box, and there is no `twing` on `PATH` at all). If the
+update genuinely can't happen, you get an operational report pointing at
+`~/.twing/design-coordinator.log`, not a command list.
+
+**Installing twing yourself keeps working.** `npm install -g @twing/cli`
+followed by `twing init` writes machine-global wiring, and the committed
+script stands down the moment it sees `~/.claude/settings.json` already
+referencing the binary -- Claude Code merges hooks from every settings scope
+and runs all of them, so without that guard both would fire on every tool
+call. Your copy is yours: twing won't replace a package you installed
+deliberately, and version-mismatch and sign-in messages keep naming the
+commands that genuinely work on your machine. Global wiring also covers the
+one case the committed files can't -- a session started in a directory
+*containing* twing repos rather than inside one, where there is no
+repo-local settings file to load.
+
+**Turning it on and off** -- both are plain local file edits, no server call
+and no auth, since the real authorization is your own branch protection / PR
+review on the committed file:
+
+```sh
+twing project enable-enforcement    # writes it
+twing project disable-enforcement   # removes it
+```
+
+Remember to commit and push both files that `enable-enforcement`/`init`
+writes (`.twing/bootstrap-hook.sh` and `.claude/settings.json`);
+twing has no way to do that for you. Non-GitHub-hosted projects,
+`--invite`/`--no-auth` onboarding, and repos founded before this existed
+don't get the hook written automatically -- run `twing project
+enable-enforcement` once you're that project's admin.
+
+The script assumes a POSIX `sh` (macOS/Linux). Windows hook-execution
+behavior for this mechanism hasn't been verified -- a known gap, same as
+`init`'s OS-level service install.
+
+**If the bootstrap fails** (no network, npm unreachable, no `gh`
+credential), the hook denies with an *operational* report -- what failed and
+who to tell -- explicitly not an instruction for the agent to install
+anything another way. Only the `PreToolUse` entries can carry a verdict at
+all; the rest stay silent rather than emit output for an event that has no
+meaning for it. That is a rare path, not the default one.
+
+### Quick command reference
+
+| Command                                               | What it does                                                                                                                         |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `twing init [--server <url>]`                         | One-time setup per machine: discover/confirm the coordinator, authenticate, install/wire the hook, start the daemon. Safe to re-run. |
+| `twing align`                                         | Cross-session divergence findings (advisory, never blocks).                                                                          |
+| `twing design register --summary "..." --touches a,b` | Register a design before your first edit/write (or let plan mode do it automatically).                                               |
+| `twing design amend --id <designId> --touches c,d`    | Expand an already-registered design to cover more files.                                                                             |
+| `twing design close --id <designId>`                  | Close a design once its work is done -- see below.                                                                                   |
+
+The full command list, including self-hosting/admin commands, is in
+"Modifying twing-cli itself" below.
+
+### For agents: handling a design-gate deny
+
+If an `Edit`/`Write` call comes back denied with a `twing design coordinator:
+...` message, that's this gate, not a bug in your tool call and not something
+to route around (e.g. by falling back to `Bash` to write the file directly --
+nothing stops that mechanically, but it defeats the whole point). It exists
+because this project assumes more than one agent or developer can be working
+in the same repo at once, and it's trying to catch two of them stepping on
+the same work before that becomes a merge conflict or a design disagreement
+discovered too late.
+
+Each deny message already tells you the specific command to run
+(`twing design register`, `amend`, `resume`, or `resolve --justify`) -- or,
+on a fresh session's very first deny, to check `twing design list --mine
+--status open` first and join an existing open design of yours via `amend
+--group` if one already covers the same effort, rather than registering a
+new one for it. Follow whichever it tells you, then retry the original
+edit. Two things worth knowing before you do:
+
+- **`resolve --justify` unblocks you immediately for a `symbol_conflict` or
+  `llm_divergence` deny, but not for `constraint_violation`.** The two
+  peer-vs-peer buckets self-approve on the spot -- no one else's authority
+  is being overridden, so the tool call reports `status: "resolved"` and
+  the same edit succeeds on retry right away. A `constraint_violation`
+  justification instead queues a `PendingReview` for a project admin
+  (`twing design reviews --decide`); until that happens, the file stays
+  denied with a message saying a review is pending. Don't loop retrying it
+  in that case -- that's a stop-and-wait state, not a self-serviceable one.
+  See "The four conflict buckets" above for which is which.
+- **Tell the human what happened.** Registering, amending, or resuming a
+  design creates a real record on the coordinator, attributed to the
+  operator's own identity, that other sessions' conflict checks get
+  compared against. If you resolve a deny and the edit goes through, say so
+  explicitly in your reply -- which command you ran and why -- rather than
+  reporting the original task as done with no mention that a coordination
+  decision was made on the operator's behalf along the way. This is
+  different from an ordinary failed tool call you're expected to just fix
+  and move past silently (a typo'd path, a missing directory): this one
+  represents someone else's work the gate is asking you to account for.
+
+### For agents: close your design when you're actually done
+
+A registered design doesn't expire the moment its task finishes -- it stays
+`open` (visible to every other session's conflict/overlap checks) until
+something closes it. That something should usually be you, not a fallback
+mechanism: `SessionEnd` best-effort-closes your session's open designs, and
+there's a TTL sweep behind that, but both are safety nets for a session
+that ends abruptly, not a substitute for closing deliberately. An open
+design that's actually finished work is exactly the kind of stale scope
+that produces a false "overlap" against someone else's genuinely unrelated
+change later in the same session or a concurrent one.
+
+So: once the work a design named is actually complete -- the edit landed,
+the task is done -- close it yourself:
+
+```sh
+twing design close --id <designId>
+```
+
+Do this before ending your turn if the task is finished, not just when a
+human happens to ask. It's a normal, expected part of finishing work
+through this gate, the same as `register` is part of starting it -- not
+something that needs separate permission each time, and not something to
+skip because `SessionEnd` will "probably get it eventually."
+
+---
+
+Everything below this line is for running your own coordinator or working
+on twing-cli itself -- most people using twing day to day can stop here.
+
+## Self-hosting your own coordinator
+
+Two flavors, depending on who needs to be able to reach it.
+
+### Local, or a small trusted team (`--no-auth`)
+
+If everyone who can reach `twing serve` is already trusted -- your own
+local agents, or a small team on a private network -- you don't need any
+identity ceremony at all:
+
+```sh
+npm run start --workspace packages/server -- --no-auth
+# elsewhere:
+twing init --server <url> --no-auth
+```
+
+Every request just carries a self-declared developer id (derived from your
+git email) for attribution in claims/findings -- there's no token, no
+admin/member distinction, every check that would otherwise be role-gated
+no-ops. `--no-auth` is sticky once cached: later plain `twing init` runs
+against that server pick it back up automatically. The server still binds
+to loopback only by default; passing a non-default `--host` logs a startup
+warning, since a non-loopback bind plus `--no-auth` means anyone who can
+reach the port can write claims as any developer id they name.
+
+### Your own public, full-auth server
+
+Run the coordinator (`packages/server`, a single process with no external
+database -- see §7 of the design doc) wherever your team can reach it:
+
+```sh
+npm run start --workspace packages/server
+# PORT=9000 to override the default 8787
+```
+
+It prints the URL it's listening on -- that's what you hand to `twing init
+--server <url>`. It also generates a one-time **bootstrap token** on first
+run and logs where to find it (`~/.twing/serve-data/bootstrap-token` by
+default). This only matters for a project that can't use GitHub-verified
+auth -- a GitHub-hosted project's `twing init` founds/joins it directly,
+no bootstrap token involved.
+
+**Running it on a shared machine** as a plain foreground command means it
+dies when your SSH session ends and its logs go nowhere. `deploy/` has
+scripts for running it as a systemd service under an isolated,
+unprivileged user instead -- see `deploy/README.md`.
+
+**Design checks made from plan text** (`ExitPlanMode`) need an LLM call to
+turn the plan into structured fields, so wherever this runs needs an LLM
+provider configured. The provider is **auto-detected** from which of these
+env vars is set, in precedence order **AWS → GCP → OpenRouter → Bifrost**;
+if none is set the plan-text check fails soft to "clean" (the
+`Edit`/`Write` "must have a registered design" rule still applies). Each
+provider also carries its own model config -- `TWING_<PROVIDER>_EXTRACT_MODEL`
+/ `TWING_<PROVIDER>_SEMANTIC_CHECK_MODEL`, each defaulting to something
+sensible for that provider -- so switching providers doesn't leave a
+stale model id behind.
+
+```sh
+# AWS Bedrock (bedrock-mantle)
+export AWS_BEARER_TOKEN_BEDROCK=...
+export AWS_REGION=us-east-1
+# export TWING_BEDROCK_EXTRACT_MODEL=google.gemma-4-31b   # default
+npm run start --workspace packages/server
+
+# GCP Vertex AI -- credentials via google-auth-library
+# (GOOGLE_APPLICATION_CREDENTIALS / gcloud ADC / GCE metadata server)
+export GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json
+export GOOGLE_CLOUD_PROJECT=my-project      # or resolved from the credentials
+export GOOGLE_CLOUD_LOCATION=global         # optional; "global" (the default) uses the location-less aiplatform.googleapis.com host
+# export TWING_VERTEX_EXTRACT_MODEL=google/gemini-2.5-flash          # default
+# export TWING_VERTEX_SEMANTIC_CHECK_MODEL=google/gemini-2.5-flash   # default
+
+# OpenRouter
+export OPENROUTER_API_KEY=...
+export OPENROUTER_BASE_URL=...              # optional, defaults to https://openrouter.ai/api/v1
+# export TWING_OPENROUTER_EXTRACT_MODEL=openai/gpt-4o-mini    # default
+
+# Bifrost gateway (https://docs.getbifrost.ai)
+export TWING_BIFROST_BASE_URL=http://localhost:8080
+export TWING_BIFROST_API_KEY=...            # optional; sk-bf-* sent as x-bf-vk, else Bearer
+# export TWING_BIFROST_EXTRACT_MODEL=openai/gpt-4o-mini       # default
+```
+
+### Onboarding a non-GitHub-hosted project
+
+(GitLab, self-hosted git, no remote at all) on a full-auth server -- or
+founding/inviting on your own full-auth server generally, since the
+bootstrap token is filesystem-gated and only the operator has it:
+
+**1. Claim the first admin identity**, once per server, from whoever has
+shell access to the machine `twing serve` runs on:
+
+```sh
+cat ~/.twing/serve-data/bootstrap-token         # the server logged this path at startup
+twing admin bootstrap --server <url> --token <that>
+```
+
+This generates your personal access token **on your own machine** -- the
+server only ever sees its hash, not even at bootstrap time -- and prints it
+once. It's cached locally; nothing else to do.
+
+**2. Found the project**, same as any project -- just run `twing init` (add
+`--no-github` to skip straight past the GitHub-verified attempt if this
+repo happens to have a GitHub remote you don't want used):
+
+```sh
+cd ~/path/to/some-repo
+twing init --server <url>
+```
+
+**3. Invite the rest of your team.** Either that project's admin or the org
+admin from step 1 can invite a new contributor directly -- an org admin
+isn't required for every new teammate on every repo:
+
+```sh
+twing project invite --label alice@example.com --project <id>
+# -> prints an invite code; hand it to Alice however you'd share anything else (Slack, etc.)
+```
+
+Alice redeems it in one step, from her own machine, generating her own PAT
+locally the same way you generated yours -- nobody, including whoever
+invited her, ever sees it:
+
+```sh
+twing init --server <url> --invite <code>
+```
+
+(`twing keygen --invite <code>` does just the authentication part, if you
+don't want `init`'s hook install/daemon start bundled in.) An invite code
+is single-use and expires after 7 days; `twing project list-invites` /
+`twing admin list-invites` show pending ones, `twing project revoke-invite`
+/ `twing admin revoke-invite` kill one early.
+
+Already authenticated to this server from another project? Redeeming an
+invite reuses your existing PAT instead of minting a second identity -- you
+just pick up the new membership.
+
+**Account recovery.** Lost your local `~/.twing/config.json`? If you
+onboarded via GitHub, just re-run `twing init` (or `twing join --github`)
+-- it re-verifies your GitHub role and reattaches to your existing identity
+rather than minting a new one. That self-service path doesn't exist here,
+on a non-GitHub project, so recovery instead means asking whoever has shell
+access to the server to rotate your identity under the same label:
+
+```sh
+# on the machine running twing serve:
+npm run start --workspace packages/server -- --regenerate-bootstrap-token
+twing admin bootstrap --server <url> --token <that> --label you@example.com   # same label as before
+```
+
+**Not sure who to ask, or which project id to use?** Ask whoever founded
+the project, or run `twing project list-developers` from inside the repo
+(defaults to that repo's project id) to see current admins/members.
+
+## Modifying twing-cli itself
+
+Only relevant if you're contributing to this repo, not to use `twing`.
+
+### Prerequisites
+
+- Node.js >= 20
+- git
+- Go -- only needed for `hook/` itself; a checkout of this repo with Go on
+  `PATH` builds `twing-hook` from source instead of fetching a release, so
+  your own uncommitted `hook/` changes always take priority
+
+### Build
+
+```sh
+git clone git@github.com:Twing-dev/twing-cli.git
+cd twing-cli
+npm install
+npm run build
+```
+
+This builds every package (`packages/core`, `packages/cli`, `packages/server`)
+via TypeScript project references. `npm link` in `packages/cli` gives you a
+`twing` command that runs your local build instead of the npm-published one.
+
+### Full command reference
+
+| Command                                                                                            | What it does                                                                                                                                                                                                                                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `twing init [--server <url>] [--invite <code>] [--no-auth] [--no-github] [--unattended]`           | One-time setup per machine: discovers/bootstraps the coordinator, authenticates (GitHub-verified join/found by default for a GitHub-hosted repo; `--invite` to redeem one instead; `--no-github` to skip straight to the old "no cached PAT" error; `--no-auth` to declare this coordinator has no identity verification at all), hook install, hook wiring (including the design gate), daemon start. `--unattended` is what the committed bootstrap hook runs: never prompts, never opens a browser, and skips the OS-service install and global wiring -- see "Zero-touch onboarding". Safe to re-run. |
+| `twing uninstall [--dry-run]`                                                                      | Undoes what `init` set up on this machine: stops the daemon, removes any launchd/systemd definition left by an older init, unwires twing's hooks from `~/.claude/settings.json`, and deletes `~/.twing`. Run it *before* `npm uninstall -g @twing/cli` -- on its own, that leaves the daemon running and the hooks pointing at a deleted binary. Never touches a repo's committed `.claude/settings.json`; that's `twing project disable-enforcement`.                                     |
+| `twing login [--server <url>] [--token <pat>]`                                                     | Just cache an already-generated PAT for a server -- no hook install, no settings wiring, no daemon start. For a second machine, or a stale local config.                                                                                                                                                                                                                                                               |
+| `twing join --github [--server <url>]`                                                             | Just the GitHub-verified authentication step `init` does by default -- generates/reuses a PAT and (re-)checks your GitHub role on this repo, without the rest of `init`.                                                                                                                                                                                                                                               |
+| `twing keygen --invite <code> [--server <url>]`                                                    | Just the authentication part of redeeming an invite -- generates a PAT locally (or reuses an existing one for this server) without the rest of `init`.                                                                                                                                                                                                                                                                 |
+| `twing whoami [--server <url>]`                                                                    | Prints your authenticated identity and org/project roles.                                                                                                                                                                                                                                                                                                                                                              |
+| `twing admin bootstrap --token <bootstrap-token>`                                                  | Break-glass: claims the server's one-time bootstrap token, creating the first org and its admin.                                                                                                                                                                                                                                                                                                                       |
+| `twing admin invite` / `list-invites` / `revoke-invite` / `revoke-developer` / `list-developers`   | Org-scoped admin actions (§17.10).                                                                                                                                                                                                                                                                                                                                                                                     |
+| `twing project invite` / `list-invites` / `revoke-invite` / `remove-developer` / `list-developers` | Project-scoped admin actions -- a project's own admins, not just org admins, can run these.                                                                                                                                                                                                                                                                                                                            |
+| `twing project enable-enforcement` / `disable-enforcement`                                        | Writes/removes the zero-touch bootstrap hook in this repo's `.claude/settings.json` -- see "Zero-touch onboarding" above. Local file edit only, no server call; commit and push it yourself.                                                                                                                                                                                                                   |
+| `twing align`                                                                                      | Local constraint checks plus a server round-trip for cross-session divergence findings.                                                                                                                                                                                                                                                                                                                                |
+| `twing daemon`                                                                                     | Runs the daemon in the foreground (rarely needed manually -- `init` starts it detached, and the hook restarts it on demand; it exits on its own once idle).                                                                                                                                                                                                                                                            |
+| `twing design register/resolve/amend/resume/close/list/reviews`                                    | Design-conflict gate commands, see above.                                                                                                                                                                                                                                                                                                                                                                              |
+| `twing constraints list [--project <id>] [--server <url>]`                                         | Lists every constraint currently enforced for a project.                                                                                                                                                                                                                                                                                                                                                               |
+| `twing constraints remove --id <constraintId> [--server <url>]`                                    | Admin-gated, unilateral, immediate -- see below.                                                                                                                                                                                                                                                                                                                                                                       |
+| `twing design enable-gate` / `disable-gate`                                                        | Sets a per-project local override (`~/.twing/gate-overrides.json`) -- hook wiring is machine-global, so this is no longer about wiring/unwiring hook entries (that would toggle every repo at once); `disable-gate` opts just this one project out, other repos on the same machine are unaffected.                                                                                                                    |
+
+`twing review` (test-delta integrity on top of `align`) isn't built yet.
+
+### Trying it against real agents
+
+`simulator/` runs two real `claude` CLI sessions concurrently against a
+shared fixture project to exercise `align` end to end -- see
+`simulator/README.md`.

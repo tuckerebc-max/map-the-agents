@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0376cb9dc1e4e5382f9316a143c5abb01fdd241ae52f39f4aae24c0426d57661
+- clm_0cbd08a771b8296897647ddfd461fc3e6888d57b48c7d99de9159ad2aadd9598
+- clm_2b5fca4fbdb8f61b809b951035372c2ae3c4e8d8a38433bd8551ab5727e836ea
+- clm_6e22ef057fda910ee0e87b17b2ee20fd68a37cf0429878214ecf9f8f4a44e473
+- clm_882b5a009d20356626caeca0fce2ef4dea0809cb8f0957a34a4b5c2818a6f74e
+- clm_9fa9a915c32de59faea3bc7abde5774307efafd0cc54a1f1b389fa2352fc5bb5
+- clm_ab7e1510af2897fcc01b0870d5de99ed98701b21ec245f46ff92e20ea52ea3e9
+- clm_b4ccc116b835aebcec2404e3f20b46b41253febeaa4e61885b1a909b70420d37
+- clm_bf256486053b36ff38b0f85aa8e9d829fe29d2a531e09a20927bda49a84ed054
+- clm_d2b7cb21345ad8a16acaf4d91a6e01487d384ea065d42a579f3337e120f6fb30
+- clm_d62a014318873671a1dfa88b3cdb168357da3e9f8df32c2eb7e4ff12429dbd5e
+- clm_e571918b9f911e09e41297784035a7abce80eb813e933cfa8f90394559e46b12
+maturity: draft
+page_id: pg_f358b02cd3b45096914246acf6c072fe
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: touchpoint-labs/gadfly
+updated_at: '2026-09-14T04:27:36Z'
+---
+
+# touchpoint-labs/gadfly
+
+<!-- rcw:begin owner=entity:ent_3d8a7b9e839e516cbeee406d6576ca8a block=evidence -->
+- touchpoint-labs/gadfly is mentioned in this evidence. [@claim:clm_0376cb9dc1e4e5382f9316a143c5abb01fdd241ae52f39f4aae24c0426d57661] [@claim:clm_0cbd08a771b8296897647ddfd461fc3e6888d57b48c7d99de9159ad2aadd9598] [@claim:clm_2b5fca4fbdb8f61b809b951035372c2ae3c4e8d8a38433bd8551ab5727e836ea] [@claim:clm_6e22ef057fda910ee0e87b17b2ee20fd68a37cf0429878214ecf9f8f4a44e473] [@claim:clm_882b5a009d20356626caeca0fce2ef4dea0809cb8f0957a34a4b5c2818a6f74e] [@claim:clm_9fa9a915c32de59faea3bc7abde5774307efafd0cc54a1f1b389fa2352fc5bb5] [@claim:clm_ab7e1510af2897fcc01b0870d5de99ed98701b21ec245f46ff92e20ea52ea3e9] [@claim:clm_b4ccc116b835aebcec2404e3f20b46b41253febeaa4e61885b1a909b70420d37] [@claim:clm_bf256486053b36ff38b0f85aa8e9d829fe29d2a531e09a20927bda49a84ed054] [@claim:clm_d2b7cb21345ad8a16acaf4d91a6e01487d384ea065d42a579f3337e120f6fb30] [@claim:clm_d62a014318873671a1dfa88b3cdb168357da3e9f8df32c2eb7e4ff12429dbd5e] [@claim:clm_e571918b9f911e09e41297784035a7abce80eb813e933cfa8f90394559e46b12]
+<!-- rcw:end owner=entity:ent_3d8a7b9e839e516cbeee406d6576ca8a block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,638 @@
+{
+  "applied_operation_id": "op_a7d4dcfb211c4a4cbf589b3ad352064e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_594d2b0a06fb928745b63a6ab93dd90e231f50b1395cd9b99e74f52bd2a50d5a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L16-L16"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33979c946aea1732e115516cc80348dec777d7058bb594e715f35a5e194bcdfe",
+        "slc_3d5d8c30113bd11120a0d6799a599799077202605daf8f647c678544e6e596c1"
+      ],
+      "text": "Forgeo is described as a software factory for a coding agent: given a backlog and an agent CLI, it picks the next runnable task, runs the agent, commits the result, and tracks progress in plain files plus a web dashboard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05a85f0e27f653315e7806b989bdfaced92fc2efab2ed2f7c78e6c6fdb6093bb",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 293,
+          "line_start": 286,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L286-L293"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L20-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13ae0842b015fedb959122319a451d108defdf955c131ae5f180a4240dac6407",
+        "slc_1c0957c8a7965972be3fec8a9388675ab4c55ad75a5bb5d2dceea91a34671c93"
+      ],
+      "text": "Task selection picks the oldest OPEN task whose dependencies are all COMPLETED (or whose run_at schedule is due); REVIEW blocks dependants while independent tasks keep running."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eba71376f94ccc43fdcd8122179470d2c36a8d98dcb3d0f5e06f1aef70882334",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L20-L24"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "781860bbc74fe02b49381447afec8be3c50c249c",
+          "line_end": 43,
+          "line_start": 36,
+          "path": "CONTRIBUTING.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CONTRIBUTING.md#L36-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c0957c8a7965972be3fec8a9388675ab4c55ad75a5bb5d2dceea91a34671c93",
+        "slc_5720b98dc5611db2af0fd27ca788bd631fd7cbbc844f4da3bd3f894dd1588e79"
+      ],
+      "text": "The agent contract is agent-agnostic: any CLI that reads the FORGEO_TASK environment variable can be used, and the backlog task's acceptance criteria are rendered into that instruction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87f5d225a4b747829d7c08e2d54ccc6932fcb867e8463f7afb3e43076b2cd91d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 68,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L65-L68"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 46,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L44-L46"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 81,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L74-L81"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 107,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L102-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04a2ef45490576311a6dd5d199626e6cf6e0bf712917953d0fcd669528012445",
+        "slc_7a3041fd277f114aacb66b699897bb68c35f299a121ff6a49b0658f97c5120e2",
+        "slc_83ba923228388712190b3696c8406341a03fa4cd27fec2e95533c35b18bf409a",
+        "slc_ee79efe62fcf6ed0160065548ea838a81581d4a48198265a5bbad45c622cc5e3"
+      ],
+      "text": "CLI surface includes forgeo init, validate, start, once, run --task, status, stop, restart, instance add/list, and web, with the daemon running one cycle per interval_minutes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3ab0ad618a850d3121b80de9a49700266442b0db7cb0a8a8abf0bea23f9c2fb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 347,
+          "line_start": 330,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L330-L347"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 374,
+          "line_start": 360,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L360-L374"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 59,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L58-L59"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1544b39bee1a0006395e497a40d2463c196626c35693661bc12b4a51ef55e4a2",
+        "slc_6bea34eef1e8360072dba75bd52f3cb86f8e045f3bc056d225f1b19717a91f47",
+        "slc_97c473deaf03fefbfefe7ec89eb4a60f957ad474344f5aed4ec8b71449cad2b4",
+        "slc_ef89effd7a99ef214064ee10f0f01c82893d2adb8079a5f21086b5c766c13947"
+      ],
+      "text": "The central dashboard (forgeo web) defaults to 0.0.0.0:8790, aggregates all registered instances, and exposes a per-instance HTTP API under /api/instances/<name>/ including task create/edit/delete, reopen, config PUT, and daemon start/stop/restart endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_502eb40bb2bfa12d35a0c2bbb8886fb3c50303cdab94f239c9b2271ea829dbef",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L48-L48"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 106,
+          "line_start": 83,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L83-L106"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L120-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06381937cb0a3e6b8c7b8af1de5e61b23e8764f3154d08dbc9bc8c602fff7943",
+        "slc_66d5270e8b9a47f9706713d970e002b19e207666a57ca3f768a0504159e3622e",
+        "slc_7fbfcb9f6a3a5109e88e2578bd931ba9ce96a3721ac74aaef72bfd1462aa3b46"
+      ],
+      "text": "Backlog providers are file, HTTP, GitHub, GitLab, and Jira; file/HTTP exchange the full document while Jira/GitHub/GitLab sync issues individually, with engine state stored in a hidden forgeo block or issue properties."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c4fb2e9da456b43d8ae4916c3f92400c07fdf7f2979e1c4a543b41f743e8a29",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 94,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L89-L94"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L96-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54f16d99ae07991f48662f824cd55b32c37ae079663aa04948aa7e91de678c54",
+        "slc_cc671001d649bb1257bf6cdf5f6db4d56bf3eadba98141bec7eb4fb44bdf7ec6"
+      ],
+      "text": "An optional Docker sandbox runs the agent isolated, with a configurable image, network (default none), read-only mounts, and the repo bind-mounted at the same path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45865eca87b7c24ad6b3cc32463f495ffb164e7a68286a6d013da838481257a5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L48-L48"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 270,
+          "line_start": 266,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L266-L270"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 210,
+          "line_start": 206,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L206-L210"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 284,
+          "line_start": 279,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L279-L284"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 388,
+          "line_start": 378,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L378-L388"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06381937cb0a3e6b8c7b8af1de5e61b23e8764f3154d08dbc9bc8c602fff7943",
+        "slc_48bc5b1fb384f3a602db7670987fe4a4755e9df5bb6f9775615ac9338a934b9b",
+        "slc_50e03b754cd679063e3bca084feda84cd99c1c4a8d9301e2f9a74a3508080395",
+        "slc_6ba4c5c6ebb19c78918c9ce1c3da066ffb85c022ed69105ac13ec1b8cdbe8907",
+        "slc_ce954adae7a6a1d2a76899ea23aa15a70f57f1c059e90d47849833ab478be9d4"
+      ],
+      "text": "Forgeo persists runtime state in .forgeo/ (backlog, logs, blockers) plus runs.jsonl run history, daemon.state.json, and rotating backlog.json.bak snapshots restored when the backlog is found corrupt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_033db32ad36c6264814c50f9fbd2b4c45cc2c89f0b92d9a7cf898db5bb4ee497",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L20-L24"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 49,
+          "line_start": 43,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L43-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c0957c8a7965972be3fec8a9388675ab4c55ad75a5bb5d2dceea91a34671c93",
+        "slc_ce01e367098da733d8af5a8253b0b08e4d9c6c9233b8841e51e9cfbc00655768"
+      ],
+      "text": "Optional review_mode: branch commits successful agent work to a forgeo/review/<TASK_ID> branch, marks the task REVIEW, and waits for a human merge/Complete or Request-changes action instead of committing directly to main."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7dbff1382a95bee2b761e38d4b87fc5af4618dcdd69efb81870625934e13d092",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 145,
+          "line_start": 141,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L141-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_883171cd8af84a90365bd9e68bfd9d6c93005ee471ace437b39d8e4f8021c12b"
+      ],
+      "text": "A silent no-change success (exit 0 with unchanged tree) marks the task BLOCKED for human review rather than FAILED, unless the agent opts in via no_changes_exit_code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2befd9e1af1a0fbed374262864d41fbd66b8f4f415c96a2a4bea2f547bc336f4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+          "line_end": 256,
+          "line_start": 248,
+          "path": "CHANGELOG.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md#L248-L256"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3f7e2a5070013aca27644361543161120dc27ab31d32089b67d26c52c49c04f",
+        "slc_ef89effd7a99ef214064ee10f0f01c82893d2adb8079a5f21086b5c766c13947"
+      ],
+      "text": "The dashboard supports optional bearer-token auth via forgeo web --token (or a token in ~/.config/forgeo/web.toml), returning 401 on /api/* routes without it; without a flag or token file it stays open by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_09bdd8288a200c68a853e249deb1c2ec784dd7964a94fb7410d6d4b1d57f1eb5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "781860bbc74fe02b49381447afec8be3c50c249c",
+          "line_end": 77,
+          "line_start": 69,
+          "path": "CONTRIBUTING.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CONTRIBUTING.md#L69-L77"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "781860bbc74fe02b49381447afec8be3c50c249c",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "CONTRIBUTING.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CONTRIBUTING.md#L19-L19"
+        },
+        {
+          "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+          "git_sha": "781860bbc74fe02b49381447afec8be3c50c249c",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "CONTRIBUTING.md",
+          "repository": "lucagazzola/forgeo",
+          "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CONTRIBUTING.md#L21-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_353ecbc4885885cbd1fe584fd29707fd95d34ebe724218f837b02eda37bd53d3",
+        "slc_5b54a176eaf01e76772408c13b570f10fbb553dabe81cb8a1cbbb279981f851d",
+        "slc_b20f9fde7e9e5c12efc23945c368d81c04ed476b8e5709a1251a32c48cbe4efc"
+      ],
+      "text": "Repository development practice: contributors must run pytest, ruff check, and mypy src/forgeo before opening a PR, and CI enforces the same quality gates on pull requests."
+    }
+  ],
+  "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 135,
+        "path": "README.md",
+        "size": 5500
+      },
+      {
+        "lines": 478,
+        "path": "CHANGELOG.md",
+        "size": 29137
+      },
+      {
+        "lines": 127,
+        "path": "CONTRIBUTING.md",
+        "size": 5071
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/agent-contract.md",
+        "reason": "file-budget",
+        "size": 3612
+      },
+      {
+        "path": "docs/backlog.md",
+        "reason": "file-budget",
+        "size": 12844
+      },
+      {
+        "path": "docs/cli-reference.md",
+        "reason": "file-budget",
+        "size": 9373
+      },
+      {
+        "path": "docs/configuration.md",
+        "reason": "file-budget",
+        "size": 16613
+      },
+      {
+        "path": "docs/getting-started.md",
+        "reason": "file-budget",
+        "size": 5391
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 1992
+      },
+      {
+        "path": "docs/web-console-api.md",
+        "reason": "file-budget",
+        "size": 11279
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 92,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 7,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_4c893e52a4aa5fd1ba5ee4b3f92d6c61",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/lucagazzola/forgeo/6e709a374a66b964c97e7e6a9c6665ad89fcac08/12163ac21a1508c3/manifest.json",
+  "package_id": "pkg_e77a3664181424c4459942f01ac9d63d4cca3e4f59bc07ce2b56bf9aac1614e0",
+  "repo": "lucagazzola/forgeo",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a9e3beffec407da25776d2ae94355be53865bb0cc975748943cdb38b8a789c39",
+  "snapshot_id": "12163ac21a1508c3",
+  "sources": [
+    {
+      "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+      "git_sha": "b7403952026854fd32535f8b605bf37a1ec7b085",
+      "lines": 478,
+      "path": "CHANGELOG.md",
+      "repository": "lucagazzola/forgeo",
+      "sha256": "2575f0c8912e1411c2690c13f813b219ed14e9fc9acd179068064140829f8c55",
+      "source_id": "src_ac1bd9db6607570886182b4a80dfa269",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CHANGELOG.md"
+    },
+    {
+      "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+      "git_sha": "781860bbc74fe02b49381447afec8be3c50c249c",
+      "lines": 127,
+      "path": "CONTRIBUTING.md",
+      "repository": "lucagazzola/forgeo",
+      "sha256": "26c61dd1b9f453b8a710219a30a018f425149f668a909467140492ab211ba92d",
+      "source_id": "src_b2c2c07470425edb9255d90e162e2559",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/CONTRIBUTING.md"
+    },
+    {
+      "commit": "6e709a374a66b964c97e7e6a9c6665ad89fcac08",
+      "git_sha": "1721f3168a87060c1e4983b16ed35ccc188968ee",
+      "lines": 135,
+      "path": "README.md",
+      "repository": "lucagazzola/forgeo",
+      "sha256": "be868d04b720b9d2a2b8d3ca987f457df85341b9165ca1f67a4e3d962b80bf09",
+      "source_id": "src_155a1730fae459c39b9c865d4621123a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/lucaGazzola/forgeo/blob/6e709a374a66b964c97e7e6a9c6665ad89fcac08/README.md"
+    }
+  ],
+  "summary": "Forgeo is a scheduled, agent-driven software factory: a daemon picks backlog tasks, runs an agent CLI, commits results, and surfaces human decisions via a central web dashboard, with file/HTTP/Jira/GitHub/GitLab backlog providers and an optional Docker sandbox. Contributor quality gates (pytest, ruff, mypy) are documented separately as repository development practice.",
+  "superseded_claim_ids": []
+}

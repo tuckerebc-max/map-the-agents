@@ -1,0 +1,415 @@
+{
+  "applied_operation_id": "op_72fd54fdcfdb45569675844c4a0256b8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba06ecc7b65c9a364f9f0774f58a48032389467a8c6a003b2058060e7603f031",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L9-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c883385d815c85ecb7ea986bc9af3984d50460dddf2ec242e2956752a4bd8f6b"
+      ],
+      "text": "The product is a Claude Code plugin installed via the marketplace commands `/plugin marketplace add Rylaa/fable5-opus5-orchestrator` and `/plugin install orchestrator@fable-orchestrator`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0fcf10d2c3aa7937cd2ba83e241e5bd856c9eff75beeb3ff3d8f2b47d066e9b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_263f83e83386f6b107189526ec403dff34445eba161a2ab2d751e65e9bb28c73"
+      ],
+      "text": "The plugin needs `python3` on PATH, supports macOS and Linux only, and Claude Code must be restarted after installation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4f95ba1c01c5d2cb4e33f8f385b8bd985dd6104b5bf3714e3deb18be4929184",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 22,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L18-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d501911551fed5e031a47e22018380d66f80577ecbefebac45533155cd08457b"
+      ],
+      "text": "Sessions run as: chair reads the repo, asks all questions in rounds before planning, writes a ledger, then works directly or through workers; workers cannot ask the user anything."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5212a76b171883a4c28297660c2ab2ea8a5fae446d25a14c654af0cf19a3621",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 33,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L28-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea797db768170c3ce54a197cea347745202b0eff3971d68856e5f377dce4fd2a"
+      ],
+      "text": "Four hooks enforce the workflow: a PreToolUse clarify gate, a PreToolUse spawn gate, a task-list gate on the third ledgerless tracker task, and a Stop gate when a turn ends with open ledger items."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f58a7e45025e484b597c5e8d42d7b40d7ada39be61c782d88064b2acbdc2af13",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 57,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L52-L57"
+        },
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L59-L59"
+        },
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 22,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L18-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29ffff3e749a791af2a153f39c8dc0a4ba0dc56356add78fa4aca1b82d72ed8f",
+        "slc_bc1ea31a73336338eb0797d789d44d0e4d7b8b03109014628c28ee720fc75ca3",
+        "slc_d501911551fed5e031a47e22018380d66f80577ecbefebac45533155cd08457b"
+      ],
+      "text": "Requirements are recorded as checkbox lines in `./.workflow/LEDGER.md` with open, done, and deferred-with-approval states; phases cite item numbers and discoveries are appended."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_221141e91323ad3f5b8d977e19da2261483cca88a733979c39a6ca6050ffc5cc",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L48-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_667d49cf1da5b60a1daf00288085f41caa8eac8f78b38423709fe5f62969cde5"
+      ],
+      "text": "The hook validates the `## Clarified` record by four rules: every question has an `->` answer, no `Assumption:` line, at least one answered question, and a `Branch:` line; only plain bullets count, not fenced templates or HTML comments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d29c7fd00cf1f945a8873a01f38024bba530442e3921b71ef287ec0234d98cd2",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e086aa404fbce4bd58476c7fc90768a85be010bce0b2bf68c41ec28b23e01fcb"
+      ],
+      "text": "The clarify protocol in skills/clarify/SKILL.md scans seven axes (scope edge, acceptance, constraints, decision ownership, priority conflicts, existing-code contact, failure behavior) and always asks whether work lands on the current branch or a new one."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97747af4959536a2c1c823f2d435c265e86719947054d374d2222a38276fbaf4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 73,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L65-L73"
+        },
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f580d7b84f0f617e53ecf899be48e625e5b03c5733758289fc19ea9278db332",
+        "slc_5274003a214c9e7051770d0e284a00750e6eacbc369ee6a223742517ae514291"
+      ],
+      "text": "Behavior is configurable via env vars under `\"env\"` in ~/.claude/settings.json: a 1500-char spawn threshold, per-gate disable flags, stop-gate frequency, metrics logging, and teammate reaping settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_459044351bca2811a0f1dfeb503c5caa0e0326265ee2e55c37ab52d69aed1308",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 73,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L65-L73"
+        },
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L75-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f580d7b84f0f617e53ecf899be48e625e5b03c5733758289fc19ea9278db332",
+        "slc_e2764cf0d1f83ac66d51b9f0105e24356667266541e3f627c09f80e6fd8704d5"
+      ],
+      "text": "Finished teammates are reaped automatically at session end and on a rate-limited idle sweep (default 1-hour idle threshold); metrics go to ~/.claude/fable-orch/metrics.jsonl, summarized by `python3 scripts/stats.py`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9955ecbac2a8f4ebeaa9c17c3b54dc2ac955e614b2931da40be50086c2e95c8d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 88,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L87-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8688549b4cacb90f32d847e984562b97a47b70a51f3a97829e52bb993e67f06"
+      ],
+      "text": "The hooks check record shape, not question fidelity, and enforcement depends on the host's hook pipeline, so users should verify behavior on their own setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c791faff4a0967f3417cc22b62fdcb2e412d9073f2a123d1212a2293e6065760",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c2d1b0ee261166b52b6ad97716966d199c1fc40e59a952095fce7ba6f0624df6"
+      ],
+      "text": "Short spawns, forks, and teammates are never gated; a fully closed ledger from an earlier session does not disarm gates, and ledgers are retired by renaming to `LEDGER-<topic>-archive.md`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31280e69718f5df695fe5f14463047bbca3f0c8d5b23dd326a5d2a1a48b99ac2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L79-L81"
+        },
+        {
+          "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+          "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "rylaa/fable5-opus5-orchestrator",
+          "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2db93a96f757cb9f495600bad3492b7dbdf633f95858da2186099b21a590da85",
+        "slc_b753d802c24f7cfd81d5dd1d4aa8751365fa6a79dfa5d2b851334911bf4c3e88"
+      ],
+      "text": "Repository development practice: tests run with `python3 -m pytest tests/ -q`; the hook tests execute the stdin/stdout JSON filters end to end as subprocesses, plus a second layer pinning the core text and the skill."
+    }
+  ],
+  "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 92,
+        "path": "README.md",
+        "size": 4742
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 20,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_23cc1bd9cf6a5660b28fd02099512a6b",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/rylaa/fable5-opus5-orchestrator/d258385088a618260f8cc6fcf9486d388edacdfb/b517b7606d696080/manifest.json",
+  "package_id": "pkg_9d1f22fc3a45cc47df92505d48449153147c55b445cdedbf7b634fb9659c3cad",
+  "repo": "rylaa/fable5-opus5-orchestrator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3ca6fd98723ef5d05f63017198aef8c9fb03c44d3f48c87bce7718d2a443fa0b",
+  "snapshot_id": "b517b7606d696080",
+  "sources": [
+    {
+      "commit": "d258385088a618260f8cc6fcf9486d388edacdfb",
+      "git_sha": "b652138c2c297d9ac3899b000aee062018fc76a2",
+      "lines": 92,
+      "path": "README.md",
+      "repository": "rylaa/fable5-opus5-orchestrator",
+      "sha256": "82e04a83e40fa36f6962bde9870c151ebc01453f600932b0dca1e20f3000567f",
+      "source_id": "src_b095d662063659d48d7654c5740e83f9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Rylaa/fable5-opus5-orchestrator/blob/d258385088a618260f8cc6fcf9486d388edacdfb/README.md"
+    }
+  ],
+  "summary": "A Claude Code plugin ('Fable Orchestrator') that forces upfront clarification via four hooks, a `## Clarified` record, and a checkbox ledger in ./.workflow/LEDGER.md, with env-var configuration, teammate reaping, and metrics logging. All prior product claims were verified against cited README slices; the MIT license line is not asserted here.",
+  "superseded_claim_ids": []
+}

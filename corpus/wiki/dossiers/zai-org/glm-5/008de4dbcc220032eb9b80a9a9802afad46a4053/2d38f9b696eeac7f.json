@@ -1,0 +1,447 @@
+{
+  "applied_operation_id": "op_345b3e2327f34a5db0591e4818fc1087",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_68e9c18d840cbe2ae2ec4bdd665510bf5e9c75ba93dd4c8547dee11988d2f1c1",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27e444aafc0392fb82a8edf4ce5ec7322b51a7a48ca0c45afc4010369e9e1545"
+      ],
+      "text": "GLM-5 scales from GLM-4.5's 355B parameters (32B active) to 744B parameters (40B active), with pre-training data increased from 23T to 28.5T tokens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a17be0bab0b2728b34e79532ea3aa27ece77e1500cb1b4cd5d6dcf7305239ac",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 86,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L75-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b4c497f7522a83757473665dee7f6558e3a9a96398dea422e1beb47ecb420db"
+      ],
+      "text": "Downloadable checkpoints include GLM-5.3 and GLM-5.3-BF16 at 744B-A40B, and GLM-5.3-Flash and its BF16 variant at 320B-A18B, hosted on Hugging Face and ModelScope."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19182cd407bcef9682c95b578e5e73ebbaecf6ea5fce6ed5d43ec4ba19d9682b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7fe7e6da8a3a7b7e9a32493549b0a33e358c9a0ca625a512ed121c24e83fb5c5"
+      ],
+      "text": "GLM-5.3-Flash uses a newly trained base model with a hybrid sparse-plus-linear attention architecture and Manifold-Constrained Hyper-Connections (mHC), trained on a 30T-token multimodal corpus."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_96f0de77cb416c42b2ebbd18d671be1973e10b6cedc0b326584c0b41c84be424",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d566eea14a51a1257357909d31bae0e7ea8ea736bb911a051fc85eb3b551024a"
+      ],
+      "text": "GLM-5.2 introduces IndexShare, reusing one indexer across every four sparse attention layers to cut per-token FLOPs 2.9x at 1M context, plus an improved MTP layer for speculative decoding."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5ad130415e8988127d72e927164221a73a5d5f0e6c34c74c062f1b562c4202f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27e444aafc0392fb82a8edf4ce5ec7322b51a7a48ca0c45afc4010369e9e1545"
+      ],
+      "text": "GLM-5 integrates DeepSeek Sparse Attention (DSA) to reduce deployment cost while preserving long-context capacity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05dbf8b39d3e5d05976d17a83f1c330f7efe34e6b3bf64a06198fcf0d82e6253",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L111-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17e5319662e43172a4e43a61b6ea79004fc5f35306db45be530f0d15d874692c"
+      ],
+      "text": "GLM-5.3 and GLM-5.3-Flash accept a reasoning_effort parameter with low, high, and max levels, defaulting to max when unset or invalid; GLM-5.2 accepts only high and max."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_84f7f367239052e1a5a0c827caddd4b5c2c28daf2e6a0881e5f089aaee0c5518",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L111-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17e5319662e43172a4e43a61b6ea79004fc5f35306db45be530f0d15d874692c"
+      ],
+      "text": "In the GLM-5.3 and GLM-5.3-Flash chat template, clear_thinking defaults to false when not passed, and users are told to pass true explicitly for chat scenarios."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18f6d5da58dff9d07dd1e6ebddc7e5e5a09cf36e5353e346548d860f91357a4d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "593729185e7076df0f7ac6bd6ee162ed8a17abf9",
+          "line_end": 3,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/requirements.txt#L1-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ec5dba488d6ea79d16b3b6e833fad53079446806865b147bad577650e5ca1a04"
+      ],
+      "text": "The repository's requirements.txt pins transformers>=5.15.0, pre-commit>=4.6.2, and accelerate>=1.14.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f0181d94c292def495457ced165dce23bef3f86f86fe8261bc19b22ac2afbe8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 97,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L92-L97"
+        },
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 106,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L101-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10447a4f4d0c6fa808fe74f80fa90f8a5dc6870369d196d35110b2d8368b4448",
+        "slc_c2266ea500f5bc1ab07c7258c95f5531e119e14d2dad154c7c820686d1e05422"
+      ],
+      "text": "Inference is documented for SGLang, vLLM, TokenSpeed, Transformers, KTransformers, and Unsloth, with Ascend NPU deployment via vLLM-Ascend, xLLM, and SGLang."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b05b74e615f29dcd643d9df8a1fa4a0da0600d873fa8f4aeb63b4f2b38faaff",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 120,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L119-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65b3cec8389bcf3b81f8406b7a748fbbd16a7c739b32cc8add3bb5d03e01dce4"
+      ],
+      "text": "Fine-tuning is supported via Slime (v0.3.0+), the GLM team's RL framework, and ms-swift (v4.4.0+) supporting SFT, PPO, and GRPO."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_98f6fa89d48c61e4eb80d21f34eebcd512fe478febf0fadd79ab1613324a3b87",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L43-L43"
+        },
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L69-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e02ae97a829b72a64298c1c86027eddf2ca6007e244ed261a0407ec50191f0c",
+        "slc_eb232b0f0e35186948e06c15c7be9ee0d4cba1152c86e4e434fa6463c8421f83"
+      ],
+      "text": "The README reports GLM-5.2 scoring 81.0 on Terminal-Bench 2.1 and 62.1 on SWE-bench Pro, and GLM-5 ranking first among open-source models on Vending Bench 2 with a $4,432 final balance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_125befeb9cf2ee0a43d6df375387ef907dc471cd44a6d8fb5fa91aa574b04450",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L34-L34"
+        },
+        {
+          "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+          "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "zai-org/glm-5",
+          "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b5c55f47eddcf19cc4c13f5eb9eb4dc9fa04344e2583f6796080854f15c9ba9",
+        "slc_d566eea14a51a1257357909d31bae0e7ea8ea736bb911a051fc85eb3b551024a"
+      ],
+      "text": "GLM-5.2 delivers a solid 1M-token context and offers multiple thinking-effort levels to balance performance and latency."
+    }
+  ],
+  "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 136,
+        "path": "README.md",
+        "size": 15185
+      },
+      {
+        "lines": 136,
+        "path": "README_zh.md",
+        "size": 14621
+      },
+      {
+        "lines": 3,
+        "path": "requirements.txt",
+        "size": 58
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 22,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_c4e17fcf4a8653f2b98f10ccda5acce0",
+  "facets": {
+    "components": 0,
+    "dependencies": 3,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 3,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zai-org/glm-5/008de4dbcc220032eb9b80a9a9802afad46a4053/2d38f9b696eeac7f/manifest.json",
+  "package_id": "pkg_b99c8978777f12c2569f29e045d010981e13de4b85f6b56afb3dee060c57a226",
+  "repo": "zai-org/glm-5",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2ef1e4db89572c54d50bac28d3ea41ba7097f026788f2a6c5860105ebd1d2c3c",
+  "snapshot_id": "2d38f9b696eeac7f",
+  "sources": [
+    {
+      "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+      "git_sha": "b50da8f1ed05d96f27184200496acd59f3b345fb",
+      "lines": 136,
+      "path": "README.md",
+      "repository": "zai-org/glm-5",
+      "sha256": "78ebb1936e94a4c4412bca2abc1c9cbe599455df12fb1373e75c495cb043651e",
+      "source_id": "src_f04119a0333a56eba145d8a1fd343519",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README.md"
+    },
+    {
+      "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+      "git_sha": "46d05024df3bd6dca172cb3b5776d5aa15c682a6",
+      "lines": 136,
+      "path": "README_zh.md",
+      "repository": "zai-org/glm-5",
+      "sha256": "af65c43aef3ccdbaa03884cad2b34120756eed11e16efb3e71ee76803f2170d6",
+      "source_id": "src_3e1152290f835e209f59fb4f7214a397",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/README_zh.md"
+    },
+    {
+      "commit": "008de4dbcc220032eb9b80a9a9802afad46a4053",
+      "git_sha": "593729185e7076df0f7ac6bd6ee162ed8a17abf9",
+      "lines": 3,
+      "path": "requirements.txt",
+      "repository": "zai-org/glm-5",
+      "sha256": "c974f466ec5b155a4305e163d60ebcc03a3666f0674a1fda449b61f531b0cee4",
+      "source_id": "src_923b44178db252fd966679058416da55",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/zai-org/GLM-5/blob/008de4dbcc220032eb9b80a9a9802afad46a4053/requirements.txt"
+    }
+  ],
+  "summary": "The repository is a README-centric release hub for the GLM-5 model family (GLM-5 through GLM-5.3-Flash), documenting model sizes, architectures, benchmark results, deployment and fine-tuning frameworks, and inference parameters. No agent runtime code is evidenced in the provided slices.",
+  "superseded_claim_ids": []
+}

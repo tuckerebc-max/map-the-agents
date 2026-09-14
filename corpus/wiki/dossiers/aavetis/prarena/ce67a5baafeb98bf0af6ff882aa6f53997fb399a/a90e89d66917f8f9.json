@@ -1,0 +1,464 @@
+{
+  "applied_operation_id": "op_c1cca8ed79d8454988265029c498fb25",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a5719d35013e2bf762e52fc663e2b33e4d7bbe15ae223e6b755684cc0d784d4",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dafdacfea74214bfd2be07a8dc16fcd9000d085e62aed45fe6a48b0d2381dd98"
+      ],
+      "text": "The project benchmarks AI coding agents by measuring each agent's ability to produce mergeable pull requests, comparing ready-PR merge success rates across agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_987a64e5ebe6bfb8371707fdffb1b5179f5123f486384c7ddf92d906597c0389",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L9-L11"
+        },
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae7b13a380739a9d0d1b000a104e58f77d3e5790a7c49772aa88b5d191602406",
+        "slc_dafdacfea74214bfd2be07a8dc16fcd9000d085e62aed45fe6a48b0d2381dd98"
+      ],
+      "text": "Metrics distinguish all PRs (including drafts), ready (non-draft) PRs, and merged PRs, with headline statistics computed on ready PRs only for fair cross-agent comparison."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df4af57721abbefc284ce1f7fd2865e8b84d0e82c73835d06df58c763821b2a4",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 60,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L53-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_335bee3524479e2e6794392b0fd0e3a2a0032a7edd835fa8ff368cb7aa79ded2"
+      ],
+      "text": "Published statistics table lists six agents (Copilot, Codex, Cursor, Devin, Codegen, Jules) with ready PR counts, merged PR counts, and success rates such as Copilot 96.04% and Devin 61.58%."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed1c767362e7b488d158efb3682e980bb3e2d1ae312c153e79c4d9bdac9c9967",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "dd07c9a876059aa4e5931c3e2622805daa9aedee",
+          "line_end": 5,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/requirements.txt#L1-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd34aabd8bb628f648ad6f9304d1d5ae8250f4b052ebb9507520c283c086a7ab"
+      ],
+      "text": "The Python pipeline depends on matplotlib, pandas, requests, numpy, and jinja2 per requirements.txt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ff494c8aa8d0eb39fe5b49a465d09ff02e3b193e91367e3416521b96cf7e316",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "da3f6f43ead73a4422f1f92c9e534bdb377b3f52",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "AGENTS.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/AGENTS.md#L5-L5"
+        },
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "da3f6f43ead73a4422f1f92c9e534bdb377b3f52",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "AGENTS.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/AGENTS.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_669affcef20b9d1331978f094ca6a88fb2582396d0a32ea8855516dca762fe29",
+        "slc_70324e345e969ae45c4a00cbb61aabc89b80aecea2649600ea77736733e9dffe"
+      ],
+      "text": "Repository development practice: AGENTS.md provides a mandatory step-by-step checklist for onboarding a new agent, described as the single source of truth after earlier omissions caused Jules-related regressions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e4e1590e1e908462234f7d9b61d79a00d201246750471613a8122469a758f2b6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "da3f6f43ead73a4422f1f92c9e534bdb377b3f52",
+          "line_end": 18,
+          "line_start": 8,
+          "path": "AGENTS.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/AGENTS.md#L8-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a58e592ce95ca3dabe12271b55ecfa5639ae3f8dce411f5da43cb31a77d40d8"
+      ],
+      "text": "Repository development practice: onboarding requires collecting four GitHub search queries per agent (total, merged, ready, draft), verifying each manually in a browser before codifying it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c51884fdda6e853bdcdf5f72e947d9258551fa29bd2b24101f9020340509661",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "da3f6f43ead73a4422f1f92c9e534bdb377b3f52",
+          "line_end": 26,
+          "line_start": 21,
+          "path": "AGENTS.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/AGENTS.md#L21-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d32ae8ee4e172f9deec5e58c39442bbf90e0615ea5e852a7878aa4dc9fdd9cac"
+      ],
+      "text": "Repository development practice: contributors must extend collect_data.py's Q dictionary and row list, update data.csv and data_backup.csv headers, and optionally backfill historical values via API queries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8664b6228d8e54e27a3b3bf052d7f892f8316f670fa6f775a4b1a5d6c30ff0bd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "da3f6f43ead73a4422f1f92c9e534bdb377b3f52",
+          "line_end": 35,
+          "line_start": 29,
+          "path": "AGENTS.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/AGENTS.md#L29-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5b01bb87cc5ae912df449f1bc495652c9215eeee2f887eea5b980cbee35f5d0"
+      ],
+      "text": "Repository development practice: generate_chart.py's AGENTS list feeds the README template, GitHub Pages template, and chart toggles, but per-agent sections like percentage lambdas and matplotlib bars are hard-coded and must be duplicated manually."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f2d2c7459cbe68f7ead6c22dc48793f807fb80e128eb9aadb7d6c6cc998edd0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "da3f6f43ead73a4422f1f92c9e534bdb377b3f52",
+          "line_end": 47,
+          "line_start": 42,
+          "path": "AGENTS.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/AGENTS.md#L42-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8372c4f46f3122c2f6e7313ff0917eb819f6c04cd2527e0cb6a00e227f8cfab7"
+      ],
+      "text": "Repository development practice: derived assets (docs/chart.png, chart-data.json, README.md, docs/index.html) are regenerated by running collect_data.py and generate_chart.py, and generated files must never be hand-edited."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8dd0f084f7f43cafdb358a2bda792a84eade49ca0e165b6c7d6e2c5a199a3254",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c14d9067e3210700c401ccce24367c9626ab045e3a16f691c0b73af119ea089b"
+      ],
+      "text": "The project publishes an interactive dashboard at prarena.ai presenting the PR statistics."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7211a1d7c13508161a2e6860a33ceaaf38eb362bc95e9628247f95dbe729a5b5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 36,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L35-L36"
+        },
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 40,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L39-L40"
+        },
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 24,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L23-L24"
+        },
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L43-L44"
+        },
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L31-L32"
+        },
+        {
+          "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+          "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "aavetis/prarena",
+          "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md#L27-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fe5c3d323adb753efda17db847f64ff1daadb039d36f20a53200ce4861c0a57",
+        "slc_5fc26dececa269ab789571988e61e80f945648abce9e3accfba9784ecaf345bf",
+        "slc_7ce2ab91b108523a0d044637fd2c6ea7ff194aaec1b957238bb4ec6609aefeac",
+        "slc_9309f54956ec0bb09ed0bbc630f1cfd74e0f4d2a0d55a5d4db8456e2d025f3bd",
+        "slc_a1caec5ddb8383a61c8f1889d863120c714a7d1d9f74670a5b7a0d781ee8522b",
+        "slc_bc700d8015a227145a09204de53d1bd412b22b6c7dabb6124c11887892aa13f7"
+      ],
+      "text": "Agent identification uses GitHub search qualifiers on branch prefix (head:copilot/, head:codex/, head:cursor/) or bot author (devin-ai-integration[bot], codegen-sh[bot], google-labs-jules[bot])."
+    }
+  ],
+  "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 60,
+        "path": "README.md",
+        "size": 3672
+      },
+      {
+        "lines": 54,
+        "path": "AGENTS.md",
+        "size": 4728
+      },
+      {
+        "lines": 5,
+        "path": "requirements.txt",
+        "size": 40
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 22,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_0988219252e05d2fac412670b4ad505b",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 3,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 5
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aavetis/prarena/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/a90e89d66917f8f9/manifest.json",
+  "package_id": "pkg_a5c21083c85524851de0de6c847eec1dbd289ccffb6f5eb1fadba231a1770a0c",
+  "repo": "aavetis/prarena",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "865d7f6ecfcf957975ebe995f9cb27ccb402e81d0a2ac6992843bcbbbac533fa",
+  "snapshot_id": "a90e89d66917f8f9",
+  "sources": [
+    {
+      "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+      "git_sha": "da3f6f43ead73a4422f1f92c9e534bdb377b3f52",
+      "lines": 54,
+      "path": "AGENTS.md",
+      "repository": "aavetis/prarena",
+      "sha256": "3520961f6f3e93050aba3f9c7e7309ab02d18bcdc3640ea7c5f85ea815deb6c6",
+      "source_id": "src_cf8af18171575297b8b6d612f87c1e11",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/AGENTS.md"
+    },
+    {
+      "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+      "git_sha": "fe68c121eaa276e227f3ce9e5acf71aac9e78f8e",
+      "lines": 60,
+      "path": "README.md",
+      "repository": "aavetis/prarena",
+      "sha256": "63a2455b1222e0777abd34ac9097b1a4c97b3d127bf278804a201cc2c69c49ef",
+      "source_id": "src_498001776acc553dbb83f5ce47d81258",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/README.md"
+    },
+    {
+      "commit": "ce67a5baafeb98bf0af6ff882aa6f53997fb399a",
+      "git_sha": "dd07c9a876059aa4e5931c3e2622805daa9aedee",
+      "lines": 5,
+      "path": "requirements.txt",
+      "repository": "aavetis/prarena",
+      "sha256": "4ffcb493dc3cb722d6fb608ceafb7e54a774e05a75995423dc1fefc72552ad25",
+      "source_id": "src_e7fea4fb67935039af7f570c1b2deaa1",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/aavetis/PRarena/blob/ce67a5baafeb98bf0af6ff882aa6f53997fb399a/requirements.txt"
+    }
+  ],
+  "summary": "The project benchmarks AI coding agents by measuring each agent's ability to produce mergeable pull requests, comparing ready-PR merge success rates across agents. Metrics distinguish all PRs (including drafts), ready (non-draft) PRs, and merged PRs, with headline statistics computed on ready PRs only for fair cross-agent comparison.",
+  "superseded_claim_ids": []
+}

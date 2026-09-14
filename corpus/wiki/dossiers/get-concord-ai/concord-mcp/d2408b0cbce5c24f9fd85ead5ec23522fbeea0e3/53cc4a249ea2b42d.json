@@ -1,0 +1,556 @@
+{
+  "applied_operation_id": "op_6a056ce0c7f343da9edbda8d77b188cc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8fe9d7f0184b63d76ae218922c599b68898b559ede3d386a4c8d3d91837fb23",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 124,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L118-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cd436bd610354a3b7823d2b0752f76c80d4e2abe98130d0e5be812c8fd50fdab"
+      ],
+      "text": "The product exposes five MCP tools: start_work, inspect_work, update_work, transfer_work, and finish_work, covering presence/claims, state reads, prompts, ownership changes, and completion evidence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_730768a1bf06d275b6d25698b32d44a78ca7e25a39de167902d3e44676d794cf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 189,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L187-L189"
+        },
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 201,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L191-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b514720286be761084f1f947911b985f3bbf639cef6b27abe77dcde35f1deb04",
+        "slc_d7eab85b76d4c99efd9ebb32ebb36c5d60befad0a9e55738cc990a42439fcde9"
+      ],
+      "text": "Besides MCP tools, Concord offers a CLI (setup, status, dashboard, who, tasks, handoff, review-packet, export, doctor, adapters status) operating on the same shared workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b1c6343914e410896c5e4ee6937a85cd6088beb07fe5867e77596b452c52c445",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 137,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L130-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_459685a2cf7c198042efc027264af357ff3c5baf34baed61150f82fc9eb220b9"
+      ],
+      "text": "Agent-to-agent prompts use update_work with operation \"prompt\", a to_agent_id, content, and idempotency_key; replies use operation \"reply\" with reply_to_message_id."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9082783e8004127566c87c8d7ee790f38f890473fec3b6becb81e9fc8cd2f5a4",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 162,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L157-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50dc98e6230e4b2e55aa76c8edaa7cb5055b054ce8ace1e0b839699a78574d24"
+      ],
+      "text": "SQLite in the repo-root .concord/ directory is the local source of truth; the root is resolved from CONCORD_REPO_ROOT, then CLAUDE_PROJECT_DIR, then the working directory, so agents in one repo share one store."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd3337486c17d78b768c84b25445f138775744bf0bcfe8bad4686c4d37ee7a94",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 183,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L177-L183"
+        },
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 175,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L172-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a9ccda6189381572434bee20f77441c4bad3d5c049dce8d005a4623aa1cd7024",
+        "slc_f170f44b908ef769936746b87818ac3d916d5c48a8abdf6645c5ba782dede628"
+      ],
+      "text": "The .concord/ workspace holds concord.db, HANDOFF.md, REVIEW_PACKET.md, and an optional WORK_STATE.json export; setup gitignores the directory so it stays local by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_89aa6cdd2162c79a7f25bb0eed3b0c9b53dd2c6fb088d412a5f2f7edddf8c75e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 153,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L148-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64a23ba1db03e6264c2466c2fa7efb2e5c4264c1170e41550b652f3fbe89b504"
+      ],
+      "text": "Lifecycle-changing operations use the task's monotonic version as expected_version, so of two agents acting on the same version only the first transition succeeds; ownership changes are kept in an append-only audit history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_67bb37c8a7515cbbf62772910001b991f80b70438b022c63a59069dcd1ebe5ad",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 137,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L130-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_459685a2cf7c198042efc027264af357ff3c5baf34baed61150f82fc9eb220b9"
+      ],
+      "text": "Delivery fails immediately when the named agent has no reachable endpoint rather than silently rerouting; hook-only integrations leave a durable pull message and state that limitation in the result."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_791d497129e7081ea5165b5dc4bb0574e5e1e7f24cf5af61968f5e1aa7a1be6e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 268,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L262-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_df18160a08e2707e1e4c5903e665a7992153f909e4a16a922c46b889e5bdb436"
+      ],
+      "text": "Telemetry is sent to getconcord.ai but excludes code, paths, identifiers, and message content; CONCORD_TELEMETRY_DISABLED=1 or DO_NOT_TRACK=1 disables it, and delivery is best-effort so it can never fail an operation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f2153a3de9b07a225994ed0018bec4e003653fcd097d5f65a7b5f7cff4406b82",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 232,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L230-L232"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c0c60e8e9a445b7ed0d659bb9049514a428eea3519bc466e0779945c0d2b2f42"
+      ],
+      "text": "The README states Concord is not an orchestrator, code reviewer, hosted sync service, memory vector DB, or autonomous coding agent — it is a shared work-state layer for agents in the same local checkout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3be86c5d68e9296651c8470c1b9d8d231f1ef0dbdcb7231c0692eead852bd82d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 97,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L95-L97"
+        },
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 93,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L91-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_722f2754ad785fdc400ca48b0636f9a4219dc0ea8c45ef6c92119541ed8e8a39",
+        "slc_d407f6c08c8ee0f0847f58e03716394dcbb94e0cc67de1456a9869f44442e002"
+      ],
+      "text": "There is no universal /concord slash command; integration is via MCP tools plus installed per-client instructions, and live delivery depends on the receiving harness and session state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d576647722fe4ebafc08002ae00258134af940f394b5814e0d6bc8496883b09",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 56,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L52-L56"
+        },
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "adbd0f96e9a24a307fb1b79110d8948eeff4ba95",
+          "line_end": 67,
+          "line_start": 64,
+          "path": "RELEASING.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/RELEASING.md#L64-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5cb4211cab831ea0049de5ae2a26b02bc39a7468dcc55209a6d3d84306cf1dc",
+        "slc_e9e0cde6dd282c8dc5620edb6f5518237eadc95fad169ffefe29bc61d49a0f84"
+      ],
+      "text": "The package is distributed as @concord-ai/concord-mcp on npm, installed globally, and the release workflow requires Node 24 and npm >= 11.5.1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0adb3cce0386055f7816236bb303e9b2e02dccb065ab5ab5d597dabbfc81df6f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "adbd0f96e9a24a307fb1b79110d8948eeff4ba95",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "RELEASING.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/RELEASING.md#L57-L60"
+        },
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "adbd0f96e9a24a307fb1b79110d8948eeff4ba95",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "RELEASING.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/RELEASING.md#L3-L5"
+        },
+        {
+          "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+          "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+          "line_end": 240,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "get-concord-ai/concord-mcp",
+          "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md#L238-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01461a7bed1a3fe1b04df4785adb6b7c6a1e8762ad5953f80dad81ff7ca4a2eb",
+        "slc_48155ae2cbd5a01ca499fc3cff6a4559c4a9014fc522bcf3df1da41e414fdf86",
+        "slc_70aab7d6a376ff1ed01b7c48d466147059dcee7102530b2671e3815fc7f9301d"
+      ],
+      "text": "Repository development practice: releases publish to npm via OIDC trusted publishing from a v* tag-triggered GitHub Actions workflow, with an optional maintainer-approval environment gate; contributing guidance points to CONTRIBUTING.md and CLAUDE.md and notes strict typing with no 'any' or typecasts."
+    }
+  ],
+  "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 272,
+        "path": "README.md",
+        "size": 14480
+      },
+      {
+        "lines": 67,
+        "path": "RELEASING.md",
+        "size": 2589
+      },
+      {
+        "lines": 61,
+        "path": "docs/claude-code.md",
+        "size": 1726
+      },
+      {
+        "lines": 69,
+        "path": "docs/codex.md",
+        "size": 2857
+      },
+      {
+        "lines": 80,
+        "path": "docs/cursor.md",
+        "size": 2898
+      },
+      {
+        "lines": 38,
+        "path": "docs/gemini-cli.md",
+        "size": 1469
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/grok-build.md",
+        "reason": "file-budget",
+        "size": 833
+      },
+      {
+        "path": "docs/why-not-markdown.md",
+        "reason": "file-budget",
+        "size": 1262
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 16676
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 6053
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1173
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2216
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1047
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 191,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 7,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_5408b935d32150539f1d217922b8d284",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/get-concord-ai/concord-mcp/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/53cc4a249ea2b42d/manifest.json",
+  "package_id": "pkg_bf8652157d050fe5fcffa098f3474c78db0a5efb38a2829653c8c70bc5aa833d",
+  "repo": "get-concord-ai/concord-mcp",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "eb69044a8037455af342404296d0b0a588b4ac13fbab170553289a9e3437e8a0",
+  "snapshot_id": "53cc4a249ea2b42d",
+  "sources": [
+    {
+      "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+      "git_sha": "c5398fee141ee4bb0cf360d89981b4302a093030",
+      "lines": 272,
+      "path": "README.md",
+      "repository": "get-concord-ai/concord-mcp",
+      "sha256": "bbb2215639a7a36916934ec5c134d9befa8bf3e146ef39aedb1506ce54edadce",
+      "source_id": "src_f1a20d2129ba54bda19c895e73341f2b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/README.md"
+    },
+    {
+      "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+      "git_sha": "adbd0f96e9a24a307fb1b79110d8948eeff4ba95",
+      "lines": 67,
+      "path": "RELEASING.md",
+      "repository": "get-concord-ai/concord-mcp",
+      "sha256": "02f1068e0d4aff56a6d01d1038c8e8a72d433b65d145398150115f6f97f67048",
+      "source_id": "src_89f25906ba435fa4a110380c26bcb74a",
+      "stored": "releasing.md-87d6a57a759f.md",
+      "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/RELEASING.md"
+    },
+    {
+      "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+      "git_sha": "57507c58ceba1fda3c9c7fa31d4f7bf9a3238d69",
+      "lines": 61,
+      "path": "docs/claude-code.md",
+      "repository": "get-concord-ai/concord-mcp",
+      "sha256": "bc78a8b67bd4731df640674c7fc8f5a0a78e4586c4b572944f97228834bedc17",
+      "source_id": "src_e61bb6d98cca56ed97fb9f581bebd167",
+      "stored": "claude-code.md-fb40d4d96208.md",
+      "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/docs/claude-code.md"
+    },
+    {
+      "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+      "git_sha": "0013af8619e406cbc5cfe8a3c029ecffb419f52e",
+      "lines": 69,
+      "path": "docs/codex.md",
+      "repository": "get-concord-ai/concord-mcp",
+      "sha256": "4b578a377d071d643f5691a94bd118d9ce536536b389a809b5ce3eb23570205e",
+      "source_id": "src_30d1d43b64c857248cfb285603522dbb",
+      "stored": "codex.md-48dd010afbf8.md",
+      "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/docs/codex.md"
+    },
+    {
+      "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+      "git_sha": "17d2c121ece54efbadb6bd2e85b17121b09c528b",
+      "lines": 80,
+      "path": "docs/cursor.md",
+      "repository": "get-concord-ai/concord-mcp",
+      "sha256": "6b9140c822d529bdd7a811bb92d9a41af9dde1141de1f9b3728d92e2711705b8",
+      "source_id": "src_fb59a2d6b4205805beb4f76a4ff89f43",
+      "stored": "cursor.md-12c4daf1ec5e.md",
+      "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/docs/cursor.md"
+    },
+    {
+      "commit": "d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3",
+      "git_sha": "bff002dc88eb7496a8db40d75c44f75fb88ced00",
+      "lines": 38,
+      "path": "docs/gemini-cli.md",
+      "repository": "get-concord-ai/concord-mcp",
+      "sha256": "2740df60cd578c8d1f63906145d9308d9db364c975befa4c22b62ad682629894",
+      "source_id": "src_41ffc0e7f42c5c928d09850f992bd0ff",
+      "stored": "gemini-cli.md-a1dcdaf67e6f.md",
+      "url": "https://github.com/Get-Concord-AI/concord-mcp/blob/d2408b0cbce5c24f9fd85ead5ec23522fbeea0e3/docs/gemini-cli.md"
+    }
+  ],
+  "summary": "Concord MCP is a local-first MCP server giving coding agents shared work-state (presence, messaging, task ownership, handoffs) backed by a per-repo SQLite store, with a CLI and per-harness adapters. Evidence is mostly README/docs documentation; no source code slices are present.",
+  "superseded_claim_ids": []
+}

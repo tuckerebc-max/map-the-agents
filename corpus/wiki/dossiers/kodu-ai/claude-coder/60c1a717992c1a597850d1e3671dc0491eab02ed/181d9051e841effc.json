@@ -1,0 +1,439 @@
+{
+  "applied_operation_id": "op_68b0e734f2b14e06bc1d691afcce8201",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd282f43a2497609f28e7dc0a4ec85779eb3cea9914f918d6eef026647dd50f7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "5849bf3d497ba2efc40edb28504bc2aa2df8bd66",
+          "line_end": 53,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/README.md#L44-L53"
+        },
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "5849bf3d497ba2efc40edb28504bc2aa2df8bd66",
+          "line_end": 3,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/README.md#L1-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ccdd13e1f56fab0cbc508fd3b479455661d6e6a1e6d46bcd5f399fb3db279f2",
+        "slc_5dfacdd7128632feb3922aa5fac6bb7a623706da3e5160fb128a9d6b48bd97b5"
+      ],
+      "text": "Claude Coder is distributed as a VS Code extension installable from the marketplace, per the README's download link and install instructions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c258088d05443334a23937994268570faa424df4a5934146c6d91c3f54599a90",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "c4a6d4f3206bc38376b2616cb6410120f5a8210d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "extension-state-summary.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/extension-state-summary.md#L3-L3"
+        },
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "c4a6d4f3206bc38376b2616cb6410120f5a8210d",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "extension-state-summary.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/extension-state-summary.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_509858e61365468a26e0fe74321b260d16771427c7e72903dd8782c200876f09",
+        "slc_99b2eeccea170b8566b9a40c3ff9b3a71f3ba3b340ed2e6e2a08faa551eebdee"
+      ],
+      "text": "The extension's webview state is managed with Jotai, where individual atoms are combined into a single derived extensionStateAtom."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4dd2550a8b463c0ffc1ab7c2097f6e980390e3dc8f86789989ca8ead3f4ff9e",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "c4a6d4f3206bc38376b2616cb6410120f5a8210d",
+          "line_end": 30,
+          "line_start": 9,
+          "path": "extension-state-summary.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/extension-state-summary.md#L9-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b88dbe3ee98d43c79c12ac0be7f64413a4e240100bf60cff808d5d3af185850f"
+      ],
+      "text": "Extension state includes fields such as claudeMessages, taskHistory, currentTask, apiConfiguration, maxRequestsPerTask, customInstructions, and alwaysAllowReadOnly/WriteOnly flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53723a697dc23761d725c70ca0df7d1d0ca0792c3199b81858f1ad9ba5baf68d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "c4a6d4f3206bc38376b2616cb6410120f5a8210d",
+          "line_end": 41,
+          "line_start": 34,
+          "path": "extension-state-summary.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/extension-state-summary.md#L34-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d1992edf3fd72584232fc9be05f80c9e0f322cf6b16efcce5e074727b2b42f41"
+      ],
+      "text": "An ExtensionStateProvider sets up listeners for extension messages and supplies state to child components, while a useExtensionState hook exposes state and setters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2c7db8d6129b7d437bf1724914e0efb2f7808bf706431e505bf50c1b347d30d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+          "line_end": 42,
+          "line_start": 38,
+          "path": "prompt-crafting-guide.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md#L38-L42"
+        },
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "prompt-crafting-guide.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d9084a35a14d12a6f105013b8484fe2a756fba5d4032117b801caf52a0889f0",
+        "slc_638c28516b279d34794a9b114390917190825fe050f1b966566d857b52160f12"
+      ],
+      "text": "The prompt guide describes a multi-agent system with a main Kodu agent that follows a ReAct pattern and can spawn specialized sub-agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac88ee7d0dc7042fe609130742d2fe14d3949f34877d8625b898209a6ec9b3f0",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "prompt-crafting-guide.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md#L7-L7"
+        },
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "prompt-crafting-guide.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md#L9-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_82cb6955035b04dc03d387953e6dd9b328da5da6c1bcea076171d9eb1412013a",
+        "slc_969f7f463b145a647fc03f96c052c58b7a3c87b5c86659b6fd7245faa8342680"
+      ],
+      "text": "Task processing follows a Reasoning-Acting-Observing (ReAct) loop: analyze and plan, execute actions with tools, then evaluate results and adjust."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f24a94be275bef03277ecc31cb1617aefb8c9a4122c1e7546a46cd4137a093ce",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+          "line_end": 85,
+          "line_start": 83,
+          "path": "prompt-crafting-guide.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md#L83-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46ba6fc7172b0c6b1cfaeda8d318ce70eddee0fb7ed83e25015f189e60e8aa76"
+      ],
+      "text": "The guide references an add_interested_file tool used to track files relevant to the current task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b742646e9127708a0cb58ac37ce9f7ab4f9b38126214ab1991b6880ee261733d",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+          "line_end": 79,
+          "line_start": 76,
+          "path": "prompt-crafting-guide.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md#L76-L79"
+        },
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+          "line_end": 91,
+          "line_start": 89,
+          "path": "prompt-crafting-guide.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md#L89-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_193a510f74bd24afd8b779a7636497ba6e1eb0e8fe7aa64cf10242e6f6dd56ad",
+        "slc_dc05db0ca0a0abc51db0707e4523151041a7a08491bf4f1bcef0bb46373746c9"
+      ],
+      "text": "The prompt guide recommends decomposing large tasks by spawning a SubTask agent for planning, additional SubTask agents for components, and letting the main agent coordinate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a0c85c362469069bd43eaf8b6bf71106699f6180b73bb2900f4d0c10f3a1e8e",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "5849bf3d497ba2efc40edb28504bc2aa2df8bd66",
+          "line_end": 68,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/README.md#L67-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef80fe387b3d4cbdf230e4f4129845f50b20782cf924c52f1951bafa0919e10d"
+      ],
+      "text": "The project credits Claude Dev and Aider as inspirations, indicating it builds on the Claude Dev extension lineage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7aff0b3d36564b3c5e9734ed23832f9b8aca85ca9ac64990ffea525b6b103ca7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "5849bf3d497ba2efc40edb28504bc2aa2df8bd66",
+          "line_end": 92,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/README.md#L91-L92"
+        },
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "5849bf3d497ba2efc40edb28504bc2aa2df8bd66",
+          "line_end": 87,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/README.md#L83-L87"
+        },
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "5849bf3d497ba2efc40edb28504bc2aa2df8bd66",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/README.md#L94-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60c7d416a5bc55d4c45759c65c2b59c93297969aacf2c60ad971a77a3414d64f",
+        "slc_64ab60ca8968a11c9123b0993efcf3c77b5c8c01bb80f828ea2d6723c7af43c2",
+        "slc_e1e3b2458f309b738fe2dacfad7efacd99c5f8995714fddd995ef25c36418f3d"
+      ],
+      "text": "Repository development practice: contributors clone the repo, run npm run install:all in the extension folder, launch with F5, and submit pull requests; webview hot-reloads but extension host changes need a full reload."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ad6a1d30c438363a1775097394a4e3a9f2c0f9225b2a0b97f2d0786b3427def",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+          "git_sha": "c4a6d4f3206bc38376b2616cb6410120f5a8210d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "extension-state-summary.md",
+          "repository": "kodu-ai/claude-coder",
+          "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/extension-state-summary.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_509858e61365468a26e0fe74321b260d16771427c7e72903dd8782c200876f09"
+      ],
+      "text": "The extension's UI appears to depend on React and the Jotai state library, based on the state-management summary's description."
+    }
+  ],
+  "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 96,
+        "path": "README.md",
+        "size": 4845
+      },
+      {
+        "lines": 50,
+        "path": "extension-state-summary.md",
+        "size": 1713
+      },
+      {
+        "lines": 198,
+        "path": "prompt-crafting-guide.md",
+        "size": 5946
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 448,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_1b37ceb3ab315911b4e430bb017fca43",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/kodu-ai/claude-coder/60c1a717992c1a597850d1e3671dc0491eab02ed/181d9051e841effc/manifest.json",
+  "package_id": "pkg_b1a8024ed850df5c9c8354c711808f101b7ad0334880ffc0b44c9f77f67024f8",
+  "repo": "kodu-ai/claude-coder",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a9bfe92aadb6810d9ea3be178174d9265d56c617ee61d1ee19749b7a508ce257",
+  "snapshot_id": "181d9051e841effc",
+  "sources": [
+    {
+      "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+      "git_sha": "5849bf3d497ba2efc40edb28504bc2aa2df8bd66",
+      "lines": 96,
+      "path": "README.md",
+      "repository": "kodu-ai/claude-coder",
+      "sha256": "966818e845340a921c14dd330f8fc6ea3a5116062ceec286a8033d6216c9ced3",
+      "source_id": "src_604bc2101d5051629d921697544d6946",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/README.md"
+    },
+    {
+      "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+      "git_sha": "c4a6d4f3206bc38376b2616cb6410120f5a8210d",
+      "lines": 50,
+      "path": "extension-state-summary.md",
+      "repository": "kodu-ai/claude-coder",
+      "sha256": "8f69e074128428f3b6eb3efdc99d48b75e957050081fac17e23e739fd08a5f44",
+      "source_id": "src_4cdaae0fa5395e1fadcfa955e32399f2",
+      "stored": "extension-state-summary.md-0f661d76473c.md",
+      "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/extension-state-summary.md"
+    },
+    {
+      "commit": "60c1a717992c1a597850d1e3671dc0491eab02ed",
+      "git_sha": "073661ddef91a172e635b91c14dcdc8fa046e25d",
+      "lines": 198,
+      "path": "prompt-crafting-guide.md",
+      "repository": "kodu-ai/claude-coder",
+      "sha256": "663117a9ba2f776aec7cb3bc4428c65aedceb5c0015089ab85d024b174086ead",
+      "source_id": "src_aa07529fc8375c55a6dfda11670661b0",
+      "stored": "prompt-crafting-guide.md-61b07cb8e224.md",
+      "url": "https://github.com/kodu-ai/claude-coder/blob/60c1a717992c1a597850d1e3671dc0491eab02ed/prompt-crafting-guide.md"
+    }
+  ],
+  "summary": "Selected evidence records: Claude Coder is distributed as a VS Code extension installable from the marketplace, per the README's download link and install instructions. The extension's webview state is managed with Jotai, where individual atoms are combined into a single derived extensionStateAtom.",
+  "superseded_claim_ids": []
+}

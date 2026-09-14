@@ -1,0 +1,789 @@
+{
+  "applied_operation_id": "op_528de8705e784752be8205edc0189def",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a04e8c4b1684de0695edef34e3e9c971362ac1e985cbd39229659a81c88738c6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 6,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L4-L6"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 10,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L8-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4258f7b1fe2630d24e84596381b53ed3737e4dcdc737d0b14e5437e75adf4bdb",
+        "slc_e9bdf2c0e968584d201260a89e83bad7ccc6b33e0fb49c91230b87ec8a560df4"
+      ],
+      "text": "L2MAC is described as an LLM-based multi-agent system implementing a stored-program von Neumann-style architecture for extensive, consistent output generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e34f0918824d10bbc18e4c655bb9a8208177c37650d5d8786fc358697c5f903",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L28-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_449ed80cc86a3dd6a1dbb8d193dc86ebc5e8d6e659feddca47b017f53e024914"
+      ],
+      "text": "Each prompt-program instruction step is loaded into a new LLM agent whose context is managed by a control unit and given tools to read and write a persistent file-store holding final and intermediate outputs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9898baa4293b785f998b047fd9e75ac557663249290b5c00743af2b494cdeb29",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L28-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_449ed80cc86a3dd6a1dbb8d193dc86ebc5e8d6e659feddca47b017f53e024914"
+      ],
+      "text": "The prompt-program is a sequence of instruction-step prompts; unless explicitly given, it is self-generated (bootstrapped) and then executed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d750e279a85365211b4d8f2c3bd325f1ce1a2be42ccb7267d5260fd70db0f13a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 184,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L184-L184"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L28-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_39c390f7870b18913323197fcaf7d840d0080e0254f5cfb1ec2ebfd3464f2813",
+        "slc_449ed80cc86a3dd6a1dbb8d193dc86ebc5e8d6e659feddca47b017f53e024914"
+      ],
+      "text": "The framework aims to produce outputs unbounded by the underlying LLM's fixed context window by persisting outputs to a file store."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3587c5c5ca174845d6e4cafea96026f314e4869f60627c583f8ac65ba34533d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "e9d06e5f84a37575a3c51e3ed36639c37f4d2d59",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "docs/guide/api.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/api.md#L28-L29"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "e9d06e5f84a37575a3c51e3ed36639c37f4d2d59",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "docs/guide/api.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/api.md#L42-L42"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L77-L81"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "e9d06e5f84a37575a3c51e3ed36639c37f4d2d59",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "docs/guide/api.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/api.md#L46-L46"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L71-L73"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "e9d06e5f84a37575a3c51e3ed36639c37f4d2d59",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "docs/guide/api.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/api.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_266a95c55e6bd0e5c06f98b4c6221eabecf3acb3552da522b9dc66831a3e6ec0",
+        "slc_2e37795a34d5bac40bf9be3df7cfc248b51bac1e496ba5e51fab1dc272c6d77f",
+        "slc_45546ddb937652c3a9285be0a8b2d01872525e428ca86ba8d750970990a8ff8d",
+        "slc_5c930c5e61eee2955426c1521297e9cd1a56516efd52f549d1379ce5bf448a50",
+        "slc_b68dc64d99980151e4764e791a69692f8e6b8c73b89976ad301bd424ca90b2e6",
+        "slc_bb27407357215d55bd7b336d15793edbf931c90ac40b5fa04570c3f3f03896c8"
+      ],
+      "text": "L2MAC offers a CLI (e.g. `l2mac \"...\"` creating a codebase repo in ./workspace) and a Python library API including generate_codebase and run_l2mac, plus helper functions for book and custom domains."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_186cf25acdbeb3437e66b2eafd1c73c71344e4eab4bc446e9c7fc923b19b1c21",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "e9d06e5f84a37575a3c51e3ed36639c37f4d2d59",
+          "line_end": 18,
+          "line_start": 9,
+          "path": "docs/guide/api.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/api.md#L9-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60cfc51cb39165ef6d320019cf757ed2f0dbefa1ffd316c86393318f2456fd91"
+      ],
+      "text": "The main generation API accepts parameters including prompt_task, domain ('codebase' or 'book', default 'codebase'), run_tests (default False), steps (default 10), prompt_program, prompts_file_path, tools_enabled, debugging_level, and init_config."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38802e992c323b0c3772365c82c4d3c5228e8cd06ee342b87af5f840288c35e3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "e9d06e5f84a37575a3c51e3ed36639c37f4d2d59",
+          "line_end": 18,
+          "line_start": 9,
+          "path": "docs/guide/api.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/api.md#L9-L18"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L31-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60cfc51cb39165ef6d320019cf757ed2f0dbefa1ffd316c86393318f2456fd91",
+        "slc_650a7524a461aa1bef782383f3fcb98f7fe015092c3ff4f6bb426700fce99bf9"
+      ],
+      "text": "The tools_enabled parameter controls which functions agents can use, defaulting to all available tools; for codebase generation, tools include syntax-error checking and running unit tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f6790d79109c2af1a8e29c7601bd75a44033d73a294658db5e635ad3c6277d3",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 165,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L162-L165"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 176,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L176-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64794ca8bad668ee0161ed71925a148e1ea3f250ee361bc5d6d5b399ec008a28",
+        "slc_c5b62226c304f088f2e5f8f8fdc7a6b0dac19576dad5762633f28b4353be462f"
+      ],
+      "text": "L2MAC reads and updates existing code files created many instruction steps earlier, and generates unit tests used as an error checker to fix code that fails after updates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_edd71fb9fc6c8aaf4c6e591bb5ca20930f2faf275be81c0a8ef9f7045a006c50",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 39,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L38-L39"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "40bbeceac506a64e88dadddd84e7a6a2d83dc371",
+          "line_end": 8,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/requirements.txt#L1-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_504baded400a6b05a01f8adc894342bcba9d8ecf23b58aabfe1c534c576e3a23",
+        "slc_d72545bb62fd8e584e89192c448c11c1b6722a3a3812ff8f662fe7b7d356afec"
+      ],
+      "text": "requirements.txt lists pyyaml, pydantic, typer>=0.9.0, numpy, openai, tiktoken, timeout-decorator, and pygame==2.1.2; the README states Python 3.7+ is needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c05feff024bc3d2c437852991ede8b9984b4c6fdcb23a233fda5af8e4249f7d1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 52,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L51-L52"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 65,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L59-L65"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 55,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L54-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fdab180ec61bf4d810809f0614f3f15837dff3a46d2981cd1ac197df7adfb31",
+        "slc_7e6c5dbbab1ca6bf37e00e9169964d545cb041c743247192db9963ec76374a01",
+        "slc_a90dc6ec6c39c588146dc3cb75cf5a8c57e0604d5ccc76e9950f2fbac29497f2"
+      ],
+      "text": "Configuration uses an LLM API with api_type (e.g. openai or azure), model (example gpt-4o), base_url, and api_key, set in ~/.l2mac/config.yaml or initialized via `l2mac --init-config`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_892b17f9d243d77fbdda0a3b6d2293d1a1a02a44f375bb4b550d21a41e0ecb6c",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 136,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L135-L136"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+          "line_end": 140,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md#L138-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_122acd1e6928bc3355e4921c12dbf226595ce45bf08837deb3dfd505dd46a80a",
+        "slc_53e52566007723b9befa1f723b47dd8c0c28d097c3a2e17148c9ad6b3080d20f"
+      ],
+      "text": "The README reports benchmark results: the highest percentage of implemented user-specified features on system design tasks (averaged over 10 random seeds) and a claimed 90.2% Pass@1 on HumanEval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_607a9dbacfcca7a49dcae274c51d1466c5b54980d70adbe6f84bcd5c5bfb4eba",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "1a80dde636bdc360e8a69f2ba2806fcd19f91b59",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "docs/guide/faq.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/faq.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fe1b66b18b7fdf04f26e02bdd40035d5d2e85abadbd8af3b9486530a2ff517fc"
+      ],
+      "text": "The FAQ notes that any package an LLM agent tries to use must already be installed in the running virtualenv; self-created per-generation virtualenvs are planned on the roadmap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d4640ef4d158be0a6db3a7228998a3d82993e21701395b55e21bda0e0e0b5cf",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "1a80dde636bdc360e8a69f2ba2806fcd19f91b59",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "docs/guide/faq.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/faq.md#L31-L31"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "1a80dde636bdc360e8a69f2ba2806fcd19f91b59",
+          "line_end": 17,
+          "line_start": 16,
+          "path": "docs/guide/faq.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/faq.md#L16-L17"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "1a80dde636bdc360e8a69f2ba2806fcd19f91b59",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/guide/faq.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/faq.md#L21-L21"
+        },
+        {
+          "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+          "git_sha": "1a80dde636bdc360e8a69f2ba2806fcd19f91b59",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "docs/guide/faq.md",
+          "repository": "samholt/l2mac",
+          "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/faq.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5da6ca2c5a7c67261046709126c8cbfefc2c38283010a89786f27d15a9eb2df0",
+        "slc_c133f07c4fc04ce8647c0211a5c4d246564aa571f9efdccb4203967a4b7e0313",
+        "slc_e42ae7ac665ade7d05545f21e9bad043de03987413b8d886b133ec89e700fcba",
+        "slc_fe1b66b18b7fdf04f26e02bdd40035d5d2e85abadbd8af3b9486530a2ff517fc"
+      ],
+      "text": "Repository development practice: contributors join the dev team by submitting a PR, with ongoing tasks listed on the roadmap; a rotating Chief Evangelist community role is recruited via email."
+    }
+  ],
+  "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 222,
+        "path": "README.md",
+        "size": 19094
+      },
+      {
+        "lines": 58,
+        "path": "docs/guide/api.md",
+        "size": 2419
+      },
+      {
+        "lines": 8,
+        "path": "docs/guide/get_started/configuration.md",
+        "size": 290
+      },
+      {
+        "lines": 8,
+        "path": "requirements.txt",
+        "size": 82
+      },
+      {
+        "lines": 35,
+        "path": "docs/index.md",
+        "size": 1872
+      },
+      {
+        "lines": 39,
+        "path": "docs/guide/faq.md",
+        "size": 3334
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/guide/mission.md",
+        "reason": "file-budget",
+        "size": 4383
+      },
+      {
+        "path": "docs/guide/roadmap.md",
+        "reason": "file-budget",
+        "size": 2488
+      },
+      {
+        "path": "docs/generated_examples/blackjack_game/README.md",
+        "reason": "file-budget",
+        "size": 1120
+      },
+      {
+        "path": "docs/generated_examples/blackjack_game/requirements.txt",
+        "reason": "file-budget",
+        "size": 15
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/chapter_1_tuscany.txt",
+        "reason": "file-budget",
+        "size": 2946
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/chapter_2_campania.txt",
+        "reason": "file-budget",
+        "size": 2898
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/chapter_3_sicily.txt",
+        "reason": "file-budget",
+        "size": 2989
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/chapter_4_lombardy.txt",
+        "reason": "file-budget",
+        "size": 3334
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/chapter_5_pasta_making_techniques.txt",
+        "reason": "file-budget",
+        "size": 2433
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/chapter_6_sauces_and_accompaniments.txt",
+        "reason": "file-budget",
+        "size": 2973
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/conclusion.txt",
+        "reason": "file-budget",
+        "size": 1506
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/dedication_page.txt",
+        "reason": "file-budget",
+        "size": 278
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/detailed_outline.txt",
+        "reason": "file-budget",
+        "size": 2488
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/index.txt",
+        "reason": "file-budget",
+        "size": 474
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/introduction.txt",
+        "reason": "file-budget",
+        "size": 1178
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/table_of_contents.txt",
+        "reason": "file-budget",
+        "size": 1422
+      },
+      {
+        "path": "docs/generated_examples/italian_pasta_recipe_book/title_page.txt",
+        "reason": "file-budget",
+        "size": 68
+      },
+      {
+        "path": "docs/generated_examples/snake_game/requirements.txt",
+        "reason": "file-budget",
+        "size": 22
+      },
+      {
+        "path": "docs/generated_examples/url_shortener_web_application/README.md",
+        "reason": "file-budget",
+        "size": 1768
+      },
+      {
+        "path": "docs/generated_examples/url_shortener_web_application/requirements.txt",
+        "reason": "file-budget",
+        "size": 66
+      },
+      {
+        "path": "docs/guide/contribute/contribute_guide.md",
+        "reason": "file-budget",
+        "size": 5397
+      },
+      {
+        "path": "docs/guide/contribute/rfc_template.md",
+        "reason": "file-budget",
+        "size": 34
+      },
+      {
+        "path": "docs/guide/get_started/comparison_to_autogpt.md",
+        "reason": "file-budget",
+        "size": 7649
+      },
+      {
+        "path": "docs/guide/get_started/installation.md",
+        "reason": "file-budget",
+        "size": 1459
+      },
+      {
+        "path": "docs/guide/get_started/introduction.md",
+        "reason": "file-budget",
+        "size": 3076
+      },
+      {
+        "path": "docs/guide/get_started/quickstart.md",
+        "reason": "file-budget",
+        "size": 8332
+      },
+      {
+        "path": "docs/guide/tutorials/concepts.md",
+        "reason": "file-budget",
+        "size": 20678
+      },
+      {
+        "path": "docs/guide/tutorials/l2mac_101.md",
+        "reason": "file-budget",
+        "size": 7327
+      },
+      {
+        "path": "docs/guide/use_cases/book_generator.md",
+        "reason": "file-budget",
+        "size": 2662
+      },
+      {
+        "path": "docs/guide/use_cases/codebase_generator.md",
+        "reason": "file-budget",
+        "size": 6459
+      },
+      {
+        "path": "docs/guide/use_cases/gallery.md",
+        "reason": "file-budget",
+        "size": 3184
+      },
+      {
+        "path": "docs/guide/get_started/configuration/llm_api_configuration.md",
+        "reason": "file-budget",
+        "size": 1626
+      }
+    ],
+    "omitted_count": 32,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 133,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 38,
+      "complete": false,
+      "omitted": 32,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_8de56f4bb9ad5c0eba67858f88684c03",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/samholt/l2mac/105e74afdc6721e4d530c65862a32b97b5434e61/3bdf23d1d7da66dc/manifest.json",
+  "package_id": "pkg_7064e6fa740a2b593a400d389d97ecb5b986312c747e3bba9c53f47a8155703a",
+  "repo": "samholt/l2mac",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5c9f552cca5b2ac1147654cc53b074afc6098a4bc1470a6649df43457d6457c9",
+  "snapshot_id": "3bdf23d1d7da66dc",
+  "sources": [
+    {
+      "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+      "git_sha": "2811b5399a040d0b2a89bf69abf7bea69a395e93",
+      "lines": 222,
+      "path": "README.md",
+      "repository": "samholt/l2mac",
+      "sha256": "5b8d59e2fc8baf8da2891be06819846ea153db2ad166c1ece16565559cfef7e5",
+      "source_id": "src_bf415efb5e1055d583ada98510945b8a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/README.md"
+    },
+    {
+      "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+      "git_sha": "e9d06e5f84a37575a3c51e3ed36639c37f4d2d59",
+      "lines": 58,
+      "path": "docs/guide/api.md",
+      "repository": "samholt/l2mac",
+      "sha256": "6ae2e7c174b8d24a3acece8fe7c799f5a50a00d705fd918898bdca3d068d90ed",
+      "source_id": "src_4a6a47553b785f45bfc693b1bed74c49",
+      "stored": "api.md-2416233c7756.md",
+      "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/api.md"
+    },
+    {
+      "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+      "git_sha": "1a80dde636bdc360e8a69f2ba2806fcd19f91b59",
+      "lines": 39,
+      "path": "docs/guide/faq.md",
+      "repository": "samholt/l2mac",
+      "sha256": "624572f267c1118cfb09b83f1fe13740ff57c914a8f20cd2518d0cdcf15ea262",
+      "source_id": "src_49df1e30bf5757a4a3b97f525fdd4e75",
+      "stored": "faq.md-81d6451f5c34.md",
+      "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/faq.md"
+    },
+    {
+      "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+      "git_sha": "46b03f130ec5d0b7d11b6a102dc22530ee2bbf53",
+      "lines": 8,
+      "path": "docs/guide/get_started/configuration.md",
+      "repository": "samholt/l2mac",
+      "sha256": "d5ef38bf247f14848cbe72230c275fc8aa4cf1bed2d73950a71bad7fc4d8fea6",
+      "source_id": "src_a22eedb2abbd599c81e3b5c22509bd33",
+      "stored": "configuration.md-6b8e1a796681.md",
+      "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/guide/get_started/configuration.md"
+    },
+    {
+      "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+      "git_sha": "031fa90954489a0a9f0cd71f4149958084120deb",
+      "lines": 35,
+      "path": "docs/index.md",
+      "repository": "samholt/l2mac",
+      "sha256": "754c8c182fd52768a4385ae376098ae7623b1e020ce9fb98e1a923ba24aafe7c",
+      "source_id": "src_4aa9049feb8e5beea07e9923114c3ceb",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/docs/index.md"
+    },
+    {
+      "commit": "105e74afdc6721e4d530c65862a32b97b5434e61",
+      "git_sha": "40bbeceac506a64e88dadddd84e7a6a2d83dc371",
+      "lines": 8,
+      "path": "requirements.txt",
+      "repository": "samholt/l2mac",
+      "sha256": "5e3977c233cffc11484d0701f91b5dafccf77e64c0492f938ddf814c23f3397d",
+      "source_id": "src_44cbdec4b6e656118ec215c9dd4dda46",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/samholt/L2MAC/blob/105e74afdc6721e4d530c65862a32b97b5434e61/requirements.txt"
+    }
+  ],
+  "summary": "L2MAC is documented as an LLM-based multi-agent framework that executes self-generated prompt programs via a control unit and persistent file store to produce large outputs (codebases, books) from a single prompt, with a CLI and Python API, YAML-based LLM configuration, and reported benchmark results.",
+  "superseded_claim_ids": []
+}

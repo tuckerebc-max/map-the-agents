@@ -1,0 +1,542 @@
+{
+  "applied_operation_id": "op_83af74e3807247a9950f9d662eeefa2e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f293ce370837c3c5494befae45ffd49835a60461c28f0d1c9134fff2e0662213",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35a0d64398e308429891acaa0e360b817519d270ce4b75ce9596d2152fa368ef"
+      ],
+      "text": "The v2 design spec extends the refinement loop with pluggable evaluation, multi-file workspace targets, expanded ASI, and background constraints; all additions are opt-in and default behavior matches v1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd0693d501d68ee4c34de0a095b0e028adf606970f64c7503cca806342b66218",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L20-L23"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1323a5611062ffbdb9f864f5357c5746d5eaed62f5ae94bebb1633f8dd469c26",
+        "slc_ea0cf0ad7ad0d7706d8cfe0638daf9a1a515d4fdd247ce2fffa7725c26271cd9"
+      ],
+      "text": "The plugin ships one skill (simmer) with four subskills running the loop: Setup (identify artifact, elicit criteria), Generator (improve from ASI), Judge (score 1-10 per criterion, produce ASI), and Reflect (record trajectory, track best candidate)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_23e6a84256505495090b9aeae1b03c516f193e0bc1653cf4d3a688778e79214f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L11-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f0203321d373e28716901e9e81eff4acaffdaf3bae946f7b506077bf61b76f6"
+      ],
+      "text": "Installation is via Claude Code plugin marketplace commands: adding the 2389-research/claude-plugins marketplace and installing simmer@2389-research."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f75c028f5f61cf41f6187459b394feb7c3bf5006377793af43235cbb3a9aabfb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L29-L29"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b06cbdb905f78cf178d5ea2265fc699e614d554ab47cb8bb78759bd1a591c1ff",
+        "slc_fea17c4dbee06037d5c354cfb4723e2a2a23262b8d88662aa4c84c54cd42d70d"
+      ],
+      "text": "The skill is triggered by natural-language phrases such as 'simmer this', 'refine this', 'hone this', or 'polish this'; any request to iteratively improve an artifact starts the loop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db87ddd91a25d7a744e6ba4bdb4aec304e6c0e477b75a2a1ff3d8cd328652708",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 180,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L178-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ee7e66b61bb12eab29a55bfa9bf4b75e01f4bec63692cc4ff6b3fad17db44f7"
+      ],
+      "text": "Context isolation is a stated design principle: the generator does not see scores and the judge does not see previous scores, so each role gets only the context it needs to avoid bias."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29e63738ba42a86cb835c97cc85c5529d371a68cb4e91697ee630f49eac035dc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L20-L23"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md#L55-L55"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+          "line_end": 53,
+          "line_start": 49,
+          "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md#L49-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1323a5611062ffbdb9f864f5357c5746d5eaed62f5ae94bebb1633f8dd469c26",
+        "slc_916e07971282d9c219ba6ffaebbbe09194ce78b42dc495780fee52ef17c4f4f5",
+        "slc_c01978335eaf73f9b475216f664cb707f3c987091a0bb81b079eb3b380fff4f7"
+      ],
+      "text": "Each iteration targets one direction via ASI (Actionable Side Information), the single highest-leverage fix; for workspace targets this becomes one coherent multi-file direction rather than unrelated changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac0e3569366ae30daaae55e550182ccc2f80b45025667969eca53471c260cc92",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md#L45-L45"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+          "line_end": 43,
+          "line_start": 39,
+          "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md#L39-L43"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 115,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L111-L115"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L117-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49a97af2691e2c7733f74b93691089d4912f485e33fb1a546bab9c0314e42348",
+        "slc_595a66457aab89de1015958eea7156dc207793661b3ef6672616f6236da84fda",
+        "slc_5ec81b2b3f31f657316e02b6b81bdb45927b297455c28489ce62f3649f07d7bb",
+        "slc_f1f42b966db9cdb7d29eb061725df845cefa28bb22380489be5cde94ed86f3d3"
+      ],
+      "text": "Three evaluation modes are supported: judge-only (default, for text artifacts), runnable (judge interprets a script's output), and hybrid (both). There is no format contract on evaluator output; the judge reads whatever the script produces."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19d16fc3eed3a74fe5aa8ab417765ed6b55fdbddf11ea0c9477f2e3804b6d461",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L121-L121"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L130-L130"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 124,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L123-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a3f9d59f11038d6f48975805c9d1c7607fc417bd266405769ab8f9a80e08a69",
+        "slc_6754725e72145f1a7a362b415f24a9aa27221a406fcc84c2a4d0ab575b105bdd",
+        "slc_c53038ba4fce10468bc2de579bfda517f8013121227c96121336c5867c48930b"
+      ],
+      "text": "Simmer auto-selects between a single judge and a multi-judge board based on complexity (e.g., ≤2 criteria vs. code or pipelines), and offers upgrading to the board mid-run if a single-judge run plateaus for 3 iterations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22913fc9380dc88e10656c0d72b8e2f98434dbe710ad9124bb58f5684c907b20",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L137-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35d5143be3ca4b62cc11787be4dab7eb53d8e0e064c5f2a98eec8b0111b547ec"
+      ],
+      "text": "The reflect subskill tracks the best candidate seen so far; if an iteration regresses, the best-so-far is preserved and the final result.md contains the highest-scoring candidate rather than the latest one."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15a63447d967a606bc5c76e6ef7b41bea5d357a74ec95e612d05a22addcd95d7",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 148,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L141-L148"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md#L65-L65"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 174,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L174-L174"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+          "line_end": 63,
+          "line_start": 59,
+          "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md#L59-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_371ac24e584cee82a5bf74669d5fe09468ab81ed86e3ff06da1035a9b0ff9b3b",
+        "slc_4a8fdc7e8852f44f932dd00b925d33ada7ef389a876521444212bcc8d2ee6742",
+        "slc_66b3a1e67ec31922ed980c873e16ec213edf41528069abb8fb8856e1956e0f5a",
+        "slc_e21a842c5e54c0099efca4f040449c8631b5befdac3877e559e6a172fdbefbee"
+      ],
+      "text": "In workspace mode, each iteration is snapshotted as a git commit, enabling diffing and rollback via git checkout to the best iteration's commit; single-file mode instead writes iteration-N-candidate.md files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75deef1acefc2a0832c6825d24a251d9f426b3839bf279e076183a8a6ed810ed",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L135-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fbf40aef347ef410e07326e20aea77a0eb98c845dc364339cbc606b54490909f"
+      ],
+      "text": "Default iteration count is 3 rounds per batch, after which the tool asks whether to continue; users can request a specific count or stop early at any prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6afb2e8f6c0156b8d559c053f67c7e85152f398eb4d20a36c1ca85fddb43b4d",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 189,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L186-L189"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L41-L41"
+        },
+        {
+          "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+          "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+          "line_end": 39,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "2389-research/simmer",
+          "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md#L35-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11dd015699391c9cc132d6232ec32a026db227842e5163f2090ea613f098b32a",
+        "slc_492ad2d8d73c0aa93fd1ade2ed9346288c67090d1ee674ac100eb750fd5aa77d",
+        "slc_8ba1f2fd512506c4ae03882a2877caae84e698cba565fea5a0531ff6aff3cb4d"
+      ],
+      "text": "Simmer belongs to the test-kitchen skill family but is independently installable, alongside cookoff (parallel implementation competition) and omakase-off (parallel design exploration); simmer is the serial-iteration counterpart."
+    }
+  ],
+  "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 202,
+        "path": "README.md",
+        "size": 9318
+      },
+      {
+        "lines": 97,
+        "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+        "size": 4747
+      },
+      {
+        "lines": 124,
+        "path": "CLAUDE.md",
+        "size": 5684
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 12,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_f347b05897c456e1938a5711f104210b",
+  "facets": {
+    "components": 1,
+    "dependencies": 0,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/simmer/73089c6f2224b2379ceb177ee511eca7c4c4ef79/0c3030b83e9b2b41/manifest.json",
+  "package_id": "pkg_e77dc7b6103cdd581ce1f1f4d2d2a0dc6278da58f66d831a76f9f92c53ac96fe",
+  "repo": "2389-research/simmer",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3ce106480d3084f651d14ccc65bc50312880491b0a7b7449f3eddaf50ef5ef62",
+  "snapshot_id": "0c3030b83e9b2b41",
+  "sources": [
+    {
+      "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+      "git_sha": "6d554594398c6f9773691836fef59663e8594a48",
+      "lines": 124,
+      "path": "CLAUDE.md",
+      "repository": "2389-research/simmer",
+      "sha256": "d094a50c64f4d1850fa5ea826895099c407fb2294e1883ecd5758142cf44f742",
+      "source_id": "src_b38590309ab95e91bfc8bdd8ae830c14",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/CLAUDE.md"
+    },
+    {
+      "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+      "git_sha": "5b9af7cde208569991860a928ddda05f85cddaa3",
+      "lines": 202,
+      "path": "README.md",
+      "repository": "2389-research/simmer",
+      "sha256": "a1f36cf5ab28f8c94049ba44d25b295448f755a9cb475e9fb9499424a943580a",
+      "source_id": "src_f5aca28d20435bad9211aa6f4356a910",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/README.md"
+    },
+    {
+      "commit": "73089c6f2224b2379ceb177ee511eca7c4c4ef79",
+      "git_sha": "bec475e4cb467d54fae1ff3618ac27a51da133cf",
+      "lines": 97,
+      "path": "docs/specs/2026-03-16-simmer-v2-design.md",
+      "repository": "2389-research/simmer",
+      "sha256": "f71698ffc3150e2365e05c3e87ea191464fb479578ed5f2c38c882ce602c786c",
+      "source_id": "src_0a68d8eb30225280b1845adee6cad635",
+      "stored": "2026-03-16-simmer-v2-design.md-fd35c648d21b.md",
+      "url": "https://github.com/2389-research/simmer/blob/73089c6f2224b2379ceb177ee511eca7c4c4ef79/docs/specs/2026-03-16-simmer-v2-design.md"
+    }
+  ],
+  "summary": "Simmer is a Claude Code plugin providing an iterative, criteria-driven artifact refinement skill with four subskills (Setup, Generator, Judge, Reflect), three evaluation modes, single-file and workspace modes, and judge-board auto-selection. Evidence is documentation (README and a v2 design spec); no source code slices are present.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,834 @@
+# Tracker by 2389
+
+Pipeline orchestration engine for multi-agent LLM workflows. Define pipelines in `.dip` files (Dippin, our pipeline DSL), execute them with parallel agents, and watch progress in a TUI dashboard.
+
+Built by [2389.ai](https://2389.ai). **[Docs, walkthroughs & the TUI in action →](https://2389-research.github.io/tracker/)**
+
+## Quick Start
+
+**Install** — Homebrew (macOS/Linux) or `go install`:
+
+```bash
+brew install 2389-research/tap/tracker
+# or:  go install github.com/2389-research/tracker/cmd/tracker@latest
+```
+
+**Three steps to your first run** — no `.dip` file needed:
+
+```bash
+tracker doctor            # 1. check setup: API keys, dippin binary, working dir
+tracker ask_and_execute   # 2. run a built-in workflow: describe what you want, answer one gate, watch it build
+tracker diagnose          # 3. inspect what happened (also: tracker audit / tracker list)
+```
+
+From there:
+
+- **Bring a spec** — `tracker init build_product` scaffolds `build_product.dip` + a starter `SPEC.md`; edit the spec, then `tracker build_product`.
+- **Hands-off** — add `--autopilot mid` to replace human gates with an LLM judge (or `--auto-approve` for deterministic approval).
+- **Drive it elsewhere** — from [Slack](cmd/trackerbot/README.md) (`trackerbot`) or your [terminal as a REPL](cmd/trackerchat/README.md) (`trackerchat`).
+- **Explore** — `tracker workflows` (list built-ins), `tracker validate <wf>`, `tracker simulate <wf>`, `tracker estimate <wf>`, `tracker setup`, `tracker --help`.
+
+> **Release history has moved out of this README** — see **[CHANGELOG.md](CHANGELOG.md)** for what's new in each version, and the [Roadmap](ROADMAP.md) for what's next.
+
+## Pipeline Examples
+
+Four pipelines are embedded in the binary and available via `tracker workflows`:
+
+### `ask_and_execute`
+Competitive implementation: ask the user what to build, fan out to 3 agents (Claude/Codex/Gemini) in isolated git worktrees, cross-critique the implementations, select the best one, apply it, clean up the rest.
+
+### `build_product`
+Sequential milestone builder: read a SPEC.md, decompose into milestones, implement each with verification loops (opus-powered fix agent with 50 turns), cross-review the complete result, verify full spec compliance. Context-specific escalation gates let you override flaky tests or skip milestones without aborting the build.
+
+```mermaid
+graph LR
+    ReadSpec --> Decompose --> ApprovePlan
+    ApprovePlan -->|approve| PickNext
+    PickNext -->|milestone N| Implement --> Test
+    Test -->|pass| Verify --> MarkDone --> PickNext
+    Test -->|fail| Fix --> Test
+    Test -->|escalate| EscalateMilestone
+    EscalateMilestone -->|mark done| MarkDone
+    EscalateMilestone -->|retry| Implement
+    PickNext -->|all done| CrossReview --> FinalBuild --> FinalSpec --> Cleanup --> Done
+```
+
+### `build_product_with_superspec`
+Parallel stream execution for large structured specs: reads the spec's work streams and dependency graph, executes independent streams in parallel (with git worktree isolation), enforces quality gates between phases, cross-reviews with 3 specialized reviewers (architect/QA/product), and audits traceability.
+
+#### Which one? `build_product` vs `build_product_with_superspec`
+
+Start with **`build_product`** — it is the default for a normal `SPEC.md`. It builds one milestone at a time in a single working tree, which keeps the run easy to follow and cheaper to escalate. Reach for **`build_product_with_superspec`** only when the spec is large enough to name **independent work streams and a dependency graph** the engine can parallelize; on a small or single-track spec its extra machinery is overhead with no payoff.
+
+Both run the same `SpecLint` spec-coherence preflight before any decomposition (dangling refs, contradictory constants, contract/signature mismatch, unassignable mandated tests — fail-closed). Everything below is **superspec-only**:
+
+- **Parallel work streams** dispatched from the spec's stream/dependency graph, each in an **isolated git worktree**, instead of a sequential milestone loop.
+- **Per-phase mechanical quality gates** (build, test, lint, coverage, complexity) between stream phases — mechanical, not LLM-judged.
+- **Three specialized cross-reviewers** (architect / QA / product) rather than the base cross-review.
+- **`docs/traceability.yaml` scaffold** plus a final **`TraceabilityAudit` goal gate** that verifies every spec requirement maps to implementation and test coverage.
+
+The two workflows are separate embedded files, not a base-plus-overlay; the shared `SpecLint` node is deliberately duplicated (built-in delivery cannot resolve subgraph file refs) and pinned byte-identical by a parity test (issue #307).
+
+### `deep_review`
+Interview-driven codebase review: describe what you want reviewed, answer structured interview questions to scope the analysis, then three parallel agents analyze correctness, security, and design. A second interview presents findings for your context (is this intentional? known issue?), a third prioritizes remediation, and the pipeline produces an actionable remediation plan.
+
+```mermaid
+graph LR
+    DescribeGoal --> Explore --> ScopeInterview
+    ScopeInterview --> AnalyzeParallel
+    AnalyzeParallel --> Correctness & Security & Design
+    Correctness & Security & Design --> Join
+    Join --> Synthesize --> FindingsInterview
+    FindingsInterview --> PriorityInterview
+    PriorityInterview --> RemediationPlan --> ReviewPlan
+    ReviewPlan -->|approve| Finalize --> Done
+    ReviewPlan -->|revise| RemediationPlan
+```
+
+## Built-in Workflows
+
+Pipelines are embedded in the binary so `brew` and `go install` users can run them without cloning the repo:
+
+```bash
+tracker workflows              # List all built-in workflows
+tracker ask_and_execute        # Run directly by name — no files needed
+tracker validate build_product # Validate works too
+tracker simulate build_product # Simulate too
+tracker init build_product     # Copy .dip + scaffold a starter SPEC.md for editing
+```
+
+`build_product` builds from a `SPEC.md` in the repo root; running it without one
+exits with a pointer to `tracker init build_product`, which scaffolds both the
+`.dip` and a starter `SPEC.md` so the first run succeeds.
+
+Local `.dip` files always take precedence over built-ins. After `tracker init build_product`, running `tracker build_product` uses your local copy.
+
+## Dippin Language
+
+Pipelines are defined in `.dip` files using the [Dippin language](https://github.com/2389-research/dippin-lang):
+
+```dip
+workflow MyPipeline
+  goal: "Build something great"
+  start: Begin
+  exit: Done
+
+  defaults
+    model: claude-sonnet-5
+    provider: anthropic
+
+  agent Begin
+    label: Start
+
+  human AskUser
+    label: "What should we build?"
+    mode: freeform
+
+  agent Implement
+    label: "Build It"
+    prompt: |
+      The user wants: ${ctx.human_response}
+      Implement it following the project's conventions.
+
+  agent Done
+    label: Done
+
+  edges
+    Begin -> AskUser
+    AskUser -> Implement
+    Implement -> Done
+```
+
+### Declaring Environmental Dependencies — `requires:` (v0.29.0)
+
+Workflows can declare what they need from the host environment with a `requires:` line in the header:
+
+```dip
+workflow BuildProduct
+  goal: "..."
+  requires: git
+  start: Start
+  exit: Done
+```
+
+Tracker checks these at startup (when you invoke `tracker <workflow>`). If the env doesn't satisfy them, the run fails in seconds with a copy-paste remediation instead of burning LLM spend before the first failure. Override per-run with `--git=auto|off|warn|require|init` (default `auto` respects `requires:`; `--git=init --allow-init` auto-initializes the workdir, with safety refusals for `$HOME`, `/`, and nested repos — including bare repos, linked worktrees, and submodules). v0.29.0 implements `git`; unrecognized entries warn and continue so workflow authors can forward-declare deps that future tracker versions will check.
+
+### Node Types
+
+| Type | Shape | Description |
+|------|-------|-------------|
+| `agent` | box | LLM agent session (codergen) |
+| `human` | hexagon | Human-in-the-loop gate (choice, freeform, or hybrid) |
+| `tool` | parallelogram | Shell command execution |
+| `parallel` | component | Fan-out to concurrent branches |
+| `fan_in` | tripleoctagon | Join parallel branches |
+| `subgraph` | tab | Execute a referenced sub-pipeline |
+| `manager_loop` | house | Managed iteration loop |
+| `conditional` | diamond | Condition-based routing |
+
+### Variable Interpolation
+
+Three namespaces for `${...}` syntax in prompts:
+
+- `${ctx.outcome}` — runtime pipeline context (outcome, last_response, human_response, tool_stdout)
+- `${params.model}` — workflow-level `vars` (optionally overridden by `--param key=value` at run time, v0.19.0) and subgraph parameters passed from a parent pipeline
+- `${graph.goal}` — workflow-level attributes
+
+Declare defaults in a top-level `vars` block and override them per-run:
+
+```dip
+workflow MyPipeline
+  vars
+    model: claude-sonnet-5
+    retries: 3
+```
+
+```bash
+tracker --param model=claude-opus-5 --param retries=1 MyPipeline
+```
+
+Unknown `--param` keys hard-fail at startup. Dippin-lang's lint (run automatically at .dip load) flags undeclared `${params.*}` references and other variable-reference mistakes — see `dippin doctor` for the full lint catalog.
+
+Variables are expanded in a single pass — resolved values are never re-scanned, preventing recursive expansion.
+
+**Important**: Each agent node runs a fresh LLM session. Data flows between nodes via context keys, not conversation history. Per-node scoping (`${ctx.node.<nodeID>.<key>}`) lets you reference a specific earlier node's output without relying on the last-writer-wins `last_response` key. See **[Pipeline Context Flow](docs/architecture/context-flow.md)** for the full model, fidelity levels, and parallel-branch patterns.
+
+### Edge Conditions
+
+```dip
+edges
+  Check -> Pass  when ctx.outcome = success
+  Check -> Fail  when ctx.outcome = fail
+  Check -> Retry when ctx.outcome = retry
+  Gate -> Next   when ctx.tool_stdout contains all-done
+  Gate -> Loop   when ctx.tool_stdout not contains all-done
+```
+
+Supported operators: `=`, `!=`, `contains`, `not contains`, `startswith`, `not startswith`, `endswith`, `not endswith`, `in`, `not in`, `&&`, `||`, `not`.
+
+`ctx.tool_stdout` and `ctx.tool_stderr` capture the **tail** of a tool node's output (default cap 64KB per stream, configurable per-node via `output_limit: 256KB`; `--max-output-limit` is a hard global ceiling, default 10MB, that caps how high a per-node `output_limit` can go). Routing markers emitted at end-of-output via `printf` survive truncation by construction; `tracker diagnose` surfaces a `tool_output_truncated` suggestion when a stream was clipped so you know to raise the limit if the captured tail isn't what you expected.
+
+Conditions support the `ctx.` namespace prefix (dippin convention) and `internal.*` references for engine-managed state.
+
+### Declarative Structured Output — `writes:` / `reads:`
+
+Agent, tool, and `mode: interview` human nodes can declare the context keys they produce and consume (v0.21.0):
+
+```dip
+agent Planner
+  response_format: json_object
+  writes:
+    - milestone_id
+    - files
+  reads:
+    - spec_path
+```
+
+The node output must be a valid top-level JSON object; every declared key in `writes:` must be present or the node hard-fails. Extras are allowed (surfaced as warnings), strings are stored verbatim, non-string values are stored as compact JSON. `reads:` pins fidelity for upstream keys so downstream nodes see consistent data. See **[Pipeline Context Flow](docs/architecture/context-flow.md)** for the full contract, worked examples, and interview-mode semantics.
+
+### Per-Node Working Directory
+
+For git worktree isolation in parallel implementations:
+
+```dip
+agent ImplementClaude
+  working_dir: .ai/worktrees/claude
+  model: claude-sonnet-5
+  prompt: Implement the spec in this isolated worktree.
+```
+
+The `working_dir` attribute is validated against path traversal and shell metacharacters.
+
+### Human Gates
+
+Five gate modes:
+
+- **Choice mode** (default): presents outgoing edge labels as a radio list. Arrow keys navigate, Enter selects.
+- **Freeform mode** (`mode: freeform`): captures text input. If the response matches an edge label (case-insensitive), it routes to that edge. Otherwise it's stored as `ctx.human_response`.
+- **Hybrid mode** (automatic): when a freeform gate has labeled outgoing edges, the TUI presents a radio list of labels plus an "other" option for custom feedback. Selecting a label submits it directly; selecting "other" opens a textarea for specific instructions.
+- **Yes/No mode** (`mode: yes_no`): fixed two-option prompt. Yes maps to `OutcomeSuccess`, No maps to `OutcomeFail` — route with `when ctx.outcome = success` / `when ctx.outcome = fail` edges. Distinct from choice mode, where the outcome is always success and routing uses `preferred_label`.
+- **Interview mode** (`mode: interview`): structured multi-field form driven by upstream agent output. An agent generates markdown questions with inline options; the handler parses them into individual form fields and presents a fullscreen interview form. Answers are stored as JSON and markdown summary.
+
+Long prompts with labels (e.g., escalation gates with agent output) automatically use a fullscreen **review hybrid view**: glamour-rendered scrollable viewport on top (PgUp/PgDn to scroll), radio label selection in the middle, and an "other" freeform option at the bottom for custom retry instructions. Long prompts without labels use a **split-pane review**: scrollable viewport on top, textarea on bottom.
+
+```dip
+human ApproveSpec
+  label: "Review the spec. Approve, refine, or reject."
+  mode: freeform
+
+edges
+  ApproveSpec -> Build  label: "approve"
+  ApproveSpec -> Revise label: "refine"  restart: true
+  ApproveSpec -> Done   label: "reject"
+```
+
+#### Interview Mode
+
+Interview gates let an agent generate structured questions that the user answers via a form:
+
+```dip
+human ScopeInterview
+  label: "Help us focus the review."
+  mode: interview
+  questions_key: interview_questions
+  answers_key: scope_answers
+```
+
+The upstream agent writes markdown questions to the `questions_key` context variable. The parser extracts:
+- **Numbered/bulleted questions** ending in `?` or imperative prompts ("Describe...", "List...")
+- **Inline options** from trailing parentheticals: `Auth model? (API key, OAuth, JWT)` becomes a select field
+- **Yes/no patterns** detected automatically as confirm toggles
+
+The TUI presents a fullscreen form with per-field navigation (arrow keys), pagination (PgUp/PgDn for 10+ questions), elaboration textareas (Tab), and pre-fill from previous answers on retry. Answers are stored as JSON at `answers_key` and as a markdown summary at `human_response`. If zero questions are parsed, the gate falls back to freeform. Cancellation returns `outcome=fail`.
+
+A reusable interview loop pattern is available in `examples/subgraphs/interview-loop.dip` — embed it via `subgraph` nodes with `topic` and `focus` parameters.
+
+Submit with **Ctrl+S**. Enter inserts newlines. Esc cancels (empty) or submits (with content). Ctrl+C cancels and unblocks the pipeline (no deadlock).
+
+### Providers
+
+Tracker supports four LLM providers: `anthropic`, `openai`, `gemini`, and `openai-compat` (for any OpenAI-compatible API). Set up with:
+
+```bash
+# Interactive setup wizard
+tracker setup
+
+# Verify your configuration
+tracker doctor
+```
+
+Keys are stored in `~/.config/2389/tracker/.env`. You can also export them directly:
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+export OPENAI_API_KEY=sk-...
+export GEMINI_API_KEY=...
+```
+
+**Important**: Use `gemini` (not `google`) as the provider name in `.dip` files.
+
+Non-retryable provider errors (quota exceeded, auth failure, model not found) immediately fail the pipeline with a clear message instead of silently retrying.
+
+### Cloudflare AI Gateway
+
+Tracker can route every provider through [Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/) so you stop hitting rate limits (Anthropic, OpenAI, etc. cap per-account request rates; Cloudflare's gateway capacity is much higher), gain central analytics and caching, and enable model routing on the gateway side.
+
+Set one env var or flag instead of four:
+
+```bash
+# The root URL of your Cloudflare AI Gateway:
+#   https://gateway.ai.cloudflare.com/v1/<account_id>/<gateway_slug>
+export TRACKER_GATEWAY_URL="https://gateway.ai.cloudflare.com/v1/acc/gw"
+
+# API keys still go to the provider — Cloudflare just proxies.
+export ANTHROPIC_API_KEY=sk-ant-...
+export OPENAI_API_KEY=sk-...
+export GEMINI_API_KEY=...
+
+tracker build_product
+```
+
+Or as a CLI flag:
+
+```bash
+tracker --gateway-url https://gateway.ai.cloudflare.com/v1/acc/gw build_product
+```
+
+Tracker automatically appends the per-provider suffix:
+
+| Provider | Resolved URL |
+|---|---|
+| `anthropic` | `<gateway>/anthropic` |
+| `openai` | `<gateway>/openai` |
+| `gemini` | `<gateway>/google-ai-studio` |
+| `openai-compat` | `<gateway>/compat` |
+
+**Per-provider overrides still win.** If you set `ANTHROPIC_BASE_URL` directly, Anthropic traffic goes there, and the gateway only proxies the providers you haven't explicitly overridden. This means you can point Anthropic at a self-hosted proxy while keeping OpenAI on Cloudflare with one command.
+
+**Troubleshooting:**
+- `429` from Cloudflare: something bigger is wrong (account-level limits, bad gateway slug). 429s from direct provider calls are what the gateway is meant to prevent.
+- `401`: check your provider API key, not the gateway — Cloudflare passes auth through.
+- Empty responses: verify the gateway slug is correct and the provider is enabled in the Cloudflare dashboard.
+
+## Architecture
+
+Tracker is a three-layer stack: an LLM client (provider adapters and token tracking), an agent session (turn loop, tool execution, context compaction), and a pipeline engine (graph execution, edge routing, checkpoints, decision audit, TUI). The dippin adapter converts parsed `.dip` IR into tracker's `Graph` model, and handlers implement per-node behavior.
+
+```mermaid
+graph TB
+    subgraph "Layer 3: Pipeline Engine"
+        Engine["Graph Execution<br/>Edge Routing<br/>Checkpoints<br/>Decision Audit"]
+        Handlers["Handlers: start, exit, codergen, tool,<br/>wait.human, parallel, parallel.fan_in,<br/>conditional, subgraph, stack.manager_loop"]
+        Adapter["Dippin Adapter<br/>IR → Graph"]
+        TUI["TUI: node list,<br/>activity log, modals"]
+    end
+    subgraph "Layer 2: Agent Session"
+        Session["Tool Execution<br/>Context Compaction<br/>Event Streaming"]
+    end
+    subgraph "Layer 1: LLM Client"
+        Anthropic & OpenAI & Gemini
+    end
+    Engine --> Handlers
+    Engine --> Adapter
+    Engine --> TUI
+    Handlers --> Session
+    Session --> Anthropic & OpenAI & Gemini
+```
+
+The core engine is **UI-agnostic**: the TUI, the Slack bot ([`trackerbot`](./cmd/trackerbot/README.md)),
+the terminal REPL ([`trackerchat`](./cmd/trackerchat/README.md)), and any future
+web/mobile front-end are peers on one library boundary — `tracker.Config` →
+`Engine`, an `Interviewer` seam for human gates, the pipeline/agent event
+streams, and `RunManager` for many concurrent runs. The Slack bot and the REPL
+share one transport-neutral core (`transport/chatops`); each adds only its own
+I/O. See **[`docs/architecture/transport-boundary.md`](./docs/architecture/transport-boundary.md)**.
+
+**Declared inputs.** A workflow can declare a typed input signature (a dippin
+`inputs` block, requires dippin ≥ v0.51); a front-end introspects it with
+`tracker.DescribeInputs`, validates a request with `tracker.ValidateInputs`
+(structured per-input errors), and passes values via `Config.Inputs`. They are
+validated + bound at run start — a missing required input fails closed before
+any node runs, instead of the agent proceeding with nothing. File inputs are
+staged into the run dir so a workflow reads them at a fixed, safe path
+(`build_product` takes its `spec` this way). **Secret inputs** (`SecretInput`)
+are staged the same way — the value goes to a `0600` file and `${inputs.<name>}`
+resolves to the path only, so a secret never enters a prompt, the provider wire,
+the trace, or the checkpoint. See
+[`docs/architecture/embedding.md` §1a](./docs/architecture/embedding.md).
+
+For subsystem-level architecture docs, see **[ARCHITECTURE.md](./ARCHITECTURE.md)** and **[`docs/architecture/`](./docs/architecture/)**.
+
+## TUI
+
+The terminal UI shows:
+
+- **Pipeline panel**: node list in topological execution order (Kahn's algorithm) with status lamps, thinking spinners, and tool execution indicators
+- **Activity log**: per-node streaming with line-level formatting (headers, code blocks, bullets), node change separators, multi-node activity indicators for parallel execution, and inline `FAILED:`/`RETRYING:` messages when nodes fail or retry
+- **Subgraph nodes**: dynamically inserted and indented under their parent
+
+### Status Icons
+
+| Icon | Meaning |
+|------|---------|
+| ○ | Pending — not yet reached |
+| 🟡 (spinner) | Running — LLM thinking |
+| ⚡ | Running — tool executing |
+| ● (green) | Completed successfully |
+| ✗ (red) | Failed |
+| ↻ (amber) | Retrying |
+| ⊘ (dim) | Skipped — pipeline took a different path |
+
+### Run terminal status
+
+`tracker.Result.Status` is one of:
+
+| Value | Meaning | `IsSuccess()` |
+|---|---|---|
+| `success` | Run reached the success exit; all validations passed. | true |
+| `validation_overridden` | Run reached the success exit, but a human, autopilot, or webhook accepted a failed validation along the way. See `Result.ValidationOverrides`. | true |
+| `budget_exceeded` | A `BudgetGuard` halted the run. | false |
+| `paused_billing` | Billing/quota exhaustion halted the run in a recoverable, resumable terminal (checkpoint + preserved WIP + `tracker -r` resume). Surfaced to embedders as `RunManager.RunPaused`. | false |
+| `fail` | Run halted via failure. | false |
+
+The enum is open — future minor releases may add new values. Use `IsSuccess()` (or `status_class` in JSON output) instead of switching on the raw string.
+
+### Keyboard
+
+| Key | Action |
+|-----|--------|
+| v | Cycle log verbosity (all / tools / errors / reasoning) |
+| z | Toggle zen mode (full-width log, sidebar hidden) |
+| / | Search the activity log (n/N next/prev, Esc exits) |
+| ? | Help overlay with all shortcuts |
+| Enter | Drill down into the selected node (Esc exits) |
+| y | Copy the visible log to the clipboard |
+| Ctrl+O | Toggle expand/collapse tool output |
+| Ctrl+S | Submit human gate input |
+| Esc | Cancel (empty) or submit (with content) |
+| PgUp/PgDn | Scroll review viewport (plan approval) |
+| q | Quit |
+
+## Drive it from Slack
+
+[`cmd/trackerbot`](./cmd/trackerbot/README.md) is a Slack front-end built on the
+[transport boundary](./docs/architecture/transport-boundary.md). Mention it and
+it starts a pipeline in a thread, streams notifications and clarifying gate
+questions there, and delivers the result — arbitrarily many runs at once, one
+per thread:
+
+```
+@trackerbot make me a CLI that greets people
+@trackerbot run build_product
+@trackerbot status   @trackerbot cancel   @trackerbot runs
+```
+
+Natural-language requests are routed to a workflow by an LLM; all four gate
+modes (choice / yes-no / freeform / interview) work in-thread; interrupted runs
+resume after a restart. It connects via Socket Mode (no public endpoint). Setup
+and configuration: [`cmd/trackerbot/README.md`](./cmd/trackerbot/README.md).
+
+## Drive it from your terminal
+
+[`cmd/trackerchat`](./cmd/trackerchat/README.md) is the same experience as a REPL:
+type a request, answer gates inline, watch the run — no Slack required. It's the
+second consumer of the transport boundary, built from the same
+`transport/chatops` core, so it inherits every command, gate mode, cost estimate,
+and steer/bump control the Slack bot has:
+
+```
+$ trackerchat
+> run ask_and_execute
+❓ Which approach should I take?
+   1) Minimal  [default]
+   2) Full-featured
+> 1
+✅ done — success · $0.42 · 1m03s
+```
+
+## Decision Audit Trail
+
+Every run produces an `activity.jsonl` log. Live writes go to the integrity-protected path under `$XDG_STATE_HOME/tracker/runs/<id>/activity.jsonl` (mode `0o600`, default `$HOME/.local/state/tracker/runs/<id>/`, override via `TRACKER_AUDIT_DIR`; #213). At run-end a sentinel-stripped snapshot is mirrored back to `.tracker/runs/<id>/activity.jsonl` for bundle export and post-run grep/jq workflows. Captured content:
+
+- **Pipeline events**: node start/complete/fail, checkpoint saves
+- **Agent events**: LLM turns, tool calls, text output
+- **Decision events**: edge selection (with priority level and context snapshot), condition evaluations (with match results), node outcomes (with token counts), restart detections
+
+**Run capture (v0.50.0).** Beyond the event stream, a finished run is reconstructable: the executed spec (`workflow.dip` + `workflow.ir.json` + input files), the verbatim provider request bodies, and per-call/turn/session identity land on every `activity.jsonl` line and roll up into a `run.json` manifest (goal, terminal status, per-node kind/attempts/outcome/turns/usage, run totals). `tracker run-json [runID]` assembles the manifest after the fact, so a SIGKILLed or archived run gets one too. Library callers wire the same capture with `Config.Capture` (v0.51.0). Capture files are written `0600` with `O_NOFOLLOW`, and `.tracker/` is excluded from exported bundles.
+
+Reconstruct any routing decision after the fact (post-run snapshot path):
+
+```bash
+# See all edge decisions
+grep 'decision_edge' .tracker/runs/<id>/activity.jsonl | python3 -m json.tool
+
+# See condition evaluations
+grep 'decision_condition' .tracker/runs/<id>/activity.jsonl | python3 -m json.tool
+
+# See node outcomes with token counts
+grep 'decision_outcome' .tracker/runs/<id>/activity.jsonl | python3 -m json.tool
+```
+
+## Git Integration
+
+Enable git artifacts from the library via the `WithGitArtifacts(true)` option on the engine builder; the artifact run directory becomes a git repository and each terminal node outcome creates a commit. (There is no CLI flag for this today — use the `ExportBundle` helper or the `--export-bundle` CLI flag to produce a portable bundle from any run directory.)
+
+```text
+node(start): start outcome=success
+node(middle): codergen outcome=success
+node(end): exit outcome=success
+```
+
+Checkpoint tags (`checkpoint/<runID>/<nodeID>`) mark each save point.
+
+### Exporting a run as a portable bundle
+
+`ExportBundle` packages the entire git history — commits and tags — into a single file you can copy anywhere:
+
+```go
+// Library usage
+result, _ := engine.Run(ctx)
+if err := tracker.ExportBundle(result.ArtifactRunDir, "/tmp/run.bundle"); err != nil {
+    log.Printf("bundle export failed: %v", err)
+}
+```
+
+```bash
+# CLI usage: export bundle after the pipeline completes
+tracker --export-bundle /tmp/run.bundle examples/ask_and_execute.dip
+
+# Restore and inspect on any machine with git
+git clone /tmp/run.bundle /tmp/run
+cd /tmp/run && git log --oneline
+```
+
+The bundle is self-contained — no network access needed. Clone it on another machine, inspect the exact sequence of node outcomes, and replay from any checkpoint tag.
+
+## Troubleshooting
+
+When a pipeline run doesn't go as expected, tracker gives you tools to understand what happened:
+
+### `tracker diagnose`
+
+Analyzes a run's failures and surfaces the information you need — tool stdout/stderr, error messages, timing anomalies — without manually grepping through JSONL files.
+
+```bash
+# Diagnose the most recent run
+tracker diagnose
+
+# Diagnose a specific run (prefix matching works)
+tracker diagnose 7813b
+```
+
+The output shows each failed node with its output, stderr, errors, and actionable suggestions. For example, it will tell you if a tool node failed because of a stale counter file, or if a node completed suspiciously fast (suggesting a configuration issue).
+
+### `tracker audit`
+
+For a broader view of a run's timeline, retries, and recommendations:
+
+```bash
+# List all runs
+tracker list
+
+# Full audit report for a specific run
+tracker audit <run-id>
+```
+
+### Common issues
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| "no LLM providers configured" | Missing API keys | `tracker setup` or export env vars |
+| TestMilestone instantly escalates | Stale `fix_attempts` counter | `rm .ai/milestones/fix_attempts` |
+| Node fails with no visible error | Tool stderr not surfaced | `tracker diagnose` shows full output |
+| Pipeline loops forever | Unconditional fallback to loop target | Ensure fallbacks go to an exit node (Done, escalation gate), not back into the loop |
+| Tool retries same error 5 times | Deterministic command bug | `tracker diagnose` flags identical retries — fix the command in the .dip file |
+| Every milestone needs fixing | known_failures has comments or bad format | Ensure bare test names only, no comments — v0.11.2 strips them automatically |
+| Build loop skips all milestones | Milestone headers don't match expected format | Use `## Milestone N: Title` format — v0.11.2 is flexible + fails loudly |
+
+## Cost Governance
+
+Tracker exposes per-provider token and dollar cost from every run, and can halt
+pipelines that exceed configured ceilings.
+
+**Library consumers** read cost via `Result.Cost`:
+
+```go
+result, _ := tracker.Run(ctx, source, tracker.Config{
+    Budget: pipeline.BudgetLimits{
+        MaxTotalTokens: 100_000,
+        MaxCostCents:   500,           // $5.00
+        MaxWallTime:    30 * time.Minute,
+    },
+})
+// IsSuccess() returns true for {success, validation_overridden}; classify by
+// status_class for stable bucketing across future enum extensions.
+if !result.Status.IsSuccess() {
+    log.Printf("run did not complete cleanly: status=%s, spent $%.4f",
+        result.Status, result.Cost.TotalUSD)
+}
+// To branch on overrides specifically:
+if len(result.ValidationOverrides) > 0 {
+    log.Printf("run involved %d override(s)", len(result.ValidationOverrides))
+}
+for provider, pc := range result.Cost.ByProvider {
+    log.Printf("%s: %d tokens, $%.4f", provider, pc.Usage.InputTokens+pc.Usage.OutputTokens, pc.USD)
+}
+```
+
+**CLI users** pass flags directly to `tracker`:
+
+```bash
+tracker --max-tokens 100000 --max-cost 500 --max-wall-time 30m \
+    examples/ask_and_execute.dip
+```
+
+A halted run prints a `HALTED: budget exceeded` section naming the dimension
+that tripped. Run `tracker diagnose` to see the per-provider breakdown and
+remediation guidance.
+
+**Streaming consumers** subscribe to `EventCostUpdated` via
+`tracker.Config.EventHandler`. Each terminal-node outcome emits a
+`CostSnapshot` with aggregate tokens, dollar cost, per-provider totals,
+and wall-clock elapsed time.
+
+Budget ceilings can also be declared inline in the workflow's `defaults:` block (v0.19.0) and act as the fallback when neither `Config.Budget` nor the matching `--max-*` CLI flags are set:
+
+```dip
+workflow MyPipeline
+  defaults
+    model: claude-sonnet-5
+    max_total_tokens: 100000
+    max_cost_cents:   500
+    max_wall_time:    30m
+```
+
+Explicit library/CLI values still win over the `.dip` defaults.
+
+## Headless Execution (Webhook Gate)
+
+`--webhook-url` enables fully headless operation: instead of pausing the pipeline to wait for a human at a terminal, tracker POSTs every human gate as JSON to your URL and waits for a callback.
+
+This is the integration point for Slack bots, email approval flows, mobile push notifications, factory workers, or any custom approval system.
+
+### Flow
+
+1. A human gate fires → tracker POSTs a `WebhookGatePayload` to `--webhook-url`.
+2. Your service receives the payload, routes it to a human (Slack message, email, etc.).
+3. The human responds → your service POSTs a `WebhookGateResponse` to the `callback_url` field.
+4. Tracker resumes the pipeline with the human's answer.
+
+### CLI
+
+```bash
+tracker --webhook-url https://factory.example.com/api/gate \
+        --gate-timeout 30m \
+        --gate-timeout-action fail \
+        --webhook-auth "Bearer sk_live_..." \
+        examples/build_product.dip
+```
+
+### Flags
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--webhook-url` | _(required to enable)_ | URL to POST gate payloads to |
+| `--gate-callback-addr` | `:8789` | Local addr for the inbound callback server |
+| `--gate-timeout` | `10m` | How long to wait for a reply per gate |
+| `--gate-timeout-action` | `fail` | What to do on timeout: `fail` or `success` |
+| `--webhook-auth` | _(empty)_ | `Authorization` header on outbound POSTs |
+
+`--webhook-url` is mutually exclusive with `--autopilot` and `--auto-approve`.
+
+### Payload format
+
+Tracker POSTs JSON with this shape:
+
+```json
+{
+  "gate_id": "uuid",
+  "run_id": "optional-run-id",
+  "node_id": "ApproveSpec",
+  "prompt": "Review the spec. Approve, refine, or reject.",
+  "choices": [{"label": "approve", "value": "approve"}, ...],
+  "callback_url": "http://localhost:8789/gate/f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "timeout_seconds": 1800,
+  "gate_token": "per-gate-secret"
+}
+```
+
+Your service POSTs back to `callback_url` with:
+
+```json
+{
+  "choice": "approve",
+  "freeform": "optional free-text response",
+  "reasoning": "optional explanation"
+}
+```
+
+Include the `gate_token` value in the `X-Tracker-Gate-Token` header — the callback server rejects requests with missing or wrong tokens (HTTP 401).
+
+### Library API
+
+> ⚠️ **Stability note (pre-v1.0):** tracker's library API is usable now, but
+> breaking changes may still happen between minor releases while the surface is
+> finalized. Check `CHANGELOG.md` before upgrading. Full policy — the supported
+> surface, the open-enum rule, and the deprecation contract — is in
+> [`docs/api-stability.md`](docs/api-stability.md), mechanically guarded by an
+> exported-surface golden snapshot (`api_surface_test.go`).
+
+Library consumers set `tracker.Config.WebhookGate` instead of using CLI flags:
+
+```go
+result, _ := tracker.Run(ctx, source, tracker.Config{
+    WebhookGate: &tracker.WebhookGateConfig{
+        WebhookURL:    "https://factory.example.com/api/gate",
+        CallbackAddr:  ":8789",
+        Timeout:       30 * time.Minute,
+        TimeoutAction: "fail",
+        AuthHeader:    "Bearer sk_live_...",
+    },
+})
+```
+
+### Analyzing past runs from code
+
+```go
+import (
+    "context"
+
+    tracker "github.com/2389-research/tracker"
+)
+
+ctx := context.Background()
+report, err := tracker.DiagnoseMostRecent(ctx, ".")
+if err != nil { log.Fatal(err) }
+
+for _, f := range report.Failures {
+    fmt.Printf("failed: %s (handler=%s, retries=%d)\n",
+        f.NodeID, f.Handler, f.RetryCount)
+}
+for _, s := range report.Suggestions {
+    fmt.Printf("  %s: %s\n", s.Kind, s.Message)
+}
+```
+
+`tracker.Audit`, `tracker.DiagnoseMostRecent`, `tracker.Simulate`, and `tracker.Doctor` all accept `context.Context` as their first argument and return JSON-serializable reports. `tracker.ListRuns` and `DiagnoseMostRecent`/`Diagnose` accept an optional config (`AuditConfig`, `DiagnoseConfig`) with a `LogWriter` for non-fatal parse warnings; if `LogWriter` is left unset, warnings are discarded, so embedded callers are silent by default. Set `LogWriter` to something like `os.Stderr` (or another writer/logger sink) if you want to receive those warnings. `Audit` and `Simulate` currently take just `ctx` (plus their payload); `Doctor` takes a required `DoctorConfig` plus optional functional options (e.g., `tracker.WithVersionInfo`).
+
+If you currently shell out to `tracker diagnose` and scrape stdout, migrate to
+`tracker.Diagnose()` / `tracker.DiagnoseMostRecent()` and read
+`DiagnoseReport` directly instead of parsing formatted CLI text.
+
+To stream events programmatically in the same NDJSON format as `tracker --json`, use `tracker.NewNDJSONWriter`:
+
+```go
+w := tracker.NewNDJSONWriter(os.Stdout)
+result, _ := tracker.Run(ctx, source, tracker.Config{
+    EventHandler: w.PipelineHandler(),
+    AgentEvents:  w.AgentHandler(),
+})
+```
+
+## CLI Reference
+
+```
+tracker [flags] <pipeline>       Run a pipeline (file path or built-in name)
+tracker workflows                List built-in workflows
+tracker init <workflow>          Copy a built-in to current directory
+tracker setup                    Interactive provider configuration
+tracker validate <pipeline>      Check pipeline structure
+tracker simulate <pipeline>      Dry-run execution plan
+tracker doctor                   Preflight health check
+tracker diagnose [runID]         Analyze failures in a run
+tracker audit <runID>            Full audit report for a run
+tracker list                     List recent pipeline runs
+tracker update                   Self-update to the latest GitHub release
+tracker version                  Show version information
+```
+
+**Flags:**
+- `-w, --workdir` — working directory (default: current)
+- `-r, --resume` — resume a previous run by ID
+- `--format` — pipeline format override: `dip` (default) or `dot` (legacy; emits a deprecation warning)
+- `--json` — stream events as NDJSON to stdout
+- `--no-tui` — disable TUI dashboard, use plain console
+- `--verbose` — show raw provider stream events
+- `--backend` — agent backend: `native` (default), `claude-code`, or `acp`
+- `--autopilot <persona>` — replace human gates with an LLM judge (`lax` / `mid` / `hard` / `mentor`)
+- `--auto-approve` — deterministically accept every human gate (no LLM)
+- `--param key=value` — override a declared workflow var at run time (repeatable)
+- `--artifact-dir` — override the node state directory (default: `<workdir>/.tracker/runs`)
+- `--max-tokens` — halt if total tokens across the run exceed this value (0 = no limit)
+- `--max-cost` — halt if total cost in cents exceeds this value (0 = no limit)
+- `--max-wall-time` — halt if pipeline wall time exceeds this duration (0 = no limit)
+- `--gateway-url` — Cloudflare AI Gateway root URL (per-provider `*_BASE_URL` env vars win)
+- `--webhook-url` — POST human gate prompts to this URL and wait for callback (headless)
+- `--gate-callback-addr` — local addr for the webhook callback server (default: `:8789`)
+- `--gate-timeout` — per-gate wait timeout when `--webhook-url` is set (default: `10m`)
+- `--gate-timeout-action` — what to do on gate timeout: `fail` (default) or `success`
+- `--webhook-auth` — `Authorization` header for outbound webhook requests
+- `--export-bundle` — write a portable git bundle of run artifacts to the given path after completion
+- `--bypass-denylist` — disable the built-in tool command denylist (prints a stderr warning; sandboxed use only)
+- `--tool-allowlist <pattern>` — glob pattern a tool command must match to execute (repeatable or comma-separated)
+- `--max-output-limit <bytes>` — hard ceiling per tool command output stream (default: 10MB)
+
+## Development
+
+```bash
+# Run tests
+go test ./... -short
+
+# Validate all example pipelines
+for f in examples/*.dip; do tracker validate "$f"; done
+
+# Run dippin simulation tests
+for f in examples/*.dip; do dippin test "$f"; done
+
+# Check with dippin-lang tools
+dippin doctor examples/build_product.dip
+dippin simulate -all-paths examples/build_product.dip
+```
+
+## License
+
+See [LICENSE](LICENSE).

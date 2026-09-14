@@ -1,0 +1,492 @@
+{
+  "applied_operation_id": "op_6e59abe42c344ec69e5b9f2e53e22ec5",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7b1984a225d7099c9afc38c6091bf9446b7c0863dc8f33d897d3bf9773502e8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 54,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L45-L54"
+        },
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 63,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L58-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63d449973ac23dcbfd2261b3598f416fb11251222efcd7180b55b0e18d57ff1f",
+        "slc_7872fb14f9599e3aa3380710b9ebfa72b1ca9980a86755a3e02eec81766d78a9"
+      ],
+      "text": "OpenCursor is a VS Code extension installable from the Marketplace or as a .vsix, providing a multi-tab sidebar chat with @-mentions of files, folders, docs, commits, diffs, terminals, and rules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c535319a5999f7395dc6d4a6f638c05ce614dd5e58cc80d85e2ffca75a5137a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 54,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L45-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63d449973ac23dcbfd2261b3598f416fb11251222efcd7180b55b0e18d57ff1f"
+      ],
+      "text": "The agent ships a suite of 25 tools including read/write/edit, shell, grep/glob, semantic search, web search/fetch, notebooks, todos, subagents, and MCP."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3c684dd546ea77944b3b851c385593f71a7094889d3be76f89f62c2d86242ef",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 54,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L45-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63d449973ac23dcbfd2261b3598f416fb11251222efcd7180b55b0e18d57ff1f"
+      ],
+      "text": "Edits get per-hunk Keep/Undo CodeLenses for inline review, and the README states this works without requiring git."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_26a0b7a181ead46788ab7c62b8b61b64d2c4609d2a3134aebce2fef5e884f38c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 54,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L45-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63d449973ac23dcbfd2261b3598f416fb11251222efcd7180b55b0e18d57ff1f"
+      ],
+      "text": "A per-action approval policy supports allow/ask/review/deny with risk heuristics (e.g. rm -rf, sudo, .env, secrets) and wildcard allow/deny lists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e95d34490d42431b652fc70f354c78150ae10e5b832468d95fdfefeb1bd9aeb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a90f67625ae8b9a4d87da477496371ddc6481f747df1d93cf40caa053f39102"
+      ],
+      "text": "Heavy native runtime dependencies such as ONNX runtime and image processing are downloaded on first activation with integrity checks rather than shipped in the VSIX."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_54fc169ee2e371772e284ade7e9ac5bd5f9ef57b1be69a80d7eb267128291f1a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_da74e40089579bdbd3cc806c9674442d6e70497d7cbcd5ef175c0b7d71dbf4bf"
+      ],
+      "text": "Local AI support includes built-in llama.cpp management (spawning llama-server with control over context size, GPU layers, flash attention, etc.) and zero-config Ollama integration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c925998b6f15efe5ad7b675f697a318f7f62a86746b5d1c771a0b5b06e7bab57",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L32-L32"
+        },
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d1bb62de9703abdf71695ff8ff63fbf3d9fd901128cf05ed882ab044101aee6",
+        "slc_da74e40089579bdbd3cc806c9674442d6e70497d7cbcd5ef175c0b7d71dbf4bf"
+      ],
+      "text": "Semantic codebase search uses an on-device ONNX MiniLM embedding model, with an option to point at any OpenAI-compatible /embeddings endpoint instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c04769895b45c6190bd889342816bb12694e1a568c632f87f98d2b38296393f3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a0626c95f40d51e3fdedacbab77e8aa9feb5c94fb65b3873114448cb27afd0d"
+      ],
+      "text": "Providers include OAuth sign-in for Claude Code, OpenAI Codex, and Google Antigravity accounts, API-key presets (OpenAI, Anthropic, Gemini, OpenRouter), and custom OpenAI-compatible or Anthropic-style endpoints usable simultaneously."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bfc36574fabb6a845417e597142d0f07c6be8a6cf3ba6020812f19bfd4ec19b0",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+          "line_end": 269,
+          "line_start": 266,
+          "path": "CHANGELOG.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md#L266-L269"
+        },
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+          "line_end": 86,
+          "line_start": 81,
+          "path": "CHANGELOG.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md#L81-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66fe7d6f9ca77a11ea6b7084b3dc81564525fcec9dd82e94e8c430729644e311",
+        "slc_b24a909cfb2e6ea36b117baa4a8852a6cf740a96bfd966ced176654cee2b0330"
+      ],
+      "text": "Project mode lets the agent act as a project lead delegating to a team of subagents (TeamDef presets), with subagents running on isolated history so the parent only receives the final Task result."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef6bc5e03dbaf197aa74ba4e3ec924b5254b884add5de1b693bd6e815e26b825",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+          "line_end": 262,
+          "line_start": 257,
+          "path": "CHANGELOG.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md#L257-L262"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a9ff1916060955d3c151739f1dd5b16e00f036588ebeeb2762e001c6560b44ec"
+      ],
+      "text": "The semantic index persists across VS Code restarts, re-indexes incrementally on changed files, and auto-indexes new/modified files via a workspace file watcher; indexing can be fully disabled in settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a09a8bd0ed738df9e74ee1516d0cfc4a8cd5626da635d01bc633af9d8a76def",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+          "line_end": 170,
+          "line_start": 164,
+          "path": "CHANGELOG.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md#L164-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e484d18d51f34e124221e4af92639f7db8d3c20817fda20580da74c88b7d69de"
+      ],
+      "text": "Context management includes auto-compaction with a verbatim tail, lossless persisted chat history for export, and latest-wins deduplication of older tool results for the same target."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be5f88ffd89336c03248baad6878131b5f40a2c4c9afe80d58776b0cff435d16",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L80-L80"
+        },
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L76-L76"
+        },
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+          "line_end": 74,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md#L69-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f6f4a3635f8b4805efc55ebb2660754dd2f0c0a21c20fca21a271c11db75972",
+        "slc_811197515a168280b45fbdd3bef561c38a92b00489d123f0e7d88b4b47f353e0",
+        "slc_d04548e123ab3b491d4e22422e45b744c26d52bd46ff29bbac5c6b4fef76af53"
+      ],
+      "text": "Repository development practice: build from source with pnpm install and pnpm run compile (or watch), press F5 for the Extension Development Host, and package with pnpm run vsix; issues and PRs are welcome."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18a92481fcd303acc77449a11fedf537f35e4e4dd2b223dc62ea76b7814d3f74",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+          "line_end": 235,
+          "line_start": 233,
+          "path": "CHANGELOG.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md#L233-L235"
+        },
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+          "line_end": 219,
+          "line_start": 214,
+          "path": "CHANGELOG.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md#L214-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4230e0486695e86134386db2e06a98e91dfad23c08ad32ff921459c3efaa729a",
+        "slc_734ec32a1f4f981d0395accb20d3e77c5c728c945f99c62ff48794b585e9d0c4"
+      ],
+      "text": "The changelog documents per-tool hard timeouts, abort-signal support so Stop cancels mid-work, and configurable per-tool timeout seconds in Settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ce47e5c2fedfcb09ff4c69ca7391b07f168ee9d1a2b43cef400c6978e78aa6d6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+          "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+          "line_end": 119,
+          "line_start": 111,
+          "path": "CHANGELOG.md",
+          "repository": "pawanosman/opencursor",
+          "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md#L111-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a6d7f5f12e0ec3d465365ed53a542c43480a5daa36095b20394014079448870"
+      ],
+      "text": "Shell commands run in their own child shell and kill child processes on termination, and denied commands are checked per sub-command to prevent chaining-based bypasses."
+    }
+  ],
+  "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 84,
+        "path": "README.md",
+        "size": 4774
+      },
+      {
+        "lines": 313,
+        "path": "CHANGELOG.md",
+        "size": 20570
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 223,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_103523f86e805caf9735294d6870b4bd",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/pawanosman/opencursor/e94886325f765dc4f98f49b20e3b44af05a2f3d1/4d702a4dae4114d6/manifest.json",
+  "package_id": "pkg_937af2c88e1d603ec040339748e250a1d6b38179a2e303948d8a295a4c03c85e",
+  "repo": "pawanosman/opencursor",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "27cc76db12412000ffe422e05f7f7aca1510aef2bf950d3997cba7e9f3b09e8e",
+  "snapshot_id": "4d702a4dae4114d6",
+  "sources": [
+    {
+      "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+      "git_sha": "bab51badd601dcbdf61164a1a39e681f60396e2e",
+      "lines": 313,
+      "path": "CHANGELOG.md",
+      "repository": "pawanosman/opencursor",
+      "sha256": "72db430d49279a181c5efb76a25f000d383d0dbd2c442f0802a23fb85b5bf885",
+      "source_id": "src_220eded85b3158888bad771f96666f6a",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/CHANGELOG.md"
+    },
+    {
+      "commit": "e94886325f765dc4f98f49b20e3b44af05a2f3d1",
+      "git_sha": "e713a9ccabaebf332828df9137f06810c0d49332",
+      "lines": 84,
+      "path": "README.md",
+      "repository": "pawanosman/opencursor",
+      "sha256": "a94e4246870826a97a92276e8faa11997e2d585d80a5d22c03f6e092bdc1ffe3",
+      "source_id": "src_a00f40e6ce875bf5abb76b6f64af9231",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/PawanOsman/OpenCursor/blob/e94886325f765dc4f98f49b20e3b44af05a2f3d1/README.md"
+    }
+  ],
+  "summary": "OpenCursor is an open-source VS Code AI coding agent with local (llama.cpp/Ollama) and cloud providers, a 25-tool suite, semantic codebase search, approval policies, and subagents. The evidence is README marketing/feature text plus a detailed changelog; no source code slices are present.",
+  "superseded_claim_ids": []
+}

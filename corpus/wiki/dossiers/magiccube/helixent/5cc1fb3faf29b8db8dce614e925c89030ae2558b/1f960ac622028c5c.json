@@ -1,0 +1,859 @@
+{
+  "applied_operation_id": "op_3f1142be29f14d7d82bce7375092b11d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e9f347b39c8d9b3cb1edfe20eb716e93508bcbb241b5df0934d32358c837ef02",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L79-L79"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_055347ffc363380bd99d25c3a0cfd528fcc81db3885a072611d1474f40ee009d",
+        "slc_7e701dc9fd5ac694e1beb5b4d250660ef429d30589105bc3b7e0e3bbc13a8635"
+      ],
+      "text": "Helixent is described as a coding agent comprising an agent loop, a coding-focused agent layer, and a CLI, distributed as the npm package 'helixent'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fb7c9a012a8db8f1f26d2bdf57a0b49bd650d5b2f1867e1ce9b466956dafcef",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 193,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L193-L193"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 201,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L195-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6766e8c1cde62550aa580c0fc908b2fa2c6e2cb4c5e04ad8a14cc3441f8701a0",
+        "slc_f52d703b5418833c4da112d438762a3122d40ede17b59412a4dafc555978dee4"
+      ],
+      "text": "The codebase is organized into three layers plus a community area: src/foundation (core primitives), src/agent (agent loop), src/coding (coding agent), and src/community (third-party integrations such as OpenAI)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_04dc357464cf162697013fdaac23860ac035b892e0c5c079b25089fe5126fd4c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 209,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L207-L209"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "f148b8c00636c443425e165e5c053d2fe421342f",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/foundation.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/foundation.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0168e0b62b76a9ea382c1b70ac0095e1c4bd9717c175f0fc1f97b71bc62aa4d1",
+        "slc_5d8b49863cf01f9e90e4bf0d1b646f18a78d88ce757d49b04b62952cc2f007c7"
+      ],
+      "text": "The foundation layer provides three core primitives: a Model abstraction over LLM providers, a single Message transcript type, and Tool definitions with execution plumbing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c1e4fce5eb57c5b4868effb9cfe854d7726c43b290cb2e33767544b95608264",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 218,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L215-L218"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 213,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L213-L213"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b6518be00887284d860763a264fe0b354bbb2b6579a395841923edf45b683f0",
+        "slc_6820bc1c8988742eca0c2ebe001909c8e835a49bea1602bcbfaf4706fb3b9d17"
+      ],
+      "text": "The agent loop is ReAct-style: it maintains conversation state, orchestrates think-act-observe steps, invokes tool calls in parallel, and feeds observations back into the next reasoning step."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c933882dbfbf09052492cbdcf84ac44cc5e38b1d4278efdc616ca78ad87c8a7c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 290,
+          "line_start": 281,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L281-L290"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 277,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L277-L277"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L292-L292"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25abc0ce25c07539decd4cf9704f35cabb5ff6c7451222017bfa6ed1e1122dd1",
+        "slc_97eb5476709bcb6710dffbef0a9510325aea0558d3e4b918662cc7d28b31b998",
+        "slc_c2ad854b13e3181044d49b570b0d4167ed4e04a5e4fcb1ddf6e9d9087432106d"
+      ],
+      "text": "A middleware system lets extensions observe and mutate agent behavior at eight lifecycle hooks (beforeAgentRun/afterAgentRun, beforeAgentStep/afterAgentStep, beforeModel/afterModel, beforeToolUse/afterToolUse), invoked sequentially in array order; hooks may return a partial update to merge or void."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7cc1bb61746dce3eb63d363acbeafd4851f160213002a519d85ce6f8a520545",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 69,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L54-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d8acbbaabdc6636a0c88da34b18de0fea85dd8b97a3615c85306b1e6ca9c21a"
+      ],
+      "text": "The agent loop supports human-in-the-loop approval of tool calls, listed as a key feature of the middleware-ready loop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b920bd4e7ee4db625ba774a418e1f195dbe328692fb1cabba6982410c1b6d7f9",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 69,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L54-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d8acbbaabdc6636a0c88da34b18de0fea85dd8b97a3615c85306b1e6ca9c21a"
+      ],
+      "text": "Skills in the standard agentskills.io format are discovered from ~/.agents/skills, ~/.helixent/skills, and the project's .agents/skills and .helixent/skills directories; duplicate skill names across folders are allowed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_170d4cc9d2d63e0ab6806a913c79e8d722a7c2a79ad736d644efb6917500f984",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 77,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L71-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d22afb35d58402c70df007d222dbecf4bce363850fc74a2eec8ddada4bd7534"
+      ],
+      "text": "If an AGENTS.md file exists at the repository root, it is automatically picked up as project guidance, serving as long-term project memory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f0e03aabeacdb092b70168a2969e0fbb4801ef52f8e1502c819d967180afd58",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 110,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L108-L110"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 116,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L114-L116"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L104-L104"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 122,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L120-L122"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 134,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L132-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54a061b024e5a588d7d6d1b196fb5f8c643e7352ea2423b9fc5400c800bf6826",
+        "slc_5eecaee1b16e0b7386b00860d73e9f0cf8f8aeecf228b363f1fb094a64151098",
+        "slc_965605830196a73c5eb281f9ddcb991ac94f62ce628d87dc71232739ccb5ddf5",
+        "slc_d49bd07a2c1dc03b6261497d3ed648d5b57eb2bdae7316fce8fcf040102ad06b",
+        "slc_f219426349703220884dbf3fd9ff5fd727eedde515e379d1aa8700ed4e39bad6"
+      ],
+      "text": "The CLI stores configuration in ~/.helixent/config.yaml and offers subcommands including 'helixent config model list', 'add', 'remove <model_name>', and 'set-default <model_name>'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dda06af36403353feea9a2c343eb2c1974914e98ac9c1eb43d0f71ef9fc2703f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 260,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L256-L260"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 254,
+          "line_start": 253,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L253-L254"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 239,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L236-L239"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 273,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L262-L273"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1952111d6192ac874bd34b2a8180d97e75b59eab16e29333874885c066c4eb84",
+        "slc_268ea257be4fcacb2e97b7dd1746eb23401f9af1b3ae4a1966d8475f24c4f7dc",
+        "slc_43b1a71e47f6ca555cda956eba8b372e7c45ba6dd97725327f7609a8e04d3841",
+        "slc_636b4b99b01b74eb928253cd60e155bb08a2ee3fad41a38e3ca1b9e535951aa4"
+      ],
+      "text": "Programmatic use is via createCodingAgent({ model }) from 'helixent/coding' and OpenAIModelProvider from 'helixent/community/openai'; agents expose a stream() method yielding messages whose content segments include thinking, text, and tool_use types."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31f0c2abfe1a9546fda7f0ef6990a5a85e035ba5b7cf48a0a62e31d829b994e6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "f148b8c00636c443425e165e5c053d2fe421342f",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "docs/foundation.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/foundation.md#L43-L43"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "f148b8c00636c443425e165e5c053d2fe421342f",
+          "line_end": 41,
+          "line_start": 36,
+          "path": "docs/foundation.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/foundation.md#L36-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4adf8ab626170a1cfac0566620638ea3d902b83923e4b2e0003b646a185a3efd",
+        "slc_bcac2d2d07d9a60faa4e073b64f4cab66fa602b7cfdb870a4fb5ec08fa5e6b05"
+      ],
+      "text": "The ModelProvider contract requires invoke(params) returning Promise<AssistantMessage> and stream(params) returning an AsyncGenerator of AssistantMessage; params bundle model, messages, optional tools, provider options, and an AbortSignal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d624157bcd874f0c0defb24485491997f8e7ad74d0bd80dd88ddb08c646cbaac",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 224,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L224-L224"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 77,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L71-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f7467256e8c1a2c9bf601e879470144d5524605ba1312b4ec0e87be6a4eaa59",
+        "slc_5d22afb35d58402c70df007d222dbecf4bce363850fc74a2eec8ddada4bd7534"
+      ],
+      "text": "The coding agent ships practical developer tools such as bash, read_file, write_file, str_replace, list_files, glob_search, grep_search, apply_patch, file_info, mkdir, and move_path, plus a todo-list-based plan mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_934e9e18c7bd22d1559d3aefd58ec9588af109b3e7c571cc3989b1aaf2913b59",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "e55a7b733f3985f21af07371c85bd206a1bd76ec",
+          "line_end": 7,
+          "line_start": 4,
+          "path": "docs/code-convention.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/code-convention.md#L4-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51fa410846477090081e686207f67a3f63ac8ac08dcbcd57ac07913fcaec42c2"
+      ],
+      "text": "The stack uses TypeScript strict/ESM on the Bun runtime, Zod for schemas, the OpenAI SDK, Ink with React 19 for the TUI, Commander for the CLI, and gray-matter plus yaml for skills parsing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ff95731cd2059ea196c4abc2d871fc18e689466ed028ccdcc17c988340a6f19",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 296,
+          "line_start": 296,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L296-L296"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 303,
+          "line_start": 300,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L300-L303"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ff2f0cfb6109afa9e9c1c9444eb74f8b1df6fedeccf83bc19de3c6eaf7f39fa",
+        "slc_4b0c89cc0b68bbf73b726100ec37a0353479f8d2d76cc4784be25fcc27f2f2b5"
+      ],
+      "text": "Bun was chosen over Node for its native async/await concurrency, faster HTTP/filesystem/cold-start performance, single-file compiled executables via 'bun build --compile', and bundled test runner, bundler, and TypeScript support."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_299b02a28a04a22a8d1899315b7f5e269d999b5c95cc6b8c92d917f41d7291f7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 230,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L230-L230"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "f148b8c00636c443425e165e5c053d2fe421342f",
+          "line_end": 84,
+          "line_start": 81,
+          "path": "docs/foundation.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/foundation.md#L81-L84"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "f148b8c00636c443425e165e5c053d2fe421342f",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "docs/foundation.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/foundation.md#L77-L77"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "e55a7b733f3985f21af07371c85bd206a1bd76ec",
+          "line_end": 70,
+          "line_start": 69,
+          "path": "docs/code-convention.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/code-convention.md#L69-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7148c638e1ac75f016f1eb2a134d0caea72e99dbab37d222c3fa09812ca01bf1",
+        "slc_8bc381b8a2bb6b63c46672953c47d1c3cdfccbdd494bd544425894028a81c176",
+        "slc_c0a0ca39a32ff0a7a7d5f78aace066a1e9627676e391c8df6ff0c155aea55b20",
+        "slc_f20e625ad9d503d58cddbfb8cf0f6f020d6469c29127048c4dc6aa8d915f2792"
+      ],
+      "text": "The OpenAI provider defaults to temperature 0 and top_p 0, merges caller options last, and works with any OpenAI-compatible endpoint; thinking content is dropped when converting messages to OpenAI wire format."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_901d657257d112c8e79f03e0c9f5fc04db5ecaa3d077c24a74d3f15a3b084933",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 154,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L152-L154"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L172-L172"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 180,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L178-L180"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 156,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L156-L156"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 162,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L160-L162"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 168,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L166-L168"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_061befe0a92452cac0a014dd6f6d7f9540ddc41c01947c85db5b2d195b0ba59b",
+        "slc_09ea4fbad88a27251def9c05981d57c011a278a325dac9febefbf3aca268aa99",
+        "slc_6a18323275e942e7dfcd37ee0a533d9b31e527aed867139aa00b24199ad283b1",
+        "slc_76c24f14c0c0028484cadad448027f3c439240295505619eeb96b75c98f2777a",
+        "slc_b3ee86b56c31d1dfa7888b2b1bc29db100957169e645f9d818eed9c2c1caef8b",
+        "slc_c35b4e6f1e3c8c719854dcf0c1a728f1cbc6c6a1506e7c19b0c91917502d7f70"
+      ],
+      "text": "Repository development practice: all pushes and pull requests run 'bun run check' in GitHub Actions, local commits are gated by a pre-commit hook running the same check, and contributors build with bun install / bun run dev / bun run build:bin producing dist/bin/helixent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d785aa05f215d45edd20d83d152e0f7684e0a30720182dd5450024b76f8ca9cc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "e55a7b733f3985f21af07371c85bd206a1bd76ec",
+          "line_end": 11,
+          "line_start": 10,
+          "path": "docs/code-convention.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/code-convention.md#L10-L11"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "e55a7b733f3985f21af07371c85bd206a1bd76ec",
+          "line_end": 18,
+          "line_start": 14,
+          "path": "docs/code-convention.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/code-convention.md#L14-L18"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "e55a7b733f3985f21af07371c85bd206a1bd76ec",
+          "line_end": 44,
+          "line_start": 40,
+          "path": "docs/code-convention.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/code-convention.md#L40-L44"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "ebda995143b4aa0c8477347866f7bb3fb1952ca5",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "docs/bun.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/bun.md#L9-L15"
+        },
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "ebda995143b4aa0c8477347866f7bb3fb1952ca5",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/bun.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/bun.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07fe90df57a6fdeeaf8266125ce62c5c2f700cc68aab0878f2bc72f9ef72a21a",
+        "slc_12490dcbe0aef8cff9a82ab81a01839277ec7f39a993ea486dc0624444260ed0",
+        "slc_92ec2e4435aced8d93ce94adb748a2af1c1366ca2ce4f7a290545842a49fecdd",
+        "slc_df3240cf4354145591fccbc59487e6875b54d3e59b6e1f937666bf3753229f00",
+        "slc_f35c5b00f1921c2c09db8b132de5cde3d5fe726fdec1d32c73a5ab21cc10deba"
+      ],
+      "text": "Repository development practice: docs/bun.md instructs contributors to default to Bun (bun test, bun install, Bun.file, Bun.serve) and avoid Node/dotenv/express equivalents; docs/code-convention.md mandates kebab-case files, named exports only, _-prefixed private members, and layered dependency direction (agent stays generic; adapters live in community/)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9cb44a4b8989cb8614aa65622ef35f5ea1ffa2045c6042604ff328b8ac3604b3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+          "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+          "line_end": 312,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "magiccube/helixent",
+          "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md#L309-L312"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d134e55de6b8f82bfd7a26db4a9dfec69229ba62777889fecc38371fa50c0a3"
+      ],
+      "text": "Sub-agents, multi-agent teams, print mode, and file-based sessioning appear on the roadmap, suggesting these capabilities are planned rather than shipped in this version."
+    }
+  ],
+  "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 312,
+        "path": "README.md",
+        "size": 11403
+      },
+      {
+        "lines": 311,
+        "path": "README.zh.md",
+        "size": 11550
+      },
+      {
+        "lines": 111,
+        "path": "docs/bun.md",
+        "size": 2676
+      },
+      {
+        "lines": 101,
+        "path": "docs/code-convention.md",
+        "size": 8412
+      },
+      {
+        "lines": 84,
+        "path": "docs/foundation.md",
+        "size": 3186
+      },
+      {
+        "lines": 144,
+        "path": "AGENTS.md",
+        "size": 6654
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 11
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 163,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_220b0f908c215032bb2e2feb5ff83b7a",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/magiccube/helixent/5cc1fb3faf29b8db8dce614e925c89030ae2558b/1f960ac622028c5c/manifest.json",
+  "package_id": "pkg_708936ea998969f90307fc94c42440fc52c68446831a35b9a468d4c22716468a",
+  "repo": "magiccube/helixent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "eb4451a5c2983508603103bb25c51ca36a1fb095290e350421d2d5e4ca788841",
+  "snapshot_id": "1f960ac622028c5c",
+  "sources": [
+    {
+      "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+      "git_sha": "fa150ad06ff51c361d162e6dd05fcf4a3b702f3c",
+      "lines": 144,
+      "path": "AGENTS.md",
+      "repository": "magiccube/helixent",
+      "sha256": "66df7a1d1c861ab6cdde923885efb12cb1d79b869647c43d73e8e0e9f0e020e6",
+      "source_id": "src_c31b7e668267545b8bd537b627199e3b",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/AGENTS.md"
+    },
+    {
+      "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+      "git_sha": "8f99f743561dbca3a9bcc93031ee2a76dba249db",
+      "lines": 312,
+      "path": "README.md",
+      "repository": "magiccube/helixent",
+      "sha256": "fd85b3b1c754c2cbaa70ad113448115a284afd04ca51928db115430531618ce9",
+      "source_id": "src_33168a2b47e25292a4d8e083804b62eb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.md"
+    },
+    {
+      "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+      "git_sha": "72480d036841f5a3c7bca9c9938ccaf882153aa4",
+      "lines": 311,
+      "path": "README.zh.md",
+      "repository": "magiccube/helixent",
+      "sha256": "903b4f3352ba3c87b17d80c08ed9fd8a725aef23d05c63fef5688fa796a60eff",
+      "source_id": "src_b5f05493d3fb513aac2b1b6f0d161fee",
+      "stored": "readme.zh.md-b024066e6d62.md",
+      "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/README.zh.md"
+    },
+    {
+      "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+      "git_sha": "ebda995143b4aa0c8477347866f7bb3fb1952ca5",
+      "lines": 111,
+      "path": "docs/bun.md",
+      "repository": "magiccube/helixent",
+      "sha256": "1f39d317f2417649a7a29a1f98a220be0cdce47fa3f896c4fa565eaee9f150cf",
+      "source_id": "src_2fc7cd2d407b5e3daab22dded3fa2e8b",
+      "stored": "bun.md-34fd0f59da71.md",
+      "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/bun.md"
+    },
+    {
+      "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+      "git_sha": "e55a7b733f3985f21af07371c85bd206a1bd76ec",
+      "lines": 101,
+      "path": "docs/code-convention.md",
+      "repository": "magiccube/helixent",
+      "sha256": "8e3efa8addd803ca14f54e3059314fb5887e54936a27e02bcb00060a0bed9dbf",
+      "source_id": "src_42ecbf7ebe8651c3a22a37c96b76109d",
+      "stored": "code-convention.md-e0e618b35422.md",
+      "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/code-convention.md"
+    },
+    {
+      "commit": "5cc1fb3faf29b8db8dce614e925c89030ae2558b",
+      "git_sha": "f148b8c00636c443425e165e5c053d2fe421342f",
+      "lines": 84,
+      "path": "docs/foundation.md",
+      "repository": "magiccube/helixent",
+      "sha256": "1622f48e3065f6242b8af8ecc6ac0beab598856254c0eba99fcef147eae1302b",
+      "source_id": "src_5a22b9b3ced4527194dc27e753d9ef38",
+      "stored": "foundation.md-162438542cd0.md",
+      "url": "https://github.com/MagicCube/helixent/blob/5cc1fb3faf29b8db8dce614e925c89030ae2558b/docs/foundation.md"
+    }
+  ],
+  "summary": "Helixent is a TypeScript/Bun coding-agent product comprising a ReAct-style agent loop with middleware, a coding agent layer with developer tools and skills, and a TUI CLI, published as the npm package 'helixent'. Evidence is documentation-based (README and docs/), with no code-inspected slices supplied. Evidence coverage: 160 of 217 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

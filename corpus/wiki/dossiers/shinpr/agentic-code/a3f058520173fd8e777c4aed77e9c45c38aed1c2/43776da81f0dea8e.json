@@ -1,0 +1,580 @@
+{
+  "applied_operation_id": "op_c5960bdf64bb48d3a74f2944dcddaf85",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b33a47b64c8836d7cfcedd04334edf1e0709f31a18c91aa990b6a9da9bb1dfa2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 21,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L15-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fdca809fb7b6321bcb009a57a8bbe4c0b2a3e6f402a983e45f74fe983e311647"
+      ],
+      "text": "The package ships an AGENTS.md entry point plus .agents directories for tasks, workflows, skills, and context-maps mapping tasks to skills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02f5fd2c253e825e0a8aa44d8a1b96febc49c05efaae643680fe09485b17989e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L23-L23"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 29,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L25-L29"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a22746d3913f58a4c0fb3c3eb71f7aa23db4d4f8c976c3f5ce702300258e21c",
+        "slc_4733abcbf220e602e8a96a5309b4bdeb9187249243a8e1d1ec3b6f26666f90d8",
+        "slc_796f12927861cfa36c33ecbbe0ef32a5b73e6262c5d42f39f15bb6950a47d128"
+      ],
+      "text": "Work routing is based on decision burden rather than file count: Small work runs directly, Medium requires design and a work plan, Large requires a PRD with separate design decisions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee74d541f0ff2c4eb3ed33185826a9450349a6549f9bcf7b77eac6bbd78662eb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 140,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L138-L140"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L120-L120"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L114-L114"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L130-L130"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 42,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L39-L42"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 124,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L123-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0de50f6496dcd2fe8e4629d8bc1a7b44dafe0a5fe3c7f68d367ab7a52ba2e2a1",
+        "slc_27d967b9eebfa2498c47e55b9cc123d5e33318c41a9a9316e0db090ff79e828f",
+        "slc_68c25d9d1936f370587b34df773ab4af133317bf674f565b485dd3ed0a8b2c44",
+        "slc_785e38dcdafa69500d0d2bfaf64b0ebc506880f7c410c8664ae959029d35648d",
+        "slc_7dc5188713f1155ec06f572020a1d8b6011f8654c60d93fc6a5eb7e5825528e0",
+        "slc_d42b40a625d5077c45e1614ca033de3b3f0cf8ad1fa4142b3950d037ca2ab6d3"
+      ],
+      "text": "The CLI is invoked as npx agentic-code with a project name to scaffold a repository, and a skills subcommand supporting --codex, --cursor, --project, and --path options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da31861f806aa9555077f0478e224a7048ad3050780a9c5f08fa20b942433fac",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L114-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68c25d9d1936f370587b34df773ab4af133317bf674f565b485dd3ed0a8b2c44"
+      ],
+      "text": "The skills subcommand installs only .agents/skills/ and does not install the full AGENTS.md workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf72b2dbd166de8a4b2adec7a290147922ff4675f9b97dd1991126d7e1a83d26",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L89-L89"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 102,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L91-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05cd97e4a61a99c91043b4c27df0c8ad4428c49b9d114a4d3b0fa42110db7a59",
+        "slc_162408a060852afd1d9376156149c91dd45c98134d3494c7a9b96ced56e494c8"
+      ],
+      "text": "Defined tasks include task-analysis, prd-creation, technical-design, acceptance-test-generation, work-planning, implementation, quality-assurance, code-review, technical-document-review, and integration-test-review, each owning one kind of result."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d325936df5b0a2204e2f97f3534c69b2d7ed42415d4d04f8db8c6a703cccfc20",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L106-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5367c5ef08be47624119d2994aacc5b5b7edd298a7666fe29d44e64fa721dd64"
+      ],
+      "text": "A workflow file, .agents/workflows/agentic-coding.md, coordinates Medium/Large work across requirements, design, planning, implementation, QA, and review while preserving the approved outcome."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b825dc8e3ed9bbf076d2fe22a1588f596b5baaf8223e691b1c703c0684f5a4e",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L110-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ba55b7807b92d7f1617c9fb07abceb21387464e92716bf7bf24a72bf1a84113"
+      ],
+      "text": "Skills hold reusable judgment for coding, testing, documentation, implementation strategy, and metacognition, and are loaded only when a selected task needs them rather than at startup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7273e45d6be4e3b40fa1d09d146ea6cee2a296c5d7239522b38575eff827689",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c3f9c5bacc9fafc54bf0dc8f6ed2f4bc9e8f1b8a7192cbbec2ed2197b89bd07"
+      ],
+      "text": "The tool requires Node.js 22 or later, per the Quick Start section."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c52a90e4d63c359feaa94f4c7c34fffbc0c3531d060dad71d8c88c6e2d5cb8ec",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 26,
+          "line_start": 25,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L25-L26"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L18-L19"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5889cb9a7db4474893d2d4f4a468330b0c62b6d4c8b32de0d1fda8c85d38fdc2",
+        "slc_92cfa5fd01f15185b63baba815d794a355a136fae6b8f0287268d6e3815321bc",
+        "slc_a5fc19c28505822c214b7b9ecc077d09781408c39a8a178e53b593c46184c100"
+      ],
+      "text": "Repository development practice: the installed AGENTS.md instructs the agent to inspect project structure, load the metacognition skill for the session, and route requests through task-analysis or direct execution before loading task definitions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b6c0343738355956eaaf67a877742cfb739e3ce720fb152d79a581e1258fe02",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 85,
+          "line_start": 82,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L82-L85"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35e35ec7025f8b473c574d0504b4043479f65339223727907c90c663babcd7d9",
+        "slc_a6dd7d9b0dd80877d678d1e70366913a100f269a1c4a98bc38df54e771099031"
+      ],
+      "text": "Repository development practice: before completion the agent must confirm outcome and exit conditions, run applicable repository checks, record verification evidence and remaining limitations, and update affected documentation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_387ce9b27fceff70365e2f48e32a6c33eba90226dce597c29137528f0e6486ec",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L76-L76"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 74,
+          "line_start": 72,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L72-L74"
+        },
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "AGENTS.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49015b4d027737a1aced61c0ea8b01fcbe2e0b56aefbeea7e6d0e7514ffa8dde",
+        "slc_748358c1b45296a72ad1b7c5cc166035e71ea95f7be213257ee9ef694e937b3d",
+        "slc_8eca94bdf1f283c942a836ab5a53ed796bc66c3646b117b30c50e14426e6d50c"
+      ],
+      "text": "Repository development practice: review findings are treated as candidates to apply, decline, or return for user decision, and a repeated preference without new evidence does not block progress."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a51b632c4c0307e4d78e93045120506aa215ebda0ac0a805e32ed4107a8792ce",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 170,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L170-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f8763b524986b9c5387fef156d6717e4292b0b44fa3de46c7a2b25503093282"
+      ],
+      "text": "The framework adds process and context overhead, so direct agent execution is usually cheaper for well-scoped fixes, disposable experiments, or one-shot scripts with clear safe boundaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_940dff58a86bc5f6ae54f44aa4fe75d95ee06bd0a8ab380df4e5ee377f8452c5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 174,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L174-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7b6511dd34a37560b1582dc98f72bb32bfd2497113001279add460922c508da"
+      ],
+      "text": "The core is language-agnostic but TypeScript-specific references are included; other languages rely on repository-native commands until language-specific guidance is added."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_828fce4a09620854a69b2f42493983cf37b2e73f7cb02c9a1a142caab89be8df",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L146-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9aa9d3b27dcee4a23e0c0f8a5d3a90fccfef8482bd9da45ded2b58b68fb95748"
+      ],
+      "text": "The workflow targets tools that read repository-level AGENTS.md instructions, with Cursor, Codex CLI, and Gemini CLI cited as common examples, and exact discovery behavior depends on tool version."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1940a2f98617d0f6b71bd0a0ae9310b26ebb10fedeac57b20bdb6e9f35c5a7be",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+          "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "shinpr/agentic-code",
+          "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d809e07b4ea1aa2ee87fc0c8769b4ccfe3a8a9aded98836ba9e16adb3c968a41"
+      ],
+      "text": "The workflow is strict about requirements, user authority, irreversible actions, accepted durable decisions, and completion evidence, while letting the agent resolve reversible repository-local choices itself."
+    }
+  ],
+  "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 187,
+        "path": "README.md",
+        "size": 8001
+      },
+      {
+        "lines": 92,
+        "path": "AGENTS.md",
+        "size": 4090
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 30,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_55be615361f856ddaef2730d481bc07d",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/shinpr/agentic-code/a3f058520173fd8e777c4aed77e9c45c38aed1c2/43776da81f0dea8e/manifest.json",
+  "package_id": "pkg_4918334fef36dcd75a4396d734dbfee02e35ca50fa2498be89d519725aa70e74",
+  "repo": "shinpr/agentic-code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3dd4a75f1713ba8989252c0d38218ca3ca513d5da5def9c40348d438374f6555",
+  "snapshot_id": "43776da81f0dea8e",
+  "sources": [
+    {
+      "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+      "git_sha": "6a40c9027dce39605da70aa8b793ab46cbedc82c",
+      "lines": 92,
+      "path": "AGENTS.md",
+      "repository": "shinpr/agentic-code",
+      "sha256": "5c2c951121f7ca1d7e90701b9f5b983c29ca70b765afba01e2dce1ba1292069b",
+      "source_id": "src_c49ae7cee76254cf84308d649a4eb62b",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/AGENTS.md"
+    },
+    {
+      "commit": "a3f058520173fd8e777c4aed77e9c45c38aed1c2",
+      "git_sha": "82b6489d00d1a40bd6a7ee3b040b7a194ca13fe2",
+      "lines": 187,
+      "path": "README.md",
+      "repository": "shinpr/agentic-code",
+      "sha256": "295d771fc3e257e3a3c42376442ad98a2da90165a2cff6e577004820092b22e0",
+      "source_id": "src_cc7ad8ffcefc5c52a494a009f2725925",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/shinpr/agentic-code/blob/a3f058520173fd8e777c4aed77e9c45c38aed1c2/README.md"
+    }
+  ],
+  "summary": "The package ships an AGENTS.md entry point plus .agents directories for tasks, workflows, skills, and context-maps mapping tasks to skills. Work routing is based on decision burden rather than file count: Small work runs directly, Medium requires design and a work plan, Large requires a PRD with separate design decisions.",
+  "superseded_claim_ids": []
+}

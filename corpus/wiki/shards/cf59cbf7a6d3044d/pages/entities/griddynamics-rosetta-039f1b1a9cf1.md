@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_4eb01200602bd0e1f31189d1da89bd20e620773886f1a0a20ca864cefea21175
+- clm_6df9278939c44de68587a51f6d4f3e1e51da591d07473526e15f3d36075116b8
+- clm_801d1a7de3c9093fa3d5dc2857605f65e439d2856b962b96f5f81e603f76439d
+- clm_83cd58f2a34483b2f8c557ce05f0c1d819ec98f33ba11c394c355e8823c67526
+- clm_8eade8d12226e253020c6117624af82638cf535978585b125b1f0afac9857104
+- clm_b8e736c78a091225ca6f5ec0caf31190ab3acb491641e0786abfcc237d32f060
+- clm_c374efadca4a55f60dd11be885721d7ab3de18810307d689ba084426a5ea9374
+- clm_c6fe0744f03e81c52accf3c047284a1720707030b557ba38f6d1e5a3bb11ea92
+- clm_cd44f61b7d1232ecee8acc0671a1f022c219fbc0d9fb2936a49ef67494275bca
+- clm_e248fed1616b582fa63f6bcefac6f56e9cedade7d0bb0afbe22af57814afac4f
+- clm_eef3808ac163ac4403de73bf68064633c76426344aeb8884abd6190b40ae485e
+- clm_f7623ff1a657804b23de4140cfd0613403ef9063d2b6551373647c6fbb6130a1
+maturity: draft
+page_id: pg_eefafeb5b8f25ddba1b9039f1b1a9cf1
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: griddynamics/rosetta
+updated_at: '2026-09-14T03:54:35Z'
+---
+
+# griddynamics/rosetta
+
+<!-- rcw:begin owner=entity:ent_5523fdf54c245f11a6a6609505c24ed5 block=evidence -->
+- griddynamics/rosetta is mentioned in this evidence. [@claim:clm_4eb01200602bd0e1f31189d1da89bd20e620773886f1a0a20ca864cefea21175] [@claim:clm_6df9278939c44de68587a51f6d4f3e1e51da591d07473526e15f3d36075116b8] [@claim:clm_801d1a7de3c9093fa3d5dc2857605f65e439d2856b962b96f5f81e603f76439d] [@claim:clm_83cd58f2a34483b2f8c557ce05f0c1d819ec98f33ba11c394c355e8823c67526] [@claim:clm_8eade8d12226e253020c6117624af82638cf535978585b125b1f0afac9857104] [@claim:clm_b8e736c78a091225ca6f5ec0caf31190ab3acb491641e0786abfcc237d32f060] [@claim:clm_c374efadca4a55f60dd11be885721d7ab3de18810307d689ba084426a5ea9374] [@claim:clm_c6fe0744f03e81c52accf3c047284a1720707030b557ba38f6d1e5a3bb11ea92] [@claim:clm_cd44f61b7d1232ecee8acc0671a1f022c219fbc0d9fb2936a49ef67494275bca] [@claim:clm_e248fed1616b582fa63f6bcefac6f56e9cedade7d0bb0afbe22af57814afac4f] [@claim:clm_eef3808ac163ac4403de73bf68064633c76426344aeb8884abd6190b40ae485e] [@claim:clm_f7623ff1a657804b23de4140cfd0613403ef9063d2b6551373647c6fbb6130a1]
+<!-- rcw:end owner=entity:ent_5523fdf54c245f11a6a6609505c24ed5 block=evidence -->
+
+## Researcher notes
+

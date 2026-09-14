@@ -1,0 +1,817 @@
+{
+  "applied_operation_id": "op_0f837166a77e4254b223d0c0aed8c3a0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_49ed32724be8ced80e132fb169279f28b734da1360b23520722e1a067d0d9c43",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L91-L91"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 19,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L11-L19"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1243eac1498f99595ffba4c3c91f96442cd702c0db02c225f8fdbae9af123d5e",
+        "slc_c4aad59cbeb1894485404a30e42347ae78d48d014a4971cd12827a0b71b7372f",
+        "slc_d0d246dc11da4e6f156a1267bb4b906691820381f4aecff163197f56ead0affa"
+      ],
+      "text": "The project is a Python reimplementation of the Claude Code npm agent architecture, intended to run with local open-source models via an OpenAI-compatible API server, and is marked alpha status."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c848f1f5cfd100f5745b05a71118e1b0679739eb7b3f04b2088daa30a317b90",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 97,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L95-L97"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 298,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L293-L298"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd4d5c51a823383c30259460c7571e74c7cd9d3195189017445773011bf22319",
+        "slc_e09112d1278763833440ed765fffc1c24a65f6b9f605987b0fe70089b5cc6f12"
+      ],
+      "text": "The core agent runtime claims zero external dependencies, using only Python's standard library, and requires Python 3.10 or higher."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c500ca9edf6cdb55f280e288a1df0737c4a786b7eaa3f995694a973e39fc0592",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 814,
+          "line_start": 814,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L814-L814"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad3375253f695ab1c8ec058cd23722a467d66c71cca851829c0ece7568d30cb2"
+      ],
+      "text": "The bundled web GUI uses FastAPI and Uvicorn, which are installed automatically when the package is installed via pip; the core runtime itself remains dependency-free."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e03b5e10507be0f910a566f32a3592499a9077984518300204f443a6abadffcf",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 287,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L223-L287"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e02c4064ba4de07beb45c522e697960a02383599b19c731ae2b879d3221cdbc5"
+      ],
+      "text": "The src/ tree includes modules for the agent loop (agent_runtime.py), tool execution (agent_tools.py), prompt assembly (agent_prompting.py), context building, session state, slash commands, nested-agent management, an OpenAI-compatible streaming client, and plugin runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc501d1770064652a47c00c6461eae528180627b93237297fc124d8a9c8af849",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 487,
+          "line_start": 469,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L469-L487"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 665,
+          "line_start": 660,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L660-L665"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73f28bbbcb28f6f8e153bf3328cca94dd60939166766cdb3a2441a2dcb3dd0b7",
+        "slc_bc4dfff1c61832ebe4a80657062d6b64845c54f34dd9c26615584b74b8d86360"
+      ],
+      "text": "The CLI exposes commands such as agent, agent-chat, agent-bg/agent-ps/agent-logs/agent-kill for background sessions, agent-resume, agent-prompt, token-budget, and agents-create/update/delete, plus utility commands like summary, manifest, commands, and tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73abd09d3eae24df164486118329741a5528ebf7149116da8646032eeee4786d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 553,
+          "line_start": 553,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L553-L553"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 589,
+          "line_start": 555,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L555-L589"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_650ae1765e6fa85414f6cb729cc1722e253f9c7d21dba70dd9d990f642998d9d",
+        "slc_976affbcd76e9f0d197e258d0e61e9576f7d5fd7321133deff825ca899d7a9c3"
+      ],
+      "text": "Slash commands are handled locally before the model loop and include /help, /context, /token-budget, /mcp, /search, /remote, /account, /config, /plan, and /tasks, some with aliases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7358ceb516d9aa7947f5561e45ab94d18041cc7739557d51cc448a20cdb28fbd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 516,
+          "line_start": 502,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L502-L516"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_df705fc45c504e622c7f0ece6cb1866033535a267c2d3d1b94a80b122e27c210"
+      ],
+      "text": "CLI flags include --cwd, --model, --base-url, --allow-write, --allow-shell, --unsafe, --stream, --show-transcript, system-prompt override/append flags, and --add-dir for extra context directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ed82571ba63f94477dfc56eae68522e232af11a454cecbd9ce985a1fd08a57c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 884,
+          "line_start": 879,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L879-L884"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 877,
+          "line_start": 877,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L877-L877"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23fb04dc6e85d991edc9f596c1c334164c208c2563a00fd437c179da41ce56f9",
+        "slc_ccba1e3e061b417d68a03708f3b3e1eb14b2144f2e61b892783d614087e732de"
+      ],
+      "text": "The runtime uses a tiered permission system: read-only tools run by default, file writes require --allow-write, shell execution requires --allow-shell, and destructive shell operations require --unsafe."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0d7e17aa6885eeab207b7f3d003c51102202f1a660ec26310bf6fa100c0ae40",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 671,
+          "line_start": 671,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L671-L671"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 692,
+          "line_start": 673,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L673-L692"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50af2f8ee15843ac60ee2ed8cbc92f29109463a8b3d0f5e5dd6df5eb81bb79a7",
+        "slc_e660ffe1ca0d6d87328a8f79902c9b1764f8ef60c2c2ec668b347741eff190e9"
+      ],
+      "text": "Built-in tools include list_dir, read_file, write_file, edit_file, glob_search, grep_search, bash, web_fetch, web_search, tool_search, sleep, config/account/remote/MCP tools, and plan tools, each with a documented permission level."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a30e4f405acee7d4b67511af415b894718100738deb3caf02705a627adb8555",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 738,
+          "line_start": 734,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L734-L738"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 726,
+          "line_start": 726,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L726-L726"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d61a4e43c989e786cedb553d5f976fa7e7a924ac78159170b7542d5ffc8f002b",
+        "slc_dda9322df3d42793d7aa1877ecc2874b8ec0cdb342fbc795cb1bcef032c4c264"
+      ],
+      "text": "The agent supports nested delegation of subtasks to child agents with sequential and parallel execution, dependency-aware topological batching, child-session save/resume, and lineage tracking via an agent manager."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_962cc2f29218731e519f78452cdee8c4f3f3be860d05a27e87f0d95d75755310",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 841,
+          "line_start": 837,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L837-L841"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 820,
+          "line_start": 820,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L820-L820"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 833,
+          "line_start": 829,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L829-L833"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 849,
+          "line_start": 849,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L849-L849"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1260e814275ce4328cc2668e8104f9366d5d1742c50a5b575b639986f7e730c1",
+        "slc_36eb1632856202256ef19ae2c40d0e12b79f10eb91e9da7ac407fef3640654f8",
+        "slc_7ddc18e5aa9611de47b8c37b67a3297f91eb707a9c8dfcefe40329d4c25378de",
+        "slc_db5e58128d6823b7e0b484caed976f03df9b8f9e7925a39d8e509d0d2d5e6fbc"
+      ],
+      "text": "Each agent run automatically saves a resumable session under .port_sessions/agent, and agent-resume or agent-chat --resume-session-id continues from the saved transcript when run from the same directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3439f5afccb53b9741c278e9f1bdb7f9502888d179f34c36e4519aba28cd4445",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 205,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L156-L205"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 85,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L27-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49848e9c8264e62c36c24e19ad76c2dc657c3685a7b938a8d8b67a1ba4a15dbf",
+        "slc_ad154e93621617ec862a9f2b5d48b4e83a7be8d17a60e264141fd57def72b3b6"
+      ],
+      "text": "The runtime journals file edits with snapshot IDs and replays summaries on session resume, and performs context reduction via auto-snip, auto-compact, and reactive compaction on prompt-too-long errors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c22ee6215f0cb0c6400971b7b7c32809cfcc77d4b7e9ec8b6914905568f5449c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 607,
+          "line_start": 607,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L607-L607"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 602,
+          "line_start": 602,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L602-L602"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 605,
+          "line_start": 604,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L604-L605"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_48ff40fc440675045727fdba93f6a02a46eff77497def8618151a25c75b52929",
+        "slc_e1d3471ff5a833788f81963150da2ccc1aece8e25d97c826be44940aa1fcea58",
+        "slc_f103f11d6c26802a0ea0bce4995f2ca1112377b54c535dfecd5f22deea1a731d"
+      ],
+      "text": "Custom agent profiles are markdown files discovered from ./.claude/agents and ~/./.claude/agents, with project agents overriding user agents and user agents overriding built-ins on matching agent_type."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b8fd2aea85360a738384d01064ba470c340b1df8093e9d7a6ab025221652d2e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 406,
+          "line_start": 402,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L402-L406"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 381,
+          "line_start": 381,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L381-L381"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 327,
+          "line_start": 327,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L327-L327"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 354,
+          "line_start": 354,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L354-L354"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3812368cef3c92f2ad01485cb8aa37e130df705474308f701d5d577625ca6a55",
+        "slc_5c5df33870697b4fa8aa4deae3cb216fbf94c5025bf7feedd84213e2a840e231",
+        "slc_7cce6c516d4c1d5e103fa173c0f8ac26b0fe20d2febdfb3662dfd0ca0e8186b0",
+        "slc_af01ac9d76fd2df5692e0ccd2fb5edc5ca417500ae35175855a10c5d979f54ba"
+      ],
+      "text": "The runtime targets OpenAI-compatible chat-completions endpoints, so it can run against vLLM, Ollama, LiteLLM Proxy, or OpenRouter, configured via OPENAI_BASE_URL, OPENAI_API_KEY, and OPENAI_MODEL environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9947e82547faea7814776546f9488279bda00d83903c189a86a8af787dfb9670",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 752,
+          "line_start": 752,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L752-L752"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 791,
+          "line_start": 791,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L791-L791"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 750,
+          "line_start": 748,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L748-L750"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 802,
+          "line_start": 795,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L795-L802"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_288df4e03e459016abbd9502386e3cca14a63c25c290da06d7e0be013f897bc2",
+        "slc_891709c7bc2d763e6cfe105887c0915c8a7d5b000a2b20864d4c59e4a2d671cb",
+        "slc_9d95a9dd1eb74965766bf5b269549cfc75ba034f98e42a7618ce5940dc5d99e4",
+        "slc_a68f0dc736c9da34c05f8b777c9bd438e6497080c559bdc875b5175177497e4c"
+      ],
+      "text": "A local browser GUI launched via python -m src.gui serves a dark-themed chat UI at 127.0.0.1:8765 by default, with sessions sidebar, slash-command palette, live settings, budget editing, and a Tasks tab backed by .port_sessions/task_runtime.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_09276ae26e1a9f6b2d425d0f21e265b2714005739d7c7b9445fa82fd1bd14ef0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 859,
+          "line_start": 857,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L857-L859"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 855,
+          "line_start": 855,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L855-L855"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 871,
+          "line_start": 871,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L871-L871"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38f1ac1959ed3d79bc9b895d995cc687fb198c8252c588499b09cefc1243e92b",
+        "slc_aca69d65a0b2f782514013674d40e2305c5aaa4d4d340fd673ba1a8dccf76c49",
+        "slc_cf986633ab9887b5dfd58d87e64ce30369a6a5b033e30c5ebeffcccce782b864"
+      ],
+      "text": "Repository development practice: the README instructs running the full test suite with 'python3 -m unittest discover -s tests -v', and points to TESTING_GUIDE.md for step-by-step feature verification commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8e0574876e0254f123f26ac2881dcc17bd6f5242d0fa0b2eb45ca7fe446f1ad",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 217,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L209-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f08717574fa89cbea482ea32bac36ff1753bf8e60be7c8833dca8a46c7c4c85"
+      ],
+      "text": "The README lists in-progress work including full MCP parity beyond stdio transport, full slash-command and REPL/TUI parity, hooks parity, real remote transport, voice/VIM modes, and editor integrations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_98b5a747dba0c757eab9a49ce7d7835ad715ef45cedfef9f4c8d0aed8419f91b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "1bd102ce3c8ccdb113d7e7a814b1721e9ef09ec3",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "PARITY_CHECKLIST.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/PARITY_CHECKLIST.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37357a086c4038c2b28a978b7c17d7c4dc4d7218df03b5aff030f5b7e383e5d8"
+      ],
+      "text": "The parity checklist states that large parts of the mirrored Python workspace still act as inventory or scaffolding, with the working runtime concentrated in a subset of src modules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8fe274e968ca44742149f041559556a60c87fb6c0b0b9e87d290caed704527a3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 396,
+          "line_start": 393,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L393-L396"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_577ab93c0396cbdb82904cbcba8a7ca5ff6bee0f2650b5df78a32aac0ac72702"
+      ],
+      "text": "Using the OpenRouter backend sends conversation content, including file contents and shell output, to OpenRouter and upstream providers, so the docs warn against using it with repos containing secrets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27df6666ccd0f7ebc90a4f0045db98cfa00fdfe72f60bd45da6584394ac1a0f7",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 152,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L149-L152"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 855,
+          "line_start": 855,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L855-L855"
+        },
+        {
+          "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+          "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+          "line_end": 871,
+          "line_start": 871,
+          "path": "README.md",
+          "repository": "harnesslab/claw-code-agent",
+          "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md#L871-L871"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4540f480d9ea056d9b0010932c6e6234a32f4a3980d4d2b779defedef863618f",
+        "slc_aca69d65a0b2f782514013674d40e2305c5aaa4d4d340fd673ba1a8dccf76c49",
+        "slc_cf986633ab9887b5dfd58d87e64ce30369a6a5b033e30c5ebeffcccce782b864"
+      ],
+      "text": "No evidence in the provided slices describes benchmark or success-rate evaluation of the agent's task performance; the testing material shown covers manual verification commands and a unit-test suite, so evaluation capability appears undocumented here."
+    }
+  ],
+  "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 906,
+        "path": "README.md",
+        "size": 48278
+      },
+      {
+        "lines": 843,
+        "path": "PARITY_CHECKLIST.md",
+        "size": 45733
+      },
+      {
+        "lines": 65,
+        "path": "CLAUDE.md",
+        "size": 2356
+      }
+    ],
+    "omitted": [
+      {
+        "path": "TESTING_GUIDE.md",
+        "reason": "byte-budget",
+        "size": 48647
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 218,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": false,
+      "omitted": 1,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_83dbefc16a8d5b6d93a4c18dc8952edc",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 4,
+    "limitations": 3,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/harnesslab/claw-code-agent/167571da895b2a1a9e36ecfae2876984cef65e0d/76b0b0a684f15cec/manifest.json",
+  "package_id": "pkg_d8552c6bbfd621b7a82ea98532f6a9d97aa2e3b01679e31b8004ee680b4d0ce8",
+  "repo": "harnesslab/claw-code-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c93540a9f843269b45fd70e0ae1f941d974ac6806b203045fa60448d8054cec1",
+  "snapshot_id": "76b0b0a684f15cec",
+  "sources": [
+    {
+      "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+      "git_sha": "ca1043e503513ddd39ef1208064513f9cfef9d19",
+      "lines": 65,
+      "path": "CLAUDE.md",
+      "repository": "harnesslab/claw-code-agent",
+      "sha256": "35a0f66a6531e61b35dc7288884da35eeef79ad1039f5ffdfd29295cee8d566e",
+      "source_id": "src_ee39fbded04e5b98b12705ffd42746bd",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/CLAUDE.md"
+    },
+    {
+      "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+      "git_sha": "1bd102ce3c8ccdb113d7e7a814b1721e9ef09ec3",
+      "lines": 843,
+      "path": "PARITY_CHECKLIST.md",
+      "repository": "harnesslab/claw-code-agent",
+      "sha256": "6fe44a0a20296d6e803141536de1e8831e84b70ed4719eba95059bd18abc7176",
+      "source_id": "src_df0b0e7dce955ca8b067b22177d2c60b",
+      "stored": "parity_checklist.md-5cdbc35caa53.md",
+      "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/PARITY_CHECKLIST.md"
+    },
+    {
+      "commit": "167571da895b2a1a9e36ecfae2876984cef65e0d",
+      "git_sha": "50613d3ddce021ba10335d5bb66ac07a63d239fc",
+      "lines": 906,
+      "path": "README.md",
+      "repository": "harnesslab/claw-code-agent",
+      "sha256": "4acf653a307360c854dd7be9caaa77709dd5cfd766d932eff3938c06cefd9ee8",
+      "source_id": "src_4d39afdf29635e9fbfa9f7b3eb7a2a1a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/HarnessLab/claw-code-agent/blob/167571da895b2a1a9e36ecfae2876984cef65e0d/README.md"
+    }
+  ],
+  "summary": "README and parity-checklist evidence describe Claw Code Agent, a Python reimplementation of the Claude Code agent architecture that runs against OpenAI-compatible model servers with zero core dependencies, a tiered permission system, plugin/nested-agent runtimes, and session persistence. Evidence is documentation-only; no source code slices are present. Evidence coverage: 144 of 236 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

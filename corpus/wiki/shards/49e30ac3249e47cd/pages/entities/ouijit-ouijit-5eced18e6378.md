@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_234cd870d6aac9a32aa5fda069a89c61d690432fcd2d258115840bf8f9d0bad7
+- clm_270c260c280bd20f06162d692613176d1a8e56665778f643c12b5e6a57eb9c75
+- clm_5bab2cc5a333c8b903f90830f338ddf4120029d06ab19c3b5146b7f43dd22a08
+- clm_5f894fe31fd20819adc5d4991dd48df00cd55b4ec4294797c35a2963756ceaff
+- clm_64406e474e733694ef6b6da5a3d40c5f6edd12499e028256183f06f94f8727b6
+- clm_71f73c843a2d483520389ce9d9367ae6786f45fe35cd7726c45c01135a4956f0
+- clm_7b8457e7f488730e822425c84f102b052d97ab59acf8fe44ee96d9dc63e7d25e
+- clm_8a85cf2bcf2aadd90fbe7a07e04d205da3e44c728452a2d3cdba0e5086a94932
+- clm_a2ffbd6fb77fddc94805bfe8e48e5e01bdb12b837d5cefc5686ed4a93d1120c9
+- clm_a898bebb64a0aad82979737d442811239b0cda75bffbb7a81493f1732d499b12
+maturity: draft
+page_id: pg_2742f1d1193a5e549b3f5eced18e6378
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: ouijit/ouijit
+updated_at: '2026-09-14T03:11:37Z'
+---
+
+# ouijit/ouijit
+
+<!-- rcw:begin owner=entity:ent_c02eabaefe4250558ca659cdbb71029f block=evidence -->
+- ouijit/ouijit is mentioned in this evidence. [@claim:clm_234cd870d6aac9a32aa5fda069a89c61d690432fcd2d258115840bf8f9d0bad7] [@claim:clm_270c260c280bd20f06162d692613176d1a8e56665778f643c12b5e6a57eb9c75] [@claim:clm_5bab2cc5a333c8b903f90830f338ddf4120029d06ab19c3b5146b7f43dd22a08] [@claim:clm_5f894fe31fd20819adc5d4991dd48df00cd55b4ec4294797c35a2963756ceaff] [@claim:clm_64406e474e733694ef6b6da5a3d40c5f6edd12499e028256183f06f94f8727b6] [@claim:clm_71f73c843a2d483520389ce9d9367ae6786f45fe35cd7726c45c01135a4956f0] [@claim:clm_7b8457e7f488730e822425c84f102b052d97ab59acf8fe44ee96d9dc63e7d25e] [@claim:clm_8a85cf2bcf2aadd90fbe7a07e04d205da3e44c728452a2d3cdba0e5086a94932] [@claim:clm_a2ffbd6fb77fddc94805bfe8e48e5e01bdb12b837d5cefc5686ed4a93d1120c9] [@claim:clm_a898bebb64a0aad82979737d442811239b0cda75bffbb7a81493f1732d499b12]
+<!-- rcw:end owner=entity:ent_c02eabaefe4250558ca659cdbb71029f block=evidence -->
+
+## Researcher notes
+

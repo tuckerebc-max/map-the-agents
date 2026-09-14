@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1c21cb6e16de6c98bffd03a5bacee83ebb995cd1367701fc65ecb8807dbbf5c3
+- clm_20cf0afd1bfc4fbfa799056a44053e60c1ad0c62da330a877eb445ace790d2ed
+- clm_4ac7621e362e7ff4a6a5eaa471539192141fd7f2d8c224814b79729ccfbf7448
+- clm_52f744dcb896bdb82625534c942f6a7320cc5677be56c04fbb8d0b68b5776252
+- clm_7470a553d2958b5c1989a003d9ebff2ee12c2ab84ae770dc2593dbcacde1fcf5
+- clm_7579999285389999537281730cc0a3fe6ef67362161033c0032b571d2eb7cb78
+- clm_7ccdf33d506a3508ca4925ede4604280a7f8cae461bb8f01c7a5879cbcb880ab
+- clm_b0cd2e8c122e601bf592a9351e866f9f379e5e2c585889bc9ed34600889af803
+- clm_c51554f832154dc9ec002117528db5497c86f528de2a0c23195766dc20bd08b1
+- clm_caa1e9c43fbcf3d467be6d59e5648a07cfc0d73779707ab8f83efa73f16a1425
+maturity: draft
+page_id: pg_3966df10577a5a43ac52a555435b5f1c
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: vivekhaldar/seed
+updated_at: '2026-09-14T05:05:12Z'
+---
+
+# vivekhaldar/seed
+
+<!-- rcw:begin owner=entity:ent_f1b7de7f63905d078fcc3f0466a92835 block=evidence -->
+- vivekhaldar/seed is mentioned in this evidence. [@claim:clm_1c21cb6e16de6c98bffd03a5bacee83ebb995cd1367701fc65ecb8807dbbf5c3] [@claim:clm_20cf0afd1bfc4fbfa799056a44053e60c1ad0c62da330a877eb445ace790d2ed] [@claim:clm_4ac7621e362e7ff4a6a5eaa471539192141fd7f2d8c224814b79729ccfbf7448] [@claim:clm_52f744dcb896bdb82625534c942f6a7320cc5677be56c04fbb8d0b68b5776252] [@claim:clm_7470a553d2958b5c1989a003d9ebff2ee12c2ab84ae770dc2593dbcacde1fcf5] [@claim:clm_7579999285389999537281730cc0a3fe6ef67362161033c0032b571d2eb7cb78] [@claim:clm_7ccdf33d506a3508ca4925ede4604280a7f8cae461bb8f01c7a5879cbcb880ab] [@claim:clm_b0cd2e8c122e601bf592a9351e866f9f379e5e2c585889bc9ed34600889af803] [@claim:clm_c51554f832154dc9ec002117528db5497c86f528de2a0c23195766dc20bd08b1] [@claim:clm_caa1e9c43fbcf3d467be6d59e5648a07cfc0d73779707ab8f83efa73f16a1425]
+<!-- rcw:end owner=entity:ent_f1b7de7f63905d078fcc3f0466a92835 block=evidence -->
+
+## Researcher notes
+

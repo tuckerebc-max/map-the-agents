@@ -1,0 +1,596 @@
+{
+  "applied_operation_id": "op_a524d100cdee46bc9d0e6a70073be399",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_068019eb27bee991cf8ead377e1c05a04b8c701f520f710b23b4e3c881a0df57",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L5-L5"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 34,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L29-L34"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e6706fbbc6424225cd0770350bbacda43ed58897e87db2208f7bb071ebe2a86",
+        "slc_9e1e08a46528e2d12e93fa59f7bcc1ec5dc6d7dc42d9e1f00540e4c7eb33c24d",
+        "slc_a0926d7e2bda3d21acdc7e0be995eabaa11ae6d3565565835f5097d3b8621559"
+      ],
+      "text": "The project is positioned as a local-first personal AI assistant stack that reuses the user's existing coding agent, browser sessions, desktop apps, and permissions, explicitly avoiding new company-wide platforms, Slack apps, webhooks, or IT approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b1dbd2ca5dfce865a0c23e8472d8e1e88b70d723c388d6f9d7b6b936ccae5d8b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 159,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L147-L159"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6bec114f3a88ab2f1a5b379b140e61236880e54e9ebbfea2fa13baec96df2c6"
+      ],
+      "text": "The repository is organized into tool_connections/, triggers/, runtime/, workflows/, tests/, .cursor/skills/, .claude/skills/, and staging/, plus setup guides such as setup.md, add-new-tool.md, and setup-python.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_701d4f4cf6e92d869a0fbe8a1a44bb64694ab3eef424c4a71f9da30d32056670",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 283,
+          "line_start": 281,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L281-L283"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 240,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L238-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0513554258d5b629352c6b55b997d4d982a0107acc864388eaa425433da7a64b",
+        "slc_c144b3432940debff9d764cbf0a1172c561ded383d11c6315c641eb28b6e972f"
+      ],
+      "text": "The runtime exposes a CLI entry point 10x-host that takes --trigger, --workflow, and --engine arguments, e.g. running a slack-polling trigger with the assistant workflow and the cursor engine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f3451b5fef5a21d4077c8ce5bb84ca8f4ab660e2e6e36ff4d435370789cac88",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 291,
+          "line_start": 289,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L289-L291"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 293,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L293-L293"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d27a38746f114a5c53403578061b066e28630dc33bf377b23b4b6e1fbcfef500",
+        "slc_e97eb32b34028d216579d55de06726203e04b83e3d71d7256648c8660ba275b6"
+      ],
+      "text": "A second CLI, 10x-standup-prep, supports a --meeting-context flag and a --dry-run mode; posting to Slack requires reviewing output first and setting TENX_STANDUP_PREP_SLACK_CHANNEL before using --post."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9950b4a60820e773f2ce4d51d2fabea10b1407ce6130d14c82b677d087cfff22",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 169,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L163-L169"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L171-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c6a3de396e5c31fd95de954647fadc0a13255819282d958e4ba6817f001fc85",
+        "slc_a96ed8b2e26846d6539c2efe8c560cbb5d2590a44ba3539d4e883b86f159e2dc"
+      ],
+      "text": "Private runtime state lives outside the repo by default under ~/.10xProductivity/ (.env tokens, personal/ recipes, verified_connections.md, tmp/ for trigger and scheduler state), overridable via the TENX_PRIVATE_DIR environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15d4cdd5398ecc3101971110c8412b4c42ec86980f9a209a15a30b39a14a89ee",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 222,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L218-L222"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 201,
+          "line_start": 201,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L201-L201"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 210,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L210-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e342e07e4c50dc0dc7064ff4d8e9499d3f981803c9961e5b25923d8005b6e19",
+        "slc_0f55ab909ba8d4f142eec2f4e5ae69a61d922bc4b11d3469ae3a2efbf3a7f4cb",
+        "slc_46adc171f933a1457ac3d03e384173dc588d00117aa450571867c7a4cb4af0f6"
+      ],
+      "text": "Setup requires a coding agent (Cursor, Claude Code, or Codex), a Python virtualenv with an editable dev install (pip install -e \".[dev]\"), and optionally Python/Playwright setup per setup-python.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_69aa9a134f225fb648805cabe845156d4f62a23851e72d3f0c06e007e8af48b3",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L197-L197"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e8abdbc306ece311d1b81bf1e34a2699af1c37a65e0607170c17f6e530237790"
+      ],
+      "text": "Packaged Cursor and Claude Code skills cover tool setup, enterprise search, workflow creation, UI surface discovery, colleague distillation, and an assistant inbox/orchestrator skill."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03da786cb1e986324876eeb3e75a1dd024f28e3b5322f9305e90dd8f763f0eb1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L131-L131"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L135-L135"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L139-L139"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L133-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73cc57b2e4060f6471040626c03b6fea64045544b9910d95517ed97708ca8230",
+        "slc_b60881005371c18a348eac5ae4f7748265b79281800cc127446c054f2ee7a2b7",
+        "slc_d6ac9ec2acfa4dd4d7f78fd105aa6ea6d6e5ad641592396c0427f96705be4d2d",
+        "slc_fe3e3471c3ea1c19851e25cb8bc7d642054274a2acc9474d13f57aed257ad125"
+      ],
+      "text": "The architecture separates a push layer (triggers that detect events via desktop/browser notifications, sessions, email, or polling and wake workflows) from a pull layer (tool connections that fetch context or act), with a thin local runtime handling polling, scheduling, state, dedupe, replies, and agent invocation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88fb1340656cfebd26cee1886e7ced6d0ab09ee1500cbc411cd840262b348812",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 175,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L175-L175"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 60,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L52-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50e8a2f8fec0d1fba1ad0b8429d08b680efc30c9950c43fde9a65c4dade2dd3a",
+        "slc_caef1e1db86f588473238c505a87c011d227b47ec1d19a7828b3ee91db2ea60c"
+      ],
+      "text": "Per the README's status table, tool connections, enterprise search, and agent skills are available today, while triggers, runtime, and reusable workflows are early; learning and memory (scheduled reflection, durable memory) are roadmap items not yet complete."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a0506b716647e182c956caf14563aa7d5fe90c48f15c39764eeca067066e6efd",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 345,
+          "line_start": 345,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L345-L345"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4dffb029d06fcfa03ea95b54b989c2e39d0c827c2f097b25b06b14e7a6494ded"
+      ],
+      "text": "The README warns that some workflows automate actions on external platforms in ways that may violate platform Terms of Service, and directs users to LEGAL_NOTICE.md before running automation scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88a1bd886750686b0b20c4df52c45a5556c140c89121d5076bf250fed9809725",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+          "line_end": 341,
+          "line_start": 341,
+          "path": "README.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md#L341-L341"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "37a4e626ffe1e2286b9d8655751a8f60f80842f9",
+          "line_end": 51,
+          "line_start": 44,
+          "path": "add-new-tool.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/add-new-tool.md#L44-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aebf8f32a0d0c8363043f5d30e2cff5341b0e94a41b07ef322dd3a34edd67c90",
+        "slc_c097184777cd813ffa2e4631132a3dac5c19cc2e694d62086b56c37b79cd0d71"
+      ],
+      "text": "Repository development practice: contributions follow a 'run before you write' rule — every snippet must be executed and seen to succeed — and new tool work starts in TENX_PRIVATE_DIR/personal/, never directly in tool_connections/, with promotion to the public repo only via staging/ and a PR after verification and scrubbing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1821159ea11e4e0b59af05346dfb84c37c2f7c038772322048bdd0a81470166c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "37a4e626ffe1e2286b9d8655751a8f60f80842f9",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "add-new-tool.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/add-new-tool.md#L113-L113"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "37a4e626ffe1e2286b9d8655751a8f60f80842f9",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "add-new-tool.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/add-new-tool.md#L82-L82"
+        },
+        {
+          "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+          "git_sha": "37a4e626ffe1e2286b9d8655751a8f60f80842f9",
+          "line_end": 94,
+          "line_start": 87,
+          "path": "add-new-tool.md",
+          "repository": "zhixiangluo/10xproductivity",
+          "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/add-new-tool.md#L87-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43dde317943db82ee989258d7184268b5cee3755eac3cad34ab4589c6a43309d",
+        "slc_45a57fded59a5adc4c360b0527aa4f278ec44e56442e62f6ec3add6446cf5b1b",
+        "slc_dac72c99fd8a9837ae453a69f84e37ca2f7cb9c3bcaff1a5e2ea4fb46b61b570"
+      ],
+      "text": "The connection philosophy prioritizes zero-friction auth: supported API tokens first, then Agent Browser over existing sessions; OAuth requiring the user to create their own app or register credentials is explicitly rejected."
+    }
+  ],
+  "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 349,
+        "path": "README.md",
+        "size": 20398
+      },
+      {
+        "lines": 486,
+        "path": "add-new-tool.md",
+        "size": 28165
+      },
+      {
+        "lines": 61,
+        "path": "LEGAL_NOTICE.md",
+        "size": 3092
+      },
+      {
+        "lines": 18,
+        "path": "requirements.txt",
+        "size": 305
+      },
+      {
+        "lines": 205,
+        "path": "setup-python.md",
+        "size": 8361
+      },
+      {
+        "lines": 262,
+        "path": "setup.md",
+        "size": 14028
+      }
+    ],
+    "omitted": [
+      {
+        "path": "verified_connections.example.md",
+        "reason": "file-budget",
+        "size": 2484
+      },
+      {
+        "path": "contributing.md",
+        "reason": "file-budget",
+        "size": 10059
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 159,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_fe00aac94f015293a0f22caf1cd0401f",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zhixiangluo/10xproductivity/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/cfc92ae293e2d435/manifest.json",
+  "package_id": "pkg_4bcab590a2c49abb760d00cd34db47e9e0eaec5b15034a19bd91fbb9cfa468d6",
+  "repo": "zhixiangluo/10xproductivity",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "bbaf617f7d4cc26f5250a87e23053a6d36fa2608b3df51402ac3e657c4f5f05f",
+  "snapshot_id": "cfc92ae293e2d435",
+  "sources": [
+    {
+      "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+      "git_sha": "e00f88de43206762783524065dd64b999559ed67",
+      "lines": 61,
+      "path": "LEGAL_NOTICE.md",
+      "repository": "zhixiangluo/10xproductivity",
+      "sha256": "ead0392e89d21ebf3573122ebe5aa2175b1ee103617333a60936b508cced05b3",
+      "source_id": "src_cdaafe084e1f5ef1a29786b12695b1c4",
+      "stored": "legal_notice.md-aea3c5ffcbb1.md",
+      "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/LEGAL_NOTICE.md"
+    },
+    {
+      "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+      "git_sha": "1766595828dbd684f2267a32df764aa58b7a020a",
+      "lines": 349,
+      "path": "README.md",
+      "repository": "zhixiangluo/10xproductivity",
+      "sha256": "09764bbeb478453eefab9c99ef69b08220bd0f2e52d858cf0491e06c2f38791e",
+      "source_id": "src_8b423c7f8e1e5eb09bfee65848222ffc",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/README.md"
+    },
+    {
+      "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+      "git_sha": "37a4e626ffe1e2286b9d8655751a8f60f80842f9",
+      "lines": 486,
+      "path": "add-new-tool.md",
+      "repository": "zhixiangluo/10xproductivity",
+      "sha256": "34c112d618514568186ffeca333aa8c15dcfa79bcc1699db57025ee5b2161703",
+      "source_id": "src_c068935bbab55ca4b80f4ee5db280e47",
+      "stored": "add-new-tool.md-1125861a09c1.md",
+      "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/add-new-tool.md"
+    },
+    {
+      "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+      "git_sha": "d408732e5e332c9bb06931da1900aff9d1291905",
+      "lines": 18,
+      "path": "requirements.txt",
+      "repository": "zhixiangluo/10xproductivity",
+      "sha256": "59e551a4cd2eabdacbbc499d1b0c7380152e34c0f28b89fcf2ceb39062ae5297",
+      "source_id": "src_20b2d376f2d25ed1be7e6f4bd7d80e94",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/requirements.txt"
+    },
+    {
+      "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+      "git_sha": "d840748748665b55f730d44cd7b0350f886d9c91",
+      "lines": 205,
+      "path": "setup-python.md",
+      "repository": "zhixiangluo/10xproductivity",
+      "sha256": "d936dcdebb94bcb27867fb487e060c67fc08017c26a16af7f234d1b4e9fc10cd",
+      "source_id": "src_420418cd9fc4591593ed0ab7c65d72da",
+      "stored": "setup-python.md-4c53037cdf93.md",
+      "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/setup-python.md"
+    },
+    {
+      "commit": "9a7da40bc798e4e3fe91b10770cf0fcc13cf0886",
+      "git_sha": "f8ed700158ee693978611e943d764bc095dd42c6",
+      "lines": 262,
+      "path": "setup.md",
+      "repository": "zhixiangluo/10xproductivity",
+      "sha256": "563210b12a88569b8746d6543359bf4b3ef3a31fe9012c4f0716acbaf2879aca",
+      "source_id": "src_f4b2ec112ba6593ca2cd3ab0edfd8c7c",
+      "stored": "setup.md-8101172204c3.md",
+      "url": "https://github.com/ZhixiangLuo/10xProductivity/blob/9a7da40bc798e4e3fe91b10770cf0fcc13cf0886/setup.md"
+    }
+  ],
+  "summary": "The README describes 10xProductivity as a local-first stack that turns existing coding agents (Cursor, Claude Code, Codex) into personal work assistants via tool connections, triggers, a thin local runtime, workflows, and packaged agent skills. Evidence is mostly documentation; the repo layout, CLI entry points, private-state directory, and contributor rules are documented but not code-inspected. Evidence coverage: 141 of 376 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

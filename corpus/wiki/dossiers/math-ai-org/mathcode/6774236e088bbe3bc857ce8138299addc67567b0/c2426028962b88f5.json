@@ -1,0 +1,789 @@
+{
+  "applied_operation_id": "op_c481623cd4d04cf196b4482999f34073",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae4567eea1d19515df83fa6163285c5ba8cb7c94d9dbe27a04f01306db303b30",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L18-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cdb68e87602fdf7f3ced3ce4763a5cf93613346c9a835f86e422c8d6706f6ca3"
+      ],
+      "text": "MathCode is described as a terminal AI coding assistant with built-in Lean capabilities: it can inspect goals, check candidates, search declarations, and verify finished proofs interactively."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2a829af71bc42ac8a5faff887d67dad11f4a0c7fc7d71a66c48739fe2653f46",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 162,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L158-L162"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 174,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L170-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c318ccc8501251f0b8f26f9601d033991e9e6195eb5755b01a548d3f4fe192b",
+        "slc_e5f5a4c73f2fb0e17bf3d9009ec0c1909df6a736eed218789aee8baf29191870"
+      ],
+      "text": "The CLI accepts a prompt flag (e.g. mathcode -p \"...\"), piped stdin, and --help; a bundle-local ./run wrapper provides the same interface before the shell profile is reloaded."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df2bf30dee16dcd7910358e7942106b61e5061f6148a3e7191912a0e8c45489c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 224,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L222-L224"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 220,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L215-L220"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b57b2059b31f97d4852722e8bb276a31a80ce4f361b7ddb5d6e794aa5cc34e1",
+        "slc_cc6ed3c7ac11bd590675bf1573a7e3385163f9ccf36a0a90770bc5eaffc52fa7"
+      ],
+      "text": "Interactive sessions support a /goal command with positional or --budget token budgets, optional --max-continuations, and pause/resume/status/clear subcommands; it continues the same session rather than spawning a new agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6dc894a9a2535a4f7bad1be32259a86d1868320fe56165fd3e62f56033a5842",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 186,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L185-L186"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 199,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L193-L199"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4daaa318f9692b6083ebf66ce3cc68a09039d50d0b27e73f07a23b336de000c2",
+        "slc_4fa3e8c757e9e9c13ed9a85af2ebbd5af10f11f01b9d972b2f8cff455fe46272"
+      ],
+      "text": "A browser UI is launched via ./run webui, which sources the bundle .env, starts a local daemon, and prints an authentication URL; an interactive /webui slash command supports --no-browser, --port, --status, and --stop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b73a519f35e996af821dbb7bb25e81bd540debf5b51563f0f54a0be5b2dcc6ed",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 442,
+          "line_start": 439,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L439-L442"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_316340e19253c50bf5816eb11c4726ac2ddcd33e537c8532aecc21ad059007aa"
+      ],
+      "text": "For Lean work the agent chooses among four atomic tools: LeanGoal (inspect a source position), LeanCheck (compile a file or candidate with structured feedback), LeanSearch (query one provider), and LeanVerify (strict final check; only data.verified=true certifies completion)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16e7d6fb4507877f4412c1efd259fae7e97201c1e596d767ebc86b560698fb8b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 455,
+          "line_start": 444,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L444-L455"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_753a7948f6df883c40e176ad09ee2bacc3b6678954521eac17d4c6bb09afb20e"
+      ],
+      "text": "The optional /lean skill gives guidance without imposing a fixed phase, tactic order, retry budget, or planner; former fixed controllers were removed and are not release entrypoints or model-visible tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca6467c88b1b25687d140bda5c2dee02e91be781a54c78f369ebcba5b185e75e",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 397,
+          "line_start": 384,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L384-L397"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03865952eb47c9ff1154ebb8f0013ade63ca3347d9842befb5215f23bb9c01d2"
+      ],
+      "text": "A theorem library is managed via /theorem-store: storing one fully qualified declaration triggers fresh strict verification and a rollback-capable transaction with separate 300-second build budgets for private compilation and public Lake publication."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e569c24415f791f921d3226ca31f57e0ce32cb343f2d3f03a41a431ea46e80c2",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 408,
+          "line_start": 403,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L403-L408"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 412,
+          "line_start": 410,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L410-L412"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1233a8e9203f2b1daba05b811386e84b2a2bba4913ba9f0db7b725a47196b1ac",
+        "slc_a4dc6ee873e339b414384f26624bbd8505a1fbe4e73e0c1168a2791a18b8e7f5"
+      ],
+      "text": "Conversational assumptions can be persisted as axioms per vault via /axiomatize (formalize, list, check consistency, remove); atomic Lean tool calls do not inject them implicitly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_46580308d9ae466a6e655fae7be441ce9e7986a8b3a03a4a8fdb4ce41c17b68e",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 477,
+          "line_start": 476,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L476-L477"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14f1efa923a07cfa05bfc887cc7c68d6508f81cc65698bd7ac47191c2febf0fb"
+      ],
+      "text": "Project-local skills load from .mathcode/skills/<name>/SKILL.md, one directory per skill; standalone skills/*.md files are not loaded."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_784106b7708c91951f16c013053caf22c28eca10ca38daf528f2f8849bbdc95a",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 486,
+          "line_start": 483,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L483-L486"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 481,
+          "line_start": 481,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L481-L481"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24658838e41b89f66286c9b1bac93aba3f8eed3593447af062708e9e1028cffe",
+        "slc_e0eca483fb91f12dddb469d2565a7dedf473654dc1d707e69de640b73fb0bd5a"
+      ],
+      "text": "Python tools with YAML frontmatter dropped in tools/ are auto-discovered at startup; three analysis tools ship bundled (axiom-checker, lib-search, proof-stats), overridable by workspace-local tools of the same name."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11e1298586aa4eaaef85a09fb9f9d4098bc5fea13889219c78d3c0faf996e212",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 490,
+          "line_start": 490,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L490-L490"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d15668cb55aacf6adcce681833a9572101660172d861c317c1d5ab8f0546133"
+      ],
+      "text": "Plugins are folders with a .mathcode-plugin/plugin.json manifest adding commands, skills, agents, MCP servers, and hooks, loaded via --plugin-dir or installed from Git repos via /plugin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dee41b134af1e0ff4b389db3fa36e01305479dfb401d6cbbf007685d0ecaddea",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 152,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L146-L152"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_acd144860eafed1bcd594ef7f8de1b449977df0872803cfc2977415ff68ab514"
+      ],
+      "text": "Requirements include macOS arm64 or glibc Linux x86_64 with AVX2, curl, shasum or sha256sum, the codex CLI for the default backend, and optionally Python 3.12+ for bundled analysis tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d2873a3483b172a13a3add20ab1c068cc6e764e85ca3df99c28e9597f952739",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 555,
+          "line_start": 551,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L551-L555"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02061685d5e6051225822c37e313839b99c2b7d88d532c3177e852bb743752a6"
+      ],
+      "text": "The release binary bundles provider SDKs for Anthropic-compatible, Bedrock, Vertex, and Foundry routes plus the MCPB/DXT plugin package, so those routes need no source checkout's node_modules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc1043b8c6422269c9c4548cdad9e50f01878be35c292560641f23a159f0b3eb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 94,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L77-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45fe26ca39ef04ef3eb2c3f29b845d204974dc562d528c3bea16d6872014a1d5"
+      ],
+      "text": "Lean support ships a versioned lean-workspace/lake-manifest.json that setup materializes without running lake update, using a bundle-local .local/elan Lean/Lake pair by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2a145acc942e6b35c9907456f3778bd10c91302fe3b8e867f93e3b1b0845fc4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 73,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L66-L73"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 62,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L52-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_efeb6e7faa33da89ad9f23ff4c74358867dc75230e8c7e69137fb89bc037aa8b",
+        "slc_fd815f29ae093ebd1246f76e4105edb20ae1cbf9a5030d8c18295b488c23f2b7"
+      ],
+      "text": "Repository development practice: setup.sh downloads or repairs the bundled runtime, verifies SHA256SUMS entries, creates .env from .env.example, installs a user-local launcher, and creates tools/, plugins/, and skills/ directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34718f504afd90a75753dad2fa8bbe234702988f35874672f19c047645e9683a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 130,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L125-L130"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 138,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L134-L138"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 142,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L140-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ceb97ac62a3ccde31cd1da63518921b24c1196f16d6b85814587000f9566a06",
+        "slc_3fe2f6892d7769c60f344d80bdf5c62d41d07ee946281c5242b02e2a69aff794",
+        "slc_cead74b775bb998127bb099d300764dcadd30e07e2185847a9f98fba8066e9b1"
+      ],
+      "text": "Repository development practice: maintenance commands include setup.sh --install-lean, --status (health checks on binaries, bundled rg, and Lean readiness), --clean (preserving LeanFormalizations/ and vault data), and --help."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0df00fa8420a5dbe0c53b59cb2f3f3c2533fc98ce09e4aa0e4b4ca4da815cea9",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 362,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L338-L362"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_886a0b67d8e225f7d8171e9dde757a5d61cba9c3cbd21dd7baac1f2347b3b096"
+      ],
+      "text": "When an external Kimina Lean Server is enabled, MathCode launches it loopback-only inside a fail-closed Lean sandbox with a random bearer key kept out of the Lean REPL environment, no provider credentials, and scratch-only writes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e00f2adf9881da73880712b6e5107c82617f8ee0660cee58b9beab456e8b628e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 466,
+          "line_start": 463,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L463-L466"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 459,
+          "line_start": 459,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L459-L459"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 468,
+          "line_start": 468,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L468-L468"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47f7632c991f1f3855b68f1afe5bd301c6c31d719a87ec1328a426157356a262",
+        "slc_5c1672e31963604fd75bc37f5248bd4cde28c6c6600e97469e8bd49b97d7db6f",
+        "slc_6472562050c5047f29f755371530787ce0d757e73b146053d0cb45c8e34587de"
+      ],
+      "text": "The CLI ships with recurring prompt scheduling enabled by default; /loop commands create short-lived loops, and durable schedules that survive restarts can be created from interactive sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f644fc95b618e71a0fd94de2159d1e7e5d0c056e632e90257e989ad8fcfb5cf4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 243,
+          "line_start": 239,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L239-L243"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3743fb2dadab51ef6c65cba6799ad09eecc156966bc327024186b6e5df35cd3e"
+      ],
+      "text": "Model effort is set via --effort or /effort with low, medium, high, max, or a positive integer; /effort auto and /effort unset return to the model default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11ded2815bfece942a0aa8dc86617c6dd9afcf7f4a983711aa1873547ce078e6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 507,
+          "line_start": 505,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L505-L507"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 516,
+          "line_start": 516,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L516-L516"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 519,
+          "line_start": 518,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L518-L519"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 514,
+          "line_start": 509,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L509-L514"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 523,
+          "line_start": 521,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L521-L523"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1deeee95e34fc4ee1baea599d3839a63c83ebec660938266b3a11dd47116476d",
+        "slc_37d2f0e5941b26c4277516921c2a0976693ab0536ca71480c56a22adfc6e1386",
+        "slc_665e7d5ceb861da5b08483b526e10cd44a1200a759c7596fd0608ac7256c1de5",
+        "slc_9afdcb90ff7393d6fd4a0d3d22ffcb171e31e6793653c6478d7d11bf3fc7adbc",
+        "slc_cc800e7c4b35dc6889034239ba7f3b3e63b357e45e3e7502ef512e10fe035efc"
+      ],
+      "text": "The default backend path uses Codex/OpenAI (GPT-6 Astra at medium effort per .env.example); an Anthropic-compatible backend can be selected with MATHCODE_USE_OPENAI=0 plus Anthropic credentials."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_516dc6e5b7d7b2b47e9e3723b5a1cb7140c3911c54d4fe2c2752722c9d77f482",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 199,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L193-L199"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4fa3e8c757e9e9c13ed9a85af2ebbd5af10f11f01b9d972b2f8cff455fe46272"
+      ],
+      "text": "In release bundles the /webui slash command's source-only --rebuild option is not available."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51bd3d3a8bfcb3323cef46408bc31d5cab69e5e1c75501a494fe2bc7c0f994e7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 547,
+          "line_start": 543,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L543-L547"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_388789fb3b340dda3b05dc85f5be687ae84461634f859e813d6dce8a2c40379c"
+      ],
+      "text": "WebUI provider-key rows are limited to anthropic and openrouter secrets; Codex/OpenAI routes use Codex OAuth rather than an OPENAI_API_KEY row."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ebe23ce3e4bab7d3d661c56156b00aa02f0180008a91c515d0151b8c5ee006b",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 613,
+          "line_start": 604,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L604-L613"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 94,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L77-L94"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 416,
+          "line_start": 416,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L416-L416"
+        },
+        {
+          "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+          "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+          "line_end": 375,
+          "line_start": 375,
+          "path": "README.md",
+          "repository": "math-ai-org/mathcode",
+          "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md#L375-L375"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28a7ec02a9d6e746621b9db145588a1999c472cce9e9a0cecf1e3b2734ff466a",
+        "slc_45fe26ca39ef04ef3eb2c3f29b845d204974dc562d528c3bea16d6872014a1d5",
+        "slc_7431582b5b550a4355f6eecbe392980ebdbda16df57ae954b8529fc2b929ec56",
+        "slc_a8812eb5b42ed9aa67f40bd4d1c16a230758dcb085764d80aa97c597f500a7cc"
+      ],
+      "text": "The project targets mathematical proof formalization: it provides theorem and axiom libraries, an Obsidian theorem-dependency graph, and Lean/Mathlib toolchain integration, and asks research users to cite it."
+    }
+  ],
+  "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 622,
+        "path": "README.md",
+        "size": 26390
+      },
+      {
+        "lines": 571,
+        "path": "README.ZH.md",
+        "size": 25882
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 23,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_240b6939643056cd860268c866bb593b",
+  "facets": {
+    "components": 1,
+    "dependencies": 3,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 3,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/math-ai-org/mathcode/6774236e088bbe3bc857ce8138299addc67567b0/c2426028962b88f5/manifest.json",
+  "package_id": "pkg_f7669090d938e61521a57d36964fe5fba9a8dcae33d1b7bec4855f52b3e41592",
+  "repo": "math-ai-org/mathcode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ebfa988afaca1e47d0987a43dce9ac37f3f877f4185b3db15354c7ae778102bd",
+  "snapshot_id": "c2426028962b88f5",
+  "sources": [
+    {
+      "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+      "git_sha": "3ec0e2ac03b9e32fd480426bb153f804b28e4994",
+      "lines": 571,
+      "path": "README.ZH.md",
+      "repository": "math-ai-org/mathcode",
+      "sha256": "068381e5da474f1e22775e2e7767bbf6616338a39bd5bc2a11ffeb78e38c0f36",
+      "source_id": "src_e5a9acc1244554c5ae9904eb72dfbd6c",
+      "stored": "readme.zh.md-249d70e65881.md",
+      "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.ZH.md"
+    },
+    {
+      "commit": "6774236e088bbe3bc857ce8138299addc67567b0",
+      "git_sha": "2a2e0ecbe5dc6f054e0be0caf65d3cae4dbf0185",
+      "lines": 622,
+      "path": "README.md",
+      "repository": "math-ai-org/mathcode",
+      "sha256": "60802b8a368ef978647ac7d8f5c84fd9c1a720632281ca8ae3fa65b1971c70d5",
+      "source_id": "src_7cf590cf96925f8fadc2b742381d5170",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/math-ai-org/mathcode/blob/6774236e088bbe3bc857ce8138299addc67567b0/README.md"
+    }
+  ],
+  "summary": "The snapshot documents MathCode, a terminal AI coding assistant with built-in Lean proof capabilities, distributed as a self-contained release bundle with CLI, browser UI, theorem/axiom libraries, and extension mechanisms. Evidence is README documentation only; no source code or development-practice guides appear in the provided slices. Evidence coverage: 150 of 228 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

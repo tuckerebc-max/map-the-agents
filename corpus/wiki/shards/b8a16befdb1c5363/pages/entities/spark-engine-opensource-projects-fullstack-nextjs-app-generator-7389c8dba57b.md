@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0d3d5a29632da449036b51e4b9662a8970906343a852723df7c6abe7c8d21840
+- clm_0f7723c0fa7ccd28e337c72430144694d6ff002719620688cdb1443ae9aebe95
+- clm_20c11bca6bbd3e16275186c32987e307354f19fa18f3057a8217ac2fd23bad87
+- clm_698d046a567eccc1e45872c4a01239db1c25d9b5a197cd44ca37c4fcfe92bf25
+- clm_7e068b4187c7baa8af022500356e3e30cddff641c2963fddc7b07048be4e9ca2
+- clm_9a5973c56edca7733195d3b628c6681c654efb0360d7b5cdcaf0ddc5018a6e0e
+- clm_bfcc8bf39d287cbdad6a4256750c2c4f2fbb054a38b2eea60856ef47bec5d80b
+- clm_c8f5dbc07406e87dfa52180e21cabc663535a050d840eae9b2b11c1e5bdce438
+- clm_d615e54e7e377b05b352d1801444a8bbce844b4e898648e0810ad977e549a07d
+- clm_d89cd2b72ac1933c93eef0076997bdc7a6d0d65c83f57a3a923b043c89e90257
+maturity: draft
+page_id: pg_77c348cfd9cf5b74ba807389c8dba57b
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: spark-engine-opensource-projects/fullstack-nextjs-app-generator
+updated_at: '2026-09-14T02:42:11Z'
+---
+
+# spark-engine-opensource-projects/fullstack-nextjs-app-generator
+
+<!-- rcw:begin owner=entity:ent_962ffb8368585dad9ed92bf5658fec66 block=evidence -->
+- spark-engine-opensource-projects/fullstack-nextjs-app-generator is mentioned in this evidence. [@claim:clm_0d3d5a29632da449036b51e4b9662a8970906343a852723df7c6abe7c8d21840] [@claim:clm_0f7723c0fa7ccd28e337c72430144694d6ff002719620688cdb1443ae9aebe95] [@claim:clm_20c11bca6bbd3e16275186c32987e307354f19fa18f3057a8217ac2fd23bad87] [@claim:clm_698d046a567eccc1e45872c4a01239db1c25d9b5a197cd44ca37c4fcfe92bf25] [@claim:clm_7e068b4187c7baa8af022500356e3e30cddff641c2963fddc7b07048be4e9ca2] [@claim:clm_9a5973c56edca7733195d3b628c6681c654efb0360d7b5cdcaf0ddc5018a6e0e] [@claim:clm_bfcc8bf39d287cbdad6a4256750c2c4f2fbb054a38b2eea60856ef47bec5d80b] [@claim:clm_c8f5dbc07406e87dfa52180e21cabc663535a050d840eae9b2b11c1e5bdce438] [@claim:clm_d615e54e7e377b05b352d1801444a8bbce844b4e898648e0810ad977e549a07d] [@claim:clm_d89cd2b72ac1933c93eef0076997bdc7a6d0d65c83f57a3a923b043c89e90257]
+<!-- rcw:end owner=entity:ent_962ffb8368585dad9ed92bf5658fec66 block=evidence -->
+
+## Researcher notes
+

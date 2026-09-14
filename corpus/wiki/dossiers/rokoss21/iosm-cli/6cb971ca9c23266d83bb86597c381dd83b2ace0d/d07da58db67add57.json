@@ -1,0 +1,588 @@
+{
+  "applied_operation_id": "op_49e3eb9d9c6f43ab8c47562957454f04",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e8831cd744a1b75fd08ac7668c8f462edb19b9c0b0de8f53568c6525dd424f50",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "45397900e8605aa62cab7dcf083e1408cce80389",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/acp-rpc-mapping.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/acp-rpc-mapping.md#L7-L9"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "45397900e8605aa62cab7dcf083e1408cce80389",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/acp-rpc-mapping.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/acp-rpc-mapping.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7cae0bbb6fbe9a322f694b499c64b4d1e0511eb4164c590a6348d395b01b126",
+        "slc_eaee4b97a1efeeec04486cbf3eb7ee8cc5f978987c6c0b1d6ca098409759ce18"
+      ],
+      "text": "The product supports an ACP compatibility mode via --mode acp, with a documented acp.handshake returning protocol version and capabilities including streaming, permissionBridge, toolEvents, sessionLifecycle, backCompatRpc, and execSessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5a030ee615a2e8d25aa434d10f704a5fbceca884ad6a6d07cef4f69cece19c6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "45397900e8605aa62cab7dcf083e1408cce80389",
+          "line_end": 24,
+          "line_start": 13,
+          "path": "docs/acp-rpc-mapping.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/acp-rpc-mapping.md#L13-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f1933d4af8a3396f224e981b4b1a18e73ac934ca0b105d9be42126d869df87ac"
+      ],
+      "text": "ACP methods map to internal runtime actions: session start/prompt/steer/follow_up/abort/state, builtin slash command dispatch, resumable shell exec sessions with stdin writes, and permission bridge responses supporting scope=once|turn|session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0be1cc2ba787de562b79c51def908d2c4f4b1c78f3c0997d0795c4a4be830872",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "45397900e8605aa62cab7dcf083e1408cce80389",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "docs/acp-rpc-mapping.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/acp-rpc-mapping.md#L36-L38"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "45397900e8605aa62cab7dcf083e1408cce80389",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/acp-rpc-mapping.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/acp-rpc-mapping.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0aa762dc9bd5dc511f205a792cb031ceb009808176c8382283b4bfb5ee9931a8",
+        "slc_b7cae0bbb6fbe9a322f694b499c64b4d1e0511eb4164c590a6348d395b01b126"
+      ],
+      "text": "Unsupported ACP methods return JSON-RPC -32601 with reason=capability_not_supported; the ACP adapter is additive, leaving --mode rpc unchanged, and unsupported features fail with capability-level rejections rather than crashes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d4d1180066861d1a5ddf7e8e8c6c07630123a613be962879662edea0ad3bcc3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "894025aa7284933b448f2f82c85fa4296e59d391",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "docs/configuration.generated.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.generated.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_307c4874e557541ee1cf00c8d7593544d47d47237b45b065a50418acff310034"
+      ],
+      "text": "The permissionMode setting defaults to \"ask\" and allows ask, auto, or yolo, controlling default tool-execution approval behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_681652bc83cda90b4f779bd6c102b5f44ae1b049b6f42ecc42ed186913c08dd3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 483,
+          "line_start": 481,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L481-L483"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 479,
+          "line_start": 479,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L479-L479"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 477,
+          "line_start": 475,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L475-L477"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41b2a968dac8f23e40b133c1060e77ce9cddb57b61114d24d262845a8fd0e9fc",
+        "slc_7322dae17e5a3bc2b2ca7536372699eaa7cea9102f9c4eab4dcc35d5e3417304",
+        "slc_ad47907e39b698cf6c492d7714732153e6196f421a947c2c24b4fafc240e9136"
+      ],
+      "text": "Extension tools can declare permission tiers (read-only, workspace-write, danger-full-access); with permissions.extensionToolEnforcement=true, read-only extension tools run automatically in auto mode and tools lacking requiredPermission metadata are blocked there."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2af9f142dc6fe250783b00e62ad5d053c00d0711d690e94b15ba48653a37cb8e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "894025aa7284933b448f2f82c85fa4296e59d391",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "docs/configuration.generated.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.generated.md#L49-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88ab14a71382daf03ddd201e6fcae58c8eda1a8a5f6d17759446c26ce66c0e54"
+      ],
+      "text": "A sandbox.enabled setting (default false) enables a Linux bubblewrap sandbox for process-based tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87cae113a1c3c5204a6909af3016baaaf4afc920614b36a75d5cfc75677876e9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 76,
+          "line_start": 72,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L72-L76"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61a327e279988d7e9f28e0612437eaa25412c38763b52ba587b62ade46bb7ad0",
+        "slc_fb1971f1d8d09087ad5364fc9f4e7e5cf82fbc0a060e06dd6a365913f5cb8662"
+      ],
+      "text": "Settings merge later-wins: global ~/.iosm/agent/settings.json lowest priority, then project .iosm/settings.json, then CLI flags at highest priority."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1edaa8f67958d6ec4f988e69f8d9fd8b156d9a720a67484bc02df5c1fca6a46",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 411,
+          "line_start": 406,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L406-L411"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 423,
+          "line_start": 422,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L422-L423"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aeb015aa3d34b5aa586b1bfde91aac9038002037dd3b66faf5bb7ded437aecfe",
+        "slc_e3a566a251f524917410f99807950203543ea9cf4efcd732df6218c942663192"
+      ],
+      "text": "Profiles control behavior and available tools: full grants all built-ins, plan is a read-only bundle, iosm adds IOSM cycle context, and meta is orchestration-first for multi-agent delegation; db_run is enabled only in write-capable profiles (full, meta, iosm)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_feda1eb8196f0b2bae19da4afe24bd56939ec1b9d03740ef44cc854177f653fe",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 337,
+          "line_start": 332,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L332-L337"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+          "line_end": 25,
+          "line_start": 11,
+          "path": "docs/configuration.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md#L11-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2812e95ba7d28e2b060dacda4286b7227e90aacab2f354551e44fb94fbbb3681",
+        "slc_9e8cd13262534fd549ac4cd7f76e4e04ff5c96bac2c281785ba576eb35de4455"
+      ],
+      "text": "Sessions persist under ~/.iosm/agent/sessions with JSONL trace files in session-traces; semantic search indexes are cached per project hash under ~/.iosm/agent/semantic/indexes containing meta.json, chunks.jsonl, and vectors.jsonl."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c31780a6e4cc31cff60bc116bbbc2c8276804aaa78341dd33a6a1b9d5904419b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "eef6c5d36810c593bd48c9d0add499d577941ec2",
+          "line_end": 13,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/README.md#L7-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15ea88cea4d2c0290c1c45453a624a5086fe281bdadb52b3741f60daa20cbbd9"
+      ],
+      "text": "The package is published on npm as iosm-cli, MIT-licensed, and requires Node.js >= 20.6.0 per its README badges."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b75920c89206e8abc5e0d46a940a641afdf0ba8908586cdb712fcf0dc7dfe8fd",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "bba6dc946468787d017d2b5020dfb2a133cb677e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "iosm-spec.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/iosm-spec.md#L3-L3"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "bba6dc946468787d017d2b5020dfb2a133cb677e",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "iosm-spec.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/iosm-spec.md#L7-L7"
+        },
+        {
+          "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+          "git_sha": "bba6dc946468787d017d2b5020dfb2a133cb677e",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "iosm-spec.md",
+          "repository": "rokoss21/iosm-cli",
+          "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/iosm-spec.md#L11-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_023505a5d61116c581b2a2afcb5e0d914877dd471979c4571217a8f4e2c215f2",
+        "slc_06707096f49254a968c4d45de8d876fca9b035f8f4226c4b0c4ddc704f7a6edd",
+        "slc_10296b0ab619b8c5804be362107177401c454a8d1ecb9306baaa593fa6453a95"
+      ],
+      "text": "iosm-spec.md is a normative specification of the IOSM (Improve, Optimize, Shrink, Modularize) methodology, defining ordered phases, quality gates, normalized metrics, evidence-confidence rules, and an aggregate IOSM-Index score."
+    }
+  ],
+  "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 617,
+        "path": "README.md",
+        "size": 24395
+      },
+      {
+        "lines": 597,
+        "path": "docs/configuration.md",
+        "size": 17203
+      },
+      {
+        "lines": 38,
+        "path": "improvement-checklist.md",
+        "size": 2000
+      },
+      {
+        "lines": 1618,
+        "path": "iosm-spec.md",
+        "size": 63939
+      },
+      {
+        "lines": 38,
+        "path": "docs/acp-rpc-mapping.md",
+        "size": 1889
+      },
+      {
+        "lines": 165,
+        "path": "docs/configuration.generated.md",
+        "size": 3474
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/cli-reference.md",
+        "reason": "byte-budget",
+        "size": 18973
+      },
+      {
+        "path": "docs/development-and-testing.md",
+        "reason": "file-budget",
+        "size": 11671
+      },
+      {
+        "path": "docs/extensions-packages-themes.md",
+        "reason": "file-budget",
+        "size": 11213
+      },
+      {
+        "path": "docs/getting-started.md",
+        "reason": "file-budget",
+        "size": 5769
+      },
+      {
+        "path": "docs/interactive-mode.md",
+        "reason": "file-budget",
+        "size": 20510
+      },
+      {
+        "path": "docs/iosm-init-and-cycles.md",
+        "reason": "file-budget",
+        "size": 10147
+      },
+      {
+        "path": "docs/orchestration-and-subagents.md",
+        "reason": "file-budget",
+        "size": 6580
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 2072
+      },
+      {
+        "path": "docs/rpc-json-sdk.md",
+        "reason": "file-budget",
+        "size": 10511
+      },
+      {
+        "path": "docs/sessions-traces-export.md",
+        "reason": "file-budget",
+        "size": 6759
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 57927
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3585
+      }
+    ],
+    "omitted_count": 12,
+    "omitted_slices": 123,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 564,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 18,
+      "complete": false,
+      "omitted": 12,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6af1576e5e6c50e68d4e68a04595113c",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 3,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/rokoss21/iosm-cli/6cb971ca9c23266d83bb86597c381dd83b2ace0d/d07da58db67add57/manifest.json",
+  "package_id": "pkg_1c8ffb1efa6daa2ef497272a78dbe42e1ae1818597316fe6f9f10514fc8dc8e8",
+  "repo": "rokoss21/iosm-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c6ba5c9a21dddec56e31351e101165dd9aff4efa58c6cf393561c5d31c60a712",
+  "snapshot_id": "d07da58db67add57",
+  "sources": [
+    {
+      "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+      "git_sha": "eef6c5d36810c593bd48c9d0add499d577941ec2",
+      "lines": 617,
+      "path": "README.md",
+      "repository": "rokoss21/iosm-cli",
+      "sha256": "4f25e9cd7353fd0c04027d824b78faa247a4b2500845144a9984c967c528af6b",
+      "source_id": "src_5ae67397a13b5bccafeaa520c134993f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/README.md"
+    },
+    {
+      "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+      "git_sha": "45397900e8605aa62cab7dcf083e1408cce80389",
+      "lines": 38,
+      "path": "docs/acp-rpc-mapping.md",
+      "repository": "rokoss21/iosm-cli",
+      "sha256": "70dbb5017aefae1e9a49e8e99818218897e641c94716fee3067912c77560f0eb",
+      "source_id": "src_236b147557c95192808d5fa4cf92dd32",
+      "stored": "acp-rpc-mapping.md-0b9b607552dc.md",
+      "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/acp-rpc-mapping.md"
+    },
+    {
+      "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+      "git_sha": "894025aa7284933b448f2f82c85fa4296e59d391",
+      "lines": 165,
+      "path": "docs/configuration.generated.md",
+      "repository": "rokoss21/iosm-cli",
+      "sha256": "b4ddf395e15223de02202010923f95d0abf741f6f84909f93b308dde628100e4",
+      "source_id": "src_df857df969215ab5995ce2c3e587cef8",
+      "stored": "configuration.generated.md-07a7f7137cfa.md",
+      "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.generated.md"
+    },
+    {
+      "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+      "git_sha": "a7bd86820af9f05d247c295b80c1053881ae9afa",
+      "lines": 597,
+      "path": "docs/configuration.md",
+      "repository": "rokoss21/iosm-cli",
+      "sha256": "479ce42a4ccfaa7932d46b86eb09cb80f3de55fb6b14bd74c7c8428b25cbe4cf",
+      "source_id": "src_a29e183fd7d4575b8389d2b4a90806a4",
+      "stored": "configuration.md-17ed18489a95.md",
+      "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/docs/configuration.md"
+    },
+    {
+      "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+      "git_sha": "d321e5c417df0d6c9b072993c6d3ea26ed5712c1",
+      "lines": 38,
+      "path": "improvement-checklist.md",
+      "repository": "rokoss21/iosm-cli",
+      "sha256": "400db449315ccd61b703cecab9707183223bd29a8d33942a18c6fc3dd7d7d8ab",
+      "source_id": "src_68b55d82b88558c09d50a36a20d1cda6",
+      "stored": "improvement-checklist.md-18ac135f0d52.md",
+      "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/improvement-checklist.md"
+    },
+    {
+      "commit": "6cb971ca9c23266d83bb86597c381dd83b2ace0d",
+      "git_sha": "bba6dc946468787d017d2b5020dfb2a133cb677e",
+      "lines": 1618,
+      "path": "iosm-spec.md",
+      "repository": "rokoss21/iosm-cli",
+      "sha256": "43cc64123ea88f51314374a2bf9c5aee50373da14204a5d3518c096c109e8b14",
+      "source_id": "src_6c3b6c944a3f54428c513ea1b99cf934",
+      "stored": "iosm-spec.md-1bdd1037fc21.md",
+      "url": "https://github.com/rokoss21/iosm-cli/blob/6cb971ca9c23266d83bb86597c381dd83b2ace0d/iosm-spec.md"
+    }
+  ],
+  "summary": "Selected evidence records: The product supports an ACP compatibility mode via --mode acp, with a documented acp.handshake returning protocol version and capabilities including streaming, permissionBridge, toolEvents, sessionLifecycle, backCompatRpc, and execSessions. ACP methods map to internal runtime actions: session start/prompt/steer/follow_up/abort/state, builtin slash command dispatch, resumable shell exec sessions with stdin writes, and permission bridge responses supporting scope=once|turn|session.",
+  "superseded_claim_ids": []
+}

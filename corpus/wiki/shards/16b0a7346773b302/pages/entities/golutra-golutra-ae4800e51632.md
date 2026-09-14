@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_2309b0ca8846d5d0ed21469d0219af3a227f69bcb45441899e186f8ebb83503d
+- clm_2ba93a3f097803dfe4f2057e66d5ab2567a146eae7e2dc5ce55bc69185c83369
+- clm_4952aae15cc7ebb7e8e739db852811674685bf112259bbd11e1b672592cb4a87
+- clm_4a8e2c89256370914e6ba21bd5ac87d0cfb4849b924a1c909d2567e219599ed7
+- clm_501497353dc2fc7e02a667e906f4d781e8b5ab5b836f904efd0f6c89ed2c0543
+- clm_5520e7cf4664fe490f8fbf413b110c6800dbc186a494db4386388c40e6d1efc9
+- clm_853e41970a48b1abc2e321bfcb9a25750a264aab1cde00336ff483cec533e4ba
+- clm_87b7e72a5730c92b327a22725230477c8da40cd8a76a7ad79352426f8a77e7a5
+- clm_af32b348b5ad9f7cf35e3443251466b0aa4c381dc2e93fddef8bf4b62016df53
+- clm_fd9873b6a2fc473dc7f0500500e19e2ef4b381c661443d7cb4e12124ba568670
+maturity: draft
+page_id: pg_f7d66f9e836e54d99d4eae4800e51632
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: golutra/golutra
+updated_at: '2026-09-14T03:08:27Z'
+---
+
+# golutra/golutra
+
+<!-- rcw:begin owner=entity:ent_4561bb524e2a5f26aae48b70692bf697 block=evidence -->
+- golutra/golutra is mentioned in this evidence. [@claim:clm_2309b0ca8846d5d0ed21469d0219af3a227f69bcb45441899e186f8ebb83503d] [@claim:clm_2ba93a3f097803dfe4f2057e66d5ab2567a146eae7e2dc5ce55bc69185c83369] [@claim:clm_4952aae15cc7ebb7e8e739db852811674685bf112259bbd11e1b672592cb4a87] [@claim:clm_4a8e2c89256370914e6ba21bd5ac87d0cfb4849b924a1c909d2567e219599ed7] [@claim:clm_501497353dc2fc7e02a667e906f4d781e8b5ab5b836f904efd0f6c89ed2c0543] [@claim:clm_5520e7cf4664fe490f8fbf413b110c6800dbc186a494db4386388c40e6d1efc9] [@claim:clm_853e41970a48b1abc2e321bfcb9a25750a264aab1cde00336ff483cec533e4ba] [@claim:clm_87b7e72a5730c92b327a22725230477c8da40cd8a76a7ad79352426f8a77e7a5] [@claim:clm_af32b348b5ad9f7cf35e3443251466b0aa4c381dc2e93fddef8bf4b62016df53] [@claim:clm_fd9873b6a2fc473dc7f0500500e19e2ef4b381c661443d7cb4e12124ba568670]
+<!-- rcw:end owner=entity:ent_4561bb524e2a5f26aae48b70692bf697 block=evidence -->
+
+## Researcher notes
+

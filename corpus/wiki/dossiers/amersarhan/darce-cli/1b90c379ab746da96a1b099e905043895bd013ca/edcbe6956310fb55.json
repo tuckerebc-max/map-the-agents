@@ -1,0 +1,392 @@
+{
+  "applied_operation_id": "op_d5ea6a7300a44eb09cc27720437ea275",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d96a9c1a7ad601b41374b93b05b64a7269974ddc2f50181c8fdfd1a426e85222",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 146,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L139-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c7d55b73ec014839e788f7793fbe801a009d742f0b0940211314977937c6f61"
+      ],
+      "text": "The CLI exposes slash commands including /help, /model, /clear, /cost, /compact, and /quit, with short aliases such as /m, /c, and /q."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a28056f839c4244b52d90f7058d57468c1f2bf260097de78c8a9ff9688e0edb0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 92,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L86-L92"
+        },
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 101,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L94-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19b586137f7a9e85b293d735b38b06a3f8458a26b71dec4e6333dd73b7d6ea51",
+        "slc_8b20af5ef9c1798c7e5999b79d982bff03dd91d769cf289655fce84aa3dbc94d"
+      ],
+      "text": "The agent provides seven tools: Read, Write, Edit, Bash, Glob, Grep, and WebFetch, plus keyboard shortcuts like Ctrl+M for model switching and triple-quote multi-line input."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_995cc8bc0a92f10e884a566b4cc04a29fd2f1c0402e50d2f6ac6bcec4a363058",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 101,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L94-L101"
+        },
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 165,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L152-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b20af5ef9c1798c7e5999b79d982bff03dd91d769cf289655fce84aa3dbc94d",
+        "slc_d5b6815da267739f2f7c352d1a7a1fa46877e3a3093f9c3945202722fb92973c"
+      ],
+      "text": "Darce includes smart routing that automatically picks a model per task, and users can override routing with rules in a ~/.darcerc config file mapping conditions like large-context or complex-reasoning to specific models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d58b422f60ea95bb5f62e1384d7570ba327c91945f5dc53cee24002505aa4f11",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 115,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L107-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e480d2b03704f00a665ba7af15656195b72b2f32aa7f839d35b0b65ebce2a77"
+      ],
+      "text": "The product routes to multiple external models, listing qwen3-coder (default), grok-4.1-fast, claude-sonnet-4, gemini-2.5-pro, deepseek-r1, deepseek-chat, and llama-4-maverick."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f345526639d0995f70da8a862e65e4c7eca172db661bd857947a1a30fdfc0039",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 68,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L64-L68"
+        },
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_059d7ea4b05158cfe3ee43932411e3eea4630c2e7230f9ce0d969a49617307be",
+        "slc_a12964a5e66b9a032ca56e89954f2b3f90631583db85c42b6d28678408a9b088"
+      ],
+      "text": "Installation and startup are via npm global install of darce-cli followed by 'darce login' and 'darce'; the README states no config files, API keys, or Docker are needed to start."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3eea4d1e37df684178bd9aa458e9d7bc2153fb9c2495a34faceb35469baa8d35",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 101,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L94-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b20af5ef9c1798c7e5999b79d982bff03dd91d769cf289655fce84aa3dbc94d"
+      ],
+      "text": "The tool is git-aware, tracking branch, changes, and recent commits, and supports session resume via 'darce --resume' plus context compaction for long conversations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a96bb98da3278e45ce7dc196fbcf76992aa1515b25d7f3d03358eba4d1ceb4b8",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 128,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L121-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d48d573ab274fcb96b29d5034f7b68a153f92913307e7896c1463ce497cfd19"
+      ],
+      "text": "Tool access is tier-gated: the free Starter plan limits users to 3 tools (Read, Grep, Glob) while paid tiers unlock all 7 tools, and resume/history is paid-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d30c239a92aa26218763f43ce2c6da99f3be9f22cb6da7a3158403b6a45455d5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 176,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L169-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d741d132d86d9f1b7e670ecf8c513d842374880990f2d167bf921728685255cb"
+      ],
+      "text": "Repository development practice: contributors clone the repo, run npm install, use 'npm run dev' to run from source, run tests with 'npx tsx test.ts' (106 tests), and build with 'npm run build'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d8bb49228aadd062f9e7a4bf2e4410d450139625f3ca20f51a65ca998436d57",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L10-L14"
+        },
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 60,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L50-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_146e5d81ea7cc79bb8f73165ae2f178ee3e7ba946387a4a6e36b119c2b397ea6",
+        "slc_d52cb760c89e585474d20569ea22c89e2e13d89615a11e8b7e0fc0dd8ff8f0eb"
+      ],
+      "text": "Darce is a terminal AI coding agent that reads, writes, and edits code, runs shell commands, and searches codebases, positioning itself against Claude Code, Cursor, and Copilot CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef882d174a7fffcdd62a5fbc18dfa1876acec6fcbc55e006bd10c22a70162e85",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 176,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L169-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d741d132d86d9f1b7e670ecf8c513d842374880990f2d167bf921728685255cb"
+      ],
+      "text": "No agent performance benchmarks or eval harness appear in the evidence; the only test-related content is the repository's own test suite instructions, so evaluation capability appears undocumented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f332c2f32c4cf436c358ceba75d88f3f38b6a20c408c71fc4172ccc67a940194",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+          "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+          "line_end": 101,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "amersarhan/darce-cli",
+          "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md#L94-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b20af5ef9c1798c7e5999b79d982bff03dd91d769cf289655fce84aa3dbc94d"
+      ],
+      "text": "The product tracks real-time token count and spend in a status bar and offers an account dashboard for usage stats."
+    }
+  ],
+  "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 189,
+        "path": "README.md",
+        "size": 6024
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 43,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_9dd2c29bc5355d1b9def47441e7d6fd1",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/amersarhan/darce-cli/1b90c379ab746da96a1b099e905043895bd013ca/edcbe6956310fb55/manifest.json",
+  "package_id": "pkg_59f5c671ff914e2b99c5d8ecd562ba3a9e267c19505b8fafae81eb020757d434",
+  "repo": "amersarhan/darce-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "59c6cd627bb4ec968763fd48a0fb0d90c8fee542b802ba3f20ecf352ae5aeef6",
+  "snapshot_id": "edcbe6956310fb55",
+  "sources": [
+    {
+      "commit": "1b90c379ab746da96a1b099e905043895bd013ca",
+      "git_sha": "d489d3dedbae0e07fe0d6e8b650e7605c403ac8d",
+      "lines": 189,
+      "path": "README.md",
+      "repository": "amersarhan/darce-cli",
+      "sha256": "a4c6d3b3965c0e32ae464a4cad5f980305a11fbfcabfdf85305b000dc24993a0",
+      "source_id": "src_5b993453bf495e249f5f9762f2459fb8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/AmerSarhan/darce-cli/blob/1b90c379ab746da96a1b099e905043895bd013ca/README.md"
+    }
+  ],
+  "summary": "The evidence is README-only documentation for darce-cli, a terminal-based AI coding agent distributed via npm, describing its tools, slash commands, model routing, pricing tiers, and contributor setup. No source code is included in the snapshot.",
+  "superseded_claim_ids": []
+}

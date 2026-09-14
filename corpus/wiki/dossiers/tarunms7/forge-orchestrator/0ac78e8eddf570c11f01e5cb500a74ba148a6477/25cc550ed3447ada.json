@@ -1,0 +1,878 @@
+{
+  "applied_operation_id": "op_d18025edd71041d9aeda677c6f03e2e8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a6ddf7536a6b29973804692e572d8e9f533e8e6906933d52864c0e3a08738d3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 514,
+          "line_start": 500,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L500-L514"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 482,
+          "line_start": 467,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L467-L482"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dfc950788d4de3da97a2b0c670a78d12a691f893366084d9e766111a944ddc04",
+        "slc_e4182da3088459654060c0eed0cadddc6496501fda4486904ade6aa11efa215e"
+      ],
+      "text": "The product exposes a Click-based CLI with 14 commands including forge tui, run, fix, status, stats, logs, lessons, doctor, clean, init, serve, upgrade, and ping."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7411f0e60d0310a10281c7c9accd8bc28e294697e7e1ba2e54d304b3e8405b6c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 492,
+          "line_start": 492,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L492-L492"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 490,
+          "line_start": 488,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L488-L490"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b684acce1f56c4996f05be6f7eaec162d69d70acb4f9a95986e1ec3493355227",
+        "slc_be5074ad2b5be61abae6d5e6fb702a1688d5e764aed5dc75cd0b01fb8f20eb16"
+      ],
+      "text": "A terminal UI (forge tui) and a web dashboard (forge serve, backend on port 8000 and frontend on 3000) provide live pipeline progress, plan editing, contract viewing, and cost tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b24c603b726ce130335b2c3ee33d7dcb555c211c381afce0f104f58663589e6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 200,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L174-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6ecab3dfbc991b70dcf4260a3f9f7a3103bb26a43d60e35025adaf01393790cb"
+      ],
+      "text": "Pipelines run six stages: pre-flight validation, planning into a task DAG, contract generation, parallel execution in isolated git worktrees, a five-gate review (build, lint, test, LLM review, contracts), then format, rebase, merge, and gh pr create."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d67f40c3bad1e1cf7e7e9bfdf7f43acae1b30c91bf4f80f549a0af9835e84a0",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 248,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L248-L248"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 253,
+          "line_start": 250,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L250-L253"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 255,
+          "line_start": 255,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L255-L255"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e8db9c00a467fe5566bd4a4c45cc600b997e1f9226954a7e0dd9ecfeeb79f89",
+        "slc_11672524e6fab7cf24242fd3dec390f26eb35da2a02ce52907ded7f476e2a96f",
+        "slc_94505ed3b54dd105a348072718c97ffa6f91f9868d45c074cd81b09e981d67f8"
+      ],
+      "text": "A background health monitor detects tasks in progress over 15 minutes without activity, reviews running over 10 minutes, deadlocks, and dependency cascades, surfacing problems during execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97ae59c960fad73e8553fd6ad5da1ca2ad33a268e79fcf8bc48228859f2ccae2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 204,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L204-L204"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 213,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L213-L213"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 211,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L206-L211"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31c7c6c458be3c4201e1e5dbe67bbdc54ce2c4e54dc5a38c4bb9d1b8f40dfba5",
+        "slc_b3fc69cfdb9873b58f84c6f523b5de261af43b9f593a0046102598d71e47b2bf",
+        "slc_e74052814ee38a6dcab610df3ca26e461057ff97006f6b00bcc6ce484ffd5617"
+      ],
+      "text": "Before coding, a Contract Builder generates binding API and type specs naming producer and consumer tasks, so parallel agents agree on interfaces; the reviewer checks compliance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39cb5a8c1ce0d3afe40ff97ba09a46aecfde5eac5131ab4b5fce348945947fc4",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 222,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L219-L222"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 227,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L224-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01771e55b676d85d764fb92ea198a554912f2ee0890f379e2ab3bcfb9717d9c5",
+        "slc_ed88dbd02dcc6ddb53c9c41a0126a1bba7f3c2ca803f11cc672291a961718ce4"
+      ],
+      "text": "Forge stores lessons learned from failed-then-retried tasks, filters transient errors like 503s, persists lessons across projects, and adapts timeouts after slow failures; lessons are viewable and addable via forge lessons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6f2650fe72face375d81b566897f355f626f64e6f113cf89fff7ff2cc5a63a2",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 403,
+          "line_start": 403,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L403-L403"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fe94c451d8b18fdbe964f4739fd9240390a779c0ebf59c95125c4b5e2ccc18bf"
+      ],
+      "text": "The resolved provider configuration is persisted in pipelines.provider_config at pipeline creation, and restarts, retries, and webhook resumptions reuse that snapshot rather than current settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33f32e56edc697a59e9af78ddd8093c84d189188eab0bb424117818a9cd271c4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 423,
+          "line_start": 423,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L423-L423"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 428,
+          "line_start": 425,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L425-L428"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6079861a1e8723fc8feb318ed8872b4c82fedc6437d6bfb02ac8c93f413b5c4c",
+        "slc_8ffd04f5376d2b6457a60666d0bf855f2b55c5422caf68139c1b6967f0080b4d"
+      ],
+      "text": "Codex-backed agent executions run in full-access sandbox mode with automatic execution, no per-command approval prompts, live network access and native web search, while a Forge-level safety policy still blocks explicitly denied operations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b62033299eb5122380245f1aef5f1906cee40c31b5a3d59e5a4aac80bed9a7d7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 121,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L120-L121"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 127,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L127-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2341b14146b66e1b265d2ffc98b05c006ceb76359e82f8bd2a43d4f3fa668992",
+        "slc_ca64c5b563ba63dcaa24f4bf9d19e8a9920a787f589fcd5241a007e8b68f5acf"
+      ],
+      "text": "Prerequisites are Git 2.20+ and the Claude Code CLI (claude login); the gh CLI is optional for automatic PR creation, and the installer handles Python 3.12 and uv."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bcf280e948c1f20c08f7ace889c794519d1f7f0ff3d3805d81f69f5309bffbd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 421,
+          "line_start": 421,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L421-L421"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 302,
+          "line_start": 285,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L285-L302"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1176aeb0a7972976f991b506a80ea9b986187dac28dcc6eb0ea683660b270dc0",
+        "slc_a13cc4b06b254c6e9c33e4bc279bc97efecd843ca52701dcfb2692f172cee332",
+        "slc_b065b5d9b434cf11d7cfe783b4906a02f9aee79e22a7399f135d24823d6a43a6"
+      ],
+      "text": "Claude is the default provider; OpenAI routing is opt-in via FORGE_OPENAI_ENABLED, with Codex-backed models using codex login or CODEX_API_KEY and openai:o3 requiring OPENAI_API_KEY."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0b547aba31bdf94027edff00a7c3a70ac5f40424bea70f22c149dcbba9854ef",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 543,
+          "line_start": 543,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L543-L543"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+          "line_end": 541,
+          "line_start": 535,
+          "path": "README.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md#L535-L541"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2871c15e813802979a668a151a596411f652ba6b91deb8530dffacab78ffbe17",
+        "slc_a04576414ddea9c98b1a2b26d16d88f15ecb60171202195b47be9e0778b8f81c"
+      ],
+      "text": "Repository development practice: contributors set up a venv, pip install -e '.[dev,web]', and run python -m pytest forge/ -q; CI runs ruff lint and format plus 2200+ tests on every PR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f54e03ba95d74f62fba177a18ebb89438d983cbbe25a4f7eab338e58c11f62fd",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "f126cfa32a24f1f552027a4adf7ef17845db7c08",
+          "line_end": 189,
+          "line_start": 177,
+          "path": "IMPLEMENTATION_PLAN.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/IMPLEMENTATION_PLAN.md#L177-L189"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "f126cfa32a24f1f552027a4adf7ef17845db7c08",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "IMPLEMENTATION_PLAN.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/IMPLEMENTATION_PLAN.md#L5-L5"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "f126cfa32a24f1f552027a4adf7ef17845db7c08",
+          "line_end": 29,
+          "line_start": 17,
+          "path": "IMPLEMENTATION_PLAN.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/IMPLEMENTATION_PLAN.md#L17-L29"
+        },
+        {
+          "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+          "git_sha": "f126cfa32a24f1f552027a4adf7ef17845db7c08",
+          "line_end": 287,
+          "line_start": 287,
+          "path": "IMPLEMENTATION_PLAN.md",
+          "repository": "tarunms7/forge-orchestrator",
+          "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/IMPLEMENTATION_PLAN.md#L287-L287"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6733ff125a34f8151da3e2d37aa5df50ccbcc79f5581d1cf345f751776ad20f2",
+        "slc_7746cc96a0421f0f35d235318a5092ca181629dbc929711063aa50e5ae3acb5c",
+        "slc_a0ad223f76bcf3579d8c2a30c191cc6dd7a3439388b7abd6dd4b5164386e3692",
+        "slc_ac596c6fe1a91c5c84a5b8cfabfb18f7f8fb0b4903f09634c0d33a6cb6960e5e"
+      ],
+      "text": "An implementation plan proposes replacing the Scout→Architect→Detailer→Validator planning pipeline with a single Unified Planner having read-only tool access (Edit/Write disallowed) and a deterministic validator; this appears to be a planned change, not necessarily shipped behavior."
+    }
+  ],
+  "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 549,
+        "path": "README.md",
+        "size": 21370
+      },
+      {
+        "lines": 42,
+        "path": "CLAUDE.md",
+        "size": 2272
+      },
+      {
+        "lines": 766,
+        "path": "IMPLEMENTATION_PLAN.md",
+        "size": 31189
+      }
+    ],
+    "omitted": [
+      {
+        "path": "STANDARDS.md",
+        "reason": "file-budget",
+        "size": 910
+      },
+      {
+        "path": "docs/design/3a_design.md",
+        "reason": "file-budget",
+        "size": 34230
+      },
+      {
+        "path": "docs/design/contract-builder.md",
+        "reason": "file-budget",
+        "size": 50986
+      },
+      {
+        "path": "docs/design/interactive-plan-editing-and-approval.md",
+        "reason": "file-budget",
+        "size": 37956
+      },
+      {
+        "path": "docs/design/pipeline-templates-design.md",
+        "reason": "file-budget",
+        "size": 43557
+      },
+      {
+        "path": "docs/design/smart-context-sharing-and-conventions.md",
+        "reason": "file-budget",
+        "size": 32537
+      },
+      {
+        "path": "docs/gauntlet.md",
+        "reason": "file-budget",
+        "size": 6835
+      },
+      {
+        "path": "docs/plans/2026-02-27-forge-design.md",
+        "reason": "file-budget",
+        "size": 11803
+      },
+      {
+        "path": "docs/plans/2026-02-27-forge-implementation.md",
+        "reason": "file-budget",
+        "size": 101338
+      },
+      {
+        "path": "docs/plans/2026-02-28-forge-ui-design.md",
+        "reason": "file-budget",
+        "size": 15565
+      },
+      {
+        "path": "docs/plans/2026-02-28-forge-ui-implementation.md",
+        "reason": "file-budget",
+        "size": 63017
+      },
+      {
+        "path": "docs/plans/2026-02-28-forge-v2-design.md",
+        "reason": "file-budget",
+        "size": 6124
+      },
+      {
+        "path": "docs/plans/2026-02-28-forge-v2-implementation.md",
+        "reason": "file-budget",
+        "size": 32451
+      },
+      {
+        "path": "docs/plans/2026-02-28-forge-v3-implementation.md",
+        "reason": "file-budget",
+        "size": 43570
+      },
+      {
+        "path": "docs/plans/2026-02-28-forge-v3-production-fixes-design.md",
+        "reason": "file-budget",
+        "size": 8044
+      },
+      {
+        "path": "docs/plans/2026-03-01-forge-v4-implementation.md",
+        "reason": "file-budget",
+        "size": 32499
+      },
+      {
+        "path": "docs/plans/2026-03-01-forge-v4-resilience-design.md",
+        "reason": "file-budget",
+        "size": 7597
+      },
+      {
+        "path": "docs/plans/2026-03-01-forge-v5-implementation.md",
+        "reason": "file-budget",
+        "size": 37541
+      },
+      {
+        "path": "docs/plans/2026-03-01-forge-v5-ux-polish-design.md",
+        "reason": "file-budget",
+        "size": 18233
+      },
+      {
+        "path": "docs/plans/2026-03-01-merge-fix-design.md",
+        "reason": "file-budget",
+        "size": 2633
+      },
+      {
+        "path": "docs/plans/2026-03-01-pipeline-branch-isolation-design.md",
+        "reason": "file-budget",
+        "size": 4613
+      },
+      {
+        "path": "docs/plans/contract-builder-implementation-prompt.md",
+        "reason": "file-budget",
+        "size": 8803
+      },
+      {
+        "path": "docs/plans/design-1a-build-test-gates.md",
+        "reason": "file-budget",
+        "size": 29296
+      },
+      {
+        "path": "docs/plans/design-1b-token-cost-budget.md",
+        "reason": "file-budget",
+        "size": 38263
+      },
+      {
+        "path": "docs/plans/feature-design-prompts.md",
+        "reason": "file-budget",
+        "size": 21119
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-10-terminal-tui.md",
+        "reason": "file-budget",
+        "size": 81555
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-11-human-in-the-loop-pipeline.md",
+        "reason": "file-budget",
+        "size": 59181
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-11-tui-overhaul.md",
+        "reason": "file-budget",
+        "size": 26218
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-12-tui-layout-redesign.md",
+        "reason": "file-budget",
+        "size": 40823
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-15-resilient-pipeline-lifecycle.md",
+        "reason": "file-budget",
+        "size": 67830
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-15-task-pool-and-review-quality.md",
+        "reason": "file-budget",
+        "size": 41859
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-16-agent-quality-and-hitl-completion.md",
+        "reason": "file-budget",
+        "size": 72149
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-16-pipeline-tui-reliability.md",
+        "reason": "file-budget",
+        "size": 32745
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-22-forge-deep-audit-fixes.md",
+        "reason": "file-budget",
+        "size": 44936
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-28-super-repo-end-to-end-fix.md",
+        "reason": "file-budget",
+        "size": 33312
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-29-pipeline-reliability-fixes.md",
+        "reason": "file-budget",
+        "size": 42248
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-30-adaptive-review-scaling.md",
+        "reason": "file-budget",
+        "size": 91407
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-31-fix-ci-and-add-claude-autofix.md",
+        "reason": "file-budget",
+        "size": 14978
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-04-reliability-release-war-room.md",
+        "reason": "file-budget",
+        "size": 11383
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-05-multi-provider-architecture-implementation.md",
+        "reason": "file-budget",
+        "size": 50347
+      },
+      {
+        "path": "docs/superpowers/plans/phase-2-cli-and-config.md",
+        "reason": "file-budget",
+        "size": 38276
+      },
+      {
+        "path": "docs/superpowers/plans/phase-3-daemon-core.md",
+        "reason": "file-budget",
+        "size": 35932
+      },
+      {
+        "path": "docs/superpowers/plans/phase-4-planner.md",
+        "reason": "file-budget",
+        "size": 32803
+      },
+      {
+        "path": "docs/superpowers/plans/phase-5-review-and-merge.md",
+        "reason": "file-budget",
+        "size": 33140
+      },
+      {
+        "path": "docs/superpowers/plans/phase-6-pr-creation.md",
+        "reason": "file-budget",
+        "size": 42732
+      },
+      {
+        "path": "docs/superpowers/plans/phase-7-tui.md",
+        "reason": "file-budget",
+        "size": 40793
+      },
+      {
+        "path": "docs/superpowers/plans/phase-8-web-api.md",
+        "reason": "file-budget",
+        "size": 22980
+      },
+      {
+        "path": "docs/superpowers/plans/phase-9-followup-and-e2e.md",
+        "reason": "file-budget",
+        "size": 31745
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-10-terminal-tui-design.md",
+        "reason": "file-budget",
+        "size": 5281
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-11-human-in-the-loop-pipeline-design.md",
+        "reason": "file-budget",
+        "size": 21008
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-11-tui-polish-design.md",
+        "reason": "file-budget",
+        "size": 19562
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-12-single-command-install-design.md",
+        "reason": "file-budget",
+        "size": 11059
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-12-tui-bugfix-sprint-design.md",
+        "reason": "file-budget",
+        "size": 20216
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-12-tui-layout-redesign.md",
+        "reason": "file-budget",
+        "size": 30034
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-14-language-agnostic-lint-gate-design.md",
+        "reason": "file-budget",
+        "size": 7995
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-15-resilient-pipeline-lifecycle-design.md",
+        "reason": "file-budget",
+        "size": 25953
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-15-task-pool-and-review-quality-design.md",
+        "reason": "file-budget",
+        "size": 18574
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-16-agent-quality-and-hitl-completion-design.md",
+        "reason": "file-budget",
+        "size": 25400
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-16-multi-pass-planning-pipeline-design.md",
+        "reason": "file-budget",
+        "size": 26947
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-16-pipeline-tui-reliability-design.md",
+        "reason": "file-budget",
+        "size": 13257
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-21-multi-repo-workspace-design.md",
+        "reason": "file-budget",
+        "size": 47854
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-29-pipeline-reliability-fixes-design.md",
+        "reason": "file-budget",
+        "size": 32897
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-30-adaptive-review-scaling-design.md",
+        "reason": "file-budget",
+        "size": 25725
+      },
+      {
+        "path": "docs/superpowers/specs/2026-04-04-multi-provider-architecture-design.md",
+        "reason": "file-budget",
+        "size": 105285
+      }
+    ],
+    "omitted_count": 64,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 501,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 67,
+      "complete": false,
+      "omitted": 64,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_b4d0a66c9cf15a1ea0ad293835521593",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tarunms7/forge-orchestrator/0ac78e8eddf570c11f01e5cb500a74ba148a6477/25cc550ed3447ada/manifest.json",
+  "package_id": "pkg_6fed989628a75289b60ee220c17ad0f13ea48a2687d7983d0154020d7acef0a8",
+  "repo": "tarunms7/forge-orchestrator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "986ea4b358319ce1b5541ad426bc5f64ebf40a7f8be803b038901e617043007f",
+  "snapshot_id": "25cc550ed3447ada",
+  "sources": [
+    {
+      "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+      "git_sha": "f1cfc33603b3a9dd0ace049a75355bd05ba83c57",
+      "lines": 42,
+      "path": "CLAUDE.md",
+      "repository": "tarunms7/forge-orchestrator",
+      "sha256": "5808b116d42b44cf3f8dccabac141fc8b19e0d968443c382c832ad515fd3e773",
+      "source_id": "src_1718139efb7d5f859f6ab91385cceda4",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/CLAUDE.md"
+    },
+    {
+      "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+      "git_sha": "f126cfa32a24f1f552027a4adf7ef17845db7c08",
+      "lines": 766,
+      "path": "IMPLEMENTATION_PLAN.md",
+      "repository": "tarunms7/forge-orchestrator",
+      "sha256": "93bcf0fee81d01f9173b6710fa8a8b42aac15a6a4152b5a8b38a6c4d5d2d3d4c",
+      "source_id": "src_90c4422d09155e1c954c509b57d45aca",
+      "stored": "implementation_plan.md-aec82e4a332a.md",
+      "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/IMPLEMENTATION_PLAN.md"
+    },
+    {
+      "commit": "0ac78e8eddf570c11f01e5cb500a74ba148a6477",
+      "git_sha": "3c91705c91275e86772685db45bc5d05aa87d0d2",
+      "lines": 549,
+      "path": "README.md",
+      "repository": "tarunms7/forge-orchestrator",
+      "sha256": "00199c49e082211eba2c9b9c27b8d87f4ce26b418b922d1101c9aafbcb5e1cf7",
+      "source_id": "src_24eada21bb3455a8825e324665831420",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/tarunms7/forge-orchestrator/blob/0ac78e8eddf570c11f01e5cb500a74ba148a6477/README.md"
+    }
+  ],
+  "summary": "Forge-orchestrator is a Python 3.12+ orchestration engine built on Claude Code that plans tasks into a DAG, runs parallel agents in isolated git worktrees, applies a multi-gate review, and opens PRs, with optional OpenAI routing. Evidence is mostly README product documentation plus an implementation plan describing a proposed unified planner. Evidence coverage: 155 of 255 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

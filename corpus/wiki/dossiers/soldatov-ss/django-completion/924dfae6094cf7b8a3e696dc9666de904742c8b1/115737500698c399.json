@@ -1,0 +1,676 @@
+{
+  "applied_operation_id": "op_2e139ab72bc74059bb2a86e81a12a4ef",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e52f806e8f3f8447e18ba1b06f266b5c7d30f926a9952858b57486b32268a2f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L16-L16"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 137,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L131-L137"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 37,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L35-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fa032465e463864f2917c99750548974c3afe30a80afca917ee2c2104c78bae",
+        "slc_590a532ec542d77f2d84d806a0c3e8a53d0fd019caad86cc5497c36362c1f282",
+        "slc_b3f49913f6c91a41edefef3ead3ba11126f8d05ebab1f8a0b24480d023e8a9b1"
+      ],
+      "text": "The app registers a single `autocomplete` management command with subcommands install, status, refresh, context, and uninstall, invoked as `python manage.py autocomplete ...`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e53466553ef54788b7351d019629dcd53f2bea8f75853039285b988307b624e9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L65-L65"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c1c1a33f8fb807dfead8fa3e90d8a04a436839984bd0964bdfbd270a6028b03",
+        "slc_3eed6a365b21a27fd24385447bb0d805dcd1f5e96da3c77ac062684871a28f2d"
+      ],
+      "text": "`autocomplete context` prints a compact markdown summary of project-local commands with flags and help plus per-app migration names; `--json` prints the full cache and `--refresh` forces a rebuild first."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_63e4d8753bed330a8626d0f876b840cac58bac1fbd4bb652c7ff9cbb837e3cfd",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 26,
+          "line_start": 19,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L19-L26"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L85-L85"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L83-L83"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 118,
+          "line_start": 87,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L87-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16f3adeda4b66e80957c76e19db82799dfafe3f87fe8018ed9b3d89916b433b5",
+        "slc_1d17e2062795c82d1ecce721e78b304727c2b9442d163def0fb52d0c28236712",
+        "slc_965a056bb49456b29cce3e1f36e213870e9d91c425e6712876ff18825ea3c8a4",
+        "slc_fa986efaa35cfa2b6c6dc50ddaa28b9f61c9b791199e75e63920fb1167591772"
+      ],
+      "text": "State lives in `{project_root}/.django-completion-cache.json` (schema version 2), holding command names, app labels with local/pip origin, per-command options and help, migration names, warnings, and a generated_at timestamp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90afabb4a6dc2077803923501739316bc6804e2f95d174ef8d3b35c3055d4eca",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 129,
+          "line_start": 129,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L129-L129"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ccb97e3b316183c07e9b5616c27a4fd030fd8697052f670749160479d5900656",
+        "slc_d4abcbc62c6ddb88b49a97529f5cb24adc6102851b68594589554cf2bab2306d"
+      ],
+      "text": "The cache is machine-specific runtime state not meant to be committed, and its format is a documented contract: additive changes do not bump schema_version, breaking changes do, and consumers must ignore unknown fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57cae18fe09ba3e0f77ec588f7577f77af4ea4b206b96001c45aaa921978c88e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L73-L73"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L50-L50"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L46-L48"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15e14dee94001ebddc79f79665ce45d6da00543b472d5e6cb5e43a136f7679b3",
+        "slc_2f0fc1ec738545ffd820556ea751147741bf51b2ac0e0414dc0aafbb355852ef",
+        "slc_b46bb8e8858f55251400f08ce99f45bc4564d60f200a3b45fd0413fc89056772",
+        "slc_c471aeb059dd236fb28038acef9ecfdb9de59e893db0b57758220e427f5c82c5"
+      ],
+      "text": "When the app is in INSTALLED_APPS, its AppConfig wraps Django's command execution so a background thread refreshes the cache after manage.py runs, with a 60-second cooldown, a process-local lock, and no blocking of the triggering command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_91468b875cced83092dcf43d2a6669eb4f7d223af90c8a5d1881be43cd9b2d6c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 92,
+          "line_start": 89,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L89-L92"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L133-L133"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L11-L11"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 170,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L161-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fff593d62fcb9a5429dd2b40c566ecb1fe1a8be491dced3a0a8bd2b714fcd03",
+        "slc_187d0a58b9e5c6dc9f1288cbe74931fd48ca6b280e310951461b7f31bf801117",
+        "slc_34b2dc55fcdf99102d1eed17a344f70c6e81b47d07058dc0127a18933b62afe5",
+        "slc_5725c04bbe55d877976fe13dee7e59780d3379d853553f8898ccbf6c1432019e"
+      ],
+      "text": "Tab completion never imports Django or touches the database; shell scripts only read the local cache and call an internal helper `django_completion._complete`, which is explicitly not stable public API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e162e1f946ed82c8252fd2ae8e299e70fb59cd6b90b047e6b24dd861b961bd0",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L40-L40"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L32-L32"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L34-L34"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "docs/how_it_works.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md#L36-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1909e61120a74bec0017590f7e26252c794a4ca5fd4dd7092772576dddf14f25",
+        "slc_640b8abdcffec6286be76ad21fcec36182ad73f8cfbd15b84ad27dea8026c4fd",
+        "slc_88f937dd8fde58ecb0723ca564fc59a4c6442b0f40d3c39e010efdac46944a06",
+        "slc_8e02805e071fe87840d9992211bb00a7601a437415a8000a70af0187345a42bf"
+      ],
+      "text": "Migration completion is based on migration files on disk rather than database state, respects settings.MIGRATION_MODULES, ignores private, hidden, and non-Python files, and adds `zero` at completion time rather than storing it in the cache."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_356267357153856747deabec21b33d446e4636bb3a78fa0af38b48c3fd84d879",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 145,
+          "line_start": 137,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L137-L145"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 157,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L149-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b4e5b46fc02672f8dd416e408e123257e9add7f16e3b3f74fefceb47904d4f35",
+        "slc_c6fd9d868ddb44671443d5f675a38b57eff595378e35d331a63b8f0b08bc3d14"
+      ],
+      "text": "Documented compatibility: Python 3.10+, Django 4.2+, bash and zsh shells, Linux and macOS expected; Windows is not officially supported though WSL with bash/zsh may work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70aff5eb5918dd18f410efe9b79d0294a72452dbf16116dc87aad119b2babaef",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 188,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L183-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_331da164d038ae1fea51b2d4e7762219a18cfbc63ee67c889d93c28c7aa98020"
+      ],
+      "text": "Stated limitations include bash/zsh only (fish planned), no django-admin support, no global options before the command, no custom alias support, and no database-aware applied/unapplied migration filtering."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44d7ace5bf347adac4a794687072ae1f962ffb53c3de4f6aac4a83171baa1e85",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/api.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38e018a863ae3be72c3574cf3c4ed562252492e49eba2cd689d3d3e2d646ecd8"
+      ],
+      "text": "The package exposes no stable public Python API for applications; it is primarily a Django management-command integration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_96edf60266c3351b14e406db12d31fda29dda07a1ceda46ec8d6d4c81f2d88d6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 209,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L202-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bae3adf929080ca2fed6a6388730386136db227b1829bdfbf173336a2082e27c"
+      ],
+      "text": "Repository development practice: contributors run `uv sync`, `uv run pytest -q`, `uv run ruff check .`, and `uv run ty check` after cloning the repo."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4ed95e77fa10fcd44ae6b2a42ef32957e639ecbfbe4efba804541b6692c2095",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 90,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L84-L90"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L73-L73"
+        },
+        {
+          "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+          "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+          "line_end": 82,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "soldatov-ss/django-completion",
+          "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md#L78-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03003bd0d594e54e6307ba1a4a7b375eb3fb5c702fccc494253d29e0aa3a18af",
+        "slc_b193c3e5a94a48702faa47ea73e7421fbccf43765f42f926188c81cd8a149248",
+        "slc_e16d1c307dccd0012f939885fb0fe4fae1135f4e2f550450c56df928b256fd59"
+      ],
+      "text": "Repository development practice: the README ships an AGENTS.md/CLAUDE.md snippet instructing agents to read the cache file instead of running `manage.py help` or grepping management/commands, and to run `autocomplete context` on first visit."
+    }
+  ],
+  "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 211,
+        "path": "README.md",
+        "size": 8504
+      },
+      {
+        "lines": 159,
+        "path": "docs/api.md",
+        "size": 5506
+      },
+      {
+        "lines": 55,
+        "path": "docs/comparison.md",
+        "size": 3640
+      },
+      {
+        "lines": 113,
+        "path": "docs/how_it_works.md",
+        "size": 4286
+      },
+      {
+        "lines": 61,
+        "path": "docs/index.md",
+        "size": 4175
+      },
+      {
+        "lines": 104,
+        "path": "docs/installation.md",
+        "size": 2275
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 7880
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 4290
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 8486
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3934
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1601
+      },
+      {
+        "path": "docs/agents.md",
+        "reason": "file-budget",
+        "size": 4993
+      }
+    ],
+    "omitted_count": 6,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 101,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 12,
+      "complete": false,
+      "omitted": 6,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_924a446cb5b45b5db77bcb6100f3c982",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/soldatov-ss/django-completion/924dfae6094cf7b8a3e696dc9666de904742c8b1/115737500698c399/manifest.json",
+  "package_id": "pkg_b83db9cf3a3c877883d8f1731bc0c4522f4171ddb762699ab277db8cfcb2730c",
+  "repo": "soldatov-ss/django-completion",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7bb1299e0b0029fa49bab7dd611db5ae80aba71eb3374aebcf6ddc1f4cbed519",
+  "snapshot_id": "115737500698c399",
+  "sources": [
+    {
+      "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+      "git_sha": "9d798c60d36e692c978cc65fcf5362c0ea4589fe",
+      "lines": 211,
+      "path": "README.md",
+      "repository": "soldatov-ss/django-completion",
+      "sha256": "d3151b6faff7cdda9cb7a9faa579c5cf27f5ba02383b2bc8bca1d3e6b7ad9e0c",
+      "source_id": "src_60e787158c22502284f05fbef25f958a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/README.md"
+    },
+    {
+      "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+      "git_sha": "05481156f89afa6ca7b4717bac41731d8571e30a",
+      "lines": 159,
+      "path": "docs/api.md",
+      "repository": "soldatov-ss/django-completion",
+      "sha256": "856a9d8e69866245354a4b77ffcb88a41896d4509f50af66f485311ece3cc717",
+      "source_id": "src_bb9a7dbe414d55da8c79f80fa35692da",
+      "stored": "api.md-9eddf4dc51bf.md",
+      "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/api.md"
+    },
+    {
+      "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+      "git_sha": "898661080b81204220d6487f29fded2c5bbfc02b",
+      "lines": 55,
+      "path": "docs/comparison.md",
+      "repository": "soldatov-ss/django-completion",
+      "sha256": "c92f0ec080ba2dd4b8bd87ab96b4d51bed53a707ce0b7c855ec45fcaf7d27cfe",
+      "source_id": "src_cfe0e2c32d815187a20476d7bd901c40",
+      "stored": "comparison.md-5b350409df0c.md",
+      "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/comparison.md"
+    },
+    {
+      "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+      "git_sha": "fc5f9631e9b6846485824079f52c66345687725f",
+      "lines": 113,
+      "path": "docs/how_it_works.md",
+      "repository": "soldatov-ss/django-completion",
+      "sha256": "9d497372d1daf2ee1a5df9db8d380849298091bda2c7f829f8561f22eefbfda1",
+      "source_id": "src_539d3c4ead475a54b162944afabb9ec4",
+      "stored": "how_it_works.md-b1b3a0b219a2.md",
+      "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/how_it_works.md"
+    },
+    {
+      "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+      "git_sha": "d37a44e0839d4a6605dcea516d0eca69b1906c0d",
+      "lines": 61,
+      "path": "docs/index.md",
+      "repository": "soldatov-ss/django-completion",
+      "sha256": "3cf6acd3d8b9f06c986dfbb898d67740b04ca84f0f7a3654a110a5bfb16af652",
+      "source_id": "src_3fc1db60c4545dcf935fcd70b904a13e",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/index.md"
+    },
+    {
+      "commit": "924dfae6094cf7b8a3e696dc9666de904742c8b1",
+      "git_sha": "4c04a7d6a4b72f0e9c98d2f24601da0b08c572ae",
+      "lines": 104,
+      "path": "docs/installation.md",
+      "repository": "soldatov-ss/django-completion",
+      "sha256": "32fe91b2e8b0fc0761c9eee4f2356da145ec33b50e3452a9766e942a31a89420",
+      "source_id": "src_c0c264610a3d5c5f9d290ed7dbf19cb5",
+      "stored": "installation.md-8b042e3f94ca.md",
+      "url": "https://github.com/soldatov-ss/django-completion/blob/924dfae6094cf7b8a3e696dc9666de904742c8b1/docs/installation.md"
+    }
+  ],
+  "summary": "Selected evidence records: The app registers a single `autocomplete` management command with subcommands install, status, refresh, context, and uninstall, invoked as `python manage.py autocomplete ...`. `autocomplete context` prints a compact markdown summary of project-local commands with flags and help plus per-app migration names; `--json` prints the full cache and `--refresh` forces a rebuild first.",
+  "superseded_claim_ids": []
+}

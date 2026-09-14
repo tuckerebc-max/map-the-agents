@@ -1,0 +1,654 @@
+{
+  "applied_operation_id": "op_7ca510f7e3ec4340959fa207a7ca7a5b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd4be6fd6c0a5cb88bf97a6edd6cfdbd3588505cc70fef926ad6bb25e23c801d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L26-L28"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L9-L11"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 24,
+          "line_start": 13,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L13-L24"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 31,
+          "line_start": 30,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L30-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20ab9426d12e490d8bcc02c5952d669b5c9d8898210721730f5eb56dcc4ed891",
+        "slc_5cfb406fb0d049acb96c4a805c9460b7ff9e1d8dddef36606cfaef669e624735",
+        "slc_61421d9b597cbb59f77dc347de4444474dc0dda27e5a15cede309c90abe730cb",
+        "slc_9ebeab0927dc6fff2c8111c834a545781925f9783003cafbd2ff8d17064fc69f"
+      ],
+      "text": "The repository is organized into five main parts: a CDK infrastructure directory, an agent-core shared module, a Slack Bolt app, a worker package containing the AI agent implementation and tool suite, and a Next.js webapp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d11f6f74da7bbbb3995bc56eb90c6fd330d5f0e18fcbca9d4e6b3083d48f098",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 300,
+          "line_start": 296,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L296-L300"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 310,
+          "line_start": 307,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L307-L310"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 315,
+          "line_start": 312,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L312-L315"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 305,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L302-L305"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 321,
+          "line_start": 321,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L321-L321"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3534f58443f1895cde83ebeeb32d351bd674435bff16f0f44dbe35680a8d29bc",
+        "slc_4313f1e1e4e3e99fc5bb2970dd861ff782415f37c0480ceb20f1664d40159fae",
+        "slc_4cc4381e1dca49d7d76a5328e693a2cd847caab72d4c05950b1940452cd8b28c",
+        "slc_4d4b3295d63ef03a41b47ce1abfade668b9b3374b16ba9ddae728feb0354983f",
+        "slc_e2ada9c57a140ceb04a759d67d8728e06ca975c4e1272ea1b71c83a1ebcf0206"
+      ],
+      "text": "Users can interact with the deployed system through a web dashboard, a Slack bot, RESTful API endpoints, and a GitHub Actions integration that triggers agents from repository events."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1187204a34b2752d027d42963473c6aad209cd06f58e637817e6bd13ae48cb2d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 394,
+          "line_start": 391,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L391-L394"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 385,
+          "line_start": 383,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L383-L385"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 399,
+          "line_start": 396,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L396-L399"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 389,
+          "line_start": 387,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L387-L389"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5984e01492086e18eb4de48f044a6473814d51772d17693db9984dfbe8052937",
+        "slc_75f4ab191befa989c1adaf54a46b39766488c5b73c13d821e7ac4520cfe5978f",
+        "slc_852c626ef55273c3637664292a85e45a1964a38ecf10f7c08078399dd9a08a7a",
+        "slc_fc376aaa6fb106f35cfb5e82becfa4df4238a125767b1c407266a07f9d0fb7ab"
+      ],
+      "text": "Slack messages reach an API Gateway webhook feeding a Lambda, which publishes to AppSync Events and stores history in DynamoDB; a Worker Manager provisions an EC2 instance plus EBS volume per new thread, and workers subscribe back to AppSync for messages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5717364b48e2045cecc46b1d3487ed184b7bd097f5b53dea33c5569e1cd71c7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 329,
+          "line_start": 329,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L329-L329"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 327,
+          "line_start": 327,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L327-L327"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05dd82b58419e15620db049ec3c62bde60a9ef7d1c29d4b16944781b7cba9b33",
+        "slc_40e4d9fd70bc43a67354418b02e82508fcb27cd5e0bc89e4c9131319e530f425"
+      ],
+      "text": "The system is designed as a single-tenant deployment, one per tenant, relying on a pay-as-you-go model so multiple deployments carry minimal infrastructure overhead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d3cb2c3b9a0aba78b66e321ba26a93bbd4b4ea2274dbbd31dc98179c7c3114a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 416,
+          "line_start": 413,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L413-L416"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L97-L97"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 101,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L99-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cebd920b37cd794f86805113e4588e8f0cfe17c029cf4fca5bd2c059ce02013",
+        "slc_b2c7aa581e7aca03a25171a0d2e1233d8a8d37ccfee485050d9ce12f9f1393ae",
+        "slc_b8ec0560bf6a6e203980c7fae4722a05bf1177c71bba913f85a77f07b55a851f"
+      ],
+      "text": "Worker instances receive minimal IAM policies by default (logging, self-termination, S3 read), and extra permissions can be attached via the WORKER_ADDITIONAL_POLICIES environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5dfc841670e55ddaea8032482e841f71b1ffd9decfb4ea06fdfd1fc576feef3f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 336,
+          "line_start": 333,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L333-L336"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41fac397a4046a8b8384af28b6f1b16865ab1650712599ce106ce18ef213529d"
+      ],
+      "text": "Access controls differ by channel: Slack access can be restricted via SLACK_ADMIN_USER_ID_LIST, Cognito self-sign-up is disabled by default with equal permissions for account holders, REST API access requires knowing an API key, and any repository collaborator can invoke the GitHub Action."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41240c5e4120c4c4e8c5078975b471e78af5d15ebf26684fabd62c7012d1cff9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 51,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L47-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_995aad854948117b6f14c316a3e63acd711b2b3cd61c59e8f0bf4ec33db27128"
+      ],
+      "text": "Deployment prerequisites are Node.js 22+, npm 9+, AWS CLI, an IAM profile with appropriate permissions, and Docker."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d2d0760ad6e7d0b6301cb3a6433c73114196785334155cc0e2ca987ac87bcf9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 355,
+          "line_start": 355,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L355-L355"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 453,
+          "line_start": 438,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L438-L453"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27fc70a3887876c90cfb80adf8872b5f0c0b510cbf6bc614fca7b596665daf74",
+        "slc_d097e8cb12f4980a83fa423ef034e69947977afc7623330bb2046978f8f3f55b"
+      ],
+      "text": "The agent runs on AWS Bedrock models; the cost table assumes Claude Sonnet 3.7 usage, and a web UI setting selects the default foundation model for new sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b1c8cf5102e89e305faebae96ead27abcf0c9b42dc579aa890159cf5be85c1a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 377,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L377-L377"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 363,
+          "line_start": 363,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L363-L363"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a6b3f51237749897e054e8e13f9231930adc7658073242e6316f6c723ed681d",
+        "slc_abe950589472188beb09beeaf96e048f658c28ebe6a89d041cad6ea99d50637a"
+      ],
+      "text": "The agent acts as an MCP client; integrations are configured by editing packages/worker/mcp.json and redeploying, after which new agents can use MCP servers as tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1abfdd25798982ab7a7f23dae9e1f4cf2a7244df937ddb2e885023e1676fdac",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 209,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L208-L209"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 154,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L153-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4978bbdedb046946c483abc64de1dc854302e8aef3c4dbb3da810e306f7d8a04",
+        "slc_53d5c8e2860a903d4fb05a171ce5bc18652cda181edd1eac85aa24310923afe2"
+      ],
+      "text": "GitHub integration supports either a personal access token stored in SSM (simpler, single-user) or a GitHub App (recommended for teams), and with the App option only repositories under a single organization installation can be used."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05169d21606bea3932ce1d8b11cf57e2da45a796dad3b0d84848d6ef8768b0fb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 184,
+          "line_start": 179,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L179-L184"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 175,
+          "line_start": 167,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L167-L175"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 203,
+          "line_start": 203,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L203-L203"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ed34357e1353dcc9eb6641124174e5bd2e44bfd7283281fd0038f423dcda4c2",
+        "slc_7ea40b5e8dc8e2b3e26ba0b40b1a7a612be02369906e1cdb734e3a41f6bc6b67",
+        "slc_f1aa1ce92992157b8e4994fe799bec78ccde3239594ebff484f66e60a3fa84dd"
+      ],
+      "text": "Repository development practice: AmazonQ.md prescribes contributor conventions including TypeScript, Prettier formatting, avoiding comments unless necessary, using Next.js server actions with Zod schemas and authActionClient, and building agent-core before other packages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_059a883de673835b4c954621f5e5b33618215d2cfcb75ee46ef518fe64ab7c1e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+          "line_end": 248,
+          "line_start": 244,
+          "path": "AmazonQ.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md#L244-L248"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8cac1cf458a5126b7e31d4977313c27d0d2ec50e13149177c77c5db5480b2c47"
+      ],
+      "text": "Repository development practice: the documented development flow is to create a branch, implement and test, run format and type checks, open a PR with an English title and description, and request review once CI passes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4d655ac512d332f1d365933375bdb1439a9e3d25ee1baf5ee628523d42c18f5",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L39-L39"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L32-L35"
+        },
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_504373405e1b14b6009ec374d93a4ef74dae683f4720a1ec70d78f06c4f73363",
+        "slc_e4f11175a042eb7ae1100da8e55b9ee7dfff0ab438d09ee86b21bcc28d839f91",
+        "slc_f84ac9c1896866943fddfcb8312b4f224b6bf0c111c75b11fe719e8a1b36b405"
+      ],
+      "text": "The README showcases example agent sessions and a search link to public pull requests authored by the agent, suggesting demonstration-based evidence of capability rather than a formal benchmark harness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e1c3fd2490d7b7f9b21159e405c2b0b861730f73d4b947691a9c09483e7954c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+          "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+          "line_end": 209,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "aws-samples/remote-swe-agents",
+          "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md#L208-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4978bbdedb046946c483abc64de1dc854302e8aef3c4dbb3da810e306f7d8a04"
+      ],
+      "text": "When using the GitHub App option, the system is limited to repositories under a single organization (app installation), per the README note."
+    }
+  ],
+  "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 474,
+        "path": "README.md",
+        "size": 23988
+      },
+      {
+        "lines": 261,
+        "path": "AmazonQ.md",
+        "size": 8872
+      },
+      {
+        "lines": 4,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 309
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3160
+      },
+      {
+        "path": "README_ja.md",
+        "reason": "file-budget",
+        "size": 29742
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 578,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": false,
+      "omitted": 2,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_cf71e0f6c11756359e55aa1c8891d872",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aws-samples/remote-swe-agents/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/a5513177dfea5d49/manifest.json",
+  "package_id": "pkg_90945b9c948a1308df0093b52714b153719ba0ef3d07d5b8dc299ad901d032bb",
+  "repo": "aws-samples/remote-swe-agents",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b5daf862b101a7a70be985a816c737c11967bb2d0bffaf973e43d0fe4880be60",
+  "snapshot_id": "a5513177dfea5d49",
+  "sources": [
+    {
+      "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+      "git_sha": "bb8de5d59807d162b844f59fd978c4f5094ad6e7",
+      "lines": 261,
+      "path": "AmazonQ.md",
+      "repository": "aws-samples/remote-swe-agents",
+      "sha256": "77492377de051eef545c88590bf3a279345fa9e36d06284667a8462610f8a4b3",
+      "source_id": "src_587abd3e0a195643a6772252f3cf2216",
+      "stored": "amazonq.md-f5c9a6f22a57.md",
+      "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/AmazonQ.md"
+    },
+    {
+      "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+      "git_sha": "5b627cfa60b5313da2c7df81aab2340225c2329f",
+      "lines": 4,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "aws-samples/remote-swe-agents",
+      "sha256": "34b6c98d5c23127ae6769e95e483e5bf6d3704ae1f0d3ae4e69d15f4ede118b6",
+      "source_id": "src_3df1f965ca885205a95cf4d912ebe9c1",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b",
+      "git_sha": "86a40f51c6b8048b2ebc5e65a546bb7eebd56f19",
+      "lines": 474,
+      "path": "README.md",
+      "repository": "aws-samples/remote-swe-agents",
+      "sha256": "e58a7282d91f3195040e3bae18d3aaec9414ce543145c134b250583393764d36",
+      "source_id": "src_13e91e8555f05c699f77d1e8ce2b7c6b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aws-samples/remote-swe-agents/blob/3a34a9b4d0dab1cb09dc41c292990d7e5ae7259b/README.md"
+    }
+  ],
+  "summary": "README and AmazonQ.md describe a self-hosted, AWS-serverless autonomous software development agent deployable via CDK, with web, Slack, REST API, and GitHub Actions interfaces, and a worker architecture on EC2. Most evidence is documentation; contributor coding conventions appear in AmazonQ.md. Evidence coverage: 154 of 157 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

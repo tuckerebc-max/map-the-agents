@@ -1,0 +1,472 @@
+{
+  "applied_operation_id": "op_636c316dd368487894232d38f828d83f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1589f315b690b13265b2e92e0b57bae1bc305df92dc0668dd4d97ae6e326e6e3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 83,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L78-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51ada53fcbc4f60df93f903de568f0292afe70c6cff9374f4e04d27a140955c7"
+      ],
+      "text": "The product organizes work hierarchically: a machine is a runtime endpoint, a project is a folder on it, a workspace is a provider-owned working folder, and a session is a Pi Coding Agent chat inside a workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d60f58ee64c1335c77a3db2cdbda825769fcaafa33eba90b80c6f1faa15a259c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 29,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L24-L29"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_609f25774f42885b122dd93999df4490c7aabfbec164fd0116b05fa08d18f6a6",
+        "slc_a888cfaf4545a5e50f1c03b4fee5a1c6371eca3920e6f449c994a6d787e77ca9"
+      ],
+      "text": "Sessions are designed to survive browser disconnects, letting users supervise agents from any browser while work continues on the host machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8967c45b5d29a110cdac6308247608e5f58ccb0c57c0ee54df69052f026a0011",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 40,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L37-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a3bd483bc6078988a166993eb8ae11c9d71ad2c8832f8e54fc462aacda107e5"
+      ],
+      "text": "Running PI WEB requires Node.js 22.19.0 or newer, npm, a Pi Coding Agent of at least version 0.84.0, and git plus the development tools agents need."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4d9cf321f8ecae1861ede17de1fd1a7e7553eb219d6e9ed4c289cf1f66d1714",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L50-L50"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 48,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L44-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09153479bf66385f87f79810ab0517cad2c93846b2036864a2e466b669c1d768",
+        "slc_5ce822156e5da02819a05ad07302d6c56f44b3d7cd96f5bfe614d5ce589de7c3"
+      ],
+      "text": "Installation uses npm with the scoped --allow-scripts=node-pty flag so node-pty can build its native module without enabling install scripts for other packages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d530a1f25c83e05f228999bdb8b54f6c8ade851927ab79df85ac03529400b050",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L171-L171"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L169-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20d14fccc8c0e7544d078deb63abecff954cb1f0321991225078550ff10f4cd7",
+        "slc_41551ebc61db749eea27c37678501df15e653e8fd82efd5403bc4b152aa53bdf"
+      ],
+      "text": "The security model assumes trusted users, repositories, and server paths; the product is explicitly not a sandbox, permission system, or multi-tenant platform and should not be exposed directly to the public internet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa44460aebcf86a4b35d21cf46d876604f4f4c08595a17520f18b6c93974cb11",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+          "line_end": 105,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md#L105-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a29470d7ad0188adc37e3975f983bd081b59b4167677a3725da2cea5c3487042"
+      ],
+      "text": "PI WEB can register other PI WEB runtimes as remote machines, with one browser-facing instance proxying projects, files, git state, sessions, terminals, and Pi package management from trusted remote machines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d93387b1a99c554df0f156da90a3c302707cccbcc40c0346c3d9f69519e5bcde",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 198,
+          "line_start": 198,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L198-L198"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 200,
+          "line_start": 200,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L200-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b9de41441998b515d7ccb616f8864106a7ae5e2072a7e7fba0d6bdf2cd9d5cd",
+        "slc_80bca31cd895d5d5892a8f41efd5682acfe52288d68bf897b225d87eaae3a42b"
+      ],
+      "text": "PI_WEB_DATA_DIR sets the root for managed runtime state (default ~/.pi-web), holding project and machine registries, discovered plugins, the session-daemon socket, and session archives; each data directory starts independent and empty."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e50a8246cedf5912f0eae6378494203698501ec6ef69568902a56b87cd1b1640",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 202,
+          "line_start": 202,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L202-L202"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a20fa5fd5cb96e76bcb4ea4bf723b3c136cb090710abd4db9266a71afad97c3d"
+      ],
+      "text": "One live session daemon owns each data directory, recording ownership in sessiond-owner.json; a second daemon pointed at the same directory fails loudly at startup, while stale markers from dead daemons are taken over automatically."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f998c5bb9928e7ded53452411afad097e2584eec3bed5c2d253048c983e6e9c6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L36-L38"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L40-L40"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L108-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26c8c05923a2bce47e1a33b3f59e2f992af4f7dcdea1a384d0cf458f151740ef",
+        "slc_321115cbcacf4a980211adaa6a866cdef44087bfaebde02a6436aee453b6a24c",
+        "slc_65fd6b31158447b65bf0d61c925192c5d4f2b514b806adfbbee89ff2a7ed5dfa"
+      ],
+      "text": "Configuration resolves as defaults, then the global config file, then environment overrides; project-local <project>/.pi-web/config.json can override upload and attachment defaults and merge allowed paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e59eb1dd41b81a120cdc28850402c76e612d4b7040b2482363470b04bb408920",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 230,
+          "line_start": 230,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L230-L230"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 226,
+          "line_start": 226,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L226-L226"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 216,
+          "line_start": 216,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L216-L216"
+        },
+        {
+          "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+          "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "docs/config.md",
+          "repository": "jmfederico/pi-web",
+          "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md#L218-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ab1dc8b84498ab019812227c9925de60ebb1e3d1a35d528d479c798d807c188",
+        "slc_363296cd49b2d3f87054ebfb83f9a7f8123ee68be7adffb3109ea23fc3c48f43",
+        "slc_4b6d20605241668ad087378a5c84822d97e406426feb46465a2b9ff109963c32",
+        "slc_6cdee19e3fda51fa1fc99317e7c2d66ded733d203280032ad9b2dc65c37ea1f0"
+      ],
+      "text": "By default workspace-relative file reads stay inside the workspace and absolute paths are denied; pathAccess.allowedPaths grants the file explorer access to specific external filesystem roots, with symlink escapes rejected, though this is not a sandbox for the agent or OS user."
+    }
+  ],
+  "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 185,
+        "path": "README.md",
+        "size": 6195
+      },
+      {
+        "lines": 49,
+        "path": "AGENTS.md",
+        "size": 4209
+      },
+      {
+        "lines": 476,
+        "path": "docs/config.md",
+        "size": 47985
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 83420
+      },
+      {
+        "path": "docs/plugins.md",
+        "reason": "file-budget",
+        "size": 109149
+      },
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 117
+      },
+      {
+        "path": "docs/testing-skill-compliance-audit.md",
+        "reason": "file-budget",
+        "size": 12170
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 895,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 4,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_797d053e946553008e6d4ae1271aa37e",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jmfederico/pi-web/46579c049a305b6a146d1028e539ca6d071fbfb4/3287e18d140e16b7/manifest.json",
+  "package_id": "pkg_9fa4e8b07ac55f5642b0a38fa496b39a64c42fdadfaa4987599898f4a8f88b2c",
+  "repo": "jmfederico/pi-web",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8c171a182a4552f7b3aab00831855d2f07e0c07063856f8a2af615300a0be9d6",
+  "snapshot_id": "3287e18d140e16b7",
+  "sources": [
+    {
+      "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+      "git_sha": "8dda4ff67ace8d0a26e133961a39f0c592e25156",
+      "lines": 49,
+      "path": "AGENTS.md",
+      "repository": "jmfederico/pi-web",
+      "sha256": "27b2111ac0de2e85990c1548f6f233443f4528d8c30a1514fa1953fc0b765b38",
+      "source_id": "src_fa41139eb68956c19b1b732a3e8a543a",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/AGENTS.md"
+    },
+    {
+      "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+      "git_sha": "d60bf298b4413bca11d019349476548c97a44d42",
+      "lines": 185,
+      "path": "README.md",
+      "repository": "jmfederico/pi-web",
+      "sha256": "92f566d66121350dd0edf767300a1d4188a0766fc628bbfebb487932f6d7895a",
+      "source_id": "src_83dceec3784052a09cea4752da3be4fa",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/README.md"
+    },
+    {
+      "commit": "46579c049a305b6a146d1028e539ca6d071fbfb4",
+      "git_sha": "422a0b0ad4e1d758483c3ba6b503c526559f6d4a",
+      "lines": 476,
+      "path": "docs/config.md",
+      "repository": "jmfederico/pi-web",
+      "sha256": "08f2155d595d7d1d70dae766d8e9c66d28010fce9b03fed07ed2c70385897c6c",
+      "source_id": "src_68bb307225295cee8b4ab485112cfe7f",
+      "stored": "config.md-77b3519370ff.md",
+      "url": "https://github.com/jmfederico/pi-web/blob/46579c049a305b6a146d1028e539ca6d071fbfb4/docs/config.md"
+    }
+  ],
+  "summary": "Selected evidence records: The product organizes work hierarchically: a machine is a runtime endpoint, a project is a folder on it, a workspace is a provider-owned working folder, and a session is a Pi Coding Agent chat inside a workspace. Sessions are designed to survive browser disconnects, letting users supervise agents from any browser while work continues on the host machine.",
+  "superseded_claim_ids": []
+}

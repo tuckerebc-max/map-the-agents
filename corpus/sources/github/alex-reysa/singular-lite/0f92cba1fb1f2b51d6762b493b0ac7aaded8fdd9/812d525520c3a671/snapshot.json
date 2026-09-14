@@ -1,0 +1,865 @@
+{
+  "budgets": {
+    "bytes_stored": 37020,
+    "max_bytes": 70000,
+    "max_files": 3
+  },
+  "commit": "0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9",
+  "commit_date": "2026-09-05T01:52:17Z",
+  "default_branch": "main",
+  "dir": "sources/github/alex-reysa/singular-lite/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/812d525520c3a671",
+  "explicit_paths": [],
+  "files": [
+    {
+      "git_sha": "30d306c59947ba72eb68b93719ebd5ce43a7528f",
+      "lines": 616,
+      "path": "README.md",
+      "raw_url": "https://raw.githubusercontent.com/alex-reysa/singular-lite/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/README.md",
+      "sha256": "851615db83b739163f86f7f3b8ce7ac147b9c5f3e05ee94b1414667c75b884c1",
+      "size": 35533,
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/alex-reysa/singular-lite/blob/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/README.md"
+    },
+    {
+      "git_sha": "a00feace5e0a2fccf612129c5c83344f2ba68e18",
+      "lines": 18,
+      "path": "CONTRIBUTING.md",
+      "raw_url": "https://raw.githubusercontent.com/alex-reysa/singular-lite/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/CONTRIBUTING.md",
+      "sha256": "a9f58610a8a6b2256d33836b091df630f926e299f93a0225f8691441e3c20d7d",
+      "size": 684,
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/alex-reysa/singular-lite/blob/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/CONTRIBUTING.md"
+    },
+    {
+      "git_sha": "28833d65420bcd6ca45e350ac35ba1f1e86103cb",
+      "lines": 19,
+      "path": "SECURITY.md",
+      "raw_url": "https://raw.githubusercontent.com/alex-reysa/singular-lite/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/SECURITY.md",
+      "sha256": "c4ff22cdfe69e287c7a6e89bf187451d76957420bcb7e68ea1e41b76e5a696ee",
+      "size": 803,
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/alex-reysa/singular-lite/blob/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/SECURITY.md"
+    }
+  ],
+  "full_name": "alex-reysa/singular-lite",
+  "license": "GPL-3.0",
+  "omitted": [
+    {
+      "path": "CHANGELOG.md",
+      "reason": "byte-budget",
+      "size": 113836
+    },
+    {
+      "path": "docs/context-build-plan/00-overview.md",
+      "reason": "file-budget",
+      "size": 13601
+    },
+    {
+      "path": "docs/context-build-plan/experiment-report.md",
+      "reason": "file-budget",
+      "size": 8529
+    },
+    {
+      "path": "docs/context-build-plan/graph-event-mapping.md",
+      "reason": "file-budget",
+      "size": 9532
+    },
+    {
+      "path": "docs/context-build-plan/singular-brain-integration.md",
+      "reason": "file-budget",
+      "size": 8782
+    },
+    {
+      "path": "docs/context-build-plan/stage-0-baseline.md",
+      "reason": "file-budget",
+      "size": 3535
+    },
+    {
+      "path": "docs/context-build-plan/stage-1-planner-persistence.md",
+      "reason": "file-budget",
+      "size": 4212
+    },
+    {
+      "path": "docs/context-build-plan/stage-2-plan-critique.md",
+      "reason": "file-budget",
+      "size": 3923
+    },
+    {
+      "path": "docs/context-build-plan/stage-3-plan-revision.md",
+      "reason": "file-budget",
+      "size": 3618
+    },
+    {
+      "path": "docs/context-build-plan/stage-4-context-packets.md",
+      "reason": "file-budget",
+      "size": 3414
+    },
+    {
+      "path": "docs/context-build-plan/stage-5-routing.md",
+      "reason": "file-budget",
+      "size": 4424
+    },
+    {
+      "path": "docs/context-build-plan/stage-6-graph.md",
+      "reason": "file-budget",
+      "size": 3535
+    },
+    {
+      "path": "docs/context-build-plan/stage-7-eval.md",
+      "reason": "file-budget",
+      "size": 3193
+    },
+    {
+      "path": "docs/handoffs/0.15.1-provider-classification-and-diagnostics.md",
+      "reason": "file-budget",
+      "size": 14798
+    },
+    {
+      "path": "docs/handoffs/0.16.0-setup-sandbox-and-plan-ux-audit.md",
+      "reason": "file-budget",
+      "size": 34986
+    },
+    {
+      "path": "docs/orchestration/areas/reliability-contract.md",
+      "reason": "file-budget",
+      "size": 5217
+    },
+    {
+      "path": "docs/orchestration/decisions.md",
+      "reason": "file-budget",
+      "size": 138616
+    },
+    {
+      "path": "docs/orchestration/gates/evidence/rel-00-contract.regression.txt",
+      "reason": "file-budget",
+      "size": 6722
+    },
+    {
+      "path": "docs/orchestration/gates/evidence/rel-01-per-try-logs.regression.txt",
+      "reason": "file-budget",
+      "size": 6586
+    },
+    {
+      "path": "docs/orchestration/gates/evidence/rel-02-try-hygiene.regression.txt",
+      "reason": "file-budget",
+      "size": 6586
+    },
+    {
+      "path": "docs/orchestration/gates/evidence/rel-03-integrity-reclass.regression.txt",
+      "reason": "file-budget",
+      "size": 6586
+    },
+    {
+      "path": "docs/orchestration/gates/evidence/rel-08-route-transcript.regression.txt",
+      "reason": "file-budget",
+      "size": 6586
+    },
+    {
+      "path": "docs/orchestration/handoffs/2026-08-16-grok-build-provider-and-v9-resume.md",
+      "reason": "file-budget",
+      "size": 15070
+    },
+    {
+      "path": "docs/orchestration/handoffs/experiment-run.operator-handoff.md",
+      "reason": "file-budget",
+      "size": 4212
+    },
+    {
+      "path": "docs/orchestration/planner-contract.md",
+      "reason": "file-budget",
+      "size": 3277
+    },
+    {
+      "path": "docs/orchestration/project-state.md",
+      "reason": "file-budget",
+      "size": 543
+    },
+    {
+      "path": "docs/orchestration/prompts/auditor.md",
+      "reason": "file-budget",
+      "size": 1182
+    },
+    {
+      "path": "docs/orchestration/prompts/decider.md",
+      "reason": "file-budget",
+      "size": 3092
+    },
+    {
+      "path": "docs/orchestration/prompts/l0-origin.md",
+      "reason": "file-budget",
+      "size": 1285
+    },
+    {
+      "path": "docs/orchestration/prompts/l1-area-orchestrator.md",
+      "reason": "file-budget",
+      "size": 1133
+    },
+    {
+      "path": "docs/orchestration/prompts/l1-planner.md",
+      "reason": "file-budget",
+      "size": 8507
+    },
+    {
+      "path": "docs/orchestration/prompts/l2-test-first-developer.md",
+      "reason": "file-budget",
+      "size": 2386
+    },
+    {
+      "path": "docs/orchestration/prompts/reviewer.md",
+      "reason": "file-budget",
+      "size": 617
+    },
+    {
+      "path": "docs/orchestration/prompts/supervisor-ask.md",
+      "reason": "file-budget",
+      "size": 2096
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0001.md",
+      "reason": "file-budget",
+      "size": 3448
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0002.md",
+      "reason": "file-budget",
+      "size": 5232
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0003.md",
+      "reason": "file-budget",
+      "size": 5501
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0004.md",
+      "reason": "file-budget",
+      "size": 5167
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0005.md",
+      "reason": "file-budget",
+      "size": 7746
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0006.md",
+      "reason": "file-budget",
+      "size": 7645
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0007.md",
+      "reason": "file-budget",
+      "size": 4951
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0008.md",
+      "reason": "file-budget",
+      "size": 6421
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0009.md",
+      "reason": "file-budget",
+      "size": 6899
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0010.md",
+      "reason": "file-budget",
+      "size": 5950
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0011.md",
+      "reason": "file-budget",
+      "size": 8005
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0012.md",
+      "reason": "file-budget",
+      "size": 6158
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0013.md",
+      "reason": "file-budget",
+      "size": 4562
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0014.md",
+      "reason": "file-budget",
+      "size": 5267
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0015.md",
+      "reason": "file-budget",
+      "size": 6384
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0016.md",
+      "reason": "file-budget",
+      "size": 7388
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0017.md",
+      "reason": "file-budget",
+      "size": 8210
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0018.md",
+      "reason": "file-budget",
+      "size": 6869
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0019.md",
+      "reason": "file-budget",
+      "size": 4062
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0020.md",
+      "reason": "file-budget",
+      "size": 5583
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0021.md",
+      "reason": "file-budget",
+      "size": 5765
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0022.md",
+      "reason": "file-budget",
+      "size": 5853
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0023.md",
+      "reason": "file-budget",
+      "size": 6381
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0024.md",
+      "reason": "file-budget",
+      "size": 5173
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0025.md",
+      "reason": "file-budget",
+      "size": 6609
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0026.md",
+      "reason": "file-budget",
+      "size": 6031
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0027.md",
+      "reason": "file-budget",
+      "size": 4211
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0028.md",
+      "reason": "file-budget",
+      "size": 6659
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0029.md",
+      "reason": "file-budget",
+      "size": 8967
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0030.md",
+      "reason": "file-budget",
+      "size": 7095
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0031.md",
+      "reason": "file-budget",
+      "size": 8375
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0032.md",
+      "reason": "file-budget",
+      "size": 6771
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0033.md",
+      "reason": "file-budget",
+      "size": 5901
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0034.md",
+      "reason": "file-budget",
+      "size": 6830
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0035.md",
+      "reason": "file-budget",
+      "size": 6322
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0036.md",
+      "reason": "file-budget",
+      "size": 7182
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0037.md",
+      "reason": "file-budget",
+      "size": 7086
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0038.md",
+      "reason": "file-budget",
+      "size": 6629
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0039.md",
+      "reason": "file-budget",
+      "size": 7261
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0040.md",
+      "reason": "file-budget",
+      "size": 8357
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0041.md",
+      "reason": "file-budget",
+      "size": 5267
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0042.md",
+      "reason": "file-budget",
+      "size": 7587
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0043.md",
+      "reason": "file-budget",
+      "size": 7076
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0044.md",
+      "reason": "file-budget",
+      "size": 7780
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0045.md",
+      "reason": "file-budget",
+      "size": 7158
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0046.md",
+      "reason": "file-budget",
+      "size": 8339
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0047.md",
+      "reason": "file-budget",
+      "size": 7619
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0048.md",
+      "reason": "file-budget",
+      "size": 7379
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0049.md",
+      "reason": "file-budget",
+      "size": 6092
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0050.md",
+      "reason": "file-budget",
+      "size": 5813
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0051.md",
+      "reason": "file-budget",
+      "size": 7979
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0052.md",
+      "reason": "file-budget",
+      "size": 8026
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0053.md",
+      "reason": "file-budget",
+      "size": 9693
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0054.md",
+      "reason": "file-budget",
+      "size": 8417
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0055.md",
+      "reason": "file-budget",
+      "size": 8738
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0056.md",
+      "reason": "file-budget",
+      "size": 7532
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0057.md",
+      "reason": "file-budget",
+      "size": 8556
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0058.md",
+      "reason": "file-budget",
+      "size": 8148
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0059.md",
+      "reason": "file-budget",
+      "size": 7496
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0060.md",
+      "reason": "file-budget",
+      "size": 8744
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0061.md",
+      "reason": "file-budget",
+      "size": 7626
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0062.md",
+      "reason": "file-budget",
+      "size": 7599
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0063.md",
+      "reason": "file-budget",
+      "size": 7549
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0064.md",
+      "reason": "file-budget",
+      "size": 7705
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0065.md",
+      "reason": "file-budget",
+      "size": 7552
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0066.md",
+      "reason": "file-budget",
+      "size": 8966
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0067.md",
+      "reason": "file-budget",
+      "size": 10352
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0068.md",
+      "reason": "file-budget",
+      "size": 11852
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0069.md",
+      "reason": "file-budget",
+      "size": 7980
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0070.md",
+      "reason": "file-budget",
+      "size": 9516
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0071.md",
+      "reason": "file-budget",
+      "size": 9023
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0072.md",
+      "reason": "file-budget",
+      "size": 8712
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0073.md",
+      "reason": "file-budget",
+      "size": 9251
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0074.md",
+      "reason": "file-budget",
+      "size": 6074
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0075.md",
+      "reason": "file-budget",
+      "size": 5924
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0076.md",
+      "reason": "file-budget",
+      "size": 7392
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0077.md",
+      "reason": "file-budget",
+      "size": 6704
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0078.md",
+      "reason": "file-budget",
+      "size": 7855
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0079.md",
+      "reason": "file-budget",
+      "size": 7869
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0080.md",
+      "reason": "file-budget",
+      "size": 7442
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0081.md",
+      "reason": "file-budget",
+      "size": 7776
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0082.md",
+      "reason": "file-budget",
+      "size": 7768
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0083.md",
+      "reason": "file-budget",
+      "size": 7496
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0084.md",
+      "reason": "file-budget",
+      "size": 7122
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0085.md",
+      "reason": "file-budget",
+      "size": 7769
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0086.md",
+      "reason": "file-budget",
+      "size": 6245
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0087.md",
+      "reason": "file-budget",
+      "size": 7951
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0088.md",
+      "reason": "file-budget",
+      "size": 5478
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0089.md",
+      "reason": "file-budget",
+      "size": 8010
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0090.md",
+      "reason": "file-budget",
+      "size": 5989
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0091.md",
+      "reason": "file-budget",
+      "size": 7071
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0092.md",
+      "reason": "file-budget",
+      "size": 6622
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0093.md",
+      "reason": "file-budget",
+      "size": 7787
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0094.md",
+      "reason": "file-budget",
+      "size": 5748
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0095.md",
+      "reason": "file-budget",
+      "size": 6150
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0096.md",
+      "reason": "file-budget",
+      "size": 5679
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0097.md",
+      "reason": "file-budget",
+      "size": 8081
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0098.md",
+      "reason": "file-budget",
+      "size": 7438
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0099.md",
+      "reason": "file-budget",
+      "size": 6583
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0100.md",
+      "reason": "file-budget",
+      "size": 6951
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0101.md",
+      "reason": "file-budget",
+      "size": 8090
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0102.md",
+      "reason": "file-budget",
+      "size": 8993
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0103.md",
+      "reason": "file-budget",
+      "size": 5437
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0104.md",
+      "reason": "file-budget",
+      "size": 7004
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0105.md",
+      "reason": "file-budget",
+      "size": 7514
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0106.md",
+      "reason": "file-budget",
+      "size": 8580
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0107.md",
+      "reason": "file-budget",
+      "size": 7349
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0108.md",
+      "reason": "file-budget",
+      "size": 2846
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0109.md",
+      "reason": "file-budget",
+      "size": 11246
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0110.md",
+      "reason": "file-budget",
+      "size": 8019
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0111.md",
+      "reason": "file-budget",
+      "size": 7015
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0112.md",
+      "reason": "file-budget",
+      "size": 4976
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0113.md",
+      "reason": "file-budget",
+      "size": 11426
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0114.md",
+      "reason": "file-budget",
+      "size": 6411
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0115.md",
+      "reason": "file-budget",
+      "size": 22175
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0116.md",
+      "reason": "file-budget",
+      "size": 4454
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0117.md",
+      "reason": "file-budget",
+      "size": 2884
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0118.md",
+      "reason": "file-budget",
+      "size": 3545
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0119.md",
+      "reason": "file-budget",
+      "size": 3614
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0120.md",
+      "reason": "file-budget",
+      "size": 5136
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0121.md",
+      "reason": "file-budget",
+      "size": 5085
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0122.md",
+      "reason": "file-budget",
+      "size": 4416
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0123.md",
+      "reason": "file-budget",
+      "size": 4464
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0124.md",
+      "reason": "file-budget",
+      "size": 3890
+    },
+    {
+      "path": "docs/orchestration/tasks/TASK-0125.md",
+      "reason": "file-budget",
+      "size": 5306
+    },
+    {
+      "path": "docs/orchestration/tasks/TEMPLATE.md",
+      "reason": "file-budget",
+      "size": 440
+    }
+  ],
+  "omitted_count": 160,
+  "package": "sources/github/alex-reysa/singular-lite/0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9/812d525520c3a671/manifest.json",
+  "repo": "alex-reysa/singular-lite",
+  "repository": {
+    "complete": true,
+    "tree_blobs": 940,
+    "tree_truncated": false
+  },
+  "selection": {
+    "candidates": 163,
+    "complete": false,
+    "omitted": 160,
+    "stored": 3
+  },
+  "snapshot_id": "812d525520c3a671",
+  "tree_sha": "0f92cba1fb1f2b51d6762b493b0ac7aaded8fdd9",
+  "url": "https://github.com/alex-reysa/singular-lite"
+}

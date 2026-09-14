@@ -1,0 +1,440 @@
+{
+  "applied_operation_id": "op_ea17a093aec2461a8ad648a3eaece48c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c9e5e939370a6dc95ea24e3970e714033227e2ded8cec266a5bd1cadc972f3a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L47-L47"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06c44b7fab2fa888beb42c45869e96adc84764cfbe21fd1eb6a4625fb1c5a422",
+        "slc_eef79f066494a5b9abb5b30cbf132aa02287ca704c55c24cda063985671d59c4"
+      ],
+      "text": "LocoTrainer-4B is described as a 4B-parameter MS-SWIFT domain expert agent distilled from Qwen3-Coder-Next, combining tool-calling with framework knowledge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_064e83b2c3099b75e6e1a1b6b4cc23fbb12d3a5712cee1df7f2f28ef11c5b4f5",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 60,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L51-L60"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 295,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L277-L295"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bc87ab96fbbe3a01230c66983e153d1b0733da46b80529885494aaf31d022004",
+        "slc_faa6793e3bf6c78e3238e34cb687e0ebcb1f1618c38078544f52004ba3d92352"
+      ],
+      "text": "The model was trained with full-parameter SFT on 361,830 samples (agent trajectories, MS-SWIFT knowledge, project paths) at 32,768 max sequence length on 8x H100 80GB for about 25 hours."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c72e224967adf210e6535bf25b4ab81ae999e25c1312950ea5c0fded0fb13e3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 257,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L244-L257"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_808adec86e02b4a1d7d5d002e1051056ea67f8cb67db127c43405808cfb905aa"
+      ],
+      "text": "The framework comprises modules for prompts (SYSTEM_PROMPT, get_system_reminder), a ToolExecutor (Read/Grep/Glob/Write/Bash), an agent loop, config loading, ms-swift auto-clone logic, and a Click CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0237cffb75ee9d567d6eee3d9c91565059affce0015b4512dedcd1da50762ce1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 240,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L232-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea9b047c61802f117b13f5563dd37bc0b5a788b62451b4b4d54cadfa8ceb0529"
+      ],
+      "text": "The CLI exposes `locotrainer run` with options -q (question), -c (codebase path), -o (output dir), -m (model), --max-turns (default 20), and --quiet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc61070f5634b4aca6218a4dbeee86bf4ffde5afd6ee5be49e69a5cb95bc034c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 270,
+          "line_start": 261,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L261-L270"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d2bd08a586b2ba13c2a1d4c9fa4cbc2521f46a2d4538b043f72e0083103d076"
+      ],
+      "text": "Configuration uses environment variables such as LOCOTRAINER_API_KEY, LOCOTRAINER_BASE_URL (default OpenAI endpoint), LOCOTRAINER_MODEL (default gpt-4o), LOCOTRAINER_MAX_TURNS, LOCOTRAINER_MAX_TOKENS, LOCOTRAINER_ENABLE_THINKING, LOCOTRAINER_CODEBASE, and LOCOTRAINER_OUTPUT_DIR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1549f40f863df3c418096736d013847881514aa9f3275232203f733d5a11db98",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 122,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L120-L122"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L102-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_121469afcb7c8886d34747601b7e542304c87371055a494838ac7bc19a47818e",
+        "slc_c97164e448f6b3d1bb8d0cb689dc3c5c0d90e29a189c8b5b1210b4e495bd88e5"
+      ],
+      "text": "The framework simulates a Claude Code-style agent environment, matching what LocoTrainer-4B was trained on, and injects absolute paths into user content plus tolerant tool argument parsing for reliability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9cd9ae874ceed0b9498fe3d2c5dc700794bfc74ae53682c71207a6eee1dbd19",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 100,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L77-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cbd105fb124dd0ee245d4d3c6242ea279c54f08e1cd718ed33dbc4b453f78385"
+      ],
+      "text": "The agent loop sends tool calls (Read/Grep/Glob/Bash) against the real filesystem, feeds results back for the next turn, and writes a final markdown report plus a full trajectory JSON to the output directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd8af98bae195ea6abd56bedd8657e418a9accf3e38a5189dee77f5f64346f8e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 71,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L66-L71"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 100,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L77-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_86d09295404a5b3621a85248d262ed691d224b6417cadfa77d2bfe4e139ddf96",
+        "slc_cbd105fb124dd0ee245d4d3c6242ea279c54f08e1cd718ed33dbc4b453f78385"
+      ],
+      "text": "The agent emits structured tool-call JSON for Read, Grep, Glob, Bash, and Write tools executed against the target codebase."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c76f78899878b51e353ed46333fb4d9ce88da054d3012a6e9f5bf832b0f30415",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 186,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L185-L186"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 71,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L66-L71"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 159,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L159-L159"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b51d9fa58f4d0e130c7dc2b85f52091337938fcecbb3340144fd6652987a663",
+        "slc_86d09295404a5b3621a85248d262ed691d224b6417cadfa77d2bfe4e139ddf96",
+        "slc_b4db5e68659170dcafe7870e450d1b23d435d8f300bc548c430a7f3a26a15df0"
+      ],
+      "text": "The product requires an OpenAI-compatible API endpoint (e.g., DashScope, OpenRouter, or a local llama.cpp server) and auto-clones the ms-swift repository on first use when no codebase path is given."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de976b8224b49454f4339ccc8c66cc82ecaaf00f78c0ae02ce4eb52035c0a556",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L106-L106"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 116,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L110-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d9fd572ac3821a6de953917d297e02b05ab078c976e44c768ce135f572efae3",
+        "slc_57ba21c96bfaededfda10a8e5de8b6e9e31729c038354c94cdafc7a47b7c85a3"
+      ],
+      "text": "Reported evaluation on MS-SWIFT analysis tasks across 3 iterations shows Read success rising from 0% (relative paths) to 100% (absolute paths), and Write success reaching 100% only with tolerant argument parsing, with the final test producing a 225-line report in 9 turns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c0eab9e4411514de0aa070559bf1633e1e85a5052276c44090911b834993c63",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 303,
+          "line_start": 301,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L301-L303"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_933170d55d29fbec1ec361c2e1511b94b8b975dc6abd81dab90e2b963e6b8f0d"
+      ],
+      "text": "Documented limitations: specialization to MS-SWIFT with untested performance elsewhere, 4B scale possibly limiting complex multi-hop reasoning, and framework-structure knowledge tied to the training-data snapshot that may drift."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29e97af210a2b08be49d2611de49b8e80d76c6e0394ac529367b161a0e3dc611",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L9-L13"
+        },
+        {
+          "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+          "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+          "line_end": 307,
+          "line_start": 307,
+          "path": "README.md",
+          "repository": "locoremind/locotrainer",
+          "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md#L307-L307"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35655db51dbc440b008cc11ee268643c749fcf8869551e6877232d5fc465718c",
+        "slc_7d2c211f42cc6008c409ade09154df168419c2d9b21b8809fb23ec64df51c84b"
+      ],
+      "text": "The project is MIT-licensed and distributed on PyPI with model weights (full and GGUF) on Hugging Face, plus a Colab notebook."
+    }
+  ],
+  "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 314,
+        "path": "README.md",
+        "size": 11229
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 21,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_7b4ff5f13ff6505f88f51adb11c6d7df",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/locoremind/locotrainer/08a2a06e212244925423fc08d26b605edd3dcfb4/d3f570970b8c0cf2/manifest.json",
+  "package_id": "pkg_2dbedf7c979958bf954ced790e7460a53369343f11ad81b3c60a244cf47ae278",
+  "repo": "locoremind/locotrainer",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c21e014e617ac5dc18c2238bd4218e91b3c67d3d48290b411bc8bb2ea5663f66",
+  "snapshot_id": "d3f570970b8c0cf2",
+  "sources": [
+    {
+      "commit": "08a2a06e212244925423fc08d26b605edd3dcfb4",
+      "git_sha": "406d354d564253f655b3a69a5eab47434b0d3121",
+      "lines": 314,
+      "path": "README.md",
+      "repository": "locoremind/locotrainer",
+      "sha256": "292cd37c4858774d4dba5ea3b1454f3e0b0991f34eb0782e63c3cbb63e2c53d0",
+      "source_id": "src_0495ebe5297654968d49be4b71fd32a7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/LocoreMind/LocoTrainer/blob/08a2a06e212244925423fc08d26b605edd3dcfb4/README.md"
+    }
+  ],
+  "summary": "LocoTrainer is a Python agent framework (pip-installable CLI) that pairs with the LocoTrainer-4B model — a Qwen3-4B-Instruct-2507 distilled via SFT from Qwen3-Coder-Next — to analyze MS-SWIFT codebases and emit markdown reports via a Claude Code-style tool-calling loop. Evidence is README-only documentation.",
+  "superseded_claim_ids": []
+}

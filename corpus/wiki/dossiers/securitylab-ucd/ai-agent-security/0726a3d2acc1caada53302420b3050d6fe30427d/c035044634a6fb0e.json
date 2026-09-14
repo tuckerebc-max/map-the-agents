@@ -1,0 +1,451 @@
+{
+  "applied_operation_id": "op_1729b122b4f14e2190b1e2e0d1f04ebc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c5e692eee0daab06957447367d6576be4cc3fe312dc2ac9d0e0ddf170ab9329",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 4,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L2-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e1b1e97dd2e4f77cf515aced0136ec2972aa10c0446235f5dfd931bc4429f27"
+      ],
+      "text": "The repository holds source code for the encryption-defense demos presented in the paper 'Security of AI Agents'; sandbox defense and evaluation code lives in a separate AgentBench fork."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6768499d5cc4a591c8cd7ca1394ad078e77bbc2a21178809c0632604971081b7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d79860a4318ebcb4eeea5ff59f0156c3f2a9946affa31570c28788a460362283"
+      ],
+      "text": "The project requires Python 3.8 or above."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_291426203a35c05d66fbffcdc507d199e961a8fbf1e3b8e70cd9ecf3c42b24c3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "05257250bc84b9e4ca4aea73d61b6c4a13a081fb",
+          "line_end": 7,
+          "line_start": 6,
+          "path": "requirements.txt",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/requirements.txt#L6-L7"
+        },
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "05257250bc84b9e4ca4aea73d61b6c4a13a081fb",
+          "line_end": 4,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/requirements.txt#L1-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_907021c4a6dfd5244e31317550ffc4085c9ec777b0fcc081645eec5f0362a7e3",
+        "slc_fcdb490b6fbdafc93621d5e2bcc8c66db6bd371dad5bc99829f088a5dbbc3349"
+      ],
+      "text": "Pinned dependencies include langchain 0.1.16, langchain-openai 0.1.6, pyffx 0.3.0, and a git-installed py-fhe library; test dependencies are hypothesis 6.100.1 and pytest 8.1.1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0badc85af3f321ddc521abe2a60a34261fb4b0557c3484506128f36b0789b33b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L20-L24"
+        },
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L15-L18"
+        },
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 13,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L10-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18c0d84776b98813b80598f3e7203fdbbf140c15d5db82251e3fb95e6b075565",
+        "slc_432965dd6877b73018883247cb24c818f3da0cca80f38eee06dfcb22ed0efcaa",
+        "slc_61f272d2f0088542bf3c63e3b2cb9cfaaaa159e343c7484c9ac362b2c411bade"
+      ],
+      "text": "Repository development practice: setup involves sourcing env.sh from the repo root so Python can find the project's modules, installing dependencies via pip from requirements.txt, and generating homomorphic-encryption data with HE_data.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_127cfd58a56a3aeede02c4b4ec2c677e0b6981b6740badde6427e9c736a3c065",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L33-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6198c9da8004b825cc27a392ecd9a60d72ec1eb1bdb51ebd7c1b1a78fcd32cae"
+      ],
+      "text": "The SSN agent demo is run as a CLI: python agents/ssn_agent.py with --model, --user_id, --ssns_path, and --secretkeys_path arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f856132cafa923d5c70a54335ce520f9e25981d05dfdd843453d9643571e4d25",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 47,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L43-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eab3877c8f24635267950a8d3891f4219c6efe51405bf359b2300287991c9933"
+      ],
+      "text": "The homomorphic-encryption agent demo is run via python agents/HE_agent.py with a --model argument, and prompts must specify 'sum' or 'product' for postprocessing reasons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d969264323ee9a1a59a71c7adfbfc02cbe87bc3aba00cd37c799b2ec87d8b42",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 47,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L43-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eab3877c8f24635267950a8d3891f4219c6efe51405bf359b2300287991c9933"
+      ],
+      "text": "The default encryptor cannot handle numbers greater than 400, so calculation results must stay within 0 to 400 inclusive; the limit is configurable in HE_data/HE_data.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d63e3035be929502c9550d488610ffbb12c5033071fd83f35c43c04deb2197d8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L49-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d61a2219c89f4fae3d6700d55c99bd6af4774c80e10832f9300710f9a72a2c3f"
+      ],
+      "text": "A known bug in the HE demo: the LLM indexes the wrong item unless the first index written in the prompt is 0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6ffae61d23efbe51e66f5a9dcfd9deb7756af95e57d9a376bc2a7e9b7125552",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L40-L40"
+        },
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5993809b01bf4b4dd1f7d15571a083cf7aebdc7f057c2e66c806452d6ef70d17",
+        "slc_e54d6b5016cb24afc9efa75b8bb50a2a7c7b6837148602bc9450c632b8097689"
+      ],
+      "text": "Demo prompts are phrased as 'number' rather than 'SSN' or 'social security number' to avoid triggering alignment; users can request digit groups such as the first three or last four digits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9784971201c07f452508fb0fbc288ff74e955215f309def072c977f308281582",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L27-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27343f0c333265e65b1ca444962e7d802e45d6b65110a2dae408672e89ff67f7"
+      ],
+      "text": "Running agents that use OpenAI LLMs for reasoning requires setting the OPENAI_API_KEY environment variable beforehand."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7973253d3e189c0fcb30bc65d07da6c16364e570c4d2e6e6a32ff466d52f94fb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 54,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L53-L54"
+        },
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L56-L56"
+        },
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 60,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L59-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78ce22f1132b5a78efd27f6fcda51370d295aaf722786a7e680742bd7e9e4b39",
+        "slc_ccab01c91372b9ac60d4987195ac91294b591ef390bcbdd4876835b9e6744359",
+        "slc_edd490331c381411a666912e25eb9b944c20c4e258110ec98224233768f6cbc7"
+      ],
+      "text": "Repository development practice: tests are executed with 'pytest tests/*' after generating ciphertext files via HE_data.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b13d7cb25e229ffcc0b5ba5586d4e7f4e34be83e615f8e1c4bc0e2ae4a2d577",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+          "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+          "line_end": 73,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "securitylab-ucd/ai-agent-security",
+          "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md#L64-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b94cc9ee5eeda8e4a3f06e0e09084fd798863287cbf4875c406edb870e6316b8"
+      ],
+      "text": "The work is associated with a RAIE 2025 workshop paper by He, Wang, Rong, Cheng, and Chen, with a DOI linking to arXiv 2406.08689."
+    }
+  ],
+  "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 73,
+        "path": "README.md",
+        "size": 2430
+      },
+      {
+        "lines": 7,
+        "path": "requirements.txt",
+        "size": 160
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 16,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_61768eea777454d386e19cbd5ef47a6a",
+  "facets": {
+    "components": 0,
+    "dependencies": 3,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/securitylab-ucd/ai-agent-security/0726a3d2acc1caada53302420b3050d6fe30427d/c035044634a6fb0e/manifest.json",
+  "package_id": "pkg_30f7b606ed8a602f657ddbe0317637e7c201fe495dd8e07877705c2fc7ef7b25",
+  "repo": "securitylab-ucd/ai-agent-security",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b515c743a5e0cbceb9b5236bcc7ef05cf79c2ee10e517200d7599be22fe2ce99",
+  "snapshot_id": "c035044634a6fb0e",
+  "sources": [
+    {
+      "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+      "git_sha": "bde33001fb9bd9685891a50209b250b270eba804",
+      "lines": 73,
+      "path": "README.md",
+      "repository": "securitylab-ucd/ai-agent-security",
+      "sha256": "38c54c8a35155a4b3e6a12312a1b0825ac055e4f7ca443bd0c80e2612a3c16c9",
+      "source_id": "src_4105a096beea5ebba680bb4fc6c9248d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/README.md"
+    },
+    {
+      "commit": "0726a3d2acc1caada53302420b3050d6fe30427d",
+      "git_sha": "05257250bc84b9e4ca4aea73d61b6c4a13a081fb",
+      "lines": 7,
+      "path": "requirements.txt",
+      "repository": "securitylab-ucd/ai-agent-security",
+      "sha256": "35f959a16a0450e535aeed7e15291ca287ca8430d2f3e30f357eb826e7180b52",
+      "source_id": "src_860d7fd815895214836f56434df7e5d6",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/SecurityLab-UCD/ai-agent-security/blob/0726a3d2acc1caada53302420b3050d6fe30427d/requirements.txt"
+    }
+  ],
+  "summary": "The repository contains demo source code for the encryption defense from the paper 'Security of AI Agents', with sandbox defense and evaluation code in a separate AgentBench fork. Evidence covers two agent demos (SSN and homomorphic encryption), their CLI interfaces, pinned dependencies, setup/test instructions, and documented limitations.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_01e71e4702e758b7dd80fe6444df948dfd3328bdbedb69d063be5ce806e68f0f
+- clm_2538c1f14f81963df1c6c74aff14b0b6a90b2f10dc8d72062f97a4d27f77b3c1
+- clm_2bc710bfd8367bb2936d2771ddc6cdce02d4d7a3cefbb4a8b731d51b42aaec53
+- clm_2c27258808a9bf7e8a25448ed04c259033351a8e07f1d5c350ca42ae17e05d91
+- clm_3c90c5c84ce8c5f8eef9495f403e41791993ecae8ea3521ce0f9610ae4052814
+- clm_599bedf9da939d82beae33cb7158bdb8e6372a56abf5a30df5bda5f52a81afbb
+- clm_612d0227e64f675cf51e48639a2ea475fada7ea45e3571d15ed8ab995fac05bb
+- clm_75b2cac5faae10fe7601fc8c391ac8ea9a2934aee8b4693462ca61ae78e18e7a
+- clm_903824559fd500c4aed7b7b4502c7ffbaf489ba004242c7225686ef040c5d4dd
+- clm_cde2a48ea961707f7a249875a300d97a161baa13e8039a78159ab983653e3966
+- clm_d2e035e901de65d314f66e3326889be2e9d24599a5816b1d786de0ade2291daf
+- clm_e5c3e82993e4837617736ee602b7eb73de200f7bd51d6931972ca1e57571bd8f
+maturity: draft
+page_id: pg_483756218d9750d6a7d50b4f1be4e3e0
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: renaissance-innovation-labs/jacob-ai
+updated_at: '2026-09-14T02:35:03Z'
+---
+
+# renaissance-innovation-labs/jacob-ai
+
+<!-- rcw:begin owner=entity:ent_018b0b7a0ab05b5f84a82a60836c2f89 block=evidence -->
+- renaissance-innovation-labs/jacob-ai is mentioned in this evidence. [@claim:clm_01e71e4702e758b7dd80fe6444df948dfd3328bdbedb69d063be5ce806e68f0f] [@claim:clm_2538c1f14f81963df1c6c74aff14b0b6a90b2f10dc8d72062f97a4d27f77b3c1] [@claim:clm_2bc710bfd8367bb2936d2771ddc6cdce02d4d7a3cefbb4a8b731d51b42aaec53] [@claim:clm_2c27258808a9bf7e8a25448ed04c259033351a8e07f1d5c350ca42ae17e05d91] [@claim:clm_3c90c5c84ce8c5f8eef9495f403e41791993ecae8ea3521ce0f9610ae4052814] [@claim:clm_599bedf9da939d82beae33cb7158bdb8e6372a56abf5a30df5bda5f52a81afbb] [@claim:clm_612d0227e64f675cf51e48639a2ea475fada7ea45e3571d15ed8ab995fac05bb] [@claim:clm_75b2cac5faae10fe7601fc8c391ac8ea9a2934aee8b4693462ca61ae78e18e7a] [@claim:clm_903824559fd500c4aed7b7b4502c7ffbaf489ba004242c7225686ef040c5d4dd] [@claim:clm_cde2a48ea961707f7a249875a300d97a161baa13e8039a78159ab983653e3966] [@claim:clm_d2e035e901de65d314f66e3326889be2e9d24599a5816b1d786de0ade2291daf] [@claim:clm_e5c3e82993e4837617736ee602b7eb73de200f7bd51d6931972ca1e57571bd8f]
+<!-- rcw:end owner=entity:ent_018b0b7a0ab05b5f84a82a60836c2f89 block=evidence -->
+
+## Researcher notes
+

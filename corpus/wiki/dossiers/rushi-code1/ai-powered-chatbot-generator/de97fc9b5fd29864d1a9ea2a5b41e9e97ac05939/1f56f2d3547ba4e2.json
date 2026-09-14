@@ -1,0 +1,462 @@
+{
+  "applied_operation_id": "op_b9bff433bb6d4e02aa365e9e9dbff061",
+  "claims": [
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_b84e3f012fed4f4913f91865df1d09c4926b5857d1cf083e619b9327658e9c8e",
+      "evidence_type": "contextual_fact",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 43,
+          "line_start": 42,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L42-L43"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 4,
+          "line_start": 1,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L1-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_729a14ba073f04f6ac6d66d700aed3ba117a6690b760c8728a69a7a7b5c3bbb0",
+        "slc_b1d879de344194e7970ce3757fe946f39a720387e6a5d8ddaeb9019b82b81262"
+      ],
+      "text": "The backend is a Flask application (main.py) that imports get_response from a Model module and ziped from a zip module, and runs with debug enabled."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_10498ef77760e30655e8117a95f1d7f61097cfd5a1e9bb91dbe9dbce2c5e1c9e",
+      "evidence_type": "contextual_fact",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 40,
+          "line_start": 33,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L33-L40"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 27,
+          "line_start": 15,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L15-L27"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L29-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2837166f3e18cc0598310c95f5c18d22b9acd7dae585231c4b61b14266c5a098",
+        "slc_905430e1e5c016f6969abf9a01192949100edd19de4b7c5041fee0a1a6f3786f",
+        "slc_ebfe62b5d94cd5d302886d5ee86e2835395dac094a35d19a81a1d36fc4eb837d"
+      ],
+      "text": "The app exposes a POST '/' route accepting a 'message' form field and a file upload, and a GET '/download' route that sends 'Zipped file.zip' as an attachment."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_9abc761851d910fc730d072e33a334febbc5a6b52e107d761f3a3b3c3071c14d",
+      "evidence_type": "contextual_fact",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 40,
+          "line_start": 33,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L33-L40"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 27,
+          "line_start": 15,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L15-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2837166f3e18cc0598310c95f5c18d22b9acd7dae585231c4b61b14266c5a098",
+        "slc_905430e1e5c016f6969abf9a01192949100edd19de4b7c5041fee0a1a6f3786f"
+      ],
+      "text": "On POST, the server stores the user's message as a key in an in-memory dict with the model response as value, then if the uploaded file succeeds it is saved as static/uploded/cast/bot.json and the zip routine runs."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_5058e7cca3ab92c4d231f6fe7dd9384796f5828073448fc6064c8e5cd5b4433d",
+      "evidence_type": "contextual_fact",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 8,
+          "line_start": 6,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L6-L8"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 13,
+          "line_start": 10,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L10-L13"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 27,
+          "line_start": 15,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L15-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_396e39c98ebbe6a6577650b249ecb4acb87ebeb2140f21f068ebdf6d6acc1efa",
+        "slc_7204b503557ef05ea4526baccf8d5d7adbce966a3c0b087be1436e21bc918f5f",
+        "slc_905430e1e5c016f6969abf9a01192949100edd19de4b7c5041fee0a1a6f3786f"
+      ],
+      "text": "Conversation history is held in module-level in-memory structures (a dict hist and a list holding only the latest message), which are cleared/appended per request and passed to the index template."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_b7b20b813aed1a4bfd9e77bfe08ed85cf9c38eb7cc8fb1418940ffa6acd822b9",
+      "evidence_type": "contextual_fact",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "format": "verbatim",
+          "git_sha": "45f1e64af2d07ce8bee47b9f3d5249ce68e7a8fb",
+          "line_end": 121,
+          "line_start": 67,
+          "path": "templates/index.html",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/templates/index.html#L67-L121"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L29-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d74122a9dff0f7811bed4618ad8e58fffb633af91ab6f028f77443c70d0bffb7",
+        "slc_ebfe62b5d94cd5d302886d5ee86e2835395dac094a35d19a81a1d36fc4eb837d"
+      ],
+      "text": "After a generated response, the assistant message includes a link to the /download route labeled as downloading a zip file of the generated code."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_835c77c86025de0eb6c88e04b60d494dde0d22bd4adc92658a24a0bffda3fa90",
+      "evidence_type": "contextual_fact",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 40,
+          "line_start": 33,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L33-L40"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 27,
+          "line_start": 15,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L15-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2837166f3e18cc0598310c95f5c18d22b9acd7dae585231c4b61b14266c5a098",
+        "slc_905430e1e5c016f6969abf9a01192949100edd19de4b7c5041fee0a1a6f3786f"
+      ],
+      "text": "The upload handler returns an 'unsuccessful' message when the uploaded file has an empty filename, and the zip step only runs when upload reports success; a missing file field would raise an error since request.files['file'] is accessed directly."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_7fc9307acd4f85bd5808396040ee5a6f882048ba69369b4478761f2fe44b0e8d",
+      "evidence_type": "contextual_fact",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "959a3b91945ffebe8a9af25eb8043a12979e1a06",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "random_responses.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/random_responses.py#L12-L12"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "959a3b91945ffebe8a9af25eb8043a12979e1a06",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "random_responses.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/random_responses.py#L1-L1"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "959a3b91945ffebe8a9af25eb8043a12979e1a06",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "random_responses.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/random_responses.py#L9-L10"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "959a3b91945ffebe8a9af25eb8043a12979e1a06",
+          "line_end": 7,
+          "line_start": 4,
+          "path": "random_responses.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/random_responses.py#L4-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88f53832b67f601be82ce2b9b358769f44afd12db8a0eed747084ac3adad483e",
+        "slc_a827dd6a857a98a2c88f6d6a16799faca841784d93d5c04caee2eae0d38af74c",
+        "slc_b2fa3678d0e72586fe9df5051d0290c6e7920832c803c03d58388052eb0ff1fc",
+        "slc_d8bff4589c46574c56c1852baf4f921c6a1ce9f90b5f2dcfa83da0f9de236eb9"
+      ],
+      "text": "A random_responses module returns a randomly chosen canned string, currently a single-entry list ('Zip folder create successfully.'), suggesting placeholder assistant replies."
+    },
+    {
+      "basis": "code-inspected",
+      "claim_id": "clm_8d8a7857d46f7b6501d8f72ccf11ff9ddd33fafe38c14775e3c4d9952fb87b8e",
+      "evidence_type": "contextual_fact",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 13,
+          "line_start": 10,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L10-L13"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+          "line_end": 27,
+          "line_start": 15,
+          "path": "main.py",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py#L15-L27"
+        },
+        {
+          "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+          "format": "verbatim",
+          "git_sha": "45f1e64af2d07ce8bee47b9f3d5249ce68e7a8fb",
+          "line_end": 121,
+          "line_start": 67,
+          "path": "templates/index.html",
+          "repository": "rushi-code1/ai-powered-chatbot-generator",
+          "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/templates/index.html#L67-L121"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7204b503557ef05ea4526baccf8d5d7adbce966a3c0b087be1436e21bc918f5f",
+        "slc_905430e1e5c016f6969abf9a01192949100edd19de4b7c5041fee0a1a6f3786f",
+        "slc_d74122a9dff0f7811bed4618ad8e58fffb633af91ab6f028f77443c70d0bffb7"
+      ],
+      "text": "The app appears to support only one latest-message flow: the list holding the current message is cleared on each POST, and the template shows a single user/assistant exchange for the newest message plus a loop over history entries."
+    }
+  ],
+  "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+  "coverage": {
+    "explicit_paths": [
+      "main.py",
+      "random_responses.py",
+      "templates/index.html"
+    ],
+    "files": [
+      {
+        "lines": 43,
+        "path": "main.py",
+        "size": 1245
+      },
+      {
+        "lines": 12,
+        "path": "random_responses.py",
+        "size": 224
+      },
+      {
+        "lines": 129,
+        "path": "templates/index.html",
+        "size": 5005
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 11,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_d5fc382a567251e6aa7f9721d4e86011",
+  "facets": {
+    "components": 3,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/rushi-code1/ai-powered-chatbot-generator/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/1f56f2d3547ba4e2/manifest.json",
+  "package_id": "pkg_e10668bd0118e949868e06ab79352e37acb2f57ddb48f1e9782ac51bf553b6a8",
+  "repo": "rushi-code1/ai-powered-chatbot-generator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "88543a9938623f5d31388a51bf7dfa7f3fdec1659956a953046f3f857d7daf98",
+  "snapshot_id": "1f56f2d3547ba4e2",
+  "sources": [
+    {
+      "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+      "git_sha": "bf839d30db76d48ca7e725aaefd5e090d38bea9c",
+      "lines": 43,
+      "path": "main.py",
+      "repository": "rushi-code1/ai-powered-chatbot-generator",
+      "sha256": "29cb095d32664d283b0d0197e1305e3132410246a34735452d88fed7ee2b15c3",
+      "source_id": "src_e14050e834065724a865ec46d425a60e",
+      "stored": "main.py-b10564ab7d2c.txt",
+      "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/main.py"
+    },
+    {
+      "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+      "git_sha": "959a3b91945ffebe8a9af25eb8043a12979e1a06",
+      "lines": 12,
+      "path": "random_responses.py",
+      "repository": "rushi-code1/ai-powered-chatbot-generator",
+      "sha256": "6236c9379f71f37868368f6f5a060a76e95672d8152472b9725afbeb67158aa1",
+      "source_id": "src_fe6b42919bab5e7990a7cda7160cbea9",
+      "stored": "random_responses.py-6f2241aeafda.txt",
+      "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/random_responses.py"
+    },
+    {
+      "commit": "de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939",
+      "format": "verbatim",
+      "git_sha": "45f1e64af2d07ce8bee47b9f3d5249ce68e7a8fb",
+      "lines": 129,
+      "path": "templates/index.html",
+      "repository": "rushi-code1/ai-powered-chatbot-generator",
+      "sha256": "bc3d7eabc84122e006f8b0f66a706f01e160c02955693c6af29171356bccd000",
+      "source_id": "src_ff06a17d5f7654da812a4b23243a03ad",
+      "stored": "index.html-37a968442c22.txt",
+      "url": "https://github.com/Rushi-code1/AI-Powered-Chatbot-Generator/blob/de97fc9b5fd29864d1a9ea2a5b41e9e97ac05939/templates/index.html"
+    }
+  ],
+  "summary": "The backend is a Flask application (main.py) that imports get_response from a Model module and ziped from a zip module, and runs with debug enabled. The app exposes a POST '/' route accepting a 'message' form field and a file upload, and a GET '/download' route that sends 'Zipped file.zip' as an attachment.",
+  "superseded_claim_ids": []
+}

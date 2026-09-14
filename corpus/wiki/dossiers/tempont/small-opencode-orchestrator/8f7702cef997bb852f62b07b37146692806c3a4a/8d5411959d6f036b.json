@@ -1,0 +1,554 @@
+{
+  "applied_operation_id": "op_2d52bbd7caaa4d2cb6a9f3b7fdf163df",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_052571a1c1da8ea7b55ebdaa74f87c9cf4cea6e5a99254afd7c39f8173633377",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 91,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L45-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bef05332f2d65895672b6ce311cc023a54aba6623266f88b08f11925b8154b5e"
+      ],
+      "text": "The repo ships eleven agent definition files (orchestrator, plan-runner, code-executor, test-verifier, code-reviewer, docs-reviewer, security-reviewer, spec-critic, api-docs-researcher, host-security-investigator, code-explorer), a plugin source file, model profiles, and skills directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5e87c823659c35b2fb41aee4c91621c8d93bc67c36c0e1e27aed676c8db1287",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 245,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L245-L245"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L95-L95"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 104,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L99-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_80619a3f36b58b843f27154ed0f8e3ab5e491f70f3fefa100954e797f570a1ba",
+        "slc_b15e0f20aff0777cc50afae33c15e6c1872e77e64cd75f7d7421c64f098022d8",
+        "slc_e85b2a3d06e76ba62024240844a49455e45adbfe69f2fb7577da201e17f7f4bb"
+      ],
+      "text": "The default entry point is the orchestrator agent; for non-trivial tasks it delegates planning, writes a plan under .opencode/plans/, obtains user approval, then delegates implementation in scoped slices followed by review agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c14f5a145426c3a5009dc2f8808ebb2f91ed12d8841553076fe830ab86c64058",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L22-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f346ac39c91c1c43f910335690e9eb2ececa5b97630184bc593b6656572c24f6"
+      ],
+      "text": "Subagents receive focused tasks rather than the full problem context when possible, an approach the README describes as token-conscious delegation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_94f6e2d6e5bc4d7aa873614dab8a327ba546955f0b7dfa7eb98134e192acf4c1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L31-L31"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 41,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L35-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33f3352c7d9e53a6da8e0674a0445ebde301c2d4e5d745ddae97c4a147c6e14e",
+        "slc_7ae338094d8ddaee9b58353ac85e3118b804c6c261478a4fa4c18641f81987f0"
+      ],
+      "text": "The project is intentionally small and not a general-purpose agent platform; goals include understandable orchestration, reduced inter-agent context, explicit planning/review, and avoiding automation that hides what is happening."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77ffb8378a20cbe48320c90f3889366b2c0ad9968bd963a66d813154c4570b8f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 214,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L209-L214"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 205,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L205-L205"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_349cfd85ac68b04692493b1c36f9a6fc367d715093bba5f1b4c77e14070dce4c",
+        "slc_3ddcf6203ccb76719acfb37a560e55c69b1e265722567f6df53a069a643a5116"
+      ],
+      "text": "A plugin, plugin-src/plan-post-approval.ts loaded via the plugin tuple in opencode.jsonc, automates handoff after PlanApprove: it extracts plan paths, routes plan sessions to build via session.summarize and session.prompt with backoff retries, and reads plan_post_approval_handoff_agent from plugin options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1d68e2463f56d7957cc7a4bfbfadeccf95cb0c036dd027b77285f382ad5130b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 153,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L149-L153"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 143,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L142-L143"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L145-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c25bfc8ab7156e74fb02e1f544f5e5000ce45c637991604141d4823613c1b9d",
+        "slc_9950bd3f803e341afe0fd2dbfed8a180edae5926f7d897ba9eabed79d3bf948a",
+        "slc_c924c807a3208fbc2b9be06a852d39eb19f2f5ba8d1a28a4171bb17319f8b421"
+      ],
+      "text": "Configuration supports alternate model profiles under profiles/* that merge additively over the global opencode.jsonc, selected via the OPENCODE_CONFIG environment variable; profiles only override models and variants while inheriting plugins and permissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_febdbcdb88fb466a33a45a7ba82bfc319a1bfc594fb00e8f4e416a1b798d6507",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 271,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L267-L271"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_091bcfca317b0154f1fc75c93c3b9e480e2d6b1c9455d194b9fc159a0e663c46"
+      ],
+      "text": "opencode.jsonc provides a minimal deny-by-default workspace permission baseline, and each agent declares its own tool policy in its agents/<id>.md frontmatter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1161a84c8f529c80732b7fbb8a9b5d9f9d9dd5b9ea72df9919e89c954a67fe44",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 318,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L309-L318"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "AGENTS.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0796e9d3590a176b3455c9ce2ba6174cb84bc0730e720d30c0813b39aa21ab72",
+        "slc_f74c03f980dfd320b57378c8ab8190df271183de83632489ce493b59ccd89aba"
+      ],
+      "text": "The orchestrator agent has no write permissions by default to force subagent usage, and per AGENTS.md it must not use native read, glob, grep, list, lsp, or bash tools for repo discovery, delegating to code-explorer instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19dfb56f8ede235698ab5a67a970b9ba69f15e6b5b88430f89e36cf25ec7f891",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 222,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L218-L222"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88b644d2ca0be4279322b8fe8b17933c8a635d832e784a6a50b8f05bba61c147"
+      ],
+      "text": "Shared skills include agent-delegation (routing decision table), task-management (CLI tracking feature subtasks with dependencies), pythonic-quality, security-investigation, and skill-creator."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_281ad775e8af44edfd9e8652234069f68bf53b030257eba1d51062df4cb95854",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 226,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L226-L226"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 288,
+          "line_start": 278,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L278-L288"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 239,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L236-L239"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_138281fcb8d76882bdc0842e5135010219cd56fcac25b1b059a9db667a6b80f5",
+        "slc_7c1f8747553d93ca32ab78cee2c26ccc068dde732656823dd157dd3ab2fd1093",
+        "slc_b48f14c5c7e41fde80f08a223faa3597b6ee7f18403e5168ba65322fb53759e0"
+      ],
+      "text": "The project depends on OpenCode itself and npm dependencies installed via npm install in the config directory; the changelog notes @opencode-ai/plugin aligned to 1.14.20."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ac761b8b4fe21289e374fd08e07b31ddd65466deef4c8d0815dc9eb9f635b68",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 222,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L218-L222"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 91,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L45-L91"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+          "line_end": 104,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md#L99-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88b644d2ca0be4279322b8fe8b17933c8a635d832e784a6a50b8f05bba61c147",
+        "slc_bef05332f2d65895672b6ce311cc023a54aba6623266f88b08f11925b8154b5e",
+        "slc_e85b2a3d06e76ba62024240844a49455e45adbfe69f2fb7577da201e17f7f4bb"
+      ],
+      "text": "Concrete plans are written as files under .opencode/plans/, and the task-management skill includes TypeScript scripts (task-cli.ts, migrate-schema.ts) plus a router.sh for tracking feature subtasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a9c8c329eec4604560aef3deec7c2bc32dc58eb39f61719ce48c3ae8b499577",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "AGENTS.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md#L23-L26"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "AGENTS.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md#L7-L11"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+          "line_end": 19,
+          "line_start": 15,
+          "path": "AGENTS.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md#L15-L19"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+          "line_end": 50,
+          "line_start": 48,
+          "path": "AGENTS.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md#L48-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_853345bc38a58d90bd48bf7107fde471f2af6e89df8145e042a5dba23b15886c",
+        "slc_a87d38a8d8830f36bc52240f60b2f2b2a46f4f6e92f278b4495dfc3454470117",
+        "slc_d7ea1e329146bb9114631a95739f468b3d221b9f4e33f5a67fe67d0dfe8c8062",
+        "slc_f67d47b1c6a907e120b750976647fd22bd9ae7134d7969f94dab3a6a88f08301"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributing agents to plan before non-trivial edits, keep diffs small and reversible, verify with the narrowest sufficient command and never claim success without output, and never push without explicit user intent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06c3dbf08fd8321eb9d057ad62c53946e1075cb8a3790d96fa883330c0b04f77",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "AGENTS.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md#L34-L36"
+        },
+        {
+          "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+          "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "AGENTS.md",
+          "repository": "tempont/small-opencode-orchestrator",
+          "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5760456aaa85946acb250735b232abc9352dd755f4952d8f6b7e88fa8ccc0f12",
+        "slc_cd6ac83a084175ca283ecc8bb82a9d3e651514ea2070fce0471e05762be1d92f"
+      ],
+      "text": "Repository development practice: AGENTS.md prescribes strict role separation (code-explorer read-only, code-executor writes without exploring, code-reviewer neither writes nor explores) and a typical delegation order from exploration through review."
+    }
+  ],
+  "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 323,
+        "path": "README.md",
+        "size": 13548
+      },
+      {
+        "lines": 66,
+        "path": "AGENTS.md",
+        "size": 4556
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 37,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_410d4d2d5a25504e80cc42446fdd34b9",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tempont/small-opencode-orchestrator/8f7702cef997bb852f62b07b37146692806c3a4a/8d5411959d6f036b/manifest.json",
+  "package_id": "pkg_43af91b311714ffeaa9f301576df90d46146ffa84b50decb55631d6f4d7dbca4",
+  "repo": "tempont/small-opencode-orchestrator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f63c1a28590664ac2810e24a1b1492913c7b8fa6b642d11d856b19ee529b3e1c",
+  "snapshot_id": "8d5411959d6f036b",
+  "sources": [
+    {
+      "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+      "git_sha": "ab6ab0b57f283bcc5f19050fecf3c7f504b92d9a",
+      "lines": 66,
+      "path": "AGENTS.md",
+      "repository": "tempont/small-opencode-orchestrator",
+      "sha256": "3484e68d3bc3c7d9ce4588a67b0c74f4598cb99d4d32d8e01bd1a10566108047",
+      "source_id": "src_b92e507f47555c9b955f451bd3af95ab",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/AGENTS.md"
+    },
+    {
+      "commit": "8f7702cef997bb852f62b07b37146692806c3a4a",
+      "git_sha": "2d27a6895a1189042b850e5eb4c8f410e352d60d",
+      "lines": 323,
+      "path": "README.md",
+      "repository": "tempont/small-opencode-orchestrator",
+      "sha256": "cc24026b4f69a49b325e4d787b7fa07068609fde0389565573a6d1c18036c59a",
+      "source_id": "src_cc7e9e9911445a7fa0c6bfce0558567c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/tempont/small-opencode-orchestrator/blob/8f7702cef997bb852f62b07b37146692806c3a4a/README.md"
+    }
+  ],
+  "summary": "The repository is an OpenCode configuration implementing a multi-agent orchestrator pattern with planning, approval-gated implementation, review subagents, model profiles, and a plan post-approval plugin; AGENTS.md provides contributor-facing delegation and verification guidance.",
+  "superseded_claim_ids": []
+}

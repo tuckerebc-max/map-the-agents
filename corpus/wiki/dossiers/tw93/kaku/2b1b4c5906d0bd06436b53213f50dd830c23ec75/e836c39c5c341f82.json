@@ -1,0 +1,535 @@
+{
+  "applied_operation_id": "op_d83c2101087a474c923b7e7598c1b67e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b8439813100ce27786af060f4c1938677a0ad6888c23dff683d9b760b81586b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L21-L21"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 5,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L1-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81fc00109e5777188733fcc243a1f7ed1d7a5bf7aa00404e1266763113614968",
+        "slc_fa6467975f66ef6e404f13d009b0d3d8145313bbc1e4b378b3d3b1d0b22416ef"
+      ],
+      "text": "Kaku is an AI-friendly Mac terminal with sensible defaults, built on WezTerm with fonts, themes, shell integration, and Mac shortcuts preconfigured."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1dcfbe583ad4c9ca783e7ceed18125eee96eca1592ca89597e6a5a0d659bfdc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L83-L83"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L37-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_795af0bb3f4baf08fce27baaac4f7b5147a3cddd79157274d77b5f5199bbd71f",
+        "slc_eac0488baed44deaa61f8fe07a5ffc12209efe2636f921bc703031ff4ddead4f"
+      ],
+      "text": "The product exposes WezTerm's Lua configuration system so users can customize fonts, themes, shortcuts, and terminal behavior; e.g. window transparency via `config.window_background_opacity` in `~/.config/kaku/kaku.lua`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_623eb519f5c17b60dde57d4387cab802bf14f1e25d6e936c98f257d536c563c8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L33-L33"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 75,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L72-L75"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 95,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L91-L95"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_77fe8ec60c1f98129b7bccd9f45504569d4fe98691f001b0b6ff79fc29d46d1b",
+        "slc_9c11f3eeae4b2a1c1496fadaad09865f3193cd95dd02233165c9169f8a4d3cfb",
+        "slc_b64e62cc444daa713156c4f9ec227e156d30e525329d13724895cb8f84f37692",
+        "slc_dbe56467c6b6f3d73162b9d3a04e6512632dfb7108a826b5fcfec2fd1c734b78"
+      ],
+      "text": "The `kaku` CLI includes subcommands such as `kaku init` for optional tool setup, `kaku --version`, `kaku ai` for AI service configuration, `kaku chat`, `kaku config`, and `kaku doctor`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_581ecdcd0b2c7ac153f3ae241061af97bdea7abc8087d25c751dcab0c3b5c1a2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 64,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L47-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea17d2fe36a3c46391bd1e9599ddecfb8adbea61110c1dd09aeca6da6bbd3560"
+      ],
+      "text": "The terminal provides documented keyboard shortcuts including Cmd+T (new tab), Cmd+D / Cmd+Shift+D (pane splits), Cmd+, (settings), Cmd+Shift+A / Cmd+L (AI panel and chat), and Cmd+Click to open URLs or file paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6fddb6db165884bd87f93d40c74a08e88c2c601afd7eefed68aff5f24454efcb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L21-L21"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L37-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81fc00109e5777188733fcc243a1f7ed1d7a5bf7aa00404e1266763113614968",
+        "slc_eac0488baed44deaa61f8fe07a5ffc12209efe2636f921bc703031ff4ddead4f"
+      ],
+      "text": "Kaku bundles JetBrains Mono, built-in zsh completion, syntax highlighting, and directory jumping, and offers shortcuts for optional Lazygit and Yazi installations; it is derived from WezTerm."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c03120c5222ce1198d97f2679ce8b7fba5dbfa0e04b455d57a4cf15dcac5b872",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_963c2e1ee1d010bc4e4cc5e6c4e85133bdbab864737c355db2b5d8b2d43b6c7e"
+      ],
+      "text": "Kaku is macOS-only; the FAQ states there is currently no Windows or Linux version."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e71f0622b4cfc55dbaf475e243ff2e2fc35d5609e3f6ac99b8889a650b07ec43",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dbe56467c6b6f3d73162b9d3a04e6512632dfb7108a826b5fcfec2fd1c734b78"
+      ],
+      "text": "Kaku does not provide or relay the AI service itself; users must configure their own AI service via `kaku ai` to use the built-in assistant."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75e815d4850d769f47eb42bd35195d9ea02beab9605651e381cdd5d6e7b69614",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+          "line_end": 75,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md#L72-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c11f3eeae4b2a1c1496fadaad09865f3193cd95dd02233165c9169f8a4d3cfb"
+      ],
+      "text": "The AI assistant supports failed-command fix suggestions (applied with Cmd+Shift+E), natural-language `# <description>` to command generation, chat over terminal output and project files, and settings for tools like Claude Code, Codex, Gemini CLI, Copilot CLI, and Kimi Code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e284be4e4a9c2796e8367470f9186e6c5cd36da6e34408798415e378a16771f7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+          "line_end": 37,
+          "line_start": 26,
+          "path": "AGENTS.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md#L26-L37"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "AGENTS.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md#L39-L39"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+          "line_end": 119,
+          "line_start": 109,
+          "path": "AGENTS.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md#L109-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a28dd8b3610b18c7c995e58aca820db087eb2053c679149e02cfc91f0ed4f35",
+        "slc_b18ac2ed43bca2c9bd0faaa201985b60c316247b54ea643b918fffcc71ae5be4",
+        "slc_f0ef3cc4d35571356b3c8db82e4377e27ce105336f5a55049e467f4acdf568d1"
+      ],
+      "text": "Repository development practice: contributors verify changes with make targets (fmt, fmt-check, check, test, app) and release scripts; `make fmt` requires the nightly toolchain, and `make check` does not run clippy, which CI checks separately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56f97fe51cd609896e25dea16bf5190c5fff51ebec4bce81ed86c6783a039cce",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+          "line_end": 22,
+          "line_start": 7,
+          "path": "AGENTS.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md#L7-L22"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+          "line_end": 119,
+          "line_start": 109,
+          "path": "AGENTS.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md#L109-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b863856b68f158454043c8e29b1f8f731d39d75ae93cd2ee0b8f7954c410b15",
+        "slc_f0ef3cc4d35571356b3c8db82e4377e27ce105336f5a55049e467f4acdf568d1"
+      ],
+      "text": "Repository development practice: CI runs fmt, check, tests, and log/prompt guards on pushes to main and pull requests, with paths-ignore for markdown and assets so docs-only changes skip CI; clippy and a relay-check job gate separately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e6847cf3d6c9bbf4c649d944a9dc4192fd9af4415bf11f167bc31460c1fa388",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+          "line_end": 142,
+          "line_start": 142,
+          "path": "AGENTS.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md#L142-L142"
+        },
+        {
+          "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+          "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "AGENTS.md",
+          "repository": "tw93/kaku",
+          "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md#L136-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_655fa256fab7e7caf8e3f8cc1cb617c7be20badeaa2322cd7284f859712303e2",
+        "slc_c42d8de5f05de57c3162f6b2acffcb6865f4e8809556356c6514d0ad7cc3eb5e"
+      ],
+      "text": "Repository development practice: releases use `V0.x.x` tags with `scripts/release.sh` as source of truth, release notes titled from `.github/RELEASE_NOTES.md`, and a manual pre-release smoke checklist in `.agents/skills/release/SKILL.md` run on the built app before tagging."
+    }
+  ],
+  "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 128,
+        "path": "README.md",
+        "size": 7010
+      },
+      {
+        "lines": 153,
+        "path": "AGENTS.md",
+        "size": 16454
+      },
+      {
+        "lines": 37,
+        "path": "CLAUDE.md",
+        "size": 1986
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1935
+      },
+      {
+        "path": "LICENSE.md",
+        "reason": "file-budget",
+        "size": 1132
+      },
+      {
+        "path": "NOTICE.md",
+        "reason": "file-budget",
+        "size": 1320
+      },
+      {
+        "path": "docs/cli.md",
+        "reason": "file-budget",
+        "size": 2859
+      },
+      {
+        "path": "docs/config-versions.md",
+        "reason": "file-budget",
+        "size": 4954
+      },
+      {
+        "path": "docs/configuration.md",
+        "reason": "file-budget",
+        "size": 11693
+      },
+      {
+        "path": "docs/faq.md",
+        "reason": "file-budget",
+        "size": 6997
+      },
+      {
+        "path": "docs/features.md",
+        "reason": "file-budget",
+        "size": 10748
+      },
+      {
+        "path": "docs/keybindings.md",
+        "reason": "file-budget",
+        "size": 3305
+      },
+      {
+        "path": "docs/release-checklist.md",
+        "reason": "file-budget",
+        "size": 4039
+      }
+    ],
+    "omitted_count": 10,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1080,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 10,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_f863571fd0f65da58f9f8c61b5c39092",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tw93/kaku/2b1b4c5906d0bd06436b53213f50dd830c23ec75/e836c39c5c341f82/manifest.json",
+  "package_id": "pkg_97f56e9e4a0b6fcb6d331d9df1e02f64484bff172e42b776c5ffe95db135e7c3",
+  "repo": "tw93/kaku",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "72f1ff69f89d4570a46a860a92e4435e578a2eb25d5b7c589acc158435feef35",
+  "snapshot_id": "e836c39c5c341f82",
+  "sources": [
+    {
+      "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+      "git_sha": "74cf76b783b535237f57adb60709414379fa8ac8",
+      "lines": 153,
+      "path": "AGENTS.md",
+      "repository": "tw93/kaku",
+      "sha256": "d8c6d8e9d79813c8b65793bc3adaa747bfc32808598d5b21261bba2f8d332628",
+      "source_id": "src_eecb4a967e245b3aac3ff84e45e2a73f",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/AGENTS.md"
+    },
+    {
+      "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+      "git_sha": "805942bd6be3c82f1da7927ce16e3998c8596f90",
+      "lines": 37,
+      "path": "CLAUDE.md",
+      "repository": "tw93/kaku",
+      "sha256": "eb8a4c28062b020aa40ce211b4b1bcfa881917875632791ae270f2bdaff58423",
+      "source_id": "src_d34309cff76c52cd9380de3d1617f0c6",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/CLAUDE.md"
+    },
+    {
+      "commit": "2b1b4c5906d0bd06436b53213f50dd830c23ec75",
+      "git_sha": "476a2d1414d4e4b5393dd08d0ec0c550052772ab",
+      "lines": 128,
+      "path": "README.md",
+      "repository": "tw93/kaku",
+      "sha256": "40e9b67f509b38edab1e636f76e2fe3438167df71abe0d37d67a50c2acee7dde",
+      "source_id": "src_384b174edd135bbfbb023def4505bb4a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/tw93/Kaku/blob/2b1b4c5906d0bd06436b53213f50dd830c23ec75/README.md"
+    }
+  ],
+  "summary": "Kaku is an AI-friendly Mac terminal with sensible defaults, built on WezTerm with fonts, themes, shell integration, and Mac shortcuts preconfigured. The product exposes WezTerm's Lua configuration system so users can customize fonts, themes, shortcuts, and terminal behavior; e.g. window transparency via `config.window_background_opacity` in `~/.config/kaku/kaku.lua`.",
+  "superseded_claim_ids": []
+}

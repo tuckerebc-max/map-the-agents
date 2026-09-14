@@ -1,0 +1,569 @@
+{
+  "applied_operation_id": "op_4460684fd98a4483bb98343f44fb6dc0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1fb3cce3856d8599171fd91df82c91b29b7b646623c9e4896d45842692066fd9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L18-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ee045ca81706d5ae295b6af4701d56770c33b1d7e8a1b157b46267034f714bdb"
+      ],
+      "text": "The architecture doc describes this project as a Rust implementation of the 2389 Agent Protocol, with agents interoperating over MQTT and an emphasis on reliability and strict protocol compliance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40000d59be14b8c76d56b55f1beca7e77d0b0dfa088e8096c42f202ddd1cf026",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 72,
+          "line_start": 69,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L69-L72"
+        },
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 560,
+          "line_start": 556,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L556-L560"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7da57c1829709a1b39fe015293f554ad6434126071b10c08155465b6f4019eff",
+        "slc_cea58e5559d114d62479aafeff68f2ca71c8f8da62b24c4378a5b32c688609c7"
+      ],
+      "text": "Documentation describes an explicit agent lifecycle moving through Uninitialized, Initializing, Running, Stopping and Stopped, with any state able to transition to an Error state on failure."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c6ce283c6a9311c402be2b9cb45ac246f41dd74cdc812a280afec3a3379c0e1d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 282,
+          "line_start": 279,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L279-L282"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_348da6accbaf1dc7a6355198b028f0af22cbacf778f1b68361b4de2418737931"
+      ],
+      "text": "Listed tool-execution security controls include JSON-schema validation of parameters, per-tool process isolation with timeouts, and restricting available tools to an allow-list."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd4cc04f0f0c6bb196ea2241262581ce69d2ab73c38155a2b3c5358e65a098cc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 320,
+          "line_start": 318,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L318-L320"
+        },
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 294,
+          "line_start": 294,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L294-L294"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2266535278cc2584b501f496fee9c0b057f815d02ff50f91c03f080e01d75e61",
+        "slc_2d2ddd26406584e45c0226d6fea9a7a6d413e8cda2a021c41a074b9e98130acb"
+      ],
+      "text": "The LLM integration layer is documented as provider-agnostic behind a shared trait, with Anthropic Claude and OpenAI GPT listed as the currently supported providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4c2a78039fc7ff988af0410b5cebc648537754390b8a637bc4b363bcdab023b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 862,
+          "line_start": 862,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L862-L862"
+        },
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 870,
+          "line_start": 866,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L866-L870"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b5fab2ab7164fa6053521e91686fe96c3b214fe5cdb74d2f267b01e939fe2c33",
+        "slc_ebf73b01453257cda1e9a9c02ca550c87379501899672a0dbd4ad793e4ac6e35"
+      ],
+      "text": "An accepted architecture decision record states Rust was chosen for the core implementation, citing memory safety without garbage-collection overhead and strong async support as rationale."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b5d917c455185f35669ddd1720db8f4053dd56edb676bc092c72b28dd78233c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 885,
+          "line_start": 885,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L885-L885"
+        },
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 899,
+          "line_start": 896,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L896-L899"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6634ad9c195870d5dcbf02f36b5a35143cbfaf530400631360a3b9103f7c7b34",
+        "slc_ea59de757e7095964b68157cfeeb3ddb8ef480761a05adf8607ffd62eafda91d"
+      ],
+      "text": "A second accepted decision record names rumqttc as the MQTT client library, noting it avoids external C dependencies since it is a pure-Rust implementation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e8319ee1c7a4658b65ec1218313a80514e3998cfe89b389333076ef4236cc57",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 877,
+          "line_start": 874,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L874-L877"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_628bdba193e7f2f83cf80637f2543b017a749762859d779c691befdcaef5588d"
+      ],
+      "text": "The Rust-language decision record acknowledges two consequences: a steeper learning curve for contributors unfamiliar with Rust, and longer compile times than an interpreted language would have."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08094b898032f30087693c9da28d6e638d9bf0c3792e2890bfbcce87657dcba4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+          "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+          "line_end": 629,
+          "line_start": 626,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "2389-research/2389-agent-rust",
+          "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md#L626-L629"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_86f84c2c8fde23fc69c06a965bdd256a3055c9ad167feef0b41169ba17f41298"
+      ],
+      "text": "The threat model names four trust boundaries: the MQTT network perimeter, process isolation around tool execution, the LLM provider API boundary, and input validation at the data boundary."
+    }
+  ],
+  "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 822,
+        "path": "README.md",
+        "size": 21679
+      },
+      {
+        "lines": 1036,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 30893
+      },
+      {
+        "lines": 153,
+        "path": "CODERABBIT_ACTION_PLAN.md",
+        "size": 4457
+      },
+      {
+        "lines": 732,
+        "path": "DEPLOYMENT_TESTING.md",
+        "size": 16027
+      },
+      {
+        "lines": 54,
+        "path": "DOCKER_BUILD_NOTES.md",
+        "size": 1414
+      },
+      {
+        "lines": 414,
+        "path": "DOCUMENTATION_STATUS.md",
+        "size": 10369
+      }
+    ],
+    "omitted": [
+      {
+        "path": "GENERIC_AGENT_DEPLOYMENT.md",
+        "reason": "file-budget",
+        "size": 15444
+      },
+      {
+        "path": "RUNBOOK.md",
+        "reason": "file-budget",
+        "size": 19341
+      },
+      {
+        "path": "SCRIPTS_AUDIT_REPORT.md",
+        "reason": "file-budget",
+        "size": 10905
+      },
+      {
+        "path": "TEST_COVERAGE_SUMMARY.md",
+        "reason": "file-budget",
+        "size": 6733
+      },
+      {
+        "path": "V2_ROUTING_SUMMARY.md",
+        "reason": "file-budget",
+        "size": 11110
+      },
+      {
+        "path": "docs/AGENT_CAPABILITIES.md",
+        "reason": "file-budget",
+        "size": 9784
+      },
+      {
+        "path": "docs/agent_system_prompts.md",
+        "reason": "file-budget",
+        "size": 22903
+      },
+      {
+        "path": "docs/CI_QUICK_START.md",
+        "reason": "file-budget",
+        "size": 6465
+      },
+      {
+        "path": "docs/CLI_TOOLS.md",
+        "reason": "file-budget",
+        "size": 23995
+      },
+      {
+        "path": "docs/COMPLEXITY_ANALYSIS.md",
+        "reason": "file-budget",
+        "size": 4709
+      },
+      {
+        "path": "docs/CONFIGURATION_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 14752
+      },
+      {
+        "path": "docs/DEPLOYMENT.md",
+        "reason": "file-budget",
+        "size": 24558
+      },
+      {
+        "path": "docs/DOCUMENTATION_REVIEW.md",
+        "reason": "file-budget",
+        "size": 5012
+      },
+      {
+        "path": "docs/ERROR_HANDLING_AUDIT.md",
+        "reason": "file-budget",
+        "size": 4107
+      },
+      {
+        "path": "docs/GETTING_STARTED.md",
+        "reason": "file-budget",
+        "size": 11659
+      },
+      {
+        "path": "docs/IGNORED_TESTS.md",
+        "reason": "file-budget",
+        "size": 2818
+      },
+      {
+        "path": "docs/INDEX.md",
+        "reason": "file-budget",
+        "size": 8040
+      },
+      {
+        "path": "docs/llm_provider_test_coverage.md",
+        "reason": "file-budget",
+        "size": 7419
+      },
+      {
+        "path": "docs/OBSERVABILITY.md",
+        "reason": "file-budget",
+        "size": 41097
+      },
+      {
+        "path": "docs/rfc-agent-protocol.txt",
+        "reason": "file-budget",
+        "size": 14563
+      },
+      {
+        "path": "docs/routing_completion_plan.md",
+        "reason": "file-budget",
+        "size": 27757
+      },
+      {
+        "path": "docs/SECURITY_AUDIT.md",
+        "reason": "file-budget",
+        "size": 4621
+      },
+      {
+        "path": "docs/TASK_INJECTOR_GUIDE.md",
+        "reason": "file-budget",
+        "size": 8804
+      },
+      {
+        "path": "docs/TASKENVELOPE_PROTOCOL.md",
+        "reason": "file-budget",
+        "size": 14621
+      },
+      {
+        "path": "docs/TECHNICAL_REQUIREMENTS.md",
+        "reason": "file-budget",
+        "size": 70127
+      },
+      {
+        "path": "docs/TESTING.md",
+        "reason": "file-budget",
+        "size": 18510
+      },
+      {
+        "path": "docs/THOROUGH_AUDIT_SUMMARY.md",
+        "reason": "file-budget",
+        "size": 5880
+      },
+      {
+        "path": "docs/TROUBLESHOOTING.md",
+        "reason": "file-budget",
+        "size": 25039
+      },
+      {
+        "path": "docs/v2_routing_architecture.md",
+        "reason": "file-budget",
+        "size": 20233
+      },
+      {
+        "path": "docs/examples/README.md",
+        "reason": "file-budget",
+        "size": 7310
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 8969
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2540
+      }
+    ],
+    "omitted_count": 32,
+    "omitted_slices": 289,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 166,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 38,
+      "complete": false,
+      "omitted": 32,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_0f529e4cfc8150e5a07846499f96a353",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/2389-agent-rust/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/e524e8d668e3072d/manifest.json",
+  "package_id": "pkg_45c3870c93592687c912bb2fcedebb50a0f5bd3e1a7081dc1f1ed9ab6f255868",
+  "repo": "2389-research/2389-agent-rust",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fa25b1eb32e8409e8fe6448c9ad56bc6414f7465cc0d00887bd155891f229119",
+  "snapshot_id": "e524e8d668e3072d",
+  "sources": [
+    {
+      "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+      "git_sha": "7fcb13caa30d6ee1a832d2aeaf7315b22058aba7",
+      "lines": 153,
+      "path": "CODERABBIT_ACTION_PLAN.md",
+      "repository": "2389-research/2389-agent-rust",
+      "sha256": "82ed8b344d741d2418da2a16388c34947dc67aa2b274c9fa8d2734727d529c88",
+      "source_id": "src_2738d89e1d955ee6b8efadde1dffa39b",
+      "stored": "coderabbit_action_plan.md-ebd32760fa28.md",
+      "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/CODERABBIT_ACTION_PLAN.md"
+    },
+    {
+      "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+      "git_sha": "0de6be6b7fbfa4d1eaeca451e8698f6dcb07f2a6",
+      "lines": 732,
+      "path": "DEPLOYMENT_TESTING.md",
+      "repository": "2389-research/2389-agent-rust",
+      "sha256": "514eb4c7947bb83bc474a2b996df6823fee3f5ea2c2043d1f96fa8497d324fbc",
+      "source_id": "src_759073bad9bd547ea607ce0fea7aae3b",
+      "stored": "deployment_testing.md-f62feab45afc.md",
+      "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/DEPLOYMENT_TESTING.md"
+    },
+    {
+      "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+      "git_sha": "56f08795bc56cfef2187dfcb56385373129bb862",
+      "lines": 54,
+      "path": "DOCKER_BUILD_NOTES.md",
+      "repository": "2389-research/2389-agent-rust",
+      "sha256": "ccde31a15b6ba23feaea055127d4ec6241f7d76e10c8983f5d8436af2a8a9817",
+      "source_id": "src_4dd49bb89fa95912b57cd9cb43c7a25d",
+      "stored": "docker_build_notes.md-461e659230ac.md",
+      "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/DOCKER_BUILD_NOTES.md"
+    },
+    {
+      "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+      "git_sha": "7d953226e953e5ea089e9778f1366cdd360106f7",
+      "lines": 414,
+      "path": "DOCUMENTATION_STATUS.md",
+      "repository": "2389-research/2389-agent-rust",
+      "sha256": "3a4d5613abeaacb821a59465fefe0eb85efcc3721289364669a31346af744715",
+      "source_id": "src_ede12378c22b5d2fb4dd8254962924ed",
+      "stored": "documentation_status.md-2645e63780fc.md",
+      "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/DOCUMENTATION_STATUS.md"
+    },
+    {
+      "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+      "git_sha": "63c4b7b94a2d295e4e18a66ca4612df31a5a24c7",
+      "lines": 822,
+      "path": "README.md",
+      "repository": "2389-research/2389-agent-rust",
+      "sha256": "8c1488a3dee7836102b991c9b3a5aca061ea5b8a56dcc4d477600c90ea7a3f93",
+      "source_id": "src_05a4d17397cc57708c0d8403b1db54e6",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/README.md"
+    },
+    {
+      "commit": "9ebe8438dbdb0a9566ef9ce4d6f492fc253db689",
+      "git_sha": "2e1183b0c22a986e165b2760f0640b2ba20a5956",
+      "lines": 1036,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "2389-research/2389-agent-rust",
+      "sha256": "e564b00e6213c92fd285412ab12b4cb2f525856363c92c04719dbab1c3ffcc80",
+      "source_id": "src_137487f9e035524581ab74c136f065a2",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/2389-research/2389-agent-rust/blob/9ebe8438dbdb0a9566ef9ce4d6f492fc253db689/docs/ARCHITECTURE.md"
+    }
+  ],
+  "summary": "2389-agent-rust documents a Rust implementation of the 2389 Agent Protocol whose agents communicate over MQTT, with an explicit lifecycle state machine, tool-execution security controls, provider-agnostic LLM integration, and two accepted architecture decisions covering the choice of Rust and the MQTT client library.",
+  "superseded_claim_ids": []
+}

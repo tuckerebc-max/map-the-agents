@@ -1,0 +1,50 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_178ee3e8625e9114b18d729816d3d980deef94420ce5e5c643de2a12f197ba47
+- clm_2d13cd412461e305c184614d500ab692ae7fa6f671e2ea3740d06c48259ecdd2
+- clm_2d2b1f286785b5c6537f5abf197433dbbc4e1f5bd9893b18353fc037f4e16a60
+- clm_38e0adfe38599f9148acdaaf6537a6a32ad30d6b19940da60a2d8ca6ff6f1fdf
+- clm_5574ff3cd1afc242572a7ef7741df54c57626850535d0dd47e380e54db9e837f
+- clm_72c2a828da8f3b91e4c2cd77d3ae89626e398649a6f8cd825cf341ef013e9717
+- clm_800938af73fb3505443ed3982d4a970b0f93517b4136cff92a874e930140b3d9
+- clm_87bbb9e738ccd99a3ef0fe89f2d28d486b0bc91441792f80d749b893b1f4a63e
+- clm_99cce8193fdb73de809c6430e9ac31d90598b3378ecd28a3dc13e3adf7697b41
+- clm_af43ac5a6ffff7f3ebcbbc9f686dee97fc98fbbd00867e00f263d44acc678b90
+- clm_ba170487da994b9847096abf7f3d96fdac0467f4000a45e8bfe405c24a45dad7
+- clm_bb147aabf5f94357cc6d407da5419bb851094e842135fe206b9325aee1c239c2
+- clm_c83ee13c9543c31464c4f26c611bfeee3d9ec15b59c68167fe98d9fbbc5ebc2f
+- clm_dc0ed1519334e388eb03a899f63d0344f6287618b1f91209b7be438beced5e2a
+maturity: draft
+page_id: pg_e4b1c42c45f05090ad09fae37e7bc4da
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_4c90011410e255e082aca7685d868239
+title: lidangzzz/AI-Coding-Style-Guides/README.md @ 16f2f9c646d2
+updated_at: '2026-09-14T04:05:52Z'
+---
+
+# lidangzzz/AI-Coding-Style-Guides/README.md @ 16f2f9c646d2
+
+<!-- rcw:begin owner=source:src_4c90011410e255e082aca7685d868239 block=evidence -->
+- The stated goal is to maximize code compression across languages while keeping reasonable human readability, balancing compactness against context-window savings. [@claim:clm_178ee3e8625e9114b18d729816d3d980deef94420ce5e5c643de2a12f197ba47]
+- Usage instructions tell readers to open AI_Coding_Style_Guide_prompts.toml, copy its prompts into their own prompt management system, and optionally modify them for their needs. [@claim:clm_2d13cd412461e305c184614d500ab692ae7fa6f671e2ea3740d06c48259ecdd2]
+- A C++ JSON parser example is compressed from 2708 to 1330 characters (~49.1%), and the conclusion claims typical reductions to roughly 20-50% of original size. [@claim:clm_2d2b1f286785b5c6537f5abf197433dbbc4e1f5bd9893b18353fc037f4e16a60]
+- The evidence shows only documentation and prompt content; no executable tool or agent runtime appears in the provided slices, so the deliverable appears to be prompts and guidance rather than software. [@claim:clm_38e0adfe38599f9148acdaaf6537a6a32ad30d6b19940da60a2d8ca6ff6f1fdf]
+- The project ships a set of coding style guides, including general guides for common languages and guides tailored to specific languages and scenarios, aimed at maximizing code compression. [@claim:clm_5574ff3cd1afc242572a7ef7741df54c57626850535d0dd47e380e54db9e837f]
+- The README demonstrates compression on a 1216-character TypeScript KMP implementation, showing staged reductions to 795, 715, 443, and finally 283 characters (~23.3% of original). [@claim:clm_72c2a828da8f3b91e4c2cd77d3ae89626e398649a6f8cd825cf341ef013e9717]
+- The guide argues compressed code remains workable because LLMs can explain or reconstruct it into readable form, demonstrated by an LLM explanation of the 283-character KMP function. [@claim:clm_800938af73fb3505443ed3982d4a970b0f93517b4136cff92a874e930140b3d9]
+- The guide's rationale cites three trends: growing LLM capability, perpetually insufficient context windows, and reduced importance of human readability when agents do most programming. [@claim:clm_87bbb9e738ccd99a3ef0fe89f2d28d486b0bc91441792f80d749b893b1f4a63e]
+- Further rules advocate advanced language features (lambdas, syntactic sugar, type inference), abstracting reusable units, avoiding duplication via higher-order functions/decorators/mixins, and letting the LLM perform compression. [@claim:clm_99cce8193fdb73de809c6430e9ac31d90598b3378ecd28a3dc13e3adf7697b41]
+- The guide targets vibe-coding and SWE-agent workflows where context-window limits and per-token costs motivate feeding more code in fewer tokens. [@claim:clm_af43ac5a6ffff7f3ebcbbc9f686dee97fc98fbbd00867e00f263d44acc678b90]
+- Basic rules include minimizing whitespace, keeping full names for top-level entities while shortening local variables, brief comments only at top level, and co-locating related code in single files. [@claim:clm_ba170487da994b9847096abf7f3d96fdac0467f4000a45e8bfe405c24a45dad7]
+- Compression is organized into eight levels, from basic whitespace removal up to full whitespace removal, identifier shortening, comment removal, and refactoring with any language feature. [@claim:clm_bb147aabf5f94357cc6d407da5419bb851094e842135fe206b9325aee1c239c2]
+- A Python snippet using the toml library is provided to load prompts from the TOML file into a user's prompt management system. [@claim:clm_c83ee13c9543c31464c4f26c611bfeee3d9ec15b59c68167fe98d9fbbc5ebc2f]
+- The guide benchmarks against conventional tools: JSCompress output was 348 characters (~28.6%) for the compiled JavaScript, and jsonminify.com produced 2144 characters (~79.2%) for the C++ example. [@claim:clm_dc0ed1519334e388eb03a899f63d0344f6287618b1f91209b7be438beced5e2a]
+<!-- rcw:end owner=source:src_4c90011410e255e082aca7685d868239 block=evidence -->
+
+## Researcher notes
+

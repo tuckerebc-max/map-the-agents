@@ -1,0 +1,1496 @@
+{
+  "applied_operation_id": "op_18b71226099e42d08c25425e20711357",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_866b4b4f7b75c5f7860b091025bb21d4c2ba22ed03a016e840f5a8120308022c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 56,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L52-L56"
+        },
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 243,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L231-L243"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_481dcaae14f57f627236bf925f2880f4f675826075302c49d1337df15be5004f",
+        "slc_d2c346506e98dce65b2f416fb9c23f4c6c26fd0c58c94f4a936efbb290e8f8b7"
+      ],
+      "text": "TMPA Core Specification S1.0 is presented as the normative layer defining objects, authority, lifecycle, Reader behavior, and conformance requirements, with criteria labeled C01–C14."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90d66051f1fe75e943e84d033e3295bacfcc16bab6bea98ff76ea82d9ba1a46f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 258,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L258-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef18c824a8b24a3d55d9b1382bc4e1d4e4c0f164a9503591c2fffa2d0abea393"
+      ],
+      "text": "The repository ships TMPA Core S1.0 machine schemas, fixtures, profiles, an author-produced Reference Reader, and a C01–C14 conformance runner."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e355114c7f4dddfb5ff7e443dc39b4cab3f8258f3d728e1b89f32bc479575ac",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 268,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L262-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ff8beeb2e6ec35ebf26448c47e90c9e866735ea43f56604af6b76ff05d6e8b6e"
+      ],
+      "text": "The Reference Reader is run via npm commands: `npm run demo` for a demo delivery and `npm run tmpa:s1.0:conformance` for the conformance runner, after `npm ci`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c42f452919fb08f1d0601108f6d3de836f2ac79504eb178e7ccfcadefb25ddce",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 260,
+          "line_start": 260,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L260-L260"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e1f3d4e91a1f2e3b5e8392e8e5b6660f8feb433940a0524e0c9aab7a6452c30b"
+      ],
+      "text": "Running the Reference Reader requires Node.js 20 or later, per the README requirements line."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_791a18214cb198bbbfee43aa9b7ee246f17004f7f906430224b8694d8328d89f",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 276,
+          "line_start": 274,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L274-L276"
+        },
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 292,
+          "line_start": 284,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L284-L292"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_403b5bca211989c48eeb9e725a5d6f0163049a1a51fe13331f67f2762900f9c6",
+        "slc_d1650279f4c5a2f82b8e354e616577d7175fb89632cbcd245fe67914b3640dd1"
+      ],
+      "text": "The recorded conformance result is 14 PASS / 0 PARTIAL / 0 NOT RUN / 0 FAIL for the S1.0 criteria, alongside reported suite results such as 71/71 mandatory assertions and a 1,522-pass CodeFlowMu runtime suite."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80fdef812d27637c00c822c5d8d81bdcff9109dbf0abffafa2ea65236e7c0205",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 296,
+          "line_start": 296,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L296-L296"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ee7578214a44061e03fa5c39117eb078cc42cdfdbdf0b03b5e896d876236662a"
+      ],
+      "text": "The README states the conformance evidence is author-run for one exact implementation revision and input bundle, and is not independent certification, universal conformance, or proof hallucinations are eliminated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_84b61e56e5a2e09f7ee4db6a1f64e84f3cf2580df2558ecf091a600505aa1dff",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 254,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L254-L254"
+        },
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 252,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L249-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14cf11c98dd2dc04a01a48deb81972b9932fde510cac184a391e035e4078ff53",
+        "slc_b1b45381179d3c00931ddfb3ef52e2128b49f14d09d7116f32dac9d906410c5b"
+      ],
+      "text": "TMPA Core is described as storage-neutral: files, database rows, object-store items, or events may carry the same governance semantics, with durable state kept outside model sessions and a Reader reconstructing governance state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70f0d211a2a28b9d6d691a6f3a75fc2899ff1d96afde2b3540e15befcf9f94d7",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L172-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38de0e8f11129a1c8b08d3713acdd8307a0e7996bc5ec4096e03efbcc7eaf6c2"
+      ],
+      "text": "TMPA moves durable work facts out of volatile model memory so lifecycle, authority, conflict, and audit state can be reconstructed from inspectable evidence across asynchronous execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_834005403dfe71f50664c41301ad6459f6d65624cda38da3dfe8091b58e833a4",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 176,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L176-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_39eeffff5ed949c50938046de6d1ca6c97a2c07680b57f50851aaa408ee0e85a"
+      ],
+      "text": "The repository targets builders of agents that must survive restarts, handoffs, disputes, review, and organizational accountability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4de9770974b0254a0a0ed211da8c8565f72ba084a182930944c608dd51275970",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L75-L75"
+        },
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+          "line_end": 310,
+          "line_start": 310,
+          "path": "README.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md#L310-L310"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d84bab95921a6bc0b020f05086173221f04f856d814b0ce31f49805bfc26541",
+        "slc_47756b8914a3d5ce5c7f83b3510d7944df309847bac19ac711eaa336c6e9ee45"
+      ],
+      "text": "CodeFlowMu is described as a local PM/DEV/QA/OPS AI development team with a PC control center and a mobile PWA, distributed as a proprietary free Windows x64 preview from a separate distribution repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a97376aef4eefa62aeee9c2e99b5df6e46f3f6422599db7dfd9713e10998356",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "c3596da4c505d0cde1dfbc9b9847896764125d6c",
+          "line_end": 92,
+          "line_start": 86,
+          "path": "docs/zh/digital-employee/architecture.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/docs/zh/digital-employee/architecture.md#L86-L92"
+        },
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "c3596da4c505d0cde1dfbc9b9847896764125d6c",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/zh/digital-employee/architecture.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/docs/zh/digital-employee/architecture.md#L17-L17"
+        },
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "c3596da4c505d0cde1dfbc9b9847896764125d6c",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "docs/zh/digital-employee/architecture.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/docs/zh/digital-employee/architecture.md#L94-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_562c7103783ad80e06b0b59bb8a4534cd491bbe8091c14a91781244586a0532b",
+        "slc_b9d27a0d7960d81af4fa2f297a02ed96d1063354aa7ee5c7521229473e3461f6",
+        "slc_fd7a528184779edcff89fa369fbef22cd34be7c184dc7ad9e93a637aa3ba3ae4"
+      ],
+      "text": "The V0.3.1 draft architecture proposes a five-layer design (FCoP fact layer, TMPA Reader, Runtime, definition/deployment, instance) coordinated by asynchronous fact loops rather than a synchronous all-agents-online pipeline; it is explicitly a draft, not a stable specification."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e31c5f0a4bbea1e40c124148c226af688e9c08542ed25fee4498cb922070261",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+          "git_sha": "c3596da4c505d0cde1dfbc9b9847896764125d6c",
+          "line_end": 150,
+          "line_start": 149,
+          "path": "docs/zh/digital-employee/architecture.md",
+          "repository": "joinwell52-ai/joinwell52",
+          "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/docs/zh/digital-employee/architecture.md#L149-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_680bc19fd69496371d8e26b5976b935b3990415fff3a0866428c7f91057cf5c2"
+      ],
+      "text": "The draft proposes each execution role be bounded by a default-deny Capability Envelope/Sandbox Boundary limiting tools, paths, network, and credentials, plus a negative list of contextual business rules; as draft target language, this is not confirmed shipped behavior."
+    }
+  ],
+  "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 357,
+        "path": "README.md",
+        "size": 40124
+      },
+      {
+        "lines": 200,
+        "path": "docs/digital-employee/architecture.md",
+        "size": 7306
+      },
+      {
+        "lines": 319,
+        "path": "docs/en/digital-employee/architecture.md",
+        "size": 19015
+      },
+      {
+        "lines": 319,
+        "path": "docs/zh/digital-employee/architecture.md",
+        "size": 16347
+      },
+      {
+        "lines": 389,
+        "path": "LOCAL-RUN-GUIDE.zh-CN.md",
+        "size": 11336
+      },
+      {
+        "lines": 79,
+        "path": "MIGRATION-SINGLE-SOURCE.md",
+        "size": 3201
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README.en.md",
+        "reason": "file-budget",
+        "size": 688
+      },
+      {
+        "path": "README.zh-CN.md",
+        "reason": "file-budget",
+        "size": 64979
+      },
+      {
+        "path": "RESEARCH-GOVERNANCE.md",
+        "reason": "file-budget",
+        "size": 10824
+      },
+      {
+        "path": "RESEARCH-NOTES-METADATA.md",
+        "reason": "file-budget",
+        "size": 1931
+      },
+      {
+        "path": "RESEARCH-NOTES-STANDARD.md",
+        "reason": "file-budget",
+        "size": 7396
+      },
+      {
+        "path": "docs/about.md",
+        "reason": "file-budget",
+        "size": 2529
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 2040
+      },
+      {
+        "path": "docs/PUBLIC-REPOSITORY-METADATA-STATUS.md",
+        "reason": "file-budget",
+        "size": 5522
+      },
+      {
+        "path": "docs/REPOSITORY-DISCOVERY-AND-CITATION-STANDARD.md",
+        "reason": "file-budget",
+        "size": 7665
+      },
+      {
+        "path": "docs/digital-employee/index.md",
+        "reason": "file-budget",
+        "size": 698
+      },
+      {
+        "path": "docs/en/about.md",
+        "reason": "file-budget",
+        "size": 2734
+      },
+      {
+        "path": "docs/en/index.md",
+        "reason": "file-budget",
+        "size": 1950
+      },
+      {
+        "path": "docs/engineering/index.md",
+        "reason": "file-budget",
+        "size": 647
+      },
+      {
+        "path": "docs/engineering/openhands.md",
+        "reason": "file-budget",
+        "size": 3167
+      },
+      {
+        "path": "docs/industry/index.md",
+        "reason": "file-budget",
+        "size": 635
+      },
+      {
+        "path": "docs/industry/servicenow.md",
+        "reason": "file-budget",
+        "size": 3360
+      },
+      {
+        "path": "docs/industry/workday.md",
+        "reason": "file-budget",
+        "size": 3530
+      },
+      {
+        "path": "docs/public/runtime-refresh-2026-08-04.txt",
+        "reason": "file-budget",
+        "size": 253
+      },
+      {
+        "path": "docs/research/index.md",
+        "reason": "file-budget",
+        "size": 679
+      },
+      {
+        "path": "docs/zh/about.md",
+        "reason": "file-budget",
+        "size": 2309
+      },
+      {
+        "path": "docs/zh/index.md",
+        "reason": "file-budget",
+        "size": 383
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-02-computer-use-action-state-loop.md",
+        "reason": "file-budget",
+        "size": 9856
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-02-control-plane-work-runtime.md",
+        "reason": "file-budget",
+        "size": 10626
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-02-osworld-execution-verification.md",
+        "reason": "file-budget",
+        "size": 11133
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-02-position-ownership-authority.md",
+        "reason": "file-budget",
+        "size": 9643
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-05-universal-verifier-completion-contract.md",
+        "reason": "file-budget",
+        "size": 15254
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-05-verifiable-completion.md",
+        "reason": "file-budget",
+        "size": 3590
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-06-governed-revisable-work-graph.md",
+        "reason": "file-budget",
+        "size": 6559
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-07-verification-gated-state-admission.md",
+        "reason": "file-budget",
+        "size": 9729
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-08-pause-preserving-budget-admission.md",
+        "reason": "file-budget",
+        "size": 7207
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-09-revocation-coupled-run-reconciliation.md",
+        "reason": "file-budget",
+        "size": 8122
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-10-governed-input-admission-boundary.md",
+        "reason": "file-budget",
+        "size": 9485
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-11-execution-authority-ordered-work.md",
+        "reason": "file-budget",
+        "size": 9091
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-12-acceptance-persistence-handoff.md",
+        "reason": "file-budget",
+        "size": 6777
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-12-corpgen-multi-horizon-runtime.md",
+        "reason": "file-budget",
+        "size": 12539
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-13-resume-capability-reconstruction.md",
+        "reason": "file-budget",
+        "size": 9696
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-14-durable-work-execution-authority.md",
+        "reason": "file-budget",
+        "size": 8973
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-15-resumable-agent-trust-gates.md",
+        "reason": "file-budget",
+        "size": 10716
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-16-occurrence-scoped-authorization.md",
+        "reason": "file-budget",
+        "size": 7247
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-17-selective-fail-closed-api.md",
+        "reason": "file-budget",
+        "size": 7187
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-18-accountable-human-approval.md",
+        "reason": "file-budget",
+        "size": 7164
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-18-cursor-ai-development-team.md",
+        "reason": "file-budget",
+        "size": 17451
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-19-local-runtime-mobile-control.md",
+        "reason": "file-budget",
+        "size": 19194
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-19-monotonic-delegation-authority.md",
+        "reason": "file-budget",
+        "size": 7358
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-19-sentinelbench-waiting-runtime.md",
+        "reason": "file-budget",
+        "size": 16372
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-20-command-name-execution-authority.md",
+        "reason": "file-budget",
+        "size": 7351
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-20-report-attribution.md",
+        "reason": "file-budget",
+        "size": 21402
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-21-useful-context-not-memory-authority.md",
+        "reason": "file-budget",
+        "size": 7560
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-22-agent-rail-decision-boundary.md",
+        "reason": "file-budget",
+        "size": 25699
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-22-authorization-needs-provenance.md",
+        "reason": "file-budget",
+        "size": 7644
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-23-resume-recency-not-authority.md",
+        "reason": "file-budget",
+        "size": 7679
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-24-repeated-failure-not-new-evidence.md",
+        "reason": "file-budget",
+        "size": 7170
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-25-precedence-not-configuration-authority.md",
+        "reason": "file-budget",
+        "size": 7615
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-26-agent-call-time-authorization-receipt.md",
+        "reason": "file-budget",
+        "size": 24657
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-26-agent-failure-and-delivery-boundary.md",
+        "reason": "file-budget",
+        "size": 13107
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-26-foreground-completion-not-workflow-completion.md",
+        "reason": "file-budget",
+        "size": 6696
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-26-observer-audit-without-adjudication.md",
+        "reason": "file-budget",
+        "size": 19656
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-26-service-health-task-recovery-case.md",
+        "reason": "file-budget",
+        "size": 14712
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-27-agent-stop-evidence.md",
+        "reason": "file-budget",
+        "size": 14548
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-27-agent-ui-status-projection.md",
+        "reason": "file-budget",
+        "size": 14699
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-27-running-is-an-evidence-claim.md",
+        "reason": "file-budget",
+        "size": 7353
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-28-delegation-budgets-belong-to-root-objective.md",
+        "reason": "file-budget",
+        "size": 7149
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-28-skill-session-evidence.md",
+        "reason": "file-budget",
+        "size": 22114
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-29-restoring-context-does-not-restore-authority.md",
+        "reason": "file-budget",
+        "size": 6488
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-30-resume-needs-more-than-a-checkpoint.md",
+        "reason": "file-budget",
+        "size": 6506
+      },
+      {
+        "path": "docs/en/digital-employee/2026-08-31-a-standing-rule-is-not-this-actions-authority.md",
+        "reason": "file-budget",
+        "size": 7644
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-02-pmbench-versioned-intention-runtime.md",
+        "reason": "file-budget",
+        "size": 14862
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-02-token-budget-is-not-working-memory-evidence.md",
+        "reason": "file-budget",
+        "size": 7669
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-03-a-checkpoint-is-not-a-recovery-contract.md",
+        "reason": "file-budget",
+        "size": 7692
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-03-cursor-self-hosted-agent-outlook.md",
+        "reason": "file-budget",
+        "size": 17189
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-03-saaw-global-digital-employees.md",
+        "reason": "file-budget",
+        "size": 70896
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-05-judgment-is-not-effective-approval.md",
+        "reason": "file-budget",
+        "size": 10403
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-06-risk-does-not-choose-protocol.md",
+        "reason": "file-budget",
+        "size": 7945
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-07-local-safety-does-not-close-path.md",
+        "reason": "file-budget",
+        "size": 11078
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-08-memory-must-be-readmitted.md",
+        "reason": "file-budget",
+        "size": 9215
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-09-tool-edge-needs-execution-evidence.md",
+        "reason": "file-budget",
+        "size": 11059
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-09-trove-proposal-horizon-commitment-horizon.md",
+        "reason": "file-budget",
+        "size": 15529
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-10-second-model-not-independent-control.md",
+        "reason": "file-budget",
+        "size": 9304
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-12-evidence-complete-not-execution-authority.md",
+        "reason": "file-budget",
+        "size": 9666
+      },
+      {
+        "path": "docs/en/digital-employee/2026-09-13-state-rewound-effect-did-not.md",
+        "reason": "file-budget",
+        "size": 9888
+      },
+      {
+        "path": "docs/en/digital-employee/index.md",
+        "reason": "file-budget",
+        "size": 146
+      },
+      {
+        "path": "docs/en/engineering/2026-08-02-agent-capability-packaging.md",
+        "reason": "file-budget",
+        "size": 9813
+      },
+      {
+        "path": "docs/en/engineering/2026-08-02-durable-agent-runtime.md",
+        "reason": "file-budget",
+        "size": 9693
+      },
+      {
+        "path": "docs/en/engineering/2026-08-02-manager-handoff-ownership-models.md",
+        "reason": "file-budget",
+        "size": 11008
+      },
+      {
+        "path": "docs/en/engineering/2026-08-02-swe-bench-verified-quality.md",
+        "reason": "file-budget",
+        "size": 12443
+      },
+      {
+        "path": "docs/en/engineering/2026-08-05-guardrail-persistence-state-machine.md",
+        "reason": "file-budget",
+        "size": 3616
+      },
+      {
+        "path": "docs/en/engineering/2026-08-06-codeflowmu-multi-agent-fact-checking.md",
+        "reason": "file-budget",
+        "size": 26660
+      },
+      {
+        "path": "docs/en/engineering/2026-08-06-semantic-migration-recovery.md",
+        "reason": "file-budget",
+        "size": 6516
+      },
+      {
+        "path": "docs/en/engineering/2026-08-07-stable-identity-provisioning-gate.md",
+        "reason": "file-budget",
+        "size": 10078
+      },
+      {
+        "path": "docs/en/engineering/2026-08-08-correlated-multistream-host-contract.md",
+        "reason": "file-budget",
+        "size": 7915
+      },
+      {
+        "path": "docs/en/engineering/2026-08-09-executed-conformance-migration-safety.md",
+        "reason": "file-budget",
+        "size": 8441
+      },
+      {
+        "path": "docs/en/engineering/2026-08-10-serialized-tool-lifecycle-authority.md",
+        "reason": "file-budget",
+        "size": 9980
+      },
+      {
+        "path": "docs/en/engineering/2026-08-11-durable-event-identity-terminal-evidence.md",
+        "reason": "file-budget",
+        "size": 9744
+      },
+      {
+        "path": "docs/en/engineering/2026-08-12-scoped-callback-concurrency.md",
+        "reason": "file-budget",
+        "size": 8492
+      },
+      {
+        "path": "docs/en/engineering/2026-08-13-bounded-extension-point.md",
+        "reason": "file-budget",
+        "size": 11242
+      },
+      {
+        "path": "docs/en/engineering/2026-08-14-cancellation-rollback-effect-boundary.md",
+        "reason": "file-budget",
+        "size": 9901
+      },
+      {
+        "path": "docs/en/engineering/2026-08-15-agent-handoff-ownership.md",
+        "reason": "file-budget",
+        "size": 9373
+      },
+      {
+        "path": "docs/en/engineering/2026-08-16-config-precedence-provenance.md",
+        "reason": "file-budget",
+        "size": 7065
+      },
+      {
+        "path": "docs/en/engineering/2026-08-17-compact-transcript-evidence.md",
+        "reason": "file-budget",
+        "size": 7150
+      },
+      {
+        "path": "docs/en/engineering/2026-08-17-executable-agent-evaluation-package.md",
+        "reason": "file-budget",
+        "size": 21244
+      },
+      {
+        "path": "docs/en/engineering/2026-08-17-reviewable-agent-plan.md",
+        "reason": "file-budget",
+        "size": 12133
+      },
+      {
+        "path": "docs/en/engineering/2026-08-18-fcop-file-state-machine.md",
+        "reason": "file-budget",
+        "size": 14485
+      },
+      {
+        "path": "docs/en/engineering/2026-08-18-files-first-multi-agent-governance.md",
+        "reason": "file-budget",
+        "size": 15762
+      },
+      {
+        "path": "docs/en/engineering/2026-08-18-trace-effect-evidence.md",
+        "reason": "file-budget",
+        "size": 7694
+      },
+      {
+        "path": "docs/en/engineering/2026-08-19-agent-dispatch-fault-injection.md",
+        "reason": "file-budget",
+        "size": 18151
+      },
+      {
+        "path": "docs/en/engineering/2026-08-19-oauth-refresh-split-commit.md",
+        "reason": "file-budget",
+        "size": 7557
+      },
+      {
+        "path": "docs/en/engineering/2026-08-19-taskbook-to-task-graph.md",
+        "reason": "file-budget",
+        "size": 14317
+      },
+      {
+        "path": "docs/en/engineering/2026-08-20-project-root-switch.md",
+        "reason": "file-budget",
+        "size": 18338
+      },
+      {
+        "path": "docs/en/engineering/2026-08-20-visible-is-not-durable.md",
+        "reason": "file-budget",
+        "size": 7350
+      },
+      {
+        "path": "docs/en/engineering/2026-08-21-trust-run-not-inherit-secrets.md",
+        "reason": "file-budget",
+        "size": 8316
+      },
+      {
+        "path": "docs/en/engineering/2026-08-22-agent-task-file-state-machine.md",
+        "reason": "file-budget",
+        "size": 24959
+      },
+      {
+        "path": "docs/en/engineering/2026-08-22-codeflowmu-governance-state-rail.md",
+        "reason": "file-budget",
+        "size": 26660
+      },
+      {
+        "path": "docs/en/engineering/2026-08-22-missing-cache-entry-not-deletion-evidence.md",
+        "reason": "file-budget",
+        "size": 8430
+      },
+      {
+        "path": "docs/en/engineering/2026-08-23-canonicalize-before-lifecycle.md",
+        "reason": "file-budget",
+        "size": 7926
+      },
+      {
+        "path": "docs/en/engineering/2026-08-24-cancellation-ends-waiting.md",
+        "reason": "file-budget",
+        "size": 7168
+      },
+      {
+        "path": "docs/en/engineering/2026-08-25-finding-resource-not-owning-it.md",
+        "reason": "file-budget",
+        "size": 6840
+      },
+      {
+        "path": "docs/en/engineering/2026-08-26-copy-options-keep-client.md",
+        "reason": "file-budget",
+        "size": 6721
+      },
+      {
+        "path": "docs/en/engineering/2026-08-27-review-status-evidence-association.md",
+        "reason": "file-budget",
+        "size": 17686
+      },
+      {
+        "path": "docs/en/engineering/2026-08-27-trusted-path-proves-provenance-not-approval.md",
+        "reason": "file-budget",
+        "size": 8198
+      },
+      {
+        "path": "docs/en/engineering/2026-08-28-approval-caches-need-authorization-identity.md",
+        "reason": "file-budget",
+        "size": 7178
+      },
+      {
+        "path": "docs/en/engineering/2026-08-28-event-consumer-visibility.md",
+        "reason": "file-budget",
+        "size": 22202
+      },
+      {
+        "path": "docs/en/engineering/2026-08-28-response-loss-idempotency.md",
+        "reason": "file-budget",
+        "size": 19477
+      },
+      {
+        "path": "docs/en/engineering/2026-08-29-timeouts-must-close-the-lifecycle-they-own.md",
+        "reason": "file-budget",
+        "size": 6606
+      },
+      {
+        "path": "docs/en/engineering/2026-08-30-a-durable-checkpoint-can-still-be-unrecoverable.md",
+        "reason": "file-budget",
+        "size": 6842
+      },
+      {
+        "path": "docs/en/engineering/2026-08-31-a-successful-rerun-does-not-prove-the-repair.md",
+        "reason": "file-budget",
+        "size": 8012
+      },
+      {
+        "path": "docs/en/engineering/2026-08-31-audit-evidence-admissibility.md",
+        "reason": "file-budget",
+        "size": 10410
+      },
+      {
+        "path": "docs/en/engineering/2026-08-31-audit-failure-retry.md",
+        "reason": "file-budget",
+        "size": 11118
+      },
+      {
+        "path": "docs/en/engineering/2026-08-31-session-principal-continuity.md",
+        "reason": "file-budget",
+        "size": 10962
+      },
+      {
+        "path": "docs/en/engineering/2026-09-01-decision-evidence-continuity.md",
+        "reason": "file-budget",
+        "size": 15386
+      },
+      {
+        "path": "docs/en/engineering/2026-09-01-interrupted-task-takeover.md",
+        "reason": "file-budget",
+        "size": 13161
+      },
+      {
+        "path": "docs/en/engineering/2026-09-02-a-smaller-skill-is-not-the-same-skill.md",
+        "reason": "file-budget",
+        "size": 8664
+      },
+      {
+        "path": "docs/en/engineering/2026-09-03-discovery-must-not-redefine-credential-authority.md",
+        "reason": "file-budget",
+        "size": 8386
+      },
+      {
+        "path": "docs/en/engineering/2026-09-03-empty-test-results-verified.md",
+        "reason": "file-budget",
+        "size": 12434
+      },
+      {
+        "path": "docs/en/engineering/2026-09-03-process-alive-owner-identity.md",
+        "reason": "file-budget",
+        "size": 12038
+      },
+      {
+        "path": "docs/en/engineering/2026-09-03-saaw-open-source-protocols-roadmap.md",
+        "reason": "file-budget",
+        "size": 42522
+      },
+      {
+        "path": "docs/en/engineering/2026-09-04-approval-operation-identity.md",
+        "reason": "file-budget",
+        "size": 17168
+      },
+      {
+        "path": "docs/en/engineering/2026-09-04-recovery-evidence-is-not-replay-authority.md",
+        "reason": "file-budget",
+        "size": 9759
+      },
+      {
+        "path": "docs/en/engineering/2026-09-05-acceptance-order-replay.md",
+        "reason": "file-budget",
+        "size": 16076
+      },
+      {
+        "path": "docs/en/engineering/2026-09-05-get-request-effect-boundary.md",
+        "reason": "file-budget",
+        "size": 13961
+      },
+      {
+        "path": "docs/en/engineering/2026-09-05-passing-tests-is-not-operational-capability.md",
+        "reason": "file-budget",
+        "size": 11131
+      },
+      {
+        "path": "docs/en/engineering/2026-09-06-cancellation-execution-boundary.md",
+        "reason": "file-budget",
+        "size": 14195
+      },
+      {
+        "path": "docs/en/engineering/2026-09-06-stable-identity-does-not-authorize-destination.md",
+        "reason": "file-budget",
+        "size": 8895
+      },
+      {
+        "path": "docs/en/engineering/2026-09-06-workspace-artifact-continuity.md",
+        "reason": "file-budget",
+        "size": 14126
+      },
+      {
+        "path": "docs/en/engineering/2026-09-07-check-to-effect-interval.md",
+        "reason": "file-budget",
+        "size": 11570
+      },
+      {
+        "path": "docs/en/engineering/2026-09-07-no-overwrite-executor-contract.md",
+        "reason": "file-budget",
+        "size": 10321
+      },
+      {
+        "path": "docs/en/engineering/2026-09-07-project-truth-survives-context.md",
+        "reason": "file-budget",
+        "size": 9844
+      },
+      {
+        "path": "docs/en/engineering/2026-09-08-corrupt-receipt-dispatch-counterexample.md",
+        "reason": "file-budget",
+        "size": 16101
+      },
+      {
+        "path": "docs/en/engineering/2026-09-08-one-effect-across-surfaces.md",
+        "reason": "file-budget",
+        "size": 10936
+      },
+      {
+        "path": "docs/en/engineering/2026-09-08-shared-agent-instruction-identity.md",
+        "reason": "file-budget",
+        "size": 14093
+      },
+      {
+        "path": "docs/en/engineering/2026-09-09-deterministic-conflict.md",
+        "reason": "file-budget",
+        "size": 7186
+      },
+      {
+        "path": "docs/en/engineering/2026-09-09-effect-and-delivery.md",
+        "reason": "file-budget",
+        "size": 6877
+      },
+      {
+        "path": "docs/en/engineering/2026-09-09-output-is-not-effect.md",
+        "reason": "file-budget",
+        "size": 6509
+      },
+      {
+        "path": "docs/en/engineering/2026-09-09-verification-ownership.md",
+        "reason": "file-budget",
+        "size": 6546
+      },
+      {
+        "path": "docs/en/engineering/2026-09-10-concurrency-domain.md",
+        "reason": "file-budget",
+        "size": 6341
+      },
+      {
+        "path": "docs/en/engineering/2026-09-10-recovery-budget.md",
+        "reason": "file-budget",
+        "size": 7475
+      },
+      {
+        "path": "docs/en/engineering/2026-09-10-secret-route.md",
+        "reason": "file-budget",
+        "size": 7376
+      },
+      {
+        "path": "docs/en/engineering/2026-09-11-live-model-restore.md",
+        "reason": "file-budget",
+        "size": 8917
+      },
+      {
+        "path": "docs/en/engineering/2026-09-11-result-delivery.md",
+        "reason": "file-budget",
+        "size": 8845
+      },
+      {
+        "path": "docs/en/engineering/index.md",
+        "reason": "file-budget",
+        "size": 160
+      },
+      {
+        "path": "docs/en/engineering/openhands.md",
+        "reason": "file-budget",
+        "size": 3454
+      },
+      {
+        "path": "docs/en/industry/2026-08-02-a2a-mcp-interoperability-boundaries.md",
+        "reason": "file-budget",
+        "size": 10756
+      },
+      {
+        "path": "docs/en/industry/2026-08-02-enterprise-agent-governance-control-plane.md",
+        "reason": "file-budget",
+        "size": 9248
+      },
+      {
+        "path": "docs/en/industry/2026-08-02-from-systems-of-record-to-systems-of-execution.md",
+        "reason": "file-budget",
+        "size": 10848
+      },
+      {
+        "path": "docs/en/industry/2026-08-02-nist-ai-rmf-operating-loop.md",
+        "reason": "file-budget",
+        "size": 12546
+      },
+      {
+        "path": "docs/en/industry/2026-08-05-governed-model-routing.md",
+        "reason": "file-budget",
+        "size": 3400
+      },
+      {
+        "path": "docs/en/industry/2026-08-06-enterprise-agent-decision-envelope.md",
+        "reason": "file-budget",
+        "size": 7081
+      },
+      {
+        "path": "docs/en/industry/2026-08-07-role-aware-agent-resource-plane.md",
+        "reason": "file-budget",
+        "size": 9647
+      },
+      {
+        "path": "docs/en/industry/2026-08-08-lifecycle-revalidated-policy-plane.md",
+        "reason": "file-budget",
+        "size": 7561
+      },
+      {
+        "path": "docs/en/industry/2026-08-09-rotating-assertion-short-lived-credential.md",
+        "reason": "file-budget",
+        "size": 8635
+      },
+      {
+        "path": "docs/en/industry/2026-08-10-authority-plane-cascade-containment.md",
+        "reason": "file-budget",
+        "size": 9112
+      },
+      {
+        "path": "docs/en/industry/2026-08-10-saaw-software-as-an-agent-worker.md",
+        "reason": "file-budget",
+        "size": 39939
+      },
+      {
+        "path": "docs/en/industry/2026-08-11-governed-connector-action-handoff.md",
+        "reason": "file-budget",
+        "size": 9497
+      },
+      {
+        "path": "docs/en/industry/2026-08-12-consent-effective-policy.md",
+        "reason": "file-budget",
+        "size": 7923
+      },
+      {
+        "path": "docs/en/industry/2026-08-13-session-rebinding-execution-continuity.md",
+        "reason": "file-budget",
+        "size": 9372
+      },
+      {
+        "path": "docs/en/industry/2026-08-14-kpi-decision-rights-governance.md",
+        "reason": "file-budget",
+        "size": 9480
+      },
+      {
+        "path": "docs/en/industry/2026-08-14-trace-governance-saaw-visual-essay.md",
+        "reason": "file-budget",
+        "size": 13254
+      },
+      {
+        "path": "docs/en/industry/2026-08-15-delegated-agent-return-contract.md",
+        "reason": "file-budget",
+        "size": 9438
+      },
+      {
+        "path": "docs/en/industry/2026-08-16-reservation-materialization.md",
+        "reason": "file-budget",
+        "size": 7180
+      },
+      {
+        "path": "docs/en/industry/2026-08-17-environment-owned-policy.md",
+        "reason": "file-budget",
+        "size": 7341
+      },
+      {
+        "path": "docs/en/industry/2026-08-17-token-is-not-a-bill.md",
+        "reason": "file-budget",
+        "size": 10571
+      },
+      {
+        "path": "docs/en/industry/2026-08-18-persistence-reconciliation.md",
+        "reason": "file-budget",
+        "size": 7759
+      },
+      {
+        "path": "docs/en/industry/2026-08-19-delivery-context-separation.md",
+        "reason": "file-budget",
+        "size": 7310
+      },
+      {
+        "path": "docs/en/industry/2026-08-20-history-is-not-transfer-contract.md",
+        "reason": "file-budget",
+        "size": 7160
+      },
+      {
+        "path": "docs/en/industry/2026-08-20-skill-vs-tool-authority.md",
+        "reason": "file-budget",
+        "size": 19382
+      },
+      {
+        "path": "docs/en/industry/2026-08-21-approval-must-name-approver.md",
+        "reason": "file-budget",
+        "size": 7396
+      },
+      {
+        "path": "docs/en/industry/2026-08-22-protected-constraints-reviewable-grants.md",
+        "reason": "file-budget",
+        "size": 8311
+      },
+      {
+        "path": "docs/en/industry/2026-08-23-creation-provenance-survives-resume.md",
+        "reason": "file-budget",
+        "size": 7499
+      },
+      {
+        "path": "docs/en/industry/2026-08-24-instruction-lineage-not-authority.md",
+        "reason": "file-budget",
+        "size": 7199
+      },
+      {
+        "path": "docs/en/industry/2026-08-25-checkpoint-not-permission-to-resume.md",
+        "reason": "file-budget",
+        "size": 7173
+      },
+      {
+        "path": "docs/en/industry/2026-08-26-mpbench-ranked-diagnostic-evidence.md",
+        "reason": "file-budget",
+        "size": 14784
+      },
+      {
+        "path": "docs/en/industry/2026-08-26-permission-authority-belongs-to-attachment.md",
+        "reason": "file-budget",
+        "size": 6979
+      },
+      {
+        "path": "docs/en/industry/2026-08-27-authority-context-must-be-host-minted.md",
+        "reason": "file-budget",
+        "size": 7381
+      },
+      {
+        "path": "docs/en/industry/2026-08-28-cached-policy-is-evidence-not-current-authority.md",
+        "reason": "file-budget",
+        "size": 7683
+      },
+      {
+        "path": "docs/en/industry/2026-08-29-trust-must-change-the-executable-surface.md",
+        "reason": "file-budget",
+        "size": 6817
+      },
+      {
+        "path": "docs/en/industry/2026-08-30-stronger-looking-evidence-does-not-make-action-safe.md",
+        "reason": "file-budget",
+        "size": 6745
+      },
+      {
+        "path": "docs/en/industry/2026-08-31-a-reconstructed-role-is-not-proof-of-authority.md",
+        "reason": "file-budget",
+        "size": 8203
+      },
+      {
+        "path": "docs/en/industry/2026-09-02-installed-is-not-authorized.md",
+        "reason": "file-budget",
+        "size": 8762
+      },
+      {
+        "path": "docs/en/industry/2026-09-03-cursor-agent-ios.md",
+        "reason": "file-budget",
+        "size": 31925
+      },
+      {
+        "path": "docs/en/industry/2026-09-03-delegation-is-a-stateful-authorization-program.md",
+        "reason": "file-budget",
+        "size": 8471
+      },
+      {
+        "path": "docs/en/industry/2026-09-03-saaw-models-governance-pricing.md",
+        "reason": "file-budget",
+        "size": 30169
+      }
+    ],
+    "omitted_count": 740,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 5169,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 746,
+      "complete": false,
+      "omitted": 740,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_cbe79a35fdc05558a35b19b7e695e580",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/joinwell52-ai/joinwell52/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/2a0fd4110d4ba967/manifest.json",
+  "package_id": "pkg_bb634e4687d216de514c7d033f234d968ef4dfd8fb4815d13a8e9093dd05293c",
+  "repo": "joinwell52-ai/joinwell52",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7869c870790cd5f9f6071a7e0ca8fc07a376288eaa871356b67f94edab3ec81e",
+  "snapshot_id": "2a0fd4110d4ba967",
+  "sources": [
+    {
+      "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+      "git_sha": "d4545a41a344fd0099c62bedb9ed7c93c4c4d660",
+      "lines": 389,
+      "path": "LOCAL-RUN-GUIDE.zh-CN.md",
+      "repository": "joinwell52-ai/joinwell52",
+      "sha256": "6e7bea5a19276d580bb2297c3090d1412d6c3243eb18e227a28404bd785ac255",
+      "source_id": "src_77289585b09b5a97a6cf6209a4d65349",
+      "stored": "local-run-guide.zh-cn.md-b4d51dc4a08d.md",
+      "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/LOCAL-RUN-GUIDE.zh-CN.md"
+    },
+    {
+      "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+      "git_sha": "ec03dfcc7c3e9bfbfff9240874622d252f3c28e9",
+      "lines": 79,
+      "path": "MIGRATION-SINGLE-SOURCE.md",
+      "repository": "joinwell52-ai/joinwell52",
+      "sha256": "53ea1a74df74190a7cd89cd28383ed754289bc2ad1e3da74d244eadfca5c58c9",
+      "source_id": "src_7c51c142dd365018b603b4f94492b476",
+      "stored": "migration-single-source.md-87dbf8872601.md",
+      "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/MIGRATION-SINGLE-SOURCE.md"
+    },
+    {
+      "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+      "git_sha": "d15f581cc436f37d3b65a83575393e6084f1faea",
+      "lines": 357,
+      "path": "README.md",
+      "repository": "joinwell52-ai/joinwell52",
+      "sha256": "334894a41b7b237141b75b525cc01361064bc25edd18bf3e3a8e5095cee8007f",
+      "source_id": "src_271ed53826255b5cbaeebe08203a3d06",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/README.md"
+    },
+    {
+      "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+      "git_sha": "37c0f736f46763caea449a37c52262fd7672b994",
+      "lines": 200,
+      "path": "docs/digital-employee/architecture.md",
+      "repository": "joinwell52-ai/joinwell52",
+      "sha256": "6e574a27782143980a5789e36a1e2549a47a8bb88ff61c81202b72518cee5404",
+      "source_id": "src_34173eecc8d05903b16277c59cf2d74a",
+      "stored": "architecture.md-630110546ff4.md",
+      "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/docs/digital-employee/architecture.md"
+    },
+    {
+      "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+      "git_sha": "e6d64f8035f6044327b63fc7e8101014889ed4e9",
+      "lines": 319,
+      "path": "docs/en/digital-employee/architecture.md",
+      "repository": "joinwell52-ai/joinwell52",
+      "sha256": "c40cb8527c2101f0a4dd2e881bcb5640752e4dd49f6e157f71a8ea4663d2baa9",
+      "source_id": "src_9916e8d50da45c8087244d9531b71c86",
+      "stored": "architecture.md-c88ed666e774.md",
+      "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/docs/en/digital-employee/architecture.md"
+    },
+    {
+      "commit": "6961492e9a46eb9b7e3cdd6e8148c336ce76b026",
+      "git_sha": "c3596da4c505d0cde1dfbc9b9847896764125d6c",
+      "lines": 319,
+      "path": "docs/zh/digital-employee/architecture.md",
+      "repository": "joinwell52-ai/joinwell52",
+      "sha256": "36b29217b6a67bc6eb79251efdb4b04a69c475dd6dab12b1d77c3903ac47a382",
+      "source_id": "src_d161b6a674b455f6afb2c1d9df22a5f2",
+      "stored": "architecture.md-02c76c3fcbb0.md",
+      "url": "https://github.com/joinwell52-AI/joinwell52/blob/6961492e9a46eb9b7e3cdd6e8148c336ce76b026/docs/zh/digital-employee/architecture.md"
+    }
+  ],
+  "summary": "The snapshot is a README plus a Chinese architecture draft for the joinwell52/TMPA research repository: it documents TMPA Core S1.0 specifications, an executable Reference Reader with a C01–C14 conformance runner, author-run CodeFlowMu V1.8.0 evidence, and a draft digital-employee architecture. Most product claims come from documentation rather than inspected code, and the evidence explicitly bounds its own conformance claims. Evidence coverage: 145 of 390 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

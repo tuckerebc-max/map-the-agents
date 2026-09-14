@@ -1,0 +1,736 @@
+{
+  "applied_operation_id": "op_14b2533f5f5f4db08bcfffe34eb54a13",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6f94438e21382c20a508ff7395b7350966126e7b6ef876d89dfe46bcb856a5b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L3-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eee368d2abbfe4829bc1421c38f5121ee19c84da109072b2666b46b0077dd9b"
+      ],
+      "text": "The project is described as a full-stack implementation with a Python FastAPI API server and a Flutter frontend for chatting with ChatGPT and other LLM models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f587b86a4362eb667266c3dc1d4e5f6dee0484abe923f5382fa2a13ebc945f8d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L155-L155"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 159,
+          "line_start": 159,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L159-L159"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L157-L157"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L151-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02186d9b106a70966c6ef225572d5c0ca741057fb370aff944a2fb93133a8c69",
+        "slc_3da16a75e44f79f20851d3aaa72a6f2869eaf3d4120b9c72da66e7022eee0d92",
+        "slc_b5c6411a362cb9c147bc1e3db9c37194596a586536359928301c809c32879210",
+        "slc_ce55aa277330d9ed478ec7652a09141066619b8ed22e4ee4fdbae5bb0b335568"
+      ],
+      "text": "Chat runs over a WebSocket route /chat/{api_key}; a valid server-registered API key (distinct from the OpenAI key) is checked on connect, and invalid keys or errors close the connection with a message."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0624c75af59ff8833b2216af316dfc0101989a70f8bc7f78729dc7a86c82db09",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 125,
+          "line_start": 125,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L125-L125"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L115-L115"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L151-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d1ecb2d77e39ccd09dc4411331582bb1e6ec0315b9976f4b722a5fc8112b889",
+        "slc_a578fd51caee1226bd3b34e2768446b84eb873db1b48c27959987e82bdb7311f",
+        "slc_ce55aa277330d9ed478ec7652a09141066619b8ed22e4ee4fdbae5bb0b335568"
+      ],
+      "text": "The Flutter web app is served at /chat, the API exposes docs at http://localhost:8000/docs, and running without Docker puts the server on http://localhost:8001."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5905e5047c84f8fdbb91ce12195f2bcc5463c8680d0f763758a289e787e7a3ac",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 26,
+          "line_start": 25,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L25-L26"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 212,
+          "line_start": 212,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L212-L212"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 242,
+          "line_start": 242,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L242-L242"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 215,
+          "line_start": 215,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L215-L215"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50025daf90e3a33673f6b73621fc85f395e1b86f8312d690ec9778cfe3aad9a3",
+        "slc_6efaefb750134dc9a58bc6c172567713cc6f735c8aa29c082f72ecd9de2d9a4f",
+        "slc_bab6f3a15c7043aba0eb42155a2f8fffd8eea1eebfbd129add713719695eff6e",
+        "slc_fcfcfbf6b4955098b8644f2a039520e823c259dc0d7b07ae052ec64f1f6fe047"
+      ],
+      "text": "Messages starting with '/' are treated as commands dispatched by a ChatCommands class; /embed stores text in a private Redis vector database, /share stores it publicly, and /query retrieves up to three similar results to ground AI answers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2923994f95fc6e3d6439f2a24dc719d917e28c8c90567750e0dd9bb3ada05955",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 344,
+          "line_start": 336,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L336-L344"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 334,
+          "line_start": 334,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L334-L334"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_79f1ba0a540c341cc3e159113e8a617628d9b4f04f93696c4887cd65d6c770c6",
+        "slc_b06a643c4a9b926be3cae4427b12ea21a4b4625304c287e3f331c8111329b258"
+      ],
+      "text": "A CacheManager stores user chat contexts and message histories in Redis, with methods to create, reset, read, append, pop, set, and delete per-role message histories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_732e3044c865bc4b8c7254cfe000542cccfdfc9b22a23a2e5c75e9a2a1a7653b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 352,
+          "line_start": 350,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L350-L352"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 326,
+          "line_start": 326,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L326-L326"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 348,
+          "line_start": 348,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L348-L348"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a2db08f71a14892aedd5526c19b89f2c91de7e1570ae12c3b49eec4250747a4",
+        "slc_8fab8abe93f576a9ace317626b24414c48c12f7b5edd2aeecb81d3113b553c44",
+        "slc_dda6a118bfd96f4b2adab2bd3dddca8d8aeef8a37748210f551fe313cf10d46c"
+      ],
+      "text": "A MessageManager enforces token limits on message histories via safe add/pop/set methods that update token counts; a ChatLengthException triggers re-limiting via cutoff_message_histories and a resend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02ab68b128fab07bb6e03e79b58e5454104490778be612430b6aa3864b369063",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 278,
+          "line_start": 278,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L278-L278"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 276,
+          "line_start": 276,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L276-L276"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 282,
+          "line_start": 282,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L282-L282"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 280,
+          "line_start": 280,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L280-L280"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 284,
+          "line_start": 284,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L284-L284"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06ee9d9a86a16f8b98d6afa6a264c61a19437dfe300540b97b8521db3ba2a16c",
+        "slc_3b8f469150ba17925a177ac74da799b9e33724291900375c6f07150dcd8a3007",
+        "slc_6844de45e7bbda75bc58f6c66dbaec3dc15d4ea6adcd4f1165e1f9ec55ccdcd3",
+        "slc_8bf98d7e52a7c926276cc32fb41ee8242d66ba664eca07f7b1bd759adebdbd63",
+        "slc_e35bc93ffdb7f133653e0a39ff40d3f2c65f10ff37835e2dbec61e9510ca8695"
+      ],
+      "text": "Auto-summarization: after each user/AI exchange, a summarization task queued in BufferUserChatContext is harvested, and summaries replace original messages in LLM prompts to save tokens, without the user seeing the summarized text."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_363b9959707c5252a6501aaa536c462305a9a931052c798a1ce2613ab33b8c4f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 17,
+          "line_start": 16,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L16-L17"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 71,
+          "line_start": 60,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L60-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f75dd76a23e9f9fde1c7acc23ddf0a6aa788121280d86f6d8e362a39bf3ae26f",
+        "slc_f9b5dd0a1a13dde1fb8a3c3390027149a5b62ee2e193271e86d8a6ba11d05838"
+      ],
+      "text": "A 'Browse' toggle enables Duckduckgo web search so the assistant can find relevant web information during chat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e2c2389ea8f9ffd0f89f1abf6ab5515c7d559bd77377bfbab935b9321321606",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 307,
+          "line_start": 307,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L307-L307"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 41,
+          "line_start": 33,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L33-L41"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 316,
+          "line_start": 316,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L316-L316"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 312,
+          "line_start": 311,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L311-L312"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 294,
+          "line_start": 294,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L294-L294"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_659e19b8a210ff9c5ed440666ba3251e694fbc676e61c8b9a6d2ce2d7cf4d1ec",
+        "slc_a81a6d3e2ca4b986097f339f1077c555488e8c7794ade3cee0fece266735987e",
+        "slc_b419cbce21c93601a3ad62a7f48f236af61297ae74e8b33a0bd148e3e7dfec39",
+        "slc_d5a5b40baf084a3040f49029d876969006fe71464b9be0cd5d62573e3baaf1e4",
+        "slc_ef4330726a25e74dc2656cd6f6144c0b824626a546f3bcde6fbb2a6ea8673dfb"
+      ],
+      "text": "Three LLM model types are supported: OpenAIModel (async chat completions via the OpenAI API), LlamaCppModel (local GGML .bin files), and ExllamaModel (local GPTQ model folders), all defined as LLMModel subclasses in app/models/llms.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab41ed8182a2d5529ae4a2c46998b31a9c4560d0b77092d3bbab08c75f5c45ee",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L46-L46"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 296,
+          "line_start": 296,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L296-L296"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_009335896f2ff99e140e3c233a526afe0da0d860b916e704c6186b8e2de39d83",
+        "slc_9fc90dbc1f2e0f17c2814429e05e9fe34c05e7cc5db21f4edfc5204a43b3e9ac"
+      ],
+      "text": "Local LLMs are assumed to work only locally, hitting http://localhost:8002/v1/completions with a once-per-second health check that auto-starts the API server process if it is down; a Semaphore limits local LLM requests to one at a time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae0e22766efe4020ecad20458168d6cfa367ee061fc195bd80a6ca02127a2963",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 420,
+          "line_start": 420,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L420-L420"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 386,
+          "line_start": 386,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L386-L386"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 416,
+          "line_start": 415,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L415-L416"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 394,
+          "line_start": 392,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L392-L394"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 409,
+          "line_start": 408,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L408-L409"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 398,
+          "line_start": 398,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L398-L398"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21900ecad4a3578608070c24413f997a337b32300153e6803721eedbf04703b1",
+        "slc_27107e7445fad0da3d7819b156d93b5f448b683b43b40f4fbe9083165a34a353",
+        "slc_61fa4adb9de2be37727eabe8e5c0871d8cbd09c13b152a350fc4fa6fd70be502",
+        "slc_8fbfd7f4e12657b41163ba36e7e6f38fa3039d79e7ff7c286e7262ddd805d720",
+        "slc_c5187dbaad0e20609b2c8ff258bea9a77f701cc1c1dcf6afb76c069d7051ccb9",
+        "slc_e5285b23626979aa910bd2f91eef49f35bb9a1c6e616214b6a506ae7d7cba7ac"
+      ],
+      "text": "Access control uses a token_validator middleware validating API keys and JWT tokens, plus CORS and TrustedHost middlewares; the Validator returns a UserToken on success and errors raise HTTP exceptions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d8c0ba3a0fbf0c28ed4da3ae8a18b91745d40e9a808e7bc7bcde7f033f80d66",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 84,
+          "line_start": 81,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L81-L84"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 77,
+          "line_start": 76,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L76-L77"
+        },
+        {
+          "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+          "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+          "line_end": 71,
+          "line_start": 60,
+          "path": "readme.md",
+          "repository": "c0sogi/llmchat",
+          "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md#L60-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bf84f5a235677a112964e60d0c93b2fdc111c857b782197371aaff9e87bb5402",
+        "slc_edc31a1c24dc8716157b67d2d57d16c9adb889a29b00da527c494cf74111bcc3",
+        "slc_f9b5dd0a1a13dde1fb8a3c3390027149a5b62ee2e193271e86d8a6ba11d05838"
+      ],
+      "text": "The stack relies on FastAPI, Flutter, Langchain, Redis (aioredis), MySQL via sqlalchemy.asyncio, and Docker/docker-compose for deployment; Exllama and llama.cpp are included as git submodules."
+    }
+  ],
+  "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 644,
+        "path": "readme.md",
+        "size": 33908
+      },
+      {
+        "lines": 5,
+        "path": "requirements-exllama.txt",
+        "size": 137
+      },
+      {
+        "lines": 2,
+        "path": "requirements-llama-cpp.txt",
+        "size": 33
+      },
+      {
+        "lines": 4,
+        "path": "requirements-sentence-encoder.txt",
+        "size": 51
+      },
+      {
+        "lines": 2,
+        "path": "requirements-transformer-embedding-cpu.txt",
+        "size": 77
+      },
+      {
+        "lines": 2,
+        "path": "requirements-transformer-embedding-gpu.txt",
+        "size": 83
+      }
+    ],
+    "omitted": [
+      {
+        "path": "requirements.txt",
+        "reason": "file-budget",
+        "size": 667
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 217,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_cf99dd1fd8d75f848c9c478d733bbb2c",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/c0sogi/llmchat/01f53de6630e7302fc58f103b3fad382d8d270bc/c4528827ac059e0d/manifest.json",
+  "package_id": "pkg_71ad6f0e4b1ac5bca437d9f0cea642fa2aa52b524093af6be1179974e40b4984",
+  "repo": "c0sogi/llmchat",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3093214c9a7ac8b5bd2a2c35b30ca0a436be36fdd7fc4e5d081d849b6f758c74",
+  "snapshot_id": "c4528827ac059e0d",
+  "sources": [
+    {
+      "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+      "git_sha": "b8440c89bc6b18bf8f64716c1d947018c205aeff",
+      "lines": 644,
+      "path": "readme.md",
+      "repository": "c0sogi/llmchat",
+      "sha256": "d50f620eb5accc10181bc112b4ab0c20f8723a6961cf93fa2c7c6a87c91386a1",
+      "source_id": "src_3b8897c7544e5491ba203ba894e6f210",
+      "stored": "readme.md-5a831ea67cf5.md",
+      "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/readme.md"
+    },
+    {
+      "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+      "git_sha": "dfbba80ed7621a291b8b351c72cbc179ff739cca",
+      "lines": 5,
+      "path": "requirements-exllama.txt",
+      "repository": "c0sogi/llmchat",
+      "sha256": "37f8c9c238a76649472472c93a9aaff5165333bbea86b7265508093e1b9b729c",
+      "source_id": "src_32d7898138245ec199d26e92145bd77b",
+      "stored": "requirements-exllama.txt-4a8c3c13a089.txt",
+      "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/requirements-exllama.txt"
+    },
+    {
+      "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+      "git_sha": "5019e9cc2a296f216f9906c1e6761843ef506e6e",
+      "lines": 2,
+      "path": "requirements-llama-cpp.txt",
+      "repository": "c0sogi/llmchat",
+      "sha256": "1ef0d52a59ea096f7c53a49543aaeb2baf4841c83a0a689cb89d4e97d3988895",
+      "source_id": "src_1af7edc85d7f5660a0eca4e8b6a06b32",
+      "stored": "requirements-llama-cpp.txt-14eace88e1d2.txt",
+      "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/requirements-llama-cpp.txt"
+    },
+    {
+      "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+      "git_sha": "11ad179218da59b84835796b18166ab8343fa229",
+      "lines": 4,
+      "path": "requirements-sentence-encoder.txt",
+      "repository": "c0sogi/llmchat",
+      "sha256": "f722b774b8a42cf1a9c2089e8b013c57e9891745b2e4503679fa4a8c65916d25",
+      "source_id": "src_cc436b336e5753018d9ad8f2130a9411",
+      "stored": "requirements-sentence-encoder.txt-82a252c34946.txt",
+      "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/requirements-sentence-encoder.txt"
+    },
+    {
+      "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+      "git_sha": "821d857686b28551300d1128de961b64d0eaff62",
+      "lines": 2,
+      "path": "requirements-transformer-embedding-cpu.txt",
+      "repository": "c0sogi/llmchat",
+      "sha256": "c83292a34084dbfc7fb6934ac7fb38e29ab8f44b60b26b3a4c211cb37abac303",
+      "source_id": "src_6203d591c9ca53fdbeb7fb13ece969a8",
+      "stored": "requirements-transformer-embedding-cpu.t-252609e30fa5.txt",
+      "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/requirements-transformer-embedding-cpu.txt"
+    },
+    {
+      "commit": "01f53de6630e7302fc58f103b3fad382d8d270bc",
+      "git_sha": "4b7264ec5f3e05b912dc456f3df880c59d9ec859",
+      "lines": 2,
+      "path": "requirements-transformer-embedding-gpu.txt",
+      "repository": "c0sogi/llmchat",
+      "sha256": "75eaee65a5e8fef45d49a945d5d0b95d441ce05fedb5701feed9828c31242a5e",
+      "source_id": "src_2126fe23c8515dfb9074db332165a3f9",
+      "stored": "requirements-transformer-embedding-gpu.t-f2ed2118e570.txt",
+      "url": "https://github.com/c0sogi/LLMChat/blob/01f53de6630e7302fc58f103b3fad382d8d270bc/requirements-transformer-embedding-gpu.txt"
+    }
+  ],
+  "summary": "LLMChat is a documented full-stack LLM chat product: a FastAPI backend with a Flutter frontend, WebSocket chat authenticated by server-registered API keys, OpenAI plus local LlamaCpp/Exllama models, Redis-backed vector embedding and context caching, auto-summarization, and token/JWT access-control middleware. Evidence coverage: 146 of 156 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

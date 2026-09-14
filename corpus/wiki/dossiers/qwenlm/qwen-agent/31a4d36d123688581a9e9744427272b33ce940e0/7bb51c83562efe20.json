@@ -1,0 +1,674 @@
+{
+  "applied_operation_id": "op_c3b9be7f79164b5a882dece071efc4fe",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fe0340659d2bfaa557d28db862f0e366f56fb7723ac60155707b6e523d07323",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L32-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4092a046452aaf731717908e5a6988b2cc845ebc553774a6a23f62b47dc64155"
+      ],
+      "text": "Qwen-Agent is a framework for developing LLM applications leveraging Qwen's instruction following, tool usage, planning, and memory capabilities, and it serves as the backend of Qwen Chat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8a8e2091af5f22234d07ce2148f66bcd85567404f32d21232d36e6879be51c3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 88,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L87-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d99bc5e47d12ab506ff820f7576ff2bc5bae7396c7b49536b66992e8c921d01d"
+      ],
+      "text": "The framework provides atomic components — LLMs inheriting from BaseChatModel and Tools inheriting from BaseTool — plus higher-level Agents derived from class Agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8685ead407712b0b4785cc14f9cd31635c292e5e00e072ffcdfbaf888ac42371",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 130,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L125-L130"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 254,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L251-L254"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 135,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L132-L135"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 249,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L242-L249"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31bc5f37faf0b6c45f38b62997b498ffc100bb9d8aa3cc3f21cf5795926dfe77",
+        "slc_4c1a2c0be6d473d6ad9ce941032435e36fc0856bf9d12b32d17c5d0e897300ca",
+        "slc_9c98ab154dd13d16968484d0866df741378831580f6b5aa03fbb313e47bf8238",
+        "slc_f2557513a666b2535c5d6990a6dc07b8cbfc7549b3aae7638d5e7e0802de5890"
+      ],
+      "text": "Agents are configured via an llm_cfg dict with keys such as model, model_type, model_server, api_key, and generate_cfg; both DashScope and OpenAI-compatible services (e.g. vLLM, Ollama) are supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c293aebf2a893059b8891ff980550c58ad1df936ec2c795140ba4fb773a239be",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 154,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L144-L154"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 171,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L157-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81246d5c159515c022a733d5aef30e4ed6c8271f5b7d13a20e660e9e6302cd92",
+        "slc_ba3e6e1b43cf5b35b94215971426de937e557a5f1fd9fa9d04453e701b5e2ff6"
+      ],
+      "text": "The Assistant agent accepts llm, system_message, function_list, and files arguments, and agents run via bot.run(messages=...) as a generator yielding streaming responses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cfde5686ce7eb6fa325d045be8b7169150472158ce5aa131ccd4b7d42d967098",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 189,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L189-L189"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L292-L292"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 187,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L187-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0952b30538803f7922485295758500e155b8e198cb85cacaefafb0aa96eb309e",
+        "slc_90e9724ee943581b1bab9752090d01a1ff1e1574dfdad7b2ebd5bd99886b12cd",
+        "slc_a25c445aea069ffaa2915ab20147be87e1a1201ac276233c5b85e1c835a7bdc6"
+      ],
+      "text": "The built-in code interpreter tool executes agent-written code inside local Docker containers with basic sandbox isolation, mounting only the specified working directory; Docker must be installed and running beforehand."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5055cd059ff7009563a7b881c90866936bdd11bfefdf1a9f26ab32bf5f99e164",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 219,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L196-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7386eeab05c0b3674ac78f8ba8a2e3626b6a6e6cfc08bc138ee947a2d8223160"
+      ],
+      "text": "MCP servers are configured through an mcpServers JSON structure specifying command and args, e.g. npx-based memory and filesystem servers or a uvx sqlite server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9dff9aaf949c5a2c01dd7d7d6bea0d802d4ee5889fbf0e9c11466c7ea5c9d941",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 113,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L103-L113"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 121,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L115-L121"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1250789b0ee148302abb0d70256e284047d52be249fbb248be3b095b457821d0",
+        "slc_636c63af7882b3b16fb455026f22f8ae03d9ede8001bcfc9c0e4a271658974da"
+      ],
+      "text": "Custom tools are registered with a @register_tool decorator, defining a description, a parameters schema, and a call() method that parses LLM-generated arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb5b056f5baa9a35d81f8d482d2162cdc3d6af41a77f4f6bc195011e4eb6e3cd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 46,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L38-L46"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 182,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L178-L182"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 176,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L175-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_603831b4789e37c212cb555d52d72047960d29007cb85f8cb7aabc831997ca62",
+        "slc_826a7d177346202e6146c411f45ab90a1621f0eb50929c70f89b995321a66f55",
+        "slc_eff23166d6b9dc9450818d8c16cd0b1a37115063e597c122b854b7dcdeb212b2"
+      ],
+      "text": "A Gradio-based WebUI (qwen_agent.gui.WebUI) enables rapid deployment of chat interfaces for agents; per the Gradio 5 upgrade note, the GUI requires Python 3.10 or higher."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10d3ae5c94869fb6987477a1f4db977efd9dca8e1eb6f5ac5dbe4da88f14593a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 239,
+          "line_start": 239,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L239-L239"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 237,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L237-L237"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ecb602a1e016c629900e60876363ca62c53ef2cffecbf6cfe6fed2a08ab203d",
+        "slc_d9686629e95f20689a43ca0bad52904ea4a49ed05929edfa6086c926fdbc330c"
+      ],
+      "text": "The default tool-calling template natively supports parallel function calls, and agent classes such as FnCallAgent and ReActChat are built on the function calling capability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e72f95e00dd1825f15db9d7ac8d0a309472fc5a348d4ef88355126aa5c000659",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 261,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L256-L261"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 267,
+          "line_start": 266,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L266-L267"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 264,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L263-L264"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 276,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L272-L276"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4758a562a7a28da9ef63ef26ddeeafd0a1dad038f199737e60a438512eafcb95",
+        "slc_66a5f321d8e00cfa40752ce389bdef913e6a6837e261a5e727487911baaa1265",
+        "slc_70cdc005a62672910f2c3f70ebfa1fae0ef78a97c540ba9cebbf86d43115ec26",
+        "slc_9e320443867d4d0861b89a9d1a3ad0d43f6e6db773ca2a24fa36d300c7668d28"
+      ],
+      "text": "LLM config options include thought_in_content (affecting tool-call parsing), fncall_prompt_type (default 'nous', recommended for qwen3), max_input_tokens truncation, and use_raw_api for the API's native tool call interface."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e998ace10df8f97cd12c4dc753b1b8fcb5024b4bb98503108a81b449a2a0f712",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7ab841ffa47f37a56b091f51aa0b2bf2ab58a40e",
+          "line_end": 20,
+          "line_start": 19,
+          "path": "browser_qwen.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/browser_qwen.md#L19-L20"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7ab841ffa47f37a56b091f51aa0b2bf2ab58a40e",
+          "line_end": 105,
+          "line_start": 104,
+          "path": "browser_qwen.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/browser_qwen.md#L104-L105"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7ab841ffa47f37a56b091f51aa0b2bf2ab58a40e",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "browser_qwen.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/browser_qwen.md#L107-L107"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7ab841ffa47f37a56b091f51aa0b2bf2ab58a40e",
+          "line_end": 96,
+          "line_start": 95,
+          "path": "browser_qwen.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/browser_qwen.md#L95-L96"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7ab841ffa47f37a56b091f51aa0b2bf2ab58a40e",
+          "line_end": 25,
+          "line_start": 22,
+          "path": "browser_qwen.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/browser_qwen.md#L22-L25"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7ab841ffa47f37a56b091f51aa0b2bf2ab58a40e",
+          "line_end": 85,
+          "line_start": 84,
+          "path": "browser_qwen.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/browser_qwen.md#L84-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0166e177af795b24c8d20c0ea28593687b9c304c3436545127165769f64371fe",
+        "slc_11909cbb2c4c30bf31a30d0c568a68ae1d123a09c78cc35b2896e2240e504628",
+        "slc_6317a5df4f2c8f2cfa6ac37b6ed20e26ae03f589e1ee04b81ee33190f8dff4a1",
+        "slc_8c8b1d9df682a4c31545f17b303e999924bd8f875de2038dddc353f7501a4a97",
+        "slc_b42675da120fa70f62598fe983cfe972eca1e4d67c51037a53777e3d52820483",
+        "slc_eb86c2cafc1e757a6456379de431a98fbd740513f8e99813f56b39650d5cf4a2"
+      ],
+      "text": "BrowserQwen is an example Chrome extension built on Qwen-Agent offering webpage/PDF discussion, browsing-history recording, and Code Interpreter integration, backed by a locally deployed server on port 7864."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55d9bc175bb42f30328da7645454bbf48fa02c3e7c0ef6a021ce831cc3066069",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 46,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L38-L46"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L27-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_603831b4789e37c212cb555d52d72047960d29007cb85f8cb7aabc831997ca62",
+        "slc_681666633864bd81dc7a982402b33b755fa40b6de93570a974c7922e9c84cb55"
+      ],
+      "text": "The project released the DeepPlanning agent evaluation benchmark (Jan 2026) and links a benchmark page in its README."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07ab85a9f1f1bf766913f005ed2ae66429422fa03553b37967cf2e9f44d11c29",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 67,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L63-L67"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 54,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L52-L54"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 234,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L232-L234"
+        },
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 229,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L229-L229"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0930cb9272e003f43ce8bd34e866f302cfeaa37e56f78f95dca2770e64643169",
+        "slc_6b8580b1bddf5b07e2f14b22a08f0ac3b4bc37a601124fbf0d83ad80e99cdaab",
+        "slc_e3d93852d3a89d72837eefd178966483be9194bd6c4f9e19c7a62b95c90d9a23",
+        "slc_ff0eb3249a8f46e287bc5e6fb644000814db99aa6c01f2c8c7ad3bde60012148"
+      ],
+      "text": "The package installs from PyPI as qwen-agent with optional extras [gui,rag,code_interpreter,mcp], or editable from source; MCP examples additionally require uv, git, and sqlite3."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6d2b941b6fa2bae7b1942b43199b5b45d74eee970de019555dbcab8478bc526c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+          "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "qwenlm/qwen-agent",
+          "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md#L292-L292"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_90e9724ee943581b1bab9752090d01a1ff1e1574dfdad7b2ebd5bd99886b12cd"
+      ],
+      "text": "The Docker-based code interpreter implements only basic sandbox isolation and mounts only the specified working directory, so the docs advise caution when using it in production environments."
+    }
+  ],
+  "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 292,
+        "path": "README.md",
+        "size": 15159
+      },
+      {
+        "lines": 285,
+        "path": "README_CN.md",
+        "size": 14162
+      },
+      {
+        "lines": 123,
+        "path": "browser_qwen.md",
+        "size": 5077
+      }
+    ],
+    "omitted": [
+      {
+        "path": "browser_qwen_cn.md",
+        "reason": "file-budget",
+        "size": 4851
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 345,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": false,
+      "omitted": 1,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3dec0c0c45a75aa1baa827788c1afc32",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/qwenlm/qwen-agent/31a4d36d123688581a9e9744427272b33ce940e0/7bb51c83562efe20/manifest.json",
+  "package_id": "pkg_f8eb8b054b72f295257072615156bc827c5c56099e82572e5797963dc551a6e4",
+  "repo": "qwenlm/qwen-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "61e49cdb9cdc23751d8529060cb57d30c078b91bb29fd147891b1d22e063c7d8",
+  "snapshot_id": "7bb51c83562efe20",
+  "sources": [
+    {
+      "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+      "git_sha": "7d41fe4e7c78fa62d59b03ce4bd444fcdb75eb58",
+      "lines": 292,
+      "path": "README.md",
+      "repository": "qwenlm/qwen-agent",
+      "sha256": "3918a61ddbd3b0fbc64e3a5ea0b20d663c5520f0d0effad43b10d831e6d61d8a",
+      "source_id": "src_365df57ed3b7532a8922e9321c6a3f91",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README.md"
+    },
+    {
+      "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+      "git_sha": "08c025ad0931422cf3297252b261230326b7a957",
+      "lines": 285,
+      "path": "README_CN.md",
+      "repository": "qwenlm/qwen-agent",
+      "sha256": "6f9d7e290ebea4d7c07bf0d60d3255bf7884cf3e24d0acfb34f101ecee00a2f4",
+      "source_id": "src_04b31cc0bfea548aa3807c7b5d6796fa",
+      "stored": "readme_cn.md-e6db595f1598.md",
+      "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/README_CN.md"
+    },
+    {
+      "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+      "git_sha": "7ab841ffa47f37a56b091f51aa0b2bf2ab58a40e",
+      "lines": 123,
+      "path": "browser_qwen.md",
+      "repository": "qwenlm/qwen-agent",
+      "sha256": "83e28f62b5cf09bca1aab829f02f12c3a7b75abf2bac53a6db05995091efae62",
+      "source_id": "src_8bea29ad61c85716b855c55c37df82e8",
+      "stored": "browser_qwen.md-7e89f560f06f.md",
+      "url": "https://github.com/QwenLM/Qwen-Agent/blob/31a4d36d123688581a9e9744427272b33ce940e0/browser_qwen.md"
+    }
+  ],
+  "summary": "Qwen-Agent is a documented framework for building LLM applications on Qwen models, with atomic LLM/Tool components, an Assistant agent, Docker-based code interpreter, MCP support, and a BrowserQwen Chrome-extension example application. Evidence covers product architecture, configuration interfaces, dependencies, and a released DeepPlanning evaluation benchmark.",
+  "superseded_claim_ids": []
+}

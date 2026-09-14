@@ -1,0 +1,572 @@
+{
+  "applied_operation_id": "op_44f36ce79fc54898900a70d10df50054",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9edb720ea8bae704540ba778d8b2fd0ddab91c4e4586cc2286f41adeaefd22d0",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L3-L3"
+        },
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_118ac8eeb184e02316856f462fd47b34ffad29e3e63804903e62a6bedd3a28ea",
+        "slc_b472669deb6b795c02d52df80ddfff0a49aa2667e23ab3ac424b232e457331b0"
+      ],
+      "text": "VibeSDK is described as an open-source agentic platform for building and deploying full-stack applications on Cloudflare, with a hosted demo at build.cloudflare.dev."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fcfcfeafca14000d0e05e799db222ca626e0515d30aaf44126ab80a417d2a38e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45cab70e4ef7088456e9669ecc9bb0f5310116669d6a2adbf4c21655a9dd57fd"
+      ],
+      "text": "Users build apps by describing what they want and answering clarifying questions while the agent plans, edits files, deploys previews, inspects errors, and iterates with the human in the loop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_94a04e26ea207c07d22ce0d485d65286df9d06156211a8a138edc085dbab4a46",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 41,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L34-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0be74d22e62db8c0e391f1cc2f610103e7819d48f575eccbf578b66d7ac52461"
+      ],
+      "text": "The architecture comprises a ThinkAgent Durable Object running the model-and-tool loop, a SpaceDO workspace per project, Cloudflare Artifacts for git history and restore points, a Worker Loader for Dynamic Worker previews, and a generated App Durable Object Facet with SQLite."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b266d8afaafce287057a065a89a686166376d70c71c51784947580f8444a912d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c6775cb999e34b288c342a5439d2adf9164efb9b43d492a0584bd846b680fc8"
+      ],
+      "text": "ThinkAgent runs an iterative model-and-tool loop, managing conversation history, streaming, and skills; its explicit tools edit the workspace, create restore points, deploy previews, inspect browser logs, and ask clarifying questions, while bash access is disabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2d6e9deed8413ceabb48152c0a037f356912150c29cc495c6b1399233050a9c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L56-L56"
+        },
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 138,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L133-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c6775cb999e34b288c342a5439d2adf9164efb9b43d492a0584bd846b680fc8",
+        "slc_f653d727904ef90b968e3cc65939ef90dc56720b8fbda704175354ef995aab05"
+      ],
+      "text": "The product's tool model uses explicit workspace and product tools with workspace bash access disabled, and preview URLs use signed, branch-scoped access for authorization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b456beb70aa3563a60317763a6d14e17a3ce07e6d4f563d9a9cc13c82beb954",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 30,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L21-L30"
+        },
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L60-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44d4adbfbb4e510d092072cd97334b92d765e404f0b4e85743c70c220edbf365",
+        "slc_a0fbf30fe8d83edea319ae09d3df7fbca884781a328bd978bf6377af7310a71e"
+      ],
+      "text": "Each generated application gets isolated SQLite-backed storage via a Durable Object Facet, with database inspection and reset controls available to users."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c04ce76d55cc863498d3343071da4a6e57dac7c0a4b605ec50ec15e62080911",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L64-L64"
+        },
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "f09931511c5f1faa5f9f2fa9171d21a8ff1d1ca5",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "docs/architecture-diagrams.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/docs/architecture-diagrams.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b4f1eb707fa7f55ebacc6850c89a521f7003adc8527b021116e201843afe9ab",
+        "slc_2e6acb7c6f8791486251926fd32f70637e5e75312b67497f26114e0f0d7e4a6a"
+      ],
+      "text": "Rollback restores a selected commit into the current branch, creates a new commit, and redeploys without rewriting existing history, using Cloudflare Artifacts as the version-history layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc232e434c2866ccfea3b9097c650df0fc29fe0c196dccbd4ec08e7f359aeaa2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L60-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a0fbf30fe8d83edea319ae09d3df7fbca884781a328bd978bf6377af7310a71e"
+      ],
+      "text": "Previews are produced by bundling each committed deployment with @cloudflare/worker-bundler and loading it through the Worker Loader binding; SpaceDO serves static assets while backend requests and WebSockets are forwarded to the generated App Facet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b0167b183fffdf93959a8459a370a3e31f9f97705574ebc75e70d9888883d32",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 30,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L21-L30"
+        },
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 88,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L84-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44d4adbfbb4e510d092072cd97334b92d765e404f0b4e85743c70c220edbf365",
+        "slc_7b790dffaef3bd36748f04a8ad9bb1a40a8db2380d4aa6bef48b52b7d10c5254"
+      ],
+      "text": "Model providers are routed through Cloudflare AI Gateway with centralized observability and caching; deploying requires a Cloudflare account, Workers Paid plan, Workers for Platforms access for production previews, and an API token."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8fad8a7021adb74686f4ba2e3e0dab0764eef50385d5bfc6b1d7b357cde8f28e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L116-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_678cda383419bd8a1c6e0c6d606e6687c46747e23a9828e6b2ccb6b4d0ead750"
+      ],
+      "text": "Feature settings are dashboard-managed rather than committed in wrangler.jsonc, with keep_vars: true preserving production values across deploys; listed toggles default to off while ENABLE_EMAIL_AUTH defaults to on."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47110c0fca0e665b4a38b848e0dacd231107f36a4f472547a987288f72c2565d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 155,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L151-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a88253969e9b25b6b7d43adbe87c34a767ade9d28a7686ed4120d53ae8075254"
+      ],
+      "text": "Repository development practice: contributors fork and clone, run bun install and bun run setup, follow AGENTS.md, then run bun run typecheck, lint, and test before opening a pull request describing the change and its validation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_794da97cd7fbe66face7a05a67606d00119d8be1a65facca41a4e8f3fcecc5dd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 129,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L120-L129"
+        },
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 98,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L96-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_000ef3da9801eed670fe9ab0e43365fbd9f54409ed1a9cc2124bde1863b0068e",
+        "slc_51a37fe3a58343b07eb811e92c19fdee73d421e415f0cfbdf04e6dd134b3694b"
+      ],
+      "text": "Repository development practice: local development uses Node.js 18+, Bun, and commands such as bun run dev, build, typecheck, lint, and test, with bun run deploy building, migrating, and deploying via .prod.vars."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85ce3c4ba0262f1ad835c9303782c658bead9f3d1baeb8bd76c20211849e6723",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "f09931511c5f1faa5f9f2fa9171d21a8ff1d1ca5",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/architecture-diagrams.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/docs/architecture-diagrams.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14e07fd95cda28e11602c9c6c51f970f5df17818056971661ba7ffccc53a16af"
+      ],
+      "text": "The docs explicitly state the older phase-based sandbox architecture diagrams are retired historical context and must not be used to describe the current Think, SpaceDO, Artifacts, Worker Loader, and App Facet implementation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_270924ac5fadd22b3221e4231b0fc73e5ed35fe99c3bc52caa0b27461314b125",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 170,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L170-L170"
+        },
+        {
+          "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+          "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "cloudflare/vibesdk",
+          "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md#L147-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1567f7534976878e0187dd8987c5123cf36eb2039e1ab84115481624067999c7",
+        "slc_362a85a66b2b6cafae546afab0adcb200e61bc25ddee2f7264003c9db3e02ed7"
+      ],
+      "text": "VibeSDK is MIT-licensed, and support is available through GitHub issues, GitHub discussions, and the Cloudflare Developers Discord."
+    }
+  ],
+  "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 170,
+        "path": "README.md",
+        "size": 9863
+      },
+      {
+        "lines": 24,
+        "path": "samplePrompts.md",
+        "size": 2850
+      },
+      {
+        "lines": 858,
+        "path": "docs/architecture-diagrams.md",
+        "size": 25930
+      },
+      {
+        "lines": 354,
+        "path": "docs/POSTMAN_COLLECTION_README.md",
+        "size": 10289
+      },
+      {
+        "lines": 450,
+        "path": "docs/setup.md",
+        "size": 20121
+      },
+      {
+        "lines": 145,
+        "path": "docs/usage-limits-ui.md",
+        "size": 8959
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/llm.md",
+        "reason": "byte-budget",
+        "size": 161228
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 6815
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 57547
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 6208
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 834,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 4,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6f4582b190f55ee888357e3b683e2ca5",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/cloudflare/vibesdk/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/b32132cd1ca47fd1/manifest.json",
+  "package_id": "pkg_17ca4d56fbfc439ca4130e27c4cf4d790dab92bce34d016992ee5111c181cc8a",
+  "repo": "cloudflare/vibesdk",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "983dbe773abf25fc559b5c0624798d812717c7778e9606f56ceb421b44727f53",
+  "snapshot_id": "b32132cd1ca47fd1",
+  "sources": [
+    {
+      "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+      "git_sha": "63c5fd8aaea54b2d35ff74b183ae3c2f20453488",
+      "lines": 170,
+      "path": "README.md",
+      "repository": "cloudflare/vibesdk",
+      "sha256": "9a33c40385730e152744cd81619caf694ec6f6ed8d56137836cb157574adcac5",
+      "source_id": "src_01567cf0c04a5a4a84dff6cdb4d4505a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/README.md"
+    },
+    {
+      "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+      "git_sha": "83714ff4ee255fe7a43dc192c570e81b3dae5703",
+      "lines": 354,
+      "path": "docs/POSTMAN_COLLECTION_README.md",
+      "repository": "cloudflare/vibesdk",
+      "sha256": "eba1bcb955b06dc1458eebe0d70496a4268d1d554bd31ffef57e7d10b52a385e",
+      "source_id": "src_b78ade4efd5450cf98fb71187251b1d0",
+      "stored": "postman_collection_readme.md-759f6aa1bb90.md",
+      "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/docs/POSTMAN_COLLECTION_README.md"
+    },
+    {
+      "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+      "git_sha": "f09931511c5f1faa5f9f2fa9171d21a8ff1d1ca5",
+      "lines": 858,
+      "path": "docs/architecture-diagrams.md",
+      "repository": "cloudflare/vibesdk",
+      "sha256": "c7c3d77ff452de2957b1aeb4ded2ad83ae4e1a51e6cd700975f82ffcbae0a17d",
+      "source_id": "src_e1d11c0e5b465f23ada21bb060fcce6b",
+      "stored": "architecture-diagrams.md-7f4f58e4f055.md",
+      "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/docs/architecture-diagrams.md"
+    },
+    {
+      "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+      "git_sha": "323800e6ec6ddeb91b6902c13f195a8ec91b1ded",
+      "lines": 450,
+      "path": "docs/setup.md",
+      "repository": "cloudflare/vibesdk",
+      "sha256": "3d0a9e729959b98244bff791f008b220e4f856bbb3787538f1b8fb7f6b6888aa",
+      "source_id": "src_346a82c353c854d3ba427c65bfeb880a",
+      "stored": "setup.md-4ca531163334.md",
+      "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/docs/setup.md"
+    },
+    {
+      "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+      "git_sha": "cf10d96eb42453998d0b7aef21480e8b4cd09f05",
+      "lines": 145,
+      "path": "docs/usage-limits-ui.md",
+      "repository": "cloudflare/vibesdk",
+      "sha256": "9f02b823ed242fa399dc0ee2fb4c937fe7dde8f4775cd7b85c7fcb753c71104c",
+      "source_id": "src_b158e9cdb2695653b2617e153c667abe",
+      "stored": "usage-limits-ui.md-8a8b4a350afa.md",
+      "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/docs/usage-limits-ui.md"
+    },
+    {
+      "commit": "9da158d82c597a0e8f4bf033cdccd1053fb6fb15",
+      "git_sha": "8fdf08af172a8e3ce74e0aa68ee8cd77d6009751",
+      "lines": 24,
+      "path": "samplePrompts.md",
+      "repository": "cloudflare/vibesdk",
+      "sha256": "23a3a4244c4e8913733cc5435c8e6317e6f624c1327036c99c2f4e34a2074c42",
+      "source_id": "src_b7d8cd54288c51c5ac22a28cdeec64a9",
+      "stored": "sampleprompts.md-9884eaf74854.md",
+      "url": "https://github.com/cloudflare/vibesdk/blob/9da158d82c597a0e8f4bf033cdccd1053fb6fb15/samplePrompts.md"
+    }
+  ],
+  "summary": "VibeSDK is an open-source agentic platform for building and deploying full-stack applications on Cloudflare, built around a ThinkAgent Durable Object loop, SpaceDO workspaces, Cloudflare Artifacts version history, Worker Loader previews, and per-app SQLite Facets. Legacy phase-based architecture diagrams are explicitly marked retired and must not describe the current implementation. Evidence coverage: 135 of 342 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

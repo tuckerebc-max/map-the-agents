@@ -1,0 +1,441 @@
+{
+  "applied_operation_id": "op_78113e102fc0425b88268e44c8d07872",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d9a65cdee0dce8bb8766d2eebf840dd490af449d7a3619e47b930646aea73674",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ff1040485187c56661a16acdd43895edf07c6de4291049008b600ae1245124d9"
+      ],
+      "text": "Monocle performs natural language searches against compiled binaries: given a binary and search criteria, it decompiles the binary and uses an in-built LLM to identify and score matching code areas."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ddff4cbb116985b5467190e07fe5b6aa3b9374378898acdd604dc2ee4846d14f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ff1040485187c56661a16acdd43895edf07c6de4291049008b600ae1245124d9"
+      ],
+      "text": "Monocle uses Ghidra headless to enable decompilation of compiled binaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee074a789ea566314b7903a3be3089380c9ae6b8acf3de770f211e90ef4f7eb2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 100,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L95-L100"
+        },
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4fcc58fe35c769bee806edc92e79a1e467b5ed38aa5cef0e21a206d07934a9f8",
+        "slc_600e384accb43d9a01c20c7e86f294a081cc5fbcadce39c137bc21da5cf752b3"
+      ],
+      "text": "The runtime model is Mistral-7B-Instruct-v0.2, an instruct fine-tuned Mistral-7B-v0.2 with 7.24B parameters, BF16 tensors, and a 32k context window."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc2b1bcff517ed85c391ade1f7fc9b1bf0b0b95b72be32b6ab35331eabe28766",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L35-L35"
+        },
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 33,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L30-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7d0377cb47fd20d81c4dde388da2401d775339abcf3bfc45a05dffae90b4a3e7",
+        "slc_b87218fad294ae1fe5fc2ea129bb21a72631183d71fe220b353fd113bfe1ddf4"
+      ],
+      "text": "Monocle requires Nvidia CUDA for improved LLM performance, plus Ghidra installed with analyzeHeadless available in the environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d90bcc44b72f1308fe99e13d7dc4869736365320d04a6b1a3d0f1745d4b3e47",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L37-L37"
+        },
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "18b80a48c8ce6b731a13069ae3151182891a97c1",
+          "line_end": 13,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/requirements.txt#L1-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c26948c158f400f59c5e5e045f756e6f7be31ef8aaa66c508b39049b790c62f",
+        "slc_f0233edb1f74de32a4710b7f801b9eaf60a8201b6a0152edef5ba66311dc74bc"
+      ],
+      "text": "Python dependencies are listed in requirements.txt, including transformers[torch]>=4.28.1, torch>=1.13.1, bitsandbytes>=0.39.0, rich, and huggingface_hub."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86fd158e31385fa47535914e660eabd35e633436dd84543ffc0f100540885653",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 63,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L56-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11a5561dd00ae8db958f13bdd8bdbdf7084c0ef3374092d3b9e765328f766fcb"
+      ],
+      "text": "The CLI takes a binary path and a search target, e.g. monocle --binary <path-to-binary> --find <component-to-find> on Unix, with a monocle.exe variant on Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_32bfd63c12fff0746c2b632a7355f98f0708c2ca567f4c156edde5fe9448abd7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7497a59c371e9f41fac64869b1a208e5bf997547d72187cb71dc714437787ab3"
+      ],
+      "text": "While processing, Monocle shows a live table sorted by score, listing each analyzed function with a 0-10 relevance score and an explanation; zero-scored functions get no explanation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29c0e03f35f6202596b3f122d0d3627000ab90e800ff8811414cb9294a2f6e79",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ff1040485187c56661a16acdd43895edf07c6de4291049008b600ae1245124d9"
+      ],
+      "text": "Queries are written in plain text because the tool is backed by an LLM, allowing open-ended natural language questions about a binary without prior knowledge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7312beede696695ddd0b4316b693779358cd23e0bb3a5283967bf1cf21bdbca6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_600e384accb43d9a01c20c7e86f294a081cc5fbcadce39c137bc21da5cf752b3"
+      ],
+      "text": "At least 16GB RAM and a dedicated Nvidia GPU with 4GB+ memory are recommended; lower-spec machines can run it but significantly slower."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78c30067e7dceb7c479ebbff9c6024e17f63eb6cd17807bd119e51b40491252a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50be35d04d2da2cdabdefb25f4f11991cf37a00880042d2439252dfe21c4fd6f"
+      ],
+      "text": "Monocle has been tested on Windows 11 and is expected, though not confirmed, to be compatible with Unix and other systems."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5aca87cd9562f1eaa5f0b1116863031ef4a16b2a3dc71771837a4de3395d19db",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 111,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L106-L111"
+        },
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 104,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L103-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f27511f63b59b1186d385dfba02ab34849f01e402f2e8e0ab7f77e85aed9821",
+        "slc_540e29d43ac0b7386e64492d123a287f47073e2ff255da3000d0c154acdea847"
+      ],
+      "text": "Repository development practice: contributors should fork the repo, create a descriptively named branch, test changes, submit a pull request with a detailed description, and address maintainer feedback before merge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_74a640042a3d3ef04c5638fb83a484e5944b0efa7403ec445daa608944135269",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L114-L114"
+        },
+        {
+          "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+          "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "arphanetx/monocle",
+          "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md#L117-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b26ee0ee35a9ddbe9cf7b0e493318b2b1a0c73cff7b91b7dedfaf2b56809d99",
+        "slc_c868a2cbbff16bcb77457fa7bd14d84ce2be66480bc9cd5da6af36efbace4c3d"
+      ],
+      "text": "Repository development practice: the project follows the Contributor Covenant Code of Conduct, and bugs or feature requests should be reported via GitHub issues with reproduction details."
+    }
+  ],
+  "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 121,
+        "path": "README.md",
+        "size": 7548
+      },
+      {
+        "lines": 13,
+        "path": "requirements.txt",
+        "size": 425
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 14,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_430e12d7fd3854259bf45503b73c3be7",
+  "facets": {
+    "components": 1,
+    "dependencies": 3,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/arphanetx/monocle/6a865d767a9623af4e72cd1c2b9e39e62db45105/82058386115fbb7c/manifest.json",
+  "package_id": "pkg_82b7488fe68ebbe780855384033b1b0a55a6595ffdc454b2fb011128ff0f2697",
+  "repo": "arphanetx/monocle",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6e4848fa3b2cea2106baad0a867940ced813863660e450f9e74448922fa1f491",
+  "snapshot_id": "82058386115fbb7c",
+  "sources": [
+    {
+      "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+      "git_sha": "52f91fa9b98d553b981aebb77a044f45f1579d07",
+      "lines": 121,
+      "path": "README.md",
+      "repository": "arphanetx/monocle",
+      "sha256": "9bc45232aa11e369af7bab2386f1fd84bd4fbb5f1d035538a93aea85a30caa46",
+      "source_id": "src_0f88a7c96ed8575a92f5bcbf671e48df",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/README.md"
+    },
+    {
+      "commit": "6a865d767a9623af4e72cd1c2b9e39e62db45105",
+      "git_sha": "18b80a48c8ce6b731a13069ae3151182891a97c1",
+      "lines": 13,
+      "path": "requirements.txt",
+      "repository": "arphanetx/monocle",
+      "sha256": "37d44d4dff2940daf21309b1a0c66e57682c65fa7a93b990761def5f99384ce2",
+      "source_id": "src_65c64b0cd0d8521b9d7f025120fc0923",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/arphanetx/Monocle/blob/6a865d767a9623af4e72cd1c2b9e39e62db45105/requirements.txt"
+    }
+  ],
+  "summary": "Monocle is an LLM-backed binary analysis search tool that decompiles binaries via Ghidra headless and uses Mistral-7B-Instruct-v0.2 to score functions against natural-language search criteria. Evidence covers its purpose, CLI, dependencies, output format, and contribution guidelines.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,614 @@
+{
+  "applied_operation_id": "op_d83603ec1c5e44eea043548f2670fe01",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b4a532ad64f09b6efaea344345be7a19e1f23f3ecb4fac7021de4079306b1bd",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 37,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L32-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2001379ba05d5a44ce4b38de7ebdd6202cebb232289b5529c77443b17fd29fe0"
+      ],
+      "text": "The framework's core principle is traceability: nothing gets done without a task, with conversations, decisions, and artefacts captured in a record called the Context Fabric."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de5e41cb55dc06640216ad9b756eed5fce68c429f99802f8d765a5da1578f526",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 43,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L39-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33e4b8c9689de56930c90c33a6233c7cf89380a6efeda5f3296ebb33b10bc1d6"
+      ],
+      "text": "A Component Fabric maps how code pieces relate, making a change's blast radius visible before the change rather than after."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba79378d9de5b1295aa6257570eb695a44253e321db25d1227ec501fa61aa929",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 717,
+          "line_start": 698,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L698-L717"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dd225ebb95459860c9914768d9aad35bcd6ba439b55ff911854038778420020"
+      ],
+      "text": "The product exposes a `fw` CLI (about 60 verbs across 11 sections) including work-on, audit, recall, fabric blast-radius, handover, serve, tier0 approve, and mcp lifecycle commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b059a7d7ed3b4f852742f9ebbdf01aa4d84bd33e8a7826e6df65d85c24f2f250",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 225,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L222-L225"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 231,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L230-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b8eed433626946bc4efbf0c7ad6d6e326fcbf0c168df17af9c0beeb6ba7debe",
+        "slc_662eb0a24fbdb82efc645bcf6617fc586e52d30774947036c5e520fc60ff3062"
+      ],
+      "text": "A PreToolUse hook intercepts file modifications and refuses edits when no active task is set; build tasks with placeholder acceptance criteria are blocked (policy G-020)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e83bc772c0ce2638c050d92f148cd129ffa3c080779829852e69977d23911b75",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 338,
+          "line_start": 333,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L333-L338"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_acbe64eaafabf063efc8d1428e57821b0f2f25afae6221ee7e7ae71a3e0c6024"
+      ],
+      "text": "A tiered authority model: Tier 0 destructive commands need human approval via `fw tier0 approve`, Tier 1 edits need an active task, Tier 2 exceptions are single-use and logged, Tier 3 read-only is pre-approved."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_250b88293dd96367dea437f48198c698874a270823a7a6962d13fd8789b0a5ff",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 331,
+          "line_start": 327,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L327-L331"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d68eb4b06bfe228f619ee292b76ad014987408b682f5d0ae1a59112ca3f62db"
+      ],
+      "text": "Approval verbs such as fw inception decide, fw arc close, and fw bvp confirm refuse to run under agent control and route to a human via the Watchtower dashboard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_42ed3a22da230600e92df9644d8e4aba2d18ddd7d1c987171fb7a92c244a3810",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 255,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L251-L255"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 395,
+          "line_start": 392,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L392-L395"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06a7922dbadcade6132d9e092b181384cbf92fb4d6263fa7b484466aebd90d2f",
+        "slc_0b822a3bfb515f77d82913cf94dbd7a35e5053a0f0d055fa96d3632bedea5cd9"
+      ],
+      "text": "Three memory layers persist across sessions: working memory in .context/working/, project memory in .context/project/, and episodic memory of completed tasks in .context/episodic/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9eed03bd4cd462e36b284541bccf52cd447c1b05748aa80c398525f2dc3d9d32",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 395,
+          "line_start": 392,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L392-L395"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 269,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L267-L269"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 273,
+          "line_start": 271,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L271-L273"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b822a3bfb515f77d82913cf94dbd7a35e5053a0f0d055fa96d3632bedea5cd9",
+        "slc_22504f3847f415708dd60d63c5828ae90cd7afad6bf0adc24917e7a5386cefa0",
+        "slc_9fd637dc8a97db55cc739305fb5eb427d59b94d5949711297aac7fb1aab4b2ec"
+      ],
+      "text": "`fw recall` searches learnings, patterns, decisions, and episodics by meaning rather than keyword, and `fw handover --commit` writes a structured handover the next session reads on start."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1ff934219c8c2b10fde5cb3797cd1c5909e737680e6e3d7a51a33eda92a447f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 491,
+          "line_start": 489,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L489-L491"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 500,
+          "line_start": 493,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L493-L500"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43653db9636717250d666bc5a0b677703a4598d8027df6ce7253dce6a4c660bf",
+        "slc_c38647422f18195d47c92bb8c208fde1b4c40478449782afebcdbac9b7606f5a"
+      ],
+      "text": "The framework wraps an external TermLink binary for cross-terminal, cross-host worker sessions, with bus manifest/read, dispatch send over SSH, and pickup verbs for coordination."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_69d3be32c32edff26ad8273753fad67457672887423e022e93b204dd645802f2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 507,
+          "line_start": 502,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L502-L507"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6b30f4178c4c6544c9644934a735fa5078a69e1cc26925d13949c34626c7b5f"
+      ],
+      "text": "A Framework MCP server exposes 22 capabilities (16 read-only, 6 agent-authority) to external agents; five sovereignty-bound verbs are deliberately never registered, and agent-authority tools shell out through bin/fw so the same gates fire."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2018c6219dfb72dfd0acb9ebefb027838218775f1c7f0a1ab9d19730b0b678e7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 634,
+          "line_start": 628,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L628-L634"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b6b229c6c98bd40bf81d216025c310e145ae81d11c5b904b59e8e1ddb6ae64a"
+      ],
+      "text": "Prerequisites are bash 4.4+, git 2.20+, and python3 3.8+; PyYAML is optional (needed for fw serve and some helpers), and Node.js is optional with Python as fallback for TypeScript hooks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a703d06855b41af1fde2da0f877a5009fd53ed865795dc0dde14b0712c1c7e12",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 653,
+          "line_start": 641,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L641-L653"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 639,
+          "line_start": 638,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L638-L639"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_291dbc160d3e650595659e9e9a89605185f5d8554420da5265d7d14d0d3aca1a",
+        "slc_4f5ed7fa0b0dbe463d1f6c201ca15ff63f08c4886de11bac4bad1ba529666e26"
+      ],
+      "text": "The README states this is alpha software; multi-provider validation for Cursor, Aider, and Devin is designed but not validated, with Claude Code as the tested provider, and Watchtower auto-start is not yet shipped."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f89df1ec02466e948c27e6ae512cda5579b82e707546d9a13546668e5ab43656",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 670,
+          "line_start": 670,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L670-L670"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 661,
+          "line_start": 661,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L661-L661"
+        },
+        {
+          "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+          "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+          "line_end": 668,
+          "line_start": 663,
+          "path": "README.md",
+          "repository": "dimitrigeelen/agentic-engineering-framework",
+          "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md#L663-L668"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3baf51552bc4eb2fb533ab8e489ed87430ca728e4a62ea68992dea528bb3e053",
+        "slc_4b2e20ce9c9ea0d8d49eb30687531261f6e2047b57ffd6077986d8c5ebab7fb5",
+        "slc_b55fd58775af6390a140a118cef4ec7585b4d6fdb4a604994f9dea777aa131b8"
+      ],
+      "text": "The framework coordinates agents but does not execute them; it is not an agent runtime or multi-agent pipeline, and the model lives in the user's CLI agent while governance lives here."
+    }
+  ],
+  "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 851,
+        "path": "README.md",
+        "size": 38842
+      },
+      {
+        "lines": 175,
+        "path": "001-Vision.md",
+        "size": 6402
+      },
+      {
+        "lines": 128,
+        "path": "005-DesignDirectives.md",
+        "size": 7474
+      },
+      {
+        "lines": 313,
+        "path": "010-TaskSystem.md",
+        "size": 10965
+      },
+      {
+        "lines": 73,
+        "path": "011-EnforcementConfig.md",
+        "size": 2633
+      },
+      {
+        "lines": 359,
+        "path": "012-ArcSystem.md",
+        "size": 17614
+      }
+    ],
+    "omitted": [
+      {
+        "path": "015-Practices.md",
+        "reason": "file-budget",
+        "size": 8076
+      },
+      {
+        "path": "020-Experiments.md",
+        "reason": "file-budget",
+        "size": 15498
+      },
+      {
+        "path": "025-ArtifactDiscovery.md",
+        "reason": "file-budget",
+        "size": 32003
+      },
+      {
+        "path": "030-WatchtowerDesign.md",
+        "reason": "file-budget",
+        "size": 8752
+      },
+      {
+        "path": "040-ValueDrivers.md",
+        "reason": "file-budget",
+        "size": 15441
+      },
+      {
+        "path": "050-Inceptions.md",
+        "reason": "file-budget",
+        "size": 18083
+      },
+      {
+        "path": "CONTEXT.md",
+        "reason": "file-budget",
+        "size": 23017
+      },
+      {
+        "path": "FRAMEWORK.md",
+        "reason": "file-budget",
+        "size": 18798
+      },
+      {
+        "path": "s4-editor-full.md",
+        "reason": "file-budget",
+        "size": 24851
+      },
+      {
+        "path": "zzz-default.md",
+        "reason": "file-budget",
+        "size": 537
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5214
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 124780
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4484
+      }
+    ],
+    "omitted_count": 13,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": false,
+      "tree_blobs": 38,
+      "tree_truncated": true
+    },
+    "selection": {
+      "candidates": 19,
+      "complete": false,
+      "omitted": 13,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b66c2b8e2abd5744a1692fae3fa0fa13",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 3,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2ad642c0/0d88b5e5/35aaaaedc1c32269079b32de14aa31a7bebe2a54/a8e042de383354ce/manifest.json",
+  "package_id": "pkg_c60027f3e89860a732d65f6b88a8c4fbd8e6552691ee0a3269b180ea345d6f70",
+  "repo": "dimitrigeelen/agentic-engineering-framework",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "62aed9f7f2dc86a0ee9662224a7933c024e64b9003d1ad2473879dc3450c9c17",
+  "snapshot_id": "a8e042de383354ce",
+  "sources": [
+    {
+      "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+      "git_sha": "e6ee4314c87181080bdfefb500d3c53450a8e751",
+      "lines": 175,
+      "path": "001-Vision.md",
+      "repository": "dimitrigeelen/agentic-engineering-framework",
+      "sha256": "d11786382ad718a95514b0d37b6825741f5f3caab34193a6ce2210a32d9fa676",
+      "source_id": "src_f035d50335da56da8d4dae10a3e609ac",
+      "stored": "001-vision.md-3e20dc0a037f.md",
+      "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/001-Vision.md"
+    },
+    {
+      "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+      "git_sha": "80b236107c848363e1467c83e3c8c522cb88ba77",
+      "lines": 128,
+      "path": "005-DesignDirectives.md",
+      "repository": "dimitrigeelen/agentic-engineering-framework",
+      "sha256": "927b8a770733586f800ea464080d576a4d6c1d1e2aa33173d66841f905c197d1",
+      "source_id": "src_cd349777788151b68550d1665e7f0599",
+      "stored": "005-designdirectives.md-8198d194add5.md",
+      "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/005-DesignDirectives.md"
+    },
+    {
+      "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+      "git_sha": "3ba4ef152776074d2e99dff416ab939ea2a92042",
+      "lines": 313,
+      "path": "010-TaskSystem.md",
+      "repository": "dimitrigeelen/agentic-engineering-framework",
+      "sha256": "282872c2834a481690c6f325baf5ba6d4a38d854e03cdf7ed03499585243e287",
+      "source_id": "src_3b0cdcc7666856fdab249664173aea16",
+      "stored": "010-tasksystem.md-466fadf79e3e.md",
+      "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/010-TaskSystem.md"
+    },
+    {
+      "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+      "git_sha": "7b4c15e082a92e3fd18eac278963bd7ec0913316",
+      "lines": 73,
+      "path": "011-EnforcementConfig.md",
+      "repository": "dimitrigeelen/agentic-engineering-framework",
+      "sha256": "9ea423fa93e58ceb6707ebfe82afb629391f8dd2922c9705dac0d34788c86e78",
+      "source_id": "src_0d3fe81b74e152caade0bfa109d0cec1",
+      "stored": "011-enforcementconfig.md-a24ec4673d13.md",
+      "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/011-EnforcementConfig.md"
+    },
+    {
+      "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+      "git_sha": "500e361885ad8d0ae08036db3f26d5a991f0d846",
+      "lines": 359,
+      "path": "012-ArcSystem.md",
+      "repository": "dimitrigeelen/agentic-engineering-framework",
+      "sha256": "f4c4155d4e769f500ff7352dd1067d13c6e4bdcdbe0cb7591b03b378efb96642",
+      "source_id": "src_a0be1bad73445cbf9a89e26b42c86c76",
+      "stored": "012-arcsystem.md-68498372a626.md",
+      "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/012-ArcSystem.md"
+    },
+    {
+      "commit": "35aaaaedc1c32269079b32de14aa31a7bebe2a54",
+      "git_sha": "976559d20704ff9c7a6615a44a9482bebfd6d63f",
+      "lines": 851,
+      "path": "README.md",
+      "repository": "dimitrigeelen/agentic-engineering-framework",
+      "sha256": "685984ea39b007e3e9fb531ced6c1325bea11884bb5b454f3d824d43e790198b",
+      "source_id": "src_090e08ca26395818abfe77ae9f3d5f49",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/DimitriGeelen/agentic-engineering-framework/blob/35aaaaedc1c32269079b32de14aa31a7bebe2a54/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The framework's core principle is traceability: nothing gets done without a task, with conversations, decisions, and artefacts captured in a record called the Context Fabric. A Component Fabric maps how code pieces relate, making a change's blast radius visible before the change rather than after.",
+  "superseded_claim_ids": []
+}

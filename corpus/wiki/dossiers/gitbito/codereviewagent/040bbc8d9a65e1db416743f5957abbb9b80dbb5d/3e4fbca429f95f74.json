@@ -1,0 +1,412 @@
+{
+  "applied_operation_id": "op_da9bac93775f479781f0ed9d8b35fd26",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_67d17e4bfb118238b022bb4a01a1d84370b4fada759523e20e74055f48efae3c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00331e4cdfce4903ead085a735fdbd219262694266c0407e20fdb5fcaf2ec04e"
+      ],
+      "text": "The product is an automated AI code review assistant, stated to be powered by Anthropic's Claude Sonnet 3.5, that reviews code in pull/merge requests and suggests fixes for bugs, code smells, and security vulnerabilities."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc19136a52e307236c5f8ffe9ede3cf5ea5ff5be7c315955bcdae977b6136b2d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6aca6df3bea12f73e7a54ba0ed67a1961d38bbf086241e4a7cae073aa4b0cdc5"
+      ],
+      "text": "The agent integrates with Git providers including GitHub, GitLab, and Bitbucket, posting its recommendations directly as comments on the corresponding pull request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a477c7d3fd201555bd5bcf203a82e7f0ad379c902c053c9e24d9f8ca2997baf6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 123,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L115-L123"
+        },
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21b3a4fdad982bc644310bb45b887fb651d323ccadb40f0e4b2a1fc50b9267d3",
+        "slc_6aca6df3bea12f73e7a54ba0ed67a1961d38bbf086241e4a7cae073aa4b0cdc5"
+      ],
+      "text": "Reviews incorporate real-time output from static analysis and OSS vulnerability tools such as fbinfer and Dependency-Check, and can include high-severity findings from third-party tools like Snyk or Sonar."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dbec5c2e2777edc99b1079748b44cae914bf2ffda056d71fce2c05839ebe5545",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L82-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce7a4b979bad091cf98423ad0a68fb01fdc2e880e242ee7725264e71adfdc9b3"
+      ],
+      "text": "The agent is described as analyzing the entire codebase to produce context-aware, project-tailored review insights rather than reviewing changes in isolation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_368d390b273ac06509bf0faf640f06e9e51d9ed2314cd705de48deb48fa6d284",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 148,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L147-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f5e34d149bf9fc40275c0318b774d4bbac147cfea212cdd9c6a3aa52f6c53e0"
+      ],
+      "text": "A /review command can be used to manually trigger a code review, per a screenshot caption in the README."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7676bf8944db82f34b03c384cb0a363baab4b999d30819db67a9a514f156850b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 123,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L115-L123"
+        },
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L100-L101"
+        },
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 193,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L192-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21b3a4fdad982bc644310bb45b887fb651d323ccadb40f0e4b2a1fc50b9267d3",
+        "slc_b78816dad821f3238f315f3fa384a0354698166667299a2ad6652fdeea359e8f",
+        "slc_f9c928ffb7d75fa3619451c9328318f57001b3031109f8909cbe94ae072baa17"
+      ],
+      "text": "The product offers real-time review feedback inside VS Code and JetBrains IDEs, in addition to PR-based review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_830d541c13654e70235c035a529f0ce248d2b1107696d6dc6670b940879de34a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L92-L92"
+        },
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 98,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L97-L98"
+        },
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L100-L101"
+        },
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 95,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L94-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37120d73e0dc5fec277e545fce217e1cdca2ab9d06c03f8fb02f245c14e566e8",
+        "slc_3dd38a02420c20d6a145e2eda2363f2ef7f21d537642a224284b4d8ffae66165",
+        "slc_b78816dad821f3238f315f3fa384a0354698166667299a2ad6652fdeea359e8f",
+        "slc_c289df1deb0cb56a0d100fa2fb603ef7f26beb2ae41bee257ebd3ab534579260"
+      ],
+      "text": "Three usage modes are documented: Bito Cloud (no local installation), self-hosted deployment via CLI, webhooks, or GitHub Actions, and IDE-based reviews."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_173ebd8ab5e72c2645161e2fb3235dc6ebffcda68bbe83ae6b66989939b1adc7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 178,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L177-L178"
+        },
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 163,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L162-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dc410614271ca6a0050a13217c720491151cfb9653480a63f56686fe4fe170a",
+        "slc_6986107a01e6c2398a20a5984bc850bff14a47ede0bdbb0dd2d00a66b5ac07e1"
+      ],
+      "text": "The agent ships with fbinfer and OWASP Dependency-Check available out of the box, and supports configuring additional tools such as Sonar, Snyk, or GitHub Dependabot."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c9e00b089fd7708ae9f8c69afa77eb06a30120799431d039d1d1ff93e08d062",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 123,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L115-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21b3a4fdad982bc644310bb45b887fb651d323ccadb40f0e4b2a1fc50b9267d3"
+      ],
+      "text": "Key capabilities include AI review of security, performance, scalability, and coding-standard issues, PR summaries, estimated review effort, and line-by-line improvement suggestions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3dd11399e22887b15f0e0c932d499cf0bf93e3e578d24e61a1851f3b3bf377ac",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L107-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18160548c4a3bd9e3558b1a4710e7706230615edc0942dc5d13e9c25783e3b94"
+      ],
+      "text": "The claimed up-to-50% reduction in code review time is a vendor marketing assertion in the README, not a measured benchmark reported in this repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_188ca13945465039a358d1bdd200cbd56a78e801c6a5a7d83f4d29407f37ca92",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+          "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "gitbito/codereviewagent",
+          "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md#L107-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18160548c4a3bd9e3558b1a4710e7706230615edc0942dc5d13e9c25783e3b94"
+      ],
+      "text": "No evaluation harness, benchmark, or success-rate metric appears in the provided evidence; the only quantitative claim is the marketing figure of up to 50% review-time reduction."
+    }
+  ],
+  "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 230,
+        "path": "README.md",
+        "size": 9333
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 12,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_c30f3616ab7359239f4391fc8c671b30",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/gitbito/codereviewagent/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/3e4fbca429f95f74/manifest.json",
+  "package_id": "pkg_38d7920cfd23ec70c76906ea948ce38eece9649814af2428bbae4b233c018e89",
+  "repo": "gitbito/codereviewagent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d33f8a87b46403ab9d313d88e99fb153596a21af4c61738e840026781865f818",
+  "snapshot_id": "3e4fbca429f95f74",
+  "sources": [
+    {
+      "commit": "040bbc8d9a65e1db416743f5957abbb9b80dbb5d",
+      "git_sha": "e4a502fbf5837f1e7125a14c0a93bc578485514a",
+      "lines": 230,
+      "path": "README.md",
+      "repository": "gitbito/codereviewagent",
+      "sha256": "2c2290fc9895cb090feb929269d165e687606bd70141fcf15fb0fdb5c100d4f4",
+      "source_id": "src_c03afe309bee5e648c02956da66cf725",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/gitbito/CodeReviewAgent/blob/040bbc8d9a65e1db416743f5957abbb9b80dbb5d/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only the README of Bito's AI Code Review Agent, describing an AI-powered PR/MR code review assistant powered by Claude Sonnet 3.5, with cloud, self-hosted, and IDE usage modes. No source code, tests, or contributor guidance appear in the evidence.",
+  "superseded_claim_ids": []
+}

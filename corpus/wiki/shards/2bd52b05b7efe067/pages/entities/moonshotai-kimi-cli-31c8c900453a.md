@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0da987b323ed937fe2f0670d9e5ee6a841894784362689ee0aadc515ef4cfb5f
+- clm_0fe113e8fbc89317cb2770c437488b2a914be30db59a2e9a009bdeb8447bde6b
+- clm_2de7cbb8e74f3dfc5559ed151ee9a01149bc2bf99c6e6455bf0f64cb702afa66
+- clm_69af78d568cd66eb1f537fb2a366e29418d664e650884e8f65a376f75006dd9e
+- clm_7b7d9a373b763ae37df9b95f3b6e05a53c9b51887025ab28b1cd617f6215b663
+- clm_87f753f389ecfe88ecf9f94ee590917c1f1e7c69f42ba36a84c8595eb39f5d62
+- clm_a45d0534e9a3a87cacd4f8350c8c928574e53c726cce9382b176a911c376334a
+- clm_abb71dd2bc5e119b629bacd09d899b3a160826f47ab1c7d5f40a154f31e05a2d
+- clm_b999aa78f8a734d066282e275a78dd73cd1a5960e0cf889701d9932128f564e6
+- clm_f069076df183e2ab68d9b97fc2917f08965a96a0352ad530fd72183259b7e4b8
+- clm_f8648b5e8f4a3a2d7049619d0cfd930f059906763b7b456e9f51caf753cab9ac
+maturity: draft
+page_id: pg_39840b67be1759ba94fd31c8c900453a
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: moonshotai/kimi-cli
+updated_at: '2026-09-14T04:48:37Z'
+---
+
+# moonshotai/kimi-cli
+
+<!-- rcw:begin owner=entity:ent_731a6db7fb8e582585afc00e9d886c99 block=evidence -->
+- moonshotai/kimi-cli is mentioned in this evidence. [@claim:clm_0da987b323ed937fe2f0670d9e5ee6a841894784362689ee0aadc515ef4cfb5f] [@claim:clm_0fe113e8fbc89317cb2770c437488b2a914be30db59a2e9a009bdeb8447bde6b] [@claim:clm_2de7cbb8e74f3dfc5559ed151ee9a01149bc2bf99c6e6455bf0f64cb702afa66] [@claim:clm_69af78d568cd66eb1f537fb2a366e29418d664e650884e8f65a376f75006dd9e] [@claim:clm_7b7d9a373b763ae37df9b95f3b6e05a53c9b51887025ab28b1cd617f6215b663] [@claim:clm_87f753f389ecfe88ecf9f94ee590917c1f1e7c69f42ba36a84c8595eb39f5d62] [@claim:clm_a45d0534e9a3a87cacd4f8350c8c928574e53c726cce9382b176a911c376334a] [@claim:clm_abb71dd2bc5e119b629bacd09d899b3a160826f47ab1c7d5f40a154f31e05a2d] [@claim:clm_b999aa78f8a734d066282e275a78dd73cd1a5960e0cf889701d9932128f564e6] [@claim:clm_f069076df183e2ab68d9b97fc2917f08965a96a0352ad530fd72183259b7e4b8] [@claim:clm_f8648b5e8f4a3a2d7049619d0cfd930f059906763b7b456e9f51caf753cab9ac]
+<!-- rcw:end owner=entity:ent_731a6db7fb8e582585afc00e9d886c99 block=evidence -->
+
+## Researcher notes
+

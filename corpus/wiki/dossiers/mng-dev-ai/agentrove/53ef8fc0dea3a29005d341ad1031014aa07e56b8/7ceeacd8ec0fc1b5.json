@@ -1,0 +1,460 @@
+{
+  "applied_operation_id": "op_c8415513f24747fab70a9c3ab5fdf9a7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ff72cbbd858ddf1a4252b7188d80a8108325f7741d8a8928bbd7bbba5615ad5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_035737208f4a6dc485afd0750df5abfd769addfb2a21af0a82cd58721f7c27d2"
+      ],
+      "text": "Agentrove is a self-hosted AI coding workspace that runs and orchestrates Antigravity, Claude Code, Codex, Copilot, Cursor, Grok, and OpenCode agents from one interface."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e8ff4c49e097a084ac2dd6c255fdebdac747699473276d5520e622be0657cf8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 22,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L14-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1f969dfc336c4501121fb24bfe506e299cdc8a7d3c35834099d7892ff83a9a3"
+      ],
+      "text": "Agents are run through ACP adapters, and each workspace gets its own Docker or host sandbox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3bc6146ff4637351677567c2cf95d90e80fe989ee9cdcba1f2635bab51e3d11",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf72c56a012c8946c9574dd983f2a2b7bc1ec48929442b30a7364069b70bc6a8"
+      ],
+      "text": "A bundled MCP server exposes the instance as tools such as send_message, get_messages, list_models, and list_personas, letting any chat's agent act as an orchestrator that decomposes work and reviews results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2acbee0e8a939871a5c82c573cfeab37ea6a3aa1331b464966774c28c80ad3eb",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 34,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L30-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7547ed9ccbbd93c9ed1ef238ae08354dbf7c01f9bec54ce62dd035f4eb3948b"
+      ],
+      "text": "Sub-threads created via send_message(parent_chat_id=...) are worker chats grouped under the lead in the same workspace and branch, and stay flat with no nesting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a1120b3227eba79da191c605a69e8f2f334eb309fd540e8d64e98c65a5329b2",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 34,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L30-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7547ed9ccbbd93c9ed1ef238ae08354dbf7c01f9bec54ce62dd035f4eb3948b"
+      ],
+      "text": "Workers can run on any installed agent, model, and persona; worktree=true gives a worker its own git worktree so parallel workers edit concurrently without conflicts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c77b49d113a6933f2730bc3722886aec4c4fa81fea79a2bc3125442267fa16e6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 34,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L30-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7547ed9ccbbd93c9ed1ef238ae08354dbf7c01f9bec54ce62dd035f4eb3948b"
+      ],
+      "text": "The lead polls get_messages until a worker's turn completes, judges results against the code, and sends rework to the worker's thread; follow-ups inherit prior model, persona, and reasoning settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1dfbfe277a7c842f13110017175d273c64fe52071a8f9a42946d4a6a39c6e9cb",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 34,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L30-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7547ed9ccbbd93c9ed1ef238ae08354dbf7c01f9bec54ce62dd035f4eb3948b"
+      ],
+      "text": "Orchestrated turns run in the agent's full-execution mode, so workers finish without permission prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35d36aec574f8d37576229b63f62e777349d4ae371fb4c05366f06739cc1aabd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 22,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L14-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1f969dfc336c4501121fb24bfe506e299cdc8a7d3c35834099d7892ff83a9a3"
+      ],
+      "text": "The workspace combines chat, code editor, terminal, file tree, diffs, secrets, and git tools, and streams agent sessions with cancellation, permission prompts, queued follow-ups, file mentions, slash commands, and attachments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08fb405b72b2c0bb16a3104a6e87a82a3a492af034239a62dfddca91a2d4ebba",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 160,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L158-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f226969729fc2fb62a41e8c45facd85a1c2bfe2564293074ecfd2ad632e65fc7"
+      ],
+      "text": "The stack is React 19, TypeScript, Vite, Tailwind, Monaco, and xterm.js on the frontend; FastAPI, SQLAlchemy, SQLite, and Redis on the backend; ACP with Docker or host sandboxes at runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0acec8cdfb88ff976cc741d744f39dba0536401929f99dd575c56dfe8042c604",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 86,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L82-L86"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L69-L69"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 22,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L14-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47521fb5404081dc575af32cb60018bead74859f1c45d999092e06e327417613",
+        "slc_48ef70013b423f7f9b761ffce70998ab19fbfbdf79d7d21f3a6380c57f6ce64d",
+        "slc_a1f969dfc336c4501121fb24bfe506e299cdc8a7d3c35834099d7892ff83a9a3"
+      ],
+      "text": "Ships as a Docker web app, a macOS desktop app built with Tauri (bundled Python backend sidecar on a local port), and a native iOS thin client that talks to an already-hosted instance over https/wss."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5df732c136864cdf27d5792aff39630d5e6a1ba46458ccf8b5900c872f874cd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L51-L51"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 49,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L45-L49"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 61,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L59-L61"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L63-L63"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 43,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L42-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a2175888983b15b3ec974b8c8b5f952e6c99c45bbad831d70e7cbe0effff0ce",
+        "slc_68a69d517cad8dca38d6d4ca748fd84a6097868da40a52512977c597678b5a54",
+        "slc_7e9050746f6e6427cbc0658c33b57effcaffce4a81a455fcf51f45c93e0f2068",
+        "slc_9c7ba33d2d1af780114feabf2eb68af770f4916652270e5be2a53254de81fba3",
+        "slc_b855c94507ef4d53e11613de0140172c5448920e4bd55a7862c919aaa74a12fd"
+      ],
+      "text": "Quick start requires Docker and Docker Compose, cloning the repo, copying .env.example to .env, and setting SECRET_KEY before docker compose up -d; the app is served at localhost:3000."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5671a3f6ef07539da294b8bf459da43366c346462e0b584465486c03275d2679",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 121,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L118-L121"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 127,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L123-L127"
+        },
+        {
+          "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+          "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+          "line_end": 89,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "mng-dev-ai/agentrove",
+          "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md#L88-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25ccdcb5f09255cfd0d272531f3f3b2206c90c83719f1aad642122a8d8e221d1",
+        "slc_87ed7ac169894bcde405cad0e25fa19c88801c2c5661fdba163540aae8a645ee",
+        "slc_c4fd3a07e848df6c635cd09cc2a3c02dc7534b3f100669ae865fcef78c11246b"
+      ],
+      "text": "Repository development practice: building the iOS app from source requires macOS with Xcode, Rust iOS targets via rustup, and CocoaPods; a helper script (npm run ios:install) builds, signs, exports, and installs using APPLE_DEVELOPMENT_TEAM."
+    }
+  ],
+  "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 172,
+        "path": "README.md",
+        "size": 7878
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1114,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_8bbca29286d65027b419be71d4086955",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 4,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/mng-dev-ai/agentrove/53ef8fc0dea3a29005d341ad1031014aa07e56b8/7ceeacd8ec0fc1b5/manifest.json",
+  "package_id": "pkg_7b00bd5a9b363de5fd7fc5d5b7be8dc07c680d7374214cf6e8a2a34b20b51dae",
+  "repo": "mng-dev-ai/agentrove",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "82ccf62f65765afdeeb17f3c69a06d603cd4a936a87fc6b81f7f0cecb46206f9",
+  "snapshot_id": "7ceeacd8ec0fc1b5",
+  "sources": [
+    {
+      "commit": "53ef8fc0dea3a29005d341ad1031014aa07e56b8",
+      "git_sha": "eaf6def6d69ce6c8f2a7f081a984829ce08e5f4f",
+      "lines": 172,
+      "path": "README.md",
+      "repository": "mng-dev-ai/agentrove",
+      "sha256": "a1e693a66e25bc530cb2a270efb3ffaf95867171a406af10a38ede2fba13d159",
+      "source_id": "src_ff1230f396fb5ef7b368701f32d18a85",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Mng-dev-ai/agentrove/blob/53ef8fc0dea3a29005d341ad1031014aa07e56b8/README.md"
+    }
+  ],
+  "summary": "README-only evidence for Agentrove, a self-hosted workspace that orchestrates multiple coding agents via ACP adapters and a bundled MCP server, shipped as Docker web app, macOS desktop, and iOS client. No code inspected; claims are documentation-based.",
+  "superseded_claim_ids": []
+}

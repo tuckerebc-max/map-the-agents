@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_04115f1de140056c833e22ab498342411f9de61ca60aa63e2968b59a4ade8bd1
+- clm_1a4f339e0210a86bc4e23b93d223caaca7ad2520bcded444a04237244e5f46a5
+- clm_1c750b9b336d880065b98aed688d237d5809a58febc7c9f9727fed53b9e546d6
+- clm_205c2433ea579e7fdd152e073ee906bd80488a22dae6f41e58df9f1ac39e20a9
+- clm_7a850c1df144fadce442e2744c5c922febb1dc34891c4f7f157a06cf82e766c2
+- clm_8dd0b86d8f1e4d8a4df8ee6f1e48a4dbc79b588753a1de38e54b0f0aa69ff945
+- clm_920f6343a022061b8b5d9f07fe91db7fb124b9af002631696878221a63b251e4
+- clm_b81ae7fa3f3152a9d6025f167edc84cdfad7f682e8498cea7be248faf9102608
+- clm_c0d9169e44929b3b0cf7c5e748c6caef777c8e51f27820ae3172a39da74730a2
+maturity: draft
+page_id: pg_f5e6b08d89555413bd43596ed0045980
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: openai/codex
+updated_at: '2026-09-14T02:25:53Z'
+---
+
+# openai/codex
+
+<!-- rcw:begin owner=entity:ent_6c6940c83fe45b889dafdf13b888aa99 block=evidence -->
+- openai/codex is mentioned in this evidence. [@claim:clm_04115f1de140056c833e22ab498342411f9de61ca60aa63e2968b59a4ade8bd1] [@claim:clm_1a4f339e0210a86bc4e23b93d223caaca7ad2520bcded444a04237244e5f46a5] [@claim:clm_1c750b9b336d880065b98aed688d237d5809a58febc7c9f9727fed53b9e546d6] [@claim:clm_205c2433ea579e7fdd152e073ee906bd80488a22dae6f41e58df9f1ac39e20a9] [@claim:clm_7a850c1df144fadce442e2744c5c922febb1dc34891c4f7f157a06cf82e766c2] [@claim:clm_8dd0b86d8f1e4d8a4df8ee6f1e48a4dbc79b588753a1de38e54b0f0aa69ff945] [@claim:clm_920f6343a022061b8b5d9f07fe91db7fb124b9af002631696878221a63b251e4] [@claim:clm_b81ae7fa3f3152a9d6025f167edc84cdfad7f682e8498cea7be248faf9102608] [@claim:clm_c0d9169e44929b3b0cf7c5e748c6caef777c8e51f27820ae3172a39da74730a2]
+<!-- rcw:end owner=entity:ent_6c6940c83fe45b889dafdf13b888aa99 block=evidence -->
+
+## Researcher notes
+

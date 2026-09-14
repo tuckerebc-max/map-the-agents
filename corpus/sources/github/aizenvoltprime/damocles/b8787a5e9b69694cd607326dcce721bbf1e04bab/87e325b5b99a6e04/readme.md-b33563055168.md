@@ -1,0 +1,545 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AizenvoltPrime/damocles/main/resources/icon.png" alt="Damocles" width="128">
+  <h1>Damocles</h1>
+  <p>A powerful AI coding assistant, just keep in mind that just because something works doesn't mean it's good.</p>
+</div>
+
+## Screenshots
+
+<div align="center">
+  <img src="docs/images/chat-interface.png" alt="Chat interface with inline diff previews" width="800">
+  <p><em>Chat interface with Edit tool cards showing syntax-highlighted inline diffs</em></p>
+</div>
+
+<div align="center">
+  <img src="docs/images/plan-view.png" alt="Plan mode with implementation plan" width="800">
+  <p><em>Plan View displaying implementation plans for review</em></p>
+</div>
+
+<div align="center">
+  <img src="docs/images/subagent-view.png" alt="Subagent visualization with tool actions" width="800">
+  <p><em>Subagent View showing nested agent actions with real-time tool visualization</em></p>
+</div>
+
+## Features
+
+- **Chat Interface**: Integrated chat panel for conversing with the model, available as a secondary sidebar view (right side) or an editor panel (`Ctrl+Shift+U`). Both modes support all features and can run simultaneously with independent sessions
+- **Collapsible User Messages**: Long user-message bubbles collapse by default (canvas and pinned sticky header alike) with a chevron toggle. Expansion state follows the message across inline↔pinned transitions. Drag the handle below an expanded bubble to set the scroll-cap height. The value becomes the global default and persists across webview reloads. The pinned sticky header can also be hidden entirely via the `×` button; when hidden, a small floating pin chip at the top-right of the chat expands on hover to preview the active pinned message and click-to-restore. Hidden state persists globally via `damocles.pinnedHeaderHidden`. Queued / injected messages (sent mid-stream) are skipped by the sticky header and never pin
+- **Code Assistance**: Get help with coding, debugging, refactoring, and more
+- **Syntax Highlighting**: Shiki-powered code blocks with VS Code-quality highlighting and one-click copy
+- **Diff Approval**: Review and approve file changes with syntax-highlighted unified diffs (supports concurrent diffs)
+- **Inline Diff Preview**: Edit/Write tool results show inline diff previews with click-to-expand full-panel view
+- **Tool Visualization**: See what tools the agent is using in real-time with expandable details. Each completed tool card shows a subtle duration badge (`123ms` / `1.2s` / `1m 23s`)
+- **Live Shell Output**: A running `Bash` or `PowerShell` call streams into a scrolling pane on its card and in the overlay, so a slow build and a hung command stop looking alike. The pane keeps a bounded tail and says when earlier output was dropped. Works in the main session, in subagents and in team agents
+- **Stop One Command**: A running shell call gets a Stop button that ends that command and its children without ending the turn. The model receives whatever the command printed, so it can react instead of starting over, and the card reads Stopped rather than taking a success check. Stop can carry a note (Enter sends, Shift+Enter for a new line) that reaches the agent as your next message. The panel interrupt still aborts the whole turn
+- **Tool Overlays**: Click tool cards to view full output in a full-screen overlay, including from inside a subagent or team agent overlay; overlays stack in the order you opened them and Escape closes the top one. Supports built-in tools (Bash, PowerShell, Read, Grep, Glob, WebFetch, WebSearch, CodeSearch, FeedRead, YouTubeTranscript, ToolSearch, CronCreate, CronDelete, CronList) with syntax highlighting or markdown rendering, and MCP tools with markdown output and image rendering (base64 image blocks displayed as thumbnails with click-to-enlarge lightbox). Read overlays show a file metadata card with line range, total lines, and a progress bar for partial reads. Cron tool overlays show human-readable schedules, job IDs, recurring/one-shot badges, and job lists
+- **Subagent Visualization**: Nested view of `Agent` tool calls showing agent type, model, tool calls, results, and real-time progress summaries. Click the agent type or template badge to open its `.md` template. Background agents display a "Background" badge
+- **Background Tasks**: Track background agent tasks _and_ `run_in_background` Bash shells (e.g. "run `sleep 300` in the background") with a dedicated overlay showing status, elapsed time, progress summaries, token/tool stats, and stop/dismiss actions. Results appear as labeled assistant messages. Indicator pill in session stats shows active task count- **Streaming Responses**: Watch responses as they're generated
+- **@ Mentions**: Type `@` to reference workspace files or agents (`@agent-Explore`, etc.) with fuzzy search autocomplete
+- **Custom Agents**: Define custom agents in `.damocles/agents/*.md`, `.pi/agents/*.md` or `.claude/agents/*.md` (project) and `~/.damocles/agents/*.md`, `~/.pi/agent/agents/*.md` or `~/.claude/agents/*.md` (user). Project agents override user agents of the same name, and within one scope `.damocles` beats `.pi`, which beats `.claude`. They run as native nested agents via the `Agent` / `GetSubagentResult` / `SteerSubagent` tools, alongside the built-in `general-purpose` / `Explore` / `Plan` agents; a `run_in_background: true` frontmatter default makes a template always spawn in the background. A subagent runs on **your active panel model** unless its template pins one with `model:`. The spawning agent never picks a model, so that choice stays configuration you control (the `Explore` agent still follows `damocles.explore.*`). A `model:` that doesn't resolve, isn't signed in, or falls outside the `enabledModels` allowlist fails the spawn and names the template to fix, rather than silently running on a different model. An agent whose `tools:` list has no write tool (the built-in `Explore` and `Plan`, or your own) is held to read-only commands in `Bash`/`PowerShell` too: a heredoc, `tee`, or `cp` is refused, so "read-only" holds in every permission mode rather than only in plan mode. "Read-only" bounds *writes*, not research: such an agent still gets the web tools, the integrated browser tools and your MCP tools (none is write-category), and the built-in `Explore`/`Plan` carry the full browser toolset when `damocles.browser.enabled` is on
+- **Steer Subagents**: Redirect a running or queued background subagent mid-task with `/steer`. Pick the target from a live agent picker, type your instruction, and it becomes the subagent's top priority immediately (it drops its current approach to follow it). Your steer shows as an amber chip in the transcript and echoes inside the subagent's live view; the model can steer its own subagents the same way via the `SteerSubagent` tool
+- **Voice Input**: Three modes via `damocles.voice.mode`:
+  - **`off`.** Voice disabled, mic button hidden.
+  - **`push-to-talk`** (cloud STT). Click the microphone in the chat input to dictate messages. Supports OpenAI Whisper, Deepgram, and Google Cloud STT. Audio is recorded extension-side using native platform APIs (Windows/macOS/Linux) and transcribed via your configured provider. Configure provider, API key, and language in the settings panel.
+  - **`wake-word`** (local Jarvis), hands-free. Say *"Hey Jarvis, …"* and Damocles transcribes once you stop speaking; optionally speaks the assistant's reply aloud. A Python sidecar runs OpenWakeWord + Silero VAD + Parakeet TDT 0.6B v2 ASR + optional VibeVoice-Realtime TTS. **Fully on-device: no audio bytes or transcript text ever leave your machine.** Wake phrase is stripped before transcription via a two-layer defense (ASR offset + regex). VRAM ~3.7 GB with TTS, ~2.2 GB without; CPU fallback automatic. On Linux/macOS the installer surfaces actionable per-distro commands if a C++ toolchain or PortAudio is missing (`apt install build-essential libportaudio2` on Debian/Ubuntu/WSL, `brew install portaudio` on macOS, etc.); on WSL2 with a CUDA GPU it falls back to `/usr/lib/wsl/lib/nvidia-smi` for driver detection. Full guide: [`docs/voice-jarvis-mode.md`](docs/voice-jarvis-mode.md).
+
+  **Note:** Requires local audio hardware. Not available when connected to a remote host via SSH (the extension host runs server-side where no microphone is present).
+- **Image Attachments**: Paste images from clipboard directly into chat (supports PNG, JPEG, GIF, WebP up to 5MB)
+- **IDE Context**: Automatically include the active file or selected code in your message (toggleable in input bar); a workspace default (`damocles.ideContext.enabled`) controls whether the chip starts on in new panels
+- **Slash Commands**: Type `/` for built-in commands (`/clear`, `/compact`, `/rewind`, `/btw`, etc.) and custom commands from `.damocles/commands/`, `.claude/commands/` and `.codex/prompts/`
+- **Prompt History**: Navigate previous prompts with arrow keys (shell-style)
+- **Prompt Navigator**: `Ctrl+K` / `Cmd+K` opens a searchable overlay listing every user prompt in the active session. Each row shows index, time, tools invoked during the response, and a kebab menu with Copy / Use as draft / Rewind to here. Type to fuzzy-match prompt text or tool names; arrow keys navigate, Enter jumps to the bubble in the canvas (with a primary-color flash ring), Escape closes. The header chip shows live prompt count plus the platform-correct keybind (`⌘K` on macOS, `Ctrl+K` elsewhere). Each user bubble also exposes the same actions via a hover-revealed kebab so mid-canvas navigation never requires the overlay
+- **Session Management**: Create, rename, tag, resume, delete, and search sessions with confirmation. Names/tags persist as in-tree session markers; tags show as badges in the session picker
+- **Panel Persistence**: Panels and active sessions survive VS Code restarts
+- **Multi-Panel Sync**: Prompt history syncs across all open panels instantly
+- **Context Stats**: Live tracking of token usage, cache activity, context window %, and session cost. Context % reflects the current turn's occupancy (the latest assistant message's input + cache). "View Details" button opens the Context Usage Overlay, a full-screen view with SVG ring chart, stacked category bar, per-category breakdown, collapsible message breakdown (user/assistant/tool calls/results/attachments with per-type drilldowns), detail sections for MCP tools, memory files, agents, system prompt sections, system tools, deferred tools, skills, and slash commands, auto-compact threshold badge, and API usage footer. Every tool row is costed by its description **plus** its serialized schema, and each is badged **Loaded** or **Deferred**; the `Tools (deferred)` category is what deferral is saving rather than context you are spending, so it is shown muted and excluded from the stacked bar, which continues to sum to the headline total. Every list is sorted alphabetically (locale-aware, so it follows your active language) rather than by discovery order, so an entry stays where you last found it. Also accessible via `/context`
+- **Subscription Usage**: `/usage` opens an overlay with a progress bar per rate-limit window for both providers: Claude (session/5-hour, weekly, and the current model-scoped weekly) and ChatGPT/Codex (5-hour + weekly on premium, or a single monthly window on free), each with a live "resets in" countdown, plus extra-usage/credit spend and a GPT plan badge when available. Read live from each provider's usage endpoint via your existing subscription OAuth; no API key, and access tokens are never logged. Opens mid-stream and refreshes on demand
+- **Session Logs**: Quick access button to open the raw JSONL session file (also works for subagent logs)
+- **Model Selection**: Switch between Anthropic models (Fable 5.1, Opus 5 by default, Opus 4.8, Sonnet 5, Haiku 4.5), OpenAI Codex models (`gpt-5.6-sol` the recommended default, `gpt-5.6-terra`, `gpt-5.6-luna`), and custom-provider models (StepFun **Step 3.7 Flash**, **DeepSeek V4 Pro / V4 Flash**) from one unified dropdown. All Codex models work via ChatGPT subscription or API key. Per-panel selection plus a workspace-wide default for new panels
+- **OpenAI / GPT Backend**: GPT models run natively alongside Anthropic models via two pi-owned auth paths (credentials in its Damocles-owned `auth.json`): ChatGPT/Codex OAuth and `OPENAI_API_KEY`. Codex wins when both are set; `damocles.openai.preferApiKey` inverts it. Per-panel selection with a workspace default; backend-aware cost display (`Input | Cached Input | Output | Reasoning`) with configurable per-model pricing
+- **StepFun / DeepSeek Backends**: StepFun (Step 3.7 Flash, step-plan flat-fee subscription) and DeepSeek (V4 Pro / V4 Flash, per-token metered) run natively as main-dropdown models. Each has a dedicated API-key panel in Settings; keys live in SecretStorage and reach pi via the native custom-provider path (no reload). Selecting an unauthed model emits a "Sign in to {provider}" toast. The StepFun key is shared with the Explore StepFun provider, one source of truth kept in sync across both UIs. DeepSeek is dollar-budget-enforced like other metered providers; StepFun's flat subscription is exempt
+- **Adaptive Thinking (per-panel)**: Model-aware thinking configuration driven by model-reported capabilities. Adaptive models use configurable reasoning effort whose available levels depend on the model: GPT-5.6 (Sol/Terra/Luna) offers Low/Medium/High/Extra High/Max, the flagship Anthropic models (Fable 5.1, Opus 5, Opus 4.8, Sonnet 5) add **Ultracode** as a top tier above Max, and StepFun Step 3.7 Flash offers Low/Medium/High; legacy models use the classic toggle + token budget (1K-64K). **Ultracode** is the highest reasoning-effort level (maximum thinking); selectable per-panel or as a default for new panels (listed after Max), and applies only to those flagship Anthropic models (not to OpenAI/Codex models). The **Max** level is native as of pi 0.80.6 and available on GPT-5.6 and the adaptive Claude models. Each panel has independent reasoning state: a `thinkingDisabled` flag plus a per-(panel, model) matrix of effort and max-tokens, so switching models within a panel preserves prior intent. Flip back to a previously-configured model and its effort/tokens restore automatically. Settings panel splits into four sections (`This Panel` / `Defaults for New Panels` / `Workspace` / `Voice`); the panel and defaults reasoning blocks track different model dimensions independently, so switching the active model in the panel section never drags the defaults section's effort capabilities along with it. Workspace defaults persisted via `damocles.thinkingDisabled` / `damocles.effortByModel` / `damocles.maxThinkingTokens`. Thinking blocks always visible (`display: 'summarized'` overrides Opus 4.8's `omitted` default)
+- **Per-Panel Permission Mode**: Each panel can have its own permission mode independent of the global default
+- **YOLO Mode**: Toggle to auto-approve all tool calls (except plan approval and questions). Ephemeral per-panel setting that resets on session clear; a workspace default (`damocles.dangerouslySkipPermissions`) seeds it for new panels.
+- **Custom Permission Rules**: Define persistent allow/deny rules for tools in Claude Code CLI-compatible settings files. Rules support pattern matching (e.g., `Bash(git:*)`, `Edit(*.ts)`). Permission prompts include "Always allow" and "Always deny" options that save rules to your chosen settings file.
+- **Hooks**: Run your own command at key moments: before/after a tool, on prompt submit, on completion, or when the agent is waiting for approval, via a config-driven `.damocles/hooks.json`. The contract is Damocles' own: the child gets one JSON object on stdin (snake_case keys, a uniform tool schema) and replies with one JSON object on stdout (`{"decision":"deny"}` to block; a non-zero exit never blocks). A `tool_call` hook can block, force-allow, or rewrite a tool call (and optionally end the turn with `"terminate": true`); activation is by presence (no toggle), gated by workspace trust, and every block/force-allow is logged and surfaced in chat. Full guide: [`docs/hooks.md`](docs/hooks.md).
+- **Subagent-Scoped Accept All**: When you click "Accept all edits" on a subagent's permission prompt, only that subagent is auto-approved. The global session mode stays unchanged. Each subagent can be independently auto-approved without affecting the main session or other subagents.
+- **Plan Mode**: When enabled, the agent creates implementation plans for your approval before making changes. Plans are decomposed into **vertical slices**, each cutting end-to-end through every layer to deliver one small, independently testable behavior rather than horizontal layers. Review plans in a modal, approve with auto-accept or manual mode, or request revisions with feedback. Dismissing the overlay (Escape) hides it without canceling. Click the tool card to reopen, or press Escape again to reject. While planning, the agent writes and continuously maintains its plan as markdown at a deterministic per-session path (`~/.damocles/plans/<slug>-<id8>.md`), the only native write permitted in plan mode (read-only shell commands such as git status/log/diff, ls, cat, grep, and `cd`, plus stdout-only readers like `tac`/`rev`/`od`/`strings`/`base64`/`column`, are allowed. `cd <dir> && <read-only command>` works and output may be discarded with `2>/dev/null`, `>/dev/null`, or `>/dev/null 2>&1`, while every other redirection, non-read-only shell, and every Edit/Write outside the plan file stay blocked). Enabled MCP tools remain fully available while planning, so the agent can still look things up (e.g. Context7 docs). The per-server enable/disable toggle is the control. The integrated browser's tools are available while planning too when `damocles.browser.enabled` is on, so research can drive a running app or a live page. Plan mode's guarantee is no unapproved workspace writes and no unapproved shell, not "no side effects anywhere", and it now states what it *blocks* rather than re-listing what it permits, so a newly added tool subsystem is usable while planning by default. That file is the single source of truth: the approval overlay, the saved plan, and the implementation handoff all read the full plan from it (approval is blocked until the plan file is written), and the completed plan card's **View plan** button opens it. View the session plan anytime via the header button. Plan mode also deterministically funnels every turn through `ExitPlanMode`: if the agent stops without exiting, it is automatically nudged to call `ExitPlanMode`, ask via `AskUserQuestion`, or keep planning, so a plan turn never ends silently without your approval (press Stop or leave plan mode to break out)
+- **Clear Context & Auto-Accept**: Plan approval option that clears conversation context and starts fresh with the plan injected (matches Claude Code CLI behavior). Preserves planning session as reference while implementation runs in a clean session. The overlay header shows a context usage badge with threshold-based colors so you can make an informed decision
+- **Bind Plan to Session**: Inject a custom plan file into the session via the link icon in the header. It writes the plan to the session's deterministic plan-file path (overwriting an existing one in place) and confirms with a toast. No agent turn is spent. The agent reads the plan from that path, which is injected into the system prompt every turn.
+- **File Checkpointing & Session Forking**: Track file changes and rewind to any previous state, or fork the conversation into a new panel without touching the source. Three entry points: the Rewind Browser (`/rewind`), the inline rewind button on any user message bubble (hover to reveal), or `Escape Escape`. The Restore Options modal offers three actions: **Fork conversation** (new panel branched at the selected message; source untouched), **Roll back files** (restore the workspace; conversation stays linear), and **Fork and roll back files** (both). The "files affected" list is the **live diff** between the workspace now and the checkpoint, so files you deleted since are flagged for restore; clicking a file opens a VS Code side-by-side diff. This is backed by a per-session shadow git repo, kept entirely separate from your real repo. A hard restore recreates deleted files and drops ones created after. Forked panels inherit the source's settings, hydrate history up to the fork point, and pre-fill the rewound prompt. A background sweep (shortly after activation, then roughly daily) keeps these shadow repos small, non-destructively repacking each one so per-turn snapshots delta-compress (rewind history stays fully intact) and reclaiming the whole repo for any session idle beyond `damocles.checkpoints.retentionDays` (default 30; `0` keeps history forever)
+- **Rewind to Before Compaction**: After a conversation is compacted, recover the full pre-compaction context. The compaction boundary card carries a **Rewind to before compaction** action, and compaction points also appear in the Rewind Browser (`/rewind`) alongside prompt anchors. Because Damocles captures a workspace snapshot at each compaction, a compaction point is a **full rewind anchor**: selecting one (from either entry point) opens the Restore Options modal with file counts and per-file diffs, so you can roll workspace files back to the at-compaction state, fork the complete un-summarized conversation into a new panel, or do both. The picker marks these anchors with a file-count badge. Older sessions with no captured snapshot keep the conversation-only fork (source untouched). Works for manual (`/compact`) and automatic compaction, on live and resumed sessions. A confirmation notes that turns taken after the compaction aren't carried over and that the restored (large) context may re-trigger auto-compaction
+- **Side Questions (`/btw`)**: Ask ephemeral side questions that share conversation context without interrupting the main session. Token-efficient via prompt caching, so only the question and response are new tokens. Responses appear in dismissable inline aside bubbles with markdown rendering, visually distinct from the main conversation. Not persisted to session history
+- **Task List**: Visual display of the agent's current tasks with status tracking, dependencies (`blockedBy`), and active form indicators
+- **Message Queue**: Send messages while the agent is working - they're injected at the next tool boundary
+- **Parked Session Indicator**: A session waiting on you reads as waiting, not as working. A run parked on a tool approval, an `AskUserQuestion`, a browser input request, a plan or skill approval, or an MCP elicitation shows a pulsing warning indicator and returns to working the moment you answer, including for a dialog raised by a team agent
+- **Manual Compaction (`/compact`)**: Summarize the conversation on demand to reclaim context, optionally focusing the summary with an instruction (`/compact <instructions>`). Gated to idle. Finish or stop the current turn first. The compaction boundary and restored context surface inline in the chat
+- **Auto-Compact**: Optional automatic context compaction (`damocles.autoCompact`; opt-in, disabled by default). Triggers a compaction once context usage crosses `triggerPercent` of the window to prevent overflow. Applies uniformly to every provider. GPT sessions compact only when you enable it, same as Anthropic
+- **Compaction Transparency**: The transcript says what a compaction did. A boundary card names the trigger (manual, threshold, or overflow) and, with `damocles.showCacheMissNotices` on, what the compaction itself billed. A compaction that aborted or failed leaves a card saying so and whether a retry is coming, instead of clearing its banner in silence
+- **Persistent Memory**: Every memory has a **kind** (`fact`, `preference`, `observation`, `note`, `episode`) and a **scope** (`session`, `project`, `global`), stored in SQLite via Node's built-in `node:sqlite` (WAL mode, `~/.damocles/memory.v3.db`; your v2 data is imported once on first run). No native modules or WASM, so it works cross-platform without compilation. Memories survive compactions and sessions, giving the agent continuity across conversations. Uses a **pull-first catalog model**: each prompt receives a compact relevance-ranked catalog (~300-800 tokens) of available memories, and the agent retrieves full details on demand via `get_memory_details`. This matches how CLAUDE.md works, a reference the agent consults selectively, and eliminates token displacement from irrelevant auto-injection
+- **Automatic Memory Extraction**: After a conversation goes idle (or on session switch), a background pass extracts durable facts, preferences, and episodes from the turns, deduping exact and near-duplicate content, resolving contradictions, and decaying time-bound episodes (~30-day TTL, promoted when reused), so memory accrues without manual `/remember`. Runs on a cheap model; crash-safe (a batch is never lost mid-extraction). Gated by `damocles.memory.autoExtract.enabled`
+- **Fact Graph & Versioning**: Facts evolve through `UPDATES` / `EXTENDS` / `DERIVES` / `SUPERSEDES` edges. When a fact is updated the old version is retained (not deleted) and browsable via `get_memory_history`; `get_related_memories` traverses the graph. `forget_memory` drops a memory by id or content, by default forgetting the entire version chain so an older version cannot resurface
+- **User Profile**: A short auto-maintained summary of you: a static section plus a recent-activity dynamic section, per project and global scope, regenerated during consolidation and injected once at the start of each session. Edit it inline in the Memory Panel; budget via `damocles.memory.profile.tokenBudget`
+- **Pinned Memories**: User-designated memories that are always injected in full content, bypassing the catalog. Pin/unpin via the overlay UI. Configurable budget (default 500 tokens)
+- **Retrieval Tracking**: When the agent calls `get_memory_details`, retrievals are recorded and fed back into catalog ranking. Memories the agent actively uses rank higher in future catalogs, a closed feedback loop
+- **Observation Staleness**: When source files referenced by an observation are modified, the observation is automatically marked stale. The agent sees `[stale]` tags in context and can verify whether the observation is still accurate, then mark it fresh via the `reset_observation_staleness` MCP tool
+- **Memory Commands**: `/remember <text>` saves session memory (prefix `project:` or `global:` for broader scope), `/note <text>` saves to a searchable knowledge base, `/memories` opens the management panel
+- **Observations**: The agent voluntarily records rich observations via MCP tool after significant work, as structured entries with type, title, narrative, facts, tags, and file paths. Zero additional API cost
+- **Memory Tools**: 10 native in-process tools for the agent: `save_memory`, `save_observation`, `search_memories` (semantically reranked), `get_memory_details`, `get_memory_history`, `get_related_memories`, `forget_memory`, `save_note`, `list_notes`, `reset_observation_staleness`. Progressive disclosure keeps token usage efficient
+- **Smart Session Handoff**: New sessions automatically receive the previous session's summary and top-ranked observations from recent sessions, weighted by file proximity to the active editor
+- **Memory Panel**: Full-screen overlay for browsing, creating, deleting, pinning/unpinning, forgetting, and searching memories, with kind/scope filter chips, a forgotten toggle, version-history and related-memories dialogs, and an inline editor for the auto-maintained user profile. Pinned memories show an amber left-border accent
+- **Consolidation Panel**: A header pill beside the prompt navigator opens a live view of the consolidation pipeline, a five-phase stepper (Claim → Extract → Persist → Maintain → Profiles) with honest progress (indeterminate sweep for the slow Extract LLM call, a determinate `x/y` counter for Persist), the conversation turns queued for the next pass, and the last pass's extracted memories with outcome badges, an Auto/Manual trigger chip, and a relative timestamp. A failed pass shows a distinct failure card with **Retry now** (and **Sign in to a model** when no extraction model is authed), separate from the neutral "nothing new to remember" state; failures also surface as an error dot on the toolbar icon while the overlay is closed. A **Run now** button triggers consolidation manually. Memory extraction runs on your Settings → Explore model (falling back to the provider-matched small/fast model)
+- **Injected-Context Viewer**: Each user message has a "View context" pill that opens an overlay showing exactly what was provided to the model for that prompt. A **Memory** tab lists the injected memories with per-entry relevance scores and the FTS query used, so you can see why each memory surfaced
+- **Collaborative Teams**: Multi-agent team system where 2-5 specialist agents collaborate in real-time on complex tasks. A lead agent orchestrates by spawning specialists with domain expertise profiles, coordinating via direct messaging, sharing decisions on a scratchpad, and synthesizing a final result. `create_team` takes a required **`brief`** (the authoritative statement of what to build and why) alongside a short `title` label; the brief is seeded verbatim into an immutable `mission-brief` scratchpad section before any agent spawns, and the lead can't spawn a specialist until it has read it, so the authoritative intent always reaches the whole team instead of the lead inventing an architecture. A specialist that finds anything in conflict with the brief **hard-stops** and flags it (`team_flag_brief_conflict`); the lead reconciles it (revise or dismiss-with-rationale) or escalates the fork to you via `AskUserQuestion`. A flagged conflict can never be silently dropped: synthesis is mechanically blocked while one is open, and any completion that still carries an unresolved conflict is prepended with a prominent "⚠️ UNRESOLVED BRIEF CONFLICTS" block. The lead spawns each specialist with a `kind` (`implementor` or `reviewer`) that selects which role settings apply. **You** choose the model and reasoning effort per role (lead / implementor / reviewer) via the six `damocles.team.*` settings. The AI never picks team models. Leave a model empty to use the active panel model, and leave an effort empty for the model default. Any catalog model works for any role, including across providers (e.g. reviewers on a different model than implementors); a role configured to a model whose provider isn't signed in fails team creation up front with a clear message naming the setting and model. The engine guarantees liveness without timers: a specialist can't silently end its turn without reporting (it's nudged, then forced into review where the lead can revise or approve it), messaging a dead or unspawned agent fails loudly with recovery guidance, the lead can re-run a failed or cancelled specialist with `team_redispatch_specialist` (same card, transcript preserved), and a lead that abandons an open review round gets bounded re-notifications before the team force-completes with a clearly marked partial result. A team run always returns. 91 bundled agent profiles across 8 categories (Engineering, Design, Testing, Security, Product, Project Management, Specialized, Game Development) give specialists genuine domain knowledge. Agents don't interrupt each other: a scratchpad write wakes only a specialist parked in `standby`, while a working agent pulls shared state when it needs it. The Timeline still records every write. Both terminal tools end the turn from the engine rather than trusting the model to stop, so a parked specialist costs nothing until a teammate wakes it, and `team_report_complete` carries the sign-off as an argument instead of paying for an extra request to write one. Re-reading a scratchpad section at a version you already hold returns a short marker instead of its text. Each role is registered only for the tools it can call, 13 for the lead and 9 for a specialist. Cost on each card is labelled by the model that agent actually ran on, and on a flat subscription it reads as an estimate (`~$0.42 est.`) rather than a charge. A shared **verification ledger** (`team_record_verification`) lets one agent's test run count for the whole team: each entry is stamped with a fingerprint of the working tree that **Damocles computes from git**, never the agent, so a peer can skip a provably redundant run, and any edit changes the fingerprint, so a stale pass can never be reused. Cross-review follows the lead's contract, so specialists whose work never touches don't manufacture feedback for each other. TeamCard in chat shows live status; TeamOverlay provides full details (Agents, Timeline, Scratchpad, Result tabs). Each agent's tool calls render as full cards with readable names (`Write scratchpad`, not `team_write_scratchpad`), live shell output and a Stop button, and they open into the tool overlay like any other card. All agent communication and every tool result is persisted to JSONL, so a team reopened from history shows what each tool returned. Each Damocles panel owns its own team runner, so multiple panels can run independent teams concurrently without cross-interference. Disabled by default; enable via `damocles.team.enabled`
+- **Compass, the workspace knowledge graph**: Converts your workspace into a persistent, queryable knowledge graph via tree-sitter AST extraction across 15 languages (Python, JS/TS/TSX, Go, Rust, Java, C, C++, Ruby, C#, Kotlin, Scala, PHP, **Vue SFC**). Backed by SQLite via Node's built-in `node:sqlite` (FTS5), so the graph survives VS Code restarts with zero re-indexing. The agent queries the graph via 8 MCP tools: **core** (`compass_search`, `compass_query`, `compass_context`, `compass_stats`), **impact** (`compass_blast_radius`, `compass_review_context`), **analysis** (`compass_dead_code`), and **admin** (`compass_build`). `compass_review_context` auto-detects changed files via git when no file list is provided. Every `compass_query` response states what the target resolved to (name, kind, `path:line`), lists alternate matches on ambiguity, and flags empty relationship results for verification, so a "none" is diagnosable rather than silently wrong. Key capabilities: FTS5 BM25 search with camelCase/snake_case tokenization (plus parent-class and directory tokens, so a query naming a class surfaces its methods), blast radius analysis (BFS from changed files through all edge kinds, bounded non-lossily on hub nodes), risk-scored review context (flow-criticality-weighted impact + test gaps + affected flows, with a context-savings estimate), test-coverage edges (`tests_for` / test-gap risk, derived from tests that call production code, recognizing Rust `#[test]`, PHPUnit camelCase, and `@Test`/`[Fact]`-family annotations, with a class-name fallback for DI-heavy tests), dead-code detection (unreferenced functions/classes, excluding entry points and framework-managed classes; constructor/static calls and type-hint/DI-injected dependencies are now tracked across all languages, so constructor-injected services aren't false-flagged), execution flow tracing with criticality scoring (framework decorators and entry-name conventions across 15+ stacks; test files excluded from production flows), and Louvain community detection (adaptive resolution scales inversely with graph size; directory-based fallback above 20K nodes). Interactive D3 force-directed graph visualization in the webview with community coloring, blast radius overlay, and click-to-navigate. VS Code sidebar tree view, search panel, validation panel (broken edges, orphans, stale files), editor gutter decorations for blast radius, and status bar. Incremental updates are watcher-fed, so newly created files are indexed within seconds without a rebuild (large bursts like branch switches fall back to one git diff), with SHA-256 caching, transitive dependent invalidation, and a WAL checkpoint skipped when the graph hasn't changed. Resilient by design: a corrupt graph cache self-heals on startup, and repeated worker crashes trip a circuit breaker ("Compass failed. Run Rebuild to retry") instead of looping. Works correctly on Windows (drive-letter casing, `/`-style `excludePatterns`) and in monorepos where the workspace is a subfolder of the git repo. All tools support `detail_level` (minimal/summary/full) for token efficiency. Withheld entirely in a workspace you have not trusted, because indexing reads every file in the tree and runs git inside the repository, where the repository's own `.git/config` decides what git executes; in that state there is no index, no file watcher, no sidebar views and no Compass tools, and granting trust starts it with no window reload. Disabled by default; enable via `damocles.compass.enabled`
+- **Damocles Browser**: Integrated browser automation inside VS Code. Every open page is its own editor tab with its own toolbar (back, forward, reload, URL bar, element picker, DevTools, new tab), so you can split or drag browser tabs like any other editor and both panes keep rendering live. Runs on **Patchright**, a stealth-hardened Chromium/Playwright engine that never calls `Runtime.enable` (the biggest CDP automation tell), scrubs the automation user-agent, and drives interactions through Playwright locators, so bot-protected pages load normally. The agent gets a full tool set for navigation, interaction (click, type, fill, select, hover, drag, upload), and reading (screenshot, DOM query, snapshot, evaluate), plus multi-tab control (`BrowserTabs` for list/open/switch/close), file downloads (`BrowserDownloads`), and request interception/mocking (`BrowserIntercept`). **`BrowserRequestInput`** asks *you* to fill a form (login, MFA/OTP, payment) whose values are injected straight into the live page and are never seen by the model, logged, or persisted. Press Enter or click Submit. Each subagent and team agent drives its **own isolated tab** (the main agent and you share the primary one), so concurrent agents never clobber each other's page: `BrowserTabs` and `BrowserClose` only see the calling agent's tabs, and an agent's tabs close automatically when it succeeds but stay open after a failure so you can inspect the page. Element picker attaches DOM/CSS/screenshot context to chat. `BrowserConsole` reports what the page actually logged, captured by an in-page bridge, since the CDP console API is one of the automation tells Patchright disables. It also reports any `alert`/`confirm`/`prompt` Damocles auto-answered on the agent's behalf, so an accepted dialog is never silent. Everything a page produces is **credential-redacted at capture**: values under credential-shaped keys and self-identifying token formats (JWT, `Bearer`, PEM keys, vendor-prefixed keys) never enter the transcript or the session file, and a picked password field is masked rather than attached. Each tab shows the live title and favicon; a self-healing screencast watchdog recovers a stalled view, and if Chrome exits unexpectedly the browser tabs close with a notification. Pages a site opens itself, `window.open` and `target="_blank"` links, are captured as tabs. Disabled by default; enable from the MCP status panel toggle or via `damocles.browser.enabled`. **DevTools port:** the browser launches with a DevTools debugging port on by default, an unauthenticated loopback endpoint that any local process can attach to and drive the browser as you, with your logged-in profile. It exists only to power the toolbar's DevTools button; `damocles.browser.devToolsPort` turns it off, and a relaunch is required because it is a launch-time Chromium flag. Note this is disclosure plus an escape hatch, not a hole being closed: a local attacker with that access could already read the browser profile off disk, CDP has no authentication to add, and the endpoint is already loopback-only. **Known limitation:** popup-based "Sign in with Google" / Apple / Microsoft windows attach as tabs but headless Chromium does not paint popup surfaces ([Chromium 696439](https://crbug.com/696439)), so there is nothing to click; same-window OAuth that redirects the parent page is unaffected. For popup providers, sign in via your normal browser before bringing the URL into the panel.
+- **MCP Elicitation**: MCP servers can request user input during tool execution. Form mode renders JSON Schema-driven fields for structured input, URL mode opens an external browser for OAuth flows. Prompts appear above the chat input with Accept/Decline actions. A prompt raised during a **subagent's or team agent's** call renders in the spawning panel, labelled with the agent that asked; concurrent agents queue one at a time, and an agent that ends withdraws its own prompt. With two calls in flight on one server the dialog names only the server, because MCP cannot say which call elicited
+- **MCP Server Management**: The MCP client is **native**. Servers are merged from six sources, each row badged with where it came from, lowest precedence first: read-only imports of your Claude Code / Claude Desktop config and of `~/.codex/config.toml` (ties broken by `damocles.assetSourcePrecedence`), then Claude Code's **local** scope for this project (what a plain `claude mcp add` writes, under `projects[<workspace>]` in `~/.claude.json`), then your own `~/.damocles/mcp.json`, then the project's `.mcp.json`, then your personal `<workspace>/.damocles/mcp.local.json`, which wins. **Add, edit and delete servers from the panel**. Only `~/.damocles/mcp.json` is ever written, so every other source is read-only and carries no Edit/Delete button. `~/.claude.json` is deliberately not watched, because Claude Code rewrites it continuously and each write would cycle your live connections, so the panel has a **Reload config** action that re-reads every source on demand. `.damocles/mcp.local.json` is meant to be personal and gitignored; when git is not ignoring it the panel warns and names the line to add, the warning clears as soon as you add it because `.gitignore` is watched too, and Damocles never edits your `.gitignore` itself. The check is skipped in a workspace you have not trusted, because running git there would run configuration the repository ships, and it gives up after ten seconds so a wedged filesystem cannot hold up session start. In a workspace you have not trusted, the two sources a repository could have authored (`.mcp.json` and `.damocles/mcp.local.json`) are listed with an untrusted badge and do not connect, while the rest still do. A config file that exists but cannot be parsed is reported by name and line with a button to open it at the fault, rather than its servers silently disappearing. Servers connect over stdio or streamable-HTTP, expose each tool as `mcp__{server}__{tool}`, and authenticate via OAuth (PKCE) where required. Enabled servers are **supervised**: they stay connected for the session and auto-reconnect when a connection drops (detected via the SDK's `onclose`), with a crash-loop throttle and config-change re-validation so a reconnect never resurrects an orphaned child process. Opt out per server with `lifecycle: "lazy"` (connect-on-use) or an explicit `idleTimeout`. Enable/disable servers from the UI with the disabled set persisted to Damocles workspace state (`damocles.mcp.disabledServers`); the whole subsystem toggles via `damocles.mcp.enabled`. Status panel shows per-server tool counts with expandable details and annotation badges (read-only, destructive, network), error messages for failed servers, and per-server actions: reconnect, authenticate, and, on a connected OAuth server, **Re-authenticate** (clear the token and log in fresh) and **Sign out** (clear the token and disconnect). Sign-out evicts the server's cached tools so the agent can no longer call them and best-effort revokes the token server-side (RFC 7009) where the auth server supports it
+- **Web Tools** _(opt-in)_: Five native, **key-free** read-only tools: **WebSearch** (an answer with cited sources, with optional category / domain / publish-date filters via Exa's advanced search), **WebFetch** (read a web page or PDF as markdown, with `raw` / `maxChars` / `includeLinks` / `includeImages` controls), **CodeSearch** (search public source code and docs), **FeedRead** (read an RSS 2.0 or Atom feed as markdown), and **YouTubeTranscript** (best-effort video transcript when captions are available, though YouTube may block it). WebSearch/CodeSearch are backed by Exa's free endpoint; no API key or config required. WebFetch extracts HTML via Readability, reads PDFs inline, and falls back to the `r.jina.ai` reader for JavaScript-heavy pages; every outbound fetch is validated to block internal/loopback/cloud-metadata addresses. All five are read-only, available in plan mode and inherited by `tools: *` subagents. They start **deferred**: their schemas are not in the prompt until the agent loads them with `ToolSearch`, so a turn that never searches the web costs nothing for them. See **Deferred Tool Loading**. Enable via `damocles.pi.webSearch.enabled`; the toggle takes effect on the next turn with no install or reload
+- **Hooks Support**: Claude Code hooks (shell commands that run on events like tool calls) work automatically
+- **Deferred Tool Loading**: The browser, Compass, web and MCP tools start registered but **inactive**, so their schemas are not in the prompt on turn one. A conversation that never touches them never pays for them. The agent loads a group on demand with the always-active `ToolSearch` tool, and the tools are callable from its next step. The menu it reads is built from live workspace configuration, so a subsystem you disable mid-session drops out of it rather than staying advertised. What this saves depends on your provider: a tool never loaded always costs nothing, but on the default Anthropic allowance path (where the `pi-anthropic-oauth` plugin implements no native deferral) *loading* a group mid-conversation invalidates the cached prompt prefix for that request. Subagents and team agents resolve through the same deferral, so no agent kind is a hole. `/context` shows the split. See **Context Stats**
+- **MCP for subagents and team agents**: Every nested agent gets the panel's full eligible MCP set, deferred like the panel's, and loads a server's tools with its own `ToolSearch`. The grant is **uniform**: `Explore`, a `tools: *` agent and a team specialist all get the same set, because MCP tool names depend on which servers *you* configured, so no template can name them without hardcoding something your config breaks; `disallowed_tools` is the opt-out (exact, case-sensitive). An agent's set is **frozen at spawn**: a server connected mid-run reaches the next agent, not a running one, and a tool its server stops advertising is reported gone rather than worth retrying. Read-only agents reach MCP under the panel's rules, so an annotated read-only tool runs, anything else asks you first
+- **Tools Panel**: A status panel listing every agent tool grouped by subsystem (core, memory, compass, browser, web), each with a per-tool enable switch and a per-subsystem master switch. Core built-ins are locked on; memory/compass/browser/web tools toggle. Opens from the tools indicator in session stats
+- **Skills Support**: Approve or deny skill invocations. Skills are discovered from your Damocles dirs (project + user `.damocles/skills/`, `.claude/skills/` and `.codex/skills/`) and merged into the slash-command list alongside the built-in commands. `.damocles` wins any name collision; between `.claude` and `.codex`, `damocles.assetSourcePrecedence` decides. In an untrusted workspace the project-scope entries are listed with an untrusted badge and refuse to run until you trust the workspace
+- **Localization**: UI translated into multiple languages, automatically matches VS Code's display language
+
+## Installation
+
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run build`
+4. Press F5 in VS Code to launch the Extension Development Host
+
+## Usage
+
+- Open the Damocles sidebar view in the secondary sidebar (right side), or click the Damocles icon in the editor title bar (top right) to open a panel
+- Type your question or request in the chat input
+- Press Enter to send (Shift+Enter for new line)
+- Review any file changes in the diff view before approving
+
+### Keyboard Shortcuts
+
+- `Ctrl+Shift+U` / `Cmd+Shift+U`: Focus the chat panel
+- `Ctrl+K` / `Cmd+K`: Toggle the Prompt Navigator overlay
+- `↑` / `↓`: Navigate through prompt history (like terminal shell)
+- `Shift+Tab`: Cycle through permission modes
+- `Escape`: Cancel current request (when processing)
+- `Escape Escape`: Open rewind popup to restore previous state
+
+### IDE Context
+
+The input bar shows a context indicator that tracks your active editor:
+
+- **Eye icon + line count**: When you have code selected, shows "N lines"
+- **Code icon + filename**: When a file is open without selection, shows the filename
+
+Click the indicator to toggle whether the context is included in your next message. When enabled, the selected code (or entire file) is automatically injected into your prompt, with no need to manually @mention or paste code.
+
+### Image Attachments
+
+Paste images directly into the chat input with `Ctrl+V` / `Cmd+V`:
+
+- **Supported formats**: PNG, JPEG, GIF, WebP
+- **Size limit**: 5MB per image
+- **Max attachments**: 10 images per message
+
+Attached images appear as compact chips (icon + filename + WIDTH×HEIGHT) below the input. Hover over a chip to reveal the remove button. Click any image in the conversation to open it in a lightbox.
+
+#### @ Mention Autocomplete
+
+- `@`: Trigger autocomplete popup for files and agents
+- `↑` / `↓`: Navigate suggestions
+- `Tab` / `Enter`: Insert selected item
+- `Escape`: Close popup
+
+**Mention types:**
+
+| Syntax                   | Description                                  |
+| ------------------------ | -------------------------------------------- |
+| `@path/to/file.ts`       | Reference a workspace file                   |
+| `@agent-Explore`         | Use the fast codebase exploration agent      |
+| `@agent-Plan`            | Use the architecture planning agent          |
+| `@agent-<name>`          | Use a custom agent from an `agents/` dir     |
+
+Custom agents are loaded from `.damocles/agents/*.md`, `.pi/agents/*.md` and `.claude/agents/*.md` in the workspace (project) and from `~/.damocles/agents/*.md`, `~/.pi/agent/agents/*.md` and `~/.claude/agents/*.md` (user). Project agents override user agents with the same name. Within one scope `.damocles` wins a name collision, then `.pi`, then `.claude`.
+
+#### Slash Command Autocomplete
+
+- `/`: Trigger command autocomplete popup
+- `↑` / `↓`: Navigate suggestions
+- `Tab` / `Enter`: Insert selected command
+- `Escape`: Close popup
+
+**Built-in commands:**
+
+| Command            | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| `/clear`           | Clear conversation history                                             |
+| `/compact`         | Compact conversation                                                   |
+| `/rewind`          | Rewind conversation/code to a checkpoint                               |
+| `/init`            | Initialize CLAUDE.md                                                   |
+| `/remember <text>` | Save session memory (`project:` or `global:` prefix for broader scope) |
+| `/note <text>`     | Save a persistent note to the knowledge base                           |
+| `/memories`        | Open the memory management panel                                       |
+| `/context`         | Display context usage breakdown                                        |
+| `/usage`           | Show Claude & ChatGPT/Codex subscription rate-limit usage              |
+
+Custom commands are loaded from `.damocles/commands/*.md`, `.claude/commands/*.md` and `.codex/prompts/*.md` (project) plus their `~/` user equivalents.
+
+The precedence chain is **builtin > `.damocles` > `.claude`/`.codex`**. A built-in from the table above always wins, so a custom command or skill named after one is dropped from the menu instead of showing a row that runs the built-in anyway. Within a source, project overrides user. Between the two compat sources, `damocles.assetSourcePrecedence` (default `claude`) breaks the tie. Names match without regard to case, so `.damocles/skills/Foo` and `.claude/skills/foo` are one entry rather than two.
+
+Every one of those directories is watched, the `~/` ones included, so creating `~/.damocles/commands/foo.md` puts `/foo` in the menu within about 300 ms with no window reload. With no folder open there is no project scope at all, and your `~/` assets are listed as user entries.
+
+Project-scope commands are gated on workspace trust. In a restricted window they still appear in the menu, badged untrusted, and selecting one shows a message instead of starting a turn. Granting trust loads them with no window reload. User-scope commands are unaffected, including when a project command or skill of the same name is withheld: the working user one still runs.
+
+### Skills
+
+Skills are specialized tools that extend the agent's capabilities. You can invoke skills in two ways:
+
+**Via slash command (recommended):**
+
+- Type `/skill-name` to invoke a skill directly - it appears in the autocomplete popup alongside regular commands
+- Skills invoked this way are **auto-approved** (no approval prompt)
+- Pass arguments after the skill name: `/skill-name additional context here`
+
+**Via the agent's autonomous invocation:**
+
+When the agent decides to use a skill on its own, you'll see an approval prompt:
+
+- **Yes**: Approve this invocation (manual mode)
+- **Yes, don't ask again**: Auto-approve this skill for the session
+- **No**: Deny the skill and end the turn. An unexplained "no" leaves the agent nothing to work with, so it stops rather than looking for another route to the same thing
+- **Tell Damocles what to do instead**: Deny this invocation but keep the turn running, handing your text to the agent as the instruction to follow instead
+
+These two are **not** the same action with extra text: the feedback box is what decides whether the agent stops or carries on. Anything Damocles decides on its own, whether a permission rule, plan mode, a read-only agent, a closed session, or the permission system failing, never ends the turn, because you were never asked.
+
+Skills are loaded from `.damocles/skills/<name>/SKILL.md`, `.claude/skills/<name>/SKILL.md` and `.codex/skills/<name>/SKILL.md` (project) plus their `~/` user equivalents, with the same precedence and trust rules as commands. The description is parsed from the YAML frontmatter, and a `name:` there overrides the directory name so the menu invokes the skill under the name the agent loaded it as. Symlinks are not followed in either directory family.
+
+### Instructions files
+
+An `AGENTS.md` or `CLAUDE.md` in the workspace, and in each of its parent directories, is loaded into every turn as project instructions. `~/.damocles/AGENTS.md` (or `CLAUDE.md`) is the user-global instructions file: it loads in every workspace, ahead of the project ones, and `/context` lists it.
+
+Project instructions are gated on workspace trust, for the same reason project skills are: the file goes into the system prompt, so a repository you have not trusted could steer the agent with it. In a restricted window no workspace or parent-directory file is loaded, and the user-global file still is. Granting trust loads the project ones with no window reload. Editing `~/.damocles/AGENTS.md` is picked up within about 300 ms, the same as an asset directory.
+
+### Permission Rules
+
+Define persistent allow/deny rules for tools. Rules are evaluated before each tool call and can automatically allow, deny, or prompt for specific patterns. Damocles keeps its own rules in `.damocles/`, and also reads the equivalent Claude Code files so rules you already wrote there keep working.
+
+**Settings file priority (first match wins):**
+
+| Priority | File                              | Scope             |
+| -------- | --------------------------------- | ----------------- |
+| 1        | `.damocles/settings.local.json`   | Project (private) |
+| 2        | `.claude/settings.local.json`     | Project (private) |
+| 3        | `.damocles/settings.json`         | Project (shared)  |
+| 4        | `.claude/settings.json`           | Project (shared)  |
+| 5        | `~/.damocles/settings.local.json` | User (private)    |
+| 6        | `~/.claude/settings.local.json`   | User (private)    |
+| 7        | `~/.damocles/settings.json`       | User (shared)     |
+| 8        | `~/.claude/settings.json`         | User (shared)     |
+
+A file with no rules is skipped rather than occupying a slot, and within each tier `.damocles` is
+consulted before `.claude` so a Damocles rule can override one Claude Code already had. Skills and
+slash commands follow the same rule: `.damocles` is read first and outranks both compat sources.
+Damocles only ever *writes* to `.damocles/`. Your `.claude` files are read and never modified. Add
+`.damocles/settings.local.json` to your `.gitignore` if you do not want your personal rules committed.
+
+**Example settings file:**
+
+```json
+{
+  "permissions": {
+    "allow": ["Bash(git:*)", "Bash(npm run *)", "PowerShell(Get-ChildItem:*)"],
+    "deny": ["Bash(rm:*)", "Bash(sudo:*)", "PowerShell(Remove-Item:*)"],
+    "ask": ["Bash(npm publish:*)"]
+  }
+}
+```
+
+`Bash` and `PowerShell` rules are evaluated independently, so a `Bash(git:*)` rule does not auto-allow a `PowerShell git status` call. Cross-shell isolation is intentional: PowerShell flag semantics and sandboxing differ from Bash on Windows, so users who want both must write both rules explicitly.
+
+**Pattern syntax:**
+
+| Pattern                       | Matches                                |
+| ----------------------------- | -------------------------------------- |
+| `Bash`                        | All Bash commands                      |
+| `Bash(git:*)`                 | Bash commands starting with `git`      |
+| `Bash(npm run *)`             | Bash commands starting with `npm run ` |
+| `PowerShell`                  | All PowerShell commands                |
+| `PowerShell(Get-ChildItem:*)` | PowerShell commands starting with `Get-ChildItem` |
+| `Edit(*.ts)`                  | Edit operations on `.ts` files         |
+| `Write(src/**)`               | Write operations anywhere under `src/` |
+
+**Quick rule creation:**
+
+When a permission prompt appears, you can click "Always allow {pattern}" or "Always deny {pattern}" to create a persistent rule. A destination picker lets you choose which `.damocles` settings file to save the rule to (local, project, or global).
+
+### Hooks
+
+Run your own command at key moments in a session by dropping a `hooks.json` next to your scripts. The contract is Damocles' own: the child receives one JSON object on stdin (snake_case keys, a uniform tool schema) and replies with one JSON object on stdout. The exit code is health, not a signal. A non-zero exit is fail-soft and **never** blocks; to block, emit JSON (`{"decision":"deny"}` for `tool_call`, `{"decision":"block"}` for `tool_result` / `input`).
+
+| File | Scope | Honored when |
+| --- | --- | --- |
+| `~/.damocles/hooks.json` | Global | Always |
+| `<workspace>/.damocles/hooks.json` | Project | Workspace is trusted |
+
+A hook is live purely by being present (no toggle); the project file requires a trusted workspace. Keys are pi event names (`tool_call`, `input`, `agent_end`, …) plus the Damocles-defined `subagent_end` and `permission_required`. A `tool_call` hook can **block**, **force-allow**, or **rewrite** a tool call; every block/force-allow is logged and surfaced in chat. A deny lets the model try another way. Add `"terminate": true` beside it to end the turn instead.
+
+```jsonc
+{
+  "hooks": {
+    "tool_call": [
+      // Block destructive shell commands: emit a deny JSON when the command matches.
+      { "match": "Bash",
+        "command": "in=$(cat); echo \"$in\" | jq -e -r '.input.command | test(\"rm -rf\")' >/dev/null && echo '{\"decision\":\"deny\",\"reason\":\"Refusing rm -rf\"}'" }
+    ],
+    "permission_required": [
+      { "command": ["uv", "run", "${workspaceFolder}/.damocles/hooks/notify.py", "--notify"] }
+    ]
+  }
+}
+```
+
+Full guide, covering the event table, variable substitution, the stdin/output contract, and worked examples: [`docs/hooks.md`](docs/hooks.md).
+
+### Persistent Memory
+
+Damocles gives the agent persistent memory that survives across compactions and sessions. Memories are stored locally in SQLite via Node's built-in `node:sqlite` (`~/.damocles/memory.v3.db`), with no native modules or WASM, working on every platform without compilation.
+
+**Kinds and scopes:**
+
+Every memory carries a **kind** and a **scope**:
+
+| Kind          | What it is                                                                     |
+| ------------- | ------------------------------------------------------------------------------ |
+| `fact`        | A durable truth about the project or user                                      |
+| `preference`  | A stated user / style preference                                               |
+| `episode`     | Time-bound context ("currently working on X") that decays after ~30 days       |
+| `observation` | A structured record of completed work (agent-authored)                         |
+| `note`        | A free-form knowledge-base entry (browse / search on demand, not auto-injected)|
+
+| Scope     | Visible in                                  |
+| --------- | ------------------------------------------- |
+| `session` | The current conversation only               |
+| `project` | The current workspace, across its sessions  |
+| `global`  | Every workspace                             |
+
+Facts, preferences, and episodes are created **automatically** by extraction; you can also create them explicitly with `/remember` (`project:` / `global:` prefixes set scope) or have the agent call `save_memory`. Notes are created with `/note` and retrieved on demand. Observations are recorded by the agent via `save_observation`; the most recent surface in context. Episodes decay on a ~30-day TTL unless reused (then promoted to durable). Pinned memories of any kind are always injected in full.
+
+**How the catalog works:**
+
+Every prompt you send receives a relevance-ranked catalog of available memories. The catalog builder:
+
+1. Runs FTS5 full-text search against your prompt to find relevant memories
+2. Scores each memory using a composite signal:
+   - **Prompt relevance** (50%): BM25 text similarity (FTS5 with porter stemming)
+   - **Recency** (15%): How recently was the memory created/updated?
+   - **Scope priority** (15%): Session > Project > Global
+   - **File proximity** (10%): Does the memory mention the file you have open?
+   - **Retrieval boost** (10%): How often has the agent actively retrieved this memory?
+3. Takes the top N entries per scope/kind (entry-count limits, not token budgets); notes are excluded (browse-on-demand)
+4. Formats as a compact catalog: short text for session/project/global (truncated entries include ID for retrieval), title + ID for observations
+5. Injects pinned memories as full content, plus the auto-maintained user profile on the first message
+
+`search_memories` reranks its BM25 hits with a cheap LLM (ungraded hits keep their BM25 standing); the per-turn injected catalog can optionally be reranked too under a hard ~2 s cap (`damocles.memory.rerank.injectMode`).
+
+When the prompt doesn't match any memories, scoring falls back to a recency-dominant heuristic. The agent browses the catalog and calls `get_memory_details` to retrieve full content for observations that look relevant to the current task.
+
+**Example catalog output:**
+
+```xml
+<damocles_memory>
+<project_memories>
+- JWT tokens expire after 1 hour. Refresh logic lives in auth-service.ts
+- Database uses Knex with PostgreSQL. Migrations in db/migrations/
+</project_memories>
+<recent_observations>
+- [obs-auth-uuid] Fixed authentication token refresh race condition (src/auth-service.ts)
+- [obs-deploy-uuid] Deployment pipeline fix for staging environment
+</recent_observations>
+<pinned_memories>
+- [mem-arch-uuid] Architecture: always use repository pattern for data access
+  Full content of the pinned memory here...
+</pinned_memories>
+</damocles_memory>
+```
+
+The agent sees the catalog (~300-800 tokens) and decides what to retrieve. For complex problems, it naturally retrieves less. For context-heavy tasks, it pulls exactly what it needs.
+
+**Smart session handoff:**
+
+When you start a new session in the same workspace, the first message automatically includes:
+
+- Top-ranked observations from recent sessions, scored by prompt relevance, file proximity, and recency
+
+**MCP tools for the agent:**
+
+The agent has 10 memory tools it can use autonomously:
+
+- `save_memory`: Save a typed memory with an explicit kind and scope (`fact` / `preference` / `episode`)
+- `save_observation`: Record structured observations after significant work
+- `search_memories`: Full-text search (semantically reranked) returning a compact index (~30 tokens/result)
+- `get_memory_details`: Fetch full content for specific memory IDs (also records retrievals for feedback)
+- `get_memory_history`: Inspect the version chain of a fact (root → latest)
+- `get_related_memories`: Traverse the fact graph over updates/extends/derives/supersedes edges
+- `forget_memory`: Forget a memory by id or content (default forgets the whole version chain)
+- `save_note` / `list_notes`: Knowledge base management
+- `reset_observation_staleness`: Mark an observation as fresh after verifying its content
+
+**Memory panel:**
+
+Type `/memories` to open the management panel where you can browse, create, delete, pin, forget, and search memories, with kind/scope filter chips, a forgotten toggle, version-history and related-memories views, and an inline editor for the user profile.
+
+### Per-Panel Models
+
+Each open panel can have its own model independent of other panels. The settings panel shows two model selectors:
+
+- **This panel**: The model for the current panel's session (applies immediately)
+- **Default for new panels**: The global default that new panels inherit when opened
+
+Changing the default does not affect any existing panel's session. Only new panels pick up the new default.
+
+## Configuration
+
+| Setting | Description | Default |
+| --- | --- | --- |
+| `damocles.permissionMode` | How to handle tool permissions (`default`, `acceptEdits`, `plan`) | `default` |
+| `damocles.dangerouslySkipPermissions` | Open new chat panels with YOLO mode (skip all permission prompts) enabled by default; each panel can still toggle it off | `false` |
+| `damocles.ideContext.enabled` | Attach the active editor's opened file / selection as context; when off, new panels start with the IDE context chip disabled | `true` |
+| `damocles.maxTurns` | Maximum conversation turns per session | `100` |
+| `damocles.thinkingDisabled` | Workspace default for the thinking-disabled toggle (per-panel override available in settings panel) | `false` |
+| `damocles.effortByModel` | Workspace default reasoning effort per model (e.g., `{"claude-opus-4-8": "max", "claude-sonnet-5": "high"}`); per-(panel, model) overrides available in settings panel | `{}` |
+| `damocles.maxThinkingTokens` | Workspace default max thinking-token budget for legacy (non-adaptive) models (1000–63999); per-(panel, model) overrides available in settings panel | `null` |
+| `damocles.maxIndexedFiles` | Maximum files to index for @ mention autocomplete | `5000` |
+| `damocles.checkpoints.retentionDays` | Delete a session's file checkpoint (undo/rewind) history after this many days of inactivity to reclaim disk; repos are always compacted regardless. `0` keeps history forever | `30` |
+| `damocles.agentProgressSummaries` | Enable real-time progress summaries on running subagent cards | `true` |
+| `damocles.subagents.maxConcurrent` | Maximum background subagents that run concurrently (1–16); excess spawns queue and drain as slots free | `4` |
+| `damocles.mcp.enabled` | Enable MCP servers from all six sources (`.damocles/mcp.local.json`, `.mcp.json`, `~/.damocles/mcp.json`, Claude Code's local scope, Claude Code / Desktop, `~/.codex/config.toml`); disable to hide all MCP tools without editing config | `true` |
+| `damocles.pi.webSearch.enabled` | Enable native key-free web tools (WebSearch, WebFetch, CodeSearch, FeedRead, YouTubeTranscript); toggling takes effect next turn, no install or reload | `false` |
+| `damocles.team.enabled` | Enable the collaborative multi-agent team system | `false` |
+| `damocles.team.leadModel` / `damocles.team.implementorModel` / `damocles.team.reviewerModel` | Model for each team role; empty uses the active panel model | `""` |
+| `damocles.team.leadEffort` / `damocles.team.implementorEffort` / `damocles.team.reviewerEffort` | Reasoning effort for each team role; empty uses the model default, unsupported levels are ignored | `""` |
+| `damocles.assetSourcePrecedence` | Breaks a tie between `.claude` and `.codex` when a skill or slash command with the same name exists in both (`claude`, `codex`). `.damocles` always outranks both and is not affected by this setting. Applies to the agent's loaded resources and the slash-command menu | `claude` |
+| `damocles.explore.enabled` | Route the `Explore` subagent through a third-party provider (native multi-provider; keys in SecretStorage) | `false` |
+| `damocles.explore.provider` | Explore provider when routing is enabled (`openrouter`, `gemini`, `stepfun`) | `openrouter` |
+| `damocles.explore.modelByProvider` | Per-provider model override (keys: `openrouter`, `gemini`, `stepfun`) | `{}` |
+| `damocles.explore.effort` | Reasoning effort for the Explore subagent when the selected model supports it (StepFun Step 3.7 Flash: `low`/`medium`/`high`) | model default |
+| `damocles.voice.mode` | Voice input mode (`off`, `push-to-talk`, `wake-word`) | `off` |
+| `damocles.voice.provider` | Push-to-talk speech-to-text provider (`openai-whisper`, `deepgram`, `google-cloud-stt`) | `openai-whisper` |
+| `damocles.voice.language` | Language code for voice transcription (e.g., `en`, `el`, `de`) | `en` |
+| `damocles.voice.wakeWord` | Jarvis: bundled wake-word ID (e.g., `hey_jarvis`) or absolute path to a custom `.onnx` (machine-scope) | `hey_jarvis` |
+| `damocles.voice.wakeWordSensitivity` | Jarvis: detection threshold (0.1–0.95). Lower = more sensitive | `0.5` |
+| `damocles.voice.tts.enabled` | Jarvis: speak the assistant's reply aloud (adds ~1.5 GB GPU) | `false` |
+| `damocles.voice.tts.voice` | Jarvis: VibeVoice voice prefill | `en-Carter_man` |
+| `damocles.voice.localGpu` | Jarvis: compute device (`auto`, `cuda`, `cpu`) | `auto` |
+| `damocles.voice.endOfTurnSilenceMs` | Jarvis: silence (ms) that ends an utterance and triggers transcription | `800` |
+| `damocles.voice.maxUtteranceMs` | Jarvis: hard cap (ms) on a single utterance | `30000` |
+| `damocles.voice.autoSubmit` | Jarvis: auto-send the message when the local transcript finalizes | `true` |
+| `damocles.voice.diagnostics` | Jarvis: verbose sidecar logs in the "Damocles Voice" output channel (no transcript content) | `false` |
+| `damocles.voice.runtimePath` | Jarvis: path to an existing CUDA-PyTorch venv to skip the bundled runtime (machine-scope) | `""` |
+| `damocles.voice.pinModelVersion` | Jarvis: per-model version pin overriding `MODEL_MANIFEST.json` (machine-scope) | `{}` |
+| `damocles.autoCompact.enabled` | Enable automatic context compaction (opt-in; applies to all providers including GPT) | `false` |
+| `damocles.autoCompact.triggerPercent` | Compact once context usage crosses this % of the window (50–95) | `80` |
+| `damocles.memory.enabled` | Enable persistent memory system | `true` |
+| `damocles.memory.pinnedTokenBudget` | Token budget for pinned memories | `500` |
+| `damocles.memory.catalogObservationLimit` | Max observation entries in catalog | `20` |
+| `damocles.memory.catalogProjectLimit` | Max project memory entries in catalog | `15` |
+| `damocles.memory.catalogGlobalLimit` | Max global memory entries in catalog | `10` |
+| `damocles.memory.autoExtract.enabled` | Auto-extract durable memories from conversations during consolidation | `true` |
+| `damocles.memory.autoExtract.idleSeconds` | Seconds of inactivity before an idle consolidation pass runs | `180` |
+| `damocles.memory.rerank.enabled` | Rerank `search_memories` BM25 candidates with an LLM | `true` |
+| `damocles.memory.rerank.candidatePool` | BM25 candidates to over-fetch before reranking | `30` |
+| `damocles.memory.rerank.injectMode` | Per-turn catalog ranking: `off` (pure BM25) or `blocking` (rerank, ~2 s cap) | `off` |
+| `damocles.memory.profile.enabled` | Maintain and inject an auto-generated user profile | `true` |
+| `damocles.memory.profile.tokenBudget` | Max tokens of profile injected on the first message of a session | `400` |
+| `damocles.memory.dedup.threshold` | Similarity above which a new memory is merged as a near-duplicate at consolidation | `0.8` |
+| `damocles.pinnedHeaderHidden` | Hide the pinned user-message sticky header; a floating chip restores it (global scope, persists across workspaces) | `false` |
+
+## Localization
+
+The extension automatically uses VS Code's display language. Currently supported:
+
+| Language | Code |
+| -------- | ---- |
+| English  | `en` |
+| Greek    | `el` |
+
+To change the language, set VS Code's display language via **Configure Display Language** command (`Ctrl+Shift+P` → "Configure Display Language").
+
+## Requirements
+
+- VS Code 1.95.0 or higher
+- For Claude models: a Claude subscription (Pro, Max, Team, Enterprise) **or** an `ANTHROPIC_API_KEY`. See Authentication below
+- For GPT models: a ChatGPT/Codex subscription **or** an `OPENAI_API_KEY`
+- For StepFun / DeepSeek models: the respective provider API key (set in their Settings panels)
+- **Supported platforms**: Windows, macOS, and Linux. Memory and Compass use Node's built-in `node:sqlite` (no native modules or WASM), so there is nothing to compile per platform. Voice's wake-word mode runs a separate Python sidecar (see the voice guide)
+
+## Authentication
+
+Damocles runs on the [pi](https://github.com/earendil-works/pi) agent engine and talks to Anthropic and OpenAI directly. It owns its own credentials, sessions, and plans under `~/.damocles/`, fully isolated from the standalone Claude Code CLI, so signing in or out of either tool never affects the other. Damocles keeps its own settings, skills, and slash commands in `.damocles/` and reads those first. It also reads the CLI's `~/.claude/` settings, skills, agents, and slash commands directly so those stay shared, while the CLI's credentials are never read, written, or deleted.
+
+Sign in from the settings panel (gear icon in the chat header). The extension refreshes the active session automatically once you authenticate, and the chat header shows your account info (email, subscription type). If startup fails because credentials are missing or expired, the chat panel surfaces a dismissable banner with a **Sign In** shortcut.
+
+### Claude (Anthropic)
+
+The **Claude Authentication** panel offers three modes:
+
+- **API key.** Your `ANTHROPIC_API_KEY`; bills your Anthropic API account.
+- **Subscription · extra usage.** Signs in to your Claude Pro/Max subscription via OAuth; usage is **metered** (pay-as-you-go) against the subscription.
+- **Subscription · allowance.** The *same* OAuth token, routed through the third-party [`pi-anthropic-oauth`](https://github.com/AizenvoltPrime/pi-anthropic-oauth) plugin so requests impersonate Anthropic's official Claude Code CLI and draw on your subscription's **included quota** (no metered charge). Switching allowance ↔ extra usage just toggles that plugin, with no re-login.
+
+> ⚠️ **The "allowance" mode very likely violates Anthropic's Terms of Service.** It makes a third-party tool masquerade as Anthropic's official CLI to draw on your subscription's *included* (free) quota it is not entitled to, and may result in account action. Use it entirely at your own risk. "API key" (API account) and "extra usage" (metered against your subscription, where you pay for what you use) do not access included quota this way and are not affected.
+
+### OpenAI / GPT
+
+GPT models authenticate two ways:
+
+- **ChatGPT / Codex OAuth.** Sign in with your ChatGPT subscription.
+- **API key.** Your `OPENAI_API_KEY`.
+
+Codex wins when both are configured; `damocles.openai.preferApiKey` inverts the preference.
+
+### StepFun / DeepSeek
+
+Dedicated API-key panels (below OpenAI Authentication) enable these custom-provider models. Keys are saved to SecretStorage without a validation probe. An invalid key surfaces as a normal request error on first use.
+
+- **StepFun.** Bearer token for the step-plan flat-fee subscription (enables Step 3.7 Flash). Shares one key with the Explore StepFun provider, so saving/clearing in either place keeps both in sync.
+- **DeepSeek.** `DEEPSEEK_API_KEY` (pay-per-token; enables DeepSeek V4 Pro and V4 Flash). Dollar-budget-enforced like other metered providers.
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Build extension and webview
+npm run build
+
+# Watch mode for development
+npm run dev
+
+# Type check
+npm run typecheck
+
+# Run tests
+npm test
+```
+
+## Packaging
+
+To create a distributable `.vsix` file:
+
+```bash
+npm run build && npm run package
+```
+
+This generates `damocles-<version>.vsix` which can be installed via:
+
+- **VS Code UI**: Extensions → `...` menu → "Install from VSIX..."
+- **Command line**: `code --install-extension damocles-<version>.vsix`
+
+## Architecture
+
+- **Extension Host** (Node.js): runs the pi agent engine, tools, permissions, and all subsystems
+- **Webview** (Vue 3 + Tailwind): chat interface
+- **postMessage Bridge**: communication between extension and webview

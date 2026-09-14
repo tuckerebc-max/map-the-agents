@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_42febe8e6d99ab2464dfd452a0620b84430fa96b0e2fc0a0ebaeb7fbda9fda4e
+- clm_50bae23659e17f11e1e05ab011e1a0b3211155a5fbdb692e6399da4e3b8d6341
+- clm_69523683b861008c7f526f19d0f8f59b04f5515ad335328c60394bee829316ae
+- clm_85accfa3635dbc0d6bb6a30a9b7610cda1d1a48bedf3564256ac339a2bf44158
+- clm_8d25ac339bc8aaca4df03f77e80eff23628a1b57aec6449aeb7abf6040f94ad2
+- clm_9661057684772b4e36c1d48a8e66bcf421f824910fc9a5314af36046298677a4
+- clm_a80ea9bd8bd3a66107d0d5094eef74417946ee52ab145020187f3007b2f6dcfa
+- clm_c33855e07578e7ef161b073222344ed2eec5cdecd8c3a8199c9ad05b46a0f011
+- clm_c578c9d5ca7ae4a8d504951834f86b58a5d60ded544d51d10977f80b89268576
+- clm_d189db69298b2c94bfcfbe1dfba26deb49145a48e92291fb4ab1784a3ef105f7
+- clm_d2fdee6cac98916e1c7ef790ca23600d607ced0aaea22ee8c2ad45213cf20ad7
+- clm_fc8d937d761bfacf4e1a4e1031788b4c4ebcd22d15c68c07d742252ea8a6b4bc
+maturity: draft
+page_id: pg_0c55b82cb1925d439905db8c0440c4a2
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: awslabs/cli-agent-orchestrator
+updated_at: '2026-09-14T01:36:40Z'
+---
+
+# awslabs/cli-agent-orchestrator
+
+<!-- rcw:begin owner=entity:ent_47f20aa26f1751c38cb31e2b9a45f530 block=evidence -->
+- awslabs/cli-agent-orchestrator is mentioned in this evidence. [@claim:clm_42febe8e6d99ab2464dfd452a0620b84430fa96b0e2fc0a0ebaeb7fbda9fda4e] [@claim:clm_50bae23659e17f11e1e05ab011e1a0b3211155a5fbdb692e6399da4e3b8d6341] [@claim:clm_69523683b861008c7f526f19d0f8f59b04f5515ad335328c60394bee829316ae] [@claim:clm_85accfa3635dbc0d6bb6a30a9b7610cda1d1a48bedf3564256ac339a2bf44158] [@claim:clm_8d25ac339bc8aaca4df03f77e80eff23628a1b57aec6449aeb7abf6040f94ad2] [@claim:clm_9661057684772b4e36c1d48a8e66bcf421f824910fc9a5314af36046298677a4] [@claim:clm_a80ea9bd8bd3a66107d0d5094eef74417946ee52ab145020187f3007b2f6dcfa] [@claim:clm_c33855e07578e7ef161b073222344ed2eec5cdecd8c3a8199c9ad05b46a0f011] [@claim:clm_c578c9d5ca7ae4a8d504951834f86b58a5d60ded544d51d10977f80b89268576] [@claim:clm_d189db69298b2c94bfcfbe1dfba26deb49145a48e92291fb4ab1784a3ef105f7] [@claim:clm_d2fdee6cac98916e1c7ef790ca23600d607ced0aaea22ee8c2ad45213cf20ad7] [@claim:clm_fc8d937d761bfacf4e1a4e1031788b4c4ebcd22d15c68c07d742252ea8a6b4bc]
+<!-- rcw:end owner=entity:ent_47f20aa26f1751c38cb31e2b9a45f530 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,961 @@
+{
+  "applied_operation_id": "op_d953fd7826b948339d27e652c4892911",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ce3ba16420e452bfac529a0b48e2c457fb4456e8dc54dc5f18261b01cc6f089",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 49,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L44-L49"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17d0b3cf4df27062a3981f88f07657cf328ce40cd71960356d8129ca7bb134ac",
+        "slc_9cead0bab00fc4d1b1499ac7f9685b26d06e91de14c1141122fc3f894a318273"
+      ],
+      "text": "Arcgentic is described as a harness engineering layer for AI coding agents, turning ad-hoc prompting into a gated engineering workflow for Codex and Claude Code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e3691dc845547df4ee44d44d8c693cfe19c971fba524d5ccfb51c0dcff9dd02",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 239,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L229-L239"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ddfa3e7522dd6181e3e6da7acfb7a36e16ac3cbef7107334accc5801e05465f"
+      ],
+      "text": "The V2 workflow sequence is: idea, brainstorm/planning, round handoff, development, developer self-audit, optional user-test, external audit, pass-or-fix, then next round, next phase, or closeout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_713b9b4d15ca07423e17080b8b519178076b68a0b51a8b102d9a9ae0e54788d0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 249,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L243-L249"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 252,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L251-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e15727d13dd4e773c903ebeb2c51474b8eb81e219f95c6d2f7c18fc10dc89c5",
+        "slc_8e8551350e191a1b743ba09381ccd47dd5886a7420314def50f6074b3dedb0ac"
+      ],
+      "text": "Five fixed roles are defined: Orchestrator (routing/dispatch), Planner (planning and closeout decisions), Developer (building, fixes, self-audit), Test (realistic user testing when needed), and Auditor (independent PASS/NEEDS_FIX/AUDIT_INCOMPLETE review)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2420627bb93950f04f5d3f5322240c6668e9f8e9161a3878bf1174ea2b7f3980",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 266,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L256-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aadf9a4eb2d8970cc9e9614a046ecbdf990fd1ded19c7a2bf173569e6a2ce2b6"
+      ],
+      "text": "Role/state routing is implemented as a Topology module (toolkit/src/arcgentic/topology.py) that projects can override via project.arcgentic_v2.topology in state.yaml; custom topologies are validated at parse time and zero-config projects keep the default 5-role sequence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c5ba1c4989f77d3eba76de6aaab63d517befb0f652840d261b5860ade31f325",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 358,
+          "line_start": 355,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L355-L358"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 384,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L377-L384"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a435436e531bbd689a6567fb91bf117f11cdff7ccf666fb153607dcdb7ba20a3",
+        "slc_bba81e07e3b0269625d59faf5ccfd9e2b6a943ac9a95f8e0b05bf7f665bff43b"
+      ],
+      "text": "An optional MCP server exposes a round_status_panel tool rendering round id, per-role dispatch progress, and latest audit verdict; the panel has no write path and falls back to a plain text summary on hosts without MCP Apps support."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d83de37e3b95aae5307efb7bbb4317a9edbe3cc93dd49933f3e5a6dcb941a73f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 287,
+          "line_start": 286,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L286-L287"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 284,
+          "line_start": 276,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L276-L284"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 76,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L73-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84a3f973f1eeb6d76275980c98ca951aa996b6df6d2f960dc774a5ab42510d40",
+        "slc_a7cf1754faa05923e236dfd14e6474b79b0f1e66b14c98ecbced45799d543963",
+        "slc_b241db316e5ccf1adf34bba9cc58631ab8e2bfc90558053ba95d2d883e669f76"
+      ],
+      "text": "In the verified Codex path, the current conversation becomes Orchestrator, which creates or reuses fixed role threads, sends role prompts, waits for return signals, and dispatches the next role without manual thread switching."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8d80e58f3d4e58974041b790c6aee231b14469fbbbb5da1381f5241022cbce1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 204,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L203-L204"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 201,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L198-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_192d70ce38279ace84e92c4ee755a285cff8d428e6faac73975852cc01d35452",
+        "slc_7960f514c3a03e84b77a858d085777b350c257f108b7066a39db158b5fd70170"
+      ],
+      "text": "Two project-level modes are offered: single-session with named role agents inside the Orchestrator session (faster, weaker audit isolation) and multi-session with fixed project threads (slower, stronger audit discipline); the choice is made once per project."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78f91e40e3c96fbcfc2341b19b081ff62f10f3bc7d04624cfc94427933bc26c9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 315,
+          "line_start": 313,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L313-L315"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e3c9f549e615f2763cca345df782305d1c6da9840d76c813899889683054c5cb"
+      ],
+      "text": "In multi-thread mode the Orchestrator should sleep after dispatching a role and wake only on the role's return, to avoid guessing completion or dispatching duplicate auditors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd3ed60846126e05a825e0061cf8a6a37a7bfdb462ec1bcae1b3befaedba8acb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 185,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L174-L185"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 249,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L243-L249"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 474,
+          "line_start": 471,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L471-L474"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a3875b2f558595910c6ed287fd3079ce9f6185fe98f6e1d6af7f830b44daf53",
+        "slc_6e15727d13dd4e773c903ebeb2c51474b8eb81e219f95c6d2f7c18fc10dc89c5",
+        "slc_d2f5ec03a6881f54becaec18ffb2d7deda3b960f4d1281b9c4ccb73034f6d0fb"
+      ],
+      "text": "The Auditor role returns one of three verdicts — PASS, NEEDS_FIX, or AUDIT_INCOMPLETE — and the Orchestrator routes the next step based on that outcome."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9813df8558bf24e68b0de0f6b144bbb9331843a1a96edbacfc6717fbf29cb0d1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 93,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L88-L93"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 122,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L120-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c1bf038318ff108771baba8c54a20d0ac2d63f8249ce56b2ae2b06df3efb0c5",
+        "slc_8d876c7df2fbed8a14b071e593a94e3c847e7d66eed6a6443552258d79a432ac"
+      ],
+      "text": "The npm package arcgentic@2.2.0 is described as a zero-dependency plugin bundle containing skills, agents, scripts, schemas, templates, and platform manifests, while the Python CLI is published separately on PyPI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e34a039faaf2387b92efb6c3a62dc9cf703c6ddbeb39e20639e4499339dd5c59",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 496,
+          "line_start": 484,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L484-L496"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 387,
+          "line_start": 386,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L386-L387"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 362,
+          "line_start": 360,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L360-L362"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33fd9590c64b3b0f15cab74d5a837e087ba884691c2d54898337d62121aebe52",
+        "slc_5ed7885f2f0eace4c8241ba4cc7157c7f0601fb4e5d0aef93ac40ae65e7e2ff0",
+        "slc_7d12bcf9335d72df27e564c9b92dcbc5db5961be988ea66cd15163f4247a68a1"
+      ],
+      "text": "The MCP status panel is optional and installed via pip install 'arcgentic[mcp]', and it depends on host support for the MCP Apps extension."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f36ca9e1482194b24fab4dd1b4df7bdbfbec5c6bb1ec26c275dc822d3448fa5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 84,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L78-L84"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 71,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L68-L71"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 329,
+          "line_start": 325,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L325-L329"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a8b0b435f7b31c1ca60b5b71be8464210f4f1f716b06217e12dc809f939eb0d",
+        "slc_80ffe9f32008a62ab0ef1eb1aafa3a18b24de8e262716e2517875ddba268eb0e",
+        "slc_950048660897c1bb788c800240a2b0e2d80410a0dd384c1665dbc67b6efd9802"
+      ],
+      "text": "For Claude Code, only single-session-subagent mode via a foreground Agent tier-0 broker dispatch has dogfood evidence; multi-session-subthread mode, the SendMessage-based retry path, ListAgents, and the hook-backed fallback path are documented as unverified."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8b477392ef4571c46d66b44366e6ed00a3029cd4ec158051d04db5cba76f9c6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 403,
+          "line_start": 401,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L401-L403"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 412,
+          "line_start": 407,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L407-L412"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2216239e451da6add3b3c9820d190011934b4c45607ff35f146cb067467cb50a",
+        "slc_b46a73293243eadb07c88fd9c8c2922ab0a9e52730b830b3c2d0713059b0abdc"
+      ],
+      "text": "The README states Arcgentic is intentionally heavier than normal prompting and is not suited to one-line commands, tiny edits, quick experiments, or work where auditability does not matter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7538650d16c48edc5c4685df2d79ba79a61ffce8b354085c66ce511c13a2a81",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+          "line_end": 399,
+          "line_start": 393,
+          "path": "README.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md#L393-L399"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a53a8a34914696c75d57eca598c060b649e657b053f920f61d4883ffd8b00540"
+      ],
+      "text": "Arcgentic targets frequent Codex/Claude Code users, agent builders, small AI-native teams, and complex multi-round work where AI-written code must be shown to have passed planning, testing, and audit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b6b55b40f44e087986346716c32c2db3f0c18177671fcd7b6a4d0604de240fe",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 243,
+          "line_start": 232,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L232-L243"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 114,
+          "line_start": 113,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L113-L114"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 121,
+          "line_start": 118,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L118-L121"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L72-L72"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L107-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12ad94df893a35ae6949cb9900b410960219a635b4b1fd9de8116f4de18002b3",
+        "slc_46bccdbda2df6eb081d3903ad2b4825ad7250448c35e357b5a213f2fffc21122",
+        "slc_4a81110b6acc965c260f5ff2af0fe06c05102e8fbd55cdc53c2315e72dd21263",
+        "slc_7d16885892b6fbb98a7f3ac61126061db27a77f2ce726e2703bd85e4cd26bd2a",
+        "slc_ab8139dc21077031da14491f827cda6892b60c84ac8a469e5dfa647860c389de"
+      ],
+      "text": "Repository development practice: the CLAUDE handoff file instructs the contributing dev session to follow a 30-task build contract in order, use TDD for Bash scripts, commit once per task with conventional-commit prefixes directly on main, and never add paid-API integrations or force-push."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5c21d1cc098e49905a060f22999d02e6e849325791befe32f71497e8e287b44",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 191,
+          "line_start": 191,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L191-L191"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 221,
+          "line_start": 220,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L220-L221"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 217,
+          "line_start": 214,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L214-L217"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 208,
+          "line_start": 208,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L208-L208"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 205,
+          "line_start": 200,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L200-L205"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 211,
+          "line_start": 211,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L211-L211"
+        },
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L197-L197"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09e9b01b57bef1a7e66ce213053fbc31bc928d4955db4adc2e59ce4af568295b",
+        "slc_0c81d48bb5e6cec57b7598e96d812d52e30ac5579ed19e4f79e83a1ca9c007c9",
+        "slc_20689858493b63f19b01541df7addb1b41a22710b56b64c46a3b25c24ecbe59b",
+        "slc_6ebe0c9b63e325e640768ba3e39a20e730438162413292d839e4cf4c3d152975",
+        "slc_701fb19a44edfe2b67c21fede63a3378612085e76dce0fa4fba52aa9289a56ed",
+        "slc_7a0cf83e8d34ab3146c43abf1007dbe2d7ff31a6770a3a2aaa5e0047b4d85cf5",
+        "slc_7c868c392c5156603ee9e346bf2d86c7cfe7ac382f792c23506d3252f16a6b19"
+      ],
+      "text": "Repository development practice: the handoff defines six mechanical completion checks (commits count, all test files passing, plugin.json version bump, tag creation, dogfood gate files present, and everything pushed to origin) before reporting done."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_912731bd43ea3a6cbb594ccb11937737658aec58ff09f63bfe6e80d2d6bd00ca",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "645c345077d78a6525055f641eb677c361ae767a",
+          "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+          "line_end": 258,
+          "line_start": 249,
+          "path": "CLAUDE-v0.1.0-handoff.md",
+          "repository": "arch1esun/arcgentic",
+          "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md#L249-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d86d2613e90d7bfcdb75ac75a9e143949ff88c1fe8c2ded72b3fc7039011c67"
+      ],
+      "text": "Repository development practice: the contributing environment requires Bash >= 4, Python 3 >= 3.8 with PyYAML and jsonschema, Claude Code >= 1.0, and the superpowers plugin, with plugin-dev recommended for skill review."
+    }
+  ],
+  "commit": "645c345077d78a6525055f641eb677c361ae767a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 536,
+        "path": "README.md",
+        "size": 20990
+      },
+      {
+        "lines": 326,
+        "path": "CLAUDE-v0.1.0-handoff.md",
+        "size": 14436
+      },
+      {
+        "lines": 52,
+        "path": "PRIVACY.md",
+        "size": 2205
+      },
+      {
+        "lines": 486,
+        "path": "README.zh-CN.md",
+        "size": 19852
+      },
+      {
+        "lines": 24,
+        "path": "docs/tech-debt.md",
+        "size": 1974
+      },
+      {
+        "lines": 79,
+        "path": "docs/audits/R1-v1-openspec-marketplace-self-audit.md",
+        "size": 4923
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/audits/R1-v1-openspec-marketplace.md",
+        "reason": "file-budget",
+        "size": 9201
+      },
+      {
+        "path": "docs/audits/R2-v1-release-hardening-self-audit.md",
+        "reason": "file-budget",
+        "size": 8101
+      },
+      {
+        "path": "docs/audits/R2-v1-release-hardening.md",
+        "reason": "file-budget",
+        "size": 10402
+      },
+      {
+        "path": "docs/audits/R3-v1-prepublish-fix-self-audit.md",
+        "reason": "file-budget",
+        "size": 7968
+      },
+      {
+        "path": "docs/audits/R3-v1-prepublish-fix.md",
+        "reason": "file-budget",
+        "size": 8224
+      },
+      {
+        "path": "docs/audits/v0.1.0-alpha.2-meta-external-audit-verdict.md",
+        "reason": "file-budget",
+        "size": 5264
+      },
+      {
+        "path": "docs/audits/v0.2.2-alpha.1-external-audit-verdict.md",
+        "reason": "file-budget",
+        "size": 5906
+      },
+      {
+        "path": "docs/design/R1-v1-openspec-marketplace-BA-DESIGN.md",
+        "reason": "file-budget",
+        "size": 5370
+      },
+      {
+        "path": "docs/distribution/plugin-submission-packet.md",
+        "reason": "file-budget",
+        "size": 5991
+      },
+      {
+        "path": "docs/launch/social-posts.md",
+        "reason": "file-budget",
+        "size": 5700
+      },
+      {
+        "path": "docs/plans/2026-05-12-arcgentic-mvp-plan.md",
+        "reason": "file-budget",
+        "size": 175485
+      },
+      {
+        "path": "docs/plans/2026-05-13-arcgentic-v0.2.0-spec-amendment-01-layout.md",
+        "reason": "file-budget",
+        "size": 12391
+      },
+      {
+        "path": "docs/plans/2026-05-13-arcgentic-v0.2.0-spec.md",
+        "reason": "file-budget",
+        "size": 120416
+      },
+      {
+        "path": "docs/plans/2026-05-30-arcgentic-source-rule-alignment.md",
+        "reason": "file-budget",
+        "size": 9453
+      },
+      {
+        "path": "docs/plans/2026-05-31-arcgentic-v0.3-openspec-superpowers-marketplace.md",
+        "reason": "file-budget",
+        "size": 1950
+      },
+      {
+        "path": "docs/plans/2026-06-02-arcgentic-v1-openspec-superpowers-design.md",
+        "reason": "file-budget",
+        "size": 20232
+      },
+      {
+        "path": "docs/plans/2026-06-04-arcgentic-adoption-first-screen-design.md",
+        "reason": "file-budget",
+        "size": 1531
+      },
+      {
+        "path": "docs/plans/2026-06-06-arcgentic-v2-codex-session-orchestration.md",
+        "reason": "file-budget",
+        "size": 4713
+      },
+      {
+        "path": "docs/plans/2026-06-06-arcgentic-v2-complete-implementation.md",
+        "reason": "file-budget",
+        "size": 5692
+      },
+      {
+        "path": "docs/plans/2026-08-12-arcgentic-claude-code-native-broker-design.md",
+        "reason": "file-budget",
+        "size": 6078
+      },
+      {
+        "path": "docs/plans/2026-08-12-arcgentic-claude-code-native-broker-plan.md",
+        "reason": "file-budget",
+        "size": 20878
+      },
+      {
+        "path": "docs/plans/2026-08-12-arcgentic-mcp-ui-status-panel-design.md",
+        "reason": "file-budget",
+        "size": 7978
+      },
+      {
+        "path": "docs/plans/2026-08-12-arcgentic-mcp-ui-status-panel-plan.md",
+        "reason": "file-budget",
+        "size": 32116
+      },
+      {
+        "path": "docs/plans/2026-08-12-arcgentic-v2-topology-engine-plan.md",
+        "reason": "file-budget",
+        "size": 37367
+      },
+      {
+        "path": "docs/plans/2026-08-12-arcgentic-v2-topology-graph-engine-design.md",
+        "reason": "file-budget",
+        "size": 10520
+      },
+      {
+        "path": "docs/plans/v0.1.0-alpha.2-meta-handoff.md",
+        "reason": "file-budget",
+        "size": 2850
+      },
+      {
+        "path": "docs/releases/v2.0.0.md",
+        "reason": "file-budget",
+        "size": 3846
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-02-R1-v1-openspec-marketplace-handoff.md",
+        "reason": "file-budget",
+        "size": 13332
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-03-R2-v1-release-hardening-handoff.md",
+        "reason": "file-budget",
+        "size": 14503
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-03-R3-v1-prepublish-fix-handoff.md",
+        "reason": "file-budget",
+        "size": 12623
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 22225
+      }
+    ],
+    "omitted_count": 31,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 231,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 37,
+      "complete": false,
+      "omitted": 31,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_927f0bf327ae5707a7424b0c848552ba",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 3,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/arch1esun/arcgentic/645c345077d78a6525055f641eb677c361ae767a/8f6a77ad6d7d02bc/manifest.json",
+  "package_id": "pkg_9d05314f14d53a5d141d4482c133aa3f94adc2ea0fb8b0226a646f88f1ec164e",
+  "repo": "arch1esun/arcgentic",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1d9ef36ccb89924d90463162319ed759432064e9f707f23257045c7e30dbb7e1",
+  "snapshot_id": "8f6a77ad6d7d02bc",
+  "sources": [
+    {
+      "commit": "645c345077d78a6525055f641eb677c361ae767a",
+      "git_sha": "a30798da4d8b57ab8d24de2ac5efb2f915473458",
+      "lines": 326,
+      "path": "CLAUDE-v0.1.0-handoff.md",
+      "repository": "arch1esun/arcgentic",
+      "sha256": "e75dde21c95f36ddad0ab97f33469b0551d2c72f20c5cfeb190fcba44cb2f325",
+      "source_id": "src_fdb9354a2bce53e4af16325026808e10",
+      "stored": "claude-v0.1.0-handoff.md-82c9e2cb7b86.md",
+      "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/CLAUDE-v0.1.0-handoff.md"
+    },
+    {
+      "commit": "645c345077d78a6525055f641eb677c361ae767a",
+      "git_sha": "cb243e51ff07a1930639d2ecfd2ec96013246cc0",
+      "lines": 52,
+      "path": "PRIVACY.md",
+      "repository": "arch1esun/arcgentic",
+      "sha256": "646a31642e92b6dd6b2d5822e01f055e5d9a5d77a6f435baa700acf7eb0c3e86",
+      "source_id": "src_0ee3d901432c580a8015fea0decf00a1",
+      "stored": "privacy.md-ee5dfa56c2aa.md",
+      "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/PRIVACY.md"
+    },
+    {
+      "commit": "645c345077d78a6525055f641eb677c361ae767a",
+      "git_sha": "8f5be1f2c06f6d3eb026d77b5e07550767101866",
+      "lines": 536,
+      "path": "README.md",
+      "repository": "arch1esun/arcgentic",
+      "sha256": "754600148b7a4db6a49a9098a281ad50f986ab775bb86e90cf4ec76cf8d123d5",
+      "source_id": "src_bfa788ad2b71566eb32db98556df84b5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.md"
+    },
+    {
+      "commit": "645c345077d78a6525055f641eb677c361ae767a",
+      "git_sha": "e75a599cdf419c81d8fbcd6b76d655b3b7fc5408",
+      "lines": 486,
+      "path": "README.zh-CN.md",
+      "repository": "arch1esun/arcgentic",
+      "sha256": "b1ab3abce43a85d6846fa5b61fb61791d17f9e81792a188bba636e0de2399148",
+      "source_id": "src_047265f82889538fae4b4afb005c2b0b",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/README.zh-CN.md"
+    },
+    {
+      "commit": "645c345077d78a6525055f641eb677c361ae767a",
+      "git_sha": "62a6ef03f61859a8234738e68edfb101f77de8c7",
+      "lines": 79,
+      "path": "docs/audits/R1-v1-openspec-marketplace-self-audit.md",
+      "repository": "arch1esun/arcgentic",
+      "sha256": "97c14086fa683aa5f1db0aaefadebb4313bcbdc966378d1dfa58d7ac48b265f5",
+      "source_id": "src_97f86f74a3775c0481d0e4723ec60dd3",
+      "stored": "r1-v1-openspec-marketplace-self-audit.md-b716b61403bd.md",
+      "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/docs/audits/R1-v1-openspec-marketplace-self-audit.md"
+    },
+    {
+      "commit": "645c345077d78a6525055f641eb677c361ae767a",
+      "git_sha": "b2455190d7d19344da502b379d43b40f76bf8bae",
+      "lines": 24,
+      "path": "docs/tech-debt.md",
+      "repository": "arch1esun/arcgentic",
+      "sha256": "3fc174b3f2b8e707319fa0916c31a1fff7f29d47b79bff4bbe6b2e945b91b8a5",
+      "source_id": "src_b507701e70785d778e884a352cec2e0e",
+      "stored": "tech-debt.md-985785490916.md",
+      "url": "https://github.com/Arch1eSUN/Arcgentic/blob/645c345077d78a6525055f641eb677c361ae767a/docs/tech-debt.md"
+    }
+  ],
+  "summary": "Arcgentic v2.2.0 is a harness-engineering plugin for Codex and Claude Code that wraps coding work in a gated Orchestrator/Planner/Developer/Test/Auditor workflow, distributed via PyPI, npm, and a Claude Code marketplace. Evidence is mostly README documentation plus a developer handoff file describing contributor workflow rules. Evidence coverage: 149 of 288 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

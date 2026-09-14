@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_182f5fc591e4930b27cf89ccbec5306b9840efb047fad94277b50d3b8c5e2783
+- clm_231a11370b0adf1e6857ec602bbde8981e9e8dee3277ce5c2f4030de8fdc8087
+- clm_33cada1c29493fad7230c47babb74cae8304e4eca6f32aeb924e7aa96dd8689f
+- clm_5938e0db067c81f5ec34e7348f766562e74ed3bb7b797d07621932dce84ce234
+- clm_77cbfdd8444aaae10e28ccbe4c26d4f8c3fe0a796a2222b134d51a62542f3217
+- clm_96ac528a0049f79ba9a5e4924781610eebc1281270d5e65748f34db8311214e8
+- clm_a953c625edfae43d7cb6eba41ce23fe4a21f064d1e1f1d78732f1e3b6207681e
+- clm_b5eba3c7d7a5c68fa847906a45f9a3d7997aec9eb7e141dbda9e2d75f66a30c2
+- clm_bb336a938368bd6895b58328cb2c807cb3ad8be0d1ee054491cce29e60003d29
+- clm_c1d69b4aeb6255b6a3938d4b0b715b2976b27bd9457e20568380145543e195d1
+- clm_d1049be2257ea23bb11dc3158ad09cbc4b965d31d0844be22d7e25f4950d7b9d
+maturity: draft
+page_id: pg_19ade5f67d4b54d2b03270925425e06c
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: fareedkhan-dev/multi-agent-training-grpo
+updated_at: '2026-09-14T03:50:29Z'
+---
+
+# fareedkhan-dev/multi-agent-training-grpo
+
+<!-- rcw:begin owner=entity:ent_2ff81b2f42bf5ce0a2d01ab10afb30f5 block=evidence -->
+- fareedkhan-dev/multi-agent-training-grpo is mentioned in this evidence. [@claim:clm_182f5fc591e4930b27cf89ccbec5306b9840efb047fad94277b50d3b8c5e2783] [@claim:clm_231a11370b0adf1e6857ec602bbde8981e9e8dee3277ce5c2f4030de8fdc8087] [@claim:clm_33cada1c29493fad7230c47babb74cae8304e4eca6f32aeb924e7aa96dd8689f] [@claim:clm_5938e0db067c81f5ec34e7348f766562e74ed3bb7b797d07621932dce84ce234] [@claim:clm_77cbfdd8444aaae10e28ccbe4c26d4f8c3fe0a796a2222b134d51a62542f3217] [@claim:clm_96ac528a0049f79ba9a5e4924781610eebc1281270d5e65748f34db8311214e8] [@claim:clm_a953c625edfae43d7cb6eba41ce23fe4a21f064d1e1f1d78732f1e3b6207681e] [@claim:clm_b5eba3c7d7a5c68fa847906a45f9a3d7997aec9eb7e141dbda9e2d75f66a30c2] [@claim:clm_bb336a938368bd6895b58328cb2c807cb3ad8be0d1ee054491cce29e60003d29] [@claim:clm_c1d69b4aeb6255b6a3938d4b0b715b2976b27bd9457e20568380145543e195d1] [@claim:clm_d1049be2257ea23bb11dc3158ad09cbc4b965d31d0844be22d7e25f4950d7b9d]
+<!-- rcw:end owner=entity:ent_2ff81b2f42bf5ce0a2d01ab10afb30f5 block=evidence -->
+
+## Researcher notes
+

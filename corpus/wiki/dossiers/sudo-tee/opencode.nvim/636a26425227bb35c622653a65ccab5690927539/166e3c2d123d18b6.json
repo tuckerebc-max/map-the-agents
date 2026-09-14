@@ -1,0 +1,734 @@
+{
+  "applied_operation_id": "op_705275a69d2d4ab6903bf4ce6c686445",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9dfbb7ff2f78e3f6ff3295ed494798bf0e0d7727197d55f2a9432624c6574eba",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3eb0b1ac6499346667244612218bf6c166a657e747bf8bba7bba3ccbff07b8a4"
+      ],
+      "text": "The plugin bridges Neovim and the opencode AI agent, providing a chat interface that captures editor context such as the current file and selections, with persistent sessions tied to the workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49ca772a38e6eff8ef8ae591fa0ce3d07c2bbbbc0c1d79b39fe631c0b77879b7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4300aee06e89ff7c49826953b83fce178c5d7b730f078118f341c64a61d3c26f"
+      ],
+      "text": "A dedicated chat panel window inside Neovim shows previous messages and responses and uses workspace/editor state as context for iterating on code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_401bcd08fe6b427b6b44c8bc8619e9739adeb82b5de8cd12a97e768952ed0b27",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a50e95ada69f777c6e46c248b6c9cb24022663759852a265cd20c34189e39eaf"
+      ],
+      "text": "An experimental quick buffer chat feature (<leader>o/) chats using the current buffer context, capturing visual selections or the current line, and the AI's quick edits are applied by the plugin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5621af849e40a0dd4d13787851b4189f0188804f6085142a3652b2004c20a61",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 718,
+          "line_start": 656,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L656-L718"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 654,
+          "line_start": 654,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L654-L654"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8523b5e2afecc9d49750ab2125c0b83b2f874c1013c23140ac93ff8393adf3d6",
+        "slc_901b52b3ba6a478b3f3a6ce4be271da0fb8118f4432e602a7e9426c35f0a38a2"
+      ],
+      "text": "Actions are reachable via default keymaps (e.g. <leader>og toggle), user commands (e.g. :Opencode open input), and Lua API functions such as require('opencode.api').toggle()."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c20d380087d31052ea4c799747cad3915c374858eac35b41fb2316bc65e94a42",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "3bb8ef03626ff08b57cf0128153c521c9ffa7b3f",
+          "line_end": 12,
+          "line_start": 10,
+          "path": "docs/recipes/change-by-change-review/README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/recipes/change-by-change-review/README.md#L10-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55620c9fcb77bd02040211d77e8e92e5a047d941edd89e308f2ffd2ef733cbc0"
+      ],
+      "text": "The plugin exposes a diff view of modified files since the last prompt via :Opencode diff_open, :Opencode diff open, pressing D on a 'Created Snapshot' output, or the default <leader>od keymap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_731b3fd7396788213ab1336c8e49f67a9e2133d389da17aaac53912c914a6f8f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 764,
+          "line_start": 761,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L761-L764"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 755,
+          "line_start": 747,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L747-L755"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c472da154951140d3a2f12bfb15b37c57adffe3a66ae373e84cd29b6079e88f9",
+        "slc_e962b2f788466641f25bb36d11f03c55f788d4c0bac3b116b732fa761b2bccfc"
+      ],
+      "text": "Prompts can be run with options overriding the agent, model, or per-prompt context types (current_file, selection, diagnostics, cursor_data), e.g. agent=plan context.current_file.enabled=false."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43efeec5a5fa4211c5bd210c008c47016dede64629a6ad312a7ca01b0a0d77aa",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 768,
+          "line_start": 768,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L768-L768"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_87b9ce98fd197536b67d65c1f0970577229525ae9ed4d7ec7b1bee7a4c86568d"
+      ],
+      "text": "Opencode issues permission requests for potentially destructive operations (file edits, reverts, shell commands, persistent tool access); requests appear inline and must be answered before the action proceeds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3dc2f3604b3ce498691173863074b58ea065bc4d92f8ab88a493b8a3bea0fba0",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 780,
+          "line_start": 777,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L777-L780"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b0a43d4084ff2857483c9ab791b5419f5018e7894b564b153788f6eab37584d6"
+      ],
+      "text": "Permission requests can be answered via a dialog (j/k plus <CR> or number keys), commands like :Opencode permission accept/accept_all/deny, or API functions mapping to once/always/reject responses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b6999515845995de780c194625a6db8ab91f843f97de0b91f941d198394b896",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L71-L71"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L77-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a205d375d71c104ffe55496e50d2fd0c864efab9aeb80eabfe3af979b3172e20",
+        "slc_ae0bf343afca8c6c5e8a065f0618c3f142b2b7379044ff044bf8e1b563b988d4"
+      ],
+      "text": "The plugin requires the Opencode CLI v0.6.3 or newer to be installed and available."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_53236c67f284ba1a6764c1985b9b940aaca713a266162841b775a27d8c60e1df",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 102,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L85-L102"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 111,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L104-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3097beb5ae3b251eb555908943be663faed431091f5ba97de57e05bd8f8dd0c2",
+        "slc_fdd83fa1e7f72f3518cb4a3b8e848cfc2f885665c12f671ac42b5f5295b62c30"
+      ],
+      "text": "Recommended lazy.nvim setup lists render-markdown.nvim as a dependency, with optional blink.cmp or nvim-cmp for completion and snacks.nvim, telescope, fzf-lua, or mini.nvim as optional pickers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3effa5b394bd24207d07e90b610c7217b5e339ebd163a1216fad1507b3ebcefc",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 417,
+          "line_start": 417,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L417-L417"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 421,
+          "line_start": 419,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L419-L421"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 423,
+          "line_start": 423,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L423-L423"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c511f5ed068ca575ea1a5ea4ad26b658579278b77545ab7b4ad81e35b032378",
+        "slc_39a04a0a97834603e55ef58a9e161ba9fed4273bf4e80d5fdb1298e737518f46",
+        "slc_4f873643f1f2da9b36dc448377c85cd0435700d3a2d0fe4a80a8f2beb74500b0"
+      ],
+      "text": "Favorite models, toggled with <C-f> in the model picker, show a star icon, sort to the top, and persist across Neovim sessions; the plugin respects the OpenCode CLI storage format."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_158e498610f93c3c97771a523d44ae78febef2ee186892d371e9bb64011be9ce",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 539,
+          "line_start": 537,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L537-L539"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 530,
+          "line_start": 530,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L530-L530"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 533,
+          "line_start": 532,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L532-L533"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b23d6197b228f8d521319d21cff0619b195b48129facc1f9db990e1ac3d7af4",
+        "slc_51cdb76dbe0689bcd74826139cf234ae9845e4c6527ccd671642867b8c2e81df",
+        "slc_df23b33a373558067f95c73987eff370e7ef0b9e574e72ef7740be68bade8f56"
+      ],
+      "text": "With ui.persist_state true (default), toggle hides/restores the UI keeping buffers in memory for fast restore; false fully tears down and recreates buffers, and close() always fully closes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f8a01e5f8290537cb72641aee6f97caf91a4521a0d43f7c73e98c246df5bab6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 137,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L127-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68afdba8c732452877a6cb0812eb8813a8d6e5b5f8ff54c0ef8796c5b86803bb"
+      ],
+      "text": "The server configuration supports custom/external opencode servers with url, port, timeout, spawn_command, auto_kill, path_map, and Basic-auth username/password with env-var fallbacks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a82290514b057ff325c8033eb9f424dff77f5beeb654cfe8cc9aabefb63f2d42",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "1b907d33ad2046303e536240b1a244f52d51a2e7",
+          "line_end": 23,
+          "line_start": 21,
+          "path": "docs/recipes/bidirectional-sync/README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/recipes/bidirectional-sync/README.md#L21-L23"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "1b907d33ad2046303e536240b1a244f52d51a2e7",
+          "line_end": 82,
+          "line_start": 79,
+          "path": "docs/recipes/bidirectional-sync/README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/recipes/bidirectional-sync/README.md#L79-L82"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "1b907d33ad2046303e536240b1a244f52d51a2e7",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/recipes/bidirectional-sync/README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/recipes/bidirectional-sync/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5fc0a4f8b130f764b1757e806c6d4d900fceb91a34c50350673c0b0670211f24",
+        "slc_825240406a22561e09d16756e447a42745d93a9dcbdd89a04f54b68737e08472",
+        "slc_bcd249eee274f840d04738538b1cf55d5ac06912506b1de9c5b64633d0ef9718"
+      ],
+      "text": "A bidirectional-sync recipe shares one HTTP server (default port 4096) between the opencode TUI and the nvim plugin so session state persists across switches; the TUI attaches via 'opencode attach' and the server stays alive until manually killed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99fb369f209c07d12b7b1ee9e4962c6f4328c5fd2be596fe0055f682510ba296",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "16d606b0959f78d104292e56ff8b67bd1aecbf1a",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "docs/README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/README.md#L17-L20"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "16d606b0959f78d104292e56ff8b67bd1aecbf1a",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "docs/README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/README.md#L22-L22"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "16d606b0959f78d104292e56ff8b67bd1aecbf1a",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/README.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3dc6bb7739a1daf223f239485c910b8fa403fa0f321ccba4403eb01659b43ed3",
+        "slc_c6f6d52723d6cd5da756e56f0a2980330c786ad3e44e7b56293101e6c3b4f417",
+        "slc_e7a4ed7d761c0670ade8cb1c61a157fe36baa02a9b9a3bd9dd50fe253e1d2123"
+      ],
+      "text": "Repository development practice: recipe contributions should use the provided template, start from the problem being solved, include a GIF demo, give step-by-step setup instructions, cross-reference related recipes, and be self-contained."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_09b4d6767cebabeb82e24c87f463cba1493e545dde58a8c22913a5642e0944e6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L69-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d4e2df67d7d4c575f7a567996e6ed6476642a0cbc23d1073a1be85b0e58f4a2"
+      ],
+      "text": "The README cautions that the plugin is in early development, may have bugs and breaking changes, and is not recommended for production use yet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8fe2647361b7676fdf1eab07e073f1c931dc290c5f4773295045f7a0faf0f656",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 794,
+          "line_start": 788,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L788-L794"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 786,
+          "line_start": 786,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L786-L786"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_729ca0bbb1e2547ed11118b05a2ee0b6c7f77591a5ca1f70ecd3c9067583654a",
+        "slc_ae030a1939e79cb76210f85c24e961dcb859cebc26528387b7c67623a8d73d14"
+      ],
+      "text": "Editor context is automatically captured for conversations, including current file, visual selection, mentioned files, diagnostics, and cursor position/line content."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b0c50c736686a6886ae1de5a5cb4907fb7ff23cc047fecab1617b8c06ec74eb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 413,
+          "line_start": 411,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L411-L413"
+        },
+        {
+          "commit": "636a26425227bb35c622653a65ccab5690927539",
+          "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+          "line_end": 435,
+          "line_start": 435,
+          "path": "README.md",
+          "repository": "sudo-tee/opencode.nvim",
+          "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md#L435-L435"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1144807cf1034d796851e80e78d8232ed9f30000bb020461bdd7bc813cd40f3",
+        "slc_c3c28a3905436d225dff020f7d7f6213c8ffbee7219f1e7d709524f8c3791077"
+      ],
+      "text": "The model picker sorts favorites first (by favoriting order), then recently used models, then others alphabetically; variant selection per model is remembered for future use."
+    }
+  ],
+  "commit": "636a26425227bb35c622653a65ccab5690927539",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1323,
+        "path": "README.md",
+        "size": 68319
+      },
+      {
+        "lines": 82,
+        "path": "docs/performance-audit.md",
+        "size": 6487
+      },
+      {
+        "lines": 22,
+        "path": "docs/README.md",
+        "size": 863
+      },
+      {
+        "lines": 43,
+        "path": "docs/recipes/TEMPLATE.md",
+        "size": 609
+      },
+      {
+        "lines": 121,
+        "path": "docs/recipes/bidirectional-sync/README.md",
+        "size": 2978
+      },
+      {
+        "lines": 118,
+        "path": "docs/recipes/change-by-change-review/README.md",
+        "size": 4028
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/recipes/three-state-layout/README.md",
+        "reason": "file-budget",
+        "size": 1797
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 1165
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 355,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_e8a0708805da5a92ab9847a5458d262c",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sudo-tee/opencode.nvim/636a26425227bb35c622653a65ccab5690927539/166e3c2d123d18b6/manifest.json",
+  "package_id": "pkg_0d970e24de8588f1e5589397390ebf7e1f842c895d0e160df48e5346df9124f3",
+  "repo": "sudo-tee/opencode.nvim",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9b171c962281f39517ef7efd36b6d32ecf6715344393fe7ec21cc1ce9a48ec14",
+  "snapshot_id": "166e3c2d123d18b6",
+  "sources": [
+    {
+      "commit": "636a26425227bb35c622653a65ccab5690927539",
+      "git_sha": "6d42f1696d4b50e104032b2a6a6ba383397ed38a",
+      "lines": 1323,
+      "path": "README.md",
+      "repository": "sudo-tee/opencode.nvim",
+      "sha256": "8954167355bfc315c81062815929e11d462b9d0a5dbaf9d218a225ef286a5a87",
+      "source_id": "src_a2bbf80420c95f7ca096a720cb368939",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/README.md"
+    },
+    {
+      "commit": "636a26425227bb35c622653a65ccab5690927539",
+      "git_sha": "16d606b0959f78d104292e56ff8b67bd1aecbf1a",
+      "lines": 22,
+      "path": "docs/README.md",
+      "repository": "sudo-tee/opencode.nvim",
+      "sha256": "6960df360355a67bd4520ff1617553cf07533be74485c9920f8b4c430cbd75c3",
+      "source_id": "src_3a0469724adf5ce2a91cf8903773862e",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/README.md"
+    },
+    {
+      "commit": "636a26425227bb35c622653a65ccab5690927539",
+      "git_sha": "dd8284d7a475684711e0fd60d4f0fdee3c19ffb2",
+      "lines": 82,
+      "path": "docs/performance-audit.md",
+      "repository": "sudo-tee/opencode.nvim",
+      "sha256": "02b56354678a715d0e1f8cab01a2aff9e27a0494bedcae97df5cc99fddb522f2",
+      "source_id": "src_110484caf31e5f1093a89c021f7f3fc4",
+      "stored": "performance-audit.md-a937bbca9635.md",
+      "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/performance-audit.md"
+    },
+    {
+      "commit": "636a26425227bb35c622653a65ccab5690927539",
+      "git_sha": "eff989adf728b766deeb971669141ef8f90cce34",
+      "lines": 43,
+      "path": "docs/recipes/TEMPLATE.md",
+      "repository": "sudo-tee/opencode.nvim",
+      "sha256": "76b06859317d105894b4f263dc21ca8ca269011adc310109c96b04e1e8f788b6",
+      "source_id": "src_7a49e7cca65c5c13901dc973eb13dc6f",
+      "stored": "template.md-0e370e2d69b8.md",
+      "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/recipes/TEMPLATE.md"
+    },
+    {
+      "commit": "636a26425227bb35c622653a65ccab5690927539",
+      "git_sha": "1b907d33ad2046303e536240b1a244f52d51a2e7",
+      "lines": 121,
+      "path": "docs/recipes/bidirectional-sync/README.md",
+      "repository": "sudo-tee/opencode.nvim",
+      "sha256": "149f3f01a6863365bc0addd4d3c82240982879b861db86add3890fc25c11702c",
+      "source_id": "src_d6d33359706c5c2ab71ac78ee9ad846e",
+      "stored": "readme.md-5507d1e01e4e.md",
+      "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/recipes/bidirectional-sync/README.md"
+    },
+    {
+      "commit": "636a26425227bb35c622653a65ccab5690927539",
+      "git_sha": "3bb8ef03626ff08b57cf0128153c521c9ffa7b3f",
+      "lines": 118,
+      "path": "docs/recipes/change-by-change-review/README.md",
+      "repository": "sudo-tee/opencode.nvim",
+      "sha256": "5b155586d2a991be573c77106cc1da9355c36551a4973dfb221a684b1ffa2cc8",
+      "source_id": "src_99cceb9d93a45636a0c171b4914f01d6",
+      "stored": "readme.md-32e837654a95.md",
+      "url": "https://github.com/sudo-tee/opencode.nvim/blob/636a26425227bb35c622653a65ccab5690927539/docs/recipes/change-by-change-review/README.md"
+    }
+  ],
+  "summary": "Evidence covers the opencode.nvim Neovim frontend plugin: its chat UI, commands/keymaps/API, context capture, permission handling, server configuration, and community recipes (change-by-change review, bidirectional TUI/nvim sync). Most claims are documentation-based; no source code is included in the slices. Evidence coverage: 147 of 262 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

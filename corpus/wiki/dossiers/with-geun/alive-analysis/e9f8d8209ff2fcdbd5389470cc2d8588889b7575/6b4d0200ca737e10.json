@@ -1,0 +1,851 @@
+{
+  "applied_operation_id": "op_d9168efb6fd24129b93d19208252f4d2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8eca49103057ef62c2b73cadf2d63d29a3a6e5e650e4cfb8bb845a331e910a2b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L3-L3"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 9,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L5-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aac524b5e38e6e016e2f9c885e4f5aaef9e200788445f0540d8472bf16b79bd7",
+        "slc_f4589cfc776b8d987b9df2e1dc0267f964de2f342904ddb4e40da0d79c0973c8"
+      ],
+      "text": "The product is a structured analysis workflow for AI coding agents, versioned 1.4.0 and MIT-licensed, with its MCP server distributed on npm as alive-analysis-mcp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c713e5de00cf36e36dd5dfd45cb26a4f8f315e617623a16d7f0b359c62d2ce5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 76,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L70-L76"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L68-L68"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24eb0c0013bee424ebcad89118881997315c911772b964afba3cd565844c93fe",
+        "slc_305d5bab5f527d19817f92cb3d0bc624c5bde3bebb19bba09df18765f7343f38",
+        "slc_d58470e2b8cd045a7ba1d8bc76e752587c2e4562ad1619fae8df24f51e8edb7f"
+      ],
+      "text": "Analyses follow a five-stage ALIVE loop (ASK, LOOK, INVESTIGATE, VOICE, EVOLVE); each stage produces a markdown file and has a checklist plus a quality gate before advancing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68a747fa5b84177e8c72b23a834b71d99e8911595d41008d634785c50377b4e3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L104-L104"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L85-L85"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25d9125e523d223ba6cc1045add5677b669fee14924827f48a7ea113804e88e5",
+        "slc_a59e90913302884021106ebdde49907e36ea964d3597c2b5d4cf696cd434c2b4",
+        "slc_adc15d6bee3c84365257573bcdc751ce239128dac3d70a2e2195e6e0cb9218ba"
+      ],
+      "text": "Three analysis modes exist: Full (five per-stage files, ~40-item checklists), Quick (single file, compressed checklist, promotable to Full via /analysis-promote), and Learn (guided scenarios with rubric-based scoring)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d549687835c904fd64a719ee9a77bac891c203766fbffd0bcf89da3dc365c8d4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 124,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L116-L124"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 134,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L128-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b550dd8d15e6f4efd03ae0c2388dd780caa90d884bfba115adcd5de2daf165f",
+        "slc_51f6aaeef48d837d712c4b5efe75a28023e4b0776472144181e6406a4f06ecca"
+      ],
+      "text": "The product exposes slash commands including /analysis-init, /analysis-new, /analysis-next, /analysis-status, /analysis-archive, /analysis-list, /analysis-promote, /analysis-search, /analysis-retro, /analysis-dashboard, /analysis-dr, and /analysis-wiki."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0c198c3e506aef2728817f79cdfde75acb6d1e4a78863dc95863926a278aae1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 165,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L165-L165"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L169-L169"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 190,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L190-L190"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 176,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L171-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5976851a70d82d4f29273512a473659530c205f676681d5a0f8e109c2c2086d7",
+        "slc_ef9cac9518a609df9764aa354745d2b6c1d539a24d0e64c9d4c43af332434b43",
+        "slc_f7210564cebca4640e8c69bd7340e9287507260439bb3e55b8dbd8df1c9597a4",
+        "slc_fc07cab50b88c2b3b48c322444802b8f0c0dd8297a859c35fa8280ee5db99b0b"
+      ],
+      "text": "A routing engine reads analysis context and recommends specialists from a pool of 31 agents, presenting the top 3 with explanations; four gate agents (scope-guard, data-quality-sentinel, ethics-guard, reproducibility-keeper) auto-run when their trigger conditions are met."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4eb19095b825e1dce149eb592b543a2c3cba59be0d3a5c9fb358d80f6e477c5b",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 192,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L192-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bbd7456937978f7bea3b2be11e4d9827d25c53d1a88d55272c4530665b0322af"
+      ],
+      "text": "Agents can be disabled per-project via a .analysis/agents.yml configuration file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a0059637d9c2dec44469c8016c9b5119cd0c3a6ab73b65419c60346199c2b79",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 209,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L204-L209"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 202,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L200-L202"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 198,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L198-L198"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7022a796c056b2641a6a46cf7a70db6e36866463f1cac245f5eab403739b2129",
+        "slc_8cb663162f0b48d940a78562454ffc69cabbb2fc10ffcddb127078ae214b9cca",
+        "slc_d7b8963ba1c24ef7e890d01c096f0760926ee6020f4fdf107bdd75112b8216dc"
+      ],
+      "text": "Experiment-type analyses adapt the loop to DESIGN, VALIDATE, ANALYZE, DECIDE, LEARN with enforcements including a pre-registration lock, automatic SRM detection, guardrail metrics, and multiple-comparison correction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb8b142d8da726cb48de1fafc9894d79902ea0afa680698d00408866a3f0640b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 402,
+          "line_start": 397,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L397-L402"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 383,
+          "line_start": 373,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L373-L383"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 393,
+          "line_start": 385,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L385-L393"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 141,
+          "line_start": 138,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L138-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d093a157575e419251ee859e4a8dc46f04649f824e15db7d876fa5f07f45aed",
+        "slc_22f9f190b309e14ba80152e3b4338fc8d635ae0126a92e2d4b005963bd5654ea",
+        "slc_25f115a150a1bf3bd5cf905bedf451192bcd4b668727741f0078951025c4bf19",
+        "slc_88fca986e1c1ab62343eed0d3f82c2c79a040e5cc82935c964b08c8da2ea5936"
+      ],
+      "text": "The MCP server (alive-analysis-mcp) exposes four tools — alive_list, alive_get, alive_search, alive_dashboard_export — configured for Claude Desktop via an --analyses-dir argument or for Claude Code via an ALIVE_ANALYSES_DIR environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5480a7cfb79f0be9eca4f737d770f3f02b949d0938504601eca8059b1034edeb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L132-L132"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 340,
+          "line_start": 333,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L333-L340"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 46,
+          "line_start": 25,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L25-L46"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L13-L13"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L124-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4443c30ea59ddaf2f08c681bcda6dc992276beb83581691b1541f3b41c1730a1",
+        "slc_744abe037dc266ac2de5ad93af7d2b7eb98cc0a42ecb1eaee4bbc9998a3d2e2a",
+        "slc_8da43fc28aafb0b1e7f648ce4514c4223ebee0789c5142c8db1307e994c19dfa",
+        "slc_91258db9776df806bc8ded865bc7e85f5ac7c3b2a7035de9c7030b9581901377",
+        "slc_e761ca59033df0abbe31d846d76a822b44c4738594652b71cb0b257646e80e9e"
+      ],
+      "text": "The team dashboard is a single-file HTML5 force-directed node graph (D3.js v7) where node size encodes stage progress, color encodes analysis type, and edges show follow-up or shared-tag connections; data comes from a bash export script emitting JSON."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06b571ebb4f377585c41fbff0f36d8ac2cc9790eb6549833364b5ba631d35f64",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 82,
+          "line_start": 77,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L77-L82"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L56-L56"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 89,
+          "line_start": 86,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L86-L89"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 62,
+          "line_start": 58,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L58-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3fff2d5849c7ef0c1c278255a54ad69ede617b3d485280ffd42dbd0c19dc2214",
+        "slc_53987a9d1b09cf6dfdc9efe1d1032bb947b5fe39e57b4a3d911c472e31efc6b0",
+        "slc_6914b426e1f9a4b1ee135fd9eae0e24b8eb5bd63a84f16bae6ef34fdc877482b",
+        "slc_b4bd31efb92b076a94aea449b58575901d83aafa4d7303f12bfdc25cfafd87c0"
+      ],
+      "text": "The dashboard was deliberately built as vanilla single-file HTML/CSS/JS with no build step, using a seeded PRNG (seed 42) for deterministic demo layouts and a three-level opacity scheme (1.0/0.22/0.05) for highlighting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5424e1bab7ced145dec46f54f6182fc4592ff3bcf1992329e130e2ff66b23409",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 130,
+          "line_start": 126,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L126-L130"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+          "line_end": 62,
+          "line_start": 58,
+          "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md#L58-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e8da6635c4b4ad5ee1a74231cf1216f3eb5adcd3d2d9a815b43c885e3b2522b",
+        "slc_b4bd31efb92b076a94aea449b58575901d83aafa4d7303f12bfdc25cfafd87c0"
+      ],
+      "text": "The dashboard's only external JS dependency is D3.js v7 loaded from a CDN, and the export path requires no server or database (pure file-based JSON export)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f40ab06dac6a094c5ae2d85ccbce7383fd4bf12378cf8e15c31da7f1b715339",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 532,
+          "line_start": 532,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L532-L532"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 534,
+          "line_start": 534,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L534-L534"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 536,
+          "line_start": 536,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L536-L536"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1463544337382652d6fd076218586f1f254df2e49cf1818d6701c58709c34756",
+        "slc_1e6ebd8756bb1c8082f00b573cf06ce5951438b0d85784026e1551d5a7340d14",
+        "slc_c570cfe1ecb11ce6ad85732afb50f491ae0f31cf7b78719486fa80f7733fde13"
+      ],
+      "text": "The README states the product is not a BI tool, does not connect to databases or run queries automatically, and is tool-agnostic about the user's data stack (SQL, Python, R, notebooks, spreadsheets)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e34bea2087838fa9d13c24274906cc14a3bd5e1ad2244be65a23e893b7116c5a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 557,
+          "line_start": 557,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L557-L557"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67a0027165f27ee001e935d77557ffcc3b69ad2006f6c5682824db17e16e3ab0"
+      ],
+      "text": "Repository development practice: the README's Contributing section says issues and PRs are welcome and points contributors to CONTRIBUTING.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc85f846cbe4371da7a7bd63cc0021c9ad8192e27c22f0bda0ef2d785f126c18",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L17-L17"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L15-L15"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e612d3cd0a0fde0b50e30d6d53d208bd60db09df6f9a6261719d80eea2331ba",
+        "slc_679a1948fde2d639685bf89a1ddc6823f5b25d18b4bd880f1db35376a5b43980",
+        "slc_d58470e2b8cd045a7ba1d8bc76e752587c2e4562ad1619fae8df24f51e8edb7f"
+      ],
+      "text": "The tool targets teams doing product/metric analysis with AI agents, aiming to preserve reasoning, data checks, and audit trails across sessions instead of losing them in chat history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0475b89f5bfe31899de4be72b7abcd8e06ae41d2b69a02a99397caa4c687dd30",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 436,
+          "line_start": 436,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L436-L436"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 434,
+          "line_start": 434,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L434-L434"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d39e2599dfccfed5f7c20ee2b7128e062ad9e1f1aa6537b2d425d8bf80b560d",
+        "slc_d293b805a58cd23afcea81c77557fd2337a03d28d4c5b400ca4116de83be0909"
+      ],
+      "text": "Education mode scores learner work against rubrics with three progressive hint levels and a graduation path (70%+ on two Beginner scenarios unlocks Intermediate; 75%+ there is deemed production-ready)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca335db59b0fc1a02d2aa7e0aab28c0b93ebbacc0497fa0ec913c85923b58b23",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 464,
+          "line_start": 464,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L464-L464"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 462,
+          "line_start": 462,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L462-L462"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2760f554a2d9c4265f4dae8b81dba592ba99b7f013f68e03c229b385f0413de4",
+        "slc_c6ae63823b154ae2b7f511cc203cab98bce718c46bd01c2217776d5df7412d08"
+      ],
+      "text": "The analyses/ folder doubles as an Obsidian vault; wiki-links like [[F-2026-0305-001]] are picked up by Obsidian's graph view."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef3c31899f024447ae41c0d8abe2737080c85cd26bcdee574b7d18a6f50075f5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 524,
+          "line_start": 515,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L515-L524"
+        },
+        {
+          "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+          "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+          "line_end": 526,
+          "line_start": 526,
+          "path": "README.md",
+          "repository": "with-geun/alive-analysis",
+          "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md#L526-L526"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83d854c0eb3c49e6f8facaea8b864f95799e61c24796a6edd4527e6adce1b4ca",
+        "slc_a501bbfb5d938c02c3afbe4ca978380cb8da340586f5204e494f2460998c41cc"
+      ],
+      "text": "Platform support is documented for Claude Code and Cursor 2.4+, with Cursor using a batch interaction model that presents all required inputs at once."
+    }
+  ],
+  "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 561,
+        "path": "README.md",
+        "size": 24045
+      },
+      {
+        "lines": 68,
+        "path": "GLOSSARY.md",
+        "size": 4082
+      },
+      {
+        "lines": 143,
+        "path": "INSTALL.md",
+        "size": 4643
+      },
+      {
+        "lines": 10,
+        "path": "docs/archive/2026-03/_INDEX.md",
+        "size": 363
+      },
+      {
+        "lines": 438,
+        "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+        "size": 17410
+      },
+      {
+        "lines": 256,
+        "path": "CHANGELOG.md",
+        "size": 15025
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 966
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4540
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 372,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_66ea3630707b569c9bc5481bd256a79c",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/with-geun/alive-analysis/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/6b4d0200ca737e10/manifest.json",
+  "package_id": "pkg_db5b33b083fa315f552b22dd49ce9f6726f03af749b065adf378e75336c54f48",
+  "repo": "with-geun/alive-analysis",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "caf86410042fc258eb716d7466e35f9aed1f1c3eaece308df9832008e03ed584",
+  "snapshot_id": "6b4d0200ca737e10",
+  "sources": [
+    {
+      "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+      "git_sha": "e7ce9780c65eec6c575d6f9ae9c33d75fce7b089",
+      "lines": 256,
+      "path": "CHANGELOG.md",
+      "repository": "with-geun/alive-analysis",
+      "sha256": "f6c3692caeb8c99c3edb34d5cb8f45155293fbe13f927395b0f95f7c36b6026d",
+      "source_id": "src_a06f85c1aecf5585ac7ec0da3b895d7d",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/CHANGELOG.md"
+    },
+    {
+      "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+      "git_sha": "a1288d8bdcbf1aa7fd24afbc4c3081f09faaf97e",
+      "lines": 68,
+      "path": "GLOSSARY.md",
+      "repository": "with-geun/alive-analysis",
+      "sha256": "fce784fe99389b95f3fcae66d7fc42927b959bb638a5699b8b818758448714a2",
+      "source_id": "src_f295b0a03f81510886f2b36f9b77c6e5",
+      "stored": "glossary.md-e76bd6f4d59f.md",
+      "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/GLOSSARY.md"
+    },
+    {
+      "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+      "git_sha": "ed7f5b6d079d7116885721ffe32aea65b724f5e6",
+      "lines": 143,
+      "path": "INSTALL.md",
+      "repository": "with-geun/alive-analysis",
+      "sha256": "7c9a1d6965293c29b5708f0eb1bc0a57e7230fb4d82c747e8758e30e92b22b16",
+      "source_id": "src_f037bf99d3645259907b41d8ee71d512",
+      "stored": "install.md-09b140a43ebf.md",
+      "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/INSTALL.md"
+    },
+    {
+      "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+      "git_sha": "d0c5ce0ac353a1c6e45cd6a57234247342f9275b",
+      "lines": 561,
+      "path": "README.md",
+      "repository": "with-geun/alive-analysis",
+      "sha256": "5513803873a1d0ecb72335ce35f4e9c8985dec4318cea24cdcba131ec7b3a425",
+      "source_id": "src_018b66cb8fbc5c9c9d7a86fd29d372ee",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/README.md"
+    },
+    {
+      "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+      "git_sha": "de36baa943b1f65d67b454e4c61c3c396f557ef0",
+      "lines": 10,
+      "path": "docs/archive/2026-03/_INDEX.md",
+      "repository": "with-geun/alive-analysis",
+      "sha256": "7016a05de1a63b8c9631866f9304fbeacf8ee3ca134158451462ebcb2a45b99a",
+      "source_id": "src_d724b86f9b5a528e99eceb184d46e5a2",
+      "stored": "_index.md-6642bd01fbc5.md",
+      "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/_INDEX.md"
+    },
+    {
+      "commit": "e9f8d8209ff2fcdbd5389470cc2d8588889b7575",
+      "git_sha": "0a3036705bc4386a01804c05942f5b49863a8fb3",
+      "lines": 438,
+      "path": "docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md",
+      "repository": "with-geun/alive-analysis",
+      "sha256": "921050b0c3730517a40339cbb2e689ca36791cc586461cb3997afeef1d817009",
+      "source_id": "src_6c5e3f350b7b5002b9df1a9587aa53cb",
+      "stored": "alive-dashboard.report.md-b4f39b13fcd9.md",
+      "url": "https://github.com/with-geun/alive-analysis/blob/e9f8d8209ff2fcdbd5389470cc2d8588889b7575/docs/archive/2026-03/alive-dashboard/alive-dashboard.report.md"
+    }
+  ],
+  "summary": "Selected evidence records: The product is a structured analysis workflow for AI coding agents, versioned 1.4.0 and MIT-licensed, with its MCP server distributed on npm as alive-analysis-mcp. Analyses follow a five-stage ALIVE loop (ASK, LOOK, INVESTIGATE, VOICE, EVOLVE); each stage produces a markdown file and has a checklist plus a quality gate before advancing.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,1468 @@
+{
+  "applied_operation_id": "op_02fe12f98ea947bc912da97c8dca2ebc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a70e6822e385ce9d3c5eb8b2c4eb30ae29da878f792680000a6bec228c9a9711",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L3-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e43a92e4a827e86f5eaf671dc1a5f872e2f1a7fc174e1f6235f8152267593329"
+      ],
+      "text": "The README describes ZhikunCode as an open-source AI programming assistant deployed once and controllable entirely from a browser, with multi-agent collaboration, Docker self-hosting, direct connections to domestic Chinese LLM providers, and what it calls a deep security architecture."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3b98eebe4bd0845a84c2740ed886384d63b8e37cd795aa140037cf7d63174f2",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 431,
+          "line_start": 422,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L422-L431"
+        },
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 418,
+          "line_start": 418,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L418-L418"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60a7457383366ceb142cdb5bca7375417c2fc7039dec3f5631b31318af793b95",
+        "slc_c64945225b8b99fe18b87da5a9d12753072237f779fe3e92c92f7d18c2ad2867"
+      ],
+      "text": "The README reports ZhikunCode completed the SWE-bench Lite benchmark (300 instances, pass@1) against an official harness, with a resolve rate of 168/300 (56.0%) and a patch-generation rate of 284/300 (94.7%), and states the evaluation artifacts are open-sourced for third-party reproduction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ae4a2b69195d13ba20965d3d65e1ce101d0141c47f552bec729041418db2cf0",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 141,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L120-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5f45e8a34b5fd84fa01835d996bd4b5059258c5a9d0e997ff8b5882ad831201"
+      ],
+      "text": "Documentation describes a unified authorization pipeline where core tools pass through a Tool Gateway: input normalization, an Operation Analyzer risk/resource check, a system-invariant check, a RUN/SESSION/WORKSPACE grant match or persistent-permission prompt, a pre-execution recheck, and a structured audit of results; high-risk operations are limited to single-use authorization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0098f537af91e14235dadc780e9896970d1fdc0d3a78534c87711bd95833c5d3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 412,
+          "line_start": 412,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L412-L412"
+        },
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 379,
+          "line_start": 379,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L379-L379"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26cb931cc0172c7a52122495d40db71c46f61af710db12cd9512b6bec3eb1780",
+        "slc_cef6ae96253b51b13ec428a7969eed6e75b8cf282673aa6913fda03317e4dc98"
+      ],
+      "text": "Documentation states MCP tools must pass three independent checks before use - registry whitelist, a per-service enable toggle, and credential availability - and that of the preset MCP services, thirteen lower-frequency or higher-risk ones default to disabled while a smaller default-enabled set covers web search, maps, and image/video generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7e501fd2cdf4edbfe1ee3f688e49ebd796e05d2c59bd3a3b60320143e8732b4",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 141,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L120-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5f45e8a34b5fd84fa01835d996bd4b5059258c5a9d0e997ff8b5882ad831201"
+      ],
+      "text": "The README lists three multi-agent collaboration modes: Team for fixed role division, Swarm for dynamic negotiation, and SubAgent for master/subordinate delegation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7977a466349508f09e7091b0507a2e17bbcdbd95b8a97eddd92fa07842ea42e6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 538,
+          "line_start": 534,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L534-L538"
+        },
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 514,
+          "line_start": 514,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L514-L514"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11c48d9fa98670e1302f1b1b147e2763fdb7d3e0e0ca7e1404b5b4eeb96986fd",
+        "slc_9449ee6950c904a710360caa3b7c491917bd044baa08a16025db9adcc998d329"
+      ],
+      "text": "Documentation describes a three-tier architecture: a Java 21/Spring Boot backend handling core orchestration, LLM routing, and the authorization gateway; a React/TypeScript frontend for the interactive UI; and an optional Python/FastAPI service for code analysis and MCP bridging."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf1be386b8c04cdab5abe264204053ccdc0b441eafeab0e42fb591740c28da0c",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 456,
+          "line_start": 453,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L453-L456"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_51d32fb8605cb6a87e3d643ff53ed4258dba5948707d48e8a346d7e0157065d4"
+      ],
+      "text": "The README describes a six-level context-compression cascade (Snip, MicroCompact, ContextCollapse, AutoCompact, CollapseDrain, ReactiveCompact) intended to keep sessions within the context window, with a documented two-stage CollapseDrain/ReactiveCompact recovery path for large sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c2cdb1d021845b04961d62fde11c847001644578f7786be91005ea18d076c1b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 542,
+          "line_start": 542,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L542-L542"
+        },
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 559,
+          "line_start": 559,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L559-L559"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fa85803906e728457a2d1868c1a6e3ff4e1b48f478f0ab96ea9130c4617181d",
+        "slc_50d2394da70b19cc16dc220e3cc4f9302a6f00f25cc673caee2a9be347fb2140"
+      ],
+      "text": "Documentation states Docker deployment ships the Java backend and a built-in static frontend by default in one container, with an optional managed Python service included in the image but not started, and not exposing a port, unless explicitly enabled via environment variables or a compose override."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f84a0ca9b1f834a385ec9ce087d194537dd0511f1fc07ceb23772700fd4c96c6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 373,
+          "line_start": 363,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L363-L373"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d75fff3af0b8cd269586f5e4f9b27fde3a115a4641ce892641b5d6ac4c7e0b6d"
+      ],
+      "text": "A documented provider table lists direct connections to DashScope (Qianwen, the default), DeepSeek, Moonshot (Kimi), Zhipu GLM, and MiniMax as domestic options, plus OpenAI (requiring external network access) and a fully offline local Ollama option."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e69d18a33e2cdd269485b7c25ae19c899962346c4cd50571a19124cf2675735",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 357,
+          "line_start": 356,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L356-L357"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_678274919c5ccb6d3cb596e713bb96c8785e08f7059a3725afbec67d5a646250"
+      ],
+      "text": "Documentation states that on a 402 quota-exceeded or 404 model-unavailable response, the system automatically cools that key down for 15 minutes and switches to the next configured API key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a1621f582660cf19c0e826b30472346b732baa66e3e26df82507c75f9bde81c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+          "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+          "line_end": 141,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "zhikunqingtao/zhikuncode",
+          "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md#L120-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5f45e8a34b5fd84fa01835d996bd4b5059258c5a9d0e997ff8b5882ad831201"
+      ],
+      "text": "Documentation states that referencing a local file when connected directly adds only its path to the prompt without uploading content, but doing so over a remote or proxied connection instead uploads the file as a permanent public OSS object and requires OSS to be configured first."
+    }
+  ],
+  "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1762,
+        "path": "README.md",
+        "size": 107302
+      },
+      {
+        "lines": 103,
+        "path": "docs/case-studies/assets/king/DESIGN.md",
+        "size": 10791
+      },
+      {
+        "lines": 3,
+        "path": "docs/robots.txt",
+        "size": 87
+      },
+      {
+        "lines": 10,
+        "path": "docs/case-studies/zhikuncode-codex-gold-monitor-SHA256SUMS.txt",
+        "size": 1039
+      },
+      {
+        "lines": 16,
+        "path": "docs/swe-bench/20260520/trajs/astropy__astropy-14995.md",
+        "size": 224
+      },
+      {
+        "lines": 16,
+        "path": "docs/swe-bench/20260520/trajs/django__django-11630.md",
+        "size": 207
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/README_EN.md",
+        "reason": "byte-budget",
+        "size": 113941
+      },
+      {
+        "path": "docs/case-studies/README.md",
+        "reason": "byte-budget",
+        "size": 11262
+      },
+      {
+        "path": "docs/case-studies/zhikuncode-12306-log-excerpts.txt",
+        "reason": "byte-budget",
+        "size": 13273
+      },
+      {
+        "path": "docs/case-studies/zhikuncode-codex-12306-SHA256SUMS.txt",
+        "reason": "byte-budget",
+        "size": 2758
+      },
+      {
+        "path": "docs/case-studies/zhikuncode-gold-monitor-log-excerpts.txt",
+        "reason": "byte-budget",
+        "size": 25758
+      },
+      {
+        "path": "docs/swe-bench/zhikuncode 打榜 SWE-bench 完整操作指南.md",
+        "reason": "byte-budget",
+        "size": 26199
+      },
+      {
+        "path": "docs/swe-bench/阿里云ECS环境SWE-bench评测手册.md",
+        "reason": "byte-budget",
+        "size": 30113
+      },
+      {
+        "path": "docs/test-results/aicoding测试用例.md",
+        "reason": "byte-budget",
+        "size": 29141
+      },
+      {
+        "path": "docs/test-results/aicoding测试用例测试报告.md",
+        "reason": "byte-budget",
+        "size": 42976
+      },
+      {
+        "path": "docs/test-results/APOS-E2E测试报告.md",
+        "reason": "byte-budget",
+        "size": 31599
+      },
+      {
+        "path": "docs/test-results/APOS-E2E测试用例.md",
+        "reason": "byte-budget",
+        "size": 138417
+      },
+      {
+        "path": "docs/test-results/APOS-Phase1-E2E测试用例.md",
+        "reason": "byte-budget",
+        "size": 99856
+      },
+      {
+        "path": "docs/test-results/APOS-Phase2-E2E测试报告.md",
+        "reason": "byte-budget",
+        "size": 23438
+      },
+      {
+        "path": "docs/test-results/APOS-Phase2-E2E测试用例.md",
+        "reason": "byte-budget",
+        "size": 51607
+      },
+      {
+        "path": "docs/assets/e2e-tests/README.md",
+        "reason": "byte-budget",
+        "size": 4829
+      },
+      {
+        "path": "docs/swe-bench/20260520/README.md",
+        "reason": "byte-budget",
+        "size": 6023
+      },
+      {
+        "path": "docs/swe-bench/20260525/ANALYSIS_REPORT.md",
+        "reason": "byte-budget",
+        "size": 54272
+      },
+      {
+        "path": "docs/swe-bench/20260525/README.md",
+        "reason": "byte-budget",
+        "size": 6738
+      },
+      {
+        "path": "docs/swe-bench/scripts/PR_BODY.md",
+        "reason": "byte-budget",
+        "size": 1122
+      },
+      {
+        "path": "docs/test-results/apos-phase1/APOS-Phase1-E2E全量测试报告.md",
+        "reason": "byte-budget",
+        "size": 24335
+      },
+      {
+        "path": "docs/test-results/apos-phase1/APOS-Phase1-E2E测试报告.md",
+        "reason": "byte-budget",
+        "size": 30247
+      },
+      {
+        "path": "docs/test-results/v9.3/Activity持久化E2E测试报告.md",
+        "reason": "byte-budget",
+        "size": 15925
+      },
+      {
+        "path": "docs/test-results/v9.3/env-snapshot.md",
+        "reason": "byte-budget",
+        "size": 3333
+      },
+      {
+        "path": "docs/test-results/v9.3/M0-P06-ThinkingMode-FuzzyMatch-测试报告.md",
+        "reason": "byte-budget",
+        "size": 15569
+      },
+      {
+        "path": "docs/test-results/v9.3/RV1-B3-边缘测试报告.md",
+        "reason": "byte-budget",
+        "size": 23860
+      },
+      {
+        "path": "docs/test-results/v9.3/RV1-Runtime-Verification-测试报告.md",
+        "reason": "byte-budget",
+        "size": 24644
+      },
+      {
+        "path": "docs/test-results/v9.3/task10-security.md",
+        "reason": "byte-budget",
+        "size": 11533
+      },
+      {
+        "path": "docs/test-results/v9.3/task2-backend-unit-tests.md",
+        "reason": "byte-budget",
+        "size": 6128
+      },
+      {
+        "path": "docs/test-results/v9.3/task3-python-tests.md",
+        "reason": "byte-budget",
+        "size": 6418
+      },
+      {
+        "path": "docs/test-results/v9.3/task4-frontend-tests.md",
+        "reason": "byte-budget",
+        "size": 6010
+      },
+      {
+        "path": "docs/test-results/v9.3/task5-smoke-22modules.md",
+        "reason": "byte-budget",
+        "size": 7299
+      },
+      {
+        "path": "docs/test-results/v9.3/task6-multi-agent-e2e.md",
+        "reason": "byte-budget",
+        "size": 7881
+      },
+      {
+        "path": "docs/test-results/v9.3/task7-visualization-e2e.md",
+        "reason": "byte-budget",
+        "size": 5805
+      },
+      {
+        "path": "docs/test-results/v9.3/task8-browser-snapshot.md",
+        "reason": "byte-budget",
+        "size": 7307
+      },
+      {
+        "path": "docs/test-results/v9.3/task9-performance.md",
+        "reason": "byte-budget",
+        "size": 7269
+      },
+      {
+        "path": "docs/test-results/v9.3/ZhikunCode全链路测试报告.md",
+        "reason": "byte-budget",
+        "size": 227014
+      },
+      {
+        "path": "docs/case-studies/assets/king/SHA256SUMS.txt",
+        "reason": "byte-budget",
+        "size": 11759
+      },
+      {
+        "path": "docs/case-studies/assets/king/template-analysis.md",
+        "reason": "byte-budget",
+        "size": 55052
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/astropy__astropy-12907.md",
+        "reason": "byte-budget",
+        "size": 26015
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/astropy__astropy-14182.md",
+        "reason": "byte-budget",
+        "size": 19809
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/astropy__astropy-14365.md",
+        "reason": "byte-budget",
+        "size": 16326
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/astropy__astropy-6938.md",
+        "reason": "byte-budget",
+        "size": 4501
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/astropy__astropy-7746.md",
+        "reason": "byte-budget",
+        "size": 21432
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-10914.md",
+        "reason": "byte-budget",
+        "size": 10820
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-10924.md",
+        "reason": "byte-budget",
+        "size": 53437
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11001.md",
+        "reason": "byte-budget",
+        "size": 7444
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11019.md",
+        "reason": "byte-budget",
+        "size": 9013
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11039.md",
+        "reason": "byte-budget",
+        "size": 28835
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11049.md",
+        "reason": "byte-budget",
+        "size": 14666
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11099.md",
+        "reason": "byte-budget",
+        "size": 1695
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11133.md",
+        "reason": "byte-budget",
+        "size": 4147
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11179.md",
+        "reason": "byte-budget",
+        "size": 14698
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11283.md",
+        "reason": "byte-budget",
+        "size": 22084
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11422.md",
+        "reason": "byte-budget",
+        "size": 32483
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11564.md",
+        "reason": "byte-budget",
+        "size": 59866
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11583.md",
+        "reason": "byte-budget",
+        "size": 9257
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11620.md",
+        "reason": "byte-budget",
+        "size": 62309
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11742.md",
+        "reason": "file-budget",
+        "size": 62811
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11797.md",
+        "reason": "file-budget",
+        "size": 87082
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11815.md",
+        "reason": "file-budget",
+        "size": 26421
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11848.md",
+        "reason": "file-budget",
+        "size": 15479
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11905.md",
+        "reason": "file-budget",
+        "size": 8678
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11910.md",
+        "reason": "file-budget",
+        "size": 78979
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11964.md",
+        "reason": "file-budget",
+        "size": 9081
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-11999.md",
+        "reason": "file-budget",
+        "size": 1348
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12113.md",
+        "reason": "file-budget",
+        "size": 38805
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12125.md",
+        "reason": "file-budget",
+        "size": 1704
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12184.md",
+        "reason": "file-budget",
+        "size": 25956
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12284.md",
+        "reason": "file-budget",
+        "size": 20060
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12286.md",
+        "reason": "file-budget",
+        "size": 236
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12308.md",
+        "reason": "file-budget",
+        "size": 34284
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12453.md",
+        "reason": "file-budget",
+        "size": 16902
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12470.md",
+        "reason": "file-budget",
+        "size": 67360
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12497.md",
+        "reason": "file-budget",
+        "size": 16530
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12589.md",
+        "reason": "file-budget",
+        "size": 70117
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12700.md",
+        "reason": "file-budget",
+        "size": 26569
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12708.md",
+        "reason": "file-budget",
+        "size": 33511
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12747.md",
+        "reason": "file-budget",
+        "size": 40543
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12856.md",
+        "reason": "file-budget",
+        "size": 209
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12908.md",
+        "reason": "file-budget",
+        "size": 33131
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12915.md",
+        "reason": "file-budget",
+        "size": 788
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-12983.md",
+        "reason": "file-budget",
+        "size": 9955
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13028.md",
+        "reason": "file-budget",
+        "size": 28895
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13033.md",
+        "reason": "file-budget",
+        "size": 5216
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13158.md",
+        "reason": "file-budget",
+        "size": 53189
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13220.md",
+        "reason": "file-budget",
+        "size": 22863
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13230.md",
+        "reason": "file-budget",
+        "size": 17638
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13265.md",
+        "reason": "file-budget",
+        "size": 29969
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13315.md",
+        "reason": "file-budget",
+        "size": 31900
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13321.md",
+        "reason": "file-budget",
+        "size": 17274
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13401.md",
+        "reason": "file-budget",
+        "size": 42930
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13447.md",
+        "reason": "file-budget",
+        "size": 16104
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13448.md",
+        "reason": "file-budget",
+        "size": 28496
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13551.md",
+        "reason": "file-budget",
+        "size": 13088
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13590.md",
+        "reason": "file-budget",
+        "size": 5462
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13658.md",
+        "reason": "file-budget",
+        "size": 14268
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13660.md",
+        "reason": "file-budget",
+        "size": 14837
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13710.md",
+        "reason": "file-budget",
+        "size": 32020
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13757.md",
+        "reason": "file-budget",
+        "size": 32744
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13768.md",
+        "reason": "file-budget",
+        "size": 35581
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13925.md",
+        "reason": "file-budget",
+        "size": 21037
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13933.md",
+        "reason": "file-budget",
+        "size": 31317
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-13964.md",
+        "reason": "file-budget",
+        "size": 50254
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14016.md",
+        "reason": "file-budget",
+        "size": 28164
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14017.md",
+        "reason": "file-budget",
+        "size": 40913
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14155.md",
+        "reason": "file-budget",
+        "size": 17751
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14238.md",
+        "reason": "file-budget",
+        "size": 24390
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14382.md",
+        "reason": "file-budget",
+        "size": 31882
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14411.md",
+        "reason": "file-budget",
+        "size": 34216
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14534.md",
+        "reason": "file-budget",
+        "size": 35732
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14580.md",
+        "reason": "file-budget",
+        "size": 25968
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14608.md",
+        "reason": "file-budget",
+        "size": 38832
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14667.md",
+        "reason": "file-budget",
+        "size": 34337
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14672.md",
+        "reason": "file-budget",
+        "size": 28717
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14730.md",
+        "reason": "file-budget",
+        "size": 45876
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14752.md",
+        "reason": "file-budget",
+        "size": 18644
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14787.md",
+        "reason": "file-budget",
+        "size": 23405
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14855.md",
+        "reason": "file-budget",
+        "size": 26932
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14915.md",
+        "reason": "file-budget",
+        "size": 17763
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14997.md",
+        "reason": "file-budget",
+        "size": 39299
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-14999.md",
+        "reason": "file-budget",
+        "size": 33689
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15061.md",
+        "reason": "file-budget",
+        "size": 26201
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15202.md",
+        "reason": "file-budget",
+        "size": 23310
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15213.md",
+        "reason": "file-budget",
+        "size": 76559
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15252.md",
+        "reason": "file-budget",
+        "size": 77646
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15320.md",
+        "reason": "file-budget",
+        "size": 17857
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15347.md",
+        "reason": "file-budget",
+        "size": 24726
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15388.md",
+        "reason": "file-budget",
+        "size": 35788
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15400.md",
+        "reason": "file-budget",
+        "size": 20500
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15498.md",
+        "reason": "file-budget",
+        "size": 24639
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15695.md",
+        "reason": "file-budget",
+        "size": 25778
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15738.md",
+        "reason": "file-budget",
+        "size": 86211
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15781.md",
+        "reason": "file-budget",
+        "size": 31198
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15789.md",
+        "reason": "file-budget",
+        "size": 9516
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15790.md",
+        "reason": "file-budget",
+        "size": 16672
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15814.md",
+        "reason": "file-budget",
+        "size": 48884
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15819.md",
+        "reason": "file-budget",
+        "size": 31491
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15851.md",
+        "reason": "file-budget",
+        "size": 19869
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15902.md",
+        "reason": "file-budget",
+        "size": 25391
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-15996.md",
+        "reason": "file-budget",
+        "size": 33793
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16041.md",
+        "reason": "file-budget",
+        "size": 23443
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16046.md",
+        "reason": "file-budget",
+        "size": 2897
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16139.md",
+        "reason": "file-budget",
+        "size": 23022
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16229.md",
+        "reason": "file-budget",
+        "size": 65285
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16255.md",
+        "reason": "file-budget",
+        "size": 26055
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16379.md",
+        "reason": "file-budget",
+        "size": 18250
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16400.md",
+        "reason": "file-budget",
+        "size": 13174
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16408.md",
+        "reason": "file-budget",
+        "size": 43699
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16527.md",
+        "reason": "file-budget",
+        "size": 30436
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16595.md",
+        "reason": "file-budget",
+        "size": 25592
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16816.md",
+        "reason": "file-budget",
+        "size": 31904
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16820.md",
+        "reason": "file-budget",
+        "size": 97935
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16873.md",
+        "reason": "file-budget",
+        "size": 15057
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-16910.md",
+        "reason": "file-budget",
+        "size": 86486
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-17051.md",
+        "reason": "file-budget",
+        "size": 62306
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/django__django-17087.md",
+        "reason": "file-budget",
+        "size": 32172
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-18869.md",
+        "reason": "file-budget",
+        "size": 32285
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-22711.md",
+        "reason": "file-budget",
+        "size": 36445
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-22835.md",
+        "reason": "file-budget",
+        "size": 17963
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23299.md",
+        "reason": "file-budget",
+        "size": 40943
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23314.md",
+        "reason": "file-budget",
+        "size": 17384
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23476.md",
+        "reason": "file-budget",
+        "size": 40508
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23562.md",
+        "reason": "file-budget",
+        "size": 10750
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23563.md",
+        "reason": "file-budget",
+        "size": 2705
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23913.md",
+        "reason": "file-budget",
+        "size": 27377
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23964.md",
+        "reason": "file-budget",
+        "size": 22813
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-23987.md",
+        "reason": "file-budget",
+        "size": 33407
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-24149.md",
+        "reason": "file-budget",
+        "size": 30371
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-24265.md",
+        "reason": "file-budget",
+        "size": 1383
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-24334.md",
+        "reason": "file-budget",
+        "size": 54714
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-24970.md",
+        "reason": "file-budget",
+        "size": 19766
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-25079.md",
+        "reason": "file-budget",
+        "size": 68657
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-25311.md",
+        "reason": "file-budget",
+        "size": 51464
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-25332.md",
+        "reason": "file-budget",
+        "size": 34233
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-25433.md",
+        "reason": "file-budget",
+        "size": 38768
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-25442.md",
+        "reason": "file-budget",
+        "size": 10682
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-25498.md",
+        "reason": "file-budget",
+        "size": 1726
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-26011.md",
+        "reason": "file-budget",
+        "size": 35974
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/matplotlib__matplotlib-26020.md",
+        "reason": "file-budget",
+        "size": 30494
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/mwaskom__seaborn-2848.md",
+        "reason": "file-budget",
+        "size": 62514
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/mwaskom__seaborn-3010.md",
+        "reason": "file-budget",
+        "size": 6936
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/mwaskom__seaborn-3190.md",
+        "reason": "file-budget",
+        "size": 40538
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/mwaskom__seaborn-3407.md",
+        "reason": "file-budget",
+        "size": 32378
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pallets__flask-4045.md",
+        "reason": "file-budget",
+        "size": 23278
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pallets__flask-4992.md",
+        "reason": "file-budget",
+        "size": 20040
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pallets__flask-5063.md",
+        "reason": "file-budget",
+        "size": 29658
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/psf__requests-1963.md",
+        "reason": "file-budget",
+        "size": 19310
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/psf__requests-2148.md",
+        "reason": "file-budget",
+        "size": 31154
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/psf__requests-2317.md",
+        "reason": "file-budget",
+        "size": 15076
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/psf__requests-2674.md",
+        "reason": "file-budget",
+        "size": 25323
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/psf__requests-3362.md",
+        "reason": "file-budget",
+        "size": 24662
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/psf__requests-863.md",
+        "reason": "file-budget",
+        "size": 7822
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pydata__xarray-3364.md",
+        "reason": "file-budget",
+        "size": 52062
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pydata__xarray-4094.md",
+        "reason": "file-budget",
+        "size": 28171
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pydata__xarray-4248.md",
+        "reason": "file-budget",
+        "size": 50970
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pydata__xarray-4493.md",
+        "reason": "file-budget",
+        "size": 70484
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pydata__xarray-5131.md",
+        "reason": "file-budget",
+        "size": 8348
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pylint-dev__pylint-5859.md",
+        "reason": "file-budget",
+        "size": 27737
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pylint-dev__pylint-6506.md",
+        "reason": "file-budget",
+        "size": 22699
+      },
+      {
+        "path": "docs/swe-bench/20260520/trajs/pylint-dev__pylint-7080.md",
+        "reason": "file-budget",
+        "size": 48135
+      }
+    ],
+    "omitted_count": 914,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3759,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 920,
+      "complete": false,
+      "omitted": 914,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6f0518c7110d50c5b3c098ffb828f1a2",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 0,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 3,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zhikunqingtao/zhikuncode/931a9beebf21bd404a6332b96fdb5035930637ae/c7992362e1b91e4b/manifest.json",
+  "package_id": "pkg_b3b4913c32d9b19b67a21a27ceb18c3a5e7b83b322df10d59998a829e5d7b7e3",
+  "repo": "zhikunqingtao/zhikuncode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3bec36bae8f06553cac0b0c2f3936534f9c51502b7d197f2162007ba3686609f",
+  "snapshot_id": "c7992362e1b91e4b",
+  "sources": [
+    {
+      "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+      "git_sha": "399f94aee5cf0919063f427228735c79387287c1",
+      "lines": 1762,
+      "path": "README.md",
+      "repository": "zhikunqingtao/zhikuncode",
+      "sha256": "550233c8fd16d4b73205c66990cb09459e94154533984fd75424e5549b806ded",
+      "source_id": "src_880bb598b9ba516fac20874f2d4250e7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/README.md"
+    },
+    {
+      "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+      "git_sha": "7708e8a969b192bdf817cb1e9f93c3a93ea03c6f",
+      "lines": 103,
+      "path": "docs/case-studies/assets/king/DESIGN.md",
+      "repository": "zhikunqingtao/zhikuncode",
+      "sha256": "62e79531734345ea51da5da669045d7596de8f160e2368402632241c34a1fc10",
+      "source_id": "src_50c86aa11d5b51ca98b009b191f65adb",
+      "stored": "design.md-bb9dcdebe25b.md",
+      "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/docs/case-studies/assets/king/DESIGN.md"
+    },
+    {
+      "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+      "git_sha": "53f0324988f061f83c3169ce2bf13ff96d410c26",
+      "lines": 10,
+      "path": "docs/case-studies/zhikuncode-codex-gold-monitor-SHA256SUMS.txt",
+      "repository": "zhikunqingtao/zhikuncode",
+      "sha256": "08879667468982cebb82b37ca51f2a4afb648c2f42c4fcc7f4e6bf3487d63d45",
+      "source_id": "src_6b29ff6bc6cd5434b3a420037b2e0143",
+      "stored": "zhikuncode-codex-gold-monitor-sha256sums-a619029c9a44.txt",
+      "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/docs/case-studies/zhikuncode-codex-gold-monitor-SHA256SUMS.txt"
+    },
+    {
+      "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+      "git_sha": "38a7c7b33c0b1de405d3410db40addabfac41755",
+      "lines": 3,
+      "path": "docs/robots.txt",
+      "repository": "zhikunqingtao/zhikuncode",
+      "sha256": "502372cf2be136806c8ac001861817e9b89d27b76b22286bd650ae99274dc382",
+      "source_id": "src_6ff5607b743a5be7a88b5e7d6acaf32e",
+      "stored": "robots.txt-e0fdde07b3ef.txt",
+      "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/docs/robots.txt"
+    },
+    {
+      "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+      "git_sha": "c1485ba70e0f3d2da8c82463b3c6513077aafb8d",
+      "lines": 16,
+      "path": "docs/swe-bench/20260520/trajs/astropy__astropy-14995.md",
+      "repository": "zhikunqingtao/zhikuncode",
+      "sha256": "3ef09a9105b4293ebb7c7662968b597b8f9baf9d05e805d949604c89bec30727",
+      "source_id": "src_cd45b6338bfd5329a0c09fe8755fe25b",
+      "stored": "astropy__astropy-14995.md-4e522eed9b23.md",
+      "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/docs/swe-bench/20260520/trajs/astropy__astropy-14995.md"
+    },
+    {
+      "commit": "931a9beebf21bd404a6332b96fdb5035930637ae",
+      "git_sha": "af734d1ca709ad8f92eee759d8febed29bfb0360",
+      "lines": 16,
+      "path": "docs/swe-bench/20260520/trajs/django__django-11630.md",
+      "repository": "zhikunqingtao/zhikuncode",
+      "sha256": "62d654f47a5d1a679afced3fbc41f224c1a3bfeb7ff6d78787aee64ade1a817a",
+      "source_id": "src_1b9b83be4b3e56d5b060df29b3f4b66b",
+      "stored": "django__django-11630.md-494e651953a0.md",
+      "url": "https://github.com/zhikunqingtao/zhikuncode/blob/931a9beebf21bd404a6332b96fdb5035930637ae/docs/swe-bench/20260520/trajs/django__django-11630.md"
+    }
+  ],
+  "summary": "ZhikunCode is documented as a browser-controlled, self-hostable AI coding assistant with a Java/React/Python three-tier architecture, a unified Tool Gateway authorization pipeline, MCP tools gated by a three-layer whitelist/toggle/credential check, and direct connections to several Chinese LLM providers. The README reports an official-harness SWE-bench Lite result with open-sourced evaluation artifacts. Evidence: only 6 of 920 candidate files stored (README.md and five smaller docs/case-study files); selection incomplete, so most of the codebase and documentation is unexamined.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,257 @@
+{
+  "applied_operation_id": "op_a573bec811c14f67b7a4ae0a89b266e6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea839858e2cbf89826bfdd3e4335a033df6588116c527c9bbd1f81174867257b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+          "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "abhikt48/java-ai-sbus-test",
+          "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ad5ffbe618d0e6989e5aaefbefe8184707d996316130fe3368007209349780b"
+      ],
+      "text": "The project is described as a test project for applicationinsights-agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e2526cb2c7b5e71ed264664d8acbdbccc8729ecba1ebcbf46d808e521688ef37",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+          "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "abhikt48/java-ai-sbus-test",
+          "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_615362f7cdeb6375dddb26856b3b826bea7ef71871e8f5fb586e9bacccd2962d"
+      ],
+      "text": "Setup involves updating the connection string in applicationinsights.json and downloading/copying applicationinsights-agent-3.5.2.jar into the agent directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9975cef44d162449e3667bab2e857960a5f3f0067c2d73dc8d45273f3fc0363b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+          "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "abhikt48/java-ai-sbus-test",
+          "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_615362f7cdeb6375dddb26856b3b826bea7ef71871e8f5fb586e9bacccd2962d"
+      ],
+      "text": "The Service Bus configuration in TestCodelessAgentWithSbus.java is updated first, then the class is run with the single VM argument -javaagent pointing at the agent jar, which should start successfully."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_355ee9a63c09aa2bbd0936da238d7b4608c957eec306ff6d38f8030f93dc24e2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+          "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "abhikt48/java-ai-sbus-test",
+          "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_615362f7cdeb6375dddb26856b3b826bea7ef71871e8f5fb586e9bacccd2962d"
+      ],
+      "text": "The project relies on the Application Insights Java agent version 3.5.2 jar, downloaded separately and attached via -javaagent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f05c8e989e1830473c4af717d5b9f1145dfb9443af69d2277e17794f64e376b8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+          "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "abhikt48/java-ai-sbus-test",
+          "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_615362f7cdeb6375dddb26856b3b826bea7ef71871e8f5fb586e9bacccd2962d"
+      ],
+      "text": "Per the README's final step, results are viewed by opening App Insight to inspect a dependency tree."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6454df724824f1fded497d67b5e2822690b27adaf8f7592cb68b7f3ce8799808",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+          "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "abhikt48/java-ai-sbus-test",
+          "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md#L5-L10"
+        },
+        {
+          "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+          "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "abhikt48/java-ai-sbus-test",
+          "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_615362f7cdeb6375dddb26856b3b826bea7ef71871e8f5fb586e9bacccd2962d",
+        "slc_9ad5ffbe618d0e6989e5aaefbefe8184707d996316130fe3368007209349780b"
+      ],
+      "text": "The 'codeless agent' naming and single -javaagent VM argument suggest the project uses agent-based (codeless) instrumentation rather than SDK code changes."
+    }
+  ],
+  "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 10,
+        "path": "README.md",
+        "size": 811
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_669b99fbfeaf588889c51f666930b220",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/abhikt48/java-ai-sbus-test/aa74eebe680943700ad9eb4ff4190657c95bb90c/a3b129d437f0a736/manifest.json",
+  "package_id": "pkg_36b5e8976296c78009b485a7b3d8de23e0d5852ef05666dfbc9f031596024c61",
+  "repo": "abhikt48/java-ai-sbus-test",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f987ced6f444d31ee98100a49dfa138bde00ed3d95f57f30241fa801f29df58a",
+  "snapshot_id": "a3b129d437f0a736",
+  "sources": [
+    {
+      "commit": "aa74eebe680943700ad9eb4ff4190657c95bb90c",
+      "git_sha": "9c11411d3c6dbe0e22aaaaee24816e1135ed82f8",
+      "lines": 10,
+      "path": "README.md",
+      "repository": "abhikt48/java-ai-sbus-test",
+      "sha256": "c045cfcb8de6a6d9c3e7c47ece2e0cab55b8fefa344563e01644bef13b152099",
+      "source_id": "src_4b9b887ea1145735a14d7adc08f2ad9f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/abhikt48/java-ai-sbus-test/blob/aa74eebe680943700ad9eb4ff4190657c95bb90c/README.md"
+    }
+  ],
+  "summary": "The repository is a small test project for the Application Insights Java agent: the README describes attaching applicationinsights-agent-3.5.2.jar via a -javaagent VM argument to a Service Bus test class and viewing results in App Insights.",
+  "superseded_claim_ids": []
+}

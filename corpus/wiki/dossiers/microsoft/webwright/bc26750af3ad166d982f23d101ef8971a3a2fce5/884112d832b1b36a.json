@@ -1,0 +1,808 @@
+{
+  "applied_operation_id": "op_b10939b97790482c8557ec3f863024e1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e723bcec7374a13e3f6f0708c950928feaa43d32b83dc7547e95814ca02209ef",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d5e171e4546eebd57218a7ec3100611d56d2b750365cf3c0e67385fcc453976"
+      ],
+      "text": "Webwright gives the LLM a terminal from which it launches browser sessions to complete web tasks, capturing screenshots and page state only when needed, and each task's browsing history is captured as a single re-runnable Python script."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb970ac09565e8ac5732562533f0a47501ee010c0cc8718e876c32a6f3662f2f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 78,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L72-L78"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5195e7f58ae4b0326df6dbb2ce0f489b9d08e3af0dc72a14c729a53cd36f6d4d",
+        "slc_62c494ea9332bcba64e6e735d447c0d40e1ad2117b19065dbe0d46163431ce20"
+      ],
+      "text": "The architecture deliberately separates the agent from the browser: the browser is treated as a disposable environment the agent spawns and discards, while the persistent state is the code, screenshots, and logs in the local workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8dd3c0c153b990970356944572c932b6f82a273fd00144154a88223d31093031",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 59,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L55-L59"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e68d33be009cfc24c96dd2a7098791598629dccef9154c0b212ddfa5351ea57",
+        "slc_5d5e171e4546eebd57218a7ec3100611d56d2b750365cf3c0e67385fcc453976"
+      ],
+      "text": "The project advertises a minimal footprint with no multi-agent system, graph engine, plugin layer, or hidden orchestration; the core agent loop is a single ~450-line file, the Playwright environment ~570 lines, and the CLI ~150 lines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_21e67efe5d4d6fe8784c89b46b0b035f1fbca26d35022154606927dcea8877fa",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 59,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L55-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e68d33be009cfc24c96dd2a7098791598629dccef9154c0b212ddfa5351ea57"
+      ],
+      "text": "Runtime dependencies are stated as just httpx, pydantic, playwright, and typer, with model backends for OpenAI, Anthropic, and OpenRouter each around 150-200 lines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02aeb5f27778da8a4a549f5dcc554cac21ec63dd2afddf18b9c27144abeb4d87",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 124,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L106-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e4bf95ef322571fcb55fd9ce5cbec0d012636a740b4110f6b091f932baf37c1"
+      ],
+      "text": "The repository layout includes src/webwright with a CLI entrypoint (run/cli.py), a core agent loop (agents/default.py), a Playwright browser workspace (environments/), tools (image_qa, self_reflection), model backends, and stacked YAML configs (base.yaml, model_openai.yaml, model_claude.yaml)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02c4c311755cd286e9cb97e595327b51b1a1bc967b193c950f9ceb99862a1d25",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 224,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L217-L224"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 152,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L146-L152"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 234,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L228-L234"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1eadd75bb25d60b52069eaa06befb63f78918357d09346699e47847b4fad5cc3",
+        "slc_c5b74e4498af025a7cc24c2fba6d62f02e3bf49684e3dc3194a1be1330cebc3b",
+        "slc_de4c0f8c3e11ca6021eeb8022c5df5ba46f838588f55f959e06a796b53e0954d"
+      ],
+      "text": "The CLI is invoked as `python -m webwright.run.cli` with stackable config flags (-c), a task instruction (-t), a start URL (--start-url), a task ID (--task-id), and an output directory (-o)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c4826f8b3bec51a6a4d036eda2d81569ddda8b391a046c473dbf67e6abceda2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 156,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L154-L156"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_757032809fd3c431b6ff3781a9aa931dd73bc9707d263936e217520cfaf4b029"
+      ],
+      "text": "A plain base.yaml run writes trajectory.json and debug artifacts, while adding the task_showcase.yaml config additionally generates a report.json with structured output for the Flask dashboard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3cf84102354995f2eb11d3ec01cc30f3b1719db5e1ab264b9ce2159ae8ecce03",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 165,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L162-L165"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 136,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L130-L136"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 141,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L138-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2db6fe32540f3fceb2d339062fa131e1517e8e97e667994e7319c478c72e47bf",
+        "slc_55fc3938a8cf74a1ee2df2aaf5207c0ff0562c1c9216dc4f654be4c67f709fd2",
+        "slc_f46b81c53c4e3cb14be611dc72ccd3e3d489934f43f0c13f15f3a0a79fc77e1c"
+      ],
+      "text": "A small Flask app under assets/task_showcase/ renders repeatable-run results (task.json plus report.json per task folder) as a dashboard, served locally on port 5005 and configurable to point at a run's generated tasks directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b97a3d0d45b9a3ea0f1e1e9a3cb83f053a01015491ff17648d691995e94567b",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 183,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L177-L183"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 191,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L189-L191"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 175,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L171-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ca97796473737b9e2d2b9b43cdb247f7120b2631c52348f87de7a10ae6d4ed1",
+        "slc_898db060724d8e7d9fd58bb156b41087db2e39c66e172997246a14a7341eca12",
+        "slc_9ef65b1c337a6a9bb28c5db63ff2ee314cdd45186cde6531eec64349cc65c248"
+      ],
+      "text": "The Skill Factory distills each solved task's script into reusable, verified, parameterized code skills that run standalone without a model (~40 s, zero tokens); a recommend/route step checks the library out of the agent loop, either running a matching skill directly or injecting it as a prompt hint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e05d8da30eca9fa3a657fc33d29278d599a5fa6ed084dcb0dbd0c42b425af67b",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "974f52b5912c1d5a120027200c225a7a6400d24f",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "docs/skill_factory/reference.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/reference.md#L11-L14"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "974f52b5912c1d5a120027200c225a7a6400d24f",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/skill_factory/reference.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/reference.md#L7-L9"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "974f52b5912c1d5a120027200c225a7a6400d24f",
+          "line_end": 32,
+          "line_start": 27,
+          "path": "docs/skill_factory/reference.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/reference.md#L27-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_200a32af5f048797df3bb05d3a225b193b0fa727919a232188707436338dc828",
+        "slc_23ce3f8077bb2dc290e9aa5addf390316eaf2386fce9c2a7ddd5d4421ddee248",
+        "slc_39a1e7f0ddedd4b835d3d55dac3a2f2b8d4e30e36adb48ce8d891bff796ab574"
+      ],
+      "text": "Skill Factory verification uses two gates: an input gate (gold, self_verify, or none) deciding whether a solve is trustworthy, and an output gate (strict, shape, or off) checking the distilled skill can reproduce recorded answers with no model; skills whose scripts contain every answer field verbatim are dropped as lookup-style solves."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1adf00c7c8e70ef365071052c8be0c7f462dec86b64b0a2551ea549d38cf121",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "3b759bf7be511b33c71e78f346af638efa3ac8a4",
+          "line_end": 135,
+          "line_start": 133,
+          "path": "docs/skill_factory/manual.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/manual.md#L133-L135"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "3b759bf7be511b33c71e78f346af638efa3ac8a4",
+          "line_end": 15,
+          "line_start": 7,
+          "path": "docs/skill_factory/manual.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/manual.md#L7-L15"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "3b759bf7be511b33c71e78f346af638efa3ac8a4",
+          "line_end": 24,
+          "line_start": 17,
+          "path": "docs/skill_factory/manual.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/manual.md#L17-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b6062a0e9c8c558e7e2406777c2644c8e20351840c4fd3a2a88c91cc21e9c80",
+        "slc_39356c41d3bfc0cea172111dec4142396a3e78292dc13e35c5ea1146d1b20e98",
+        "slc_c9c1823366f8cbc1ca13d42fa2e7dfcf509c278c673413cdef6d72fac4bbf304"
+      ],
+      "text": "Manual mode (`update`) lets users write templates, declare parameters, and set per-run admit verdicts themselves, supporting benchmarks with known answers, non-exact-match judging, and login-gated sites whose credentials are carried into replay but never stored in the skill."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_48072d58fd737cb1717a44c97737307f0fb3620f8db48868e1513b062cee9686",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L90-L90"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 95,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L92-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bd7bf4d6ad164a5f9b1516140824dec6f8dd37bc0b2a63b96d91276c2cec575",
+        "slc_9178831f5dc1b3a037ace33ffe805607fdf9a89b5fc0eb2c5161433aa2f4ef78"
+      ],
+      "text": "Reported benchmark results: 86.7% on Online-Mind2Web (300 tasks) with GPT-5.4 and 84.7% with Claude Opus 4.7; 60.1% on Odysseys (200 long-horizon tasks) with GPT-5.4, +15.6 points over prior SOTA, using a 100-step budget."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12391bc41c0da741c8087a82e2d4856a91b349fbed42b59e1bbb89822029a871",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L27-L30"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 191,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L189-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31c7d4c0495a1ce7ad8b159846c49a6fb876da6a3586552bd2c5398a3faf2d78",
+        "slc_898db060724d8e7d9fd58bb156b41087db2e39c66e172997246a14a7341eca12"
+      ],
+      "text": "On WebArena (10 retrieve-type templates, 3 self-hosted sites, gpt-5.4), skill reuse lifts held-out accuracy from 55% to 70% (+15 pp) while reducing steps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a2afd9e25f4df890442fbb2a935d4b6590b78bc05d643cb5615b9be7813f1b1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 283,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L282-L283"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 240,
+          "line_start": 240,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L240-L240"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 348,
+          "line_start": 348,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L348-L348"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 359,
+          "line_start": 359,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L359-L359"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b71d8adfbd5ea7c720612448bf0fbc09a25ee8513e5463b93ce72cad0bb8d6f",
+        "slc_9b10c1dfeb0f2c074d1485de30e24c6e951c60dd01d0ec364e70e0c2393f6cb6",
+        "slc_b5c0daf67392b4031d81a759692b76bfe65c4096dd293d993a992f41761e37f9",
+        "slc_fafc274535e57c8ca76a887011b98365581d886a4242ed53aa02ab1563fcc338"
+      ],
+      "text": "Webwright ships plugin manifests for Claude Code and OpenAI Codex plus a shared skills/webwright/ folder usable by OpenClaw and Hermes; Claude Code offers /webwright:run (one-shot script) and /webwright:craft (parameterized argparse CLI tool) slash commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9dc1dcb3412fdef7d25d992e5bc6dbf91fe32fe33aa6b12e411a8e7d25c3326b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 215,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L212-L215"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 208,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L205-L208"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 201,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L199-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ce2cf1997d435396a7e24db653dd653d63d2fa52f88ac3da493e8efbe9189ae",
+        "slc_44a0e0b4842bcb927fddad3ca591a21ea4a3bf860aa18af69c43377f638a0ad7",
+        "slc_7b18fb4cb7222f4f53f39a9f4a958c338167b0cb6d04945281a9e6a55d2d7f36"
+      ],
+      "text": "Repository development practice: prerequisites are Python 3.10+, Chromium installed via Playwright, and an API key for the chosen backend; installation is `pip install -e .` followed by `playwright install chromium`, and the image_qa/self_reflection tools reuse the configured backend model so no extra key is needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad4c65715f751f92856874e069203d95dfe517dd6a8a5a91f306a087fb81e63f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "686e5e7a090b52f0db9acbe001915d0b9b06b06c",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/CODE_OF_CONDUCT.md#L3-L3"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "686e5e7a090b52f0db9acbe001915d0b9b06b06c",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/CODE_OF_CONDUCT.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_158571865efaa7f6013630961c11392746a8353f5cd67c044fa317255efcd0bc",
+        "slc_50b1cd09950008ba143f5e106a62929d10c10898b0d4d06d436a39149bc3330c"
+      ],
+      "text": "Repository development practice: the project adopts the Microsoft Open Source Code of Conduct, with questions directed to opencode@microsoft.com."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6de17261b6a12a818ffa1d760865cdde4698407a4db76594551f87f2b9e416ed",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 240,
+          "line_start": 240,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L240-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9b10c1dfeb0f2c074d1485de30e24c6e951c60dd01d0ec364e70e0c2393f6cb6"
+      ],
+      "text": "In plugin mode, the host agent drives the Webwright loop natively with no extra LLM API key beyond the host subscription, and hosts that natively read PNG screenshots can skip the image_qa/self_reflection tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cab6f4036d20b0f73c54d37cf8b70e096f2104c3b6ad70cb5182f4a27bc0930d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 387,
+          "line_start": 384,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L384-L387"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 378,
+          "line_start": 378,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L378-L378"
+        },
+        {
+          "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+          "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+          "line_end": 389,
+          "line_start": 389,
+          "path": "README.md",
+          "repository": "microsoft/webwright",
+          "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md#L389-L389"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f0ed106130f58953a4f052b03acfea8ba6a75ff618130f90de646b98420f626",
+        "slc_50b6fe9a11829d733f4773d7a64ce0ad5363b1b58595627bc8763c280abf6a62",
+        "slc_af2a449f6210db7ec42a52efca199efa84dcb3e27e5483a95c39ab927aa69c8b"
+      ],
+      "text": "A trajectory comparison viewer under assets/compare_trajectory/ (served via python3 -m http.server) accepts Webwright raw_responses.jsonl plus trajectory.json and can also display Codex and GitHub Copilot traces for token-usage comparison."
+    }
+  ],
+  "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 437,
+        "path": "README.md",
+        "size": 21227
+      },
+      {
+        "lines": 25,
+        "path": "SUPPORT.md",
+        "size": 1219
+      },
+      {
+        "lines": 180,
+        "path": "docs/skill_factory/manual.md",
+        "size": 9306
+      },
+      {
+        "lines": 222,
+        "path": "docs/skill_factory/reference.md",
+        "size": 15201
+      },
+      {
+        "lines": 10,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 558
+      },
+      {
+        "lines": 14,
+        "path": "SECURITY.md",
+        "size": 542
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 135,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_70b6ec7c875d59eebbbc055dc38a7a36",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 2,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 3,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/microsoft/webwright/bc26750af3ad166d982f23d101ef8971a3a2fce5/884112d832b1b36a/manifest.json",
+  "package_id": "pkg_fd64f86f0fd5ac3d0490546c46a69183ce45c4468a3f425dedc3cd36c8ff2cc8",
+  "repo": "microsoft/webwright",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "74d2231507fa28fa602964cfe1042edfa5be6d9cf1f6499845f27b19daaf6c7c",
+  "snapshot_id": "884112d832b1b36a",
+  "sources": [
+    {
+      "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+      "git_sha": "686e5e7a090b52f0db9acbe001915d0b9b06b06c",
+      "lines": 10,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "microsoft/webwright",
+      "sha256": "9d45a586fce701502d173a7c10c71c8bd4f23e23d5a4a06e9d00eb57a9c11205",
+      "source_id": "src_34ecac184fbb5bfc958cb0ef8f15c56e",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+      "git_sha": "c38dadc21c7d447e3a1b98e5b2f90d54804c64d1",
+      "lines": 437,
+      "path": "README.md",
+      "repository": "microsoft/webwright",
+      "sha256": "ea6020afb77bcf161f32820a5e844aabc084e0e4f8ce419a65a014d79912f873",
+      "source_id": "src_21b70ef63cd25f278edb3c8aaa7227d4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/README.md"
+    },
+    {
+      "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+      "git_sha": "e751608fcd55622cc1f88f30833bffe3e0aed236",
+      "lines": 14,
+      "path": "SECURITY.md",
+      "repository": "microsoft/webwright",
+      "sha256": "b02bf4e236e9335b27298a77688c751d18ca7e6052873d0d3d29eda37d0a72fa",
+      "source_id": "src_e0fcd961ec625358a22e92393f60eae8",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/SECURITY.md"
+    },
+    {
+      "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+      "git_sha": "eaf439aecca04e3aa5a022e0bc0b8b088efef7f1",
+      "lines": 25,
+      "path": "SUPPORT.md",
+      "repository": "microsoft/webwright",
+      "sha256": "066ceb3fa4646b998a91eea661b998afedf1eb5e023fab14cfb52888b21fe086",
+      "source_id": "src_455bf8006e2f5b8d87809063c87c4684",
+      "stored": "support.md-c5fe610b0215.md",
+      "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/SUPPORT.md"
+    },
+    {
+      "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+      "git_sha": "3b759bf7be511b33c71e78f346af638efa3ac8a4",
+      "lines": 180,
+      "path": "docs/skill_factory/manual.md",
+      "repository": "microsoft/webwright",
+      "sha256": "1e76506dc61cac317078d5d1f285b9d9ec1bd91c37b9fe5446d20b9607a8e8ea",
+      "source_id": "src_e2714778e82f5c9ca01611804a5f53c2",
+      "stored": "manual.md-b2b237bfa09c.md",
+      "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/manual.md"
+    },
+    {
+      "commit": "bc26750af3ad166d982f23d101ef8971a3a2fce5",
+      "git_sha": "974f52b5912c1d5a120027200c225a7a6400d24f",
+      "lines": 222,
+      "path": "docs/skill_factory/reference.md",
+      "repository": "microsoft/webwright",
+      "sha256": "115422a8d3df0f8dd341b5f2d7e2012aafe318f2aebcecc187822048d1b03c3f",
+      "source_id": "src_fa16ea2a863551fcafde0181cb14a1d8",
+      "stored": "reference.md-fd46f8502c0f.md",
+      "url": "https://github.com/microsoft/Webwright/blob/bc26750af3ad166d982f23d101ef8971a3a2fce5/docs/skill_factory/reference.md"
+    }
+  ],
+  "summary": "Webwright is a Microsoft research repository providing a minimal terminal-based coding-agent harness (~1.5k LoC) that turns LLM coding models into browser agents via Playwright, with pluggable OpenAI/Anthropic/OpenRouter backends, a Skill Factory for reusable code skills, plugin integrations for Claude Code/Codex/OpenClaw/Hermes, and reported benchmark results on Online-Mind2Web and Odysseys. Evidence coverage: 147 of 186 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

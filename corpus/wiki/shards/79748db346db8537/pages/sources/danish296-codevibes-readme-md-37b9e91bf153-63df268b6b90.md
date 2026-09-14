@@ -1,0 +1,44 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0c6c30e55692970883ce1578d29e6c9acfef828b6e66566a0073cae02f34a814
+- clm_1d0115cde8a8d9dc09b9a278e865f8d756221a896c54850efc5691f7e383774c
+- clm_4f0a751aee74d088efc2d28e6bff1b5d774e5442ea033d19493dc409c309d7b1
+- clm_53b268649b44ec1f4ef6d672edfb929a06d99355c3ab4053e4f7a00d0fe4c0b1
+- clm_5b4f072f7b56aa75b414e51acd3d7d10d7f1aa0b2c04b121f2b3ac34dad98797
+- clm_7293d550ae309b7eacce94f276e682d04f467bb62f63adae1396f915165aada5
+- clm_73d477074afcf70f55ad1f6ee6c95790d4bd188acba5fe29b121b324a4e5af38
+- clm_85c16c7d1b1e98971b1c0c6b365ac722200ba130fc0c35900bf4721551c34c29
+- clm_8d271d090582ac2472bc8f628e6885da303353c3a64a3885f0942be99010b34e
+- clm_9df7ef55036efed9003eb43519aee984bd495b90250c00770c57995238027f74
+- clm_b4a7fd179699d353bc6c1f1bda31beaa04026bc1078795cd6630b7021fe189ab
+maturity: draft
+page_id: pg_d92cf581e1f35c3a91ad63df268b6b90
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_097f9d47d90e563fb757366591b633e3
+title: danish296/codevibes/README.md @ 37b9e91bf153
+updated_at: '2026-09-14T03:44:12Z'
+---
+
+# danish296/codevibes/README.md @ 37b9e91bf153
+
+<!-- rcw:begin owner=source:src_097f9d47d90e563fb757366591b633e3 block=evidence -->
+- Backend configuration is documented via a .env file listing PORT, DEEPSEEK_API_KEY, GITHUB_TOKEN, DB_PATH, DEEPSEEK_MODEL (deepseek-chat or deepseek-reasoner), and ALLOWED_ORIGINS. [@claim:clm_0c6c30e55692970883ce1578d29e6c9acfef828b6e66566a0073cae02f34a814]
+- Running the tool requires Node.js v18+ and a DeepSeek API key; a GitHub token is optional and only needed for private repositories. [@claim:clm_1d0115cde8a8d9dc09b9a278e865f8d756221a896c54850efc5691f7e383774c]
+- The documented workflow: user submits a repo URL, backend fetches the GitHub file tree, categorizes files by priority, streams file contents to DeepSeek, and pushes issues to the frontend in real time via SSE before computing a final report. [@claim:clm_4f0a751aee74d088efc2d28e6bff1b5d774e5442ea033d19493dc409c309d7b1]
+- Documented REST endpoints include POST /api/analyze, GET /api/analyze/stream (SSE), GET/POST /api/history, DELETE /api/history/:id, GET /api/github/repos, and POST /api/github/validate. [@claim:clm_53b268649b44ec1f4ef6d672edfb929a06d99355c3ab4053e4f7a00d0fe4c0b1]
+- Repository development practice: contributions follow a fork-and-branch flow — fork, create a feature branch, commit, push, and open a Pull Request; contributions are welcome. [@claim:clm_5b4f072f7b56aa75b414e51acd3d7d10d7f1aa0b2c04b121f2b3ac34dad98797]
+- The product computes a 0-100 Vibe Score from issue severity weights (CRITICAL 25, HIGH 15, MEDIUM 5, LOW 1) subtracted from 100, with labeled ranges from Excellent (90-100) to Critical (0-49). [@claim:clm_7293d550ae309b7eacce94f276e682d04f467bb62f63adae1396f915165aada5]
+- Analysis uses a three-tier priority system: P1 security files (e.g. .env, auth, config) first, then P2 core logic (controllers, services, models), then P3 quality files (tests, utils, other files). [@claim:clm_73d477074afcf70f55ad1f6ee6c95790d4bd188acba5fe29b121b324a4e5af38]
+- Repository development practice: local setup involves cloning, running npm install in both root and codevibes-backend, copying .env.example to .env, and starting backend and frontend dev servers in separate terminals. [@claim:clm_85c16c7d1b1e98971b1c0c6b365ac722200ba130fc0c35900bf4721551c34c29]
+- CodeVibes is described as an AI code-analysis tool that scans GitHub repositories to identify security vulnerabilities, bugs and performance issues, and code-quality improvements, producing a quantifiable Vibe Score. [@claim:clm_8d271d090582ac2472bc8f628e6885da303353c3a64a3885f0942be99010b34e]
+- The backend is documented to include a deepseekService for AI prompts and streaming, a githubService for repo fetching, SQLite database setup, and Winston logging. [@claim:clm_9df7ef55036efed9003eb43519aee984bd495b90250c00770c57995238027f74]
+- The documented stack includes React 18 + Vite, TailwindCSS, Zustand, Node.js + Express, Better-SQLite3, tsx, the DeepSeek API, and Octokit as the GitHub API client. [@claim:clm_b4a7fd179699d353bc6c1f1bda31beaa04026bc1078795cd6630b7021fe189ab]
+<!-- rcw:end owner=source:src_097f9d47d90e563fb757366591b633e3 block=evidence -->
+
+## Researcher notes
+

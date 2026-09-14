@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_08666755d6c43419d9110298d7751a3a3ade8764567708c9374c6ba965be64f0
+- clm_0af069723b481a8ebcdc24dcb799ef0bbb0a96df46fed2c8ccb743f5b615feaa
+- clm_a19639dc9bc3156fa1236f4dd571d0dcc657818d8e039a4d61266543c6a9dd2c
+- clm_d31b144e1a580fc9475e4b2872b8630d5a7ae3239d3868bb702393325453e640
+- clm_d7c63cda350408f1709005c59d484fc7a26bfa90b286b05572f6a2da8d928ca9
+- clm_e16f3d35d9103aac2f96b6ea18d8f755aaf6bb28412f3d47a955f3c8fc3d13c1
+maturity: draft
+page_id: pg_57c1ed3566325a3dad14c2553004caf1
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_24e6df424dc85ac1b09ed9bd5f0289de
+title: mnr/CodeClinicR/README.md @ 71a068e66825
+updated_at: '2026-09-14T04:10:19Z'
+---
+
+# mnr/CodeClinicR/README.md @ 71a068e66825
+
+<!-- rcw:begin owner=source:src_24e6df424dc85ac1b09ed9bd5f0289de block=evidence -->
+- The Code Clinic series has authors solve the same set of problems in different programming languages. [@claim:clm_08666755d6c43419d9110298d7751a3a3ade8764567708c9374c6ba965be64f0]
+- Code Clinic sessions exist for C++, C#, Java, PHP, Python, Ruby, and now R. [@claim:clm_0af069723b481a8ebcdc24dcb799ef0bbb0a96df46fed2c8ccb743f5b615feaa]
+- Repository development practice: the README states the author curated lynda.com's developer segment and taught themselves R to complete the Code Clinic: R course as a project. [@claim:clm_a19639dc9bc3156fa1236f4dd571d0dcc657818d8e039a4d61266543c6a9dd2c]
+- CodeClinicR is described as an R-language version of lynda.com's Code Clinic course series. [@claim:clm_d31b144e1a580fc9475e4b2872b8630d5a7ae3239d3868bb702393325453e640]
+- The README links to a lynda.com shared playlist listing all the Code Clinic language courses. [@claim:clm_d7c63cda350408f1709005c59d484fc7a26bfa90b286b05572f6a2da8d928ca9]
+- The course problems include exploring Lake Pend Oreille, image analysis, Eight Queens, building a theremin, recursion and directories, and dynamic web pages. [@claim:clm_e16f3d35d9103aac2f96b6ea18d8f755aaf6bb28412f3d47a955f3c8fc3d13c1]
+<!-- rcw:end owner=source:src_24e6df424dc85ac1b09ed9bd5f0289de block=evidence -->
+
+## Researcher notes
+

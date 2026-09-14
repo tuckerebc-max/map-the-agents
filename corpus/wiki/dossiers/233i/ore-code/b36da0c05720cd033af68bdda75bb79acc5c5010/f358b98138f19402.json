@@ -1,0 +1,636 @@
+{
+  "applied_operation_id": "op_d05a55d94a634c2989ddcf8b9c159066",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e9a4abb38fbb022c3f0df4f8ac59f39754a0c63292f71b953c29492e9db0671",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2e3e1b43c85d1c9aca516a674f36f68c983b8aed2a2e33550e41286bfccfd88"
+      ],
+      "text": "The product combines a TypeScript agent runtime, a React/Tauri desktop app, and a Rust OS boundary handling local file, shell, process, Git, keychain, artifact, and MCP operations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8b92e706647bc2da089c036db9800cd51594a2cea2e1193fd673d4bb526f71b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "6cd332f4f7e4c03fd2eaee017543ddec8d2057dc",
+          "line_end": 14,
+          "line_start": 7,
+          "path": "docs/API_AND_COMPATIBILITY.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/API_AND_COMPATIBILITY.md#L7-L14"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 85,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L76-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ada7916144b33756e5ef508df1e63d18b563fe405beb3b83d2d60fff75bd61b",
+        "slc_d1034cd177e613200085ec5b9161f738352727ce13a64996a4aa6e2e14c04918"
+      ],
+      "text": "The workspace includes packages for protocol event schemas, tool specs with approval policy, agent engine with model adapters, JSONL session/artifact state storage, and a scenario-replay harness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f83c4e30d05255870a6a39cce0a2acf884639bc2c1452bba197111ef51b3d964",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "64d462b54978f2fe753442a8bbf28536c7dec7ad",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "PRIVACY.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/PRIVACY.md#L39-L39"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "64d462b54978f2fe753442a8bbf28536c7dec7ad",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "PRIVACY.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/PRIVACY.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ffa82306ad41bd48a20bdcc7b8211efaac49ec0f262d1ad540a2cb30d86a0f0",
+        "slc_6004ac03f4f18c32f16edcff2876d928605028f31dd55f445e9c8bae7637ab45"
+      ],
+      "text": "The runtime can execute local tools such as Git, shell/process commands, tests, diagnostics, code execution, and MCP servers when the user permits them, with an approval system meant to surface higher-risk actions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f339a154cef17c117c94f754284d95930942068fa1df8146c525fa2b1710aa4",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "85213ed65038e30e059c1073c09b63d060c7711c",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/06-skill-system.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/06-skill-system.md#L7-L9"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "85213ed65038e30e059c1073c09b63d060c7711c",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/06-skill-system.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/06-skill-system.md#L24-L24"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "85213ed65038e30e059c1073c09b63d060c7711c",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/06-skill-system.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/06-skill-system.md#L3-L3"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "85213ed65038e30e059c1073c09b63d060c7711c",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/06-skill-system.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/06-skill-system.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a6518a7312d0d2a0daa37c7f0c2639fdbddb949b42e7df03e35192794f1e3e0",
+        "slc_708dafe4a4f2f27180a550cf0430bd408ffd4a189a5dec691e9e76d545c1d4b1",
+        "slc_aaa57a36e57a8298b8b5aa05a7b87fbf22dd53a54ed73be3cab0f4c4fcc82522",
+        "slc_f67614c59e167a176ae6263c22c93d794e20d8240ecae86194afa9210a48a0a9"
+      ],
+      "text": "Skills are user-level reusable workflow instructions stored at ~/.ore-code/skills/<skill-id>/SKILL.md; each skill auto-registers a slash command and its content is injected into the current prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0b688b5223542f70b6e1affc3ef31aa9e227600fad64d59f97e4e36264da7cd",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "85213ed65038e30e059c1073c09b63d060c7711c",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/06-skill-system.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/06-skill-system.md#L3-L3"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "85213ed65038e30e059c1073c09b63d060c7711c",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/06-skill-system.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/06-skill-system.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aaa57a36e57a8298b8b5aa05a7b87fbf22dd53a54ed73be3cab0f4c4fcc82522",
+        "slc_f67614c59e167a176ae6263c22c93d794e20d8240ecae86194afa9210a48a0a9"
+      ],
+      "text": "Skills are documentation-like instructions, not plugin code, and do not execute arbitrary scripts; actual file, shell, and git actions still go through existing tools and the approval system."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_faca359b6c675c559e5b0a3f9006150f49ad43feb988e541c7580caf4f9c42c3",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L42-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2943eec6a15e90d06d5121d563e6723ef37ea5a69f17c306204125f72419f2ae"
+      ],
+      "text": "The agent offers context-control features including history compression, context briefing, checkpoint summaries, usage visibility, and provider-aware request shaping for long conversations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a4502f9d5bb5014aa1a41046bcf33e64185419b3ca075cdbfad23d58d5e87f4",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L46-L48"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 124,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L122-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50a1fe53e958c05a14f986ac324589ac9458955e6c5ec320fb86e54a83ad1472",
+        "slc_73499f9731c36f09c4b270180098e2eccde10a650fcd702e0491cf5fd1ad8526"
+      ],
+      "text": "Configuration supports DeepSeek, Mimo, Ark Coding, or custom endpoints via ~/.ore-code/config.toml, with API keys kept in the OS keychain and user-level MCP servers in ~/.ore-code/mcp.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5cde1f24e4b81236bf9bb3d9e5e815fd601cbcb5e325cc05dcd459832bc8c489",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L126-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b22fc7be904d0c0de01dbdd3ffc0bb5cd1a8bf99ece174f5bc1f8af72e3b9fe"
+      ],
+      "text": "The current release does not read project-level .ore-code/config.toml files; only user-level configuration is supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7582ede32b4a53f771a0d589cdfafe6f08f504879d23c78bba42508b7bc2710",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae6fba9fded755449e0a1de94a415f8a58525d23e9854a7384572a41202ec3f7"
+      ],
+      "text": "The macOS build is ad-hoc signed and not notarized because the project does not yet use an Apple Developer ID certificate, so macOS may block the app on first launch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8ae567a59542113674b21e6503fa4e46a708c65bb185c3d19d64cdb2a1d4fbc",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L46-L48"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 57,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L54-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50a1fe53e958c05a14f986ac324589ac9458955e6c5ec320fb86e54a83ad1472",
+        "slc_dc046830b4ef556ead40b239f2380e024c5f7b5ee97aa7e879f250bed98d1f60"
+      ],
+      "text": "The shipped release provides a macOS Apple Silicon installer; the Windows x64 build is listed as pending and must be built separately in a Windows environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38f589340cab9f702f267afa51b4abc3e707adcfb205437a7506c0a4ff3efb48",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "6cd332f4f7e4c03fd2eaee017543ddec8d2057dc",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "docs/API_AND_COMPATIBILITY.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/API_AND_COMPATIBILITY.md#L36-L39"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "6cd332f4f7e4c03fd2eaee017543ddec8d2057dc",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "docs/API_AND_COMPATIBILITY.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/API_AND_COMPATIBILITY.md#L34-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7414c1c22e49e57823563b5647e547ad001c91fa1019dd9cdacadaa6e274fe7f",
+        "slc_e92c9607443c028441b2d882055c43b1aebd2b66e8ad7cf03a8eabf37ff5b6a0"
+      ],
+      "text": "Runtime events are designed to be append-only from a reader's perspective, with new event types added in the protocol package first and older sessions expected to load when optional fields are missing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c14e7f109651ea3e49cff611ddc04cb7cde8f774ee49df32be11ebec6d009c7c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 109,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L106-L109"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "6cd332f4f7e4c03fd2eaee017543ddec8d2057dc",
+          "line_end": 95,
+          "line_start": 92,
+          "path": "docs/API_AND_COMPATIBILITY.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/API_AND_COMPATIBILITY.md#L92-L95"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+          "line_end": 95,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md#L91-L95"
+        },
+        {
+          "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+          "git_sha": "6cd332f4f7e4c03fd2eaee017543ddec8d2057dc",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "docs/API_AND_COMPATIBILITY.md",
+          "repository": "233i/ore-code",
+          "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/API_AND_COMPATIBILITY.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1110cdb26b44579fd3ad40cfd02292a6dd73ebc1a24bb894867c7a5860154283",
+        "slc_34cb1495c7234fb109be9612320b87030b7a36f3b73203d932200afdf206a0b0",
+        "slc_8aef92c508ef47126825e2642f8daf97b96b848a4784dd0061f40c44beaec00f",
+        "slc_b6381332c70ab3254a8b2c235ecd59ba63ac41927f7bb8c6debe19d28aa2c0a6"
+      ],
+      "text": "Repository development practice: contributors use Node 22 (pinned in .node-version), pnpm 11.x, Rust stable, and Tauri 2 prerequisites; local checks run via pnpm ci:local plus per-package test/typecheck/lint filters."
+    }
+  ],
+  "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 162,
+        "path": "README.md",
+        "size": 6367
+      },
+      {
+        "lines": 53,
+        "path": "PRIVACY.md",
+        "size": 2340
+      },
+      {
+        "lines": 152,
+        "path": "README.zh-CN.md",
+        "size": 5804
+      },
+      {
+        "lines": 45,
+        "path": "SUPPORT.md",
+        "size": 2205
+      },
+      {
+        "lines": 36,
+        "path": "docs/06-skill-system.md",
+        "size": 915
+      },
+      {
+        "lines": 97,
+        "path": "docs/API_AND_COMPATIBILITY.md",
+        "size": 5752
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/ARCHITECTURE_OVERVIEW.md",
+        "reason": "file-budget",
+        "size": 8034
+      },
+      {
+        "path": "docs/DEEPSEEK_V4_CONTEXT.md",
+        "reason": "file-budget",
+        "size": 6731
+      },
+      {
+        "path": "docs/DEVELOPMENT.md",
+        "reason": "file-budget",
+        "size": 2460
+      },
+      {
+        "path": "docs/FAQ.md",
+        "reason": "file-budget",
+        "size": 4145
+      },
+      {
+        "path": "docs/KNOWN_LIMITATIONS.md",
+        "reason": "file-budget",
+        "size": 3291
+      },
+      {
+        "path": "docs/LOCAL_DATA_AND_CONFIG.md",
+        "reason": "file-budget",
+        "size": 12868
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 924
+      },
+      {
+        "path": "docs/ROADMAP.md",
+        "reason": "file-budget",
+        "size": 3705
+      },
+      {
+        "path": "docs/TROUBLESHOOTING.md",
+        "reason": "file-budget",
+        "size": 4917
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 1004
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1092
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4207
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1436
+      }
+    ],
+    "omitted_count": 13,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 411,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 19,
+      "complete": false,
+      "omitted": 13,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b8fca7f0f08e597690056b54b85bc89e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 3,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/233i/ore-code/b36da0c05720cd033af68bdda75bb79acc5c5010/f358b98138f19402/manifest.json",
+  "package_id": "pkg_9fdf1d20bcbe62b27ee21d1e3f68097e1ac4ca41081d424810bddcff634471c4",
+  "repo": "233i/ore-code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "43cb364f409ea504653bc5066c253ba87864a8174b81ad4954885d2a61c1da30",
+  "snapshot_id": "f358b98138f19402",
+  "sources": [
+    {
+      "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+      "git_sha": "64d462b54978f2fe753442a8bbf28536c7dec7ad",
+      "lines": 53,
+      "path": "PRIVACY.md",
+      "repository": "233i/ore-code",
+      "sha256": "48239e86544117458217ec305f2c76e910bd5a397b3aada0776631b54dad9505",
+      "source_id": "src_ad4b5af24a3a5dbf96c116095d1cb1c3",
+      "stored": "privacy.md-ee5dfa56c2aa.md",
+      "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/PRIVACY.md"
+    },
+    {
+      "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+      "git_sha": "f31e8300750bfac62ef955ef624ad9ee15f75390",
+      "lines": 162,
+      "path": "README.md",
+      "repository": "233i/ore-code",
+      "sha256": "9c84474bde3b5f4278bdb4e7b226366eb2c72acd73d6786f0cbfc4ee2c0e738d",
+      "source_id": "src_d14d305b5eb35f26b7be40edd32c652d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.md"
+    },
+    {
+      "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+      "git_sha": "1e41ea4c85f84f76963ef831d2a9d3dbe6c1b821",
+      "lines": 152,
+      "path": "README.zh-CN.md",
+      "repository": "233i/ore-code",
+      "sha256": "dfef0ae44994fec7a78e8913131b9042cfc0be65198cf0d6c1ed47629bad305b",
+      "source_id": "src_71b21bdfd2825fc18f2391bea8056f4e",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/README.zh-CN.md"
+    },
+    {
+      "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+      "git_sha": "9c6ed57fc3f76cb67a172c5d58b93babcab38c02",
+      "lines": 45,
+      "path": "SUPPORT.md",
+      "repository": "233i/ore-code",
+      "sha256": "48d7c2190b42fe5155e3d06385a1235aa1a50fce150693a1fdeb5fb0999650cb",
+      "source_id": "src_682856286a7d50938ccc18fff19018d8",
+      "stored": "support.md-c5fe610b0215.md",
+      "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/SUPPORT.md"
+    },
+    {
+      "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+      "git_sha": "85213ed65038e30e059c1073c09b63d060c7711c",
+      "lines": 36,
+      "path": "docs/06-skill-system.md",
+      "repository": "233i/ore-code",
+      "sha256": "f82e8cdd63368740e80378b1431d107169e1fb0d21a21ff9f6103e9a8d5fb4b0",
+      "source_id": "src_52452562738d5a239d41482ce11d2402",
+      "stored": "06-skill-system.md-e4619877860c.md",
+      "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/06-skill-system.md"
+    },
+    {
+      "commit": "b36da0c05720cd033af68bdda75bb79acc5c5010",
+      "git_sha": "6cd332f4f7e4c03fd2eaee017543ddec8d2057dc",
+      "lines": 97,
+      "path": "docs/API_AND_COMPATIBILITY.md",
+      "repository": "233i/ore-code",
+      "sha256": "e24d56c39b9f8a9ad82c899ba94ebaab0e603c0c2198000af464855c114615f6",
+      "source_id": "src_4ba6cf74f1dd501f98e64915aec34081",
+      "stored": "api_and_compatibility.md-876f6f24777f.md",
+      "url": "https://github.com/233i/ore-code/blob/b36da0c05720cd033af68bdda75bb79acc5c5010/docs/API_AND_COMPATIBILITY.md"
+    }
+  ],
+  "summary": "Selected evidence records: The product combines a TypeScript agent runtime, a React/Tauri desktop app, and a Rust OS boundary handling local file, shell, process, Git, keychain, artifact, and MCP operations. The workspace includes packages for protocol event schemas, tool specs with approval policy, agent engine with model adapters, JSONL session/artifact state storage, and a scenario-replay harness.",
+  "superseded_claim_ids": []
+}

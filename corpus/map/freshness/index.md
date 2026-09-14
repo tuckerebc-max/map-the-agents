@@ -1,112 +1,439 @@
+
+
+Page 1 of 3. [First page](index.md) | [Next](index.page-2.md)
+
 # Freshness -- full index
 
 [Back to map index](../index.md)
 
-## current (0)
+Current means the dossier matches the latest locally collected snapshot. A lookup does not check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.
 
+## current (990)
 
-## pending (96)
-
-- [21st-dev/1code](../repos/21st-dev/1code.md)
-- [5dive-ai/5dive](../repos/5dive-ai/5dive.md)
-- [777genius/agent-teams-ai](../repos/777genius/agent-teams-ai.md)
-- [abacusai/abacusai-desktop](../repos/abacusai/abacusai-desktop.md)
-- [aeonfun/aeon](../repos/aeonfun/aeon.md)
-- [aetherstudio-cn/aetherstudio](../repos/aetherstudio-cn/aetherstudio.md)
-- [agenticailabs/ai-engineering-roadmap](../repos/agenticailabs/ai-engineering-roadmap.md)
-- [agentlas-ai/agentlas-os](../repos/agentlas-ai/agentlas-os.md)
-- [agentmd/agent.md](../repos/agentmd/agent.md.md)
-- [agentscope-ai/agentteams](../repos/agentscope-ai/agentteams.md)
-- [agentsmd/agents.md](../repos/agentsmd/agents.md.md)
-- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md)
-- [agi-is-going-to-arrive/ahadiff](../repos/agi-is-going-to-arrive/ahadiff.md)
-- [aiwaves-cn/agents](../repos/aiwaves-cn/agents.md)
-- [akarachen/2code](../repos/akarachen/2code.md)
-- [alanchen4/2024-swe-new-grad](../repos/alanchen4/2024-swe-new-grad.md)
-- [alexdevassy/ai-powered-vulnerability-impact-analyzer](../repos/alexdevassy/ai-powered-vulnerability-impact-analyzer.md)
-- [alpbahadur/49agents](../repos/alpbahadur/49agents.md)
-- [aozyildirim/agena](../repos/aozyildirim/agena.md)
-- [appgram/agentnotch](../repos/appgram/agentnotch.md)
-- [arul28/ade](../repos/arul28/ade.md)
-- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md)
-- [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md)
-- [aydinfer/ai-agents-tool-dev](../repos/aydinfer/ai-agents-tool-dev.md)
-- [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md)
-- [bawadou/ai-data-extractor](../repos/bawadou/ai-data-extractor.md)
-- [bonk1t/agentic-platform](../repos/bonk1t/agentic-platform.md)
-- [break-into-data/ai-engineer-toolkit](../repos/break-into-data/ai-engineer-toolkit.md)
-- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md)
-- [codeaholicguy/ai-devkit](../repos/codeaholicguy/ai-devkit.md)
-- [cortexkit/aft](../repos/cortexkit/aft.md)
-- [dallay/agentsync](../repos/dallay/agentsync.md)
-- [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md)
-- [decolua/9remote](../repos/decolua/9remote.md)
-- [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md)
-- [dimits-ts/ai_gdpr](../repos/dimits-ts/ai_gdpr.md)
-- [disler/agentic-coding-tool-eval](../repos/disler/agentic-coding-tool-eval.md)
-- [divar-ir/ai-doc-gen](../repos/divar-ir/ai-doc-gen.md)
-- [eventstubsol/ai-dev-agent-test](../repos/eventstubsol/ai-dev-agent-test.md)
-- [farelart/ai-code-gen](../repos/farelart/ai-code-gen.md)
-- [ferroxlabs/agents-md](../repos/ferroxlabs/agents-md.md)
-- [flexigpt/agent-repoguardian](../repos/flexigpt/agent-repoguardian.md)
-- [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md)
-- [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md)
-- [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md)
-- [huangd1999/agentcoder](../repos/huangd1999/agentcoder.md)
-- [iamfakeguru/agent-md](../repos/iamfakeguru/agent-md.md)
-- [ishandutta2007/awesome-ai-code-editor](../repos/ishandutta2007/awesome-ai-code-editor.md)
-- [jnmetacode/agency-agents-zh](../repos/jnmetacode/agency-agents-zh.md)
-- [jogendrasingh1879/agentic-ai-](../repos/jogendrasingh1879/agentic-ai-.md)
-- [kenn-io/agentsview](../repos/kenn-io/agentsview.md)
-- [landing-ai/ade-cli](../repos/landing-ai/ade-cli.md)
-- [lidangzzz/ai-coding-style-guides](../repos/lidangzzz/ai-coding-style-guides.md)
-- [loganthorneloe/ai-for-software-engineers](../repos/loganthorneloe/ai-for-software-engineers.md)
-- [luoyuctl/agenttrace](../repos/luoyuctl/agenttrace.md)
-- [lupantech/agentflow](../repos/lupantech/agentflow.md)
-- [madarco/agentbox](../repos/madarco/agentbox.md)
-- [mattolson/agent-sandbox](../repos/mattolson/agent-sandbox.md)
-- [mng-dev-ai/agentrove](../repos/mng-dev-ai/agentrove.md)
-- [modelscope/agentscope](../repos/modelscope/agentscope.md)
-- [mvanhorn/agentcookie](../repos/mvanhorn/agentcookie.md)
-- [mybono/ai-orchestrator](../repos/mybono/ai-orchestrator.md)
-- [nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads](../repos/nadinelipeiyu-jpg/ai-vibe-coding-notes-form-threads.md)
-- [njbrake/agent-of-empires](../repos/njbrake/agent-of-empires.md)
-- [ntegrals/10x](../repos/ntegrals/10x.md)
-- [openai/codex](../repos/openai/codex.md)
-- [openautocoder/agentless](../repos/openautocoder/agentless.md)
-- [packtpublishing/30-agents-every-ai-engineer-must-build](../repos/packtpublishing/30-agents-every-ai-engineer-must-build.md)
-- [packtpublishing/agentic-coding-with-claude-code](../repos/packtpublishing/agentic-coding-with-claude-code.md)
-- [perrypixel/10x-tool-calls](../repos/perrypixel/10x-tool-calls.md)
-- [phnx-labs/agents-cli](../repos/phnx-labs/agents-cli.md)
-- [pirua-game/ai_game_base_analysis_cli_mcp_tool](../repos/pirua-game/ai_game_base_analysis_cli_mcp_tool.md)
-- [ramarlina/agx](../repos/ramarlina/agx.md)
-- [ratnesh-181998/ai-engineer](../repos/ratnesh-181998/ai-engineer.md)
-- [rushi-code1/ai-powered-chatbot-generator](../repos/rushi-code1/ai-powered-chatbot-generator.md)
-- [saadnvd1/agent-os](../repos/saadnvd1/agent-os.md)
-- [seandavi/agentic-coding-intro](../repos/seandavi/agentic-coding-intro.md)
-- [securitylab-ucd/ai-agent-security](../repos/securitylab-ucd/ai-agent-security.md)
-- [sfelkner/ai-agent-test](../repos/sfelkner/ai-agent-test.md)
-- [shawhint/ai-builders-bootcamp-1](../repos/shawhint/ai-builders-bootcamp-1.md)
-- [shawhint/ai-builders-bootcamp-2](../repos/shawhint/ai-builders-bootcamp-2.md)
-- [shinpr/agentic-code](../repos/shinpr/agentic-code.md)
-- [snarktank/ai-dev-tasks](../repos/snarktank/ai-dev-tasks.md)
-- [sumanth077/ai-engineering-toolkit](../repos/sumanth077/ai-engineering-toolkit.md)
-- [sylphai-inc/adal-cli](../repos/sylphai-inc/adal-cli.md)
-- [taewooopark/agent-blackbox](../repos/taewooopark/agent-blackbox.md)
-- [thixpin/agentic-coding-basic](../repos/thixpin/agentic-coding-basic.md)
-- [untrivial-ai/agent-orchestrator](../repos/untrivial-ai/agent-orchestrator.md)
-- [usagi-org/ai-code-review-helper](../repos/usagi-org/ai-code-review-helper.md)
-- [vishal2612200/agentpack](../repos/vishal2612200/agentpack.md)
-- [wei1024/ai-agent-playground](../repos/wei1024/ai-agent-playground.md)
-- [willynikes2/agent-orchestrator](../repos/willynikes2/agent-orchestrator.md)
-- [yasinonline/agenticai](../repos/yasinonline/agenticai.md)
-- [yoanwai/agent-manager](../repos/yoanwai/agent-manager.md)
-- [zeeshan138063/ai-agent-lab](../repos/zeeshan138063/ai-agent-lab.md)
-- [zhixiangluo/10xproductivity](../repos/zhixiangluo/10xproductivity.md)
-
-## stale (0)
-
-
-## refresh-failed (0)
-
-
+- [101dotxyz/gpteam](../repos/101dotxyz/gpteam.md) [coverage: complete]
+- [1jehuang/jcode](../repos/1jehuang/jcode.md) [coverage: partial]
+- [21st-dev/1code](../repos/21st-dev/1code.md) [coverage: complete]
+- [233i/ore-code](../repos/233i/ore-code.md) [coverage: partial]
+- [2389-research/2389-agent-rust](../repos/2389-research/2389-agent-rust.md) [coverage: partial]
+- [2389-research/binary-re](../repos/2389-research/binary-re.md) [coverage: partial]
+- [2389-research/breakaway-agent](../repos/2389-research/breakaway-agent.md) [coverage: partial]
+- [2389-research/claude-plugins](../repos/2389-research/claude-plugins.md) [coverage: partial]
+- [2389-research/coven](../repos/2389-research/coven.md) [coverage: partial]
+- [2389-research/coven-gateway](../repos/2389-research/coven-gateway.md) [coverage: partial]
+- [2389-research/dippin-lang](../repos/2389-research/dippin-lang.md) [coverage: partial]
+- [2389-research/fleet-control](../repos/2389-research/fleet-control.md) [coverage: complete]
+- [2389-research/gossip](../repos/2389-research/gossip.md) [coverage: partial]
+- [2389-research/hex](../repos/2389-research/hex.md) [coverage: partial]
+- [2389-research/mux-rs](../repos/2389-research/mux-rs.md) [coverage: partial]
+- [2389-research/ourocodus](../repos/2389-research/ourocodus.md) [coverage: partial]
+- [2389-research/packnplay](../repos/2389-research/packnplay.md) [coverage: partial]
+- [2389-research/sift](../repos/2389-research/sift.md) [coverage: complete]
+- [2389-research/simmer](../repos/2389-research/simmer.md) [coverage: complete]
+- [2389-research/thrifty](../repos/2389-research/thrifty.md) [coverage: complete]
+- [2389-research/tracker](../repos/2389-research/tracker.md) [coverage: partial]
+- [2389-research/translator](../repos/2389-research/translator.md) [coverage: complete]
+- [5dive-ai/5dive](../repos/5dive-ai/5dive.md) [coverage: partial]
+- [777genius/agent-teams-ai](../repos/777genius/agent-teams-ai.md) [coverage: partial]
+- [a115/icodes](../repos/a115/icodes.md) [coverage: complete]
+- [aaif-goose/goose](../repos/aaif-goose/goose.md) [coverage: partial]
+- [aannoo/hcom](../repos/aannoo/hcom.md) [coverage: complete]
+- [aaronkub/machine-learning-examples](../repos/aaronkub/machine-learning-examples.md) [coverage: complete]
+- [aaronz345/codebase-argus](../repos/aaronz345/codebase-argus.md) [coverage: partial]
+- [aattaran/deepclaude](../repos/aattaran/deepclaude.md) [coverage: complete]
+- [aavetis/prarena](../repos/aavetis/prarena.md) [coverage: complete]
+- [abacusai/abacusai-desktop](../repos/abacusai/abacusai-desktop.md) [coverage: complete]
+- [abcwyc/pi-agent-desktop](../repos/abcwyc/pi-agent-desktop.md) [coverage: partial]
+- [abhikt48/java-ai-sbus-test](../repos/abhikt48/java-ai-sbus-test.md) [coverage: complete]
+- [abhinaykrupa/cowork-to-code-bridge](../repos/abhinaykrupa/cowork-to-code-bridge.md) [coverage: partial]
+- [adrida/hud-mode](../repos/adrida/hud-mode.md) [coverage: complete]
+- [adshao/flounder](../repos/adshao/flounder.md) [coverage: partial]
+- [aduermael/herm](../repos/aduermael/herm.md) [coverage: partial]
+- [aeonfun/aeon](../repos/aeonfun/aeon.md) [coverage: partial]
+- [aestheticsuraj234/vibecode-playground](../repos/aestheticsuraj234/vibecode-playground.md) [coverage: complete]
+- [aetherstudio-cn/aetherstudio](../repos/aetherstudio-cn/aetherstudio.md) [coverage: complete]
+- [affaan-m/claude-swarm](../repos/affaan-m/claude-swarm.md) [coverage: complete]
+- [ag2ai/fastagency](../repos/ag2ai/fastagency.md) [coverage: partial]
+- [agent-field/swe-af](../repos/agent-field/swe-af.md) [coverage: partial]
+- [agent-of-empires/agent-of-empires](../repos/agent-of-empires/agent-of-empires.md) [coverage: partial]
+- [agentforce314/clawcodex](../repos/agentforce314/clawcodex.md) [coverage: partial]
+- [agenticailabs/ai-engineering-roadmap](../repos/agenticailabs/ai-engineering-roadmap.md) [coverage: complete]
+- [agentlas-ai/agentlas-os](../repos/agentlas-ai/agentlas-os.md) [coverage: partial]
+- [agentmd/agent.md](../repos/agentmd/agent.md.md) [coverage: complete]
+- [agentscope-ai/agentscope](../repos/agentscope-ai/agentscope.md) [coverage: partial]
+- [agentscope-ai/agentteams](../repos/agentscope-ai/agentteams.md) [coverage: partial]
+- [agentsmd/agents.md](../repos/agentsmd/agents.md.md) [coverage: complete]
+- [agentsmesh/agentsmesh](../repos/agentsmesh/agentsmesh.md) [coverage: partial]
+- [agi-is-going-to-arrive/ahadiff](../repos/agi-is-going-to-arrive/ahadiff.md) [coverage: complete]
+- [agnusdei1207/opencode-orchestrator](../repos/agnusdei1207/opencode-orchestrator.md) [coverage: partial]
+- [ahacker-1/cre-acquisition-orchestrator](../repos/ahacker-1/cre-acquisition-orchestrator.md) [coverage: partial]
+- [ai-genie/chatgpt-vscode](../repos/ai-genie/chatgpt-vscode.md) [coverage: complete]
+- [ai-maker-space/interactive-dev-environment-for-ai-engineers](../repos/ai-maker-space/interactive-dev-environment-for-ai-engineers.md) [coverage: complete]
+- [ai4finance-foundation/finrobot](../repos/ai4finance-foundation/finrobot.md) [coverage: partial]
+- [aider-ai/aider](../repos/aider-ai/aider.md) [coverage: partial]
+- [aiwaves-cn/agents](../repos/aiwaves-cn/agents.md) [coverage: complete]
+- [aizenvoltprime/damocles](../repos/aizenvoltprime/damocles.md) [coverage: partial]
+- [akarachen/2code](../repos/akarachen/2code.md) [coverage: partial]
+- [akashgit/remote-factory](../repos/akashgit/remote-factory.md) [coverage: partial]
+- [alanchen4/2024-swe-new-grad](../repos/alanchen4/2024-swe-new-grad.md) [coverage: complete]
+- [alanchen4/summer-2024-swe-internships](../repos/alanchen4/summer-2024-swe-internships.md) [coverage: partial]
+- [alchaincyf/fanbox](../repos/alchaincyf/fanbox.md) [coverage: partial]
+- [alex-reysa/singular-lite](../repos/alex-reysa/singular-lite.md) [coverage: partial]
+- [alexdevassy/ai-powered-vulnerability-impact-analyzer](../repos/alexdevassy/ai-powered-vulnerability-impact-analyzer.md) [coverage: complete]
+- [alexgreensh/outsourcerer](../repos/alexgreensh/outsourcerer.md) [coverage: complete]
+- [alexmoses/o1_agent_test](../repos/alexmoses/o1_agent_test.md) [coverage: complete]
+- [alfianlosari/appclipcodegenerator](../repos/alfianlosari/appclipcodegenerator.md) [coverage: complete]
+- [algonorhythm/flare](../repos/algonorhythm/flare.md) [coverage: complete]
+- [alibaba/open-code-review](../repos/alibaba/open-code-review.md) [coverage: partial]
+- [alicheg/gpt-coder](../repos/alicheg/gpt-coder.md) [coverage: complete]
+- [alihamzaazam/repomon](../repos/alihamzaazam/repomon.md) [coverage: partial]
+- [allenai/marg-reviewer](../repos/allenai/marg-reviewer.md) [coverage: complete]
+- [almanaccode/codealmanac](../repos/almanaccode/codealmanac.md) [coverage: partial]
+- [almogdepaz/wolfpack](../repos/almogdepaz/wolfpack.md) [coverage: partial]
+- [alpbahadur/49-ide](../repos/alpbahadur/49-ide.md) [coverage: complete]
+- [amal-david/pagecast](../repos/amal-david/pagecast.md) [coverage: partial]
+- [amersarhan/darce-cli](../repos/amersarhan/darce-cli.md) [coverage: complete]
+- [amix/dunk](../repos/amix/dunk.md) [coverage: partial]
+- [amrit110/oli](../repos/amrit110/oli.md) [coverage: complete]
+- [amsilf/sc-helm-app](../repos/amsilf/sc-helm-app.md) [coverage: complete]
+- [anaconda-labs/building-intelligent-apps-with-anaconda](../repos/anaconda-labs/building-intelligent-apps-with-anaconda.md) [coverage: complete]
+- [andrefetch/postal](../repos/andrefetch/postal.md) [coverage: partial]
+- [andrewyng/context-hub](../repos/andrewyng/context-hub.md) [coverage: partial]
+- [andymik90/aperant](../repos/andymik90/aperant.md) [coverage: partial]
+- [andyrewlee/amux](../repos/andyrewlee/amux.md) [coverage: partial]
+- [angleschina/angles-cli](../repos/angleschina/angles-cli.md) [coverage: partial]
+- [aniket-508/vercel-doctor](../repos/aniket-508/vercel-doctor.md) [coverage: complete]
+- [anipotts/coding-agent-tips](../repos/anipotts/coding-agent-tips.md) [coverage: partial]
+- [anishsingh20/useful-generativeai-tools-repo](../repos/anishsingh20/useful-generativeai-tools-repo.md) [coverage: complete]
+- [anomalyco/opencode](../repos/anomalyco/opencode.md) [coverage: partial]
+- [anthropics/claude-agent-sdk-python](../repos/anthropics/claude-agent-sdk-python.md) [coverage: complete]
+- [anthropics/claude-agent-sdk-typescript](../repos/anthropics/claude-agent-sdk-typescript.md) [coverage: partial]
+- [anthropics/claude-code](../repos/anthropics/claude-code.md) [coverage: partial]
+- [antigmalabs/ante](../repos/antigmalabs/ante.md) [coverage: partial]
+- [antonosika/gpt-engineer](../repos/antonosika/gpt-engineer.md) [coverage: partial]
+- [aozyildirim/agena](../repos/aozyildirim/agena.md) [coverage: partial]
+- [appgram/agentnotch](../repos/appgram/agentnotch.md) [coverage: complete]
+- [apvcode/termux-dev](../repos/apvcode/termux-dev.md) [coverage: complete]
+- [aquila-lab/superflex-vscode](../repos/aquila-lab/superflex-vscode.md) [coverage: complete]
+- [arch1esun/arcgentic](../repos/arch1esun/arcgentic.md) [coverage: partial]
+- [arctic-cli/interface](../repos/arctic-cli/interface.md) [coverage: complete]
+- [arfo-du-blo/cursor-in-browser](../repos/arfo-du-blo/cursor-in-browser.md) [coverage: complete]
+- [arjia-labs/clu](../repos/arjia-labs/clu.md) [coverage: partial]
+- [arjunhw97/msn-flocking-formation-control](../repos/arjunhw97/msn-flocking-formation-control.md) [coverage: complete]
+- [arphanetx/monocle](../repos/arphanetx/monocle.md) [coverage: complete]
+- [arul28/ade](../repos/arul28/ade.md) [coverage: partial]
+- [ascorbic/am-i-vibing](../repos/ascorbic/am-i-vibing.md) [coverage: complete]
+- [asheshgoplani/agent-deck](../repos/asheshgoplani/agent-deck.md) [coverage: partial]
+- [ashish200729/orbiteditor](../repos/ashish200729/orbiteditor.md) [coverage: partial]
+- [athasdev/athas](../repos/athasdev/athas.md) [coverage: complete]
+- [atmosphere/atmosphere](../repos/atmosphere/atmosphere.md) [coverage: partial]
+- [atomgit-atomcode/atomcode](../repos/atomgit-atomcode/atomcode.md) [coverage: partial]
+- [atrayee-dev/secure-ai-agent-boundary](../repos/atrayee-dev/secure-ai-agent-boundary.md) [coverage: complete]
+- [augmentcode/auggie](../repos/augmentcode/auggie.md) [coverage: partial]
+- [aurasgit/public-agent-framwork](../repos/aurasgit/public-agent-framwork.md) [coverage: partial]
+- [autohandai/code-cli](../repos/autohandai/code-cli.md) [coverage: partial]
+- [automazeio/vibeproxy](../repos/automazeio/vibeproxy.md) [coverage: partial]
+- [autoresearch-factory/agon](../repos/autoresearch-factory/agon.md) [coverage: complete]
+- [avelikiy/great_cto](../repos/avelikiy/great_cto.md) [coverage: partial]
+- [aws-samples/amazon-mwaa-examples](../repos/aws-samples/amazon-mwaa-examples.md) [coverage: complete]
+- [aws-samples/remote-swe-agents](../repos/aws-samples/remote-swe-agents.md) [coverage: partial]
+- [aws-samples/sample-multi-agent-orchestration-chat-on-agentcore](../repos/aws-samples/sample-multi-agent-orchestration-chat-on-agentcore.md) [coverage: partial]
+- [aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit](../repos/aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit.md) [coverage: complete]
+- [aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws](../repos/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws.md) [coverage: complete]
+- [aws/amazon-q-developer-cli](../repos/aws/amazon-q-developer-cli.md) [coverage: partial]
+- [aws/aws-mwaa-local-runner](../repos/aws/aws-mwaa-local-runner.md) [coverage: complete]
+- [awslabs/cli-agent-orchestrator](../repos/awslabs/cli-agent-orchestrator.md) [coverage: partial]
+- [axflow/axflow](../repos/axflow/axflow.md) [coverage: partial]
+- [azure/gpt-rag-orchestrator](../repos/azure/gpt-rag-orchestrator.md) [coverage: partial]
+- [backbay-labs/clawdstrike](../repos/backbay-labs/clawdstrike.md) [coverage: partial]
+- [bahdotsh/indxr](../repos/bahdotsh/indxr.md) [coverage: partial]
+- [balaaagi/intelligent-agent](../repos/balaaagi/intelligent-agent.md) [coverage: complete]
+- [basilisk-labs/agentplane](../repos/basilisk-labs/agentplane.md) [coverage: partial]
+- [bastani-inc/atomic](../repos/bastani-inc/atomic.md) [coverage: partial]
+- [bauer-jan/stock-analysis-with-llm](../repos/bauer-jan/stock-analysis-with-llm.md) [coverage: complete]
+- [bbarit/bbarit-agent-oss](../repos/bbarit/bbarit-agent-oss.md) [coverage: partial]
+- [bbarit/terminal](../repos/bbarit/terminal.md) [coverage: complete]
+- [benbasha/claude-autopilot](../repos/benbasha/claude-autopilot.md) [coverage: partial]
+- [benc-uk/workflow-dispatch](../repos/benc-uk/workflow-dispatch.md) [coverage: complete]
+- [benthecoder/yt-channels-ds-ai-ml-cs](../repos/benthecoder/yt-channels-ds-ai-ml-cs.md) [coverage: complete]
+- [betterforall/self-improving-agents](../repos/betterforall/self-improving-agents.md) [coverage: complete]
+- [bhouston/mycoder](../repos/bhouston/mycoder.md) [coverage: partial]
+- [biati-digital/alfred-calculate-anything](../repos/biati-digital/alfred-calculate-anything.md) [coverage: complete]
+- [big-pony/pocketshell](../repos/big-pony/pocketshell.md) [coverage: partial]
+- [bigcode-project/starcoder](../repos/bigcode-project/starcoder.md) [coverage: complete]
+- [blaine/fantastty](../repos/blaine/fantastty.md) [coverage: partial]
+- [blazity/nefi](../repos/blazity/nefi.md) [coverage: complete]
+- [blushyes/coro-code](../repos/blushyes/coro-code.md) [coverage: complete]
+- [bmad-code-org/bmad-method](../repos/bmad-code-org/bmad-method.md) [coverage: partial]
+- [bmdavis419/.better-coding-agents](../repos/bmdavis419/.better-coding-agents.md) [coverage: complete]
+- [bombap/tiny-agent](../repos/bombap/tiny-agent.md) [coverage: complete]
+- [boringcomputers/nehemiah](../repos/boringcomputers/nehemiah.md) [coverage: partial]
+- [break-into-data/ai-engineer-toolkit](../repos/break-into-data/ai-engineer-toolkit.md) [coverage: complete]
+- [browser-use/video-use](../repos/browser-use/video-use.md) [coverage: complete]
+- [browseroperator/browser-operator-core](../repos/browseroperator/browser-operator-core.md) [coverage: partial]
+- [brutusin/instrumentation](../repos/brutusin/instrumentation.md) [coverage: complete]
+- [build-with-groq/groq-code-cli](../repos/build-with-groq/groq-code-cli.md) [coverage: complete]
+- [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) [coverage: partial]
+- [buildownai/tools](../repos/buildownai/tools.md) [coverage: complete]
+- [builtbyv/ai-website-builder](../repos/builtbyv/ai-website-builder.md) [coverage: complete]
+- [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [coverage: partial]
+- [butttons/dora](../repos/butttons/dora.md) [coverage: partial]
+- [bytedance/deer-flow](../repos/bytedance/deer-flow.md) [coverage: partial]
+- [bytedance/trae-agent](../repos/bytedance/trae-agent.md) [coverage: complete]
+- [c0sogi/llmchat](../repos/c0sogi/llmchat.md) [coverage: partial]
+- [cactus-compute/needle](../repos/cactus-compute/needle.md) [coverage: partial]
+- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [coverage: partial]
+- [caplet1989/brokies-ai-foundry](../repos/caplet1989/brokies-ai-foundry.md) [coverage: complete]
+- [carloluisito/omnidesk](../repos/carloluisito/omnidesk.md) [coverage: partial]
+- [catatafishen/agentbridge](../repos/catatafishen/agentbridge.md) [coverage: partial]
+- [cfal/garcon](../repos/cfal/garcon.md) [coverage: partial]
+- [chaitanyagiri/munder-difflin](../repos/chaitanyagiri/munder-difflin.md) [coverage: partial]
+- [chaitin/monkeycode](../repos/chaitin/monkeycode.md) [coverage: partial]
+- [chakkaradeep/pycodeagi](../repos/chakkaradeep/pycodeagi.md) [coverage: complete]
+- [chandra447/pi-hermes-memory](../repos/chandra447/pi-hermes-memory.md) [coverage: partial]
+- [changkun/wallfacer](../repos/changkun/wallfacer.md) [coverage: partial]
+- [charmbracelet/crush](../repos/charmbracelet/crush.md) [coverage: partial]
+- [charmbracelet/fantasy](../repos/charmbracelet/fantasy.md) [coverage: complete]
+- [chaterm/chaterm](../repos/chaterm/chaterm.md) [coverage: partial]
+- [cherryhq/cherry-studio](../repos/cherryhq/cherry-studio.md) [coverage: partial]
+- [choeng-rayu/rayu-cli](../repos/choeng-rayu/rayu-cli.md) [coverage: partial]
+- [choiyounggi/cliclaw](../repos/choiyounggi/cliclaw.md) [coverage: partial]
+- [civai-technologies/cursor-agent](../repos/civai-technologies/cursor-agent.md) [coverage: partial]
+- [clarisseio/python-agents](../repos/clarisseio/python-agents.md) [coverage: partial]
+- [clawplays/ospec](../repos/clawplays/ospec.md) [coverage: partial]
+- [cline/cline](../repos/cline/cline.md) [coverage: partial]
+- [cloudflare/vibesdk](../repos/cloudflare/vibesdk.md) [coverage: partial]
+- [code4delphi/delphi-ai-developer](../repos/code4delphi/delphi-ai-developer.md) [coverage: complete]
+- [codeaholicguy/ai-devkit](../repos/codeaholicguy/ai-devkit.md) [coverage: partial]
+- [codealta/codealta](../repos/codealta/codealta.md) [coverage: partial]
+- [codeany-ai/codeany](../repos/codeany-ai/codeany.md) [coverage: complete]
+- [codebuffai/freebuff](../repos/codebuffai/freebuff.md) [coverage: partial]
+- [codeflash-ai/codeflash](../repos/codeflash-ai/codeflash.md) [coverage: partial]
+- [codefox-lab/codefox-cli](../repos/codefox-lab/codefox-cli.md) [coverage: partial]
+- [codefuse-ai/codefuse-chatbot](../repos/codefuse-ai/codefuse-chatbot.md) [coverage: partial]
+- [codefuse-ai/codefuse-muagent](../repos/codefuse-ai/codefuse-muagent.md) [coverage: partial]
+- [codehamr/codehamr](../repos/codehamr/codehamr.md) [coverage: complete]
+- [codeintegrity-ai/mutahunter](../repos/codeintegrity-ai/mutahunter.md) [coverage: complete]
+- [coder/xum](../repos/coder/xum.md) [coverage: partial]
+- [coderamp-labs/gitingest](../repos/coderamp-labs/gitingest.md) [coverage: partial]
+- [coderluii/holyclaude](../repos/coderluii/holyclaude.md) [coverage: partial]
+- [codingmoh/open-codex](../repos/codingmoh/open-codex.md) [coverage: complete]
+- [codingthefuturewithai/software-dev-prompt-library](../repos/codingthefuturewithai/software-dev-prompt-library.md) [coverage: complete]
+- [codinit-dev/codinit-dev](../repos/codinit-dev/codinit-dev.md) [coverage: complete]
+- [cogitatortech/binharic-cli](../repos/cogitatortech/binharic-cli.md) [coverage: complete]
+- [coleam00/archon](../repos/coleam00/archon.md) [coverage: partial]
+- [coleam00/claude-memory-compiler](../repos/coleam00/claude-memory-compiler.md) [coverage: complete]
+- [coleam00/context-engineering-intro](../repos/coleam00/context-engineering-intro.md) [coverage: complete]
+- [coleam00/linear-coding-agent-harness](../repos/coleam00/linear-coding-agent-harness.md) [coverage: complete]
+- [coleam00/mcp-crawl4ai-rag](../repos/coleam00/mcp-crawl4ai-rag.md) [coverage: complete]
+- [commandcodeai/command-code](../repos/commandcodeai/command-code.md) [coverage: complete]
+- [composable-models/llm_multiagent_debate](../repos/composable-models/llm_multiagent_debate.md) [coverage: complete]
+- [construct-worlds/construct](../repos/construct-worlds/construct.md) [coverage: partial]
+- [context-labs/halo](../repos/context-labs/halo.md) [coverage: complete]
+- [continuedev/continue](../repos/continuedev/continue.md) [coverage: partial]
+- [cortexkit/aft](../repos/cortexkit/aft.md) [coverage: partial]
+- [cosai-oasis/project-codeguard](../repos/cosai-oasis/project-codeguard.md) [coverage: partial]
+- [cosmtrek/mindwalk](../repos/cosmtrek/mindwalk.md) [coverage: complete]
+- [coze-dev/coze-studio](../repos/coze-dev/coze-studio.md) [coverage: partial]
+- [cpoile/claudemacs](../repos/cpoile/claudemacs.md) [coverage: complete]
+- [crewaiinc/crewai](../repos/crewaiinc/crewai.md) [coverage: partial]
+- [crewplaneai/crewplane](../repos/crewplaneai/crewplane.md) [coverage: partial]
+- [crustocean/conch](../repos/crustocean/conch.md) [coverage: complete]
+- [cubiq/comfyui_workflows](../repos/cubiq/comfyui_workflows.md) [coverage: complete]
+- [cuga-project/cuga-agent](../repos/cuga-project/cuga-agent.md) [coverage: partial]
+- [cursor/cursor](../repos/cursor/cursor.md) [coverage: complete]
+- [d-kimuson/claude-code-viewer](../repos/d-kimuson/claude-code-viewer.md) [coverage: partial]
+- [d-kuro/gwq](../repos/d-kuro/gwq.md) [coverage: partial]
+- [dagger/dagger](../repos/dagger/dagger.md) [coverage: partial]
+- [dalestewart/promptengineering](../repos/dalestewart/promptengineering.md) [coverage: complete]
+- [dallay/agentsync](../repos/dallay/agentsync.md) [coverage: partial]
+- [danau5tin/tbench-agentic-data-pipeline](../repos/danau5tin/tbench-agentic-data-pipeline.md) [coverage: complete]
+- [danilofalcao/jarvis](../repos/danilofalcao/jarvis.md) [coverage: partial]
+- [danish296/codevibes](../repos/danish296/codevibes.md) [coverage: complete]
+- [danshapiro/freshell](../repos/danshapiro/freshell.md) [coverage: partial]
+- [dansiegel/codegenhelpers](../repos/dansiegel/codegenhelpers.md) [coverage: complete]
+- [darrenapfel/claudecode-orchestrator](../repos/darrenapfel/claudecode-orchestrator.md) [coverage: complete]
+- [databricks-solutions/ai-dev-kit](../repos/databricks-solutions/ai-dev-kit.md) [coverage: partial]
+- [datacurve-ai/deep-swe](../repos/datacurve-ai/deep-swe.md) [coverage: complete]
+- [datasciencemonkey/coding-agents-databricks-apps](../repos/datasciencemonkey/coding-agents-databricks-apps.md) [coverage: partial]
+- [dazuiba/handoff](../repos/dazuiba/handoff.md) [coverage: partial]
+- [dcouple/pane](../repos/dcouple/pane.md) [coverage: partial]
+- [deadwavewave/demo2apk](../repos/deadwavewave/demo2apk.md) [coverage: partial]
+- [decolua/9remote](../repos/decolua/9remote.md) [coverage: complete]
+- [decron/whitebox-code-gpt](../repos/decron/whitebox-code-gpt.md) [coverage: complete]
+- [deep-copilot/deepcopilot](../repos/deep-copilot/deepcopilot.md) [coverage: complete]
+- [deepagent-ltd/deepagent-code](../repos/deepagent-ltd/deepagent-code.md) [coverage: partial]
+- [deepseek-ai/deepseek-coder](../repos/deepseek-ai/deepseek-coder.md) [coverage: complete]
+- [denchhq/denchclaw](../repos/denchhq/denchclaw.md) [coverage: complete]
+- [devcorexofficial/core-termux](../repos/devcorexofficial/core-termux.md) [coverage: complete]
+- [devdanzin/fusil](../repos/devdanzin/fusil.md) [coverage: partial]
+- [developersdigest/llm-answer-engine](../repos/developersdigest/llm-answer-engine.md) [coverage: complete]
+- [devill/refakts](../repos/devill/refakts.md) [coverage: complete]
+- [dharllc/speech-to-code](../repos/dharllc/speech-to-code.md) [coverage: complete]
+- [dhurng/raven-test-ai](../repos/dhurng/raven-test-ai.md) [coverage: complete]
+- [dicklesworthstone/coding_agent_account_manager](../repos/dicklesworthstone/coding_agent_account_manager.md) [coverage: partial]
+- [dicklesworthstone/coding_agent_session_search](../repos/dicklesworthstone/coding_agent_session_search.md) [coverage: partial]
+- [dicklesworthstone/frankenterm](../repos/dicklesworthstone/frankenterm.md) [coverage: partial]
+- [dicklesworthstone/ntm](../repos/dicklesworthstone/ntm.md) [coverage: partial]
+- [dimitrigeelen/agentic-engineering-framework](../repos/dimitrigeelen/agentic-engineering-framework.md) [coverage: partial]
+- [dimits-ts/ai_gdpr](../repos/dimits-ts/ai_gdpr.md) [coverage: complete]
+- [dinoanderson/qwen_cli_coder](../repos/dinoanderson/qwen_cli_coder.md) [coverage: partial]
+- [disler/agentic-coding-tool-eval](../repos/disler/agentic-coding-tool-eval.md) [coverage: complete]
+- [divar-ir/ai-doc-gen](../repos/divar-ir/ai-doc-gen.md) [coverage: complete]
+- [dmae97/omk](../repos/dmae97/omk.md) [coverage: partial]
+- [dnouri/pilish](../repos/dnouri/pilish.md) [coverage: complete]
+- [doable-me/doable](../repos/doable-me/doable.md) [coverage: partial]
+- [dog-qiuqiu/invincat](../repos/dog-qiuqiu/invincat.md) [coverage: complete]
+- [dongdongunique/llm_rag](../repos/dongdongunique/llm_rag.md) [coverage: complete]
+- [doriandarko/claude-engineer](../repos/doriandarko/claude-engineer.md) [coverage: complete]
+- [doriandarko/deepseek-engineer](../repos/doriandarko/deepseek-engineer.md) [coverage: complete]
+- [doucs91/hivelore](../repos/doucs91/hivelore.md) [coverage: partial]
+- [dreamide/dream](../repos/dreamide/dream.md) [coverage: complete]
+- [duckdb/extension-ci-tools](../repos/duckdb/extension-ci-tools.md) [coverage: complete]
+- [ducksss/codex-profiles](../repos/ducksss/codex-profiles.md) [coverage: partial]
+- [dudufcb1/codebase-index-cli](../repos/dudufcb1/codebase-index-cli.md) [coverage: partial]
+- [dyad-sh/dyad](../repos/dyad-sh/dyad.md) [coverage: partial]
+- [earendil-works/pi](../repos/earendil-works/pi.md) [coverage: complete]
+- [echovic/blade-code](../repos/echovic/blade-code.md) [coverage: partial]
+- [edantoledo/stoix](../repos/edantoledo/stoix.md) [coverage: complete]
+- [editor-code-assistant/eca](../repos/editor-code-assistant/eca.md) [coverage: partial]
+- [egoist/waku](../repos/egoist/waku.md) [coverage: partial]
+- [eigent-ai/eigent](../repos/eigent-ai/eigent.md) [coverage: partial]
+- [electric-sql/electric](../repos/electric-sql/electric.md) [coverage: partial]
+- [elirantutia/vibeyard](../repos/elirantutia/vibeyard.md) [coverage: partial]
+- [elpsykongloo/paperbanana-pro](../repos/elpsykongloo/paperbanana-pro.md) [coverage: complete]
+- [embabel/coding-agent](../repos/embabel/coding-agent.md) [coverage: complete]
+- [emilianomusso/entwinellm](../repos/emilianomusso/entwinellm.md) [coverage: complete]
+- [emrgnt-cmplxty/automata](../repos/emrgnt-cmplxty/automata.md) [coverage: partial]
+- [eneskirca/nodeterm](../repos/eneskirca/nodeterm.md) [coverage: partial]
+- [enola-labs/enola](../repos/enola-labs/enola.md) [coverage: partial]
+- [entropy-research/devon](../repos/entropy-research/devon.md) [coverage: complete]
+- [entropy-research/slate-plan-mode](../repos/entropy-research/slate-plan-mode.md) [coverage: complete]
+- [erikbjare/are-copilots-local-yet](../repos/erikbjare/are-copilots-local-yet.md) [coverage: complete]
+- [esengine/deepseek-reasonix](../repos/esengine/deepseek-reasonix.md) [coverage: partial]
+- [euniai/prometheus](../repos/euniai/prometheus.md) [coverage: complete]
+- [eventstubsol/ai-dev-agent-test](../repos/eventstubsol/ai-dev-agent-test.md) [coverage: complete]
+- [exafunction/codeium-react-code-editor](../repos/exafunction/codeium-react-code-editor.md) [coverage: complete]
+- [exqqstar/exagent](../repos/exqqstar/exagent.md) [coverage: partial]
+- [factory-ai/factory](../repos/factory-ai/factory.md) [coverage: complete]
+- [failproofai/failproofai](../repos/failproofai/failproofai.md) [coverage: partial]
+- [fareedkhan-dev/multi-agent-ai-system](../repos/fareedkhan-dev/multi-agent-ai-system.md) [coverage: complete]
+- [fareedkhan-dev/multi-agent-training-grpo](../repos/fareedkhan-dev/multi-agent-training-grpo.md) [coverage: complete]
+- [farelart/ai-code-gen](../repos/farelart/ai-code-gen.md) [coverage: complete]
+- [feiskyer/koder](../repos/feiskyer/koder.md) [coverage: partial]
+- [ferroxlabs/agents-md](../repos/ferroxlabs/agents-md.md) [coverage: complete]
+- [fetchai/fetchcoder-releases](../repos/fetchai/fetchcoder-releases.md) [coverage: complete]
+- [fireproof-storage/fireproof](../repos/fireproof-storage/fireproof.md) [coverage: complete]
+- [firetix/vibe-coding-penetration-tester](../repos/firetix/vibe-coding-penetration-tester.md) [coverage: partial]
+- [fission-ai/openspec](../repos/fission-ai/openspec.md) [coverage: partial]
+- [fivetaku/kkirikkiri](../repos/fivetaku/kkirikkiri.md) [coverage: partial]
+- [flexpilot-ai/vscode-extension](../repos/flexpilot-ai/vscode-extension.md) [coverage: complete]
+- [foundationagents/metagpt](../repos/foundationagents/metagpt.md) [coverage: partial]
+- [foundationagents/recode](../repos/foundationagents/recode.md) [coverage: complete]
+- [fredericvan/pku_mdagent](../repos/fredericvan/pku_mdagent.md) [coverage: partial]
+- [friuns2/codex-mobile](../repos/friuns2/codex-mobile.md) [coverage: partial]
+- [fsoft-ai4code/hyperagent](../repos/fsoft-ai4code/hyperagent.md) [coverage: complete]
+- [fstandhartinger/ralph-wiggum](../repos/fstandhartinger/ralph-wiggum.md) [coverage: partial]
+- [fullive-ai/anima](../repos/fullive-ai/anima.md) [coverage: partial]
+- [funador/claude-code-merge-queue](../repos/funador/claude-code-merge-queue.md) [coverage: complete]
+- [furudo-erika/ai-testing-agent](../repos/furudo-erika/ai-testing-agent.md) [coverage: complete]
+- [fuxicodex/fuxi](../repos/fuxicodex/fuxi.md) [coverage: partial]
+- [fw-ai/fireconnect](../repos/fw-ai/fireconnect.md) [coverage: complete]
+- [fy0/codekanban](../repos/fy0/codekanban.md) [coverage: partial]
+- [gabrielchasukjin/cloi](../repos/gabrielchasukjin/cloi.md) [coverage: complete]
+- [gabrielmaialva33/winx-code-agent](../repos/gabrielmaialva33/winx-code-agent.md) [coverage: partial]
+- [gary95271/xuanji-landing](../repos/gary95271/xuanji-landing.md) [coverage: complete]
+- [gastownhall/gastown](../repos/gastownhall/gastown.md) [coverage: partial]
+- [gcwing/openbitfun](../repos/gcwing/openbitfun.md) [coverage: partial]
+- [gemini-cli-extensions/code-review](../repos/gemini-cli-extensions/code-review.md) [coverage: complete]
+- [generalaction/emdash](../repos/generalaction/emdash.md) [coverage: partial]
+- [genia-dev/genia](../repos/genia-dev/genia.md) [coverage: partial]
+- [genlayerlabs/yeagerai-agent](../repos/genlayerlabs/yeagerai-agent.md) [coverage: complete]
+- [gensi-thuair/flex](../repos/gensi-thuair/flex.md) [coverage: complete]
+- [gensyn-ai/codeassist](../repos/gensyn-ai/codeassist.md) [coverage: complete]
+- [gerome-elassaad/codingit](../repos/gerome-elassaad/codingit.md) [coverage: partial]
+- [get-bb/bb](../repos/get-bb/bb.md) [coverage: partial]
+- [get-concord-ai/concord-mcp](../repos/get-concord-ai/concord-mcp.md) [coverage: partial]
+- [get-convex/chef](../repos/get-convex/chef.md) [coverage: complete]
+- [get-vix/vix](../repos/get-vix/vix.md) [coverage: complete]
+- [getkimchi/kimchi](../repos/getkimchi/kimchi.md) [coverage: partial]
+- [getpaseo/paseo](../repos/getpaseo/paseo.md) [coverage: partial]
+- [getworkloop/gambit](../repos/getworkloop/gambit.md) [coverage: partial]
+- [ghuntley/groundhog](../repos/ghuntley/groundhog.md) [coverage: complete]
+- [gi-dellav/zerostack](../repos/gi-dellav/zerostack.md) [coverage: partial]
+- [gil-son/language-ai-engineering-lab](../repos/gil-son/language-ai-engineering-lab.md) [coverage: complete]
+- [giselles-ai/giselle](../repos/giselles-ai/giselle.md) [coverage: partial]
+- [gitbito/codereviewagent](../repos/gitbito/codereviewagent.md) [coverage: complete]
+- [githpriyanshu23/clawde_code](../repos/githpriyanshu23/clawde_code.md) [coverage: complete]
+- [github/copilot-cli](../repos/github/copilot-cli.md) [coverage: partial]
+- [gitlawb/zero](../repos/gitlawb/zero.md) [coverage: partial]
+- [gkorepanov/llm-tools](../repos/gkorepanov/llm-tools.md) [coverage: complete]
+- [glincker/stacklit](../repos/glincker/stacklit.md) [coverage: partial]
+- [goldmar/openclaw-code-agent](../repos/goldmar/openclaw-code-agent.md) [coverage: partial]
+- [golutra/golutra](../repos/golutra/golutra.md) [coverage: partial]
+- [google-deepmind/code_contests](../repos/google-deepmind/code_contests.md) [coverage: complete]
+- [google-gemini/gemini-cli](../repos/google-gemini/gemini-cli.md) [coverage: partial]
+- [googlecloudplatform/race-condition](../repos/googlecloudplatform/race-condition.md) [coverage: partial]
+- [googlecloudplatform/workflows-samples](../repos/googlecloudplatform/workflows-samples.md) [coverage: complete]
+- [gptme/gptme](../repos/gptme/gptme.md) [coverage: partial]
+- [graphql/graphql-playground](../repos/graphql/graphql-playground.md) [coverage: complete]
+- [greydgl/pentestgpt](../repos/greydgl/pentestgpt.md) [coverage: partial]
+- [griddynamics/rosetta](../repos/griddynamics/rosetta.md) [coverage: partial]
+- [grik-ai/ricochet](../repos/grik-ai/ricochet.md) [coverage: complete]
+- [groupzer0/vs-code-agents](../repos/groupzer0/vs-code-agents.md) [coverage: complete]
+- [gsa-tts/agentic-coding-quickstart](../repos/gsa-tts/agentic-coding-quickstart.md) [coverage: partial]
+- [gszhangwei/open-spdd](../repos/gszhangwei/open-spdd.md) [coverage: complete]
+- [guanyang/open-agent-hub](../repos/guanyang/open-agent-hub.md) [coverage: partial]
+- [guanyilun/agent-sh](../repos/guanyilun/agent-sh.md) [coverage: partial]
+- [h0x91b/dev-3.0](../repos/h0x91b/dev-3.0.md) [coverage: partial]
+- [h5i-dev/h5i](../repos/h5i-dev/h5i.md) [coverage: partial]
+- [haasonsaas/ocode](../repos/haasonsaas/ocode.md) [coverage: partial]
+- [haervwe/open-webui-tools](../repos/haervwe/open-webui-tools.md) [coverage: complete]
+- [haleclipse/codex-jetbrains](../repos/haleclipse/codex-jetbrains.md) [coverage: partial]
+- [halfwhey/claudraband](../repos/halfwhey/claudraband.md) [coverage: partial]
+- [hanshuaikang/nezha](../repos/hanshuaikang/nezha.md) [coverage: partial]
+- [haochenglu/contextvc](../repos/haochenglu/contextvc.md) [coverage: complete]
+- [harbars1234/spacecreateai](../repos/harbars1234/spacecreateai.md) [coverage: partial]
+- [hardik180704/neocode](../repos/hardik180704/neocode.md) [coverage: partial]
+- [harishkotra/gaia-meme-coin-generator](../repos/harishkotra/gaia-meme-coin-generator.md) [coverage: complete]
+- [harnesslab/claw-code-agent](../repos/harnesslab/claw-code-agent.md) [coverage: partial]
+- [harnessrouter/harnessrouter](../repos/harnessrouter/harnessrouter.md) [coverage: partial]
+- [harnessworks/harness-starter-kit](../repos/harnessworks/harness-starter-kit.md) [coverage: partial]
+- [haseeb-heaven/open-agent](../repos/haseeb-heaven/open-agent.md) [coverage: partial]
+- [havingautism/codemini-cli](../repos/havingautism/codemini-cli.md) [coverage: complete]
+- [he-yufeng/corecoder](../repos/he-yufeng/corecoder.md) [coverage: complete]
+- [herdrdev/herdr](../repos/herdrdev/herdr.md) [coverage: partial]
+- [herry2059/project-os-for-codex](../repos/herry2059/project-os-for-codex.md) [coverage: partial]
+- [hesamjafarian/aimultiagents](../repos/hesamjafarian/aimultiagents.md) [coverage: complete]
+- [hhw-zhou/llm4mol](../repos/hhw-zhou/llm4mol.md) [coverage: complete]
+- [hivemoot/colony](../repos/hivemoot/colony.md) [coverage: partial]
+- [hivemoot/hivemoot](../repos/hivemoot/hivemoot.md) [coverage: partial]
+- [hkuds/deepcode](../repos/hkuds/deepcode.md) [coverage: partial]
+- [hoangsonww/forge-agentic-coding-cli](../repos/hoangsonww/forge-agentic-coding-cli.md) [coverage: partial]
+- [hofstadter-io/hof](../repos/hofstadter-io/hof.md) [coverage: complete]
+- [holasoymalva/deepseek-cli](../repos/holasoymalva/deepseek-cli.md) [coverage: complete]
+- [honeydew-ai/honeydew-ai-coding-agents-plugins](../repos/honeydew-ai/honeydew-ai-coding-agents-plugins.md) [coverage: complete]
+- [hotovo/aider-desk](../repos/hotovo/aider-desk.md) [coverage: partial]
+- [huangd1999/agentcoder](../repos/huangd1999/agentcoder.md) [coverage: complete]
+- [huggingface/tau](../repos/huggingface/tau.md) [coverage: complete]
+- [human-agent-society/coral](../repos/human-agent-society/coral.md) [coverage: partial]
+- [humanlayer/humanlayer](../repos/humanlayer/humanlayer.md) [coverage: partial]
+- [humanstack/vibe-coding-template](../repos/humanstack/vibe-coding-template.md) [coverage: complete]
+- [husnainpk/symdex](../repos/husnainpk/symdex.md) [coverage: complete]
+- [husu/loom](../repos/husu/loom.md) [coverage: complete]
+- [hyperaiteam/clitrigger](../repos/hyperaiteam/clitrigger.md) [coverage: partial]
+- [iamfakeguru/agent-md](../repos/iamfakeguru/agent-md.md) [coverage: complete]
+- [iamunbounded/devctx](../repos/iamunbounded/devctx.md) [coverage: partial]
+- [ibm/ibm-bob-java](../repos/ibm/ibm-bob-java.md) [coverage: complete]
+- [icebaker/nano-bots](../repos/icebaker/nano-bots.md) [coverage: complete]
+- [icebear0828/clio](../repos/icebear0828/clio.md) [coverage: complete]
+- [ikamensh/kodo](../repos/ikamensh/kodo.md) [coverage: partial]
+- [incredibledevhq/incredible.dev](../repos/incredibledevhq/incredible.dev.md) [coverage: complete]
+- [inmve/free-ai-coding](../repos/inmve/free-ai-coding.md) [coverage: partial]
+- [insforge/insforge](../repos/insforge/insforge.md) [coverage: partial]
+- [instadeepai/mava](../repos/instadeepai/mava.md) [coverage: complete]
+- [intellegix/intellegix-code-agent-toolkit](../repos/intellegix/intellegix-code-agent-toolkit.md) [coverage: complete]
+- [invariantlabs-ai/explorer](../repos/invariantlabs-ai/explorer.md) [coverage: complete]
+- [irgolic/autopr](../repos/irgolic/autopr.md) [coverage: complete]
+- [ise-uiuc/magicoder](../repos/ise-uiuc/magicoder.md) [coverage: complete]
+- [ishandutta2007/awesome-ai-code-editor](../repos/ishandutta2007/awesome-ai-code-editor.md) [coverage: complete]
+- [ismorphism/deepgame](../repos/ismorphism/deepgame.md) [coverage: complete]

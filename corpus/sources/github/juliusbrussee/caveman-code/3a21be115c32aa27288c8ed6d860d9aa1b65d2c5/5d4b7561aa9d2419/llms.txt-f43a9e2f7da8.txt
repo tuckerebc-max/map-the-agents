@@ -1,0 +1,79 @@
+# Caveman Code — terminal coding agent
+
+> Caveman Code is a terminal coding agent that uses 2× fewer tokens than
+> Codex CLI on identical tasks, supports 20+ providers with 6 OAuth flows,
+> and ships under the MIT license. Four-layer Caveman Mode compression
+> gives ~85% reduction on tool output. Plan mode, autonomous goal loop,
+> worktree-isolated subagents, native MCP, cavemem-backed memory.
+
+This file is the LLM-friendly entry point to Caveman Code's documentation.
+Each linked page is plain markdown.
+
+## Install
+
+```
+npm install -g @juliusbrussee/caveman-code
+```
+
+Requires Node.js 20+. Binaries `caveman` (primary) and `caveman-code` (alias)
+are both registered on PATH.
+
+## npm package
+
+- Main CLI: `@juliusbrussee/caveman-code`
+- Sub-packages (auto-installed):
+  - `@juliusbrussee/caveman-agent`
+  - `@juliusbrussee/caveman-ai`
+  - `@juliusbrussee/caveman-tui`
+  - `@juliusbrussee/caveman-sdk`
+  - `@juliusbrussee/caveman-markdown-preview`
+- Optional surfaces: `@juliusbrussee/caveman-mom`, `@juliusbrussee/caveman-pods`, `@juliusbrussee/caveman-web-ui`
+
+## Top-level docs
+
+- [Quickstart](docs/getting-started/quickstart.md): zero-to-first-prompt in 30 seconds
+- [Install](docs/getting-started/installation.md): macOS, Linux, Windows, Docker, Homebrew, npm
+- [Auth & Providers](docs/getting-started/auth.md): 20+ providers, 6 OAuth flows
+- [Models](docs/getting-started/models.md): default models, thinking levels, architect/editor split
+
+## Reference
+
+- [Slash Commands](docs/reference/slash-commands.md): built-ins + authoring markdown commands
+- [Recipes](docs/reference/recipes.md): YAML pipelines, Goose-style schema
+- [MCP](docs/reference/mcp.md): client + cave-as-server, stdio/HTTP/inproc transports
+- [Daemon](docs/reference/daemon.md): caveman serve, multi-client attach, worker mode
+
+## Migration
+
+- [From Claude Code](docs/migration/from-claude-code.md): paste your config, it works
+- [From Codex](docs/migration/from-codex.md): AGENTS.md, .mcp.json, sandbox parity
+- [From Aider](docs/migration/from-aider.md): repo map and edit-format-per-model
+
+## Cookbook & API
+
+- [Cookbook](docs/cookbook.md): GitHub Actions, multi-agent review, daemon pair programming
+- [Comparison](docs/comparison.md): Caveman Code vs Claude Code / Codex / Aider / Crush / opencode
+- [Troubleshooting](docs/troubleshooting.md): install, auth, sessions, tools, hooks, MCP
+- [API](docs/api.md): SDK, JSON-RPC, OpenAPI, extension API
+
+## Differentiators (one-line each)
+
+1. Caveman Mode compression: 4 layers, ~85% reduction on tool output
+2. 20+ providers + 6 OAuth flows (Claude Pro, ChatGPT Plus, Copilot, Gemini, Antigravity)
+3. Session branching (`/tree`, `/fork`)
+4. Plan mode + autonomous goal loop
+5. Worktree-isolated subagents via Task tool
+6. Native MCP client; caveman-code can serve as MCP server
+7. Aider-grade repo map (PageRank) + edit-format-per-model
+8. Daemon (`caveman serve`) survives SSH drops; multi-client attach
+9. Shadow-git checkpoints + `/rollback N`
+10. cavemem-backed memory with episodic-to-semantic consolidation
+11. Claude Code authoring formats (settings.json, commands, skills, agents) — paste-and-go compat
+12. MIT licensed; no telemetry by default
+
+## Repo
+
+- Source: https://github.com/JuliusBrussee/caveman-cli
+- Issues: https://github.com/JuliusBrussee/caveman-cli/issues
+- Releases: https://github.com/JuliusBrussee/caveman-cli/releases
+- npm: https://www.npmjs.com/package/@juliusbrussee/caveman-code

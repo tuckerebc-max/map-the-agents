@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_22bb32d5e4add30366d429a108cefd1a23f0956e9ef7541bb190e67a61e1ec18
+- clm_35d3a07131ee7589139a22872daed931d6d5c0b6e51d51b7bccb169aadad7285
+- clm_491260cab9932bceaad81625ad2103ff0c1d111cb1c4522f2a08554fd638b030
+- clm_4ca7204c8ce262381edb4bb1c0d9c78b90d5d71ced2e34e1deee8e4801a69b89
+- clm_79499fe270d95e324bfa788eb8039624ff04c7247ac0f6da8df2316e4a5eed5f
+- clm_7dc71efc00616048fb860191e6b7f7444a4be1ddbc13d350f653a4e7ad168af9
+- clm_821c09db4a2f87dcfbcbea1e65cdcc03a44996a09a28766f7489c7f7cc93349a
+- clm_a3e852e2b6e0795803a3ad42a512b352937cacbcaba2720eb600dbeffbe74e7f
+- clm_af918c81a89c9b434f5be93dfe3bc716b30b11592fccf363088cf0b4d8348e14
+- clm_afe600e671cc452b3fa310c144d19714b96e4ce5267e183251976cadbfd7b441
+- clm_bb5ee36d8fd3dbd4460b0e1ede2e81db88a308215b0e95874598d90e030c04fa
+maturity: draft
+page_id: pg_db4d522a45e55e5ca1a73df363be93b1
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: ghuntley/groundhog
+updated_at: '2026-09-14T03:53:42Z'
+---
+
+# ghuntley/groundhog
+
+<!-- rcw:begin owner=entity:ent_c61796a9171e5afbb29066f238d43839 block=evidence -->
+- ghuntley/groundhog is mentioned in this evidence. [@claim:clm_22bb32d5e4add30366d429a108cefd1a23f0956e9ef7541bb190e67a61e1ec18] [@claim:clm_35d3a07131ee7589139a22872daed931d6d5c0b6e51d51b7bccb169aadad7285] [@claim:clm_491260cab9932bceaad81625ad2103ff0c1d111cb1c4522f2a08554fd638b030] [@claim:clm_4ca7204c8ce262381edb4bb1c0d9c78b90d5d71ced2e34e1deee8e4801a69b89] [@claim:clm_79499fe270d95e324bfa788eb8039624ff04c7247ac0f6da8df2316e4a5eed5f] [@claim:clm_7dc71efc00616048fb860191e6b7f7444a4be1ddbc13d350f653a4e7ad168af9] [@claim:clm_821c09db4a2f87dcfbcbea1e65cdcc03a44996a09a28766f7489c7f7cc93349a] [@claim:clm_a3e852e2b6e0795803a3ad42a512b352937cacbcaba2720eb600dbeffbe74e7f] [@claim:clm_af918c81a89c9b434f5be93dfe3bc716b30b11592fccf363088cf0b4d8348e14] [@claim:clm_afe600e671cc452b3fa310c144d19714b96e4ce5267e183251976cadbfd7b441] [@claim:clm_bb5ee36d8fd3dbd4460b0e1ede2e81db88a308215b0e95874598d90e030c04fa]
+<!-- rcw:end owner=entity:ent_c61796a9171e5afbb29066f238d43839 block=evidence -->
+
+## Researcher notes
+

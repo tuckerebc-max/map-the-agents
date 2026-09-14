@@ -1,12 +1,13 @@
 # bawadou/ai-data-extractor
 
-Status: discovered - Freshness: pending
+Status: blocked - Freshness: refresh-failed
 Catalog classes: none recorded
 Origins: alltheagents.org-backing - Projects: none
+Last collection error: FetchFailed: http-404: https://api.github.com/repos/bawadou/ai-data-extractor
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Collection is blocked; no distilled evidence exists yet.
 
 ## Facets
 

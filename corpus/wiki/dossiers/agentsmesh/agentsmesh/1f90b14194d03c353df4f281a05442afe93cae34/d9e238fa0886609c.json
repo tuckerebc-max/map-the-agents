@@ -1,0 +1,572 @@
+{
+  "applied_operation_id": "op_e17d59047d0042ca80734c14b4e77405",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea545419cf54b28aff3267fb6248324edbe84867533bc99c44bde783790620b3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 88,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L84-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f88ed077632bda278c065b63794dda573ccb1a53d8ad278a7edb549b89d158a6"
+      ],
+      "text": "Server side comprises a Go backend (Gin+GORM) handling auth, pod lifecycle, tickets, billing and runner-cert PKI; a WebSocket Relay for terminal data; and a self-hosted Go runner daemon that spawns PTY pods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2bc41b0538b7a6939c35d3dbd5362414a141ee6c9e27f65af498680de8231727",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 98,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L92-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6ca2ecfd1d13e1f3225ac591fa15f0b4e966e14671300e6147df11ab9087e06"
+      ],
+      "text": "Client side includes a Rust core of 10 crates compiled to WASM for web/desktop and exposed to iOS via UniFFI, plus Next.js web, Electron desktop, SwiftUI/TCA iOS, and a web-admin console."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_998a48c72462952db8470c2aa4302aa850458369df5533595b1fcb1adacd86af",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L76-L76"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6297d88b2643a98b67be8594849028422ae33465987b66a8b42a1a42e93930dc",
+        "slc_c9a5088f41fe7d1d7a8d18fd975afcd50c0e9751dd33fbb19e70f3ecde37af66"
+      ],
+      "text": "The architecture splits control plane from data plane: orchestration travels over gRPC with mTLS while terminal I/O streams through a stateless Relay cluster, so the backend never handles PTY bytes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_544297cb7fd13bf91d01e3b1292e917184328be5a05b2c4de84c8fc6e2bbf06d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 61,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L55-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32986783c5251d8589ba6b888ee1241dd65aaa20a4193be4e43c2e89ba322fc8"
+      ],
+      "text": "Runners advertise capacity (max_concurrent_pods) and pods are scheduled onto a chosen runner or an available one from the pool; each pod gets an isolated Git worktree sandbox, private credentials, and its own branch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5a3ccb0fec004a5312a032d70a8370e130b81a2f0f4c8a523f1b52b7bae37d3",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 61,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L55-L61"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 72,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L67-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32986783c5251d8589ba6b888ee1241dd65aaa20a4193be4e43c2e89ba322fc8",
+        "slc_41ba54b4f840c2a7f3e0d45780ef210a07a9de104ae1ef93b7a315ebe18623e6"
+      ],
+      "text": "An Autopilot control agent watches a pod, sends the next instruction when it goes idle, enforces iteration caps, keeps decision history, and supports human takeover and handback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d106f000c296b554e29110ea7382c6b5d7bb5bc5e00d2b915d588278142bde6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 118,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L116-L118"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 136,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L134-L136"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 130,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L128-L130"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 143,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L140-L143"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 124,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L122-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_48fc45f3e7f80870c3923e5fc1b27553b6bcf0eefbef970103396489026ead92",
+        "slc_7070a98a5f01936e19a19749b1592407eece1c2835d0e87b18205591b6827203",
+        "slc_7eb4e81a878ce003f6d5bdce7f46598741b5a4b2aafddbeab31751932afaec60",
+        "slc_858670a550cc1609e8b0f3b53741009395fb03b1bbeb78f91dc9a557554fe3a7",
+        "slc_c01c79c030eeeebdf36fbd47eb21a0de85310ff767923f020b6c2c5893d5412b"
+      ],
+      "text": "The runner CLI exposes login (with --headless and --server options), run, and service install/start subcommands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3073488140587ba1b71883fa442aec6c133706190547b3711df2c24474d3665f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 72,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L67-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41ba54b4f840c2a7f3e0d45780ef210a07a9de104ae1ef93b7a315ebe18623e6"
+      ],
+      "text": "Pods communicate over channels with @mentions within a bound mesh topology, and tickets on a Kanban board can be bound to pods with progress and MR/PR tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf2a54ee6f4230ba40aa9f35c9c1979e36c325585884fee5ded7b00276fe16f6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 242,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L231-L242"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8c10bb9caee4a5634b30265c4f4da7071bc41ebc961cc53dc3a4eb657bcb008"
+      ],
+      "text": "The stack uses PostgreSQL and Redis, MinIO for S3-compatible storage, Traefik as reverse proxy, JWT for web auth and mTLS for runner connections."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e207fcc2a48dcd22c6f07ea244a08c1a60ce2d472de05dc95c581712d7856e99",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 227,
+          "line_start": 220,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L220-L227"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L218-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f87a75b273d680e8bdb0c0a11985a0ef20bfb3c71827d957c7cf011a2272a81",
+        "slc_2fb17dcbca5670b22ca410774f2d3e508d9eecc1f26d8edc4802e17916e19d56"
+      ],
+      "text": "Any terminal-based agent can run; built-in support is documented for Claude Code, Codex CLI, Gemini CLI, Aider, and OpenCode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a97aef40fa55433c2789ee1dde5d931170bf0e3dcb9d6210bf1998323132ab07",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 273,
+          "line_start": 273,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L273-L273"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 276,
+          "line_start": 275,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L275-L276"
+        },
+        {
+          "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+          "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+          "line_end": 278,
+          "line_start": 278,
+          "path": "README.md",
+          "repository": "agentsmesh/agentsmesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md#L278-L278"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27d261c5eba567c2f92099fc9a83f3f90f6d2b86157280b17d94e24f8012477f",
+        "slc_6d673889b5d821e511fbb37f3f7fbb955ee439ccb909500606275d9a4972cdbc",
+        "slc_a98af0b9a763e5fd1e67205b5caab87deffc46cc0e58e6afc9dbe349defb7692"
+      ],
+      "text": "The code is licensed under BSL-1.1: non-production use, copying and modification are allowed, but production use requires a commercial license until the 2030-02-28 change date, after which it becomes GPL-2.0-or-later."
+    }
+  ],
+  "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 278,
+        "path": "README.md",
+        "size": 11854
+      },
+      {
+        "lines": 9,
+        "path": "AGENTS.md",
+        "size": 452
+      },
+      {
+        "lines": 200,
+        "path": "CHANGELOG.md",
+        "size": 7578
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 33530
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5019
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1483
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 935
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 357
+      },
+      {
+        "path": "docs/api/README.md",
+        "reason": "file-budget",
+        "size": 23569
+      },
+      {
+        "path": "docs/architecture/data-architecture-principles.md",
+        "reason": "file-budget",
+        "size": 9724
+      },
+      {
+        "path": "docs/architecture/data-flow-audit.md",
+        "reason": "file-budget",
+        "size": 13949
+      },
+      {
+        "path": "docs/architecture/r6-state-schema-decisions.md",
+        "reason": "file-budget",
+        "size": 3010
+      },
+      {
+        "path": "docs/deployment/README.md",
+        "reason": "file-budget",
+        "size": 6640
+      },
+      {
+        "path": "docs/rfc/RFC-001-100k-runner-architecture.md",
+        "reason": "file-budget",
+        "size": 32388
+      },
+      {
+        "path": "docs/rfc/RFC-002-grpc-mtls-runner-communication.md",
+        "reason": "file-budget",
+        "size": 30506
+      },
+      {
+        "path": "docs/rfc/RFC-003-runner-release-pipeline.md",
+        "reason": "file-budget",
+        "size": 11814
+      },
+      {
+        "path": "docs/rfc/RFC-004-terminal-output-bandwidth-optimization.md",
+        "reason": "file-budget",
+        "size": 7827
+      },
+      {
+        "path": "docs/rfc/RFC-005-autopilot-controller-architecture.md",
+        "reason": "file-budget",
+        "size": 22150
+      },
+      {
+        "path": "docs/rfc/runner-windows-adaptation.md",
+        "reason": "file-budget",
+        "size": 14713
+      },
+      {
+        "path": "docs/self-hosted/README.md",
+        "reason": "file-budget",
+        "size": 7925
+      },
+      {
+        "path": "docs/troubleshooting/pki-certificate-issues.md",
+        "reason": "file-budget",
+        "size": 2081
+      },
+      {
+        "path": "docs/troubleshooting/relay-client-stop-timeout.md",
+        "reason": "file-budget",
+        "size": 4246
+      },
+      {
+        "path": "docs/userstory/US-001-requirement-to-code-delivery.md",
+        "reason": "file-budget",
+        "size": 6189
+      },
+      {
+        "path": "docs/userstory/US-002-e2e-testing-with-pods.md",
+        "reason": "file-budget",
+        "size": 14031
+      },
+      {
+        "path": "docs/userstory/US-003-pod-delegation-and-orchestration.md",
+        "reason": "file-budget",
+        "size": 22813
+      },
+      {
+        "path": "docs/userstory/US-004-server-deployment-with-pod.md",
+        "reason": "file-budget",
+        "size": 32121
+      }
+    ],
+    "omitted_count": 23,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6617,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 26,
+      "complete": false,
+      "omitted": 23,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_0c7a4ecaf3635430b84c71f575df42eb",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/agentsmesh/agentsmesh/1f90b14194d03c353df4f281a05442afe93cae34/d9e238fa0886609c/manifest.json",
+  "package_id": "pkg_d554b2101ffd22a38d9ed87b7de5944fa76dca442cd54539a097d9fae6d7caa3",
+  "repo": "agentsmesh/agentsmesh",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e9f7a09a310dbd38d6bda7057354bf6cf4a19e41f1ab008ad40c6ed1c5a47320",
+  "snapshot_id": "d9e238fa0886609c",
+  "sources": [
+    {
+      "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+      "git_sha": "49fd2b8273644574aacf7085848e9ee33956822c",
+      "lines": 9,
+      "path": "AGENTS.md",
+      "repository": "agentsmesh/agentsmesh",
+      "sha256": "41458792fc8695ad1d904b31321958ab83f758e6fcc540b0fcc7324781a2a7ad",
+      "source_id": "src_349e42cd7c975fa989ed6084f241380e",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/AGENTS.md"
+    },
+    {
+      "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+      "git_sha": "4d2f89bd18f37c992bd0d9d39a56fbde56caf0a4",
+      "lines": 200,
+      "path": "CHANGELOG.md",
+      "repository": "agentsmesh/agentsmesh",
+      "sha256": "565fbead638b39d91bed3baa6e495d5907cff3cb960636427c3a854d7ec1b0e8",
+      "source_id": "src_a0771a4f5dcb510fbecc1fa9f54be2b6",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/CHANGELOG.md"
+    },
+    {
+      "commit": "1f90b14194d03c353df4f281a05442afe93cae34",
+      "git_sha": "ffb1eb121c3438b6ec954b7f8f0ac74b35a2d9df",
+      "lines": 278,
+      "path": "README.md",
+      "repository": "agentsmesh/agentsmesh",
+      "sha256": "0e79dc0fa65e273163f6b181218b0f5dca669fee6ad8820c4ae74a92a67507b7",
+      "source_id": "src_426d83554c51520fb75bd307c432fefb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/AgentsMesh/AgentsMesh/blob/1f90b14194d03c353df4f281a05442afe93cae34/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: Server side comprises a Go backend (Gin+GORM) handling auth, pod lifecycle, tickets, billing and runner-cert PKI; a WebSocket Relay for terminal data; and a self-hosted Go runner daemon that spawns PTY pods. Client side includes a Rust core of 10 crates compiled to WASM for web/desktop and exposed to iOS via UniFFI, plus Next.js web, Electron desktop, SwiftUI/TCA iOS, and a web-admin console.",
+  "superseded_claim_ids": []
+}

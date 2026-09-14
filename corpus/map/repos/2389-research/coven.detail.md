@@ -1,0 +1,74 @@
+# 2389-research/coven -- full detail
+
+[Back to orientation](coven.md)
+
+## Origins
+
+- alltheagents.org-site-pages
+
+## Projects
+
+- Observatory
+
+Full evidence record (JSON): [wiki/dossiers/2389-research/coven/36edb5c206af9f6bfe92b73a5203da70d71ea614/6601678b4e805296.json](../../../wiki/dossiers/2389-research/coven/36edb5c206af9f6bfe92b73a5203da70d71ea614/6601678b4e805296.json)
+
+## specifications (1 claim(s))
+
+- [observation/documented] Coven is described as a Rust-based platform for orchestrating AI agents with tool capabilities, connecting Claude-powered agents to a central gateway. -- evidence: [README.md#L3-L3](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L3-L3), [README.md#L7-L7](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L7-L7) (`clm_5799f746f16d09a9cbae122272d28b5927634007dcb7bc2a887237151e401e9c`)
+
+## components (1 claim(s))
+
+- [observation/documented] The project comprises a Rust monorepo (agents, CLI, TUI, packs), a Go gateway server for routing, storage and pack registry, and shared Protobuf definitions (coven-proto). -- evidence: [README.md#L54-L58](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L54-L58) (`clm_4db38509841e9716be85ec09dbe73641ccdc9e6540acd588791ad9afdce9197b`)
+
+## design-choices (2 claim(s))
+
+- [observation/documented] Agents use pluggable LLM backends behind an async Backend trait returning a stream of events; documented backends include MuxBackend (direct Anthropic API), DirectCliBackend (claude CLI subprocess), and AcpBackend. -- evidence: [docs/architecture.md#L163-L167](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L163-L167), [docs/architecture.md#L147-L147](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L147-L147), [docs/architecture.md#L151-L159](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L151-L159) (`clm_d90c00299d4d226a53e117ec80780e58c98d17014906f89330a0d13effbbf2f5`)
+- [observation/documented] Agent responses stream as ordered events: Thinking, Text, ToolUse, ToolResult, Done, and Error. -- evidence: [docs/architecture.md#L201-L208](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L201-L208) (`clm_afe2f329b3968455daab45c63b955a463b7b39f933c1e9106ff9480356c1f9ea`)
+
+## workflows (2 claim(s))
+
+- [observation/documented] Repository development practice: development uses make targets (check+test+clippy, build, release, test, clippy, fmt), and CLAUDE.md is referenced for detailed development guidelines. -- evidence: [README.md#L176-L182](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L176-L182), [README.md#L190-L190](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L190-L190) (`clm_b6b8dbc159d2e78cc113998f49e5b76e4aee3c273d656907047c2715228beb19`)
+- [observation/documented] Repository development practice: components are built via make targets (make coven, make coven-agent, make coven-swarm) or installed with cargo install from crate paths; the gateway is built in a separate coven-gateway repository. -- evidence: [README.md#L78-L81](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L78-L81), [docs/cli.md#L12-L12](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L12-L12), [README.md#L87-L88](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L87-L88) (`clm_a4d13de73130a2b5d860a86d65a56dd59bac6c71abe21007d58f59b62898feef`)
+
+## skills-patterns (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## interfaces (4 claim(s))
+
+- [observation/documented] The gateway exposes an HTTP server with SSE events, a gRPC server for agent streams, and a pack service acting as a tool registry, backed by SQLite. -- evidence: [README.md#L16-L50](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L16-L50) (`clm_816c30eb36f29cb2ed2cb296810b4f0cd6a4f5a9f480536df20938708c378859`)
+- [observation/documented] The gRPC protocol defines a bidirectional AgentStream service; AgentMessage payloads are RegisterAgent, MessageResponse, and Heartbeat, while ServerMessage payloads are Welcome, SendMessage, and Shutdown. -- evidence: [docs/architecture.md#L178-L185](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L178-L185), [docs/architecture.md#L187-L195](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L187-L195), [docs/architecture.md#L173-L176](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L173-L176) (`clm_0a17687afa11ca103f509ccfa23f8f74c52e055d89b9416cf9aa916473dfa0f3`)
+- [observation/documented] The coven CLI offers chat, agent, swarm, pack, and config commands; chat supports --agent, --thread, and --gateway options plus slash commands like /quit, /clear, and /switch. -- evidence: [docs/cli.md#L226-L231](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L226-L231), [docs/cli.md#L25-L32](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L25-L32), [docs/cli.md#L51-L55](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L51-L55) (`clm_b3ee8a2aac4a307b617549362cfe3afaa4c6186f5bdb58b187c53f2ba865652b`)
+- [observation/documented] coven-agent run accepts --name and --working-dir (required), plus --gateway (default localhost:50051), --backend (mux/cli), --display (quiet/normal/verbose), and --config options. -- evidence: [docs/agent.md#L67-L74](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L67-L74) (`clm_73e03157c9b13834c9ab42320ebf792775bb9de1f0043a8fc3e3943996ca0424`)
+
+## memory-state (2 claim(s))
+
+- [observation/documented] The gateway stores threads (frontend-to-agent session mappings), messages (conversation history), and bindings (channel-to-agent routing) in SQLite; agents keep a local threads.db cache and session state. -- evidence: [docs/architecture.md#L214-L216](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L214-L216), [docs/architecture.md#L220-L221](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L220-L221) (`clm_34e17f71863776f344fe195c92924d20db7c4074ff7de6cda326a394b4260df0`)
+- [observation/documented] Configuration lives under ~/.config/coven/ (config.toml, per-agent TOML files, swarm config) with data in ~/.local/share/coven/; the AgentMetadata struct includes hostname, OS, git info, workspaces, and backend fields. -- evidence: [README.md#L158-L162](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L158-L162), [README.md#L147-L154](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L147-L154), [docs/agent.md#L214-L223](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L214-L223) (`clm_868d98e2599b6b5edc43009448ec6e19a25579c99ecb6750a617480e95b5bff3`)
+
+## orchestration (2 claim(s))
+
+- [observation/documented] coven-swarm provides a supervisor command for multi-workspace orchestration, documented as spawning agents per workspace. -- evidence: [docs/architecture.md#L249-L249](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L249-L249), [README.md#L109-L114](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L109-L114) (`clm_1472a2d327a4a10c7db33eb840a1d53c4a3766deeb6f0b800f00298177e91c4c`)
+- [observation/documented] Agents register with the gateway over gRPC, receive a Welcome containing session_id and configuration, then send heartbeats every 30 seconds while the gateway tracks last_seen. -- evidence: [docs/architecture.md#L103-L105](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L103-L105), [docs/architecture.md#L93-L95](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L93-L95), [docs/architecture.md#L100-L101](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L100-L101) (`clm_378556347b3f70811a59a010e8818e530e29ea2f988331455d56142c08b1ec51`)
+
+## tools-permissions (1 claim(s))
+
+- [observation/documented] Authorization is documented so agents can access only their own sessions, pack tools carry explicit permission scopes, and admin endpoints require separate authentication. -- evidence: [docs/architecture.md#L233-L235](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L233-L235) (`clm_061d969f711d921258787d17bb55eb538c4b88be8313511b5763ffa19342240c`)
+
+## evaluation (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## dependencies (2 claim(s))
+
+- [observation/documented] Crate dependencies are layered: coven-proto, coven-ssh, and coven-swarm-core have no internal deps; coven-agent depends on coven-core, coven-pack, coven-grpc, and coven-proto. -- evidence: [docs/agent.md#L180-L186](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L180-L186), [docs/architecture.md#L114-L118](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L114-L118) (`clm_72e8b026f5814980f94e0f0da52ee12409a7a6d5b4b572dc6015125b7eaa8bf3`)
+- [observation/documented] Prerequisites include Rust 1.75+, Go 1.21+ for the gateway, protoc, and an Anthropic API key; the mux backend requires ANTHROPIC_API_KEY while the cli backend requires an authenticated claude CLI. -- evidence: [docs/agent.md#L154-L155](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L154-L155), [docs/agent.md#L139-L140](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L139-L140), [README.md#L64-L67](https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L64-L67) (`clm_9a8f4695f1d474d673911420d4e99900af4bfd0feea9ba847c2f246c96dd81fe`)
+
+## limitations (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## relevance (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+

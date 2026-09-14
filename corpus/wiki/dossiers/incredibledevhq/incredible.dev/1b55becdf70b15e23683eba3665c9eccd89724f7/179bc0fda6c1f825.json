@@ -1,0 +1,206 @@
+{
+  "applied_operation_id": "op_79b51b840f4d41d59eefef70afc0b2bc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b009de75a4c1c3b439c0cb030ece254587afe94a84b3c1e8653eea2e9c0924a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b55becdf70b15e23683eba3665c9eccd89724f7",
+          "git_sha": "09d252f8e8156a5509603841c00c991fe5ed37ba",
+          "line_end": 9,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "incredibledevhq/incredible.dev",
+          "url": "https://github.com/IncredibleDevHQ/Incredible.dev/blob/1b55becdf70b15e23683eba3665c9eccd89724f7/README.md#L6-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49ddd57eedb15988072e48e0f6e5c862bf4029a81a27c591b15354a5729600ad"
+      ],
+      "text": "The project is described as a multi-agent system in which AI agents work together to achieve an objective, with agents that can code, fix, document, test, and deploy APIs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12de192b2bee4e9d9dc637914f4d4389fafc723e561dd2579eecb9fddfc97a8c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b55becdf70b15e23683eba3665c9eccd89724f7",
+          "git_sha": "09d252f8e8156a5509603841c00c991fe5ed37ba",
+          "line_end": 9,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "incredibledevhq/incredible.dev",
+          "url": "https://github.com/IncredibleDevHQ/Incredible.dev/blob/1b55becdf70b15e23683eba3665c9eccd89724f7/README.md#L6-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49ddd57eedb15988072e48e0f6e5c862bf4029a81a27c591b15354a5729600ad"
+      ],
+      "text": "Each agent can use its own model, and the system reportedly supports up to 8 models, including Ollama, Mistral, OpenAI, and Anthropic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39d45f9a28c4fbd189ca9bff75067098f36ffd0107813c5bed33403fef7af72a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b55becdf70b15e23683eba3665c9eccd89724f7",
+          "git_sha": "09d252f8e8156a5509603841c00c991fe5ed37ba",
+          "line_end": 9,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "incredibledevhq/incredible.dev",
+          "url": "https://github.com/IncredibleDevHQ/Incredible.dev/blob/1b55becdf70b15e23683eba3665c9eccd89724f7/README.md#L6-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49ddd57eedb15988072e48e0f6e5c862bf4029a81a27c591b15354a5729600ad"
+      ],
+      "text": "The stated goal is to train smaller models that each perform one task better than large models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_578a25d72b7e6643ae624a323b36a20376e83727f1cf5d96d4f53336cc1ccff0",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1b55becdf70b15e23683eba3665c9eccd89724f7",
+          "git_sha": "09d252f8e8156a5509603841c00c991fe5ed37ba",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "incredibledevhq/incredible.dev",
+          "url": "https://github.com/IncredibleDevHQ/Incredible.dev/blob/1b55becdf70b15e23683eba3665c9eccd89724f7/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_82981c640f395ba519d773a24f14fef7c055af91e2bfa27bff7a523c2ced1918"
+      ],
+      "text": "The README states this is an early GitHub preview, with documentation and run instructions not yet available at the time of writing."
+    }
+  ],
+  "commit": "1b55becdf70b15e23683eba3665c9eccd89724f7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 9,
+        "path": "README.md",
+        "size": 492
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 270,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_283652e96b57529385d148aeee17dcbb",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/incredibledevhq/incredible.dev/1b55becdf70b15e23683eba3665c9eccd89724f7/179bc0fda6c1f825/manifest.json",
+  "package_id": "pkg_85154a46bddc0b58c763e64a235abd82928f09299a9b2e230604e7010af00dc0",
+  "repo": "incredibledevhq/incredible.dev",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6334aa7dfffbebd2356b99fdd2172e2cd21a89f6052e75b53b8cf80a6a160f2c",
+  "snapshot_id": "179bc0fda6c1f825",
+  "sources": [
+    {
+      "commit": "1b55becdf70b15e23683eba3665c9eccd89724f7",
+      "git_sha": "09d252f8e8156a5509603841c00c991fe5ed37ba",
+      "lines": 9,
+      "path": "README.md",
+      "repository": "incredibledevhq/incredible.dev",
+      "sha256": "220bafad48ba85322570d71cc7996021afba197f10cfcb1c2c52841668c65e9b",
+      "source_id": "src_22bf8b523a4950a7b59f8c7a5b8944c6",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/IncredibleDevHQ/Incredible.dev/blob/1b55becdf70b15e23683eba3665c9eccd89724f7/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only a brief README for incredible.dev describing an early GitHub preview of a multi-agent AI system for coding, fixing, documenting, testing, and deploying APIs, with support for up to 8 models including Ollama, Mistral, OpenAI, and Anthropic.",
+  "superseded_claim_ids": []
+}

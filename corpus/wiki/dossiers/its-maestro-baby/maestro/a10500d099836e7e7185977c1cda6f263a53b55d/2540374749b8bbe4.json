@@ -1,0 +1,465 @@
+{
+  "applied_operation_id": "op_79631db1d3164a16a5194ddd2ee731fb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_94013cf1de6ea65ce1a1ea4998857a8f98f02cf6cdb04f3e64058d9480a913ac",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50493ddd6d888782976809fc2aa5aed4e83da2be548b2edb47ebbcc0956b718a"
+      ],
+      "text": "Maestro is a cross-platform desktop application for running 1-6 Claude Code (or other AI CLI) sessions simultaneously, each in its own isolated git worktree."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_248bb5f6ad6f2a74156a21a49b5099cd4b92f7574cb5ecc673ba3d95375c1a5c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 51,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L47-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36fb8e2b4e21064b01b9ac5fd217fda0a14b55a1b7ee65c4295f66695c004bbd"
+      ],
+      "text": "Each session gets its own terminal with a full shell environment, a git worktree for code isolation, an assigned branch, and a port allocation for web development."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_805b92d6b1a65f991c5c74d2e381d6127d71790701899ae52df4459f4bfd9ea5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 184,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L178-L184"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25104e6517ef8cb1830432b93dada768234bf86710dd4ed7d87ea4c0e3ab043e"
+      ],
+      "text": "The stack comprises a Tauri 2.0/Rust backend, a React + TypeScript + Tailwind CSS frontend, xterm.js terminal emulation, a Rust MCP server, and native git CLI for git operations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c0849298b95eed49532e84affd5feeb55920f7de74fe9cb490446d0f1f5d214",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 70,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L67-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a3d52e956171c8b996d48d4ba08e66136ce11aabfc5fc33ce7c30d92e2fce7cf"
+      ],
+      "text": "The app offers a dynamic 1x1 to 2x3 session grid, iTerm2-style split panes, real-time status indicators, and per-session mode selection among Claude Code, Gemini CLI, OpenAI Codex, or plain terminal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d499e816f49acee5ced8448599a7e5cbb77964bccb6a79c9a23bff3c94ec308",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L138-L138"
+        },
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 136,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L121-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a8b46e6846f63dadc58bccf67fba3f71a3c5fb911a5652517382135dfd539a4",
+        "slc_790846725df9dc33bad289c3ce462ac0d32dbcf442a27e4a52d57757b908ed24"
+      ],
+      "text": "A documented keyboard shortcut set covers session creation, pane splitting, terminal cycling, zoom, copy, and line navigation, with Cmd mapping to Ctrl on Windows/Linux."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4468a53a68ba69156f46f849f625e23c4f984ec33835da42f218dff2c388716b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 174,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L144-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c101a08f5ae1cc1395af67781ed7e486c28a7fbdc4c840ecdaa173334c42b297"
+      ],
+      "text": "A Rust ProcessManager manages sessions whose worktrees live under ~/.claude-maestro/worktrees/{repo}/{branch}, connecting to the MCP server over stdio."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_26603713113acd85c431057d86988577713fe8d6e8ebfcff966d31b8076ffadf",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "d462e2c0c63b6d77f7897fa9bea73d19c3d23733",
+          "line_end": 143,
+          "line_start": 132,
+          "path": "ARCHITECTURE-OVERVIEW.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/ARCHITECTURE-OVERVIEW.md#L132-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09690e39da9ada649ee94cbf2035dcab31ba0b43224ff409fda40c098fe2d5da"
+      ],
+      "text": "Frontend state is organized into Zustand stores including useGitHubStore, useGitStore, useWorkspaceStore, useSessionStore, useMarketplaceStore, and useMcpStore."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3e7c9bb07fec59fcbe24ebca9d4300675180b39d3ad6b9b222c822cef23db56",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "d462e2c0c63b6d77f7897fa9bea73d19c3d23733",
+          "line_end": 112,
+          "line_start": 99,
+          "path": "ARCHITECTURE-OVERVIEW.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/ARCHITECTURE-OVERVIEW.md#L99-L112"
+        },
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "d462e2c0c63b6d77f7897fa9bea73d19c3d23733",
+          "line_end": 126,
+          "line_start": 116,
+          "path": "ARCHITECTURE-OVERVIEW.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/ARCHITECTURE-OVERVIEW.md#L116-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04963dec0b41ce69bd70f98ed08dbddcec87138ee3e253ed4aaf8f51523e6dcc",
+        "slc_e2960dd90363daf1a3c909bf606e7db5d6cede3eb4a5be316a5e1b24db8ba577"
+      ],
+      "text": "The Rust backend has command handlers for git, worktrees, GitHub, marketplace, MCP, sessions, terminals, updates, and usage, plus core modules for process, plugin, worktree, and session management."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_342d88330415eee03074a448698d6dc81d70c77c9c35e4a2a2d256fc01dab58d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+          "line_end": 83,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md#L80-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b92c317566df66a9680c38a8493ee92f8dbfa728f5d69b808ee8a3e5e2f255d4"
+      ],
+      "text": "A built-in MCP server lets AI sessions report their state (idle, working, needs input, finished, error) via the maestro_status tool, with updates shown in the session grid."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_039bd1db609224cd2a16193080f49bd8d77b87d9aa9efb44dbbfd4d55a1fc7d8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "d462e2c0c63b6d77f7897fa9bea73d19c3d23733",
+          "line_end": 195,
+          "line_start": 191,
+          "path": "ARCHITECTURE-OVERVIEW.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/ARCHITECTURE-OVERVIEW.md#L191-L195"
+        },
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "d462e2c0c63b6d77f7897fa9bea73d19c3d23733",
+          "line_end": 201,
+          "line_start": 198,
+          "path": "ARCHITECTURE-OVERVIEW.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/ARCHITECTURE-OVERVIEW.md#L198-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb3ec833bbc4d112ff92aa3fbaa49dcb6540b2c2532e1a06df40548cdd108abb",
+        "slc_ce439250def71effe0fcdc000bcfd7a15b37aaf2bb43844cdf3b298001705d44"
+      ],
+      "text": "Key frontend dependencies include @tauri-apps/api ^2.10.1, @xterm/xterm ^5.5.0, react ^18.3.0, zustand ^5.0.10, and tailwindcss ^3.4.0; the backend uses Tauri 2.0, tokio, serde, and DashMap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f9fb081fd17219cfaa0db3634f7e9e7838ccef8014f0d9f0c87f41a6aca60a4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+          "git_sha": "3626f660351e12c06171723957193ab6d5686d59",
+          "line_end": 191,
+          "line_start": 186,
+          "path": "AGENTS.md",
+          "repository": "its-maestro-baby/maestro",
+          "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/AGENTS.md#L186-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9a1980db27a22c6d55a788a1b5104aef5df083667fb1953ac7198dd11da7adbe"
+      ],
+      "text": "Repository development practice: the documented development workflow starts by running all tests, uses 'roam' and 'dora' skills to review related components, implements changes, then runs related tests and summarizes."
+    }
+  ],
+  "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 426,
+        "path": "README.md",
+        "size": 15096
+      },
+      {
+        "lines": 193,
+        "path": "AGENTS.md",
+        "size": 5900
+      },
+      {
+        "lines": 247,
+        "path": "ARCHITECTURE-OVERVIEW.md",
+        "size": 8778
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/issues/macos-volume-access-fix.md",
+        "reason": "file-budget",
+        "size": 8025
+      },
+      {
+        "path": "docs/issues/opencode-support-01-mode-selection.md",
+        "reason": "file-budget",
+        "size": 4674
+      },
+      {
+        "path": "docs/issues/opencode-support-02-session-launch.md",
+        "reason": "file-budget",
+        "size": 2831
+      },
+      {
+        "path": "docs/issues/opencode-support-03-cli-settings.md",
+        "reason": "file-budget",
+        "size": 4134
+      },
+      {
+        "path": "docs/issues/opencode-support-04-documentation.md",
+        "reason": "file-budget",
+        "size": 3177
+      },
+      {
+        "path": "docs/research/00-MASTER-ARCHITECTURAL-PLAN.md",
+        "reason": "file-budget",
+        "size": 49893
+      },
+      {
+        "path": "docs/research/01-core-architecture-breakdown.md",
+        "reason": "file-budget",
+        "size": 5618
+      },
+      {
+        "path": "docs/research/02-mcp-marketplace-plugins-breakdown.md",
+        "reason": "file-budget",
+        "size": 8804
+      },
+      {
+        "path": "docs/research/03-git-visualization-actions-breakdown.md",
+        "reason": "file-budget",
+        "size": 10177
+      },
+      {
+        "path": "docs/research/README.md",
+        "reason": "file-budget",
+        "size": 462
+      },
+      {
+        "path": "docs/specs/opencode-support-brd.md",
+        "reason": "file-budget",
+        "size": 15889
+      },
+      {
+        "path": "docs/specs/tamagotchi-multi-provider.md",
+        "reason": "file-budget",
+        "size": 7044
+      }
+    ],
+    "omitted_count": 12,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 253,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 15,
+      "complete": false,
+      "omitted": 12,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_6e335dbe046c5042a545dbfc99d5bdd6",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/its-maestro-baby/maestro/a10500d099836e7e7185977c1cda6f263a53b55d/2540374749b8bbe4/manifest.json",
+  "package_id": "pkg_677ec1dca493de94e927adb0f5d7b77e2e5d68d7d82c9b27fd8ba05121c9e3a9",
+  "repo": "its-maestro-baby/maestro",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "dbda3859d3822f4a87d78513379f14c0accb1ceee44d249af9ffbcc4ded752bd",
+  "snapshot_id": "2540374749b8bbe4",
+  "sources": [
+    {
+      "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+      "git_sha": "3626f660351e12c06171723957193ab6d5686d59",
+      "lines": 193,
+      "path": "AGENTS.md",
+      "repository": "its-maestro-baby/maestro",
+      "sha256": "a6cb9dd47eaec2a756e06f169651c678f9181a2ae4bced0f9faa589361b3528b",
+      "source_id": "src_88aef31399bb5328b19c62a2bd7dec1e",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/AGENTS.md"
+    },
+    {
+      "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+      "git_sha": "d462e2c0c63b6d77f7897fa9bea73d19c3d23733",
+      "lines": 247,
+      "path": "ARCHITECTURE-OVERVIEW.md",
+      "repository": "its-maestro-baby/maestro",
+      "sha256": "d9515c664ee698563fc9823fb2cae91cb515fb18470db99d6578ed1407d4496a",
+      "source_id": "src_3e46076c523e52e5a1f9eb050b13b3dc",
+      "stored": "architecture-overview.md-659131df1878.md",
+      "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/ARCHITECTURE-OVERVIEW.md"
+    },
+    {
+      "commit": "a10500d099836e7e7185977c1cda6f263a53b55d",
+      "git_sha": "011bc835936f7f3f816dc7a4a6f68fe09399af76",
+      "lines": 426,
+      "path": "README.md",
+      "repository": "its-maestro-baby/maestro",
+      "sha256": "dab2150f18267752e03a1b76ec210140a90a0b1655d229c109bbac1a327e6bf4",
+      "source_id": "src_0b9bd27fba16534894a6cc76acec9616",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/its-maestro-baby/maestro/blob/a10500d099836e7e7185977c1cda6f263a53b55d/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: Maestro is a cross-platform desktop application for running 1-6 Claude Code (or other AI CLI) sessions simultaneously, each in its own isolated git worktree. Each session gets its own terminal with a full shell environment, a git worktree for code isolation, an assigned branch, and a port allocation for web development.",
+  "superseded_claim_ids": []
+}

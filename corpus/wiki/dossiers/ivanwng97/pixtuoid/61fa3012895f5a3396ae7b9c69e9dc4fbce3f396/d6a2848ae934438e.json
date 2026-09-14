@@ -1,0 +1,598 @@
+{
+  "applied_operation_id": "op_2aa4b184da83407ea5d9ffade9c901fb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4029304457e35d873077cee9d7b3b0c20cd5d6365de7bf49abb8e629db8c9be5",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L41-L41"
+        },
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d1094d0afdebc4e8a0162e0982f6db4cfe240bf1d06bc0b7e76510834b13aab7",
+        "slc_f611c7e1bfb778f77ff2b0d0d4344a26d4a5c8c23b5edbd49e99cd0219b76b29"
+      ],
+      "text": "pixtuoid is a terminal-based tool that visualizes AI coding agents as pixel-art coworkers in an office, with each session shown as a character at a desk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73adba42ac7dec4170d0e27e2bb947fa157d45106e04aca6ad49c0063679c632",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L71-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b988769dc5aae5ba5567a44caf5f805d8909f257f8f6bad45e1e7c908262a23a"
+      ],
+      "text": "The TUI exposes keyboard shortcuts: q quit, p pause, s sources panel, t themes, m sound, Tab agent dashboard, ? help, and arrow/jk/PgUp/PgDn floor navigation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ccfd0076f73d0bb71465a20caafa5558b3a55e827a97e9d82f4ef8eae063fca",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L69-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83d85ce5afa8a5e4e286b96542fc3b17ef6940cc14e6b3f57641208c833f3ddb"
+      ],
+      "text": "Pressing s opens a Sources panel to connect an agent CLI without a separate install step; disconnecting there removes the character, and broken hooks are flagged, with `pixtuoid doctor` providing a health report."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad870fd66fc869a3aeec03b38542a82af72cfbd410ddc93cb28b13c564551351",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L138-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65b9981e6f0b8868f0e08571a2e809bdfd447bf934b13925cab7ba50b0bc173e"
+      ],
+      "text": "Agent events arrive via two transports — a hook shim writing to a Unix socket (named pipe on Windows) with a 200ms fire-and-forget bound, and JSONL transcript watching — feeding one channel whose reducer folds events into office state for a half-block pixel-art renderer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60d20b25f9a9f84e0723590a99a9b1fa48c0a1b33843d876f8d1edf55368d1a8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L138-L138"
+        },
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "88d645eaba9f1cd68a695c48e81f9279bcf5cfb0",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "CLAUDE.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/CLAUDE.md#L28-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65b9981e6f0b8868f0e08571a2e809bdfd447bf934b13925cab7ba50b0bc173e",
+        "slc_c86fe178e88b2a9dfac7a28a23f07891bb6dbaf16cfa73de40d881068158c525"
+      ],
+      "text": "The project is a Rust workspace of five crates, with the core having no terminal dependencies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ed4198bbe8af27dc97a01940e85a1ec3b8f355b306502a7bdbcb3b939de538f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L138-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65b9981e6f0b8868f0e08571a2e809bdfd447bf934b13925cab7ba50b0bc173e"
+      ],
+      "text": "The hook shim is designed to never block the agent: it performs a 200ms fire-and-forget write and can be invoked without blocking the agent CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af4ed06a3d0ecf5abe3a988961ef50816d7d778e21950f6db4d8d49511e12dd9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 95,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L77-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc6500b07f088c78058099c0c60d916c879b8b10d4829ffd7672115a4f594983"
+      ],
+      "text": "Character shirt and pants colors derive from the working directory so same-repo agents share colors; hair and skin vary per agent across 16 curated outfits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf163466062182349dd9c2a91d342fb232b6f74e2d9b1ea686aac1f06a5cd485",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 95,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L77-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc6500b07f088c78058099c0c60d916c879b8b10d4829ffd7672115a4f594983"
+      ],
+      "text": "Each desk's monitor glows with the color of the tool currently in use (e.g. Edit blue)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca5564e2ed5d0a27d625c7d9726fb64a35e4fd52cc9702699d0ed8a394706617",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 122,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L120-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_049a09f502dccef12e551e6fef2c80203211697506dc502fca63ff999c24f4c9"
+      ],
+      "text": "Configuration lives in ~/.config/pixtuoid/config.toml, created on first launch with all keys optional; CLI flags such as `pixtuoid run --theme dracula` override the file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_421884eda0507e4ffbdb07f809454b1c3241d527ffa6c45be2292f0bb5541773",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 125,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L124-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60bfcc89dc85074b61da627082981c8e2b7938822d2165468ba86ccfa31a4155"
+      ],
+      "text": "Pressing t opens a live-preview theme picker across six built-in palettes, and the chosen theme persists across sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5d0df3977ea968e85ff9aa055b1d7d16240dd89ddfbe0cf82b4e9dd01b5cdc9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 149,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L144-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1278e89e4c1447bb975cda4611860eee3aaf265c7c5f68a0d875939adb39895d"
+      ],
+      "text": "The tool is described as local-only and telemetry-free: it makes no network connections, ships no analytics, and reads agent transcripts read-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3529ea2f0de70e51c51306f82ff22ae3d9e367fbc254f32e6494d984b3bd79fd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 149,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L144-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1278e89e4c1447bb975cda4611860eee3aaf265c7c5f68a0d875939adb39895d"
+      ],
+      "text": "The dependency set is audited for advisories daily using cargo-deny."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e1ec0c2c41fb7bfad252edf12129df250a049707e15c1a8fd5e138cf653529b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 114,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L113-L114"
+        },
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md#L103-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_099d0240335aa26f14d49b54462f86405caa87b305caef1149130d84077dd935",
+        "slc_d3c3c694e0f634e9a5af29f93f5038d44095c691e834fdff3b1b7fdc5bc86746"
+      ],
+      "text": "Windows support for Claude Code and Codex CLI is marked experimental, with limited testing and unsigned binaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f7329ff90d50b620236a161562118674fb09717c57bfc51f908024416363ea3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "88d645eaba9f1cd68a695c48e81f9279bcf5cfb0",
+          "line_end": 76,
+          "line_start": 71,
+          "path": "CLAUDE.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/CLAUDE.md#L71-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60cb0b84732c4598baac9b8d9eb3c3a8206f8f02702d48b965fd5c31253415c8"
+      ],
+      "text": "Repository development practice: non-trivial work follows an arc (pick, design gate, spec, TDD build, self-review, merge gate) where the merge gate is a two-lens-review skill requiring 2+ differentiated lenses, green CI, and dispositioned bot findings, and a human performs the merge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d0b20251ade98d5610c27842f56fd5668f5c06f92510d97ccceb32a35a99ebf",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "88d645eaba9f1cd68a695c48e81f9279bcf5cfb0",
+          "line_end": 55,
+          "line_start": 50,
+          "path": "CLAUDE.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/CLAUDE.md#L50-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e2091c92be711c07b4b38ad81dd1929b858bde1da4569a38b1dbffb3720015d2"
+      ],
+      "text": "Repository development practice: contributors use `just build`, `just test` (nextest), and `just preflight` as the pre-push gate running lint, clippy, hack, and test in CI order."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7182be8fb87e29d4635428e9d7ac5b36deab44741467ab29a05829c4a0d6d353",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "88d645eaba9f1cd68a695c48e81f9279bcf5cfb0",
+          "line_end": 79,
+          "line_start": 78,
+          "path": "CLAUDE.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/CLAUDE.md#L78-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_86e2c910a561a198d0eab5a880b09bb37beed3e375d243637171f41543c9d85b"
+      ],
+      "text": "Repository development practice: committed repo skills include two-lens-review, beautify-decoration, add-source, add-theme, and procedural-lofi."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03cf0b6bfc8b07e8a53c4f9ccf4e8a33e83dddeea11ff2432251ea8f7e55a04c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "88d645eaba9f1cd68a695c48e81f9279bcf5cfb0",
+          "line_end": 94,
+          "line_start": 83,
+          "path": "CLAUDE.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/CLAUDE.md#L83-L94"
+        },
+        {
+          "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+          "git_sha": "88d645eaba9f1cd68a695c48e81f9279bcf5cfb0",
+          "line_end": 126,
+          "line_start": 120,
+          "path": "CLAUDE.md",
+          "repository": "ivanwng97/pixtuoid",
+          "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/CLAUDE.md#L120-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63ac3a664907e488f1be69025efa199e8ccbb45952fdd3fc3cde776a0ff0a9ef",
+        "slc_d16dab82f43b1e8b9173f5f4cdf125edd874ead3c4d173b13cb50f1579547f42"
+      ],
+      "text": "Repository development practice: conventions require TDD-first, WHY-only comments, no magic numbers, no unwrap() outside tests, and no ratatui/crossterm dependencies in pixtuoid-core or pixtuoid-scene."
+    }
+  ],
+  "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 175,
+        "path": "README.md",
+        "size": 12987
+      },
+      {
+        "lines": 1,
+        "path": "AGENTS.md",
+        "size": 9
+      },
+      {
+        "lines": 133,
+        "path": "CLAUDE.md",
+        "size": 15107
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 4256
+      },
+      {
+        "path": "requirements-dev.txt",
+        "reason": "file-budget",
+        "size": 264
+      },
+      {
+        "path": "docs/ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 6862
+      },
+      {
+        "path": "docs/CONFIGURATION.md",
+        "reason": "file-budget",
+        "size": 8963
+      },
+      {
+        "path": "docs/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 17649
+      },
+      {
+        "path": "docs/PARALLEL-DELIVERY.md",
+        "reason": "file-budget",
+        "size": 3006
+      },
+      {
+        "path": "docs/mutants-exclusions.md",
+        "reason": "file-budget",
+        "size": 13459
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 918,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 7,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3d32f8f1e1405eaf9c05c39744bd3c2b",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ivanwng97/pixtuoid/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/d6a2848ae934438e/manifest.json",
+  "package_id": "pkg_9bf2a3da7b5e7ad54d6bf86e91b9365b1a1c75b10fa9f70d7b2331b67aa88f8f",
+  "repo": "ivanwng97/pixtuoid",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "39c360620ad9dbfac043156b3421dda4e196570455706775f70d66d8549ad28c",
+  "snapshot_id": "d6a2848ae934438e",
+  "sources": [
+    {
+      "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+      "git_sha": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "lines": 1,
+      "path": "AGENTS.md",
+      "repository": "ivanwng97/pixtuoid",
+      "sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
+      "source_id": "src_659cf2b52d505c358336a23580be6195",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/AGENTS.md"
+    },
+    {
+      "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+      "git_sha": "88d645eaba9f1cd68a695c48e81f9279bcf5cfb0",
+      "lines": 133,
+      "path": "CLAUDE.md",
+      "repository": "ivanwng97/pixtuoid",
+      "sha256": "1cff5f57ce83e2cc7b7d76ff5d34a5de37515380354858adb9eb2b4e29c681a8",
+      "source_id": "src_08e915910d165cf3839610e565094b84",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/CLAUDE.md"
+    },
+    {
+      "commit": "61fa3012895f5a3396ae7b9c69e9dc4fbce3f396",
+      "git_sha": "d33d2651c2808feb0cad9596b9a893b49f461642",
+      "lines": 175,
+      "path": "README.md",
+      "repository": "ivanwng97/pixtuoid",
+      "sha256": "983743f797c81a4cd93c2977d6ffc26b7b9f95d640af19d424be04e418dfc208",
+      "source_id": "src_5798aa0d88df580a8f651f873b7c9af8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/IvanWng97/pixtuoid/blob/61fa3012895f5a3396ae7b9c69e9dc4fbce3f396/README.md"
+    }
+  ],
+  "summary": "pixtuoid is a Rust terminal TUI that visualizes multiple AI coding-agent sessions as animated pixel-art characters in an office, fed by hook shims and JSONL transcript watching. Evidence covers product behavior, architecture, configuration, supported tools, and contributor workflow.",
+  "superseded_claim_ids": []
+}

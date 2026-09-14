@@ -1,0 +1,1616 @@
+{
+  "applied_operation_id": "op_becf45a81eb741259614ff5c0eda45df",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_178b637578644b0417467dcd1e86e1583787964770d4a60c7f8ce6c7fbf9c481",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "docs/architecture.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md#L50-L52"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+          "line_end": 62,
+          "line_start": 54,
+          "path": "docs/architecture.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md#L54-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f6d2ab6d866d643627e1306240a05512b9ae110dd2dc1c688d58feb47ff4dfc",
+        "slc_b68dfe089c98992fb834212aec7ab9226446049de1e3ee94395105144e14a475"
+      ],
+      "text": "The pnpm workspace reportedly contains 29 packages and two applications, with foundation packages persistence, kanban, and core, plus runtime, providers, tools, and user-surface packages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b7f8c828e6c72e4572b81b9ff45544d11fdf4d4672858519187ce2cec128475",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+          "line_end": 92,
+          "line_start": 88,
+          "path": "docs/architecture.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md#L88-L92"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 527,
+          "line_start": 524,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L524-L527"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 520,
+          "line_start": 510,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L510-L520"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 165,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L155-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32ff44eb82b36d5530f0ae1dfdd0e9738141761a8457b27580adcf0972860d40",
+        "slc_6ab21a3a4cf56ead5336b0ab6645656f553c3cd50d3c9152af1907a643e108ed",
+        "slc_b8810df517c578c6ec4dc1ea26c2b4b5a78991d9985803e31d4647854432595d",
+        "slc_e7eced43c09854bd0e9d37ddc7505fc468d036c00ea54d8ffa58e10b506e8b58"
+      ],
+      "text": "The kernel is described as four primitives — Container, Pipeline, EventBus, RunController — with extension points in registries and services bound through the Container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6e4cdf5f33b9cae66c30a2b682ab2d2a96090bfd10983dfb94e39f8b2d1cd79",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 289,
+          "line_start": 285,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L285-L289"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 280,
+          "line_start": 273,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L273-L280"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 144,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L96-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd9cc6ecc169857c6fe33c322dd5b24d4802588720db4ee75561680c893a2eae",
+        "slc_ef9564ee8eeddb42b88ad9836b9033340f1291cbc8df4373266ba8aa3eb0e4d7",
+        "slc_f04af9fc4b1d91d0ec4905c67e1cc2689153ca985cad318380581cbd0318222f"
+      ],
+      "text": "The product offers six launch surfaces: a readline REPL, an Ink TUI behind --tui, a WebUI, SimpleUI, an Electron Desktop shell, and a cross-machine HQ dashboard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5a41a6a7ca5b89e8afc9cb1e587155e92d021febb56d34644e00c261e2e2fec4",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 362,
+          "line_start": 355,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L355-L362"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 144,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L96-L144"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 368,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L364-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ff6f81c76e839147450c588bdea8e5093302d66e169e54832e25e73567b9e1c",
+        "slc_f04af9fc4b1d91d0ec4905c67e1cc2689153ca985cad318380581cbd0318222f",
+        "slc_f0dca67bb0fc36226071282b99b4486905956ff65f60b4f51164ddb1578a2d1d"
+      ],
+      "text": "SAGE is project-local long-term memory backed by SQLite/FTS5 under .wrongstack/memories/, with typed knowledge, anchors to files/symbols/commands/commits, a knowledge graph, and auto-injection into context each turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3da31d32a5706a942ff6bee114483550d0a3272dd070bac941e6cf413967ad22",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 325,
+          "line_start": 322,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L322-L325"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 351,
+          "line_start": 343,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L343-L351"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 144,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L96-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12d3b56f0f3c9c49b45b1ca3f404f8625db68c8b91facc77f868e511d6c23fa1",
+        "slc_c103768691be99684b14bdbce8f462ff289ac4d28459944ea93f25a3f2189a2a",
+        "slc_f04af9fc4b1d91d0ec4905c67e1cc2689153ca985cad318380581cbd0318222f"
+      ],
+      "text": "A Director-led specialist fleet fans out subagents, each isolated with its own budget and JSONL transcript, coordinated over a project-wide mailbox with typed messages and live presence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_257aeee85c267b770ac61cd8de75b161eab843b918df61e03490cfb92591335b",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+          "line_end": 144,
+          "line_start": 140,
+          "path": "docs/architecture.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md#L140-L144"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 483,
+          "line_start": 481,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L481-L483"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 165,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L155-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2710bc4f7cc88a1a179b6f889465dcab41b76122678f1236fe732ccf9c988991",
+        "slc_a2f3ae34075bf7e4bd11b962763a364e99ce1fc6d8c59fcfbd3dcf294fe4988a",
+        "slc_e7eced43c09854bd0e9d37ddc7505fc468d036c00ea54d8ffa58e10b506e8b58"
+      ],
+      "text": "Every tool call passes a permission policy; project-root containment cannot be overridden by YOLO, absolute denies remain enforced, and destructive shell actions stay confirmable unless destructive YOLO is explicitly enabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aaaf3643238f70ad111c89386316e1f04e21520704536c0578975d028eb0128f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+          "line_end": 131,
+          "line_start": 127,
+          "path": "docs/architecture.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md#L127-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12a46d19072a9c229ebb8b5a8183275f508094f815029bc43585b6e490a851bf"
+      ],
+      "text": "Tools declare a JSON-schema input plus permission/risk/mutation profile, and the ToolExecutor evaluates permission before execution with sequential, parallel, and smart scheduling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc84cf2441ef9b2710134c276d45208a21858275d524fac2592fa7de9744be3a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 568,
+          "line_start": 563,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L563-L568"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 176,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L175-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34221593df0db24093ff84525c906ca941d9064e1ba0154a5dd345d97466fe95",
+        "slc_c9246966ddb971a503ec65a2b45818b47af35d34d3fc959438d551941c437e8b"
+      ],
+      "text": "The project requires Node.js >= 22.19.0 with pnpm (recommended) or npm, or Bun >= 1.3.10 as an alternative runtime; it is ESM-only with no CommonJS bundles."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc3f6747e01874ea79dbda4991632607ddc3d7b348ba8d54909f805b65c6783f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+          "line_end": 138,
+          "line_start": 133,
+          "path": "docs/architecture.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md#L133-L138"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 416,
+          "line_start": 411,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L411-L416"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 32,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L25-L32"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 409,
+          "line_start": 406,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L406-L409"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61a5d820cb9f680c045938530e2032c59f818f81063b12f88cd9abae24123b24",
+        "slc_6d18f56892747ffd22963abb87d24c48f3d71620f7e871613451de0d009bf3ae",
+        "slc_c28386d3350a230871cfa5c6c0ea9c491eabae49f919473bbcf4e5fd8eabce2d",
+        "slc_ee9be8055b23a1a82afd321e3cdc42610afde17e506e60a08d5d75c7c104ff5f"
+      ],
+      "text": "Providers span multiple wire families including native Anthropic, OpenAI, Google, OpenAI-compatible, and OAuth adapters, with a catalog fetched from models.dev and one-command Ollama/vLLM/LM Studio local presets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0378279ef38c0c12b39967a1709aaa13781c1f69fbe25c584ac0215fb3240ea",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 557,
+          "line_start": 535,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L535-L557"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62c9283601d504daae30bc280e59bf7d095d245168aa21a49413ad42fd7bba3d"
+      ],
+      "text": "The @wrongstack/bench package is described as a benchmark harness covering Aider polyglot and SWE-bench Verified."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2c4784c44b87e58c723a87a7066d1dfe3d800b73949ca453d3040f5f24b93bd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 568,
+          "line_start": 563,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L563-L568"
+        },
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+          "line_end": 70,
+          "line_start": 64,
+          "path": "docs/architecture.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md#L64-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34221593df0db24093ff84525c906ca941d9064e1ba0154a5dd345d97466fe95",
+        "slc_40ddde18ae184fbcfab5ea4c0d9a817d4153b2b872e66b8f0fe2d93605f2135c"
+      ],
+      "text": "Repository development practice: release verification uses pnpm release:check with 18 gates, root Vitest coverage thresholds are set (>=76% lines, >=75% functions, >=66% branches), and package-boundary rules are enforced by a dedicated architecture test."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e8fd75ac6b39c23376b3569621e763a6256ae39f386f0248f0abd34194e7167",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+          "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+          "line_end": 66,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "wrongstack/wrongstack",
+          "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md#L50-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_576fe28bcd3308311d93cec7118fc6e38bcd97a7ac9e945fdfc76a27f2607791"
+      ],
+      "text": "Repository development practice: pnpm release:fast skips only the audit and instrumented-coverage gates that CI covers, and the release matrix verifies the packed providers package installs with npm 10."
+    }
+  ],
+  "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 594,
+        "path": "README.md",
+        "size": 30179
+      },
+      {
+        "lines": 391,
+        "path": "docs/architecture.md",
+        "size": 21898
+      },
+      {
+        "lines": 398,
+        "path": "docs/skills.md",
+        "size": 20170
+      },
+      {
+        "lines": 769,
+        "path": "docs/sage/ARCHITECTURE.md",
+        "size": 32707
+      },
+      {
+        "lines": 129,
+        "path": "docs/slash/design.md",
+        "size": 6493
+      },
+      {
+        "lines": 66,
+        "path": "docs/slash/memory.md",
+        "size": 8514
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/configuration.md",
+        "reason": "byte-budget",
+        "size": 108125
+      },
+      {
+        "path": "docs/slash/skills.md",
+        "reason": "file-budget",
+        "size": 1289
+      },
+      {
+        "path": "docs/slash/tools.md",
+        "reason": "file-budget",
+        "size": 1896
+      },
+      {
+        "path": "PERF_LOG.md",
+        "reason": "file-budget",
+        "size": 70817
+      },
+      {
+        "path": "docs/acp-editor-integration.md",
+        "reason": "file-budget",
+        "size": 8348
+      },
+      {
+        "path": "docs/acp-ensemble.md",
+        "reason": "file-budget",
+        "size": 23307
+      },
+      {
+        "path": "docs/agent-monitoring.md",
+        "reason": "file-budget",
+        "size": 6162
+      },
+      {
+        "path": "docs/ai-code-provenance-and-debt-design.md",
+        "reason": "file-budget",
+        "size": 6954
+      },
+      {
+        "path": "docs/ai-sdk-next.md",
+        "reason": "file-budget",
+        "size": 12022
+      },
+      {
+        "path": "docs/architecture-rules.md",
+        "reason": "file-budget",
+        "size": 15180
+      },
+      {
+        "path": "docs/ascii.md",
+        "reason": "file-budget",
+        "size": 321
+      },
+      {
+        "path": "docs/auth-screens-review.md",
+        "reason": "file-budget",
+        "size": 13617
+      },
+      {
+        "path": "docs/auto-thinning.md",
+        "reason": "file-budget",
+        "size": 4344
+      },
+      {
+        "path": "docs/autonomous-coordinator.md",
+        "reason": "file-budget",
+        "size": 23444
+      },
+      {
+        "path": "docs/browser-automation.md",
+        "reason": "file-budget",
+        "size": 3684
+      },
+      {
+        "path": "docs/chronicle-architecture.md",
+        "reason": "file-budget",
+        "size": 7666
+      },
+      {
+        "path": "docs/cli-reference.md",
+        "reason": "file-budget",
+        "size": 4651
+      },
+      {
+        "path": "docs/codebase-index-calls.md",
+        "reason": "file-budget",
+        "size": 10025
+      },
+      {
+        "path": "docs/codebase-index-refactor.md",
+        "reason": "file-budget",
+        "size": 22230
+      },
+      {
+        "path": "docs/collab-debug.md",
+        "reason": "file-budget",
+        "size": 3301
+      },
+      {
+        "path": "docs/design-provider-health-gate.md",
+        "reason": "file-budget",
+        "size": 11682
+      },
+      {
+        "path": "docs/design-side-effect-recording.md",
+        "reason": "file-budget",
+        "size": 8976
+      },
+      {
+        "path": "docs/director-architecture.md",
+        "reason": "file-budget",
+        "size": 28132
+      },
+      {
+        "path": "docs/e2e-runner.md",
+        "reason": "file-budget",
+        "size": 1086
+      },
+      {
+        "path": "docs/feature-matrix.md",
+        "reason": "file-budget",
+        "size": 28830
+      },
+      {
+        "path": "docs/goal-pause-resume-stage-reporting.md",
+        "reason": "file-budget",
+        "size": 6045
+      },
+      {
+        "path": "docs/help-modules.md",
+        "reason": "file-budget",
+        "size": 20678
+      },
+      {
+        "path": "docs/hooks.md",
+        "reason": "file-budget",
+        "size": 25154
+      },
+      {
+        "path": "docs/hq-service.md",
+        "reason": "file-budget",
+        "size": 1724
+      },
+      {
+        "path": "docs/inspector-slots.md",
+        "reason": "file-budget",
+        "size": 5738
+      },
+      {
+        "path": "docs/instructions.md",
+        "reason": "file-budget",
+        "size": 8526
+      },
+      {
+        "path": "docs/kanban-architecture-audit-2026-07.md",
+        "reason": "file-budget",
+        "size": 24888
+      },
+      {
+        "path": "docs/kanban-architecture.md",
+        "reason": "file-budget",
+        "size": 62612
+      },
+      {
+        "path": "docs/kanban-contract-graph.md",
+        "reason": "file-budget",
+        "size": 7190
+      },
+      {
+        "path": "docs/kanban-cost-director-integration-design.md",
+        "reason": "file-budget",
+        "size": 7397
+      },
+      {
+        "path": "docs/kanban-database.md",
+        "reason": "file-budget",
+        "size": 23629
+      },
+      {
+        "path": "docs/kanban-deterministic-enforcement-design.md",
+        "reason": "file-budget",
+        "size": 7143
+      },
+      {
+        "path": "docs/kanban-orchestration-contract.md",
+        "reason": "file-budget",
+        "size": 18146
+      },
+      {
+        "path": "docs/kanban-orchestration-roadmap.md",
+        "reason": "file-budget",
+        "size": 14430
+      },
+      {
+        "path": "docs/kanban-workbench.md",
+        "reason": "file-budget",
+        "size": 2986
+      },
+      {
+        "path": "docs/language-support-system-design.md",
+        "reason": "file-budget",
+        "size": 38449
+      },
+      {
+        "path": "docs/mailbox-architecture.md",
+        "reason": "file-budget",
+        "size": 13116
+      },
+      {
+        "path": "docs/mcp-server.md",
+        "reason": "file-budget",
+        "size": 10510
+      },
+      {
+        "path": "docs/oauth-signin.md",
+        "reason": "file-budget",
+        "size": 11466
+      },
+      {
+        "path": "docs/one-shot-llm.md",
+        "reason": "file-budget",
+        "size": 9770
+      },
+      {
+        "path": "docs/performance-ratchet.md",
+        "reason": "file-budget",
+        "size": 7727
+      },
+      {
+        "path": "docs/plans_architecture.md",
+        "reason": "file-budget",
+        "size": 12639
+      },
+      {
+        "path": "docs/plugin-audit-2026-07-10.md",
+        "reason": "file-budget",
+        "size": 24674
+      },
+      {
+        "path": "docs/plugin-author-guide.md",
+        "reason": "file-budget",
+        "size": 26629
+      },
+      {
+        "path": "docs/plugin-llm-council-audit.md",
+        "reason": "file-budget",
+        "size": 4389
+      },
+      {
+        "path": "docs/plugin-management.md",
+        "reason": "file-budget",
+        "size": 11156
+      },
+      {
+        "path": "docs/plugin-third-party.md",
+        "reason": "file-budget",
+        "size": 5543
+      },
+      {
+        "path": "docs/project-daemons.md",
+        "reason": "file-budget",
+        "size": 10034
+      },
+      {
+        "path": "docs/prompt-caching.md",
+        "reason": "file-budget",
+        "size": 5437
+      },
+      {
+        "path": "docs/provider-author-guide.md",
+        "reason": "file-budget",
+        "size": 11895
+      },
+      {
+        "path": "docs/provider-continuity.md",
+        "reason": "file-budget",
+        "size": 9153
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 15297
+      },
+      {
+        "path": "docs/readonly-mode.md",
+        "reason": "file-budget",
+        "size": 7278
+      },
+      {
+        "path": "docs/refactor.md",
+        "reason": "file-budget",
+        "size": 22453
+      },
+      {
+        "path": "docs/reference.md",
+        "reason": "file-budget",
+        "size": 4338
+      },
+      {
+        "path": "docs/release-process.md",
+        "reason": "file-budget",
+        "size": 9402
+      },
+      {
+        "path": "docs/release.md",
+        "reason": "file-budget",
+        "size": 4320
+      },
+      {
+        "path": "docs/roadmap-2026-07-refactoring.md",
+        "reason": "file-budget",
+        "size": 12888
+      },
+      {
+        "path": "docs/sage-memory-analysis-2026-08-08.md",
+        "reason": "file-budget",
+        "size": 28293
+      },
+      {
+        "path": "docs/sage-memory-report-2026-08-02.md",
+        "reason": "file-budget",
+        "size": 17815
+      },
+      {
+        "path": "docs/session-logging-events.md",
+        "reason": "file-budget",
+        "size": 14817
+      },
+      {
+        "path": "docs/SKILL-TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 2937
+      },
+      {
+        "path": "docs/techstack.md",
+        "reason": "file-budget",
+        "size": 12082
+      },
+      {
+        "path": "docs/telegram-operations-runbook.md",
+        "reason": "file-budget",
+        "size": 19004
+      },
+      {
+        "path": "docs/telegram-v1-handoff-assessment-2026-08.md",
+        "reason": "file-budget",
+        "size": 2749
+      },
+      {
+        "path": "docs/todos_architecture.md",
+        "reason": "file-budget",
+        "size": 16198
+      },
+      {
+        "path": "docs/token-saving-tiers-design.md",
+        "reason": "file-budget",
+        "size": 16969
+      },
+      {
+        "path": "docs/tool-author-guide.md",
+        "reason": "file-budget",
+        "size": 16576
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 8194
+      },
+      {
+        "path": "docs/tui-feature-inventory-2026-08.md",
+        "reason": "file-budget",
+        "size": 5685
+      },
+      {
+        "path": "docs/tui-feature-inventory.md",
+        "reason": "file-budget",
+        "size": 15477
+      },
+      {
+        "path": "docs/tui-ink.md",
+        "reason": "file-budget",
+        "size": 40294
+      },
+      {
+        "path": "docs/tui-keyboard-reference.md",
+        "reason": "file-budget",
+        "size": 21777
+      },
+      {
+        "path": "docs/tui-themes.md",
+        "reason": "file-budget",
+        "size": 19796
+      },
+      {
+        "path": "docs/typescript-style-guide.md",
+        "reason": "file-budget",
+        "size": 9359
+      },
+      {
+        "path": "docs/webui-scroll-audit-2026-08.md",
+        "reason": "file-budget",
+        "size": 5132
+      },
+      {
+        "path": "docs/webui.md",
+        "reason": "file-budget",
+        "size": 15860
+      },
+      {
+        "path": "docs/worklog.md",
+        "reason": "file-budget",
+        "size": 5997
+      },
+      {
+        "path": "docs/wrongtrace.md",
+        "reason": "file-budget",
+        "size": 30524
+      },
+      {
+        "path": "docs/yolo-mode.md",
+        "reason": "file-budget",
+        "size": 6354
+      },
+      {
+        "path": "docs/zero-report.md",
+        "reason": "file-budget",
+        "size": 27366
+      },
+      {
+        "path": "docs/adr/adr-001-layer-instead-of-split.md",
+        "reason": "file-budget",
+        "size": 3734
+      },
+      {
+        "path": "docs/adr/adr-002-help-delegation-pattern.md",
+        "reason": "file-budget",
+        "size": 23051
+      },
+      {
+        "path": "docs/adr/adr-003-telegram-broker-and-webhook.md",
+        "reason": "file-budget",
+        "size": 16501
+      },
+      {
+        "path": "docs/adr/adr-004-step-budgeted-regex-ambiguity-matcher.md",
+        "reason": "file-budget",
+        "size": 8792
+      },
+      {
+        "path": "docs/architecture/explore-companion-subagent.md",
+        "reason": "file-budget",
+        "size": 17986
+      },
+      {
+        "path": "docs/architecture/session-journal-spec.md",
+        "reason": "file-budget",
+        "size": 15236
+      },
+      {
+        "path": "docs/architecture/session-journal.md",
+        "reason": "file-budget",
+        "size": 14333
+      },
+      {
+        "path": "docs/architecture/simpleui-message-lifecycle.md",
+        "reason": "file-budget",
+        "size": 24952
+      },
+      {
+        "path": "docs/archive/README.md",
+        "reason": "file-budget",
+        "size": 1052
+      },
+      {
+        "path": "docs/audit-2026-08/00-executive-summary.md",
+        "reason": "file-budget",
+        "size": 11823
+      },
+      {
+        "path": "docs/audit-2026-08/01-core-kernel.md",
+        "reason": "file-budget",
+        "size": 8411
+      },
+      {
+        "path": "docs/audit-2026-08/02-security.md",
+        "reason": "file-budget",
+        "size": 8765
+      },
+      {
+        "path": "docs/audit-2026-08/03-execution-pipeline.md",
+        "reason": "file-budget",
+        "size": 9888
+      },
+      {
+        "path": "docs/audit-2026-08/04-storage-sessions.md",
+        "reason": "file-budget",
+        "size": 12183
+      },
+      {
+        "path": "docs/audit-2026-08/05-mcp-protocol.md",
+        "reason": "file-budget",
+        "size": 11738
+      },
+      {
+        "path": "docs/audit-2026-08/06-sage-memory.md",
+        "reason": "file-budget",
+        "size": 10088
+      },
+      {
+        "path": "docs/audit-2026-08/07-webui-server.md",
+        "reason": "file-budget",
+        "size": 11203
+      },
+      {
+        "path": "docs/audit-2026-08/08-tools-plugins.md",
+        "reason": "file-budget",
+        "size": 7220
+      },
+      {
+        "path": "docs/audit-2026-08/09-build-ci.md",
+        "reason": "file-budget",
+        "size": 6828
+      },
+      {
+        "path": "docs/audit-2026-08/10-kanban-governance.md",
+        "reason": "file-budget",
+        "size": 10208
+      },
+      {
+        "path": "docs/audit-2026-08/11-system-audit-follow-up-2026-08-13.md",
+        "reason": "file-budget",
+        "size": 17390
+      },
+      {
+        "path": "docs/audit-2026-08/README.md",
+        "reason": "file-budget",
+        "size": 3313
+      },
+      {
+        "path": "docs/audit/ledger.md",
+        "reason": "file-budget",
+        "size": 68538
+      },
+      {
+        "path": "docs/audit/README.md",
+        "reason": "file-budget",
+        "size": 1867
+      },
+      {
+        "path": "docs/changelog/v0.298.0.md",
+        "reason": "file-budget",
+        "size": 7383
+      },
+      {
+        "path": "docs/cli/launch-menu.md",
+        "reason": "file-budget",
+        "size": 4713
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/00-gap-assessment.md",
+        "reason": "file-budget",
+        "size": 9285
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/01-operational-slash-commands.md",
+        "reason": "file-budget",
+        "size": 4264
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/02-first-party-browser-automation.md",
+        "reason": "file-budget",
+        "size": 4895
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/03-browser-aware-e2e-runner.md",
+        "reason": "file-budget",
+        "size": 2652
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/04-database-tooling.md",
+        "reason": "file-budget",
+        "size": 1749
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/05-api-contract-testing.md",
+        "reason": "file-budget",
+        "size": 1393
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/06-multimodal-media-workflows.md",
+        "reason": "file-budget",
+        "size": 1362
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/07-deployment-cloud-iac-workflows.md",
+        "reason": "file-budget",
+        "size": 1646
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/08-mcp-resources-and-prompts.md",
+        "reason": "file-budget",
+        "size": 5348
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/09-mcp-authentication-and-sampling.md",
+        "reason": "file-budget",
+        "size": 6513
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/10-mcp-rich-content.md",
+        "reason": "file-budget",
+        "size": 1371
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/11-mcp-registry-and-installation.md",
+        "reason": "file-budget",
+        "size": 1688
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/12-mcp-health-and-operations.md",
+        "reason": "file-budget",
+        "size": 3950
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/13-semantic-sage-retrieval.md",
+        "reason": "file-budget",
+        "size": 6070
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/14-cross-session-continuity-and-project-state.md",
+        "reason": "file-budget",
+        "size": 1752
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/15-desktop-distribution.md",
+        "reason": "file-budget",
+        "size": 1382
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/16-hq-hardening-and-operations.md",
+        "reason": "file-budget",
+        "size": 2383
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/17-responsive-webui.md",
+        "reason": "file-budget",
+        "size": 1334
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/18-rich-tui-rendering.md",
+        "reason": "file-budget",
+        "size": 1597
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/19-policy-authoring-experience.md",
+        "reason": "file-budget",
+        "size": 2568
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/20-enterprise-governance.md",
+        "reason": "file-budget",
+        "size": 1735
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/21-brain-evaluation-and-replay.md",
+        "reason": "file-budget",
+        "size": 5171
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/22-quality-engineering-program.md",
+        "reason": "file-budget",
+        "size": 1839
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/23-public-benchmark-transparency.md",
+        "reason": "file-budget",
+        "size": 1530
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/24-skill-and-prompt-ecosystem.md",
+        "reason": "file-budget",
+        "size": 1779
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/25-distributed-fleet.md",
+        "reason": "file-budget",
+        "size": 1650
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/26-live-cross-surface-collaboration.md",
+        "reason": "file-budget",
+        "size": 1551
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/27-autonomous-issue-to-pr-pipeline.md",
+        "reason": "file-budget",
+        "size": 1773
+      },
+      {
+        "path": "docs/competitive-roadmap-2026-2027/README.md",
+        "reason": "file-budget",
+        "size": 6821
+      },
+      {
+        "path": "docs/migration/v0.293.0.md",
+        "reason": "file-budget",
+        "size": 6157
+      },
+      {
+        "path": "docs/migration/v0.296.0-architecture-boundaries.md",
+        "reason": "file-budget",
+        "size": 2098
+      },
+      {
+        "path": "docs/notes/bugs.md",
+        "reason": "file-budget",
+        "size": 25463
+      },
+      {
+        "path": "docs/notes/EDITING.md",
+        "reason": "file-budget",
+        "size": 3036
+      },
+      {
+        "path": "docs/notes/next.md",
+        "reason": "file-budget",
+        "size": 1926
+      },
+      {
+        "path": "docs/notes/refactor-2026-06-05.md",
+        "reason": "file-budget",
+        "size": 15177
+      },
+      {
+        "path": "docs/notes/refactor.md",
+        "reason": "file-budget",
+        "size": 23641
+      },
+      {
+        "path": "docs/outbound/zai-coding-plan-approval-request.md",
+        "reason": "file-budget",
+        "size": 5109
+      },
+      {
+        "path": "docs/plans/adr-003-authority-first-refactor-program.md",
+        "reason": "file-budget",
+        "size": 16138
+      },
+      {
+        "path": "docs/plans/adr-004-core-runtime-export-and-config-ownership.md",
+        "reason": "file-budget",
+        "size": 8494
+      },
+      {
+        "path": "docs/plans/architecture-refactor-2026-08.md",
+        "reason": "file-budget",
+        "size": 17463
+      },
+      {
+        "path": "docs/plans/architecture-refactor-plan.md",
+        "reason": "file-budget",
+        "size": 11679
+      },
+      {
+        "path": "docs/plans/architecture-refactor-task-graph-2026-07.md",
+        "reason": "file-budget",
+        "size": 86688
+      },
+      {
+        "path": "docs/plans/breaking-changes-next-major.md",
+        "reason": "file-budget",
+        "size": 8118
+      },
+      {
+        "path": "docs/plans/cli-main-executiondeps-refactor.md",
+        "reason": "file-budget",
+        "size": 10528
+      },
+      {
+        "path": "docs/plans/codebase-index-refactor.md",
+        "reason": "file-budget",
+        "size": 22230
+      },
+      {
+        "path": "docs/plans/eternal-autonomy-fake-timer-refactor.md",
+        "reason": "file-budget",
+        "size": 5756
+      },
+      {
+        "path": "docs/plans/hq-command-center-2026-06.md",
+        "reason": "file-budget",
+        "size": 39612
+      },
+      {
+        "path": "docs/plans/hq-command-center-2026-07.md",
+        "reason": "file-budget",
+        "size": 8226
+      },
+      {
+        "path": "docs/plans/hq-evolution-2026-08.md",
+        "reason": "file-budget",
+        "size": 56738
+      },
+      {
+        "path": "docs/plans/hq-improvements-2026-09.md",
+        "reason": "file-budget",
+        "size": 18033
+      },
+      {
+        "path": "docs/plans/hq-ws-reconnection.md",
+        "reason": "file-budget",
+        "size": 5444
+      },
+      {
+        "path": "docs/plans/phased-development-plan-2026-07.md",
+        "reason": "file-budget",
+        "size": 18779
+      },
+      {
+        "path": "docs/plans/sage-architecture.md",
+        "reason": "file-budget",
+        "size": 18024
+      },
+      {
+        "path": "docs/plans/security-hardening-2026-06.md",
+        "reason": "file-budget",
+        "size": 15910
+      },
+      {
+        "path": "docs/plans/security-scanner-refactor-plan.md",
+        "reason": "file-budget",
+        "size": 31958
+      },
+      {
+        "path": "docs/plans/session-catalog-project-service-2026-08.md",
+        "reason": "file-budget",
+        "size": 60744
+      },
+      {
+        "path": "docs/plans/techstack-refactor-plan.md",
+        "reason": "file-budget",
+        "size": 26328
+      },
+      {
+        "path": "docs/plans/test-coverage-100-2026-08.md",
+        "reason": "file-budget",
+        "size": 10107
+      },
+      {
+        "path": "docs/plans/webui-operator-workbench-2026-07.md",
+        "reason": "file-budget",
+        "size": 14580
+      },
+      {
+        "path": "docs/reports/agent-learning-rl-analysis.md",
+        "reason": "file-budget",
+        "size": 21095
+      },
+      {
+        "path": "docs/reports/architecture-health-current.md",
+        "reason": "file-budget",
+        "size": 11694
+      },
+      {
+        "path": "docs/reports/coverage-matrix-2026-08-29.md",
+        "reason": "file-budget",
+        "size": 2818
+      },
+      {
+        "path": "docs/reports/modularity-assessment-2026-08-22.md",
+        "reason": "file-budget",
+        "size": 24369
+      },
+      {
+        "path": "docs/reports/prompt-cache-architecture-review-2026-08-13.md",
+        "reason": "file-budget",
+        "size": 17510
+      },
+      {
+        "path": "docs/reports/vibe-protocol-architecture-2026-08-15.md",
+        "reason": "file-budget",
+        "size": 8640
+      },
+      {
+        "path": "docs/research/sage-memory-investigation.md",
+        "reason": "file-budget",
+        "size": 15566
+      },
+      {
+        "path": "docs/sage/MEMORY-PIPELINE.md",
+        "reason": "file-budget",
+        "size": 19901
+      },
+      {
+        "path": "docs/sage/REFACTOR-REPORT.md",
+        "reason": "file-budget",
+        "size": 29167
+      },
+      {
+        "path": "docs/sage/SYSTEM-REPORT.md",
+        "reason": "file-budget",
+        "size": 42315
+      },
+      {
+        "path": "docs/slash/acp.md",
+        "reason": "file-budget",
+        "size": 4912
+      },
+      {
+        "path": "docs/slash/agent-improve.md",
+        "reason": "file-budget",
+        "size": 21398
+      },
+      {
+        "path": "docs/slash/app-surfaces.md",
+        "reason": "file-budget",
+        "size": 1002
+      },
+      {
+        "path": "docs/slash/audit.md",
+        "reason": "file-budget",
+        "size": 1249
+      },
+      {
+        "path": "docs/slash/auth.md",
+        "reason": "file-budget",
+        "size": 4618
+      },
+      {
+        "path": "docs/slash/auto-review.md",
+        "reason": "file-budget",
+        "size": 5710
+      },
+      {
+        "path": "docs/slash/autonomy.md",
+        "reason": "file-budget",
+        "size": 5822
+      },
+      {
+        "path": "docs/slash/brain.md",
+        "reason": "file-budget",
+        "size": 10956
+      },
+      {
+        "path": "docs/slash/btw.md",
+        "reason": "file-budget",
+        "size": 3333
+      },
+      {
+        "path": "docs/slash/chimera.md",
+        "reason": "file-budget",
+        "size": 4798
+      },
+      {
+        "path": "docs/slash/clear.md",
+        "reason": "file-budget",
+        "size": 1111
+      },
+      {
+        "path": "docs/slash/codebase-map.md",
+        "reason": "file-budget",
+        "size": 10031
+      },
+      {
+        "path": "docs/slash/codebase-reindex.md",
+        "reason": "file-budget",
+        "size": 2100
+      },
+      {
+        "path": "docs/slash/collab.md",
+        "reason": "file-budget",
+        "size": 974
+      },
+      {
+        "path": "docs/slash/compact.md",
+        "reason": "file-budget",
+        "size": 1193
+      },
+      {
+        "path": "docs/slash/context.md",
+        "reason": "file-budget",
+        "size": 4220
+      },
+      {
+        "path": "docs/slash/coordinator.md",
+        "reason": "file-budget",
+        "size": 1978
+      },
+      {
+        "path": "docs/slash/delegate.md",
+        "reason": "file-budget",
+        "size": 4355
+      },
+      {
+        "path": "docs/slash/dev.md",
+        "reason": "file-budget",
+        "size": 1759
+      }
+    ],
+    "omitted_count": 376,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 8936,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 382,
+      "complete": false,
+      "omitted": 376,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_05fc16737ebb5aceaa3b875cfdf8b1d0",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/wrongstack/wrongstack/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/c8dee8173236ea4b/manifest.json",
+  "package_id": "pkg_6d42e26ca28e72f2d742bf0073b9ff401d364ab933cccbb30e18f19fd7b602af",
+  "repo": "wrongstack/wrongstack",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "68333d27a064eff81e1c2e145e87e461fb4a88bef9f8d47dfb46f7b5f103dbd1",
+  "snapshot_id": "c8dee8173236ea4b",
+  "sources": [
+    {
+      "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+      "git_sha": "dafd67658951e77035e9dcc55947b8263210161a",
+      "lines": 594,
+      "path": "README.md",
+      "repository": "wrongstack/wrongstack",
+      "sha256": "ad4d02a2358ddf9587c5dbf4a81028ae92a4ab8bad9fa184b250f0e9dae2faa6",
+      "source_id": "src_0997037ff50456c081ada722fa7b5b74",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/README.md"
+    },
+    {
+      "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+      "git_sha": "e9c02071a250c940650dbaafe6f9ea6d48aa97a3",
+      "lines": 391,
+      "path": "docs/architecture.md",
+      "repository": "wrongstack/wrongstack",
+      "sha256": "0404ea056ba9f3755c0077eeac35d5fdb126605511a573966bbe2812710bcc0e",
+      "source_id": "src_7b5eee5cb47356a292d943be7701708b",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/architecture.md"
+    },
+    {
+      "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+      "git_sha": "8b9c41bfe1e0313d41d29ef60e1e6f65a48a8256",
+      "lines": 769,
+      "path": "docs/sage/ARCHITECTURE.md",
+      "repository": "wrongstack/wrongstack",
+      "sha256": "71d7ca06288cce11b8625f34c88f5ea1d14f1a5080385906ebda973c23e3b70d",
+      "source_id": "src_4988648b754d55a784a667532faf7b25",
+      "stored": "architecture.md-38b1a2bd8121.md",
+      "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/sage/ARCHITECTURE.md"
+    },
+    {
+      "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+      "git_sha": "8b2c8dba62750d401aad7456ebe6d5ca0a1e91ac",
+      "lines": 398,
+      "path": "docs/skills.md",
+      "repository": "wrongstack/wrongstack",
+      "sha256": "5e6a89b09e11f817757cc96fc471e451d32b526ca3df3c1caf931113c1bea27a",
+      "source_id": "src_7ba2fee65c445834aed8b67891fa4d4e",
+      "stored": "skills.md-51de9fdbdeb1.md",
+      "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/skills.md"
+    },
+    {
+      "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+      "git_sha": "2610ff288f55e882e46c6b7af5a652b2fdaab9a5",
+      "lines": 129,
+      "path": "docs/slash/design.md",
+      "repository": "wrongstack/wrongstack",
+      "sha256": "7eebc2770633da6e1582e9681b6ff5a51ba20c0ee0e7f584a48e059bd54b47b7",
+      "source_id": "src_54b1a96fe2fe5b358bdd3c89aaca7f46",
+      "stored": "design.md-ac681a029bc3.md",
+      "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/slash/design.md"
+    },
+    {
+      "commit": "fdbf2c0268c63bbcb6975010f8bbaf92ab13e479",
+      "git_sha": "545cf5fb5720649fdcedeae52e2a7999823ecc07",
+      "lines": 66,
+      "path": "docs/slash/memory.md",
+      "repository": "wrongstack/wrongstack",
+      "sha256": "5a4cb9adf4b2ab5698969c3c055abc19d04dfc7902b9cd627f781b90cb854043",
+      "source_id": "src_35947d845ed053e79b3d78688f320024",
+      "stored": "memory.md-0b5e5ae2ceac.md",
+      "url": "https://github.com/WrongStack/WrongStack/blob/fdbf2c0268c63bbcb6975010f8bbaf92ab13e479/docs/slash/memory.md"
+    }
+  ],
+  "summary": "README and architecture docs describe WrongStack as a from-scratch, MIT-licensed TypeScript AI coding agent with a four-primitive kernel, six UI surfaces, SAGE SQLite/FTS5 memory, a Director-led multi-agent fleet, per-tool permission policy, and a benchmark harness package. Evidence is documentation-based; no source code slices are present. Evidence coverage: 123 of 367 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

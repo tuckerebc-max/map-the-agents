@@ -1,0 +1,783 @@
+{
+  "applied_operation_id": "op_864fa068de6240818236c4f18c879d42",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3d9ea9a6cd9fe3e4e74e73c7d279d62309a14699c7897b976885c67a4245213",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "ee818dcaa45da1fdb49243025b60b4d5fe29b1f5",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "docs/installation.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/installation.md#L13-L13"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "ee818dcaa45da1fdb49243025b60b4d5fe29b1f5",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "docs/installation.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/installation.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66cf00415949ea683a5a064498732b7fa75fdac6da57a7e18efea03715df4be0",
+        "slc_b54cff0e59de4af56895ad76ed56bc41d79a3dafbe7f74ed02cacfa2779e6aef"
+      ],
+      "text": "Sweep is invoked from GitHub by titling an issue with a 'Sweep: ' prefix or by adding the Sweep label to an existing issue or PR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_981faf4e4ac6c4757410ea7d5d889806321539f9bfca6f8c15eae3df5ee8cd91",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "fdcee90482a132e44a11bb8e3f918aac7d6a4bd3",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/extension-post-install.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/extension-post-install.md#L5-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_add85863e90a656614a1b9afc78f9c5e2a0b6943174bb19b49a6cec019d99cb6"
+      ],
+      "text": "A browser extension lets users create a Sweep issue from a repository page via a purple 'Make Sweep issue' button or ctrl-enter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87d6f46280444c64c484e474c34a3cafde30b29dc8cadc3e1c7e355f7642348f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L3-L3"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_438471760c8c5a78eb2153a32037e6fab3e1b9bf05d5337fe89f837087a3f915",
+        "slc_9267ea3b12ebdd8037f417beff12be1603448166fb891d5fbce5178395b83b1c"
+      ],
+      "text": "Sweep is configured through a sweep.yaml file placed in the repository root, and Sweep can open a PR adding that config file after the first issue."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d97216d1dd68b61fa06a0d1d5ee7ecbfd8d2909a479c2f0e1e100bf92a09bc68",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 63,
+          "line_start": 60,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L60-L63"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 77,
+          "line_start": 74,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L74-L77"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 57,
+          "line_start": 54,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L54-L57"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 41,
+          "line_start": 35,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L35-L41"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L71-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53b41fa91c9732e7baac88f7dfbc86658d867615db809f9a9d6ef68878fa47b3",
+        "slc_60ec85ddb5754e7d0ae61345fec40750b38758a9688b5d2b07d5d7e2e9787623",
+        "slc_842bd3924b3345483f8512a3c7aea00fc4ca238c941c3e3989325149834ead40",
+        "slc_b1ed27dfce48e4ddccfc0fc099827b9d67a3c51b21c23c561cae781ee2c9d74e",
+        "slc_c77e1a8f95a8259d0ad0dc2ca988a611efcc188e7f1a4d6d98b09ab634322421"
+      ],
+      "text": "The sweep.yaml config supports keys gha_enabled, branch, blocked_dirs, draft, and description, controlling GitHub Actions reading, target branch, excluded directories, draft PRs, and repo context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59e6a2953b2025f067819b07959a163447c9c670c2aaefceb97e88044a9f4860",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 63,
+          "line_start": 60,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L60-L63"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 30,
+          "line_start": 29,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L29-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53b41fa91c9732e7baac88f7dfbc86658d867615db809f9a9d6ef68878fa47b3",
+        "slc_f715f4568fced25504c37890f873ff449d086a98cc0592085463668c86398269"
+      ],
+      "text": "The blocked_dirs setting lists directories Sweep will not edit, e.g. .github/, restricting its write access within a repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b89cb351da0d7fd4344434d8b81ada1f14a922c4efa1822d6399c8a92d93788c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L26-L26"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L71-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e5644f16e22505180c2143943592b6a42f659246c20b554d7ab1e81a7186f1b",
+        "slc_c77e1a8f95a8259d0ad0dc2ca988a611efcc188e7f1a4d6d98b09ab634322421"
+      ],
+      "text": "When draft mode is enabled, all pull requests are created as drafts and GitHub Actions are not triggered for them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0819eb7020fb14be456ce1284b0ccb9b6f9305f7e4593a98c855f8df64fdadbf",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L17-L17"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_763ff64b64a71c8fdc4be4ff6749fbc0c30f96dd0c2ae7f31a608c546d1335d1",
+        "slc_94e23ceee8ff498f2955990f68544f6ca07b60908cc951ae6c1f2ab9a63ec09c"
+      ],
+      "text": "By default Sweep reads logs and outputs from the repository's existing GitHub Actions runs; gha_enabled: False disables this."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_94979290ff5f027d97b614993fece62d5061e2afc3c484d232fe3c111644f1c1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "ee818dcaa45da1fdb49243025b60b4d5fe29b1f5",
+          "line_end": 62,
+          "line_start": 61,
+          "path": "docs/installation.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/installation.md#L61-L62"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "ee818dcaa45da1fdb49243025b60b4d5fe29b1f5",
+          "line_end": 59,
+          "line_start": 58,
+          "path": "docs/installation.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/installation.md#L58-L59"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "ee818dcaa45da1fdb49243025b60b4d5fe29b1f5",
+          "line_end": 56,
+          "line_start": 55,
+          "path": "docs/installation.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/installation.md#L55-L56"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "ee818dcaa45da1fdb49243025b60b4d5fe29b1f5",
+          "line_end": 65,
+          "line_start": 64,
+          "path": "docs/installation.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/installation.md#L64-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_673520e35f9cbdbf3865d6803ad48f21963cd5c019cb4222ccb279cb3c35e52f",
+        "slc_9509153e254cd72444846d892ae26b1791e849a8a07ff85a7f3a16c53b3cdf36",
+        "slc_c0c375be8445ef58ed5adac391d8b7c7614d8beb5207185f42d030ff28866506",
+        "slc_c6cc787fa76f7be809962917619d554c35bb2c5cfe8ceb167f5765b718e58a1a"
+      ],
+      "text": "Documented limitations include repos over 5000 files, large refactors beyond 5 files or 300 changed lines, editing images/non-text assets, and accessing external APIs or fetching tokens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1115bd2a6c72aca659cafa27940cbf4cacacc2ceadff376c4017b34b79f7d6b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+          "line_end": 90,
+          "line_start": 84,
+          "path": "docs/pages/usage/config.mdx",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx#L84-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62c40c0467931854ccb1a6ce218186b3c0e99a25ba29a9a8b311a61b4ca21508"
+      ],
+      "text": "Repository development practice: the project's own sweep.yaml description instructs that sweepai/sweep is a Python 3.10 project with main API endpoints in sweepai/api.py and that code should adhere to PEP8."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b2051dd99a975751d363ca7d5ed6eb7c2748764940074f0453410a27889a65a",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "59d7601a7b72b3d0d6affa866db9213aa8745dc9",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/README.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea0f92f99192510d1f7cd62753c7b2b749bee4732e6f84d57a7806f443fa7542"
+      ],
+      "text": "The README states the team is now building an AI coding assistant for JetBrains, available as a plugin, and thanks users for support of Sweep."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2cac8dca2e17d02754e8714a055336499d283c65596622727dd39fa1b7bbbb49",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "8881f87b29db6f0a33c919fdfcf02f5c5da868aa",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/README.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/README.md#L3-L3"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "8881f87b29db6f0a33c919fdfcf02f5c5da868aa",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/README.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/README.md#L17-L17"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "8881f87b29db6f0a33c919fdfcf02f5c5da868aa",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/README.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/README.md#L19-L19"
+        },
+        {
+          "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+          "git_sha": "8881f87b29db6f0a33c919fdfcf02f5c5da868aa",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "docs/README.md",
+          "repository": "sweepai/sweep",
+          "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b509f5e764d4d6667919a4c8847c77078fc7e15a4c2bf69bc8738cb999d4af2",
+        "slc_4c0d064fd04794ddad5ee6afac47b32d2c7355b4dac59720f6715acec0debdd6",
+        "slc_f04649308b9df6e008721bbb422bbf539caa075e7bbb9cd87a063393623217b6",
+        "slc_fc125c5552bc984cae6da279f461cb80bc6cb15cf20e4649157348f05f8aeb99"
+      ],
+      "text": "Repository development practice: the docs directory is a Nextra documentation template, installed with pnpm i and run locally with pnpm dev on localhost:3000, deployable to Vercel."
+    }
+  ],
+  "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 5,
+        "path": "README.md",
+        "size": 245
+      },
+      {
+        "lines": 90,
+        "path": "docs/pages/usage/config.mdx",
+        "size": 3585
+      },
+      {
+        "lines": 672,
+        "path": "requirements.txt",
+        "size": 12023
+      },
+      {
+        "lines": 9,
+        "path": "docs/extension-post-install.md",
+        "size": 326
+      },
+      {
+        "lines": 90,
+        "path": "docs/installation.md",
+        "size": 4393
+      },
+      {
+        "lines": 23,
+        "path": "docs/README.md",
+        "size": 692
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/Recipes.md",
+        "reason": "file-budget",
+        "size": 1418
+      },
+      {
+        "path": "docs/pages/cli.mdx",
+        "reason": "file-budget",
+        "size": 3922
+      },
+      {
+        "path": "docs/pages/deployment.mdx",
+        "reason": "file-budget",
+        "size": 5972
+      },
+      {
+        "path": "docs/pages/faq.mdx",
+        "reason": "file-budget",
+        "size": 8374
+      },
+      {
+        "path": "docs/pages/getting-started.md",
+        "reason": "file-budget",
+        "size": 4191
+      },
+      {
+        "path": "docs/pages/index.mdx",
+        "reason": "file-budget",
+        "size": 4975
+      },
+      {
+        "path": "docs/pages/privacy.mdx",
+        "reason": "file-budget",
+        "size": 3602
+      },
+      {
+        "path": "docs/sdk/README.md",
+        "reason": "file-budget",
+        "size": 46
+      },
+      {
+        "path": "docs/pages/about/examples.mdx",
+        "reason": "file-budget",
+        "size": 2314
+      },
+      {
+        "path": "docs/pages/about/limitations.mdx",
+        "reason": "file-budget",
+        "size": 1115
+      },
+      {
+        "path": "docs/pages/about/roadmap.mdx",
+        "reason": "file-budget",
+        "size": 350
+      },
+      {
+        "path": "docs/pages/blogs/ai-code-planning.mdx",
+        "reason": "file-budget",
+        "size": 14743
+      },
+      {
+        "path": "docs/pages/blogs/ai-unit-tests.mdx",
+        "reason": "file-budget",
+        "size": 5470
+      },
+      {
+        "path": "docs/pages/blogs/automate-tech-debt.mdx",
+        "reason": "file-budget",
+        "size": 3627
+      },
+      {
+        "path": "docs/pages/blogs/building-code-search.mdx",
+        "reason": "file-budget",
+        "size": 4911
+      },
+      {
+        "path": "docs/pages/blogs/chunking-2m-files.mdx",
+        "reason": "file-budget",
+        "size": 17811
+      },
+      {
+        "path": "docs/pages/blogs/chunking-improvements.mdx",
+        "reason": "file-budget",
+        "size": 13536
+      },
+      {
+        "path": "docs/pages/blogs/file-cache.mdx",
+        "reason": "file-budget",
+        "size": 8721
+      },
+      {
+        "path": "docs/pages/blogs/generating-50k-embeddings-with-gte.mdx",
+        "reason": "file-budget",
+        "size": 7866
+      },
+      {
+        "path": "docs/pages/blogs/giving-dev-tools.mdx",
+        "reason": "file-budget",
+        "size": 12096
+      },
+      {
+        "path": "docs/pages/blogs/gpt-32k-open-source.mdx",
+        "reason": "file-budget",
+        "size": 1948
+      },
+      {
+        "path": "docs/pages/blogs/gpt-4-modification.mdx",
+        "reason": "file-budget",
+        "size": 21154
+      },
+      {
+        "path": "docs/pages/blogs/index.mdx",
+        "reason": "file-budget",
+        "size": 3157
+      },
+      {
+        "path": "docs/pages/blogs/llm-sdk.mdx",
+        "reason": "file-budget",
+        "size": 3773
+      },
+      {
+        "path": "docs/pages/blogs/openai-proxy.mdx",
+        "reason": "file-budget",
+        "size": 9486
+      },
+      {
+        "path": "docs/pages/blogs/reading-docs.mdx",
+        "reason": "file-budget",
+        "size": 4825
+      },
+      {
+        "path": "docs/pages/blogs/refactor-python.mdx",
+        "reason": "file-budget",
+        "size": 15330
+      },
+      {
+        "path": "docs/pages/blogs/search-infra.mdx",
+        "reason": "file-budget",
+        "size": 3927
+      },
+      {
+        "path": "docs/pages/blogs/soc2.mdx",
+        "reason": "file-budget",
+        "size": 1165
+      },
+      {
+        "path": "docs/pages/blogs/super-linter.mdx",
+        "reason": "file-budget",
+        "size": 11832
+      },
+      {
+        "path": "docs/pages/blogs/sweeps-core-algo.mdx",
+        "reason": "file-budget",
+        "size": 8853
+      },
+      {
+        "path": "docs/pages/blogs/understanding-codebase-with-ctags.mdx",
+        "reason": "file-budget",
+        "size": 2408
+      },
+      {
+        "path": "docs/pages/blogs/vector-db-implementation.mdx",
+        "reason": "file-budget",
+        "size": 7120
+      },
+      {
+        "path": "docs/pages/blogs/zero-downtime-deployment.mdx",
+        "reason": "file-budget",
+        "size": 4366
+      },
+      {
+        "path": "docs/pages/usage/advanced.mdx",
+        "reason": "file-budget",
+        "size": 5230
+      },
+      {
+        "path": "docs/pages/usage/tutorial.mdx",
+        "reason": "file-budget",
+        "size": 3284
+      },
+      {
+        "path": "docs/pages/videos/adding_banner.mdx",
+        "reason": "file-budget",
+        "size": 126
+      },
+      {
+        "path": "docs/pages/videos/adding_walrus.mdx",
+        "reason": "file-budget",
+        "size": 127
+      },
+      {
+        "path": "docs/pages/videos/ai_junior_dev_refactors_itself.mdx",
+        "reason": "file-budget",
+        "size": 128
+      },
+      {
+        "path": "docs/pages/videos/ai_junior_developer_adds_an_easter_egg_to_our_logo.mdx",
+        "reason": "file-budget",
+        "size": 132
+      },
+      {
+        "path": "docs/pages/videos/introducing_sweep.mdx",
+        "reason": "file-budget",
+        "size": 143
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1930
+      }
+    ],
+    "omitted_count": 42,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 527,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 48,
+      "complete": false,
+      "omitted": 42,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_2a8f2b414de852e4b08fb8a1156c77d7",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sweepai/sweep/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/b79cd7b55e35ef74/manifest.json",
+  "package_id": "pkg_533731b2fa45202cda556622b90521f87471acc538510039fbf5335c86b53517",
+  "repo": "sweepai/sweep",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1f899a91120778bfc0211a27af25c78ba3e154f3c99c83e34f4b465f8e0d885d",
+  "snapshot_id": "b79cd7b55e35ef74",
+  "sources": [
+    {
+      "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+      "git_sha": "59d7601a7b72b3d0d6affa866db9213aa8745dc9",
+      "lines": 5,
+      "path": "README.md",
+      "repository": "sweepai/sweep",
+      "sha256": "c49ba722a0a181a6e61e02ba96a6ad11139a0fa6153150e9f2061508454d5f69",
+      "source_id": "src_cfa031e2e2d85b42a91dc12189e4cca9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/README.md"
+    },
+    {
+      "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+      "git_sha": "8881f87b29db6f0a33c919fdfcf02f5c5da868aa",
+      "lines": 23,
+      "path": "docs/README.md",
+      "repository": "sweepai/sweep",
+      "sha256": "e2fd0d179a02f00c9548e5c44167f2faaacdd6c8d674694c324dfecd11b0b945",
+      "source_id": "src_1c2ff02fbf205c988b42940adc888253",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/README.md"
+    },
+    {
+      "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+      "git_sha": "fdcee90482a132e44a11bb8e3f918aac7d6a4bd3",
+      "lines": 9,
+      "path": "docs/extension-post-install.md",
+      "repository": "sweepai/sweep",
+      "sha256": "3678941d11f9437dc902539983aa4864d297357b44b98c961a77f7046ee35c64",
+      "source_id": "src_89332c1113fb56ab9e55d7a07e1fa62f",
+      "stored": "extension-post-install.md-4d4963e10d63.md",
+      "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/extension-post-install.md"
+    },
+    {
+      "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+      "git_sha": "ee818dcaa45da1fdb49243025b60b4d5fe29b1f5",
+      "lines": 90,
+      "path": "docs/installation.md",
+      "repository": "sweepai/sweep",
+      "sha256": "b8c9c7f83b3eefec3e6b79a5ab1c91b8ed614341e44d73a84a92d7fb277189e3",
+      "source_id": "src_5c774046eba45cffaa531eb605c2bd07",
+      "stored": "installation.md-8b042e3f94ca.md",
+      "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/installation.md"
+    },
+    {
+      "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+      "git_sha": "316aa8f88a32037a9e8f52d206dadfba37c26fbd",
+      "lines": 90,
+      "path": "docs/pages/usage/config.mdx",
+      "repository": "sweepai/sweep",
+      "sha256": "5a39f11f8278f09dffc48ed4e46a94e723b873c061a9a22f2d18d28513f0af5c",
+      "source_id": "src_3d8c6ddb76ab57ea9dbe985900dd1d7c",
+      "stored": "config.mdx-23028fc25f9b.txt",
+      "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/docs/pages/usage/config.mdx"
+    },
+    {
+      "commit": "a8b8b67bda4f89faac9314d34e7c7d5a64f76046",
+      "git_sha": "086f68460f975cfc2d9ce92a19a6f673050a5ebe",
+      "lines": 672,
+      "path": "requirements.txt",
+      "repository": "sweepai/sweep",
+      "sha256": "138e145f82e79d033638693232604a0625938f46bd25dc4d5ef54996b272b06d",
+      "source_id": "src_906c8e1761fd5766a53f04d61e02adbe",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/sweepai/sweep/blob/a8b8b67bda4f89faac9314d34e7c7d5a64f76046/requirements.txt"
+    }
+  ],
+  "summary": "Sweep is invoked from GitHub by titling an issue with a 'Sweep: ' prefix or by adding the Sweep label to an existing issue or PR. A browser extension lets users create a Sweep issue from a repository page via a purple 'Make Sweep issue' button or ctrl-enter.",
+  "superseded_claim_ids": []
+}

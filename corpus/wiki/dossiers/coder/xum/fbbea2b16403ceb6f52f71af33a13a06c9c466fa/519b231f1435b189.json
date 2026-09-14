@@ -1,0 +1,1006 @@
+{
+  "applied_operation_id": "op_f2c0ed5113c342dab92b4e5c02ebe0dd",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_79f0bccc15085c6d6f5922e37564e57589feb2e4621790fb300e8edc77649634",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a43acaf6afe6da93eeb57b936d75faaf27386056",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "docs/index.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/index.mdx#L31-L31"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a43acaf6afe6da93eeb57b936d75faaf27386056",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/index.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/index.mdx#L5-L5"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "f5be5bca72d4983bc449124c2f96d6f8c10509bc",
+          "line_end": 34,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/README.md#L25-L34"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a43acaf6afe6da93eeb57b936d75faaf27386056",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "docs/index.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/index.mdx#L33-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_073995d34330122dc04dbabe88013e75676f07f165a6515256b71f3aec9d19b5",
+        "slc_86cefa550c3cbf327e89bcbb5b12bd3b7a0013e461c6118031c3d061572f51b8",
+        "slc_96cbaf79472a431b8b4edb72acd77e902ef54e740b7dbf06a68954e8290ea131",
+        "slc_9865b5bf1e54e468e1f062f2c3f2092e79e3343672dd7b42822aceeac16c7dea"
+      ],
+      "text": "Xum is a coding-agent multiplexer that runs parallel agents, each in its own isolated workspace, with a central view of git divergence; runtimes include local directories, git worktrees, and SSH remote execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c2a446b27271eca602381c34353bdc6498f8f8c2a591069699e668ee42a99ce",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "f5be5bca72d4983bc449124c2f96d6f8c10509bc",
+          "line_end": 34,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/README.md#L25-L34"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a43acaf6afe6da93eeb57b936d75faaf27386056",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "docs/index.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/index.mdx#L33-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96cbaf79472a431b8b4edb72acd77e902ef54e740b7dbf06a68954e8290ea131",
+        "slc_9865b5bf1e54e468e1f062f2c3f2092e79e3343672dd7b42822aceeac16c7dea"
+      ],
+      "text": "The product supports multiple model families (sonnet-4-*, grok-*, gpt-5-*, opus-4-*), with Ollama for local LLMs and OpenRouter for a long tail of providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e69f344286be336ffe7f8c428e1cda6aa1beee7adcc15aa88992ad6ef6ac4c1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L103-L103"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L87-L87"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 95,
+          "line_start": 94,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L94-L95"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L91-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83ff780d9ffa87b6a64f95b926cd1e4bcec965a0601f8ab93a042e4bed17c6b7",
+        "slc_940947787fd91635532e76719d19bcb38978612c05729b53c2176872b89aa129",
+        "slc_c13dd002c41788f15c78b0c05f64fd431bfd5f576a96573d2c0b1363dd0cce01",
+        "slc_d482837eedb865efbdf31861d1f1b629b40d11dd3e8040d2575615f14e684f48"
+      ],
+      "text": "A CLI is available via npm: `npx @coder/xum run \"...\"` runs agent tasks and `npx @coder/xum server --port 3000` starts a server for remote/mobile access; the legacy `mux` package forwards to Xum during the rename transition."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b916462f5c03094e21402d3237f0369b2dcc8baa35f813b05d6538c51c0597ae",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L13-L13"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 172,
+          "line_start": 169,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L169-L172"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L60-L60"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L108-L108"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L33-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b07755c516484dad03e9acdc560d86287c0c668dafa0a33572b496ff42a663a",
+        "slc_9ae44d79a7fc56332b3802844b7ac8488b29236152157c635d0d6c7d67635f5c",
+        "slc_c2391661d6c8692bb7da7dcf32b830ba09eadb43e5aefba0f2170363417e106f",
+        "slc_dc77cf4f93f91321f5c010f2c75aac4a70b851336e0373f561cc6cd518019d9f",
+        "slc_f88e96c89975644bce5d8578d7c92219c7f0d6dc11a5ae1905e17789a43e10f9"
+      ],
+      "text": "Tool hooks let users run their own scripts around tool executions: `.xum/tool_pre` runs before every tool and a non-zero exit blocks the tool with the error shown to the agent; `.xum/tool_post` runs after tools and reports failures via hook_output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8eec0153141ea63c52567e4958c50d9d903eb666b13d3afee02b3790425a16a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 216,
+          "line_start": 216,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L216-L216"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 153,
+          "line_start": 149,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L149-L153"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L155-L155"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 181,
+          "line_start": 180,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L180-L181"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_313dc67fdd33cf12c2bc73d2ea44a76643257bd7237381fd9cab8ed7947c08c6",
+        "slc_6230e3089c4619a65b590c682e1a38b9aa096177cd4bcdb4325fa7c0dac55ac5",
+        "slc_970e7a00c07c749a66106270efc2223933f2beaf1233c8d44f7b01f0e3c9cc36",
+        "slc_fe8d5791f425176325dd983d41051effb8ec989a41761f88801fe5d482b4acbf"
+      ],
+      "text": "Hooks receive environment variables such as XUM_TOOL, XUM_WORKSPACE_ID, and XUM_TOOL_INPUT_PATH; tool input is flattened into XUM_TOOL_INPUT_<...> variables with fields over 8KB omitted, and hooks are looked up first at project level (.xum/) then user level (~/.xum/)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4f60a455fd7c8c3144c118644502e1dd488a051684758cb7c070e05425de8a3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 139,
+          "line_start": 136,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L136-L139"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L120-L120"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 191,
+          "line_start": 191,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L191-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_547e36af1e4695f8fba7969e40481aa0e52ec0a790542ef5593c53f8f1e3e248",
+        "slc_96f6a512d60ad571ce239c3e030905343cee8161b5fe9e85209070c4eea608d5",
+        "slc_e82c3ae20d98f954676b7bdf3ccd58ae809dc661f3382861aab8bcd5a9239cd3"
+      ],
+      "text": "A `.xum/tool_env` file is sourced (not executed) before every bash tool call to configure the shell environment, affecting only bash tools; hooks must finish within 10 seconds or be terminated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ede2b000b3899b1ef050a5e4526d80d4c18de1bc3ee4549498eb6d257d0ccfbc",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 71,
+          "line_start": 68,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L68-L71"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "docs/hooks/tools.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx#L6-L6"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 61,
+          "line_start": 60,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L60-L61"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 16,
+          "line_start": 14,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L14-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bbce693a10b74d5917ee0d508976c16b948641c6b1dbc0e6829e574caa14c5f",
+        "slc_513983cf14cb8ff991e09a04ee2656730f719e9e95243e101f84d7766931dd3d",
+        "slc_a058077d64b2a3046d926a17ddfb6f78adf7188269944d12bfa3e8fad1d345f0",
+        "slc_f847ec7024c2063e5f92f954bf348755286b063007905f988319c7ae5ae9bd67"
+      ],
+      "text": "Windows support is in alpha, requires Git for Windows (WSL is explicitly not supported), and tool hooks are documented as experimental with expected breaking changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae4318a0f2f69f6411a51610b4ba2a514d1bd895e79805c447cb395a68f9dd36",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "f5be5bca72d4983bc449124c2f96d6f8c10509bc",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/README.md#L104-L104"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "a43acaf6afe6da93eeb57b936d75faaf27386056",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "docs/index.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/index.mdx#L48-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7f8eca314032cbcc305262417295ebd64978e21514aebcec28081326cf30d62",
+        "slc_c33448ed88d33106d3c5970c1b7ca2da1ae5247df37839a95b7bed34cb17c8e8"
+      ],
+      "text": "The project is licensed under AGPL-3.0 (version 3 of the GNU Affero General Public License), copyright Coder Technologies, Inc."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f517a82e38908149685dede68a390eb11a6131e7123fbccfd5800f3948f4f8b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "3a39d0c3a55449d4d33ac26932a2f6d29ebf3248",
+          "line_end": 18,
+          "line_start": 16,
+          "path": "docs/README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/README.md#L16-L18"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "3a39d0c3a55449d4d33ac26932a2f6d29ebf3248",
+          "line_end": 12,
+          "line_start": 11,
+          "path": "docs/README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/README.md#L11-L12"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "3a39d0c3a55449d4d33ac26932a2f6d29ebf3248",
+          "line_end": 53,
+          "line_start": 52,
+          "path": "docs/README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/README.md#L52-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_537d94b2f7f399f3fc0ee0a67f4583975cf8b84a26ac0ac6c2fe545b7fc8feed",
+        "slc_989e2acf15f725ae02e2f2e4ca74a0ff5f74c7ae5d9cfb34b30834a1165974fd",
+        "slc_bba2bbc01d9aacd15317a18aca15647e0c84a74d95bb7ace32557971bf1a622b"
+      ],
+      "text": "Repository development practice: docs are built with Mintlify, served locally via `make docs-server`, auto-deployed on push to main, and CI runs `mintlify broken-links` on every PR to validate internal links."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_81ace0a7e8c3b7c7d11b5bd31411a2bf69b207724c032669e198802972f04ed2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "3a39d0c3a55449d4d33ac26932a2f6d29ebf3248",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "docs/README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/README.md#L48-L48"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "45d822d5bcc4b0256f6da31a6b541e3544998bb4",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "docs/STYLE.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/STYLE.md#L7-L11"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "45d822d5bcc4b0256f6da31a6b541e3544998bb4",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/STYLE.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/STYLE.md#L3-L3"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "3a39d0c3a55449d4d33ac26932a2f6d29ebf3248",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "docs/README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/README.md#L32-L35"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "45d822d5bcc4b0256f6da31a6b541e3544998bb4",
+          "line_end": 45,
+          "line_start": 42,
+          "path": "docs/STYLE.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/STYLE.md#L42-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_482bd7766f40fdeb1f91d8eefeee2d952aa1762373e682046694aaf88a667664",
+        "slc_71d9d5011a94c042d72e941924af48b71b876fbc39ad5cfc5f4e10bf1399ffaf",
+        "slc_85a030a64001b214aeaa76112b92b1c49363a673b68439dc47b3b96e788743ed",
+        "slc_cd008c1929341809b03531990e4a7679545a242c38c09a84e08c57bafa2b10c4",
+        "slc_dafc79a939ced151d8157f0024b3f00eee1fb6f105a01a59df218eb23102b3de"
+      ],
+      "text": "Repository development practice: a documentation style guide (STYLE.md) instructs writers to skip obvious or expected behavior, document deviations and complex workflows, and follow conventions for mermaid diagrams; new pages need frontmatter and docs.json navigation entries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93a0a5e055fe399cc563a31d9ebe9418fbed127ead43b62f01fb986d88d55478",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "f5be5bca72d4983bc449124c2f96d6f8c10509bc",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/README.md#L98-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_338dd422feef8273406a5d52213317f781db2fc78e20665ffac2743a35deb5e3"
+      ],
+      "text": "Repository development practice: the README points contributors to AGENTS.md for development setup and guidelines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1015f08e7883bc2517b0f2d8b775ac0aeeba453268062488b79d5fc275a1817",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 78,
+          "line_start": 75,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L75-L78"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L22-L26"
+        },
+        {
+          "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+          "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+          "line_end": 16,
+          "line_start": 14,
+          "path": "docs/install.mdx",
+          "repository": "coder/xum",
+          "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx#L14-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53a54a0ca852f7449379c4be1109aeeb172142b65240ba2a72fdc3be735d970c",
+        "slc_c8ef80cdaa84071d884a955d97c2296abf551ca98b764529e91899adebacd16a",
+        "slc_f847ec7024c2063e5f92f954bf348755286b063007905f988319c7ae5ae9bd67"
+      ],
+      "text": "Release distribution includes signed/notarized macOS DMGs (separate Intel and Apple Silicon builds), a Linux AppImage, and a Windows installer exe; only main-branch builds are signed, so PR builds need Gatekeeper bypass on macOS."
+    }
+  ],
+  "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 106,
+        "path": "README.md",
+        "size": 4678
+      },
+      {
+        "lines": 959,
+        "path": "docs/hooks/tools.mdx",
+        "size": 105524
+      },
+      {
+        "lines": 50,
+        "path": "docs/index.mdx",
+        "size": 1597
+      },
+      {
+        "lines": 105,
+        "path": "docs/install.mdx",
+        "size": 3131
+      },
+      {
+        "lines": 53,
+        "path": "docs/README.md",
+        "size": 1267
+      },
+      {
+        "lines": 55,
+        "path": "docs/STYLE.md",
+        "size": 1963
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/adr/0003-context-boundaries-for-compaction-and-reset.md",
+        "reason": "file-budget",
+        "size": 1711
+      },
+      {
+        "path": "docs/adr/0004-cli-goal-runs-are-not-strict-goal-aliases.md",
+        "reason": "file-budget",
+        "size": 2118
+      },
+      {
+        "path": "docs/adr/0005-token-budget-context-windows.md",
+        "reason": "file-budget",
+        "size": 12731
+      },
+      {
+        "path": "docs/agents/agent-skills.mdx",
+        "reason": "file-budget",
+        "size": 18748
+      },
+      {
+        "path": "docs/agents/best-of-n.mdx",
+        "reason": "file-budget",
+        "size": 1388
+      },
+      {
+        "path": "docs/agents/index.mdx",
+        "reason": "file-budget",
+        "size": 30547
+      },
+      {
+        "path": "docs/agents/instruction-files.mdx",
+        "reason": "file-budget",
+        "size": 7249
+      },
+      {
+        "path": "docs/agents/plan-mode.mdx",
+        "reason": "file-budget",
+        "size": 3787
+      },
+      {
+        "path": "docs/agents/prompting-tips.mdx",
+        "reason": "file-budget",
+        "size": 3085
+      },
+      {
+        "path": "docs/agents/system-prompt.mdx",
+        "reason": "file-budget",
+        "size": 13558
+      },
+      {
+        "path": "docs/config/agentic-git-identity.mdx",
+        "reason": "file-budget",
+        "size": 5708
+      },
+      {
+        "path": "docs/config/keybinds.mdx",
+        "reason": "file-budget",
+        "size": 3216
+      },
+      {
+        "path": "docs/config/mcp-servers.mdx",
+        "reason": "file-budget",
+        "size": 8592
+      },
+      {
+        "path": "docs/config/models.mdx",
+        "reason": "file-budget",
+        "size": 6830
+      },
+      {
+        "path": "docs/config/notifications.mdx",
+        "reason": "file-budget",
+        "size": 3797
+      },
+      {
+        "path": "docs/config/policy-file.mdx",
+        "reason": "file-budget",
+        "size": 4014
+      },
+      {
+        "path": "docs/config/project-secrets.mdx",
+        "reason": "file-budget",
+        "size": 2097
+      },
+      {
+        "path": "docs/config/providers.mdx",
+        "reason": "file-budget",
+        "size": 16933
+      },
+      {
+        "path": "docs/config/server-access.mdx",
+        "reason": "file-budget",
+        "size": 6167
+      },
+      {
+        "path": "docs/config/vim-mode.mdx",
+        "reason": "file-budget",
+        "size": 8699
+      },
+      {
+        "path": "docs/getting-started/mux-gateway.mdx",
+        "reason": "file-budget",
+        "size": 2076
+      },
+      {
+        "path": "docs/getting-started/why-parallelize.mdx",
+        "reason": "file-budget",
+        "size": 843
+      },
+      {
+        "path": "docs/guides/github-actions.mdx",
+        "reason": "file-budget",
+        "size": 5615
+      },
+      {
+        "path": "docs/guides/symbol-shortcuts.mdx",
+        "reason": "file-budget",
+        "size": 3378
+      },
+      {
+        "path": "docs/hooks/environment-variables.mdx",
+        "reason": "file-budget",
+        "size": 2408
+      },
+      {
+        "path": "docs/hooks/init.mdx",
+        "reason": "file-budget",
+        "size": 2477
+      },
+      {
+        "path": "docs/integrations/acp.mdx",
+        "reason": "file-budget",
+        "size": 4526
+      },
+      {
+        "path": "docs/integrations/vscode-extension.mdx",
+        "reason": "file-budget",
+        "size": 2950
+      },
+      {
+        "path": "docs/reference/benchmarking.mdx",
+        "reason": "file-budget",
+        "size": 5766
+      },
+      {
+        "path": "docs/reference/cli.mdx",
+        "reason": "file-budget",
+        "size": 15748
+      },
+      {
+        "path": "docs/reference/debugging.mdx",
+        "reason": "file-budget",
+        "size": 1222
+      },
+      {
+        "path": "docs/reference/mux-compatibility.mdx",
+        "reason": "file-budget",
+        "size": 6505
+      },
+      {
+        "path": "docs/reference/storybook.mdx",
+        "reason": "file-budget",
+        "size": 3220
+      },
+      {
+        "path": "docs/reference/telemetry.mdx",
+        "reason": "file-budget",
+        "size": 2114
+      },
+      {
+        "path": "docs/runtime/coder.mdx",
+        "reason": "file-budget",
+        "size": 2035
+      },
+      {
+        "path": "docs/runtime/devcontainer.mdx",
+        "reason": "file-budget",
+        "size": 2129
+      },
+      {
+        "path": "docs/runtime/docker.mdx",
+        "reason": "file-budget",
+        "size": 1631
+      },
+      {
+        "path": "docs/runtime/index.mdx",
+        "reason": "file-budget",
+        "size": 1601
+      },
+      {
+        "path": "docs/runtime/local.mdx",
+        "reason": "file-budget",
+        "size": 946
+      },
+      {
+        "path": "docs/runtime/ssh.mdx",
+        "reason": "file-budget",
+        "size": 1977
+      },
+      {
+        "path": "docs/runtime/worktree.mdx",
+        "reason": "file-budget",
+        "size": 1766
+      },
+      {
+        "path": "docs/workspaces/fork.mdx",
+        "reason": "file-budget",
+        "size": 1149
+      },
+      {
+        "path": "docs/workspaces/index.mdx",
+        "reason": "file-budget",
+        "size": 2395
+      },
+      {
+        "path": "docs/workspaces/scratch-chats.mdx",
+        "reason": "file-budget",
+        "size": 1433
+      },
+      {
+        "path": "docs/workspaces/xumignore.mdx",
+        "reason": "file-budget",
+        "size": 1672
+      },
+      {
+        "path": "docs/workspaces/compaction/automatic.mdx",
+        "reason": "file-budget",
+        "size": 3055
+      },
+      {
+        "path": "docs/workspaces/compaction/customization.mdx",
+        "reason": "file-budget",
+        "size": 2261
+      },
+      {
+        "path": "docs/workspaces/compaction/index.mdx",
+        "reason": "file-budget",
+        "size": 1701
+      },
+      {
+        "path": "docs/workspaces/compaction/manual.mdx",
+        "reason": "file-budget",
+        "size": 2783
+      },
+      {
+        "path": "docs/workspaces/compaction/token-budget.md",
+        "reason": "file-budget",
+        "size": 6785
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 14
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 14
+      },
+      {
+        "path": "docs/AGENTS.md",
+        "reason": "file-budget",
+        "size": 23014
+      }
+    ],
+    "omitted_count": 53,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3210,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 59,
+      "complete": false,
+      "omitted": 53,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_993f94f8c17c5b34bf61a7d63ac20a41",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 3,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/coder/xum/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/519b231f1435b189/manifest.json",
+  "package_id": "pkg_a9c5d28c8a99e52ff36c719764d18b7aec7bb048cf982888ade718b66c44d461",
+  "repo": "coder/xum",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fd67b37050bfc0c005056613d4c9ac5dd8bbc2f95896cbacd1f8a84f5ca1a259",
+  "snapshot_id": "519b231f1435b189",
+  "sources": [
+    {
+      "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+      "git_sha": "f5be5bca72d4983bc449124c2f96d6f8c10509bc",
+      "lines": 106,
+      "path": "README.md",
+      "repository": "coder/xum",
+      "sha256": "9c3c505bd3b37c6d1c4c4d99e71dd15619bf7824c5d692b497c4e8a1aaccddfa",
+      "source_id": "src_beea4aa40c935a5ea4dd8658dc51ddd9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/README.md"
+    },
+    {
+      "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+      "git_sha": "3a39d0c3a55449d4d33ac26932a2f6d29ebf3248",
+      "lines": 53,
+      "path": "docs/README.md",
+      "repository": "coder/xum",
+      "sha256": "84a92c2239e064e831de1673fc6c27f9370e8e3bd4e1f2b3a3543a3bd4f9c219",
+      "source_id": "src_d4255e70d3245fa3899ec379c2aed3dd",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/README.md"
+    },
+    {
+      "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+      "git_sha": "45d822d5bcc4b0256f6da31a6b541e3544998bb4",
+      "lines": 55,
+      "path": "docs/STYLE.md",
+      "repository": "coder/xum",
+      "sha256": "00cc699d391e6c65e11bae9ae9b1ac4fc80ac6dafc9c2c36e826b485473f9ce9",
+      "source_id": "src_33eb57d139c259aba6d6b5b23925abc5",
+      "stored": "style.md-f9114db88894.md",
+      "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/STYLE.md"
+    },
+    {
+      "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+      "git_sha": "a91b8d08218a717b4e972c51b1b86f61b3144ddc",
+      "lines": 959,
+      "path": "docs/hooks/tools.mdx",
+      "repository": "coder/xum",
+      "sha256": "bf9577f3ab696408135312dae7fd8820bbccdaed7b10de37f33904456d1a0ebc",
+      "source_id": "src_04fd2151e4c35bf2be7a571fd807cb92",
+      "stored": "tools.mdx-7f670e80f3ae.txt",
+      "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/hooks/tools.mdx"
+    },
+    {
+      "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+      "git_sha": "a43acaf6afe6da93eeb57b936d75faaf27386056",
+      "lines": 50,
+      "path": "docs/index.mdx",
+      "repository": "coder/xum",
+      "sha256": "940fb714b18ff63bc6ff279816afd2529a6e5ae38ffa1667e2db8567d08f3fec",
+      "source_id": "src_cba1cb1f801256259be40250d6d30a15",
+      "stored": "index.mdx-135108c7d936.txt",
+      "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/index.mdx"
+    },
+    {
+      "commit": "fbbea2b16403ceb6f52f71af33a13a06c9c466fa",
+      "git_sha": "29e5ea9ac200b66f14da2aca89653be4f6d660a2",
+      "lines": 105,
+      "path": "docs/install.mdx",
+      "repository": "coder/xum",
+      "sha256": "23fc740aa25fcf46fbca76a5621f5a148a04e90696fc13aedf0e8d620006df7b",
+      "source_id": "src_a0fbf653b13452be8a1581109ea7d98a",
+      "stored": "install.mdx-59b8332273b2.txt",
+      "url": "https://github.com/coder/xum/blob/fbbea2b16403ceb6f52f71af33a13a06c9c466fa/docs/install.mdx"
+    }
+  ],
+  "summary": "Evidence covers Xum (formerly Mux), an open-source AGPL-3.0 coding-agent multiplexer with isolated workspaces, multi-model support, tool hooks, and CLI/desktop distribution, plus documentation-development guidance. Most claims are documentation-based; no source code is included in the slices. Evidence coverage: 174 of 333 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

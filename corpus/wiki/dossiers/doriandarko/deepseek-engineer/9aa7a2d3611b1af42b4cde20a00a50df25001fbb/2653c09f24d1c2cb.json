@@ -1,0 +1,468 @@
+{
+  "applied_operation_id": "op_476ec107a04b4d75b4ac52691891eccb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9018ebaf615f3d694de988564c4036e3d225d0747f5ee6edab34e9ad5ee4df2d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84853c118112c6498cf8e7ad3cf22d040060bf37fc6215f82ef23b0efb65d61c"
+      ],
+      "text": "The product is an interactive terminal coding assistant integrating DeepSeek reasoning models, offering file operations, code analysis, and assistance via natural conversation and function calling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ebeef8cb079b3e5094b22e8563fe21bbce0e7e2d0f87f1ac74c0036b9e03e320",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L64-L64"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 62,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L60-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4398a4f7d45a045472a71b075622075fa8772d2280c1034f2ea26fd552738b16",
+        "slc_bc42a02cad1a89cc4ea1ab12ef057bbf74f812f5d16059ba765c833c98be6f78"
+      ],
+      "text": "An /add command lets users preload a single file or an entire directory (with smart filtering) into conversation context, complementing the AI's automatic file reading."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d719611548e97507af863eb63b7345df2535ce2844445e091bc489b84fc8f8e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L9-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b253c2836f8c643b89d5b1c7d470cdefe512cb2540b78b513666dd961d643329"
+      ],
+      "text": "Version 2.0 replaced structured JSON output with native function calling, citing natural conversation, automatic file operations, visible chain-of-thought reasoning, and better error handling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f69c99bfb54e2748ec1d192cd6938fed6f98d631fc92a2a01db1261118dae131",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 184,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L181-L184"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b145084ba28e7a7b88c800672cfc5ac7b5bed5bee9880e22494af3cd3f0030ca"
+      ],
+      "text": "The architecture streams three channels (reasoning, content, tool_calls), executes tools in real time during streaming, and automatically follows up after tool completion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc45547fad417bdf6267a9bfe966031549c2ad51c5e6eb3a05227b051f309765",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 192,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L189-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_905a5dad77c32c7eaaab672460d1907efe2076d63f71383a1267581823482bb7"
+      ],
+      "text": "Context management includes automatic file detection from user messages, conversation cleanup to prevent token overflow, and file content preservation across history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43536b8aa7915a83c820323539f577462ae87d81b00d35f279ef3cfd4dcb35fa",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 76,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L73-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_977d822395bfafaebf96c08946d7f44358c90f89d6decb99448de6f6e077e206"
+      ],
+      "text": "Documented safety constraints include path normalization and validation, directory traversal protection, a 5MB per-file size limit, and binary file detection and exclusion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eecabb6f369aa66ce410267c0bc161692dcdde771473aa18ac54c99cb7237ae7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "fd3a3a4e53ba6e9d81c763db5087f1cb16ab4240",
+          "line_end": 5,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/requirements.txt#L1-L5"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 82,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L81-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_585affc68d3aa9e04e552c70589f1aec9195068b0ebd2fd88d685fe319fdf1ca",
+        "slc_69fe6c5aaaa725c52262771e88a38c1e5ed81d6f9bf8d3732b0e9fb03361a102"
+      ],
+      "text": "requirements.txt lists openai, pydantic, python-dotenv, rich, and prompt_toolkit; the README states Python 3.11+ is required for optimal performance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_124900f3f00d2970d83b13989bd7708f49f0ac731879f2417617b915d0cd354a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 231,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L230-L231"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 82,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L81-L82"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 96,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L92-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ca3cde55d54e9149d2723cdb9b46a7f07566459f751da1f75a38c1bfad53066",
+        "slc_69fe6c5aaaa725c52262771e88a38c1e5ed81d6f9bf8d3732b0e9fb03361a102",
+        "slc_ecb3e0900908cd6e4670f2dd1c76c4d8da33b093f49bfc5c074f7bdc56b599ee"
+      ],
+      "text": "The tool requires a DeepSeek API key, configured via a DEEPSEEK_API_KEY entry in a .env file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc8356b39eeaca8bbde504b8228cd4e5bb38b69b9701a28f98dbbe0f25aa9c9d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 263,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L258-L263"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 253,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L248-L253"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 110,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L106-L110"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 104,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L100-L104"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 90,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L86-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c4035fa17be2a65d796a2f82365e9f4a8305b068fba5ca3bb6ac479b5d0d02a",
+        "slc_851a7ddb6be152aa7f49d675b7c7e7d9a4f0bad09635996b922b184d5c7b766b",
+        "slc_9250157421c908569912c0b1165ea62cd755a78b06a5160babf73eb0589d35b3",
+        "slc_c8e7c1a9c9a27552f20ceea423a5b81765bae9b6f1dbd1af6e9b330832fbb383",
+        "slc_f79d7446a037098104b89f10a42def38b0db8fe093320767540a8a7a58cb61d1"
+      ],
+      "text": "Repository development practice: setup is via git clone, uv venv/uv sync (or pip install -r requirements.txt), and running deepseek-eng.py with uv run or python3."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ef55058eaa5af441283f0aa7ce56f72037b415fee3605f5f858efeb0e0bdfeb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 269,
+          "line_start": 269,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L269-L269"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 245,
+          "line_start": 245,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L245-L245"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0da61cf8350c2ec1a6f2bc0c029a10faccb95e690387f94efb6d94731953f41f",
+        "slc_736ce2a59d2e76965ef317546edf40d1b8c24d6cdfa2a8bfe63b16a9cc226ba8"
+      ],
+      "text": "Repository development practice: the project is described as experimental, showcasing DeepSeek reasoning model capabilities, with contributions welcome."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71d27dbda41d22032771baf9f574d618039ffae7ce5e285eb3e22374d4fc1cdb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+          "line_end": 70,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md#L67-L70"
+        },
+        {
+          "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+          "git_sha": "fd3a3a4e53ba6e9d81c763db5087f1cb16ab4240",
+          "line_end": 5,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "doriandarko/deepseek-engineer",
+          "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/requirements.txt#L1-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06dd5b16b4ef2b5a5c293637504e1b3c36f83c8aebd202d1220bf6c12186d122",
+        "slc_585affc68d3aa9e04e552c70589f1aec9195068b0ebd2fd88d685fe319fdf1ca"
+      ],
+      "text": "The rich and prompt_toolkit dependencies suggest the color-coded, streaming terminal UI described in the README is likely built on those libraries."
+    }
+  ],
+  "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 274,
+        "path": "README.md",
+        "size": 9095
+      },
+      {
+        "lines": 5,
+        "path": "requirements.txt",
+        "size": 50
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 10,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_c085e48b7f645a93930c4fc09989ca0b",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/doriandarko/deepseek-engineer/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/2653c09f24d1c2cb/manifest.json",
+  "package_id": "pkg_69ef6e63666653aae7862f8f4faee841d17c1d3341c0502a7e8328ab51216d3c",
+  "repo": "doriandarko/deepseek-engineer",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7b6f42974fa95ed4fba0eca054ca41f53ef8eebd952838263bed88d202f4c7e9",
+  "snapshot_id": "2653c09f24d1c2cb",
+  "sources": [
+    {
+      "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+      "git_sha": "6916846cd47eee31ee4512955e0a878955cc1ada",
+      "lines": 274,
+      "path": "README.md",
+      "repository": "doriandarko/deepseek-engineer",
+      "sha256": "6124285038274ff990e2959d4df6947fa601be6ba4e5c8df27c4d67ca66418d3",
+      "source_id": "src_64b1511ef2e3545ca9cb7962adaf7658",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/README.md"
+    },
+    {
+      "commit": "9aa7a2d3611b1af42b4cde20a00a50df25001fbb",
+      "git_sha": "fd3a3a4e53ba6e9d81c763db5087f1cb16ab4240",
+      "lines": 5,
+      "path": "requirements.txt",
+      "repository": "doriandarko/deepseek-engineer",
+      "sha256": "a2874249a0e03b37e9b3fd8d4b0a65cbeed9f0634bcd82a3e6e36da54bbb2fec",
+      "source_id": "src_e36afeab343e592284f15254c3716046",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/Doriandarko/deepseek-engineer/blob/9aa7a2d3611b1af42b4cde20a00a50df25001fbb/requirements.txt"
+    }
+  ],
+  "summary": "Selected evidence records: The product is an interactive terminal coding assistant integrating DeepSeek reasoning models, offering file operations, code analysis, and assistance via natural conversation and function calling. An /add command lets users preload a single file or an entire directory (with smart filtering) into conversation context, complementing the AI's automatic file reading.",
+  "superseded_claim_ids": []
+}

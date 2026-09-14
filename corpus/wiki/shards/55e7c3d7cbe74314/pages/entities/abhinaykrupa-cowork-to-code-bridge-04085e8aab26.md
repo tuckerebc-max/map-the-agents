@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_376fd5eb169bc1d4fca22bd22367d440b66e36109077b5ae68d94f9853569cb9
+- clm_6b14ee9355faf61670896ab1827815e6130cc0142329fab1639f558b0f17349b
+- clm_7b99b2a3dfcfa7fc57761246e3d61e7cab499a93796f8ce0d730be757c07125e
+- clm_900008f83860e7140c0523c1e44171aa54bd63f4fcac8edf8e28dc53a778cf59
+- clm_97cfa7fffdce031793ff195f1acb436c544378e67b24b0054b7c3c764c699333
+- clm_9d255167431975fb19ea5cc72fe1ffad59481027c992c72c325c9f6969bc0a42
+- clm_9e9dae7fab30ab30bd3389c00ce2bf90e33f4a20ddd2d960156a53835b4c4fec
+- clm_a05a1bb40017e0e916c4fd45a07d5af7f297a2ac6503fbdd3b6b942902639302
+- clm_bf9bc3f02a084af72fac83d5a60cead846f3680d5db5f7e6576c4c9aafeda890
+- clm_d2327702b88d5770b2b69066915796c49166159505b04e15df259947b883044e
+- clm_dfa3b744169701f85a8c7d58baa4fc47a03dfc8c14574f92ac8e352dda71d875
+maturity: draft
+page_id: pg_11e44c089f265a5897c304085e8aab26
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: abhinaykrupa/cowork-to-code-bridge
+updated_at: '2026-09-14T03:31:07Z'
+---
+
+# abhinaykrupa/cowork-to-code-bridge
+
+<!-- rcw:begin owner=entity:ent_f71e517ac6825b8c9bf6dc488a28a352 block=evidence -->
+- abhinaykrupa/cowork-to-code-bridge is mentioned in this evidence. [@claim:clm_376fd5eb169bc1d4fca22bd22367d440b66e36109077b5ae68d94f9853569cb9] [@claim:clm_6b14ee9355faf61670896ab1827815e6130cc0142329fab1639f558b0f17349b] [@claim:clm_7b99b2a3dfcfa7fc57761246e3d61e7cab499a93796f8ce0d730be757c07125e] [@claim:clm_900008f83860e7140c0523c1e44171aa54bd63f4fcac8edf8e28dc53a778cf59] [@claim:clm_97cfa7fffdce031793ff195f1acb436c544378e67b24b0054b7c3c764c699333] [@claim:clm_9d255167431975fb19ea5cc72fe1ffad59481027c992c72c325c9f6969bc0a42] [@claim:clm_9e9dae7fab30ab30bd3389c00ce2bf90e33f4a20ddd2d960156a53835b4c4fec] [@claim:clm_a05a1bb40017e0e916c4fd45a07d5af7f297a2ac6503fbdd3b6b942902639302] [@claim:clm_bf9bc3f02a084af72fac83d5a60cead846f3680d5db5f7e6576c4c9aafeda890] [@claim:clm_d2327702b88d5770b2b69066915796c49166159505b04e15df259947b883044e] [@claim:clm_dfa3b744169701f85a8c7d58baa4fc47a03dfc8c14574f92ac8e352dda71d875]
+<!-- rcw:end owner=entity:ent_f71e517ac6825b8c9bf6dc488a28a352 block=evidence -->
+
+## Researcher notes
+

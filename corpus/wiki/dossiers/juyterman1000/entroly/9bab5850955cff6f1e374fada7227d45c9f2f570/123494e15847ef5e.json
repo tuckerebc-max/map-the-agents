@@ -1,0 +1,1384 @@
+{
+  "applied_operation_id": "op_da330bd541454890be1bdf822b64fe91",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd71cf3373611f9938e2b1b7274e650c05672a270262bc71d954c9cecce32122",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 29,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L14-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69e75d37f597319ebe377867a80b22f972423a670b361e8652bfce16fea817d1"
+      ],
+      "text": "Entroly is described as a local-first AI token-efficiency and context-assurance layer offering budgeted evidence selection, recoverable compression, content-addressed recovery, and auditable receipts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b1f8534d1555b0ab876b5c01db645fd21d2d954cd029ca2046b45c75c24182ce",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 308,
+          "line_start": 308,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L308-L308"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e8e5d40dc2d9ecb6e9931c40593de07c9ff8adcfd404927c95b4bf458ded274d"
+      ],
+      "text": "The product runs as a CLI, Python/TypeScript SDK, MCP server, HTTP proxy, or library import, per the README's product-surface description."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc7ccbc0df959e45dc347edad8608ea63890a4a67fd8df124293ea2872d20db0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 497,
+          "line_start": 493,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L493-L497"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 233,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L228-L233"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35bfc5b878268868ff3f8539b2cb53dc238600b6922e2229eda1aaa3216a1661",
+        "slc_8d6f887453a8846c6859e69842271842e9e195d1b61de0e6a0400a85aeb810c1"
+      ],
+      "text": "The Python SDK exposes functions such as compress, compress_messages, optimize, shared_memory_write, and shared_memory_search, with budget and query parameters shown in examples."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_948c6ce38f18d2fea7adb5a071c641abd7ea65fcce0475c4b0f1de3d5d1adddd",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "4d9fa636f44b7ed4b782987f0bca9909ecdf58b2",
+          "line_end": 30,
+          "line_start": 22,
+          "path": "docs/architecture.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/docs/architecture.md#L22-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fa71be0f4906684b45fb31e9739ab2ba799df3deba0ae606525a3fd745ad959e"
+      ],
+      "text": "Architecture invariants specify fail-closed behavior only for the security/compliance gate and provider gateway; all other stages fail open by passing the exact original context through unchanged with a receipt warning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fe9aa7c7a429b28933df118f007705dfb45c4fb3fe4fdcdc24ebb10fbdcd8ee",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "4d9fa636f44b7ed4b782987f0bca9909ecdf58b2",
+          "line_end": 30,
+          "line_start": 22,
+          "path": "docs/architecture.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/docs/architecture.md#L22-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fa71be0f4906684b45fb31e9739ab2ba799df3deba0ae606525a3fd745ad959e"
+      ],
+      "text": "The design preserves provider protocol, headers, tools, parameters, ordering, and cache semantics, transforming only injected context and output; model/params/tools are never mutated unless transparent routing is explicitly enabled, and then recorded in the receipt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f945930fdae2c8c9adc72bd9e504837dd99552fa1265daf776f39dd095db2385",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 446,
+          "line_start": 446,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L446-L446"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_53d6715fac910b1329ca5624e508b6868e4d85e3051d984a5bdc9506a1fa42b3"
+      ],
+      "text": "Authorization in the govern subsystem is deny-by-default, and every denial names the policy and reason; identity tokens are unsigned unless ENTROLY_IDENTITY_KEY is set."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a5fea4bd8fa2828ee66c7536c3f72f1f1d98beb770e9abcc73f5ff48b1d8f54",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 77,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L70-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_daf3b47ed4d48e38b6aedb2c99e8aba9d13ceeee5a367789c2edecfcc35a0345"
+      ],
+      "text": "The README lists six research algorithms with named implementation files, including a provenance tracer (Python), and nkbe, causal, cognitive_bus, and resonance modules in a Rust core (entroly-core)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_109c939154c2848f0655334d8e7f4e02f92e7ba418b044de76fe53d1554f0f3a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 143,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L135-L143"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 537,
+          "line_start": 522,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L522-L537"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_103c20fbed1bd5f1801912efd17613e606ac1f84bc359d720cedb68a4d78e6c3",
+        "slc_23a331fbb218e16f87d02eea8cf44a6845a02082c642ee48763cad947bb2a238"
+      ],
+      "text": "A Rust-accelerated engine is available via PyO3 and WASM, and a standalone Rust binary can be built from entroly-core with cargo using the proxy feature."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_acab2812b0ee0d6881c84aeb8ccc6062fc5252a31b1053ffef255cff5d0f61db",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 491,
+          "line_start": 491,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L491-L491"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea5397af93a1aa09b0715a2b95965a013c2be109fad7453096efdec5823d59f1"
+      ],
+      "text": "Cross-agent shared memory is a content-addressed store with SimHash deduplication and BM25 search, letting multiple agents share a knowledge base with provenance tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2747031c25e77111c11080a40941f1a18fcaa0f43bf5a181fa5fd0e03855105a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 501,
+          "line_start": 501,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L501-L501"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67c30e758a973dd66aa64b08581e726c9385aee4bc93a72f53d70ce94f00b3fc"
+      ],
+      "text": "Output token reduction uses a three-layer pipeline: effort classification steers verbosity directives, max_tokens budgets cap generation, and post-generation distillation trims filler."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ea9906cd3d23c004b82d33d2d5e2f584774eb0e71cf86a17f410a8cfa6b8b40",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 386,
+          "line_start": 372,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L372-L386"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 391,
+          "line_start": 388,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L388-L391"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9384cc61c3b801b0d6c9d243e42f4b2b384c316aa3c0b68d79de7773f6c8d650",
+        "slc_d89d5f4b0826685b5683f9af0299dd4e7d3cf08c7553b3c30cf1177678dafed6"
+      ],
+      "text": "The MCP server is configured with environment flags such as ENTROLY_NO_DOCKER, ENTROLY_MCP_PASSIVE, and ENTROLY_MAX_FILES, and the MCP path is provider-neutral across many model vendors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_551e8021d8b300c19859550e0f6a632af04b9a2db97bebc609283a06d515aea7",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L50-L50"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 48,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L41-L48"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d0f9aa2e50be71d0aebe5f251f9fa25124ddad7aec01e18005f65dc7ced9726",
+        "slc_ba55f1c339bb0b691c3dbe323c7a9f4b192bd5446eef18cd893a08cf3e2ba00f",
+        "slc_fa33c91c21cfbe149ce703fdf612fa28d4b7f16472c78ac1e639fed3a11b8d73"
+      ],
+      "text": "Benchmark tables report accuracy retention with gpt-4o-mini and Wilson 95% CIs across NeedleInAHaystack, GSM8K, SQuAD 2.0, MMLU, TruthfulQA, and LongBench, with an average retention of 101.7%."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a9dd57dcc2fb0b74edb57d8e2b922427260680631f908ecb86042c1e7b8bb5f5",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 284,
+          "line_start": 281,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L281-L284"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 279,
+          "line_start": 269,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L269-L279"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15d4f82b0d9c44a4a01477068eec439cb957826f1c6d09d2b8172458ee944cc1",
+        "slc_fe876e56bd6100a1a228ffb92741e6a8dc855340827786ecca9b80fefe614819"
+      ],
+      "text": "The README candidly notes a regression: SQuAD 2.0 accuracy dropped from 80% to 72% with compression, and points users to entroly simulate for their own numbers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e5be4c02de8c9ba323c4fb83989fef0aadc87108d36825666249e0be78525ae7",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 286,
+          "line_start": 286,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L286-L286"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_520f9951b2fb2df8dfb90361017e0602bd5de17f213f5d3e9335d0ebc04d9e41"
+      ],
+      "text": "A WITNESS hallucination detector is reported at 84.92% accuracy and 0.7976 AUROC on 20,000 HaluEval-QA decisions, run locally without an API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e99f0be5ab3cbf2d4c0adff059ffc7308a9a90162d674837e07ef251bb01b3b7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 93,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L90-L93"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 290,
+          "line_start": 290,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L290-L290"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 124,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L112-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c58e9879317453a09f18f2cdcb5347eb9faee867dd84f97183afc0324f8c855",
+        "slc_c3feb1fa2d5dcb3b8892df913e7c93ee74c86e12900a42a63fdba47aa3355e09",
+        "slc_e989463773578f369074d592831dfdc53976c6a0068bb2b8cf72a4e9583ee533"
+      ],
+      "text": "The README states savings are not a universal guarantee, that MCP-only integrations remain tools an agent may skip, and that provider-bound savings exist only when requests traverse an Entroly-controlled route."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6712bf6b8efbdf9f184a2e304f9097b1f6b969f1075b6a640bead1ab0722c00a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 463,
+          "line_start": 459,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L459-L463"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 180,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L174-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21d5220eb2fb52ef5c6dc731a9cbb8fb4cdce09da5d1e28b579f9ac3c059ecf2",
+        "slc_68d8cdd5600c563088b9a71770059aea749ba7359a7d038f330c3f26d92c85d9"
+      ],
+      "text": "If the native engine is missing, Entroly installs it from PyPI before measuring; this self-heal is the only outbound call of these commands and can be disabled with ENTROLY_NO_SELF_HEAL=1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31d31f36e450ceef441b1ec570d3babe5aa2f155f073fd14119d813267ebf1d8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 188,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L185-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f2cffe965d33077f09954fee51cdd854303ce49f9ac0af4b958eec6485ece791"
+      ],
+      "text": "Repository development practice: contributors are directed to a reproducible development setup in CONTRIBUTING.md, and local installation plus the normal test suite need no API key."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_64e412b2c005ef9438889441f89bd7854a1102d5ea15c2b2a9bf018402042fd4",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 417,
+          "line_start": 417,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L417-L417"
+        },
+        {
+          "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+          "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+          "line_end": 419,
+          "line_start": 419,
+          "path": "README.md",
+          "repository": "juyterman1000/entroly",
+          "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md#L419-L419"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_214d672cf6ca113fe8dd513d0956eac1c1749a2921d39fe7cfa2d7fb1a7d8afc",
+        "slc_a3804947bf77bdcf9d7fb45d258928711d68e9f3009cfee9075f2953d34b6cfb"
+      ],
+      "text": "Stated good fits are large repos where agents see few files at a time, chatty multi-turn agents, and evidence-checked answers; tiny repos or prompts already within budget are cases to skip."
+    }
+  ],
+  "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 554,
+        "path": "README.md",
+        "size": 36275
+      },
+      {
+        "lines": 114,
+        "path": "docs/architecture.md",
+        "size": 8024
+      },
+      {
+        "lines": 248,
+        "path": "docs/SKILLS.md",
+        "size": 9154
+      },
+      {
+        "lines": 153,
+        "path": "BENCHMARKS.md",
+        "size": 7895
+      },
+      {
+        "lines": 5,
+        "path": "GEMINI.md",
+        "size": 267
+      },
+      {
+        "lines": 153,
+        "path": "llms.txt",
+        "size": 27901
+      }
+    ],
+    "omitted": [
+      {
+        "path": "PRIVACY.md",
+        "reason": "file-budget",
+        "size": 6556
+      },
+      {
+        "path": "PYPI_README.md",
+        "reason": "file-budget",
+        "size": 5995
+      },
+      {
+        "path": "docs/adoption-evidence.md",
+        "reason": "file-budget",
+        "size": 3819
+      },
+      {
+        "path": "docs/agent-compatibility.md",
+        "reason": "file-budget",
+        "size": 8853
+      },
+      {
+        "path": "docs/agentic-harness-audit.md",
+        "reason": "file-budget",
+        "size": 2881
+      },
+      {
+        "path": "docs/BENCHMARKS.md",
+        "reason": "file-budget",
+        "size": 18242
+      },
+      {
+        "path": "docs/BIPT.md",
+        "reason": "file-budget",
+        "size": 3506
+      },
+      {
+        "path": "docs/cache-aware-control-plane.md",
+        "reason": "file-budget",
+        "size": 4016
+      },
+      {
+        "path": "docs/choosing-context-assurance.md",
+        "reason": "file-budget",
+        "size": 6181
+      },
+      {
+        "path": "docs/code-shell-framework-integrations.md",
+        "reason": "file-budget",
+        "size": 3346
+      },
+      {
+        "path": "docs/compression-proxy.md",
+        "reason": "file-budget",
+        "size": 4763
+      },
+      {
+        "path": "docs/context-commits.md",
+        "reason": "file-budget",
+        "size": 3532
+      },
+      {
+        "path": "docs/context-control-plane.md",
+        "reason": "file-budget",
+        "size": 7124
+      },
+      {
+        "path": "docs/deep-dogfood-coverage.md",
+        "reason": "file-budget",
+        "size": 3463
+      },
+      {
+        "path": "docs/DETAILS.md",
+        "reason": "file-budget",
+        "size": 17952
+      },
+      {
+        "path": "docs/eu-ai-act-article-12-session-logging.md",
+        "reason": "file-budget",
+        "size": 9709
+      },
+      {
+        "path": "docs/first-run-trust.md",
+        "reason": "file-budget",
+        "size": 5352
+      },
+      {
+        "path": "docs/for-teams.md",
+        "reason": "file-budget",
+        "size": 5629
+      },
+      {
+        "path": "docs/gateway-accounting.md",
+        "reason": "file-budget",
+        "size": 4456
+      },
+      {
+        "path": "docs/gateway-provider-boundary.md",
+        "reason": "file-budget",
+        "size": 9835
+      },
+      {
+        "path": "docs/independent-review-program.md",
+        "reason": "file-budget",
+        "size": 5376
+      },
+      {
+        "path": "docs/integration-hub.md",
+        "reason": "file-budget",
+        "size": 8812
+      },
+      {
+        "path": "docs/limitations.md",
+        "reason": "file-budget",
+        "size": 7071
+      },
+      {
+        "path": "docs/live-tokenomics.md",
+        "reason": "file-budget",
+        "size": 5426
+      },
+      {
+        "path": "docs/llms-full.txt",
+        "reason": "file-budget",
+        "size": 18388
+      },
+      {
+        "path": "docs/llms.txt",
+        "reason": "file-budget",
+        "size": 27901
+      },
+      {
+        "path": "docs/lobehub-score-audit.md",
+        "reason": "file-budget",
+        "size": 4674
+      },
+      {
+        "path": "docs/MAINTAINERS.md",
+        "reason": "file-budget",
+        "size": 881
+      },
+      {
+        "path": "docs/memory-ecosystem.md",
+        "reason": "file-budget",
+        "size": 13731
+      },
+      {
+        "path": "docs/memory-fabric.md",
+        "reason": "file-budget",
+        "size": 6619
+      },
+      {
+        "path": "docs/MIGRATION_GUIDE.md",
+        "reason": "file-budget",
+        "size": 3420
+      },
+      {
+        "path": "docs/model-decision-receipts.md",
+        "reason": "file-budget",
+        "size": 2720
+      },
+      {
+        "path": "docs/optimizer-interference-guard.md",
+        "reason": "file-budget",
+        "size": 3131
+      },
+      {
+        "path": "docs/OWNERSHIP_MATRIX.md",
+        "reason": "file-budget",
+        "size": 318606
+      },
+      {
+        "path": "docs/product-surface.md",
+        "reason": "file-budget",
+        "size": 19526
+      },
+      {
+        "path": "docs/production-economics-continuity.md",
+        "reason": "file-budget",
+        "size": 2843
+      },
+      {
+        "path": "docs/proof-guided-context-fixed-point.md",
+        "reason": "file-budget",
+        "size": 7682
+      },
+      {
+        "path": "docs/provider-adapter-live-gateway.md",
+        "reason": "file-budget",
+        "size": 2558
+      },
+      {
+        "path": "docs/provider-compliance.md",
+        "reason": "file-budget",
+        "size": 4840
+      },
+      {
+        "path": "docs/provider-conformance.md",
+        "reason": "file-budget",
+        "size": 813
+      },
+      {
+        "path": "docs/public-evidence.md",
+        "reason": "file-budget",
+        "size": 10691
+      },
+      {
+        "path": "docs/receipt-proof-layer.md",
+        "reason": "file-budget",
+        "size": 1977
+      },
+      {
+        "path": "docs/RELEASE.md",
+        "reason": "file-budget",
+        "size": 5197
+      },
+      {
+        "path": "docs/reliable-event-delivery.md",
+        "reason": "file-budget",
+        "size": 3314
+      },
+      {
+        "path": "docs/repo_file_map.md",
+        "reason": "file-budget",
+        "size": 23208
+      },
+      {
+        "path": "docs/research-programme.md",
+        "reason": "file-budget",
+        "size": 18115
+      },
+      {
+        "path": "docs/research-update-2026-08.md",
+        "reason": "file-budget",
+        "size": 3892
+      },
+      {
+        "path": "docs/RESEARCH.md",
+        "reason": "file-budget",
+        "size": 16320
+      },
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 827
+      },
+      {
+        "path": "docs/routing-authority-workflow.md",
+        "reason": "file-budget",
+        "size": 7953
+      },
+      {
+        "path": "docs/session-intelligence-validation.md",
+        "reason": "file-budget",
+        "size": 1410
+      },
+      {
+        "path": "docs/session-intelligence.md",
+        "reason": "file-budget",
+        "size": 2790
+      },
+      {
+        "path": "docs/session-rescue.md",
+        "reason": "file-budget",
+        "size": 5934
+      },
+      {
+        "path": "docs/STYLE_GUIDE.md",
+        "reason": "file-budget",
+        "size": 3779
+      },
+      {
+        "path": "docs/SUPPORTED_VERSIONS.md",
+        "reason": "file-budget",
+        "size": 2158
+      },
+      {
+        "path": "docs/telemetry-privacy.md",
+        "reason": "file-budget",
+        "size": 9452
+      },
+      {
+        "path": "docs/traffic-receipts.md",
+        "reason": "file-budget",
+        "size": 4290
+      },
+      {
+        "path": "docs/traffic-value.md",
+        "reason": "file-budget",
+        "size": 5621
+      },
+      {
+        "path": "docs/TROUBLESHOOTING.md",
+        "reason": "file-budget",
+        "size": 5574
+      },
+      {
+        "path": "docs/value-attribution.md",
+        "reason": "file-budget",
+        "size": 4041
+      },
+      {
+        "path": "docs/verified-code-context.md",
+        "reason": "file-budget",
+        "size": 25139
+      },
+      {
+        "path": "docs/verified-dreaming.md",
+        "reason": "file-budget",
+        "size": 10570
+      },
+      {
+        "path": "docs/verified-efficiency-layer.md",
+        "reason": "file-budget",
+        "size": 6031
+      },
+      {
+        "path": "docs/algorithms/bipt.md",
+        "reason": "file-budget",
+        "size": 1810
+      },
+      {
+        "path": "docs/algorithms/causal-cg.md",
+        "reason": "file-budget",
+        "size": 1677
+      },
+      {
+        "path": "docs/algorithms/cognitive-bus.md",
+        "reason": "file-budget",
+        "size": 1952
+      },
+      {
+        "path": "docs/algorithms/nkbe.md",
+        "reason": "file-budget",
+        "size": 1732
+      },
+      {
+        "path": "docs/algorithms/README.md",
+        "reason": "file-budget",
+        "size": 1546
+      },
+      {
+        "path": "docs/algorithms/resonance.md",
+        "reason": "file-budget",
+        "size": 1825
+      },
+      {
+        "path": "docs/algorithms/system-1-system-2.md",
+        "reason": "file-budget",
+        "size": 2162
+      },
+      {
+        "path": "docs/architecture/ENTROLY_VERIFIED_MAP.md",
+        "reason": "file-budget",
+        "size": 15885
+      },
+      {
+        "path": "docs/architecture/model-intelligence.md",
+        "reason": "file-budget",
+        "size": 1892
+      },
+      {
+        "path": "docs/benchmarks/competitive-evidence-matrix.md",
+        "reason": "file-budget",
+        "size": 8751
+      },
+      {
+        "path": "docs/benchmarks/compression-frontier.md",
+        "reason": "file-budget",
+        "size": 4496
+      },
+      {
+        "path": "docs/benchmarks/compression-gauntlet.md",
+        "reason": "file-budget",
+        "size": 2497
+      },
+      {
+        "path": "docs/benchmarks/compression-latency.md",
+        "reason": "file-budget",
+        "size": 4245
+      },
+      {
+        "path": "docs/benchmarks/context-efficiency-frontier-v2.md",
+        "reason": "file-budget",
+        "size": 12689
+      },
+      {
+        "path": "docs/benchmarks/context-efficiency-frontier.md",
+        "reason": "file-budget",
+        "size": 8042
+      },
+      {
+        "path": "docs/benchmarks/language-symbol-coverage.md",
+        "reason": "file-budget",
+        "size": 3278
+      },
+      {
+        "path": "docs/benchmarks/model-triggered-recovery.md",
+        "reason": "file-budget",
+        "size": 7119
+      },
+      {
+        "path": "docs/benchmarks/neural-evidence-frontier.md",
+        "reason": "file-budget",
+        "size": 5089
+      },
+      {
+        "path": "docs/cookbook/README.md",
+        "reason": "file-budget",
+        "size": 7560
+      },
+      {
+        "path": "docs/distribution/README.md",
+        "reason": "file-budget",
+        "size": 4654
+      },
+      {
+        "path": "docs/distribution/submission-kit.md",
+        "reason": "file-budget",
+        "size": 7763
+      },
+      {
+        "path": "docs/distribution/windows-artifact-verification.md",
+        "reason": "file-budget",
+        "size": 3198
+      },
+      {
+        "path": "docs/examples/context_receipt.md",
+        "reason": "file-budget",
+        "size": 3005
+      },
+      {
+        "path": "docs/grafana/README.md",
+        "reason": "file-budget",
+        "size": 2359
+      },
+      {
+        "path": "docs/i18n/README.cs.md",
+        "reason": "file-budget",
+        "size": 5525
+      },
+      {
+        "path": "docs/i18n/README.de.md",
+        "reason": "file-budget",
+        "size": 4889
+      },
+      {
+        "path": "docs/i18n/README.es.md",
+        "reason": "file-budget",
+        "size": 6377
+      },
+      {
+        "path": "docs/i18n/README.fr.md",
+        "reason": "file-budget",
+        "size": 5077
+      },
+      {
+        "path": "docs/i18n/README.hi.md",
+        "reason": "file-budget",
+        "size": 9002
+      },
+      {
+        "path": "docs/i18n/README.id.md",
+        "reason": "file-budget",
+        "size": 5755
+      },
+      {
+        "path": "docs/i18n/README.it.md",
+        "reason": "file-budget",
+        "size": 5718
+      },
+      {
+        "path": "docs/i18n/README.ja.md",
+        "reason": "file-budget",
+        "size": 8621
+      },
+      {
+        "path": "docs/i18n/README.ko.md",
+        "reason": "file-budget",
+        "size": 6752
+      },
+      {
+        "path": "docs/i18n/README.nl.md",
+        "reason": "file-budget",
+        "size": 5556
+      },
+      {
+        "path": "docs/i18n/README.pl.md",
+        "reason": "file-budget",
+        "size": 5607
+      },
+      {
+        "path": "docs/i18n/README.pt-BR.md",
+        "reason": "file-budget",
+        "size": 4697
+      },
+      {
+        "path": "docs/i18n/README.ro.md",
+        "reason": "file-budget",
+        "size": 5754
+      },
+      {
+        "path": "docs/i18n/README.sv.md",
+        "reason": "file-budget",
+        "size": 5498
+      },
+      {
+        "path": "docs/i18n/README.th.md",
+        "reason": "file-budget",
+        "size": 8933
+      },
+      {
+        "path": "docs/i18n/README.tl.md",
+        "reason": "file-budget",
+        "size": 5843
+      },
+      {
+        "path": "docs/i18n/README.tr.md",
+        "reason": "file-budget",
+        "size": 5787
+      },
+      {
+        "path": "docs/i18n/README.vi.md",
+        "reason": "file-budget",
+        "size": 6329
+      },
+      {
+        "path": "docs/i18n/README.zh-TW.md",
+        "reason": "file-budget",
+        "size": 6962
+      },
+      {
+        "path": "docs/i18n/README.zh.md",
+        "reason": "file-budget",
+        "size": 10249
+      },
+      {
+        "path": "docs/integrations/context-assurance-agents.md",
+        "reason": "file-budget",
+        "size": 2132
+      },
+      {
+        "path": "docs/investigations/P0-readme-headline-claim-audit.md",
+        "reason": "file-budget",
+        "size": 7720
+      },
+      {
+        "path": "docs/investigations/P0-receipt-chunk-fidelity.md",
+        "reason": "file-budget",
+        "size": 15818
+      },
+      {
+        "path": "docs/investigations/P1-optimize-context-timeout.md",
+        "reason": "file-budget",
+        "size": 5370
+      },
+      {
+        "path": "docs/localization/README.md",
+        "reason": "file-budget",
+        "size": 3769
+      },
+      {
+        "path": "docs/product/entroly-simple-mode.md",
+        "reason": "file-budget",
+        "size": 6013
+      },
+      {
+        "path": "docs/proofs/README.md",
+        "reason": "file-budget",
+        "size": 2275
+      },
+      {
+        "path": "docs/research/agent-memory-literature-map-2026-07.md",
+        "reason": "file-budget",
+        "size": 12662
+      },
+      {
+        "path": "docs/research/competitive-reality-2026-07.md",
+        "reason": "file-budget",
+        "size": 6011
+      },
+      {
+        "path": "docs/research/context-efficiency-evaluation-2026.md",
+        "reason": "file-budget",
+        "size": 7338
+      },
+      {
+        "path": "docs/research/evidence-operations.md",
+        "reason": "file-budget",
+        "size": 2921
+      },
+      {
+        "path": "docs/research/exp1-reproducibility-matrix.md",
+        "reason": "file-budget",
+        "size": 3992
+      },
+      {
+        "path": "docs/research/prism-r-neural-compression.md",
+        "reason": "file-budget",
+        "size": 9537
+      },
+      {
+        "path": "docs/research/proof-carrying-dreams-README.md",
+        "reason": "file-budget",
+        "size": 2195
+      },
+      {
+        "path": "docs/research/proof_carrying_dreams.md",
+        "reason": "file-budget",
+        "size": 11340
+      },
+      {
+        "path": "docs/research/source-authenticated-closure-retrieval.md",
+        "reason": "file-budget",
+        "size": 10934
+      },
+      {
+        "path": "docs/research/universal-code-intelligence.md",
+        "reason": "file-budget",
+        "size": 2506
+      },
+      {
+        "path": "docs/reviews/competitive-gap-ledger.md",
+        "reason": "file-budget",
+        "size": 9944
+      },
+      {
+        "path": "docs/reviews/pr264-hotfix-execution.md",
+        "reason": "file-budget",
+        "size": 962
+      },
+      {
+        "path": "docs/reviews/research-ledger.md",
+        "reason": "file-budget",
+        "size": 8092
+      },
+      {
+        "path": "docs/rfcs/001-submodular-context-selection.md",
+        "reason": "file-budget",
+        "size": 11274
+      },
+      {
+        "path": "docs/steering/entroly.md",
+        "reason": "file-budget",
+        "size": 3541
+      },
+      {
+        "path": "docs/tuning_strategies/balanced.md",
+        "reason": "file-budget",
+        "size": 1162
+      },
+      {
+        "path": "docs/tuning_strategies/latency.md",
+        "reason": "file-budget",
+        "size": 1335
+      },
+      {
+        "path": "docs/tuning_strategies/monorepo.md",
+        "reason": "file-budget",
+        "size": 1355
+      },
+      {
+        "path": "docs/tuning_strategies/quality.md",
+        "reason": "file-budget",
+        "size": 1456
+      },
+      {
+        "path": "docs/examples/context_receipt_sources/addendum.md",
+        "reason": "file-budget",
+        "size": 119
+      },
+      {
+        "path": "docs/examples/context_receipt_sources/master.md",
+        "reason": "file-budget",
+        "size": 218
+      },
+      {
+        "path": "docs/examples/context_receipt_sources/schedule-a.md",
+        "reason": "file-budget",
+        "size": 92
+      },
+      {
+        "path": "docs/proofs/bipt/README.md",
+        "reason": "file-budget",
+        "size": 1546
+      },
+      {
+        "path": "docs/proofs/knapsack/README.md",
+        "reason": "file-budget",
+        "size": 1195
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 2540
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 1484
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 15341
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 5730
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 3457
+      }
+    ],
+    "omitted_count": 143,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1748,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 149,
+      "complete": false,
+      "omitted": 143,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6baeee214dd9568ea96ef68e1d62b61a",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 3,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/juyterman1000/entroly/9bab5850955cff6f1e374fada7227d45c9f2f570/123494e15847ef5e/manifest.json",
+  "package_id": "pkg_476346a3a2ed2cb677cfde0393a63185d382438879f72fdc1dad7e18a332d06c",
+  "repo": "juyterman1000/entroly",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "29c92f94d3e64f35d517e6a88df47d6ab9aaca15018300b31b996330af20940e",
+  "snapshot_id": "123494e15847ef5e",
+  "sources": [
+    {
+      "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+      "git_sha": "6169040b1b87693ab5e41170dc7e1dbc76892243",
+      "lines": 153,
+      "path": "BENCHMARKS.md",
+      "repository": "juyterman1000/entroly",
+      "sha256": "19eee97bfc57cd4bc3baf31da7ccb9025b46e856d9e8dd1bb91584517fd97676",
+      "source_id": "src_d745d25e311355139c2e795c6c40be93",
+      "stored": "benchmarks.md-056642c343a3.md",
+      "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/BENCHMARKS.md"
+    },
+    {
+      "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+      "git_sha": "d1408ec6386c686b2b756456987adb3f990bf199",
+      "lines": 5,
+      "path": "GEMINI.md",
+      "repository": "juyterman1000/entroly",
+      "sha256": "34d635b40bba3107411723c014448e176215e67971e88b8ebd2ab744f0355543",
+      "source_id": "src_18376e079edd5dfaa2cc2080e8f5ed1f",
+      "stored": "gemini.md-399080f41ccf.md",
+      "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/GEMINI.md"
+    },
+    {
+      "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+      "git_sha": "1117b704e942d81d670d6de228fa6af6f1fcaf9d",
+      "lines": 554,
+      "path": "README.md",
+      "repository": "juyterman1000/entroly",
+      "sha256": "2584baf6f44a1eb66a1afbc27f479f674ad9d69fd964d11a2212f791c7d335b4",
+      "source_id": "src_b25a369e349f5972be07fea131245a25",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/README.md"
+    },
+    {
+      "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+      "git_sha": "458310d2ffa1248a20f578c7ac5590367cb80463",
+      "lines": 248,
+      "path": "docs/SKILLS.md",
+      "repository": "juyterman1000/entroly",
+      "sha256": "27b9b76384f2957d47d6e516d7517cbc336f4919f19019b64b5b1135fcdb792a",
+      "source_id": "src_3dd34f8a73e354338008616f0655c6d9",
+      "stored": "skills.md-575f437adbaa.md",
+      "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/docs/SKILLS.md"
+    },
+    {
+      "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+      "git_sha": "4d9fa636f44b7ed4b782987f0bca9909ecdf58b2",
+      "lines": 114,
+      "path": "docs/architecture.md",
+      "repository": "juyterman1000/entroly",
+      "sha256": "5ddd2c55e560e3d8c88ea02809ff571ab0e4edee6cf7407e0210aac5b4fd28c4",
+      "source_id": "src_0f8c86d4a754592bbe99689e7b7ffda7",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/docs/architecture.md"
+    },
+    {
+      "commit": "9bab5850955cff6f1e374fada7227d45c9f2f570",
+      "git_sha": "5b71fb95e38739043cabfc35d37d968b5c8fdc32",
+      "lines": 153,
+      "path": "llms.txt",
+      "repository": "juyterman1000/entroly",
+      "sha256": "7a6acf2eceeafc47ac356d55c630120a3dad3bcf81c35e242943d018134cede1",
+      "source_id": "src_9be26098ae475246865ab51dca9d2223",
+      "stored": "llms.txt-f43a9e2f7da8.txt",
+      "url": "https://github.com/juyterman1000/entroly/blob/9bab5850955cff6f1e374fada7227d45c9f2f570/llms.txt"
+    }
+  ],
+  "summary": "Selected evidence records: Entroly is described as a local-first AI token-efficiency and context-assurance layer offering budgeted evidence selection, recoverable compression, content-addressed recovery, and auditable receipts. The product runs as a CLI, Python/TypeScript SDK, MCP server, HTTP proxy, or library import, per the README's product-surface description.",
+  "superseded_claim_ids": []
+}

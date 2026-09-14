@@ -1,0 +1,681 @@
+{
+  "applied_operation_id": "op_bbcd3e39ac324605a577049e9e1c08cd",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e007aa779d0827cb75d9e77a4d5dffc2eb2ad237cee1d1197e549223957fe770",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L3-L3"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 39,
+          "line_start": 35,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L35-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_282db1cc8ef7f3c4dbb56486ca4a5adf2860d146997ebc098a63b14acd987862",
+        "slc_d74e959ea06c2aa5e9c34616052cefedb57ebd7b3af5d0de95a95cba6795c43f"
+      ],
+      "text": "Singulary is a monorepo with a React frontend and an Express backend; in production the frontend is built to static assets and served by the same Express process that exposes the API under /api."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d9100d5c44897ec2ac9e389f8ba0a6907932f67d63eeae6232aad31ff52363a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 48,
+          "line_start": 43,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L43-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e8afc225009c212735f5db5a3ca3aaf816dcd6b73397761d2d7c3a1854a6840"
+      ],
+      "text": "The backend (apps/server) is an Express application on Node.js using TypeScript, responsible for API routing, an agent loop with SSE-streamed LLM responses, Docker orchestration, and SQLite metadata storage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd3cdf004ae18f452e19063e3fef75fafd7efe0110999b0fcf7c5c29408993d6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L52-L52"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 69,
+          "line_start": 54,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L54-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4828173f36baf6a65486878a55238a077038ad6261023ca23e1ba880283baf01",
+        "slc_aadde566bc745156a18962dbf0b5e9fbffdd2ef0d914ebeb340bc24c206df158"
+      ],
+      "text": "The frontend (apps/web) is a React app powered by Vite and styled with Tailwind CSS, organized into components, hooks, services, Zustand stores, utils, and views directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6be9196497b053573dee7d3a6fdcd15fb7ec8ac364a14c07270e61f8c58fa76",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L81-L81"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L73-L73"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 79,
+          "line_start": 75,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L75-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12aaba0fb8fd77de1f0b3831a04b62fd5865682c4656c47d82c70c323645c4e2",
+        "slc_808e1e078e103fe0f06955aea037012db328bd74fef9c0424824c108a72466fd",
+        "slc_b47f92f28886ca3da5257d361f3e606e3faae73558c7dd01faa95526aa04e531"
+      ],
+      "text": "Frontend data flow follows View -> hook -> service -> API, with hooks writing results into Zustand stores that cache fetched data; mutations update stores and hooks may expose refetch() to bypass the cache."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c29a242e29d2aaa2b2e09f37629326a9db8e9ad257196324124698b97d2d5f17",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 48,
+          "line_start": 43,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L43-L48"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 31,
+          "line_start": 7,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L7-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e8afc225009c212735f5db5a3ca3aaf816dcd6b73397761d2d7c3a1854a6840",
+        "slc_91b1dc03b26424d7a8c515aa3f063809e03e9d4b99568f2a616dcb815c5bf5f3"
+      ],
+      "text": "The browser client communicates with the Express API over REST, SSE, and WebSocket, and the backend manages interactive shells via WebSocket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0aa1e354583391d27e16712a01167dbf73da0dd39532d9279fc33f1294d4288",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 48,
+          "line_start": 43,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L43-L48"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+          "line_end": 39,
+          "line_start": 35,
+          "path": "ARCHITECTURE.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L35-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e8afc225009c212735f5db5a3ca3aaf816dcd6b73397761d2d7c3a1854a6840",
+        "slc_d74e959ea06c2aa5e9c34616052cefedb57ebd7b3af5d0de95a95cba6795c43f"
+      ],
+      "text": "SQLite stores instance metadata by default at storage/singulary.sqlite, tracking user accounts, token limits, rules, and workspace topology."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e2f175ef1c4747f7b1aa4e44fc2f010bb5954e1300de34d9e33e7c8373b4158",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "c8cea8958bad558753fa82d70197c0992866aaac",
+          "line_end": 15,
+          "line_start": 6,
+          "path": "docs/byok.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/docs/byok.md#L6-L15"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "c8cea8958bad558753fa82d70197c0992866aaac",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/byok.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/docs/byok.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_209ffe2dc0514626afb6ca9e56c805bfd49cd233293a282de4e44c78ac850fc9",
+        "slc_33205c49ab82321c18e456a9c3ceac56a66aec13c1340ce04f49bf125268e65e"
+      ],
+      "text": "The product is BYOK: it does not force a specific AI provider, and documentation lists supported keys including OpenAI, Anthropic, OpenRouter, Google Gemini, Mistral, Groq, xAI, DeepSeek, and Ollama/LM Studio or custom OpenAI-compatible endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b612a2d4c7c9abb771f957328717229e629414a48adcb5bc701ef21252950550",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "c8cea8958bad558753fa82d70197c0992866aaac",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/byok.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/docs/byok.md#L24-L24"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "c8cea8958bad558753fa82d70197c0992866aaac",
+          "line_end": 22,
+          "line_start": 18,
+          "path": "docs/byok.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/docs/byok.md#L18-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b66e862d087f40ccc1585936931f93475e2b60b580ce99df8d05ab57b34d853",
+        "slc_622e0b59328b9c01bc776fb0542277c294882bab767f9d86bddcd550a4e78f52"
+      ],
+      "text": "Provider and service credentials can be configured at personal-user, workspace, organization, and global admin-managed levels, and all keys are AES-GCM encrypted at rest."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bdfb26ef1e354f8cbbe5e8baa9786fcfc96754272cc7bd00ca44506ff399ed3",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e9e94179061afb4212a6112d4cfc8418cc0cfecd4ddbbcc21dd19199fee2d89"
+      ],
+      "text": "The project specification targets a self-hostable alternative to tools like v0, Lovable, Bolt, Replit Agent, or Cursor-style agents, emphasizing local-first development, BYOK access, Docker-based execution, multi-project workspaces, and auditable AI-driven changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35065921992e004b63afc5b65fdd405026d2a867d0eca8cd5d0ee2338084c472",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L99-L99"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L116-L116"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L15-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61a9502d8b2eda0a5c096576e9b069158514257c61318835323ede2ec893890e",
+        "slc_bbfd5213e37f1051b8bd6ef536996aea9c9e1d3a218a77520f6857168e7e5393",
+        "slc_be8d1a71ed395510b06f0d7fc54e24c438bef2ccf8d36113b7671e7c16448f80"
+      ],
+      "text": "The spec calls for both single-user mode (first user becomes instance admin owning everything) and multi-user organization mode with teams, roles, groups, permissions, shared keys, quotas, and scoped environments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c1bcd742bb9dad38d3646a731a70163d67878a6e7d4c1fd23eaa9adf832ed1e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 565,
+          "line_start": 565,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L565-L565"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 599,
+          "line_start": 591,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L591-L599"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 587,
+          "line_start": 567,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L567-L587"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 608,
+          "line_start": 603,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L603-L608"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 563,
+          "line_start": 563,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L563-L563"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_179833f04463a97c1939abb845a2000f8ce7ef9d357eb0003248223c6e33defd",
+        "slc_61a7748ce926d05b17ae7c88443fccebf9a836bde421e9f0cd1b259d4d1b18f1",
+        "slc_b0dc163bc4052afa8b0d18bbbf4589739330dce0845c2e30d8be420764c22018",
+        "slc_b56f4ccd1a6d05aea77bb83fe8128d7f684bfed1aa277bd141bdf3d652603514",
+        "slc_f113a3da36ef00d63a5d038d730647d4ae2d2f27152f192593639920f9cb6842"
+      ],
+      "text": "The specification envisions a permissioned tool system (filesystem, shell, docker, env, database, network tools) with risk levels and approval requirements, and states the agent should never have raw unrestricted access; this is a design goal, not verified runtime behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f239b708e01d83ee9c63082dc710844c3f8cf8c799b35469ad4ed159f7cd1b57",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 404,
+          "line_start": 397,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L397-L404"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 767,
+          "line_start": 767,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L767-L767"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 765,
+          "line_start": 760,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L760-L765"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L62-L62"
+        },
+        {
+          "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+          "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "PROJECT.md",
+          "repository": "sammwyy/singulary",
+          "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L64-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1984ff12249caa43c86432e5c708053bd21efb1e7ff95b956374865d45ed8c41",
+        "slc_878ec644da2ae256d8a58b924e80c81735e4dcde6f3973d3489b09480c30e666",
+        "slc_9a04e18c33163fd2cc28394e26c1578242532a00b2131bb56a57671460cf1e74",
+        "slc_9ff576dddc4e47638010e9f9cb8a733484a68d0eeb0a1594077ca37dee69a965",
+        "slc_e4a0f75d4b1b6856a3652d3be41cd67b27665331f284e862ac3d44f281170285"
+      ],
+      "text": "The spec describes a snapshot-based filesystem where every AI change should be reversible, using content-addressed blobs, tree objects, diffs, branching, and restore operations similar to Git internally; this is stated as a design target rather than confirmed implemented behavior."
+    }
+  ],
+  "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 254,
+        "path": "README.md",
+        "size": 12567
+      },
+      {
+        "lines": 94,
+        "path": "ARCHITECTURE.md",
+        "size": 5612
+      },
+      {
+        "lines": 2334,
+        "path": "PROJECT.md",
+        "size": 36411
+      },
+      {
+        "lines": 236,
+        "path": "ROADMAP.md",
+        "size": 13376
+      },
+      {
+        "lines": 255,
+        "path": "TODO.md",
+        "size": 10417
+      },
+      {
+        "lines": 24,
+        "path": "docs/byok.md",
+        "size": 611
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/get-started.md",
+        "reason": "file-budget",
+        "size": 885
+      },
+      {
+        "path": "docs/global-keys.md",
+        "reason": "file-budget",
+        "size": 679
+      },
+      {
+        "path": "docs/groups.md",
+        "reason": "file-budget",
+        "size": 748
+      },
+      {
+        "path": "docs/limits.md",
+        "reason": "file-budget",
+        "size": 804
+      },
+      {
+        "path": "docs/permissions-and-rules.md",
+        "reason": "file-budget",
+        "size": 2857
+      },
+      {
+        "path": "docs/services.md",
+        "reason": "file-budget",
+        "size": 720
+      },
+      {
+        "path": "docs/workspaces-and-projects.md",
+        "reason": "file-budget",
+        "size": 754
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2669
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 935
+      }
+    ],
+    "omitted_count": 9,
+    "omitted_slices": 188,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 178,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 15,
+      "complete": false,
+      "omitted": 9,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_e15a04c56535567582091a7ff45f7c03",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sammwyy/singulary/5b51298504a410ecfaf483318814a57d73e05b42/27be8bccf199f5ab/manifest.json",
+  "package_id": "pkg_c1eabf39203abe1ecf3f9c706bb9056c812b150f77f627b131334f1039461396",
+  "repo": "sammwyy/singulary",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "855e22a4034c85bbdfa9ca98ba4d20f81bf1d234c14d71b8b9c4a13a11e22b90",
+  "snapshot_id": "27be8bccf199f5ab",
+  "sources": [
+    {
+      "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+      "git_sha": "fddf6790696c5f86dd9a08d0713b61a6cc4131b2",
+      "lines": 94,
+      "path": "ARCHITECTURE.md",
+      "repository": "sammwyy/singulary",
+      "sha256": "3fa9331843824dbd17cbec7816c00a35d674261ea55df6f0ceb3a52f4952bff3",
+      "source_id": "src_92d709ad7385564a852f5e97e513e5af",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md"
+    },
+    {
+      "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+      "git_sha": "8e061a1365b8e7aad161918139a3f902069c8aca",
+      "lines": 2334,
+      "path": "PROJECT.md",
+      "repository": "sammwyy/singulary",
+      "sha256": "081c8c03a68396f8337b10e14927d32a76aa13b1ca65059a188a782bd38eaf15",
+      "source_id": "src_3a2fe95fd7fc5e1e9be358dbc96bf5d5",
+      "stored": "project.md-e4a35df86123.md",
+      "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md"
+    },
+    {
+      "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+      "git_sha": "12345dc59fc72868a899621f6c71c19803e9fd49",
+      "lines": 254,
+      "path": "README.md",
+      "repository": "sammwyy/singulary",
+      "sha256": "cd6398547f7f755f339dba4b094b9d36e7a7acfcf81c70445d82f61a099fcf99",
+      "source_id": "src_7cd5bda4e51a5aa4bc87c03c58f0782b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/README.md"
+    },
+    {
+      "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+      "git_sha": "87f94b83f12657c9d5f81c7a34867e2f39f99e76",
+      "lines": 236,
+      "path": "ROADMAP.md",
+      "repository": "sammwyy/singulary",
+      "sha256": "d3c24b3cb84d4300633f62ca45ac40ba154c55a029352997be29811d98dc2dd9",
+      "source_id": "src_066d644dcba259a981e03525c68f908a",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ROADMAP.md"
+    },
+    {
+      "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+      "git_sha": "42a770cc14544833da6e2013a14f9ace2210ff1a",
+      "lines": 255,
+      "path": "TODO.md",
+      "repository": "sammwyy/singulary",
+      "sha256": "b3d294b1e2d9d170c0147c2c43a2200256d8651e6e4ca30d1c619c68cd38abf7",
+      "source_id": "src_3ece6d1a3d5757cfa85a37ced375bb54",
+      "stored": "todo.md-5c6a1301c6b5.md",
+      "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/TODO.md"
+    },
+    {
+      "commit": "5b51298504a410ecfaf483318814a57d73e05b42",
+      "git_sha": "c8cea8958bad558753fa82d70197c0992866aaac",
+      "lines": 24,
+      "path": "docs/byok.md",
+      "repository": "sammwyy/singulary",
+      "sha256": "97f2dab8a1f2007914c4472c2f1b16b5ad5a247bcbbfc8f1088452b0a6b45233",
+      "source_id": "src_1c341940c7515a309ea0b7fd5ef74e2a",
+      "stored": "byok.md-fd95f8405ea3.md",
+      "url": "https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/docs/byok.md"
+    }
+  ],
+  "summary": "The snapshot consists of design/architecture documentation (ARCHITECTURE.md, PROJECT.md, docs/byok.md) describing Singulary as a self-hostable, Docker-based AI app-builder monorepo with a React/Vite frontend and Express/TypeScript backend. Most PROJECT.md content is aspirational ('should') specification rather than verified runtime behavior. Evidence coverage: 212 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

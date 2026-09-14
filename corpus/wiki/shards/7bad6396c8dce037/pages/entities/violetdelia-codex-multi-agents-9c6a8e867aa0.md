@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_06991b2811b02eaca5c47dcf1d64959573cd7d114bff4735993285b6ca0cc04b
+- clm_5061463f4cbc54d88c9be68960b0be61c4c4c68493a0d3b812b06a570d58383a
+- clm_5180424416e410768227d15de4d4d541104dee7a7a555ac457bea5f6fdbb687f
+- clm_970d2baab40f6bc72574d106ee2f9a2071820e73da5437f807a70ac2b4fa02a6
+- clm_a9c7deeeb1cfb2ba1e62ba78e4c86421b9a837a710bf5edf59f3d6d3dc94b70d
+- clm_b72d01d9c33d35a0b75aa168d9c0a31ccba70a8278b64d852a5705827c70772e
+- clm_c452aa956a39f8404b20cf3c0bceeec0b7dd010581c04abf18816276f59cb8fe
+- clm_e7738045c10138a0f299fd3b1a852532864a066a2e8030764e0051a6bb0f2e29
+- clm_ed4e2989e3bbc3befb9f60c765a6a6131e9dabf6c6d270576a45e31fc262c310
+maturity: draft
+page_id: pg_d1e51ded420058ab89249c6a8e867aa0
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: violetdelia/codex-multi-agents
+updated_at: '2026-09-14T03:22:08Z'
+---
+
+# violetdelia/codex-multi-agents
+
+<!-- rcw:begin owner=entity:ent_6938de6127315b9bb42b49421e54f711 block=evidence -->
+- violetdelia/codex-multi-agents is mentioned in this evidence. [@claim:clm_06991b2811b02eaca5c47dcf1d64959573cd7d114bff4735993285b6ca0cc04b] [@claim:clm_5061463f4cbc54d88c9be68960b0be61c4c4c68493a0d3b812b06a570d58383a] [@claim:clm_5180424416e410768227d15de4d4d541104dee7a7a555ac457bea5f6fdbb687f] [@claim:clm_970d2baab40f6bc72574d106ee2f9a2071820e73da5437f807a70ac2b4fa02a6] [@claim:clm_a9c7deeeb1cfb2ba1e62ba78e4c86421b9a837a710bf5edf59f3d6d3dc94b70d] [@claim:clm_b72d01d9c33d35a0b75aa168d9c0a31ccba70a8278b64d852a5705827c70772e] [@claim:clm_c452aa956a39f8404b20cf3c0bceeec0b7dd010581c04abf18816276f59cb8fe] [@claim:clm_e7738045c10138a0f299fd3b1a852532864a066a2e8030764e0051a6bb0f2e29] [@claim:clm_ed4e2989e3bbc3befb9f60c765a6a6131e9dabf6c6d270576a45e31fc262c310]
+<!-- rcw:end owner=entity:ent_6938de6127315b9bb42b49421e54f711 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,959 @@
+{
+  "applied_operation_id": "op_509382cb311b45a59f5db14c40ef5577",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c4e7be1ee8e97ba0af7c29c1c2940c46b423b5c77ed5ea5eea071e22859f435",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 42,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L25-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46ef5a3b55a1266291d40f0e4a7fff5d5522b50465392611c3662b350eca4bb3"
+      ],
+      "text": "The system is a Node.js-based custom MCP server using Streamable HTTP transport, with Joi schemas for runtime input validation and a stateless architecture for compatibility with multiple MCP clients."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4f6a455b967b13ab2252b5a677200b747a8824c9b26beeb9767d03ab8de7e78",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L9-L12"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 159,
+          "line_start": 157,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L157-L159"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 165,
+          "line_start": 163,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L163-L165"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 91,
+          "line_start": 89,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L89-L91"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 120,
+          "line_start": 118,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L118-L120"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 134,
+          "line_start": 132,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L132-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bddf9446b9ddfb70aa7551ba421b8aa5f1019471d7e497823010a14b9024a1b",
+        "slc_921412d369bc6cc1e62b0a16d69da37cb378055e45c077561003420569887ec6",
+        "slc_a22c5590da5a5a46d98e381ac4b7668b2268a106916eb77b376e53551bd8177d",
+        "slc_a61e670e1bb2153de0a9613ae6b5d7f31551d71638d22daeae2e0fd84381a994",
+        "slc_ad0ea339e061b5855d6f21b0317801a92d072cc37c3c52112cc702c27c5d93df",
+        "slc_f674cc9c08215d6d9ce96bbbf5774f76ab31836607a4a580c8b260cbba94402f"
+      ],
+      "text": "The server exposes HTTP endpoints including GET /health, GET /, GET /mcp/tools, POST /mcp/execute, GET /api/sessions/active, and GET /api/sessions/stats."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_efdb0b5dedcafb5eff54d38579420f5fc55fa29ee738a9ca84ef897c30323f91",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L149-L149"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 145,
+          "line_start": 138,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L138-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a7bf5d0e8d85ec11a55ed9d498a1fd648f9f388314031daebc73cb1b257b6ba",
+        "slc_d230ae1ea7a3eeb92a83dfada0cacb303587d2a27f37c74835ff0c185500b613"
+      ],
+      "text": "POST /mcp/execute accepts a JSON body containing a tool name and a params object, and returns a tool-specific response based on the executed tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77d63c1ab4b4aa645f961b401271c5a7bb070a15b626c36369ba9e8a2e382332",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 36,
+          "line_start": 16,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L16-L36"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 52,
+          "line_start": 40,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L40-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c8e412301410afe3da47f8040185c1785ed14cb0aab21337a2c38e77b022cf4",
+        "slc_b363a04d59cc4f5936eed1bbc5d5063fbd21a07fa7cf925196cb643c75e950a7"
+      ],
+      "text": "The health endpoint returns status, version, timestamp, uptime, memory usage, per-service configuration status (julesApi, database, github), and circuit breaker failure count and open state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bccb7e8966015d665fece5b03d7515622e655665b2bd4b04b95a63fd5ce85cdb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "f013f561108bafc3c9d7070d05808ee26d0bf8fb",
+          "line_end": 210,
+          "line_start": 197,
+          "path": "docs/COMMANDS_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/COMMANDS_REFERENCE.md#L197-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_989184b28a498db129ffb321acaa3ed50424fa5efc3690704c517dd992897da5"
+      ],
+      "text": "The system provides slash commands including /status, /quick-fix, /session, /batch, /audit, /deploy-check, /implement-feature, /fix-issues, /security, /test, /learn-pattern, and /generate-command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cad9bdc38464d4a52476acba06a3749b5f3d27181985d551193ddf7dd3decc67",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 42,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L25-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46ef5a3b55a1266291d40f0e4a7fff5d5522b50465392611c3662b350eca4bb3"
+      ],
+      "text": "The README catalogs 65 MCP tools across groups including Jules core (7), session management (5), batch processing (7), semantic memory (8), Render integration (12), Ollama LLM (4), and RAG (4)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cdb9af4fa01d31bb345f4744741db083dd0c425c4ffc9bc8e19ce5e499cc8b5e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 110,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L104-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5eeb08e1333f7b690fbb79e00a6c78ceb95d400d84d4280c772d9056e3b1c75"
+      ],
+      "text": "The documented autonomous loop runs: user task initiation, Antigravity planning, Jules session creation via MCP, parallel execution, progress monitoring, approval gates, then merge/test completion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08d8af258fbc47bf85888001c6f96ee1446098cf5d645570565aaab3617343a8",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "233a3846e2a4933395751641132745f9cc7a88b1",
+          "line_end": 20,
+          "line_start": 7,
+          "path": "docs/reference/ARCHITECTURE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/reference/ARCHITECTURE.md#L7-L20"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "233a3846e2a4933395751641132745f9cc7a88b1",
+          "line_end": 4,
+          "line_start": 4,
+          "path": "docs/reference/ARCHITECTURE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/reference/ARCHITECTURE.md#L4-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_243d10fb6ee1a88670c2d7653963429727dc23d96e1017651900dd11c6fce897",
+        "slc_f70818d939bbdb98346c1801b940474bd55674ce84b2b8264526cff8b12db764"
+      ],
+      "text": "The architecture positions Jules API as the inner-loop coding executor (clone, plan, edit, create PRs) with agent.scarmonit.com as an orchestration layer translating events into tasks and managing approval flows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7074de051b24963c255c3e73041ed8c2243e5ca0e879859df1bfb57daf50e46e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "233a3846e2a4933395751641132745f9cc7a88b1",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "docs/reference/ARCHITECTURE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/reference/ARCHITECTURE.md#L26-L28"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "233a3846e2a4933395751641132745f9cc7a88b1",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "docs/reference/ARCHITECTURE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/reference/ARCHITECTURE.md#L31-L32"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "233a3846e2a4933395751641132745f9cc7a88b1",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/reference/ARCHITECTURE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/reference/ARCHITECTURE.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a0229a4a71c9cceca8a1e988033a4569fe6db4b1f5f1f993ef0ef507833ea72",
+        "slc_5323d99da94f70a8098b7dd6a7ced970725ac169ce624390e06f39730a36c955",
+        "slc_f85b1c090c14b87ca8ea2c5e7d59a4c9eaf183068006cddc18a411225a524a77"
+      ],
+      "text": "The system is event-driven, reacting to GitHub labels (jules-auto), comments (@jules plan this), PR review comments, monitoring webhooks, and CI build failures."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d31a662b07743d128b3f4709ee535c3cc08d52fe44c3d8ea5b7a4d815125b4a2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "233a3846e2a4933395751641132745f9cc7a88b1",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "docs/reference/ARCHITECTURE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/reference/ARCHITECTURE.md#L56-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f77c5ea1e344b64d2e6b6be2ff5f4d79ddef7b46c6d269d8be9a6e70bf0a3ef"
+      ],
+      "text": "Safety design includes approval gates requiring a 'Plan Approved' state before code modification, stricter approval for high-risk infra/auth tasks, and all Jules output delivered via pull requests for human review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_948d25bbf066c790401bab2314a18f1ef8ca0c4488128638ee4b6fe11ad434fc",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 60,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L58-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bac968d80e40f7974178675537b0fbf08bf3434ef0f0c25c4bdca65614c9db25"
+      ],
+      "text": "A semantic memory integration provides 8 MCP tools for persistent AI memory, with SSRF protection via a domain whitelist and error message sanitization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e62a5af5978ddf0dee8470c975f6519c6e21452182242f05cf52bbc2e2e72261",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 144,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L142-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32b2aa432a42e30aae181d34d7f8f4625f63ec185a2157772aa74c4a0937df5d"
+      ],
+      "text": "Performance features include an LRU cache (100 items, 10s default TTL), a circuit breaker tripping after 5 consecutive failures with 60s reset, and retry logic with 3 exponential-backoff retries plus jitter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffe6810f4f16b959c6fc8727d30c44136ba5c18fe70b18c44016c41353b03b30",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 125,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L122-L125"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 118,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L115-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d16adffa712f06ef5cd6a68e1d45b219c5535a1bbb2257525b308359f837595",
+        "slc_808fe080847791ed0e0374021b5b78e2862362267dbb411d3fe9ecf2d1b6d448"
+      ],
+      "text": "Prerequisites are Node.js v18+, Google Antigravity installed, a Jules API account with key, and a GitHub account with connected repositories; setup uses npm install and npm run dev."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd0472d4309cc1e5e4b0aba939fff98be6dd546e615c6353daf88b0c6a886693",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 138,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L129-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ce052a2b59900e79ae65646842fddb73be204acce1ab9d8ac76277506285aef"
+      ],
+      "text": "Configuration variables include PORT (default 3323), required JULES_API_KEY, GITHUB_TOKEN, DATABASE_URL, SLACK_WEBHOOK_URL, LOG_LEVEL, ALLOWED_ORIGINS, and SEMANTIC_MEMORY_URL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_715fb9ad1edf43c0d8d28ba845fe2676524fcbc65931064e40126a78e9c65d0d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L171-L171"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 157,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L155-L157"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L71-L71"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+          "line_end": 182,
+          "line_start": 180,
+          "path": "docs/api/API_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md#L180-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ad8f9511c5917006606876c1fbb0fb69fa0668a45e29ee7eb07654f3742f851",
+        "slc_3dfa57f3ae73a7b8d544dd60f88f967727750ec67387fd28665d6ee8567fe4a8",
+        "slc_63d70cd35bbdd42e2905bfac5e95e501fbfb08464c005c8aae6ff7c4ffa1ff96",
+        "slc_833db07f0442221d09ee76a7fdf4c926eda0022bf42dda4fd6ce8f39d64fe9a7"
+      ],
+      "text": "Repository development practice: contributors run tests with npm test or node --test tests/unit/health.test.js, and health response format changes must update the health-check workflow and unit tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b54e50506debdcb18c1dae410d1869b561d8e59c1e0041118036df519d8cd68c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 42,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L25-L42"
+        },
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "f013f561108bafc3c9d7070d05808ee26d0bf8fb",
+          "line_end": 252,
+          "line_start": 252,
+          "path": "docs/COMMANDS_REFERENCE.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/COMMANDS_REFERENCE.md#L252-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46ef5a3b55a1266291d40f0e4a7fff5d5522b50465392611c3662b350eca4bb3",
+        "slc_4bb221e3442f91d39d7c8349683cec37d49a937acd4218bd395c90840e40575b"
+      ],
+      "text": "Documentation appears internally inconsistent on tool count: the README states 65 MCP tools while the slash-commands doc says the commands leverage 30 MCP tools available."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c4a55ec3784cc54dfbeffbe00509a7eec07496e51edf292bb24146706644b2d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 50,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L47-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6a3890fee79855cc11e27591b25c09c90552573228146ee7a75ca1d07fbdfba"
+      ],
+      "text": "The Render auto-fix integration detects and fixes build failures on Jules PRs via a Render webhook receiver, build-log error pattern recognition, and AES-256-GCM encrypted credential storage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1cdd45190120cbf2a3ff4d6309cc88e94372128423b30d05ce24329b933e7494",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+          "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+          "line_end": 55,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "scarmonit/antigravity-jules-orchestration",
+          "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md#L53-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b3bd910f872c799dd3b7b977163c8560bc64aaf6f266918eb8d468d6e361974"
+      ],
+      "text": "A suggested-tasks scanner scans codebases for TODO/FIXME/HACK comments, ranks tasks by priority, and can create Jules sessions to fix the suggested tasks."
+    }
+  ],
+  "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 164,
+        "path": "README.md",
+        "size": 6450
+      },
+      {
+        "lines": 65,
+        "path": "docs/reference/ARCHITECTURE.md",
+        "size": 3329
+      },
+      {
+        "lines": 7,
+        "path": "TRASH-FILES.md",
+        "size": 460
+      },
+      {
+        "lines": 266,
+        "path": "docs/COMMANDS_REFERENCE.md",
+        "size": 6978
+      },
+      {
+        "lines": 46,
+        "path": "docs/README.md",
+        "size": 2260
+      },
+      {
+        "lines": 182,
+        "path": "docs/api/API_REFERENCE.md",
+        "size": 3581
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/api/COMMANDS_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 6978
+      },
+      {
+        "path": "docs/api/MCP_CONFIG_FIXED.md",
+        "reason": "file-budget",
+        "size": 4134
+      },
+      {
+        "path": "docs/api/MCP_INDEX.md",
+        "reason": "file-budget",
+        "size": 7888
+      },
+      {
+        "path": "docs/api/MCP_QUICK_REFERENCE.md",
+        "reason": "file-budget",
+        "size": 3885
+      },
+      {
+        "path": "docs/api/MCP_TOOLS_LIVE_DEMO.md",
+        "reason": "file-budget",
+        "size": 7888
+      },
+      {
+        "path": "docs/deployment/CONFIGURE_RENDER.md",
+        "reason": "file-budget",
+        "size": 5930
+      },
+      {
+        "path": "docs/deployment/DEPLOYMENT.md",
+        "reason": "file-budget",
+        "size": 7551
+      },
+      {
+        "path": "docs/deployment/DEPLOYMENT_SUMMARY.md",
+        "reason": "file-budget",
+        "size": 10606
+      },
+      {
+        "path": "docs/deployment/GOOGLE_AUTH_QUICKSTART.md",
+        "reason": "file-budget",
+        "size": 2491
+      },
+      {
+        "path": "docs/deployment/GOOGLE_CLOUD_SETUP.md",
+        "reason": "file-budget",
+        "size": 9320
+      },
+      {
+        "path": "docs/deployment/GOOGLE_OAUTH_INSTRUCTIONS.md",
+        "reason": "file-budget",
+        "size": 1981
+      },
+      {
+        "path": "docs/deployment/MONITORING.md",
+        "reason": "file-budget",
+        "size": 1615
+      },
+      {
+        "path": "docs/deployment/PRODUCTION_DEPLOYMENT_PACKAGE.md",
+        "reason": "file-budget",
+        "size": 13380
+      },
+      {
+        "path": "docs/deployment/RENDER_DEPLOYMENT.md",
+        "reason": "file-budget",
+        "size": 4723
+      },
+      {
+        "path": "docs/deployment/VERIFICATION.md",
+        "reason": "file-budget",
+        "size": 1825
+      },
+      {
+        "path": "docs/getting-started/HOW_TO_USE.md",
+        "reason": "file-budget",
+        "size": 8419
+      },
+      {
+        "path": "docs/getting-started/QUICK_START.md",
+        "reason": "file-budget",
+        "size": 2390
+      },
+      {
+        "path": "docs/integration/GEMINI.md",
+        "reason": "file-budget",
+        "size": 3384
+      },
+      {
+        "path": "docs/integration/GITHUB_COPILOT_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 10962
+      },
+      {
+        "path": "docs/integration/INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 2510
+      },
+      {
+        "path": "docs/integration/INTEGRATION_GUIDE.md",
+        "reason": "file-budget",
+        "size": 5425
+      },
+      {
+        "path": "docs/integration/SONARQUBE_MCP_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 9298
+      },
+      {
+        "path": "docs/orchestration/MCP_TOOL_DISCOVERY.md",
+        "reason": "file-budget",
+        "size": 8472
+      },
+      {
+        "path": "docs/orchestration/ORCHESTRATION_PROMPT.md",
+        "reason": "file-budget",
+        "size": 8326
+      },
+      {
+        "path": "docs/reference/AUTO_DIAGNOSTICS.md",
+        "reason": "file-budget",
+        "size": 7262
+      },
+      {
+        "path": "docs/reference/AUTO_DIAGNOSTICS_QUICK_REF.md",
+        "reason": "file-budget",
+        "size": 1815
+      },
+      {
+        "path": "docs/reference/LOGGER_REFACTOR.md",
+        "reason": "file-budget",
+        "size": 11276
+      },
+      {
+        "path": "docs/reference/MCP_TOOL_CHAINS.md",
+        "reason": "file-budget",
+        "size": 22720
+      },
+      {
+        "path": "docs/reference/MCP_TROUBLESHOOTING.md",
+        "reason": "file-budget",
+        "size": 7488
+      },
+      {
+        "path": "docs/reports/100_PERCENT_READY.md",
+        "reason": "file-budget",
+        "size": 6142
+      },
+      {
+        "path": "docs/reports/MCP_COMPLETION_SUMMARY.md",
+        "reason": "file-budget",
+        "size": 15949
+      },
+      {
+        "path": "docs/reports/MCP_ORCHESTRATION_REPORT.md",
+        "reason": "file-budget",
+        "size": 17564
+      },
+      {
+        "path": "docs/reports/MCP_REAL_EXECUTION_REPORT.md",
+        "reason": "file-budget",
+        "size": 14895
+      },
+      {
+        "path": "docs/reports/MCP_TOOL_ACCESSIBILITY_MATRIX.md",
+        "reason": "file-budget",
+        "size": 15744
+      },
+      {
+        "path": "docs/reports/MCP_VALIDATION_REPORT.md",
+        "reason": "file-budget",
+        "size": 15206
+      },
+      {
+        "path": "docs/reports/RESTART_NOW.md",
+        "reason": "file-budget",
+        "size": 5572
+      },
+      {
+        "path": "docs/reports/SUCCESS.md",
+        "reason": "file-budget",
+        "size": 7961
+      },
+      {
+        "path": "docs/reports/SUMMARY.md",
+        "reason": "file-budget",
+        "size": 3232
+      },
+      {
+        "path": "docs/reports/TEST_EXECUTION_REPORT.md",
+        "reason": "file-budget",
+        "size": 10911
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 5699
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 14097
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 5096
+      },
+      {
+        "path": "docs/reports/AGENTS.md",
+        "reason": "file-budget",
+        "size": 611
+      }
+    ],
+    "omitted_count": 43,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2376,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 49,
+      "complete": false,
+      "omitted": 43,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_84559a0bb8f9590da3bcf5a989600e1b",
+  "facets": {
+    "components": 4,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 6,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/scarmonit/antigravity-jules-orchestration/49d26f81817c123045ea0e23092c53f8f1f74174/9593a4b4c9beb21b/manifest.json",
+  "package_id": "pkg_1279beb6231c97a953b1edc39c641ec1e078b24a430696c57c316cf858203bea",
+  "repo": "scarmonit/antigravity-jules-orchestration",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9fe6d699b39195153a97b6920822f8848264d0e23f8b6e76c91b24bdeb650608",
+  "snapshot_id": "9593a4b4c9beb21b",
+  "sources": [
+    {
+      "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+      "git_sha": "2bb0794f6b23e07ebac04d0fa1bb3e0ec8fc1dbe",
+      "lines": 164,
+      "path": "README.md",
+      "repository": "scarmonit/antigravity-jules-orchestration",
+      "sha256": "c8e2b43d09b2549d938db4a477ccf9d643f86dd8b525b0a1e3ee22ea81edaa87",
+      "source_id": "src_f72edac13db859ef8317f3395ac52102",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/README.md"
+    },
+    {
+      "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+      "git_sha": "ef9254b46beec0a6258877202994760ceb077f46",
+      "lines": 7,
+      "path": "TRASH-FILES.md",
+      "repository": "scarmonit/antigravity-jules-orchestration",
+      "sha256": "109a6b0e4ac39deaee20732182fc4cbb9bd0a4b7c9b788fbdfc339022389f9dd",
+      "source_id": "src_f01ffbafbcc2599784a44cf387699f6a",
+      "stored": "trash-files.md-a4050467582a.md",
+      "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/TRASH-FILES.md"
+    },
+    {
+      "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+      "git_sha": "f013f561108bafc3c9d7070d05808ee26d0bf8fb",
+      "lines": 266,
+      "path": "docs/COMMANDS_REFERENCE.md",
+      "repository": "scarmonit/antigravity-jules-orchestration",
+      "sha256": "3ec1171b8ea095a545aaa831cee62f318201eeb225f727c3353ce2a589be2c3c",
+      "source_id": "src_694b51c69a3a5a4b9507e3cac85c7986",
+      "stored": "commands_reference.md-b1c95d308f4b.md",
+      "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/COMMANDS_REFERENCE.md"
+    },
+    {
+      "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+      "git_sha": "fe92b5ad0ba3333b22c737398966d709bb4a6d81",
+      "lines": 46,
+      "path": "docs/README.md",
+      "repository": "scarmonit/antigravity-jules-orchestration",
+      "sha256": "5d5550e3870e88c5d6f982427580c0273b00b7732fae0eaaedbd2a5ee3f7f737",
+      "source_id": "src_d46bbd3a91d150e08edc278e297f8f95",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/README.md"
+    },
+    {
+      "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+      "git_sha": "4eb6c04ed00cb6306d87d7a534ce2d11277b546c",
+      "lines": 182,
+      "path": "docs/api/API_REFERENCE.md",
+      "repository": "scarmonit/antigravity-jules-orchestration",
+      "sha256": "5d1fcef269f0f8493cf96a6d5df4c53d3067914e9567583dfa6569e6b8f0d830",
+      "source_id": "src_f7f3db8b26a8591d8d4a0db9e093bc76",
+      "stored": "api_reference.md-1d5b9ee848ce.md",
+      "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/api/API_REFERENCE.md"
+    },
+    {
+      "commit": "49d26f81817c123045ea0e23092c53f8f1f74174",
+      "git_sha": "233a3846e2a4933395751641132745f9cc7a88b1",
+      "lines": 65,
+      "path": "docs/reference/ARCHITECTURE.md",
+      "repository": "scarmonit/antigravity-jules-orchestration",
+      "sha256": "c5d5a04c0adad414ad66da948cbc43b57273fba8238be40d528b3282a19fbf7d",
+      "source_id": "src_7262c466551b5dd2b6ddd0b3b2fa2f74",
+      "stored": "architecture.md-db371b5b101c.md",
+      "url": "https://github.com/Scarmonit/antigravity-jules-orchestration/blob/49d26f81817c123045ea0e23092c53f8f1f74174/docs/reference/ARCHITECTURE.md"
+    }
+  ],
+  "summary": "Documentation-only evidence describes a Node.js MCP server (v2.6.2) bridging AI assistants to the Jules API, with ~65 cataloged MCP tools, HTTP endpoints, slash commands, approval-gated orchestration, and Render deployment. Two prior claims overstated version numbers not present in their cited slices and were revised.",
+  "superseded_claim_ids": []
+}

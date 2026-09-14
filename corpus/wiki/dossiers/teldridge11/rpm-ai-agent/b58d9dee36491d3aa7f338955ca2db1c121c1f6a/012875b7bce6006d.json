@@ -1,0 +1,285 @@
+{
+  "applied_operation_id": "op_752379eb1796411991bf7438152d8161",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_de9b7e8923e8db58cbb9aad6663387a41ae270353cfc1adbb948e71199787b8e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4afc09989071d02e5df060341aa6e6aabb4f86d81f3e4d81b1c9f3d606efe81d"
+      ],
+      "text": "The agent mimics human reasoning with a three-layer approach: layer one finds obvious patterns, layer two filters candidate answers violating patterns, and layer three scores remaining answers by attribute similarity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85556d562eeea1c291cc9740bf7b94482a8acef987be36c7a56cdc54594c48ca",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4afc09989071d02e5df060341aa6e6aabb4f86d81f3e4d81b1c9f3d606efe81d"
+      ],
+      "text": "Each of the three layers contributes capabilities the others cannot, and combined they reportedly solve problems with high accuracy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b2ce330958ed3e4b79d0223d176c15700cfda812f579caf7ec8ceeaa1e389ef",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L14-L14"
+        },
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L16-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c043d0b087573eb76df1ae3c96cf0a25859bb51be45bdbbcd9fb0247b7166cca",
+        "slc_cf81a8ab1b7c2de618f85a43bdcc2046088ac0426fea553a4220a362ef3ec7c9"
+      ],
+      "text": "Reported accuracy: 11/12 (91.7%) on basic 2x2 problems, 2/8 (25%) on challenge problems, and 17/20 (85%) on previously unseen problems."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b545fd18a2cb706154f7ab184b74f03eccafd7a74f592589e72981477f0b4933",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c0280bca366517b513bd4f50c67fd6e7b5c002138b0d67ee2cf5e6a2203b5d26"
+      ],
+      "text": "Running the agent requires Python and the Pillow image processing library installed locally."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f79a057886a417c80818a069cce8d4eca8b680f11bfc99379de7630877e52d1f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f24596b1697185370cdd2bf8441110695750d1c7e046909aaa04a38a8f795336"
+      ],
+      "text": "The agent is run from the Agent directory with `python Test.py`, and results are written to ProblemResults.csv."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f2135c40a07cf6f8b613ba6a20e7c66e3a1c033a216317e9853cccbb8b2f5d5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L11-L11"
+        },
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47d63ec7e6d500dcf68a154ce13c6b5201403ae4c6f2985abd430590482195b3",
+        "slc_f24596b1697185370cdd2bf8441110695750d1c7e046909aaa04a38a8f795336"
+      ],
+      "text": "The repository includes a set of RPM problems the agent can be tested against, plus an image illustrating the layered architecture."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee399891bd92fe6f6136246590067291313b63f93bf179725c7578f6a72eea54",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+          "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+          "line_end": 4,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "teldridge11/rpm-ai-agent",
+          "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md#L4-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2bb18eb940076d3776bff66707d7e725e29791e3d6cfb0a22f37a7129e271015"
+      ],
+      "text": "The project targets Raven's Progressive Matrices, a visual-reasoning intelligence test with 2x2 or 3x3 matrices and six or eight answer choices per problem."
+    }
+  ],
+  "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 30,
+        "path": "README.md",
+        "size": 2362
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1685,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_36cf46f05bc55b3c90c5936f8b0d0aac",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/teldridge11/rpm-ai-agent/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/012875b7bce6006d/manifest.json",
+  "package_id": "pkg_bc49687bbaf8ed03f5f4ecfdef1b19c59457390324ead3cdb13150dea8017e1c",
+  "repo": "teldridge11/rpm-ai-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d42d730e0125d774c35f2e924f933f769d153453a84376b923f93445ec489b4f",
+  "snapshot_id": "012875b7bce6006d",
+  "sources": [
+    {
+      "commit": "b58d9dee36491d3aa7f338955ca2db1c121c1f6a",
+      "git_sha": "b9a6b71e84866dcf98463cc7a18f14789eecad91",
+      "lines": 30,
+      "path": "README.md",
+      "repository": "teldridge11/rpm-ai-agent",
+      "sha256": "91c7f57de4bbdfd9b90489830eafe8561db1adef28701fd1d1464da0408b55c5",
+      "source_id": "src_1b47902fdbd156fdab24a082fa7bcd08",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/teldridge11/RPM-AI-Agent/blob/b58d9dee36491d3aa7f338955ca2db1c121c1f6a/README.md"
+    }
+  ],
+  "summary": "A Python agent that solves Raven's Progressive Matrices using a three-layer reasoning approach, with documented accuracy results and simple CLI usage via Test.py.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,801 @@
+{
+  "applied_operation_id": "op_000cc4f43765454eb5a9b3e6a1392397",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_aff41bb1d6529d50d5190d8d90b9b0584821ec7ed771c914a8c4b9a8a87b9acc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 93,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L88-L93"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 366,
+          "line_start": 362,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L362-L366"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a324f37ccfbb64dffeeebbdc8676a47587253eccf52753e189d05dc5d7bdf205",
+        "slc_ab40ed69e7dd013db33c0341e0a06e03df5cbe23a72535dda420ef5bacfadbf7"
+      ],
+      "text": "The product exposes a CLI four-command loop: agentpack work, learn --json, finish, and doctor, where work prepares task context, finish records validation and task memory, and doctor checks installation and integration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbe419f399197dcb2bf30310a246f3c4f107f3b0e4b7b47405025bae25d03ec4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+          "line_end": 304,
+          "line_start": 304,
+          "path": "docs/architecture.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md#L304-L304"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b932b1b62a2bf1a6e7faee43accd229a0136aa59e2c86c8eb7d8300bf0549df1"
+      ],
+      "text": "The MCP server exposes tools including start_task, pack_context, get_context, explain, related, stats, and delta, per the package layout documentation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d116c0cf96861979462133c2f4327d28977f0d3c53fd629c4727657b85bb339d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/architecture.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md#L3-L3"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+          "line_end": 86,
+          "line_start": 66,
+          "path": "docs/architecture.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md#L66-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3797adcb5e82c00779c7d99bdb9708d08c4316bbd0f54e7213e4b8186321d70e",
+        "slc_c56caab6894a0c76e6b4814ce3d50093e8810f6e00ac99a338a1066bcb2a65da"
+      ],
+      "text": "The architecture is a local pipeline: scan with .agentignore, build offline summaries and a Tree-sitter semantic graph, score files for the task, select by value per token, redact secrets at materialization, and cache a pack registry with block IDs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a0658aa6790e099b39e55a1973d2d0082225b27bf4bdaffb309fb0fe08ee30e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+          "line_end": 277,
+          "line_start": 269,
+          "path": "docs/architecture.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md#L269-L277"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+          "line_end": 284,
+          "line_start": 279,
+          "path": "docs/architecture.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md#L279-L284"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e2725fffb3450d69b222c792ad97b67c52ddd1dbd44df05a1b2419f37934ecf",
+        "slc_402b300cb2e215cdf7dd9b46e67b094172444732439de4202025c6b3e0105ba8"
+      ],
+      "text": "Adapters render agent-specific context files (Claude, Cursor, Windsurf, Codex, Antigravity, generic), while separate installers configure each tool's repo files such as CLAUDE.md, .cursorrules, and AGENTS.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86ffd3cc21d7e346af668407533985f08d124640693d211af44f8ce51a352949",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 267,
+          "line_start": 264,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L264-L267"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+          "line_end": 386,
+          "line_start": 386,
+          "path": "docs/architecture.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md#L386-L386"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e86be386f74b8276a15d64b7dacd3dcd317360bd9449f51995bac763e6d193e",
+        "slc_bd0feee2acedc98e2f77513a0d3e98708a51682c030052f1fdac573c980be0e5"
+      ],
+      "text": "Generated context, receipts, task state, snapshots, and memory are stored locally under .agentpack/, and summary caches are keyed by file hash so only changed files are re-summarized."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_31a43498fcc175add0626d3b0ef99e249e6a755dd4dd2caeb270755320d7adc5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+          "line_end": 368,
+          "line_start": 343,
+          "path": "docs/architecture.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md#L343-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3aca3b7cb8da31dafedc478aed2d2d5415cd5c4c7b0e9e88fae15bf45b53a149"
+      ],
+      "text": "Sessions are thread-scoped by default: when host session/thread environment variables are present, commands and MCP tools use isolated state under .agentpack/threads/<id>/, with --thread global as a legacy opt-out."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_538d094a33ced44031b6f7bc86ad50456583165c8f72c2c43019ceafa6fc1561",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 310,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L309-L310"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 307,
+          "line_start": 303,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L303-L307"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 298,
+          "line_start": 295,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L295-L298"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49b5881f9b0b2bc564264f3f8e66047c246a90890989aacbc9b9b66f23e4f0d8",
+        "slc_d54ff93f3fbb3e8435166f7ed8b9bb23b168414d3e9eef0e6dfc9926c7823646",
+        "slc_fd83eeaade3568067a80b0836ba6ca2f51ed3c5ca4aefb9abe6108bc3cea1cc3"
+      ],
+      "text": "The public benchmark measures file selection against files changed in historical public commits: 107 cases with 67.2% average recall and 50.6% average token precision, per the published results artifact."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da3f65b49be34024cb8985e4ff3cc8f592bf39b4f8ce20e8217a648dac44bcc2",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 324,
+          "line_start": 321,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L321-L324"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 301,
+          "line_start": 300,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L300-L301"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_475dbc3cad5230e00a685a953092e3a5d7756290fe295f01076873f722fe2cbf",
+        "slc_db11c0c05f3130c12d82a55796038b0eb8d74b2da0501ba34b92ac802bf1deab"
+      ],
+      "text": "The benchmark authors state it only supports claims about ranked file-selection quality, not reduced tool calls, cost, completion time, or task success; no public end-to-end A/B outcome report is published yet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c1e44a62b1b69e6ddb4799ccd52eeefaca51b6108527df4250a2a87e547f5b2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 337,
+          "line_start": 334,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L334-L337"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 330,
+          "line_start": 328,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L328-L330"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 351,
+          "line_start": 348,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L348-L351"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17d1f693d56bc1ace71c08d5fd5fe62fbd360c98c0f74328d8ddfd631aa1458b",
+        "slc_199cec5d2a753b8f1d8d520da8b38b2d12c11c9a43240322ad56c6d6359dd002",
+        "slc_eee8eed87cefa95284e8b2c5ded57c198e021347a419827e69ff92cad14aac3a"
+      ],
+      "text": "The CLI requires Python 3.10+ and is installable via pipx (recommended) or pip; the npm wrapper @vishal2612200/agentpack installs the Python CLI and requires Node.js 18+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c386e4c0b6f7208262b31272dd45150c13701af213e8c4566bc1a532bc5c7cb8",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 422,
+          "line_start": 422,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L422-L422"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 398,
+          "line_start": 398,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L398-L398"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 402,
+          "line_start": 400,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L400-L402"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_042669b867e3e6e0c88076cfcf528307c7d01b8ae601a8aeb84bd81fa8ea28f0",
+        "slc_70d639c4bee4838a1f3972554be1f49bd09f0135174e6d79744fe2f9fcb21e84",
+        "slc_d5ff41629f2b4b6a18234b7f793c83121748f924653f97e805520ddb4902f405"
+      ],
+      "text": "The project is at alpha version 0.4.4, licensed AGPL v3, with APIs that may change before 1.0 and platform targets of macOS, Linux, and Windows PowerShell with Git for Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bdf4f3040b7671bd019b1c10e5795b1a2163a87e14e7ac912a9840f661661df",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 77,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L73-L77"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 208,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L206-L208"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 165,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L162-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ad84924caa4653ee93d45f483102876d0b5940fcafa85819a871c045b52f247",
+        "slc_6349f0bf56fb2b2811cea61ce516ceef0a952f0c5a492c1ab5cf834df607a5d2",
+        "slc_cd007fe245d63c4efbb53cdc41f705f4c0522744166c866309e1609f6e331ef7"
+      ],
+      "text": "AgentPack is advisory: it does not edit source code, assign people, enforce policy, approve changes, or provide hard multi-agent locks, and it is not a coding agent, hosted index, or correctness oracle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f7881a93d0fc238ab33b2f78842149641b32db3f969e72c357b08826dbc8afa",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 267,
+          "line_start": 264,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L264-L267"
+        },
+        {
+          "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+          "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+          "line_end": 280,
+          "line_start": 276,
+          "path": "README.md",
+          "repository": "vishal2612200/agentpack",
+          "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md#L276-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e86be386f74b8276a15d64b7dacd3dcd317360bd9449f51995bac763e6d193e",
+        "slc_8e43707fbdf64bd875623ee2f5803f0c33d392439a5d4fe2c17a40bb4f8ca4ab"
+      ],
+      "text": "Core scan, route, pack, stats, explain, and benchmark operations run without hosted indexing, embeddings, or model API calls; network use is limited to explicit GitHub operations, optional enrichment, and external-agent workflows."
+    }
+  ],
+  "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 422,
+        "path": "README.md",
+        "size": 20244
+      },
+      {
+        "lines": 406,
+        "path": "docs/architecture.md",
+        "size": 30071
+      },
+      {
+        "lines": 320,
+        "path": "docs/configuration.md",
+        "size": 11859
+      },
+      {
+        "lines": 58,
+        "path": "docs/design.md",
+        "size": 2648
+      },
+      {
+        "lines": 24,
+        "path": "GEMINI.md",
+        "size": 2882
+      },
+      {
+        "lines": 52,
+        "path": "llms-full.txt",
+        "size": 2680
+      }
+    ],
+    "omitted": [
+      {
+        "path": "llms.txt",
+        "reason": "file-budget",
+        "size": 1732
+      },
+      {
+        "path": "PRODUCT.md",
+        "reason": "file-budget",
+        "size": 3300
+      },
+      {
+        "path": "docs/agent-plugins.md",
+        "reason": "file-budget",
+        "size": 8262
+      },
+      {
+        "path": "docs/agentpack-for-ai-agents.md",
+        "reason": "file-budget",
+        "size": 2977
+      },
+      {
+        "path": "docs/agentpack-vs-augment-context-engine.md",
+        "reason": "file-budget",
+        "size": 2809
+      },
+      {
+        "path": "docs/agentpack-vs-repomix.md",
+        "reason": "file-budget",
+        "size": 3017
+      },
+      {
+        "path": "docs/ai-coding-agent-context.md",
+        "reason": "file-budget",
+        "size": 3441
+      },
+      {
+        "path": "docs/benchmark-learnings.md",
+        "reason": "file-budget",
+        "size": 39726
+      },
+      {
+        "path": "docs/benchmarking.md",
+        "reason": "file-budget",
+        "size": 6844
+      },
+      {
+        "path": "docs/claude-code-context-engine.md",
+        "reason": "file-budget",
+        "size": 3542
+      },
+      {
+        "path": "docs/codex-plugin.md",
+        "reason": "file-budget",
+        "size": 7456
+      },
+      {
+        "path": "docs/commands.md",
+        "reason": "file-budget",
+        "size": 93360
+      },
+      {
+        "path": "docs/cursor-context-packing.md",
+        "reason": "file-budget",
+        "size": 2032
+      },
+      {
+        "path": "docs/dashboard-schema.md",
+        "reason": "file-budget",
+        "size": 2745
+      },
+      {
+        "path": "docs/dashboard-v2.md",
+        "reason": "file-budget",
+        "size": 11066
+      },
+      {
+        "path": "docs/data-flow.md",
+        "reason": "file-budget",
+        "size": 1451
+      },
+      {
+        "path": "docs/demo.md",
+        "reason": "file-budget",
+        "size": 983
+      },
+      {
+        "path": "docs/development.md",
+        "reason": "file-budget",
+        "size": 4878
+      },
+      {
+        "path": "docs/github-community-setup.md",
+        "reason": "file-budget",
+        "size": 4236
+      },
+      {
+        "path": "docs/how-agentpack-works.md",
+        "reason": "file-budget",
+        "size": 7272
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 2825
+      },
+      {
+        "path": "docs/integrations.md",
+        "reason": "file-budget",
+        "size": 16182
+      },
+      {
+        "path": "docs/limitations.md",
+        "reason": "file-budget",
+        "size": 11705
+      },
+      {
+        "path": "docs/llms-full.txt",
+        "reason": "file-budget",
+        "size": 2680
+      },
+      {
+        "path": "docs/llms.txt",
+        "reason": "file-budget",
+        "size": 1732
+      },
+      {
+        "path": "docs/mcp-context-engine.md",
+        "reason": "file-budget",
+        "size": 3736
+      },
+      {
+        "path": "docs/privacy.md",
+        "reason": "file-budget",
+        "size": 3263
+      },
+      {
+        "path": "docs/reduce-claude-code-token-usage.md",
+        "reason": "file-budget",
+        "size": 2490
+      },
+      {
+        "path": "docs/requirements.txt",
+        "reason": "file-budget",
+        "size": 23
+      },
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 87
+      },
+      {
+        "path": "docs/runtime-loop.md",
+        "reason": "file-budget",
+        "size": 9836
+      },
+      {
+        "path": "docs/terms.md",
+        "reason": "file-budget",
+        "size": 402
+      },
+      {
+        "path": "docs/threat-model.md",
+        "reason": "file-budget",
+        "size": 1889
+      },
+      {
+        "path": "docs/examples/agent-behavior-before-after.md",
+        "reason": "file-budget",
+        "size": 1627
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-11-owner-evidence-calibration.md",
+        "reason": "file-budget",
+        "size": 3918
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-11-selection-v2-redesign.md",
+        "reason": "file-budget",
+        "size": 5405
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 2807
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 65248
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 3203
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1122
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2852
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1483
+      }
+    ],
+    "omitted_count": 42,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 761,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 48,
+      "complete": false,
+      "omitted": 42,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ca0b62144a5b5715bf1199aad501b5e3",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/vishal2612200/agentpack/42291598e79344feae3a9dfdfd0778df9e7dd578/fa61ecf8e3ff9329/manifest.json",
+  "package_id": "pkg_8f8a45dfc5ae279f0d29562019ce8ace597fb177748dafe2df1f8d766d01bd19",
+  "repo": "vishal2612200/agentpack",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f60426f1cc34bd28fdeed20fc53400d7dde22313869f73f735e421a52daca0e4",
+  "snapshot_id": "fa61ecf8e3ff9329",
+  "sources": [
+    {
+      "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+      "git_sha": "0342a0bbe182dda674eee3f52da78c55a8123529",
+      "lines": 24,
+      "path": "GEMINI.md",
+      "repository": "vishal2612200/agentpack",
+      "sha256": "62b2abd68eac3960aaeb5d7db245543aea42468156fb0e9b8a0370140ef03895",
+      "source_id": "src_41172ed39f3c5fcf9a180cc395d4b6d3",
+      "stored": "gemini.md-399080f41ccf.md",
+      "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/GEMINI.md"
+    },
+    {
+      "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+      "git_sha": "c65128010185e7dcbb31e8ea551c86d50fdeac18",
+      "lines": 422,
+      "path": "README.md",
+      "repository": "vishal2612200/agentpack",
+      "sha256": "4611638c1f3241b03bcd928638cec2ccc7180ad992b538cf7bbef56ccfd6251c",
+      "source_id": "src_ca158ac32066586290f25ae7b5027533",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/README.md"
+    },
+    {
+      "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+      "git_sha": "8ca23d68fbedbd078a6ff4b767d2bc0f66a44bda",
+      "lines": 406,
+      "path": "docs/architecture.md",
+      "repository": "vishal2612200/agentpack",
+      "sha256": "9acf372656433adcc21a9562c98966c8950fe2d1570afa9e64988da6c48b692b",
+      "source_id": "src_726435eba8ae58038bb664f838d3c28f",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/architecture.md"
+    },
+    {
+      "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+      "git_sha": "217b0c2d4345ef053e40a107f790dea64dbadb61",
+      "lines": 320,
+      "path": "docs/configuration.md",
+      "repository": "vishal2612200/agentpack",
+      "sha256": "d82b38715cf1a1f3dc4d45bc963052c9400c6e4eec833d83714ab8c9eac9a883",
+      "source_id": "src_7c0d3e108485512fa60b9a3ecccd59f4",
+      "stored": "configuration.md-17ed18489a95.md",
+      "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/configuration.md"
+    },
+    {
+      "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+      "git_sha": "4440834647a9ee2cab49da2f1dcb463675b44965",
+      "lines": 58,
+      "path": "docs/design.md",
+      "repository": "vishal2612200/agentpack",
+      "sha256": "554265fc8f44c9a31f709e6faf749635b90da6ef8aa824ebbf1f49a1a10d6112",
+      "source_id": "src_b08c5f575cf4567682bc27d52f4400c9",
+      "stored": "design.md-b0929dacd4f1.md",
+      "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/docs/design.md"
+    },
+    {
+      "commit": "42291598e79344feae3a9dfdfd0778df9e7dd578",
+      "git_sha": "c40413324495d517bebcf6317441678ecc752a09",
+      "lines": 52,
+      "path": "llms-full.txt",
+      "repository": "vishal2612200/agentpack",
+      "sha256": "e4ab635f6ec541a3cda47eda76e1c39e6c0833b9e6f045a546c50dabc8ef38cd",
+      "source_id": "src_183b609cc3c35b83a7c06f8ee9dce8ab",
+      "stored": "llms-full.txt-db21784bc3b6.txt",
+      "url": "https://github.com/vishal2612200/agentpack/blob/42291598e79344feae3a9dfdfd0778df9e7dd578/llms-full.txt"
+    }
+  ],
+  "summary": "AgentPack is a local, agent-neutral context-preparation and workflow-state layer for AI coding agents, distributed as agentpack-cli (PyPI) and an npm wrapper, with a CLI, MCP server, adapters/installers, thread-scoped local state under .agentpack/, and a published file-selection benchmark. The prior summary's mention of a dashboard distribution component is unsupported by the cited slices and has been removed. Evidence coverage: 118 of 183 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

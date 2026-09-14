@@ -1,0 +1,970 @@
+{
+  "applied_operation_id": "op_aec0a79cb18d458399ccc1e0a9bd746f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_099faebbe18e45737952f8e7a174d17fcc457581cc224c4fb942fa2932601407",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 50,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L42-L50"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 54,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L52-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63714a715b22c43ba76a0bb387f357b6d4db73ab10dcf91d889351756efa6c24",
+        "slc_f4e6e198843d0da21a5e889b0e46cbc19baa5dd0c241950614962de19a8f8983"
+      ],
+      "text": "The CLI offers serve, daemon (start/status/restart/stop), session list, and usage daily subcommands; on first run it discovers sessions, syncs them into local SQLite, and serves a web UI at http://127.0.0.1:8080."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86463de79669ddfbde84cc02ed0c760a395d2d0254da8e8aa39017ee0baf0313",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 255,
+          "line_start": 253,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L253-L255"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 264,
+          "line_start": 257,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L257-L264"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25b6998988a1576cad925d6b5e4f5a48c274343e18ac153f255995bd5addb6b8",
+        "slc_f43f0dd56ad403e7b55c509a88d01ed4bfd98bfce4554a6533e3a7097a45d4dc"
+      ],
+      "text": "A REST endpoint GET /api/v1/sessions/{id}/usage returns fields such as total_output_tokens, peak_context_tokens, and cost as an integer microdollar object; existing sessions return 200 and missing ones 404."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_640dd262d68ca7da7aa53ab7bccdbe923d4f7be5dbf33c1a8b9f5c8cf6f9201d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 752,
+          "line_start": 747,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L747-L752"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a9fc000b20647cf4293ce8bb09510c2de0b8c202dbd101f2c5266297f66104bb"
+      ],
+      "text": "The project layout includes a cmd/agentsview CLI entrypoint, internal Go packages (config, db, parser, server, sync, postgres), a Svelte 5 SPA frontend, and a Tauri desktop wrapper."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd048aa49803752ea4798a064394a5344b8920fc5b061cbcd645020261c5a54f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 90,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L86-L90"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 61,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L56-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f7e1c414ef599eab3db6e94c6fe7cc0d971a7627541d3201e2584868a0aeadd",
+        "slc_55314502040b103ad83a0687aaa08aeb4d8cee80cb0042cf712410f67a5cfb9b"
+      ],
+      "text": "The daemon is a single process hosting the web UI, API, session sync, and file watchers; background daemons self-exit after an idle period unless a client request or daemon-owned job is active."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc052e76cf6eb1774c899bf8742a6e32424828218569cd07bf4b73073bca894e",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 672,
+          "line_start": 669,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L669-L672"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fea4aa3fb698d80ecc031a201c2858a8a33a2643ab1e708bfff334364fa2cd06"
+      ],
+      "text": "SQLite is the primary local archive with FTS5 search and a writable UI; PostgreSQL is an optional shared team backend served read-only, and DuckDB is an optional mirror file or Quack endpoint served read-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d844ae94cca37cc6718e46b5afebbea603f0229efaf0444f880a8b6b4831ce80",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 232,
+          "line_start": 225,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L225-L232"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44db6b319c3180c3925e3c3ba40a3b73548d90f49fa4fc572ec2de7247c58cb7"
+      ],
+      "text": "Cost calculation uses LiteLLM and OpenRouter pricing rates with an offline fallback, and reports authoritative Copilot CLI billing totals when session logs provide them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6225177e28586c668ee0b049c5331280f1227a75a42b64c5770a1e4f3942b5d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 716,
+          "line_start": 716,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L716-L716"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d68dcd55e9f475b5b5115a486549702a1dbba6d72399b80d7bfc613aae7d5b32"
+      ],
+      "text": "Building the project requires Go 1.27+ with CGO and Node.js 24.11+."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87ca86287f73e1f716674024cb7222c856290d65af2b6b057b75ebd5c487d6a7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 413,
+          "line_start": 408,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L408-L413"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 406,
+          "line_start": 346,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L346-L406"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 466,
+          "line_start": 465,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L465-L466"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 419,
+          "line_start": 415,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L415-L419"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 344,
+          "line_start": 340,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L340-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_483a98a9d5396140a2784e5f576a0780660fa589b7f10fc8e3981030656654fb",
+        "slc_7a39b2daaefdf1132d4f6595e22795299026365d3fcda12aa23def1da2693eff",
+        "slc_90b09df7cbd56b8899b60a8d5bfa2efdec68c5a6e6c765a9a6286b755cdbedb6",
+        "slc_922b0e332e1a73d832029564b4db4ee02b37475d640b2cee5bad76db226d231e",
+        "slc_f87c986cbc3e9b1fdc736e624d80b257f2eea8ce0d1bcba651d47f5ab5a182f8"
+      ],
+      "text": "The tool discovers sessions from multiple coding agents including Aider, Amp, Antigravity, Goose, Grok, and Copilot, with per-agent session directories and env-var overrides such as AIDER_DIR, GROK_DIR, and GOOSE_PATH_ROOT."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29356ed5e49796a2076775b733278f93cef66b6fd06a3424fd7a8e24710ffb19",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 143,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L141-L143"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 103,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L99-L103"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 122,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L116-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_764379d412df3d5d2f577bf27968cfda89c445db5e21b595fcd4b7057db0780e",
+        "slc_782d0c240858679753f11d2ca6625462c06dfcc9677e4b06fea792bb4f9333d9",
+        "slc_d562e8f16996c07adb21ec2143d440563b44be51b8f2d51f76ae3fb1ee378c25"
+      ],
+      "text": "The server binds to loopback by default and validates the request Host header to guard against DNS-rebinding; forwarded access needs --public-url, and exposure beyond loopback should enable --require-auth."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac32f679f03cc9b3ebad6b87ae22d66db2d45e22010111893e5118c04fa4b158",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 665,
+          "line_start": 659,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L659-L665"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fe2b9109cfcae39ece282679a64dda03abd0e9ab11b6bd967ee886b64d4e498c"
+      ],
+      "text": "Quack serving uses conservative defaults: local serving binds to loopback, requires a token, and rejects non-loopback plain HTTP unless --allow-insecure is explicitly passed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3686de3a820e69c33aa043f1c1580406b363f125289c331cd94f8a09a6625f29",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 458,
+          "line_start": 454,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L454-L458"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 344,
+          "line_start": 340,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L340-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3e946e2126c379e3417c06dc0fcef5ae4599f0aa71ef1711f46117bff44f8e1",
+        "slc_f87c986cbc3e9b1fdc736e624d80b257f2eea8ce0d1bcba651d47f5ab5a182f8"
+      ],
+      "text": "Aider is opt-in because it has no central session directory, Amp support is deprecated since current Amp releases may store threads server-side, and JetBrains Copilot requires an external exporter tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ce2f92e4a3970e44b739456383b225f4252b2dfa59c3eeaba44289e6b6faf5c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 685,
+          "line_start": 676,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L676-L685"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ba568a790bacd17ae3f589b19d0f564623fa69486e1424098db102692b809ae7"
+      ],
+      "text": "DuckDB search currently falls back to substring/regex behavior; SQLite FTS5 remains the indexed search path for primary local serving."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05c05b4bedad0c143adad02e640e6452966319f73b93b6f6d9ea0a6effba7739",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 696,
+          "line_start": 689,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L689-L696"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e2ab0d3c1e4921bdaeab55625fa71d5cb75a76dba8871a278c19a47542b3d455"
+      ],
+      "text": "Telemetry is a limited anonymous daemon_active ping to PostHog at startup and every 24 hours, excluding session, project, prompt, file path, account, or machine identity, and can be disabled via environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de37c7dc35293f2a170cfaedfe106a6cbf20d59fb93e29745ca25a8172105080",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 731,
+          "line_start": 725,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L725-L731"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 743,
+          "line_start": 741,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L741-L743"
+        },
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 723,
+          "line_start": 718,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L718-L723"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45596471c6c634def91a22cba9d9c6cae30b604d7699f51723c2b21dc8ebc5c2",
+        "slc_48b9c0b54b9f50c5a60d8a0b4c8804dc582262cfc21833d0db13bc4161b86a6d",
+        "slc_9da4b24cca74ea0cbed361b3ceb4d3f3f85200cae7200359384d19b54201b14c"
+      ],
+      "text": "Repository development practice: building and testing use make targets (make dev, make build, make test with CGO and fts5 tags, make lint, make e2e for Playwright), with prek-based pre-commit hooks installed via make lint-tools and make install-hooks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4d17d6f78b46a3de9f5bd69a9b6949bf0288e6e9707cd3816721f4985ff17c7d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+          "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+          "line_end": 739,
+          "line_start": 733,
+          "path": "README.md",
+          "repository": "kenn-io/agentsview",
+          "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md#L733-L739"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_432f99e330e8f01134572030df1aa852d2dc3357b0ef892801620359e4f1bd70"
+      ],
+      "text": "Repository development practice: make bench-backends requires Docker and testcontainers to benchmark SQLite, DuckDB, and PostgreSQL store reads on a default fixture of 1,000 sessions and 64,000 messages, scalable via BENCH_BACKENDS_* env vars."
+    }
+  ],
+  "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 764,
+        "path": "README.md",
+        "size": 47005
+      },
+      {
+        "lines": 129,
+        "path": "DESIGN.md",
+        "size": 7296
+      },
+      {
+        "lines": 47,
+        "path": "PRODUCT.md",
+        "size": 1674
+      },
+      {
+        "lines": 285,
+        "path": "docs/activity.md",
+        "size": 14668
+      },
+      {
+        "lines": 118,
+        "path": "docs/artifact-sync.md",
+        "size": 5100
+      },
+      {
+        "lines": 142,
+        "path": "docs/chat-import.md",
+        "size": 5354
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/configuration.md",
+        "reason": "byte-budget",
+        "size": 108915
+      },
+      {
+        "path": "docs/commands.md",
+        "reason": "file-budget",
+        "size": 91606
+      },
+      {
+        "path": "docs/data.md",
+        "reason": "file-budget",
+        "size": 8972
+      },
+      {
+        "path": "docs/duckdb.md",
+        "reason": "file-budget",
+        "size": 14914
+      },
+      {
+        "path": "docs/filesystem-sync.md",
+        "reason": "file-budget",
+        "size": 7376
+      },
+      {
+        "path": "docs/hosted-raw-sync.md",
+        "reason": "file-budget",
+        "size": 11186
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 5952
+      },
+      {
+        "path": "docs/llms.txt",
+        "reason": "file-budget",
+        "size": 4672
+      },
+      {
+        "path": "docs/mcp.md",
+        "reason": "file-budget",
+        "size": 7979
+      },
+      {
+        "path": "docs/one-shot-capture.md",
+        "reason": "file-budget",
+        "size": 20555
+      },
+      {
+        "path": "docs/pg-sync.md",
+        "reason": "file-budget",
+        "size": 27079
+      },
+      {
+        "path": "docs/quality.md",
+        "reason": "file-budget",
+        "size": 1544
+      },
+      {
+        "path": "docs/quickstart.md",
+        "reason": "file-budget",
+        "size": 12557
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 5192
+      },
+      {
+        "path": "docs/recall.md",
+        "reason": "file-budget",
+        "size": 16273
+      },
+      {
+        "path": "docs/recent-edits.md",
+        "reason": "file-budget",
+        "size": 2288
+      },
+      {
+        "path": "docs/remote-access.md",
+        "reason": "file-budget",
+        "size": 28523
+      },
+      {
+        "path": "docs/reporting-export.md",
+        "reason": "file-budget",
+        "size": 20914
+      },
+      {
+        "path": "docs/semantic-search-internals.md",
+        "reason": "file-budget",
+        "size": 42080
+      },
+      {
+        "path": "docs/semantic-search.md",
+        "reason": "file-budget",
+        "size": 52174
+      },
+      {
+        "path": "docs/session-api.md",
+        "reason": "file-budget",
+        "size": 66301
+      },
+      {
+        "path": "docs/session-export.md",
+        "reason": "file-budget",
+        "size": 18349
+      },
+      {
+        "path": "docs/session-intelligence.md",
+        "reason": "file-budget",
+        "size": 7324
+      },
+      {
+        "path": "docs/stats.md",
+        "reason": "file-budget",
+        "size": 7465
+      },
+      {
+        "path": "docs/token-usage.md",
+        "reason": "file-budget",
+        "size": 53330
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 61963
+      },
+      {
+        "path": "docs/agents/background-work.md",
+        "reason": "file-budget",
+        "size": 3925
+      },
+      {
+        "path": "docs/agents/build.md",
+        "reason": "file-budget",
+        "size": 1026
+      },
+      {
+        "path": "docs/agents/s3-providers.md",
+        "reason": "file-budget",
+        "size": 5134
+      },
+      {
+        "path": "docs/agents/storage.md",
+        "reason": "file-budget",
+        "size": 20085
+      },
+      {
+        "path": "docs/agents/testing.md",
+        "reason": "file-budget",
+        "size": 2764
+      },
+      {
+        "path": "docs/internal/background-sync-efficiency.md",
+        "reason": "file-budget",
+        "size": 8102
+      },
+      {
+        "path": "docs/internal/codex-incremental-streaming-design.md",
+        "reason": "file-budget",
+        "size": 5877
+      },
+      {
+        "path": "docs/internal/gpt-5-6-sol-pricing-change-2026-08-26.md",
+        "reason": "file-budget",
+        "size": 2631
+      },
+      {
+        "path": "docs/internal/huma-api-routes.md",
+        "reason": "file-budget",
+        "size": 2139
+      },
+      {
+        "path": "docs/internal/litellm-pricing-capabilities-2026-08-24.md",
+        "reason": "file-budget",
+        "size": 13471
+      },
+      {
+        "path": "docs/internal/performance-gates.md",
+        "reason": "file-budget",
+        "size": 22929
+      },
+      {
+        "path": "docs/internal/performance-investigation.md",
+        "reason": "file-budget",
+        "size": 12375
+      },
+      {
+        "path": "docs/internal/performance-simulator.md",
+        "reason": "file-budget",
+        "size": 11795
+      },
+      {
+        "path": "docs/internal/pg-usage-native-optimization.md",
+        "reason": "file-budget",
+        "size": 1724
+      },
+      {
+        "path": "docs/internal/pricing-source-survey-2026-08-25.md",
+        "reason": "file-budget",
+        "size": 24773
+      },
+      {
+        "path": "docs/internal/recall-extraction.md",
+        "reason": "file-budget",
+        "size": 28205
+      },
+      {
+        "path": "docs/internal/session-format-sources.md",
+        "reason": "file-budget",
+        "size": 195495
+      },
+      {
+        "path": "docs/internal/usage-aggregate-cache-implementation.md",
+        "reason": "file-budget",
+        "size": 4336
+      },
+      {
+        "path": "docs/internal/usage-aggregate-cache.md",
+        "reason": "file-budget",
+        "size": 10235
+      },
+      {
+        "path": "docs/internal/visual-studio-copilot-traces.md",
+        "reason": "file-budget",
+        "size": 6060
+      },
+      {
+        "path": "docs/screenshots/README.md",
+        "reason": "file-budget",
+        "size": 2422
+      },
+      {
+        "path": "docs/website/guide.md",
+        "reason": "file-budget",
+        "size": 3574
+      },
+      {
+        "path": "docs/website/index.md",
+        "reason": "file-budget",
+        "size": 5126
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-09-scoped-push-and-provider-controls.md",
+        "reason": "file-budget",
+        "size": 25643
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-12-vscode-copilot-response-items.md",
+        "reason": "file-budget",
+        "size": 8292
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-13-codex-s3-fork-replay.md",
+        "reason": "file-budget",
+        "size": 12605
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-16-windows-tray-lifecycle.md",
+        "reason": "file-budget",
+        "size": 6580
+      },
+      {
+        "path": "docs/superpowers/plans/2026-09-01-release-documentation-refresh.md",
+        "reason": "file-budget",
+        "size": 11473
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-09-scoped-push-and-provider-controls-design.md",
+        "reason": "file-budget",
+        "size": 12198
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-12-vscode-copilot-response-items-design.md",
+        "reason": "file-budget",
+        "size": 3250
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-13-codex-s3-fork-replay-design.md",
+        "reason": "file-budget",
+        "size": 2827
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-16-windows-tray-lifecycle-design.md",
+        "reason": "file-budget",
+        "size": 1854
+      },
+      {
+        "path": "docs/superpowers/specs/2026-09-01-release-documentation-design.md",
+        "reason": "file-budget",
+        "size": 4398
+      },
+      {
+        "path": "docs/website/fonts/licenses/Inter-OFL-1.1.txt",
+        "reason": "file-budget",
+        "size": 4380
+      },
+      {
+        "path": "docs/website/fonts/licenses/JetBrains-Mono-OFL-1.1.txt",
+        "reason": "file-budget",
+        "size": 4398
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 6061
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 10959
+      },
+      {
+        "path": "docs/changelog.md",
+        "reason": "file-budget",
+        "size": 178517
+      },
+      {
+        "path": "docs/contributing.md",
+        "reason": "file-budget",
+        "size": 9939
+      }
+    ],
+    "omitted_count": 66,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3058,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 72,
+      "complete": false,
+      "omitted": 66,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_48c773a0c00157fdab567a1fe38bd2c2",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/kenn-io/agentsview/d61382967490e72608ae8064d7a06bec3468b1d6/854bb9d72f0e0765/manifest.json",
+  "package_id": "pkg_de7c0cbff13a124430a9f352b6c7aa0dc75457601a979ebb942746e2b4086a4e",
+  "repo": "kenn-io/agentsview",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "cdd58fc277a8d0407301ddf53604e7aed39a124eb2fd3fd8e5048b07013beb03",
+  "snapshot_id": "854bb9d72f0e0765",
+  "sources": [
+    {
+      "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+      "git_sha": "3e8328c0d9dd8e50155cfa36ac38783efd9bdc38",
+      "lines": 129,
+      "path": "DESIGN.md",
+      "repository": "kenn-io/agentsview",
+      "sha256": "ed6d7cc717a259117499aaaf3a80aaf6ca816ec7621761c53564146046d7fc55",
+      "source_id": "src_8e0eac9366af5f39bd68586f9e9c613a",
+      "stored": "design.md-3dc5dd454e08.md",
+      "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/DESIGN.md"
+    },
+    {
+      "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+      "git_sha": "98433742d28492ebe6ea1baabd17fadc50166d2b",
+      "lines": 47,
+      "path": "PRODUCT.md",
+      "repository": "kenn-io/agentsview",
+      "sha256": "2d414ec322a3d283f783dbf62244ed1b1d6566446ecbadecf25dd705d64cf091",
+      "source_id": "src_cef704d53b1d5f858b7c0a0f8262b4e2",
+      "stored": "product.md-211481d78d1a.md",
+      "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/PRODUCT.md"
+    },
+    {
+      "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+      "git_sha": "93f197e6a8f3574dd2eb192c5a64b2ab1751efa3",
+      "lines": 764,
+      "path": "README.md",
+      "repository": "kenn-io/agentsview",
+      "sha256": "95ee6f691c3d2febed6e232761c028653162f78680757eb20f80227752c01850",
+      "source_id": "src_cf70a40a4c61502c9cd2a2c0a0015f4c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/README.md"
+    },
+    {
+      "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+      "git_sha": "b34d1f5e61877f3834a8efe3f6b1c4436a9cf827",
+      "lines": 285,
+      "path": "docs/activity.md",
+      "repository": "kenn-io/agentsview",
+      "sha256": "a49beae85bc3fc9d140e991da448f329ea1b5337f718143503b51b49d5a3cc31",
+      "source_id": "src_34fee07c155d5f219e21027543526253",
+      "stored": "activity.md-d2535871cc6c.md",
+      "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/docs/activity.md"
+    },
+    {
+      "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+      "git_sha": "fc99f481cc2845be7ceead6ccbfc0deb2704ee1d",
+      "lines": 118,
+      "path": "docs/artifact-sync.md",
+      "repository": "kenn-io/agentsview",
+      "sha256": "eb7e903b9b0485b319c1740f7ee69edb25852473514b3fc4ab0f71c61c05a0b1",
+      "source_id": "src_8f09b547b3bc518daa7f9bfe4707ce43",
+      "stored": "artifact-sync.md-46906c818fc1.md",
+      "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/docs/artifact-sync.md"
+    },
+    {
+      "commit": "d61382967490e72608ae8064d7a06bec3468b1d6",
+      "git_sha": "bedf918c8f609b9cae558ddd5f84314bf3855460",
+      "lines": 142,
+      "path": "docs/chat-import.md",
+      "repository": "kenn-io/agentsview",
+      "sha256": "1d68332ab76af16a483ebeee0914713f4902a6013af2bcc81d866a4eda63e817",
+      "source_id": "src_9f72edc576325c34ba334a40212757fe",
+      "stored": "chat-import.md-21c71fd6dc07.md",
+      "url": "https://github.com/kenn-io/agentsview/blob/d61382967490e72608ae8064d7a06bec3468b1d6/docs/chat-import.md"
+    }
+  ],
+  "summary": "agentsview is a local, single-binary tool that indexes AI coding-agent sessions into SQLite and serves a web UI with usage, cost, and activity analytics, plus optional PostgreSQL and DuckDB/Quack backends. Evidence is README/docs documentation only; no runtime code slices were supplied. Evidence coverage: 142 of 252 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

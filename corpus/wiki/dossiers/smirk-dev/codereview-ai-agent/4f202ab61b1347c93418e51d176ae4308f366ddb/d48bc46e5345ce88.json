@@ -1,0 +1,618 @@
+{
+  "applied_operation_id": "op_d6c8715a4925420c95e55eddc84fe2df",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e2e99f857f263b1b8898b9e8a21802af23a47e594501a926849883a204c857ac",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 31,
+          "line_start": 27,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L27-L31"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 77,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L56-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4febdc7ca418df27155e1c06f45cb5061ef5074d1a767c3ce65b763e8720e77c",
+        "slc_9253616f8a373f96a591cf0198acd6796c5321b860f7484bdc74e7ca6112b05c"
+      ],
+      "text": "The README describes a multi-agent AI code review system with three specialized agents (code analysis, security checking, quality review) orchestrated sequentially with shared context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f33717c8c5afe9916436a0176cbc0ce696b286de317ba528d9823e9655639aad",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 96,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L87-L96"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 250,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L221-L250"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1724201ac1c007ce5b39184a177156ec74b37ed7531812308d29ccd7a91870cb",
+        "slc_c5a902c01f38443ba61c6d2d325a9132154f9f5331b38e02894443efc44d0532"
+      ],
+      "text": "Documented components include a CodeReviewOrchestrator in main.py, three agent modules, custom AST-based code analysis tools, and utility modules for sessions, memory, reporting, parallel execution, retries, multi-language analysis, GitHub integration, and observability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1775048024ab454053d1e433824b787294c3b791b159bf154fa6432f0d7c198",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 70,
+          "line_start": 66,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L66-L70"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 77,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L56-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56a69af088a2c223a0a8ede9b995eb82e3b163c63ecfec85e21eca3919c56944",
+        "slc_9253616f8a373f96a591cf0198acd6796c5321b860f7484bdc74e7ca6112b05c"
+      ],
+      "text": "The architecture uses sequential agent execution where each agent receives context from prior agents, with a MemoryBank for context sharing and compaction, per the README and checklist."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_858ef93f5d938ca3b101b223f05a152a75f75c21a406dde4f4d1c68c0103dccf",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 98,
+          "line_start": 95,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L95-L98"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 93,
+          "line_start": 88,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L88-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10a92b30181ce8e0783871b3ce128a88c2f5e401952d14c8e15fe5628f746ad6",
+        "slc_8218b2ff67ba08cb6a7572525bd5bb8cc123779a9243c0ecaf1907b972aff2d8"
+      ],
+      "text": "A parallel executor is documented offering three modes: sequential, parallel, and hybrid (parallel groups with sequential flow), using asyncio and ThreadPoolExecutor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56e1c1ed9b9c56fea7b45cd7c35c1f3675bc8ef9f1d0a5c452e75a4d545c0f78",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 181,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L179-L181"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 170,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L169-L170"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 166,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L165-L166"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 175,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L173-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57ee35d34883c5fe30192781f28b39412b4d6dc617dab6044c88db9361c5b980",
+        "slc_a8953aea700a8def02d7205acbbfd510453345d54beac9b44c065f9b488247b2",
+        "slc_abc088d6d3450f852c1b97b65b380713eb9b8f7c2f48b0281d167221476f502a",
+        "slc_cad2614cda977c0db6e50b48e3092a41516a0e5e3ddea3d6dc0064d69d2af71b"
+      ],
+      "text": "The documented programmatic interface is CodeReviewOrchestrator.review_code(code, language=...), returning results including a quality score and issue summary; a CLI demo is run via python main.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4471a9f0ccc13219f8884cd50004acea80c5f99bb1cb1289d9eff6d38889abc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 62,
+          "line_start": 57,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L57-L62"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 68,
+          "line_start": 64,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L64-L68"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 52,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L44-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0754d01cd8acace506d291e5cfea2d3b97483ba43075b6ff48e46e1113918bb6",
+        "slc_1a04c92bdfbe960d47b8916d029c9daaf32d55f2099db64e844ede1d8571f58c",
+        "slc_fa1eda82a018c086e4bf4b27b58077917751bc6fa18e8f74dc8d6cb2304420d4"
+      ],
+      "text": "Reports are documented to be generated in four formats: HTML, Markdown, SARIF, and JSON, using Jinja2 templates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db681d0d1df9c10ef2a6754be2089878f87120c89d9d7c19e14799d858eb2bf5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 296,
+          "line_start": 290,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L290-L296"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 277,
+          "line_start": 268,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L268-L277"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1af9ace03920cd2cc1c812776179dbd8ea30591fdf8513ae2b3d91c4e60af50c",
+        "slc_22c5b6753026d890228abcfb4eb20ee5182fef4bd80f33873b9d49b4eec138f0"
+      ],
+      "text": "Documented dependencies include Python 3.9+, Google Gemini as the LLM, Rich for terminal UI, Jinja2 for reports, PyGithub for GitHub API access, and aiohttp for async execution; pylint, flake8, mypy, and safety are listed as future-use dependencies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7bb64c0aa131cc3e16176e4efafa4a6884fdeb50627f7a2b426210e02b1de76",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 164,
+          "line_start": 159,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L159-L164"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 170,
+          "line_start": 166,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L166-L170"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+          "line_end": 215,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md#L208-L215"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f5d4ca98d41cd5384790e5577406e967a62208ac9586352179e7eec13f2bf7c",
+        "slc_7f9df1390ee956132d147db32230213878275b4edb4c31c8571ca344e4a1603f",
+        "slc_86226f484703897eab72ea84801652f2ff83b62d09ea90bf310c1cc93d070d05"
+      ],
+      "text": "GitHub integration is documented to post PR review comments and inline comments via the GitHub API using a user-supplied token, and can approve or request changes based on quality."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3590d5d7922f3c76ccbc7e8f48fda513d3dd98edbf2440186b40cf30b08f9912",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 58,
+          "line_start": 52,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L52-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8316a35b8c5dd2f7bdc76fe484c0f6c73539dcbe492d7260f85e87ce30773fbb"
+      ],
+      "text": "The checklist documents session management via ADK's InMemorySessionService plus a custom SessionManager with history tracking, and a MemoryBank supporting store/retrieve, search, and context compaction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f04727d9cd7700c9aeea2013fbf393f93c9995040c344eb06ff375f122a75c81",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 99,
+          "line_start": 96,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L96-L99"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 94,
+          "line_start": 90,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L90-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_054d7f517360d6b22a5179095a6862728415a7609de4824956dd53ae35c23f5f",
+        "slc_53b89f47f46fdbd18acfb1cc33b7eac5931ec083fe1118f40a24515f245c983b"
+      ],
+      "text": "A documented evaluation module (utils/evaluation.py) provides test case management, benchmarking, accuracy scoring, and quality metrics, with default test cases and expected results referenced in test_system.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ae88f71578959a7178c2b66bfbd1afc49b86aa5e362052d812af587dfd1f961",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 161,
+          "line_start": 160,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L160-L161"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 154,
+          "line_start": 154,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L154-L154"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L148-L148"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L151-L151"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 144,
+          "line_start": 144,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L144-L144"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "CAPSTONE_CHECKLIST.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md#L157-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2714bafaebec4a108e023027d8e3afa19a557eefdaf95713bccca9e0f5b023c5",
+        "slc_4f5049a79fce93d9b4d0a6ca4ffa18fe36407161d792608a140fea303ce2a501",
+        "slc_52589a85ad740e41bd65df716787c5eacfcc4d61a3babd6078f8a6c55d951b55",
+        "slc_87a4b885c5e2a8d870af45b2e90b1e374b92ec5968e1bdbf7ebff42425183589",
+        "slc_8d05275f575b324c64b815bd3b5f58b8f53b436bea2b862b2ac6600c4120b23a",
+        "slc_ef7637bb6a9a67c2ac7c530d719964a0915276809da610b2ca8f3ebfd6e197f8"
+      ],
+      "text": "Repository development practice: the checklist instructs verifying the project by installing requirements, exporting GOOGLE_AI_API_KEY, then running python main.py, python test_system.py, and examples/sample_usage.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c486fe9811e924c8d7836c131b5d6a22afcd1c9749afc43c0dcd819527de383",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 247,
+          "line_start": 244,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L244-L247"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 264,
+          "line_start": 261,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L261-L264"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 255,
+          "line_start": 253,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L253-L255"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 259,
+          "line_start": 257,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L257-L259"
+        },
+        {
+          "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+          "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+          "line_end": 251,
+          "line_start": 249,
+          "path": "ENHANCEMENTS_SUMMARY.md",
+          "repository": "smirk-dev/codereview-ai-agent",
+          "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md#L249-L251"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54a3206b0079cfbc05e8edb6c03800e10cd05eb8f0380e15db65580edebf570a",
+        "slc_5f3ab66c02c888ea31421edeb800a1b451dd76d334c081d73f26b50ee30c95cd",
+        "slc_7694f9ed9b240b4644f00f95ea13779bec76373c71806099edb2503d3d1a26ed",
+        "slc_b58a2f6d0e2218c6118da5a13bca8b875d8ea1b75a0c34e13efb4afc12729554",
+        "slc_f9ac0414f100867ff81dbfd9ba730d28f35b1ab34e54b5a89d9dfab79ec08cff"
+      ],
+      "text": "The enhancements summary itself lists features not yet implemented, including an agent feedback loop, static analysis tool integration (pylint/flake8/mypy), smart diff-only reviews, performance profiling, and specialized agents."
+    }
+  ],
+  "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 319,
+        "path": "README.md",
+        "size": 11801
+      },
+      {
+        "lines": 206,
+        "path": "CAPSTONE_CHECKLIST.md",
+        "size": 6333
+      },
+      {
+        "lines": 420,
+        "path": "ENHANCEMENTS_SUMMARY.md",
+        "size": 12196
+      }
+    ],
+    "omitted": [
+      {
+        "path": "QUICKSTART.md",
+        "reason": "file-budget",
+        "size": 2589
+      },
+      {
+        "path": "requirements.txt",
+        "reason": "file-budget",
+        "size": 818
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 32,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": false,
+      "omitted": 2,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_8b746a60448656399b139856ff8adb76",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/smirk-dev/codereview-ai-agent/4f202ab61b1347c93418e51d176ae4308f366ddb/d48bc46e5345ce88/manifest.json",
+  "package_id": "pkg_e7a8e3770bf08b89cc7f7880446fcf4f440fbe9a27a59cd08499fa1ea65ae6a0",
+  "repo": "smirk-dev/codereview-ai-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5761e765eb199586abf2f35590fdd4af7c5d3e4878cc634e7d7e65b8bfd023c9",
+  "snapshot_id": "d48bc46e5345ce88",
+  "sources": [
+    {
+      "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+      "git_sha": "b232583e6df64ba4dabb388caa87444d5cccbd44",
+      "lines": 206,
+      "path": "CAPSTONE_CHECKLIST.md",
+      "repository": "smirk-dev/codereview-ai-agent",
+      "sha256": "47daabfa2fd3eaac021484172687e6023fe2fd4d9aabb58f8482fa5d4de28443",
+      "source_id": "src_2c7fcd99a9db5a8ca7b607411821f6b5",
+      "stored": "capstone_checklist.md-fd506c5bd93d.md",
+      "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/CAPSTONE_CHECKLIST.md"
+    },
+    {
+      "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+      "git_sha": "c70933c3998ed329331f9422c5f7c314a6a2db7b",
+      "lines": 420,
+      "path": "ENHANCEMENTS_SUMMARY.md",
+      "repository": "smirk-dev/codereview-ai-agent",
+      "sha256": "3345f40d028460bff910c0289c5522cf31a5e4164e89ef32a6ea13aa2425bdac",
+      "source_id": "src_b027bdb67a875a9d822e7d03d73837e2",
+      "stored": "enhancements_summary.md-be9b0cec00af.md",
+      "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/ENHANCEMENTS_SUMMARY.md"
+    },
+    {
+      "commit": "4f202ab61b1347c93418e51d176ae4308f366ddb",
+      "git_sha": "af76eed426c27a486e9c4e2bdd53a355d49d5fe5",
+      "lines": 319,
+      "path": "README.md",
+      "repository": "smirk-dev/codereview-ai-agent",
+      "sha256": "960ce6e24cb00f75be7ce15f1a123c00e3ae5386f3c76f9f30f3c9472fd042b9",
+      "source_id": "src_8289e5f98fae5bfe80f98acf65b1e7df",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/smirk-dev/CodeReview-AI-Agent/blob/4f202ab61b1347c93418e51d176ae4308f366ddb/README.md"
+    }
+  ],
+  "summary": "The snapshot consists only of documentation files (README, capstone checklist, enhancements summary) describing a multi-agent AI code review system built on Gemini with three specialized agents, GitHub integration, and multi-format reporting; no source code slices are present, so all claims are documentation-based.",
+  "superseded_claim_ids": []
+}

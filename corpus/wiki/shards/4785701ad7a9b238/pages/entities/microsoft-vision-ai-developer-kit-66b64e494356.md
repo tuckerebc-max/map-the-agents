@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_189dd8cec21823ce72610430b1c7dfe1feb8452a17e418779e65208200a2b23b
+- clm_5eb84a9a3318dadf907f8b72bc54b10561e1c8408a781de19f5985a6fb1d2e9d
+- clm_622c6ea93a55540746e5f284a321e008810f8e5996039768031b706ee7ada06e
+- clm_6309402ef9c95429c94d8b980a62b59591371b4124678cf49ecb9b7892fcac4a
+- clm_9c5a84fceda98519e1eb2070d5aba9712de230e28520019c6b76877e67f62d2b
+- clm_aa33df1f3e5328dc13a41d293a7e7f8c975290e55f7b41b619058ec5411c0490
+- clm_b775e3dff52db144b7e7605a7b5b162a3bd276c7faf63b39f4ec43c3fbfee2ab
+- clm_bc8cc2932153a637ae5173cdf24dd774b96f4853d9cdd856f729e791dd648cdc
+- clm_be54422a31a1705eb72d24a35ecc28f93dcb79bc4add153c3aa30a6fb6dd77dc
+maturity: draft
+page_id: pg_0e6a2b3f21e95612892866b64e494356
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: microsoft/vision-ai-developer-kit
+updated_at: '2026-09-14T04:09:17Z'
+---
+
+# microsoft/vision-ai-developer-kit
+
+<!-- rcw:begin owner=entity:ent_1e7cf2e9f62a534f86fe0da97b781c5d block=evidence -->
+- microsoft/vision-ai-developer-kit is mentioned in this evidence. [@claim:clm_189dd8cec21823ce72610430b1c7dfe1feb8452a17e418779e65208200a2b23b] [@claim:clm_5eb84a9a3318dadf907f8b72bc54b10561e1c8408a781de19f5985a6fb1d2e9d] [@claim:clm_622c6ea93a55540746e5f284a321e008810f8e5996039768031b706ee7ada06e] [@claim:clm_6309402ef9c95429c94d8b980a62b59591371b4124678cf49ecb9b7892fcac4a] [@claim:clm_9c5a84fceda98519e1eb2070d5aba9712de230e28520019c6b76877e67f62d2b] [@claim:clm_aa33df1f3e5328dc13a41d293a7e7f8c975290e55f7b41b619058ec5411c0490] [@claim:clm_b775e3dff52db144b7e7605a7b5b162a3bd276c7faf63b39f4ec43c3fbfee2ab] [@claim:clm_bc8cc2932153a637ae5173cdf24dd774b96f4853d9cdd856f729e791dd648cdc] [@claim:clm_be54422a31a1705eb72d24a35ecc28f93dcb79bc4add153c3aa30a6fb6dd77dc]
+<!-- rcw:end owner=entity:ent_1e7cf2e9f62a534f86fe0da97b781c5d block=evidence -->
+
+## Researcher notes
+

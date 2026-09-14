@@ -1,0 +1,621 @@
+{
+  "applied_operation_id": "op_19b8c8d1b2304c26af8b75a748f46d42",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_958f015877fb238170c14298d3db9399182748c226eee2396bef9e8e7bd4b9a9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 136,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L126-L136"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "c1b1503e3f6973b931076025adfd010c3134bdad",
+          "line_end": 136,
+          "line_start": 126,
+          "path": "README_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README_zh.md#L126-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b75e61aa910d16b930ad280b6414dbc4cb68b365005ab92af9e18eb4eaa5703",
+        "slc_dfa52da7067f4ccfab377a7111c7bb1a09e92c825458cc4f9ccb54a28fd99e84"
+      ],
+      "text": "The SDK exposes building blocks including a ReAct reasoning-acting loop, Toolkit, Model, Context, Event System, Permission & HITL, Middleware, Memory, and Workspace/Sandbox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_92fe4edd0a45f7317da5dc4a2ce3931b523532d9d8e0b9347091c5cf86364b7b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 136,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L126-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b75e61aa910d16b930ad280b6414dbc4cb68b365005ab92af9e18eb4eaa5703"
+      ],
+      "text": "The Toolkit manages Python tools, MCP servers, and skills, and ships built-in coding tools (shell, file edit, search) plus task/plan tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b97e74373cbfdc3da9b3d16a391d98a22805b5e97cb4bd09555f8a1007d26067",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 136,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L126-L136"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 225,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L196-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b75e61aa910d16b930ad280b6414dbc4cb68b365005ab92af9e18eb4eaa5703",
+        "slc_fe646ab893aeb16d1313667dfdc2a3e5e2b306ad915a0503b62a0d26bbebd3c2"
+      ],
+      "text": "The product includes a permission system with fine-grained control over tools and resources, confirmation flows, and a bypass mode where the agent runs without pausing for tool-call confirmations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1095e22f83e87c0d0f81c23bf4e10d345063d96fe349612433e0e4f76718e337",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 192,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L183-L192"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 225,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L196-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e9a5b11ac42549b0bfe710d9336b284d98eab11e56427197a5f484cc06ac4e1c",
+        "slc_fe646ab893aeb16d1313667dfdc2a3e5e2b306ad915a0503b62a0d26bbebd3c2"
+      ],
+      "text": "The agent service offers leader-worker orchestration with built-in team tools and task planning, where a leader agent spawns and coordinates workers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_868ee557da0d841fffc1396f92bf9e82a2ba390c4f6be68ccc8178e68ca5ef87",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 86,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L75-L86"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "58e3d3ad891707f5ff7814f650a049ddaf168a6d",
+          "line_end": 24,
+          "line_start": 5,
+          "path": "docs/NEWS.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/docs/NEWS.md#L5-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_242d9e847b24b1f6eba2e0f256b40643e1e4b06d981d05831a048731f15be207",
+        "slc_594293f8c2bc3493851a14512afd07105cfb9cc122c3e99b00777a6bafc68d3a"
+      ],
+      "text": "Recent releases add A2A protocol support via an A2AAgent for chatting with remote A2A agents, and RealtimeAgent supporting DashScope, OpenAI, Gemini, and xAI realtime APIs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12bee3f31ba7f3645c11e95b418d3277c0bc343f628d4eec5b3fa7c3dafaa5df",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 86,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L75-L86"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 181,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L181-L181"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 192,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L183-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_242d9e847b24b1f6eba2e0f256b40643e1e4b06d981d05831a048731f15be207",
+        "slc_a06b7882eafbb9d5b8613e2245f4b93b808cf57842fa404c8ceb7f0a4634ebed",
+        "slc_e9a5b11ac42549b0bfe710d9336b284d98eab11e56427197a5f484cc06ac4e1c"
+      ],
+      "text": "The agent service is a FastAPI backend with a pre-built Web UI offering multi-tenancy, multi-session isolation, channels (Feishu, Discord, DingTalk), RAG service, persistence, and scheduling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_287953c98da2eafd9ecb44ff58d723d777685cd50210048d81f5ebcbb486b862",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "c1b1503e3f6973b931076025adfd010c3134bdad",
+          "line_end": 136,
+          "line_start": 126,
+          "path": "README_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README_zh.md#L126-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dfa52da7067f4ccfab377a7111c7bb1a09e92c825458cc4f9ccb54a28fd99e84"
+      ],
+      "text": "The memory building block is described as agentic memory with switchable backends, naming ReMe and Mem0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_30b1f905f2be6cc5abed2485ea79c148d95f7819d875987aba4b183aba9220a2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L106-L108"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L102-L102"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "c1b1503e3f6973b931076025adfd010c3134bdad",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README_zh.md#L102-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f9ae8982bb530d8a40d5e8e081e4274afdc82ce5cf148ff5bde615e55dd3b09",
+        "slc_8a798321b313f285198f979c306e99cd98f873a02f138be5d8edf19834382094",
+        "slc_cfaeac25dafa18648d61398a7e10e4dc52987785b85076776f96a0c8c25b038e"
+      ],
+      "text": "AgentScope requires Python 3.11 or higher and can be installed from PyPI via 'uv pip install agentscope'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9bb0d76b026b7fc704616006669df783a83e00341ed41ca20669caa3aaddefe9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+          "line_end": 70,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md#L68-L70"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "c1b1503e3f6973b931076025adfd010c3134bdad",
+          "line_end": 69,
+          "line_start": 68,
+          "path": "README_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README_zh.md#L68-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32056919a61417fdbbbeb4853b69c84480a518cc80042fa824dcb2951721138e",
+        "slc_414c60c35fee3f61008b618003e24ffebda79165b172910ce41d3419f59e4c99"
+      ],
+      "text": "The design philosophy is to leverage models' reasoning and tool-use abilities rather than constrain them with strict prompts and opinionated orchestrations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_24fd25c8e9727ded58e0e2b29682e4ab4867fb8241c8b28e3fd5c78fcb2f5b5b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 152,
+          "line_start": 152,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L152-L152"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 127,
+          "line_start": 127,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L127-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3be905e5b910d5605a2409862c17d887afd4ad65010f2f39a1b56a79404ec841",
+        "slc_d65bf608ca1a13ded4c2798b97ff88a46bda26b256d0e0ca8373c952724846ff"
+      ],
+      "text": "Repository development practice: contributors must follow Conventional Commits for commit and PR titles, with GitHub Actions validating PR titles against main and blocking non-conforming ones."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bd272c408f91e198fbe7af6f4c06e8719c5ccea27bf0b8521b3ca1efb77c8da",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L111-L111"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 197,
+          "line_start": 191,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L191-L197"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 115,
+          "line_start": 114,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L114-L115"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 99,
+          "line_start": 93,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L93-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0246d47cbcbd37448a63d64cd34db723c989f2b83a687b137273947baab569f6",
+        "slc_63212ec9086ade4bc6e0f33683cad8f429fbfa114d69ba77955e0924eb4c9931",
+        "slc_d4359567afefc9dc669547c66f67e6de282787bf040a71399adc59ed183ec167",
+        "slc_f3b8fc4133f89cf19ae8d4f727023ec342c9129b17c1554653d9feb9f1bff0ab"
+      ],
+      "text": "Repository development practice: optional dependencies must be lazily imported at the point of use rather than at module top, to keep 'import agentscope' lightweight; pre-commit and pytest must be run before a PR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_828d07782af495a250feb8322e7974a6fdba67ad0c73411999465960694be043",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L32-L32"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L34-L34"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L28-L28"
+        },
+        {
+          "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+          "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "CONTRIBUTING_zh.md",
+          "repository": "agentscope-ai/agentscope",
+          "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00ad9ede6c259d0c4d032e817be54182291132632d3551160a2ec86842def08b",
+        "slc_ad870b69bb1c82a9c04d6aadfd709faeccd78d7bdfe8bb5ce7a5e1de05a22752",
+        "slc_bd70b35e0907aeaa0f7aca0b7e23f5eb1b757ae1c7232e3f9bf06a7d9da6d19a",
+        "slc_e39d652601d020aed2ae4a4fe1f4606f15187d53e90d240b9b0bacdd5127c247"
+      ],
+      "text": "Repository development practice: AI-assisted contributions are welcome but must be responsibly used — authors must review diffs line by line, keep PRs atomic, and avoid dumping unreviewed AI-generated changes on maintainers."
+    }
+  ],
+  "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 289,
+        "path": "README.md",
+        "size": 15060
+      },
+      {
+        "lines": 298,
+        "path": "CONTRIBUTING_zh.md",
+        "size": 14352
+      },
+      {
+        "lines": 289,
+        "path": "README_zh.md",
+        "size": 14919
+      },
+      {
+        "lines": 24,
+        "path": "docs/NEWS.md",
+        "size": 4282
+      },
+      {
+        "lines": 24,
+        "path": "docs/NEWS_zh.md",
+        "size": 4336
+      },
+      {
+        "lines": 121,
+        "path": "docs/roadmap.md",
+        "size": 4878
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 16879
+      },
+      {
+        "path": "docs/changelog.md",
+        "reason": "file-budget",
+        "size": 3130
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1090,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_7e2e1123e0565f3c8b4e3f543dc1eac9",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/agentscope-ai/agentscope/b82253ba1b680a67091c4de32f074477c30ba416/a07620e1b7cb9181/manifest.json",
+  "package_id": "pkg_6aee31b46718176dae54004e2e41f1db9c2be12e53bb3b25f8f38bd6cd9ee6f2",
+  "repo": "agentscope-ai/agentscope",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d3091b1a4ab00c26173c3df0e4621ed7f5617c272b838ca5a878ae95360a5865",
+  "snapshot_id": "a07620e1b7cb9181",
+  "sources": [
+    {
+      "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+      "git_sha": "57dfa7ad0386305a4b53bc9aa0ad1414a19c71fa",
+      "lines": 298,
+      "path": "CONTRIBUTING_zh.md",
+      "repository": "agentscope-ai/agentscope",
+      "sha256": "d68450b88b4d45d99b67acc617bf1d9a39457d8320ee9bb17797280fe2040922",
+      "source_id": "src_9b65ef2f09ba5c1bb4edc5a817360629",
+      "stored": "contributing_zh.md-e8850a60855a.md",
+      "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/CONTRIBUTING_zh.md"
+    },
+    {
+      "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+      "git_sha": "5c9a63fcbeae0c04d24571659bdda109f8e94472",
+      "lines": 289,
+      "path": "README.md",
+      "repository": "agentscope-ai/agentscope",
+      "sha256": "503d03c6f6e53f6c0083061d363be63269b431101d5d25540d3cf1ff76157691",
+      "source_id": "src_ac97650c472f5ec5aeb69d3fcb0b1a29",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README.md"
+    },
+    {
+      "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+      "git_sha": "c1b1503e3f6973b931076025adfd010c3134bdad",
+      "lines": 289,
+      "path": "README_zh.md",
+      "repository": "agentscope-ai/agentscope",
+      "sha256": "0be7770d9e2fa5a3664c8ec3c75b248448987080a62f1180f36356b27b17583a",
+      "source_id": "src_cc8407c237e7530299fa223fbbd2a845",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/README_zh.md"
+    },
+    {
+      "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+      "git_sha": "58e3d3ad891707f5ff7814f650a049ddaf168a6d",
+      "lines": 24,
+      "path": "docs/NEWS.md",
+      "repository": "agentscope-ai/agentscope",
+      "sha256": "7ae8e85a827e409b1ccc0e5948fc03a99a144c915add52d1e308bae30402cff5",
+      "source_id": "src_cb83b9f5843d5d9f9b9757778c0da5ae",
+      "stored": "news.md-d5063d9920e2.md",
+      "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/docs/NEWS.md"
+    },
+    {
+      "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+      "git_sha": "3535ee64fb3057bd94d37e2282df7ec3109f645b",
+      "lines": 24,
+      "path": "docs/NEWS_zh.md",
+      "repository": "agentscope-ai/agentscope",
+      "sha256": "1bd298a09b925bad27fd1a44352056cb58555298120fe7153ed6b98204e08137",
+      "source_id": "src_cfca775a90275472bb1a7cf4acd87932",
+      "stored": "news_zh.md-277b4dccd98f.md",
+      "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/docs/NEWS_zh.md"
+    },
+    {
+      "commit": "b82253ba1b680a67091c4de32f074477c30ba416",
+      "git_sha": "93d392d1d280c2a1c4400244d33a5ac060b8c14a",
+      "lines": 121,
+      "path": "docs/roadmap.md",
+      "repository": "agentscope-ai/agentscope",
+      "sha256": "1f17381a0795eaaf3ac22000119de41738e2d10a0bc7d7332f7afc05e127ea71",
+      "source_id": "src_134807df78fb52fe891b97caad317402",
+      "stored": "roadmap.md-6a17656d764b.md",
+      "url": "https://github.com/agentscope-ai/agentscope/blob/b82253ba1b680a67091c4de32f074477c30ba416/docs/roadmap.md"
+    }
+  ],
+  "summary": "AgentScope is a Python agent framework (requires Python 3.11+) whose SDK exposes building blocks such as a ReAct loop, Toolkit, Model, Context, Event System, Permission & HITL, Middleware, Memory, and Workspace/Sandbox, plus a FastAPI-based agent service with a Web UI. Contributor-facing rules (Conventional Commits, lazy imports, pre-commit/pytest, responsible AI use) are documented in CONTRIBUTING_zh.md. Evidence coverage: 151 of 201 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

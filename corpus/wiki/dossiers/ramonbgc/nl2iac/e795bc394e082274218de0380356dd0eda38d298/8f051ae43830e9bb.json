@@ -1,0 +1,293 @@
+{
+  "applied_operation_id": "op_1d49be105448416993a89ad3ef7ac9be",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d281f53a01f0ad43a699c825dd4a70443662d45cfd8c0b1ec12e6f74e27f793c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d24658bc5440624bd776867b34b3554ca1e1a65f6dad1eaf3d7a5d2bc700524"
+      ],
+      "text": "The project is described as an AI agent for IaC deployments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b148b74a73dee4e0eac99985ebd3b56963d779a8a2817247706f7b5cc92ddb1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L12-L17"
+        },
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 29,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L19-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e8f9691a0a42a8a9ac3e13a12f41b1594ea5391020f7fef3ee6d6c1a90af77a",
+        "slc_847c4e718283a4e86ce01342991c1c6a9e8ae2bb3000af4949b9cc7a77a75c9c"
+      ],
+      "text": "Configuration is supplied through a .streamlit/secrets.toml file whose values the user must fill in, indicating a Streamlit-based application."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af045db1eed66d3ca2e165208e9d0ed94617a8229c0abb408f14b422bf072906",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L12-L17"
+        },
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "f79364798bffcf479c8d9fef41ff40c1dc52f593",
+          "line_end": 4,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/requirements.txt#L1-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e8f9691a0a42a8a9ac3e13a12f41b1594ea5391020f7fef3ee6d6c1a90af77a",
+        "slc_ab7e34d6fd00cf1f96e0bfa542c6baa308b4b0c60faab59c6d2f768c9d120b43"
+      ],
+      "text": "Dependencies include streamlit, langchain, langchain-google-vertexai, and langchain_openai, installed via pip from requirements.txt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ed13ad6ab1da74e2cd375b3d181f68289c69d5f22a4eecc621136085a9f17df",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 29,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L19-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_847c4e718283a4e86ce01342991c1c6a9e8ae2bb3000af4949b9cc7a77a75c9c"
+      ],
+      "text": "The tool supports Google Vertex AI (default model gemini-1.5-flash) and optionally OpenAI (default gpt-4o), with a MULTIPROVIDER setting and optional LangChain API key/project tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39bafbb3dcbc8b72c11fa4e6235543f41ce2ed0b8596ec99b9fc8309aeb45c1c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L12-L17"
+        },
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e8f9691a0a42a8a9ac3e13a12f41b1594ea5391020f7fef3ee6d6c1a90af77a",
+        "slc_6adeb3fb1857d7443e8fa8eb2c25bdba962c945b9cf392ed9262b95eac9cf6a6"
+      ],
+      "text": "Installation involves optionally creating a Python virtualenv (recommended, not mandatory), cloning the repo, and installing requirements via pip."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73ce51a30d2822d906c2531e795df118f654146218476dd4669e4700d09c670e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e795bc394e082274218de0380356dd0eda38d298",
+          "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+          "line_end": 29,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "ramonbgc/nl2iac",
+          "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md#L19-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_847c4e718283a4e86ce01342991c1c6a9e8ae2bb3000af4949b9cc7a77a75c9c"
+      ],
+      "text": "The agent targets GCP deployments, requiring a service account JSON path, GCP region, and project ID in its configuration."
+    }
+  ],
+  "commit": "e795bc394e082274218de0380356dd0eda38d298",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 29,
+        "path": "README.md",
+        "size": 876
+      },
+      {
+        "lines": 4,
+        "path": "requirements.txt",
+        "size": 62
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 8,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_1143a9a1529c57609c0589de8240ec4b",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ramonbgc/nl2iac/e795bc394e082274218de0380356dd0eda38d298/8f051ae43830e9bb/manifest.json",
+  "package_id": "pkg_52a7c5106045a1f6faab2350ac8ca72e80988f01fd5a293570c38090a0008937",
+  "repo": "ramonbgc/nl2iac",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a1ebb5ab54e2fb2034f40c28917c030002681f12d1dd4a4b55bee110b8bffe20",
+  "snapshot_id": "8f051ae43830e9bb",
+  "sources": [
+    {
+      "commit": "e795bc394e082274218de0380356dd0eda38d298",
+      "git_sha": "2caa88c3341a84749abbaba24dbbf140d7a9dd9b",
+      "lines": 29,
+      "path": "README.md",
+      "repository": "ramonbgc/nl2iac",
+      "sha256": "24e4d322d5b40307479dc0a3d1ab472163ea36ef1dc9db99e16a77514ac01560",
+      "source_id": "src_0d3024f36ae55e72b5c5f4403e72af9b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/README.md"
+    },
+    {
+      "commit": "e795bc394e082274218de0380356dd0eda38d298",
+      "git_sha": "f79364798bffcf479c8d9fef41ff40c1dc52f593",
+      "lines": 4,
+      "path": "requirements.txt",
+      "repository": "ramonbgc/nl2iac",
+      "sha256": "105e2534ca4f746852c9720bc69372ec6eda6e130b6ac426a87c4a679c149c6c",
+      "source_id": "src_d04ac2d279225d53b607de56c8463e9a",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/ramonbgc/nl2iac/blob/e795bc394e082274218de0380356dd0eda38d298/requirements.txt"
+    }
+  ],
+  "summary": "The snapshot shows a Python/Streamlit-based AI agent for IaC deployments, configurable via .streamlit/secrets.toml for GCP/Vertex AI (Gemini) or OpenAI models, with LangChain integration. Evidence is limited to README installation steps and requirements; no runtime behavior, architecture, or evaluation details are present.",
+  "superseded_claim_ids": []
+}

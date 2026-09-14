@@ -1,0 +1,657 @@
+{
+  "applied_operation_id": "op_debecf088eb145dfb765b2fa3f74b070",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d70bb43485fc8beab61b3f9d11c0beb0e7a34e4e40d18a3bbcad40bf6c2a2e6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 24,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L21-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1075d2a014a17a4654e0702da64c949584418c0e74e5056fd2f39b8a55abe579"
+      ],
+      "text": "NeoCode is described as an open-source, terminal-native coding agent with streaming AI responses, persistent sessions, PLAN and BUILD modes, local repository tools, NeoLens codebase intelligence, themes, and optional MCP integrations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73ea5333b41aa527c05395b2ed0b78103294390827b790fc15e6a02b1eb0766d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 27,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L26-L27"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 226,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L218-L226"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f6fb910b905d1f890724a0a55d52213737d8390505eff996e8c4ebba7a2259c",
+        "slc_b1d1540546a882ddf48380529b58dc32a25fb9acee1bf1244cf92187fba139d1"
+      ],
+      "text": "The repository is a Bun monorepo with a terminal client (packages/cli), API server (packages/server), shared package, Prisma database package, and a Vite-powered landing page (packages/web)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2542301208de71fffcc9f922d0b326a5ff6b351ec0ae3da5e865d79b1196310",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L138-L138"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 136,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L127-L136"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 142,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L140-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2178bbec403593d4111aebb93e32ca615531861bb88e3c37a841d3f1557fff29",
+        "slc_ad5febe41ec8cfc80c4584bd6bfc74f390bfe507c2a961b0ba1cc81d42911859",
+        "slc_bc9572d2c099d513cfa45b26e8b6ebb90b6b7c1cc7738354ff851782d33ad7f7"
+      ],
+      "text": "The CLI exposes slash commands including /new, /agents, /models, /sessions, /lens, /mcp, /theme, and /login, and API_URL can point the CLI at a different NeoCode API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bafc70538b01004da3a39bdb6fef4a2ee4bec2c2c710c21f9cfa63c2bcd23f00",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 136,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L127-L136"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 40,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L31-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad5febe41ec8cfc80c4584bd6bfc74f390bfe507c2a961b0ba1cc81d42911859",
+        "slc_cfd1b0c06fe771f07215ba55a5666d9cfdc465421e43c48f4091fe844d6d5d5a"
+      ],
+      "text": "NeoCode has two agent modes: PLAN for read-only investigation and BUILD for implementation; the /agents command switches between the corresponding agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_162162155edf7705a8cc310d66c2f184e72f6ad2854ba7f58b4963cdd45b6b80",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 166,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L160-L166"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 150,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L146-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09329a78c11c5ab622dbc40a505c2452f6045f7404b851df8dcfdca0be0ab8c7",
+        "slc_188647f0a0c1108ab951736c6d0739813f7525e42ab909687bd318d3d7a832dd"
+      ],
+      "text": "NeoLens is a local codebase explorer with three views: Graph (TypeScript dependency relationships), Workspace (read-only file previews and capped search), and Timeline (tool-activity replay with token, duration, and estimated cost summaries)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_323ade47fc038e67c2c4dfbd0a4782dd2eff5148c3ba4a04324f167b0cf43045",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 178,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L172-L178"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8e51ef4d980053736148e2757a2911dc9ba57c8c3ec2110f5974df18758c17b"
+      ],
+      "text": "NeoLens is project-scoped and keeps source local: it respects .gitignore rules, never follows symbolic links, hides credential files, rejects paths outside the project, and caps indexing/search/preview work; the Railway API receives session activity but not file contents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1eee16f9975100caa6166d463e3d38a33157f4c1bb4864bb0374014a7b549e94",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 192,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L192-L192"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 198,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L194-L198"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 201,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L200-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01333728ec3f73c976ed388f34497131fbbbfab7455603aea61d7ab148236713",
+        "slc_137202d5aafe6219125628403b2a89c7870ae3cd6ce2f1f8f97d8b51d2876e57",
+        "slc_e8bc030e906490b5dcd7d48646798a72da9229264337f6fe0c0c10704eb6e2f8"
+      ],
+      "text": "MCP tools are denied by default and require an explicit policy: read tools are available in PLAN and BUILD, write tools only in BUILD, and disabled tools are never exposed to the model; a wildcard policy can classify unlisted tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eccbb2da05c806bd512b022bd56aee5c462c09a16f96340f2784fbad8f0b6fb8",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 206,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L203-L206"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1766ba722d81cc35811d6084650be6ca080775137dd84e0ef071cddba5fabdbe"
+      ],
+      "text": "MCP secrets use environment references such as ${env:GITHUB_TOKEN}; resolved values stay in the server process and are not returned by the MCP inspection API, and local stdio servers inherit only a small safe set of variables plus their declared env block."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7fb1996554173ae15b989368b1be6b67ac6c85895709462db25ac44c0c5f574d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 183,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L182-L183"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 211,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L210-L211"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f11fc3497404cf5e914db85e73641dafbf0fc62dd1dd56ce1544546147d3183",
+        "slc_9712067e34e7a4e69030f3f4c3ebb500203aa84a2c500f43f62cc7828f16e810"
+      ],
+      "text": "MCP integration is optional and discovered from a project-local .neocode/mcp.json; without it, built-in local tools still work. Supported transports are stdio for local servers and Streamable HTTP for remote servers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_13e5e051893240533e51ebb2502f38f355a54339443bbdd25a09fb4ce9587c85",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 136,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L127-L136"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 40,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L31-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad5febe41ec8cfc80c4584bd6bfc74f390bfe507c2a961b0ba1cc81d42911859",
+        "slc_cfd1b0c06fe771f07215ba55a5666d9cfdc465421e43c48f4091fe844d6d5d5a"
+      ],
+      "text": "Sessions are persistent and can be reopened via the /sessions command to browse previous conversations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f57bf841cc946245e85ff9f5be09f5d91a13908bdcdd933b86a1210ac93051f3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 70,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L68-L70"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L46-L48"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 40,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L31-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e25c2ea3224f29771478edf5dd96d8c6f0d53a5f5ba92db5c48bb8cbd687310",
+        "slc_a9df7b98bbe470b6b5058f5c550e429e3f37c88f77707d09997cb9f005fd2f0d",
+        "slc_cfd1b0c06fe771f07215ba55a5666d9cfdc465421e43c48f4091fe844d6d5d5a"
+      ],
+      "text": "Standalone binaries for macOS, Linux, and Windows are published via GitHub Releases and include the Bun runtime, so users need not install Bun or Node.js; Homebrew installation is also supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d151589b03f9b636c914ca1968e237905f0c6e19ada82f07defa49b5e1cce45",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "61be9d31221108b8ecf02eb8b910561e90e262e6",
+          "line_end": 78,
+          "line_start": 72,
+          "path": "docs/RELEASING.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/docs/RELEASING.md#L72-L78"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+          "line_end": 75,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md#L72-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98c840122431ae142f2a81b4c498eaa386a12525c150d9cdc403e12c0fff8462",
+        "slc_b8d09916351656a3b9ae8b343ff2eec28b9ec350cb28224315808f1623c845a2"
+      ],
+      "text": "Current release binaries are unsigned: macOS may require manual Privacy & Security approval and Windows may show a SmartScreen warning; SHA-256 checksums and GitHub attestations are published for verification."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d5405b5257200d29167261f08ad98f8930ff5aa85970a6233fade5954887c97",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "2121bcc251204b4ebeb9585c02f0b3494699e474",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/docs/DEVELOPMENT.md#L17-L20"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "2121bcc251204b4ebeb9585c02f0b3494699e474",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/docs/DEVELOPMENT.md#L77-L81"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "5c471596e254b0e6bfea8de883b5eca8666a350d",
+          "line_end": 49,
+          "line_start": 45,
+          "path": "CONTRIBUTING.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/CONTRIBUTING.md#L45-L49"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "5c471596e254b0e6bfea8de883b5eca8666a350d",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "CONTRIBUTING.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/CONTRIBUTING.md#L43-L43"
+        },
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "2121bcc251204b4ebeb9585c02f0b3494699e474",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "docs/DEVELOPMENT.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/docs/DEVELOPMENT.md#L9-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02fd982487d98d358c1af1cddb159756fb4b3d6a445ad25facc4da5363f8025e",
+        "slc_0e6707c2a88c48937d43e8fbe0cc49fa9f9dec8e1db112a1280511e235b8e208",
+        "slc_8ba87987a9989ca2f19f29fd9482ea9815f57f98ea5811da09af45388bfe3f4b",
+        "slc_a751044e469d275d09602c529f6727e1f15d351853efb7993a21b183517e5f5c",
+        "slc_f6072e0c3ea8bd27cd7df459fd512381758c255aa1acf7819bbfa30c054c085a"
+      ],
+      "text": "Repository development practice: contributors install Bun 1.3.13, run bun install --frozen-lockfile, start services with bun run dev:server/dev:cli/dev:web, and run bun test and bun run check before opening a pull request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_332f193b0c60efb991549341250f20e35988fae4862b82d24623c8ca2e2b2fa5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+          "git_sha": "61be9d31221108b8ecf02eb8b910561e90e262e6",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "docs/RELEASING.md",
+          "repository": "hardik180704/neocode",
+          "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/docs/RELEASING.md#L40-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ba6df15d541cfffb59dc871bd671a19e098e45f9a53f3abfef1d705589b35e7e"
+      ],
+      "text": "Repository development practice: the release workflow builds eight platform targets with archives, checksums, and GitHub provenance attestations, and opens an automated Homebrew formula update PR in the tap repository."
+    }
+  ],
+  "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 291,
+        "path": "README.md",
+        "size": 8386
+      },
+      {
+        "lines": 31,
+        "path": "SUPPORT.md",
+        "size": 1109
+      },
+      {
+        "lines": 111,
+        "path": "docs/DEVELOPMENT.md",
+        "size": 2643
+      },
+      {
+        "lines": 78,
+        "path": "docs/RELEASING.md",
+        "size": 3012
+      },
+      {
+        "lines": 34,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 1376
+      },
+      {
+        "lines": 138,
+        "path": "CONTRIBUTING.md",
+        "size": 4360
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1618
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 158,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_3cd974b35de657679872912a1aab8e94",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/hardik180704/neocode/0c016cadc0123825da87ec3f351c02ad10a316cc/0d07d5515adf4028/manifest.json",
+  "package_id": "pkg_fd62617ef908a2a852e112e575ca96e2aecfc87002bbb6a745d49bd32b148fce",
+  "repo": "hardik180704/neocode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "55ebdb2c1e563dc9d46998525d13e35e187e2358662031f8e4ca56029dd3b09c",
+  "snapshot_id": "0d07d5515adf4028",
+  "sources": [
+    {
+      "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+      "git_sha": "3cfdca69c45b825c15dcdd7e57c2b5902694aebf",
+      "lines": 34,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "hardik180704/neocode",
+      "sha256": "25dd3305fa02a7e2468a51d79ef651c60a5a7a2eee60236e8288fa9d569a0a43",
+      "source_id": "src_bb1eb2f993ba5b3dabe2aee24b13949e",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+      "git_sha": "5c471596e254b0e6bfea8de883b5eca8666a350d",
+      "lines": 138,
+      "path": "CONTRIBUTING.md",
+      "repository": "hardik180704/neocode",
+      "sha256": "b2e19c8341e301edfe2d48c4894284fa225bdebe78dea4acca100d0331fc60c2",
+      "source_id": "src_eca1815f0a5856ce8cf72a4d7cc2db0b",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/CONTRIBUTING.md"
+    },
+    {
+      "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+      "git_sha": "d7ff681e90ad7a4230d54e85c5b176a607fc512d",
+      "lines": 291,
+      "path": "README.md",
+      "repository": "hardik180704/neocode",
+      "sha256": "b7ccb77d43ac58a8e992e0a7bd7beb6a4cc9980c4fea140e491ec155c67e9e93",
+      "source_id": "src_d4fb8f17ec345e5ca792bd7c211f3737",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/README.md"
+    },
+    {
+      "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+      "git_sha": "18c50c9e95654fa937b40d9b8ead17bad2c97e95",
+      "lines": 31,
+      "path": "SUPPORT.md",
+      "repository": "hardik180704/neocode",
+      "sha256": "294dbca5ca232a6de084c7c139e95cda15cfd620c7ef74bad5d1ac9d6f80b616",
+      "source_id": "src_f7e62b96f93050abb97a63c0bed5f637",
+      "stored": "support.md-c5fe610b0215.md",
+      "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/SUPPORT.md"
+    },
+    {
+      "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+      "git_sha": "2121bcc251204b4ebeb9585c02f0b3494699e474",
+      "lines": 111,
+      "path": "docs/DEVELOPMENT.md",
+      "repository": "hardik180704/neocode",
+      "sha256": "2800df5fb759053139b1fb2af0c85dca48d925eb00044e5d509b23c2c849de4d",
+      "source_id": "src_cf7b093f29df55e58456004e4e6e78a2",
+      "stored": "development.md-d9657425e036.md",
+      "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/docs/DEVELOPMENT.md"
+    },
+    {
+      "commit": "0c016cadc0123825da87ec3f351c02ad10a316cc",
+      "git_sha": "61be9d31221108b8ecf02eb8b910561e90e262e6",
+      "lines": 78,
+      "path": "docs/RELEASING.md",
+      "repository": "hardik180704/neocode",
+      "sha256": "0bee2c96d1a1ad7e9dc9cfb217d11bb648babc2e48adcde76e2d78fa89e35132",
+      "source_id": "src_d78578c6ffd65765a42fd6fcd338f92b",
+      "stored": "releasing.md-8936340d2e78.md",
+      "url": "https://github.com/Hardik180704/NeoCode/blob/0c016cadc0123825da87ec3f351c02ad10a316cc/docs/RELEASING.md"
+    }
+  ],
+  "summary": "Selected evidence records: NeoCode is described as an open-source, terminal-native coding agent with streaming AI responses, persistent sessions, PLAN and BUILD modes, local repository tools, NeoLens codebase intelligence, themes, and optional MCP integrations. The repository is a Bun monorepo with a terminal client (packages/cli), API server (packages/server), shared package, Prisma database package, and a Vite-powered landing page (packages/web).",
+  "superseded_claim_ids": []
+}

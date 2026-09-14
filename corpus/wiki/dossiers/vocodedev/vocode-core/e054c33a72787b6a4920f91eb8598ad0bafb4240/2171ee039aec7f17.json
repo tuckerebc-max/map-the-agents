@@ -1,0 +1,1138 @@
+{
+  "applied_operation_id": "op_283b0054a97f41a9bfdfee6167c8edcb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2ab8a4f9033991bfa9270820bd1b6ae5562843ca4a543aef03676aa5f9ecc2d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e2a548719143e3b09c484f0502050ce2a1fd210b65464632a8a3e5dbf9d2fbae"
+      ],
+      "text": "Vocode is an open source library for building voice-based LLM apps, supporting real-time streaming conversations deployable to phone calls, Zoom meetings, and more."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_98441b90c9ba6b8d69b494593e6a869e75118b628af1caed10ad80d5afc72176",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 90,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L78-L90"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 70,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L68-L70"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 154,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L127-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_520df54f70639d06c1316083be96a4a5ed48c75144b9a1383314db04fe02629c",
+        "slc_67adc410f5cba3733aa48fd0ef7d2c8fdb0e4620201d11bd3c3c2ca969e4ded5",
+        "slc_b1d00b10a46f3dd52337daae8a2bf53a12cf94144494d08141a3cc5b53933bda"
+      ],
+      "text": "The library is installed via pip as the 'vocode' package and exposes a Python API including StreamingConversation, ChatGPTAgent, DeepgramTranscriber, and AzureSynthesizer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70c6c2da4e267b54ea274e165b360112b852453fc8b413c8e11e036d055bcdb3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 154,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L127-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b1d00b10a46f3dd52337daae8a2bf53a12cf94144494d08141a3cc5b53933bda"
+      ],
+      "text": "A StreamingConversation composes a transcriber (e.g. Deepgram with punctuation endpointing), an agent (e.g. ChatGPTAgent with prompt and initial message), and a synthesizer (e.g. Azure)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abe44b3c00221e3daa5aed1796b2d6f5c02df2133a80fdcc30b22bf4f7baf0c5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 52,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L23-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20b90f9f0ce2f2a4e8125abdbac8df07da651a43f614839d7bc16cb65b5bf879"
+      ],
+      "text": "Documented out-of-the-box transcription integrations include AssemblyAI, Deepgram, Gladia, Google Cloud, Azure, RevAI, Whisper, and Whisper.cpp; LLM integrations include OpenAI and Anthropic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14a69fd5e9aa4cdfe323c078de6e61ff61da7e610e14ecc091c1802b026f5609",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "3dd20152391d3a648a2ff16b67a0ffa5e52bb740",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "docs/action-triggers.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/action-triggers.mdx#L8-L8"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "3dd20152391d3a648a2ff16b67a0ffa5e52bb740",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "docs/action-triggers.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/action-triggers.mdx#L64-L66"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+          "line_end": 9,
+          "line_start": 8,
+          "path": "docs/actions.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx#L8-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03dd0aae89e66f0d801fc7693666903ff1f26bec7fd2ddca75cad246b6df8e5f",
+        "slc_2b01c5f6f1494c5bf07832b1aa08a0464bbe9fdc172aee5c73ca4aecb456fe4e",
+        "slc_5e7833c0c23b1dcfb8e5227805266ad219810c4886ea433a0a94a4081e5cc5c9"
+      ],
+      "text": "Actions fire via two trigger mechanisms: the default FunctionCallActionTrigger, where the agent decides based on prompting, or PhraseBasedActionTrigger, which fires after the bot speaks a configured phrase."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf11b136c8a82144e1ff2886eb3c9d6bc424ece6fa771e12d775b2f509b03dce",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "3dd20152391d3a648a2ff16b67a0ffa5e52bb740",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "docs/action-triggers.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/action-triggers.mdx#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d0c9749b6cf0e04e761025edd617f3f365d2af9e209fa3255307560961607e50"
+      ],
+      "text": "The only supported phrase-trigger condition type is 'phrase_condition_type_contains', which matches case-insensitively against the bot's spoken turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0df76e340b358da39d08cadc318614a1b41ebf0703fbb54750ca874f4ea62313",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+          "line_end": 140,
+          "line_start": 133,
+          "path": "docs/actions.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx#L133-L140"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+          "line_end": 25,
+          "line_start": 19,
+          "path": "docs/actions.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx#L19-L25"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+          "line_end": 31,
+          "line_start": 27,
+          "path": "docs/actions.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx#L27-L31"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+          "line_end": 131,
+          "line_start": 125,
+          "path": "docs/actions.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx#L125-L131"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+          "line_end": 41,
+          "line_start": 33,
+          "path": "docs/actions.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx#L33-L41"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+          "line_end": 152,
+          "line_start": 142,
+          "path": "docs/actions.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx#L142-L152"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38f8d86cb4205233c835f4018e9e84766a77573fdca922ebda9fb790dd5dc70f",
+        "slc_3fe9eeaf2f4fc884f7ff9a11caafa00447ba5d8185f0b664675c09150c1b9e34",
+        "slc_6afb2bac1c8d61e2d44ee0d626ed037507724807f20614edaaf9bd24de7a3ad6",
+        "slc_815d78ca1aec16dd73e4d2591fa157ba6ad206103aa7c20d241f6e971673b72b",
+        "slc_88e195acc83aa9a6f2cb1b1a2d07b6aaeb849558d43fee23c27e94050a86b6ab",
+        "slc_edbb76d92efc7d9db89896777b05a95754fead6ad3a881ea39cde2a0a2863962"
+      ],
+      "text": "A hosted REST API at api.vocode.dev exposes endpoints such as /v1/actions/create and /v1/numbers/update with Bearer-token authentication, shown in Python, TypeScript, and cURL examples."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6000df28c4541a07313c0709c13ea804fbe26c3976299baa511f074dcf54a23c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "7c6b0e74c46b3ac8f953a2f19da0543e3fb49fe2",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "docs/bring-your-own-openai.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-openai.mdx#L61-L61"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "7c6b0e74c46b3ac8f953a2f19da0543e3fb49fe2",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "docs/bring-your-own-openai.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-openai.mdx#L63-L63"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "7c6b0e74c46b3ac8f953a2f19da0543e3fb49fe2",
+          "line_end": 4,
+          "line_start": 1,
+          "path": "docs/bring-your-own-openai.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-openai.mdx#L1-L4"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "7c6b0e74c46b3ac8f953a2f19da0543e3fb49fe2",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "docs/bring-your-own-openai.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-openai.mdx#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d3bc06ddf213379f8607cb67d580eb89b0b1a90121e8f4dbfe85473b20f8416",
+        "slc_50cfbee5abc59c781358e4ca01be7df907e5df22cdcbe2f1602d60cff8b73085",
+        "slc_6ec32652d4e53ce0474ec68cb6a9c5d0d0c457515be5da954ecaca7e4d925dfb",
+        "slc_dce0489d87695e1fbb29fd79c29121c09d79b4fa2c3358e079a3270dc5cdf5db"
+      ],
+      "text": "An Enterprise-plan feature lets users connect their own OpenAI account via account connections and use custom or fine-tuned models through an openai_model_name_override agent parameter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d13bc45e636bd6fcc0afb3daab02ea904f35b262a1e7d2311e8426ecc31e7597",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "8cb3e0c88f8db91ecb503f79968469f65a1f8d93",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "docs/bring-your-own-telephony.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-telephony.mdx#L33-L33"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "8cb3e0c88f8db91ecb503f79968469f65a1f8d93",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "docs/bring-your-own-telephony.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-telephony.mdx#L8-L8"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "8cb3e0c88f8db91ecb503f79968469f65a1f8d93",
+          "line_end": 50,
+          "line_start": 48,
+          "path": "docs/bring-your-own-telephony.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-telephony.mdx#L48-L50"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "8cb3e0c88f8db91ecb503f79968469f65a1f8d93",
+          "line_end": 4,
+          "line_start": 1,
+          "path": "docs/bring-your-own-telephony.mdx",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-telephony.mdx#L1-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09f481e07db2575cc901ba25037daba041116320a9deee41bdb08663cfd72e8a",
+        "slc_1cb1e66729266a6023dc566c448bd909a546f36ab61f1c051113163b45283788",
+        "slc_402cbeb72a0c149ad6e324d781a6d206277ab08548afb50e8da8c4053be9e46a",
+        "slc_d82698035d7b810cf3fde5733ad28b0052adc4204ff9309d1dba22644d46ac0a"
+      ],
+      "text": "An Enterprise-plan feature lets users link their own Twilio accounts and phone numbers via a /v1/numbers/link endpoint, with call objects exposing telephonyId and telephonyAccountConnection fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_439511c98d56f73f7f7db548c6068e46ca99ea540692f2ea6a03813347666a16",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 103,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L101-L103"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 99,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L95-L99"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 113,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L107-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1233bfbc506e4d19b7d005ebeacda10bb661232e1dd9937b8cbeadacf207d503",
+        "slc_197f4c4817ba0b8990d31af3a9cdd44824908241883c47b5df142542b9398400",
+        "slc_fab6d475227abf3e1c784799ce2bc15c0c95b529867dc632d19338bd77089750"
+      ],
+      "text": "The quickstart configures settings (OpenAI, Azure, Deepgram keys) via pydantic-settings, overridable through environment variables or a .env file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_187d21c4871adfb1d833f955a812ec9f161514c38fb363b94ec46312d317ae6f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L19-L19"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L64-L64"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L60-L60"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L58-L58"
+        },
+        {
+          "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+          "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "vocodedev/vocode-core",
+          "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d0cf661783eb9c26237b12bc24b1c7eb24984ab6fe7334dbaa207a2adb2572c",
+        "slc_525d70a71ef3b686ce865639d48f2e866fbc1bef44b1a458f4ada5d114a1ac3b",
+        "slc_a49e612d5b4619581057e16dae62533b02796cddd10b398d23f44e040b27fdf8",
+        "slc_c7d3c9c08d733899b0ddb56dc058d9efd1f7c08a6c9e21e3e55ec84c2bc9b9f9",
+        "slc_f21122c38aed743446f17afb7e7d89de57d7cd2b8b12263ca3bba86d9859ca88"
+      ],
+      "text": "Repository development practice: contributing is welcomed via a Contribution Guide and a roadmap file in the repo, with a Discord community for ideas and contributions, and the project seeks community maintainers."
+    }
+  ],
+  "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 167,
+        "path": "README.md",
+        "size": 7332
+      },
+      {
+        "lines": 83,
+        "path": "roadmap.md",
+        "size": 1576
+      },
+      {
+        "lines": 83,
+        "path": "docs/action-triggers.mdx",
+        "size": 2725
+      },
+      {
+        "lines": 221,
+        "path": "docs/actions.mdx",
+        "size": 4472
+      },
+      {
+        "lines": 90,
+        "path": "docs/bring-your-own-openai.mdx",
+        "size": 3135
+      },
+      {
+        "lines": 70,
+        "path": "docs/bring-your-own-telephony.mdx",
+        "size": 2768
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/configuring-number.mdx",
+        "reason": "file-budget",
+        "size": 4355
+      },
+      {
+        "path": "docs/conversational-dials.mdx",
+        "reason": "file-budget",
+        "size": 3286
+      },
+      {
+        "path": "docs/do-not-call-detection.mdx",
+        "reason": "file-budget",
+        "size": 1534
+      },
+      {
+        "path": "docs/external-actions.mdx",
+        "reason": "file-budget",
+        "size": 10985
+      },
+      {
+        "path": "docs/hipaa-compliance.mdx",
+        "reason": "file-budget",
+        "size": 656
+      },
+      {
+        "path": "docs/hosted-quickstart.mdx",
+        "reason": "file-budget",
+        "size": 1796
+      },
+      {
+        "path": "docs/injecting-context.mdx",
+        "reason": "file-budget",
+        "size": 2099
+      },
+      {
+        "path": "docs/ivr-navigation.mdx",
+        "reason": "file-budget",
+        "size": 2027
+      },
+      {
+        "path": "docs/machine-detection.mdx",
+        "reason": "file-budget",
+        "size": 1997
+      },
+      {
+        "path": "docs/multilingual.mdx",
+        "reason": "file-budget",
+        "size": 1034
+      },
+      {
+        "path": "docs/open-source-quickstarts.mdx",
+        "reason": "file-budget",
+        "size": 1544
+      },
+      {
+        "path": "docs/prompt-engineering.mdx",
+        "reason": "file-budget",
+        "size": 78
+      },
+      {
+        "path": "docs/prompts.mdx",
+        "reason": "file-budget",
+        "size": 1103
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 448
+      },
+      {
+        "path": "docs/retrieve-call-data.mdx",
+        "reason": "file-budget",
+        "size": 2254
+      },
+      {
+        "path": "docs/setting-up-number.mdx",
+        "reason": "file-budget",
+        "size": 2405
+      },
+      {
+        "path": "docs/setting-up-webhook.mdx",
+        "reason": "file-budget",
+        "size": 1259
+      },
+      {
+        "path": "docs/using-actions.mdx",
+        "reason": "file-budget",
+        "size": 4400
+      },
+      {
+        "path": "docs/vectordb.mdx",
+        "reason": "file-budget",
+        "size": 3652
+      },
+      {
+        "path": "docs/voices.mdx",
+        "reason": "file-budget",
+        "size": 1781
+      },
+      {
+        "path": "docs/walkthrough_intro.mdx",
+        "reason": "file-budget",
+        "size": 711
+      },
+      {
+        "path": "docs/warm-transfer.mdx",
+        "reason": "file-budget",
+        "size": 3346
+      },
+      {
+        "path": "docs/webhooks.mdx",
+        "reason": "file-budget",
+        "size": 1744
+      },
+      {
+        "path": "docs/welcome.mdx",
+        "reason": "file-budget",
+        "size": 2421
+      },
+      {
+        "path": "docs/_snippets/snippet-example.mdx",
+        "reason": "file-budget",
+        "size": 104
+      },
+      {
+        "path": "docs/open-source/action-phrase-triggers.mdx",
+        "reason": "file-budget",
+        "size": 3891
+      },
+      {
+        "path": "docs/open-source/agent-factory.mdx",
+        "reason": "file-budget",
+        "size": 1776
+      },
+      {
+        "path": "docs/open-source/agent-reference.mdx",
+        "reason": "file-budget",
+        "size": 7220
+      },
+      {
+        "path": "docs/open-source/agent.mdx",
+        "reason": "file-budget",
+        "size": 1727
+      },
+      {
+        "path": "docs/open-source/agents-with-actions.mdx",
+        "reason": "file-budget",
+        "size": 8833
+      },
+      {
+        "path": "docs/open-source/conversation-mechanics.mdx",
+        "reason": "file-budget",
+        "size": 4026
+      },
+      {
+        "path": "docs/open-source/create-your-own-agent.mdx",
+        "reason": "file-budget",
+        "size": 3774
+      },
+      {
+        "path": "docs/open-source/events-manager.mdx",
+        "reason": "file-budget",
+        "size": 2167
+      },
+      {
+        "path": "docs/open-source/external-action.mdx",
+        "reason": "file-budget",
+        "size": 10257
+      },
+      {
+        "path": "docs/open-source/how-it-works.mdx",
+        "reason": "file-budget",
+        "size": 1340
+      },
+      {
+        "path": "docs/open-source/how-to-use-it.mdx",
+        "reason": "file-budget",
+        "size": 463
+      },
+      {
+        "path": "docs/open-source/langchain-agent-dep.mdx",
+        "reason": "file-budget",
+        "size": 6289
+      },
+      {
+        "path": "docs/open-source/langchain-agent.mdx",
+        "reason": "file-budget",
+        "size": 6197
+      },
+      {
+        "path": "docs/open-source/language-support.mdx",
+        "reason": "file-budget",
+        "size": 2437
+      },
+      {
+        "path": "docs/open-source/livekit-webrtc.mdx",
+        "reason": "file-budget",
+        "size": 2009
+      },
+      {
+        "path": "docs/open-source/local-conversation.mdx",
+        "reason": "file-budget",
+        "size": 7216
+      },
+      {
+        "path": "docs/open-source/logging-with-loguru.mdx",
+        "reason": "file-budget",
+        "size": 3000
+      },
+      {
+        "path": "docs/open-source/playground.mdx",
+        "reason": "file-budget",
+        "size": 1095
+      },
+      {
+        "path": "docs/open-source/python-quickstart.mdx",
+        "reason": "file-budget",
+        "size": 5269
+      },
+      {
+        "path": "docs/open-source/rag.mdx",
+        "reason": "file-budget",
+        "size": 2964
+      },
+      {
+        "path": "docs/open-source/react-quickstart.mdx",
+        "reason": "file-budget",
+        "size": 2050
+      },
+      {
+        "path": "docs/open-source/sentry.mdx",
+        "reason": "file-budget",
+        "size": 5709
+      },
+      {
+        "path": "docs/open-source/synthesizer-reference.mdx",
+        "reason": "file-budget",
+        "size": 5353
+      },
+      {
+        "path": "docs/open-source/synthesizer.mdx",
+        "reason": "file-budget",
+        "size": 1886
+      },
+      {
+        "path": "docs/open-source/telephony.mdx",
+        "reason": "file-budget",
+        "size": 6854
+      },
+      {
+        "path": "docs/open-source/transcriber-reference.mdx",
+        "reason": "file-budget",
+        "size": 3924
+      },
+      {
+        "path": "docs/open-source/transcriber.mdx",
+        "reason": "file-budget",
+        "size": 1981
+      },
+      {
+        "path": "docs/open-source/turn-based-conversation.mdx",
+        "reason": "file-budget",
+        "size": 3365
+      },
+      {
+        "path": "docs/open-source/using-synthesizers.mdx",
+        "reason": "file-budget",
+        "size": 4952
+      },
+      {
+        "path": "docs/open-source/using-transcribers.mdx",
+        "reason": "file-budget",
+        "size": 2697
+      },
+      {
+        "path": "docs/open-source/what-is-vocode.mdx",
+        "reason": "file-budget",
+        "size": 901
+      },
+      {
+        "path": "docs/api-reference/account_connections/create-account-connection.mdx",
+        "reason": "file-budget",
+        "size": 52
+      },
+      {
+        "path": "docs/api-reference/account_connections/get-account-connection.mdx",
+        "reason": "file-budget",
+        "size": 44
+      },
+      {
+        "path": "docs/api-reference/account_connections/list-account-connections.mdx",
+        "reason": "file-budget",
+        "size": 49
+      },
+      {
+        "path": "docs/api-reference/account_connections/update-account-connection.mdx",
+        "reason": "file-budget",
+        "size": 52
+      },
+      {
+        "path": "docs/api-reference/actions/create-action.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/actions/get-action.mdx",
+        "reason": "file-budget",
+        "size": 32
+      },
+      {
+        "path": "docs/api-reference/actions/list-actions.mdx",
+        "reason": "file-budget",
+        "size": 37
+      },
+      {
+        "path": "docs/api-reference/actions/update-action.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/agents/create-agent.mdx",
+        "reason": "file-budget",
+        "size": 39
+      },
+      {
+        "path": "docs/api-reference/agents/get-agent.mdx",
+        "reason": "file-budget",
+        "size": 31
+      },
+      {
+        "path": "docs/api-reference/agents/list-agents.mdx",
+        "reason": "file-budget",
+        "size": 36
+      },
+      {
+        "path": "docs/api-reference/agents/update-agent.mdx",
+        "reason": "file-budget",
+        "size": 39
+      },
+      {
+        "path": "docs/api-reference/calls/create-call.mdx",
+        "reason": "file-budget",
+        "size": 38
+      },
+      {
+        "path": "docs/api-reference/calls/end-call.mdx",
+        "reason": "file-budget",
+        "size": 35
+      },
+      {
+        "path": "docs/api-reference/calls/get-call.mdx",
+        "reason": "file-budget",
+        "size": 30
+      },
+      {
+        "path": "docs/api-reference/calls/get-recording.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/calls/list-calls.mdx",
+        "reason": "file-budget",
+        "size": 35
+      },
+      {
+        "path": "docs/api-reference/numbers/buy-number.mdx",
+        "reason": "file-budget",
+        "size": 37
+      },
+      {
+        "path": "docs/api-reference/numbers/cancel-number.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/numbers/get-number.mdx",
+        "reason": "file-budget",
+        "size": 32
+      },
+      {
+        "path": "docs/api-reference/numbers/link-number.mdx",
+        "reason": "file-budget",
+        "size": 38
+      },
+      {
+        "path": "docs/api-reference/numbers/list-numbers.mdx",
+        "reason": "file-budget",
+        "size": 37
+      },
+      {
+        "path": "docs/api-reference/numbers/update-number.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/prompts/create-prompt.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/prompts/get-prompt.mdx",
+        "reason": "file-budget",
+        "size": 32
+      },
+      {
+        "path": "docs/api-reference/prompts/list-prompts.mdx",
+        "reason": "file-budget",
+        "size": 37
+      },
+      {
+        "path": "docs/api-reference/prompts/update-prompt.mdx",
+        "reason": "file-budget",
+        "size": 40
+      },
+      {
+        "path": "docs/api-reference/usage/get-usage.mdx",
+        "reason": "file-budget",
+        "size": 30
+      },
+      {
+        "path": "docs/api-reference/vector_databases/create-vector-database.mdx",
+        "reason": "file-budget",
+        "size": 49
+      },
+      {
+        "path": "docs/api-reference/vector_databases/get-vector-database.mdx",
+        "reason": "file-budget",
+        "size": 41
+      },
+      {
+        "path": "docs/api-reference/vector_databases/list-vector-databases.mdx",
+        "reason": "file-budget",
+        "size": 46
+      },
+      {
+        "path": "docs/api-reference/vector_databases/update-vector-database.mdx",
+        "reason": "file-budget",
+        "size": 49
+      },
+      {
+        "path": "docs/api-reference/voices/create-voice.mdx",
+        "reason": "file-budget",
+        "size": 39
+      },
+      {
+        "path": "docs/api-reference/voices/get-voice.mdx",
+        "reason": "file-budget",
+        "size": 31
+      },
+      {
+        "path": "docs/api-reference/voices/list-voices.mdx",
+        "reason": "file-budget",
+        "size": 36
+      },
+      {
+        "path": "docs/api-reference/voices/update-voice.mdx",
+        "reason": "file-budget",
+        "size": 39
+      },
+      {
+        "path": "docs/api-reference/webhooks/create-webhook.mdx",
+        "reason": "file-budget",
+        "size": 41
+      },
+      {
+        "path": "docs/api-reference/webhooks/get-webhook.mdx",
+        "reason": "file-budget",
+        "size": 33
+      },
+      {
+        "path": "docs/api-reference/webhooks/list-webhooks.mdx",
+        "reason": "file-budget",
+        "size": 38
+      },
+      {
+        "path": "docs/api-reference/webhooks/update-webhook.mdx",
+        "reason": "file-budget",
+        "size": 41
+      },
+      {
+        "path": "contributing.md",
+        "reason": "file-budget",
+        "size": 2997
+      },
+      {
+        "path": "docs/agents.mdx",
+        "reason": "file-budget",
+        "size": 1869
+      }
+    ],
+    "omitted_count": 98,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 386,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 104,
+      "complete": false,
+      "omitted": 98,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_33c3d4c6b96d50a794448f6d49d5dcda",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/vocodedev/vocode-core/e054c33a72787b6a4920f91eb8598ad0bafb4240/2171ee039aec7f17/manifest.json",
+  "package_id": "pkg_1e91f03e48940869a2a4253ccaf76024130677a763fc2bff3a2e160d6c0c0b81",
+  "repo": "vocodedev/vocode-core",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a965d441598bc1db9e2a1065e95afd9cb0b0d8e7718ae97744728ea1b8d187fe",
+  "snapshot_id": "2171ee039aec7f17",
+  "sources": [
+    {
+      "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+      "git_sha": "82cc97c65b26928cec27ee19ed21beeefcf9ec5f",
+      "lines": 167,
+      "path": "README.md",
+      "repository": "vocodedev/vocode-core",
+      "sha256": "1a0d07c4fbee7ad5408ac66565b65b9d32d5c4a279393d52a697b385058423aa",
+      "source_id": "src_175a0ce911c458ec9f58127bbf9fe95c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/README.md"
+    },
+    {
+      "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+      "git_sha": "3dd20152391d3a648a2ff16b67a0ffa5e52bb740",
+      "lines": 83,
+      "path": "docs/action-triggers.mdx",
+      "repository": "vocodedev/vocode-core",
+      "sha256": "7e9209277f660451ba47e3bde0d33ce0cff312dfc76095f3d3b73daea64e99d1",
+      "source_id": "src_dc8e0c85b3e351dda300287389d89846",
+      "stored": "action-triggers.mdx-423d5a6b0cf1.txt",
+      "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/action-triggers.mdx"
+    },
+    {
+      "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+      "git_sha": "c58d5c81113b83854bc1291d26aa0e48d6baf73c",
+      "lines": 221,
+      "path": "docs/actions.mdx",
+      "repository": "vocodedev/vocode-core",
+      "sha256": "bf37b2c1dead72fbb74ceec19c0adfcac6c70dc529ca2c1bcc9db1bca3db4a0f",
+      "source_id": "src_c52f5f5c0ff05bd2b9e93bf041eecbdb",
+      "stored": "actions.mdx-05009a121737.txt",
+      "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/actions.mdx"
+    },
+    {
+      "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+      "git_sha": "7c6b0e74c46b3ac8f953a2f19da0543e3fb49fe2",
+      "lines": 90,
+      "path": "docs/bring-your-own-openai.mdx",
+      "repository": "vocodedev/vocode-core",
+      "sha256": "11f7a55057d4f28825b5c354328ebfd9892a718c365cf9aeffcbf93511a5703b",
+      "source_id": "src_0efc0ddde7355104b169d7102976f9a9",
+      "stored": "bring-your-own-openai.mdx-bc1160d81b8d.txt",
+      "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-openai.mdx"
+    },
+    {
+      "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+      "git_sha": "8cb3e0c88f8db91ecb503f79968469f65a1f8d93",
+      "lines": 70,
+      "path": "docs/bring-your-own-telephony.mdx",
+      "repository": "vocodedev/vocode-core",
+      "sha256": "ea843afb724315582aa4bc05eb2feac09437d3a4e0160544c4c2e74bd3869e88",
+      "source_id": "src_3c85f6fae031587f8ea818ad0b41d91f",
+      "stored": "bring-your-own-telephony.mdx-5e8cbcab05f2.txt",
+      "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/docs/bring-your-own-telephony.mdx"
+    },
+    {
+      "commit": "e054c33a72787b6a4920f91eb8598ad0bafb4240",
+      "git_sha": "0a4c3750386f1b62edf435870ad33b8bdf705f04",
+      "lines": 83,
+      "path": "roadmap.md",
+      "repository": "vocodedev/vocode-core",
+      "sha256": "b81dd3089caba6cde6905eae23f55769f2f53291edac64725289c89171e40167",
+      "source_id": "src_b3526a8b45d050d688632bb899c445bb",
+      "stored": "roadmap.md-51abe96bc493.md",
+      "url": "https://github.com/vocodedev/vocode-core/blob/e054c33a72787b6a4920f91eb8598ad0bafb4240/roadmap.md"
+    }
+  ],
+  "summary": "Selected evidence records: Vocode is an open source library for building voice-based LLM apps, supporting real-time streaming conversations deployable to phone calls, Zoom meetings, and more. The library is installed via pip as the 'vocode' package and exposes a Python API including StreamingConversation, ChatGPTAgent, DeepgramTranscriber, and AzureSynthesizer.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,798 @@
+{
+  "applied_operation_id": "op_25e0ec2c3a2e461b8e37bc1eef5a8fa8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5351b712cea0ec0447ec8a87642522e69f09ec3ab43f435e88448376e24c5907",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6776e0d02d646b0fdddd993597a27190c77a49c3df8c73fb91fed9cd1a1b1e62"
+      ],
+      "text": "deepsec is an agent-powered vulnerability scanner that runs in the user's own infrastructure and is optimized for on-demand review of all code in large existing repositories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4515bc54b8dea6324ec52352965a33d705d16f5b71fc42048f809b5d9dcbd3be",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 132,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L120-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6ab9cb6056a01d8f8f2c7467a0ca0dd87df8320e0da4c57e845dc2cdd8a1c6e"
+      ],
+      "text": "The CLI exposes subcommands including scan, process, process --diff, triage, revalidate, enrich, report, export, metrics, status, and sandbox for running any command on Vercel Sandbox microVMs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0cd68a7deeb0d5589eca6e9ef4c41a8e2a0198956fe916baf77a719274b74867",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 91,
+          "line_start": 86,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L86-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_570b57f69372e1052cd7b133af4bb3673408a6c87215180a8a57736ad81e65c9"
+      ],
+      "text": "The scan stage globs the project root, applies regex matchers to every matched file, and writes candidate matches into per-file FileRecords without any AI usage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7777d76bbabddc6e65eb53320a473bee7ba741f52299d0e907174cbed290f855",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 106,
+          "line_start": 99,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L99-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63a37450f5f67635a91dd3bb67e60d9da8f3ed356966f2cced6dc2beab0bcbe5"
+      ],
+      "text": "The process stage batches pending files, sends each batch to a configured AI agent backend with the system prompt and INFO.md, and parses JSON responses into findings stored on FileRecords."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10c58a31819b721241fcc455430122a92831b302f6f55b8013bba0f8ecb9433e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L108-L108"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 114,
+          "line_start": 110,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L110-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85d411266fa3095cc24080332b508c759fa18c81222e5d9301d864718e1e9299",
+        "slc_9d07663489998534d86a58377d52d5b1db59885f982568bab0c7a90420180073"
+      ],
+      "text": "Three agent backends are supported for process: codex (default, via @openai/codex-sdk), claude (via @anthropic-ai/claude-agent-sdk), and pi (via @earendil-works/pi-coding-agent), each with a documented default model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb5b194cf2f2df691e327770bca86bd9eaa7e2c15fe808a947e6585cdbac2611",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 186,
+          "line_start": 184,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L184-L186"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ea74cbe3d9aad300a1421f1d85bcd61fbef95c5d337aa757e9a3d498612e603"
+      ],
+      "text": "The unit of work is a source file rather than a finding, which the architecture doc says makes per-file atomic locking and idempotent merges natural."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1cb44e3925745ed552930bc70b4e219fd30ee62dabc58da7de0d9bf2bfb1b0a",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "db63d6b8df09926941f85e0d08b01207ac0f7cce",
+          "line_end": 91,
+          "line_start": 88,
+          "path": "docs/data-layout.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/data-layout.md#L88-L91"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 61,
+          "line_start": 58,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L58-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28c5474d4eba18f01fa30f0efafe566fee1f4bdccf5aa73ff14ff168d85edb52",
+        "slc_413a4265df77cb8c514956999424c5faa9457e425fef44128f2c5561ed0227e9"
+      ],
+      "text": "On-disk state is append-only: re-scans merge new candidates, re-processing appends to analysisHistory and merges findings, and revalidation annotates findings with verdicts without overwriting or deleting anything."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_464516511c0919624e784e1287d95cab321c0ff3b445638529795cef84d4a7c6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "db63d6b8df09926941f85e0d08b01207ac0f7cce",
+          "line_end": 110,
+          "line_start": 98,
+          "path": "docs/data-layout.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/data-layout.md#L98-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e8d3fa9abf7aac43adb82caffb27c7990ab3793caeaafe409bbe0e6e39a3d0a0"
+      ],
+      "text": "Each FileRecord tracks candidates, findings, an append-only analysisHistory, gitInfo, a lifecycle status (pending/processing/analyzed/error), and a lockedByRunId field used for atomic file claiming."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a44982f7830f0ddfd911d65ad3ee8c631bb4b12577bfd9a9ec30d95bf42a145",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 123,
+          "line_start": 120,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L120-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cb16aa889aa2c72fb5d77695f747240a31297bcdd581f142dbaed7f03685b02e"
+      ],
+      "text": "The processor claims files atomically via lockedByRunId so multiple workers can run in parallel; concurrency and batch size flags control how many files are in flight."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf77ee141d897b14cc35dd32e20cbd72396bd21915c0650cb9c4a8b573b60d40",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 11,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L8-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc712595cffc4c496861c874624f36bdd13787736f8f6c79ad6768f2355de2d9"
+      ],
+      "text": "For large codebases, work fans out across worker machines in parallel, and interrupted or errored runs can be re-run to resume, skipping already-analyzed files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f355c8aff5522ff4e5fff4d92c2cdf6af4521e831cb6e1ae00c01db6135e1ae",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 105,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L102-L105"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L96-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d4708cc499914287a3b40b03fca34e987868dddd5038cd09d420082a792639a7",
+        "slc_f6df29827f6a0eb32f89526dc1250fb82810e429a454f0f60aacdbfba202b56c"
+      ],
+      "text": "Large monorepos can optionally fan work across Vercel Sandbox microVMs; the local working tree is tarballed and uploaded (excluding .git), and model credentials stay host-side and are injected only at the egress host."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2dfed48c617a9f5d12e5edd6b4643f2bcadeb989857841d6c018705cfcd7d0d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L109-L111"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 116,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L115-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c425deefe2257248f205ce7fdd9d3b134151ee343ca6307825b9b0e32923f8c",
+        "slc_9b636c7cea04169614e89455ee4e95753cb6e4a7ab5eeb8123805b22f9825f6c"
+      ],
+      "text": "The security model treats deepsec like a coding agent with full shell access on its host environment; in sandbox mode, agent API keys are injected outside the sandbox and worker egress is limited to coding-agent hosts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b37ec0fefb68564ecfa35c738009ab786ebd3dad642e86daf6f01dc594b706e8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 87,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L79-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f51d16662ac36553c8b53740e3feeb0d76c95535cdbc22cfee6af829ccabb96"
+      ],
+      "text": "By default model calls route through Vercel AI Gateway; users can instead bring their own OpenAI, Anthropic, or custom HTTPS provider key via --model-auth direct with --ai-provider and --ai-api-key-env."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6bed49895eecebc40b35a02a6ad4fc03946a9346b3a4d1fc1919a1ddbba76ec",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 87,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L79-L87"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "db63d6b8df09926941f85e0d08b01207ac0f7cce",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "docs/data-layout.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/data-layout.md#L25-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f51d16662ac36553c8b53740e3feeb0d76c95535cdbc22cfee6af829ccabb96",
+        "slc_cefc8115c9969ec75f14bf31f15b87a19bf32b860cc70392c90edeeec0127eb5"
+      ],
+      "text": "Only the name of the environment variable holding the model key is stored, never the key value itself; setup-state evidence likewise contains no credential values."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9805870812e23e8c45bc01b85f098cb82d63934be157bd09d42560b814462a54",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "a525fe4ffbd793078e4db1754e2665f9a6f9e72d",
+          "line_end": 7,
+          "line_start": 6,
+          "path": "docs/configuration.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/configuration.md#L6-L7"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "a525fe4ffbd793078e4db1754e2665f9a6f9e72d",
+          "line_end": 38,
+          "line_start": 29,
+          "path": "docs/configuration.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/configuration.md#L29-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a0a32b5b596fe6445c230571f407398d530690915dec7ba782ceac0a7f3de86f",
+        "slc_ec3b202b2f489aa7b15ce9077f833a1f2a7bf4aac7315388c3d0e36095039aae"
+      ],
+      "text": "Configuration lives in deepsec.config.ts (or .mjs/.js/.cjs) resolved from the current directory walking upward, declaring projects, plugins, matcher filters, default agent/model/thinking level, AI route, and dataDir."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_868d5db5ede5f73973baeac3c2fe9c0c8e2f0710ef309b7606f0f58b6ae7e8ff",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 158,
+          "line_start": 157,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L157-L158"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 165,
+          "line_start": 160,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L160-L165"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "a525fe4ffbd793078e4db1754e2665f9a6f9e72d",
+          "line_end": 129,
+          "line_start": 128,
+          "path": "docs/configuration.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/configuration.md#L128-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ee9da72d9741b29fa6ec631e23a7371b5e8ca95230f4860e211a140700c37b6",
+        "slc_cea1301990624fa77d461b0f2d1c14ac523de9de9d82ed7fa73843d18ef06e97",
+        "slc_f69cbaf849c9173f945751e072592f890518e6aed9f2c135243eb1fd9ec78135"
+      ],
+      "text": "The architecture doc describes five plugin extension points in packages/core/src/plugin.ts: matchers, notifiers, and agents are additive, while ownership, people, and executor are single-slot with last-write-wins ordering."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ee99b1a49d13d324d18b0292ba5406d2d903686c0e73c9e10d61f23ac85d278",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 79,
+          "line_start": 67,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L67-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d1c048c7563d88cd02d6dd3ecd4845995b98a265e05ffcd31f2662ec25a6719"
+      ],
+      "text": "The setup coordinator uses a read-only agent to produce INFO.md and a structured surface inventory, evaluates scan coverage, generates data-only matcher specs validated for regex safety and slug collisions, and gates paid processing until coverage passes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ce0fb86a485d89e06007e71557f92699c8ad62d668c1ffa60ca24fbaf5ecc43",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L135-L135"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+          "line_end": 133,
+          "line_start": 127,
+          "path": "docs/architecture.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md#L127-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_050c4f4b004ee8f3668785d0536e0de0600cfe27354713ad152fb61dcb284a8e",
+        "slc_9ef79a04605e4db80552a0cdac84f194d09f1d8f879987dde39d49fbba46aab8"
+      ],
+      "text": "The revalidate stage re-checks findings for false positives using git history and, per the docs, empirically reduces the false-positive rate by 50% or more on most repos."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41663151cac87722586eb3112a3d9ca5d0244b2c5ce391fef28f9e27db391c62",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L6-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e80f438f594126e979eafc851ebce3d2b1fcb05bedbc24ea10574b5d1a67292b"
+      ],
+      "text": "Because it uses top models at maximum thinking levels by default, scans of large codebases can cost thousands to tens of thousands of dollars, per the README's own cost warning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1e35c69c040e76a282f80e6fb2785a1dc796ff0e0cafbf8609435a4aaa46688",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L109-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c425deefe2257248f205ce7fdd9d3b134151ee343ca6307825b9b0e32923f8c"
+      ],
+      "text": "The README warns of prompt-injection risk from external dependencies or vendored code even though the tool is designed to run on trusted source code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b1249a365f93e8b24fc9c9eb9018cf0fec5f9eec118efbabafb3169fab884ae6",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "266a276670f7c989282c421d7e48357b8f04a692",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "docs/faq.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/faq.md#L63-L63"
+        },
+        {
+          "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+          "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "vercel-labs/deepsec",
+          "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44b726525283b3857722b68fb339e619a046c6ab35aa369e5d0c47317b1a39c4",
+        "slc_6776e0d02d646b0fdddd993597a27190c77a49c3df8c73fb91fed9cd1a1b1e62"
+      ],
+      "text": "deepsec targets teams wanting deep, long-running vulnerability review of large existing codebases, with per-finding triage (~1 cent per finding) and revalidation priced comparably to the AI process stage."
+    }
+  ],
+  "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 136,
+        "path": "README.md",
+        "size": 7015
+      },
+      {
+        "lines": 198,
+        "path": "docs/architecture.md",
+        "size": 8624
+      },
+      {
+        "lines": 203,
+        "path": "docs/configuration.md",
+        "size": 7926
+      },
+      {
+        "lines": 106,
+        "path": "SKILL.md",
+        "size": 4972
+      },
+      {
+        "lines": 251,
+        "path": "docs/data-layout.md",
+        "size": 11005
+      },
+      {
+        "lines": 192,
+        "path": "docs/faq.md",
+        "size": 7328
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/getting-started.md",
+        "reason": "file-budget",
+        "size": 8864
+      },
+      {
+        "path": "docs/models.md",
+        "reason": "file-budget",
+        "size": 10316
+      },
+      {
+        "path": "docs/plugins.md",
+        "reason": "file-budget",
+        "size": 7764
+      },
+      {
+        "path": "docs/reviewing-changes.md",
+        "reason": "file-budget",
+        "size": 10231
+      },
+      {
+        "path": "docs/supported-tech.md",
+        "reason": "file-budget",
+        "size": 8307
+      },
+      {
+        "path": "docs/vercel-setup.md",
+        "reason": "file-budget",
+        "size": 8157
+      },
+      {
+        "path": "docs/writing-matchers.md",
+        "reason": "file-budget",
+        "size": 6658
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 1586
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 466
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 5410
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 322
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 754,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 17,
+      "complete": false,
+      "omitted": 11,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_017fbf7c25b756548b11cb8ac6b135f7",
+  "facets": {
+    "components": 5,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 3,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/vercel-labs/deepsec/23a69227e3380e6b44a7ebd93c52e023c59f17c3/83b78ffadd29c0d1/manifest.json",
+  "package_id": "pkg_cf944bf06b7c32f291303f458028904585316e8b962df6a78607ce5e9012e991",
+  "repo": "vercel-labs/deepsec",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a849aa794dd6df64e018ebf8a579a3548542ab58488b8ebf55afadeeb35d2722",
+  "snapshot_id": "83b78ffadd29c0d1",
+  "sources": [
+    {
+      "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+      "git_sha": "23bce6e2a2e83612581f9eb7f838f78121e5d17f",
+      "lines": 136,
+      "path": "README.md",
+      "repository": "vercel-labs/deepsec",
+      "sha256": "fa286fb6ee827d8f7e7436ce762f2a9f6f4e0942c2d195ef32bafa0ac4720df9",
+      "source_id": "src_ad7fe86ac0ca5d07be8665481b82df3a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/README.md"
+    },
+    {
+      "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+      "git_sha": "0c206bd63e793fdc9002f7bd33667f2018b6bd19",
+      "lines": 106,
+      "path": "SKILL.md",
+      "repository": "vercel-labs/deepsec",
+      "sha256": "a9edb5ffd47bf3cdd40b106217d62d980437541bdb8de15019288315a0b27a7d",
+      "source_id": "src_b3a398bbbbed5b649034ce6e5e54c7aa",
+      "stored": "skill.md-0e95f5a36660.md",
+      "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/SKILL.md"
+    },
+    {
+      "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+      "git_sha": "dd5af953a253e31b7db58e9491f658ae64afad95",
+      "lines": 198,
+      "path": "docs/architecture.md",
+      "repository": "vercel-labs/deepsec",
+      "sha256": "e9ebf9f7a1895d1a652f1e867c45490b8040dc2247bdfaff17a7964a0138e895",
+      "source_id": "src_5d9a5dc55ea55e04847a27bf7a0e0ba8",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/architecture.md"
+    },
+    {
+      "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+      "git_sha": "a525fe4ffbd793078e4db1754e2665f9a6f9e72d",
+      "lines": 203,
+      "path": "docs/configuration.md",
+      "repository": "vercel-labs/deepsec",
+      "sha256": "161acc0530407441ca480e96e590d97aed7c41c8225c6dc933949ea55639d7b5",
+      "source_id": "src_39098c834c805138a3e18506b459dbf8",
+      "stored": "configuration.md-17ed18489a95.md",
+      "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/configuration.md"
+    },
+    {
+      "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+      "git_sha": "db63d6b8df09926941f85e0d08b01207ac0f7cce",
+      "lines": 251,
+      "path": "docs/data-layout.md",
+      "repository": "vercel-labs/deepsec",
+      "sha256": "535253b13b6131d9a4351618217ed49aba391a99b6323f84fc2a973281997b9f",
+      "source_id": "src_3eab186a3a045b25a3505f1bdfd3ed8d",
+      "stored": "data-layout.md-df9e4f31d483.md",
+      "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/data-layout.md"
+    },
+    {
+      "commit": "23a69227e3380e6b44a7ebd93c52e023c59f17c3",
+      "git_sha": "266a276670f7c989282c421d7e48357b8f04a692",
+      "lines": 192,
+      "path": "docs/faq.md",
+      "repository": "vercel-labs/deepsec",
+      "sha256": "1bc69dbd5cd362ebfb2d3b4d4a0156eb64acedcf57c9563033f6fe963e9bb6af",
+      "source_id": "src_e0c09dde63205b8cbe40769641c6669a",
+      "stored": "faq.md-57cdcc6b6701.md",
+      "url": "https://github.com/vercel-labs/deepsec/blob/23a69227e3380e6b44a7ebd93c52e023c59f17c3/docs/faq.md"
+    }
+  ],
+  "summary": "deepsec is an agent-powered vulnerability scanner for large existing codebases, with a regex scan stage, AI process/revalidate stages, append-only per-file on-disk state, plugin-mediated integrations, and optional Vercel Sandbox fan-out. All prior product claims were verified against cited slices; the plugin extension-point count was corrected to match the source's stated 'five'. Evidence coverage: 130 of 181 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,697 @@
+{
+  "applied_operation_id": "op_8fe787eb5ac643ab9764168a560dda30",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec0e79cadce8a4949affda4c97fb06a160f4bb6876835e4e0ec15c2c5442a216",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 81,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L78-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cbe3e0cc30c62363a7e2f52e7cc369648085c0a85799203746913bedc33fd8b2"
+      ],
+      "text": "The README describes a multi-agent system including a DeepResearch Agent for analyzing fundamental documents, a Strategy Agent for multi-strategy crypto trading, and a News Retrieval Agent for scheduled news delivery, with more agents planned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5a809f8d877300eaa620fbe4799da15e458ab6ace8bb8525735d81c96b6e594c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 87,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L84-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b4a44dfbde6968eb1a2d7bc1d46ba80993b203ae61185df417cd8817dbc4d73"
+      ],
+      "text": "The product supports multiple LLM providers including OpenRouter, SiliconFlow, Azure, Google, OpenAI-compatible endpoints, OpenAI, and DeepSeek, per the README's integrations section."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1fcfc26e753786f09c570b54eb2b2704ec4c21d9c2767af698644316a1315aca",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L117-L120"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 115,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L107-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b903dbfa6fa1e0d43a19b9baa85e3bc3d18081b408f0067b94e764319975c558",
+        "slc_cdb9d9bc31fb73ddecbbdc85f746711d214cd41b3ee9d8f054befff75620997a"
+      ],
+      "text": "Exchange connectivity is documented for OKX, Binance, and Hyperliquid as fully tested, with Coinbase, Gate.io, MEXC, and a Blockchain option listed as partially tested."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf8f8b57007986f1ad5d712f00ecfcf67668a290832baf109edd7d0023008037",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 176,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L175-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_459a957f4837be7469dc1d77782bffb3cd5dc8b9eff5c4b1f00d57cf2f9b1a68"
+      ],
+      "text": "When launched, the application serves a web UI at http://localhost:1420 and streams backend and agent logs to the terminal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03cc7b432c12c3be37e9a8870a9edf744179ae78dfb98bb3dfb1ab2b00c6e3f3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L3-L3"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L9-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83c904777acd42a3a080492c6e22d714705aeeff86556329ea26a2f89470f352",
+        "slc_90da21b5f1b89eb651d2bf332039690de73e1b45d97c5ac6f2dea924d5e14e22"
+      ],
+      "text": "Configuration uses a three-tier system: environment variables override .env file settings, which override YAML defaults stored under python/configs/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4506f8b38ee393ced746c211673e7b403dcdd1482331c2dabe45e77338399461",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 341,
+          "line_start": 339,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L339-L341"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 323,
+          "line_start": 323,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L323-L323"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 347,
+          "line_start": 345,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L345-L347"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 335,
+          "line_start": 329,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L329-L335"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4660b92c8b177610acc614927b0f103716787b654d1b6ddb92f2c29667b4d2a6",
+        "slc_74b50c1fd9dcaaf803d57a96bcb74c0a81642f8fde892ab95b59d2f77a2f1a52",
+        "slc_79e6a291075f43f605722b869b904f31b5d6c1af29f1b809ca33b82b31fefee9",
+        "slc_d6f318754760a635a5446308046f1630f045cbb9e39bb50c94e24d94e98526e2"
+      ],
+      "text": "The system auto-detects a primary provider from available API keys in a priority order starting with OpenRouter, SiliconFlow, Google, OpenAI, OpenAI-compatible, and Azure; this can be overridden via PRIMARY_PROVIDER or disabled with AUTO_DETECT_PROVIDER=false."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51006d9adba37f417f12e4232d397046d0326a05d0c8b0ba8ff167d975246c30",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 355,
+          "line_start": 353,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L353-L355"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 351,
+          "line_start": 351,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L351-L351"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 368,
+          "line_start": 367,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L367-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cc0a9ba726122d00ba4c84242bead8c86fbbc0f8d3dc7214d160eb875d7f6cb",
+        "slc_d0ad8a9068370166cf8d1c44d9c0a3e48eb8ee3f478375c0c92827752c0d4a09",
+        "slc_ef8d1c8988e5e2f710c914be11c939a6b8faa64e7b1f69769a3b76eac51a1863"
+      ],
+      "text": "If the primary provider fails, the system automatically tries fallback providers built from other enabled providers with valid keys, stopping at the first successful model creation; fallback can be overridden or disabled per agent with use_fallback: false."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3504277c27aa4649ffd15b827c3f78a5b528562e3431fb2e514733cca2ecc58",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 74,
+          "line_start": 62,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L62-L74"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 141,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L129-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99ff95c1172cedb91d30c212fb63eaa578e63a126d2b304ec563b1ae47eb51c2",
+        "slc_9bb3a48872c3106cf8af584aac9d993e240f1827355d4bd8df07edac1dedd0ba"
+      ],
+      "text": "The application stores local data in a LanceDB directory, a knowledge directory, and a SQLite database file (valuecell.db) under the system application directory, and users may delete these to reset state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18ed2feda03bc1f4f46b297704a9367036b2020add5c72963f017106970c6599",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 512,
+          "line_start": 504,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L504-L512"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 515,
+          "line_start": 514,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L514-L515"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09cd642a1b75e41730dc28aeed2bd7e23affeabe232ae0ba2f63ce2e30df8de5",
+        "slc_31e3f148b3c2422a829d17e1239d15aa781995b86925dc32496231172806b663"
+      ],
+      "text": "OKX trading defaults to a paper environment, and OKX_ALLOW_LIVE_TRADING defaults to false and must be set to true before orders are routed to mainnet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0e69fe17f088275a5236923036589b46d34d9d614ba50369f0d6156ca66c424",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 125,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L123-L125"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 103,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L99-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_503f087cc2adc8708daf1fb9d2efab4daeb47a8bf02e9e54e9dd7c64d2fc470b",
+        "slc_5c1687b43c0be790c2831543a9a8f8806f37b0a85cf083444c1c53d846114b06"
+      ],
+      "text": "Live trading currently supports only contract (leverage) trading, with spot implemented as 1X contracts, so users must maintain sufficient contract account balance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16deed8a2612548e48257be0810050eea35f78cebbd5b760d9ea4d86046d89a1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 103,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L99-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c1687b43c0be790c2831543a9a8f8806f37b0a85cf083444c1c53d846114b06"
+      ],
+      "text": "Users configure AI model API keys and exchange credentials (Binance, HyperLiquid, OKX, Coinbase) through the web interface, then create strategies combining models with exchanges and start/stop traders with real-time monitoring."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc94f19a8d5716d4c22bb8c9e4d60b00b209905d4a517e7d8395e95510d34493",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 35,
+          "line_start": 34,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L34-L35"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 171,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L169-L171"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 157,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L154-L157"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 166,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L164-L166"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_073be182e8cc955065acbde4661117f2e5d5ca5373a63f30e53ce6b97c3cd38c",
+        "slc_12ce7964a8b39a0c8c0f0604f6093c57b357327e2b69a71190668f75e47d94d1",
+        "slc_137ac73471c8ef2538cbb595bec6655dcf33578530d42f46c7b6c61ef1b45460",
+        "slc_bab3f30405af31973f40be7b00c6bd5e489eba1bf35efb6ca6f5857c99871b5f",
+        "slc_e75f4ddd5744caea6438b80dba4806d2922b8e9761cf6a31a34e59dadd0330cb"
+      ],
+      "text": "Repository setup instructions: clone the repo, copy .env.example to .env and add API keys, then launch everything with bash start.sh (Linux/macOS) or .\\start.ps1 (Windows PowerShell)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4cdf94b760a195a2b3959e44a305bdfe09943b843439c98a51ee1afbab222b31",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 256,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L256-L256"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 28,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L5-L28"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+          "line_end": 266,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md#L262-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_128d9940a89596347a0a11e189bff45380f760471e4b2422f21cc63f68b25da0",
+        "slc_cf57f3908946b337cb9b2f2a142a66b38acc2273150b834567c98338dd72a77d",
+        "slc_d85c5e231716c3ae90393d2a1df243280d7fb72c4c00b2a9aff9feda8bc0a159"
+      ],
+      "text": "The project targets Python 3.12+ and is licensed under Apache 2.0, which applies only to original ValueCell code; third-party components like TradingView widgets and exchange/LLM APIs are governed by their own terms."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f2c77567cc1282f620102fd97e3cb101abd5a8eaf77548312e477c73d6ef9e70",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 385,
+          "line_start": 381,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L381-L385"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 161,
+          "line_start": 158,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L158-L161"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 309,
+          "line_start": 304,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L304-L309"
+        },
+        {
+          "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+          "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+          "line_end": 156,
+          "line_start": 148,
+          "path": "docs/CONFIGURATION_GUIDE.md",
+          "repository": "valuecell-ai/valuecell",
+          "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md#L148-L156"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43b80c00a9e69bb14e7926e44e21e6cb33253249f22f66be8d12f73355767668",
+        "slc_471dce1d445da6569216f22bd834ff30c04ecf200c3467cc909960ee02cee305",
+        "slc_528edee84ae80b71de3250082b21a430bc3c12cae64b181d2baa0e263d98f15d",
+        "slc_bf662e9f87cdf84f5d5d5e028f20a2d653d785b62405ada58cd0df23cd594da9"
+      ],
+      "text": "Agent YAML configs support per-provider model mappings (provider_models) and env_overrides, suggesting agents can run different models per provider and be tuned at runtime without code changes."
+    }
+  ],
+  "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 280,
+        "path": "README.md",
+        "size": 14615
+      },
+      {
+        "lines": 280,
+        "path": "README.ja.md",
+        "size": 17743
+      },
+      {
+        "lines": 280,
+        "path": "README.zh.md",
+        "size": 13245
+      },
+      {
+        "lines": 281,
+        "path": "README.zh_Hant.md",
+        "size": 13296
+      },
+      {
+        "lines": 628,
+        "path": "docs/CONFIGURATION_GUIDE.md",
+        "size": 17956
+      },
+      {
+        "lines": 513,
+        "path": "docs/CONTRIBUTE_AN_AGENT.md",
+        "size": 16853
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/CORE_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 13646
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5537
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 410
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 49,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 630,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 3,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_e43caca03e3458e996491817cddb20ee",
+  "facets": {
+    "components": 1,
+    "dependencies": 3,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/valuecell-ai/valuecell/9793e9c0563fbf56fc096757d8bb80e209ac7aab/c342e1b889781940/manifest.json",
+  "package_id": "pkg_269a15a57fd809abcd8182ce80d8a6f36ae551be39e73760da32983ebef7be17",
+  "repo": "valuecell-ai/valuecell",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7f3a0ff9207928cee318e7e040b05467ea6994d56f84c2c9adbd0da7fb7a2d2e",
+  "snapshot_id": "c342e1b889781940",
+  "sources": [
+    {
+      "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+      "git_sha": "8a9241fcac5e00c7452656e1ccd43dff11b87ad6",
+      "lines": 280,
+      "path": "README.ja.md",
+      "repository": "valuecell-ai/valuecell",
+      "sha256": "83b7f3d1229b83d450e7dc8a638bd3ad48faf20f61b3a162c5afc1fce9f7f1ef",
+      "source_id": "src_781ba0fffcc85090a37d5b02ae534cf0",
+      "stored": "readme.ja.md-b3fc642ee979.md",
+      "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.ja.md"
+    },
+    {
+      "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+      "git_sha": "48118dade9e23a036b8e464ad795b805f5e37094",
+      "lines": 280,
+      "path": "README.md",
+      "repository": "valuecell-ai/valuecell",
+      "sha256": "a2507476894dc425b1a423d7c1a1a5817da860222fb4ec5574c2987ab6713b7f",
+      "source_id": "src_8d99c6014e5e5fe5aa437b8983edac23",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.md"
+    },
+    {
+      "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+      "git_sha": "b7e97b7063f793e9f32d2946800c5b87eddf96f3",
+      "lines": 280,
+      "path": "README.zh.md",
+      "repository": "valuecell-ai/valuecell",
+      "sha256": "4a31531155eb2b827108f9e8b56e0ae05a7e75b454a3422b6eb44ea93f0b9bf6",
+      "source_id": "src_9511b611b35e5fafa2dc934bc84221f7",
+      "stored": "readme.zh.md-b024066e6d62.md",
+      "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.zh.md"
+    },
+    {
+      "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+      "git_sha": "fd53fe77d009192645d606973079e49da6eff586",
+      "lines": 281,
+      "path": "README.zh_Hant.md",
+      "repository": "valuecell-ai/valuecell",
+      "sha256": "68a38fac1da35567005b5392fc2d8c5eff5d23876dda64058cbb7e0b44130f84",
+      "source_id": "src_c8a93c5b7b775b718c666bd3dc3eeb24",
+      "stored": "readme.zh_hant.md-bb6fd7e348a8.md",
+      "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/README.zh_Hant.md"
+    },
+    {
+      "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+      "git_sha": "2605a65d1e9e92d8895341a9d742a90dad63f408",
+      "lines": 628,
+      "path": "docs/CONFIGURATION_GUIDE.md",
+      "repository": "valuecell-ai/valuecell",
+      "sha256": "d15c766cad63dca7a85a20442269084f15b8598c776100a2cfd9080e95591b20",
+      "source_id": "src_6345424397fd56d0aff4255986966f5e",
+      "stored": "configuration_guide.md-fff56aa59cd5.md",
+      "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONFIGURATION_GUIDE.md"
+    },
+    {
+      "commit": "9793e9c0563fbf56fc096757d8bb80e209ac7aab",
+      "git_sha": "53a97189e2d31991942031ef0cee6d4e0ed54f0f",
+      "lines": 513,
+      "path": "docs/CONTRIBUTE_AN_AGENT.md",
+      "repository": "valuecell-ai/valuecell",
+      "sha256": "62719f127302dbd07cf567328400e6e76f02357196f0edccc24062c026ec6667",
+      "source_id": "src_44d077520b2c5cd9b97a69e2e49d7738",
+      "stored": "contribute_an_agent.md-fd0a803747a4.md",
+      "url": "https://github.com/ValueCell-ai/valuecell/blob/9793e9c0563fbf56fc096757d8bb80e209ac7aab/docs/CONTRIBUTE_AN_AGENT.md"
+    }
+  ],
+  "summary": "ValueCell is a Python-based multi-agent financial platform with a web UI, configurable LLM providers via a three-tier config system, and crypto trading integrations with several exchanges. Evidence is mostly README and configuration documentation; no code or evaluation results are included. Evidence coverage: 168 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,477 @@
+{
+  "applied_operation_id": "op_750a4a272dee49638174d507fb349cbc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_30b49378fa7be3341529dc148e09ddb4567e000c8ad2af473d6cce3e5a358de4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 46,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L44-L46"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L77-L81"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 67,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L65-L67"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L24-L26"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 89,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L87-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4544795aa68a2cb20b527016ceb7f764531c3cc48d50bf09d5a4812a21a40bb2",
+        "slc_6e4bae0d41d7a8c61f7b24647161f9e3c12175a43643f57876960f37643d5272",
+        "slc_7b191651f0c776828641efa84437ea7e1616e272ec09e75834ff9604e946bbc4",
+        "slc_814c445d49f3f6b3e73e532491e2203c7eb3c6926b3b5d3dd512df2536a56fa7",
+        "slc_de7516d28a9b510eda5e1dc151d4590307e73f4974aa041cca28e4c1dc657c22"
+      ],
+      "text": "The plugin is distributed through agent-specific marketplaces: Claude Code and Copilot CLI use /plugin marketplace add, Codex uses codex plugin marketplace add, Cursor uses a Team Marketplace dashboard, and Gemini CLI uses gemini extensions install."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1998c197a235053dba156a5b5715d51791b7297d28707cff0744e86639051dd1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 191,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L191-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9b98d14a662573e853d449b778d1db00e21f42f0b6dbeaeae4c36f757b561636"
+      ],
+      "text": "A Claude-specific release zip packages the plugin in claude.ai's expected layout, with .claude-plugin/plugin.json at the zip root alongside .mcp.json, hooks/, assets/, and skill markdown files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d0ac02a03ee4384318e38132f61956406d7eb4e58ea9b3bd515e889ce5483b2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L15-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_92d2d1d9cfcca126340340fcac84bd6eabbb68f0049e4a3ae36f81158ad761ea"
+      ],
+      "text": "Prerequisites are a coding agent with plugin/skill or MCP support (e.g., Claude Code, Codex, Cursor, Copilot CLI, Gemini CLI) and a Honeydew AI workspace with the Honeydew MCP server configured."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e62889ea81350963a827d5b27535a93ddd0c3a318d54a58b1241741cc2aca2c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 185,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L183-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ca864170eb5a4bf150d7540055a0f7fdf961dd1e5e3aa6dbbec11e8576e9bccb"
+      ],
+      "text": "Supported data warehouses are Snowflake, Databricks, and BigQuery."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7f90bae5ffc00a9572e7dab1ba4435578342d45b9999b123ace762c72a09bb6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md#L93-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ff5d2502b91a55034b2278b50bd7ae6f6e25aaf1a28d666ee74385603ecf22a"
+      ],
+      "text": "Skills are written as agent-agnostic markdown documentation that any MCP-capable coding agent can consume as prompts or instructions, rather than being tied to one agent's plugin format."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1bc47c994d43ff224e4c0e0b2db88fb2be7b3bc98418608bb6920fe662d92a4b",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "4ce8358cf6eac3b571e844e90d20ca083b6b692e",
+          "line_end": 56,
+          "line_start": 55,
+          "path": "CHANGELOG.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/CHANGELOG.md#L55-L56"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "4ce8358cf6eac3b571e844e90d20ca083b6b692e",
+          "line_end": 276,
+          "line_start": 276,
+          "path": "CHANGELOG.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/CHANGELOG.md#L276-L276"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9b59f2776c21bb3b601869cc9cf576085e09512556e4e013f5f0306ff3ffeec5",
+        "slc_acd24d660f20d4478afe4ca0093fb0bd5b869c12775261f03a9db4a8430ca03c"
+      ],
+      "text": "PreToolUse hooks gate Honeydew MCP tool calls: query, exploration, and typed create/update calls are blocked once per session when the matching skill is not loaded, with the block naming the skill to load before the retry proceeds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a906f7fa72b7c6c0e561a1ba549193a9d800a50f6484e37a34c037faa77bc4e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "4ce8358cf6eac3b571e844e90d20ca083b6b692e",
+          "line_end": 56,
+          "line_start": 55,
+          "path": "CHANGELOG.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/CHANGELOG.md#L55-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9b59f2776c21bb3b601869cc9cf576085e09512556e4e013f5f0306ff3ffeec5"
+      ],
+      "text": "The hook gating is designed to be non-wedging: a block fires at most once per skill so a retry always goes through, and uncertain cases such as a missing skill or unparseable payload let the call proceed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8df81b2a76109e7eb7063c0052b95ca8c0fb7d932dc8c233d6044270f7f2365",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+          "line_end": 49,
+          "line_start": 40,
+          "path": "AGENTS.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md#L40-L49"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "AGENTS.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md#L51-L51"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "AGENTS.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f952fc12f3fe141d8c63b168d630582979af5fc490af765bfc39720db3ce9af",
+        "slc_567db0f49c92214c632a2d82c515ca8cbc69e88316438c29dd126af53505fb97",
+        "slc_a86a49a75c6ba8aec0ec4054e37c6e0c4b6ff56fc077dedbfe20c8051ed3f9b3"
+      ],
+      "text": "Repository development practice: version bumps treat .claude-plugin/plugin.json as the source of truth, require updating ten version-bearing files, and contributors run ./scripts/validate-versions.sh locally before pushing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd1c51eed1e72df619f1676282df2f108f775b635f5a311ab01f9e4af6ecae64",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "AGENTS.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md#L76-L76"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+          "line_end": 110,
+          "line_start": 108,
+          "path": "AGENTS.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md#L108-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49b2536db3f1a6ef327b7902af88eff82a601f43ad804c62f2e0bd3ef5eccbd7",
+        "slc_b4348f7cc03c2db2750c17aa8b7e30944cfb6deb5e5f061c8574bd4a237c5b58"
+      ],
+      "text": "Repository development practice: GitHub Actions CI on PRs validates YAML frontmatter, plugin structure and version consistency, and skill registration (Copilot skills array, .cursor/skills symlinks, README table and count)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_92be926ba41044dd0a9a93026967b48c013cf07ab3be04e0a2f0c79b544c4ead",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "AGENTS.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md#L67-L67"
+        },
+        {
+          "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+          "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+          "line_end": 74,
+          "line_start": 69,
+          "path": "AGENTS.md",
+          "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+          "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md#L69-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e88bfed065070ef1f460610817c6313dc78fdbcc21777be449f3b9289cbf518",
+        "slc_e29cc69474d253299b2c963ed4ba1d49a9e49a4436307f250f15b8522b1b8c4b"
+      ],
+      "text": "Repository development practice: adding a new skill requires creating SKILL.md with YAML frontmatter, updating .cursor/skills symlinks, the GitHub Copilot plugin.json skills array, the README table, and AGENTS.md, then bumping the version."
+    }
+  ],
+  "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 209,
+        "path": "README.md",
+        "size": 8516
+      },
+      {
+        "lines": 110,
+        "path": "AGENTS.md",
+        "size": 8999
+      },
+      {
+        "lines": 331,
+        "path": "CHANGELOG.md",
+        "size": 20497
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 9
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 79,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_606176b485c05982bd91b383cb6783f2",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/120377ae/aac60f1b/36797d906d0ae0730e9580ab59995df48431d442/075790f34c5eb551/manifest.json",
+  "package_id": "pkg_be825491a527e72ede60a95375aa0b0884005d0a5f8667aa6d82160b1c6b314c",
+  "repo": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "44e6a970fec05b20cae05303fdbfcf5ec8a9a45710d2abfb11ad691ec319aedb",
+  "snapshot_id": "075790f34c5eb551",
+  "sources": [
+    {
+      "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+      "git_sha": "49241e0ba1ec467bcfa8f6bf0dae4cdb2002aecd",
+      "lines": 110,
+      "path": "AGENTS.md",
+      "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+      "sha256": "ee8b06f32cde13f2f1a8d6c0b41495d998262a4eb63490dc45de355e1505b9e8",
+      "source_id": "src_14c9b28b473257c7878684bc5f7cf50a",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/AGENTS.md"
+    },
+    {
+      "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+      "git_sha": "4ce8358cf6eac3b571e844e90d20ca083b6b692e",
+      "lines": 331,
+      "path": "CHANGELOG.md",
+      "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+      "sha256": "1cbe1682e7d8425ab433fffcf294d256b9d441a3ad95f4b2ca78d776dcca4df6",
+      "source_id": "src_4accc8e09612593dbd18f43f0c4d405c",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/CHANGELOG.md"
+    },
+    {
+      "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+      "git_sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+      "sha256": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9",
+      "source_id": "src_f0c91cc1ea1d58eeafc47cb032e35322",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/CLAUDE.md"
+    },
+    {
+      "commit": "36797d906d0ae0730e9580ab59995df48431d442",
+      "git_sha": "120f7bd99f79c234eb3691073a1d25896420fa99",
+      "lines": 209,
+      "path": "README.md",
+      "repository": "honeydew-ai/honeydew-ai-coding-agents-plugins",
+      "sha256": "820e28796568ef9fc0c7ad841b30bf475df5973957c5754ef141380cac03ef9d",
+      "source_id": "src_88a49f5801595300b756d9478ca508b7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/honeydew-ai/honeydew-ai-coding-agents-plugins/blob/36797d906d0ae0730e9580ab59995df48431d442/README.md"
+    }
+  ],
+  "summary": "The plugin is distributed through agent-specific marketplaces: Claude Code and Copilot CLI use /plugin marketplace add, Codex uses codex plugin marketplace add, Cursor uses a Team Marketplace dashboard, and Gemini CLI uses gemini extensions install. A Claude-specific release zip packages the plugin in claude.ai's expected layout, with .claude-plugin/plugin.json at the zip root alongside .mcp.json, hooks/, assets/, and skill markdown files.",
+  "superseded_claim_ids": []
+}

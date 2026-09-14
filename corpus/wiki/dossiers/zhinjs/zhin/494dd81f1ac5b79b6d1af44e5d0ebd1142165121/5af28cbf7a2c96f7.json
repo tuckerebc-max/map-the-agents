@@ -1,0 +1,1451 @@
+{
+  "applied_operation_id": "op_e17c6512646b4d04b9a1c76a038155d7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_abff7469470d5505d35a9932eb59730bf18bcb730b97cc91ad6f5666ce616958",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "bdd38d39ff20b3a4ceb9d3a16b8946a5636d1c7e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/concepts/architecture.md#L3-L3"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "bdd38d39ff20b3a4ceb9d3a16b8946a5636d1c7e",
+          "line_end": 75,
+          "line_start": 62,
+          "path": "docs/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/concepts/architecture.md#L62-L75"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 211,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L205-L211"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8afbc4a5f0b45300ed5ce17c22de03f6a08e9025d6dd2e9f8071572dfc026c91",
+        "slc_a0c53d53bbb09b280a2a92fd61ed959dbd31c739f30e47cafc3a6c4f9a7db04d",
+        "slc_f584fc2f18428dc6be1acc1059c6f23f0fc649666fe29d04472ad08c5ef84c13"
+      ],
+      "text": "The repo is a pnpm workspace monorepo whose packages include @zhin.js/core (IM layer), @zhin.js/ai, @zhin.js/agent, @zhin.js/cli (composition root), and the zhin.js facade package."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_717080968ab6f9bf8e5a296089876e17ba0d4f90cac83c089c3139c00481a50a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "a58b51e5b2e7e972d249f4fa21bf0c3f96c4dfb6",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/en/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/concepts/architecture.md#L3-L3"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "a58b51e5b2e7e972d249f4fa21bf0c3f96c4dfb6",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "docs/en/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/concepts/architecture.md#L76-L76"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "bdd38d39ff20b3a4ceb9d3a16b8946a5636d1c7e",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "docs/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/concepts/architecture.md#L79-L79"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "bdd38d39ff20b3a4ceb9d3a16b8946a5636d1c7e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/concepts/architecture.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_422985424ef689d497f8d34d6aa9576037c109204cee1ca065e99c94c154c6a5",
+        "slc_603e03b3b67221da700dbe633a710058f0b60979c506b33b2b4405d2131b27a6",
+        "slc_68cc1261ef29188c95916bf68b6a1d279ddcae3616102bb4c1b267fd5e6038a6",
+        "slc_8afbc4a5f0b45300ed5ce17c22de03f6a08e9025d6dd2e9f8071572dfc026c91"
+      ],
+      "text": "Package dependency direction is unidirectional downward: upper layers may depend on lower ones, and lower layers never reference upper layers; @zhin.js/cli is the sole exception allowed to import across all layers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45643162a7971bd6d0315bc62a4ebd68bc958dd0c9f691519745b01cf5f3c84f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 129,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L125-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b207055b001fde947beaebfd9d6b3f4ed557b3c36a479ae8efe04565782d756"
+      ],
+      "text": "Plugin hot reload is described as a Generation transaction: the next plugin tree is prepared and validated off-path, then published atomically, so a failed candidate leaves the active Generation serving traffic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b9c24ac9810c1ff33a5dff9b6032c1d6c69af2f6e0693b34d31d121a5a5d135f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 234,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L228-L234"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L81-L81"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "bdd38d39ff20b3a4ceb9d3a16b8946a5636d1c7e",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "docs/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/concepts/architecture.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_628a25c976b13d52e945d12bb43efb2e264e651dc19eddaeab9b761376914ec3",
+        "slc_9dd4f65e0022cf227ba0d6d64eb617b14bfac23611c23508ff998551a72b389b",
+        "slc_b2f40a5a3a352d3852fba96bb8ce98084c22a8ad2d3f4bbbbfcb827821886526"
+      ],
+      "text": "The CLI exposes commands including `zhin runtime start`, `zhin setup`, `zhin doctor`, `zhin new my-plugin`, and `zhin search <kw>`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_980de79dbd94318509b356ce3ec54b47e617e63c7539e4f22814bd9145c3fc22",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "9da5899d304d4b1dfe3771ccdcad78984aad63f7",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/en/adapters/sandbox.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/adapters/sandbox.md#L15-L15"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "9da5899d304d4b1dfe3771ccdcad78984aad63f7",
+          "line_end": 23,
+          "line_start": 19,
+          "path": "docs/en/adapters/sandbox.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/adapters/sandbox.md#L19-L23"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "0ad68a5949155fcf3e2264fb068a03fa03b8ccb3",
+          "line_end": 23,
+          "line_start": 19,
+          "path": "docs/adapters/sandbox.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/adapters/sandbox.md#L19-L23"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "0ad68a5949155fcf3e2264fb068a03fa03b8ccb3",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/adapters/sandbox.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/adapters/sandbox.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_35e47e7d71a5e1e4f8cef2dc38d4b09b886a26575b6f3bb18db8826ebb6bf5a2",
+        "slc_cda824fa13516db0caa970afa95a6dae30e2525fbf67005d989b1f71eacb2de1",
+        "slc_df081c8d4a3d77e99e283f057a2b36bbbc556c47f0645983ed24d0561980f4e5",
+        "slc_f3e1bd64f7c5d619fc3129d6e234c93dacf6b48716e5bc6b2b4b2c14693cc62c"
+      ],
+      "text": "The Sandbox adapter is a WebSocket-based local testing adapter exposing a `/sandbox` WebSocket endpoint plus a browser chat UI, requiring no third-party platform account."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1647a43c812099acae398b4762bd603e833ed3720643ba94cc6c17cc549caeef",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L40-L42"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 158,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L151-L158"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "a58b51e5b2e7e972d249f4fa21bf0c3f96c4dfb6",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "docs/en/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/concepts/architecture.md#L56-L56"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 169,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L166-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c4dee2a2d9aac0dc58adf8b27238db9643c4d9d4b71895226dfaca242c3bdbd",
+        "slc_1ef376217cf6d7591e43da3c7bebdf79257420bda3618faf1fada1f3e52bff7b",
+        "slc_384599eb9774b0ba8e5fd61cb1146a6669e97ed0c977082ee968a7e86e82df10",
+        "slc_481606da04bc068fbe109a04e3a45412f8dfd3ec8bb439c98996ac93c135ff72"
+      ],
+      "text": "AI is opt-in: the default install is an IM core under ~10MB, and agent capability requires adding @zhin.js/agent, zod, ai, and a provider package such as @ai-sdk/openai."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70fa064569a1d6f6888439a94782834fd4063d51b1cab18b7e26d788a69ed80a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76042d585c6271a3fbc12b0f44ed042df38716b0e4f3247272405e5dd2a8903f"
+      ],
+      "text": "Scaffolded TypeScript projects require Node.js >=22.12.0 and pnpm 9+, while the compiled IM library supports Node ^20.19.0 or >=22.12.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_148ec180642b27f97f5ec935696b67327b094ea58cb2d0151678e1033807a1e9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L40-L42"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 199,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L192-L199"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c4dee2a2d9aac0dc58adf8b27238db9643c4d9d4b71895226dfaca242c3bdbd",
+        "slc_8cc425f32414ff8dc6c9f913d404d191fceedc3f19d544d4b3818620eda24e1d"
+      ],
+      "text": "The README lists adapter packages for 20+ platforms including QQ, Discord, Slack, Telegram, DingTalk, OneBot 11/12, GitHub, email, and LINE."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb67dd8f0432bf3c98a117c61d62611dc8b064ef7da1f4dfd07669603fe171f5",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 186,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L173-L186"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+          "line_end": 141,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md#L134-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e3e65f3f7d3080c9a79e42334b688dfca37a0b0ce0d4958a116b56d2aaf9ab58",
+        "slc_e705cb829ec0ce357b9eabc3c2e8c6c96739e88eb9c7d12c128b98804099daf9"
+      ],
+      "text": "Agent execution security is configurable via zhin.config.yml, e.g. execSecurity: allowlist and execApprovalMode: ask; the stability table lists a baseline security tier with bash allowlist, file policy, and approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55c4f9919c082483d9be940ffb4c0d445d7974be41a35028e3e1c30db73dab61",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "a58b51e5b2e7e972d249f4fa21bf0c3f96c4dfb6",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/en/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/concepts/architecture.md#L3-L3"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "bdd38d39ff20b3a4ceb9d3a16b8946a5636d1c7e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/concepts/architecture.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/concepts/architecture.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_422985424ef689d497f8d34d6aa9576037c109204cee1ca065e99c94c154c6a5",
+        "slc_8afbc4a5f0b45300ed5ce17c22de03f6a08e9025d6dd2e9f8071572dfc026c91"
+      ],
+      "text": "Repository development practice: `pnpm check:architecture` runs in CI to block lower-layer packages importing upper-layer packages, and the layering rule is enforced by harness checks rather than convention."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e87be9744b935be051d8b79994bdb712fdb35f8132797906cd9376b206db4775",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "0ad68a5949155fcf3e2264fb068a03fa03b8ccb3",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/adapters/sandbox.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/adapters/sandbox.md#L7-L9"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "9da5899d304d4b1dfe3771ccdcad78984aad63f7",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/en/adapters/sandbox.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/adapters/sandbox.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d11b3d19068dfc861455a75e34586a315167de763a7e01672ed3a5ded025a4c",
+        "slc_912eebeba7f387cd66878f947b00f6fbb394b365aa7897fba0cb5f2138f13fac"
+      ],
+      "text": "Repository development practice: adapter doc pages are auto-generated from in-package READMEs; contributors edit the package README and run `pnpm sync:adapter-docs`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59aacd3b8e135ac3d84b018fcb400cd7c531dbf108b352aaf71712cbaadd1d95",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "b08d84b87d342ea38b2442f5f1516bb614456f28",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "docs/reference/api.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/reference/api.md#L37-L37"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "b08d84b87d342ea38b2442f5f1516bb614456f28",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "docs/reference/api.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/reference/api.md#L35-L35"
+        },
+        {
+          "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+          "git_sha": "b08d84b87d342ea38b2442f5f1516bb614456f28",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "docs/reference/api.md",
+          "repository": "zhinjs/zhin",
+          "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/reference/api.md#L33-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_305543f4f39b00d5793c64cb95f57b4d223f1897150fec64b555484f37ee7ecc",
+        "slc_4c07497cd3ef4a3a8c3d3d053ebd37eb8e443914101a8b5fd27c253d01f33918",
+        "slc_b4dc499d0dcf6eb50950cf54af7fa8f3a58bd2e60ecda18c8d48b2d8a2f5d0d5"
+      ],
+      "text": "Repository development practice: the API reference is generated from source via `pnpm docs:api`, validated with `pnpm check:api-docs`, and CI gates fail on unknown JSDoc tags, broken symbol links, or TypeScript errors."
+    }
+  ],
+  "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 259,
+        "path": "README.md",
+        "size": 14482
+      },
+      {
+        "lines": 126,
+        "path": "docs/adapters/sandbox.md",
+        "size": 4350
+      },
+      {
+        "lines": 117,
+        "path": "docs/concepts/architecture.md",
+        "size": 6344
+      },
+      {
+        "lines": 51,
+        "path": "docs/reference/api.md",
+        "size": 2434
+      },
+      {
+        "lines": 123,
+        "path": "docs/en/adapters/sandbox.md",
+        "size": 4785
+      },
+      {
+        "lines": 114,
+        "path": "docs/en/concepts/architecture.md",
+        "size": 6661
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/en/reference/api.md",
+        "reason": "file-budget",
+        "size": 2606
+      },
+      {
+        "path": "CONTEXT-MAP.md",
+        "reason": "file-budget",
+        "size": 2823
+      },
+      {
+        "path": "DOCKER.md",
+        "reason": "file-budget",
+        "size": 841
+      },
+      {
+        "path": "README.zh-CN.md",
+        "reason": "file-budget",
+        "size": 13894
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 1450
+      },
+      {
+        "path": "docs/target-architecture.md",
+        "reason": "file-budget",
+        "size": 12492
+      },
+      {
+        "path": "docs/adapters/dingtalk.md",
+        "reason": "file-budget",
+        "size": 4131
+      },
+      {
+        "path": "docs/adapters/discord.md",
+        "reason": "file-budget",
+        "size": 4328
+      },
+      {
+        "path": "docs/adapters/email.md",
+        "reason": "file-budget",
+        "size": 3545
+      },
+      {
+        "path": "docs/adapters/github.md",
+        "reason": "file-budget",
+        "size": 4088
+      },
+      {
+        "path": "docs/adapters/icqq.md",
+        "reason": "file-budget",
+        "size": 7533
+      },
+      {
+        "path": "docs/adapters/index.md",
+        "reason": "file-budget",
+        "size": 5770
+      },
+      {
+        "path": "docs/adapters/kook.md",
+        "reason": "file-budget",
+        "size": 4804
+      },
+      {
+        "path": "docs/adapters/lark.md",
+        "reason": "file-budget",
+        "size": 4368
+      },
+      {
+        "path": "docs/adapters/line.md",
+        "reason": "file-budget",
+        "size": 4465
+      },
+      {
+        "path": "docs/adapters/milky.md",
+        "reason": "file-budget",
+        "size": 4091
+      },
+      {
+        "path": "docs/adapters/napcat.md",
+        "reason": "file-budget",
+        "size": 4269
+      },
+      {
+        "path": "docs/adapters/onebot11.md",
+        "reason": "file-budget",
+        "size": 4606
+      },
+      {
+        "path": "docs/adapters/onebot12.md",
+        "reason": "file-budget",
+        "size": 3932
+      },
+      {
+        "path": "docs/adapters/qq.md",
+        "reason": "file-budget",
+        "size": 8427
+      },
+      {
+        "path": "docs/adapters/satori.md",
+        "reason": "file-budget",
+        "size": 4873
+      },
+      {
+        "path": "docs/adapters/slack.md",
+        "reason": "file-budget",
+        "size": 5743
+      },
+      {
+        "path": "docs/adapters/telegram.md",
+        "reason": "file-budget",
+        "size": 5475
+      },
+      {
+        "path": "docs/adapters/wechat-mp.md",
+        "reason": "file-budget",
+        "size": 4354
+      },
+      {
+        "path": "docs/adapters/wecom.md",
+        "reason": "file-budget",
+        "size": 4819
+      },
+      {
+        "path": "docs/adapters/weixin-ilink.md",
+        "reason": "file-budget",
+        "size": 3258
+      },
+      {
+        "path": "docs/adr/0034-activity-feedback-service-plugin.md",
+        "reason": "file-budget",
+        "size": 1566
+      },
+      {
+        "path": "docs/advanced/activity-feedback.md",
+        "reason": "file-budget",
+        "size": 5268
+      },
+      {
+        "path": "docs/advanced/assistant-home-setup.md",
+        "reason": "file-budget",
+        "size": 3821
+      },
+      {
+        "path": "docs/ai/agent.md",
+        "reason": "file-budget",
+        "size": 23223
+      },
+      {
+        "path": "docs/ai/index.md",
+        "reason": "file-budget",
+        "size": 9398
+      },
+      {
+        "path": "docs/ai/speech.md",
+        "reason": "file-budget",
+        "size": 3543
+      },
+      {
+        "path": "docs/authoring/agent-tools.md",
+        "reason": "file-budget",
+        "size": 11579
+      },
+      {
+        "path": "docs/authoring/commands.md",
+        "reason": "file-budget",
+        "size": 16169
+      },
+      {
+        "path": "docs/authoring/console-pages.md",
+        "reason": "file-budget",
+        "size": 5861
+      },
+      {
+        "path": "docs/authoring/conventions.md",
+        "reason": "file-budget",
+        "size": 12459
+      },
+      {
+        "path": "docs/authoring/define-plugin.md",
+        "reason": "file-budget",
+        "size": 14517
+      },
+      {
+        "path": "docs/authoring/endpoint-lifecycle.md",
+        "reason": "file-budget",
+        "size": 10463
+      },
+      {
+        "path": "docs/authoring/host-tokens.md",
+        "reason": "file-budget",
+        "size": 3582
+      },
+      {
+        "path": "docs/authoring/middleware-components.md",
+        "reason": "file-budget",
+        "size": 6902
+      },
+      {
+        "path": "docs/authoring/module-state.md",
+        "reason": "file-budget",
+        "size": 4028
+      },
+      {
+        "path": "docs/authoring/plugin-delivery.md",
+        "reason": "file-budget",
+        "size": 3385
+      },
+      {
+        "path": "docs/cli/index.md",
+        "reason": "file-budget",
+        "size": 9639
+      },
+      {
+        "path": "docs/cli/runtime.md",
+        "reason": "file-budget",
+        "size": 5845
+      },
+      {
+        "path": "docs/concepts/capability-seams.md",
+        "reason": "file-budget",
+        "size": 6758
+      },
+      {
+        "path": "docs/concepts/config-as-data.md",
+        "reason": "file-budget",
+        "size": 6470
+      },
+      {
+        "path": "docs/concepts/generation-lifecycle.md",
+        "reason": "file-budget",
+        "size": 6850
+      },
+      {
+        "path": "docs/concepts/message-flow.md",
+        "reason": "file-budget",
+        "size": 11644
+      },
+      {
+        "path": "docs/concepts/plugin-model.md",
+        "reason": "file-budget",
+        "size": 7501
+      },
+      {
+        "path": "docs/configuration/generated.md",
+        "reason": "file-budget",
+        "size": 133755
+      },
+      {
+        "path": "docs/configuration/index.md",
+        "reason": "file-budget",
+        "size": 14771
+      },
+      {
+        "path": "docs/console/index.md",
+        "reason": "file-budget",
+        "size": 7970
+      },
+      {
+        "path": "docs/contributing/conventions.md",
+        "reason": "file-budget",
+        "size": 5202
+      },
+      {
+        "path": "docs/contributing/development.md",
+        "reason": "file-budget",
+        "size": 11559
+      },
+      {
+        "path": "docs/contributing/legacy-concepts.md",
+        "reason": "file-budget",
+        "size": 8922
+      },
+      {
+        "path": "docs/contributing/platform-acceptance.md",
+        "reason": "file-budget",
+        "size": 4424
+      },
+      {
+        "path": "docs/contributing/public-api-surface.md",
+        "reason": "file-budget",
+        "size": 11070
+      },
+      {
+        "path": "docs/contributing/repo-structure.md",
+        "reason": "file-budget",
+        "size": 5064
+      },
+      {
+        "path": "docs/en/index.md",
+        "reason": "file-budget",
+        "size": 3735
+      },
+      {
+        "path": "docs/examples/index.md",
+        "reason": "file-budget",
+        "size": 5702
+      },
+      {
+        "path": "docs/getting-started/first-plugin.md",
+        "reason": "file-budget",
+        "size": 5217
+      },
+      {
+        "path": "docs/getting-started/index.md",
+        "reason": "file-budget",
+        "size": 3049
+      },
+      {
+        "path": "docs/operations/docs-insights.md",
+        "reason": "file-budget",
+        "size": 4323
+      },
+      {
+        "path": "docs/operations/production.md",
+        "reason": "file-budget",
+        "size": 9355
+      },
+      {
+        "path": "docs/operations/upgrades.md",
+        "reason": "file-budget",
+        "size": 2740
+      },
+      {
+        "path": "docs/paths/ai-agent.md",
+        "reason": "file-budget",
+        "size": 4016
+      },
+      {
+        "path": "docs/paths/console.md",
+        "reason": "file-budget",
+        "size": 4009
+      },
+      {
+        "path": "docs/paths/im-bot.md",
+        "reason": "file-budget",
+        "size": 3511
+      },
+      {
+        "path": "docs/paths/README.md",
+        "reason": "file-budget",
+        "size": 720
+      },
+      {
+        "path": "docs/plans/agent-workroom-orchestration-decision-map.md",
+        "reason": "file-budget",
+        "size": 71497
+      },
+      {
+        "path": "docs/plans/agent-workroom-production-ledger.md",
+        "reason": "file-budget",
+        "size": 96132
+      },
+      {
+        "path": "docs/plans/governed-delivery-workflow.md",
+        "reason": "file-budget",
+        "size": 4314
+      },
+      {
+        "path": "docs/plans/imhelper-client-integration-contract.md",
+        "reason": "file-budget",
+        "size": 16007
+      },
+      {
+        "path": "docs/plans/zhin-github-self-delivery.md",
+        "reason": "file-budget",
+        "size": 19585
+      },
+      {
+        "path": "docs/showcase/community-bot.md",
+        "reason": "file-budget",
+        "size": 3513
+      },
+      {
+        "path": "docs/showcase/personal-assistant.md",
+        "reason": "file-budget",
+        "size": 3028
+      },
+      {
+        "path": "docs/showcase/README.md",
+        "reason": "file-budget",
+        "size": 759
+      },
+      {
+        "path": "docs/snippets/install-tiers.md",
+        "reason": "file-budget",
+        "size": 5564
+      },
+      {
+        "path": "docs/snippets/platform-tiers.md",
+        "reason": "file-budget",
+        "size": 1769
+      },
+      {
+        "path": "docs/snippets/README.md",
+        "reason": "file-budget",
+        "size": 1166
+      },
+      {
+        "path": "docs/solutions/github-workroom.md",
+        "reason": "file-budget",
+        "size": 2105
+      },
+      {
+        "path": "docs/solutions/governed-agent.md",
+        "reason": "file-budget",
+        "size": 1780
+      },
+      {
+        "path": "docs/solutions/governed-software-delivery.md",
+        "reason": "file-budget",
+        "size": 6910
+      },
+      {
+        "path": "docs/solutions/index.md",
+        "reason": "file-budget",
+        "size": 2073
+      },
+      {
+        "path": "docs/solutions/multi-endpoint-operations.md",
+        "reason": "file-budget",
+        "size": 1407
+      },
+      {
+        "path": "docs/troubleshooting/index.md",
+        "reason": "file-budget",
+        "size": 6710
+      },
+      {
+        "path": "docs/en/adapters/dingtalk.md",
+        "reason": "file-budget",
+        "size": 4455
+      },
+      {
+        "path": "docs/en/adapters/discord.md",
+        "reason": "file-budget",
+        "size": 4675
+      },
+      {
+        "path": "docs/en/adapters/email.md",
+        "reason": "file-budget",
+        "size": 3916
+      },
+      {
+        "path": "docs/en/adapters/github.md",
+        "reason": "file-budget",
+        "size": 4489
+      },
+      {
+        "path": "docs/en/adapters/icqq.md",
+        "reason": "file-budget",
+        "size": 4700
+      },
+      {
+        "path": "docs/en/adapters/index.md",
+        "reason": "file-budget",
+        "size": 6186
+      },
+      {
+        "path": "docs/en/adapters/kook.md",
+        "reason": "file-budget",
+        "size": 4968
+      },
+      {
+        "path": "docs/en/adapters/lark.md",
+        "reason": "file-budget",
+        "size": 4643
+      },
+      {
+        "path": "docs/en/adapters/line.md",
+        "reason": "file-budget",
+        "size": 4903
+      },
+      {
+        "path": "docs/en/adapters/milky.md",
+        "reason": "file-budget",
+        "size": 3939
+      },
+      {
+        "path": "docs/en/adapters/napcat.md",
+        "reason": "file-budget",
+        "size": 4424
+      },
+      {
+        "path": "docs/en/adapters/onebot11.md",
+        "reason": "file-budget",
+        "size": 4548
+      },
+      {
+        "path": "docs/en/adapters/onebot12.md",
+        "reason": "file-budget",
+        "size": 3843
+      },
+      {
+        "path": "docs/en/adapters/qq.md",
+        "reason": "file-budget",
+        "size": 6153
+      },
+      {
+        "path": "docs/en/adapters/satori.md",
+        "reason": "file-budget",
+        "size": 4804
+      },
+      {
+        "path": "docs/en/adapters/slack.md",
+        "reason": "file-budget",
+        "size": 5611
+      },
+      {
+        "path": "docs/en/adapters/telegram.md",
+        "reason": "file-budget",
+        "size": 4885
+      },
+      {
+        "path": "docs/en/adapters/wechat-mp.md",
+        "reason": "file-budget",
+        "size": 5032
+      },
+      {
+        "path": "docs/en/adapters/wecom.md",
+        "reason": "file-budget",
+        "size": 5392
+      },
+      {
+        "path": "docs/en/adapters/weixin-ilink.md",
+        "reason": "file-budget",
+        "size": 3750
+      },
+      {
+        "path": "docs/en/advanced/activity-feedback.md",
+        "reason": "file-budget",
+        "size": 4972
+      },
+      {
+        "path": "docs/en/ai/agent.md",
+        "reason": "file-budget",
+        "size": 22689
+      },
+      {
+        "path": "docs/en/ai/index.md",
+        "reason": "file-budget",
+        "size": 10391
+      },
+      {
+        "path": "docs/en/ai/speech.md",
+        "reason": "file-budget",
+        "size": 4031
+      },
+      {
+        "path": "docs/en/authoring/agent-tools.md",
+        "reason": "file-budget",
+        "size": 11852
+      },
+      {
+        "path": "docs/en/authoring/commands.md",
+        "reason": "file-budget",
+        "size": 17972
+      },
+      {
+        "path": "docs/en/authoring/console-pages.md",
+        "reason": "file-budget",
+        "size": 6464
+      },
+      {
+        "path": "docs/en/authoring/conventions.md",
+        "reason": "file-budget",
+        "size": 12695
+      },
+      {
+        "path": "docs/en/authoring/define-plugin.md",
+        "reason": "file-budget",
+        "size": 16112
+      },
+      {
+        "path": "docs/en/authoring/endpoint-lifecycle.md",
+        "reason": "file-budget",
+        "size": 11622
+      },
+      {
+        "path": "docs/en/authoring/host-tokens.md",
+        "reason": "file-budget",
+        "size": 3584
+      },
+      {
+        "path": "docs/en/authoring/middleware-components.md",
+        "reason": "file-budget",
+        "size": 7666
+      },
+      {
+        "path": "docs/en/authoring/module-state.md",
+        "reason": "file-budget",
+        "size": 4165
+      },
+      {
+        "path": "docs/en/authoring/plugin-delivery.md",
+        "reason": "file-budget",
+        "size": 3659
+      },
+      {
+        "path": "docs/en/cli/index.md",
+        "reason": "file-budget",
+        "size": 9545
+      },
+      {
+        "path": "docs/en/cli/runtime.md",
+        "reason": "file-budget",
+        "size": 6511
+      },
+      {
+        "path": "docs/en/concepts/capability-seams.md",
+        "reason": "file-budget",
+        "size": 6694
+      },
+      {
+        "path": "docs/en/concepts/config-as-data.md",
+        "reason": "file-budget",
+        "size": 7788
+      },
+      {
+        "path": "docs/en/concepts/generation-lifecycle.md",
+        "reason": "file-budget",
+        "size": 7814
+      },
+      {
+        "path": "docs/en/concepts/message-flow.md",
+        "reason": "file-budget",
+        "size": 11584
+      },
+      {
+        "path": "docs/en/concepts/plugin-model.md",
+        "reason": "file-budget",
+        "size": 8400
+      },
+      {
+        "path": "docs/en/configuration/generated.md",
+        "reason": "file-budget",
+        "size": 133295
+      },
+      {
+        "path": "docs/en/configuration/index.md",
+        "reason": "file-budget",
+        "size": 15961
+      },
+      {
+        "path": "docs/en/console/index.md",
+        "reason": "file-budget",
+        "size": 8446
+      },
+      {
+        "path": "docs/en/contributing/conventions.md",
+        "reason": "file-budget",
+        "size": 5688
+      },
+      {
+        "path": "docs/en/contributing/development.md",
+        "reason": "file-budget",
+        "size": 11122
+      },
+      {
+        "path": "docs/en/contributing/legacy-concepts.md",
+        "reason": "file-budget",
+        "size": 9678
+      },
+      {
+        "path": "docs/en/contributing/public-api-surface.md",
+        "reason": "file-budget",
+        "size": 12218
+      },
+      {
+        "path": "docs/en/contributing/repo-structure.md",
+        "reason": "file-budget",
+        "size": 5423
+      },
+      {
+        "path": "docs/en/examples/index.md",
+        "reason": "file-budget",
+        "size": 6222
+      },
+      {
+        "path": "docs/en/getting-started/first-plugin.md",
+        "reason": "file-budget",
+        "size": 5657
+      },
+      {
+        "path": "docs/en/getting-started/index.md",
+        "reason": "file-budget",
+        "size": 3017
+      },
+      {
+        "path": "docs/en/operations/docs-insights.md",
+        "reason": "file-budget",
+        "size": 4697
+      },
+      {
+        "path": "docs/en/operations/production.md",
+        "reason": "file-budget",
+        "size": 9505
+      },
+      {
+        "path": "docs/en/operations/upgrades.md",
+        "reason": "file-budget",
+        "size": 2754
+      },
+      {
+        "path": "docs/en/paths/ai-agent.md",
+        "reason": "file-budget",
+        "size": 4161
+      },
+      {
+        "path": "docs/en/paths/console.md",
+        "reason": "file-budget",
+        "size": 4327
+      },
+      {
+        "path": "docs/en/paths/im-bot.md",
+        "reason": "file-budget",
+        "size": 3559
+      },
+      {
+        "path": "docs/en/paths/README.md",
+        "reason": "file-budget",
+        "size": 822
+      },
+      {
+        "path": "docs/en/showcase/community-bot.md",
+        "reason": "file-budget",
+        "size": 3902
+      },
+      {
+        "path": "docs/en/showcase/personal-assistant.md",
+        "reason": "file-budget",
+        "size": 3343
+      },
+      {
+        "path": "docs/en/showcase/README.md",
+        "reason": "file-budget",
+        "size": 877
+      },
+      {
+        "path": "docs/en/solutions/github-workroom.md",
+        "reason": "file-budget",
+        "size": 2068
+      },
+      {
+        "path": "docs/en/solutions/governed-agent.md",
+        "reason": "file-budget",
+        "size": 1753
+      },
+      {
+        "path": "docs/en/solutions/index.md",
+        "reason": "file-budget",
+        "size": 2334
+      },
+      {
+        "path": "docs/en/solutions/multi-endpoint-operations.md",
+        "reason": "file-budget",
+        "size": 1498
+      },
+      {
+        "path": "docs/en/troubleshooting/index.md",
+        "reason": "file-budget",
+        "size": 7315
+      },
+      {
+        "path": "docs/public/deploy/production/dockerignore.txt",
+        "reason": "file-budget",
+        "size": 66
+      },
+      {
+        "path": "docs/public/deploy/production/env.example.txt",
+        "reason": "file-budget",
+        "size": 162
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 13477
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 12214
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 12504
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 13310
+      },
+      {
+        "path": "docs/CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 235
+      }
+    ],
+    "omitted_count": 160,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 4222,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 166,
+      "complete": false,
+      "omitted": 160,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_57758023d4f75b6f939d009e2c4015bd",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zhinjs/zhin/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/5af28cbf7a2c96f7/manifest.json",
+  "package_id": "pkg_dffe4e491c8c7ef5becef8fc6cbf4da12231b9e252b589406f39437a7763f6d4",
+  "repo": "zhinjs/zhin",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5758b3f7592d06a8c442d5578f226cc907ebcf400f30455ab485fbd89cb55846",
+  "snapshot_id": "5af28cbf7a2c96f7",
+  "sources": [
+    {
+      "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+      "git_sha": "7d8b1b5945813a98543da1b2af3ab62a6fa72699",
+      "lines": 259,
+      "path": "README.md",
+      "repository": "zhinjs/zhin",
+      "sha256": "145577e14bd7b91e0869503e7053b8bd379c31a46671697ae8666ca2d4b84caf",
+      "source_id": "src_67a66dcba7b057f6b7f2a12c6ac1cad8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/README.md"
+    },
+    {
+      "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+      "git_sha": "0ad68a5949155fcf3e2264fb068a03fa03b8ccb3",
+      "lines": 126,
+      "path": "docs/adapters/sandbox.md",
+      "repository": "zhinjs/zhin",
+      "sha256": "286d6cd4c7bd35f4ed1a17a983dcd693dbf29aaffc4b4d8bfb3afd488ea7abdb",
+      "source_id": "src_a1c9f47a10c357109392c179333e8938",
+      "stored": "sandbox.md-448347daa7f9.md",
+      "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/adapters/sandbox.md"
+    },
+    {
+      "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+      "git_sha": "bdd38d39ff20b3a4ceb9d3a16b8946a5636d1c7e",
+      "lines": 117,
+      "path": "docs/concepts/architecture.md",
+      "repository": "zhinjs/zhin",
+      "sha256": "45c41a5701e4f8188680e189a69b5e6bb6061d8e5f83c93ff737dc11677ccaee",
+      "source_id": "src_bb5515fe266e5fcfa2b7d89eba8d8a0b",
+      "stored": "architecture.md-e1d6435bbc9e.md",
+      "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/concepts/architecture.md"
+    },
+    {
+      "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+      "git_sha": "9da5899d304d4b1dfe3771ccdcad78984aad63f7",
+      "lines": 123,
+      "path": "docs/en/adapters/sandbox.md",
+      "repository": "zhinjs/zhin",
+      "sha256": "d5c5cfec652fc2eb00503f6b31ef60d90a45f6e97b5adcdec9e5bdddbd276cc0",
+      "source_id": "src_f9abd606792151eb9b8afd13fb80d8d2",
+      "stored": "sandbox.md-a9490641e416.md",
+      "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/adapters/sandbox.md"
+    },
+    {
+      "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+      "git_sha": "a58b51e5b2e7e972d249f4fa21bf0c3f96c4dfb6",
+      "lines": 114,
+      "path": "docs/en/concepts/architecture.md",
+      "repository": "zhinjs/zhin",
+      "sha256": "ee43760132de7ffa37a3881498f4badba81aa57f949515b772e7a6763037ff5b",
+      "source_id": "src_c20cda1dc7455daf8fff546017e92438",
+      "stored": "architecture.md-f5ef19b2b502.md",
+      "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/en/concepts/architecture.md"
+    },
+    {
+      "commit": "494dd81f1ac5b79b6d1af44e5d0ebd1142165121",
+      "git_sha": "b08d84b87d342ea38b2442f5f1516bb614456f28",
+      "lines": 51,
+      "path": "docs/reference/api.md",
+      "repository": "zhinjs/zhin",
+      "sha256": "4c761312a7f581df214a1fd1e7ecad66c90a93869528c6a2cbf76865012f3001",
+      "source_id": "src_930649987a6d5f23ae3d371bbe70b455",
+      "stored": "api.md-370381df31c8.md",
+      "url": "https://github.com/zhinjs/zhin/blob/494dd81f1ac5b79b6d1af44e5d0ebd1142165121/docs/reference/api.md"
+    }
+  ],
+  "summary": "Zhin.js is a TypeScript multi-platform chat-bot framework (pnpm monorepo) with an optional AI/agent layer, Remote Console, and a layered package architecture enforced in CI. Evidence is mostly README and architecture/adapter docs; no code inspection. Evidence coverage: 137 of 139 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

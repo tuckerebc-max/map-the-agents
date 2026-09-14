@@ -1,0 +1,1515 @@
+{
+  "applied_operation_id": "op_5aa3f64662b3417295bb00cfd924e45d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_121fbb2742fb703817bcfc68fbe77539468ed59f5dcc0d00181ce04e5ed0d378",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "66477d92b4cdb8772a74e28852cef31cd37019e4",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8ffacc1d2b6e8ecf1cb52991ce4635c6441a87c00de956acb530ebf8693b5062"
+      ],
+      "text": "Continue is shipped as a CLI, a VS Code extension, and a JetBrains plugin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9793019a66b0a2c3af655f952dc21515f4050463a82f67fa81f4793e5939c12",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L7-L9"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_311a899dcd3a46f107b96718b348d8ced3d24c0c607debdc518f071dc42e2668",
+        "slc_8320d82dcc5b4874f76b308220374a00146226dede36ca2b9cb1b308538458b9"
+      ],
+      "text": "The CLI (`cn`) resolves configuration in order: a `--config` file path flag, the last-used saved config, then the default `~/.continue/config.yaml`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41906ac0ec4c107b0537188a2ee3562a0c21a39a665fb5bf1dfd99a2dd56cc6b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L29-L29"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_465333161b40774de219b72ed505cb8fc379cc4ab91bcb0220fc9537b60c28fd",
+        "slc_df839a487ffb7950b96c3846919c35be831c00bd780ad98794915cb5a8a6b52b"
+      ],
+      "text": "Inside a CLI TUI session, the `/config` command lists available local configurations and the selection persists to the next session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_674a2ff212bbf8940bc4e473505cab6f4e14bb849447d9e59682a44bf99ef4c9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 46,
+          "line_start": 45,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L45-L46"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L48-L48"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 42,
+          "line_start": 41,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L41-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4df6e689d412b335f504f96de317dbb46b53b1570e47d43cf4bfe149cb8f7b90",
+        "slc_79ae2d910ab100347dca531ef571ea014902089ef65840293e1f1c5b9d87e5a8",
+        "slc_ac2f78805880e404e735e7c1ee84b39641848dfa44b9c1cd95d48bd6103179ef"
+      ],
+      "text": "The CLI supports repeatable launch flags such as `--rule` (file path or inline string) and `--agent` (e.g. `my-org/pr-reviewer`) to inject configuration without editing files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08a1e1cdf234c9db83ebef6554a72b39e3866ed045c17e295af6ac029efa0cd8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a32206b78b8607e3e770bd50c9e1c0bf6022aeb7f5c21129e8bbbcf7fc8e4069"
+      ],
+      "text": "In the IDE extensions, configuration is reached from the Continue Chat sidebar (cmd/ctrl+L in VS Code, cmd/ctrl+J in JetBrains) via the Agent selector's gear icon."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83ca78537b40bc9481f2493212ed4bcb03bf2661f7c885378b838a101c15d7a0",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L23-L23"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 17,
+          "line_start": 16,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L16-L17"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_046e387353204419404f7efb0329413667298b84249ac6431227afda699fedc2",
+        "slc_6c848a293d13cd29d49c98a8014e5a14f8aa1ebc10c15b95e7d5ee4a62d367ba",
+        "slc_8c1195593fee9d33d7135593ff5a364275486a158ac5488459455d763d101287"
+      ],
+      "text": "User-level configuration lives in `~/.continue/config.yaml` (or `%USERPROFILE%\\.continue\\config.yaml` on Windows), and saving it in the IDE triggers an automatic config refresh."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3e393526097aad75f6d81295342d9aeb3a4c008e5a02cbfedd29f17293332ab",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 31,
+          "line_start": 29,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L29-L31"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 37,
+          "line_start": 33,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L33-L37"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L58-L58"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L56-L56"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "docs/customize/deep-dives/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_014ddee9934a6a5f1c27ca93133f361aa89080915df1a76a9be372e79793ea2f",
+        "slc_6fb1d959e189ac9188fc2c8add129b5f33b99909ed7b6981e869c600e6b6cdbf",
+        "slc_ac1bf0477dcde2e5f39e31dabb5857719e603bad68910a82220a62e52f23bb5d",
+        "slc_acb715e8658548e57c25ebaf71ca09cb295b4242443009c58dbb03abd4a065b6",
+        "slc_e2f305543172e520362356929b07c98a6bc04bc8b6d02b49dd5b1e2931c65041"
+      ],
+      "text": "Legacy configuration methods are deprecated: `config.json`, workspace-level `.continuerc.json` (with a `mergeBehavior` of merge or overwrite), and programmatic `config.ts` exporting `modifyConfig`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb9bd6021c717d81109cfea7204c6bdbf9dd32bfc05f15c807a07c72a106d138",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 56,
+          "line_start": 54,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L54-L56"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "docs/cli/configuration.mdx",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e7f6218599e79b52b5e57e4929e7de9f829da2c64b866ac54d4c71fec4a3c9c",
+        "slc_ce608aee7f61dc34ce7360b1249e5e5b5bd576e4640a82d55fb34fc3ffb812c9"
+      ],
+      "text": "Sensitive values in config are referenced as environment variables using the `${{ secrets.MY_API_KEY }}` syntax."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4d5864539bcdf51e95a81c3e778b258bbf1afc348a88eb2603a8c9d83372070a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "BUILD_DEPENDENCIES.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/BUILD_DEPENDENCIES.md#L33-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e7fdfbf687b6e9e68513bef449d5b146604d3fee1854097e76a6cf4cbb81bd2"
+      ],
+      "text": "The CLI uses `CONTINUE_API_BASE` (defaulting to https://api.continue.dev/) and `CONTINUE_API_KEY` for Continue API authentication, per the repository's build-dependency catalog."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d22f21a396d154d7cd6b5b8a43ea95021f04dafe26f5557f0887365651e93db9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "BUILD_DEPENDENCIES.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/BUILD_DEPENDENCIES.md#L9-L12"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108",
+          "line_end": 66,
+          "line_start": 54,
+          "path": "BUILD_DEPENDENCIES.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/BUILD_DEPENDENCIES.md#L54-L66"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108",
+          "line_end": 46,
+          "line_start": 42,
+          "path": "BUILD_DEPENDENCIES.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/BUILD_DEPENDENCIES.md#L42-L46"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108",
+          "line_end": 27,
+          "line_start": 18,
+          "path": "BUILD_DEPENDENCIES.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/BUILD_DEPENDENCIES.md#L18-L27"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "BUILD_DEPENDENCIES.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/BUILD_DEPENDENCIES.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_203fc8a4812c9abac989cf874d58027dbff4370a4739bdb789708a14ef21a025",
+        "slc_44456f002cf7c06a22c65169564377b39948b4d5b471a1746aec2b47f4f0e192",
+        "slc_77df727011b3aeb6ef651334f5fa7a07879076c5699218764724826704085f8c",
+        "slc_ac985ba064d22e5c65a2a9f8066827496f5dd9a48cdfbde76a96b0e73fe809c1",
+        "slc_dbf48af88f45165549037a0cdf643ce383ba9b99c132b161ff23c93dbe241e0b"
+      ],
+      "text": "Repository development practice: CI workflows reference many secrets, including marketplace publishing tokens (VSCE_TOKEN, VSX_REGISTRY_TOKEN), JetBrains signing/notarization credentials, semantic-release npm/GitHub tokens, and AI provider API keys used in PR checks and releases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e7fe7c6a75f64fbda130b207761a141f7578bbea4b1ddfa8dd3399cb91f9a09",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "a23e12a1ea0ad4a5685bfa521c0b60ed6699a542",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "CLA.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/CLA.md#L5-L7"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "a23e12a1ea0ad4a5685bfa521c0b60ed6699a542",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "CLA.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/CLA.md#L32-L34"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "a23e12a1ea0ad4a5685bfa521c0b60ed6699a542",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "CLA.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/CLA.md#L20-L23"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "a23e12a1ea0ad4a5685bfa521c0b60ed6699a542",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "CLA.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/CLA.md#L27-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_48c46df222103429252fcc3aa1e547d9893ce2746ff7ed1e262153977a209574",
+        "slc_8d9de207422ae40522cea2f9d21f4bd9932e8443a1ba12db53c06e0fd3496319",
+        "slc_a7ae2ae409d72db5dbf5229b759f914ba552acb258701b09f40bde88c51350f6",
+        "slc_e99238a4931eba18207b3ccaedee68c49ec0fe79be5aa70a468bcb5b28987894"
+      ],
+      "text": "Repository development practice: contributors accept an Individual CLA by commenting an agreement phrase on a pull request; the CLA grants Continue Dev, Inc. copyright and patent licenses and terminates patent licenses upon litigation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6293fa60805d9a51f966f96785d545a6474bbe19e1c36010d9dde2f69ffea076",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "96fe5e6c284278153d0d5b0deeab2767d7cf94d5",
+          "line_end": 9,
+          "line_start": 5,
+          "path": "TESTING.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/TESTING.md#L5-L9"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "96fe5e6c284278153d0d5b0deeab2767d7cf94d5",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "TESTING.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/TESTING.md#L13-L17"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "96fe5e6c284278153d0d5b0deeab2767d7cf94d5",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "TESTING.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/TESTING.md#L21-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_87007004615df156effae175da525826c48dc32d9faa7a885527824db5210d5f",
+        "slc_d83d2356d618e33c7d875d032d9d5c87a32c902b27aa5f17a3470722cad21c18",
+        "slc_de8a61fd810d2bb7d14f159c7f543d2ebe0310a27d3c01edc87ff2f2f448c64d"
+      ],
+      "text": "Repository development practice: a TESTING.md checklist records manual verification items (extension cold start, onboarding, config reload, MCP server connections) plus Vitest suites and `tsc --noEmit` compilation checks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_09c19f0310c7ed476f7b7d3f50c5900b375e8fbf42ae4b06d2ccef79099a5878",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "66477d92b4cdb8772a74e28852cef31cd37019e4",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c4ee8ccccde51a37a0d71a3b3d4048793393504e0e3d77712dc220db835c2d4"
+      ],
+      "text": "The README states the continuedev/continue repository is no longer actively maintained and is read-only for all users."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b9805a083b12d5aac53af94492af3febcf9049c14a40bcdbfd5fd354cf60e30a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "66477d92b4cdb8772a74e28852cef31cd37019e4",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1099e384340df578e7320b30db1913a4f855d52f8cdaacb9be5accfe2ac60e3e"
+      ],
+      "text": "The project recommends using the Continue CLI instead of the JetBrains plugin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7db55eaed9461d1ed54dc03c85da04248d70fa3d1cfe4c5860456f1a0a08d6a9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "66477d92b4cdb8772a74e28852cef31cd37019e4",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md#L31-L31"
+        },
+        {
+          "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+          "git_sha": "66477d92b4cdb8772a74e28852cef31cd37019e4",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e432b55f86bc60bf270896f0b190d3fb7489bb89d941d580700fc37f8f6d726",
+        "slc_764696f1854fe8a9d04edf9c11466d2c1f6fd2bb8b2768db201d9de4aedf1963"
+      ],
+      "text": "The final 2.0.0 release removed anonymous telemetry and pulled out authentication across the VS Code extension, CLI, and JetBrains plugin."
+    }
+  ],
+  "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 63,
+        "path": "README.md",
+        "size": 2791
+      },
+      {
+        "lines": 56,
+        "path": "docs/cli/configuration.mdx",
+        "size": 1387
+      },
+      {
+        "lines": 87,
+        "path": "docs/customize/deep-dives/configuration.mdx",
+        "size": 4188
+      },
+      {
+        "lines": 105,
+        "path": "BUILD_DEPENDENCIES.md",
+        "size": 9488
+      },
+      {
+        "lines": 48,
+        "path": "CLA.md",
+        "size": 2039
+      },
+      {
+        "lines": 30,
+        "path": "TESTING.md",
+        "size": 2461
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/faqs.mdx",
+        "reason": "file-budget",
+        "size": 13036
+      },
+      {
+        "path": "docs/home.mdx",
+        "reason": "file-budget",
+        "size": 1368
+      },
+      {
+        "path": "docs/index.mdx",
+        "reason": "file-budget",
+        "size": 885
+      },
+      {
+        "path": "docs/overview.mdx",
+        "reason": "file-budget",
+        "size": 2151
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 974
+      },
+      {
+        "path": "docs/reference.mdx",
+        "reason": "file-budget",
+        "size": 15954
+      },
+      {
+        "path": "docs/troubleshooting.mdx",
+        "reason": "file-budget",
+        "size": 7772
+      },
+      {
+        "path": "docs/autocomplete/how-to-use-it.mdx",
+        "reason": "file-budget",
+        "size": 1184
+      },
+      {
+        "path": "docs/chat/how-to-use-it.mdx",
+        "reason": "file-budget",
+        "size": 2449
+      },
+      {
+        "path": "docs/cli/headless-mode.mdx",
+        "reason": "file-budget",
+        "size": 2093
+      },
+      {
+        "path": "docs/cli/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 2747
+      },
+      {
+        "path": "docs/cli/tool-permissions.mdx",
+        "reason": "file-budget",
+        "size": 2919
+      },
+      {
+        "path": "docs/cli/tui-mode.mdx",
+        "reason": "file-budget",
+        "size": 3201
+      },
+      {
+        "path": "docs/customize/custom-providers.mdx",
+        "reason": "file-budget",
+        "size": 6886
+      },
+      {
+        "path": "docs/customize/mcp-tools.mdx",
+        "reason": "file-budget",
+        "size": 1060
+      },
+      {
+        "path": "docs/customize/model-roles.mdx",
+        "reason": "file-budget",
+        "size": 1207
+      },
+      {
+        "path": "docs/customize/models.mdx",
+        "reason": "file-budget",
+        "size": 6945
+      },
+      {
+        "path": "docs/customize/overview.mdx",
+        "reason": "file-budget",
+        "size": 2587
+      },
+      {
+        "path": "docs/customize/prompts.mdx",
+        "reason": "file-budget",
+        "size": 613
+      },
+      {
+        "path": "docs/customize/rules.mdx",
+        "reason": "file-budget",
+        "size": 1584
+      },
+      {
+        "path": "docs/guides/atlassian-mcp-continue-cookbook.mdx",
+        "reason": "file-budget",
+        "size": 19935
+      },
+      {
+        "path": "docs/guides/chrome-devtools-mcp-performance.mdx",
+        "reason": "file-budget",
+        "size": 25200
+      },
+      {
+        "path": "docs/guides/cli.mdx",
+        "reason": "file-budget",
+        "size": 3473
+      },
+      {
+        "path": "docs/guides/codebase-documentation-awareness.mdx",
+        "reason": "file-budget",
+        "size": 6066
+      },
+      {
+        "path": "docs/guides/configuring-models-rules-tools.mdx",
+        "reason": "file-budget",
+        "size": 5671
+      },
+      {
+        "path": "docs/guides/continue-docs-mcp-cookbook.mdx",
+        "reason": "file-budget",
+        "size": 15252
+      },
+      {
+        "path": "docs/guides/custom-code-rag.mdx",
+        "reason": "file-budget",
+        "size": 8979
+      },
+      {
+        "path": "docs/guides/dlt-mcp-continue-cookbook.mdx",
+        "reason": "file-budget",
+        "size": 14795
+      },
+      {
+        "path": "docs/guides/doc-writing-agent-cli.mdx",
+        "reason": "file-budget",
+        "size": 14019
+      },
+      {
+        "path": "docs/guides/github-mcp-continue-cookbook.mdx",
+        "reason": "file-budget",
+        "size": 10730
+      },
+      {
+        "path": "docs/guides/github-pr-review-bot.mdx",
+        "reason": "file-budget",
+        "size": 16218
+      },
+      {
+        "path": "docs/guides/how-to-self-host-a-model.mdx",
+        "reason": "file-budget",
+        "size": 3074
+      },
+      {
+        "path": "docs/guides/instinct.mdx",
+        "reason": "file-budget",
+        "size": 1203
+      },
+      {
+        "path": "docs/guides/netlify-mcp-continuous-deployment.mdx",
+        "reason": "file-budget",
+        "size": 23316
+      },
+      {
+        "path": "docs/guides/notion-continue-guide.mdx",
+        "reason": "file-budget",
+        "size": 11890
+      },
+      {
+        "path": "docs/guides/ollama-guide.mdx",
+        "reason": "file-budget",
+        "size": 10986
+      },
+      {
+        "path": "docs/guides/overview.mdx",
+        "reason": "file-budget",
+        "size": 3875
+      },
+      {
+        "path": "docs/guides/plan-mode-guide.mdx",
+        "reason": "file-budget",
+        "size": 11901
+      },
+      {
+        "path": "docs/guides/posthog-github-continuous-ai.mdx",
+        "reason": "file-budget",
+        "size": 13681
+      },
+      {
+        "path": "docs/guides/running-continue-without-internet.mdx",
+        "reason": "file-budget",
+        "size": 945
+      },
+      {
+        "path": "docs/guides/sanity-mcp-continue-cookbook.mdx",
+        "reason": "file-budget",
+        "size": 19007
+      },
+      {
+        "path": "docs/guides/sentry-mcp-error-monitoring.mdx",
+        "reason": "file-budget",
+        "size": 19281
+      },
+      {
+        "path": "docs/guides/snyk-mcp-continue-cookbook.mdx",
+        "reason": "file-budget",
+        "size": 23914
+      },
+      {
+        "path": "docs/guides/supabase-mcp-database-workflow.mdx",
+        "reason": "file-budget",
+        "size": 18473
+      },
+      {
+        "path": "docs/guides/understanding-configs.mdx",
+        "reason": "file-budget",
+        "size": 3998
+      },
+      {
+        "path": "docs/ide-extensions/install.mdx",
+        "reason": "file-budget",
+        "size": 1780
+      },
+      {
+        "path": "docs/ide-extensions/quick-start.mdx",
+        "reason": "file-budget",
+        "size": 8706
+      },
+      {
+        "path": "docs/reference/continue-mcp.mdx",
+        "reason": "file-budget",
+        "size": 1957
+      },
+      {
+        "path": "docs/reference/deprecated-codebase.mdx",
+        "reason": "file-budget",
+        "size": 5212
+      },
+      {
+        "path": "docs/reference/deprecated-context-providers.mdx",
+        "reason": "file-budget",
+        "size": 11299
+      },
+      {
+        "path": "docs/reference/deprecated-docs.mdx",
+        "reason": "file-budget",
+        "size": 12932
+      },
+      {
+        "path": "docs/reference/json-reference.mdx",
+        "reason": "file-budget",
+        "size": 17436
+      },
+      {
+        "path": "docs/reference/yaml-migration.mdx",
+        "reason": "file-budget",
+        "size": 8991
+      },
+      {
+        "path": "docs/snippets/cli-install.mdx",
+        "reason": "file-budget",
+        "size": 491
+      },
+      {
+        "path": "docs/customize/deep-dives/_apply.mdx",
+        "reason": "file-budget",
+        "size": 646
+      },
+      {
+        "path": "docs/customize/deep-dives/autocomplete.mdx",
+        "reason": "file-budget",
+        "size": 9646
+      },
+      {
+        "path": "docs/customize/deep-dives/custom-providers.mdx",
+        "reason": "file-budget",
+        "size": 5579
+      },
+      {
+        "path": "docs/customize/deep-dives/development-data.mdx",
+        "reason": "file-budget",
+        "size": 1342
+      },
+      {
+        "path": "docs/customize/deep-dives/mcp-examples.mdx",
+        "reason": "file-budget",
+        "size": 3863
+      },
+      {
+        "path": "docs/customize/deep-dives/mcp.mdx",
+        "reason": "file-budget",
+        "size": 5867
+      },
+      {
+        "path": "docs/customize/deep-dives/model-capabilities.mdx",
+        "reason": "file-budget",
+        "size": 9824
+      },
+      {
+        "path": "docs/customize/deep-dives/prompts.mdx",
+        "reason": "file-budget",
+        "size": 4446
+      },
+      {
+        "path": "docs/customize/deep-dives/rules.mdx",
+        "reason": "file-budget",
+        "size": 6729
+      },
+      {
+        "path": "docs/customize/model-providers/overview.mdx",
+        "reason": "file-budget",
+        "size": 7827
+      },
+      {
+        "path": "docs/customize/model-roles/00-intro.mdx",
+        "reason": "file-budget",
+        "size": 1555
+      },
+      {
+        "path": "docs/customize/model-roles/apply.mdx",
+        "reason": "file-budget",
+        "size": 1642
+      },
+      {
+        "path": "docs/customize/model-roles/autocomplete.mdx",
+        "reason": "file-budget",
+        "size": 2216
+      },
+      {
+        "path": "docs/customize/model-roles/chat.mdx",
+        "reason": "file-budget",
+        "size": 6016
+      },
+      {
+        "path": "docs/customize/model-roles/edit.mdx",
+        "reason": "file-budget",
+        "size": 1980
+      },
+      {
+        "path": "docs/customize/model-roles/embeddings.mdx",
+        "reason": "file-budget",
+        "size": 4710
+      },
+      {
+        "path": "docs/customize/model-roles/intro.mdx",
+        "reason": "file-budget",
+        "size": 1496
+      },
+      {
+        "path": "docs/customize/model-roles/reranking.mdx",
+        "reason": "file-budget",
+        "size": 3209
+      },
+      {
+        "path": "docs/ide-extensions/agent/context-selection.mdx",
+        "reason": "file-budget",
+        "size": 459
+      },
+      {
+        "path": "docs/ide-extensions/agent/how-it-works.mdx",
+        "reason": "file-budget",
+        "size": 2465
+      },
+      {
+        "path": "docs/ide-extensions/agent/how-to-customize.mdx",
+        "reason": "file-budget",
+        "size": 1649
+      },
+      {
+        "path": "docs/ide-extensions/agent/model-setup.mdx",
+        "reason": "file-budget",
+        "size": 2105
+      },
+      {
+        "path": "docs/ide-extensions/agent/plan-mode.mdx",
+        "reason": "file-budget",
+        "size": 2019
+      },
+      {
+        "path": "docs/ide-extensions/agent/quick-start.mdx",
+        "reason": "file-budget",
+        "size": 3709
+      },
+      {
+        "path": "docs/ide-extensions/autocomplete/context-selection.mdx",
+        "reason": "file-budget",
+        "size": 1214
+      },
+      {
+        "path": "docs/ide-extensions/autocomplete/how-it-works.mdx",
+        "reason": "file-budget",
+        "size": 1792
+      },
+      {
+        "path": "docs/ide-extensions/autocomplete/how-to-customize.mdx",
+        "reason": "file-budget",
+        "size": 537
+      },
+      {
+        "path": "docs/ide-extensions/autocomplete/model-setup.mdx",
+        "reason": "file-budget",
+        "size": 1473
+      },
+      {
+        "path": "docs/ide-extensions/autocomplete/next-edit.mdx",
+        "reason": "file-budget",
+        "size": 5714
+      },
+      {
+        "path": "docs/ide-extensions/autocomplete/quick-start.mdx",
+        "reason": "file-budget",
+        "size": 1153
+      },
+      {
+        "path": "docs/ide-extensions/chat/context-selection.mdx",
+        "reason": "file-budget",
+        "size": 1520
+      },
+      {
+        "path": "docs/ide-extensions/chat/how-it-works.mdx",
+        "reason": "file-budget",
+        "size": 1832
+      },
+      {
+        "path": "docs/ide-extensions/chat/how-to-customize.mdx",
+        "reason": "file-budget",
+        "size": 414
+      },
+      {
+        "path": "docs/ide-extensions/chat/model-setup.mdx",
+        "reason": "file-budget",
+        "size": 818
+      },
+      {
+        "path": "docs/ide-extensions/chat/quick-start.mdx",
+        "reason": "file-budget",
+        "size": 2276
+      },
+      {
+        "path": "docs/ide-extensions/edit/context-selection.mdx",
+        "reason": "file-budget",
+        "size": 501
+      },
+      {
+        "path": "docs/ide-extensions/edit/how-it-works.mdx",
+        "reason": "file-budget",
+        "size": 1300
+      },
+      {
+        "path": "docs/ide-extensions/edit/how-to-customize.mdx",
+        "reason": "file-budget",
+        "size": 616
+      },
+      {
+        "path": "docs/ide-extensions/edit/model-setup.mdx",
+        "reason": "file-budget",
+        "size": 945
+      },
+      {
+        "path": "docs/ide-extensions/edit/quick-start.mdx",
+        "reason": "file-budget",
+        "size": 2060
+      },
+      {
+        "path": "docs/ide-extensions/plan/how-it-works.mdx",
+        "reason": "file-budget",
+        "size": 4617
+      },
+      {
+        "path": "docs/ide-extensions/plan/quick-start.mdx",
+        "reason": "file-budget",
+        "size": 2868
+      },
+      {
+        "path": "docs/customize/model-providers/more/asksage.mdx",
+        "reason": "file-budget",
+        "size": 3190
+      },
+      {
+        "path": "docs/customize/model-providers/more/cerebras.mdx",
+        "reason": "file-budget",
+        "size": 953
+      },
+      {
+        "path": "docs/customize/model-providers/more/clawrouter.mdx",
+        "reason": "file-budget",
+        "size": 12713
+      },
+      {
+        "path": "docs/customize/model-providers/more/cloudflare.mdx",
+        "reason": "file-budget",
+        "size": 2778
+      },
+      {
+        "path": "docs/customize/model-providers/more/cohere.mdx",
+        "reason": "file-budget",
+        "size": 2246
+      },
+      {
+        "path": "docs/customize/model-providers/more/deepinfra.mdx",
+        "reason": "file-budget",
+        "size": 1038
+      },
+      {
+        "path": "docs/customize/model-providers/more/deepseek.mdx",
+        "reason": "file-budget",
+        "size": 688
+      },
+      {
+        "path": "docs/customize/model-providers/more/flowise.mdx",
+        "reason": "file-budget",
+        "size": 967
+      },
+      {
+        "path": "docs/customize/model-providers/more/function-network.mdx",
+        "reason": "file-budget",
+        "size": 2962
+      },
+      {
+        "path": "docs/customize/model-providers/more/groq.mdx",
+        "reason": "file-budget",
+        "size": 693
+      },
+      {
+        "path": "docs/customize/model-providers/more/ipex_llm.mdx",
+        "reason": "file-budget",
+        "size": 2423
+      },
+      {
+        "path": "docs/customize/model-providers/more/kindo.mdx",
+        "reason": "file-budget",
+        "size": 2096
+      },
+      {
+        "path": "docs/customize/model-providers/more/lemonade.mdx",
+        "reason": "file-budget",
+        "size": 2734
+      },
+      {
+        "path": "docs/customize/model-providers/more/llamacpp.mdx",
+        "reason": "file-budget",
+        "size": 730
+      },
+      {
+        "path": "docs/customize/model-providers/more/llamafile.mdx",
+        "reason": "file-budget",
+        "size": 894
+      },
+      {
+        "path": "docs/customize/model-providers/more/llamastack.mdx",
+        "reason": "file-budget",
+        "size": 763
+      },
+      {
+        "path": "docs/customize/model-providers/more/mimo.mdx",
+        "reason": "file-budget",
+        "size": 755
+      },
+      {
+        "path": "docs/customize/model-providers/more/minimax.mdx",
+        "reason": "file-budget",
+        "size": 1395
+      },
+      {
+        "path": "docs/customize/model-providers/more/mistral.mdx",
+        "reason": "file-budget",
+        "size": 1131
+      },
+      {
+        "path": "docs/customize/model-providers/more/moonshot.mdx",
+        "reason": "file-budget",
+        "size": 2584
+      },
+      {
+        "path": "docs/customize/model-providers/more/morph.mdx",
+        "reason": "file-budget",
+        "size": 3091
+      },
+      {
+        "path": "docs/customize/model-providers/more/msty.mdx",
+        "reason": "file-budget",
+        "size": 3483
+      },
+      {
+        "path": "docs/customize/model-providers/more/ncompass.mdx",
+        "reason": "file-budget",
+        "size": 1184
+      },
+      {
+        "path": "docs/customize/model-providers/more/nebius.mdx",
+        "reason": "file-budget",
+        "size": 1590
+      },
+      {
+        "path": "docs/customize/model-providers/more/nous.mdx",
+        "reason": "file-budget",
+        "size": 3127
+      },
+      {
+        "path": "docs/customize/model-providers/more/novita.mdx",
+        "reason": "file-budget",
+        "size": 1909
+      },
+      {
+        "path": "docs/customize/model-providers/more/nvidia.mdx",
+        "reason": "file-budget",
+        "size": 708
+      },
+      {
+        "path": "docs/customize/model-providers/more/openvino_model_server.mdx",
+        "reason": "file-budget",
+        "size": 1307
+      },
+      {
+        "path": "docs/customize/model-providers/more/ovhcloud.mdx",
+        "reason": "file-budget",
+        "size": 4603
+      },
+      {
+        "path": "docs/customize/model-providers/more/relace.mdx",
+        "reason": "file-budget",
+        "size": 1143
+      },
+      {
+        "path": "docs/customize/model-providers/more/replicatellm.mdx",
+        "reason": "file-budget",
+        "size": 1365
+      },
+      {
+        "path": "docs/customize/model-providers/more/sagemaker.mdx",
+        "reason": "file-budget",
+        "size": 1777
+      },
+      {
+        "path": "docs/customize/model-providers/more/SambaNova.mdx",
+        "reason": "file-budget",
+        "size": 1120
+      },
+      {
+        "path": "docs/customize/model-providers/more/scaleway.mdx",
+        "reason": "file-budget",
+        "size": 2371
+      },
+      {
+        "path": "docs/customize/model-providers/more/siliconflow.mdx",
+        "reason": "file-budget",
+        "size": 2291
+      },
+      {
+        "path": "docs/customize/model-providers/more/tensorix.mdx",
+        "reason": "file-budget",
+        "size": 2282
+      },
+      {
+        "path": "docs/customize/model-providers/more/textgenwebui.mdx",
+        "reason": "file-budget",
+        "size": 971
+      },
+      {
+        "path": "docs/customize/model-providers/more/together.mdx",
+        "reason": "file-budget",
+        "size": 910
+      },
+      {
+        "path": "docs/customize/model-providers/more/venice.mdx",
+        "reason": "file-budget",
+        "size": 1456
+      },
+      {
+        "path": "docs/customize/model-providers/more/vllm.mdx",
+        "reason": "file-budget",
+        "size": 3243
+      },
+      {
+        "path": "docs/customize/model-providers/more/watsonx.mdx",
+        "reason": "file-budget",
+        "size": 9132
+      },
+      {
+        "path": "docs/customize/model-providers/more/xAI.mdx",
+        "reason": "file-budget",
+        "size": 818
+      },
+      {
+        "path": "docs/customize/model-providers/more/zai.mdx",
+        "reason": "file-budget",
+        "size": 1853
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/anthropic.mdx",
+        "reason": "file-budget",
+        "size": 2201
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/azure.mdx",
+        "reason": "file-budget",
+        "size": 2719
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/bedrock.mdx",
+        "reason": "file-budget",
+        "size": 4589
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/gemini.mdx",
+        "reason": "file-budget",
+        "size": 711
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/huggingfaceinference.mdx",
+        "reason": "file-budget",
+        "size": 2537
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/inception.mdx",
+        "reason": "file-budget",
+        "size": 966
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/lmstudio.mdx",
+        "reason": "file-budget",
+        "size": 1017
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/ollama.mdx",
+        "reason": "file-budget",
+        "size": 2689
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/openai.mdx",
+        "reason": "file-budget",
+        "size": 3982
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/openrouter.mdx",
+        "reason": "file-budget",
+        "size": 3473
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/tetrate_agent_router_service.mdx",
+        "reason": "file-budget",
+        "size": 4875
+      },
+      {
+        "path": "docs/customize/model-providers/top-level/vertexai.mdx",
+        "reason": "file-budget",
+        "size": 1840
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 3223
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 14245
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 664
+      }
+    ],
+    "omitted_count": 154,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3058,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 160,
+      "complete": false,
+      "omitted": 154,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_e9d35e4068105129b5079df4b6302991",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 6,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 3,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/continuedev/continue/5522c6f44ca0ac3528b37244818fbfa39b5af470/41756b650b1e5612/manifest.json",
+  "package_id": "pkg_9a5eae177d518c8b2fba60c396d47420bf22972900573c3cdaaa9dc1a533e779",
+  "repo": "continuedev/continue",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9d755161356e5ee2230455f4e3679b84e83c523f805506a944be61d0adad6736",
+  "snapshot_id": "41756b650b1e5612",
+  "sources": [
+    {
+      "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+      "git_sha": "3bd4600cbf49cf55e11bf4d8fdd91150e0037108",
+      "lines": 105,
+      "path": "BUILD_DEPENDENCIES.md",
+      "repository": "continuedev/continue",
+      "sha256": "8c68df52837ef5b4a8af66c193afaac7802d15564d9ae940ebd74401c48b46f5",
+      "source_id": "src_32828b59d75e5a61bb5cc62b1fb2bf54",
+      "stored": "build_dependencies.md-981e39b7a64e.md",
+      "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/BUILD_DEPENDENCIES.md"
+    },
+    {
+      "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+      "git_sha": "a23e12a1ea0ad4a5685bfa521c0b60ed6699a542",
+      "lines": 48,
+      "path": "CLA.md",
+      "repository": "continuedev/continue",
+      "sha256": "6c6c63f209cf3a4964fb721c47f1c52799a13feffd5692a547965b785c7d388c",
+      "source_id": "src_65e6eac83591591bb48643be048c0a62",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/CLA.md"
+    },
+    {
+      "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+      "git_sha": "66477d92b4cdb8772a74e28852cef31cd37019e4",
+      "lines": 63,
+      "path": "README.md",
+      "repository": "continuedev/continue",
+      "sha256": "054b77f9573011fa4ebf89d960300aabd1ebecc37d8f6f261341ba7d27d885e7",
+      "source_id": "src_a0f85db0d9c95d59b95f05f0316ba565",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md"
+    },
+    {
+      "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+      "git_sha": "96fe5e6c284278153d0d5b0deeab2767d7cf94d5",
+      "lines": 30,
+      "path": "TESTING.md",
+      "repository": "continuedev/continue",
+      "sha256": "ff14b674a063a17bd819772dad57a2356bd9c16b86b79bb7b0c868b52aea468f",
+      "source_id": "src_37dfd4b113775946a17473255edc9894",
+      "stored": "testing.md-4da5f2fd7bc2.md",
+      "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/TESTING.md"
+    },
+    {
+      "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+      "git_sha": "14e170d6eedc356762e52b4deae44beb5181575c",
+      "lines": 56,
+      "path": "docs/cli/configuration.mdx",
+      "repository": "continuedev/continue",
+      "sha256": "54945821ee77eab84b8810f378882330ef00d412a74f2f5d8740e63220ae91fa",
+      "source_id": "src_4c1e20ba052d5b38ba487a6fc6e80a95",
+      "stored": "configuration.mdx-21c83e48f2be.txt",
+      "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/cli/configuration.mdx"
+    },
+    {
+      "commit": "5522c6f44ca0ac3528b37244818fbfa39b5af470",
+      "git_sha": "8bbde24e11945faeca655c4112976078eabf85de",
+      "lines": 87,
+      "path": "docs/customize/deep-dives/configuration.mdx",
+      "repository": "continuedev/continue",
+      "sha256": "46523e6e24cb8a3ac6864f2f30804ba5f4be4a74b0fd438854ca5a6c1eab09f4",
+      "source_id": "src_ff692ef8ec3951d2b40c65f104848892",
+      "stored": "configuration.mdx-6fc5b6245251.txt",
+      "url": "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/docs/customize/deep-dives/configuration.mdx"
+    }
+  ],
+  "summary": "Evidence covers the Continue coding agent's distribution forms (CLI, VS Code, JetBrains), its YAML-based configuration system, and repository-level build/CI secret documentation, a CLA, and a testing checklist. The repository is stated to be read-only and no longer maintained.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,523 @@
+{
+  "applied_operation_id": "op_7902b62292994c7dbf7fd2daef5812ed",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_43bbceab113b58c7ba6290df541a0bda88203cb3cf67f3f03f3f628e5980aba8",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 21,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L18-L21"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 141,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L139-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8760f18a9c278de20fd8c66495c9531cc3db45c6b8776201917cbe65323303f3",
+        "slc_b9218de73726f3c6f56260c925944b939e6f2d6b16025154595ee8667357e209"
+      ],
+      "text": "The framework computes legal judgment prediction metrics: charge and law-article exact-match accuracy and Micro-F1, plus imprisonment term exact match and mean absolute error in months."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f8e243c7894aaae7c07105812ae913a893272e617db9e7e8da5ae678ff61d00",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L143-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ec53d18dff970185a94a7a1cf0b38ccea89d8885ffc653c85694deb52051f107"
+      ],
+      "text": "Evaluation aggregation follows the paper's scripts: charge and law predictions are scored per entry in judge_res, while imprisonment uses the first judgment for each of the 568 CAIL cases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea9c87f62f69143d57dcc344525ea199b1ccebc69180d9a16862e411c4a17fbf",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "407a82bcd2071a2a0e055b3705e75eb326ab3a4c",
+          "line_end": 119,
+          "line_start": 116,
+          "path": "docs/TABLE2_REPRODUCTION.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/docs/TABLE2_REPRODUCTION.md#L116-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e8dcd158d9b28ef5ee16ac0b499532b36a3e6c39d853c8b5fe9ffdd0c561153b"
+      ],
+      "text": "The evaluator accepts current judge_result.charge_name predictions and the legacy Table 2 judge_res[].crime format; each CMDL defendant row is scored once, giving judgment_count 1,374."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cff985d61b758b2344aa0323b0cb397543f9d8073f2d81a081e6098355905b0f",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "407a82bcd2071a2a0e055b3705e75eb326ab3a4c",
+          "line_end": 122,
+          "line_start": 121,
+          "path": "docs/TABLE2_REPRODUCTION.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/docs/TABLE2_REPRODUCTION.md#L121-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ba0c13ed96d7ef89c986539b26e08e27c7d6e7de5669ae571f75262a3540be38"
+      ],
+      "text": "As a regression check, evaluating the archived Table 2 Qwen3 CMDL output yields Accuracy 0.5756914119359534 and Micro-F1 0.617426820966644."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8bc3bd61011719de6c1bb3967f9167fa420f29a6798ee049fc4b43cfaa10db7d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 52,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L31-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_95307c7808a19bea472d9863f9748eb745ad3d3bd499d3c43a5d6273e7c9b73e"
+      ],
+      "text": "The core package contains a main LegalGraphRAG class plus modules for models (transformers and OpenAI-compatible), graph construction, legal judgment, preprocessing, prompts, and utilities."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2ce61504f925f38815abacc83f66e0662c1f2d7a9bed036dee9f36201257a56",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 206,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L200-L206"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd32fd981e1d0a74888af9c9f186351470a48e65716de01b86f59513db71efc4"
+      ],
+      "text": "run.py exposes CLI arguments including --model, --datasets, --dotenv_path, --datasets_path, --devices, --no-build-graph, and --force-rebuild."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7dfabf1b7d113fd9093664ff4388bb23dc5d965c4fc71bca532a14965288d19c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 206,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L200-L206"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 209,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L208-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd32fd981e1d0a74888af9c9f186351470a48e65716de01b86f59513db71efc4",
+        "slc_d8661ddbe8553ac0b153e4407b6acbf35c9f8ed57807cc84a7d599cb6c6a22d6"
+      ],
+      "text": "Supported model choices include qwen3, qwen2_5, gemma3, internlm3, glm4, deepseek_v3, and gpt4o_mini; prompt_language=zh or en in .env selects Chinese or English prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7bcf281d59c4c4eb0f8b23ad8d84584d263161c473053741723deda57ca97bd0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "46f15243b82d4423a1696c008e47e4a410131768",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "requirements.txt",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/requirements.txt#L13-L13"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "46f15243b82d4423a1696c008e47e4a410131768",
+          "line_end": 10,
+          "line_start": 2,
+          "path": "requirements.txt",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/requirements.txt#L2-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c439638a439ec7222f5a9b6f558eb87ca44ba6e7fe2a321e578c04a47cbaae5",
+        "slc_f9b2c54914394c4e5ddfa4eb5a398589adaeabf2c4310a0bcc5851ce75adf8f1"
+      ],
+      "text": "Declared dependencies include torch>=2.6.0, transformers>=4.51.0, accelerate, numpy, scipy, networkx, tqdm, requests, python-dotenv, and openai>=1.0.0 for the DeepSeek/GPT-4o-mini API client."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3deeee6918b08e5091745913ea9dc4decb462e0fe2c434e7a90f2365a2c71cb9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L117-L117"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L106-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54785d9084450ba7e6c9b9860e1a2556ab2f1f7f5864abaa9d2a0b34d11ce0ec",
+        "slc_8533d1c37d64be00b7d8ea10cbce98a8beb5f13bc5417381155383b50f190dde"
+      ],
+      "text": "The constructed graph is persisted to a pickle file (e.g. outputs/main_experiment/qwen3_graph_db.pkl); later runs can skip construction, and changing the construction model requires --force-rebuild or a different graph_db_path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa0533e83e020de0ba11accedef3a51076cfd804d35119d3f7bbf0cc57a95031",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 264,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L262-L264"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 266,
+          "line_start": 266,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L266-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c70c25049a6217af6362a2bc1bc6ad881acdf633e95b9a0b8bc0796561300f8",
+        "slc_9b82b961cb54bf46f489efbf061287f64b5368e4e736ff31033f77831bbd0672"
+      ],
+      "text": "Multi-GPU execution is supported by passing several devices to run.py, and cases are automatically distributed across the selected devices."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2638e2eca2b71744afad6bfde96cadb892cca5a2a8d10ed60f8f2efc92f90acf",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L93-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b0473f47efae135c9866a16f18a141663f5bcdf3b21aecbd0a52f35c1aae276"
+      ],
+      "text": "The default embedding endpoint is http://localhost:11434/api/embed with model bge-m3; both are configurable in configs/main.env and used by graph construction and retrieval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef0faa80a8e793e4a990e7f2c0b49b8d50b6bcaebb6586f9942ad35cc03f4318",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "407a82bcd2071a2a0e055b3705e75eb326ab3a4c",
+          "line_end": 30,
+          "line_start": 26,
+          "path": "docs/TABLE2_REPRODUCTION.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/docs/TABLE2_REPRODUCTION.md#L26-L30"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "407a82bcd2071a2a0e055b3705e75eb326ab3a4c",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "docs/TABLE2_REPRODUCTION.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/docs/TABLE2_REPRODUCTION.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32a8e31a15a128e809fec85c707e5b0f71b7a0e6d40480cdba9795eea5648a26",
+        "slc_9bf41a5a8bc24acb2f4d6c3132224993ad549c9bae66cf7d2b1f66d98affc6c3"
+      ],
+      "text": "The main retrieval corpus combines 3,512 CAIL test, 5,752 JuDGE, and 4,785 CMDL cases with sequential IDs, and a small amount of LeCaRDv2 data was incorporated as untagged supplementary material."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_76fa19e420250ca5f943589b6273de2b3d3684a1b472083a6f3b004453f33ef5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "407a82bcd2071a2a0e055b3705e75eb326ab3a4c",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "docs/TABLE2_REPRODUCTION.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/docs/TABLE2_REPRODUCTION.md#L3-L5"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L145-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24a1b7ad476c55795e9284ec99afa1bd61c8c13fdf67bd52330f5de251cb79d9",
+        "slc_83b355f2f592df10b0fb2d05924b8c8bd41713d74d5518db2f8bae95d37ef741"
+      ],
+      "text": "Baseline systems such as HippoRAG2, RAPTOR, LightRAG, LegalDelta, and ADAPT are not included in the repository; their outputs can be compared externally if converted to the same result schema."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b09d479d537bb5ec2c7ed371f02004229ac8a3363025de02f6e0de003fee8551",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 82,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L79-L82"
+        },
+        {
+          "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+          "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+          "line_end": 154,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "xmudeeplit/legalgraphrag",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md#L154-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4013cbfb60ec433d32e80313d9fa4b5f750008f156a695d6e33d0aa57139cfc5",
+        "slc_bcaa292f4e24cb2034880b8afe4eefa5464b258074946fd2f45216cb10567e9c"
+      ],
+      "text": "Repository setup workflow: install requirements via pip, copy env.example to .env, and verify bundled experiment assets with sha256sum -c SHA256SUMS."
+    }
+  ],
+  "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 278,
+        "path": "README.md",
+        "size": 10530
+      },
+      {
+        "lines": 16,
+        "path": "requirements.txt",
+        "size": 324
+      },
+      {
+        "lines": 122,
+        "path": "docs/TABLE2_REPRODUCTION.md",
+        "size": 4912
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 65,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_86c899ff0d6d57bf87734a6aa238215a",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 4,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/xmudeeplit/legalgraphrag/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/5a8097f9031a88cf/manifest.json",
+  "package_id": "pkg_e33a530920be1ec3d0ee417ecf6755ec617c62fe18e5e4adee570952dc8a1daf",
+  "repo": "xmudeeplit/legalgraphrag",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1d69f3aaf84bc45ee9380129b3eb022f668ad7cbf44d0512cf9cae1f29538438",
+  "snapshot_id": "5a8097f9031a88cf",
+  "sources": [
+    {
+      "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+      "git_sha": "37e6ddbfd04ba905de380b8051872fd11e89fcac",
+      "lines": 278,
+      "path": "README.md",
+      "repository": "xmudeeplit/legalgraphrag",
+      "sha256": "415e13a1f5efa606510246b7af3e854dd3c38350b18c9af66e8154268809632d",
+      "source_id": "src_b5791b2764635c33b58ac93e89a92955",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/README.md"
+    },
+    {
+      "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+      "git_sha": "407a82bcd2071a2a0e055b3705e75eb326ab3a4c",
+      "lines": 122,
+      "path": "docs/TABLE2_REPRODUCTION.md",
+      "repository": "xmudeeplit/legalgraphrag",
+      "sha256": "ab9f16f6e9a95a98b46c094d527c5f0b6b0f127884fdfa607ad18315f4d46b9b",
+      "source_id": "src_25f9af1c0dcd587f85e08e09bdf8f74d",
+      "stored": "table2_reproduction.md-e8b85c806cc1.md",
+      "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/docs/TABLE2_REPRODUCTION.md"
+    },
+    {
+      "commit": "a3c9c3070cadb72ec317d2ecc2cce99da4b37c57",
+      "git_sha": "46f15243b82d4423a1696c008e47e4a410131768",
+      "lines": 16,
+      "path": "requirements.txt",
+      "repository": "xmudeeplit/legalgraphrag",
+      "sha256": "f5233ed514556048dc5dbd39c3deec72fcc498155dab94227dde4c7a03318bc0",
+      "source_id": "src_23653b1cd0d2544cab566501d8dd65f6",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/XMUDeepLIT/LegalGraphRAG/blob/a3c9c3070cadb72ec317d2ecc2cce99da4b37c57/requirements.txt"
+    }
+  ],
+  "summary": "Selected evidence records: The framework computes legal judgment prediction metrics: charge and law-article exact-match accuracy and Micro-F1, plus imprisonment term exact match and mean absolute error in months. Evaluation aggregation follows the paper's scripts: charge and law predictions are scored per entry in judge_res, while imprisonment uses the first judgment for each of the 568 CAIL cases.",
+  "superseded_claim_ids": []
+}

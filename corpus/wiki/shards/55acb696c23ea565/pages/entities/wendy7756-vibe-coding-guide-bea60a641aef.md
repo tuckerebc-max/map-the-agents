@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_26f4f802030a00e9378384d0a18765b2a7ad540d4b2c385539b486bbe992be45
+- clm_29010b3ec9b8fdc41108b8d357a644cc099d70db0d7d260c32bedbd40ea04835
+- clm_57653ba77035264642333564195910d7622465a269d4ffbffb0ea82bfd9d16a0
+- clm_6f1ad71222c83fbae6fb8acdb172706d250e2f705d744008d7fb50d5bd8680ff
+- clm_8e1b099c6e5ec73723375ce2f5a2cff4a5ba30c5c6c9507f2b12cb66ebb2c51f
+- clm_9c2abb92e6934be995fc57b1348a2c755d0d3cee1a29ed39fff78944fa88b96d
+- clm_9d1941c4454a3eb72d43865461f5a00a6c447119efd476e100cd9dae829d381a
+- clm_a0d53af0e08aa638a55c2cbd01f9c7f913bd52398d374eb388ee013fb2c62ef8
+- clm_aaa2ceb318fdaad9b3a6b6fe79408c85eb6c80d00fedf1f07ad5ff1bdd6c2d62
+- clm_acd68b8339c141b0b9387dcc3d222780a5b0fb6d364307293b17f59494527528
+- clm_d71a214921056cfdfa3cece8ff44e8c2c42ecedfddf20f5c8c2ffcbaf4038e65
+- clm_dfdc1d80f851bd8556ab091a46a26b617fd0ecfab5563bdbd971676930519cb7
+maturity: draft
+page_id: pg_bdb9c61209105728a17cbea60a641aef
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: wendy7756/vibe-coding-guide
+updated_at: '2026-09-14T04:31:23Z'
+---
+
+# wendy7756/vibe-coding-guide
+
+<!-- rcw:begin owner=entity:ent_c2c5a60a14c65deb891134d4b5e89c4d block=evidence -->
+- wendy7756/vibe-coding-guide is mentioned in this evidence. [@claim:clm_26f4f802030a00e9378384d0a18765b2a7ad540d4b2c385539b486bbe992be45] [@claim:clm_29010b3ec9b8fdc41108b8d357a644cc099d70db0d7d260c32bedbd40ea04835] [@claim:clm_57653ba77035264642333564195910d7622465a269d4ffbffb0ea82bfd9d16a0] [@claim:clm_6f1ad71222c83fbae6fb8acdb172706d250e2f705d744008d7fb50d5bd8680ff] [@claim:clm_8e1b099c6e5ec73723375ce2f5a2cff4a5ba30c5c6c9507f2b12cb66ebb2c51f] [@claim:clm_9c2abb92e6934be995fc57b1348a2c755d0d3cee1a29ed39fff78944fa88b96d] [@claim:clm_9d1941c4454a3eb72d43865461f5a00a6c447119efd476e100cd9dae829d381a] [@claim:clm_a0d53af0e08aa638a55c2cbd01f9c7f913bd52398d374eb388ee013fb2c62ef8] [@claim:clm_aaa2ceb318fdaad9b3a6b6fe79408c85eb6c80d00fedf1f07ad5ff1bdd6c2d62] [@claim:clm_acd68b8339c141b0b9387dcc3d222780a5b0fb6d364307293b17f59494527528] [@claim:clm_d71a214921056cfdfa3cece8ff44e8c2c42ecedfddf20f5c8c2ffcbaf4038e65] [@claim:clm_dfdc1d80f851bd8556ab091a46a26b617fd0ecfab5563bdbd971676930519cb7]
+<!-- rcw:end owner=entity:ent_c2c5a60a14c65deb891134d4b5e89c4d block=evidence -->
+
+## Researcher notes
+

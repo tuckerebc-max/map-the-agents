@@ -1,0 +1,722 @@
+{
+  "applied_operation_id": "op_343803c3fb724364a1023d9f225f2a85",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_587cf0e6e55bf20beec41f13e0e9a714c7ed82f34585a61adfef17c9e6543972",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L19-L21"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L13-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ef7fcdc46b55bf7f93b2ce0c6f80ea74d61e0efe60afdeb71762b7bcb65d1e7",
+        "slc_9eae7cd2b02f2d7fa3da0c642ddd0973d73b9d87ba4a76d15447b51f0ff9ce3f"
+      ],
+      "text": "Sinew is a desktop AI coding harness built on Tauri 2, React, Rust, Monaco, xterm, and MCP, where every tool is toggleable, descriptions are editable, and providers are pluggable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c5763b2df9b4d35ca0c7048cecf05aa9ea3a69a31d73848498206f92bbc0506",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L68-L68"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L72-L72"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L76-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_368e422b172c755aaf70e1dd04d8aed8d1a1773630c694a7ed8ce9f1dd7e87a9",
+        "slc_90a541d4e4ce3fa9106ef21309fa9d9f2f4e372744a6791de0c1e0f97f4edeea",
+        "slc_ce6930b37c868c092183e871f75c45b986ebf260a5e49c6f7718c4e962e3786e"
+      ],
+      "text": "The agent has three interaction modes: Act (single-turn loop), Goal (autonomous loop until the task finishes), and Plan (a question/answer session that only ends when the user clicks send-and-stop)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da4ea9d8ba5ad2e4a5f680c6babf552b7db794af22e2d2e53c5fff0f66fd88b7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 155,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L134-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40c253ee8ae70340e3fa355294c6b6c7b44ad928d0bf60407573f4c027acd7c0"
+      ],
+      "text": "The agent's toolset includes bash/bash_input, read, glob, grep, edit_file, write_file, web_search, web_fetch, create_image, question, todo_list, clean_context, load_mcp_tool, skill, subagent tools, and team tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f7eb4d7b07d7e05825a646284fdfc924daa8c49db833ce69d49ae3df3a9958bb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 256,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L256-L256"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 208,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L208-L208"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 233,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L233-L233"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b2f97746a41e57ee7765eb29ad0d5f3090f997ea66bc40535d1e22ba72fc706",
+        "slc_469fe31ed50f487b73563f190105f6fdc8889dfe81ecb54a6f4758197650c19b",
+        "slc_d14b35f0a3cb377df5b4ae5980121080736a342f74fc5220a7ca8936c13f2720"
+      ],
+      "text": "read, glob, and grep each require a mandatory limit parameter, forcing the model to declare how much output it wants to preserve context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_289d9a45a935acc31f7ea62ef3ec1877634557a826d55c7c8d4b8e4603205e62",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L169-L169"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 178,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L178-L178"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 176,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L175-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8744f91448dff87c41b6928b25c5d4a03851476e8f7ea543dc824fe5aee9b08c",
+        "slc_a2904e38e51166b8b2bee98a595a233c41f0645f6e2a4470cfdce361a63f36d9",
+        "slc_fe6d3a825663ac9d473847de2a0d76fcdd44274c4d9316597c23d71265372103"
+      ],
+      "text": "The clean_context tool lets the model replace its own current-turn tool results with short placeholders, keeping the placeholder visible and avoiding retroactive purges so provider prompt caching is preserved."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e01732b68812becd1e6bb28f9e1bd9fbb46fd3e477aa680402e35f518182a7c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 386,
+          "line_start": 386,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L386-L386"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 382,
+          "line_start": 382,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L382-L382"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 371,
+          "line_start": 371,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L371-L371"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c83f74609bc2e9499ac801fc19e626d8b6b1c2f81144f5ff45ac2d0db1e5e13",
+        "slc_36ca1c638dbf5c618cb80cd6368510bca093993ecd8c410b596979abcfed2163",
+        "slc_437c55a6ff6972f0a1479a425e1f1c241004c6e689db610e41bc6257c0b2e114"
+      ],
+      "text": "MCP tools are not exposed directly; only a compact server/tool catalog sits in the prompt, and load_mcp_tool lazily injects the full schema on first use, staying loaded for the conversation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd474559cc1d15c08df413021d332cb343d0969decdbc7a4b075acdc105cc321",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 363,
+          "line_start": 363,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L363-L363"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5eed8f7c36f0dea28aa550470ed8164eaff231fb738aeff8342ac98d4139ff8d"
+      ],
+      "text": "The todo list's full state is re-injected into the system reminder every turn so the model always sees an up-to-date version, which the README says matters most in long Goal-mode runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6fc00ef2327e15ebbfd48f04c498908366632ad35e2455ba89d95372be51d8fd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 440,
+          "line_start": 440,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L440-L440"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 501,
+          "line_start": 497,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L497-L501"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 493,
+          "line_start": 493,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L493-L493"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 457,
+          "line_start": 456,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L456-L457"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0aaf1cb9dced762243674c87d1129288b8cfb9d17da3ce2c255d54765966babf",
+        "slc_592cc595c9c4ea45d1169ca57e3522e7bc102481a7f2d5a51f135a806d21c820",
+        "slc_b711909ceb7691bc1bf7293a222bb600e9adc65f4ddd7679d008b127e6f6acfd",
+        "slc_cc5fab8fe85a7c67e37ab349baa90ee974b7a194ebe00d2cfb5f5b110bd2cd3d"
+      ],
+      "text": "The main agent can launch a peer-to-peer team of 2 to 8 agents with no lead; teammates coordinate through a shared task board with dependencies and messages delivered via system reminders."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8fd2b0c4e6bef439dfb5907a1f87ae3c35fead3253615990e27bcb938789fb75",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 425,
+          "line_start": 425,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L425-L425"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 423,
+          "line_start": 423,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L423-L423"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_750c7876763ebc280b0df5b2b5222688a85398f81d9559caa69563dc0eced93a",
+        "slc_e90a9daa3956c2c8f0e75a1fb3691c864578a3dbf5443f178b4a148628b99214"
+      ],
+      "text": "Configured sub-agents are exposed as subagent_<id> tools; calling one runs a full turn with that sub-agent's model and prompt while the whole harness (tools, MCP, skills) stays active."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45962e30e2d834ed077cdaf03eeea9f64a159f35a8283dc5552f757a4659eda2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 258,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L258-L258"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 331,
+          "line_start": 331,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L331-L331"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 235,
+          "line_start": 235,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L235-L235"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 327,
+          "line_start": 327,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L327-L327"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 329,
+          "line_start": 329,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L329-L329"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18c7d7871be98ac9e21a1768af18016445fe96f76af03125d5493643bad62d6e",
+        "slc_396c8aa60e01b36cff911cf908c0ffe9e7b44b14d819be64e347a50389f9e8e8",
+        "slc_3a72ffd198c2a11fb1444c414f7a43a074b0402202cabf823a26077ba1a4fa71",
+        "slc_703ca31d73ff2436634133107bcfa0678d1036c27c652bb63002fa0005521983",
+        "slc_85ab5942da10ce5a2691a5741b4fcf31431c77478dfb71f8fc1c9000e004be93"
+      ],
+      "text": "The glob and grep implementations sit on top of ripgrep, and web_search offers two configurable providers: paid LinkUp (API key) and free Exa via public MCP."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b59eadc5eec9a339be46583e3e4b9d8e1658a3ce18f67817c46b8e3d2d8a1b8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 110,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L104-L110"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 118,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L118-L118"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 126,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L124-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e98e1527c8fa0070c709b0e038b69ae6fff1b1c648c3a74a4197c676915edf3",
+        "slc_421129862e16638fdd7a4757af6bb6271e51f349a164e745a31127b2d34af165",
+        "slc_496a04a174a7e79951dd0aff63fbae60f0d5b5f059a71960848dfe995e9cf570"
+      ],
+      "text": "Sinew connects to five providers — Anthropic, OpenAI, Google, Kimi (subscription/OAuth) and OpenRouter (API key) — usable in parallel so models can be mixed per mode, sub-agent, or teammate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19f6a1fe50e910915126c6e3e24154204181ea2e9ef6145d0c9aad92c6d21145",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 35,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L25-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c227f6b584380d7999b0611e2ff0c02453f87f692b51685c26ef9fe6ad6e5c7b"
+      ],
+      "text": "The README warns that Claude Code and Antigravity OAuth flows are technically reserved for first-party clients, so third-party use could theoretically flag accounts, though no bans have been reported; API-key or OpenRouter paths are fully sanctioned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b37c78a8766b5138350bc0aa7b06ac4b2019ec7e15aab7846933f215a8fba879",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 540,
+          "line_start": 536,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L536-L540"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dcc02d1934080e4ea36f366d5aaf84fa855bffbdec724b42f0851dda62f23512"
+      ],
+      "text": "The codebase is organized as a React UI (src/), a Tauri 2 shell (src-tauri/), provider-agnostic core types (sinew-core), the agent loop and tools (sinew-app), and per-provider adapter crates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93d47e2b6d411086fb4cf06f4861501a94596e35ee188cecc732ad8975ef90af",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 517,
+          "line_start": 517,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L517-L517"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 526,
+          "line_start": 526,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L526-L526"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 522,
+          "line_start": 521,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L521-L522"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9a2cc28b7db56bdb954d98794ad901d406937abbe4099cdfaa8c3582d6241082",
+        "slc_cc5e6a3f1b4a40716dbf32213e5d91cf022e1a6f3725693f38a4a29679f578d7",
+        "slc_d6dbc71003cf1df300f68ae891c18b493bfb0856c761e503272eaedd80ee1626"
+      ],
+      "text": "Rollback makes every past user message clickable, showing files changed since then and offering to revert workspace changes or keep them while undoing chat history, backed by per-turn checkpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abd1d5587ab29595ba0913267d3f267f8c5ab7fb2ffc4299d2470a8982f50c61",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 415,
+          "line_start": 415,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L415-L415"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 402,
+          "line_start": 396,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L396-L402"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 411,
+          "line_start": 408,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L408-L411"
+        },
+        {
+          "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+          "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+          "line_end": 413,
+          "line_start": 413,
+          "path": "README.md",
+          "repository": "paseru/sinew",
+          "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md#L413-L413"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a19632bb794e077c83abf70507f5f6556d13a098f0232c61394f863040ea6bc1",
+        "slc_a8c8f2bbde22f917808bad79d035f37f336c4de4a3b9b17ec1be83d873f24b87",
+        "slc_aa89a538a475380c57d716cf668c643cc3a86f6261372ec1e2c9c696194c69e4",
+        "slc_f6b60e7e37ea4b21648426b2ba59606b6b7038997251aabd5a7f481b2925f852"
+      ],
+      "text": "Skills are directories with a SKILL.md, discovered from four prioritized locations (.agents/skills and .sinew/skills in workspace and home), with the .agents format aligned to the Claude Agent Skills convention."
+    }
+  ],
+  "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 600,
+        "path": "README.md",
+        "size": 30036
+      },
+      {
+        "lines": 315,
+        "path": "EDIT_TOOL_COMPARISON.md",
+        "size": 17597
+      },
+      {
+        "lines": 0,
+        "path": "untitled.txt",
+        "size": 0
+      },
+      {
+        "lines": 314,
+        "path": "AGENTS.md",
+        "size": 11319
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 264,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_d82bf0e95945551c935a42136b655a78",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/paseru/sinew/13b0a2187a078affc4089638db742a3d776795ba/8eac9848b44c0207/manifest.json",
+  "package_id": "pkg_86ef20f48877021250ad2edc4fd5bc5bb9027dab3ca3e02eec527375ef18db7b",
+  "repo": "paseru/sinew",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8cfd1309b498cf6500a7908d3e5dba349df1e5129f424b04fc567a1e043db296",
+  "snapshot_id": "8eac9848b44c0207",
+  "sources": [
+    {
+      "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+      "git_sha": "fdde9ddca8481edac027e849424b61d145abe807",
+      "lines": 314,
+      "path": "AGENTS.md",
+      "repository": "paseru/sinew",
+      "sha256": "49a37fb7d35d239b466e55430a4db43054f69d40e3bcfe6d5200032242cbb514",
+      "source_id": "src_be63e7033b3e5a698ccf866e03cb8e04",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/AGENTS.md"
+    },
+    {
+      "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+      "git_sha": "743881b0ca7cd228c3e1c792233c0f5feb9402b9",
+      "lines": 315,
+      "path": "EDIT_TOOL_COMPARISON.md",
+      "repository": "paseru/sinew",
+      "sha256": "8d3f2c248f4b4685d0bc288253048fc3b2d359ae33cc03c9f15921e684a858c3",
+      "source_id": "src_6a9a105034af5adcba108d72f4bbbfbb",
+      "stored": "edit_tool_comparison.md-8d75ce0cc4c8.md",
+      "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/EDIT_TOOL_COMPARISON.md"
+    },
+    {
+      "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+      "git_sha": "4c26caa7948603c78f14e88dd41a187d886386e1",
+      "lines": 600,
+      "path": "README.md",
+      "repository": "paseru/sinew",
+      "sha256": "81e7ad83792369d0fbde36bf5fc8a64f935baf0a7d7fc2827353876fa3e3bd93",
+      "source_id": "src_3c385797f21b5032b130c0b1abdfd33d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/README.md"
+    },
+    {
+      "commit": "13b0a2187a078affc4089638db742a3d776795ba",
+      "git_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "lines": 0,
+      "path": "untitled.txt",
+      "repository": "paseru/sinew",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_id": "src_c05775c764b55eedb09e2bec919436f6",
+      "stored": "untitled.txt-c33390d86f26.txt",
+      "url": "https://github.com/Paseru/sinew/blob/13b0a2187a078affc4089638db742a3d776795ba/untitled.txt"
+    }
+  ],
+  "summary": "README-only evidence describing Sinew, a Tauri 2 desktop AI coding harness with three agent modes, a toggleable/editable toolset, multi-provider OAuth/API-key connections, sub-agents, peer-to-peer agent teams, compaction, and rollback. No development-practice or evaluation evidence is present. Evidence coverage: 161 of 251 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

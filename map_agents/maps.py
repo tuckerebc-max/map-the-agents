@@ -23,7 +23,7 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from . import core, wiki
+from . import core, directory, wiki
 
 MAP_DIR = "map"
 NOTES_SUFFIX = ".notes.md"
@@ -113,6 +113,28 @@ def _bounded_tags(label: str, values: list[str], cap: int = TAG_INLINE_CAP) -> s
     return f"{label}: {shown}" + (f" (+{extra} more; full list in the detail page)" if extra > 0 else "")
 
 
+def _coverage_summary(dossier: dict) -> dict:
+    """Evidence depth from an optional dossier['coverage'] (added by a separate collector delta that
+    copies packet['coverage'], itself the snapshot's own selection/repository fields). A legacy dossier
+    without it reports state='unknown' -- never invented as complete just because the commit is current.
+    """
+    cov = dossier.get("coverage")
+    sel = cov.get("selection") if isinstance(cov, dict) else None
+    rep = cov.get("repository") if isinstance(cov, dict) else None
+    sel_ok = (isinstance(sel, dict) and isinstance(sel.get("candidates"), int) and isinstance(sel.get("stored"), int)
+              and isinstance(sel.get("complete"), bool))
+    rep_ok = isinstance(rep, dict) and isinstance(rep.get("complete"), bool) and isinstance(rep.get("tree_truncated"), bool)
+    basis_counts = Counter(c["basis"] for c in dossier["claims"])
+    if not (sel_ok or rep_ok):
+        state = "unknown"
+    elif (sel_ok and not sel["complete"]) or (rep_ok and not rep["complete"]):
+        state = "partial"
+    else:
+        state = "complete"
+    return {"state": state, "selection": sel if sel_ok else None, "repository": rep if rep_ok else None,
+            "documented": basis_counts.get("documented", 0), "code_inspected": basis_counts.get("code-inspected", 0)}
+
+
 def _bound_by_lines(lines: list[str], limit: int, note: str) -> list[str]:
     """Keep whole lines while the cumulative word count stays within limit; never cut a line in half."""
     total = _word_count("\n".join(lines))
@@ -163,6 +185,25 @@ def _render_repo_detail(key: str, record: dict, dossier: dict | None) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _render_identity_lines(key: str, identity: dict) -> list[str]:
+    """Rename lineage and numeric GitHub id, from collector-attached fields and/or the verified alias file."""
+    lines: list[str] = []
+    rt = identity.get("renamed_to")
+    if rt:
+        gid = f"github id {rt['github_repository_id']}" if rt.get("github_repository_id") else "no github id recorded"
+        if identity.get("renamed_to_tracked"):
+            c_owner, c_name = rt["canonical"].split("/")
+            lines.append(f"Renamed: canonical dossier is [{rt['canonical']}](../{c_owner}/{c_name}.md) "
+                         f"({gid}, verified [{rt['html_url']}]({rt['html_url']})).")
+        else:
+            lines.append(f"Renamed: GitHub reports this repository is now `{rt['canonical']}` ({gid}, verified "
+                         f"[{rt['html_url']}]({rt['html_url']})); not yet tracked under that identity.")
+    if identity.get("formers"):
+        gid = f" (github id {identity['github_repository_id']})" if identity.get("github_repository_id") else ""
+        lines.append(f"Formerly: {', '.join(identity['formers'])}{gid}.")
+    return lines
+
+
 def _render_repo_page(key: str, record: dict, dossier: dict | None) -> str:
     owner, name = _owner_name(key)
     status, freshness = record.get("status", "discovered"), record.get("freshness", "pending")
@@ -174,6 +215,7 @@ def _render_repo_page(key: str, record: dict, dossier: dict | None) -> str:
         f"Catalog classes: {', '.join(record.get('classes') or []) or 'none recorded'}",
         _bounded_tags("Origins", record.get("origins")) + " - " + _bounded_tags("Projects", record.get("projects")),
     ]
+    header += _render_identity_lines(key, record.get("identity") or {})
     latest = record.get("latest_snapshot")
     if isinstance(latest, dict):
         header.append(f"Latest snapshot: commit {latest['commit'][:12]} @ {latest['snapshot_id']}")
@@ -200,7 +242,22 @@ def _render_repo_page(key: str, record: dict, dossier: dict | None) -> str:
                          f"More metadata: {detail_link}") + footer) + "\n"
     n_claims = len(dossier["claims"])
     n_gaps = len(dossier["gaps"])
+    cov = _coverage_summary(dossier)
+    if cov["selection"]:
+        sel = cov["selection"]
+        sel_txt = f"{sel['stored']} of {sel['candidates']} candidate file(s) selected" + ("" if sel["complete"] else " (selection incomplete)")
+    else:
+        sel_txt = "selection unknown (legacy dossier, no packet coverage recorded)"
+    if cov["repository"]:
+        rep = cov["repository"]
+        rep_txt = "repository tree complete" if rep["complete"] else "repository tree truncated (partial listing)"
+    else:
+        rep_txt = "repository completeness unknown (legacy dossier)"
+    coverage_line = (f"Source coverage ({cov['state']}): {sel_txt}; {rep_txt}. Claims by basis: "
+                     f"{cov['documented']} documented, {cov['code_inspected']} code-inspected. "
+                     "A current commit is not the same as complete source coverage.")
     body = ["## Summary (orientation draft, not independently verified)", "", dossier["summary"], "",
+            "## Source coverage", "", coverage_line, "",
             "## Facets", "", f"{n_claims} claim(s) across {len(wiki.FACETS) - n_gaps} facet(s); {n_gaps} facet(s) unknown.", ""]
     reserved = _word_count("\n".join(header + body + footer))
     budget = REPO_WORD_LIMIT - reserved
@@ -288,8 +345,47 @@ def _render_gap_page(facet: str, repos_missing: list[str]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _render_freshness_index(repos: dict) -> str:
-    lines = ["# Freshness -- full index", "", "[Back to map index](../index.md)", ""]
+def _render_features_index(facet_claims: dict[str, list[tuple[str, dict]]], gap_repos: dict[str, list[str]]) -> str:
+    """Facet-major comparison entry point: one line per FACET linking to its own bounded, paginated page."""
+    lines = ["# Features -- facet-major comparison", "", "[Back to map index](../index.md)", "",
+             "Compare repositories facet by facet (components, tools-permissions, memory-state, orchestration, "
+             "evaluation and every other facet) without opening every repo page. No rankings or inferred "
+             "capabilities: every line below cites its own evidence kind/basis and source locator.", ""]
+    for facet in wiki.FACETS:
+        claims = facet_claims.get(facet, [])
+        n_repos = len({k for k, _ in claims})
+        lines.append(f"- [{facet}]({facet}.md): {len(claims)} claim(s) across {n_repos} repo(s) with evidence; "
+                     f"{len(gap_repos.get(facet, []))} distilled repo(s) unknown for this facet (no source-linked claim submitted).")
+    return "\n".join(lines) + "\n"
+
+
+def _render_facet_page(facet: str, claims: list[tuple[str, dict]], gap_keys: list[str]) -> str:
+    lines = [f"# Facet: {facet}", "", "[Back to features index](index.md)", "[Back to map index](../index.md)", "",
+             f"{len(claims)} claim(s) across {len({k for k, _ in claims})} repo(s) with evidence; {len(gap_keys)} "
+             "distilled repo(s) are unknown for this facet (no source-linked claim submitted). Unknown is not "
+             "evidence the product lacks the feature, and it is not evidence the whole facet was examined for "
+             "absence; only a source-linked claim stating the product lacks a feature would support that. A repo "
+             "with no dossier at all is a different, unexamined kind of unknown and never appears on this page.", ""]
+    if not claims:
+        lines.append("- No source-backed claims yet for this facet.")
+    for key, c in sorted(claims, key=lambda kc: (kc[0], kc[1]["claim_id"])):
+        links = ", ".join(_evidence_link(loc) for loc in c["locators"])
+        lines.append(f"- [{key}]({_repo_link_from_section(key)}) [{c['kind']}/{c['basis']}] {c['text']} -- evidence: {links}")
+    if gap_keys:
+        lines += ["", "Unknown (distilled repo, no source-linked claim submitted for this facet):", ""]
+        for key in sorted(gap_keys):
+            lines.append(f"- [{key}]({_repo_link_from_section(key)})")
+    return "\n".join(lines) + "\n"
+
+
+def _render_freshness_index(repos: dict, coverage_by_key: dict[str, str] | None = None) -> str:
+    """Freshness (latest commit indexed or not) is deliberately kept separate from coverage (how much of
+    that commit's source was actually selected and inspected); a repo can be current and only partially
+    covered at the same time."""
+    coverage_by_key = coverage_by_key or {}
+    lines = ["# Freshness -- full index", "", "[Back to map index](../index.md)", "",
+             "Current means the dossier matches the latest locally collected snapshot. A lookup does not "
+             "check upstream HEAD. Freshness does not measure evidence depth; see `coverage` for that.", ""]
     by_fresh: dict[str, list[str]] = defaultdict(list)
     for key, r in repos.items():
         by_fresh[r.get("freshness", "pending")].append(key)
@@ -301,7 +397,9 @@ def _render_freshness_index(repos: dict) -> str:
             r = repos[key]
             reason = r.get("last_error", {}).get("code") if r.get("last_error") else ""
             suffix = f" -- {reason}" if reason else ""
-            lines.append(f"- [{key}]({_repo_link_from_section(key)}){suffix}")
+            cov_state = coverage_by_key.get(key)
+            cov_suffix = f" [coverage: {cov_state}]" if cov_state else ""
+            lines.append(f"- [{key}]({_repo_link_from_section(key)}){suffix}{cov_suffix}")
         lines.append("")
     return "\n".join(lines) + "\n"
 
@@ -311,16 +409,26 @@ def _render_freshness_index(repos: dict) -> str:
 
 def _render_index(repos: dict, by_status: Counter, by_freshness: Counter, by_class: dict,
                    component_claims: list, pattern_claims: list, gap_repos: dict[str, list[str]],
-                   stale_keys: list[str], invalid_keys: list[str]) -> str:
+                   stale_keys: list[str], invalid_keys: list[str], dir_counts: dict | None = None,
+                   coverage_counts: Counter | None = None, renamed_count: int = 0) -> str:
     total = len(repos)
     known = by_status.get("distilled", 0) - len(invalid_keys)
+    coverage_counts = coverage_counts or Counter()
     lines = [
         "# Map the Agents -- Observatory index", "",
-        f"Coverage: {known} of {total} known/total (distilled with kernel-applied, currently valid evidence).", "",
+        f"Coverage: {known} of {total} known/total (distilled with kernel-applied, currently valid evidence).",
+        f"Known-dossier source depth (distinct from freshness -- a current commit is not complete source "
+        f"coverage): complete={coverage_counts.get('complete', 0)}, partial={coverage_counts.get('partial', 0)}, "
+        f"unknown={coverage_counts.get('unknown', 0)} (legacy dossiers with no packet coverage recorded).", "",
         "Status counts: " + (", ".join(f"{s}={by_status[s]}" for s in STATUS_ORDER if by_status.get(s)) or "none"), "",
         "Freshness counts: " + (", ".join(f"{f}={by_freshness[f]}" for f in FRESHNESS_ORDER if by_freshness.get(f)) or "none"), "",
+    ]
+    if renamed_count:
+        lines.append(f"Identity: {renamed_count} repo(s) carry a verified GitHub rename lineage (see their repo pages).")
+        lines.append("")
+    lines += [
         "Navigation: " + " | ".join(f"[{s}]({s}/index.md)" for s in
-            ("classes", "agents", "components", "patterns", "gaps", "freshness")), "",
+            ("classes", "agents", "components", "patterns", "features", "gaps", "freshness", "directory")), "",
     ]
     if invalid_keys:
         lines.append("Invalid dossiers (excluded from `known` until re-applied): " +
@@ -343,6 +451,9 @@ def _render_index(repos: dict, by_status: Counter, by_freshness: Counter, by_cla
     lines += _preview_nav(component_claims)
     lines += ["", "## Patterns", "", "Full index: [patterns/index.md](patterns/index.md).", ""]
     lines += _preview_nav(pattern_claims)
+    lines += ["", "## Features", "", "Facet-major comparison (components, tools-permissions, memory-state, "
+              "orchestration, evaluation and every other facet) across every repository: "
+              "[features/index.md](features/index.md).", ""]
     lines += ["", "## Gaps", "", "Full index: [gaps/index.md](gaps/index.md).", ""]
     any_gap = False
     for facet in wiki.FACETS:
@@ -361,6 +472,11 @@ def _render_index(repos: dict, by_status: Counter, by_freshness: Counter, by_cla
             lines.append(f"- ... {len(stale_keys) - FRESHNESS_PREVIEW_CAP} more; see freshness/index.md")
     else:
         lines.append("- No stale or refresh-failed repos.")
+    lines += ["", "## Directory", "", "Full index: [directory/index.md](directory/index.md)."]
+    if dir_counts:
+        lines.append(f"Catalog-evidence entries (no-repo included): {dir_counts.get('union', 0)} "
+                      f"(published={dir_counts.get('published', 0)}, backing={dir_counts.get('backing', 0)}, "
+                      f"pages={dir_counts.get('pages', 0)}).")
     return "\n".join(_bound_by_lines(lines, INDEX_WORD_LIMIT,
                      "(index truncated at the word budget; see the linked full indexes under map/ for every entry)")) + "\n"
 
@@ -388,8 +504,11 @@ def _render_pointer() -> str:
         f"- Agents: [{MAP_DIR}/index.md#agents]({MAP_DIR}/index.md#agents) (full: [{MAP_DIR}/agents/index.md]({MAP_DIR}/agents/index.md))",
         f"- Components: [{MAP_DIR}/index.md#components]({MAP_DIR}/index.md#components) (full: [{MAP_DIR}/components/index.md]({MAP_DIR}/components/index.md))",
         f"- Patterns: [{MAP_DIR}/index.md#patterns]({MAP_DIR}/index.md#patterns) (full: [{MAP_DIR}/patterns/index.md]({MAP_DIR}/patterns/index.md))",
+        f"- Features (facet-major comparison): [{MAP_DIR}/index.md#features]({MAP_DIR}/index.md#features) (full: [{MAP_DIR}/features/index.md]({MAP_DIR}/features/index.md))",
         f"- Gaps: [{MAP_DIR}/index.md#gaps]({MAP_DIR}/index.md#gaps) (full: [{MAP_DIR}/gaps/index.md]({MAP_DIR}/gaps/index.md))",
-        f"- Freshness: [{MAP_DIR}/index.md#freshness]({MAP_DIR}/index.md#freshness) (full: [{MAP_DIR}/freshness/index.md]({MAP_DIR}/freshness/index.md))", "",
+        f"- Freshness: [{MAP_DIR}/index.md#freshness]({MAP_DIR}/index.md#freshness) (full: [{MAP_DIR}/freshness/index.md]({MAP_DIR}/freshness/index.md))",
+        f"- Directory (catalog-evidence layer, includes no-repo entries): [{MAP_DIR}/index.md#directory]({MAP_DIR}/index.md#directory) (full: [{MAP_DIR}/directory/index.md]({MAP_DIR}/directory/index.md))",
+        "",
     ]) + "\n"
 
 
@@ -439,14 +558,19 @@ def build(root: Path) -> dict:
     with core.writer_lock(root):
         core.init_locked(root)
         repos = core.load_repos(root)
+        aliases = directory.load_aliases(root)
         by_status: Counter = Counter()
         by_freshness: Counter = Counter()
         by_class: dict[str, list[str]] = defaultdict(list)
         component_claims: list[tuple[str, dict]] = []
         pattern_claims: list[tuple[str, dict]] = []
+        facet_claims: dict[str, list[tuple[str, dict]]] = defaultdict(list)
         gap_repos: dict[str, list[str]] = defaultdict(list)
         stale_keys: list[str] = []
         invalid_keys: list[str] = []
+        renamed_keys: list[str] = []
+        coverage_counts: Counter = Counter()
+        coverage_by_key: dict[str, str] = {}
         written: list[str] = []
         unchanged = 0
         rendered: dict[str, str] = {}
@@ -466,6 +590,11 @@ def build(root: Path) -> dict:
                 by_class[cls].append(key)
             if record.get("freshness") in ("stale", "refresh-failed"):
                 stale_keys.append(key)
+            identity = directory.repo_identity(key, record, aliases)
+            identity["renamed_to_tracked"] = bool(identity["renamed_to"] and identity["renamed_to"]["canonical"] in repos)
+            record["identity"] = identity
+            if identity["renamed_to"]:
+                renamed_keys.append(key)
             dossier = None
             if record.get("status") == "distilled":
                 try:
@@ -480,12 +609,16 @@ def build(root: Path) -> dict:
             _put(_detail_rel(key), _render_repo_detail(key, record, dossier), key)
             if dossier:
                 for c in dossier["claims"]:
+                    facet_claims[c["facet"]].append((key, c))
                     if c["facet"] in COMPONENT_FACETS:
                         component_claims.append((key, c))
                     if c["facet"] in PATTERN_FACETS:
                         pattern_claims.append((key, c))
                 for g in dossier["gaps"]:
                     gap_repos[g["facet"]].append(key)
+                cov = _coverage_summary(dossier)
+                coverage_counts[cov["state"]] += 1
+                coverage_by_key[key] = cov["state"]
 
         _put(f"{MAP_DIR}/agents/index.md", _render_agents_index(repos))
         _put(f"{MAP_DIR}/classes/index.md", _render_classes_index(by_class))
@@ -496,16 +629,23 @@ def build(root: Path) -> dict:
         _put(f"{MAP_DIR}/gaps/index.md", _render_gaps_index(gap_repos))
         for facet, missing in gap_repos.items():
             _put(f"{MAP_DIR}/gaps/{facet}.md", _render_gap_page(facet, missing))
-        _put(f"{MAP_DIR}/freshness/index.md", _render_freshness_index(repos))
+        _put(f"{MAP_DIR}/features/index.md", _render_features_index(facet_claims, gap_repos))
+        for facet in wiki.FACETS:
+            _put(f"{MAP_DIR}/features/{facet}.md", _render_facet_page(facet, facet_claims.get(facet, []), gap_repos.get(facet, [])))
+        _put(f"{MAP_DIR}/freshness/index.md", _render_freshness_index(repos, coverage_by_key))
+        dir_out = directory.render(root)
+        rendered.update(dir_out["pages"])
         _put(f"{MAP_DIR}/index.md", _render_index(repos, by_status, by_freshness, by_class, component_claims,
-                                                    pattern_claims, gap_repos, stale_keys, invalid_keys))
+                                                    pattern_claims, gap_repos, stale_keys, invalid_keys, dir_out["counts"],
+                                                    coverage_counts, len(renamed_keys)))
         _put(AGENTS_CORPUS, _render_pointer())
         for rel, text in rendered.items():
             if core.write_if_changed(root / rel, text.encode("utf-8")):
                 written.append(rel)
             else:
                 unchanged += 1
-        manifest = {"schema_version": 1, "catalog_digest": _digest(repos),
+        manifest = {"schema_version": 1, "catalog_digest": _digest(repos), "directory_digest": directory.state_digest(root),
+                    "aliases_digest": directory.aliases_digest(root),
                     "files": sorted(p for p in rendered if p.startswith("map/")),
                     "file_repos": file_repos, "records": repos}
         if core.write_if_changed(root / BUILD_FILE, core.dump_json(manifest)):
@@ -514,25 +654,63 @@ def build(root: Path) -> dict:
             unchanged += 1
 
     gap_counts = {f: len(v) for f, v in gap_repos.items()}
+    facet_counts = {f: len(v) for f, v in facet_claims.items()}
     return {
         "root": str(root), "repos": len(repos), "known": by_status.get("distilled", 0) - len(invalid_keys),
         "total": len(repos), "written": sorted(written), "unchanged": unchanged,
         "by_status": dict(sorted(by_status.items())), "by_freshness": dict(sorted(by_freshness.items())),
         "gaps": dict(sorted(gap_counts.items())), "stale": sorted(stale_keys), "invalid_dossiers": sorted(invalid_keys),
+        "directory": dir_out["counts"], "renamed": sorted(renamed_keys),
+        "coverage": dict(sorted(coverage_counts.items())), "facets": dict(sorted(facet_counts.items())),
     }
 
 
 # ---------------------------------------------------------------- query
 
 
+def _archive_dirs(root: Path) -> list[Path]:
+    """Every initialized kernel's own pages/ tree, in deterministic order: the shared wiki/pages/ (shared
+    layout) plus, under the partitioned layout, each repository shard's wiki/shards/<id>/pages/.
+
+    Only ever the pages/ subdirectory of a kernel that is actually initialized (its wiki.yaml present)
+    is included -- never a shard's sources, its data/ JSONL tables, packets/proposals, the private inbox,
+    human notes, or any other directory. Shard order is the sorted shard-id directory name, which is
+    stable and host-independent (map_agents.wiki._shard_id), so archive scan order never depends on
+    filesystem iteration order.
+    """
+    root = Path(root)
+    dirs: list[Path] = []
+    shared_pages = root / wiki.WIKI_DIR / "pages"
+    if shared_pages.is_dir():
+        dirs.append(shared_pages)
+    shards_root = root / wiki.WIKI_DIR / wiki.SHARD_DIR
+    if shards_root.is_dir():
+        for shard in sorted(p for p in shards_root.iterdir() if p.is_dir()):
+            if not (shard / "wiki.yaml").is_file():
+                continue
+            pages = shard / "pages"
+            if pages.is_dir():
+                dirs.append(pages)
+    return dirs
+
+
+def _is_archive_rel(rel: str) -> bool:
+    """True for a path this build would place under an initialized kernel's pages/ tree (see _archive_dirs)."""
+    parts = Path(rel).parts
+    if rel.startswith(f"{wiki.WIKI_DIR}/pages/"):
+        return True
+    return len(parts) > 3 and parts[0] == wiki.WIKI_DIR and parts[1] == wiki.SHARD_DIR and parts[3] == "pages"
+
+
 def _searchable_files(root: Path, include_archive: bool) -> tuple[list[Path], bool]:
     """Generated Markdown only: map/ orientation and detail pages, excluding human-owned notes.
 
-    The kernel's own wiki/pages/ archive is excluded by default because an archived page cannot be
-    reliably re-labelled with the repository's current freshness/status without re-reading source; pass
-    include_archive=True to add it (results from it never carry repo/status/freshness fields and are
-    marked historical). Returns (files, complete) where complete is False only if MAX_QUERY_FILES, a
-    safety ceiling far above any realistic corpus, was actually reached.
+    The kernel's own pages/ archive (shared wiki/pages/, or every shard's wiki/shards/<id>/pages/ under
+    the partitioned layout) is excluded by default because an archived page cannot be reliably re-labelled
+    with the repository's current freshness/status without re-reading source; pass include_archive=True to
+    add it (results from it never carry repo/status/freshness fields and are marked historical). Returns
+    (files, complete) where complete is False only if MAX_QUERY_FILES, a safety ceiling far above any
+    realistic corpus, was actually reached.
     """
     root = Path(root)
     files: list[Path] = []
@@ -543,8 +721,7 @@ def _searchable_files(root: Path, include_archive: bool) -> tuple[list[Path], bo
     elif base.is_dir():
         files.extend(sorted(p for p in base.rglob("*.md") if p.is_file() and not p.name.endswith(NOTES_SUFFIX)))
     if include_archive:
-        archive = root / wiki.WIKI_DIR / "pages"
-        if archive.is_dir():
+        for archive in _archive_dirs(root):
             files.extend(sorted(p for p in archive.rglob("*.md") if p.is_file()))
     complete = len(files) <= MAX_QUERY_FILES
     return files[:MAX_QUERY_FILES], complete
@@ -590,7 +767,8 @@ def query(root: Path, text: str, limit: int = 10, max_chars: int = 4000, include
     files, complete = _searchable_files(root, include_archive)
     repos = core.load_repos(root) if (root / core.REPOS_FILE).is_file() else {}
     manifest = json.loads((root / BUILD_FILE).read_bytes()) if (root / BUILD_FILE).is_file() else {}
-    stale_view = manifest.get("catalog_digest") != _digest(repos)
+    stale_view = (manifest.get("catalog_digest") != _digest(repos) or manifest.get("directory_digest") != directory.state_digest(root)
+                  or manifest.get("aliases_digest") != directory.aliases_digest(root))
     scored: list[tuple[int, str, str, bool]] = []
     if terms:
         for path in files:
@@ -625,7 +803,7 @@ def query(root: Path, text: str, limit: int = 10, max_chars: int = 4000, include
                 entry["repo"] = key
                 entry["status"] = record.get("status")
                 entry["freshness"] = record.get("freshness")
-        elif rel.startswith(f"{wiki.WIKI_DIR}/pages/"):
+        elif _is_archive_rel(rel):
             entry["archive"] = True
             entry["note"] = "kernel-generated historical wiki page; not labelled with current catalog freshness"
         results.append(entry)

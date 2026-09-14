@@ -1,0 +1,331 @@
+{
+  "applied_operation_id": "op_b6953eab91c944bba9be2abbe9ef326d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_3aaa73238993505a6bde83eadb1f8e8b10d075420e2fe3f0d6915f32151ea6c7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "a7641fedb2a17a069bf167d773eaa290d2fc172c",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d7b15e5a7e14e31ab71aeae4b7e7dbdd9518d874e14fb784f9a18d77ecb7fc4"
+      ],
+      "text": "The project's stated purpose is finetuning multimodal LLMs on STEM datasets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d041da455c6625a54a9ea334e3efacb60bd02adc17b636db50ca02c51c24eb2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "a7641fedb2a17a069bf167d773eaa290d2fc172c",
+          "line_end": 22,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/README.md#L8-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1671a057417b6a5a9c3aad3d232499010267afe2a6803af965a748e1b2c776eb"
+      ],
+      "text": "Training data is drawn from public Hugging Face datasets including MetaMathQA, Camel AI math/chemistry/physics/biology, GSM8K, MMLU, Evol Instruct Code, Glaive code assistant, arXiv-derived instruct sets, and ScienceQA."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70992677d6bcb6e660f2ca5a35654f69fc301bcab847623c7bb40f25b68e659a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "a7641fedb2a17a069bf167d773eaa290d2fc172c",
+          "line_end": 6,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/README.md#L4-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c744bccbf9c7f6f5989688907fb3fe6d5ccb07592ef38044929daecddf920e39"
+      ],
+      "text": "The planned base model for finetuning is upstage/SOLAR-10.7B-Instruct-v1.0, using the QLoRA method."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f0afc0379d6f78fead65f4817ce14570c548ab15146850ae9365fe69cf3e71f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "a7641fedb2a17a069bf167d773eaa290d2fc172c",
+          "line_end": 22,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/README.md#L8-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1671a057417b6a5a9c3aad3d232499010267afe2a6803af965a748e1b2c776eb"
+      ],
+      "text": "The README says about 100k samples are used for training (the 100k-text subset) out of roughly one million combined samples, to save costs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56d0a970385bf2e72ea307271b096d2f3ae552fefbe260ab935956141088821d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "a7641fedb2a17a069bf167d773eaa290d2fc172c",
+          "line_end": 6,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/README.md#L4-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c744bccbf9c7f6f5989688907fb3fe6d5ccb07592ef38044929daecddf920e39"
+      ],
+      "text": "As of this snapshot, dataset compilation/preprocessing is marked complete while finetuning and Hugging Face release remain unchecked, so the model appears not yet trained or released."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6b3dca7d4894ea1f742f4e16290fa1494ca4202c67c3c0276424e04379522ff",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "11c3f9bc2f9d5c8421204520fd26af861b03d90b",
+          "line_end": 113,
+          "line_start": 112,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/CODE_OF_CONDUCT.md#L112-L113"
+        },
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "11c3f9bc2f9d5c8421204520fd26af861b03d90b",
+          "line_end": 93,
+          "line_start": 88,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/CODE_OF_CONDUCT.md#L88-L93"
+        },
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "11c3f9bc2f9d5c8421204520fd26af861b03d90b",
+          "line_end": 119,
+          "line_start": 117,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/CODE_OF_CONDUCT.md#L117-L119"
+        },
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "11c3f9bc2f9d5c8421204520fd26af861b03d90b",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/CODE_OF_CONDUCT.md#L79-L81"
+        },
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "11c3f9bc2f9d5c8421204520fd26af861b03d90b",
+          "line_end": 64,
+          "line_start": 61,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/CODE_OF_CONDUCT.md#L61-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_055adf100025ccb862f9cb7a7401781f473ea92643fe57106c89eaff0830af35",
+        "slc_12801ea8172afa1e18b9cddb26d15a127a7c6f4347d39a10a664cd947d5ad4e0",
+        "slc_67133efc9dd15cde92c84aa8aa2998060f9716c406fc4b9cffa690f17b8bb807",
+        "slc_bf1602ca0e24b27ccbfed078c4eeda4af69e17133a0e6f4e5bb5aee1a2ceac8a",
+        "slc_d97a00e9e2587d0d24f3dbdbbe1e063ae62ba224a49828ccd03e99ae8d292053"
+      ],
+      "text": "Repository development practice: the project adopts a Contributor Covenant v2.0 code of conduct defining acceptable behavior, an enforcement ladder (warning through permanent ban), and reporting via the maintainer's Instagram handle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c503c7d7cc21d6f8be57e004081ad9a4959b8b0f5123f6f83a094cb126de9bbc",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+          "git_sha": "a7641fedb2a17a069bf167d773eaa290d2fc172c",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "sr5434/codegebragpt",
+          "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/README.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bde4914aa7a779a2da53c5673fd6d4de279083b519c0215eb49c3087fd42c572"
+      ],
+      "text": "The model is named after the author's earlier Codegebra equation-solving program and is intended as its successor with a more natural interface and expanded abilities."
+    }
+  ],
+  "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 24,
+        "path": "README.md",
+        "size": 2015
+      },
+      {
+        "lines": 128,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 5225
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 5,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_67d1df280e2d57b3895256ab26319d7d",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 3,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sr5434/codegebragpt/780307f4b361db1f885fc192a00cd563b10bfaaa/a78afedb2d7017e3/manifest.json",
+  "package_id": "pkg_705f821d886bb64446d3cff90974a8a83a116641ff2b49b364c57e907f2de336",
+  "repo": "sr5434/codegebragpt",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "31dbc6dd77022318136aadf41e2c96eb1f1741c9fc4b7a3cc363262fe88ce836",
+  "snapshot_id": "a78afedb2d7017e3",
+  "sources": [
+    {
+      "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+      "git_sha": "11c3f9bc2f9d5c8421204520fd26af861b03d90b",
+      "lines": 128,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "sr5434/codegebragpt",
+      "sha256": "56501d5982964c21badb02feceb10c2939d19115e4540e64a805be056d253c0c",
+      "source_id": "src_d3d56cc7d84f5cebbbb24e73216ca329",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "780307f4b361db1f885fc192a00cd563b10bfaaa",
+      "git_sha": "a7641fedb2a17a069bf167d773eaa290d2fc172c",
+      "lines": 24,
+      "path": "README.md",
+      "repository": "sr5434/codegebragpt",
+      "sha256": "e9a0b08792f2f29f07fe216769d4815b7af656192c31eaf72ab1524747bbcfc8",
+      "source_id": "src_927814d17f9a53e58ec0c616e88922d0",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sr5434/CodegebraGPT/blob/780307f4b361db1f885fc192a00cd563b10bfaaa/README.md"
+    }
+  ],
+  "summary": "The snapshot is mostly a README describing CodegebraGPT, a planned multimodal STEM LLM finetuned from SOLAR-10.7B-Instruct via QLoRA on ~100k samples drawn from many public datasets, plus a Contributor Covenant code of conduct. No code, evaluation, or runtime behavior is evidenced.",
+  "superseded_claim_ids": []
+}

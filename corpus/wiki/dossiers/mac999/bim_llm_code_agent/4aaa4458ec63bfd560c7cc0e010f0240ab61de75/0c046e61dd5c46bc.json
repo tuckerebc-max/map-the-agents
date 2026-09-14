@@ -1,0 +1,497 @@
+{
+  "applied_operation_id": "op_b90ea22cb0484fb58b9e4e70ae81f7c2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9ea47ce7a35356fd82e766f1ed905406b80c4fa9f087ceb8377fda8f984c7a41",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7737d482bdc84855bb4a919c5c90153dc24233920c409533ff7e1c1ee7278997"
+      ],
+      "text": "The project combines BIM with LLMs to handle queries and automate tasks on BIM/IFC files, aimed at evaluating LLM agent performance on complex IFC data for a paper."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62295c94ca81998249e9e5176f0c696e35b715d1ea43662cd02e11e663972c9c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L29-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7da4c8763a8c873bc490c21ac91ae9463312dfb6b51d7bdd56b7f65b0d2a5f10"
+      ],
+      "text": "Features include natural-language BIM query handling, automatic Python code generation, a Streamlit web interface, and generation of tables, charts, and summaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bde8db0239c07b43d3b7867db1f336da3b5fc305016b0685a92a74a9e61380d4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 94,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L93-L94"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 91,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L87-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a490fae0a0b4ceea306ff6e77c50c301dba8c5799103b71ac716b6018f0140cd",
+        "slc_d30955b0499b98f98d4c76c44940b07cd1b253f6094a7f3bfe944132ada3a3a5"
+      ],
+      "text": "The product is launched via 'streamlit run bim_code_agent_app.py' and accessed in a browser at http://localhost:8501."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_12a1372bb5b9fddb47224483faf9b9c536614ecf069e64cee660d720f2cbafc7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L29-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7da4c8763a8c873bc490c21ac91ae9463312dfb6b51d7bdd56b7f65b0d2a5f10"
+      ],
+      "text": "The tool supports multiple file formats including IFC, PDF, JSON, TXT, and CSV."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d16739bb680d63034229d0a977acd75bdcb86ba0310d462c3adb2319bff10f9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 120,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L118-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b7e3dfa15fdbf6c5ec0631d99c99aee62346f75302aa22b084b42420b7f833c"
+      ],
+      "text": "It uses a multi-agent LangChain system integrating LLMs, memory, and vector stores, plus a custom LangChain chain specialized for BIM queries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3bfee2314a9c8e262100953ebcdc732fae064ef60bd1aa1d56a9914e8ea3d6ba",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+          "line_end": 33,
+          "line_start": 32,
+          "path": "requirements.txt",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt#L32-L33"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "requirements.txt",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt#L39-L39"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+          "line_end": 12,
+          "line_start": 11,
+          "path": "requirements.txt",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt#L11-L12"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "requirements.txt",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt#L15-L16"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+          "line_end": 8,
+          "line_start": 5,
+          "path": "requirements.txt",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt#L5-L8"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "requirements.txt",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_525b883f5f286d31cc6eadc056fbbb62a27f887ffb92de92021afa002e1e2db9",
+        "slc_614e828be7f327b8ca1068774a7d1c3a0faebc7257e23471c9dab4e41d86b40e",
+        "slc_75663223a0a0bfdd82b2e58ba651f202eefc6e5b135bf6886b30f19aeba16bcb",
+        "slc_cc81e6e0174031dc82aa86c004902995549edacdcf43a1f5918732a7d59589b1",
+        "slc_e1aa2b88cb3f294f48ce06217e4b867be999634d168cd777b13f792d08e6a954",
+        "slc_fd6c4351355365ba487d3e7245203b7e4763b9a05a841412b2123582a3684af9"
+      ],
+      "text": "Requirements include LangChain packages, openai/ollama, faiss-cpu and chromadb vector stores, ifcopenshell/pyvista, streamlit, and tavily-python."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc9d2c2d1251526425d2eb443d378ee55b919a0947cb1dfedde8b265099cd495",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L49-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a13b8f95f2a5dc9aef296f95c93754473b6a21b26ffdf12a11f86f5c0fa60b4"
+      ],
+      "text": "Prerequisites are Python 3.8+, an OpenAI API key, and an Ollama installation; LangChain and Tavily API keys are optional for extra features."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27d632329ae4d7a2c4ca1eb771958e16c0578fd0dfd25ae88ebf6eaff153a42c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 67,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L63-L67"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 61,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L56-L61"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 77,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L69-L77"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 85,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L79-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a7b2982d0c6979b542c0cc86ca97f55a42c4102006731ce3a42a300abb54668",
+        "slc_1fdc371e2694c53ce6fcd00eedb7ef3120517e6dd9843069146236afd43a0692",
+        "slc_8eafe600c026d08f00ac6c7943e68d139cf24e0f12f51fde462a0a1e877077f0",
+        "slc_a84833d603fd44ff67a3cea4732c5e76017cc6e5c056e2cfa7852e692a444521"
+      ],
+      "text": "Setup involves cloning the repo, manually pip-installing libraries, creating a .env with API keys (OpenAI, LangChain, Tavily, HF token), and pulling Ollama models such as codegemma:7b and qwen2.5-coder:7b."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee6d1dcc4eafe287ba598b4617af5e94a9b3edd859451e67d8445edbb6ec5d0c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 127,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L124-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_571a1635c56bd323ef5f6cc92a9cea8a8f0d6eab25a45de28dc5fd7216ff4c28"
+      ],
+      "text": "Repository development practice: contributors are asked to fork the repository, create a feature branch, and submit a pull request with a clear explanation of changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1caada7e65f0ac390375356fa8fb6fb89f612fc880b7f0c08e0b80d1b0332dfa",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7737d482bdc84855bb4a919c5c90153dc24233920c409533ff7e1c1ee7278997"
+      ],
+      "text": "The author states the project is not perfect: behavior depends on parameters like LLM type, and it sometimes hallucinates or generates incomplete code, suggesting fixes via function calls, fine-tuning, and RAG."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_575569ac1f654cb1b650ab5a966ce5b41c46a2c31b535458b568122fd9bec913",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7737d482bdc84855bb4a919c5c90153dc24233920c409533ff7e1c1ee7278997"
+      ],
+      "text": "The stated purpose includes checking LLM agent performance on BIM tasks, but no benchmark results or metrics appear in the provided evidence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7445708ba73ddc6a739174b65ac88ef7ca48cf1a8d9859ed3f22b0e47b929dca",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+          "line_end": 120,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md#L118-L120"
+        },
+        {
+          "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+          "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "requirements.txt",
+          "repository": "mac999/bim_llm_code_agent",
+          "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt#L15-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b7e3dfa15fdbf6c5ec0631d99c99aee62346f75302aa22b084b42420b7f833c",
+        "slc_cc81e6e0174031dc82aa86c004902995549edacdcf43a1f5918732a7d59589b1"
+      ],
+      "text": "Uploaded files are automatically processed for vectorized searches, implying a vector-store-backed memory over user documents (faiss-cpu/chromadb are listed dependencies)."
+    }
+  ],
+  "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 145,
+        "path": "README.md",
+        "size": 6841
+      },
+      {
+        "lines": 0,
+        "path": "log.txt",
+        "size": 0
+      },
+      {
+        "lines": 62,
+        "path": "requirements.txt",
+        "size": 819
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 15,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_309f21d3aa575d588aa7fcebe423af31",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/mac999/bim_llm_code_agent/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/0c046e61dd5c46bc/manifest.json",
+  "package_id": "pkg_2b5e1925f9d50a1556b15d22d9976849c664f7eea6ff40586729fd9984edaedb",
+  "repo": "mac999/bim_llm_code_agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4b49bd9788a6fd0189e8a11349bce659afe61e3b5e290296f7927b1051bfd401",
+  "snapshot_id": "0c046e61dd5c46bc",
+  "sources": [
+    {
+      "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+      "git_sha": "55a4ccbe7818ec963c7a815deae045d6af74b6bb",
+      "lines": 145,
+      "path": "README.md",
+      "repository": "mac999/bim_llm_code_agent",
+      "sha256": "2e9aab8d350c452d220922bc97b5eee35390f2abd6745887073f21326d29751f",
+      "source_id": "src_f399ba6cbfaa54aebf78ca04e6e21d98",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/README.md"
+    },
+    {
+      "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+      "git_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "lines": 0,
+      "path": "log.txt",
+      "repository": "mac999/bim_llm_code_agent",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_id": "src_c022882e5a905cd2815cc10caa023acc",
+      "stored": "log.txt-d7e60b33c666.txt",
+      "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/log.txt"
+    },
+    {
+      "commit": "4aaa4458ec63bfd560c7cc0e010f0240ab61de75",
+      "git_sha": "901030512ab2baf4d60b18a3b3550c10a1c5f18d",
+      "lines": 62,
+      "path": "requirements.txt",
+      "repository": "mac999/bim_llm_code_agent",
+      "sha256": "b8a861caf658e9bf24e08e96ffecda3e5a42afdc8b860a85aab99f3f961dc542",
+      "source_id": "src_b8f627f778ad5e14a1779ebaf713ba49",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/mac999/BIM_LLM_code_agent/blob/4aaa4458ec63bfd560c7cc0e010f0240ab61de75/requirements.txt"
+    }
+  ],
+  "summary": "README-only evidence for a BIM/LLM agent that answers natural-language queries about IFC files, generates Python code, and runs as a Streamlit app using LangChain, Ollama models, and RAG; limitations and contribution workflow are documented by the author.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,351 @@
+{
+  "applied_operation_id": "op_471b5919835b4106a1d45a9ae204ab48",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c485a14b23d2dbf192107ce1eb2a28d83862ccd53d84dab190da0762a5a8abd",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+          "git_sha": "5b6e241a23813b04e5de3dcc004e7ff99f15dd3c",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "aaronz345/codebase-argus",
+          "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/README.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cd6d22592cacf69bc1807caa976f74bb370706c665f7dc3501d3f1a7fa669328"
+      ],
+      "text": "The README describes the tool as a review desk for maintainers that inspects pull requests, failing CI logs, and long-lived fork syncs using one shared set of signals: patches, checks, files, branch state, policy gates, provider consensus, and local git simulations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86a718931ea50333c5e020fd9ab2571215d14f38c4aff7760ee476f5155e7292",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+          "git_sha": "5b6e241a23813b04e5de3dcc004e7ff99f15dd3c",
+          "line_end": 85,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "aaronz345/codebase-argus",
+          "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/README.md#L79-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dee117f41a103e491d75c7b62c3c2646f79e974463b0392c25876813f9bb3e8"
+      ],
+      "text": "An at-a-glance table documents five distinct workflows - PR review, CI review, autofix planning, downstream fork sync, and agent handoff - each with its own input shape and output type."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4eff823ec7e80f52ec8973fffbc4edf532ffd723263acc87a4053b18620cc99",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+          "git_sha": "5b6e241a23813b04e5de3dcc004e7ff99f15dd3c",
+          "line_end": 458,
+          "line_start": 451,
+          "path": "README.md",
+          "repository": "aaronz345/codebase-argus",
+          "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/README.md#L451-L458"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b67cb5619ad2197fc5c87d7e29fac31601b7ba024e9d246d6b16352047190a63"
+      ],
+      "text": "A write-model table documents narrow write behavior: the hosted demo is read-only, GitHub App reviews post comment-level PR reviews, and the sync command runs dry-run unless --execute, --push, or --create-pr is explicitly passed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87fa7e9c7c1f6b35ff6f5a908ff1fae5cf80902fe8ba7bd5f4d211b6ca3215ee",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+          "git_sha": "5b6e241a23813b04e5de3dcc004e7ff99f15dd3c",
+          "line_end": 343,
+          "line_start": 337,
+          "path": "README.md",
+          "repository": "aaronz345/codebase-argus",
+          "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/README.md#L337-L343"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0178a3e3f086d496be8a8277e5e50c5303b154c6c65f4dab9a4f469760c5d2b1"
+      ],
+      "text": "Documented webhook behavior includes verifying the X-Hub-Signature-256 header before handling a payload, and skipping draft pull requests as well as PRs labeled argus:paused."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_517d94e14589086c60f2ce90add1156d1dc387cc9f931e3474190eed7a296b61",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+          "git_sha": "5b6e241a23813b04e5de3dcc004e7ff99f15dd3c",
+          "line_end": 302,
+          "line_start": 295,
+          "path": "README.md",
+          "repository": "aaronz345/codebase-argus",
+          "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/README.md#L295-L302"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_867ce41f8adb3b358da0c0e56582ca954e3a34cf5ea0aafbe918cc5b1c442e6e"
+      ],
+      "text": "A README permission table lists pull requests and issues with read/write access; contents, checks, actions and metadata have read access."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2434a176385d1381aa0f16dd9230f9a881b0bc9c0461548218e9658040a6e8a3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+          "git_sha": "85d35d4987caf57bcd3cbea1dc423609799485fa",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "docs/case-studies/cowagent-2965.md",
+          "repository": "aaronz345/codebase-argus",
+          "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/docs/case-studies/cowagent-2965.md#L34-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_788788d96e98d37c88c61e51cb1c088ae1fb4a6fb9a39fcff409d8535f0e077b"
+      ],
+      "text": "The case study frames its own output as a review aid rather than an approval, noting that pull-request state and code can change after the reviewed snapshot was taken."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_548998f926307520e3f4bc82ab447d44491b8c11c4587c59e7e0bd39ab3bf477",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+          "git_sha": "fc71a8054a615d25330e940419c7e82535c2de25",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/superpowers/plans/2026-05-06-maintainer-firewall-mvp.md",
+          "repository": "aaronz345/codebase-argus",
+          "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/docs/superpowers/plans/2026-05-06-maintainer-firewall-mvp.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d037c31548df3479a826653a3223a632aadc7a5b2fb78a058c2febde0660f22"
+      ],
+      "text": "A planning document describes an intended architecture where pr-review.ts keeps responsibility for normalized review results, while new, separately focused helpers would own policy parsing, evidence extraction, tribunal aggregation, and workflow generation."
+    }
+  ],
+  "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 458,
+        "path": "README.md",
+        "size": 13703
+      },
+      {
+        "lines": 34,
+        "path": "docs/case-studies/cowagent-2965.md",
+        "size": 1628
+      },
+      {
+        "lines": 66,
+        "path": "docs/superpowers/plans/2026-05-06-maintainer-firewall-mvp.md",
+        "size": 2879
+      },
+      {
+        "lines": 55,
+        "path": "docs/superpowers/plans/2026-05-06-pr-agent-review.md",
+        "size": 2526
+      },
+      {
+        "lines": 31,
+        "path": "docs/superpowers/specs/2026-05-06-pr-agent-review-design.md",
+        "size": 2512
+      },
+      {
+        "lines": 5,
+        "path": "AGENTS.md",
+        "size": 327
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 11
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 61,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_5a688e077e8e5309ac68597cba80d8ef",
+  "facets": {
+    "components": 1,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aaronz345/codebase-argus/71922e7555f36c9d62a0525824924f38f4ec73e7/3d55409f5967b792/manifest.json",
+  "package_id": "pkg_7d70b01d1715881428e52615081cdce94b8d50b71cfa93553235af16e95a6ec3",
+  "repo": "aaronz345/codebase-argus",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3761e20f5454bae6573791f440e3c728e6d874b8fe7fb0b16879c41fa814642e",
+  "snapshot_id": "3d55409f5967b792",
+  "sources": [
+    {
+      "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+      "git_sha": "8bd0e39085d5260e7f8faffcad2fdc45e10aef33",
+      "lines": 5,
+      "path": "AGENTS.md",
+      "repository": "aaronz345/codebase-argus",
+      "sha256": "e3447d84251880fb34cfae09131cb4c57471529bbfe60976a3245793cf621627",
+      "source_id": "src_ff13fab51d575024a27b322025cd4ecf",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/AGENTS.md"
+    },
+    {
+      "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+      "git_sha": "5b6e241a23813b04e5de3dcc004e7ff99f15dd3c",
+      "lines": 458,
+      "path": "README.md",
+      "repository": "aaronz345/codebase-argus",
+      "sha256": "d580e6328054e76df76920d6919033334c605d62a1820f311c31f0687461ba59",
+      "source_id": "src_a9b297bc8d68578598373d237b375077",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/README.md"
+    },
+    {
+      "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+      "git_sha": "85d35d4987caf57bcd3cbea1dc423609799485fa",
+      "lines": 34,
+      "path": "docs/case-studies/cowagent-2965.md",
+      "repository": "aaronz345/codebase-argus",
+      "sha256": "9087ddee610b4d35b69c7bc7ada1bb2b7eb0fbc17f6da032acddf5f5caf83339",
+      "source_id": "src_e2182372e66f59a3beae6a293c55c5fe",
+      "stored": "cowagent-2965.md-88727c0a32bf.md",
+      "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/docs/case-studies/cowagent-2965.md"
+    },
+    {
+      "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+      "git_sha": "fc71a8054a615d25330e940419c7e82535c2de25",
+      "lines": 66,
+      "path": "docs/superpowers/plans/2026-05-06-maintainer-firewall-mvp.md",
+      "repository": "aaronz345/codebase-argus",
+      "sha256": "7c83f2106f44c347e061554c8c7a3b74e039a0c81c00a18e286b9b5cde9f1f1c",
+      "source_id": "src_33488ad9494a5f9685d69f0d5ea2978e",
+      "stored": "2026-05-06-maintainer-firewall-mvp.md-1057028f16d7.md",
+      "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/docs/superpowers/plans/2026-05-06-maintainer-firewall-mvp.md"
+    },
+    {
+      "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+      "git_sha": "96309f8d2a25fcb0db8645d79a3841d9ad23c7e7",
+      "lines": 55,
+      "path": "docs/superpowers/plans/2026-05-06-pr-agent-review.md",
+      "repository": "aaronz345/codebase-argus",
+      "sha256": "df4b839d4b0b22c706dd2da32dd56a398b8a7f5be06111cbf2ef9373232cf6d4",
+      "source_id": "src_9e6691c1a80f5afd9d136251a0520df7",
+      "stored": "2026-05-06-pr-agent-review.md-13af2810c8fb.md",
+      "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/docs/superpowers/plans/2026-05-06-pr-agent-review.md"
+    },
+    {
+      "commit": "71922e7555f36c9d62a0525824924f38f4ec73e7",
+      "git_sha": "4ea94057e240a22b80761eb29ed9994d9770d699",
+      "lines": 31,
+      "path": "docs/superpowers/specs/2026-05-06-pr-agent-review-design.md",
+      "repository": "aaronz345/codebase-argus",
+      "sha256": "324914d420694661f3e1dd1b4475df92addd8c1dc5eef495ecc0f13148639a2c",
+      "source_id": "src_69231879c72f5532898ed736d5d81be0",
+      "stored": "2026-05-06-pr-agent-review-design.md-366c4815412d.md",
+      "url": "https://github.com/AaronZ345/codebase-argus/blob/71922e7555f36c9d62a0525824924f38f4ec73e7/docs/superpowers/specs/2026-05-06-pr-agent-review-design.md"
+    }
+  ],
+  "summary": "Selected evidence records: The README describes the tool as a review desk for maintainers that inspects pull requests, failing CI logs, and long-lived fork syncs using one shared set of signals: patches, checks, files, branch state, policy gates, provider consensus, and local git simulations. An at-a-glance table documents five distinct workflows - PR review, CI review, autofix planning, downstream fork sync, and agent handoff - each with its own input shape and output type.",
+  "superseded_claim_ids": []
+}

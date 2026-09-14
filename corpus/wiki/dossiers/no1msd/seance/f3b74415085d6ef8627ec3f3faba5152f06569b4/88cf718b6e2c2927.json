@@ -1,0 +1,452 @@
+{
+  "applied_operation_id": "op_0d5ca2e20fac4657b8d4e45ab024490b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b432d9882c48a5c04da761fb14d60eee5ba9d69876cf91c4d9476cd9724309f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_333cc1db0b84ca315c6fe9ebc127b79df301ce8702110eaf156842478494d1bf"
+      ],
+      "text": "Séance is a GTK4 terminal multiplexer for Linux that auto-detects Claude Code, Codex, Pi, OpenCode, and Antigravity CLI sessions running inside it and tracks their status live in a sidebar."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c3752a63ed9393219506eed404d3fc8949dec80ea99af47b476b12b04d8edd7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 165,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L163-L165"
+        },
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15ddd20c23c73dada11b32bfd7b3511dfd200b6d3660ac20a78c971e485c0daa",
+        "slc_6ecae7f6977169d538fb2c21ba880a6e5bb92b10dad077e26b76f17805f0805b"
+      ],
+      "text": "Terminal rendering is GPU-accelerated via libghostty (Ghostty used as a library), and the app is built with Zig, GTK4, and libadwaita."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27e25a6d258d5404d5927eade9e5fa7cb9bed22f2c8586a636f2c75d07b756c3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56d2a2f3b9f1a0cb46519eea12d7fbeb700a88533ba4b7f1f53c65e000365de1"
+      ],
+      "text": "Panes are arranged in a horizontally scrolling strip, a layout model borrowed from niri, described as fitting long linear agent sessions better than a tiling grid."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_edd8647667664411b743c2f02e1f5ed4ca3b6a8c1aef1bed7faa31699fbe158e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L74-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d9e6a8a8b867bb20936a8ee0b7b6685d988d9bda0042898a43a9bbb7ab44bbf1"
+      ],
+      "text": "Every action is available through `seance ctl`, which talks to the running instance over a Unix domain socket; scripts can create workspaces, open panes, send input, read terminal output, and query the session hierarchy, with JSON output for all commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_048c54e97869dc7b77a73ae335767c79d87b866705adf3aa9ad9a75f31dafa47",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L76-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_867638dadab9a7752aa283c22d2408a114c32e5198709a1402ceebaa19fc3c2d"
+      ],
+      "text": "A bundled skill file (skills/seance-skill.md) provides AI agents a complete reference for the seance ctl API so they can operate the multiplexer on their own."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68d285b24c93ee4585c1ea420859df5bd63b8e22b6ca6ad58644bb26ca2fc7ad",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 60,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L54-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ae792e5dad4976af9c47954595d05749f3e1365139e80f8d7646f0abe0df316"
+      ],
+      "text": "Antigravity CLI tracking uses its status-line callback, which the wrapper adds to ~/.gemini/antigravity-cli/settings.json on first launch, keeping a backup at settings.json.seance-backup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c9ff3aee28a9357e53c014246fb19988679dfe1317be7855c5d9c35b52db31b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 52,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L46-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21c357ed76f4b72c9bad2f4bffe9b27c9f7829afaace43e033c1c37219ab41e1"
+      ],
+      "text": "Remote `opencode attach` sessions and `--pure` OpenCode launches are not tracked."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0539637090f04212af5e9436b1a44647d26c50032299ea2867140cd44f7450c4",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L143-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a44989e27fe7ea8506fdd649882c36347a51bba22a595a2a88c93a3f707f32a"
+      ],
+      "text": "Building from source requires Zig 0.16.x, GTK4, libadwaita, OpenGL 4.3+, and Linux (X11 or Wayland)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_803cd32fad2502b6317608c3b2717bfc976202452825fb6fb903bd1a7ab8c9d1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "17759e89c97b808b1d378996919cffd823c159c1",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "CONTRIBUTING.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/CONTRIBUTING.md#L22-L26"
+        },
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "17759e89c97b808b1d378996919cffd823c159c1",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "CONTRIBUTING.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/CONTRIBUTING.md#L125-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a450d6aad2e331ea41cf75e4e03179409b0117a6d4ee7989bde37652c9e902b",
+        "slc_d913b998354bc0c423346cb9eb8c63d9f56abf63ed4527eb205443c9bc8f688a"
+      ],
+      "text": "Repository development practice: contributors run `G_DEBUG=fatal-criticals GTK_A11Y=none xvfb-run -a zig build test` and `xvfb-run zig build e2e`, and CI must pass before merge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f14ad48abc4727e5adc4c66261f05d08ddc2afc4cddfaff1ea9c0cbf252fbfc0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "17759e89c97b808b1d378996919cffd823c159c1",
+          "line_end": 121,
+          "line_start": 118,
+          "path": "CONTRIBUTING.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/CONTRIBUTING.md#L118-L121"
+        },
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "17759e89c97b808b1d378996919cffd823c159c1",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "CONTRIBUTING.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/CONTRIBUTING.md#L125-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_060ff25f2a384b82fda3ed0b3d297cd04ed6e99e8670e31eea181ba541fb8ca8",
+        "slc_d913b998354bc0c423346cb9eb8c63d9f56abf63ed4527eb205443c9bc8f688a"
+      ],
+      "text": "Repository development practice: Zig code should follow `zig fmt` with functions kept small (~80 lines), new dependencies require a Discussion first, and PRs should contain one focused change."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_142cece552d1144c16f1fcbfbdbf52c20b6292bf20a9c78a9a042f2ddd574db9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "74e874d08baa1b68dce8e3ac39bd24cebf7a4524",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "SECURITY.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/SECURITY.md#L9-L9"
+        },
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "74e874d08baa1b68dce8e3ac39bd24cebf7a4524",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "SECURITY.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/SECURITY.md#L13-L13"
+        },
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "74e874d08baa1b68dce8e3ac39bd24cebf7a4524",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "SECURITY.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/SECURITY.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49450ead78ade87fae4c4e9b11109859493321711dca0942ee4505c83f0a27ea",
+        "slc_672b9049bb8459bc57dbc0105d73385ddc2f78c2ffdbc923f74e2c3525db6e26",
+        "slc_d26e56273445082d2e3c7a05f194e0f30190a1520c5720493027717982557c89"
+      ],
+      "text": "Repository development practice: security issues must be reported privately via GitHub's private vulnerability reporting rather than public issues, with acknowledgment aimed within 72 hours; only the latest pre-1.0 release is supported with security fixes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d9f6096a4449c892b9d9f7ab6c43e95fe78152eaa39f8bfdb4698a739a1bb893",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+          "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "no1msd/seance",
+          "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f4701464d624cde74bb3b74e8525ed1b9b8b2427d4fe655024977cab3179c32d"
+      ],
+      "text": "The product includes workspaces, session persistence across restarts, tabs within columns, a command palette, focus-follows-mouse, and no telemetry; F11 toggles fullscreen and the header bar hides in fullscreen."
+    }
+  ],
+  "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 165,
+        "path": "README.md",
+        "size": 7841
+      },
+      {
+        "lines": 143,
+        "path": "CONTRIBUTING.md",
+        "size": 7025
+      },
+      {
+        "lines": 27,
+        "path": "SECURITY.md",
+        "size": 1303
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 118,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_d19fc8eb739055dfb9ff29ad359198f1",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/no1msd/seance/f3b74415085d6ef8627ec3f3faba5152f06569b4/88cf718b6e2c2927/manifest.json",
+  "package_id": "pkg_d3dea3e07d8fadcb41bcd0ebfd70fdf5a9426c0582ac6326652b11bba44922cb",
+  "repo": "no1msd/seance",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "96074754f5ca639110a3d54da99186d9ee1fc4856f5f4d0fd7bc23782848c744",
+  "snapshot_id": "88cf718b6e2c2927",
+  "sources": [
+    {
+      "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+      "git_sha": "17759e89c97b808b1d378996919cffd823c159c1",
+      "lines": 143,
+      "path": "CONTRIBUTING.md",
+      "repository": "no1msd/seance",
+      "sha256": "7468c374936727cda918493ba3f9a6f3f0b7fa056930ad3aa71efaeb9eec9f0d",
+      "source_id": "src_c824506cb3725ff68812c3dfa5e1b8ed",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/CONTRIBUTING.md"
+    },
+    {
+      "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+      "git_sha": "94c659a66d3c242016a194de56034c3a15c46c61",
+      "lines": 165,
+      "path": "README.md",
+      "repository": "no1msd/seance",
+      "sha256": "f33c57bbd2edee11a0d10001db428221c39878c0ee2cd09f06ab6621de6a1900",
+      "source_id": "src_70dc1db2c3785338b20263c990e638bc",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/README.md"
+    },
+    {
+      "commit": "f3b74415085d6ef8627ec3f3faba5152f06569b4",
+      "git_sha": "74e874d08baa1b68dce8e3ac39bd24cebf7a4524",
+      "lines": 27,
+      "path": "SECURITY.md",
+      "repository": "no1msd/seance",
+      "sha256": "dc18774978e6fe3316c862d9c4d95d8ae198f1ace31a106d35ddca70c08c1aac",
+      "source_id": "src_3fdeda5ae7f852f9bab7f1243d72c67f",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/no1msd/seance/blob/f3b74415085d6ef8627ec3f3faba5152f06569b4/SECURITY.md"
+    }
+  ],
+  "summary": "Séance is a GTK4/Linux terminal multiplexer that auto-tracks AI coding agent sessions and exposes a socket-based control CLI; the packet is README/SECURITY/CONTRIBUTING documentation only, with no runtime source code shown.",
+  "superseded_claim_ids": []
+}

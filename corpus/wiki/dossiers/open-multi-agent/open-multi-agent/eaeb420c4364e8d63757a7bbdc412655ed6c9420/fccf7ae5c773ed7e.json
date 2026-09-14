@@ -1,0 +1,742 @@
+{
+  "applied_operation_id": "op_860178ba4c194ce28586ca49914e10c8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffe8d231e17839decbf44cf7b6d6a4d2a535b68f0dd2b8ead70800d65e63db5a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_752554f46bbfef0c27bc2f6259c3145ca4e4774a47531cbbc3c545ca2782117f"
+      ],
+      "text": "The core package exposes three run modes: runAgent() for a single agent, runTasks() for an explicit pipeline, and runTeam() which plans from a goal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0983bbf29b4045e2d726bd156f2c8ae292df3a38e4410c80b6029ca6347f58f7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 69,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L63-L69"
+        },
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 61,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L60-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_050a0f1356d2f8c1c539c010a6d22550c12313012c96543fefdfea4189e52424",
+        "slc_9aea4e27e380985041a6647916d771d2e523c280a77d635ae4c4753babcd9aab"
+      ],
+      "text": "An OpenMultiAgent instance is constructed with a default provider/model and an onToolCall callback that can return 'suspend' for consequential tool calls or 'allow' otherwise."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f8c09e23b31b6a7fb4aff90a02b34b539773ad5c9b8b2bd71b8c6301498ee75",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 150,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L150-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e5ea24f2c70526d04d536c4234f3197abd7ea6fef6d267709eae10896601641a"
+      ],
+      "text": "runTeam() uses one model call to turn a goal into a task graph with assignees and dependencies, a deterministic scheduler executes it, and a second call writes the final answer; the coordinator is not consulted mid-run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ee9ffd4d6d73ead1fc400701983c223c8b139a5b2358d68a627471c3ff5829d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L91-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38820bcfabd8b8e95ce3aca803d1ab6c55b9ce921dcd8df0111cc388181b6937"
+      ],
+      "text": "Consequential actions pause for durable approvals: a suspend request is stored beside the checkpoint, bound to a SHA-256 hash of what the reviewer saw, decisions are atomic and first-wins, and tampered requests fail closed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d4577bb8e47f59b43b6c9e29ce955b3c5f2dcd3ada059091118a36dc69dae12",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4088d2979ed3c9f8c015c9c7f8609a5d2f588783eb55346fcfe8a872cd9175cf"
+      ],
+      "text": "The runtime records every model block, tool call, and context rewrite in a journal; verifyRun() checks offline that each block reproduces byte for byte, reporting evicted windows as inconclusive rather than failures."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5a194948e06165e8044e794a22cdcac4add585894c6760c4df609e0587f23b2a",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f52574ee8d54763780b8b359132618ec821f397ed22535a1df021e673f28c9a"
+      ],
+      "text": "With governanceIntent 'required', runs are judged on an execution receipt of roles, ordering, dependency edges, and independent review; the evaluator never sees agent output text, and a successful run can still report 'unsatisfied'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af0fe9f9166a6e7b9c2f52fa9a919e46a1c8857e668601461f3ca209cc1af38c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 44,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L41-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b45198ba6997d232b3dc7f8437035247e9578de178041ea04e224e68fbe16c7a"
+      ],
+      "text": "The project requires Node.js 20 or newer; Node 20 is upstream-EOL, kept only as a migration window, and will be removed in the next major release no earlier than 2026-10-31."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6db8eaf021a8a578de9f07c29be4e9c4f173f63707086d01ea18bfd1aa0af2f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L109-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_abed82579077248c3af159ab3caed2bd5e6c80d5223b3ad8b5f13e3eac6de40e"
+      ],
+      "text": "Built-in provider adapters cover Anthropic, OpenAI, Azure OpenAI, Bedrock, Gemini, Grok, Copilot, several Chinese providers, plus Ollama, vLLM, and llama-server via baseURL and any OpenAI-compatible or Vercel AI SDK endpoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85dc8b1c6fe8d4e2b05fbfb52921da3814ef25bba8c39ff4dedcc4101760d8b1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "412dc237f2f803ee3312cbedc459888f033565c2",
+          "line_end": 18,
+          "line_start": 9,
+          "path": "docs/adaptive-recovery.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/adaptive-recovery.md#L9-L18"
+        },
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "412dc237f2f803ee3312cbedc459888f033565c2",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "docs/adaptive-recovery.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/adaptive-recovery.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_efb04ebce4bc2166e34aca905a975907184f235ab78e8095ed3a29e3555e13bb",
+        "slc_fb90112f22868fe47a51e46759f81da9ffd93fef735df5efca1c1fd58cba289e"
+      ],
+      "text": "Adaptive recovery is opt-in via recovery.mode 'repairable': a Replanner or onTaskOutcome callback proposes a PlanPatch, OMA validates it, an optional onPlanPatch gate approves it, and the patch is applied atomically before the triggering task completes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_21575bcd943e015a5692e0b3247855243cf04e1a986d2bda6ed4ea7103614b72",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "412dc237f2f803ee3312cbedc459888f033565c2",
+          "line_end": 90,
+          "line_start": 84,
+          "path": "docs/adaptive-recovery.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/adaptive-recovery.md#L84-L90"
+        },
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "412dc237f2f803ee3312cbedc459888f033565c2",
+          "line_end": 95,
+          "line_start": 92,
+          "path": "docs/adaptive-recovery.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/adaptive-recovery.md#L92-L95"
+        },
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "412dc237f2f803ee3312cbedc459888f033565c2",
+          "line_end": 153,
+          "line_start": 145,
+          "path": "docs/adaptive-recovery.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/adaptive-recovery.md#L145-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_82e119225ef5f47dfc5c35025356523516f0eef1ea2f2159f02463235a5e8fae",
+        "slc_c2061ca00a2400bd2c94a867f7343de007e757abe57dcab8bce32675fdc7eda7",
+        "slc_d2784b0282216a312f88143972f425bb372a23b664b5d97e8b9a4a08a82315ac"
+      ],
+      "text": "Patch operations are addTasks, retargetPending, and supersedePending; started or terminal tasks cannot be retargeted or superseded, and repairs are forward-only with no undo of external side effects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a6d50386ec2f86137b83748c2588be1b36378f8848e55907c76fa8ec401a4ba",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 111,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L109-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_abed82579077248c3af159ab3caed2bd5e6c80d5223b3ad8b5f13e3eac6de40e"
+      ],
+      "text": "Egress policy supports 'offline' or 'allowlist' modes checked before a built-in adapter connects; child policies can only tighten parents, unenforceable transports fail closed, and process/ACP backends sit outside the policy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e9f03b5b2fbd135e331d6f0c3345c39ab4ec6124de05e87ad26caab4eed37c09",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "79006b28e109a7fc734e172f4ffca5fe0bcfad1c",
+          "line_end": 18,
+          "line_start": 12,
+          "path": "docs/budgets-and-limits.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/budgets-and-limits.md#L12-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c490a9048e9c9563502536c57f1bf023abf841242d33717c973265d1b667ec8a"
+      ],
+      "text": "Budgets are checked only at turn and task boundaries, so a run can overshoot its ceiling by up to one model turn; exhausting a budget is reported via a budget_exceeded event and result fields rather than thrown."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_138096f7ff345494150fc199d68913fe2f5b3035c23c5be92471c5b4854c1609",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "79006b28e109a7fc734e172f4ffca5fe0bcfad1c",
+          "line_end": 46,
+          "line_start": 40,
+          "path": "docs/budgets-and-limits.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/budgets-and-limits.md#L40-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e94ae25144d12ec74ff434afc7ee739552e40b7b82d0b1f8e9598e2519b2a0d"
+      ],
+      "text": "When maxTurns is reached the run stops before the next model call and is still reported successful with no distinguishing flag; the docs suggest comparing toolCalls or message counts, or setting a lower maxTurns and treating a long run as an alert."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22d61fd874fb6916074dfc80070a3ba9bba39877dc3123c94ccef49116297ee9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+          "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+          "line_end": 204,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "open-multi-agent/open-multi-agent",
+          "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md#L204-L204"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03d7024f94d20a90df230927ce5c3bda2546883fe11425c5dfe5fe0fcce30040"
+      ],
+      "text": "Repository development practice: issues and pull requests are welcome, with CONTRIBUTING.md covering workspace boundaries, validation, and submission guidance."
+    }
+  ],
+  "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 216,
+        "path": "README.md",
+        "size": 15294
+      },
+      {
+        "lines": 73,
+        "path": "CONTRIBUTORS.md",
+        "size": 5000
+      },
+      {
+        "lines": 213,
+        "path": "README_zh.md",
+        "size": 15258
+      },
+      {
+        "lines": 153,
+        "path": "docs/adaptive-recovery.md",
+        "size": 6170
+      },
+      {
+        "lines": 329,
+        "path": "docs/budgets-and-limits.md",
+        "size": 17486
+      },
+      {
+        "lines": 365,
+        "path": "docs/checkpoint.md",
+        "size": 22135
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/cli.md",
+        "reason": "file-budget",
+        "size": 17913
+      },
+      {
+        "path": "docs/consensus.md",
+        "reason": "file-budget",
+        "size": 8095
+      },
+      {
+        "path": "docs/context-management.md",
+        "reason": "file-budget",
+        "size": 8970
+      },
+      {
+        "path": "docs/coordinator.md",
+        "reason": "file-budget",
+        "size": 16422
+      },
+      {
+        "path": "docs/durable-approvals.md",
+        "reason": "file-budget",
+        "size": 12654
+      },
+      {
+        "path": "docs/egress-policy.md",
+        "reason": "file-budget",
+        "size": 7222
+      },
+      {
+        "path": "docs/errors.md",
+        "reason": "file-budget",
+        "size": 23264
+      },
+      {
+        "path": "docs/evaluation-ci.md",
+        "reason": "file-budget",
+        "size": 5458
+      },
+      {
+        "path": "docs/evaluation-routing.md",
+        "reason": "file-budget",
+        "size": 7444
+      },
+      {
+        "path": "docs/evaluation.md",
+        "reason": "file-budget",
+        "size": 32254
+      },
+      {
+        "path": "docs/execution-routing.md",
+        "reason": "file-budget",
+        "size": 11341
+      },
+      {
+        "path": "docs/external-agents.md",
+        "reason": "file-budget",
+        "size": 16343
+      },
+      {
+        "path": "docs/featured-partner.md",
+        "reason": "file-budget",
+        "size": 1283
+      },
+      {
+        "path": "docs/glossary.md",
+        "reason": "file-budget",
+        "size": 11556
+      },
+      {
+        "path": "docs/hooks-and-callbacks.md",
+        "reason": "file-budget",
+        "size": 21681
+      },
+      {
+        "path": "docs/mcp.md",
+        "reason": "file-budget",
+        "size": 10408
+      },
+      {
+        "path": "docs/model-routing.md",
+        "reason": "file-budget",
+        "size": 5735
+      },
+      {
+        "path": "docs/observability-migration.md",
+        "reason": "file-budget",
+        "size": 7508
+      },
+      {
+        "path": "docs/observability.md",
+        "reason": "file-budget",
+        "size": 40715
+      },
+      {
+        "path": "docs/plan-replay.md",
+        "reason": "file-budget",
+        "size": 5340
+      },
+      {
+        "path": "docs/production-checklist.md",
+        "reason": "file-budget",
+        "size": 14306
+      },
+      {
+        "path": "docs/providers-atlascloud.md",
+        "reason": "file-budget",
+        "size": 4200
+      },
+      {
+        "path": "docs/providers-atlascloud_zh.md",
+        "reason": "file-budget",
+        "size": 3991
+      },
+      {
+        "path": "docs/providers.md",
+        "reason": "file-budget",
+        "size": 21875
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 5882
+      },
+      {
+        "path": "docs/run-journal.md",
+        "reason": "file-budget",
+        "size": 23049
+      },
+      {
+        "path": "docs/run-store.md",
+        "reason": "file-budget",
+        "size": 11517
+      },
+      {
+        "path": "docs/run-viewer.md",
+        "reason": "file-budget",
+        "size": 6070
+      },
+      {
+        "path": "docs/sandbox-and-shell.md",
+        "reason": "file-budget",
+        "size": 10222
+      },
+      {
+        "path": "docs/self-hosting.md",
+        "reason": "file-budget",
+        "size": 11063
+      },
+      {
+        "path": "docs/shared-memory.md",
+        "reason": "file-budget",
+        "size": 10316
+      },
+      {
+        "path": "docs/streaming.md",
+        "reason": "file-budget",
+        "size": 11935
+      },
+      {
+        "path": "docs/structured-input.md",
+        "reason": "file-budget",
+        "size": 6883
+      },
+      {
+        "path": "docs/task-scheduling.md",
+        "reason": "file-budget",
+        "size": 10266
+      },
+      {
+        "path": "docs/tool-configuration.md",
+        "reason": "file-budget",
+        "size": 42107
+      },
+      {
+        "path": "docs/internal/observability-performance.md",
+        "reason": "file-budget",
+        "size": 7161
+      },
+      {
+        "path": "docs/internal/observability-release-readiness.md",
+        "reason": "file-budget",
+        "size": 16167
+      },
+      {
+        "path": "docs/internal/README.md",
+        "reason": "file-budget",
+        "size": 603
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 11457
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 66258
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 177
+      }
+    ],
+    "omitted_count": 41,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 650,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 47,
+      "complete": false,
+      "omitted": 41,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_05d382548abc54c4afc201125c0dad7b",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/open-multi-agent/open-multi-agent/eaeb420c4364e8d63757a7bbdc412655ed6c9420/fccf7ae5c773ed7e/manifest.json",
+  "package_id": "pkg_4294e8cd4922031740943d90c28be49148389be3bf67c27e7dbf93f881e8b554",
+  "repo": "open-multi-agent/open-multi-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5e2b6e3647352a12129cd2c4b226af6f4d930650d1a11e85827fb5cbc668c544",
+  "snapshot_id": "fccf7ae5c773ed7e",
+  "sources": [
+    {
+      "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+      "git_sha": "8be0b6ddac70ad548ec81c2ee317c9331386893c",
+      "lines": 73,
+      "path": "CONTRIBUTORS.md",
+      "repository": "open-multi-agent/open-multi-agent",
+      "sha256": "1cf4fb04e7d272964848d19256db36ba1ef2f372db9fea30a0b786415d1983d0",
+      "source_id": "src_ee10386f86f351679f24ff2e86cff3d8",
+      "stored": "contributors.md-c0f86987c556.md",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/CONTRIBUTORS.md"
+    },
+    {
+      "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+      "git_sha": "ea6eb1261c34cf7e539f7265b3d514430eeb7c73",
+      "lines": 216,
+      "path": "README.md",
+      "repository": "open-multi-agent/open-multi-agent",
+      "sha256": "62a4cc8c8fafb9f4bbdb615b66a54a025aba873b43f557e1e17f24cb5dedd8a7",
+      "source_id": "src_980c78f9cbf456a4be1b45d98936912c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README.md"
+    },
+    {
+      "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+      "git_sha": "325528e2fdf75cdb9d30425bd95b734138c08f0f",
+      "lines": 213,
+      "path": "README_zh.md",
+      "repository": "open-multi-agent/open-multi-agent",
+      "sha256": "b4459e918511bc805c904336482ed7c119b5edcd7712c5e760d367a15a0985a9",
+      "source_id": "src_8d10a302d5085aa090f29b7cc54afba7",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/README_zh.md"
+    },
+    {
+      "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+      "git_sha": "412dc237f2f803ee3312cbedc459888f033565c2",
+      "lines": 153,
+      "path": "docs/adaptive-recovery.md",
+      "repository": "open-multi-agent/open-multi-agent",
+      "sha256": "423dacc8a7ac66a96b8b0ec1d39d39bd13cece8aeb1f7ec5195984e112595997",
+      "source_id": "src_c852aafddd21500bbbd91f2264cafb06",
+      "stored": "adaptive-recovery.md-c839d430cb40.md",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/adaptive-recovery.md"
+    },
+    {
+      "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+      "git_sha": "79006b28e109a7fc734e172f4ffca5fe0bcfad1c",
+      "lines": 329,
+      "path": "docs/budgets-and-limits.md",
+      "repository": "open-multi-agent/open-multi-agent",
+      "sha256": "4d3b3c20022a450f2e643e0fd77f5a0aee62efa5123c148745d8c149c3c355da",
+      "source_id": "src_c8ceca53380f583fad5fb8741540c0d8",
+      "stored": "budgets-and-limits.md-136dc18da419.md",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/budgets-and-limits.md"
+    },
+    {
+      "commit": "eaeb420c4364e8d63757a7bbdc412655ed6c9420",
+      "git_sha": "92f68929c2579c8512d35c967450a9a204383d24",
+      "lines": 365,
+      "path": "docs/checkpoint.md",
+      "repository": "open-multi-agent/open-multi-agent",
+      "sha256": "0704b86847b4dd916201f95a4cefb0d5fabb6614085fba478e08af0f54ca355c",
+      "source_id": "src_a89d936089615a7aa2106f36e01b6fdd",
+      "stored": "checkpoint.md-9cebfd6fc9d7.md",
+      "url": "https://github.com/open-multi-agent/open-multi-agent/blob/eaeb420c4364e8d63757a7bbdc412655ed6c9420/docs/checkpoint.md"
+    }
+  ],
+  "summary": "Selected evidence records: The core package exposes three run modes: runAgent() for a single agent, runTasks() for an explicit pipeline, and runTeam() which plans from a goal. An OpenMultiAgent instance is constructed with a default provider/model and an onToolCall callback that can return 'suspend' for consequential tool calls or 'allow' otherwise.",
+  "superseded_claim_ids": []
+}

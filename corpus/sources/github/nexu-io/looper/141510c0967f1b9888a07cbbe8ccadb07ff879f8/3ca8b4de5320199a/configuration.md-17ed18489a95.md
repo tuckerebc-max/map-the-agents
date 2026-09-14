@@ -1,0 +1,1591 @@
+# Configuration guide
+
+This document explains Looper's canonical config taxonomy, default config location, supported file formats, project override rules, and the legacy-to-canonical migration story.
+
+## Install layout notes
+
+For the default supported macOS install flow:
+
+- `looper` is installed from a GitHub Release Go binary
+- `looper daemon install` installs the managed daemon binary to `~/.looper/bin/looperd`
+- `looper daemon start` writes its pid file to `~/.looper/looperd.pid`
+- `looper daemon start` writes lifecycle diagnostics to `~/.looper/looperd.state.json`
+- when webhook mode is enabled, `looperd` holds `~/.looper/looperd.lock` (beside the SQLite DB path) to prevent two local daemons from racing on the same webhook forwarders
+
+The daemon lookup order used by the CLI is `~/.looper/bin/looperd`, then `$PATH`.
+
+Keep the runtime directory (`~/.looper` by default, or the directory containing `storage.dbPath`) on a local filesystem. The webhook forwarder lock uses OS file locking and is not designed for NFS-style shared filesystems. Tunnel-mode webhook secrets live under the same runtime directory in `secrets/` and must be mode `0600`.
+
+## Network mode summary
+
+Looper has two project-level network modes:
+
+- `projects[].network.mode = "off"` — local-only operation. `looper:target:*` labels are ignored and the classic single-Node assignee/review-request behavior stays unchanged.
+- `projects[].network.mode = "routed"` — multi-Node operation coordinated through `loopernet`.
+
+Authority stays split on purpose:
+
+- GitHub work intent stays on GitHub: `looper:worker-ready` for Worker and GitHub review requests for Reviewer.
+- exactly one `looper:target:<node_name>` label is the exact-Node authority in Routed mode.
+- the `loopernet` lease is a mutation fence for Coordinator only; it does not become the source of truth for work intent.
+
+Operational notes:
+
+- `loopernet` centralizes webhook ingress and Node wakeups, but it must not mutate GitHub on its own.
+- Coordinator writes coarse GitHub authority first, then writes the exact target label last.
+- polling remains enabled as fallback and drift recovery when webhook delivery or SSE wakeups are missed.
+- if you use `looper network join` without `--no-enroll-projects`, Looper rejects enrollment when Planner or Fixer auto-discovery is still enabled for those projects; disable those settings first or opt projects into Routed mode manually.
+
+The formal contract is documented in ADRs [0007](adr/0007-coordinator-admission-assignment-authority.md) through [0011](adr/0011-coordinator-control-plane-for-routed-projects-v1.md).
+
+For runtime deployment details — container image, required environment variables, persistence, and the current single-instance recommendation — see [loopernet deployment](loopernet-deployment.md).
+
+## Webhook delivery modes
+
+`webhook.enabled=true` supports two delivery modes:
+
+- `gh-forward` (default): Looper starts `gh webhook forward` against each configured repo and receives deliveries on the daemon API route `/webhook/forward`.
+- `tunnel`: Looper creates an ordinary GitHub repository webhook per repo and expects the user to run a tunnel to `127.0.0.1:<webhook.listenPort>`.
+
+Tunnel-mode example:
+
+```toml
+[webhook]
+enabled = true
+mode = "tunnel"
+listenPort = 8765
+publicBaseUrl = "https://looper.example.com"
+fallbackPollIntervalSeconds = 300
+
+[[projects]]
+id = "looper"
+name = "looper"
+repoPath = "/Users/me/src/looper"
+
+[[projects]]
+id = "private"
+name = "private"
+repoPath = "/Users/me/src/private"
+[projects.webhook]
+mode = "gh-forward"
+```
+
+Rules:
+
+- `webhook.mode` is the global default. A project may override with `projects[].webhook.mode`.
+- `tunnel` requires `webhook.listenPort` between `1024` and `65535` and an HTTPS `webhook.publicBaseUrl`.
+- The tunnel URL for repo `owner/repo` is `{publicBaseUrl}/webhook/owner/repo`.
+- Looper binds only `127.0.0.1:<listenPort>`; it does not run or supervise `cloudflared`, `ngrok`, Tailscale Funnel, or any reverse proxy.
+- Looper stores the remote GitHub hook id in SQLite and the HMAC secret in `secrets/webhook_<owner>_<repo>.key` with mode `0600`.
+- Removing a project or switching it away from `tunnel` marks the local hook record orphaned; it does not delete the GitHub hook automatically.
+
+## How config loading works
+
+`looperd` loads configuration in this order:
+
+1. built-in defaults
+2. config file
+3. environment variables
+4. CLI flags
+
+Later layers override earlier ones. Objects are merged deeply, arrays are replaced as a whole, and omitted fields keep the previous-layer value.
+
+### Dynamic reload
+
+`looperd` watches the selected config file and publishes a candidate atomically only when every changed effective field is hot-safe. A claim made after publication uses the new snapshot; an already active run keeps the snapshot it started with. Invalid candidates and candidates containing restart-bound changes leave the last-known-good snapshot active and expose diagnostics at `/dashboard/config`. Mixed candidates are rejected as a whole rather than partially applied.
+
+The hot-safe surface is an explicit allowlist (see [ADR-0014](adr/0014-config-file-is-global-runtime-policy-authority.md) for field classification):
+
+- `agent.vendor` (including adding the first vendor after daemon startup), `agent.model`, individual `agent.env` entries, and the canonical idle/max-runtime fields under `agent.timeouts.*`
+- named `agent.profiles.<id>` entries and their `vendor` / `model` leaves (whole-map `agent.profiles` is not a dashboard path; profile ids match `[A-Za-z0-9_-]+`)
+- coding-role agent bindings: `roles.{planner,worker,reviewer,fixer}.agent.{profile,vendor,model}`
+- named hosting `identities.<name>` definitions and `roles.{planner,reviewer,worker,fixer,coordinator}.identity`; active runs retain their captured hosting definition
+- `scheduler.maxConcurrentRuns` and `scheduler.slowLaneWarnThresholdMs`
+- `notifications.inApp` and the current `notifications.osascript.*` fields; notification webhooks and Feishu notification transport are restart-bound
+- the current `disclosure.*` fields
+- `defaults.allowAutoCommit`, `defaults.allowAutoPush`, `defaults.allowRiskyFixes`, `defaults.openPrStrategy`, and `defaults.addSnapshotMode`; `defaults.baseBranch` is restart-bound because configured project records materialize it
+- `instructions.enabled` only
+- the current Planner discovery/trigger/instruction fields except `roles.planner.triggers.planeAssigneeId`; all current Worker and Fixer discovery/trigger/instruction fields; Reviewer discovery, most behavior, and instructions; and Coordinator polling, triage, dispatch, and merge-watch policy except `mergeWatch.transientRetries`
+- `tools.looperPath` and `tools.osascriptPath`
+
+Profile and role agent vendor/model fields are hot-safe curated identity fields: a claim made after publication resolves against the new config; an already active run keeps the frozen agent snapshot it started with (resume/retry lineages copy that predecessor snapshot rather than re-resolving live config).
+
+`agent.vendor` can switch from one configured vendor to another when `agent.params` is empty and no explicit model is being silently carried across vendors. If `agent.model` is set, change or unset it in the same candidate; an unchanged explicit model blocks that vendor-to-vendor switch. Clearing a configured vendor uses the same guard, so a retained profile cannot be laundered through an intermediate `null`. The same leave/switch guards apply to each coding role's *resolved* vendor after global → profile → role overlay. Configuring the first vendor may use an already prepared model/params profile. Continuations of failed or interrupted runs copy the predecessor's durable `agent_snapshot_json` (sticky identity across the retry lineage) while retaining checkpoint, worktree, HITL answer, and queued human instructions. Only legacy predecessors with a null snapshot adopt the runner's current resolved identity. Looper never sends an old vendor's native session ID to a different CLI.
+
+Notably, `agent.nativeResume`, `agent.params`, `roles.planner.triggers.planeAssigneeId`, `roles.coordinator.enabled`, `instructions.maxBytes`, all `hitl.*`, all `notifications.webhook.*`, `roles.reviewer.autoMerge.*`, `defaults.loop.quietPeriodSeconds`, `roles.reviewer.behavior.loop.quietPeriodSeconds`, `roles.fixer.behavior.loop.quietPeriodSeconds`, `roles.reviewer.behavior.loop.minPublishIntervalSeconds`, `roles.reviewer.behavior.retry.maxDelayMs`, `roles.coordinator.mergeWatch.transientRetries`, and `roles.coordinator.dependencies.*` require restart. The Planner Plane-assignee field is file-only; the supported Worker `roles.worker.triggers.planeAssigneeId` field remains hot-safe. `agent.params` stay global, file-only, and restart-bound; the dashboard does not edit params. The scheduler retry budget/base delay and quiet-period / Reviewer timing fields are durable queue-scheduling inputs (`AvailableAt` / `NextRunAt`); Coordinator transient retries are persisted as a remaining budget, so they are also restart-bound. Listener, storage, daemon, logging, webhook/network topology, providers/projects, scheduler polling/cache, and `tools.gitPath`/`tools.ghPath` also require restart. New fields are restart-bound until explicitly classified.
+
+Deprecated file-layer aliases for `agent.timeouts.{planner,worker,reviewer,fixer}Seconds`, `defaults.allowAutoApprove`, and `defaults.fixAllPullRequests` are normalized into their canonical hot-safe fields so existing files can still reload without a restart. They remain file-only compatibility syntax: the dashboard exposes and writes only canonical paths, and a canonical dashboard edit removes the corresponding alias leaf so a later unset cannot resurrect the old value.
+
+The dashboard is a curated field-level editor, not a raw file editor. Environment- and CLI-owned fields are read-only. `agent.env` values are write-only (only key names are returned), while `server.localToken`, `daemon.environment`, and `agent.params` remain file-only. Projects remain under the Projects API and SQLite authority. When token authentication is not configured, `PATCH /api/v1/config` accepts only direct requests whose peer and Host authority are loopback and rejects proxy-forwarding headers; in `local-token` mode it requires the normal token authentication.
+
+Every dashboard read includes the revision of the exact file generation that produced its published values, and every patch must submit that revision. The revision check and a final identity/mode/byte check catch changes present before that final check, including a newer generation not yet accepted by the reload loop. The writer then uses a crash-safe atomic rename. Portable filesystems do not offer a conditional compare-and-rename, so an external editor racing in the tiny interval between the final check and rename can still be replaced; avoid simultaneous manual and dashboard writes. A successful patch preserves the selected TOML/YAML/JSON format, unknown top-level extension sections and their native scalar values, and ordinary permission bits, but serialization can canonicalize comments, quoting, key/table order, and other lexical formatting; ACLs and extended filesystem metadata are not guaranteed to survive atomic replacement. Dashboard patching refuses a symlinked config path; edit the symlink target directly instead.
+
+## Supported formats and default path
+
+Looper accepts config files in these formats:
+
+- `.toml`
+- `.yaml`
+- `.yml`
+- `.json`
+
+Canonical default path:
+
+- `~/.looper/config.toml`
+
+Config source selection precedence is:
+
+1. `--config`
+2. `LOOPER_CONFIG`
+3. default-path discovery
+
+Default-path discovery checks, in order:
+
+1. `~/.looper/config.toml`
+2. `~/.looper/config.yaml`
+3. `~/.looper/config.yml`
+4. `~/.looper/config.json`
+
+Behavior:
+
+- if exactly one supported default config file exists, Looper loads it
+- if both `~/.looper/config.toml` and legacy `~/.looper/config.json` exist, Looper prefers `config.toml`
+- any other multiple-default-file combination fails clearly instead of guessing
+- if none exist, Looper continues with built-in defaults and treats `~/.looper/config.toml` as the canonical path for newly generated config
+
+To migrate the legacy default JSON config explicitly, run:
+
+```bash
+looper config migrate
+```
+
+Useful migration flags:
+
+- `--from <path>` to read a non-default source config file
+- `--to <path>` to write somewhere other than the default canonical TOML path
+- `--dry-run` to preview the canonical output without touching user files
+- `--force` to overwrite an existing destination after creating a backup
+
+Custom config path examples:
+
+- `LOOPER_CONFIG=/absolute/or/relative/path/to/config.toml`
+- `looperd --config /absolute/or/relative/path/to/config.toml`
+
+Relative config paths are resolved from the current working directory used to start `looperd`.
+
+## Canonical taxonomy
+
+Looper's frozen canonical top-level config roots are:
+
+| Root | Purpose |
+| --- | --- |
+| `server` | network-facing API/server configuration |
+| `daemon` | daemon lifecycle, runtime paths, and local process behavior |
+| `storage` | sqlite/database/backups/history retention and storage-specific settings |
+| `scheduler` | loop scheduling, concurrency, polling, and timing policy that is not role-specific |
+| `agent` | model/provider/executor defaults that apply across roles unless overridden more locally |
+| `logging` | logs, verbosity, sinks, and diagnostic controls |
+| `notifications` | user notifications such as osascript or future notifier integrations |
+| `disclosure` | disclosure/stamping policy for outward-facing automation output |
+| `tools` | external tool paths and tool-specific execution settings such as `git`, `gh`, and `osascript` |
+| `package` | packaging, upgrade, and distribution policy |
+| `defaults` | user-facing default policy that does not belong to a narrower domain |
+| `instructions` | global instruction-system settings that are not role-specific instruction content |
+| `roles` | role-specific config grouped by role name, for example `roles.<role>` |
+| `providers` | forge provider definitions such as GitHub or Forgejo hosts and credentials |
+| `projects` | per-project metadata and supported project-scoped overrides |
+
+### Project authority and import
+
+`[[projects]]` is a declarative startup import, not a second runtime project store. During daemon startup Looper validates and transactionally imports configured projects into SQLite, then builds the runtime Project Catalog exclusively from active database records. Scheduler, Webhook, Network, and Roles all capture that same Catalog.
+
+- Removing a config-managed project from `[[projects]]` archives its SQLite record on the next startup.
+- Config import never removes API-managed projects.
+- Reusing an API-managed project ID in `[[projects]]` fails startup instead of transferring ownership implicitly.
+- CLI/API add and remove operations publish one atomic Catalog replacement after the database commit; already-started work keeps its captured snapshot, while new work observes the new Catalog.
+- A project referencing a missing Provider fails validation; it never falls back to GitHub.
+
+See [ADR-0012](adr/0012-sqlite-project-authority.md) for the Authority and lifecycle decision.
+
+Legacy top-level `reviewer.*` input is compatibility-only. The canonical reviewer behavior home is `roles.reviewer.behavior.*`.
+
+Schema migration is independent from config-file format migration: precedence stays `defaults → config file → environment variables → CLI flags` regardless of whether a file still uses legacy reviewer paths or legacy JSON defaults.
+
+`looper config migrate` is the only product-supported file-writing migration path. Normal CLI and daemon startup never rewrite config files implicitly.
+
+## Minimal setup
+
+In the simplest setup, you can rely on defaults and only create a config file when you need to customize behavior.
+
+`agent.vendor` does not have a built-in default. It is the inheritance base and the zero-diff default for every coding role, but it is not mandatory when a role resolves vendor from `agent.profiles` or `roles.<role>.agent` alone. Set a global vendor when you want one shared identity, or when coordinator triage LLM should run (triage uses the global agent only).
+
+Example minimal `~/.looper/config.toml`:
+
+```toml
+[agent]
+vendor = "opencode"
+
+[[projects]]
+id = "looper"
+name = "Looper"
+repoPath = "/absolute/path/to/repo"
+```
+
+Existing global-only configs remain zero-diff: a single `agent.vendor` / `agent.model` still applies to every coding role (planner, worker, reviewer, fixer) until you add profiles or per-role bindings.
+
+## Multi-role agent vendor and model
+
+Coding roles can share one global agent or override vendor/model per role. Overrides are identity-only (vendor + model). Shared executor settings such as `agent.params`, `agent.env`, timeouts, and `agent.nativeResume` stay global.
+
+### Named profiles (`agent.profiles`)
+
+Define reusable vendor/model pairs under `agent.profiles.<id>`. Each profile may set `vendor`, `model`, or both (at least one is required). Profile ids are non-empty, trimmed, and match `[A-Za-z0-9_-]+`.
+
+Profiles do not carry params, env, or timeouts.
+
+### Per-role bindings (`roles.<role>.agent`)
+
+Optional on the four coding roles only: `planner`, `worker`, `reviewer`, and `fixer`.
+
+| Field | Purpose |
+| --- | --- |
+| `profile` | Name of an entry in `agent.profiles` |
+| `vendor` | Inline vendor override |
+| `model` | Inline model override |
+
+A role may use a profile ref, inline vendor/model, or both (inline wins over the selected profile for the same field).
+
+Project-level `projects[].roles.*.agent` bindings are **not supported**. Agent identity is global-only; project role partials that set agent fields fail validation.
+
+### Resolve order
+
+For each coding role, Looper overlays identity in this order:
+
+1. **Global** `agent.vendor` / `agent.model`
+2. **Role profile** — if `roles.<role>.agent.profile` is set, overlay that profile's vendor/model
+3. **Role inline** — overlay `roles.<role>.agent.vendor` / `roles.<role>.agent.model` when present
+
+A role is runnable only when the overlay leaves a non-empty vendor. Missing global vendor is fine when a profile or role inline supplies one.
+
+### Model semantics
+
+| Config value | Meaning |
+| --- | --- |
+| field omitted / unset | inherit from the previous layer (or remain unset) |
+| non-empty string | explicit model for that layer |
+| empty string `""` | suppress inherited model → vendor default |
+
+After the full overlay, an empty-string model is kept as an explicit empty binding (not the same as unset): the vendor CLI uses its own default, and any global `agent.params` `--model`/`-m` flags are stripped so they cannot override the suppression.
+
+### Model suggestions
+
+Dashboard Config model fields offer searchable suggestions drawn from a built-in static list per vendor, optionally merged with a best-effort probe of the local vendor CLI. The same list is available via `GET /api/v1/agent/models?vendor=...`.
+
+The catalog is **advisory only** — not an allowlist. Arbitrary model IDs remain valid config values; save and claim never require membership in the catalog. See [ADR-0016](adr/0016-agent-model-catalog-is-advisory.md).
+
+Claude Code is static-only (no non-interactive list command). Other vendors may probe the same resolved local CLI binary used for spawn when available; probe failure falls back to the built-in list and does not block config load or save.
+
+Empty-string vs unset model semantics are unchanged (see [Model semantics](#model-semantics) above).
+
+### Coordinator triage
+
+Coordinator triage LLM uses the **global** agent only (`agent.vendor` / `agent.model`, plus global params/env/timeouts). It does not read `roles.coordinator.agent` or coding-role profile bindings. If global `agent.vendor` is unset, triage LLM is skipped; coding roles that resolve via profile or role bindings can still run.
+
+### Hot reload and frozen runs
+
+- Profile and role agent vendor/model/profile paths are hot-safe for **new claims** after a successful config publication.
+- In-flight runs keep the immutable config snapshot (and durable per-run agent snapshot) they started with; resume/retry copies the predecessor run's agent snapshot rather than re-resolving live config.
+- `agent.params` remain global, file-only, and restart-bound. The dashboard does not edit params.
+
+### Example: different reviewer vs worker models
+
+TOML:
+
+```toml
+[agent]
+vendor = "codex"
+model = "gpt-5"
+
+# Shared identity presets (vendor + model only).
+[agent.profiles.fast]
+vendor = "codex"
+model = "gpt-5-mini"
+
+[agent.profiles.strong]
+vendor = "claude-code"
+model = "claude-sonnet"
+
+# Worker keeps the global codex/gpt-5 binding (no roles.worker.agent block).
+
+[roles.reviewer.agent]
+profile = "strong"
+# Optional inline pin on top of the profile:
+# model = "claude-opus"
+
+[roles.fixer.agent]
+profile = "fast"
+
+# Suppress model so the vendor CLI default is used:
+# [roles.planner.agent]
+# model = ""
+```
+
+Equivalent JSON:
+
+```json
+{
+  "agent": {
+    "vendor": "codex",
+    "model": "gpt-5",
+    "profiles": {
+      "fast": { "vendor": "codex", "model": "gpt-5-mini" },
+      "strong": { "vendor": "claude-code", "model": "claude-sonnet" }
+    }
+  },
+  "roles": {
+    "reviewer": {
+      "agent": { "profile": "strong" }
+    },
+    "fixer": {
+      "agent": { "profile": "fast" }
+    }
+  }
+}
+```
+
+With that file, worker and planner resolve to global `codex` / `gpt-5`, reviewer to `claude-code` / `claude-sonnet` via `strong`, and fixer to `codex` / `gpt-5-mini` via `fast`.
+
+## Grok Build (xAI)
+
+Use `grok-build` as the `agent.vendor` identifier. Looper invokes the xAI Grok Build executable as `grok`:
+
+```toml
+[agent]
+vendor = "grok-build"
+```
+
+Authenticate the daemon safely with `grok login --device-auth`, or make `XAI_API_KEY` available in the daemon environment. Do not put API-key values in committed config files or examples.
+
+For fresh unattended runs, Looper supplies `--always-approve` and `--sandbox off` so Grok can update Git metadata outside a linked worktree. Configured agent arguments override these defaults; in particular, operators can select a stricter `--sandbox` when the repository layout permits it, `--permission-mode` may prompt or fail unattended runs, non-`plain` `--output-format` can prevent direct `__LOOPER_RESULT__=` completion-marker parsing, and configured `-p` or `--single` replaces Looper's generated task prompt.
+
+Grok Build support is fresh-run only. Daemon native resume and interactive takeover through `looper resume` are unsupported. A retry uses a fresh checkpoint prompt, and Looper never uses Grok Build's ambient `--continue`.
+
+## Pi
+
+Use `pi` as the `agent.vendor` identifier. Looper invokes the [Pi](https://pi.dev) coding agent executable as `pi`:
+
+```toml
+[agent]
+vendor = "pi"
+```
+
+Authenticate via Pi's own login/config (project-local `.pi` and vendor credentials). Prefer vendor authentication over storing secrets in Looper configuration.
+
+For fresh unattended runs, Looper supplies `-p` with the generated task prompt and `--approve` (trusts project-local `.pi` for the run). Configured `agent.params.args` override these defaults: if `-p`/`--print` is already present, Looper does not append its prompt (operator owns print/prompt); if any of `-a`/`--approve`/`-na`/`--no-approve` is present, Looper does not add `--approve`. There is no `--cwd` flag—Looper sets the process working directory to the worktree.
+
+Pi support is fresh-run only. Daemon native resume and interactive takeover through `looper resume` are unsupported. A retry uses a fresh checkpoint prompt.
+
+## Oh My Pi (omp)
+
+Use `omp` as the `agent.vendor` identifier (not `oh-my-pi`). Looper invokes the [Oh My Pi](https://omp.sh) executable as `omp`:
+
+```toml
+[agent]
+vendor = "omp"
+```
+
+Authenticate via omp's own login/config. Prefer vendor authentication over storing secrets in Looper configuration.
+
+For fresh unattended runs, Looper supplies `-p` with the generated task prompt, `--cwd <worktree>` when the workdir is non-empty, and `--auto-approve`. Configured arguments override defaults: if `-p`/`--print` is already present, Looper does not append its prompt; if `--cwd` is present, Looper does not add workdir; if `--auto-approve` or `--approval-mode` (including `--approval-mode=...`) is present, Looper does not add `--auto-approve`.
+
+Oh My Pi support is fresh-run only. Daemon native resume and interactive takeover through `looper resume` are unsupported. A retry uses a fresh checkpoint prompt.
+
+## Hosting bot identities
+
+Define reusable hosting accounts in `identities`, select a default with a project's
+`identity`, and override it with `roles.<role>.identity`. This policy applies to
+planner, reviewer, worker, fixer, and coordinator. Resolution is the effective
+role identity, then the project default, then existing authentication. Global
+role selections are inherited by projects; an explicit empty project role
+selection clears that global selection and inherits the project default.
+
+```toml
+[identities.github-worker]
+kind = "github-app"
+appId = 12345
+installationId = 67890
+privateKeyFile = "~/.looper/keys/worker.pem"
+
+[identities.github-reviewer]
+kind = "github-app"
+appId = 23456
+installationId = 78901
+privateKeyFile = "~/.looper/keys/reviewer.pem"
+
+[identities.github-worker.commit]
+name = "Team automation"
+email = "automation@example.com"
+
+[identities.forgejo-team]
+kind = "forgejo-token"
+baseUrl = "https://code.example.com"
+tokenEnv = "FORGEJO_TEAM_BOT_TOKEN"
+
+[[providers]]
+id = "team-forgejo"
+kind = "forgejo"
+baseUrl = "https://code.example.com"
+
+[[projects]]
+id = "github-project"
+name = "GitHub project"
+repoPath = "/repos/github-project"
+repo = "team/github-project"
+identity = "github-worker"
+
+[projects.roles.reviewer]
+identity = "github-reviewer"
+
+[[projects]]
+id = "forgejo-project"
+name = "Forgejo project"
+repoPath = "/repos/forgejo-project"
+provider = "team-forgejo"
+repo = "team/forgejo-project"
+identity = "forgejo-team"
+```
+
+Identity names use letters, digits, underscores, and hyphens. `github-app`
+requires positive App and installation IDs and a private-key file reference;
+its `baseUrl` defaults to `https://github.com`. For GitHub Enterprise, set the
+instance origin on both the identity and its provider, without `/api/v3`.
+`forgejo-token` requires the instance `baseUrl` and the name of the environment
+variable containing the dedicated account's token. Supply that variable to the
+daemon process. Identity `baseUrl` values must be HTTPS; HTTP instances are
+static configuration errors because bot Git transport cannot use them. Do not
+place tokens or private-key contents in configuration or `agent.env`. Legacy
+provider `tokenEnv` and explicit `teaLogin` authentication remain available to
+projects without a selected identity.
+
+Configuring hosting bot identities also requires a trusted `looper` CLI, including
+when starting the daemon with `go run ./cmd/looperd`. Build it with
+`go build -o dist/looper ./cmd/looper` and set `tools.looperPath` to that binary's
+absolute path, or install `looper` on `PATH`. Missing CLI configuration is rejected
+before daemon startup and on config reload.
+
+For instances using a private CA, supply `SSL_CERT_FILE` or `SSL_CERT_DIR` in the
+daemon environment with absolute paths to the public CA bundle or certificate
+directory. Trusted hosting subprocesses preserve those variables; network Git
+maps them to `GIT_SSL_CAINFO` and `GIT_SSL_CAPATH` while keeping TLS verification
+enabled. Client private keys and personal authentication settings are still
+excluded from these subprocesses.
+
+An identity must match the project's provider and instance, including a Forgejo
+deployment path prefix. Bot projects must specify `repo = "owner/name"`. Plane
+projects bind their hosting identity to the GitHub code repository; the Plane
+task-source credentials are separate. A Forgejo provider can omit legacy
+authentication when every bound project's coding roles select bot identities.
+If its projects exist only in SQLite, the file can omit legacy authentication
+when it defines a valid Forgejo bot for that instance. The materialized catalog
+must still cover every role with a bot selection; adding an uncovered project
+or clearing its final selection is rejected before changing SQLite.
+
+`commit.name` and `commit.email` independently override bot Git attribution.
+Omitted fields use the bot account's defaults. New commits use the executing
+identity as author and committer; amendments preserve the original author and
+use the executing identity as committer. Private-key paths beginning with `~/`
+expand to the daemon user's home directory; relative paths resolve against the
+daemon's configuration-loading working directory. Named definitions are replaced
+as complete entries across configuration layers, preventing old credential
+fields from being retained when an identity changes kind.
+
+Unknown references, incompatible targets, and malformed definitions are static
+configuration errors. Missing key files, unset token variables, revoked
+authorization, and token-refresh failures are authentication errors for the
+selected identity; they never select personal credentials as a fallback.
+
+Startup probes report affected identity, project and role in daemon logs while
+other identities continue running. Repository settings/import operations use
+the project's worker identity policy, reviewer auto-merge admission uses
+reviewer policy, PR snapshots use reviewer policy,
+coordinator dependency probes use coordinator policy, and HITL comments/polls
+use the originating loop's role policy.
+
+Definition changes and global role identity changes are hot policy for new
+runs. An active run retains its selected definition and repository, while its
+installation token may refresh. Project entries in the file retain the existing
+startup-import rules: changing `projects[].identity` or its role overrides takes
+effect through that import, not the global file watcher. API-managed projects
+can supply `identity` to `POST /api/v1/projects`; the reference is
+stored in SQLite and validated against live global definitions before catalog
+publication. Re-adding an API-managed project with an omitted identity keeps
+its selection; `identity: ""` clears the project default. Per-project role
+identity overrides are configured through file import. Config-managed projects
+remain managed by file import.
+
+### Agent operations and credentials
+
+In bot runs, the daemon performs Git fetch/push and PR publication over the
+configured repository's HTTPS URL. Existing remote configuration stays intact,
+including SSH origins. New local commits use the selected bot's attribution.
+Repository-local URL rewrites, HTTP credential overrides and custom remote
+helpers that could redirect bot authentication cause an explicit Git error.
+Credential-bearing Git/GitHub CLI commands have a four-minute ceiling (or a
+shorter caller deadline). App credentials refresh five minutes before expiry;
+the command deadline also respects the token's actual remaining lifetime.
+Bot GitHub CLI operations run from a private empty directory with an explicit
+repository target, so local repository helpers cannot inherit their token.
+Parent-repository discovery is disabled even when temporary files live inside
+a checkout.
+Agents use the supplied absolute `LOOPER_HOST_CLI` to read the repository:
+
+```bash
+"$LOOPER_HOST_CLI" host whoami
+"$LOOPER_HOST_CLI" host api pulls/42
+"$LOOPER_HOST_CLI" host api pulls/42 --diff
+"$LOOPER_HOST_CLI" host api 'pulls/42/reviews' --paginate
+"$LOOPER_HOST_CLI" host threads 42
+"$LOOPER_HOST_CLI" host git fetch refs/heads/main
+```
+
+These commands require the execution's private socket and cannot select another
+account or repository. API reads accept supported repository-relative GET paths.
+GitHub thread reads retain comment node IDs and update times. Native review
+publication uses the existing `looper review submit` policy for that execution's
+PR, expected head and review events. Worker, planner and fixer return their
+normal structured results and leave push/PR writes to daemon reconciliation.
+
+Hosting tokens, private-key references and personal GitHub/SSH authentication
+are removed after agent environment overrides merge. Validation commands also
+receive a sanitized environment. Model-provider credentials remain available to
+the configured agent. This is a credential and command-routing boundary; it
+does not introduce an operating-system sandbox for arbitrary same-user code.
+
+GitHub App permissions must cover the actions enabled for the role: commonly
+repository contents, issues and pull requests, with read access to checks and
+Actions for CI diagnosis. Enterprise instances may require an explicit
+`commit.email`. Forgejo bot tokens must support account lookup (`read:user`)
+and the repository operations in use; repository-only token scopes that exclude
+account lookup are insufficient. Platform review and self-approval restrictions
+continue to apply.
+
+### GitHub App sandbox verification
+
+The regular CI suite runs local contracts without App secrets, including the
+credential cache race checks. The separate `sandbox-e2e` workflow runs on main
+and manual dispatch, using the existing repository variable
+`LOOPER_E2E_GITHUB_APP_ID` and secret `LOOPER_E2E_GITHUB_APP_PRIVATE_KEY`.
+It obtains the installation ID from
+[`actions/create-github-app-token`](https://github.com/actions/create-github-app-token#outputs),
+then supplies a temporary private-key file to the daemon. That file has private
+permissions, lives outside uploaded artifacts, and is removed in an always-run
+cleanup step.
+
+To run only the App scenario in a configured sandbox:
+
+```bash
+LOOPER_E2E_GITHUB_APP=1 \
+LOOPER_E2E_GITHUB_SANDBOX_REPO=team/looper-sandbox \
+LOOPER_E2E_GITHUB_APP_ID=12345 \
+LOOPER_E2E_GITHUB_INSTALLATION_ID=67890 \
+LOOPER_E2E_GITHUB_APP_PRIVATE_KEY_FILE=/absolute/path/sandbox.pem \
+go test ./internal/e2e -run '^TestGitHubSandboxAppIdentity$' -count=1
+```
+
+The repository must have an initialized default branch. This scenario does its
+own JWT exchange, checks that the installation token is scoped to one repo,
+runs a real daemon worker with an SSH origin and credential-free agent, verifies
+bot PR/commit attribution, refreshes the captured installation, and verifies
+bot comments and native COMMENT reviews. It creates temporary issues, PRs and
+branches and cleans them afterward. It does not require the legacy sandbox's
+pre-minted `LOOPER_E2E_GITHUB_TOKEN`. Missing App references fail when the App
+scenario is explicitly enabled; otherwise it is skipped.
+
+## Provider support
+
+Looper supports three provider kinds:
+
+- `github` — existing default behavior, backed by `gh`. Projects without `provider` keep the legacy GitHub autodetection/metadata path.
+- `forgejo` — REST-backed planner, worker, native reviewer/fixer loops, summary-comment compatibility, and opt-in reviewer auto-merge. Forgejo projects are config-driven and do not require `gh` in Forgejo-only installs.
+- `plane` — a **task-source** provider: issues (work-items) are read from a [Plane](https://plane.so) project, while pull requests, diffs, and reviews stay on the project's GitHub code repo. Use this to let Looper consume Plane work-items directly as its issue source without creating a redundant GitHub issue. See [Plane provider + Feishu HITL setup](plane-provider.md) for the full guide, including the one-command `looper bootstrap --provider plane …` flow.
+
+Forgejo provider example:
+
+For a new installation, bootstrap validates the origin, current Forgejo identity, and repository access before writing the provider and project binding:
+
+Token-env bootstrap (headless / CI):
+
+```bash
+export FORGEJO_TOKEN=<forgejo-token>
+looper bootstrap --provider forgejo \
+  --project-path /absolute/path/to/example \
+  --forgejo-url https://code.example.com \
+  --auth token-env \
+  --forgejo-token-env FORGEJO_TOKEN
+```
+
+Tea-backed bootstrap (reuse an existing `tea` login; no second token env):
+
+```bash
+tea login list
+looper bootstrap --provider forgejo \
+  --project-path /absolute/path/to/example \
+  --forgejo-url https://code.example.com \
+  --auth tea \
+  --tea-login powerformer-code
+```
+
+Existing installations can manage providers with `looper provider add|list|test|remove`. The commands persist auth strategy and credential *references* (`tokenEnv` name or `teaLogin`) and report when `looperd` must be restarted. Looper never reads tea's config file for tokens and never stores raw tokens.
+
+```toml
+[agent]
+vendor = "opencode"
+
+# Headless: token from environment
+[[providers]]
+id = "forgejo-main"
+kind = "forgejo"
+baseUrl = "https://code.example.com"
+auth = "token-env"
+tokenEnv = "LOOPER_FORGEJO_TOKEN"
+
+# Interactive workstation: explicit tea login (must match baseUrl)
+# [[providers]]
+# id = "forgejo-main"
+# kind = "forgejo"
+# baseUrl = "https://code.example.com"
+# auth = "tea"
+# teaLogin = "powerformer-code"
+
+[[projects]]
+id = "example"
+name = "Example"
+repoPath = "/absolute/path/to/example"
+provider = "forgejo-main"
+repo = "acme/example"
+```
+
+Forgejo rules:
+
+- `providers[].id` must be unique.
+- `providers[].kind` must be `github`, `forgejo`, or `plane`; `gitea` is not a supported provider kind yet.
+- Forgejo providers require an absolute `http(s)` `baseUrl` and an authentication strategy:
+  - `auth = "token-env"` with non-empty `tokenEnv` (token value from the daemon environment; never stored in config)
+  - `auth = "tea"` with an explicit `teaLogin` whose tea login URL matches `baseUrl` (never inferred from tea's default login when multiple identities exist)
+- When `auth` is omitted, a lone `tokenEnv` implies `token-env` and a lone `teaLogin` implies `tea`. Setting both without `auth` is a validation error.
+- Tea-backed API calls use `tea api --login <teaLogin>`; Looper never parses tea credential storage or copies the token into config, logs, argv, event payloads, or environment variables.
+- Actionable tea auth failures surface as `tea_missing`, `tea_login_missing`, `tea_login_host_mismatch`, or `tea_auth_failed` (and never fall through to GitHub).
+- Forgejo projects require a `provider` and repo (`owner/name`). They can be written in config, persisted by `looper project add --provider <id>`, or created with `--forgejo-url` plus either `--forgejo-token-env` or `--auth tea --tea-login`. The repo may be detected only from an origin matching that provider. CLI/API-added provider bindings become active immediately through the atomic Project Catalog; already-started work retains its previous snapshot.
+- Config validation rejects duplicate configured `repo` values case-insensitively, even across different providers, because current runtime records are still keyed by bare repo.
+- Forgejo uses polling only. Omit `projects[].webhook.mode` and keep `projects[].network.mode` unset or `off`.
+- Forgejo projects get a provider profile that makes minimal config safe: planner and worker stay enabled, worker only processes issues already assigned to the current provider user, reviewer uses native review-request discovery and native review publication, and fixer automatically consumes native findings and legacy summary items. Auto-merge defaults to disabled and can be enabled explicitly; coordinator and thread resolution remain unsupported.
+- Explicitly re-enabling unsupported Forgejo behavior fails config validation instead of silently downgrading behavior.
+- `looper status` reads the Forgejo version, identity, repository permissions, and OpenAPI document with a bounded timeout and no mutations. Capability output separates Looper's configured support from the server-observed contract; missing or disabled OpenAPI is `unknown`. The probe is fresh for each status request and is not persisted or used as a daemon startup gate.
+
+Forgejo reviewer discovery defaults to native review requests. Configured reviewer labels remain an optional source; when labels and review requests are both enabled, Forgejo uses their union with deterministic PR-number dedupe. Native clean and blocking outcomes follow `reviewEvents` (`APPROVE`, `REQUEST_CHANGES`, or `COMMENT`). An authorized self-review uses `COMMENT` when Forgejo rejects an approval or change request by the PR author; the structured clean/blocking outcome is preserved. Set `roles.reviewer.behavior.publishMode = "summary_comment"` and configure reviewer labels to retain the legacy top-level comment protocol. Both publication modes use the common GitHub message templates and disclosure, without visible protocol titles or round numbers. Native operations require the corresponding endpoint in the Forgejo OpenAPI contract; older instances fail with a provider capability error instead of silently switching modes.
+
+Forgejo Fixer automatically consumes unresolved native review comments, including findings published by the same account's Looper Reviewer. It repairs, validates, and pushes without requiring a remote resolve API. A matching structured `fixed` result records that the code was fixed while the remote comment remains open. Unchanged acknowledged findings do not repeat after polling or restart; edited comments, new findings, or a head that no longer contains the repair become eligible again. Deferred or declined findings are not acknowledged as fixed. Existing manual hold and role budgets still apply. A new PR head can trigger the next Reviewer pass; Forgejo does not support GitHub's same-head decline adjudication.
+
+Current-head commit statuses and Forgejo Actions are included in CI context. Exact local Git checks distinguish an actual merge conflict from other `mergeable=false` states, and compare acknowledged repair commits with the current head. These checks require Git 2.38+ and may fetch missing objects from the configured origin without changing the checkout.
+
+Set `roles.reviewer.autoMerge.enabled = true` explicitly to opt into Forgejo auto-merge. Existing Looper scope, criteria-verified clean review, repository strategy, branch protection, and permission checks still apply: a tracked PR needs a `looper:*` label and a closing issue reference whose issue has `triaged` or a `dispatch/*` label and explicit acceptance criteria. A self-review downgraded to `COMMENT` does not authorize auto-merge. Looper uses an immediate merge request bound to the reviewed head; blocked checks retry through the existing Reviewer publish checkpoint and retry budget. If that budget or the consecutive-failure limit is exhausted, the loop requires the existing continue/recheck flow after CI is ready. Forgejo's scheduled merge does not retain the expected head, so Looper does not use it. Looper never forces the merge or deletes the branch through this path.
+
+### Plane task-source provider
+
+`plane` splits the task source from the code forge: Planner/Worker read work-items from Plane (filtered by a trigger label), while pull requests are opened and reviewed on the project's GitHub `repo`. Plane rules:
+
+- `providers[].kind = "plane"` requires a non-empty `tokenEnv` (the env var holding the Plane API key), `workspace` (the Plane workspace slug), and `projectId` (the Plane project UUID). `baseUrl` is optional and defaults to the public Plane API base.
+- The project bound to a plane provider requires explicit `provider` and `repo`, where `repo` is the **GitHub code repo** (`owner/name`) where PRs are opened, and `repoPath` is its local checkout.
+- Discovery keys on the trigger label only; because Plane assignees are UUIDs (not GitHub logins), set `roles.*.triggers.requireAssigneeCurrentUser = false`.
+- One command scaffolds all of this: `looper bootstrap --provider plane …` (see [Plane provider + Feishu HITL setup](plane-provider.md)).
+
+### Forgejo live sandbox e2e
+
+Forgejo live sandbox e2e is a local/manual developer check, not a normal CI job. It is skipped unless explicitly enabled:
+
+For the full native Reviewer → Fixer → Reviewer flow with an authenticated Codex and an existing tea login, run:
+
+```bash
+python3 scripts/forgejo-review-fix-smoke.py \
+  --base-url https://code.example.com \
+  --repo owner/looper-sandbox \
+  --tea-login sandbox
+```
+
+This builds the current source, uses isolated runtime paths, creates one fixture PR on its own branch, checks repair and restart behavior, and closes the PR and removes its branch and label. It uses real Codex calls. Evidence is saved under `dist/looper-smoke-<run>/`. The default branch is not changed. See [implementation and acceptance notes](DESIGN-forgejo-reviewer-fixer.md).
+
+To verify the real provider adapters for conflicts, commit statuses, and head-bound merge using tea without an agent:
+
+```bash
+LOOPER_FORGEJO_LIVE_CONTRACTS=1 \
+LOOPER_FORGEJO_LIVE_BASE_URL=https://code.example.com \
+LOOPER_FORGEJO_LIVE_REPO=owner/looper-sandbox \
+LOOPER_FORGEJO_LIVE_TEA_LOGIN=sandbox \
+LOOPER_FORGEJO_LIVE_MERGE=1 \
+go test ./internal/runtime -run '^TestForgejoLiveProviderContracts$' -v -count=1 -timeout=15m
+```
+
+The extra `LOOPER_FORGEJO_LIVE_MERGE=1` permits required-check protection and immediate merge into the test's own temporary base branch. Omit it to check conflicts and statuses without merging. The test closes its PRs, removes its branches and protection rule, and verifies that the existing default branch is unchanged. Closed PRs and statuses on test commits remain as audit history. Missing prerequisites fail an explicitly enabled run; ordinary `go test ./...` skips the live test.
+
+The existing token-backed provider integration suite is also available:
+
+```bash
+LOOPER_E2E_FORGEJO=1 \
+LOOPER_E2E_FORGEJO_BASE_URL=https://code.example.com \
+LOOPER_E2E_FORGEJO_SANDBOX_REPO=owner/repo \
+LOOPER_E2E_FORGEJO_TOKEN=$TOKEN \
+go test ./internal/e2e -run '^TestForgejoSandbox' -count=1
+```
+
+Rules:
+
+- `LOOPER_E2E_FORGEJO_BASE_URL` must be an absolute `http(s)` Forgejo base URL.
+- `LOOPER_E2E_FORGEJO_SANDBOX_REPO` must be `owner/repo` for an existing dedicated sandbox repository.
+- `LOOPER_E2E_FORGEJO_TOKEN` must authenticate against `/api/v1/user` and have access to the sandbox repository.
+- Missing, invalid, or inaccessible live prerequisites fail the enabled test run rather than falling back to mocks.
+- The tests derive the HTTPS clone/push URL from the base URL, repo, and token; there is no clone URL override.
+
+GitHub live sandbox tests now prefer `LOOPER_E2E_GITHUB_SANDBOX_REPO`. The older `LOOPER_E2E_SANDBOX_REPO` name remains a compatibility alias, but setting both names to different repos fails fast.
+
+## Role model guidance
+
+All role-specific config lives under `roles.<role>`.
+
+- shared role instructions live at `roles.<role>.instructions`
+- discovery policy lives at `roles.<role>.discovery.*`
+- runtime behavior lives at `roles.<role>.behavior.*` when that split is useful for the role
+- coding-role agent identity overlays live at `roles.{planner,worker,reviewer,fixer}.agent` (profile ref and/or inline vendor/model); see [Multi-role agent vendor and model](#multi-role-agent-vendor-and-model)
+
+## Coordinator config reference
+
+Coordinator is the proactive, stateless issue-intake role. It owns both Triage and Dispatch. Triage writes `triaged` plus the coordinator-owned label namespace. Dispatch consumes `triaged` + `dispatch/*` and derives the actual trigger label from Planner or Worker config instead of redeclaring those labels.
+
+Triage LLM calls use the **global** `agent.vendor` / `agent.model` only (not coding-role profiles or `roles.*.agent` overlays). See [Multi-role agent vendor and model](#multi-role-agent-vendor-and-model).
+
+### Triage settings
+
+Coordinator triage lives under `roles.coordinator.triage.*`:
+
+| Path | Purpose | Default |
+| --- | --- | --- |
+| `roles.coordinator.enabled` | Turns Coordinator on for the project or globally | `false` |
+| `roles.coordinator.pollInterval` | Minimum delay between Coordinator ticks for the same project | `"5m"` |
+| `roles.coordinator.triage.triagedLabel` | Durability-commit label written last after comment posting succeeds | `"triaged"` |
+| `roles.coordinator.triage.maxIssueAgeDays` | Bootstrap guard for fresh issues only | `7` |
+| `roles.coordinator.triage.maxPerTick` | Per-tick cap on issues processed for triage | `5` |
+| `roles.coordinator.triage.disposition.outOfScopeLabel` | Label reused for `out-of-scope` | `"wontfix"` |
+| `roles.coordinator.triage.disposition.unclearLabel` | Label used for `unclear` | `"needs-info"` |
+| `roles.coordinator.triage.disposition.reTriageOnAuthorReply` | Re-opens the triage loop when the original author clarifies a `needs-info` issue | `true` |
+
+Coordinator clears and rewrites its own label namespace on each successful triage pass: `kind/*`, `area/*`, `complexity/*`, `dispatch/*`, `wontfix`, and `needs-info`. It then posts or edits the marker comment and writes `triaged` last.
+
+### Dispatch settings
+
+Coordinator dispatch lives under `roles.coordinator.dispatch.*`:
+
+| Path | Purpose | Default |
+| --- | --- | --- |
+| `roles.coordinator.dispatch.mode` | Chooses `human-gated` or `autonomous` dispatch | `"human-gated"` |
+| `roles.coordinator.dispatch.assignTo` | Optional GitHub assignee added before the trigger label commit | `""` |
+| `roles.coordinator.dispatch.humanGate.slashCommands` | Accepted start-of-line slash commands | `[`"/plan"`, `"/implement"`]` |
+| `roles.coordinator.dispatch.humanGate.allowedUsers` | Extra users allowed to dispatch even without repo write access | `[]` |
+| `roles.coordinator.dispatch.autonomous.delayMinutes` | Grace window after `triaged` before autonomous dispatch can commit | `30` |
+| `roles.coordinator.dispatch.autonomous.holdLabel` | Legacy compatibility-only veto label for autonomous dispatch | `"looper:hold"` |
+
+Behavior notes:
+
+- `/plan` maps to the first planner trigger label at `roles.planner.triggers.labels[0]`
+- `/implement` maps to the first worker trigger label at `roles.worker.triggers.labels[0]`
+- autonomous mode uses the existing `dispatch/*` label to choose the same derived trigger labels
+- Coordinator never stores its own dispatch state; the authority chain stays on GitHub labels, comments, and timeline events
+- `roles.coordinator.dispatch.autonomous.holdLabel` is compatibility-only for coordinator autonomous dispatch; the official global hold contract is `looper:hold`
+
+## Hold labels
+
+Official hold labels are fixed:
+
+- `looper:hold`
+- `looper:hold:worker`
+- `looper:hold:fixer`
+- `looper:hold:reviewer`
+
+Semantics:
+
+- `looper:hold` blocks all automatic Looper activity for the labeled issue or PR.
+- lane-specific hold labels block only their lane.
+- no issue/PR inheritance exists.
+- Looper never adds or removes hold labels.
+- removing a hold takes effect on the next normal scan.
+- only explicit manual `looper work/review/fix --force` or API create requests with `force=true` can bypass hold.
+
+Planner is special: only `looper:hold` blocks planner. There is no planner-specific hold label.
+
+Manual CLI/API create-time hold validation is best-effort only when the local project repo path or configured `gh` path needed for remote inspection is unavailable. If those are present but `gh` inspection itself fails, create-time validation fails.
+
+Coordinator example:
+
+```toml
+[roles.coordinator]
+enabled = true
+pollInterval = "5m"
+
+[roles.coordinator.triage]
+triagedLabel = "triaged"
+maxIssueAgeDays = 7
+maxPerTick = 5
+
+[roles.coordinator.triage.disposition]
+outOfScopeLabel = "wontfix"
+unclearLabel = "needs-info"
+reTriageOnAuthorReply = true
+
+[roles.coordinator.dispatch]
+mode = "human-gated"
+assignTo = ""
+
+[roles.coordinator.dispatch.humanGate]
+slashCommands = ["/plan", "/implement"]
+allowedUsers = []
+
+[roles.coordinator.dispatch.autonomous]
+delayMinutes = 30
+holdLabel = "looper:hold"
+```
+
+Reviewer is the main migration example:
+
+- legacy top-level `reviewer.*` is compatibility input only
+- legacy reviewer discovery paths such as `roles.reviewer.autoDiscovery`, `roles.reviewer.triggers.*`, and `roles.reviewer.specReview.*` are compatibility input only
+- canonical reviewer discovery lives at `roles.reviewer.discovery.*`
+- canonical reviewer behavior lives at `roles.reviewer.behavior.*`
+
+Canonical reviewer example:
+
+This is a standalone reviewer-only snippet. Do not paste it together with the full config example below as a single TOML file, or table headers such as `[roles.reviewer.behavior.reviewEvents]` would be duplicated.
+
+```toml
+[roles.reviewer]
+instructions = "Review for correctness, regressions, and migration safety."
+
+[roles.reviewer.discovery]
+autoDiscovery = true
+
+[roles.reviewer.discovery.triggers]
+includeDrafts = false
+requireReviewRequest = true
+enableSelfReview = false
+labels = []
+labelMode = "all"
+
+[roles.reviewer.discovery.specReview]
+includeReviewingLabel = true
+reviewingLabel = "looper:spec-reviewing"
+
+[roles.reviewer.behavior]
+scope = "changed_ranges"
+publishMode = "single_review"
+
+[roles.reviewer.behavior.loop]
+enabledByDefault = true
+# Continuous follow-up debounce after a published review. Inherits defaults.loop when unset.
+quietPeriodSeconds = 60
+minPublishIntervalSeconds = 300
+# Successful reviewer publishes per PR. 0 disables. Exhaustion always
+# holds the pair; HITL only chooses ask vs no-ask presentation.
+maxPublishesPerPR = 3
+
+[roles.reviewer.behavior.reviewEvents]
+clean = "APPROVE"
+blocking = "REQUEST_CHANGES"
+
+[roles.reviewer.behavior.nativeResume]
+onHeadChange = false
+reReviewPromptOnHeadChange = false
+```
+
+The reviewer defaults above are intentionally aggressive: clean reviews publish `APPROVE`, blocking reviews publish `REQUEST_CHANGES`, and `enableSelfReview` still defaults to `false`.
+
+### Review-fix budget
+
+Unlimited reviewer ⇄ fixer ping-pong is a cost and quality problem: each side can keep inventing new work. The old `maxIterationsPerPR` / `maxIterationsPerHead` knobs are still accepted but **ignored**. The live caps are separate per role:
+
+| Path | Counts | Default |
+| --- | --- | --- |
+| `roles.reviewer.behavior.loop.maxPublishesPerPR` | Successful published reviews on one PR | `3` |
+| `roles.fixer.behavior.loop.maxPushesPerPR` | Successful fixer pushes on one PR | `3` |
+
+`0` disables that role's cap. Authority is live config plus a durable counter (`iterationCount` for reviewer, `reviewFixBudget.pushCount` for fixer). Caps enforce whether or not HITL is enabled. Automatic and takeover (`manual` + `followUpdates`) loops participate; one-shot manual loops do not. Either exhausted role holds the same-lane pair:
+
+| `hitl.enabled` | Exhausted role | Sibling | Resume |
+| --- | --- | --- | --- |
+| `true` | `awaiting_human` with Continue/Stop | budget-paused | answer the ask |
+| `false` (default) | `paused`, reason `review_fix_budget_exhausted`, no ask | paired budget-paused | `looper unpause <seq>` or `looper stop <seq>` |
+
+Continue / no-HITL `unpause` refills only meters currently at/over their live cap and releases the pair. Stop / no-HITL `looper stop` terminates both roles. Product terminals (ready label, identical output, closed PR) still win and do not open a budget ask. Budget exhaustion never approves, resolves, or merges. Event: `loop.review_fix_budget.exhausted` (`level: action_required`). A `needs_human` scope dispute with HITL off pauses the pair with reason `review_scope_human_required` and the same `unpause`/`stop` pair; `unpause` resumes against current evidence without refilling a meter unless one is also exhausted.
+
+`looper describe <seq>` / `looper loop inspect <seq>` and the dashboard loop page show the current hold reason and the exact `looper unpause <seq>` / `looper stop <seq>` commands. Live caps, current head, last reviewed signal, exhausted-role meters, unresolved findings, pending decisions, late blockers, and outcome/progress are not rebuilt on those surfaces (park-time `loop.review_fix_budget.exhausted` / `loop.review_scope_human.required` events still snapshot decision-time evidence).
+
+**Failure prevented:** expanding-scope review/fix that never converges, including on default HITL-off installs. **Cost:** paired pause/unpause/stop plus an action-required event. **Why not reuse the old knobs:** those were reviewer-only infra counters that stranded long PRs and were explicitly demoted in #209.
+
+### Same-head disposition (always on for GitHub)
+
+Continuous GitHub Reviewer loops react to trusted `wontfix` / Fixer decline changes even when the PR head is unchanged. This path does **not** enable `roles.reviewer.behavior.threadResolution`; that setting still gates objective stale-thread reconciliation only and remains `enabled=false` by default.
+
+- Canonical command inside a Looper-authored thread: `/looper wontfix <reason>`. Compatibility aliases: a trusted human comment whose entire non-quoted body is `wontfix`, `won't fix`, or `won’t fix` (optionally `: <reason>`).
+- `/looper reconsider <reason>` cancels the latest accepted disposition on an unresolved/reopened thread.
+- Authority is the PR author or `OWNER` / `MEMBER` / `COLLABORATOR`. Arbitrary users and bots are not disposition authorities.
+- A Fixer `declined` reply is a dispute signal, not dismissal: Fixer replies with evidence and leaves the thread open; Reviewer adjudicates `accept_wontfix` (reply + resolve), `reject_wontfix` (reply, leave open), or `needs_human` (pair hold, no remote adjudication reply).
+- Unmarked third-party comments (human or Codex) stay Fixer-eligible. A validated Fixer decline on those threads still goes to Reviewer; trusted `/looper` directives stay Looper-authored-only.
+- GitHub webhooks accelerate the same path: `pull_request_review_comment` create/edit/delete and `pull_request_review_thread` `resolved` route both Reviewer and Fixer. Polling remains the correctness fallback. Forgejo is exempt from same-head disposition; its role budgets still apply.
+- A budget-held pair may run disposition-only reconciliation. That cannot publish a review, push code, refill a meter, or release the hold.
+
+Operator commands and HITL vs HITL-off resume are also in the [users guide](users-guide.md#same-head-wontfix-github-continuous-reviewer).
+
+### Quiet-period debounce (shared + per-role)
+
+Quiet period **settles new actionable signals** before starting work: wait N seconds after a signal change, and **reset the wait** if another signal arrives in the window. It is **not** retry backoff, fixer no-op follow-up backoff, coordinator dispatch delay, or reviewer `minPublishIntervalSeconds`.
+
+| Path | Purpose | Default |
+| --- | --- | --- |
+| `defaults.loop.quietPeriodSeconds` | Shared default when a role field is unset | `60` |
+| `roles.reviewer.behavior.loop.quietPeriodSeconds` | Reviewer continuous follow-up debounce | `60` |
+| `roles.fixer.behavior.loop.quietPeriodSeconds` | Fixer new/changed fixable-set settle window | `0` (opt-in) |
+
+Effective resolution: `projects[].roles.<role>.behavior.loop.quietPeriodSeconds` → role global → `defaults.loop` → role-specific hardcoded default. Fields are restart-bound because they feed durable queue `AvailableAt` / loop `NextRunAt`. Env examples: `LOOPER_DEFAULTS_LOOP_QUIET_PERIOD_SECONDS`, `LOOPER_ROLES_FIXER_BEHAVIOR_LOOP_QUIET_PERIOD_SECONDS`; existing reviewer quiet env/flag paths remain valid.
+
+When quiet and a separate backoff both apply, eligible time is the **max** of the constraints. Recommended fixer starters are `60`–`120` seconds once you want burst protection; leave `0` for historical immediate enqueue.
+
+#### Concept trade-off
+
+**Failure prevented:** Bursty review/CI signals (multiple threads, check re-runs, rapid head updates) cause role loops to start work mid-storm. That produces thrash: duplicate agent runs, wasted budget, and fix sets that go stale before the agent finishes. Quiet period delays eligibility until the discovery signal has stopped changing.
+
+**What it costs:**
+
+- **New config surface:** `defaults.loop` plus per-role `behavior.loop.quietPeriodSeconds`, inheritance when a role field is unset, project overlays, env/CLI, API contract, and restart-bound classification all stay in sync.
+- **Persisted signal identity:** Fixer discovery keys settle windows on `fixItemsStateHash` (and related queue metadata). Wrong or unstable hashing over-delays, under-delays, or restarts the window on noise.
+- **Queue coalesce / gating:** Mid-delay hash changes update the active loop-scoped queue item in place so a new `fixItemsHash` cannot bypass the delay via a second enqueue. That path must not drop work, lose backoff composition, or extend forever on unchanged polls.
+- **Edge cases to keep correct:** `quiet=0` remains immediate (migration-safe); quiet never shortens an existing later `AvailableAt`; quiet composes with no-op/retry backoff via `max`; first discovery vs rediscovery vs post-run re-queue all apply the same helper.
+- **Failure modes:** Overflowing seconds→`time.Duration` would schedule in the past (rejected at validation); daemon restart mid-window re-reads durable `AvailableAt` / `NextRunAt` (authority stays on those fields, not the agent).
+
+**Why simpler alternatives are insufficient:**
+
+- **Delete the layer / no debounce:** Reintroduces mid-storm starts—the failure this feature exists to stop.
+- **Trust agent structured output** ("wait until settled"): The agent cannot observe future GitHub review bursts; settlement is an infra timing concern. Queue `AvailableAt` / loop `NextRunAt` remain scheduler authority; quiet period only delays eligibility after discovery signal changes.
+- **Fail loud on burst:** Bursty GitHub events are normal, not errors; failing would thrash operators without improving fix quality.
+
+### Reviewer auto-merge settings
+
+Reviewer auto-merge lives under `roles.reviewer.autoMerge.*`:
+
+| Path | Purpose | Default | Valid values | Validation |
+| --- | --- | --- | --- | --- |
+| `roles.reviewer.autoMerge.enabled` | Enables Reviewer's auto-merge opt-in flow for in-scope code PRs | `false` | `true`, `false` | When `true`, project startup fails fast unless the provider supports the merge flow, the configured strategy is enabled in repo settings, and the repo is known |
+| `roles.reviewer.autoMerge.strategy` | Merge strategy used by the selected provider | `"squash"` | `"squash"`, `"merge"`, `"rebase"` | Config validation rejects any other value; when `enabled=true`, startup also fails fast if the repo disallows the chosen strategy |
+| `roles.reviewer.autoMerge.requireBranchProtection` | Requires base-branch protection with required checks before Reviewer opts in | `true` | `true`, `false` | When `true` and `enabled=true`, startup fails fast unless the default/base branch is known and the provider reports branch protection with required checks |
+| `roles.reviewer.autoMerge.transientRetries` | Retry budget for transient merge-watch failures | `3` | positive integers | Config validation rejects values less than `1` |
+| `roles.reviewer.autoMerge.scope` | v1 scope guard for which PRs Looper may opt into auto-merge | `"looper-only"` | `"looper-only"` | Config validation rejects any other value; startup validation also rejects unsupported scopes |
+
+Project-level overrides use the same shape under `projects[].roles.reviewer.autoMerge.*`.
+
+When `roles.reviewer.autoMerge.enabled = true`, Looper performs provider-aware startup validation: the project must have a known repo, the configured strategy must be allowed, and — if `requireBranchProtection=true` — the effective base branch must exist with required checks enabled. GitHub additionally requires the repository's auto-merge setting and uses `gh pr merge --auto`. Forgejo uses head-bound immediate merge with existing Reviewer publish retries; its server-side scheduled merge is not used. Coordinator merge-watch settings do not enable a Forgejo coordinator.
+
+## Project override rules
+
+Project entries stay in `projects[]`, but any override-bearing config must mirror the same local shape it uses globally.
+
+Project entries are split into:
+
+- **project metadata**: `id`, `name`, `repoPath`, `baseBranch`, `worktreeRoot`
+- **project-scoped override config**: canonical override-bearing domains such as `roles.<role>...`
+- **project-local role instructions**: `projects[].roles.<role>.instructions`
+
+Project override rules:
+
+- if a field is overrideable per project, the project path uses the same local canonical shape as the global path
+- project overrides remain part of the config-file layer; they do not create a new precedence layer above environment variables or CLI flags
+- omitted project fields inherit the effective global value
+- project-local role instructions may be set to an empty string to clear inherited global role instructions for that project
+- legacy project reviewer discovery paths are compatibility-only; canonical reviewer project overrides live under `projects[].roles.reviewer.discovery.*`
+
+Canonical project override example:
+
+```toml
+[[projects]]
+id = "looper"
+name = "Looper"
+repoPath = "/absolute/path/to/looper"
+baseBranch = "main"
+worktreeRoot = "/Users/you/.looper/worktrees/looper"
+
+[projects.roles.worker.discovery]
+autoDiscovery = false
+
+[projects.roles.reviewer]
+instructions = "Project-specific reviewer guidance"
+
+[projects.roles.reviewer.discovery.triggers]
+labels = ["needs-review"]
+labelMode = "any"
+requireReviewRequest = false
+```
+
+## Full canonical example
+
+```toml
+[server]
+host = "127.0.0.1"
+port = 17310
+authMode = "local-token"
+localToken = "replace-me"
+
+[daemon]
+mode = "foreground"
+restartPolicy = "on-failure"
+restartThrottleSeconds = 10
+logDir = "/Users/you/.looper/logs"
+workingDirectory = "/absolute/path/to/where/you/start/looperd"
+shutdownTimeoutMs = 1000
+
+[daemon.worktreeCleanup]
+enabled = false
+interval = "24h"
+retentionDays = 7
+maxPerTick = 10
+includeOrphans = false
+dryRun = true
+
+[daemon.environment]
+EXAMPLE_FLAG = "1"
+
+[storage]
+mode = "sqlite"
+dbPath = "/Users/you/.looper/looper.sqlite"
+backupDir = "/Users/you/.looper/backups"
+
+[scheduler]
+pollIntervalSeconds = 30
+maxConcurrentRuns = 3
+retryMaxAttempts = 5
+retryBaseDelayMs = 5000
+
+[agent]
+vendor = "opencode"
+model = "your-model-if-needed"
+
+# Optional named identity presets (vendor + model only). See
+# "Multi-role agent vendor and model" above.
+# [agent.profiles.fast]
+# vendor = "opencode"
+# model = "cheaper-model"
+
+[agent.params]
+reasoning = "medium"
+
+[agent.env]
+OPENAI_API_KEY = "replace-me"
+
+# Agent subprocesses inherit only execution-safe host variables (for example,
+# PATH, HOME, locale, temporary/configuration directories, certificate paths,
+# SSH_AUTH_SOCK, and LOOPER_CONFIG so trusted wrappers resolve the same config).
+# Add required credentials or tool-specific variables here.
+
+[agent.nativeResume]
+enabled = true
+
+[agent.timeouts]
+plannerIdleTimeoutSeconds = 600
+plannerMaxRuntimeSeconds = 3600
+workerIdleTimeoutSeconds = 900
+workerMaxRuntimeSeconds = 10800
+reviewerIdleTimeoutSeconds = 600
+reviewerMaxRuntimeSeconds = 5400
+fixerIdleTimeoutSeconds = 600
+fixerMaxRuntimeSeconds = 7200
+
+[logging]
+level = "info"
+maxSizeMB = 10
+maxFiles = 5
+
+[notifications]
+inApp = true
+
+[notifications.osascript]
+enabled = true
+soundForLevels = ["action_required", "failure"]
+throttleWindowSeconds = 60
+
+[disclosure]
+enabled = true
+includeAgent = true
+includeOS = false
+
+[disclosure.channels]
+gitCommit = true
+pullRequest = true
+issueComment = true
+reviewComment = true
+inlineCommentVisible = true
+
+[tools]
+gitPath = "/usr/bin/git"
+ghPath = "/opt/homebrew/bin/gh"
+osascriptPath = "/usr/bin/osascript"
+
+[[providers]]
+id = "forgejo-main"
+kind = "forgejo"
+baseUrl = "https://code.example.com"
+tokenEnv = "LOOPER_FORGEJO_TOKEN"
+
+[package]
+distribution = "github-release"
+autoMigrateOnStartup = true
+requireBackupBeforeMigrate = false
+
+[defaults]
+baseBranch = "main"
+allowAutoCommit = true
+allowAutoPush = true
+allowAutoApprove = true
+allowRiskyFixes = false
+openPrStrategy = "all_done"
+addSnapshotMode = "async"
+
+[defaults.loop]
+# Shared quiet-period default for role signal-settling debounce.
+# Role overrides: roles.<role>.behavior.loop.quietPeriodSeconds
+# 0 = off. Restart-bound (feeds durable queue AvailableAt / NextRunAt).
+quietPeriodSeconds = 60
+
+# `allowAutoApprove` is a legacy compatibility alias.
+# Prefer `roles.reviewer.behavior.reviewEvents.clean = "APPROVE"` in new config.
+
+[roles.coordinator]
+enabled = false
+pollInterval = "5m"
+
+[roles.coordinator.triage]
+triagedLabel = "triaged"
+maxIssueAgeDays = 7
+maxPerTick = 5
+
+[roles.coordinator.triage.disposition]
+outOfScopeLabel = "wontfix"
+unclearLabel = "needs-info"
+reTriageOnAuthorReply = true
+
+[roles.coordinator.dispatch]
+mode = "human-gated"
+assignTo = ""
+
+[roles.coordinator.dispatch.humanGate]
+slashCommands = ["/plan", "/implement"]
+allowedUsers = []
+
+[roles.coordinator.dispatch.autonomous]
+delayMinutes = 30
+holdLabel = "looper:hold"
+
+[roles.planner.discovery]
+autoDiscovery = true
+
+[roles.planner.triggers]
+labels = ["looper:plan"]
+labelMode = "all"
+requireAssigneeCurrentUser = true
+
+[roles.reviewer]
+instructions = "Review for correctness, regressions, and migration safety."
+
+[roles.reviewer.discovery]
+autoDiscovery = true
+
+[roles.reviewer.discovery.triggers]
+includeDrafts = false
+requireReviewRequest = true
+enableSelfReview = false
+labels = []
+labelMode = "all"
+
+[roles.reviewer.discovery.specReview]
+includeReviewingLabel = true
+reviewingLabel = "looper:spec-reviewing"
+
+[roles.reviewer.behavior]
+scope = "changed_ranges"
+publishMode = "single_review"
+
+[roles.reviewer.behavior.loop]
+enabledByDefault = true
+quietPeriodSeconds = 60
+minPublishIntervalSeconds = 300
+maxPublishesPerPR = 3
+
+[roles.reviewer.behavior.reviewEvents]
+clean = "APPROVE"
+blocking = "REQUEST_CHANGES"
+
+[roles.reviewer.behavior.nativeResume]
+onHeadChange = false
+reReviewPromptOnHeadChange = false
+
+[roles.reviewer.autoMerge]
+enabled = false
+strategy = "squash"
+requireBranchProtection = true
+transientRetries = 3
+scope = "looper-only"
+
+[roles.fixer.behavior.loop]
+# Opt-in quiet period (default 0 = immediate enqueue). Recommended starter: 60–120.
+quietPeriodSeconds = 0
+# Successful fixer pushes per PR. 0 disables. Exhaustion always holds
+# the pair; HITL only chooses ask vs no-ask presentation.
+maxPushesPerPR = 3
+
+[roles.fixer.discovery]
+autoDiscovery = true
+
+[roles.fixer.discovery.triggers]
+includeDrafts = false
+authorFilter = "current_user"
+labels = []
+labelMode = "all"
+
+[roles.worker.discovery]
+autoDiscovery = true
+
+[roles.worker.triggers]
+labels = ["looper:worker-ready"]
+labelMode = "all"
+requireAssigneeCurrentUser = true
+
+[[projects]]
+id = "looper"
+name = "Looper"
+repoPath = "/absolute/path/to/looper"
+baseBranch = "main"
+worktreeRoot = "/Users/you/.looper/worktrees/looper"
+
+[[projects]]
+id = "forgejo-example"
+name = "Forgejo Example"
+repoPath = "/absolute/path/to/forgejo-example"
+provider = "forgejo-main"
+repo = "acme/forgejo-example"
+
+[projects.roles.worker.discovery]
+autoDiscovery = false
+
+[projects.roles.reviewer]
+instructions = "Project-specific reviewer guidance"
+
+[projects.roles.reviewer.discovery.triggers]
+labels = ["team:alpha", "needs-review"]
+labelMode = "any"
+requireReviewRequest = false
+```
+
+## Migration guide
+
+This refactor is a warning-only migration release.
+
+- Looper does **not** add `looper config migrate` in this change set.
+- Looper does **not** rewrite, rename, convert, or delete user config files during startup.
+- Loading legacy `~/.looper/config.json` emits one informational note per process telling users that `~/.looper/config.toml` is now the preferred default path.
+- Accepted legacy config paths, legacy environment variable names, and legacy CLI flags still load during this release, but they emit actionable replacement guidance.
+
+### Deprecated reviewer migration example
+
+Deprecated legacy JSON:
+
+```json
+{
+  "reviewer": {
+    "scope": "changed_files",
+    "publishMode": "single_review",
+    "reviewEvents": {
+      "clean": "APPROVE",
+      "blocking": "REQUEST_CHANGES"
+    }
+  },
+  "roles": {
+    "reviewer": {
+      "autoDiscovery": true,
+      "triggers": {
+        "requireReviewRequest": true
+      },
+      "specReview": {
+        "reviewingLabel": "looper:spec-reviewing"
+      },
+      "instructions": "Review carefully."
+    }
+  }
+}
+```
+
+Canonical replacement:
+
+```toml
+[roles.reviewer]
+instructions = "Review for correctness, regressions, and migration safety."
+
+# Optional per-role agent identity (profile and/or inline vendor/model).
+# [roles.reviewer.agent]
+# profile = "strong"
+
+[roles.reviewer.discovery]
+autoDiscovery = true
+
+[roles.reviewer.discovery.triggers]
+requireReviewRequest = true
+
+[roles.reviewer.discovery.specReview]
+reviewingLabel = "looper:spec-reviewing"
+
+[roles.reviewer.behavior]
+scope = "changed_files"
+publishMode = "single_review"
+
+[roles.reviewer.behavior.reviewEvents]
+clean = "APPROVE"
+blocking = "REQUEST_CHANGES"
+```
+
+### Deprecated project reviewer discovery example
+
+Deprecated legacy JSON:
+
+```json
+{
+  "projects": [
+    {
+      "id": "looper",
+      "name": "Looper",
+      "repoPath": "/absolute/path/to/looper",
+      "roles": {
+        "reviewer": {
+          "autoDiscovery": true,
+          "triggers": {
+            "labels": ["needs-review"]
+          }
+        }
+      }
+    }
+  ]
+}
+```
+
+Canonical replacement:
+
+```toml
+[[projects]]
+id = "looper"
+name = "Looper"
+repoPath = "/absolute/path/to/looper"
+
+[projects.roles.reviewer.discovery]
+autoDiscovery = true
+
+[projects.roles.reviewer.discovery.triggers]
+labels = ["needs-review"]
+```
+
+## Environment variables and CLI flags
+
+```json
+{
+  "reviewer": {
+    "reviewEvents": {
+      "clean": "APPROVE",
+      "blocking": "REQUEST_CHANGES"
+    }
+  }
+}
+```
+
+Reviewer behavior matrix:
+
+| Reviewer outcome | `reviewEvents.clean` | `reviewEvents.blocking` | GitHub event |
+|---|---:|---:|---|
+| `clean` | `COMMENT` | any | `COMMENT` |
+| `clean` | `APPROVE` | any | `APPROVE` |
+| `non_blocking` | any | any | `COMMENT` |
+| `blocking` | any | `COMMENT` | `COMMENT` |
+| `blocking` | any | `REQUEST_CHANGES` | `REQUEST_CHANGES` |
+| legacy `actionable` | any | any | `COMMENT` |
+
+One-off reviewer jobs can snapshot the policy into loop metadata so queued work is not affected by later daemon config changes:
+
+```bash
+looper review owner/repo#123 \
+  --clean-review-event APPROVE \
+  --blocking-review-event REQUEST_CHANGES
+```
+
+To restore the previous synchronous `project add` behavior for one command:
+
+```bash
+looper project add --snapshot-mode full /absolute/path/to/repo
+```
+
+To restore it by default for all project additions:
+
+```json
+{
+  "defaults": {
+    "addSnapshotMode": "full"
+  }
+}
+```
+
+### `roles`
+
+The `roles` section controls scheduler-driven auto-discovery for planner, reviewer, fixer, and worker. It does not block manual commands, direct processing, retries, or already queued work.
+
+Defaults preserve Looper's historical behavior:
+
+- planner discovers open issues labeled `looper:plan` assigned to the current GitHub user
+- worker discovers open issues labeled `looper:worker-ready` assigned to the current GitHub user
+- reviewer discovers open non-draft PRs where the current user is requested for review, skips self-authored PRs by default, and includes the `looper:spec-reviewing` follow-up path
+- fixer discovers open non-draft PRs authored by the current user that have actionable review items
+
+Forgejo provider profile differences:
+
+- planner discovers labeled issues through the Forgejo REST provider
+- worker discovers only issues already assigned to the current Forgejo user and does not claim work by adding itself as assignee
+- reviewer defaults to native review requests and native PR review events; configured labels can be used alone or combined, and `publishMode = "summary_comment"` retains the legacy summary flow
+- fixer automatically consumes native review comments and legacy summary items; validated fixes are acknowledged locally and in a common PR comment while native comments remain open
+- auto-merge defaults to disabled and can be enabled explicitly under the same review, scope, and branch policies
+- coordinator, review-thread resolution, routed network mode, and webhook modes remain unsupported for Forgejo and fail fast if explicitly enabled
+
+Common fields:
+
+- `roles.<role>.autoDiscovery`: when `false`, the scheduler skips new discovery for that role only
+- issue roles (`planner`, `worker`): `triggers.labels`, `triggers.labelMode` (`all` or `any`), and `triggers.requireAssigneeCurrentUser`
+- reviewer: `triggers.includeDrafts`, `triggers.requireReviewRequest`, `triggers.enableSelfReview`, `triggers.labels`, `triggers.labelMode`, `specReview.includeReviewingLabel`, `specReview.reviewingLabel`
+- fixer: `triggers.includeDrafts`, `triggers.authorFilter` (`current_user` or `any`), `triggers.labels`, `triggers.labelMode`
+
+Trigger fields are combined with logical AND except Forgejo reviewer labels plus native review requests, which are independent discovery sources and combine as a deduplicated union. Label lists use `labelMode=all` or `labelMode=any`; an empty labels list means no label constraint.
+
+When reviewer `triggers.requireReviewRequest=true` and no reviewer label filter is configured, discovery queries the forge for PRs review-requested from the current user. This avoids missing requested reviews that fall outside the generic open-PR discovery window. On Forgejo, label filters can instead be selected alone or combined with review-request discovery.
+
+For reviewer discovery, `triggers.enableSelfReview` defaults to `false`. When omitted or falsy, non-manual reviewer loops skip pull requests whose normalized PR author login matches the current authenticated GitHub login. Set it to `true` to allow those loops to review self-authored PRs.
+
+Canonical environment variables and CLI flags override the config-file layer. Legacy names remain accepted only as compatibility aliases during the migration window.
+
+Examples:
+
+```bash
+LOOPER_CONFIG="$HOME/custom-looper/config.toml" \
+LOOPER_PORT=4321 \
+LOOPER_ROLES_REVIEWER_DISCOVERY_TRIGGERS_ENABLE_SELF_REVIEW=true \
+looperd
+```
+
+```bash
+looperd \
+  --config "$HOME/custom-looper/config.toml" \
+  --port 4321 \
+  --roles-reviewer-discovery-triggers-enable-self-review=true
+```
+
+## Validation rules and startup failures
+
+`looperd` fails fast on invalid config. Common validation rules:
+
+- required strings must be non-empty
+- numeric fields must be positive integers where applicable
+- `server.port` must be between `1` and `65535`
+- `scheduler.pollIntervalSeconds` must be at least `10`
+- `authMode=local-token` requires `server.localToken`
+- `projects[].id` must be valid and unique
+- `storage.dbPath` parent directory must be writable
+- `daemon.logDir` must be writable
+- `daemon.workingDirectory` must be writable
+- the default worktree root must be writable
+- required tool paths must resolve
+- `notifications.osascript.enabled=true` requires `tools.osascriptPath` to resolve
+
+## Recommended first-time setup
+
+1. Install `git` and `gh`
+2. Create `~/.looper/config.toml`
+3. Add at least one project in `projects`
+4. Set coding-role agent identity: either global `agent.vendor`, or `agent.profiles` / `roles.<role>.agent` bindings (see [Multi-role agent vendor and model](#multi-role-agent-vendor-and-model))
+5. Start the daemon with your installed `looperd` (or `go run ./cmd/looperd` while developing)
+6. Run `looper config show` to inspect the effective config
+
+If you enable `server.authMode=local-token`, also export `LOOPER_TOKEN` before using the CLI.
+
+## Troubleshooting
+
+### `tools.gitPath` or `tools.ghPath` could not be resolved
+
+Set explicit paths in the config file, or make sure the binaries are on `PATH` for the environment that starts `looperd`.
+
+### `tools.osascriptPath is required when osascript notifications are enabled`
+
+Either:
+
+- install or expose `osascript`, or
+- disable macOS notifications with:
+
+```toml
+[notifications.osascript]
+enabled = false
+```
+
+### A runtime path is not writable
+
+Make sure the daemon user can write to:
+
+- the parent directory of `storage.dbPath`
+- `daemon.logDir`
+- `daemon.workingDirectory`
+- the default worktree root under `~/.looper/worktrees`
+
+## Worktree cleanup
+
+Looper records worktrees it creates for planner, reviewer, fixer, and worker loops. The daemon periodically inspects those Looper-managed records and removes only clean worktree checkouts that are no longer referenced by active loop state.
+
+Defaults:
+
+- `daemon.worktreeCleanup.enabled = true`
+- `daemon.worktreeCleanup.interval = "24h"`
+- `daemon.worktreeCleanup.retentionDays = 7`
+- `daemon.worktreeCleanup.maxPerTick = 10`
+- `daemon.worktreeCleanup.includeOrphans = false`
+- `daemon.worktreeCleanup.dryRun = false`
+
+To disable automatic cleanup:
+
+```toml
+[daemon.worktreeCleanup]
+enabled = false
+```
+
+To keep automatic inspection enabled without deleting anything:
+
+```toml
+[daemon.worktreeCleanup]
+enabled = true
+dryRun = true
+```
+
+Manual inspection is always dry-run by default:
+
+```bash
+looper worktree cleanup
+looper worktree cleanup --dry-run
+```
+
+Run one immediate cleanup pass with the same safety rules:
+
+```bash
+looper worktree cleanup --confirm
+looper worktree cleanup --json
+```
+
+Cleanup removes Looper-managed worktree checkouts only. It does not delete branches, skips dirty worktrees, preserves worktrees referenced by active loop state, and does not automatically delete filesystem-only orphan directories that are not present in Looper's worktree records.

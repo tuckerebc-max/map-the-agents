@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0a0964473c8029930c56cab3cf8d8f7b28aecff9901d61a45cdf1e743fcc1f06
+- clm_0bf04f289b51c69cc642d32f20cd6c4d86b624a11d5b3b6b703b3e603d5b59f1
+- clm_52a63a5bb611f6efa5da25183f53b9f82961beea8fb3f4ec728ce341f9d28174
+- clm_708fdfd35af2be8823a0e18a2ab3e29a4369fc70a30341a35f437165b959857b
+- clm_7bc19d50be447dcbfa54b8ddebc365320b5f4934f5083d4b0c4f9d2447f7aee9
+- clm_a61d2ead309ce6c68c7ac0f0068086f825f48df1ac2a9bac2672ffca33373592
+- clm_b79217b3d1b1768243712e81157a9a0ca75f2729cbb77e0e861834e3bc1c7d5c
+- clm_bdbbbe8ee4b35a8e3672751a527d69a008ced067b8bec7bf946c2bc25f55a0f0
+- clm_f364afc2bd420723a1c888fbc71bca542d1d96c458e873acf57a2d8fa7e0ddcb
+- clm_f97403cc6d672a1b514a35357b067a8462650096440921437d47b2855ce28b00
+maturity: draft
+page_id: pg_0c1101d58bbf5540befb99a9bcaa2f56
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: openautocoder/live-swe-agent
+updated_at: '2026-09-14T02:25:55Z'
+---
+
+# openautocoder/live-swe-agent
+
+<!-- rcw:begin owner=entity:ent_aeaa8fa0628452858171ad7f3bf051ce block=evidence -->
+- openautocoder/live-swe-agent is mentioned in this evidence. [@claim:clm_0a0964473c8029930c56cab3cf8d8f7b28aecff9901d61a45cdf1e743fcc1f06] [@claim:clm_0bf04f289b51c69cc642d32f20cd6c4d86b624a11d5b3b6b703b3e603d5b59f1] [@claim:clm_52a63a5bb611f6efa5da25183f53b9f82961beea8fb3f4ec728ce341f9d28174] [@claim:clm_708fdfd35af2be8823a0e18a2ab3e29a4369fc70a30341a35f437165b959857b] [@claim:clm_7bc19d50be447dcbfa54b8ddebc365320b5f4934f5083d4b0c4f9d2447f7aee9] [@claim:clm_a61d2ead309ce6c68c7ac0f0068086f825f48df1ac2a9bac2672ffca33373592] [@claim:clm_b79217b3d1b1768243712e81157a9a0ca75f2729cbb77e0e861834e3bc1c7d5c] [@claim:clm_bdbbbe8ee4b35a8e3672751a527d69a008ced067b8bec7bf946c2bc25f55a0f0] [@claim:clm_f364afc2bd420723a1c888fbc71bca542d1d96c458e873acf57a2d8fa7e0ddcb] [@claim:clm_f97403cc6d672a1b514a35357b067a8462650096440921437d47b2855ce28b00]
+<!-- rcw:end owner=entity:ent_aeaa8fa0628452858171ad7f3bf051ce block=evidence -->
+
+## Researcher notes
+

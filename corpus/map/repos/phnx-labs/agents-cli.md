@@ -1,12 +1,14 @@
 # phnx-labs/agents-cli
 
-Status: discovered - Freshness: pending
+Status: blocked - Freshness: refresh-failed
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
+Renamed: canonical dossier is [phnx-labs/agi-cli](../phnx-labs/agi-cli.md) (github id 1215855441, verified [https://github.com/phnx-labs/agi-cli](https://github.com/phnx-labs/agi-cli)).
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/phnx-labs/agents-cli
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Collection is blocked; no distilled evidence exists yet.
 
 ## Facets
 

@@ -1,0 +1,311 @@
+{
+  "applied_operation_id": "op_78c70bcd465241279d8423234a320a98",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e7b0a5c0280705871a36f58ab19f5c7e82285f5650bb3a2b98ccf087c5f2a20",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_693a87b1855e22df4cf5c46c4c80bfd24f0eeadb1d69703c0affb2846b5e71c2"
+      ],
+      "text": "The tool generates code challenges with GPT models, produces algorithm solutions for them, and parses test cases out of the challenge text."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5456b3042e0dcfa3402bbdc083f2aefef5eaa2e158e59f5fa70af1c4f151bfd6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a4a9452d90720d8d3904410ac33afb91c170639620c10c426d8d8eedd045c49"
+      ],
+      "text": "It uses a self-supervising approach that iteratively refines, compiles, and tests generated solutions to improve accuracy and functionality."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28c552f6f2b5aafe6ac733afd4640a1e650865832717d4477eb1cbaa96100d0b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 15,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L11-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_693a87b1855e22df4cf5c46c4c80bfd24f0eeadb1d69703c0affb2846b5e71c2"
+      ],
+      "text": "Generated solutions run through an auto-refining loop that repeats until they meet the expected criteria, including execution, compilation, and testing against extracted test cases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a4313197a4b23bdd39c09f35335a06b21a239bac3eb683e91b4be46466dbf39",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L24-L26"
+        },
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "c41c9bd9ebcd6ea6572755b25b33297dea47ff04",
+          "line_end": 3,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/requirements.txt#L1-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d75df37d7b8665a3c4dbb6a2f33c8c8949b065818308db8ab29e6a48e4b43c67",
+        "slc_f3e8594aa2f4f410839dd33dc9e7c9e42184705265258993c140c7ad5ce823f1"
+      ],
+      "text": "Pinned dependencies are colorama 0.4.6, openai 0.27.2, and python-dotenv 1.0.0, installed via requirements.txt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee8edf645d20fd61431b54f6d3e24bf1cbc9433a2150a673dc96783af15f3e1a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L3-L3"
+        },
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L30-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f459f8b028f97ba121205cc283fff01e3ca87efcc60ed7dca81a40529672b8de",
+        "slc_fd4994bdc4896498841b8d0a4bb0ef9bddcb5b5de4fac84984184b032a110f2c"
+      ],
+      "text": "The entry point is a script run as `python src/main.py`, and the tool operates in the terminal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_385cf5e10c152815defe4436af0ad46dbb0d80f4299cf5eb99e178fa4d4f1270",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L24-L26"
+        },
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L30-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d75df37d7b8665a3c4dbb6a2f33c8c8949b065818308db8ab29e6a48e4b43c67",
+        "slc_fd4994bdc4896498841b8d0a4bb0ef9bddcb5b5de4fac84984184b032a110f2c"
+      ],
+      "text": "Requires Python 3.7 or higher and an OpenAI API key, with the key supplied via an OPENAI_API_KEY entry in a .env file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_913540725d2b3685eb1376b60633a4073808f794aaa8c1a4f4f4956a7707845e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+          "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "alicheg/gpt-coder",
+          "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md#L30-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd4994bdc4896498841b8d0a4bb0ef9bddcb5b5de4fac84984184b032a110f2c"
+      ],
+      "text": "Setup workflow: clone the repository, create or rename a .env file containing the OpenAI API key, then run the main script."
+    }
+  ],
+  "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 32,
+        "path": "README.md",
+        "size": 1530
+      },
+      {
+        "lines": 3,
+        "path": "requirements.txt",
+        "size": 52
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 10,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_16c3b2a25d185ad3979cbff2c1a16b98",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/alicheg/gpt-coder/a104129245b4e31438bba57cc9d7f398ea6bfa77/dc5d333e9cdf2de5/manifest.json",
+  "package_id": "pkg_2c2d241912b91bb27c209ab9afa174c23d8b441f241e95ec6619bb735937c199",
+  "repo": "alicheg/gpt-coder",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e280221146695a0fc238de5cca227f04ead1a7fbebd34990f7abd1b84ee5c686",
+  "snapshot_id": "dc5d333e9cdf2de5",
+  "sources": [
+    {
+      "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+      "git_sha": "987dfdd8f18cd44afaf6268bfc091825729f1cd8",
+      "lines": 32,
+      "path": "README.md",
+      "repository": "alicheg/gpt-coder",
+      "sha256": "4c60f5cb6972ce493ac49f501c86c370d38b652450188b8c298c5533cef917d5",
+      "source_id": "src_cf93a3fefb865fa3b7c119d0fff0f11c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/README.md"
+    },
+    {
+      "commit": "a104129245b4e31438bba57cc9d7f398ea6bfa77",
+      "git_sha": "c41c9bd9ebcd6ea6572755b25b33297dea47ff04",
+      "lines": 3,
+      "path": "requirements.txt",
+      "repository": "alicheg/gpt-coder",
+      "sha256": "6e407dfc46d06c8b42ffd09bbe7953bb60ac2ebf2956ecf69666c18bf9b607df",
+      "source_id": "src_12443a0790825038aff53e1c8f8260d1",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/alicheg/gpt-coder/blob/a104129245b4e31438bba57cc9d7f398ea6bfa77/requirements.txt"
+    }
+  ],
+  "summary": "A small Python tool that uses OpenAI's GPT API to generate coding challenges and solutions, refining them via an iterative test-and-compile loop. Evidence covers the README description, setup/usage, and pinned dependencies.",
+  "superseded_claim_ids": []
+}

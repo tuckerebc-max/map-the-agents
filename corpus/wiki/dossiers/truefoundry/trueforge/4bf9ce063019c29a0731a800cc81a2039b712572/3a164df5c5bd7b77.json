@@ -1,0 +1,957 @@
+{
+  "applied_operation_id": "op_cb812f1ec59a49c198d03df585045e60",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_20253b23d80da82a0ea8f881cc79829cbf1b3a0bd160debad7f942525bb80008",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 10,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L1-L10"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L34-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cf56716c3216aad4c0aca70aa5e3270023307829dde499b1865b6b292d36568",
+        "slc_428d22b6c9d023babb6da161a694ab5be620a2cae729ddb9962c0478dc405849"
+      ],
+      "text": "TrueForge is an open-source agent harness that runs the agent execution loop (model calls, MCP tools, skills, sandboxing, approvals, context management, session state) and exposes it as a chat UI, an HTTP API with a TypeScript SDK, and an embeddable UI SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1b36f0681d3738e57f4fdf5ea5d6447d7685f1cadb715be60e239d409a24dbb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "RELEASING.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md#L43-L44"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+          "line_end": 41,
+          "line_start": 36,
+          "path": "RELEASING.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md#L36-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_129281011096eb7a6af93c6af8ab39edce4cdb5032b3d97f9fc3c5d956f22757",
+        "slc_618bb42b18e62457ff3069afa014e314f4fc4350200ba760e75a1c86604f9e4a"
+      ],
+      "text": "The repo ships four npm packages: trueforge-core (library), trueforge (app + CLI, tarball includes dist/_frontend/), trueforge-sdk (Fern-generated, not hand-edited), and trueforge-ui (embeddable chat UI); packages/frontend is unpublished and its build is copied into the trueforge tarball."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e18d3f2a282a09a65796cd0920ade1ac22a786c0da091bcc1af20e09b6a22071",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L24-L26"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L15-L18"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L20-L20"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 73,
+          "line_start": 72,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L72-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b6144a3b7f9755ad8fc43833a11b1fe8f62746441864404cd4fe8aa60f7b712",
+        "slc_4956dc17815950fb998b7e225d7379d2e243c9af18f843d03fe58ca1728799c4",
+        "slc_b43f8e6f0f3af123926908ee9c0b3f9b37904cc50c8ea7be320018e3804aeb9d",
+        "slc_ea759b065c92cb248ca5316b4f5b129bcd36da5a1a5e8e69373ae05c860d6d9a"
+      ],
+      "text": "TrueForge adopts a 'sandbox as tool' pattern: the agent loop and credentials stay in the harness while the sandbox only runs code, file, and shell operations, is provisioned on demand, and never holds model or MCP credentials."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44b21d610b4018b6fae8bddca5dd0133d207f337af491549d90b463683bc0987",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "224b2d17a9b5ed7a93485b6dc14f2b71785783c8",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "docs/ui-sdk/concepts/architecture.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/ui-sdk/concepts/architecture.mdx#L28-L28"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "224b2d17a9b5ed7a93485b6dc14f2b71785783c8",
+          "line_end": 18,
+          "line_start": 8,
+          "path": "docs/ui-sdk/concepts/architecture.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/ui-sdk/concepts/architecture.mdx#L8-L18"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "224b2d17a9b5ed7a93485b6dc14f2b71785783c8",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "docs/ui-sdk/concepts/architecture.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/ui-sdk/concepts/architecture.mdx#L6-L6"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "224b2d17a9b5ed7a93485b6dc14f2b71785783c8",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "docs/ui-sdk/concepts/architecture.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/ui-sdk/concepts/architecture.mdx#L26-L26"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "224b2d17a9b5ed7a93485b6dc14f2b71785783c8",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/ui-sdk/concepts/architecture.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/ui-sdk/concepts/architecture.mdx#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2686bb31ae155d1f157f1851f7620496b5b4e83b8452eea081f2980ca2f86f64",
+        "slc_698a518ca83a83f3d5657d2e8832f15dfa8d9daa10af1588ff666ebe2670aec4",
+        "slc_7123e4a15af6ba404422baf595d448896c9fff69c8cc13c7359a5916b789beb3",
+        "slc_81f94822eb76a2aeb28203fa9822d7096504d6bcdd9390d78f35e242ab6d2b4a",
+        "slc_87cc4090bdc4d4b160444a7608931e56ba02129f84640e62e3e4eea2ee53ba72"
+      ],
+      "text": "The UI SDK offers three levels of control: using the TrueForgeUI component directly, supplying a custom layout, or mounting providers manually; it exports runtime-connected containers (ThreadContainer, ComposerContainer, ThreadListContainer) and presentational atoms replaceable via an overrides mechanism."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cd739cb3940f7caa6e602600f903871cc4e0e8d575b893474173211fe41fdc2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "224b2d17a9b5ed7a93485b6dc14f2b71785783c8",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "docs/ui-sdk/concepts/architecture.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/ui-sdk/concepts/architecture.mdx#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0753c91a3a85d6ddf56f0802ac90462a4af260be158bbf635a14fc25f0f28e0b"
+      ],
+      "text": "The UI SDK exposes stable styling hooks (.aui-root, .aui-markdown, .aui-monaco, data-slot attributes), though some slot values like avatar and tool-call-card lack the aui_ prefix, so users should inspect elements rather than assume the prefix."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8bd2e81d588e3eca3a493ebabda623dc68d2b006af856c2a343748598d1772f6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L80-L80"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 78,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L75-L78"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a047c0b20ada160cf0c8c19b72abdf778f677e0f39f074802c53f319c2a8963",
+        "slc_6ca05b4d049d8c6746c1bf9dd871853acacc61b8a5c2e629b75713aa7c4cb4dd",
+        "slc_d1f200eeb665286ae31e9718847b8e1a678a504ca7d6abc0c0ca505d23d7d55f"
+      ],
+      "text": "TrueForge runs in local mode (single process, SQLite, no login by default, intended for localhost only) or hosted mode (Postgres + Redis) deployable via Docker Compose, Helm, or Railway."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a0415fe45b851d4d066d9d809f8b1428afe6f9cb9252e534806fae6db2c95d4",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 49,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L42-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1139799acbbf2de5800d314026c687293a172a3a3dfc1e743c3035368d0209eb"
+      ],
+      "text": "The harness provides context-engineering features including subagents, deferred tool loading, Code Mode, large-result offloading, and compaction, plus human checkpoints such as tool approval, ask-user-questions, and Generative UI in chat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a89dea5ff8fe2a79c96701733122f6784feeba26eeaba48ad1189b976bcd3890",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "896498b12b6b21dab9320113d85319361335924b",
+          "line_end": 46,
+          "line_start": 43,
+          "path": "docs/skills.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/skills.mdx#L43-L46"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "896498b12b6b21dab9320113d85319361335924b",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/skills.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/skills.mdx#L9-L9"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "896498b12b6b21dab9320113d85319361335924b",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "docs/skills.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/skills.mdx#L39-L39"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "896498b12b6b21dab9320113d85319361335924b",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "docs/skills.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/skills.mdx#L50-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07be49f0ea4ab6f44d08b7bf05df5e155bde22ded2049f01c9b73dc5b2063317",
+        "slc_70b6d031cd88cdeb2e994cef503e874bdb08871340d7c4f4a671422eab460320",
+        "slc_f6b05c34b00e01546dda3266e1eb3896089edc149dde1e8e69f6265da35a844b",
+        "slc_fb1116ee04a665817f5791fc13a1f5ffb6014aaf949e69c061b82b536b3af40c"
+      ],
+      "text": "Skills are git-backed directories rooted at a SKILL.md with YAML frontmatter (name, description); only the description is visible upfront (progressive disclosure), and when chosen the repo is materialized under /opt/tfy/skills/{name} in the sandbox, which must be enabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b4d2344119d1b2a05de17c62ee1d9f80c5d801f6e2c39e7e3c00a1e43fab86c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 49,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L42-L49"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L32-L32"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 37,
+          "line_start": 34,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L34-L37"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1139799acbbf2de5800d314026c687293a172a3a3dfc1e743c3035368d0209eb",
+        "slc_4124f9af0d38d86459349d96f7ed68a93a0cc9b037131a6db2cd02518eb0af96",
+        "slc_49be54490bdf6e4d81b36414af95dbdaf1a3191d7aeacfd9c1020ceb41b3d3bf",
+        "slc_8e7cd5caa385549a32942bde0d5f6e9b9aa9a39ff39fdc7d3510946f149ba599"
+      ],
+      "text": "MCP tool connectivity supports remote servers with header auth or OAuth, including in-chat authorization; sandbox provider configuration requires a Daytona API key with snapshot-create permission, and the sandbox is off by default per agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78f9d7a12d59986c836ec66817d65ddd1827c03778fd1fc146ce118a18081657",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L114-L114"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 30,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L16-L30"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+          "line_end": 206,
+          "line_start": 205,
+          "path": "RELEASING.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md#L205-L206"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b1e280cdade4b9b1aa738be2c6f0e116c90a5bc08d758cc1aa6e12731bf0361",
+        "slc_ad19024d63a8d2958a4d80268d17ff832d292f0ae3455ea40b6936acc3a9f51b",
+        "slc_d0f77ebf927026aabed90f8a7877926b6f04e51dabd1874279051ff298020104"
+      ],
+      "text": "The project requires Node.js >= 22.14, is MIT-licensed, and its Helm chart bundles optional Bitnami Postgres and Redis subcharts that can be disabled via postgresql.enabled=false / redis.enabled=false."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99f4b979158eba961984bec1d22ca7c98a82f33ec9ed483588a9a68f4eab5fd6",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L99-L99"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 95,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L84-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63a1e2bff95360c7913f5726c292c515b86a5aff0a7c3424c55ec7fd65b64bef",
+        "slc_c8aef5259a090aad1aaa20452be56059961e7fd7bc62130e487e3a6dc086fd22"
+      ],
+      "text": "The README reports benchmarks comparing TrueForge against Claude Managed Agents and deepagents on the same tasks, tools, and model, claiming equal accuracy at lower cost, with reproduction materials in the benchmark/ directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e96706f5f9f4c895019cf7594376e62a1bf9d29617e70dfde421504ef0d4c98c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "88b59aff91631e65a003d296db86c6d75164359b",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/agent-library.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/agent-library.mdx#L21-L21"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "88b59aff91631e65a003d296db86c6d75164359b",
+          "line_end": 27,
+          "line_start": 23,
+          "path": "docs/agent-library.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/agent-library.mdx#L23-L27"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "88b59aff91631e65a003d296db86c6d75164359b",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "docs/agent-library.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/agent-library.mdx#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68b79a8873bedb995543ed98c7558ed73fdd815595e76e6ba28fc1a839a3c20d",
+        "slc_b7ae8cdfffb730366363630e3c760f10d0a78c15b021747ba2530eecebf40899",
+        "slc_e75a6cd774efd46621755cef252962ac006b9dc62d80afc769c22d98d15799a1"
+      ],
+      "text": "In hosted mode with login enabled, the agent library is not scoped per user or team: agents created by anyone are visible to all authenticated users on the deployment, though session history stays owner-scoped and settings remain admin-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71eb11687ed624c56a63f5257d4ea9dafd37e2ddd22d6a0a63ec72b619e9c768",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/sandbox.mdx",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d7d22adf7276ea90f6cdb4d354bd449a2303d15185abbafab312575901245930"
+      ],
+      "text": "Daytona is documented as the only sandbox provider supported today, with support for additional providers planned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_093f811e18a7a7f0a85629e6a9f7dfe7f85aea0d18e7165abdfff6ff2958ce65",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md#L103-L103"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "RELEASING.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md#L81-L81"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+          "line_end": 122,
+          "line_start": 117,
+          "path": "RELEASING.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md#L117-L122"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+          "line_end": 63,
+          "line_start": 51,
+          "path": "RELEASING.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md#L51-L63"
+        },
+        {
+          "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+          "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+          "line_end": 88,
+          "line_start": 87,
+          "path": "RELEASING.md",
+          "repository": "truefoundry/trueforge",
+          "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md#L87-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a431bbd7d59671c3a7cbdd61c83110bcad3cf3f77498925c195fee0454de1e1",
+        "slc_229190db566977041d4671e2d875e705bdde19cb479e3119a1bb3617cd58c71c",
+        "slc_4ef11856bd8a7214df712ea69e4fe01aa652a13938c5d8f46179c8755c31880d",
+        "slc_b8ae6c1c7b5f3139a7be8cfdb7ac663d78e1b9aec1918b491e26b22849b363de",
+        "slc_f986626744f4c396313c8de117c6276ff878cb3f366e536daf38f151d4d69056"
+      ],
+      "text": "Repository development practice: fork PRs should change source only while maintainers regenerate the SDK after merge; releases use Changesets on main, npm trusted publishing via OIDC (no NPM_TOKEN), and a chart-release pipeline triggered after the trueforge npm publish."
+    }
+  ],
+  "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 114,
+        "path": "README.md",
+        "size": 9143
+      },
+      {
+        "lines": 73,
+        "path": "docs/sandbox.mdx",
+        "size": 3772
+      },
+      {
+        "lines": 66,
+        "path": "docs/skills.mdx",
+        "size": 2982
+      },
+      {
+        "lines": 56,
+        "path": "docs/ui-sdk/concepts/architecture.mdx",
+        "size": 2867
+      },
+      {
+        "lines": 227,
+        "path": "RELEASING.md",
+        "size": 12175
+      },
+      {
+        "lines": 31,
+        "path": "docs/agent-library.mdx",
+        "size": 1431
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/benchmarking.mdx",
+        "reason": "file-budget",
+        "size": 5733
+      },
+      {
+        "path": "docs/chat-ui.mdx",
+        "reason": "file-budget",
+        "size": 2812
+      },
+      {
+        "path": "docs/introduction.mdx",
+        "reason": "file-budget",
+        "size": 6888
+      },
+      {
+        "path": "docs/mcp-servers.mdx",
+        "reason": "file-budget",
+        "size": 3620
+      },
+      {
+        "path": "docs/models.mdx",
+        "reason": "file-budget",
+        "size": 3268
+      },
+      {
+        "path": "docs/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 16175
+      },
+      {
+        "path": "docs/roadmap.mdx",
+        "reason": "file-budget",
+        "size": 1891
+      },
+      {
+        "path": "docs/api/overview.mdx",
+        "reason": "file-budget",
+        "size": 13207
+      },
+      {
+        "path": "docs/api/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 5304
+      },
+      {
+        "path": "docs/api/use-agent.mdx",
+        "reason": "file-budget",
+        "size": 34389
+      },
+      {
+        "path": "docs/authentication/overview.mdx",
+        "reason": "file-budget",
+        "size": 12556
+      },
+      {
+        "path": "docs/create-agent/overview.mdx",
+        "reason": "file-budget",
+        "size": 21818
+      },
+      {
+        "path": "docs/harness/initial-setup.mdx",
+        "reason": "file-budget",
+        "size": 2954
+      },
+      {
+        "path": "docs/key-features/code-mode.mdx",
+        "reason": "file-budget",
+        "size": 6087
+      },
+      {
+        "path": "docs/key-features/deferred-tool-loading.mdx",
+        "reason": "file-budget",
+        "size": 5539
+      },
+      {
+        "path": "docs/key-features/large-tool-responses.mdx",
+        "reason": "file-budget",
+        "size": 7732
+      },
+      {
+        "path": "docs/key-features/overview.mdx",
+        "reason": "file-budget",
+        "size": 11391
+      },
+      {
+        "path": "docs/key-features/subagents.mdx",
+        "reason": "file-budget",
+        "size": 12074
+      },
+      {
+        "path": "docs/ui-sdk/README.md",
+        "reason": "file-budget",
+        "size": 750
+      },
+      {
+        "path": "docs/ui-sdk/concepts/agent-modes.mdx",
+        "reason": "file-budget",
+        "size": 3246
+      },
+      {
+        "path": "docs/ui-sdk/get-started/quickstart.mdx",
+        "reason": "file-budget",
+        "size": 1459
+      },
+      {
+        "path": "docs/ui-sdk/guides/agent-modes.mdx",
+        "reason": "file-budget",
+        "size": 2306
+      },
+      {
+        "path": "docs/ui-sdk/guides/layouts-and-theme.mdx",
+        "reason": "file-budget",
+        "size": 6501
+      },
+      {
+        "path": "docs/ui-sdk/guides/layouts.mdx",
+        "reason": "file-budget",
+        "size": 2052
+      },
+      {
+        "path": "docs/ui-sdk/guides/troubleshooting.mdx",
+        "reason": "file-budget",
+        "size": 5434
+      },
+      {
+        "path": "docs/ui-sdk/reference/atoms.mdx",
+        "reason": "file-budget",
+        "size": 5259
+      },
+      {
+        "path": "docs/ui-sdk/reference/catalog.mdx",
+        "reason": "file-budget",
+        "size": 10739
+      },
+      {
+        "path": "docs/ui-sdk/reference/containers.mdx",
+        "reason": "file-budget",
+        "size": 2182
+      },
+      {
+        "path": "docs/ui-sdk/reference/events.mdx",
+        "reason": "file-budget",
+        "size": 9741
+      },
+      {
+        "path": "docs/ui-sdk/reference/hooks.mdx",
+        "reason": "file-budget",
+        "size": 2995
+      },
+      {
+        "path": "docs/ui-sdk/reference/server.mdx",
+        "reason": "file-budget",
+        "size": 3779
+      },
+      {
+        "path": "docs/ui-sdk/reference/theme.mdx",
+        "reason": "file-budget",
+        "size": 3157
+      },
+      {
+        "path": "docs/ui-sdk/reference/trueforge-ui.mdx",
+        "reason": "file-budget",
+        "size": 11463
+      },
+      {
+        "path": "docs/ui-sdk/setup-custom-servers/connect-with-truefoundry.mdx",
+        "reason": "file-budget",
+        "size": 3531
+      },
+      {
+        "path": "docs/ui-sdk/setup-custom-servers/custom-server.mdx",
+        "reason": "file-budget",
+        "size": 7835
+      },
+      {
+        "path": "docs/ui-sdk/setup-custom-servers/server-contract.mdx",
+        "reason": "file-budget",
+        "size": 12372
+      },
+      {
+        "path": "docs/ui-sdk/setup-custom-ui/custom-theme.mdx",
+        "reason": "file-budget",
+        "size": 5129
+      },
+      {
+        "path": "docs/ui-sdk/setup-custom-ui/mcp-oauth.mdx",
+        "reason": "file-budget",
+        "size": 4057
+      },
+      {
+        "path": "docs/ui-sdk/setup-custom-ui/slot-overrides.mdx",
+        "reason": "file-budget",
+        "size": 4901
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5807
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 11
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5410
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 16777
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1059
+      }
+    ],
+    "omitted_count": 44,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2766,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 50,
+      "complete": false,
+      "omitted": 44,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_60b53621e613597fa17b603d2e809993",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/truefoundry/trueforge/4bf9ce063019c29a0731a800cc81a2039b712572/3a164df5c5bd7b77/manifest.json",
+  "package_id": "pkg_8fb0fbdcdff1b7abd174c41b70149d3d3b2203aa1c533316ce3ded848e0582b0",
+  "repo": "truefoundry/trueforge",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d158e03b527eb57d3572815dd758bde0a46f76ea2d6d052e27901687ec6648a5",
+  "snapshot_id": "3a164df5c5bd7b77",
+  "sources": [
+    {
+      "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+      "git_sha": "c91a8122f4c4af1dd79b330c6f6f37cb180e906d",
+      "lines": 114,
+      "path": "README.md",
+      "repository": "truefoundry/trueforge",
+      "sha256": "4809a81b69515b1354dd3d304daa5f53bd9910144b46f608862fe9a2ae68338f",
+      "source_id": "src_7bbdab5e2b995489b8288bd030c53b41",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/README.md"
+    },
+    {
+      "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+      "git_sha": "d35fb1ad01c9e7e352a4ff1e2ecf3ab05a344f3d",
+      "lines": 227,
+      "path": "RELEASING.md",
+      "repository": "truefoundry/trueforge",
+      "sha256": "433eff20838a2145b8b8b21737ff171a8ef612fc64446b3b32f85019a9643637",
+      "source_id": "src_7703344396ae5857bf335a317b167f5e",
+      "stored": "releasing.md-87d6a57a759f.md",
+      "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/RELEASING.md"
+    },
+    {
+      "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+      "git_sha": "88b59aff91631e65a003d296db86c6d75164359b",
+      "lines": 31,
+      "path": "docs/agent-library.mdx",
+      "repository": "truefoundry/trueforge",
+      "sha256": "2f3e82291c7110e019bb0ca65470e005fdef87115022e06e88b22208d8b293be",
+      "source_id": "src_005664ec711d5c4c9a7c7416a8a1880c",
+      "stored": "agent-library.mdx-3cd1058d54d5.txt",
+      "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/agent-library.mdx"
+    },
+    {
+      "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+      "git_sha": "e03045022b22b2a30067c2009906f6763eb278c3",
+      "lines": 73,
+      "path": "docs/sandbox.mdx",
+      "repository": "truefoundry/trueforge",
+      "sha256": "8239edceaa68c40e2a8d4d30a4a27ea53d1616e62d9c2fcbde32f8716ea17284",
+      "source_id": "src_d535d729c6e054c3ab4c07de8de30322",
+      "stored": "sandbox.mdx-eeb216479a7e.txt",
+      "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/sandbox.mdx"
+    },
+    {
+      "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+      "git_sha": "896498b12b6b21dab9320113d85319361335924b",
+      "lines": 66,
+      "path": "docs/skills.mdx",
+      "repository": "truefoundry/trueforge",
+      "sha256": "72162124124d5cb4f8b724dce60d6ed973b6f30295b65ed7467b926fb53e9213",
+      "source_id": "src_0bf5565b74485e13bf77cb1be60755d0",
+      "stored": "skills.mdx-17fa66cf600f.txt",
+      "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/skills.mdx"
+    },
+    {
+      "commit": "4bf9ce063019c29a0731a800cc81a2039b712572",
+      "git_sha": "224b2d17a9b5ed7a93485b6dc14f2b71785783c8",
+      "lines": 56,
+      "path": "docs/ui-sdk/concepts/architecture.mdx",
+      "repository": "truefoundry/trueforge",
+      "sha256": "950ecc7f65ecd4a6c3035eec160c73dd0c4ea423fc06ab03e6656e9ad0d9bf46",
+      "source_id": "src_af4b9237e0ad510db44ff75978805333",
+      "stored": "architecture.mdx-0f3286e66cf2.txt",
+      "url": "https://github.com/truefoundry/trueforge/blob/4bf9ce063019c29a0731a800cc81a2039b712572/docs/ui-sdk/concepts/architecture.mdx"
+    }
+  ],
+  "summary": "TrueForge is an open-source (MIT) TypeScript agent harness that runs the agent loop and exposes it via chat UI, HTTP API/SDK, and an embeddable UI SDK, with SQLite local mode and Postgres+Redis hosted mode. Evidence covers its architecture, sandbox-as-tool design, skills system, UI SDK composition, benchmarking claims, release workflows, and a documented multi-tenancy limitation.",
+  "superseded_claim_ids": []
+}

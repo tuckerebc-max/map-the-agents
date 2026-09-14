@@ -1,0 +1,609 @@
+{
+  "applied_operation_id": "op_b853511f6cf7437296cd9bbc56d77590",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_994851ec715d13bd3c17e01cb8f590fa504145cccfc2362879a238a9127a0f32",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L10-L10"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L12-L14"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 2,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L1-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_537a69f28bee62c9a3116abc9abc070f7da370bc552c58d6e9d30bed20346e06",
+        "slc_9ea41be72923967f0c92e6b40416878474e5860186019f11ea0861c82d5ea548",
+        "slc_b0c4a3ab2ec30690e7d5e99a65338324aba4577099d5db92dc32acb3fecd6c55"
+      ],
+      "text": "A credential-stealing supply-chain worm was hidden in core/telemetry/ from August 2025 until 11 June 2026; users who cloned and ran GPT Pilot from source in that window are told to rotate credentials."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_add6e19d55c26b3f7c801e06a31a1216fd1970c21d0aee6985264a8504c42436",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a99cda1b0e2811cd932dbde3969e700f4f318e99866acb6a18c9153ecedf3fe"
+      ],
+      "text": "The malicious commit added a hidden loader (core/telemetry/_hooks.py) wired via core/telemetry/__init__.py that downloaded the Bun runtime to execute an obfuscated payload (core/telemetry/_runtime.bin) harvesting cloud/AWS keys, GitHub and npm tokens, and SSH keys."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95a6942bf56ea442fda37fc0594b27def9d7ad04396ad166022ac7b97a3a9d18",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L16-L16"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L57-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc347d8d1fc38133f98e927550d15b7619935702181436264d883de81967059c",
+        "slc_f50e0a64fd15634c0e0ca88fdc246fbbcd78af4863f6d1254c9cf6ff39cfbb47"
+      ],
+      "text": "The repository is no longer actively maintained, which the notice says is why the malicious commit went unnoticed; the notice and file removals are a security cleanup, not a resumption of development."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8d038ec93fd1091ae882d8b70dc3c15e88e282dd939741e8dd21543680279ba",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 217,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L207-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07bfdd6751b21b9fffca7ee5db2fb1d3759b605f7bb620b9ba9c311fbbdaf862"
+      ],
+      "text": "The app-building pipeline uses named agents including Specification Writer, Architect, Tech Lead, Developer, Code Monkey, Reviewer, Troubleshooter, Debugger, and Technical Writer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf1a8d962204e8374ea03d3b2a881622201ee68dd81a27d8b812d4cdeae5c923",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 184,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L182-L184"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 198,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L198-L198"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 178,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L176-L178"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 202,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L200-L202"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 170,
+          "line_start": 168,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L168-L170"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 192,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L190-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11f72b33bf9095c64e0d1b350ad20d65401a34fd2ce52b8da17c4404ac867d3c",
+        "slc_4a2f88d1b2fc8e6a7164e74f96eb2fd697c804184cc5f80d5e57e7c6b9c6bdfc",
+        "slc_5f18e22a902b7389d4ab7dfead6b8b9822b1cbf8f37940f98f249985c8a6c019",
+        "slc_63cb7ca8f80bfbde0582d751907c5a1477fe3131cc93a6b9d6d8f24641b50711",
+        "slc_b49bec8dae5503dd01fd26814401f7c202ffd763f80afe1b4dc417bd4ad108d1",
+        "slc_cceaf2c7d3299b3c85ae6d7612a9d16c587c66a817e6c762256fa773beae00b2"
+      ],
+      "text": "The CLI supports listing projects (--list), resuming a project or a specific step (--project <app_id> [--step <step>]), deleting a project (--delete <app_id>), and --help for all options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5d89c1cde16839702308dc926c5836aadccf59c9976fa17934353a8ad57849f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 194,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L194-L194"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 186,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L186-L186"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eae82cbc6a3fabd8a296f75c695095c74f73dddad8cf4692c380fba0f2f1134",
+        "slc_330dd376282c796dabe3578df815f17a3b7cac786ca76a68eb06fb5e0a75bac4"
+      ],
+      "text": "Documented warnings state that resuming from a specific step deletes all progress after that step, and that deleting a project cannot be undone."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f36762e7d8348e18228f2171001b9db21066ccd1d541a977a2c644024229496",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L148-L148"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 146,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L135-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1416ab65e892fdd36c5882f33d059ef6d90c2d4b8814cae654d940857081201a",
+        "slc_9bcdf5ea6e69b612c75cbd1a1a93825d3b5b25a422291f5961504ea854664628"
+      ],
+      "text": "Generated code is stored in a workspace folder named after the app name entered at startup; config.json (copied from example-config.json) holds LLM provider keys/endpoints and optional fs.ignore_paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15e63c1136e7283e9f90c9c0d93780040306837bc639f98827d6c3de3c536540",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "30c41eac0eafffb863a7da21b62bd8a97aeb5a69",
+          "line_end": 38,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/requirements.txt#L1-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d026746b4a60cb97f46e189da499e9c8d825ff502b2795ccf0a7f29404e8c387"
+      ],
+      "text": "requirements.txt pins Python dependencies including openai 1.40.6, anthropic 0.39.0, groq 0.6.0, sqlalchemy 2.0.32, pydantic 2.8.2, tiktoken 0.8.0, and sentry-sdk 2.20.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c4af4511258de7e8f440e7db44946b6f056676b2c3c540d2591b1de525d9a4c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 162,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L162-L162"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 156,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L156-L156"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 160,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L158-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2fc32c7d849cec464fdd050b26fccdd9b0a428519511577d85d120643cec514c",
+        "slc_67cc992c22c07f5fb3078d6487e0d9aaa27c2aa033b7c6d02a328407c812f0cc",
+        "slc_f3e4c3dbe7b07da4ca9852567b2d403aad7a44c8fc62690e13fc3c69661f9ebe"
+      ],
+      "text": "SQLite is the default database; PostgreSQL support requires additionally installing asyncpg and psycopg2 and setting db.url to a postgresql+asyncpg:// URL in config.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3afe4e2d8e5f35702c43bfb93eb313da7292f0f5e44c24c3472943235e12920e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 225,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L223-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a715b131a6712c7f73d735b3c52b2b0300d1d300f7c777a2e510f92df6dd1be"
+      ],
+      "text": "GPT Pilot filters code shown to the LLM so each conversation contains only code relevant to the current task rather than the entire codebase, aiming to work at any scale."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00cbf53e041ad2c71b479f6488fec4ed06893a8265f5fcf04ca144c5f5b21ae9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 225,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L223-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a715b131a6712c7f73d735b3c52b2b0300d1d300f7c777a2e510f92df6dd1be"
+      ],
+      "text": "GPT Pilot codes the app step by step with the developer in the loop, debugging issues as they arise, in contrast to similar tools that output an entire codebase at once."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf1e31097c7f7ac3c7459e853ab82e050333204a269aca69483544a69153f16b",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 217,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L207-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07bfdd6751b21b9fffca7ee5db2fb1d3759b605f7bb620b9ba9c311fbbdaf862"
+      ],
+      "text": "The Architect agent checks whether the app's technologies are installed on the machine and installs them if not."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bec08ed3b86c9d55465a6df96049236744134a6461cb69082809614846c4fa5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "204f644eb9450dff70d9f0114eceb737a9d86f94",
+          "line_end": 23,
+          "line_start": 9,
+          "path": "docs/TELEMETRY.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/docs/TELEMETRY.md#L9-L23"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "204f644eb9450dff70d9f0114eceb737a9d86f94",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "docs/TELEMETRY.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/docs/TELEMETRY.md#L44-L44"
+        },
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "204f644eb9450dff70d9f0114eceb737a9d86f94",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "docs/TELEMETRY.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/docs/TELEMETRY.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5705333df2028339840c674221e4ad51e04993d44b58bb03010fe5c61c577808",
+        "slc_797bcd04856bc8645b82497c608657b5af174b0e8842c9123cb14cd00462d3f6",
+        "slc_df984f3f00c8993ffbbb1192018bda07839b620313c9ce87947d10391395b861"
+      ],
+      "text": "Telemetry collects data such as total runtime, command runs, LLM request counts, OS, Python version, model, and task/step info; it can be disabled by setting telemetry.enabled to false in ~/.gpt-pilot/config.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_545233f2a39450e38275aa1ab70ae63eb6ae5a08a72dfa6c055b1c3dbb503b81",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+          "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "pythagora-io/gpt-pilot",
+          "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7b2767cdee26b49d6f89f1515705a6be7c95510e41635b4260a61f1303fa4a7"
+      ],
+      "text": "GPT Pilot is the core technology for the Pythagora VS Code extension, positioned as an AI developer that can write full features, debug them, and ask for review."
+    }
+  ],
+  "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 239,
+        "path": "README.md",
+        "size": 12695
+      },
+      {
+        "lines": 38,
+        "path": "requirements.txt",
+        "size": 641
+      },
+      {
+        "lines": 49,
+        "path": "docs/TELEMETRY.md",
+        "size": 2827
+      },
+      {
+        "lines": 9,
+        "path": "CHANGELOG.md",
+        "size": 180
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 518,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_3ffde9d22f6a5a658acff1c024758460",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 4,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 3,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/pythagora-io/gpt-pilot/9b763fdaf0020c7d8abacc7b58b2b09e57494623/e71333c416601489/manifest.json",
+  "package_id": "pkg_ae7c19dd2e62002acb0fac523649969a8f2a31c2deb8761815ab825aa32dd6fc",
+  "repo": "pythagora-io/gpt-pilot",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b86cd32130089a9b874253ee85460ea54f3a67579d0614d2f53335287f7c77ce",
+  "snapshot_id": "e71333c416601489",
+  "sources": [
+    {
+      "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+      "git_sha": "394c3a1c4e5716141ebd950f4f7150b3c446e673",
+      "lines": 9,
+      "path": "CHANGELOG.md",
+      "repository": "pythagora-io/gpt-pilot",
+      "sha256": "d14d1309fe9e369062a330995ea5938de64089006c6a91da536a70342113d3ed",
+      "source_id": "src_398e50a623685b2bb75d1ec1ab5438f9",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/CHANGELOG.md"
+    },
+    {
+      "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+      "git_sha": "384ff0f6dadb830a1747ab5a98c5bb68df4078c5",
+      "lines": 239,
+      "path": "README.md",
+      "repository": "pythagora-io/gpt-pilot",
+      "sha256": "6c0993a2e62e4906ebc08e2e2bbc04484f2792e58bd62fde9fccffd89720ca8c",
+      "source_id": "src_d8ec9606c4bf54bdb578c4e50ad21c00",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/README.md"
+    },
+    {
+      "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+      "git_sha": "204f644eb9450dff70d9f0114eceb737a9d86f94",
+      "lines": 49,
+      "path": "docs/TELEMETRY.md",
+      "repository": "pythagora-io/gpt-pilot",
+      "sha256": "21b9a3bc2e49924e3bfe7c57657b83ced0a6064735ec62a572b0b555d314b91d",
+      "source_id": "src_6af09035f31452c6b8c50db7931529a5",
+      "stored": "telemetry.md-4b0c652d2081.md",
+      "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/docs/TELEMETRY.md"
+    },
+    {
+      "commit": "9b763fdaf0020c7d8abacc7b58b2b09e57494623",
+      "git_sha": "30c41eac0eafffb863a7da21b62bd8a97aeb5a69",
+      "lines": 38,
+      "path": "requirements.txt",
+      "repository": "pythagora-io/gpt-pilot",
+      "sha256": "2af45ded4122f616851aa64b0f03169466829cad8424279f2305714293b9084f",
+      "source_id": "src_4839c08afb605bf4baa0672168169b44",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/Pythagora-io/gpt-pilot/blob/9b763fdaf0020c7d8abacc7b58b2b09e57494623/requirements.txt"
+    }
+  ],
+  "summary": "Evidence covers a README security notice describing a credential-stealing supply-chain worm hidden in core/telemetry/ (Aug 2025–11 Jun 2026) in an unmaintained repo, plus product docs for the agent pipeline, CLI, config/workspace, telemetry, and pinned dependencies.",
+  "superseded_claim_ids": []
+}

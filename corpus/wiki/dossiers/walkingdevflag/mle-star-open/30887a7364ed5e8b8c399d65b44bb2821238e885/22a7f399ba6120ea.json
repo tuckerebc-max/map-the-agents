@@ -1,0 +1,552 @@
+{
+  "applied_operation_id": "op_f0ede819810c4ea7bf5919f32443b08c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_74f95a639b029e8b5c29b01d1cd889d94285bcfbdfe8d3d675a335500ede939d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L179-L179"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 6,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L4-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3827dd18c15c462fcb9bd6ba68754ef76a3db608c72d3b206fcc53d238cb2b52",
+        "slc_73e31a4df78d6eeac6eb0460c401e16b5c1a57ea079d9cc98c1b48e10f906399"
+      ],
+      "text": "The project is an unofficial, Google-free, local-friendly reimplementation of the MLE-STAR multi-agent ML engineering pipeline, not affiliated with the original authors or Google."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fc845e6030a03d192de38b58b9878d78f828092eb7b21175727f12d06c191c2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 18,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L12-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a46d0886ca42ee662b54055f1603722c6997bbdb08f31e2444f15a14aa05d3dc"
+      ],
+      "text": "The pipeline consists of multi-agent stages: initialization, refinement, ensembling, and submission."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc30b34ad08f800838f29aa44cf6cf36007fff27d49b27cb948e6aebaa4cc195",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "eb897fbee4fa55d89735250b10727742d6a11192",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "requirements.txt",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/requirements.txt#L17-L17"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "eb897fbee4fa55d89735250b10727742d6a11192",
+          "line_end": 10,
+          "line_start": 6,
+          "path": "requirements.txt",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/requirements.txt#L6-L10"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "eb897fbee4fa55d89735250b10727742d6a11192",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "requirements.txt",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/requirements.txt#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d76de06c8224ca7f3830d1fa96b32a55a55914f8d89ebc683294eb426833846",
+        "slc_572519cea3826fa62abf74a9d9503af068153c7d16fc2915bffcbbb16b23bf34",
+        "slc_58ba59c6ab8eefd9ab9994155c257c231b22725646081fec834f641a1903d5d0"
+      ],
+      "text": "Runtime dependencies include openai, httpx, python-dotenv, pydantic, and duckduckgo-search, plus an ML stack of numpy, pandas, scikit-learn, and torch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be49af2bdd3118f233fa1f54b70849ae1125938e796351de5973d2122314a749",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 114,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L112-L114"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 102,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L100-L102"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L106-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a42d7cec562108fb52588202b61f27e57786a899baa6a6d967c9d3a752a8c9d",
+        "slc_97452c6855463781b9263392025c218e7bc776eba3cb54d1ab7e41ce4cafcd5b",
+        "slc_f3cf90de8a8c3c18112e330e559b05760e09c3a5b80d2ed087ab4a79e1a941bb"
+      ],
+      "text": "The product is operated via CLI scripts: run_pipeline.py for the full pipeline, run_task.py for a minimal run with fewer LLM calls, and make_submission.py for Kaggle-style submission formatting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_275f08c27c3de840c267ed8d8eaf09da32ac66c9a3b53aee1237ae74eac9ebe6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L67-L67"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 61,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L59-L61"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L131-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eb646083d52868ae3b0cc4021b7af7207374e7e503229b4d7939563e84a0be7",
+        "slc_4c8fa49e563f13e50575d82ebb05801dedc7dce63e4b559ea8e2b21130f1be7a",
+        "slc_64ec8bab5ef4253ccc3cddfbbd4be62ed6252814eea4960e5348d2c4af8276ea"
+      ],
+      "text": "Configuration is via a .env file (e.g., OPENROUTER_API_KEY, ROOT_AGENT_MODEL); environment variables override defaults defined in shared_libraries/config.py DefaultConfig."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8727393d4ce027f35102adbc50af4de5ec7b9b2983eb9916f7203fd3b4dc7ffd",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L92-L92"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 81,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L75-L81"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 90,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L85-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e4109869bc257fac8090f2f7e0b2ab78d587dae50bbf69cede96b94ec7d6434",
+        "slc_57b70fbbc8f6200661b9e3195c162d97678ea3bd8f06aa804abf52a3ea5e4c57",
+        "slc_df36ebd6016b27c7e7902e5411fd58247cd926fefb58839ef78aac86f951fcb7"
+      ],
+      "text": "Tasks are defined by a directory containing task_description.txt (task_name, target, id_column, metric) plus train.csv and optionally test.csv; train must include the target column while test omits it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a10eef9af38838a265240b782ce0194d5779699fef989869f1eaf03201184ec",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 125,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L118-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_246b52086eb168f992b1c18893997ea218bcf9c0b5397252629d2ae0d8253728"
+      ],
+      "text": "Runs write artifacts under machine_learning_engineering/workspace/<task>/<run_id>/ with init, refine, ensemble, output/predictions.csv, and logs subdirectories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5fb75fb9a994e0aa4e0ec38f161fc2fc7eb4a913127dc082c548a734a7ae67a4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 157,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L154-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f262fa6348e0cf43954533143e3e44c86b7a150c0a321433d0f135ae5855e08"
+      ],
+      "text": "The project is not sized for official MLE-Bench specs (36 vCPUs / 440GB RAM / A10 24GB) and targets local experimentation; OpenRouter free tier is roughly 50 requests/day."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e658270a67699b9174eaea1240f32a5d9226e1b04944a03765685fa936c7277",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "c0c1b91bfc82b5c65a95e89059999a01d4cf6218",
+          "line_end": 15,
+          "line_start": 10,
+          "path": "ARCHIVE.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/ARCHIVE.md#L10-L15"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 157,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L154-L157"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "c0c1b91bfc82b5c65a95e89059999a01d4cf6218",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "ARCHIVE.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/ARCHIVE.md#L6-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3071287bce9497be94bd563da72d76bd6bd0db90d5fe9360ddc4738a9935a237",
+        "slc_3f262fa6348e0cf43954533143e3e44c86b7a150c0a321433d0f135ae5855e08",
+        "slc_46c1f275e29b83a64522984a216ae617db65b35120ff04e98bc077e517999ccb"
+      ],
+      "text": "The Ollama local-model adapter is deferred pending provider and evaluation stabilization; the archive cites an evolving provider interface, in-flight tool layer, and a not-yet-merged prompt/artifact cache as reasons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a4527ef1a42a0e40635c1b30a572aa8d6ecbe7da1206af43ca5561b5cdebf90",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "eb897fbee4fa55d89735250b10727742d6a11192",
+          "line_end": 24,
+          "line_start": 23,
+          "path": "requirements.txt",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/requirements.txt#L23-L24"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 144,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L142-L144"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L146-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12a45c0eb86c552b2a67a1d226a1df1abe126e87a43cb65e0801c17a2eddc071",
+        "slc_14a7c4812d10c9e2b104ee23f1169d447bb20a349a7d12a0d1bee8386c48dbe0",
+        "slc_7d293803fc00051167f031474cde3f8778d885763cacbfe6d6eb6e2208541478"
+      ],
+      "text": "Repository development practice: tests are run with pytest, and scenario and pipeline tests live under eval/ and tests/; test dependencies are pytest and pytest-asyncio."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_757fa069b8368224ea22f904a11a136ea78470fd134d00252021e994a599b124",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 37,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L35-L37"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 55,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L54-L55"
+        },
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 48,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L47-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_30f3a4e27d695d89c83745f8b7ce44ba8b454aabbb5251f9c439f4fec5d019f4",
+        "slc_893a612aa90e037adbdf53ac3d2040b6d3fc66ddd53ac0cdb09694ddcc5ece78",
+        "slc_971e3b0069708fb05a2e75af8fe7e5b0c9007454e9c502320b3ded9d9a89862c"
+      ],
+      "text": "Repository development practice: setup instructions call for Python 3.12+, Git, optionally Poetry, a conda environment, and pip install -r requirements.txt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee7a8de3104129f25ed9bedfd228d0c2d6351cb3469c5e7ad58a05fdac0e4ab5",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+          "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+          "line_end": 173,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "walkingdevflag/mle-star-open",
+          "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md#L172-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f747d6a1157aa9bab540deac98022f89fd5c17c5f78705ae2aad766ca169bcf"
+      ],
+      "text": "The project reimplements the approach of the MLE-STAR paper (arXiv:2506.15692), which it cites as the original work."
+    }
+  ],
+  "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 179,
+        "path": "README.md",
+        "size": 4345
+      },
+      {
+        "lines": 34,
+        "path": "ARCHIVE.md",
+        "size": 2305
+      },
+      {
+        "lines": 24,
+        "path": "requirements.txt",
+        "size": 557
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 74,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_481b527657ae54179dbbfc82504e79a4",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/walkingdevflag/mle-star-open/30887a7364ed5e8b8c399d65b44bb2821238e885/22a7f399ba6120ea/manifest.json",
+  "package_id": "pkg_293b1694418527eeecff12b34544c26a7b8bd73186eaff8992e23f2c5714fe6f",
+  "repo": "walkingdevflag/mle-star-open",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "22abc560b4d54be04691054b1de6cfb34281520998d123eed808f0c336d407d4",
+  "snapshot_id": "22a7f399ba6120ea",
+  "sources": [
+    {
+      "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+      "git_sha": "c0c1b91bfc82b5c65a95e89059999a01d4cf6218",
+      "lines": 34,
+      "path": "ARCHIVE.md",
+      "repository": "walkingdevflag/mle-star-open",
+      "sha256": "547f402822f879887e39c1f33e4ba3ecedbf4ebdf50d2b6c2c3588cee54ce7ae",
+      "source_id": "src_b46e726197b7541ea8427fbd8aaf74c0",
+      "stored": "archive.md-db175f08ec4c.md",
+      "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/ARCHIVE.md"
+    },
+    {
+      "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+      "git_sha": "d6254c9769248b309546062dc085dc8b5735df56",
+      "lines": 179,
+      "path": "README.md",
+      "repository": "walkingdevflag/mle-star-open",
+      "sha256": "04f13ba0be19bf3c7e5666b8f3da2be6a3552d7f2aeba0aab97b0241c80f6d20",
+      "source_id": "src_be4d03b54a3b56a8b56ee4bde407bec4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/README.md"
+    },
+    {
+      "commit": "30887a7364ed5e8b8c399d65b44bb2821238e885",
+      "git_sha": "eb897fbee4fa55d89735250b10727742d6a11192",
+      "lines": 24,
+      "path": "requirements.txt",
+      "repository": "walkingdevflag/mle-star-open",
+      "sha256": "0f8b97acd6ca1b41fad430fd75d69378139158968e362b932b468190d883d81d",
+      "source_id": "src_5ac1317b787f5059921a603a4cf665e0",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/WalkingDevFlag/MLE-STAR-Open/blob/30887a7364ed5e8b8c399d65b44bb2821238e885/requirements.txt"
+    }
+  ],
+  "summary": "MLE-STAR-Open is an unofficial, Google-free reimplementation of the MLE-STAR multi-agent ML engineering pipeline using OpenAI-compatible APIs (OpenRouter) and DuckDuckGo search, operated via CLI runner scripts with .env/environment-variable configuration. The Ollama local-model adapter is explicitly deferred, and the project targets local experimentation rather than official MLE-Bench scale.",
+  "superseded_claim_ids": []
+}

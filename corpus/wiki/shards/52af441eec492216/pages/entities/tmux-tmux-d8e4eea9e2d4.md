@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_27c5fd616a6bb78ce44e987b77dd2849d5a1d674de895175f8fe837439961dd3
+- clm_6971708f0f82f801bb8f6910b6ed8650bb7ad0ccfb91bde49be79de8c62b65c7
+- clm_8d952bf274531ce9f46fcc62b8f7da2493203d2cf1108fff0fbc9ee5f316681f
+- clm_92518f96d15259b252a258bc8fb5945243c130ed4f3068e35bc29c05c4af6bbb
+- clm_9da3ebf2dc5c7b4247249dc256fdba2993dab45209210e763aa8fd4a939069c2
+- clm_abaf41c91a4195f72f30d51363a9feb9a6902999967da1567841af94b676a9ec
+- clm_b3c06bca6452961bc73c755ac617d5677c0fdba160034ac05b905170e618c5aa
+- clm_e867879afd43104d0451c4171b89a378eff0933180e32bca3c879a68a7871040
+- clm_ffe31cf9f6457fcf780241967a4e36e44e9507fef73317e0951bf56ba9418e6a
+maturity: draft
+page_id: pg_9584880220c0574a9aa7d8e4eea9e2d4
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: tmux/tmux
+updated_at: '2026-09-14T04:26:40Z'
+---
+
+# tmux/tmux
+
+<!-- rcw:begin owner=entity:ent_816c9fbb64855f9e80cdb0cc13807fa5 block=evidence -->
+- tmux/tmux is mentioned in this evidence. [@claim:clm_27c5fd616a6bb78ce44e987b77dd2849d5a1d674de895175f8fe837439961dd3] [@claim:clm_6971708f0f82f801bb8f6910b6ed8650bb7ad0ccfb91bde49be79de8c62b65c7] [@claim:clm_8d952bf274531ce9f46fcc62b8f7da2493203d2cf1108fff0fbc9ee5f316681f] [@claim:clm_92518f96d15259b252a258bc8fb5945243c130ed4f3068e35bc29c05c4af6bbb] [@claim:clm_9da3ebf2dc5c7b4247249dc256fdba2993dab45209210e763aa8fd4a939069c2] [@claim:clm_abaf41c91a4195f72f30d51363a9feb9a6902999967da1567841af94b676a9ec] [@claim:clm_b3c06bca6452961bc73c755ac617d5677c0fdba160034ac05b905170e618c5aa] [@claim:clm_e867879afd43104d0451c4171b89a378eff0933180e32bca3c879a68a7871040] [@claim:clm_ffe31cf9f6457fcf780241967a4e36e44e9507fef73317e0951bf56ba9418e6a]
+<!-- rcw:end owner=entity:ent_816c9fbb64855f9e80cdb0cc13807fa5 block=evidence -->
+
+## Researcher notes
+

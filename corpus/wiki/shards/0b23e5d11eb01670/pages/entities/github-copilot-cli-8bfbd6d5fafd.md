@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1452fa9735708195c43a44bc44fe8a0fe11c6051aded5261b21f65ba8d47163c
+- clm_2cc582112bf37de6e49f82990ba6b3037b71aa56e91dab63988949f039ec7736
+- clm_3258a2086b6292153bc148f74b67c37d71a2888dd2c50b2fdfea6bc88714b21f
+- clm_36e3fb628626eb1f605020bd4d97ef34115b013520bc6bbdbdac705269553d3e
+- clm_5e7f30b9b2ed81dd7587fed1aad297df587c1782344ab1d6baff21eaf80c2f80
+- clm_6e691c77568270a4b4fe0e52594e69333f2c834c511ebb552ead9284362d89af
+- clm_764d416c745379f0a1888ede3abcf4ccfc173c9140d551001ec409104646ecec
+- clm_89eb8a456c13f9e497dcb8ed8364a31b217b91e37f0e10fff0a382d7be13d8cc
+- clm_b939717ed8ebab2d7756343ccae25547f8143c9920764e03d4b238bce8d49fa5
+- clm_c5f48f9b5728efeffe61568054bf7fd697f8efb2af7c5db5b95aa37e8f1c44d4
+- clm_d50c7e68a25fb2e2cc8b9b143fc20640537c27999caaee9141287c9270f5e2aa
+- clm_da860a3e29d6a6e11a2424d7284ef3b24a5a71e841e32daaddfe931d7a7ffb2f
+maturity: draft
+page_id: pg_59a6ee9b1dbc5e2fafbf8bfbd6d5fafd
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: github/copilot-cli
+updated_at: '2026-09-14T01:52:03Z'
+---
+
+# github/copilot-cli
+
+<!-- rcw:begin owner=entity:ent_88d85ff77a0f51d2b3c98c0744413464 block=evidence -->
+- github/copilot-cli is mentioned in this evidence. [@claim:clm_1452fa9735708195c43a44bc44fe8a0fe11c6051aded5261b21f65ba8d47163c] [@claim:clm_2cc582112bf37de6e49f82990ba6b3037b71aa56e91dab63988949f039ec7736] [@claim:clm_3258a2086b6292153bc148f74b67c37d71a2888dd2c50b2fdfea6bc88714b21f] [@claim:clm_36e3fb628626eb1f605020bd4d97ef34115b013520bc6bbdbdac705269553d3e] [@claim:clm_5e7f30b9b2ed81dd7587fed1aad297df587c1782344ab1d6baff21eaf80c2f80] [@claim:clm_6e691c77568270a4b4fe0e52594e69333f2c834c511ebb552ead9284362d89af] [@claim:clm_764d416c745379f0a1888ede3abcf4ccfc173c9140d551001ec409104646ecec] [@claim:clm_89eb8a456c13f9e497dcb8ed8364a31b217b91e37f0e10fff0a382d7be13d8cc] [@claim:clm_b939717ed8ebab2d7756343ccae25547f8143c9920764e03d4b238bce8d49fa5] [@claim:clm_c5f48f9b5728efeffe61568054bf7fd697f8efb2af7c5db5b95aa37e8f1c44d4] [@claim:clm_d50c7e68a25fb2e2cc8b9b143fc20640537c27999caaee9141287c9270f5e2aa] [@claim:clm_da860a3e29d6a6e11a2424d7284ef3b24a5a71e841e32daaddfe931d7a7ffb2f]
+<!-- rcw:end owner=entity:ent_88d85ff77a0f51d2b3c98c0744413464 block=evidence -->
+
+## Researcher notes
+

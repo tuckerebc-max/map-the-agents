@@ -1,0 +1,771 @@
+{
+  "applied_operation_id": "op_ec7d69edafab4e24a476a6e6e73b17a7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0cd17d9257880fef00d88ec6e0623d2a933ee10f174623a99d5802addfbbbc2b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 311,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L297-L311"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73f22a3afb1714a42fe4cbf0f42d77d37ccb9fdfccd9dfb721a43d86db9f3532"
+      ],
+      "text": "The app is Electron with three contexts: src/main as the shell, src/preload as the sole bridge exposing window.nodeTerminal, and src/renderer as React UI, with src/shared holding types and IPC channel names used by all three."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_087676e90631b7f7e584a10785e506fad53963e64aa14b73af9c0f67d5c57a76",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 311,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L297-L311"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73f22a3afb1714a42fe4cbf0f42d77d37ccb9fdfccd9dfb721a43d86db9f3532"
+      ],
+      "text": "Services (PTY, workspace/settings, git, agents, hooks) live in src/core behind a CorePlatform interface and never import Electron; the browser Server Edition boots the same services over a WebSocket-RPC bridge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7cff94270b1ed89720011b86265ae6f6a75efd57da92e5e0cf326e1e7ec5b742",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 311,
+          "line_start": 297,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L297-L311"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73f22a3afb1714a42fe4cbf0f42d77d37ccb9fdfccd9dfb721a43d86db9f3532"
+      ],
+      "text": "The renderer depends only on a TerminalTransport abstraction: LocalTransport talks to the local host and RemoteTransport to a remote agent over SSH, so remote projects drop in without canvas UI changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e02a8c44ce62f8ec6d42e2c852f68e49a5e16fb11272a16e82e0dfefaaf78a8",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 161,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L132-L161"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "c2229f5c3b8302cc6a6289920d79e290a19481a9",
+          "line_end": 41,
+          "line_start": 32,
+          "path": "THIRD-PARTY-NOTICES.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/THIRD-PARTY-NOTICES.md#L32-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be9474040cca0c842b2c775f45e3e5ef0f2b577fc5352479f6f9bb88a61177ca",
+        "slc_d69f6a6862bb9ec2705152f2a83372283431a61b426fcc2fa963fc96441fe275"
+      ],
+      "text": "Terminals run in persistent tmux sessions surviving node remounts, app restarts, and machine reboots, restoring scrollback and resuming agent sessions via claude --resume; the macOS app bundles its own tmux, preferring any system tmux."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0184dba068d5c2ef3ad6babcd347df1e4ce76d794ec9f615e7a8f80f55f5deb",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 79,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L76-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_509a20f24e0986c210c684f27d36a12a311fcd8ba0f0fe3b961940b1b3821639"
+      ],
+      "text": "Agent status is hook-driven rather than output-scraped, showing RUNNING / NEEDS YOU badges, subagent cards with live transcripts, a per-node context meter, OS notifications, and in-node permission prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be7cc3e4fd93465e3cfa218f813650761bd9956dd5d486ea8c43f4afbbe2227c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L125-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ff57bc0518f82445872e07cfe4c17bd04d38c8d4640e65fb66251824567f4932"
+      ],
+      "text": "Node kinds include terminal (xterm + tmux), agent (Claude Code, Codex, Gemini, Copilot, opencode, Grok, custom), sticky notes linkable as agent context, groups bound to git worktrees, Monaco editors, diff views, and web/video nodes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_737518d05fb0451597e68b750ca1d8e529ab692c5da2529c48ed95fb018cb2b5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "c2229f5c3b8302cc6a6289920d79e290a19481a9",
+          "line_end": 25,
+          "line_start": 8,
+          "path": "THIRD-PARTY-NOTICES.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/THIRD-PARTY-NOTICES.md#L8-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52dcf72fa7416cf6f021f232c0250143b68eb9e0c24ce446b2fcfac45f5ed67c"
+      ],
+      "text": "Bundled components include Electron, React, React Flow, xterm, Monaco, node-pty, zustand, electron-updater/builder, ws, and tweetnacl, plus tmux/libevent/utf8proc in macOS builds; the Anthropic agent SDK is proprietary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25333948595f7f979f919cdc767158311e7056a49176ff63f6d0982ab59dfa91",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 226,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L207-L226"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e2f5c043a86f52ba3d747fce5a5fc9c74597acfaeaf59ce8125096bafe3d1d7b"
+      ],
+      "text": "Windows support is beta: the installer is unsigned, updates are manual, and restart-to-restart session continuity is still landing because Windows lacks tmux; a standalone session host replacing it is being packaged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_661d393fc66356c62e7d5a27ac9c1a6eabb725268487c261bcd2b6db718c25ec",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 168,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L165-L168"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02c66914095aca507c6db0d667231ba866ccdac098ec941cb0752462f25a5fec"
+      ],
+      "text": "The Server Edition runs headless on a Linux or macOS host, accessed from any browser with single-user password auth, a WebSocket bridge, and the same renderer as the desktop app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f898eaa8d37498fe04c0500d3acb5e9bd1268b603d1a4ea416ada4bc7a7d947",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L20-L23"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 18,
+          "line_start": 13,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L13-L18"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 275,
+          "line_start": 264,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L264-L275"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8bc97a51f743d8edbabc5ba599076a02aa1ce3c0bbb2055dc38711c55329653c",
+        "slc_eb252a7e1f63a7f020cab44bd8efbd4de2b0c8e751002f6551b2a12210f898a0",
+        "slc_ff3370ceffa963f9ffff7bfbb2f46769f8fe1921499fcd3fc1445a1513077f3f"
+      ],
+      "text": "Repository development practice: contributors run npm install, npm run dev, npm run typecheck (described as the fastest correctness gate), and npm test (vitest unit + integration); Windows uses bootstrap-windows.bat instead of npm install."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36c34b27f25898c9ea153d3d4bc65b66f48916b9dff2036ebc70a7fdd2f1a3d7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 48,
+          "line_start": 47,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L47-L48"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L50-L52"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_738d5c50253e6b94296941b3f50cfd26553458804fa3bc6f2b3c4b3bc84987cf",
+        "slc_aa8124a31acb604d1c2c339a5c94839fb59fe7661c390c389d3c7863915b0fb3",
+        "slc_f49a61a5efa8b11e2c52c70d7d50121ccc5c941d7421d2b06311d56307252b79"
+      ],
+      "text": "Repository development practice: the process-boundary split is enforced by guard tests that fail if src/core or src/server import electron or ../main/*, and new service logic must go in src/core behind CorePlatform."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_897141901f4d7d443af844eafbad34eac0a0b294dcf626b3cb507b0b77601353",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 195,
+          "line_start": 187,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L187-L195"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 271,
+          "line_start": 267,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L267-L271"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+          "line_end": 173,
+          "line_start": 165,
+          "path": "CONTRIBUTING.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md#L165-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_59be09c210c7ae3e72512cc28b9bbf00e2aa4a543c33dbf4c232db8a2328d693",
+        "slc_ba876b872841716ea8df53cf047a67ea20657567eac503d5d976a2d9f4bd1658",
+        "slc_e166f7fc3ef1d9e2d89a395c180885413fffe19e8bc03f118377e9b5160c345d"
+      ],
+      "text": "Repository development practice: house rules require atomic file writes via renameAtomic/writeFileAtomic, an 'error' listener on child stdin before the first write, and credentials never passed on argv, each backed by guard tests that fail PRs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d40a8e748d1b4bf9e6cecd6fe0eacf130542203168c45f8399a21b0f38182e9",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 50,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L44-L50"
+        },
+        {
+          "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+          "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "eneskirca/nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md#L9-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15d1d124527d31abfdac8dba5e724feb26280c9cab6a48afaad48a328f7af2b3",
+        "slc_60708dbce4bc940a1c76269e6a366eb1e4e5aee5622459d9e3ae7c0cced905d5"
+      ],
+      "text": "The project targets people with scattered workflows who want a spatial canvas of terminals and live Claude Code sessions instead of stacked terminal tabs, across desktop, self-hosted browser, and iOS surfaces."
+    }
+  ],
+  "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 344,
+        "path": "README.md",
+        "size": 18888
+      },
+      {
+        "lines": 566,
+        "path": "CONTRIBUTING.md",
+        "size": 42885
+      },
+      {
+        "lines": 48,
+        "path": "THIRD-PARTY-NOTICES.md",
+        "size": 2076
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "byte-budget",
+        "size": 367836
+      },
+      {
+        "path": "docs/SERVER.md",
+        "reason": "file-budget",
+        "size": 42889
+      },
+      {
+        "path": "docs/assets/social/README.md",
+        "reason": "file-budget",
+        "size": 477
+      },
+      {
+        "path": "docs/atomic-writes.md",
+        "reason": "file-budget",
+        "size": 9672
+      },
+      {
+        "path": "docs/codex-accounts-acceptance.md",
+        "reason": "file-budget",
+        "size": 5882
+      },
+      {
+        "path": "docs/codex-shared-identity.md",
+        "reason": "file-budget",
+        "size": 28055
+      },
+      {
+        "path": "docs/copilot-agent.md",
+        "reason": "file-budget",
+        "size": 4638
+      },
+      {
+        "path": "docs/gemini-agent.md",
+        "reason": "file-budget",
+        "size": 44096
+      },
+      {
+        "path": "docs/github-issues-kanban.md",
+        "reason": "file-budget",
+        "size": 5554
+      },
+      {
+        "path": "docs/grok-agent.md",
+        "reason": "file-budget",
+        "size": 78217
+      },
+      {
+        "path": "docs/hook-reply-approvals.md",
+        "reason": "file-budget",
+        "size": 4131
+      },
+      {
+        "path": "docs/ios-protocol-migration.md",
+        "reason": "file-budget",
+        "size": 35537
+      },
+      {
+        "path": "docs/mascot-sprites.md",
+        "reason": "file-budget",
+        "size": 6021
+      },
+      {
+        "path": "docs/mobile-usage-inbox.md",
+        "reason": "file-budget",
+        "size": 7799
+      },
+      {
+        "path": "docs/node-identity.md",
+        "reason": "file-budget",
+        "size": 41240
+      },
+      {
+        "path": "docs/notch-hud.md",
+        "reason": "file-budget",
+        "size": 15947
+      },
+      {
+        "path": "docs/remote-sessions.md",
+        "reason": "file-budget",
+        "size": 42469
+      },
+      {
+        "path": "docs/session-memory.md",
+        "reason": "file-budget",
+        "size": 37941
+      },
+      {
+        "path": "docs/shared-codex-node-identity.md",
+        "reason": "file-budget",
+        "size": 24445
+      },
+      {
+        "path": "docs/ssh-agent-skills.md",
+        "reason": "file-budget",
+        "size": 10303
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-14-dino-live.md",
+        "reason": "file-budget",
+        "size": 7100
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-14-relay-collab-session.md",
+        "reason": "file-budget",
+        "size": 8208
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-14-relay-project-scope.md",
+        "reason": "file-budget",
+        "size": 7366
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-15-opencode-agent.md",
+        "reason": "file-budget",
+        "size": 32698
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-15-team-access.md",
+        "reason": "file-budget",
+        "size": 12068
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-15-tester-feedback-improvements.md",
+        "reason": "file-budget",
+        "size": 43805
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-03-phase1b-device-checklist.md",
+        "reason": "file-budget",
+        "size": 71129
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-05-glyphgrid-phase2-promotion.md",
+        "reason": "file-budget",
+        "size": 35337
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-09-github-issues-kanban-sync.md",
+        "reason": "file-budget",
+        "size": 38196
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-09-ssh-reconnect-resync.md",
+        "reason": "file-budget",
+        "size": 50987
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-10-ram-optimization.md",
+        "reason": "file-budget",
+        "size": 53026
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-11-tmux-control-mode-shadow-clients.md",
+        "reason": "file-budget",
+        "size": 22391
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-12-background-task-guard.md",
+        "reason": "file-budget",
+        "size": 12401
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-13-ssh-server-picker.md",
+        "reason": "file-budget",
+        "size": 10889
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-19-browser-control-acceptance-gate.md",
+        "reason": "file-budget",
+        "size": 9400
+      },
+      {
+        "path": "docs/superpowers/probes/2026-08-browser-debugger.md",
+        "reason": "file-budget",
+        "size": 3073
+      },
+      {
+        "path": "docs/superpowers/probes/2026-08-browser-partition.md",
+        "reason": "file-budget",
+        "size": 3349
+      },
+      {
+        "path": "docs/superpowers/probes/2026-08-browser-scroll.md",
+        "reason": "file-budget",
+        "size": 3633
+      },
+      {
+        "path": "docs/superpowers/probes/2026-08-codex-relay-daemon.md",
+        "reason": "file-budget",
+        "size": 6958
+      },
+      {
+        "path": "docs/superpowers/probes/2026-08-codex-ssh-remote.md",
+        "reason": "file-budget",
+        "size": 4462
+      },
+      {
+        "path": "docs/superpowers/probes/2026-08-codex-tool-shell-env.md",
+        "reason": "file-budget",
+        "size": 3693
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-dino-live-design.md",
+        "reason": "file-budget",
+        "size": 9931
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-15-opencode-agent-design.md",
+        "reason": "file-budget",
+        "size": 8153
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-15-team-access-design.md",
+        "reason": "file-budget",
+        "size": 11300
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-15-tester-feedback-improvements-design.md",
+        "reason": "file-budget",
+        "size": 7431
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-09-github-issues-kanban-sync-design.md",
+        "reason": "file-budget",
+        "size": 43836
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-09-ssh-reconnect-resync-design.md",
+        "reason": "file-budget",
+        "size": 10866
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-12-background-task-hibernation-guard-design.md",
+        "reason": "file-budget",
+        "size": 7981
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-13-ssh-server-picker-design.md",
+        "reason": "file-budget",
+        "size": 3558
+      },
+      {
+        "path": "docs/team-presence.md",
+        "reason": "file-budget",
+        "size": 73230
+      },
+      {
+        "path": "docs/trigger-node.md",
+        "reason": "file-budget",
+        "size": 5158
+      },
+      {
+        "path": "docs/troubleshooting-codex-snap.md",
+        "reason": "file-budget",
+        "size": 3047
+      },
+      {
+        "path": "docs/uninstall.md",
+        "reason": "file-budget",
+        "size": 8358
+      },
+      {
+        "path": "docs/windows-session-host.md",
+        "reason": "file-budget",
+        "size": 39138
+      }
+    ],
+    "omitted_count": 54,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1831,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 57,
+      "complete": false,
+      "omitted": 54,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_9a857e1e22635ef6a7e147842d116f5f",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/eneskirca/nodeterm/8fd38d2c229e2ba1f18822df30c48afdefe83e37/f57e03c407f29b9f/manifest.json",
+  "package_id": "pkg_147af6a21a56c3d1d1216a2b5bdb4c18f83f8c6cb9675e504f6fc807be700626",
+  "repo": "eneskirca/nodeterm",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "03708882834fdbf67fdeb5492806b49e031fb5aba22e1222266f5a560aca34d4",
+  "snapshot_id": "f57e03c407f29b9f",
+  "sources": [
+    {
+      "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+      "git_sha": "d8eead2e9e6d75b525183bfdd5333520d8829f46",
+      "lines": 566,
+      "path": "CONTRIBUTING.md",
+      "repository": "eneskirca/nodeterm",
+      "sha256": "40946307bf5f59ec6bc35872e28454b4205052b0b679c546c80b2fbd3a564024",
+      "source_id": "src_7382c6b6bb4d5184bdbd1e5c4761ecb1",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/CONTRIBUTING.md"
+    },
+    {
+      "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+      "git_sha": "943db5b431b1a9c661ae0a5d4286f22db403a1a4",
+      "lines": 344,
+      "path": "README.md",
+      "repository": "eneskirca/nodeterm",
+      "sha256": "7df61bbaaa2825f94c522fa22929a3617439772610f6a85ba06f9394853cd851",
+      "source_id": "src_a6ed75c969f154ae924b31a6e7e21a32",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/README.md"
+    },
+    {
+      "commit": "8fd38d2c229e2ba1f18822df30c48afdefe83e37",
+      "git_sha": "c2229f5c3b8302cc6a6289920d79e290a19481a9",
+      "lines": 48,
+      "path": "THIRD-PARTY-NOTICES.md",
+      "repository": "eneskirca/nodeterm",
+      "sha256": "250b72066761f637b10789b1b8cfbb0818dbeba79a2cdfb5994a8f92248ea9cb",
+      "source_id": "src_d7a7afc4463e59e9b823137e963c13ef",
+      "stored": "third-party-notices.md-8c6aa9e65ae4.md",
+      "url": "https://github.com/eneskirca/nodeterm/blob/8fd38d2c229e2ba1f18822df30c48afdefe83e37/THIRD-PARTY-NOTICES.md"
+    }
+  ],
+  "summary": "nodeterm is an Electron node-based terminal manager where terminals and AI agent sessions live as draggable nodes on a pan/zoom canvas, doubling as a kanban board, with a CorePlatform service seam enabling desktop, browser Server Edition, and iOS surfaces. Evidence is documentation-only (README, CONTRIBUTING, THIRD-PARTY-NOTICES); no source code slices were provided. Evidence coverage: 97 of 131 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

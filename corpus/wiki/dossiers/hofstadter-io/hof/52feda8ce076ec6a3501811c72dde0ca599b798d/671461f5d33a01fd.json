@@ -1,0 +1,534 @@
+{
+  "applied_operation_id": "op_3b7e8ffe81c54162a2292e3ae9fcc9ea",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf0b98befba12dcf131c8b19b71e45bf94eb40028c21ca31a9eaa4168b12cf4b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L120-L120"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 123,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L122-L123"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 180,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L178-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6084fd35168093d3c6c2457ac0dc34e14876cd22aaa6ac8abf208347d6cb0f78",
+        "slc_67727e7e0531f30f93354a5312dade837a131105a94d69a02805b702abae6639",
+        "slc_e55bc3ef7135da369357fefd9410b974e8e15820ce209ca5d9beeafce34d4416"
+      ],
+      "text": "hof exposes two interfaces: a CLI suited to scripting and automation, and a TUI for exploring and designing, the latter with a built-in help system."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d535373a82465b57b854512d9094172028f7d24f96a0abdc3c882f983b4ef1af",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 154,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L149-L154"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 147,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L135-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_430316fc1470c845f29baf48834134c915323e3338eee564426047c33ea4b275",
+        "slc_97adeb374d8fb1bcd973f2c26d24c4ebdc122f443bbcce37c01b8479d8d08cfd"
+      ],
+      "text": "The CLI offers main commands including chat, create, datamodel, def, eval, export, flow, fmt, gen, mod, tui, and vet, plus additional commands like update, version, completion, and feedback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3675f3d00a4347391610dd9563ff390ec30845ff2261464da3dc18a400df504",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 80,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L75-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dce76d11e8e971740d9a4bfc421534c3c09c0e6d442221a3b7ea4ab289eddaf6"
+      ],
+      "text": "The repository is organized around a Go CLI entrypoint (cmd/hof), core logic in lib/, a CUE-based task engine in flow/, docs site source, and CI scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39f29d021fe53d75d1fbf63f98aefd0da98544a82f616f291dd9b957ea17659a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L26-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e21f920eeb8f0aec48b2069072da1e1b7e927960b590ec16491c639ae72f0fc"
+      ],
+      "text": "hof is built on CUE, which the project treats as the language for schemas, configuration, and declarative sources of truth, powering both developer experience and implementation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7cdae4ec2134903d7234aee4c6c6b2ed3b05331c292212b4154e1b2c1952088",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 22,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L13-L22"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76cd7db2df0640d7f285a350790c4cb5c13f9773439916b03786091b064505ac",
+        "slc_e8a1ceca73b033510a46dd86c012b61efa46440bb8b20f2c7b75669215028b2e"
+      ],
+      "text": "Core features include technology-agnostic code generation from data plus templates, evolvable data models with checkpoint and diff support, an extensible DAG task engine based on cue/flow, and LLM-assisted chat combined with code generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c80a46056aec90c887962663eb117275288b568e1b63f27f87c879813995a53",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 94,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L92-L94"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 88,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L86-L88"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 100,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L98-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_877542dd87d2a4c767ab51110be603a99765b1332488b4d30b026d6157ffecf9",
+        "slc_b9746807765096a5d3925aa811fefb1daf0f4ddd9b5616a1b5378ef4459b61bd",
+        "slc_c7a04032f5cb38d888a1af56d4db85920a292cf15523effffd0aed141d55d83c"
+      ],
+      "text": "Repository development practice: contributors build the binary with 'make build', run tests with 'make test', and serve docs locally with 'make docs-serve'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2bbc74fb0f9d11e4019b0ed32ca9991e5aee39c2434e134dc6382c0a2197a071",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "373820c51430bed497c8c91ab109dc5ccd464b4a",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "AGENTS.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/AGENTS.md#L65-L65"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "373820c51430bed497c8c91ab109dc5ccd464b4a",
+          "line_end": 55,
+          "line_start": 54,
+          "path": "AGENTS.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/AGENTS.md#L54-L55"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "373820c51430bed497c8c91ab109dc5ccd464b4a",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "AGENTS.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/AGENTS.md#L59-L59"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "373820c51430bed497c8c91ab109dc5ccd464b4a",
+          "line_end": 63,
+          "line_start": 62,
+          "path": "AGENTS.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/AGENTS.md#L62-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42a35b3e47869e6cfb6c519c9af9c01172626eecb22bb6c5ba71c58f579a2593",
+        "slc_44e8e885a8005863e1d16f2cff5539a8d9b809c766c4b9d78ead188eb9fe0bd8",
+        "slc_5611c6dcdb431e13a1dc5861709bce4603b1e6f389e09f36a093ed355eb89793",
+        "slc_a2c1a1675da385ba54db56233c981b4c027013f16fed9490847a832078b959ea"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributing agents to run only one build/validate command at a time (go install ./cmd/hof, then hof version) and forbids other hof commands or go test unless the user explicitly instructs it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db344ba69b818fe8a89da5de9a96c3e7d701b4e42a91a40f706cdd60449a730c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "8925377757fc1f48b380be4963b504b9450d552b",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/CODE_OF_CONDUCT.md#L3-L3"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 115,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L113-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0289afd01b8aa315c45be53f13ba43edd554e1d946ee5f21ece4c48863085862",
+        "slc_63381670bf953465ec4f0eba0c2f229083a8b00cdd6eb1ee510f2248361598ef"
+      ],
+      "text": "Repository development practice: contributions follow a standard fork, pull request, and review process with labels organizing issues and PRs; the project follows the CNCF Code of Conduct."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15c4d538d8e3074ef66be9f9abdbeb9e57e8205d4178487d51517dd90050bf73",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "5595fe1130e8fccb45d6b04179f319d6605f6628",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "SECURITY.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/SECURITY.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_87b0ccac4ff72c2f97a42cb72b77a61bdffc5b2e05f2f65651f6247778f8f00e"
+      ],
+      "text": "The security policy states that only the latest version of hof is supported at this time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8231f521c334c5e98ee8a021ecb07ab70e823a923b3271ffac70bda32b1bfea",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L3-L3"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 22,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L13-L22"
+        },
+        {
+          "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+          "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "hofstadter-io/hof",
+          "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61233fedd192e1df60b1cfa25bdfa22b44e19dccf50f3ed47402d6a1b5458ea5",
+        "slc_76cd7db2df0640d7f285a350790c4cb5c13f9773439916b03786091b064505ac",
+        "slc_e8a1ceca73b033510a46dd86c012b61efa46440bb8b20f2c7b75669215028b2e"
+      ],
+      "text": "hof is relevant to teams wanting schema-driven, deterministic or agentic code generation, data model management, and CUE-based workflow orchestration from a single CLI tool."
+    }
+  ],
+  "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 187,
+        "path": "README.md",
+        "size": 6580
+      },
+      {
+        "lines": 500,
+        "path": "docs/README.md",
+        "size": 13926
+      },
+      {
+        "lines": 3,
+        "path": "docs/public/robots.txt",
+        "size": 67
+      },
+      {
+        "lines": 65,
+        "path": "AGENTS.md",
+        "size": 1883
+      },
+      {
+        "lines": 3,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 136
+      },
+      {
+        "lines": 13,
+        "path": "SECURITY.md",
+        "size": 323
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2238,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_47201cd8201959f8af05d8214cb60d78",
+  "facets": {
+    "components": 1,
+    "dependencies": 0,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/hofstadter-io/hof/52feda8ce076ec6a3501811c72dde0ca599b798d/671461f5d33a01fd/manifest.json",
+  "package_id": "pkg_feab18ae3d5d2fe92c8b578010f221ee7ffdf9e036278f37beb15d07fc985b30",
+  "repo": "hofstadter-io/hof",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "36e1108baf42601c19b4f90aab2788a4095a573c451fe51b96ed95eb3fa36e67",
+  "snapshot_id": "671461f5d33a01fd",
+  "sources": [
+    {
+      "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+      "git_sha": "373820c51430bed497c8c91ab109dc5ccd464b4a",
+      "lines": 65,
+      "path": "AGENTS.md",
+      "repository": "hofstadter-io/hof",
+      "sha256": "ce45bd6c9e1240554ff002e4a6570eb622d943e1f64ea3205abbd4e3723a8127",
+      "source_id": "src_fb8b494691fa5b19aa8ae2975a698be6",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/AGENTS.md"
+    },
+    {
+      "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+      "git_sha": "8925377757fc1f48b380be4963b504b9450d552b",
+      "lines": 3,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "hofstadter-io/hof",
+      "sha256": "b5d2c743c6352a683e1dbb0d3611c7ad37b5ef444f17cc47c8fde182825be550",
+      "source_id": "src_f994720d0db05d5bae1329de7e08b848",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+      "git_sha": "9efcecb409feea00076cce8d6ce1587b446c4d56",
+      "lines": 187,
+      "path": "README.md",
+      "repository": "hofstadter-io/hof",
+      "sha256": "6ffc04f6f6a4e8e0ac332cc50f7e6c91da905aca88d0ff0c6c2fe28a67c8d998",
+      "source_id": "src_651b7edb07565b6eaae257d702831efa",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/README.md"
+    },
+    {
+      "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+      "git_sha": "5595fe1130e8fccb45d6b04179f319d6605f6628",
+      "lines": 13,
+      "path": "SECURITY.md",
+      "repository": "hofstadter-io/hof",
+      "sha256": "8c5fe0a87d5fdece8e4e4cafcb7b23bce65e3daa8fead626cc4da0d8589a5ee2",
+      "source_id": "src_69b5375c486d5646ad405fdce9514157",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/SECURITY.md"
+    },
+    {
+      "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+      "git_sha": "77832215a68f5c91aa91f02ed7107ef8994f160a",
+      "lines": 500,
+      "path": "docs/README.md",
+      "repository": "hofstadter-io/hof",
+      "sha256": "5b2616c126e60a7c5e55c86a6b7db5cd4070e9df1bfab2b66798af654785f589",
+      "source_id": "src_1f94cff5fd325bdebbb45521e81de722",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/docs/README.md"
+    },
+    {
+      "commit": "52feda8ce076ec6a3501811c72dde0ca599b798d",
+      "git_sha": "e9e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e",
+      "lines": 3,
+      "path": "docs/public/robots.txt",
+      "repository": "hofstadter-io/hof",
+      "sha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "source_id": "src_e5a8cf875d095a27813bfbf0a3356055",
+      "stored": "robots.txt-2b69b8df40ae.txt",
+      "url": "https://github.com/hofstadter-io/hof/blob/52feda8ce076ec6a3501811c72dde0ca599b798d/docs/public/robots.txt"
+    }
+  ],
+  "summary": "Selected evidence records: hof exposes two interfaces: a CLI suited to scripting and automation, and a TUI for exploring and designing, the latter with a built-in help system. The CLI offers main commands including chat, create, datamodel, def, eval, export, flow, fmt, gen, mod, tui, and vet, plus additional commands like update, version, completion, and feedback.",
+  "superseded_claim_ids": []
+}

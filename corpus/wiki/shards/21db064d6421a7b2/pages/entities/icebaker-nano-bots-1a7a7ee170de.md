@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0358f7208b37f35b4b2c2dc52e2eb0e9ec2efc298b72d5aaeeb6513523ebb8c0
+- clm_0c1c2fb61df6f062faea9465357efe991e6bd74faeff2b65247609a36a45ae3a
+- clm_107c202059fb396e87b7af0312ce1fd4f01f6b9f3b993d89c7fd10b80088877d
+- clm_2b851d1538021a759fa45c10be76264010901326734e2a3170ab62a2aa930842
+- clm_8fa03a2ef3df44dc020571c5e824da75aa5af20a0625c45d6d43320cfc5ed9a0
+- clm_95cd47396e54bc8a7451ea63ca24f07e6412361971b9051398f80cecaeda58ea
+- clm_a52685c907d49e825bc98da5a2f1834b090b33505e3dad4f02a1f7f9d4e1b260
+- clm_ac0c2f8925aaeed30358a4d3b2e628443322d100ba9fdb924781f2c064143318
+- clm_be88594ecb6d256e77aa535a2d6a0684f60387e1780eb4d758d05ebe723e3bc8
+- clm_c35d887b3559dc4429407dcb8ba1b31ba8f4baecb2e73bd8619585645b54e751
+- clm_f4b2980acc287e4aa4fa03752919b29801bf8e46f8033e8b1d3cca54f89643e2
+- clm_f4be21367e82f5a823f128b2e5a362a05be6dfa898ee852e7b29544f2828e00b
+maturity: draft
+page_id: pg_8e0fed9036705d89a6a31a7a7ee170de
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: icebaker/nano-bots
+updated_at: '2026-09-14T03:58:11Z'
+---
+
+# icebaker/nano-bots
+
+<!-- rcw:begin owner=entity:ent_88486a48cfde55fb9fb68d77b7ab72b9 block=evidence -->
+- icebaker/nano-bots is mentioned in this evidence. [@claim:clm_0358f7208b37f35b4b2c2dc52e2eb0e9ec2efc298b72d5aaeeb6513523ebb8c0] [@claim:clm_0c1c2fb61df6f062faea9465357efe991e6bd74faeff2b65247609a36a45ae3a] [@claim:clm_107c202059fb396e87b7af0312ce1fd4f01f6b9f3b993d89c7fd10b80088877d] [@claim:clm_2b851d1538021a759fa45c10be76264010901326734e2a3170ab62a2aa930842] [@claim:clm_8fa03a2ef3df44dc020571c5e824da75aa5af20a0625c45d6d43320cfc5ed9a0] [@claim:clm_95cd47396e54bc8a7451ea63ca24f07e6412361971b9051398f80cecaeda58ea] [@claim:clm_a52685c907d49e825bc98da5a2f1834b090b33505e3dad4f02a1f7f9d4e1b260] [@claim:clm_ac0c2f8925aaeed30358a4d3b2e628443322d100ba9fdb924781f2c064143318] [@claim:clm_be88594ecb6d256e77aa535a2d6a0684f60387e1780eb4d758d05ebe723e3bc8] [@claim:clm_c35d887b3559dc4429407dcb8ba1b31ba8f4baecb2e73bd8619585645b54e751] [@claim:clm_f4b2980acc287e4aa4fa03752919b29801bf8e46f8033e8b1d3cca54f89643e2] [@claim:clm_f4be21367e82f5a823f128b2e5a362a05be6dfa898ee852e7b29544f2828e00b]
+<!-- rcw:end owner=entity:ent_88486a48cfde55fb9fb68d77b7ab72b9 block=evidence -->
+
+## Researcher notes
+

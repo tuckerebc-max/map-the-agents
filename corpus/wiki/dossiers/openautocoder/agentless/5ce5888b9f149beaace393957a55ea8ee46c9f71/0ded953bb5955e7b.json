@@ -1,0 +1,572 @@
+{
+  "applied_operation_id": "op_f8378fdd190a43bc88e6c0ac6e900d13",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea4f1685fabc66a7ba2c25042f1702330a91fd6683a34494797a0b3eab05595b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md#L25-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0eccee5a6bb46a9c71d8ba5e41fbdf5534d70af4873b8912763e3216a575c8aa"
+      ],
+      "text": "Agentless solves software development issues without an agent loop, using a three-phase process: localization, repair, and patch validation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a72d597e3d509cc7383c4a2406b18d4b5f4257f3833cd6a77c180f0d22c11895",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md#L25-L28"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L62-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0eccee5a6bb46a9c71d8ba5e41fbdf5534d70af4873b8912763e3216a575c8aa",
+        "slc_cb9a2ea127519762a0af2fe52d8546cb89779504cadf25ad7e5145bdb5f3d862"
+      ],
+      "text": "Localization is hierarchical: faults are first localized to files, then to classes/functions, then to fine-grained edit locations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44e59be57b2f874052be59b9133920cb4f4054210d85b168b6f04d2e63404e41",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L81-L81"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L68-L68"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L83-L83"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L108-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3583e100452b618240040286f6cb60036808dcf2347b3ad8b4ae482076e10803",
+        "slc_8293db3828ed580b79effd191ccaa944db03c1a186fe405fb03e6fdd7ea1093b",
+        "slc_960a9fdc3666e329691c9bae6fa346f89b1132dc2cb652429312f13fd77fa6ad",
+        "slc_c6786f2c11546ea07901df8c2c571110173a044db505dee386452075adf3db9a"
+      ],
+      "text": "File-level localization combines LLM-predicted suspicious files with embedding-based retrieval, after LLM-identified irrelevant folders are filtered out."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c6b77670962c4fdc5666434dd14d3270f94de24ddd205c1821bfcfe6c116cbe",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ae22b101054fb57f23e64648c3967b202ad638b4857be623c430284f9fa1d17"
+      ],
+      "text": "Embedding-based retrieval uses OpenAI's text-embedding-3-small model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_26431d3167774d453f21f3f0d6cc485651a9a38155f63fccc0c05e54fae50996",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md#L25-L28"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 205,
+          "line_start": 194,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L194-L205"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 228,
+          "line_start": 228,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L228-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0eccee5a6bb46a9c71d8ba5e41fbdf5534d70af4873b8912763e3216a575c8aa",
+        "slc_7c5a8bd444732a777c7f2adaff444616e56bed974324060bedabb02e5eae2efd",
+        "slc_d69569842d18008a0d8e109f5f09e3f2e218433c706aeb12a2076607a2f63bfb"
+      ],
+      "text": "Repair samples multiple candidate patches per bug in a simple diff format, with context windows around each edit location."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f0e5e51d052be817ae8712f42304656f921c343d5e04e1a47b9ff2117769ec16",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md#L25-L28"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 349,
+          "line_start": 349,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L349-L349"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 236,
+          "line_start": 236,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L236-L236"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0eccee5a6bb46a9c71d8ba5e41fbdf5534d70af4873b8912763e3216a575c8aa",
+        "slc_5de0cc8afdc6ff991baab4e751b497fd5aecbfe7e862ee312896ce09c7bcda40",
+        "slc_7c77c965e6f5acf724f557f7cba133a7ca57110b58bfac0db84ea1232a80cee6"
+      ],
+      "text": "Patch validation runs selected regression tests plus generated reproduction tests, and results are used to re-rank and select the final patch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed3ce18c5b72eb6be11eb06fef3ca810f7d69e53c7d5cc26956a9fce0cbbe64b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 42,
+          "line_start": 38,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L38-L42"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L72-L77"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 54,
+          "line_start": 50,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L50-L54"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 205,
+          "line_start": 194,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L194-L205"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L56-L58"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 359,
+          "line_start": 353,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L353-L359"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2627d14bfb3b55aed5ecee9d5987ede5e6503eb49317863f4c294fe69a112502",
+        "slc_5f80bbfb0789648458c44180f4384856d581ff4a174b2f955bfd47ea8dc5e38b",
+        "slc_745d84187f435a1714d85205cd77572d3f495bd2f4b0ac70337136a497c7c7c2",
+        "slc_7c5a8bd444732a777c7f2adaff444616e56bed974324060bedabb02e5eae2efd",
+        "slc_997128c4208ffe346d19cb75b3396c9f569c5b05ae7893f4ba9bc0cd9c78fb6f",
+        "slc_acf0f5dce79d6bfbd57010c4b462bd15520112e56aa5f58682b5a78f1f6784f2"
+      ],
+      "text": "The tool is operated via CLI scripts (e.g., agentless/fl/localize.py, repair/repair.py, rerank.py) with flags like --dataset, --target_id, --num_threads, and --max_samples."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca3c3a89874780b424d41fb68f2146326b1e460d34bdbafac0ee087440018ae2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 42,
+          "line_start": 38,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L38-L42"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 12,
+          "line_start": 11,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L11-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2627d14bfb3b55aed5ecee9d5987ede5e6503eb49317863f4c294fe69a112502",
+        "slc_c62f065583821bcf1c9b9aab1f508aeb628c56d071b74e74b990012617da2abc"
+      ],
+      "text": "The benchmark dataset is selectable via --dataset, defaulting to SWE-bench Lite, with SWE-bench Verified also supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be892d20062dc631b9474dbf2160838bd9bf9391131841f9eb34e9bdfa48f3b1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+          "line_end": 58,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md#L55-L58"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "575c93f5f7a6a7f4bb12e38fe5aee2ecc6570357",
+          "line_end": 9,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/requirements.txt#L1-L9"
+        },
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L28-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5054b3150db71aaffa02caf01d441a2ee78d4e2416a9e14aadd715bb1eb2980a",
+        "slc_79a33aee3325288e58d081994070b2006c9ce43cecc73fc2da86f061ac2f5e0a",
+        "slc_845d1c91a84ed266597be8d9e52959d188ac827b24d7efb66d9699283f62046d"
+      ],
+      "text": "The tool requires an OpenAI API key exported as OPENAI_API_KEY, and requirements include openai, anthropic, tiktoken, libcst, llama-index, and the SWE-bench package."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_499cdd9aa559cbe400f9166db0da9acd32e9a0fe92b031516658c3e5fd974644",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md#L19-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f60b4515824c0bd6a94972161fb3e2f263409f7dc5149e6ac403816c296ec87"
+      ],
+      "text": "Reported results: with Claude 3.5 Sonnet, 40.7% and 50.8% solve rates on SWE-bench Lite and Verified; v1.0 achieved 27.3% (82 fixes) on SWE-bench Lite at ~$0.34 per issue."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d51faede34c1415543919d2a51badad21019a37c116123e50ef0634ff8f1dfec",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md#L49-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cbea4242cbfe11114556f94e6186b573904a5ead963fc64920dfcdeec7a50f49"
+      ],
+      "text": "Repository development practice: contributors are asked to install a pre-commit hook for standardized code style."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c1b40b678c008fbaadd96e618ef4eac364ed69af1f7d6d3533b3c5d498b616e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+          "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+          "line_end": 255,
+          "line_start": 251,
+          "path": "README_swebench.md",
+          "repository": "openautocoder/agentless",
+          "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md#L251-L255"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d7c726c1ec45aa553e19ca0bbb43e4a21ce3ca29220bdca7237235b330befc0a"
+      ],
+      "text": "Regression tests are chosen from all tests passing on the original repository rather than the benchmark's PASS_TO_PASS field."
+    }
+  ],
+  "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 102,
+        "path": "README.md",
+        "size": 4234
+      },
+      {
+        "lines": 374,
+        "path": "README_swebench.md",
+        "size": 18869
+      },
+      {
+        "lines": 9,
+        "path": "requirements.txt",
+        "size": 133
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 35,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_d26b77f51e4e544a9e0b1f012552a955",
+  "facets": {
+    "components": 4,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/openautocoder/agentless/5ce5888b9f149beaace393957a55ea8ee46c9f71/0ded953bb5955e7b/manifest.json",
+  "package_id": "pkg_1de85cf275af2238dfa3fabafbbaaeda9c5821355c30ae15c8b8284f2804258a",
+  "repo": "openautocoder/agentless",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c184ca7f2ced8032c1adb906d1cfce4f2ed7f58bc1c036d9cf672510d98e50ef",
+  "snapshot_id": "0ded953bb5955e7b",
+  "sources": [
+    {
+      "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+      "git_sha": "41115c54a373d969dcdda8e95ae24b57bce3cc66",
+      "lines": 102,
+      "path": "README.md",
+      "repository": "openautocoder/agentless",
+      "sha256": "06ead5fa5d0aafa7100cce5a8e7dbe66e38d50952c82d56c392852972d1f5a70",
+      "source_id": "src_87037666b2445846be7bb1862de8dfb9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README.md"
+    },
+    {
+      "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+      "git_sha": "d85a158c086c69d4b9ffea541757b0e57f780468",
+      "lines": 374,
+      "path": "README_swebench.md",
+      "repository": "openautocoder/agentless",
+      "sha256": "f5e8142749e28ba53d8f68416334fb1c04690ca87a189513e5f4d4df54dbd13f",
+      "source_id": "src_250162f4fa4f55e59e05634f77d12fab",
+      "stored": "readme_swebench.md-8d5ee91f30c0.md",
+      "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/README_swebench.md"
+    },
+    {
+      "commit": "5ce5888b9f149beaace393957a55ea8ee46c9f71",
+      "git_sha": "575c93f5f7a6a7f4bb12e38fe5aee2ecc6570357",
+      "lines": 9,
+      "path": "requirements.txt",
+      "repository": "openautocoder/agentless",
+      "sha256": "5f0dc36f364334c0724fdae64954be531104d96038327230f970436bd8469170",
+      "source_id": "src_40f1f3bcfc6a51c49c70471321b871f0",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/OpenAutoCoder/Agentless/blob/5ce5888b9f149beaace393957a55ea8ee46c9f71/requirements.txt"
+    }
+  ],
+  "summary": "Agentless is an agentless, three-phase (localization, repair, patch validation) tool for solving software issues, evaluated on SWE-bench Lite/Verified, driven by CLI scripts and OpenAI models. Evidence covers its pipeline, CLI interface, dependencies, and reported benchmark results.",
+  "superseded_claim_ids": []
+}

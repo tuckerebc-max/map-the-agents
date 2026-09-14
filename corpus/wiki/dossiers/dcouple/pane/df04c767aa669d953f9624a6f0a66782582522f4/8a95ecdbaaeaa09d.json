@@ -1,0 +1,684 @@
+{
+  "applied_operation_id": "op_acf09b7ba9d54b8391840ac18387fcb7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_953539ff2cde46054f4272b9d404361d9515c7b05799c48a03b2b88526c5422e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 226,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L221-L226"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 133,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L118-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3cdfd90747bb2272cf1bc5596e0d37382917487994b94203591f76134abaf564",
+        "slc_6f2dca13d62f15254a1806023291bd7f6b7c89417a78cdc7020f36defca26559"
+      ],
+      "text": "Pane ships a runpane CLI intended for agent use, including agent-context, repos add/list, and panes create for registering repositories and opening panes with prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8aae6934a712130784ef6e59efaaec8bb223fc045c7269a8a962d95372d2ca48",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 228,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L228-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_daa88b6d8589a447f53fe2c21ca84396f956c873dcc2a54240409cafc13ca1a0"
+      ],
+      "text": "runpane agent-context is token-efficient by default, printing only command names, arguments, and usage notes, with per-command detail available via --command and --json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b00801cb771280446c82e5a18deb3a9bd7c87923703fda5ada4a0e422e67d66",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 261,
+          "line_start": 250,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L250-L261"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4de2d04d6d6bd5fa501cd42e2bb07a9e62825305d70d517ed9f009fb2f20c1ab"
+      ],
+      "text": "The app defines keyboard shortcuts for command palette, new/archive pane, pane switching, settings, clipboard snippet pasting, and sidebar toggle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7af3eccfc8c92a0ca803a6dfc576558eb6be8513d0d535722e082589c434b7f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 238,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L238-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f87dd0bceb59e7d316fc0050a8bb3ff4cd27e337cd8a4c42d8c758a10a802a1b"
+      ],
+      "text": "Pane is organized around two primitives, panes and tabs: each pane maps to one git worktree and contains tabs for agents, diff viewer, file explorer, git tree, logs, and terminals, with state persisting across restarts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4bd14758a7bf54322fb755d5d22ae0651d62e668fa4bc4619d67e0fae377470",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L96-L96"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 244,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L244-L244"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 240,
+          "line_start": 240,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L240-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d1cc43f9d97968cba702618d9c1052492ffecaa6a42db317b08d3b2cd030705",
+        "slc_b3fdac0950fcf82acc7f9a313431d56583cdf04cf7614390b4f4ab334b9ae0c4",
+        "slc_b9321f932b5334b92ea3b15898e77fe68b0c18a365d35725fc9335e2c3f72552"
+      ],
+      "text": "Pane is agent-agnostic: any CLI tool that runs in a terminal runs in Pane with no plugins or SDK, and the terminal serves as the integration layer rather than Pane re-implementing agent integrations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a99348a78adeda8dc4bbb32f102be40bd82432a5e1455f7e69faab91b5be0803",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 209,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L209-L209"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 207,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L203-L207"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b29ffaa74483fe895b695c63044cb5d8189350e3c22bb6f9c0e3d99f991b1400",
+        "slc_e0cf491726e6191e87d37b9fc0e6f6a9c646b6f6a9479b15e9e9dbbc6cecdc65"
+      ],
+      "text": "Pane Chat writes local orchestrator skills in Codex, Claude, and Cursor formats (e.g. .codex/skills/pane-orchestrator/SKILL.md) and caches workflow skills including discussion, plan, implement, implementation-reviewer, prepare-pr, investigate, and commit from a skills repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05997fc8dbac870a0d4f5d38c3b306c289dd6423d1988406dd14b6a4d0913e5f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L139-L139"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 147,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L143-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_30098583eb08b239802a185f21b37f2f0649abfb29a827dae5895b8fd655b6b7",
+        "slc_da10873fa3d7ef980ddf7bf835e25776618b66e528a875c810e504e41ef6170d"
+      ],
+      "text": "Remote Pane is self-hosted: a host machine runs repos, terminals, git state, and agent credentials, and clients connect using a generated pane-remote:// code from desktop Pane or a browser app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40aa2b24f48d0b8388e3adb62810f417e023026de607a01a988c0dc6be08855b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 330,
+          "line_start": 324,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L324-L330"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e4f95353577a4ba571e9f6e66cd8f9ab886adf81d224c831627b10cf006dcf0"
+      ],
+      "text": "Running Pane requires Git in PATH and at least one AI coding agent CLI installed, with Claude Code, Codex, Cursor Agent, Aider, and Goose given as examples."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e3a9c194de0968e74fc32cba81ca4e098ee0d8876d91989a5c441f0b38b071e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "67a8b09146b0c50258febcd77c0ab9f8555a328d",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "CHANGELOG.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/CHANGELOG.md#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d796d19869c077deca1f9773a1a64380d8f230f38ee95fc9a559fc18343765ed"
+      ],
+      "text": "Per the changelog, Cursor Agent is supported on macOS, Linux, and WSL repositories, while native Windows launches of Cursor remain disabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c5bb47af6e7b3492ba78d6c827748b5f1ace846e22c0598fcf8ef88fe6fba7b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "f6e5551a98f65908681e117d547d032ce2cce6d6",
+          "line_end": 8,
+          "line_start": 4,
+          "path": "AGENTS.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/AGENTS.md#L4-L8"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 435,
+          "line_start": 430,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L430-L435"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "f6e5551a98f65908681e117d547d032ce2cce6d6",
+          "line_end": 19,
+          "line_start": 11,
+          "path": "AGENTS.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/AGENTS.md#L11-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20d78e9f57de0f8390f583d4c19a4c7476549a447e327647e39ced5b10492bac",
+        "slc_36ea6c12b13c7628f29b1cfe201fb1ac80bede66fd91c4774ad226209d330007",
+        "slc_5a80b8d62688f124fd88b104850175667ed8ff10b7d30aefb7c27bdad83074bb"
+      ],
+      "text": "Repository development practice: the repo is a pnpm workspace with main (Electron main process), frontend (React+Vite), shared types, and Playwright E2E tests; dev runs via pnpm dev and builds via pnpm build with per-platform build scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11f482b0bb2b731d4b1a0a97c3e86eaed5d7d898e335a0928da73dc4ef2e9116",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "f6e5551a98f65908681e117d547d032ce2cce6d6",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "AGENTS.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/AGENTS.md#L22-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6a0d9bb26044123c46f089914a379e098da1f5c353dabde5af1f5edc094dc1a"
+      ],
+      "text": "Repository development practice: contributors use TypeScript with 2-space indentation, no explicit any (ESLint error level), kebab-case filenames, and must run pnpm lint and pnpm typecheck before sending PRs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a9cfd532ae77f0272b925dad463ab1f62399afb56b26edccc0277a3d7b51acfe",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 446,
+          "line_start": 446,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L446-L446"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e6ec4cf2f2830ecda647ab3c3260d5a0753eb97c63b35547cbfd44c1a7659c82"
+      ],
+      "text": "Repository development practice: releases must run from a clean main checkout matching origin/main, and the release script refuses inferred version bumps when package.json and the latest v* tag disagree."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca92bf79164ff68fe9762c5a6b1ea6c6e644d63e0fd6c847b5f11478ca68aea1",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 367,
+          "line_start": 363,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L363-L367"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7aecec3d4107895bb622404c80c380968115e32eab62ead13775485c5ebf40dd"
+      ],
+      "text": "Pane targets developers on Windows, macOS, and Linux equally, multi-agent users of tools like Claude Code, Codex, Cursor, Aider, and Goose, and keyboard-driven teams needing a consistent workflow layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a25befdc414660e979bc5badb908b5291e055ca06ef9729566776cff10add709",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 409,
+          "line_start": 408,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L408-L409"
+        },
+        {
+          "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+          "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+          "line_end": 406,
+          "line_start": 405,
+          "path": "README.md",
+          "repository": "dcouple/pane",
+          "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md#L405-L406"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02875d624a71e793b8c37063492b71ffb36f0abb8834f66ac18a4a369ac661d5",
+        "slc_86ecba58414fae934651113dca3a70c88bdd3f36317c9200847431759d540acc"
+      ],
+      "text": "Each pane gets its own worktree, port range, and copy of secrets so parallel agents run in isolated workspaces without conflicts, and worktrees are created and torn down automatically with panes."
+    }
+  ],
+  "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 458,
+        "path": "README.md",
+        "size": 23784
+      },
+      {
+        "lines": 105,
+        "path": "AGENTS.md",
+        "size": 13023
+      },
+      {
+        "lines": 33,
+        "path": "CHANGELOG.md",
+        "size": 1594
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 239
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 5863
+      },
+      {
+        "path": "docs/ADDING_NEW_CLI_TOOLS.md",
+        "reason": "file-budget",
+        "size": 5210
+      },
+      {
+        "path": "docs/ANALYTICS_INVARIANTS.md",
+        "reason": "file-budget",
+        "size": 6442
+      },
+      {
+        "path": "docs/ANALYTICS_UI_EVENTS_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 9148
+      },
+      {
+        "path": "docs/APPEARANCE.md",
+        "reason": "file-budget",
+        "size": 1752
+      },
+      {
+        "path": "docs/BUILDING_ON_WINDOWS.md",
+        "reason": "file-budget",
+        "size": 6735
+      },
+      {
+        "path": "docs/CONFIG_FILES.md",
+        "reason": "file-budget",
+        "size": 6568
+      },
+      {
+        "path": "docs/CRYSTAL_ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 10424
+      },
+      {
+        "path": "docs/DATABASE_DOCUMENTATION.md",
+        "reason": "file-budget",
+        "size": 9945
+      },
+      {
+        "path": "docs/FEATURE_USAGE_TRACKING_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 9671
+      },
+      {
+        "path": "docs/IMPLEMENTING_NEW_CLI_AGENTS.md",
+        "reason": "file-budget",
+        "size": 228
+      },
+      {
+        "path": "docs/IMPORTING_FROM_ANOTHER_TOOL.md",
+        "reason": "file-budget",
+        "size": 2992
+      },
+      {
+        "path": "docs/LICENSE-COMPATIBILITY.md",
+        "reason": "file-budget",
+        "size": 2031
+      },
+      {
+        "path": "docs/NATIVE_MOBILE.md",
+        "reason": "file-budget",
+        "size": 5511
+      },
+      {
+        "path": "docs/RELEASE_INSTRUCTIONS.md",
+        "reason": "file-budget",
+        "size": 5413
+      },
+      {
+        "path": "docs/RUNPANE_CLI_CONTRACT.md",
+        "reason": "file-budget",
+        "size": 23584
+      },
+      {
+        "path": "docs/SELF_HOSTED_REMOTE_DAEMON.md",
+        "reason": "file-budget",
+        "size": 10100
+      },
+      {
+        "path": "docs/SESSION_OUTPUT_PERFORMANCE.md",
+        "reason": "file-budget",
+        "size": 4077
+      },
+      {
+        "path": "docs/SESSION_OUTPUT_SYSTEM.md",
+        "reason": "file-budget",
+        "size": 2127
+      },
+      {
+        "path": "docs/STATE_MANAGEMENT.md",
+        "reason": "file-budget",
+        "size": 3345
+      },
+      {
+        "path": "docs/TIMESTAMP_HANDLING.md",
+        "reason": "file-budget",
+        "size": 4672
+      },
+      {
+        "path": "docs/TOOL_PANEL_SYSTEM.md",
+        "reason": "file-budget",
+        "size": 5373
+      },
+      {
+        "path": "docs/remote-daemon-lifecycle.md",
+        "reason": "file-budget",
+        "size": 2211
+      },
+      {
+        "path": "docs/remote-pwa-safari-debug-handoff.md",
+        "reason": "file-budget",
+        "size": 12227
+      },
+      {
+        "path": "docs/research/CLOUD_VM_PRD.md",
+        "reason": "file-budget",
+        "size": 16735
+      },
+      {
+        "path": "docs/research/CLOUD_VM_RESEARCH.md",
+        "reason": "file-budget",
+        "size": 28089
+      },
+      {
+        "path": "docs/troubleshooting/DIFF_VIEWER_CSS.md",
+        "reason": "file-budget",
+        "size": 1716
+      },
+      {
+        "path": "docs/troubleshooting/SETUP_TROUBLESHOOTING.md",
+        "reason": "file-budget",
+        "size": 2356
+      },
+      {
+        "path": "docs/troubleshooting/WINDOWS_APP_HANG.md",
+        "reason": "file-budget",
+        "size": 2853
+      },
+      {
+        "path": "docs/troubleshooting/WINDOWS_CLAUDE_CODE_SPAWN.md",
+        "reason": "file-budget",
+        "size": 5235
+      }
+    ],
+    "omitted_count": 31,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1112,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 34,
+      "complete": false,
+      "omitted": 31,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3d9e652067f65a18b0b58ad40db220a5",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/dcouple/pane/df04c767aa669d953f9624a6f0a66782582522f4/8a95ecdbaaeaa09d/manifest.json",
+  "package_id": "pkg_289981841d2fe87503101250677b9370edf8f8c4ad82366ae448a54480d5e802",
+  "repo": "dcouple/pane",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5d5cfd59e5c3813f8edfffecb3b32c8c242789b6d815a69334742bd27b1f321d",
+  "snapshot_id": "8a95ecdbaaeaa09d",
+  "sources": [
+    {
+      "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+      "git_sha": "f6e5551a98f65908681e117d547d032ce2cce6d6",
+      "lines": 105,
+      "path": "AGENTS.md",
+      "repository": "dcouple/pane",
+      "sha256": "556d8ef23c84e473c34265fdd2ccfd88bbd34e1d910b7c2d7c6380e04bf9ea74",
+      "source_id": "src_e6acb0df71935fcaa20bc6e42b49d7ba",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/AGENTS.md"
+    },
+    {
+      "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+      "git_sha": "67a8b09146b0c50258febcd77c0ab9f8555a328d",
+      "lines": 33,
+      "path": "CHANGELOG.md",
+      "repository": "dcouple/pane",
+      "sha256": "a6751cf3cbf5784213a35305515f3759f4c9efd93c500503e40a4d46239325b6",
+      "source_id": "src_44bfe6ce36765cc0b28a03d31577fb01",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/CHANGELOG.md"
+    },
+    {
+      "commit": "df04c767aa669d953f9624a6f0a66782582522f4",
+      "git_sha": "635ed0f8469f042187982fcac62c747223ce7ca1",
+      "lines": 458,
+      "path": "README.md",
+      "repository": "dcouple/pane",
+      "sha256": "c54d31ffc846ea7c1e04b14d8fa3ba4605f55e4ef2a0c9e09ad64e642f606efe",
+      "source_id": "src_52741cce3bcd57af99c20d80eeb1ef6b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/dcouple/Pane/blob/df04c767aa669d953f9624a6f0a66782582522f4/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: Pane ships a runpane CLI intended for agent use, including agent-context, repos add/list, and panes create for registering repositories and opening panes with prompts. runpane agent-context is token-efficient by default, printing only command names, arguments, and usage notes, with per-command detail available via --command and --json.",
+  "superseded_claim_ids": []
+}

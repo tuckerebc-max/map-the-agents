@@ -1,0 +1,41 @@
+# junliu1066/vibe-coding-kit
+
+Status: distilled - Freshness: current
+Catalog classes: none recorded
+Origins: alltheagents.org-backing - Projects: none
+Latest snapshot: commit cb387af342e6 @ 7819d75fd9da7233
+
+## Summary (orientation draft, not independently verified)
+
+vibe-coding-kit is a Chinese-language planning toolkit of six Claude/ChatGPT skills plus a three-layer 'harness' governance system (harness.json, CLAUDE.md, SKILL.md checklists) with a progress-ledger workflow; the v2 process-governance redesign is only partially landed (batches 3-5 pending). Evidence is mostly documentation, including a worked FileMaster example project. Evidence coverage: 205 of 246 packet slices were shown to the model; the rest were withheld by the prompt budget.
+
+## Source coverage
+
+Source coverage (partial): 6 of 8 candidate file(s) selected (selection incomplete); repository tree complete. Claims by basis: 11 documented, 0 code-inspected. A current commit is not the same as complete source coverage.
+
+## Facets
+
+11 claim(s) across 9 facet(s); 4 facet(s) unknown.
+
+- specifications: unknown (no source-linked claim submitted for this facet)
+- components (2 claim(s)):
+  - [observation/documented] A three-layer governance system is described: CLAUDE.md as auto-loaded constitution, a harness skill for post-hoc artifact validation, and per-SKILL.md pre-delivery checklists, all derived from a root harness.json config. -- evidence: [README.md#L66-L66](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L66-L66), [README.md#L68-L72](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L68-L72), [README.md#L74-L74](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L74-L74)
+  - [observation/documented] A worked example project (FileMaster, a Flutter desktop file organizer) demonstrates the kit's outputs: project spec, tech-stack decision table, directory tree, security checklist, deployment steps, and acceptance checklist. -- evidence: [docs/项目说明书.md#L7-L10](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E%E4%B9%A6.md#L7-L10), [docs/项目说明书.md#L88-L93](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E%E4%B9%A6.md#L88-L93), [docs/项目说明书.md#L96-L104](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E%E4%B9%A6.md#L96-L104), [docs/项目说明书.md#L4-L4](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E%E4%B9%A6.md#L4-L4), [docs/项目说明书.md#L27-L66](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E%E4%B9%A6.md#L27-L66), [docs/项目说明书.md#L17-L24](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E%E4%B9%A6.md#L17-L24), [docs/项目说明书.md#L76-L85](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E%E4%B9%A6.md#L76-L85)
+- design-choices (2 claim(s)):
+  - [observation/documented] harness.json is the single source of truth from which CLAUDE.md, the harness skill, and SKILL.md checklists are derived, so editing one place keeps the three layers in sync. -- evidence: [docs/Harness-v2-重设计方案.md#L214-L219](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/Harness-v2-%E9%87%8D%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L214-L219), [docs/Harness-v2-重设计方案.md#L221-L221](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/Harness-v2-%E9%87%8D%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L221-L221), [README.md#L74-L74](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L74-L74)
+  - [observation/documented] A triage step (S1.1) classifies needs as light or heavy: light/demo mode merges gate confirmations into groups and skips optional steps with a ledger note, while exit gates always apply; heavy mode confirms each step individually. -- evidence: [docs/Harness-v2-重设计方案.md#L246-L246](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/Harness-v2-%E9%87%8D%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L246-L246), [docs/Harness-v2-重设计方案.md#L257-L257](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/Harness-v2-%E9%87%8D%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L257-L257), [docs/Harness-v2-重设计方案.md#L248-L255](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/Harness-v2-%E9%87%8D%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L248-L255)
+- workflows (1 claim(s)):
+  - [observation/documented] Repository development practice: contributions via Issue and PR are welcomed, with requested style of plain language, stating costs, and avoiding complexity. -- evidence: [README.md#L169-L169](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L169-L169)
+- skills-patterns (1 claim(s)):
+  - [observation/documented] The kit ships six skills (prd, requirements, architecture, production, survival, harness), each a folder with a SKILL.md in a generic skill format, intended to trigger automatically when needed. -- evidence: [README.md#L53-L60](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L53-L60), [README.md#L51-L51](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L51-L51), [README.md#L102-L102](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L102-L102)
+- interfaces (1 claim(s)):
+  - [observation/documented] Usage paths documented: paste a SKILL.md into any chat (Claude/ChatGPT/Codex), upload a skill folder to claude.ai settings, or copy folders into ~/.claude/skills/ for Claude Code auto-triggering. -- evidence: [README.md#L136-L136](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L136-L136), [README.md#L118-L121](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L118-L121), [README.md#L132-L132](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L132-L132), [README.md#L108-L110](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L108-L110)
+- memory-state (1 claim(s)):
+  - [observation/documented] Process state lives in docs/进度账本.md, which the AI must read at the start of each turn and update after each gate; a .dsu/progress/ card system (index, module, task files) handles development-context recovery. -- evidence: [README.md#L78-L78](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L78-L78), [docs/进度账本.md#L3-L3](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/%E8%BF%9B%E5%BA%A6%E8%B4%A6%E6%9C%AC.md#L3-L3), [README.md#L76-L76](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/README.md#L76-L76), [docs/Harness-v2-重设计方案.md#L35-L35](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/Harness-v2-%E9%87%8D%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L35-L35), [docs/Harness-v2-重设计方案.md#L39-L41](https://github.com/Junliu1066/vibe-coding-kit/blob/cb387af342e6a001b33ee514456ce2a54a92f72c/docs/Harness-v2-%E9%87%8D%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md#L39-L41)
+- orchestration (1 claim(s)):
+More evidence: [full detail](vibe-coding-kit.detail.md)
+
+Metadata and full claim list: [full detail](vibe-coding-kit.detail.md)
+Human notes ([notes](vibe-coding-kit.notes.md), never overwritten by build)
+
+[Back to map index](../../index.md)

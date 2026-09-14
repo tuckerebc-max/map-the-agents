@@ -1,0 +1,530 @@
+{
+  "applied_operation_id": "op_304ae1fff241477d8ce920166ce6133a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e81fb2b5c4e8fc0dd7a72d9903b0a953f44775db0780c8f5340afed36d390867",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L22-L22"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d6c3381e05e446d73fce752e58c5332dfae1a6407d99da1c29fd7a2ee331d85",
+        "slc_dda9d1e46cb60b3c44bc2b0c0bdbbdd926fc33c4107d20250a5ac4031381965f"
+      ],
+      "text": "The extension adds a /code-review command to Gemini CLI that analyzes code changes on the current branch for quality issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e48a32aacd15f41a3840738efc9ef3afe5322a3d760afe8c287a41105289063",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L28-L31"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2fec321bc6d2e527b298971ce19cd260e63e384c9c685d7fa049e15c0da44362",
+        "slc_4de3c558caa47d4b06f57a025bc10641c22d185cc070f693eadcd1d273aaa92c"
+      ],
+      "text": "A /pr-code-review command analyzes code changes on a pull request, invoked either with a PR link argument or via configured environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_031dc6d7d06b95dad9d9ee75b6d55d9d243899b4889b86cddd08f5e190e54da6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L28-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2fec321bc6d2e527b298971ce19cd260e63e384c9c685d7fa049e15c0da44362"
+      ],
+      "text": "Pull-request review can be configured through REPOSITORY, PULL_REQUEST_NUMBER, and ADDITIONAL_CONTEXT environment variables, with ADDITIONAL_CONTEXT supplying focus areas."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_779f4c7fa8c1e8282451db0abd15151bbe9d87c2d37fd342ecf48fb225dfab3b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L15-L16"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L11-L13"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47c6b6cda9083a064c271f2c680a57b53f513e3052bb1aae7578b03d59d4b13c",
+        "slc_b89019fd3d1b4515ee1960f6610e0a333677f7e17a0be1bee22922b417fb21d2",
+        "slc_de3ac586a7c6bd0f52aafb670a82051cf2f5a1534479427a992d61b3156217f4"
+      ],
+      "text": "Installation requires Gemini CLI version 0.4.0 or newer, installed via the gemini extensions install command pointing at the extension's GitHub repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0fca234114faf5c2bf4a25abec56f0e5ef03dbd8ea421e186a2af3cf22826c9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L28-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2fec321bc6d2e527b298971ce19cd260e63e384c9c685d7fa049e15c0da44362"
+      ],
+      "text": "Using the pull-request review feature requires enabling the GitHub MCP server in Gemini CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8845cf22cecf8409c55853f0426f2a9c805416637aa972b741d89ff37493389d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L3-L3"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dda9d1e46cb60b3c44bc2b0c0bdbbdd926fc33c4107d20250a5ac4031381965f",
+        "slc_e1a1164a01554681fa469b7fc244e6a14c4adf4bd21e109155b2f72b4c104edf"
+      ],
+      "text": "The extension is an open-source Gemini CLI extension authored by the creators of the Gemini Code Assist GitHub App."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_220aacc23277de4871c76f067c74fe711694be62568a816f88431b8f44dd79ef",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "8956a61b820b4e6e69be58f329bc53f62557c3f2",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "docs/contributing.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/docs/contributing.md#L9-L13"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "8956a61b820b4e6e69be58f329bc53f62557c3f2",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "docs/contributing.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/docs/contributing.md#L30-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ccf9d8156ff3bb960915300fcfe66ce47748bcbb3f18d762cf7f51f92b51e26",
+        "slc_8aede588f2d9b603978b579648741d88e70499d2c99449f7a6bf3eeb71efcd1f"
+      ],
+      "text": "Repository development practice: contributions must be accompanied by a Contributor License Agreement, and all submissions, including from project members, go through GitHub pull-request review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60c8208c38606fc61daac560edf7eb718b391333ad185984061f1acfd4b33cc7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "6070ae1cd721d0ecd2dd92b993db72dc4a7f59d0",
+          "line_end": 80,
+          "line_start": 74,
+          "path": "docs/code-of-conduct.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/docs/code-of-conduct.md#L74-L80"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "6070ae1cd721d0ecd2dd92b993db72dc4a7f59d0",
+          "line_end": 95,
+          "line_start": 93,
+          "path": "docs/code-of-conduct.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/docs/code-of-conduct.md#L93-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e0fcf5e6af0fa9060f9dc9d32cf1c78bb6f856b6fad17ab2fa9d3998e3012e1",
+        "slc_0f054edd504d140257337bc8df8497f1da043d4b4cbcb2d2e4895a1dd4e78f2d"
+      ],
+      "text": "Repository development practice: the project follows a Contributor Covenant-derived code of conduct with a Project Steward handling reported violations and an escalation path via opensource@google.com."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_496444317e55db264bc44bb8c08df7b6958a2c55bba59d844439472fe7cdadcb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "08894f3b1b08252ecaa87e5b618dbf8881904d2d",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "GEMINI.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/GEMINI.md#L5-L5"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "08894f3b1b08252ecaa87e5b618dbf8881904d2d",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "GEMINI.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/GEMINI.md#L9-L9"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "08894f3b1b08252ecaa87e5b618dbf8881904d2d",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "GEMINI.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/GEMINI.md#L1-L1"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_025bf0b01c1450f756466d3d17005f2ea4dacc9ab417fce80273c88127d4b547",
+        "slc_9ab1c8d55b5116f64d3476e03741ea8288b0fd445684133f694d7f50ed44541d",
+        "slc_dc19b8a285e71e3f095ec7a2f08430031887ac9992f90589445b650c54107834"
+      ],
+      "text": "The bundled GEMINI.md instructs the CLI agent to prefer /code-review when users request change reviews, and for PR review to check $REPOSITORY, $PULL_REQUEST_NUMBER, and $ADDITIONAL_CONTEXT, asking for clarification if missing or ambiguous."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3108043ff185cbb892cf1948165b98cd3702bd758ac2df0f53c3b884ab849047",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L26-L26"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "08894f3b1b08252ecaa87e5b618dbf8881904d2d",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "GEMINI.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/GEMINI.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4de3c558caa47d4b06f57a025bc10641c22d185cc070f693eadcd1d273aaa92c",
+        "slc_5b83ca7b919798b3ec6fe898f0b5bf8a0c4329af309deb27724fbb093a991292"
+      ],
+      "text": "GEMINI.md names the pull-request command /pr-review while the README calls it /pr-code-review, suggesting a possible naming inconsistency between the two files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6586c90dc20e00554ef4bb521d75735761b95c314d7c8f516d22088a0c6c60b3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L26-L26"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L22-L22"
+        },
+        {
+          "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+          "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "gemini-cli-extensions/code-review",
+          "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4de3c558caa47d4b06f57a025bc10641c22d185cc070f693eadcd1d273aaa92c",
+        "slc_6d6c3381e05e446d73fce752e58c5332dfae1a6407d99da1c29fd7a2ee331d85",
+        "slc_dda9d1e46cb60b3c44bc2b0c0bdbbdd926fc33c4107d20250a5ac4031381965f"
+      ],
+      "text": "The extension appears to focus on reviewing code changes rather than generating them; documented functionality is limited to analysis of branch or pull-request diffs for quality issues."
+    }
+  ],
+  "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 41,
+        "path": "README.md",
+        "size": 2545
+      },
+      {
+        "lines": 9,
+        "path": "GEMINI.md",
+        "size": 456
+      },
+      {
+        "lines": 95,
+        "path": "docs/code-of-conduct.md",
+        "size": 4599
+      },
+      {
+        "lines": 32,
+        "path": "docs/contributing.md",
+        "size": 1067
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 10,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_a866f2f3369a5172a73b540a210a0b54",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/gemini-cli-extensions/code-review/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/00fa2a8e0549be11/manifest.json",
+  "package_id": "pkg_a94496c3608c37944f8ce94aa0a596d43408f062daa1df9b5395acc32d1dfbfd",
+  "repo": "gemini-cli-extensions/code-review",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "172a1a1558926829b3ad502cf09c630d93ecc6d1e335f0a4fca5601cc447a53c",
+  "snapshot_id": "00fa2a8e0549be11",
+  "sources": [
+    {
+      "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+      "git_sha": "08894f3b1b08252ecaa87e5b618dbf8881904d2d",
+      "lines": 9,
+      "path": "GEMINI.md",
+      "repository": "gemini-cli-extensions/code-review",
+      "sha256": "60c0c575bd5fa62139fd58c358fa3312fb67011d45a6053fd5c08d2e324ce73a",
+      "source_id": "src_b1d40a1458b25358bf924f9e65318e6e",
+      "stored": "gemini.md-399080f41ccf.md",
+      "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/GEMINI.md"
+    },
+    {
+      "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+      "git_sha": "d5389bc637158f6e3f5c86607c2874f1569e95bd",
+      "lines": 41,
+      "path": "README.md",
+      "repository": "gemini-cli-extensions/code-review",
+      "sha256": "cf8b15bd34805c2a9792bd02e8693ce05c9716ef36f4a3bebdb8d78f5ad1f65d",
+      "source_id": "src_ab14adc57c1c5e4cb7527b5a4009eead",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/README.md"
+    },
+    {
+      "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+      "git_sha": "6070ae1cd721d0ecd2dd92b993db72dc4a7f59d0",
+      "lines": 95,
+      "path": "docs/code-of-conduct.md",
+      "repository": "gemini-cli-extensions/code-review",
+      "sha256": "9fd3c55a53aa393d0416ceb4051a967429e7ef11a4c710b58b447d5f550e54cd",
+      "source_id": "src_49fcbf34de8152c29dfd12b0a83678e7",
+      "stored": "code-of-conduct.md-fb1114d48212.md",
+      "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/docs/code-of-conduct.md"
+    },
+    {
+      "commit": "dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04",
+      "git_sha": "8956a61b820b4e6e69be58f329bc53f62557c3f2",
+      "lines": 32,
+      "path": "docs/contributing.md",
+      "repository": "gemini-cli-extensions/code-review",
+      "sha256": "5be4be0ded4a8c52ffecaa0312bb6343827a500b1265095fc9fbfca4ab88534d",
+      "source_id": "src_af29546fbbf9550c84f86d0055296e8a",
+      "stored": "contributing.md-419d79ae7d44.md",
+      "url": "https://github.com/gemini-cli-extensions/code-review/blob/dd1a10d2c9d07b2ebade866590fdfa59cd8f9d04/docs/contributing.md"
+    }
+  ],
+  "summary": "The repository provides a Gemini CLI extension that adds code-review commands analyzing branch or pull-request changes for quality issues; evidence is mostly README documentation plus contributor/community docs.",
+  "superseded_claim_ids": []
+}

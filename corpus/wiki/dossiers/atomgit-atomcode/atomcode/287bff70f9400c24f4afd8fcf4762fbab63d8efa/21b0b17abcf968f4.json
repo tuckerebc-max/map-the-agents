@@ -1,0 +1,1479 @@
+{
+  "applied_operation_id": "op_35c1086f7984478f9d3976eac4294ddf",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e6f1f7b99ed565085621d43ee3cbec4a7787efef7ea919cb62736264e85c814",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L47-L47"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L11-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64ce90ff4b479af5583504556d5173426a7bd805956e8e3814f730a0b40f4f74",
+        "slc_6bf6eba97ac61ad3e023e494c0cf6a1abd835e808f919f1e5938e1c06a634682"
+      ],
+      "text": "AtomCode is described as an open-source terminal AI coding agent written in Rust, positioned as an alternative to Claude Code / Cursor Agent that connects to any OpenAI-compatible API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cbb2323c20895ee52d28a26ff0e6c7412e53764d3d22d8632c31e65f8bee8c3c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 639,
+          "line_start": 629,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L629-L639"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_798fb7198bdc20cf5ac6601e9d09c6186994827b28a456209970d0ed3affe7bd"
+      ],
+      "text": "The project is a layered Rust workspace with crates for kernel (agent loop), capabilities (providers/tools/MCP/skills/sessions/memory), coding, review, TUI, CLI, and daemon (HTTP/SSE/WebSocket transport)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_089ea0040d451ad7b64b7381919c204da583f0ac7cd08ad10e4aa561b7ccc679",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 58,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L53-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24856a64fe6b6f30b024784100d109daa906f68e80d8657c542c400558a71853"
+      ],
+      "text": "The agent loop features autonomous multi-step execution, a verification loop with syntax checks, a dynamic step budget scaled to edited files, loop detection, and 3-layer JSON repair of malformed tool-call arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee22d46a1d91999e100a62ef57f57d410edd1e14a9ba9a13aaac86a62f24acf8",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 145,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L139-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8387d57b85355e07d67178810efe25a333e3923d30cd549f2c0e6f363685deae"
+      ],
+      "text": "Destructive commands (rm -rf, git push --force, DROP TABLE) require explicit approval; writes outside the workspace, sensitive paths, and source-file deletion get stronger confirmation rules, with per-session grants and /undo rollback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86e0faadae3537376403d61d2793ffd32125a2e291fdc90b687ff778a07a0c3a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 397,
+          "line_start": 397,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L397-L397"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L103-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d23a80f8fcf45ab57d522b386997cfd26e46b3c7efd86698b53104ef4aff7258",
+        "slc_fe07302803ff19d04cd39060c9e8f699a1a9fb32c1bd1c2aecc775ceda8c5205"
+      ],
+      "text": "In headless mode (-p), approval-required bash calls are auto-approved and logged to stderr, while other approval-required tools are denied."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08c31351ad595ea9812a87d8ab50015879184bc417cb36adf2573a5e23c540e3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 79,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L77-L79"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 84,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L83-L84"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L71-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38d6c851d1afb1c8cafc1c2388dee5398f74213de22d51d15705ca0e3964d462",
+        "slc_c5a730ae5f001cb9575b1fe0a887b8af262f063422cb353278378b633981fd19",
+        "slc_e6e9b7bb8a697aee86826c46b217cebb14597b7b64696417223ed394595686d3"
+      ],
+      "text": "Built-in tools include file/shell operations (read_file, edit_file, bash, grep, glob), web search/fetch, code-graph tools (list_symbols, trace_callers, blast_radius), auto_fix, and use_skill."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_54c6366498d4def7fc5f511f2a3b68c42018d63c87ebbe846a2c0a6c00ba7447",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 99,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L90-L99"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L88-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f6932a445582a26351265004f74b511def4d68e1bbb1fb7280d8d2674fc55d9",
+        "slc_c99aeed6ff7b86606f40f6d54f99b3da46bf0ad1c16c21796cac13249b6d2008"
+      ],
+      "text": "The agent supports multiple LLM providers via OpenAI function-calling, including Claude, OpenAI, DeepSeek, Zhipu GLM, Qwen, SiliconFlow, Ollama (partial), and any OpenAI-compatible API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5fc56691298269bc57cecbf43633e8f69fcf3e71c305c46b4d22e528a66b86e5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L103-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fe07302803ff19d04cd39060c9e8f699a1a9fb32c1bd1c2aecc775ceda8c5205"
+      ],
+      "text": "The CLI offers persistent sessions (--continue, /resume), AtomGit OAuth login, SSO login, headless single-prompt mode, and a daemon exposing an HTTP API with SSE streaming chat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35a5d6b1d650ac960ce1cf0ccd0f2fc1cdd81f09323db43c9397ec65b3bff83c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 135,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L129-L135"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 125,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L123-L125"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f9416ede9a63c45ce4663f0ff60d1ac81d8d876dd2ec18783ac148e2fd01770",
+        "slc_ddabcb132f693ca07a08f199b64ae6d20a9ff6285a9ef716a4aa0be6fad64861"
+      ],
+      "text": "A /webui command launches a local browser UI bound to 127.0.0.1 with a one-time token; /app enables mobile remote access via a reverse WSS relay with QR-code pairing and bidirectional sync."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a290eae041ada055a8661e1e3c8b31a04d326d6fadf1c1abbf59dbf64674f743",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 524,
+          "line_start": 520,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L520-L524"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L103-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28fb0a96b0962a5d1526538c38549f7aa062dc71ef398d5bb723d93113782889",
+        "slc_fe07302803ff19d04cd39060c9e8f699a1a9fb32c1bd1c2aecc775ceda8c5205"
+      ],
+      "text": "Memory commands let users save facts (/remember, with --global scope), remove them (/forget), and list them (/memory); sessions are persisted and resumable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_822c8dcc69e6e583f4941aebb04e369e0886e984599898196fe24568d054d1a2",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 564,
+          "line_start": 564,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L564-L564"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 572,
+          "line_start": 568,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L568-L572"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 623,
+          "line_start": 623,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L623-L623"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 592,
+          "line_start": 590,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L590-L592"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_390c74f769047533c1ef842d27617a9bf6b9d2afa5b7e14634218d29a07e5356",
+        "slc_4eb891e821612381d90396a4c94746655135296cb581d45652650208df5db81e",
+        "slc_932d76fb995a01a83a70f4ebf2ddfd93cf53b7dfff181dbbbab3c3374ced5fec",
+        "slc_e9dc3aa75ae0df5fff357cc02bb6ccf6d4e899359e00a12c58aac8280f422eb8"
+      ],
+      "text": "Users can define custom slash commands as Markdown template files with frontmatter (name, description, args) in global, project-level, or plugin directories; project-level overrides global, but custom commands cannot shadow built-ins."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b95e15240a16ea0435d682f5db24433bfad078e95fafadb3ead3e660a1940b78",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 650,
+          "line_start": 650,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L650-L650"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 652,
+          "line_start": 652,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L652-L652"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 648,
+          "line_start": 648,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L648-L648"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 654,
+          "line_start": 654,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L654-L654"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 646,
+          "line_start": 646,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L646-L646"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dc1b6a298a13cd31873f5ecf247eb48895742f0e1a3fd8c3cab155451444917",
+        "slc_622d63e7ae58e634315b73c23fea20e939e115f1a4ebdc2ac89d314c108ed3f4",
+        "slc_a63779275328d248575e998e2eaf230b4f0a8c1b9bce7cee72bc7d8df56a1094",
+        "slc_e2d2c1e472ad5e402a85a810fa84a69b1afd1f00c3281f22f5dd8f1ea80a4cc9",
+        "slc_e47dd3902eae2ff0b2970f552912118811a3a703671c09247a629705b635dbb6"
+      ],
+      "text": "Stated design principles include tech-stack agnosticism via descriptor-file detection (package.json, Cargo.toml, etc.), a single CodingRuntime owner, tool safety, token-budget-aware context windowing, and directed dependencies keeping the kernel neutral."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95b05bd687c241cc3ac3f4af54bdbb6c3b3a99a26c4a06463a4db33341fb6ee8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 242,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L237-L242"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 235,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L230-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_71fc3567fed97639d044f71c92c0372f58ea3938918753464cc527c769b1d217",
+        "slc_aa86c10cd93b5cdda4b1e1282cb0cd2a67a032aaac8cd0aab4f8555b09449609"
+      ],
+      "text": "The CodingPlan request signer is closed-source and only present in official builds; self-built binaries cannot sign requests, so /login cannot claim free CodingPlan models, though own API providers work without it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7550ac01d291827ea20791a91618b2bc81ae16ada5c0e65273d16d1ade99b36",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 191,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L187-L191"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 680,
+          "line_start": 678,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L678-L680"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 207,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L203-L207"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36e8a08cab68792a8c13be6d045ab820274afe7fdd18cd9fd1cc4b1720928e43",
+        "slc_46b9f8a6586ebce345450ef1e68c242cd54e6e281aa0a361ee5b209e110e1b23",
+        "slc_aefabf37ddd1ccf5a58d710af64b29c63a4e3fe166da900a386ea37d1ed46392"
+      ],
+      "text": "Repository development practice: building from source requires Rust 1.88+ and Git; the webui frontend must be built with npm before the Rust build (webui/dist is gitignored and embedded), and cargo clean -p atomcode-daemon is needed after frontend rebuilds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73275af1f59ee353b86e494a61583791cf7002e146f64847455c3ceedbb979c6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 285,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L282-L285"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c9e9ec770ccaeb438e2237b625cadd5b7999cdbd0eff3b9cab72cbf9502471ca"
+      ],
+      "text": "Building from source requires Rust 1.88+ because older Cargo versions cannot parse the current lockfile; runtime needs an API key from a supported provider or an AtomGit account."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c6a0c1bea34b440959609435f47c8abed84054eabd139cfcc40a67b541406a8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 354,
+          "line_start": 353,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L353-L354"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 375,
+          "line_start": 374,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L374-L375"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 339,
+          "line_start": 339,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L339-L339"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 365,
+          "line_start": 359,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L359-L365"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_002b753676064077b6c4e979d35eb124713d93817a225e8c2f034a06c0027a5b",
+        "slc_563697598b29645fc466c8bb1148c53b93c361722099ba4135b4f40a59b758bd",
+        "slc_5ee03e5fc77e7aaeac116c9ce429a825d6a086195c6ec3032a73f71dea0f6030",
+        "slc_c7ea481eb26ab6e9d42bec40a646d4fea804d75c8f2a00656f6177cc91221747"
+      ],
+      "text": "Configuration lives at ~/.atomcode/config.toml with provider entries (type, api_key, model, base_url, context_window); /reload picks up manual edits without restart, and a first-run wizard guides provider setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00eae0f8d64346c3586edbbd51f6a00d1cbc755d551d5bf6c936f0f1a85f5e67",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 670,
+          "line_start": 670,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L670-L670"
+        },
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 658,
+          "line_start": 658,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L658-L658"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c12a656d3b3826f945fcb648818819add5ec589c3b102a3edda37cac05da2955",
+        "slc_ee56713685f7c882d95e7152fb40fb9d114191fda592962576205e8df5c587b0"
+      ],
+      "text": "A .atomcode.md file in the project root provides persistent context included in the system prompt; AGENTS.md is supported as an alternative, with .atomcode.md taking priority if both exist."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49d2c60655195a255a1ce915e76e746cd8783da3252247fb5a34028793dd123a",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+          "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+          "line_end": 58,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "atomgit-atomcode/atomcode",
+          "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md#L53-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24856a64fe6b6f30b024784100d109daa906f68e80d8657c542c400558a71853"
+      ],
+      "text": "The turn-level datalog is described as supporting replay, debugging, and eval harnesses, suggesting the product provides structured logs intended for evaluation use."
+    }
+  ],
+  "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 839,
+        "path": "README.md",
+        "size": 37605
+      },
+      {
+        "lines": 205,
+        "path": "docs/architecture.md",
+        "size": 9969
+      },
+      {
+        "lines": 61,
+        "path": "CONTEXT.md",
+        "size": 3501
+      },
+      {
+        "lines": 815,
+        "path": "README.zh-CN.md",
+        "size": 36607
+      },
+      {
+        "lines": 35,
+        "path": "docs/acp-sdk-handler-notes.md",
+        "size": 1471
+      },
+      {
+        "lines": 503,
+        "path": "docs/async-webhook-guide.md",
+        "size": 11268
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/async-webhook-summary.md",
+        "reason": "file-budget",
+        "size": 10064
+      },
+      {
+        "path": "docs/coding-runtime-incremental-migration.md",
+        "reason": "file-budget",
+        "size": 57601
+      },
+      {
+        "path": "docs/coding-runtime-native-migration-design.md",
+        "reason": "file-budget",
+        "size": 46709
+      },
+      {
+        "path": "docs/compact-durable-checkpoint-design.md",
+        "reason": "file-budget",
+        "size": 7568
+      },
+      {
+        "path": "docs/compact-native-migration-retrospective.md",
+        "reason": "file-budget",
+        "size": 21432
+      },
+      {
+        "path": "docs/custom-endpoint-guide.md",
+        "reason": "file-budget",
+        "size": 3844
+      },
+      {
+        "path": "docs/hook-architecture.md",
+        "reason": "file-budget",
+        "size": 16034
+      },
+      {
+        "path": "docs/hook-cli-guide.md",
+        "reason": "file-budget",
+        "size": 10272
+      },
+      {
+        "path": "docs/hook-expansion-summary.md",
+        "reason": "file-budget",
+        "size": 9325
+      },
+      {
+        "path": "docs/hook-implementation-summary.md",
+        "reason": "file-budget",
+        "size": 8089
+      },
+      {
+        "path": "docs/hook-timing-complete.md",
+        "reason": "file-budget",
+        "size": 8512
+      },
+      {
+        "path": "docs/HOOK_DOC_UPDATE_SPEC.md",
+        "reason": "file-budget",
+        "size": 16255
+      },
+      {
+        "path": "docs/hooks.md",
+        "reason": "file-budget",
+        "size": 12593
+      },
+      {
+        "path": "docs/i18n-style.md",
+        "reason": "file-budget",
+        "size": 4862
+      },
+      {
+        "path": "docs/kernel-parity-backlog.md",
+        "reason": "file-budget",
+        "size": 11499
+      },
+      {
+        "path": "docs/live-transport-convergence-plan.md",
+        "reason": "file-budget",
+        "size": 11380
+      },
+      {
+        "path": "docs/mcp-rmcp-feasibility.md",
+        "reason": "file-budget",
+        "size": 13833
+      },
+      {
+        "path": "docs/mcp.md",
+        "reason": "file-budget",
+        "size": 14040
+      },
+      {
+        "path": "docs/pr-hook-test-command.md",
+        "reason": "file-budget",
+        "size": 3717
+      },
+      {
+        "path": "docs/release-v5.0.1-current-branch-change-report.md",
+        "reason": "file-budget",
+        "size": 12047
+      },
+      {
+        "path": "docs/session-convergence-plan.md",
+        "reason": "file-budget",
+        "size": 56957
+      },
+      {
+        "path": "docs/target-architecture.md",
+        "reason": "file-budget",
+        "size": 6203
+      },
+      {
+        "path": "docs/telemetry.md",
+        "reason": "file-budget",
+        "size": 5533
+      },
+      {
+        "path": "docs/v5.0.0-retire-bridge-core-progress.md",
+        "reason": "file-budget",
+        "size": 10947
+      },
+      {
+        "path": "docs/vscode-i18n-implementation-plan-2026-06-30.md",
+        "reason": "file-budget",
+        "size": 4828
+      },
+      {
+        "path": "docs/webhook-guide.md",
+        "reason": "file-budget",
+        "size": 10690
+      },
+      {
+        "path": "docs/webhook-implementation-summary.md",
+        "reason": "file-budget",
+        "size": 7895
+      },
+      {
+        "path": "docs/adr/0001-runtime-owned-session-transitions.md",
+        "reason": "file-budget",
+        "size": 993
+      },
+      {
+        "path": "docs/adr/0002-runtime-owned-dynamic-mcp-tool-catalog.md",
+        "reason": "file-budget",
+        "size": 3688
+      },
+      {
+        "path": "docs/adr/0003-runtime-owned-turn-execution-policy.md",
+        "reason": "file-budget",
+        "size": 2093
+      },
+      {
+        "path": "docs/mcp/github.md",
+        "reason": "file-budget",
+        "size": 5317
+      },
+      {
+        "path": "docs/plans/2026-07-23-windows-qr-rendering.md",
+        "reason": "file-budget",
+        "size": 2436
+      },
+      {
+        "path": "docs/plans/2026-07-24-busy-continue-fork.md",
+        "reason": "file-budget",
+        "size": 3740
+      },
+      {
+        "path": "docs/plans/2026-07-25-provider-retry-consolidation.md",
+        "reason": "file-budget",
+        "size": 4056
+      },
+      {
+        "path": "docs/plans/2026-07-25-subtasks-footer-panel.md",
+        "reason": "file-budget",
+        "size": 2812
+      },
+      {
+        "path": "docs/plans/2026-07-26-atomgit-production-tools.md",
+        "reason": "file-budget",
+        "size": 2262
+      },
+      {
+        "path": "docs/plans/2026-07-26-busy-continue-fork-gc.md",
+        "reason": "file-budget",
+        "size": 2230
+      },
+      {
+        "path": "docs/plans/2026-07-26-model-cost-attribution.md",
+        "reason": "file-budget",
+        "size": 4164
+      },
+      {
+        "path": "docs/plans/2026-07-26-provider-accounts-model-profiles-design.md",
+        "reason": "file-budget",
+        "size": 19990
+      },
+      {
+        "path": "docs/plans/2026-07-26-provider-accounts-model-profiles-plan.md",
+        "reason": "file-budget",
+        "size": 14147
+      },
+      {
+        "path": "docs/plans/2026-07-27-models-dev-pricing-design.md",
+        "reason": "file-budget",
+        "size": 2339
+      },
+      {
+        "path": "docs/plans/2026-07-28-provider-panel-ui-design.md",
+        "reason": "file-budget",
+        "size": 6996
+      },
+      {
+        "path": "docs/plans/2026-07-28-rewind-design.md",
+        "reason": "file-budget",
+        "size": 4579
+      },
+      {
+        "path": "docs/plans/2026-07-28-rewind-implementation-plan.md",
+        "reason": "file-budget",
+        "size": 5037
+      },
+      {
+        "path": "docs/plans/2026-07-31-native-runtime-datalog.md",
+        "reason": "file-budget",
+        "size": 3827
+      },
+      {
+        "path": "docs/plans/2026-08-02-session-recovery-design.md",
+        "reason": "file-budget",
+        "size": 3560
+      },
+      {
+        "path": "docs/plans/2026-08-02-session-recovery-implementation-plan.md",
+        "reason": "file-budget",
+        "size": 1717
+      },
+      {
+        "path": "docs/plans/2026-08-06-internal-continuation-compaction-design.md",
+        "reason": "file-budget",
+        "size": 2149
+      },
+      {
+        "path": "docs/plans/2026-08-07-config-panel-implementation-plan.md",
+        "reason": "file-budget",
+        "size": 3408
+      },
+      {
+        "path": "docs/plans/2026-08-07-lightweight-lsp-phase-one.md",
+        "reason": "file-budget",
+        "size": 4304
+      },
+      {
+        "path": "docs/plans/2026-08-07-request-user-input-review-design.md",
+        "reason": "file-budget",
+        "size": 2388
+      },
+      {
+        "path": "docs/plans/2026-08-07-tasks-long-line-rendering.md",
+        "reason": "file-budget",
+        "size": 2052
+      },
+      {
+        "path": "docs/plans/2026-08-10-first-stage-planning-quality-design.md",
+        "reason": "file-budget",
+        "size": 3382
+      },
+      {
+        "path": "docs/plans/2026-08-11-provider-form-horizontal-editing-design.md",
+        "reason": "file-budget",
+        "size": 1504
+      },
+      {
+        "path": "docs/plans/2026-08-11-todo-agent-body-projection-design.md",
+        "reason": "file-budget",
+        "size": 1671
+      },
+      {
+        "path": "docs/plans/2026-08-14-webui-browser-notification-design.md",
+        "reason": "file-budget",
+        "size": 13507
+      },
+      {
+        "path": "docs/plans/2026-08-15-webui-blocking-interaction-dock.md",
+        "reason": "file-budget",
+        "size": 2776
+      },
+      {
+        "path": "docs/plans/2026-08-17-acp-sdk-2.0-protocol-roadmap.md",
+        "reason": "file-budget",
+        "size": 38954
+      },
+      {
+        "path": "docs/plans/2026-08-17-project-input-history-design.md",
+        "reason": "file-budget",
+        "size": 4154
+      },
+      {
+        "path": "docs/plans/2026-08-20-code-review-deep-mode-fanout-design.md",
+        "reason": "file-budget",
+        "size": 12336
+      },
+      {
+        "path": "docs/plans/2026-08-20-code-review-deep-mode-fanout-plan.md",
+        "reason": "file-budget",
+        "size": 40067
+      },
+      {
+        "path": "docs/plans/2026-08-20-code-review-deep-verify-phase2-plan.md",
+        "reason": "file-budget",
+        "size": 29161
+      },
+      {
+        "path": "docs/plans/2026-08-21-external-agent-subagent-drivers-spec.md",
+        "reason": "file-budget",
+        "size": 18084
+      },
+      {
+        "path": "docs/plans/2026-08-23-deepseek-v4-flash-evaluation-design.md",
+        "reason": "file-budget",
+        "size": 5350
+      },
+      {
+        "path": "docs/plans/2026-08-23-deepseek-v4-flash-evaluation.md",
+        "reason": "file-budget",
+        "size": 5877
+      },
+      {
+        "path": "docs/plans/2026-08-23-headless-eval-controls.md",
+        "reason": "file-budget",
+        "size": 1990
+      },
+      {
+        "path": "docs/pr-descriptions/2026-04-27-vscode-extension-ui-mcp.md",
+        "reason": "file-budget",
+        "size": 7327
+      },
+      {
+        "path": "docs/security/permission-model.md",
+        "reason": "file-budget",
+        "size": 9386
+      },
+      {
+        "path": "docs/superpowers/2026-07-27-release-v5.0.3-test-checklist.md",
+        "reason": "file-budget",
+        "size": 7209
+      },
+      {
+        "path": "docs/testing/release-v5.0.0-acceptance.md",
+        "reason": "file-budget",
+        "size": 16628
+      },
+      {
+        "path": "docs/testing/release-v5.0.3-core-retirement-acceptance.md",
+        "reason": "file-budget",
+        "size": 14302
+      },
+      {
+        "path": "docs/testing/windows-path-normalization.md",
+        "reason": "file-budget",
+        "size": 4595
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-19-tuix-ink-cell-diff.md",
+        "reason": "file-budget",
+        "size": 6702
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-19-tuix-retained-mode-rewrite.md",
+        "reason": "file-budget",
+        "size": 26482
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-23-agent-harness-principles.md",
+        "reason": "file-budget",
+        "size": 10394
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-23-cadence-reflection.md",
+        "reason": "file-budget",
+        "size": 20440
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-23-merge-current-task-into-cadence.md",
+        "reason": "file-budget",
+        "size": 19955
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-08-vision-preprocessor-auto-config.md",
+        "reason": "file-budget",
+        "size": 33395
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-08-vision-preprocessor.md",
+        "reason": "file-budget",
+        "size": 41231
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-25-tuix-unified-in-app-scroll.md",
+        "reason": "file-budget",
+        "size": 80547
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-29-webui.md",
+        "reason": "file-budget",
+        "size": 74766
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-09-cache-friendly-compaction.md",
+        "reason": "file-budget",
+        "size": 26303
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-27-v2-rate-limit-pause-resume.md",
+        "reason": "file-budget",
+        "size": 42107
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-29-acp-agent.md",
+        "reason": "file-budget",
+        "size": 45485
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-03-terminal-status-glyph.md",
+        "reason": "file-budget",
+        "size": 17173
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-06-double-esc-undo-cooldown.md",
+        "reason": "file-budget",
+        "size": 11171
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-11-persistent-todo-panel.md",
+        "reason": "file-budget",
+        "size": 39162
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-12-github-style-diff.md",
+        "reason": "file-budget",
+        "size": 26844
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-13-selectable-approval.md",
+        "reason": "file-budget",
+        "size": 35307
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-batch-user-questions-persona-nudge.md",
+        "reason": "file-budget",
+        "size": 6952
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-brainstorming-request-user-input.md",
+        "reason": "file-budget",
+        "size": 10192
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-deepseek-skill-first-reminder.md",
+        "reason": "file-budget",
+        "size": 17463
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-multi-question-request-user-input.md",
+        "reason": "file-budget",
+        "size": 33854
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-22-request-user-input-custom-and-submit-spacing.md",
+        "reason": "file-budget",
+        "size": 21648
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-24-retire-core-conversation-tui-port.md",
+        "reason": "file-budget",
+        "size": 19826
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-24-skills-multi-compose.md",
+        "reason": "file-budget",
+        "size": 12959
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-24-windows-native-tls-schannel-fallback.md",
+        "reason": "file-budget",
+        "size": 10826
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-25-retire-core-provider-A-compact.md",
+        "reason": "file-budget",
+        "size": 11043
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-25-retire-core-provider-B-vision.md",
+        "reason": "file-budget",
+        "size": 27164
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-25-retire-core-provider-C2-conversation-transport.md",
+        "reason": "file-budget",
+        "size": 12171
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-25-retire-core-tool-ball-D.md",
+        "reason": "file-budget",
+        "size": 9301
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-25-round-cap-checkpoint.md",
+        "reason": "file-budget",
+        "size": 35367
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-29-webui-sync-compact.md",
+        "reason": "file-budget",
+        "size": 13048
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-31-local-scheduled-tasks-phase1.md",
+        "reason": "file-budget",
+        "size": 23704
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-31-local-scheduled-tasks-phase2.md",
+        "reason": "file-budget",
+        "size": 19327
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-31-project-memory-dir-override.md",
+        "reason": "file-budget",
+        "size": 10387
+      },
+      {
+        "path": "docs/superpowers/specs/2026-04-23-p2-doctor-review-notebook-todo-design.md",
+        "reason": "file-budget",
+        "size": 2492
+      },
+      {
+        "path": "docs/superpowers/specs/2026-05-08-vision-preprocessor-design.md",
+        "reason": "file-budget",
+        "size": 14151
+      },
+      {
+        "path": "docs/superpowers/specs/2026-05-25-tuix-unified-in-app-scroll-design.md",
+        "reason": "file-budget",
+        "size": 17131
+      },
+      {
+        "path": "docs/superpowers/specs/2026-05-29-provider-add-simplify-design.md",
+        "reason": "file-budget",
+        "size": 9680
+      },
+      {
+        "path": "docs/superpowers/specs/2026-05-29-webui-design.md",
+        "reason": "file-budget",
+        "size": 14766
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-07-headless-output-format-json-design.md",
+        "reason": "file-budget",
+        "size": 8726
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-09-cache-friendly-compaction-design.md",
+        "reason": "file-budget",
+        "size": 9955
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-27-v2-rate-limit-pause-resume-design.md",
+        "reason": "file-budget",
+        "size": 8662
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-29-acp-agent-design.md",
+        "reason": "file-budget",
+        "size": 14054
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-03-terminal-status-glyph-design.md",
+        "reason": "file-budget",
+        "size": 6955
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-06-double-esc-undo-cooldown-design.md",
+        "reason": "file-budget",
+        "size": 4551
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-11-persistent-todo-panel-design.md",
+        "reason": "file-budget",
+        "size": 11445
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-13-selectable-approval-design.md",
+        "reason": "file-budget",
+        "size": 8332
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-batch-user-questions-persona-nudge-design.md",
+        "reason": "file-budget",
+        "size": 4571
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-brainstorming-request-user-input-design.md",
+        "reason": "file-budget",
+        "size": 6293
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-deepseek-skill-first-reminder-design.md",
+        "reason": "file-budget",
+        "size": 6158
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-multi-question-request-user-input-design.md",
+        "reason": "file-budget",
+        "size": 9075
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-22-request-user-input-custom-and-submit-spacing-design.md",
+        "reason": "file-budget",
+        "size": 6304
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-24-retire-core-conversation-tui-port-design.md",
+        "reason": "file-budget",
+        "size": 8075
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-24-skills-multi-compose-design.md",
+        "reason": "file-budget",
+        "size": 6868
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-24-windows-native-tls-schannel-fallback-design.md",
+        "reason": "file-budget",
+        "size": 8413
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-25-retire-core-provider-A-compact-design.md",
+        "reason": "file-budget",
+        "size": 5552
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-25-retire-core-provider-B-vision-design.md",
+        "reason": "file-budget",
+        "size": 8636
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-25-retire-core-provider-C-conversation-design.md",
+        "reason": "file-budget",
+        "size": 8267
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-25-retire-core-tool-ball-D-design.md",
+        "reason": "file-budget",
+        "size": 6224
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-25-round-cap-checkpoint-design.md",
+        "reason": "file-budget",
+        "size": 11110
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-29-user-input-background-block-design.md",
+        "reason": "file-budget",
+        "size": 5536
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-29-webui-sync-compact-design.md",
+        "reason": "file-budget",
+        "size": 5974
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-30-progress-signposts-preamble-design.md",
+        "reason": "file-budget",
+        "size": 6807
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-30-workflow-intent-understanding-design.md",
+        "reason": "file-budget",
+        "size": 7146
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-31-local-scheduled-tasks-design.md",
+        "reason": "file-budget",
+        "size": 7717
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-31-local-scheduled-tasks-phase2-design.md",
+        "reason": "file-budget",
+        "size": 8230
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-31-project-memory-dir-override-design.md",
+        "reason": "file-budget",
+        "size": 6722
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 9482
+      }
+    ],
+    "omitted_count": 140,
+    "omitted_slices": 90,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1099,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 146,
+      "complete": false,
+      "omitted": 140,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_67a490bffa495eb391e1576188cc6476",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/atomgit-atomcode/atomcode/287bff70f9400c24f4afd8fcf4762fbab63d8efa/21b0b17abcf968f4/manifest.json",
+  "package_id": "pkg_02cd4038b9315aa2e6699b9303c36ca43c8e963f8a52db801d639d7740f37721",
+  "repo": "atomgit-atomcode/atomcode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4a4294a8a0d8339d3eafd667557ca39cda954ec56b4d76c56b67c417ceed4668",
+  "snapshot_id": "21b0b17abcf968f4",
+  "sources": [
+    {
+      "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+      "git_sha": "7694327716773114ca646629b7c53ec3cfd6189c",
+      "lines": 61,
+      "path": "CONTEXT.md",
+      "repository": "atomgit-atomcode/atomcode",
+      "sha256": "48f45e13b48b4ba5e7ec97c9c416755555601cd6e0a249fed6c294e894eff181",
+      "source_id": "src_d2a4dd1e1a4b58d3b49ca8e411259931",
+      "stored": "context.md-86fee53c3330.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/CONTEXT.md"
+    },
+    {
+      "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+      "git_sha": "cb8ae4258d4dab1beb42914bfce4fa6cfcfdb884",
+      "lines": 839,
+      "path": "README.md",
+      "repository": "atomgit-atomcode/atomcode",
+      "sha256": "e8aae0347c27fab884c66307a071f111a90af338312146161dc0df8ac73a7653",
+      "source_id": "src_3fe97386ba0f5755ac042e1a14e827ec",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.md"
+    },
+    {
+      "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+      "git_sha": "77211493e89313ed8c83668ec29d35b74529ac34",
+      "lines": 815,
+      "path": "README.zh-CN.md",
+      "repository": "atomgit-atomcode/atomcode",
+      "sha256": "0774c517b98a02a2e04d57d70c8bc940fbccdd0435d8817fb40336082a94b019",
+      "source_id": "src_d0d7201e4c405190b054ddaf24fa1de1",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/README.zh-CN.md"
+    },
+    {
+      "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+      "git_sha": "fc8ddec9cb115277f67ef4f868338fb72be34521",
+      "lines": 35,
+      "path": "docs/acp-sdk-handler-notes.md",
+      "repository": "atomgit-atomcode/atomcode",
+      "sha256": "34d37ad1939ab6a2b38e752f672b4a7ed9336c0fdfd5e07f2c2806547d77e5df",
+      "source_id": "src_2de73cd4647c5dfca382fdccacc67a2e",
+      "stored": "acp-sdk-handler-notes.md-87bedef6b31b.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/docs/acp-sdk-handler-notes.md"
+    },
+    {
+      "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+      "git_sha": "4662e315f2307ed4e2e7e23c74711e7d4e1be6e6",
+      "lines": 205,
+      "path": "docs/architecture.md",
+      "repository": "atomgit-atomcode/atomcode",
+      "sha256": "a835a1607bb0f4c110d250a6e1feba8346d2e2c49c6bcfbf7251a567226c4e37",
+      "source_id": "src_d45ea070cdda57539c520a27bbfa8bdc",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/docs/architecture.md"
+    },
+    {
+      "commit": "287bff70f9400c24f4afd8fcf4762fbab63d8efa",
+      "git_sha": "18b001faa113a11da8f9db70df8375b5afda7bb5",
+      "lines": 503,
+      "path": "docs/async-webhook-guide.md",
+      "repository": "atomgit-atomcode/atomcode",
+      "sha256": "effed51daf6ced92c630a73f6e6d39f08e57c093d2b168d8c44b63441de4fd9f",
+      "source_id": "src_ac34e391b25f5bc28412eaab02c9d8c4",
+      "stored": "async-webhook-guide.md-ba6ff8599ed1.md",
+      "url": "https://github.com/atomgit-atomcode/atomcode/blob/287bff70f9400c24f4afd8fcf4762fbab63d8efa/docs/async-webhook-guide.md"
+    }
+  ],
+  "summary": "Selected evidence records: AtomCode is described as an open-source terminal AI coding agent written in Rust, positioned as an alternative to Claude Code / Cursor Agent that connects to any OpenAI-compatible API. The project is a layered Rust workspace with crates for kernel (agent loop), capabilities (providers/tools/MCP/skills/sessions/memory), coding, review, TUI, CLI, and daemon (HTTP/SSE/WebSocket transport).",
+  "superseded_claim_ids": []
+}

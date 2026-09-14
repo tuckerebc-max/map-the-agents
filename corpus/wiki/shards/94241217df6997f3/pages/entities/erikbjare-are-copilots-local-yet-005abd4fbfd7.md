@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0e91bab534b266da92e6cb92c6ecf7bcdcf4cf4bd8b5554a8190ca4fa7f35a87
+- clm_155b54e42ba9e4dcc9b4769a83e6b7894597f96b6f35e4e7619ca7f88e186dba
+- clm_1c1854f16b49dcba881a6098cda0f3ee40ff1c3a823744f9e75e890e7248cb4f
+- clm_391a238894c6410c5157985a8ace16abb916ee7823dac10c4ddcf6b8c3e522ad
+- clm_417b4269e5846902183e65ee4916d4470dc12e42bafed1de2193211bb615bd35
+- clm_61b7216f930223139ddd1f353dd5469f727dae1e9d66b7de3fcfd474692b26ce
+- clm_76b3f6be2f7eaa4b9bd102e30defda65b299936f2e1847e593b2b53bc7ce90c1
+- clm_76f4a1dc42c1f620f73f4a29f9904d0eee404eb4f28534b579f29b85c38565d0
+- clm_ba2cdc0785a432c938dff645cec075e6afb496b57ba774d7b9f13ad029464a1b
+- clm_bfd20d79e47560fc843f4af525037d1691d4c59863189b552ea1db1af29ad0d7
+- clm_dded354ea8dd6ea9392cec1a2e5704e97a8fa14fe9d8b6e865688897d2d93fc3
+maturity: draft
+page_id: pg_761551b73f9b59d38a6e005abd4fbfd7
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: erikbjare/are-copilots-local-yet
+updated_at: '2026-09-14T03:50:00Z'
+---
+
+# erikbjare/are-copilots-local-yet
+
+<!-- rcw:begin owner=entity:ent_16c5bde79e685f8290890eaeb42f14c9 block=evidence -->
+- erikbjare/are-copilots-local-yet is mentioned in this evidence. [@claim:clm_0e91bab534b266da92e6cb92c6ecf7bcdcf4cf4bd8b5554a8190ca4fa7f35a87] [@claim:clm_155b54e42ba9e4dcc9b4769a83e6b7894597f96b6f35e4e7619ca7f88e186dba] [@claim:clm_1c1854f16b49dcba881a6098cda0f3ee40ff1c3a823744f9e75e890e7248cb4f] [@claim:clm_391a238894c6410c5157985a8ace16abb916ee7823dac10c4ddcf6b8c3e522ad] [@claim:clm_417b4269e5846902183e65ee4916d4470dc12e42bafed1de2193211bb615bd35] [@claim:clm_61b7216f930223139ddd1f353dd5469f727dae1e9d66b7de3fcfd474692b26ce] [@claim:clm_76b3f6be2f7eaa4b9bd102e30defda65b299936f2e1847e593b2b53bc7ce90c1] [@claim:clm_76f4a1dc42c1f620f73f4a29f9904d0eee404eb4f28534b579f29b85c38565d0] [@claim:clm_ba2cdc0785a432c938dff645cec075e6afb496b57ba774d7b9f13ad029464a1b] [@claim:clm_bfd20d79e47560fc843f4af525037d1691d4c59863189b552ea1db1af29ad0d7] [@claim:clm_dded354ea8dd6ea9392cec1a2e5704e97a8fa14fe9d8b6e865688897d2d93fc3]
+<!-- rcw:end owner=entity:ent_16c5bde79e685f8290890eaeb42f14c9 block=evidence -->
+
+## Researcher notes
+

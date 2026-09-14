@@ -1,0 +1,630 @@
+{
+  "applied_operation_id": "op_ec45ae288d8145a6a4552b0e3c3573b6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_41bfb43dba6e4a6aa4dc31a581597fae0f4968c9dd25b806a9b8789ea7d28313",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3110e42c2756fe186b023ee867f956604a31e39b629a3e6ce46e5d06545f7533"
+      ],
+      "text": "The README states the project is no longer maintained and directs users to ToolAgents or other Python agentic frameworks instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_edf7ca33fd184b87d4d1acb891149fbfd03d6fcd5d5e3fe15a00414d83837060",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 28,
+          "line_start": 20,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L20-L28"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76dc058cf03d63a89803805198f6546bd02ffe842f2846a8adaedb3142e3dad9",
+        "slc_b4bab475fac4b8cc57e01eece2cff8438d649a7fbd7854250ade679759d34e14"
+      ],
+      "text": "The framework provides a chat interface, structured output generation, single and parallel function calling, RAG with colbert reranking, and agent chains of Conversational, Sequential, and Mapping types."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7fc779315adb036e3e7614a3b76acc4dd7d046417269376774e297e68ad58a2f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 28,
+          "line_start": 20,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L20-L28"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76dc058cf03d63a89803805198f6546bd02ffe842f2846a8adaedb3142e3dad9",
+        "slc_fd58a7199b7d5c64ec63fb66566b58024af90041e4dafbeb13b7f29bb1d34499"
+      ],
+      "text": "Guided sampling via grammars and JSON schema generation constrains model output to user-defined structures, so models not fine-tuned for function calling or JSON output can still perform these tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3373bac4f62d048b8e682aefe70b6e5812e423ddf4c5733951079ca61171d3ed",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 28,
+          "line_start": 20,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L20-L28"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76dc058cf03d63a89803805198f6546bd02ffe842f2846a8adaedb3142e3dad9",
+        "slc_8d07bbe23c2e42fbfd01939a3a59d775d9c6f8bb5db67ee25b6b4de12e12da44"
+      ],
+      "text": "The framework works with multiple providers: llama-cpp-python and its server, the llama.cpp server, and TGI and vllm servers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c8752a20aebcb66515d13b664ebffc71c25602f5648d9dc36369b88aa7bef1d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 28,
+          "line_start": 20,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L20-L28"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "d6461742e7de9b440bae81781d544ff78d68f011",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "docs/function-calling-agent.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/function-calling-agent.md#L109-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76dc058cf03d63a89803805198f6546bd02ffe842f2846a8adaedb3142e3dad9",
+        "slc_8f1dfe9afa40337700f158fc5b1f09ceb3021c8b31281a0f1444dbb1bae8bc48"
+      ],
+      "text": "Tools can be defined as Python functions, pydantic models, llama-index tools, or OpenAI tool schemas; LlamaCppFunctionTool.from_openai_tool converts an OpenAI tool schema plus a callable into a tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79f1ae175303448ac080ce8d2923ea98b5f7b6eb1abd7a603774d1860743b427",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 118,
+          "line_start": 118,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L118-L118"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L138-L138"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 134,
+          "line_start": 120,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L120-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_97699ee7661785dde7508aaa7fcfd50922ea30e97e61c6d73029dc55aeaed53a",
+        "slc_c19bc94dd654af53f73f32d9ef79681f180786deb2b302b945fd278902058979",
+        "slc_d2726ef17fb4d8982b8a93501c55f19e73a73c997ffd5ba1f780ade5ebd7c92e"
+      ],
+      "text": "A MessagesFormatterType enum offers predefined prompt formats including MISTRAL, CHATML, VICUNA, LLAMA_2, LLAMA_3, PHI_3, and DeepSeek Coder v2, and custom formatters can be built by instantiating the MessagesFormatter class."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_736ff14632f01fa69b3721ec17d22e606d588117244a607efef13383b16b2ffa",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "490dc441300ea8ef50026e0f63a6da440bc71dd3",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/agents-api-reference.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agents-api-reference.md#L15-L15"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "490dc441300ea8ef50026e0f63a6da440bc71dd3",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "docs/agents-api-reference.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agents-api-reference.md#L25-L25"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "490dc441300ea8ef50026e0f63a6da440bc71dd3",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "docs/agents-api-reference.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agents-api-reference.md#L11-L11"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "692872ee0c58377a3bdd0b4978adf74c697e37d7",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/chat_history-api-reference.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/chat_history-api-reference.md#L7-L7"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "490dc441300ea8ef50026e0f63a6da440bc71dd3",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/agents-api-reference.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agents-api-reference.md#L7-L7"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "490dc441300ea8ef50026e0f63a6da440bc71dd3",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "docs/agents-api-reference.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agents-api-reference.md#L29-L29"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "490dc441300ea8ef50026e0f63a6da440bc71dd3",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/agents-api-reference.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agents-api-reference.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8d4b54b2c496e872fb0ab37c49db8515ab4cd62d8325d7a14b97fc6a90e64c05",
+        "slc_9ed6376cd97e717df8a4822ead32d151389a8f9485adbbab71f51034b10bf0ab",
+        "slc_a5620c34d375bdd44165035cc30952bb67166e7b78495cba16a3da006e3ec5bd",
+        "slc_cbd65d57e1b97cf5d1d761f89a8c59e0fc9e39f7c2326e4e397c49ec3424e3fd",
+        "slc_f438fd2fb21b88a11858a31b085a750526017914a0ac8fcad0ea86753efb253e",
+        "slc_f4423ce91c8906f7f75563810fb59d12ebe6a380406a4da34ecb24c4840ae2b1",
+        "slc_f9eb57c1a64729016fafd3fae53e081c72cdb24d3d7ba6fa37e2dadf91b44fef"
+      ],
+      "text": "Documented API components include the llm_agent module, FunctionCallingAgent, StructuredOutputAgent, output settings, prompt templates, a messages formatter module, and a chat history/message store module."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8aab6b6a87225a7b86eba49c7381aede3b034b56deb1a080e274e1a2bb6ede7f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "d6461742e7de9b440bae81781d544ff78d68f011",
+          "line_end": 117,
+          "line_start": 112,
+          "path": "docs/function-calling-agent.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/function-calling-agent.md#L112-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c74cf2b2a1e7a7075e2434fcb06bca335c0f9ad4969afc6a4c133f022c819657"
+      ],
+      "text": "FunctionCallingAgent is constructed with a provider, a list of function tools, a send-message-to-user callback, a message formatter type, and an allow_parallel_function_calling flag."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c23ddbf3efa1da8b3519fecfcdb790257d5d5e1c1cbb9cf8c260ddcff804858",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L89-L89"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 175,
+          "line_start": 174,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L174-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5de240bbee2204945f8614287b0f800f41de2f2049668e0dcb41c4de08afeda2",
+        "slc_f8512f449ce4909e66f860c24f16119a56a06c87cc0243d111882f7aec997284"
+      ],
+      "text": "RAG functionality (the RAGColbertReranker class and RAG example) requires the optional ragatouille dependency, installed via the llama-cpp-agent[rag] extra."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c231e83ca5eabf1fb43d94f3d642b2ac71a8a4a4cce4b9fa0a6a354c75986ea9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L7-L8"
+        },
+        {
+          "commit": "26848efd4f3511626982f96a96a54905096795b4",
+          "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "ReadMe.md",
+          "repository": "maximilian-winter/llama-cpp-agent",
+          "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md#L57-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63ed1c106c18a8a70fb3ade5a9e8714b5d03a8c4d0a243e7132ed3e982a4a1ed",
+        "slc_b9cb8bd7584dfacad8fb3837a2d7521b43db68f0ae7a361ee885fa464fcdebf3"
+      ],
+      "text": "The package is published on PyPI as llama-cpp-agent and installed with pip."
+    }
+  ],
+  "commit": "26848efd4f3511626982f96a96a54905096795b4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 181,
+        "path": "ReadMe.md",
+        "size": 9688
+      },
+      {
+        "lines": 16,
+        "path": "docs/agent_chains.md",
+        "size": 371
+      },
+      {
+        "lines": 30,
+        "path": "docs/agents-api-reference.md",
+        "size": 441
+      },
+      {
+        "lines": 11,
+        "path": "docs/chat_history-api-reference.md",
+        "size": 219
+      },
+      {
+        "lines": 141,
+        "path": "docs/function-calling-agent.md",
+        "size": 5161
+      },
+      {
+        "lines": 6,
+        "path": "docs/function-calling-api-reference.md",
+        "size": 61
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/get-started.md",
+        "reason": "file-budget",
+        "size": 17592
+      },
+      {
+        "path": "docs/grammar-api-reference.md",
+        "reason": "file-budget",
+        "size": 185
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 48
+      },
+      {
+        "path": "docs/knowledge-graph-example.md",
+        "reason": "file-budget",
+        "size": 2240
+      },
+      {
+        "path": "docs/llama_index_tool_use.md",
+        "reason": "file-budget",
+        "size": 3784
+      },
+      {
+        "path": "docs/map_chain.md",
+        "reason": "file-budget",
+        "size": 8908
+      },
+      {
+        "path": "docs/output-parser-api-reference.md",
+        "reason": "file-budget",
+        "size": 51
+      },
+      {
+        "path": "docs/parallel_function_calling.md",
+        "reason": "file-budget",
+        "size": 3066
+      },
+      {
+        "path": "docs/provider-api-reference.md",
+        "reason": "file-budget",
+        "size": 291
+      },
+      {
+        "path": "docs/rag.md",
+        "reason": "file-budget",
+        "size": 5020
+      },
+      {
+        "path": "docs/requirements.txt",
+        "reason": "file-budget",
+        "size": 43
+      },
+      {
+        "path": "docs/sequential_chain.md",
+        "reason": "file-budget",
+        "size": 4474
+      },
+      {
+        "path": "docs/simple-chat-example.md",
+        "reason": "file-budget",
+        "size": 1062
+      },
+      {
+        "path": "docs/structured-output-example.md",
+        "reason": "file-budget",
+        "size": 3054
+      }
+    ],
+    "omitted_count": 14,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 150,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 20,
+      "complete": false,
+      "omitted": 14,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_4e49c8c57ffa59cc85ce2522c48b212a",
+  "facets": {
+    "components": 1,
+    "dependencies": 3,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/maximilian-winter/llama-cpp-agent/26848efd4f3511626982f96a96a54905096795b4/1fc6ccd5a852d881/manifest.json",
+  "package_id": "pkg_a919da0484073404906c28bae03b9e13621d25dd178f608a0f25dc13356ba5bf",
+  "repo": "maximilian-winter/llama-cpp-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e994690dd1f0646629ce3f9ed08c8a41b9ba3e677ab3c32955f0dc2d5668f2f9",
+  "snapshot_id": "1fc6ccd5a852d881",
+  "sources": [
+    {
+      "commit": "26848efd4f3511626982f96a96a54905096795b4",
+      "git_sha": "aa370b0b85768cb67f96aa0edaa0ffa0f9d98a58",
+      "lines": 181,
+      "path": "ReadMe.md",
+      "repository": "maximilian-winter/llama-cpp-agent",
+      "sha256": "a6f65fac5219b010e5bb59a9d1b595c07229ff202b3c2c1f8ae79d8bc70f2b60",
+      "source_id": "src_fb9211f3d5ff5e7b8d9ac2ec76e25ed8",
+      "stored": "readme.md-0b59e9c9f474.md",
+      "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/ReadMe.md"
+    },
+    {
+      "commit": "26848efd4f3511626982f96a96a54905096795b4",
+      "git_sha": "3f9f48ee9f8891e5594e85b28f421c30db610026",
+      "lines": 16,
+      "path": "docs/agent_chains.md",
+      "repository": "maximilian-winter/llama-cpp-agent",
+      "sha256": "83a7c547933550d35ca63162e9aaea22aa122685e455847e7cf86b1d25b826d0",
+      "source_id": "src_3c9bd958614559a795557e281c76dc19",
+      "stored": "agent_chains.md-ad7a2d82ac0d.md",
+      "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agent_chains.md"
+    },
+    {
+      "commit": "26848efd4f3511626982f96a96a54905096795b4",
+      "git_sha": "490dc441300ea8ef50026e0f63a6da440bc71dd3",
+      "lines": 30,
+      "path": "docs/agents-api-reference.md",
+      "repository": "maximilian-winter/llama-cpp-agent",
+      "sha256": "dd668346bbba95b5d48df2d65e5d88d50c18d9989008e5926310b89943a64843",
+      "source_id": "src_2a5d0616ba0157cc8dae5af43b3bbcf7",
+      "stored": "agents-api-reference.md-1c6b304e6749.md",
+      "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/agents-api-reference.md"
+    },
+    {
+      "commit": "26848efd4f3511626982f96a96a54905096795b4",
+      "git_sha": "692872ee0c58377a3bdd0b4978adf74c697e37d7",
+      "lines": 11,
+      "path": "docs/chat_history-api-reference.md",
+      "repository": "maximilian-winter/llama-cpp-agent",
+      "sha256": "2dc05226a1257fa7f3dac39b2bc531f9ee867e8bd28b35ea3e6384b53009cc57",
+      "source_id": "src_3743d7377e895529aa7ec9b3ce8ff07b",
+      "stored": "chat_history-api-reference.md-8eeb6490043f.md",
+      "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/chat_history-api-reference.md"
+    },
+    {
+      "commit": "26848efd4f3511626982f96a96a54905096795b4",
+      "git_sha": "d6461742e7de9b440bae81781d544ff78d68f011",
+      "lines": 141,
+      "path": "docs/function-calling-agent.md",
+      "repository": "maximilian-winter/llama-cpp-agent",
+      "sha256": "8695f7176b758cf914e7b4a0a2e1fba8e2c4f672d1ab84a459c946e1956084d1",
+      "source_id": "src_4679c4ab3d165d47ae263f99cfa3ed19",
+      "stored": "function-calling-agent.md-9daed387e0a0.md",
+      "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/function-calling-agent.md"
+    },
+    {
+      "commit": "26848efd4f3511626982f96a96a54905096795b4",
+      "git_sha": "95fea91eaf0bfba606f753d73172a5cf8858b872",
+      "lines": 6,
+      "path": "docs/function-calling-api-reference.md",
+      "repository": "maximilian-winter/llama-cpp-agent",
+      "sha256": "96c95419b7d17a2917ab75b051fc1f9786623f58a348278aba02083cca797e6f",
+      "source_id": "src_068b4e5347285359a67ab605473c0547",
+      "stored": "function-calling-api-reference.md-847841b7dcf9.md",
+      "url": "https://github.com/Maximilian-Winter/llama-cpp-agent/blob/26848efd4f3511626982f96a96a54905096795b4/docs/function-calling-api-reference.md"
+    }
+  ],
+  "summary": "Selected evidence records: The README states the project is no longer maintained and directs users to ToolAgents or other Python agentic frameworks instead. The framework provides a chat interface, structured output generation, single and parallel function calling, RAG with colbert reranking, and agent chains of Conversational, Sequential, and Mapping types.",
+  "superseded_claim_ids": []
+}

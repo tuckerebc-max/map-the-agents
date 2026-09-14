@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_107306ee889cf0068e99576172f24b543f8213975cc3c098db8a259506712408
+- clm_13a77b89310670729be2482837198c93532e849824ab2e34eb4cf76925cdb7f6
+- clm_17bbba3de9ee6b626958de40fef7ced8a60ad9240290c15ec37865ef7dd6806f
+- clm_5a8c3bd0acfb11811ff2f373c6555042633ccc6366cc6a1483579d0becf26422
+- clm_5d00672ede67db8ff46d69f823f7f83b6316a58373238bee36ac1b1dec50850a
+- clm_61baa4d863cbc2a183d7ead99c56acad86d6eaf764f6fc5d75ba93dab8fea980
+- clm_710a96262111e41230288627ff6af476f07b0875536194e7dbe4fdf9674fbb34
+- clm_ae34dd3723c3ee9c20a723b1fe6df03b0e9a033af273b5d1de97eb0cda6f13c7
+- clm_ff2f9e8ca17dd939bf0f33a9fac6bda769f9cb47c7dd0e335f509b3e7fd7d42e
+maturity: draft
+page_id: pg_2fc80f67727050f086d155c3ea4d3724
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: gil-son/language-ai-engineering-lab
+updated_at: '2026-09-14T03:53:43Z'
+---
+
+# gil-son/language-ai-engineering-lab
+
+<!-- rcw:begin owner=entity:ent_a1d32b4e395a5a05b3f9bd374eb27143 block=evidence -->
+- gil-son/language-ai-engineering-lab is mentioned in this evidence. [@claim:clm_107306ee889cf0068e99576172f24b543f8213975cc3c098db8a259506712408] [@claim:clm_13a77b89310670729be2482837198c93532e849824ab2e34eb4cf76925cdb7f6] [@claim:clm_17bbba3de9ee6b626958de40fef7ced8a60ad9240290c15ec37865ef7dd6806f] [@claim:clm_5a8c3bd0acfb11811ff2f373c6555042633ccc6366cc6a1483579d0becf26422] [@claim:clm_5d00672ede67db8ff46d69f823f7f83b6316a58373238bee36ac1b1dec50850a] [@claim:clm_61baa4d863cbc2a183d7ead99c56acad86d6eaf764f6fc5d75ba93dab8fea980] [@claim:clm_710a96262111e41230288627ff6af476f07b0875536194e7dbe4fdf9674fbb34] [@claim:clm_ae34dd3723c3ee9c20a723b1fe6df03b0e9a033af273b5d1de97eb0cda6f13c7] [@claim:clm_ff2f9e8ca17dd939bf0f33a9fac6bda769f9cb47c7dd0e335f509b3e7fd7d42e]
+<!-- rcw:end owner=entity:ent_a1d32b4e395a5a05b3f9bd374eb27143 block=evidence -->
+
+## Researcher notes
+

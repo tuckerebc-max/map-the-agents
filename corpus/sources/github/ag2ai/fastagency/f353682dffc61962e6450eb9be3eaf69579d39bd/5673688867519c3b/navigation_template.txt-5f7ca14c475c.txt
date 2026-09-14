@@ -1,0 +1,40 @@
+---
+search:
+  exclude: true
+---
+- [Features](features.md)
+- User guide
+    - [Getting Started](user-guide/getting-started/index.md)
+    - [Project setup](user-guide/cookiecutter/index.md)
+    - [Runtimes](user-guide/runtimes/index.md)
+        - [AG2](user-guide/runtimes/ag2/index.md)
+            - Agents
+                - [WebSurfer](user-guide/runtimes/ag2/websurfer.md)
+                - [WhatsApp](user-guide/runtimes/ag2/whatsapp.md)
+            - [User interaction](user-guide/runtimes/ag2/interactions.md)
+            - [Using Non-OpenAI Models](user-guide/runtimes/ag2/using_non_openai_models.md)
+    - [UI](user-guide/ui/index.md)
+        - [Console](user-guide/ui/console/basics.md)
+        - [Mesop](user-guide/ui/mesop/basics.md)
+    - [Adapters](user-guide/adapters/index.md)
+        - [FastAPI](user-guide/adapters/fastapi/index.md)
+        - [Nats.io](user-guide/adapters/nats/index.md)
+        - [FastAPI + Nats.io](user-guide/adapters/fastapi_nats/index.md)
+        - [FastAPI Security](user-guide/adapters/fastapi/security.md)
+    - [API-s](user-guide/api/index.md)
+        - [Dependency Injection](user-guide/api/dependency_injection/index.md)
+        - [OpenAPI](user-guide/api/openapi/index.md)
+        - [Security](user-guide/api/security.md)
+    - [Testing](user-guide/testing/index.md)
+    - [CLI](user-guide/cli/index.md)
+- [Tutorials](tutorials/index.md)
+    - [Giphy API & WebSurfer](tutorials/giphy/index.md)
+    - [WhatsApp API & WebSurfer](tutorials/whatsapp/index.md)
+    - [Agentic testing for prompt leakage security](tutorials/prompt_leakage_probing/index.md)
+- Reference
+{api}
+{cli}
+- [Contributing](contributing/index.md)
+    - [Development](contributing/CONTRIBUTING.md)
+    - [Documentation](contributing/docs.md)
+- [Release Notes](release.md)

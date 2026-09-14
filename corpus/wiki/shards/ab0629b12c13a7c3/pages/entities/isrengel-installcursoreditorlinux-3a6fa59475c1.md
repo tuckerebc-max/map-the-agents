@@ -1,0 +1,30 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_402b1da94ccf7d73d058acf7b551d18c362988805ed64f2d4ce921a5c12625ad
+- clm_56c4a45c1ee3d3185c1dbb1f71598a75c0b382ac89e9c6811cd4693196265ab5
+- clm_5ddba213812cdea99461a536c824979a4c1ef6faecd2efa90891154a6929ae4b
+- clm_8f502858b04e04c39fe9109b0b93fda6ee0b3f229e01493cb849e1293f07f8e6
+- clm_a8c2018dc54ce25e0cafd8983fefd2a98fa89f067fbbea812ee3bc4d7b4ff9a7
+- clm_b4e35970b48b0fd150efbde2a6059ca1be8d77e946a13f6d0ae994c4b02a9746
+- clm_cb7ad368d020f497525c5aa1fc6d9f6ca13cbf959bad48cb0d19d3a78bfb60d1
+- clm_e668155c6de290f7f3b86e04b729c0f49bdc54283041df17401c0cce079f1bca
+maturity: draft
+page_id: pg_fb4ed3bcab475c67851d3a6fa59475c1
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: isrengel/installcursoreditorlinux
+updated_at: '2026-09-14T03:59:19Z'
+---
+
+# isrengel/installcursoreditorlinux
+
+<!-- rcw:begin owner=entity:ent_5d770ebb65ae53ffb47351dd447429b6 block=evidence -->
+- isrengel/installcursoreditorlinux is mentioned in this evidence. [@claim:clm_402b1da94ccf7d73d058acf7b551d18c362988805ed64f2d4ce921a5c12625ad] [@claim:clm_56c4a45c1ee3d3185c1dbb1f71598a75c0b382ac89e9c6811cd4693196265ab5] [@claim:clm_5ddba213812cdea99461a536c824979a4c1ef6faecd2efa90891154a6929ae4b] [@claim:clm_8f502858b04e04c39fe9109b0b93fda6ee0b3f229e01493cb849e1293f07f8e6] [@claim:clm_a8c2018dc54ce25e0cafd8983fefd2a98fa89f067fbbea812ee3bc4d7b4ff9a7] [@claim:clm_b4e35970b48b0fd150efbde2a6059ca1be8d77e946a13f6d0ae994c4b02a9746] [@claim:clm_cb7ad368d020f497525c5aa1fc6d9f6ca13cbf959bad48cb0d19d3a78bfb60d1] [@claim:clm_e668155c6de290f7f3b86e04b729c0f49bdc54283041df17401c0cce079f1bca]
+<!-- rcw:end owner=entity:ent_5d770ebb65ae53ffb47351dd447429b6 block=evidence -->
+
+## Researcher notes
+

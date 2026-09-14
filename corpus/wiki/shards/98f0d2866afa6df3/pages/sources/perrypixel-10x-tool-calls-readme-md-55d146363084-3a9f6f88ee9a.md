@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_45a1f2068e712fd94d3370f3f988829f4114b751bbaad4ec966779cb92d5d54f
+- clm_5fb7ef59d0c84154c4345b850177d2cddd8fd6b02f29eaee4f86799e4efb6043
+- clm_67c4ec886563b9b0e9064c43fadf0f604cf9670e4af6f7b7a6a426b69bd4bb21
+- clm_a2f172ca607cc19a525859c5730ec340f9b799ffa6329ba0b95c02f7b520e4aa
+- clm_acfc23017d275400c85c1bc2c10e4de7120461772d84159eae1bbd86339c4737
+- clm_d200bfbd438b4ea2be1589555adaf1be46fec4ae46c8705a628514b0c05f6d3b
+maturity: draft
+page_id: pg_8311f94a144058c28b9d3a9f6f88ee9a
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_7dec0c98135d53d7bc352d4ef35873b6
+title: perrypixel/10x-Tool-Calls/readme.md @ 55d146363084
+updated_at: '2026-09-14T04:15:29Z'
+---
+
+# perrypixel/10x-Tool-Calls/readme.md @ 55d146363084
+
+<!-- rcw:begin owner=source:src_7dec0c98135d53d7bc352d4ef35873b6 block=evidence -->
+- The setup targets tools with tool-call-based quotas (e.g. 500 monthly requests with up to 25 tool calls each), letting multiple follow-ups run within one request; it is not intended to minimize token usage on token-based pricing. [@claim:clm_45a1f2068e712fd94d3370f3f988829f4114b751bbaad4ec966779cb92d5d54f]
+- 10x-Tool-Calls is a rules setup intended for Cursor IDE, Windsurf, or other agent-based coding assistants that support tool calls, and it only works in Agent Mode. [@claim:clm_5fb7ef59d0c84154c4345b850177d2cddd8fd6b02f29eaee4f86799e4efb6043]
+- The setup likely requires a Python runtime, since the loop mechanism runs a Python script (userinput.py) between tasks. [@claim:clm_67c4ec886563b9b0e9064c43fadf0f604cf9670e4af6f7b7a6a426b69bd4bb21]
+- After the AI completes a task, it runs a small Python script that prompts the user; the typed instruction drives continued work in a loop until the user stops manually or the tool call limit is reached. [@claim:clm_a2f172ca607cc19a525859c5730ec340f9b799ffa6329ba0b95c02f7b520e4aa]
+- The project targets users of AI coding assistants with bundled tool-call quotas who want to get more work done per request without restarting the chat. [@claim:clm_acfc23017d275400c85c1bc2c10e4de7120461772d84159eae1bbd86339c4737]
+- The current version supports plain text input only; image uploads and file drops are not yet supported but are planned for a more advanced version. [@claim:clm_d200bfbd438b4ea2be1589555adaf1be46fec4ae46c8705a628514b0c05f6d3b]
+<!-- rcw:end owner=source:src_7dec0c98135d53d7bc352d4ef35873b6 block=evidence -->
+
+## Researcher notes
+

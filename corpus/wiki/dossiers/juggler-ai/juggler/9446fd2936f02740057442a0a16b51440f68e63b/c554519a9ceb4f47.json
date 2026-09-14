@@ -1,0 +1,796 @@
+{
+  "applied_operation_id": "op_f1656c6181c748f7a2e7ef4ac46a639d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_fba0db03cafb74c95c2c6940229309926e60d579c3a1ed781911d04d1274fcfd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 38,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L37-L38"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33a39e53e1cd2b9e1e7c0f4c9d620ceaef1e135cf2adae170541b3ab22a8f6cd",
+        "slc_4712fdf3cfb3d3acfb3711db57cdee51bcc9e03c03c66cb1d3d690fe8e4906e9"
+      ],
+      "text": "Juggler ships a native desktop app plus a headless `juggler` CLI server that serves a web UI, prints its URL and QR code, and can open the browser on a keypress."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd14c83fbb2da5c49449bffb801b9670b500709a99bdcbc09082f30b1318eeb5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L40-L40"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L66-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_705a0448cfc3ca37fc71a4e73ffaf76aafc6a92caccb8648e91a1f780a03e966",
+        "slc_ac0b36dc1664eafb857fe7c77cc484c7803c62070b557b87d501ea057d169f8f"
+      ],
+      "text": "The desktop app and browser tabs are synchronized clients of the same server, so multiple clients can share one live session across machines or a phone."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a004678d8d375f74679a0104b8468e0233309ae63e15b7ebba47d16d6c55fd0d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L7-L7"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 16,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L13-L16"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L82-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60586d61d3913add7e143baca09d6a9dac8355913453f6eaa7bf79a2b025bd6e",
+        "slc_766f0dfac3bc57cdcfd42f087ea4a1035ca142caad8643965a04a2e06c642704",
+        "slc_76b019af407236c1a271c2240fcf1d3571ef3b0341e9ec15a3ae29e37e8d9736"
+      ],
+      "text": "Conversations are represented as persistent trees of typed items rather than scrolling transcripts, with Miller-column navigation and nested child threads that return results to their parent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eeb776fc95745d48e9dd01795c82c60207e60651ec70662524c1b3168111cf73",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L22-L27"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 239,
+          "line_start": 239,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L239-L239"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_733e253c1deea901b6133af0d1f7d6fbae6d74db05f129eb32c6fb2b67610fed",
+        "slc_dbafd3ff5878b75bc5868178e9087534d1d1b9adc98074300d235176592017f8"
+      ],
+      "text": "Session documents live on disk and persist across quit or reconnect, including pending approvals; synchronization uses Yjs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d16f2456ae6967171e56d9953b5d508ac8d7d3c04802daa5687caf21784d2fb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L22-L27"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L88-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_733e253c1deea901b6133af0d1f7d6fbae6d74db05f129eb32c6fb2b67610fed",
+        "slc_ac62d043c6ecea5246a8b420f30f74d9743b974397c901d0c765e577cc611b93"
+      ],
+      "text": "Users can inspect any recorded LLM transaction, seeing the system prompt, messages, tool schemas, output, token and cache usage, timing and stop reason."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b95af7fbd951d9cb749761dd37c79fcf41fa575ee8f043a2a2374d17ea8a3a29",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 27,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L22-L27"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L82-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_733e253c1deea901b6133af0d1f7d6fbae6d74db05f129eb32c6fb2b67610fed",
+        "slc_76b019af407236c1a271c2240fcf1d3571ef3b0341e9ec15a3ae29e37e8d9736"
+      ],
+      "text": "Context is editable: history can be folded into a thread, items moved or copied between branches, branches expanded back, and structural changes undone."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a48bf6ed5befddc40fc9b2603017aeae6bde1420461cfdd8622becc2ef5fdf9e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L113-L113"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L124-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af4a22a11c3ea576e6140677f776d7ae8e69df6a2a4393270a3ef6b21f081fa4",
+        "slc_c36e888899d5fc01420dbb81029b0efca48fdaedf0b735b55b1af157c8e7a243"
+      ],
+      "text": "The product supports Anthropic/Claude Code, OpenAI/Codex, GitHub Copilot, Gemini, Mistral, Z.AI, Ollama, OpenRouter, DeepSeek and other OpenAI-compatible providers, plus local or remote MCP servers whose tools join the built-in toolset."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38972e350de6b1e829ad61e18ce6114f764dda412deacdb1f72d67782e17284c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 118,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L115-L118"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L113-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19999b952c67d1c764063b39a74d8210e30cb195cd287a0d92a1d0db650843d9",
+        "slc_af4a22a11c3ea576e6140677f776d7ae8e69df6a2a4393270a3ef6b21f081fa4"
+      ],
+      "text": "For MCP tools, users can allow or deny individual tools, set fixed default arguments, and view approximate context cost; approval decisions are visible in the handoff record."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99d9ed0006fcd6b92bb423d4c046192131c261faf446a2d50466e69b89572e39",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L94-L94"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L101-L101"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 99,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L96-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75ee3f2cc1d98b2dac8fe7d1093fa2a5e63620d6b88e9e5b0cbe428028f66950",
+        "slc_d42aac59cd0e04cd49d7e9ffb5713d64ce253b0ba6fc7c2312e961e8b066efdd",
+        "slc_ddd6f120d2302b6eafe9aaa528e7988fd2f0164d9b247cd41f3e7758f8564100"
+      ],
+      "text": "Most conversation capabilities are JavaScript extensions on a public SDK: context items defining tools like read/write/bash, strategies defining the LLM loop, slash commands, and UI cards or file viewers; MCP servers and skills enter through the same system."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6bf4e1595bd9b8d014aa9d7b30dada39875a7ca4d59420936785e44876a36770",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 239,
+          "line_start": 239,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L239-L239"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dbafd3ff5878b75bc5868178e9087534d1d1b9adc98074300d235176592017f8"
+      ],
+      "text": "The backend is Go with Wails windowing; the UI is HTML and type-checked JavaScript served directly by the backend, with no Electron shell or frontend build step."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d73c0706caecb027fb570982f0258d47329cd2ec6699150b7dd2f1f1e4c11074",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_231c8be95128914fc3e3e03ed85b05eb98cb9e4fc73106f825d1c6075195aeee"
+      ],
+      "text": "The server listens on localhost by default; LAN access is enabled via a keypress or `--public` flag and has no password, so the docs advise using it only on trusted networks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba26792d73d995f3e64a47691a543e8f9a86d4db83fae08709cb4abd6e8c470e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L126-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2957754a9c85c9b4442c73baec6cea081479d8272f0a6d9b31b560d9a026274e"
+      ],
+      "text": "Juggler measures the full request before each model call, leaves room for the answer, and automatically compacts old history when a conversation exceeds the model's context window."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb97ecc66031d2a203d8cd67b96f9576654bb4cbc1948ec7ca0b74cf2b287be8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 142,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L142-L142"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 233,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L233-L233"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 217,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L217-L217"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 161,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L159-L161"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_190d5296cead52ea44b9e5c1972d54b2217fcf7e33153a00960c305cfe0fe455",
+        "slc_552a56ef873b1102c66b59d3c32537511a611f7bba09abe9f6c46f52293c242c",
+        "slc_6f9bbb9e8ce454177c131f81237e7606d5e78fc11d617606f80372b7cb0f322e",
+        "slc_cfd0f3716fd42836cf6e19939acf735f046c9f0d344629eee210dd91373ab9f4"
+      ],
+      "text": "Repository development practice: builds require Go 1.26+ with vendored submodules; `make go-build` compiles, `make test` runs tests (race detector on by default), and `make test-full` with linting is expected before a PR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b42af8a303167c3a5c0f2f1c56e09a13eff3d6772b68d25a5034f09ea1bd90a8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "dfe0f87b1ba5834e9b0ca020a289041c0d247a72",
+          "line_end": 16,
+          "line_start": 11,
+          "path": "CCLA.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/CCLA.md#L11-L16"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "dfe0f87b1ba5834e9b0ca020a289041c0d247a72",
+          "line_end": 133,
+          "line_start": 130,
+          "path": "CCLA.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/CCLA.md#L130-L133"
+        },
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "d99b0230f24776d39e6251ca134e115469534891",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "CLA.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/CLA.md#L11-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4c7e5505f4c6e673ff5dd2258ffbfd82be2abf4e8cde44802474f219b95e4192",
+        "slc_52d0c58d8ed85d3f112833f8d9212da57d6fb2410f2bae0ba3d1218efc3707ca",
+        "slc_a15761709106cc403419fde762bb3222908f3376b8e6eff0ef4e77c314d15005"
+      ],
+      "text": "Repository development practice: every commit must carry a DCO `Signed-off-by:` line, and corporate or employer-owned contributions require executing the CCLA/CLA privately, not in public PRs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_812f10d9e30520fd42f4c14871813e2892259a18396f5d4236c4601103d1409d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 235,
+          "line_start": 235,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L235-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45da129bd8cee2670817c4c4b3423738bcdde8172664aef8771b8657cff2ba44"
+      ],
+      "text": "Repository development practice: CI is described as a sanity gate for linting, builds and tests that publishes no artifacts; official release builds come from a separate pipeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bea295b58cbfeeae6da9caa7019e08f10173df9624d2be16b4808ad101e94c60",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L60-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ae650dc357c676cacbe5e85b8984f5d2e3290543518ec3bf4a768596719cf92"
+      ],
+      "text": "Repository builds support local and LAN access only; WAN/internet reachability modes are included solely in official binaries from juggler.studio, per the licensing boundary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_449c89ee99b6766c269e76fadb6b664b736cd5e8b88a53e5fe97dbf2b5849184",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+          "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "juggler-ai/juggler",
+          "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_231c8be95128914fc3e3e03ed85b05eb98cb9e4fc73106f825d1c6075195aeee"
+      ],
+      "text": "LAN access to the server has no password, which the documentation itself flags as a constraint to consider on untrusted networks."
+    }
+  ],
+  "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 253,
+        "path": "README.md",
+        "size": 14771
+      },
+      {
+        "lines": 93,
+        "path": "docs/memory.md",
+        "size": 3943
+      },
+      {
+        "lines": 212,
+        "path": "CCLA.md",
+        "size": 9653
+      },
+      {
+        "lines": 185,
+        "path": "CLA.md",
+        "size": 9153
+      },
+      {
+        "lines": 104,
+        "path": "CONTRIBUTOR-AGREEMENT-PRIVACY.md",
+        "size": 4801
+      },
+      {
+        "lines": 108,
+        "path": "LICENSING.md",
+        "size": 5966
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/config-directory.md",
+        "reason": "file-budget",
+        "size": 2338
+      },
+      {
+        "path": "docs/context-window.md",
+        "reason": "file-budget",
+        "size": 9184
+      },
+      {
+        "path": "docs/custom-commands.md",
+        "reason": "file-budget",
+        "size": 6076
+      },
+      {
+        "path": "docs/distribution.md",
+        "reason": "file-budget",
+        "size": 3130
+      },
+      {
+        "path": "docs/extension_guide.md",
+        "reason": "file-budget",
+        "size": 61753
+      },
+      {
+        "path": "docs/extension_tutorial.md",
+        "reason": "file-budget",
+        "size": 17592
+      },
+      {
+        "path": "docs/headless-linux.md",
+        "reason": "file-budget",
+        "size": 5144
+      },
+      {
+        "path": "docs/logging.md",
+        "reason": "file-budget",
+        "size": 5212
+      },
+      {
+        "path": "docs/mcp.md",
+        "reason": "file-budget",
+        "size": 9178
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 14692
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 26835
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 594
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 9300
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 4848
+      }
+    ],
+    "omitted_count": 14,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1803,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 20,
+      "complete": false,
+      "omitted": 14,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_04740a52bd6d537da23ad57f5bd125ea",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 4,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/juggler-ai/juggler/9446fd2936f02740057442a0a16b51440f68e63b/c554519a9ceb4f47/manifest.json",
+  "package_id": "pkg_16b5e4be2d6005f86b35ad9dfb6d6d0598ddb3a9d10b1cc69886212181492a4f",
+  "repo": "juggler-ai/juggler",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "158183da40d7c22283e7436850e81fc780f745b81f0f2878ac94f64b3443c586",
+  "snapshot_id": "c554519a9ceb4f47",
+  "sources": [
+    {
+      "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+      "git_sha": "dfe0f87b1ba5834e9b0ca020a289041c0d247a72",
+      "lines": 212,
+      "path": "CCLA.md",
+      "repository": "juggler-ai/juggler",
+      "sha256": "3c9b78d34f476dcf72ddddd185d0d03e53fa1c711c3606c1653f9eeacbb426e9",
+      "source_id": "src_38d8162ff33b59dab96bb9f120ae4bf5",
+      "stored": "ccla.md-8fe1e1dc128b.md",
+      "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/CCLA.md"
+    },
+    {
+      "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+      "git_sha": "d99b0230f24776d39e6251ca134e115469534891",
+      "lines": 185,
+      "path": "CLA.md",
+      "repository": "juggler-ai/juggler",
+      "sha256": "4cd25fec467ecfc7f5b318e73308e30dfa64c7ff87c9a342a892ce744467dc54",
+      "source_id": "src_abef64ca721a5951a69503b7b7f626e6",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/CLA.md"
+    },
+    {
+      "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+      "git_sha": "a6b7adb9a47b5bba7519f7cab110477a348b8431",
+      "lines": 104,
+      "path": "CONTRIBUTOR-AGREEMENT-PRIVACY.md",
+      "repository": "juggler-ai/juggler",
+      "sha256": "52495379d270e7a08e96666abaa92d0ba287989c4315ba54d6ad11407d53b118",
+      "source_id": "src_dcb1129aa22752cea71b688dbb79fdf7",
+      "stored": "contributor-agreement-privacy.md-ada8d6397a76.md",
+      "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/CONTRIBUTOR-AGREEMENT-PRIVACY.md"
+    },
+    {
+      "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+      "git_sha": "bda639a8f2e98742f1bba8d3b5b107809fc72d56",
+      "lines": 108,
+      "path": "LICENSING.md",
+      "repository": "juggler-ai/juggler",
+      "sha256": "c950d824f3d45f49a8a11f008f948ba6aa6c6d5d5e8e4c826eef39bf475d06b7",
+      "source_id": "src_4164a504071b5954a5a3e2b74be24346",
+      "stored": "licensing.md-6c0d0c939542.md",
+      "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/LICENSING.md"
+    },
+    {
+      "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+      "git_sha": "50d070fcf40278b2d6196273024d1d169fdca297",
+      "lines": 253,
+      "path": "README.md",
+      "repository": "juggler-ai/juggler",
+      "sha256": "9e6bfe3b4c26977c4fcab55a3d9d4de2bcefbff3fe225bd53b2f78bde6c0246e",
+      "source_id": "src_e4bc001edfa45da0ad29d33db1702160",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/README.md"
+    },
+    {
+      "commit": "9446fd2936f02740057442a0a16b51440f68e63b",
+      "git_sha": "90be066516fd0b942f8db4a658ea7fa83a76edef",
+      "lines": 93,
+      "path": "docs/memory.md",
+      "repository": "juggler-ai/juggler",
+      "sha256": "8e1d9a73f58dfb6ee72c13ef5aa2280a033c920ee3937a8a4cd52291164f165b",
+      "source_id": "src_1069423405bb515bacd342c454f1be67",
+      "stored": "memory.md-ad99d17d1a33.md",
+      "url": "https://github.com/juggler-ai/juggler/blob/9446fd2936f02740057442a0a16b51440f68e63b/docs/memory.md"
+    }
+  ],
+  "summary": "Evidence consists of README and contributor license agreements for Juggler, a visual workbench for AI coding agents with a Go backend, Yjs-synchronized session documents, and a JavaScript extension SDK. Product claims below are documentation-based; development/build/CLA content is confined to workflows. Evidence coverage: 143 of 199 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

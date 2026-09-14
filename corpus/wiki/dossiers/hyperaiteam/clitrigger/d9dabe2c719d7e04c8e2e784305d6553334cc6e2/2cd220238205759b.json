@@ -1,0 +1,1271 @@
+{
+  "applied_operation_id": "op_0732b137134a4bdcb39b82e6de11d472",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5af571164d34eee0f755d1b16eff8109c4efaee79f58fcd241013caa77672b4",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L9-L9"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21c46721b24e1f988c1bc8e4a06e2db1dce8dbc823beba363ca337857ac30ce8",
+        "slc_8b325becbe89a303d65d89ff537dac7e32f99944266c4c59f35aa3e019912d3c"
+      ],
+      "text": "CLITrigger is described as an IDE for AI CLI agents, unifying docs, plans, terminals, autonomous agents, and git into one workspace instead of five scattered tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0b6452cc89868c6017a62f6866c4a0f8fdadbeefeb3febb9adb5a3d04cd11c4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L73-L73"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 51,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L45-L51"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 60,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L53-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_48780582ce26b38508b4f0be241fcde7dc9d5a56c7c2628fd9f5f671d9a8dd85",
+        "slc_898f39be2196092dac24da0c0a258f7f0c7cbd9209c2a3355e7c6e5458ee97d2",
+        "slc_f57d6851c4f6bf449e36bf6220241aae1559fe97427ec3d08f7897778b5d3a50"
+      ],
+      "text": "The product is organized around a five-stage pipeline — Docs, Plan, Terminal, Autonomous Tasks, Version Control — where each stage consumes the previous stage's context, with lessons feeding back into docs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9af4c9128b2828cb9a3f721e0d573ec6f6ac0b2e1882b6b653705f01e004311e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L77-L80"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 129,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L129-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75371a2a4dab81ed21974774ffaff681642f47bb2882179ac3a4aa8364af4601",
+        "slc_f68cffc3951cf044bde18733f9c3840cabbb0cbd0ae119d8d06aa4b2e371c24d"
+      ],
+      "text": "Each TODO runs in its own isolated git worktree, with Claude, Antigravity, and Codex executing in parallel, plus dependency chains and merge control."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_42b405f9d38406b46a804a7e1a2ab184d6a9e12de520ca07e7ac1400d1b362df",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L132-L132"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L77-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37fe29749535f2442aa6b41ec79c087087f450d3bfa086ab0b4d1745c3b41a96",
+        "slc_75371a2a4dab81ed21974774ffaff681642f47bb2882179ac3a4aa8364af4601"
+      ],
+      "text": "A multi-agent discussion feature has architect, developer, and reviewer agents debate before implementation, then commit code or send action items to the planner."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_17a463ac0ad9b26cf0915ce118d1ecb68f5d47ccc376ff231d8d742b83de700a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 140,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L140-L140"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 80,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L77-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_464ff6c88d9dbad80ff92b14f0f0b0d83d8ee19f32722c1a6dba53dfa4bde37b",
+        "slc_75371a2a4dab81ed21974774ffaff681642f47bb2882179ac3a4aa8364af4601"
+      ],
+      "text": "Tasks can run on cron or one-off schedules, with automatic retry at the rate-limit reset time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b6666f3927420da85480a76a717dbf049424828059df8c41fa4fe859032c16a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L148-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a0d98e9cb70583669b8e7306c858b68850194e6d4075fa0b959466e015ce625"
+      ],
+      "text": "A strict sandbox mode confines file access to the worktree; the AI CLI (Claude/Antigravity/Codex) can be chosen per project, TODO, or agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_423517dc21921beaa51919df3b3ae53c85df4752e1902f9e9c5d7f8f2e6bbbb9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 183,
+          "line_start": 183,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L183-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f221cf6c00e05ee7c3f4813fddc6547fd9e75c1da4ddf44a1a78ae30180b6fc3"
+      ],
+      "text": "An MCP server exposes CLITrigger over HTTP so MCP clients like Claude Desktop or Claude Code can list projects, create and run tasks, and check status; config (URL + token) is copied from Settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41a7b15c702f4d49687c0aee5d4efa3f0d4a36d96f279b6a73e1f5990b9c6597",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 233,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L231-L233"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72c7bf603661bc66752348cf700f1f01ae35ba570e5f7c031d9ad7b5d3455eb4"
+      ],
+      "text": "The CLI supports configuration commands such as `clitrigger config port 8080` to change the port and `clitrigger config tunnel on` to enable Cloudflare tunnel sharing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_737eb151c36bd60655ceddc02cef5f66989ced4456e01374d1d7631649ba02c9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 156,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L156-L156"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L153-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98d46fa374438d01d92c73c21d0600372bcc6774b708e7d9feb08001b48bf8cb",
+        "slc_b491e48515d780dd1b2d73ac17f759a42ea27940a0f352655464b5f64c6b59ec"
+      ],
+      "text": "The web UI includes a browser-based Git client for staging, committing, pushing, and managing branches and diffs, plus a keyboard-driven morning review queue for triaging overnight TODOs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f607375b6d0d652980ffddd426c393d1624608c2e82976e34f0ac2c9bc6e2eba",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 197,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L189-L197"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2880fa8f8163d41f8d61e85d277b0bc55ef623babb9c1887b9517bc9b24e53ca"
+      ],
+      "text": "The documented stack: Node.js/Express/TypeScript/SQLite/WebSocket backend, React 18/Vite/Tailwind/Recharts frontend, simple-git for worktrees, node-cron for scheduling, node-pty and xterm.js for terminals, and optional Cloudflare Tunnel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75de7558ef2e45b03050bfd12d5ef911d089c7036062753b94d64ea9b2227df3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 238,
+          "line_start": 235,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L235-L238"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 211,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L211-L211"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e57b66ed077890e17dce27e2cd8998c68303fc0bdb2d02e48afba34d92ccbbeb",
+        "slc_ef6d549744d1d1d2f1bcef31250d5d37ccbfdba94c5bb1c2dcf1f872bba20dcb"
+      ],
+      "text": "Prerequisites are Node.js 22+ (LTS recommended), Git, and at least one AI CLI (Claude, Antigravity, or Codex); the desktop app bundles Node.js and native modules like better-sqlite3 and node-pty."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7ad30713d375143d8ff701028221e480c29f59bfe4ac4a652cf2ee989262546",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 285,
+          "line_start": 280,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L280-L285"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 259,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L258-L259"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 250,
+          "line_start": 247,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L247-L250"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 253,
+          "line_start": 253,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L253-L253"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 261,
+          "line_start": 261,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L261-L261"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 274,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L267-L274"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4914ec956b8df26938b115c0b0160632c7ee8cf0298a37ef554c5bd62e66ff4e",
+        "slc_70a4f17c861cde653b45c3962855d01db6c746a8894367e366d5169f02a23d8b",
+        "slc_864ecac1c88b13b504f23abf549871928fc5673aa99479d41b2466cb3e1d117f",
+        "slc_9ecca788717a49185c8c05e33031c87054a7b34a1cfe3412c1a0fe80698733fc",
+        "slc_a89e1d4caa22aa50f74692836bc34e03aea61b4a6004d1f40470d627e330f578",
+        "slc_e610ca82659a946635f853721c1a04a9c25e44898ac4c0806ded35df6f09e148"
+      ],
+      "text": "Repository development practice: running from source involves cloning, npm install in root and src/client, copying .env.example to .env, and `npm run dev` with the dev server at localhost:5173; tests run via `npm test` or scripts/test.bat."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8367185a792a2bd37202cf94ef2ead0f25a45e5b89574d8545b1a4715057248",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 336,
+          "line_start": 334,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L334-L336"
+        },
+        {
+          "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+          "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+          "line_end": 324,
+          "line_start": 318,
+          "path": "README.md",
+          "repository": "hyperaiteam/clitrigger",
+          "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md#L318-L324"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b3ef697eb7da63d323f1e32462612d118f83d926ef684e679af7d06c1c031a6d",
+        "slc_e3db7525cc273fa62f9281551b686179d43ceab49d28199bff0b89cd60a39040"
+      ],
+      "text": "Repository development practice: contributors are invited to file issues, open PRs (starting with 'good first issue' labels), and share workflows in Discussions; docs include CICD.md for GitHub Actions CI/CD and TESTING.md."
+    }
+  ],
+  "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 378,
+        "path": "README.md",
+        "size": 19815
+      },
+      {
+        "lines": 89,
+        "path": "CLAUDE.md",
+        "size": 5064
+      },
+      {
+        "lines": 378,
+        "path": "README_KR.md",
+        "size": 21414
+      }
+    ],
+    "omitted": [
+      {
+        "path": "THIRD_PARTY_LICENSES.md",
+        "reason": "file-budget",
+        "size": 73
+      },
+      {
+        "path": "docs/CICD.md",
+        "reason": "file-budget",
+        "size": 12317
+      },
+      {
+        "path": "docs/ERD.md",
+        "reason": "file-budget",
+        "size": 7259
+      },
+      {
+        "path": "docs/FEATURE_REPORT_AUTO_PROGRESSION.md",
+        "reason": "file-budget",
+        "size": 25757
+      },
+      {
+        "path": "docs/SETUP.md",
+        "reason": "file-budget",
+        "size": 91777
+      },
+      {
+        "path": "docs/TESTING.md",
+        "reason": "file-budget",
+        "size": 8794
+      },
+      {
+        "path": "docs/THEME_PLAN.md",
+        "reason": "file-budget",
+        "size": 7392
+      },
+      {
+        "path": "docs/changelog/2026-03/2026-03-26-1.md",
+        "reason": "file-budget",
+        "size": 1505
+      },
+      {
+        "path": "docs/changelog/2026-03/2026-03-26-2.md",
+        "reason": "file-budget",
+        "size": 3195
+      },
+      {
+        "path": "docs/changelog/2026-03/2026-03-29-1.md",
+        "reason": "file-budget",
+        "size": 3132
+      },
+      {
+        "path": "docs/changelog/2026-03/2026-03-29-2.md",
+        "reason": "file-budget",
+        "size": 991
+      },
+      {
+        "path": "docs/changelog/2026-03/2026-03-29-3.md",
+        "reason": "file-budget",
+        "size": 1170
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-01-1.md",
+        "reason": "file-budget",
+        "size": 6250
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-01-2.md",
+        "reason": "file-budget",
+        "size": 4385
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-03.md",
+        "reason": "file-budget",
+        "size": 2941
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-04.md",
+        "reason": "file-budget",
+        "size": 4146
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-05.md",
+        "reason": "file-budget",
+        "size": 6489
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-06.md",
+        "reason": "file-budget",
+        "size": 6502
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-07.md",
+        "reason": "file-budget",
+        "size": 4980
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-08.md",
+        "reason": "file-budget",
+        "size": 4850
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-10.md",
+        "reason": "file-budget",
+        "size": 7200
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-13.md",
+        "reason": "file-budget",
+        "size": 7722
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-14.md",
+        "reason": "file-budget",
+        "size": 8066
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-15.md",
+        "reason": "file-budget",
+        "size": 4048
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-16.md",
+        "reason": "file-budget",
+        "size": 9661
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-17.md",
+        "reason": "file-budget",
+        "size": 6606
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-18.md",
+        "reason": "file-budget",
+        "size": 5105
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-20.md",
+        "reason": "file-budget",
+        "size": 10502
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-21.md",
+        "reason": "file-budget",
+        "size": 9068
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-27.md",
+        "reason": "file-budget",
+        "size": 11119
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-28.md",
+        "reason": "file-budget",
+        "size": 18924
+      },
+      {
+        "path": "docs/changelog/2026-04/2026-04-30.md",
+        "reason": "file-budget",
+        "size": 10664
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-02-1.md",
+        "reason": "file-budget",
+        "size": 16163
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-02-2.md",
+        "reason": "file-budget",
+        "size": 9668
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-02-3.md",
+        "reason": "file-budget",
+        "size": 8628
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-02-4.md",
+        "reason": "file-budget",
+        "size": 12826
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-03.md",
+        "reason": "file-budget",
+        "size": 17654
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-04-1.md",
+        "reason": "file-budget",
+        "size": 7207
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-04-2.md",
+        "reason": "file-budget",
+        "size": 9158
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-04-3.md",
+        "reason": "file-budget",
+        "size": 5522
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-04-4.md",
+        "reason": "file-budget",
+        "size": 8609
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-04-5.md",
+        "reason": "file-budget",
+        "size": 6015
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-04-6.md",
+        "reason": "file-budget",
+        "size": 2418
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-04-7.md",
+        "reason": "file-budget",
+        "size": 4409
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-05-1.md",
+        "reason": "file-budget",
+        "size": 5804
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-05-2.md",
+        "reason": "file-budget",
+        "size": 11054
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-05-3.md",
+        "reason": "file-budget",
+        "size": 7274
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-07-1.md",
+        "reason": "file-budget",
+        "size": 3976
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-07-2.md",
+        "reason": "file-budget",
+        "size": 3733
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-07-3.md",
+        "reason": "file-budget",
+        "size": 1213
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-11-1.md",
+        "reason": "file-budget",
+        "size": 6084
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-11-2.md",
+        "reason": "file-budget",
+        "size": 12572
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-25-1.md",
+        "reason": "file-budget",
+        "size": 7339
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-25-2.md",
+        "reason": "file-budget",
+        "size": 1278
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-27-1.md",
+        "reason": "file-budget",
+        "size": 3135
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-27-2.md",
+        "reason": "file-budget",
+        "size": 6710
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-27-3.md",
+        "reason": "file-budget",
+        "size": 6328
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-28-1.md",
+        "reason": "file-budget",
+        "size": 4337
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-28-2.md",
+        "reason": "file-budget",
+        "size": 9092
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-28-3.md",
+        "reason": "file-budget",
+        "size": 6416
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-29.md",
+        "reason": "file-budget",
+        "size": 10057
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-30-1.md",
+        "reason": "file-budget",
+        "size": 6769
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-30-2.md",
+        "reason": "file-budget",
+        "size": 2805
+      },
+      {
+        "path": "docs/changelog/2026-05/2026-05-30-3.md",
+        "reason": "file-budget",
+        "size": 5018
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-01-1.md",
+        "reason": "file-budget",
+        "size": 3151
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-01-2.md",
+        "reason": "file-budget",
+        "size": 2141
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-01-3.md",
+        "reason": "file-budget",
+        "size": 2816
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-01-4.md",
+        "reason": "file-budget",
+        "size": 2630
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-03-1.md",
+        "reason": "file-budget",
+        "size": 1813
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-03-2.md",
+        "reason": "file-budget",
+        "size": 6183
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-03-3.md",
+        "reason": "file-budget",
+        "size": 6410
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-03-4.md",
+        "reason": "file-budget",
+        "size": 3387
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-10-1.md",
+        "reason": "file-budget",
+        "size": 1910
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-10-2.md",
+        "reason": "file-budget",
+        "size": 5013
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-10-3.md",
+        "reason": "file-budget",
+        "size": 1371
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-11-1.md",
+        "reason": "file-budget",
+        "size": 3145
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-11-2.md",
+        "reason": "file-budget",
+        "size": 2841
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-11-3.md",
+        "reason": "file-budget",
+        "size": 3021
+      },
+      {
+        "path": "docs/changelog/2026-06/2026-06-30.md",
+        "reason": "file-budget",
+        "size": 1243
+      },
+      {
+        "path": "docs/changelog/2026-07/2026-07-01.md",
+        "reason": "file-budget",
+        "size": 5275
+      },
+      {
+        "path": "docs/changelog/README.md",
+        "reason": "file-budget",
+        "size": 10092
+      },
+      {
+        "path": "docs/release-notes/v0.2.10.md",
+        "reason": "file-budget",
+        "size": 6228
+      },
+      {
+        "path": "docs/release-notes/v0.2.11.md",
+        "reason": "file-budget",
+        "size": 6927
+      },
+      {
+        "path": "docs/release-notes/v0.2.12.md",
+        "reason": "file-budget",
+        "size": 5699
+      },
+      {
+        "path": "docs/release-notes/v0.2.13.md",
+        "reason": "file-budget",
+        "size": 3320
+      },
+      {
+        "path": "docs/release-notes/v0.2.14.md",
+        "reason": "file-budget",
+        "size": 4356
+      },
+      {
+        "path": "docs/release-notes/v0.2.15.md",
+        "reason": "file-budget",
+        "size": 5775
+      },
+      {
+        "path": "docs/release-notes/v0.2.16.md",
+        "reason": "file-budget",
+        "size": 4803
+      },
+      {
+        "path": "docs/release-notes/v0.2.17.md",
+        "reason": "file-budget",
+        "size": 2984
+      },
+      {
+        "path": "docs/release-notes/v0.2.18.md",
+        "reason": "file-budget",
+        "size": 2576
+      },
+      {
+        "path": "docs/release-notes/v0.2.19.md",
+        "reason": "file-budget",
+        "size": 5922
+      },
+      {
+        "path": "docs/release-notes/v0.2.2.md",
+        "reason": "file-budget",
+        "size": 9921
+      },
+      {
+        "path": "docs/release-notes/v0.2.20.md",
+        "reason": "file-budget",
+        "size": 6768
+      },
+      {
+        "path": "docs/release-notes/v0.2.21.md",
+        "reason": "file-budget",
+        "size": 1255
+      },
+      {
+        "path": "docs/release-notes/v0.2.22.md",
+        "reason": "file-budget",
+        "size": 3160
+      },
+      {
+        "path": "docs/release-notes/v0.2.23.md",
+        "reason": "file-budget",
+        "size": 3393
+      },
+      {
+        "path": "docs/release-notes/v0.2.24.md",
+        "reason": "file-budget",
+        "size": 2855
+      },
+      {
+        "path": "docs/release-notes/v0.2.25.md",
+        "reason": "file-budget",
+        "size": 2641
+      },
+      {
+        "path": "docs/release-notes/v0.2.26.md",
+        "reason": "file-budget",
+        "size": 3627
+      },
+      {
+        "path": "docs/release-notes/v0.2.27.md",
+        "reason": "file-budget",
+        "size": 3149
+      },
+      {
+        "path": "docs/release-notes/v0.2.28.md",
+        "reason": "file-budget",
+        "size": 2797
+      },
+      {
+        "path": "docs/release-notes/v0.2.29.md",
+        "reason": "file-budget",
+        "size": 3201
+      },
+      {
+        "path": "docs/release-notes/v0.2.3.md",
+        "reason": "file-budget",
+        "size": 4529
+      },
+      {
+        "path": "docs/release-notes/v0.2.30.md",
+        "reason": "file-budget",
+        "size": 4323
+      },
+      {
+        "path": "docs/release-notes/v0.2.31.md",
+        "reason": "file-budget",
+        "size": 3116
+      },
+      {
+        "path": "docs/release-notes/v0.2.32.md",
+        "reason": "file-budget",
+        "size": 2840
+      },
+      {
+        "path": "docs/release-notes/v0.2.33.md",
+        "reason": "file-budget",
+        "size": 1972
+      },
+      {
+        "path": "docs/release-notes/v0.2.34.md",
+        "reason": "file-budget",
+        "size": 3495
+      },
+      {
+        "path": "docs/release-notes/v0.2.35.md",
+        "reason": "file-budget",
+        "size": 4077
+      },
+      {
+        "path": "docs/release-notes/v0.2.36.md",
+        "reason": "file-budget",
+        "size": 1259
+      },
+      {
+        "path": "docs/release-notes/v0.2.37.md",
+        "reason": "file-budget",
+        "size": 1801
+      },
+      {
+        "path": "docs/release-notes/v0.2.38.md",
+        "reason": "file-budget",
+        "size": 1922
+      },
+      {
+        "path": "docs/release-notes/v0.2.39.md",
+        "reason": "file-budget",
+        "size": 3318
+      },
+      {
+        "path": "docs/release-notes/v0.2.4.md",
+        "reason": "file-budget",
+        "size": 9130
+      },
+      {
+        "path": "docs/release-notes/v0.2.40.md",
+        "reason": "file-budget",
+        "size": 2787
+      },
+      {
+        "path": "docs/release-notes/v0.2.41.md",
+        "reason": "file-budget",
+        "size": 4094
+      },
+      {
+        "path": "docs/release-notes/v0.2.42.md",
+        "reason": "file-budget",
+        "size": 3145
+      },
+      {
+        "path": "docs/release-notes/v0.2.43.md",
+        "reason": "file-budget",
+        "size": 2681
+      },
+      {
+        "path": "docs/release-notes/v0.2.44.md",
+        "reason": "file-budget",
+        "size": 3810
+      },
+      {
+        "path": "docs/release-notes/v0.2.45.md",
+        "reason": "file-budget",
+        "size": 2083
+      },
+      {
+        "path": "docs/release-notes/v0.2.46.md",
+        "reason": "file-budget",
+        "size": 2566
+      },
+      {
+        "path": "docs/release-notes/v0.2.47.md",
+        "reason": "file-budget",
+        "size": 1986
+      },
+      {
+        "path": "docs/release-notes/v0.2.48.md",
+        "reason": "file-budget",
+        "size": 2265
+      },
+      {
+        "path": "docs/release-notes/v0.2.49.md",
+        "reason": "file-budget",
+        "size": 2603
+      },
+      {
+        "path": "docs/release-notes/v0.2.5.md",
+        "reason": "file-budget",
+        "size": 8606
+      },
+      {
+        "path": "docs/release-notes/v0.2.50.md",
+        "reason": "file-budget",
+        "size": 2833
+      },
+      {
+        "path": "docs/release-notes/v0.2.51.md",
+        "reason": "file-budget",
+        "size": 4913
+      },
+      {
+        "path": "docs/release-notes/v0.2.52.md",
+        "reason": "file-budget",
+        "size": 2327
+      },
+      {
+        "path": "docs/release-notes/v0.2.53.md",
+        "reason": "file-budget",
+        "size": 3713
+      },
+      {
+        "path": "docs/release-notes/v0.2.54.md",
+        "reason": "file-budget",
+        "size": 1775
+      },
+      {
+        "path": "docs/release-notes/v0.2.55.md",
+        "reason": "file-budget",
+        "size": 2123
+      },
+      {
+        "path": "docs/release-notes/v0.2.56.md",
+        "reason": "file-budget",
+        "size": 4242
+      },
+      {
+        "path": "docs/release-notes/v0.2.57.md",
+        "reason": "file-budget",
+        "size": 1419
+      },
+      {
+        "path": "docs/release-notes/v0.2.58.md",
+        "reason": "file-budget",
+        "size": 6208
+      },
+      {
+        "path": "docs/release-notes/v0.2.59.md",
+        "reason": "file-budget",
+        "size": 3626
+      },
+      {
+        "path": "docs/release-notes/v0.2.6.md",
+        "reason": "file-budget",
+        "size": 3675
+      },
+      {
+        "path": "docs/release-notes/v0.2.60.md",
+        "reason": "file-budget",
+        "size": 2390
+      },
+      {
+        "path": "docs/release-notes/v0.2.61.md",
+        "reason": "file-budget",
+        "size": 4952
+      },
+      {
+        "path": "docs/release-notes/v0.2.8.md",
+        "reason": "file-budget",
+        "size": 5460
+      },
+      {
+        "path": "docs/release-notes/v0.2.9.md",
+        "reason": "file-budget",
+        "size": 5932
+      }
+    ],
+    "omitted_count": 140,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 551,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 143,
+      "complete": false,
+      "omitted": 140,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_883fec20505455caa8ae5a42d875d93a",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 3,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/hyperaiteam/clitrigger/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/2cd220238205759b/manifest.json",
+  "package_id": "pkg_61af93037c7abc6dac462c187ed1ffd8ecb88ec0585801ad93f7081946be3641",
+  "repo": "hyperaiteam/clitrigger",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e7b49e8dc25593855bb2b02d431589940ad144466c5ed63c14729ce1070456f4",
+  "snapshot_id": "2cd220238205759b",
+  "sources": [
+    {
+      "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+      "git_sha": "f31a8c978f931b37661e4b6e6fc8e0b6062f7ca6",
+      "lines": 89,
+      "path": "CLAUDE.md",
+      "repository": "hyperaiteam/clitrigger",
+      "sha256": "432c4173c80a7ffdfa73759cfa043850f51d422c12f736f84b4722c07c441df9",
+      "source_id": "src_d3248218400e55cb9969698ceee603b2",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/CLAUDE.md"
+    },
+    {
+      "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+      "git_sha": "7628fce59a2cba483c251fbb3e8d2758c86ddaca",
+      "lines": 378,
+      "path": "README.md",
+      "repository": "hyperaiteam/clitrigger",
+      "sha256": "b21d5d2937fa11fa64afc3b795a6f8af0b0770088a9409098f1d17e0af9f0898",
+      "source_id": "src_fe192eb55d58547c9eb99e490d9f9e26",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README.md"
+    },
+    {
+      "commit": "d9dabe2c719d7e04c8e2e784305d6553334cc6e2",
+      "git_sha": "136302d8b2e720d19479c0e27e9f8af1419908f1",
+      "lines": 378,
+      "path": "README_KR.md",
+      "repository": "hyperaiteam/clitrigger",
+      "sha256": "e7bccf6444c07c4125ab576f2a107bc713acda18698607191a560a5ff1b1105f",
+      "source_id": "src_a1d8ff02ff365f0e87902b541ddd59da",
+      "stored": "readme_kr.md-4a9d3f024b19.md",
+      "url": "https://github.com/HyperAITeam/CLITrigger/blob/d9dabe2c719d7e04c8e2e784305d6553334cc6e2/README_KR.md"
+    }
+  ],
+  "summary": "CLITrigger is a README-documented web/desktop IDE for AI CLI agents built around a five-stage pipeline (Docs, Plan, Terminal, Autonomous Tasks, Version Control) with parallel git-worktree execution, scheduling, an MCP server, and a built-in Git client. All evidence is documentation; no code-level or benchmark evidence is present. Evidence coverage: 162 of 218 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

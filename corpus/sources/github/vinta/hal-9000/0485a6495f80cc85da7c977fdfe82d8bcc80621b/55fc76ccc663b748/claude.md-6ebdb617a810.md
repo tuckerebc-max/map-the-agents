@@ -1,0 +1,55 @@
+# CLAUDE.md
+
+macOS dev environment automation: dotfiles, AI agent configs, skills, and dev stacks.
+
+## Commands
+
+Run `make help` to list targets and `hal --help` for the CLI.
+
+Use `make` targets instead of running the underlying commands directly. They chain the right tools with the right flags.
+
+## Gotchas
+
+- **Edit under `dotfiles/`, never under `~/`**: `hal sync` symlinks every `links` entry in `dotfiles/hal_dotfiles.json` into `~/`, so an edit to a linked path is live immediately. A new file outside a linked directory needs its own entry plus `hal sync` before anything references it.
+- **Edits under `skills/` and `plugins/` are not live until published**: Claude Code loads them from the `hal-9000` marketplace on GitHub (see `dotfiles/.claude/settings.json`), and other coding agents install `skills/` via `npx skills add vinta/hal-9000`. Publish with a version bump (the `publish-plugins` skill) for a change to reach either.
+- All skill descriptions must start with `Use when`, `Use before`, or `Use after` (may have a `(project)` prefix if it's a project-level skill).
+- For generated artifacts such as zsh completion, regenerate them with the repo command instead of editing them by hand (e.g. `make hal-completion` after modifying `bin/hal.py`).
+
+## External Tool Documentation
+
+Invoke the `find-docs` skill BEFORE writing code or config that touches the tools below, not only when asked about them. Do not answer from training data, even for familiar tools. Fetch user-provided URLs and the documentation links below.
+
+### Context7 Library IDs
+
+Pre-resolved IDs for the `find-docs` skill. Pass directly to `ctx7 docs`, skipping the `ctx7 library` step:
+
+| Tool           | `libraryId`                                |
+| -------------- | ------------------------------------------ |
+| ansible        | `/websites/ansible_projects_ansible`       |
+| ansible-lint   | `/ansible/ansible-lint`                    |
+| betterleaks    | `/betterleaks/betterleaks`                 |
+| fnm            | `/schniz/fnm`                              |
+| github-actions | `/websites/github_en_actions`              |
+| homebrew       | `/homebrew/brew`                           |
+| oh-my-zsh      | `/ohmyzsh/ohmyzsh`                         |
+| ollama         | `/ollama/ollama`                           |
+| pre-commit     | `/pre-commit/pre-commit.com`               |
+| pytest         | `/pytest-dev/pytest`                       |
+| ruff           | `/websites/astral_sh_ruff`                 |
+| ty             | `/websites/astral_sh_ty`                   |
+| uv             | `/websites/astral_sh_uv`                   |
+| zsh            | `/websites/zsh_sourceforge_io_doc_release` |
+
+### Documentation Links
+
+For topics not well covered by Context7, fetch these URLs:
+
+- Claude Prompting Best Practices
+  - https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices
+- Claude Code Settings
+  - https://code.claude.com/docs/en/settings
+- Claude Code Rules
+  - https://code.claude.com/docs/en/memory#path-specific-rules
+- Claude Code Plugins / Marketplaces
+  - https://code.claude.com/docs/en/plugins-reference
+  - https://code.claude.com/docs/en/plugin-marketplaces

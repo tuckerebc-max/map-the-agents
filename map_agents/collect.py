@@ -36,9 +36,11 @@ SOURCE_DIR = "sources/github"
 BLOB_CACHE_DIR = "state/blob-cache"
 SNAPSHOT_FILE = "snapshot.json"
 RCW_MANIFEST = "manifest.json"
-RCW_SUFFIXES = {".md", ".txt", ".html", ".htm"}
-DOC_SUFFIXES = {".md", ".txt", ".rst", ".markdown"}
-DOC_DIRS = ("docs/", "doc/")
+HTML_SUFFIXES = {".html", ".htm"}
+KERNEL_TEXT_SUFFIXES = {".md", ".txt"}  # suffixes the pinned kernel reads as literal text, headings from '#' lines
+RCW_SUFFIXES = KERNEL_TEXT_SUFFIXES | HTML_SUFFIXES  # kernel-recognized non-code source classes (see storage_name)
+DOC_SUFFIXES = {".md", ".mdx", ".txt", ".rst", ".markdown"}
+DOC_DIRS = ("docs/", "doc/", "website/docs/", "site/docs/", "site/src/content/docs/")
 SOURCE_SUFFIXES = DOC_SUFFIXES | RCW_SUFFIXES | {
     ".py", ".ts", ".tsx", ".js", ".mjs", ".go", ".rs", ".java", ".kt", ".rb", ".cs", ".sh",
     ".toml", ".yaml", ".yml", ".json", ".cfg", ".ini",
@@ -50,6 +52,7 @@ MAX_DESCRIPTION = 300
 MAX_OMITTED_LISTED = 200
 MAX_PATH_CHARS = 512
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
+STORAGE_SEGMENT_LIMIT = 40
 RESERVED_DEVICES = re.compile(r"(?i)^(con|prn|aux|nul|com[1-9]|lpt[1-9])(\..*)?$")
 UNSAFE_CHARS = re.compile(r"[\x00-\x1f\x7f\\:*?\"<>|]")
 SLUG_STRIP = re.compile(r"[^a-z0-9._-]+")
@@ -77,6 +80,10 @@ class InvalidPath(CollectError):
 
 class MalformedPayload(CollectError):
     pass
+
+
+class PayloadTooLarge(MalformedPayload):
+    """One response exceeded its per-resource ceiling, within the aggregate budget."""
 
 
 class IntegrityError(CollectError):
@@ -173,7 +180,7 @@ class Fetcher:
                 if len(resp.body) > bound:
                     if bound < max_bytes:
                         raise BudgetExceeded(f"byte-budget exceeded at {locator} (http-{resp.status})")
-                    raise MalformedPayload(f"oversized-payload over {bound} bytes: {locator}")
+                    raise PayloadTooLarge(f"oversized-payload over {bound} bytes: {locator}")
                 failure = f"http-{resp.status}" if resp.status >= 500 else None
             if budget.remaining_seconds() <= 0:
                 raise BudgetExceeded(f"time-budget exceeded during {locator}")
@@ -426,11 +433,54 @@ def _check_paths(paths: list[str] | None) -> list[str]:
 
 def storage_name(path: str) -> str:
     """Deterministic flat storage name: <slug>-<sha256(path)[:12]><rcw suffix>. No directories, no
-    case or suffix collisions (README.md vs readme.md, x.py vs x.py.txt); original path stays in metadata."""
+    case or suffix collisions (README.md vs readme.md, x.py vs x.py.txt); original path stays in metadata.
+
+    HTML/HTM sources always get `.txt` here (never their real `.html`/`.htm` suffix): the pinned
+    kernel's own parser (rcw_core/sources.py:text_content) extracts rendered *visible text* from a
+    `.html`/`.htm`-suffixed file -- discarding `<script>`/`<style>` and reflowing the rest -- so its
+    reported line numbers describe that reflowed text, not the original file. Stored as `.txt`, the
+    kernel reads the exact original bytes as literal lines instead, exactly like any other non-native
+    source type (`.py`, `.ts`, ...), so every emitted line locator matches the real GitHub source line.
+    """
     suffix = Path(path).suffix.lower()
-    suffix = suffix if suffix in RCW_SUFFIXES else ".txt"
+    suffix = suffix if suffix in KERNEL_TEXT_SUFFIXES else ".txt"
     slug = SLUG_STRIP.sub("-", Path(path).name.lower()).strip("-.")[:40] or "file"
     return f"{slug}-{_sha256(path.encode('utf-8'))[:12]}{suffix}"
+
+
+def _has_verified_package(commit_dir: Path) -> bool:
+    """A real, previously completed rcw package sits under `commit_dir` (<owner>/<name>), as opposed to a
+    leftover empty directory from an interrupted long-path collection attempt. Reads only tracked corpus
+    bytes (a package manifest with `complete: true`), never the local host's path-length ceiling."""
+    if not commit_dir.is_dir():
+        return False
+    for manifest_path in commit_dir.glob(f"*/*/{RCW_MANIFEST}"):
+        try:
+            manifest = json.loads(manifest_path.read_bytes().decode("utf-8"))
+        except (OSError, ValueError, UnicodeDecodeError):
+            continue
+        if isinstance(manifest, dict) and manifest.get("complete") is True and manifest.get("files"):
+            return True
+    return False
+
+
+def storage_segments(root: Path, key: str) -> tuple[str, str]:
+    """Deterministic on-disk (owner, repo) directory segments for a normalized 'owner/repo' key.
+
+    Ordinary identifiers keep their real owner/repo directories. A new identifier whose combined length
+    would push stored paths toward Windows' path-length ceiling (observed as WinError 206 during
+    collection) gets a short digest instead, so every host lays out the repository under the same short
+    pair of directories regardless of local path length; the full identity stays in the snapshot/dossier
+    metadata, manifests and URLs, never only in the path. An identifier that already has a genuine prior
+    capture under its real owner/repo directory (checked via `_has_verified_package`, not via this host's
+    path length) keeps that real directory for every later snapshot, so old and new captures of the same
+    repository always land in one kernel source root.
+    """
+    owner, name = key.split("/", 1)
+    if len(owner) + len(name) <= STORAGE_SEGMENT_LIMIT or _has_verified_package(Path(root) / SOURCE_DIR / owner / name):
+        return owner, name
+    digest = _sha256(key.encode("utf-8"))[:16]
+    return digest[:8], digest[8:16]
 
 
 def _contained(base: Path, target: Path) -> bool:
@@ -453,14 +503,24 @@ def _safe_storage(root: Path, target: Path) -> None:
 
 
 def _select(blobs: dict[str, dict], explicit: list[str], max_files: int, max_bytes: int) -> tuple[list[str], list[dict]]:
-    """Order: README, explicit paths, root docs, docs/ trees. Budgets omit, never silently drop."""
+    """README, explicit paths, product docs, then contributor context; omissions stay visible."""
     lower = {p.lower(): p for p in blobs}
     readme = next((n for n in README_NAMES if n in blobs), None) or next(
         (lower[n.lower()] for n in README_NAMES if n.lower() in lower), None)
     root_docs = sorted(p for p in blobs if "/" not in p and Path(p).suffix.lower() in DOC_SUFFIXES)
     dir_docs = sorted(p for p in blobs if p.lower().startswith(DOC_DIRS) and Path(p).suffix.lower() in DOC_SUFFIXES)
+    runtime_topics = {"architecture", "design", "config", "configuration", "sandbox", "execpolicy", "permissions",
+                      "tools", "skills", "memory", "orchestration", "agents_md", "api", "workflow", "workflows"}
+    contributor_topics = {"agents", "claude", "contributing", "code_of_conduct", "changelog", "license", "security"}
+
+    def priority(path: str) -> tuple:
+        stem = Path(path).stem.lower()
+        rank = 2 if stem in contributor_topics else 0 if stem in runtime_topics else 1
+        return rank, len(Path(path).parts), path.lower(), path
+
+    docs = sorted(set(root_docs + dir_docs), key=priority)
     ordered: list[str] = []
-    for path in ([readme] if readme else []) + explicit + root_docs + dir_docs:
+    for path in ([readme] if readme else []) + explicit + docs:
         if path not in ordered:
             ordered.append(path)
     selected, omitted, used = [], [], 0
@@ -489,7 +549,8 @@ def _verified(data: bytes, git_sha: str, size: int, label: str) -> bytes:
 
 def _obtain_blob(root: Path, fetch: Fetcher, full_name: str, sha: str, path: str, git_sha: str, size: int) -> bytes:
     """Bytes for one blob: verified state cache first, otherwise a bounded raw fetch at the exact SHA."""
-    cache = root / BLOB_CACHE_DIR / full_name.lower() / git_sha
+    storage_owner, storage_repo = storage_segments(root, full_name.lower())
+    cache = root / BLOB_CACHE_DIR / storage_owner / storage_repo / git_sha
     _safe_storage(root, cache)
     if cache.exists():
         return _verified(cache.read_bytes(), git_sha, size, f"cache {git_sha[:12]}")
@@ -507,11 +568,21 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
     if not isinstance(full_name, str) or full_name.lower() != key:
         raise MalformedPayload("repository full_name differs from the requested identity")
     spdx = (meta.get("license") or {}).get("spdx_id") if isinstance(meta.get("license"), dict) else None
-    tree = fetch.get_json(f"https://{API_HOST}/repos/{key}/git/trees/{sha}?recursive=1")
+    repo_id = meta.get("id")
+    repo_id = repo_id if isinstance(repo_id, int) and not isinstance(repo_id, bool) and repo_id > 0 else None
+    tree_url = f"https://{API_HOST}/repos/{key}/git/trees/{sha}"
+    root_only = False
+    try:
+        tree = fetch.get_json(tree_url + "?recursive=1")
+    except PayloadTooLarge:
+        # A bounded root listing can still provide README evidence for large monorepos.
+        # This is never used for access/rate-limit failures, and consumes the SAME budget.
+        tree = fetch.get_json(tree_url)
+        root_only = True
     if not isinstance(tree, dict) or not isinstance(tree.get("tree"), list):
         raise MalformedPayload(f"tree malformed: {key}@{sha[:12]}")
     blobs = {t["path"]: t for t in tree["tree"] if isinstance(t, dict) and t.get("type") == "blob" and isinstance(t.get("path"), str)}
-    truncated = bool(tree.get("truncated"))
+    truncated = root_only or bool(tree.get("truncated"))
     for path in explicit:
         if path not in blobs:
             raise InvalidPath(f"path not in tree (truncated={truncated}): {path}")
@@ -520,7 +591,8 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
         for o in omitted:
             if o["path"] in explicit:  # an explicit selection that no longer fits is a reported gap, not a docs-only capture
                 raise BudgetGap(f"explicit path {o['path']} ({o['size']} bytes) does not fit max_files={max_files}/max_bytes={max_bytes}: {o['reason']}")
-    commit_dir = root / SOURCE_DIR / owner / name / sha
+    storage_owner, storage_repo = storage_segments(root, key)
+    commit_dir = root / SOURCE_DIR / storage_owner / storage_repo / sha
     _safe_storage(root, commit_dir)
     known_bad: set[str] = set()
     for prior_snapshot in sorted(commit_dir.glob(f"*/{SNAPSHOT_FILE}")):
@@ -539,8 +611,14 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
             continue
         staged.append((path, data, text))
     # The selection identity is the exact inspected file set at this commit; a different set gets its
-    # own package directory, so earlier packages keep their bytes and rcw evidence stays valid.
-    selection = [{"path": p, "git_sha": blobs[p]["sha"]} for p, _d, _t in staged]
+    # own package directory, so earlier packages keep their bytes and rcw evidence stays valid. An
+    # HTML/HTM file's "format" marker is part of that identity: it selects the verbatim-text storage
+    # fixed by `storage_name`/`format` below, distinct from any earlier snapshot of the same commit
+    # and file set captured before that fix -- so the fix never collides with or mutates old bytes,
+    # and every non-HTML repository's snapshot_id is completely unaffected (no marker, same hash input).
+    selection = [{"path": p, "git_sha": blobs[p]["sha"],
+                 **({"format": "verbatim"} if Path(p).suffix.lower() in HTML_SUFFIXES else {})}
+                for p, _d, _t in staged]
     if not selection:
         raise CollectError("no inspectable text files fit this selection; request explicit source paths or increase the budget")
     snapshot_id = _sha256(core.dump_json({"commit": sha, "files": selection}))[:16]
@@ -566,6 +644,7 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
             "lines": len(text.splitlines()),
             "url": f"https://github.com/{full_name}/blob/{sha}/{quote(path, safe='/')}",
             "raw_url": f"https://{RAW_HOST}/{full_name}/{sha}/{quote(path, safe='/')}",
+            **({"format": "verbatim"} if Path(path).suffix.lower() in HTML_SUFFIXES else {}),
         })
     members = [{"path": f["stored"], "metadata": {
         "title": f"{full_name}/{f['path']} @ {sha[:12]}", "creator": owner, "date": date, "source_type": "webpage",
@@ -575,7 +654,7 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
     rel_dir = snap_dir.relative_to(root).as_posix()
     manifest = {
         "snapshot_id": snapshot_id, "dir": rel_dir, "package": f"{rel_dir}/{RCW_MANIFEST}",
-        "repo": key, "full_name": full_name, "url": f"https://github.com/{full_name}", "default_branch": branch,
+        "repo": key, "full_name": full_name, "repository_id": repo_id, "url": f"https://github.com/{full_name}", "default_branch": branch,
         "commit": sha, "commit_date": date, "tree_sha": tree.get("sha"), "license": spdx,
         "budgets": {"max_files": max_files, "max_bytes": max_bytes, "bytes_stored": sum(f["size"] for f in files)},
         "files": files, "omitted": omitted[:MAX_OMITTED_LISTED], "omitted_count": len(omitted), "explicit_paths": explicit,
@@ -588,7 +667,7 @@ def _collect_snapshot(root: Path, fetch: Fetcher, key: str, max_files: int, max_
             {"complete": True, "title": f"{full_name} @ {sha} [{snapshot_id}]", "files": members}))
     if not prior:
         core.write_if_changed(snap_dir / SNAPSHOT_FILE, core.dump_json(manifest))
-    return {**(prior or manifest), "reused": bool(prior),
+    return {**(prior or manifest), "repository_id": repo_id, "reused": bool(prior),
             "request": {"max_files": max_files, "max_bytes": max_bytes, "paths": explicit}}
 
 
@@ -622,6 +701,8 @@ def snapshot(root: Path, repo: str, max_files: int, max_bytes: int, paths: list[
             raise
         sha, snap_id = manifest["commit"], manifest["snapshot_id"]
         record.pop("last_error", None)
+        if manifest.get("repository_id") is not None:
+            record["repository_id"] = manifest["repository_id"]
         record["latest_commit"] = sha
         record["latest_snapshot_id"] = snap_id
         record["latest_snapshot"] = {"snapshot_id": snap_id, "commit": sha, "dir": manifest["dir"],

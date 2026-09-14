@@ -1,0 +1,664 @@
+{
+  "applied_operation_id": "op_97c5f254754d404ca98e4266fa13212a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2e7b18cde13b2fde3c6870dc745e92a447b192908aed443020cbfa52828f22b2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 57,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L55-L57"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 65,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L61-L65"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 53,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L47-L53"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "5fa6e491b7c76a00bc59d83d50fa6a432a4a1f5a",
+          "line_end": 100,
+          "line_start": 100,
+          "path": "ROADMAP.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/ROADMAP.md#L100-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02666ee5154215e73096dcd1ae5d0c72ad4adf837ce08c7b1f9f15353297cc0e",
+        "slc_62736e836e4812fdd77c683a78d435a094ffea7515706daeaa59b4b4d0e22c93",
+        "slc_9f1f126bb32493daf29e3ee1ed878b1c65f553f784a5826dc67a8aaa4b1b4d81",
+        "slc_d3fc92b5167bba383f12be763df4a541083c6e7dd23b431896690fe1b7558282"
+      ],
+      "text": "The product exposes a CLI (npm package 'agentplane', short alias 'ap') with commands such as init, quickstart, task create/active/advance/run, and evaluator list/show/execute."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d81e167ba8b55b621418b0ab80a5e452879911a5620eb747ea870975dbf4868",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 70,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L67-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b998de36d76d7144d60b29ddf8ebe87a3c547f02291ae7bb2f4a7bd9e4ddd40"
+      ],
+      "text": "task advance returns a bounded episode packet containing the objective, writable scope, context, result schema, an exchange.result_path, and an exact exchange.resume_argv command for returning the typed result."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbfa6dec6f4134450cc76d2ea796618168bf82593401f626aeb2f955f69afedb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 38,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L33-L38"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 107,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L105-L107"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 31,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L30-L31"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L11-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b1de983762270ce5aff75eb39383a133272441662e9819985b443f23667ad67",
+        "slc_6e73e17dd3ed91dc0455744a5e91ef88b764755425658db9fa1ea3d82c3e5939",
+        "slc_df03e2b39f14b49d5f834f3784f79aa7972aea141d0f0c6583b21c04ceaeefc7",
+        "slc_f6a1fafcdee85b0ed7cd878bad916e380872a17ec81a611f3b0517346ae9f693"
+      ],
+      "text": "The design separates semantic judgment (agents) from mechanically authoritative workflow mechanics (CLI), with the CLI resolving authority, transitions, routing, schemas, and stop conditions in code rather than by model guesses."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3d6ce3cf3d725e39bc0b89f8f8251a33f4156c463e4909a150d6f99fbb3ffc9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 119,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L116-L119"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 114,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L111-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68f793ebdc6a67ef47962446b58ec2e5b74c7548300eef7ea6ba1e58320c4d72",
+        "slc_8b9806c81b2c861054d349d8502c41b4e38e8a2f06a40b00fcbea54fb385b91a"
+      ],
+      "text": "Two workflow modes are offered: 'direct' for lighter local routes and 'branch_pr' for worktrees, branches, PR artifacts, and hosted checks; the agent declares a preferred mode but Agentplane can strengthen the route based on observed work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cba1e5b9e301549e54c200b5037d3ff21a08c5bdc889d15715e3c106dc809cec",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 75,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L72-L75"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 95,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L89-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8447bd975b4d7599908cda31ae27b01bad49a270092ff8b59b1b8feb06c57931",
+        "slc_9677c589995144c4bab960937d9e0d2f8c628e28dda5565431c8ae019e48f023"
+      ],
+      "text": "The control loop issues a bounded semantic episode, the agent returns a semantic result, and the CLI observes facts, runs the formal route, records evidence, and stops at approval, recovery, or verified completion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1bc37a795fdb42e459d031a010e8591c0e5fcc568564d3fbb14ec4854b2c558e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 103,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L99-L103"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "5fa6e491b7c76a00bc59d83d50fa6a432a4a1f5a",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "ROADMAP.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/ROADMAP.md#L92-L92"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "5fa6e491b7c76a00bc59d83d50fa6a432a4a1f5a",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "ROADMAP.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/ROADMAP.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1455d29b9ede82ecdd4a20e23a7e7d87e605117cd07f4b01f11428a83db26d90",
+        "slc_6ce84ddd3d11f9abdebb60c3b5b56cf3e48b081535e3bc7652001a0e18761eb4",
+        "slc_a5255eb50bc7bee9f3a4b9c70a89851780e24b7dc62dc9b5881b5189b2b2e93b"
+      ],
+      "text": "A supervisor model prepares a bounded AgentWorkOrder, enforces state and authority preconditions, invokes one specialized semantic role, and records an independent ExecutionReceipt; state fingerprints reject stale results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e749beadf11d612b477abadf9e8156314497a0196fb978369c541a111167363",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 103,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L99-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1455d29b9ede82ecdd4a20e23a7e7d87e605117cd07f4b01f11428a83db26d90"
+      ],
+      "text": "Writable roots and allowed effects for each episode are carried in that episode's WorkOrder, and semantic episodes cannot perform or claim formal lifecycle transitions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_035f0bd1efc93eee97aeeab1f56f08edf6ff5659ec94791467cf1b5fc0792f3a",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 131,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L125-L131"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 136,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L133-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb160a5baa5a21f15a48991302f610b7d08344ebfd06e1216d742b516483ff88",
+        "slc_d22cb013ba2e925272d1cbcd3f84356884af1f6e96952681887f6d834968ffcc"
+      ],
+      "text": "Operating state lives in the repository: AGENTS.md/CLAUDE.md as policy gateway, .agentplane/WORKFLOW.md, per-task README and acr.json (Agent Change Record), and pr/ artifacts; an optional Local Context layer adds source-backed repository knowledge."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f7f8893373dca19d9be87d75299a84cd36526429ab714c7958e071998e306cea",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "5fa6e491b7c76a00bc59d83d50fa6a432a4a1f5a",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "ROADMAP.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/ROADMAP.md#L102-L102"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "5fa6e491b7c76a00bc59d83d50fa6a432a4a1f5a",
+          "line_end": 100,
+          "line_start": 100,
+          "path": "ROADMAP.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/ROADMAP.md#L100-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23909ce83350562617db1cf4d41479338b7bf14b56f4be802b07891343af5b89",
+        "slc_d3fc92b5167bba383f12be763df4a541083c6e7dd23b431896690fe1b7558282"
+      ],
+      "text": "Projects can store prompt modules under .agentplane/evaluators and run a read-only evaluation episode via 'agentplane evaluator execute <task-id>'; the roadmap plans comparative evaluation and quality gates in a later horizon."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9e78f670e1e03a49b6aaccc5330333d99c279eadb1e28ff93b53edee1d0e804",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L16-L20"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 192,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L192-L192"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88a6987006fa16da049109b9165432debcd9f6c5f2566f69a5a7e61d4cb38a4f",
+        "slc_a13dfd91111c0a76abac1e47c021b40fba97145b1cd3e08ee680eabdee1a91b6",
+        "slc_d128cb757b512b01bfd434e5c7c094731e5b70420cb57b483c1210fd5326f006"
+      ],
+      "text": "The CLI requires Node.js 24+ and Git, is distributed via npm, and is MIT licensed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c30a8292f1ebd0534402d3ba77dfd8feeed6a1c60a2492117dd278910b868a7f",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+          "line_end": 179,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md#L178-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2a2e17473abe8792462b944d4a93665f5bac0ec6d89476d9807016dbe9493f1"
+      ],
+      "text": "The project is pre-1.0 and under active development; the README advises pinning the CLI version in automation and reviewing release notes when upgrading."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_54af9e8c2880354076c646a752754a6a987ca8ec3694c995b3ee6a52e8417d8a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "fbbcb19c89e3ddb4a31a56e907c59be2960f1074",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "POLICY.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/POLICY.md#L33-L36"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "fbbcb19c89e3ddb4a31a56e907c59be2960f1074",
+          "line_end": 27,
+          "line_start": 17,
+          "path": "POLICY.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/POLICY.md#L17-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24976e113765cbb63500693176f662cc75a587a91b95eae436ad7eee096e2c71",
+        "slc_efe22a57f82d016e097b5cdd8af0fe4921b19d5bc41889dc43c390b3a6164f61"
+      ],
+      "text": "Repository development practice: POLICY.md requires lint and full tests to pass before merging to main, tests for behavior changes, English-only user-facing strings, no accidental npm releases, and no uncommitted code changes under packages/**."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3bd92d6dbb61ff9b84997bcdf5104c2279e7afcf031f2b1b5c693308014fbb7a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "9fc8ddec5d43195920ffeed3396d67b03bf3e2ff",
+          "line_end": 34,
+          "line_start": 33,
+          "path": "CONTRIBUTING.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/CONTRIBUTING.md#L33-L34"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "9fc8ddec5d43195920ffeed3396d67b03bf3e2ff",
+          "line_end": 59,
+          "line_start": 51,
+          "path": "CONTRIBUTING.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/CONTRIBUTING.md#L51-L59"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "fbbcb19c89e3ddb4a31a56e907c59be2960f1074",
+          "line_end": 59,
+          "line_start": 51,
+          "path": "POLICY.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/POLICY.md#L51-L59"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "9fc8ddec5d43195920ffeed3396d67b03bf3e2ff",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "CONTRIBUTING.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/CONTRIBUTING.md#L15-L20"
+        },
+        {
+          "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+          "git_sha": "9fc8ddec5d43195920ffeed3396d67b03bf3e2ff",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "CONTRIBUTING.md",
+          "repository": "basilisk-labs/agentplane",
+          "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/CONTRIBUTING.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_101600daf4d90b8644eb2d59d0648eeb1ccb01dc2aae573d7cc2055331611287",
+        "slc_136056ae6db4157c742e4ec3f820f9a5166cece39b02e1d96a6059c643848c4f",
+        "slc_263622e3bb9d0c46e0a2c030b0acbf3a7374a5fea19e886e126f95c7da93bf49",
+        "slc_d2262df202847290c086da7f894c0374513779b2075a96f4ac76e698ec57220d",
+        "slc_dd6da2a4e9aaf05249212d63e45f1ea968a7254f91315e4d458af426a466d276"
+      ],
+      "text": "Repository development practice: contributors work through the agentplane task lifecycle (task new, plan approve, verify, finish), open issues first for architectural or CLI-surface changes, and must keep src/cli, usecases, ports, and adapters layering with OS/git/network access confined to adapters."
+    }
+  ],
+  "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 192,
+        "path": "README.md",
+        "size": 10382
+      },
+      {
+        "lines": 136,
+        "path": "POLICY.md",
+        "size": 5709
+      },
+      {
+        "lines": 110,
+        "path": "ROADMAP.md",
+        "size": 11009
+      },
+      {
+        "lines": 1,
+        "path": "AGENTS.md",
+        "size": 36
+      },
+      {
+        "lines": 52,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 2848
+      },
+      {
+        "lines": 115,
+        "path": "CONTRIBUTING.md",
+        "size": 4086
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 725
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": false,
+      "tree_blobs": 30,
+      "tree_truncated": true
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_beed2074a64155599cad757205a79628",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/basilisk-labs/agentplane/ecfccc5ad0230fc1876a319be0af5cdb530c339f/f428a157f1df96e8/manifest.json",
+  "package_id": "pkg_090fd1935d20628f5ff1cdb4a504b8cadbdfa013d9d8ccf8af9629f27eb27b9b",
+  "repo": "basilisk-labs/agentplane",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "e69fdb85aa28d89f3fecdf1ad264f15d2fba55a4d0cc5f6a6abff2847ba592c2",
+  "snapshot_id": "f428a157f1df96e8",
+  "sources": [
+    {
+      "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+      "git_sha": "357760afdb7f1280d6e6c0ba38cf34e50c7ba02d",
+      "lines": 1,
+      "path": "AGENTS.md",
+      "repository": "basilisk-labs/agentplane",
+      "sha256": "7d56d563372ac19f4ab1652a72bf96178e2c4ce46facc3f4eb76948a20587d9a",
+      "source_id": "src_3e2a4d7fa4e559b5a44685f692971409",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/AGENTS.md"
+    },
+    {
+      "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+      "git_sha": "e7c92b4dc7c71dadfbdb0dd6110421fefc50045b",
+      "lines": 52,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "basilisk-labs/agentplane",
+      "sha256": "062f702611b0d8bed6c6b8eed9b69f6875f35050da9b467c7dc6826ad889f41f",
+      "source_id": "src_23c198caff335ab7b1eadc1c4ed02c6c",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+      "git_sha": "9fc8ddec5d43195920ffeed3396d67b03bf3e2ff",
+      "lines": 115,
+      "path": "CONTRIBUTING.md",
+      "repository": "basilisk-labs/agentplane",
+      "sha256": "72f55f88f6ff20300ded6ddd9cb83f2f21ee4f4624e33150af1b09ffa1bec6be",
+      "source_id": "src_441384fa73325f9e96be7a3ee501ccfa",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/CONTRIBUTING.md"
+    },
+    {
+      "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+      "git_sha": "fbbcb19c89e3ddb4a31a56e907c59be2960f1074",
+      "lines": 136,
+      "path": "POLICY.md",
+      "repository": "basilisk-labs/agentplane",
+      "sha256": "e31b9e7c240a40dc6059c3b5b3b4c490fad3b29eb9999438043a703b964a4a37",
+      "source_id": "src_a763efb8a3b55f80a573851f45a444cb",
+      "stored": "policy.md-7bccec245164.md",
+      "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/POLICY.md"
+    },
+    {
+      "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+      "git_sha": "92b8cc2802a17b76d0c6244fb4217b6364f2415a",
+      "lines": 192,
+      "path": "README.md",
+      "repository": "basilisk-labs/agentplane",
+      "sha256": "820d49b0c7c7733200067781732bde8795695a1505bfef608dbab7099840f802",
+      "source_id": "src_ff75843e7d71552d85972d208b1065ae",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/README.md"
+    },
+    {
+      "commit": "ecfccc5ad0230fc1876a319be0af5cdb530c339f",
+      "git_sha": "5fa6e491b7c76a00bc59d83d50fa6a432a4a1f5a",
+      "lines": 110,
+      "path": "ROADMAP.md",
+      "repository": "basilisk-labs/agentplane",
+      "sha256": "60ff73a0907b4cd71fa8c671149356ce7632e5a9bf8c8c4c088b52b1433dc412",
+      "source_id": "src_642751c5f70755e28ae153c6abbd51e2",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/basilisk-labs/agentplane/blob/ecfccc5ad0230fc1876a319be0af5cdb530c339f/ROADMAP.md"
+    }
+  ],
+  "summary": "Agentplane is a Git-native CLI control plane that constrains coding agents with bounded semantic episodes, formal lifecycle transitions, and repository-stored evidence. Evidence is mostly README, roadmap, and contributor policy; no source code slices are present.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,528 @@
+{
+  "applied_operation_id": "op_c2f7300587ae444b8ff3b0c1c38b5b5f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e614fceb948b9c17a8db38686ffd89d1975719960b9002ebb55fff992091592",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 76,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L75-L76"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 196,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L192-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8de6082d01a319d91da849e14544d54c6dd8cd6c7313951a66aa59c8bd67aea2",
+        "slc_f28931a9fc4723e01900a833ac8b93c5b224952af74ffc8b0da4fa08864594ef"
+      ],
+      "text": "The released MCP surface contains exactly two tools: project_os_get_context for scoped context reads and project_os_append_progress for validated, idempotent progress appends."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9af94a8357694dc42a69c58861d1d1e0fd2701f6da0d837477594db662c1fa36",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c826e0e148c9d2159276c309aa2ebc953c6085895997d7e0d3ab5b4ca0ea391c"
+      ],
+      "text": "AI credentials are short-lived (24 hours or 7 days), revocable independently, stored only as hashes, and cannot access members, keys, deletion, publication, or deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5ee7eba328c2168569c7a435e4c6b2e8c81109864dc019699b222a873cbe029",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L91-L96"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "09b575fe65336e2c474cdb6553205b25b1797906",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "AGENTS.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/AGENTS.md#L13-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_281e21fffcec7841c5459e6e12f12dfbc01fb1a592db86d254bccff8efae9605",
+        "slc_5327a902605cc321afbfed6724efab1c84d9b79dd743d2f728ab0c56eead24fe"
+      ],
+      "text": "High-risk actions such as payment, deletion, role changes, publication, deployment, and rollback stay outside the MCP surface and require explicit human confirmation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_505d5baa55fb3ede538bd2052b62e1e06fd6fb18d838d148cb4a6cf6ae650743",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L80-L80"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 85,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L82-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20b76dca21af01f7c23693428afda79613c3eb2da1a78da6eb781301e0cd5955",
+        "slc_4f0213d039b4a5ac108d7854afbb9bcb3b95a7ee865b8ffbab46113e6c724ee3"
+      ],
+      "text": "Version 0.3.0 adds a fail-closed first-run contract: the MCP process verifies credential, project binding, scopes, and the exact two-tool surface before Codex uses it, with a project-level config allowlisting only released tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_82308b18879b1cb426a3bb84259dfdebd0e9dc5a54e8009b41466598cf90cd2e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 266,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L262-L266"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_682e6a87721eb1ce2ac423618b3adf524082d4f4c2d4e87424862f667ef79a12"
+      ],
+      "text": "The stack is React, Vite, TypeScript, and Tailwind CSS on the frontend with Node.js and Express on the backend, persisting to local JSON files by default under an Apache-2.0 license."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10ff73852c2d3d163a52758640ad407003784c72df654bb915656190d8a43136",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L169-L169"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 175,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L171-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12ce8d16bb894d46ebbad983348c688e7010cb2b52a5a3a842b9019c30b753da",
+        "slc_3ba6af0ccd0ee157c356adb6358ab93b829562885e2aa46519457b5b29fd5ad9"
+      ],
+      "text": "The open-source design keeps private infrastructure behind replaceable adapter boundaries for Git, AI provider, knowledge base, and deployment/reverse proxy, with local JSON persistence for simple evaluation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_875b5289194917f8ebaa709322274ff9972ab45318e387a1a2d1f5436d3cdc14",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L138-L138"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 143,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L140-L143"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 111,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L104-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25a410c60043ab3b5e28f373fe7b4b1feccae11d9183423cc8aeabb6e23f338b",
+        "slc_836b171474a0c84317e95c21e2893eb0a54f7d8692a0911a908b4e14e3295d9d",
+        "slc_b0b1268543e2a2a41d40d1e9cc381b5d8ad2a31dc3c39b52e48298e2ddcecfc8"
+      ],
+      "text": "The server creates a local Git-backed project record for kickoff, progress, issues, and handoff files, with important progress linked to Git commits as the durable record."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d9f3f90adfad3d749fcc33d51447b9f783542095e435499bc12986616b5c9db",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 328,
+          "line_start": 322,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L322-L328"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 320,
+          "line_start": 320,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L320-L320"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7e7ec521645c60a02cc52ce72206f09f07f030b7fbdfa937b1736e05cf3a8507",
+        "slc_e3a2e9f948d0503814fbeec20136921160fa747d5d311818eb6d4c5dd68de0e3"
+      ],
+      "text": "An Agent API endpoint accepts progress events via POST with X-Project-Key and Idempotency-Key headers, including verification notes, progress percentage, and next step."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bdb1c7199cce60d79e28e986dc1158d3715f255a802840c364e77a0a05701a67",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 196,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L192-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f28931a9fc4723e01900a833ac8b93c5b224952af74ffc8b0da4fa08864594ef"
+      ],
+      "text": "The product does not run Codex, monitor sessions automatically, control a Codex account, or modify an existing source repository; its Git commits belong to the local Project OS record repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bf96c9f545e21013613668df7059b1be652419401bc2439d188c07d4db841d2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+          "line_end": 196,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md#L192-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f28931a9fc4723e01900a833ac8b93c5b224952af74ffc8b0da4fa08864594ef"
+      ],
+      "text": "Verification notes are agent-reported and validated for structure, identity, scope, idempotency, and progress rules, but the server does not independently prove source code or deployments passed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db3b24e29683f5708b493e5bd57d102e200e4fcd1e758d41836aec85ccd24a52",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "09b575fe65336e2c474cdb6553205b25b1797906",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "AGENTS.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/AGENTS.md#L7-L9"
+        },
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "09b575fe65336e2c474cdb6553205b25b1797906",
+          "line_end": 25,
+          "line_start": 21,
+          "path": "AGENTS.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/AGENTS.md#L21-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27c97920f5d717dba57ef960aeb3c3e19f2b55ef6e5a4866a37c2ae3f057d698",
+        "slc_4a9cec337887387dda71caf6959c4d6d8e499d1c6eaa6e7ac7d3785d0b1a46de"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributors to work one vertical slice at a time, use pnpm, run pnpm run check before committing, and inspect affected UI in light and dark themes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f00787d89e66c27b7e7dea63559e294e777c2d02b11d20e25efa9eb4ace123e9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+          "git_sha": "09b575fe65336e2c474cdb6553205b25b1797906",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "AGENTS.md",
+          "repository": "herry2059/project-os-for-codex",
+          "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/AGENTS.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ffce5ac73f8cc15c51b8abaa2522dc0013ca18e5a76ebafd75f1044adaedff90"
+      ],
+      "text": "Repository development practice: the Codex session protocol requires calling project_os_get_context before planning, running pnpm codex:doctor on failure, and only appending progress after verifying one vertical slice."
+    }
+  ],
+  "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 397,
+        "path": "README.md",
+        "size": 17403
+      },
+      {
+        "lines": 44,
+        "path": "AGENTS.md",
+        "size": 3229
+      },
+      {
+        "lines": 83,
+        "path": "CHANGELOG.md",
+        "size": 5109
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 851
+      },
+      {
+        "path": "ROADMAP.md",
+        "reason": "file-budget",
+        "size": 2336
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1225
+      },
+      {
+        "path": "docs/CODEX_SETUP.md",
+        "reason": "file-budget",
+        "size": 11241
+      },
+      {
+        "path": "docs/DEPLOYMENT.md",
+        "reason": "file-budget",
+        "size": 6540
+      },
+      {
+        "path": "docs/GITHUB_LAUNCH_STRATEGY.md",
+        "reason": "file-budget",
+        "size": 6119
+      },
+      {
+        "path": "docs/INTERFACES.md",
+        "reason": "file-budget",
+        "size": 8535
+      },
+      {
+        "path": "docs/SECURITY_PUBLICATION_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 5878
+      }
+    ],
+    "omitted_count": 8,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 92,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 8,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_62081cd2c3bc593581e9dc4018d48f19",
+  "facets": {
+    "components": 1,
+    "dependencies": 0,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/herry2059/project-os-for-codex/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/6d015e25229802c1/manifest.json",
+  "package_id": "pkg_f54b92b2d6c4df077098bc8c21f6fbf282b10a87dd08d2ce4e1edfd5df638b81",
+  "repo": "herry2059/project-os-for-codex",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1c3a59cc5f5a00fdc520345179c192bbfbc4cb54d7fb426e4246f8d527a50877",
+  "snapshot_id": "6d015e25229802c1",
+  "sources": [
+    {
+      "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+      "git_sha": "09b575fe65336e2c474cdb6553205b25b1797906",
+      "lines": 44,
+      "path": "AGENTS.md",
+      "repository": "herry2059/project-os-for-codex",
+      "sha256": "1fdfbb9de211f0e72df1515249d8c5ca530c9586e54605c5c0e938327de85ab0",
+      "source_id": "src_51b598ac71105681abcb22f8eb78d374",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/AGENTS.md"
+    },
+    {
+      "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+      "git_sha": "add7caeefba7e48c9bb4a636e64f0695832a08f5",
+      "lines": 83,
+      "path": "CHANGELOG.md",
+      "repository": "herry2059/project-os-for-codex",
+      "sha256": "5bf2819fc1763198f896d81d0ffc5ac3c77e051683101a043e4adb167945cef0",
+      "source_id": "src_b33ad9c63419526c997ed56cdaaea11c",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/CHANGELOG.md"
+    },
+    {
+      "commit": "3cb909ab9f61958ae6be7fab54b2fd7c5f933140",
+      "git_sha": "e5b6313c7e841a19b804ffd16f0aefc72d34b5ce",
+      "lines": 397,
+      "path": "README.md",
+      "repository": "herry2059/project-os-for-codex",
+      "sha256": "819c65c2dee29b3c3eb5b22fa2f0ceee4d4c0df1a14a085baa32e026e7c95c89",
+      "source_id": "src_59e7420d879c56ec92e7ff5630094eef",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/herry2059/project-os-for-codex/blob/3cb909ab9f61958ae6be7fab54b2fd7c5f933140/README.md"
+    }
+  ],
+  "summary": "Project OS for Codex (v0.3.0) is an independent, Apache-2.0, Git-backed project-record control plane for Codex AI work, exposing a two-tool stdio MCP server, short-lived scoped AI credentials, a React/Vite + Node/Express stack with local JSON persistence, and fail-closed first-run checks. Contributor rules in AGENTS.md and README describe development workflow and Codex session protocol.",
+  "superseded_claim_ids": []
+}

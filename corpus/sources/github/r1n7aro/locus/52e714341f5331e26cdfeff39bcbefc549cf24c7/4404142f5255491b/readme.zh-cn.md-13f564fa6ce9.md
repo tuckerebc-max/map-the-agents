@@ -1,0 +1,151 @@
+# Locus for Unity - Open Source Unity Dev Agent
+
+> 规模化地提升游戏开发的效率，将创作者从繁琐的事务性工作中解放
+
+[![文档](https://img.shields.io/badge/DOCS-unity.farlocus.com-f2c230?style=for-the-badge&labelColor=4a4a4a)](https://unity.farlocus.com/)
+[![发布](https://img.shields.io/badge/RELEASE-GitHub-5d7285?style=for-the-badge&labelColor=4a4a4a)](https://github.com/r1n7aro/Locus/releases)
+[![许可证](https://img.shields.io/badge/LICENSE-GPL--3.0--or--later-88b000?style=for-the-badge&labelColor=4a4a4a)](LICENSE)
+[![路线图](https://img.shields.io/badge/ROADMAP-View-2d6cdf?style=for-the-badge&labelColor=4a4a4a)](https://unity.farlocus.com/overview/roadmap)
+[![Bilibili](https://img.shields.io/badge/BILIBILI-Watch-00a1d6?style=for-the-badge&labelColor=4a4a4a)](https://www.bilibili.com/video/BV1H4ReBNELD/)
+[![X](https://img.shields.io/badge/X-@farlocus-000000?style=for-the-badge&labelColor=4a4a4a)](https://x.com/farlocus)
+![QQ群](https://img.shields.io/badge/QQ_Group-1104932978-12b7f5?style=for-the-badge&labelColor=4a4a4a)
+
+[English](README.md) | 简体中文
+
+[![在 Bilibili 观看演示](https://img.youtube.com/vi/xoApXZMon9M/maxresdefault.jpg)](https://www.bilibili.com/video/BV1H4ReBNELD/)
+
+## 概览
+
+`Locus for Unity`是一个面向Unity项目的**开源**AI Agent。
+
+- **编辑器内操作**：编写C#代码、读入并修改Unity对象与资产，完成完整功能开发流程
+- **内置热更新**：C#改动即时生效，无需域重载，Play Mode运行状态不丢失
+- **通过现代前端技术创建编辑器界面**：通过`/view`命令、以Vue.js创建Unity编辑器界面，不受IMGUI限制
+- **Rider级静态分析**：内置Roslyn语义分析，修改代码后即时获得编译器级Error与Warning
+- **运行时分析与调试**：自主操作并捕获运行时状态，协助你修复BUG、优化性能
+- **自动化知识系统**：自动将对话需求总结成设计文档，并将项目理解保存在长期记忆中
+- **可视化版本管理**：提供可视化的版本管理界面，支持Unity YAML资产的语义化差异分析与冲突处理
+- **多种模型支持**：支持订阅帐号登录，并兼容多种LLM API能力
+
+Locus 目前仍然处于早期测试状态，欢迎您试用并通过Issue提出反馈，您的意见对我们非常重要！
+
+## 从技术上讲，Locus有什么独特之处？
+
+Locus是一个Rust + Tauri + Vue.js的独立进程应用程序。
+
+- 我们设计了专有的中间表示，以让Agent渐进地读入大型场景与资产，并相应设计了检索工具，让agent能够快速定位目标对象
+- 我们通过Roslyn库，实现了在Unity编辑器内JIT编译并执行C#代码，以此实现对资产的语义化修改；并在agent侧的版本管理做了特定处理，能够review/revert agent在对话中的资产/代码修改
+- 我们内置了达到商业插件水准的C#热更新能力，Agent的代码改动无需重新编译程序集与域重载即可生效，Play Mode运行状态不丢失；应用状态对Agent完全透明，改动是否实际生效，Agent可以即时确认
+- 我们在Locus自身进程内运行Roslyn语义分析，提供定义跳转、引用查询、悬停信息与实时诊断，Agent修改代码后无需等待Unity编译即可获得编译器级别的Error与Warning；诊断覆盖面接近Rider的即时诊断，并支持查询字段在UnityEvent、AnimationEvent与场景中的引用
+- 我们基于Rust优秀并行生态系统，实现了高度并行化的资产数据库扫描，以此实现了对大型场景的高速语义解析与任意资产的引用关系查询（Unity Editor API仅提供依赖关系查询）
+- 我们实现了自动化的知识系统，agent会把每次接到的零散对话需求总结成设计文档，并把工作中的理解保存到memory中，无需重复大量explore项目
+- 知识系统内的文档支持配置AI维护模式、维护规则，并且支持调整在上下文内部的L0/L1/L2的注入方式，用户可以高度定制化渐进式展开的方式，并且原生支持大量文档的词法/语法检索，支持选择并下载嵌入运行时
+- 我们通过编写C#状态机工具，Agent得以在运行时对某些特定帧数/事件上通过反射采样内部状态，并输出成逐帧表格，进行多帧行为的动态调试
+- 我们提供图形化的版本管理界面，并且支持对Unity YAML文件语义化的修改查看与冲突解决
+- 我们基于Vue.js实现了用户体验更好的现代前端界面，而非基于Unity Editor API的有限控件，并且通过Windows API将其嵌入到Unity窗口中；Agent还可以通过`/view`命令、以Vue.js创建Unity编辑器界面，HTML与CSS可自由使用，完全不受IMGUI限制，界面自带数据绑定与C#代码解释执行能力
+
+如果选择在 Unity 编辑器内部实现 Locus，或将 Locus 设计为一个 MCP 服务器，上述多数特性将难以落地，甚至在技术上几乎不可实现。
+
+## 安装
+
+目前仅支持 Windows 系统，我们很快会完善针对 macOS 的支持。
+
+我们推荐使用 Releases 中的安装包安装，安装后的配置流程见 [快速开始](https://unity.farlocus.com/overview/install-and-setup)。
+
+## 兼容性
+
+Locus 当前支持 Windows 系统上的 Unity 2021 或更高版本。
+
+如果您在更低 Unity 版本中发现兼容性问题，欢迎通过 Issue 反馈。我们会尽可能修复；涉及较大修改的兼容性修复，可能会作为分支方案处理。
+
+## 从源代码构建
+
+当前仓库使用 `bun` + `Tauri 2`，目前以 Windows 作为主要开发与构建平台。
+
+### 开发时运行
+
+```powershell
+bun tauri dev
+```
+
+该命令会启动 Vite 开发服务器，并打开 Tauri 桌面应用。
+
+### 隔离测试实例
+
+```powershell
+bun run locus:test:app
+```
+
+该命令会启用 WebView2 调试与 Codex MCP，并创建相互隔离的数据库、配置、日志、workspace、WebView2 profile 和进程临时目录。启动时会输出 `LOCUS_RUNTIME_JSON`，用于定位整套测试数据。
+
+自动生成的运行目录按 `--runtime-base`、`LOCUS_ISOLATED_RUNTIME_BASE`、Git 忽略的 `.locus-dev.local.json`、系统临时目录依次解析。每个 checkout 可使用以下本地配置：
+
+```json
+{
+  "isolatedRuntimeBase": "<本机绝对目录>"
+}
+```
+
+也可以显式指定完整运行目录或各个子目录：
+
+```powershell
+bun run locus:test:app -- --runtime-root <绝对运行目录>
+```
+
+等价的 Tauri 入口为 `bun tauri dev-mcp --isolated`。运行 `bun run locus:test:app -- --help` 可查看全部参数。
+
+### 构建
+
+快速生成 Windows 开发安装包：
+
+```powershell
+bun run build:installers
+```
+
+该模式使用增量编译、256 个 codegen unit、关闭 LTO，并采用 zlib 压缩。默认构建不内嵌 Python/Git 的开发包，产物名带 `-dev-without_embed_python_git` 后缀，位于 `src-tauri/target/release/bundle/nsis/`。
+
+验证完整内嵌运行时时使用：
+
+```powershell
+bun run build:installers default
+```
+
+完整内嵌开发包的产物名带 `-dev` 后缀。
+
+## 发布版本
+
+发布安装包与版本说明见 [GitHub Releases](https://github.com/r1n7aro/Locus/releases)。
+
+构建两个经过 ThinLTO 优化的 Windows 发布安装包：
+
+```powershell
+bun run release:installers
+```
+
+默认安装包保持标准命名，例如 `locus_0.2.5_x64-setup.exe`。无内嵌版本使用 `locus_0.2.5_x64-without_embed_python_git-setup.exe`。
+
+## 许可证
+
+主仓库源代码采用 `GPL-3.0-or-later` 发布，完整文本见 [LICENSE](LICENSE)。
+
+## 文档构建工具链
+
+`docs/` 保存文档源文件与本地文档构建工具链说明，目录约定见 [docs/BUILD_TOOLCHAIN.md](docs/BUILD_TOOLCHAIN.md)。
+
+桌面应用安装包不包含 `docs/node_modules` 或 Mint 文档构建工具链。
+
+## 第三方许可证
+
+根级第三方说明见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)。
+
+`locus_unity/Editor/Roslyn` 中 Roslyn 与相关 .NET 依赖的许可证和分发说明见 [locus_unity/Editor/Roslyn/THIRD_PARTY.md](locus_unity/Editor/Roslyn/THIRD_PARTY.md)。私有 JSON 解析 bundle 说明见 [locus_unity/Editor/Json/THIRD_PARTY.md](locus_unity/Editor/Json/THIRD_PARTY.md)。
+
+发布安装包时会同时携带根级许可证文件、根级第三方说明、生成的 `licenses/third_party/` bundle 与 `locus_unity/` 目录中的 Unity Editor bundle notices。
+
+## 免责声明
+
+本项目是一个面向 Unity Editor 的免费开源工具，与 Unity Technologies 无关联。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=r1n7aro/Locus&type=Date)](https://www.star-history.com/#r1n7aro/Locus&Date)

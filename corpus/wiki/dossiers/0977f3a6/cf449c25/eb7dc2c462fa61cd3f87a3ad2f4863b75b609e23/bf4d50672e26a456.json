@@ -1,0 +1,616 @@
+{
+  "applied_operation_id": "op_43ef75a2d77141f096f2bd0d2a8b1e19",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9233bfa8b5195ddecb6fff0061f7d23b5ef99d909c018229bff6c6860d061a32",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "9124659baf0c0b7660567ed6df13548ec2b2d9ec",
+          "line_end": 33,
+          "line_start": 21,
+          "path": "docs/docker.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docker.md#L21-L33"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "0c660edb424b270e04d6f128abe1863d82be2996",
+          "line_end": 14,
+          "line_start": 8,
+          "path": "docs/compression.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/compression.md#L8-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3276e054fa1539a66eeae3e1193a78ac66fd94f5ef7f161602d21a95fd8e40d9",
+        "slc_9602ad9a1d63740e8029d846d4ea0fc3bac94d2d4ae26cce60a099d0dfb16bf0"
+      ],
+      "text": "The examples show a CLI command llm-convert that takes a source reader (e.g. from-alpaca) with --input and a writer (e.g. to-csv-pr) with --output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fffad4307570dd39b382f53e156b40df4a03a6cb9808005891fa51aff2368abd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "ad1839d161c203bde18ee9f494fab507e5ae4959",
+          "line_end": 18,
+          "line_start": 9,
+          "path": "docs/docx.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docx.md#L9-L18"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "f887e5ccbd41cf0ddf73e47575ddb841c6cc7bb5",
+          "line_end": 23,
+          "line_start": 14,
+          "path": "docs/doc.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/doc.md#L14-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b4866f27cfbc73eea3c83f265e9918e504187083fce2e0e9374ef8d02f0e82d9",
+        "slc_ea697126bed181834c093c105f127dc606de5319a68efe67ed7deea3c8917d59"
+      ],
+      "text": "A separate ldc-convert command is documented for document conversion, using readers like from-doc-pt and from-docx-pt with per-stage -l INFO logging flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_987aa7004a1e5ea22c5dfecb8e336fc7c6ceed806f58a7b9552e352b36e76f0e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "8f68afb2f19b05efc8c5c2b2baca2db12a95394f",
+          "line_end": 25,
+          "line_start": 17,
+          "path": "docs/downloaders.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/downloaders.md#L17-L25"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "8f68afb2f19b05efc8c5c2b2baca2db12a95394f",
+          "line_end": 11,
+          "line_start": 4,
+          "path": "docs/downloaders.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/downloaders.md#L4-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7aa191d9041764187ac7a18c93b3f58cb0353af55a3dc7add1a83e297cb8577b",
+        "slc_c741e64e34f39307018111dc4533f05f4e5b2dca032f70a09c11b6685ea7469e"
+      ],
+      "text": "An llm-download command fetches files from Hugging Face, taking an identifier (-i), optional type (-t dataset), filename (-f), and output location (-o)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_591643db491590ae58d341a9aa42cd880e6c1752d25c5eb3b454303d9cf98370",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "0c660edb424b270e04d6f128abe1863d82be2996",
+          "line_end": 2,
+          "line_start": 1,
+          "path": "docs/compression.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/compression.md#L1-L2"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "0c660edb424b270e04d6f128abe1863d82be2996",
+          "line_end": 6,
+          "line_start": 4,
+          "path": "docs/compression.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/compression.md#L4-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_350971386f7764c115b99f4a5a1031c14c97df490809eca3589743616ba42edb",
+        "slc_dcf0a2ab0308410ebe56b9966f1a38fc9f18c2fdfba201be9f6daa6f75593953"
+      ],
+      "text": "Output files are automatically compressed when the format supports it, based on the extension used for the output, e.g. producing a .csv.gz via Gzip."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1198a1110524e0bf1e0a7511e904ba0afce34b793bb7c1f01cfe09741826d494",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "0c660edb424b270e04d6f128abe1863d82be2996",
+          "line_end": 17,
+          "line_start": 16,
+          "path": "docs/compression.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/compression.md#L16-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e4c1d38c93e7c23a452ad14e30e869d3875d3f9184cc32daa567ea2b441d9579"
+      ],
+      "text": "Input files are automatically decompressed based on their extension, provided the format supports that."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57fc99efadac887254e653e29d7c409e763da6c2a723b91cd971e21d963317b7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "f887e5ccbd41cf0ddf73e47575ddb841c6cc7bb5",
+          "line_end": 7,
+          "line_start": 6,
+          "path": "docs/doc.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/doc.md#L6-L7"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "f887e5ccbd41cf0ddf73e47575ddb841c6cc7bb5",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "docs/doc.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/doc.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8ed94dc3836fc6252877aab9bab0773d0b78bbd4951486e6175706ea54e37605",
+        "slc_f36d74a20176139c134556cbc6c71499d3b7de4045eac9b40ed8c8066fc1837e"
+      ],
+      "text": "The .doc text-extraction examples require the ldc-doc library and the antiword binary on PATH, installable via apt on Debian/Ubuntu."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88882e513619f1495cc3b195742af9928ba49c25c87a67d09437a5c47469f71f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "ad1839d161c203bde18ee9f494fab507e5ae4959",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/docx.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docx.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17a79aadaafea78af5650d5eee1dce0c9f194bed038be7c3aa7d71aaa54d57ad"
+      ],
+      "text": "The .docx extraction examples require the ldc-docx library."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16e93f258071ecc636d2a319e983184a2537d9aabeacb8c7dad95a4f6aa3f9ca",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "1f5c1a638ea40a6d8ee20ef004f6827d8049195e",
+          "line_end": 14,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/README.md#L11-L14"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "1f5c1a638ea40a6d8ee20ef004f6827d8049195e",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/README.md#L18-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54cb7b06076329c9afa2cad9db2c8ad2602ecb5ed5caa2971f8b5e2657f8840f",
+        "slc_930c11c46706d497ab810291844d4fe3291974af532599733189a50c394f776b"
+      ],
+      "text": "Repository development practice: The docs site is built with pinned MkDocs and plugin versions in a virtualenv and served locally with mkdocs serve."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf5779f445e5965b4e8018d4f6d0c0943babe3663c8c431685a20ff0889bbf04",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "1f5c1a638ea40a6d8ee20ef004f6827d8049195e",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/README.md#L24-L24"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "1f5c1a638ea40a6d8ee20ef004f6827d8049195e",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85cf0531c12c22416b346c7e39395a6d1f0270285e96be6a3da516feeae2e80c",
+        "slc_902503cbfed4e842a35af5a284b0058c5cff17cfe09c65eb6dd41bbe14a79a36"
+      ],
+      "text": "Repository development practice: Any push triggers a site rebuild on GitHub via a GitHub Actions workflow defined in .github/workflows/main.yml."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e965d19b0f85043971d6255526e4eee0e6b5be84a236df3fd396979beee5c29",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "9124659baf0c0b7660567ed6df13548ec2b2d9ec",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "docs/docker.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docker.md#L10-L14"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "9124659baf0c0b7660567ed6df13548ec2b2d9ec",
+          "line_end": 33,
+          "line_start": 21,
+          "path": "docs/docker.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docker.md#L21-L33"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "9124659baf0c0b7660567ed6df13548ec2b2d9ec",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/docker.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docker.md#L7-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f888b1be1b232fb86845e47c64b852b1d8731c451d74d34f05c1854febc31e1",
+        "slc_3276e054fa1539a66eeae3e1193a78ac66fd94f5ef7f161602d21a95fd8e40d9",
+        "slc_8d3e20cd05286c55bbc914ff0787802165d6f2da695eba367958794d92eebe26"
+      ],
+      "text": "Docker usage examples run waikatodatamining/llm-dataset-converter:latest with the current directory mounted at /workspace, either interactively or to run a conversion pipeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4edcdbb961ce4f026e610766841cf6a675f59a9ba257c904a86ad0351c4db006",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "8f68afb2f19b05efc8c5c2b2baca2db12a95394f",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "docs/downloaders.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/downloaders.md#L27-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ad0e64f9967e2918316421d3157fba73a8f8a30d035d604fd8de8df984b9666"
+      ],
+      "text": "When downloading via Hugging Face, files are cached locally in the user's home directory before being copied to the specified output location."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c5f3aa53e91da283c3f0a8b7542b34dd648a86f1e2109d0f11f5963466d169a",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "9124659baf0c0b7660567ed6df13548ec2b2d9ec",
+          "line_end": 2,
+          "line_start": 1,
+          "path": "docs/docker.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docker.md#L1-L2"
+        },
+        {
+          "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+          "git_sha": "1f5c1a638ea40a6d8ee20ef004f6827d8049195e",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "waikato-llm/llm-dataset-converter-examples",
+          "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13b527d1478dadedca90fb5016aac875c448f0be23208cdc394027cba8f97d8c",
+        "slc_62e1b643fc862341396491a9db60dcb1f8c37020e0909b1dee7d34037c27a8f6"
+      ],
+      "text": "The repository appears to be documentation-only example content for the llm-dataset-converter libraries rather than containing the converter implementation itself."
+    }
+  ],
+  "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 26,
+        "path": "README.md",
+        "size": 574
+      },
+      {
+        "lines": 17,
+        "path": "docs/compression.md",
+        "size": 543
+      },
+      {
+        "lines": 23,
+        "path": "docs/doc.md",
+        "size": 490
+      },
+      {
+        "lines": 35,
+        "path": "docs/docker.md",
+        "size": 1058
+      },
+      {
+        "lines": 18,
+        "path": "docs/docx.md",
+        "size": 306
+      },
+      {
+        "lines": 28,
+        "path": "docs/downloaders.md",
+        "size": 743
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/faster_whisper.md",
+        "reason": "file-budget",
+        "size": 460
+      },
+      {
+        "path": "docs/filters.md",
+        "reason": "file-budget",
+        "size": 790
+      },
+      {
+        "path": "docs/general_usage.md",
+        "reason": "file-budget",
+        "size": 763
+      },
+      {
+        "path": "docs/gitingest.md",
+        "reason": "file-budget",
+        "size": 953
+      },
+      {
+        "path": "docs/google.md",
+        "reason": "file-budget",
+        "size": 854
+      },
+      {
+        "path": "docs/html.md",
+        "reason": "file-budget",
+        "size": 305
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 1205
+      },
+      {
+        "path": "docs/locating_files.md",
+        "reason": "file-budget",
+        "size": 648
+      },
+      {
+        "path": "docs/openai.md",
+        "reason": "file-budget",
+        "size": 792
+      },
+      {
+        "path": "docs/pdf.md",
+        "reason": "file-budget",
+        "size": 416
+      },
+      {
+        "path": "docs/processing_multiple_files.md",
+        "reason": "file-budget",
+        "size": 1353
+      },
+      {
+        "path": "docs/tint.md",
+        "reason": "file-budget",
+        "size": 1192
+      }
+    ],
+    "omitted_count": 12,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 22,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 18,
+      "complete": false,
+      "omitted": 12,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b8c8b68048c754a89b6f620b922112fd",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/0977f3a6/cf449c25/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/bf4d50672e26a456/manifest.json",
+  "package_id": "pkg_965c480ae8e385108de60ad5ec94b6c27bba1f773ad9b474055405c199c739ce",
+  "repo": "waikato-llm/llm-dataset-converter-examples",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b28c548f031c392f25e1ad7783841b7f7d659b87d5efea7af17a73c6689f090a",
+  "snapshot_id": "bf4d50672e26a456",
+  "sources": [
+    {
+      "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+      "git_sha": "1f5c1a638ea40a6d8ee20ef004f6827d8049195e",
+      "lines": 26,
+      "path": "README.md",
+      "repository": "waikato-llm/llm-dataset-converter-examples",
+      "sha256": "c4bc46229d6324dbead605fc2e4f569d38de5c8f44d9d63adabdf5f22a866ec2",
+      "source_id": "src_f6a0b3c1ae1c5e06824f19cc18254e82",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/README.md"
+    },
+    {
+      "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+      "git_sha": "0c660edb424b270e04d6f128abe1863d82be2996",
+      "lines": 17,
+      "path": "docs/compression.md",
+      "repository": "waikato-llm/llm-dataset-converter-examples",
+      "sha256": "1458075f8ca5c381e76de27bc5032c4d2de0d00a7743cf59ce2c280dcc799d84",
+      "source_id": "src_2f0a0bbbb580552aa9f3922657ce0c01",
+      "stored": "compression.md-2b145c75d69e.md",
+      "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/compression.md"
+    },
+    {
+      "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+      "git_sha": "f887e5ccbd41cf0ddf73e47575ddb841c6cc7bb5",
+      "lines": 23,
+      "path": "docs/doc.md",
+      "repository": "waikato-llm/llm-dataset-converter-examples",
+      "sha256": "8ccec4c1e27e49f1172f28b604030e0e7c3fe5d0269f42efb787c954bed3053e",
+      "source_id": "src_86ab715836fd58dc850424e7d632f07d",
+      "stored": "doc.md-8e0465b1fc47.md",
+      "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/doc.md"
+    },
+    {
+      "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+      "git_sha": "9124659baf0c0b7660567ed6df13548ec2b2d9ec",
+      "lines": 35,
+      "path": "docs/docker.md",
+      "repository": "waikato-llm/llm-dataset-converter-examples",
+      "sha256": "de3b14390c62708fae38d9fdc26284322ca30ef3126412b039797938a634949a",
+      "source_id": "src_fd19a1595b2956648929b6ea8289c38a",
+      "stored": "docker.md-ae5611658dcd.md",
+      "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docker.md"
+    },
+    {
+      "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+      "git_sha": "ad1839d161c203bde18ee9f494fab507e5ae4959",
+      "lines": 18,
+      "path": "docs/docx.md",
+      "repository": "waikato-llm/llm-dataset-converter-examples",
+      "sha256": "e82e86d10fcf157c2191252896c9455c77a28267290649a04ab7e7f69db07288",
+      "source_id": "src_09318d6b74c359f58fdef07a90ea4be9",
+      "stored": "docx.md-c68ed00952d6.md",
+      "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/docx.md"
+    },
+    {
+      "commit": "eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23",
+      "git_sha": "8f68afb2f19b05efc8c5c2b2baca2db12a95394f",
+      "lines": 28,
+      "path": "docs/downloaders.md",
+      "repository": "waikato-llm/llm-dataset-converter-examples",
+      "sha256": "e4f3ea23fc7e4ff3f66a3030cdd96a07d0ff07432c7b5a81c10f461f88f8ee0f",
+      "source_id": "src_73235ba851405ee1bc7bda08f4f3cf8d",
+      "stored": "downloaders.md-ccee0a138286.md",
+      "url": "https://github.com/waikato-llm/llm-dataset-converter-examples/blob/eb7dc2c462fa61cd3f87a3ad2f4863b75b609e23/docs/downloaders.md"
+    }
+  ],
+  "summary": "This repository hosts documentation examples for the llm-dataset-converter libraries, published as an MkDocs site deployed via GitHub Actions. The examples document CLI conversion, downloading, and Docker usage of the underlying tools.",
+  "superseded_claim_ids": []
+}

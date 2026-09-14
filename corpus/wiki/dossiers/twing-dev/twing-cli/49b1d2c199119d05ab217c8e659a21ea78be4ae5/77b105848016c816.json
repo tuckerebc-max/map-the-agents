@@ -1,0 +1,564 @@
+{
+  "applied_operation_id": "op_ffff823318fe4d0f81967d8266cdf80c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_580a470fef8f579e4cd916b542bcc50f02d688e7cb6c2e8f9dcb2e419042402f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L3-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8f318282e665600393b233d2275a57e63b41dc112d9c86ba2e759921f97f25d"
+      ],
+      "text": "Twing is a CLI plus a hook for coding agents (Claude Code today, others planned) and a small server that every agent's client talks to, letting multiple agents on a team coordinate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec541e5cef76b42759dcbbad9d5650b786eba1d1761952b3dd290a0c46197fc7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 57,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L38-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b67ee458bb22f9d33313e86fd9582fbb76a50f3427cc8d96abd860e1daa537a7"
+      ],
+      "text": "Setup installs a hook wired into Claude Code and starts a background daemon; hooks are stateless per-invocation, while the daemon watches edits and syncs them to the server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a056bc6b6a616d2b04e593858ae9bd68ac56b574396f2acc932e7c3b689f3e6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 297,
+          "line_start": 291,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L291-L297"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 133,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L129-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1c0d68f7f8aa316cbba014b2c4d263b8da76718b3a274fdf03a0dd6d1881501",
+        "slc_fbf80ddb97afae1ef78d3d465b908d69e36fc1114ae27d7f5305aa4c0167a28f"
+      ],
+      "text": "The CLI exposes commands such as twing init, twing align, and twing design register/amend/close, with register taking a summary and touched paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c328fa290fb2431f3c6a4ebfd8b47218bb81c8486e59529ec60aba4ff641a79a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "564a30aee76b38418b4050c72d415bf0f02248fc",
+          "line_end": 118,
+          "line_start": 117,
+          "path": "docs/design-conflict-coordinator-spec.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/docs/design-conflict-coordinator-spec.md#L117-L118"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "564a30aee76b38418b4050c72d415bf0f02248fc",
+          "line_end": 158,
+          "line_start": 142,
+          "path": "docs/design-conflict-coordinator-spec.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/docs/design-conflict-coordinator-spec.md#L142-L158"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "564a30aee76b38418b4050c72d415bf0f02248fc",
+          "line_end": 171,
+          "line_start": 160,
+          "path": "docs/design-conflict-coordinator-spec.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/docs/design-conflict-coordinator-spec.md#L160-L171"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "564a30aee76b38418b4050c72d415bf0f02248fc",
+          "line_end": 140,
+          "line_start": 134,
+          "path": "docs/design-conflict-coordinator-spec.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/docs/design-conflict-coordinator-spec.md#L134-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_235b7743eb3bafb4947b707e670bf51b3bad83fb37fa75b07bd114fcbb9b59db",
+        "slc_7774f1934ce7886f96f888e50e96aafb3643a4cfd1438c395a8920e54e6da283",
+        "slc_9d3a8123d7f6bfe20eda2c9d4a69ed71d2aca16ad69d7515431c32d36b177633",
+        "slc_d3d970339e2082d543dc1164c984b3dc5e2a6272603ddb0c1a30783dfeec51e7"
+      ],
+      "text": "The coordinator spec defines a single POST /v1/designs/check call that registers a design and returns a verdict (clean, overlap, or constraint_flag) in one blocking round trip."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_752afc4d5f3c5b3e7ce6d7a9215271068d38f5259fcba201859d1ca0f6c40b4e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 127,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L111-L127"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L96-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49e7b22b66087aaf9321c59610228d322d953e690386bf1f830a3f2512792c76",
+        "slc_de7324a7aa43406cef21f7f54bf769c6b5616d202154553dcb521d2a2943494e"
+      ],
+      "text": "Conflicts collapse into four buckets; bucket 1 (constraint violations) is admin-gated and blocking, bucket 2 never blocks, and peer-vs-peer buckets 3/4 can be self-resolved with a justification."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_258832d01acf169428b6ca31164e2571b8e7c74118c4b5ec7c7d6dc40b830962",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 127,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L111-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49e7b22b66087aaf9321c59610228d322d953e690386bf1f830a3f2512792c76"
+      ],
+      "text": "Bucket 3 conflicts come from Tree-sitter-parsed claims and bucket 4 from an async Bedrock semantic pass, so those findings can arrive after the edit already succeeded via align or an alignment thread."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9ad7a2c9c060ab8eca3b2ca0bc421414c60af4112b4bf2c7c478e6ca06c09fc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 57,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L38-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b67ee458bb22f9d33313e86fd9582fbb76a50f3427cc8d96abd860e1daa537a7"
+      ],
+      "text": "Authentication mints a local personal access token of which only the hash reaches the server; it reuses the gh CLI token when available, else falls back to a browser OAuth device flow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1a5ce253807ae88417c4098343f326cb1d431c864da3db5ee5cbd46d0bacfba",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 428,
+          "line_start": 419,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L419-L428"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d0fdff96e223f152bab401343a5fa13a33da6792339f884ce39791b131793042"
+      ],
+      "text": "Plan-text design checks need an LLM provider, auto-detected in precedence order AWS, GCP, OpenRouter, Bifrost; with none configured the check fails soft to clean while the registered-design rule still applies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03781343b95aef32fa839709ff11869f60d675c0430ddc28bea754659ada912b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 537,
+          "line_start": 533,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L533-L537"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 20,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L18-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_608fa61139c849f0c8256db1791aafb303f9a176abd5eb350264f075c0b0cf5f",
+        "slc_a4cbf32b94f5720c3f4765015079a516fea240909daf7cb7d4d776c341c4c3a7"
+      ],
+      "text": "The CLI needs Node.js >= 20; no Go toolchain is required for users because the twing-hook Go binary is fetched automatically on first init, though contributors with Go build it from source."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb633858ce268c0ad56d668ba7e2ae71866314b4d336fcc2b638ad6f1be27744",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 412,
+          "line_start": 407,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L407-L412"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 400,
+          "line_start": 399,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L399-L400"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49fc7a44924752e01b27a566e383c90c115970044d85d05a158ba461dd232ee1",
+        "slc_90008ec86dfbc64f6ec2a018dd48b2344364c5313634e0c09bc9189c228b4fd6"
+      ],
+      "text": "The coordinator server (packages/server) is described as a single process with no external database, and it generates a one-time bootstrap token on first run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4370133f04cf4eca1cf6fc2b618293a8bf215e39bc0e670c4d027b3922d476ce",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 280,
+          "line_start": 278,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L278-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bf77faccd3ca9bcdb8e704b0dd70895045507f8c95a26c59a07218cdaeefc9f8"
+      ],
+      "text": "Windows hook-execution behavior for the bootstrap mechanism is unverified, and init's OS-level service install is cited as a known gap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c77eb8366432496f2dca7c960bc3b5db7b4d3b62fa55d2a150927e064d5e58f5",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 160,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L151-L160"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 573,
+          "line_start": 573,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L573-L573"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18cdf1433325a15c0f83c4ab9012d8e4166556c9c568cfa765ab770f99bbd01a",
+        "slc_28defb2a11435c831a8aa08f168b951ef6a354f4e8ddc844a7669b28c41329b9"
+      ],
+      "text": "The twing review command (test-delta integrity on top of align) is not built yet, and a second-admin-approves-first flow for constraint changes is tracked follow-up work, not yet built."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_84fdd5de41d572865cc3dd427ce9bd11fecc5ea5640f283367bfeaa0dd5ffeff",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 579,
+          "line_start": 577,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L577-L579"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bbe8fee371a9a2719ad6d518029e7f40031ae2613e701add5945349def2a31f"
+      ],
+      "text": "A simulator directory runs two real claude CLI sessions concurrently against a shared fixture project to exercise the align feature end to end."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35473d2c0360a2cd5247908de09429f3f37633a3941330e45ea2e7566085671c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 550,
+          "line_start": 548,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L548-L550"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 546,
+          "line_start": 541,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L541-L546"
+        },
+        {
+          "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+          "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+          "line_end": 537,
+          "line_start": 533,
+          "path": "README.md",
+          "repository": "twing-dev/twing-cli",
+          "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md#L533-L537"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a12c9ef2870824154a7223cdd6912c57303273ef15f2ff4fb33601c353f6861",
+        "slc_504227a2d2660a24e36748473fc112121c38a2b8f8e5453c1030c95548713806",
+        "slc_608fa61139c849f0c8256db1791aafb303f9a176abd5eb350264f075c0b0cf5f"
+      ],
+      "text": "Repository development practice: contributors need Node.js >= 20, git, and Go for the hook; the repo builds packages/core, packages/cli, and packages/server via TypeScript project references with npm install and npm run build, and npm link in packages/cli provides a local twing command."
+    }
+  ],
+  "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 579,
+        "path": "README.md",
+        "size": 40599
+      },
+      {
+        "lines": 521,
+        "path": "docs/design-conflict-coordinator-spec.md",
+        "size": 28839
+      },
+      {
+        "lines": 56,
+        "path": "docs/statefulness-and-identity-memo.md",
+        "size": 7009
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/orchestrator-and-verification-design-doc_v1.md",
+        "reason": "byte-budget",
+        "size": 65353
+      },
+      {
+        "path": "docs/verification-layer-strategy-memo_6.md",
+        "reason": "byte-budget",
+        "size": 54670
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "byte-budget",
+        "size": 45299
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 252,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": false,
+      "omitted": 3,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3a5d731d11e85cf9b014cae8e18705f1",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 4,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/twing-dev/twing-cli/49b1d2c199119d05ab217c8e659a21ea78be4ae5/77b105848016c816/manifest.json",
+  "package_id": "pkg_002607e59b753b21513aeb2c3a0d6fcb776e8efe5ec3a8b23f00a5584996a6e1",
+  "repo": "twing-dev/twing-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1b5215cd6faf1cd3f98cbea5f467a98ceaa8f49f1db1a414783f5ba04dd591e4",
+  "snapshot_id": "77b105848016c816",
+  "sources": [
+    {
+      "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+      "git_sha": "ddf1a792c520d9ff5202a9fd40b67bba2e936ffa",
+      "lines": 579,
+      "path": "README.md",
+      "repository": "twing-dev/twing-cli",
+      "sha256": "1404f7540b74645cd78f9619473d8ecf21b4fd2cfc8fefaca114083f5818bd97",
+      "source_id": "src_5d6d6f2ab9135edf952c47856431bec5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/README.md"
+    },
+    {
+      "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+      "git_sha": "564a30aee76b38418b4050c72d415bf0f02248fc",
+      "lines": 521,
+      "path": "docs/design-conflict-coordinator-spec.md",
+      "repository": "twing-dev/twing-cli",
+      "sha256": "79e808e6e73e762613d898efe54c3a00c7134c25dad6a54a61bb554691dc8edd",
+      "source_id": "src_4eeb5961dbdb54219f50a68c9bfe32c4",
+      "stored": "design-conflict-coordinator-spec.md-333f51abcb4c.md",
+      "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/docs/design-conflict-coordinator-spec.md"
+    },
+    {
+      "commit": "49b1d2c199119d05ab217c8e659a21ea78be4ae5",
+      "git_sha": "c14b8e1889bf72b9bae5db08cd38f9a43d456afb",
+      "lines": 56,
+      "path": "docs/statefulness-and-identity-memo.md",
+      "repository": "twing-dev/twing-cli",
+      "sha256": "d97de7d41d80a4ce14ef3247fc2ca34c0ef40f3c3ce042c7eb3b5c177c0fdaa4",
+      "source_id": "src_77c5259500c55e37af36c4009c20c1ad",
+      "stored": "statefulness-and-identity-memo.md-8f0f75136205.md",
+      "url": "https://github.com/Twing-dev/twing-cli/blob/49b1d2c199119d05ab217c8e659a21ea78be4ae5/docs/statefulness-and-identity-memo.md"
+    }
+  ],
+  "summary": "twing-cli is a coordination tool for multiple coding agents: a CLI plus a Claude Code hook and a coordinator server that gate edits behind registered designs and flag conflicts. Evidence is mostly README documentation plus a design-conflict coordinator spec; contributor build instructions appear only near the end. Evidence coverage: 112 of 162 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

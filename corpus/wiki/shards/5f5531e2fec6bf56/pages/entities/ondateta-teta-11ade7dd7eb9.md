@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0deb7ce6519f2b7d980323d37e5ba2d8cfd60f1ffbae46f55104d3f7bddef08a
+- clm_24d83a25eb987dda54e92a8496adbcf4ce20ef21cae86d3d9b5557464ed7d3b9
+- clm_2c3f8d9d9cb3f097a03fb2e198ddbc00206cb27a40b98f4df03fd4f654316749
+- clm_32e623c78713ad8f999b21b55a6bb5fc906bd26ca63959f6de15cb2524611b8a
+- clm_44813955d6f7b4b59750028e4aed9a69c2ab6312f024fcb018efb8c509907c54
+- clm_87ba618841ea1e41c67a59f95d3d5fa4ee4733f1e16a17e53ef1c2c52d03b4f2
+- clm_c8770cc6ed920b15dcbc62b4f712553ef0e1f4c58671f374d865bb65657cfd84
+- clm_d7f421c95bcd870ac691911938e7517c2726ba34e37c69226faa83cf2a022b66
+- clm_e92af6b326409ae8b8a11001e9786f25ca840084bb59e1d262e732e0afafaad8
+- clm_eb711c3dc8193be2603727d12b0475e99d980b24b4e4b30189dbf5ac06565acd
+maturity: draft
+page_id: pg_063fdd9513da5039bf7811ade7dd7eb9
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: ondateta/teta
+updated_at: '2026-09-14T02:24:36Z'
+---
+
+# ondateta/teta
+
+<!-- rcw:begin owner=entity:ent_2357c0043f8757e0b78b6d05fdc5ff0d block=evidence -->
+- ondateta/teta is mentioned in this evidence. [@claim:clm_0deb7ce6519f2b7d980323d37e5ba2d8cfd60f1ffbae46f55104d3f7bddef08a] [@claim:clm_24d83a25eb987dda54e92a8496adbcf4ce20ef21cae86d3d9b5557464ed7d3b9] [@claim:clm_2c3f8d9d9cb3f097a03fb2e198ddbc00206cb27a40b98f4df03fd4f654316749] [@claim:clm_32e623c78713ad8f999b21b55a6bb5fc906bd26ca63959f6de15cb2524611b8a] [@claim:clm_44813955d6f7b4b59750028e4aed9a69c2ab6312f024fcb018efb8c509907c54] [@claim:clm_87ba618841ea1e41c67a59f95d3d5fa4ee4733f1e16a17e53ef1c2c52d03b4f2] [@claim:clm_c8770cc6ed920b15dcbc62b4f712553ef0e1f4c58671f374d865bb65657cfd84] [@claim:clm_d7f421c95bcd870ac691911938e7517c2726ba34e37c69226faa83cf2a022b66] [@claim:clm_e92af6b326409ae8b8a11001e9786f25ca840084bb59e1d262e732e0afafaad8] [@claim:clm_eb711c3dc8193be2603727d12b0475e99d980b24b4e4b30189dbf5ac06565acd]
+<!-- rcw:end owner=entity:ent_2357c0043f8757e0b78b6d05fdc5ff0d block=evidence -->
+
+## Researcher notes
+

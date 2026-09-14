@@ -1,0 +1,697 @@
+{
+  "applied_operation_id": "op_4d199256e60043cdbcf2e45c85a306ed",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a60d9b8df125f915071f46ee77c9a72d03a0cd71c2f08d1ab737307e826949ec",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L72-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ed06bbfe2046d93e6db5d43d6ced7e971ebdbe1c61551629334bbb815e3d3d8b"
+      ],
+      "text": "The core agent loop is described as policy-blind: all behavior is injected through a Policy object, and the run() loop in src/agent.ts is roughly 165 lines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6f11fd89a42681307162b5c49ae13be88edc20ffa484b3ec19b317872ae998b8",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2483867ed68487e304fc556980f4d1adc665d5429d2e98e164cfcb7436077171"
+      ],
+      "text": "The agent runs with no permission prompts, sandboxing, or confirmation dialogs; it executes arbitrary shell commands the model requests, so the README advises running it in a throwaway environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b540b14b26731fc78f268047b0f98ffa3f28a27522217ded9e76c74a5d059e2c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 60,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L55-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52101b7c6d54407bf9a5a3d04e2bcf28340cfaa8183542d821d2c3820b07082f"
+      ],
+      "text": "The model drives five tools: read_file with paged line-window reads, write_file, atomic single-occurrence edit_file, bash with process-group timeout kill and 8000-char output cap, and spawn_agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b953ac8cec4e233459c51d230c5ab4c1dec89403aa6f1654a8472c6822fb2d8b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 42,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L29-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43ef39379e90d5f824860e2cea2838c12a03eabe177e01e8b078b41874594416"
+      ],
+      "text": "CLI flags include --cwd, --model, --system, --serious (long-horizon profile with retries, error nudging, and a completion audit), --max-turns, --quiet, --debug, and --help."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3384f6bcccb3fa09eb73342374d7bdfbc47ba7a8d4164f73e8c3cbe46e33f00a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 47,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L44-L47"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 27,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L24-L27"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 22,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L19-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bf86a5c3b3a850eca8089a508fe8f6a2c2c863740af1f7e5f6f7f8539f1669f",
+        "slc_7b3d1d7c888f8c78efe729ec626060da0e01c65518f3e78a5ef361b94e279994",
+        "slc_dab9936c1e1cd339c06b29b14c29fb7bd3039237ec75457583d5feef62fe549b"
+      ],
+      "text": "The agent runs one-shot with a task argument or as an interactive REPL; in one-shot mode only the final answer goes to stdout so output can be piped cleanly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8efb349f183f7a88b30698147b76889477a25266e95b93eebd58a1c52ab6d5ab",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L49-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a26e4972ca27e9ba5f8b357f06803aa2e1ec4371fcaca36e86e9aa8391599a42"
+      ],
+      "text": "Each run writes a JSONL transcript to .transcripts/ (or $BREAK_AWAY_TRANSCRIPT_DIR), one file per run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25dd500618bdf9c53eed6ddee81deb65f1144c1e92316b5ec196b0d98078cb12",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L99-L99"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64ed7fe79f3022c32ba0102098e13e28aa217f4e67142796abc88251e83fc909",
+        "slc_b5fdad39685e0f76b96f534d9287bfbe01b3e08aa8524419bcb18a0fc76d3f52"
+      ],
+      "text": "spawn_agent launches child agents whose stdout/stderr go to spawn-<ts> files; nesting depth is tracked via BREAK_AWAY_DEPTH and capped by BREAK_AWAY_MAX_DEPTH (default 3), returning an error at the cap."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8d853376968fb336d714ae6a88d4643fd4b555ef3055ef54406398506ee49bd",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L110-L110"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L101-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_065d68c06d63e9a4e632f1ae38930a32c3a311c0df6ae83d5e62fa196d5974d9",
+        "slc_5a6d2bb61af5f49157d6b3eaf69179bc328e7b54abeb0946e92223c5772dd865"
+      ],
+      "text": "An agents.jsonl registry records spawn, start, and done events across parent and child agents, and done records carry status (ok/error) and stop_reason."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_24110e2b6ad40a5cd2af708ac128f94a4a5bae1af4fa4efac8baad657674fe23",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L80-L80"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 87,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L82-L87"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3500f8bd8f3234613dbe6d34d7a046d85a21986b0eea54c842aa63652ac7ae60",
+        "slc_78eebc59e8abf75a139a47fa39ed7bd8b38ee48469aebfa46fbafb73674e35ce",
+        "slc_7d302edfb23c6a4a369ae157fa5f975c28fed86c3985eebe5b14377caaf694d8"
+      ],
+      "text": "The agent supports self-modification: editing tools.ts, policy.ts, or system.txt then SIGHUP or /reload hot-reloads via cache-busted dynamic import, while SIGUSR2 or /restart exits with code 42 so a wrapper relaunches it (up to 20 times)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a78d355f451c898cb1b42259bbf50d5956c3c621ed442ee069d272bb62380ab4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 141,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L139-L141"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06835fde5059fb2597e3e4898dc1208ace9ad920cfed67f2c7b54114671f17ba"
+      ],
+      "text": "In the compiled binary, self-modification and hot-reload do not work: SIGHUP warns instead of reloading and /reload reports failure, since the binary is a frozen snapshot; rebuilding is required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd29cd1d6a68a4dfdc276cb6a7ec06cc2f9a19a40599417d5974e2509b806e31",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L9-L9"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 15,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L14-L15"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 128,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L128-L128"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+          "line_end": 22,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md#L19-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_80396741f0a3afc31178995c273f64212c3b515d8fe20c255f5e70ff8575d4be",
+        "slc_9b313425a438967214fe616d9283e3266cf1f2e9c4f225ef0b9b8db3663d2587",
+        "slc_d558eef685871dfcac646f34aadc690bb236046c60f9e518de319ae3061cf791",
+        "slc_dab9936c1e1cd339c06b29b14c29fb7bd3039237ec75457583d5feef62fe549b"
+      ],
+      "text": "The project targets Bun (bun install, bun src/index.ts, bun build --compile producing a ~61 MB self-contained binary); the plan lists Bun 1.3.14 and TypeScript as the tech stack."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_def100601a9493d34fb9b469aae6b38d92d41ab5fea815d780066a84f748203d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 22,
+          "line_start": 15,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L15-L22"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L37-L37"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L56-L56"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L73-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_389381ce928222229fc976891ac2d401d5da70c9b2048965fbbd120639153614",
+        "slc_4190ad981f20d933ceccd50ee0f9f0b6462b5b55f23b7744490c8bd0ab130a17",
+        "slc_9ae05656640db1f36b0dbeae5f6ead4716abe6d9d3e2c85b2972c06684361526",
+        "slc_f0f477944fff2c5644c306c08bd54c1bce200bd7ad9bb408e9eeb3bc5ea92ae2"
+      ],
+      "text": "Repository development practice: the implementation plan mandates TDD (write failing test, verify failure, implement, verify pass), conventional commits with a Claude-Session trailer, bun test staying green (80+ tests), no mocks of own code, stdout purity, and .env never committed or printed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e067d5adb55ab124b76bb7a40a282b8115fe72135021c5ba8a824b36a6bbe04f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1836b5121d50487374cd573ea18b274f11d49bafba63fb19b6321f94d7d98699"
+      ],
+      "text": "Repository development practice: the plan document instructs agentic workers to use superpowers:subagent-driven-development or superpowers:executing-plans to implement tasks with checkbox tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c8c7de48fd125368cd9eb1d20e7d8bb28a1094fc3e217e006d9487a1efc8cf4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L7-L7"
+        },
+        {
+          "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+          "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+          "repository": "2389-research/breakaway-agent",
+          "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dce27a76820b967aa2a5f6066b38bee2c747356d59c675dc7fc51d3c464f5b1",
+        "slc_f4e964fbd17780d8eeeb922d548734a6cdc386b5128d70d07365c81a396f2be1"
+      ],
+      "text": "The plan's architecture detects compiled-binary mode via import.meta.dir starting with /$bunfs/, redirecting system prompt, transcripts, and spawn commands to writable paths while leaving source mode untouched."
+    }
+  ],
+  "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 143,
+        "path": "README.md",
+        "size": 8131
+      },
+      {
+        "lines": 45,
+        "path": "gotchas.md",
+        "size": 21097
+      },
+      {
+        "lines": 384,
+        "path": "system.txt",
+        "size": 13089
+      },
+      {
+        "lines": 30,
+        "path": "docs/plans/tiny-agent/context.md",
+        "size": 1452
+      },
+      {
+        "lines": 819,
+        "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+        "size": 32031
+      },
+      {
+        "lines": 264,
+        "path": "docs/superpowers/specs/2026-08-31-attention-child-context-and-blocked-design.md",
+        "size": 16826
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/superpowers/plans/2026-08-31-attention-child-context-and-blocked.md",
+        "reason": "byte-budget",
+        "size": 68186
+      },
+      {
+        "path": "docs/plans/tiny-agent/panel/personas.md",
+        "reason": "file-budget",
+        "size": 965
+      },
+      {
+        "path": "docs/plans/tiny-agent/panel/review-panel.md",
+        "reason": "file-budget",
+        "size": 918
+      },
+      {
+        "path": "docs/plans/tiny-agent/variants/result.md",
+        "reason": "file-budget",
+        "size": 6722
+      },
+      {
+        "path": "docs/plans/tiny-agent/panel/proposals/gus.md",
+        "reason": "file-budget",
+        "size": 1245
+      },
+      {
+        "path": "docs/plans/tiny-agent/panel/proposals/marisol.md",
+        "reason": "file-budget",
+        "size": 1481
+      },
+      {
+        "path": "docs/plans/tiny-agent/panel/proposals/roxy.md",
+        "reason": "file-budget",
+        "size": 1384
+      },
+      {
+        "path": "docs/plans/tiny-agent/panel/proposals/vex.md",
+        "reason": "file-budget",
+        "size": 1499
+      },
+      {
+        "path": "docs/plans/tiny-agent/panel/proposals/zip.md",
+        "reason": "file-budget",
+        "size": 948
+      },
+      {
+        "path": "docs/plans/tiny-agent/variants/variant-flash-hardened/approach.md",
+        "reason": "file-budget",
+        "size": 2084
+      },
+      {
+        "path": "docs/plans/tiny-agent/variants/variant-one-file/approach.md",
+        "reason": "file-budget",
+        "size": 1356
+      },
+      {
+        "path": "docs/plans/tiny-agent/variants/variant-seams/approach.md",
+        "reason": "file-budget",
+        "size": 1771
+      },
+      {
+        "path": "docs/plans/tiny-agent/variants/variant-unix-filter/approach.md",
+        "reason": "file-budget",
+        "size": 1813
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5929
+      }
+    ],
+    "omitted_count": 14,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 63,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 20,
+      "complete": false,
+      "omitted": 14,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_9d0e4ec897a750ffaba88c276ea89699",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/breakaway-agent/a426c399d50f8a478752a1beb776a3eb264c2b70/fa31829804eca3a3/manifest.json",
+  "package_id": "pkg_e25208d37cec2a3653683b774618bee28dd5853234e542e0ec80319258a4345b",
+  "repo": "2389-research/breakaway-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2fc81267923526c50509809d4975679c48724b530877401d242a59713d69cabe",
+  "snapshot_id": "fa31829804eca3a3",
+  "sources": [
+    {
+      "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+      "git_sha": "15642abf772f67a734c02b241fe238e72cb95e1b",
+      "lines": 143,
+      "path": "README.md",
+      "repository": "2389-research/breakaway-agent",
+      "sha256": "709a55cd694df941b72d933feeb6bf9893bb54b78d53239348fa0c216b1bb3d4",
+      "source_id": "src_792f0e2b9dc8533d90a9adb9f0b97f95",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/README.md"
+    },
+    {
+      "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+      "git_sha": "61da98c75a0844a6676b53b1eac10a5cdfac2fea",
+      "lines": 30,
+      "path": "docs/plans/tiny-agent/context.md",
+      "repository": "2389-research/breakaway-agent",
+      "sha256": "4090b01bea8318cadbbea117131e55023040fde4d2bcb551ef3537db2f1f4878",
+      "source_id": "src_8109c6ff73715e9f99ff2b3b1d6e6360",
+      "stored": "context.md-94640b65cefc.md",
+      "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/plans/tiny-agent/context.md"
+    },
+    {
+      "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+      "git_sha": "fd144ff43539f490c70b958a60e8dcfd86380520",
+      "lines": 819,
+      "path": "docs/superpowers/plans/2026-08-30-first-class-binary.md",
+      "repository": "2389-research/breakaway-agent",
+      "sha256": "2d0a2f4e73f3cb2a0eae0c8e4ecaf2d9b33ba6e50d5491458473650f7ab55e0c",
+      "source_id": "src_d239a3e42d285207a0238fa49a08690e",
+      "stored": "2026-08-30-first-class-binary.md-cf33cf689d1a.md",
+      "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/plans/2026-08-30-first-class-binary.md"
+    },
+    {
+      "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+      "git_sha": "5a23de7569caa222be3d9a078c7ee300302f0e57",
+      "lines": 264,
+      "path": "docs/superpowers/specs/2026-08-31-attention-child-context-and-blocked-design.md",
+      "repository": "2389-research/breakaway-agent",
+      "sha256": "2762d1b497b5c120c71646725eef284125a1a453a195d33b5b4af1b67b60ce95",
+      "source_id": "src_18876d7312c1581191ef594d7ba2f864",
+      "stored": "2026-08-31-attention-child-context-and-b-9243c80214a8.md",
+      "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/docs/superpowers/specs/2026-08-31-attention-child-context-and-blocked-design.md"
+    },
+    {
+      "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+      "git_sha": "92028c23853303b725e795920a05a787a0b32ed7",
+      "lines": 45,
+      "path": "gotchas.md",
+      "repository": "2389-research/breakaway-agent",
+      "sha256": "f553ac8d0dc3f988914496fb2e7a9b5aec53eb4cdfc3658b46e7800f9b99db0a",
+      "source_id": "src_cd92a2da5b77520aa21f902e862dccae",
+      "stored": "gotchas.md-073a031c919e.md",
+      "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/gotchas.md"
+    },
+    {
+      "commit": "a426c399d50f8a478752a1beb776a3eb264c2b70",
+      "git_sha": "6177338d3f7a54691c656d3a2b7f946a929cee75",
+      "lines": 384,
+      "path": "system.txt",
+      "repository": "2389-research/breakaway-agent",
+      "sha256": "277809103966170dad7155a1d8b9d6a68ccedc807c9ee43a734b9ac9c954f625",
+      "source_id": "src_d01d38dd8b90541593cd6aca2858d8a6",
+      "stored": "system.txt-e97cf6765566.txt",
+      "url": "https://github.com/2389-research/breakaway-agent/blob/a426c399d50f8a478752a1beb776a3eb264c2b70/system.txt"
+    }
+  ],
+  "summary": "break-away is a small, hackable Bun/TypeScript code agent with a policy-blind loop, five tools, subagent spawning, and no permission guardrails; the snapshot also includes an implementation plan for making the compiled binary first-class. Evidence coverage: 151 of 387 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

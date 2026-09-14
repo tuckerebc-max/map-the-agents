@@ -1,0 +1,648 @@
+{
+  "applied_operation_id": "op_6984be3f4f0e4bc2ae056661d8b32972",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab15aab1a20e5dcd259cc6632555f753b00a4986a5bfbb32e8518c12b3b71e87",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L42-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_908e4f9c5fa2e2d1531c095b5e62848a9038b4c61df9f7d466c10daafa720f22"
+      ],
+      "text": "MetaGPT takes a one-line requirement as input and outputs artifacts such as user stories, competitive analysis, requirements, data structures, APIs, and documents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee0bf87e7958b9e6e6c4768e142b2f5813035055eb90a93bdff5f15f4500486d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L42-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_908e4f9c5fa2e2d1531c095b5e62848a9038b4c61df9f7d466c10daafa720f22"
+      ],
+      "text": "Internally the system models a software company with product manager, architect, project manager, and engineer roles orchestrated via SOPs, summarized by the philosophy 'Code = SOP(Team)'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_963905395c9f1dde28c904350d4c6a38f68edea0b737bba4ddb5301db8e2c355",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 92,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L90-L92"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L88-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b18646c06be6e0c8fa6f19f14335b452ea2e8b29e15c6db37817e50a057aa0cf",
+        "slc_c23efe26f76281ae5e45517a1496ef58dd58ef93d6ed5d2cf1c18aaf712bc733"
+      ],
+      "text": "The product exposes a CLI: running `metagpt \"Create a 2048 game\"` generates a repository in ./workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd843948ea7ceb4160ab60df2728d0dd571866c25d1973d08b0811a7719b102c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 102,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L100-L102"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 98,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L96-L98"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L94-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04ee06cca527a63acbbd8f4e52eeb79f7cffbf0e23068162023194c2a6c1c223",
+        "slc_4e2bf239debe2fcd67dea6b6a6c8e1a27d2a7e322380ee82cde6bf061aba9b20",
+        "slc_50e2f1fc0d5764617d06daf7f6f1dd8f1523036e6f56d6e636a935bacd5c510e"
+      ],
+      "text": "MetaGPT can also be used as a Python library via `metagpt.software_company.generate_repo`, which returns a ProjectRepo whose structure can be printed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e7551934ea117c3f98cd03e416d2af2727ac1efb137fa221ab5c642eabc6cf3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 112,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L110-L112"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L104-L104"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L106-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_953152ec6c1eb5fde9d4e41b091ba44391df6da920829aec7fe8422f75476efc",
+        "slc_affe84e8a679b68009ff1614f4cc92f6d20fe2d7c0b4c87430354cca1f5aa630",
+        "slc_e603c8f32404ecd9ecb24462e93fba242da1e57f967a5995129fa2da8993a62b"
+      ],
+      "text": "A DataInterpreter role (metagpt.roles.di.data_interpreter) can be run asynchronously with a natural-language task such as analyzing the sklearn Iris dataset with a plot."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a064ad78d4e9c3be24b97956392ef696a38d8730b5120f2c65f0a97519f8795e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 84,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L78-L84"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 74,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L73-L74"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L76-L76"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 71,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L70-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0817de0dd1b696eb439dd4c2638a6229f968c75799d3fe6a40feddf5817d4102",
+        "slc_730d515e8eb6148b8f17fb8033d3145e8088bc5e2b53d14b62cf1194127a3336",
+        "slc_ad544efe177125518206919cd7bab1bb8f99bd8bf2f3784e336259a5958c691d",
+        "slc_fb76097f9769e1d3c5c56cb028a64a5da003149e4bb92759deb2770b2d52893f"
+      ],
+      "text": "Configuration is initialized with `metagpt --init-config`, creating ~/.metagpt/config2.yaml which users edit; the example config supports api_type values like openai, azure, ollama, and groq with model, base_url, and api_key fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b8736027d5d31874c6dfd5bbfc7c6ef3ad538b94d632943ad10beb984404265",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 58,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L57-L58"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 66,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L65-L66"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 55,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L54-L55"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54043ea958b957b8c0feb64b569de6ecc7822bb4b58bbf11199ae890e6b61a0f",
+        "slc_720c5960db747b257f57046cf5711e2dfe5dc934d3e3678e6976cef8a5d1f34c",
+        "slc_b7206d1483e4285ef7b47ad589c205226649ab205362e7461ba052afdc4a2a99",
+        "slc_c6d240e69b7b24de902bc7d8dc7099fe76ad861928ec215a25b1ddf4ca0291c7"
+      ],
+      "text": "The README requires Python 3.9 or later but below 3.12, and instructs installing node and pnpm before actual use; installation is possible via pip, an editable git clone, or Docker."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99fdb809afa7d3d4c89c3bea16d5a9c2c2c284c8673c4817c91b0fce6af9cecc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "e6eaf3e094c5ab25e522b3218710311da60181ad",
+          "line_end": 59,
+          "line_start": 56,
+          "path": "docs/README_CN.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/README_CN.md#L56-L59"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "e6eaf3e094c5ab25e522b3218710311da60181ad",
+          "line_end": 68,
+          "line_start": 62,
+          "path": "docs/README_CN.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/README_CN.md#L62-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b3749fe8acd1d75bc51ef89de71526e544c2d877bc8b2815ac08bdfcce37d796",
+        "slc_d76263d61e21e0df5f4cd1a8c1d9b69bf070bd1dc4b036b16a48bee00cdd97fc"
+      ],
+      "text": "A Docker workflow is documented: pulling metagpt/metagpt:latest, mounting config2.yaml and a workspace directory, and running a prompt inside the container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd704caf7d906bc1ffa041557c9430b2f1386eeb70ac695f53c47a609aa35ed4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "f4c5fff15211d4588cbd38317e5ee5bc703b0cf3",
+          "line_end": 93,
+          "line_start": 40,
+          "path": "docs/FAQ-EN.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/FAQ-EN.md#L40-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b8dae53f79d780bfbeb6ee3fbf49de9265ee18db7bca03a66e54c32a0aca469f"
+      ],
+      "text": "Per the FAQ, incremental/differential updates (--inc with project path or name), multiple programming languages, and multiple natural languages are supported only in experimental versions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0d51138e9165e81452f9a7dbc0964e6fa601bb1b272c45eca158b60eb7bc63d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "f4c5fff15211d4588cbd38317e5ee5bc703b0cf3",
+          "line_end": 93,
+          "line_start": 40,
+          "path": "docs/FAQ-EN.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/FAQ-EN.md#L40-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b8dae53f79d780bfbeb6ee3fbf49de9265ee18db7bca03a66e54c32a0aca469f"
+      ],
+      "text": "The FAQ states no quantitative success-rate analysis has been done, though gpt-4-turbo code generation reportedly succeeds significantly more often than gpt-3.5-turbo, and loading existing large projects is described as very difficult."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf7a281f5f1048638a9e09ddbfdeb3c9e6af2d3bb23a8ca96f1db8ef5432c36c",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "75ab8b5bf4e21f28de47a2ec7f3f4fbcaf71fd43",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/NEWS.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/NEWS.md#L3-L3"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 175,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L167-L175"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+          "line_end": 20,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md#L16-L20"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "c93a260656d557d903696e700dfa160d1c9278ba",
+          "line_end": 60,
+          "line_start": 10,
+          "path": "docs/ACADEMIC_WORK.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/ACADEMIC_WORK.md#L10-L60"
+        },
+        {
+          "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+          "git_sha": "75ab8b5bf4e21f28de47a2ec7f3f4fbcaf71fd43",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "docs/NEWS.md",
+          "repository": "foundationagents/metagpt",
+          "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/NEWS.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1aaa168c693b09e8f71b1671432ae03b21110d34c028e44e79ad185f2829ea81",
+        "slc_3279bbe4f337ed4070957cfa42b8c09775dcff8e1988aacdffed4fa63f4f7649",
+        "slc_d1883ea61025a48b49dff3607ccf25bdc2927555d818be5ea2e6da4b2dab418a",
+        "slc_ead2de40c1ea48a9a679bfcfc5971d9ac9794f9e573e768dcb2cb2f07684fa6a",
+        "slc_f326981fadae5b2d7f1b3fc893d3eb74261b6f90778796449efef4afb8fd557d"
+      ],
+      "text": "The project is MIT-licensed, open-sourced June 2023, and its ICLR 2024 paper on multi-agent collaborative meta programming is cited alongside related work such as AFlow, SPO, AOT, FACT, and SELA."
+    }
+  ],
+  "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 177,
+        "path": "README.md",
+        "size": 8215
+      },
+      {
+        "lines": 90,
+        "path": "requirements.txt",
+        "size": 2194
+      },
+      {
+        "lines": 60,
+        "path": "docs/ACADEMIC_WORK.md",
+        "size": 3286
+      },
+      {
+        "lines": 93,
+        "path": "docs/FAQ-EN.md",
+        "size": 8624
+      },
+      {
+        "lines": 22,
+        "path": "docs/NEWS.md",
+        "size": 2076
+      },
+      {
+        "lines": 131,
+        "path": "docs/README_CN.md",
+        "size": 6366
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/README_FR.md",
+        "reason": "file-budget",
+        "size": 11569
+      },
+      {
+        "path": "docs/README_JA.md",
+        "reason": "file-budget",
+        "size": 13341
+      },
+      {
+        "path": "docs/ROADMAP.md",
+        "reason": "file-budget",
+        "size": 4518
+      },
+      {
+        "path": "docs/install/cli_install.md",
+        "reason": "file-budget",
+        "size": 3786
+      },
+      {
+        "path": "docs/install/cli_install_cn.md",
+        "reason": "file-budget",
+        "size": 2343
+      },
+      {
+        "path": "docs/install/docker_install.md",
+        "reason": "file-budget",
+        "size": 1551
+      },
+      {
+        "path": "docs/install/docker_install_cn.md",
+        "reason": "file-budget",
+        "size": 1489
+      },
+      {
+        "path": "docs/tutorial/usage.md",
+        "reason": "file-budget",
+        "size": 7911
+      },
+      {
+        "path": "docs/tutorial/usage_cn.md",
+        "reason": "file-budget",
+        "size": 7815
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 322
+      }
+    ],
+    "omitted_count": 10,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1255,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 16,
+      "complete": false,
+      "omitted": 10,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_6290e3e5496459d9a9180cfa0551f310",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/foundationagents/metagpt/11cdf466d042aece04fc6cfd13b28e1a70341b1f/32a1dc0084829e9e/manifest.json",
+  "package_id": "pkg_7f6a0a4fb0494b9d4ad7c85df23a1950096b7689b959fe191de6f5c8d0d9769e",
+  "repo": "foundationagents/metagpt",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "aa8d3c688a04fbc4c72f3e6427897acfbc67e221c98f321e71795e569ba24be1",
+  "snapshot_id": "32a1dc0084829e9e",
+  "sources": [
+    {
+      "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+      "git_sha": "080c02cd99015ca01f5db2c1063473fc22939bec",
+      "lines": 177,
+      "path": "README.md",
+      "repository": "foundationagents/metagpt",
+      "sha256": "c3fc0ecd674161a7f5fe858d738ba5f02e2048d68190cefc45f5149f40daa962",
+      "source_id": "src_de73073561d453b4aaa21d8d677387a3",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/README.md"
+    },
+    {
+      "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+      "git_sha": "c93a260656d557d903696e700dfa160d1c9278ba",
+      "lines": 60,
+      "path": "docs/ACADEMIC_WORK.md",
+      "repository": "foundationagents/metagpt",
+      "sha256": "2af3d4f69a701e5dd7a0029cf18e0cb2e446531b9f121fb36db3d6d2192e7958",
+      "source_id": "src_422f5425d4d259f7af5caf66649071a7",
+      "stored": "academic_work.md-a896a198a9d2.md",
+      "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/ACADEMIC_WORK.md"
+    },
+    {
+      "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+      "git_sha": "f4c5fff15211d4588cbd38317e5ee5bc703b0cf3",
+      "lines": 93,
+      "path": "docs/FAQ-EN.md",
+      "repository": "foundationagents/metagpt",
+      "sha256": "054e72d4bfd600aac90e9ffe0b85b8bc0aaca52a8bd0b5d818e12bb6f3522d22",
+      "source_id": "src_5d2d9a71369c5bde97cdbd9bd14505e9",
+      "stored": "faq-en.md-9341e25cb6cc.md",
+      "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/FAQ-EN.md"
+    },
+    {
+      "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+      "git_sha": "75ab8b5bf4e21f28de47a2ec7f3f4fbcaf71fd43",
+      "lines": 22,
+      "path": "docs/NEWS.md",
+      "repository": "foundationagents/metagpt",
+      "sha256": "f154a95d512992f1e2b586581d18eb8577b22c47e525807d3fd4d3dffce48108",
+      "source_id": "src_fedc9ba74ed75a85994d87da9498ad60",
+      "stored": "news.md-d5063d9920e2.md",
+      "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/NEWS.md"
+    },
+    {
+      "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+      "git_sha": "e6eaf3e094c5ab25e522b3218710311da60181ad",
+      "lines": 131,
+      "path": "docs/README_CN.md",
+      "repository": "foundationagents/metagpt",
+      "sha256": "2fcc531bc0548c0f20af0129a4e5ea15fedcdd88ecb4544ffdb18af0c8ad4564",
+      "source_id": "src_aab6638eae11550b9a7f6e014396658c",
+      "stored": "readme_cn.md-1cfbee3bb872.md",
+      "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/docs/README_CN.md"
+    },
+    {
+      "commit": "11cdf466d042aece04fc6cfd13b28e1a70341b1f",
+      "git_sha": "39fe0c6111556b5bb1b575cefa268beb68604a57",
+      "lines": 90,
+      "path": "requirements.txt",
+      "repository": "foundationagents/metagpt",
+      "sha256": "c61de33a5a857172ebab7b731e7545f48b8b8b89c2df0c1d97002456b7f843d1",
+      "source_id": "src_1a0f366973465acbab3f78e86fd97255",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/FoundationAgents/MetaGPT/blob/11cdf466d042aece04fc6cfd13b28e1a70341b1f/requirements.txt"
+    }
+  ],
+  "summary": "MetaGPT takes a one-line requirement as input and outputs artifacts such as user stories, competitive analysis, requirements, data structures, APIs, and documents. Internally the system models a software company with product manager, architect, project manager, and engineer roles orchestrated via SOPs, summarized by the philosophy 'Code = SOP(Team)'.",
+  "superseded_claim_ids": []
+}

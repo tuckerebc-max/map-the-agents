@@ -1,0 +1,492 @@
+{
+  "applied_operation_id": "op_8fd12ba8f0d243b8900ea83c3268e98e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_03233ce2afee4b086aee14b66554b2e553394ef4bafdb6866179056f22afbbb7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L13-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69e0551eb4a52248e7deb57bab06193424a5ac40b34109df1f33d219a1db1288"
+      ],
+      "text": "Grok Build runs as a full-screen terminal TUI that can edit files, execute shell commands, search the web, and manage long-running tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b10d053ad46e68b0966a9cb4e47e5105824628f9f06660764d87482cd8b2323d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L13-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69e0551eb4a52248e7deb57bab06193424a5ac40b34109df1f33d219a1db1288"
+      ],
+      "text": "The agent can run interactively, headlessly for scripting/CI, or embedded in editors via the Agent Client Protocol (ACP)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec03aaed84c67c35bd51b479b0a242f82fbf0be9e43eed559f5906636b766d1b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L31-L32"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 106,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L97-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e44c80a8eaa8f0f9ba19763da860b0e66b094c1a0063e6c9e4d344a872338f3",
+        "slc_234d5b3b2cc2084f1da2e687342b3abc404beee2c277d4e32b6c73f3e4a805d8"
+      ],
+      "text": "The repo contains Rust source for the grok CLI/TUI and agent runtime, with crates for the TUI, agent runtime, tools, and workspace (filesystem, VCS, checkpoints)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e763dc42fcec493521723695da5a87096392782b654b9c229f3e73eb56a4d2ba",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 62,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L58-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e3d5998f9a9651d51f0a5e35c88ee48ac39cd4e0ba47fd3a8591dc1a246eb746"
+      ],
+      "text": "Building from source requires a Rust toolchain pinned by rust-toolchain.toml and DotSlash so hermetic tools like bin/protoc can run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28bc28297f9e61b03eca1e73dc4ed9bd1bc73cf082bafaa099cc32669816fc18",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 120,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L115-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55d3ca81b4003bb75264d01280d1c511aa64881a488d4662d1c29b52c4a38001"
+      ],
+      "text": "Repository development practice: per-crate cargo check/test/clippy and cargo fmt are the documented build, test, and lint commands; clippy.toml and rustfmt.toml sit at the repo root."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a50abf636087a4f8f677e787100648d8b0107823a0bfd1e5e956f63b03280dc0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4556ca34e0b25b35e4edba8ebcc5e3a21a19c747",
+          "line_end": 8,
+          "line_start": 6,
+          "path": "CONTRIBUTING.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/CONTRIBUTING.md#L6-L8"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4556ca34e0b25b35e4edba8ebcc5e3a21a19c747",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "CONTRIBUTING.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/CONTRIBUTING.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45457941e41e5dc40f4d6f74797e3a25dd86b07edae4e629644c878fdd59ee2d",
+        "slc_a82402e7cb95eb6f4e711c607938b32d3ae10a6036f37bd780d8902576755c9f"
+      ],
+      "text": "Repository development practice: external pull requests and unsolicited patches are not accepted; the public tree exists for transparency and local builds under Apache 2.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dad7feef462f57480a32a7119937d7a5b60cfc4038dc3a74efeaa35607f82ea5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 111,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L108-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e83fbd15c94d30ce29ea563b67f4fd00a31cdaa4a74a533bd0f07aa413bbad15"
+      ],
+      "text": "Repository development practice: the root Cargo.toml is generated and should be treated as read-only; contributors should edit per-crate Cargo.toml files instead."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6179ddee55b5672cb65474f5e6b4344705d74e621a5ecf91d875bf23c90675c9",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 73,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L70-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_165316054b5f75b5c1780c519d6a2b228d62268cbfbe2368bf45d6f725c1be9a"
+      ],
+      "text": "Windows builds of the project are described as best-effort and not currently tested from this tree; macOS and Linux are supported build hosts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8dd4d24ebb08df51505872ed9d207ba4315bd1281035babda6f735266b9b232e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 106,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L97-L106"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 140,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L134-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_234d5b3b2cc2084f1da2e687342b3abc404beee2c277d4e32b6c73f3e4a805d8",
+        "slc_ca12af9d00ac65f5705a3556b503ccfe098a44ac1bc67c9bf28f8044bc191270"
+      ],
+      "text": "Third-party notices indicate in-tree source ports of openai/codex and sst/opencode tool implementations, plus a vendored Mermaid diagram stack under third_party/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ca8c483a7aa7638a7fbf1cfe28d7ba52eb947d75e0bca822df4c597d3812969",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "a6be5dbc3b2e54e225e820fdac3a801ed7caa073",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "SECURITY.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/SECURITY.md#L3-L3"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "a6be5dbc3b2e54e225e820fdac3a801ed7caa073",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "SECURITY.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/SECURITY.md#L7-L7"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "a6be5dbc3b2e54e225e820fdac3a801ed7caa073",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "SECURITY.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/SECURITY.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dffa7f83cffdbe2cf26b3aa67d8a81bd3eba946c30ad20f56400995f6d8a5d9",
+        "slc_317a40f37337cdae75ec70900c0d8a8072b7e5767cb76794ee93db1a699824fe",
+        "slc_a3d7bdb07f724bd529833ee3718f0fe8d45a783bd6d55e7b41f497259c47301a"
+      ],
+      "text": "Repository development practice: security vulnerabilities must be reported via the HackerOne program at hackerone.com/x, not through public GitHub issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f043b536a806d0a27e93f8454399ebf157d50c0a70744fa116f647a65324721f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L43-L43"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 83,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L81-L83"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 49,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L45-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d4eae4dddef728d7695e3a0d7c8cc93afd62032027d73d42922ae50eaf0dce5",
+        "slc_512e8552e670c89146d44fcc3acdac0c0fc868fb6f61aac7b1e372b7e7c5e718",
+        "slc_d67126aedc62a1c0a04d2a85ec9c4076c3489ffd86bc32d762b48c66688ae075"
+      ],
+      "text": "Prebuilt binaries are published for macOS, Linux, and Windows via install scripts, and the binary authenticates by opening a browser on first launch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d949c7c81fa853fd90900567996a059eaa3712bf1253b0d9ea78955fc67042d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L31-L32"
+        },
+        {
+          "commit": "37949780c144e37df692e3d669051a21fec24f20",
+          "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+          "line_end": 35,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md#L34-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e44c80a8eaa8f0f9ba19763da860b0e66b094c1a0063e6c9e4d344a872338f3",
+        "slc_d899a1478aa18ca9c9ee25fec858e696475947b4ea1417d0e21f3f047592751f"
+      ],
+      "text": "The repository is periodically synced from the SpaceXAI monorepo, with a SOURCE_REV file recording the full monorepo commit SHA."
+    }
+  ],
+  "commit": "37949780c144e37df692e3d669051a21fec24f20",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 140,
+        "path": "README.md",
+        "size": 5757
+      },
+      {
+        "lines": 19,
+        "path": "CONTRIBUTING.md",
+        "size": 688
+      },
+      {
+        "lines": 7,
+        "path": "SECURITY.md",
+        "size": 166
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3797,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_6f2397051247570bb312763627706ca5",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/xai-org/grok-build/37949780c144e37df692e3d669051a21fec24f20/78b0646993cd1a4e/manifest.json",
+  "package_id": "pkg_76f84855c61250c7f562471cc366cc3a688bcbcb9009cd74dc0645197503c743",
+  "repo": "xai-org/grok-build",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "252c42a0dac6acea8a8c922e5a737dc4976622c4dc93501e0e610abaf171b101",
+  "snapshot_id": "78b0646993cd1a4e",
+  "sources": [
+    {
+      "commit": "37949780c144e37df692e3d669051a21fec24f20",
+      "git_sha": "4556ca34e0b25b35e4edba8ebcc5e3a21a19c747",
+      "lines": 19,
+      "path": "CONTRIBUTING.md",
+      "repository": "xai-org/grok-build",
+      "sha256": "5614dc7d16f6f4c93cc58f2b34ae544f2dbe085c31660d1e7c514966c52296ec",
+      "source_id": "src_a4cfe578f35b512dbe043b8fa4221e24",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/CONTRIBUTING.md"
+    },
+    {
+      "commit": "37949780c144e37df692e3d669051a21fec24f20",
+      "git_sha": "4569db83fe4fee02ba656f8eaa52db22e43e8e63",
+      "lines": 140,
+      "path": "README.md",
+      "repository": "xai-org/grok-build",
+      "sha256": "322066de9f5bc136295bd0ae4f1752cef3d8dcb1a8f9d88044609e7b6d7abcf7",
+      "source_id": "src_26b0312db21c5d4ea9381c6f6834725c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/README.md"
+    },
+    {
+      "commit": "37949780c144e37df692e3d669051a21fec24f20",
+      "git_sha": "a6be5dbc3b2e54e225e820fdac3a801ed7caa073",
+      "lines": 7,
+      "path": "SECURITY.md",
+      "repository": "xai-org/grok-build",
+      "sha256": "0344f1e31e09713f829a34f71a1dbdbe43f34ed455f19df770ab2deeb2028b35",
+      "source_id": "src_18856d29e30351e09acb64fac482a09c",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/xai-org/grok-build/blob/37949780c144e37df692e3d669051a21fec24f20/SECURITY.md"
+    }
+  ],
+  "summary": "The snapshot is README/CONTRIBUTING/SECURITY documentation for Grok Build, a Rust terminal AI coding agent (CLI/TUI) by SpaceXAI, with no source code slices included. Claims below are limited to what these files state.",
+  "superseded_claim_ids": []
+}

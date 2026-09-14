@@ -1,0 +1,741 @@
+{
+  "applied_operation_id": "op_0024526ced714ac1b47b0f98e6b39691",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6c319071be93e39acc6028b2c95c01675ea56733979472c08e65d3d5d8891fc",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L121-L121"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 43,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L39-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_571b1b289de7776926b2fa5947aa4cbbedbd20fbb438d918011e54fb8ffa66b3",
+        "slc_73fa268f114b2f4b00df12db4127bdc3e0a1734d7b9d21da6c31a3ff041f4af4"
+      ],
+      "text": "The brainstorm phase turns a one-line idea into an R-numbered spec with testable acceptance criteria, and every task must map to at least one R-number."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_696ada2127727a365c79c22631e5bfa307de7a143e6ae6eb0aa5e0e4aff4e957",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 64,
+          "line_start": 27,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L27-L64"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 43,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L39-L43"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36a591e48b65652c0bf4f617ffc273b45fd044bc2cbce55cc13f075c45491683",
+        "slc_73fa268f114b2f4b00df12db4127bdc3e0a1734d7b9d21da6c31a3ff041f4af4",
+        "slc_e7f3dcc3b564eb2958f5c976994724d6e726f29a93e2b207c10949b909bf907d"
+      ],
+      "text": "Tasks execute in their own git worktrees with TDD, and passing tasks are squash-merged atomically; a streaming topological scheduler dispatches tasks as soon as their dependencies complete."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88ab7ddbabbfd84bd3c844bcbf6949ce082fd9147a997987816ddb136a6c5a6b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f692596da5b878f86bd535aef0c22288f42fb58186ef696964a03530566efd1f"
+      ],
+      "text": "Loop state lives on disk in a .forge directory rather than in the conversation, so crashes, context resets, and OOMs can recover by restarting the state machine from disk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4466f295dd87052bbb8e2612d5e6539d4107514e336d52c9fb64ccd51145bb7e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 136,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L125-L136"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L138-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44ac48d664a6b0af5185e2b0eb19f70c0691162d24a710229bd58af6b22e19b2",
+        "slc_fbb3dcf3044486222414e9225341571d157bcba0a7b6465ed66c0cdc95c00c73"
+      ],
+      "text": "In gated (default) mode Forge pauses before installing new dependencies or calling paid APIs; full mode assumes prior consent for those, but both modes require explicit approval to push to a remote and refuse destructive git ops unless the spec requests them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc672e8177971df89a04bba9462ece25460b908b1047b3f2dade6df745b7ae96",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 66,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L62-L66"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 177,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L166-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_502591e7244a6637d655cae48949896e67398abdd81b24beaee8b807fc546bfa",
+        "slc_cf4d892b823bc373f6ff17903e6cf8616822c4b94ac9d81d34ece5a1b0a4c3a3"
+      ],
+      "text": "Users drive Forge through slash commands such as /forge brainstorm, /forge plan, /forge execute --autonomy full, plus read-only /forge watch and /forge status --json, and /forge resume for recovery."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbd0c35540ca633f028dc65e8f032c328568e2fedd1ed77189c18ace4180f505",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L115-L115"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L117-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c9c53214d3a409bd771b06c07b8a45ed87683063001f257b1fa023b9dd80630",
+        "slc_d087cc73e56f3bb725082870a9506fe136bb2f2ccf31634d12e1d95807465b81"
+      ],
+      "text": "Collaboration defines a transport interface (read, cas, del, list, publish/subscribe/sendTargeted) with two backends: Ably WebSocket pub/sub (sub-second) and a zero-setup polling backend over a git branch (~2.5s)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_158884c1c06613fbae3b1ea498ac501ce1122204075e3ceafef6cb79b45577d5",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L56-L56"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L49-L49"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 120,
+          "line_start": 117,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L117-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1854da4b5d85512d3be28a84f0af1de6263e298469cac7daaa929397a72e4045",
+        "slc_5712e0661781ea4da6838f06546e31cf84c2806a736fb73e7add7115a31083a3",
+        "slc_d087cc73e56f3bb725082870a9506fe136bb2f2ccf31634d12e1d95807465b81"
+      ],
+      "text": "Forge requires Claude Code v1.0.33+; the solo path needs no npm install, and Ably is an optional dependency only for multiplayer collaboration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_588e39db7c286b8c93bb7da4fa10d054f0796c34c399e4070238090e7e917fca",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 103,
+          "line_start": 96,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L96-L103"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L121-L121"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e499878c94507214126a64b1e58339c21b1ed38e37fefbbee0408165f599c00",
+        "slc_571b1b289de7776926b2fa5947aa4cbbedbd20fbb438d918011e54fb8ffa66b3"
+      ],
+      "text": "The pipeline is strictly sequential (brainstorm → plan → execute), enforced programmatically via an approval gate, frontier validation, and validateWorkflowPrerequisites(); users cannot skip phases or bypass the approval gate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4977431eac43653209ff0a689d311348494eb9135cbf0a43ea8e801e6828e2be",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 92,
+          "line_start": 85,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L85-L92"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 83,
+          "line_start": 76,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L76-L83"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+          "line_end": 74,
+          "line_start": 70,
+          "path": "docs/architecture.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md#L70-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a684e90f6ac2013d31301cac1e1a9343f3bcf04a28587bedd11d475e6b79491",
+        "slc_832213210a379d209462c3875fd3d6602c2f83d94e74eb65168f82212b3aab57",
+        "slc_bc227dc44095549237b06691c6def453011502529b7991be13f5e86f775725ca"
+      ],
+      "text": "Three cross-cutting skills run automatically across agents: Karpathy guardrails inlined into executor/reviewer/planner, graphify knowledge-graph integration, and DESIGN.md design-system support — the latter two degrade gracefully when their inputs are absent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3242efdd939c21cc39092d49baed1aa494578b6fcb95023d79531923b623a84e",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "01a156693820300d640ea6408a59352d168c4a52",
+          "line_end": 34,
+          "line_start": 33,
+          "path": "docs/caveman.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/caveman.md#L33-L34"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 162,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L154-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17049a3381b81b52090bfbef4a564b986224a3dcbacb68e0993d08bf7d55744b",
+        "slc_387790518f2f20305a44504ac3f5c66359744e252610d2a571c0c0bcddb01dd7"
+      ],
+      "text": "The docs report measured token-savings results for the product's optimization filters, including a real A/B run where filtering a git diff cut Claude token use from 59,600 to 42,402 (28.9% fewer), and caveman compression benchmarks of 26.8% prose reduction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_74e177d8ffb796d82c7a26823ea64e1acb904ef33835517ff19c10900941513a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 142,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L142-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e45e094bd53648135ff369bfa1381e5dc66bf2133b658e5430c72e9226425bf"
+      ],
+      "text": "The docs acknowledge that FORGE_COMPLETE only means tasks done, tests green, reviewer and verifier satisfied; a feature passing all four can still look broken in a browser because unit tests don't render pixels."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bfd22f57d63d5e22c703f937550a37f9a51d53257b9196c648c8eec54f58ba07",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 216,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L212-L216"
+        },
+        {
+          "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+          "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "lucasduys/forge",
+          "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md#L218-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dcc6333c062ffaa2b803a7252dfdb983f6d98aeca5a1af206e4398867faba27",
+        "slc_5fe7b204b3dfe38e8192eed55fd31c5d243af016a24a9a5e86773310b9b3fa31"
+      ],
+      "text": "Repository development practice: contributors fork, create a feature branch, make changes, run tests via node scripts/run-tests.cjs, and open a pull request, with details in CONTRIBUTING.md."
+    }
+  ],
+  "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 222,
+        "path": "README.md",
+        "size": 15355
+      },
+      {
+        "lines": 208,
+        "path": "docs/architecture.md",
+        "size": 13758
+      },
+      {
+        "lines": 63,
+        "path": "docs/configuration.md",
+        "size": 2516
+      },
+      {
+        "lines": 30,
+        "path": "docs/backpropagation.md",
+        "size": 2424
+      },
+      {
+        "lines": 36,
+        "path": "docs/budgets.md",
+        "size": 1294
+      },
+      {
+        "lines": 40,
+        "path": "docs/caveman.md",
+        "size": 1274
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/collaborate.md",
+        "reason": "file-budget",
+        "size": 8660
+      },
+      {
+        "path": "docs/commands.md",
+        "reason": "file-budget",
+        "size": 1828
+      },
+      {
+        "path": "docs/comparison.md",
+        "reason": "file-budget",
+        "size": 2475
+      },
+      {
+        "path": "docs/dashboard.md",
+        "reason": "file-budget",
+        "size": 8989
+      },
+      {
+        "path": "docs/headless.md",
+        "reason": "file-budget",
+        "size": 1800
+      },
+      {
+        "path": "docs/recovery.md",
+        "reason": "file-budget",
+        "size": 2320
+      },
+      {
+        "path": "docs/testing.md",
+        "reason": "file-budget",
+        "size": 2558
+      },
+      {
+        "path": "docs/verification.md",
+        "reason": "file-budget",
+        "size": 1375
+      },
+      {
+        "path": "docs/worktrees.md",
+        "reason": "file-budget",
+        "size": 1007
+      },
+      {
+        "path": "docs/audit/CLAIM_VS_REALITY.md",
+        "reason": "file-budget",
+        "size": 119060
+      },
+      {
+        "path": "docs/benchmarks/caveman-integration.md",
+        "reason": "file-budget",
+        "size": 5917
+      },
+      {
+        "path": "docs/benchmarks/streaming-dag-vs-task-dag.md",
+        "reason": "file-budget",
+        "size": 5584
+      },
+      {
+        "path": "docs/benchmarks/worktree-overhead.md",
+        "reason": "file-budget",
+        "size": 603
+      },
+      {
+        "path": "docs/mechanics/caveman-details.md",
+        "reason": "file-budget",
+        "size": 1831
+      },
+      {
+        "path": "docs/mechanics/commands-reference.md",
+        "reason": "file-budget",
+        "size": 1926
+      },
+      {
+        "path": "docs/mechanics/subsystem-reference.md",
+        "reason": "file-budget",
+        "size": 1739
+      },
+      {
+        "path": "docs/mechanics/token-savings.md",
+        "reason": "file-budget",
+        "size": 2490
+      },
+      {
+        "path": "docs/audit/mock-verify-evidence/README.md",
+        "reason": "file-budget",
+        "size": 4388
+      },
+      {
+        "path": "docs/audit/research/streaming-dag.md",
+        "reason": "file-budget",
+        "size": 12393
+      },
+      {
+        "path": "docs/superpowers/plans/2026-03-17-forge-implementation.md",
+        "reason": "file-budget",
+        "size": 70565
+      },
+      {
+        "path": "docs/superpowers/plans/collab-fix-frontier.md",
+        "reason": "file-budget",
+        "size": 2633
+      },
+      {
+        "path": "docs/superpowers/plans/forge-v03-gaps-frontier.md",
+        "reason": "file-budget",
+        "size": 4086
+      },
+      {
+        "path": "docs/superpowers/plans/frontier.md",
+        "reason": "file-budget",
+        "size": 9787
+      },
+      {
+        "path": "docs/superpowers/plans/mock-and-visual-verify-frontier.md",
+        "reason": "file-budget",
+        "size": 2232
+      },
+      {
+        "path": "docs/superpowers/specs/2026-03-17-forge-design.md",
+        "reason": "file-budget",
+        "size": 26244
+      },
+      {
+        "path": "docs/superpowers/specs/2026-04-09-tui-dashboard.md",
+        "reason": "file-budget",
+        "size": 11472
+      },
+      {
+        "path": "docs/superpowers/specs/spec-collab-fix.md",
+        "reason": "file-budget",
+        "size": 11443
+      },
+      {
+        "path": "docs/superpowers/specs/spec-collab-frontier.md",
+        "reason": "file-budget",
+        "size": 11103
+      },
+      {
+        "path": "docs/superpowers/specs/spec-collab.md",
+        "reason": "file-budget",
+        "size": 15336
+      },
+      {
+        "path": "docs/superpowers/specs/spec-forge-v03-gaps.md",
+        "reason": "file-budget",
+        "size": 19337
+      },
+      {
+        "path": "docs/superpowers/specs/spec-mock-and-visual-verify.md",
+        "reason": "file-budget",
+        "size": 6747
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5493
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 12094
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 848
+      },
+      {
+        "path": "docs/agents.md",
+        "reason": "file-budget",
+        "size": 2086
+      }
+    ],
+    "omitted_count": 35,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 257,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 41,
+      "complete": false,
+      "omitted": 35,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b847fc381d6d5890a52e328de8649ff9",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/lucasduys/forge/642c60b104f0d5dae9782dd4b54f12df407c9697/6c3a4dda31584cbd/manifest.json",
+  "package_id": "pkg_a6cd3b049aed74379e23df81f5b55e6e912e1b17c350737a82681ee55420054b",
+  "repo": "lucasduys/forge",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "591d4e931f9924508b44c2de996bf3b869deb4af10340d4bbf7e11b238cf4a09",
+  "snapshot_id": "6c3a4dda31584cbd",
+  "sources": [
+    {
+      "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+      "git_sha": "a861410c000049914f26f66761c1abf549176fa6",
+      "lines": 222,
+      "path": "README.md",
+      "repository": "lucasduys/forge",
+      "sha256": "3646e410d1e3fe29055c7c5d0a07e99260d467c8b028a6a6b7ad21a9f48fa960",
+      "source_id": "src_7c798626c2b65109885d832c1564a228",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/README.md"
+    },
+    {
+      "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+      "git_sha": "18cc3ac5b8ab789dd6d69ee503514df0f6a4c143",
+      "lines": 208,
+      "path": "docs/architecture.md",
+      "repository": "lucasduys/forge",
+      "sha256": "8c6ef50c252618b3473fb5065157206d559acd61bd4f4e17051abfdb1beb1826",
+      "source_id": "src_620021a5afdd50f68892029b6179b221",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/architecture.md"
+    },
+    {
+      "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+      "git_sha": "2d64c6980936078057b88c044b4b64dfb4a0361d",
+      "lines": 30,
+      "path": "docs/backpropagation.md",
+      "repository": "lucasduys/forge",
+      "sha256": "1eee2571f77709425bac27064e836111e0922ed9fe2fea54565f44fc5191cc75",
+      "source_id": "src_91341edd88bd501b92596799beb5538e",
+      "stored": "backpropagation.md-1742e17bcbff.md",
+      "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/backpropagation.md"
+    },
+    {
+      "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+      "git_sha": "87f8e1cbe5125b1a2ee9fed26880adbef1988527",
+      "lines": 36,
+      "path": "docs/budgets.md",
+      "repository": "lucasduys/forge",
+      "sha256": "557af44eda8ff97f9c01b105ebec7266b9b0b7f77cbe963e9e1c57c193c84119",
+      "source_id": "src_62f7881e7c755145b3df64526cbefec6",
+      "stored": "budgets.md-646ebe9c89c7.md",
+      "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/budgets.md"
+    },
+    {
+      "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+      "git_sha": "01a156693820300d640ea6408a59352d168c4a52",
+      "lines": 40,
+      "path": "docs/caveman.md",
+      "repository": "lucasduys/forge",
+      "sha256": "2223d23908c1a5a61462d24312c74b5e069f14c2ddadefcc69ebe9f5dd5351e6",
+      "source_id": "src_f89e15189e6b5c848c932a9b2ccc1488",
+      "stored": "caveman.md-5e3e826704ad.md",
+      "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/caveman.md"
+    },
+    {
+      "commit": "642c60b104f0d5dae9782dd4b54f12df407c9697",
+      "git_sha": "1351b3d080dc3a8239d0988be571b40b7e5b29aa",
+      "lines": 63,
+      "path": "docs/configuration.md",
+      "repository": "lucasduys/forge",
+      "sha256": "62a01389607757e8f0882bd6d6d099ea2cd4e804014809f733698d971f85d67d",
+      "source_id": "src_340b72ae65855292adb40a919fa35d57",
+      "stored": "configuration.md-17ed18489a95.md",
+      "url": "https://github.com/LucasDuys/forge/blob/642c60b104f0d5dae9782dd4b54f12df407c9697/docs/configuration.md"
+    }
+  ],
+  "summary": "Selected evidence records: The brainstorm phase turns a one-line idea into an R-numbered spec with testable acceptance criteria, and every task must map to at least one R-number. Tasks execute in their own git worktrees with TDD, and passing tasks are squash-merged atomically; a streaming topological scheduler dispatches tasks as soon as their dependencies complete.",
+  "superseded_claim_ids": []
+}

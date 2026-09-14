@@ -1,0 +1,621 @@
+{
+  "applied_operation_id": "op_e5f2c143cd764917a39945f4e34a6428",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_72ec5a38ad78b754541f1918afeae0ce3353e1c2f73dae817cca9e70248b941b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "7f38e2abd2cbbe3d88a975b9978b870536c02142",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/README.md#L32-L34"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "7f38e2abd2cbbe3d88a975b9978b870536c02142",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8ad947087a66d3fda15227f98fac1a18a5285c874c525cc2ef33bb262378af60",
+        "slc_ca81535470dd8a4ec9407c350484250088fc8d5170939f090f3bb3cad9bcb7e8"
+      ],
+      "text": "agent-sh is published as an npm package (`agent-sh`) with a license badge, installable globally via `npm install -g agent-sh`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c797267ff84e977963f684ad537fbf8a3b9a0d6a495cfec039f3491ce57f49ef",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "7f38e2abd2cbbe3d88a975b9978b870536c02142",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/README.md#L48-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7edf5aa09de0dffa0ff372c710cbe9cd195c3fb0399a8de77900956086f21028"
+      ],
+      "text": "The runtime requires Node.js 18+ and supports bash, zsh, and fish as host shells; other shells such as nushell are not yet wired up."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_761f9deeee81908f0ec6f7fdf178d4bd8daedaa8f19c8e542e1eba3b9e5a6c66",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "7f38e2abd2cbbe3d88a975b9978b870536c02142",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/README.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_103d367cd2eb90ed874b6d32f4fc1698440dd46228c260f5b9165c965cb35992"
+      ],
+      "text": "Native Windows (cmd.exe/PowerShell) is not supported as the host shell; the README recommends running inside WSL for the full interactive experience, while headless/library/ACP-bridge usage may work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_753604f7f83b0d94d5fdeff1e2a2572d13c6e276b53336223acda03ba53113b5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "134b58c13c1e2ab183e060ddfb32f663e425d5d1",
+          "line_end": 43,
+          "line_start": 9,
+          "path": "docs/architecture.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/architecture.md#L9-L43"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "134b58c13c1e2ab183e060ddfb32f663e425d5d1",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/architecture.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/architecture.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64ffb0263e5cc7ee4cd0ee1dd8f165a1fe8438b31d3e1fd39f2e5441250762fe",
+        "slc_eb6cc94d26a23193eba2f74c8a5f01d5ef3da76e1c3fd095257af3342833796d"
+      ],
+      "text": "The architecture is a pure kernel (`createCore()`) providing EventBus, HandlerRegistry, Compositor, multi-backend coordination, and a default cwd handler, with agent, shell, TUI, and providers all loaded as extensions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5792c66312ba36d97aaf6feb35e6458f98eac19d66c140ce8970b00519f94949",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b4105d9bd1fd64d0973021cfd6734dfd0573ef515d78be641b9ecc5bf7753af"
+      ],
+      "text": "The default backend `ash` resolves providers, configures an LlmClient, calls any OpenAI-compatible API directly, and executes tools in a loop until the LLM finishes; it only activates once an apiKey and model are resolved."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_24353849ad0ed947a8ad3f4840c791e69c33d4cc228fc4d3dae90461387469b5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 285,
+          "line_start": 280,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L280-L285"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 290,
+          "line_start": 287,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L287-L290"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 294,
+          "line_start": 292,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L292-L294"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_796070bc205e299f00197f67e6db572f60ea6119428c67a975264911f1d32886",
+        "slc_86748de6bcc4364920c4e03681f9df0994f0c0f57f2b02a70906dabac8495e13",
+        "slc_e5753a45aa1d19ba9ec09a7c5623b3549255a09fb384492634edbb0f8389ee72"
+      ],
+      "text": "Tools implement a `ToolDefinition` interface with name, description, JSON Schema input_schema, an execute function with optional streaming onChunk callback, and flags like modifiesFiles, readOnly, and showOutput."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_067578336e57aff5da169d9072c7647040d46ad411072e438f50e541efb240a8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 187,
+          "line_start": 177,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L177-L187"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 189,
+          "line_start": 189,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L189-L189"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c2ef859f0f39b833e277810b7c1b54ccad74187ac140ed450175785a0c6d7c4",
+        "slc_9f4f0de3bf3d4c99db508c9402773c8a8ca8b67671508b952d387f052f899973"
+      ],
+      "text": "Core tools include bash, read_file, write_file, edit_file, grep (via ripgrep), glob, ls, and list_skills; conversation_recall is registered by the rolling-history extension rather than being a core tool."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_255fef59932579011fbb349995b5c32192b222fe37186815f0789074119438aa",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 223,
+          "line_start": 223,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L223-L223"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 154,
+          "line_start": 154,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L154-L154"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 221,
+          "line_start": 221,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L221-L221"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_20165ca98635b28ac5c9c9b2d1f1c84f6150867d6125f0682830d35d0f52fbe3",
+        "slc_42f6254fc6f072fb4e5d6adf2f35077ed0e599c85d548bcc7fa1cb9aa1628977",
+        "slc_43b7714b75463ef2d331400bec48a725da14189851eb209f576fad8091db9ae0"
+      ],
+      "text": "The agent runs a tool loop with no hard iteration limit; side-effect-free tools run in parallel via Promise.all while side-effecting tools run sequentially, and results over maxResultBytes (default 100KB) are head+tail truncated."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b0a98f1549298b6ec64e89cb797ebfcfa19117dca8e14c2482e1a2ee22f2fe4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 163,
+          "line_start": 158,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L158-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21fc9cd4100c41b64184e1b6a8c315a3ca2415b6918447041074339adcac6190"
+      ],
+      "text": "By default every tool runs without gating ('yolo mode'); the kernel has no permission opinion, and gating extensions can interpose confirmation or policy checks via tool advisors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f3235d2e61cb0fcd90c541c743035609fc5f0683eb1477a21907406edde1be6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 356,
+          "line_start": 356,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L356-L356"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 38,
+          "line_start": 37,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L37-L38"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 350,
+          "line_start": 350,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L350-L350"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 341,
+          "line_start": 341,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L341-L341"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_782a7aa67790bedeec0781547e6248f13b6cfdb4eb628d191fd787bc53b37945",
+        "slc_b3f00d97d457eacd6e94ea0c14cb138a375ae2e5c3e645969810fb3d7d36059f",
+        "slc_bd1b89bee317238506de2004e3459b985a8e7b9cd5184c7b81063c9b61cf4405",
+        "slc_e06ef58dc0587994cfdb28a11f1151b443d6ac8b7f896cf3a9d8ede77fc83937"
+      ],
+      "text": "Conversation state is an OpenAI-compatible messages array; ash auto-compacts when estimated prompt tokens cross autoCompactThreshold (default 0.5) of the model's context window, and older turns are evicted to a persistent rolling-history store browsable via conversation_recall."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5153fe7e95e306e1ea78fea87d7fdc04b96c6cb12bf9b20409fccd6c616e5f20",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L104-L104"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 124,
+          "line_start": 122,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L122-L124"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L120-L120"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L82-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e72843d1e6ec7da6fa9a6a2629d64a62f1e29190fa96c385374daf0c3c7e019",
+        "slc_4e43af6fd4f78571fc1cfba9f89d89bec26afce6fc6e7fb04afc52b9495438b4",
+        "slc_7b2e70209c962da00275a617ebc069c51f2e50622de1b37bf208e3acbbe51c5d",
+        "slc_db335e3d7fbb4a5c1e8874191f1f6245741eae3011dfcc5ced294c0fdc52f3b2"
+      ],
+      "text": "Skills follow the Agent Skills standard: directories with a SKILL.md containing YAML frontmatter (required name and description); only metadata enters the system prompt, and the agent loads full content via read_file when needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_308942903fd7f609a53ce97e769f5c6d0f4e5f9994ea5876403db915cd756216",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+          "line_end": 187,
+          "line_start": 177,
+          "path": "docs/agent.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md#L177-L187"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "7f38e2abd2cbbe3d88a975b9978b870536c02142",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/README.md#L62-L62"
+        },
+        {
+          "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+          "git_sha": "7f38e2abd2cbbe3d88a975b9978b870536c02142",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "guanyilun/agent-sh",
+          "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c2ef859f0f39b833e277810b7c1b54ccad74187ac140ed450175785a0c6d7c4",
+        "slc_2739692662c45c93bbd90e310fb2713c4cceb5cc9d6398b888a6640148292db2",
+        "slc_a076f31e6259b875d19c2313282535ae654369ca36bf3cc707d07168587e689e"
+      ],
+      "text": "The bundled frontend is a shell on top of node-pty, and the grep tool searches file contents via ripgrep; ash works with any OpenAI-compatible API including built-in providers openrouter, openai, deepseek, ollama, zai-coding-plan, and opencode."
+    }
+  ],
+  "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 204,
+        "path": "README.md",
+        "size": 11223
+      },
+      {
+        "lines": 194,
+        "path": "docs/architecture.md",
+        "size": 14730
+      },
+      {
+        "lines": 400,
+        "path": "docs/agent.md",
+        "size": 24076
+      },
+      {
+        "lines": 200,
+        "path": "docs/context-management.md",
+        "size": 16830
+      },
+      {
+        "lines": 952,
+        "path": "docs/extensions.md",
+        "size": 50445
+      },
+      {
+        "lines": 14,
+        "path": "docs/README.md",
+        "size": 919
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/library.md",
+        "reason": "byte-budget",
+        "size": 6166
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 2626
+      },
+      {
+        "path": "docs/tui-composition.md",
+        "reason": "file-budget",
+        "size": 12206
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 14807
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 19342
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 29,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 276,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_8d1d325c20ce5a23a5a821bf38f73824",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/guanyilun/agent-sh/8038ae7730eb2978a43887fb9e1a7da7b409791d/a723232a0e326851/manifest.json",
+  "package_id": "pkg_7d7f0f82bfb5f8b9042d173c4bc229994c8fc9491e30c50c351ec64e235b4339",
+  "repo": "guanyilun/agent-sh",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "283c2955c130ded482e2b4010af2083df3ad180de6c476c2ef40eec52a00befc",
+  "snapshot_id": "a723232a0e326851",
+  "sources": [
+    {
+      "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+      "git_sha": "7f38e2abd2cbbe3d88a975b9978b870536c02142",
+      "lines": 204,
+      "path": "README.md",
+      "repository": "guanyilun/agent-sh",
+      "sha256": "89175dbd515471419434e57b80e1a67bd85b4091cce7829212b6fe31dd576466",
+      "source_id": "src_872821a22f605331bc831be51c1c70db",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/README.md"
+    },
+    {
+      "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+      "git_sha": "a957c4a36680500b72f7f1237505699a78e4661b",
+      "lines": 14,
+      "path": "docs/README.md",
+      "repository": "guanyilun/agent-sh",
+      "sha256": "86bbde211188081b81284b0d78980c3e672aef21e28bc3ef6e38ca2f2f6519a1",
+      "source_id": "src_3d665564908b5183a04b53292a9f70b0",
+      "stored": "readme.md-0b5ca119d2be.md",
+      "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/README.md"
+    },
+    {
+      "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+      "git_sha": "76d29be759164a33db0b554f8e3e14d0dfac8893",
+      "lines": 400,
+      "path": "docs/agent.md",
+      "repository": "guanyilun/agent-sh",
+      "sha256": "a667c0ff0ad848b623f61c619d836ec479c66fa3ec002cfe8cdf6088f29b5c9e",
+      "source_id": "src_f31d81881f61550b9f2cc60fb4886bf0",
+      "stored": "agent.md-878adb320c7b.md",
+      "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/agent.md"
+    },
+    {
+      "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+      "git_sha": "134b58c13c1e2ab183e060ddfb32f663e425d5d1",
+      "lines": 194,
+      "path": "docs/architecture.md",
+      "repository": "guanyilun/agent-sh",
+      "sha256": "aa80e2e01c414b38e2fa331381a051ca25e1f0b9bf6a723770a4044ee709ae85",
+      "source_id": "src_ee863c2c0bed58b5a9cae73a397c8980",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/architecture.md"
+    },
+    {
+      "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+      "git_sha": "d091bcba9987304be36d7e0fd11dc7c4d2bfa29c",
+      "lines": 200,
+      "path": "docs/context-management.md",
+      "repository": "guanyilun/agent-sh",
+      "sha256": "b38a2a065a1f2353d11774afaf919453a4a4be72c8c822bdf4649cff54c6e12d",
+      "source_id": "src_bddef1d255745b10b9abffbd024c3f41",
+      "stored": "context-management.md-7155dd32029c.md",
+      "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/context-management.md"
+    },
+    {
+      "commit": "8038ae7730eb2978a43887fb9e1a7da7b409791d",
+      "git_sha": "7e7d7999cbe9eddb2bf87feb3b17f96fb6cc5dce",
+      "lines": 952,
+      "path": "docs/extensions.md",
+      "repository": "guanyilun/agent-sh",
+      "sha256": "e02577ae8136f4299fde32a8c57e37c3d9160b2af8d6b99a767e22c90ae626f4",
+      "source_id": "src_684c346f3fe556668db0f937a279eb2a",
+      "stored": "extensions.md-5a07081f272a.md",
+      "url": "https://github.com/guanyilun/agent-sh/blob/8038ae7730eb2978a43887fb9e1a7da7b409791d/docs/extensions.md"
+    }
+  ],
+  "summary": "agent-sh is an npm-distributed composable agent runtime pairing a PTY shell frontend with swappable agent backends (default `ash`) over a shared extension bus; evidence is documentation-only, covering architecture, tools, context management, and platform limits. Evidence coverage: 140 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

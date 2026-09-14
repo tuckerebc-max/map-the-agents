@@ -1,0 +1,584 @@
+{
+  "applied_operation_id": "op_6e71cd42ce9f403e8ef830f8f2e075c8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b80dbff67625ef20d9d5f1d3704621617b0b027716c3ddb5eb1fe68fe78e364",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18b60343dfc0cd8fcddb29057ac36e2e3d326f4473b841576ca6b99c723b5939"
+      ],
+      "text": "Speech-to-Code is a web application that uses LLMs to convert spoken language into executable code, letting developers express ideas verbally and get functional code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47d3ed3cd63c58204181cf4d11fabb4fc93f1f9d652075aec6d364dbaa691244",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 170,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L151-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7917b3f72d168a5d8f6171cd40c086b54f64b61df3a28aaa999b684615422f1"
+      ],
+      "text": "The project structure includes a backend (main.py, llm_interaction.py, model_config.py, system_prompts.json, context_maps, utils) and a frontend with components, services, and config directories, plus a logs/chat_sessions directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86abb0cee1c0bc2ee8d0144c8f68d41248aa84efaf55f30cdafb5e46e77f6134",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 19,
+          "line_start": 16,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L16-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c08513cbe472b565e84e9cc7f8ef7419270a82295b59f397a66a99e09514df83"
+      ],
+      "text": "The backend is a FastAPI server exposing endpoints such as /directories, /tree, and /file_content, with the repository root configured via the REPO_PATH environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d683b121f2f8d511491627e5047f2e4bcdbf7ded920164d222e02e7068f23bde",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 104,
+          "line_start": 103,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L103-L104"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "206b7a10b6525752f70663268d82e42817d18d05",
+          "line_end": 29,
+          "line_start": 21,
+          "path": "git-branch-implementation-checklist.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-implementation-checklist.md#L21-L29"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 98,
+          "line_start": 92,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L92-L98"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L106-L108"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L100-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7228b8f27f69b2ca9e1bc33caae1df063f8cc306d83d56195111657b2a13e568",
+        "slc_781fbde8f16582e7351e4d1cfa2a978c265d5075c8809855fee5a19f1b4d0ce7",
+        "slc_b9dcbdfc7a4dced37265e38053e733359878a6a6198d6848fd14a8a39ddbbb6b",
+        "slc_cf2c1a2f459a76f4794d4f8bbec70e6db286510d3138d6b5770a1f35eb8c41d4",
+        "slc_f7ef8599a1df9aee7469760aafa144159841803e0491dbf2be97a317693cd27c"
+      ],
+      "text": "A GET /git-info/{repository} endpoint returns git branch and short commit hash for a repository, with 404 for missing repositories and 500 on failure; the checklist marks it implemented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7ea26407b3a277f6f6dac37c6b53ba34812d167a8288425a04edd41b152ee72",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "206b7a10b6525752f70663268d82e42817d18d05",
+          "line_end": 18,
+          "line_start": 6,
+          "path": "git-branch-implementation-checklist.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-implementation-checklist.md#L6-L18"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 50,
+          "line_start": 43,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L43-L50"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 76,
+          "line_start": 66,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L66-L76"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 41,
+          "line_start": 33,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L33-L41"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 62,
+          "line_start": 55,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L55-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_466fc50684e08efca634672180482ad54a93348b46240f728f9e519844eff52d",
+        "slc_5d0380b75138fe918733d9a2a9757f841ba92de732891e1c399c1fc20c856bb4",
+        "slc_610448af32a3ff2e44c5d126ee62aaadae31f31de210f586816d6c163cd7a1d5",
+        "slc_6875507133bb5de927ce2c016c1f9d25354eb9690d15f62e0ba97b0d96f9e554",
+        "slc_69131ee71b510437720d8c37f1f1190b2abcb04ecdda16c14907774708e39ced"
+      ],
+      "text": "A git utility module /backend/utils/git_operations.py provides get_git_info(repo_path), running git rev-parse commands with a 5-second timeout and returning branch, commit_hash, and error fields; the checklist marks it created."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59243b31246af23729037ed7284a7ef67e14fb15a0c4b49ac6b7fd2ad27f7a4f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 206,
+          "line_start": 203,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L203-L206"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+          "line_end": 200,
+          "line_start": 199,
+          "path": "git-branch-display-implementation-plan.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md#L199-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_520a4ee7350e0cd792e8d3d7f2c594df5e4dffc70def732eb89dcf848149e350",
+        "slc_ef1ea17277801e899a779a863f0693848e4b5ce1dd4dce0e44351421f30950f2"
+      ],
+      "text": "The git feature's security design calls for validating repository names against path traversal, read-only git commands only, a 5-second subprocess timeout, and no user input passed directly to git commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa5986dff1328f15da2ee44c6c8ce3005e74cc5c895bb0f9dc9b6283963d7b4c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 194,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L191-L194"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L32-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5aa9fa61a50ebda16ec8aa2e0e3a6db06c97b996244b4dab7a386af1527e5a7d",
+        "slc_eacddff5abe196b0d64ebc87f9c9415b496fbb7b4b5928fd60c169c6ba81201c"
+      ],
+      "text": "Backend dependencies include uvicorn, fastapi, python-dotenv, openai, anthropic, and google-generativeai; the app integrates multiple LLM providers including OpenAI and Anthropic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7adc3d98ad6f69c336a727f0a924c7b5525ea684b3ef818bf163c3515bebecdf",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 86,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L83-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52460b2fea43d770314570b27e391c74eab69dff7640b72403d47a8c9143c656"
+      ],
+      "text": "Prerequisites are Node.js with npm (latest version) and Python 3.7 or later on a Windows/Linux/Mac machine with command line access."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35fb5586ddefbb4b236be76f64453144509f6a85585853c0da4d5dce272f0bbf",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 145,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L140-L145"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 99,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L96-L99"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 94,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L90-L94"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 138,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L134-L138"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 110,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L101-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23c49f5011aaf31789c5477af0ef84cada0aad252ca367f048d9e5e6e058049a",
+        "slc_431e5255c98c5189695f4d0176899772d7f6695c35c52e0346df5aee5feb2633",
+        "slc_4c8dff2887f121e0a596f1a0601121a633a5a1f416f8534343b1b83fabdbb38e",
+        "slc_aae988c5d6f56b175a2a6aa28853a7190499a3fc35f7b6d7d9fd60f706127c46",
+        "slc_fb1c7db0b98ea6b35e93a8206fe45ccee768edbc099027b9f8bafdcebcc12441"
+      ],
+      "text": "Setup involves cloning the repo, making build.sh executable, and running it to install dependencies, create a Python virtual environment, generate .env placeholder files, and create log/chat-session directories; the frontend starts with npm start and the backend with uvicorn main:app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3dcb709ed199436d512bcc16fcbf274857e0af3f645f283a436e1d45f47c4b8e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 203,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L200-L203"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 184,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L179-L184"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 198,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L196-L198"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 189,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L186-L189"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 177,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L176-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31a21e0140ba9c26c3c8a5a1e2e2cf5d63d57d2fc3d90808aa750168ba179445",
+        "slc_4f2d2f3cef6450c20e174e99064163a03554f037d2430cae238da4753d785df0",
+        "slc_5b8c288658c716e124229c1e86198540052ed9fb63e1674a26b2af2ee74ce50a",
+        "slc_966120ebd35fa7a3748beb312e6636510eed9a27593e8ba54e492afc8f8e8d3b",
+        "slc_d815c9ecb76c7aebdb112e3cd6f754e5dc5fae1694d6d9914b338c0a65f3bc85"
+      ],
+      "text": "Troubleshooting guidance covers macOS build failures for grpcio/tiktoken/tokenizers (upgrade pip and build tools, or install precompiled wheels), missing uvicorn, and setting REPO_PATH in backend/.env."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b6a72385d861ab0495bfe8797415ccbbbc1adc2f004d0b9108ba1a5c2e315d9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 170,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L151-L170"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 77,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L74-L77"
+        },
+        {
+          "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+          "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+          "line_end": 48,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "dharllc/speech-to-code",
+          "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md#L44-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7917b3f72d168a5d8f6171cd40c086b54f64b61df3a28aaa999b684615422f1",
+        "slc_f073c0a524d3526e72ecdb82c5f3b74298eb3b740266e914531f4d701cd5e604",
+        "slc_f352484ab9fea7ad6bc576c80e3a5ec3f851fc4a31edff79970417fdf6997281"
+      ],
+      "text": "The app offers persistent chat history with automatic saving, session organization, soft delete of chat sessions, automatic chat naming, and session logs stored under a logs directory."
+    }
+  ],
+  "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 229,
+        "path": "README.md",
+        "size": 6429
+      },
+      {
+        "lines": 280,
+        "path": "git-branch-display-implementation-plan.md",
+        "size": 10274
+      },
+      {
+        "lines": 195,
+        "path": "git-branch-implementation-checklist.md",
+        "size": 6533
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 93,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_c0112a9ec434547b8409dad98d56747c",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/dharllc/speech-to-code/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/e79515a2712eb4a0/manifest.json",
+  "package_id": "pkg_3a287532a703c654bbf5a066c78cefdd9b01acefa912603220120eb74ef50bcc",
+  "repo": "dharllc/speech-to-code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a6fd640b5346382763fe6e0d5e902f31844a084e22713a6c01da57dcc6fc45a9",
+  "snapshot_id": "e79515a2712eb4a0",
+  "sources": [
+    {
+      "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+      "git_sha": "4971dbea436e7f35256232c3597aac6374d25e77",
+      "lines": 229,
+      "path": "README.md",
+      "repository": "dharllc/speech-to-code",
+      "sha256": "172ec943f17be5788ea8403ef41dd3634656d55c43586c5858e7896a0bf14255",
+      "source_id": "src_d9cabfc21fe25342a7777a716d1277b5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/README.md"
+    },
+    {
+      "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+      "git_sha": "c21a8c2b0995ebd1c5eb137cafebc444162f3462",
+      "lines": 280,
+      "path": "git-branch-display-implementation-plan.md",
+      "repository": "dharllc/speech-to-code",
+      "sha256": "cb33a3a39ecca11d4a770416f05c37727268e047a03fdd7a8b2be81c696ab08c",
+      "source_id": "src_882e4c1c83445c98bd1bd4f730bab0a4",
+      "stored": "git-branch-display-implementation-plan.m-7e38a0acadda.md",
+      "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-display-implementation-plan.md"
+    },
+    {
+      "commit": "c2756161e3cef9379bd16d9d1f57a78b3bd08b5f",
+      "git_sha": "206b7a10b6525752f70663268d82e42817d18d05",
+      "lines": 195,
+      "path": "git-branch-implementation-checklist.md",
+      "repository": "dharllc/speech-to-code",
+      "sha256": "c375c0ef1241852e63296899589e557452e9f5b6278db18d6716e748e7c9a28c",
+      "source_id": "src_fffdb8ba144950998c247b66cc7f44d2",
+      "stored": "git-branch-implementation-checklist.md-4374e2afc743.md",
+      "url": "https://github.com/dharllc/speech-to-code/blob/c2756161e3cef9379bd16d9d1f57a78b3bd08b5f/git-branch-implementation-checklist.md"
+    }
+  ],
+  "summary": "Selected evidence records: Speech-to-Code is a web application that uses LLMs to convert spoken language into executable code, letting developers express ideas verbally and get functional code. The project structure includes a backend (main.py, llm_interaction.py, model_config.py, system_prompts.json, context_maps, utils) and a frontend with components, services, and config directories, plus a logs/chat_sessions directory.",
+  "superseded_claim_ids": []
+}

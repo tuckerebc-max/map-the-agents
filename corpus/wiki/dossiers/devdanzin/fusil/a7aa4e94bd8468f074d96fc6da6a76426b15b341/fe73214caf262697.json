@@ -1,0 +1,828 @@
+{
+  "applied_operation_id": "op_d4e78f6adae347c781ce846edec4cc6b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_60b3ac5775ed024c98b40a56ae98239d58535e737f39c04012ecf9226edc2c6f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 8,
+          "line_start": 4,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L4-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9ff518fbe047a4d10b06d5bb50a08fde3287e3505aa346adada0be7592fe1888"
+      ],
+      "text": "Fusil is a revival of Victor Stinner's fuzzing framework; only the Python fuzzing path is actively developed and tested, targeting crashes in CPython, C extensions, the Tier-2 JIT, and OOM error paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa563e86ab6aca14362c8cb5e3bc1076e43a953299049eae66c3154e5d4ac9b1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 14,
+          "line_start": 10,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L10-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e74bac349ce21eebd278d69647d37ebcb295bc2ed978fa6ddb6cb0c1be36e532"
+      ],
+      "text": "Historical non-Python fuzzers (firefox, php, mplayer) and subsystems like network, file/process mangling, and X11 are legacy and out of scope, kept under notworking/ directories and may not work as-is."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ded7ff974ce58369fa7759387d6c9730b6e88ff6e8e32a8cce2f061af2e66e66",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 21,
+          "line_start": 16,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L16-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05e4cedacb743b9077eaa1ba616b051b617e5952056fb65bb07410b342bf83a1"
+      ],
+      "text": "Fusil is built as a small multi-agent system where agents communicate via asynchronous messages, and a per-session score drives the fuzzer's adaptive aggressivity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7889ad8225b9dc8a01328b15aa024f432e59bf3feb0a542921defac6ac53f608",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 21,
+          "line_start": 16,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L16-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05e4cedacb743b9077eaa1ba616b051b617e5952056fb65bb07410b342bf83a1"
+      ],
+      "text": "Each session generates a standalone test script, runs it as a sandboxed child process with memory/cpu/process limits, dropped privileges, and redirected output, watching for crash signals and patterns like 'Fatal Python error' or AddressSanitizer output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36885c75776835396edd255e54c040c5cbc5b884977ec8d14c17afb9f3ac853f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L36-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b81c827c5a55fe695592acef8c11930de638ab1f1882e7c0a9ce3d0b411dbb0"
+      ],
+      "text": "By default the fuzzer expects a dedicated unprivileged fusil user/group to drop privileges to; the --unsafe flag instead runs fuzzed children as the current user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_23e5e36be1bea4a5d315788e05af8ba3eb6e80a3dea2483e106ebe7081911aca",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "4b930a988275a65040adaa904a0cefd658c02806",
+          "line_end": 11,
+          "line_start": 10,
+          "path": "doc/configuration.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/configuration.rst#L10-L11"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "4b930a988275a65040adaa904a0cefd658c02806",
+          "line_end": 6,
+          "line_start": 5,
+          "path": "doc/configuration.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/configuration.rst#L5-L6"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "4b930a988275a65040adaa904a0cefd658c02806",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "doc/configuration.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/configuration.rst#L15-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a9071bed6d395d50a2ae69cad25ebc2afae3b1b3986a47dcb69aba96a827313",
+        "slc_cc12aeaf502f4c7cc1017c7aee05979e58c94f1f4cd1e5bf195d7253597d361f",
+        "slc_d8623e8f8e2b8554f1838717cfca2ebc602cc5628e60ae008208a6024927c264"
+      ],
+      "text": "Fusil is configured entirely through command-line options, grouped into categories like Input, Running, Fuzzing, OOM Fuzzing, and Logging; a former fusil.conf file mechanism was removed, making CLI options the single source of truth."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fe0191540bf2cb3c1e9271d58be76337b8f04db15609c3f685ae25a439977253",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 42,
+          "line_start": 40,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L40-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36539c85ce450d0e2411bf60c63e4ccbf817376dca0beb502cafbaab8846086c"
+      ],
+      "text": "Documented Python-fuzzer options include --only-c, --jit-fuzz, --oom-fuzz/--oom-seq, --deep-dive, and --no-memory-limit, with the full list in createFuzzerOptions in fusil/python/__init__.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65ebc804fcc6cb3425d37d2aeb92ba373e5919dcbd8e1f139c5379484c53d1d7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 30,
+          "line_start": 29,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L29-L30"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L32-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ca607f9119bef357e100d5607c1dd668706d14f230db6df9bab31f41398ae84",
+        "slc_52ca1b7f9c5744835d5edb0d07ce6a3b5ef2511a0646865f48d4c8f0749e6d03"
+      ],
+      "text": "Fusil requires Python 3.13+ and python-ptrace; numpy and h5py are optional extras supporting the argument generator, installed via pip install -e '.[numpy,h5py]'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8013caa4297865fd780c1b22657b0b19dd6e42b0f4fbdb0cc2aee391cdeec05",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b1fcf366f3345f998da81283e62b4fd64bb41925",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "doc/architecture.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/architecture.rst#L33-L36"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b1fcf366f3345f998da81283e62b4fd64bb41925",
+          "line_end": 50,
+          "line_start": 41,
+          "path": "doc/architecture.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/architecture.rst#L41-L50"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b1fcf366f3345f998da81283e62b4fd64bb41925",
+          "line_end": 29,
+          "line_start": 25,
+          "path": "doc/architecture.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/architecture.rst#L25-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c038366badb8e6da22dc52a2ac8ceaadc6e1aa186b6fb686bb43e1f0ad77e79d",
+        "slc_c31ef979b77c3250cc9d0a78d24fb1b9d03fcc893b91ac6a55f8950e9473ad57",
+        "slc_f55d3c9a2220b61f57f577bf8809b22da9be02851b36a5486674ac9f7dc63dd9"
+      ],
+      "text": "The architecture defines action agents (CreateProcess, StdoutFile, MangleFile, AutoMangle), network agents (TcpClient, UnixSocketClient, HttpServer), and probes such as FileWatch, CpuProbe, ProcessTimeWatch, WatchStdout, and Syslog."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80d223c57a2389a5c1e8eb4ee4960b0d1df8c97045dcf8c69fb4f890922b05ee",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "0f6d6e480ba476d4ff93e863649f0062c8bb3fc4",
+          "line_end": 15,
+          "line_start": 12,
+          "path": "doc/agent.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/agent.rst#L12-L15"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "0f6d6e480ba476d4ff93e863649f0062c8bb3fc4",
+          "line_end": 7,
+          "line_start": 4,
+          "path": "doc/agent.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/agent.rst#L4-L7"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "0f6d6e480ba476d4ff93e863649f0062c8bb3fc4",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "doc/agent.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/agent.rst#L44-L44"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "0f6d6e480ba476d4ff93e863649f0062c8bb3fc4",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "doc/agent.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/agent.rst#L28-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ae0a0e4dcd512f984f5733e2517d74e4d8a93d452aaf9b9fd133d5a164b012b",
+        "slc_3e59ed9997a52dcaae5dae718d18b1aebbeee76bda282b56f4e607b6f47391d8",
+        "slc_b5efbb05c9ac284858a61a83b8cc0a636d166bf24979b6951c4b71a7bca2e700",
+        "slc_b73eee27af1d46b166085d2c0f48126f0770079d8124c579d1f6401ad8440e4b"
+      ],
+      "text": "Agents are objects that send and receive messages, are inactive by default until activate() is called, expose a live() method invoked each session step, and register event handlers via on_EVENT-style method names."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f65d5ac2fd1e36d6113b6e549adcd9301c26808a6727e646ad7b866084866a3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "2c2fcb00998ac82efc0f478e9904a82c01435c80",
+          "line_end": 132,
+          "line_start": 129,
+          "path": "doc/c_tools.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/c_tools.rst#L129-L132"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "2c2fcb00998ac82efc0f478e9904a82c01435c80",
+          "line_end": 62,
+          "line_start": 48,
+          "path": "doc/c_tools.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/c_tools.rst#L48-L62"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "2c2fcb00998ac82efc0f478e9904a82c01435c80",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "doc/c_tools.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/c_tools.rst#L93-L93"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "2c2fcb00998ac82efc0f478e9904a82c01435c80",
+          "line_end": 40,
+          "line_start": 23,
+          "path": "doc/c_tools.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/c_tools.rst#L23-L40"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "2c2fcb00998ac82efc0f478e9904a82c01435c80",
+          "line_end": 46,
+          "line_start": 45,
+          "path": "doc/c_tools.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/c_tools.rst#L45-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0cb67872ff79f26f5ff3098101ccb9610842400362784cd1efa4f4e37a62a5e6",
+        "slc_11b2aed5f1c9cbbb7cc09c79849a44ce6d5a37c34fd095fb4c24d180f43ff62e",
+        "slc_19e69361162e0f7bfa301e66563ca281180636b02a7a2a19eb7d5db3eac2e460",
+        "slc_71ca2a6661eac7be5bef150d8fcdeee30b21c7e39fc5a431bcc6365f0d1aa35a",
+        "slc_80cae617fa2fefc9bc2e0c68e44dc04eef6548f87224a082d127fb8eb57c05b4"
+      ],
+      "text": "The fusil.c_tools module provides C code generation utilities: CodeC with addMain()/addFunction() for building functions, a compile() method, and FuzzyFunctionC with value generators like createInt32, createString, and createRandomBytes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_191a5614ab2402f5d699d7900088eae5657cf07b3f65a867ee3998e4e045380a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L59-L59"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 63,
+          "line_start": 61,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L61-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3efd21b048d4fd4f66fb2e7caefbbd3941c4a9852dce728452cd1c57035b7d1d",
+        "slc_95c7df604125997fea8e76473a3e3838f01b4347d2a1b6d9fbb65d0d5058ccbb"
+      ],
+      "text": "Repository development practice: tests use unittest (python -m unittest discover -s tests), with ruff check for linting and ruff format for formatting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dec7f2c48fba5db8049b41a98bc03c6b1bafcf7f72c2fc80a199cf92358425b0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "ce935e96cacfa656ad1059a1ec663ead3d403cf3",
+          "line_end": 196,
+          "line_start": 184,
+          "path": "TECH_DEBT_PLAN.md",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/TECH_DEBT_PLAN.md#L184-L196"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "ce935e96cacfa656ad1059a1ec663ead3d403cf3",
+          "line_end": 182,
+          "line_start": 180,
+          "path": "TECH_DEBT_PLAN.md",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/TECH_DEBT_PLAN.md#L180-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e56e6c242cf2cd708ae7b2f1cac160d9c86a5aa984c6e911d722535e80168fa",
+        "slc_913ecbd3c5bbda19b6247f37d09a03ee9cb7472bbb7f90453ba26365c5999e13"
+      ],
+      "text": "Repository development practice: a tech-debt plan records that CI (GitHub Actions running unittest and ruff check) was added after phases 0-7, with the suite green on Python 3.13 and 3.14 and grown to 308 tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa84d85ecf8d778e6a1a395d20d8cda77656f12ea60ef365279a38c1ab249212",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+          "line_end": 66,
+          "line_start": 65,
+          "path": "README.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst#L65-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cc83410be5ef71b1a102f07efd9faddbe6797d65173ff3024ecf9ef300a47ffe"
+      ],
+      "text": "Repository development practice: contributions to any part are welcome, but active development and CI focus on the Python fuzzer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4592bb549b23f83420a8400a6ca4ce32f0fd9ec8acde3da26ae2be218a1d6006",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "4b930a988275a65040adaa904a0cefd658c02806",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "doc/configuration.rst",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/configuration.rst#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9be97c4c7373e296f10ee108634c913c2fe551e487c18a8bc069438294582cb8"
+      ],
+      "text": "A few settings lack CLI flags — session scoring thresholds, the memory limit, and the dedicated fusil-user sandbox user/group — and live as constants in fusil/config.py's FusilConfig class."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_587c3096b2ca3b931c2af98fc7ee5650290eadd2b82b1fd0f197eb8ea7092126",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "ce935e96cacfa656ad1059a1ec663ead3d403cf3",
+          "line_end": 33,
+          "line_start": 9,
+          "path": "TECH_DEBT_PLAN.md",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/TECH_DEBT_PLAN.md#L9-L33"
+        },
+        {
+          "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+          "git_sha": "ce935e96cacfa656ad1059a1ec663ead3d403cf3",
+          "line_end": 74,
+          "line_start": 62,
+          "path": "TECH_DEBT_PLAN.md",
+          "repository": "devdanzin/fusil",
+          "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/TECH_DEBT_PLAN.md#L62-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c02b8ab5b9c609cb90b219528e270e018ba9463ec2ee842d90de47fdc259bf1",
+        "slc_b4bf0ba0e6d527da568975fc40b5de9e9e78d4d7d301ac7f9ad24698abf288ea"
+      ],
+      "text": "The memory cap was made ASan-safe: RLIMIT_AS is skipped when an ASan target is auto-detected or --no-memory-limit is set (since ASan reserves ~20 TB of virtual address space), relying on an external cgroup cap, while core-dump/nproc/nice limits are kept in all cases."
+    }
+  ],
+  "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 66,
+        "path": "README.rst",
+        "size": 2958
+      },
+      {
+        "lines": 51,
+        "path": "doc/architecture.rst",
+        "size": 1549
+      },
+      {
+        "lines": 26,
+        "path": "doc/configuration.rst",
+        "size": 1076
+      },
+      {
+        "lines": 210,
+        "path": "TECH_DEBT_PLAN.md",
+        "size": 11085
+      },
+      {
+        "lines": 79,
+        "path": "doc/agent.rst",
+        "size": 2293
+      },
+      {
+        "lines": 137,
+        "path": "doc/c_tools.rst",
+        "size": 3041
+      }
+    ],
+    "omitted": [
+      {
+        "path": "doc/code-review-findings.md",
+        "reason": "file-budget",
+        "size": 6240
+      },
+      {
+        "path": "doc/complexity-reduction-report.md",
+        "reason": "file-budget",
+        "size": 15954
+      },
+      {
+        "path": "doc/events.rst",
+        "reason": "file-budget",
+        "size": 1362
+      },
+      {
+        "path": "doc/file_watch.rst",
+        "reason": "file-budget",
+        "size": 4806
+      },
+      {
+        "path": "doc/howto_write_fuzzer.rst",
+        "reason": "file-budget",
+        "size": 5909
+      },
+      {
+        "path": "doc/index.rst",
+        "reason": "file-budget",
+        "size": 1797
+      },
+      {
+        "path": "doc/jit-decision-memo.md",
+        "reason": "file-budget",
+        "size": 7878
+      },
+      {
+        "path": "doc/jit-seed-generation.md",
+        "reason": "file-budget",
+        "size": 14474
+      },
+      {
+        "path": "doc/linux_process_limits.rst",
+        "reason": "file-budget",
+        "size": 1063
+      },
+      {
+        "path": "doc/mangle.rst",
+        "reason": "file-budget",
+        "size": 2600
+      },
+      {
+        "path": "doc/mas-architecture.md",
+        "reason": "file-budget",
+        "size": 6779
+      },
+      {
+        "path": "doc/mas.rst",
+        "reason": "file-budget",
+        "size": 451
+      },
+      {
+        "path": "doc/network.rst",
+        "reason": "file-budget",
+        "size": 943
+      },
+      {
+        "path": "doc/oom-dedup-plan.md",
+        "reason": "file-budget",
+        "size": 7874
+      },
+      {
+        "path": "doc/oom-fuzzing.md",
+        "reason": "file-budget",
+        "size": 11253
+      },
+      {
+        "path": "doc/oom-sequences.md",
+        "reason": "file-budget",
+        "size": 13636
+      },
+      {
+        "path": "doc/plugins.md",
+        "reason": "file-budget",
+        "size": 13614
+      },
+      {
+        "path": "doc/process.rst",
+        "reason": "file-budget",
+        "size": 5987
+      },
+      {
+        "path": "doc/python-fuzzer.md",
+        "reason": "file-budget",
+        "size": 14740
+      },
+      {
+        "path": "doc/reproducer-techniques-for-fusil.md",
+        "reason": "file-budget",
+        "size": 18224
+      },
+      {
+        "path": "doc/safety.rst",
+        "reason": "file-budget",
+        "size": 904
+      },
+      {
+        "path": "doc/score.rst",
+        "reason": "file-budget",
+        "size": 1548
+      },
+      {
+        "path": "doc/time.rst",
+        "reason": "file-budget",
+        "size": 829
+      },
+      {
+        "path": "doc/tsan-mode-plan.md",
+        "reason": "file-budget",
+        "size": 50399
+      },
+      {
+        "path": "doc/usage.rst",
+        "reason": "file-budget",
+        "size": 6139
+      },
+      {
+        "path": "doc/legacy/README.md",
+        "reason": "file-budget",
+        "size": 207
+      },
+      {
+        "path": "doc/legacy/README.windows.txt",
+        "reason": "file-budget",
+        "size": 116
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 21596
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2593
+      }
+    ],
+    "omitted_count": 29,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 275,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 35,
+      "complete": false,
+      "omitted": 29,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_099c2440b6ea5914bce0ea9fcdf14c82",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/devdanzin/fusil/a7aa4e94bd8468f074d96fc6da6a76426b15b341/fe73214caf262697/manifest.json",
+  "package_id": "pkg_78db02f5eba8ef9588926d4d9cd38b57d1d28f57038780c9c65268d8b9849d79",
+  "repo": "devdanzin/fusil",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c347dd94b79da0b92abb458c629367e0b50afc454376c57dc0661becd6b1adea",
+  "snapshot_id": "fe73214caf262697",
+  "sources": [
+    {
+      "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+      "git_sha": "b9d19d586db1ac45d40125d415164425896cbd7a",
+      "lines": 66,
+      "path": "README.rst",
+      "repository": "devdanzin/fusil",
+      "sha256": "970c48d6aaabc9488d8b5c727d9b416e2c600b2d4dfb0b12f79cd4009d8727cb",
+      "source_id": "src_d36a932791495f3ca67aa940900a09c0",
+      "stored": "readme.rst-7b3ed02bc73d.txt",
+      "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/README.rst"
+    },
+    {
+      "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+      "git_sha": "ce935e96cacfa656ad1059a1ec663ead3d403cf3",
+      "lines": 210,
+      "path": "TECH_DEBT_PLAN.md",
+      "repository": "devdanzin/fusil",
+      "sha256": "e1f2b44e583656195677586e80ced473b496cebeb6efdf18750dbab1d9d3228f",
+      "source_id": "src_9c2b474ba6a454a294b9cb10c829ae5d",
+      "stored": "tech_debt_plan.md-a8d3cb423886.md",
+      "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/TECH_DEBT_PLAN.md"
+    },
+    {
+      "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+      "git_sha": "0f6d6e480ba476d4ff93e863649f0062c8bb3fc4",
+      "lines": 79,
+      "path": "doc/agent.rst",
+      "repository": "devdanzin/fusil",
+      "sha256": "c595db1bbfb32bd517c915756deffc3e2a9097135779724f2534f560bc897834",
+      "source_id": "src_48bdd13eb10a5ab6bb8176ba253bd69f",
+      "stored": "agent.rst-cbb1a2581cdb.txt",
+      "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/agent.rst"
+    },
+    {
+      "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+      "git_sha": "b1fcf366f3345f998da81283e62b4fd64bb41925",
+      "lines": 51,
+      "path": "doc/architecture.rst",
+      "repository": "devdanzin/fusil",
+      "sha256": "2af7533f95c747f18955f6c1175a7c62023af1f6412d428f054eea4dcd8696fa",
+      "source_id": "src_431446bdb1f3525b9aa246463cbf8fce",
+      "stored": "architecture.rst-d1779f0654cf.txt",
+      "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/architecture.rst"
+    },
+    {
+      "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+      "git_sha": "2c2fcb00998ac82efc0f478e9904a82c01435c80",
+      "lines": 137,
+      "path": "doc/c_tools.rst",
+      "repository": "devdanzin/fusil",
+      "sha256": "50d6c600fc347ec0e813986b425d9bca9acace7e1b6fa2922c21f6f67fc1bcb8",
+      "source_id": "src_3b4da4666499505685025435c2d2b7cd",
+      "stored": "c_tools.rst-341261241b90.txt",
+      "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/c_tools.rst"
+    },
+    {
+      "commit": "a7aa4e94bd8468f074d96fc6da6a76426b15b341",
+      "git_sha": "4b930a988275a65040adaa904a0cefd658c02806",
+      "lines": 26,
+      "path": "doc/configuration.rst",
+      "repository": "devdanzin/fusil",
+      "sha256": "74ce4a636e2ef906361ff25b08b76c4074da20737a0035fba055005166657906",
+      "source_id": "src_eb9be3928d8e58ea85b5a009d3e6f303",
+      "stored": "configuration.rst-9004050e0d8b.txt",
+      "url": "https://github.com/devdanzin/fusil/blob/a7aa4e94bd8468f074d96fc6da6a76426b15b341/doc/configuration.rst"
+    }
+  ],
+  "summary": "Fusil is a revived Python-focused fuzzing framework built as a multi-agent system that generates and runs sandboxed test scripts against CPython targets. Evidence covers its architecture, CLI configuration, sandbox/permission model, dependencies, and documented development workflow.",
+  "superseded_claim_ids": []
+}

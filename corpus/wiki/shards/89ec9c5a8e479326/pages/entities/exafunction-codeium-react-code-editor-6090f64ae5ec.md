@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1dff493b154e1b0f10365d9d6637fef908afbff69064452a09a4221f5f6f241c
+- clm_3d68b89eeb7ca0ace8dfef8cda1d47cf28e26b400c0d0e66d3185f15cb4791a8
+- clm_4049cac0bdc1963a70ec2ce62d8790bc46fb30ea2dcc39bc09ec246761f0fcba
+- clm_7078b08d2eecbc6ebb64a8f6bf79d7d5be3660991be9c2df9290a9ab02217491
+- clm_79cf43d90310a80bec6fe2b810d5b19168ea07c5bb26992abb41b85ff37c55fd
+- clm_7b0963b3ee92a82a5145002cb4b0a75357a582b649e2797fcc49851f70600bad
+- clm_cd8c74774b504c476931c54742491eb4892ec8a6567132dead80ca772bbda81b
+- clm_ce9667cb1c1234cb2e304e420d4888f2f317b35e5b437558f1628ad04b388bc2
+- clm_d4eca92fca61122171a847f89c98738e560f8ea41ecbadd49f984533525fa2de
+- clm_ea171323ba5f63fe8db72aba3aa6721b15a0f564c7a5f6ed385f46bf1a4058da
+maturity: draft
+page_id: pg_dae3fabd37e65e2bb6026090f64ae5ec
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: exafunction/codeium-react-code-editor
+updated_at: '2026-09-14T03:50:02Z'
+---
+
+# exafunction/codeium-react-code-editor
+
+<!-- rcw:begin owner=entity:ent_a46a5da4b40c592f95611ffe8ed7f545 block=evidence -->
+- exafunction/codeium-react-code-editor is mentioned in this evidence. [@claim:clm_1dff493b154e1b0f10365d9d6637fef908afbff69064452a09a4221f5f6f241c] [@claim:clm_3d68b89eeb7ca0ace8dfef8cda1d47cf28e26b400c0d0e66d3185f15cb4791a8] [@claim:clm_4049cac0bdc1963a70ec2ce62d8790bc46fb30ea2dcc39bc09ec246761f0fcba] [@claim:clm_7078b08d2eecbc6ebb64a8f6bf79d7d5be3660991be9c2df9290a9ab02217491] [@claim:clm_79cf43d90310a80bec6fe2b810d5b19168ea07c5bb26992abb41b85ff37c55fd] [@claim:clm_7b0963b3ee92a82a5145002cb4b0a75357a582b649e2797fcc49851f70600bad] [@claim:clm_cd8c74774b504c476931c54742491eb4892ec8a6567132dead80ca772bbda81b] [@claim:clm_ce9667cb1c1234cb2e304e420d4888f2f317b35e5b437558f1628ad04b388bc2] [@claim:clm_d4eca92fca61122171a847f89c98738e560f8ea41ecbadd49f984533525fa2de] [@claim:clm_ea171323ba5f63fe8db72aba3aa6721b15a0f564c7a5f6ed385f46bf1a4058da]
+<!-- rcw:end owner=entity:ent_a46a5da4b40c592f95611ffe8ed7f545 block=evidence -->
+
+## Researcher notes
+

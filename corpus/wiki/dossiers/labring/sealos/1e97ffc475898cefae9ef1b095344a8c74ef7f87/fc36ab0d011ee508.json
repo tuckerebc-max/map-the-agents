@@ -1,0 +1,1586 @@
+{
+  "applied_operation_id": "op_6f4ba5e687a04764a935cc720024e775",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5b27fe6421668b73c450db68e2604edd3bf9ef9d2d68724b4f7caeffdb01dd6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "cd80f2ee4cf4052b9ecd27b74be23af0d554e780",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/README.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33b30f8245d62de13732fa4f45f4c3391ca1b1fec45050ccee73565c4c7c7e72"
+      ],
+      "text": "Sealos is described as an AI-native cloud operating system built on Kubernetes, covering the application lifecycle from cloud IDE development to production deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_18542f01c422aeee63d324f3a801b2f1a28438c6b8091dc24a90c1bbd47190e1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "cd80f2ee4cf4052b9ecd27b74be23af0d554e780",
+          "line_end": 114,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/README.md#L109-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f2788a3d95e712f212d9b697a5d0de3c91822e06a74f159006517db660f788d1"
+      ],
+      "text": "The README lists core features including DevBox cloud IDEs, managed databases (PostgreSQL, MySQL, MongoDB, Redis), S3-compatible object storage, and a one-click app store."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90805b7f9e27885ba75f0f5a0e5fd913c03e2fc9120de0dc2cb1d2d3586e58b5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "afd8f35841bf4c78a25e91b97636020f3df1a732",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d39eb4584a31acf8077d40f3b4ec23cb082f98e00a6d4ef07e5c979eb2c92118"
+      ],
+      "text": "Sealos applications use a front-end/back-end separation architecture, with front-ends able to serve independently via SSR rather than being bound to a monolith."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d0712c05a1e7f49d8d5954b704782016e2303fa49e2e250ebc40853505571a6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "afd8f35841bf4c78a25e91b97636020f3df1a732",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d4a86900df3ceb1cf7bc528ddf91ee7503637960bc8a093ca1fc236289714f5f"
+      ],
+      "text": "All services authenticate using kubeconfig as the application identity, giving a consistent experience across browser, sealos CLI, and third-party clients."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_acd70e486d81f3d2b6d1217f8ffc5231724c6904c8f82cbeda1313accf9a5c67",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "afd8f35841bf4c78a25e91b97636020f3df1a732",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md#L17-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cc0b4a98b61203eb4effd25f2b85c352a1eed13658e65afe634c35df93c7c773"
+      ],
+      "text": "App Launchpad is a deployment tool for single images, and Terminal provides command-line services like a single-machine OS terminal; apps can call Kubernetes services or CRD controllers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6dc9733c3568670dff2dd51dbfbea770b7e955f452df037a359324d2a7003f7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L23-L23"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 17,
+          "line_start": 9,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L9-L17"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f19758db98f741fb8402ed29597c37a2bfdb82bb1a88d257c20d2f1f8be99bf",
+        "slc_37a53b8954af4e308fe5300f9817567c04da1c8ddc47c2863a81b130f9867e8c",
+        "slc_dfaaf23a7dd2b2598c7394c19a28fccf90527707f9d52836f6153196eada6c8d"
+      ],
+      "text": "The archived 3.0 design states Sealos aimed to be a simple, lightweight, stable Kubernetes installer supporting high-availability installs with a zero-dependency single binary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e172f7c0d2d84ea14b107d852c6a21b9bb8a882d2f39c8ad4117551ea417d5ad",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 79,
+          "line_start": 65,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L65-L79"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L43-L43"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L49-L49"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae38b900cc21632622e51841d1a6c11686a11da5fa33018df5f93edbcf1135cd",
+        "slc_afcd2adafa4df6f71c1b7ec4bc0495dae82f98541171f6fadab736d674d910c6",
+        "slc_c5913ff4f6d2cbacea413e1ee698c8ae4006bf620f37b376e832e9c14141940f",
+        "slc_c84614d98269a4625415290215b408067191404ef81bee4b7bc7bab8219a0a8a"
+      ],
+      "text": "For local load balancing, the 3.0 design chose kernel IPVS managed by an lvscare static pod over envoy/nginx, pre-creating IPVS rules before node join and cleaning them if apiserver becomes unreachable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a298b67c3bab5a84caf1c7adae3583343794eff32536f4b87ffb1f860946cde",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+          "line_end": 58,
+          "line_start": 54,
+          "path": "docs/archived/3.0/design/design.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md#L54-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_904d8f542a06c92911336040b24bf2ed33073eeee0e3f805c8891ce6b522a6f4"
+      ],
+      "text": "The 3.0 execution flow generates certs/kubeconfig locally, copies binaries and offline packages to targets, runs kubeadm init on master0, joins other masters forming an etcd cluster, then joins nodes with IPVS rules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87d55af4a1a9bd68bb5af4b4fb076e01a3efd53ee7293509a4e59e5d057b5832",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "cd80f2ee4cf4052b9ecd27b74be23af0d554e780",
+          "line_end": 138,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/README.md#L137-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ea186747936ee4ebf524f38edb1c7c0e39d5cd45fabb5b76ba9d767304eab0e"
+      ],
+      "text": "The README notes that Sealos 4.0 extensively uses Buildah functionality to ensure cluster images are OCI-standard compatible."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f4539cadeb2f0a5724a772f4f27e9030385a3a4c9539d85ea1ed723bf304d082",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "cd80f2ee4cf4052b9ecd27b74be23af0d554e780",
+          "line_end": 150,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/README.md#L150-L150"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "cd80f2ee4cf4052b9ecd27b74be23af0d554e780",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/README.md#L145-L145"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "cd80f2ee4cf4052b9ecd27b74be23af0d554e780",
+          "line_end": 148,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/README.md#L147-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a19be5dde78c7f3393fcfc2654ace6e3d7c695581503dc2cc67c0f80072f8761",
+        "slc_a3d00e8db0ca6a2bc39ca47ecc30c1e1f7d8d8e8e91e436a37f379f06de18ad8",
+        "slc_aae3d3535e8eda70a5a05e896b9b0cc0abf6f0ba662933d7cd9446d0360623a5"
+      ],
+      "text": "Sealos uses a custom 'Sealos Sustainable Use License' permitting internal business and personal non-commercial use but prohibiting providing cloud services to third parties; it is explicitly not a standard open-source license."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f204ce090d30d37c599f4b7629bca482f7a557bf6c7faccd818682655f01502c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "74ed2f3bfafed280bb25394293e1aebf6328cb6e",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "CONTRIBUTOR_LICENSE_AGREEMENT.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/CONTRIBUTOR_LICENSE_AGREEMENT.md#L21-L21"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "74ed2f3bfafed280bb25394293e1aebf6328cb6e",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "CONTRIBUTOR_LICENSE_AGREEMENT.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/CONTRIBUTOR_LICENSE_AGREEMENT.md#L51-L51"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "74ed2f3bfafed280bb25394293e1aebf6328cb6e",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "CONTRIBUTOR_LICENSE_AGREEMENT.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/CONTRIBUTOR_LICENSE_AGREEMENT.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_628bf16d08f0d1540627a47a224d92ef14d696a4a893b9ab663081f9fa7ac85f",
+        "slc_9a68f74418dc5e3cccb3b3cc9d9093af1fe1d86267a7205ea7f8de8e516254ef",
+        "slc_bd218bfb42b20eef6a1791df54b1d29e3cdda354f7aaef732a06b1c1ea6998ee"
+      ],
+      "text": "Repository development practice: contributors must sign a Contributor License Agreement granting the company perpetual copyright and patent licenses to contributions, and submitting a contribution constitutes acceptance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d74fc67ecb1cdfb33492e909a21f5b1d461d6fcdaaf13b11e191508ce7ab23a2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "0035dd85fa7d145b8041e93926b3bad1a2e06736",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "MAINTAINERS.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/MAINTAINERS.md#L17-L17"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "0035dd85fa7d145b8041e93926b3bad1a2e06736",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "MAINTAINERS.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/MAINTAINERS.md#L13-L15"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "0035dd85fa7d145b8041e93926b3bad1a2e06736",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "MAINTAINERS.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/MAINTAINERS.md#L11-L11"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "0035dd85fa7d145b8041e93926b3bad1a2e06736",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "MAINTAINERS.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/MAINTAINERS.md#L19-L21"
+        },
+        {
+          "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+          "git_sha": "0035dd85fa7d145b8041e93926b3bad1a2e06736",
+          "line_end": 9,
+          "line_start": 3,
+          "path": "MAINTAINERS.md",
+          "repository": "labring/sealos",
+          "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/MAINTAINERS.md#L3-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e97a8582677c3caf058e4aff4b15a06c8ad7c1146be3a55ead50f6bec7600a1",
+        "slc_570eebd724eb0abe52f017b34fd6f1d0ddb621a244c531c522faae6a607a3693",
+        "slc_6ef62fcbc2670bc6673f26a8bb719a5b804d2c7aa52ad0d243ce47afbd30f2e7",
+        "slc_bd661fed16b9d13fa19e02c56e180e78fb5c86da7a0a8d1f7d08b2ad63b3de65",
+        "slc_e1adebed41317bdc1e8898b933bc8e4c5a394267ef40ce03fa92ba97b1e89757"
+      ],
+      "text": "Repository development practice: MAINTAINERS.md lists seven maintainers, and names fanux, cuisongliu, and zzjin as both reviewers and approvers."
+    }
+  ],
+  "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 156,
+        "path": "README.md",
+        "size": 8080
+      },
+      {
+        "lines": 127,
+        "path": "docs/archived/3.0/design/design.md",
+        "size": 7341
+      },
+      {
+        "lines": 23,
+        "path": "docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md",
+        "size": 1790
+      },
+      {
+        "lines": 22,
+        "path": "docs/archived/4.0/i18n/zh-Hans/advanced-guide/Architecture/Architecture.md",
+        "size": 1536
+      },
+      {
+        "lines": 51,
+        "path": "CONTRIBUTOR_LICENSE_AGREEMENT.md",
+        "size": 3565
+      },
+      {
+        "lines": 22,
+        "path": "MAINTAINERS.md",
+        "size": 175
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README_zh.md",
+        "reason": "file-budget",
+        "size": 6444
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 382
+      },
+      {
+        "path": "docs/archived/3.0/quick_start.md",
+        "reason": "file-budget",
+        "size": 2742
+      },
+      {
+        "path": "docs/archived/3.0/README_en.md",
+        "reason": "file-budget",
+        "size": 7455
+      },
+      {
+        "path": "docs/archived/3.0/README_zh.md",
+        "reason": "file-budget",
+        "size": 6875
+      },
+      {
+        "path": "docs/archived/3.0/user_guide.md",
+        "reason": "file-budget",
+        "size": 12527
+      },
+      {
+        "path": "docs/archived/3.0/command/cloud.md",
+        "reason": "file-budget",
+        "size": 3337
+      },
+      {
+        "path": "docs/archived/3.0/command/etcd.md",
+        "reason": "file-budget",
+        "size": 11984
+      },
+      {
+        "path": "docs/archived/3.0/command/exec.md",
+        "reason": "file-budget",
+        "size": 14049
+      },
+      {
+        "path": "docs/archived/3.0/command/route.md",
+        "reason": "file-budget",
+        "size": 5038
+      },
+      {
+        "path": "docs/archived/3.0/command/upgrade.md",
+        "reason": "file-budget",
+        "size": 21885
+      },
+      {
+        "path": "docs/archived/3.0/history/v2.0.md",
+        "reason": "file-budget",
+        "size": 1046
+      },
+      {
+        "path": "docs/archived/3.0/history/v3.0.md",
+        "reason": "file-budget",
+        "size": 3353
+      },
+      {
+        "path": "docs/archived/3.0/plan/join_master_failed.md",
+        "reason": "file-budget",
+        "size": 2211
+      },
+      {
+        "path": "docs/archived/3.0/plan/multi_network_install.md",
+        "reason": "file-budget",
+        "size": 4511
+      },
+      {
+        "path": "docs/archived/3.0/plan/recovery_sealos.md",
+        "reason": "file-budget",
+        "size": 1170
+      },
+      {
+        "path": "docs/archived/4.0/docs/Community.md",
+        "reason": "file-budget",
+        "size": 737
+      },
+      {
+        "path": "docs/archived/4.0/docs/Intro.md",
+        "reason": "file-budget",
+        "size": 5382
+      },
+      {
+        "path": "docs/archived/5.0/docs/community.md",
+        "reason": "file-budget",
+        "size": 990
+      },
+      {
+        "path": "docs/archived/5.0/docs/Intro.md",
+        "reason": "file-budget",
+        "size": 5771
+      },
+      {
+        "path": "docs/archived/4.0/docs/advanced-guide/how-to-deploy-the-application-to-desktop.md",
+        "reason": "file-budget",
+        "size": 718
+      },
+      {
+        "path": "docs/archived/4.0/docs/msa/privacy-policy.md",
+        "reason": "file-budget",
+        "size": 2913
+      },
+      {
+        "path": "docs/archived/4.0/docs/msa/terms-of-service.md",
+        "reason": "file-budget",
+        "size": 4920
+      },
+      {
+        "path": "docs/archived/4.0/docs/quick-start/next-steps.md",
+        "reason": "file-budget",
+        "size": 156
+      },
+      {
+        "path": "docs/archived/4.0/docs/quick-start/use-app-launchpad.md",
+        "reason": "file-budget",
+        "size": 1327
+      },
+      {
+        "path": "docs/archived/4.0/docs/quick-start/use-database.md",
+        "reason": "file-budget",
+        "size": 1369
+      },
+      {
+        "path": "docs/archived/4.0/docs/quick-start/use-template.md",
+        "reason": "file-budget",
+        "size": 1080
+      },
+      {
+        "path": "docs/archived/4.0/docs/quick-start/use-terminal.md",
+        "reason": "file-budget",
+        "size": 3735
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/Community.md",
+        "reason": "file-budget",
+        "size": 662
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/Intro.md",
+        "reason": "file-budget",
+        "size": 4227
+      },
+      {
+        "path": "docs/archived/5.0/docs/msa/privacy-policy.md",
+        "reason": "file-budget",
+        "size": 2931
+      },
+      {
+        "path": "docs/archived/5.0/docs/msa/terms-of-service.md",
+        "reason": "file-budget",
+        "size": 4977
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/quick-start.md",
+        "reason": "file-budget",
+        "size": 1126
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/community.md",
+        "reason": "file-budget",
+        "size": 999
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/Intro.md",
+        "reason": "file-budget",
+        "size": 4604
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/ai-applications/install-fastgpt-on-desktop.md",
+        "reason": "file-budget",
+        "size": 739
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/baas/install-fireboom.md",
+        "reason": "file-budget",
+        "size": 2932
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/blog-platform/install-halo.md",
+        "reason": "file-budget",
+        "size": 6591
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/blog-platform/install-wordpress.md",
+        "reason": "file-budget",
+        "size": 4646
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/dial-testing-system/install-uptime-kuma.md",
+        "reason": "file-budget",
+        "size": 2164
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/gitea/install-gitea.md",
+        "reason": "file-budget",
+        "size": 2599
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/low-code-platform/install-appsmith.md",
+        "reason": "file-budget",
+        "size": 1679
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/low-code-platform/install-pageplug.md",
+        "reason": "file-budget",
+        "size": 2028
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/others/install-anki.md",
+        "reason": "file-budget",
+        "size": 5764
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/programming-languages/Quick installation of Go Apps.md",
+        "reason": "file-budget",
+        "size": 3899
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/programming-languages/Quick installation of Java Apps.md",
+        "reason": "file-budget",
+        "size": 7047
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/programming-languages/Quick installation of Node.js Apps.md",
+        "reason": "file-budget",
+        "size": 5399
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/programming-languages/Quick installation of Python Apps.md",
+        "reason": "file-budget",
+        "size": 5906
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/programming-languages/Quick installation of Vue Apps.md",
+        "reason": "file-budget",
+        "size": 3504
+      },
+      {
+        "path": "docs/archived/4.0/docs/examples/social-communication/install-tailchat.md",
+        "reason": "file-budget",
+        "size": 5600
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/add-domain.md",
+        "reason": "file-budget",
+        "size": 983
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/applaunchpad.md",
+        "reason": "file-budget",
+        "size": 2538
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/autoscale.md",
+        "reason": "file-budget",
+        "size": 1779
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/configmap.md",
+        "reason": "file-budget",
+        "size": 1559
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/environment.md",
+        "reason": "file-budget",
+        "size": 1444
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/expose-multi-ports.md",
+        "reason": "file-budget",
+        "size": 1764
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/persistent-volume.md",
+        "reason": "file-budget",
+        "size": 1055
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/set-cert.md",
+        "reason": "file-budget",
+        "size": 1552
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/applaunchpad/update-app.md",
+        "reason": "file-budget",
+        "size": 302
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/dbprovider/dbprovider.md",
+        "reason": "file-budget",
+        "size": 5735
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/objectstorage/objectstorage.md",
+        "reason": "file-budget",
+        "size": 4643
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/templates/submit-template.md",
+        "reason": "file-budget",
+        "size": 1037
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/templates/templates.md",
+        "reason": "file-budget",
+        "size": 1661
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/terminal/terminal.md",
+        "reason": "file-budget",
+        "size": 3258
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/workspace/worksapce.md",
+        "reason": "file-budget",
+        "size": 2417
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/lifecycle-management.md",
+        "reason": "file-budget",
+        "size": 4486
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/QA.md",
+        "reason": "file-budget",
+        "size": 7883
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/sealos/install-object-storage.md",
+        "reason": "file-budget",
+        "size": 1477
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/sealos/installation.md",
+        "reason": "file-budget",
+        "size": 12861
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/sealos/QA.md",
+        "reason": "file-budget",
+        "size": 5227
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/advanced-guide/how-to-deploy-the-application-to-desktop.md",
+        "reason": "file-budget",
+        "size": 664
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/msa/privacy-policy.md",
+        "reason": "file-budget",
+        "size": 3132
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/msa/terms-of-service.md",
+        "reason": "file-budget",
+        "size": 4490
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/quick-start/next-steps.md",
+        "reason": "file-budget",
+        "size": 145
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/quick-start/use-app-launchpad.md",
+        "reason": "file-budget",
+        "size": 2519
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/quick-start/use-database.md",
+        "reason": "file-budget",
+        "size": 1293
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/quick-start/use-template.md",
+        "reason": "file-budget",
+        "size": 986
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/quick-start/use-terminal.md",
+        "reason": "file-budget",
+        "size": 3708
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/lifecycle-management.md",
+        "reason": "file-budget",
+        "size": 4896
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/QA.md",
+        "reason": "file-budget",
+        "size": 8175
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/sealos/installation.md",
+        "reason": "file-budget",
+        "size": 13253
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/sealos/QA.md",
+        "reason": "file-budget",
+        "size": 5377
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/system-design/billing-system.md",
+        "reason": "file-budget",
+        "size": 384
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/system-design/monitor-system.md",
+        "reason": "file-budget",
+        "size": 398
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/system-design/system-application.md",
+        "reason": "file-budget",
+        "size": 371
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/system-design/system-architecture.md",
+        "reason": "file-budget",
+        "size": 382
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/system-design/user-system.md",
+        "reason": "file-budget",
+        "size": 358
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/ai-proxy/ai-proxy.md",
+        "reason": "file-budget",
+        "size": 4097
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/add-domain.md",
+        "reason": "file-budget",
+        "size": 1229
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/app-launchpad.md",
+        "reason": "file-budget",
+        "size": 2649
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/autoscale.md",
+        "reason": "file-budget",
+        "size": 2136
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/configmap.md",
+        "reason": "file-budget",
+        "size": 1827
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/environment.md",
+        "reason": "file-budget",
+        "size": 1710
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/expose-multi-ports.md",
+        "reason": "file-budget",
+        "size": 2046
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/persistent-volume.md",
+        "reason": "file-budget",
+        "size": 1377
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/set-cert.md",
+        "reason": "file-budget",
+        "size": 1779
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/update-app.md",
+        "reason": "file-budget",
+        "size": 522
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-launchpad/use-app-launchpad.md",
+        "reason": "file-budget",
+        "size": 1423
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/app-store/app-store.md",
+        "reason": "file-budget",
+        "size": 1354
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/application/application.md",
+        "reason": "file-budget",
+        "size": 542
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/cronjob/cronjob.md",
+        "reason": "file-budget",
+        "size": 1085
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/database/database.md",
+        "reason": "file-budget",
+        "size": 5862
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/devbox/devbox.md",
+        "reason": "file-budget",
+        "size": 2516
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/devbox/faq.md",
+        "reason": "file-budget",
+        "size": 5614
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/devbox/quick-start.md",
+        "reason": "file-budget",
+        "size": 8653
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/devbox/use-jetbrains-ide.md",
+        "reason": "file-budget",
+        "size": 1778
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/kubepanel/kubepanel.md",
+        "reason": "file-budget",
+        "size": 1387
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/objectstorage/objectstorage.md",
+        "reason": "file-budget",
+        "size": 5129
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/system-function/system-function.md",
+        "reason": "file-budget",
+        "size": 556
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/terminal/terminal.md",
+        "reason": "file-budget",
+        "size": 3520
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/msa/privacy-policy.md",
+        "reason": "file-budget",
+        "size": 3103
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/msa/terms-of-service.md",
+        "reason": "file-budget",
+        "size": 4461
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/quick-start/quick-start.md",
+        "reason": "file-budget",
+        "size": 1098
+      },
+      {
+        "path": "docs/archived/4.0/docs/guides/dbprovider/config-docs/config-docs.md",
+        "reason": "file-budget",
+        "size": 4947
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/advanced-guide/build-image-using-registry-sync.md",
+        "reason": "file-budget",
+        "size": 3861
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/advanced-guide/dual-stack-cluster.md",
+        "reason": "file-budget",
+        "size": 18440
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/advanced-guide/image-build-standardized.md",
+        "reason": "file-budget",
+        "size": 7120
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/advanced-guide/sealos-run.md",
+        "reason": "file-budget",
+        "size": 4690
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/advanced-guide/template-function.md",
+        "reason": "file-budget",
+        "size": 3243
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/quick-start/build-ingress-cluster-image.md",
+        "reason": "file-budget",
+        "size": 1743
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/quick-start/deploy-kubernetes.md",
+        "reason": "file-budget",
+        "size": 7890
+      },
+      {
+        "path": "docs/archived/4.0/docs/self-hosting/lifecycle-management/quick-start/install-cli.md",
+        "reason": "file-budget",
+        "size": 2310
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/ai-applications/install-fastgpt-on-desktop.md",
+        "reason": "file-budget",
+        "size": 631
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/baas/install-fireboom.md",
+        "reason": "file-budget",
+        "size": 2546
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/blog-platform/install-halo.md",
+        "reason": "file-budget",
+        "size": 5445
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/blog-platform/install-wordpress.md",
+        "reason": "file-budget",
+        "size": 3860
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/dial-testing-system/install-uptime-kuma.md",
+        "reason": "file-budget",
+        "size": 1953
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/gitea/install-gitea.md",
+        "reason": "file-budget",
+        "size": 2322
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/low-code-platform/install-appsmith.md",
+        "reason": "file-budget",
+        "size": 1525
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/low-code-platform/install-pageplug.md",
+        "reason": "file-budget",
+        "size": 1808
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/others/install-anki.md",
+        "reason": "file-budget",
+        "size": 6155
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/programming-languages/Quick installation of Go Apps.md",
+        "reason": "file-budget",
+        "size": 3730
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/programming-languages/Quick installation of Java Apps.md",
+        "reason": "file-budget",
+        "size": 6879
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/programming-languages/Quick installation of Node.js Apps.md",
+        "reason": "file-budget",
+        "size": 5040
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/programming-languages/Quick installation of Python Apps.md",
+        "reason": "file-budget",
+        "size": 5687
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/programming-languages/Quick installation of Vue Apps.md",
+        "reason": "file-budget",
+        "size": 3293
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/examples/social-communication/install-tailchat.md",
+        "reason": "file-budget",
+        "size": 5100
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/add-domain.md",
+        "reason": "file-budget",
+        "size": 1183
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/applaunchpad.md",
+        "reason": "file-budget",
+        "size": 1867
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/autoscale.md",
+        "reason": "file-budget",
+        "size": 1621
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/configmap.md",
+        "reason": "file-budget",
+        "size": 1217
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/environment.md",
+        "reason": "file-budget",
+        "size": 1355
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/expose-multi-ports.md",
+        "reason": "file-budget",
+        "size": 1469
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/persistent-volume.md",
+        "reason": "file-budget",
+        "size": 879
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/set-cert.md",
+        "reason": "file-budget",
+        "size": 1346
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/applaunchpad/update-app.md",
+        "reason": "file-budget",
+        "size": 294
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/dbprovider/dbprovider.md",
+        "reason": "file-budget",
+        "size": 4954
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/objectstorage/objectstorage.md",
+        "reason": "file-budget",
+        "size": 4569
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/templates/submit-template.md",
+        "reason": "file-budget",
+        "size": 1749
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/templates/templates.md",
+        "reason": "file-budget",
+        "size": 1398
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/terminal/terminal.md",
+        "reason": "file-budget",
+        "size": 2708
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/guides/workspace/worksapce.md",
+        "reason": "file-budget",
+        "size": 2336
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/self-hosting/lifecycle-management/lifecycle-management.md",
+        "reason": "file-budget",
+        "size": 3856
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/self-hosting/lifecycle-management/QA.md",
+        "reason": "file-budget",
+        "size": 9213
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/self-hosting/sealos/install-object-storage.md",
+        "reason": "file-budget",
+        "size": 1379
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/self-hosting/sealos/installation.md",
+        "reason": "file-budget",
+        "size": 15929
+      },
+      {
+        "path": "docs/archived/4.0/i18n/zh-Hans/self-hosting/sealos/QA.md",
+        "reason": "file-budget",
+        "size": 4999
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/advanced-guide/build-image-using-registry-sync.md",
+        "reason": "file-budget",
+        "size": 4100
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/advanced-guide/dual-stack-cluster.md",
+        "reason": "file-budget",
+        "size": 18754
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/advanced-guide/image-build-standardized.md",
+        "reason": "file-budget",
+        "size": 7529
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/advanced-guide/sealos-run.md",
+        "reason": "file-budget",
+        "size": 4967
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/advanced-guide/template-function.md",
+        "reason": "file-budget",
+        "size": 3597
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/quick-start/build-ingress-cluster-image.md",
+        "reason": "file-budget",
+        "size": 1995
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/quick-start/deploy-kubernetes.md",
+        "reason": "file-budget",
+        "size": 8398
+      },
+      {
+        "path": "docs/archived/5.0/docs/developer-guide/lifecycle-management/quick-start/install-cli.md",
+        "reason": "file-budget",
+        "size": 2537
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/ai-applications/install-fastgpt-on-desktop.md",
+        "reason": "file-budget",
+        "size": 966
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/baas/install-fireboom.md",
+        "reason": "file-budget",
+        "size": 3309
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/blog-platform/install-halo.md",
+        "reason": "file-budget",
+        "size": 6836
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/blog-platform/install-wordpress.md",
+        "reason": "file-budget",
+        "size": 4882
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/dial-testing-system/install-uptime-kuma.md",
+        "reason": "file-budget",
+        "size": 2420
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/gitea/install-gitea.md",
+        "reason": "file-budget",
+        "size": 2871
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/low-code-platform/install-appsmith.md",
+        "reason": "file-budget",
+        "size": 1979
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/low-code-platform/install-pageplug.md",
+        "reason": "file-budget",
+        "size": 2287
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/others/install-anki.md",
+        "reason": "file-budget",
+        "size": 6010
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/programming-languages/Quick installation of Go Apps.md",
+        "reason": "file-budget",
+        "size": 4182
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/programming-languages/Quick installation of Java Apps.md",
+        "reason": "file-budget",
+        "size": 7443
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/programming-languages/Quick installation of Node.js Apps.md",
+        "reason": "file-budget",
+        "size": 5770
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/programming-languages/Quick installation of Python Apps.md",
+        "reason": "file-budget",
+        "size": 6405
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/programming-languages/Quick installation of Vue Apps.md",
+        "reason": "file-budget",
+        "size": 3875
+      },
+      {
+        "path": "docs/archived/5.0/docs/quick-start/examples/social-communication/install-tailchat.md",
+        "reason": "file-budget",
+        "size": 5938
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/database/config-docs/config-docs.md",
+        "reason": "file-budget",
+        "size": 4967
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/system-function/cost-center/cost-center.md",
+        "reason": "file-budget",
+        "size": 1618
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/system-function/work-order/work-order.md",
+        "reason": "file-budget",
+        "size": 1101
+      },
+      {
+        "path": "docs/archived/5.0/docs/user-guide/system-function/workspace/workspace.md",
+        "reason": "file-budget",
+        "size": 2306
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/lifecycle-management/lifecycle-management.md",
+        "reason": "file-budget",
+        "size": 4128
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/lifecycle-management/QA.md",
+        "reason": "file-budget",
+        "size": 9454
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/sealos/installation.md",
+        "reason": "file-budget",
+        "size": 16286
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/sealos/QA.md",
+        "reason": "file-budget",
+        "size": 5087
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/system-design/billing-system.md",
+        "reason": "file-budget",
+        "size": 8699
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/system-design/monitor-system.md",
+        "reason": "file-budget",
+        "size": 2213
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/system-design/system-application.md",
+        "reason": "file-budget",
+        "size": 3064
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/system-design/system-architecture.md",
+        "reason": "file-budget",
+        "size": 2109
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/developer-guide/system-design/user-system.md",
+        "reason": "file-budget",
+        "size": 3979
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/user-guide/ai-proxy/ai-proxy.md",
+        "reason": "file-budget",
+        "size": 4028
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/user-guide/app-launchpad/add-domain.md",
+        "reason": "file-budget",
+        "size": 1507
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/user-guide/app-launchpad/app-launchpad.md",
+        "reason": "file-budget",
+        "size": 2050
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/user-guide/app-launchpad/autoscale.md",
+        "reason": "file-budget",
+        "size": 1952
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/user-guide/app-launchpad/configmap.md",
+        "reason": "file-budget",
+        "size": 1526
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/user-guide/app-launchpad/environment.md",
+        "reason": "file-budget",
+        "size": 1724
+      },
+      {
+        "path": "docs/archived/5.0/i18n/zh-Hans/user-guide/app-launchpad/expose-multi-ports.md",
+        "reason": "file-budget",
+        "size": 1802
+      }
+    ],
+    "omitted_count": 492,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 5748,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 498,
+      "complete": false,
+      "omitted": 492,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_c1fd7fc4357f5029b672d0b10eea9ccf",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/labring/sealos/1e97ffc475898cefae9ef1b095344a8c74ef7f87/fc36ab0d011ee508/manifest.json",
+  "package_id": "pkg_e1f7327bb0139b3b23a9a84a4e612b7d4eb0ebd8a1aa894a88c594accc2b7aec",
+  "repo": "labring/sealos",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a0b86dff0471fa3345f412f2e49962fc81e2bab13cdd3d1f37dda2843370e287",
+  "snapshot_id": "fc36ab0d011ee508",
+  "sources": [
+    {
+      "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+      "git_sha": "74ed2f3bfafed280bb25394293e1aebf6328cb6e",
+      "lines": 51,
+      "path": "CONTRIBUTOR_LICENSE_AGREEMENT.md",
+      "repository": "labring/sealos",
+      "sha256": "0603e28f4709fbc3aa665749b6566027dc4b6f86cf44245183dc794996e98a8d",
+      "source_id": "src_45da6c34c6db59ca8d876a320a103a40",
+      "stored": "contributor_license_agreement.md-9f9aa1bfabff.md",
+      "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/CONTRIBUTOR_LICENSE_AGREEMENT.md"
+    },
+    {
+      "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+      "git_sha": "0035dd85fa7d145b8041e93926b3bad1a2e06736",
+      "lines": 22,
+      "path": "MAINTAINERS.md",
+      "repository": "labring/sealos",
+      "sha256": "9a822c9cf019cc41089dd2156015ba4c2358e96be479017cda01630ec9d81b28",
+      "source_id": "src_b2c36b9732fe5eb3b5b3e476701229f8",
+      "stored": "maintainers.md-39da3bd6270d.md",
+      "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/MAINTAINERS.md"
+    },
+    {
+      "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+      "git_sha": "cd80f2ee4cf4052b9ecd27b74be23af0d554e780",
+      "lines": 156,
+      "path": "README.md",
+      "repository": "labring/sealos",
+      "sha256": "b2c4d8bfc504703ef6104a0be79ba0de123cb346a830e8c6a2542ee2f1767444",
+      "source_id": "src_6a04a64a7ac05e84a679c0cdf9efb180",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/README.md"
+    },
+    {
+      "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+      "git_sha": "42f55b935fbf83f396bdd4149586259103ab90f8",
+      "lines": 127,
+      "path": "docs/archived/3.0/design/design.md",
+      "repository": "labring/sealos",
+      "sha256": "75833d86b1fa4875bfee5862816d0206fee68f9307c32e6d89db58165405a336",
+      "source_id": "src_f6e5ed47b16f50969163d926b14045d5",
+      "stored": "design.md-d960043af5dd.md",
+      "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/3.0/design/design.md"
+    },
+    {
+      "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+      "git_sha": "afd8f35841bf4c78a25e91b97636020f3df1a732",
+      "lines": 23,
+      "path": "docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md",
+      "repository": "labring/sealos",
+      "sha256": "b9653864821422dc065cecaaa375032d7316dbeca70a7eaa143ec3653e073b9a",
+      "source_id": "src_759154be5d595b6db65558f087fd2d98",
+      "stored": "architecture.md-5158412a54cb.md",
+      "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/4.0/docs/advanced-guide/Architecture/Architecture.md"
+    },
+    {
+      "commit": "1e97ffc475898cefae9ef1b095344a8c74ef7f87",
+      "git_sha": "cfa4b5c9d89c815e1c87f22778d12d611374c653",
+      "lines": 22,
+      "path": "docs/archived/4.0/i18n/zh-Hans/advanced-guide/Architecture/Architecture.md",
+      "repository": "labring/sealos",
+      "sha256": "c67e8ea6df0515ede403daadb8c2f5c9be8b3c5bbd95a20fbf86a7d6ca615f5d",
+      "source_id": "src_afb242203d6153aeac997efc05fe8f2d",
+      "stored": "architecture.md-7b8f7e25c252.md",
+      "url": "https://github.com/labring/sealos/blob/1e97ffc475898cefae9ef1b095344a8c74ef7f87/docs/archived/4.0/i18n/zh-Hans/advanced-guide/Architecture/Architecture.md"
+    }
+  ],
+  "summary": "Evidence covers README positioning, archived 4.0 architecture and 3.0 design docs, the CLA, and MAINTAINERS.md; no runtime code is included. Claims rest on documentation only, with the maintainers claim corrected to cite the header slices.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,566 @@
+{
+  "applied_operation_id": "op_732e7f6aef6a48409dc0ea7f6a61b183",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b2bbe199eda7e43e3192109650caa6134868244fe9a1875d3416af6a324589f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7278e92d229f4b5e420a5bfad76c170917065457d9cdb9c8ea2027333c9425e4"
+      ],
+      "text": "Coro Code is described as a high-performance AI coding agent written in Rust with a rich terminal UI, formerly named Trae Agent Rust and kept compatible with the original tool spec."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2bf0de4578b961a7d9080147bebb0561775bdc1f45f6a3352b93678b555ade3b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 99,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L98-L99"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L49-L50"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69aa9dc53961ed1db10d592a822b11c9d1e811cba2ac67e4d1b6e3e854bdf553",
+        "slc_d97c1e7050876917d78667139b854cfe11658339c1a1789ca889c0cc42052873",
+        "slc_f962c282ce66bc215003d44e92c4d976b40ab3cc39f2e79d0650a1c7a61815ac"
+      ],
+      "text": "The CLI binary is named `coro`; it can run in interactive mode or accept a single task as a direct argument, and supports a `--config` flag pointing to a custom JSON config file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f711fbe0e5285214b5d14384f3dc2a0c4c3b5c9e3a221706edebbaa9d95db18",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 40,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L38-L40"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 34,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L33-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21d7ed92eb2d30ae3d258c8ca012ad12808fd95d51f245391413fe02b8883a26",
+        "slc_ce27a22732dbfc5cd11680f03372a6c9c5984fad9c7b6b146c0109ce4d2016e0"
+      ],
+      "text": "Installation is via `cargo install --git https://github.com/Blushyes/coro-code --bin coro`; prerequisites are Rust stable 1.70+ and an API key, with OpenAI recommended and Anthropic/Google noted as coming soon."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9556d28f055dbb68eb513c67ac54ecd299e619901ede627f5e45fa05d951b44a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 59,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L58-L59"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 86,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L74-L86"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L72-L72"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 68,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L66-L68"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 63,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L62-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_240156e473798734bcd43b5db3162e528e516bf827aa86a01b34b463fc1557e1",
+        "slc_54a66b3adb40e2690f7721596a2d7aede03c04c8c68cb0e44bf14703cf7800a0",
+        "slc_6b7e427dd2cb85d85a5ee79bb09403a9e6a86f319debaf49c5f90e6f549eabce",
+        "slc_70cee43e8aac600f7a8c2e04044b2146125f01dae664a9638330b71227aa4483",
+        "slc_a7e02b4915ed0ed8fed56a4ecd35649a5d94a8433818c6cd0701777cbf799d95"
+      ],
+      "text": "Configuration can be supplied via environment variables (OPENAI_API_KEY, OPENAI_MODEL, OPENAI_BASE_URL, and generic CORO_BASE_URL/CORO_MODEL overrides) or a `coro.json` file specifying protocol, base_url, api_key, model, and sampling params such as max_tokens, temperature, and top_p."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a3c2c4b2f8c94a65c35ec5d90604f76d1f282c34cff9f412414967faebee801",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 127,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L111-L127"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L103-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10ced864baf23a0fb4db0e9c50ea5fda426f37b6df3f3cda05cecff24cfc3a5d",
+        "slc_5e6dcb5bf6d5724b821b49119fd14eaff4d704bbf44aab9afb6a8149082200c2"
+      ],
+      "text": "Only OpenAI (gpt-4o, gpt-4o-mini) is listed as ready; Anthropic claude-3.5 and Google gemini-1.5 support are marked as coming, though env vars for those providers and Azure OpenAI are documented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8ae7d19b5dcc47fc7fb6c523825502a51ab6182d7bf1fecabf67369fd8cddd1d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "08c798ca7e4bb08a9de3e4fa2901a46d121a0a62",
+          "line_end": 26,
+          "line_start": 22,
+          "path": "README_zh.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README_zh.md#L22-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e20a39021f58919107072df054119b9fcd47ebab8221aacdf5883ac05f4c90b0"
+      ],
+      "text": "The Chinese README lists built-in tools including bash, edit, json_edit, thinking, task_done, ckg, and mcp, plus Git-aware file search using @path syntax."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f116f8b5d9380e50baa0615aa1d61b658932cce2261651b1cb711c007107da5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 211,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L206-L211"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 200,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L198-L200"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 196,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L195-L196"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 193,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L193-L193"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 204,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L202-L204"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_163019a13f9d096e5bafb0440ce6b2c66f5477e0330970fba5128c578677b00f",
+        "slc_bbcbc1d5fe243350b9dead64b349240b509db1b83079c735c541abe877094050",
+        "slc_e041fa7d32136590fc8d52a4b4b4216fd0722fc2f1da2029f97bf8718a9990cd",
+        "slc_f13aacaf4669612e5752c7db3756eefdd3c0d5f18ce0360a9c338596105e1fc1",
+        "slc_fecba9afbf34447b4e887fea55e7201832cf583bb2c024deb165970bbb7a8749"
+      ],
+      "text": "The core library supports exporting conversation and execution context to JSON (as a string, a file such as .coro/context.json, or a structured snapshot) and restoring it later via agent APIs like export_context_json and restore_context_from_file, exposed through coro_core::agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_420a3d43d798aa7969f8186ffea262c5ab3bd41ee42e5e2a00cda3239737d957",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 217,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L215-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2182ff141de60d8cc3761e839c49aa076020c6669b3aab7825b6bf5a68db40a2"
+      ],
+      "text": "The persistence snapshot contains conversation_history, AgentExecutionContext, and optional AgentConfig; on restore the saved config is applied, unpaired tool results are handled automatically, and system prompts are re-injected by the agent as needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c912fb44b30d2435db819d5d54c2e0adab406608ee85ac55888f4fcab53c2b1f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 164,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L159-L164"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 140,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L136-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11a68253641a6fc9cc03478bc0283eef2862bcd06bf2d417ff1740332068ac3e",
+        "slc_d0d381469793ed7fcbb65b08a9cca372bc6872f82aa08be5b99a53b957c565dc"
+      ],
+      "text": "Config loading follows a unified priority of CLI arguments over environment variables over JSON file, marked completed in the roadmap; token compression (intelligent context compression with adaptive context windows) is also marked completed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06225f693747db933d7f3136a0f65b449f8d374b452d1e86ebd72186503c2520",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 140,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L136-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d0d381469793ed7fcbb65b08a9cca372bc6872f82aa08be5b99a53b957c565dc"
+      ],
+      "text": "A tool-call permission system (tool/command/directory whitelists, interactive confirmation, sensitive-operation warnings) appears only as a planned roadmap item, not as a shipped capability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_299bcb4871abf4771455bd883ffbd2fc56e4118d300e1ca82c97dabb44a175dc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 251,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L246-L251"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 221,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L221-L221"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 240,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L238-L240"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 227,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L227-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16b82c7e1cb210f8b7c82564f97d725f3d08e4d6c16fc3e17f58d6c1e3b5ef2c",
+        "slc_45995cc5667398aab25486364a5e7f05a7c2c823b577c9eeeed55089b6fca4f2",
+        "slc_a0693081b533cd92a843dfaaa4f842427f8cec91a72f3ab828bf3c6fe891bc3f",
+        "slc_ac12c3d4086a2c0658f2cef8af7714b8c3fc3c8c1663987eb01201e9d00779d5"
+      ],
+      "text": "Repository development practice: contributors are strongly recommended to install pre-commit hooks via platform-specific scripts; the hooks run cargo fmt --check, cargo clippy, and cargo test before each commit, and the contribution flow is fork, branch, change, test, PR."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f124beb60ff6aae401d9d3922073e0ecaa34d8b4c177492d1ee4b36b0a82b757",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 265,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L262-L265"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 258,
+          "line_start": 257,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L257-L258"
+        },
+        {
+          "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+          "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+          "line_end": 255,
+          "line_start": 255,
+          "path": "README.md",
+          "repository": "blushyes/coro-code",
+          "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md#L255-L255"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_74d1b03c9bf3e18981e7b25a34f4fc015834d29d7df9c9db4d37dd594b3a8776",
+        "slc_90cc8519b5ebc842a659d8d29e6980f7eeefe71176ef6958d52b62410e759a94",
+        "slc_f960aaf8c0f823753d7885bdb73e7c70fc73ce2002a0762858f647fc0b3078a0"
+      ],
+      "text": "The project is dual licensed under MIT and Apache-2.0, and credits Trae Agent (original Python implementation and spec), the iocraft terminal UI framework, and model APIs from OpenAI, Anthropic, and Google."
+    }
+  ],
+  "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 273,
+        "path": "README.md",
+        "size": 11877
+      },
+      {
+        "lines": 259,
+        "path": "README_zh.md",
+        "size": 11077
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 105,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_12bd20e08ced5d49ac8002f44b9aa61a",
+  "facets": {
+    "components": 1,
+    "dependencies": 3,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/blushyes/coro-code/679c57af5376166538867a0aaf0fd877067821e3/d60a9546779f7cea/manifest.json",
+  "package_id": "pkg_ac5863e6c2fa9b14b9c9f177b961e33b4a08b2630f6451a7cdec64841f99441e",
+  "repo": "blushyes/coro-code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "48cce97a4ba04485b2046e675c95d91c641e43d4ffd6d7380740ffcf271d74b2",
+  "snapshot_id": "d60a9546779f7cea",
+  "sources": [
+    {
+      "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+      "git_sha": "29c59c4cb718d1a8c4751f37ea9978b3d645241e",
+      "lines": 273,
+      "path": "README.md",
+      "repository": "blushyes/coro-code",
+      "sha256": "b1cc458b03dafab60ad9cc084c530e9893995fa8aad5fe20f675cd97255bc98a",
+      "source_id": "src_87dc71e2c99d5f76b6f90c47974a473b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README.md"
+    },
+    {
+      "commit": "679c57af5376166538867a0aaf0fd877067821e3",
+      "git_sha": "08c798ca7e4bb08a9de3e4fa2901a46d121a0a62",
+      "lines": 259,
+      "path": "README_zh.md",
+      "repository": "blushyes/coro-code",
+      "sha256": "3ecc11b5b10fd69406d2052b8f5998700c0226477a4605f4215819d81c2e030a",
+      "source_id": "src_7d017db435405e92b496f285cc896593",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/Blushyes/coro-code/blob/679c57af5376166538867a0aaf0fd877067821e3/README_zh.md"
+    }
+  ],
+  "summary": "Coro Code is a Rust-based AI coding agent with a terminal UI, installable via cargo, configurable through environment variables or a JSON file, with OpenAI support ready and Anthropic/Google pending; it ships context persistence APIs and documents contributor pre-commit hooks.",
+  "superseded_claim_ids": []
+}

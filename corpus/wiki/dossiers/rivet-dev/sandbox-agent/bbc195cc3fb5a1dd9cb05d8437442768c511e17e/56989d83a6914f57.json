@@ -1,0 +1,571 @@
+{
+  "applied_operation_id": "op_b55e5501153e458eaa483db18fc0ed20",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_15175ee4db2049a588eb0d4805f15d96e35df34aa512a6026abbc6f404c93dc8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L27-L27"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0304a55c504b14e8ccee2fe726742b32811c40e2bf2b18b42eece4203317b1f0",
+        "slc_384f05bee27f5705070a45edf5ce4ab61057c9eb7fa667538f4eb38ab5a99d12"
+      ],
+      "text": "The product exposes a single HTTP API with SSE streaming that normalizes different coding agents' proprietary APIs, so integrations can swap agents via configuration rather than code changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd54df6b2cc9905d7aa78b3796af6cc63e894512520caad0bb1888cfa90fd357",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 58,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L53-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d46a95bd7319d854d4b3d0da329586bef700d5c494bd9379ba6fc4aaf8ee49e"
+      ],
+      "text": "The project comprises a Rust daemon ('sandbox-agent server') exposing HTTP+SSE, a TypeScript SDK with embedded and server modes, a built-in Inspector UI, and a CLI mirroring the HTTP endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5699c7bdc6e84a2368dff746f65401fe9b415f28da3374d59a37474bf3293576",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 38,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L33-L38"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 255,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L254-L255"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a650cecde481fef48d59fce1819e115c7aa8bfe8e981eb1227f7503f7750de6e",
+        "slc_d4f37c66fc7add173354548339ecc40bf7d35859dd82f06a14c2b4b3bd32fc7c"
+      ],
+      "text": "The server is implemented as a single static Rust binary, chosen for fast startup and predictable memory usage so it can run in sandboxes or CI without a Node.js runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b99eb62e5f03b235d5b8f0a137a788a2fc0444bb7b473a4c6f7336adaee8f05",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 111,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L107-L111"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 116,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L115-L116"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 121,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L118-L121"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L123-L123"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 100,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L99-L100"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L125-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0aab4515508009dd5e32d3d45d246aa4a1e53d4aa52d9c61999cadb1e4a0c2ae",
+        "slc_18e26d42ecf8adf9c56ec6011fcabc3df091ee161d4dc568cbed138cb2efe817",
+        "slc_6eb9b225d8e0d31b4d1ec291181c6bc7546e0712c1f6ab49c932d5062e4ece74",
+        "slc_8c589b7855ad1fcee2cfd3e4f972326761cbcafa42aaa37743cda98ebeb14cd2",
+        "slc_a3bb54e1700104eb1e748675e22edcea8505175ba05427f887a9bc0afa339e9e",
+        "slc_edb98369b14ea389018325fd7dd5ff703bc81cdcb37d8cfbc3a1afd2f1c86ff8"
+      ],
+      "text": "The TypeScript SDK supports embedded mode via SandboxAgent.start() and remote server mode via SandboxAgent.connect() with a baseUrl and token, and offers methods like listAgents, createSession, postMessage, and streamEvents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a9e4a25e4a74a1fa96bc095f1a7408e6a1dc215e99ebffb61a659b79bd0eb7af",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 141,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L140-L141"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L149-L149"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 153,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L151-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6dbfd130431e2046c8fe99362fe37b21fce1560c72909235b772940f13305867",
+        "slc_81e525b2e3583b4c1d7e10eedf231bb432bfb8a99d4eab856f6e3178ada5fb25",
+        "slc_e688ef804be1d2eda23fc72b40c11b764bc0416facacaa23ed8e1f9e12d84da0"
+      ],
+      "text": "The server is started with a token for auth (e.g. 'sandbox-agent server --token ... --host 127.0.0.1 --port 2468'), and a --no-token flag exists to disable auth locally."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78cd62e388ca61b9205ba5caa1357221fd1591520093c04db81b49dab1015226",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L29-L29"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 231,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L230-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1079e34d05ad74369715e5a58398e94cdd52bd65ff3663958da566fead761e76",
+        "slc_24dc2fbea8fc438fe0398319ce2e9ef27c927bef99677d596aeb08e997de9351"
+      ],
+      "text": "The SDK does not persist session data itself; events stream in a universal JSON schema that consumers are expected to store externally, e.g. in Postgres, ClickHouse, or Rivet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be02c656aaba0703376e1247050b6fa12502604b784adc5b15d8e56c68bbe487",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 280,
+          "line_start": 277,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L277-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9af3d109bb72c07a8185434fe3c9a901ab6a62bf07e056ddd1d10fcf68b4633f"
+      ],
+      "text": "The README explicitly lists out-of-scope areas: on-disk session storage, direct LLM wrappers, git repo management, and a sandbox-provider API abstraction layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_941e2d550bd396066cd667c7725808f6aedd6502c061458f50d88467876322b8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 147,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L145-L147"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L143-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07eb18b908ec41d5aa8c72055591bb77e319776bbc314085707afcf752f37c20",
+        "slc_3378e56a98c8c15a97091b6b4f38bd5d2e3cc38fb9fa5b9ebdd026057849014c"
+      ],
+      "text": "Agent binaries are installed lazily on first use by default, with an optional 'sandbox-agent install-agent --all' command to preinstall them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16d113dec9f7509298c8c01a10bc131339d728df168ce9376f23ad98867540d9",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 74,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L72-L74"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 70,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L68-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_71fd9c637fe7a3474a9cb9e720e0f6193c502058f841e02c6aa019a035e56253",
+        "slc_97133e28e99412bbe435197cfd2c0257df181cb6063e75cbea4ecfe8ba772cd4"
+      ],
+      "text": "A skill for the product can be installed via 'npx skills add rivet-dev/skills -s sandbox-agent' or the bunx equivalent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd20928cf36dd687d6c27a895a787fd780ad987e842f5004264589b6d33cbced",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 193,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L193-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6aa28badfe8cd605501e6188e3ad63eef003384a0320347cac8d8867e28ba00"
+      ],
+      "text": "A built-in Inspector UI for debugging sessions and events is served at a path like http://localhost:2468/ui/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_025330e06eb33b0b34663592c480e4a6c7d92c3a35699d0d490c734770ed3cbb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "34bea89436ed76a6d6cdfbd5cd211f4a995f0df8",
+          "line_end": 9,
+          "line_start": 5,
+          "path": "CLAUDE.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/CLAUDE.md#L5-L9"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 17,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L15-L17"
+        },
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+          "line_end": 38,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md#L33-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d0cc4c308a0e62ff1a063eef51f6afb5921d1057490640f2ad0fdb35101fdae",
+        "slc_3fd087272755e9f752a5df22c858b9b7cbb1671b5af17d9057a4c4af247b8484",
+        "slc_a650cecde481fef48d59fce1819e115c7aa8bfe8e981eb1227f7503f7750de6e"
+      ],
+      "text": "An experimental OpenCode compatibility layer lets OpenCode CLI, SDK, or web UI connect to control agents through OpenCode tooling; CLAUDE.md references an /opencode/* surface when enabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36c34769412bbc0fed30a69dfaa7fedeb057783af4401c71a9204f7cd1641014",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "34bea89436ed76a6d6cdfbd5cd211f4a995f0df8",
+          "line_end": 38,
+          "line_start": 31,
+          "path": "CLAUDE.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/CLAUDE.md#L31-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_335402324756967e4704d6d93c8a4dd25971bd5e71287736e44d5bcd20c57693"
+      ],
+      "text": "Repository development practice: CLAUDE.md instructs contributors to keep CLI subcommands and HTTP endpoints in sync, update docs/cli.mdx on CLI changes, and regenerate docs/openapi.json when HTTP contracts change."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e5e119691cee36d26dde10fbd579239fa8934c666b117b5ad2c45debfc442e0f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+          "git_sha": "34bea89436ed76a6d6cdfbd5cd211f4a995f0df8",
+          "line_end": 52,
+          "line_start": 47,
+          "path": "CLAUDE.md",
+          "repository": "rivet-dev/sandbox-agent",
+          "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/CLAUDE.md#L47-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6c25dc1181309c68e41fe2fb68bccfd14a2fc070ed02ae068d8889d5324ab9e"
+      ],
+      "text": "Repository development practice: contributors must keep three files in sync (common-software docs, a Dockerfile, and a Rust test file) and can verify with 'cargo test -p sandbox-agent --test common_software'."
+    }
+  ],
+  "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 286,
+        "path": "README.md",
+        "size": 11359
+      },
+      {
+        "lines": 1,
+        "path": "AGENTS.md",
+        "size": 9
+      },
+      {
+        "lines": 84,
+        "path": "CLAUDE.md",
+        "size": 5399
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3691
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 988,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": false,
+      "omitted": 1,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_209bee1167325c20b5a6a5b4a69a100b",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/rivet-dev/sandbox-agent/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/56989d83a6914f57/manifest.json",
+  "package_id": "pkg_5bd0b674e8430220b1fb39205f3d5f77e0b106f4f27dcbafe623c555ad934a77",
+  "repo": "rivet-dev/sandbox-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "461ff6e6d621af3e6bb5ad4ba5611c56b07f1863c2eb73fdad2c1fd4e289d89f",
+  "snapshot_id": "56989d83a6914f57",
+  "sources": [
+    {
+      "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+      "git_sha": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "lines": 1,
+      "path": "AGENTS.md",
+      "repository": "rivet-dev/sandbox-agent",
+      "sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
+      "source_id": "src_d29ee9571acb5fa8a8bef0a90f837935",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/AGENTS.md"
+    },
+    {
+      "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+      "git_sha": "34bea89436ed76a6d6cdfbd5cd211f4a995f0df8",
+      "lines": 84,
+      "path": "CLAUDE.md",
+      "repository": "rivet-dev/sandbox-agent",
+      "sha256": "a5fe3a309024134ab2e4130056183bfe76d86dd502fc36dc99b176a368cc3e0c",
+      "source_id": "src_e63aeda93bd55f609ba948651e015917",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/CLAUDE.md"
+    },
+    {
+      "commit": "bbc195cc3fb5a1dd9cb05d8437442768c511e17e",
+      "git_sha": "1894edce7693484356c248184d0c0f95a882713e",
+      "lines": 286,
+      "path": "README.md",
+      "repository": "rivet-dev/sandbox-agent",
+      "sha256": "e38710e374e280d58e952d5efd80e078afee4fd133812948de4b173c35de6c20",
+      "source_id": "src_d2070ba8873159f2bba6a794213032c0",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/rivet-dev/sandbox-agent/blob/bbc195cc3fb5a1dd9cb05d8437442768c511e17e/README.md"
+    }
+  ],
+  "summary": "Sandbox Agent is a Rust server that runs inside sandboxes and exposes a universal HTTP/SSE API for controlling coding agents (Claude Code, Codex, OpenCode, Cursor, Amp, Pi), with a TypeScript SDK, CLI, and Inspector UI. Evidence is mostly README product documentation plus contributor instructions in CLAUDE.md.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,626 @@
+{
+  "applied_operation_id": "op_aaec4ac611bf4775b2ec00d3e2717b7f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_59e67ac1078bfe3977e33549522ae908ba9cc9f48ac24f4303a6ad9ea8dbe296",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 4,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L4-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f70315a3d06824ea698bfaaaa81399aa2d757e6fe9cce5e58a33b0fc13fa3ba5"
+      ],
+      "text": "onUI ships as a lightweight browser extension for Chrome, Edge, and Firefox plus a local MCP bridge for annotation-first UI pair programming."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_225e4bbd78c8649ca64eed9b8a3d919b76d49cd7fc23ad50541212e38c6c4baf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "55567e1c0b7873b8a42ad20370e3bb3bb0238b9a",
+          "line_end": 166,
+          "line_start": 158,
+          "path": "docs/mcp-setup.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/mcp-setup.md#L158-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d875cca8d97c35fa295c2ed4effd6cf4446586ba802f46790371ce8ca824b45b"
+      ],
+      "text": "The local MCP server exposes eight tools: onui_list_pages, onui_get_annotations, onui_get_report, onui_search_annotations, onui_update_annotation_metadata, onui_bulk_update_annotation_metadata, onui_delete_annotation, and onui_clear_page_annotations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b078dcab1d17214f58df8e8bf2fd5b882b441175fa19dabb4f67a830194f54a2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 149,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L137-L149"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 179,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L177-L179"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "55567e1c0b7873b8a42ad20370e3bb3bb0238b9a",
+          "line_end": 48,
+          "line_start": 43,
+          "path": "docs/mcp-setup.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/mcp-setup.md#L43-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_307ac30c39b592e66554324f9d4bf67244bd099ce9d85e8a39a37d97f896a52b",
+        "slc_62ce6bf83fee9aeede351a240cafb032ffd77864c8f7bef5c16fca7311080fc5",
+        "slc_f667f2afe90502bbdc00e7036d2d9c2c70d10adb24f1f769ed610d4dca710b00"
+      ],
+      "text": "The MCP server is registered as 'onui-local' and runs via node on the onui-cli.js entrypoint; setup auto-registers it for Claude Code and Codex when those CLIs are installed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a6cdbcd4247e87899182199c11af1f69428675c9f61a12bcd6317259577f95a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "55567e1c0b7873b8a42ad20370e3bb3bb0238b9a",
+          "line_end": 18,
+          "line_start": 16,
+          "path": "docs/mcp-setup.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/mcp-setup.md#L16-L18"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "24acfe055779c2bab47831d49aa3336030a7538d",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "docs/release.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/release.md#L5-L10"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 36,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L28-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40f14f0eb0b87e3307086ee24c81936fca35f8607901e5f1d8ebb9c9c7f3561b",
+        "slc_b9908b89f00ae25dd09916deac38dd28f0e5685e663f11fd3d7765f01305bdc7",
+        "slc_cc5440707d69aa1428be9bb6c4382ef1b5255d2738e417a98da8776ee4a8c943"
+      ],
+      "text": "The extension offers two capture flows: Annotate mode for element-level targeting (with Shift multi-select) and Draw mode for rectangle/ellipse region annotations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41d153f34f7591ceaf331e220166e1da97b0bb3885eeb85f391f160e6373031c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "02a454c08fe148896f87f5134a20abb9995e5bc2",
+          "line_end": 28,
+          "line_start": 25,
+          "path": "docs/usage.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/usage.md#L25-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c9e452ffe98c8424bb94a173917df209ff425fad66ae10bf5a0eeffbafba34ea"
+      ],
+      "text": "Each annotation supports a comment, an intent (fix, change, question, approve), and a severity (blocking, important, suggestion)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7417f873c6180d1cb2ed9b5b5e9a0c9146fb0d0338b442f30a70cef61ab41dd6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "55567e1c0b7873b8a42ad20370e3bb3bb0238b9a",
+          "line_end": 217,
+          "line_start": 217,
+          "path": "docs/mcp-setup.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/mcp-setup.md#L217-L217"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "02a454c08fe148896f87f5134a20abb9995e5bc2",
+          "line_end": 93,
+          "line_start": 85,
+          "path": "docs/usage.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/usage.md#L85-L93"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 36,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L28-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47758df94faa4c591205c8ee321164fab553aa3eaa2c2ba227f33e22e666cc38",
+        "slc_8e975bd7200b3c6e6e997d9de777ad018259aceb1421d172b441b2fb3262da4e",
+        "slc_cc5440707d69aa1428be9bb6c4382ef1b5255d2738e417a98da8776ee4a8c943"
+      ],
+      "text": "Exports come in four output levels (compact, standard, detailed, forensic); region annotations include shape and geometry fields in report output at detailed and forensic levels."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ddb7a23072693e7461594b65c4ba343c9e070098f80ed9b0cb8e1e3c51eb9b32",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "02a454c08fe148896f87f5134a20abb9995e5bc2",
+          "line_end": 115,
+          "line_start": 113,
+          "path": "docs/usage.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/usage.md#L113-L115"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 36,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L28-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a9e4948f11eb2e3e2081ad7b38cec557ea700b436b07ee1a674e39f337e8182",
+        "slc_cc5440707d69aa1428be9bb6c4382ef1b5255d2738e417a98da8776ee4a8c943"
+      ],
+      "text": "The extension uses Shadow DOM isolation for stable styling and per-tab ON/OFF control that is off by default; new tabs start with onUI off."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_edd5867200ff4a0a80e1b74c866f7fe819ca3ba95fdd7a25cc7b8fbfa9253eab",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "02a454c08fe148896f87f5134a20abb9995e5bc2",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "docs/usage.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/usage.md#L97-L97"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "02a454c08fe148896f87f5134a20abb9995e5bc2",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "docs/usage.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/usage.md#L109-L109"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "02a454c08fe148896f87f5134a20abb9995e5bc2",
+          "line_end": 101,
+          "line_start": 99,
+          "path": "docs/usage.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/usage.md#L99-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2bdccb23b27749187d3769d6f23518b2824b57143c6a316563d0a744f74fd499",
+        "slc_bd85a2968bf77d97314a4ef999a0feac4561b901309c227c1a1ee9702c56809c",
+        "slc_d23cc8e2a55a15381e54f273d22a95f358d39002ad6bc96a78795f9b87970de1"
+      ],
+      "text": "In annotate mode the page freezes: scrolling is disabled and page interactions are blocked so element positions stay stable; draw mode does not freeze the page."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d73add54cd0a6bd30cc47dd6a09c250cbc0a73ecfd8719c5027999e90e5cb955",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 247,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L242-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46ebe0d1df722efb6228580cac2b8e5baabc54ad537604a579630acf581cf5de"
+      ],
+      "text": "The repository has three packages: core (shared annotation/report types and formatters), extension (background/content/popup runtime), and mcp-server (local MCP server plus native bridge setup/doctor tooling)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a547781567d5e5f8d33025c008f8a3f69e59de5abae6b6398fc7c1c9d93d0f6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L123-L123"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "c98a371bb62b6a566c1f2ce954624c6d0a1a6f76",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/development.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/development.md#L5-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1ad7a2e266d21867284886fee7be62fa498acbe7aeeea8539f8e00e31a7bdccf",
+        "slc_d02d3f9a95a58ca0c4801071a3bc5e722795597a7ce6bb65489e27915b8fdc5d"
+      ],
+      "text": "Installer-based MCP setup uses a prebuilt release bundle and requires Node 20+; development prerequisites include Node.js 20+, pnpm 8+, and Chrome, Edge, or Firefox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_815c1dc9ce9d65ec20562d19fa0acd65d53716dd8e58d41595efe81cf6f97c2c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "c98a371bb62b6a566c1f2ce954624c6d0a1a6f76",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "docs/development.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/development.md#L27-L29"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 238,
+          "line_start": 234,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L234-L238"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "c98a371bb62b6a566c1f2ce954624c6d0a1a6f76",
+          "line_end": 49,
+          "line_start": 45,
+          "path": "docs/development.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/development.md#L45-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_985a2d00b9dee06041f382ae5009915eabd8609f5d8314bf7a4450e19c0138a2",
+        "slc_9ce92b1c7e4aa1f1fd282141d633c82a2713b8b290c5d638516aa1408369db10",
+        "slc_ea704bc49633e99164d330d396d1db88ffbe446ca1693a1cd15f4aca5d3a6b57"
+      ],
+      "text": "Repository development practice: contributors run pnpm install, pnpm check, and pnpm test:coverage; docs/development.md also documents pnpm test:all and loading unpacked builds from packages/extension/dist."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f7663ba5f01ce5b5896cdbd11c320dbee34d4dfc5d4db951277488eefbede05a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 222,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L219-L222"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 230,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L224-L230"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 217,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L215-L217"
+        },
+        {
+          "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+          "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "onllm-dev/onui",
+          "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md#L188-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3bab063bcb5ff58aa646b80cd3e980a68fbfcbe7b980bd223222af2010c70273",
+        "slc_4b60e9e623a565a702bfc7b8f50e031da74ad842f1531634a69c0c70ce925b57",
+        "slc_7a07b8d11cc2d35b67a9cf1dfc610680232d2ef3a6a86f45f6d8597689a7e95a",
+        "slc_b38f552cd2e23ba34d637463ca10d3b3ee6bf50fbb4033466e6381102b2a350e"
+      ],
+      "text": "Repository development practice: releases run locally via app.sh with no CI/CD dependency; --release gates on a clean tree, main branch, and gh auth, then bumps, tags, and publishes a GitHub release."
+    }
+  ],
+  "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 264,
+        "path": "README.md",
+        "size": 8741
+      },
+      {
+        "lines": 61,
+        "path": "docs/development.md",
+        "size": 1035
+      },
+      {
+        "lines": 41,
+        "path": "docs/doctor.md",
+        "size": 864
+      },
+      {
+        "lines": 237,
+        "path": "docs/mcp-setup.md",
+        "size": 6626
+      },
+      {
+        "lines": 78,
+        "path": "docs/release.md",
+        "size": 2768
+      },
+      {
+        "lines": 115,
+        "path": "docs/usage.md",
+        "size": 4962
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1505
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 395
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 182,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_4a9b3c1f6b0b57b5acd395938a0263cd",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/onllm-dev/onui/d1a2d29677a412353e64b15a14300dc13b84dc3c/1686a01f7710bd7b/manifest.json",
+  "package_id": "pkg_61d601755d64803c9593226924bcfe35056b23050b7cd245ce91c44753cdb5b2",
+  "repo": "onllm-dev/onui",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "488228c8e10df85d868b6e7ff3f9f09316a4a923b277b3f2679d73390019bfea",
+  "snapshot_id": "1686a01f7710bd7b",
+  "sources": [
+    {
+      "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+      "git_sha": "70a8c50307b7f0bb9f0d14d895c5b9ff43f2b4bd",
+      "lines": 264,
+      "path": "README.md",
+      "repository": "onllm-dev/onui",
+      "sha256": "954801f4b39148bc7735489632292978ed1a3d6acff28e8f2d44fec4a98b8bd9",
+      "source_id": "src_43bf6560eba85ead8b03c259c1eb56e5",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/README.md"
+    },
+    {
+      "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+      "git_sha": "c98a371bb62b6a566c1f2ce954624c6d0a1a6f76",
+      "lines": 61,
+      "path": "docs/development.md",
+      "repository": "onllm-dev/onui",
+      "sha256": "b961d0e75d06005c18fe689d2eaad701cc1cbb1c71d4c72913583adbc87d1747",
+      "source_id": "src_dd8074a330dc506eae020c908ccbced3",
+      "stored": "development.md-97db29a79153.md",
+      "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/development.md"
+    },
+    {
+      "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+      "git_sha": "7cd24952267924b0915dbf6d6ef2967053780cd9",
+      "lines": 41,
+      "path": "docs/doctor.md",
+      "repository": "onllm-dev/onui",
+      "sha256": "8e8d7e7001091f8a54f1b4ecdbbcfa92d938c636f035fc42572d2b64d53082f0",
+      "source_id": "src_9a85dc703bcc5c15b324742b74b41741",
+      "stored": "doctor.md-0bbb83a90d11.md",
+      "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/doctor.md"
+    },
+    {
+      "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+      "git_sha": "55567e1c0b7873b8a42ad20370e3bb3bb0238b9a",
+      "lines": 237,
+      "path": "docs/mcp-setup.md",
+      "repository": "onllm-dev/onui",
+      "sha256": "85e4376e972a873788c3f42c259b79f905fd93088b137422eb0eb2d50e6377d9",
+      "source_id": "src_a3e1d54b23c2580ab58d61d65e2b1889",
+      "stored": "mcp-setup.md-9474aac301cb.md",
+      "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/mcp-setup.md"
+    },
+    {
+      "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+      "git_sha": "24acfe055779c2bab47831d49aa3336030a7538d",
+      "lines": 78,
+      "path": "docs/release.md",
+      "repository": "onllm-dev/onui",
+      "sha256": "2219f0cf714629ef3ae14438f79b15ec5a6a1e3a4276bfc3a7fa1d8df61eba30",
+      "source_id": "src_40764c213bec57ef98ab74d481717d15",
+      "stored": "release.md-87479ac9ea16.md",
+      "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/release.md"
+    },
+    {
+      "commit": "d1a2d29677a412353e64b15a14300dc13b84dc3c",
+      "git_sha": "02a454c08fe148896f87f5134a20abb9995e5bc2",
+      "lines": 115,
+      "path": "docs/usage.md",
+      "repository": "onllm-dev/onui",
+      "sha256": "7a44fa96dc452806edb3f472d0c6ea1e7fdb5b6ab257ef2277d69cb2e1041c0a",
+      "source_id": "src_8c541e0ed8ff54c9ba5994bc85583b17",
+      "stored": "usage.md-72376d0b487d.md",
+      "url": "https://github.com/onllm-dev/onUI/blob/d1a2d29677a412353e64b15a14300dc13b84dc3c/docs/usage.md"
+    }
+  ],
+  "summary": "onUI is a browser extension (Chrome, Edge, Firefox) with a local MCP bridge for annotation-first UI feedback; evidence covers its capture modes, annotation schema, export levels, MCP tools, and local release/build workflows.",
+  "superseded_claim_ids": []
+}

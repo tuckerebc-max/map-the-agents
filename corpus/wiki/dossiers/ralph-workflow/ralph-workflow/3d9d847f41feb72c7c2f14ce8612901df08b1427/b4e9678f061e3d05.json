@@ -1,0 +1,678 @@
+{
+  "applied_operation_id": "op_937ee4827699493082f8c10afe9f636e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0756b1face0a85e69053abd93b70edd96b56401c1869f8bd6498593eb7621231",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 8,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L3-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27aa610eeac30c18096d7325c6ae97414041885b7f812020c0927e10814db29c"
+      ],
+      "text": "Ralph Workflow is described as a free, open-source AI agent orchestrator for coding work that takes one well-specified task and runs a Ralph loop with the user's chosen coding agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c0f087015e0f49879d441108235060bca5a30d9a2f3abd16a09c2ddd6e7435d2",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 8,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L3-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27aa610eeac30c18096d7325c6ae97414041885b7f812020c0927e10814db29c"
+      ],
+      "text": "The core orchestration is a Ralph loop of plan, build, verify, and fix stages run with the selected coding agent, after which the user returns to inspect the result."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6138f051cd67c4496c9d03d8afea6610b0056e37bf62c5624c10fd038c6b5999",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 53,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L48-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d52db16eb35a15125e5756473b68cfd640111303fe032890b88431e9c4df826"
+      ],
+      "text": "The product ships nine built-in agent backends: Claude Code, Claude Code headless, Codex, OpenCode, Nanocoder, AGY, Pi, Cursor, and Kimi; the user authenticates one locally and the tool uses it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f4d0597996b6c14f584cf0a60a9697d135fb11371873bfa1b7208c2c6080760",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L12-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2956905b6107d051f8bd706b6a3d1b9a316b76ca785d02297aa7e0b5d9d0f102"
+      ],
+      "text": "The README states the tool is not intended for vague prompts or repositories lacking tests or other guardrails, targeting work too large to babysit but too risky to trust blindly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae06c66c616fb45c77e30dba95a5309912b21c26f2085e4810620ff272c51711",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 69,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L64-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6cc2602898d36294ea12deeb4bd5bb09390568d43a4b2e9317dc5ed15e79983"
+      ],
+      "text": "The runtime requires Python 3.12 or newer and is described as local-first; the project is licensed AGPL-3.0-or-later and published on PyPI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6f8e35ff842d220ab6115e4de8b5768bb5ccbf9218469d423d5dc458e858dc10",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L31-L32"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 44,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L36-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af41d1f96999452b5678559a31350be166e0d2b0f4639a889098068e167ea21e",
+        "slc_df29cb157e21f313f30bf6b808a7700dda0007a65e0ff8cb4f02538505ae5633"
+      ],
+      "text": "A checkout install provides an `rdev` launcher whose `--version` ends in -build, deliberately leaving any globally installed `ralph` command in place; native Windows users are directed to install the published package via pipx or pip."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57fcee6b3aa34ec3c979336ece4ab6430d7a4cadd061ff251fff4c0a303e401d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md#L71-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_816615aebb11b77bc7566c4ce9f3648e7ad09a0722cf5b8d25417f6949f5c8f6"
+      ],
+      "text": "The Ralph Loop pattern is attributed to Geoffrey Huntley (ghuntley.com/ralph), with Ralph Workflow positioned as an independent reference implementation of that pattern."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f35a275a7f9bdbc9098083e74a7d98e90dafb82dcefafb0b4c315fa7c55c512",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 213,
+          "line_start": 202,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L202-L213"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 217,
+          "line_start": 217,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L217-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_786e5251f64b92cf7bea74ae5ab529e115fd2afbbaebb24beeee3d208cbfb4cb",
+        "slc_b3fec49188855c4974f7d212d640a0852eed621ad0a744df502fb4d034e5bdfd"
+      ],
+      "text": "Repository development practice: AGENTS.md mandates trunk-based development with all work committed directly to main, forbids branch creation and pull requests, and permits commits only via `ralph --generate-commit`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4242f15bcc11fae734b5dffb4d0fd9978645d757a2c8a17851b57de26db5dcc5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 245,
+          "line_start": 244,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L244-L245"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 45,
+          "line_start": 44,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L44-L45"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L54-L54"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 242,
+          "line_start": 239,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L239-L242"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3887c60cc217be6d071d9254634e2c1a6a8f2415fe741237f5e6b264aca0ebeb",
+        "slc_9e305f2f4b70aa215ab256ad82be8eebd01dad711dea4d63f102ccfb91ce0658",
+        "slc_e43e516b4c0ef4d29a78845523c5e1e6f084cc6ab5b9a3b2117cab3bc00ce0a4",
+        "slc_e66e94fd44ce9ff59601ee7aa50837dbfa10db62128dd04a24783b7d3c3e1006"
+      ],
+      "text": "Repository development practice: contributors must run `make verify` from ralph-workflow/ before completion; it must pass in full with no unrelated-failure exemptions, and a red gate is owned by whoever next observes it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34ff02e0e76ad65e22f6596286f51db4a60142ead597023033688841c9732259",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 171,
+          "line_start": 162,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L162-L171"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 143,
+          "line_start": 140,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L140-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e7e6971bd3497ac8836572f4e7687478c585c775603f0a1c51e9e676537d7a2",
+        "slc_9f21818b480e9691e209d9f603f8be6c2f25b9a61beaf2827cd07fa661bd0686"
+      ],
+      "text": "Repository development practice: all tests must fit a combined 60-second wall-clock budget enforced by import-time invariants in ralph/verify.py, with non-circumvention rules against splitting suites or raising per-suite timeouts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_faac9936e43b482813be191f4051587cbf7d43e452cf683a9a33fb48caac1eb8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 113,
+          "line_start": 100,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L100-L113"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+          "line_end": 96,
+          "line_start": 86,
+          "path": "AGENTS.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md#L86-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2853346d5b5c58fa31db72a69b2469f64f9b5f3eb47afee60e8f1a674503c5ae",
+        "slc_a1c0b3a3bc2c7c9919b1919ad80d387bcfae3b6db52b815a63d801164e5d9e8e"
+      ],
+      "text": "Repository development practice: a three-level fabrication_guard.py checks public-facing markdown, with level 1 as a pre-commit hook and levels 2-3 verifying external repos, packages, and stats against live sources."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9967166034659e175b3c0e77ba362471373692660f363fc7959a806f07699f5a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "2c5f8e1637208eeed885caceb8826d48475877c6",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "CLA.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/CLA.md#L7-L8"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "2c5f8e1637208eeed885caceb8826d48475877c6",
+          "line_end": 28,
+          "line_start": 10,
+          "path": "CLA.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/CLA.md#L10-L28"
+        },
+        {
+          "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+          "git_sha": "2c5f8e1637208eeed885caceb8826d48475877c6",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "CLA.md",
+          "repository": "ralph-workflow/ralph-workflow",
+          "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/CLA.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0316d9a453d39f0266d97cddd5ac4ff4c3ea93237b8836ec23870cf9e528f682",
+        "slc_0bf42ae382fea7ca23844a940640d9f551ca39298498ce779e532a3045d55dcb",
+        "slc_4fbfaf224a89dcefccfbe1d1c554fc1c7d6fbcebc2a9e0238fab698fa58125a2"
+      ],
+      "text": "Repository development practice: contributions are accepted under a CLA granting the project rights to relicense under AGPL-3.0-or-later, commercial, or future open-source licenses, agreed by checking a box in a GitHub or Codeberg pull request."
+    }
+  ],
+  "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 73,
+        "path": "README.md",
+        "size": 3187
+      },
+      {
+        "lines": 260,
+        "path": "AGENTS.md",
+        "size": 18242
+      },
+      {
+        "lines": 32,
+        "path": "CLA.md",
+        "size": 1738
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 267
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 2058
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1893
+      },
+      {
+        "path": "START_HERE.md",
+        "reason": "file-budget",
+        "size": 3159
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 3819
+      },
+      {
+        "path": "docs/agents/README.md",
+        "reason": "file-budget",
+        "size": 1075
+      },
+      {
+        "path": "docs/agents/agent-support-architecture.md",
+        "reason": "file-budget",
+        "size": 17399
+      },
+      {
+        "path": "docs/agents/fabrication-guard.md",
+        "reason": "file-budget",
+        "size": 6260
+      },
+      {
+        "path": "docs/agents/testing-guide.md",
+        "reason": "file-budget",
+        "size": 17105
+      },
+      {
+        "path": "docs/agents/type-ignore-policy.md",
+        "reason": "file-budget",
+        "size": 2740
+      },
+      {
+        "path": "docs/agents/verification.md",
+        "reason": "file-budget",
+        "size": 21554
+      },
+      {
+        "path": "docs/agents/workspace-trait.md",
+        "reason": "file-budget",
+        "size": 4544
+      },
+      {
+        "path": "docs/architecture/README.md",
+        "reason": "file-budget",
+        "size": 548
+      },
+      {
+        "path": "docs/code-style/documentation-rubric.md",
+        "reason": "file-budget",
+        "size": 6020
+      },
+      {
+        "path": "docs/code-style/index.md",
+        "reason": "file-budget",
+        "size": 4667
+      },
+      {
+        "path": "docs/examples/example-api.md",
+        "reason": "file-budget",
+        "size": 3293
+      },
+      {
+        "path": "docs/legacy-rust/README.md",
+        "reason": "file-budget",
+        "size": 1031
+      },
+      {
+        "path": "docs/ralph-workflow-policy/agent-policy.md",
+        "reason": "file-budget",
+        "size": 10639
+      },
+      {
+        "path": "docs/ralph-workflow-policy/architecture-policy.md",
+        "reason": "file-budget",
+        "size": 18209
+      },
+      {
+        "path": "docs/ralph-workflow-policy/clean-code-policy.md",
+        "reason": "file-budget",
+        "size": 10399
+      },
+      {
+        "path": "docs/ralph-workflow-policy/dependency-policy.md",
+        "reason": "file-budget",
+        "size": 11639
+      },
+      {
+        "path": "docs/ralph-workflow-policy/documentation-policy.md",
+        "reason": "file-budget",
+        "size": 8930
+      },
+      {
+        "path": "docs/ralph-workflow-policy/gate-script-policy.md",
+        "reason": "file-budget",
+        "size": 19735
+      },
+      {
+        "path": "docs/ralph-workflow-policy/linting-policy.md",
+        "reason": "file-budget",
+        "size": 17171
+      },
+      {
+        "path": "docs/ralph-workflow-policy/security-policy.md",
+        "reason": "file-budget",
+        "size": 20411
+      },
+      {
+        "path": "docs/ralph-workflow-policy/testing-policy.md",
+        "reason": "file-budget",
+        "size": 26649
+      },
+      {
+        "path": "docs/ralph-workflow-policy/typechecking-policy.md",
+        "reason": "file-budget",
+        "size": 19784
+      },
+      {
+        "path": "docs/ralph-workflow-policy/verification-policy.md",
+        "reason": "file-budget",
+        "size": 29078
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-12-project-policy-holistic-improvement.md",
+        "reason": "file-budget",
+        "size": 6466
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-14-shared-subagent-smoke.md",
+        "reason": "file-budget",
+        "size": 4849
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-12-active-prompt-template-revision.md",
+        "reason": "file-budget",
+        "size": 5107
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-12-project-policy-holistic-improvement-design.md",
+        "reason": "file-budget",
+        "size": 13899
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-12-update-nagger-design.md",
+        "reason": "file-budget",
+        "size": 8127
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-shared-subagent-smoke-design.md",
+        "reason": "file-budget",
+        "size": 3029
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-telemetry-agent-config-version-design.md",
+        "reason": "file-budget",
+        "size": 4306
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-14-telemetry-identity-lifecycle-design.md",
+        "reason": "file-budget",
+        "size": 10661
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-12-active-prompt-template-revision-design.md",
+        "reason": "file-budget",
+        "size": 3424
+      }
+    ],
+    "omitted_count": 37,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3828,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 40,
+      "complete": false,
+      "omitted": 37,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_ca129f64fe2c5ad894b7df38622e1837",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 5
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ralph-workflow/ralph-workflow/3d9d847f41feb72c7c2f14ce8612901df08b1427/b4e9678f061e3d05/manifest.json",
+  "package_id": "pkg_1f353cc38670856b39538f39a18e7f8e507f60848fa808c297f16b65a2396c47",
+  "repo": "ralph-workflow/ralph-workflow",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6e6803d0004864b341fb523c32b01abfe9e241eef08998e545dc2d1975b0d4fb",
+  "snapshot_id": "b4e9678f061e3d05",
+  "sources": [
+    {
+      "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+      "git_sha": "c611a8a29a4a89faa27e1bfc3b6a4611bad4c5b8",
+      "lines": 260,
+      "path": "AGENTS.md",
+      "repository": "ralph-workflow/ralph-workflow",
+      "sha256": "12709ed89b25985cfe59502420af0723a930cbba7b01fddf3dfeddb4da38a256",
+      "source_id": "src_8da7d3fe5da75296b1f082770dfafc72",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/AGENTS.md"
+    },
+    {
+      "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+      "git_sha": "2c5f8e1637208eeed885caceb8826d48475877c6",
+      "lines": 32,
+      "path": "CLA.md",
+      "repository": "ralph-workflow/ralph-workflow",
+      "sha256": "b51380848e1eaab94c9c149a0683543252d7f2f4949e1924d3d888236264b67f",
+      "source_id": "src_d87442ae281058df86849c191ed733bb",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/CLA.md"
+    },
+    {
+      "commit": "3d9d847f41feb72c7c2f14ce8612901df08b1427",
+      "git_sha": "3dbd24a7d0e8441d1a40c130ff6ce452ca187d1e",
+      "lines": 73,
+      "path": "README.md",
+      "repository": "ralph-workflow/ralph-workflow",
+      "sha256": "63db4ed7f5e865106d54cd047c4fc663bad4c8b2afbe73ed1195bcc3a8ed991d",
+      "source_id": "src_554234629ff25ee7ab417a0f748d4709",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Ralph-Workflow/Ralph-Workflow/blob/3d9d847f41feb72c7c2f14ce8612901df08b1427/README.md"
+    }
+  ],
+  "summary": "Ralph Workflow is a documented open-source AI agent orchestrator that runs a plan-build-verify-fix loop with a selectable coding agent backend, requiring Python 3.12+ and licensed AGPL-3.0-or-later. Repository development practice (AGENTS.md, CLA.md) mandates trunk-based commits, a 60-second test budget under make verify, a fabrication guard, and a CLA for contributions.",
+  "superseded_claim_ids": []
+}

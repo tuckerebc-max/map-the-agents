@@ -1,0 +1,704 @@
+{
+  "applied_operation_id": "op_e4488694a30c47cfb03b1d931ea9c3ca",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_7efce07b686bdfdbeee3cb8cbd2d58ec5753c1377284e43d7ddfe34b5fe6befd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L57-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e1dcbc6d465343ddf1d2924d03f4cb5944ba190473a56768b2ba06c91102f6b"
+      ],
+      "text": "tlbx offers two session types: a Terminal Session rendering the user's terminal with output retained on the host, and an Agent Controller Session rendering a conversation view with tool calls, code changes, questions and approval buttons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_196dec3902e59da9df7a6975b5b13de182fbbe9ddf316f9b7450781f549e3766",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L84-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_994b4271407aaf7679cad70d58b786927fe53035b8b2df8978606fcbb6bbe5d2"
+      ],
+      "text": "Agent Controller has built-in launch options for Codex, Grok Build, OpenCode, Gemini CLI and GitHub Copilot CLI, and compatible ACP agents can be added via acp-agents.json; Claude Code runs in a normal terminal session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9252486372b375db29ce38ff427a1fe9c5ccc1a044d0f5485154b8d1c2e29bfa",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 129,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L123-L129"
+        },
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 149,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L145-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_105751f070d1e36ac31fbde50358a7d726cd7b26fbef3cdd5a81496c482cd92e",
+        "slc_b6e9ddabbd2fee333802037bd6ed07a85366e243b0bbffb1e511009c203f6ae2"
+      ],
+      "text": "The architecture splits roles: the host runs tlbx and the user's tools, mthost runs terminals, mtagenthost runs Agent Controller sessions, and a browser client connects over HTTPS/WebSocket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_50eae6673982c6e0184c32e1ae8d5aaa79174ed233e8f0dc56243092615d6fe2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L131-L131"
+        },
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4457b974f94ddabfb5456db2f220b2a817b0fc967249bf8bfab9920aac13becf",
+        "slc_a5d7caed3a0b89d7ea45d81af1666847a69164e5c6d51a9e059ab0cfe27cba07"
+      ],
+      "text": "Sessions persist when the browser disconnects or the user switches devices, as long as the host stays awake and online; shutting down the host stops its processes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6eb01da92ed8c289eb8aa243478eb72d1531a033664ede5bcc3fb17e0e3ca38e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L151-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c9f5b47a5cede99cb72ad7dfe7613aee21ab27df82d857772e80ca13b3c79fb"
+      ],
+      "text": "tlbx is built with .NET 10 Native AOT, TypeScript and xterm.js."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8448f753ab7c7b10680b49135ea52f4c32ebf804a613ee3b31d567a8cf54c83",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L66-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fbda5e13f4c36d98ab4cb1141e53ef4efd63ad12d5a49d1e8eda4c4512ecd538"
+      ],
+      "text": "The product supports PowerShell, bash and zsh plus full-screen terminal apps like btop, vim, lazygit and database shells, with sessions splittable into panes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c4c95c59e05b81682e111a4549b2a56ae361d1983e23653ceeec285cf36b34e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 82,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L76-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dfd048f9742897ea915eb69ea33996c7aa15d1394447b507e159e2a35ccdd8e5"
+      ],
+      "text": "The mt helpers let agents send prompts, read terminal output, and inspect or control the app preview within the workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_61595994a539a0c0d6e5873f9b7fcbee5e5c7cb785cfc78f571f4086aa524a30",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 82,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L76-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dfd048f9742897ea915eb69ea33996c7aa15d1394447b507e159e2a35ccdd8e5"
+      ],
+      "text": "Users can paste images with Ctrl+V/Cmd+V so the terminal receives the file path, use multiline prompts with saved drafts, attachments and scheduled follow-ups, and resend prior input via an Alt+H history view."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8af2698e15b91569f069a37393bbeb558b390cc5f4ee7724903b8cbf70f37939",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 104,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L102-L104"
+        },
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 98,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L96-L98"
+        },
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L92-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15ecbe461f301f57cecf53a63155fb54536ee7da7644eacabe35c1f710f4153a",
+        "slc_a619222f6453f4ac319a47b4b98e17c00660709018f157a12021ba24220e87cc",
+        "slc_cb795fe79cf35896f325b63f724394e12ed840f9fc92781607e971166902d276"
+      ],
+      "text": "Installation is via a curl/piped bash script on macOS/Linux or an irm/iex PowerShell command on Windows, with the installer setting up password-protected HTTPS and updates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35aee09d8a10481c4da6ce834dfc37f911c682ab0d5dced9b198df5a13d6bbf8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 141,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L141-L141"
+        },
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 139,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L137-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49430ea497721fd97a1154ad90990748c625995b28cc09887345a5d3531a0c34",
+        "slc_94d0bb31695b5fc0a3222e320d6037ed5c6eb7977aa21ab0d281252bc079ce9a"
+      ],
+      "text": "A quick local trial is available by running npx @tlbx-ai/midterm, which downloads the stable native binary and opens a browser; the npm launcher may lag behind native releases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dee109a0d33b13718bd2e46ab30aea055c835a17715cda2ee17f7a39dfef8384",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+          "line_end": 119,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md#L118-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_266374ac7e199f8a9316c7c84b4010507c0b38a96e063e1a3a19135dd1eb307e"
+      ],
+      "text": "The README notes that repositories, credentials and processes stay on the host, but coding agents may send data to their model provider according to their own configuration and terms."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eff3b16b10d6ca0d9429af5368981f80b23ed47d4dbb275e241e339cd48e4a9e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "0d97cfbbb02d9c4fbaf3b5081ed40d10a37d4322",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "AGENTS.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/AGENTS.md#L19-L19"
+        },
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "0d97cfbbb02d9c4fbaf3b5081ed40d10a37d4322",
+          "line_end": 43,
+          "line_start": 30,
+          "path": "AGENTS.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/AGENTS.md#L30-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13d22d4c66c093b1f7f51dab8e3b59762d9823c4217d136a2ef24223de551a79",
+        "slc_a2a49f2aed216b5ea69bebc0319704b43faf21307f1ce7b8aeb66c78124d8017"
+      ],
+      "text": "Repository development practice: AGENTS.md and CLAUDE.md instruct contributors that development happens on the dev branch, with main reserved for stable integration, and that release scripts (release-dev.ps1, promote.ps1, release.ps1) may only be run for the explicitly requested release path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4a040a0d43c9e8b0ae23ab2a35ce15d44df1c8742f22fd40fb3879c1724256c4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "0d97cfbbb02d9c4fbaf3b5081ed40d10a37d4322",
+          "line_end": 15,
+          "line_start": 8,
+          "path": "AGENTS.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/AGENTS.md#L8-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_964ec5e0e2898186c5b2483f2ca39baf9cf862adf55983d42d2a2905312151d5"
+      ],
+      "text": "Repository development practice: every release invocation must explicitly pass -TestCategories from a fixed set (assets, frontend, server, runtime, installers, dependencies, build, or all), and stable releases require all."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_32719d1269b5bf2ecbc28fd410d5461f0438046c0ff1d7b24976ffc53870ab12",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+          "git_sha": "0d97cfbbb02d9c4fbaf3b5081ed40d10a37d4322",
+          "line_end": 26,
+          "line_start": 21,
+          "path": "AGENTS.md",
+          "repository": "tlbx-ai/tlbx",
+          "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/AGENTS.md#L21-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d8b482e210981de83067f93b9532b7b85ec11f1097ae19b97eda18465f5445b2"
+      ],
+      "text": "Repository development practice: contributors are told to keep major data-processing, protocol and business logic in C# while keeping the TypeScript frontend lean, to remove superseded dead code in the same change, and to use domReconcile.ts for keyed UI lists so content-only updates preserve DOM node identity."
+    }
+  ],
+  "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 180,
+        "path": "README.md",
+        "size": 9690
+      },
+      {
+        "lines": 101,
+        "path": "AGENTS.md",
+        "size": 12862
+      },
+      {
+        "lines": 101,
+        "path": "CLAUDE.md",
+        "size": 12596
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2499
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 1699
+      },
+      {
+        "path": "docs/ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 46274
+      },
+      {
+        "path": "docs/AUDIT.md",
+        "reason": "file-budget",
+        "size": 5068
+      },
+      {
+        "path": "docs/AgentControllerSessionDesign.md",
+        "reason": "file-budget",
+        "size": 102426
+      },
+      {
+        "path": "docs/BUILD-RELEASE.md",
+        "reason": "file-budget",
+        "size": 3862
+      },
+      {
+        "path": "docs/CLA.md",
+        "reason": "file-budget",
+        "size": 3100
+      },
+      {
+        "path": "docs/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1883
+      },
+      {
+        "path": "docs/CommunicationSecurity.md",
+        "reason": "file-budget",
+        "size": 2964
+      },
+      {
+        "path": "docs/FEATURES.md",
+        "reason": "file-budget",
+        "size": 8257
+      },
+      {
+        "path": "docs/Localization.md",
+        "reason": "file-budget",
+        "size": 1871
+      },
+      {
+        "path": "docs/MOBILE_DEVICE_BRIDGE_PRIVACY.md",
+        "reason": "file-budget",
+        "size": 2745
+      },
+      {
+        "path": "docs/MOBILE_DEVICE_LAB.md",
+        "reason": "file-budget",
+        "size": 2587
+      },
+      {
+        "path": "docs/RELEASE-INTEGRITY.md",
+        "reason": "file-budget",
+        "size": 2590
+      },
+      {
+        "path": "docs/ResponsiveTesting.md",
+        "reason": "file-budget",
+        "size": 9236
+      },
+      {
+        "path": "docs/TerminalOwnershipTransitionDesign.md",
+        "reason": "file-budget",
+        "size": 9628
+      },
+      {
+        "path": "docs/TerminalTransportPerformanceAnalysis-2026-09-05.md",
+        "reason": "file-budget",
+        "size": 24702
+      },
+      {
+        "path": "docs/ai/AGENTS.md",
+        "reason": "file-budget",
+        "size": 22005
+      },
+      {
+        "path": "docs/ai/CLAUDE.md",
+        "reason": "file-budget",
+        "size": 19261
+      },
+      {
+        "path": "docs/chrome-web-store/mobile-device-bridge/LISTING.md",
+        "reason": "file-budget",
+        "size": 4950
+      },
+      {
+        "path": "docs/code-signing.md",
+        "reason": "file-budget",
+        "size": 7975
+      },
+      {
+        "path": "docs/compliance/CRA-READINESS.md",
+        "reason": "file-budget",
+        "size": 6839
+      },
+      {
+        "path": "docs/devbrowser.md",
+        "reason": "file-budget",
+        "size": 25250
+      },
+      {
+        "path": "docs/examples/midterm-bak/commands/1_echo-hallo.txt",
+        "reason": "file-budget",
+        "size": 43
+      },
+      {
+        "path": "docs/file-radar.md",
+        "reason": "file-budget",
+        "size": 4375
+      },
+      {
+        "path": "docs/marketing/README.md",
+        "reason": "file-budget",
+        "size": 2095
+      },
+      {
+        "path": "docs/marketing/ScreenshotAutomation/README.md",
+        "reason": "file-budget",
+        "size": 2708
+      },
+      {
+        "path": "docs/marketing/ScreenshotAutomation/docs/video-quality-rubric.md",
+        "reason": "file-budget",
+        "size": 4759
+      },
+      {
+        "path": "docs/marketing/launch-assets-2026-07/README.md",
+        "reason": "file-budget",
+        "size": 954
+      },
+      {
+        "path": "docs/marketing/requirements.txt",
+        "reason": "file-budget",
+        "size": 55
+      },
+      {
+        "path": "docs/multi-instance-install.md",
+        "reason": "file-budget",
+        "size": 21385
+      },
+      {
+        "path": "docs/release-size-audit-2026-05-08.md",
+        "reason": "file-budget",
+        "size": 15325
+      },
+      {
+        "path": "docs/roadmap/csharp-analyzer-campaign.md",
+        "reason": "file-budget",
+        "size": 38410
+      },
+      {
+        "path": "docs/roadmap/rust-rewrite-analysis.md",
+        "reason": "file-budget",
+        "size": 12999
+      },
+      {
+        "path": "docs/roadmap/voice-pipeline-plan.md",
+        "reason": "file-budget",
+        "size": 5935
+      },
+      {
+        "path": "docs/settings-audit.md",
+        "reason": "file-budget",
+        "size": 13767
+      },
+      {
+        "path": "docs/settings-docs.md",
+        "reason": "file-budget",
+        "size": 21385
+      },
+      {
+        "path": "docs/site/index.md",
+        "reason": "file-budget",
+        "size": 1495
+      }
+    ],
+    "omitted_count": 38,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1450,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 41,
+      "complete": false,
+      "omitted": 38,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_15639d7ec01650e6b9e021bd9404f589",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tlbx-ai/tlbx/f4e92650419094d42b7c9d8f8f516213ef415fbc/85ca0d4d0e4cf7cf/manifest.json",
+  "package_id": "pkg_a6a313d34bfe058ce0af182018fb56180f61c55e32d0818ce461ec3f361b35ba",
+  "repo": "tlbx-ai/tlbx",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "09d2181810ef4340ffdb0198ff3d22f79a5a9227d5575aedb565483bde0c7cb6",
+  "snapshot_id": "85ca0d4d0e4cf7cf",
+  "sources": [
+    {
+      "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+      "git_sha": "0d97cfbbb02d9c4fbaf3b5081ed40d10a37d4322",
+      "lines": 101,
+      "path": "AGENTS.md",
+      "repository": "tlbx-ai/tlbx",
+      "sha256": "db6d4a9f0d27804a6804ef67199f15a6d20b6baf42f407acfd034ae0f0861863",
+      "source_id": "src_b8696a810e455077bf1025570c1fe844",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/AGENTS.md"
+    },
+    {
+      "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+      "git_sha": "0acd2a1516500aa43d9854f6d91718a42a4b766c",
+      "lines": 101,
+      "path": "CLAUDE.md",
+      "repository": "tlbx-ai/tlbx",
+      "sha256": "634f65a36cd15ce0bc9a7064660bf185eef972c9bf5d638bfa251792340c991a",
+      "source_id": "src_fdb63e0f354357d99ebcfc56fd52b51d",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/CLAUDE.md"
+    },
+    {
+      "commit": "f4e92650419094d42b7c9d8f8f516213ef415fbc",
+      "git_sha": "c72f1818b175ebb0387e8e51589ee9f51c331b85",
+      "lines": 180,
+      "path": "README.md",
+      "repository": "tlbx-ai/tlbx",
+      "sha256": "d3c5c2fc7ef5c067430f156a50639cf88cdf2bf57c09b01db1751b74b5576c40",
+      "source_id": "src_a5ee5229cf6f5e658541fe4670e30c64",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/tlbx-ai/tlbx/blob/f4e92650419094d42b7c9d8f8f516213ef415fbc/README.md"
+    }
+  ],
+  "summary": "The snapshot is the README of tlbx (formerly MidTerm), a browser-based terminal multiplexer for running shells and coding agents persistently on a host, plus AGENTS.md/CLAUDE.md contributor instructions covering release workflows and design constraints. Product claims come from README documentation; contributor-facing rules are reported only as repository development practice.",
+  "superseded_claim_ids": []
+}

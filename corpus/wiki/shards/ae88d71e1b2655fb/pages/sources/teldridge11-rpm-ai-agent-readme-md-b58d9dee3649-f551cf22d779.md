@@ -1,0 +1,36 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_5f2135c40a07cf6f8b613ba6a20e7c66e3a1c033a216317e9853cccbb8b2f5d5
+- clm_85556d562eeea1c291cc9740bf7b94482a8acef987be36c7a56cdc54594c48ca
+- clm_8b2ce330958ed3e4b79d0223d176c15700cfda812f579caf7ec8ceeaa1e389ef
+- clm_b545fd18a2cb706154f7ab184b74f03eccafd7a74f592589e72981477f0b4933
+- clm_de9b7e8923e8db58cbb9aad6663387a41ae270353cfc1adbb948e71199787b8e
+- clm_ee399891bd92fe6f6136246590067291313b63f93bf179725c7578f6a72eea54
+- clm_f79a057886a417c80818a069cce8d4eca8b680f11bfc99379de7630877e52d1f
+maturity: draft
+page_id: pg_d58f63ad08f55e3aa321f551cf22d779
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_1b47902fdbd156fdab24a082fa7bcd08
+title: teldridge11/RPM-AI-Agent/README.md @ b58d9dee3649
+updated_at: '2026-09-14T04:25:31Z'
+---
+
+# teldridge11/RPM-AI-Agent/README.md @ b58d9dee3649
+
+<!-- rcw:begin owner=source:src_1b47902fdbd156fdab24a082fa7bcd08 block=evidence -->
+- The repository includes a set of RPM problems the agent can be tested against, plus an image illustrating the layered architecture. [@claim:clm_5f2135c40a07cf6f8b613ba6a20e7c66e3a1c033a216317e9853cccbb8b2f5d5]
+- Each of the three layers contributes capabilities the others cannot, and combined they reportedly solve problems with high accuracy. [@claim:clm_85556d562eeea1c291cc9740bf7b94482a8acef987be36c7a56cdc54594c48ca]
+- Reported accuracy: 11/12 (91.7%) on basic 2x2 problems, 2/8 (25%) on challenge problems, and 17/20 (85%) on previously unseen problems. [@claim:clm_8b2ce330958ed3e4b79d0223d176c15700cfda812f579caf7ec8ceeaa1e389ef]
+- Running the agent requires Python and the Pillow image processing library installed locally. [@claim:clm_b545fd18a2cb706154f7ab184b74f03eccafd7a74f592589e72981477f0b4933]
+- The agent mimics human reasoning with a three-layer approach: layer one finds obvious patterns, layer two filters candidate answers violating patterns, and layer three scores remaining answers by attribute similarity. [@claim:clm_de9b7e8923e8db58cbb9aad6663387a41ae270353cfc1adbb948e71199787b8e]
+- The project targets Raven's Progressive Matrices, a visual-reasoning intelligence test with 2x2 or 3x3 matrices and six or eight answer choices per problem. [@claim:clm_ee399891bd92fe6f6136246590067291313b63f93bf179725c7578f6a72eea54]
+- The agent is run from the Agent directory with `python Test.py`, and results are written to ProblemResults.csv. [@claim:clm_f79a057886a417c80818a069cce8d4eca8b680f11bfc99379de7630877e52d1f]
+<!-- rcw:end owner=source:src_1b47902fdbd156fdab24a082fa7bcd08 block=evidence -->
+
+## Researcher notes
+

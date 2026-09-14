@@ -1,0 +1,741 @@
+{
+  "applied_operation_id": "op_23953f901a384964a25ec63d753351ac",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0e0b7e93437fe7741ab03b85ed11bba215278617b02b76b74ea6b49c13ec04b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f5cbff8369f35e17a42aa7163c39f0404090956ba3e66675be7cee2f8048516f"
+      ],
+      "text": "peerd is described as a general-purpose agent runtime built on browser primitives (Workers, origins, sandboxing, OPFS, WASM/WASI, WebRTC, WebAuthn, WebExtensions) that runs inside Chrome and Firefox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ffb39d9dd53d3709f9ddb054d15da4cc24521bcb49841076596aff7ecbb9ea6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 157,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L151-L157"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 149,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L148-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c8c64748de02c48cd36088f3f422287147dcca34560e0adbfac0807b63fe178",
+        "slc_a835bff28e62378118fdbfeb51f76c9fdcd3eb48a4644af23fe7e7419cccb204"
+      ],
+      "text": "The extension has five main modules, each exposing its public API via index.js: peerd-provider (model adapters), peerd-egress (vault, network policy, denylist, audit), peerd-engine (WebVM/Notebook/App/headless execution), peerd-runtime (agent loop, actors, tools, sessions, memory, permissions), and peerd-distributed (preview-only P2P)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_daf7653b96fb12bd81fdb2e05601b573c5f9449df6538c91823d10b66c9978e0",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 91,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L87-L91"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 54,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L38-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76dd2e96cac99dd83e70879e638f95d4f863e5993aa439671da1179e5e76747a",
+        "slc_e1fb681c1596d997113ba3dcca5aa7f79d7ab5bfdc7bba4e55c4f26f03ad2f00"
+      ],
+      "text": "The main agent delegates page and compute-environment work to separate keyless actors whose tools are scoped to that environment; non-orchestrator agent loops run in dedicated worker heaps, and requests fail if the browser cannot prove that boundary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47bd4b11d4833074141f3c11470f7d7ee0fefd90aa9243b3c9b4b295b36dedbb",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 65,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L62-L65"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 97,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L93-L97"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "aa73927870de6a2b82163a56e2bc843c746c93d0",
+          "line_end": 60,
+          "line_start": 51,
+          "path": "docs/security/ARC-TESTING.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/security/ARC-TESTING.md#L51-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eecd92406520faeac19b0af9b9c3b41ea328f8414f4ea520d426a4d02c0649f",
+        "slc_7422341c4f1dba3ffa8cab6ba8270aca104ef86eec25c4f5a2f0a7b7061a252a",
+        "slc_78f3104cc068c268f2d50c8a768f0a8ca061ab3427d8e601f7d03627637d7010"
+      ],
+      "text": "Credentials, network rules, confirmations, and audit stay with the extension; egress controls include refusal of private-network/cloud-metadata targets, denylist checks, and redirect blocking, with per-operation scoped network policies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_493a5940a94099b8603b9a0fef44d07ade0064dd0ce5b00f2f566449ab05e48f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+          "line_end": 125,
+          "line_start": 120,
+          "path": "docs/APP-ACTORS.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md#L120-L125"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+          "line_end": 118,
+          "line_start": 113,
+          "path": "docs/APP-ACTORS.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md#L113-L118"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+          "line_end": 18,
+          "line_start": 16,
+          "path": "docs/APP-ACTORS.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md#L16-L18"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "docs/APP-ACTORS.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md#L20-L24"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+          "line_end": 109,
+          "line_start": 81,
+          "path": "docs/APP-ACTORS.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md#L81-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_072fec6e9eabd4547945dd6a76f98a5f082d13a6b5306b1717fe9dd53b006583",
+        "slc_719e92c45c7ed49351f3952bd5ece5386c6f64e8bf181f40d4754644f67705b9",
+        "slc_87804e2777493d58ff8b52e791db67905e5ca1e09b441d9ee4a3166630f740c5",
+        "slc_8b5ef7299478869f91a8e7c7dee13d16c98805f30f1c0f5f2d9ace5d0ba8375e",
+        "slc_f21e9fdb8448afaa1d3c6687c322097abbe20fa6eac47452434159141447eae8"
+      ],
+      "text": "Apps integrate via window.peerd APIs: agent.open() reveals a trusted drawer only during real user activation, agent.expose() declares observe/act semantic adapters, and peerd.data provides bounded JSON persistence (1 MB per write) mapped to data/<key>.json in the App's working tree."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d5ed33ed3326fa1f189374f1712af495251c40c0e4a91394e3be81d744ba76c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+          "line_end": 154,
+          "line_start": 151,
+          "path": "docs/APP-ACTORS.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md#L151-L154"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+          "line_end": 76,
+          "line_start": 61,
+          "path": "docs/APP-ACTORS.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md#L61-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_269be6fb1808de63d22842a5b3405f39b5df07f2069968c4444a31ead157f2d0",
+        "slc_b802a8812636b7f0bffd52f8d923c520704523ba01a333cdd7b22afd7c0c8e7a"
+      ],
+      "text": "App manifests use peerd.json with fields like kind, entry, agent (kind bound-app, profile, surface, name, instructions, runtime), and capabilities; a conforming Git repository places peerd.json and its entry file at the root."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_804ed06809a60749efeded84ac6a12179a8bf6c2a03d12e4c41016c38d8f8492",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 144,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L142-L144"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 140,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L135-L140"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 54,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L38-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5af5ef730b96e5f00bfd96aa6b2617132147c2b1a09276266f831ab18c53f285",
+        "slc_ce0ee46b8338227ff3193d165814d7b23e89e700ce5e972a0ea5da8be0895573",
+        "slc_e1fb681c1596d997113ba3dcca5aa7f79d7ab5bfdc7bba4e55c4f26f03ad2f00"
+      ],
+      "text": "Sessions, memory, skills, goals, review, and checkpoints live in the extension; a local vault holds secrets and protected security records, with passphrase unlock always available and passkey unlock dependent on WebAuthn PRF support."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d436bff6373fd6860f6912f796530a39ac58b9820ec5f48b44e647f25d866eb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 240,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L233-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e5b0635080451e8433d776782bb5b5af8ddc6b8880d4b7967b809c65f2ab5f9"
+      ],
+      "text": "The shipped extension has no npm runtime dependencies; third-party runtime code is vendored under extension/vendor/ with SOURCE.txt provenance files and SHA-256 pinning in vendor.lock.json, verified by bun run check:vendor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49c4ba9d289e2de2df1495b5d9705982d3b48fdc34cbca22dd730db9c4c20f70",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "1097da4311ec79a36ff47f37b3826d85ce5cd2fc",
+          "line_end": 100,
+          "line_start": 87,
+          "path": "docs/BROWSER-COMPATIBILITY.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/BROWSER-COMPATIBILITY.md#L87-L100"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "1097da4311ec79a36ff47f37b3826d85ce5cd2fc",
+          "line_end": 48,
+          "line_start": 34,
+          "path": "docs/BROWSER-COMPATIBILITY.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/BROWSER-COMPATIBILITY.md#L34-L48"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "1097da4311ec79a36ff47f37b3826d85ce5cd2fc",
+          "line_end": 83,
+          "line_start": 73,
+          "path": "docs/BROWSER-COMPATIBILITY.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/BROWSER-COMPATIBILITY.md#L73-L83"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "1097da4311ec79a36ff47f37b3826d85ce5cd2fc",
+          "line_end": 69,
+          "line_start": 54,
+          "path": "docs/BROWSER-COMPATIBILITY.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/BROWSER-COMPATIBILITY.md#L54-L69"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "1097da4311ec79a36ff47f37b3826d85ce5cd2fc",
+          "line_end": 118,
+          "line_start": 104,
+          "path": "docs/BROWSER-COMPATIBILITY.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/BROWSER-COMPATIBILITY.md#L104-L118"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "1097da4311ec79a36ff47f37b3826d85ce5cd2fc",
+          "line_end": 24,
+          "line_start": 18,
+          "path": "docs/BROWSER-COMPATIBILITY.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/BROWSER-COMPATIBILITY.md#L18-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d0b0de138be30e71044b19c2c5a31be2ce070f1ddf1547108971b81c6663589",
+        "slc_6efe583bdaf3ab33e4cbfc8449be22ecadd54696e0168703587c9331875fb075",
+        "slc_7097301b4d987d7f9f13ccd518fdf3ef30d80f325763096ee189828eb77cdeb2",
+        "slc_810ac08f3778795d2b69db4ce820986626e3be595e92a42e20e550d31288e5bd",
+        "slc_d04bdfbdd7266e346cea71771c5a2ff2617570726ef92d68247eeafaa676912e",
+        "slc_e14b9454232bfc157ee5299d151feb9b531875a3794ab73f65b02ec5bf068827"
+      ],
+      "text": "On Firefox, WebVM cannot boot from an extension page, threaded WebAssembly is unavailable, the Pod 'js' command is refused, Apps are disabled pending Firefox 154 adoption, offscreen-hosted tools are absent or degraded, and CDP-only automation features fall back to chrome.scripting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_402c631786821379e914a8231aadfd4c38c1200a4aa4fc1c09a17bf031dacaf9",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "aa73927870de6a2b82163a56e2bc843c746c93d0",
+          "line_end": 60,
+          "line_start": 51,
+          "path": "docs/security/ARC-TESTING.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/security/ARC-TESTING.md#L51-L60"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "aa73927870de6a2b82163a56e2bc843c746c93d0",
+          "line_end": 91,
+          "line_start": 81,
+          "path": "docs/security/ARC-TESTING.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/security/ARC-TESTING.md#L81-L91"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "aa73927870de6a2b82163a56e2bc843c746c93d0",
+          "line_end": 64,
+          "line_start": 62,
+          "path": "docs/security/ARC-TESTING.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/security/ARC-TESTING.md#L62-L64"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "aa73927870de6a2b82163a56e2bc843c746c93d0",
+          "line_end": 68,
+          "line_start": 66,
+          "path": "docs/security/ARC-TESTING.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/security/ARC-TESTING.md#L66-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78f3104cc068c268f2d50c8a768f0a8ca061ab3427d8e601f7d03627637d7010",
+        "slc_b6412a78f1b1bd06bdc909b42e722bdf5ca96adc04a7626d967d0b4b627322dc",
+        "slc_c9d778c826e00ca3a92b96a8d31bdc2e1a3573d6ebe60fee731adbbc3b5495cf",
+        "slc_eb30c6b0a3088f686027748fbcfa0b9dee595e86ea83d368d158d001589beb85"
+      ],
+      "text": "Documented residual egress limits: Chrome DNR does not intercept worker-created WebSockets, private-network classification is lexical (no DNS resolution, so DNS rebinding is outside the check), and query strings/fragments are not a complete DLP boundary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6199c440af142e87948f652ed539e828ec4ee6ef42b59e5d5ae9f8a003ae860a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 215,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L213-L215"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 183,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L174-L183"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 193,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L187-L193"
+        },
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 198,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L195-L198"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0418cc46a48b2aa94f99d28ac5dea21238f550aa7e8b44957ce8623d5308c738",
+        "slc_24f491124afe8ebfc2348bc5383d68ce856a38c86c6551e42ab4fb81db562b82",
+        "slc_8021139d614edba803682840f6bf1151e8759914e51c2751803bee9a8a52fef2",
+        "slc_bf4c3ff489ae02b4c2a1d181bb299ece8ae7ba071c23dbdfaad7a84c98e0c9c5"
+      ],
+      "text": "Repository development practice: development uses Bun commands (bun install, gen:dev, test, typecheck, lint, e2e:verify, preflight) across three test surfaces (Bun unit tests, in-browser Chrome/Gecko tests, live Chrome E2E), plus a red-team suite; generated files like extension/manifest.json must not be hand-edited and CI checks them for drift."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_911ac392ddb6c1f71ea69f84caed15ac36739f8f5b786f40565c75f572a8bb36",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+          "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+          "line_end": 172,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "notasithlord/peerd",
+          "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md#L166-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57108e1f8376c4fb98caeb9013bd56547822349c3bb27beb5790a9a314bb32cf"
+      ],
+      "text": "The source extension is vanilla JavaScript with ES modules running directly when loaded unpacked, with no development bundler or transpiler; release packaging with Bun minifies only a disposable staging copy and preserves module boundaries and vendored bytes."
+    }
+  ],
+  "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 254,
+        "path": "README.md",
+        "size": 13577
+      },
+      {
+        "lines": 208,
+        "path": "docs/APP-ACTORS.md",
+        "size": 9820
+      },
+      {
+        "lines": 131,
+        "path": "docs/BROWSER-COMPATIBILITY.md",
+        "size": 8338
+      },
+      {
+        "lines": 82,
+        "path": "docs/DWAPP-BUNDLE.md",
+        "size": 3779
+      },
+      {
+        "lines": 43,
+        "path": "docs/EXTENSION-HOSTS.md",
+        "size": 2581
+      },
+      {
+        "lines": 156,
+        "path": "docs/security/ARC-TESTING.md",
+        "size": 10832
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/security/DEPENDENCY-AUTOMATION.md",
+        "reason": "file-budget",
+        "size": 11267
+      },
+      {
+        "path": "docs/security/HARDENING-ROADMAP.md",
+        "reason": "file-budget",
+        "size": 2963
+      },
+      {
+        "path": "docs/security/LIFECYCLE-CONTRACT.md",
+        "reason": "file-budget",
+        "size": 8436
+      },
+      {
+        "path": "docs/security/RED-TEAM-RESULTS.md",
+        "reason": "file-budget",
+        "size": 56063
+      },
+      {
+        "path": "docs/security/THREAT-MODEL.md",
+        "reason": "file-budget",
+        "size": 75883
+      },
+      {
+        "path": "docs/store/ANTI-BOT-POSTURE.md",
+        "reason": "file-budget",
+        "size": 1416
+      },
+      {
+        "path": "docs/store/LISTING.md",
+        "reason": "file-budget",
+        "size": 4645
+      },
+      {
+        "path": "docs/store/OPEN-DECISIONS.md",
+        "reason": "file-budget",
+        "size": 2244
+      },
+      {
+        "path": "docs/store/PERMISSION-JUSTIFICATIONS.md",
+        "reason": "file-budget",
+        "size": 10141
+      },
+      {
+        "path": "docs/store/PRIVACY.md",
+        "reason": "file-budget",
+        "size": 4834
+      },
+      {
+        "path": "docs/store/REVIEWER-NOTES.md",
+        "reason": "file-budget",
+        "size": 12053
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 31840
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 66291
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 35806
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4345
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 9831
+      }
+    ],
+    "omitted_count": 16,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1658,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 22,
+      "complete": false,
+      "omitted": 16,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_8801133ff8895f9694dd33b0b5f08801",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/notasithlord/peerd/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/c54f3ca7139dac7c/manifest.json",
+  "package_id": "pkg_1300d6b855489548865171302f7484f0cb4bd7b068cbfe40c5e2949c86a77e2f",
+  "repo": "notasithlord/peerd",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6ef3c7faffe7f99aec75011da2a92116b0e093b7d659c7a2d5446733940d7848",
+  "snapshot_id": "c54f3ca7139dac7c",
+  "sources": [
+    {
+      "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+      "git_sha": "93803e24806e1ae0dd450c36e3f745e20eb92597",
+      "lines": 254,
+      "path": "README.md",
+      "repository": "notasithlord/peerd",
+      "sha256": "3fa5cdc07d61b55ead7fadec23b4363685fc15bea76fa6e9fe870a91206ed611",
+      "source_id": "src_fff4f1b8fce156b9ae5b28baa4870253",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/README.md"
+    },
+    {
+      "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+      "git_sha": "6af8c10f41eca150365262065c891642291fa375",
+      "lines": 208,
+      "path": "docs/APP-ACTORS.md",
+      "repository": "notasithlord/peerd",
+      "sha256": "5d200efbdd8c4a15c0c0cceb8b671a340d2d4566f454806eabd5ee7675d5eeef",
+      "source_id": "src_03743a43d00a55f9bfaae00e25cbd01e",
+      "stored": "app-actors.md-7f4cba89a778.md",
+      "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/APP-ACTORS.md"
+    },
+    {
+      "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+      "git_sha": "1097da4311ec79a36ff47f37b3826d85ce5cd2fc",
+      "lines": 131,
+      "path": "docs/BROWSER-COMPATIBILITY.md",
+      "repository": "notasithlord/peerd",
+      "sha256": "0216501b62137fe65879aef6d60e36f3a25340e8a18df1609b232a1849f72e68",
+      "source_id": "src_117164f539cc537ca3e038469252f654",
+      "stored": "browser-compatibility.md-531e59ee3cf6.md",
+      "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/BROWSER-COMPATIBILITY.md"
+    },
+    {
+      "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+      "git_sha": "1fe98e30082c1acbb96fddf375e199d6d1e8265f",
+      "lines": 82,
+      "path": "docs/DWAPP-BUNDLE.md",
+      "repository": "notasithlord/peerd",
+      "sha256": "c36dd450fe38646721b48c96aafc931e12504c7bb6d360f8569790bfb5384936",
+      "source_id": "src_4fcaf4fc7afc510a86004131ee7052dd",
+      "stored": "dwapp-bundle.md-b02fa11bb46d.md",
+      "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/DWAPP-BUNDLE.md"
+    },
+    {
+      "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+      "git_sha": "f196f7b45d57a917a9c78c7df4ff34736ab266cd",
+      "lines": 43,
+      "path": "docs/EXTENSION-HOSTS.md",
+      "repository": "notasithlord/peerd",
+      "sha256": "b09eb22a4f8c39477a4a8f3876e07c3865590f9829bff2a52ab8cf86079f46d5",
+      "source_id": "src_1724e91f2af058f09bd9525fa6cd2ef5",
+      "stored": "extension-hosts.md-7980d574bbe6.md",
+      "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/EXTENSION-HOSTS.md"
+    },
+    {
+      "commit": "12d1a54976bc07c4c8a4e9875f694964bd3a65b3",
+      "git_sha": "aa73927870de6a2b82163a56e2bc843c746c93d0",
+      "lines": 156,
+      "path": "docs/security/ARC-TESTING.md",
+      "repository": "notasithlord/peerd",
+      "sha256": "135177f3e4431fb7076e2104884d06bbaee28d67ffb2300edd380b04944adb16",
+      "source_id": "src_59e8ed91088259fd8c4792e06493c7c5",
+      "stored": "arc-testing.md-91c419a1a5c1.md",
+      "url": "https://github.com/NotASithLord/peerd/blob/12d1a54976bc07c4c8a4e9875f694964bd3a65b3/docs/security/ARC-TESTING.md"
+    }
+  ],
+  "summary": "peerd is a browser-extension agent runtime (Chromium and Firefox) built on WebExtension/browser primitives, with five extension modules, keyless per-environment actors, vault/egress security, and documented Firefox capability gaps. Evidence covers product architecture, security boundaries, App-actor interfaces, dependencies, and development workflows. Evidence coverage: 98 of 115 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

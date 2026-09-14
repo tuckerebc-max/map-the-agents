@@ -1,0 +1,873 @@
+{
+  "applied_operation_id": "op_f5ff388fef4b4c318b173041afdcab98",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf2049569598bd6c38faf8a10a088498986ce784f3eba0016edff457d2c9605a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 19,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L16-L19"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99e23fe0914f03b48949f448e4fd64f63f9cf904ea9ded335a0b1d01d03dd733",
+        "slc_db50507e84b608f2c92b275bbc77fe77caf3d7c61ca5c031a6591292172ac351"
+      ],
+      "text": "NTM is a single Go binary combining tmux session orchestration, work triage, safety policy and approvals, Agent Mail coordination, durable state capture, and a local REST/WebSocket API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28a2aedfa9321ca60b9ebc7e1d13fb11b506cbbad2e8954efaef24cd1ec5c2e0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 503,
+          "line_start": 500,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L500-L503"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 496,
+          "line_start": 492,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L492-L496"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 455,
+          "line_start": 454,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L454-L455"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b65696e3fff6af19d5d89a50a91046a6fce259144657ce1a788fbdfe1cf776a",
+        "slc_4e5d14e2ca52e7137cf0ed698646e355ae4ef94bc1581e426cf34db7d8fae3de",
+        "slc_f281af46b396786b2721cef6c17cdcecb585cc7e2d1b7e4a9d4cb71cbfafa6f7"
+      ],
+      "text": "The product exposes machine-readable automation via --robot-* CLI flags plus an ntm serve server offering REST under /api/v1, SSE at /events, WebSocket at /ws, /health, and a generated OpenAPI spec."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_579ff8daf1dd6c38ac5600ef26801a30e250c320ca1c8f42d84b8f5c59d054c1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 70,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L67-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f03266989effbe19620f15d075b4b65550abe732203b90f77e78f3b6eba1805c"
+      ],
+      "text": "tmux is required; agent spawning needs CLIs such as Claude Code, Codex, Antigravity, or Grok Build (Gemini legacy); br, bv, Agent Mail, cass, dcg, and pt are optional integrations checkable via ntm deps -v."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c6f2438413f9a631febb3b74d87347e692a23127511dfd50d1c9979289105ec6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 380,
+          "line_start": 378,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L378-L380"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 321,
+          "line_start": 315,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L315-L321"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55b701c674f1089f4fa43a29c94b09da7f97a49c66ecb928f87f7fc166f451ca",
+        "slc_cab29e81d4acd8d20a535d75b7e66092275fb65bbaf5e62afdd54df966601818"
+      ],
+      "text": "Destructive operations are governed by policy rules that allow, block, or approval-gate actions; approvals are durable and auditable, with two-person workflows where self-approval is rejected."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36c2aaa1c4508617f1d71c64a88832760a22fe172b7ffb58e0c9a213910b314e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 321,
+          "line_start": 315,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L315-L321"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cab29e81d4acd8d20a535d75b7e66092275fb65bbaf5e62afdd54df966601818"
+      ],
+      "text": "ntm locks force-release is approval-gated by default (automation.force_release: approval): a second operator grants via ntm approve, and the serve HTTP endpoint and dashboard conflict action honor the same policy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7146c544074f47c9fccb64d2dfa73bc5fe5bce693d2a990383d49f05959b4d1e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 114,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L112-L114"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 161,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L160-L161"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 175,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L172-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23f54b0e919998d4295a25f021e03530666df865cbdc204f44519c8efa65b55e",
+        "slc_eddfef9f9a726070ac1619b45a8da9b1b23ed1189bcee02d5b748da1ad548118",
+        "slc_f6baacb00d2c5d1cef3ad2fd2b9309120545ae35588c1bb71c2cfd58c2a50797"
+      ],
+      "text": "NTM spawns named tmux sessions with labeled agent panes and a user pane, supports labels for multiple swarms per project, and --worktrees creates per-agent ntm/<session>/<agent> branches and worktrees for isolation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de5796eda0afe09a6e1a846757c3d6a75382895a558b40ba5aec943627091acc",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 239,
+          "line_start": 235,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L235-L239"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 228,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L226-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_930822b7c6e702b66a4862153154824a09ebbcf5304f9bdca6c413e3fcf8f1e9",
+        "slc_d4cf6f281e6cf23a554a6ebb03ede19d978f5e1deace4ccc9d015cc3386b1484"
+      ],
+      "text": "Automated assignment treats tracker labels as an authorization boundary: operator-gated labels are configurable in .ntm/config.toml, project labels extend but cannot remove built-in gates, and any plan or coverage failure stops assignment before dispatch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6d5c20d8d3b2a12df7b4db76d998040d6feabfa2058111409c23cbf6e9a3ee9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 448,
+          "line_start": 442,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L442-L448"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 440,
+          "line_start": 437,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L437-L440"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 435,
+          "line_start": 433,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L433-L435"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 429,
+          "line_start": 426,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L426-L429"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_188db8ec5f79ee9ff7d5f669aff1eb2d2323fef093b1be296b6a9f84088af4f5",
+        "slc_27c5704cc743062c0617b0baa614d2f2739b88f0626e97b2f49f17e1f2bbebfa",
+        "slc_7342e3889e225e55ba0a0f771b506e5b7695c2ad2d6a9b578262d39e3bfc7b6d",
+        "slc_9dd6a95ab2952116cde6930dba3009a7bf780a552b4451e845f04d199404d693"
+      ],
+      "text": "Durable state features include checkpoints, timelines, audit logs, history search, pipeline state with resume, and saved sessions; pipeline resume preserves completed step outputs by default and re-runs the first incomplete step."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2e0fb02a8e5cb60f6c9ae00e476361c11c045990c3b3f2c64a43223a3b9b0cd1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 680,
+          "line_start": 679,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L679-L680"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 657,
+          "line_start": 656,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L656-L657"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 662,
+          "line_start": 661,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L661-L662"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 667,
+          "line_start": 666,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L666-L667"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 675,
+          "line_start": 675,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L675-L675"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a2616ce9d4090e8ca733ef3795247a71c313ca80f879018d713f289156cf358",
+        "slc_7bf94c2de45583416395bfedb0f2d08e682426836ddb42d9d2e10d371b48d6a6",
+        "slc_cac69efe8129df5d74481b1fa6453b069c942e1b90bcebf375e859ac5c5a7e91",
+        "slc_cc99a5bbddf99679be7312c8523292225be2e2b9a4f09d6afc803f924071af06",
+        "slc_dfa7dc53d279ccad29552a77fab300c299110a49586bb857035d366bc7d0d7c7"
+      ],
+      "text": "Stated design principles include no silent data loss, graceful degradation when optional integrations are missing, idempotent orchestration, auditable actions, and safe-by-default destructive-operation handling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a2e44aa1e265a14c7468d894848b65b9fbc2a4ba487eb592265ad425644af0d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 158,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L151-L158"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 859,
+          "line_start": 855,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L855-L859"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_70c6d88bc7d1f3992d21ae1dad67614c4da9cd1d5c8b7bbd9f7179a32a153a95",
+        "slc_7c2755d063ffc1cc274cd55676e7c1fd0acb4de29f500b39dadd4e4c8715ea53"
+      ],
+      "text": "Documented limitations: tmux-centric, Linux/macOS primary, some workflows depend on external tools, Grok Build support is phase one (TUI readiness, prompt delivery, interrupt-with-message, restart, and restore-time relaunch fail closed), and it is local-first, not hosted SaaS."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11f65fda7bb8794881d634cabfd9da4720472afffe9e4414c1a6b5ae4cf56c4e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 626,
+          "line_start": 618,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L618-L626"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03a50cba2a84850e1b7ace45ab618207dc74ef986ae0fa0850382f3334a1fa80"
+      ],
+      "text": "Custom agent types load from TOML files in an agents/ directory next to the config, declaring name/alias spawn selectors, a command template, and optional readiness regexes; NTM never modifies files in agents/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cab57b915db763974386d5d96386906777f874530f4c0af627cdcd5a7928b23f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 863,
+          "line_start": 863,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L863-L863"
+        },
+        {
+          "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+          "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+          "line_end": 869,
+          "line_start": 865,
+          "path": "README.md",
+          "repository": "dicklesworthstone/ntm",
+          "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md#L865-L869"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_694645eb48b3ae739842588ad625e724d582eb188ad5bfabae9e29df84f06293",
+        "slc_e9ac6be238cf8b0b78529ed5d5bb05b3c56fad59e7f8cc887e3727578c629669"
+      ],
+      "text": "Repository development practice: the README's Development section gives build and verification commands (go build ./cmd/ntm, go test -short ./..., golangci-lint run)."
+    }
+  ],
+  "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 883,
+        "path": "README.md",
+        "size": 34450
+      },
+      {
+        "lines": 193,
+        "path": "CONTRIBUTING.md",
+        "size": 7663
+      },
+      {
+        "lines": 274,
+        "path": "SKILL.md",
+        "size": 9577
+      }
+    ],
+    "omitted": [
+      {
+        "path": "AGENTS.md",
+        "reason": "byte-budget",
+        "size": 41181
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 221243
+      },
+      {
+        "path": "UPGRADE_LOG.md",
+        "reason": "file-budget",
+        "size": 7819
+      },
+      {
+        "path": "command_palette.md",
+        "reason": "file-budget",
+        "size": 14818
+      },
+      {
+        "path": "docs/ENCRYPTION_SPEC.md",
+        "reason": "file-budget",
+        "size": 4503
+      },
+      {
+        "path": "docs/ORCHESTRATION_FEATURES.md",
+        "reason": "file-budget",
+        "size": 42382
+      },
+      {
+        "path": "docs/REDACTION_SPEC.md",
+        "reason": "file-budget",
+        "size": 11100
+      },
+      {
+        "path": "docs/WORKFLOW_EXAMPLES.md",
+        "reason": "file-budget",
+        "size": 19147
+      },
+      {
+        "path": "docs/WORKFLOW_SCHEMA.md",
+        "reason": "file-budget",
+        "size": 20487
+      },
+      {
+        "path": "docs/attention-feed-contract.md",
+        "reason": "file-budget",
+        "size": 26664
+      },
+      {
+        "path": "docs/claude-credential-isolation.md",
+        "reason": "file-budget",
+        "size": 4885
+      },
+      {
+        "path": "docs/freshness-contract.md",
+        "reason": "file-budget",
+        "size": 11653
+      },
+      {
+        "path": "docs/freshness-degraded-state-contract.md",
+        "reason": "file-budget",
+        "size": 11831
+      },
+      {
+        "path": "docs/incident-taxonomy.md",
+        "reason": "file-budget",
+        "size": 7061
+      },
+      {
+        "path": "docs/planning/AGENT_FRIENDLINESS_REPORT.md",
+        "reason": "file-budget",
+        "size": 5308
+      },
+      {
+        "path": "docs/planning/MODES_OF_REASONING_REPORT_AND_ANALYSIS_OF_PROJECT.md",
+        "reason": "file-budget",
+        "size": 42700
+      },
+      {
+        "path": "docs/planning/PLAN_TO_ADD_WEB_UI_AND_REST_AND_WEBSOCKET_API_LAYERS_TO_NTM__CLAUDE_WEB.md",
+        "reason": "file-budget",
+        "size": 65994
+      },
+      {
+        "path": "docs/planning/PLAN_TO_ADD_WEB_UI_AND_REST_AND_WEBSOCKET_API_LAYERS_TO_NTM__GEMINI.md",
+        "reason": "file-budget",
+        "size": 9788
+      },
+      {
+        "path": "docs/planning/PLAN_TO_ADD_WEB_UI_AND_REST_AND_WEBSOCKET_API_LAYERS_TO_NTM__GPT.md",
+        "reason": "file-budget",
+        "size": 42951
+      },
+      {
+        "path": "docs/planning/PLAN_TO_ADD_WEB_UI_AND_REST_AND_WEBSOCKET_API_LAYERS_TO_NTM__GPT_PRO.md",
+        "reason": "file-budget",
+        "size": 35346
+      },
+      {
+        "path": "docs/planning/PLAN_TO_ADD_WEB_UI_AND_REST_AND_WEBSOCKET_API_LAYERS_TO_NTM__OPUS.md",
+        "reason": "file-budget",
+        "size": 110790
+      },
+      {
+        "path": "docs/planning/PLAN_TO_IMPROVE_NTM_PROJECT.md",
+        "reason": "file-budget",
+        "size": 130807
+      },
+      {
+        "path": "docs/planning/PLAN_TO_MAKE_NTM.md",
+        "reason": "file-budget",
+        "size": 9246
+      },
+      {
+        "path": "docs/planning/PROPOSED_HYPERSYNC_SPEC__CODEX.md",
+        "reason": "file-budget",
+        "size": 77265
+      },
+      {
+        "path": "docs/planning/PROPOSED_HYPERSYNC_SPEC__OPUS.md",
+        "reason": "file-budget",
+        "size": 53286
+      },
+      {
+        "path": "docs/planning/TOON_INTEGRATION_BRIEF.md",
+        "reason": "file-budget",
+        "size": 5196
+      },
+      {
+        "path": "docs/planning/modes_of_reasoning.md",
+        "reason": "file-budget",
+        "size": 47524
+      },
+      {
+        "path": "docs/projection-section-model.md",
+        "reason": "file-budget",
+        "size": 19519
+      },
+      {
+        "path": "docs/reality/audit-v1.25.0.md",
+        "reason": "file-budget",
+        "size": 8447
+      },
+      {
+        "path": "docs/reality/audit-v1.26.0.md",
+        "reason": "file-budget",
+        "size": 10075
+      },
+      {
+        "path": "docs/reality/audit-v1.27.0.md",
+        "reason": "file-budget",
+        "size": 8594
+      },
+      {
+        "path": "docs/reality/audit-v1.28.0.md",
+        "reason": "file-budget",
+        "size": 7600
+      },
+      {
+        "path": "docs/reality/audit-v1.29.0.md",
+        "reason": "file-budget",
+        "size": 11617
+      },
+      {
+        "path": "docs/reality/checklist-v1.25.0.md",
+        "reason": "file-budget",
+        "size": 9733
+      },
+      {
+        "path": "docs/reality/checklist-v1.26.0.md",
+        "reason": "file-budget",
+        "size": 9732
+      },
+      {
+        "path": "docs/reality/checklist-v1.27.0.md",
+        "reason": "file-budget",
+        "size": 9733
+      },
+      {
+        "path": "docs/reality/checklist-v1.28.0.md",
+        "reason": "file-budget",
+        "size": 9732
+      },
+      {
+        "path": "docs/reality/checklist-v1.29.0.md",
+        "reason": "file-budget",
+        "size": 9733
+      },
+      {
+        "path": "docs/robot-action-errors.md",
+        "reason": "file-budget",
+        "size": 17005
+      },
+      {
+        "path": "docs/robot-action-handoff-contract.md",
+        "reason": "file-budget",
+        "size": 12441
+      },
+      {
+        "path": "docs/robot-api-design.md",
+        "reason": "file-budget",
+        "size": 27466
+      },
+      {
+        "path": "docs/robot-attention-state.md",
+        "reason": "file-budget",
+        "size": 12477
+      },
+      {
+        "path": "docs/robot-auditability.md",
+        "reason": "file-budget",
+        "size": 15493
+      },
+      {
+        "path": "docs/robot-command-registry.md",
+        "reason": "file-budget",
+        "size": 27978
+      },
+      {
+        "path": "docs/robot-contract-examples.md",
+        "reason": "file-budget",
+        "size": 29240
+      },
+      {
+        "path": "docs/robot-explainability-evidence.md",
+        "reason": "file-budget",
+        "size": 22330
+      },
+      {
+        "path": "docs/robot-historical-inspection.md",
+        "reason": "file-budget",
+        "size": 17800
+      },
+      {
+        "path": "docs/robot-ordering-pagination.md",
+        "reason": "file-budget",
+        "size": 15610
+      },
+      {
+        "path": "docs/robot-projection-sections.md",
+        "reason": "file-budget",
+        "size": 25491
+      },
+      {
+        "path": "docs/robot-redesign-transition.md",
+        "reason": "file-budget",
+        "size": 11442
+      },
+      {
+        "path": "docs/robot-request-identity.md",
+        "reason": "file-budget",
+        "size": 15948
+      },
+      {
+        "path": "docs/robot-resource-references.md",
+        "reason": "file-budget",
+        "size": 14082
+      },
+      {
+        "path": "docs/robot-schema-versioning.md",
+        "reason": "file-budget",
+        "size": 11638
+      },
+      {
+        "path": "docs/robot-section-model.md",
+        "reason": "file-budget",
+        "size": 16223
+      },
+      {
+        "path": "docs/robot-sensitivity-redaction.md",
+        "reason": "file-budget",
+        "size": 13732
+      },
+      {
+        "path": "docs/robot-sqlite-schema.md",
+        "reason": "file-budget",
+        "size": 15673
+      },
+      {
+        "path": "docs/robot-surface-taxonomy.md",
+        "reason": "file-budget",
+        "size": 16253
+      },
+      {
+        "path": "docs/robot-system-health-adapter.md",
+        "reason": "file-budget",
+        "size": 20646
+      },
+      {
+        "path": "docs/robot-watch-subscription.md",
+        "reason": "file-budget",
+        "size": 17735
+      },
+      {
+        "path": "docs/runtime-schema-design.md",
+        "reason": "file-budget",
+        "size": 26538
+      },
+      {
+        "path": "docs/sqlite-runtime-schema.md",
+        "reason": "file-budget",
+        "size": 16522
+      },
+      {
+        "path": "docs/sqlite-runtime-tables.md",
+        "reason": "file-budget",
+        "size": 18246
+      },
+      {
+        "path": "docs/verification-matrix-swarm-scale-vnext.md",
+        "reason": "file-budget",
+        "size": 11002
+      }
+    ],
+    "omitted_count": 63,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2667,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 66,
+      "complete": false,
+      "omitted": 63,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_14e117b54b225ad5939d2e37aaea75d2",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/dicklesworthstone/ntm/3c35f474879f1f64e0a8448f71ec70da656570ad/5c8f6d031fcbbfb6/manifest.json",
+  "package_id": "pkg_c4b548b6015261b807ea1520c0f52ad9d2079cff0c041fbe359ac26d9f0bb8f7",
+  "repo": "dicklesworthstone/ntm",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "78b367768f758dce3eb11533fad6cf7e1fd34d6118bbc8a83643591d12d3e442",
+  "snapshot_id": "5c8f6d031fcbbfb6",
+  "sources": [
+    {
+      "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+      "git_sha": "8a2db3e71093a994754f137c7df89f5c2097cb90",
+      "lines": 193,
+      "path": "CONTRIBUTING.md",
+      "repository": "dicklesworthstone/ntm",
+      "sha256": "35493e8307abbb2f03c9ae8b9a8d24af00c8eef15fa054ebf4d16a42fc779dbf",
+      "source_id": "src_49ee32fbe015553b8b356797331d1e32",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/CONTRIBUTING.md"
+    },
+    {
+      "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+      "git_sha": "fe01601c04f01932908f77a118711c8d07878222",
+      "lines": 883,
+      "path": "README.md",
+      "repository": "dicklesworthstone/ntm",
+      "sha256": "1b7699812719ab1a2f1ba4a6ecdc8900f9f3502c02a5f88c033ce4774bab6629",
+      "source_id": "src_6bf4e45019b550ebb846b84fdd88baf7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/README.md"
+    },
+    {
+      "commit": "3c35f474879f1f64e0a8448f71ec70da656570ad",
+      "git_sha": "b69dd3251847ef10d96e07eef042d92751035fd1",
+      "lines": 274,
+      "path": "SKILL.md",
+      "repository": "dicklesworthstone/ntm",
+      "sha256": "f4038848a0b13079e703ef5d4f03cb57fca57a463e52382085d560b803307012",
+      "source_id": "src_c58d77c05b365c5f9a9ff59cd207dea5",
+      "stored": "skill.md-0e95f5a36660.md",
+      "url": "https://github.com/Dicklesworthstone/ntm/blob/3c35f474879f1f64e0a8448f71ec70da656570ad/SKILL.md"
+    }
+  ],
+  "summary": "NTM is a Go binary that turns tmux into a local control plane for orchestrating multiple coding-agent panes, with safety/approval workflows, Agent Mail coordination, durable state, and robot/REST automation surfaces. Evidence is README-only, so claims are documentation-based. Evidence coverage: 151 of 250 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,1916 @@
+{
+  "applied_operation_id": "op_5f444d500a594b6db8f54be079140636",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_47accdd61b9129ca1481c8ce92e68259b2a051f44884572e63ef59a8a73aff5c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 24,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L21-L24"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e3597a3efe41bc93badd8bddb311c6554ddf347f88d7d4d5d2907960edf87b1",
+        "slc_72caed92c0e7b60dbf7cca26e34ae5c79b79e44cb62f2c29b7301b3fc9ecdc76"
+      ],
+      "text": "smelt is described as beta software until 1.0, released with normal 0.x.y versions rather than SemVer prereleases, and interfaces may still change between releases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0efe2776c7fb3c82a3b7415cdacdaee59ee8940d2b92d7293699a2547de174c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L9-L9"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L28-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72caed92c0e7b60dbf7cca26e34ae5c79b79e44cb62f2c29b7301b3fc9ecdc76",
+        "slc_99e1a8c60d89cb471d7c88f377e9461ff8415a05fcb42dc1b80986d03e796f6a"
+      ],
+      "text": "The project positions itself as a small, fast coding agent scriptable in Lua like Neovim, built from scratch rather than on an existing framework."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_23ec5129778e3078951204d7d3ef4a105c6b4b2b3ac1d99b19a7efb7cfbb3ab8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L28-L29"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L37-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99e1a8c60d89cb471d7c88f377e9461ff8415a05fcb42dc1b80986d03e796f6a",
+        "slc_cd3e56ccf427454601ebd5cae8d52f1f1a56a1c8108df92720dfde1db02ab546"
+      ],
+      "text": "The product includes Lua plugins (keymaps, commands, autocmds, custom tools, custom modes), a self-built terminal grid/layout renderer, a vim-style editor with motions, text objects, registers and undo, and deterministic fuzzing with a fixed clock and stubbed I/O so crashes can be replayed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_acbce7f7e4efc9de0b1797f4bc411228bd9c7f65c7e84b181ad59099e8bc1cd6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 43,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L37-L43"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 63,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L60-L63"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cd3e56ccf427454601ebd5cae8d52f1f1a56a1c8108df92720dfde1db02ab546",
+        "slc_d1b8eb752047e17f2870bf10e7cfe62953f2336cbb9814d7ea0a8caf3c406129",
+        "slc_fd59428456bab7e5eed3875246d488c83370aabe0006d09376697daa06fc4602"
+      ],
+      "text": "smelt can run with no config, using flags alone, or via `smelt auth` for ChatGPT, GitHub Copilot, and Kimi Code; running bare `smelt` auto-detects the provider from credentials."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_42bb5d43ada0617fcf111a5d7a4d308506224d9f1127c50fee6486bed7f3e584",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L65-L65"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 73,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L72-L73"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 69,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L69-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4859da3ab8828d60e6973106a04565a67fea6c7a82d86bf1152b600fad89801e",
+        "slc_677e8e6e52eb3e9b0a714d41bcf10966b5526f64a837bb61565f01190063769d",
+        "slc_d88fbe49200eef805853b249cfb4a2d8222e19f1f8cc7856219f3258c10e8c26"
+      ],
+      "text": "API-key providers are configured with `--model`, `--api-base`, and `--api-key-env`, supporting any OpenAI-compatible endpoint such as a local Ollama server or OpenAI/Anthropic/OpenRouter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd6dcefa5ffa7807ab0f95ab46f17c85fd7badf0d7d7ddf9300bf463fed0ba6c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 78,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L75-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64944fd5324b7f28c58fa0de473d3cc090ad3e76b42e76caad92945ffab3f756"
+      ],
+      "text": "The default mode cycle is Normal → Plan → Apply → Yolo, with Plan mode bundled and autoloaded; optional bundled plugins include which_key, a local request inspector, and LSP-backed semantic code tools enabled from init.lua."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_923e8573366c8415d1a5dfbd36404d82ce11518a830c0bad15d4ca45a18b5805",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L25-L25"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L49-L49"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L5-L5"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L33-L33"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L9-L9"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L41-L41"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_043768d691a699516d57591af235b5283550c072ebbbeb36f07c39b586bc58fa",
+        "slc_186c525a1f7a45d9cbf4c43beb6c524afc159992cdb0350955269fc4e2f9e273",
+        "slc_260622360e5a058166881a58424ba6ee95d401c0e9db7bd2fd3c6649a8285416",
+        "slc_7a071aa5462208b7c814501439c97d5b08773eae09bd97f7e353986c67ef5457",
+        "slc_9df5a61151b53c9fea1c057b047324b22f4c778bc20ce77fc04facb601c498e8",
+        "slc_ba7e37286614f8e851f8a165359c55c43ac86d7bc1e8597751d4c970bdf29034",
+        "slc_eff48890635003bc9f453f26390b843e1c6abd651efa26c7c7dee774e400aa96"
+      ],
+      "text": "The `smelt.config` Lua API exposes read-only snapshots of active configuration (api_base, api_key_env, context_window, model_config, provider_type) and is UiHost-tier, raising when called from headless mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df9499a52a05b86fa093a3b46141aeede7329907f49ed7402a9897a2a36354eb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L57-L57"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 63,
+          "line_start": 60,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L60-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_558842da443e5673482a4919c9c24a46df2148a4fd30838392918b96a19146c9",
+        "slc_f7bb53c7082d205e3dcd4d1e84ac335a9d387381137e57be8f660bd7ceab7392"
+      ],
+      "text": "smelt.config.runtime_status() returns sanitized runtime and reload diagnostics including revisions, pending reload state, model selection, and controller convergence, and never includes credential values or Lua source contents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3e9c6df55d810327d9835759ba11e8bdfe1cc9cf1341c20ffca272abc5fd926",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L7-L7"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 10,
+          "line_start": 9,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L9-L10"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0317eb2aa2a4e2f0241ca7b86cbf6e665651c32ccc853789c5d2ebacb2859f91",
+        "slc_296c0cdb9bebc06842db25d1368b8df57ceea6c2213ee3e11b27bf14119b9586",
+        "slc_92fc8eea530ccb92f643c29361bea8740643be97af225680c5fee0c97cdddc3c"
+      ],
+      "text": "Configuration lives at ~/.config/smelt/init.lua (or %APPDATA%\\smelt\\init.lua on Windows, with $XDG_CONFIG_HOME overriding), can be pointed at another file with --config, and a first-launch wizard writes a starter init.lua when none exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f8b31aca3635118f023e0608c75ad65127ab4e6c2f6f4a5aed2d0a5d891209d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 41,
+          "line_start": 36,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L36-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_135612f0d0f3c3e6c63b40c440b586db0578f743a03efb03c632f047a0a39e70"
+      ],
+      "text": "smelt-managed configuration reloads transactionally: a fresh candidate is validated before replacing the running generation, and on failure existing commands, keymaps, tools, hooks, providers, settings, permissions, MCP/LSP declarations and watcher roots stay active."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f7bbd6ee1d170a4b81c8c3b1e3fde70a8500979f80a0109ba1c84eca654e566",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 47,
+          "line_start": 43,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L43-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_097d93de3e97b3255536e5abb0d4b085e91f7f9e5641ee1dda70aa474028c8d8"
+      ],
+      "text": "The reload guarantee covers only smelt-owned declarations; Lua config is trusted in-process code, not a sandbox, so arbitrary filesystem, process, or network side effects of a failing candidate are not rolled back."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d65c795f0455f223c964bacc83efea63eb11ae5e86f7c96c8f3fd2f6f37e3ce3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L67-L67"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 89,
+          "line_start": 84,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L84-L89"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 92,
+          "line_start": 91,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L91-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4097a77d650796c85345b711d22ef75d9fe9da188371a85e55b09b81734fb29d",
+        "slc_5fe7248227aa21f2b09d2a8756bfa08543a9018feecbbf3b81afa77f1cc2dae0",
+        "slc_70ed98ee5e3485465810a14a69680b868cb07d9ba7deea08aaf3cd67c46eaa1e"
+      ],
+      "text": "Providers are registered via smelt.provider.register with types including openai-compatible, openai, codex, anthropic-compatible, anthropic, copilot, and kimi-code; unknown types fall back to openai-compatible and re-registering a name replaces the entry."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7457678b021cf6a302a341ebdc5f63a89a2662cd3733d096f85ca9519b2f1513",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 104,
+          "line_start": 96,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L96-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_857026058ae931aec34df05f89568980a6e117b04d23ebd7324cd29650d28680"
+      ],
+      "text": "Provider types map to specific endpoints, e.g. openai-compatible to /v1/chat/completions (Ollama, vLLM, llama.cpp, Gemini), openai to /v1/responses, anthropic to /v1/messages with thinking, and OAuth-backed codex/copilot/kimi-code endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b623d545e312f30a9140e283103929f349e8921b1f50c460a09b49aa9363e73",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 141,
+          "line_start": 123,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L123-L141"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 119,
+          "line_start": 110,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L110-L119"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a4d2daa068ad59a9891136c8834bb63745ff3dad96071555181d900ee163141",
+        "slc_b2b71b29e9ed7ad635a243315b2189943a5a2736ea6de2a54257d5073b3d2a32",
+        "slc_ba7e37286614f8e851f8a165359c55c43ac86d7bc1e8597751d4c970bdf29034"
+      ],
+      "text": "Per-model overrides cover sampling (temperature, top_p, top_k, min_p, repeat_penalty), tool_calling toggle, context window, reasoning/fast-mode support, thinking budgets, and USD-per-1M-token cost fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_81a88d1b1245837f64db73ca7c9167bd388de896d3bff97986bb7b4967a6e951",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 148,
+          "line_start": 145,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L145-L148"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 152,
+          "line_start": 150,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L150-L152"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18fc0035916c0368a35ac7440b036dc1ab39b0a26d223c0f3b4c349dce76a37b",
+        "slc_951daf016af1bcfb498a1e0d26f6d456ce4ed58afb3ae178a2530b86f6355a71"
+      ],
+      "text": "Cost tracking is built in for popular models like GPT, Claude, and DeepSeek; subscription-backed providers show zero cost, session cost appears in the status bar, totals in /stats, and unknown models default to zero cost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_552e8b273512f2b526a41c0e8e59e7b5a998e26680434966cfa398a82079ea1e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 161,
+          "line_start": 158,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L158-L161"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 168,
+          "line_start": 163,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L163-L168"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 156,
+          "line_start": 156,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L156-L156"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_028f30d2cad522024a66270491e5e54e08023e8e1787600e3bcf15fb86eaaef0",
+        "slc_ce3cd5ae04233bbd8089201659d30f2032fe33df2412bea35393364e9881dbbd",
+        "slc_f9b6aac5b3b280e7ccc394afb7487483805b82face45b77020d790d350fc2a6d"
+      ],
+      "text": "Model resolution on fresh launch follows CLI --model, then last explicitly chosen model from recent.json, then smelt.defaults.set in init.lua, then the first picker-visible model; /model switches at runtime and the choice is restored next launch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e03e157fdbc6c013c0a3ee48aa43097945ec6a38b63ec958870d0c1dd449b38",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 194,
+          "line_start": 189,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L189-L194"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 187,
+          "line_start": 185,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L185-L187"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 203,
+          "line_start": 196,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L196-L203"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55f7414f3fad5fad5da7d906a3d0c6590863f3a39a3887aa591a719f81c32f43",
+        "slc_94654f5aaff2f82b0b6dd713573045f407713f2f5c93a56aa47307ba6ed7f19b",
+        "slc_d704bf6eac72822b74ef4caea391de90a0f68fae4f4880df0520e1bd20ffda83"
+      ],
+      "text": "Modes and reasoning effort are set via CLI flags or init.lua and toggled at runtime with Shift+Tab (modes) and Ctrl+T (reasoning); reasoning levels include off/low/medium/high/xhigh/max/ultra plus provider-defined labels."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_655ec79d3a4400355f00bb82c67b0ecf8bfd93d4af195c47bf7d2e3dbcb48b57",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 289,
+          "line_start": 289,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L289-L289"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 306,
+          "line_start": 306,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L306-L306"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 301,
+          "line_start": 300,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L300-L301"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 268,
+          "line_start": 264,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L264-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_491376a940032a039339da14fd8aa2b49d725eff281d97e113574979a2529d16",
+        "slc_a4aa9bb6d59f70fc05db3de0a0e9740cbfe60b5cd461cd87c5700366b357961e",
+        "slc_c9059de6e582d7596419e502610f43b762856986acdc9afbb14515b2ff4b1102",
+        "slc_d8350cf61bef17a03a0eb2882e44f9457994eabca09b136c9e36c49ed07e338b"
+      ],
+      "text": "Settings are written to smelt.settings in init.lua or via --set KEY=VALUE; unknown keys raise at access and type mismatches on assignment, and settings apply to the running session without writing to disk themselves."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5a30fe029976e32f74dd8d638366df32729aed4ed0e27a253bbec3abfa98e7e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 338,
+          "line_start": 308,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L308-L338"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 359,
+          "line_start": 357,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L357-L359"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 298,
+          "line_start": 291,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L291-L298"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5fc3b3e4bc1cd6daa54e0acff8aa1eb0003b95c98afc20a569ad4b52034a8808",
+        "slc_b12de7a42a913e612ebd42bb3c8cdd14a2716ce061e9183914464f117b3215e0",
+        "slc_be585c598237b209d55a7788db24b5091f36f3e46eb00be231a39cef54ddb913"
+      ],
+      "text": "Settings include vim keybindings, auto_compact with compact_threshold, auto_continue policy (off/goal/always), status-bar toggles for tokens/sec, tokens, cost, ghost-text prediction, tips, and file icons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8fb71e1117d6e844a74b0e4725ae384ec7d00283985e50b12403b0e84be0df24",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 382,
+          "line_start": 374,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L374-L382"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 372,
+          "line_start": 361,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L361-L372"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f625dfd241bae3ff6f119c6e0b82819ac329ae4240103e31bf44f7287a9a128",
+        "slc_9a1b770a1323ac0c1a64d4de0a66a59c66e13369ab27fcd7e50bc269ade51029"
+      ],
+      "text": "On quota or rate-limit errors the conversation pauses with queued messages held; retries back off from 1 to 2, 4, then every 5 minutes, honoring provider reset times, and manual retry is done by pressing Enter with an empty prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b04a9dda990acbafeabb1b09779a2d87ca4d2640caec14b27b4d7e6f020bca3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 406,
+          "line_start": 402,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L402-L406"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 394,
+          "line_start": 393,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L393-L394"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 400,
+          "line_start": 396,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L396-L400"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_941cd853e0548d279ece929c57a9d5e38ea6f48b491bfef675ce5f07d51c9fc2",
+        "slc_b6eb1a7b53819755edcced3b8328fe60470a12802b820bdf36e75efb998092d5",
+        "slc_bccbec4e43de3ca84c30d17146f457dc253bc53eb27f84f734d51e09e6f4efff"
+      ],
+      "text": "The request_audit setting controls provider-request records stored per session database: summary metadata by default, full reconstructable payloads, or off; SMELT_REQUEST_AUDIT pins the mode per process and overrides Lua config even after /reload."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5556b9a585bed1aeb0f9bfd7e2fe94b2291a09f01567b61b11d4acda95d86c6f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 414,
+          "line_start": 410,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L410-L414"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d43b3b13192b8393de1a6c626b23eedf1ee4f06ea3f3ee606778a3501ba1e274"
+      ],
+      "text": "Fast mode requests accelerated inference but requires the active model to resolve supports_fast_mode=true; /fast on|off|toggle changes the session and unsupported models reject the command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_01faf88b050a3d2b0c0242022942d26503004c107c7f306f5264b4f1509826f4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 509,
+          "line_start": 506,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L506-L509"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 519,
+          "line_start": 511,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L511-L519"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 529,
+          "line_start": 521,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L521-L529"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ba78b2b643299cc317924e81de88e7a77cf29d16efedbf3f85d37df7f75d8a4",
+        "slc_7a413246163358625b3bcc2d30cc16327c2c92706a2c021701e8aad3abf00f90",
+        "slc_f5dacd6afab0f0852f3dd3cf56fb991188b37d04fb7d6a944fcd0214d39e1dab"
+      ],
+      "text": "MCP servers run as child processes over stdio, registered via smelt.mcp.register with command, args, env, timeout (default 30000ms) and enabled fields; only the local server kind is supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b938d252a89c0e7724b7d387006abe74a5c809ae22ec775666dab0412622d58",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 538,
+          "line_start": 536,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L536-L538"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 532,
+          "line_start": 531,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L531-L532"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1aeb771114c7970d2205c71136aa275b7bb65590b9f14f005ffbf46fd2d1e2cf",
+        "slc_4e143f033632702870bac43833e4fa6b145a24d4cb7a437e2746f09dfdde9c2c"
+      ],
+      "text": "MCP tools appear in the agent's tool list with server-prefixed names (e.g. filesystem_read_file), default to ask permission, and are governed by a separate mcp ruleset matching qualified tool names."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08ff060ee9a569accd2a6d45cb983231814d8a2524588a52571ac7f6d7d164b3",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 553,
+          "line_start": 548,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L548-L553"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 544,
+          "line_start": 542,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L542-L544"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56062ee10d20402f8a119cf5325c8f9d5a6c63e619ced4637c2d306241a06664",
+        "slc_a2fb730d8d30db7eadd4d57cb0a8bf90b9e0275b2c10046fb547f44131d27828"
+      ],
+      "text": "Skills are on-demand knowledge packs loaded via the load_skill tool, scanned from global and project-local smelt, Claude-compatible (~/.claude, .claude), and Agent Skills-compatible (~/.agents, .agents) directories, with later entries overriding earlier ones."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_568bd025fee07da25be82a6580745c4f3127ed434593d51406016b8c0647b1cc",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 565,
+          "line_start": 559,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L559-L565"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 573,
+          "line_start": 569,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L569-L573"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 557,
+          "line_start": 557,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L557-L557"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 567,
+          "line_start": 567,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L567-L567"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 578,
+          "line_start": 577,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L577-L578"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1258cf5f862683710310c7fe9e06f4e0415fe00976eb2b9bce75a5d06265344a",
+        "slc_4216b0bb6da678e570954a96d06f8f7abffbda5383d6c4ec55630330c307b103",
+        "slc_8069a13c0ae2ebac661768582bdc20deeee25034a068f478e66bc58f7303c56c",
+        "slc_d59d9c43155d2d0ee0f9dabab38a4a0331034f50d83965f05c4ae003e20e0765",
+        "slc_fbefb510d87594dd6053840518d5b0e5622b85055210208c328d264310d9c0dc"
+      ],
+      "text": "Each skill is a directory containing a SKILL.md with YAML frontmatter (name, description) followed by agent instructions, and may include reference assets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fc1d190502cc98b3833c79e1e0f7664afec16b3415f6e2d55c99435c6b2cb44",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 609,
+          "line_start": 607,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L607-L609"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 605,
+          "line_start": 592,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L592-L605"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 590,
+          "line_start": 590,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L590-L590"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 588,
+          "line_start": 586,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L586-L588"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d4eb737679b198adffafa40592511dfe94f22845492968836661cb14a6aa77c",
+        "slc_8a59acccc3db10c138f278e3b96dcf8e2965153d697fce96afb2dc2982951dc3",
+        "slc_8f739ebfad8e2c14c6e18283c080cbca76d4b4537d14955c54aaaa3b89b114ef",
+        "slc_927108691b824e2744d7fde2ac4893421a9ee495fde560c59574f1a62ff52790"
+      ],
+      "text": "smelt uses four platform directories (config, state, data, cache) under XDG bases on Linux/macOS, storing sessions databases, OAuth credential files, recent.json picks, per-workspace permissions, prompt history, trust hashes, rotated logs, and a read-only mirror of the embedded Lua runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85daeb1c3425a6e917ee6a7752919d8606cfcc239f83a143a414b5d087ba2c32",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 618,
+          "line_start": 611,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L611-L618"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_177fcfc9e036b7f08ccd25e157edf3a8e33a05f62f62a3a5677cf7435ef47794"
+      ],
+      "text": "OAuth credentials load from a provider-specific environment override, then a private JSON file in the state directory, then the OS keyring; smelt auth writes both file and keyring storage with 0600 files on Unix, and logout removes both copies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3109c3ca64c4a93d8fd555ba21e0e8de5862549b0e9578eb71c28b07097935db",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 502,
+          "line_start": 491,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L491-L502"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8952bc3ff3c882fc7431f6b8727e541362a49580f661994309653c2398777bb2"
+      ],
+      "text": "Themes are ThemeSpec Lua tables with a required groups table keyed by highlight-group names; built-in colorschemes live in runtime/lua/smelt/colorschemes/ and custom ones drop into the user config directory, loaded via smelt.theme.use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_824f2a058b3741e4db0a62d37a1bc26776b57e3232fc339d8940fb799e9072fc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 54,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L52-L54"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 50,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L47-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26f11a9a961e58d0e29e9ce992eeb62724dc984d2818e6125ffc99db47cbc0d3",
+        "slc_3d225980d5296c623bac0230e6e0c2b5479dce9763aaccebe5120df1040583c2"
+      ],
+      "text": "smelt is installable from source with cargo install --locked from its GitHub repository, and prebuilt binaries are offered for Linux and macOS (x86_64, aarch64) plus Windows x86_64."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66a78b864f25d3c1cd27c47bb99e942d70e47a7e2ea125985d5ece1345a6a2bb",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 90,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L88-L90"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 84,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L82-L84"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+          "line_end": 19,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md#L11-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2da43436ce787fb37d39f051429acb555eae08c1b89cc806886ee00e23d66050",
+        "slc_5c330c1ed66cad335bceea86122f1e304cd5e9ad390eb63a9a53aaf2049f5c43",
+        "slc_a20b545139af4e79804d87259604a61bf8df94425a76e984c993af18ed5933df"
+      ],
+      "text": "The project is MIT-licensed and states it is inspired by Claude Code and Neovim, with documentation hosted at leonardcser.github.io/smelt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba8b7cc4faf92af58534650938aee715415889d820e3db07e44698f7504bf6c0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/docs/reference/api/config.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md#L3-L3"
+        },
+        {
+          "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+          "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+          "line_end": 304,
+          "line_start": 303,
+          "path": "docs/docs/reference/configuration.md",
+          "repository": "leonardcser/smelt",
+          "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md#L303-L304"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4695c9415fa14d706e52903f432fbfc81ed296214ff04a4aa3c9678166edfd51",
+        "slc_c0b616ad697a0c6c97648da8325f779d9ca8095cb9209e73e5d89e5dd390265f"
+      ],
+      "text": "Lua API reference docs are auto-generated by `cargo xtask gen-lua-docs` and marked do-not-edit, suggesting a docs-generation step in the development workflow, though no contributor guide appears in the evidence."
+    }
+  ],
+  "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 90,
+        "path": "README.md",
+        "size": 3123
+      },
+      {
+        "lines": 651,
+        "path": "docs/docs/reference/configuration.md",
+        "size": 36004
+      },
+      {
+        "lines": 299,
+        "path": "docs/docs/reference/permissions.md",
+        "size": 13659
+      },
+      {
+        "lines": 347,
+        "path": "docs/docs/reference/tools.md",
+        "size": 17351
+      },
+      {
+        "lines": 58,
+        "path": "docs/docs/reference/api/config.md",
+        "size": 1720
+      },
+      {
+        "lines": 90,
+        "path": "docs/docs/reference/api/permissions.md",
+        "size": 3238
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/docs/reference/api/skills.md",
+        "reason": "file-budget",
+        "size": 1141
+      },
+      {
+        "path": "docs/docs/reference/api/tools.md",
+        "reason": "file-budget",
+        "size": 2445
+      },
+      {
+        "path": "RELEASE.md",
+        "reason": "file-budget",
+        "size": 3420
+      },
+      {
+        "path": "TESTING.md",
+        "reason": "file-budget",
+        "size": 10693
+      },
+      {
+        "path": "docs/beta-readiness.md",
+        "reason": "file-budget",
+        "size": 2306
+      },
+      {
+        "path": "docs/compat.md",
+        "reason": "file-budget",
+        "size": 1693
+      },
+      {
+        "path": "docs/incremental-transcript-architecture.md",
+        "reason": "file-budget",
+        "size": 45630
+      },
+      {
+        "path": "docs/lua-api-boundary.md",
+        "reason": "file-budget",
+        "size": 7070
+      },
+      {
+        "path": "docs/transcript-layout-benchmarks.md",
+        "reason": "file-budget",
+        "size": 86529
+      },
+      {
+        "path": "docs/docs/index.md",
+        "reason": "file-budget",
+        "size": 28
+      },
+      {
+        "path": "docs/lua-examples/README.md",
+        "reason": "file-budget",
+        "size": 1592
+      },
+      {
+        "path": "docs/docs/advanced/headless.md",
+        "reason": "file-budget",
+        "size": 5080
+      },
+      {
+        "path": "docs/docs/guide/customization.md",
+        "reason": "file-budget",
+        "size": 10181
+      },
+      {
+        "path": "docs/docs/guide/getting-started.md",
+        "reason": "file-budget",
+        "size": 4549
+      },
+      {
+        "path": "docs/docs/guide/plugins.md",
+        "reason": "file-budget",
+        "size": 41892
+      },
+      {
+        "path": "docs/docs/guide/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 4550
+      },
+      {
+        "path": "docs/docs/guide/usage.md",
+        "reason": "file-budget",
+        "size": 12264
+      },
+      {
+        "path": "docs/docs/reference/cli.md",
+        "reason": "file-budget",
+        "size": 15515
+      },
+      {
+        "path": "docs/docs/reference/commands.md",
+        "reason": "file-budget",
+        "size": 18364
+      },
+      {
+        "path": "docs/docs/reference/keybindings.md",
+        "reason": "file-budget",
+        "size": 13309
+      },
+      {
+        "path": "docs/docs/reference/api/agent.md",
+        "reason": "file-budget",
+        "size": 627
+      },
+      {
+        "path": "docs/docs/reference/api/auth.md",
+        "reason": "file-budget",
+        "size": 1116
+      },
+      {
+        "path": "docs/docs/reference/api/buf.md",
+        "reason": "file-budget",
+        "size": 1190
+      },
+      {
+        "path": "docs/docs/reference/api/build.md",
+        "reason": "file-budget",
+        "size": 878
+      },
+      {
+        "path": "docs/docs/reference/api/builtins.md",
+        "reason": "file-budget",
+        "size": 1553
+      },
+      {
+        "path": "docs/docs/reference/api/cli.md",
+        "reason": "file-budget",
+        "size": 1384
+      },
+      {
+        "path": "docs/docs/reference/api/clipboard.md",
+        "reason": "file-budget",
+        "size": 579
+      },
+      {
+        "path": "docs/docs/reference/api/cmd.md",
+        "reason": "file-budget",
+        "size": 2500
+      },
+      {
+        "path": "docs/docs/reference/api/confirm.md",
+        "reason": "file-budget",
+        "size": 1014
+      },
+      {
+        "path": "docs/docs/reference/api/defaults.md",
+        "reason": "file-budget",
+        "size": 687
+      },
+      {
+        "path": "docs/docs/reference/api/dialog.md",
+        "reason": "file-budget",
+        "size": 5358
+      },
+      {
+        "path": "docs/docs/reference/api/diff.md",
+        "reason": "file-budget",
+        "size": 1384
+      },
+      {
+        "path": "docs/docs/reference/api/document.md",
+        "reason": "file-budget",
+        "size": 730
+      },
+      {
+        "path": "docs/docs/reference/api/engine.md",
+        "reason": "file-budget",
+        "size": 8345
+      },
+      {
+        "path": "docs/docs/reference/api/events.md",
+        "reason": "file-budget",
+        "size": 1449
+      },
+      {
+        "path": "docs/docs/reference/api/files.md",
+        "reason": "file-budget",
+        "size": 1295
+      },
+      {
+        "path": "docs/docs/reference/api/frontend.md",
+        "reason": "file-budget",
+        "size": 668
+      },
+      {
+        "path": "docs/docs/reference/api/fs.md",
+        "reason": "file-budget",
+        "size": 5822
+      },
+      {
+        "path": "docs/docs/reference/api/fs_file_state.md",
+        "reason": "file-budget",
+        "size": 1930
+      },
+      {
+        "path": "docs/docs/reference/api/fuzzy.md",
+        "reason": "file-budget",
+        "size": 828
+      },
+      {
+        "path": "docs/docs/reference/api/git.md",
+        "reason": "file-budget",
+        "size": 2362
+      },
+      {
+        "path": "docs/docs/reference/api/grep.md",
+        "reason": "file-budget",
+        "size": 1168
+      },
+      {
+        "path": "docs/docs/reference/api/history.md",
+        "reason": "file-budget",
+        "size": 754
+      },
+      {
+        "path": "docs/docs/reference/api/html.md",
+        "reason": "file-budget",
+        "size": 1188
+      },
+      {
+        "path": "docs/docs/reference/api/http.md",
+        "reason": "file-budget",
+        "size": 1469
+      },
+      {
+        "path": "docs/docs/reference/api/http_cache.md",
+        "reason": "file-budget",
+        "size": 678
+      },
+      {
+        "path": "docs/docs/reference/api/image.md",
+        "reason": "file-budget",
+        "size": 1462
+      },
+      {
+        "path": "docs/docs/reference/api/index.md",
+        "reason": "file-budget",
+        "size": 6016
+      },
+      {
+        "path": "docs/docs/reference/api/index_smelt.md",
+        "reason": "file-budget",
+        "size": 3242
+      },
+      {
+        "path": "docs/docs/reference/api/input.md",
+        "reason": "file-budget",
+        "size": 771
+      },
+      {
+        "path": "docs/docs/reference/api/inspect.md",
+        "reason": "file-budget",
+        "size": 664
+      },
+      {
+        "path": "docs/docs/reference/api/json.md",
+        "reason": "file-budget",
+        "size": 1037
+      },
+      {
+        "path": "docs/docs/reference/api/keymap.md",
+        "reason": "file-budget",
+        "size": 2521
+      },
+      {
+        "path": "docs/docs/reference/api/layout.md",
+        "reason": "file-budget",
+        "size": 8611
+      },
+      {
+        "path": "docs/docs/reference/api/lifecycle.md",
+        "reason": "file-budget",
+        "size": 3223
+      },
+      {
+        "path": "docs/docs/reference/api/list.md",
+        "reason": "file-budget",
+        "size": 1271
+      },
+      {
+        "path": "docs/docs/reference/api/log.md",
+        "reason": "file-budget",
+        "size": 826
+      },
+      {
+        "path": "docs/docs/reference/api/lsp.md",
+        "reason": "file-budget",
+        "size": 581
+      },
+      {
+        "path": "docs/docs/reference/api/mcp.md",
+        "reason": "file-budget",
+        "size": 1718
+      },
+      {
+        "path": "docs/docs/reference/api/messages.md",
+        "reason": "file-budget",
+        "size": 1168
+      },
+      {
+        "path": "docs/docs/reference/api/metrics.md",
+        "reason": "file-budget",
+        "size": 498
+      },
+      {
+        "path": "docs/docs/reference/api/metrics_perf.md",
+        "reason": "file-budget",
+        "size": 1335
+      },
+      {
+        "path": "docs/docs/reference/api/mode.md",
+        "reason": "file-budget",
+        "size": 2347
+      },
+      {
+        "path": "docs/docs/reference/api/model.md",
+        "reason": "file-budget",
+        "size": 3030
+      },
+      {
+        "path": "docs/docs/reference/api/notebook.md",
+        "reason": "file-budget",
+        "size": 1928
+      },
+      {
+        "path": "docs/docs/reference/api/notify.md",
+        "reason": "file-budget",
+        "size": 2148
+      },
+      {
+        "path": "docs/docs/reference/api/os.md",
+        "reason": "file-budget",
+        "size": 2281
+      },
+      {
+        "path": "docs/docs/reference/api/overlay.md",
+        "reason": "file-budget",
+        "size": 2406
+      },
+      {
+        "path": "docs/docs/reference/api/paint.md",
+        "reason": "file-budget",
+        "size": 1124
+      },
+      {
+        "path": "docs/docs/reference/api/parse.md",
+        "reason": "file-budget",
+        "size": 812
+      },
+      {
+        "path": "docs/docs/reference/api/path.md",
+        "reason": "file-budget",
+        "size": 2735
+      },
+      {
+        "path": "docs/docs/reference/api/perf.md",
+        "reason": "file-budget",
+        "size": 680
+      },
+      {
+        "path": "docs/docs/reference/api/picker.md",
+        "reason": "file-budget",
+        "size": 1395
+      },
+      {
+        "path": "docs/docs/reference/api/process.md",
+        "reason": "file-budget",
+        "size": 4107
+      },
+      {
+        "path": "docs/docs/reference/api/prompt.md",
+        "reason": "file-budget",
+        "size": 4327
+      },
+      {
+        "path": "docs/docs/reference/api/provider.md",
+        "reason": "file-budget",
+        "size": 2578
+      },
+      {
+        "path": "docs/docs/reference/api/reasoning.md",
+        "reason": "file-budget",
+        "size": 1962
+      },
+      {
+        "path": "docs/docs/reference/api/reg.md",
+        "reason": "file-budget",
+        "size": 1278
+      },
+      {
+        "path": "docs/docs/reference/api/remember.md",
+        "reason": "file-budget",
+        "size": 738
+      },
+      {
+        "path": "docs/docs/reference/api/render.md",
+        "reason": "file-budget",
+        "size": 2050
+      },
+      {
+        "path": "docs/docs/reference/api/search.md",
+        "reason": "file-budget",
+        "size": 445
+      },
+      {
+        "path": "docs/docs/reference/api/session.md",
+        "reason": "file-budget",
+        "size": 13472
+      },
+      {
+        "path": "docs/docs/reference/api/session_messages.md",
+        "reason": "file-budget",
+        "size": 866
+      },
+      {
+        "path": "docs/docs/reference/api/session_slug.md",
+        "reason": "file-budget",
+        "size": 518
+      },
+      {
+        "path": "docs/docs/reference/api/session_title.md",
+        "reason": "file-budget",
+        "size": 743
+      },
+      {
+        "path": "docs/docs/reference/api/settings.md",
+        "reason": "file-budget",
+        "size": 883
+      },
+      {
+        "path": "docs/docs/reference/api/shell.md",
+        "reason": "file-budget",
+        "size": 1504
+      },
+      {
+        "path": "docs/docs/reference/api/signal.md",
+        "reason": "file-budget",
+        "size": 1928
+      },
+      {
+        "path": "docs/docs/reference/api/state.md",
+        "reason": "file-budget",
+        "size": 1147
+      },
+      {
+        "path": "docs/docs/reference/api/task.md",
+        "reason": "file-budget",
+        "size": 2895
+      },
+      {
+        "path": "docs/docs/reference/api/terminal.md",
+        "reason": "file-budget",
+        "size": 1497
+      },
+      {
+        "path": "docs/docs/reference/api/text.md",
+        "reason": "file-budget",
+        "size": 3926
+      },
+      {
+        "path": "docs/docs/reference/api/theme.md",
+        "reason": "file-budget",
+        "size": 3415
+      },
+      {
+        "path": "docs/docs/reference/api/tick.md",
+        "reason": "file-budget",
+        "size": 1199
+      },
+      {
+        "path": "docs/docs/reference/api/time.md",
+        "reason": "file-budget",
+        "size": 1443
+      },
+      {
+        "path": "docs/docs/reference/api/timer.md",
+        "reason": "file-budget",
+        "size": 860
+      },
+      {
+        "path": "docs/docs/reference/api/transcript.md",
+        "reason": "file-budget",
+        "size": 11327
+      },
+      {
+        "path": "docs/docs/reference/api/transcript_defaults.md",
+        "reason": "file-budget",
+        "size": 1241
+      },
+      {
+        "path": "docs/docs/reference/api/transcript_groups.md",
+        "reason": "file-budget",
+        "size": 1490
+      },
+      {
+        "path": "docs/docs/reference/api/trust.md",
+        "reason": "file-budget",
+        "size": 601
+      },
+      {
+        "path": "docs/docs/reference/api/types.md",
+        "reason": "file-budget",
+        "size": 118768
+      },
+      {
+        "path": "docs/docs/reference/api/ui.md",
+        "reason": "file-budget",
+        "size": 640
+      },
+      {
+        "path": "docs/docs/reference/api/ui_layout.md",
+        "reason": "file-budget",
+        "size": 5412
+      },
+      {
+        "path": "docs/docs/reference/api/vim.md",
+        "reason": "file-budget",
+        "size": 727
+      },
+      {
+        "path": "docs/docs/reference/api/win.md",
+        "reason": "file-budget",
+        "size": 1807
+      },
+      {
+        "path": "docs/docs/reference/api/work.md",
+        "reason": "file-budget",
+        "size": 1612
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 3907
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 11
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1587
+      }
+    ],
+    "omitted_count": 109,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1822,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 115,
+      "complete": false,
+      "omitted": 109,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_1ac5a293ea4d5f8ebb98a6ea09075095",
+  "facets": {
+    "components": 8,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 11,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 2,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/leonardcser/smelt/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/1b7df65587b36aa1/manifest.json",
+  "package_id": "pkg_32dad7f5ab2cb86a7f304e5a65401373fa2fb8350bdb628ec4adb94663c8622d",
+  "repo": "leonardcser/smelt",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "200c48ae9eab80540d61896bb6a42460e7f214455eed11c29405ab47c1237f07",
+  "snapshot_id": "1b7df65587b36aa1",
+  "sources": [
+    {
+      "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+      "git_sha": "1775ca561562179f4d6ac676f744056bc023a880",
+      "lines": 90,
+      "path": "README.md",
+      "repository": "leonardcser/smelt",
+      "sha256": "be0b1003328f4c66b31c9d9fa26eb4c00d9b064b82400347b6e3fdba0ae43f2a",
+      "source_id": "src_5fba37715dec57a3970e0654d6cf6105",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/README.md"
+    },
+    {
+      "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+      "git_sha": "7c82f036dcc0d7c3521bdbb4240bb61616da4870",
+      "lines": 58,
+      "path": "docs/docs/reference/api/config.md",
+      "repository": "leonardcser/smelt",
+      "sha256": "677e230dd0f1bdf91cd81beefc57453a255723bb3bc324610567b722cf8430ad",
+      "source_id": "src_e26d951cba7258bda00b31b8e206ddcc",
+      "stored": "config.md-8eceb4df5108.md",
+      "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/config.md"
+    },
+    {
+      "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+      "git_sha": "03d8838524b514937da77d4e3977cb33023a1af6",
+      "lines": 90,
+      "path": "docs/docs/reference/api/permissions.md",
+      "repository": "leonardcser/smelt",
+      "sha256": "f79daf3584ac920af0821054db6ba842883faa4eda95a49430754b987302b9b2",
+      "source_id": "src_5205e77cf4c456ab8a8a4c0f013782c7",
+      "stored": "permissions.md-23200d3eddd8.md",
+      "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/api/permissions.md"
+    },
+    {
+      "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+      "git_sha": "211ed21647e453b27e93d90793cb97a96b3d189f",
+      "lines": 651,
+      "path": "docs/docs/reference/configuration.md",
+      "repository": "leonardcser/smelt",
+      "sha256": "4582d1d103b123259a099626f6e0b3705240f2a345fe3e8328bc22f5d857d947",
+      "source_id": "src_537cc59157de59569296c20660b40a32",
+      "stored": "configuration.md-4621da950a16.md",
+      "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/configuration.md"
+    },
+    {
+      "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+      "git_sha": "e2acb6c396fb19cb73bf4b0156bab82ae9c1cf46",
+      "lines": 299,
+      "path": "docs/docs/reference/permissions.md",
+      "repository": "leonardcser/smelt",
+      "sha256": "d2ee65c95184cede67e6636e02caf0fc84f2e30a09f2651a3750fe08cda7447d",
+      "source_id": "src_8c67d892ef1259f6a8bbc26feddec307",
+      "stored": "permissions.md-d8734183c935.md",
+      "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/permissions.md"
+    },
+    {
+      "commit": "9a7e6536df5299cfd84509f0928f6b9d2ab9e596",
+      "git_sha": "b1768151e9bdf652476e6bcf6ff02cd40a9d1066",
+      "lines": 347,
+      "path": "docs/docs/reference/tools.md",
+      "repository": "leonardcser/smelt",
+      "sha256": "2168f7bb8f0848c4bd295f94364ac55e06e0becdd7c3da7174c9bd6fb948d433",
+      "source_id": "src_6094199289c555419265e9e88745315b",
+      "stored": "tools.md-24b7cd756250.md",
+      "url": "https://github.com/leonardcser/smelt/blob/9a7e6536df5299cfd84509f0928f6b9d2ab9e596/docs/docs/reference/tools.md"
+    }
+  ],
+  "summary": "smelt is a beta, Lua-scriptable terminal coding agent with its own TUI renderer, vim-style editor, multiple LLM provider integrations, MCP support, skills, and transactional config reload. Evidence is mostly README and generated API/configuration reference docs; no development-practice or evaluation evidence is present. Evidence coverage: 131 of 259 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

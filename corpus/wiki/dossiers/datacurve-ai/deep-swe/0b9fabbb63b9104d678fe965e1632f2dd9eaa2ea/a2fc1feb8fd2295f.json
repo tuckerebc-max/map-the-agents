@@ -1,0 +1,481 @@
+{
+  "applied_operation_id": "op_2c127fb00483491e87b35bfb888976ba",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f8d0980b671bc30ae0fa074f068644e8b893ca12730f6368ec6bb70c3cba0b9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b94c7bc2e096c708fbbb61432656325f39740b8e2151ef905b67f2324bc097c1"
+      ],
+      "text": "DeepSWE is a benchmark measuring frontier coding agents on original, long-horizon software engineering tasks drawn from active open-source repositories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_136be139d93078e7a01a6a3da4340afd8ac1775984948462c464518f733e0261",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b94c7bc2e096c708fbbb61432656325f39740b8e2151ef905b67f2324bc097c1"
+      ],
+      "text": "The benchmark comprises 113 tasks spanning TypeScript, Go, Python, JavaScript, and Rust, with isolated environments and program-based verifiers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_515b61b28c01e6812634967f1ccbeb0fd8d71c2f79a74584035395d6e6d7dc91",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L9-L15"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b4d9f8d119580dc8705d31a6f5dbdd6ea374692832fe3574d91ba5fd4bb0a5a",
+        "slc_154ec38fed256346c30f61729d2642c7bfd8f35cd2eba8d8a69a27f13bf5892b"
+      ],
+      "text": "Tasks use the Harbor task format, with task.toml metadata, instruction.md, an environment Dockerfile, tests, and a held-out reference solution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fbca97b9da7abbbdbfff1842c20f3361eaf18397db44760d59072a7e2291891",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 18,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L17-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bdc1f5cea0fe6a38f2e04da3d5ae6dc209147653ad1c8eed034a6109f960d5c"
+      ],
+      "text": "The verifier accepts any solution whose observable behavior is correct, regardless of internal symbol names or structure, and the reference patch is never used at grading time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e2ddcdbd7f515d20e8eda03065f1b7aaa7f47bf30f95f4f8afe97870be2bcfa",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e563bfc552529c2dd0e4e17b2dac941afbdb0bf3eb7ff39644d71f0da263ba3e"
+      ],
+      "text": "Since v1.1, grading uses Harbor's separate verifier environment: the agent works in isolation, commits its work, and a collect hook extracts commits as a patch applied and graded in a pristine container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f4bd4e999040000f03c5c6adad572761915de4b5be2b26ab519f93c7aab8a303",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e563bfc552529c2dd0e4e17b2dac941afbdb0bf3eb7ff39644d71f0da263ba3e"
+      ],
+      "text": "The separate-verifier grading flow requires the datacurve-pier package at a version newer than 0.3.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_58ecac9b533fb9cb23ab9c69e876737673c814a7041cc6c063b58809fd54316e",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 31,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L24-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8147dc3a20d7ab56a343546c8973279f3820a9c70557f27eec007e8ea5c149a2"
+      ],
+      "text": "Each run produces verifier outputs including reward.json with binary reward and pass fractions, ctrf.json test reports, raw stdout logs, and framework-native grader reports."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ecfb844fd722440ca026adccddf7966888d4332354a78d8cee5935bb344eac3b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 48,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L46-L48"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L35-L35"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 39,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L37-L39"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 43,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L42-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_496cc50f8542cf9c6fd81210f0e8d5a3263ef353a1dca1ef669db8b905533b3a",
+        "slc_caa24315c4ab930c54a40a85d167334a28fc8e7805d3710d8a4450c36b9a3873",
+        "slc_da9b072391756db1b601f570b0641375624652676cad4a7317fa35bd8a761b0f",
+        "slc_df2a7c705728ec1b30f55d5d2fa2c693203e016eeb9dba5f1667a6b0fb571c40"
+      ],
+      "text": "The benchmark is run via Pier, installed with uv, using commands like 'pier run -p deep-swe/tasks --agent mini-swe-agent' with model-specific API keys exported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3bab233abd5bfce5d559362fcd663fcc102bdc351189e2f0c54bac19294f78b4",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2803db14a2f0e9284e9cc355d8bf4056833fc8935887d61c23b351a4276053e6"
+      ],
+      "text": "Pier, a Harbor-compatible eval framework, adds per-agent network allowlists so agents get only needed network access while the task environment stays isolated, unlike Harbor's blanket blocking in no-internet tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffede67f18689a3bb68db8c95fed03885addb7a11120a43100c4a8e6e3139ae8",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19276c95340d044dbe71db319c8e7676d9691d91d1f40ade39a5468d04b5cecd"
+      ],
+      "text": "Pier supports multiple agents: mini-swe-agent is model-agnostic, and Pier also drives claude-code, codex, gemini-cli, and opencode; --env modal runs parallel sandboxes on Modal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f21fc26059000f3bae36d300a3ca2a4c9f2d891a937f157c9ad11552d6d78c26",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 72,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L70-L72"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L64-L66"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_400411b3af763a66d96df12362961191ddbb86cdec6f079b8f16f078105ebc68",
+        "slc_58b23a22a0941200aefb028f5b07d758d2f8c52bb4d6efb28667984984865989",
+        "slc_ca31cfa863534423fdc392841d41a556427d923a76ebdc4a0385cf75beb6f3eb"
+      ],
+      "text": "Runs can be subsetted deterministically via --n-tasks with --sample-seed, or targeted at a single task by passing a task-id path to pier run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_75b0561525b3a82ece80d1a6854b68c9d92d9bb998173737e7193788fc3d7f8d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "12b1a7a462252e637ec21e53f90a3f62d0a87a79",
+          "line_end": 122,
+          "line_start": 8,
+          "path": "PROVENANCE.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/PROVENANCE.md#L8-L122"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "12b1a7a462252e637ec21e53f90a3f62d0a87a79",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "PROVENANCE.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/PROVENANCE.md#L5-L5"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "12b1a7a462252e637ec21e53f90a3f62d0a87a79",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "PROVENANCE.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/PROVENANCE.md#L1-L1"
+        },
+        {
+          "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+          "git_sha": "12b1a7a462252e637ec21e53f90a3f62d0a87a79",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "PROVENANCE.md",
+          "repository": "datacurve-ai/deep-swe",
+          "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/PROVENANCE.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0009b714563f11e8df80778a667154903eea7c395ecc59e18f8c57555b8c7fd7",
+        "slc_039810005020ddd8e8b40d24f0f34b162674b7d21cc0483220dd5e6a970e0b48",
+        "slc_3e4b35bd308eb0bbb9f22a6e300f8bbe1706434d170ea7b1ed1c6b114a21d16f",
+        "slc_fee5c1921834b0aea5dc68a85a3814ebede125b192f544628a91070704aabe46"
+      ],
+      "text": "Tasks derive from upstream open-source projects under permissive licenses (e.g., MIT, Apache-2.0, BSD-3-Clause); the repo's Apache-2.0 license covers only Datacurve's original contributions, not upstream code."
+    }
+  ],
+  "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 73,
+        "path": "README.md",
+        "size": 3637
+      },
+      {
+        "lines": 124,
+        "path": "PROVENANCE.md",
+        "size": 14687
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1138,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_f16ec8a054e55c6798761afd80521e25",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 2,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/datacurve-ai/deep-swe/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/a2fc1feb8fd2295f/manifest.json",
+  "package_id": "pkg_d95a5b413cc652267dfdf708e1508489ee0b55b9058dcc00275c8b92a4cdb239",
+  "repo": "datacurve-ai/deep-swe",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b926dcd80a5fefdc6dc367fe861ff764cac769c5a568390b06ca714dca799290",
+  "snapshot_id": "a2fc1feb8fd2295f",
+  "sources": [
+    {
+      "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+      "git_sha": "12b1a7a462252e637ec21e53f90a3f62d0a87a79",
+      "lines": 124,
+      "path": "PROVENANCE.md",
+      "repository": "datacurve-ai/deep-swe",
+      "sha256": "fd81ebb986d8fd7fef39eaf9679efb29b31f9c9acb4f95ad41b5da6f333e3fe9",
+      "source_id": "src_196eb803adf45eca8275646a354c3c31",
+      "stored": "provenance.md-4c0d27425cf7.md",
+      "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/PROVENANCE.md"
+    },
+    {
+      "commit": "0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea",
+      "git_sha": "b581622b9cafce263fc78c5a195f4aefc0ca4244",
+      "lines": 73,
+      "path": "README.md",
+      "repository": "datacurve-ai/deep-swe",
+      "sha256": "87ac640023163ef48aa6c59b2e1806d34b68c4e1c3cf7d61597236c8c159f95f",
+      "source_id": "src_7d6e943246b05207a2c105d196c0044c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/datacurve-ai/deep-swe/blob/0b9fabbb63b9104d678fe965e1632f2dd9eaa2ea/README.md"
+    }
+  ],
+  "summary": "DeepSWE is a benchmark of 113 long-horizon software engineering tasks from active open-source projects, run via the Pier/Harbor harness with isolated environments and program-based verifiers. Evidence covers task format, grading flow, verifier outputs, run commands, and licensing provenance.",
+  "superseded_claim_ids": []
+}

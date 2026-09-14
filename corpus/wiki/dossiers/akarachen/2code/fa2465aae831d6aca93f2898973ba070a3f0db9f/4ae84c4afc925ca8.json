@@ -1,0 +1,423 @@
+{
+  "applied_operation_id": "op_8208e6b91d7a4586b10b839ad4dc8769",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f5cf8800e6b7e498dc4d3a3efecfdb95d5898bbc7b3248f52ee84080ead95e0d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 49,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L42-L49"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "8ef1757b3bbd5be5e41aa77e8371c47d14b9aff9",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "AGENTS.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/AGENTS.md#L6-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa57443e913e00b41ccee1c177acef6394498fa42d86d686844d33e69d1f597c",
+        "slc_d42e160260f29437e4e9d0b11055d97262db0e13b70fa2286fafb51417000c75"
+      ],
+      "text": "The app is a Tauri 2 desktop shell with a React 19 + TypeScript + Vite frontend, Zustand/Immer client state, TanStack Query server state, and a Rust workspace backend with SQLite via Diesel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_487ea6b661c068529ffed753d17ab4d6fe244fb26379b816f662de479a6821cc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 117,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L100-L117"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "ecc4954c4b7fba398d0aae46d6aca5594425b28e",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "CLAUDE.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/CLAUDE.md#L99-L99"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "ecc4954c4b7fba398d0aae46d6aca5594425b28e",
+          "line_end": 89,
+          "line_start": 86,
+          "path": "CLAUDE.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/CLAUDE.md#L86-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e3a0c4cf2274151a676160ffacb7860823b7abf36e5ae25e8301afda2f36be5",
+        "slc_5f9e0e59679ed3d59e5905e613a956e3502251bf64586cb88003ac432c5876af",
+        "slc_bfdf62dc43bbacf42103b696cea83020d77e2035363f188f98ca9b71edd7eaf6"
+      ],
+      "text": "The Rust backend is layered into handler (Tauri command entry points), service (business logic), repo (Diesel CRUD), infra (DB, PTY, git, watcher), and model crates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e75d81ee3930dbc7e1718383f453c75b8d8892881b94f43ce4102ec24365bc24",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L29-L29"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "ecc4954c4b7fba398d0aae46d6aca5594425b28e",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "CLAUDE.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/CLAUDE.md#L138-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9633c0901a5bcff2ee17d05dd163048ebc3f6464fa687acb46291c87cb14af5d",
+        "slc_f2db9ce5d1c8880fe13bcb2142df853420363f2ae17d81f700f6443f983f1407"
+      ],
+      "text": "Profiles create isolated branch workspaces via git worktree add under ~/.2code/workspace/{profile_id}, running a setup_script from 2code.json on creation and teardown_script plus worktree/branch removal on deletion."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0b5edb52d7116d28f2531f6c25b47bffc428b7179bd1739c482e43f3986fa93",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 38,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L33-L38"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "ecc4954c4b7fba398d0aae46d6aca5594425b28e",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "CLAUDE.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/CLAUDE.md#L101-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea17aca7ac6ff8623992f8d4624b5e5cb7b66872252dbfa92a86b3f9653a21e9",
+        "slc_f41849010c7c0e267e3ea96f98b0d583291287ecfa47cf86b93290df4a46dc95"
+      ],
+      "text": "The frontend detects coding-agent state (running/waiting/idle) from xterm screen text, OSC titles, and OSC progress, with per-agent rule manifests; waiting status can trigger a system sound."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1773df8e4126991bc781f36452a315c1ba3434ef7c5e3b7b4f7032cd16ecc3fc",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 60,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L55-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aeaa78ccc78890f4cee1d783bd008ab25ac8299e677fadbe9fad277d124523ec"
+      ],
+      "text": "Building and developing the app requires Bun, a stable Rust toolchain, Tauri 2 prerequisites, just, and fama on PATH for TypeScript formatting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af0975d7da28362cf9f2612c0688712568e3b721a18908586dc37dab3d5bd3de",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L7-L7"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3577b5d393a7457e80a6562c8c79f90a49137bd5e5fde0d16f906c51d435903b",
+        "slc_66640e8b4472271e17ffcddbadb4899a3a65a35928e247e649c62e0ee651f833"
+      ],
+      "text": "The project is early and under active construction; macOS is the primary supported platform while Windows and Linux builds are experimental."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a47332e375947b72cc1d351ad75760736848da406bcc167d0f40fcca95f2064e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "ecc4954c4b7fba398d0aae46d6aca5594425b28e",
+          "line_end": 162,
+          "line_start": 162,
+          "path": "CLAUDE.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/CLAUDE.md#L162-L162"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+          "line_end": 127,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md#L121-L127"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "8ef1757b3bbd5be5e41aa77e8371c47d14b9aff9",
+          "line_end": 88,
+          "line_start": 79,
+          "path": "AGENTS.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/AGENTS.md#L79-L88"
+        },
+        {
+          "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+          "git_sha": "8ef1757b3bbd5be5e41aa77e8371c47d14b9aff9",
+          "line_end": 54,
+          "line_start": 46,
+          "path": "AGENTS.md",
+          "repository": "akarachen/2code",
+          "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/AGENTS.md#L46-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84a40755d430be3d75b31d3a34819eb2833dd49b10ac3f1f420f989a0ebbc596",
+        "slc_bb1d06c37ec8094184498a943c3835c046890a31515876f458bc4cbe4afedcc7",
+        "slc_c3999c95d4377f9eb319cdebc40f629bc9adadc982b37a3f306690f5846e99b2",
+        "slc_f091dd35288b0fc5059e1e63a9850e24df80ccae284d86e59abeac69ca1682a8"
+      ],
+      "text": "Repository development practice: contributors add Tauri commands in handler/*.rs, register them in lib.rs, then run cargo tauri-typegen generate; Rust tests run via cargo test with in-memory SQLite, and CI includes a Tauri smoke test on ubuntu-24.04 with xvfb-run."
+    }
+  ],
+  "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 133,
+        "path": "README.md",
+        "size": 5050
+      },
+      {
+        "lines": 88,
+        "path": "AGENTS.md",
+        "size": 5739
+      },
+      {
+        "lines": 206,
+        "path": "CLAUDE.md",
+        "size": 13872
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 4397
+      },
+      {
+        "path": "docs/api-reference.md",
+        "reason": "file-budget",
+        "size": 8698
+      },
+      {
+        "path": "docs/architecture.md",
+        "reason": "file-budget",
+        "size": 10620
+      },
+      {
+        "path": "docs/configuration.md",
+        "reason": "file-budget",
+        "size": 10187
+      },
+      {
+        "path": "docs/data-flow.md",
+        "reason": "file-budget",
+        "size": 6242
+      },
+      {
+        "path": "docs/notification-behavior.md",
+        "reason": "file-budget",
+        "size": 3715
+      }
+    ],
+    "omitted_count": 6,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 855,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 6,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_5efea3675bd25efe85a997d934334288",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/akarachen/2code/fa2465aae831d6aca93f2898973ba070a3f0db9f/4ae84c4afc925ca8/manifest.json",
+  "package_id": "pkg_48b8a4beecbfb3e41bcf01c263330f1c9b8614a3be9f5ff8036bd8342283417f",
+  "repo": "akarachen/2code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d958eb2485a42d603d199d4a08b01657ed2466f5e6f2864d42cbeabd7be819ac",
+  "snapshot_id": "4ae84c4afc925ca8",
+  "sources": [
+    {
+      "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+      "git_sha": "8ef1757b3bbd5be5e41aa77e8371c47d14b9aff9",
+      "lines": 88,
+      "path": "AGENTS.md",
+      "repository": "akarachen/2code",
+      "sha256": "938f382e59b7f8499611c537c851919e9ef7752ab4ada3ca2765ea9d2ffde44b",
+      "source_id": "src_af7a325fac025b8cb7c1e4ba34bc0e59",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/AGENTS.md"
+    },
+    {
+      "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+      "git_sha": "ecc4954c4b7fba398d0aae46d6aca5594425b28e",
+      "lines": 206,
+      "path": "CLAUDE.md",
+      "repository": "akarachen/2code",
+      "sha256": "cc04862937dfed9f77e9958afa196b63dba1215b91098e15afbad689237d751e",
+      "source_id": "src_882fb090ad7f51bcb79b7a703f562644",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/CLAUDE.md"
+    },
+    {
+      "commit": "fa2465aae831d6aca93f2898973ba070a3f0db9f",
+      "git_sha": "c66f99dc87c4d19520c947ffcb62d9a4b3509ee5",
+      "lines": 133,
+      "path": "README.md",
+      "repository": "akarachen/2code",
+      "sha256": "f191be2d36e61c4f841006457b392a898b51dfacaec1e90c473f2de0be996494",
+      "source_id": "src_a0a3572ceb8c5bf9ad50a7faadfb9e64",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/AkaraChen/2code/blob/fa2465aae831d6aca93f2898973ba070a3f0db9f/README.md"
+    }
+  ],
+  "summary": "The app is a Tauri 2 desktop shell with a React 19 + TypeScript + Vite frontend, Zustand/Immer client state, TanStack Query server state, and a Rust workspace backend with SQLite via Diesel. The Rust backend is layered into handler (Tauri command entry points), service (business logic), repo (Diesel CRUD), infra (DB, PTY, git, watcher), and model crates.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,561 @@
+{
+  "applied_operation_id": "op_a135aec11b8a4c5f85595c6b6e30b6e1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1a68a9f0d6b5a2d0d26c942a2eba31ee0e0d6c44cb06f532f62b307e331429e7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 33,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L32-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc1662047c216380995b3c76bb8949584e6e4d39cee9e839c6dadf2b825a1d33"
+      ],
+      "text": "Magicoder is a family of code models built with OSS-Instruct, an approach that uses open-source code snippets to generate instruction data for code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_daf03888311fd7aa71a8380ff2f79d44d3182986256671abbee2febde7680be3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 50,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L45-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_406545180e12d6de0e1e1310d146b356837830020032b2d625958bfe525b3d8c"
+      ],
+      "text": "Four released models are listed: Magicoder-CL-7B and Magicoder-S-CL-7B (Llama2 license) and Magicoder-DS-6.7B and Magicoder-S-DS-6.7B (DeepSeek license), hosted on Hugging Face."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2543392a1cc9d0e416791fb19e3e844107dd88aba2ae419e478b4f1a22be3f2",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 50,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L45-L50"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L36-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_406545180e12d6de0e1e1310d146b356837830020032b2d625958bfe525b3d8c",
+        "slc_75b735d26313a0cae5980afc0ca8c9cf867bd6c8b24e4ff443f88564f56bf9d0"
+      ],
+      "text": "The README reports HumanEval(+) and MBPP(+) scores per model, with Magicoder-S-DS-6.7B at 76.8 (70.7) on HumanEval(+), and claims it outperforms gpt-3.5-turbo-1106 and Gemini Ultra on HumanEval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57f7f21ada92fbd5dc6bbefac25de08c0dc646b357623b4aabcc0c5b5c4d25c2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L80-L80"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 78,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L76-L78"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 86,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L85-L86"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 99,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L90-L99"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 83,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L82-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_206e82efbdc3aa4e6edbcde8e4f29316a82694fabf8c3e89582d68f0c1b3fd72",
+        "slc_20944ec6a550964c7ca9ad15867732720fc417c634937804e7862b733d039b6b",
+        "slc_a4cb0672f377b9020248fdb6323acedcca605f28abe72a5a951dae98204a44e6",
+        "slc_b691b3df12695781d1366cfb5de36840c79d947beec78a93aa41cf0a64d6a2bd",
+        "slc_bad9d306c05a5ea2d19814d1814b05deb3e9a30ac15ed8bce6bba6267e0e3cbe"
+      ],
+      "text": "Models are prompted with a template containing a system-style preamble plus '@@ Instruction' and '@@ Response' sections, usable via a Hugging Face transformers text-generation pipeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba5ae804e9e253481c0f2304c95329e181bdde23b6ac3686015635cb5c2e7483",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L55-L55"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d4fbcea293d79d23840e87b32dd4a0117465d610ceb0b5382a5d0d3b1ca4210c",
+        "slc_ef11af014d5e6e2cdfef706528a880b8d5cc1a5bee8c7636f35bf9e69a7faa69"
+      ],
+      "text": "A hosted Gradio demo (Magicoder Playground) is available on Hugging Face Spaces, and a local Gradio demo server script is provided under demo/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6010f2b10222feb563e1e7d7fb1d7b46ac444feffd5a6e556c4031f159e92e69",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 67,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L61-L67"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 78,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L76-L78"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 99,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L90-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01e25e6f85fd7f9ce3ba2bdf9c1de37f04db472a816807fc38df80ae651d9e55",
+        "slc_20944ec6a550964c7ca9ad15867732720fc417c634937804e7862b733d039b6b",
+        "slc_b691b3df12695781d1366cfb5de36840c79d947beec78a93aa41cf0a64d6a2bd"
+      ],
+      "text": "The quick-start and demo code imply runtime dependencies on transformers, torch (bfloat16, CUDA device), and gradio."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e77b1f1c9dfa1f589f71ad2f891fa3012967a4f90b32027f3153d3db17dbb278",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 191,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L188-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bddaa8986084111b0debb252e67a26c8005f3b30c01480fb6859fe4ac5fbd49d"
+      ],
+      "text": "Magicoder-DS models are built on DeepSeek-Coder base models and Magicoder-CL models on CodeLlama; StarCoder is credited for data decontamination."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c6962959d5426a7c16d1f753046888594191b8984be38b6f421caae92ecbb35",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 195,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L195-L195"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61d3c3edf8dd75dea642d9b821d2c9cfe2ac698e8eec2bee339c460af07cb8b2"
+      ],
+      "text": "The README warns that Magicoders may make errors, produce misleading content, or struggle with tasks unrelated to coding."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_04fa35283f5d0c0c3668d9c5aa4cf857c01f2d7fda3b4a1354836c88e5dde203",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L197-L197"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03fe3fe3e716eeb52be0162f61655a539cd23b587c146982ad759db494fd9e04"
+      ],
+      "text": "Models are trained on synthetic data from OpenAI models, so users are directed to consider OpenAI's terms of use; the models are stated not to compete with OpenAI commercial products."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7fde25c7385eb3c15f5ebabe7518367c9517bcbbd40d955c36827bb3fbb654cc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 84,
+          "line_start": 63,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L63-L84"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 16,
+          "line_start": 10,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L10-L16"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L8-L8"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 41,
+          "line_start": 35,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L35-L41"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L61-L61"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 55,
+          "line_start": 49,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L49-L55"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 33,
+          "line_start": 32,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L32-L33"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f6af35656975f4dc0f448e52e9a049b5fc941921113dbdde632daa795fa631f",
+        "slc_15bf08e40ad2a653580cf9f97f613798d4e73c737a2725849b71b5cf7670320d",
+        "slc_3e1fb11620cd382a728c3fc324d77d9f9bb5b8ef0c0421805615bd42fae6b918",
+        "slc_41d488ec7551741ae89c1acd669370c0fe81f8f81ee3992b8f4349020329f232",
+        "slc_453f3193f3ba59040c606fb1aa14cd67c6ad6ff2339bc11c60a465734e0a13fc",
+        "slc_96daa50e392d38df55d7e030c177189c3aee8b7d2af03829c32398d2c30be835",
+        "slc_ee9c57b9fed9e6b136f27547d069c65cc12ee6e63ee221c0e47fff13be1a4409",
+        "slc_f24faf58923795135c5e47aa0a2b0e1e788c1caa480bf04139d2f9e263016eb0"
+      ],
+      "text": "Repository development practice: the developer guide (marked WIP) documents a pipeline of scripts for data generation (generate_data.py with OPENAI_API_KEY), cleaning/decontamination, preprocessing, and instruction tuning via accelerate launch of magicoder.train."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c5bc321221fb56ffdaaaf4560e09b682c5d42a313497f8b70fc25ab2d8d611e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 84,
+          "line_start": 63,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L63-L84"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L86-L86"
+        },
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+          "line_end": 110,
+          "line_start": 88,
+          "path": "README-DEV.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md#L88-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f6af35656975f4dc0f448e52e9a049b5fc941921113dbdde632daa795fa631f",
+        "slc_34af501f388c8887fe422436d32307c3ba71f935940d79c390a0e2b8fb127b37",
+        "slc_9a8b9ff66f780e85fecc4a7d37b97ccfc4e2c0dc1c0e285069603de9c639a526"
+      ],
+      "text": "Repository development practice: Magicoder-S is produced by continuing training from the Magicoder checkpoint on Evol-Instruct data with a shorter max sequence length (1024 vs 1216), using bf16, adafactor, and linear LR scheduling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f4b7da26647e13d2ecd2c3335944c76fdc9e8f3b6fc80dc0ee7451009c16ce4",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+          "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+          "line_end": 72,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "ise-uiuc/magicoder",
+          "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md#L71-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a34db655181e6f8bba2c4d88ca93e3f625b25127a33873817cca070e0c078160"
+      ],
+      "text": "Two datasets are published: Magicoder-OSS-Instruct-75K (generated with gpt-3.5-turbo-1106, used for both model series) and Magicoder-Evol-Instruct-110K (decontaminated redistribution of evol-codealpaca-v1, used for the -S models)."
+    }
+  ],
+  "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 208,
+        "path": "README.md",
+        "size": 10418
+      },
+      {
+        "lines": 110,
+        "path": "README-DEV.md",
+        "size": 3129
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 42,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_fefbcd4aa79755dbb644309b20f533c8",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ise-uiuc/magicoder/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/bc9c10f2a873c504/manifest.json",
+  "package_id": "pkg_2c75adfe3f096b7e8a986f800aa98cb75d3e2b38f244f642e7734d60fb7f1c9e",
+  "repo": "ise-uiuc/magicoder",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8a127c046878b50e1a2198f54aee14c299bb964a757a81f3f2a5e85376727e2a",
+  "snapshot_id": "bc9c10f2a873c504",
+  "sources": [
+    {
+      "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+      "git_sha": "761eea8913989dcff8d355d677bad6f9aef9cf39",
+      "lines": 110,
+      "path": "README-DEV.md",
+      "repository": "ise-uiuc/magicoder",
+      "sha256": "af65abb802ed5b609741ff2e2f3867c941f2685d62c08b9c3af326f606e033db",
+      "source_id": "src_5b76a10c0c335058b120b52b342f74fd",
+      "stored": "readme-dev.md-162e2f15cdcc.md",
+      "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README-DEV.md"
+    },
+    {
+      "commit": "3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18",
+      "git_sha": "d92073b9cbb284d36e73eba1e2e1dd544f38c3b2",
+      "lines": 208,
+      "path": "README.md",
+      "repository": "ise-uiuc/magicoder",
+      "sha256": "bb3f65085ebbb9da20673f950632e5e62d142296d15577d600147886a3e11a54",
+      "source_id": "src_0cbc439056455031a479acadd58a3459",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ise-uiuc/magicoder/blob/3ef43f0feaa2a48c3bb86d0b1f0d4482912d2e18/README.md"
+    }
+  ],
+  "summary": "The snapshot is README-only documentation for Magicoder, a family of code LLMs trained via OSS-Instruct, with model checkpoints, benchmark numbers, demo/quick-start usage, and a WIP developer guide describing the data-generation and training pipeline.",
+  "superseded_claim_ids": []
+}

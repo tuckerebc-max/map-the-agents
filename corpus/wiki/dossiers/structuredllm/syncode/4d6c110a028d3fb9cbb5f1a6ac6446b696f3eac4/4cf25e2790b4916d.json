@@ -1,0 +1,521 @@
+{
+  "applied_operation_id": "op_02f44dab0ac94a29817f6dd616f8453a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_876f6ec8eb1b8825800b2a54c0c3558e4751b542610d2d576e2ae2911333053e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L24-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dde27691d334b7022f01630058496c96a50647d4a81b7ec8b83d944e554e82a3"
+      ],
+      "text": "SynCode is a framework for grammar-guided LLM generation, claimed to ensure output is syntactically valid with respect to a context-free grammar, with stated soundness and completeness guarantees."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0771e541ab4e11581a588abc0bec4ede583dbaa90ccbf823b2d27ac1049703c0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L77-L77"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 91,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L79-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12bae237768204a4c15de7f64749b8180e9c193138943fb269961d049dfb8aa8",
+        "slc_9d55e82ce9030924051993131ff0ead88e3c5d2adfc33d9fc6d16daefeafd9fa"
+      ],
+      "text": "SynCode can be used as a HuggingFace logit processor: SyncodeLogitsProcessor is imported and passed to model.generate via the logits_processor argument."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_800bec99e0af6416a75c6ca5c5e8b146f55a1a28ecc6be5906e1e0b8bf07154c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 105,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L105-L105"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 101,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L95-L101"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_694a639fab36ad15042b1599187817bd9f562a07e832b169dc8b8a92ead16b5b",
+        "slc_7b8def66916f5a023fc9c3ab290b9507d703255bf721f492a6e56ab5b90ab511",
+        "slc_ca79119173b4e6a59c10c26c8091a95cdde9fbae39632acf103b93d0571ba315"
+      ],
+      "text": "A SynCode class offers an infer() method taking prompt and task_id; if neither is given, it reads user input via stdin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e79bb1ffe5cd4313ede82da11096a15dd6a0333a6ebd0b94710f9f97a07c9360",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 184,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L184-L184"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 206,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L206-L206"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 202,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L202-L202"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 194,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L194-L194"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 192,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L192-L192"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 200,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L200-L200"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 190,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L190-L190"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L188-L188"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16b8057c2f5ad0583444ce9c4155ed542ed206a8ad271f9fa38dd9e4c3ce838a",
+        "slc_3b93392f1aaac769360a46b57a259c233d2735bf987fc10411b2878c901a31f5",
+        "slc_6cd9eb798dc89f769deb211e0f11f5cdb16520ca5a6b41822dacc7496e98a1a1",
+        "slc_700ccdd72323586bab609b6e265a0d81fad4ff5311dfbf4da10bc35d99332c20",
+        "slc_92e9715d4cb22727ac8b31db506f025b9edd27bde9303a83c0f3127fd7894f64",
+        "slc_ab70363bd5e7cfe072cbf99a3b7292dc56342034e11a58f255ee38a8ee4b8be8",
+        "slc_b603068b9e047127ccbbfa7169c5e89b0fdbb13cdbf9c1350fae195f4b6cb13f",
+        "slc_d8928e81d2a41fbc0c5506da038b5621c75fd4eeb1c0e7a079f2f81bcec062ff"
+      ],
+      "text": "The SynCode class accepts options including mode (grammar_mask, grammar_strict, original; default grammar_strict), grammar, parser (LR(1) or LALR(1), default lalr), quantize, device, num_samples, dev_mode, and log_level."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1531859ef4a36f10bb31d45ee0edcfb4e4ec075ea8188bf35b1b5247158a8ac",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 243,
+          "line_start": 225,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L225-L243"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_affd0e1bcd596d0f656556aea1b13c14b72f9b94636d03bf3a12bf26e76a034c"
+      ],
+      "text": "A CLI is available via python3 syncode/infer.py with flags for mode, model, device, dataset (mbxp, humaneval, mathqa-x, input), few-shot options, parser, and task_id."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ec5f6cac2574c294291dff5503ee33510bc9a29ffbbb765a2943539635eac3a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L74-L74"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 72,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L70-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c496b408315c7eeaf5b4e5dc66ef51e361a7c8f6dabafe04118b0b0e317c61b",
+        "slc_8cd282d7b8de58946eb065b02acc7ce9c4d061f997c8e01cc9f2e7a23c8b9614"
+      ],
+      "text": "SynCode v0.4.16 requires transformers v4.53.2 and Python 3.6-3.12; Python 3.13 is not supported due to dependency constraints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00b37219d9b4a36fd21f31028730e0607bb37fc83f9689c9d2b721d90000cd5c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "44954fb8a51195241f548f4b78f8aacdd16327c6",
+          "line_end": 9,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/requirements.txt#L1-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9700de37ea4fe5b87450b0f82a7ec88c8e5c86b8b493972061a566c52c378074"
+      ],
+      "text": "requirements.txt lists dependencies including transformers==4.53.2 (for Python < 3.13), torch, accelerate, interegular, regex, datasets, jsonschema, fire, and tqdm."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83e985f8ba03db2e0b755776a77b601755f2e552da2ea0ead4c2bea53e1abdb3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L33-L33"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 48,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L42-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a5ecae21e65e7d2d123e65771a28db825b2d14a1049e9b2e221fe0f5fb35216",
+        "slc_f13f2289f8df06c8c88ed7e2c9b1f5929c57d5847132b695ebf5865a650d1510"
+      ],
+      "text": "Built-in CFGs are provided for Python, Go, Java, SQL, Math, JSON, and more, stored in the syncode/parsers/grammars directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4235412de0fcc3d0338775683b7c24c0d119277c825e75a27c2e67e8450a4188",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 418,
+          "line_start": 418,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L418-L418"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4fb428cd7380013044e171d265174c4173543ce4ea3a24f37861528e40a5f925"
+      ],
+      "text": "SynCode's core is an offline-constructed DFA mask store built from regular expressions of grammar terminals, used with an incremental parser's accept sequences and remainder to mask invalid tokens during decoding."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15354823a1303363e7f148202928cfdd1500577b777776b64d8f7a53232e1f73",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 345,
+          "line_start": 345,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L345-L345"
+        },
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 246,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L246-L246"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a8b37f2a8eaa8d3a68d3dda7e2c5f72fd3d81f3b341aa207e1483644b0f4b2a",
+        "slc_6c34d1eec2a5fc365772bded99b503fe0ed2efda8cb1d491cd467c508a00a98a"
+      ],
+      "text": "Custom grammars can be supplied in an EBNF syntax adapted from Lark, either as a string of rules or a path to a .lark file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf8c6014d2368426b99eebc8f6abf98be82b00ec1d7415bbf57e28e01e88f9ed",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L24-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dde27691d334b7022f01630058496c96a50647d4a81b7ec8b83d944e554e82a3"
+      ],
+      "text": "The README reports SynCode achieving 99% JSON generation accuracy with Gemma-2b and being 10-20% faster than unconstrained generation, referencing an evaluation notebook."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95c1ba11db34834a25e728ef0c13c8778141076d503e0aeaf3b0e5067938acc9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+          "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+          "line_end": 178,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "structuredllm/syncode",
+          "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md#L169-L178"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7bd0a0ef8ab1916aa1153b43385cf226742a6496d13f14a4f3911c2f5fb3b9ea"
+      ],
+      "text": "Cache directories can be configured via HF_CACHE and SYNCODE_CACHE environment variables, with defaults used otherwise; HF_ACCESS_TOKEN enables gated HuggingFace models."
+    }
+  ],
+  "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 446,
+        "path": "README.md",
+        "size": 20202
+      },
+      {
+        "lines": 9,
+        "path": "requirements.txt",
+        "size": 122
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 368,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_815cd0947e52584b8a8b50d1ef2f2bdc",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/structuredllm/syncode/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/4cf25e2790b4916d/manifest.json",
+  "package_id": "pkg_249ac8b962bba426a4e13a97fa598ca840d138b98ff7a322859b10865f04bbc1",
+  "repo": "structuredllm/syncode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b2224b699c66544dc796f448253f5bee54252125cf0688faa6e4a2ed0a2fa68a",
+  "snapshot_id": "4cf25e2790b4916d",
+  "sources": [
+    {
+      "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+      "git_sha": "aaabef603cc8bbda67789e092de55e3a30cf05e3",
+      "lines": 446,
+      "path": "README.md",
+      "repository": "structuredllm/syncode",
+      "sha256": "a9d04d338a04542955afeca1ec257f0a14504cfe52914e0f7c1ae32f8861008f",
+      "source_id": "src_c860e3117a8357e194779758ef556637",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/README.md"
+    },
+    {
+      "commit": "4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4",
+      "git_sha": "44954fb8a51195241f548f4b78f8aacdd16327c6",
+      "lines": 9,
+      "path": "requirements.txt",
+      "repository": "structuredllm/syncode",
+      "sha256": "e4eceb68af414c194b8ca8cd2ca31ee82ba98bfa69c7bcedaeba3f2fb323df68",
+      "source_id": "src_79d0c5ecf113538fad67959043776301",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/structuredllm/syncode/blob/4d6c110a028d3fb9cbb5f1a6ac6446b696f3eac4/requirements.txt"
+    }
+  ],
+  "summary": "SynCode is a grammar-guided constrained-decoding framework for LLMs, usable as a HuggingFace logit processor or via a SynCode class/CLI, with built-in EBNF grammars and a DFA mask store for token masking. All claims below are supported by the cited README and requirements slices.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,503 @@
+{
+  "applied_operation_id": "op_2890b4c1cad04b048373fb951ac27496",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f4dd52f2e57e4405b71f542ad1c7ff7f0d2f534a5c10f105819d6700621cec8",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L30-L32"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 22,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L14-L22"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 12,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L5-L12"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 28,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L24-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4f2c039b4cc6d0fe2b3f3babb42e661bac5f15afa9c8bd34774c1578032df664",
+        "slc_65e4ebafd1a56854d02cc5e9469678c5955fb53d2f8cf0e12ef7cb3a34e1669b",
+        "slc_8196485ea69032b537563c56a4ebdaba0e713bd3bf99ac5d13718d83d2c3ff68",
+        "slc_f5d2d5ca33bb1dc7d72f862e51b9ebfe52bcb8e327cda403e7f448d57102e4b5"
+      ],
+      "text": "Agents are exported TypeScript functions marked with a 'use agent' directive; hooks like useModel, useSandbox, useSkill, and useTool compose capabilities, and the function's returned string is its instruction."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14f1267daeb9aba6d0d8d7c3057ab2b2c5453a70b8fa71beb8df5e33dbbfe526",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 74,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L67-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5db1d58633ca37c237d73fc95a247d70e9c4b4d1e97dd22a894d10b0301d1ba8"
+      ],
+      "text": "The repository ships @flue/runtime (harness, sessions, tools, sandbox), @flue/vite (build plugin), @flue/cli (flue binary), @flue/sdk (client for deployed agent conversations), @flue/opentelemetry, and @flue/postgres."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb4ba6a79e752df37187c870718302fc4d1e612ded6898a23aae7c647ca70db2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_295f722ed81a423e6f6e724d0d9f9a8d37e7b1a8a2591a1fc7064bdd2ddebdeb"
+      ],
+      "text": "The built-in TypeScript harness gives models sessions, tools, skills, instructions, filesystem access, and a secure sandbox; agents run locally via CLI or deploy to a hosted runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d85643aa9a1e57c9eacfcdf428c0105778f73da45c25a8f5884689154bca12d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 74,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L67-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5db1d58633ca37c237d73fc95a247d70e9c4b4d1e97dd22a894d10b0301d1ba8"
+      ],
+      "text": "The CLI exposes a `flue` binary for local runs, blueprints, and offline docs; @flue/sdk is a client SDK for consuming deployed agent conversations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22ba5b0dab1a2e4cfe42b86a03446c8b1391c2b0866153642af31951c89754b6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 54,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L46-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd401e4b77a22267fa6e87f029243943eac62b98a0d716364a4bf4349f7472ab"
+      ],
+      "text": "The framework supports subagents: specialized roles can be defined for different tasks, and the agent can delegate work to the appropriate expert."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4d8456a7bdea1e471b1eca58cea45863d16ee1800d51f7ab710dad780818adba",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 54,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L46-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd401e4b77a22267fa6e87f029243943eac62b98a0d716364a4bf4349f7472ab"
+      ],
+      "text": "Agents keep context across conversations and events, and preserve progress through failures and restarts via durable recovery for accepted work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2233b28f31493d43a446a1e3d3f441fd4bb6ce6be439a17d0f365e8bdf855917",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 54,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L46-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd401e4b77a22267fa6e87f029243943eac62b98a0d716364a4bf4349f7472ab"
+      ],
+      "text": "Agents can connect to authenticated tools and services through MCP servers, and telemetry can be exported via OpenTelemetry and Braintrust."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16f2f5b82b5dd0c8ab65d06e539aa52ec5ea23410909087dbe525fb665cf459e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 63,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L58-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9002c7c15e5cfd2f55763913881cbec575dda33c7823d97b2f11cc55cdd3462d"
+      ],
+      "text": "Documented deployment targets include Node.js, Cloudflare Workers, GitHub Actions, GitLab CI/CD, and Render; Daytona appears as a sandbox option rather than a deployment target."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_74a2d79d27f90e8ae497a0c9b7b46bddf0a6411c3d1c794edb77d5c2f6605623",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L40-L40"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L38-L38"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_295f722ed81a423e6f6e724d0d9f9a8d37e7b1a8a2591a1fc7064bdd2ddebdeb",
+        "slc_52ffbcfb1477b2d99fa8e39090e4c5e1db696be1fd0c377ce1bbf8a7babeac58",
+        "slc_80d92ded6c2558dac673ea5593dedde0e37b0f332efa334981421e4f74332e8d"
+      ],
+      "text": "Flue positions itself as a framework for autonomous agents that receive a task rather than pre-defined steps, contrasting with agents built from raw LLM API calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dae1b42c4423fa67c9b2c31f2ee4b4b9406e7fd791d3139da85ba56f531c1274",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2a4dcb8940ad4da77553c89f9bb0d98a4df771a",
+          "line_end": 16,
+          "line_start": 11,
+          "path": "CONTRIBUTING.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/CONTRIBUTING.md#L11-L16"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2a4dcb8940ad4da77553c89f9bb0d98a4df771a",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "CONTRIBUTING.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/CONTRIBUTING.md#L20-L20"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "636aaba42d8eebafb57a54de9a47f0e1ba812a2c",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "AGENTS.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/AGENTS.md#L9-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f783f2a8caaeceeb2d258cb456980b6176fdd663f1d902d402f04b083789615",
+        "slc_5c675ee4078c1f7f90a2393a31324899f09998e545fca2fe5a19c96ce9448efe",
+        "slc_eb53e6cae7f2734b6100080a2857584df7e8dd7659bfe4bb3d879adb2e7d8010"
+      ],
+      "text": "Repository development practice: pull requests are not accepted and are automatically closed and converted into bug reports (GitHub issues) or feature requests (discussions), with agent-oriented templates also provided."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99c495ad58d3e96f6363cb7b9519e8978b5ca003306d58725b36de290406b4fc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "636aaba42d8eebafb57a54de9a47f0e1ba812a2c",
+          "line_end": 53,
+          "line_start": 48,
+          "path": "AGENTS.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/AGENTS.md#L48-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5146d2cb7b2b7c415cb0db220a9128f882fc097b673d34bd7f61e611f0887435"
+      ],
+      "text": "Repository development practice: development uses pnpm in a turbo workspace, with commands for install, build, typechecking (excluding apps-www), and formatting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f048794a5dae11a68df7a0b598360962742a7813ae75fb08bcacc9d22ae7ab18",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2a4dcb8940ad4da77553c89f9bb0d98a4df771a",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "CONTRIBUTING.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/CONTRIBUTING.md#L63-L63"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2a4dcb8940ad4da77553c89f9bb0d98a4df771a",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "CONTRIBUTING.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/CONTRIBUTING.md#L39-L39"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "636aaba42d8eebafb57a54de9a47f0e1ba812a2c",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "AGENTS.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/AGENTS.md#L44-L44"
+        },
+        {
+          "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+          "git_sha": "e2a4dcb8940ad4da77553c89f9bb0d98a4df771a",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "CONTRIBUTING.md",
+          "repository": "withastro/flue",
+          "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/CONTRIBUTING.md#L28-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4be569ab2da730f22f1d2eaf1490361c634aaec9224ee58a6cdf93be3369d698",
+        "slc_50bf0ff97877ae50aae99935c2f65906b178aaaaab2f8186393138e3c692d9b8",
+        "slc_6813f10a05425b90285e40429eb0db6107c1d29d567895c283e2529685b9a2b4",
+        "slc_a597098b855990eebb3c2425f28eaedaa3b861b60baf76e28bc63ee97b3223f0"
+      ],
+      "text": "Repository development practice: the project states no tests exist in the repo, and its contributing philosophy is an experiment applying the Surgical Team model, with agents handling design, research, implementation, and review under a lead maintainer."
+    }
+  ],
+  "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 74,
+        "path": "README.md",
+        "size": 5089
+      },
+      {
+        "lines": 53,
+        "path": "AGENTS.md",
+        "size": 4051
+      },
+      {
+        "lines": 63,
+        "path": "CONTRIBUTING.md",
+        "size": 6342
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 172445
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 954,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": false,
+      "omitted": 1,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_bb24cd1cdcb1590a9640efaca1a925ed",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/withastro/flue/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/e9dc4791c6cf7883/manifest.json",
+  "package_id": "pkg_746dd18388277b3669f2e41cbff62bb37967b708cb543063cf0b575f83da5c3a",
+  "repo": "withastro/flue",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "39fe6d1f109d7a1128929000a522545c27b0e2ce384d8f5f192a6f87e047f785",
+  "snapshot_id": "e9dc4791c6cf7883",
+  "sources": [
+    {
+      "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+      "git_sha": "636aaba42d8eebafb57a54de9a47f0e1ba812a2c",
+      "lines": 53,
+      "path": "AGENTS.md",
+      "repository": "withastro/flue",
+      "sha256": "21fc2e0a441ff57e7b2ec22de512a4fa05173d6b1ab2eb2ccaa2bfe3fad5383a",
+      "source_id": "src_f9828f7a35275597abf02a6b3bc6e45e",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/AGENTS.md"
+    },
+    {
+      "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+      "git_sha": "e2a4dcb8940ad4da77553c89f9bb0d98a4df771a",
+      "lines": 63,
+      "path": "CONTRIBUTING.md",
+      "repository": "withastro/flue",
+      "sha256": "8003bc06ead6500374b2206ad9d8a26533afe684bfdaa844d066960c763807ff",
+      "source_id": "src_87833cb3a7ef56d7828d582cde41bb96",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/CONTRIBUTING.md"
+    },
+    {
+      "commit": "1ae1c85dae55e7b1215a6dc233796d36ec7d7c25",
+      "git_sha": "e2c8ced6b29e09de8f4d72d115ffdfaf6d86cb48",
+      "lines": 74,
+      "path": "README.md",
+      "repository": "withastro/flue",
+      "sha256": "3c7e8779f13e0ef4dd85769546a66ec68ceffd696612f842cfb2867754450fc3",
+      "source_id": "src_4c80b1181148552895c35aa40d72a657",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/withastro/flue/blob/1ae1c85dae55e7b1215a6dc233796d36ec7d7c25/README.md"
+    }
+  ],
+  "summary": "Flue is a TypeScript framework for building autonomous agents as exported functions composed via hooks (model, sandbox, skills, tools), shipped as multiple packages with a CLI, SDK, and durable sessions. Contribution policy accepts only bug reports and feature requests (PRs are auto-closed), under an AI-agent-driven 'Surgical Team' development model.",
+  "superseded_claim_ids": []
+}

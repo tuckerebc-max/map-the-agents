@@ -1,0 +1,141 @@
+---
+title: Configuration API
+description: CoralConfig and related dataclasses.
+---
+
+
+Module: `coral.config`
+
+The configuration system uses Python dataclasses loaded from YAML.
+
+## CoralConfig
+
+Top-level configuration object.
+
+```python
+from coral.config import CoralConfig
+
+config = CoralConfig.from_yaml("task.yaml")
+```
+
+### Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `task` | `TaskConfig` | Task definition |
+| `grader` | `GraderConfig` | Grader settings |
+| `agents` | `AgentConfig` | Agent spawning config |
+| `sharing` | `SharingConfig` | Shared state toggles |
+| `workspace` | `WorkspaceConfig` | Workspace layout |
+| `run` | `RunConfig` | Runtime/session flags and run-level stop conditions |
+
+### Methods
+
+| Method | Description |
+|--------|-------------|
+| `from_yaml(path)` | Load config from a YAML file (resolves a top-level `preset:` relative to the file's directory) |
+| `from_dict(data, base_dir=None)` | Create config from a dictionary; `base_dir` resolves a relative `preset:` path |
+| `to_dict()` | Serialize to dictionary |
+| `to_yaml(path)` | Write to a YAML file |
+
+## TaskConfig
+
+```python
+@dataclass
+class TaskConfig:
+    name: str              # Task identifier
+    description: str       # What agents should do
+    files: list[str]       # Key files to focus on
+    tips: str              # Additional hints for agents
+    seed: list[str]        # Files/dirs copied into workspace
+```
+
+## GraderConfig
+
+```python
+@dataclass
+class GraderConfig:
+    entrypoint: str        # "module.path:ClassName" — required, resolved inside the grader venv
+    setup: list[str]       # Shell commands run in .coral/private/grader_venv/ at start time
+    timeout: int           # Eval timeout in seconds (default: 300)
+    args: dict[str, Any]   # Extra grader arguments
+    private: list[str]     # Files hidden from agents
+    direction: str         # "maximize" or "minimize"
+```
+
+## AgentConfig
+
+```python
+@dataclass
+class AgentConfig:
+    count: int             # Number of agents (default: 1)
+    runtime: str           # "claude_code", "codex", "dsh", "opencode", ...
+    model: str             # Model name or ID (default: "sonnet")
+    max_turns: int         # Max conversation turns (default: 200)
+    timeout: int           # Session timeout in seconds (default: 3600)
+    research: bool         # Enable web search (default: True)
+    heartbeat: list[HeartbeatActionConfig]  # Periodic actions
+```
+
+## HeartbeatActionConfig
+
+```python
+@dataclass
+class HeartbeatActionConfig:
+    name: str              # Action name (e.g. "reflect")
+    every: int             # Trigger every N evals
+    is_global: bool        # Use global eval count (default: False)
+```
+
+## SharingConfig
+
+```python
+@dataclass
+class SharingConfig:
+    attempts: bool         # Share attempt scores (default: True)
+    notes: bool            # Enable shared notes (default: True)
+    skills: bool           # Enable shared skills (default: True)
+```
+
+## WorkspaceConfig
+
+```python
+@dataclass
+class WorkspaceConfig:
+    results_dir: str       # Where to store results (default: "./results")
+    repo_path: str         # Git repository root (default: ".")
+```
+
+## RunConfig
+
+```python
+@dataclass
+class RunConfig:
+    verbose: bool          # Print verbose manager output (default: False)
+    ui: bool               # Start the web dashboard (default: False)
+    session: str           # "local", "tmux", or "docker"
+    docker_image: str      # Docker image override
+    stop: RunStopConfig    # Optional run-level auto-stop conditions
+```
+
+## RunStopConfig
+
+```python
+@dataclass
+class RunStopConfig:
+    score_threshold: float | None     # Stop when best real score reaches this threshold
+    max_real_attempts: int | None     # Stop after this many finalized real attempts
+```
+
+`run.stop.score_threshold` is direction-aware: maximize tasks stop when a
+finalized real attempt has `score >= score_threshold`; minimize tasks stop when
+`score <= score_threshold`. `run.stop.max_real_attempts` counts only finalized
+attempts with `budget_class="real"` across the whole run. Pending attempts,
+`tune` attempts, and `grader_error` attempts do not count.
+
+Examples:
+
+```bash
+coral start -c task.yaml run.stop.score_threshold=0.8
+coral start -c task.yaml run.stop.max_real_attempts=30
+```

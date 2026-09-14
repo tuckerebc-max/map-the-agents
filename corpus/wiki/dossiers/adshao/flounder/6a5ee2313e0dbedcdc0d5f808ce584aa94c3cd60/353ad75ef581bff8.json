@@ -1,0 +1,508 @@
+{
+  "applied_operation_id": "op_b83851a680664610b448973151612e85",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e75e6dd772d3236c18b9cbe5b4354b303e7e9b7a23dc02c3aeb12fd2a053b174",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5f6886e49f8ea58e8065cd4d71f2cc2138f70d24d46de15fabe6907048dc06b"
+      ],
+      "text": "Flounder is described as an autonomous white-hat security auditor providing security automation for target prep, audit, exploit construction, and execution proof."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3dfb7167b74b95d3a06e253d2b9dd2dba6705134f181672214d0b221ef575e40",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "a700bddcea6320fc9ac12ef4673093edd6d98d6a",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/docs/ARCHITECTURE.md#L24-L24"
+        },
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f3b75e1ab44f3f465232e91dd9a40bf34e8bec4e81d4757fcd04a42b868f56f",
+        "slc_aba5918a28d759498930ee30009319dd90838601b97e4015622d84fc0cda20b4"
+      ],
+      "text": "The framework is deliberately stack-agnostic: it encodes no Solidity, ZK, Rust, Go, or crypto-specific audit strategy; the model decides strategy while Flounder supplies sandbox, command policy, durable state, and reporting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_755d4e61039b07d71f4dc4340f0e010907d883680488da0f4a9dffbc41ea021e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 59,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L47-L59"
+        },
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 353,
+          "line_start": 347,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L347-L353"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d7f2251affe89034d0b4e991b998b8792d8786ffd248753ca899afde793b6ec",
+        "slc_3e03864b117ed63cde7f512eed8180c214cd26b6866977b39e5bb0c0eb5cb1eb"
+      ],
+      "text": "The tracked workflow runs prepare -> map -> dig -> synthesize -> verify -> confirm -> report, with each phase's purpose documented (e.g. Map enumerates and scores the audit surface without producing findings)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3560f1a3f119e2ea1771326c211fdb718ebfdb9208d899fd87e00e87c6db1b9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 341,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L338-L341"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f2c6c8fec3be60e954df805b2cf50949b22c60bd357ff422b3a322c0ce2abb16"
+      ],
+      "text": "The product exposes a CLI with workflow verbs (prepare, run, map, audit, verify, confirm, report), a dashboard via `flounder ui`, a REST API where GET /api returns a self-describing catalog, and pi extension tools like flounder_prepare and flounder_run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19297ec6ba05c9f5cfc3414eadc801aea4623d280ececd53e8237b74caf2ed1f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 309,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L309-L309"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f4179de471f21b54d475dc7b38a557a830b70394c0c4b410079d91ce0a4fba3"
+      ],
+      "text": "Model-generated commands execute in a sandbox; the default `--sandbox-backend auto` prefers Apple's container runtime on Apple silicon, falls back to Docker-backed OCI, and fails closed if no sandbox engine is ready rather than running on the host."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77f15a067e4760369291d98862ba8f48c68e23086de29386187112d5ad7370e0",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 332,
+          "line_start": 332,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L332-L332"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef80bd5b505f9c5f51fb55e927e07424794d2eecf1b821810b9906a981fe56d9"
+      ],
+      "text": "Host execution is gated: `--sandbox-backend host --allow-host-execution` or FLOUNDER_ALLOW_HOST_EXECUTION=1 enables it, but host mode cannot enforce network sealing or kernel-level filesystem isolation and is not for untrusted targets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b9d00738b8440a3debae05969c6aeb71559d19ee52dec04b3e55224247806b0b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 416,
+          "line_start": 412,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L412-L416"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2858f639509c014bb70d6c6aba4d7f5d18574ad5a9938916c0266226a4d81c7e"
+      ],
+      "text": "Local state lives under ~/.flounder: a SQLite tracking database (flounder.db), per-run artifact directories, durable history/memory per target, a daemon workspace, and daemon-local provider auth."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78e1d538ff4347db8e484a073c0e57ee0addbbf7b3a7ce206996f7dc21433806",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "a700bddcea6320fc9ac12ef4673093edd6d98d6a",
+          "line_end": 59,
+          "line_start": 54,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/docs/ARCHITECTURE.md#L54-L59"
+        },
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 440,
+          "line_start": 440,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L440-L440"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00a60170e400e93b4f9d700873662589081bdf640511ad59c9dd53ad277e8244",
+        "slc_12696f0a714af486f7f0518e74143628dae0278f84890af743024c61b7136a8c"
+      ],
+      "text": "The product includes an Evaluations control plane for durable audit, benchmark, regression, and verification run groups, with lifecycle and evidence axes kept separate so a build failure cannot count as a safe control pass."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf24230463cecc8d68dd3e029e3dcd63fc1a9fffcfa329a1b7bf283d82013982",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 151,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L149-L151"
+        },
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 434,
+          "line_start": 434,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L434-L434"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f389b1181fcdd5dc7b65ca9c44986ae16175adf37fcca1eac6e599b5a468932",
+        "slc_2530bc4c589dddbd18704991c715282b728b1dfb7dd1ab0f68602df29d13eb3f"
+      ],
+      "text": "A daemon/control-plane split exists: remote daemons connect with minted tokens (`flounder server daemon-token mint`), providers are authenticated per executor machine, and projects pin to a daemon and provider profile."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd77a43e868dfd2fadb6c290e738ebd6ff5e8b812bb485ff922dd847159121ae",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 313,
+          "line_start": 313,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L313-L313"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_417992729ae1335a6eff828c15f325aab2e0c06154f2f1683e826b635b42059a"
+      ],
+      "text": "The default sandbox image is described as a baseline, not a promise to cover every target stack; specialized targets should supply a daemon- or operator-provided image with the exact toolchain."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3bac6df4dc881f94c3b8ee6d4e9a4e92b6f4b8eb0d84314c6974fab02dde376d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 59,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L47-L59"
+        },
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 397,
+          "line_start": 390,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L390-L397"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d7f2251affe89034d0b4e991b998b8792d8786ffd248753ca899afde793b6ec",
+        "slc_8f0e1b2f25fb34b4e6b85f227777fb3324e09430d50bd19ed0359395f4ff1aea"
+      ],
+      "text": "Findings must be execution-grounded: a finding is upgraded only when a cited local command exercises the vulnerable path, with statuses like confirmed-differential, confirmed-executable, suspected, and refuted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_541f2c766c9b30d0924308e8155dae2739710f46f440cb9ec5803133b8f17393",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+          "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+          "line_end": 446,
+          "line_start": 446,
+          "path": "README.md",
+          "repository": "adshao/flounder",
+          "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md#L446-L446"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_355f4f7b59726124cfd1d12db091a4de8c211c5f8ec590959b3fa30967ff0a6e"
+      ],
+      "text": "The white-hat boundary forbids broadcasting transactions, moving funds, submitting writes, persisting access, or targeting systems outside the declared boundary; open-world confirmation is limited to fetch, search, fork, and read."
+    }
+  ],
+  "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 463,
+        "path": "README.md",
+        "size": 39372
+      },
+      {
+        "lines": 381,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 56265
+      },
+      {
+        "lines": 449,
+        "path": "docs/PROOF_OF_CAPABILITY_STRATEGY.md",
+        "size": 21855
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/PRODUCT_CAPABILITY_PLAN.md",
+        "reason": "byte-budget",
+        "size": 28852
+      },
+      {
+        "path": "docs/RELEASE_0.4.0.md",
+        "reason": "byte-budget",
+        "size": 2861
+      },
+      {
+        "path": "docs/SOLIDITY.md",
+        "reason": "byte-budget",
+        "size": 4285
+      },
+      {
+        "path": "docs/STARKNET.md",
+        "reason": "byte-budget",
+        "size": 5164
+      },
+      {
+        "path": "docs/TON.md",
+        "reason": "byte-budget",
+        "size": 2992
+      },
+      {
+        "path": "docs/USAGE.md",
+        "reason": "byte-budget",
+        "size": 63472
+      },
+      {
+        "path": "docs/VALIDATION.md",
+        "reason": "byte-budget",
+        "size": 7413
+      },
+      {
+        "path": "docs/VERSIONED_COVERAGE_LOOP.md",
+        "reason": "byte-budget",
+        "size": 4705
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "byte-budget",
+        "size": 30542
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "byte-budget",
+        "size": 4853
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "byte-budget",
+        "size": 3204
+      }
+    ],
+    "omitted_count": 11,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 225,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 14,
+      "complete": false,
+      "omitted": 11,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_c3c296661bca569ead750726b6e5e8e1",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/adshao/flounder/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/353ad75ef581bff8/manifest.json",
+  "package_id": "pkg_66cf14ff7cacc5433529a857df51eb850ed7eea6bc573e91e3a8bb035804375c",
+  "repo": "adshao/flounder",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0d2c6528ede67713e29ac11f1c80c1a8160ef639d18313ad99080f837845fa14",
+  "snapshot_id": "353ad75ef581bff8",
+  "sources": [
+    {
+      "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+      "git_sha": "67625d26d53443333dffec8c7342bbcc7f9a1af6",
+      "lines": 463,
+      "path": "README.md",
+      "repository": "adshao/flounder",
+      "sha256": "0920ad130b32a99a530a5d5b3b48437f04d2847d8e1e12e716a30e2bbe185130",
+      "source_id": "src_ac45032e236a5490a6b26fe328a0de98",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/README.md"
+    },
+    {
+      "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+      "git_sha": "a700bddcea6320fc9ac12ef4673093edd6d98d6a",
+      "lines": 381,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "adshao/flounder",
+      "sha256": "5ebeb495da3df72c415ea6db5ac409539fd31129874b6536cd51110a490376d2",
+      "source_id": "src_57c7248325f15442a1f02a4c54eff8f9",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/docs/ARCHITECTURE.md"
+    },
+    {
+      "commit": "6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60",
+      "git_sha": "2888150696f6f90cd827344f0111184d518391a0",
+      "lines": 449,
+      "path": "docs/PROOF_OF_CAPABILITY_STRATEGY.md",
+      "repository": "adshao/flounder",
+      "sha256": "875800dd9c5d45a48e1291fb1812748a443f6276f83a6d62aeab4bf2e343db51",
+      "source_id": "src_afafc988ec285ef79d1cfecf93d92c85",
+      "stored": "proof_of_capability_strategy.md-de7873ed593b.md",
+      "url": "https://github.com/adshao/flounder/blob/6a5ee2313e0dbedcdc0d5f808ce584aa94c3cd60/docs/PROOF_OF_CAPABILITY_STRATEGY.md"
+    }
+  ],
+  "summary": "Flounder is documented as a thin-agent security-audit framework whose model decides audit strategy while the framework supplies sandboxing, command policy, durable state, execution gates, a daemon control plane, and reporting. Claims below rest on README and docs/ARCHITECTURE slices; the snapshot shows 113 of 268 slices. Evidence coverage: 113 of 268 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

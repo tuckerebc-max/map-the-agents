@@ -1,0 +1,612 @@
+{
+  "applied_operation_id": "op_a51330dc4bbc41428b305f1d7f7014c1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f24e628244b609e8f03050cdd02509be783eb23a4b6003100befbf9856eb6a8b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34e81d9b973005876365f927a84e47825919d94c4502c2a78049fe48fa0a53c5"
+      ],
+      "text": "Prometheus is described as a platform using unified knowledge graphs and multi-agent systems to operate on multilingual codebases, built on LangGraph state machines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e1f3dc42594528ec303261e906a0baf377c6928c123868c8fba36b419c4f4f5b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 171,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L167-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ceeb518c3743e9138b1e4946efe56f99ab6c1154081c2927b70e3fb89efeead5"
+      ],
+      "text": "Core components include a Tree-sitter-based AST/semantic knowledge graph in Neo4j, LangGraph state machines with checkpointing, Docker containers for isolated build/test execution, and multi-tier LLM integration (GPT-4, Claude, Gemini)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad90ae8c769ec7ef371aefe1c085123297b9665c82e7c558c6d36143f0943421",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L131-L131"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 165,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L133-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03728171a65d1d4f3a2fe507cdcf49f34250a7b8e3b00a0be01999ba3e8da352",
+        "slc_849a1bc8ab60f3d7fce6b04bc5ccb1ef60ecba79b6524f5561b9969702b19e7a"
+      ],
+      "text": "A hierarchical multi-agent system routes user issues through a classification agent into bug, feature, and question pipelines, each with specialized downstream agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2481920edbd1cdf058591e47861baf814d430f893a4876f03c7f54ef5962a79e",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 160,
+          "line_start": 157,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L157-L160"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L155-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55410173863d2198e74ec36bd15c25450e503f8c614dfbea8e9bd63fbd725c6f",
+        "slc_5bd95429f427cc7167dcdb29ccd1de86e00166b265324cd272678763e89254d2"
+      ],
+      "text": "Agents communicate through shared LangGraph state: each subgraph has a typed state dictionary, state flows through nodes, child subgraphs inherit parent state, and results return via state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7d623e87abb0a1562618cd4240ed1d87148e8a53ebe6746e1e32feeac92dc4b",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 59,
+          "line_start": 56,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L56-L59"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 48,
+          "line_start": 42,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L42-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a3a66eff112b52c6679ba9977013e4e8960d6f05e6f3e0d096cd241e4876890",
+        "slc_bf5dc4df246c9e38000c7d4d1723abc78bf31ab19861071f2e98d191d929cc1f"
+      ],
+      "text": "The bug reproduction agent generates reproduction tests via LLM, executes them in Docker, evaluates success, and retries with feedback in iterative loops."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c55f8bdb469d823199c245dca25af81d6ebc7bfe9ae38ce991fcdbc1122d8c4",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 102,
+          "line_start": 91,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L91-L102"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 112,
+          "line_start": 108,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L108-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_164d01b603f4890164e2eddf99ae4ca93d17abef9c9ba8483584970f372f3763",
+        "slc_7cebcb3a48efd42c3c7f2b52063e42cd44cf40fe3b21463a8cb9f2b561cf9af9"
+      ],
+      "text": "The issue resolution agent generates multiple candidate patches, validates them against reproduction tests (required) plus optional regression and existing tests, and selects the best patch using an LLM with retry on failure."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_610b7a0ed807e18a8ea126fb8583085a5b542e09b41c06192521ee77eebe7767",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 203,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L199-L203"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 217,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L215-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_30efddf443e3ed9335d16eec85dd7574934b80acb5e457c7c18b72509b0f2b84",
+        "slc_9e29ef0b53e021b9e2bc223992bb9ebfe48c1136fcfa2b22a19577dffb1477d0"
+      ],
+      "text": "The platform exposes an API at localhost:9002 under /v1.2 with interactive docs at /docs, and requires a JWT secret generated via a provided script for authentication."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e64e8c54b5f173a19cbd4734210c46a2ac20efdfd85764d2bef4bdc46997b7a7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "e80e02e6dbd3277b0dc97ec8bd25896998325ed6",
+          "line_end": 56,
+          "line_start": 39,
+          "path": "docs/GitHub-Issue-Debug-Guide.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/GitHub-Issue-Debug-Guide.md#L39-L56"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "e80e02e6dbd3277b0dc97ec8bd25896998325ed6",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "docs/GitHub-Issue-Debug-Guide.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/GitHub-Issue-Debug-Guide.md#L84-L84"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "e80e02e6dbd3277b0dc97ec8bd25896998325ed6",
+          "line_end": 74,
+          "line_start": 70,
+          "path": "docs/GitHub-Issue-Debug-Guide.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/GitHub-Issue-Debug-Guide.md#L70-L74"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "e80e02e6dbd3277b0dc97ec8bd25896998325ed6",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "docs/GitHub-Issue-Debug-Guide.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/GitHub-Issue-Debug-Guide.md#L77-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bf57e2a61a5b7016de608d8289cca412fea55ff057dec2e9b9a8901ed514538",
+        "slc_5bdabb58d4dcef99c64a60989a3d1910d5bf8539dbf8ca6fb3b8a01a53e965db",
+        "slc_6849ae95502c14535073fcd2c673a562951d43ac10e483ff8bee1eb4de7173a3",
+        "slc_c8602a9e76206eac4bb1b1357f061d59387a6c78c19301515b7e196fc1f30022"
+      ],
+      "text": "A github_issue_debug.py script accepts a GitHub token, repo, and issue number, with optional flags for build/test/reproduction/regression validation, Docker environment configuration, candidate patch count, and pushing fixes to a remote branch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_714cdd3a88b182689ced3ed7c8102dfeccf237f985ab4eb7db6edc4125dc2da3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 268,
+          "line_start": 259,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L259-L268"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 257,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L249-L257"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 183,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L181-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fc1c96a1f3be603d53c331e193ebe3a4c1db5b01f142f49288ab0ae6dd696fc",
+        "slc_954cf39b2f9055595a1b5b3b3af20a7957726a1585ba4a4d14599f1f6f755b7f",
+        "slc_b1d7fd4c833661911c34abef078a8d94ad42304769f5e10e4d22348335a381fc"
+      ],
+      "text": "Prerequisites include Docker and Docker Compose, Python 3.11+ for local development, and API keys for OpenAI, Anthropic, or Google Gemini; PostgreSQL and Neo4j are required services."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f4bec26911ee8cdf34d9ca7413de627cb042465a80d6e690e18a3b3f3395aa4d",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "14fcf2a283a7cfcd0397fa16a47decbea81e8348",
+          "line_end": 11,
+          "line_start": 3,
+          "path": "docs/Evaluation-log.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Evaluation-log.md#L3-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_afe3d66f8ce02655a03e0f2081ec7d8bfebf54b9efd7de745502a1ed61032711"
+      ],
+      "text": "An evaluation log records SWE-Bench results across versions and models, e.g. 28.67% resolved on SWE-Bench Lite (300 instances, DeepSeek V3) and 70% on SWE-bench_verified_lite (50 instances, GPT-5 + gpt-4o), with API costs tracked."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6dc40e2aa1b2397e4f838a476c907f7887851f5c228552c742d7e38030c53ba",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+          "line_end": 84,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md#L83-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1863bf4e6f6a3aec3901e2bf47cc145964ffa2a5ed6f03c6a6868c7ac8afb2d4"
+      ],
+      "text": "The README news section claims top-5 and top-1 rankings among GPT-5 agents on the SWE-bench leaderboard for automated software engineering as of 2025-11."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93af3b69be5a67192d4a10c2cebbb23eb021f6f6a3a7c3da0b34c38f0d4268f5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "5ab80f9fb862c15fbff36e7a687131114f8d230d",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "CONTRIBUTING.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/CONTRIBUTING.md#L71-L73"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "5ab80f9fb862c15fbff36e7a687131114f8d230d",
+          "line_end": 60,
+          "line_start": 58,
+          "path": "CONTRIBUTING.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/CONTRIBUTING.md#L58-L60"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "5ab80f9fb862c15fbff36e7a687131114f8d230d",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "CONTRIBUTING.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/CONTRIBUTING.md#L31-L32"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "5ab80f9fb862c15fbff36e7a687131114f8d230d",
+          "line_end": 50,
+          "line_start": 46,
+          "path": "CONTRIBUTING.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/CONTRIBUTING.md#L46-L50"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "5ab80f9fb862c15fbff36e7a687131114f8d230d",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "CONTRIBUTING.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/CONTRIBUTING.md#L43-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ad226bbefdaadfe1baa3acb2af8426ab665bbb92520bfdcb3cab876de685dba",
+        "slc_63a663c7c0ceccdd8d7dee93fcc7003047e8ff7a5b18299a228935dd57b572b3",
+        "slc_aac6d08a16d817795c2bebfd72df8e0e64602d88f496a7be90247df95f764d9b",
+        "slc_b91584e0e3c80ca44d733f79460299270fa6e0083c3fd3b9ea0152fcc572d6ca",
+        "slc_c0aaca125736ce5115acf18889b50985159b14bdb740ebfbf68575eda0d81cc7"
+      ],
+      "text": "Repository development practice: contributors use ruff for linting/formatting, must write tests for every change, run the pytest suite (excluding git-marked tests) with coverage before pushing, and submit PRs that pass CI and maintainer review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffad3c20a3a1bdc9233b5338442c7b1002e6aedda687a51232a524c5b71af854",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L24-L24"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L28-L32"
+        },
+        {
+          "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+          "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+          "line_end": 180,
+          "line_start": 177,
+          "path": "docs/Multi-Agent-Architecture.md",
+          "repository": "euniai/prometheus",
+          "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md#L177-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f8922712e8c6aacb169ffdb66b1a33031438e0f646c29ad06788e2ded3bb277",
+        "slc_ac50610e447ea607630883d3127ae2f8f42455606e3ff848a81402fc0b6c0cca",
+        "slc_e79f19f7fb0b0f9051052cf584e2527dc2019179a82b53c80190045739f9b9d7"
+      ],
+      "text": "The Environment Build Agent is documented as in-progress with only planned features (auto-detecting project type, installing dependencies, configuring build tools), and PR review, feature implementation, and documentation agents are listed as future enhancements."
+    }
+  ],
+  "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 335,
+        "path": "README.md",
+        "size": 16754
+      },
+      {
+        "lines": 11,
+        "path": "docs/Evaluation-log.md",
+        "size": 1748
+      },
+      {
+        "lines": 179,
+        "path": "docs/GitHub-Issue-Debug-Guide.md",
+        "size": 5584
+      },
+      {
+        "lines": 180,
+        "path": "docs/Multi-Agent-Architecture.md",
+        "size": 5248
+      },
+      {
+        "lines": 114,
+        "path": "CONTRIBUTING.md",
+        "size": 2996
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 363,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_1476c621938759ee8293e6ffd68ed3c4",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 2,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/euniai/prometheus/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/92d9be3a6b219c10/manifest.json",
+  "package_id": "pkg_af3c26077c1d0c8329b9fc5c0fa0de4709d9452f8c63f254b5569690ad3f0b50",
+  "repo": "euniai/prometheus",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "70669c187f31dd53544f7c80da0fb0af11a204f0de48bd3fadba35f29abd6275",
+  "snapshot_id": "92d9be3a6b219c10",
+  "sources": [
+    {
+      "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+      "git_sha": "5ab80f9fb862c15fbff36e7a687131114f8d230d",
+      "lines": 114,
+      "path": "CONTRIBUTING.md",
+      "repository": "euniai/prometheus",
+      "sha256": "4bb21817d7023c63d0b833b8585efc974137d34a49fd27b296c3460a864edf72",
+      "source_id": "src_263da69212495d45a4b9d202b12c027b",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/CONTRIBUTING.md"
+    },
+    {
+      "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+      "git_sha": "167a5e98327151c7fb62d41069210e4cc3067151",
+      "lines": 335,
+      "path": "README.md",
+      "repository": "euniai/prometheus",
+      "sha256": "2fab518fe8f30bd641d851e0af24039aa80753995641283ae9bc91f9a019f580",
+      "source_id": "src_22d12039694751a9b924123441d65177",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/README.md"
+    },
+    {
+      "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+      "git_sha": "14fcf2a283a7cfcd0397fa16a47decbea81e8348",
+      "lines": 11,
+      "path": "docs/Evaluation-log.md",
+      "repository": "euniai/prometheus",
+      "sha256": "72e79ed919e6a33f809605afb2dfa63548b9a9337cf0e0c9ad74de21f4e65be4",
+      "source_id": "src_844e46a6d2c25f4ea1e243b5a3b6a948",
+      "stored": "evaluation-log.md-0e1c76165bb9.md",
+      "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Evaluation-log.md"
+    },
+    {
+      "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+      "git_sha": "e80e02e6dbd3277b0dc97ec8bd25896998325ed6",
+      "lines": 179,
+      "path": "docs/GitHub-Issue-Debug-Guide.md",
+      "repository": "euniai/prometheus",
+      "sha256": "efe2316e3320e166afe4b63a6a635cb4050487567a0d3258b626355464e9a336",
+      "source_id": "src_cd316211208c5b7aa06e4461af3ad639",
+      "stored": "github-issue-debug-guide.md-6be8b3c06064.md",
+      "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/GitHub-Issue-Debug-Guide.md"
+    },
+    {
+      "commit": "acb83608ed7fcf3737a967f3059b799bbc3d2b6f",
+      "git_sha": "71a04b4eacd8f320c01b067d38ae29c650bd18cc",
+      "lines": 180,
+      "path": "docs/Multi-Agent-Architecture.md",
+      "repository": "euniai/prometheus",
+      "sha256": "3228f3e7d82c7432daf7c0322fb64694897289135c762e2950558173e303f252",
+      "source_id": "src_234d50c3503d5471ba57b8aefd5787b2",
+      "stored": "multi-agent-architecture.md-4cb5d25211f7.md",
+      "url": "https://github.com/EuniAI/Prometheus/blob/acb83608ed7fcf3737a967f3059b799bbc3d2b6f/docs/Multi-Agent-Architecture.md"
+    }
+  ],
+  "summary": "Prometheus is a LangGraph-based multi-agent platform for repository-level issue resolution, using a Neo4j knowledge graph and Docker-isolated validation, with documented SWE-Bench evaluation results. Evidence is mostly README/docs; no source code slices are present.",
+  "superseded_claim_ids": []
+}

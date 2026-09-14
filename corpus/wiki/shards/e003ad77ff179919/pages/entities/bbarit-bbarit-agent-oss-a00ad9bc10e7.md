@@ -1,0 +1,35 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0d2659750fde538df5d7143adc5b3aed6bfb7122f0f496fc1fbb508b9e641166
+- clm_2216021a569e5d05ee9360ead06317cddca241b8f08b657b52b1573d8af78ed1
+- clm_39129cf851bec6feea686110a067281614344a4fc4498b6affae232c4134aaca
+- clm_40f14afbb5963c5b28f4e7f166b8f9262af9cb5302881db6a464ffda24591dcb
+- clm_545317dd3eaa1072c408e37c1a38a844c81a14519918735d036f7a7fceef88fc
+- clm_863dd1715948e36c66c02042ae25f0c66b9459d7802f9066feb311d32ee6f979
+- clm_886300953789434820012f23e9ebf531b7a208f80f526dafa7d086ccded84ce1
+- clm_ad9a0ff6b6e1ab57eb7b022bb83aa89f269b48140885f637d9bc6d884ffa98f8
+- clm_c2a95d8cbae6aa5f551d5fa3228eb60c7c096beeb8b9a552d592b06dce5bdb26
+- clm_cc1b26950ae3976bd5ce0545393c5a1df4c917f8dd1ccf912e10f6bdc6901884
+- clm_daf19df9497a7f4e192d7217bffd7111d70db9189c524157b402c9168e3ec635
+- clm_eeab7c0cdc6bce37b079f2d2836d6c821cd287ada12a72134fd4d2a6a22694ac
+- clm_fe30cc7c849992853597789d7326ad6dbab30f982ee605925992e62db11ffe63
+maturity: draft
+page_id: pg_7c1ecd6c4569541fa696a00ad9bc10e7
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: bbarit/bbarit-agent-oss
+updated_at: '2026-09-14T01:37:39Z'
+---
+
+# bbarit/bbarit-agent-oss
+
+<!-- rcw:begin owner=entity:ent_1102b898d495504e98f2f0ab4ea3ebe4 block=evidence -->
+- bbarit/bbarit-agent-oss is mentioned in this evidence. [@claim:clm_0d2659750fde538df5d7143adc5b3aed6bfb7122f0f496fc1fbb508b9e641166] [@claim:clm_2216021a569e5d05ee9360ead06317cddca241b8f08b657b52b1573d8af78ed1] [@claim:clm_39129cf851bec6feea686110a067281614344a4fc4498b6affae232c4134aaca] [@claim:clm_40f14afbb5963c5b28f4e7f166b8f9262af9cb5302881db6a464ffda24591dcb] [@claim:clm_545317dd3eaa1072c408e37c1a38a844c81a14519918735d036f7a7fceef88fc] [@claim:clm_863dd1715948e36c66c02042ae25f0c66b9459d7802f9066feb311d32ee6f979] [@claim:clm_886300953789434820012f23e9ebf531b7a208f80f526dafa7d086ccded84ce1] [@claim:clm_ad9a0ff6b6e1ab57eb7b022bb83aa89f269b48140885f637d9bc6d884ffa98f8] [@claim:clm_c2a95d8cbae6aa5f551d5fa3228eb60c7c096beeb8b9a552d592b06dce5bdb26] [@claim:clm_cc1b26950ae3976bd5ce0545393c5a1df4c917f8dd1ccf912e10f6bdc6901884] [@claim:clm_daf19df9497a7f4e192d7217bffd7111d70db9189c524157b402c9168e3ec635] [@claim:clm_eeab7c0cdc6bce37b079f2d2836d6c821cd287ada12a72134fd4d2a6a22694ac] [@claim:clm_fe30cc7c849992853597789d7326ad6dbab30f982ee605925992e62db11ffe63]
+<!-- rcw:end owner=entity:ent_1102b898d495504e98f2f0ab4ea3ebe4 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,406 @@
+{
+  "applied_operation_id": "op_f846708619f347678196d3c8e4a1da84",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffb847cc2ddf28386453d5bb775269e8eb5e5b60b2723a82e445d3b6bb8727c7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_492162a74b3a2ed6241f4406ec0c95e6ac9a00e829f6846a9bafee2071bba0eb"
+      ],
+      "text": "ReCode unifies plan and action into a single code representation, treating high-level plans as placeholder functions that recursively decompose into executable primitives."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_721246fc7c765c90322b6284177c63b2a4c18e25f74fac9250694bcd33ff0be1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb91dcba95e48ad54cd12e0cf75284136cbc7ddbeec4ca0f23693fc6da22b289"
+      ],
+      "text": "Partial programs are organized in a tree where each node captures one sub-task and records its execution trace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a4871abab48bb47d8e6eef15a12b040b4a60235b39a18d3e11020d3bbbd1e26",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb91dcba95e48ad54cd12e0cf75284136cbc7ddbeec4ca0f23693fc6da22b289"
+      ],
+      "text": "A dynamic execution loop executes each node immediately, with fresh observations deciding whether to expand further, retry, or finish."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6eb3a3e434db03eeabec6b8c5c00994b0db0f6aff15dfba227c6dcfb732d7fab",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb91dcba95e48ad54cd12e0cf75284136cbc7ddbeec4ca0f23693fc6da22b289"
+      ],
+      "text": "A constrained Python executor maintains environment variables, validates code blocks, and exposes the toolset available to the agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45edd50f2672648a1d4dfb2fc6024f86274fc6a17445bfb8ac58981e37078e60",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 33,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L28-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e837849c3ce8790442f6ca48f578ef4b83152ed8b9eb8d5d1cb8f626c31b5b03"
+      ],
+      "text": "The repository includes run.py as CLI entry point, agents/recode/ implementation, envs/ wrappers for alfworld, webshop, and sciworld, configs/, and utils/ with an async OpenAI wrapper and constrained executor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95f55e37f0dd17298292ebc74421fff2e842e03f2211020afa3819da795845c3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 160,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L154-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5af09fb35db4f3950d6bc09cd68420006f6628397d4ad8083cfdd8150096e9e"
+      ],
+      "text": "run.py exposes flags including -a/--agent, -e/--env, -n/--instances, -c/--concurrent, --split, --seed, --max-depth, --profile, and -C/--config for YAML-based flag overrides."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_61c35d4d263c6703773a944e12e1bfef2e34c95b2b9742990c524edf78045add",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L114-L114"
+        },
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 137,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L132-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_530847693a69f70948063f21fd0d3826f02818c3436fa9ce30cd9bd0fce60bf8",
+        "slc_df3803fb62c467abfeae34406236dfd6eaa2e702daf4120c27e919fb3b3d751d"
+      ],
+      "text": "LLM access is configured via named profiles in configs/profiles.yaml selected with --profile; OPENAI_API_KEY serves as a fallback, and cost tracking loads configs/prices.json with a track_costs toggle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cea2a64673e1fcee30bcf2a6881f8ec1146ed91798d6bdd0f32c7065e49b6cf9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 198,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L192-L198"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_124ae41a55961bf9057c44cd6b3e263025d2d094824ef8993847e57a4c00adda"
+      ],
+      "text": "New environments implement a base Env contract with reset, _run, is_done, is_success, and report, plus per-environment prompts and few-shot files under agents/recode/resources/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e098cece56a6f7c93277cc51090f0bfce3590d6f5e39ca1379775d691fc2e29a",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a56a5c7e3310f8cd06865fbe11477a31ff6307eb228897f2da3e42ecbaad8da7"
+      ],
+      "text": "The README reports inference comparisons against ReAct, CodeAct, AdaPlanner, and ADaPT, claiming an average score of 60.8 (10.5 above the best baseline) and a perfect 100 in ALFWorld with claude-4-sonnet."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4dfa0ef344f5a11532515bc193774a19b966baff05da8ed4b02e9fd649c3815",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d630c8e754ed4be38f3db0da2f240e2ac59a1605bb2d5d1b018115f5db6cc5f3"
+      ],
+      "text": "The README reports SFT experiments with Qwen2.5-7B-Instruct giving ReCode+SFT an average of 70.4% versus ReAct+SFT (67.6%) and CodeAct+SFT (55.8%)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e38ce9eca5eba7ebbbba868270a4a0cbb5faca41013f61bd5bcb7d99622d430f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "3232d26018af0d3dc2e06964c704b8b740cb53e5",
+          "line_end": 3,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/requirements.txt#L1-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b108b408c06b5ed16c4cd2be5bc2cbcc1252fc5ab08dd19586e3d0f69ff8eeac"
+      ],
+      "text": "requirements.txt pins openai==2.6.1, rich==14.2.0, and torch==2.9.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf097eab89e8611c16a8261a2d5050cca27b04c5c56e6dc7c8fcff65c64064f9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L59-L59"
+        },
+        {
+          "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+          "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "foundationagents/recode",
+          "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md#L61-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75741e9df6daaf5d3e582330a2b540ec7a4507bdd50df2acf5a951b0934d9955",
+        "slc_b5c3f6d9caa38fc37182b64c684a3d2e381629208be8842b3be973f131cdf743"
+      ],
+      "text": "Repository development practice: setup requires a conda environment with Python 3.10 or newer, and the README suggests configuring the three benchmark environments separately since dependency conflicts are unconfirmed."
+    }
+  ],
+  "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 242,
+        "path": "README.md",
+        "size": 10954
+      },
+      {
+        "lines": 3,
+        "path": "requirements.txt",
+        "size": 39
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 83,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_aeeaf39e4ad25f4e8b4c848b5c8051e3",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/foundationagents/recode/6e7223f71281d914762e78d7bbcf6446d362ecbc/f31fb93ce4e5f3e0/manifest.json",
+  "package_id": "pkg_41f9b182d1f2375506eae1863aa9780ed02c08cc82f24dae470802ed7598db57",
+  "repo": "foundationagents/recode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3eebb181f8a032dd34e29b88565166fc4baa31c1d904498694815692ad31b78d",
+  "snapshot_id": "f31fb93ce4e5f3e0",
+  "sources": [
+    {
+      "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+      "git_sha": "8331e77673ae438477dcb84e91601d1d4b00a670",
+      "lines": 242,
+      "path": "README.md",
+      "repository": "foundationagents/recode",
+      "sha256": "c954ba3e4e5a5909fe2b658da6a22a9103772f9c58471291a84b56cf4a085331",
+      "source_id": "src_d08cff3a535f5a548c8f645962d8cb20",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/README.md"
+    },
+    {
+      "commit": "6e7223f71281d914762e78d7bbcf6446d362ecbc",
+      "git_sha": "3232d26018af0d3dc2e06964c704b8b740cb53e5",
+      "lines": 3,
+      "path": "requirements.txt",
+      "repository": "foundationagents/recode",
+      "sha256": "50a7224b9294832b18de6963d59713b198844cce7c3113eeeb3fed4055a89aa5",
+      "source_id": "src_0cd31aaf1766524eaa74f98269ffa41c",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/FoundationAgents/ReCode/blob/6e7223f71281d914762e78d7bbcf6446d362ecbc/requirements.txt"
+    }
+  ],
+  "summary": "Evidence is README documentation plus a requirements.txt file; the README describes ReCode's recursive code-generation agent design, its CLI/configuration interfaces, and reported benchmark results, while requirements.txt pins three dependencies.",
+  "superseded_claim_ids": []
+}

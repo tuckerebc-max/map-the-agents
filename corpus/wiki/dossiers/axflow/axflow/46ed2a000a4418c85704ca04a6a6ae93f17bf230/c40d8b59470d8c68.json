@@ -1,0 +1,766 @@
+{
+  "applied_operation_id": "op_9d614e885cc54550b6861d4e95602708",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f283c213d58c1c4264ab1067d69a80940167b8713e59866908e6fe22f211f52",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "7540971065c1be13b701edc4df8529dc3fa17056",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "docs/documentation.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation.md#L23-L25"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_174880e6c275722acb44f844c2a15880ba571378ebe5526917414d69c2342c3f",
+        "slc_afa1510a0c33830cf149c01c950f8fab66cbe5abf3279794ff13e9c503cde6c1"
+      ],
+      "text": "Axflow ships as a set of modules: @axflow/models (an SDK with React hooks and streaming utilities), axgen (connecting data to LLMs), and axeval (evaluating LLM output quality)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_988b67cf7efa11b03be8b9c76c850aa9d429f263a32dd08fca8bb11d25da9e03",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L17-L17"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L19-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41beba284beb17a330b9074e2c532a6e8ac3ec86fcf630cf24e706c210231e32",
+        "slc_f11b0c04a0cfcc025fb0e566ed3f2eb2c3ec418696c5b98386199902db8e5631"
+      ],
+      "text": "Additional modules are planned but in progress: extract (document loading/transform/chunking for vector search), serve (LLM serving with throttling, analytics, logging middleware), and finetune."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c8b1d11d0dda7f91b093e1a17fb76ea47307498b572a4f5978c28d5a3f0cc09",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "7540971065c1be13b701edc4df8529dc3fa17056",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "docs/documentation.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation.md#L17-L19"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L27-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2519866995aa8e256132a2be5013ce04a5d1bb136b0f14ad2d9c7714f5a2443e",
+        "slc_3c1d460aa8cb5a4abae0268a3883d6b2bdfcb8686d9b5bf2ed99148792163799"
+      ],
+      "text": "The framework takes a code-first approach emphasizing developer flexibility and control, aiming to break LLM workflows into manageable, intuitive components."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e24304db9ceb9a808d0c3d113785e84433afb70608f2297b841cb9fc541e20dd",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "7540971065c1be13b701edc4df8529dc3fa17056",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "docs/documentation.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation.md#L29-L29"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 9,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L8-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ae5d0cbe43adf057ed1dcb6df410c9c9c946972b369d7fba3f8a8853bca2fa1",
+        "slc_a19aec6504f021cc21c8de39b256fe3b010ccdcc6aebdec4acf1616f7fe045b8"
+      ],
+      "text": "Modules are designed for incremental, independent adoption, which also minimizes bundle size; together they form an end-to-end AI application framework."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f4d8ff03d004e6159f9fa1e7b10647596bf72c862df2425e8e192b8996fca55a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "7540971065c1be13b701edc4df8529dc3fa17056",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "docs/documentation.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation.md#L23-L25"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e1b357c19670e37e1561cce59facc2fa4ee83f5d",
+          "line_end": 24,
+          "line_start": 17,
+          "path": "docs/index.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/index.md#L17-L24"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_174880e6c275722acb44f844c2a15880ba571378ebe5526917414d69c2342c3f",
+        "slc_ab2b18b7a061df3639be4eeed6a49d21bfcad03bbe3c09443dd1869b01427e29",
+        "slc_afa1510a0c33830cf149c01c950f8fab66cbe5abf3279794ff13e9c503cde6c1"
+      ],
+      "text": "The @axflow/models SDK is documented as zero-dependency and modular."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6db913c302b502e925f1e8e876d8e95ebcbf3ca835cb451a098a59e4de9979fa",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L5-L7"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_466f822b16b10c180a09e3bd7e2f0dcae53c813149fd24bc4611930b39be6a9e",
+        "slc_b6f9dd7f8e65d8c9947056c6abbf88686436ee906fd16495317335fbc9cc65ef"
+      ],
+      "text": "Axeval is a framework for test-driven LLM engineering: it supports unit-testing prompts, data-driven prompt iteration, and comparing models on latency, cost, and accuracy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1cef0102433248f9b952289a6deb3bb9621ebcad25da374b84dc7cc2c454d4aa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L39-L39"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L27-L27"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L47-L47"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L23-L23"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L43-L43"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_217895f025d64d0f98c1c1a22889549c83c2fc7dc1ee3916afa57a1e1a487ce6",
+        "slc_36dccc56dd75c57ffe968be51148022a7338d44c0128da18b72d3d71f97bfa6f",
+        "slc_a18f746a679113a92801bce5a4ecfcb1f8506e3d40a7d06cab784d834f4e878a",
+        "slc_da799cd7ed46f5b7d9106a03ee399beea2fde40b83391cc53d2a229de2da4812",
+        "slc_e3b931b51ee3762062ec80db26bfb86517f27b026c35bbf548462c7570681948",
+        "slc_ef171ea55ac3885e128bb58d2a73dbb965abdb9f158881bfc6047d7556c3a339"
+      ],
+      "text": "Axeval's API centers on EvalCases (prompt plus one or more evaluators), evaluators that score a prompt/response pair from 0 to 1, EvalResults with metadata like score and latency, Reports, and a Runner that executes suites against models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1c7d0002a9a44688b55054083c625bd2bfba24388d47cf3ecbe7832715dd7bf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 33,
+          "line_start": 29,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L29-L33"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d28305d19ff7992fedc8bd4f5c16e92b18bc5a27986716d2ed5316d645b73ab",
+        "slc_35b545457da1e9a8ed2465f4ffeacdbd62353c9606b136110b9b97ffc82c9b96"
+      ],
+      "text": "Built-in evaluators include match, includes, isValidJSON, and llmRubric, and users can write custom evaluators."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa69ee4b9c919429de4b8b5e20c4efd472a0d31159c3250e03fbe5d7ef2a8f92",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 93,
+          "line_start": 92,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L92-L93"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 101,
+          "line_start": 99,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L99-L101"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L43-L43"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 97,
+          "line_start": 95,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L95-L97"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 105,
+          "line_start": 103,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L103-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_109d1049b0c23c21b9098c01472616b3dfd34d5217636d033e84ee56cd39fc34",
+        "slc_1df2c060019351a2b51e74c59dc9a8b45b38f31b037427969b1160ef62baf19b",
+        "slc_e3b931b51ee3762062ec80db26bfb86517f27b026c35bbf548462c7570681948",
+        "slc_eafe6b9c13d331c42cdde13d17705d689625d816eb3ba201be256197e04ad890",
+        "slc_f99aabc42bc0b8feea3038e95a7fe716ef6afa25224c4e8184f61e0307d3e66e"
+      ],
+      "text": "The Runner API lets users register named test suites bound to specific models (e.g., AnthropicCompletion 'claude-2', OpenAICompletion 'text-davinci-003') and run them, producing a report that can be output to formats such as stdout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05cc58f2eda14f098414c627032783f3f317cccd92de46297fb8ecaf7130d824",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "7540971065c1be13b701edc4df8529dc3fa17056",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "docs/documentation.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation.md#L31-L35"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+          "line_end": 15,
+          "line_start": 13,
+          "path": "docs/documentation/axeval.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md#L13-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_359b44520b8dda77711a3dbfa97745c7edc8fc9a4197276e6d4afc01d97d9a33",
+        "slc_79781d008232f8a688b9b93143f375a7ffe5874e338248ef78bc89cbc25ce343"
+      ],
+      "text": "Modules are installed independently via npm (npm i axeval; npm install @axflow/models, axgen, axeval)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4143edb1b4e6c3f0d19bb876ce43c8501b1635e5a2ecd0d3a1557c3c9794265",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 6,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L5-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00028d9d475c1ebaef8eb6c15d9cfac526c5900abb0d9db1bd7759612738c404"
+      ],
+      "text": "Repository development practice: the repository displays a GitHub CI workflow badge, indicating a CI pipeline for the repo."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83d130d5e84cca0be292bab5c3d0f9e266ff1eafd411c67336732d50d5f523cc",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md#L27-L29"
+        },
+        {
+          "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+          "git_sha": "b9b6351c25ab43d279a66a47f03cbdd897430454",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/tutorials.md",
+          "repository": "axflow/axflow",
+          "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/tutorials.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c1d460aa8cb5a4abae0268a3883d6b2bdfcb8686d9b5bf2ed99148792163799",
+        "slc_4ff83f1aaa2bf665f83a97ff2ab39916e8984a227135d25ae125fe872f55133e"
+      ],
+      "text": "The project targets TypeScript developers building natural-language/LLM applications, with tutorials such as building a streaming React/Next.js chat app using @axflow/models with OpenAI token streaming."
+    }
+  ],
+  "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 37,
+        "path": "README.md",
+        "size": 2389
+      },
+      {
+        "lines": 43,
+        "path": "docs/documentation.md",
+        "size": 1666
+      },
+      {
+        "lines": 5,
+        "path": "docs/guides.md",
+        "size": 125
+      },
+      {
+        "lines": 24,
+        "path": "docs/index.md",
+        "size": 600
+      },
+      {
+        "lines": 7,
+        "path": "docs/tutorials.md",
+        "size": 283
+      },
+      {
+        "lines": 111,
+        "path": "docs/documentation/axeval.md",
+        "size": 3889
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/documentation/axgen.md",
+        "reason": "file-budget",
+        "size": 4250
+      },
+      {
+        "path": "docs/documentation/models.md",
+        "reason": "file-budget",
+        "size": 7669
+      },
+      {
+        "path": "docs/tutorials/stream-chat-app.md",
+        "reason": "file-budget",
+        "size": 7351
+      },
+      {
+        "path": "docs/documentation/models/anthropic-completion.md",
+        "reason": "file-budget",
+        "size": 5239
+      },
+      {
+        "path": "docs/documentation/models/azure-openai-chat.md",
+        "reason": "file-budget",
+        "size": 5605
+      },
+      {
+        "path": "docs/documentation/models/cohere-embedding.md",
+        "reason": "file-budget",
+        "size": 1641
+      },
+      {
+        "path": "docs/documentation/models/cohere-generation.md",
+        "reason": "file-budget",
+        "size": 4322
+      },
+      {
+        "path": "docs/documentation/models/google-generate-content.md",
+        "reason": "file-budget",
+        "size": 4643
+      },
+      {
+        "path": "docs/documentation/models/huggingface-text-generation.md",
+        "reason": "file-budget",
+        "size": 5669
+      },
+      {
+        "path": "docs/documentation/models/node.md",
+        "reason": "file-budget",
+        "size": 1596
+      },
+      {
+        "path": "docs/documentation/models/ollama-embedding.md",
+        "reason": "file-budget",
+        "size": 1339
+      },
+      {
+        "path": "docs/documentation/models/ollama-generation.md",
+        "reason": "file-budget",
+        "size": 3077
+      },
+      {
+        "path": "docs/documentation/models/openai-chat.md",
+        "reason": "file-budget",
+        "size": 4377
+      },
+      {
+        "path": "docs/documentation/models/openai-completion.md",
+        "reason": "file-budget",
+        "size": 4434
+      },
+      {
+        "path": "docs/documentation/models/openai-embedding.md",
+        "reason": "file-budget",
+        "size": 1356
+      },
+      {
+        "path": "docs/documentation/models/react.md",
+        "reason": "file-budget",
+        "size": 10752
+      },
+      {
+        "path": "docs/documentation/models/shared.md",
+        "reason": "file-budget",
+        "size": 10200
+      },
+      {
+        "path": "docs/documentation/models/togetherai-inference.md",
+        "reason": "file-budget",
+        "size": 4458
+      },
+      {
+        "path": "docs/guides/models/bring-your-own-models.md",
+        "reason": "file-budget",
+        "size": 3048
+      },
+      {
+        "path": "docs/guides/models/building-client-applications.md",
+        "reason": "file-budget",
+        "size": 9754
+      },
+      {
+        "path": "docs/guides/models/getting-started.md",
+        "reason": "file-budget",
+        "size": 9287
+      },
+      {
+        "path": "docs/guides/models/streaming.md",
+        "reason": "file-budget",
+        "size": 9613
+      },
+      {
+        "path": "docs/LICENSE.md",
+        "reason": "file-budget",
+        "size": 1108
+      },
+      {
+        "path": "docs/documentation/LICENSE.md",
+        "reason": "file-budget",
+        "size": 1110
+      }
+    ],
+    "omitted_count": 24,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 195,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 30,
+      "complete": false,
+      "omitted": 24,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_fcaa359f93185aaf8d799dcca1777233",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/axflow/axflow/46ed2a000a4418c85704ca04a6a6ae93f17bf230/c40d8b59470d8c68/manifest.json",
+  "package_id": "pkg_9958e34f9e321302f7d550c996252dea47b002ad687dc2e93178012cd7222ef5",
+  "repo": "axflow/axflow",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1dc51df6044d9cc9078ee226d7b9aa4c143c0419b6a5148126433fde60ffc555",
+  "snapshot_id": "c40d8b59470d8c68",
+  "sources": [
+    {
+      "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+      "git_sha": "e7d24c5013b99447017a3f71c8555bdfd90eb79e",
+      "lines": 37,
+      "path": "README.md",
+      "repository": "axflow/axflow",
+      "sha256": "0e4ce091f162f44ffb3891a89ea176bc7df46b57ad64b6d79160b22fc0731e17",
+      "source_id": "src_9e0809dc27c65324b3d4dfdff1b11a89",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/README.md"
+    },
+    {
+      "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+      "git_sha": "7540971065c1be13b701edc4df8529dc3fa17056",
+      "lines": 43,
+      "path": "docs/documentation.md",
+      "repository": "axflow/axflow",
+      "sha256": "6ba19a44b4e2b2f7c4c18a0d58b6e200064f63f5e16b89f5ea70fcf7e8c55fab",
+      "source_id": "src_b8bd44f27e735f3e8722fa032f5a2665",
+      "stored": "documentation.md-216f1a47489a.md",
+      "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation.md"
+    },
+    {
+      "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+      "git_sha": "8ab487ec5eed72617cc887080175a2a176dcc6c6",
+      "lines": 111,
+      "path": "docs/documentation/axeval.md",
+      "repository": "axflow/axflow",
+      "sha256": "6265df65e3801cee2fc7bae8ae67e22d1bae6b2942efbdbfebc0d4635525f267",
+      "source_id": "src_eaf00bc5556d5b289b8649966db93ce8",
+      "stored": "axeval.md-95b111992ec0.md",
+      "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/documentation/axeval.md"
+    },
+    {
+      "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+      "git_sha": "d9894739d531fd3f67b2e3221cf0b330e49e9ed9",
+      "lines": 5,
+      "path": "docs/guides.md",
+      "repository": "axflow/axflow",
+      "sha256": "824a4e281d017ca4d198d0201d52ffedb7f943f658363ab913c035faec700231",
+      "source_id": "src_6283f2c4c9f255d1b9f321136fac8f77",
+      "stored": "guides.md-469788916a1f.md",
+      "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/guides.md"
+    },
+    {
+      "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+      "git_sha": "e1b357c19670e37e1561cce59facc2fa4ee83f5d",
+      "lines": 24,
+      "path": "docs/index.md",
+      "repository": "axflow/axflow",
+      "sha256": "8b9f85846a27d16e218d904550ca982e5b99f1be6c501497974dcf8fd362a285",
+      "source_id": "src_2f483545e68759f3a8da6c8e42a17085",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/index.md"
+    },
+    {
+      "commit": "46ed2a000a4418c85704ca04a6a6ae93f17bf230",
+      "git_sha": "b9b6351c25ab43d279a66a47f03cbdd897430454",
+      "lines": 7,
+      "path": "docs/tutorials.md",
+      "repository": "axflow/axflow",
+      "sha256": "40d35ccbc5a1efdcb96bbfa41990f85681d8ec41d5e46420f1aed16eea7f0a3d",
+      "source_id": "src_ab46aeabfda9598897efe2a09c3268e3",
+      "stored": "tutorials.md-b7a7762b6c81.md",
+      "url": "https://github.com/axflow/axflow/blob/46ed2a000a4418c85704ca04a6a6ae93f17bf230/docs/tutorials.md"
+    }
+  ],
+  "summary": "The snapshot documents Axflow, a TypeScript monorepo of AI development modules (@axflow/models, axgen, axeval) with detailed documentation for axeval's LLM-output evaluation framework; evidence is mostly README/docs text with no source code slices.",
+  "superseded_claim_ids": []
+}

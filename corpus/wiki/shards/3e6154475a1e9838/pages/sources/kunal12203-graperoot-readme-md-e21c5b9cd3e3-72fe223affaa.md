@@ -1,0 +1,44 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0667d9c48fc227f8ac7df1cb0680ec75cee55027ee0a1f772be35bd7d282819e
+- clm_35ac8f7234e4b70bdb6ca027e019249cae7e83deb9df9f908406e593d6407f90
+- clm_3678470c1677ce8c2ac2d9b3cd86c02900da89c61819814fd7e323b1c86dd2ad
+- clm_472679bcff213673743544cc72c7076c2d7c32eeb7ac2f5d201fe69018740b28
+- clm_5c077b75da2b64a399993a6f592f42d8ecfd16ca4f157e3f96d95ff951cf6d44
+- clm_6fc75c51afdd856b301b29649d70d932f64a94ad88b9389877bf7cb0129efba8
+- clm_87b802a21e8db6e32ae3c9f15dfb124050e28325f6b04a1bcc624f1d1c3f59de
+- clm_93cd3ae6d87b222eb6a4a51d3efd2191dcf7c5d0e0ea12d668a01d500e1e1223
+- clm_96b6e692a00eeb3497137124f1eed4769aa8d3ae5a973da78a60fb3251625030
+- clm_a2465bfe59d6e087aba968d090d7b07ad72c731ccfc3520f2dc0f82e2ff1278b
+- clm_b544584cbf1b437c88efedc91d45b9fed5d5a8e1dfcafe8a3c07aa0209f9988f
+maturity: draft
+page_id: pg_d01e82bf205d5f12a1d872fe223affaa
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_14a4201a4405575187012b548764bceb
+title: kunal12203/GrapeRoot/README.md @ e21c5b9cd3e3
+updated_at: '2026-09-14T04:03:34Z'
+---
+
+# kunal12203/GrapeRoot/README.md @ e21c5b9cd3e3
+
+<!-- rcw:begin owner=source:src_14a4201a4405575187012b548764bceb block=evidence -->
+- GrapeRoot is described as an open-source launcher that sits between the user and an AI coding assistant, building a semantic graph of files, symbols, imports, and call chains to pre-load relevant code into each prompt. [@claim:clm_0667d9c48fc227f8ac7df1cb0680ec75cee55027ee0a1f772be35bd7d282819e]
+- The graph engine (`graperoot` pip package) is proprietary; only the launcher scripts in `bin/` are open source under Apache 2.0, per the licensing and contributing sections. [@claim:clm_35ac8f7234e4b70bdb6ca027e019249cae7e83deb9df9f908406e593d6407f90]
+- Repository development practice: the README's contributing section invites PRs for bug fixes, new AI assistant support, install improvements, and docs for the open-source launcher scripts. [@claim:clm_3678470c1677ce8c2ac2d9b3cd86c02900da89c61819814fd7e323b1c86dd2ad]
+- The product exposes launcher commands: `dgc` for Claude Code, `dg` for Codex CLI, `dgo` for OpenCode, and `graperoot . --<tool>` flags for Cursor, Gemini CLI, Copilot, OpenClaw, Kilocode, MiMo Code, Antigravity, Kiro CLI, and Command Code. [@claim:clm_472679bcff213673743544cc72c7076c2d7c32eeb7ac2f5d201fe69018740b28]
+- The README describes session memory: files that were read, edited, or queried are weighted higher in future turns, so context compounds across a session. [@claim:clm_5c077b75da2b64a399993a6f592f42d8ecfd16ca4f157e3f96d95ff951cf6d44]
+- The README reports benchmarks over real-world codebases (7,700+ files) and 50+ prompts, claiming cost per prompt dropping from $0.49 to $0.27, average turns from 11.7 to 3.5, and quality scores from 76.6 to 86.6 out of 100, with full methodology at graperoot.dev/benchmarks. [@claim:clm_6fc75c51afdd856b301b29649d70d932f64a94ad88b9389877bf7cb0129efba8]
+- The tool targets developers using AI coding assistants on TypeScript, JavaScript, Python, Go, Swift, Rust, Java, Kotlin, Scala, C#, Ruby, and PHP codebases, on macOS, Linux, or Windows. [@claim:clm_87b802a21e8db6e32ae3c9f15dfb124050e28325f6b04a1bcc624f1d1c3f59de]
+- The `graperoot` CLI supports an interactive picker, `--version`, `--update`, `--no-auto-update`, `--auto-update`, and `--no-telemetry`/`--telemetry` flags per the README usage sections. [@claim:clm_93cd3ae6d87b222eb6a4a51d3efd2191dcf7c5d0e0ea12d668a01d500e1e1223]
+- The AI assistant can call graph-aware MCP tools (`graph_read`, `graph_retrieve`, `graph_neighbors`) to explore further, and read budgets are hard-capped per turn via environment variables like DG_HARD_MAX_READ_CHARS (default 4000) and DG_TURN_READ_BUDGET_CHARS (default 18000). [@claim:clm_96b6e692a00eeb3497137124f1eed4769aa8d3ae5a973da78a60fb3251625030]
+- Project data lives in `<project>/.dual-graph/` (info_graph.json for the semantic graph, chat_action_graph.json for session memory, context-store.json for persistent decisions/tasks/facts), with a global install at `~/.dual-graph/`. [@claim:clm_a2465bfe59d6e087aba968d090d7b07ad72c731ccfc3520f2dc0f82e2ff1278b]
+- All processing is stated to be local with no code leaving the machine, and telemetry is limited to anonymous crash reports (error type, failed step, OS/Python version, product version), explicitly excluding code, file paths, project names, prompts, and personal data. [@claim:clm_b544584cbf1b437c88efedc91d45b9fed5d5a8e1dfcafe8a3c07aa0209f9988f]
+<!-- rcw:end owner=source:src_14a4201a4405575187012b548764bceb block=evidence -->
+
+## Researcher notes
+

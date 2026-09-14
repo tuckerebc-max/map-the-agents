@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_05fb22cc556cb12e8958a6e87ce59c7774e5917e3b11ef4b0eaac3b19242370e
+- clm_28421fa6da09a31cbe2b05288a7aa76b211a3f595b480e0e68d9b8d947555665
+- clm_5b0700c8e9b8756733618e91ed08d358ca8d99aa44d1addf04f9e4472fb033a0
+- clm_621d9b1aed1153e5e33616ce943e744a94616a5bf15edea4a435ab6a4c1786c4
+- clm_630f48d9e8f43abfb053307e5de7db27c22753338d8c71355b0e28e6393690ca
+- clm_87f7085f1094786deaf287d46a1249ac226d434677b7b819b217ba98bbf14418
+- clm_9ec99a665a8697f62c813dae9afd546c9391d571e3a8592492a6423f143178e0
+- clm_c1d545b0241e4d54b790efb955844cb27508ad645341d0d9429659b097a06392
+- clm_e3c0e0162f482a101b7d3f22f3df67752623c1cee27f833fac7e1f5a294f4657
+- clm_f1f3fbf24bdad8f81c2fbf77e84a0e1dfb2180724ce4ef76a7d69350e980572f
+- clm_f38a9621519a66cdd96ba8240e0bdd3db6058a71bbde74facbb29beafdfd2d11
+- clm_fbd3bab31071cd6e948e7cca76424c999ceea8a861b5ffab1acba54b364893c0
+maturity: draft
+page_id: pg_4b285cba3d1f59578aefea2449c3dab1
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_c3333afca1a85fe2af5ed6b81d8a7bfa
+title: dnouri/pilish/AGENTS.md @ 894d1e7be124
+updated_at: '2026-09-14T03:47:48Z'
+---
+
+# dnouri/pilish/AGENTS.md @ 894d1e7be124
+
+<!-- rcw:begin owner=source:src_c3333afca1a85fe2af5ed6b81d8a7bfa block=evidence -->
+- Repository development practice: the guide maps each source file to a purpose, e.g. pilish-core.el for JSON parsing, line buffering, RPC request correlation and process protocol, and pilish-browse.el for magit-section session/tree browsers with disk session discovery. [@claim:clm_05fb22cc556cb12e8958a6e87ce59c7774e5917e3b11ef4b0eaac3b19242370e]
+- Repository development practice: the guide documents ten production source modules forming an acyclic dependency DAG, plus an optional Evil integration module, with the internal require edges listed explicitly. [@claim:clm_28421fa6da09a31cbe2b05288a7aa76b211a3f595b480e0e68d9b8d947555665]
+- Repository development practice: linting uses make lint (checkdoc plus package-lint), make check-parens, and make check (byte-compile, lint, all tests) which equals the pre-commit hook; the hook runs scripts/check.sh and can be skipped with --no-verify. [@claim:clm_5b0700c8e9b8756733618e91ed08d358ca8d99aa44d1addf04f9e4472fb033a0]
+- Repository development practice: conventions include the pilish- prefix for public symbols, pilish-- for internal ones, pilish-test-<description> test names, git add of specific files rather than -A, and consulting the pi CLI (TypeScript) source as the RPC protocol reference. [@claim:clm_621d9b1aed1153e5e33616ce943e744a94616a5bf15edea4a435ab6a4c1786c4]
+- Repository development practice: the guide prescribes tmux-based spike scripts under gitignored ./tmp/ for reproducing visual bugs, including required boilerplate, -Q launch caveats, and buffer naming patterns like *pilish-chat:<dir>*. [@claim:clm_630f48d9e8f43abfb053307e5de7db27c22753338d8c71355b0e28e6393690ca]
+- Repository development practice: the guide describes Pilish as an Emacs frontend for the pi coding agent with a two-window UI (markdown chat buffer plus prompt composition buffer) communicating with the pi CLI via JSON-over-stdio RPC. [@claim:clm_87f7085f1094786deaf287d46a1249ac226d434677b7b819b217ba98bbf14418]
+- Repository development practice: per the guide, menu and UI only declare browser entry points without requiring browse, and the top-level load order makes those commands available without introducing a cycle. [@claim:clm_9ec99a665a8697f62c813dae9afd546c9391d571e3a8592492a6423f143178e0]
+- Repository development practice: the guide lists md-ts-mode (a tree-sitter markdown major mode used by chat buffers) as an external package dependency, noting loading pilish must not globally claim unrelated Markdown files. [@claim:clm_c1d545b0241e4d54b790efb955844cb27508ad645341d0d9429659b097a06392]
+- Repository development practice: benchmark make targets cover table rendering, reload/resume, tool-update storm, and deferred agent_end cooling lanes, with GUI (xvfb) lanes primary and batch lanes as quick sanity checks; correctness errors, not timing thresholds, fail the runs. [@claim:clm_e3c0e0162f482a101b7d3f22f3df67752623c1cee27f833fac7e1f5a294f4657]
+- Repository development practice: 'make test' auto-installs the Emacs package dependencies transient, magit-section, and md-ts-mode on first run, caching via a .deps-stamp file, with 'make clean' forcing reinstall. [@claim:clm_f1f3fbf24bdad8f81c2fbf77e84a0e1dfb2180724ce4ef76a7d69350e980572f]
+- Repository development practice: the guide states shared session state lives in ui.el, that menu.el and input.el are siblings requiring neither the other, and that cross-module state mutations use accessor functions like --set-process defined in ui.el. [@claim:clm_f38a9621519a66cdd96ba8240e0bdd3db6058a71bbde74facbb29beafdfd2d11]
+- Repository development practice: tests are run with 'make test', per-module targets such as make test-core and make test-browse, integration targets (fake/real), and ERT regexp SELECTOR filtering; VERBOSE=1 yields full raw ERT output. [@claim:clm_fbd3bab31071cd6e948e7cca76424c999ceea8a861b5ffab1acba54b364893c0]
+<!-- rcw:end owner=source:src_c3333afca1a85fe2af5ed6b81d8a7bfa block=evidence -->
+
+## Researcher notes
+

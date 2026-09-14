@@ -1,0 +1,571 @@
+{
+  "applied_operation_id": "op_a924ceffdbd0485398ac56ff7c2264b8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0439fe278b5f000b295c49b89f010875e5d73395fb216a5a60d5ecc760885200",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L9-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61d6a194640dd4634a657ce4c233f73bb67f9d917f4c57c6b43fe5ee09dfcdc2"
+      ],
+      "text": "Vendo is an embedded agent for B2B SaaS that acts through the host product's own API as the signed-in user and renders generated UI in a sandboxed, brand-native surface without touching host source code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8471d28b3fc8babfa88846d5467c8eb94d234ff4466defc381217d5f026619a3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L92-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5069a384b15f4d2c08980e11be100e67cccb0a74ddb7785baad633b46529bfb6"
+      ],
+      "text": "Generated components run in an iframe jail with connect-src 'none', escalating to a sandboxed server only when needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_766686a1a7b330f1e8f970ec65f01190238bddb6f95fb6ee4a849f0269abb820",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 96,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L94-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6533344672a3e34e522be1b86ea04583ec06ff760d2b4eecc5992a724f06ed0e"
+      ],
+      "text": "Policy, approvals, grants, breakers, and audit sit at one execution choke point; app machines reach host tools only through a guarded tool proxy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5639129a9e23d32896f707cc01f258322d3f8d36af5094e9587a83ae588dd84",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L88-L88"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4854be5316dc128c993cb96d349ff06ce3aaf9cc7632851157b347f4a2339d0b",
+        "slc_b3c6596486daf1c43b3194b322c8df857f62760b66ab497432ecf3e5380f5abf"
+      ],
+      "text": "Vendo runs a streaming agent that works with any AI SDK LanguageModel, and extracts the host API into tools the agent executes as the signed-in user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b50087df7adedc04d45031a8a88eba5e3c09c6827ac7be3b1c0d2704bbb1a532",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 99,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L98-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b38df48235ed81a63547b9b22623bab58d1024f304d1fe9df91a59ac13a495fa"
+      ],
+      "text": "PGlite at .vendo/data serves as the zero-config store, and production runs the same schema on Postgres."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4eb31c13b6105610e0931d75aee87361fa5b49b4650e417becc8e6fe72b56117",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 106,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L105-L106"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 112,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L108-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0498ff2ab86ddbffd0f486eb2d1808e7220442f35897836f21a09ec06fd950f5",
+        "slc_31c8fa5f537675fa87cde083e0b2d4fccd8642dc3e7727949c9a8cc6760c79d4"
+      ],
+      "text": "The npm package @vendoai/vendo is the default composition (vendoai is a thin alias), with subpath exports /core and /ui providing shared types/schemas and headless React hooks plus an in-jail component kit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47af5f31c1074fb53e676ab9da528757714a9f6a157f96390752708f51867b2f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 115,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L114-L115"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7738dbdd4a9c2a9a4ed6dbd1e760dd48ce31b54df1121768c406153670e1ad84"
+      ],
+      "text": "Cloud-gated features (sharing, publishing, org overlays, pinning) activate with VENDO_API_KEY while the open-source blocks remain self-hosted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1fed25b9a55101fb5d39eefb74c7715133c9ba39dcea1e1b6e52d4d9569ebb6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 76,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L72-L76"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 82,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L78-L82"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md#L46-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15119c483017a6644dc1e4bc56adef82b9147a3560c5a739d21ae8625367386c",
+        "slc_2dee156f96db0f5caceacc374f111a3326fba455dfa843cf91ecf5839246ab8a",
+        "slc_8ab0e35f3a28ff0eaab3ae4181e180ea8072397f4089cd39c4a11cc1b4128add"
+      ],
+      "text": "The CLI offers `vendo init` for setup and an optional `vendo doctor` checkup whose printed codes link to exact fixes; a backend package exposes `agent()` and `chat()` without mounting Vendo's CLI or UI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b37db2c05958b89995ff627e90b4134fdc34bbf3ef42e193febae7a0e5c4e0f6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "113d0c1e1dcbe64c5982f0a16cc7308ee50b23d7",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "TELEMETRY.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/TELEMETRY.md#L3-L3"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "113d0c1e1dcbe64c5982f0a16cc7308ee50b23d7",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "TELEMETRY.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/TELEMETRY.md#L24-L24"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "113d0c1e1dcbe64c5982f0a16cc7308ee50b23d7",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "TELEMETRY.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/TELEMETRY.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_663014001b7be6acb2a0722ff1dbb462631703a78ad696f2ebea93aedc27efe0",
+        "slc_7f9a5ac7b83f774562d6ca8c08c5caad0e7e0bae8a77a6f7dfc102ace567c130",
+        "slc_a0742ca6b166072bc225adc329c4541e046f4537d70eb8498f120414d14362e2"
+      ],
+      "text": "Telemetry is anonymous and opt-out, build/dev-side only, never firing from a deployed production app; events carry only counts and enums, never source code, paths, prompts, keys, or raw error messages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dcadf3e9c155c41dfc11e3fc4f6f6ff8dea9e498dc320b2ddde6913ca7f70091",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "113d0c1e1dcbe64c5982f0a16cc7308ee50b23d7",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "TELEMETRY.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/TELEMETRY.md#L58-L58"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "113d0c1e1dcbe64c5982f0a16cc7308ee50b23d7",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "TELEMETRY.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/TELEMETRY.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1839febf74d94dc5bd575d53c99ca6b7ecc0e0b89cef35a4f0cf72d2b191d8af",
+        "slc_fcbd253c861f9d945ff66e8f4780b0c96243ec42bbd3bc1b58e3f7875f498a73"
+      ],
+      "text": "Telemetry identity is a random UUID stored in ~/.vendo/telemetry.json, and projectIdHash is a salted one-way SHA-256 of the git origin URL or package name, omitted when neither exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_135d50fe0c8fa4e894bcef14b801493a5e5e7c714018a3e5c23a11e7181f13b4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "72e4037a605ad52474a1af155539ce13b39e6d02",
+          "line_end": 67,
+          "line_start": 62,
+          "path": "CONTRIBUTING.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CONTRIBUTING.md#L62-L67"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "72e4037a605ad52474a1af155539ce13b39e6d02",
+          "line_end": 37,
+          "line_start": 20,
+          "path": "CONTRIBUTING.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CONTRIBUTING.md#L20-L37"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "07c2601a84e19e47cadb5dfc1d5d1ddd75a5a5cd",
+          "line_end": 79,
+          "line_start": 51,
+          "path": "CLAUDE.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CLAUDE.md#L51-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb6b2e43d053f0ada6dea5aaa10f5b2ed96d9bb6bb26fca633d604ddf0676347",
+        "slc_bbd956bcb38327471dac9b9bbd65f46adafe376ef0ff92cea79a586ade106c9f",
+        "slc_ca375a39177a8c0c7c237a33f423098a08b9083bedf5ad7d55927f453fa59bb1"
+      ],
+      "text": "Repository development practice: contributors branch from main and open PRs; the local gate is pnpm typecheck && pnpm lint plus the test files covering touched code, with CI's green check as the gate of record and releases handled by CI-only tag-and-release workflows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_610757db68efc13a5c146f0270bdc8ffdc2a2ae12ae9d34c44191ddaf9e9cc13",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "72e4037a605ad52474a1af155539ce13b39e6d02",
+          "line_end": 16,
+          "line_start": 13,
+          "path": "CONTRIBUTING.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CONTRIBUTING.md#L13-L16"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "72e4037a605ad52474a1af155539ce13b39e6d02",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "CONTRIBUTING.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CONTRIBUTING.md#L56-L58"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "72e4037a605ad52474a1af155539ce13b39e6d02",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "CONTRIBUTING.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CONTRIBUTING.md#L41-L43"
+        },
+        {
+          "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+          "git_sha": "72e4037a605ad52474a1af155539ce13b39e6d02",
+          "line_end": 49,
+          "line_start": 45,
+          "path": "CONTRIBUTING.md",
+          "repository": "runvendo/vendo",
+          "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CONTRIBUTING.md#L45-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bc708cf8d2280466b3f212d3ced34cf967bc9184aca48d8eadfc37e35770111",
+        "slc_1e6b4006f7bc7a68383f9e5826d53faeb62e8f1c13892d14e6f839f16513db0c",
+        "slc_4fb7b491871cf8bef66faf14adf43788c6113f59b205dfc6bf6f310ec14d2ffd",
+        "slc_d32f3a1502a3bf450dc3b9d55276c9f44878130127016370497c8354a5ae01dc"
+      ],
+      "text": "Repository development practice: the repo is a turbo monorepo requiring Node 22+ and pnpm 11; PRs are merged publicly then imported into a private monorepo by a maintainer-run upstream-import workflow."
+    }
+  ],
+  "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 121,
+        "path": "README.md",
+        "size": 6079
+      },
+      {
+        "lines": 68,
+        "path": "CREDITS.md",
+        "size": 2775
+      },
+      {
+        "lines": 101,
+        "path": "TELEMETRY.md",
+        "size": 8994
+      },
+      {
+        "lines": 178,
+        "path": "CLAUDE.md",
+        "size": 11761
+      },
+      {
+        "lines": 84,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 5474
+      },
+      {
+        "lines": 84,
+        "path": "CONTRIBUTING.md",
+        "size": 3851
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 378
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2814,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ec313a334d5d509eb65a6197562bfd8b",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/runvendo/vendo/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/d1f8bb85b9842298/manifest.json",
+  "package_id": "pkg_d26244e695af096f25a93e021cd007aa58aff1a024dc159411d6b6dff7b469a4",
+  "repo": "runvendo/vendo",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "bc6bdcd83029414aaeca44a52cd33db47a54cde2350e74c95762b1b3987d1e36",
+  "snapshot_id": "d1f8bb85b9842298",
+  "sources": [
+    {
+      "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+      "git_sha": "07c2601a84e19e47cadb5dfc1d5d1ddd75a5a5cd",
+      "lines": 178,
+      "path": "CLAUDE.md",
+      "repository": "runvendo/vendo",
+      "sha256": "909a5971714b7bb9bac9f88c20b93512cf2ced8c4bc7f59c6946d4e7c9c814db",
+      "source_id": "src_0ce4ca06c3a95a2fbe41178b33d64a0d",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CLAUDE.md"
+    },
+    {
+      "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+      "git_sha": "ef6087728ec4681d38323679de9c28d339c1eea4",
+      "lines": 84,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "runvendo/vendo",
+      "sha256": "5f509cf7041f69e5332e7d9bf29d34c9752396e952b80ebcb4fead2aae2cb4c9",
+      "source_id": "src_fffd52f4b8205f0cab4468ae897e094e",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+      "git_sha": "72e4037a605ad52474a1af155539ce13b39e6d02",
+      "lines": 84,
+      "path": "CONTRIBUTING.md",
+      "repository": "runvendo/vendo",
+      "sha256": "2f35b83f05473af6145c337b123bc5e1c22eda85a8dcfa6f3e8f6108cbb0be0a",
+      "source_id": "src_86e6532447a9562b89c5c2e3b02005c7",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CONTRIBUTING.md"
+    },
+    {
+      "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+      "git_sha": "1effc0a7329642d7178c8a7b25a9890e132f3717",
+      "lines": 68,
+      "path": "CREDITS.md",
+      "repository": "runvendo/vendo",
+      "sha256": "aee54d05f2ac3ce9bf4750e9c61b6ba5cd92d9738c799e1a0a1e3fe4706167bc",
+      "source_id": "src_20ecf5a2df2d575eb66d16ef655f4e7c",
+      "stored": "credits.md-7ddc0d1fb1cd.md",
+      "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/CREDITS.md"
+    },
+    {
+      "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+      "git_sha": "ed89c7db7308ad1332dedc8e05268a9649c1dce3",
+      "lines": 121,
+      "path": "README.md",
+      "repository": "runvendo/vendo",
+      "sha256": "15d49257f328849b87aca5ee957dd7b9565b258c0330c2e7686765b16fddeece",
+      "source_id": "src_153217620dfd5e5490a9968c1aaa3b86",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/README.md"
+    },
+    {
+      "commit": "4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c",
+      "git_sha": "113d0c1e1dcbe64c5982f0a16cc7308ee50b23d7",
+      "lines": 101,
+      "path": "TELEMETRY.md",
+      "repository": "runvendo/vendo",
+      "sha256": "7f7d346597a725c861180fbd46b688ef5a317513a3df0b210f9659494a7d5bfd",
+      "source_id": "src_0a2043ae06255e78ade91b262b78c8f4",
+      "stored": "telemetry.md-1807265761e5.md",
+      "url": "https://github.com/runvendo/vendo/blob/4d149938d7d3dbbe87f46b92e5d4bf0152ec5b6c/TELEMETRY.md"
+    }
+  ],
+  "summary": "Selected evidence records: Vendo is an embedded agent for B2B SaaS that acts through the host product's own API as the signed-in user and renders generated UI in a sandboxed, brand-native surface without touching host source code. Generated components run in an iframe jail with connect-src 'none', escalating to a sandboxed server only when needed.",
+  "superseded_claim_ids": []
+}

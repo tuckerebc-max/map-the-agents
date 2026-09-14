@@ -1,0 +1,613 @@
+{
+  "applied_operation_id": "op_b5ee997775584d76b9a6b80ba6f1c1ac",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6933f3720f210b8a6857ae4e11e2a83bc70dc19497de91927f86a7a6fa7baf10",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L8-L8"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_018f268c6964fb2bd7c9602b22d78b1f72c47943e4b9b5d2a44ca10aa0999b66",
+        "slc_4a5186f9111a013e714ef412a0de1965d69aa14ac233b419cfa57ab7896f0c04"
+      ],
+      "text": "Wolfpack is a self-hosted control room for running coding agents remotely, letting users monitor and control persistent agent terminals from a desktop or phone."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_902ef62c1703f863b0a8dddd1b789fdbd0162d71bd4ce77e3588973f70f59b4b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f7daf0162d39cbdccf5a2146d69802bafc0a5a15269e39bee59a9ab5d7d29e0"
+      ],
+      "text": "Sessions run in a Rust PTY broker separate from the web server, so closing the browser or restarting only the web server does not end sessions; a broker restart or login-service reinstall can terminate them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_216c859cc158079d8c730e03a1d0d0d173946fb3509052258955304cf524b348",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 89,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L86-L89"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18ade2141957a2a20efbf55a730ddcab10ea5770df02fb4072706ebf2523d39c",
+        "slc_27140722c589502f68f1ab69ab8929a14703400140844c3707c041996656b99e"
+      ],
+      "text": "The product supports built-in coding-agent providers Claude Code, Codex, Gemini CLI, Cursor, and Pi, with shell as an always-available fallback and custom PATH commands configurable in Settings → Agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_761d356669adf9a507d1eda599c92ff49f7ce5bb34c1565d329bebda5a05963b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 128,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L126-L128"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 114,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L111-L114"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 122,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L120-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_505d8e6a3ac857add2173868624542bef9437a98812fc4620726ce577f9e9d7d",
+        "slc_abcb909df3d1a90a884162524da29dd570371e09e1732dbf2a46a65c07c2fc0a",
+        "slc_b53740a41fe1dac9fe6d702d75a441b2070bad247f569080263686224d2cce8a"
+      ],
+      "text": "A CLI exposes JSON session control, e.g. wolfpack --machine <peer> list --json, session status, session create with --harness and --plan, and agent spawn with --notify-parent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0fa108caa900742341b04ccb4580e7a452cfa5660e137fc235ae9f71966f3943",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 89,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L86-L89"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18ade2141957a2a20efbf55a730ddcab10ea5770df02fb4072706ebf2523d39c",
+        "slc_4a5186f9111a013e714ef412a0de1965d69aa14ac233b419cfa57ab7896f0c04"
+      ],
+      "text": "Remote access is designed to go directly over a private Tailscale network with no Wolfpack-hosted relay or account, and the phone client is a PWA with touch-friendly controls and optional notifications."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_509700169736615b2f314d3025837f8e38210ea583917ad88ff8b5c9ef068414",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L33-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ffa0e82d10a68aae9cc093be5fb918bac63b33f1d1bbd36438d06a5175f8587b"
+      ],
+      "text": "The tool grants browser users shell-level control over configured projects; session control follows the global API auth policy and has no inter-session authorization layer, so it should be kept on a trusted Tailnet with ACLs or JWT."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed0c78d742e2cb47f9906201e0935ca093c7c812fdf5ebce513bc1e413bcd6af",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c87e72654636a0b4389749cbe62fc83abf910f470b20ed25aceed029201256c7"
+      ],
+      "text": "Wolfpack ships agent skills: wolfpack-tailnet-control for session control across Agent Skills-compatible harnesses, and wolfpack-pi-task-delegation teaching Pi durable task routing via agent_task_* commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fdf737ac4f634f099d284d68a77bb026bc35d6e5f714d1f7ce7e886bfe79bbf7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f7daf0162d39cbdccf5a2146d69802bafc0a5a15269e39bee59a9ab5d7d29e0"
+      ],
+      "text": "Session persistence has boundaries: a broker restart or login-service reinstallation can terminate sessions, per the README's lifecycle description."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c10bb93fe6e4ecbcb1249b68d42a7377fd448532265faea577d25dc073a84aff",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L116-L116"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_289ec8d3d57c880f29f255636e6e865e8e3f2d400f8455e8ffb844e24e582693",
+        "slc_4a5186f9111a013e714ef412a0de1965d69aa14ac233b419cfa57ab7896f0c04"
+      ],
+      "text": "Remote access depends on a Tailscale network; machine targeting uses configured tailscaleHostname suffixes, and the CLI sends JWT authorization on a bounded GET /api/machine handshake, failing closed on invalid or unreachable targets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab7a08ce2dce81b49d82b4737793755b3a55f6a6f232f4e74ac83685c3058514",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+          "line_end": 6,
+          "line_start": 5,
+          "path": "CONTRIBUTING.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md#L5-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c21fd1f6e7876bf5ce30e902d0c6befec09af32be8dcfafb12b24a44cef4987d"
+      ],
+      "text": "Repository development practice: contributors need Bun (v1.4.2+ pinned in CI) and a Rust toolchain, plus a pinned Zig toolchain and Ghostty VT build only for source builds of the broker; release-install users need neither Zig nor Ghostty."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e23b9376c60c35e5917ae0b6e257860391cac79f320c98fc7b3e350e12c6fe8e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "CONTRIBUTING.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md#L32-L35"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+          "line_end": 79,
+          "line_start": 76,
+          "path": "CONTRIBUTING.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md#L76-L79"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+          "line_end": 28,
+          "line_start": 23,
+          "path": "CONTRIBUTING.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md#L23-L28"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "CONTRIBUTING.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md#L37-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b69ffd7f4020ba4257d3ca64f45333f2e5f29d20d67843afa0642d5fafedb54",
+        "slc_76a279f5f8bbdeed11375834e5fbebe78dd6a18497f5463151badb63e8f74d05",
+        "slc_a2665e08f7b3be8e30a594e8be96eb12d778866e9be3d3c1b4a40b7e7a597e7a",
+        "slc_cc993a9673ae67fbc4663c3f4e7c69a40f8fe800d019718618ecbd04e98dcfc6"
+      ],
+      "text": "Repository development practice: tests run via bun test (unit/integration/snapshot under tests/), Playwright for e2e, and cargo test for the Rust broker; PRs must branch off main, pass bun test, and stay focused."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed3869a6e44fde4fddcaa6526ccddb963a3d73868141f9c4d5ccfda3a57348c6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "CONTRIBUTING.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md#L41-L41"
+        },
+        {
+          "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+          "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+          "line_end": 45,
+          "line_start": 43,
+          "path": "CONTRIBUTING.md",
+          "repository": "almogdepaz/wolfpack",
+          "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md#L43-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43096c852b762b305758b6faf352b921ad0855f6d3f0c0b3e4852d11ba93548f",
+        "slc_8d27cc429530cbaf92481a89240e022dfd0609d0756634494154d50eb7d98657"
+      ],
+      "text": "Repository development practice: frontend assets in public/ are embedded into the binary via scripts/gen-assets.ts, and src/public-assets.ts must not be edited manually."
+    }
+  ],
+  "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 142,
+        "path": "README.md",
+        "size": 9816
+      },
+      {
+        "lines": 15,
+        "path": "AGENTS.md",
+        "size": 1580
+      },
+      {
+        "lines": 89,
+        "path": "CONTRIBUTING.md",
+        "size": 4309
+      }
+    ],
+    "omitted": [
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 833
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 1810
+      },
+      {
+        "path": "llms.txt",
+        "reason": "file-budget",
+        "size": 2664
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 2621
+      },
+      {
+        "path": "docs/accessibility-testing.md",
+        "reason": "file-budget",
+        "size": 1260
+      },
+      {
+        "path": "docs/agent-skills.md",
+        "reason": "file-budget",
+        "size": 6370
+      },
+      {
+        "path": "docs/broker-protocol.md",
+        "reason": "file-budget",
+        "size": 16439
+      },
+      {
+        "path": "docs/cli-attach.md",
+        "reason": "file-budget",
+        "size": 1950
+      },
+      {
+        "path": "docs/control-api-schema.md",
+        "reason": "file-budget",
+        "size": 3379
+      },
+      {
+        "path": "docs/design/visual-makeover/README.md",
+        "reason": "file-budget",
+        "size": 7892
+      },
+      {
+        "path": "docs/first-session.md",
+        "reason": "file-budget",
+        "size": 2693
+      },
+      {
+        "path": "docs/installation.md",
+        "reason": "file-budget",
+        "size": 16185
+      },
+      {
+        "path": "docs/live-update-handoff.md",
+        "reason": "file-budget",
+        "size": 3450
+      },
+      {
+        "path": "docs/memory-owned-relay-design.md",
+        "reason": "file-budget",
+        "size": 10244
+      },
+      {
+        "path": "docs/multi-machine-control-room.md",
+        "reason": "file-budget",
+        "size": 3476
+      },
+      {
+        "path": "docs/multi-machine-trial-feedback.md",
+        "reason": "file-budget",
+        "size": 1127
+      },
+      {
+        "path": "docs/phone-pwa-notifications.md",
+        "reason": "file-budget",
+        "size": 4860
+      },
+      {
+        "path": "docs/relay-worker-isolation.md",
+        "reason": "file-budget",
+        "size": 11374
+      },
+      {
+        "path": "docs/session-control.md",
+        "reason": "file-budget",
+        "size": 14980
+      },
+      {
+        "path": "docs/session-identity.md",
+        "reason": "file-budget",
+        "size": 3391
+      },
+      {
+        "path": "docs/tailnet-release-matrix.md",
+        "reason": "file-budget",
+        "size": 22525
+      },
+      {
+        "path": "docs/task-gateway.md",
+        "reason": "file-budget",
+        "size": 11155
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 6148
+      }
+    ],
+    "omitted_count": 23,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 578,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 26,
+      "complete": false,
+      "omitted": 23,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_022992c9a795534380581464174ff558",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/almogdepaz/wolfpack/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/1ef435f5947eaa2c/manifest.json",
+  "package_id": "pkg_b59839e45d1ed4a30502edcc4459ec07cdc13f14e72b92d749961dc0b7a3a4ec",
+  "repo": "almogdepaz/wolfpack",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0af5623f2bf94bd15957904c3ce55b655018f6780961055228db0b1874d72b2c",
+  "snapshot_id": "1ef435f5947eaa2c",
+  "sources": [
+    {
+      "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+      "git_sha": "5fbfba84dd931649beb5664f3b51fa84036cfeac",
+      "lines": 15,
+      "path": "AGENTS.md",
+      "repository": "almogdepaz/wolfpack",
+      "sha256": "504db1c2d3a24a40d2d3ea2b53f0d9c5a75d88ea43d8d6afb4a91977d1568f3c",
+      "source_id": "src_a86d5610946552b5b5473a1162b6df3f",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/AGENTS.md"
+    },
+    {
+      "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+      "git_sha": "8213e7ecb69e80e1fbba93396531d91e14d37a67",
+      "lines": 89,
+      "path": "CONTRIBUTING.md",
+      "repository": "almogdepaz/wolfpack",
+      "sha256": "bec0598ffec6e6c75f816e175abd8e94e7aadb9aab3b74d7a31eb7d0aded1c3e",
+      "source_id": "src_1c15434b9c51557dab591f21f6daa54c",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/CONTRIBUTING.md"
+    },
+    {
+      "commit": "0c7ee60e7163435a849a3a7f9ce662f7dd2fe869",
+      "git_sha": "f4bfb62b33023ae77ce7110a8bd6020fe38c7fc6",
+      "lines": 142,
+      "path": "README.md",
+      "repository": "almogdepaz/wolfpack",
+      "sha256": "45ee15084d79c70997e4d825f117865e4716bc5e7fa14c5e657efd29ccc220b5",
+      "source_id": "src_70ef8de10b695a6283ae3d4dbd18d470",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/almogdepaz/wolfpack/blob/0c7ee60e7163435a849a3a7f9ce662f7dd2fe869/README.md"
+    }
+  ],
+  "summary": "Wolfpack is a self-hosted browser/phone control room for persistent AI coding-agent terminals, with sessions owned by a Rust PTY broker separate from the web server, direct Tailscale remote access, a JSON CLI for session control, and bundled agent skills. Contributor docs describe Bun/Rust/Zig build and test workflows.",
+  "superseded_claim_ids": []
+}

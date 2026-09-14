@@ -1,0 +1,362 @@
+{
+  "applied_operation_id": "op_25edd85f34a34b6cb582e168baf6ec2f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_07ff707ed03df83946f99d560215fe47adb4cf06e3983f32651a26dc0e4b3429",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 27,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L26-L27"
+        },
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 13,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L6-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6b6b3ed04c14e36dd0d8120c4409e5ce0940ebae0938cb3ae7cba0a72f3c5774",
+        "slc_f2e4e0d1ac24a94f67c5c95ea37c60946f39f754aa89e3b10fed0f2219864f44"
+      ],
+      "text": "The project is Agents 2.0, a major update adding support for agent learning and evaluation, released 2024-06-25."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d36ab97baa7d137fc6cf2dd0f41cf1aef121c5cd38d17470636a0088f42aff5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_761d0e98d86b70c35f865a8d87c36968696cdab58f17a0455a6f628c5e79c22f"
+      ],
+      "text": "Agent symbolic learning analogizes an agent pipeline to a neural net's computational graph, with prompts and tools playing the role of layer weights."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10d38630123cb9ea5b3e2677a0704e49280dd570e1b9cf9ce24b1c567486d1f7",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41070abca667c6ac0c3f71357c3dd3455e5cb4cb4fbd564f4d394ba03e4d165b"
+      ],
+      "text": "Training implements a forward pass (agent execution) recording inputs, outputs, prompts, and tool usage per node in a trajectory, then a prompt-based loss producing a language loss."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_39f17a94648d3760f736674f93015db6b513f53bb61c484ae47ce9d94f1b0a18",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41070abca667c6ac0c3f71357c3dd3455e5cb4cb4fbd564f4d394ba03e4d165b"
+      ],
+      "text": "The framework back-propagates language loss along the trajectory to produce textual 'language gradients', then updates symbolic components and the node graph via prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e5e2f2a95e099f6a7e9ba6d256b0e6b0578a8638de3ed05fc6bb01ca3d60a58c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41070abca667c6ac0c3f71357c3dd3455e5cb4cb4fbd564f4d394ba03e4d165b"
+      ],
+      "text": "The approach supports optimizing multi-agent systems by treating nodes as distinct agents or allowing multiple agents to act within one node."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_718764ac1ead91a7ff67d51473f4eb81bcb3fc3c3de5e223f52fefb1deb7f4ab",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "1699d86520b444ba3f20ccbb8b33aaa11ca2e046",
+          "line_end": 30,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/requirements.txt#L1-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58138882f414e53e797d5dedfede9a2efaa1adac9ebddd0369baeb978c313d4f"
+      ],
+      "text": "requirements.txt pins exact versions of torch, openai, litellm, langchain-core/community, gradio, wandb, pymilvus, qdrant-client, selenium, and other libraries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1e93f72e5985659eb5b60a52e8530afd39ef8abe3eceaf450ffba34688715c14",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 56,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L51-L56"
+        },
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L46-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d9efb3cc00fdc9e4c9494506848470c627255054cebf1f18594dfd1a6234f83",
+        "slc_a7a9e8a2878d50974fc4391e5b40087c5f70e8ce145dfa616eb717a7760563b6"
+      ],
+      "text": "Installation is documented via pip from the GitHub master branch or an editable local clone with 'pip install -e .'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c44d51af70841ce17e3f3da7f5eb7520e82d478069967b2b6cd986a71b593cf2",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L15-L18"
+        },
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 13,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L6-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78b9c0b3734f6a7d7a6f86cdbd4ccc38c9e248d09a4d0c2ec9044b71fec231b7",
+        "slc_f2e4e0d1ac24a94f67c5c95ea37c60946f39f754aa89e3b10fed0f2219864f44"
+      ],
+      "text": "The repository is versioned v2.0.0 and licensed under Apache 2.0, with project page, arXiv paper, and docs links provided."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e6479d35af452fc8df7321677e3bb8f1e00b7ff1322b263041099bd780b9e78e",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 77,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L67-L77"
+        },
+        {
+          "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+          "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+          "line_end": 88,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "aiwaves-cn/agents",
+          "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md#L79-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f65f0b70c71efe1602dd4d22e7835e6920eacbbb5ea33854bf4795d30968a7a",
+        "slc_ba931c3c6e8dc39743902468677c44223f3c1e5ce73f5bc3711facce4c5156c2"
+      ],
+      "text": "The work is associated with the 2024 arXiv paper 'Symbolic Learning Enables Self-Evolving Agents' and a 2023 companion framework paper, both cited in the README."
+    }
+  ],
+  "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 88,
+        "path": "README.md",
+        "size": 4402
+      },
+      {
+        "lines": 30,
+        "path": "requirements.txt",
+        "size": 651
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 12649,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_bf28bf202b595e29bdddc3ca4998d7a9",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aiwaves-cn/agents/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/e1eef48ba43f73dd/manifest.json",
+  "package_id": "pkg_a94199f8f32c1f07141866568173cadb11fd128df17e78c2bda7d05c2e7d886e",
+  "repo": "aiwaves-cn/agents",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8ef15a136b13038e34fc3ec454a1dbb84b7d22b55314d0d5720aacade584c4d9",
+  "snapshot_id": "e1eef48ba43f73dd",
+  "sources": [
+    {
+      "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+      "git_sha": "9896757a190d9742ce14229b32cd8ecaea8bcaa6",
+      "lines": 88,
+      "path": "README.md",
+      "repository": "aiwaves-cn/agents",
+      "sha256": "b96fb090a6e93b4dbf755eb8888e2ae97df7170e149e40e2c0e9aba59e1586c8",
+      "source_id": "src_4c717d08875e5bc78046f74c980636be",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/README.md"
+    },
+    {
+      "commit": "e8c4e3c2d19739d3dff59e577d1c97090cc15f59",
+      "git_sha": "1699d86520b444ba3f20ccbb8b33aaa11ca2e046",
+      "lines": 30,
+      "path": "requirements.txt",
+      "repository": "aiwaves-cn/agents",
+      "sha256": "bcb8bb4a6e82233c4debd10dfa3b78b67fbc9a8af2cab5295108f4eb8aee9646",
+      "source_id": "src_085fbc946544501682be6ee69673153c",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/aiwaves-cn/agents/blob/e8c4e3c2d19739d3dff59e577d1c97090cc15f59/requirements.txt"
+    }
+  ],
+  "summary": "The README describes Agents 2.0, a framework for training language agents via symbolic learning (language-based loss, gradients, and weight updates), with pinned Python dependencies and Apache-2.0 licensing. Evidence is limited to README and requirements.txt.",
+  "superseded_claim_ids": []
+}

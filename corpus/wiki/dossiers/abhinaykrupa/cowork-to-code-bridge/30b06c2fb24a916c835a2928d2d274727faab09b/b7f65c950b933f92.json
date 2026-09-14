@@ -1,0 +1,715 @@
+{
+  "applied_operation_id": "op_7c4d13cfbcf04334ba1f18a16fe2f657",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b99b2a3dfcfa7fc57761246e3d61e7cab499a93796f8ce0d730be757c07125e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 144,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L139-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2fef71fa3265198c5deeb581a9c267536bc3a225202a7c36acdd7207f176b0cc"
+      ],
+      "text": "The system has four parts: a Cowork skill auto-loaded in each session, a shared bridge folder with queue/, results/, and progress/ subfolders, a daemon managed by launchd or systemd (or started manually), and run_claude.sh which hands tasks to a local Claude Code agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf9bc3f02a084af72fac83d5a60cead846f3680d5db5f7e6576c4c9aafeda890",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 496,
+          "line_start": 496,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L496-L496"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 494,
+          "line_start": 486,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L486-L494"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76e9d89b535ef2edbd2f62a4850d2a33e324bc1590a099229582dc038327d381",
+        "slc_bcfa11f149ac144ecf6b12f3b4a0363f20bd570883216861fe000d605852801e"
+      ],
+      "text": "Tasks are JSON files written to a queue/ folder and results are JSON files in results/, with the daemon polling roughly every second; no network connection exists between the Cowork sandbox and the machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d255167431975fb19ea5cc72fe1ffad59481027c992c72c325c9f6969bc0a42",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 504,
+          "line_start": 504,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L504-L504"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 502,
+          "line_start": 502,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L502-L502"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 498,
+          "line_start": 498,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L498-L498"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45543003560c93add7407e201b20e1e86ec8b63c67fa313a5fb3a6924cbee2b0",
+        "slc_4f04e97b2b0c3290ef944bb7fd345db29b8c502b2ca275ee044f0bc8abd367ce",
+        "slc_c58138762c03a007e035f5781eb382c959ee75742d0786c1e8a3970cdc501c4a"
+      ],
+      "text": "Rather than a network connection, the bridge uses files on a shared folder that Cowork mounts; the README notes this is slower (about one second per call versus milliseconds for MCP) but works because Cowork's sandbox cannot reach localhost services."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_900008f83860e7140c0523c1e44171aa54bd63f4fcac8edf8e28dc53a778cf59",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 514,
+          "line_start": 510,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L510-L514"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d138a503fce0b434c0762f79b0b5f4e128d512e6cbc8aee0ea794076193f5912"
+      ],
+      "text": "The daemon only runs scripts from ~/.cowork-to-code-bridge/scripts/ whose names match a strict pattern (no path tricks or symlinks), rejects commands with a wrong token, and runs as the normal user without sudo."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2327702b88d5770b2b69066915796c49166159505b04e15df259947b883044e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 208,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L208-L208"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 206,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L202-L206"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8692ede7e3c769a5de716954267ebfbe2d4c3b5db587173affbe36cb5c761742",
+        "slc_a3df627a8eb7b11c5947c710f265722bb28ee44a47bc96439d9e2a9f98f73a08"
+      ],
+      "text": "Per-task controls include a spend cap (max_budget_usd, shown as 2.00 in an example), a permission scope (readonly, plan, edit, or full), and model tier/effort selection; owner-set ceilings (BRIDGE_MAX_BUDGET_USD, BRIDGE_PERMISSION_CEILING) take precedence, with the stricter value winning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97cfa7fffdce031793ff195f1acb436c544378e67b24b0054b7c3c764c699333",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L35-L35"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L146-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_beab2d671b9e4542caae5a0c8de2205e39e385556a11b9561e93c7f005362d0b",
+        "slc_c3e71616b1b05356315e57ec14d0b200ba79ed9a2473ac800f6441e18e0726c9"
+      ],
+      "text": "Requests are idempotent: results are cached by an idempotency key so a retry after a dropped connection returns the cached result instead of re-running the agent or script; tasks are journaled and marked in-flight, and a reboot mid-task is detected rather than silently re-run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e9dae7fab30ab30bd3389c00ce2bf90e33f4a20ddd2d960156a53835b4c4fec",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L21-L21"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 520,
+          "line_start": 518,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L518-L520"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L96-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_828b09745ddb724c35d36c97f100a2f9ecd54ad20627e7177280fbec314a9934",
+        "slc_c33358e9b39b9653d8048df2ec112405e3b6961dfc3bb65432ca91875328e31a",
+        "slc_ffbbf5627fb7696517eeae98cce7e3548eda6a396068909f51fcbc9739373bcf"
+      ],
+      "text": "Native Windows is not supported yet; Windows users must install inside WSL2 (Ubuntu) with systemd enabled. The README also lists threats the bridge cannot defend against, including malicious user-written scripts and an attacker who already has filesystem write access."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b14ee9355faf61670896ab1827815e6130cc0142329fab1639f558b0f17349b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 310,
+          "line_start": 305,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L305-L310"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 315,
+          "line_start": 315,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L315-L315"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 72,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L69-L72"
+        },
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 298,
+          "line_start": 298,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L298-L298"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1740bb9445434b194b102748c276b53503f65485a170a82f9fea7a99bd6b3abe",
+        "slc_6c91e3cedc9d9a387e5c05002bc24877dac3155618d07b77781b611e19391e72",
+        "slc_8ac46cebb72a44acf78a2904c1b0cd2625ac22dfe7713e7b9fc255b37c35c715",
+        "slc_9ed9b0e3bf8775b06c084c5a22c7624d5d55619915ae8b0c1c4776737a1ca49a"
+      ],
+      "text": "The pip install provides console scripts cowork-to-code-bridge-daemon, -uninstall, and -selfcheck; selfcheck checks six items, prints PASS/FAIL per check, and exits 0 if all pass or 1 if any fail."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_376fd5eb169bc1d4fca22bd22367d440b66e36109077b5ae68d94f9853569cb9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 248,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L229-L248"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef020c6d76a275ac841e4892b16b07692cf06bd1452a00d8c5c14a55ff6ca6dc"
+      ],
+      "text": "Bundled whitelisted scripts include run_claude.sh, mac_health.sh, mac_ram.sh, mac_disk.sh, mac_top.sh, mac_network.sh, process_kill.sh, port_check.sh, docker_ps.sh, docker_logs.sh, git_status.sh, pkg_outdated.sh, and list_scripts.sh, many supporting --json structured output."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a05a1bb40017e0e916c4fd45a07d5af7f297a2ac6503fbdd3b6b942902639302",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 252,
+          "line_start": 252,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L252-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2fffa2e9757df06917dec4b288aa03c49ef30640791bc005ea8653a958b04647"
+      ],
+      "text": "Long-running tasks can pause and ask the user a question back through the Cowork session via request_cowork.sh, moving through awaiting_reply, reply_to_machine(), and resume_remote(), with timeouts distinguishable from approvals and parallel tasks getting separate replies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dfa3b744169701f85a8c7d58baa4fc47a03dfc8c14574f92ac8e352dda71d875",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+          "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+          "line_end": 210,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "abhinaykrupa/cowork-to-code-bridge",
+          "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md#L210-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_993881ba6c4563f859a9d128dbfdf74e82e0060d4d326755eaf74b1fbf6d7586"
+      ],
+      "text": "An optional plan-approval hook (approve_plan.sh) gates tasks carrying a plan field: exit 0 proceeds and exit 2 rejects with the hook's message returned to Cowork; if the file does not exist, the plan field is silently ignored."
+    }
+  ],
+  "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 620,
+        "path": "README.md",
+        "size": 40662
+      },
+      {
+        "lines": 308,
+        "path": "CAMPAIGN_READY.md",
+        "size": 10571
+      },
+      {
+        "lines": 225,
+        "path": "CAMPAIGN_REVISION_COMPLETE.md",
+        "size": 7458
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 14507
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 5544
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 942
+      },
+      {
+        "path": "COMMUNITY_OUTREACH.md",
+        "reason": "file-budget",
+        "size": 7752
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3645
+      },
+      {
+        "path": "FEEDBACK_AND_IMPROVEMENTS.md",
+        "reason": "file-budget",
+        "size": 4195
+      },
+      {
+        "path": "IMPLEMENTATION_PROGRESS.md",
+        "reason": "file-budget",
+        "size": 9829
+      },
+      {
+        "path": "LEVERAGE_STRATEGY.md",
+        "reason": "file-budget",
+        "size": 9093
+      },
+      {
+        "path": "OUTREACH_MASTER_PLAN.md",
+        "reason": "file-budget",
+        "size": 11028
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 4439
+      },
+      {
+        "path": "SETUP.md",
+        "reason": "file-budget",
+        "size": 1623
+      },
+      {
+        "path": "STARTUP_SCHOOL_SUBMISSION.md",
+        "reason": "file-budget",
+        "size": 7959
+      },
+      {
+        "path": "SUBMISSION_STATUS_UPDATE.md",
+        "reason": "file-budget",
+        "size": 7229
+      },
+      {
+        "path": "SUBMISSION_TRACKING.md",
+        "reason": "file-budget",
+        "size": 6819
+      },
+      {
+        "path": "TEST_REPORT.md",
+        "reason": "file-budget",
+        "size": 5194
+      },
+      {
+        "path": "docs/BRIDGE_INIT.md",
+        "reason": "file-budget",
+        "size": 16326
+      },
+      {
+        "path": "docs/CI_IDE_SURFACES_STRATEGY.md",
+        "reason": "file-budget",
+        "size": 9525
+      },
+      {
+        "path": "docs/CODE_EXECUTION_STRATEGY.md",
+        "reason": "file-budget",
+        "size": 12236
+      },
+      {
+        "path": "docs/CURATED_LISTS_STRATEGY.md",
+        "reason": "file-budget",
+        "size": 11129
+      },
+      {
+        "path": "docs/EXTERNAL_AGENT_INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 15134
+      },
+      {
+        "path": "docs/GITHUB_ISSUES_MANUAL.md",
+        "reason": "file-budget",
+        "size": 6218
+      },
+      {
+        "path": "docs/HERMES_GITHUB_ISSUE.md",
+        "reason": "file-budget",
+        "size": 3252
+      },
+      {
+        "path": "docs/HERMES_OPENCLAW_OUTREACH.md",
+        "reason": "file-budget",
+        "size": 11927
+      },
+      {
+        "path": "docs/HERMES_PITCH.md",
+        "reason": "file-budget",
+        "size": 5855
+      },
+      {
+        "path": "docs/HOMEBREW.md",
+        "reason": "file-budget",
+        "size": 3752
+      },
+      {
+        "path": "docs/LINUX-NO-SYSTEMD.md",
+        "reason": "file-budget",
+        "size": 2110
+      },
+      {
+        "path": "docs/MCP_REGISTRY_MASTER_TEMPLATE.md",
+        "reason": "file-budget",
+        "size": 13839
+      },
+      {
+        "path": "docs/MCP_SERVER_IMPLEMENTATION.md",
+        "reason": "file-budget",
+        "size": 8838
+      },
+      {
+        "path": "docs/MULTI_FRAMEWORK_OUTREACH.md",
+        "reason": "file-budget",
+        "size": 8420
+      },
+      {
+        "path": "docs/OPENCLAW_GITHUB_ISSUE.md",
+        "reason": "file-budget",
+        "size": 3109
+      },
+      {
+        "path": "docs/RECIPES.md",
+        "reason": "file-budget",
+        "size": 8996
+      },
+      {
+        "path": "docs/RELEASING.md",
+        "reason": "file-budget",
+        "size": 4836
+      },
+      {
+        "path": "docs/SESSION_HANDOFF.md",
+        "reason": "file-budget",
+        "size": 2182
+      },
+      {
+        "path": "docs/STARTER_TEMPLATE_STRATEGY.md",
+        "reason": "file-budget",
+        "size": 10043
+      },
+      {
+        "path": "docs/STATEFUL_OPERATION_PATTERN.md",
+        "reason": "file-budget",
+        "size": 31619
+      },
+      {
+        "path": "docs/TIER1_POSTING_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 10910
+      },
+      {
+        "path": "docs/TIER2_EXPANSION_CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 15300
+      },
+      {
+        "path": "docs/WITHOUT_CLAUDE.md",
+        "reason": "file-budget",
+        "size": 3767
+      },
+      {
+        "path": "docs/WSL.md",
+        "reason": "file-budget",
+        "size": 5924
+      },
+      {
+        "path": "docs/announcement.md",
+        "reason": "file-budget",
+        "size": 3587
+      },
+      {
+        "path": "docs/architecture.md",
+        "reason": "file-budget",
+        "size": 9585
+      },
+      {
+        "path": "docs/demo-recording-script.md",
+        "reason": "file-budget",
+        "size": 2035
+      },
+      {
+        "path": "docs/launch-kit.md",
+        "reason": "file-budget",
+        "size": 5297
+      },
+      {
+        "path": "docs/reddit-post-ready.md",
+        "reason": "file-budget",
+        "size": 2889
+      },
+      {
+        "path": "docs/session-log-2026-05-28.md",
+        "reason": "file-budget",
+        "size": 16312
+      }
+    ],
+    "omitted_count": 45,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 154,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 48,
+      "complete": false,
+      "omitted": 45,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_f71e517ac6825b8c9bf6dc488a28a352",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/abhinaykrupa/cowork-to-code-bridge/30b06c2fb24a916c835a2928d2d274727faab09b/b7f65c950b933f92/manifest.json",
+  "package_id": "pkg_db793454c2876ab3b023563f86cc6ac133d505a784ab2e311e95e498d4ee7c31",
+  "repo": "abhinaykrupa/cowork-to-code-bridge",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "56642b50e64f5087e250725820ba97c762b16d3e275c99e7cc61c5b682a8dedd",
+  "snapshot_id": "b7f65c950b933f92",
+  "sources": [
+    {
+      "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+      "git_sha": "b3d14aff553691ec424f6e8d1b3339eb5806ffa8",
+      "lines": 308,
+      "path": "CAMPAIGN_READY.md",
+      "repository": "abhinaykrupa/cowork-to-code-bridge",
+      "sha256": "4ce456a64dd8ef3dbda9c10470b2a233af7f9580ac401f951c7396a0755e7cc0",
+      "source_id": "src_084cacd1ba3e5685af360fae23c28ad3",
+      "stored": "campaign_ready.md-c30fcffda362.md",
+      "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/CAMPAIGN_READY.md"
+    },
+    {
+      "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+      "git_sha": "614f2df58704433711bf3b75e0313fd6d392221e",
+      "lines": 225,
+      "path": "CAMPAIGN_REVISION_COMPLETE.md",
+      "repository": "abhinaykrupa/cowork-to-code-bridge",
+      "sha256": "f6ca1f193efbcf89f0275d22fc48c5b5b6b73c91d66c6453813a809082e2c3eb",
+      "source_id": "src_b9b603afa97a53639fe8469bdfe6100e",
+      "stored": "campaign_revision_complete.md-5c864db89808.md",
+      "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/CAMPAIGN_REVISION_COMPLETE.md"
+    },
+    {
+      "commit": "30b06c2fb24a916c835a2928d2d274727faab09b",
+      "git_sha": "4772104b16229f0d0a69f82b5a01ad7c0a938336",
+      "lines": 620,
+      "path": "README.md",
+      "repository": "abhinaykrupa/cowork-to-code-bridge",
+      "sha256": "a71a66a522828a9458dda533fa49e8dcd8789bc7466b7658cf74ef0e797383dc",
+      "source_id": "src_c5d73ac62adb534ca6af196f6c7c5f4a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/abhinaykrupa/cowork-to-code-bridge/blob/30b06c2fb24a916c835a2928d2d274727faab09b/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The system has four parts: a Cowork skill auto-loaded in each session, a shared bridge folder with queue/, results/, and progress/ subfolders, a daemon managed by launchd or systemd (or started manually), and run_claude.sh which hands tasks to a local Claude Code agent. Tasks are JSON files written to a queue/ folder and results are JSON files in results/, with the daemon polling roughly every second; no network connection exists between the Cowork sandbox and the machine.",
+  "superseded_claim_ids": []
+}

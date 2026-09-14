@@ -1,0 +1,526 @@
+{
+  "applied_operation_id": "op_1bba4a99a03a40919b6beca66d637935",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6921439416cf368d91e329598a3d02a70295ef10e309770768eebd65384d5f7a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 125,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L125-L125"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 131,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L127-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_690a29d72be702b02a4d96a20fbb2091119abcd90d4429c61aeedb009fc04363",
+        "slc_c6cfb88390989a8d61ff2ff504fbdf4bfe491eea21dcb2fb4503b5f4fca4d043"
+      ],
+      "text": "HALO is described as a methodology for building recursively self-improving agent harnesses using RLMs, with the repo containing a desktop app, methodology docs, a Python engine package, and demos."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7df3a5dbdf9586bcc6b93014c53bdce9205c527e0f92a5f6efce6638c00bbef7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 142,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L138-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e7561cd440080af4f6001e46fbe883943c916d19638720413360b1d3d9bcaca8"
+      ],
+      "text": "The HALO loop: collect OpenTelemetry-compatible traces from an agent harness, feed them to the HALO-RLM engine, which decomposes traces into common failure modes and produces a report that a coding agent turns into harness changes, then the cycle repeats."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d539bc03b6fc4b52f2c80abc382ed3c484755af10320f5dce1a14a17e618e5f6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L148-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e918f3e635780a77fec78f642d2c2b8ef81d4a97355bbb1e469bfb62ba52509"
+      ],
+      "text": "The authors argue general harnesses like Claude Code overfit to errors in single traces when analyzing long traces, motivating a specialized RLM for systemic trace analysis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c59b8f0b1df3804d825264dd20858df9ce3e9d132caea80644c1baf5ed829c4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 156,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L156-L156"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 159,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L158-L159"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 131,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L127-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78bd7a115b64a661ccba387aa209e9147513b9efd4ee962048dae018ec3adabe",
+        "slc_ae066871e92eb41c31b20203fcaba3a848fee4c69184b9df77cdc470d0fc72ab",
+        "slc_c6cfb88390989a8d61ff2ff504fbdf4bfe491eea21dcb2fb4503b5f4fca4d043"
+      ],
+      "text": "The project ships a HALO Desktop App for local use, a Python package (halo-engine on PyPI) implementing the core HALO-RLM engine, and a demo project showing HALO loops with the OpenAI Agents SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_13a6fe5ae0fec041c39ce21da4e5b3bb1b56ca137bb945c283ae26efdab0c8b0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 204,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L185-L204"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 177,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L176-L177"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 213,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L208-L213"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_465c91b6fdf08bb1c74a1c3bcb21ea3b88c51145ea832e0851bff6a54a895a50",
+        "slc_852e06826554e9c380e857aa63bbe07bf7c04ddb77f0e36b7df788dc2d18ea91",
+        "slc_9f5968bda49dd7b9d5a1cc9987f5ad10b0ba8f8fd9974c0cb5c57741dd3e1966"
+      ],
+      "text": "The CLI takes a required JSONL trace path and prompt, with flags like --model (default gpt-5.4-mini) and --synthesis-model for trace summarization, and supports --base-url and custom headers as shown in an OpenRouter example."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05d8215d865e467a426d0800ac395d2ee6a65ddabc98a0c34fe34a4945c88f1f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 181,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L179-L181"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4be8636be3232fc0d1faeefb9cd4b6df95d6bf62c8742679d84c9927250d9834"
+      ],
+      "text": "HALO uses OPENAI_API_KEY and OPENAI_BASE_URL; if the base URL is unset it defaults to https://api.openai.com/v1, and CLI settings mirror the SDK's ModelConfig and ModelProviderConfig."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_938980f911fb84af243f7cd646c194a223807ef28a246a2acad88b54d40351c2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 242,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L238-L242"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 251,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L244-L251"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6fe0f092ce971fed7d9a60e1e8b1cdba702e0c14ba3fc9b0ca8dd709ed9025a6",
+        "slc_87635b9c8e6f26ae2a9edbbefbbc18d424e10e4577001a01601214373748093c"
+      ],
+      "text": "The engine exposes multiple entry points from engine.main (e.g. stream_engine_async, run_engine_async, stream_engine_output) yielding AgentOutputItem and AgentTextDelta types, trading off streaming observability versus simplicity."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f2479b10825892ed072c522fdd035ab32d873b95f6858e675277628f62e7570",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 217,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L217-L217"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 223,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L223-L223"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_331ef6906b987e6264a41d0365d78999be54b4591d1794399c8f86c779edbaea",
+        "slc_7dde18b79f4e5fe19bc5480a7dab2ace27084f30d5877c3ca972dd66f47374ee"
+      ],
+      "text": "HALO's own telemetry is off by default; passing --telemetry emits OpenInference-shaped traces, uploaded over OTLP to inference.net when INFERENCE_API_KEY is set, otherwise written to a local JSONL file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd62ac594fe5a1a08da02d6eb1ad53b140e96b4eef647e2b80f4154b61b0bbd8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "64bc68db2364f29daab87473c683ed01d957846c",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "docs/integrations/openai-agents-sdk.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/docs/integrations/openai-agents-sdk.md#L33-L33"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "64bc68db2364f29daab87473c683ed01d957846c",
+          "line_end": 29,
+          "line_start": 29,
+          "path": "docs/integrations/openai-agents-sdk.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/docs/integrations/openai-agents-sdk.md#L29-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_165f98f1b65110f84c59040cb77317e475c295ee7e61f029f1b98d792ca45077",
+        "slc_6d0569289f5a9f0a4920443ca53d76807b1e675eeaa14b3f2177786b6939ebad"
+      ],
+      "text": "The OpenAI Agents SDK integration's tracing.py is a self-contained ~450-line module using only stdlib plus openai-agents, with no OpenTelemetry packages, exporter, collector, or instrumentor required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_198a146ae41ab9d1b32ff045c8bf5804e594ccad82fef1ca108b482751b10c3e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "64bc68db2364f29daab87473c683ed01d957846c",
+          "line_end": 142,
+          "line_start": 141,
+          "path": "docs/integrations/openai-agents-sdk.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/docs/integrations/openai-agents-sdk.md#L141-L142"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "64bc68db2364f29daab87473c683ed01d957846c",
+          "line_end": 37,
+          "line_start": 35,
+          "path": "docs/integrations/openai-agents-sdk.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/docs/integrations/openai-agents-sdk.md#L35-L37"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "64bc68db2364f29daab87473c683ed01d957846c",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "docs/integrations/openai-agents-sdk.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/docs/integrations/openai-agents-sdk.md#L85-L85"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "64bc68db2364f29daab87473c683ed01d957846c",
+          "line_end": 102,
+          "line_start": 89,
+          "path": "docs/integrations/openai-agents-sdk.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/docs/integrations/openai-agents-sdk.md#L89-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_338b9cee0436d03042e98acc3b51983f9922d588b9de7b2e3bb38cb9ccde9f5d",
+        "slc_36e736e4b88835ff86e0dddc85bc96a664a32696b4c97ba34d547665d2cac4bf",
+        "slc_8d3eb580c32caf90ebb7f32df9cfd8172190c33d66b97d049540c7a12465dc76",
+        "slc_e0c3d534866f364d665bede0f58604ee709937bad5efdc536727232d52ee1957"
+      ],
+      "text": "The integration writes one JSONL span per line with OTLP identity fields, resource/scope blocks, and inference.* projection attributes (project_id, observation_kind, token counts, tool/agent attributes) that the Engine indexes on, filtering on inference.project_id."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71b5236595fb74ee0a762d5c5f921f39791c7ad91c404752097a678aeac7edf3",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 267,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L267-L267"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 278,
+          "line_start": 271,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L271-L278"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fba5c8779fd6898b7182631e221730ffc8c641408269b62bad24b96c6770e79",
+        "slc_3149e489b9cc6db1ed0a572ade48ac90ba68052108c1dbb6786219e5e7f3b73e"
+      ],
+      "text": "On AppWorld, harness-only optimization reportedly raised SGC: Gemini 3 Flash dev 36.8%→52.6% and test_normal 37.5%→48.2%; Sonnet 4.6 dev 73.7%→89.5% and test_normal 62.5%→73.2%, iterating on dev and checking test_normal for overfitting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b29ad6fd633ae791ef5d8d0edf63959f0b5278dcf6cf56dcb2b34701f66da7b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 303,
+          "line_start": 298,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L298-L303"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L292-L292"
+        },
+        {
+          "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+          "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+          "line_end": 282,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "context-labs/halo",
+          "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md#L282-L282"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_816d8aedfdedda0287d7e442b768a1010b7956cf6b3cfc729cb8e75d9936bc13",
+        "slc_eaa944fb10fcc396dd0e97a5a6804693361516e9d09214dc1fe1145969c5b6c9",
+        "slc_ef71de5cc7156ee9c543d5cda8aebb990dd67ff50969ce96a4c472103acd6c93"
+      ],
+      "text": "Repository development practice: local development uses uv and go-task; task env:setup installs uv, syncs the venv from uv.lock, and configures git hooks, with tasks for pre-commit checks, unit tests, and integration tests."
+    }
+  ],
+  "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 311,
+        "path": "README.md",
+        "size": 19750
+      },
+      {
+        "lines": 146,
+        "path": "docs/integrations/openai-agents-sdk.md",
+        "size": 7560
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1032,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_b3b5be97bfeb530b95d4c100cc313f0f",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/context-labs/halo/b7f8509745d67b499b4e80efe20ea37c03426a74/9f2700ac05de7f87/manifest.json",
+  "package_id": "pkg_16f3ab63b350f5de596b584b5c25c54700ba7919861b8bd30086f28aafae6d6a",
+  "repo": "context-labs/halo",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "8fcf7e3c903b01068a4f835c47aeaf36ce2cdf5361be29d0da3d7f221adff5fc",
+  "snapshot_id": "9f2700ac05de7f87",
+  "sources": [
+    {
+      "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+      "git_sha": "d4b2f346439a76976a0182e5773875d5156a8df0",
+      "lines": 311,
+      "path": "README.md",
+      "repository": "context-labs/halo",
+      "sha256": "83772fee2239355ae35b1b2bcd5bfe169a6a76dfe13d63c9fcc08176913aaede",
+      "source_id": "src_c9bd916485bb51fda92100fc22bbece4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/README.md"
+    },
+    {
+      "commit": "b7f8509745d67b499b4e80efe20ea37c03426a74",
+      "git_sha": "64bc68db2364f29daab87473c683ed01d957846c",
+      "lines": 146,
+      "path": "docs/integrations/openai-agents-sdk.md",
+      "repository": "context-labs/halo",
+      "sha256": "0507ad319f762a0f15d1407ba78039bf2712ef7c3975951b55ad53e6ec0f419a",
+      "source_id": "src_aaee50048e1d5762bc2580c2b7829062",
+      "stored": "openai-agents-sdk.md-0f9aa0cca2ca.md",
+      "url": "https://github.com/context-labs/HALO/blob/b7f8509745d67b499b4e80efe20ea37c03426a74/docs/integrations/openai-agents-sdk.md"
+    }
+  ],
+  "summary": "HALO is an RLM-based agent-harness optimizer that consumes OpenTelemetry/OpenInference-shaped JSONL traces, ships as a desktop app plus a PyPI engine/CLI, and documents an AppWorld benchmark evaluation. Evidence is mostly README and integration docs; development workflow details are limited to the README's Development section.",
+  "superseded_claim_ids": []
+}

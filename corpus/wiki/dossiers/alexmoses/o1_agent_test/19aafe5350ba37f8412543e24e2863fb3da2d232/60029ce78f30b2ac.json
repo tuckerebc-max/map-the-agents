@@ -1,0 +1,170 @@
+{
+  "applied_operation_id": "op_7285b2d445fe4e81a598347929dcb0aa",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b91bf9f0030670915aaa9ddb40e5f87c1bfd8793ad7e9fa0e2e0aa0736886528",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "19aafe5350ba37f8412543e24e2863fb3da2d232",
+          "git_sha": "7bdb7b220d03eeb4dcc13df136496a45a0683eda",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "alexmoses/o1_agent_test",
+          "url": "https://github.com/alexmoses/o1_Agent_Test/blob/19aafe5350ba37f8412543e24e2863fb3da2d232/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33ad5c74269c5ea872cc475a89021acfff2436557d9b8ab5966b7234fd0e6c0a"
+      ],
+      "text": "The project uses OpenAI to build a multi-agent flow, hosted through a web wrapper, per the README."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59188bcf1febb32c8022ec356992bc3b71ad190c102d4f2f86c31a131c5f0166",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "19aafe5350ba37f8412543e24e2863fb3da2d232",
+          "git_sha": "7bdb7b220d03eeb4dcc13df136496a45a0683eda",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "alexmoses/o1_agent_test",
+          "url": "https://github.com/alexmoses/o1_Agent_Test/blob/19aafe5350ba37f8412543e24e2863fb3da2d232/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33ad5c74269c5ea872cc475a89021acfff2436557d9b8ab5966b7234fd0e6c0a"
+      ],
+      "text": "The multi-agent flow is designed to produce a focused, concise answer using context supplied as multiple system roles."
+    }
+  ],
+  "commit": "19aafe5350ba37f8412543e24e2863fb3da2d232",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 2,
+        "path": "README.md",
+        "size": 206
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 11,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_6e8de6d252fc5b10aa879183631a747a",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/alexmoses/o1_agent_test/19aafe5350ba37f8412543e24e2863fb3da2d232/60029ce78f30b2ac/manifest.json",
+  "package_id": "pkg_a23b9f84ce155f3459352ffe21d8248e7a45e731c4df18cbc30e0c47a6fa1ba7",
+  "repo": "alexmoses/o1_agent_test",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4d46d02252a8eb34bbfd92e2b3f5428de2f281ab73a440974b133ba7c1c0d626",
+  "snapshot_id": "60029ce78f30b2ac",
+  "sources": [
+    {
+      "commit": "19aafe5350ba37f8412543e24e2863fb3da2d232",
+      "git_sha": "7bdb7b220d03eeb4dcc13df136496a45a0683eda",
+      "lines": 2,
+      "path": "README.md",
+      "repository": "alexmoses/o1_agent_test",
+      "sha256": "84c6757d8bf6fa74e4321c1a6aed26ded07f7f8bc5dee0d21c94bb7cdc9112c1",
+      "source_id": "src_05941a2b0a355f1aae787d9ee9031d86",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/alexmoses/o1_Agent_Test/blob/19aafe5350ba37f8412543e24e2863fb3da2d232/README.md"
+    }
+  ],
+  "summary": "The repository's README describes a multi-agent flow built with OpenAI and hosted via a web wrapper, but the snapshot contains only that single line of evidence.",
+  "superseded_claim_ids": []
+}

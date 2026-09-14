@@ -1,0 +1,1123 @@
+{
+  "applied_operation_id": "op_f2bbf401f3114e9f811c1034daf05fb0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ced2ba0d1b7ac9a5411f13caf20f3de9955a52be0658da7fea85f98e0df1a470",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 6,
+          "line_start": 5,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L5-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03fad477d28cb35c3a7e4c336006dbdcae1418f2d03d30f4acba0ca180db46e6"
+      ],
+      "text": "A plan proposes a desktop app package at packages/agents-desktop that reuses the existing agents-server-ui React app and adds local desktop functionality."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4296e2a763e85f3aba1fef7e0bc28b46d17424ee44e1277d59e2cb35704b5de6",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 11,
+          "line_start": 8,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L8-L11"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 50,
+          "line_start": 46,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L46-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d38a00e4e81d7ebdbd5159b1e113a3ef43f4dbc7c7501915adf23da199f239a0",
+        "slc_fd5479c05e6a7714e10872b958bfa26e97ef2ffad68c25aa5408393f2cf9b321"
+      ],
+      "text": "The planned desktop v1 would not bundle an Agents server, Postgres, or Electric; it would run the local builtin agents runtime from @electric-ax/agents while connecting to an external Agents server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a44fb2a56ef973a1ca42ddf652a19303b597796a2392663489e648f3d0981fd4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 18,
+          "line_start": 17,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L17-L18"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 21,
+          "line_start": 20,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L20-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8295ad5ae9b4b4bd8d2326eb4db2c9d6d9f2ce5c7d1609850a07996b7d6d893b",
+        "slc_d8936b775e5ded9b45507cb3d38b99e48de332e029779f7830e9c56c80851766"
+      ],
+      "text": "The planned desktop app is both a windowed Agents UI and a background runtime indicator/controller, with a macOS menu bar icon and tray/status icons on Windows and Linux."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1141b7548e7f9db256ffb86fa792cdd5912354488ad4e62ecb970af808f1c72c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 164,
+          "line_start": 161,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L161-L164"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L27-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_646da27a5713bb7bccb4ba91d9c6ebf29204ce9924f1e6672a66d04036e3a0c9",
+        "slc_89d661521741c0b7f748971a0964969271657e9edaca3976f66116f017fef8e6"
+      ],
+      "text": "The plan specifies that closing the last window should not stop the local runtime, while explicitly quitting the app should; the tray should indicate runtime states of starting, running, error, or stopped."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b8542cefdc23e81ff1418141701345d9aaa846fc817f996ddcc9dde4c05260d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 93,
+          "line_start": 90,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L90-L93"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 86,
+          "line_start": 74,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L74-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d9317537c8140c1b17695bf83a547f75ff8ab0d74594e97bffd2f4a5a00e148a",
+        "slc_ee958bc8604c24d3d9c1af9f9ff5889bb448ca4a029a889f06fc090788ff1f5b"
+      ],
+      "text": "The proposed package structure includes Electron main.ts and preload.ts, a Vite config, and tray icon assets, with dependencies on @electric-ax/agents-server-ui, @electric-ax/agents, and electron."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3392f10cd9c30fc485ecf2e49d0b7856743def29b38fdc85d0d2d1d4441cc4a9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 221,
+          "line_start": 218,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L218-L221"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 242,
+          "line_start": 235,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L235-L242"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 224,
+          "line_start": 223,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L223-L224"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 228,
+          "line_start": 226,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L226-L228"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 216,
+          "line_start": 213,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L213-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_212388345a4ea924e9a432a5f9ff50fd9738e1fc89a2dcc377e9ebbdc377604b",
+        "slc_977276885614e1d56fe47fe26095a28ef049d5a595761159baf8977119b16dfe",
+        "slc_a710d6be25715ff57c429a57c8189255b6c9cd59986bb1a23e4672b378714dba",
+        "slc_b752c2fed1494b0c2a48cae7a2bb2321113b4b8b8ae4e6912d9c615f17ad792c",
+        "slc_e68999cc92dab981264cb3ea09e75423297106fbca19de67a539eae482b9507b"
+      ],
+      "text": "A planned preload API extends window.electronAPI with methods such as getServers, saveServers, getDesktopState, setActiveServer, restartRuntime, stopRuntime, and onDesktopStateChanged, exposing a DesktopState with runtimeStatus, runtimeUrl, activeServer, workingDirectory, and error fields."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95a8d26c94dc255601eb1098325ad2677ce1fc81bcc5aace8a3eff7438ba9b89",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 155,
+          "line_start": 154,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L154-L155"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 68,
+          "line_start": 65,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L65-L68"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 152,
+          "line_start": 151,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L151-L152"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 146,
+          "line_start": 141,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L141-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40464f9e0f478b71a00bc44f4f0a636cbfa020b2c65fb963bf66bcffe324bedb",
+        "slc_5fa7ce276f79d59c4dd8f943dd1491bee52ea164ecd7122138db7aec6e0defc8",
+        "slc_67080b4b5ace7fd1486a9e67f1b6fa0c646855c89900eb107dd65fecd78761c9",
+        "slc_7da3256394c7d8fd619eda0800b107577bb86f31d11174138450607f21a0c4ea"
+      ],
+      "text": "The plan proposes starting BuiltinAgentsServer with host 127.0.0.1 and port 0 so the OS picks a free port, restarting the runtime when the active Agents server changes, and noting that remote servers cannot reach the local callback URL without a later tunnel/relay design."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_729bbadb3cf070715c7a3d280eba3dca3c2c0894ba072596ecbb13c6a500e971",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+          "line_end": 50,
+          "line_start": 46,
+          "path": "AGENTS_DESKTOP_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md#L46-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd5479c05e6a7714e10872b958bfa26e97ef2ffad68c25aa5408393f2cf9b321"
+      ],
+      "text": "The desktop plan explicitly marks remote callback tunnelling, bundling the Agents server, Postgres, Electric, and auto-update/signing polish as out of scope for v1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a370a49cb525c91b4b180a5e73aaefa7c1c9d4a682dff74cb60829bec65d3954",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "81d7b2fe8e9ffd94afc6d1e5c78c49d9b5b80706",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "AGENTS_MOBILE_CI_RELEASE_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_MOBILE_CI_RELEASE_PLAN.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b8c7d59b67d8a0dfb1bacfbca3ffa97c118157ee72fed2807171367d4e328c16"
+      ],
+      "text": "The mobile package @electric-ax/agents-mobile is described as an existing Expo SDK 54 app using Expo Router, React Native, and Expo DOM Components to embed agents-server-ui surfaces."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35d45516006b4b57f93bee8454fe1ceb94d9509b35cb552a83295a9e984e8676",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "81d7b2fe8e9ffd94afc6d1e5c78c49d9b5b80706",
+          "line_end": 44,
+          "line_start": 41,
+          "path": "AGENTS_MOBILE_CI_RELEASE_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_MOBILE_CI_RELEASE_PLAN.md#L41-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_702a5b30200750a3e6e506a26f340e646826613984e0ca59a42e1915d7bb268f"
+      ],
+      "text": "Repository development practice: authenticated EAS builds will not run on untrusted fork PRs because GitHub does not expose secrets to them; forks get local checks while EAS builds run for same-repo or trusted labeled PRs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f51c880e86028c70ab1910e4e2f97963585cad0bfc4a5b351e12f44ab303fd0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "81d7b2fe8e9ffd94afc6d1e5c78c49d9b5b80706",
+          "line_end": 44,
+          "line_start": 41,
+          "path": "AGENTS_MOBILE_CI_RELEASE_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_MOBILE_CI_RELEASE_PLAN.md#L41-L44"
+        },
+        {
+          "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+          "git_sha": "81d7b2fe8e9ffd94afc6d1e5c78c49d9b5b80706",
+          "line_end": 280,
+          "line_start": 277,
+          "path": "AGENTS_MOBILE_CI_RELEASE_PLAN.md",
+          "repository": "electric-sql/electric",
+          "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_MOBILE_CI_RELEASE_PLAN.md#L277-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_702a5b30200750a3e6e506a26f340e646826613984e0ca59a42e1915d7bb268f",
+        "slc_f676d561c96ba0090ef30123f47a72d92a382f54945840890610052121d25eb0"
+      ],
+      "text": "The mobile plan records that react, react-dom, react-native-webview, and TypeScript versions were aligned across the mobile/server-ui/runtime graph so expo-doctor passes 18/18 checks."
+    }
+  ],
+  "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 229,
+        "path": "README.md",
+        "size": 7343
+      },
+      {
+        "lines": 749,
+        "path": "website/docs/sync/api/config.md",
+        "size": 28152
+      },
+      {
+        "lines": 374,
+        "path": "AGENTS_DESKTOP_PLAN.md",
+        "size": 10926
+      },
+      {
+        "lines": 531,
+        "path": "AGENTS_MOBILE_CI_RELEASE_PLAN.md",
+        "size": 19831
+      },
+      {
+        "lines": 26,
+        "path": "CLA.md",
+        "size": 3931
+      },
+      {
+        "lines": 547,
+        "path": "COMPOSER_INPUT_PLAN.md",
+        "size": 20750
+      }
+    ],
+    "omitted": [
+      {
+        "path": "LIMITATIONS.md",
+        "reason": "file-budget",
+        "size": 195
+      },
+      {
+        "path": "docs/agents-development.md",
+        "reason": "file-budget",
+        "size": 13970
+      },
+      {
+        "path": "docs/stratovolt-webhook-source-rename-followup.md",
+        "reason": "file-budget",
+        "size": 6729
+      },
+      {
+        "path": "website/docs/agents/index.md",
+        "reason": "file-budget",
+        "size": 11337
+      },
+      {
+        "path": "website/docs/agents/quickstart.md",
+        "reason": "file-budget",
+        "size": 7148
+      },
+      {
+        "path": "website/docs/agents/walkthrough.md",
+        "reason": "file-budget",
+        "size": 41075
+      },
+      {
+        "path": "website/docs/streams/cli.md",
+        "reason": "file-budget",
+        "size": 6244
+      },
+      {
+        "path": "website/docs/streams/durable-proxy.md",
+        "reason": "file-budget",
+        "size": 2302
+      },
+      {
+        "path": "website/docs/streams/durable-state.md",
+        "reason": "file-budget",
+        "size": 6979
+      },
+      {
+        "path": "website/docs/streams/index.md",
+        "reason": "file-budget",
+        "size": 13602
+      },
+      {
+        "path": "website/docs/streams/json-mode.md",
+        "reason": "file-budget",
+        "size": 2855
+      },
+      {
+        "path": "website/docs/streams/quickstart.md",
+        "reason": "file-budget",
+        "size": 2485
+      },
+      {
+        "path": "website/docs/streams/stream-db.md",
+        "reason": "file-budget",
+        "size": 7036
+      },
+      {
+        "path": "website/docs/streams/stream-fs.md",
+        "reason": "file-budget",
+        "size": 2197
+      },
+      {
+        "path": "website/docs/sync/index.md",
+        "reason": "file-budget",
+        "size": 3384
+      },
+      {
+        "path": "website/docs/sync/quickstart.md",
+        "reason": "file-budget",
+        "size": 4553
+      },
+      {
+        "path": "website/docs/sync/stacks.md",
+        "reason": "file-budget",
+        "size": 16840
+      },
+      {
+        "path": "website/docs/agents/examples/playground.md",
+        "reason": "file-budget",
+        "size": 2004
+      },
+      {
+        "path": "website/docs/agents/reference/agent-config.md",
+        "reason": "file-budget",
+        "size": 5191
+      },
+      {
+        "path": "website/docs/agents/reference/agent-tool.md",
+        "reason": "file-budget",
+        "size": 2890
+      },
+      {
+        "path": "website/docs/agents/reference/built-in-collections.md",
+        "reason": "file-budget",
+        "size": 10067
+      },
+      {
+        "path": "website/docs/agents/reference/cli.md",
+        "reason": "file-budget",
+        "size": 10533
+      },
+      {
+        "path": "website/docs/agents/reference/entity-definition.md",
+        "reason": "file-budget",
+        "size": 5304
+      },
+      {
+        "path": "website/docs/agents/reference/entity-handle.md",
+        "reason": "file-budget",
+        "size": 3917
+      },
+      {
+        "path": "website/docs/agents/reference/entity-registry.md",
+        "reason": "file-budget",
+        "size": 3915
+      },
+      {
+        "path": "website/docs/agents/reference/handler-context.md",
+        "reason": "file-budget",
+        "size": 18866
+      },
+      {
+        "path": "website/docs/agents/reference/mcp-registry.md",
+        "reason": "file-budget",
+        "size": 12417
+      },
+      {
+        "path": "website/docs/agents/reference/mcp-server-config.md",
+        "reason": "file-budget",
+        "size": 11413
+      },
+      {
+        "path": "website/docs/agents/reference/runtime-handler.md",
+        "reason": "file-budget",
+        "size": 11738
+      },
+      {
+        "path": "website/docs/agents/reference/shared-state-handle.md",
+        "reason": "file-budget",
+        "size": 2651
+      },
+      {
+        "path": "website/docs/agents/reference/state-collection-proxy.md",
+        "reason": "file-budget",
+        "size": 2690
+      },
+      {
+        "path": "website/docs/agents/reference/wake-event.md",
+        "reason": "file-budget",
+        "size": 7336
+      },
+      {
+        "path": "website/docs/agents/usage/app-setup.md",
+        "reason": "file-budget",
+        "size": 8439
+      },
+      {
+        "path": "website/docs/agents/usage/attachments.md",
+        "reason": "file-budget",
+        "size": 4056
+      },
+      {
+        "path": "website/docs/agents/usage/clients-and-react.md",
+        "reason": "file-budget",
+        "size": 6939
+      },
+      {
+        "path": "website/docs/agents/usage/configuring-the-agent.md",
+        "reason": "file-budget",
+        "size": 5593
+      },
+      {
+        "path": "website/docs/agents/usage/context-composition.md",
+        "reason": "file-budget",
+        "size": 8144
+      },
+      {
+        "path": "website/docs/agents/usage/defining-entities.md",
+        "reason": "file-budget",
+        "size": 6686
+      },
+      {
+        "path": "website/docs/agents/usage/defining-tools.md",
+        "reason": "file-budget",
+        "size": 7673
+      },
+      {
+        "path": "website/docs/agents/usage/embedded-builtins.md",
+        "reason": "file-budget",
+        "size": 14135
+      },
+      {
+        "path": "website/docs/agents/usage/managing-state.md",
+        "reason": "file-budget",
+        "size": 3653
+      },
+      {
+        "path": "website/docs/agents/usage/mcp-servers.md",
+        "reason": "file-budget",
+        "size": 20479
+      },
+      {
+        "path": "website/docs/agents/usage/overview.md",
+        "reason": "file-budget",
+        "size": 16357
+      },
+      {
+        "path": "website/docs/agents/usage/permissions-and-principals.md",
+        "reason": "file-budget",
+        "size": 5476
+      },
+      {
+        "path": "website/docs/agents/usage/programmatic-runtime-client.md",
+        "reason": "file-budget",
+        "size": 9818
+      },
+      {
+        "path": "website/docs/agents/usage/sandboxing.md",
+        "reason": "file-budget",
+        "size": 5191
+      },
+      {
+        "path": "website/docs/agents/usage/shared-state.md",
+        "reason": "file-budget",
+        "size": 4488
+      },
+      {
+        "path": "website/docs/agents/usage/signals.md",
+        "reason": "file-budget",
+        "size": 3853
+      },
+      {
+        "path": "website/docs/agents/usage/spawning-and-coordinating.md",
+        "reason": "file-budget",
+        "size": 7394
+      },
+      {
+        "path": "website/docs/agents/usage/testing.md",
+        "reason": "file-budget",
+        "size": 2439
+      },
+      {
+        "path": "website/docs/agents/usage/waking-entities.md",
+        "reason": "file-budget",
+        "size": 7935
+      },
+      {
+        "path": "website/docs/agents/usage/webhook-sources.md",
+        "reason": "file-budget",
+        "size": 4817
+      },
+      {
+        "path": "website/docs/agents/usage/writing-handlers.md",
+        "reason": "file-budget",
+        "size": 11424
+      },
+      {
+        "path": "website/docs/streams/clients/other.md",
+        "reason": "file-budget",
+        "size": 11758
+      },
+      {
+        "path": "website/docs/streams/clients/python.md",
+        "reason": "file-budget",
+        "size": 3107
+      },
+      {
+        "path": "website/docs/streams/clients/typescript.md",
+        "reason": "file-budget",
+        "size": 3877
+      },
+      {
+        "path": "website/docs/streams/integrations/tanstack-ai.md",
+        "reason": "file-budget",
+        "size": 6354
+      },
+      {
+        "path": "website/docs/streams/integrations/vercel-ai-sdk.md",
+        "reason": "file-budget",
+        "size": 2494
+      },
+      {
+        "path": "website/docs/streams/integrations/yjs.md",
+        "reason": "file-budget",
+        "size": 6652
+      },
+      {
+        "path": "website/docs/sync/api/http.md",
+        "reason": "file-budget",
+        "size": 17307
+      },
+      {
+        "path": "website/docs/sync/guides/auth.md",
+        "reason": "file-budget",
+        "size": 29117
+      },
+      {
+        "path": "website/docs/sync/guides/client-development.md",
+        "reason": "file-budget",
+        "size": 15047
+      },
+      {
+        "path": "website/docs/sync/guides/deployment.md",
+        "reason": "file-budget",
+        "size": 16381
+      },
+      {
+        "path": "website/docs/sync/guides/installation.md",
+        "reason": "file-budget",
+        "size": 3268
+      },
+      {
+        "path": "website/docs/sync/guides/postgres-permissions.md",
+        "reason": "file-budget",
+        "size": 10202
+      },
+      {
+        "path": "website/docs/sync/guides/shapes.md",
+        "reason": "file-budget",
+        "size": 29749
+      },
+      {
+        "path": "website/docs/sync/guides/sharding.md",
+        "reason": "file-budget",
+        "size": 16570
+      },
+      {
+        "path": "website/docs/sync/guides/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 28405
+      },
+      {
+        "path": "website/docs/sync/guides/upgrading.md",
+        "reason": "file-budget",
+        "size": 19169
+      },
+      {
+        "path": "website/docs/sync/guides/writes.md",
+        "reason": "file-budget",
+        "size": 19129
+      },
+      {
+        "path": "website/docs/sync/integrations/aws.md",
+        "reason": "file-budget",
+        "size": 7026
+      },
+      {
+        "path": "website/docs/sync/integrations/cloudflare.md",
+        "reason": "file-budget",
+        "size": 4177
+      },
+      {
+        "path": "website/docs/sync/integrations/crunchy.md",
+        "reason": "file-budget",
+        "size": 1530
+      },
+      {
+        "path": "website/docs/sync/integrations/digital-ocean.md",
+        "reason": "file-budget",
+        "size": 6266
+      },
+      {
+        "path": "website/docs/sync/integrations/expo.md",
+        "reason": "file-budget",
+        "size": 2595
+      },
+      {
+        "path": "website/docs/sync/integrations/fly.md",
+        "reason": "file-budget",
+        "size": 2500
+      },
+      {
+        "path": "website/docs/sync/integrations/gcp.md",
+        "reason": "file-budget",
+        "size": 3777
+      },
+      {
+        "path": "website/docs/sync/integrations/livestore.md",
+        "reason": "file-budget",
+        "size": 1028
+      },
+      {
+        "path": "website/docs/sync/integrations/mobx.md",
+        "reason": "file-budget",
+        "size": 619
+      },
+      {
+        "path": "website/docs/sync/integrations/neon.md",
+        "reason": "file-budget",
+        "size": 1779
+      },
+      {
+        "path": "website/docs/sync/integrations/netlify.md",
+        "reason": "file-budget",
+        "size": 1842
+      },
+      {
+        "path": "website/docs/sync/integrations/next.md",
+        "reason": "file-budget",
+        "size": 2174
+      },
+      {
+        "path": "website/docs/sync/integrations/phoenix.md",
+        "reason": "file-budget",
+        "size": 10901
+      },
+      {
+        "path": "website/docs/sync/integrations/planetscale.md",
+        "reason": "file-budget",
+        "size": 9724
+      },
+      {
+        "path": "website/docs/sync/integrations/react.md",
+        "reason": "file-budget",
+        "size": 6024
+      },
+      {
+        "path": "website/docs/sync/integrations/redis.md",
+        "reason": "file-budget",
+        "size": 1079
+      },
+      {
+        "path": "website/docs/sync/integrations/render.md",
+        "reason": "file-budget",
+        "size": 4125
+      },
+      {
+        "path": "website/docs/sync/integrations/supabase.md",
+        "reason": "file-budget",
+        "size": 5408
+      },
+      {
+        "path": "website/docs/sync/integrations/tanstack.md",
+        "reason": "file-budget",
+        "size": 3968
+      },
+      {
+        "path": "website/docs/sync/integrations/vercel.md",
+        "reason": "file-budget",
+        "size": 2341
+      },
+      {
+        "path": "website/docs/sync/integrations/yjs.md",
+        "reason": "file-budget",
+        "size": 705
+      },
+      {
+        "path": "website/docs/sync/llms/_intro_redux.md",
+        "reason": "file-budget",
+        "size": 1838
+      },
+      {
+        "path": "website/docs/sync/llms/_quickstart_redux.md",
+        "reason": "file-budget",
+        "size": 1632
+      },
+      {
+        "path": "website/docs/sync/llms/_tutorial.md",
+        "reason": "file-budget",
+        "size": 675
+      },
+      {
+        "path": "website/docs/sync/reference/alternatives.md",
+        "reason": "file-budget",
+        "size": 5425
+      },
+      {
+        "path": "website/docs/sync/reference/benchmarks.md",
+        "reason": "file-budget",
+        "size": 13345
+      },
+      {
+        "path": "website/docs/sync/reference/literature.md",
+        "reason": "file-budget",
+        "size": 1781
+      },
+      {
+        "path": "website/docs/sync/reference/telemetry.md",
+        "reason": "file-budget",
+        "size": 4821
+      },
+      {
+        "path": "website/docs/agents/entities/agents/horton.md",
+        "reason": "file-budget",
+        "size": 4047
+      },
+      {
+        "path": "website/docs/agents/entities/agents/worker.md",
+        "reason": "file-budget",
+        "size": 5953
+      },
+      {
+        "path": "website/docs/agents/entities/patterns/blackboard.md",
+        "reason": "file-budget",
+        "size": 3705
+      },
+      {
+        "path": "website/docs/agents/entities/patterns/dispatcher.md",
+        "reason": "file-budget",
+        "size": 2347
+      },
+      {
+        "path": "website/docs/agents/entities/patterns/manager-worker.md",
+        "reason": "file-budget",
+        "size": 3979
+      },
+      {
+        "path": "website/docs/agents/entities/patterns/map-reduce.md",
+        "reason": "file-budget",
+        "size": 2378
+      },
+      {
+        "path": "website/docs/agents/entities/patterns/pipeline.md",
+        "reason": "file-budget",
+        "size": 3308
+      },
+      {
+        "path": "website/docs/agents/entities/patterns/reactive-observers.md",
+        "reason": "file-budget",
+        "size": 4505
+      },
+      {
+        "path": "website/docs/sync/api/clients/elixir.md",
+        "reason": "file-budget",
+        "size": 2035
+      },
+      {
+        "path": "website/docs/sync/api/clients/typescript.md",
+        "reason": "file-budget",
+        "size": 34882
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 14512
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 117
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5225
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2801
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2431
+      },
+      {
+        "path": "website/docs/sync/guides/security.md",
+        "reason": "file-budget",
+        "size": 5507
+      }
+    ],
+    "omitted_count": 114,
+    "omitted_slices": 172,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3909,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 120,
+      "complete": false,
+      "omitted": 114,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_cebb5b2c05525254bb850197fae4ec2a",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/electric-sql/electric/bb397424db0e1c153dc356713fd3dfd40315470c/9b3c832516e6f8b7/manifest.json",
+  "package_id": "pkg_d4fedb6741fb20c11e224ee3eba0a92b54fc5745394212aa96a2f6327c8a4cf7",
+  "repo": "electric-sql/electric",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a13797f896012807f4f52bc5e6717560c14d6aa01558844601a3c59fbe00a1cf",
+  "snapshot_id": "9b3c832516e6f8b7",
+  "sources": [
+    {
+      "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+      "git_sha": "3b3a687ff1726c5b4ca7fd4d966bc84393948597",
+      "lines": 374,
+      "path": "AGENTS_DESKTOP_PLAN.md",
+      "repository": "electric-sql/electric",
+      "sha256": "61da0e5a560afa6b819d6104e65fccc61091567f436e4881ec6f2a33ad892e29",
+      "source_id": "src_d97e7f59455556e9bd83ffc9eceaf0e5",
+      "stored": "agents_desktop_plan.md-5697450ec9a4.md",
+      "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_DESKTOP_PLAN.md"
+    },
+    {
+      "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+      "git_sha": "81d7b2fe8e9ffd94afc6d1e5c78c49d9b5b80706",
+      "lines": 531,
+      "path": "AGENTS_MOBILE_CI_RELEASE_PLAN.md",
+      "repository": "electric-sql/electric",
+      "sha256": "72aefd72d3036b5e2e236e7050f328b87c689d0fdd212fec75aa8f233e4ad0ec",
+      "source_id": "src_8588319bbd6257edb80b893e50baab48",
+      "stored": "agents_mobile_ci_release_plan.md-9fd65a1706a1.md",
+      "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/AGENTS_MOBILE_CI_RELEASE_PLAN.md"
+    },
+    {
+      "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+      "git_sha": "4da1738e89f4eb9be92b1dac93596d53af0e8f3f",
+      "lines": 26,
+      "path": "CLA.md",
+      "repository": "electric-sql/electric",
+      "sha256": "ed44bb6d029d44a10c05ac34d6a180b63ed8a22b75ec93d7d41f34f46d765624",
+      "source_id": "src_e6322f8871bf5151ab33fe539ecf2ecd",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/CLA.md"
+    },
+    {
+      "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+      "git_sha": "e21b36ac0fdbed2d691a0450cdffea833a0c84f0",
+      "lines": 547,
+      "path": "COMPOSER_INPUT_PLAN.md",
+      "repository": "electric-sql/electric",
+      "sha256": "2a6572f44426eaa3ccef27672efa6b6675a403dd2259daa3eb780872e0e165b7",
+      "source_id": "src_b0b8cb833bbd51608f18df5d3dead39a",
+      "stored": "composer_input_plan.md-c710c3bb16c2.md",
+      "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/COMPOSER_INPUT_PLAN.md"
+    },
+    {
+      "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+      "git_sha": "dc1ea7741c95d2e4e8e5da4f3cc4c5fa9668e977",
+      "lines": 229,
+      "path": "README.md",
+      "repository": "electric-sql/electric",
+      "sha256": "ad8520ad7b034a7f4dde779a0ae5c59664301501dc60a1095ae925427c4ea246",
+      "source_id": "src_99fa2af688d255d0bac8da7de4022755",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/README.md"
+    },
+    {
+      "commit": "bb397424db0e1c153dc356713fd3dfd40315470c",
+      "git_sha": "374b123b493561754f156252e8bcf26572a759aa",
+      "lines": 749,
+      "path": "website/docs/sync/api/config.md",
+      "repository": "electric-sql/electric",
+      "sha256": "64152f94306268450bbe84de39d9cac7cdcb046747373dd094823ccfa6b73a15",
+      "source_id": "src_9bcd9aa8ad8752469e021e7e86c96925",
+      "stored": "config.md-84c200464ab8.md",
+      "url": "https://github.com/electric-sql/electric/blob/bb397424db0e1c153dc356713fd3dfd40315470c/website/docs/sync/api/config.md"
+    }
+  ],
+  "summary": "Selected evidence records: A plan proposes a desktop app package at packages/agents-desktop that reuses the existing agents-server-ui React app and adds local desktop functionality. The planned desktop v1 would not bundle an Agents server, Postgres, or Electric; it would run the local builtin agents runtime from @electric-ax/agents while connecting to an external Agents server.",
+  "superseded_claim_ids": []
+}

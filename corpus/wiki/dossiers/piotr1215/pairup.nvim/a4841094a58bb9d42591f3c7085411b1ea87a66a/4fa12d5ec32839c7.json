@@ -1,0 +1,599 @@
+{
+  "applied_operation_id": "op_615a46b347944a698c01468e62124f81",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_94a436377e36420e43635f534ad3acaf4bf3b00a09a1adfcbe17a72c5dd64a86",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L18-L18"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "a074ff5d8842c983e80d9e6873084f2597c3496a",
+          "line_end": 41,
+          "line_start": 40,
+          "path": "doc/pairup.txt",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/doc/pairup.txt#L40-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f51815021bf50c345e6f3e828cac7bfd777ea12b9bd0b5b98bdf337c72dde94",
+        "slc_307ae6394ff7cfb44c9b7667f9a6b543f24cba237ec01e72405f65dbdeac97ba"
+      ],
+      "text": "Users write cc:, cc!:, or ccp: markers in code and save; Claude then edits the file directly, per the README's how-it-works section."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71ec5053dd23050507e718d1c26dacf251aed7c7b425238b301936167a162d3d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "a074ff5d8842c983e80d9e6873084f2597c3496a",
+          "line_end": 56,
+          "line_start": 53,
+          "path": "doc/pairup.txt",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/doc/pairup.txt#L53-L56"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 25,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L20-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_088f94eb4be27e872fce14bdacb0d509b2a79873448d076f102823b6dcf53576",
+        "slc_eaf31d36a764100fcbc134756ed48ead5983bbdddb6ee3c7ebb061ae0d779053"
+      ],
+      "text": "ccp: (plan) makes Claude wrap changes in CURRENT/PROPOSED conflict markers so the user reviews and accepts or rejects before anything changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e9622db9799ced98da710a8fbecb7914d1a52a287723dfad1feff114b7b2ff2f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "a074ff5d8842c983e80d9e6873084f2597c3496a",
+          "line_end": 51,
+          "line_start": 49,
+          "path": "doc/pairup.txt",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/doc/pairup.txt#L49-L51"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 25,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L20-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b8546dc0c43666a6b1e365df41c54525916e75c981fddec05a1ab9fd7c1604f",
+        "slc_eaf31d36a764100fcbc134756ed48ead5983bbdddb6ee3c7ebb061ae0d779053"
+      ],
+      "text": "cc!: (constitution) executes the instruction and additionally extracts the underlying rule into the project's CLAUDE.md for future work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb6f79e4d9c91f8289f2a9648c2d5116fad29b48756e508ff1de25d2ba470cc9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "a074ff5d8842c983e80d9e6873084f2597c3496a",
+          "line_end": 64,
+          "line_start": 58,
+          "path": "doc/pairup.txt",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/doc/pairup.txt#L58-L64"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 25,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L20-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c037e166256689279db66c8b401e879fc9884d3843cdfbb9e588d1ef497f9b72",
+        "slc_eaf31d36a764100fcbc134756ed48ead5983bbdddb6ee3c7ebb061ae0d779053"
+      ],
+      "text": "uu: is Claude's reply marker for clarification questions; the user answers by appending a cc: line below it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_485f8162b1d4bbf33922f75f040d078a009aa660a28d3e27b7bb233ca1f5d25d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "a074ff5d8842c983e80d9e6873084f2597c3496a",
+          "line_end": 331,
+          "line_start": 310,
+          "path": "doc/pairup.txt",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/doc/pairup.txt#L310-L331"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 275,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L254-L275"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33a05138b022475ce4119d57e72dc8dce31beb51e7f2e2e3e0876c821cf69007",
+        "slc_407f20ddd256d20782e9b530d0fee570dc89d6045d19edfddd15fe975e522278"
+      ],
+      "text": "The plugin exposes :Pairup subcommands including start, stop, toggle, say, markers, inline, diff, lsp, suspend, accept, and peripheral variants."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7115563d46b64ac1443a5a285560fdb533c7a7bfdb7bb44c8d70f57bb3b684ac",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 100,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L98-L100"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 106,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L102-L106"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L96-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13cd7a848de20c34da11dd832f4fd523e7719a507091553bafde502bc9c06d77",
+        "slc_a76c34f8819839be49530381685aa6226315d9f1f20c6662dc52c4447fcc838d",
+        "slc_e02dbc15831127276ed6522bb686da5c4fc0ef20ecc11d4d4d7194f83837dc44"
+      ],
+      "text": "Operators gC{motion}, g!{motion}, and g?{motion} insert cc:, cc!:, and ccp: markers respectively, working with motions and text-objects; keybindings are active only when the plugin is loaded."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60960c24b6ca95fceb55ce8f5363c1a5d0b246ab3d32b92282057805bc4544ef",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L68-L68"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L70-L70"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L72-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38d674fc0de25e3352b2074007d06641203768ac465ccb0d6014ad5a1dd24048",
+        "slc_6b6dc5a69193c85d43498f165fdbd4079568ef4eb611e459de667349e433df5c",
+        "slc_a4045a0d651b3438282d0e8340a142c7ee5cf0f1ae249e16bd15e0ad18375f7a"
+      ],
+      "text": "A peripheral Claude feature runs a second autonomous Claude instance in a sibling git worktree that receives diffs of spec files and implements changes independently."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a19f9d1e0f8877e2b2b09093a6b3658886f964ca086b0ef1add158d713dedfbb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 320,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L309-L320"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 305,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L302-L305"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 300,
+          "line_start": 300,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L300-L300"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d0e0ba963d57a5304d066bd25629d3438100d1df6f7db58361dd5a75c3b0227",
+        "slc_1b75ed5929fd44745a4e312fb55e945a752405f981257112e08440edadf7b77b",
+        "slc_5d01ce5c89c0f8d0d7b02217b2cadca67277faef6f82d908c4bf067928e6aeb3"
+      ],
+      "text": "Todo progress is tracked via a Claude Code PostToolUse hook script that the user must copy into ~/.claude/scripts and register in settings.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c820833c60e3d0c0850000850886d1892e002915456c0d27c551ec5ff3e2aaef",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 343,
+          "line_start": 343,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L343-L343"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 395,
+          "line_start": 347,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L347-L395"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_39234535d25dc6493fb610d050a57e1c7c9091d2188094d1a8b25bb044d38952",
+        "slc_a1e44fa7f8cf2e9e49db236b97cc647d3d801e45c4a102dbf0043f28f87289ac"
+      ],
+      "text": "The default provider command includes Claude's --permission-mode acceptEdits flag so Claude edits files without per-change confirmation, which the docs say the inline workflow requires."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6832875b98dc3c7f7f56ee631750232b967d5c37b96ff8a9d8124b70548a6afc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 14,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L5-L14"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "a074ff5d8842c983e80d9e6873084f2597c3496a",
+          "line_end": 36,
+          "line_start": 29,
+          "path": "doc/pairup.txt",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/doc/pairup.txt#L29-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9045564a4d493de2c676bffa73d13efd01dc4b6cc597fa16f64c52a11732146d",
+        "slc_b6736cc39d8197902963eb20f6003da6d1dce6f7e2b5298f6cd72ce4b1fb3333"
+      ],
+      "text": "v4.0 removed the overlay system, sessions, RPC, and marker-based suggestions to focus on simple inline editing, citing less complexity and more reliability; legacy features remain on the legacy-v3 branch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da34287dd0cbc9f238109efd5f0493a44f6b577f0422070364c92302a3f888f8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 435,
+          "line_start": 434,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L434-L435"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b107a7dcfcded69d8b9f601f1687f7376f677f56de8375f819e8f3fb4bffe42"
+      ],
+      "text": "Requirements are Neovim 0.11+ and the Claude Code CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90a57af4dd3d91a9c6d4a47333443478ed58a9e4f0f6d924aa8427562b10b9c5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 292,
+          "line_start": 288,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L288-L292"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 286,
+          "line_start": 281,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L281-L286"
+        },
+        {
+          "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+          "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+          "line_end": 279,
+          "line_start": 279,
+          "path": "README.md",
+          "repository": "piotr1215/pairup.nvim",
+          "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md#L279-L279"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3148dd6390de5087e930390fad75406008b253a36bc1b3bce71c1161c2d27dbc",
+        "slc_aad76e22a9c6dc979dacc41ee7a2d48f0ed08cf9de505095f5c58bb101471d33",
+        "slc_f854a30df7434e14a0b42ba02d4bd7580b6755c2c80e53773b4751984240ba7d"
+      ],
+      "text": "Statusline indicators are auto-injected into lualine or the native statusline, showing states like [CL:pending], [CL:2/5], [CL:ready], and peripheral [CP] states."
+    }
+  ],
+  "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 439,
+        "path": "README.md",
+        "size": 14222
+      },
+      {
+        "lines": 286,
+        "path": "peripheral-prompt.md",
+        "size": 10567
+      },
+      {
+        "lines": 60,
+        "path": "prompt.md",
+        "size": 2885
+      },
+      {
+        "lines": 43,
+        "path": "v4-architecture.md",
+        "size": 1718
+      },
+      {
+        "lines": 515,
+        "path": "doc/pairup.txt",
+        "size": 18223
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 76,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_37b6581376675acdbf7423a731ae6fb4",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 7,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/piotr1215/pairup.nvim/a4841094a58bb9d42591f3c7085411b1ea87a66a/4fa12d5ec32839c7/manifest.json",
+  "package_id": "pkg_10614a285962dba7b8d0ad5d399d50129200015df787f122d155185674346d0f",
+  "repo": "piotr1215/pairup.nvim",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "87fe68fbc67e82bc34ca849beb4196f9310e810cf65c1f22fa6e5ba90b8d6185",
+  "snapshot_id": "4fa12d5ec32839c7",
+  "sources": [
+    {
+      "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+      "git_sha": "5f52eefe99180289ed3b9fee382619b03345f7fe",
+      "lines": 439,
+      "path": "README.md",
+      "repository": "piotr1215/pairup.nvim",
+      "sha256": "e4a076f6c6b57280ac6f03bea21a097f5d4b56848424e583e0875a4b55a3ec08",
+      "source_id": "src_8033a2e78503599eaf7633a31702ceee",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/README.md"
+    },
+    {
+      "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+      "git_sha": "a074ff5d8842c983e80d9e6873084f2597c3496a",
+      "lines": 515,
+      "path": "doc/pairup.txt",
+      "repository": "piotr1215/pairup.nvim",
+      "sha256": "9e66c1c51b17ce4ba4c5c8cb678e7c85af4ad669876a3b8cfbff3e4d21974abc",
+      "source_id": "src_ecf9e0917857550883b157361a815f36",
+      "stored": "pairup.txt-3bbf092e59b3.txt",
+      "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/doc/pairup.txt"
+    },
+    {
+      "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+      "git_sha": "27d635ca50b7a60bf6c3c773e7f0ad0ca2d50f77",
+      "lines": 286,
+      "path": "peripheral-prompt.md",
+      "repository": "piotr1215/pairup.nvim",
+      "sha256": "1bcdafa3007e5e6bdab52835dccaeeed2643cd7a74c87452be9ba5329afebcad",
+      "source_id": "src_5be3faa7a38f5e46b9a629e849eec071",
+      "stored": "peripheral-prompt.md-e868c54f5023.md",
+      "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/peripheral-prompt.md"
+    },
+    {
+      "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+      "git_sha": "dce57e38b92dd2d63ac70358e1c20507155069f5",
+      "lines": 60,
+      "path": "prompt.md",
+      "repository": "piotr1215/pairup.nvim",
+      "sha256": "977aa9b18025a6004acdc46942f4a56c2991abc42155f318489ecb7aff2c94a7",
+      "source_id": "src_894466dabac259c1bb6b0ac27dd05df8",
+      "stored": "prompt.md-82972e806b99.md",
+      "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/prompt.md"
+    },
+    {
+      "commit": "a4841094a58bb9d42591f3c7085411b1ea87a66a",
+      "git_sha": "b5a31dc6340c6807d20338b567fe8d17e320ffad",
+      "lines": 43,
+      "path": "v4-architecture.md",
+      "repository": "piotr1215/pairup.nvim",
+      "sha256": "73111df2e7b4607725f13dd49f50ba51678806139e5f6d86a38010fa94e70fef",
+      "source_id": "src_9d2e2992dfca5e31a70806b65e324b24",
+      "stored": "v4-architecture.md-61bf5802c0b0.md",
+      "url": "https://github.com/Piotr1215/pairup.nvim/blob/a4841094a58bb9d42591f3c7085411b1ea87a66a/v4-architecture.md"
+    }
+  ],
+  "summary": "pairup.nvim is a Neovim plugin (v4) providing inline AI pair programming with Claude Code via cc:/uu: markers, operators, plan-review conflict views, a peripheral Claude worktree mode, and statusline progress tracking. Evidence is documentation-only (README and vimdoc). Evidence coverage: 152 of 271 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

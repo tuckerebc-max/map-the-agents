@@ -1,0 +1,460 @@
+{
+  "applied_operation_id": "op_7c15d9dd5a214832a09c5a7a8f1217ae",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_697c5b6ca788b72153db48dbd62f0686e5bd2a31a647728d7da6306bdce4ca87",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 126,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L117-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d4b0a341b2445ff4230ec443476631724a7f1ad0f885fe8890f102d7e3f1a3d"
+      ],
+      "text": "The CLI is launched as `devx`, supports starting in PLAN mode via `--plan`, and offers a headless one-shot mode using `-p \"<prompt>\"` with an optional `--yolo` flag."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f80693ebb1d80b677fa015b376cda64483823569f1efe7660f225169f263e9df",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 161,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L134-L161"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L132-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04fc3f3aa807a4911cc4abc2e23558628cdc5d16c2905e2a5552b3fc8459b82d",
+        "slc_da282a06f762aafa7cc17270238a37e7042d3571dda20a2ea4407cb1957ed44a"
+      ],
+      "text": "A slash-command palette (opened by typing `/`) includes commands such as /plan, /agent, /mcp, /usage, /export, /theme, /doctor, /image, /serve, /memory, /undo, /diff, /commit, /status, /session, /resume, /settings, and /update."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0a51910994376a3d6e37d3266297c88f66c516546ba8368a9bb35a09d10b6c6",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 171,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L167-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aad9c124c25e074efc0bacc7cffba75594a29f86baec7e0a59e19a1a18e87f48"
+      ],
+      "text": "Keybindings include Tab to toggle PLAN/AGENT modes, Ctrl+P/Ctrl+V for clipboard image paste, @filename fuzzy file autocomplete, atomic Backspace deletion of paste badges, and Ctrl+C to stop generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d5833651bae0f0f3ebdd684332aa980e91c81acf0b03e03b51186cc6863281a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 54,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L31-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36512440500fb476e9c9d3277e55739f04e94fdbd76547d310d080a01758b203"
+      ],
+      "text": "The agent uses a dual-mode architecture: PLAN mode acts as a safe architect with a requirements questionnaire and no code edits, while AGENT mode autonomously edits files, runs terminal commands, and installs packages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e3272f4eb8f05a68c35ab36bf91c86ab002ab2e9f1eeeee7397220358b1b82c4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 54,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L31-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36512440500fb476e9c9d3277e55739f04e94fdbd76547d310d080a01758b203"
+      ],
+      "text": "Finalized architectural plans are approved via a one-click `[Go / Other]` prompt, after which the coder agent begins implementation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_674c4aac145bb50f5c1325440e0ee220aa249d1587f432ddee19e51c7548306a",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 54,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L31-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36512440500fb476e9c9d3277e55739f04e94fdbd76547d310d080a01758b203"
+      ],
+      "text": "A persistent project memory bank is stored in `.devx/memory.md` and managed with `/memory add <rule>`, intended to carry project context across sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c87ec4d608e6d162a21a77e5a0abd4e5cbd20be8e82ffe72ddf5855c60d8f99",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 161,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L134-L161"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 54,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L31-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04fc3f3aa807a4911cc4abc2e23558628cdc5d16c2905e2a5552b3fc8459b82d",
+        "slc_36512440500fb476e9c9d3277e55739f04e94fdbd76547d310d080a01758b203"
+      ],
+      "text": "Sessions are saved and can be listed, resumed, or deleted via /resume, /session, and /session del; /resume reportedly renders the last 20 messages of a session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ffbb6989f089444878c56ade2c873136f3a49e47dd1853771f56eae738f3aa3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 54,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L31-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36512440500fb476e9c9d3277e55739f04e94fdbd76547d310d080a01758b203"
+      ],
+      "text": "The product includes a built-in local HTTP server (/serve, default port 3000) for previewing web apps and HTML5 games, opening on Android via termux-open-url."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6abe701bd4b366c95fa7b82e291c5778daadd43f75085935a18e62574d442693",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 54,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L31-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36512440500fb476e9c9d3277e55739f04e94fdbd76547d310d080a01758b203"
+      ],
+      "text": "Self-healing diagnostics run external checkers for TypeScript (tsc), JavaScript (node --check), Python (py_compile), and Rust (cargo check), with the AI fixing errors before finishing a turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b368929b40b0920853f3510b3220b797cb78986a2e658282c605f598f117575",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 68,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L66-L68"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 62,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L61-L62"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 15,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L10-L15"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 339,
+          "line_start": 339,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L339-L339"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3258b0a13a219c0c41678e81f4d83f6f3283852e252fc938b094c4591ace3bba",
+        "slc_810e77337b6a3bbd5ba0b6f74fdeeb96aede8f2055b3e88363bc2fa00511b435",
+        "slc_87184f5c7d5400b9e63b7a0e28dd0827f4da88cc905dd7c41efe257fbcee4459",
+        "slc_a444f667afacd47c7eba3b4b74722305decfc8a56353c28029977d421ec5bfbc"
+      ],
+      "text": "The project requires Node.js v20.0.0 or higher and a package manager (npm, pnpm, or yarn); it is distributed as the npm package termux-dev and is MIT licensed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_647dc2d8eb48c5ce422dbc69c49274bba6739a78d93fe4d639e85772aa58c67a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 90,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L85-L90"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 15,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L10-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a43e51dfbb914567ad6c0196613ad601af37de54dca837ef312d8b84b391618",
+        "slc_87184f5c7d5400b9e63b7a0e28dd0827f4da88cc905dd7c41efe257fbcee4459"
+      ],
+      "text": "Repository development practice: developers can build from source by cloning the GitHub repo, running npm install, and npm link; a CI workflow badge (ci.yml) is shown in the README."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73968487dbe74d608c459431c1c8cf6c4ad171b434f614925c61bb0ead017399",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L94-L94"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L101-L101"
+        },
+        {
+          "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+          "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+          "line_end": 105,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "apvcode/termux-dev",
+          "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md#L104-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32460c23283fe54ccbf68cc4d1f6569fcc07900a4ec272b45618e5f5a95005c8",
+        "slc_338cb3695dff4598ee7fbfe631d3a9887ea2cc1a4109b4eff9d23356485fb4c0",
+        "slc_35a6c03c37dae934a387ad69214d1c41580d5d14ae10903d6fe27608be93a92b"
+      ],
+      "text": "Repository development practice: complete uninstall instructions cover removing the global npm package plus ~/.devx and ~/.devxrc.json on Unix-like systems, with equivalent PowerShell commands for Windows."
+    }
+  ],
+  "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 347,
+        "path": "README.md",
+        "size": 17499
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 136,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_9d337d74d08054ee8d68591d21793b35",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/apvcode/termux-dev/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/0ede1806afb1f442/manifest.json",
+  "package_id": "pkg_6b1639046a659aa1d73475c48964021937bcae208b10ea72837fcc8fd6bfa7bb",
+  "repo": "apvcode/termux-dev",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5ed6b2f45b717fbc1fa7888c4a682e0992096f80d35ca130013f53b056b9e5ad",
+  "snapshot_id": "0ede1806afb1f442",
+  "sources": [
+    {
+      "commit": "a87cf5f6433248e360a4fe3ad822d8fb55fef1db",
+      "git_sha": "c6f96cb5f6a743e5305814a896a35834a9dea327",
+      "lines": 347,
+      "path": "README.md",
+      "repository": "apvcode/termux-dev",
+      "sha256": "5d016f8910914a83c2d63de0ba25dc37ceb36b6b4103ea1e63a4303377d78afc",
+      "source_id": "src_d8c8af915f6b50e8bf482cc39b71ba60",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/apvcode/Termux-Dev/blob/a87cf5f6433248e360a4fe3ad822d8fb55fef1db/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only README content for 'devx' (termux-dev), a terminal AI coding agent for Termux/Windows/macOS/Linux distributed via npm. Claims below are documentation-based descriptions of its advertised CLI, modes, commands, and memory features.",
+  "superseded_claim_ids": []
+}

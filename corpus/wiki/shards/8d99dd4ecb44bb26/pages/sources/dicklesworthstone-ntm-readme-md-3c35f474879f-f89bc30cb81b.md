@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_11f65fda7bb8794881d634cabfd9da4720472afffe9e4414c1a6b5ae4cf56c4e
+- clm_28a2aedfa9321ca60b9ebc7e1d13fb11b506cbbad2e8954efaef24cd1ec5c2e0
+- clm_2e0fb02a8e5cb60f6c9ae00e476361c11c045990c3b3f2c64a43223a3b9b0cd1
+- clm_36c2aaa1c4508617f1d71c64a88832760a22fe172b7ffb58e0c9a213910b314e
+- clm_579ff8daf1dd6c38ac5600ef26801a30e250c320ca1c8f42d84b8f5c59d054c1
+- clm_6a2e44aa1e265a14c7468d894848b65b9fbc2a4ba487eb592265ad425644af0d
+- clm_7146c544074f47c9fccb64d2dfa73bc5fe5bce693d2a990383d49f05959b4d1e
+- clm_c6f2438413f9a631febb3b74d87347e692a23127511dfd50d1c9979289105ec6
+- clm_cab57b915db763974386d5d96386906777f874530f4c0af627cdcd5a7928b23f
+- clm_cf2049569598bd6c38faf8a10a088498986ce784f3eba0016edff457d2c9605a
+- clm_de5796eda0afe09a6e1a846757c3d6a75382895a558b40ba5aec943627091acc
+- clm_e6d5c20d8d3b2a12df7b4db76d998040d6feabfa2058111409c23cbf6e9a3ee9
+maturity: draft
+page_id: pg_e3374de351795cfca260f89bc30cb81b
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_6bf4e45019b550ebb846b84fdd88baf7
+title: Dicklesworthstone/ntm/README.md @ 3c35f474879f
+updated_at: '2026-09-14T01:46:06Z'
+---
+
+# Dicklesworthstone/ntm/README.md @ 3c35f474879f
+
+<!-- rcw:begin owner=source:src_6bf4e45019b550ebb846b84fdd88baf7 block=evidence -->
+- Custom agent types load from TOML files in an agents/ directory next to the config, declaring name/alias spawn selectors, a command template, and optional readiness regexes; NTM never modifies files in agents/. [@claim:clm_11f65fda7bb8794881d634cabfd9da4720472afffe9e4414c1a6b5ae4cf56c4e]
+- The product exposes machine-readable automation via --robot-* CLI flags plus an ntm serve server offering REST under /api/v1, SSE at /events, WebSocket at /ws, /health, and a generated OpenAPI spec. [@claim:clm_28a2aedfa9321ca60b9ebc7e1d13fb11b506cbbad2e8954efaef24cd1ec5c2e0]
+- Stated design principles include no silent data loss, graceful degradation when optional integrations are missing, idempotent orchestration, auditable actions, and safe-by-default destructive-operation handling. [@claim:clm_2e0fb02a8e5cb60f6c9ae00e476361c11c045990c3b3f2c64a43223a3b9b0cd1]
+- ntm locks force-release is approval-gated by default (automation.force_release: approval): a second operator grants via ntm approve, and the serve HTTP endpoint and dashboard conflict action honor the same policy. [@claim:clm_36c2aaa1c4508617f1d71c64a88832760a22fe172b7ffb58e0c9a213910b314e]
+- tmux is required; agent spawning needs CLIs such as Claude Code, Codex, Antigravity, or Grok Build (Gemini legacy); br, bv, Agent Mail, cass, dcg, and pt are optional integrations checkable via ntm deps -v. [@claim:clm_579ff8daf1dd6c38ac5600ef26801a30e250c320ca1c8f42d84b8f5c59d054c1]
+- Documented limitations: tmux-centric, Linux/macOS primary, some workflows depend on external tools, Grok Build support is phase one (TUI readiness, prompt delivery, interrupt-with-message, restart, and restore-time relaunch fail closed), and it is local-first, not hosted SaaS. [@claim:clm_6a2e44aa1e265a14c7468d894848b65b9fbc2a4ba487eb592265ad425644af0d]
+- NTM spawns named tmux sessions with labeled agent panes and a user pane, supports labels for multiple swarms per project, and --worktrees creates per-agent ntm/<session>/<agent> branches and worktrees for isolation. [@claim:clm_7146c544074f47c9fccb64d2dfa73bc5fe5bce693d2a990383d49f05959b4d1e]
+- Destructive operations are governed by policy rules that allow, block, or approval-gate actions; approvals are durable and auditable, with two-person workflows where self-approval is rejected. [@claim:clm_c6f2438413f9a631febb3b74d87347e692a23127511dfd50d1c9979289105ec6]
+- Repository development practice: the README's Development section gives build and verification commands (go build ./cmd/ntm, go test -short ./..., golangci-lint run). [@claim:clm_cab57b915db763974386d5d96386906777f874530f4c0af627cdcd5a7928b23f]
+- NTM is a single Go binary combining tmux session orchestration, work triage, safety policy and approvals, Agent Mail coordination, durable state capture, and a local REST/WebSocket API. [@claim:clm_cf2049569598bd6c38faf8a10a088498986ce784f3eba0016edff457d2c9605a]
+- Automated assignment treats tracker labels as an authorization boundary: operator-gated labels are configurable in .ntm/config.toml, project labels extend but cannot remove built-in gates, and any plan or coverage failure stops assignment before dispatch. [@claim:clm_de5796eda0afe09a6e1a846757c3d6a75382895a558b40ba5aec943627091acc]
+- Durable state features include checkpoints, timelines, audit logs, history search, pipeline state with resume, and saved sessions; pipeline resume preserves completed step outputs by default and re-runs the first incomplete step. [@claim:clm_e6d5c20d8d3b2a12df7b4db76d998040d6feabfa2058111409c23cbf6e9a3ee9]
+<!-- rcw:end owner=source:src_6bf4e45019b550ebb846b84fdd88baf7 block=evidence -->
+
+## Researcher notes
+

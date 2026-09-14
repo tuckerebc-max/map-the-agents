@@ -1,0 +1,44 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0771e541ab4e11581a588abc0bec4ede583dbaa90ccbf823b2d27ac1049703c0
+- clm_15354823a1303363e7f148202928cfdd1500577b777776b64d8f7a53232e1f73
+- clm_3ec5f6cac2574c294291dff5503ee33510bc9a29ffbbb765a2943539635eac3a
+- clm_4235412de0fcc3d0338775683b7c24c0d119277c825e75a27c2e67e8450a4188
+- clm_800bec99e0af6416a75c6ca5c5e8b146f55a1a28ecc6be5906e1e0b8bf07154c
+- clm_83e985f8ba03db2e0b755776a77b601755f2e552da2ea0ead4c2bea53e1abdb3
+- clm_876f6ec8eb1b8825800b2a54c0c3558e4751b542610d2d576e2ae2911333053e
+- clm_95c1ba11db34834a25e728ef0c13c8778141076d503e0aeaf3b0e5067938acc9
+- clm_bf8c6014d2368426b99eebc8f6abf98be82b00ec1d7415bbf57e28e01e88f9ed
+- clm_e79bb1ffe5cd4313ede82da11096a15dd6a0333a6ebd0b94710f9f97a07c9360
+- clm_f1531859ef4a36f10bb31d45ee0edcfb4e4ec075ea8188bf35b1b5247158a8ac
+maturity: draft
+page_id: pg_b74c49ffbec05187bc30fcb1a2a049da
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_c860e3117a8357e194779758ef556637
+title: structuredllm/syncode/README.md @ 4d6c110a028d
+updated_at: '2026-09-14T04:23:34Z'
+---
+
+# structuredllm/syncode/README.md @ 4d6c110a028d
+
+<!-- rcw:begin owner=source:src_c860e3117a8357e194779758ef556637 block=evidence -->
+- SynCode can be used as a HuggingFace logit processor: SyncodeLogitsProcessor is imported and passed to model.generate via the logits_processor argument. [@claim:clm_0771e541ab4e11581a588abc0bec4ede583dbaa90ccbf823b2d27ac1049703c0]
+- Custom grammars can be supplied in an EBNF syntax adapted from Lark, either as a string of rules or a path to a .lark file. [@claim:clm_15354823a1303363e7f148202928cfdd1500577b777776b64d8f7a53232e1f73]
+- SynCode v0.4.16 requires transformers v4.53.2 and Python 3.6-3.12; Python 3.13 is not supported due to dependency constraints. [@claim:clm_3ec5f6cac2574c294291dff5503ee33510bc9a29ffbbb765a2943539635eac3a]
+- SynCode's core is an offline-constructed DFA mask store built from regular expressions of grammar terminals, used with an incremental parser's accept sequences and remainder to mask invalid tokens during decoding. [@claim:clm_4235412de0fcc3d0338775683b7c24c0d119277c825e75a27c2e67e8450a4188]
+- A SynCode class offers an infer() method taking prompt and task_id; if neither is given, it reads user input via stdin. [@claim:clm_800bec99e0af6416a75c6ca5c5e8b146f55a1a28ecc6be5906e1e0b8bf07154c]
+- Built-in CFGs are provided for Python, Go, Java, SQL, Math, JSON, and more, stored in the syncode/parsers/grammars directory. [@claim:clm_83e985f8ba03db2e0b755776a77b601755f2e552da2ea0ead4c2bea53e1abdb3]
+- SynCode is a framework for grammar-guided LLM generation, claimed to ensure output is syntactically valid with respect to a context-free grammar, with stated soundness and completeness guarantees. [@claim:clm_876f6ec8eb1b8825800b2a54c0c3558e4751b542610d2d576e2ae2911333053e]
+- Cache directories can be configured via HF_CACHE and SYNCODE_CACHE environment variables, with defaults used otherwise; HF_ACCESS_TOKEN enables gated HuggingFace models. [@claim:clm_95c1ba11db34834a25e728ef0c13c8778141076d503e0aeaf3b0e5067938acc9]
+- The README reports SynCode achieving 99% JSON generation accuracy with Gemma-2b and being 10-20% faster than unconstrained generation, referencing an evaluation notebook. [@claim:clm_bf8c6014d2368426b99eebc8f6abf98be82b00ec1d7415bbf57e28e01e88f9ed]
+- The SynCode class accepts options including mode (grammar_mask, grammar_strict, original; default grammar_strict), grammar, parser (LR(1) or LALR(1), default lalr), quantize, device, num_samples, dev_mode, and log_level. [@claim:clm_e79bb1ffe5cd4313ede82da11096a15dd6a0333a6ebd0b94710f9f97a07c9360]
+- A CLI is available via python3 syncode/infer.py with flags for mode, model, device, dataset (mbxp, humaneval, mathqa-x, input), few-shot options, parser, and task_id. [@claim:clm_f1531859ef4a36f10bb31d45ee0edcfb4e4ec075ea8188bf35b1b5247158a8ac]
+<!-- rcw:end owner=source:src_c860e3117a8357e194779758ef556637 block=evidence -->
+
+## Researcher notes
+

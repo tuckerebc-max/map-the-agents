@@ -1,0 +1,613 @@
+{
+  "applied_operation_id": "op_50c8770a686640e79add623b94cd4b1d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a61ac4fd5959db8953d87a72b62191a05797638e9580d37f011349b807edcf7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 56,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L51-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62a35f55216d27b30d4132af27a4bdc1a1a5790f07dc9c35a99dc6fa10cccdbe"
+      ],
+      "text": "DenchClaw provides an npm CLI with subcommands bootstrap, update, restart, start, and stop for onboarding and managing the web server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b87f23ed0415829893b9b14b2c15b8921f6d1d9f40dd229c89b2490fc25b906a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L33-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14d0666f606030e3067edb51f61a5460b9c4242f6d7528afeef8837299ec6fa0"
+      ],
+      "text": "Bootstrap creates a dedicated OpenClaw gateway under ~/.openclaw-dench on port 19001, separate from a usual ~/.openclaw gateway, with config in ~/.openclaw-dench/openclaw.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab05579102803d9f7115c940f0be3d366375581dff984005ea1497272ac54582",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 66,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L62-L66"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 60,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L59-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ce38403cf51e23070433756f56d5231127866609cded86d5ee89a54a9fad620",
+        "slc_76cc8d277e393d86b32b80e11bbb3ab5c9a88aeb680ee50dfdfcec5b5cc41eab"
+      ],
+      "text": "OpenClaw commands for DenchClaw must be prefixed with 'openclaw --profile dench', e.g. gateway restart or config set gateway.port 19001."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6cffd5f5b16d9fca6b952b7dc1d8f69f46eec0cca6f17a4610f0e06dd89d15ad",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L33-L35"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14d0666f606030e3067edb51f61a5460b9c4242f6d7528afeef8837299ec6fa0",
+        "slc_4745f283075fad1938ac3248faeac38ce27ce40be78880a3717d58bfd39598e3"
+      ],
+      "text": "After onboarding, the web UI is served at localhost:3100 by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_643d7ce14e79a30fc5872f000ae54ca7a5934973096b5084f885848b1949bb1a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 74,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L72-L74"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L76-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52d400a19766cc22d9fe7993185d912a43ad2d8ce6bad1c7826e3381f11d85e7",
+        "slc_b08f60b6ea89d13aab604de94b281479aa1d509d94353a837c1d025b9e025b93"
+      ],
+      "text": "Setting DENCHCLAW_DAEMONLESS=1 skips all gateway daemon management and launchd installation across commands, for Docker or environments without systemd/launchd; the gateway must then be run as a foreground process."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_700e3a0317cf2eea3354b15d1e279f02d4def9f0809c1ce55f501d87a1b0beea",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 107,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L106-L107"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L96-L96"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 102,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L100-L102"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L104-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f423db6c3a8a9999474f5a8bea60ddab3b1e90eb8675e7049d3a9615f4835f9",
+        "slc_7de42a49a067d5ff6bf012c32f703a5f36096ac338008f338474e35b2f80030d",
+        "slc_8b843d35a257705b8a26a48b2c05eab0397df27e575eb15941e58a68c1462a6e",
+        "slc_c5c4882d6fac432ca432323dde002ea8446a6758e47db087fcdbf0a9a6b088be"
+      ],
+      "text": "Gateway connections use device pairing: a 'pairing required' error means the local device awaits approval, and pending operator requests can be listed and approved via 'openclaw --profile dench devices list/approve'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f464192fdd2dd52c7873dbec40e325cf7e615e6181e1c3390fccc37cb86b6555",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L33-L35"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L41-L43"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L39-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14d0666f606030e3067edb51f61a5460b9c4242f6d7528afeef8837299ec6fa0",
+        "slc_509bdc809674be9668f9fda7fa77ebc489bf852352a75f3b7c6b2ddbac5211e9",
+        "slc_b484a10222c0efc8aafedca39b97dc07511c3f96e74392262e8d7d1ac3dc87f7"
+      ],
+      "text": "Manual install requires Node 22+ and is run via 'npx denchclaw@latest bootstrap'; the product is built on OpenClaw and must be kept up to date with it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bde32b3a9aaa60757e366a3e61713dc84d13ef0bcb178e999f0ecf84c70bcac0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 140,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L137-L140"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 130,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L129-L130"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "0084d58e669806750724919945016ea5553ec485",
+          "line_end": 133,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md#L132-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a418840373667ac4c4a1bce533c441dfff25a626f1268e1fca3de3d3b01c02e",
+        "slc_5e370d26eb291bccba2c96c5d53a38a37c64694198d172438058f53d9635eaca",
+        "slc_aeb120e966f60bf63a858e88147d393dfc410f4d81e41d5db4fb75c71ce8a598"
+      ],
+      "text": "Repository development practice: local development uses pnpm (pnpm install, pnpm build, pnpm dev, and pnpm web:dev for Web UI development)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_896710952dbd1f408ea93c33d3dbeed041c1edc1d3fb2ab2b4048a7c1a8486c6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "281170cc42d41f8bd524a2fe982bfe35cb17ec65",
+          "line_end": 12,
+          "line_start": 7,
+          "path": "RELEASING.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/RELEASING.md#L7-L12"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "281170cc42d41f8bd524a2fe982bfe35cb17ec65",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "RELEASING.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/RELEASING.md#L3-L3"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "281170cc42d41f8bd524a2fe982bfe35cb17ec65",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "RELEASING.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/RELEASING.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1aae8f2c030b57650c4c096098a3d35860fdfb51480ecf1fa1a2d65c716aac6f",
+        "slc_8ec6f79d3897dc1a9c15ddfcf7c4ad4649f7df444d3638eb7b7eb90c87fdbe3f",
+        "slc_b57c817f01949976de311423c401994ac8655c26533b4214d1721e971652dfcb"
+      ],
+      "text": "Repository development practice: releases are driven by package.json; pushing a version bump to main triggers .github/workflows/release.yml, which runs deploy.sh checks in validation mode before publishing to npm and creating a GitHub release, with reruns safe via existence checks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_04b81301411a384071e95bf4e09b85c2e19f15bbe1fcacba99ca0cc60ab7c5bc",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L9-L11"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L13-L13"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 111,
+          "line_start": 108,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L108-L111"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L3-L5"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L106-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49cece0b0791f903ca6d72747dd6c2e0d9d553c1e03b85c86fdfaf833aa5b986",
+        "slc_598793d7badf7c22251c4bd044f1eff23f23a07fe987ca734498d76356e4c4b1",
+        "slc_5e29ce03898b359d609b42285fee1bac4d8ab37cf22933de2b0f4de0f3cc4720",
+        "slc_9c8e9caa3524c4ad3118d0642a1778940eb24014ba05bd2e366dbdffe6940ad2",
+        "slc_e053588d06d57408a036b934a4a49a9a8cefe4f8303a6d954c8503ed7ac180c8"
+      ],
+      "text": "Telemetry is anonymous and optional, split into product telemetry (CLI/web usage events) and AI observability via a PostHog LLM analytics plugin; both share opt-out controls and privacy mode, which is on by default and redacts message content and tool parameters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f957eaee971edd9c099b2cf40e25160ef50c16e6e4ebf5a28b954df2960ee995",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 132,
+          "line_start": 129,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L129-L132"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 136,
+          "line_start": 134,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L134-L136"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 127,
+          "line_start": 126,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L126-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_054bc3cd94bef817c135fee14d183baef353c9855076ca7ad6bc9538f9b3ae59",
+        "slc_5ce0301f9ae9530a52504ebe6c98a01bce60022bc17f21fefef1e6847fd31cef",
+        "slc_c847f39b2b48b7987fe100adc65efceabdef5979ffa3005f3a610c3b107dc452"
+      ],
+      "text": "PostHog Evaluations can score captured $ai_generation events using LLM-as-a-judge or deterministic Hog-based checks, storing pass/fail results with reasoning, configured entirely in the PostHog dashboard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_20d4974bb838a9ec25213f07d71eadb0e0c77a82771be3245b92f7ae9b9b0220",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 256,
+          "line_start": 238,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L238-L256"
+        },
+        {
+          "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+          "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+          "line_end": 78,
+          "line_start": 76,
+          "path": "TELEMETRY.md",
+          "repository": "denchhq/denchclaw",
+          "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md#L76-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3221e06eded1ae052fe94055af0bbd8750f3080c70faa4057ac6a91ee9690b80",
+        "slc_869933d14eb0bf59245c982a8607325b3b54aff8430bf5558d6a2f3ae7722af9"
+      ],
+      "text": "The posthog-analytics OpenClaw plugin runs in-process with the gateway, hooks agent lifecycle events (e.g. before_model_resolve, before_tool_call, agent_end), and emits PostHog AI events; it is installed automatically during bootstrap when a PostHog project key is available."
+    }
+  ],
+  "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 156,
+        "path": "README.md",
+        "size": 5920
+      },
+      {
+        "lines": 51,
+        "path": "RELEASING.md",
+        "size": 1575
+      },
+      {
+        "lines": 256,
+        "path": "TELEMETRY.md",
+        "size": 12093
+      },
+      {
+        "lines": 17,
+        "path": "todo.md",
+        "size": 356
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 862,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_7443f79938745f7cb4cfbb3fee91fd07",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/denchhq/denchclaw/f14eb4c239002d7b28673c60955b689b9d69db22/3670cd3429a5893a/manifest.json",
+  "package_id": "pkg_0a1fb1093f4b8326b66535fb26aa266c4c01db20cd015b1cbc98723e401e754f",
+  "repo": "denchhq/denchclaw",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3450f57ce1a3b6c99da5abfd91a0f586bc5fd22164e69fb7f89d976606b16831",
+  "snapshot_id": "3670cd3429a5893a",
+  "sources": [
+    {
+      "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+      "git_sha": "0084d58e669806750724919945016ea5553ec485",
+      "lines": 156,
+      "path": "README.md",
+      "repository": "denchhq/denchclaw",
+      "sha256": "78e3d7ba3eba08c368d8d0a28ea4ca4a97b9e67adc6170d55c6aa44e5a93c04d",
+      "source_id": "src_77054f8dd98358f0b345a3121ec80258",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/README.md"
+    },
+    {
+      "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+      "git_sha": "281170cc42d41f8bd524a2fe982bfe35cb17ec65",
+      "lines": 51,
+      "path": "RELEASING.md",
+      "repository": "denchhq/denchclaw",
+      "sha256": "cba26ddbb2882dc931d8fe834d37f7a4a2cadb6a35870d0011613b982f08f15c",
+      "source_id": "src_af66fbb4b9c55d1e9f16f9dd1edea689",
+      "stored": "releasing.md-87d6a57a759f.md",
+      "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/RELEASING.md"
+    },
+    {
+      "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+      "git_sha": "58693d5377ac4d36d8ea3e5715fa7515ad1e098d",
+      "lines": 256,
+      "path": "TELEMETRY.md",
+      "repository": "denchhq/denchclaw",
+      "sha256": "40a0ff916a7238d746c13a5c9fb4df6a1c8296c55a2480c7594f0a069b68707c",
+      "source_id": "src_abc60c6bc26154ee94e014267e92efd8",
+      "stored": "telemetry.md-1807265761e5.md",
+      "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/TELEMETRY.md"
+    },
+    {
+      "commit": "f14eb4c239002d7b28673c60955b689b9d69db22",
+      "git_sha": "9f43520fc757d9239c63e74e1f62166a5006f75e",
+      "lines": 17,
+      "path": "todo.md",
+      "repository": "denchhq/denchclaw",
+      "sha256": "8e18d460db10d95382d395871786a57b462117503452d6f9557de7de9ff24121",
+      "source_id": "src_a10af89eee555bffafff609daa9f817b",
+      "stored": "todo.md-13432f237597.md",
+      "url": "https://github.com/DenchHQ/DenchClaw/blob/f14eb4c239002d7b28673c60955b689b9d69db22/todo.md"
+    }
+  ],
+  "summary": "README and docs describe DenchClaw as an OpenClaw-based CRM framework installed via npx, running a separate gateway profile and web UI, with documented CLI commands, daemonless mode, device pairing, telemetry/privacy behavior, and release/development workflows.",
+  "superseded_claim_ids": []
+}

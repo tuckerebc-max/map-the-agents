@@ -1,0 +1,822 @@
+{
+  "applied_operation_id": "op_ffef4597677543c9998c39ed8a4f269a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_96ec5e1d914a0dba3b89a09aecc1647b96b21822254bc27e289fa8ad83de9ce6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L145-L145"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L114-L114"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 134,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L134-L134"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L110-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_130527bf435fcd64334220c6c62da6f160797e386bcf7e47df8e1a306ad885fa",
+        "slc_3b7b2bd68a6944b1be22ceba571796bdb3e2b5070b2e484702ec7b138022eca2",
+        "slc_a49de72a29c62bb1a14f7006a2ea108ed7fd2e990605b70db50cabea87e2af1d",
+        "slc_b6ec891581e22801075f38074b64d5d4419b08d264b164e1b8f3c292405e4e42"
+      ],
+      "text": "The repo is a monorepo with three packages: the SRE core runtime (packages/core), the SDK (packages/sdk), and a CLI (packages/cli) for scaffolding and project management."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df7d65bc8dedda12804ed92477e82444a70f2be2ec779cef45ec8f7873b937d8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L67-L67"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L65-L65"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f00b6b04ac58f4ac06d08514d12c26ebc64dc1636355261c30ce8d9608d5892",
+        "slc_773deb28b1f4c73d6f0444df75a10a786fb78fb2f9a8ae19b687e3a455b48c21",
+        "slc_a218afe5bac98b2cf5cb34351c9ba79c5d22582d9caea19c99a586c2bd9bc73e"
+      ],
+      "text": "SRE provides a unified abstraction layer so all providers of a given resource type (storage, VectorDB, cache, LLM) expose the same API, letting providers be swapped without changing business logic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47d39bf281f7ca2b2974edc9c444ad8a8ff419bf7b1f43d338accdd579ba7e1e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 130,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L126-L130"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_002a41d7ae07c1ebc6ccbfe4b53ee47b5f90b3e87daed0eb62db92527abc36db"
+      ],
+      "text": "Documented supported connectors include storage (Local, S3, Google Cloud, Azure), LLMs (OpenAI, Anthropic, Google AI, AWS Bedrock, Groq, Perplexity), VectorDBs (Pinecone, Milvus, RAMVec), caches (RAM, Redis), and vaults (JSON file, AWS Secrets Manager, HashiCorp)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b6398ea7b85f7fd6db0078ef902ec5386ebefdb45a73371fc27c4735383562d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 356,
+          "line_start": 351,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L351-L356"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 349,
+          "line_start": 348,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L348-L349"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_683ad104bf51205516b25b62cf4a0f8887587ec608ff83bf582f86621193a7db",
+        "slc_f513f298639328cecc3f74d5c52a3f21e2da73dfac31297f993b09539f6f8091"
+      ],
+      "text": "SRE ships 40+ production-ready components (e.g. GenAILLM, APICall, WebSearch, Classifier, ForEach, S3, ECMAScript) invocable programmatically or via the .smyth workflow format."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b0bc25f3b0251a99ef16f7fa64e86956f39e98e5a91941f9ac368bb3951f240",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 209,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L208-L209"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 185,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L181-L185"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 161,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L158-L161"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 179,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L175-L179"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 197,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L196-L197"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 164,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L163-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a49138fb425d54217da0a7a34ba170beab4b602c923c0357832da40cad4d6d7",
+        "slc_5e730b934d5958d00fe59958750ba824074d801e18d852085d50aa8ec44af1ff",
+        "slc_ae49f555dade6449e3e3d2ce4ff9a19be60b8f1d2a72d93a5af7543151e7e993",
+        "slc_c364f5133938515a34a8b30f20039bbb8747651da7092aa6843d3d83afb38126",
+        "slc_e2501ff36a0d2f5ddd16f49c6792000555d2993e6a9704f4ae994e9a1fa203fb",
+        "slc_f399c4791de9e8f172186d377d1d1a0e463fd33c0c01108ea9f0433e61796e44"
+      ],
+      "text": "The SDK exposes Agent.import to load .smyth agent files, agent.prompt for one-shot queries with a .stream() event mode, and agent.chat() for conversations that remember prior turns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_716ab2adabeb919dc9483619000965697ff6dc00e886ecbe2686abf9c3798a9a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 259,
+          "line_start": 255,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L255-L259"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 253,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L251-L253"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 243,
+          "line_start": 231,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L231-L243"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 229,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L223-L229"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1638e5f7e70267e25a2c4c2e5e9b6b60564e3926d5a568d54af983d72a1ee81b",
+        "slc_1b2b53f18908628b630d148e5d9c91a5c8d8c92ff9f9df9d2b1d0fd7868d4794",
+        "slc_44ee10864c8f2f2678c72481191b2fb8f26f5bbf4d8247ec034881efa8b93eda",
+        "slc_8b05d741626af1eb9d41efa8e69e13702ed562991214e7e2c6e40642822fd85a"
+      ],
+      "text": "Agents can be defined in code with new Agent({name, model, behavior}) and extended via agent.addSkill, whose process function can access agent-scoped LLM, VectorDB, and storage connectors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a90b0f48bed624f65ef5a249f595fc35737052abf2f246cbbaa0dd536dd36738",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 286,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L282-L286"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 280,
+          "line_start": 279,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L279-L280"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fe6c62ca65842b8a95ed0a8a88ded9acf7908a81b9b0c44b524ae034a61e9d7",
+        "slc_d95f8f228a4a3c9d6df5b211e75569b5b58692714eaa116cc3240aa9517cf49a"
+      ],
+      "text": "Every operation requires authorization through a Candidate/ACL system so agents only access resources they are permitted to; access is obtained via AccessCandidate.agent(agentId) passed to a connector."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be389fa9c74b794bfb6e7ce9493e5d4d0d4179324b58927ff6dcad4edbff1aeb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 333,
+          "line_start": 325,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L325-L333"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 315,
+          "line_start": 314,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L314-L315"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 303,
+          "line_start": 296,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L296-L303"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 291,
+          "line_start": 290,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L290-L291"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_220cddde3ee6ced97217f86354b15afa3a0fd7f6e3b8a1cd3dab2506c1e8a399",
+        "slc_ae15393adaf6e7e45dedfe6cdd1252718456373c84a3f8186014a14d3547f567",
+        "slc_c71b1d7aaa9e9c135f4f89dffe377c08efff6f48f1c6301b48be62f789e3d4cf",
+        "slc_e77f2dee77b9b5d9801749e9b50cf31986d0e363779f0f3acd4f6afcd73fb8a3"
+      ],
+      "text": "SRE is implicitly initialized with default connectors (RAM cache, local storage, console log) when the SDK is used, and can be explicitly re-initialized with built-in or custom connectors for production setups."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fc9b17bed586322835bcb9bdf657c2f8c5aaf7619f0688efb20fa61613beb45",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 90,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L87-L90"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 100,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L98-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16f992405799d53f7c2bd8f79e53fa012c06291d137f9fcd73f3adfb76750a4a",
+        "slc_f6fe2e1b635f4f78ff6f536dd1985ff3abd616f25fc9bce0b11024ec6ac18fa4"
+      ],
+      "text": "The SDK is distributed as the npm package @smythos/sdk, with a separate @smythos/cli package recommended for creating new projects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0fffe65a383326c6bd3040b23694aedd1333af166c6ed73aaeaafad2e58af0bd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L71-L73"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L30-L32"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 65,
+          "line_start": 52,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L52-L65"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L34-L36"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 79,
+          "line_start": 77,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L77-L79"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32c3e9e39ae329c8ac30467b672c7796dbb74ed8f495c86bc7fc89fcf6566497",
+        "slc_3377def47dbcf8e79e26190da9eaf1ffe19e7df7f1e4528de0449f34f6cd01ad",
+        "slc_a18ef749c7045c35b619ff40e4240d75a7708853ac8e29d4d38dee443a2b2a94",
+        "slc_a43bf7b7be1da38ac67e0dd98698d12dea09c0a0c2886a107ebbd0ffbf34e881",
+        "slc_d78c0b1daa37774c7bad2675e62fa4895910613865dacea125f2e8cb4e47d97a",
+        "slc_fda44f1b656925b469176750d79821714aaad637fc4d059f75c18a09e6e188c8"
+      ],
+      "text": "Repository development practice: contributors fork the repo, install dependencies with pnpm, create a .smyth (or ~/.smyth) directory with a vault.json of provider API keys, then build with pnpm build and test with pnpm test."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b445a62b5dc42ec52aadfc5827421fa9bc86b9fc1f6819763072ba7952679337",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 180,
+          "line_start": 175,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L175-L180"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 169,
+          "line_start": 165,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L165-L169"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 159,
+          "line_start": 156,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L156-L159"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 144,
+          "line_start": 141,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L141-L144"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 154,
+          "line_start": 153,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L153-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_862f6bbfa33cee754fa6bffbae547aede51d2a1d2744fad9a91704a4c094b533",
+        "slc_c819f642804d63bca0b4ec440cf133e46729ff075ada559d43edbc8c86554f63",
+        "slc_ca951c4e67a8bc44ccde54aa50437f362cab887e1a3bc79d890c0096e7a3cb75",
+        "slc_cdfc2ad53745ab30ce43f141109bf9203795dcc59164d95fbb9de68af38bce1e",
+        "slc_e678a8b4857bc74d7898aafcf9b75377b8f278b006a9ec924ab3a1bc50508ab8"
+      ],
+      "text": "Repository development practice: contributions must follow a fork-branch-PR workflow with DCO sign-off (git commit -s), clear commit messages, passing tests, and linting/formatting before submission."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3c6dada5c4db197fcba661722dab2bdc317900573393f29b3da788184068e98",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "f8578eddb47f82647f3903ff72f62a1761d08b11",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "SECURITY.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/SECURITY.md#L12-L12"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+          "line_end": 125,
+          "line_start": 118,
+          "path": "docs/core/media/CONTRIBUTING.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md#L118-L125"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "f8578eddb47f82647f3903ff72f62a1761d08b11",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "SECURITY.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/SECURITY.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_59edca175eb10007532138c103652404bd199cdee5664879837a66306fdbf2b6",
+        "slc_848d4cf41b9f38b0a566eedca546beea7d3d646f723117306bb16e264c70d2db",
+        "slc_849bf010849d986a6b032bfaa292a7fdc4451d1d99e1f3e3bc1756f7b9162b20"
+      ],
+      "text": "Repository development practice: security vulnerabilities must be reported privately by email to security@smythos.com rather than opened as public GitHub issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_953d2b597fac799a6d03d718a184cb0ac4e3240656be969ca3da3a3ac1d8be04",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "5467729e15bc3120b8b03085fc5d7ab2fb860b22",
+          "line_end": 9,
+          "line_start": 8,
+          "path": "NOTICE.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/NOTICE.md#L8-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c9cd02fe254077d21198d11d2a1c50ff68e1aae23eadf6c7c2e3cdd6d41bc09"
+      ],
+      "text": "Some SmythOS modules are proprietary and kept in private repositories under commercial terms, so this public repo likely does not contain the complete product codebase."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_931b97a69340244055563191084f2dfb9146850278c486e72a1e654d326a3df3",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L28-L28"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 24,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L23-L24"
+        },
+        {
+          "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+          "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "smythos/sre",
+          "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md#L57-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7acf123bebf1a93392a6fa6fab1648ce4eaa3aeb08a679483810b968ec59d265",
+        "slc_d62b36fc856064801d094de92b19a1e93777944d8306cd9e55fc2c6276a11319",
+        "slc_ed9c0f446fe4d309ab4356d995fcb8e95dd9a51dcba2b1bad80f9d7c858e33a4"
+      ],
+      "text": "The project targets builders of production AI agents, positioning itself as an OS-like kernel layer managing AI resources with agent orchestration and lifecycle management."
+    }
+  ],
+  "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 391,
+        "path": "README.md",
+        "size": 15317
+      },
+      {
+        "lines": 11,
+        "path": "NOTICE.md",
+        "size": 602
+      },
+      {
+        "lines": 66,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 3798
+      },
+      {
+        "lines": 197,
+        "path": "CONTRIBUTING.md",
+        "size": 5459
+      },
+      {
+        "lines": 14,
+        "path": "SECURITY.md",
+        "size": 427
+      },
+      {
+        "lines": 197,
+        "path": "docs/core/media/CONTRIBUTING.md",
+        "size": 5459
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/sdk/media/CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 5459
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 936,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b2d100e0da0f51f797f3b0b7c43e7e01",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/smythos/sre/5c382a1ec07accc75947c3e4fa24841532ae7c88/de590e843dd1e761/manifest.json",
+  "package_id": "pkg_bdfd99d122762885c0b1da66b1fd9d93eee894a698556ad850915705923f843f",
+  "repo": "smythos/sre",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "756923152d2bc14b624a73f81b0fb16c75f107ba3ccd9890b8b483de781c3d99",
+  "snapshot_id": "de590e843dd1e761",
+  "sources": [
+    {
+      "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+      "git_sha": "f7c30fad73953ac42be59212a8e01a0384b8d478",
+      "lines": 66,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "smythos/sre",
+      "sha256": "fa68a712af1cd06186ac9705526f0de0032458e5a4ea147121ce0bfd5561dbe8",
+      "source_id": "src_af566929793d5aa6a1517d2a198deb41",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+      "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+      "lines": 197,
+      "path": "CONTRIBUTING.md",
+      "repository": "smythos/sre",
+      "sha256": "d1e00865978b82ded9b7aaba70005fd3af0ee686aae2a9bceef1934e309d734f",
+      "source_id": "src_ecf89dd8eb565f5a9c3a0a6f3b3921dc",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/CONTRIBUTING.md"
+    },
+    {
+      "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+      "git_sha": "5467729e15bc3120b8b03085fc5d7ab2fb860b22",
+      "lines": 11,
+      "path": "NOTICE.md",
+      "repository": "smythos/sre",
+      "sha256": "e93f62d3a1e2d2ee3777d3bbba9b62f442b934808fe077fe671b7377a521c90e",
+      "source_id": "src_7fce3c8601ba573d917b66af39997a72",
+      "stored": "notice.md-53337bf7ea91.md",
+      "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/NOTICE.md"
+    },
+    {
+      "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+      "git_sha": "718611426b6c932db54546ab5c6cd43411589363",
+      "lines": 391,
+      "path": "README.md",
+      "repository": "smythos/sre",
+      "sha256": "2deebb5d70e9e3a43e634ec40c52fdbda039953e4160f1706ead9d5374e414cf",
+      "source_id": "src_1d1060d0f50055639eb096c6c30c5e28",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/README.md"
+    },
+    {
+      "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+      "git_sha": "f8578eddb47f82647f3903ff72f62a1761d08b11",
+      "lines": 14,
+      "path": "SECURITY.md",
+      "repository": "smythos/sre",
+      "sha256": "303726364d448de79e20003e420432101f563784875e2c9188770f68f6a6f50a",
+      "source_id": "src_4fb257f0aa005806a36072da516f4867",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/SECURITY.md"
+    },
+    {
+      "commit": "5c382a1ec07accc75947c3e4fa24841532ae7c88",
+      "git_sha": "18c552180ee2832c0389cdbcb56ef8aa730b7a3a",
+      "lines": 197,
+      "path": "docs/core/media/CONTRIBUTING.md",
+      "repository": "smythos/sre",
+      "sha256": "d1e00865978b82ded9b7aaba70005fd3af0ee686aae2a9bceef1934e309d734f",
+      "source_id": "src_8399f0a96f3e572387122a825ecf937e",
+      "stored": "contributing.md-6128d79d8d8b.md",
+      "url": "https://github.com/SmythOS/sre/blob/5c382a1ec07accc75947c3e4fa24841532ae7c88/docs/core/media/CONTRIBUTING.md"
+    }
+  ],
+  "summary": "The SmythOS/sre repository is a monorepo containing the SRE core runtime, SDK, and CLI packages for building and running production AI agents, with a unified provider-abstraction layer, a Candidate/ACL security model, and 40+ built-in components. Contributor-facing docs describe pnpm-based build/test workflows, DCO sign-off, and private security reporting; NOTICE.md states some SmythOS modules are proprietary and kept in private repositories. Evidence coverage: 182 of 236 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,757 @@
+{
+  "applied_operation_id": "op_6298d4fca4ce4ad08b9ec1c6739f6e55",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c341709600308201865df64c31a5134c6de266aded16baee1cdd5b230a20ab34",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fbce4da5329621557e377342f6aff33196bff581304ead4e5fd4ee0d2d5c64a0"
+      ],
+      "text": "Contract v1 defines a committed, portable deployment directory whose sole interpreter is the qm CLI, which validates the same inputs it uses to render containers, task definitions, secret routing, and the agent-computer layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b823cb54ca3e16b3bc83d065b8a0b69569b469f57e00bb763aa81520ba0c97d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_16b3d9034201340ff23a6dacc60754695fc4ae899e31b79c6e1abc70fd5ac0e3"
+      ],
+      "text": "The deployment config root requires contract: 1, orgId, publicUrl, target, and a services list including core; target is docker, fly, or aws, and unknown contract majors fail closed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8681a067b467fd47e2bde2d6a36c3bb3bd0cb42ea0d43cb35de964aaecb31ff5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7c27222c78e59805b3568fef3f0a438a6344dd24",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/combined-services.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/combined-services.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_696954c49ec94ab45a5c0391922960aa37cc9fa0f3a66a9f24831fc8a58fb4f4"
+      ],
+      "text": "A deployment runs three application workloads: core, web-ui (chat plus admin under /admin), and portal, which is the public entry point and hosts the optional built-in auth broker; Slack stays in core."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d5847e861a37f4714dd5d00d846e7b7da4cd4e41e6f7fa42521b4556afb6dac",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 88,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L87-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fe59d64902e00954e73378234d1630d8187ea03c215ee6f5f35354306126547"
+      ],
+      "text": "The core runs TypeScript directly on Node with Fastify for HTTP; the Slack plugin uses Bolt, and the web UI builds with Vite and renders with Lit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d3163258b3cb69d281475a7278c4258dc53f6d95f2bd230ba8cca327ec5cafe",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 23,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L22-L23"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bc9cfc99907859865f2ae0f155d8e48169e4cde114fa03d7d7406a6ddc0bfec8",
+        "slc_fc0e1f6267960653cc5dfec07d9df75b8797225d5419297bc9695e686a521a53"
+      ],
+      "text": "Each person and each room gets its own scoped memory, files, keychain view, permissions, crons, web apps, and durable sandbox, so employees work independently while collaborating in channels and projects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb912c2843273e979dd2af371249a486799ed49a714c7ecdb915181ae3d13305",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 94,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L90-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d30c2556ce979f54394065076e968230d5a04d8a791243c43d034fce7b2b609"
+      ],
+      "text": "The core is generic: org-specific config, tools, skills, sandbox image, and infrastructure live in a deployment directory, and every substrate (harness, session store, sandbox, memory) sits behind an interface."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c773afaf2ffa741e5aa121747236680e3d16a014ecd9c10f95180112a860bc8c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 108,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L103-L108"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 101,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L98-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1893eb30e43bcf9c1ac4157263c796a56164e215ccfa3c3b057a13b3a04a5785",
+        "slc_a4bba3a5ab84a558316a930b9fe31838c4dca29f44ec534b722bfe345f72fb1f"
+      ],
+      "text": "Orgs pick one security posture — Strict (human approval per tool call), Auto (default; classifier screens provenance-labelled external data), or Dangerous (no screening or pauses) — and narrower scopes can only tighten it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8947e8289a18c308863022fa4ba22b2954b24763433d2e5e7c71e68cb1e387de",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 111,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L110-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e77f95769e995b70c7d9ffa5584a2e67cbf8cc97afb6be7675882038fc4863c"
+      ],
+      "text": "A predeclared command policy with approval rules and hard denials for destructive operations like recursive deletes applies in every posture, including Dangerous."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d76cf275a7ab00269188349f6ed6b173d09fa3946a2a3c36026c0c450792ba6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 73,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L70-L73"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 85,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L77-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be5b29eb066d0ddfec8394919f4a83dbfcc764d76ec65f08d0e6075c8f6ffe5f",
+        "slc_f36d83ebe6898648de4944fcaac023d0367ecd575d2d308551096dd2779213b5"
+      ],
+      "text": "Without DATABASE_URL and SESSION_STORE=postgres, sessions live in process memory and vanish on restart; Postgres otherwise holds user data, session history, and durable state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8408746c8d3f5d30f6274d9328670bc6678f2b5d2655b0a91a5389df213a2c69",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 124,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L115-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_933eadb58aba7a9d4fbdec37df466d10265a4ea9b7e43c9c4d4297f7b3dbbea9"
+      ],
+      "text": "In Open sharing posture, included memories are loaded into the prompt in full with source-scope labels and are searchable, with no relevance ranking applied; the candidate window is 100 recent sessions and 200 files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc394e17d63d26b10dcec08cac4001456b5f19e3fcb1c1561f02e943025dd2fe",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L34-L34"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L59-L59"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 67,
+          "line_start": 61,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L61-L67"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 57,
+          "line_start": 36,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L36-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1461335969dcd4c0c23c3214cc7c05fa8c8a6e847cc5dfe029bdfa0a37a505c9",
+        "slc_4d56aa2cf662347311454134613bb3cf59080670165d3598c10480885957d421",
+        "slc_6bfae010cfba221fd5dff96c5f186bc3306be5f3d934616c76e347dc0dea7347",
+        "slc_aea2b5ea6d9a52e1523da6efa21819eb1de49a545d80d0928385c2b5bb43df63"
+      ],
+      "text": "The security screen proxy contract specifies HTTPS POSTs with a JSON body carrying text, hook (user_input or tool_response), and chunk metadata; providers return score and threshold in 0..1 plus an optional primary_outcome label."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e36d303fb7c3b7f02885e59915a461e7de307cfd6239f856b89aa63e80b906a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 157,
+          "line_start": 151,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L151-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_748869fdb4e799b56b6889211ab40c5a4e5d2e6b6319505c3d93aff254d3d945"
+      ],
+      "text": "Published apps receive AGENT_API_URL and AGENT_CREDENTIAL_TOKEN and call $AGENT_API_URL/v1/credentials/broker with the token in x-agent-capability, authorizing as the immutable publisher rather than the viewing person."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c836b847b7e0f4edbd516f67e78bbcaa02aea4a7251d2238130b83df29470eb",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 85,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L77-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f36d83ebe6898648de4944fcaac023d0367ecd575d2d308551096dd2779213b5"
+      ],
+      "text": "Every turn runs through a central core that can use various models and harnesses; the agent has a small fixed tool surface, including execute, which runs commands in the scope's own durable isolated sandbox."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29aa8bc90c4bf89f650bd770b65d2349abdf5faa8c416e6bf36e6e42e4c38eac",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 160,
+          "line_start": 156,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L156-L160"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a49cbf23ef448b1c925c6690a39b156b62ad082ad98b566d5eccd6e340152e1"
+      ],
+      "text": "Repository development practice: contributions are accepted as human-written text, not code — contributors describe changes informally in a .txt or .md file under adrs/, and maintainers handle implementation; vulnerabilities are reported privately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d53517883f87e7e9e6ee152531f4f1d1daabcdc0b641fc3592e3057630dafb3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L122-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a98ee97779e603d260ff608b7b608510f755c4af7e8f62dab89a36f219b4327b"
+      ],
+      "text": "Repository development practice: the normal deployment gate order is check, doctor, plan, up --yes, then check --live, with infra build-image preceding plan on AWS MicroVM sandboxes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43e6a44524b7999ec69c6d1db772b7d4218d73c0c963af9c71d73aab299ba7b2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L139-L139"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6a079f9c502679ecb29637401128d9ea44ced1c4a7349d55e9bf477767d1aa90",
+        "slc_df66acb1a36b7c13b20a473be59aa6497dcfcabcb0a540a9adf9c7e3d91a4e8a"
+      ],
+      "text": "Deployments depend on the @yc-software/qm package; the deployment directory's package.json pins the engine at the exact scaffolding version so the directory records which CLI interprets it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6284ad912d5f8d58ab3fc76e9db43e1121b25f194b38616f8471c51827bb3907",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "c73c75ab5e1c372ce0ff808e9f4625167a790532",
+          "line_end": 19,
+          "line_start": 15,
+          "path": "docs/admin-model-verification.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/admin-model-verification.md#L15-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ed0beb8a8db27b673f3be26e78556a861f8d45c3b7a889122b04a98e4b5cc4ee"
+      ],
+      "text": "Admin model verification's small probe does not certify prices, maximum advertised context/output limits, image support, every reasoning level, or correct tool execution; admin-managed API models remain Pi-only in normal use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07be4d77d6df7cdbf7e16516b36ea11732c96e02572ce632f9da338f01417380",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 145,
+          "line_start": 132,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L132-L145"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "docs/deploy-directory.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md#L147-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6db94a5f3cb0557170439992e290b047bc98b06ab939a4598c0e55ab8836a0da",
+        "slc_d76f7f8e4ee71705a4cd31a3ac57d5ce0b994742eba546df6b0adbae342ec287"
+      ],
+      "text": "The sandbox.egress contract clause is VALIDATED-ONLY: qm check emits wildcard/host warnings, but runtime enforcement of egress is explicitly absent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e0d041a5aa6b71618416834fe147649eb2775be6a8cabd03377f5bc14518709",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 41,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L31-L41"
+        },
+        {
+          "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+          "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "yc-software/qm",
+          "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf047d57b8e9665115eda2341021be73b7c689873192883c12eecb3f4748a198",
+        "slc_fc0e1f6267960653cc5dfec07d9df75b8797225d5419297bc9695e686a521a53"
+      ],
+      "text": "QM targets startups wanting a company-wide agent: employees get isolated workspaces, collaborate in Slack channels and projects, and the same identity and configuration carries between Slack and the web app."
+    }
+  ],
+  "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 217,
+        "path": "README.md",
+        "size": 10904
+      },
+      {
+        "lines": 9,
+        "path": "deployment.md",
+        "size": 481
+      },
+      {
+        "lines": 27,
+        "path": "docs/admin-model-verification.md",
+        "size": 4333
+      },
+      {
+        "lines": 24,
+        "path": "docs/combined-services.md",
+        "size": 4299
+      },
+      {
+        "lines": 184,
+        "path": "docs/deploy-directory.md",
+        "size": 24736
+      },
+      {
+        "lines": 45,
+        "path": "docs/files-publication.md",
+        "size": 6978
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/getting-started.md",
+        "reason": "file-budget",
+        "size": 1981
+      },
+      {
+        "path": "docs/memory-providers.md",
+        "reason": "file-budget",
+        "size": 5475
+      },
+      {
+        "path": "docs/pgbouncer.md",
+        "reason": "file-budget",
+        "size": 2348
+      },
+      {
+        "path": "docs/porter.md",
+        "reason": "file-budget",
+        "size": 29206
+      },
+      {
+        "path": "docs/sandbox-preservation.md",
+        "reason": "file-budget",
+        "size": 4278
+      },
+      {
+        "path": "docs/sandbox-resources.md",
+        "reason": "file-budget",
+        "size": 6537
+      },
+      {
+        "path": "docs/session-sharing.md",
+        "reason": "file-budget",
+        "size": 2278
+      },
+      {
+        "path": "docs/session-tape-spec.md",
+        "reason": "file-budget",
+        "size": 23146
+      },
+      {
+        "path": "docs/skill-registry.md",
+        "reason": "file-budget",
+        "size": 3963
+      },
+      {
+        "path": "docs/upgrading-runtime.md",
+        "reason": "file-budget",
+        "size": 2107
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 8256
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 828
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 12933
+      }
+    ],
+    "omitted_count": 14,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1808,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 20,
+      "complete": false,
+      "omitted": 14,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_cd51b6341fa65858b8a2edf4ec966152",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/yc-software/qm/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/da4f0a633de29ba8/manifest.json",
+  "package_id": "pkg_42e76b2308f024a26948992a365e51f7bda83b1a1dddf05b446396f46baed0a9",
+  "repo": "yc-software/qm",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6c32b84382ec8810864f6454e346f6464ef5bd56d121e4920cc9d9b5b8c45149",
+  "snapshot_id": "da4f0a633de29ba8",
+  "sources": [
+    {
+      "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+      "git_sha": "cb5a4175ce02af17af5eafce5d4e970fb6cb36bd",
+      "lines": 217,
+      "path": "README.md",
+      "repository": "yc-software/qm",
+      "sha256": "e64292e6d7adda826c7e3b0342619ffc92526aa4bf8b42288fbf4744d67b41f3",
+      "source_id": "src_aa7699a5d8a05d50b92ea81e54e642c3",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/README.md"
+    },
+    {
+      "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+      "git_sha": "d760de36046349fdb69029d30ccdf8808e33ea24",
+      "lines": 9,
+      "path": "deployment.md",
+      "repository": "yc-software/qm",
+      "sha256": "36768f49513292f391bc7e0ede57c6ae9e94f4492c6ad3b6d654f157891912bd",
+      "source_id": "src_f90acca1c14552b6a1e1dfa3748d6560",
+      "stored": "deployment.md-46128d29935e.md",
+      "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/deployment.md"
+    },
+    {
+      "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+      "git_sha": "c73c75ab5e1c372ce0ff808e9f4625167a790532",
+      "lines": 27,
+      "path": "docs/admin-model-verification.md",
+      "repository": "yc-software/qm",
+      "sha256": "a1e623bca519461c34c471179a8978569cea2a4fa734f30bd97e09abd70f53c9",
+      "source_id": "src_14ea236fd30f549f8f8853f8a22682b9",
+      "stored": "admin-model-verification.md-18c455cec56b.md",
+      "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/admin-model-verification.md"
+    },
+    {
+      "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+      "git_sha": "7c27222c78e59805b3568fef3f0a438a6344dd24",
+      "lines": 24,
+      "path": "docs/combined-services.md",
+      "repository": "yc-software/qm",
+      "sha256": "20853418c797728b6e7571eeb3cb3cbb722dcb3846d20025ee02e61ad450f377",
+      "source_id": "src_55ee532709e2527a9097030284bfac39",
+      "stored": "combined-services.md-0848359a1017.md",
+      "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/combined-services.md"
+    },
+    {
+      "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+      "git_sha": "7bdc47a4016f32666ce010d1b4493aaec6112ef2",
+      "lines": 184,
+      "path": "docs/deploy-directory.md",
+      "repository": "yc-software/qm",
+      "sha256": "678c8df19bb06b5b489b4b0704e18625e16820337fa58b3337da90c792006ec5",
+      "source_id": "src_352b0e355cbd54268718831d36e39e0e",
+      "stored": "deploy-directory.md-a560c2a7a601.md",
+      "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/deploy-directory.md"
+    },
+    {
+      "commit": "361a6c0095dcd3d156aca91353f3ffba0bb8b69b",
+      "git_sha": "8c0ab444b634c88f34146ac649f557c733731b43",
+      "lines": 45,
+      "path": "docs/files-publication.md",
+      "repository": "yc-software/qm",
+      "sha256": "80e6f4491c996b501184314d497f6338025a005066740c32ccdbbf60d113d6e7",
+      "source_id": "src_bfef783d90c75c68b7ad8f2d312a5a79",
+      "stored": "files-publication.md-398bdfc4f9e4.md",
+      "url": "https://github.com/yc-software/qm/blob/361a6c0095dcd3d156aca91353f3ffba0bb8b69b/docs/files-publication.md"
+    }
+  ],
+  "summary": "QM is a multiplayer agent harness deployable to Slack and web, with per-scope workspaces, a headless TypeScript core on Node/Fastify backed by Postgres, and a versioned deployment-directory contract driven by the `qm` CLI. Evidence covers architecture, security postures, deployment tooling, and admin model verification; no eval harness or contributor test instructions appear in the slices. Evidence coverage: 96 of 108 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

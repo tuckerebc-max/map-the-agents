@@ -1,0 +1,681 @@
+{
+  "applied_operation_id": "op_3a5c6935a3544b4db472177d696bfe3f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4d2913f676115c63175d7420003298bf0c2f4c4dcaf567f6aaaf7450faecf41b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ab96fd9bc4de4c1ce36dcf80cb30776dbf5a9bf46ba94ddc32046ba9c6be5f8"
+      ],
+      "text": "A plan document specifies implementing an AnthropicClient that connects to the Claude API and implements the LlmClient trait."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8a9f481a361e4db352e7be4578bbebd30f65180a428589d20b62cbd20b394a1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_184b2ae56c8bd4a9af4df792dcbe423d7673ea7398ca0fad0c4a12420ffeab34"
+      ],
+      "text": "The planned Anthropic client architecture uses reqwest for HTTP with SSE streaming support, serializing the crate's Request type to Anthropic's format and deserializing responses back."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6f7d2b7c65052d89c6ae52db5792aa8d750fc1abd4288f25120448ecd383697",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+          "line_end": 15,
+          "line_start": 7,
+          "path": "docs/plans/2025-12-25-mux-rs-design.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md#L7-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_750d84bb1852b390e6be6604fb6333ab05d42499a7e5fd641bf8f2cb9f2c0d05"
+      ],
+      "text": "The design doc records choices including a derive macro plus trait for tool definition, Tokio as async runtime, thiserror plus anyhow for errors, a policy engine for permissions, client-only MCP scope, and multi-provider LLM support (Anthropic and OpenAI)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38c90e7fd5f690ddaa369fbddcc36a4eaf01f1ac52a4a715c60debcededc9466",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+          "line_end": 153,
+          "line_start": 145,
+          "path": "docs/plans/2025-12-25-mux-rs-design.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md#L145-L153"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+          "line_end": 143,
+          "line_start": 141,
+          "path": "docs/plans/2025-12-25-mux-rs-design.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md#L141-L143"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+          "line_end": 139,
+          "line_start": 138,
+          "path": "docs/plans/2025-12-25-mux-rs-design.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md#L138-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e4e72768d481510aebe4671d132de89d5d737fd2be1a46d81bc197c57628db1",
+        "slc_5a1ed918ed7acfb643321d2b9d9c874e991dad1453328dfb893245f990ee746e",
+        "slc_b24c8226b6517e8f07daa748842799977cbef22ef26b2bfb8f1a78d031158a3d"
+      ],
+      "text": "The planned LlmClient trait exposes async create_message returning a Response, and create_message_stream returning a pinned Stream of StreamEvent items (MessageStart, ContentBlockStart/Delta/Stop, MessageDelta, MessageStop)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5656c8867753e79d23267572efe2c7a826684f20a3351adeb58efef548705d4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 41,
+          "line_start": 29,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L29-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a8494c8371e83d57800cb6b8a1e04d50da44d8f43f61010dc3c3f6405dfec942"
+      ],
+      "text": "The planned AnthropicRequest type carries model, messages, max_tokens, optional system and temperature, a tools list, and an optional stream flag, with optional fields skipped during serialization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7945a56905129521cee3b8cb1d35fb791c135df55b6e20731cb0a8040c3ab4b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 281,
+          "line_start": 272,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L272-L281"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23845b50b840237a86c5ca222b2449609346c2442d0cc1947fe8a95207f2e8a9"
+      ],
+      "text": "The plan defines AnthropicClient::from_env, which reads the ANTHROPIC_API_KEY environment variable and returns an LlmError::Api error when it is unset."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49d2698042b1f93fbf7983eec6f760d9b373456068bafe1748fbb0aaf2d9ab22",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 328,
+          "line_start": 320,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L320-L328"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 337,
+          "line_start": 330,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L330-L337"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 254,
+          "line_start": 253,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L253-L254"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3640a5200ededf5df918862ab822b5efe57db417c7b9e71080c3ed5f113b7a2f",
+        "slc_6ae181515874e560c94bd49c9d7c77b591c9481124c31a1f7c2904f9162315de",
+        "slc_e1355f18abcb055c2cc88d91fdb67404fa52eb3af317df1ed8cd119b7d9a0b8c"
+      ],
+      "text": "The planned client posts to https://api.anthropic.com/v1/messages with x-api-key, anthropic-version (2023-06-01), and JSON content-type headers, mapping non-success statuses to LlmError::Api."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6dfb632b798e53105c946cfc1ca7c8da04eb3373a557d80dafc78727f25c630f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+          "line_end": 48,
+          "line_start": 19,
+          "path": "docs/plans/2025-12-25-mux-rs-design.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md#L19-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ac2a7e4f20046450920b2336fba6dcc1575c57407de311ffe52cbb50e019289b"
+      ],
+      "text": "The planned crate layout includes llm (types, client trait, anthropic, openai), tool (trait, registry, result), permission (policy, handler), mcp (types, client, proxy), an error module, and a mux-derive crate providing a #[derive(Tool)] proc macro."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b5c9a133cda55566609c70ef9b7cba45a22518933f3f6e2267cde60e812d27f7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+          "line_end": 62,
+          "line_start": 52,
+          "path": "docs/plans/2025-12-25-mux-rs-design.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md#L52-L62"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "docs/plans/2025-12-25-mux-rs-design.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md#L64-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f0b0855d02f81b9a7580723c009849bc16596f883b9e757be1fe34abe74f009",
+        "slc_391d8963443883358c7f1fc124d3568c66e2edb46e2223045fd34d7c776c7460"
+      ],
+      "text": "Planned core dependencies are tokio (full features), serde with derive, serde_json, thiserror 2, anyhow, async-trait, reqwest 0.12 with json and stream features, futures 0.3, and glob 0.3, with tokio-test as a dev dependency."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6aa1c21faed7920792b2c1ec542a9cb66faba035de8b4ece1d73f24f1660f6aa",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 594,
+          "line_start": 588,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L588-L594"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 628,
+          "line_start": 625,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L625-L628"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 698,
+          "line_start": 698,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L698-L698"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 563,
+          "line_start": 539,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L539-L563"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 619,
+          "line_start": 618,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L618-L619"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12de0bd4502479b4fa3a36f683cadd4e65ac104b75393f04546f8d11083ecaa4",
+        "slc_3b8786b1f7db1d4999fcf844f30cea75dd99fa15f0cee13dccfca6cb42089103",
+        "slc_3bedc589fa24388e2c8874637671526efb640618ba2ec53448009f5aab476966",
+        "slc_d77269bf112e296a4419aeb5a56032cc72cb1635c8645625b18787a45a2df70f",
+        "slc_e8964357d26f0eae41f1951cb91933ba2109606d773aed564bf705a5f565b522"
+      ],
+      "text": "The plan adds streaming support via an AnthropicStreamEvent enum (message start/stop, content block events, ping, error) and an async-stream based SSE parser that buffers chunks and splits on blank lines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e347956f0a35de2f4c6ee0019230d1b3ac57e0caa4d8c39a259bee4c959289af",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f97512ed663e43d146f3075a3212ed5f71b1c19dde8943026b95a98448b2cb8"
+      ],
+      "text": "Repository development practice: the plan's header instructs the implementing Claude agent to use the superpowers:executing-plans skill to implement the plan task-by-task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7dc00bede7df14b813e9673b2e68a8f05319076c6345221e4fa13bb536363452",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 111,
+          "line_start": 110,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L110-L111"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 729,
+          "line_start": 728,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L728-L729"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 738,
+          "line_start": 738,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L738-L738"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 734,
+          "line_start": 733,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L733-L734"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 118,
+          "line_start": 115,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L115-L118"
+        },
+        {
+          "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+          "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+          "line_end": 515,
+          "line_start": 514,
+          "path": "docs/plans/2025-12-25-anthropic-client.md",
+          "repository": "2389-research/mux-rs",
+          "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md#L514-L515"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ae2e0762b541c50738bf23c1a21ec517c02944c5fffb6afed0f47e6756ba9b1",
+        "slc_68ad71df9c7403cd9524534a57f69119cfc1c798233953371cdfc5e941485279",
+        "slc_6e8c40a31bee0202e12ad126326684270824ed56cc55137d5d5fd4419f53965c",
+        "slc_9608173a09d23e6d79d8abb2d22aa13ad60950caea88b9b82dcfe589cb7b3764",
+        "slc_f1e6644e4e8355926d535e391c47ded9f058134e711ff1a285286f151e85b865",
+        "slc_f3d1fc222cfe5bb6afd5d99f2effdb887440ff8530f4dbfe1576553c34556878"
+      ],
+      "text": "Repository development practice: each plan task prescribes verification via cargo check or cargo test, final clippy and cargo fmt runs, and a git commit per task with conventional-commit style messages."
+    }
+  ],
+  "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 102,
+        "path": "README.md",
+        "size": 2858
+      },
+      {
+        "lines": 143,
+        "path": "docs/confining-mux.md",
+        "size": 5743
+      },
+      {
+        "lines": 777,
+        "path": "docs/plans/2025-12-25-anthropic-client.md",
+        "size": 20482
+      },
+      {
+        "lines": 528,
+        "path": "docs/plans/2025-12-25-mux-rs-design.md",
+        "size": 13221
+      },
+      {
+        "lines": 2421,
+        "path": "docs/plans/2025-12-25-mux-rs-implementation.md",
+        "size": 56973
+      },
+      {
+        "lines": 142,
+        "path": "docs/plans/2025-12-26-agent-test-tui-design.md",
+        "size": 4211
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/plans/2025-12-26-agent-test-tui-implementation.md",
+        "reason": "file-budget",
+        "size": 21733
+      },
+      {
+        "path": "docs/plans/2026-01-01-hooks-edit-resume-design.md",
+        "reason": "file-budget",
+        "size": 3592
+      },
+      {
+        "path": "docs/plans/2026-01-01-llm-backends-design.md",
+        "reason": "file-budget",
+        "size": 2291
+      },
+      {
+        "path": "docs/plans/2026-01-01-mux-ffi-full-feature-parity.md",
+        "reason": "file-budget",
+        "size": 7395
+      },
+      {
+        "path": "docs/plans/2026-01-01-mux-ffi-implementation.md",
+        "reason": "file-budget",
+        "size": 32158
+      },
+      {
+        "path": "docs/plans/2026-01-08-callback-llm-provider-design.md",
+        "reason": "file-budget",
+        "size": 6285
+      },
+      {
+        "path": "docs/plans/2026-01-08-callback-llm-provider-implementation.md",
+        "reason": "file-budget",
+        "size": 22115
+      },
+      {
+        "path": "docs/plans/2026-01-09-context-management-design.md",
+        "reason": "file-budget",
+        "size": 6911
+      },
+      {
+        "path": "docs/plans/2026-01-09-context-management-implementation.md",
+        "reason": "file-budget",
+        "size": 25714
+      },
+      {
+        "path": "docs/plans/2026-04-21-multimodal-input-design.md",
+        "reason": "file-budget",
+        "size": 9943
+      },
+      {
+        "path": "docs/plans/2026-04-21-multimodal-input-implementation.md",
+        "reason": "file-budget",
+        "size": 43172
+      },
+      {
+        "path": "docs/plans/2026-06-05-robustness-refactor-design.md",
+        "reason": "file-budget",
+        "size": 11926
+      },
+      {
+        "path": "docs/plans/2026-06-05-robustness-refactor-implementation.md",
+        "reason": "file-budget",
+        "size": 51501
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-12-tool-confinement.md",
+        "reason": "file-budget",
+        "size": 86106
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-12-tool-confinement-design.md",
+        "reason": "file-budget",
+        "size": 15592
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 7634
+      }
+    ],
+    "omitted_count": 16,
+    "omitted_slices": 430,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 140,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 22,
+      "complete": false,
+      "omitted": 16,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_a052d31d3c4359808667b47790bf9ac4",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/mux-rs/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/cac42de95f8bbe12/manifest.json",
+  "package_id": "pkg_8842cd43116b13297eb23ac602284bfd63e52a7d4e94d74c7997542341a06ec0",
+  "repo": "2389-research/mux-rs",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "31e221878aad5a5c501b065a1a997a4dc0e476cfa87294e86441cd00c57084b1",
+  "snapshot_id": "cac42de95f8bbe12",
+  "sources": [
+    {
+      "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+      "git_sha": "a9661c91d897d8d960ffe5a45acaafc8a111d772",
+      "lines": 102,
+      "path": "README.md",
+      "repository": "2389-research/mux-rs",
+      "sha256": "35dac0ff540e0fed26a7dbc6b5cdf4249e2a922c36da95479dfa69d996cb4270",
+      "source_id": "src_a163d826ada05b28ab8c28428922c537",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/README.md"
+    },
+    {
+      "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+      "git_sha": "97818672d7696baa701e3fdf86ac5d6e231e151a",
+      "lines": 143,
+      "path": "docs/confining-mux.md",
+      "repository": "2389-research/mux-rs",
+      "sha256": "a062bfac63a441e54f87550509abdff636154a476d03a0a28d3706084288daef",
+      "source_id": "src_389555fe5d655e52a4f80c2744f6ce87",
+      "stored": "confining-mux.md-c1d70dc2e437.md",
+      "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/confining-mux.md"
+    },
+    {
+      "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+      "git_sha": "34e57846ee87836f1553acd0e6ee0125fd627be0",
+      "lines": 777,
+      "path": "docs/plans/2025-12-25-anthropic-client.md",
+      "repository": "2389-research/mux-rs",
+      "sha256": "f81ffc4fe1b218a9e7558cd3d77ba3f3c8383d092f7be1dd9c866fd76910387d",
+      "source_id": "src_6d32a3da1e275d7fa6d6701246ebc9d8",
+      "stored": "2025-12-25-anthropic-client.md-2be77305cfc9.md",
+      "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-anthropic-client.md"
+    },
+    {
+      "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+      "git_sha": "2ba51430b66805bbe4c562a9f4726c7251b3fb66",
+      "lines": 528,
+      "path": "docs/plans/2025-12-25-mux-rs-design.md",
+      "repository": "2389-research/mux-rs",
+      "sha256": "1d0c0c26d0a2218c4fce5712aca47d32c9f6a5a073ce552efb74c6fc166505d4",
+      "source_id": "src_33303493fc5f5f178642db7545656c50",
+      "stored": "2025-12-25-mux-rs-design.md-9ba8cacca4b6.md",
+      "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-design.md"
+    },
+    {
+      "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+      "git_sha": "23952dd4cdb7c9301362a7d96b9a9eda94fced25",
+      "lines": 2421,
+      "path": "docs/plans/2025-12-25-mux-rs-implementation.md",
+      "repository": "2389-research/mux-rs",
+      "sha256": "e576ab26d82c1a1543b022ab703bd2f0d4aac1e5e51b910a57b5645a1ffb0920",
+      "source_id": "src_8c66a6fd5779540ea8a6ffd4a091239c",
+      "stored": "2025-12-25-mux-rs-implementation.md-03ccd4c20a06.md",
+      "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-25-mux-rs-implementation.md"
+    },
+    {
+      "commit": "c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b",
+      "git_sha": "61c6e8a21aa01a423539ba6a36831614d6c88a00",
+      "lines": 142,
+      "path": "docs/plans/2025-12-26-agent-test-tui-design.md",
+      "repository": "2389-research/mux-rs",
+      "sha256": "b2324b5a7818f04e27363b51761b30df6d4e413a8d89e39d8fa5764a0537676d",
+      "source_id": "src_259db14cc1aa5379a07ee0c4ff184c61",
+      "stored": "2025-12-26-agent-test-tui-design.md-8ab87ccb36c7.md",
+      "url": "https://github.com/2389-research/mux-rs/blob/c25c6c8e1acbf05d62386c6ea4d5cc5212acb49b/docs/plans/2025-12-26-agent-test-tui-design.md"
+    }
+  ],
+  "summary": "The evidence consists of two planning documents: a design doc for mux-rs (a Rust agentic infrastructure library with LLM clients, tools, permissions, and MCP) and a task-by-task implementation plan for an Anthropic API client. All claims describe planned/documented design rather than inspected shipped code. Evidence coverage: 184 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

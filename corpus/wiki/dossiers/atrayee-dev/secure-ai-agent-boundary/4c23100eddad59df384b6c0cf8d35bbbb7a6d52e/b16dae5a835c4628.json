@@ -1,0 +1,437 @@
+{
+  "applied_operation_id": "op_0db4ef49fab34fe0ac31a28d38d2e213",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_34b9b311a6ef775190fb0be996c219f21bf56cc61a471842843eda038f403b0d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61ae2014a1ab37140e9a0eea789ca8d76ec6a5feca3c95ba44463c72e0282fbc"
+      ],
+      "text": "CodeBoundary is described as a zero-trust compartment model in which each third-party model runs in an ephemeral container with strictly bounded data exposure, rather than sharing context across a common environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d7a05b84c717a4173ee472f4097b1d885163265179f1c4dad51c5e080c4342b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L44-L44"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L46-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d1c1da30ea1d58e23ad4477e24783009598340470864c7bcb04d529ba55ad38c",
+        "slc_e6f3d0acad2082ca3fe9f7f740e81ecfbbbc195cbbc56f0326d2c7414bf73231"
+      ],
+      "text": "The core mechanism is a data-boundary contract: a YAML/JSON configuration stored with the source that defines scope, redaction rules, visibility level, and output filters for model sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9cd113858aebf4b2f6ac0392362c0c8383ae29dba1ad398344a60334768cacde",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 94,
+          "line_start": 94,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L94-L94"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 98,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L96-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1548fc53308c4d2b196263e75930d779dbad1c69f8a2c371277ec632d8d90331",
+        "slc_c5dfce6177ebaf3c36a76bbfe457ee94330fd6ef7f3c13922ad1b7dcf69256d1"
+      ],
+      "text": "The primary entry point is a .codeboundary.yml file at the repository root, defining a default contract, an allowed-models list with names and fingerprints, and an audit log destination such as a local .cb-audit/ directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_064297d1f673aee996b989a02163d9e296554c50057dc4d65890217de91c79d3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L102-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d7972712b5b6b7a7452a954ebce6a120f356355fa4f08eda05fa52a6f70334e6"
+      ],
+      "text": "The tool is described as editor-agnostic, integrating with any tool that can run a CLI command before and after an edit or any IDE extension supporting LSP-like hook callbacks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ac1b5cda3007c5e6fee52cd8c10e1b8db36c243f8bbdd1acc3a774b012105c76",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L61-L61"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96e6509d394ca31598f95c4cd97a1c703d99feef0cb6a4436a1a9c49163ae9cf",
+        "slc_f58c7bcc91d9640363489c1611928f8dc2231f2fe7b2d312724e4b2c99fce29a"
+      ],
+      "text": "Hybrid sessions route low-sensitivity tasks to a fast local model and high-complexity tasks to a frontier API under one contract, with context stripped and rehydrated between models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d41f32b73134ab69bde4227b6b64838d1a633ac7b5b7be78c9ced7693ae07189",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L34-L34"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 38,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L36-L38"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 76,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L67-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18436f75069175657b89b5f576f884f7b1c1b44ee6a6ae2d050406a60c350d14",
+        "slc_8cb8b94bcea3d6ee8dfc459b8247e9eea70a71e81f1ec451d072898465e75d83",
+        "slc_91a800dde5b1006500c6f4902a5cc2bdd5b174272479122f862d9ee14208dbe2"
+      ],
+      "text": "Each model invocation runs in an isolated context bubble that starts clean, and model output goes to a staging area rather than the working tree until an engineer explicitly approves it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc203cdfaec97747e1029fdc095126ff4ece85270009e76edba74d593ad69251",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L55-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_80b010e0833e849becb8d1ec9b6a6393c43de21d52ae3d347bcee4e964b8ecca"
+      ],
+      "text": "The boundary engine is language-aware, claiming syntax-tree understanding for 12+ languages including Python, TypeScript, Rust, Go, Java, C#, C++, Ruby, PHP, Swift, Kotlin, and Shell."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cdf9165a326ce97d1c3437735199293e95d8b49efe3a9c77eaa75d1a79d9acd4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L86-L86"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L82-L82"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 84,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L84-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d7eeaca6f49b8a50d55e6aff0f0e45aa4288c1c966e672eea3150a967762c2c",
+        "slc_94a731e051c87c65e4e3bd5d1166b33f89b40accbf7055a1465cb957a6328698",
+        "slc_cc4850278d079414138f6dfeb7c99d57c062f78d4439642a1a7fbe695eb6d1cb"
+      ],
+      "text": "The architecture uses a 'diplomat's pouch' metaphor: the engineer declares contract contents, the model receives only declared data, and output stays sealed until the engineer unseals it; extra context requests are logged as boundary violation attempts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ddbe2efa17f631cbc88fe30dcda9258170a684ac38587de544c4886cef2840d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L120-L120"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L122-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cf0fc2015a612f8980d9799d50f413b6367243af6b6aaf7470748c0944859c8",
+        "slc_ae06f28528e0e5d449ae94db4c6c1e2d6a82725a7652b920487d43158915b641"
+      ],
+      "text": "The README explicitly disclaims that the software is a security enhancement, not a guarantee: it cannot prevent all leakage such as side-channel attacks or undocumented model behaviors, and authors disclaim liability for data exfiltration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_277a71ec135d91e705431fac4a18cd068217db1fd5990249f7852b76325ac122",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L92-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c635d09f29c19843771f9abf4378999dc98c3e5f34c370dab507d5cb85e6c33"
+      ],
+      "text": "The framework is positioned as a decoupled configuration layer requiring no daemon, kernel patching, or heavyweight control plane, overlaying an existing Git workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_001604271bdae2a9af449ffe9b1217b0ec65c65f9ebbbc3dc9c934533268fff1",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L10-L10"
+        },
+        {
+          "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+          "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "atrayee-dev/secure-ai-agent-boundary",
+          "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_61ae2014a1ab37140e9a0eea789ca8d76ec6a5feca3c95ba44463c72e0282fbc",
+        "slc_84da33a0094f33e24733644a18ecfe035f98c77ff90868d8acf68d8ed7bae9f0"
+      ],
+      "text": "The project targets organizations integrating frontier AI or local LLMs into engineering workflows that must avoid leaking proprietary code or secrets to model endpoints."
+    }
+  ],
+  "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 136,
+        "path": "README.md",
+        "size": 10905
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_51fbc1a2c0e6518586ea0484823ab70e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/atrayee-dev/secure-ai-agent-boundary/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/b16dae5a835c4628/manifest.json",
+  "package_id": "pkg_8e6cfc17cdbb4d3133a38ac4b48dc8b5a01b813e834dc8d9caed7a47efb1ab26",
+  "repo": "atrayee-dev/secure-ai-agent-boundary",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d0071d14c21134737a3ed4786e63648c232d480bb0c2dee65a427356336b4fee",
+  "snapshot_id": "b16dae5a835c4628",
+  "sources": [
+    {
+      "commit": "4c23100eddad59df384b6c0cf8d35bbbb7a6d52e",
+      "git_sha": "4a93cf7993237c445fd9ce88f79705250c72b42b",
+      "lines": 136,
+      "path": "README.md",
+      "repository": "atrayee-dev/secure-ai-agent-boundary",
+      "sha256": "eab5862f9c3e51ec2a293c416dadd61487e92addb24f82d0ae9fa218c49174d4",
+      "source_id": "src_f7df6f4e7f27556a9bb945bea9de1d99",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Atrayee-dev/secure-ai-agent-boundary/blob/4c23100eddad59df384b6c0cf8d35bbbb7a6d52e/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only README.md content describing CodeBoundary, a zero-trust data-boundary layer for AI-assisted coding, including its contract system, compartmentalized sessions, hybrid model routing, and disclaimers. No code, tests, or contributor instructions are present in the evidence.",
+  "superseded_claim_ids": []
+}

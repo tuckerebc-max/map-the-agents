@@ -1,0 +1,718 @@
+{
+  "applied_operation_id": "op_d57b3e21d3704a5fb6b74250da44395b",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9fe52d417bff1dcbcaf9720854b2ae3a8116a656cab72e36cd4a974bc8176685",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c065f699838edb3da69b7be94f09ca73783b62f1a009a2956e8a7e4ef7285bc"
+      ],
+      "text": "Fireproof is described as a lightweight embedded document database with encrypted live sync, usable in any JavaScript environment via a unified API for React hooks and a standalone core API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_927b24419fede3dac7c1521f78bea5292ed99546ad2d28e23d440a5b310d18f0",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_87139fcd46f6d3746617f7a4268b7b670bb2fe0be4d73d20193174bed3c299e3"
+      ],
+      "text": "The ledger enforces cryptographic causal consistency and integrity using a hash history, storing and replicating data as content-addressed encrypted blobs suitable for syncing via object storage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a2ee7315024daa014f5779c6cbe59f6fee2dafc6bdb4f446ed13269be0e916c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 65,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L64-L65"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 59,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L58-L59"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 19,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L16-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4212f93545793ea79d1393206ad17ce4160bc1cef66b6eed6f60774476272cc8",
+        "slc_a1a774627a25945f766eae4d7ed0b965dc4aa4b4c67fbf8bbd5e904487802cd5",
+        "slc_b0ebee60d87b6e556f2a88aff8acdb0af0212b6d4ad7dda3e4aaf74ab8d3c689"
+      ],
+      "text": "React hooks useLiveQuery and useDocument are exposed through useFireproof, with useLiveQuery supporting options like descending order and a result limit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd7164f5b24b81119b7f59274ebab4720ba91eb8e002d733c49b2e097d024ad8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L126-L126"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 136,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L133-L136"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 122,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L121-L122"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 131,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L128-L131"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L124-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23bd1213fe462e1c5493efbe206a0047d8b5aeacce72e269a62c4058133cae0e",
+        "slc_58cd0b23d71c045192a9d04cceb6473201e9408b74b828166bd9b7ce35834c7c",
+        "slc_6030ce0dddf92b51c43df60030d2f4c9e0108a7e79bea736cb142edb200ce07e",
+        "slc_bd6c3aa498a44e2840d40425d954b45c9b98f0f38435e58ddbb3b1bfc55ed955",
+        "slc_c46b0ceb1e9752ff621241306e17455175141a825deb8ce9bfa549a91690c898"
+      ],
+      "text": "The core API exposes a document-database style interface (fireproof(name)) with put, get, subscribe, and query methods including range queries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_119b7bb1f416fe372d255c002a419b9af6d1ed480d039b0ababa51a610c9faac",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L89-L89"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 115,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L115-L115"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 100,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L91-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08373e287742b6265e6ddb2ff97e407e2c76f1ba8e4121ec17f4544748f1e413",
+        "slc_542719b1b4e40292149dc45629e80b4ff7b980be8fc7bb9861b199bcf2d03ade",
+        "slc_6b94fb18aaae41915a7be54aad5a1e60f2dec26745356c13c28b85b2c718e599"
+      ],
+      "text": "Documents can embed files via a _files property, and an ImgFile React component loads and displays stored images with standard image-element props."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abba4dbd2bec5ec30d02ff0b5f4008ee7ef696c61afcfd60d861e7e3d65a6191",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 222,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L222-L222"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 173,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L171-L173"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 226,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L224-L226"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 165,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L165-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_020ce31ec70b2fee77683ff462f6c3049ccb588a44eab3c127b821154bd9e074",
+        "slc_1b3043da2f5f9478b2d277084d4ef45b6abf0e78be670aaba8da21e09bdf0602",
+        "slc_61855eee8f7daca9dff2722c3fc1259420134b1614fa03f18f31c581f360eefe",
+        "slc_e7c6cb6a0cc392bc2dee829e078d1ff77bd9a03262167a56f3350c02c8dd50a7"
+      ],
+      "text": "Log output is controlled by the FP_DEBUG environment variable or logger.setDebug, and FP_FORMAT selects jsonice (multiline JSON), yaml, or json (singleline, the default)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9814aad5aead847e6ee7c5677345fac4f62ac004bc22fad5491416df075a267c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 47,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L45-L47"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L25-L25"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 41,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L39-L41"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L27-L29"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 35,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L33-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4168071a39ad9a319ecf573f3a02beeece88853806e81fafce8326c174b566c1",
+        "slc_85abdccc1636b09b814d608b976d985e6c9a33d48852d9823d013ac6141d1dd8",
+        "slc_9fce340679aa4a3830e1bee8b054efb1d074c006c7b74dcea1adfda45c7a0e32",
+        "slc_a1647b0e0e9f8904d47e577791e6e88c1ee0c2a3231d7202d550334a6127786b",
+        "slc_f104114c542e7329b6070d10ba878f8c6ecd96d23bd544024dea8ebfdc696b68"
+      ],
+      "text": "Distribution is via npm packages use-fireproof (core plus React hooks) and @fireproof/core, also loadable from ESM.sh or a jsDelivr browser script tag exposing a global Fireproof."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_46a82d223be21e55788ed57c6f4c899b259a13c84a467c9328ae7ecec14a1e7c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L147-L147"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 145,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L142-L145"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a1b9705b9b577c647e3c7713253cb537d7db02689587d24a9e947a2ae9b4e01",
+        "slc_e7da47bab8e762956a57e862fb69f5f158aecffd426cecd515dfd4d58d545533"
+      ],
+      "text": "The project claims multi-writer safety, CRDT-based real-time collaboration, encryption, and a small package size with no wasm, targeting browser, cloud, and edge environments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2f902b0fd6a98ec86f0abaef60242d32fa8f29dc1b228af39210faf22387729a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 212,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L210-L212"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 206,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L204-L206"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 186,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L181-L186"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 190,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L190-L190"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 200,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L198-L200"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 194,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L192-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24b430659274f24b0686dde1455c77fc335b22bed0a8acab1adc268125d0bbad",
+        "slc_932faa71913a4936fe02695dedf1f5dff0680afd7ed71cbecd7894aa32d4f03d",
+        "slc_bdfb6229231947b2f7ef80a6c8208021e763e776726c296437beabe14d798c5c",
+        "slc_bfd38b3e62f673383f2928ffacabd533b3f756dd4a9c0fd76f26c902b8759f10",
+        "slc_d718476d6b241554aa7788a0a74c6a3e221b0e2d4f22f518aca250686c3f59c1",
+        "slc_ef76342b221bf2b4310a84cc898ec789379b7313c8a02684ba53298decce70b3"
+      ],
+      "text": "Repository development practice: the test suite runs with pnpm run test across projects, with pattern-based filtering, per-file React component tests, and FP_DEBUG env presets for vitest."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b839f6346e76d8e0d7ebb5b41f8e588a346c248e992edde377cab525b9631813",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 253,
+          "line_start": 251,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L251-L253"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 8,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L3-L8"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 249,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L249-L249"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1eaa50bea43f9bb3f174e1bbd212bf66bfa4b5f43074e812421d06a253225ac0",
+        "slc_5c52fe271a363e661b351ad0d8ed5e8ff7cf1c6aa2195b5399e79c4e44823394",
+        "slc_f9208dafccee4a6c07e4ea6cacd87e4cd28c55c8473dc565107fcf27a7530322"
+      ],
+      "text": "Repository development practice: a CI workflow badge links to ci.yaml on GitHub Actions, and docs are generated with pnpm run build:docs, which the README cautions pushes directly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_902843c54db66c07b075c91fe5ba530f52f83a62988468a56533c4f468284b50",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 238,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L238-L238"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 241,
+          "line_start": 240,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L240-L241"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 245,
+          "line_start": 243,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L243-L245"
+        },
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 236,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L236-L236"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55ca4f84f9c24cba12962377eca5d857c408f59e940bc0c56a5bca1bcb5bbf59",
+        "slc_59a37311213910b56de847ded796f03099077f90e5376f9619bf067db4e094a4",
+        "slc_8ad40210f40ef943b3a16d8289adb6a4d0ef0c1c4e05a9c58166d7c1d3eca003",
+        "slc_9460bcfeea2a36bca66c5071b2baebdff24abb81b8070bb2bad8079f0cd86d94"
+      ],
+      "text": "Deno compatibility requires specific run flags, and the README notes tests are not currently run under Deno, marking Deno publishing as TODO."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c72f93e36b498bea826406cf7c68fef14eadf50dd23ce6f10250ab718f87563c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+          "line_end": 232,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md#L230-L232"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_933756709f21aa7ffd679f4b5b15f3bcfac522e5fd2ae93ace49b5ba9472cbb7"
+      ],
+      "text": "By default the FP_STORAGE_URL can include extractKey=_deprecated_internal_api to bypass the key-extraction security check; a warning is emitted and more secure key management is only planned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_853f95f046657846674dd79451c0ab71264a5c331c03595fe56301e8157950bc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "69008f5dfc7e079bca2241f7ef29b05f3eb2365a",
+          "line_end": 32,
+          "line_start": 9,
+          "path": "CHANGELOG.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/CHANGELOG.md#L9-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a88254c55df3c6c43bb190c6db9fcd9c34078716f137bafed94b72a13985c32"
+      ],
+      "text": "The 0.20 series changes the Gateway interface to pass semantic runtime objects instead of Uint8Arrays and Url, renames Database to Ledger with no functional change, replaces memfs with a memory:// URL scheme, and adds a GatewayInterceptor for logging, encryption, or compression."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4df4c55fe6b47733f3208fd5ea5929f9553efab2a9311583bdcc1ec9a90d9975",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+          "git_sha": "69008f5dfc7e079bca2241f7ef29b05f3eb2365a",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "CHANGELOG.md",
+          "repository": "fireproof-storage/fireproof",
+          "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/CHANGELOG.md#L5-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a6bb1949534faae5db9632837be45cae14eeec1c2f9e27a67f6edb55a50554c"
+      ],
+      "text": "From version 0.19 onward the database format is stated to be stable with no backward-compatibility breaks, though internal APIs changed between the 0.19 and 0.20 series."
+    }
+  ],
+  "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 269,
+        "path": "README.md",
+        "size": 9452
+      },
+      {
+        "lines": 32,
+        "path": "CHANGELOG.md",
+        "size": 2208
+      },
+      {
+        "lines": 201,
+        "path": "LICENSE.md",
+        "size": 10947
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 647,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_3d12aa132e845c50ba54d6e6d21bc550",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/fireproof-storage/fireproof/404e6c5c7f28109c103626c78da845eb95cabcfa/11291582979dda34/manifest.json",
+  "package_id": "pkg_73437f40e997d2e25f247321fe2b50245e584fdcbf7630cd0bdf3184ab1382a8",
+  "repo": "fireproof-storage/fireproof",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "cebc56083f11041ed573e4809598e2733a1f5a5589ce392503181e1dff001ee6",
+  "snapshot_id": "11291582979dda34",
+  "sources": [
+    {
+      "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+      "git_sha": "69008f5dfc7e079bca2241f7ef29b05f3eb2365a",
+      "lines": 32,
+      "path": "CHANGELOG.md",
+      "repository": "fireproof-storage/fireproof",
+      "sha256": "a34c9d9eccf08a4c5abd7353d7c2f6625d58c77839ce1c9e3056f2286c83caf7",
+      "source_id": "src_1e881265e22e5188bb66425f1da7e0bf",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/CHANGELOG.md"
+    },
+    {
+      "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+      "git_sha": "1c51f9e3ce161b906cf4d6a0980b554d974915fe",
+      "lines": 201,
+      "path": "LICENSE.md",
+      "repository": "fireproof-storage/fireproof",
+      "sha256": "2038c500571a983b0721134cb064a9eca63cfad31cb61ee15f4cd1eb1fefa4f2",
+      "source_id": "src_3965ebb8cb2159cb804e78269bd55614",
+      "stored": "license.md-4673a3aba018.md",
+      "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/LICENSE.md"
+    },
+    {
+      "commit": "404e6c5c7f28109c103626c78da845eb95cabcfa",
+      "git_sha": "6ff5dc25b7b2507f6a46a108f105518751ac0187",
+      "lines": 269,
+      "path": "README.md",
+      "repository": "fireproof-storage/fireproof",
+      "sha256": "70385c42371fb67e5e2649ca8a74e835daffbd40b628f2caf5d08d9a1a42b1c3",
+      "source_id": "src_41ebcae2d9675ab68d8bc923d54a526b",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/fireproof-storage/fireproof/blob/404e6c5c7f28109c103626c78da845eb95cabcfa/README.md"
+    }
+  ],
+  "summary": "README and CHANGELOG evidence describes Fireproof as an embedded JavaScript document database with encrypted sync, React hooks, and a core API, plus debugging/logging configuration and repository testing instructions. No source code slices are present, so claims are documentation-based.",
+  "superseded_claim_ids": []
+}

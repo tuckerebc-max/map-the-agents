@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0707f126ddaecea3908de8cce39a5b9d9b743e28a547e1e5dde62cf52a7aa2fe
+- clm_0e5c65a5f83a2f8f61e998d1dc8051d28918a78f9111e0b7711ba0aae5150e8c
+- clm_139af722d641765e06102a34b79f07fcbd173fd9e1f336b8fe2cf4e055c645e9
+- clm_4354df2c66fca2a8a051be85864e2fc8b18947e1e5550c73beedabeb8b226ee0
+- clm_626a316d06dbb7623bb1e571087a3af8450e71dc2cc21e998b84bd7b3801d1a2
+- clm_679ef622b467298283b7c8bb9e00843c131bb668c3c01447ac8d229363a45304
+- clm_6f460a68f770910367b48ae7e4e9f815391d8b7a7b9b45bd3e2fa149886465d2
+- clm_709d309b198df576f606e6af6f740b58aead3524c8d51bfaa114081ac1011434
+- clm_87ca730efa1d9fe6ab0bcd3f89805a1b759f4929b8fdd78256393e0629272474
+- clm_8f51319fe06d48e12e29f488bae3973f72bbab7ae627bbfd60afe833ce4cb0c3
+- clm_a96814219c2c3881607dc4a6d540fffa933bdb3c6484f45011dbcc4af020bc12
+- clm_ef92a2c52270253cf575972246765e73d36efe62c92582a23b59fa0a5963c1b4
+maturity: draft
+page_id: pg_4c11314c3405581788f13cf548679f02
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: firetix/vibe-coding-penetration-tester
+updated_at: '2026-09-14T03:51:28Z'
+---
+
+# firetix/vibe-coding-penetration-tester
+
+<!-- rcw:begin owner=entity:ent_3fe9d3134f7956a293587d3b44dfb777 block=evidence -->
+- firetix/vibe-coding-penetration-tester is mentioned in this evidence. [@claim:clm_0707f126ddaecea3908de8cce39a5b9d9b743e28a547e1e5dde62cf52a7aa2fe] [@claim:clm_0e5c65a5f83a2f8f61e998d1dc8051d28918a78f9111e0b7711ba0aae5150e8c] [@claim:clm_139af722d641765e06102a34b79f07fcbd173fd9e1f336b8fe2cf4e055c645e9] [@claim:clm_4354df2c66fca2a8a051be85864e2fc8b18947e1e5550c73beedabeb8b226ee0] [@claim:clm_626a316d06dbb7623bb1e571087a3af8450e71dc2cc21e998b84bd7b3801d1a2] [@claim:clm_679ef622b467298283b7c8bb9e00843c131bb668c3c01447ac8d229363a45304] [@claim:clm_6f460a68f770910367b48ae7e4e9f815391d8b7a7b9b45bd3e2fa149886465d2] [@claim:clm_709d309b198df576f606e6af6f740b58aead3524c8d51bfaa114081ac1011434] [@claim:clm_87ca730efa1d9fe6ab0bcd3f89805a1b759f4929b8fdd78256393e0629272474] [@claim:clm_8f51319fe06d48e12e29f488bae3973f72bbab7ae627bbfd60afe833ce4cb0c3] [@claim:clm_a96814219c2c3881607dc4a6d540fffa933bdb3c6484f45011dbcc4af020bc12] [@claim:clm_ef92a2c52270253cf575972246765e73d36efe62c92582a23b59fa0a5963c1b4]
+<!-- rcw:end owner=entity:ent_3fe9d3134f7956a293587d3b44dfb777 block=evidence -->
+
+## Researcher notes
+

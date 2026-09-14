@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_0df47d975cdc23dc08387538cf4bb018ab4562951821beca44eadcfd2fd0eba9
+- clm_1c7a412d04c6cdc6984942f9a3252677087daf41a45c099cdb49b295a9337fd8
+- clm_32903c6fdc7fb3cb06e556856eb61b0ac824ee7b287516b6f0b139169959f8a0
+- clm_5f9ce1327f24b7f9591307ecbe9bc2c11354400c959f36a98a49c74e1db70cfe
+- clm_6f1a3903af13faf53d0ee0aacc49fd405506897471a85c165496422c082af0aa
+- clm_794d79b4b52db184fa61c88bf9d639501fb4218950c3db78e5682a94f78c1926
+- clm_8a920caed05636898c6195b2cd4c34d6a221c07314b7da9740885be904f8350c
+- clm_9997d548a71a51c0ccdd288b03cb4867702b5325eb0de48effdc3d16b335b35a
+- clm_b5fad5ae2600cade3b829bb71365a8d5530839beeb2315d312647ed8c9baf659
+- clm_dbb3b4a94ff7321d3e0373b92966d5495d7ff303e99f7bc3d503d5c446e30109
+- clm_dfbd746dd540f31f691fad9599af24ef14c939ce8c98f83fc97835c678e84005
+- clm_f2c947a9f19b1d784c2b0d0e6cd2b452be5122ca16e1475def0aba4e9f4ff19c
+maturity: draft
+page_id: pg_28694ed44264589e9ebf412f027397fe
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: sumitsingh4411/repo-agent
+updated_at: '2026-09-14T03:15:53Z'
+---
+
+# sumitsingh4411/repo-agent
+
+<!-- rcw:begin owner=entity:ent_378c362e834950cd81a5a0dfe472d4f4 block=evidence -->
+- sumitsingh4411/repo-agent is mentioned in this evidence. [@claim:clm_0df47d975cdc23dc08387538cf4bb018ab4562951821beca44eadcfd2fd0eba9] [@claim:clm_1c7a412d04c6cdc6984942f9a3252677087daf41a45c099cdb49b295a9337fd8] [@claim:clm_32903c6fdc7fb3cb06e556856eb61b0ac824ee7b287516b6f0b139169959f8a0] [@claim:clm_5f9ce1327f24b7f9591307ecbe9bc2c11354400c959f36a98a49c74e1db70cfe] [@claim:clm_6f1a3903af13faf53d0ee0aacc49fd405506897471a85c165496422c082af0aa] [@claim:clm_794d79b4b52db184fa61c88bf9d639501fb4218950c3db78e5682a94f78c1926] [@claim:clm_8a920caed05636898c6195b2cd4c34d6a221c07314b7da9740885be904f8350c] [@claim:clm_9997d548a71a51c0ccdd288b03cb4867702b5325eb0de48effdc3d16b335b35a] [@claim:clm_b5fad5ae2600cade3b829bb71365a8d5530839beeb2315d312647ed8c9baf659] [@claim:clm_dbb3b4a94ff7321d3e0373b92966d5495d7ff303e99f7bc3d503d5c446e30109] [@claim:clm_dfbd746dd540f31f691fad9599af24ef14c939ce8c98f83fc97835c678e84005] [@claim:clm_f2c947a9f19b1d784c2b0d0e6cd2b452be5122ca16e1475def0aba4e9f4ff19c]
+<!-- rcw:end owner=entity:ent_378c362e834950cd81a5a0dfe472d4f4 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,665 @@
+{
+  "applied_operation_id": "op_9372a6bcf64f44f4a5ae781885ac7217",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_50f6ec0cc6e769ea015cc3873815b15dd42b7877b3175c4d91ed2a302bad7814",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2216702eb911329fea79bc1ecb76e4797f2f1d30b7b32ac417b747c1bfc1bde1"
+      ],
+      "text": "The README describes Agent Deck as a command center for managing many AI coding-agent sessions (such as Claude Code and OpenCode) from one terminal, with grouping, search, forking, git worktrees, cost tracking, and a phone-controlled conductor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70f4b0d5f44843c0dd4bc024cdcdb29bc44ff9c048174e8026a6843e8af78840",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 321,
+          "line_start": 321,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L321-L321"
+        },
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 326,
+          "line_start": 323,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L323-L326"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1fb17e274f3e1521366e40c96e1353e970cca206d65ce36c916992e79058ed46",
+        "slc_dede137c8ceb09bc1d6e3a89ac2e69e1d3cf421e5b1ea0411ee0452769916499"
+      ],
+      "text": "Documentation states each session's git worktree is an isolated working directory on its own branch, letting multiple agents work on one repository without conflicting, and a dedicated command merges the branch, removes the worktree, and deletes the session once a task is finished."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5db25d72190bd966017afcfbc976d6926a46a05b8b7082c6122b946ba8bc2c59",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 373,
+          "line_start": 372,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L372-L373"
+        },
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 384,
+          "line_start": 384,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L384-L384"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7ad7fb140254a5ed1d5a32c44d8ab2f185c13e6ad0f59444976b4d97a8019b3",
+        "slc_fa6897cba77794ff138420356aa3f485f49e5fbb15cb83758bfc1e2a1b618e59"
+      ],
+      "text": "A documented worktree-setup script runs automatically once a worktree is created, under a 60-second timeout; if the script fails, documentation states the worktree is still created and only a warning is shown, rather than the session being blocked."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_147a10f8112622078b21254da35dcbcba78b2db2b03c73ddeeb5bad6e08a9e77",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 472,
+          "line_start": 472,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L472-L472"
+        },
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 466,
+          "line_start": 466,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L466-L466"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d07f45ad4035132ff23ce954b4dee3068cbbfdcd50616e3d456d53550019b9b",
+        "slc_e68e5e883ce5c23a8fe49a3cf47d9c2924fcbde216dfd4f27877d2cab41da7f5"
+      ],
+      "text": "The documented Docker sandbox bind-mounts the project directory read-write into an isolated container and shares host tool authentication automatically, except that the macOS Claude Code login keeps its own sandbox credential to avoid disrupting the host's OAuth session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6d8dad287b08e63c3f61e696b03bf72e1932f058303dfc12ba6a3c1034f29a8",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 348,
+          "line_start": 348,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L348-L348"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23cb215975a0046d18e607319b14f3b7dedebf55b2daed22a4c6b017f5912e96"
+      ],
+      "text": "Documentation states that inheriting sparse-checkout patterns into a new worktree requires Git 2.32 or newer, while the default, non-inheriting checkout behavior carries no such version requirement."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1a9e72c3ae1e7b08d45b5a7e07c36ed6a9a2a76b51a78200c48d49599a291c7c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 150,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L150-L150"
+        },
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 154,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L152-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce03a58d4d763354ec8961ccf4da5b8cfb93ee24ce1a41eb2237d30a84d5f774",
+        "slc_e059453afa0257474fa1c6d8ab587450d96ff99416889e9737a4994bc5c5faea"
+      ],
+      "text": "Documentation states forking a Claude, OpenCode, Pi, or Codex session inherits the parent conversation history through each tool's own native fork support, and that Codex forking specifically needs a Codex CLI build with fork support, which the project reports verifying against one named CLI version."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8da53ad7e76084d500a4ac33facd157cfe01a56f606413c1643533d545884d90",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 400,
+          "line_start": 400,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L400-L400"
+        },
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 432,
+          "line_start": 432,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L432-L432"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_488a92bf551ed1466500b0626a09586aa5fb91afbddc98b8b0351fd30697cf53",
+        "slc_93f19e681a48964800c23414834eabd428c2e895d21c7a2a2e86b35946a6b7a3"
+      ],
+      "text": "The docs describe supporting two bare-repository worktree layout conventions, distinguished by whether the bare git directory is named .bare inside a project folder or is itself the project root, with worktree placement and config resolution differing between the two."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_538d46c91e0c77de6e61fd85265c6a8dd3c3f83e5d77c5a424303c3aff083298",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L28-L28"
+        },
+        {
+          "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+          "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "asheshgoplani/agent-deck",
+          "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md#L34-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a5356988e5e33f173d66b748e37f5478b6fdc7d2aa270fcf6a5183e30ac24679",
+        "slc_f5b7486e1268734c884fc9b11a2c6b6ed7baf0756e8539a49a8ea415d1a1adaa"
+      ],
+      "text": "Repository development practice: the project states every incoming pull request is validated - applied, built, and tested - within about a day, and points contributors to CONTRIBUTING.md and a pinned onboarding issue."
+    }
+  ],
+  "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1125,
+        "path": "README.md",
+        "size": 67970
+      },
+      {
+        "lines": 37,
+        "path": "SECURITY.md",
+        "size": 1931
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 661560
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "byte-budget",
+        "size": 7084
+      },
+      {
+        "path": "PHASE1-PICKS.md",
+        "reason": "byte-budget",
+        "size": 6071
+      },
+      {
+        "path": "RESULTS.md",
+        "reason": "byte-budget",
+        "size": 3970
+      },
+      {
+        "path": "TELEMETRY.md",
+        "reason": "byte-budget",
+        "size": 7558
+      },
+      {
+        "path": "llms-full.txt",
+        "reason": "byte-budget",
+        "size": 47501
+      },
+      {
+        "path": "llms.txt",
+        "reason": "byte-budget",
+        "size": 1403
+      },
+      {
+        "path": "docs/COMMAND-CENTER.md",
+        "reason": "byte-budget",
+        "size": 1210
+      },
+      {
+        "path": "docs/PER-GROUP-CLAUDE-CONFIG-SPEC.md",
+        "reason": "byte-budget",
+        "size": 22315
+      },
+      {
+        "path": "docs/REMOTE-COMMANDS.md",
+        "reason": "byte-budget",
+        "size": 7881
+      },
+      {
+        "path": "docs/SESSION-PERSISTENCE-SPEC.md",
+        "reason": "byte-budget",
+        "size": 20960
+      },
+      {
+        "path": "docs/SSH-ACCOUNTS.md",
+        "reason": "byte-budget",
+        "size": 1113
+      },
+      {
+        "path": "docs/TELEMETRY-DESIGN.md",
+        "reason": "byte-budget",
+        "size": 3459
+      },
+      {
+        "path": "docs/WATCHER-SETUP.md",
+        "reason": "byte-budget",
+        "size": 15232
+      },
+      {
+        "path": "docs/conductor/README.md",
+        "reason": "byte-budget",
+        "size": 14029
+      },
+      {
+        "path": "docs/conductor/discord.md",
+        "reason": "byte-budget",
+        "size": 3840
+      },
+      {
+        "path": "docs/conductor/slack.md",
+        "reason": "byte-budget",
+        "size": 3113
+      },
+      {
+        "path": "docs/conductor/telegram.md",
+        "reason": "byte-budget",
+        "size": 4635
+      },
+      {
+        "path": "docs/design/2026-07-26-proactive-session-lifecycle.md",
+        "reason": "byte-budget",
+        "size": 19118
+      },
+      {
+        "path": "docs/design/2026-07-26-session-identity-and-group-purpose.md",
+        "reason": "byte-budget",
+        "size": 17643
+      },
+      {
+        "path": "docs/design/2026-08-11-persist-custom-tool-session-id.md",
+        "reason": "byte-budget",
+        "size": 3389
+      },
+      {
+        "path": "docs/feature-copilot/copilot-session-issues-and-improvements.md",
+        "reason": "byte-budget",
+        "size": 7055
+      },
+      {
+        "path": "docs/internal/path-selector-ux-rfc.md",
+        "reason": "byte-budget",
+        "size": 24766
+      },
+      {
+        "path": "docs/internal/state-db-schema.md",
+        "reason": "byte-budget",
+        "size": 24672
+      },
+      {
+        "path": "docs/perf-budget-suite.md",
+        "reason": "byte-budget",
+        "size": 5139
+      },
+      {
+        "path": "docs/plans/2026-02-14-vagrant-mode-design.md",
+        "reason": "byte-budget",
+        "size": 30111
+      },
+      {
+        "path": "docs/plans/2026-06-13-fleet-fanout-cli-design.md",
+        "reason": "byte-budget",
+        "size": 8112
+      },
+      {
+        "path": "docs/plans/2026-06-13-fleet-fanout-cli-plan.md",
+        "reason": "byte-budget",
+        "size": 18510
+      },
+      {
+        "path": "docs/rfc/EVALUATOR_HARNESS.md",
+        "reason": "byte-budget",
+        "size": 20381
+      },
+      {
+        "path": "docs/rfc/PLUGIN_ATTACH.md",
+        "reason": "byte-budget",
+        "size": 29999
+      },
+      {
+        "path": "docs/rfc/SESSION_TEST_XDG_ISOLATION.md",
+        "reason": "byte-budget",
+        "size": 4689
+      },
+      {
+        "path": "docs/session-id-lifecycle.md",
+        "reason": "byte-budget",
+        "size": 3776
+      },
+      {
+        "path": "docs/specs/HARNESS-SWITCH-IMPLEMENTATION-CONTRACT.md",
+        "reason": "byte-budget",
+        "size": 2115
+      },
+      {
+        "path": "docs/specs/HARNESS-SWITCH-LAUNCH-PLAN-MATRIX.md",
+        "reason": "byte-budget",
+        "size": 3760
+      },
+      {
+        "path": "docs/specs/HARNESS-SWITCH-SAFETY-LIMITS.md",
+        "reason": "byte-budget",
+        "size": 1387
+      },
+      {
+        "path": "docs/specs/SESSION-SWITCH-ACCOUNT-SPEC.md",
+        "reason": "byte-budget",
+        "size": 3822
+      },
+      {
+        "path": "docs/superpowers/discussions/2026-05-17-track-b-runbook.md",
+        "reason": "byte-budget",
+        "size": 16891
+      },
+      {
+        "path": "docs/superpowers/discussions/2026-05-18-followup-meta-plan.md",
+        "reason": "byte-budget",
+        "size": 8195
+      },
+      {
+        "path": "docs/superpowers/discussions/2026-05-18-post-merge-gap-analysis.md",
+        "reason": "byte-budget",
+        "size": 13280
+      },
+      {
+        "path": "docs/superpowers/discussions/fork-worktree-with-state-pr-body.md",
+        "reason": "byte-budget",
+        "size": 26151
+      },
+      {
+        "path": "docs/superpowers/discussions/fork-worktree-with-state-testing.md",
+        "reason": "byte-budget",
+        "size": 12485
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-14-fork-worktree-with-state.md",
+        "reason": "byte-budget",
+        "size": 156157
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-18-fork-with-state-followup.md",
+        "reason": "byte-budget",
+        "size": 49273
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-04-fork-state-tui-valid-findings.md",
+        "reason": "byte-budget",
+        "size": 32769
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-04-xdg-base-dirs.md",
+        "reason": "byte-budget",
+        "size": 31907
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-06-fork-defaults-and-config.md",
+        "reason": "byte-budget",
+        "size": 79302
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-07-fork-review-remediation.md",
+        "reason": "byte-budget",
+        "size": 33326
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-07-harden-verify-persistence-xplat.md",
+        "reason": "byte-budget",
+        "size": 32955
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-13-group-creation-order-sort.md",
+        "reason": "byte-budget",
+        "size": 22598
+      },
+      {
+        "path": "docs/superpowers/specs/2026-05-14-fork-worktree-with-state-design.md",
+        "reason": "byte-budget",
+        "size": 40105
+      },
+      {
+        "path": "docs/superpowers/specs/2026-05-18-fork-with-state-followup-design.md",
+        "reason": "byte-budget",
+        "size": 25700
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-06-comprehensive-quick-fork-design.md",
+        "reason": "byte-budget",
+        "size": 16577
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-13-group-creation-order-sort-design.md",
+        "reason": "byte-budget",
+        "size": 8609
+      },
+      {
+        "path": "docs/terminal-shortcuts.md",
+        "reason": "byte-budget",
+        "size": 6982
+      },
+      {
+        "path": "docs/testing/capability-gaps.md",
+        "reason": "byte-budget",
+        "size": 4489
+      },
+      {
+        "path": "docs/testing/capability-video-gaps.md",
+        "reason": "byte-budget",
+        "size": 2943
+      },
+      {
+        "path": "docs/tmux-reaper.md",
+        "reason": "byte-budget",
+        "size": 6734
+      },
+      {
+        "path": "docs/tools/deepseek.md",
+        "reason": "byte-budget",
+        "size": 15098
+      },
+      {
+        "path": "docs/verification/CAPABILITY-CHECKLIST.md",
+        "reason": "byte-budget",
+        "size": 87481
+      },
+      {
+        "path": "docs/verification/README.md",
+        "reason": "byte-budget",
+        "size": 2469
+      }
+    ],
+    "omitted_count": 60,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2405,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 62,
+      "complete": false,
+      "omitted": 60,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_63a4c5eb93b35b91bc585685ec09276e",
+  "facets": {
+    "components": 2,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/asheshgoplani/agent-deck/7d2302fb8a41c5fcab7a441d56729b4b6547885a/5d1b37ace8d9fdef/manifest.json",
+  "package_id": "pkg_a37c97bb7daa83bbc6f6cb1f06f4c98223728f2e33ffb0f8fc818cf7c9519940",
+  "repo": "asheshgoplani/agent-deck",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3fc0486d4a5a6b7f75786060aeb338877fe8717ee8730557d7f84043ee535778",
+  "snapshot_id": "5d1b37ace8d9fdef",
+  "sources": [
+    {
+      "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+      "git_sha": "6ede88bbe785874f754a4e7590434bc119f1caba",
+      "lines": 1125,
+      "path": "README.md",
+      "repository": "asheshgoplani/agent-deck",
+      "sha256": "9216155044ea06ca36b0b897ba68454d762ab380838a8c3a519e626685f7cff3",
+      "source_id": "src_f336b6278b9559e28285acfeedc96a95",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/README.md"
+    },
+    {
+      "commit": "7d2302fb8a41c5fcab7a441d56729b4b6547885a",
+      "git_sha": "33ab0512ca0ae5a2a529dd973efca0e6e271a29f",
+      "lines": 37,
+      "path": "SECURITY.md",
+      "repository": "asheshgoplani/agent-deck",
+      "sha256": "9f91df07fb8941e57881cef9e606dfbdc8124d53946f5a7addc75929cd1c8bf9",
+      "source_id": "src_b3cf3ef0df345050873edfe3c6e4dd60",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/asheshgoplani/agent-deck/blob/7d2302fb8a41c5fcab7a441d56729b4b6547885a/SECURITY.md"
+    }
+  ],
+  "summary": "Agent Deck is documented as a terminal command center for many AI coding-agent sessions, with git-worktree isolation per session, a documented setup/destruction script contract around worktree lifecycle, a Docker sandbox mode, session forking, and two supported bare-repository layout conventions.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,420 @@
+{
+  "applied_operation_id": "op_3c7c03ab69fb46bfa223785e77333412",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d67d2cf16386f40107a22d686416c754a008965e48b8fda88689273b9406e20",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 90,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L81-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea6af056145f0136cf29cb4235c714dd884e8fa3609277ad92af58ad5e248041"
+      ],
+      "text": "The CLI exposes commands including hook worktree-create, build-lock, land, sync, promote, preview, port, and prune, each documented with its purpose."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8299b266e0a3b8e291f6c1407e0593361a9d20231bb3a408f730ac0c3d2818fa",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L23-L26"
+        },
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 113,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L101-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e98eafd5ebb2e9d5a276b5668224807545c7e0261fc6a0b96f30dece8f13702",
+        "slc_9bd3a17c5432e525e27c6493f54c6e1077520dae106871b648d50e9f15420282"
+      ],
+      "text": "An init command writes a config file, CLAUDE.md instructions, a .claude/settings.json hook wiring, Husky pre-push hook if present, and package.json scripts like land, sync, promote, preview."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_42f2d40aa060954133b2e3a998c95b76bbdce66389ca7c174fe7a3fd5c269496",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 61,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L47-L61"
+        },
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 45,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L43-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f2bdf044b71efdad9883aa047fc45f9efe3f9d7d08331f66b9ecce315f38401f",
+        "slc_f9816b819eec870b711c6c88995c66185b3248576f2a34aa47290b42620fddc3"
+      ],
+      "text": "Configuration lives in a single .mjs file with fields for branchPrefix, worktreeSuffix, portBase, integration/production branches, protectedBranches, regenerableFiles, symlinks, buildOutputDirs, checkCommand, and checksRequired."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28477543ca06e8381941057e161dc27365868ec2e470d09ddbd2cbc6c7dca687",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 66,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L63-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6fc309e66ae6443f05d3639eea12e3a881ae2859ce788e8a9378ad533b84b14d"
+      ],
+      "text": "Malformed configuration fails loudly at command load time, listing every problem (empty branch names, negative port, identical integration and production branches) rather than failing later."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f2cf10b8af9e939498d56fef386700b3262b8296964bbd4623851d0cfc138052",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 90,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L81-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea6af056145f0136cf29cb4235c714dd884e8fa3609277ad92af58ad5e248041"
+      ],
+      "text": "The land command rebases and pushes a lane onto the integration branch through a FIFO queue so two lanes are never mid-push simultaneously; agents can run it themselves."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a0e10b4bc82e4c5175ff39eb3517c93b07f8522741993a31ef5d8eaf0c99e35b",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 90,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L81-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ea6af056145f0136cf29cb4235c714dd884e8fa3609277ad92af58ad5e248041"
+      ],
+      "text": "A WorktreeCreate hook plugs the tool's numbered lanes into Claude Code's native worktree creation, and build-lock serializes builds machine-wide across lanes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c5447b7d4a3e98ce7f3a6aa9204b70692432ad4db6f735acf6e9f83daa08132",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 97,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L92-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d43960f994cfe8b764a46849516c3783e0cecf1a4183c91e9eba618b214b08aa"
+      ],
+      "text": "A pre-push hook rejects direct git pushes to the integration branch and runs checkCommand before allowing a landing; with no checkCommand configured, every push fails by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_edd6b3f90e66cb6c5fa9c17134462523f5cb276206ecf7c83712140f24a87903",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 126,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L125-L126"
+        },
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 119,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L117-L119"
+        },
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 123,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L121-L123"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e4659daa9e1784fd3752365afad852eb2469fbd6edc3a0372982b237c4d93a7",
+        "slc_b779047b607b743408ea75cd5f0ba68c275b5b03caf040c3eafa9f995eddb937",
+        "slc_eb3f59084ad0d61cd10da7e6998787bd1e7a1ea1e2f942974632a443a8943687"
+      ],
+      "text": "Blocked pushes can be bypassed via a single environment variable (CLAUDE_CODE_MERGE_QUEUE_EMERGENCY_PUSH=1), which the README notes is a convention, not a guarantee against an adversarial agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eede019b57cccd75d2bc8473b64439d724ba912b6367947fdb9dd131c21374bf",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 147,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L130-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fa86ac5591f52e22e275ffbf65e968810276a9a59b9eb3f074fd8d894a2d12aa"
+      ],
+      "text": "No human review occurs before landing; checkCommand passing is the only gate, and the tool cannot distinguish a real test suite from a trivially passing command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6f657d7ee898b7731a68c0198890d613ca0c504c9b7f9dd5dea2be7c5ee40f24",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 147,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L130-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fa86ac5591f52e22e275ffbf65e968810276a9a59b9eb3f074fd8d894a2d12aa"
+      ],
+      "text": "The queue is single-machine: the FIFO lock lives in local temp storage, so concurrent landings from two machines only get git's ordinary non-fast-forward rejection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3570e6f71bd9beea564a6a38c32ea12780b5d02d3657cd2e4ad253528b637b26",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 147,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L130-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fa86ac5591f52e22e275ffbf65e968810276a9a59b9eb3f074fd8d894a2d12aa"
+      ],
+      "text": "Locks are crash-safe via PID liveness rather than timeouts, and a slow checkCommand caps throughput since the FIFO lock is held for its entire duration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62b445cae0724ccc6faf14d5ae3d3c2e55c19b7814a2d0128a95f2eb25523b2a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f77757479cab8031774495c4207647709199a954",
+          "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+          "line_end": 13,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "funador/claude-code-merge-queue",
+          "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md#L5-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e6807aa732076b11cd5a28019c0db740202eb62dfb9fef90219de1652e6f2b0"
+      ],
+      "text": "README badges indicate TypeScript 5.x, Node >=18, MIT license, and zero runtime dependencies; the package is published on npm as claude-code-merge-queue."
+    }
+  ],
+  "commit": "f77757479cab8031774495c4207647709199a954",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 151,
+        "path": "README.md",
+        "size": 8125
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 60,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_4b7d3680a7a35584aa2dd5b0c71ed67d",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 3,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/funador/claude-code-merge-queue/f77757479cab8031774495c4207647709199a954/52448af2613d1623/manifest.json",
+  "package_id": "pkg_0584792d36c36796ea423ffcb18f9f42ca55f38fa5e4b1e6fcbbc9f4f26b7846",
+  "repo": "funador/claude-code-merge-queue",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "3a9169ae1a349918f3ff99c629480998c4120c898d489b581a87475234b18207",
+  "snapshot_id": "52448af2613d1623",
+  "sources": [
+    {
+      "commit": "f77757479cab8031774495c4207647709199a954",
+      "git_sha": "47dcce35403637733bd07c073d98800511c0373b",
+      "lines": 151,
+      "path": "README.md",
+      "repository": "funador/claude-code-merge-queue",
+      "sha256": "a215a47503c5d18a225e1dd087f1a97a977348b9a3534213ab74e7263448c4f8",
+      "source_id": "src_4da4077fefe657f8a56b600441983fef",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/funador/claude-code-merge-queue/blob/f77757479cab8031774495c4207647709199a954/README.md"
+    }
+  ],
+  "summary": "A local, zero-cost merge queue npm package (TypeScript, Node >=18, zero runtime deps) that serializes landings from parallel Claude Code agents via numbered worktree lanes, a FIFO push queue, and a pre-push check gate. Evidence is README-only; behavior claims are documented, not code-inspected.",
+  "superseded_claim_ids": []
+}

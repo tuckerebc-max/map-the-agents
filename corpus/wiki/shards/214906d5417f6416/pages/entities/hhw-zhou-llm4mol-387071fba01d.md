@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_455cd1c95dc1ba316e3ef174cb75e6ea3e604c1393f6776e6537445e03e261c0
+- clm_5322f1ddf732f62b38d7a603796a66b518ba8625425d9d23651fd3e76537ff67
+- clm_733b8aa74d286855f48e614ee7961f7250f3aab9bde04a73152aaf78b98fee56
+- clm_7aa020a45d95f61f7ca81840df55e53fc7fc6d152c61abbbf3403dc5f457b6b3
+- clm_a99686ae1defe384fea858b16eef4f5111fc3b28d3510cef6e9f6c29075e6f37
+- clm_ac2fa96b7f84b39b6570e474ac00a0fdaade369d54270cc9a71bc7f5b4f1a88b
+- clm_ccc382a30e794e71a441f80bda809243694b522b6b7dccd17825b376f03c014c
+- clm_e4ccfa931b8a14de998887c35824c587e4caefb69bcc2fc9046a520437c3054c
+- clm_f88ad07699b524dc6bbf91436e4de706b4846ad252e2ce75ee157f2aab8aa765
+maturity: draft
+page_id: pg_97d552421f095cd594ba387071fba01d
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: hhw-zhou/llm4mol
+updated_at: '2026-09-14T03:57:06Z'
+---
+
+# hhw-zhou/llm4mol
+
+<!-- rcw:begin owner=entity:ent_1c49f91e8939530fb507b470ca05c2ad block=evidence -->
+- hhw-zhou/llm4mol is mentioned in this evidence. [@claim:clm_455cd1c95dc1ba316e3ef174cb75e6ea3e604c1393f6776e6537445e03e261c0] [@claim:clm_5322f1ddf732f62b38d7a603796a66b518ba8625425d9d23651fd3e76537ff67] [@claim:clm_733b8aa74d286855f48e614ee7961f7250f3aab9bde04a73152aaf78b98fee56] [@claim:clm_7aa020a45d95f61f7ca81840df55e53fc7fc6d152c61abbbf3403dc5f457b6b3] [@claim:clm_a99686ae1defe384fea858b16eef4f5111fc3b28d3510cef6e9f6c29075e6f37] [@claim:clm_ac2fa96b7f84b39b6570e474ac00a0fdaade369d54270cc9a71bc7f5b4f1a88b] [@claim:clm_ccc382a30e794e71a441f80bda809243694b522b6b7dccd17825b376f03c014c] [@claim:clm_e4ccfa931b8a14de998887c35824c587e4caefb69bcc2fc9046a520437c3054c] [@claim:clm_f88ad07699b524dc6bbf91436e4de706b4846ad252e2ce75ee157f2aab8aa765]
+<!-- rcw:end owner=entity:ent_1c49f91e8939530fb507b470ca05c2ad block=evidence -->
+
+## Researcher notes
+

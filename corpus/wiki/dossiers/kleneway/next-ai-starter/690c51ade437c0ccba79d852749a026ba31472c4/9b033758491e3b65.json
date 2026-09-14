@@ -1,0 +1,516 @@
+{
+  "applied_operation_id": "op_48ca757bf45146ada88e92899bcd827e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f97af19ac147dbf56ad02bab2fafe752eb552bc6af47054faa4baa4680c248fd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 32,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L27-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7402a3dd2aed9b2303f7e5924fc5195dab3ad37842d19016f1f93a08430e9a2a"
+      ],
+      "text": "The template is built on Next.js 14 with the App Router, TypeScript, tRPC for end-to-end type-safe APIs, Prisma as ORM, and NextAuth.js with a Prisma adapter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0ea5f3800ff6e23c9f990d32d8341daad2d764a386a2222e3434d84766854635",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L57-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f90d3ce623307fd4a5190a1a42d0e1ecd0d753c951aa6d36d9e5051e82312246"
+      ],
+      "text": "Supabase serves as the Postgres database, but the README says the Supabase client is not used directly, so it can be swapped via DATABASE_URL and DIRECT_URL environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c1ee8d9c661d045999cd35cbbfc3197659a4f59192b215b3f6b633172a6a21d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L19-L19"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 53,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L48-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44c8b686d705f69e880339893c85d465d3603d143243c07bdc35df31ebabff51",
+        "slc_5d672f87c2ce0b7aa3184aa13c8a833f3873ad32aed3df80806d1bf420d9ae51"
+      ],
+      "text": "The stack includes Resend for transactional email, AWS S3 for file storage, and Inngest for background jobs and scheduled tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9ede29cd8e34e7e7a3503f70202c99527abe95a8d252991ec72f0737ede3f06",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 53,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L48-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d672f87c2ce0b7aa3184aa13c8a833f3873ad32aed3df80806d1bf420d9ae51"
+      ],
+      "text": "Multiple AI provider integrations are listed: OpenAI (GPT-4 and o-series), Anthropic Sonnet-3.5, Perplexity web-search models, and Groq for fast inference."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05bfc9239ece7221faa52a6499b2fe51990744d78264460f0ca741d4694b6d4e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L36-L39"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L43-L44"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L64-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0925a0c17d385a3e9b537c06d46098a801bc896617fb635080fe9071c6ff3e48",
+        "slc_488061c71b1bce5e18e4eff7543817e576f8b05789ac31550f43f26d68960bdf",
+        "slc_d2397e3e317018d7035dd1c994d102787c6ded2d41ac3c8cb91ff34f2dae9429"
+      ],
+      "text": "UI tooling includes Tailwind CSS, Framer Motion, Lucide Icons, dark mode, react-toastify notifications, Storybook, and the Geist font."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef39686d6c4f8022a4a764d4a059094abb55243f879baf4e010680abb896cdd4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d55d93308fe04264f35129290fb25d1a2a197335e8fc2f71e808ef088a878e8"
+      ],
+      "text": "The template is explicitly designed to be optimized for AI coding assistants such as Cursor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ebbc939ba91534a0fd62ac5add9731acdef6b241ee4c0b7a3c227360e33e3be",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 147,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L140-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_770464f9406940c05d86c19ccc0d3b19808a60b01b269f5d05c9f3ade41ab1ea"
+      ],
+      "text": "The project structure places App Router pages and API routes in app/, UI components in src/components, tRPC routers in src/lib/api, and the database schema in prisma/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f3a4f64d4f0a7ccaa9bff3cecd8dca0e2779dbff4458be896491bff67fbb6ed",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "a4f7261da79003c65e6e4c1791b245e8a1ed9497",
+          "line_end": 8,
+          "line_start": 5,
+          "path": "AGENTS.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/AGENTS.md#L5-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d77c669fe47e5012b0c255f9b64c94cb011d4b33dde7abc405941aacb4b9d46"
+      ],
+      "text": "Repository development practice: agent instructions require files to stay small (≤500 LOC), functional typed components, updated top-of-file docs, and running npm run build after all changes, fixing errors but ignoring warnings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ca8ebb1c9d7e571ec8f2e35af89854226bc179284d54dc6fbea2aa26d376025",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 112,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L112-L112"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 95,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L91-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46c3a0c1d7d95f8acd9be2e963705a05b9bba5f0578f3781d66212c0b7da69d3",
+        "slc_49bb57b18e16f085c35e1537ae225a37219c198bcac83467223c5bfe33a69679"
+      ],
+      "text": "Repository development practice: the repo ships Cursor custom slash commands (/start, /continue, /review, /document, /refactor) defined in .cursor/commands to drive agent task workflows, with new commands addable in that folder."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33199e111d6c4e88a183ba58d5071a4754007c92d61dcfb7482339392c4435b8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 74,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L70-L74"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 83,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L80-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_051e0df0b42cb103a6acdcf4f2fd58bccdd3e3bba1c4313e9bc4d44d104f4d24",
+        "slc_dd5c31b54c524811e7e04c1704b77605bde5ce81e5f962678d5501a59a0739e3"
+      ],
+      "text": "Repository development practice: agent-helpers/ provides agent instructions, a task checklist, a scratchpad, and logs, and the README suggests gitignoring the logs, sample-code, and scratchpad paths to avoid conflicts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f5e9fd48d60b947a74460202e1c4245a76bdfd9b0d27e3cff402435fc972035",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "a4f7261da79003c65e6e4c1791b245e8a1ed9497",
+          "line_end": 22,
+          "line_start": 20,
+          "path": "AGENTS.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/AGENTS.md#L20-L22"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "a4f7261da79003c65e6e4c1791b245e8a1ed9497",
+          "line_end": 34,
+          "line_start": 33,
+          "path": "AGENTS.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/AGENTS.md#L33-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e548c3b1e8ca26e176a2bd3ae22255197e2dd4f843b9835f354cc2faca4e2c7",
+        "slc_963dc1a608e0b8d2adf83daf38b56621ff5020e5d7e8181247839d1d061bb788"
+      ],
+      "text": "Repository development practice: backend conventions forbid raw SQL and prisma db push, mandate migrations via npx prisma migrate dev, and route AI calls through generateChatCompletion in src/lib/aiClient.ts, defaulting to GPT-5."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b66088473de904a305f758103636ac1f76a9d9b0eb21283a64551deec099d06b",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 128,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L126-L128"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 117,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L116-L117"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 124,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L123-L124"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 151,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L151-L151"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 121,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L119-L121"
+        },
+        {
+          "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+          "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+          "line_end": 134,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "kleneway/next-ai-starter",
+          "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md#L132-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d94d373846b58951b37ef3639d4e8784ed961751ae08f0b122bbdc314118ee5",
+        "slc_4c53bcf088a5e7c3d137cc5dd51f4fcc510df788e59f4e70366064b7139fe67f",
+        "slc_9865d26c2ee623e16c356ea9a8f7391ebb780fd2463c77a7f62188468ebc1aa5",
+        "slc_b44038cf6dabb1ff19f66f3247a18c7913419d796e644ed4efecfe17e75dd020",
+        "slc_c4a6592b0932e7fe3b57d0b69b17ec65bed5a7d743cbd32e16b5c3065e7af83d",
+        "slc_d7aeede8ef356bbaba7437b620e7f24182b08a6d0ff83d7a915836e7ffd49f24"
+      ],
+      "text": "Repository development practice: getting started involves forking, npm install, copying .env.example to .env, running npx prisma migrate dev, and npm run dev, with deployment optimized for Vercel."
+    }
+  ],
+  "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 189,
+        "path": "README.md",
+        "size": 7916
+      },
+      {
+        "lines": 39,
+        "path": "AGENTS.md",
+        "size": 2396
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 70,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_ca35eccc33345a7ea57458b09764fdf6",
+  "facets": {
+    "components": 0,
+    "dependencies": 5,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 5
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/kleneway/next-ai-starter/690c51ade437c0ccba79d852749a026ba31472c4/9b033758491e3b65/manifest.json",
+  "package_id": "pkg_3313d1fb8c5444ae61c64d90c2738000b2d4590a011768da679a7fa96e81fbba",
+  "repo": "kleneway/next-ai-starter",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f3e8975d59a364d564e2ac9922b989b65318dbf202e175750f6e7b45a693f81a",
+  "snapshot_id": "9b033758491e3b65",
+  "sources": [
+    {
+      "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+      "git_sha": "a4f7261da79003c65e6e4c1791b245e8a1ed9497",
+      "lines": 39,
+      "path": "AGENTS.md",
+      "repository": "kleneway/next-ai-starter",
+      "sha256": "c228ba062ab652a4d55a9ef54fe3517daf3ba0a4520ec23d711143df48702507",
+      "source_id": "src_36330e19c34e51beb867973b2745b71c",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/AGENTS.md"
+    },
+    {
+      "commit": "690c51ade437c0ccba79d852749a026ba31472c4",
+      "git_sha": "9d301581bf8b635cb87661e2ae8c06c6a40d02e5",
+      "lines": 189,
+      "path": "README.md",
+      "repository": "kleneway/next-ai-starter",
+      "sha256": "a0614e9229abef7df0108ccaa3e5a6769ca407f16b0779486a1954975aa6fa3a",
+      "source_id": "src_16a7176017e85754956c4f2782ab7f4f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/kleneway/next-ai-starter/blob/690c51ade437c0ccba79d852749a026ba31472c4/README.md"
+    }
+  ],
+  "summary": "The snapshot is a Next.js 14 full-stack template (tRPC, Prisma, NextAuth, Supabase, Inngest, multiple AI providers) documented via README, plus agent-helper files and Cursor slash commands intended to guide AI coding agents working on the repo. Evidence is documentation-only; no source code slices are present.",
+  "superseded_claim_ids": []
+}

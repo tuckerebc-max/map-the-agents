@@ -1,0 +1,600 @@
+{
+  "applied_operation_id": "op_94f9df5b820048c8a00466826ef6c6af",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2afbe2b1533dd434c447dca90c4445759bd3d25cf06e02820392bbdf6c6b4d34",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "1596d85a55aec5ccbbaf8a1835bf2008672004d2",
+          "line_end": 71,
+          "line_start": 65,
+          "path": "CHANGELOG.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/CHANGELOG.md#L65-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e6699486be45655c81d0b18d3f9fbd91516800b40e3d67d47e39edf2a2ce1a13"
+      ],
+      "text": "The agent-facing comments CLI supports listing pending comments, showing one with 10 lines of post-image context (configurable via --context), and an atomic resolve that refuses partial success; --json returns a stable shape with drift state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f3064bee04729bf4c796e1e78a648cce9ce2c3deebf958eee41190820959691",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L95-L95"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "1596d85a55aec5ccbbaf8a1835bf2008672004d2",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "CHANGELOG.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/CHANGELOG.md#L15-L15"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05213915e75f69c47cd21e2fad56d95a42871f283b98b1e1f5b444c73341ed42",
+        "slc_28ee77c75c8897a463836b8eac3d56558c4a5c14b6622d7202c14e305f3af30a",
+        "slc_437a55ec7ea7d381e44fbfedb1d247cf312c148934df142ed21dd49c9d5e1905"
+      ],
+      "text": "Review comments are stored in .dunk/comments.json with the file path, hunk anchor line, body, and a context hash so comments survive small nearby edits; the file is meant to stay local and gitignored, and is deleted once the last comment is resolved."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8399ffe6af39d20a9818d54b9ff307f3fed6597de2ab583009ff85382ce9a56",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L95-L95"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L109-L109"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 14,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L9-L14"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L93-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05213915e75f69c47cd21e2fad56d95a42871f283b98b1e1f5b444c73341ed42",
+        "slc_7db7f6506bea508c4cf001dbe738eb467a5c7e5e86092df21361aff3ffdde28e",
+        "slc_d1c45f20ab6495afad9255c0184a907ef5ecfb3bce4bdc2c3a9771377db57479",
+        "slc_f180d9f10830fff1c6d4e234abcbd19385bb973c1903fc3b701520ea2a3a9604"
+      ],
+      "text": "Comments are hunk-scoped rather than line-scoped: the user picks a hunk with J/K and presses 'a' to comment, and drifted comments surface at the top of the diff (clearable with d/D) instead of getting lost."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8664445b26972b0ec469f10cc5ae017773e322c5504d1f6f10ebd61952619f15",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L7-L7"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "1596d85a55aec5ccbbaf8a1835bf2008672004d2",
+          "line_end": 88,
+          "line_start": 85,
+          "path": "CHANGELOG.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/CHANGELOG.md#L85-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a249c93392e9a99ab79ba1e27bc2bde0678f9c9b51ac18b928cf6a19fb9fd832",
+        "slc_e6a49b5d4d9831428cda044369aa6163fac7fd99d286ac99cde0c29ae81e3138"
+      ],
+      "text": "dunk is a hard fork of hunk that keeps the OpenTUI/Pierre diff-viewer foundation while removing the daemon, MCP, and session-broker layers; agent integration flows through the on-disk comments file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c095273fbfb88b4109d2437695fdc23559f7163bd0008987f4a9c09ac43c2f3",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L5-L5"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 79,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L79-L79"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 105,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L105-L105"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L101-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33008646bfc4e8ac68df9883ce7055a3746b5cb9c67e46e9a3a3a2640ede6a49",
+        "slc_7deb641d15b68aca19ddf525873cb44e6edf90de18b802f7efa1d13c6ae613f9",
+        "slc_b107e49db7ee7e3cbfcf19e5a3c286379aba5ed5fb644ed65421f517391485ef",
+        "slc_cbba9b64df57177bf87f3c063e22d0293b01dde67da7726ca673a0622197d070"
+      ],
+      "text": "The intended workflow pairs a human reviewer running dunk diff --watch with a coding agent in another terminal: the agent reads comments, fixes code, resolves entries, and the watched diff reloads in place as code and comments change."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16e079f5acfe6bb64bd02f41e52fe79b9d0113d22d02742b48fd679678db01b4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L179-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bd777918e756c7c1e002f25ad364cfad41150523e3d763f5406297323e29472"
+      ],
+      "text": "dunk exports a DunkDiffView component from dunkdiff/opentui so the diff renderer can be embedded in other OpenTUI applications."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9081a390d5a93146fc361fe53be3cf4fe312949944ae4d430eed9c8c740fe9d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 22,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L20-L22"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L24-L24"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L7-L7"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36f774970768a3937d2f2353cd2c9cc5b3f86b9d8886ac3c5ebc62e9c7172aa8",
+        "slc_3da7f5c031c84ae908fde7e8f7dff772f7bc82adf80501e701467cdcd9b93d74",
+        "slc_a249c93392e9a99ab79ba1e27bc2bde0678f9c9b51ac18b928cf6a19fb9fd832",
+        "slc_babf6275255281ff135b447f8d3b588820046734e71d558e77654cdba6479fdb"
+      ],
+      "text": "The product builds on the OpenTUI and Pierre (@pierre/diffs) diff-viewer foundation, requires Node.js 18+ and Git, and ships via npm (dunkdiff) with prebuilt macOS and Linux binaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4e2bd97a5beb2a2c38461cf865b1eaa531deb9d7787c6c34e20fc84ee47bdde",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 175,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L175-L175"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 161,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L160-L161"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 173,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L165-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21c42cf0780cd4cd44cdc3e40ae7e8878570af87ea3eef888e7086a085be7706",
+        "slc_86495629986c3eb4951e0b0b7a575b7f607687cc7a1fdd025e10c8df42601726",
+        "slc_f3b0fd3de45487d75759943514f0b745a609141ac08cf22719a1ced93b7ad946"
+      ],
+      "text": "Configuration is read from ~/.config/dunk/config.toml or .dunk/config.toml, with keys for theme, layout mode, watch, exclude_untracked, line_numbers, wrap_lines, and selection_auto_copy; a CLI --watch flag overrides the config watch value."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41b168109285f4ce36c520ef4a2f804bc6990ae5b9ce98dbe9ebf79a685b5a07",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md#L148-L148"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "1596d85a55aec5ccbbaf8a1835bf2008672004d2",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "CHANGELOG.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/CHANGELOG.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d733fa1fc43ea765382ce5df195006a88c6f093661a4157a27a5282b56d90dd",
+        "slc_650681210ae88bd4cb82cfa07604130c006547dd9ac555d59d59131d4dcc509c"
+      ],
+      "text": "Branch-review base resolution follows an explicit order: the --branch=<ref> flag, then [branch_review] base in .dunk/config.toml, then origin/HEAD, then main/master/trunk fallbacks, with the resolved base shown in the status bar."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa9ff5d7bd3ed30d8dbd53b6d86946ea6df2bce15ee4324886370c036ac65cf2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "1596d85a55aec5ccbbaf8a1835bf2008672004d2",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "CHANGELOG.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/CHANGELOG.md#L34-L34"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "1596d85a55aec5ccbbaf8a1835bf2008672004d2",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "CHANGELOG.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/CHANGELOG.md#L27-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4769676c3502d8b65ccf7bf330e904e01d0f89bb6f9e4a91c30493ca22dff61f",
+        "slc_6ce32664adc93bab38066fbfd7f6fab8bcee5c489fba6891762cab59e8af2be6"
+      ],
+      "text": "Ctrl-Z suspension of dunk is a no-op on Windows, per the changelog; Jujutsu (jj) support was also removed, so dunk now targets Git only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_631fd3355e18989d5de54925b12b32c57df75ab32b7e7c9412722830f1a008f0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "e33f44330545a39fb05934b4dbf1c026d31778e9",
+          "line_end": 117,
+          "line_start": 106,
+          "path": "AGENTS.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/AGENTS.md#L106-L117"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "e33f44330545a39fb05934b4dbf1c026d31778e9",
+          "line_end": 76,
+          "line_start": 70,
+          "path": "AGENTS.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/AGENTS.md#L70-L76"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "e33f44330545a39fb05934b4dbf1c026d31778e9",
+          "line_end": 158,
+          "line_start": 158,
+          "path": "AGENTS.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/AGENTS.md#L158-L158"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "e33f44330545a39fb05934b4dbf1c026d31778e9",
+          "line_end": 149,
+          "line_start": 139,
+          "path": "AGENTS.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/AGENTS.md#L139-L149"
+        },
+        {
+          "commit": "c824593566882378255d0017c4c6bff79d547027",
+          "git_sha": "e33f44330545a39fb05934b4dbf1c026d31778e9",
+          "line_end": 130,
+          "line_start": 127,
+          "path": "AGENTS.md",
+          "repository": "amix/dunk",
+          "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/AGENTS.md#L127-L130"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e87abc713cfc5fe5bc1e0fd1f6eca039925c702a5ef8a5016e9f2ca3b05a52e",
+        "slc_30ef7e1f3fd0743121e15eab33b9a60247baea11806397f04abf441f783d6e08",
+        "slc_364bd0711f950f06950befccd67aa67fbcbd783989cb4bb88199698e73d3cb5e",
+        "slc_3a1aa6b07a69685225e16b05c10f8888bcf27ef20023723cc643f6709aed1e7f",
+        "slc_5859793aa98444fc286f54f4e3402df1b317905ca9cac9ae00c4fe6366d76130"
+      ],
+      "text": "Repository development practice: contributors use Bun commands (bun install, bun test, bun run typecheck/lint/format/test:integration/test:tty-smoke), colocate unit tests with source, keep tests in test/cli, test/pty, and test/smoke, follow Conventional Commits, and maintain CHANGELOG.md as the release-notes source of truth."
+    }
+  ],
+  "commit": "c824593566882378255d0017c4c6bff79d547027",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 189,
+        "path": "README.md",
+        "size": 7596
+      },
+      {
+        "lines": 158,
+        "path": "AGENTS.md",
+        "size": 10089
+      },
+      {
+        "lines": 97,
+        "path": "CHANGELOG.md",
+        "size": 7899
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3550
+      },
+      {
+        "path": "docs/notes-schema.md",
+        "reason": "file-budget",
+        "size": 3759
+      },
+      {
+        "path": "docs/opentui-component.md",
+        "reason": "file-budget",
+        "size": 5035
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 222,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 4,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_e0829e85b7e3582db079d79c20699039",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/amix/dunk/c824593566882378255d0017c4c6bff79d547027/39f303c315706246/manifest.json",
+  "package_id": "pkg_f1b81bb375453a4ad38a163f98f76380f8e2ead790f44184d0fb741649350f82",
+  "repo": "amix/dunk",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c626b043a6a639ee79fd29a96cc63fa48010b24f7f92c7917812e3ded9380915",
+  "snapshot_id": "39f303c315706246",
+  "sources": [
+    {
+      "commit": "c824593566882378255d0017c4c6bff79d547027",
+      "git_sha": "e33f44330545a39fb05934b4dbf1c026d31778e9",
+      "lines": 158,
+      "path": "AGENTS.md",
+      "repository": "amix/dunk",
+      "sha256": "8a9949efe422abadc3e8d7125ad05803b8b6911cec82cf5d8611f18fbb0c2f98",
+      "source_id": "src_6b95f3214daa56dab1f8a9ae0b394f35",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/AGENTS.md"
+    },
+    {
+      "commit": "c824593566882378255d0017c4c6bff79d547027",
+      "git_sha": "1596d85a55aec5ccbbaf8a1835bf2008672004d2",
+      "lines": 97,
+      "path": "CHANGELOG.md",
+      "repository": "amix/dunk",
+      "sha256": "5ba647ad6dd3099ba777c56767ab388b2d74764bba0f21e2b1545054bd907032",
+      "source_id": "src_eac0d473961157e7b010d72941b56a21",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/CHANGELOG.md"
+    },
+    {
+      "commit": "c824593566882378255d0017c4c6bff79d547027",
+      "git_sha": "3cf4bb68b821b07edee88420eeb3145bd4f8bf4e",
+      "lines": 189,
+      "path": "README.md",
+      "repository": "amix/dunk",
+      "sha256": "db47e997921a908e08c31b1d71441f27ba73cba28fe981b8c3e52d7240a74fb1",
+      "source_id": "src_c59cbcaa1c895d1695debca63d455aa7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/amix/dunk/blob/c824593566882378255d0017c4c6bff79d547027/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The agent-facing comments CLI supports listing pending comments, showing one with 10 lines of post-image context (configurable via --context), and an atomic resolve that refuses partial success; --json returns a stable shape with drift state. Review comments are stored in .dunk/comments.json with the file path, hunk anchor line, body, and a context hash so comments survive small nearby edits; the file is meant to stay local and gitignored, and is deleted once the last comment is resolved.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,978 @@
+{
+  "applied_operation_id": "op_4177d16b0e0a475183e3ea0c525e6374",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ff6055117851266b4f13e022f2b0b932dcdd3548955b1681111fe93b54047d0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L3-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c72bcf5808f01d38144cfc612f320c455be49491fa3c04f59684841a5af8995c"
+      ],
+      "text": "The controller creates one Kubernetes Pod per Manager and Worker; by default each Pod has a single 'worker' container, a projected agentteams-token volume, and the controller-managed ServiceAccount."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_29c55ca8eb0bd52a891fc4369c17d5368182cc5a0310939b79220770a7be41ea",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 19,
+          "line_start": 14,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L14-L19"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 10,
+          "line_start": 8,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L8-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_99fcc786d11d67a7a7b2f8c917952b9c6010d8e374813e5c7722aaf5d9fb717c",
+        "slc_ea50a3f67ccb8f83cc5c90837faeb42c27639eadd94f24d035724c7951b89b76"
+      ],
+      "text": "Cluster-specific Pod settings (sysctls, nodeSelectors, tolerations, imagePullSecrets, injector annotations) are injected via a corev1.PodTemplateSpec stored in a ConfigMap under the key pod-template.yaml, read on every Create call."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a415dcb4911d3dd6aa014005e8ad0fa4787e6c6fd4b1a6fa220578ae78f76b54",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L34-L36"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L30-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_95e5f75a87236d7ed93a57b4c6a916ffc37dabd741d9f87e1d1201ec905b2591",
+        "slc_c3b0095d2535d470ab2855b8d5385ecdbbacc081e08983a55c306138c8dcc9ee"
+      ],
+      "text": "The pod template ConfigMap is read fresh on each Pod creation with no caching: edits affect the next created Pod while existing Pods are untouched; a missing, malformed, or unfetchable ConfigMap falls back to the default Pod shape without blocking creation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7fe0e4579ffa2c346dc39525b89526470f17a21429249aaeff5387821a2a9ad9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 86,
+          "line_start": 83,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L83-L86"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 79,
+          "line_start": 69,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L69-L79"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 97,
+          "line_start": 90,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L90-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c8673228c350850a84a56fb62004d9d00c03375d45cd6070aba6f94398bc1e2",
+        "slc_12e0cdbf2522294ee73c9d5e0141790ef5b7121b1e33f4b8279accc062643f10",
+        "slc_d55af57d9eb7ee3cd8aeb8a84c46562e07e49059bbf7588034502c307c462591"
+      ],
+      "text": "Merge semantics are field-specific: the template wins for nodeSelector, tolerations, affinity, securityContext, and non-worker sidecar containers; the controller wins for ownerReferences, serviceAccountName, forced automountServiceAccountToken=false, and the agent container's image/env; labels and annotations merge with controller values overwriting on key collision."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7d96f67ea5eb51e39aeefcb5b0fd7aa8740698b6e84646bce3bdc0a1752f8e8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+          "line_end": 28,
+          "line_start": 21,
+          "path": "docs/design/agent-pod-template.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md#L21-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e41f6cd96025c4c8e4d9d469eb64ee5cfdd4c2d865b5d2b91b102f7509318ac6"
+      ],
+      "text": "AGENTTEAMS_CONTROLLER_NAME doubles as the leader-election lease name and the agentteams.io/controller label stamped on created CRs; informer caches filter by this label so multiple releases in one namespace do not reconcile each other's resources, and incluster startup without it fails fast."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd206cd13be8d19ec200150eeee0becb82dbc26a45669589d7115c34930483fc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 52,
+          "line_start": 47,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L47-L52"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 43,
+          "line_start": 38,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L38-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e9ff1ca36baa624b2538f561ca9b7526cb4ba31ad7d5c85b24658df718e0683",
+        "slc_c48641889446a48bf7fa408b57289b9e309345dd63901ae161e9971a9c46b656"
+      ],
+      "text": "A WorkerBackend abstraction layer unifies worker lifecycle management; the progress doc marks the interface, Docker backend, Kubernetes backend, and backend auto-selection as complete, and lists additional SAE, APIG gateway, gateway abstraction, and cloud-credential files as implemented beyond the design."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57a96008aceb4f0cb8e22c19e62fce375b2aed703084d11bcfb9bb54000a437a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 120,
+          "line_start": 120,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L120-L120"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 138,
+          "line_start": 122,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L122-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af9774a7c09f9cead3cbf2b5ef51be965b814cfff4fd0d048e5f4c7b90714ec4",
+        "slc_c20e66c5ba98bd2d14d5d00453fc79d26de99a1da5bf423f8c69db93a34e7410"
+      ],
+      "text": "The agt CLI was rewritten as a pure REST API client calling the controller at AGENTTEAMS_CONTROLLER_URL (default http://localhost:8090), supporting CRUD for workers/teams/humans/managers, worker wake/sleep/status, YAML and ZIP apply, with tokens via AGENTTEAMS_AUTH_TOKEN or SA token file discovery."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dffb6accce2b95fc792a6648d4e30ea6d2045e60f6c3e0547226edf7d4222210",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 155,
+          "line_start": 142,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L142-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96410918a477d1b7684ae29e2b4d9969a62b78f8bd3f787b2ff3e758d2cd4b61"
+      ],
+      "text": "The Helm chart ships controller Deployment/Service/RBAC/ServiceAccount, Tuwunel and MinIO StatefulSets, Higress as a subchart, Element Web, and a Manager Deployment; an Ingress template is not yet implemented per the progress doc."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56909b6ed46a9a9058cc5b7f33e51de55d3e8af237e135514317470f652005cd",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 165,
+          "line_start": 159,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L159-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_061ccd91f714ef4fc95741695ec05970d0d61dcb7685cb283f0ff20af48acb42"
+      ],
+      "text": "Worker, Team, Human, and Manager CRDs each have Helm crds/, api/v1beta1 types, and reconcilers marked complete, while the DebugWorker CRD is not implemented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f894b5256aca07f47e53efd559589e098761386a79069f96291c384af67aeaa5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 177,
+          "line_start": 169,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L169-L177"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b5d0d142c87c5327443ebdffcab0b493740dce31514764b6a9d24ab4fcd55fbc"
+      ],
+      "text": "An embedded all-in-one image bundles Higress, Tuwunel, MinIO, Element Web, the controller, CLI, and kube-apiserver, started in layers via supervisord; deployment is dual-container (controller container plus an auto-created manager-agent container created via DockerBackend)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fcb2767dcd69536896f4d6f3873c56736be3e76f8268cbd7bd87683564d1c4a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 198,
+          "line_start": 198,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L198-L198"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 76,
+          "line_start": 70,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L70-L76"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 211,
+          "line_start": 200,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L200-L211"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 138,
+          "line_start": 122,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L122-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36b887c9b126f0980ba5c01ef8cb98e25d2a788641b5d98f22b8688f813d13d7",
+        "slc_9a530e1edfcc743ff977c53fbd16d10ad5f319bfa825516d8f0efe2d281a0316",
+        "slc_a980e264671d3654f3512d51d57fb1ed66a4268fb4d6d4499053db00e94a7c3b",
+        "slc_c20e66c5ba98bd2d14d5d00453fc79d26de99a1da5bf423f8c69db93a34e7410"
+      ],
+      "text": "Per the internal progress doc, ConfigVersionManager, versions.json management, skill hot-update (UpgradeSkills), runtime rolling upgrade, agt config push, debug commands, apply --prune, and all Phase 4 debug/upgrade capabilities are unimplemented."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55a9e34017ba14a6aab899ad5923f1ac573f98603c29947b74c2e4f696e04e8a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+          "line_end": 192,
+          "line_start": 183,
+          "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md#L183-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5773c908182c903543bb88cb644935ee42c6ed0eac70b3c2b21120843cdcb066"
+      ],
+      "text": "The progress doc marks Phase 3 items partially done: Manager state.json-to-OSS migration and quota checks are unimplemented, and fine-grained CallerIdentity isolation beyond SA token authentication remains incomplete."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4897f815bb90c844c68b4e1e38184a56a3c1109b24a4677708c5d674c6d8e6c6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 534,
+          "line_start": 534,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L534-L534"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 578,
+          "line_start": 570,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L570-L578"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 508,
+          "line_start": 481,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L481-L508"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 568,
+          "line_start": 563,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L563-L568"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 561,
+          "line_start": 556,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L556-L561"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 525,
+          "line_start": 520,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L520-L525"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 583,
+          "line_start": 580,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L580-L583"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13adb8927807b06291a671f37e073ba249f49492b774e1eabf6e475f4ca9fdae",
+        "slc_14649bd58e4b4a3acc90ed9e77b69aa819591ee794988aeb667b7eabc238ce06",
+        "slc_165f83d4f08af488bcd1adbf7e6c25eeb07a7baf01f3dfb989f90b2bad5cbc50",
+        "slc_1771a556c508d82afa559610ea57afc9ceaad3f05cdc76a76d0e3a351eda8082",
+        "slc_2d6a1f279ed1d1ea876aba66627d120d43d34045e556ced03f1bb4344d084076",
+        "slc_6ddcd3860fb04278bf56558e99732fbb17a7cdf563ccc05b8793ee52cc921770",
+        "slc_8d12c5f773e11f6a39198c6fb8d2e1bec306a897f7f8d0e04048100199894b0d"
+      ],
+      "text": "The refactor design gives Team Leaders heartbeat-based worker lifecycle management (wake/sleep, idle timeout) with controller-enforced permission isolation: leaders may only manage workers of their own team, and workers cannot manage other workers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b8704347047e463dd3187992c90c92b5d3cdbc3f7b393bab11d5c84481f5a1a3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L102-L102"
+        },
+        {
+          "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+          "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+          "line_end": 92,
+          "line_start": 82,
+          "path": "docs/design/internal/agentteams-controller-refactor.md",
+          "repository": "agentscope-ai/agentteams",
+          "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md#L82-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5400dc027c1d8e0386380e2f5249183ee308a61ff2b284935c8a26cf706be678",
+        "slc_d99e90c463127767a1fa51d0e861868c5d92fcaabb0239f95b5df1ba999656b2"
+      ],
+      "text": "The design targets two deployment modes: K8s incluster via Helm, and backward-compatible embedded mode where the controller manages worker containers through the Docker socket and runs an embedded kube-apiserver plus kine (SQLite) as a K8s API compatibility layer."
+    }
+  ],
+  "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 487,
+        "path": "README.md",
+        "size": 28671
+      },
+      {
+        "lines": 280,
+        "path": "AGENTS.md",
+        "size": 18807
+      },
+      {
+        "lines": 431,
+        "path": "README.ja-JP.md",
+        "size": 26490
+      },
+      {
+        "lines": 531,
+        "path": "README.zh-CN.md",
+        "size": 33646
+      },
+      {
+        "lines": 116,
+        "path": "docs/design/agent-pod-template.md",
+        "size": 4658
+      },
+      {
+        "lines": 240,
+        "path": "docs/design/architecture.md",
+        "size": 13613
+      },
+      {
+        "lines": 91,
+        "path": "docs/design/humans-update-api.md",
+        "size": 3724
+      },
+      {
+        "lines": 281,
+        "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+        "size": 14313
+      },
+      {
+        "lines": 1629,
+        "path": "docs/design/internal/agentteams-controller-refactor.md",
+        "size": 63154
+      },
+      {
+        "lines": 499,
+        "path": "docs/design/internal/issue-1107-file-sync-io-amplification.md",
+        "size": 21644
+      },
+      {
+        "lines": 684,
+        "path": "docs/design/internal/matrix-appservice-design.md",
+        "size": 20948
+      },
+      {
+        "lines": 633,
+        "path": "docs/design/internal/team-worker-proposal.md",
+        "size": 26096
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/design/k8s-native-orchestration.md",
+        "reason": "file-budget",
+        "size": 21665
+      },
+      {
+        "path": "docs/design/l2-worker-scoped-write.md",
+        "reason": "file-budget",
+        "size": 5416
+      },
+      {
+        "path": "docs/design/member-runtime-config-contract.md",
+        "reason": "file-budget",
+        "size": 7046
+      },
+      {
+        "path": "docs/design/teamharness/boundary-and-contracts.md",
+        "reason": "file-budget",
+        "size": 3574
+      },
+      {
+        "path": "docs/design/teamharness/project-task-runtime-design.md",
+        "reason": "file-budget",
+        "size": 16562
+      },
+      {
+        "path": "docs/design/teamharness/runtime-integration-tdd-plan.md",
+        "reason": "file-budget",
+        "size": 11090
+      },
+      {
+        "path": "docs/overview.md",
+        "reason": "file-budget",
+        "size": 7775
+      },
+      {
+        "path": "docs/quickstart.md",
+        "reason": "file-budget",
+        "size": 6675
+      },
+      {
+        "path": "docs/usage/deployment/kubernetes.md",
+        "reason": "file-budget",
+        "size": 28509
+      },
+      {
+        "path": "docs/usage/deployment/local.md",
+        "reason": "file-budget",
+        "size": 24068
+      },
+      {
+        "path": "docs/usage/deployment/windows.md",
+        "reason": "file-budget",
+        "size": 21621
+      },
+      {
+        "path": "docs/usage/development.md",
+        "reason": "file-budget",
+        "size": 19064
+      },
+      {
+        "path": "docs/usage/import-worker.md",
+        "reason": "file-budget",
+        "size": 13703
+      },
+      {
+        "path": "docs/usage/integrations/cms.md",
+        "reason": "file-budget",
+        "size": 6513
+      },
+      {
+        "path": "docs/usage/integrations/credagent.md",
+        "reason": "file-budget",
+        "size": 6227
+      },
+      {
+        "path": "docs/usage/integrations/dingtalk.md",
+        "reason": "file-budget",
+        "size": 12334
+      },
+      {
+        "path": "docs/usage/manager-guide.md",
+        "reason": "file-budget",
+        "size": 18139
+      },
+      {
+        "path": "docs/usage/project-workflow-api.md",
+        "reason": "file-budget",
+        "size": 40723
+      },
+      {
+        "path": "docs/usage/resource-management.md",
+        "reason": "file-budget",
+        "size": 44028
+      },
+      {
+        "path": "docs/usage/troubleshooting/faq.md",
+        "reason": "file-budget",
+        "size": 44252
+      },
+      {
+        "path": "docs/usage/troubleshooting/legacy-faq.md",
+        "reason": "file-budget",
+        "size": 19307
+      },
+      {
+        "path": "docs/usage/use-cases.md",
+        "reason": "file-budget",
+        "size": 27892
+      },
+      {
+        "path": "docs/usage/worker-guide.md",
+        "reason": "file-budget",
+        "size": 16680
+      },
+      {
+        "path": "docs/zh-cn/design/architecture.md",
+        "reason": "file-budget",
+        "size": 13600
+      },
+      {
+        "path": "docs/zh-cn/design/k8s-native-orchestration.md",
+        "reason": "file-budget",
+        "size": 30962
+      },
+      {
+        "path": "docs/zh-cn/overview.md",
+        "reason": "file-budget",
+        "size": 7079
+      },
+      {
+        "path": "docs/zh-cn/quickstart.md",
+        "reason": "file-budget",
+        "size": 6266
+      },
+      {
+        "path": "docs/zh-cn/usage/deployment/kubernetes.md",
+        "reason": "file-budget",
+        "size": 26947
+      },
+      {
+        "path": "docs/zh-cn/usage/deployment/local.md",
+        "reason": "file-budget",
+        "size": 21719
+      },
+      {
+        "path": "docs/zh-cn/usage/deployment/windows.md",
+        "reason": "file-budget",
+        "size": 19836
+      },
+      {
+        "path": "docs/zh-cn/usage/development.md",
+        "reason": "file-budget",
+        "size": 18711
+      },
+      {
+        "path": "docs/zh-cn/usage/import-worker.md",
+        "reason": "file-budget",
+        "size": 13022
+      },
+      {
+        "path": "docs/zh-cn/usage/integrations/cms.md",
+        "reason": "file-budget",
+        "size": 5554
+      },
+      {
+        "path": "docs/zh-cn/usage/integrations/credagent.md",
+        "reason": "file-budget",
+        "size": 5532
+      },
+      {
+        "path": "docs/zh-cn/usage/integrations/dingtalk.md",
+        "reason": "file-budget",
+        "size": 11214
+      },
+      {
+        "path": "docs/zh-cn/usage/manager-guide.md",
+        "reason": "file-budget",
+        "size": 17082
+      },
+      {
+        "path": "docs/zh-cn/usage/project-workflow-api.md",
+        "reason": "file-budget",
+        "size": 25450
+      },
+      {
+        "path": "docs/zh-cn/usage/resource-management.md",
+        "reason": "file-budget",
+        "size": 41654
+      },
+      {
+        "path": "docs/zh-cn/usage/troubleshooting/faq.md",
+        "reason": "file-budget",
+        "size": 41243
+      },
+      {
+        "path": "docs/zh-cn/usage/troubleshooting/legacy-faq.md",
+        "reason": "file-budget",
+        "size": 18000
+      },
+      {
+        "path": "docs/zh-cn/usage/use-cases.md",
+        "reason": "file-budget",
+        "size": 23442
+      },
+      {
+        "path": "docs/zh-cn/usage/worker-guide.md",
+        "reason": "file-budget",
+        "size": 15407
+      }
+    ],
+    "omitted_count": 42,
+    "omitted_slices": 668,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 845,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 54,
+      "complete": false,
+      "omitted": 42,
+      "stored": 12
+    }
+  },
+  "entity_id": "ent_8ee5aa2ac2f7536382758b2c4946cc7a",
+  "facets": {
+    "components": 4,
+    "dependencies": 0,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/agentscope-ai/agentteams/f65d6e1af268039507b413e3c16679bb84d21ac7/00898cd68a276fb4/manifest.json",
+  "package_id": "pkg_19fbbd9490a32635a12e7cf6fc91e0187dfc88122a2f8a600d69187ca2afe840",
+  "repo": "agentscope-ai/agentteams",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "950155687ca7e5f5e09cdac39a7a01cde8e20bd829e424e58ad4847b93900256",
+  "snapshot_id": "00898cd68a276fb4",
+  "sources": [
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "847ee770e88a1fa7a5580442d853b79275980e52",
+      "lines": 280,
+      "path": "AGENTS.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "0e6731f8e3f26ad306b34e0dad5f1c8c7ba3c0d92e98c3b1c3f6539d7cea4634",
+      "source_id": "src_2bdf3bfe96fb5b1f8a5f4075c363155f",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/AGENTS.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "6fccc0afef5f4d1b215e54aa4b3c10ebe184757a",
+      "lines": 431,
+      "path": "README.ja-JP.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "459899aa2314304b7e1e3b01820f2c00b467c75a2bb8e71eef64dad1a399989a",
+      "source_id": "src_5ca721c99cd455a69941c3d2da60d97a",
+      "stored": "readme.ja-jp.md-4363f5cdfbf3.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/README.ja-JP.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "b7a1ed4cb95066c5478d46d87f72b272d3228938",
+      "lines": 487,
+      "path": "README.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "b28351882e1d720d0788975c89bcec6a37cef6b0d00509fc9b4f2bcba9edf498",
+      "source_id": "src_a67e66789e015637a7a45a3a07269514",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/README.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "b3585a0d1be4df9c5b43b7848e2685a5478b6f62",
+      "lines": 531,
+      "path": "README.zh-CN.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "bb3aea60e2abcd221f1ddb807dce215e306abb9d552fcf6ef467ceb9c42cfa2d",
+      "source_id": "src_eb60fc58b160524ba3d3320de7ee0439",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/README.zh-CN.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "3b4820c1cd7a929ca45bb1ac5aa303d0765eeada",
+      "lines": 116,
+      "path": "docs/design/agent-pod-template.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "73547e88fa8ead1355751066ea5733594df53b19d93afbc8a02c3a12ce0780e3",
+      "source_id": "src_c7194927ce765c25af06663cc65b0c15",
+      "stored": "agent-pod-template.md-5f6e9e56fb3d.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/agent-pod-template.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "d08dbbbd550f48c991e812f5652de7de8cc1bee3",
+      "lines": 240,
+      "path": "docs/design/architecture.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "c1df16b4bd80aca2609afdfe3e45213305d379c12818f735d121fe1472685283",
+      "source_id": "src_8e36720f40195ceab7da539a61c082e9",
+      "stored": "architecture.md-6eaa01b68d81.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/architecture.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "be1f165e80e4f1c2d44ab8bd575a1cb4e8d3d30b",
+      "lines": 91,
+      "path": "docs/design/humans-update-api.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "ec05344ac24a46d950e477067d31472155887a641927c379e00975fe849ebcd3",
+      "source_id": "src_f5c4ba29bf4a5672a6da051d82ea335d",
+      "stored": "humans-update-api.md-2b266422f444.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/humans-update-api.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "43de5df667fe3d53ed4a02287d683d59b3e98b53",
+      "lines": 281,
+      "path": "docs/design/internal/agentteams-controller-refactor-progress.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "3a388f86cc3c1f4ccf035d81ebf634f4f2564e8e55d0d29aae3ed8cfadbf3df3",
+      "source_id": "src_e52e0003371754c0afa9781e8ac3d2cc",
+      "stored": "agentteams-controller-refactor-progress.-4e1da379d58e.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor-progress.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "40bcd9f208ea24e17a5df88e1a96f1f71ff821ed",
+      "lines": 1629,
+      "path": "docs/design/internal/agentteams-controller-refactor.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "7c2f9a81ea16055c233a43ddffdb1e1fe28db4194df3599a0d4ddc87183d9327",
+      "source_id": "src_16b0962d5925536dae9f69f37e20b85e",
+      "stored": "agentteams-controller-refactor.md-22e57e42cb73.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/agentteams-controller-refactor.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "16812f6bcfac3d511476f252e1faa6a76454fd87",
+      "lines": 499,
+      "path": "docs/design/internal/issue-1107-file-sync-io-amplification.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "6cffbea76c79cd112d6c2038c599ac3c06abf38d5dd368d3bc4aae98e801ab80",
+      "source_id": "src_5d5ff42a7c54512db168d99ff1111fb2",
+      "stored": "issue-1107-file-sync-io-amplification.md-b4ea6669b33c.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/issue-1107-file-sync-io-amplification.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "450ecc9da2822f7e56d7fce44b9196d747bf569a",
+      "lines": 684,
+      "path": "docs/design/internal/matrix-appservice-design.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "828c07ebaf553ec82623fd77e6242ca4c6a61f388888fd84cf39f0d7b3e17ccb",
+      "source_id": "src_0ac4f7cef88a5f1f861724105dc1581b",
+      "stored": "matrix-appservice-design.md-0fdeed239c81.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/matrix-appservice-design.md"
+    },
+    {
+      "commit": "f65d6e1af268039507b413e3c16679bb84d21ac7",
+      "git_sha": "fcdd147ab57f009e138adcc4bb475310876a98df",
+      "lines": 633,
+      "path": "docs/design/internal/team-worker-proposal.md",
+      "repository": "agentscope-ai/agentteams",
+      "sha256": "084b579dd16d744679a3f249566e1879f84b97bbb96c80a7350652aeef307ead",
+      "source_id": "src_70941e97d07d5c10996bcd2b94e4001b",
+      "stored": "team-worker-proposal.md-5364f9757d66.md",
+      "url": "https://github.com/agentscope-ai/AgentTeams/blob/f65d6e1af268039507b413e3c16679bb84d21ac7/docs/design/internal/team-worker-proposal.md"
+    }
+  ],
+  "summary": "The snapshot documents an AgentTeams Kubernetes controller that creates agent Pods (with a ConfigMap-driven PodTemplateSpec overlay), a WorkerBackend abstraction with Docker/K8s backends, an agt CLI REST client, Helm chart and CRDs, and embedded/incluster deployment modes; an internal progress doc also tracks unimplemented features. Evidence coverage: 141 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

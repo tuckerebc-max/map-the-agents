@@ -1,0 +1,431 @@
+{
+  "applied_operation_id": "op_cb27438f7951401a9a6a632d123d4002",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_7528710a3a1835c90ad3ae04b1bdd545788679c51d0ba1626aec74f2d8a1a93b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fd1765eb52e87dfe0afbcde60322d5d25994a4f6b896b97facfb61b0972698e3"
+      ],
+      "text": "The tool is described as an AI agent that autonomously deploys GitHub repositories on a user's local machine, handling cloning through command execution in Docker."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ae8bd61db604055d123b89321f208e6e6f53e929137c30ff73fd40af3057464",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 44,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L31-L44"
+        },
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f858ee4c67740bc64a5710c694560323daf92a1ca2af82c779681daba4755666",
+        "slc_fd1765eb52e87dfe0afbcde60322d5d25994a4f6b896b97facfb61b0972698e3"
+      ],
+      "text": "Deployment is driven by a structured LangGraph workflow covering clone, file extraction, setup planning, command execution, error checking, and error fixing steps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3fad31d43f1e596cf81f8bd89e8475f4c3632fc97c2821289f0b7b5fc7618dab",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 44,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L31-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f858ee4c67740bc64a5710c694560323daf92a1ca2af82c779681daba4755666"
+      ],
+      "text": "The workflow includes an error-check step where an LLM analyzes terminal output after command execution, and a fix step that may modify the Dockerfile or commands and re-execute them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3747548af2df89d0d1419b39b254d552d070e58712717ae65893d9b4d81c6c0a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 25,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L19-L25"
+        },
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 44,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L31-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b27c68f24e0bb272a2635f338db86a85bfb1521814f2742c397f52dc13d7cb66",
+        "slc_f858ee4c67740bc64a5710c694560323daf92a1ca2af82c779681daba4755666"
+      ],
+      "text": "The agent uses Docker to provide a consistent, isolated execution environment, creating a Dockerfile when one does not exist in the target repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_123d86226f0398bb9fdad6aec9ab0bf0c8fdc87bddc7e30cd3f5f4b84104a915",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "9bcc7d79ee6b0f12d954612e1d11a511f9c44530",
+          "line_end": 144,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/requirements.txt#L1-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f3270d9afdeafb73082bdee39abc9f7def388b326ce80d61506bf2321618e05e"
+      ],
+      "text": "The project depends on LangGraph (langgraph 0.2.58), LangChain packages including langchain-openai, the Docker SDK (docker 7.1.0), and OpenAI, per the pinned requirements file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e4135f377cacfe978ac85958ce7dde1211c99677167a74ef8c7c1840062a5ee",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 50,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L48-L50"
+        },
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_210156c09cd6dd3d67b9218ae48ac10e9866abf4ff6d9d3ded672adc0d6649f3",
+        "slc_7a86347a4ff32d9f75f6d46d9655f0637ed54db8d9585c4d5332f9adc28b9296"
+      ],
+      "text": "The entry point is a Python script: running 'python main.py' deploys the repository whose URL is set in the github_repo_url variable in main.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73b179eb63235b1ced60889d5639b43bfa70eeb982461d65a5f87d621769e205",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 63,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L58-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b6ed813addc13d24f773f394ebcd4c59b8649929541b341d0f05d2b969caa93"
+      ],
+      "text": "The LLM is gpt-4o-mini by default, configurable in instantrun.py, and all LLM interactions follow a strict JSON output format for consistent parsing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_44ff88ceb5495fa9b8236d32c6c54c66da4d04af1ef67eb5a62f3871eba66ce5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 68,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L67-L68"
+        },
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 44,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L31-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07280c1dbf45a9f76ddc2c6b5472a66b44b5cea0d6f857854682bdd880391103",
+        "slc_f858ee4c67740bc64a5710c694560323daf92a1ca2af82c779681daba4755666"
+      ],
+      "text": "The docker run command is prefixed with 'alacritty -e' to open a new terminal window, so the alacritty terminal must be installed on the user's machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41d18c70e02adaf81678dd104ec88154575725b7276a7fa54fbd3ec7ba92b01c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 68,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L67-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07280c1dbf45a9f76ddc2c6b5472a66b44b5cea0d6f857854682bdd880391103"
+      ],
+      "text": "The README notes the agent is not perfect and may encounter issues with certain repositories, recommending users review terminal output for errors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f74c45ba99c329b85b81575702271bb1256372c3eb1907c8aef43d68db3a0788",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 63,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L58-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b6ed813addc13d24f773f394ebcd4c59b8649929541b341d0f05d2b969caa93"
+      ],
+      "text": "The tool is designed for Arch Linux but may be adaptable to other Linux distributions with minor modifications; it targets Python 3.10+ for Python projects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_851213cbfee4bf33a95c5037c21dc697a3f4a4ba890ebf8b3cbf1f90565e0691",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 50,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L48-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_210156c09cd6dd3d67b9218ae48ac10e9866abf4ff6d9d3ded672adc0d6649f3"
+      ],
+      "text": "Repository development practice: setup requires installing Python 3.10+, Docker, and pip packages, and setting an OpenAI API key and base URL directly in instantrun.py."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8e4405a94257d77eead51a58deb8ebdd662cb7934f85cb92b0e2977f59ab356",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 15,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L14-L15"
+        },
+        {
+          "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+          "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "talha-ali-5365/instantrun",
+          "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_86175fdb42aa28be7e4fc8c1a87bd7f18751d7d10d0b07bfa66b5460b53ac39c",
+        "slc_89560c9a383ac678f3160362fd10f41b4bc52dafa48ed604b1b7c0a9e990721e"
+      ],
+      "text": "No benchmark or success-rate evaluation harness appears in the evidence; the only performance indications are two YouTube demo videos of deployments."
+    }
+  ],
+  "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 72,
+        "path": "README.md",
+        "size": 5119
+      },
+      {
+        "lines": 144,
+        "path": "requirements.txt",
+        "size": 2885
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 8,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_c29a9132ac7b5af78b351b6412f2726e",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/talha-ali-5365/instantrun/8d0164276f026ac939e4343112edacdb6ba7bf15/aa6519e646d92387/manifest.json",
+  "package_id": "pkg_bca0c0da4d177470d0c9228fa2743852312d37cdb2fda000c11af75dcb0d9cfb",
+  "repo": "talha-ali-5365/instantrun",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "34f5c5653d186ff67be6b7704e8ed0e8d2f755550bb140eed82ef83e1d566e8b",
+  "snapshot_id": "aa6519e646d92387",
+  "sources": [
+    {
+      "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+      "git_sha": "333c6e0ea8dbf6f2224453dca0ac0accfbe9957c",
+      "lines": 72,
+      "path": "README.md",
+      "repository": "talha-ali-5365/instantrun",
+      "sha256": "f37fb232ab3e9241df386850c7deebd36eb578f9cb6b3afa1371ac3268359a45",
+      "source_id": "src_65c46204c4c05de5a1f2a701352e05d4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/README.md"
+    },
+    {
+      "commit": "8d0164276f026ac939e4343112edacdb6ba7bf15",
+      "git_sha": "9bcc7d79ee6b0f12d954612e1d11a511f9c44530",
+      "lines": 144,
+      "path": "requirements.txt",
+      "repository": "talha-ali-5365/instantrun",
+      "sha256": "1fe8218a62aa1536da80e3825ab6ab49904309921a0ab2c56f4aab2977147125",
+      "source_id": "src_6b17672ef66b5e61bacbc83a000b4c4c",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/Talha-Ali-5365/InstantRun/blob/8d0164276f026ac939e4343112edacdb6ba7bf15/requirements.txt"
+    }
+  ],
+  "summary": "InstantRun is a LangGraph-based agent that autonomously clones, plans, and deploys GitHub repositories inside Docker, using an LLM (gpt-4o-mini) for planning, error detection, and fixes. Evidence is mostly README documentation plus a pinned requirements file.",
+  "superseded_claim_ids": []
+}

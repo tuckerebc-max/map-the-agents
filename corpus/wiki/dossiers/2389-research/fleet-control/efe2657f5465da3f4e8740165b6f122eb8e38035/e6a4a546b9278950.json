@@ -1,0 +1,937 @@
+{
+  "applied_operation_id": "op_bf831e37322444acbb9eba8a72244a10",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b00d59dec249dcc84975206f9165510ac33cda8d07f33be14aee427cd893989",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_009517e77b0277f6f5f02dd933d9fc4b53bb9e3d059fecd52320073fc14982ba"
+      ],
+      "text": "The design spec describes a Go binary `control` that observes and manages running AI agents via tmux introspection, offering visibility, stopping, and session history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1262a776ef0c77b153bafac67d8249c28b942f2128b61836a753178b3926eaa2",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L9-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b0d886148b1553eab3182868546ac844fafcc94fc2aaa936a236d817b4dba056"
+      ],
+      "text": "Core principles include observer-not-launcher, zero agent instrumentation, CLI/MCP parity over one internal API, a single binary, CGO-free builds, and no elevated privileges."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e051b41e70da86e4d6f065d67a7a5d8846c46a33c92623d5495ac6d3a23f3bc0",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 272,
+          "line_start": 272,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L272-L272"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 15,
+          "line_start": 9,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L9-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7e8d1de757c95c0bc4f5f313b9df2ec0a4f4a425fbbd01bef823aa4f15a4ed31",
+        "slc_b0d886148b1553eab3182868546ac844fafcc94fc2aaa936a236d817b4dba056"
+      ],
+      "text": "All tmux and process interactions are specified to use exec.Command with discrete argument lists, avoiding shell interpolation to prevent injection from tmux-controlled values."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41d50af997e98ff064758c1d6a60c61f9e57430e1958486ce41f324ae5be1272",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L7-L7"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L61-L61"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_670ec33a2c19e588761e28fe3bcaacb94c5d8c817e0a8d921f3a09e4b7255914",
+        "slc_6e45d1518da96d8fe6afe96e025ba5bac1d960aa602bf68dce3f2f2180e109a1",
+        "slc_b52ee7349df09a84c7835d294c16eef9c4bea2e7cc0856a39e573757f7328261"
+      ],
+      "text": "The architecture has three layers in one Go module: a `controld` daemon, a `control` CLI, and an MCP server, with the CLI and MCP as thin clients over the daemon's HTTP API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ce2cca6205064568a74c3b9c781ee67bf1b1df2ccb0f1aa43d3ba414a92319f8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 29,
+          "line_start": 25,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L25-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5099db6bc5ee17d3c2981dfcbd25c5486b1c0f8d3102cb1f52d84f4fe19b7a4f"
+      ],
+      "text": "The daemon polls tmux roughly every 5 seconds, keeps an in-memory agent registry guarded by sync.RWMutex, persists history to SQLite in WAL mode, and serves HTTP/1.1 over a Unix socket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad94268eb125d83e752a986fae95c635ca830dbe0363ac86745fec53dfc1fc55",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L77-L77"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 73,
+          "line_start": 65,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L65-L73"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L75-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b0ff181b11921a73eee8651b82af703cee0bfd4af9d5424fe4814c63b655eee",
+        "slc_3c892372768efd218d83af870468eef044faaefe83f0464774b4d5d48c628585",
+        "slc_bacd4a6de1435572914b87e8011d314bdffa3e2919e0352d714c5f4753b114a4"
+      ],
+      "text": "CLI commands include daemon start/stop/status, ls, show, stop, history, tui, and mcp, with global flags --json, --socket, and --help, and filter flags like --project, --type, --since, --until, --limit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_987efabd4222cb78734fb62c1687185171090c087cf0e296942ba33c5769fd18",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 418,
+          "line_start": 411,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L411-L418"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 420,
+          "line_start": 420,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L420-L420"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7b10ed84fa2d166d4ee02e615f9308ec3e282f05bf17bbd84b25742767f6e1b5",
+        "slc_ae460112eb682e8d10e5f0e51946bd92f6b86a7b7905b8f6f9bd818bb5a49c49"
+      ],
+      "text": "The daemon exposes HTTP endpoints over the Unix socket: /agents, /agents/:id, /agents/:id/stop, /history, /history/:id/actions, and /ping, all returning JSON."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fad476195077eb2ab6b45f9ba809406efb1900d3feceee0d1715ce566fd6b558",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 245,
+          "line_start": 227,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L227-L245"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 253,
+          "line_start": 247,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L247-L253"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 122,
+          "line_start": 122,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L122-L122"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 202,
+          "line_start": 189,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L189-L202"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 225,
+          "line_start": 206,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L206-L225"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 185,
+          "line_start": 168,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L168-L185"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 166,
+          "line_start": 150,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L150-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ad187b7bd6603d834befeb0e5e817a9d51dcd247c5edd5e5e48ccd3f278d2e3",
+        "slc_10b3fed528017e6068aa836a69a1f1284ba2132645ea6fe8af5223eb31a35b37",
+        "slc_3a10a2b3852c07c763a1e4cb60a5cd845cf3c9fef524da43a49126e577990573",
+        "slc_5023ce0d76be87589fd9685d73b969abefe252e8e630b634af696253bad0bb4d",
+        "slc_7a2e97c8fd916ff4013a6343b4479de55ec43662d4463466fa3b72bd139bb833",
+        "slc_9e075769a0b0b4be4471d4ed3aa53dba5c0ffbff6bcfb84c346409e5c759d5b1",
+        "slc_c9094ccc3016e50d7044e82709b7bc996aff6da2ad801d4cc809ff3959975b9a"
+      ],
+      "text": "The MCP server uses stdio transport with JSON-RPC 2.0, protocol version 2024-11-05, and tools including list_agents, get_agent, stop_agent, get_history, get_actions, and ping."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_101c21d32aa374b9d6fd1efc4891ff0f4a86b4896682c5ff5d594aa07a0b560d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 580,
+          "line_start": 571,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L571-L580"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3dca17cef658767c1bfc8941594bdeb822d73fd49ba6b61038a7b8beaddf1ffc"
+      ],
+      "text": "Post-build implementation notes state the terminology was renamed from agent to pane: endpoints use /panes/ and MCP tools include list_panes, get_pane, stop_pane, send_to_pane, and get_pane_conversation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b02b3aca20bfd8d5a546d4345363a8e83da9a8d4a039fa55e1fa6e19b7f176a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 105,
+          "line_start": 98,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L98-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b2a78389aa2741d44c727d91938eab340b1c45c253eb81b956c692151f7fe463"
+      ],
+      "text": "Stopping an agent resolves the pane's process tree, verifies PID identity, then escalates SIGINT to SIGTERM after 5s and optionally SIGKILL with --force, exiting code 4 on failure."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6fcf964319deb6a492a20b2b5b40d61e8b627802d76876554abcc0a3e6b2f746",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 337,
+          "line_start": 325,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L325-L337"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 339,
+          "line_start": 339,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L339-L339"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 323,
+          "line_start": 323,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L323-L323"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b6191241085a1a60a2e9e0b4ea4f707ffdd59fe69b8cfb59f7b1ad148b0464a",
+        "slc_3892c0ba7a17fbcefbc149dcb39cfe2560ba25f356f2b65482b716f07a5c951f",
+        "slc_85adb8b85cd611c4b65ad8e93adc4a0ab30754ff2a7baa64943e8fcc79698d75"
+      ],
+      "text": "Live state is held in memory under an RWMutex with per-agent fields such as pane ID, type, PID, process start time, and a scrollback high-water mark; only parsed summaries are kept, not raw scrollback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e4161f92de2ed2adf3b7c52f706c700a52bb128cfef5cc02b2eb1f1c2e3da42d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 384,
+          "line_start": 373,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L373-L384"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 343,
+          "line_start": 343,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L343-L343"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 349,
+          "line_start": 349,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L349-L349"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 347,
+          "line_start": 345,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L345-L347"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 365,
+          "line_start": 351,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L351-L365"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 391,
+          "line_start": 391,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L391-L391"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dca873ff3848c24cedae81afb7bb702e59c1145ba4a681a972ebff5bda27ff7",
+        "slc_25358ffee3c82c313471110eb987884c18ca97c1cfcbbdfe71f3c7860d9deff7",
+        "slc_418e9223a8675ab70e6c2d335800b7a595f07ea5633fa772a0901e3cd191eb22",
+        "slc_71e8d0767fee9f33eb3ba4d6a8b7a44acd06f8c56e6e3bc4ca94cead74318ce8",
+        "slc_763fed323a7028aa5b3c1391527a1e27eeef400542a2d01c2abb5f8fe92a5a3d",
+        "slc_d9eed86982afcabc9b278904477a9bc7f39d6277002ef89eb294bb79a48fcb71"
+      ],
+      "text": "History persists to ~/.control/history.db (0600) with WAL and foreign_keys pragmas, sessions and actions tables, SHA-256 content-hash deduplication, and schema versioning via PRAGMA user_version."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4710e0ea7da04c5390633f588e7967aaccdd469c76f085280b214dc5504121ef",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 313,
+          "line_start": 313,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L313-L313"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 311,
+          "line_start": 308,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L308-L311"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_436fd81df8714241b532920670a499904c0e8d2c9558a4925650842955d51c96",
+        "slc_440bd5fd662ab17f7d4f9a593abe9daabad3089af0e189ddf7e42b49a46fc8c7"
+      ],
+      "text": "A redaction pass strips secret patterns (API keys, KEY/SECRET/TOKEN/PASSWORD env assignments, connection strings) before storage, replacing them with [REDACTED]; raw scrollback is never persisted or served."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6310a43d48c89d8978f5d98b9625d09a4daa97fb66d62eb5f22d01c437b9156d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 436,
+          "line_start": 436,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L436-L436"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 434,
+          "line_start": 431,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L431-L434"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 440,
+          "line_start": 440,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L440-L440"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f679ddb9b41ce5202ae62be62fe9a91e197b01ad708ebc564558b47ad793332",
+        "slc_c596e1bf165aad61e64404d540a38b053b232f07c60393f3ac72a4fca45b9498",
+        "slc_ceaa6ec5a5cefc41f87c35e9d35801dea50f00aa754fa57de81479795d087907"
+      ],
+      "text": "Socket security relies on file permissions (0700 directory, 0600 socket/db/pid); the trust boundary is same-user access, and socket paths over 104 bytes fall back to /tmp/control-<uid>."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_da651159fec9ccd2eecf3aef0bf91424bca37ffbfa805c82bc0bc7935797b9b3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 492,
+          "line_start": 487,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L487-L492"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33536a7575fbb788bc5151c92b96391fa07a053b2111464e08d42e7e0e3b1d11",
+        "slc_efcf14a199939e3de421d839156c722ce4ff6fe3634f024f150d7e88ce80647f"
+      ],
+      "text": "The tech stack specifies Go, modernc.org/sqlite as the only acceptable SQLite driver (mattn/go-sqlite3 forbidden), bubbletea/lipgloss for the TUI, and net/http over a Unix socket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c1d779ed02d99285fcd0e14e4fc4d53ea6758469cfa2f7a85a52c285420a5640",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 264,
+          "line_start": 264,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L264-L264"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a37a7a9ccea41dd34f6dedb223a760a83d8e330d76d78d0b7d9a744cf89de24d"
+      ],
+      "text": "The design requires tmux version 2.6 or newer; the daemon checks the version at startup and warns if older."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a50e53a41d3d1cf309220dcdc2c194ad184b148f160f1464cac9d82546ceaa84",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L50-L50"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 48,
+          "line_start": 43,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L43-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12978d58ca232281a5cb479aca005f7fa0494aea1d83f4ad88d193c56fee7692",
+        "slc_c63cd8c3a54cbe711fe1ff306638ad2244802e07ee17bfcd1f05ebde0bc7d5e1"
+      ],
+      "text": "The daemon handles lifecycle signals: SIGTERM/SIGINT drain requests, finalize sessions, and clean up socket and PID files; SIGHUP reloads config such as poll interval and session names."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c063ea1083b0ac93069907b7695b83817bb59034697a6ab94536a323f777cc93",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 41,
+          "line_start": 33,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L33-L41"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 403,
+          "line_start": 401,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L401-L403"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27b570ec38f0f4a0d36a997541470cbfecba6545506e3fe8ee9a7e188a74d92e",
+        "slc_c92b259412fdbcf18041fb5824833f2207691ecf1a3c3b2141a3d5b338020586"
+      ],
+      "text": "On startup the daemon performs crash recovery, marking sessions whose PIDs or panes no longer exist as status 'crashed' with an ended timestamp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_788e0bc7d226446d7dc839688fd1d292784e4d744504d7ee2e7a3159d299718a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+          "line_end": 546,
+          "line_start": 542,
+          "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md#L542-L546"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a759348d1d2ebda3b57ebc0058fa8feb618aa792e813acb72bec1297685d05d"
+      ],
+      "text": "Stated non-goals: no agent launching, no cost/token tracking, no centralized agent configuration, no remote monitoring (local Unix socket only), and no detection of agents outside tmux."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a91c5b121f0a26645df1e70044ab79cb3985129a5000f086305c76561723c7a3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 223,
+          "line_start": 220,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L220-L223"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L218-L218"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4eb85a24929f6bf7fe0e9ed9fee8b641fbe63c8e29ef2560231a6ef26db704a7",
+        "slc_5bfce8758dccac19444dca76d73f447049ec5a595da9e48e837058977ea24dd0",
+        "slc_b7c9003df817c7755adf82fbc2b7531a9fc185f260974c3a48d276f5726bb390"
+      ],
+      "text": "Repository development practice: the implementation plan instructs agentic workers to use superpowers subagent-driven-development or executing-plans skills, with checkbox-tracked tasks and TDD-style test-first steps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc194878d650776d6da60d5fce0831118544a956d2f908bb164d6f2638b840a8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L30-L30"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1b84882a902856a23a1b3ba2cdbfec4abdcf187fc68e8d5e2d869d9b02ae8f5",
+        "slc_c3e8b66169de08874525fa185825db29025a29c6b9c8befec0555997bfce3338"
+      ],
+      "text": "Repository development practice: the plan mandates commit hygiene (staging specific files, not git add -A) and test hygiene including -race for concurrent packages, 30s timeouts, and unique socket paths from t.TempDir()."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_778f4e1750fdae2515666f7b486d1a9d220757d9381c0de5b1215371090c2d13",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 26,
+          "line_start": 13,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L13-L26"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 257,
+          "line_start": 256,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L256-L257"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 260,
+          "line_start": 259,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L259-L260"
+        },
+        {
+          "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+          "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+          "line_end": 251,
+          "line_start": 249,
+          "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+          "repository": "2389-research/fleet-control",
+          "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md#L249-L251"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15622c57b8569969f1f50b7186245445e7206098d60f644faa800c14dd7ce218",
+        "slc_4a9213570dd51c0dfca32b1656047fef6a7d9b1256cae2a0dbdd22663c2b99dc",
+        "slc_9f2627bd12a804a446c8521229be2f300d107522d593f6221129d6c9e11c5157",
+        "slc_c07becc70cb551fc2ca7332ca6d7180c535f3bd7797ab3fc1f97be5a92077e6d"
+      ],
+      "text": "Repository development practice: the plan defines an acyclic import DAG (e.g., api must never import daemon, registry must never import tmux) and a Makefile with build, test, lint (go vet), and clean targets."
+    }
+  ],
+  "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 156,
+        "path": "README.md",
+        "size": 4696
+      },
+      {
+        "lines": 1424,
+        "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+        "size": 50664
+      },
+      {
+        "lines": 580,
+        "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+        "size": 25023
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 123,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 79,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_8bf308ff5e8950b7aabf3bc3bc6bd8e4",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/fleet-control/efe2657f5465da3f4e8740165b6f122eb8e38035/e6a4a546b9278950/manifest.json",
+  "package_id": "pkg_d50ec7199ffda72ba7966a30f6a94f389cccc2387781c606ef062b7c587c4404",
+  "repo": "2389-research/fleet-control",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6f37842550e72c0220aaa0d15d80082298268d921cb77714d027fef48707f4df",
+  "snapshot_id": "e6a4a546b9278950",
+  "sources": [
+    {
+      "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+      "git_sha": "84b11176180d1348e34ec2e6d07bba89a82cfe49",
+      "lines": 156,
+      "path": "README.md",
+      "repository": "2389-research/fleet-control",
+      "sha256": "bf3f0cc234ef52b8541784063a2b04e3a99981e69d3454cc2f47a8104587cb84",
+      "source_id": "src_4b8dedd2281e57f3b06bcb602769d207",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/README.md"
+    },
+    {
+      "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+      "git_sha": "4988eb25cc332a64b03f8205ff2fb2f93c333a2e",
+      "lines": 1424,
+      "path": "docs/superpowers/plans/2026-03-23-control-plane.md",
+      "repository": "2389-research/fleet-control",
+      "sha256": "39201df40e6a0566f8a306d24f57aecafa8a7e751ee9603b28c5d20fc21f9190",
+      "source_id": "src_7c9d9d6141c75b87bda40a5e4a3c0b46",
+      "stored": "2026-03-23-control-plane.md-6b36283cf267.md",
+      "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/plans/2026-03-23-control-plane.md"
+    },
+    {
+      "commit": "efe2657f5465da3f4e8740165b6f122eb8e38035",
+      "git_sha": "acb154e84e5e07ca9fa2a362d1b1f0d567f5decb",
+      "lines": 580,
+      "path": "docs/superpowers/specs/2026-03-23-control-plane-design.md",
+      "repository": "2389-research/fleet-control",
+      "sha256": "a047eff1f0cd5afaa18888752ce52c97185ac3faf0f3b22fb8f07ed51b898ea9",
+      "source_id": "src_4b8c3616b6125cb48740031cc4bde733",
+      "stored": "2026-03-23-control-plane-design.md-410a6b2b2f5a.md",
+      "url": "https://github.com/2389-research/fleet-control/blob/efe2657f5465da3f4e8740165b6f122eb8e38035/docs/superpowers/specs/2026-03-23-control-plane-design.md"
+    }
+  ],
+  "summary": "The evidence is a design spec and implementation plan for `control`, a Go binary that observes and manages AI agents running in tmux via a daemon, CLI, TUI, and MCP server. Claims below describe the documented design; the plan also contains contributor-facing workflow instructions. Evidence coverage: 143 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

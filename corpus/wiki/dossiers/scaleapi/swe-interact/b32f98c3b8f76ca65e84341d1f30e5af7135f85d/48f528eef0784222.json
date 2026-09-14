@@ -1,0 +1,427 @@
+{
+  "applied_operation_id": "op_c748394e285046768ddc18b2af2dc00d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_74c4f58be9edf75c088f9459d5f638f508d6404b9af72586c89041a08d99b668",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 14,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L9-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fc0c0306dd7c4810ccd0411ecad29c1c39f92930351ad02cd46b198523078154"
+      ],
+      "text": "The repository ships task data under data/multiturn and example run configs under run_configs/multiturn that correspond to that data directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b686418741edf4ba6d7a9d48a3ce12436e74572079770c3e84db5c1db8dd2d37",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 24,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L20-L24"
+        },
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e0feb3b718e086024cac1367d58f1646069ef64718a156a93925577533c7f8a",
+        "slc_e280773c3c2ae31d44d5210d3bdbe948ba421f3de567d5f5aa16a20940108914"
+      ],
+      "text": "Running the tasks requires installing Harbor, done by cloning the laude-institute/harbor repository and installing it with uv tool install."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0d2c6407043f93932ea467ed70c3d65bd76bf7093381a73dc2821fc9257c2103",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L26-L26"
+        },
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 31,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L28-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_043556b6bc9a552e05accb7bdbe92cf9c63f6e1a4701b1568da28845b1b80d15",
+        "slc_eae6f3bd95c697dead1ea855f5fc21311c9c7fe6413d41b546085e77fcb19d8f"
+      ],
+      "text": "Modal is set up to provide sandbox environments, via installing the modal package with uv pip and running modal setup."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e12e970d694a1febeaa1801002dcccda5099b5bbf805f01114ca64e32074a48c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 40,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L37-L40"
+        },
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_477c6bf0b13dd26f9c7c6c024cf01b5ad0b38edc32226bb2b3cc94966258178c",
+        "slc_603ec34d14572ba86a5b26164c15f7cb3f837f4890d06b2b2b630cbc8833b6a6"
+      ],
+      "text": "Run configs load credentials from a harbor/.env file located relative to the repository root, which must be created before launching a run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79f46fb8f916fcbf0fed1fc9d1b87f8f456f71e8fd20e20e28ed0177f71a7c75",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a27bea6333757b14e2aae1103f3f9988014d7c550a945bcdcac45488815bc818"
+      ],
+      "text": "The benchmark uses a simulated user (GPT 5.5 high) and rubric grading; the RF task default rubric model is Anthropic Opus 4.5, matching the original SWE Atlas Refactoring task."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd5435c7dff41ff183a8e3789f41666f895d9d386fbb3e2e139e8f2686a44acf",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4cc74f8ed7a85b0b73f3ff3df210af8878699c0546184c2a7150f8a9946e0b43"
+      ],
+      "text": "The configured API gateway must support both openai/gpt-5.5 and the rubric model anthropic/claude-opus-4-5-20251101; a LiteLLM gateway works, while direct OpenAI endpoints need an EVAL_MODEL override."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_13fcef1ae52698d9948197d72669883f086d8f6ba7fe9b83d1bf8b6b564b0094",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 63,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L57-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3abe9d2d197c8e39e077be388c6e8d624e7b1cbbe83221d0b0af3acd2f266190"
+      ],
+      "text": "Per-agent configs require different credentials: Codex configs need only the common block, Claude Code configs need ANTHROPIC_API_KEY, OpenCode needs GEMINI_API_KEY, and kimi-cli needs an OpenAI-compatible endpoint."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3367429383423186304e142183e99eab653d1e43ca258d6590092ce051076d5e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L75-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_835ab6afe0dcc01ee136042ddc9953d6daa602c51969b33326df32c131872df3"
+      ],
+      "text": "Multi-turn run configs set the simulated user model to openai/gpt-5.5 through the SIM_USER_MODEL variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1cf045c138894d6a98637646e2305274b22e7959a56bbe93359f3d84ea2ff5ea",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L67-L67"
+        },
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 81,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L79-L81"
+        },
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 73,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L71-L73"
+        },
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 77,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L77-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3cdf6f9944b712f6ba1d127e433f1ec888ef76ad65e4b3cb5efe0c484003744e",
+        "slc_4a7d7ead2adb16e2b39c0a868c0ba8b46fd165cc38ecec0620f44c149e80ea53",
+        "slc_8d34792a7cccbaf205f280864ba87e04d73771b6aaedffa306189f74b950e4da",
+        "slc_b857e164b0b0b130fbee1ba7e7f824cf4f613a419ba3d866791523eee3a7f718"
+      ],
+      "text": "Runs are launched from the repository root by executing a run config script, e.g. bash run_configs/multiturn/gpt-5p5-high_codex.sh; a single-turn baseline example is also provided."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d756c464c48877f6ac4619ca3be8b4701cd7b35802ae6efd521137287be81d7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ba617f3c0b81a2d96a322dfda1f3590225d74dd8ec588b0535717d93f251610"
+      ],
+      "text": "Run scripts write outputs under results/, and custom configs are made by copying an existing script and adjusting the agent, model, sampling count, or Harbor arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1caa37303fed99480a7ce966db1b0a01d4faf742ee8cc7666f21d0c75e7565f5",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L3-L3"
+        },
+        {
+          "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+          "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+          "line_end": 99,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "scaleapi/swe-interact",
+          "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md#L89-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_510755060306f3b623a791ea833f22772e88badcb3a284b8edab8131e950437e",
+        "slc_b003dbbd4e4bf4da2e0bcf3894aa6870e79412a3227ec1f10b4ded733dc0fdec"
+      ],
+      "text": "The work is associated with an arXiv paper (2606.30573) titled 'SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions' by Raghavendra, Gunjal, Sabharwal, and He."
+    }
+  ],
+  "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 99,
+        "path": "README.md",
+        "size": 3145
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3490,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_a65af6617ce150a69252f644838ce5b2",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 2,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/scaleapi/swe-interact/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/48f528eef0784222/manifest.json",
+  "package_id": "pkg_ee2cae619661299331ca4051788ad2e2bed346caf262eec63f809c1e457e7edc",
+  "repo": "scaleapi/swe-interact",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "07dd3315ebe2bf5754d2b1e5d6ca5b6038933d4f35cbeaf493df5ee2fdb30168",
+  "snapshot_id": "48f528eef0784222",
+  "sources": [
+    {
+      "commit": "b32f98c3b8f76ca65e84341d1f30e5af7135f85d",
+      "git_sha": "cb21379d4d4b396e63606939d48c918103435e49",
+      "lines": 99,
+      "path": "README.md",
+      "repository": "scaleapi/swe-interact",
+      "sha256": "4fcd1940f0b6f77fc06ac865e9a9f6c33460dba9244f0bf2db686e7d1ebbdf02",
+      "source_id": "src_b55226a6a8a25a78af53881cbe5f5802",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/scaleapi/SWE-Interact/blob/b32f98c3b8f76ca65e84341d1f30e5af7135f85d/README.md"
+    }
+  ],
+  "summary": "The repository ships task data under data/multiturn and example run configs under run_configs/multiturn that correspond to that data directory. Running the tasks requires installing Harbor, done by cloning the laude-institute/harbor repository and installing it with uv tool install.",
+  "superseded_claim_ids": []
+}

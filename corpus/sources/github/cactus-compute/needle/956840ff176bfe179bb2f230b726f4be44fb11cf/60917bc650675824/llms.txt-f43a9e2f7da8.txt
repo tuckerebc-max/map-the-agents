@@ -1,0 +1,221 @@
+# Needle 2 (cactus-needle)
+
+> Needle 2 is an open 45M-parameter on-device model for tool calling, device control, and structured extraction. This Python package (`cactus-needle`) is inference + LoRA fine-tuning + export. Text goes in, a JSON tool call comes back; a byte-level grammar compiled from your schemas constrains every token, so the call is always well-formed. The inference engine is a 14MB binary fetched once from Hugging Face and cached; a full session runs in ~28MB RAM.
+
+This file is written for AI coding assistants. It is enough to write correct Needle code without reading the source. Copy the patterns; do not invent API that is not listed here.
+
+## Install
+
+```sh
+pip install cactus-needle                # runtime (inference only)
+pip install "cactus-needle[train]"       # adds JAX + training deps for finetune/build
+```
+
+`import needle` is lightweight (no JAX). JAX is imported lazily and only by fine-tuning/export/build, and the training dependencies live behind the `[train]` extra - a runtime-only install cannot run `needle finetune`/`build`. For GPU training use `[train,gpu]` (CUDA) or `[train,metal]` (Apple Silicon). The engine binary auto-downloads from Hugging Face on first `Needle(...)` use.
+
+## Core API
+
+- `needle.Needle(tools=None, system=None, weights=None, tool_index_path=None, buffer_size=65536)` - create an agent bound to one toolset.
+  - `tools`: list of decorated functions, Pydantic models, raw JSON-schema dicts, or a JSON string.
+  - `system`: optional environment-facts string (see System facts).
+  - `weights`: path to a tuned `.cact` to load instead of the baked base model.
+  - `tool_index_path`: path to persist tool embeddings when you declare many tools.
+- `agent.run(query, max_steps=8, max_new_tokens=256) -> dict` - full agentic loop: model picks calls, Needle executes your Python functions, feeds results back, returns the final response with the executed tool results attached as `results`.
+- `agent.complete(text, max_new_tokens=256) -> dict` - one turn; you execute the call and feed the result back yourself via the next `complete(...)`.
+- `agent.reset()` - rewind the conversation, keep the tools loaded.
+- `needle.tool` - decorator that turns a function into a tool schema (attached as `fn._needle_tool`).
+- `needle.Field(default=..., *, description, enum, const, ge, le, gt, lt, multiple_of, min_length, max_length, pattern, format, min_items, max_items, unique_items)` - per-argument constraints; attach inline with `typing.Annotated`.
+- `needle.extract(text, schema, system=None, max_new_tokens=256, weights=None)` - one-shot extraction; returns a Pydantic instance if `schema` is a model, else a dict (or `None` if nothing matched). `weights` selects a tuned `.cact` and defaults to whatever the engine already has loaded, so extraction inherits the active tuned model unless you pass another path.
+
+## Defining tools (three equivalent ways)
+
+Decorator - signature gives types, docstring is the description, Google-style `Args:` gives per-argument docs, a default makes an argument optional, `Literal[...]` becomes a fixed choice set:
+
+```python
+import needle
+from typing import Literal, Annotated
+
+@needle.tool
+def set_thermostat(temperature: int, mode: Literal["heat", "cool", "auto"] = "auto"):
+    """Set the thermostat.
+
+    Args:
+        temperature: target temperature in Celsius
+    """
+    return {"temperature": temperature, "mode": mode}
+
+@needle.tool
+def send_money(amount: Annotated[float, needle.Field(gt=0, le=10000)], to: str):
+    "Send money to a handle."
+    return {"sent": amount, "to": to}
+
+agent = needle.Needle(tools=[set_thermostat, send_money])
+```
+
+Raw JSON schema (what the engine actually consumes):
+
+```python
+tools = [{
+    "name": "set_lights",
+    "description": "Turn a room's lights on/off and set brightness",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "room": {"type": "string"},
+            "on": {"type": "boolean"},
+            "brightness": {"type": "integer", "minimum": 0, "maximum": 100},
+        },
+        "required": ["room", "on"],
+    },
+}]
+agent = needle.Needle(tools=tools)
+```
+
+Pydantic model (mainly for extraction):
+
+```python
+from pydantic import BaseModel
+class Invoice(BaseModel):
+    vendor: str
+    total: float
+invoice = needle.extract("Invoice from Acme Corp, $1,200.00", Invoice)  # -> Invoice(...)
+```
+
+## Response shape
+
+Every turn returns one dict:
+
+```json
+{
+  "type": "call",
+  "success": true,
+  "error": null,
+  "error_code": null,
+  "function_calls": [{"name": "set_lights", "arguments": {"room": "living room", "on": true}}],
+  "reasoning": "'living room' -> room; 'dim' -> on true",
+  "confidence": 0.94,
+  "prefill_tps": 4300.0,
+  "decode_tps": 850.0
+}
+```
+
+- `type` is `"call"` when the model wants tool calls (empty `function_calls` is the refusal for off-topic input), `"respond"` when the loop is finished; the answer is the tool results, no free text is generated.
+- `function_calls` is a list of `{"name", "arguments"}`. Read `arguments` directly; it is grammar-guaranteed to match your schema.
+- `reasoning` is a short unconstrained derivation of each argument from its source span.
+- `confidence` is a calibrated score in [0,1] (see Confidence gating).
+- `validation.ungrounded`, when present, lists `tool.field` names whose value is not grounded in the input, including date arguments whose year matches nothing in the conversation or the `system` facts. `run()` refuses those calls with `{"error": "ungrounded field"}` unless `strict=False`.
+
+## Behaviour contract (important for correct code)
+
+- Off-topic / unsupported request -> empty `function_calls` (a refusal). There is no free-text fallback. Always handle the empty case.
+- Arguments contain only values evidenced in the input. Optional fields with no evidence are omitted, not guessed. Do not assume a key exists.
+- Multi-turn: repeated `complete(...)` on the same agent continue one conversation; later arguments can depend on earlier tool results. Feed each result back as the next `complete(json.dumps(result))`.
+- One toolset per session. To change tools, make a new `Needle(...)`. `reset()` clears history but keeps the tools.
+
+Driving the loop manually:
+
+```python
+import json
+r = agent.complete("dim the living room to 30")
+if r["type"] == "call":
+    out = set_lights(**r["function_calls"][0]["arguments"])
+    r = agent.complete(json.dumps(out))   # feed result back
+```
+
+## Confidence gating
+
+`confidence` is the min of a post-hoc calibration head and the decode probability of the call. Calibration holds for the base model only: an agent constructed with `weights=` reports `confidence` as None (fine-tuning does not update the head). Pick a threshold per product; act at/above it, escalate below it:
+
+```python
+r = agent.complete(user_text)
+calls = r.get("function_calls") or []
+if calls and r["confidence"] >= 0.8:
+    execute(calls[0])
+else:
+    escalate_or_reask()
+```
+
+## System facts (optional)
+
+Pass environment state as facts, never instructions. Recognized keys: `date`, `locale`, `device`, `battery`, `network`, `location`, `user`, `assistant`.
+
+```python
+agent = needle.Needle(tools=tools, system="date: 2026-07-21 Tue 14:30; locale: en-US; device: phone")
+```
+
+Relative language ("tomorrow at 7") resolves only when a `date:` fact licenses it. Omitting the system turn is safe.
+
+## Tool retrieval (many tools)
+
+With more than 5 declared tools, a built-in retrieval head renders only the top-5 per turn and constrains the grammar to that subset. Persist embeddings across runs:
+
+```python
+agent = needle.Needle(tools=big_catalogue, tool_index_path="tools.idx")
+```
+
+## Fine-tuning (CLI)
+
+LoRA on the frozen base, merged at export. Data is JSONL, one example per line; `reasoning` optional, off-topic example has `answers: []`:
+
+```json
+{"query": "dim the kitchen to 10", "tools": [{"name": "set_lights", "parameters": {"type": "object", "properties": {"room": {"type": "string"}, "brightness": {"type": "integer"}}, "required": ["room"]}}], "answers": [{"name": "set_lights", "arguments": {"room": "kitchen", "brightness": 10}}]}
+```
+
+```sh
+pip install "cactus-needle[train]"                                                 # training deps (JAX, flax, optax)
+export OPENROUTER_API_KEY=sk-or-...
+needle generate-data --tools my_tools.json --num-samples 500 --output data.jsonl   # optional
+needle finetune data.jsonl --epochs 3 --generate 300                                # LoRA; auto-downloads base
+needle build checkpoints/needle2.pkl --lora checkpoints/needle_lora.pkl --out my.cact
+```
+
+Run a tuned model - the engine is weights-agnostic:
+
+```python
+agent = needle.Needle(weights="my.cact", tools=[...])
+agent.run("...")
+```
+
+Options: `finetune --lora-rank 16 --lora-alpha 32 --lr 1e-4 --batch-size 16 --max-len 1024 --val-split 0.1 --checkpoint <base.pkl> --checkpoint-dir <dir> --out <adapter.pkl> --generate <n> --model <id> --workers <n>`; `--model` defaults to `deepseek/deepseek-v4-flash`, `--workers` defaults to `8`, and `--checkpoint-dir` defaults to `checkpoints`. `--generate` synthesizes extra examples through the configured OpenRouter endpoint before training. `build --bits 2|4 --upload` (with `NEEDLE_HF_REPO=<you>/<model>`).
+
+## Playground (browser)
+
+```sh
+needle playground                    # base model at http://127.0.0.1:7860
+needle playground --weights my.cact  # a tuned model
+```
+
+Preset demos, editable tools/prompt, multi-turn follow-ups, and a "Finetune on these tools" button that runs the pipeline above and returns a downloadable `.cact`.
+
+## Environments (ready-made tool surfaces)
+
+`needle.environments` ships six: `smart_home`, `media_player`, `productivity`, `wearable`, `kitchen_appliance`, `data_capture`. Each module has `TOOLS`, `SYSTEM`, a lazily constructed `agent`, `TEST_CASES`, and `run_tests(min_confidence=0.0)`; `python -m needle.environments.smart_home` runs its frozen acceptance suite.
+
+```python
+from needle.environments import smart_home
+smart_home.agent.complete("dim the study lights to 30 percent")
+```
+
+Adapt by swapping the Literal values for your own and keeping the shapes: closed sets as enums, bounded numbers, verbatim copy for free text, five tools or fewer.
+
+## CLI summary
+
+- `needle run --checkpoint <base.pkl> --query "..." --tools tools.json` - JAX reference inference from a checkpoint (dev path; normal inference is the Python `Needle` API above).
+- `needle generate-data` / `needle finetune` / `needle build` - the fine-tuning pipeline.
+- `needle playground` - browser UI.
+- `needle fetch [--platform-tag <tag>] [--out <dir>]` - pre-download the inference engine for this machine (or another platform) into the cache; prints the path. For air-gapped devices, also see `NEEDLE_LIB_PATH` and `HF_HUB_OFFLINE` in doc/apis.md.
+- `needle download <org>/<repo>[/<file>.cact] | <platform> [--out <dir>]` - pull a published `.cact` (single-archive repos need only `<org>/<repo>`), or pass a platform folder name (`macos-arm64`, `linux-x86_64`, `wasm`, `wasm-component`, ...) to fetch that platform's engine files into `<out>/<platform>/`. Native runners are marked executable; `wasm-component` contains the WASI Preview 2 component and WIT contract.
+
+## Common mistakes to avoid
+
+- Do not expect free-text answers to arbitrary questions; unsupported input returns an empty call. Handle it.
+- Do not read `arguments` keys that were not evidenced in the input; optional fields may be absent.
+- Do not create one `Needle` per turn for a conversation; reuse the instance so context carries. New tools = new instance.
+- `import needle` does not import JAX; only `needle finetune`/`build` do.
+- `weights=` expects a `.cact` (from `needle build`), not a `.pkl` checkpoint.
+- The engine cannot unload weights: once a tuned `.cact` is bound, constructing or calling a base-model agent raises instead of silently answering with those weights. Construct agents that want the base model before any tuned one, or run them in separate processes.
+
+## Telemetry
+
+Anonymous usage counts only (function name, package version, OS, random install id - never prompts, outputs, or data). Opt out with `NEEDLE_TELEMETRY=0` or `DO_NOT_TRACK=1`; `CI` environments are excluded automatically.
+```

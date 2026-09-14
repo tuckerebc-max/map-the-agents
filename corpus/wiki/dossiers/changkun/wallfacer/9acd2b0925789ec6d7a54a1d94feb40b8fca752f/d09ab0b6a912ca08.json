@@ -1,0 +1,709 @@
+{
+  "applied_operation_id": "op_52e1685158c04c0f99a9594c426a919c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9015b4119d240afdb1e979a0b8fa9e0903f896d7bb8d122a978650d33311bd1",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3eedf386a24bd4e9bb25c83df7a15da4f8d3e97c743a6591fe8dfd5d8ba6e9f7"
+      ],
+      "text": "Wallfacer is described as an autonomous engineering platform spanning chat, specs, task boards, and code, with agents operating at every abstraction level."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf60fd9a8bb028ed440145187df1d19f71fb91fb9280c99d461ecd01cd5eb738",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L33-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11d42dfb68a29e8a690324fa95b14ec453d729d7275a4ba7025b07e9734c8d89"
+      ],
+      "text": "Specs serve as an intermediate representation: ideas become structured, versioned, reviewable specs that agents reason about and implement against, rather than going straight to code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2668981d4fdf7c9838bca14c8b85605ddd9670824ca14194522bc22c226df6a5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 106,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L103-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f39990907edfcf355758430a0c05410f2b67b36e92b78cef2d7942eb843787c"
+      ],
+      "text": "Execution is built from agents (sub-roles like impl, test, commit-msg, title, oversight), flows composing agents into pipelines, tasks that pick a flow, and scheduled routines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4d7e8a9fb96c733758a26537a268fb98ee4ca072a24a45ed94a7d825483a8779",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L65-L65"
+        },
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 219,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L213-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_374d60fa12dbf0ceeb6379890cfd396952151b7d93791d10feb0b7823ffa7cc7",
+        "slc_92ad00dd2895d7dceda097326904aee352d7d523b42b1823df2ef7cff7df3dfe"
+      ],
+      "text": "The CLI surface includes wallfacer run, status, spec, auth, web, and doctor, with -help flags per command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de753f0d1ff4bba374e8062c9f6b6528daee48cf9897bee35ba6273f5b71b823",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c48bd84d38308c20f11ad4f94a0d52a7bfb3faefc78004ca46764f45e21669af"
+      ],
+      "text": "The planning chat exposes slash commands such as /create, /validate, /break-down, and /dispatch to drive the spec lifecycle."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2590d0d49472d28229ed6c4ef24d8119fc575a6c82c05b5f8167c8f276a0ab09",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L95-L95"
+        },
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 139,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L136-L139"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c48bd84d38308c20f11ad4f94a0d52a7bfb3faefc78004ca46764f45e21669af",
+        "slc_fc0e5ee7be7c6dc66cc8defe40f8b31ee7457d1a4340a43e7f054a057e5cfdcb"
+      ],
+      "text": "Specs follow a seven-state lifecycle (vague, drafted, validated, testing, complete, plus stale and archived) with a dependency DAG and atomic dispatch and undo."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f27ed7772d5e1925479c831eab57862470a7902808d3f643a20a49a7262392ef",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L116-L116"
+        },
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 35,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L35-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a75206cdbfb5b121b676741fa335e43493f3228a746df80d132660e6de6927b",
+        "slc_3bd08e8b12919c0f5bb63286d3133a5bffb541f6e3c7c3265983aee6cbf50681"
+      ],
+      "text": "Each task runs as a host process in its own git worktree, enabling parallel agent execution without conflicts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_848c248d4a02dd987968653d4cdc6c0159b48d9a8dbdd3ca784c2588c3232755",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L15-L15"
+        },
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72e1ba829cf8565d5020a2cd97acdb78242af2a7e6632792c14bc1ee07f2fc3d",
+        "slc_909901a7c89afd29b06c2c9b5aa318cb68fe9485e3e60a57b8f80428340f2081"
+      ],
+      "text": "The product is harness-agnostic, working with Claude Code, Codex, Cursor, OpenCode, and Pi via a pluggable harness layer, and users bring their own LLM provider."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19a7406c704a6ca45244343d8b40471d776f4f4abc55eb6b864a2f93586a3ba8",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47a96408a8f9d8c34bb7bb02cd35334a5d904af7b306b24caa2d8d63673065d4"
+      ],
+      "text": "Users control agent autonomy per task, spec, or project, from fully autonomous loops (implement, test, commit, push) to stepping in at any point."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4bfb4238e3b08aa99cf002e5a6e9b312975ac82ac5e682045d97d82601c389e2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L108-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cf4e03918476c989b27b6b025093a25f717dd64b3f006ca44ac84c3d3626b15"
+      ],
+      "text": "User-authored agents and fleets are defined as YAML under ~/.wallfacer/{agents,flows}/ and edited on a unified Agent Graph surface without restarting the server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1618d0c863512ddecae3a20455489038043eb3a765d0a875b558426c5ae895ab",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L132-L132"
+        },
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L126-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e938462fcdb7f5f6980dacba921c02cd3a73eb5ab1b5fbba56cae5205f66969",
+        "slc_f088e1977e6b921965c76984cae2028cc5374c008f8d73576d429bbdf283328f"
+      ],
+      "text": "The product provides oversight tooling: per-task event timelines, diffs against the default branch, AI-generated oversight summaries, and token/cost tracking by task, activity, and turn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca4ec86b62900a295ebab566ac1baaf7f035593a2fa23cc88c55fac1ffac1f4a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+          "line_end": 219,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md#L213-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_92ad00dd2895d7dceda097326904aee352d7d523b42b1823df2ef7cff7df3dfe"
+      ],
+      "text": "Wallfacer is pre-1.0; the HTTP API, ~/.wallfacer on-disk layout, and WALLFACER_* environment variables may change between releases, and all Go packages live under internal/ with no importable public API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9fda7d3639d1533a8f88743c2143f09e309c3d3365026758a6a294cdc8297dd6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "5b1b6a5457bc49f8a757e07a267ced21ddc616bf",
+          "line_end": 29,
+          "line_start": 26,
+          "path": "BUGS.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/BUGS.md#L26-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e4e14c76d438fb0ff4683fc84775f62783785a00119b5bcce5a624299aedc47"
+      ],
+      "text": "A known bug: the OAuth redirect_uri is derived from the requested address before a port fallback, so when the configured port is taken the redirect points at a port the server is not listening on."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f6c6628b2b1fe8b514869b31aa68aca62696e36f1701e4215f45975820f7f59",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+          "git_sha": "588b48460b0d07564698bc5621a70d4d878ac56c",
+          "line_end": 7,
+          "line_start": 1,
+          "path": "AGENTS.md",
+          "repository": "changkun/wallfacer",
+          "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/AGENTS.md#L1-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eec6c1fa22662c15edd49ce6088e9fc987a33ba5777dae9e20b8f7651c0f82a3"
+      ],
+      "text": "Repository development practice: AGENTS.md requires a reproducible test for every bug fix, frequent small-scope commits, specs before big features, and register-specific writing conventions."
+    }
+  ],
+  "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 223,
+        "path": "README.md",
+        "size": 14062
+      },
+      {
+        "lines": 7,
+        "path": "AGENTS.md",
+        "size": 979
+      },
+      {
+        "lines": 43,
+        "path": "BUGS.md",
+        "size": 2502
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 1865
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4346
+      },
+      {
+        "path": "docs/guide/agent-graph.md",
+        "reason": "file-budget",
+        "size": 7454
+      },
+      {
+        "path": "docs/guide/artifacts.md",
+        "reason": "file-budget",
+        "size": 2191
+      },
+      {
+        "path": "docs/guide/automation.md",
+        "reason": "file-budget",
+        "size": 10586
+      },
+      {
+        "path": "docs/guide/board.md",
+        "reason": "file-budget",
+        "size": 15022
+      },
+      {
+        "path": "docs/guide/chat.md",
+        "reason": "file-budget",
+        "size": 6223
+      },
+      {
+        "path": "docs/guide/concepts.md",
+        "reason": "file-budget",
+        "size": 8634
+      },
+      {
+        "path": "docs/guide/configuration.md",
+        "reason": "file-budget",
+        "size": 19442
+      },
+      {
+        "path": "docs/guide/getting-started.md",
+        "reason": "file-budget",
+        "size": 6247
+      },
+      {
+        "path": "docs/guide/mission-control.md",
+        "reason": "file-budget",
+        "size": 4044
+      },
+      {
+        "path": "docs/guide/oversight.md",
+        "reason": "file-budget",
+        "size": 9246
+      },
+      {
+        "path": "docs/guide/plan.md",
+        "reason": "file-budget",
+        "size": 11669
+      },
+      {
+        "path": "docs/guide/routines.md",
+        "reason": "file-budget",
+        "size": 3851
+      },
+      {
+        "path": "docs/guide/usage.md",
+        "reason": "file-budget",
+        "size": 3698
+      },
+      {
+        "path": "docs/guide/whiteboard.md",
+        "reason": "file-budget",
+        "size": 2136
+      },
+      {
+        "path": "docs/guide/workspaces.md",
+        "reason": "file-budget",
+        "size": 7710
+      },
+      {
+        "path": "docs/internals/agent-graph-runtime.md",
+        "reason": "file-budget",
+        "size": 13096
+      },
+      {
+        "path": "docs/internals/api-and-transport.md",
+        "reason": "file-budget",
+        "size": 43502
+      },
+      {
+        "path": "docs/internals/architecture.md",
+        "reason": "file-budget",
+        "size": 44860
+      },
+      {
+        "path": "docs/internals/auth-and-identity.md",
+        "reason": "file-budget",
+        "size": 17505
+      },
+      {
+        "path": "docs/internals/automation.md",
+        "reason": "file-budget",
+        "size": 18032
+      },
+      {
+        "path": "docs/internals/data-and-storage.md",
+        "reason": "file-budget",
+        "size": 32931
+      },
+      {
+        "path": "docs/internals/development.md",
+        "reason": "file-budget",
+        "size": 9202
+      },
+      {
+        "path": "docs/internals/git-worktrees.md",
+        "reason": "file-budget",
+        "size": 20553
+      },
+      {
+        "path": "docs/internals/internals.md",
+        "reason": "file-budget",
+        "size": 4125
+      },
+      {
+        "path": "docs/internals/plan-mode.md",
+        "reason": "file-budget",
+        "size": 30381
+      },
+      {
+        "path": "docs/internals/service-identity.md",
+        "reason": "file-budget",
+        "size": 4728
+      },
+      {
+        "path": "docs/internals/task-lifecycle.md",
+        "reason": "file-budget",
+        "size": 21630
+      },
+      {
+        "path": "docs/internals/workspaces-and-config.md",
+        "reason": "file-budget",
+        "size": 21244
+      },
+      {
+        "path": "docs/origin.md",
+        "reason": "file-budget",
+        "size": 2348
+      },
+      {
+        "path": "docs/releases/v0.0.1.md",
+        "reason": "file-budget",
+        "size": 5947
+      },
+      {
+        "path": "docs/releases/v0.0.2.md",
+        "reason": "file-budget",
+        "size": 873
+      },
+      {
+        "path": "docs/releases/v0.0.3.md",
+        "reason": "file-budget",
+        "size": 2819
+      },
+      {
+        "path": "docs/releases/v0.0.4.md",
+        "reason": "file-budget",
+        "size": 2710
+      },
+      {
+        "path": "docs/releases/v0.0.5.md",
+        "reason": "file-budget",
+        "size": 5224
+      },
+      {
+        "path": "docs/releases/v0.0.6-beta.md",
+        "reason": "file-budget",
+        "size": 8591
+      },
+      {
+        "path": "docs/releases/v0.0.6.md",
+        "reason": "file-budget",
+        "size": 9072
+      },
+      {
+        "path": "docs/releases/v0.0.7-alpha.11.md",
+        "reason": "file-budget",
+        "size": 3249
+      },
+      {
+        "path": "docs/releases/v0.0.7-alpha.2.md",
+        "reason": "file-budget",
+        "size": 1127
+      },
+      {
+        "path": "docs/releases/v0.0.7-alpha.3.md",
+        "reason": "file-budget",
+        "size": 16222
+      },
+      {
+        "path": "docs/releases/v0.0.7-alpha.md",
+        "reason": "file-budget",
+        "size": 13863
+      },
+      {
+        "path": "docs/releases/v0.0.8.md",
+        "reason": "file-budget",
+        "size": 8266
+      }
+    ],
+    "omitted_count": 43,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1522,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 46,
+      "complete": false,
+      "omitted": 43,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_4d274d4dda065423b813bf731f53ede6",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/changkun/wallfacer/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/d09ab0b6a912ca08/manifest.json",
+  "package_id": "pkg_9c6a0f430e71899e3f3dacea98b20bcb6b67d4fd5e00d14ea9902b287b5f3bc9",
+  "repo": "changkun/wallfacer",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "33357bb8525a3c9ac4f51cacec08c43332ff2b1f6d968d8c8b71bdfce74ec8e2",
+  "snapshot_id": "d09ab0b6a912ca08",
+  "sources": [
+    {
+      "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+      "git_sha": "588b48460b0d07564698bc5621a70d4d878ac56c",
+      "lines": 7,
+      "path": "AGENTS.md",
+      "repository": "changkun/wallfacer",
+      "sha256": "a0daa3fbed5eed3740309de27f10081b4869ba575664ebc0e4ee0d125f7c5c34",
+      "source_id": "src_4d41378a4d265c909cd59f59e1972428",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/AGENTS.md"
+    },
+    {
+      "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+      "git_sha": "5b1b6a5457bc49f8a757e07a267ced21ddc616bf",
+      "lines": 43,
+      "path": "BUGS.md",
+      "repository": "changkun/wallfacer",
+      "sha256": "4f04d03bbafb557bdde66590551e4ed65b25acac2e450a47bc8e2f8b67b09fc6",
+      "source_id": "src_96638da841b95551a3041d18fccf181d",
+      "stored": "bugs.md-a1878267f0cd.md",
+      "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/BUGS.md"
+    },
+    {
+      "commit": "9acd2b0925789ec6d7a54a1d94feb40b8fca752f",
+      "git_sha": "0a4575e29f3eb1ba58abb93771873244328b4f89",
+      "lines": 223,
+      "path": "README.md",
+      "repository": "changkun/wallfacer",
+      "sha256": "115645de0523f32c2b9f7ac0a158bd38764987239c219ec44146907c6fc1c64d",
+      "source_id": "src_866d8e990906542e96a92c6d4df66b1d",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/changkun/wallfacer/blob/9acd2b0925789ec6d7a54a1d94feb40b8fca752f/README.md"
+    }
+  ],
+  "summary": "Wallfacer is a local, open-source autonomous engineering platform combining chat, spec, task-board, and code abstraction levels with pluggable agent harnesses; evidence is mostly README documentation plus BUGS.md and contributor instructions.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,770 @@
+{
+  "budgets": {
+    "bytes_stored": 1561,
+    "max_bytes": 70000,
+    "max_files": 3
+  },
+  "commit": "62b3f9659fd43ce4fe62103b6488514259d1956f",
+  "commit_date": "2024-02-14T13:31:25Z",
+  "default_branch": "main",
+  "dir": "sources/github/steamship-core/python-client/62b3f9659fd43ce4fe62103b6488514259d1956f/7874ba72c4024ead",
+  "explicit_paths": [],
+  "files": [
+    {
+      "git_sha": "085a139e277a953b164b622856e4bbd3634ca759",
+      "lines": 38,
+      "path": "README.md",
+      "raw_url": "https://raw.githubusercontent.com/steamship-core/python-client/62b3f9659fd43ce4fe62103b6488514259d1956f/README.md",
+      "sha256": "2dc3ae95311e345640ff9219ed7dc0a682574f95e0722a4e527cc13220d847af",
+      "size": 1189,
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/steamship-core/python-client/blob/62b3f9659fd43ce4fe62103b6488514259d1956f/README.md"
+    },
+    {
+      "git_sha": "7c78d3a9c8651424059a2f25322226735a278749",
+      "lines": 13,
+      "path": "AUTHORS.rst",
+      "raw_url": "https://raw.githubusercontent.com/steamship-core/python-client/62b3f9659fd43ce4fe62103b6488514259d1956f/AUTHORS.rst",
+      "sha256": "298b45ff32e47e5e042b69e2449167bd98889c14b1f8d6d4da10c3458402ba12",
+      "size": 310,
+      "stored": "authors.rst-4e28079e8f9a.txt",
+      "url": "https://github.com/steamship-core/python-client/blob/62b3f9659fd43ce4fe62103b6488514259d1956f/AUTHORS.rst"
+    },
+    {
+      "git_sha": "4e6c1ed9ae8c60242026a711add85d011e24b8b6",
+      "lines": 7,
+      "path": "CHANGELOG.rst",
+      "raw_url": "https://raw.githubusercontent.com/steamship-core/python-client/62b3f9659fd43ce4fe62103b6488514259d1956f/CHANGELOG.rst",
+      "sha256": "d221146149720996f9b82b6a89a832dc112c470589e732de3f434a9209500137",
+      "size": 62,
+      "stored": "changelog.rst-2c623f3c6a91.txt",
+      "url": "https://github.com/steamship-core/python-client/blob/62b3f9659fd43ce4fe62103b6488514259d1956f/CHANGELOG.rst"
+    }
+  ],
+  "full_name": "steamship-core/python-client",
+  "license": "MIT",
+  "omitted": [
+    {
+      "path": "DEVELOPING.md",
+      "reason": "file-budget",
+      "size": 4371
+    },
+    {
+      "path": "TESTING.md",
+      "reason": "file-budget",
+      "size": 2407
+    },
+    {
+      "path": "requirements.dev.txt",
+      "reason": "file-budget",
+      "size": 1192
+    },
+    {
+      "path": "requirements.txt",
+      "reason": "file-budget",
+      "size": 144
+    },
+    {
+      "path": "docs/README.txt",
+      "reason": "file-budget",
+      "size": 1294
+    },
+    {
+      "path": "docs/api/api/modules.rst",
+      "reason": "file-budget",
+      "size": 64
+    },
+    {
+      "path": "docs/api/api/steamship.agents.examples.rst",
+      "reason": "file-budget",
+      "size": 2040
+    },
+    {
+      "path": "docs/api/api/steamship.agents.functional.rst",
+      "reason": "file-budget",
+      "size": 661
+    },
+    {
+      "path": "docs/api/api/steamship.agents.llms.rst",
+      "reason": "file-budget",
+      "size": 382
+    },
+    {
+      "path": "docs/api/api/steamship.agents.mixins.rst",
+      "reason": "file-budget",
+      "size": 286
+    },
+    {
+      "path": "docs/api/api/steamship.agents.mixins.transports.rst",
+      "reason": "file-budget",
+      "size": 931
+    },
+    {
+      "path": "docs/api/api/steamship.agents.react.rst",
+      "reason": "file-budget",
+      "size": 584
+    },
+    {
+      "path": "docs/api/api/steamship.agents.rst",
+      "reason": "file-budget",
+      "size": 785
+    },
+    {
+      "path": "docs/api/api/steamship.agents.schema.rst",
+      "reason": "file-budget",
+      "size": 2274
+    },
+    {
+      "path": "docs/api/api/steamship.agents.service.rst",
+      "reason": "file-budget",
+      "size": 423
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.audio_transcription.rst",
+      "reason": "file-budget",
+      "size": 1215
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.classification.rst",
+      "reason": "file-budget",
+      "size": 817
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.conversation_starters.rst",
+      "reason": "file-budget",
+      "size": 558
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.image_generation.rst",
+      "reason": "file-budget",
+      "size": 1024
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.question_answering.rst",
+      "reason": "file-budget",
+      "size": 1455
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.rst",
+      "reason": "file-budget",
+      "size": 843
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.search.rst",
+      "reason": "file-budget",
+      "size": 430
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.speech_generation.rst",
+      "reason": "file-budget",
+      "size": 529
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.text_generation.rst",
+      "reason": "file-budget",
+      "size": 1937
+    },
+    {
+      "path": "docs/api/api/steamship.agents.tools.video_generation.rst",
+      "reason": "file-budget",
+      "size": 554
+    },
+    {
+      "path": "docs/api/api/steamship.base.rst",
+      "reason": "file-budget",
+      "size": 1781
+    },
+    {
+      "path": "docs/api/api/steamship.cli.local_server.rst",
+      "reason": "file-budget",
+      "size": 609
+    },
+    {
+      "path": "docs/api/api/steamship.cli.rst",
+      "reason": "file-budget",
+      "size": 1601
+    },
+    {
+      "path": "docs/api/api/steamship.client.rst",
+      "reason": "file-budget",
+      "size": 875
+    },
+    {
+      "path": "docs/api/api/steamship.experimental.easy.rst",
+      "reason": "file-budget",
+      "size": 412
+    },
+    {
+      "path": "docs/api/api/steamship.experimental.package_starters.rst",
+      "reason": "file-budget",
+      "size": 676
+    },
+    {
+      "path": "docs/api/api/steamship.experimental.rst",
+      "reason": "file-budget",
+      "size": 319
+    },
+    {
+      "path": "docs/api/api/steamship.invocable.mixins.rst",
+      "reason": "file-budget",
+      "size": 1126
+    },
+    {
+      "path": "docs/api/api/steamship.invocable.rst",
+      "reason": "file-budget",
+      "size": 2604
+    },
+    {
+      "path": "docs/api/api/steamship.plugin.blockifier.rst",
+      "reason": "file-budget",
+      "size": 636
+    },
+    {
+      "path": "docs/api/api/steamship.plugin.inputs.rst",
+      "reason": "file-budget",
+      "size": 1893
+    },
+    {
+      "path": "docs/api/api/steamship.plugin.outputs.rst",
+      "reason": "file-budget",
+      "size": 2138
+    },
+    {
+      "path": "docs/api/api/steamship.plugin.rst",
+      "reason": "file-budget",
+      "size": 1354
+    },
+    {
+      "path": "docs/api/api/steamship.rst",
+      "reason": "file-budget",
+      "size": 387
+    },
+    {
+      "path": "docs/api/api/steamship.utils.rst",
+      "reason": "file-budget",
+      "size": 2199
+    },
+    {
+      "path": "docs/api/authors.rst",
+      "reason": "file-budget",
+      "size": 44
+    },
+    {
+      "path": "docs/api/index.rst",
+      "reason": "file-budget",
+      "size": 161
+    },
+    {
+      "path": "docs/api/license.rst",
+      "reason": "file-budget",
+      "size": 131
+    },
+    {
+      "path": "docs/nextra/agents/index.rst",
+      "reason": "file-budget",
+      "size": 1977
+    },
+    {
+      "path": "docs/nextra/api/modules.rst",
+      "reason": "file-budget",
+      "size": 64
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.examples.rst",
+      "reason": "file-budget",
+      "size": 2040
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.functional.rst",
+      "reason": "file-budget",
+      "size": 661
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.llms.rst",
+      "reason": "file-budget",
+      "size": 382
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.mixins.rst",
+      "reason": "file-budget",
+      "size": 286
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.mixins.transports.rst",
+      "reason": "file-budget",
+      "size": 1140
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.react.rst",
+      "reason": "file-budget",
+      "size": 584
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.rst",
+      "reason": "file-budget",
+      "size": 785
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.schema.rst",
+      "reason": "file-budget",
+      "size": 2274
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.service.rst",
+      "reason": "file-budget",
+      "size": 423
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.audio_transcription.rst",
+      "reason": "file-budget",
+      "size": 1215
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.classification.rst",
+      "reason": "file-budget",
+      "size": 817
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.conversation_starters.rst",
+      "reason": "file-budget",
+      "size": 558
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.image_generation.rst",
+      "reason": "file-budget",
+      "size": 1024
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.question_answering.rst",
+      "reason": "file-budget",
+      "size": 1455
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.rst",
+      "reason": "file-budget",
+      "size": 843
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.search.rst",
+      "reason": "file-budget",
+      "size": 430
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.speech_generation.rst",
+      "reason": "file-budget",
+      "size": 529
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.text_generation.rst",
+      "reason": "file-budget",
+      "size": 1937
+    },
+    {
+      "path": "docs/nextra/api/steamship.agents.tools.video_generation.rst",
+      "reason": "file-budget",
+      "size": 554
+    },
+    {
+      "path": "docs/nextra/api/steamship.base.rst",
+      "reason": "file-budget",
+      "size": 1781
+    },
+    {
+      "path": "docs/nextra/api/steamship.cli.local_server.rst",
+      "reason": "file-budget",
+      "size": 609
+    },
+    {
+      "path": "docs/nextra/api/steamship.cli.rst",
+      "reason": "file-budget",
+      "size": 1601
+    },
+    {
+      "path": "docs/nextra/api/steamship.client.rst",
+      "reason": "file-budget",
+      "size": 875
+    },
+    {
+      "path": "docs/nextra/api/steamship.experimental.easy.rst",
+      "reason": "file-budget",
+      "size": 412
+    },
+    {
+      "path": "docs/nextra/api/steamship.experimental.package_starters.rst",
+      "reason": "file-budget",
+      "size": 676
+    },
+    {
+      "path": "docs/nextra/api/steamship.experimental.rst",
+      "reason": "file-budget",
+      "size": 319
+    },
+    {
+      "path": "docs/nextra/api/steamship.invocable.mixins.rst",
+      "reason": "file-budget",
+      "size": 1126
+    },
+    {
+      "path": "docs/nextra/api/steamship.invocable.rst",
+      "reason": "file-budget",
+      "size": 2604
+    },
+    {
+      "path": "docs/nextra/api/steamship.plugin.blockifier.rst",
+      "reason": "file-budget",
+      "size": 636
+    },
+    {
+      "path": "docs/nextra/api/steamship.plugin.inputs.rst",
+      "reason": "file-budget",
+      "size": 1893
+    },
+    {
+      "path": "docs/nextra/api/steamship.plugin.outputs.rst",
+      "reason": "file-budget",
+      "size": 2138
+    },
+    {
+      "path": "docs/nextra/api/steamship.plugin.rst",
+      "reason": "file-budget",
+      "size": 1354
+    },
+    {
+      "path": "docs/nextra/api/steamship.rst",
+      "reason": "file-budget",
+      "size": 387
+    },
+    {
+      "path": "docs/nextra/api/steamship.utils.rst",
+      "reason": "file-budget",
+      "size": 2199
+    },
+    {
+      "path": "docs/nextra/authors.rst",
+      "reason": "file-budget",
+      "size": 44
+    },
+    {
+      "path": "docs/nextra/configuration/authentication.rst",
+      "reason": "file-budget",
+      "size": 1575
+    },
+    {
+      "path": "docs/nextra/configuration/cli.rst",
+      "reason": "file-budget",
+      "size": 348
+    },
+    {
+      "path": "docs/nextra/configuration/clients.rst",
+      "reason": "file-budget",
+      "size": 980
+    },
+    {
+      "path": "docs/nextra/configuration/http.rst",
+      "reason": "file-budget",
+      "size": 2630
+    },
+    {
+      "path": "docs/nextra/configuration/index.rst",
+      "reason": "file-budget",
+      "size": 277
+    },
+    {
+      "path": "docs/nextra/data/blocks.rst",
+      "reason": "file-budget",
+      "size": 1752
+    },
+    {
+      "path": "docs/nextra/data/files.rst",
+      "reason": "file-budget",
+      "size": 2043
+    },
+    {
+      "path": "docs/nextra/data/index.rst",
+      "reason": "file-budget",
+      "size": 1339
+    },
+    {
+      "path": "docs/nextra/data/queries/index.rst",
+      "reason": "file-budget",
+      "size": 3552
+    },
+    {
+      "path": "docs/nextra/data/tags.rst",
+      "reason": "file-budget",
+      "size": 6227
+    },
+    {
+      "path": "docs/nextra/data/workspaces.rst",
+      "reason": "file-budget",
+      "size": 1871
+    },
+    {
+      "path": "docs/nextra/developing/configuration.rst",
+      "reason": "file-budget",
+      "size": 2515
+    },
+    {
+      "path": "docs/nextra/developing/deploying.rst",
+      "reason": "file-budget",
+      "size": 3909
+    },
+    {
+      "path": "docs/nextra/developing/environment-setup.rst",
+      "reason": "file-budget",
+      "size": 888
+    },
+    {
+      "path": "docs/nextra/developing/index.rst",
+      "reason": "file-budget",
+      "size": 1635
+    },
+    {
+      "path": "docs/nextra/developing/monitoring.rst",
+      "reason": "file-budget",
+      "size": 2806
+    },
+    {
+      "path": "docs/nextra/developing/project-creation.rst",
+      "reason": "file-budget",
+      "size": 809
+    },
+    {
+      "path": "docs/nextra/developing/running.rst",
+      "reason": "file-budget",
+      "size": 1099
+    },
+    {
+      "path": "docs/nextra/developing/steamship-manifest.rst",
+      "reason": "file-budget",
+      "size": 3778
+    },
+    {
+      "path": "docs/nextra/developing/storing-secrets.rst",
+      "reason": "file-budget",
+      "size": 1009
+    },
+    {
+      "path": "docs/nextra/developing/testing.rst",
+      "reason": "file-budget",
+      "size": 2194
+    },
+    {
+      "path": "docs/nextra/embedding-search/index.rst",
+      "reason": "file-budget",
+      "size": 1216
+    },
+    {
+      "path": "docs/nextra/index.rst",
+      "reason": "file-budget",
+      "size": 2016
+    },
+    {
+      "path": "docs/nextra/license.rst",
+      "reason": "file-budget",
+      "size": 131
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/adding-configuration.rst",
+      "reason": "file-budget",
+      "size": 5136
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/article-tagging.rst",
+      "reason": "file-budget",
+      "size": 4018
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/collecting-and-querying-sentiment.rst",
+      "reason": "file-budget",
+      "size": 3242
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/how-to-extract-outline-from-markdown.rst",
+      "reason": "file-budget",
+      "size": 3543
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/index.rst",
+      "reason": "file-budget",
+      "size": 831
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/modifying-an-existing-package.rst",
+      "reason": "file-budget",
+      "size": 2062
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/receiving-webhooks.rst",
+      "reason": "file-budget",
+      "size": 2465
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/return-audio.rst",
+      "reason": "file-budget",
+      "size": 919
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/return-image.rst",
+      "reason": "file-budget",
+      "size": 932
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/return-json.rst",
+      "reason": "file-budget",
+      "size": 753
+    },
+    {
+      "path": "docs/nextra/packages/cookbook/return-text.rst",
+      "reason": "file-budget",
+      "size": 740
+    },
+    {
+      "path": "docs/nextra/packages/developing/index.rst",
+      "reason": "file-budget",
+      "size": 2041
+    },
+    {
+      "path": "docs/nextra/packages/developing/project-structure.rst",
+      "reason": "file-budget",
+      "size": 2691
+    },
+    {
+      "path": "docs/nextra/packages/index.rst",
+      "reason": "file-budget",
+      "size": 1356
+    },
+    {
+      "path": "docs/nextra/packages/using.rst",
+      "reason": "file-budget",
+      "size": 9823
+    },
+    {
+      "path": "docs/nextra/plugins/developing/async-plugins.rst",
+      "reason": "file-budget",
+      "size": 4855
+    },
+    {
+      "path": "docs/nextra/plugins/developing/blockifiers.rst",
+      "reason": "file-budget",
+      "size": 3077
+    },
+    {
+      "path": "docs/nextra/plugins/developing/embedders.rst",
+      "reason": "file-budget",
+      "size": 200
+    },
+    {
+      "path": "docs/nextra/plugins/developing/generators.rst",
+      "reason": "file-budget",
+      "size": 1177
+    },
+    {
+      "path": "docs/nextra/plugins/developing/importers.rst",
+      "reason": "file-budget",
+      "size": 215
+    },
+    {
+      "path": "docs/nextra/plugins/developing/index.rst",
+      "reason": "file-budget",
+      "size": 1084
+    },
+    {
+      "path": "docs/nextra/plugins/developing/project-structure.rst",
+      "reason": "file-budget",
+      "size": 1174
+    },
+    {
+      "path": "docs/nextra/plugins/developing/taggers.rst",
+      "reason": "file-budget",
+      "size": 194
+    },
+    {
+      "path": "docs/nextra/plugins/index.rst",
+      "reason": "file-budget",
+      "size": 2235
+    },
+    {
+      "path": "docs/nextra/plugins/using/blockifiers/index.rst",
+      "reason": "file-budget",
+      "size": 625
+    },
+    {
+      "path": "docs/nextra/plugins/using/blockifiers/using.rst",
+      "reason": "file-budget",
+      "size": 2666
+    },
+    {
+      "path": "docs/nextra/plugins/using/embedders/index.rst",
+      "reason": "file-budget",
+      "size": 284
+    },
+    {
+      "path": "docs/nextra/plugins/using/generators/dalle.rst",
+      "reason": "file-budget",
+      "size": 1328
+    },
+    {
+      "path": "docs/nextra/plugins/using/generators/gpt4.rst",
+      "reason": "file-budget",
+      "size": 4556
+    },
+    {
+      "path": "docs/nextra/plugins/using/generators/index.rst",
+      "reason": "file-budget",
+      "size": 3696
+    },
+    {
+      "path": "docs/nextra/plugins/using/importers/index.rst",
+      "reason": "file-budget",
+      "size": 444
+    },
+    {
+      "path": "docs/nextra/plugins/using/importers/using.rst",
+      "reason": "file-budget",
+      "size": 805
+    },
+    {
+      "path": "docs/nextra/plugins/using/index.rst",
+      "reason": "file-budget",
+      "size": 6440
+    },
+    {
+      "path": "docs/nextra/plugins/using/taggers/index.rst",
+      "reason": "file-budget",
+      "size": 225
+    },
+    {
+      "path": "docs/nextra/plugins/using/taggers/using.rst",
+      "reason": "file-budget",
+      "size": 1478
+    },
+    {
+      "path": "docs/nextra/plugins/using/tasks.rst",
+      "reason": "file-budget",
+      "size": 1187
+    },
+    {
+      "path": "docs/requirements.txt",
+      "reason": "file-budget",
+      "size": 352
+    }
+  ],
+  "omitted_count": 141,
+  "package": "sources/github/steamship-core/python-client/62b3f9659fd43ce4fe62103b6488514259d1956f/7874ba72c4024ead/manifest.json",
+  "repo": "steamship-core/python-client",
+  "repository": {
+    "complete": true,
+    "tree_blobs": 610,
+    "tree_truncated": false
+  },
+  "selection": {
+    "candidates": 144,
+    "complete": false,
+    "omitted": 141,
+    "stored": 3
+  },
+  "snapshot_id": "7874ba72c4024ead",
+  "tree_sha": "62b3f9659fd43ce4fe62103b6488514259d1956f",
+  "url": "https://github.com/steamship-core/python-client"
+}

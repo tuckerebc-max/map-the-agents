@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_01851f608d08b8fa0bf7220d297e644d7046d949fcffb58a72c766c88ef286b9
+- clm_339225efa510303286ae30410afd90a7194d90b4f5cb5ab0e031131993c69592
+- clm_5b522c66f1b77bd124acc8ba661fe733a83c7a2e83e33a703b4404294b1b92c8
+- clm_81d2c24e710f453954c9180cc036afb4e198fad4c3edf827c30645d7ae471518
+- clm_9da7af181ad30fe863046c9af84b143b441130f66a8e771aeab1898fbe1a2658
+- clm_de3f0f6b9147f79724926b2c8dbbea6a309374a210d88491487af23331fc3322
+- clm_de57c981c5ef25063e8ef7308cfa32163e9e74dac5ab52497ebad515cce7babe
+- clm_f1d936fdf925853ab6baf684c24cb665ce0d9183afaf2a6fd1bb356503ec5b6c
+- clm_f8dbe5cbaa7c91bd0cd2be68a4cff33c096d63ef893388dd806654c6d989ac70
+- clm_fe3a2468b096eb0fdc611b2ec8e9bf76563aeaf13515cefb15b658df0c8baa90
+maturity: draft
+page_id: pg_79863a9a2fb455c9a1ebdfccc134acf1
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit
+updated_at: '2026-09-14T03:36:21Z'
+---
+
+# aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit
+
+<!-- rcw:begin owner=entity:ent_ad4de7b7d5fc5812bc02fa23efb02893 block=evidence -->
+- aws-samples/setup-amazon-bedrock-agent-for-text2sql-using-amazon-redshift-serverless-with-streamlit is mentioned in this evidence. [@claim:clm_01851f608d08b8fa0bf7220d297e644d7046d949fcffb58a72c766c88ef286b9] [@claim:clm_339225efa510303286ae30410afd90a7194d90b4f5cb5ab0e031131993c69592] [@claim:clm_5b522c66f1b77bd124acc8ba661fe733a83c7a2e83e33a703b4404294b1b92c8] [@claim:clm_81d2c24e710f453954c9180cc036afb4e198fad4c3edf827c30645d7ae471518] [@claim:clm_9da7af181ad30fe863046c9af84b143b441130f66a8e771aeab1898fbe1a2658] [@claim:clm_de3f0f6b9147f79724926b2c8dbbea6a309374a210d88491487af23331fc3322] [@claim:clm_de57c981c5ef25063e8ef7308cfa32163e9e74dac5ab52497ebad515cce7babe] [@claim:clm_f1d936fdf925853ab6baf684c24cb665ce0d9183afaf2a6fd1bb356503ec5b6c] [@claim:clm_f8dbe5cbaa7c91bd0cd2be68a4cff33c096d63ef893388dd806654c6d989ac70] [@claim:clm_fe3a2468b096eb0fdc611b2ec8e9bf76563aeaf13515cefb15b658df0c8baa90]
+<!-- rcw:end owner=entity:ent_ad4de7b7d5fc5812bc02fa23efb02893 block=evidence -->
+
+## Researcher notes
+

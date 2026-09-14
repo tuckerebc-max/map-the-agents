@@ -1,0 +1,937 @@
+{
+  "applied_operation_id": "op_3de92d471193478abc979211c1f01d2f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_225af7dde29dfafcf43671f46ead14926f6d211f5c2486ff6418b71835e51270",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 22,
+          "line_start": 17,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L17-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_db00a2b3c30c2627d0d7b71355a062359fbd7aac7f790d166f6fe7a23b0dd3f2"
+      ],
+      "text": "DeerFlow (Deep Exploration and Efficient Research Flow) is an open-source super-agent harness built on LangGraph, where a lead agent orchestrates sub-agents, persistent memory, sandboxed code execution, and extensible skills/tools, isolated per conversation thread."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15f65575ecc3b5d8090e4243a00316e6d21d32b7db1a350225f91af8884c3e75",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "7ce302bc371b5298508bbe9be029008ac264a6aa",
+          "line_end": 17,
+          "line_start": 16,
+          "path": "README_fr.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/README_fr.md#L16-L17"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 11,
+          "line_start": 10,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L10-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17142da7c6224cb667d35b06557c7f07aaebb23fead4e84de212ee31deefd298",
+        "slc_4c893935e14bf48e0cd9fbd3001fa4b07b3ef5909e38e9801b4f8284f37ce786"
+      ],
+      "text": "DeerFlow 2.0 is a ground-up rewrite sharing no code with the original v1 Deep Research framework, which per the French README is maintained on a separate 1.x branch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1fde4adef3a342da1eb21e71717381f270b5654775103cfaf7b4c0be6cc7392a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 36,
+          "line_start": 31,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L31-L36"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L28-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c9ba14cef7135ae9b152f6cce38612e4f061712bd5a6364733ec9dd46435bc5",
+        "slc_148e9541f649cccdb167182cf7983a647f04861de29458195026a09de0982ff7"
+      ],
+      "text": "A single make dev or Docker stack runs four services: Nginx on port 2026 as the only public entry point, a FastAPI Gateway on 8001 with an embedded LangGraph-compatible agent runtime, a Next.js frontend on 3000, and an optional provisioner on 8002 for provisioner/K8s sandbox mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f91e4a78e4d0705f41b18e58de2a874c5fa0cb18629194b6b9c471c53a98648e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 47,
+          "line_start": 43,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L43-L47"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c44f90c564a448f199e259eae618740698dcac22f8e5037082ba4ff24c591ed2",
+        "slc_e22d808c66d493bad5bbf3f57383a722b2c4bf6bbc6edec837cc414a9ef0915e"
+      ],
+      "text": "Nginx routes /api/langgraph/* to the Gateway's LangGraph-compatible runtime (rewritten to native /api/*), other /api/* paths to Gateway REST routers, and non-API paths to the frontend, so standard LangGraph SDK clients can talk to DeerFlow without a separate LangGraph server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a74cd3372d89d3041ddb3ee085837c91bfae71bdab1b8c82f84a2942725e651d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 59,
+          "line_start": 55,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L55-L59"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 64,
+          "line_start": 61,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L61-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f65e54ceed552fd7f9f1046b158463be76d0948ba8106ed55a43c37549c777b",
+        "slc_d05ac1a58b42b036db8b0fb6abc86ff7bf78f1cf92fa7052eeb988e3899e6e80"
+      ],
+      "text": "The backend splits into a publishable harness package (deerflow.*: orchestration, tools, sandbox, models, MCP, skills, memory, config) and an unpublished app layer (FastAPI Gateway, IM integrations), with a one-way rule that app imports deerflow but never the reverse, enforced by a CI test."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3996320ef5eac73d43c8e8b306a1840fbaba629593f4d3bb8f015ca1ceba28b5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 74,
+          "line_start": 71,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L71-L74"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 83,
+          "line_start": 76,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L76-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_010f3db52ec53d74be6d5b36217875ac65906df14bf673c96eedc2ebea383ebf",
+        "slc_38c4edbeeedf94730e7fb3c0a1b2ffd3fb52c145aa7646c0ce1161fe24ec27a2"
+      ],
+      "text": "All run modes execute the agent through the Gateway via RunManager, run_agent() and StreamBridge; the lead agent is assembled by make_lead_agent() and wrapped in a middleware chain (thread data, uploads, sandbox, summarization, title, todo list, view image, clarification) that runs before the model call."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c076ce65c493b76e61e7bc0154547a5dd98b5cea7c6dd5e4fbde21c070a2ea2a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 101,
+          "line_start": 92,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L92-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fce9cd07c857530185fb6398421b5aa038060c39adc61ab6f581afeb5ae2bd86"
+      ],
+      "text": "Tools come from three merged sources via get_available_tools(): built-ins (present_files, ask_clarification, view_image, review_skill_package), configured tools (bash, file operations, web search/fetch), and MCP tools; the sandbox is an abstract SandboxProvider with a dev-only LocalSandboxProvider and a Docker-based AioSandboxProvider using virtual path mapping."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68e1f616c226e3b335ccba954f7e4cfc83c79fd8e45942c345afad9f00ae3494",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 101,
+          "line_start": 92,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L92-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fce9cd07c857530185fb6398421b5aa038060c39adc61ab6f581afeb5ae2bd86"
+      ],
+      "text": "ThreadState extends LangGraph's AgentState with sandbox, artifacts, thread_data, title, todos and viewed_images, and each thread gets isolated data directories under backend/.deer-flow/threads/{thread_id}/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d57d70b7cbe0a2375d3e65fe93901931f1253958cda949ea3eee9e7c93ccb6b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "7ce302bc371b5298508bbe9be029008ac264a6aa",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "README_fr.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/README_fr.md#L5-L7"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 109,
+          "line_start": 107,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L107-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_567c52c52b9e8e04d5a500770b2eb14340e3bc89980d911992df48e38ba018a4",
+        "slc_940e484c6c1f6f5e0df5bb072e496dd59bcf003d571857c446088a94eec51ac0"
+      ],
+      "text": "The frontend uses Next.js 16, React 19, TypeScript and Tailwind v4, with the LangGraph SDK for orchestration/streaming and TanStack Query for server state, requiring Node 22+ and pnpm 10.26.2+; a README badge indicates Python 3.12+ for the backend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_890d7ab8da77cdf148b6f41fcd213b8ecb2798ee8ace0464a3b86bd6209ab9e8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+          "line_end": 184,
+          "line_start": 169,
+          "path": "docs/ARCHITECTURE.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md#L169-L184"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dc919e2a6b63654f5c5af8573e3884d453999ded8b6e8a4d023140eb936fce5"
+      ],
+      "text": "The security model gates client-writable body.context and body.config: keys like non_interactive, disable_clarification and github_token are honored only for internally-authenticated callers, identity/sandbox fields are cleared and restamped from auth state, and nginx is the only published, loopback-by-default surface."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9fbde2b32e3faf41042fb46305c99648d9a6b13606404badcbd696d6c9caff45",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+          "line_end": 3,
+          "line_start": 1,
+          "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt#L1-L3"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt#L18-L18"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+          "line_end": 41,
+          "line_start": 40,
+          "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt#L40-L41"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt#L34-L34"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt#L30-L30"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt#L22-L22"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1567322a2bd5a56a35cc46d96f09d6902f175ff9bef157db77d74bb7c73e6596",
+        "slc_53270a17bea5938bb1d03f16ae220f4d1b8ca11f611a8dfd75862301f03c277b",
+        "slc_834fd3db047ce2b0f047bdb92e5eaec40925e7cad381cc0128e5e81342fc6c7e",
+        "slc_85fb5c66a7e64a2abe5803cd6f2b3a4f86f9385417f744363f49c5c837b92909",
+        "slc_9bf388a20f4cb99f2a0035dfefe6d1132a95b1643040d07bf6aa777085b00374",
+        "slc_c5c32c7570efe8c2bed407d4b8dcae9f922fbc454a9472779fab29629e165007",
+        "slc_daadae5e2d14dc0b7e98b1af61bb38044ed38d889b03863430a1a25ab48bda96"
+      ],
+      "text": "An experiment prompt template defines a Context Extraction Assistant that summarizes conversation history into checklist sections (session intent, summary, artifacts, next steps) so the extracted context can replace the history and free conversation space."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a04b155903f19f5b046e4ae4f7776ab66023f67f7c4f29fbf6b9da5a599080a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "fe53b14462c08721ca5df373082e3bb04986c493",
+          "line_end": 8,
+          "line_start": 3,
+          "path": "docs/database-forward-revision-recovery.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/database-forward-revision-recovery.md#L3-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c0706c3781647c90445344381695c29ba359eda3f8f2709e9d124acff7420059"
+      ],
+      "text": "A database recovery doc states that an older deployment stamped with revision 0019_thread_incarnations but lacking the projects table and threads_meta.project_id cannot serve the current build; startup rejects that schema without changing it and reports the missing tables/columns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_205af757a08de45635376754ed619ef14f30910535c2493db1ffba9ea2f06781",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "2e6b79da5029c2746962608fa4cb1ded87433cfe",
+          "line_end": 83,
+          "line_start": 79,
+          "path": "Install.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/Install.md#L79-L83"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "2e6b79da5029c2746962608fa4cb1ded87433cfe",
+          "line_end": 23,
+          "line_start": 18,
+          "path": "Install.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/Install.md#L18-L23"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "2e6b79da5029c2746962608fa4cb1ded87433cfe",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "Install.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/Install.md#L3-L3"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "2e6b79da5029c2746962608fa4cb1ded87433cfe",
+          "line_end": 34,
+          "line_start": 29,
+          "path": "Install.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/Install.md#L29-L34"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "2e6b79da5029c2746962608fa4cb1ded87433cfe",
+          "line_end": 56,
+          "line_start": 38,
+          "path": "Install.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/Install.md#L38-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0980a7e776f0c289cda13050978c5994d5175066685218c8a88315fa99413cb9",
+        "slc_0d660175cfbcd3a4400d4ec444d4c66be2a73f4799fcc4db88187ed6e94dc7cc",
+        "slc_12be72e0cfdce9eb4afcf8acc3daf59240068b4ae48df689e6ead77d4e7fd53a",
+        "slc_5b639c8aed0f263fb54385234d982181e7b901c383fafea550d2e08bd32c20d6",
+        "slc_f3ec99568a9ea75ceb5eaf0e7033c0d9dbc087c23b9cd8b95a467cf6748f9758"
+      ],
+      "text": "Repository development practice: Install.md is written for coding agents and prescribes an idempotent bootstrap that prefers Docker when available, avoids sudo and secret-file inspection, runs make config/docker-init or make check/install, and stops with a status report plus the exact next launch command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1803af411e1dce5ee868bc04a7f004a57255fa94c223b891e8abfeecca8bf82e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "7ce302bc371b5298508bbe9be029008ac264a6aa",
+          "line_end": 115,
+          "line_start": 113,
+          "path": "README_fr.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/README_fr.md#L113-L115"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "7ce302bc371b5298508bbe9be029008ac264a6aa",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README_fr.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/README_fr.md#L117-L117"
+        },
+        {
+          "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+          "git_sha": "7ce302bc371b5298508bbe9be029008ac264a6aa",
+          "line_end": 129,
+          "line_start": 119,
+          "path": "README_fr.md",
+          "repository": "bytedance/deer-flow",
+          "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/README_fr.md#L119-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42a6f222c7e24a1259139469f3b1766d1187c3cadaabafa1b79d9b7d3bbb8bab",
+        "slc_57a3f2c7930931bbfed393b788e0cbbba208e093781e8b4f301a4e55ba120fd7",
+        "slc_b36f16e41cf0527bc30d811ad6a2dfac7789d1189a33eab58956faf249f605c1"
+      ],
+      "text": "Repository development practice: the documented setup flow recommends make setup, an interactive wizard generating a minimal config.yaml and writing keys to .env, with make doctor for configuration checks and make support-bundle producing sanitized diagnostics (no .env, raw conversations, or user file contents) for GitHub issues."
+    }
+  ],
+  "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 195,
+        "path": "docs/ARCHITECTURE.md",
+        "size": 10973
+      },
+      {
+        "lines": 87,
+        "path": "Install.md",
+        "size": 4706
+      },
+      {
+        "lines": 777,
+        "path": "README_fr.md",
+        "size": 46021
+      },
+      {
+        "lines": 764,
+        "path": "README_ja.md",
+        "size": 51045
+      },
+      {
+        "lines": 79,
+        "path": "docs/database-forward-revision-recovery.md",
+        "size": 4292
+      },
+      {
+        "lines": 46,
+        "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+        "size": 2724
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README.md",
+        "reason": "byte-budget",
+        "size": 151824
+      },
+      {
+        "path": "CHANGELOG_zh.md",
+        "reason": "byte-budget",
+        "size": 152652
+      },
+      {
+        "path": "README_ru.md",
+        "reason": "byte-budget",
+        "size": 51866
+      },
+      {
+        "path": "README_zh.md",
+        "reason": "byte-budget",
+        "size": 62666
+      },
+      {
+        "path": "RELEASING.md",
+        "reason": "byte-budget",
+        "size": 7715
+      },
+      {
+        "path": "docs/CODE_CHANGE_SUMMARY_BY_FILE.md",
+        "reason": "byte-budget",
+        "size": 34112
+      },
+      {
+        "path": "docs/OPENVIKING.md",
+        "reason": "byte-budget",
+        "size": 7450
+      },
+      {
+        "path": "docs/SKILL_NAME_CONFLICT_FIX.md",
+        "reason": "byte-budget",
+        "size": 24765
+      },
+      {
+        "path": "docs/task-continuity.md",
+        "reason": "byte-budget",
+        "size": 7744
+      },
+      {
+        "path": "docs/agents/maintainer-orchestrator-design.md",
+        "reason": "byte-budget",
+        "size": 7051
+      },
+      {
+        "path": "docs/plans/2026-04-01-langfuse-tracing.md",
+        "reason": "byte-budget",
+        "size": 3626
+      },
+      {
+        "path": "docs/plans/2026-07-10-pluggable-authorization-implementation-notes.md",
+        "reason": "byte-budget",
+        "size": 32739
+      },
+      {
+        "path": "docs/plans/2026-07-10-pluggable-authorization-rfc.md",
+        "reason": "byte-budget",
+        "size": 42835
+      },
+      {
+        "path": "docs/plans/2026-07-15-authz-phase1a-implementation-plan.md",
+        "reason": "byte-budget",
+        "size": 14937
+      },
+      {
+        "path": "docs/plans/2026-07-15-authz-phase1a1-trusted-principal-implementation-plan.md",
+        "reason": "byte-budget",
+        "size": 17493
+      },
+      {
+        "path": "docs/plans/2026-07-17-remember-login.md",
+        "reason": "byte-budget",
+        "size": 3981
+      },
+      {
+        "path": "docs/plans/2026-08-24-subagent-batch-capacity-implementation.md",
+        "reason": "byte-budget",
+        "size": 16261
+      },
+      {
+        "path": "docs/plans/OPENVIKING_HTTP_MEMORY_INTEGRATION.md",
+        "reason": "byte-budget",
+        "size": 33458
+      },
+      {
+        "path": "docs/plans/STORAGE_REWRITE_CHANGES.md",
+        "reason": "byte-budget",
+        "size": 11488
+      },
+      {
+        "path": "docs/plans/STORAGE_REWRITE_PLAN.md",
+        "reason": "byte-budget",
+        "size": 9906
+      },
+      {
+        "path": "docs/experiments/task-continuity-20260912/CASE_NOTES.md",
+        "reason": "byte-budget",
+        "size": 5713
+      },
+      {
+        "path": "docs/experiments/task-continuity-20260912/CONCLUSIONS.md",
+        "reason": "byte-budget",
+        "size": 3925
+      },
+      {
+        "path": "docs/experiments/task-continuity-20260912/README.md",
+        "reason": "byte-budget",
+        "size": 7625
+      },
+      {
+        "path": "docs/experiments/task-continuity-20260912/REPORT.md",
+        "reason": "byte-budget",
+        "size": 17458
+      },
+      {
+        "path": "docs/experiments/task-continuity-20260912/VALIDATION.md",
+        "reason": "byte-budget",
+        "size": 7817
+      },
+      {
+        "path": "docs/superpowers/plans/2026-04-10-event-store-history.md",
+        "reason": "byte-budget",
+        "size": 22195
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-08-minimax-generation-providers.md",
+        "reason": "byte-budget",
+        "size": 59133
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-12-telegram-streaming.md",
+        "reason": "byte-budget",
+        "size": 31499
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-19-guardrail-request-attribution.md",
+        "reason": "byte-budget",
+        "size": 6098
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-29-community-browserless-web-capture.md",
+        "reason": "byte-budget",
+        "size": 9509
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-01-scheduled-tasks-mvp.md",
+        "reason": "byte-budget",
+        "size": 63742
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-02-read-before-write-gate.md",
+        "reason": "byte-budget",
+        "size": 36393
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-24-issue-4416-run-metadata-secrets.md",
+        "reason": "byte-budget",
+        "size": 26248
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-31-frontend-performance-baseline-delivery.md",
+        "reason": "byte-budget",
+        "size": 7113
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-31-frontend-performance-bundle-static.md",
+        "reason": "byte-budget",
+        "size": 8182
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-31-frontend-performance-chat-runtime.md",
+        "reason": "byte-budget",
+        "size": 7233
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-31-frontend-performance-live-artifacts.md",
+        "reason": "byte-budget",
+        "size": 8275
+      },
+      {
+        "path": "docs/superpowers/specs/2026-04-11-runjournal-history-evaluation.md",
+        "reason": "byte-budget",
+        "size": 10592
+      },
+      {
+        "path": "docs/superpowers/specs/2026-04-11-summarize-marker-design.md",
+        "reason": "byte-budget",
+        "size": 12557
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-08-minimax-generation-providers-design.md",
+        "reason": "byte-budget",
+        "size": 10395
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-12-telegram-streaming-design.md",
+        "reason": "byte-budget",
+        "size": 4969
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-13-deerflow-tui.md",
+        "reason": "byte-budget",
+        "size": 17954
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-19-guardrail-request-attribution-design.md",
+        "reason": "byte-budget",
+        "size": 5899
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-01-scheduled-tasks-mvp-design.md",
+        "reason": "byte-budget",
+        "size": 18783
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-02-read-before-write-gate-design.md",
+        "reason": "byte-budget",
+        "size": 5763
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-02-scheduled-tasks-i18n-recipes-design.md",
+        "reason": "byte-budget",
+        "size": 3472
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-31-frontend-performance-remediation-design.md",
+        "reason": "byte-budget",
+        "size": 18786
+      },
+      {
+        "path": "docs/experiments/task-continuity-20260912/prompts/notes.txt",
+        "reason": "file-budget",
+        "size": 1484
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 14916
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 168452
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 184
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5223
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 14817
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 398
+      }
+    ],
+    "omitted_count": 54,
+    "omitted_slices": 46,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2802,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 60,
+      "complete": false,
+      "omitted": 54,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_90095fb8e9ed5639816f157be56f5e5c",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/bytedance/deer-flow/d5ae3882b6708fa9af7289a0c3c0be3eee157203/f0af2b8a99cbd610/manifest.json",
+  "package_id": "pkg_a310521c76c71f49a796882fbedec087551275894398623386f0ee04b441cc4a",
+  "repo": "bytedance/deer-flow",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "dc58dd7acd5705a0fa5d56608dcdc8308ac155fb84a2ad92f5dbe9d267b0fdde",
+  "snapshot_id": "f0af2b8a99cbd610",
+  "sources": [
+    {
+      "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+      "git_sha": "2e6b79da5029c2746962608fa4cb1ded87433cfe",
+      "lines": 87,
+      "path": "Install.md",
+      "repository": "bytedance/deer-flow",
+      "sha256": "4d84cda8985620d76d12449cfd2276cef66f6fd9d797079310f8c0febb4937cb",
+      "source_id": "src_9dbda6e4ff1c59b9b5cdba35220c75a0",
+      "stored": "install.md-8b367908be97.md",
+      "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/Install.md"
+    },
+    {
+      "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+      "git_sha": "7ce302bc371b5298508bbe9be029008ac264a6aa",
+      "lines": 777,
+      "path": "README_fr.md",
+      "repository": "bytedance/deer-flow",
+      "sha256": "99f6934e5e5239932409db2abfd3cdaa871dd7a01445c4aeff4f3e8ffe16fbc0",
+      "source_id": "src_a75a00c68a8e5ea6a03dd380496f62d2",
+      "stored": "readme_fr.md-faef9178bc1b.md",
+      "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/README_fr.md"
+    },
+    {
+      "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+      "git_sha": "f220537e67089bf9c62b50bcf44a5d0affaced0a",
+      "lines": 764,
+      "path": "README_ja.md",
+      "repository": "bytedance/deer-flow",
+      "sha256": "11c48f8cbd469df5d63e5c71587cf80068804ae5a674db686132a00dde0385d6",
+      "source_id": "src_ac9e23c34ca55bf393e281df6ec83c13",
+      "stored": "readme_ja.md-f352f176b719.md",
+      "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/README_ja.md"
+    },
+    {
+      "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+      "git_sha": "6bdc6b70033bdeb24e9fd35c96ec5df34687772e",
+      "lines": 195,
+      "path": "docs/ARCHITECTURE.md",
+      "repository": "bytedance/deer-flow",
+      "sha256": "10d2ff251e638598251456f67876af1f72a28d385132472963e20edcaec4de9b",
+      "source_id": "src_b8d8f964e1e959869ce91d82ef10b5e9",
+      "stored": "architecture.md-ff21b6b9a3a3.md",
+      "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/ARCHITECTURE.md"
+    },
+    {
+      "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+      "git_sha": "fe53b14462c08721ca5df373082e3bb04986c493",
+      "lines": 79,
+      "path": "docs/database-forward-revision-recovery.md",
+      "repository": "bytedance/deer-flow",
+      "sha256": "8f1f5a63d101af11b30f4750759ed25e48a772b36c4f1764f1e0854c52f9e114",
+      "source_id": "src_b745213444965d178f5b1193177bbf59",
+      "stored": "database-forward-revision-recovery.md-a385d9a405b6.md",
+      "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/database-forward-revision-recovery.md"
+    },
+    {
+      "commit": "d5ae3882b6708fa9af7289a0c3c0be3eee157203",
+      "git_sha": "29a12b4e51423d3136178d746a5e29a90c960fb9",
+      "lines": 46,
+      "path": "docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt",
+      "repository": "bytedance/deer-flow",
+      "sha256": "3db0629298e760ec31ccb85d9102ef6c7d93f613b1dbc6b74ad18dce14538d0e",
+      "source_id": "src_98027274af2e59c19677abbd05dcf0a1",
+      "stored": "deerflow-default-summary.txt-84349727dd8c.txt",
+      "url": "https://github.com/bytedance/deer-flow/blob/d5ae3882b6708fa9af7289a0c3c0be3eee157203/docs/experiments/task-continuity-20260912/prompts/deerflow-default-summary.txt"
+    }
+  ],
+  "summary": "DeerFlow 2.0 is a ground-up rewrite of the v1 Deep Research framework: a LangGraph-based super-agent harness with a four-service topology (nginx, FastAPI Gateway, Next.js frontend, optional provisioner), a harness/app backend split, middleware-wrapped agent runtime, per-thread isolation, and a documented database-recovery path. Evidence is documentation-heavy; no benchmark/eval harness is described. Evidence coverage: 126 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

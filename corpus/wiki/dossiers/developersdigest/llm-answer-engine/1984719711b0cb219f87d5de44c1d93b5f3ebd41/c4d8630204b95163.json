@@ -1,0 +1,536 @@
+{
+  "applied_operation_id": "op_bd69466ad7384529a122b65d25f6470e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cfa5d1000371f6fedf1080a1c603141703f4457be5173f5baa8702da89bcc076",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c6aa3895261853c0ca6c48bdc9f11081b143a451589b4bc0da4176e17741bf80"
+      ],
+      "text": "The project relies on Groq, Mistral's Mixtral, Langchain.JS, Brave Search, Serper API, and OpenAI to return sources, answers, images, videos, and follow-up questions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df5f8b5379ec92201fb9a7a43d4dc2825774ac6f61d961e2fed6cc3458388648",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 52,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L41-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e12e8e02f5fbaf555686624e741c0a56da8fc452e0c9df41c9bc9bfaef8cf8f"
+      ],
+      "text": "The stack includes Next.js, Tailwind CSS, Vercel AI SDK, Cheerio for HTML parsing, plus optional Ollama, Upstash Redis rate limiting, and Upstash semantic cache."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6d9828e2d6ccd9061a5a9e7f349fec6e34260d578a4e495614ff689baa30f6f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 159,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L146-L159"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 144,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L144-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa19e44ab2966d47df496101338a198b80d8c4876f26843f3c5a6d0d942ec582",
+        "slc_c020e1747a725e98d8f8ccd461e81391523b97420f8932abad7077a99ac2809c"
+      ],
+      "text": "Behavior is controlled via app/config.tsx flags including useOllamaInference, useOllamaEmbeddings, useFunctionCalling, useRateLimiting, useSemanticCache, and usePortkey, with defaults like mixtral-8x7b-32768 and textChunkSize 800."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1221a415c896506eaeefdc1b471e6e2c0273c40fd4c5b0a1a00e9a16b2fad518",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 162,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L162-L162"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 169,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L164-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1130277e18477ee0cb3a67428c6413fdd9c7027b29fab8ac7b4f2f3ec7a99adc",
+        "slc_deb6323fdf8985d189eca8a7ab814a4d6c69c5b321f47f052b9acf5ccc2f1c16"
+      ],
+      "text": "Function calling (beta) supports maps/locations and shopping via Serper APIs, TradingView stock data, and Spotify, and must be enabled by setting useFunctionCalling to true."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f4b73645fc7e38f946b37974c3aee2c43e24aaae653d8142707c1f8c7e3ebb1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 178,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L178-L178"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L172-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b9fdb838c37b2af62e506c26c73e88a28e58d37ee0234aff769affae113d8e4",
+        "slc_c5f71b2c9e4110fe64af318d12c9b81bf130377c142c4b43fede82cae7ba488a"
+      ],
+      "text": "Ollama support is partial: streaming text and embeddings work, but follow-up questions are not yet supported and are skipped when useOllamaInference is true."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_235828817c9b3ebdd73e124ff865635cb6ea512ddd3fb7e79c7e449bc6124101",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 174,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L174-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_338d86c12d563ee2615069d915606815ae95388fd9084cdb1efab5ccebdcf818"
+      ],
+      "text": "With Ollama, time-to-first-token can be long when using local embedding and inference models; the README recommends lowering RAG-related config values to reduce it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d580b8633e18b6d7975ec18bde123584e7d0217b7c98a6e6cc96cc0f7792f3d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 230,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L230-L230"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 73,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L70-L73"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 129,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L114-L129"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21d7ad73f7a9ef9473ac11de96e4ace2f3a386453f0aad351ae8db47fd9edc39",
+        "slc_688c6e5961dcb68e242ad24fd97000b4dcfcb2d132d3809c9d2a4bf6a87fa698",
+        "slc_b4cf28dc602591d76c4f7c4a327eb782e7f9034e21856b38e38bdab7d1a4e37d",
+        "slc_dd1c6d532c5d8e006b95342c0798c88bc47e34384a1e1e0cb0ca2fd512fc3462"
+      ],
+      "text": "Setup requires API keys from OpenAI, Groq, Brave Search, and Serper, provided via a .env file or docker-compose.yml, with Node.js >= 18.17.0 required by Next.js 14.1.x."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4ae66ff30e7292f91c00c8144ac573c4cbf5960082caa35f7dd7fabe6fd09da",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L81-L81"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 110,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L102-L110"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 138,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L131-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12089b793ab75c6f1834e27b1847913c04f6746dc8dc363297f12e91252227d0",
+        "slc_139ed4bbc83585bd0b96c4e477a6102067c9fbf9cfee05e0c83773c90382886f",
+        "slc_ff069cdea9e3f261d924f609ce779db7ee3afdf488a75976f82c87b990f1a2e6"
+      ],
+      "text": "The app can be run via Docker (docker compose up -d) or non-Docker (npm/bun run dev), and one-click Vercel deployment is offered with all four API keys required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb9d6ea1eb9b93056f495cc952da9d14664253e3ca21f6add0d183a2d854ef91",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "6b6ced485f40a02aa4bf15ee7436fa2ca11cd464",
+          "line_end": 43,
+          "line_start": 42,
+          "path": "style.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/style.md#L42-L43"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "6b6ced485f40a02aa4bf15ee7436fa2ca11cd464",
+          "line_end": 39,
+          "line_start": 38,
+          "path": "style.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/style.md#L38-L39"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "6b6ced485f40a02aa4bf15ee7436fa2ca11cd464",
+          "line_end": 6,
+          "line_start": 4,
+          "path": "style.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/style.md#L4-L6"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "6b6ced485f40a02aa4bf15ee7436fa2ca11cd464",
+          "line_end": 55,
+          "line_start": 54,
+          "path": "style.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/style.md#L54-L55"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "6b6ced485f40a02aa4bf15ee7436fa2ca11cd464",
+          "line_end": 16,
+          "line_start": 9,
+          "path": "style.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/style.md#L9-L16"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "6b6ced485f40a02aa4bf15ee7436fa2ca11cd464",
+          "line_end": 47,
+          "line_start": 46,
+          "path": "style.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/style.md#L46-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07ad415f0399c954ea866ce18950f52c1fc5641b532694c7c076fa88826abe06",
+        "slc_349070ab6c9eed248da63310268c38c1ef2a7c6bb130b532203febe815a29e07",
+        "slc_537ddcbacb2670fba48aa2c27c457d63b6fafce3968ceb98c522d744251d033e",
+        "slc_9e4f7b56e6339e6fd34df7698859596404a9bee7991722d61b3afffa098fdb65",
+        "slc_a2e6bf7430b1fd99078f4bd8a0a7015a0ca1b98a2478f460e6ba9536a9b8c6ea",
+        "slc_dd42119773ee931ac423a808c250b5a5810547117ca6732c2888c798cfd6055b"
+      ],
+      "text": "Repository development practice: style.md prescribes PascalCase components, camelCase identifiers, TypeScript with .tsx files, Tailwind styling, React context for global state, semantic commits, and unit tests for critical components."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1604233aea01ba52075b1e01e84737b0777275dc02574e40eb5d4a6b75a68a33",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 208,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L208-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69c3693dd890be08f4b58c93ee123d2799023ae919a17838057ed4dafb4c6012"
+      ],
+      "text": "Repository development practice: contributions are accepted via fork, changes, and pull requests, and issues may be opened for improvements or bugs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4200fd600dbd1ddfd4be299b7d757a2ec14a778813e9d9396448533329b78f0",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 200,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L199-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a3b09dff8ca019178617c9b9d541cc08c0378c1da14095f914bbab68a223be1"
+      ],
+      "text": "A standalone Node.js/Express backend version exists in the express-api directory as a reference for building a similar API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f597db8c2d5e7824905540093076126c3e01863d171728478192578dcde16b7c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 191,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L184-L191"
+        },
+        {
+          "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+          "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+          "line_end": 195,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "developersdigest/llm-answer-engine",
+          "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md#L195-L195"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c37c9f421e300862824efc11db1944225e4a3f4af9010c866d6dab9ba78c315e",
+        "slc_f997576fa7c114771958af5666ebc73850d2154ec4e3647b49c3fb33373cfb66"
+      ],
+      "text": "Completed roadmap items include Portkey AI Gateway for multiple model providers, semantic caching, Fal.AI SD3 image generation via @ mention, conditional UI components, and dark mode."
+    }
+  ],
+  "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 241,
+        "path": "README.md",
+        "size": 11806
+      },
+      {
+        "lines": 67,
+        "path": "style.md",
+        "size": 2671
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 89,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_3ba1138cdcca54e4b2ad27490b493758",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/developersdigest/llm-answer-engine/1984719711b0cb219f87d5de44c1d93b5f3ebd41/c4d8630204b95163/manifest.json",
+  "package_id": "pkg_532196d34641235250be4f56c29f8e9ce1fd20ff6fa80d1819eb5095856ced5e",
+  "repo": "developersdigest/llm-answer-engine",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "27c0c77496fb507dcda6aa9a00fa4cd81c13b9ea7c4c8b19790beb2f032faad3",
+  "snapshot_id": "c4d8630204b95163",
+  "sources": [
+    {
+      "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+      "git_sha": "7ed5212a50d242bdff0abf849a488f2391392747",
+      "lines": 241,
+      "path": "README.md",
+      "repository": "developersdigest/llm-answer-engine",
+      "sha256": "d22e67e6681f610284aa07935293b3c6b07dc488411298ff53b2b114db039619",
+      "source_id": "src_58056baf665b5a61a462d5a60a8a4bf8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/README.md"
+    },
+    {
+      "commit": "1984719711b0cb219f87d5de44c1d93b5f3ebd41",
+      "git_sha": "6b6ced485f40a02aa4bf15ee7436fa2ca11cd464",
+      "lines": 67,
+      "path": "style.md",
+      "repository": "developersdigest/llm-answer-engine",
+      "sha256": "0be783427c57822d44d5e1c031bd809d64c648d893b7c5d3679e66cd73ada49d",
+      "source_id": "src_872d3d91ff755d1495f299878f85eaf2",
+      "stored": "style.md-7b1bca67f132.md",
+      "url": "https://github.com/developersdigest/llm-answer-engine/blob/1984719711b0cb219f87d5de44c1d93b5f3ebd41/style.md"
+    }
+  ],
+  "summary": "README-only snapshot of a Perplexity-inspired LLM answer engine built on Next.js, Groq/Mixtral, Brave/Serper search, and optional Ollama/Upstash/Portkey integrations, with setup instructions and a contributor style guide. No source code is present in the evidence, so most claims are documentation-based.",
+  "superseded_claim_ids": []
+}

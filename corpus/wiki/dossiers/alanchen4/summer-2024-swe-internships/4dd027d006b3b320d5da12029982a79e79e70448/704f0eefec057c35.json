@@ -1,0 +1,222 @@
+{
+  "applied_operation_id": "op_dd30fc93785346a6a7882efed8b80c3f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d96430b9f28b12a2c9e298dd30ec7ef676d2a933610f65f36d3a65735a062e0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4dd027d006b3b320d5da12029982a79e79e70448",
+          "git_sha": "84ee943ca6c7ea90e6c55ab79c53b720f30bc6c4",
+          "line_end": 26,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "alanchen4/summer-2024-swe-internships",
+          "url": "https://github.com/AlanChen4/Summer-2024-SWE-Internships/blob/4dd027d006b3b320d5da12029982a79e79e70448/requirements.txt#L1-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08f59338e4e013121edc128d0f0f4feedb21637bb1ac50d689465953408d0346"
+      ],
+      "text": "The project pins exact dependency versions in requirements.txt, including requests 2.31.0, python-dotenv 1.0.0, and PyYAML 6.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99a809caf63b9e8f81b7f6edefe661816d94d0266f692a25454a85bddb91d39a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4dd027d006b3b320d5da12029982a79e79e70448",
+          "git_sha": "84ee943ca6c7ea90e6c55ab79c53b720f30bc6c4",
+          "line_end": 26,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "alanchen4/summer-2024-swe-internships",
+          "url": "https://github.com/AlanChen4/Summer-2024-SWE-Internships/blob/4dd027d006b3b320d5da12029982a79e79e70448/requirements.txt#L1-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08f59338e4e013121edc128d0f0f4feedb21637bb1ac50d689465953408d0346"
+      ],
+      "text": "Repository development practice: requirements.txt includes pre-commit 3.3.3, black 23.3.0, and mypy 1.4.1, indicating the project uses pre-commit hooks with formatting and type checking in its development workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b361640b802f545fec40091cf47135bd73bf41409d313f370b793747cf91f075",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "4dd027d006b3b320d5da12029982a79e79e70448",
+          "git_sha": "84ee943ca6c7ea90e6c55ab79c53b720f30bc6c4",
+          "line_end": 26,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "alanchen4/summer-2024-swe-internships",
+          "url": "https://github.com/AlanChen4/Summer-2024-SWE-Internships/blob/4dd027d006b3b320d5da12029982a79e79e70448/requirements.txt#L1-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08f59338e4e013121edc128d0f0f4feedb21637bb1ac50d689465953408d0346"
+      ],
+      "text": "Repository development practice: the presence of nodeenv and virtualenv among pinned packages suggests the pre-commit setup may manage Node-based hooks and isolated environments for contributors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_50499ccadd3f65e0773aafd7f60e9b9dc11f1b682252625cc77d4b79198ad387",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4dd027d006b3b320d5da12029982a79e79e70448",
+          "git_sha": "84ee943ca6c7ea90e6c55ab79c53b720f30bc6c4",
+          "line_end": 26,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "alanchen4/summer-2024-swe-internships",
+          "url": "https://github.com/AlanChen4/Summer-2024-SWE-Internships/blob/4dd027d006b3b320d5da12029982a79e79e70448/requirements.txt#L1-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08f59338e4e013121edc128d0f0f4feedb21637bb1ac50d689465953408d0346"
+      ],
+      "text": "Type-stub packages (types-requests, types-urllib3) are pinned alongside mypy, supporting static type checking of requests-based code during development."
+    }
+  ],
+  "commit": "4dd027d006b3b320d5da12029982a79e79e70448",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 26,
+        "path": "requirements.txt",
+        "size": 453
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README.md",
+        "reason": "byte-budget",
+        "size": 75258
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 36,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": false,
+      "omitted": 1,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_7816a7192d5c522a9ebcb4bfaac6efcc",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/alanchen4/summer-2024-swe-internships/4dd027d006b3b320d5da12029982a79e79e70448/704f0eefec057c35/manifest.json",
+  "package_id": "pkg_6fb57e6991a985e711a38a892b26c0970ed050e8896cd0c72af026be12a23f72",
+  "repo": "alanchen4/summer-2024-swe-internships",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "cc52ea8cd8a6832e7d61c7eca091bde2f7a695a670eedf3076db988b984266d4",
+  "snapshot_id": "704f0eefec057c35",
+  "sources": [
+    {
+      "commit": "4dd027d006b3b320d5da12029982a79e79e70448",
+      "git_sha": "84ee943ca6c7ea90e6c55ab79c53b720f30bc6c4",
+      "lines": 26,
+      "path": "requirements.txt",
+      "repository": "alanchen4/summer-2024-swe-internships",
+      "sha256": "f9e6dbc617f7d7338fa4d442d5b5a35c2775fa2b243f178467ccd7d2fd631ec3",
+      "source_id": "src_b79279bb68605ebeb10af8b8bba2b103",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/AlanChen4/Summer-2024-SWE-Internships/blob/4dd027d006b3b320d5da12029982a79e79e70448/requirements.txt"
+    }
+  ],
+  "summary": "The snapshot contains only a pinned requirements.txt listing development tooling (pre-commit, black, mypy) and runtime libraries (requests, python-dotenv); no product code or documentation is present in the evidence.",
+  "superseded_claim_ids": []
+}

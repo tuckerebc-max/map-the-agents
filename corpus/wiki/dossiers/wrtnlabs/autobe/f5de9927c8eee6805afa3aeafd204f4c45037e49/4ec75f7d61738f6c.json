@@ -1,0 +1,593 @@
+{
+  "applied_operation_id": "op_63011d768c4f49cabba8b4ccddee598d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f240908f74b15bf1f29f0cb73b98d7e5c891f0e1fe932f022a570d82b8ed03f7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 51,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L47-L51"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L16-L16"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 174,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L174-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_648b5afd10f561ccc8c9a56a18f4afa4a408319d7632a5e31d9086250ac0d9d9",
+        "slc_6ff32acab8b9fac117b2454a3575fca0bf0cad79f79bbb3e8340e2adb87140b2",
+        "slc_98af4ce01531908de3ea02b5778237d9bfdb8938a90d3462b8d1d2a7ce31d13f"
+      ],
+      "text": "AutoBE generates requirements analysis reports, database/ERD and Prisma schema design, API specifications, e2e test functions, and implementations, and users can stop at any phase rather than running the full pipeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8acaee374c8a5db4a23ac2b2f5a87ef600bc748d73ba571ed11eb2fd751d58f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 117,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L99-L117"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2165a96b8368028fec029af7313f5e73f5e0570f7bc84deb009eeb9c01709333",
+        "slc_3b7ad31fa7a493ff38b387b6925512598e205ee4546d2f5a9506d312d0401bb4"
+      ],
+      "text": "A Facade Controller coordinates specialized functional agents (Analyze, Database, Interface, Test, Realize) in a waterfall flow, with 40+ agents working in coordinated teams across phases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bb96774733d8644d310f26a9730db8dec6aaf70d48c385c714699e1af8a2df00",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 121,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L121-L121"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c4581f33e93448e983d1fc358726c6285d5a7edf71474176efeabdecff712303"
+      ],
+      "text": "Rather than emitting code directly, agents build language-neutral ASTs from predefined schemas; each node is validated against type rules before code generation, and each waterfall stage has AI-friendly compilers that guarantee type safety."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6865ceb921d7c3f2a713628a7b67bf114c5222954137a8ca4066b69054c0a674",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 117,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L99-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2165a96b8368028fec029af7313f5e73f5e0570f7bc84deb009eeb9c01709333"
+      ],
+      "text": "Compiler feedback loops include a Database compiler, an OpenAPI compiler, a Test compiler, and a hybrid compiler for the Realize phase, connected to their respective agents in the architecture diagram."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71d01aaa46fabdb5bc80a671df79d17ef3fdf55f98ed760b2cdc884499fd5072",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 85,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L72-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ca882ea44ad266345691f8f43c62d37b4b310145a7c83d04b9daa155e00f4a38"
+      ],
+      "text": "AutoBE documents a WebSocket protocol with RPC support for NestJS servers, NodeJS servers, and client applications, plus an agent library covering facade controller, configuration, event handling, and prompt histories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_311c099c3a2ce52f0c41a2f9c01ea5986773a9be817dc4d060c03f0b6ed4864f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 185,
+          "line_start": 182,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L182-L185"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 213,
+          "line_start": 213,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L213-L213"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 180,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L180-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c5c1af845eaa70f43f9ef4551f3bc25baef777c1d19f968b30a012305e78395",
+        "slc_d1ef62f0bdc5fde082ab8286b9d3b380e3f84f2d636ad3d5f81290d96f64aa4d",
+        "slc_dc8b1f6cda12e01dd5c56fa840e12a29d9e329ec99f67092a8c1ad177af6b72b"
+      ],
+      "text": "Every generated backend automatically includes a type-safe TypeScript client SDK with no manual setup, usable from React, Vue, Angular, or other TS/JS projects; the same SDK is used internally to generate e2e test suites."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9744588fb217a69c955584a1f69d386b52a97bbf206bd0082a85dd9935286f33",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L137-L137"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L135-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_513b8c446e035c16a9e85146fc1275ebc6bbcd87927c674c8063e730544dd0dd",
+        "slc_aeddfa43d4fed588113d3a0cc24e9fb06ac11c7ffc0edab7a8f64bec2ccfec35"
+      ],
+      "text": "An automated benchmark pipeline scores generated backends across 13+ LLM models and 4 project types on compilation correctness, documentation, requirements/test/API coverage, logic completeness, and AI-agent analysis, with 0-100 scores and A-F grades published at autobe.dev/benchmark."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62c2d0699878340f883647ce86c0d419d97cbd72ae343e8f4d856c61555bad31",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L153-L153"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "223442261a650d1c6ae283044d323deb31be0f71",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "JOB-DESCRIPTION-KR.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/JOB-DESCRIPTION-KR.md#L64-L64"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 39,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L34-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0173aca5f96105826b6592ec6adefe83ec19306d07c0c846c5ea13ca87285a16",
+        "slc_059955c2c9109209374c5f1b6fae04d004dfd43d4b8d641ddfedf0263389c3dd",
+        "slc_b30db897c55065ed564900c250e853f5ae633e1fb40d931fc03f62d573fd6b2d"
+      ],
+      "text": "AutoBE itself is built with TypeScript and AI function calling, and generates backends on a TypeScript + NestJS + Prisma stack; the repo uses pnpm (via corepack) for setup and benchmark commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_100d2f393c153c445fe49fc97d243dfc21e05d4946789faf9557448d099b3d14",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 290,
+          "line_start": 290,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L290-L290"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L292-L292"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 288,
+          "line_start": 288,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L288-L288"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 294,
+          "line_start": 294,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L294-L294"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22071bcd775d8c1e416ee304715ba70df105bc00efd4d00809a07e5cf44b8dc4",
+        "slc_65a71faf90607fd10ba4990ecbe9871ff71dbe637d103b41e84e7cae8b4a11d5",
+        "slc_af32f254e106e159d3f8b5a1ee5e3e1c053fad13eca098671d6b14f1674d5b3f",
+        "slc_d505a62d83dd5976cc7e3155cfc141b5d547f9c44afae321cd273f493f15f57d"
+      ],
+      "text": "Generated apps compile but runtime behavior may still need refinement (e.g. database connection issues or endpoint failures), designs may differ from user expectations, complex projects consume 30M-250M+ tokens, and AutoBE does not provide ongoing maintenance after generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_265bad583043e2cc644a546d9b0b47ce6d211fbcaad7924edd9c82d2f79afed9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L5-L5"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 80,
+          "line_start": 76,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L76-L80"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 96,
+          "line_start": 88,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L88-L96"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_324acbd923c272c91adf91f102f8ad7c28d23e63e5b3d79fa0804a17f7b2e339",
+        "slc_4035fc70c46fe313f153abd468c11a79049ac7f83e1d93a9fbaa26e1438e2cd1",
+        "slc_6271d9298e2af02cae17e90132c8c121180cae4b5b680bc12b645576e3d0ddbe"
+      ],
+      "text": "PLAN.md states the current playground server is completely stateless (no database, memory only) and proposes re-implementing persistence on SQLite with vendor management including encrypted API keys and per-session vendor tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_10d2fe9f6615c4259f37f730f5d7c8734f7689fb2023b4a27f8e3d8a76eaaf98",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 140,
+          "line_start": 134,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L134-L140"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 169,
+          "line_start": 164,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L164-L169"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 96,
+          "line_start": 88,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L88-L96"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 155,
+          "line_start": 149,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L149-L155"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+          "line_end": 110,
+          "line_start": 102,
+          "path": "PLAN.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md#L102-L110"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_349e7a8fb1cf7f4bb17b90355734743f3b39b355694db4092340489ce089fced",
+        "slc_5bf0cf397364a53d2b72efef783ff1a726f3db14ba82476d2410ae4fd5fc89c1",
+        "slc_6271d9298e2af02cae17e90132c8c121180cae4b5b680bc12b645576e3d0ddbe",
+        "slc_91246ab07da4c51e6cbb3b586f60326a6497be431882d9ad5e10c2aa1391d4d2",
+        "slc_bd655c2bfe21459b83f65ddddab057e29b431ec88030646148addf1de5593691"
+      ],
+      "text": "The planned Prisma schema defines models for vendors, sessions, session connections, session histories, session events, and session aggregates (with phase and token usage fields), with a unique constraint on the aggregate's session id."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0242d94aa3b2bc67e40930453c9ec352ceae9c55a03e13c3e955c40284b9f878",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "223442261a650d1c6ae283044d323deb31be0f71",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "JOB-DESCRIPTION-KR.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/JOB-DESCRIPTION-KR.md#L101-L101"
+        },
+        {
+          "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+          "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+          "line_end": 234,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "wrtnlabs/autobe",
+          "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md#L228-L234"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3acdfa82506c42902006ee5f49464db6b3e9ec1accae1231f4906dc4412684f7",
+        "slc_7a6f5020947b4e5a3316ef7cd5ef01baf57f4bdedfec2d44f61b612fe5a82d95"
+      ],
+      "text": "The system appears to rely heavily on function calling: the job description states the whole system, from AST generation to orchestration, operates through function calling, and the roadmap lists dynamic function calling schemas as completed work."
+    }
+  ],
+  "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 302,
+        "path": "README.md",
+        "size": 18874
+      },
+      {
+        "lines": 149,
+        "path": "JOB-DESCRIPTION-KR.md",
+        "size": 12953
+      },
+      {
+        "lines": 377,
+        "path": "PLAN.md",
+        "size": 15214
+      },
+      {
+        "lines": 291,
+        "path": "CLAUDE.md",
+        "size": 12179
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1893,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_0097c710404d5e378294b26f39beb9e7",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/wrtnlabs/autobe/f5de9927c8eee6805afa3aeafd204f4c45037e49/4ec75f7d61738f6c/manifest.json",
+  "package_id": "pkg_df1c3426190f2aa7480be6a7856e911755d9ac5fe68b0a966c38e72006b39047",
+  "repo": "wrtnlabs/autobe",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "518bc5fa216356b0b29a5e01e0279691e9a835231c6b1fc1d27175484a12c147",
+  "snapshot_id": "4ec75f7d61738f6c",
+  "sources": [
+    {
+      "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+      "git_sha": "310d947b974523f3d1e7b1cb8d60e388e026f644",
+      "lines": 291,
+      "path": "CLAUDE.md",
+      "repository": "wrtnlabs/autobe",
+      "sha256": "4e3e6bb056b9c7cb44bc4148c3212c7075f56b0dde833c9b3939b3149dde290b",
+      "source_id": "src_18118b7222e55553a832c2cc0d153250",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/CLAUDE.md"
+    },
+    {
+      "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+      "git_sha": "223442261a650d1c6ae283044d323deb31be0f71",
+      "lines": 149,
+      "path": "JOB-DESCRIPTION-KR.md",
+      "repository": "wrtnlabs/autobe",
+      "sha256": "937b57bc88559858210d5d26526f2081b72876bd7b4aac5a2176a8300c5213b8",
+      "source_id": "src_30a8fcc879af54fea067d1bdc6f3d577",
+      "stored": "job-description-kr.md-5f2910fbbd9e.md",
+      "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/JOB-DESCRIPTION-KR.md"
+    },
+    {
+      "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+      "git_sha": "04063de573c7bf57006e3c007ef88d30f422ea29",
+      "lines": 377,
+      "path": "PLAN.md",
+      "repository": "wrtnlabs/autobe",
+      "sha256": "d13912f49051c923a695b2ce6843b4fa9fd1cb24085dc5be8fd9998f9c90e5df",
+      "source_id": "src_84ea21103a875cddac0c8e0eee8a0140",
+      "stored": "plan.md-1d972b4ac04c.md",
+      "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/PLAN.md"
+    },
+    {
+      "commit": "f5de9927c8eee6805afa3aeafd204f4c45037e49",
+      "git_sha": "6003e6812199df150055df3b388ce5ee20f62478",
+      "lines": 302,
+      "path": "README.md",
+      "repository": "wrtnlabs/autobe",
+      "sha256": "992ce53e8176e0190498178f25ddfc7e835a569a9a66b981a31bc79fa5ffbca8",
+      "source_id": "src_252be3d301c359b297e4e0191ca94192",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/wrtnlabs/autobe/blob/f5de9927c8eee6805afa3aeafd204f4c45037e49/README.md"
+    }
+  ],
+  "summary": "AutoBE is an open-source AI backend builder that generates TypeScript/NestJS/Prisma backends from natural-language chat via a waterfall of 40+ specialized agents with compiler feedback loops, includes a benchmark pipeline and type-safe client SDK, and documents limitations around runtime behavior, token consumption, and maintenance. PLAN.md describes a currently stateless playground server with a proposed SQLite-based persistence design. Evidence coverage: 137 of 218 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

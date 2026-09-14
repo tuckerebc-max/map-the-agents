@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1a6749db0581f421d4787ce29ab192635df42fcb68d2d0d582f2274f0075072a
+- clm_212bd080fbc62bc3b785f35d5e97905a6f69ddd6a4a7653cc55e219cfae559de
+- clm_2676378cc7e03582cdae0c5f020d09cf4c83a85a3be246d134217e3bca93b898
+- clm_40c914724c4bf780f0fcd63e00b4e037ff5f33902350ea7a31aeb8f05dd137d2
+- clm_59af9cd3cecf2693aff698db0088b64986e4c6b9f26915b68ac863c0cf0e2463
+- clm_66a13df9cd4a483f69646b172d92ae151b9cac8398b47c67c273da04d44e7669
+- clm_6a7ee3f54121c1a2f058a35b05b3d797fe691568dc74221b65388832be43bf0a
+- clm_7b80926cc27e77495d454099cf1d7d29ea782c9feb2c5952542f0cc9d9213ffa
+- clm_7d899e87a142e781f732b7f26b82c1906cf2104826e33347f74edc2bf452d1ca
+- clm_950caac5142aeebb46830f211e4cb125520b8c743b587497c4e2ecb340a01b83
+- clm_ef23240f603528346092a158f01701f68925cd9728ad36cbe889cb804e3c7bbd
+maturity: draft
+page_id: pg_3461dac30a5c5516a13022075d27221f
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: gastownhall/gastown
+updated_at: '2026-09-14T03:52:52Z'
+---
+
+# gastownhall/gastown
+
+<!-- rcw:begin owner=entity:ent_d217d8fbd7a65f5eab22a66549d09763 block=evidence -->
+- gastownhall/gastown is mentioned in this evidence. [@claim:clm_1a6749db0581f421d4787ce29ab192635df42fcb68d2d0d582f2274f0075072a] [@claim:clm_212bd080fbc62bc3b785f35d5e97905a6f69ddd6a4a7653cc55e219cfae559de] [@claim:clm_2676378cc7e03582cdae0c5f020d09cf4c83a85a3be246d134217e3bca93b898] [@claim:clm_40c914724c4bf780f0fcd63e00b4e037ff5f33902350ea7a31aeb8f05dd137d2] [@claim:clm_59af9cd3cecf2693aff698db0088b64986e4c6b9f26915b68ac863c0cf0e2463] [@claim:clm_66a13df9cd4a483f69646b172d92ae151b9cac8398b47c67c273da04d44e7669] [@claim:clm_6a7ee3f54121c1a2f058a35b05b3d797fe691568dc74221b65388832be43bf0a] [@claim:clm_7b80926cc27e77495d454099cf1d7d29ea782c9feb2c5952542f0cc9d9213ffa] [@claim:clm_7d899e87a142e781f732b7f26b82c1906cf2104826e33347f74edc2bf452d1ca] [@claim:clm_950caac5142aeebb46830f211e4cb125520b8c743b587497c4e2ecb340a01b83] [@claim:clm_ef23240f603528346092a158f01701f68925cd9728ad36cbe889cb804e3c7bbd]
+<!-- rcw:end owner=entity:ent_d217d8fbd7a65f5eab22a66549d09763 block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_096ac87fd6ba05a5437b26d04b4be8b3084590d2de1643424f6a772183c4173e
+- clm_374262ad54f8b1dda9038030e29d0f4f8d6c86e28eccfddf375bd63be4717ac1
+- clm_39682cecd7fbf136066441c144cd88a7885bc9769ca2880a8bef289ec621583b
+- clm_4cdaca73b6464be46b4b7e47b1673c112b90974e3ff9ffb4e868703cf48e2173
+- clm_55254b88a43fea98d4f5ec14099b8d5859c02c1e9ea242d28aba8e8b9aaf610e
+- clm_67fb9a84f1c33b987dd8d3bfe31727dc0a93423b0b802c7e646fb484fa0f7d31
+- clm_76b65866cfb58ea91a44cf0a5659d20b52d684e0e992445cbdf0ee450167b9ef
+- clm_7bf29c44eec774586f160ef37b612564cbc45bd7ca8a921fb6182fe0ee836c1b
+- clm_7e29e9a69ee470133f85bdeb9ad0a0b1807d34ec2269fbf58dc650f932bf52b1
+- clm_9523ab7623bc22587094a9061d33898d4d48dca72cf06ed0e642edf3e6f64389
+- clm_c0abbf135c83887dc31ab5f8503f72ace13f868bf3da795b348c01970dd41108
+maturity: draft
+page_id: pg_84292a4533cc559683322c5bf0305f50
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: arjunhw97/msn-flocking-formation-control
+updated_at: '2026-09-14T03:36:00Z'
+---
+
+# arjunhw97/msn-flocking-formation-control
+
+<!-- rcw:begin owner=entity:ent_7adb364a1e625c38a85646e2b5e604db block=evidence -->
+- arjunhw97/msn-flocking-formation-control is mentioned in this evidence. [@claim:clm_096ac87fd6ba05a5437b26d04b4be8b3084590d2de1643424f6a772183c4173e] [@claim:clm_374262ad54f8b1dda9038030e29d0f4f8d6c86e28eccfddf375bd63be4717ac1] [@claim:clm_39682cecd7fbf136066441c144cd88a7885bc9769ca2880a8bef289ec621583b] [@claim:clm_4cdaca73b6464be46b4b7e47b1673c112b90974e3ff9ffb4e868703cf48e2173] [@claim:clm_55254b88a43fea98d4f5ec14099b8d5859c02c1e9ea242d28aba8e8b9aaf610e] [@claim:clm_67fb9a84f1c33b987dd8d3bfe31727dc0a93423b0b802c7e646fb484fa0f7d31] [@claim:clm_76b65866cfb58ea91a44cf0a5659d20b52d684e0e992445cbdf0ee450167b9ef] [@claim:clm_7bf29c44eec774586f160ef37b612564cbc45bd7ca8a921fb6182fe0ee836c1b] [@claim:clm_7e29e9a69ee470133f85bdeb9ad0a0b1807d34ec2269fbf58dc650f932bf52b1] [@claim:clm_9523ab7623bc22587094a9061d33898d4d48dca72cf06ed0e642edf3e6f64389] [@claim:clm_c0abbf135c83887dc31ab5f8503f72ace13f868bf3da795b348c01970dd41108]
+<!-- rcw:end owner=entity:ent_7adb364a1e625c38a85646e2b5e604db block=evidence -->
+
+## Researcher notes
+

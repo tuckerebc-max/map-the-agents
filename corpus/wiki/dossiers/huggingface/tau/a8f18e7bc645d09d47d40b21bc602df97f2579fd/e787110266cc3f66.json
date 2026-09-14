@@ -1,0 +1,563 @@
+{
+  "applied_operation_id": "op_18b90764f3294c6782d35304782d4e19",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_aa3b4fd9f19108b582b7f041236dc89a95a650caf6b583c79538087d91dd087b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 46,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L42-L46"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "80be96565eaa9723663dff62be2902fbe4f75501",
+          "line_end": 29,
+          "line_start": 25,
+          "path": "AGENTS.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/AGENTS.md#L25-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44fcce0b3654708a7a591ec31e22c5138f55bf22c3639a161585ac0e62594542",
+        "slc_ee9376aa8adf6471abe49cd1e95485a5b667da4b9e7b81ae91dca470e590974d"
+      ],
+      "text": "Tau is split into three layers: tau_ai (provider/model streaming), tau_agent (portable harness with loop, tools, events, sessions), and tau_coding (CLI, TUI, skills, on-disk sessions)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_280c2f040f0ee6f2d40b40bf6d9ce8aa3b1d84ac647f86d484746f6f252d2979",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 201,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L191-L201"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 222,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L221-L222"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_337bce83c3d9ed549c148545bd8b7f37baeb2b72910accd444a1b920452f8a60",
+        "slc_d619167c1db9de0d97fd638cdf3b921ed141d9eede5627eee44d259205e9a063"
+      ],
+      "text": "The architecture treats a typed event stream as the contract: providers, renderers, the TUI, and custom frontends all consume events rather than the core rendering UI itself."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f0a9928b3e19fd1936beda40d41c88c7b149d8e3b9754aa512824323c9abab8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 201,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L191-L201"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 57,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L56-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_337bce83c3d9ed549c148545bd8b7f37baeb2b72910accd444a1b920452f8a60",
+        "slc_82f1e300317e0262bad10f1af4a1474edd2a7e5b65fdd0d8d432825a244b9739"
+      ],
+      "text": "The core harness is kept portable: it does not depend on Textual, Rich, local config paths, slash commands, or rendering, and frontends consume its events."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_696d0e6ad8f0dd95868a1886fae0ed485045fbccf828d2c0be3b2409a994932d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 206,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L205-L206"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 215,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L208-L215"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 219,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L217-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_044d07319feb4c06449c67a05adc8043badf5c4fc4e327229c7c9f5a349f82c3",
+        "slc_9124122da0fa28666b981aba02e3d350a500f417e683622396c274bf109e7d46",
+        "slc_cda6bc097ae6bc9f913f6655daf4b1c290a1b22f6330d2d08ca5bbd071249a97"
+      ],
+      "text": "As a library, users construct AgentHarness with AgentHarnessConfig (provider, model, system prompt, tools) and consume an async event stream from harness.prompt()."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4df0be67604bbd93bc1658803effa2f7b1004ca6b04385ff68b274d54a163845",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 151,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L148-L151"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 164,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L159-L164"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 185,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L176-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f610cfde526348e276277a1ca8085468187b7dad800b8420b07e66c817f8e7a",
+        "slc_40e9390ad122b3f37d8f4d2be080e866ff182fbf1e02f0f36fc1969de24f5073",
+        "slc_d648ea99e8226bed7f0c288d927b6741d57b1fd8b427f4688df85ab68abe4a7a"
+      ],
+      "text": "The CLI supports interactive TUI and one-shot print mode (tau -p), a --cwd option, and slash commands such as /login and /model for provider and model selection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cdd69d98a912368b2c20dd1931b66e1b208fc595168487658a01a74bb0998268",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 201,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L191-L201"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 185,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L176-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_337bce83c3d9ed549c148545bd8b7f37baeb2b72910accd444a1b920452f8a60",
+        "slc_d648ea99e8226bed7f0c288d927b6741d57b1fd8b427f4688df85ab68abe4a7a"
+      ],
+      "text": "Sessions are stored as durable, append-only JSONL files under ~/.tau/sessions/ with resume and branching, and active context can be compacted without rewriting the record."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fd0fa34aadb23b9ebda646f7a49d6187091ade346cdc05b356314774319c849",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 201,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L191-L201"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 185,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L176-L185"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_337bce83c3d9ed549c148545bd8b7f37baeb2b72910accd444a1b920452f8a60",
+        "slc_d648ea99e8226bed7f0c288d927b6741d57b1fd8b427f4688df85ab68abe4a7a"
+      ],
+      "text": "Tau ships built-in coding tools named read, write, edit, and bash, described as typed functions with a schema and an async executor returning structured results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c5e75359429f33dfc114e623936588e3310213fc37008fb1a09e43251c5d3a0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 63,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L61-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_94e21330d3d3a75f23e74a5e038faf0fef88d075bd9aff3047fbe6917826c0ce"
+      ],
+      "text": "Tau requires Python 3.12 or newer, is published on PyPI as tau-ai installing a tau command, and recommends uv-based installers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6916eb3825acb9608d42a0658c9c3a83790426304a83b5596a5ed446ddcd6ba",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 168,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L166-L168"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15cd98bc48cf7b0f060af5e6c47cd3d3fcfa57317d71b539d08b8321da583a99"
+      ],
+      "text": "Built-in provider support includes OpenAI, Anthropic, OpenAI Codex subscription auth, OpenRouter, Hugging Face, and custom OpenAI-compatible endpoints including local models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b9a2699ae592f444491e392bde5ceeb84da11f359b97d8be61d597c7d16f8b2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "dc653890031f6b41e93ddc78097ac19492f9f04c",
+          "line_end": 100,
+          "line_start": 98,
+          "path": "CONTRIBUTING.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/CONTRIBUTING.md#L98-L100"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 172,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L170-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c1b2cf72e1e7ae4ee5ff86b510589124660c4ea34368b95a4ef89256f10953c",
+        "slc_b010ea6f1e84187c5c53c6739cad51a6158cf81c62a6d64b87d1af7e202dab5e"
+      ],
+      "text": "The provider catalog is data-driven: built-in entries live in src/tau_coding/data/catalog.toml, and users can add providers via ~/.tau/catalog.toml with the same schema without code changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a757b784a84dcdfff4e56183675f68c000e0a5b36213e9d52dddffca382274e",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "80be96565eaa9723663dff62be2902fbe4f75501",
+          "line_end": 53,
+          "line_start": 47,
+          "path": "AGENTS.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/AGENTS.md#L47-L53"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+          "line_end": 234,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md#L228-L234"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "dc653890031f6b41e93ddc78097ac19492f9f04c",
+          "line_end": 67,
+          "line_start": 62,
+          "path": "CONTRIBUTING.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/CONTRIBUTING.md#L62-L67"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "dc653890031f6b41e93ddc78097ac19492f9f04c",
+          "line_end": 108,
+          "line_start": 104,
+          "path": "CONTRIBUTING.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/CONTRIBUTING.md#L104-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_64449aa583e3ef017694a2a12037758c1c5fb2631725766871ec0d5f1ed6c0a1",
+        "slc_cdd7e4b0ef540893083a70d477510ebbbd5200d03251419bfbe0652bd5d7b701",
+        "slc_e56db6a43b45212192c9c885dfb0051e720f79f2c82778604ea6484201aa0ab5",
+        "slc_f8afb3cc7ce264137f74ed34203d96d5b0ad0b4384f43ba06ac252416cd2bfde"
+      ],
+      "text": "Repository development practice: contributors run checks via uv (uv run pytest, ruff check, ruff format --check, mypy), keep commits atomic, and add tests for behavior changes before expanding features."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_45931093f9995d612aa9104263d0b6c278ee78307ac2de6816e732e0d9423b9d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "dc653890031f6b41e93ddc78097ac19492f9f04c",
+          "line_end": 128,
+          "line_start": 127,
+          "path": "CONTRIBUTING.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/CONTRIBUTING.md#L127-L128"
+        },
+        {
+          "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+          "git_sha": "dc653890031f6b41e93ddc78097ac19492f9f04c",
+          "line_end": 135,
+          "line_start": 130,
+          "path": "CONTRIBUTING.md",
+          "repository": "huggingface/tau",
+          "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/CONTRIBUTING.md#L130-L135"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b745e148a1263a4fb588a4c96d42af548624b203102d36e7e33ac3614bf055d",
+        "slc_a52636878d04aa85023fce816515b54c34ae167097975b3672086cfa5db2872b"
+      ],
+      "text": "Repository development practice: releases to PyPI are intentional — a version bump in pyproject.toml merged via PR triggers publishing, not every merge to main."
+    }
+  ],
+  "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 271,
+        "path": "README.md",
+        "size": 7581
+      },
+      {
+        "lines": 17,
+        "path": "TODO.md",
+        "size": 1034
+      },
+      {
+        "lines": 81,
+        "path": "AGENTS.md",
+        "size": 3227
+      },
+      {
+        "lines": 155,
+        "path": "CONTRIBUTING.md",
+        "size": 5532
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 445,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 4,
+      "complete": true,
+      "omitted": 0,
+      "stored": 4
+    }
+  },
+  "entity_id": "ent_737ad19fddfd59a0a1f0d1181f836962",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/huggingface/tau/a8f18e7bc645d09d47d40b21bc602df97f2579fd/e787110266cc3f66/manifest.json",
+  "package_id": "pkg_17332e57df373483de51a2f5eea574d72037821410bab806735c186562df1758",
+  "repo": "huggingface/tau",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b32ae3efc5916b518468a9ac14c22a41e2e36a5a5c987969f0a8ea6e2d606e21",
+  "snapshot_id": "e787110266cc3f66",
+  "sources": [
+    {
+      "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+      "git_sha": "80be96565eaa9723663dff62be2902fbe4f75501",
+      "lines": 81,
+      "path": "AGENTS.md",
+      "repository": "huggingface/tau",
+      "sha256": "081b6d99eefa3bfba7dcf6f9ec90423edd8bb267354b52c966761ce0debdb5a8",
+      "source_id": "src_126d55f145de56659161973a30d5d20a",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/AGENTS.md"
+    },
+    {
+      "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+      "git_sha": "dc653890031f6b41e93ddc78097ac19492f9f04c",
+      "lines": 155,
+      "path": "CONTRIBUTING.md",
+      "repository": "huggingface/tau",
+      "sha256": "1551637ce312bf72aa30d008848d384e1c2addce5d2ae4d3d217eb24fc0d3a2c",
+      "source_id": "src_866f4aa79ff25865b46b53e840c6d35a",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/CONTRIBUTING.md"
+    },
+    {
+      "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+      "git_sha": "1aab8c65a610aae0397b2ee6fe9cfdcf2838871e",
+      "lines": 271,
+      "path": "README.md",
+      "repository": "huggingface/tau",
+      "sha256": "479ea7db807b9b2b09be0ec094d980a2ef768353e6117c8154b8c3d83f24bb31",
+      "source_id": "src_cb0a39caa58153b9b868d81c192d9c2f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/README.md"
+    },
+    {
+      "commit": "a8f18e7bc645d09d47d40b21bc602df97f2579fd",
+      "git_sha": "326f86d07069dfcaf23df29089559484e1876601",
+      "lines": 17,
+      "path": "TODO.md",
+      "repository": "huggingface/tau",
+      "sha256": "691bdd37e3a6735711454cad8421df70406ba06faab141e92f08d745fcbf0673",
+      "source_id": "src_53bd63f661f851bcb4867a3ac77cbc56",
+      "stored": "todo.md-5c6a1301c6b5.md",
+      "url": "https://github.com/huggingface/tau/blob/a8f18e7bc645d09d47d40b21bc602df97f2579fd/TODO.md"
+    }
+  ],
+  "summary": "Tau is a terminal coding agent published as tau-ai, structured as three packages (tau_ai, tau_agent, tau_coding) with an event-driven harness core. Evidence is mostly README/CONTRIBUTING documentation; contributor instructions cover development practice only.",
+  "superseded_claim_ids": []
+}

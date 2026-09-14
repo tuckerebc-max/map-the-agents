@@ -1,0 +1,798 @@
+{
+  "applied_operation_id": "op_c3b68b30a908496abe5ab36586526291",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed124be0cfc3618cb36dde9851403ce8fd6d40ce5dece7df95b743bdfd8c52f1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "d27e8fe46fc3c00811f0659d051be0ddff68b801",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62f4c9c3cb4558e41049df0ed162e39bf845a12a35d39c5f0296c55bbd583760"
+      ],
+      "text": "The agent runtime is built on the Vercel AI SDK; SDK message parts are the runtime currency, while persistence uses AiderDesk's own ContextMessage types, converted at the agent boundary in src/main/agent/utils.ts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_300fac2017e23e353be305cb27401a8f2c09f52995941a2fee0206d0185c98e3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "08ab4153ca9cd593f240d0932da1e823aba544d9",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/adr/agent-system/0006-mcp-for-tool-extensibility.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0006-mcp-for-tool-extensibility.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6d62aae43376cf206ac9c6631a3b4aab13bc6646b777d4b3a4278ea007ea44b"
+      ],
+      "text": "MCP is the standard tool boundary: servers connect via stdio or HTTP transports, tools are namespaced as <server><sep><tool>, and every invocation passes through the ApprovalManager."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c99b008d74db552cc37541c39f16eb8bdd9f0c8aede342b037ae08b384a0292c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "76462464133d0ce1ae23aef14dad6b2314aa51bc",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/adr/agent-system/0007-agent-profiles-and-system-prompts.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0007-agent-profiles-and-system-prompts.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_724888c4dbde2a55fb46149bea52da273667cb43a6a1eb0b3eb4ec4ea58983eb"
+      ],
+      "text": "Agent behavior is modeled as AgentProfile entities managed by agent-profile-manager.ts, with system prompts assembled via a prompts system supporting placeholder substitution; subagents are profiles invoked by a parent profile."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bfdeab3a107ce81461a8fe3fb6f78574b97e8724f8ba46b4ad8238f5699cb808",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e1f7705cacfed8d06deb787018d6e568c7d75d0cdfeadff61a0b83aa76dad2a"
+      ],
+      "text": "AiderDesk can connect to standard MCP servers for scoped access to external data, and can also expose itself as an MCP server to clients like Claude Desktop or Cursor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2eb2b0957915324c71e58973483be6eb5106787eb2ba93b71b177c0edf04d411",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 97,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L91-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_544525db7b0b1d3dd396aaab499912bf0d87f7764487219e4672f8e73101a1d7"
+      ],
+      "text": "The product exposes a REST API for integrating AiderDesk with external tools and workflows, per the README capabilities list."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_07b4b9eb83f4db0adc9cde9a1b14fba384b7c1c968e62db921a2bbbf02308ee2",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 57,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L52-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ebbda82fcacc78874b1fbe1c0a7c1702677ec322d6ef0d4966d4a1d9a4e30b62"
+      ],
+      "text": "A smart context and memory engine uses vector embeddings (LanceDB) and repository mapping for semantic code search, with users able to pin documentation URLs and code symbols."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b92fd737eedd4215096c41eab7893509e6b7571dd6b934aebcc650c4269d4b9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 97,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L91-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_544525db7b0b1d3dd396aaab499912bf0d87f7764487219e4672f8e73101a1d7"
+      ],
+      "text": "Chat history, task metadata, and settings are stored locally on the user's machine in a lightweight local database, keeping workspace data private and offline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd9f650e4c3d85dd5fdb4407f0d16710d10fb56eb61c8da9556d59a8c856aeac",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "08ab4153ca9cd593f240d0932da1e823aba544d9",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/adr/agent-system/0006-mcp-for-tool-extensibility.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0006-mcp-for-tool-extensibility.md#L32-L32"
+        },
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 37,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L35-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6d62aae43376cf206ac9c6631a3b4aab13bc6646b777d4b3a4278ea007ea44b",
+        "slc_ff74008e505303def4a0cffdd2248d0e71b830796f566e62969cf20118a40cb9"
+      ],
+      "text": "The product features tool approval gates where users approve tools and authorize destructive actions; per the ADRs, all MCP tool invocations route through the ApprovalManager."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1552526c4e8e5e77a298131e763368e071259007856cc45e197a6218319e144f",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 57,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L52-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ebbda82fcacc78874b1fbe1c0a7c1702677ec322d6ef0d4966d4a1d9a4e30b62"
+      ],
+      "text": "Tasks can be duplicated or forked to explore alternative paths, specific messages can be deleted from chat history to curate context, and Git worktrees give each task an isolated directory with a built-in merge workflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8c6443d6c17272ceb8d414daa5b61333f83c0303bbeb96740e7a8c9f2afdf923",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L85-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_97e868ba96a9f81ff4d7424f22258fa7b0daa34d6b9cfca1858466ed98978821"
+      ],
+      "text": "Reusable expertise is packaged as Skills that load on demand with progressive disclosure to keep token usage lean; users can also inject custom shell commands, linters, and test suites into the AI's toolkit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c78f72502626a43e2f4063c55520e33b6b6dc4eb1b2be02e8813858be74c0bf6",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "08ab4153ca9cd593f240d0932da1e823aba544d9",
+          "line_end": 28,
+          "line_start": 27,
+          "path": "docs/adr/agent-system/0006-mcp-for-tool-extensibility.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0006-mcp-for-tool-extensibility.md#L27-L28"
+        },
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+          "line_end": 97,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md#L91-L97"
+        },
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "d27e8fe46fc3c00811f0659d051be0ddff68b801",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4dffbefd933fd709a07f201f575fa428f35f388e086ef9f2193e2ff01d138964",
+        "slc_544525db7b0b1d3dd396aaab499912bf0d87f7764487219e4672f8e73101a1d7",
+        "slc_62f4c9c3cb4558e41049df0ed162e39bf845a12a35d39c5f0296c55bbd583760"
+      ],
+      "text": "The frontend is built with React 19 and Tailwind CSS; the agent runtime depends on the Vercel AI SDK, with MCP support via @ai-sdk/mcp and @modelcontextprotocol/sdk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9813c92cc8a5d7265e9f2d1e9767c0b515cc229ad39154aebb9da2144e7e5dcf",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "4d3e5a93432de52831063b64df47e324a0239343",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/adr/README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_db3c0a89a951124c0cda5c198fc2bf6de7c34cf93b9f5de3894a4d5ff51fdf14"
+      ],
+      "text": "Repository development practice: every ADR must include a mandatory 'Guardrails for Agents' section with do/don't rules, and changes conflicting with an ADR require updating the ADR first or changing the approach."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_915110b53b566041c048c8578b226d2d84a2347d511aa977e073d9667ab4b760",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "4d3e5a93432de52831063b64df47e324a0239343",
+          "line_end": 80,
+          "line_start": 76,
+          "path": "docs/adr/README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/README.md#L76-L80"
+        },
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "3235b6f636908c52bbcdbb8bf0b73ab9c027068d",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/adr/template.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/template.md#L7-L7"
+        },
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "4d3e5a93432de52831063b64df47e324a0239343",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "docs/adr/README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6c93697e39501586a8745be03004aff81d63c2eea300147731449f6e95980384",
+        "slc_7ccc875d047454e117dd50f4cf444414d206cdf10b08a32b0ad32390d48460f5",
+        "slc_872f181fe123fd2ac67a5677eed9f9d32a7334d212c07684a0d4077e73bc8330"
+      ],
+      "text": "Repository development practice: new ADRs follow a template with global sequential numbering, retroactive ADRs may be Accepted only after verification against current source, and Accepted decisions are never edited in place."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d4cd98a783a23e48c175d22742ab00c20dec9a496038197f369091daec82af3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "4d3e5a93432de52831063b64df47e324a0239343",
+          "line_end": 91,
+          "line_start": 86,
+          "path": "docs/adr/README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/README.md#L86-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36b63cfd780bae9a5fea44ba234d4cb39b04e6eb1e8f4c23720f20d037f59e5f"
+      ],
+      "text": "Repository development practice: the ADR review checklist requires tracing call paths against source, separating current behavior from desired future state, and avoiding absolute security or durability claims unless the code enforces them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83588e36928427d7e20021b8153c665ff1b59d50beac42fb2faf24404ea9beea",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "4d3e5a93432de52831063b64df47e324a0239343",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "docs/adr/README.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_872f181fe123fd2ac67a5677eed9f9d32a7334d212c07684a0d4077e73bc8330"
+      ],
+      "text": "The ADR set was written retroactively by analyzing the existing codebase, documenting de-facto decisions that are descriptive of current architecture and prescriptive for future changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f3a4b28ad837cead0e510162283f8474745ef8141638cb2f2abed046a3b4b409",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "d27e8fe46fc3c00811f0659d051be0ddff68b801",
+          "line_end": 49,
+          "line_start": 48,
+          "path": "docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md#L48-L49"
+        },
+        {
+          "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+          "git_sha": "08ab4153ca9cd593f240d0932da1e823aba544d9",
+          "line_end": 49,
+          "line_start": 48,
+          "path": "docs/adr/agent-system/0006-mcp-for-tool-extensibility.md",
+          "repository": "hotovo/aider-desk",
+          "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0006-mcp-for-tool-extensibility.md#L48-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d887e50f63cc3ba8cefecf088a6d0baeab95042014319fc5c98194475986344c",
+        "slc_df95a1c4657c17f0221b79c9ff56f72fbda2c704db12e2e88c149a0e29916cfc"
+      ],
+      "text": "The ADRs note trade-offs: SDK upgrades can shift part/type shapes requiring a dedicated pass, and MCP connection lifecycle issues (restarts, timeouts, unauthorized states) must be handled robustly across process boundaries."
+    }
+  ],
+  "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 176,
+        "path": "README.md",
+        "size": 10530
+      },
+      {
+        "lines": 103,
+        "path": "docs/adr/README.md",
+        "size": 9102
+      },
+      {
+        "lines": 71,
+        "path": "docs/adr/template.md",
+        "size": 1446
+      },
+      {
+        "lines": 72,
+        "path": "docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md",
+        "size": 3997
+      },
+      {
+        "lines": 73,
+        "path": "docs/adr/agent-system/0006-mcp-for-tool-extensibility.md",
+        "size": 4030
+      },
+      {
+        "lines": 72,
+        "path": "docs/adr/agent-system/0007-agent-profiles-and-system-prompts.md",
+        "size": 4068
+      }
+    ],
+    "omitted": [
+      {
+        "path": "llms.txt",
+        "reason": "byte-budget",
+        "size": 1063948
+      },
+      {
+        "path": "docs/adr/agent-system/0008-tool-group-namespacing-contracts.md",
+        "reason": "file-budget",
+        "size": 4531
+      },
+      {
+        "path": "docs/adr/agent-system/0009-tool-approval-and-autonomy-modes.md",
+        "reason": "file-budget",
+        "size": 4350
+      },
+      {
+        "path": "docs/adr/agent-system/0010-context-compaction-and-optimization.md",
+        "reason": "file-budget",
+        "size": 4516
+      },
+      {
+        "path": "docs/adr/agent-system/0011-agent-memory-system.md",
+        "reason": "file-budget",
+        "size": 5177
+      },
+      {
+        "path": "docs/adr/agent-system/0012-skills-and-custom-commands.md",
+        "reason": "file-budget",
+        "size": 4217
+      },
+      {
+        "path": "docs/adr/aider-integration/0014-python-connector-bridge.md",
+        "reason": "file-budget",
+        "size": 4329
+      },
+      {
+        "path": "docs/adr/aider-integration/0015-aider-vs-agent-mode-coexistence.md",
+        "reason": "file-budget",
+        "size": 4261
+      },
+      {
+        "path": "docs/adr/api-surface/0018-rest-api-base-pattern.md",
+        "reason": "file-budget",
+        "size": 4415
+      },
+      {
+        "path": "docs/adr/api-surface/0019-standalone-mcp-server-package.md",
+        "reason": "file-budget",
+        "size": 3940
+      },
+      {
+        "path": "docs/adr/api-surface/0020-remote-access-tunnel-and-readonly-mode.md",
+        "reason": "file-budget",
+        "size": 4156
+      },
+      {
+        "path": "docs/adr/core-architecture/0001-electron-multi-process-model.md",
+        "reason": "file-budget",
+        "size": 4144
+      },
+      {
+        "path": "docs/adr/core-architecture/0002-preload-ipc-bridge-and-api-contract.md",
+        "reason": "file-budget",
+        "size": 4146
+      },
+      {
+        "path": "docs/adr/core-architecture/0003-socket-io-event-bus.md",
+        "reason": "file-budget",
+        "size": 4313
+      },
+      {
+        "path": "docs/adr/core-architecture/0004-typescript-project-references.md",
+        "reason": "file-budget",
+        "size": 3574
+      },
+      {
+        "path": "docs/adr/data-and-state/0026-central-data-manager.md",
+        "reason": "file-budget",
+        "size": 5532
+      },
+      {
+        "path": "docs/adr/data-and-state/0027-versioned-migration-chains.md",
+        "reason": "file-budget",
+        "size": 5471
+      },
+      {
+        "path": "docs/adr/data-and-state/0028-renderer-local-persistence.md",
+        "reason": "file-budget",
+        "size": 4225
+      },
+      {
+        "path": "docs/adr/extensions/0029-lifecycle-hook-extension-system.md",
+        "reason": "file-budget",
+        "size": 4865
+      },
+      {
+        "path": "docs/adr/extensions/0030-runtime-jsx-transpiled-extension-ui.md",
+        "reason": "file-budget",
+        "size": 4480
+      },
+      {
+        "path": "docs/adr/frontend-ui/0021-zustand-for-state-context-for-di.md",
+        "reason": "file-budget",
+        "size": 4431
+      },
+      {
+        "path": "docs/adr/frontend-ui/0022-stable-ui-action-catalog.md",
+        "reason": "file-budget",
+        "size": 4127
+      },
+      {
+        "path": "docs/adr/frontend-ui/0023-i18n-all-locales.md",
+        "reason": "file-budget",
+        "size": 3896
+      },
+      {
+        "path": "docs/adr/frontend-ui/0024-component-conventions.md",
+        "reason": "file-budget",
+        "size": 4139
+      },
+      {
+        "path": "docs/adr/frontend-ui/0025-web-workers-for-heavy-compute.md",
+        "reason": "file-budget",
+        "size": 3545
+      },
+      {
+        "path": "docs/adr/model-integration/0013-provider-adapter-registry.md",
+        "reason": "file-budget",
+        "size": 4378
+      },
+      {
+        "path": "docs/adr/packages-monorepo/0031-npm-workspaces-monorepo.md",
+        "reason": "file-budget",
+        "size": 4305
+      },
+      {
+        "path": "docs/adr/packages-monorepo/0032-exact-version-pinning.md",
+        "reason": "file-budget",
+        "size": 4460
+      },
+      {
+        "path": "docs/adr/packages-monorepo/0033-generated-extension-types.md",
+        "reason": "file-budget",
+        "size": 3687
+      },
+      {
+        "path": "docs/adr/platform-services/0034-telemetry-abstraction.md",
+        "reason": "file-budget",
+        "size": 6067
+      },
+      {
+        "path": "docs/adr/platform-services/0035-pty-terminal-integration.md",
+        "reason": "file-budget",
+        "size": 5378
+      },
+      {
+        "path": "docs/adr/platform-services/0036-tree-sitter-code-graph.md",
+        "reason": "file-budget",
+        "size": 5306
+      },
+      {
+        "path": "docs/adr/platform-services/0037-provider-side-voice-transcription.md",
+        "reason": "file-budget",
+        "size": 5810
+      },
+      {
+        "path": "docs/adr/security/0038-context-isolation-secrets-readonly.md",
+        "reason": "file-budget",
+        "size": 8579
+      },
+      {
+        "path": "docs/adr/task-and-project/0016-task-lifecycle-and-persistence.md",
+        "reason": "file-budget",
+        "size": 4624
+      },
+      {
+        "path": "docs/adr/task-and-project/0017-git-worktree-integration.md",
+        "reason": "file-budget",
+        "size": 5023
+      },
+      {
+        "path": "docs/adr/testing-tooling/0039-vitest-multi-config-and-playwright.md",
+        "reason": "file-budget",
+        "size": 4366
+      },
+      {
+        "path": "docs/adr/testing-tooling/0040-electron-vite-build-system.md",
+        "reason": "file-budget",
+        "size": 4648
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 7684
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 76260
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3930
+      }
+    ],
+    "omitted_count": 41,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1630,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 47,
+      "complete": false,
+      "omitted": 41,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_dfa818dd1a6a5074869dd9e01b832cdb",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/hotovo/aider-desk/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/81767ba6a21ef502/manifest.json",
+  "package_id": "pkg_de111eac5051059ed9093337ba388b8ff771c48d3f9047b1bfd2326bbe31e376",
+  "repo": "hotovo/aider-desk",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "45f25f855a45d2a1e8c716a938e03fcaecd3794e4e1804f7341ec2b7413da86f",
+  "snapshot_id": "81767ba6a21ef502",
+  "sources": [
+    {
+      "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+      "git_sha": "8271b1591dca4013b9b13e98b5dedcb88073a034",
+      "lines": 176,
+      "path": "README.md",
+      "repository": "hotovo/aider-desk",
+      "sha256": "97776bb7dbbbd519415f91741db86b0093b2cd836e44a7b547884b4baa090e62",
+      "source_id": "src_9608b604f2ee55c68f7dd4bb98cace92",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/README.md"
+    },
+    {
+      "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+      "git_sha": "4d3e5a93432de52831063b64df47e324a0239343",
+      "lines": 103,
+      "path": "docs/adr/README.md",
+      "repository": "hotovo/aider-desk",
+      "sha256": "e8b7c45487aea1f97807d95d4ff6c87edcc4ee13fbd9930baa76cd6bc4b84592",
+      "source_id": "src_529c6745829e5cb1b9dc7574eca57036",
+      "stored": "readme.md-5767cabc35c1.md",
+      "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/README.md"
+    },
+    {
+      "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+      "git_sha": "d27e8fe46fc3c00811f0659d051be0ddff68b801",
+      "lines": 72,
+      "path": "docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md",
+      "repository": "hotovo/aider-desk",
+      "sha256": "2a18171a0f32b953f77c9bca021b9dafcaad29d5b798c4fd59f5dbf456ef1ecc",
+      "source_id": "src_2cfb556ae44e50a48a8474c2593a3ac4",
+      "stored": "0005-vercel-ai-sdk-as-agent-runtime.md-0899bcfc5547.md",
+      "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0005-vercel-ai-sdk-as-agent-runtime.md"
+    },
+    {
+      "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+      "git_sha": "08ab4153ca9cd593f240d0932da1e823aba544d9",
+      "lines": 73,
+      "path": "docs/adr/agent-system/0006-mcp-for-tool-extensibility.md",
+      "repository": "hotovo/aider-desk",
+      "sha256": "1c39dfeb6be3ffb5d3194fb8e5128203767766e697c4d9bc4aef0266c1e2d0e1",
+      "source_id": "src_6eb6a1aaed025462852f9a25d7dea77f",
+      "stored": "0006-mcp-for-tool-extensibility.md-8add36f597d3.md",
+      "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0006-mcp-for-tool-extensibility.md"
+    },
+    {
+      "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+      "git_sha": "76462464133d0ce1ae23aef14dad6b2314aa51bc",
+      "lines": 72,
+      "path": "docs/adr/agent-system/0007-agent-profiles-and-system-prompts.md",
+      "repository": "hotovo/aider-desk",
+      "sha256": "82925127da03a6a1b83931c918d21132171dcbd64d82cacfcac1b81db310907a",
+      "source_id": "src_07758cc2fa085f6b9fec02ce849bc834",
+      "stored": "0007-agent-profiles-and-system-prompts.m-79c12f7e6cdd.md",
+      "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/agent-system/0007-agent-profiles-and-system-prompts.md"
+    },
+    {
+      "commit": "cb7ee89bf2131d4006eae69c96c5f7121346a1d8",
+      "git_sha": "3235b6f636908c52bbcdbb8bf0b73ab9c027068d",
+      "lines": 71,
+      "path": "docs/adr/template.md",
+      "repository": "hotovo/aider-desk",
+      "sha256": "42d8ff84ac7835f30dc59f524a63232f7ab896e28653e74ed639ea0af94ed9a1",
+      "source_id": "src_e0e232e556705dd5af8a10f0aa70dc27",
+      "stored": "template.md-ba197fceb74f.md",
+      "url": "https://github.com/hotovo/aider-desk/blob/cb7ee89bf2131d4006eae69c96c5f7121346a1d8/docs/adr/template.md"
+    }
+  ],
+  "summary": "Selected evidence records: The agent runtime is built on the Vercel AI SDK; SDK message parts are the runtime currency, while persistence uses AiderDesk's own ContextMessage types, converted at the agent boundary in src/main/agent/utils.ts. MCP is the standard tool boundary: servers connect via stdio or HTTP transports, tools are namespaced as <server><sep><tool>, and every invocation passes through the ApprovalManager.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,818 @@
+{
+  "applied_operation_id": "op_8e51539aaeea4b72ae26d08d8d7198f1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8d132b6b3202243fe667dc83b212702ae75f1ac3c533ef13766dde48ff432aa",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 74,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L70-L74"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L62-L62"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 80,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L76-L80"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 68,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L64-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e344c1b4d19ce22b29829f7588df7a9d551a898a0a9d8836a4ce159d8419066",
+        "slc_30e6b14f71d50221e10a9f81c9961d7b1bd434e795a099c234d62e5e0a3cb963",
+        "slc_5e63242d968f0c9cda0ce4dfb20c12a59f5a32220922e4320a4c9b13846bdb9e",
+        "slc_7adebcfd25c946c69c395fce4393b26f2e04686d766a042537948cd373fa9cc3"
+      ],
+      "text": "AIP is organized into three layers: an identity layer (Ed25519 keypairs, DIDs, challenge-response), a trust layer (vouches, scopes, paths, revocation), and a communication layer (E2E encrypted messaging)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_69941c125971d2e5c56fd8abb934dd0c71702f1049b279f9d40d4f9878707724",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 88,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L84-L88"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 146,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L146-L146"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af5d0a00201621d391f7f043d13debe530cfdbed4f3ccbc46102b558fe215bfa",
+        "slc_d306c96934e425b4747c00b79690b4787cf6feb1d8d3e8b31258e7e7cf82e191"
+      ],
+      "text": "The protocol is designed to be decentralized with no central registry, local-first so each agent keeps its own trust view, and auditable via signed 'isnad' trust chains."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_612a45aec8782e67978dbf64daa8d4cb5e87536f369ad477b92e75110922e0ef",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 24,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L21-L24"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 441,
+          "line_start": 441,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L441-L441"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 495,
+          "line_start": 465,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L465-L495"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18c5945f8111c0ffbd6386c9a54e15e5f8f9e9391935a722ce2a730b12cd0150",
+        "slc_221d1990f8f8be6c28cd9c379199f2af184f37311c80fe5c241d6e4359e14a07",
+        "slc_e0ab138775c99d81c972af16416a53d507b5a7f7ec0dc3be7c3f0b8565f866f3"
+      ],
+      "text": "A CLI named 'aip' exposes commands including init, register, verify, vouch, revoke, sign, message, messages, reply, rotate-key, trust-score, trust-graph, doctor, export, import, search, and cache."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba7db7ae40652595d077e6138ae6ac1a97d039c1984ae8a81d7d2ea32bb8af37",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 338,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L338-L338"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 336,
+          "line_start": 334,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L334-L336"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 332,
+          "line_start": 332,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L332-L332"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02d0150502c51397728daa6ad9d8b017fcf14b5477fdc330b08bf1574bac4f9a",
+        "slc_04da8fa661f689d8b330c70ed8d834a21278d8e060a326a2b4fa3c299b2f8d94",
+        "slc_d93455bb0c901296a89ab87e422e9666edffbb582bc995dec3a22659dd8cd89b"
+      ],
+      "text": "Message signing uses the payload format sender_did|recipient_did|timestamp|encrypted_content; the older format without encrypted_content still works but is deprecated and slated for removal."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8161a12388fd119441499c2afc79faee98109dfed98008c618fd30f334addbe",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 201,
+          "line_start": 201,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L201-L201"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 210,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L209-L210"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 206,
+          "line_start": 204,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L204-L206"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 193,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L193-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f817f122ab994eb5a2a3d65b0fe6420b3fefb0e732eedf5f0f40e1ec1d45aef",
+        "slc_a6787e2eba1dcb30f19478b00898e8bb60d84edd448b97186186c4e4845ce31d",
+        "slc_dd8730be4c8a77bacd2e8babd2f67579262e5419cfc8b72b77ff6bc0b6e97957",
+        "slc_ff86531380112d82da38cf08ac30847cfed669b1b8dd2ba56c06dd634d576586"
+      ],
+      "text": "An identity middleware (AIPMiddleware) signs outgoing HTTP requests and verifies incoming ones, exposing trust-score-gated processing and peer discovery by minimum trust."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65b86f13998ec396cca9bb073d7e369a1f2960beddc417ed6699eaca8820a199",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 606,
+          "line_start": 606,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L606-L606"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 88,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L84-L88"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 383,
+          "line_start": 380,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L380-L383"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f188fa2ea3ace3b93d330e306139e063b789a3008162dd8973dc538d574b182",
+        "slc_af5d0a00201621d391f7f043d13debe530cfdbed4f3ccbc46102b558fe215bfa",
+        "slc_c8bd4f52a5e27168dc266ec4a87c9a7b1825ce37d5e6aae40b0c9ddc7ed810f1"
+      ],
+      "text": "A pure-Python implementation exists with zero dependencies; optional performance dependencies include cryptography or pynacl, and langchain-core is an optional dependency for framework tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7792ef0f183a74aa8ce2b5b8d55e63032db8e712c5919c3d0b2576a4cff8e02",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 373,
+          "line_start": 371,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L371-L373"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 416,
+          "line_start": 412,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L412-L416"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b3784683d0f11557dff30fa404ee53dbd1c5971545e1c5b5914ca818ec99c040",
+        "slc_d3d47f6033ab198770acbde5e12c643e5bf577c656d686957c90a27ebc55b9f7"
+      ],
+      "text": "Trust paths use decay scoring across hops (e.g., a documented example of 0.64 for two hops at 0.8 decay), and badges turn green 'Verified' at 3+ CODE_SIGNING vouches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_17892d27beda224b80f43bdf6a71bbc91c2167a3cf214628b81dec3494027395",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "d81fa0a3bc1f09e5f35f4fdf368d6fbcd5676bca",
+          "line_end": 84,
+          "line_start": 64,
+          "path": "docs/0xskl_integration_spec.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/docs/0xskl_integration_spec.md#L64-L84"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "d81fa0a3bc1f09e5f35f4fdf368d6fbcd5676bca",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "docs/0xskl_integration_spec.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/docs/0xskl_integration_spec.md#L3-L6"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "d81fa0a3bc1f09e5f35f4fdf368d6fbcd5676bca",
+          "line_end": 58,
+          "line_start": 32,
+          "path": "docs/0xskl_integration_spec.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/docs/0xskl_integration_spec.md#L32-L58"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "d81fa0a3bc1f09e5f35f4fdf368d6fbcd5676bca",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "docs/0xskl_integration_spec.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/docs/0xskl_integration_spec.md#L88-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0447d662f4fdd6824441d730e05c2c68b8766b2ee2a56e3bf0cd1bd06ae9f332",
+        "slc_6cb6a5e95012226b234b5fc481b4413170bb8dd5bd8bb2cd0778a85809dcc64c",
+        "slc_d9ded0aa47e7203226c634d85f6c2c5407d6b84ac5d28263b61fc3c6d7378bf4",
+        "slc_fa15c44e8d35152d7b1139a9b3aae668b2972f1bf93f989a94d3d995fe1d2edd"
+      ],
+      "text": "A draft 0xSKL integration spec (v0.1.0) defines an extended skill manifest with an AIP author block (DID, public key, Ed25519 signature over sha256 of name+version+content_hash+timestamp) and Cage execution policy based on author trust score."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d0a97f31febeb14bd0df7911e4774f70f7c7b41fe550626bd9992f08889f46d2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 422,
+          "line_start": 422,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L422-L422"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 437,
+          "line_start": 424,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L424-L437"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5aed92c3650c8b363cdc14a7c9c2a7455102030863549b63f62ab459bde479f4",
+        "slc_7604fb54af74ca133724c5e5a65011f66995580f5a3364be381b0381ca4b580a"
+      ],
+      "text": "The status checklist marks trust gossip protocol and reputation scoring as unchecked, indicating these are not yet implemented in v0.5.46."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f99fa7e0d037e1fad8f722297072e61ca507bcc86627f8b0c7b9f99720b34b4a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 682,
+          "line_start": 682,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L682-L682"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 680,
+          "line_start": 680,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L680-L680"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_02da5e02a3e772067ebae6cb6f6ae3dd4e1cd2264a015bd5771203ef8181fb84",
+        "slc_a4da02f9dfe841a630d32c31eed8b2f1b0405bad8673cc67105fbdd6643fec91"
+      ],
+      "text": "Repository development practice: the README points contributors to a Contributing Guide and GitHub Discussions for questions and ideas."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3715f251fceb5812b75246e44ef07b0f02bfd974d74f356d5ccfb1d01d6fbb00",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 610,
+          "line_start": 610,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L610-L610"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L9-L9"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 241,
+          "line_start": 241,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L241-L241"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L11-L11"
+        },
+        {
+          "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+          "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+          "line_end": 58,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "the-nexus-guard/aip",
+          "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md#L52-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2748bd3f1fbc613f359cb32f177e6f1ae124476b465ef6d8fa8c1f4ea7860cff",
+        "slc_60d5e44a07f363693298c16a7c10cb145425f2e884bde91b1bc186002bec820c",
+        "slc_63f71dd982d7d974321f49fe885a8f5df725b4ed01e3afde089d5a01723954a9",
+        "slc_baa97ee7b243eb9a09f277a12e606a5cbc635fa34dafcd2052fb0ed077f2320b",
+        "slc_cb4fc76ebc6290e6ee2204cd496781d4b784ab66f329a6d571d5e5298c60790b"
+      ],
+      "text": "AIP targets agent-to-agent security gaps: verifying who an agent is, deciding trustworthiness via vouch chains, signing skills for code provenance, and private messaging, including MCP and A2A protocol integrations."
+    }
+  ],
+  "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 693,
+        "path": "README.md",
+        "size": 23766
+      },
+      {
+        "lines": 50,
+        "path": "DEPLOY.md",
+        "size": 1250
+      },
+      {
+        "lines": 1,
+        "path": "requirements.txt",
+        "size": 14
+      },
+      {
+        "lines": 56,
+        "path": "VERSIONING.md",
+        "size": 2100
+      },
+      {
+        "lines": 279,
+        "path": "docs/0xskl_integration_spec.md",
+        "size": 9320
+      },
+      {
+        "lines": 158,
+        "path": "docs/a2a-identity-extension.md",
+        "size": 6051
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/clawhub_integration_spec.md",
+        "reason": "file-budget",
+        "size": 7722
+      },
+      {
+        "path": "docs/did-method-spec.md",
+        "reason": "file-budget",
+        "size": 10170
+      },
+      {
+        "path": "docs/getting-started.md",
+        "reason": "file-budget",
+        "size": 2728
+      },
+      {
+        "path": "docs/github-action.md",
+        "reason": "file-budget",
+        "size": 2202
+      },
+      {
+        "path": "docs/hello-world.md",
+        "reason": "file-budget",
+        "size": 4076
+      },
+      {
+        "path": "docs/insumer-integration-design.md",
+        "reason": "file-budget",
+        "size": 4067
+      },
+      {
+        "path": "docs/integration-guide.md",
+        "reason": "file-budget",
+        "size": 14074
+      },
+      {
+        "path": "docs/mcp_integration.md",
+        "reason": "file-budget",
+        "size": 4290
+      },
+      {
+        "path": "docs/mcp_integration_guide.md",
+        "reason": "file-budget",
+        "size": 8453
+      },
+      {
+        "path": "docs/oracle-integration-guide.md",
+        "reason": "file-budget",
+        "size": 7989
+      },
+      {
+        "path": "docs/outreach-templates.md",
+        "reason": "file-budget",
+        "size": 4596
+      },
+      {
+        "path": "docs/platform_integration_checklist.md",
+        "reason": "file-budget",
+        "size": 4242
+      },
+      {
+        "path": "docs/quickstart.md",
+        "reason": "file-budget",
+        "size": 12091
+      },
+      {
+        "path": "docs/rate_limits.md",
+        "reason": "file-budget",
+        "size": 3227
+      },
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 83
+      },
+      {
+        "path": "docs/sep_integration_spec.md",
+        "reason": "file-budget",
+        "size": 10707
+      },
+      {
+        "path": "docs/signing-reference.md",
+        "reason": "file-budget",
+        "size": 8269
+      },
+      {
+        "path": "docs/skill_signing_spec.md",
+        "reason": "file-budget",
+        "size": 8817
+      },
+      {
+        "path": "docs/skill_signing_tutorial.md",
+        "reason": "file-budget",
+        "size": 5381
+      },
+      {
+        "path": "docs/video_script_quickstart.md",
+        "reason": "file-budget",
+        "size": 2936
+      },
+      {
+        "path": "docs/why-aip.md",
+        "reason": "file-budget",
+        "size": 3298
+      },
+      {
+        "path": "docs/academic/README.md",
+        "reason": "file-budget",
+        "size": 5463
+      },
+      {
+        "path": "docs/badges/README.md",
+        "reason": "file-budget",
+        "size": 901
+      },
+      {
+        "path": "docs/design/identity-middleware.md",
+        "reason": "file-budget",
+        "size": 4297
+      },
+      {
+        "path": "docs/design/on-chain-did-registry.md",
+        "reason": "file-budget",
+        "size": 6072
+      },
+      {
+        "path": "docs/tutorials/langchain-crewai-identity.md",
+        "reason": "file-budget",
+        "size": 6623
+      },
+      {
+        "path": "docs/tutorials/mcp_auth_tutorial.md",
+        "reason": "file-budget",
+        "size": 5973
+      },
+      {
+        "path": "docs/tutorials/skill-signing.md",
+        "reason": "file-budget",
+        "size": 4007
+      },
+      {
+        "path": "docs/tutorials/zero-to-trusted-agent.md",
+        "reason": "file-budget",
+        "size": 4288
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 19380
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 5093
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2105
+      }
+    ],
+    "omitted_count": 32,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 203,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 38,
+      "complete": false,
+      "omitted": 32,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_3909fb3bc0cf537d97a043958a79f62a",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/the-nexus-guard/aip/3d8c873139ea6d4db421a57886fcfccc35925fcf/e93b0149ff82da41/manifest.json",
+  "package_id": "pkg_977a4acfb1071704164d903445910d4d4fa5695c0bc562c2b2ec138fd6a2fb68",
+  "repo": "the-nexus-guard/aip",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "853cd3150be92fb0a1c6a572cbc955354a00a1ea49c0963450870f99f2cb4369",
+  "snapshot_id": "e93b0149ff82da41",
+  "sources": [
+    {
+      "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+      "git_sha": "78cde67d240d16e812e9527d3b5d12773a19aed4",
+      "lines": 50,
+      "path": "DEPLOY.md",
+      "repository": "the-nexus-guard/aip",
+      "sha256": "2ca65550c38b64c46bc0d25fe276c6303c83bf36fe7c3cc2e4063514c1c90dae",
+      "source_id": "src_609576aa480a522cbedf8f52bf0080fe",
+      "stored": "deploy.md-678a061dc14f.md",
+      "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/DEPLOY.md"
+    },
+    {
+      "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+      "git_sha": "ad8bc52667cc2838bc2b374f016a4f8c97b42720",
+      "lines": 693,
+      "path": "README.md",
+      "repository": "the-nexus-guard/aip",
+      "sha256": "308c74612b3c734cb49c859a938cba413a38d9a34921fa50294ab8eb5eb0e627",
+      "source_id": "src_383914975aaf5cbbbb09ab19317e0008",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/README.md"
+    },
+    {
+      "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+      "git_sha": "fef9b229736fc835a2e0e41d0d19a2b4a72710e9",
+      "lines": 56,
+      "path": "VERSIONING.md",
+      "repository": "the-nexus-guard/aip",
+      "sha256": "7da1f2df784d68291d33c80e8e28ba83cbb083bf16abfb56a33d0da3b0e3a0bd",
+      "source_id": "src_7322ae4678fa57d48679764426d8c368",
+      "stored": "versioning.md-5a1e620a21f1.md",
+      "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/VERSIONING.md"
+    },
+    {
+      "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+      "git_sha": "d81fa0a3bc1f09e5f35f4fdf368d6fbcd5676bca",
+      "lines": 279,
+      "path": "docs/0xskl_integration_spec.md",
+      "repository": "the-nexus-guard/aip",
+      "sha256": "965d146889296cf021f2f6f9102d93a2a73c1dfb2d99ca819ac382e811171d4e",
+      "source_id": "src_dae9d7254c9e57e0bd5001bff74d8f2b",
+      "stored": "0xskl_integration_spec.md-74409a8f0b49.md",
+      "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/docs/0xskl_integration_spec.md"
+    },
+    {
+      "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+      "git_sha": "a5578fa6cba76b7191fbe213177ec66e5d420879",
+      "lines": 158,
+      "path": "docs/a2a-identity-extension.md",
+      "repository": "the-nexus-guard/aip",
+      "sha256": "daa0050346c5d5eb9166757b93c81a7b2b4c45ee25a6c139e584dc868c1ef3fb",
+      "source_id": "src_8c4b12ef5c7159538592b93ac3960ce2",
+      "stored": "a2a-identity-extension.md-44a005fd92c0.md",
+      "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/docs/a2a-identity-extension.md"
+    },
+    {
+      "commit": "3d8c873139ea6d4db421a57886fcfccc35925fcf",
+      "git_sha": "69acc403bea4bc5f6321f23af37850929d553477",
+      "lines": 1,
+      "path": "requirements.txt",
+      "repository": "the-nexus-guard/aip",
+      "sha256": "1d630fd994407623e44bad02c120bf067138f5e77149f11a15bf4d4987d88d33",
+      "source_id": "src_90b7fe34a3c25d988bec09b69a4732a1",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/The-Nexus-Guard/aip/blob/3d8c873139ea6d4db421a57886fcfccc35925fcf/requirements.txt"
+    }
+  ],
+  "summary": "Selected evidence records: AIP is organized into three layers: an identity layer (Ed25519 keypairs, DIDs, challenge-response), a trust layer (vouches, scopes, paths, revocation), and a communication layer (E2E encrypted messaging). The protocol is designed to be decentralized with no central registry, local-first so each agent keeps its own trust view, and auditable via signed 'isnad' trust chains.",
+  "superseded_claim_ids": []
+}

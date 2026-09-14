@@ -1,0 +1,866 @@
+{
+  "applied_operation_id": "op_0947b00384cb46068faf90d93814ed98",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_54fbbe540ff43991766b97c2ac9c18b404f51aa3f62b7a746a5573880e71e60e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 197,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L196-L197"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a77ce6cd6f05974dff3d034f3869a409e4a3d6f804c6329780f05450ed09edea"
+      ],
+      "text": "Ruflo exposes a CLI (npx ruflo) and an MCP server; the README shows registering it in Claude Code via 'claude mcp add claude-flow -- npx ruflo@latest mcp start'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_368cccabb9a6e034c593cb88ac731f155daffe26bf5cd75f1ef9b907ffa747d0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 66,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L60-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_89a16024a5adfe68cce5ee36647cb106f8ae8722897377819ad3a12506e7ace6"
+      ],
+      "text": "Two install paths exist: Claude Code plugins (slash commands, zero workspace files) versus full CLI init which scaffolds .claude/, .claude-flow/, CLAUDE.md, hooks, and an MCP server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_347620a1aae111431e019ceac8461e9108c8342e4265ddf9a5c493c4136f4b2c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04eaa7065700dfe873c538f916ba609496d6a87ce7fcf67deb0a50cf8a7d4477"
+      ],
+      "text": "The ruflo-core plugin registers its own MCP server with namespaced tool names like mcp__plugin_ruflo-core_ruflo__memory_store, differing from the CLI-track bare tool names."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9947260fb2645b1bd1fdd2381a9874cf85a24cec68076dab42bf315c219d9f42",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 84,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L83-L84"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 115,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L109-L115"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 105,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L99-L105"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 95,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L88-L95"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 124,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L119-L124"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 131,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L128-L131"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 164,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L160-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f74f8ab2ba84f0584d39605b0c11ebc354fdd3e763e4a60ee21c85b805ca402",
+        "slc_661b0f998578ddaab4c75c22e5ae1348537520f6ac6ac2c2cc0ba873b640ae04",
+        "slc_6da3d643e9f3072c08f308a1626da1b150d8424b8eeffdeb1f14402108fcb75b",
+        "slc_b61037afc9e106b120ff1fb18c851d1941c0e6ed3c1abe9dc8c0523277518cc9",
+        "slc_c8f5df11f26b727d79162f43dd1154c0b636d1f76f42f0f21a271fb235d9eead",
+        "slc_d2ed3b1943c18b33de3719356a4bc559b42b83857782aa6980498885642e172f",
+        "slc_fa60fe51ea455657d9a360645305d34bf372bcae2c569709db85c901213276d3"
+      ],
+      "text": "The README catalogs 35 plugins across categories including core/orchestration, memory, intelligence, testing, security, and domain-specific (e.g. ruflo-swarm, ruflo-rag-memory, ruflo-neural-trader)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60db2f3bc01d70d84f90d5ffeced1e6854c758e9968c3b3e75c41094a026e8d7",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 374,
+          "line_start": 352,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L352-L374"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 217,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L203-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1f52748f0203cd42dffd9df63efb4221ff89a0f8006e5af78c6a5e18a11fb2d2",
+        "slc_679ec8ae7128cd3865a086f574bbe982222aaf9e499a0c7c6fcbcfa865b9d7bf"
+      ],
+      "text": "Swarm coordination supports hierarchical, mesh, and adaptive topologies with consensus, and the architecture diagram shows a Queen-led coordination layer above 100+ specialized agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3ae703a8c3388da567d8631d1e283a97569248acc465fd99f213b3f748dfc78",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 217,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L203-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_679ec8ae7128cd3865a086f574bbe982222aaf9e499a0c7c6fcbcfa865b9d7bf"
+      ],
+      "text": "Memory uses an HNSW-indexed AgentDB; the README cites measured ~1.9x faster at N=20k versus brute force with recall@10 near 0.99, noting ANN ties or loses at small N."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_690fbaed7928b895e91d8b291672cd5aa9ec829d414cdaf04c6d3652f60b3b1d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 284,
+          "line_start": 284,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L284-L284"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 299,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L293-L299"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49dbc9f3db15b7cf0d939ad5a969c66c7e3f7e570d872834e0668bb4359edf3b",
+        "slc_a55b417fe3c1b5e53ab4fb9aec768b7c070594c88c62e61fcbf4814fffd5e942"
+      ],
+      "text": "Agent federation lets agents on different machines discover, authenticate (mTLS + ed25519), and exchange work, with PII stripped from outbound messages and per-trust-level policies (BLOCK, REDACT, HASH, PASS)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d9601bbc8c2a3e3ff995385bea59953034b5470c5396c356949ff84c4b3c9f1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 217,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L203-L217"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 345,
+          "line_start": 336,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L336-L345"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_679ec8ae7128cd3865a086f574bbe982222aaf9e499a0c7c6fcbcfa865b9d7bf",
+        "slc_da18dbf34f6a134a9607ff6ecc46ceb9661c4c427e39378ba62eb4e94be791dd"
+      ],
+      "text": "The runtime supports multiple LLM providers — Claude, GPT, Gemini, Cohere, and Ollama — with smart routing and failover."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa00bbe48e779308ee42f9c3cbbc11871d6ed4e73d9913eba53a2c1f1e418bec",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 391,
+          "line_start": 384,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L384-L391"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+          "line_end": 393,
+          "line_start": 393,
+          "path": "README.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md#L393-L393"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5d91c9a6e1ba3f9924f2caaf08f1345b656782bd034eea6745f8fc8784c5b92",
+        "slc_f55fca981a69142bc0e292d1918b4d1c7bb7af1f553f77922c8f621d53c504e1"
+      ],
+      "text": "A SOTA comparator benchmark suite compares ruflo against LangGraph, AutoGen, and CrewAI on metrics like cold start, single turn, and RSS, with published matrix JSON for darwin and linux."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14ee3e56f4074fdf31e5857e2aec10192b52a596949090bb3701e1795cedd821",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "f10a163058ce93975e9e545debfdbafd5f80c2e9",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/IMPROVEMENT-ROADMAP.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/docs/IMPROVEMENT-ROADMAP.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_520d61aac8fade643edc516532a6f201be291f17369ac4d06e68c30003ebd0f2"
+      ],
+      "text": "The roadmap states four CI-skipped integration tests cover real production bugs (HybridBackend persistence, SwarmCoordinator error propagation, scaleAgents direction, workflow resume), and releases since skipping have carried these bugs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_117e4d32ff247221b5a8b9d5c93534bc73aa4d48f5103fcf485f027bb07fe331",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "f10a163058ce93975e9e545debfdbafd5f80c2e9",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "docs/IMPROVEMENT-ROADMAP.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/docs/IMPROVEMENT-ROADMAP.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36f8ff25435ee086c3999b12b00b22b195fe879eb312b775d1ad9ee64da766a2"
+      ],
+      "text": "Per the roadmap, memory sub-commands hard-code the SQLite path to ~/.swarm/memory.db and ignore 'memory init -p', forcing the DB onto the system drive on Windows and sharing one DB across projects."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_176eff959fd3209e10242289aba17b70941af137da20ddaf24383bb71e371cbc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "2f5d2db29ce2b06c3678895abbc3c3ad23990132",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "CLAUDE.local.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/CLAUDE.local.md#L25-L25"
+        },
+        {
+          "commit": "b02c0cacec225deea01f586b66a9694393369432",
+          "git_sha": "2f5d2db29ce2b06c3678895abbc3c3ad23990132",
+          "line_end": 23,
+          "line_start": 19,
+          "path": "CLAUDE.local.md",
+          "repository": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/CLAUDE.local.md#L19-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01c48071aeee44f07a42193ffd88483f5d8a116468b4a97770418465d0fa2fe8",
+        "slc_6b0818e709687d17cadaa262e714caba5318173c492fda238c4aee9fe6a61b6b"
+      ],
+      "text": "Repository development practice: CLAUDE.local.md documents maintainer steps for updating the IPFS/Pinata plugin registry (fetch registry, edit entries, pin via Pinata API, update LIVE_REGISTRY_CID) and warns never to hardcode API keys or commit .env."
+    }
+  ],
+  "commit": "b02c0cacec225deea01f586b66a9694393369432",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 422,
+        "path": "README.md",
+        "size": 30514
+      },
+      {
+        "lines": 45,
+        "path": "CLAUDE.local.md",
+        "size": 1816
+      },
+      {
+        "lines": 82,
+        "path": "SKILL.md",
+        "size": 3939
+      },
+      {
+        "lines": 147,
+        "path": "docs/IMPROVEMENT-ROADMAP.md",
+        "size": 12134
+      },
+      {
+        "lines": 85,
+        "path": "docs/index.md",
+        "size": 4716
+      },
+      {
+        "lines": 475,
+        "path": "docs/metaharness-user-guide.md",
+        "size": 19064
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/QUALITY-SWEEP.md",
+        "reason": "file-budget",
+        "size": 14409
+      },
+      {
+        "path": "docs/ruflo-explained.md",
+        "reason": "file-budget",
+        "size": 28147
+      },
+      {
+        "path": "docs/STATUS.md",
+        "reason": "file-budget",
+        "size": 7140
+      },
+      {
+        "path": "docs/TEAM-GATEWAY-CHECKLIST.md",
+        "reason": "file-budget",
+        "size": 4717
+      },
+      {
+        "path": "docs/USERGUIDE.md",
+        "reason": "file-budget",
+        "size": 292020
+      },
+      {
+        "path": "docs/agenticow/findings.md",
+        "reason": "file-budget",
+        "size": 3542
+      },
+      {
+        "path": "docs/benchmarks/BEIR-MATRIX.md",
+        "reason": "file-budget",
+        "size": 14957
+      },
+      {
+        "path": "docs/darwin-core/PLAN.md",
+        "reason": "file-budget",
+        "size": 2431
+      },
+      {
+        "path": "docs/darwin-plugins/PLAN.md",
+        "reason": "file-budget",
+        "size": 2336
+      },
+      {
+        "path": "docs/darwin/PLAN.md",
+        "reason": "file-budget",
+        "size": 2284
+      },
+      {
+        "path": "docs/dream-cycle/2026-06-15-performance-sota.md",
+        "reason": "file-budget",
+        "size": 6706
+      },
+      {
+        "path": "docs/dream-cycle/2026-06-21-security-sota.md",
+        "reason": "file-budget",
+        "size": 7054
+      },
+      {
+        "path": "docs/dream-cycle/2026-07-08-memory-sota.md",
+        "reason": "file-budget",
+        "size": 6552
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-08-16.md",
+        "reason": "file-budget",
+        "size": 7589
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-08-17.md",
+        "reason": "file-budget",
+        "size": 7595
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-08-18.md",
+        "reason": "file-budget",
+        "size": 10333
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-08-19.md",
+        "reason": "file-budget",
+        "size": 10478
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-09-03.md",
+        "reason": "file-budget",
+        "size": 15453
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-09-05.md",
+        "reason": "file-budget",
+        "size": 20965
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-09-07.md",
+        "reason": "file-budget",
+        "size": 28102
+      },
+      {
+        "path": "docs/dream-cycle/dream-gist-2026-09-09.md",
+        "reason": "file-budget",
+        "size": 22724
+      },
+      {
+        "path": "docs/dream-cycle/LEDGER.md",
+        "reason": "file-budget",
+        "size": 25314
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-03-memory-sota.md",
+        "reason": "file-budget",
+        "size": 6879
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-19-swarm-sota.md",
+        "reason": "file-budget",
+        "size": 6545
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-20-performance-sota.md",
+        "reason": "file-budget",
+        "size": 5300
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-21-security-sota.md",
+        "reason": "file-budget",
+        "size": 5756
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-22-intelligence-sota.md",
+        "reason": "file-budget",
+        "size": 6193
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-23-memory-sota.md",
+        "reason": "file-budget",
+        "size": 5205
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-24-swarm-sota.md",
+        "reason": "file-budget",
+        "size": 5716
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-25-performance-sota.md",
+        "reason": "file-budget",
+        "size": 4281
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-27-intelligence-sota.md",
+        "reason": "file-budget",
+        "size": 4969
+      },
+      {
+        "path": "docs/dream-cycles/2026-07-30-performance-sota.md",
+        "reason": "file-budget",
+        "size": 6621
+      },
+      {
+        "path": "docs/federation/phase7-mesh-bringup.md",
+        "reason": "file-budget",
+        "size": 6580
+      },
+      {
+        "path": "docs/federation/README.md",
+        "reason": "file-budget",
+        "size": 12811
+      },
+      {
+        "path": "docs/probes/nested-spawn-depth-2026-06-09T15-45-42-449Z.txt",
+        "reason": "file-budget",
+        "size": 647
+      },
+      {
+        "path": "docs/probes/nested-spawn-depth-2026-06-09T15-48-29-155Z.txt",
+        "reason": "file-budget",
+        "size": 647
+      },
+      {
+        "path": "docs/protocol/ans.md",
+        "reason": "file-budget",
+        "size": 5295
+      },
+      {
+        "path": "docs/protocol/evidence.md",
+        "reason": "file-budget",
+        "size": 7713
+      },
+      {
+        "path": "docs/protocol/governance.md",
+        "reason": "file-budget",
+        "size": 4464
+      },
+      {
+        "path": "docs/protocol/http-auth.md",
+        "reason": "file-budget",
+        "size": 4225
+      },
+      {
+        "path": "docs/protocol/README.md",
+        "reason": "file-budget",
+        "size": 2612
+      },
+      {
+        "path": "docs/protocol/signed-messages.md",
+        "reason": "file-budget",
+        "size": 5793
+      },
+      {
+        "path": "docs/research/copilot-sdk-ruflo-integration.md",
+        "reason": "file-budget",
+        "size": 55149
+      },
+      {
+        "path": "docs/reviews/intelligence-system-audit-2026-05-29.md",
+        "reason": "file-budget",
+        "size": 15821
+      },
+      {
+        "path": "docs/security/socket-baseline.md",
+        "reason": "file-budget",
+        "size": 7119
+      },
+      {
+        "path": "docs/validation/README.md",
+        "reason": "file-budget",
+        "size": 18186
+      },
+      {
+        "path": "docs/benchmarks/runs/router-4way-seed42-2026-06-15T14-10-33Z.txt",
+        "reason": "file-budget",
+        "size": 1490
+      },
+      {
+        "path": "docs/benchmarks/runs/router-backend-latency-2026-06-15.txt",
+        "reason": "file-budget",
+        "size": 1444
+      },
+      {
+        "path": "docs/benchmarks/runs/router-integrated-5way-postopt-seed42-2026-06-15T14-46-41Z.txt",
+        "reason": "file-budget",
+        "size": 1602
+      },
+      {
+        "path": "docs/benchmarks/runs/router-integrated-5way-seed42-2026-06-15T14-41-30Z.txt",
+        "reason": "file-budget",
+        "size": 1602
+      },
+      {
+        "path": "docs/benchmarks/runs/router-integrated-hybrid-seed42-2026-06-15T15-57-22Z.txt",
+        "reason": "file-budget",
+        "size": 1601
+      },
+      {
+        "path": "docs/benchmarks/runs/router-integrated-postopt2-seed42-2026-06-15T15-09-46Z.txt",
+        "reason": "file-budget",
+        "size": 1602
+      },
+      {
+        "path": "docs/benchmarks/submission/metadata.md",
+        "reason": "file-budget",
+        "size": 5498
+      },
+      {
+        "path": "docs/benchmarks/submission/reproduction.md",
+        "reason": "file-budget",
+        "size": 2405
+      },
+      {
+        "path": "docs/benchmarks/submission/variance-analysis.md",
+        "reason": "file-budget",
+        "size": 4838
+      },
+      {
+        "path": "docs/benchmarks/tdd-repair/SMOKE-2026-06-22.md",
+        "reason": "file-budget",
+        "size": 2484
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 24566
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 19346
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 66757
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 629
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1982
+      }
+    ],
+    "omitted_count": 61,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 5720,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 67,
+      "complete": false,
+      "omitted": 61,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_1d790af73fb65664b6c30220d7f3309d",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ruvnet/ruflo/b02c0cacec225deea01f586b66a9694393369432/43f85fd862fff196/manifest.json",
+  "package_id": "pkg_b61a132f2187533ae828fa773833121a35336c1f73225cfe5975332300e44881",
+  "repo": "ruvnet/ruflo",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6e566dcad20f38dce269bac87270415b21f072dc69cd9b0c3975cf00d507794c",
+  "snapshot_id": "43f85fd862fff196",
+  "sources": [
+    {
+      "commit": "b02c0cacec225deea01f586b66a9694393369432",
+      "git_sha": "2f5d2db29ce2b06c3678895abbc3c3ad23990132",
+      "lines": 45,
+      "path": "CLAUDE.local.md",
+      "repository": "ruvnet/ruflo",
+      "sha256": "2e3dd0a9522ec6425232813f6d58b1e99ef15e41969672635c34d86b65a96036",
+      "source_id": "src_5b6ebc0ee7a1506d9ab600c61d07f7eb",
+      "stored": "claude.local.md-13230e1aea91.md",
+      "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/CLAUDE.local.md"
+    },
+    {
+      "commit": "b02c0cacec225deea01f586b66a9694393369432",
+      "git_sha": "ffcad10b1db22f3ff4f092b17107f5347a430f3d",
+      "lines": 422,
+      "path": "README.md",
+      "repository": "ruvnet/ruflo",
+      "sha256": "4602f42d7e6a7625d4c08bfc81c1f2fdc0eb00a874b202600ca97c7da572d3de",
+      "source_id": "src_f029307c6c885aa18a3f5ee2b376a1d4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/README.md"
+    },
+    {
+      "commit": "b02c0cacec225deea01f586b66a9694393369432",
+      "git_sha": "b41415aafb2ca8c073edad92b0bd4f46d231c9a4",
+      "lines": 82,
+      "path": "SKILL.md",
+      "repository": "ruvnet/ruflo",
+      "sha256": "e706dd7d057ebb4e456bdfc312d38fe07bf2419476d246164801571d4cd481da",
+      "source_id": "src_0f27cfb66f3f5919ae3f36e2df1e3fa0",
+      "stored": "skill.md-0e95f5a36660.md",
+      "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/SKILL.md"
+    },
+    {
+      "commit": "b02c0cacec225deea01f586b66a9694393369432",
+      "git_sha": "f10a163058ce93975e9e545debfdbafd5f80c2e9",
+      "lines": 147,
+      "path": "docs/IMPROVEMENT-ROADMAP.md",
+      "repository": "ruvnet/ruflo",
+      "sha256": "1f6c5b1721f34746f2c2172e77da0da2a4de205c8e3daa1daebff0eb6feb4076",
+      "source_id": "src_cbb42ca96dac5619b3645001a40d0e4b",
+      "stored": "improvement-roadmap.md-24ff8e51b260.md",
+      "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/docs/IMPROVEMENT-ROADMAP.md"
+    },
+    {
+      "commit": "b02c0cacec225deea01f586b66a9694393369432",
+      "git_sha": "690326c459bf3d3758bf3199cc2d6c0a356db7b5",
+      "lines": 85,
+      "path": "docs/index.md",
+      "repository": "ruvnet/ruflo",
+      "sha256": "a7d914c1180d677aec7706b2641bb01e89b2d5575e5b61e31801044c4f6e77f2",
+      "source_id": "src_b8e90f474c5a5eccb5ebee8f3176091c",
+      "stored": "index.md-b4d68dc855d0.md",
+      "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/docs/index.md"
+    },
+    {
+      "commit": "b02c0cacec225deea01f586b66a9694393369432",
+      "git_sha": "4c99d948d1c7bc1368236c0b3a863e8422c38ddc",
+      "lines": 475,
+      "path": "docs/metaharness-user-guide.md",
+      "repository": "ruvnet/ruflo",
+      "sha256": "b7238814c8204d10e98b47b84f7272ad4b0124cd0457c0efeffcd5a778bb7ef1",
+      "source_id": "src_8a8e92a71ddc5da69f7a7e674b161739",
+      "stored": "metaharness-user-guide.md-8210c27ee65c.md",
+      "url": "https://github.com/ruvnet/ruflo/blob/b02c0cacec225deea01f586b66a9694393369432/docs/metaharness-user-guide.md"
+    }
+  ],
+  "summary": "Ruflo is an agent harness distributed as an npm CLI and Claude Code plugins, exposing MCP servers, swarm orchestration, HNSW vector memory, and agent federation; a roadmap documents known gaps such as skipped integration tests and hardcoded memory paths. Evidence coverage: 130 of 302 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

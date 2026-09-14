@@ -1,0 +1,46 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_05997fc8dbac870a0d4f5d38c3b306c289dd6423d1988406dd14b6a4d0913e5f
+- clm_40aa2b24f48d0b8388e3adb62810f417e023026de607a01a988c0dc6be08855b
+- clm_5b00801cb771280446c82e5a18deb3a9bd7c87923703fda5ada4a0e422e67d66
+- clm_8aae6934a712130784ef6e59efaaec8bb223fc045c7269a8a962d95372d2ca48
+- clm_8c5bb47af6e7b3492ba78d6c827748b5f1ace846e22c0598fcf8ef88fe6fba7b
+- clm_953539ff2cde46054f4272b9d404361d9515c7b05799c48a03b2b88526c5422e
+- clm_a25befdc414660e979bc5badb908b5291e055ca06ef9729566776cff10add709
+- clm_a4bd14758a7bf54322fb755d5d22ae0651d62e668fa4bc4619d67e0fae377470
+- clm_a99348a78adeda8dc4bbb32f102be40bd82432a5e1455f7e69faab91b5be0803
+- clm_a9cfd532ae77f0272b925dad463ab1f62399afb56b26edccc0277a3d7b51acfe
+- clm_c7af3eccfc8c92a0ca803a6dfc576558eb6be8513d0d535722e082589c434b7f
+- clm_ca92bf79164ff68fe9762c5a6b1ea6c6e644d63e0fd6c847b5f11478ca68aea1
+maturity: draft
+page_id: pg_67a80b56ed065c788d59fe5cf052f254
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_52741cce3bcd57af99c20d80eeb1ef6b
+title: dcouple/Pane/README.md @ df04c767aa66
+updated_at: '2026-09-14T02:00:30Z'
+---
+
+# dcouple/Pane/README.md @ df04c767aa66
+
+<!-- rcw:begin owner=source:src_52741cce3bcd57af99c20d80eeb1ef6b block=evidence -->
+- Remote Pane is self-hosted: a host machine runs repos, terminals, git state, and agent credentials, and clients connect using a generated pane-remote:// code from desktop Pane or a browser app. [@claim:clm_05997fc8dbac870a0d4f5d38c3b306c289dd6423d1988406dd14b6a4d0913e5f]
+- Running Pane requires Git in PATH and at least one AI coding agent CLI installed, with Claude Code, Codex, Cursor Agent, Aider, and Goose given as examples. [@claim:clm_40aa2b24f48d0b8388e3adb62810f417e023026de607a01a988c0dc6be08855b]
+- The app defines keyboard shortcuts for command palette, new/archive pane, pane switching, settings, clipboard snippet pasting, and sidebar toggle. [@claim:clm_5b00801cb771280446c82e5a18deb3a9bd7c87923703fda5ada4a0e422e67d66]
+- runpane agent-context is token-efficient by default, printing only command names, arguments, and usage notes, with per-command detail available via --command and --json. [@claim:clm_8aae6934a712130784ef6e59efaaec8bb223fc045c7269a8a962d95372d2ca48]
+- Repository development practice: the repo is a pnpm workspace with main (Electron main process), frontend (React+Vite), shared types, and Playwright E2E tests; dev runs via pnpm dev and builds via pnpm build with per-platform build scripts. [@claim:clm_8c5bb47af6e7b3492ba78d6c827748b5f1ace846e22c0598fcf8ef88fe6fba7b]
+- Pane ships a runpane CLI intended for agent use, including agent-context, repos add/list, and panes create for registering repositories and opening panes with prompts. [@claim:clm_953539ff2cde46054f4272b9d404361d9515c7b05799c48a03b2b88526c5422e]
+- Each pane gets its own worktree, port range, and copy of secrets so parallel agents run in isolated workspaces without conflicts, and worktrees are created and torn down automatically with panes. [@claim:clm_a25befdc414660e979bc5badb908b5291e055ca06ef9729566776cff10add709]
+- Pane is agent-agnostic: any CLI tool that runs in a terminal runs in Pane with no plugins or SDK, and the terminal serves as the integration layer rather than Pane re-implementing agent integrations. [@claim:clm_a4bd14758a7bf54322fb755d5d22ae0651d62e668fa4bc4619d67e0fae377470]
+- Pane Chat writes local orchestrator skills in Codex, Claude, and Cursor formats (e.g. .codex/skills/pane-orchestrator/SKILL.md) and caches workflow skills including discussion, plan, implement, implementation-reviewer, prepare-pr, investigate, and commit from a skills repository. [@claim:clm_a99348a78adeda8dc4bbb32f102be40bd82432a5e1455f7e69faab91b5be0803]
+- Repository development practice: releases must run from a clean main checkout matching origin/main, and the release script refuses inferred version bumps when package.json and the latest v* tag disagree. [@claim:clm_a9cfd532ae77f0272b925dad463ab1f62399afb56b26edccc0277a3d7b51acfe]
+- Pane is organized around two primitives, panes and tabs: each pane maps to one git worktree and contains tabs for agents, diff viewer, file explorer, git tree, logs, and terminals, with state persisting across restarts. [@claim:clm_c7af3eccfc8c92a0ca803a6dfc576558eb6be8513d0d535722e082589c434b7f]
+- Pane targets developers on Windows, macOS, and Linux equally, multi-agent users of tools like Claude Code, Codex, Cursor, Aider, and Goose, and keyboard-driven teams needing a consistent workflow layer. [@claim:clm_ca92bf79164ff68fe9762c5a6b1ea6c6e644d63e0fd6c847b5f11478ca68aea1]
+<!-- rcw:end owner=source:src_52741cce3bcd57af99c20d80eeb1ef6b block=evidence -->
+
+## Researcher notes
+

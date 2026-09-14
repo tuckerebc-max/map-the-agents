@@ -1,0 +1,207 @@
+{
+  "aliases": 34,
+  "audit": {
+    "adjudication": "credential-placeholder-adjudication.json",
+    "dossiers": 990,
+    "initialized_partitions": 990,
+    "level": "pr",
+    "ok": false,
+    "problems": 0,
+    "rcw": {
+      "errors": [
+        {
+          "code": "RCW_SECRET_FOUND",
+          "detail": "Credential pattern detected; value omitted",
+          "id": "data/slices.jsonl"
+        },
+        {
+          "code": "RCW_SECRET_FOUND",
+          "detail": "Credential pattern detected; value omitted",
+          "id": "data/slices.jsonl"
+        }
+      ],
+      "ok": false,
+      "warnings": 29
+    },
+    "scope": {
+      "kind": "full",
+      "repositories": null
+    },
+    "structural_checks_ok": true
+  },
+  "broken_links": [],
+  "checked_at": "2026-09-14T06:32:11.880169+00:00",
+  "claim_count": 12365,
+  "claims_by_basis": {
+    "code-inspected": 46,
+    "documented": 12319
+  },
+  "claims_by_facet": {
+    "components": 1330,
+    "dependencies": 1232,
+    "design-choices": 1557,
+    "evaluation": 284,
+    "interfaces": 2294,
+    "limitations": 868,
+    "memory-state": 654,
+    "orchestration": 678,
+    "relevance": 299,
+    "skills-patterns": 275,
+    "specifications": 715,
+    "tools-permissions": 578,
+    "workflows": 1601
+  },
+  "current_repository_identities": 1018,
+  "directory": {
+    "backing": 1347,
+    "conflicts": 105,
+    "pages": 1366,
+    "published": 828,
+    "renamed_leads": 34,
+    "tracked_repo": 1020,
+    "union": 1366,
+    "with_repo": 1020
+  },
+  "directory_entry_files": 1366,
+  "dossier_count": 990,
+  "elapsed_seconds": 99.58,
+  "html_review": {
+    "original_captures_retained": true,
+    "receipt": "e5bda09a-2006-4159-a0d4-1ec12dd2ebe0",
+    "source_integrity_fix": "raw HTML/HTM stored as deterministic .txt wrappers, format-bound identity, misleading-marker refusal, shared adapter/wiki gate",
+    "verdict": "pass"
+  },
+  "independent_sample": {
+    "changed_claims": 16,
+    "claims": 283,
+    "final_conformance_receipt": "121acc50-19ad-432b-a682-d04b0bfd5da7",
+    "profiles": 23,
+    "rewritten_summaries": 12,
+    "scope": "Risk-oriented source assessment followed by actual-applied-artifact conformance; no statistical accuracy estimate",
+    "summaries": 23
+  },
+  "invalid_dossiers": [],
+  "markdown_files_checked": 6155,
+  "maximum_entry_words": 400,
+  "missing_rendered_claims": [],
+  "ok": true,
+  "oversize_entries": [],
+  "queries": {
+    "evaluation": {
+      "complete": true,
+      "files_scanned": 5102,
+      "limit": 5,
+      "max_chars": 2500,
+      "query": "evaluation",
+      "results": [
+        {
+          "excerpt": "# Facet: evaluation\n\nPage 2 of 7. [First page](evaluation.md) | [Previous](evaluation.md) | [Next](evaluation.page-3.md)\n\n- [browser-use/video-use](../repos/browser-use/video-use.md) [observation/documented] A self-eval loop runs timeline_view on the rendered output at every cut boundary to catch visual jumps, audio pops, and hidden subtitles, capped at 3 fix-and-re-render passes before flagging issues to the user. -- evidence: [SKILL.md#L99-L100](https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/SKILL.md#L99-L100), [README.md#L96-L100](https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L96-L100), [README.md#L102-L102](https://github.com/browser-use/video-use/blob/9575612f066aa517354790a645fd90f9f95a743b/README.md#L102-L102)\n- [builderz-labs/mission-control](../repos/builderz-labs/mission-control.md) [inference/documented] The README's governance row lists 'evals' among shipped surfaces, suggesting the product includes evaluation features for agent work, though the snapshot does not describe how they score agent behavior. -- evidence: [README.md#L76-L83](https://github.com/builderz-labs/mission-control/blob/5483a0e1eef15b467c167e95796791112cedbb7c/README.md#L76-L83)\n- [burtson-labs/bandit-agent-framework](../repos/burtson-labs/bandit-agent-framework.md) [observation/documented] The README reports two reproducible benchmark runs of the agent on repo deep-dive prompts, with metrics like turn duration, LLM iterations, and tool-call counts, plus reproduction commands. -- evidence: [README.md#L460-L469](https://github.com/Burtson-Labs/bandit-agent-framework/blob/e926d20a48e61918946439a5e99c1d259dca45b3/README.md#L460-L469), [README.md#L430-L439](https://github.com/Burtson-Labs/bandit-agent-framework/blob/e926d20a48e61918946439a5e99c1d259dca45b3/README.md#L430-L439), [README.md#L424-L424](https://github.com/Burtson-Labs/bandit-agent-framework/blob/e926d20a48e61918946439a5e99c1d259dca45b3/README.md#L424-L424), [README.md#L477-L482](https://github.com/Burtson-Labs/bandit-agent-framework/blob/e926d20a48e61918946439a5e99c1d259dca45b3/README.md#L477-L482)\n- [can1357/oh-my-pi](../repos/can1357/oh-my-pi.md) [observation/documented] The README cites benchmark-style results for its edit format, e.g. Grok Code Fast 1 improving 6.7% to 68.3% and MiniMax pass rate roughly doubling versus str_replace, linking a blog post for details. -- evidence: [README.md#L115-L120](https://github.co... ",
+          "path": "map/features/evaluation.page-2.md",
+          "score": 26,
+          "stale_view": false,
+          "truncated": true
+        },
+        {
+          "excerpt": "... ",
+          "path": "map/features/evaluation.page-3.md",
+          "score": 18,
+          "stale_view": false,
+          "truncated": true
+        }
+      ],
+      "root": "corpus",
+      "stale_view": false,
+      "terms": [
+        "evaluation"
+      ],
+      "total_chars": 2500
+    },
+    "memory": {
+      "complete": true,
+      "files_scanned": 5102,
+      "limit": 5,
+      "max_chars": 2500,
+      "query": "memory",
+      "results": [
+        {
+          "excerpt": "# havingautism/codemini-cli -- full detail\n\n[Back to orientation](codemini-cli.md)\n\n## Origins\n\n- alltheagents.org-backing\n\n## Projects\n\n\nFull evidence record (JSON): [wiki/dossiers/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9.json](../../../wiki/dossiers/havingautism/codemini-cli/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/f27607039cb943e9.json)\n\n## specifications (1 claim(s))\n\n- [observation/documented] The repository contains a design RFC (status: Design RFC) scoped to Codemini CLI / WebUI / Agent Runtime, proposing a memory subsystem with SQLite FTS5 + BM25 as default retrieval and embeddings explicitly optional. -- evidence: [codemini-memory-2.1-design.md#L3-L7](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L3-L7) (`clm_67591fa88eca82da71e254d7e0fb5bb48276b96048f06b2f4cf036026b608808`)\n\n## components (0 claim(s))\n\n- unknown (no source-linked claim submitted for this facet)\n\n## design-choices (5 claim(s))\n\n- [observation/documented] The design targets four goals: cross-session memory, task-relevant recall rather than stuffing all memory into the prompt, learning reusable engineering experience from failure-to-verification cycles, and long-term governance (dedup, expiry, conflict handling, eviction). -- evidence: [codemini-memory-2.1-design.md#L17-L20](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L17-L20) (`clm_981fd41c2f871b8eeca1d771e0087c16c838d49219bab39635015a7dcfd6921c`)\n- [observation/documented] The architecture separates understanding from retrieval: the LLM judges what is worth remembering, extracts atomic facts, classifies scope/family/kind, and detects conflicts, while FTS5/BM25 handles retrieval, filtering, ranking, and top-K recall; embeddings are not relied on by default. -- evidence: [codemini-memory-2.1-design.md#L73-L76](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L73-L76), [codemini-memory-2.1-design.md#L64-L69](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L64-L69), [codemini-memory-2.1-design.md#L71-L71](https://github.com/havingautism/Codemini-CLI/blob/3e3a6665c9d2a53e69d0259172e335f4b60f2e60/codemini-memory-2.1-design.md#L71-L71), [codemini-memory-2.1-design.md#L78-L78](https://github.com/h... ",
+          "freshness": "current",
+          "path": "map/repos/havingautism/codemini-cli.detail.md",
+          "repo": "havingautism/codemini-cli",
+          "score": 117,
+          "stale_view": false,
+          "status": "distilled",
+          "truncated": true
+        },
+        {
+          "excerpt": "... ",
+          "path": "map/features/memory-state.page-5.md",
+          "score": 89,
+          "stale_view": false,
+          "truncated": true
+        }
+      ],
+      "root": "corpus",
+      "stale_view": false,
+      "terms": [
+        "memory"
+      ],
+      "total_chars": 2500
+    },
+    "orchestration": {
+      "complete": true,
+      "files_scanned": 5102,
+      "limit": 5,
+      "max_chars": 2500,
+      "query": "orchestration",
+      "results": [
+        {
+          "excerpt": "... 15-L16](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L15-L16)\n- [sammwyy/singulary](../repos/sammwyy/singulary.md) [observation/documented] The project specification targets a self-hostable alternative to tools like v0, Lovable, Bolt, Replit Agent, or Cursor-style agents, emphasizing local-first development, BYOK access, Docker-based execution, multi-project workspaces, and auditable AI-driven changes. -- evidence: [PROJECT.md#L5-L5](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/PROJECT.md#L5-L5)\n- [sammwyy/singulary](../repos/sammwyy/singulary.md) [observation/documented] The backend (apps/server) is an Express application on Node.js using TypeScript, responsible for API routing, an agent loop with SSE-streamed LLM responses, Docker orchestration, and SQLite metadata storage. -- evidence: [ARCHITECTURE.md#L43-L48](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L43-L48)\n- [sammwyy/singulary](../repos/sammwyy/singulary.md) [observation/documented] Provider and service credentials can be configured at personal-user, workspace, organization, and global admin-managed levels, and all keys are AES-GCM encrypted at rest. -- evidence: [docs/byok.md#L24-L24](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/docs/byok.md#L24-L24), [docs/byok.md#L18-L22](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/docs/byok.md#L18-L22)\n- [sammwyy/singulary](../repos/sammwyy/singulary.md) [observation/documented] The browser client communicates with the Express API over REST, SSE, and WebSocket, and the backend manages interactive shells via WebSocket. -- evidence: [ARCHITECTURE.md#L43-L48](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L43-L48), [ARCHITECTURE.md#L7-L31](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L7-L31)\n- [sammwyy/singulary](../repos/sammwyy/singulary.md) [observation/documented] Singulary is a monorepo with a React frontend and an Express backend; in production the frontend is built to static assets and served by the same Express process that exposes the API under /api. -- evidence: [ARCHITECTURE.md#L3-L3](https://github.com/sammwyy/singulary/blob/5b51298504a410ecfaf483318814a57d73e05b42/ARCHITECTURE.md#L3-L3), [ARCHITECTURE.md#L35-L39](https://g... ",
+          "path": "map/components/index.page-84.md",
+          "score": 45,
+          "stale_view": false,
+          "truncated": true
+        }
+      ],
+      "root": "corpus",
+      "stale_view": false,
+      "terms": [
+        "orchestration"
+      ],
+      "total_chars": 2500
+    }
+  },
+  "query_problems": [],
+  "repository_records": 1052,
+  "source_coverage": {
+    "complete": 454,
+    "partial": 536
+  },
+  "source_reviews": {
+    "bytes": 10406325,
+    "claims": 12365,
+    "dossiers": 990,
+    "elapsed_seconds": 68.19,
+    "ok": true,
+    "sha256": "ccfe70e9b73f603addaf5831e0963c543668f7959c78ba07440b00ed4bd7444f"
+  },
+  "source_spans": {
+    "distinct_cited_spans": 24196,
+    "edge_whitespace_only": 0,
+    "elapsed_seconds": 18.31,
+    "mismatches": [],
+    "ok": true,
+    "profiles": 990
+  },
+  "stale_map": false,
+  "status": {
+    "blocked": 28,
+    "distilled": 990
+  },
+  "tests": {
+    "passed": 396,
+    "platform": "Windows, Python 3.12",
+    "seconds": 523.98,
+    "skipped": 3
+  }
+}

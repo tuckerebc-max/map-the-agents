@@ -1,0 +1,490 @@
+{
+  "applied_operation_id": "op_9631b75ec3e8427ba72d1da73a6e8a89",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f62c514c38311429a2087520347796b77c341624049f3dd7391005a4cf8db5a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 4,
+          "line_start": 4,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L4-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ffee9e928120102c5a2d351561260ded87ebc9e1884e2a3281f772e2b7372207"
+      ],
+      "text": "The project is an extensible Java agent framework that instruments JVM programs by modifying bytecode at class-loading time to capture method invocation events (start, finish, errors) and notify custom listeners."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d521cfbee0422e329b54c9eef3d43c3768770a714eab1e7bb3be5709f0bed160",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81aa10281b34fa8d7b64588d9234b4689e1388b6af228e57bd7baf54d28a3a93"
+      ],
+      "text": "The module provides an Agent class that instantiates a listener from a concrete Interceptor subclass named in the JVM agent arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_24528ca1bdda2761bf77f8f736dfae4976235a918d8b3f6a0a922a980b8a7e55",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_81aa10281b34fa8d7b64588d9234b4689e1388b6af228e57bd7baf54d28a3a93"
+      ],
+      "text": "The framework uses the ASM library to inject instructions into method definitions of classes being loaded."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ab3743db6e359fa943a0a4a1327cea80abf7a3c56154611856997284a59707f1",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50551d3c73bb0636a9a7d143f64721609430ec2f73a2d1856af04c6ec34c58e5"
+      ],
+      "text": "Instrumentation is implemented as a byte[]-to-byte[] class transformation at load time, leveraging the JDK 1.5 java.lang.instrument package's java-agent mechanism."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_215c76b1af08b84eb4f57767c371bd3a8d8337a0e04422881bd9b067122752d4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L47-L47"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 45,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L32-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b59f32442b0fcf7b3dfc308bada39b65c7afed67b95ba6ca6c8d56fdfa75271a",
+        "slc_f93c3ad75351275157580ce8e0712369ed512da34ac1c309e313f4195031267f"
+      ],
+      "text": "Transformed methods are wrapped so an onStart call precedes the body, onFinished fires on normal return, and onThrowable is invoked and the throwable rethrown on error."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f3c0196ac00caaf31ca4a6cf2d35758960c83cc9cfe2d467427384904aab5f7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 79,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L76-L79"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 106,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L101-L106"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 94,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L91-L94"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 89,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L86-L89"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 99,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L96-L99"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 84,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L81-L84"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43470636aa8ac9522d3456870a46546202372208ddb3cd31503422013e82d475",
+        "slc_468aa363b6f521cb2c35cf49d6b07d71d26cdf5b6a1939b215e239f26156df12",
+        "slc_59e9c28ea639234863c660189c434e473954c5639961cf0a14861a15872cb360",
+        "slc_69d3b31cc64665267a3ae8f2c48bc6272e2dc4b03a30219cd5822ab106bf906e",
+        "slc_a7d9b482799b31f85947c71e5274c9ab6ca2e15988184338e2696869eb248769",
+        "slc_ce10d0dc77230df26a548f07a2f77011852755c8566e161eaeed3f2c74e93110"
+      ],
+      "text": "Custom interceptors can filter targets via interceptClass(className, byteCode) and interceptMethod(ClassNode, MethodNode) hooks, and implement lifecycle callbacks including doOnStart, doOnFinish, doOnThrowableThrown, and doOnThrowableUncatched, each receiving the Method, relevant payload, and an executionId."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a3541efc1d76c3cd4ce15bf5b9204c9a5e02648e2715854e4d212c8f3c0bd2a2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 117,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L114-L117"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 74,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L71-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23a18c6c4e9f7403eb1acf233940716648704335cc9e60b2d0bb670f688fd631",
+        "slc_99c3b4b662b1c09b52f394a18b7ff6e5aec575b9e2d8eb6b350256f764380b2b"
+      ],
+      "text": "Interceptors receive an init(String arg) callback with an optional parameter supplied through the JVM agent arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a229bb0d40bcf0d851ac39bc427c686b964d71a993dd376c40a1a034346eafdd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 117,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L114-L117"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 112,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L108-L112"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23a18c6c4e9f7403eb1acf233940716648704335cc9e60b2d0bb670f688fd631",
+        "slc_6c1a98d8bb655fb64fb7603cd34cc019bbc9532cdf3e2ce9b8cb320789bb1718"
+      ],
+      "text": "Deployment workflow: build a fat-jar containing the interceptor class, add 'Premain-Class: org.brutusin.instrumentation.Agent' to the manifest, and launch the target application with -javaagent:myagent.jar=InterceptorClass;optional_parameter on at least JRE 1.5."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aed654ddf94c8f9921a4e72aa87dd0b7232535675eda085e08549aca5c6f7220",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 121,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L120-L121"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 57,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L51-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7cf3884a689e33dc45b0b8811ebe3249ea040974255c3946e37a49fc3cdd066a",
+        "slc_d4ae07ab159cb6aa15d6c65be7241f065f55150d0e392dd4dc169d6517461c15"
+      ],
+      "text": "The artifact is published to Maven Central under groupId org.brutusin, artifactId instrumentation, and depends on org.ow2.asm:asm-all."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dee5873d8c84ef9d39d94bff203659f2c0306eee1f1a9d687df80d35fbde6fc4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L1-L1"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6194323d9fb81f9fc57bf196c829de57e0fccb17b54fd522585aac71cdf5dd28"
+      ],
+      "text": "The README itself directs users to ShiftLeftSecurity/bctrace, described as a more mature and stable version of this project, suggesting this repository is superseded."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6bc451443aff029121ce9edb2b0953c9fd3febe76291cbbf1ea39173998c752",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L124-L124"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0df552c1b8a835db607d5fdffe69f0a0a302378e3044f535b58e7350db54e07d",
+        "slc_fb263cc09e7bc7275943c08e5059414200b7b7e3b0619d70ba6f7d9cc9c172c8"
+      ],
+      "text": "A complete working example is available in the separate brutusin/logging-instrumentation repository, which is listed as a dependent module."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4448072f61d662e9e2e674571d9a8ac371ea9f1db92f7526ffd653d3bd96a9e7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 131,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L131-L131"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 127,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L127-L127"
+        },
+        {
+          "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+          "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+          "line_end": 137,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "brutusin/instrumentation",
+          "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md#L136-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06425205f4628e3261a4750c6158c7017cf0ec0895c4beb7c0c2f3c9839695c5",
+        "slc_394fc0eec175f6e25197abc56a99f234f3b07ba3965b21647dcd2628c3ace4d9",
+        "slc_c4cec85a6c682e99a73bbb6e01848cef7a2651a67f604b1879d9cdb4d96a1fe8"
+      ],
+      "text": "The project is licensed under Apache License, Version 2.0, authored by Ignacio del Valle Alles, with support and bug reports handled through the GitHub issues page."
+    }
+  ],
+  "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 139,
+        "path": "README.md",
+        "size": 5578
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 14,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_19112345514c5a989dcaf5d177e2ab0e",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/brutusin/instrumentation/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/eba29e281a7e6777/manifest.json",
+  "package_id": "pkg_6eed48b0997e80e55cc14072b3e42af00b06f6a1d35369bbdc2d0a17b3d87cf7",
+  "repo": "brutusin/instrumentation",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "24899f7c71d30921d037a3a25a5d5ee0f57798032ecde5b7ef68819d2d3052a1",
+  "snapshot_id": "eba29e281a7e6777",
+  "sources": [
+    {
+      "commit": "f1c80c2524a18e9e2080c28748a0f1d5d77d4be8",
+      "git_sha": "92fc5d7115a7d3feb1f3f9580264ffa93524c5a4",
+      "lines": 139,
+      "path": "README.md",
+      "repository": "brutusin/instrumentation",
+      "sha256": "6957afd9e6666ff5bf5e30c6dea1d0c6a5241cbc3cd5887d4091d5f5058ed0a9",
+      "source_id": "src_db91aa82fec6527ca5f319f8cd834734",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/brutusin/instrumentation/blob/f1c80c2524a18e9e2080c28748a0f1d5d77d4be8/README.md"
+    }
+  ],
+  "summary": "README-only evidence for org.brutusin:instrumentation, a JVM java-agent framework that rewrites class bytecode at load time via ASM to notify custom Interceptor listeners of method lifecycle events. The README also points users to a successor project, ShiftLeftSecurity/bctrace.",
+  "superseded_claim_ids": []
+}

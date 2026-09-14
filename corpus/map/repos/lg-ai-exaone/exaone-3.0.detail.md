@@ -1,0 +1,68 @@
+# lg-ai-exaone/exaone-3.0 -- full detail
+
+[Back to orientation](exaone-3.0.md)
+
+## Origins
+
+- alltheagents.org-backing
+
+## Projects
+
+
+Full evidence record (JSON): [wiki/dossiers/lg-ai-exaone/exaone-3.0/3edac90ae9057cbb59eb04ea67783ed0d88b2007/4f3f4a45bd943a88.json](../../../wiki/dossiers/lg-ai-exaone/exaone-3.0/3edac90ae9057cbb59eb04ea67783ed0d88b2007/4f3f4a45bd943a88.json)
+
+## specifications (1 claim(s))
+
+- [observation/documented] EXAONE-3.0-7.8B-Instruct is a bilingual English/Korean generative model with 7.8 billion parameters, pre-trained on 8T curated tokens. -- evidence: [README.md#L13-L15](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L13-L15) (`clm_5c4bf45611c3c7c0e5226ac74b0f07c06eab37b73fe99d4268f37457df610a72`)
+
+## components (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## design-choices (2 claim(s))
+
+- [observation/documented] The model was post-trained with supervised fine-tuning followed by direct preference optimization. -- evidence: [README.md#L13-L15](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L13-L15) (`clm_5a725f1ed180e5705a81a70e97381775ab04d8649a63689a73067e333e913fad`)
+- [observation/documented] The instruction-tuned model was trained to use a system prompt, and the README highly recommends the provided system prompt in code examples. -- evidence: [README.md#L84-L86](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L84-L86) (`clm_5fa1e394c5ee5e1b5ef33528c0723338d68f3065555d87422be0fc5821fe2d9c`)
+
+## workflows (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## skills-patterns (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## interfaces (1 claim(s))
+
+- [observation/documented] Usage is via HuggingFace transformers AutoModelForCausalLM/AutoTokenizer with trust_remote_code=True, bfloat16 dtype, and a chat template applied to system/user messages. -- evidence: [README.md#L53-L59](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L53-L59), [README.md#L49-L51](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L49-L51), [README.md#L65-L74](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L65-L74) (`clm_00e0a0dbccfddf0ee5753be68f079ea20649927a11074033e2558446d9ec4b09`)
+
+## memory-state (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## orchestration (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## tools-permissions (0 claim(s))
+
+- unknown (no source-linked claim submitted for this facet)
+
+## evaluation (1 claim(s))
+
+- [observation/documented] README reports benchmark results including MT-Bench 9.01, Arena-Hard-v0.1 46.8, WildBench 48.2, and Korean KoMT-Bench 8.92, compared against similar-size open models. -- evidence: [README.md#L30-L37](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L30-L37) (`clm_4489d5f861caa38c721cf41a83a1663011e8e9b1ec2d409fa42b1fb4ff730811`)
+
+## dependencies (2 claim(s))
+
+- [observation/documented] The model requires transformers>=4.41.0, with the latest version recommended. -- evidence: [README.md#L43-L43](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L43-L43) (`clm_de22e15e417da20341e0280a3b0d1d3a3044d8830ac850786d4239b41021d7ba`)
+- [observation/documented] The model is licensed under the EXAONE AI Model License Agreement 1.1 - NC, revised in August 2024. -- evidence: [README.md#L108-L108](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L108-L108), [README.md#L21-L22](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L21-L22) (`clm_a85936701dfac99ea85651f6844d7a5f3b98abaafc26d935ebbeda8ee55f8279`)
+
+## limitations (2 claim(s))
+
+- [observation/documented] Documented limitations include possible inappropriate or biased responses, statistically driven errors, and outdated knowledge leading to false or contradictory answers. -- evidence: [README.md#L94-L98](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L94-L98), [README.md#L92-L92](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L92-L92) (`clm_686fba8590bb5182c2a961f88712a798a7792fa7e70264edf2c37281760c2db2`)
+- [observation/documented] Users are prohibited from malicious activities that could induce outputs violating LG AI's ethical principles. -- evidence: [README.md#L100-L102](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L100-L102) (`clm_0c125202b6bd872a8a252cf537cb04a9649ffb8a773125c541187c9ccdaeef1a`)
+
+## relevance (1 claim(s))
+
+- [observation/documented] The 7.8B instruction-tuned model was released 2024.08.07 by LG AI Research, with a technical report at arXiv:2408.03541. -- evidence: [README.md#L114-L121](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L114-L121), [README.md#L21-L22](https://github.com/LG-AI-EXAONE/EXAONE-3.0/blob/3edac90ae9057cbb59eb04ea67783ed0d88b2007/README.md#L21-L22) (`clm_39d312300d6de95fbec54df150f9c3a6e6976d1bff70176d1e4eacd379045c53`)
+

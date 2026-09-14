@@ -1,0 +1,540 @@
+{
+  "applied_operation_id": "op_e4a296e7043f496c926230455a40ba41",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_963e359ee9cecdd0a6126206d6b8d4316b952e002d4e41c54a025c89f094dedf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 97,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L92-L97"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 109,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L101-L109"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 117,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L113-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d2900d9a8f58f13352f14097b176b84ec9f891b85e00a1c071e3b58e74e22df",
+        "slc_b6de21b376603f45e8ab087770c6715fbbebb952cc0488c747ba41e070201588",
+        "slc_fd80f1eec0a7fbe5547af4ea70d1bbd2ee14e116d685e4cdbcea4429e679e1c3"
+      ],
+      "text": "The loopsy CLI includes daemon lifecycle commands (init, start, stop, status, doctor, enable/disable), phone pairing and revocation, relay reconfiguration, log viewing, and API-key show/rotate commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_58118e66b9cdd82cfe274b076ab84c4f2078146c0307351b4fd3fb416757e0a8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 162,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L150-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cb91f02ea23efa473fe5ec0ab3b0256747b626e86a5a0c16834765732ad30e94"
+      ],
+      "text": "When wired into an agent, the Loopsy MCP server exposes tools for peer listing, remote command execution, long-lived PTY sessions, file transfer, a shared key/value context store, messaging with ACKs, and read receipts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_082fb5b31269dcbddacc35cf9e72974486d72f93a293a063e22a61500756edcd",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 271,
+          "line_start": 259,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L259-L271"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a0e39033ecf41b20e20fe78d438b02750f8340a01a2ba745b310305e2a1f23a4"
+      ],
+      "text": "The repository is a pnpm monorepo with packages for shared protocol types, mDNS discovery, a Fastify daemon, a Cloudflare Worker relay, a deploy-relay npx CLI, the loopsy CLI, an MCP server, a dashboard, and a Flutter mobile app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47d4107dfde5c40e1fabdb13267b5f0d6c1f6ee6b7bbfdd9dd4a177f86e0492f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L52-L52"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 50,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L44-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bd72c86b5350a7770b336e2ce54c55b3d79d0e1f8d58ea13cf0a8b4d51d47f0",
+        "slc_6b5eaefe840d66f1d2467ae169099ad36cdcc5077714ca8447e5966868a67216"
+      ],
+      "text": "Phone control works by the daemon opening an outbound WebSocket to a Cloudflare Worker (Durable Object) that the phone also connects to; the Worker splices the two connections, requiring no port forwarding, public IP, or VPN."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ed2a853df3eaec0eaf7a08ea589d8face604ff2548673bd6e7d14920ee87c89",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L54-L54"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 218,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L211-L218"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e25726d8305f4098b155e377d7e6d3131a67b33c6533742e66fbe158e14e096",
+        "slc_c2a48e30eadf14532d3b05a319a4ad59041fd48b2c98207686396addbc9d2657"
+      ],
+      "text": "Security design includes HMAC-signed pair tokens, SHA-256 hashing of secrets at rest, bearer tokens carried in Sec-WebSocket-Protocol headers rather than query strings, and constant-time bearer comparison."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c020f1519a5e914fc2bece30e49ad0c67463d446fb129949d73266a50f681f14",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 199,
+          "line_start": 199,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L199-L199"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 61,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L58-L61"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L197-L197"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_164543b02a441a2e9835391ab6031d9fc754f93e14407f0a2fac71e35e0e6273",
+        "slc_8a81f7c009badff8f513da3c71c2b069ba4540a3a84c4446434d8d03005f0410",
+        "slc_e9e65764d3b6c5c2b69f7891971ee1ea2b5095f263a7fd2bd4828f02ba288fbf"
+      ],
+      "text": "Per-session auto-approve lets a user opt in to skipping agent confirmation prompts; it defaults to off and enabling it the first time requires a macOS confirmation dialog (the user's password)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f9ce24018cc75edd9deb13c9921776fbd31ff6592b58cd100a1138be9c84fb7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 40,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L30-L40"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 195,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L195-L195"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be0f3f02176c5dc930805f3d4faa5926870b85dac21ad1b5caddd0443e8993c9",
+        "slc_f49bf2b0bcff7f11e42fdd1784c450915d1ebbc965ba142a4af21aec1fdf41c8"
+      ],
+      "text": "TLS terminates at the relay, so the relay operator can read and modify terminal traffic including passwords; end-to-end phone-daemon encryption is deferred to the v1.1 roadmap, and self-hosting is the recommended mitigation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fe1ee2828a8dd54ffdc4835c4e6e7d7afec27ab134d46c6778a2f9865f72b90",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 76,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L76-L76"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 74,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L69-L74"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 67,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L65-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0afeb883b2a402920ea93ebd3693e894c1359de69126bd7bc1f5348879350eb7",
+        "slc_702eb077728217d83da06d65d79fe864a74417805a534e3c4f598ec4ca641bbe",
+        "slc_92e3aa995beacd46fed51ad293235f096e1721c90d71d120b191a76e5705d0c8"
+      ],
+      "text": "Self-hosting the relay uses the @loopsy/deploy-relay npx CLI, which runs wrangler deploy against the user's Cloudflare account; Workers free tier and SQLite-backed Durable Objects are stated to cover personal use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e1b96832e6506e7a62c205732b85f78cc5c21c2022cacc72feb660c4cc14547",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 203,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L203-L203"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 187,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L187-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6eff97305d813fa8b3846c5471a94bf8b820478532a2eda690cf83ce9687255",
+        "slc_fe93766bef321510c74c4cff5303a17c1d76eca5bd0ac4e67aa994081051fc75"
+      ],
+      "text": "The daemon binds to 127.0.0.1 by default; LAN exposure for peer-to-peer is opt-in via `loopsy start --lan` or setting server.host to 0.0.0.0 in config."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b3b5433c2b48c40bfd491696a0965a9ad702eab4ddace943cb84072138d513e",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 255,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L249-L255"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 181,
+          "line_start": 177,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L177-L181"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "ce8e0403a08a8106555a966a362c894b3e4bb10d",
+          "line_end": 124,
+          "line_start": 120,
+          "path": "AGENTS.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/AGENTS.md#L120-L124"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 247,
+          "line_start": 247,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L247-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05ef7d8280d2c1bc83eabcfb9309cc4c45de0432c72efb4c9bf4ceaa3e3e3cf3",
+        "slc_4e52b7d2218847a769d8e7483274ac89e9146d5c5478f7a4125ea87a369ce92a",
+        "slc_61913cdadbebeca91139bf525a1a8e71d689a14d7b7d2b53b8618ae1c2ac3ac9",
+        "slc_a168dd4e96947b086d125d732168891978761093efacfb75f5ef691eff8a9820"
+      ],
+      "text": "State lives under ~/.loopsy/ in config.yaml, context.json (key-value store), peers.json, logs/audit.jsonl, and relay.json; the messaging protocol stores inbox, outbox, and ack entries as context keys with TTLs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6abd789d7c4143b4e0caaa939e5f35d6046a9126e0cd0ef2f815090bdba1d4df",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "ce8e0403a08a8106555a966a362c894b3e4bb10d",
+          "line_end": 379,
+          "line_start": 376,
+          "path": "AGENTS.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/AGENTS.md#L376-L379"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 282,
+          "line_start": 275,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L275-L282"
+        },
+        {
+          "commit": "73c1654762797ebeac252a875022256f5a15f822",
+          "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+          "line_end": 284,
+          "line_start": 284,
+          "path": "README.md",
+          "repository": "leox255/loopsy",
+          "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md#L284-L284"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6d16d10077e900bf13605dd782b7a40cc034dafc5ad2af0d7ddb43596e71a2af",
+        "slc_9eac0f397bd56dc603444f5c089bd0598383a5634b7d62cffd7dffc2ce42c98c",
+        "slc_b47959fc0c5b4113286207c57384b40d37f5117b5ba7ae086b9473a89721781f"
+      ],
+      "text": "Repository development practice: contributors build with pnpm install and pnpm build, and releases are tag-driven — pushing a v* tag publishes loopsy and @loopsy/deploy-relay to npm via OIDC Trusted Publisher with provenance attestations."
+    }
+  ],
+  "commit": "73c1654762797ebeac252a875022256f5a15f822",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 288,
+        "path": "README.md",
+        "size": 14525
+      },
+      {
+        "lines": 405,
+        "path": "AGENTS.md",
+        "size": 15250
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 95
+      }
+    ],
+    "omitted": [
+      {
+        "path": "GEMINI.md",
+        "reason": "file-budget",
+        "size": 95
+      },
+      {
+        "path": "LOOPSY.md",
+        "reason": "file-budget",
+        "size": 3857
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 374,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": false,
+      "omitted": 2,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_db5caa8a4f885bf4b89945253d30a5ee",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/leox255/loopsy/73c1654762797ebeac252a875022256f5a15f822/1ed6aebb8112bb9a/manifest.json",
+  "package_id": "pkg_e1d6018e73c8495bb4b731aa3ce8df8c03ae7712c0c10d8d7b0ced864dfa11b9",
+  "repo": "leox255/loopsy",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "b24162d8bb090982a11832269318ab7bfad24a19ca4097571f13e8aa4798bafa",
+  "snapshot_id": "1ed6aebb8112bb9a",
+  "sources": [
+    {
+      "commit": "73c1654762797ebeac252a875022256f5a15f822",
+      "git_sha": "ce8e0403a08a8106555a966a362c894b3e4bb10d",
+      "lines": 405,
+      "path": "AGENTS.md",
+      "repository": "leox255/loopsy",
+      "sha256": "f076f7b1ef80adff62eab6f983a895506005205b383d05cf5ddcb9b7f442fd68",
+      "source_id": "src_085696af2bef502ca171cf04604f091b",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/AGENTS.md"
+    },
+    {
+      "commit": "73c1654762797ebeac252a875022256f5a15f822",
+      "git_sha": "5151011dca62689800430c98ff632d5f546896df",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "leox255/loopsy",
+      "sha256": "6495579ce11fc21bd1b9e7468eaee9ea8fd9da14209ba02ef991db2932b18528",
+      "source_id": "src_2f9a702d34e05fb2b921305829b7e7dd",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/CLAUDE.md"
+    },
+    {
+      "commit": "73c1654762797ebeac252a875022256f5a15f822",
+      "git_sha": "504602b19b0a63b01e2a857a9ad0b5fa0138f167",
+      "lines": 288,
+      "path": "README.md",
+      "repository": "leox255/loopsy",
+      "sha256": "84b913ec55d359c9925b0c51651ad5e4ca1e93bb39584e3ad4c96ba4e86103f1",
+      "source_id": "src_77f076c532035df782321748248e8689",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/leox255/loopsy/blob/73c1654762797ebeac252a875022256f5a15f822/README.md"
+    }
+  ],
+  "summary": "The loopsy CLI includes daemon lifecycle commands (init, start, stop, status, doctor, enable/disable), phone pairing and revocation, relay reconfiguration, log viewing, and API-key show/rotate commands. When wired into an agent, the Loopsy MCP server exposes tools for peer listing, remote command execution, long-lived PTY sessions, file transfer, a shared key/value context store, messaging with ACKs, and read receipts.",
+  "superseded_claim_ids": []
+}

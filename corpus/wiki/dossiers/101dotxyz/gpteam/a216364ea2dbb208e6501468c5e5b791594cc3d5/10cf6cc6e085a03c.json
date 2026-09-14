@@ -1,0 +1,416 @@
+{
+  "applied_operation_id": "op_d337ff31220b455fb492265d674b36c1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_1cf27595c5566683e6ec00f65671a5e091abfea36982c20dac59f54a8c5bfcfb",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1895463559eb993f2b591df2e8a4fc90b19ce086ee13786b0992c4977e53372a"
+      ],
+      "text": "GPTeam uses GPT-4 to create multiple agents that collaborate to achieve predefined goals, aiming to explore GPT models' potential for multi-agent productivity and communication."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9effc15bd611862f9b34dc1caad046decaf2d1c8fc0ac9d394b01279358cace3",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_751b491d285baad6ccfcfb1f416c64121d89470d476288e045622888a391dd6e"
+      ],
+      "text": "Each agent has its own memory and uses communication as a tool; agent memory and reflection are inspired by a cited research paper (arXiv 2304.03442)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9daa50338107ff699ba6e9127d46b042e5a2625eec6f34e4b2afd4bdcbde98d1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_751b491d285baad6ccfcfb1f416c64121d89470d476288e045622888a391dd6e"
+      ],
+      "text": "Agents move around the world, perform tasks in different locations depending on their activity and other agents' positions, and can speak to each other and collaborate on tasks in parallel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f96e7e793fad84452f741e87c2de3ea7568e9ac4623487ecda4e1de36eee36e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 55,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L53-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd1eef9ab3c25a25a4a90edc96b9b920dc16b798ce813bb46def205dca6baccc"
+      ],
+      "text": "The world is configured via a config.json file listing available agents and locations; after editing it, users reset the database and relaunch the world."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0dfb3000c6bce7b9f4e983f460679c1aaa4107d3f595df810ec086aa159562e0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c651a4edeb262b60e68be90057273ec3820937cb5ce054adbc34bc0ef7376efe"
+      ],
+      "text": "While the world runs, each agent's current state is written to a text file in the agents/ folder, letting users observe what agents are doing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c613ada48f3bb0afd4be8f9e0c88789e7cb61016be21813a3cc1825208a9b6e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L31-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f313781cdef57ece96678d8f08975c444f83e4bb76a50a8b79da7631ceeb8fb"
+      ],
+      "text": "The project requires an OpenAI API key in .env; supplying keys for optional services enables additional tools, and the project is managed with Poetry."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9475ffb2e42d460f17b245b53b7db8b5611fcc8546307e95910439ba5c34e2b5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L37-L37"
+        },
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 63,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L63-L63"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aae23d9affee5874ecbc329118001d4d1c3e4649befa101f6a89b1695b958a1a",
+        "slc_e4651380b05ec1deb47402f7b3ac4d751f079e32326a7564394dfbf02b082d8f"
+      ],
+      "text": "A --turbo flag runs all LLM calls with gpt3.5-turbo for lower cost, at the cost of worse results; a --claude flag uses claude-v1 and claude-v1-instant for some calls."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5e73729f5f75557f071987b963f5d208d9f4cab32f3c0329281a5417ec006634",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ee58abba8d45052ad5db412bca6c2148d10c9e1b",
+          "line_end": 8,
+          "line_start": 3,
+          "path": "DISCORD.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/DISCORD.md#L3-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c78181df394fd0fd245430b95e3e681dc47c305236f13c8a04a94e01ecee9c6"
+      ],
+      "text": "In the Discord integration, each world maps to a Discord guild, each location to a channel, each agent to a separate bot application, plus an announcer bot that announces agent movement between rooms."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a0733c8f0467b61f304c90ef7e1da85b21811d5c0f521d09ca2b5429858a6d5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ee58abba8d45052ad5db412bca6c2148d10c9e1b",
+          "line_end": 22,
+          "line_start": 11,
+          "path": "DISCORD.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/DISCORD.md#L11-L22"
+        },
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ee58abba8d45052ad5db412bca6c2148d10c9e1b",
+          "line_end": 49,
+          "line_start": 33,
+          "path": "DISCORD.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/DISCORD.md#L33-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a73545aefb1354d7f38c9b74f744335f5ee29e240ebf43e6697d386f0701ca6",
+        "slc_562c03330c4a84fde2741d5661db41494c9f46f1334e580a6ff58d326fa1ed6e"
+      ],
+      "text": "Discord setup requires channel IDs per location in .env as <LOCATION_NAME>_CHANNEL_ID and bot tokens as <BOT_FIRST_NAME>_DISCORD_TOKEN, with the announcer bot needing Message Content Intent enabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0796b574aa6f62adf45f6e30089f41e2ac23bac3cc5c8af30df4fb4d157c5623",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 76,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L73-L76"
+        },
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef58da1e7540cacd14779c5d1189e3401cb0c8544ea4be5a9917d4e76ffa1d91",
+        "slc_f06e53690ea3c4e7c282a3172597701a3be95ce688461be2e6b0a625271ee2e3"
+      ],
+      "text": "Repository development practice: contributors are asked to fork the repository, create a branch, implement changes, and submit a pull request, which maintainers will review with feedback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f30224cd5a009b77255ff4acd4cf574d153af37c74d0a7324aa97232b3c6dfc",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ee58abba8d45052ad5db412bca6c2148d10c9e1b",
+          "line_end": 27,
+          "line_start": 25,
+          "path": "DISCORD.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/DISCORD.md#L25-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_733cf886263e0a7eef45a5f720e0de75e39bc84fdb7fa4bb4ca8d2bd5da2b7a2"
+      ],
+      "text": "The Discord bot configuration guide is described as basic, and running the Discord bots in production is stated to be at the user's own risk with permissions to be optimized as needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dabfbb500c8ff207d94cff8e8fdcbaabf277c7ee441354e8ee0ca8679698b68e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+          "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "101dotxyz/gpteam",
+          "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md#L82-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_56d9a6f841208d3ee331e69dc1e03735d0deeeab101cd28597c990c4a61db5c2"
+      ],
+      "text": "The project is licensed under the MIT license."
+    }
+  ],
+  "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 82,
+        "path": "README.md",
+        "size": 3823
+      },
+      {
+        "lines": 49,
+        "path": "DISCORD.md",
+        "size": 3238
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 75,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_1a8ff27154365de9be35f933669a8271",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/101dotxyz/gpteam/a216364ea2dbb208e6501468c5e5b791594cc3d5/10cf6cc6e085a03c/manifest.json",
+  "package_id": "pkg_49aad7e202a7ce30e597bf023d8bafcf998837adc00a724e7e6e2684d40a5694",
+  "repo": "101dotxyz/gpteam",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7b0c90842cf8e44e5c3024072ef24612877c8550e5a4aa8a8048486909581a6a",
+  "snapshot_id": "10cf6cc6e085a03c",
+  "sources": [
+    {
+      "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+      "git_sha": "ee58abba8d45052ad5db412bca6c2148d10c9e1b",
+      "lines": 49,
+      "path": "DISCORD.md",
+      "repository": "101dotxyz/gpteam",
+      "sha256": "f22ac97db10400c5d698051987825adeabf6104a51ce3e52a9a0c09819bc36bf",
+      "source_id": "src_728066ec12e157248ce2a7fefb37996d",
+      "stored": "discord.md-561cdd9966a3.md",
+      "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/DISCORD.md"
+    },
+    {
+      "commit": "a216364ea2dbb208e6501468c5e5b791594cc3d5",
+      "git_sha": "ab4206d9934ffd6a245e2fcc9370f033a831efc0",
+      "lines": 82,
+      "path": "README.md",
+      "repository": "101dotxyz/gpteam",
+      "sha256": "e1d95129e52f1c71cb177bf1fe0ff5f2f211b32f525d17b77722001e5fe54083",
+      "source_id": "src_ca7384f550775d82b359b3ed9fb67ee6",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/101dotxyz/GPTeam/blob/a216364ea2dbb208e6501468c5e5b791594cc3d5/README.md"
+    }
+  ],
+  "summary": "GPTeam is a GPT-4-based multi-agent simulation where agents with memory collaborate on tasks in a configurable world, with optional Discord integration and alternative LLM backends. Evidence is mostly README/DISCORD.md documentation; no code slices are present.",
+  "superseded_claim_ids": []
+}

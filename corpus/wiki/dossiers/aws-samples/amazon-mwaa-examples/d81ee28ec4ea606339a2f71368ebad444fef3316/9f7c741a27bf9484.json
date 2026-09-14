@@ -1,0 +1,462 @@
+{
+  "applied_operation_id": "op_97c15de784944ecdb9629eb733c28b55",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d9c0f2e9710647416e3482b48333648a8ac944452663eb290b55f034330d6b7",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cab62ccd28f0c6dd490a1335aae417fc463f6b13a7a0efdd5744f9fc1cedaf13"
+      ],
+      "text": "The repository provides example DAGs, requirements.txt files, plugins, and CloudFormation templates focused on Amazon MWAA, and notes many contributions also apply to self-managed Apache Airflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_faf36636d66ed888746ba65eb6e25110f67436d01494b23a52804e9bd1067e24",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_68964798c4ddc29011f6047302a5e5773e5b0caa5161a652ad82027ca655aa1d"
+      ],
+      "text": "The examples are educational samples, not supported products; users are told to test, secure, and optimize any integrated application before production use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_602640ce2f8f1c779b0d18d64e0609903abab40919224bf51dbc4d1f1232ad49",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 23,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L19-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5866777001bfb8925c3c9a58600c7406159d28f90a6e8f154f82dd3cf021fc2"
+      ],
+      "text": "Example DAG workflows include moving Airflow Connections and Variables to AWS Secrets Manager, EMR jobs, Bash Operator interactive commands, duplicating an RBAC role, and returning the DAG ID during task execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1315df89df82000c625cb3d2e66ffc1898fcd0d6d10b6931ce6b9698b988233c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L28-L30"
+        },
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b6873ecb360e668be5e3cb7081165e22de44787eb0574d457075d8a5103a38e9",
+        "slc_d9ca93c2bea8c2bd5623d737895976f3d4e231964530f724942430ef978dd54d"
+      ],
+      "text": "A usecases folder contains complete sample use cases with documentation, infrastructure as code, and dependent resources, including an image processing pipeline, CodeArtifact Python dependency setup, and stopping/starting an MWAA environment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47f6e97ad5957559af391d24c14892c9fb07288f307132003c7803bed7ff86fb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 34,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L34-L34"
+        },
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 37,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L36-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_183c82b43076a994acf250a0c1d01240d53d931af55eebf667c5f62142a1bf8d",
+        "slc_b368c5bf1b75465a4571635fd4ae10161140e57c7ab67ac1c7ce1e575a044b7b"
+      ],
+      "text": "The repository offers requirements.txt examples to help find the right Python library combinations, including Amazon and GCP backport providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffe68a71dfb6df0148324894367c17c37af104d0c16387a5101774adbdfce0de",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L45-L45"
+        },
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c822b691f049faa59f728a55d919343d541a64c2f3817ff27adca15dea2eb021",
+        "slc_da9eed26ed4e32353e4ddcc15d8b5a5a5b1f6bdf0241f460dfdad0144e4a856f"
+      ],
+      "text": "The repository includes example CloudFormation templates for Amazon MWAA and example AWS IAM policy definitions, with links to relevant AWS documentation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_81085ad6524008d5a892eb78e264cd6970690474918c4775a59b0f35d5361e86",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 57,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L57-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6329edf6e5a0360394c21a97cb618b606e1b6f696b67274cf10e54046ffb6633"
+      ],
+      "text": "The examples assume a working Amazon MWAA environment as a prerequisite."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd0a8d51b40d02d6545bf1ad88860cbb23e085f31b576b9dc21531726bbff62c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 37,
+          "line_start": 32,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CONTRIBUTING.md#L32-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5fa66571c3070e356e1dc838d779335018b26b9f25a00c063ca0a1f85aa5fc75"
+      ],
+      "text": "Repository development practice: contributors are asked to fork the repo, make focused changes, ensure local tests pass, commit with clear messages, submit a pull request, and monitor automated CI failures."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d1f55727feb9c14ae9695332488343c17e748734be04c50d6d1d4b489dde96b5",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CONTRIBUTING.md#L17-L20"
+        },
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CONTRIBUTING.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_517ba88b33d5389c511003216b5abf6820db8b3d440163e4eba4051415c8c752",
+        "slc_e3f406d5769e3bcfbadf6110833bbefd418e277312d63aa173737034ecefa35f"
+      ],
+      "text": "Repository development practice: bug reports should use the GitHub issue tracker and include a reproducible test case, code version, relevant modifications, and unusual environment details."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf844e3fbf6c50af75ffcce3aca5fb3162100a476f8cb4300b1d91a411709dfb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CONTRIBUTING.md#L54-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7e8755ef50cad691609dae58cd6e522cdc314f27b071bdd1ecbca05ea70e22c7"
+      ],
+      "text": "Repository development practice: security issues must be reported to AWS/Amazon Security via the vulnerability reporting page rather than as public GitHub issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5357fc972619d888cff6862fc348954cd6e48f58a1baca4a47e5e6d48fa67b77",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CONTRIBUTING.md#L26-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b21cca1cc53f6555dcc8c0df1a9909e6640d996f890e6b5a1394f3a7d918e8c0"
+      ],
+      "text": "Repository development practice: pull requests should target the latest main branch, check for duplicate work, and open an issue to discuss significant work beforehand."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c1a8449d7cd4dbf2d5fa15a8f1d33f934ef26a3e6cef0454ad887d074bac2c5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "CONTRIBUTING.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CONTRIBUTING.md#L59-L59"
+        },
+        {
+          "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+          "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "aws-samples/amazon-mwaa-examples",
+          "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8c9e5b10e21d3660402f16cc0e7c5a9afd29280df3cd162abf4b458747392a71",
+        "slc_d323636f3322749b71045f5f7d167dc72dc4b0b3b213dc9e085c9a61ce47e7d7"
+      ],
+      "text": "The project is licensed under the MIT-0 License, and contributors will be asked to confirm licensing of their contributions."
+    }
+  ],
+  "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 65,
+        "path": "README.md",
+        "size": 3611
+      },
+      {
+        "lines": 4,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 309
+      },
+      {
+        "lines": 59,
+        "path": "CONTRIBUTING.md",
+        "size": 3160
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 545,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_27602ed90c6e51cbae3ad2ffc2b116ad",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aws-samples/amazon-mwaa-examples/d81ee28ec4ea606339a2f71368ebad444fef3316/9f7c741a27bf9484/manifest.json",
+  "package_id": "pkg_016c7dd66dbac8348c4a9e53f259974ec8651fad05a143362219538142fea60b",
+  "repo": "aws-samples/amazon-mwaa-examples",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0d262ecbcd72abd1ebdbea4306b219ec23c5280891dcc33ad05fc2fd18fd3369",
+  "snapshot_id": "9f7c741a27bf9484",
+  "sources": [
+    {
+      "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+      "git_sha": "5b627cfa60b5313da2c7df81aab2340225c2329f",
+      "lines": 4,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "aws-samples/amazon-mwaa-examples",
+      "sha256": "34b6c98d5c23127ae6769e95e483e5bf6d3704ae1f0d3ae4e69d15f4ede118b6",
+      "source_id": "src_b57231dc71725d6894df785139c9c3c7",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+      "git_sha": "c4b6a1c5081adcf78822222488e7c5b0f1dc6499",
+      "lines": 59,
+      "path": "CONTRIBUTING.md",
+      "repository": "aws-samples/amazon-mwaa-examples",
+      "sha256": "993e7639b93ea44d96be9813b63f5beada0deb2d4677d2e91ea96bc51e15b44b",
+      "source_id": "src_cb7049a1bc4c5be58214683d0b8f7360",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/CONTRIBUTING.md"
+    },
+    {
+      "commit": "d81ee28ec4ea606339a2f71368ebad444fef3316",
+      "git_sha": "d7eb13ddbbf0d444672d61c6ed4b8bad164e4e4d",
+      "lines": 65,
+      "path": "README.md",
+      "repository": "aws-samples/amazon-mwaa-examples",
+      "sha256": "de21a2ae4e3a34b578fa76e4f2473df150e3175f53054b74b82ed0665252460f",
+      "source_id": "src_1728e1ceec8b57ddb30451dd6018aee9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aws-samples/amazon-mwaa-examples/blob/d81ee28ec4ea606339a2f71368ebad444fef3316/README.md"
+    }
+  ],
+  "summary": "This repository is a collection of educational example DAGs, requirements.txt files, plugins, CloudFormation templates, and IAM policies for Amazon MWAA, not a supported product. Evidence covers repository contents and contributor guidelines; no runtime agent behavior is documented.",
+  "superseded_claim_ids": []
+}

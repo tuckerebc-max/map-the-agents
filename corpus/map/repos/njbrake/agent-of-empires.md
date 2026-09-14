@@ -1,12 +1,14 @@
 # njbrake/agent-of-empires
 
-Status: discovered - Freshness: pending
+Status: blocked - Freshness: refresh-failed
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
+Renamed: canonical dossier is [agent-of-empires/agent-of-empires](../agent-of-empires/agent-of-empires.md) (github id 1131238324, verified [https://github.com/agent-of-empires/agent-of-empires](https://github.com/agent-of-empires/agent-of-empires)).
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/njbrake/agent-of-empires
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Collection is blocked; no distilled evidence exists yet.
 
 ## Facets
 

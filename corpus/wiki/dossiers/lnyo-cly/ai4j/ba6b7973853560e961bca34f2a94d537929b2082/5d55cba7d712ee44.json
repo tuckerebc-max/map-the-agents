@@ -1,0 +1,683 @@
+{
+  "applied_operation_id": "op_5c99e8d705d04e0d956ec1eadac172b1",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_07759a5cd6b185b62c473dc2eb8a5d6ff6cb2daafdf35e419523877dbb8b05e8",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 6,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L6-L6"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 2,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L1-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_678423544ab64658ea4ad7ba6495b90adcadb3cb3c8e46864fbba4cfe579af54",
+        "slc_b1806823e060bcdf77668d659f6e02719d3b376e723ccbfaec80230e6a87ad91"
+      ],
+      "text": "ai4j is described as a Java AI agentic development kit targeting JDK 8+, unifying model access, tool calling, MCP, A2A, RAG, an agent runtime, and a built-in coding agent CLI/TUI/ACP."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d49783e73b207a9c4204d3e5846d40121294cb6f098bb332932a53643da535d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 13,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L12-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_570c8d232eef72f4bdd68ee6a3a1e1cda1d070557db925377d4e6f0f406604dd"
+      ],
+      "text": "The library is published as io.github.lnyo-cly:ai4j version 2.4.2, installable via Gradle or Maven dependency declarations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_952fc25793abeafe9773dc4a4b4010bb176208e945ff9c3e517c55da72f0e0e3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 44,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L19-L44"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0799a3e5dde783d25f94c560a6987a0862e4a5d636bd2d7f13f40af041140957",
+        "slc_ba8d10174f6237fc0e178cc5cafb9b573e1c66e593fd42605ddc36c4119c4472"
+      ],
+      "text": "The quickstart flow: build an OpenAiConfig with an API key from OPENAI_API_KEY, wrap it in a Configuration, obtain an IChatService from AiService via PlatformType.OPENAI, then send a ChatCompletion built with a model name and user message."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35bee78282a7d8ee3daf4ae6bc8a57353fcfe2f9d824ba90f3fb0ee1486f9e26",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L51-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e6f9236d2689b755c35a2b7dd63279abb0bc73f573c2b6f43243f41bb4e0df2"
+      ],
+      "text": "Switching providers such as DashScope, DeepSeek, or Ollama is presented as changing only the PlatformType and corresponding config object while the rest of the calling code stays unchanged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b85a30327e058ec9ea787a242a7399706ec90e7de41e3215aa47601639beb550",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L62-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1af0dcd12df4aea33c03100fad75d85862011de770c4836191fd68b5f4559554"
+      ],
+      "text": "Supported platforms listed include OpenAI and compatible APIs, Anthropic, DashScope, Doubao, DeepSeek, Moonshot, Zhipu, Hunyuan, Lingyi, Ollama, MiniMax, Baichuan, and Suno, plus rerank providers, AgentFlow (Dify/Coze/n8n), and vector stores (Pinecone, Qdrant, pgvector, Milvus, Redis)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_599285ba2a501176851a2d026b93ac9a935e92d3c18b9fb5b12a562e24ec09a0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 29,
+          "line_start": 28,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L28-L29"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 49,
+          "line_start": 48,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L48-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_67cf1e5eae2e669d8ea2f8edd859469c5e9ea06c0100f6cd8593046c7d7b105c",
+        "slc_bd20449dcdabf58964bd7651ead97d3c07d2bbfb87573e72edc3ab2ae83f88f9"
+      ],
+      "text": "APIResponse.md documents that Ollama's deepseek-r1 streams thinking and answer content together in the content field, with thinking wrapped in <think> tags, unlike qwen3 which places reasoning in a separate thinking field."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_060790fa73c3100b806c41c281d3bb198d3bd188552f8eb7c78aeb7c861024b7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 61,
+          "line_start": 52,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L52-L61"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 65,
+          "line_start": 63,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L63-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e4a34e5ccb21036b499a5dd2850b8354b8adeec77809547b6a79a08406d294c",
+        "slc_4c20a8ad04012f50947a1b859993c3e85aec52bde751fe6d1d3de31299ad7b9f"
+      ],
+      "text": "Documented Ollama qwen3 streaming shows tool_calls arriving complete within a single data chunk, including function name and arguments, requiring no extra concatenation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ebe75ac29d72bd2d2e16c6354077482d665bd0bf24bd0daa67438f280d30e459",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L136-L136"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 134,
+          "line_start": 134,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L134-L134"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L132-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ca2eb238119732c7583bce1e8da7a1e31b9d7fdea644a00cafe4150870f4531",
+        "slc_81613e14b65c670ac5c99d95ac65632bc7f46fc884d1d7c995d542832b7deaa5",
+        "slc_ca1101e116a99946b8ff11531cdf79033bcc593f28ee4bdbefd28f724422ef7e"
+      ],
+      "text": "Documented OpenAI streaming responses use SSE 'data:' chunks of chat.completion.chunk objects; the finish_reason stop chunk is followed by a separate chunk with empty choices that carries usage, then a 'data: [DONE]' sentinel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea91459b1cab32bd760589d68b637d652dc0cbf82650cdc5d50138f1edf6d45c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L147-L147"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 145,
+          "line_start": 145,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L145-L145"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 181,
+          "line_start": 181,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L181-L181"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 161,
+          "line_start": 161,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L161-L161"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_539677152ad675ed0f5857d45a2548fbe2548e26c9e9cedc21580186e6ec5cf6",
+        "slc_9a273b690dd051530f13170d1aca5046ed07e8505acf818e4e483773b0f79a32",
+        "slc_c47a3fcf997b4f78af611e55e4e925b97e70785fccdc495d2a1f5f3a3957f3cb",
+        "slc_fb921fd278d10919006586e5fe8cb645ebcf28976edbb1eee26c3dd3e64d74d4"
+      ],
+      "text": "Documented OpenAI streaming tool calls arrive incrementally: each delta carries a tool_calls fragment with index, id, function name, and argument string split across chunks, finishing with finish_reason 'tool_calls'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f44cddc2217087654c456e7aae24a3c4d2aed998e00751b5c57c125b1d35272",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 282,
+          "line_start": 282,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L282-L282"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 258,
+          "line_start": 257,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L257-L258"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 260,
+          "line_start": 260,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L260-L260"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+          "line_end": 284,
+          "line_start": 284,
+          "path": "APIResponse.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md#L284-L284"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fe95d24513315d31562eda52c4934d3ae07c81a9a87ad651ddc9c289df3d99c",
+        "slc_51c17fbb0a15080327b8374aa8648fc729f1e2a3a97575f7abb7cf5dfa80da4d",
+        "slc_b8167fb0280482f9b66cbaf6d563a72eed5cbf74ba4329467d5a21799a5d1726",
+        "slc_fd5de4d8b6409f0ef056dc5dd781644b86b5f8b81d458c6a64f13bb0ce87c1b4"
+      ],
+      "text": "Documented DeepSeek-R1 streaming separates reasoning into a reasoning_content delta field (with reasoning_tokens counted in usage) before regular content deltas begin."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c760938c3b0a83108dcddfa13dc926a4fd65f483edf40fe75c8c0c4487448d11",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 58,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L55-L58"
+        },
+        {
+          "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+          "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "lnyo-cly/ai4j",
+          "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md#L66-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78c256115d534d03ccbeec1298edf62c5919ff15dd94cf62ba54a1c7a590b9ef",
+        "slc_e6712e76e675c90b1d22002c246610b759b89bd013b89e2f4daf1cbd937b59a0"
+      ],
+      "text": "The project is licensed under Apache License 2.0 and links to a GitHub Pages documentation site plus guides for the coding agent CLI and A2A protocol."
+    }
+  ],
+  "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 66,
+        "path": "README.md",
+        "size": 4298
+      },
+      {
+        "lines": 663,
+        "path": "APIResponse.md",
+        "size": 86884
+      },
+      {
+        "lines": 66,
+        "path": "README-EN.md",
+        "size": 4065
+      },
+      {
+        "lines": 86,
+        "path": "docs/05-TEST-QA/Regression-SSoT.md",
+        "size": 18062
+      },
+      {
+        "lines": 75,
+        "path": "docs/09-PLANNING/Feature-SSoT.md",
+        "size": 6008
+      },
+      {
+        "lines": 6,
+        "path": "docs/readme/en/changelog.md",
+        "size": 212
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/05-TEST-QA/Cadence-Ledger.md",
+        "reason": "byte-budget",
+        "size": 63743
+      },
+      {
+        "path": "docs/10-WALKTHROUGH/2026-06-06-first-chat-copyable-code-contract.md",
+        "reason": "byte-budget",
+        "size": 2848
+      },
+      {
+        "path": "docs/11-REFERENCE/harness-anything-standard.md",
+        "reason": "byte-budget",
+        "size": 4596
+      },
+      {
+        "path": "docs/11-REFERENCE/testing-standard.md",
+        "reason": "byte-budget",
+        "size": 6747
+      },
+      {
+        "path": "docs/readme/en/chat.md",
+        "reason": "byte-budget",
+        "size": 5113
+      },
+      {
+        "path": "docs/readme/en/coding-agent-cli.md",
+        "reason": "byte-budget",
+        "size": 4076
+      },
+      {
+        "path": "docs/readme/en/contributing-support.md",
+        "reason": "byte-budget",
+        "size": 1015
+      },
+      {
+        "path": "docs/readme/en/quick-start.md",
+        "reason": "byte-budget",
+        "size": 3744
+      },
+      {
+        "path": "docs/readme/en/rag-and-retrieval.md",
+        "reason": "byte-budget",
+        "size": 3323
+      },
+      {
+        "path": "docs/readme/zh/chat.md",
+        "reason": "byte-budget",
+        "size": 6052
+      },
+      {
+        "path": "docs/readme/zh/coding-agent-cli.md",
+        "reason": "byte-budget",
+        "size": 5942
+      },
+      {
+        "path": "docs/readme/zh/contributing-support.md",
+        "reason": "byte-budget",
+        "size": 2007
+      },
+      {
+        "path": "docs/readme/zh/network-and-spring.md",
+        "reason": "byte-budget",
+        "size": 1135
+      },
+      {
+        "path": "docs/readme/zh/quick-start.md",
+        "reason": "byte-budget",
+        "size": 5792
+      },
+      {
+        "path": "docs/readme/zh/rag-and-retrieval.md",
+        "reason": "byte-budget",
+        "size": 5383
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "byte-budget",
+        "size": 13337
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 6429
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "byte-budget",
+        "size": 788
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "byte-budget",
+        "size": 5523
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "byte-budget",
+        "size": 3888
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "byte-budget",
+        "size": 2653
+      },
+      {
+        "path": "docs/readme/zh/changelog.md",
+        "reason": "file-budget",
+        "size": 201
+      }
+    ],
+    "omitted_count": 22,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2221,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 28,
+      "complete": false,
+      "omitted": 22,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_734387a3d7a05341aae30bfebb6faf20",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 6,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/lnyo-cly/ai4j/ba6b7973853560e961bca34f2a94d537929b2082/5d55cba7d712ee44/manifest.json",
+  "package_id": "pkg_78b9206558755f934a5b8e7236fb737822a2ef87a5cd750f041133b8f7277abc",
+  "repo": "lnyo-cly/ai4j",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "33233d8b03d42f15205a60331d76eaa31d586888f170977d52423f6c2283ca26",
+  "snapshot_id": "5d55cba7d712ee44",
+  "sources": [
+    {
+      "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+      "git_sha": "e857ce179bf9bb49f4cc27192092ad12bd2735fb",
+      "lines": 663,
+      "path": "APIResponse.md",
+      "repository": "lnyo-cly/ai4j",
+      "sha256": "f8c89591f473c29825be6724f04155d815de63e9ed39833848efce88d0f16430",
+      "source_id": "src_21b0b230c0485880b30ff8e550a6b4f3",
+      "stored": "apiresponse.md-bb057ce8f5c4.md",
+      "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/APIResponse.md"
+    },
+    {
+      "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+      "git_sha": "442a150c7522abcf7e0f1a435521a933fd385f91",
+      "lines": 66,
+      "path": "README-EN.md",
+      "repository": "lnyo-cly/ai4j",
+      "sha256": "4185988d9020d6c739386118e1bb7ba3b925c7d3840637e2b6370b10481c6cc8",
+      "source_id": "src_4ec10661a7f658d8b62e47600ba96d59",
+      "stored": "readme-en.md-b11545c032f5.md",
+      "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README-EN.md"
+    },
+    {
+      "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+      "git_sha": "18825888830fe766dfdc02f48aecafe8531341dc",
+      "lines": 66,
+      "path": "README.md",
+      "repository": "lnyo-cly/ai4j",
+      "sha256": "5aa5cf048e8b344cb2e24f46968ab823d874a2240129842b5b726df039e052bf",
+      "source_id": "src_589b0b9aeaec5845bf3b6d97ff43f395",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/README.md"
+    },
+    {
+      "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+      "git_sha": "caa1f87a09a589c5a1d13de8c8da0727986a4a4e",
+      "lines": 86,
+      "path": "docs/05-TEST-QA/Regression-SSoT.md",
+      "repository": "lnyo-cly/ai4j",
+      "sha256": "d96c0f1aba7276c1990fded615b2634cfe71d3f7bf3af25f8e0691a3fb8b8d57",
+      "source_id": "src_7b9b5fe58c8f5da795a0a78701fc50da",
+      "stored": "regression-ssot.md-6cf5b7e376c8.md",
+      "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/docs/05-TEST-QA/Regression-SSoT.md"
+    },
+    {
+      "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+      "git_sha": "0bee77e5260496ac67b1a56c147e8c21a06756d4",
+      "lines": 75,
+      "path": "docs/09-PLANNING/Feature-SSoT.md",
+      "repository": "lnyo-cly/ai4j",
+      "sha256": "e0268e9e52ff8f7a0318c3c05950dc8f9ac5c56428f9ab5015e83351570c533e",
+      "source_id": "src_115174e0d08553c7bb0ff946896d5b54",
+      "stored": "feature-ssot.md-8c899cf21cdc.md",
+      "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/docs/09-PLANNING/Feature-SSoT.md"
+    },
+    {
+      "commit": "ba6b7973853560e961bca34f2a94d537929b2082",
+      "git_sha": "4655a589fee81b898601040ef29f369295fe0d2b",
+      "lines": 6,
+      "path": "docs/readme/en/changelog.md",
+      "repository": "lnyo-cly/ai4j",
+      "sha256": "7829014ae6f30e9d333b20d10cf618bf0f891af2c3f389ec3063eeabc1be65b3",
+      "source_id": "src_24d31ab4e369528c94cd83ee8b636733",
+      "stored": "changelog.md-e6c9400f5c11.md",
+      "url": "https://github.com/LnYo-Cly/ai4j/blob/ba6b7973853560e961bca34f2a94d537929b2082/docs/readme/en/changelog.md"
+    }
+  ],
+  "summary": "ai4j is a JDK 8+ Java AI agentic SDK (v2.4.2 on Maven Central) with unified model access, tool calling, MCP/A2A/RAG support and a built-in coding agent CLI/TUI/ACP; APIResponse.md documents raw streaming response formats for OpenAI, DeepSeek, and Ollama models. All prior claims were verified against cited slices; one was corrected to reflect that usage arrives in a separate chunk after the finish_reason stop chunk. Evidence coverage: 111 of 306 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

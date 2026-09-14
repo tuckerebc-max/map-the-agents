@@ -1,0 +1,35 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_1ccc18ddd8e68cae3e4fd2ee444bd05a08319444c6afe30d6dfb3c14dc1ab9ce
+- clm_23d93f19f5ecee94534d13459a6bf5290ff95d3e5741b6a78fb5d88242a367a5
+- clm_2a3fbe1163656d653457f9ec061f6c77f3c4581ffbf630e1e922f0de094f116f
+- clm_38997cc2cbfdf3af116309a974924e2ed062adc0dd571e4d2788ef07a5326843
+- clm_3ccc75abee1b4f0e36a22b25efafaa3b9dccb963b40f9ca03c317709a8e2e136
+- clm_5ed7bc6629a7e07827f2433dbf8087b5df48136011956343c8b0ce94dba3c559
+- clm_5f3de0cc38e94546acbfed22f1fb44951901ab905808f8c53a90d4d1dbd2a4d3
+- clm_756a693a35619ad8f58aa2e7c0f823f7a0c150d473794119b3fc5ff0d37131e6
+- clm_801686245ff566ef93f961a193ebc759f8c7e25be9e4a3a9417941926e7a01c6
+- clm_a5bf0d2bcb8d190c2c4d8b5ce42425431c315f7b3b338d59ef4f0e5b4f17164f
+- clm_c4c409dcea5aa28520bf1df18e337500d0b2ddf7349cc920cbbdb7ea65dbd8b1
+- clm_cd85e72fd579803ed8b1f0f2ac90932cb7b9f8edbe8cf3b886f3a7dfd6ac431e
+- clm_fd507364b8f1e4ee88f7ed4f8140b78a5483457ef39af2ab55cb21ddaba326ec
+maturity: draft
+page_id: pg_6697148aa7d45025a7c8b8efc927f6f5
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: harnessworks/harness-starter-kit
+updated_at: '2026-09-14T03:56:29Z'
+---
+
+# harnessworks/harness-starter-kit
+
+<!-- rcw:begin owner=entity:ent_087e02a8382e5390a5ea5eba02bbeb80 block=evidence -->
+- harnessworks/harness-starter-kit is mentioned in this evidence. [@claim:clm_1ccc18ddd8e68cae3e4fd2ee444bd05a08319444c6afe30d6dfb3c14dc1ab9ce] [@claim:clm_23d93f19f5ecee94534d13459a6bf5290ff95d3e5741b6a78fb5d88242a367a5] [@claim:clm_2a3fbe1163656d653457f9ec061f6c77f3c4581ffbf630e1e922f0de094f116f] [@claim:clm_38997cc2cbfdf3af116309a974924e2ed062adc0dd571e4d2788ef07a5326843] [@claim:clm_3ccc75abee1b4f0e36a22b25efafaa3b9dccb963b40f9ca03c317709a8e2e136] [@claim:clm_5ed7bc6629a7e07827f2433dbf8087b5df48136011956343c8b0ce94dba3c559] [@claim:clm_5f3de0cc38e94546acbfed22f1fb44951901ab905808f8c53a90d4d1dbd2a4d3] [@claim:clm_756a693a35619ad8f58aa2e7c0f823f7a0c150d473794119b3fc5ff0d37131e6] [@claim:clm_801686245ff566ef93f961a193ebc759f8c7e25be9e4a3a9417941926e7a01c6] [@claim:clm_a5bf0d2bcb8d190c2c4d8b5ce42425431c315f7b3b338d59ef4f0e5b4f17164f] [@claim:clm_c4c409dcea5aa28520bf1df18e337500d0b2ddf7349cc920cbbdb7ea65dbd8b1] [@claim:clm_cd85e72fd579803ed8b1f0f2ac90932cb7b9f8edbe8cf3b886f3a7dfd6ac431e] [@claim:clm_fd507364b8f1e4ee88f7ed4f8140b78a5483457ef39af2ab55cb21ddaba326ec]
+<!-- rcw:end owner=entity:ent_087e02a8382e5390a5ea5eba02bbeb80 block=evidence -->
+
+## Researcher notes
+

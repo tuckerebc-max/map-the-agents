@@ -1,0 +1,589 @@
+{
+  "applied_operation_id": "op_987e24a19f284983a8708d5f9149ef60",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_66c97585ac8a651a827302d786cec72fe60923a46c914bfe5b1e9d16e5d90c54",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L28-L32"
+        },
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03681275321475c957f26a7e5c1b3173c96675001696e6f7cdf33360c5bb98b1",
+        "slc_5be8e0e40fb4dad2e094eaeaf4ad8503b51883f97bcec0951fb67d41e45f2982"
+      ],
+      "text": "The system integrates seven coding clients with one local Backend, a capability-oriented modular monolith, surrounded by six client deployment adapters, a shared runtime source layer, and an npm assembly/CLI layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_74376d914b1cfd1da92279991a398dc08c40b9d10f10db9e750b238ffd11797c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 138,
+          "line_start": 126,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L126-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cef46135aedd93bc0d236be6c5dfeb7e118f2debdd8df01078fbb2cd6d6f5aa3"
+      ],
+      "text": "The Backend owns the local memory service, repository scope, trace, lifecycle, and update scheduling, but must not own model execution, provider credentials, or native transcript creation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eaebe6aacefec997e47210a9018d2960f8b36aaeb3825a557027bbd36a4e9512",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 143,
+          "line_start": 140,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L140-L143"
+        },
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 138,
+          "line_start": 126,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L126-L138"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66155440acb02137720411fa6ea6eade849f7692e52d0ce44e31826d8ed107c5",
+        "slc_cef46135aedd93bc0d236be6c5dfeb7e118f2debdd8df01078fbb2cd6d6f5aa3"
+      ],
+      "text": "adapter-common is a shared source layer consumed by the Backend and all six adapters, providing connection primitives, credential storage, locks, and Hook transport; it is not an independently deployed service."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33c49998aa682dd0b060d2ac0b03789410322cce02f10502e48299c9b766fc10",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 165,
+          "line_start": 147,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L147-L165"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7900528e3333855ab5e0356863ac034b3545f90c3541b81d6fc1e8e16622f740"
+      ],
+      "text": "Adapter Hooks and plugins communicate with the Backend via versioned, client-qualified local HTTP commands carrying JSON and token headers, with a request deadline and optional cancellation; the transport does not retry or start the Backend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00ef1fa849729e7a115af31d85fd43cd1fb0031427e120f1f4efca65a9467d02",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 240,
+          "line_start": 235,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L235-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b6a0e0c080d93e85bc48440fb7b4af549e7b06f580ff12e163d1ddba6deeb26"
+      ],
+      "text": "Memory is divided into four categories: Coding Memory (engineering lessons), Repo Memory (repository knowledge), Personal Memory (user preferences), and Procedure Memory (reusable task steps)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e76580d4a2d5f02c2872490438c8d5dd3af395e3f83599b0b98ede8ba8bf69b",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 250,
+          "line_start": 242,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L242-L250"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fb8e5bfec5e5b8458a1a6a597e36de4841d93994efcb86455239e5592ebeb207"
+      ],
+      "text": "Personal and Procedure Memory stay in the current repository under .repo_memory/; writes compare existing content so equivalent requests make no change and conflicts update or supersede entries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a09ff5d063ad441a6116c83ff33e5750b49f3acfc6a16a9225f1e97e4c3b3e3",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 278,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L272-L278"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a6edc68a349ed51fc4b575d84d88c4fb0e2db4bb44e68a84a4d5271a65d5c361"
+      ],
+      "text": "Local trace capture is on by default for supported clients and retained traces under MEMORAX_CODE_HOME may include prompts, responses, recalled memory, reminder text, and local paths; it can be switched to metadata-only or disabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4db40c8d6b9342e787b37f5653b3f25f3dd0ce716d22e502bac1edf1c8baf3a6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 275,
+          "line_start": 262,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L262-L275"
+        },
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 309,
+          "line_start": 301,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L301-L309"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_97bf1f14eba071c8e88c5a666bf2b090eb3432f627bc419f008447d11c0eff63",
+        "slc_bd6ea307481ed01f1ec50a11c8815d32daec2dc623576a5cc535422eaa8eb105"
+      ],
+      "text": "After setup, the managed Backend schedules a detached updater that locks, resolves a channel target, installs an exact published version via the package-replacement path, and reuses non-interactive setup reconciliation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2799c9f6f086415b6b0a5f59ed65bdede1342f137fd7f8f58fdd0c7e1af1c0ae",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 387,
+          "line_start": 383,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L383-L387"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_054433d81306f9e4994532b14f9e9c680ed2605a4f33963572a405f9929a660d"
+      ],
+      "text": "Automatic Search on turn-start Hooks is disabled by default; the usual retrieval path is the client invoking memorax-cli through the shared Skill, while Hooks still provide identity, scope, and writeback coordination."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0814f36d299d52be5e1186498df052e916c8b65e0f2278c71a2e0600a0dbfa2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 56,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L55-L56"
+        },
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 61,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L58-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_be646e1a055d13b320cbb2cf835ebc41ae49c9aff6dc634f36edf67425c33cdf",
+        "slc_cb8ef916c89484587f16b9cd61592a2e425505098afbb84951fcb9387d12afda"
+      ],
+      "text": "The package requires Node.js 20 or newer (Node 24 LTS recommended), and DeepSeek Harness releases require Node ^22.19.0 || >=24.0.0 with pnpm on PATH; MemoraX Code does not install or update DSH."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dfdc7aa10d901b5177984db51d457bc54dda47d840c7823fcf94c64072fe85ea",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 66,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L63-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_581aa33d3019b1d5b2ba87a4d6541f273f167e2ff552f62f22c35f0eba3b4916"
+      ],
+      "text": "On Linux, guest credentials require /usr/bin/secret-tool from libsecret and an available Secret Service, and MemoraX search and writeback require network access."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc49aa3aba3966266d452b4e9afc40fb1dec4bea97059c7366292f6883a220ff",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 263,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L254-L263"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08b3134a7acf7c3005b81b9054f673203fafe2d3c98a7bb7962d125df4490772"
+      ],
+      "text": "Trae can use the Skill for Repo Memory but does not currently expose a headless worker for automatic Repo Memory maintenance, and automatic quota reminders are not listed for DeepSeek Harness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e496b6ef98a44ca543b57ba0e35e3d957a5960b25a0d668bc2bb8f7c576821f6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 143,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L139-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b023c9626cd1caf34569dc14466e6fedd78b96d2cf707088d3a505e33853d0c2"
+      ],
+      "text": "The MemoraX platform does not currently support attaching a Mark ID to an already-registered account, so guest users must obtain the Mark ID before registering to keep guest memory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dedbb3ef52a30450ea7d4107a30759a1d7326e42ad2b0a8731b9af85351d99f2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+          "line_end": 18,
+          "line_start": 9,
+          "path": "ARCHITECTURE.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md#L9-L18"
+        },
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 358,
+          "line_start": 356,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L356-L358"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b6645c89e29fbe5103d95f97c7ce870bbc2837cd701366a24b0b974102d8922",
+        "slc_cdc9c7cf2ea4d4fbbc152d671708fb99b6161391e538b5e1a1061c7b0b2a9c2a"
+      ],
+      "text": "Repository development practice: contributors are directed to read CONTRIBUTING.md before making changes, and AGENTS.md defines working rules for coding agents, runtime/data invariants, and Git handoff requirements."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_240adc51d6340123da53373e82062821f0b3eac1fd436951d486d551c7b93822",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 41,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L39-L41"
+        },
+        {
+          "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+          "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+          "line_end": 47,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "memorax-ai/memorax-code",
+          "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md#L43-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7ccc2f712224f21956ba56e63a3cef34e525dd2d3a1edcbf2ad6b72538188c79",
+        "slc_e3f04685270cf484fadde12f4911ccb11a6ca1aebb0837621691cf116d9f6930"
+      ],
+      "text": "The product targets the problem that new coding-agent sessions start without prior architecture knowledge, failed attempts, repository rules, or working preferences, providing a shared memory layer across supported clients."
+    }
+  ],
+  "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 362,
+        "path": "README.md",
+        "size": 17363
+      },
+      {
+        "lines": 1186,
+        "path": "ARCHITECTURE.md",
+        "size": 75443
+      },
+      {
+        "lines": 305,
+        "path": "README.zh.md",
+        "size": 16465
+      },
+      {
+        "lines": 101,
+        "path": "AGENTS.md",
+        "size": 5760
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 11
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/configuration.md",
+        "reason": "byte-budget",
+        "size": 40164
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "reason": "byte-budget",
+        "size": 30169
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 14016
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "byte-budget",
+        "size": 19186
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "byte-budget",
+        "size": 17223
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 488,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 5,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_64d1cfc23b935cfca10ae60c0bd99529",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 3,
+    "orchestration": 2,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/memorax-ai/memorax-code/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/916cf8e021cf3d6f/manifest.json",
+  "package_id": "pkg_c2491a627ff7baa3380b3f24ec6b0f8cb25c1eec0eb5b851fd67b7d02a407ada",
+  "repo": "memorax-ai/memorax-code",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0dac4a07c4c5f5bb3e21df4a0b3c975df926bbf90277d2b0d1e3e8fe4508d117",
+  "snapshot_id": "916cf8e021cf3d6f",
+  "sources": [
+    {
+      "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+      "git_sha": "05d89af50dc4e882538132d3c81195456ccad8b0",
+      "lines": 101,
+      "path": "AGENTS.md",
+      "repository": "memorax-ai/memorax-code",
+      "sha256": "0db23848c20882c4db7a02e08a2064ec34c8b12d488e8e3b677e368bda2f1e06",
+      "source_id": "src_a4623f05248e5bb5bb833a0a92169321",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/AGENTS.md"
+    },
+    {
+      "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+      "git_sha": "f2d258bfca7cfe58a13e1dfef8bec6160781bac4",
+      "lines": 1186,
+      "path": "ARCHITECTURE.md",
+      "repository": "memorax-ai/memorax-code",
+      "sha256": "f72d7a2136307f5107b429a8d69604390485aac368f60bdf2a25666d6fa90765",
+      "source_id": "src_4075b6c35e0f503fac600b7ee3dc8a2f",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/ARCHITECTURE.md"
+    },
+    {
+      "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+      "git_sha": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "memorax-ai/memorax-code",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "source_id": "src_e3179ce3f77a5ff69a0fab8b35f3f779",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/CLAUDE.md"
+    },
+    {
+      "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+      "git_sha": "500dfcd6244af236674e99c9bd6bfe13a88381f9",
+      "lines": 362,
+      "path": "README.md",
+      "repository": "memorax-ai/memorax-code",
+      "sha256": "ecb32a5ea176ce6aeedd6ff8c8723469d5a58b3d29c9392a9de4efa5ccaff056",
+      "source_id": "src_acab5a616cbc5342920196d674bce990",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.md"
+    },
+    {
+      "commit": "1525c20fbcad8c688bfaf4bb54dc117876fd6a09",
+      "git_sha": "a981f06be41c2b8750d5587ac084ead3d8d4f1e8",
+      "lines": 305,
+      "path": "README.zh.md",
+      "repository": "memorax-ai/memorax-code",
+      "sha256": "3f8f88b51f6af555dc2a0fd3ef800a6f264b8ab0269b2f91b87c83c37a0b5f17",
+      "source_id": "src_bcdd731b06d157b19a920db1b69bee3b",
+      "stored": "readme.zh.md-b024066e6d62.md",
+      "url": "https://github.com/memorax-ai/memorax-code/blob/1525c20fbcad8c688bfaf4bb54dc117876fd6a09/README.zh.md"
+    }
+  ],
+  "summary": "MemoraX Code is a local memory layer for coding-agent clients: a Backend integrates seven clients through six adapters and a shared runtime, owning local memory, repo scope, trace, lifecycle and update scheduling while excluding model execution, credentials and transcript creation. Memory splits into Coding, Repo, Personal and Procedure categories; trace capture is on by default; a detached updater installs new versions after setup; search-on-turn-start is off by default. Documented limits cover Trae's missing headless Repo Memory worker and a Mark ID registration-order restriction. CONTRIBUTING.md/AGENTS.md describe repository development practice. Evidence: 5 of 10 candidate files stored; 5 omitted by byte budget; selection incomplete.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_07941e7283cc5537c6664a9cbdb6684e709b6e6aca73079c00798d04cbb1765c
+- clm_1a61c6bf3affbd5ee427a29d6cef0746730cbe461d9726d985795a571a870a23
+- clm_26c6503b856e36742950e08568f9c4577955b2f4e801e564474b24312e854857
+- clm_34caa9bd0b96037098067c0ba8ff6edc5956e3ece8d6eb12c2350d1a52e5a45e
+- clm_4a9e3bbe1594bff4f40844302bf23ab69e1589a663b32b947bcb9912a4b61fe9
+- clm_9e621fd0bc4c175efd99f9ea05e719fb9af0fa9352787ffd444ddb15ee8664c8
+- clm_ba16adfc89c4da687f508b447d50949b9d96f4cc2da11559c22e69b4827c2d98
+- clm_cb56b6111324b0ad739d38686ac925308a7137bf519cc73c8616df03a045bd49
+- clm_eccb391f3545248fdf24cf2348ab1b8e3e621da9bf27005a39c3fc2c2dc412cb
+- clm_f2ec269f2e3f2ff7c61c91bd871c5a30fc0efc097aabfd62e96531345f02a6be
+maturity: draft
+page_id: pg_0adf3b0996545d859427a8d480927f91
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: agentsmd/agents.md
+updated_at: '2026-09-14T03:31:48Z'
+---
+
+# agentsmd/agents.md
+
+<!-- rcw:begin owner=entity:ent_fcd2d6af77e05276a648c5d9e203f3cb block=evidence -->
+- agentsmd/agents.md is mentioned in this evidence. [@claim:clm_07941e7283cc5537c6664a9cbdb6684e709b6e6aca73079c00798d04cbb1765c] [@claim:clm_1a61c6bf3affbd5ee427a29d6cef0746730cbe461d9726d985795a571a870a23] [@claim:clm_26c6503b856e36742950e08568f9c4577955b2f4e801e564474b24312e854857] [@claim:clm_34caa9bd0b96037098067c0ba8ff6edc5956e3ece8d6eb12c2350d1a52e5a45e] [@claim:clm_4a9e3bbe1594bff4f40844302bf23ab69e1589a663b32b947bcb9912a4b61fe9] [@claim:clm_9e621fd0bc4c175efd99f9ea05e719fb9af0fa9352787ffd444ddb15ee8664c8] [@claim:clm_ba16adfc89c4da687f508b447d50949b9d96f4cc2da11559c22e69b4827c2d98] [@claim:clm_cb56b6111324b0ad739d38686ac925308a7137bf519cc73c8616df03a045bd49] [@claim:clm_eccb391f3545248fdf24cf2348ab1b8e3e621da9bf27005a39c3fc2c2dc412cb] [@claim:clm_f2ec269f2e3f2ff7c61c91bd871c5a30fc0efc097aabfd62e96531345f02a6be]
+<!-- rcw:end owner=entity:ent_fcd2d6af77e05276a648c5d9e203f3cb block=evidence -->
+
+## Researcher notes
+

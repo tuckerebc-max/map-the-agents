@@ -1,0 +1,742 @@
+{
+  "applied_operation_id": "op_f745e14e516f419187c8cc5f880c5dca",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_720eadb3d73bff0c01e74aff78010d7cfb6f96e61e5d1eced3b77b3aa8ad18d3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 76,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L69-L76"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 87,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L84-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_364d82932258c48ef3c4833c15f7db458abc12ced64419d1fdba65dbb4fb18ca",
+        "slc_4839394e7ff52f55af2a0e0025c368f16c5555e03c36b4b38a926866e090aa82"
+      ],
+      "text": "The CLI supports headless runs via --prompt with options such as --directory, --max-tool-rounds, --format json, --batch-api, and --verify, plus session resume via --session latest or -s <session-id>."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_772592f622254d3f4d5f65a72eeb45a5afec243c0df5f6bc01aa05c8bbb1dff9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 99,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L97-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e47f5be60f2bdeab815f26356b28883a1d924c2cdf9ff01d9fa3982177511c1d"
+      ],
+      "text": "With --format json, headless output becomes a newline-delimited JSON event stream of semantic step-level events such as step_start, text, tool_use, step_finish, and error."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8dd8f3b871e79ebd3edf1dafa5c326d4a5f07da3101c0a21288d8c2b8d4bc3a4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 315,
+          "line_start": 315,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L315-L315"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 292,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L292-L292"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e5f0152f9005f8574da6b3eb9c172b6ebb5cf3ce4875f1f141ec410ea4cc11f",
+        "slc_bbbf9e4e59d7e41499555504a3033c30c40c650db1f714799b72ad92e4dc0d40"
+      ],
+      "text": "Hooks run shell commands at agent lifecycle events; they receive JSON on stdin, may return JSON on stdout, and exit code 2 blocks the action while 0 means success and other codes are non-blocking errors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03829a4f3259cf090343119f6ccc36de4346e472ebe32899a8c0cdce55a8e2f9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 317,
+          "line_start": 317,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L317-L317"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1071c782fd90d40eebce29db02a96484436a52c13a1236227b141c0174618015"
+      ],
+      "text": "Supported hook events include PreToolUse, PostToolUse, PostToolUseFailure, UserPromptSubmit, SessionStart/End, Stop, SubagentStart/Stop, TaskCreated/Completed, PreCompact/PostCompact, Notification, InstructionsLoaded, and CwdChanged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_983d49c4d23c0e452aa3a1b851fb0c8216284d5325f60094bf0b319aa7efc534",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 323,
+          "line_start": 323,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L323-L323"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6c5091e22bfbe01dd777d1619b6ebccf781bec32b2471787b5a7f1b191e9198a"
+      ],
+      "text": "AGENTS.md instruction files are merged from the git root down to the working directory, with AGENTS.override.md taking precedence per directory when present."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c78e122b4b492ec65e39bd9ee0129cfe52b00171e12e9f7fb97026009a7dda36",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 238,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L238-L238"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 236,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L226-L236"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 224,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L224-L224"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2885ebfd8473c3c51fb2ef45189a88a3146672c33e4218401aeddeb3498515e7",
+        "slc_300b7e94dadf3613e4e4c065dd39b4b9f093f448f9fde49eb8248aa6579ea35b",
+        "slc_3a3276c52b9466e224e202462eb5ea244e0e6427ce897f0901d736060e8a685e"
+      ],
+      "text": "Custom sub-agents can be defined in user settings with name, model, and instruction; the names general, explore, vision, verify, and computer are reserved for built-in sub-agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fe4d29e3e097ed3063fbc08ddd6b6089157047a84bd0299b414f710f0da48e6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 119,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L114-L119"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L103-L103"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7b88efb92051e4a992760c616150790992ec9a05b1bab160afe54646dca7f074",
+        "slc_7b8be5b34fcc6e8c419f73735ec3ef341eb383374b462ca252c4834af3808903"
+      ],
+      "text": "A built-in computer sub-agent backed by agent-desktop performs host desktop automation on macOS via a snapshot-refs-action-snapshot workflow with tools like computer_snapshot, computer_click, computer_type, and computer_scroll; screenshots default to .grok/computer/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_43d4ab2ca7cca9133f6b1336c5f7bec116c65db73f6ffb10d352e89e0fa29002",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 167,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L165-L167"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 189,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L174-L189"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8ef6f14292256fd37fef87dbb88c586ff788b9188769449c19c011a1cfab2b83",
+        "slc_db0cb9e1fa2093e7b8d6d57543f47be78cf4f6e3c15e31d36ff7402a24b554b3"
+      ],
+      "text": "Built-in tools include search_x and search_web for live X/web search and generate_image/generate_video for media generation, with generated files saved locally under .grok/generated-media/ by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6df113290d79359c52fe6f4d5675c654ec59ba34655f844ab79bc110b228973d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L11-L11"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 189,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L174-L189"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a8526db55916ac0c8fe2f2c08f983f86286037ecb778fecacbeda1bc6c6b814",
+        "slc_db0cb9e1fa2093e7b8d6d57543f47be78cf4f6e3c15e31d36ff7402a24b554b3"
+      ],
+      "text": "Sub-agents are on by default: foreground task delegation (e.g. explore, general, computer) plus background delegate for read-only deep dives."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3ed30d868d173884f8d1bb456f80f6f165ff808c942fb7593d486db908b0f74",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 349,
+          "line_start": 345,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L345-L349"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 335,
+          "line_start": 335,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L335-L335"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 339,
+          "line_start": 339,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L339-L339"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2387948944cb6dd8deea30cc146ba600e7709f5fcfcada4afd4e782999d737c9",
+        "slc_317da370430a0165c2c34d8be004aeeaa6f0e39091dbbc5eebfd65e107aae508",
+        "slc_f07f596d6b83686c5e07e2aa34f17b528b7c6c8e6541f62a54e98013aa9dad99"
+      ],
+      "text": "Shell commands can run inside a Shuru microVM sandbox (--sandbox or /sandbox) isolating host filesystem and network; network is off by default with --allow-net/--allow-host controls, plus port forwards, resource limits, checkpoints, and secret injection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95fdb205625ec2c164299ab0a7129d382c7d6c533b3618ba11aabd1a47ccd2a1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 439,
+          "line_start": 439,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L439-L439"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 441,
+          "line_start": 441,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L441-L441"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 337,
+          "line_start": 337,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L337-L337"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33c726eaf910835bd49882b42f6466505a49ae78eb8759bda0c93f212395d2c7",
+        "slc_6de91380770b07e357c463b4463748deaf44c1fa989235b30195eb56e572dead",
+        "slc_fa11324bd8594c9723677f6a932095cc5c16c42fc57b0e6e275071a16494fef6"
+      ],
+      "text": "Sandbox mode requires macOS 14+ on Apple Silicon and is unavailable on Intel Macs or Linux, per the troubleshooting section."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b55ebd2e3523c0ed4f8a89e25e7d7b4c68ff97c5f2b654efcf0840d0b2e89d8",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 454,
+          "line_start": 453,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L453-L454"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 87,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L84-L87"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L89-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_195483dc2a529e630923f63516fbb59380177507ec30dfcd8e0e23d96f2dd5c2",
+        "slc_4839394e7ff52f55af2a0e0025c368f16c5555e03c36b4b38a926866e090aa82",
+        "slc_9d90a5d5a76f8524c1733a739536af244e6c5caf3ac73abd7c436baed78aa7f3"
+      ],
+      "text": "Sessions can be resumed with 'grok --session latest' or 'grok -s <session-id>' (also in interactive mode), and /compact in the TUI compresses accumulated conversation history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59ac30e9da55799033c86a6b84113b6ffaf04133479b294c6db16b3c107de8e7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 7,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L3-L7"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L11-L11"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L19-L21"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 103,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L103-L103"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 27,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L25-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1650b1b7f58451cfc5bf92db10b93b29de27782c21e0584218974b78da333d09",
+        "slc_4a8526db55916ac0c8fe2f2c08f983f86286037ecb778fecacbeda1bc6c6b814",
+        "slc_4af77c3bec03c4260ed93f65b09a2799d19a28d07c50b03e9833cb5b43a45ba3",
+        "slc_7b8be5b34fcc6e8c419f73735ec3ef341eb383374b462ca252c4834af3808903",
+        "slc_925a08047cc0cd8e279ec782f98b36ba6e03ace311faa49531c0323c86d940a0"
+      ],
+      "text": "The tool is built with TypeScript and Bun with an OpenTUI terminal UI, installs via a curl install script or 'bun add -g grok-dev', and the computer sub-agent depends on the agent-desktop package."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0aa93efb84d3bf0fa4dfed75245f69da5d7283d3e2222d541d46879e2e9b0fa4",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "3d10530c6627da17b703bd81026953e0bc785c86",
+          "line_end": 17,
+          "line_start": 15,
+          "path": "CHANGELOG.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/CHANGELOG.md#L15-L17"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 253,
+          "line_start": 253,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L253-L253"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b30d1768b98be6207af92c807b1c9209392d085f3738aa5b7be4b2ef562f8440",
+        "slc_b6b63e4b0dbae814c4ee6fa9dbbbfb451f2ebceb73735a284b0ded0104211b93"
+      ],
+      "text": "Telegram voice notes are transcribed via xAI's Grok Speech-to-Text endpoint (/v1/stt), which replaced whisper.cpp and removed local whisper-cli, ffmpeg, and model-download requirements."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_06e3f87ab4cfbb15482aa1a7e4428ba0404b412939af7feec403441a6b643dee",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 249,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L246-L249"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 430,
+          "line_start": 428,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L428-L430"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 284,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L282-L284"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_232bac7a2877fec4eb40c62bd61504c2ee412f0edbef813fa8d368db40afa8ea",
+        "slc_b44168d74e894de62ad00eb0809b7c8380632d552fc8d3d659e738d481fabfd0",
+        "slc_bfda07ceca92248a881a9c856197d0b188a32420707568a7c1e983d5dc0e4a41"
+      ],
+      "text": "Telegram remote control pairs a bot via /pair with a 6-character code; long polling lives in the CLI process, which must keep running, and a headless 'grok telegram-bridge' flow exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c50665aa9b9eba0243af54593c33f130f0370d9e3ec11bb79190f1e9afcc7b78",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L9-L9"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 490,
+          "line_start": 490,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L490-L490"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 496,
+          "line_start": 496,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L496-L496"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06538354f7a9551c5745d5d0e0b6751757b0b669105ce486ab209ad2175faa06",
+        "slc_7e5f514062c9e1d055a4d53bf4833d3291c33a94ffb566d30944cdf12a0fd81c",
+        "slc_f81e1ca9e324bc5da5dae92caad742b808953af0c6c601e45dc30f3654e60c4d"
+      ],
+      "text": "The project is community-built, open-source, MIT-licensed, and explicitly not affiliated with or endorsed by xAI Corp, using the publicly available Grok API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc26bcb2246c560dccc8b066609a697f31df1ee359b5792679e3a7c158872ae2",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 355,
+          "line_start": 355,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L355-L355"
+        },
+        {
+          "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+          "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+          "line_end": 362,
+          "line_start": 362,
+          "path": "README.md",
+          "repository": "superagent-ai/grok-cli",
+          "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md#L362-L362"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7addaab4ce6eedff5747e0f22dd43f82f0921be9102e80a51d4c6462f8c1811d",
+        "slc_970b73103db9635dbbf4ca78983ef3b9742ef7747804679f6868be70533cfea2"
+      ],
+      "text": "No agent-performance benchmark or scored eval harness appears in the provided evidence; the --verify command produces build/run verification reports with screenshots and video, which is a runtime feature rather than a scored evaluation."
+    }
+  ],
+  "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 496,
+        "path": "README.md",
+        "size": 18853
+      },
+      {
+        "lines": 30,
+        "path": "AGENTS.md",
+        "size": 2106
+      },
+      {
+        "lines": 154,
+        "path": "CHANGELOG.md",
+        "size": 3814
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 175,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_675a15753f2f544986d5304a632ad9b3",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 0,
+    "evaluation": 1,
+    "interfaces": 6,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/superagent-ai/grok-cli/fb97af83f06dca873281d60168430f06c8de6324/d13dd57301adcd9f/manifest.json",
+  "package_id": "pkg_75ca0676b96639c3170518e2e47436fcb974d43bf41bd82b14b7c9bbdddf8437",
+  "repo": "superagent-ai/grok-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "447a4e1fc5089c9ed490fef14ec9d94fb3e6fc3a9a1a3050ba0297167a47885b",
+  "snapshot_id": "d13dd57301adcd9f",
+  "sources": [
+    {
+      "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+      "git_sha": "236be48698684e1c9bcbecee7a26f2d98e06b62b",
+      "lines": 30,
+      "path": "AGENTS.md",
+      "repository": "superagent-ai/grok-cli",
+      "sha256": "7b37803590da1833c9255b018de62b5d7bebd6a14d8a074797c2b8736e544933",
+      "source_id": "src_4b472260bf5857e4b22276e8909a40e5",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/AGENTS.md"
+    },
+    {
+      "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+      "git_sha": "3d10530c6627da17b703bd81026953e0bc785c86",
+      "lines": 154,
+      "path": "CHANGELOG.md",
+      "repository": "superagent-ai/grok-cli",
+      "sha256": "e18a338c0526954c8087de69bf4c20e16d75d22c5a0a5523e99cbcb3816e13bb",
+      "source_id": "src_664a06fbc6915a98b8c514d0603aff7c",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/CHANGELOG.md"
+    },
+    {
+      "commit": "fb97af83f06dca873281d60168430f06c8de6324",
+      "git_sha": "c103debfdd3d02eca7b92138f28c444004be4d88",
+      "lines": 496,
+      "path": "README.md",
+      "repository": "superagent-ai/grok-cli",
+      "sha256": "937bb00f20aa30e04f8863191586fdfa2cfafed1656998d237d8632b55240bee",
+      "source_id": "src_8c0f030103a05f6a8219658194ab69bd",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/superagent-ai/grok-cli/blob/fb97af83f06dca873281d60168430f06c8de6324/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The CLI supports headless runs via --prompt with options such as --directory, --max-tool-rounds, --format json, --batch-api, and --verify, plus session resume via --session latest or -s <session-id>. With --format json, headless output becomes a newline-delimited JSON event stream of semantic step-level events such as step_start, text, tool_use, step_finish, and error.",
+  "superseded_claim_ids": []
+}

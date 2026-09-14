@@ -1,0 +1,1795 @@
+{
+  "applied_operation_id": "op_440a939d464c4469953f2da01ff19bb2",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_398429fd77078216e050041812640bbc8965511e7f55d0e0f3d041d4f761a2d5",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L7-L7"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_020b7ce29d54eb26ca9fb0a1a469df35caaacd7085313e7908ede1ccc85fdc0a",
+        "slc_e4e2785a50f2285467de6dc48e48af31c7036fdbf2959b42e51fa0c893239c2e"
+      ],
+      "text": "Loushang is described as a method-native AI work system for running complex work from intent to verified delivery, with the current focus on a coding CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b80c839ff4fe94da270af5359e37313e09a844637af63371223825f0f54a925",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_856bde11a7515a283aaed48506d066437027912c1d1502053913814458e70559"
+      ],
+      "text": "The system is organized into named layers: method (work contract), work (runtime fact), agent (execution kernel), ai (model access), harness (substrate), coding (V1 surface), tui, and channel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5d20332662bed4cd17db01f11749498d0cee804c323974803fdfeaf0e9285be",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 42,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L38-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3bde716fbc97494b572460406808a846444753b9f1f0caece21f108cfb6fdd36"
+      ],
+      "text": "The CLI exposes flags such as --help, --list-models, and --list-commands, and supports a prompt mode like `loushang -p \"...\"` for one-shot requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0fc68fde52d563550c27d6e11d9e914f76e1dd35ea55c1d3430629e4f85c4526",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 24,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L19-L24"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 54,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L50-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef262340d3c4a0744e10c7a2a741ac02b09338acc8b1a6e49b536a4e70d622b4",
+        "slc_ef88b47645f78d578c048c4b6519005257dce370c7fedd43a536b5b09b8cdd4d"
+      ],
+      "text": "Sessions are durable coding conversations that can be resumed, forked, exported, and inspected, with diagnostics available."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_42db6cd5c884fa23bd3ce3a04528b19747e16c2ce8ef2b2e014b0f81a33ee28d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 24,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L19-L24"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 54,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L50-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef262340d3c4a0744e10c7a2a741ac02b09338acc8b1a6e49b536a4e70d622b4",
+        "slc_ef88b47645f78d578c048c4b6519005257dce370c7fedd43a536b5b09b8cdd4d"
+      ],
+      "text": "Tools are defined as executable capabilities made available to the agent under policy, and the product offers built-in coding tools plus configurable tool surfaces."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f57466bc7d9cd4e5ff7b201c2023c3995ad5eab8888f97437363b9fbf064a200",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L45-L48"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 43,
+          "line_start": 43,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L43-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bc5ad575567c62af6b7894c239c27d1cab995992de594a4e7ffd04f984d8ee7",
+        "slc_d74f30fd287616c2a1543e128efe4ba3300c58b0b2bd27a956b833394c02c323"
+      ],
+      "text": "The accepted plugin architecture treats a Plugin as an independently selectable activation identity grouping typed contributions, distinct from Capability, Skill, Tool, Extension, or process."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57338955f7519da31ab6a1dcd5465cb40648e912aefd623b7fa5beed8ccc6c63",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 104,
+          "line_start": 101,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L101-L104"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 108,
+          "line_start": 106,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L106-L108"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_174279e3d3d8d00867734b3b97749d7194b34040df63f7a459ccc22f930f0563",
+        "slc_a6dca30841e78f381ad0072c4f99673edcec9329bdde8329cdca05ab42fc3d6f"
+      ],
+      "text": "Plugin discovery, inspection, dependency solving, and selection operate on inert serializable data and never import modules or run scripts; execution starts only after revalidation of revision, scope, authority, and approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c3d4b2a534ce839726525a6c572f1d41238c45bcc6a2a19fec109f3b76197c02",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 116,
+          "line_start": 112,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L112-L116"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cc69c2696c4ea51fcafea578fba000e976cbc53937f439626b2d142fe6b63f23"
+      ],
+      "text": "Manifests may request authority but cannot grant it, self-mark trust, choose sandbox exemptions, or widen product policy; trust is evaluated by Host-owned policy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d80b16e83656ad4a5d617dafcf0a548c425635363c621e570fb4dce15ac9c91d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 176,
+          "line_start": 167,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L167-L176"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 165,
+          "line_start": 164,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L164-L165"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 183,
+          "line_start": 178,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L178-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3ba2d6511e059212ab1b8d188c96a3d96372fe9484bce8f054e46184f2fd11f2",
+        "slc_5163dbe5a8b9d090a6f07a04dc9139e7c95a8aa288db119d975d1e2b2f79fbcd",
+        "slc_720eafe816a73464898cc0c5ff0d0751070a07ffecdbca9bff26a8dff499d5ae"
+      ],
+      "text": "The architecture keeps declaration axes independent (artifact, identity, contribution, capability, execution topology, trust, lifetime, scope), so resource/capability/worker/remote are not Plugin types."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36850e209d5ad562c9fe5522e7deaea9b40cf63a15c48000e5c727f292e347ec",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 235,
+          "line_start": 233,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L233-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_996ca0e004e37c24cb80cd971181f46f66032b9df970ceaa5369f0c61b53929f"
+      ],
+      "text": "The agent loop remains owned by loushang.agent; plugins may contribute tools, resources, capability providers, and adapters but cannot replace its state machine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e2d1c9d73000aa14376b7b18de478a16a07b0660ca1443fbd71c2d37e4f7530",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 30,
+          "line_start": 5,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L5-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f6b4937233a801694afca7a932468308eb6494affa623ad518d3e76021ac08fa"
+      ],
+      "text": "The plugin architecture document states implementation is partial: strict codecs, ledgers, and some coding paths exist, while the public SDK, managed Skill actions, and isolated Plugin Workers remain future delivery work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d164e60f352336836b10738691eba4c0ee9e4baa87d510a87a9a5665f00db23",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 309,
+          "line_start": 305,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L305-L309"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8097e3af199b6c8195eb161bde3a3497a028c453548ba6bf3a0efccfbcc8be1f"
+      ],
+      "text": "The current PyPI materializer can invoke uv pip install/pip install without wheel-only or contained build service, which the document calls an explicit current security gap for untrusted plugin admission."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6aa6fda4581943d3b9bece0fa2d52aa2b67e2bcf99086b34e0482a972f63d90",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L34-L36"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L28-L28"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40c1c474c69791da9fe1fd502676855c7b498cf4f2ec60d48addf971e38b3720",
+        "slc_d72c9b055abf49f1b266e5a366ece5b4f2a18007cff23797afeadcceaf3ae3e8",
+        "slc_fc6d4109bd4af42c11affea1ddf957b982128dcfddc881c6ecd1359c229e3ad7"
+      ],
+      "text": "Repository development practice: the recommended way to run Loushang is from source via git clone, a uv-created .venv, and editable install with the dev extra; `make bootstrap` automates this and no `make install` target exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db479b2adfa4034bcbfe216baf5a4cb738155f64a63a478793da4855d3dbea29",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 36,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L34-L36"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 101,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L101-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40c1c474c69791da9fe1fd502676855c7b498cf4f2ec60d48addf971e38b3720",
+        "slc_9f2a02279b8f1e0739bce0fa9744d158b9a0aed193480e2f688b472e6e625803"
+      ],
+      "text": "The project uses uv for virtual environment creation and pip-style editable installation with a [dev] extra, and third-party dependency information is documented in THIRD_PARTY_NOTICES.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ce0c26e1443a55dcd3d480879215783cda2d0eb8cd3edf9da5c64f2c5156e9f6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L81-L81"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bfe3f95642bbbb2fa61453f85953a57480aa05fd03ab2cd699980206cfc6f891",
+        "slc_d82e33bc3cb6faca78604a31ae3f1135ac6ea10d6d56cd041a705ae903d2b4e2"
+      ],
+      "text": "Loushang is in active early development; the stable focus is loushang code and the loushang.ai SDK, while work/research/ppt surfaces are roadmap directions only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cb197ff0b99e1c364b2a8cf847282e21d897324035c16dd0492420229308cf7f",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 459,
+          "line_start": 455,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L455-L459"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 485,
+          "line_start": 481,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L481-L485"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 472,
+          "line_start": 469,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L469-L472"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e2cf709b4ab2322f75bd3586ccfa839c533002a2500a47f3f1aa76b7321a94c",
+        "slc_a3782416b2176a6af9863ebbbb7d8e9de0c748b33445e30817621729eaf0c0a3",
+        "slc_bc555720fc96910a8248e36e3cec47a1ee82f9572e7734a7eb70fa927d41bcf7"
+      ],
+      "text": "Skills are typed Resource projections containing instructions, metadata, assets, and optional scripts; script existence grants no execution authority, and the catalog/Skill parser never executes scripts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6f20407cb0f47be747b4458f6e55972ef3308f67b300aaa3bd564eede04c21d6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 610,
+          "line_start": 607,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L607-L610"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 621,
+          "line_start": 612,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L612-L621"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_140184852c2a9425da5a22d7968b2ef842861034904e91e0d10284c5873098de",
+        "slc_225a5b9a692af0ca1e2fc976519a04e1068fac7240e86be310650bc3c5e383de"
+      ],
+      "text": "The threat model assumes plugins and dependencies may be malicious or compromised, and mandates fail-closed handling of traversal, symlink escape, approval replay, stale IPC, and output floods."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4ea3da642146da12e478885cc91159d3e75f10232bd0e13e8eca10027f2060d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 546,
+          "line_start": 544,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L544-L546"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 560,
+          "line_start": 556,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L556-L560"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 554,
+          "line_start": 548,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L548-L554"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_77c20a37ae22d53b7f9a15cfb3777ee638c75cd94f19b1a6dd840b4d2e34711b",
+        "slc_d2c8c6d7d3a8618fdf39a1929570ef0e6a4b99c5182520f63bfb7653dadab85d",
+        "slc_e1ff273acdd9d96acfeae78c9b18cd46e4cb051c2f9e0676defd668e8d64af37"
+      ],
+      "text": "Process isolation is treated as distinct from security isolation: Policy, Approval, Sandbox, Host, and Domain are separate axes, and required containment fails closed before spawn."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3bca7e114ba718fa0234897b938aadf034bdf90c90018b1de224e77f933eec5d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 329,
+          "line_start": 324,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L324-L329"
+        },
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+          "line_end": 320,
+          "line_start": 313,
+          "path": "docs/internals/architecture/harness/plugin/architecture.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md#L313-L320"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7b7e325b9b9242f08e6bb1b577cd76e42538e2be89274ca1c1bdb15961fff556",
+        "slc_90727da35111e109c384221bcff1e53b3bd3000959e8c609b9285ec0b1748804"
+      ],
+      "text": "The plugin runtime manifest is a strict plugin.json carrying identity, version, engine range, contribution index, configuration schema, dependencies, requested authority, and execution topology."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d428b6c2a8c8ab8f42e7ca5cd2982410a2a09c712538d9823e70ecdbb1098b01",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+          "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+          "line_end": 24,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "zhnt/loushang",
+          "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md#L19-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef262340d3c4a0744e10c7a2a741ac02b09338acc8b1a6e49b536a4e70d622b4"
+      ],
+      "text": "The loushang.ai SDK appears to provide provider-aware model access with a model registry, streaming, tool calls, and cost helpers, per the README feature list."
+    }
+  ],
+  "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 101,
+        "path": "README.md",
+        "size": 5305
+      },
+      {
+        "lines": 122,
+        "path": "docs/internals/architecture/coding/component-interfaces/tools.md",
+        "size": 7938
+      },
+      {
+        "lines": 64,
+        "path": "docs/internals/architecture/coding/component-interfaces/workflow.md",
+        "size": 1331
+      },
+      {
+        "lines": 877,
+        "path": "docs/internals/architecture/harness/plugin/architecture.md",
+        "size": 48130
+      },
+      {
+        "lines": 101,
+        "path": "README.zh-CN.md",
+        "size": 5044
+      },
+      {
+        "lines": 28,
+        "path": "THIRD_PARTY_NOTICES.md",
+        "size": 1380
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 150
+      },
+      {
+        "path": "docs/auth/oauth.md",
+        "reason": "file-budget",
+        "size": 8238
+      },
+      {
+        "path": "docs/en/README.md",
+        "reason": "file-budget",
+        "size": 1110
+      },
+      {
+        "path": "docs/en/roadmap.md",
+        "reason": "file-budget",
+        "size": 876
+      },
+      {
+        "path": "docs/internals/README.md",
+        "reason": "file-budget",
+        "size": 2256
+      },
+      {
+        "path": "docs/zh-CN/README.md",
+        "reason": "file-budget",
+        "size": 1069
+      },
+      {
+        "path": "docs/zh-CN/roadmap.md",
+        "reason": "file-budget",
+        "size": 859
+      },
+      {
+        "path": "docs/en/concepts/README.md",
+        "reason": "file-budget",
+        "size": 1632
+      },
+      {
+        "path": "docs/en/examples/README.md",
+        "reason": "file-budget",
+        "size": 813
+      },
+      {
+        "path": "docs/en/getting-started/README.md",
+        "reason": "file-budget",
+        "size": 1998
+      },
+      {
+        "path": "docs/en/reference/README.md",
+        "reason": "file-budget",
+        "size": 4098
+      },
+      {
+        "path": "docs/en/reference/tui-editing.md",
+        "reason": "file-budget",
+        "size": 11504
+      },
+      {
+        "path": "docs/en/reference/tui-runner.md",
+        "reason": "file-budget",
+        "size": 3245
+      },
+      {
+        "path": "docs/en/reference/tui-widgets.md",
+        "reason": "file-budget",
+        "size": 22050
+      },
+      {
+        "path": "docs/en/sdk/README.md",
+        "reason": "file-budget",
+        "size": 9224
+      },
+      {
+        "path": "docs/en/user-guide/README.md",
+        "reason": "file-budget",
+        "size": 10846
+      },
+      {
+        "path": "docs/en/user-guide/tui.md",
+        "reason": "file-budget",
+        "size": 4648
+      },
+      {
+        "path": "docs/internals/architecture-method/architecture-decisions.md",
+        "reason": "file-budget",
+        "size": 10052
+      },
+      {
+        "path": "docs/internals/architecture-method/architecture-review.md",
+        "reason": "file-budget",
+        "size": 12706
+      },
+      {
+        "path": "docs/internals/architecture-method/artifact-model.md",
+        "reason": "file-budget",
+        "size": 11290
+      },
+      {
+        "path": "docs/internals/architecture-method/change-tailoring.md",
+        "reason": "file-budget",
+        "size": 6169
+      },
+      {
+        "path": "docs/internals/architecture-method/component-design.md",
+        "reason": "file-budget",
+        "size": 10364
+      },
+      {
+        "path": "docs/internals/architecture-method/component-identification.md",
+        "reason": "file-budget",
+        "size": 19237
+      },
+      {
+        "path": "docs/internals/architecture-method/deployment-views.md",
+        "reason": "file-budget",
+        "size": 9814
+      },
+      {
+        "path": "docs/internals/architecture-method/design-guidance.md",
+        "reason": "file-budget",
+        "size": 5921
+      },
+      {
+        "path": "docs/internals/architecture-method/domain-data-modeling.md",
+        "reason": "file-budget",
+        "size": 10575
+      },
+      {
+        "path": "docs/internals/architecture-method/key-designs.md",
+        "reason": "file-budget",
+        "size": 8424
+      },
+      {
+        "path": "docs/internals/architecture-method/README.md",
+        "reason": "file-budget",
+        "size": 56092
+      },
+      {
+        "path": "docs/internals/architecture-method/verification-and-validation.md",
+        "reason": "file-budget",
+        "size": 3542
+      },
+      {
+        "path": "docs/internals/architecture/architecture-overview.md",
+        "reason": "file-budget",
+        "size": 15690
+      },
+      {
+        "path": "docs/internals/architecture/current-target-gap-ledger.md",
+        "reason": "file-budget",
+        "size": 8823
+      },
+      {
+        "path": "docs/internals/architecture/governance-profile.md",
+        "reason": "file-budget",
+        "size": 9162
+      },
+      {
+        "path": "docs/internals/architecture/loushang-architecture-principles.md",
+        "reason": "file-budget",
+        "size": 16965
+      },
+      {
+        "path": "docs/internals/architecture/loushang-design-method-python-dev-environment.md",
+        "reason": "file-budget",
+        "size": 8353
+      },
+      {
+        "path": "docs/internals/architecture/loushang-dev-workflow-and-tooling.md",
+        "reason": "file-budget",
+        "size": 9156
+      },
+      {
+        "path": "docs/internals/architecture/loushang-documentation-model.md",
+        "reason": "file-budget",
+        "size": 697
+      },
+      {
+        "path": "docs/internals/architecture/loushang-monorepo-conventions.md",
+        "reason": "file-budget",
+        "size": 8892
+      },
+      {
+        "path": "docs/internals/architecture/README.md",
+        "reason": "file-budget",
+        "size": 12725
+      },
+      {
+        "path": "docs/internals/architecture/subsystem-diagram.md",
+        "reason": "file-budget",
+        "size": 4151
+      },
+      {
+        "path": "docs/internals/architecture/subsystem.md",
+        "reason": "file-budget",
+        "size": 26632
+      },
+      {
+        "path": "docs/internals/experimental/README.md",
+        "reason": "file-budget",
+        "size": 2985
+      },
+      {
+        "path": "docs/internals/glossary/loushang-agent-types.md",
+        "reason": "file-budget",
+        "size": 8056
+      },
+      {
+        "path": "docs/internals/glossary/loushang-agent.md",
+        "reason": "file-budget",
+        "size": 8856
+      },
+      {
+        "path": "docs/internals/glossary/loushang-ai-types.md",
+        "reason": "file-budget",
+        "size": 13576
+      },
+      {
+        "path": "docs/internals/glossary/loushang-ai.md",
+        "reason": "file-budget",
+        "size": 8205
+      },
+      {
+        "path": "docs/internals/glossary/loushang-channel.md",
+        "reason": "file-budget",
+        "size": 4333
+      },
+      {
+        "path": "docs/internals/glossary/loushang-design-implementation-difference.md",
+        "reason": "file-budget",
+        "size": 1479
+      },
+      {
+        "path": "docs/internals/glossary/loushang-product-zh.md",
+        "reason": "file-budget",
+        "size": 16910
+      },
+      {
+        "path": "docs/internals/glossary/loushang-product.md",
+        "reason": "file-budget",
+        "size": 35755
+      },
+      {
+        "path": "docs/internals/legacy/loushang-channel-boundary-protocol.md",
+        "reason": "file-budget",
+        "size": 9520
+      },
+      {
+        "path": "docs/internals/legacy/position-paper-software-as-system-science.md",
+        "reason": "file-budget",
+        "size": 31104
+      },
+      {
+        "path": "docs/internals/legacy/README.md",
+        "reason": "file-budget",
+        "size": 916
+      },
+      {
+        "path": "docs/internals/legacy/session-controller-architecture.md",
+        "reason": "file-budget",
+        "size": 19512
+      },
+      {
+        "path": "docs/internals/plans/2026-06-03-public-docs-bilingual.md",
+        "reason": "file-budget",
+        "size": 3929
+      },
+      {
+        "path": "docs/internals/plans/2026-06-04-tui-editor-buffer-refactor.md",
+        "reason": "file-budget",
+        "size": 6830
+      },
+      {
+        "path": "docs/internals/plans/2026-06-06-v1-code-hardening-native-tui-control.md",
+        "reason": "file-budget",
+        "size": 7481
+      },
+      {
+        "path": "docs/internals/plans/2026-06-20-loushang-ai-quality-hardening-charter.md",
+        "reason": "file-budget",
+        "size": 5629
+      },
+      {
+        "path": "docs/internals/plans/2026-06-20-loushang-ai-quality-hardening-execution-plan.md",
+        "reason": "file-budget",
+        "size": 56817
+      },
+      {
+        "path": "docs/internals/plans/2026-06-24-loushang-ai-core-freeze-goal.md",
+        "reason": "file-budget",
+        "size": 46345
+      },
+      {
+        "path": "docs/internals/plans/2026-07-14-product-configuration-runtime.md",
+        "reason": "file-budget",
+        "size": 5514
+      },
+      {
+        "path": "docs/internals/plans/2026-08-15-model-input-persistence-capacity-recovery.md",
+        "reason": "file-budget",
+        "size": 16379
+      },
+      {
+        "path": "docs/internals/plans/README.md",
+        "reason": "file-budget",
+        "size": 1034
+      },
+      {
+        "path": "docs/internals/specs/2026-05-16-loushang-coding-print-mode-json-stream-design.md",
+        "reason": "file-budget",
+        "size": 8225
+      },
+      {
+        "path": "docs/internals/specs/2026-05-16-loushang-coding-print-mode-p0-design.md",
+        "reason": "file-budget",
+        "size": 5840
+      },
+      {
+        "path": "docs/internals/specs/2026-05-16-loushang-coding-resource-extensibility-p0-design.md",
+        "reason": "file-budget",
+        "size": 13668
+      },
+      {
+        "path": "docs/internals/specs/2026-05-18-loushang-coding-branch-summary-orchestration-design.md",
+        "reason": "file-budget",
+        "size": 8204
+      },
+      {
+        "path": "docs/internals/specs/2026-05-18-loushang-coding-built-in-tool-family-expansion-design.md",
+        "reason": "file-budget",
+        "size": 15689
+      },
+      {
+        "path": "docs/internals/specs/2026-05-18-loushang-coding-diagnostics-service-v1-design.md",
+        "reason": "file-budget",
+        "size": 2627
+      },
+      {
+        "path": "docs/internals/specs/2026-05-18-loushang-coding-retry-state-machine-design.md",
+        "reason": "file-budget",
+        "size": 3654
+      },
+      {
+        "path": "docs/internals/specs/2026-05-18-loushang-coding-tool-definition-centered-tool-authoring-design.md",
+        "reason": "file-budget",
+        "size": 11133
+      },
+      {
+        "path": "docs/internals/specs/2026-05-19-loushang-coding-resource-loader-package-ready-substrate-design.md",
+        "reason": "file-budget",
+        "size": 18799
+      },
+      {
+        "path": "docs/internals/specs/2026-05-19-loushang-coding-session-product-surface-and-rich-export-design.md",
+        "reason": "file-budget",
+        "size": 8969
+      },
+      {
+        "path": "docs/internals/specs/2026-05-19-loushang-coding-tools-substrate-hardening-and-pi-aligned-file-tool-semantics-design.md",
+        "reason": "file-budget",
+        "size": 11695
+      },
+      {
+        "path": "docs/internals/specs/2026-05-20-loushang-coding-resource-loader-phase2-precedence-and-collision-design.md",
+        "reason": "file-budget",
+        "size": 11669
+      },
+      {
+        "path": "docs/internals/specs/2026-05-21-loushang-coding-command-plane-pi-alignment-design.md",
+        "reason": "file-budget",
+        "size": 16785
+      },
+      {
+        "path": "docs/internals/specs/2026-05-29-loushang-coding-overflow-compaction-recovery-design-pending-review.md",
+        "reason": "file-budget",
+        "size": 7051
+      },
+      {
+        "path": "docs/internals/specs/2026-06-02-coding-domain-app-p2-design.md",
+        "reason": "file-budget",
+        "size": 10582
+      },
+      {
+        "path": "docs/internals/specs/2026-06-02-method-p1-resource-compatibility-design.md",
+        "reason": "file-budget",
+        "size": 19281
+      },
+      {
+        "path": "docs/internals/specs/2026-06-03-fixed-methodplan-p3-design.md",
+        "reason": "file-budget",
+        "size": 20422
+      },
+      {
+        "path": "docs/internals/specs/2026-06-03-method-defaults-p2-7-design.md",
+        "reason": "file-budget",
+        "size": 5461
+      },
+      {
+        "path": "docs/internals/specs/2026-06-03-method-policy-observability-p2-5-p2-6-design.md",
+        "reason": "file-budget",
+        "size": 5957
+      },
+      {
+        "path": "docs/internals/specs/2026-08-12-windows-shell-execution-design-review.md",
+        "reason": "file-budget",
+        "size": 27883
+      },
+      {
+        "path": "docs/internals/specs/2026-08-13-cross-platform-terminal-test-design.md",
+        "reason": "file-budget",
+        "size": 32688
+      },
+      {
+        "path": "docs/internals/specs/README.md",
+        "reason": "file-budget",
+        "size": 1069
+      },
+      {
+        "path": "docs/internals/strategy/2026-06-06-loushang-architecture-rd-directions.md",
+        "reason": "file-budget",
+        "size": 11745
+      },
+      {
+        "path": "docs/internals/strategy/loushang-product-surfaces-and-roadmap.md",
+        "reason": "file-budget",
+        "size": 9074
+      },
+      {
+        "path": "docs/internals/strategy/strategy.md",
+        "reason": "file-budget",
+        "size": 4057
+      },
+      {
+        "path": "docs/internals/testing/change-aware-quality-gates.md",
+        "reason": "file-budget",
+        "size": 6835
+      },
+      {
+        "path": "docs/internals/testing/screen-tui-playback.md",
+        "reason": "file-budget",
+        "size": 3628
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-09-tui-input-router-target-decoupling-implementation.md",
+        "reason": "file-budget",
+        "size": 24873
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-09-tui-render-loop-strategy-implementation.md",
+        "reason": "file-budget",
+        "size": 16552
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-10-tui-focused-editor-target-routing-implementation.md",
+        "reason": "file-budget",
+        "size": 28411
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-10-tui-widgets-foundation-implementation.md",
+        "reason": "file-budget",
+        "size": 27602
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-10-tui-widgets-p0a-hardening-implementation.md",
+        "reason": "file-budget",
+        "size": 23579
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-10-tui-widgets-p0b-small-controls-implementation.md",
+        "reason": "file-budget",
+        "size": 33244
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-10-tui-widgets-p0c-light-controls-implementation.md",
+        "reason": "file-budget",
+        "size": 34346
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-10-tui-widgets-p1a-table-implementation.md",
+        "reason": "file-budget",
+        "size": 37237
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-11-tui-widgets-p1b-textarea-implementation.md",
+        "reason": "file-budget",
+        "size": 46380
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-11-tui-widgets-p1c-question-dialog-implementation.md",
+        "reason": "file-budget",
+        "size": 39070
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-11-tui-widgets-p1d-treeview-implementation.md",
+        "reason": "file-budget",
+        "size": 38857
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-11-tui-widgets-p1e-toast-implementation.md",
+        "reason": "file-budget",
+        "size": 32690
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-12-tui-widget-examples-ux-polish-implementation.md",
+        "reason": "file-budget",
+        "size": 34175
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-12-tui-widgets-p2a-command-palette-implementation.md",
+        "reason": "file-budget",
+        "size": 35132
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-13-tui-real-settings-page-integration-implementation.md",
+        "reason": "file-budget",
+        "size": 29572
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-13-tui-tabgroup-content-switcher-implementation.md",
+        "reason": "file-budget",
+        "size": 57518
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-14-code-status-line-settings.md",
+        "reason": "file-budget",
+        "size": 6904
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-14-tui-directory-tree-implementation.md",
+        "reason": "file-budget",
+        "size": 41700
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-14-tui-page-scaffold.md",
+        "reason": "file-budget",
+        "size": 32612
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-14-tui-statusbar-rendering.md",
+        "reason": "file-budget",
+        "size": 22239
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-14-tui-tabs-focus-theme-contract.md",
+        "reason": "file-budget",
+        "size": 20144
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-15-agent-harness-boundary-refactor.md",
+        "reason": "file-budget",
+        "size": 22428
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-15-tui-datagrid-filter-sort.md",
+        "reason": "file-budget",
+        "size": 40451
+      },
+      {
+        "path": "docs/superpowers/plans/2026-06-15-tui-datagrid-v1-implementation-plan.md",
+        "reason": "file-budget",
+        "size": 24509
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-07-harness-slice-1-approval-tools-presentation.md",
+        "reason": "file-budget",
+        "size": 21552
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-08-runtime-tool-contribution-routing.md",
+        "reason": "file-budget",
+        "size": 6516
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-10-context-budget-accounting-migration.md",
+        "reason": "file-budget",
+        "size": 1605
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-10-contribution-inventory-migration.md",
+        "reason": "file-budget",
+        "size": 1783
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-10-resource-frontmatter-migration.md",
+        "reason": "file-budget",
+        "size": 2660
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-10-resource-provenance-migration.md",
+        "reason": "file-budget",
+        "size": 1507
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-10-workspace-execution-substrate.md",
+        "reason": "file-budget",
+        "size": 3527
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-10-workspace-operation-migration.md",
+        "reason": "file-budget",
+        "size": 1514
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-10-workspace-path-mutation-migration.md",
+        "reason": "file-budget",
+        "size": 1397
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-12-diagnostics-core-migration.md",
+        "reason": "file-budget",
+        "size": 2049
+      },
+      {
+        "path": "docs/superpowers/plans/2026-07-12-host-runtime-migration.md",
+        "reason": "file-budget",
+        "size": 1999
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-22-harnesstui-conversation-input-outcome-refactor.md",
+        "reason": "file-budget",
+        "size": 8592
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-22-tui-harnesstui-input-ownership-refactor.md",
+        "reason": "file-budget",
+        "size": 30091
+      },
+      {
+        "path": "docs/superpowers/plans/2026-08-22-tui-input-intent-contract-decomposition.md",
+        "reason": "file-budget",
+        "size": 22441
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-09-tui-input-router-decouple-design.md",
+        "reason": "file-budget",
+        "size": 16673
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-09-tui-render-loop-strategy-design.md",
+        "reason": "file-budget",
+        "size": 15151
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-10-tui-focused-editor-target-routing-design.md",
+        "reason": "file-budget",
+        "size": 14372
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-10-tui-widgets-foundation-design.md",
+        "reason": "file-budget",
+        "size": 20988
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-10-tui-widgets-p0a-hardening-design.md",
+        "reason": "file-budget",
+        "size": 11396
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-10-tui-widgets-p0b-small-controls-design.md",
+        "reason": "file-budget",
+        "size": 13554
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-10-tui-widgets-p0c-light-controls-design.md",
+        "reason": "file-budget",
+        "size": 15117
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-10-tui-widgets-p1a-table-design.md",
+        "reason": "file-budget",
+        "size": 12784
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-11-tui-widgets-p1b-textarea-design.md",
+        "reason": "file-budget",
+        "size": 13242
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-11-tui-widgets-p1c-question-dialog-design.md",
+        "reason": "file-budget",
+        "size": 14662
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-11-tui-widgets-p1d-treeview-design.md",
+        "reason": "file-budget",
+        "size": 12209
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-11-tui-widgets-p1e-toast-design.md",
+        "reason": "file-budget",
+        "size": 13163
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-12-tui-tabgroup-content-switcher-design.md",
+        "reason": "file-budget",
+        "size": 29949
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-12-tui-widget-examples-ux-polish-design.md",
+        "reason": "file-budget",
+        "size": 15869
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-12-tui-widgets-p2a-command-palette-design.md",
+        "reason": "file-budget",
+        "size": 16211
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-13-tui-real-settings-page-integration-design.md",
+        "reason": "file-budget",
+        "size": 18368
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-14-tui-directory-tree-design.md",
+        "reason": "file-budget",
+        "size": 23191
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-14-tui-page-scaffold-design.md",
+        "reason": "file-budget",
+        "size": 11672
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-14-tui-statusbar-rendering-design.md",
+        "reason": "file-budget",
+        "size": 9847
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-14-tui-statusline-settings-tab-design.md",
+        "reason": "file-budget",
+        "size": 12120
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-14-tui-tabs-focus-theme-contract-design.md",
+        "reason": "file-budget",
+        "size": 11453
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-15-tui-datagrid-filter-sort-design.md",
+        "reason": "file-budget",
+        "size": 26894
+      },
+      {
+        "path": "docs/superpowers/specs/2026-06-15-tui-datagrid-v1-design.md",
+        "reason": "file-budget",
+        "size": 47660
+      },
+      {
+        "path": "docs/superpowers/specs/2026-07-05-tui-model-selection-and-method-routing-design.md",
+        "reason": "file-budget",
+        "size": 18602
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-22-harnesstui-conversation-input-outcome-design.md",
+        "reason": "file-budget",
+        "size": 14277
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-22-tui-harnesstui-input-ownership-boundary-design.md",
+        "reason": "file-budget",
+        "size": 34672
+      },
+      {
+        "path": "docs/superpowers/specs/2026-08-22-tui-harnesstui-input-ownership-boundary-review.md",
+        "reason": "file-budget",
+        "size": 10524
+      },
+      {
+        "path": "docs/zh-CN/concepts/README.md",
+        "reason": "file-budget",
+        "size": 1482
+      },
+      {
+        "path": "docs/zh-CN/examples/README.md",
+        "reason": "file-budget",
+        "size": 795
+      },
+      {
+        "path": "docs/zh-CN/getting-started/README.md",
+        "reason": "file-budget",
+        "size": 2139
+      },
+      {
+        "path": "docs/zh-CN/reference/README.md",
+        "reason": "file-budget",
+        "size": 4004
+      },
+      {
+        "path": "docs/zh-CN/reference/tui-editing.md",
+        "reason": "file-budget",
+        "size": 11069
+      },
+      {
+        "path": "docs/zh-CN/reference/tui-runner.md",
+        "reason": "file-budget",
+        "size": 3197
+      },
+      {
+        "path": "docs/zh-CN/reference/tui-widgets.md",
+        "reason": "file-budget",
+        "size": 21882
+      },
+      {
+        "path": "docs/zh-CN/sdk/README.md",
+        "reason": "file-budget",
+        "size": 8813
+      },
+      {
+        "path": "docs/zh-CN/user-guide/README.md",
+        "reason": "file-budget",
+        "size": 10311
+      },
+      {
+        "path": "docs/zh-CN/user-guide/tui.md",
+        "reason": "file-budget",
+        "size": 4581
+      },
+      {
+        "path": "docs/internals/architecture-method/history/initial-ai-architecture-method-notes.md",
+        "reason": "file-budget",
+        "size": 6874
+      },
+      {
+        "path": "docs/internals/architecture-method/history/loushang-documentation-model-v1.md",
+        "reason": "file-budget",
+        "size": 3819
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/AOD-viewpoint.md",
+        "reason": "file-budget",
+        "size": 1529
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/architecture-decision.md",
+        "reason": "file-budget",
+        "size": 4175
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/architecture-principle.md",
+        "reason": "file-budget",
+        "size": 1440
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/architecture-review.md",
+        "reason": "file-budget",
+        "size": 3762
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/architecture-scope-README.md",
+        "reason": "file-budget",
+        "size": 3796
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/decision-index-README.md",
+        "reason": "file-budget",
+        "size": 1994
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/deployment.md",
+        "reason": "file-budget",
+        "size": 3056
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/domain-data-model.md",
+        "reason": "file-budget",
+        "size": 3949
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/glossary.md",
+        "reason": "file-budget",
+        "size": 1646
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/key-design.md",
+        "reason": "file-budget",
+        "size": 3045
+      },
+      {
+        "path": "docs/internals/architecture-method/templates/requirements.md",
+        "reason": "file-budget",
+        "size": 3814
+      },
+      {
+        "path": "docs/internals/architecture/agent/agent-harness-module-ownership-inventory.md",
+        "reason": "file-budget",
+        "size": 12868
+      },
+      {
+        "path": "docs/internals/architecture/agent/ARD-001-agent-harness-and-product-adapters.md",
+        "reason": "file-budget",
+        "size": 8146
+      },
+      {
+        "path": "docs/internals/architecture/agent/ARD-002-harness-product-adapter-substrate.md",
+        "reason": "file-budget",
+        "size": 11367
+      },
+      {
+        "path": "docs/internals/architecture/agent/loushang-agent-candidate-components.md",
+        "reason": "file-budget",
+        "size": 8667
+      },
+      {
+        "path": "docs/internals/architecture/agent/loushang-agent-system-context.md",
+        "reason": "file-budget",
+        "size": 8518
+      },
+      {
+        "path": "docs/internals/architecture/agent/loushang-agent-types.md",
+        "reason": "file-budget",
+        "size": 4436
+      },
+      {
+        "path": "docs/internals/architecture/agent/README.md",
+        "reason": "file-budget",
+        "size": 6733
+      },
+      {
+        "path": "docs/internals/architecture/ai/ARD-001-async-public-streaming-surface.md",
+        "reason": "file-budget",
+        "size": 3688
+      },
+      {
+        "path": "docs/internals/architecture/ai/ARD-002-ai-coverage-gate-scope.md",
+        "reason": "file-budget",
+        "size": 2662
+      },
+      {
+        "path": "docs/internals/architecture/ai/ARD-003-core-freeze-contract.md",
+        "reason": "file-budget",
+        "size": 3795
+      },
+      {
+        "path": "docs/internals/architecture/ai/ARD-list.md",
+        "reason": "file-budget",
+        "size": 908
+      },
+      {
+        "path": "docs/internals/architecture/ai/core-freeze-target-checklist.md",
+        "reason": "file-budget",
+        "size": 2873
+      },
+      {
+        "path": "docs/internals/architecture/ai/core-freeze-verification.md",
+        "reason": "file-budget",
+        "size": 1753
+      },
+      {
+        "path": "docs/internals/architecture/ai/core-provider-adapter-contract-matrix.md",
+        "reason": "file-budget",
+        "size": 2857
+      },
+      {
+        "path": "docs/internals/architecture/ai/domain-model-uml.md",
+        "reason": "file-budget",
+        "size": 1799
+      },
+      {
+        "path": "docs/internals/architecture/ai/domain-model.md",
+        "reason": "file-budget",
+        "size": 4126
+      },
+      {
+        "path": "docs/internals/architecture/ai/loushang-ai-adaptability-design-v1.md",
+        "reason": "file-budget",
+        "size": 4690
+      },
+      {
+        "path": "docs/internals/architecture/ai/loushang-ai-adaptability-NFR.md",
+        "reason": "file-budget",
+        "size": 6742
+      },
+      {
+        "path": "docs/internals/architecture/ai/loushang-ai-api-adapter-registry.md",
+        "reason": "file-budget",
+        "size": 2269
+      },
+      {
+        "path": "docs/internals/architecture/ai/loushang-ai-component-interactions-v1.md",
+        "reason": "file-budget",
+        "size": 3308
+      },
+      {
+        "path": "docs/internals/architecture/ai/loushang-ai-component-interfaces-v1.md",
+        "reason": "file-budget",
+        "size": 4042
+      },
+      {
+        "path": "docs/internals/architecture/ai/loushang-ai-component-refinement-round-1.md",
+        "reason": "file-budget",
+        "size": 10964
+      },
+      {
+        "path": "docs/internals/architecture/ai/loushang-ai-component-structure-v1.md",
+        "reason": "file-budget",
+        "size": 3461
+      }
+    ],
+    "omitted_count": 701,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3481,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 707,
+      "complete": false,
+      "omitted": 701,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_f6ef71afb18a5953a3f2e8d2916df9a7",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 8,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 3,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zhnt/loushang/89d885f53c1a896477979d3a7371119a5fc76c54/c0aea91282c5ba83/manifest.json",
+  "package_id": "pkg_1ec17ce76e513f63d673eee0b0eee9a9d57d36ad3a0c33c2c9043af1623456cd",
+  "repo": "zhnt/loushang",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "de894cb4ee326a6346276f583be81abf92f162f13066dc55b8cefb227d2665c3",
+  "snapshot_id": "c0aea91282c5ba83",
+  "sources": [
+    {
+      "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+      "git_sha": "f649cbc5333bda5431f01f018e9cb03b168fc234",
+      "lines": 101,
+      "path": "README.md",
+      "repository": "zhnt/loushang",
+      "sha256": "06d4c7b2b7a4ac130df1082d1204068471ca7c8d186d01b7a4b3e979da55a141",
+      "source_id": "src_c6614789a2475064b7aab9c950e7a14c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.md"
+    },
+    {
+      "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+      "git_sha": "f4cb55800325208708dd6b56e9070c28118d197e",
+      "lines": 101,
+      "path": "README.zh-CN.md",
+      "repository": "zhnt/loushang",
+      "sha256": "149fd67682922f7f893f7afbb95bea8e1d23a0f69c0ad4f32e25f8b322af26d7",
+      "source_id": "src_de3c38fa37ca5d10b8dfc2140adc8425",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/README.zh-CN.md"
+    },
+    {
+      "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+      "git_sha": "5ab22d3ea544e12d55c8a02703a33db146b8a438",
+      "lines": 28,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "repository": "zhnt/loushang",
+      "sha256": "953c46090cf05d86db45d09ebab62e4f30498b030cf95884c977ea18f7aa744e",
+      "source_id": "src_530a93abda2858a38cc233fd3f2561ac",
+      "stored": "third_party_notices.md-d448b8e7fefe.md",
+      "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+      "git_sha": "81faceb2811b02237a5db32527840329646be0ac",
+      "lines": 122,
+      "path": "docs/internals/architecture/coding/component-interfaces/tools.md",
+      "repository": "zhnt/loushang",
+      "sha256": "35f92500a4051342357d28d352573ce1abb5cbfee0d6afb0931d2609c40b500c",
+      "source_id": "src_ad848a6b174a54a5ab75e875adad1e4c",
+      "stored": "tools.md-af25853da4d4.md",
+      "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/coding/component-interfaces/tools.md"
+    },
+    {
+      "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+      "git_sha": "f10eebc3d604126642cd9be71c4af794f04e0d97",
+      "lines": 64,
+      "path": "docs/internals/architecture/coding/component-interfaces/workflow.md",
+      "repository": "zhnt/loushang",
+      "sha256": "4bba013dad0bc888a0ce837ec5129e1d9fa1c133eaefa5060f53ec56b6316f20",
+      "source_id": "src_0d09b40e4e985af2a789f42818f64122",
+      "stored": "workflow.md-f42b3c1910a6.md",
+      "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/coding/component-interfaces/workflow.md"
+    },
+    {
+      "commit": "89d885f53c1a896477979d3a7371119a5fc76c54",
+      "git_sha": "536f5676ebb4d7c25a6ceffa8545dab156d006a0",
+      "lines": 877,
+      "path": "docs/internals/architecture/harness/plugin/architecture.md",
+      "repository": "zhnt/loushang",
+      "sha256": "20a444c0028e8057db917faf3fa4a21ec8b6d16995a349343ad3ce49ec76d7ec",
+      "source_id": "src_9d2505e27d7550328ad9a442fa3f4e45",
+      "stored": "architecture.md-06c75e91229f.md",
+      "url": "https://github.com/zhnt/loushang/blob/89d885f53c1a896477979d3a7371119a5fc76c54/docs/internals/architecture/harness/plugin/architecture.md"
+    }
+  ],
+  "summary": "Selected evidence records: Loushang is described as a method-native AI work system for running complex work from intent to verified delivery, with the current focus on a coding CLI. The system is organized into named layers: method (work contract), work (runtime fact), agent (execution kernel), ai (model access), harness (substrate), coding (V1 surface), tui, and channel.",
+  "superseded_claim_ids": []
+}

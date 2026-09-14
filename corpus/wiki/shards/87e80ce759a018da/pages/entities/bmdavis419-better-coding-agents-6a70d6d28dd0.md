@@ -1,0 +1,31 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_152c56215d1894fa60d554233b33b3f5605e1b245e39c626728bc9b33efef897
+- clm_34d8a3e68972ad2f117a1955c44f84c3e4e9c1e2d96966c3fac155180fda3e96
+- clm_4aae6828c37d27a354b50839a7007d5bb59496d84f77a6e61761fca9ddadafd5
+- clm_5c3cd18776cd5796e4fdb54569d63d6649f47f20ee0d62c524990666298c5bd4
+- clm_6dbf7ae307f51ff96a04a4ab15fc23716bd76498e7f2b4d86cb0529bcf9a5c2c
+- clm_c4a9a2c784200ab4ec69aa53ef9a45268b40f1068d2654879cabf7217cc30d22
+- clm_cab1afe4ca8d4f20db94815ec135a8b5cfef355f339cf6ff5f5fb3f08cdf872b
+- clm_d6bf4185bfa989a0f1cf31d1cb1e7943e9d48d808541e434d2d0acf6f889c5ae
+- clm_f319fd9fe1d16f4159f59b6d15c09840f1ef57c7c5f4b0ab9ce4ba685988728e
+maturity: draft
+page_id: pg_9709b4622c2c55c5bcf16a70d6d28dd0
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: bmdavis419/.better-coding-agents
+updated_at: '2026-09-14T03:38:28Z'
+---
+
+# bmdavis419/.better-coding-agents
+
+<!-- rcw:begin owner=entity:ent_36c598c98da15638aa6dbdf3967fec7b block=evidence -->
+- bmdavis419/.better-coding-agents is mentioned in this evidence. [@claim:clm_152c56215d1894fa60d554233b33b3f5605e1b245e39c626728bc9b33efef897] [@claim:clm_34d8a3e68972ad2f117a1955c44f84c3e4e9c1e2d96966c3fac155180fda3e96] [@claim:clm_4aae6828c37d27a354b50839a7007d5bb59496d84f77a6e61761fca9ddadafd5] [@claim:clm_5c3cd18776cd5796e4fdb54569d63d6649f47f20ee0d62c524990666298c5bd4] [@claim:clm_6dbf7ae307f51ff96a04a4ab15fc23716bd76498e7f2b4d86cb0529bcf9a5c2c] [@claim:clm_c4a9a2c784200ab4ec69aa53ef9a45268b40f1068d2654879cabf7217cc30d22] [@claim:clm_cab1afe4ca8d4f20db94815ec135a8b5cfef355f339cf6ff5f5fb3f08cdf872b] [@claim:clm_d6bf4185bfa989a0f1cf31d1cb1e7943e9d48d808541e434d2d0acf6f889c5ae] [@claim:clm_f319fd9fe1d16f4159f59b6d15c09840f1ef57c7c5f4b0ab9ce4ba685988728e]
+<!-- rcw:end owner=entity:ent_36c598c98da15638aa6dbdf3967fec7b block=evidence -->
+
+## Researcher notes
+

@@ -1,0 +1,349 @@
+{
+  "applied_operation_id": "op_f37d9a7896a64eafb5bcb3ca5afe1b26",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e55ff74319cdb43b20b074a3a5f2c4faa169fa9489f4a8dde42e7f4d88571949",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 40,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L36-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ad13d75d45e0add5739f2dc332e025818c1e4f1b3ec78ad54f849f89ead0b89"
+      ],
+      "text": "The tool is invoked as a shell script: piping a prompt to `sh postmortemthis.cmd` runs it across all agents, with `setup` and `doctor` subcommands for configuration and availability checks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_55f18fecfc63c413d6278f1140f7475275a087c0149e918ca865bf38e83a23be",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L9-L9"
+        },
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dbfe0b2005fbefdee6633debc2d0a388e8e9c82481005e118000bc51aa11e5c",
+        "slc_d4cc99feba8f2726c0a950c59ea2d80e3c2f98e317e0ca56d2e7d2792a0b6490"
+      ],
+      "text": "It runs one prompt across several coding-agent CLIs (Claude Code, Codex, Antigravity, Qwen, Vibe, Grok) in parallel, each reading the current diff."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a3accaea063c5b2034e3021746828036e5691cc3cbabd138bceba84756b850b",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dbfe0b2005fbefdee6633debc2d0a388e8e9c82481005e118000bc51aa11e5c"
+      ],
+      "text": "Read-only operation is enforced by each agent's own CLI, except Antigravity which lacks such a switch and is instead constrained via its plan mode; the user is notified if the tree changes during a run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5af11315f5cad9e7c39df4a5ffeeae36dd11b5bbacfeb0d37cdc34fffeeb863",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f37f7dbbab44977c1a380f74490c903c6b23d387a1182ffeb2b808f7e4cd83a"
+      ],
+      "text": "The tool depends on the user's installed coding-agent CLIs and their logins; for agents without access, OpenRouter is used via OAuth login or an OPENROUTER_API_KEY, with usage billed to the user's account."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ce8b38c0e210435c12601f8b2371b8a5b4a9dedfd9d5b0e93d2d447562d3d53",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b4a037837b5bb65f953ef5f828bda1e2795078cfce2d92cd87e8e7fb93d0a2e"
+      ],
+      "text": "Grok is run through an OpenAI-compatible harness against the OpenRouter model x-ai/grok-build-0.1, since Grok's own CLI cannot reach OpenRouter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4e7e58d859372c706bfc3c119cc90fdf2f6189973539cc8d87ec101a03a2fc16",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a14a50a4f4c7b2623326575cc2aea8300ba2a3b956d811efee5a65437283eecf"
+      ],
+      "text": "A `setup` command probes each agent, lets the user log in, force OpenRouter, or disable an agent, optionally fires a test prompt, and saves the choices for later runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_396f0a5dc8223be646839082bd6331e6110ab12fb269d66185e7d18ea6ec0e38",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L24-L24"
+        },
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 20,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L17-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c69a7c6801cff14dc6c01a697535fdc475fd1a254a35f97c0189b2a4c3f53093",
+        "slc_d4cc99feba8f2726c0a950c59ea2d80e3c2f98e317e0ca56d2e7d2792a0b6490"
+      ],
+      "text": "Installation is prompt-driven: the user pastes a prompt that makes their coding agent create a /postmortemthis skill, downloading the .cmd script once into the skill folder; the repo's SKILL.md is described as a starting point."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3551f3e984d483d060a6f5956da13eab791355a510486b5a1ab0e5dbb37d6e6e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L9-L9"
+        },
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dbfe0b2005fbefdee6633debc2d0a388e8e9c82481005e118000bc51aa11e5c",
+        "slc_c69a7c6801cff14dc6c01a697535fdc475fd1a254a35f97c0189b2a4c3f53093"
+      ],
+      "text": "The design keeps the user inside their own agent, which makes the final call, while the external agents only read the diff; the script is described as the only fixed part of the system."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea01a76bb5e758d13ca9c68c8ad398be3e27ce336952d92c21efb7600031f40c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L11-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_378ed7409cc60f4d5b4ebe7722ad5aad85d8246a7ffd58883006f7c3a14c1676"
+      ],
+      "text": "The product is described as a single small script that installs, updates, and runs all the agents on Windows, macOS, and Linux, with no server or MCP required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_33d6b7b3148a0696b260f02ed4a3f6387f5f9f2933b90c04950ab5b8956c7a4e",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+          "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "softeria/postmortemthis",
+          "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dbfe0b2005fbefdee6633debc2d0a388e8e9c82481005e118000bc51aa11e5c"
+      ],
+      "text": "Per the README, read-only enforcement is not uniform: Antigravity's CLI has no read-only switch, so it is held to read-only behavior only through its plan mode."
+    }
+  ],
+  "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 42,
+        "path": "README.md",
+        "size": 2594
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 21,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_8befd35ee0a95f02bf84c6086153e2c4",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/softeria/postmortemthis/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/cd1cf2daf51dc0f0/manifest.json",
+  "package_id": "pkg_41b3213f9746c6b7d9c3920914976f34fa20321af6f5e89b97797b445ea5fb96",
+  "repo": "softeria/postmortemthis",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d9c3d313b458ef314eec7846b0aa13709b984e28c9d7a41d85282d5f967ca71b",
+  "snapshot_id": "cd1cf2daf51dc0f0",
+  "sources": [
+    {
+      "commit": "37f38fea5a621e7c06669625f3cc2ee3f0c895ab",
+      "git_sha": "3c2b2b8a537d564eb3dbf343c2f822d4e41bfd5a",
+      "lines": 42,
+      "path": "README.md",
+      "repository": "softeria/postmortemthis",
+      "sha256": "31e91b62b41a82630a5d64466d1b6781f1fecf5752a1d0bca041f11a13954f97",
+      "source_id": "src_69067cef4cac5fb5a3bca5618ae26977",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Softeria/postmortemthis/blob/37f38fea5a621e7c06669625f3cc2ee3f0c895ab/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only README content describing postmortemthis, a shell script that runs one review prompt across multiple coding-agent CLIs in parallel, with setup/auth via OpenRouter. No source code is present in the evidence.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,505 @@
+{
+  "applied_operation_id": "op_6c433363fdfb4fab904b02ff3fd26604",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0993b4af6c095cc5124645c59b6fcd4b99886fc948ad352c6eaa03527cf6dfb7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L41-L41"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L18-L18"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 54,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L45-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5855c06d1a159eb426926a0bd2a3e457c5416ea1b1b983a58e669bacca5626ac",
+        "slc_ce1dae777c569e55bfe62fe920be183b7995801534e33cf448074d55b69ab17d",
+        "slc_ddb349030fc87c2ea50a7f45ab5d11d46955faceec181ef2087fa6d43e8547a3"
+      ],
+      "text": "LocoOperator-4B is a 4B-parameter tool-calling agent distilled from Qwen3-Coder-Next, built on the Qwen3-4B-Instruct-2507 base model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b02a476a0dfbb18f01cc3b71b5deca095c97b00cf6ce02eb71edc75de09e3ce6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L74-L74"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 68,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L68-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18f4dd6fbfae79cf8084bd7c5a429435809f3591389b466394630a6847fa64c8",
+        "slc_4872a34e7e7ba57a5746cb2ebdcb8a4aebd33794a4625a1c4fb481be56b7bb97"
+      ],
+      "text": "The model is positioned as a local sub-agent (explorer) in a two-tier agent loop, with a main agent delegating codebase exploration to keep API cost and latency low."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_367a37b5379998ad680ae90c2b1c408c7ea602ca61c80eb850debe2d38079dd8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 64,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L60-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5e1b5443a68136ceef6d8408baaa601c80823ae5bfc7adfb26098a191e80f6f7"
+      ],
+      "text": "It emits structured tool-call JSON for Read, Grep, Glob, Bash, Write, Edit, and Task (subagent delegation)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7664f79761b24b9ab9cea6dd5b3d33437142cac1bb29d32e9128551814cbcdfe",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 169,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L166-L169"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L157-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44dd1573511be825f1aa419bf2e9bc7f5001ae582a438c2bebe9f9d3121350a4",
+        "slc_e58703a741dfa52092c906c49323ffd31c9d99cd95074bc6cf7b05c6f31ea80c"
+      ],
+      "text": "The repo ships a hybrid pipeline: a proxy (scripts/proxy.py) converts Anthropic Messages API to OpenAI Chat Completions, parses the model's tool-call output into tool_use blocks, and falls back to OpenRouter on context overflow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a07b94d8fed15e8b9b202c016b90a93384161f0581dda102024bb09ff62c2ef",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 164,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L164-L164"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 162,
+          "line_start": 159,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L159-L162"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2f42313e046d134385fa3252a8abe408b9d7b02c19cee65da556a2bd830e4551",
+        "slc_aa25544986883a4ada707b6434d9626d86a0778098cbb8e5d84679faf8437d37"
+      ],
+      "text": "In the pipeline, the main agent runs as a cloud model while spawned subagents are routed by the proxy to the local llama-server, with automatic OpenRouter fallback if context limits or a 10-turn cap are exceeded."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c0e79c87b4f9b3c6f52bedd60f4ee6a40b21622c60e02dcb8b27e3aae6a492de",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 145,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L140-L145"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 131,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L128-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03d6eb6b424a9562d806f6dc77d805e9bffd233912735297417eb4a6024c1375",
+        "slc_7ede2b12e6a4ce315d2887fb8e7bd1c90591c1a3524c359db9503a3b77e8892b"
+      ],
+      "text": "Prerequisites include Claude Code, llama.cpp, uv, and an OpenRouter API key; the GGUF model is served locally via llama-server."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71361a60c2d41794e71d6adcdf9eb27e66304d60d3c6b55b5469ffa5d9d9354c",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L78-L78"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 89,
+          "line_start": 84,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L84-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1dd6231e4503b8b23285dc2324cc60e867c1550b79620e5ea65081d02d20a1ea",
+        "slc_622b9360a127a9babde9b1dccaacdb03ba87203d92ec197f06d91d54a9d493d2"
+      ],
+      "text": "On 65 multi-turn samples from open-source projects, the model scored 100% tool-call presence alignment, 65.6% first tool-type match, and 100% JSON validity and argument syntax correctness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba6295096fdfb15d005fb5c48dd1b768537b3c70e09873b0e95c77ae704eac4d",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 118,
+          "line_start": 115,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L115-L118"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 107,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L99-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dfb1f59aea2014cea49ab4da4c9cdda1c0030123eaadbe21e8a2e4b6742fecb",
+        "slc_a96739692e6875e1cec75246d9a2592e04a62c57decdcd3c58d4214e1d8c2d17"
+      ],
+      "text": "Compared to its teacher, the model produced 76 tool calls versus 89 across the 65 eval samples, and the teacher showed 87.6% argument syntax validity versus the student's 100%."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f92bfeddde648372087d7ce0ce0413f84d064a6b86bac9e6f438a012dae5937a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 271,
+          "line_start": 268,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L268-L271"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32c4815e5344824a14705a664579630e64185c653a43683ee417c6e9249af539"
+      ],
+      "text": "Documented limitations include imperfect first-tool-type match (65.6%), fewer parallel tool calls than the teacher, a possible over-preference for Bash over Read, and evaluation limited to only 65 samples."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c74efa6312f11121d44a7a5a049b647d331fb2a431241ad2f6716133d8c8c2dd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L188-L188"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 202,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L200-L202"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 190,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L190-L190"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 214,
+          "line_start": 208,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L208-L214"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 196,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L194-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f0be336f2d147bb96ffe0a9bb2c53a540967a6df565d00d7aea6a7da711dfc6",
+        "slc_82811d48c41a8a742c0d86e62914efc38281fc496f2e374faec2802a19299518",
+        "slc_8ce0c3a80344ee88ab26ab52100f18887c4c59554f5ac6f8167745c2e46f10ec",
+        "slc_95ce8ffd79fe31cb27e23cf38e760ada771c4dd2b1845ed82814c8016b234d8a",
+        "slc_acbb752e0a1ea07de7dba925b0d2d1da0d11176d2278f24570af092af020a653"
+      ],
+      "text": "Usage workflow: place the GGUF at models/LocoOperator-4B-GGUF, put target repos under data/repos, add tab-separated query files, then run scripts/test_single.sh or scripts/analyze.sh for batch analysis."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7dd26b7a0105a853a231a9ba4375e1d5e8a67b7cdc618c597857a4a32c58814",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 153,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L149-L153"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 186,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L186-L186"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a873daa5d39a862ae6572e7305dc0cf4a565acd640e3a023a7cd3099912a12fa",
+        "slc_d5964234456ccff6fc44491b68372df48a8138e28750bb1eeaeec576176c5de9"
+      ],
+      "text": "Recommended serving settings are a ~50K context size, max 10 turns, and temperature 0.7; .claude/settings.local.json is auto-generated from the .env key on first run."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_854347d60cd9f8d6b8234e4a261cd441eafaa2551a0213e5c9df0df8a1d8f8a3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 262,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L246-L262"
+        },
+        {
+          "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+          "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+          "line_end": 54,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "locoremind/locooperator",
+          "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md#L45-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ade0be54854b7f7809ed3b233fbe715870c22448a01b50c22816de643822388",
+        "slc_ddb349030fc87c2ea50a7f45ab5d11d46955faceec181ef2087fa6d43e8547a3"
+      ],
+      "text": "Training used full-parameter SFT on 170,356 multi-turn samples with MS-SWIFT on 4x NVIDIA H200 GPUs, BF16 precision, max sequence length 16,384, for about 25 hours."
+    }
+  ],
+  "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 282,
+        "path": "README.md",
+        "size": 11034
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 19,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_af9a806a07f95062a96629cc306df450",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/locoremind/locooperator/b185a4198e4a3a2d8655120513326d8b1b487872/85279ae690b3ef4c/manifest.json",
+  "package_id": "pkg_08ab10ccf594d258d81f519c7054ae0a9b65e785fe0b42142bb35cba88fd4795",
+  "repo": "locoremind/locooperator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "7e64ee712b8492a22065006e6ea20908029cf72e5a2cf2a0b88b6ac35253917f",
+  "snapshot_id": "85279ae690b3ef4c",
+  "sources": [
+    {
+      "commit": "b185a4198e4a3a2d8655120513326d8b1b487872",
+      "git_sha": "06de37e3fab34a58f0b4aa4da5bc05fafeb60b33",
+      "lines": 282,
+      "path": "README.md",
+      "repository": "locoremind/locooperator",
+      "sha256": "34f6f06cd13b6e04fe636fccfc56de62e8452a0f28204926430e927b3fd3d58a",
+      "source_id": "src_6589a788ac4d5c7f918a12146947a234",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/LocoreMind/LocoOperator/blob/b185a4198e4a3a2d8655120513326d8b1b487872/README.md"
+    }
+  ],
+  "summary": "The repository documents LocoOperator-4B, a distilled 4B tool-calling code-exploration agent model, plus a hybrid analysis pipeline (Claude Code + local llama.cpp server + routing proxy). Evidence is README-only documentation.",
+  "superseded_claim_ids": []
+}

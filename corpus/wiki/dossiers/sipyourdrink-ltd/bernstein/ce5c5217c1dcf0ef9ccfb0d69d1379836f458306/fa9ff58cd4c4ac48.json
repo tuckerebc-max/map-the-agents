@@ -1,0 +1,1616 @@
+{
+  "applied_operation_id": "op_daba580b51694f77bb109a2ca40ec175",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_86720398fff7f344e1d1b38cfcd51aed69ca2788453df3828eba6e18d87da653",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L40-L40"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L7-L7"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 220,
+          "line_start": 205,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L205-L220"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e175f6fa5cd1c99156a0dc2a8f039a95a4c2fa38eb0cb7f2d84218190cc189c",
+        "slc_692077097b031d4da9a2a6b798c2d3d4becc3cc0a1212cc8a846005e681740a6",
+        "slc_f0cb3c82bcd50c044f8d8c19a7c824e3ce589d30cbf0080ad68b434b29fabb9e"
+      ],
+      "text": "The orchestrator is deterministic Python with no model in the coordination loop; only one planning LLM call happens up front, and the same plan replays to a byte-identical task graph."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d1e66f623075314a51fcf11be130f3b3b8a31bfd9796e1654645e763070de4f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 54,
+          "line_start": 51,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L51-L54"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L56-L56"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 49,
+          "line_start": 49,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L49-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9f54b09b5c45f70521c428a90e8af74ac3b037332e5cc9e29f565841251d1fb8",
+        "slc_dd0694a635d0a850968f78772067189c4d2b2974eab4a0e0d0a0c53b2059ba83",
+        "slc_fb74f88b1152c73d7e9921bc3707fb4407b6f47b752ba896bbfbcaae35eabe55"
+      ],
+      "text": "All state is stored as files under .sdd/ with no databases or hidden memory, chosen for inspectability, recoverability, auditability, and git-friendliness; runtime state under .sdd/runtime/ is ephemeral."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_587f4e0bee99f1d4a569b68b5914f1ab5d931735e118a675b35b9b3bbdc01b6c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L132-L132"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L136-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0261b2b32aa1884a055c2ea3fc26119ef33269da546ccaa402549db74c3427ae",
+        "slc_a73b74e28a1eb57c457b5cdd2176c004d2b58a2797695409e258141057132066"
+      ],
+      "text": "A janitor verifies task completion via concrete signals (files exist, tests pass, content matches) and moves tasks to done/ or failed/ without trusting agent claims; a separate LLM reviewer runs afterward and can push corrections back into the queue."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1f1dc01c0820dba305326130bbf571201bdaadab1e6d52f74cd6bec1699931f9",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L108-L108"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 33,
+          "line_start": 15,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L15-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cd4f91dbda5fb295b1aea81f43e6ecf8951552588b2ab6e9ed4d361301aebbc",
+        "slc_dc7d81c5e08d061f84eedd6df61bfeeed1e8d618960516241aaa53b4485a7a68"
+      ],
+      "text": "The Task Server is a FastAPI REST application on port 8052 exposing /tasks, /status, and /metrics, with routes split across roughly 70 modules in core/routes/ and state checkpointed to .sdd/runtime/tasks.jsonl."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_30baedf91f92c1f02efc97178cb0e217e8876fe0cc41365e146b423d57b5bc55",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 231,
+          "line_start": 228,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L228-L231"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c140792164ed7964d37f521ec5bc18432d6cbacee7b1cf7687441fa8d606a6b"
+      ],
+      "text": "A LineageSpine provides an always-on Merkle+HMAC provenance chain; every adapter artifact write routes through LineageSpine.record at a single write boundary, appending hash-chained rows to .sdd/lineage/<run_id>/spine.jsonl."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bfc7ebce5ce6e4415806c3018a6a5963ee577342abc517038d699d809e1e5a1e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 203,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L196-L203"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 140,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L135-L140"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 151,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L148-L151"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 175,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L165-L175"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 212,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L209-L212"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_171d798ee5561c6ab9df5c4e54b17d261b019973f4cedca42735ca46bdec8c32",
+        "slc_1af9054e864a2f7bd6f87676ce565826190660bdb3521b1f3a403a86769f574e",
+        "slc_7151b621f92f6090c3ae395ce4f51289505a7d5fc4fb7a3e859bbb072d353567",
+        "slc_9333a7ebd5d5c187abb5ee46583b2c8c911e21aead2a550c6bfc745fc8aeb139",
+        "slc_960052aef64a6c561bc16573bb7570a643062333133c88e60f09d4f274d59be8"
+      ],
+      "text": "The CLI surface includes bernstein init, -g, live, run plan.yaml, stop, workflow run/resume, replay/lineage/audit verification commands, and bernstein verify receipt for offline receipt checking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_24b48cfaf202ca21249154cfe5d376d482f770b9e5743a3908602581d21a96f9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 68,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L61-L68"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 106,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L98-L106"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L55-L55"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 214,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L214-L214"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_044329690cbdc2338ace880887d5e9acce548701897b0e57a33d9648c28d6ddd",
+        "slc_5f312b2bda37696139d7281a62ccfbcc1da342156adb2922f77947b9001c50b2",
+        "slc_7ffad65d6c9427c91fd2b6032aaa105c94cf5e6cd364bedc0f8feb2a4aa848dd",
+        "slc_e9421e739495df244942369162586c9158df3613176d7a52720ab25e7a248132"
+      ],
+      "text": "Runs are declared in YAML manifests defining phases, roles, node dependencies, conditional edges, and retry policies; workflow resume validates the manifest digest at start and refuses a changed spec."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec6127f7c96f95933f033be31f1faa794485ef1a6cda73a9abe39dbfc7e10088",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 181,
+          "line_start": 181,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L181-L181"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d38df8ec4973c1b7bcfc05c16a32018bb1a2bdd85b184e1b82b4bb9ee70c9e8"
+      ],
+      "text": "bernstein bench run <suite> --reliability k (also spelled bernstein eval) runs each task k times under fixed coordination and reports a pass^k floor alongside pass@1, sealing the result in a signed receipt that can be re-verified offline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6f971e5b4d98701fbd3d303301d5dde08acb83da7ac3bfefdce9a5f55675b4c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+          "line_end": 261,
+          "line_start": 242,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md#L242-L261"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a0585d6a05c8a36ccc23289bdcedfe44d5c8b44c3673d11e82f3ace36e69d29a"
+      ],
+      "text": "Pluggable sandbox backends implement a SandboxBackend/SandboxSession protocol; first-party options are worktree (default), docker, e2b Firecracker microVMs, and modal serverless containers, with third parties registering via an entry-point group."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a4dd64a7a3eecb1a0aed8ed6d90bf6af73529b3ec4bb9f4f62d3ec8b92780cb",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 226,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L226-L226"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aa60883b635fc802c2c992b56130311c95038010b668cf665c647a6a90c10057"
+      ],
+      "text": "Volunteer compute tasks are constrained by a volunteer.json manifest declaring sandbox backend, network allowlist, and wall-clock/memory ceilings; a donor's own limits can only narrow, never widen, the declared containment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_13ac6865f2dc9682ee16f009703530addada0796f1539cf0d1828b475a359a66",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 28,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L19-L28"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 273,
+          "line_start": 273,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L273-L273"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8475b2dcf106eb955017b522e03d421c8db6280936d6f6659a3993432505cd53",
+        "slc_f3455a703a97057d7340f0be53e232456db8d09b82b392f593c775673b1d4256"
+      ],
+      "text": "The project targets Python 3.12+ per its README badge, is published on PyPI and GHCR, and is licensed Apache-2.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aacb4e5277f4c603c2fb561322cfad94c777f5c72965b6ee1da0bcf98c4c310d",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L38-L38"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 233,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L233-L233"
+        },
+        {
+          "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+          "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+          "line_end": 249,
+          "line_start": 239,
+          "path": "README.md",
+          "repository": "sipyourdrink-ltd/bernstein",
+          "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md#L239-L249"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5be18b865e66552feadd5e4284ba5bfcbce57d93027075e5a87de56c617a074c",
+        "slc_9624d864d46711a800f67c251373ebe5f5a2c2e45d9d1ec52a666db286e2f3b4",
+        "slc_d6e81a28c6ccbcd04b0a4c1d8ea0cf03c82272ea76db661deb7e291abaa69267"
+      ],
+      "text": "The project is beta, solo-maintained, and under active development; minor versions may change interfaces, and users are advised to pin versions. The volunteer one-command runner and the hosted api.bernstein.run service are not yet available."
+    }
+  ],
+  "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 279,
+        "path": "README.md",
+        "size": 25181
+      },
+      {
+        "lines": 345,
+        "path": "docs/architecture/ARCHITECTURE.md",
+        "size": 23736
+      },
+      {
+        "lines": 306,
+        "path": "docs/architecture/DESIGN.md",
+        "size": 9488
+      },
+      {
+        "lines": 546,
+        "path": "docs/architecture/sandbox.md",
+        "size": 28369
+      },
+      {
+        "lines": 227,
+        "path": "docs/architecture/skills.md",
+        "size": 8980
+      },
+      {
+        "lines": 59,
+        "path": "docs/gui/configuration.md",
+        "size": 3538
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/operations/api.md",
+        "reason": "file-budget",
+        "size": 1927
+      },
+      {
+        "path": "docs/operations/CONFIG.md",
+        "reason": "file-budget",
+        "size": 33639
+      },
+      {
+        "path": "docs/operations/memory.md",
+        "reason": "file-budget",
+        "size": 8306
+      },
+      {
+        "path": "docs/operations/workflows.md",
+        "reason": "file-budget",
+        "size": 7773
+      },
+      {
+        "path": "00-AGENT.md",
+        "reason": "file-budget",
+        "size": 2360
+      },
+      {
+        "path": "ADOPTERS.md",
+        "reason": "file-budget",
+        "size": 3371
+      },
+      {
+        "path": "BENCHMARKS.md",
+        "reason": "file-budget",
+        "size": 2453
+      },
+      {
+        "path": "CONTRIBUTORS.md",
+        "reason": "file-budget",
+        "size": 8972
+      },
+      {
+        "path": "CONVENTIONS.md",
+        "reason": "file-budget",
+        "size": 4819
+      },
+      {
+        "path": "DISCLAIMER.md",
+        "reason": "file-budget",
+        "size": 1115
+      },
+      {
+        "path": "GOVERNANCE.md",
+        "reason": "file-budget",
+        "size": 1959
+      },
+      {
+        "path": "MAINTAINERS.md",
+        "reason": "file-budget",
+        "size": 2260
+      },
+      {
+        "path": "REVIEW-VERDICT.md",
+        "reason": "file-budget",
+        "size": 499
+      },
+      {
+        "path": "ROADMAP.md",
+        "reason": "file-budget",
+        "size": 291
+      },
+      {
+        "path": "SUPPORT.md",
+        "reason": "file-budget",
+        "size": 1554
+      },
+      {
+        "path": "TRADEMARKS.md",
+        "reason": "file-budget",
+        "size": 1440
+      },
+      {
+        "path": "docs/adapter-deferred.md",
+        "reason": "file-budget",
+        "size": 6542
+      },
+      {
+        "path": "docs/agents-md.md",
+        "reason": "file-budget",
+        "size": 7713
+      },
+      {
+        "path": "docs/CODE_REVIEW.md",
+        "reason": "file-budget",
+        "size": 2604
+      },
+      {
+        "path": "docs/ENTERPRISE.md",
+        "reason": "file-budget",
+        "size": 12809
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 7067
+      },
+      {
+        "path": "docs/lineage.md",
+        "reason": "file-budget",
+        "size": 12880
+      },
+      {
+        "path": "docs/llm-citation-surface.md",
+        "reason": "file-budget",
+        "size": 3359
+      },
+      {
+        "path": "docs/llms-full.txt",
+        "reason": "file-budget",
+        "size": 6983
+      },
+      {
+        "path": "docs/llms.txt",
+        "reason": "file-budget",
+        "size": 2523
+      },
+      {
+        "path": "docs/mentions.md",
+        "reason": "file-budget",
+        "size": 7325
+      },
+      {
+        "path": "docs/project-pulse.md",
+        "reason": "file-budget",
+        "size": 4606
+      },
+      {
+        "path": "docs/requirements.txt",
+        "reason": "file-budget",
+        "size": 55555
+      },
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 669
+      },
+      {
+        "path": "docs/routine-scenarios.md",
+        "reason": "file-budget",
+        "size": 3699
+      },
+      {
+        "path": "docs/scope.md",
+        "reason": "file-budget",
+        "size": 4080
+      },
+      {
+        "path": "docs/telemetry.md",
+        "reason": "file-budget",
+        "size": 8190
+      },
+      {
+        "path": "docs/use-cases.md",
+        "reason": "file-budget",
+        "size": 7049
+      },
+      {
+        "path": "docs/whats-new.md",
+        "reason": "file-budget",
+        "size": 688
+      },
+      {
+        "path": "docs/adapters/ADAPTER_GUIDE.md",
+        "reason": "file-budget",
+        "size": 44777
+      },
+      {
+        "path": "docs/adapters/admission-receipts.md",
+        "reason": "file-budget",
+        "size": 7332
+      },
+      {
+        "path": "docs/adapters/agy.md",
+        "reason": "file-budget",
+        "size": 3808
+      },
+      {
+        "path": "docs/adapters/antigravity.md",
+        "reason": "file-budget",
+        "size": 5750
+      },
+      {
+        "path": "docs/adapters/auth-basis-volunteer-mode.md",
+        "reason": "file-budget",
+        "size": 4786
+      },
+      {
+        "path": "docs/adapters/capability_contract.md",
+        "reason": "file-budget",
+        "size": 15493
+      },
+      {
+        "path": "docs/adapters/capability_profiles.md",
+        "reason": "file-budget",
+        "size": 13362
+      },
+      {
+        "path": "docs/adapters/clm.md",
+        "reason": "file-budget",
+        "size": 8502
+      },
+      {
+        "path": "docs/adapters/compatibility.md",
+        "reason": "file-budget",
+        "size": 6170
+      },
+      {
+        "path": "docs/adapters/computer_use.md",
+        "reason": "file-budget",
+        "size": 5936
+      },
+      {
+        "path": "docs/adapters/conformance-canary.md",
+        "reason": "file-budget",
+        "size": 12641
+      },
+      {
+        "path": "docs/adapters/deepseek.md",
+        "reason": "file-budget",
+        "size": 6533
+      },
+      {
+        "path": "docs/adapters/gemini.md",
+        "reason": "file-budget",
+        "size": 596
+      },
+      {
+        "path": "docs/adapters/index.md",
+        "reason": "file-budget",
+        "size": 8119
+      },
+      {
+        "path": "docs/adapters/ingest_contract.md",
+        "reason": "file-budget",
+        "size": 4662
+      },
+      {
+        "path": "docs/adapters/muse.md",
+        "reason": "file-budget",
+        "size": 3183
+      },
+      {
+        "path": "docs/adapters/openai-agents-comparison.md",
+        "reason": "file-budget",
+        "size": 6463
+      },
+      {
+        "path": "docs/adapters/openai-agents.md",
+        "reason": "file-budget",
+        "size": 4502
+      },
+      {
+        "path": "docs/adapters/schemas.md",
+        "reason": "file-budget",
+        "size": 3170
+      },
+      {
+        "path": "docs/adapters/security-floor.md",
+        "reason": "file-budget",
+        "size": 3360
+      },
+      {
+        "path": "docs/adapters/session_isolation.md",
+        "reason": "file-budget",
+        "size": 2896
+      },
+      {
+        "path": "docs/adapters/stream_signals.md",
+        "reason": "file-budget",
+        "size": 5146
+      },
+      {
+        "path": "docs/adapters/test-adapter.md",
+        "reason": "file-budget",
+        "size": 3535
+      },
+      {
+        "path": "docs/agent/00-AGENT.md",
+        "reason": "file-budget",
+        "size": 1203
+      },
+      {
+        "path": "docs/agent/10-map.md",
+        "reason": "file-budget",
+        "size": 8360
+      },
+      {
+        "path": "docs/agent/20-commands.md",
+        "reason": "file-budget",
+        "size": 841
+      },
+      {
+        "path": "docs/agent/30-ci.md",
+        "reason": "file-budget",
+        "size": 12248
+      },
+      {
+        "path": "docs/agent/40-env.md",
+        "reason": "file-budget",
+        "size": 18760
+      },
+      {
+        "path": "docs/agent/50-invariants.md",
+        "reason": "file-budget",
+        "size": 4347
+      },
+      {
+        "path": "docs/api/supervisor.md",
+        "reason": "file-budget",
+        "size": 7068
+      },
+      {
+        "path": "docs/architecture/a2a.md",
+        "reason": "file-budget",
+        "size": 9948
+      },
+      {
+        "path": "docs/architecture/adaptive-parallelism.md",
+        "reason": "file-budget",
+        "size": 9114
+      },
+      {
+        "path": "docs/architecture/batch-routing.md",
+        "reason": "file-budget",
+        "size": 3869
+      },
+      {
+        "path": "docs/architecture/cas-store.md",
+        "reason": "file-budget",
+        "size": 13133
+      },
+      {
+        "path": "docs/architecture/context-degradation-detector.md",
+        "reason": "file-budget",
+        "size": 5202
+      },
+      {
+        "path": "docs/architecture/deadlock-detection.md",
+        "reason": "file-budget",
+        "size": 3653
+      },
+      {
+        "path": "docs/architecture/DEPENDENCY_RESOLVER.md",
+        "reason": "file-budget",
+        "size": 2673
+      },
+      {
+        "path": "docs/architecture/fast-path-execution.md",
+        "reason": "file-budget",
+        "size": 5167
+      },
+      {
+        "path": "docs/architecture/graphs.md",
+        "reason": "file-budget",
+        "size": 2013
+      },
+      {
+        "path": "docs/architecture/index.md",
+        "reason": "file-budget",
+        "size": 1246
+      },
+      {
+        "path": "docs/architecture/LIFECYCLE.md",
+        "reason": "file-budget",
+        "size": 17750
+      },
+      {
+        "path": "docs/architecture/memory_tiers.md",
+        "reason": "file-budget",
+        "size": 6440
+      },
+      {
+        "path": "docs/architecture/merge-tree-probe.md",
+        "reason": "file-budget",
+        "size": 7186
+      },
+      {
+        "path": "docs/architecture/model-routing.md",
+        "reason": "file-budget",
+        "size": 13899
+      },
+      {
+        "path": "docs/architecture/orchestration-approaches.md",
+        "reason": "file-budget",
+        "size": 8536
+      },
+      {
+        "path": "docs/architecture/permission-modes.md",
+        "reason": "file-budget",
+        "size": 9166
+      },
+      {
+        "path": "docs/architecture/plans.md",
+        "reason": "file-budget",
+        "size": 23314
+      },
+      {
+        "path": "docs/architecture/protocol-negotiation.md",
+        "reason": "file-budget",
+        "size": 4624
+      },
+      {
+        "path": "docs/architecture/quality-pipeline.md",
+        "reason": "file-budget",
+        "size": 21102
+      },
+      {
+        "path": "docs/architecture/schema-registry.md",
+        "reason": "file-budget",
+        "size": 5873
+      },
+      {
+        "path": "docs/architecture/state-persistence.md",
+        "reason": "file-budget",
+        "size": 11972
+      },
+      {
+        "path": "docs/architecture/storage.md",
+        "reason": "file-budget",
+        "size": 7410
+      },
+      {
+        "path": "docs/architecture/subagent-delegation.md",
+        "reason": "file-budget",
+        "size": 5344
+      },
+      {
+        "path": "docs/architecture/warm-pool.md",
+        "reason": "file-budget",
+        "size": 9786
+      },
+      {
+        "path": "docs/architecture/WHY_DETERMINISTIC.md",
+        "reason": "file-budget",
+        "size": 10001
+      },
+      {
+        "path": "docs/assets/ascii_logo.md",
+        "reason": "file-budget",
+        "size": 747
+      },
+      {
+        "path": "docs/autofix/ladder.md",
+        "reason": "file-budget",
+        "size": 4123
+      },
+      {
+        "path": "docs/autofix/telemetry-grounded.md",
+        "reason": "file-budget",
+        "size": 7861
+      },
+      {
+        "path": "docs/benchmarks/BENCHMARKS.md",
+        "reason": "file-budget",
+        "size": 8386
+      },
+      {
+        "path": "docs/blog/cobol-modernization.md",
+        "reason": "file-budget",
+        "size": 4959
+      },
+      {
+        "path": "docs/blog/multi-agent-benchmark.md",
+        "reason": "file-budget",
+        "size": 2484
+      },
+      {
+        "path": "docs/blog/self-evolution-30-days.md",
+        "reason": "file-budget",
+        "size": 10583
+      },
+      {
+        "path": "docs/blog/ten-agents-one-release.md",
+        "reason": "file-budget",
+        "size": 10751
+      },
+      {
+        "path": "docs/blog/v1.9-four-commands-last-mile.md",
+        "reason": "file-budget",
+        "size": 6134
+      },
+      {
+        "path": "docs/blog/zero-llm-coordination.md",
+        "reason": "file-budget",
+        "size": 7746
+      },
+      {
+        "path": "docs/ci/extended-static-analysis.md",
+        "reason": "file-budget",
+        "size": 5356
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-adapters.md",
+        "reason": "file-budget",
+        "size": 2589
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-ai.md",
+        "reason": "file-budget",
+        "size": 5078
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-analytics.md",
+        "reason": "file-budget",
+        "size": 372
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-bridges.md",
+        "reason": "file-budget",
+        "size": 10051
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-browser-rendering.md",
+        "reason": "file-budget",
+        "size": 14288
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-cli.md",
+        "reason": "file-budget",
+        "size": 4709
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-codex-sandbox.md",
+        "reason": "file-budget",
+        "size": 15107
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-mcp.md",
+        "reason": "file-budget",
+        "size": 8036
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-overview.md",
+        "reason": "file-budget",
+        "size": 4455
+      },
+      {
+        "path": "docs/cloudflare/cloudflare-setup.md",
+        "reason": "file-budget",
+        "size": 6108
+      },
+      {
+        "path": "docs/cluster/deployment-patterns.md",
+        "reason": "file-budget",
+        "size": 24979
+      },
+      {
+        "path": "docs/cluster/mtls-setup.md",
+        "reason": "file-budget",
+        "size": 7100
+      },
+      {
+        "path": "docs/compliance/eu-ai-act-article-12-bundle.md",
+        "reason": "file-budget",
+        "size": 10643
+      },
+      {
+        "path": "docs/compliance/eu-residency-customer-setup.md",
+        "reason": "file-budget",
+        "size": 12143
+      },
+      {
+        "path": "docs/compliance/finos-aigf-mapping.md",
+        "reason": "file-budget",
+        "size": 12139
+      },
+      {
+        "path": "docs/compliance/iso42001-mapping.md",
+        "reason": "file-budget",
+        "size": 4864
+      },
+      {
+        "path": "docs/compliance/lineage-export.md",
+        "reason": "file-budget",
+        "size": 18350
+      },
+      {
+        "path": "docs/compliance/nist-ai-rmf-mapping.md",
+        "reason": "file-budget",
+        "size": 19727
+      },
+      {
+        "path": "docs/compliance/regulator-mapped-packs.md",
+        "reason": "file-budget",
+        "size": 4129
+      },
+      {
+        "path": "docs/compliance/regulatory-lineage.md",
+        "reason": "file-budget",
+        "size": 8304
+      },
+      {
+        "path": "docs/concepts/abstracted-code-review.md",
+        "reason": "file-budget",
+        "size": 2631
+      },
+      {
+        "path": "docs/concepts/action-cache.md",
+        "reason": "file-budget",
+        "size": 3478
+      },
+      {
+        "path": "docs/concepts/agent-mode-profiles.md",
+        "reason": "file-budget",
+        "size": 2966
+      },
+      {
+        "path": "docs/concepts/artifact-lineage.md",
+        "reason": "file-budget",
+        "size": 5631
+      },
+      {
+        "path": "docs/concepts/ast-aware-chunking.md",
+        "reason": "file-budget",
+        "size": 2463
+      },
+      {
+        "path": "docs/concepts/best-of-n.md",
+        "reason": "file-budget",
+        "size": 3173
+      },
+      {
+        "path": "docs/concepts/cache-policy.md",
+        "reason": "file-budget",
+        "size": 6918
+      },
+      {
+        "path": "docs/concepts/feature-contract.md",
+        "reason": "file-budget",
+        "size": 3547
+      },
+      {
+        "path": "docs/concepts/fingerprint-memoization.md",
+        "reason": "file-budget",
+        "size": 6309
+      },
+      {
+        "path": "docs/concepts/jsonl-memory-log.md",
+        "reason": "file-budget",
+        "size": 2586
+      },
+      {
+        "path": "docs/concepts/lesson-persistence.md",
+        "reason": "file-budget",
+        "size": 7318
+      },
+      {
+        "path": "docs/concepts/orchestrator-hardening.md",
+        "reason": "file-budget",
+        "size": 6651
+      },
+      {
+        "path": "docs/concepts/phase-pipeline.md",
+        "reason": "file-budget",
+        "size": 3046
+      },
+      {
+        "path": "docs/concepts/sandbox-selector.md",
+        "reason": "file-budget",
+        "size": 4883
+      },
+      {
+        "path": "docs/concepts/scaffold.md",
+        "reason": "file-budget",
+        "size": 2702
+      },
+      {
+        "path": "docs/concepts/schema-validation-retry.md",
+        "reason": "file-budget",
+        "size": 3210
+      },
+      {
+        "path": "docs/concepts/semantic-caching.md",
+        "reason": "file-budget",
+        "size": 4258
+      },
+      {
+        "path": "docs/concepts/spec-as-test.md",
+        "reason": "file-budget",
+        "size": 3710
+      },
+      {
+        "path": "docs/concepts/swarm-migration.md",
+        "reason": "file-budget",
+        "size": 3835
+      },
+      {
+        "path": "docs/concepts/task-budgets.md",
+        "reason": "file-budget",
+        "size": 3033
+      },
+      {
+        "path": "docs/concepts/team-hub.md",
+        "reason": "file-budget",
+        "size": 3584
+      },
+      {
+        "path": "docs/concepts/wiki-build.md",
+        "reason": "file-budget",
+        "size": 2522
+      },
+      {
+        "path": "docs/contributing/adapter-contracts.md",
+        "reason": "file-budget",
+        "size": 5843
+      },
+      {
+        "path": "docs/contributing/demo-recording.md",
+        "reason": "file-budget",
+        "size": 2670
+      },
+      {
+        "path": "docs/contributing/flake-handling.md",
+        "reason": "file-budget",
+        "size": 5502
+      },
+      {
+        "path": "docs/contributing/git-hooks.md",
+        "reason": "file-budget",
+        "size": 2247
+      },
+      {
+        "path": "docs/contributing/hooks.md",
+        "reason": "file-budget",
+        "size": 9636
+      },
+      {
+        "path": "docs/contributing/index.md",
+        "reason": "file-budget",
+        "size": 1783
+      },
+      {
+        "path": "docs/contributing/issue-shelf.md",
+        "reason": "file-budget",
+        "size": 3650
+      },
+      {
+        "path": "docs/contributing/render-freshness.md",
+        "reason": "file-budget",
+        "size": 9414
+      },
+      {
+        "path": "docs/contributing/testing.md",
+        "reason": "file-budget",
+        "size": 21837
+      },
+      {
+        "path": "docs/cost/budget-halt-receipts.md",
+        "reason": "file-budget",
+        "size": 2820
+      },
+      {
+        "path": "docs/cost/showback-canonical.md",
+        "reason": "file-budget",
+        "size": 2294
+      },
+      {
+        "path": "docs/cost/ticket-cap.md",
+        "reason": "file-budget",
+        "size": 3797
+      },
+      {
+        "path": "docs/decisions/001-agent-lifecycle.md",
+        "reason": "file-budget",
+        "size": 18796
+      },
+      {
+        "path": "docs/decisions/002-withdrawn.md",
+        "reason": "file-budget",
+        "size": 749
+      },
+      {
+        "path": "docs/decisions/003-self-evolution.md",
+        "reason": "file-budget",
+        "size": 15092
+      },
+      {
+        "path": "docs/decisions/004-file-based-state.md",
+        "reason": "file-budget",
+        "size": 6304
+      },
+      {
+        "path": "docs/decisions/005-short-lived-agents.md",
+        "reason": "file-budget",
+        "size": 7685
+      },
+      {
+        "path": "docs/decisions/006-no-embedded-llm.md",
+        "reason": "file-budget",
+        "size": 7397
+      },
+      {
+        "path": "docs/decisions/007-pluggy-plugin-system.md",
+        "reason": "file-budget",
+        "size": 7716
+      },
+      {
+        "path": "docs/decisions/008-click-for-cli.md",
+        "reason": "file-budget",
+        "size": 7150
+      },
+      {
+        "path": "docs/decisions/009-lineage-v1.md",
+        "reason": "file-budget",
+        "size": 26883
+      },
+      {
+        "path": "docs/decisions/010-audit-chain-default-cost.md",
+        "reason": "file-budget",
+        "size": 10815
+      },
+      {
+        "path": "docs/decisions/011-model-drafts-human-signs.md",
+        "reason": "file-budget",
+        "size": 7198
+      },
+      {
+        "path": "docs/decisions/index.md",
+        "reason": "file-budget",
+        "size": 4232
+      },
+      {
+        "path": "docs/design/fleet-activity-block.md",
+        "reason": "file-budget",
+        "size": 6000
+      },
+      {
+        "path": "docs/design/tokens.md",
+        "reason": "file-budget",
+        "size": 8801
+      },
+      {
+        "path": "docs/design/web-ui-inventory.md",
+        "reason": "file-budget",
+        "size": 9400
+      },
+      {
+        "path": "docs/design/web-ui-principles.md",
+        "reason": "file-budget",
+        "size": 4768
+      },
+      {
+        "path": "docs/devops/trend-scan-automation.md",
+        "reason": "file-budget",
+        "size": 3277
+      },
+      {
+        "path": "docs/diagrams/agent_lifecycle.md",
+        "reason": "file-budget",
+        "size": 995
+      },
+      {
+        "path": "docs/diagrams/inventory_topology.md",
+        "reason": "file-budget",
+        "size": 615
+      },
+      {
+        "path": "docs/diagrams/task_lifecycle.md",
+        "reason": "file-budget",
+        "size": 7433
+      },
+      {
+        "path": "docs/eval/ab-runner.md",
+        "reason": "file-budget",
+        "size": 3037
+      },
+      {
+        "path": "docs/eval/bench.md",
+        "reason": "file-budget",
+        "size": 16159
+      },
+      {
+        "path": "docs/eval/golden-harness.md",
+        "reason": "file-budget",
+        "size": 6035
+      },
+      {
+        "path": "docs/eval/incident-synthesis.md",
+        "reason": "file-budget",
+        "size": 4670
+      },
+      {
+        "path": "docs/eval/reliability.md",
+        "reason": "file-budget",
+        "size": 10555
+      },
+      {
+        "path": "docs/eval/security_pentest_scenario.md",
+        "reason": "file-budget",
+        "size": 5145
+      },
+      {
+        "path": "docs/eval/trajectory-receipts.md",
+        "reason": "file-budget",
+        "size": 9327
+      },
+      {
+        "path": "docs/eval/yaml-harness.md",
+        "reason": "file-budget",
+        "size": 6061
+      },
+      {
+        "path": "docs/events/grammar.md",
+        "reason": "file-budget",
+        "size": 6548
+      },
+      {
+        "path": "docs/examples/agent-prompt-template.md",
+        "reason": "file-budget",
+        "size": 6845
+      },
+      {
+        "path": "docs/fleet/directory-registry.md",
+        "reason": "file-budget",
+        "size": 2948
+      },
+      {
+        "path": "docs/getting-started/first-run.md",
+        "reason": "file-budget",
+        "size": 7145
+      },
+      {
+        "path": "docs/getting-started/index.md",
+        "reason": "file-budget",
+        "size": 1691
+      },
+      {
+        "path": "docs/getting-started/install-linux.md",
+        "reason": "file-budget",
+        "size": 2026
+      },
+      {
+        "path": "docs/getting-started/install.md",
+        "reason": "file-budget",
+        "size": 7363
+      },
+      {
+        "path": "docs/getting-started/quickstart-demo.md",
+        "reason": "file-budget",
+        "size": 4794
+      },
+      {
+        "path": "docs/getting-started/quickstart-tutorial.md",
+        "reason": "file-budget",
+        "size": 9243
+      },
+      {
+        "path": "docs/getting-started/remote.md",
+        "reason": "file-budget",
+        "size": 2612
+      },
+      {
+        "path": "docs/git/snapshot-undo.md",
+        "reason": "file-budget",
+        "size": 4654
+      },
+      {
+        "path": "docs/governance/review-charter.md",
+        "reason": "file-budget",
+        "size": 9614
+      },
+      {
+        "path": "docs/gui/index.md",
+        "reason": "file-budget",
+        "size": 3752
+      },
+      {
+        "path": "docs/gui/install.md",
+        "reason": "file-budget",
+        "size": 3455
+      },
+      {
+        "path": "docs/gui/mobile.md",
+        "reason": "file-budget",
+        "size": 3488
+      },
+      {
+        "path": "docs/gui/playground.md",
+        "reason": "file-budget",
+        "size": 3073
+      },
+      {
+        "path": "docs/gui/screens.md",
+        "reason": "file-budget",
+        "size": 6517
+      },
+      {
+        "path": "docs/gui/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 6307
+      }
+    ],
+    "omitted_count": 609,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 7211,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 615,
+      "complete": false,
+      "omitted": 609,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_55055efce662567db2f2f076b4391d3d",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sipyourdrink-ltd/bernstein/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/fa9ff58cd4c4ac48/manifest.json",
+  "package_id": "pkg_d35656f4eefc6dda944e7c427145e3ee4f8cd1a2e729579bcc7304ed8c4fd6ed",
+  "repo": "sipyourdrink-ltd/bernstein",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c3913be729eba5a4a60e9d71a3da547b34d45d4a98122e961bb08352714471d6",
+  "snapshot_id": "fa9ff58cd4c4ac48",
+  "sources": [
+    {
+      "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+      "git_sha": "40dfb30a62327d654040d4675d474d725e80e004",
+      "lines": 279,
+      "path": "README.md",
+      "repository": "sipyourdrink-ltd/bernstein",
+      "sha256": "3e4db73da57f094ec8adb8d6a81317f9628767b0a14eac9e50723480da6b3703",
+      "source_id": "src_d129993ae9a751d88bad1c6df6a96bb0",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/README.md"
+    },
+    {
+      "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+      "git_sha": "463b2c7228b06576d95751dd35566aba77f2f551",
+      "lines": 345,
+      "path": "docs/architecture/ARCHITECTURE.md",
+      "repository": "sipyourdrink-ltd/bernstein",
+      "sha256": "8bf23c11aff12882d688a3d09a607c09f6e9d86bd615d185261cbcaf427fcd6f",
+      "source_id": "src_d9afc24621755158bfc599654af39cac",
+      "stored": "architecture.md-10b457f2fdd4.md",
+      "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/ARCHITECTURE.md"
+    },
+    {
+      "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+      "git_sha": "b70ecd1af9c5104514b5a2b77d32965400e0858c",
+      "lines": 306,
+      "path": "docs/architecture/DESIGN.md",
+      "repository": "sipyourdrink-ltd/bernstein",
+      "sha256": "753faf7935f48a1a0f3ba29db7df157de24472a25afb9dfa9feff9ddbfa1fc92",
+      "source_id": "src_2185696173c65de2a9a6f0440a0c8db8",
+      "stored": "design.md-ebf7ad1fdb2f.md",
+      "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/DESIGN.md"
+    },
+    {
+      "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+      "git_sha": "7a825097d15e881e527cbe3055094ccc422a2571",
+      "lines": 546,
+      "path": "docs/architecture/sandbox.md",
+      "repository": "sipyourdrink-ltd/bernstein",
+      "sha256": "77ab6b4c81c73530b9ddf59bee11e686c2554587c6b9b04b8b304809e09d23da",
+      "source_id": "src_8757588c71b857beb4ea960bd6a50802",
+      "stored": "sandbox.md-00d5cfd9f665.md",
+      "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/sandbox.md"
+    },
+    {
+      "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+      "git_sha": "b4b29c8fe10db1cd3367ad9e34bf36d4d45b4a1e",
+      "lines": 227,
+      "path": "docs/architecture/skills.md",
+      "repository": "sipyourdrink-ltd/bernstein",
+      "sha256": "526f958d36977bfeb17262cdbf64aad7a9d869213d460673dcaa6e741ea6e0a9",
+      "source_id": "src_7ab296d39eb05868a2d151553c0b6f0d",
+      "stored": "skills.md-abdd50e0e1ee.md",
+      "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/architecture/skills.md"
+    },
+    {
+      "commit": "ce5c5217c1dcf0ef9ccfb0d69d1379836f458306",
+      "git_sha": "1e3323b1ef4a311441174912be637a0137728ba6",
+      "lines": 59,
+      "path": "docs/gui/configuration.md",
+      "repository": "sipyourdrink-ltd/bernstein",
+      "sha256": "e688fa0137b5b0ea49ba3134117307e13a7b6d9299222320d2c9155eb1fafdde",
+      "source_id": "src_2d184e449e875bca838af6c974d30174",
+      "stored": "configuration.md-3d856cc03c2e.md",
+      "url": "https://github.com/sipyourdrink-ltd/bernstein/blob/ce5c5217c1dcf0ef9ccfb0d69d1379836f458306/docs/gui/configuration.md"
+    }
+  ],
+  "summary": "The snapshot is README and architecture documentation for Bernstein, an Apache-2.0 beta 'governance layer for AI agents' built around a deterministic Python scheduler, per-task git worktrees, and offline-verifiable audit/lineage records. Evidence is documentation-only; no source code slices are present. Evidence coverage: 109 of 337 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,1030 @@
+{
+  "applied_operation_id": "op_ed9d80b20815458a900d68880e0e916e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed3873f9a5ffeed773b685826a5e5d3968db0d7fc3c0d6fb22dcdf202ffef098",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L20-L20"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72fc7316b7a11a71280564bfae9d2d520cf854e61dc294a38164f0f294169ee9"
+      ],
+      "text": "The orchestrator is an agentic orchestration layer built on Azure AI Foundry Agent Service and the Microsoft Agent Framework, coordinating multiple specialized agents for agent-based RAG workflows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e02f2391364eadb58276d037a4194ba59403ed8aa5e05a0404e77166952589f4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 30,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L24-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_88b5c14ffaa0eb4bd45abd670bc95c20f87906b11770fab4263049ca6e67895c"
+      ],
+      "text": "Five selectable strategies are documented: single_agent_rag, maf_agent_service, maf_lite, mcp, and nl2sql, each keyed by an AGENT_STRATEGY value."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba3d506916aa10d2bf1aadab9ce50b25f98c25f74eead59ab70bcceb54d6b35f",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 137,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L135-L137"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 88,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L82-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a9b507a9b3e9078a2c2d30c59ccba25e08ee9fef4b45f1c32a57396c200867ed",
+        "slc_d34b61364f9b27a5b13e0f08e525b52ec333c98f92d52986dec6d36f1faea40e"
+      ],
+      "text": "The hosted entrypoint exposes POST /responses (Foundry Responses v2 protocol), GET /readiness for readiness probes, and a compatibility GET /health route returning image version and hosted-eligible strategies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1cf55f909357250400eff80514d53ebfa65a2229aa6736b05fe2a8935317f421",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 124,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L90-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73797bb9a5de37595b6c7a56a1af51121b98331e84c1b7c6c6f92a477cd69bc1"
+      ],
+      "text": "The /responses adapter accepts a plain string input or ordered text-only role/content messages, streaming or synchronous execution, metadata, and platform-injected agent_reference; all other top-level fields are logged and dropped."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2a4f0e492707592457823473ed7628fbed12a06ab03e136f69840a111f4701b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 124,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L90-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73797bb9a5de37595b6c7a56a1af51121b98331e84c1b7c6c6f92a477cd69bc1"
+      ],
+      "text": "A non-null previous_response_id is rejected with HTTP 422 so callers must send complete ordered history as input; store is unconditionally overridden to False because the hosted container lacks managed-Conversations data-plane RBAC."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b47d98d3cfbf5efe10d58c08df2b2a1af5de7ba203350858cdd0d421ad7c4ce",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 158,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L146-L158"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_17c38da4bbca87b80bdd3d7aca1d38680fc94a9720c83ce2956964188f76958e"
+      ],
+      "text": "For Toolbox-backed strategies (currently only mcp), x-agent-foundry-call-id is strictly validated (printable ASCII, max 256 chars) and missing or malformed values are rejected with HTTP 401 before any strategy or Toolbox client runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f68b92502c990245a0c898d6a849ee62dcb94c19a027dbd41508e4b1aeff88b1",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 166,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L160-L166"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45959224d50b8319a385d8482e951114a3e8b5e112358cb530a5b5201e8aac00"
+      ],
+      "text": "The container never reads or forwards the Authorization header (stripped by the platform gateway), never trusts caller- or model-supplied identity fields for retrieval security, and never logs call ids or authorization material."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_80a805f59573fb2411919fc956a519e5058d22659062f9bc3676b031b03ce0f2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 37,
+          "line_start": 34,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L34-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32ac0492777699bacf8c3f5ebc05a0c37f8993e4c34f01eb0bd50274316783d2"
+      ],
+      "text": "The mcp strategy runs on Microsoft Agent Framework rather than Semantic Kernel, keeping AGENT_STRATEGY=mcp and existing MCP configuration keys compatible, with sse as the default transport."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_270ad78e50e6265e233e1ba54492678f00f01b63b41b330ae31355538be3975d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 63,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L58-L63"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 56,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L53-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07ebc86699e24d9052dee206821ee12f66fff8e22ee15c060cedd76354c2f858",
+        "slc_265e1c2aeebee413380740fbda5eaa005a85d425cb11add6c42fe8d2d7ec488e"
+      ],
+      "text": "MCP transport endpoints are resolved from MCP_APP_ENDPOINT by appending /sse for sse or /mcp for streamable_http; a conflicting suffix fails strategy initialization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b0302ed285102ccf972a43e98ea37cd87129db280da9a95980c68d5772871bf",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 421,
+          "line_start": 421,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L421-L421"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_df64e8b8da29aa71cbe7ec92cf65446b5abb023c7f0fdd98680b3cd7c9fa658e"
+      ],
+      "text": "The optional admin dashboard reads from the orchestrator's conversation/history Cosmos DB container (CONVERSATIONS_DATABASE_CONTAINER in DATABASE_NAME) and is read-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88df3552dae7dc4ae3f3023b129fd35c0dac57c33dec62723d4bf68fb68dc54b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 423,
+          "line_start": 423,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L423-L423"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8bbe88022a8666831ab60334dc06fc2690bfc7c2a11c2e1b4bba17fa38bf947b"
+      ],
+      "text": "The dashboard is disabled by default; ENABLE_DASHBOARD=true mounts /dashboard, and when false neither the HTML page nor any /api/dashboard/* route is registered."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de3f31d44e8fd1eb7549087575ab0bb8d9e27c8074aef8d663edfb8c910d810d",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 425,
+          "line_start": 425,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L425-L425"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 439,
+          "line_start": 439,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L439-L439"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3e75e775a6c69cc5493b30a538fb255c86d7752f16f37d1858a227c89d65b08d",
+        "slc_a4ef4f536db01c355a213c2cc13ad3ceac7bf4d77cf448a2f9a29cd08ad5cbfc"
+      ],
+      "text": "With authentication configured, /api/dashboard/* routes require a bearer token whose roles claim contains the exact case-sensitive value Admin, except the version and auth-config bootstrap endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_71b3a4ded200df754e32e518f924045edfd17321215a6bf77404a666edbe43b8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 203,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L194-L203"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 182,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L178-L182"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52091c0da13a9b11b2bfd42486789703f7b9892a88da986f928f8afd659adc45",
+        "slc_c8e8802f0f21a8f89e9b561ec8b01ade869c347ea937a2c8096f50886c19493a"
+      ],
+      "text": "Audit events are disabled by default, emitted under the gptrag.audit namespace, and enabling them requires a valid 256-bit HMAC key or startup fails."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b7aa4da8591d41fe9c13fe7b12acfe1f05518041dab3731d64488179ffe036b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 211,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L207-L211"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47a5ce8c8beeaecf81c728efa8c66eaaf4c6a1a206589379c6b5bdbcef5c78ce"
+      ],
+      "text": "Audit budgets are fixed rather than configurable: 64 events per request, 16 complete tool invocation pairs, and up to 25 grounding-source events per request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_891a64b0f6a918b1f2a97d5f31cc2a237a5f8f3c2e2e92edf196500be0811f08",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 250,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L246-L250"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d80f0c64ca45868cdf3e4181ec5582d09ab780a6cf9cebc13dc78b1b6d069fa3"
+      ],
+      "text": "Audit events are best-effort operational telemetry, not an immutable ledger and not a compliance mechanism; disabling auditing stops new events without deleting already-exported telemetry."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0994213b41b7dba63840e64dd46b1e4dbd79d5eaf011c8024931990ea27ec53b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 235,
+          "line_start": 228,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L228-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b86a399553a71d72ac1248583dc293b6dc3b22ddeee3c959577aa84cef7ffbb9"
+      ],
+      "text": "Successful orchestrator and feedback responses return a server-generated X-Correlation-ID (inbound values ignored), which is explicitly not an authentication, authorization, idempotency, or immutability mechanism."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e7b9a74abade31900b167f629277d8e8cb917bf65d8b73b45950cb87be7d6fdc",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 321,
+          "line_start": 321,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L321-L321"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 323,
+          "line_start": 323,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L323-L323"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b6fa9d58cb7210deff09fdad8fb22f9588bdcae5859b3b78c4cb6182c0c04ab",
+        "slc_7cda63049f60591a4cf4d91f50b9e1fbdcc593c20c59bbb19be57f6e7efce37b"
+      ],
+      "text": "The rag and multimodal_rag strategies use Foundry IQ's Knowledge Base retrieve API, with optional opt-in Work IQ knowledge source over Outlook, Teams, and SharePoint/OneDrive data."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_362bdb9afc37add0023c6fa42c325a9de18ce6a3c10cb605cb8c888a7ebb0c63",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 330,
+          "line_start": 330,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L330-L330"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 328,
+          "line_start": 325,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L325-L328"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01be464b74e8d9a2ed06ce89ab3fa3b98c900ddbbb2ebf7ad0074e876415c610",
+        "slc_689f16f8810990f88219ea5c529e08920c406133dd2f2a2660b7eb3a7089ba30"
+      ],
+      "text": "Work IQ is a gated preview requiring admin consent and a provisioned knowledge source; when the per-user OBO token is missing the source is skipped with a warning and managed-identity fallback is never used for remote kinds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_00b44735bc9abe1890598303bb860b865aa2187eef4cab15792c7de6d9e0b590",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 337,
+          "line_start": 334,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L334-L337"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 380,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L377-L380"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d3a8c971924c5559c47038af336ac589ac0f1d97334b2d608acefdbd7a96c170",
+        "slc_e748d239fce5f215f59452a31abecbaa59f1063d3303eb21c6e385031c21059b"
+      ],
+      "text": "Generic MCP Server knowledge sources are a preview feature on API 2026-05-01-preview, disabled by default; when disabled the existing minimal-reasoning intents request is kept unchanged."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1aa85b22e5c45226ac39b000f72a70fd49d1a933565f5976bae2ffad923ce819",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 362,
+          "line_start": 359,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L359-L362"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 368,
+          "line_start": 364,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L364-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bc733f97e1abf1dfa64a438c803cfde570f6a4fca2068b431655c16a0c67aaeb",
+        "slc_c0d6ee7ed24b7bec4ac73f441388d96cff70fda8daccfe5348f350a83f926913"
+      ],
+      "text": "MCP knowledge-source query headers support managedIdentity, obo, keyVaultSecret, or none value kinds; literal header values and secrets are rejected, and trusted hosts require exact HTTPS matches."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_489cd8435f805b2ba8158518267ea09ea5484133a21e81b2c8df057227361c70",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "dc8b45f9f11d59d1c264fc24c05e85c0168713bb",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/pull_request_template.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/docs/pull_request_template.md#L5-L5"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "dc8b45f9f11d59d1c264fc24c05e85c0168713bb",
+          "line_end": 61,
+          "line_start": 57,
+          "path": "docs/pull_request_template.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/docs/pull_request_template.md#L57-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d7cfc8a2acde1c01fe429a60c81e07d2d3bb10c45decdb2920f2afa3ef285a38",
+        "slc_eb0c8664bf786cec840751ee0d31c6f2c5faa223e944e34956d831f568de284c"
+      ],
+      "text": "Repository development practice: the PR template requires all pull requests to target the develop branch, with PRs targeting main automatically blocked, and asks for at least two reviewers plus local verification and CHANGELOG updates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62a2c02a16f0f6d28541deecb283e78a511047156cb62f13f5f7cd114549b082",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "8ad59e0f75684028972781ca47c2aee228f9db9d",
+          "line_end": 22,
+          "line_start": 21,
+          "path": ".pr-body.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.pr-body.md#L21-L22"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "8ad59e0f75684028972781ca47c2aee228f9db9d",
+          "line_end": 19,
+          "line_start": 15,
+          "path": ".pr-body.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.pr-body.md#L15-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_efae723482a1247704ea1ae35c3be0c4fedc1646e76ae8a7858d44db09523cd1",
+        "slc_fe8793e15f6442ed1ef94c348558e7ac810aa399b34d30e435c22dfcab7534f5"
+      ],
+      "text": "Repository development practice: the v2.8.12 PR reports pytest tests/test_dashboard.py with 25 passed, npm run lint with zero warnings, and a clean vite production build."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b5b7c7e8bf844ab2af15582959168659e9150f4a2d04da46d8ffc3a70c95d84c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 461,
+          "line_start": 461,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L461-L461"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 474,
+          "line_start": 468,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L468-L474"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1725e3818f344a00f25c23ffc312c4d9edc9605cd744a926885dbb25d8b2a7dc",
+        "slc_b0b9cfa430842b81f38f70c474336e2aeeb1396b36268ea77c98b379910309fe"
+      ],
+      "text": "Deployment prerequisites include Azure CLI, Git, Python 3.12, and Docker CLI, with Azure Developer CLI optional and VS Code recommended; infrastructure must be provisioned from the GPT-RAG repo first."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d8a530d5a2deb8a71030e37889b1b0d11f521aa5a0fc33b15f3a639167b072a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 127,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L126-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fb10bbce5ca9bbc5ed2df1160e29109aae8d6b70fd7104b4ac7f87a12208b5f4"
+      ],
+      "text": "The runtime image pre-caches its tokenizer during build so hosted requests need no public Blob Storage egress in network-isolated environments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f563beb5627f7e337cb490181da0f0a04a31eac660edbccd3f444d696b5ffe8a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 133,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L129-L133"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57d4aa90d14e69aa14e739d201f0793e9dc11ac430211e32f369d66cd6e60441"
+      ],
+      "text": "The hosted Responses server disables generative-AI prompt and completion capture in OpenTelemetry by default; OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT=true should be set only when data policy permits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f934d32b92f56adc7e8ff70148f3d80e3269d740a3cfceb09b2348bb3229d4b1",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 300,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L292-L300"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1379c9fb1403ae93c7e0b7c57288563223d177f2605148e891a82c46ef99d434"
+      ],
+      "text": "Foundry IQ exposes MCP activity only after completion with no pre-invocation callback, so started-event timestamps for foundry_iq.mcp_tool are reconstructed and approximate, not proof of actual execution start."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57f20265f7bc0ba09258bfc19d117057075299e74cd36ad817deb4b6e1b4f75d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 282,
+          "line_start": 280,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L280-L282"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 312,
+          "line_start": 302,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L302-L312"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_396d80b1e72de2f83c198c4505fb01e690de40f9afb1aa0d6aacc8bb664089bc",
+        "slc_d7167a8137626bdbf6543ca5e70cf54fc2202a0abddf24615ae93bb302a69ea4"
+      ],
+      "text": "The reusable v1 audit event JSON schema lives at contracts/audit-event-v1.schema.json, with an Application Insights wire schema and SHA-256 digests recorded in contracts/audit-event-v1.sha256."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2b4dbbd6de5c0a1589cc4dfdb0cd0206cd67768881058b93217b48d449b1e673",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 290,
+          "line_start": 289,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L289-L290"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 287,
+          "line_start": 284,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L284-L287"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d9a511d32244f6c6177c91cb09d4a2894c94e1a39dafc40d93c965afc04ee74",
+        "slc_d1e6e1b4efc3591776d9eb7bffab18366812ed7db2682b27edba82735d701ec9"
+      ],
+      "text": "Ingestion audit event names (ingestion.run.* and ingestion.document.*) are part of the shared v1 schemas but are not emitted by this repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4117f77d4ae6db652890eaa850ccadc8072a9b90acfcebda6f0c9c9aedec0fde",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+          "line_end": 317,
+          "line_start": 316,
+          "path": "README.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md#L316-L317"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6374f514ca38f89058fcfa4aa9936d74551ce44dcb1e18e099e448eea2233612"
+      ],
+      "text": "For nl2sql, datasources must use a least-privilege read-only principal with only needed SELECT grants; the orchestrator validates generated SQL before execution but database permissions remain the primary security boundary."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c0b240267b6786937c6e46b7c1846ac2b49860929e5038053ad74011ca4a5b5a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "35aa1250fa8d578ca73ffd819048e8257ab6de70",
+          "line_end": 1,
+          "line_start": 1,
+          "path": ".image-tag.txt",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.image-tag.txt#L1-L1"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "1bb6b9595260ee99c228042270becdc693aea9e1",
+          "line_end": 3,
+          "line_start": 3,
+          "path": ".release-notes.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.release-notes.md#L3-L3"
+        },
+        {
+          "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+          "git_sha": "8ad59e0f75684028972781ca47c2aee228f9db9d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": ".pr-body.md",
+          "repository": "azure/gpt-rag-orchestrator",
+          "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.pr-body.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14a1643a8e6dd91624989f219932e71bb18ed41f7d0edbb85303283505c28d42",
+        "slc_1e7b4fb7e0df786e2942831d5b12bbe26915e2c756e1f0cc1847cf216b651941",
+        "slc_64fff221e2d3134310d1a97129b41186e158526dafad516cf4de2f3d284992d3"
+      ],
+      "text": "The repository snapshot carries image tag v2.8.11-c840851, while PR and release notes describe a v2.8.12 set of five operator-dashboard fixes."
+    }
+  ],
+  "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 531,
+        "path": "README.md",
+        "size": 34503
+      },
+      {
+        "lines": 1,
+        "path": ".image-tag.txt",
+        "size": 15
+      },
+      {
+        "lines": 24,
+        "path": ".pr-body.md",
+        "size": 1668
+      },
+      {
+        "lines": 16,
+        "path": ".release-notes.md",
+        "size": 1209
+      },
+      {
+        "lines": 58,
+        "path": "requirements.txt",
+        "size": 1350
+      },
+      {
+        "lines": 61,
+        "path": "docs/pull_request_template.md",
+        "size": 2188
+      }
+    ],
+    "omitted": [
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 9380
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 98466
+      },
+      {
+        "path": "LICENSE.md",
+        "reason": "file-budget",
+        "size": 1160
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2798
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 275,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 4,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_0075edfca7de536ab639beca7cf833a0",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 9,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 4,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 4,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/azure/gpt-rag-orchestrator/9b64a5b962067161cb55252c6e0917a2738ba984/6d6e1636c9e5b9d8/manifest.json",
+  "package_id": "pkg_2d0b4ad4fd2261dfe3322a76d0f636dcc5bbe5bd0d035c96e17b769b90205ea9",
+  "repo": "azure/gpt-rag-orchestrator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "634a00e3b6c93617022a4f6692b74602bb3e1f938635990c0a79fce8d8dad5d3",
+  "snapshot_id": "6d6e1636c9e5b9d8",
+  "sources": [
+    {
+      "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+      "git_sha": "35aa1250fa8d578ca73ffd819048e8257ab6de70",
+      "lines": 1,
+      "path": ".image-tag.txt",
+      "repository": "azure/gpt-rag-orchestrator",
+      "sha256": "1fec3c7b2ca98555e1f94d52f788b3196c2e727fd4d16853e80d2e0cffdfb6d0",
+      "source_id": "src_64f1e38297f254228af5923e45d42236",
+      "stored": "image-tag.txt-7af4cb9f1bbe.txt",
+      "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.image-tag.txt"
+    },
+    {
+      "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+      "git_sha": "8ad59e0f75684028972781ca47c2aee228f9db9d",
+      "lines": 24,
+      "path": ".pr-body.md",
+      "repository": "azure/gpt-rag-orchestrator",
+      "sha256": "358abb5e9bc3d4aa070a7b53e62480c84c9caa0afe19c0f99359f040eaa16b2f",
+      "source_id": "src_b268ba3c0ea15499b135d9af9cf19721",
+      "stored": "pr-body.md-3f7df98e9377.md",
+      "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.pr-body.md"
+    },
+    {
+      "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+      "git_sha": "1bb6b9595260ee99c228042270becdc693aea9e1",
+      "lines": 16,
+      "path": ".release-notes.md",
+      "repository": "azure/gpt-rag-orchestrator",
+      "sha256": "097278c477917dbba5292faaefbd7f1726a292086a6c1aaad1b4d999734b523c",
+      "source_id": "src_641e0890516e52a5b7f2503a9d43640f",
+      "stored": "release-notes.md-89defa347f3b.md",
+      "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/.release-notes.md"
+    },
+    {
+      "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+      "git_sha": "6ac7c4075f6aac30e19287b94ad3313bab328fb3",
+      "lines": 531,
+      "path": "README.md",
+      "repository": "azure/gpt-rag-orchestrator",
+      "sha256": "c98278ab7f790e31276424b034d83a875af694b7547c333fe4063cd5c730dc34",
+      "source_id": "src_8d19410fbabb5087922c4dda16a4d488",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/README.md"
+    },
+    {
+      "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+      "git_sha": "dc8b45f9f11d59d1c264fc24c05e85c0168713bb",
+      "lines": 61,
+      "path": "docs/pull_request_template.md",
+      "repository": "azure/gpt-rag-orchestrator",
+      "sha256": "18eb2ad50ac8c02d48503eda2b6c3860f4dd0d97a77cd296d76dda5ae6def11a",
+      "source_id": "src_d57394d9027e5002ba5228a1062b9199",
+      "stored": "pull_request_template.md-d915bbd02901.md",
+      "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/docs/pull_request_template.md"
+    },
+    {
+      "commit": "9b64a5b962067161cb55252c6e0917a2738ba984",
+      "git_sha": "05673c3b0d741e1675377ff4456c59b50b2ff370",
+      "lines": 58,
+      "path": "requirements.txt",
+      "repository": "azure/gpt-rag-orchestrator",
+      "sha256": "56df4b1aa485d18bda942e69e630e46afd8e33f93b8158561b24f1bb19bac427",
+      "source_id": "src_b52cfd8c84d25e0183b5b2c871e7ee6f",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/Azure/gpt-rag-orchestrator/blob/9b64a5b962067161cb55252c6e0917a2738ba984/requirements.txt"
+    }
+  ],
+  "summary": "The evidence is a README (plus PR/release notes and a PR template) for the GPT-RAG Orchestrator, an agentic RAG orchestration service on Azure AI Foundry Agent Service with multiple selectable strategies, MCP/Toolbox identity passthrough, audit events, and an optional admin dashboard. No code is shown, so claims are documentation-based. Evidence coverage: 116 of 128 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

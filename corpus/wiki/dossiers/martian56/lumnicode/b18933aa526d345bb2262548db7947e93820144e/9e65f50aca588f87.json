@@ -1,0 +1,645 @@
+{
+  "applied_operation_id": "op_a4342a5e30ab4b44b344032e6b744384",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_51b109ad3d2a14ac7739e99547240f3e1f8bed3ac2737586fde91bd3a74e640d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L22-L22"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b5e72f21b5dac2f12b60a6401e95add7407f42b2545ccd5311ea4b364a37b913",
+        "slc_de170a94b0815edd21245d1139b9d8dcb03d96df9a3108ec333f65b769fa7513"
+      ],
+      "text": "Lumnicode is described as an online code editor with built-in AI assistance where users supply their own API keys from supported providers, with no subscriptions or per-seat pricing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9734362a804a2ceeafe797c8eb969ea197fb4afc25a35bb086c62b417d221fdf",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 110,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L91-L110"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 122,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L114-L122"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 134,
+          "line_start": 126,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L126-L134"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78b129f47d11b036a6cf44fcacb27f6f14ff1863b43566c52642143c8c1a3c18",
+        "slc_7e057add0b1f40292ebc0a52d90be88d91dc028ed340e10420efbd9b77f5efc0",
+        "slc_b36e4465f96e38f49329fb927c982da3805a483b030fe41a0dc9bf0fcec58da9"
+      ],
+      "text": "The architecture pairs a React SPA (Vite + TypeScript) frontend with a FastAPI Python backend, backed by PostgreSQL for metadata, MinIO/S3 for file content, and LangChain-based AI providers, connected via REST, SSE, and WebSocket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ddf70d3d94108b05b1b5f63507ebc6189aaa31f51ed2cf30c101f63587a8c0e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 110,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L91-L110"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 33,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L26-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_78b129f47d11b036a6cf44fcacb27f6f14ff1863b43566c52642143c8c1a3c18",
+        "slc_d1fc0ac838f9c13df3704dc0f9321b5626bef43434fa9e8f6d90d44e473c1f47"
+      ],
+      "text": "File content is stored in S3-compatible storage (MinIO in development) rather than the database, with the database holding project and file metadata."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6a44308eedd03e83ed8ea22e202a97a67a1f1af2adf66fe52e3e10f5f96ff1d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 214,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L205-L214"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 201,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L200-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_338e344a8f06d83104ae8bef69c77925ac3f2b75274d439345f048c59ced15e9",
+        "slc_7e4abcdc1475b3c3e70dcb2a4821f468e9ada7e64b51f6e5dcaecdd880c37db8"
+      ],
+      "text": "The backend exposes REST endpoints such as POST /assist, POST /assist/stream (SSE), project and file CRUD, POST /ai/generate/{id}, and a WebSocket /ws/ai-progress/{id}; interactive docs are served at /docs and /redoc."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9386153183ad98e986b3886604f13356f352797543f0fef468a569f7f49bb057",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 158,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L138-L158"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 33,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L26-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a490f4bbe9b4ad98cd539c247433d8465ce32e1358d801dd78b7a86722d2ee2",
+        "slc_d1fc0ac838f9c13df3704dc0f9321b5626bef43434fa9e8f6d90d44e473c1f47"
+      ],
+      "text": "AI project generation is orchestrated by a LangGraph state machine with four nodes — plan, config, generate, finalize — streaming progress to the frontend over WebSocket."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e83aaafb8e7cc6e488ebf6b95193a6979569d9e9eb8f5ae3df62fea7feef59c1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 122,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L114-L122"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 170,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L162-L170"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 33,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L26-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7e057add0b1f40292ebc0a52d90be88d91dc028ed340e10420efbd9b77f5efc0",
+        "slc_a8344f05e852df36d8b8bd54e3fae0a6afe4e139845900c005f0f055153c5bea",
+        "slc_d1fc0ac838f9c13df3704dc0f9321b5626bef43434fa9e8f6d90d44e473c1f47"
+      ],
+      "text": "Supported AI providers include OpenAI, Anthropic, Google Gemini, Groq, Together, Fireworks, and Cohere, with several accessed via OpenAI-compatible APIs; the backend uses LangChain/LangGraph and uv for dependency management."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bfedbfe2367693ecefbb462627e829f3364d2316c7fe190467f219dd285bf14d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L87-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_988e7ec8d49a8be3b8c08782909806ed270f01b38a9bdbe4a640509f23b392cd"
+      ],
+      "text": "Users add their own AI API keys through the app's Settings > API Keys page after signing in with Clerk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5af34905b21cbe916f3053470488a912f8e6467994ef234623ab3c5a8b83cf96",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 83,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L78-L83"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 74,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L68-L74"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 62,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L58-L62"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L64-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09d451a9e78c0c82413f8662bc50581f982d6d41c4009b66d258701b492b408f",
+        "slc_0ca519a39f843c09a63abd2d4edf72388599cd8c0e704911580e1fa9f636d851",
+        "slc_37b6ef4f01c5710a829aba41d0ea6c7828de58a7620d47b45cfc22f5212c79f0",
+        "slc_a61bfc19cc8e4d465f207fb2777a87d6eea5fe4e51b3137a9f69ddb9a9195767"
+      ],
+      "text": "Repository development practice: local setup starts Postgres and MinIO via docker-compose.dev.yml, then runs the backend with uv (uv sync, alembic upgrade head, uvicorn) and the frontend with npm install and npm run dev."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_874515dc6ce26f9afe32b48d759d5fe1d1bd7721732a81456e45bf1dfd0ca6e9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+          "line_end": 78,
+          "line_start": 74,
+          "path": "CONTRIBUTING.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md#L74-L78"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 223,
+          "line_start": 220,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L220-L223"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+          "line_end": 95,
+          "line_start": 91,
+          "path": "CONTRIBUTING.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md#L91-L95"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+          "line_end": 72,
+          "line_start": 66,
+          "path": "CONTRIBUTING.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md#L66-L72"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 229,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L226-L229"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04086c9c652a1e7dd11eb5e7361d4dbbfc617894e80a803615ab929dc275c1ee",
+        "slc_589cb8d4e20770ffa9360932ab546ccfb55c216cd9d7c9b50a2d112cedd92253",
+        "slc_75d0df34c6a50c23d887859751413bb763742a43248f2922400e9fafbd2e61cc",
+        "slc_a4de8af33edd3ce552c291f3210dd9fb10bc84273cd4387a94091a46e4f60647",
+        "slc_f467ced253591219ef689a54c6127260b164d04cf2d1e9b29ec3de5e31d5a41e"
+      ],
+      "text": "Repository development practice: contributors run Black and Ruff plus pytest for the backend and ESLint plus a typed build for the frontend before committing; Python style is Black at line length 88 with PEP 8 and type hints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a6d57640042f6747e356c12ef028740b788837cdf5f1503e1ab423292ff4dc6d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+          "line_end": 53,
+          "line_start": 51,
+          "path": "CONTRIBUTING.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md#L51-L53"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+          "line_end": 62,
+          "line_start": 57,
+          "path": "CONTRIBUTING.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md#L57-L62"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "CONTRIBUTING.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md#L85-L85"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+          "line_end": 164,
+          "line_start": 161,
+          "path": "CONTRIBUTING.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md#L161-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d17da8cd178f9ee86f5e106b90ec23f520e6160af4850ad098c43b22303a0ec",
+        "slc_76dcb19028a321bf394346b94aff5d9abd6efdac9bb11f3bad338555ca7f279f",
+        "slc_7b1018b76c73d159adf57078261c5e7b9a70a3e634250c62c6ed0df0798f0fdd",
+        "slc_cb5a7e1b2f04c3f85ef285218910c25070443144cecf81938ba7254ce994c755"
+      ],
+      "text": "Repository development practice: feature branches are cut from develop using feature/, hotfix/, and release/ prefixes, and pull requests against develop should pass checks, get maintainer review, and squash commits when possible."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b14889c714be84e4e33443b5d4839999c8f57936494ffd20339df24622312365",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "1d903b995c04df387819c19d295031474c224665",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "SECURITY.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/SECURITY.md#L16-L16"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "1d903b995c04df387819c19d295031474c224665",
+          "line_end": 29,
+          "line_start": 27,
+          "path": "SECURITY.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/SECURITY.md#L27-L29"
+        },
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "1d903b995c04df387819c19d295031474c224665",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "SECURITY.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/SECURITY.md#L14-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_225a6bf4f335c3346a231a51814a2595fda6a7b68352441e64847b7a3bd54f5a",
+        "slc_4bb9b74847fec7cbd22df04f73a951ac52c3ef9d7a8a304f7dcf436a72b9b99c",
+        "slc_6143e521652cd338c882374ffec70a686378f120a1db53f6a2b25eab6eb39f82"
+      ],
+      "text": "Repository development practice: security vulnerabilities must not be filed as public GitHub issues; they are reported by email with a stated 48-hour acknowledgment and 30-day fix timeline for critical issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_65ace3a972a28f67ebf1a34640a935a320838b36c5e5d084ae23f6b4c028edef",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b18933aa526d345bb2262548db7947e93820144e",
+          "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+          "line_end": 268,
+          "line_start": 263,
+          "path": "README.md",
+          "repository": "martian56/lumnicode",
+          "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md#L263-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cad5c67742d4c28f1b2e17104b46a06cf0a3a8e82c62fd5968bb7a4332408b9e"
+      ],
+      "text": "The README roadmap lists real-time collaboration, Git integration, a terminal emulator, a plugin system, a self-hosted deployment guide, and a mobile responsive editor as unchecked, i.e., planned but not yet delivered."
+    }
+  ],
+  "commit": "b18933aa526d345bb2262548db7947e93820144e",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 306,
+        "path": "README.md",
+        "size": 9927
+      },
+      {
+        "lines": 152,
+        "path": "docs/developer_guidelines.md",
+        "size": 3443
+      },
+      {
+        "lines": 85,
+        "path": "CLAUDE.md",
+        "size": 4939
+      },
+      {
+        "lines": 51,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 1878
+      },
+      {
+        "lines": 168,
+        "path": "CONTRIBUTING.md",
+        "size": 4754
+      },
+      {
+        "lines": 55,
+        "path": "SECURITY.md",
+        "size": 1416
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 149,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_8bc3681ecd9b55f480ff29520dcc8fff",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 4
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/martian56/lumnicode/b18933aa526d345bb2262548db7947e93820144e/9e65f50aca588f87/manifest.json",
+  "package_id": "pkg_88d4fd138e66fc2110071ceaa40eb29c16f1066c1fd586caae04f129a1605d5d",
+  "repo": "martian56/lumnicode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "c070ea1d6920e0e81ef54a8d6c3d596ea63de3b8ac23d076bbc70ef40544932d",
+  "snapshot_id": "9e65f50aca588f87",
+  "sources": [
+    {
+      "commit": "b18933aa526d345bb2262548db7947e93820144e",
+      "git_sha": "1369bb9d1d15a14d9a25953aa786f83326b38266",
+      "lines": 85,
+      "path": "CLAUDE.md",
+      "repository": "martian56/lumnicode",
+      "sha256": "b4cfcc7898d4aeb4285fe51d818b863f968d53318e33f805fa8d779d6e9ad2ed",
+      "source_id": "src_84ea9e0acb9f507e8e69ec32f8e9e98a",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CLAUDE.md"
+    },
+    {
+      "commit": "b18933aa526d345bb2262548db7947e93820144e",
+      "git_sha": "f5a39a65471ca7093cfc7783d668e7a3697ce613",
+      "lines": 51,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "martian56/lumnicode",
+      "sha256": "5f02b520c0362fcc89f407bd16edb202e2f4ebd16d10d0971a278cc0d3dc586c",
+      "source_id": "src_4c6a4fc9d4f55e37b504bcebff3ec834",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "b18933aa526d345bb2262548db7947e93820144e",
+      "git_sha": "68878d7ec2710f0f08fcb27265fa4169a19e2a51",
+      "lines": 168,
+      "path": "CONTRIBUTING.md",
+      "repository": "martian56/lumnicode",
+      "sha256": "a35c13dca97e63b39dd85fe2bb3b0cb78db654b7fd5daf62bf95aa45f0ac6ce0",
+      "source_id": "src_cbb8f007ad5c581ab09ea1d380346014",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/CONTRIBUTING.md"
+    },
+    {
+      "commit": "b18933aa526d345bb2262548db7947e93820144e",
+      "git_sha": "3bfa9c35ab6f527a8ce0b19ebc733353e2188ad8",
+      "lines": 306,
+      "path": "README.md",
+      "repository": "martian56/lumnicode",
+      "sha256": "f705f74001322d8bcea966b09215ea7fc4ca06a6aeb73517b663505328a3f936",
+      "source_id": "src_bfcbe37df9b851d5b8601f09176ac730",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/README.md"
+    },
+    {
+      "commit": "b18933aa526d345bb2262548db7947e93820144e",
+      "git_sha": "1d903b995c04df387819c19d295031474c224665",
+      "lines": 55,
+      "path": "SECURITY.md",
+      "repository": "martian56/lumnicode",
+      "sha256": "8d0d095985bcab32551801dae2c52ddb79576b2e224bd3470a90d086b0763bc4",
+      "source_id": "src_037805576e9a502ea87c4261b027a7f2",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/SECURITY.md"
+    },
+    {
+      "commit": "b18933aa526d345bb2262548db7947e93820144e",
+      "git_sha": "d76e8f6b4dc7b36ed0d0ed9d106734370cbb0893",
+      "lines": 152,
+      "path": "docs/developer_guidelines.md",
+      "repository": "martian56/lumnicode",
+      "sha256": "659b4f45409b4651742c98b0594021d7b18100550dc15ef788c0fc636c80b03e",
+      "source_id": "src_eade86e5be4c5a008783a7bbe599bb7d",
+      "stored": "developer_guidelines.md-351f2a4249bd.md",
+      "url": "https://github.com/martian56/lumnicode/blob/b18933aa526d345bb2262548db7947e93820144e/docs/developer_guidelines.md"
+    }
+  ],
+  "summary": "README-documented snapshot of Lumnicode, a BYOK AI-powered online code editor with a FastAPI/React architecture, LangGraph-based AI generation, and S3 file storage; contributor guides cover setup, style, and PR workflow. No agent-performance evaluation evidence is present.",
+  "superseded_claim_ids": []
+}

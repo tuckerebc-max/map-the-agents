@@ -1,0 +1,1176 @@
+{
+  "applied_operation_id": "op_9d255cbaafe64bd4bbb7cf151b1b2751",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a4916dd5bc6963ea37cea113cedaea187e167d96cc4442d78b02b4b00ba984a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 68,
+          "line_start": 61,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L61-L68"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b36ccd1af9c2fd7487f8fa17abada47e7a0e7c55253d7f814a569e18df895efa"
+      ],
+      "text": "The architecture is described as Guard modules around coding agents: Context, Hallucination, Boundary, Regression, Evidence, Impact, and Loop Guards, plus an Executor Adapter and Trace Normalizer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e6c402bbfa9db0f736dea9ecf2172bb812f08ea2fbc3343c7a1335856e05adb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 149,
+          "line_start": 145,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L145-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cab66952cf84209e62067fde3ba259384c2b97b9fe3f36fc67d086380f24f009"
+      ],
+      "text": "The v2 architecture has five responsibilities: Repo Scanner, Context Planner, Context Pack Composer, Agent Harness Layer, and an Integration Layer exposing CLI, stdio MCP server, and retriever adapters."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86b1491f8552eb44bc3212aaebcbd24ef94d8229cb18d0c44eeddaf1d11405e9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_928e45e5f2e65216f62ebedddb63e6fa9c74eb03c7abf82701622028c21d7d51"
+      ],
+      "text": "The Windows installer adds a selectable OpenCode primary mode named OpenCode++ chosen from the mode picker, with no Slash Commands to remember."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e5220aead22c812ec249be6580763989d48953c8f8b1e0a192f13dceb35e99ed",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 149,
+          "line_start": 145,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L145-L149"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cab66952cf84209e62067fde3ba259384c2b97b9fe3f36fc67d086380f24f009"
+      ],
+      "text": "Documented MCP tools include opencode_plusplus_build, plan, pack, retrieve, tests, impact, verify, and explain, plus experimental runtime loop tools for start/evaluate/repair/finalize flows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cf859cfb002088c1cde2700bca96d733a8a447f98c2847a294417de7fb108001",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 90,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L90-L90"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c79e259f081bd3c285a7bc233b5620bb7218b19e239eaaf0efa504d700fa5924"
+      ],
+      "text": "Desktop results default to a compact Verified, Repair required, or Human review status, with structured JSON containing an actionSummary of observed, prevented, requested, repaired, verified, and unresolved items."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_35454948309d6e8a93ea6dc8c844098d21097f1fad274250449c8ba6d1494ba1",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dde7b6bb2150414e81df051800b54a1f30bdd7a39a1f78f18d769ac98e5f761a"
+      ],
+      "text": "The Command Guard represents repository semantics: it can defer operations as approval-required or hard-stop policy-blocked destructive commands, protected paths, unknown project commands, or evidence tampering; native auto approval cannot override the latter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6db76b511b4e0757606e6e78946f762eea12f230874571947b7f8e5cf7eb718e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L86-L86"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19da749795a8bffd4016389564661f1a10039ae5f8d7c80ed61b3548082828b8"
+      ],
+      "text": "The plugin explicitly is not an operating-system sandbox; it cannot stop another application from editing a file or prove business semantics from an exit code."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2497cb3e3c24a6c42b4703774043b26d17a6b3ffa14d90290dabd285faf69196",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 84,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L80-L84"
+        },
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 104,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L104-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_129e9ea464f8bff53b6e36475b5f800bc64ff6923260549fb9c209d76a3353fe",
+        "slc_f3df1487adbb9f6c9e8610f43d79b2364478d25d521887d9b9b38b4c21989bc2"
+      ],
+      "text": "Runtime artifacts are local per repository: traces, runs, loops, sidecar latest.md and visualization.json, plus cache, context-registry usage/feedback, annotations, and interventions directories under .agent-context/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9c833ae391b9e0006427e8438706b0d699baaec5f1fe3e0bce087b4678115cb7",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 334,
+          "line_start": 334,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L334-L334"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f6f42b73cf0b24bb6f9263594c82e947d3db3fbead5b5d9ce424237395ae7f0"
+      ],
+      "text": "The loop state file records state, previousState, repository/context/diff hashes, lastAction, blocking nextAction, allowedActions, satisfiedEvidence, and missingEvidence for resumable runs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_368005b66b4e53e89a1e2acb5fb5bae43c3caa9a9bd21f6f7d9624e785e51087",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 157,
+          "line_start": 155,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L155-L157"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_012fe26e21b6e25e3d3cf2098df4e28291eb26b63f1e93b336ab11b0a99e1695"
+      ],
+      "text": "A harness-led developer mode, opencode-plusplus orchestrate, runs a bounded loop (task, prepare, execute, collect, evaluate, decide, persist) around an explicitly configured executor, reporting finalize, repair, repack, block, rollback, or human-review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ddc9a086391a35f3908fbb8272286a6c758c3c2a6afdfe7ea210073e34b17302",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 330,
+          "line_start": 330,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L330-L330"
+        },
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 328,
+          "line_start": 321,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L321-L328"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_063e446716796abb3ea27bd9e39051416d2dc634f8be4d74b2e365441bb34600",
+        "slc_3b3a76c7ea0a15a198a70735838166573c0770c2c61d6b92fe3a411c3c6a0b75"
+      ],
+      "text": "The loop controller decides next steps such as start-agent, rebuild-context, replan, expand-context, repair-contracts, add-or-update-tests, run-tests, or ready-for-review, each with a confidence score and blocking flag."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49cecca808c9b69673572d73ea82b182f6e3a8e3c3be5d181df0dacadcff8d49",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 48,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L48-L48"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_744343c21d4a1baed3fad977101e0703713f3004e0820b293a8236415e31e004"
+      ],
+      "text": "By default the plugin works offline: it does not fetch remote Context sources or call a second model; remote sources or feedback transports must be explicitly enabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c91721ef053953c0cf728c2c5a45f19c6b2ee4630c8f8ce774bcb08a8bc23505",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L44-L44"
+        },
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L92-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_416895df07eb860d7c6188674bb0eb6d26a6c7597c67eb8437ace1d51dc5d90d",
+        "slc_613a10e0c264ba44d931ab64fb269ad12f652ab880c78cbf72f1ff2e844ef8bd"
+      ],
+      "text": "The plugin runs in-process inside OpenCode Desktop, does not start a second model or CLI process, and does not expose hidden model chain-of-thought."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5bf6237f880c0d6a1295194e977d94214dd8e35c65a7c44740c298725007698f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 271,
+          "line_start": 271,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L271-L271"
+        },
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 196,
+          "line_start": 194,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L194-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d0d3ee95d66f6d68761f66c43067c232d283157f1a8286f9fca0f0eda7a5640e",
+        "slc_da68606139919518be591b5a0ddedeec8d88662f80785f4429a79e5f0e2b88f8"
+      ],
+      "text": "Indexing uses the TypeScript Compiler API for TS/JS, optional Tree-sitter for Python with stdlib AST and regex fallback, and generic metadata for other files; real tokenizer modes use js-tiktoken with a chars_approx fallback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dfedc3d12440d425f2ce8f6881281c57b133753d9b037201982221e7b52afa56",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L86-L86"
+        },
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L96-L100"
+        },
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 34,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L28-L34"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19da749795a8bffd4016389564661f1a10039ae5f8d7c80ed61b3548082828b8",
+        "slc_d546df9452fe3ef39af1ff667a2bc7af3a4d5fbe631e3cba3a92817148c61e20",
+        "slc_e0d6c035c5eb5c43195b35155daf656abdba6bd7afedb8f43659b333f271859c"
+      ],
+      "text": "A passing command alone is evidence, not a correctness proof; verified fixes require fresh command or CI evidence matched to the current working tree, and blocking results require repair or human review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_af975098dfe5e6c90cec3cae92ed1a0547cd6f25c6568b6208cd03c8b5487095",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+          "line_end": 131,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md#L125-L131"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d4eb4a8e14bd4fe82b2f0737ce47d43672e9f444c50b640ed91cfe3e77cbf3f7"
+      ],
+      "text": "Repository development practice: contributors fork, read AGENTS.md, add deterministic tests before behavior changes, keep runtime artifacts out of commits, and run npm run check, lint, format:check, docs:bilingual:check, and npm test."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b10e31b6d60b0c5864dbe169525dc05ca1da7088b10f4057f5ca5ea610642038",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+          "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+          "line_end": 159,
+          "line_start": 159,
+          "path": "docs/concepts/architecture.md",
+          "repository": "whut09/opencode-plusplus",
+          "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md#L159-L159"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5627baa40030b4b9300f00e3a52bc532d0590592a3af394ce39b99888443d5cd"
+      ],
+      "text": "The project targets helping coding agents safely complete concrete changes, distinguishing itself from repo summarizers, README generators, and raw RAG loaders."
+    }
+  ],
+  "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 141,
+        "path": "README.md",
+        "size": 11718
+      },
+      {
+        "lines": 7,
+        "path": "docs/architecture.md",
+        "size": 238
+      },
+      {
+        "lines": 464,
+        "path": "docs/concepts/architecture.md",
+        "size": 28994
+      },
+      {
+        "lines": 104,
+        "path": "docs/reference/config.md",
+        "size": 3288
+      },
+      {
+        "lines": 30,
+        "path": "CONTRIBUTING.zh-CN.md",
+        "size": 1153
+      },
+      {
+        "lines": 5,
+        "path": "README.en.md",
+        "size": 269
+      }
+    ],
+    "omitted": [
+      {
+        "path": "README.zh-CN.md",
+        "reason": "file-budget",
+        "size": 10454
+      },
+      {
+        "path": "docs/agents-md.md",
+        "reason": "file-budget",
+        "size": 6846
+      },
+      {
+        "path": "docs/agents-md.zh-CN.md",
+        "reason": "file-budget",
+        "size": 6958
+      },
+      {
+        "path": "docs/architecture.zh-CN.md",
+        "reason": "file-budget",
+        "size": 270
+      },
+      {
+        "path": "docs/getting-started.md",
+        "reason": "file-budget",
+        "size": 3698
+      },
+      {
+        "path": "docs/getting-started.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3435
+      },
+      {
+        "path": "docs/guard-modules.md",
+        "reason": "file-budget",
+        "size": 126
+      },
+      {
+        "path": "docs/guard-modules.zh-CN.md",
+        "reason": "file-budget",
+        "size": 145
+      },
+      {
+        "path": "docs/integration-modes.md",
+        "reason": "file-budget",
+        "size": 299
+      },
+      {
+        "path": "docs/integration-modes.zh-CN.md",
+        "reason": "file-budget",
+        "size": 279
+      },
+      {
+        "path": "docs/loop-engineering.md",
+        "reason": "file-budget",
+        "size": 138
+      },
+      {
+        "path": "docs/loop-engineering.zh-CN.md",
+        "reason": "file-budget",
+        "size": 163
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 5935
+      },
+      {
+        "path": "docs/README.zh-CN.md",
+        "reason": "file-budget",
+        "size": 5341
+      },
+      {
+        "path": "docs/release.md",
+        "reason": "file-budget",
+        "size": 6129
+      },
+      {
+        "path": "docs/release.zh-CN.md",
+        "reason": "file-budget",
+        "size": 5378
+      },
+      {
+        "path": "docs/roadmap.md",
+        "reason": "file-budget",
+        "size": 3670
+      },
+      {
+        "path": "docs/roadmap.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3168
+      },
+      {
+        "path": "docs/concepts/architecture.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2650
+      },
+      {
+        "path": "docs/concepts/guard-modules.md",
+        "reason": "file-budget",
+        "size": 14894
+      },
+      {
+        "path": "docs/concepts/guard-modules.zh-CN.md",
+        "reason": "file-budget",
+        "size": 14676
+      },
+      {
+        "path": "docs/concepts/human-review.md",
+        "reason": "file-budget",
+        "size": 7592
+      },
+      {
+        "path": "docs/concepts/human-review.zh-CN.md",
+        "reason": "file-budget",
+        "size": 6531
+      },
+      {
+        "path": "docs/concepts/integration-modes.md",
+        "reason": "file-budget",
+        "size": 6514
+      },
+      {
+        "path": "docs/concepts/integration-modes.zh-CN.md",
+        "reason": "file-budget",
+        "size": 5860
+      },
+      {
+        "path": "docs/concepts/loop-engineering.md",
+        "reason": "file-budget",
+        "size": 20950
+      },
+      {
+        "path": "docs/concepts/loop-engineering.zh-CN.md",
+        "reason": "file-budget",
+        "size": 26648
+      },
+      {
+        "path": "docs/concepts/positioning.md",
+        "reason": "file-budget",
+        "size": 2160
+      },
+      {
+        "path": "docs/concepts/positioning.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2068
+      },
+      {
+        "path": "docs/concepts/windows-plugin-architecture.md",
+        "reason": "file-budget",
+        "size": 4558
+      },
+      {
+        "path": "docs/concepts/windows-plugin-architecture.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4158
+      },
+      {
+        "path": "docs/developer/benchmark-guide.md",
+        "reason": "file-budget",
+        "size": 7226
+      },
+      {
+        "path": "docs/developer/benchmark-guide.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4488
+      },
+      {
+        "path": "docs/developer/guard-gate-schema.md",
+        "reason": "file-budget",
+        "size": 1617
+      },
+      {
+        "path": "docs/developer/guard-gate-schema.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1094
+      },
+      {
+        "path": "docs/developer/product-boundary.md",
+        "reason": "file-budget",
+        "size": 5327
+      },
+      {
+        "path": "docs/developer/product-boundary.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4665
+      },
+      {
+        "path": "docs/developer/runtime-state-machine.md",
+        "reason": "file-budget",
+        "size": 5781
+      },
+      {
+        "path": "docs/developer/runtime-state-machine.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2676
+      },
+      {
+        "path": "docs/developer/source-walkthrough.md",
+        "reason": "file-budget",
+        "size": 3013
+      },
+      {
+        "path": "docs/developer/source-walkthrough.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1433
+      },
+      {
+        "path": "docs/developer/usability-baseline.md",
+        "reason": "file-budget",
+        "size": 9599
+      },
+      {
+        "path": "docs/developer/usability-baseline.zh-CN.md",
+        "reason": "file-budget",
+        "size": 8239
+      },
+      {
+        "path": "docs/integrations/claude-code-mcp.md",
+        "reason": "file-budget",
+        "size": 2955
+      },
+      {
+        "path": "docs/integrations/claude-code-mcp.zh-CN.md",
+        "reason": "file-budget",
+        "size": 801
+      },
+      {
+        "path": "docs/integrations/codex-mcp.md",
+        "reason": "file-budget",
+        "size": 3398
+      },
+      {
+        "path": "docs/integrations/codex-mcp.zh-CN.md",
+        "reason": "file-budget",
+        "size": 701
+      },
+      {
+        "path": "docs/integrations/cursor-mcp.md",
+        "reason": "file-budget",
+        "size": 3012
+      },
+      {
+        "path": "docs/integrations/cursor-mcp.zh-CN.md",
+        "reason": "file-budget",
+        "size": 676
+      },
+      {
+        "path": "docs/integrations/executor-cli.md",
+        "reason": "file-budget",
+        "size": 3108
+      },
+      {
+        "path": "docs/integrations/executor-cli.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1068
+      },
+      {
+        "path": "docs/integrations/mcp-troubleshooting.md",
+        "reason": "file-budget",
+        "size": 1256
+      },
+      {
+        "path": "docs/integrations/mcp-troubleshooting.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1184
+      },
+      {
+        "path": "docs/integrations/opencode-desktop.md",
+        "reason": "file-budget",
+        "size": 16712
+      },
+      {
+        "path": "docs/integrations/opencode-desktop.zh-CN.md",
+        "reason": "file-budget",
+        "size": 15296
+      },
+      {
+        "path": "docs/integrations/opencode-mcp.md",
+        "reason": "file-budget",
+        "size": 3373
+      },
+      {
+        "path": "docs/integrations/opencode-mcp.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1230
+      },
+      {
+        "path": "docs/integrations/opencode-sidecar.md",
+        "reason": "file-budget",
+        "size": 3991
+      },
+      {
+        "path": "docs/integrations/opencode-sidecar.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3728
+      },
+      {
+        "path": "docs/reference/artifacts.md",
+        "reason": "file-budget",
+        "size": 3544
+      },
+      {
+        "path": "docs/reference/artifacts.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3043
+      },
+      {
+        "path": "docs/reference/cli-help-snapshot.md",
+        "reason": "file-budget",
+        "size": 52234
+      },
+      {
+        "path": "docs/reference/cli-help-snapshot.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1166
+      },
+      {
+        "path": "docs/reference/cli-reference.md",
+        "reason": "file-budget",
+        "size": 63615
+      },
+      {
+        "path": "docs/reference/cli-reference.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2116
+      },
+      {
+        "path": "docs/reference/config.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2158
+      },
+      {
+        "path": "docs/reference/context-feedback.md",
+        "reason": "file-budget",
+        "size": 2266
+      },
+      {
+        "path": "docs/reference/context-feedback.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2046
+      },
+      {
+        "path": "docs/reference/executor-adapters.md",
+        "reason": "file-budget",
+        "size": 2468
+      },
+      {
+        "path": "docs/reference/executor-adapters.zh-CN.md",
+        "reason": "file-budget",
+        "size": 997
+      },
+      {
+        "path": "docs/reference/generated-files.md",
+        "reason": "file-budget",
+        "size": 15304
+      },
+      {
+        "path": "docs/reference/generated-files.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2369
+      },
+      {
+        "path": "docs/reference/harness-output.md",
+        "reason": "file-budget",
+        "size": 3358
+      },
+      {
+        "path": "docs/reference/harness-output.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3021
+      },
+      {
+        "path": "docs/reference/intervention-ledger.md",
+        "reason": "file-budget",
+        "size": 1190
+      },
+      {
+        "path": "docs/reference/intervention-ledger.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1109
+      },
+      {
+        "path": "docs/reference/mcp-tools.md",
+        "reason": "file-budget",
+        "size": 2746
+      },
+      {
+        "path": "docs/reference/mcp-tools.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2510
+      },
+      {
+        "path": "docs/reference/permission-boundaries.md",
+        "reason": "file-budget",
+        "size": 3232
+      },
+      {
+        "path": "docs/reference/permission-boundaries.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2812
+      },
+      {
+        "path": "docs/reference/retrieval.md",
+        "reason": "file-budget",
+        "size": 5238
+      },
+      {
+        "path": "docs/reference/retrieval.zh-CN.md",
+        "reason": "file-budget",
+        "size": 4751
+      },
+      {
+        "path": "docs/reference/task-resume.md",
+        "reason": "file-budget",
+        "size": 6148
+      },
+      {
+        "path": "docs/reference/task-resume.zh-CN.md",
+        "reason": "file-budget",
+        "size": 5763
+      },
+      {
+        "path": "docs/reference/verification-planner.md",
+        "reason": "file-budget",
+        "size": 7736
+      },
+      {
+        "path": "docs/reference/verification-planner.zh-CN.md",
+        "reason": "file-budget",
+        "size": 7147
+      },
+      {
+        "path": "docs/releases/v0.2.1.md",
+        "reason": "file-budget",
+        "size": 1332
+      },
+      {
+        "path": "docs/releases/v0.2.1.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1310
+      },
+      {
+        "path": "docs/releases/v0.2.10.md",
+        "reason": "file-budget",
+        "size": 807
+      },
+      {
+        "path": "docs/releases/v0.2.10.zh-CN.md",
+        "reason": "file-budget",
+        "size": 745
+      },
+      {
+        "path": "docs/releases/v0.2.11.md",
+        "reason": "file-budget",
+        "size": 1181
+      },
+      {
+        "path": "docs/releases/v0.2.11.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1188
+      },
+      {
+        "path": "docs/releases/v0.2.12.md",
+        "reason": "file-budget",
+        "size": 1692
+      },
+      {
+        "path": "docs/releases/v0.2.12.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1564
+      },
+      {
+        "path": "docs/releases/v0.2.2.md",
+        "reason": "file-budget",
+        "size": 1045
+      },
+      {
+        "path": "docs/releases/v0.2.2.zh-CN.md",
+        "reason": "file-budget",
+        "size": 985
+      },
+      {
+        "path": "docs/releases/v0.2.3.md",
+        "reason": "file-budget",
+        "size": 2853
+      },
+      {
+        "path": "docs/releases/v0.2.3.zh-CN.md",
+        "reason": "file-budget",
+        "size": 2618
+      },
+      {
+        "path": "docs/releases/v0.2.4.md",
+        "reason": "file-budget",
+        "size": 1077
+      },
+      {
+        "path": "docs/releases/v0.2.4.zh-CN.md",
+        "reason": "file-budget",
+        "size": 955
+      },
+      {
+        "path": "docs/releases/v0.2.5.md",
+        "reason": "file-budget",
+        "size": 1392
+      },
+      {
+        "path": "docs/releases/v0.2.5.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1254
+      },
+      {
+        "path": "docs/releases/v0.2.6.md",
+        "reason": "file-budget",
+        "size": 1466
+      },
+      {
+        "path": "docs/releases/v0.2.6.zh-CN.md",
+        "reason": "file-budget",
+        "size": 1370
+      },
+      {
+        "path": "docs/releases/v0.2.7.md",
+        "reason": "file-budget",
+        "size": 931
+      },
+      {
+        "path": "docs/releases/v0.2.7.zh-CN.md",
+        "reason": "file-budget",
+        "size": 919
+      },
+      {
+        "path": "docs/releases/v0.2.8.md",
+        "reason": "file-budget",
+        "size": 871
+      },
+      {
+        "path": "docs/releases/v0.2.8.zh-CN.md",
+        "reason": "file-budget",
+        "size": 871
+      },
+      {
+        "path": "docs/releases/v0.2.9.md",
+        "reason": "file-budget",
+        "size": 893
+      },
+      {
+        "path": "docs/releases/v0.2.9.zh-CN.md",
+        "reason": "file-budget",
+        "size": 864
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5139
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1236
+      }
+    ],
+    "omitted_count": 112,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 605,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 118,
+      "complete": false,
+      "omitted": 112,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ad2548058137501da4675f5c81af33e3",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/whut09/opencode-plusplus/598767170bb73e869293c6a91526bcb852b696c0/009551e19bce206c/manifest.json",
+  "package_id": "pkg_ddb330c1c19ef1623d519fe5b878990ee86476b06251e97cee94c3b41c53bbbd",
+  "repo": "whut09/opencode-plusplus",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0ef86f15a77a0f98649754d3132a6c8cb28004df7b68ac093830992397232845",
+  "snapshot_id": "009551e19bce206c",
+  "sources": [
+    {
+      "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+      "git_sha": "6fa390a7a61d3fbc4c55f7ebf931086a73b69803",
+      "lines": 30,
+      "path": "CONTRIBUTING.zh-CN.md",
+      "repository": "whut09/opencode-plusplus",
+      "sha256": "48e7976af801b0655362ecbcdbb353c66b1365d7aceed875fcbe0829fa310f78",
+      "source_id": "src_ababa58c935e56e583fc2458f4b28265",
+      "stored": "contributing.zh-cn.md-894b72141019.md",
+      "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/CONTRIBUTING.zh-CN.md"
+    },
+    {
+      "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+      "git_sha": "55d82c2ec9ecb619526255448f88bf21e0b31582",
+      "lines": 5,
+      "path": "README.en.md",
+      "repository": "whut09/opencode-plusplus",
+      "sha256": "02c532869f6d370de8a917d3d512c1157d98609bca944c07bda99165fc30f7ec",
+      "source_id": "src_4e59d78fc17354dab5d0c2cb3032c0ed",
+      "stored": "readme.en.md-b4f47ddd2e9b.md",
+      "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.en.md"
+    },
+    {
+      "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+      "git_sha": "a3a9deeb9364949049e9226d58309cc7d499f188",
+      "lines": 141,
+      "path": "README.md",
+      "repository": "whut09/opencode-plusplus",
+      "sha256": "4776aff6102a9b81143abd6ebda5eb5c8018223cee52b5d6c8364df835541df7",
+      "source_id": "src_ec12f1e3f976584ca6d63a033ec07e79",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/README.md"
+    },
+    {
+      "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+      "git_sha": "81601a75a244a67129e84ec5ab043be2c536bca3",
+      "lines": 7,
+      "path": "docs/architecture.md",
+      "repository": "whut09/opencode-plusplus",
+      "sha256": "8b89115eecc7deb740dd6708ed3e8f087ff30db5404eb2000de0b32b42ab2263",
+      "source_id": "src_f100aecb84d9517182bd72f4378d0a3c",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/architecture.md"
+    },
+    {
+      "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+      "git_sha": "e5a739ed2901320a11aaa16b1366d256336a1378",
+      "lines": 464,
+      "path": "docs/concepts/architecture.md",
+      "repository": "whut09/opencode-plusplus",
+      "sha256": "a3f28de4cd21521f9b0646380a10a52ba0cc738d860d00cb4f287c7bae9351b0",
+      "source_id": "src_5ca61327d48553cfb2e260e324106a8f",
+      "stored": "architecture.md-e1d6435bbc9e.md",
+      "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/concepts/architecture.md"
+    },
+    {
+      "commit": "598767170bb73e869293c6a91526bcb852b696c0",
+      "git_sha": "33a63af21552d3619194f4e3c40886babdf079cd",
+      "lines": 104,
+      "path": "docs/reference/config.md",
+      "repository": "whut09/opencode-plusplus",
+      "sha256": "ecabe9318256e65a5494efbc0bd7ab4df587424455182f270f70cf07567c000c",
+      "source_id": "src_d157117d4b2e5faa84930386dad4a787",
+      "stored": "config.md-9ae244d0598c.md",
+      "url": "https://github.com/whut09/opencode-plusplus/blob/598767170bb73e869293c6a91526bcb852b696c0/docs/reference/config.md"
+    }
+  ],
+  "summary": "OpenCode++ is a Windows-first in-process plugin for OpenCode Desktop that adds a verification control plane (context, guards, evidence, decisions) around the existing model's coding work, with CLI/MCP developer surfaces and local `.agent-context/` artifacts. Evidence is documentation-only; no source code slices are present. Evidence coverage: 127 of 183 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

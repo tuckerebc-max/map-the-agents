@@ -1,0 +1,450 @@
+{
+  "applied_operation_id": "op_36106f2ae1b44160b54b34ca1145cf1e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_901eb3f779301a802238c7b77de033a873d1a965e4abe481d16c5c32142f2892",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 9,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L7-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b82670db056e260d0ed3eae76afa09bbc23ba7eb1163069d8f0b81e44d195c8a"
+      ],
+      "text": "DeepGame implements single- and multi-agent learning algorithms, including vanilla Q-learning where each agent behaves optimally per Q-values, and Nash Q-learning aiming for Nash equilibrium."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99a7222cf8ffba50f9169124e4bd36934b5325f2c5731dd47b2eb17b887a0fd4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L45-L48"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 57,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L52-L57"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0adb3ec7d754fd5cb1c2dfe02a8155b198508c37e956b5df3528fdb0740b4301",
+        "slc_5d7d9128dcd7f06d454152454073995667a4d2dcfac46ddff6821b1a3edff308",
+        "slc_bcf86d9ac09d6e2ec4932120407302c5b725b52e6cd00e2a516344e76829e7ac"
+      ],
+      "text": "The program is run via run_grid_game.py, configurable through CLI arguments including grid size, gamma, epsilon, iterations, learning rate, and method selection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_61e3202353768dad80642486389778d3d02f0fe28bc34ad4ece26f2726632657",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 57,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L52-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d7d9128dcd7f06d454152454073995667a4d2dcfac46ddff6821b1a3edff308"
+      ],
+      "text": "Default parameter values include grid size 3, gamma 0.95, epsilon 0.5, 1000 iterations, learning rate 0.9, and method 'Q'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b1b553bd054c3723d0a9cdf15704557f32817f992f35c5189cc3b58b9ab8a36",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 16,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L13-L16"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_703965617a834480b9e2012813014e5b41306cf8fdca605bb9c630156e1bc635",
+        "slc_b3d00abb27afa04ef6afaa11a1cba335e806882baf493acd95f97244f78c2707"
+      ],
+      "text": "The project requires Python 3.6+, Numpy, Nashpy, and Matplotlib, and additionally depends on the mapr2 module from a separate GitHub repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b217440dacbc54f25b051a141bd391269c41f509d78b4502ada01f572d74bb9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L36-L36"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 28,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L22-L28"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 34,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L32-L34"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31f4fee60663d907a226fd10ced2bd5866454ce5b519c3e7b09043533b38e292",
+        "slc_3596e6bddf05c0c03a662106b0212d346a269c65d2632f0b618471ad9c00a545",
+        "slc_56a6adb33747a9b3ca9f27174cbb168e31d18f82eccd64d3b381518f33113602",
+        "slc_d95a872802e65694837c2eaadcfb608fa815e97fe065a3fdbd7bd5af2d852cc0"
+      ],
+      "text": "Installation involves cloning rllab at a specific commit and pip-installing packages such as joblib, theano, keras, tensorflow, gym, tensorflow_probability, and maci."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d95211fe73d3f9ae2202c7c28deade8371c39ef89bc2d6a6134b252e8df1ad3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96ddf15bd9077b4c769fa689c90ff9cb2459769d5f40dbabc4fcc87e803c95d5"
+      ],
+      "text": "The README states the repository is not really active due to limited development time, and that breaking changes may occur."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d7c5d511c5d89b5ec67a6a441bfb9a7f2151e17212c1079239ba57b6a01cd22",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96ddf15bd9077b4c769fa689c90ff9cb2459769d5f40dbabc4fcc87e803c95d5"
+      ],
+      "text": "The program is stated to be checked only for the case of two agents (n_agents=2)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f7c7f04d5d3c938471198771e8587a033e2ed2c87604f5cbcb8f5389d84465f7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 48,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L45-L48"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0adb3ec7d754fd5cb1c2dfe02a8155b198508c37e956b5df3528fdb0740b4301",
+        "slc_bcf86d9ac09d6e2ec4932120407302c5b725b52e6cd00e2a516344e76829e7ac"
+      ],
+      "text": "Repository development practice: the README instructs users to run the program with 'python run_grid_game.py' using default parameters, and to adjust hyperparameters via its command-line arguments."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_991f99ad189dc73fce08739833b4136501cf3146af09b80fe527abc4c144ca68",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+          "line_end": 57,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md#L52-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d7d9128dcd7f06d454152454073995667a4d2dcfac46ddff6821b1a3edff308"
+      ],
+      "text": "The learning_rate argument is described as applying to the Q-learning method, and the method argument selects between Q-learning and Nash-Q."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38357181d1856dd0ec4461a641e738adcb727dbc4327bfe756a66df289a78c21",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "1ea903e56dc98162d82f664ecfa59862204d3b2d",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "LICENSE.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/LICENSE.md#L1-L1"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "1ea903e56dc98162d82f664ecfa59862204d3b2d",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "LICENSE.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/LICENSE.md#L5-L10"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "1ea903e56dc98162d82f664ecfa59862204d3b2d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "LICENSE.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/LICENSE.md#L3-L3"
+        },
+        {
+          "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+          "git_sha": "1ea903e56dc98162d82f664ecfa59862204d3b2d",
+          "line_end": 21,
+          "line_start": 15,
+          "path": "LICENSE.md",
+          "repository": "ismorphism/deepgame",
+          "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/LICENSE.md#L15-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d954ff24a1e95ad2c918b910635e2c93cc01e72bbcec4a3eac67bbe2a0a61fb",
+        "slc_46540f4f7f66268289dafe276c6d50d5cd53df4b82fe769f006782d3b86730d0",
+        "slc_96dc19347dcf69a3005062a2caa8e9dd025909b75c8ac5141617e30a90cd7c2d",
+        "slc_b75b2db37fe2d8c7366a5bdde1c52e999471c09337241795b7aed35e8845b579"
+      ],
+      "text": "The project is MIT licensed, copyright 2023 Boris Piakillia (Pyakillya), with the standard permission and no-warranty terms."
+    }
+  ],
+  "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 57,
+        "path": "README.md",
+        "size": 1881
+      },
+      {
+        "lines": 21,
+        "path": "LICENSE.md",
+        "size": 1084
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 5,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_8146ecb96b145741b3bb760abe0c5b76",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/ismorphism/deepgame/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/80ed664568fffc29/manifest.json",
+  "package_id": "pkg_bc96ba2883703e2ba83d2ec64be898033a6452f090d0d9c4f116b8e9e392e654",
+  "repo": "ismorphism/deepgame",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2b8e94b4c15306263c67e047f3ffdb703bb9d9b5a97bc8162eec9b092274c887",
+  "snapshot_id": "80ed664568fffc29",
+  "sources": [
+    {
+      "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+      "git_sha": "1ea903e56dc98162d82f664ecfa59862204d3b2d",
+      "lines": 21,
+      "path": "LICENSE.md",
+      "repository": "ismorphism/deepgame",
+      "sha256": "85af1c274ba3afd369466a0d64ec264a70fb9c3fdd600517b04f995e0cb25c66",
+      "source_id": "src_13ee0721a6ca56bca8a77c2bf05e0d05",
+      "stored": "license.md-4673a3aba018.md",
+      "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/LICENSE.md"
+    },
+    {
+      "commit": "88e6f8927f9ce3ed9097dc0b1b2818955db127c3",
+      "git_sha": "d47efe2af137b5cdfcf5894dcfdf16c09ea7e440",
+      "lines": 57,
+      "path": "README.md",
+      "repository": "ismorphism/deepgame",
+      "sha256": "45033f7a41e6828f06317e73e585e4538e0aac26542cf09df3d3f748108a2b95",
+      "source_id": "src_8e463dd36db05cdf955758c0b8807a08",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ismorphism/DeepGame/blob/88e6f8927f9ce3ed9097dc0b1b2818955db127c3/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only README and LICENSE files describing DeepGame, a Python project implementing Q-learning and Nash Q-learning for grid-world games, with installation and CLI usage instructions. No source code is present in the evidence.",
+  "superseded_claim_ids": []
+}

@@ -1,12 +1,14 @@
 # alpbahadur/49agents
 
-Status: discovered - Freshness: pending
+Status: blocked - Freshness: refresh-failed
 Catalog classes: multiplexer
 Origins: alltheagents.org-backing - Projects: none
+Renamed: canonical dossier is [alpbahadur/49-ide](../alpbahadur/49-ide.md) (github id 1168100167, verified [https://github.com/alpbahadur/49-IDE](https://github.com/alpbahadur/49-IDE)).
+Last collection error: FetchFailed: redirect-refused http-301: https://api.github.com/repos/alpbahadur/49agents
 
 ## Evidence
 
-This is an intake lead only. No source snapshot or code has been analyzed.
+Collection is blocked; no distilled evidence exists yet.
 
 ## Facets
 

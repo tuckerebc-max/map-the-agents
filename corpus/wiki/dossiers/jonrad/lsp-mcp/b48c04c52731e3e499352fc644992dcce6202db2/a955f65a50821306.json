@@ -1,0 +1,418 @@
+{
+  "applied_operation_id": "op_0ff86245a4644a5f975d374b8707f93f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e41b1e0b59e1c235eacedd874c1feb971eba48c298231e03695e339e4ea8867",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_020d38cca8f875085d7f4d5df9aad0784fa4baa5aa6a72553db0ac343e84be79"
+      ],
+      "text": "The project is an MCP server that gives LLMs and AI agents access to language server protocol (LSP) capabilities, providing language-aware context from a codebase."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ac9c5e9d3cdf7fbb68376db80d5a0af1e279e715039e1c03f38e65d93eb842c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L70-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_267a3ee8cfc0da9f0320a5e9e5c48ab35cf67a9076e77f914ce1b80f878ad374"
+      ],
+      "text": "The README states the project is in a POC (proof-of-concept) state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f14446f9dfb0466f11e096ee035cb15d8f4dd2a31895e1fca281eca806828df",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 74,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L73-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58fc2cbfdf6100f22a6fab32f03056ef70b1a97d434e19442cdbd54c5525b9d0"
+      ],
+      "text": "The features list says the server supports multiple LSPs (multiple programming languages) at the same time, referencing a sample config file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f02546f16784f4ae62a27c3f4d17992a176b3effa1d482f122c714a5bf65d232",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 74,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L73-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58fc2cbfdf6100f22a6fab32f03056ef70b1a97d434e19442cdbd54c5525b9d0"
+      ],
+      "text": "Supported LSP methods are dynamically generated from an LSP JSON Schema stored at src/resources/generated.protocol.schema.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a0efb12e9e8f9537f4925c26a1dfe723e8b2f89636e88f1bf292b2bc756a4115",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 107,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L98-L107"
+        },
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L109-L109"
+        },
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 91,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L81-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50f744120a93a068b6ed4b5a191c9f652f0096ecaaab5b0a896f9484efce0dcf",
+        "slc_6f93d1f1ae529a9ca3a697b315a0e3a52e3c013d60f695b1600ed44214567084",
+        "slc_91c45be14bf515ece6bdd653d4c6213d10d426163f06f8190cc2ba6dc0043435"
+      ],
+      "text": "The server is configured as an MCP server via mcpServers JSON config using a command (docker or npx) plus an --lsp argument specifying the language server command to launch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9217b1e89207c4a99f7f0e03ac00ba940e7e01ab9282a4653626f7cecb208f8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 109,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L109-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f93d1f1ae529a9ca3a697b315a0e3a52e3c013d60f695b1600ed44214567084"
+      ],
+      "text": "The language server can be changed by switching the --lsp argument and then restarting the client (e.g. Claude Desktop)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ace771e8056e8d3e27bf7320f6aaebbc76ef10ae37df5f3b36743b0816009a5b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 107,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L98-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50f744120a93a068b6ed4b5a191c9f652f0096ecaaab5b0a896f9484efce0dcf"
+      ],
+      "text": "The example npx setup launches typescript-language-server 4.3.3 with typescript 5.7.3 via npx, communicating over stdio."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c49579329106011f1cfa76f26ba541b6714f5bd9574c89198bf3f55e666321ff",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L111-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8335ffd9dec3e234a451b4eda75ee2f5bccf8f124974e19ef17e628d60e45c6c"
+      ],
+      "text": "The README notes that running multiple LSPs at the same time is not yet supported, in the section following the npx example."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_daa160d7de488a829c0bcb1c4a90de9bedad4d4a6c95dace3050832077d0e9cf",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 142,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L135-L142"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a5eb8be352731efb3b58ce4d2bc6d28b0cc38c6a9e8bd90dd92bbe5bbc5694b"
+      ],
+      "text": "Recorded design decisions include switching from Python to Node (vscode's LSP library over multilspy), using the low-level MCP SDK rather than FastMCP, and using zod for config validation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb4037c326f2b383594dfa4b82cd702d3ea7d902f8cad90b33d77ad03ec147d4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+          "line_end": 132,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md#L128-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d26e843540f10d7e8dc0695450b330459b7259abbe7e39eae406ce3103ad2d46"
+      ],
+      "text": "Repository development practice: development commands include 'yarn', 'yarn mcp-cli' (an interactive MCP tool for development help), and 'yarn dev --help' for CLI help."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_aad3c3ff69d86bcbdd6d10258f6de28e269923f7d75e81376407ee61f767b5be",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "2dc2733d337654f554bb5b643b916ff53206f651",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "LICENSE.txt",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/LICENSE.txt#L1-L1"
+        },
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "2dc2733d337654f554bb5b643b916ff53206f651",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "LICENSE.txt",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/LICENSE.txt#L3-L6"
+        },
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "2dc2733d337654f554bb5b643b916ff53206f651",
+          "line_end": 13,
+          "line_start": 10,
+          "path": "LICENSE.txt",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/LICENSE.txt#L10-L13"
+        },
+        {
+          "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+          "git_sha": "2dc2733d337654f554bb5b643b916ff53206f651",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "LICENSE.txt",
+          "repository": "jonrad/lsp-mcp",
+          "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/LICENSE.txt#L8-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10da59caebdcab331f900d3d24b0369a571bacd666f0dba46f2d0d4d982593d1",
+        "slc_a4d91de8d5222fbfcdf1b81de071c626c8c2511fac6142808a29254841ee8be6",
+        "slc_c0130430ec04f48ecb4bfe586d4097584f5c162dae5273b584a9fa480774e24d",
+        "slc_fd4d22dbe647b283bb38c978f2d83594661562bfb76f7e78721c25c567a3d235"
+      ],
+      "text": "The project is MIT licensed, permitting use, copying, modification, and redistribution with the copyright notice retained, and is provided as-is without warranty."
+    }
+  ],
+  "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 154,
+        "path": "README.md",
+        "size": 7048
+      },
+      {
+        "lines": 13,
+        "path": "LICENSE.txt",
+        "size": 1049
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 36,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_5b316cb5d41b5b3689bb77e5e9146bec",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jonrad/lsp-mcp/b48c04c52731e3e499352fc644992dcce6202db2/a955f65a50821306/manifest.json",
+  "package_id": "pkg_f29d9507c77b1c83ad20ca76196bb6076757d1b032a47d5e4ee9e35c06def89d",
+  "repo": "jonrad/lsp-mcp",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9217ca11592f7690951ece6358a4700a982a90f072c54cd5036147d954e4efc2",
+  "snapshot_id": "a955f65a50821306",
+  "sources": [
+    {
+      "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+      "git_sha": "2dc2733d337654f554bb5b643b916ff53206f651",
+      "lines": 13,
+      "path": "LICENSE.txt",
+      "repository": "jonrad/lsp-mcp",
+      "sha256": "28286cc741a8dcffec607314635ebceece9ea5872daa651d294c4ffe0886beb3",
+      "source_id": "src_2c04b8ddb99b5adb8dc440e1925d412d",
+      "stored": "license.txt-d0ed4cc3fb70.txt",
+      "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/LICENSE.txt"
+    },
+    {
+      "commit": "b48c04c52731e3e499352fc644992dcce6202db2",
+      "git_sha": "ece08647bc50cb1c62ce32a936e9dca12de7ef73",
+      "lines": 154,
+      "path": "README.md",
+      "repository": "jonrad/lsp-mcp",
+      "sha256": "902058ea1abf270536e4b4f2bf07c61db0280ebc0d5b285cf426302a49f34ef3",
+      "source_id": "src_30eaad3b363555d0a49f863b2662109e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/jonrad/lsp-mcp/blob/b48c04c52731e3e499352fc644992dcce6202db2/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The project is an MCP server that gives LLMs and AI agents access to language server protocol (LSP) capabilities, providing language-aware context from a codebase. The README states the project is in a POC (proof-of-concept) state.",
+  "superseded_claim_ids": []
+}

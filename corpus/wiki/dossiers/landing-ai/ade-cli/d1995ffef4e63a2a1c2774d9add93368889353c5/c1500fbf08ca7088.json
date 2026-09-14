@@ -1,0 +1,720 @@
+{
+  "applied_operation_id": "op_91c2fa8210644eb483ae74b9aa55eda8",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_295c7162c41987eadce87d9d37e4c8cf98785fbca8d21de07b638159c45ea1cb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 10,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L6-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32716fc5b76a0d5e2fbccc42e9924dd47dd34f66e8b843d7fded3cfdeb0d452c"
+      ],
+      "text": "The CLI offers `ade parse` to convert documents into grounded Markdown and elements, and `ade extract` to pull schema-shaped fields with page-and-box evidence, saving results to a local store at ~/.ade."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1c9504e4df7ee748d62834926d41faae01b558e39c78f64d63e49622654727b5",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 60,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L58-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0fc31c985c482e4d168294a43f4e189766886776f0ec36c718d0dfd0eedec9e1"
+      ],
+      "text": "Every command accepts `--json` to emit one stable JSON object on stdout, and `ade help COMMAND` documents flags and result shapes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_59b84b039b3425646bd9bfbf69137d9695c3af666107526577976707728c760e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 77,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L62-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b797c4da1362160a9eba57fa8a5510bc70233efb1ae8d59a90953b0779f64eb9"
+      ],
+      "text": "The command surface includes parse, extract, find, crop, view, history list/clear, login/auth subcommands, version, update, and help, per the README command table."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_172b2232aaf1c05b69117947200624e8f308a25de161a126c272a41243cd21ba",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 95,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L89-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_407b9bdc59be7287e7bab05cdb436e5da0755e2ea2ed0c148d9c0dc354230301"
+      ],
+      "text": "`ade help --json` returns the entire shipped surface in one call — commands, flags, result shapes, topics, exit states, and store layout — aimed at agent bootstrap, and SKILL.md ships the agent contract."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c09ed1d13078a561bee077f2af2df710337580509fcfd4907a82249dadd6081e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_378313c7b8364f9e72f9db2cc3ba4ee5dbb302c5095106d66a1481e87e5b2c91"
+      ],
+      "text": "Releases ship self-contained binaries for macOS, Linux, and Windows on arm64 and x86_64, requiring no Python or uv."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c2e31087356a2932e37d1ebc9c7b8083d0a4b44e83d4364ee7e4c812a6b5d7a5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 10,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L6-L10"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 47,
+          "line_start": 45,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L45-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_32716fc5b76a0d5e2fbccc42e9924dd47dd34f66e8b843d7fded3cfdeb0d452c",
+        "slc_616c8ab17f45c5149346896db12c1ec68a53f47c142a6b341feb49370d3313c6"
+      ],
+      "text": "Re-running an identical command consumes no credits because results persist in the local store; parse dedup serves stored results with an explicit notice and only `--force` re-bills."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b21d3bb051b65f565213c7f2b0811d867dc5103f5d61e89c852a0c5c58a054d5",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 112,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L111-L112"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 109,
+          "line_start": 105,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L105-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad199f0280fae6853281e304cd286bccc38ba090721f855017ccc3e3e105b998",
+        "slc_f170259e8d14d76d5237466fcb601b8792ee256b061ef4f9249f4f78767bfa3d"
+      ],
+      "text": "The store lives at ~/.ade (app at ~/.ade/bin/ade), with ADE_HOME relocating it, ADE_CLI_VERSION pinning a version, and ADE_CLI_INSTALL_DIR changing the destination."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fcf9822ea88a5abd24909640e137840d381bf64b809dacb21239fbe0c7f39009",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 117,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L114-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f88f59a6639c5ca22752b4061162dba9d2050b0fa03cdb3bd3943ea453d39f8f"
+      ],
+      "text": "The CLI mentions new releases on stderr at most once a day, and ADE_NO_UPDATE_CHECK=1 disables that check; `ade update` self-updates, or points at uv tool upgrade for uv/pipx installs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_91e29bae244e085a3d68414ab86dae6d4fa56bd3b5be90702c7034eb78410391",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 101,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L97-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4949ff4063cf028299140ebdf726b3172dc054951de35a8f3581dcd9bbda724c"
+      ],
+      "text": "For non-PATH environments like CI or agent harnesses, the CLI can be invoked by absolute path (~/.ade/bin/ade, or %USERPROFILE%\\.ade\\bin\\ade.exe on Windows) with credentials via the ADE_API_KEY environment variable."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6470e77b6e5cdfa042ff27b3fab27f6b7dad712241e284be818ee5dc57395807",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 29,
+          "line_start": 24,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L24-L29"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L31-L32"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 10,
+          "line_start": 3,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L3-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8df3fa316fcc0f9e4dce85ea4355177e561e17f28e5090ac8f3652261a67f578",
+        "slc_aee01433c5b41f2c15fe47aecdedc81225eee6268dd2ea8bcf84ae0ad81e5781",
+        "slc_b7ddbaa1200c54e89590592b41201b67e50fd4552eee73a0555ba567bcad73f1"
+      ],
+      "text": "A draft v2 proposal (revised 2026-07-21) re-keys the store on job item ids — a hash of verb, source path, content, and params — replacing content-derived doc ids, with a flat ~/.ade/jobs/<id>/ layout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_16714afb5d316992c28803dd85912914f8cf29f5bcecc07877471a1ddb0228de",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L197-L197"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 189,
+          "line_start": 180,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L180-L189"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 193,
+          "line_start": 193,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L193-L193"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13da9f6921d32910bf194bd7edb6965750eca01c19db32a25334dda12f6b7fbc",
+        "slc_243ff12aa3b4effaa9c5d5bc5703207c549e569e34ef88914fa082c8b91118d8",
+        "slc_4859e67061f90c5bf3c8cdd8fcd9f30485677d2509ece6a5f50a10a98f3ff0d1"
+      ],
+      "text": "The proposal defines parse as an idempotent state machine (absent/pending/complete/failed/expired) over the store, blocking by default with --wait, where Ctrl-C stops waiting but never the server-side work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_742dbdd84130d4a4f72e33af5ab890b91e8f6779fa12e8982cc47695739e74c7",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L71-L71"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L73-L73"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L75-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_52e8cab1f9e96fef2b7edbd74f046491fdc2034272bd45db082d4533222e8e2c",
+        "slc_9679cd0dfa703a9847781e05ae31bf2bb5ce187a99df8fb0f2b6566b1dff8c81",
+        "slc_ab89891a225a23a7d1c0006c99145fcb6916f8a29a29305608588951cac8f949"
+      ],
+      "text": "The proposal targets the ADE v2 API: async POST /v2/parse and /v2/extract job contracts, priority/standard service tiers, parse returning markdown plus a structure tree with inline grounding {page, range, box}."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f475384775a5a00165b86df217bd062deedd4a007e6fbbfc1b27739f182932b1",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 280,
+          "line_start": 280,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L280-L280"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 226,
+          "line_start": 223,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L223-L226"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 252,
+          "line_start": 236,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L236-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8a4086380d268111af56f8f1229a5d7efd5557eb9a05c55da98820a070ad4a9b",
+        "slc_c083a34715163bad519b70a129944b287b0e6c5aed4c93c885e26fef54327d4e",
+        "slc_e0e409c4c1a055aabb51e62a95c77dc1b92b97c45b0476a93b03afbcdcfc92cd"
+      ],
+      "text": "Per the proposal, extract accepts a parse job item id, a document path (reusing the latest completed parse or auto-parsing first), or bring-your-own markdown, and field-to-box evidence is computed as a local join stored as evidence.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e2adc14c99702f12f6f24596de61e3736c145656179f72308feb2603f287cf56",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 84,
+          "line_start": 77,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L77-L84"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "docs/ade-cli-v2-proposal.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md#L73-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ce7ed4adaadd081c5e897b7623458e0864f2908d8e6c159b04984a34ab70e80",
+        "slc_9679cd0dfa703a9847781e05ae31bf2bb5ce187a99df8fb0f2b6566b1dff8c81"
+      ],
+      "text": "The proposal notes the ADE v2 backend has no job cancel — submitted work always completes and bills — and encrypted PDFs are always rejected with a 422 (encrypted_pdf_unsupported)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9288622aac4c5615bd57cd8e6ff04ac6997c128dfc77749c6847b3a9b797c4d6",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L132-L132"
+        },
+        {
+          "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+          "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+          "line_end": 128,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "landing-ai/ade-cli",
+          "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md#L125-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43fece195aa7844c5f69d6cc91012f21514e677535d028042ebf888bfbf34344",
+        "slc_affee4d83e85357e32eaba7d0056d6a5861c3859e2be7881d2854ab67b274a39"
+      ],
+      "text": "The repository was formerly `agentic-doc`, the original ADE SDK, preserved unchanged on the legacy branch; since 2026-07-31 it ships the ADE CLI, licensed Apache-2.0."
+    }
+  ],
+  "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 132,
+        "path": "README.md",
+        "size": 5483
+      },
+      {
+        "lines": 128,
+        "path": "CONTEXT.md",
+        "size": 8502
+      },
+      {
+        "lines": 199,
+        "path": "SKILL.md",
+        "size": 9497
+      },
+      {
+        "lines": 812,
+        "path": "docs/ade-cli-v2-proposal.md",
+        "size": 57616
+      },
+      {
+        "lines": 170,
+        "path": "docs/telemetry.md",
+        "size": 9011
+      },
+      {
+        "lines": 58,
+        "path": "docs/user-agent.md",
+        "size": 3522
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/adr/0001-auth-login-selects-logout-per-env.md",
+        "reason": "file-budget",
+        "size": 2867
+      },
+      {
+        "path": "docs/adr/0002-login-method-menu.md",
+        "reason": "file-budget",
+        "size": 4417
+      },
+      {
+        "path": "docs/adr/0003-per-invocation-environment.md",
+        "reason": "file-budget",
+        "size": 4593
+      },
+      {
+        "path": "docs/adr/0004-oauth-dark-at-launch.md",
+        "reason": "file-budget",
+        "size": 2207
+      },
+      {
+        "path": "docs/adr/0005-two-doors-serve-and-file.md",
+        "reason": "file-budget",
+        "size": 3899
+      },
+      {
+        "path": "docs/adr/0006-usage-ledger-ships-after-every-command.md",
+        "reason": "file-budget",
+        "size": 3440
+      },
+      {
+        "path": "docs/adr/0007-login-verifies-the-api-key.md",
+        "reason": "file-budget",
+        "size": 3609
+      },
+      {
+        "path": "docs/adr/0008-oauth-login-goes-public.md",
+        "reason": "file-budget",
+        "size": 1984
+      },
+      {
+        "path": "docs/adr/0009-org-selection-rides-x-org-id.md",
+        "reason": "file-budget",
+        "size": 3095
+      },
+      {
+        "path": "docs/agents/domain.md",
+        "reason": "file-budget",
+        "size": 1635
+      },
+      {
+        "path": "docs/agents/issue-tracker.md",
+        "reason": "file-budget",
+        "size": 3745
+      },
+      {
+        "path": "docs/agents/triage-labels.md",
+        "reason": "file-budget",
+        "size": 1045
+      },
+      {
+        "path": "docs/agents/writing-style.md",
+        "reason": "file-budget",
+        "size": 1765
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 752
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3813
+      }
+    ],
+    "omitted_count": 15,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 107,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 21,
+      "complete": false,
+      "omitted": 15,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_f3bc042b2eb95ecaa6c486328a628687",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 4,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/landing-ai/ade-cli/d1995ffef4e63a2a1c2774d9add93368889353c5/c1500fbf08ca7088/manifest.json",
+  "package_id": "pkg_a5338df4ea377122b0731cc55b597e419cba18b6602d3189c537b0bb025dcc6f",
+  "repo": "landing-ai/ade-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "efb3e444ee313cee877f53c604908dc30190a905e252f79b3723e290216083f8",
+  "snapshot_id": "c1500fbf08ca7088",
+  "sources": [
+    {
+      "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+      "git_sha": "7cb5ac69c2e4d56dbbcb7c7c156dc79430db9594",
+      "lines": 128,
+      "path": "CONTEXT.md",
+      "repository": "landing-ai/ade-cli",
+      "sha256": "33ae08267e07a53c5daee0f97e3187862209294ec44d20132772fa490b1954ae",
+      "source_id": "src_859f12ea78205d9c82db493153758970",
+      "stored": "context.md-86fee53c3330.md",
+      "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/CONTEXT.md"
+    },
+    {
+      "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+      "git_sha": "db828a8d6539bd378b60b4607de3e34979a3af42",
+      "lines": 132,
+      "path": "README.md",
+      "repository": "landing-ai/ade-cli",
+      "sha256": "056fd988513df8f27d5dceffc2898ca76cfd2d1b0a2edcbfb40f744eee18d837",
+      "source_id": "src_7ab78917db035beda157729c7f80573c",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/README.md"
+    },
+    {
+      "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+      "git_sha": "c9782649cbe04274e025a0bbc4037dd95e4f6cff",
+      "lines": 199,
+      "path": "SKILL.md",
+      "repository": "landing-ai/ade-cli",
+      "sha256": "204fc08954484e01f8ebcb9633d529ab037dcfd26fa04bf50e88e7d019472b27",
+      "source_id": "src_aaf868128db15a9485ca715239bba042",
+      "stored": "skill.md-0e95f5a36660.md",
+      "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/SKILL.md"
+    },
+    {
+      "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+      "git_sha": "87624ae63a2c30a5bd7c82e3c61d0cea9edf113f",
+      "lines": 812,
+      "path": "docs/ade-cli-v2-proposal.md",
+      "repository": "landing-ai/ade-cli",
+      "sha256": "71ad4eccabfb342fc96580e1afd44e18682c85c4db13f568be1c4d9029f854e4",
+      "source_id": "src_4713a86dd43c576bbc52a9107b3917a4",
+      "stored": "ade-cli-v2-proposal.md-658e28e68082.md",
+      "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/ade-cli-v2-proposal.md"
+    },
+    {
+      "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+      "git_sha": "2bfe2d82d590d6ca7b7e320a381885dec31dc4e9",
+      "lines": 170,
+      "path": "docs/telemetry.md",
+      "repository": "landing-ai/ade-cli",
+      "sha256": "2f08db5d4c749646d416f7b701f67ee5223ba866254747e0da0bd7a13e37391e",
+      "source_id": "src_d455ee13edb85bacb1059dd60579c987",
+      "stored": "telemetry.md-fd2f3e43dd11.md",
+      "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/telemetry.md"
+    },
+    {
+      "commit": "d1995ffef4e63a2a1c2774d9add93368889353c5",
+      "git_sha": "35d027e27c02d929e95d81effd4b61597a812483",
+      "lines": 58,
+      "path": "docs/user-agent.md",
+      "repository": "landing-ai/ade-cli",
+      "sha256": "5efc403fb59e2c77cfa7d9b7f6aa09aa333bb744d6ced32fb3fe694fdeabae7a",
+      "source_id": "src_87ae6f2ec431543c9481da9d2b891f4a",
+      "stored": "user-agent.md-ecf9ffa34577.md",
+      "url": "https://github.com/landing-ai/ade-cli/blob/d1995ffef4e63a2a1c2774d9add93368889353c5/docs/user-agent.md"
+    }
+  ],
+  "summary": "The repository ships the ADE CLI (formerly the agentic-doc SDK), a terminal client for Agentic Document Extraction with parse/extract commands, a local job-item store at ~/.ade, and agent-oriented JSON interfaces; a v2 design proposal documents the store and command design. Evidence coverage: 116 of 253 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

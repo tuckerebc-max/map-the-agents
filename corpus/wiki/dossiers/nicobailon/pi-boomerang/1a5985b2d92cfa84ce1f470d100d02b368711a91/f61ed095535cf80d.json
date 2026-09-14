@@ -1,0 +1,641 @@
+{
+  "applied_operation_id": "op_6e95a19acaa34bc894ac2b53a84e8f4c",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc3fadac1a039620f9a1c7f171aa4de77e909eb14d2d484e590fc96b610f3a5a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 69,
+          "line_start": 68,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L68-L69"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 226,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L211-L226"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L9-L11"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a159e8e57f24b04398a72bd268773387d08a15928978ba0a11b32dc39cc7a75",
+        "slc_8a6396745f1c0471c98db6dc14d3354c484752f63fa44056e4731481686efff7",
+        "slc_e8a8c2a64c134f8c31d4d8cd5fda75fbc5e02bc189ae23d315065d499c26420b",
+        "slc_fbb38c94796652c0e8cfb840ea53e5012fb404fea6e013d9b4c4757e8f2130e6"
+      ],
+      "text": "The extension exposes a `/boomerang <task>` command that executes a task autonomously and summarizes context afterward, plus `/boomerang-cancel` to abort without summarizing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_25056fa832859cc129439995d0be008c159b1e980889b73c122d8f4409dac22f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "1e9563745331231014b38659bcbe22e90d2262f0",
+          "line_end": 63,
+          "line_start": 62,
+          "path": "CHANGELOG.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/CHANGELOG.md#L62-L63"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L71-L71"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b549dd495e482560d054f937fa490b8f5778f3c1d5c34bfc33eacc82607b55a2",
+        "slc_f019f6120055c96c0d3d295dae5dfdbf8027b393f3760a8c415e1c0b21957f38",
+        "slc_fbb38c94796652c0e8cfb840ea53e5012fb404fea6e013d9b4c4757e8f2130e6"
+      ],
+      "text": "After completion, raw turn history is replaced in future context by an expanded handoff summary containing outcome, changed files, relevant reads, validation commands, failures, and config metadata."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_599228afc967fef35c60dc291c2276814232ad73d8fbc79d8e49e699d6d39bd5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L39-L39"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 41,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L41-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d492a31343dabb4f6b7e9443f100815ffbb691fa11078ea6782cad5313432510",
+        "slc_d6e0ead7967f439cd80930c284bed242d632275359a0b9f8fc4256e359075149"
+      ],
+      "text": "The session tree preserves full history for `/tree` navigation, so only future context is collapsed while the underlying history remains accessible."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c4f251abe90fc57ca931b6a42d1457405259c7ab85deada8f915eeaca8e44cf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L81-L81"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L75-L75"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 85,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L83-L85"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 79,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L77-L79"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L61-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_078fc1431bcd9dad8daf52bbb4ed5fe3ba3dfb5eee154a6e15d1b4486d4f5ef2",
+        "slc_1588f7d41c1c8316993923bb37f364d989feff33a473e48b4e6d7b099f06f5e5",
+        "slc_6df3085c3ee01f2afc2ec0ff41a3cd0b211a78a5d9836302a6b106ebf55ffbf3",
+        "slc_b63db03963c3b2f1d7e824aae762b2582180824aae65e3a06bfda41a5da6b1c1",
+        "slc_d23824d069e90a652024620999ed1c96b15c7016f2fcad0cdd1f0d3e5e2bb737"
+      ],
+      "text": "Chained templates can be run in sequence (e.g. `/boomerang /scout -> /planner -> /impl`) with per-step inline args, global fallback args after `--`, and a single summary return at the end."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_919899d9296e1b3b05f46285e769ee6489f9c48b201dd96bbcb061116870b5bd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 87,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L87-L87"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 150,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L143-L150"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 155,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L152-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24a170adef835119bcf29c5788f12efee3f113e190289b2d112aa51266c0324a",
+        "slc_3d1b69976e624d1fec2178cb5c6b5fce2291a4269186106c129b9d8581c5113e",
+        "slc_6eaa044e8a9060859c922a84a7e5c220a72fa7c1561f0dbdf4453589c1d70487"
+      ],
+      "text": "Template frontmatter fields `model`, `skill`, and `thinking` control each chain step's configuration, and boomerang restores the original config after the summary return."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c5dd72a4b88d678e304d363f3e66c996a75b77e8221c0d2e3892ca622e243e28",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 107,
+          "line_start": 103,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L103-L107"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L93-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c6b0ab3fea185aafb3d516d32bb6a94e53b5320d2e7167790070c0e8736b357",
+        "slc_828ad0983819a9d6fb5db79e04bffc1176bcf06e8a16dacdab173d7bc2374a27"
+      ],
+      "text": "`--rethrow N` (N required, 1-999) reruns the full task N times, summarizing between passes; file changes persist on disk and each pass sees accumulated summaries rather than raw history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e0c6d478fe2aa23774b8688700c92310cceb9ed99265b213a2e13436287fb8ad",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "1e9563745331231014b38659bcbe22e90d2262f0",
+          "line_end": 116,
+          "line_start": 112,
+          "path": "CHANGELOG.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/CHANGELOG.md#L112-L116"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 116,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L113-L116"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 126,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L125-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_178d623a00371d9ad9d58b1cfba6240c2b80a5f629db6677811e6edcb6a9d0b4",
+        "slc_3e61438d497de148ef1e490b70cd7f2c409d89c11f2081b6d8c98c2df4e2c358",
+        "slc_91b737148b0dd47e3ea14a7b488afbf8ee9dae343eb5a857cab963fe48100a3b"
+      ],
+      "text": "`--loop N` is treated as an alias for `--rethrow N`; if both flags are present `--rethrow` wins, loop metadata is stripped from rendered tasks, and bare `--loop` is invalid."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9d977542e326a78296791841676d7ddb29eb2d09f6f9524ebef378f6558c443",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L139-L139"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 155,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L152-L155"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L132-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3bdad9991c5820ea7201318f74cecd6b3523bf8a9fb928ab1a9f4d80e91d9614",
+        "slc_6eaa044e8a9060859c922a84a7e5c220a72fa7c1561f0dbdf4453589c1d70487",
+        "slc_d099d65fb87103333a36e4a5130c6cdd1e972b4cab358b9d2d57e85033a62bc1"
+      ],
+      "text": "Tasks starting with `/` are treated as prompt templates loaded from `<cwd>/.pi/prompts/` then `~/.pi/agent/prompts/`, with subdirectories mapping to path segments; `$@` and `$1`/`$2` expand args."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_17019c432e9f8bc809006ca9fff6249fe47476d21ea0c28eac488000a7949651",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 188,
+          "line_start": 188,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L188-L188"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 190,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L190-L190"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 192,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L192-L192"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 180,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L180-L180"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 178,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L178-L178"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 196,
+          "line_start": 194,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L194-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0362021372f062aaa196ec8f3202aea6dad46ff1db9f210d61ca7338dd7c4334",
+        "slc_03cbccae8b7f70b4112dd5fdcb4996b248558a60cf44cab43d97c003e2a1ec08",
+        "slc_33b630dd3ee8e79dbdda4f341ffb3508008c3afaf722455a35093c5e5907fd4c",
+        "slc_91849987de1366f623682335060d3bfe82453a47eb1a5a322aa6f5c65a1a7d02",
+        "slc_bf73627564fbcfaeb317fc7e968f4d820a252a9f22ef2fd50793953ec259558d",
+        "slc_c1c6f71cd08e5fc0f52642078cd6880a6ebca4fb94649bebc9f74dafbf646c66"
+      ],
+      "text": "An optional agent-callable `boomerang` tool supports task mode (queued autonomous execution) and anchor mode (toggle a summary point); it is disabled by default and enabled via `/boomerang tool on`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_68a38b2ae4350b2100afd876044ff55e730f624b7828240125278b2fd51ae4fe",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 205,
+          "line_start": 205,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L205-L205"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 247,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L244-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_30d395151534a755704852a56f659620fb9b09fa76988f4122f80f1b4b60a556",
+        "slc_949d76f1481f77debb223e467b13b871c6366da20bb15f45a80d948ada8d3660"
+      ],
+      "text": "Tool state and guidance persist to `~/.pi/agent/boomerang.json` across restarts, while anchor state is in-memory only and clears on session start or switch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1fdcd62eda1cd35372613ac2217abf4c758c41078eafa3d30fd7808a3ea190fa",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 238,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L238-L238"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_553341a0fa2bd98a2c1ac03e66b0f09b4253efc49ad659cc7d0d59de2a1fa38d"
+      ],
+      "text": "Boomerang summarizes only context/tokens and never touches file state; all file changes made during a task are preserved on disk."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9a8639ad875020b5e4a7caaace4436eda1afefcb8f7853c2ca752d6d82f4026",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 207,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L207-L207"
+        },
+        {
+          "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+          "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+          "line_end": 247,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "nicobailon/pi-boomerang",
+          "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md#L244-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_898a9b141cd21d40bf3bf81c7fbc39ea889d43284fa1588bedccd4fec4a58e20",
+        "slc_949d76f1481f77debb223e467b13b871c6366da20bb15f45a80d948ada8d3660"
+      ],
+      "text": "Documented limitations: summaries are heuristic and may miss semantic details, the agent may still ask questions, anchor state is in-memory only, and tool-initiated summaries may lag in the UI until `/reload`."
+    }
+  ],
+  "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 247,
+        "path": "README.md",
+        "size": 9995
+      },
+      {
+        "lines": 216,
+        "path": "CHANGELOG.md",
+        "size": 11481
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 9,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_ba38467457105775a833bfc97a7d6695",
+  "facets": {
+    "components": 0,
+    "dependencies": 0,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 6,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/nicobailon/pi-boomerang/1a5985b2d92cfa84ce1f470d100d02b368711a91/f61ed095535cf80d/manifest.json",
+  "package_id": "pkg_eb5bdb841274262243d67585291b9581198edc0dc7d80d1d0c4b11c1ecac66f0",
+  "repo": "nicobailon/pi-boomerang",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9f873e9337ab7553d217476675f4ea6ee857c8770460737ce6a8261b7d96a411",
+  "snapshot_id": "f61ed095535cf80d",
+  "sources": [
+    {
+      "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+      "git_sha": "1e9563745331231014b38659bcbe22e90d2262f0",
+      "lines": 216,
+      "path": "CHANGELOG.md",
+      "repository": "nicobailon/pi-boomerang",
+      "sha256": "e7df6623ad7da17f369d25aab780ef507287719ad03bd10747ea94f5a7228355",
+      "source_id": "src_986d67ad853c554e97490ed72ab9cc64",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/CHANGELOG.md"
+    },
+    {
+      "commit": "1a5985b2d92cfa84ce1f470d100d02b368711a91",
+      "git_sha": "5334c0d29f107f88484af639f590d1d6d0e4de37",
+      "lines": 247,
+      "path": "README.md",
+      "repository": "nicobailon/pi-boomerang",
+      "sha256": "64eb66839f716e2c4f8263208b3dcb723c4d5af5e1d994d9fa62bb562088a6e2",
+      "source_id": "src_925c2e1ad1c957cf898dfa3a10e51300",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/nicobailon/pi-boomerang/blob/1a5985b2d92cfa84ce1f470d100d02b368711a91/README.md"
+    }
+  ],
+  "summary": "pi-boomerang is a pi coding agent extension that runs tasks autonomously and replaces raw turn history with an expanded handoff summary to save tokens. Evidence covers its commands, chaining/rethrow modes, templates, agent-callable tool, and documented limitations.",
+  "superseded_claim_ids": []
+}

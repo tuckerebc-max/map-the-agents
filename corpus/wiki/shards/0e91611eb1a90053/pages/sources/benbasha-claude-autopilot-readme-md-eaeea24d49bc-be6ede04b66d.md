@@ -1,0 +1,40 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_10d3250b779c2dab44548b2bf1c3f7be834a2ff1b79e46d0aa6a2ca0fa917f4c
+- clm_50a327e66ecb1aa9cac04bc3e113a831b38dd7c9fdd65cf45ac4f22f94493660
+- clm_6004fc8ac3f9726a8ef2f510eee801584fe35e1bb5292f693473e73e9e25d44f
+- clm_6068639f9fd51b9cc5fcc39189ac80101c2bb2a198cb6b7cd5eccf070473a208
+- clm_71559255ef2fe78f4efab7771752f88f71f52b4c11c2dc494fd4b745710c7711
+- clm_7d1f459e4e67bf8ee23c52ad1cf89cfb9a549be55001139623ed604347d65fe6
+- clm_9c2f18f00e6e3f1c4e67ff5bf36bbd772c3604e99e7f8889975220ed18004ef3
+- clm_b1fd25417518d3c69578b1a584346d4eee37e07d5ad76d65f0c35a8409636020
+- clm_b96080879e3f57a0cd85cdc1a888b3d923c5b869c7d9da105082a3b84079c1a9
+maturity: draft
+page_id: pg_148a315f8ad15ffc84dfbe6ede04b66d
+page_type: source
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids:
+- src_17af110cc140566e9b208e65f3916a0d
+title: benbasha/Claude-Autopilot/README.md @ eaeea24d49bc
+updated_at: '2026-09-14T01:37:41Z'
+---
+
+# benbasha/Claude-Autopilot/README.md @ eaeea24d49bc
+
+<!-- rcw:begin owner=source:src_17af110cc140566e9b208e65f3916a0d block=evidence -->
+- The codebase follows a modular architecture with src/ directories for core, claude CLI integration, queue, services, ui, and utils, described as a separation of concerns. [@claim:clm_10d3250b779c2dab44548b2bf1c3f7be834a2ff1b79e46d0aa6a2ca0fa917f4c]
+- The tool can run Claude Code with --dangerously-skip-permissions for automation; documentation says it should be used only in trusted environments and disabled for sensitive data, with a skipPermissions setting. [@claim:clm_50a327e66ecb1aa9cac04bc3e113a831b38dd7c9fdd65cf45ac4f22f94493660]
+- Each VS Code workspace maintains its own persistent message queue and processing history, allowing independent management of multiple projects. [@claim:clm_6004fc8ac3f9726a8ef2f510eee801584fe35e1bb5292f693473e73e9e25d44f]
+- A webview UI manages queues and shows real-time progress via WebSocket, and a mobile web interface with QR-code access supports remote control, history browsing, and filtering. [@claim:clm_6068639f9fd51b9cc5fcc39189ac80101c2bb2a198cb6b7cd5eccf070473a208]
+- Key components include a Queue Manager for message queueing and processing, a Claude Integration managing the Claude Code process, a Dependency Checker, and a Configuration System with validation. [@claim:clm_71559255ef2fe78f4efab7771752f88f71f52b4c11c2dc494fd4b745710c7711]
+- When Claude Code hits usage limits, the extension detects it and schedules the queue to auto-resume when limits reset, including parsing of 'X-hour limit reached' reset messages. [@claim:clm_7d1f459e4e67bf8ee23c52ad1cf89cfb9a549be55001139623ed604347d65fe6]
+- Prerequisites are Claude Code installed and on PATH, Python 3.8+ for process management, and VS Code 1.74.0+ or Cursor; the extension validates these dependencies before starting. [@claim:clm_9c2f18f00e6e3f1c4e67ff5bf36bbd772c3604e99e7f8889975220ed18004ef3]
+- Claude Autopilot is a VS Code extension (version 0.1.6, MIT licensed) for automated Claude Code task management, published on the VS Code Marketplace. [@claim:clm_b1fd25417518d3c69578b1a584346d4eee37e07d5ad76d65f0c35a8409636020]
+- The extension exposes Command Palette commands such as Claude: Start/Stop Claude Autopilot, Add Message to Queue, and Start/Stop Web Interface plus a QR-code display command. [@claim:clm_b96080879e3f57a0cd85cdc1a888b3d923c5b869c7d9da105082a3b84079c1a9]
+<!-- rcw:end owner=source:src_17af110cc140566e9b208e65f3916a0d block=evidence -->
+
+## Researcher notes
+

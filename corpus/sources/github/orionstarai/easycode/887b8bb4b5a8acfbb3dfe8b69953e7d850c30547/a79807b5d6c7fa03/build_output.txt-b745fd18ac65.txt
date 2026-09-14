@@ -1,0 +1,36 @@
+
+> deepv-code@1.0.319 build
+> node scripts/build.js
+
+
+[36m[1mDeepV Code Build System[0m
+
+[2mRoot directory: D:\projects\deepVcode\DeepCode[0m
+
+[1m[34m>>[0m [1mEnvironment check[0m
+  [32m✅[0m [36mNode modules             [0m [2m[Verified][0m
+
+[1m[34m>>[0m [1mBuilding workspaces[0m
+
+[2m─ Workspace: core ─[0m
+
+> deepv-code-core@1.0.319 build
+> node ../../scripts/build_package.js
+
+
+✅ deepv-code-core build completed successfully.
+
+
+[2m─ Workspace: cli ─[0m
+
+> deepv-code-cli@1.0.319 build
+> node ../../scripts/build_package.js
+
+
+[1m[34m----------------------- Build Summary -----------------------[0m
+✅ [36mcore                               [0m [[32mSUCCESS[0m]
+❌ [36mcli                                [0m [[31mFAILED[0m]
+[1m[34m-------------------------------------------------------------[0m
+
+[32m[1mBuild process completed in 5.34s.[0m
+

@@ -1,0 +1,533 @@
+{
+  "applied_operation_id": "op_04d4b048cb3d48ff8df397e5e46894ef",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_4fb51b45446c4fc50320e764c9919189090f247ee1ec419d6bd76b3d4ac5d757",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L3-L3"
+        },
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 38,
+          "line_start": 32,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L32-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bec7e7d7c5dd96bf405c1b2c4626ae6a892764df12f683999602e79e7eb5674",
+        "slc_a393fe8650fe231a8b89d002e59c43d1c26c2bfcc1aa51ae7c18d0cd48073161"
+      ],
+      "text": "CodeAlta runs as a terminal workspace invoked via the `alta` command, providing a keyboard-first TUI with tabs, prompt editor, project sidebar, and command discovery."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0eec30d1d88beb8ad7c5cc5969a19787270def7e5ad0dc07c71fbd47ec6426ec",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 55,
+          "line_start": 42,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L42-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09ac7e8d0f2425e41c368a3173bbaf6fe6586f15e2305762d66bb8748839b43e"
+      ],
+      "text": "The TUI exposes slash commands and shortcuts such as `/open` (Ctrl+O), `/prompt`, `/model_providers`, `/models`, `/logs`, and `/help`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_273f1f6d380f8126f781489b3deefb03ed1cda43de79b591b6863f366295d712",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 24,
+          "line_start": 22,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L22-L24"
+        },
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L13-L13"
+        },
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 18,
+          "line_start": 15,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L15-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_853661cf9084d3737b3b70e469ff84853790ed856face587b5aeb37fb1e99b24",
+        "slc_9ec07f07d391f5b781398a5b984f30a3b51c3c585d21aadfe38070cc4a3fc6cc",
+        "slc_eac1883a3f61348868b8abf93e41bfcee9d4ce11b7d130de1accd3ef8479ff4e"
+      ],
+      "text": "Installation requires .NET 10 and is done via `dotnet tool install -g CodeAlta`, with updates via `dotnet tool update -g CodeAlta`."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e3bb666a49f4d38533de7f03f341fa0088bd15e61e8ef1b96eb805698534ad2a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f6933bf84d4d80f681406d1e6f53997a4b69fc4e54da96285a807e6340c7fee"
+      ],
+      "text": "On first launch the tool creates `~/.alta/config.toml` and leaves existing config untouched on later launches; if no provider is enabled, a Model Providers dialog opens."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62191ab58edb1d8e18a05f804eb2d7c56fd76345433ab2fc9e12d483cb5efd15",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L26-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f6933bf84d4d80f681406d1e6f53997a4b69fc4e54da96285a807e6340c7fee"
+      ],
+      "text": "Supported model providers include Codex, Copilot, xAI Grok, OpenAI/Azure OpenAI/Alibaba APIs, Anthropic, Gemini/Vertex, and custom endpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9cd83eb66198470021588e31e602ed326a8c85d86c7c02c8d0358f2fb170c627",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 38,
+          "line_start": 32,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L32-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a393fe8650fe231a8b89d002e59c43d1c26c2bfcc1aa51ae7c18d0cd48073161"
+      ],
+      "text": "Agent sessions are durable and project-scoped, stored in CodeAlta-owned journals, and can be reopened independently of provider startup; prompts can be queued on busy sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d5f8c94c30368f21bcb1cc4dfa11db134a0ebca986a73af09807f5ed7ed65e8e",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 65,
+          "line_start": 59,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L59-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_391ad63cddb138af44b14503f29929f31907d7f77d7661da4a06cc3a2646af75"
+      ],
+      "text": "The repository includes a skills feature documented in doc/skills.md, referenced from the readme's documentation list."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e22fe5742cbcec9f00ea2005a4d13769f868f5bbf4282445ccf9b03d6775bf3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a8e5a77c35390d07804ceaa24ce5257148bd1291113e780fa0b6e1365f6a283"
+      ],
+      "text": "CodeAlta is pre-release software; configuration, screenshots, and extension APIs may change before version 1.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8201ed11d6397eaa2f3160e11324088928bc29f08b89602208ac1b51ce4b46b5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+          "line_end": 38,
+          "line_start": 32,
+          "path": "readme.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md#L32-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a393fe8650fe231a8b89d002e59c43d1c26c2bfcc1aa51ae7c18d0cd48073161"
+      ],
+      "text": "The UI is multilingual, offering Auto, English, Spanish, French, German, Japanese, or Simplified Chinese via Workspace Settings."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f659276043daaf1bf8644326e1eb6ea257309ea72531249d32ff90761bbc2e2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "69b532eabe6a148a950cd9e5ffb5fafb8a1d15f5",
+          "line_end": 23,
+          "line_start": 21,
+          "path": "AGENTS.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/AGENTS.md#L21-L23"
+        },
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "69b532eabe6a148a950cd9e5ffb5fafb8a1d15f5",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "AGENTS.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/AGENTS.md#L30-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f81852509c83fee3970b7cf18e1d763118c74fd40a53c03ce87e2ac9cad0ed6",
+        "slc_f0de2198cb6f2ebb2f9f9324513a3689594618b8bc5d825900624a0de3899646"
+      ],
+      "text": "Repository development practice: contributors build with `dotnet build -c Release` and test with `dotnet test -c Release` in src/, and must keep docs updated before submitting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_721c9da5f83fdf93d7e210689ba21400c6c993409b1814c47fac3c1e4bea6e92",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "3704cdbfc5164c66a86a6dfd0b90880e952fb20e",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CLAUDE.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/CLAUDE.md#L5-L5"
+        },
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "69b532eabe6a148a950cd9e5ffb5fafb8a1d15f5",
+          "line_end": 40,
+          "line_start": 34,
+          "path": "AGENTS.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/AGENTS.md#L34-L40"
+        },
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "3704cdbfc5164c66a86a6dfd0b90880e952fb20e",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "CLAUDE.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/CLAUDE.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_69a8acc61d1014f5e52e0bb85f30dec661e4c1c9814100174b735e844459bb4d",
+        "slc_75250d7274bebefa838e8db82c1ba5dce173ba880ccec79285c0541d5b72a20a",
+        "slc_85762a54c69118b80d55eb5a78fd99965e00f881911b33106b7b3249e6494161"
+      ],
+      "text": "Repository development practice: CLAUDE.md defers to AGENTS.md as the single source of truth, and AGENTS.md mandates tests for new behavior, XML docs on public APIs, and no static mutable data."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ed53038245916a41b9aa6eb2958fbdca79352232ec8edef3206eab4cd9fb2d7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+          "git_sha": "69b532eabe6a148a950cd9e5ffb5fafb8a1d15f5",
+          "line_end": 66,
+          "line_start": 64,
+          "path": "AGENTS.md",
+          "repository": "codealta/codealta",
+          "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/AGENTS.md#L64-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dddd3ee1459aec780e052f88c0e8645d32256b25918854ebab4a105eac235328"
+      ],
+      "text": "Repository development practice: commit subjects must use dotnet-releaser autolabel prefixes such as `Breaking Change`, `Add`, `Fix`, or `Enhance`, with issue references in parentheses."
+    }
+  ],
+  "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 73,
+        "path": "readme.md",
+        "size": 4758
+      },
+      {
+        "lines": 73,
+        "path": "AGENTS.md",
+        "size": 4529
+      },
+      {
+        "lines": 5,
+        "path": "CLAUDE.md",
+        "size": 154
+      }
+    ],
+    "omitted": [
+      {
+        "path": "license.txt",
+        "reason": "file-budget",
+        "size": 1313
+      },
+      {
+        "path": "doc/acp.md",
+        "reason": "file-budget",
+        "size": 1671
+      },
+      {
+        "path": "doc/architecture.md",
+        "reason": "file-budget",
+        "size": 13805
+      },
+      {
+        "path": "doc/catalog-and-config.md",
+        "reason": "file-budget",
+        "size": 10193
+      },
+      {
+        "path": "doc/development-guide.md",
+        "reason": "file-budget",
+        "size": 16177
+      },
+      {
+        "path": "doc/live-tool.md",
+        "reason": "file-budget",
+        "size": 17183
+      },
+      {
+        "path": "doc/mcp.md",
+        "reason": "file-budget",
+        "size": 17634
+      },
+      {
+        "path": "doc/orchestration-actor-model.md",
+        "reason": "file-budget",
+        "size": 3188
+      },
+      {
+        "path": "doc/plugins.md",
+        "reason": "file-budget",
+        "size": 16215
+      },
+      {
+        "path": "doc/providers.md",
+        "reason": "file-budget",
+        "size": 26329
+      },
+      {
+        "path": "doc/readme.md",
+        "reason": "file-budget",
+        "size": 7675
+      },
+      {
+        "path": "doc/runtime.md",
+        "reason": "file-budget",
+        "size": 14802
+      },
+      {
+        "path": "doc/skills.md",
+        "reason": "file-budget",
+        "size": 5998
+      },
+      {
+        "path": "doc/specs/readme.md",
+        "reason": "file-budget",
+        "size": 681
+      }
+    ],
+    "omitted_count": 14,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1288,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 17,
+      "complete": false,
+      "omitted": 14,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_fcab2956d84051e8b87501700fbc6689",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/codealta/codealta/823f847297aafb0662ee317c3434c96a755e32fa/00285a1be4caf16b/manifest.json",
+  "package_id": "pkg_17309378c9428ed8ee0ce0862b6b2f9969faf351b906a13c3e0dd49b3f8407c5",
+  "repo": "codealta/codealta",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0a4af92cf7b0a69f091c0200df63b7ba9b1f84d033bb4cddf35f19d7119a5681",
+  "snapshot_id": "00285a1be4caf16b",
+  "sources": [
+    {
+      "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+      "git_sha": "69b532eabe6a148a950cd9e5ffb5fafb8a1d15f5",
+      "lines": 73,
+      "path": "AGENTS.md",
+      "repository": "codealta/codealta",
+      "sha256": "ead8100f8b35547a15d20b351eaf070ebe81cb86c42cd94dbe119d3053725f3d",
+      "source_id": "src_faa3917eb4115dffac5fbdf541ab320f",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/AGENTS.md"
+    },
+    {
+      "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+      "git_sha": "3704cdbfc5164c66a86a6dfd0b90880e952fb20e",
+      "lines": 5,
+      "path": "CLAUDE.md",
+      "repository": "codealta/codealta",
+      "sha256": "7b9ebb579ba75cc360239601bfbd8a8696264ffc763232ff8903c841b07a7591",
+      "source_id": "src_d2137e7510b35c76ae2d9e2fb4c86ebb",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/CLAUDE.md"
+    },
+    {
+      "commit": "823f847297aafb0662ee317c3434c96a755e32fa",
+      "git_sha": "0c5c5a1dbcaa0793da46684e30ae44f112e445db",
+      "lines": 73,
+      "path": "readme.md",
+      "repository": "codealta/codealta",
+      "sha256": "cad83002981f6fafb40460edcc9075fd97431827ba405bb5ed5b1b4fd60520cf",
+      "source_id": "src_401af064b3dc571ba474ace989399845",
+      "stored": "readme.md-5a831ea67cf5.md",
+      "url": "https://github.com/CodeAlta/CodeAlta/blob/823f847297aafb0662ee317c3434c96a755e32fa/readme.md"
+    }
+  ],
+  "summary": "CodeAlta is a pre-release .NET terminal workspace for agentic coding, distributed as a dotnet global tool behind the `alta` command, with provider-neutral model setup, durable sessions, and a keyboard-first TUI. Contributor guidance in AGENTS.md/CLAUDE.md covers build, test, and coding conventions.",
+  "superseded_claim_ids": []
+}

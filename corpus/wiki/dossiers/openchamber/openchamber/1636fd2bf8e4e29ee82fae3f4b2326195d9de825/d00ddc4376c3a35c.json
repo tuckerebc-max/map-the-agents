@@ -1,0 +1,634 @@
+{
+  "applied_operation_id": "op_a22daabf492e478a84157475254b762f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e150bab3f132cd8b409bce5ecfe7c57b5095e48415595db98c8570f40b6aaad",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 139,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L139-L139"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "dadf10c0bf88b37455a33b7aee7876d618a55c2b",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "AGENTS.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/AGENTS.md#L32-L32"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2698d7962449e6ea53cc7c341481e9388af865b61de5ea4ecd6337b0ec951717",
+        "slc_b4a9f2bb6b6c30bac0b36b44929fb71b74ef812f1efefc713f424aeca7d013ef",
+        "slc_f255e3da07f9f10cbdb6fd97ebd4bad5fd72da4bfc94a2069346c78cdc2fc59a"
+      ],
+      "text": "OpenChamber uses OpenCode to run coding agents, calling official OpenCode APIs through @opencode-ai/sdk/v2; the CLI/Web and VS Code surfaces use the user's installed OpenCode CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3b0e08acf4f2370c5aaff4dd5ec63aabc6ce406d45576f6119550c62b144dce",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L116-L116"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 114,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L106-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23a89f8a767bad060af6b2bda47ed04206e5c3d80f5bcf27d7f0fbb356bd240e",
+        "slc_447ca0f8619281ecb1ba56a0c0c58f8335bb4bcee9f3832889189555e46090fc"
+      ],
+      "text": "The CLI exposes commands such as status, connect-url --qr, tunnel start, startup enable, logs, stop, and update, and binds to localhost by default with --lan and --ui-password options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5495ba05242f8dcb8c464cc80b4d168b5c27f2897691973c04c86526136793b9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "e82c7a935501fd343a113e8d916a2c45e4ccb981",
+          "line_end": 23,
+          "line_start": 13,
+          "path": "docs/REVERSE_PROXY.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/REVERSE_PROXY.md#L13-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8835d24b8c768678cf15e0f6b895eebaf35477f1e65ebcd124d6fb29202feeea"
+      ],
+      "text": "The server exposes WebSocket routes (/api/event/ws, /api/global/event/ws, /api/terminal/ws) and SSE routes (/api/event, /api/global/event, /api/notifications/stream, /api/openchamber/events) that reverse proxies must pass through unbuffered."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1efe4dedd499521a2fe52f75d95d77a9f926a1019bea6668dfe5d0a3258fcea3",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 32,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L32-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e9e2e0ef0378fc9731c52e465729c1bf4cc80ecd1e9766483d882e56a05b17e"
+      ],
+      "text": "Session Goals let a user set a finish line; the system checks results after each turn and keeps the agent working until the goal completes, the agent is blocked, or a user-set limit is reached, continuing even after the app is closed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bcb6b6a111ceb495611b5bbc85b345a9000da0d27ac36f5ea81d02ca5390db1c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L36-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ca2304374dbaa5403f66a19f2ba86651db8f5d430597a0469173d7d118929741"
+      ],
+      "text": "Multi-run assigns the same task to up to five models in separate sessions with optional worktrees, and Fusion can combine the strongest parts of those runs into a new session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ba80ba319ebf84f768efca30c786fef102536c92f64ed39c68f69b5512540b4a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b0119390554d187ae9eccfa298660db0d687bc5f67b24195ccd153591daf3e12"
+      ],
+      "text": "Changes Walkthrough turns a large diff into an AI-guided tour that groups related edits into ordered steps and explains how the pieces fit together."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_668da093690b69c89271a2987827b9fe77ed62998975deb44cff48ee2ee34a99",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c5854bc83d63da8ff79bd35dd8be2a1d5a4310e0a667dea9093b70c0c8351bd"
+      ],
+      "text": "Remote access pairs devices via a one-time QR code through Private Relay with end-to-end encryption and revocable connections; direct, LAN/VPN, Cloudflare/Ngrok tunnels, and SSH connections are also supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1068bb5760d38090d2cc4ca98c542567d7ca3b390d60c1be08c6b8d2aff71b7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "fbaf1c2ff7721bdc15de5a5fc0339b8c2caf6ab1",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "docs/CUSTOM_THEMES.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/CUSTOM_THEMES.md#L14-L14"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "fbaf1c2ff7721bdc15de5a5fc0339b8c2caf6ab1",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "docs/CUSTOM_THEMES.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/CUSTOM_THEMES.md#L218-L218"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "fbaf1c2ff7721bdc15de5a5fc0339b8c2caf6ab1",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/CUSTOM_THEMES.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/CUSTOM_THEMES.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60d29ceaa8295fec2af922925f25d05f460bed151cd1fbdbb7a981bb53fd5e96",
+        "slc_7ce1a61110ecbb7f37fa7289518aeb066d718a4dfb71575f90bd8d3545294183",
+        "slc_da948550ebaf2a64e440146d9f32166a295d2cdafc4c7c5a92587ac3ba997db1"
+      ],
+      "text": "Users can define custom themes by dropping a JSON file into ~/.config/openchamber/themes/ and reloading from Settings without restarting the app; themes are validated on load and invalid ones are skipped with a console warning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c18926456ba7136304a277cbaa30f8db247666acc9013e6d313f45920eade665",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L89-L89"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73bf932b2d06910f976f640922a1126a643117400d672300da3517d830320e0c",
+        "slc_f255e3da07f9f10cbdb6fd97ebd4bad5fd72da4bfc94a2069346c78cdc2fc59a"
+      ],
+      "text": "The CLI for web/PWA requires Node.js 22+; Linux AppImages require FUSE (libfuse.so.2), with an APPIMAGE_EXTRACT_AND_RUN=1 fallback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78c3e75eb41584e7ab49659c0d6993be4702580e4bfd6708fd319fe5324c6209",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "e82c7a935501fd343a113e8d916a2c45e4ccb981",
+          "line_end": 301,
+          "line_start": 299,
+          "path": "docs/REVERSE_PROXY.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/REVERSE_PROXY.md#L299-L301"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "e82c7a935501fd343a113e8d916a2c45e4ccb981",
+          "line_end": 309,
+          "line_start": 309,
+          "path": "docs/REVERSE_PROXY.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/REVERSE_PROXY.md#L309-L309"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_93e4dce9ce5879fb5ebfea39d2f51bfce7cc333309c75b0adb25b865b5108e1b",
+        "slc_d3e7cba6d419d0a181ab6393a0a249e883eb519a3c87b60b6b3653af1c34c2d8"
+      ],
+      "text": "OpenChamber appears to gzip-compress HTTP responses with a 1 KB threshold while excluding SSE streaming routes from compression, per the reverse-proxy guidance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_565f1f6b30a56a95b108c0d90ba45bfa03bc0058668e6c298ba88e5e6ac64f17",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "dadf10c0bf88b37455a33b7aee7876d618a55c2b",
+          "line_end": 17,
+          "line_start": 13,
+          "path": "AGENTS.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/AGENTS.md#L13-L17"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "dadf10c0bf88b37455a33b7aee7876d618a55c2b",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "AGENTS.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/AGENTS.md#L11-L11"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "dadf10c0bf88b37455a33b7aee7876d618a55c2b",
+          "line_end": 21,
+          "line_start": 19,
+          "path": "AGENTS.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/AGENTS.md#L19-L21"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "dadf10c0bf88b37455a33b7aee7876d618a55c2b",
+          "line_end": 87,
+          "line_start": 82,
+          "path": "AGENTS.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/AGENTS.md#L82-L87"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_018087177adb4ea9d180c22ecf4a40a5219b5e57917205ebb1315535f614453f",
+        "slc_02eb5550a430cad59446a50328ce2a9b012108f4fe8b703f3b0fdc5ff8fe99e9",
+        "slc_2f37b033f55f072e2d21f44bd0ce8279c54121edcaf79826097d93054c84944b",
+        "slc_e3b808725792eda8546a7d9950dc9d3fa509c029d7077bd1b774521a9183dacc"
+      ],
+      "text": "Repository development practice: AGENTS.md mandates loading every matching project skill and nearest DOCUMENTATION.md before editing, treats skill loading as required rather than optional, and requires stopping to resolve conflicts between guidance sources."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c442d7274061534187febb62c8bcc2de7ab3f4016a616cb8b9b02a4722b231a8",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "dadf10c0bf88b37455a33b7aee7876d618a55c2b",
+          "line_end": 140,
+          "line_start": 133,
+          "path": "AGENTS.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/AGENTS.md#L133-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ab0afdbe1e0a993bff28592856fb34dd8349b0107c109a3b784b27fcbc992f76"
+      ],
+      "text": "Repository development practice: contributors validate changes with package.json scripts, run 'bun run dead-code' after file/export changes, and run 'bunx oxlint' with a vendored anti-slop plugin on new or substantially rewritten TypeScript files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e3a496d41c6b15da5f9cd4761429c801e355372a08a62a370be88a3661481e7",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "7db3d8bb9995324f0f778eb62f9459ba460191ab",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "CONTRIBUTING.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/CONTRIBUTING.md#L28-L32"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "7db3d8bb9995324f0f778eb62f9459ba460191ab",
+          "line_end": 50,
+          "line_start": 46,
+          "path": "CONTRIBUTING.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/CONTRIBUTING.md#L46-L50"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "7db3d8bb9995324f0f778eb62f9459ba460191ab",
+          "line_end": 22,
+          "line_start": 17,
+          "path": "CONTRIBUTING.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/CONTRIBUTING.md#L17-L22"
+        },
+        {
+          "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+          "git_sha": "7db3d8bb9995324f0f778eb62f9459ba460191ab",
+          "line_end": 9,
+          "line_start": 5,
+          "path": "CONTRIBUTING.md",
+          "repository": "openchamber/openchamber",
+          "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/CONTRIBUTING.md#L5-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8be027193c101d29bdcfac6ca8ed72a50186114f6a3579f8639965370360cebf",
+        "slc_df2a80bc7019375a3a2021aa01c2855c82a17d7a6eca9b264334233891a336b7",
+        "slc_f6b78b3f9cb39242a20869c0be7309bf7dbc69e5da0063e30392c357be5d9695",
+        "slc_f92717c8fa1e7f7f1513ee85263026e4e5565f6d849cc0847df556483a036d51"
+      ],
+      "text": "Repository development practice: development uses Bun (bun install, bun run dev, electron:build, vscode:package), with dev scripts for web HMR, Electron, and VS Code extension development documented in CONTRIBUTING.md."
+    }
+  ],
+  "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 161,
+        "path": "README.md",
+        "size": 8356
+      },
+      {
+        "lines": 229,
+        "path": "docs/CUSTOM_THEMES.md",
+        "size": 6150
+      },
+      {
+        "lines": 309,
+        "path": "docs/REVERSE_PROXY.md",
+        "size": 8757
+      },
+      {
+        "lines": 148,
+        "path": "AGENTS.md",
+        "size": 10590
+      },
+      {
+        "lines": 1,
+        "path": "CLAUDE.md",
+        "size": 9
+      },
+      {
+        "lines": 274,
+        "path": "CONTRIBUTING.md",
+        "size": 10713
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 199976
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 961
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 4586,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_0ffbac376ab55942beed91c2b7e1b5de",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 5,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/openchamber/openchamber/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/d00ddc4376c3a35c/manifest.json",
+  "package_id": "pkg_505a1785f2b68557531ed34ffd065fef71084383f55c12a6355a6a64d32bebfe",
+  "repo": "openchamber/openchamber",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "f50615859f4bd0ceea9e93bb8741b97ac6806929379d5d87685e0011a1ccd40b",
+  "snapshot_id": "d00ddc4376c3a35c",
+  "sources": [
+    {
+      "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+      "git_sha": "dadf10c0bf88b37455a33b7aee7876d618a55c2b",
+      "lines": 148,
+      "path": "AGENTS.md",
+      "repository": "openchamber/openchamber",
+      "sha256": "d9a2dcf113b6618ce531f8fccde3aa0fa973835a4d1e0f1c185b04dffe4aaa5d",
+      "source_id": "src_c92c8c521109535b81a3df13e694aa11",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/AGENTS.md"
+    },
+    {
+      "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+      "git_sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      "lines": 1,
+      "path": "CLAUDE.md",
+      "repository": "openchamber/openchamber",
+      "sha256": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9",
+      "source_id": "src_46b95a26168359849385d5e6e8df98c9",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/CLAUDE.md"
+    },
+    {
+      "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+      "git_sha": "7db3d8bb9995324f0f778eb62f9459ba460191ab",
+      "lines": 274,
+      "path": "CONTRIBUTING.md",
+      "repository": "openchamber/openchamber",
+      "sha256": "55ed70c3419c2afd85a901493e9df7aeb583280f6cc8b12b411f1aaded87bf05",
+      "source_id": "src_f0cdfa6e7d4c50ee82c4b36d50749b41",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/CONTRIBUTING.md"
+    },
+    {
+      "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+      "git_sha": "79fe45e0e8c698d4cabd90b6811c9a4a40e157e1",
+      "lines": 161,
+      "path": "README.md",
+      "repository": "openchamber/openchamber",
+      "sha256": "b0f5855736aaa6a7a56b86448dbc0da2111a756e59301ad6663bf3b22e87e2c1",
+      "source_id": "src_751af7928ffa5a4db757b9071dfdfd40",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/README.md"
+    },
+    {
+      "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+      "git_sha": "fbaf1c2ff7721bdc15de5a5fc0339b8c2caf6ab1",
+      "lines": 229,
+      "path": "docs/CUSTOM_THEMES.md",
+      "repository": "openchamber/openchamber",
+      "sha256": "bbac183e5fef7e2d17a6bf5dfbab9b2e7b565ec5e592eed221459ee72f58d515",
+      "source_id": "src_a72eb7f56040519e9c86f3c0a3408294",
+      "stored": "custom_themes.md-67be00ab2ed2.md",
+      "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/CUSTOM_THEMES.md"
+    },
+    {
+      "commit": "1636fd2bf8e4e29ee82fae3f4b2326195d9de825",
+      "git_sha": "e82c7a935501fd343a113e8d916a2c45e4ccb981",
+      "lines": 309,
+      "path": "docs/REVERSE_PROXY.md",
+      "repository": "openchamber/openchamber",
+      "sha256": "7ac6b7e6b4c8dd7e7644411ee66bb8f5dc9b5ce3dbc2b75abc0ee92395b1ac15",
+      "source_id": "src_78856a089c08522cb50af67e5392a1b8",
+      "stored": "reverse_proxy.md-28e8db965f7c.md",
+      "url": "https://github.com/openchamber/openchamber/blob/1636fd2bf8e4e29ee82fae3f4b2326195d9de825/docs/REVERSE_PROXY.md"
+    }
+  ],
+  "summary": "OpenChamber uses OpenCode to run coding agents, calling official OpenCode APIs through @opencode-ai/sdk/v2; the CLI/Web and VS Code surfaces use the user's installed OpenCode CLI. The CLI exposes commands such as status, connect-url --qr, tunnel start, startup enable, logs, stop, and update, and binds to localhost by default with --lan and --ui-password options. Evidence coverage: 145 of 178 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,738 @@
+{
+  "applied_operation_id": "op_33ecba3fc1524e06b08d4b7e34b07a5a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec454bb52b833e58bc0d038310e51ebb79eceadce05fa7062144428a1a769764",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 269,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L254-L269"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f3d7696eff091dca5346e95e4bc4652c75e825580e1b9e85c87594824063d66"
+      ],
+      "text": "The CLI exposes commands including init (with --hook and --multi flags), generate, view, diff, serve, derive, export, and setup with per-tool variants for claude and cursor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_409d9a1db29f383cf0fcb69f7efdb157981e3a945b2e87694d4d6bc21dc30101",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 173,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L173-L173"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_276151cb3241385cdd728deed2b5163b328bd5511374b34fac666006c157ee4a"
+      ],
+      "text": "The MCP server started via 'stacklit serve' exposes seven tools: get_overview, get_module, find_module, list_modules, get_dependencies, get_hot_files, and get_hints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_92ba88bd8b7a702ef4b698c97eb2ecb65d8cdc8307f22e3d1131aa6bd495651c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 108,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L108-L108"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 106,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L90-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d5d7cb5cf3dfb6a9355b24a2f89bc7591e8ce9f8773759609038a81d66f52fc9",
+        "slc_de4629e679b41ba91d48fe4ff0e380104954ab63fd63c58f1d0285be644a93a7"
+      ],
+      "text": "stacklit.json contains per-module entries with purpose, file/line counts, exports, depends_on, and activity, plus hints such as where to add features and the test command."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec385cc9147552863657ffb7a9e6331122dcc455e280cfa17674ddc74db1c51f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 60,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L56-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_76a2cc42545c089d6cb8bf0cd6bb0df31f1010d84b72e6f52bd3a47c4f6422d6"
+      ],
+      "text": "Running stacklit init produces three artifacts: stacklit.json (committable index), DEPENDENCIES.md (Mermaid diagram, committable), and stacklit.html (interactive map, gitignored and regenerable)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c49f76ddf667ab2908195206cdaaf5748a146ccd92b56575a9728b1a25574c8e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 227,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L227-L227"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 232,
+          "line_start": 229,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L229-L232"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18c8beca14f03460864f808cee4fb3234d90fbd22379bd3f772c6658b6c5029a",
+        "slc_f676e94113573cf954debff83f941a761840623f351f4aa99a579ed386f3cded"
+      ],
+      "text": "The visual map opened by 'stacklit view' offers four views: a force-directed dependency graph, a collapsible tree, a sortable searchable table, and a top-down dependency flow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd86994fb8551dfd7f34e13b3699f06b3196b97b41bcf6c995982489aea6ec8f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L75-L75"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L3-L3"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L71-L71"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L73-L73"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L137-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c8a675693a97a4db46e7e45382230689e159b66a29c748209acd6efd6500ffd",
+        "slc_489b528539521d3760988667ff02dad3cb928b735b97646cc389d846cb52a670",
+        "slc_5ef2492681437de5591d8f7b7be8f9990bc5298f9210c1d54b604c8ae3ad90b8",
+        "slc_82629bb657b87782e97f26657b48f5c6b555410601295a026ac81807470de432",
+        "slc_a116f518140afe0edfc81a63c6cce99574fb955f938dac4efb44149575827f5b"
+      ],
+      "text": "The tool is designed so AI agents read a small (~250-token) navigation map or stacklit.json instead of scanning many files, which the README claims cuts exploration from hundreds of thousands of tokens to a few thousand."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2626bc2418e005db4e9f95bd5787b4b043181c82e8a7b395362841e15306df8b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 250,
+          "line_start": 250,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L250-L250"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 248,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L236-L248"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 310,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L309-L310"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ddfee54c6727865bb0449dbb14a5406b5e3d1bfae37f2f81a45abe1452ad437",
+        "slc_68212cd915f55dce4e49f25a81e723da3259ae88cf63b1fed1841830f2c48bc7",
+        "slc_eae8279feb02e0a15ec2526276c30b8e363d5bc179d9ffd4e5b2cd8c393a5620"
+      ],
+      "text": "Parsing uses tree-sitter to extract structure for 11 languages (Go, TypeScript/JS, Python, Rust, Java, C#, Ruby, PHP, Kotlin, Swift, C/C++); other languages fall back to line count and language detection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8aa16b80fbc4bfdedbc23ba19a6292625e59df6aee01b044aec180897b3c53f7",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L9-L9"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 25,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L22-L25"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_59d0c5539af7ba84e8e80ecd3d4fbcd208beafe2da998d9c0a9b845b0e992107",
+        "slc_9c040cfccb50556a869b3f189bd3205e60d32b602e45b92cb620514aa8445955",
+        "slc_bb12d4199b952f798e92fc7d5fe9f41f95cd6392de551bc7930e44523510cf70"
+      ],
+      "text": "The project is written in Go and is installable via npx, npm global install, 'go install github.com/glincker/stacklit/cmd/stacklit@latest', or prebuilt binaries for macOS, Linux, and Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73e0df5396557e48ea46a583128de4956420536473b664819cae637c4b2cf009",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 121,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L118-L121"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 129,
+          "line_start": 125,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L125-L129"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_18bec736d5ca31bdc68d686a1ba98b34a2d5368eac92b3cc1614ebefdbf1094e",
+        "slc_844a18cf23900491e8c9519226813dd4c582e925c035958cd759111683c0fcec"
+      ],
+      "text": "'stacklit setup' auto-detects Claude Code, Cursor, and Aider, injecting a ~250-token codebase map into each tool's config, configuring MCP integration, and installing a git hook to refresh the map on commits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ffebf1331684b7e0c157c670eab019069e7f1926dc095ac6c05c1a31a5bd1130",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 334,
+          "line_start": 331,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L331-L334"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6524670e083a5ecf00a7770f4fd873844998a8f7fdeb5e01fb182c0796eb7cc9"
+      ],
+      "text": "Repository development practice: contributors build with 'make build' and run all tests with 'make test', per the README contributing section."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88cc76840f0c9325a2bc7d552de4de3cb59ce2bceaacce3141c3cd85dee42197",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d589f6ccb1a033e5a75df674f99d93fea6740014275bcc8fd96a406cd16d8539"
+      ],
+      "text": "Repository development practice: an internal plan document instructs agentic workers to use superpowers subagent-driven-development or executing-plans skills to implement tasks step-by-step with checkbox tracking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ee068570e7d3bfc6e0ef8e94988e300442dbfed145e501d260ca6c4906f63329",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 491,
+          "line_start": 491,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L491-L491"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 489,
+          "line_start": 487,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L487-L489"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 406,
+          "line_start": 401,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L401-L406"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 410,
+          "line_start": 410,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L410-L410"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 485,
+          "line_start": 485,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L485-L485"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6260fe9436d86dea1fdbac7f81d6c3d5074502fb3a370a6112e4c6d3bf95f9d9",
+        "slc_76caebd28969603bc389d4dac0fa6faf9ec329c41346dd7c96e60c508a810313",
+        "slc_c0fd25a7aa9b3e8f1f46f0e0e2a64c2ae2c83a97abf90d1ed3edfecb8b51bfd2",
+        "slc_de6a86bad9c2b223a9c598338bb6a47a8fe63834a23bda90a78b5a373a0fa4d1",
+        "slc_f0117a26d45f9ebbf6785fe41fdb64bc02804063694d715ea94fc2984c3def0b"
+      ],
+      "text": "Repository development practice: the plan's Task 5 prescribes a test-first workflow — write framework-pattern detection tests, run them to confirm failure, then implement in internal/detect and internal/engine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_deaf18f278013b9a325da39d101cc09bb3f2258e68f76c4b254e37b1c9f40034",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 313,
+          "line_start": 312,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L312-L313"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b7c3c3b73f857be48869daf22f4db3c126c25a9d4317f4f19fcfdd0276308589"
+      ],
+      "text": "Languages outside the tree-sitter list get only basic support (line count plus language detection), though the module map, dependency graph, and git activity still work for them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_570df8c567277466bfacf94281856fc758f41add916cc9bc9751e9106b47c222",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 310,
+          "line_start": 309,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L309-L310"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_eae8279feb02e0a15ec2526276c30b8e363d5bc179d9ffd4e5b2cd8c393a5620"
+      ],
+      "text": "Parsing runs locally and no code is sent anywhere unless the optional --summary flag is used, which calls the Claude API."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e2a1964afcb4b5aa046953c2967232f0803be39876027c2439185f7ca4602fb",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L71-L71"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 305,
+          "line_start": 305,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L305-L305"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L67-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ef2492681437de5591d8f7b7be8f9990bc5298f9210c1d54b604c8ae3ad90b8",
+        "slc_b9a7ed4cf006e0c844477f1472af31dbfec1eb79e86875b2f8af9ea828fbaf17",
+        "slc_e1f3f191560174a9d358576426393be0394ec758ad5c3163f613382ad1d01848"
+      ],
+      "text": "Stacklit targets teams using AI coding agents on larger codebases, providing a committable structured index so agents avoid rebuilding a mental model of the repo each session."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8a0c0265295844950403b6c8ef0dcb495e96d5939b66fa5e5bb25232329ffa84",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 251,
+          "line_start": 246,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L246-L251"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+          "line_end": 84,
+          "line_start": 79,
+          "path": "README.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md#L79-L84"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 277,
+          "line_start": 277,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L277-L277"
+        },
+        {
+          "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+          "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+          "line_end": 260,
+          "line_start": 255,
+          "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+          "repository": "glincker/stacklit",
+          "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md#L255-L260"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_038c6a5d77717b29b738fb97904c597fa1cc8e014674ef76e613801d9e63a5f1",
+        "slc_62115b9ccdeba6c64364fdac737901cb197f76463d866c7498015596766a7a68",
+        "slc_77de474b3e0f57b2e783cfdcf2a6e3a067ae7751c33ad3e87e69bc1770bcc2d4",
+        "slc_7aa262b9ea99166603f4fa6dec4fff2f422d834339dd10f8762d5169053dd5bc"
+      ],
+      "text": "The README's token-efficiency table reports index sizes for real projects, but the planned agent benchmark (tool calls, tokens, correctness) contains only placeholder XX values, so no completed agent-performance evaluation appears in this snapshot."
+    }
+  ],
+  "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 340,
+        "path": "README.md",
+        "size": 11351
+      },
+      {
+        "lines": 141,
+        "path": "COMPARISON.md",
+        "size": 6405
+      },
+      {
+        "lines": 60,
+        "path": "DEPENDENCIES.md",
+        "size": 2677
+      },
+      {
+        "lines": 66,
+        "path": "SKILL.md",
+        "size": 2709
+      },
+      {
+        "lines": 340,
+        "path": "USAGE.md",
+        "size": 8800
+      },
+      {
+        "lines": 841,
+        "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+        "size": 22568
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/superpowers/specs/2026-04-12-growth-package-design.md",
+        "reason": "file-budget",
+        "size": 7231
+      }
+    ],
+    "omitted_count": 1,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 122,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 7,
+      "complete": false,
+      "omitted": 1,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_ec017fbc8d5758549b95f149bebe8b9f",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/glincker/stacklit/6aa017643d19ab2718d42f098ee2a65717c2e3b6/b685fa5ba411ed97/manifest.json",
+  "package_id": "pkg_250034929b6b7baebc80aed1f833e43cc8cfead52e487ca58e4977203d56b54f",
+  "repo": "glincker/stacklit",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "881cc7df58693420ba12e73a6d5ded5b2bc84eaf115623487f719f58a2ad7267",
+  "snapshot_id": "b685fa5ba411ed97",
+  "sources": [
+    {
+      "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+      "git_sha": "4a7f29d28224d47056fa648a0ee48ba67ba262ff",
+      "lines": 141,
+      "path": "COMPARISON.md",
+      "repository": "glincker/stacklit",
+      "sha256": "5ff680c04b5ab8f82ccc1f25efce6be672562dceefb07c175c1d3fdb9679dfdb",
+      "source_id": "src_f2a065587ff3596ab4555d66af633c37",
+      "stored": "comparison.md-46407991f9df.md",
+      "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/COMPARISON.md"
+    },
+    {
+      "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+      "git_sha": "d2ffc623323a2f370a4d8b34f6111173668b3893",
+      "lines": 60,
+      "path": "DEPENDENCIES.md",
+      "repository": "glincker/stacklit",
+      "sha256": "04303106938fc8633a5b6a4246f6104884a26071c3436f7f9b6e04d6b77806b8",
+      "source_id": "src_6657141b706b523d8de7ef0f98db8a76",
+      "stored": "dependencies.md-73c2e4c2e886.md",
+      "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/DEPENDENCIES.md"
+    },
+    {
+      "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+      "git_sha": "128a1b71531dfa889cdda376e3c0ee28623cad1b",
+      "lines": 340,
+      "path": "README.md",
+      "repository": "glincker/stacklit",
+      "sha256": "654a3fe58b80acad4fc041d44b6d0ee36fd308b664cc373052af686f800f0a46",
+      "source_id": "src_fd8ace5df19e5c4688f8b186f29b8c9e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/README.md"
+    },
+    {
+      "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+      "git_sha": "c152464a139959fc87e45b67d62b27b40ebcdc24",
+      "lines": 66,
+      "path": "SKILL.md",
+      "repository": "glincker/stacklit",
+      "sha256": "0e6170903c9dfc7ec15dca261fe841b5b494fa583cd84b92ee5d692cd25e3a15",
+      "source_id": "src_2ebe42c3842f5e5aa152e134c5e96d88",
+      "stored": "skill.md-0e95f5a36660.md",
+      "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/SKILL.md"
+    },
+    {
+      "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+      "git_sha": "5f1a3e6245931fed054e4b8e5a67d7c67210516c",
+      "lines": 340,
+      "path": "USAGE.md",
+      "repository": "glincker/stacklit",
+      "sha256": "d58aee90cd0d952372e350a6a9140b02d4fab60d8aef6f2585b777ae013a15da",
+      "source_id": "src_aa3bacb714255bec96f13c612c602d73",
+      "stored": "usage.md-58a825c70bcc.md",
+      "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/USAGE.md"
+    },
+    {
+      "commit": "6aa017643d19ab2718d42f098ee2a65717c2e3b6",
+      "git_sha": "9b9241256beabc7a83d3d1257c68014a1ab33557",
+      "lines": 841,
+      "path": "docs/superpowers/plans/2026-04-12-growth-package.md",
+      "repository": "glincker/stacklit",
+      "sha256": "2a03642c9911f414681c563c8bd5dfd0f34c851cbe0450df839dda586b6dfe53",
+      "source_id": "src_f4415a7fe3685e6da70ee0a55cc873c4",
+      "stored": "2026-04-12-growth-package.md-98d09435eafb.md",
+      "url": "https://github.com/glincker/stacklit/blob/6aa017643d19ab2718d42f098ee2a65717c2e3b6/docs/superpowers/plans/2026-04-12-growth-package.md"
+    }
+  ],
+  "summary": "Evidence is README documentation plus an internal implementation plan for Stacklit, a Go CLI that generates a compact codebase index (stacklit.json, DEPENDENCIES.md, stacklit.html) for AI agents, with MCP server, git hooks, and a GitHub Action. Most claims are documented product behavior; the plan file is development guidance. Evidence coverage: 183 of 347 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,596 @@
+{
+  "applied_operation_id": "op_61f0b9c28c104b1f8376927210d44b24",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_14e96e6a326c7ae9a658306bc71fe3c9a41b9cfb09c971c6e5715de88db63e2e",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f3030110f92fdedcf1ea5fab1e568600b8d7652af253c33749b8bcf11d0b83b8"
+      ],
+      "text": "The product is a local AI agent desktop application for macOS and Windows that packages the pi agent's capabilities into a standalone installable app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fda93dedc2fe9dc44c65e97d701d8b60eb075c4e637b7c5a3679bcde06471f56",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "3e41abd6fac9a52ae749971a9c78f412926cde5c",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "docs/ownership-boundaries.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/ownership-boundaries.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a56449678312941421e41887374252b319519181f3318985c2e151b2beb7c80"
+      ],
+      "text": "The app bundles three components: the desktop shell authored in this fork, the pi agent runtime as an npm dependency, and the pi-web UI merged from an upstream release tag."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1328d147906cc2b906f3313db67094ac302951fd34ce395cb553b00fe5420c1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a92bea6c4b5fb7ad536fa89d3526bc3e001c9094394bb8e2e308a80531e6f866"
+      ],
+      "text": "The desktop package bundles a Next.js standalone server, a Node.js runtime, and the current Pi SDK, so the local server starts with the app without separate installation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4981a9df3749bb06b507b8ab92f8f808bc0f91766a7c91d9536c88cc49f6d1b8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 17,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L9-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f4c4da84285072c2ca2aff68db368619a6f93908e8ce69eee7af4930527d34e"
+      ],
+      "text": "Features include browsing and resuming past Pi sessions, real-time chat with visible thinking/tool calls/cost, branching or forking conversations, and Git worktree switching from the sidebar."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4f3efd765e2dba08679f7f328c477c4cac16ea1a64d93770ea3c80d9c1545d3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 17,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L9-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f4c4da84285072c2ca2aff68db368619a6f93908e8ce69eee7af4930527d34e"
+      ],
+      "text": "The app can preview source code, diffs, Markdown, images, audio, PDF, and DOCX files, and offers dark mode, automatic session naming, and a completion sound."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14c8597f04bfc0d0cf0b5d5b93433c504b99d82f60dcef54ee9012ac873c77d3",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 50,
+          "line_start": 48,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L48-L50"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L46-L46"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L58-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_241ba1cd918d795475fa68278f0c4e8f923cb0f1015070297a7c0a5e3e4150be",
+        "slc_3612b98ffe95d2002e985cc9b26d3d44a7c33162cb78881676ab000733681ead",
+        "slc_ca58f48640db1195840d4e4073b417e907decc2199af43baa0a996ba24d0d2bf"
+      ],
+      "text": "The app reads Pi's local data directory ~/.pi/agent by default, picking up existing sessions, models, and authentication; PI_CODING_AGENT_DIR can point elsewhere."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_be689ba1b82b866504cd1a97d9784424191a7485e886d111b79423c63a0ef25c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L60-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f985f83da50427e4984f7a945b5c392161f997b3f6f27889568b1446c929ea6c"
+      ],
+      "text": "The file-browsing API restricts access to the current session, the selected project, and explicitly authorized working directories; model keys and session data stay local."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc4502c336b74932aa7b8d3822a2734f2ac0857f4d3608775371d02bfd273eef",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 76,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L72-L76"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_263411bf590d319e0e45fa52094fcdcfda902b158912f26e7ded1ac807cb4133",
+        "slc_9ad1f49892aee7569a7a913bbb0619ac4d4930f525f1e56d2bfc887153a99064"
+      ],
+      "text": "Updates are whole-app only: the upgrade button installs one complete signed build containing all three components and restarts; it never patches individual JavaScript packages or downloads unsigned files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_03be047afd872a40ac82791c310464f6fe58c72dd8755f3da51ec0c4e069ea8a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "2d0b13388508b3dc461e4fe0c78c0c4b45e8aec3",
+          "line_end": 6,
+          "line_start": 3,
+          "path": "docs/i18n.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/i18n.md#L3-L6"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "2d0b13388508b3dc461e4fe0c78c0c4b45e8aec3",
+          "line_end": 13,
+          "line_start": 12,
+          "path": "docs/i18n.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/i18n.md#L12-L13"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "2d0b13388508b3dc461e4fe0c78c0c4b45e8aec3",
+          "line_end": 17,
+          "line_start": 15,
+          "path": "docs/i18n.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/i18n.md#L15-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6caedca72108ed0dee1fb787135f7a0377cecf749a431c58576824fa304a085b",
+        "slc_73dae7617aae987e2198cd8dbc6f854c77c7b07cc48a3f64f0541daff76f683f",
+        "slc_e947f882612c8c84527833433d71ac1285957a3d2c630bd90c36dc7dec84903a"
+      ],
+      "text": "The web UI uses a small internal i18n layer with English and Simplified Chinese packages, browser-inferred initial locale, and persistence in localStorage under pi-locale."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f4cd292611887f4327dd9359ceabce5a010029ad44dbd4c84b2c5a8cfa8acd8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 105,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L99-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c939830e6e1def94d80582bc43ae8e9cb0367facc120ef1ce1c11d472e44f6bc"
+      ],
+      "text": "Building requires Node.js 22 (recommended), npm, Rust 1.85+, plus platform toolchains such as Xcode CLT on macOS and Microsoft C++ Build Tools with WebView2 on Windows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0808b10c7b4e58c0c6cf8f6f2428dac5de889fcc913debe8dc83c553bc7b9d9c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 130,
+          "line_start": 130,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L130-L130"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 143,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L142-L143"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L116-L116"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L136-L136"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 133,
+          "line_start": 133,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L133-L133"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 147,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L146-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1981a2e76ae8509bd691ce4b44dcbeb426f7e2d92dcc292c47cf75d53e07f019",
+        "slc_238815cc1e49e5f5a84a5e3bd8cf6b818e9deab19ed146b5751585ef858dbb4c",
+        "slc_786a6f07a3d2eedc663750dea358bf1757918b155ff47a18faab68f114e7c8fd",
+        "slc_8f643644b9552ac5b1776436e1932faecef05b9b2b82a370962370c0567425d6",
+        "slc_e69d458d0d5e0ec575b9364d2f46009ed782c4d986b2b1af36e006c65014c33e",
+        "slc_f41e5e20ff963b11648477c203a9f6d297833cd9824b03ce12b1c0d734d5bb25"
+      ],
+      "text": "Repository development practice: contributors run npm test, tsc --noEmit, npm run lint, cargo fmt/clippy checks, and npm run release:verify; they should avoid next build during normal development."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4eb915dd780f40054391d925df0c9cb362363e3758242172a87a8113c12c9d45",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "3e41abd6fac9a52ae749971a9c78f412926cde5c",
+          "line_end": 20,
+          "line_start": 19,
+          "path": "docs/ownership-boundaries.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/ownership-boundaries.md#L19-L20"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+          "line_end": 175,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md#L172-L175"
+        },
+        {
+          "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+          "git_sha": "3e41abd6fac9a52ae749971a9c78f412926cde5c",
+          "line_end": 24,
+          "line_start": 22,
+          "path": "docs/ownership-boundaries.md",
+          "repository": "abcwyc/pi-agent-desktop",
+          "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/ownership-boundaries.md#L22-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_373fa973820ef1f3cbcdc4e95cc775d208b9b04d0b0ef08be08ed57744d285aa",
+        "slc_5e0edc2f8c438d8cddc1d3e57ffb9778cc2d7c936dfa093d1c66db46dd2044a9",
+        "slc_8e414d60b90e2aef29ca8bc864820f410b5ef096b6d159e1bed7b33871d365f9"
+      ],
+      "text": "Repository development practice: a nightly component-updates workflow syncs upstream pi and pi-web releases, intersecting changes with fork-ownership.json and running the full gate before pushing to main or opening a PR."
+    }
+  ],
+  "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 215,
+        "path": "README.md",
+        "size": 11922
+      },
+      {
+        "lines": 211,
+        "path": "README.zh-CN.md",
+        "size": 10503
+      },
+      {
+        "lines": 47,
+        "path": "docs/desktop-updates.md",
+        "size": 3441
+      },
+      {
+        "lines": 57,
+        "path": "docs/desktop.zh-CN.md",
+        "size": 2683
+      },
+      {
+        "lines": 172,
+        "path": "docs/i18n.md",
+        "size": 5646
+      },
+      {
+        "lines": 240,
+        "path": "docs/ownership-boundaries.md",
+        "size": 12957
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/release-v0.1.md",
+        "reason": "file-budget",
+        "size": 4270
+      },
+      {
+        "path": "docs/release.md",
+        "reason": "file-budget",
+        "size": 3580
+      },
+      {
+        "path": "docs/worktrees.md",
+        "reason": "file-budget",
+        "size": 3332
+      },
+      {
+        "path": "docs/worktrees.zh-CN.md",
+        "reason": "file-budget",
+        "size": 3233
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 23650
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 431,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_4e4fde3765dc5f4ba9a12cdab40b60fc",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/abcwyc/pi-agent-desktop/378db4dc27e4d345c12a74c78f4340bbbc47ce24/54f269a83aa71cea/manifest.json",
+  "package_id": "pkg_65196edafad58d9b0285c5cc7b72e649541a7cb1c88663b7125478d047597dc7",
+  "repo": "abcwyc/pi-agent-desktop",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "773fefb345b40012533cf6b07175bf14d68f54445dfa6a933f98221af53a29ed",
+  "snapshot_id": "54f269a83aa71cea",
+  "sources": [
+    {
+      "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+      "git_sha": "ff880e488a555ecd77616a718bb77e8b1e946340",
+      "lines": 215,
+      "path": "README.md",
+      "repository": "abcwyc/pi-agent-desktop",
+      "sha256": "51d9d475b89fdd01f206ba67f547e6883995ef955830c3aba419f5ff7481a04e",
+      "source_id": "src_934e4944539056409acf7e6c3719faa9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.md"
+    },
+    {
+      "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+      "git_sha": "2efc8cb555c4a4943dcfdc7873ae20b70e612848",
+      "lines": 211,
+      "path": "README.zh-CN.md",
+      "repository": "abcwyc/pi-agent-desktop",
+      "sha256": "ebb3a6985c7aaeb4c818d9db73957be4a8ea004c0c3b9221df44d60ff4f4b7f8",
+      "source_id": "src_6f8e3e2758af5b88b2f57b2169773c64",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/README.zh-CN.md"
+    },
+    {
+      "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+      "git_sha": "af20a97e3f634540497fca72bc4770d857128077",
+      "lines": 47,
+      "path": "docs/desktop-updates.md",
+      "repository": "abcwyc/pi-agent-desktop",
+      "sha256": "c572870c6d06bfc15fbdfd835fc8fcddca495e5958e27da5e3a8e810a89cea72",
+      "source_id": "src_02fb518a73db566686ed5fce923b76f0",
+      "stored": "desktop-updates.md-aa33a5b5efde.md",
+      "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/desktop-updates.md"
+    },
+    {
+      "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+      "git_sha": "2f6397ad9ff8114c663e4935f9bb7132d352feea",
+      "lines": 57,
+      "path": "docs/desktop.zh-CN.md",
+      "repository": "abcwyc/pi-agent-desktop",
+      "sha256": "9ee0b25f475ced029c6463707efba6d77eaede3373dc2b1901591ecc48b4211f",
+      "source_id": "src_7af30995ad5251b7b366a1c68537d7ba",
+      "stored": "desktop.zh-cn.md-8b5905ee43c0.md",
+      "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/desktop.zh-CN.md"
+    },
+    {
+      "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+      "git_sha": "2d0b13388508b3dc461e4fe0c78c0c4b45e8aec3",
+      "lines": 172,
+      "path": "docs/i18n.md",
+      "repository": "abcwyc/pi-agent-desktop",
+      "sha256": "f5afbe2fc5b869099891d5aab8f713efd9689899c5ad63bd012e07c090bcdaf9",
+      "source_id": "src_cb3ec38cb16c504487fe546f1424de78",
+      "stored": "i18n.md-c341533708a9.md",
+      "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/i18n.md"
+    },
+    {
+      "commit": "378db4dc27e4d345c12a74c78f4340bbbc47ce24",
+      "git_sha": "3e41abd6fac9a52ae749971a9c78f412926cde5c",
+      "lines": 240,
+      "path": "docs/ownership-boundaries.md",
+      "repository": "abcwyc/pi-agent-desktop",
+      "sha256": "e02b9775375f63e754240e3ad6476cd8a7c0f7c272a681e195131984d69679a7",
+      "source_id": "src_71deb2f6a5ec5cdbb551448ada5f5869",
+      "stored": "ownership-boundaries.md-be37cb2328f4.md",
+      "url": "https://github.com/abcwyc/pi-agent-desktop/blob/378db4dc27e4d345c12a74c78f4340bbbc47ce24/docs/ownership-boundaries.md"
+    }
+  ],
+  "summary": "Selected evidence records: The product is a local AI agent desktop application for macOS and Windows that packages the pi agent's capabilities into a standalone installable app. The app bundles three components: the desktop shell authored in this fork, the pi agent runtime as an npm dependency, and the pi-web UI merged from an upstream release tag.",
+  "superseded_claim_ids": []
+}

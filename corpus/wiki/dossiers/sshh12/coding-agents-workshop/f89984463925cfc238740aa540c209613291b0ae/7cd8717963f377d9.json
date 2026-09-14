@@ -1,0 +1,535 @@
+{
+  "applied_operation_id": "op_92478aa472ea456e83dc4e0e159bc847",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d83db98e981ef410254cf054fe37dc2a4adca5f490039653990502492b38c52",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_839a3bd6e900863c76015ca50de8822a6c03571fa80c08ec7a9b1d0b518b763e"
+      ],
+      "text": "The repo holds materials for the 'Optimizing Codebases for Agents' workshop: a demo app in before/after versions, an AI-readiness scorecard, and agent race narrator notes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad1679e983fdb1a5a493e1cd8dff7ff3a2541745e9eabd6e24f884c89c477ac6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c619342b1a0169b17036dcbf3a2dbf24982bd93c727df8c057cf477f2adaca3"
+      ],
+      "text": "Prerequisites include a laptop with a dev environment, an authenticated AI coding tool (Claude Code, Gemini CLI, Codex CLI, or Cursor), Python 3.10+, and a repo to audit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f1e6200057e23bdc213d39db615f9405cf033585b27aa6fda56f2e0ba09f1f5c",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L46-L49"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 40,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L37-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2eec06d74beadaddd7249115300f8a0c013d062f1debd54a882bbcd2fb499dfe",
+        "slc_609e72fc7849b904d5bcf12f071ce33d5f0b9cea43360cb1fc3bac2e17fc7100"
+      ],
+      "text": "Version A runs via 'pip install -r requirements.txt' then 'python app.py' in A/; Version B uses 'pip install -r requirements.txt' then 'python manage.py run' in B/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b463dc02256f210d6b0606a3e50b26cf28c29b4248d99efccf6bf1b9073d89d2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 58,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L55-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d2f403bef85441a6af3ba333e45597676c47276b1a2d8c891ead76d73df390e6"
+      ],
+      "text": "The README documents running tests with pytest from the B/ directory."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ef416f9bdc401ddc5ba859c7f47ee6d7d7d99082298a01c4e888538486afd9c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 70,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L62-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_677179b4d56da7411ce0d67d320970d70bda90d2784814cbc4e792dcc1e9f87b"
+      ],
+      "text": "The repo contains README.md, scorecard.md, race.md, slides.html with embedded speaker notes, and demo directories A/ (deliberate anti-patterns) and B/ (agent-optimized)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a24e41a7d22f938e9f6c03f12b614ffa949c21a9361700581b4d36491b987f4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L88-L88"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 93,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L90-L93"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_28fc453d4e692a5c8e6fcf9ad4adda51d2a7e594bbc3fdaabff0fdafd46bcdbb",
+        "slc_f78cf8884020391297a25da05d7fe0a9282af20a1d52096abf13b9f5d02ec4c4"
+      ],
+      "text": "Both A/ and B/ implement the same ML Experiment Tracker with experiment tracking, run logging with metrics, run comparison charts, and a dashboard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f140188f5cf95de41cb45561b91f44fb1c4064f1cbb8d5f3d14792087e00cf04",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e775267cf956c1d38620bfeaedfb26782aec4d0f1d1887037a7266587ebc5ffc"
+      ],
+      "text": "The two demo versions differ in code organization, not functionality: Version A is a realistic mess while Version B is optimized for coding agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ad3546ece26e1932c52133eee57202d707c9d4d887d9d9a320ffc5792f83c6eb",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "race.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md#L46-L49"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+          "line_end": 281,
+          "line_start": 273,
+          "path": "race.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md#L273-L281"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+          "line_end": 196,
+          "line_start": 187,
+          "path": "race.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md#L187-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6366aec72a541fb2b6599984b614eaa7c4f18d8764ba2c016179ba34b72ac5a3",
+        "slc_7ac365678d0f0296515f3e4467c8f94322149b619a8fcce288296f76442b3baf",
+        "slc_ebeb33691998d40238da8293ea9e4b2cefc4ddc5318c662db53bb1090a9691a6"
+      ],
+      "text": "The race demo measures agent performance by giving identical prompts to two agents on the two codebases, comparing files changed, test integrity, timing, and tool usage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2eb72eefc16934145c90cddb080826eda4ac296740027a65579b04217429a2bf",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+          "line_end": 269,
+          "line_start": 267,
+          "path": "race.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md#L267-L269"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44d0b22737ba0ea5bfff2460eef7264c8d9d6f5e1e1273fc1081ecf220e3a1da"
+      ],
+      "text": "Headless scripts automate the race: race.sh launches claude -p in both dirs with stream-json output, race-reset.sh resets git state and deletes SQLite files, and race-analyze.sh parses timing, tool usage, tokens, and test results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_94460afd88b8f4f316442c0f7d36b23b813f91c5f6773bc5b6b7344bedb4a992",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L82-L82"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "80313cb11290f0ab539df68427486138c37958aa",
+          "line_end": 35,
+          "line_start": 30,
+          "path": "scorecard.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/scorecard.md#L30-L35"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L80-L80"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "80313cb11290f0ab539df68427486138c37958aa",
+          "line_end": 58,
+          "line_start": 53,
+          "path": "scorecard.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/scorecard.md#L53-L58"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "80313cb11290f0ab539df68427486138c37958aa",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "scorecard.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/scorecard.md#L3-L3"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "80313cb11290f0ab539df68427486138c37958aa",
+          "line_end": 14,
+          "line_start": 9,
+          "path": "scorecard.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/scorecard.md#L9-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3460766064efcfd898d8e49c6970d787dcaf8f4790de68dac8a692704c9c3117",
+        "slc_496111c8608edffe5595721d94565ee37419c0004644344ca4a6ed1e30796617",
+        "slc_5d6a6d380a07c70d9909d4fc537997915afa500f6b01af619b823f71db1c31b7",
+        "slc_b50eea174d6eeec03a238fe018d1f20017fd13ca35f326ea4080493611e56da1",
+        "slc_df292035d19658f5abc6b54d8e948122af76a59bfdcf0a6b896187a6a013ba69",
+        "slc_f91c8b92572b8e607196de582f52b639cf20481d169c595d634b0f13cc6c1809"
+      ],
+      "text": "The scorecard audits a codebase 0-3 across three dimensions (rules file/agent config, file organization, test & verification) for a max score of 9, and can be run by Claude Code via a provided prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b4c72cc7897c909e5d2de95ef1897a3e48a6df68ed2038bb988fce84a6930bb",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+          "line_end": 85,
+          "line_start": 76,
+          "path": "race.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md#L76-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cb153b6d3558dd108e15c00fc24b89a90eafa615f780bbd7124ec17b10ef3f5"
+      ],
+      "text": "The race narrative notes Pydantic 2.9.0 is listed in Version A's requirements but never imported, and alembic and redis are installed but unconfigured."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_545e98b621d6a95adbeaecf4c734894274b6252dd19073d51192a6375b91db83",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+          "line_end": 224,
+          "line_start": 219,
+          "path": "race.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md#L219-L224"
+        },
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+          "line_end": 217,
+          "line_start": 217,
+          "path": "race.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md#L217-L217"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_427931e9c658f50bfc266cb01ca03b999b8071618b5b46ac194042663d1427e1",
+        "slc_a42785e3d69cb5fcd501b433c3b7d2903a76471102266e92092e0fd11bf6c537"
+      ],
+      "text": "The race demo has a documented fallback if the live demo fails: play a pre-recorded side-by-side video or walk through the codebases manually."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a8bc5c77fb4e9d3940afea22a711164bc501cf58717718024c74492d9431a2fa",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f89984463925cfc238740aa540c209613291b0ae",
+          "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "sshh12/coding-agents-workshop",
+          "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md#L99-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_532c7aef6c276743b90921457a67ca69d1281e34f6e1b2e3be3fccae636ed4d6"
+      ],
+      "text": "The repository is MIT licensed."
+    }
+  ],
+  "commit": "f89984463925cfc238740aa540c209613291b0ae",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 99,
+        "path": "README.md",
+        "size": 3617
+      },
+      {
+        "lines": 289,
+        "path": "race.md",
+        "size": 16535
+      },
+      {
+        "lines": 92,
+        "path": "scorecard.md",
+        "size": 5435
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 70,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_32e2733ad60f579eadfbe7f09d496d12",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 0,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 6
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "interfaces",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sshh12/coding-agents-workshop/f89984463925cfc238740aa540c209613291b0ae/7cd8717963f377d9/manifest.json",
+  "package_id": "pkg_0462704872cdbaa1329c710659739c048776da258b3064dfa09f8eb063a4fcdb",
+  "repo": "sshh12/coding-agents-workshop",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0cb8371fa39bdf8460b879b487eeabea350c1ceeaf21a8b0b6b496a4edca35a5",
+  "snapshot_id": "7cd8717963f377d9",
+  "sources": [
+    {
+      "commit": "f89984463925cfc238740aa540c209613291b0ae",
+      "git_sha": "4b682313821c75552d2d2667eae5e0a01a737e3e",
+      "lines": 99,
+      "path": "README.md",
+      "repository": "sshh12/coding-agents-workshop",
+      "sha256": "6f0bd209e3e3cf54e8e4e6ce9f66a36674ed8633bfeb5be406e7dc5641a21def",
+      "source_id": "src_3370d5924d6d5c39a588dccc7c3337f9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/README.md"
+    },
+    {
+      "commit": "f89984463925cfc238740aa540c209613291b0ae",
+      "git_sha": "0ef89bfb5f10110a148139cb6126d5d6ffb01b20",
+      "lines": 289,
+      "path": "race.md",
+      "repository": "sshh12/coding-agents-workshop",
+      "sha256": "4c1e43c41b97bfd4ba6a594cd4b4781f6e0597d76561e06ed5341dffea650c9f",
+      "source_id": "src_f65d8c557cc0541390a3cca8564853e3",
+      "stored": "race.md-6c956660970d.md",
+      "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/race.md"
+    },
+    {
+      "commit": "f89984463925cfc238740aa540c209613291b0ae",
+      "git_sha": "80313cb11290f0ab539df68427486138c37958aa",
+      "lines": 92,
+      "path": "scorecard.md",
+      "repository": "sshh12/coding-agents-workshop",
+      "sha256": "46ee018ba480919db7d4b6a08b18ed82d16bbbc0caed2758ffffa3255c08e41d",
+      "source_id": "src_dd8b0986f4875303b38dffea8dda437d",
+      "stored": "scorecard.md-32ff6e8c9a46.md",
+      "url": "https://github.com/sshh12/coding-agents-workshop/blob/f89984463925cfc238740aa540c209613291b0ae/scorecard.md"
+    }
+  ],
+  "summary": "The repository contains workshop materials for 'Optimizing Codebases for Agents': two versions of an ML Experiment Tracker demo app, an AI-readiness scorecard, and agent race narration notes with headless race scripts. Evidence covers the demo apps' documented structure, the race evaluation harness, and the scorecard dimensions.",
+  "superseded_claim_ids": []
+}

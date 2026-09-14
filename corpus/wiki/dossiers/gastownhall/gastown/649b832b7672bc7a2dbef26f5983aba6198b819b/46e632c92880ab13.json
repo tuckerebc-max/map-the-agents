@@ -1,0 +1,968 @@
+{
+  "applied_operation_id": "op_ba5c4cdf45894fbd85d3bd5c9ab05fce",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_59af9cd3cecf2693aff698db0088b64986e4c6b9f26915b68ac863c0cf0e2463",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 58,
+          "line_start": 58,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L58-L58"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 66,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L66-L66"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L54-L54"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L50-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_145652263ea482b0e6d81acc38d6595f328b4974cf01fe35fcaf3f27bbeaeba1",
+        "slc_5fc4cd491fcd1146bb50291c36f628a2ee496c2e084b7b23bb142c3349680992",
+        "slc_c1aab89b0cea3bdc575c42a113bb562924646296d9481a93b299a004d7218f83",
+        "slc_faffb8011633a2fe6d3c6a5353621076ff60a25b4fe9d5bafdfb2b10dd9f4010"
+      ],
+      "text": "The architecture includes a Mayor AI coordinator, a Town workspace directory (e.g. ~/gt/), per-project Rigs wrapping git repositories, and Polecats (worker agents with persistent identity but ephemeral sessions)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1a6749db0581f421d4787ce29ab192635df42fcb68d2d0d582f2274f0075072a",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L7-L7"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 70,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L70-L70"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L78-L78"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d06d51f4f7496baa4996a2664516e4c76ddd3ea62fe121afb01fce5aaf598dc",
+        "slc_3ebad6cd6791de26304cfa33eae0026525f3befc7bdda4aaede91bad65691856",
+        "slc_54f2659a4a4ef933881c3739318f4c3ed4c06897577993a548298ede731ee1f6"
+      ],
+      "text": "Agent work state persists in git worktree-based 'Hooks' storage that survives crashes and restarts, and work items are stored in the Beads ledger, a git-backed issue tracking system."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7b80926cc27e77495d454099cf1d7d29ea782c9feb2c5952542f0cc9d9213ffa",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 88,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L88-L88"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 633,
+          "line_start": 633,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L633-L633"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 92,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L90-L92"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 637,
+          "line_start": 637,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L637-L637"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4df370026547ce58d158d12f1588004f98a15f67761e83500e06bf32328a6982",
+        "slc_80ef0a5a01a6a588a4cbfe2f669b4115b0a18236a6800101ca3ae224155d0c68",
+        "slc_9a9d0998b92f0936f91f2294fabbd31aaebf5217b3cd54721270f537fe638f0c",
+        "slc_cd9213f81fbe956b694f677553794d5943486052506c72b7f9b93bb35d4da13d"
+      ],
+      "text": "A three-tier watchdog system keeps agents healthy: per-rig Witnesses monitor polecats and trigger recovery, the Deacon runs continuous patrol cycles across rigs, and Dogs are dispatched for maintenance tasks like triage."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40c914724c4bf780f0fcd63e00b4e037ff5f33902350ea7a31aeb8f05dd137d2",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 96,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L96-L96"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 661,
+          "line_start": 661,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L661-L661"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 659,
+          "line_start": 655,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L655-L659"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_500af074b5f26c63a1126dd33280c612afe0795cb4baaef15a0997c5c116ffed",
+        "slc_9a16527e53970d6150487587c33d98f11f3fcf03f1b018ba0e1b67618c278fcc",
+        "slc_f5b97795ca3e01efd267a25e6a82e0c69c16f2c483a32b8547b1062847c86077"
+      ],
+      "text": "The Refinery is a per-rig Bors-style merge queue: polecats run 'gt done' to create MR beads, the Refinery batches them, runs verification gates, and bisects failing batches; polecats never push directly to main."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2676378cc7e03582cdae0c5f020d09cf4c83a85a3be246d134217e3bca93b898",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L80-L80"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ccdfb00b460beb7a641ae585f2fcaca03ad271ab8b2c11d63b09b5e264b7f101"
+      ],
+      "text": "Bead/issue IDs use a prefix plus 5-character alphanumeric format (e.g. gt-abc12), where the prefix indicates the item's origin or rig; commands like gt sling and gt convoy accept these IDs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_66a13df9cd4a483f69646b172d92ae151b9cac8398b47c67c273da04d44e7669",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "fdab8a5aafdcd18709a47e1742ee4932748f3773",
+          "line_end": 26,
+          "line_start": 23,
+          "path": "docs/agent-provider-integration.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/agent-provider-integration.md#L23-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9d1b25596789515eb7bf3a88b56c87561f0a77fdce7ab08449798a07af0d084a"
+      ],
+      "text": "A stated key design principle is loose coupling: Gas Town orchestrates agents through tmux and environment variables, without importing or linking agent libraries — integration is configuration, not compilation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6a7ee3f54121c1a2f058a35b05b3d797fe691568dc74221b65388832be43bf0a",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "fdab8a5aafdcd18709a47e1742ee4932748f3773",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "docs/agent-provider-integration.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/agent-provider-integration.md#L49-L52"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "fdab8a5aafdcd18709a47e1742ee4932748f3773",
+          "line_end": 35,
+          "line_start": 30,
+          "path": "docs/agent-provider-integration.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/agent-provider-integration.md#L30-L35"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "fdab8a5aafdcd18709a47e1742ee4932748f3773",
+          "line_end": 47,
+          "line_start": 46,
+          "path": "docs/agent-provider-integration.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/agent-provider-integration.md#L46-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bb6b46c61e23d64ddecbe7a565f3b009909e91f8dfc388a198cad5030530786",
+        "slc_73cad17d3e4e848dc4212553caa22df072d8a14d14293e3e05e61991ed077b32",
+        "slc_ab7a72693c53ad281cb556d7516f1c2a8d41d7ecc18ebd3544fc0736f09596d7"
+      ],
+      "text": "Agent provider integration is tiered: Tier 0 is zero-change tmux orchestration via send-keys and capture-pane, Tier 1 is a JSON preset in agents.json, Tier 2 adds hooks, and Tier 3 is deep native API integration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_212bd080fbc62bc3b785f35d5e97905a6f69ddd6a4a7653cc55e219cfae559de",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 127,
+          "line_start": 127,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L127-L127"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 137,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L129-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b71c79a730f0dcd07996ceee2bb4b831ff2f19645e12deccb0275b0310e5de69",
+        "slc_cd00761886f63cd5710f00bc32eea61596967633ebaea8e57b6d89e90a1d104c"
+      ],
+      "text": "Native installs require Git 2.20+, Go 1.26.2+ (per go.mod), Beads (bd) 0.57.0+, sqlite3, ICU4C dev headers for source builds, tmux 3.0+ for tmux-backed roles, and a Claude Code CLI as the default runtime; Docker installs only need Docker Compose."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef23240f603528346092a158f01701f68925cd9728ad36cbe889cb804e3c7bbd",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 117,
+          "line_start": 117,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L117-L117"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 690,
+          "line_start": 690,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L690-L690"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 164,
+          "line_start": 164,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L164-L164"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 180,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L180-L180"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_050a1ef5875dd9ee280ba16a41315ead3472e6d8dffa68e2c999faf4b92eb0cb",
+        "slc_6633030d190239a5221a3216c473456afd02f8727b54c06351cdb626eb8c88bd",
+        "slc_d8925e65add1432075e3f82198ae330e9c1b2edd2e6e73f02ccac6af47b97119",
+        "slc_e8cf8c0c5f952e55d63f5e644ffb1ab3caecd75cfe8855e13ef3f46fb01aaa5f"
+      ],
+      "text": "The Wasteland federated coordination network links Gas Towns through DoltHub, and Dolt is a prerequisite on the Linux and Windows install paths."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7d899e87a142e781f732b7f26b82c1906cf2104826e33347f74edc2bf452d1ca",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 507,
+          "line_start": 507,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L507-L507"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 467,
+          "line_start": 458,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L458-L467"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+          "line_end": 456,
+          "line_start": 456,
+          "path": "README.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md#L456-L456"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_128a3fcd426108157d92fd33bc091419d47ca81475bd330682374ba7bbc5c7e2",
+        "slc_987e4d20ada863ca0335eb54083bb3d9f2d650895f59c92881b0ef048dfeaeb9",
+        "slc_d275d8fd9ae652b38942234187e094668caccd71927996646d613b7218f7a7bb"
+      ],
+      "text": "Runtime configuration is per-rig via settings/config.json with provider, command, args, and prompt_mode fields; built-in agent presets include claude, gemini, codex, kiro, cursor, auggie, amp, opencode, copilot, pi, and omp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_950caac5142aeebb46830f211e4cb125520b8c743b587497c4e2ecb340a01b83",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "fdab8a5aafdcd18709a47e1742ee4932748f3773",
+          "line_end": 61,
+          "line_start": 57,
+          "path": "docs/agent-provider-integration.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/agent-provider-integration.md#L57-L61"
+        },
+        {
+          "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+          "git_sha": "fdab8a5aafdcd18709a47e1742ee4932748f3773",
+          "line_end": 55,
+          "line_start": 54,
+          "path": "docs/agent-provider-integration.md",
+          "repository": "gastownhall/gastown",
+          "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/agent-provider-integration.md#L54-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0743f47b04c85fa1b0c23e5b7d2bcf21affb9de0aa02f48bc65fef196915fa6f",
+        "slc_4acd92992dceef2dfedb25d9de1ece9e9af5abad78770a989dcb00a58b4c817b"
+      ],
+      "text": "The Tier 0 tmux shim layer is described as timing-sensitive with no delivery confirmation, lacking session resume, automatic context injection, and process-name detection compared to higher integration tiers."
+    }
+  ],
+  "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 842,
+        "path": "README.md",
+        "size": 30506
+      },
+      {
+        "lines": 381,
+        "path": "docs/design/architecture.md",
+        "size": 15759
+      },
+      {
+        "lines": 190,
+        "path": "RELEASING.md",
+        "size": 6479
+      },
+      {
+        "lines": 835,
+        "path": "docs/agent-provider-integration.md",
+        "size": 27717
+      },
+      {
+        "lines": 169,
+        "path": "docs/CLEANUP.md",
+        "size": 7651
+      },
+      {
+        "lines": 21,
+        "path": "docs/cursor-runtime-beads-tasks.md",
+        "size": 1222
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/docker.md",
+        "reason": "file-budget",
+        "size": 18565
+      },
+      {
+        "path": "docs/dolt-health-guide.md",
+        "reason": "file-budget",
+        "size": 2871
+      },
+      {
+        "path": "docs/glossary.md",
+        "reason": "file-budget",
+        "size": 5202
+      },
+      {
+        "path": "docs/HOOKS.md",
+        "reason": "file-budget",
+        "size": 8650
+      },
+      {
+        "path": "docs/INSTALLING.md",
+        "reason": "file-budget",
+        "size": 12798
+      },
+      {
+        "path": "docs/otel-data-model.md",
+        "reason": "file-budget",
+        "size": 10636
+      },
+      {
+        "path": "docs/overview.md",
+        "reason": "file-budget",
+        "size": 7153
+      },
+      {
+        "path": "docs/phase4-minimum-fix-acceptance.md",
+        "reason": "file-budget",
+        "size": 1776
+      },
+      {
+        "path": "docs/proxy-server.md",
+        "reason": "file-budget",
+        "size": 22916
+      },
+      {
+        "path": "docs/reference.md",
+        "reason": "file-budget",
+        "size": 26292
+      },
+      {
+        "path": "docs/SECURITY-DEPENDENCY-EXCEPTIONS.md",
+        "reason": "file-budget",
+        "size": 2710
+      },
+      {
+        "path": "docs/WASTELAND.md",
+        "reason": "file-budget",
+        "size": 15468
+      },
+      {
+        "path": "docs/why-these-features.md",
+        "reason": "file-budget",
+        "size": 8491
+      },
+      {
+        "path": "docs/concepts/convoy.md",
+        "reason": "file-budget",
+        "size": 6900
+      },
+      {
+        "path": "docs/concepts/heartbeats.md",
+        "reason": "file-budget",
+        "size": 2793
+      },
+      {
+        "path": "docs/concepts/identity.md",
+        "reason": "file-budget",
+        "size": 8199
+      },
+      {
+        "path": "docs/concepts/integration-branches.md",
+        "reason": "file-budget",
+        "size": 20751
+      },
+      {
+        "path": "docs/concepts/molecules.md",
+        "reason": "file-budget",
+        "size": 4683
+      },
+      {
+        "path": "docs/concepts/polecat-lifecycle.md",
+        "reason": "file-budget",
+        "size": 15959
+      },
+      {
+        "path": "docs/concepts/propulsion-principle.md",
+        "reason": "file-budget",
+        "size": 3018
+      },
+      {
+        "path": "docs/contrib-harnesses/README.md",
+        "reason": "file-budget",
+        "size": 1830
+      },
+      {
+        "path": "docs/design/agent-api-inventory.md",
+        "reason": "file-budget",
+        "size": 36942
+      },
+      {
+        "path": "docs/design/directives-and-overlays.md",
+        "reason": "file-budget",
+        "size": 10740
+      },
+      {
+        "path": "docs/design/dog-execution-model.md",
+        "reason": "file-budget",
+        "size": 3374
+      },
+      {
+        "path": "docs/design/dog-infrastructure.md",
+        "reason": "file-budget",
+        "size": 17762
+      },
+      {
+        "path": "docs/design/dolt-storage.md",
+        "reason": "file-budget",
+        "size": 25154
+      },
+      {
+        "path": "docs/design/escalation.md",
+        "reason": "file-budget",
+        "size": 6495
+      },
+      {
+        "path": "docs/design/factory-worker-api.md",
+        "reason": "file-budget",
+        "size": 9628
+      },
+      {
+        "path": "docs/design/federation.md",
+        "reason": "file-budget",
+        "size": 5919
+      },
+      {
+        "path": "docs/design/formula-resolution.md",
+        "reason": "file-budget",
+        "size": 8016
+      },
+      {
+        "path": "docs/design/ledger-export-triggers.md",
+        "reason": "file-budget",
+        "size": 22540
+      },
+      {
+        "path": "docs/design/mail-protocol.md",
+        "reason": "file-budget",
+        "size": 18514
+      },
+      {
+        "path": "docs/design/model-aware-molecules.md",
+        "reason": "file-budget",
+        "size": 23339
+      },
+      {
+        "path": "docs/design/mol-mall-design.md",
+        "reason": "file-budget",
+        "size": 12187
+      },
+      {
+        "path": "docs/design/persistent-polecat-pool.md",
+        "reason": "file-budget",
+        "size": 7313
+      },
+      {
+        "path": "docs/design/plugin-system.md",
+        "reason": "file-budget",
+        "size": 8086
+      },
+      {
+        "path": "docs/design/polecat-lifecycle-patrol.md",
+        "reason": "file-budget",
+        "size": 28611
+      },
+      {
+        "path": "docs/design/polecat-self-managed-completion.md",
+        "reason": "file-budget",
+        "size": 17835
+      },
+      {
+        "path": "docs/design/property-layers.md",
+        "reason": "file-budget",
+        "size": 12799
+      },
+      {
+        "path": "docs/design/sandboxed-polecat-execution.md",
+        "reason": "file-budget",
+        "size": 32392
+      },
+      {
+        "path": "docs/design/scheduler.md",
+        "reason": "file-budget",
+        "size": 19108
+      },
+      {
+        "path": "docs/design/tmux-keybindings.md",
+        "reason": "file-budget",
+        "size": 2895
+      },
+      {
+        "path": "docs/design/witness-at-team-lead.md",
+        "reason": "file-budget",
+        "size": 32633
+      },
+      {
+        "path": "docs/examples/hanoi-demo.md",
+        "reason": "file-budget",
+        "size": 4525
+      },
+      {
+        "path": "docs/gas-city/crew-specialization-design.md",
+        "reason": "file-budget",
+        "size": 16310
+      },
+      {
+        "path": "docs/guides/fork-rig-setup.md",
+        "reason": "file-budget",
+        "size": 4538
+      },
+      {
+        "path": "docs/guides/local-rig-bootstrap.md",
+        "reason": "file-budget",
+        "size": 1475
+      },
+      {
+        "path": "docs/guides/mvgt-integration.md",
+        "reason": "file-budget",
+        "size": 54479
+      },
+      {
+        "path": "docs/release/dolt-2.0.7-audit.md",
+        "reason": "file-budget",
+        "size": 3565
+      },
+      {
+        "path": "docs/release/gt-1.2-release-evidence.md",
+        "reason": "file-budget",
+        "size": 19379
+      },
+      {
+        "path": "docs/research/macos-sandbox-exec.md",
+        "reason": "file-budget",
+        "size": 11014
+      },
+      {
+        "path": "docs/research/w-gc-004-agent-framework-survey.md",
+        "reason": "file-budget",
+        "size": 43147
+      },
+      {
+        "path": "docs/runtimes/NOS_TOWN.md",
+        "reason": "file-budget",
+        "size": 5868
+      },
+      {
+        "path": "docs/contrib-harnesses/polecat-pr-flow/polecat.md",
+        "reason": "file-budget",
+        "size": 1381
+      },
+      {
+        "path": "docs/contrib-harnesses/polecat-pr-flow/README.md",
+        "reason": "file-budget",
+        "size": 3786
+      },
+      {
+        "path": "docs/design/convoy/convoy-lifecycle.md",
+        "reason": "file-budget",
+        "size": 12882
+      },
+      {
+        "path": "docs/design/convoy/mountain-eater.md",
+        "reason": "file-budget",
+        "size": 19086
+      },
+      {
+        "path": "docs/design/convoy/roadmap.md",
+        "reason": "file-budget",
+        "size": 15850
+      },
+      {
+        "path": "docs/design/convoy/spec.md",
+        "reason": "file-budget",
+        "size": 28664
+      },
+      {
+        "path": "docs/design/otel/otel-architecture.md",
+        "reason": "file-budget",
+        "size": 32164
+      },
+      {
+        "path": "docs/design/otel/otel-data-model.md",
+        "reason": "file-budget",
+        "size": 20722
+      },
+      {
+        "path": "docs/skills/convoy/SKILL.md",
+        "reason": "file-budget",
+        "size": 21061
+      },
+      {
+        "path": "docs/design/convoy/stage-launch/prd.md",
+        "reason": "file-budget",
+        "size": 19435
+      },
+      {
+        "path": "docs/design/convoy/stage-launch/testing.md",
+        "reason": "file-budget",
+        "size": 29558
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5978
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 93731
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 1553
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7907
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2663
+      }
+    ],
+    "omitted_count": 69,
+    "omitted_slices": 60,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1563,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 75,
+      "complete": false,
+      "omitted": 69,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_d217d8fbd7a65f5eab22a66549d09763",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/gastownhall/gastown/649b832b7672bc7a2dbef26f5983aba6198b819b/46e632c92880ab13/manifest.json",
+  "package_id": "pkg_43cd420bc904731a6d2bd391f058318d6a2ec7a5517afcb191b0b0b31a45dbeb",
+  "repo": "gastownhall/gastown",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "72a422e7783ef2b571ee5c6a26cc29ec076dc4be9858ee389f06909ac3e2acd4",
+  "snapshot_id": "46e632c92880ab13",
+  "sources": [
+    {
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "git_sha": "e095adbcd7b4d422d35f2e91f43f45cfc38c88e2",
+      "lines": 842,
+      "path": "README.md",
+      "repository": "gastownhall/gastown",
+      "sha256": "4ed9c05be3573a5202b85ff232fe698cc2aba857ea6b8f1b943c33c2e685e3b9",
+      "source_id": "src_b843e5fe65c653e68282c2f305c6e317",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/README.md"
+    },
+    {
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "git_sha": "c12b426d3c18ff2dec1ba2c3054da54f48de8973",
+      "lines": 190,
+      "path": "RELEASING.md",
+      "repository": "gastownhall/gastown",
+      "sha256": "467f54ea4dea35befc32c59c0f2ee8bed7b81a7d8916094f98c3d104f57c6031",
+      "source_id": "src_7c5963f808e951b4aac48ca61073e65d",
+      "stored": "releasing.md-87d6a57a759f.md",
+      "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/RELEASING.md"
+    },
+    {
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "git_sha": "c618a84f14e4daa2675d5aee98a8ff735ee8fb09",
+      "lines": 169,
+      "path": "docs/CLEANUP.md",
+      "repository": "gastownhall/gastown",
+      "sha256": "b51f2f25277553c5b7cfc1ce35ee43211249af63a3265fee4423924e5f8ca996",
+      "source_id": "src_004c744c012c5a518148a8590df44b35",
+      "stored": "cleanup.md-8d5398b1cd44.md",
+      "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/CLEANUP.md"
+    },
+    {
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "git_sha": "fdab8a5aafdcd18709a47e1742ee4932748f3773",
+      "lines": 835,
+      "path": "docs/agent-provider-integration.md",
+      "repository": "gastownhall/gastown",
+      "sha256": "199b9c7c7813f39134f205f922960d38510a243efa9943c4709487cbd926be74",
+      "source_id": "src_92e7cd4adc1358159089d775f558b57d",
+      "stored": "agent-provider-integration.md-7b5bfb512b8d.md",
+      "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/agent-provider-integration.md"
+    },
+    {
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "git_sha": "74f268d85acdbc2ab662265cc2d17fd1e957e5c8",
+      "lines": 21,
+      "path": "docs/cursor-runtime-beads-tasks.md",
+      "repository": "gastownhall/gastown",
+      "sha256": "a93a22359caf62983900735ffc7cf8f71ce12b64f407c7c1b44bcfb7eec804bf",
+      "source_id": "src_405240774b3a5f95a4df9b9b070bffca",
+      "stored": "cursor-runtime-beads-tasks.md-202e6f5118a3.md",
+      "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/cursor-runtime-beads-tasks.md"
+    },
+    {
+      "commit": "649b832b7672bc7a2dbef26f5983aba6198b819b",
+      "git_sha": "2ad34e213c73c76637c4a24e7b94a42b529f1450",
+      "lines": 381,
+      "path": "docs/design/architecture.md",
+      "repository": "gastownhall/gastown",
+      "sha256": "1d7abfeaa42265ce63575952e708245de3759ad4618cb7b49b4a026a5d5c1066",
+      "source_id": "src_01f07eacfa005a24a7e65e418fc7457e",
+      "stored": "architecture.md-6eaa01b68d81.md",
+      "url": "https://github.com/gastownhall/gastown/blob/649b832b7672bc7a2dbef26f5983aba6198b819b/docs/design/architecture.md"
+    }
+  ],
+  "summary": "Gas Town is a multi-agent workspace manager that orchestrates AI coding agents (Claude Code, Copilot, Codex, Gemini, etc.) via tmux, with git-backed persistent work state (Hooks, Beads), a Mayor coordinator, per-rig watchdogs, a Bors-style merge queue, and a federated Wasteland network through DoltHub. Evidence coverage: 171 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

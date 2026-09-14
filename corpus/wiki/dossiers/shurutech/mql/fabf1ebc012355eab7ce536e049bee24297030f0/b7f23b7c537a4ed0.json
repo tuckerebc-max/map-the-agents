@@ -1,0 +1,513 @@
+{
+  "applied_operation_id": "op_331532094aac49018953e5f34584aa2a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_17e197f4fe12cc5875051e30de10e2fa609456dae2e4b1ef16da10dc2d5d164f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_edc9215bd55f927c63c54217e833a847f22df635814974fbe8a74b7cc5866ca1"
+      ],
+      "text": "MQL (My Query Language) transforms natural language queries into executable SQL, intended for users without coding knowledge, using a connected or uploaded database schema."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_21e477033f9280e1107785b19a8869821ec5b87e9d95d508bc4e4e44523ccc2e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 147,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L146-L147"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 33,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L30-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2323cb55a6f79961d2b46105c52feddc1f465fda0981db77bde0c281b5c157b4",
+        "slc_a25f6ab953cf7e2734b8a2bd49bbc2d4a06d2c486c8de8064797137a74c7d4d5"
+      ],
+      "text": "The tool depends on an OpenAI API key, which must be set via OPENAI_API_KEY in the server Dockerfile or server/.env."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_421bf9c7b72b7f2a349bd4521ca4a1228d0db60523dcabb36c3c3e0ea50808d6",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 80,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L80-L80"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 175,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L169-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10c5cbcdeafcee800f4cc9a7fb6c42afd14267084211f785dbb8bd65833f116f",
+        "slc_4e2085ae8a2a9e8d18d6b9867e554f19503dfbd7136921675bdc0cbc6b1f4881"
+      ],
+      "text": "As of the current version, MQL is designed to work exclusively with PostgreSQL; MySQL support is only listed as a planned future feature."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a13517dad52e39bc569defd6f5aa600d76d14267fc5b84ecf2546b2a5bd0e256",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 57,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L54-L57"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L24-L24"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L49-L52"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 42,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L39-L42"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 37,
+          "line_start": 35,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L35-L37"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L26-L28"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 33,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L30-L33"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 62,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L59-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3931dbc7f49c3a6b5a675c5dc6ddfe3d627bd2262869cec73e7bf79f206e7f6e",
+        "slc_405e1564a76dea5f09e9015b25efd6a99d1ec5a705046c650301957ec0cdd4da",
+        "slc_5ae7e577b41b318e43990a238a099b890553dc585be1afee95a840b87d4f770a",
+        "slc_608b2a37668c89c66f6bfc2c43bd882b89d1ef58b59325bb939962092b85f91b",
+        "slc_8fd49c11805fe7d3f5b183cbd33f1fb9d2456f41b3962cd19e9a456117c4247f",
+        "slc_9e7edccdd6477f811cbaa4c6abee83fcc612c3837e92d6ada3f3fa1da84f4579",
+        "slc_a25f6ab953cf7e2734b8a2bd49bbc2d4a06d2c486c8de8064797137a74c7d4d5",
+        "slc_e61b6683cfc340fb3ff142873e3924fa21d647e69953ec644b63671b7670a126"
+      ],
+      "text": "Repository development practice: local Docker setup requires cloning the repo, setting OPENAI_API_KEY and DATABASE_URL, then running make install; make up, make restart, and make down manage containers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de4a278456a1e93b4dfdeb161c0e66d14ff664cf0499769f197d2f4f461f9b35",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 158,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L155-L158"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42553d176994b4ea756398f9b43e63d6d8158ec7e5021770cf85b71f4c993c91",
+        "slc_4c089d05e74464be2b3960b8cf183bfcbf045c2fa5eda9ab7ec8a1a63e708e55"
+      ],
+      "text": "After installation, the MQL dashboard is accessible at http://localhost:3000."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6306cd3b7f916fa7a445e2a9753641a5473ec0bd63c1d3ea9d7c76261cca850",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 76,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L70-L76"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 67,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L65-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e3dc2515c2136e0998c8974edf54898ae59d407c0ee2ac030b2587339778982",
+        "slc_cb5af89fdaf2649623db9bf05594f5bb85aa30f6155da81625dcb3d2dc978eca"
+      ],
+      "text": "A default login user (admin@example.com / admin) is created when running via Docker; production guidance says to delete it and create users via a scripts/create_user.py script inside the backend container."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e17c860981023edb7c8789ba60bf174a1f1249e0c35cbfb319b9bd3230e0959c",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 164,
+          "line_start": 162,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L162-L164"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a7d7281c71ab65da7df1323da1b068223bb4289f7c2cb28f391bba383ad95a92"
+      ],
+      "text": "Testing with 50 natural language queries against an elearning schema yielded roughly 85% success (43/50 translated), with about 74% (37/50) executing perfectly and 7 queries erroring."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7ba2adb96f61fb7cf8744c971ba705f133acf5c0254dccf1a4447316d227636d",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 215,
+          "line_start": 214,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L214-L215"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "76f530361c67832289e6ec775f68f38fcf27ec34",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "CODE_OF_CONDUCT.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/CODE_OF_CONDUCT.md#L5-L5"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 212,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L207-L212"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_87834b0a5faa9f704db644d270c70035f8202d60e1d728a9179ce62158f68f7a",
+        "slc_d9dee7b9f364442dd27338c9b80c5b0945885a5bd8d0277941fffa146e7a1038",
+        "slc_dcef8b7863cff9648cefa57555ad281648ae1471951a81a52b49a3d1b6ad94ae"
+      ],
+      "text": "Repository development practice: contributors should fork the repo, use focused branches, write clear commits, follow coding standards, add tests where possible, and submit pull requests with issue references; a Code of Conduct applies."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_779c6aef89e4af80ab10eb87f0d8be4673588916e7f3dadd1823056de371d1fa",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 196,
+          "line_start": 191,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L191-L196"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_496ad4075cec904689f0703c65123d8ed84665149ee86b15795216db4568cf32"
+      ],
+      "text": "Repository development practice: bug reports should first check the issue tracker and include a clear description, reproduction steps, expected vs actual behavior, and error messages or screenshots."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7c6b217f580737390807d1170302d58cd3573e1319f359b9baaa86e9e953579f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 98,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L98-L98"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 135,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L132-L135"
+        },
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 124,
+          "line_start": 124,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L124-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_227337ff79e4e8facb4914e4d88f8f4e01b549aad94eff0ea0dd2b9f09383c32",
+        "slc_c7f896218a6e45b3e41bc56f368e2bc0eb4b8d4864bf52ad288147db57c253ea",
+        "slc_fadd744c2787555fc9ec907c7a8ba01f3aed5dc28885cef7d0273e6da2a78902"
+      ],
+      "text": "The use of the pgvector extension and a vector database setup suggests MQL likely uses embeddings for schema or query matching, though the README does not state this mechanism explicitly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e34f9d4af10f8cf534983fdaa85cd81b7d678e275929f8efe1f40da31a41dbe4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+          "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+          "line_end": 175,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "shurutech/mql",
+          "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md#L169-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4e2085ae8a2a9e8d18d6b9867e554f19503dfbd7136921675bdc0cbc6b1f4881"
+      ],
+      "text": "Query execution is not yet implemented; it is listed among planned next-release features, along with natural language responses, data visualization, and Slack integration."
+    }
+  ],
+  "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 215,
+        "path": "README.md",
+        "size": 7328
+      },
+      {
+        "lines": 22,
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 1061
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 180,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_cfa28a6dd8f057d8b04b61afc64e8543",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/shurutech/mql/fabf1ebc012355eab7ce536e049bee24297030f0/b7f23b7c537a4ed0/manifest.json",
+  "package_id": "pkg_72d8e8d1f90af7f7814ded74036a4f867282a1f745689de2c6aa7e126e6903ff",
+  "repo": "shurutech/mql",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "a191caa67611e35db1e3dbb81e52fc2396eebdb5fbe79fd1dac96f623f5a3828",
+  "snapshot_id": "b7f23b7c537a4ed0",
+  "sources": [
+    {
+      "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+      "git_sha": "76f530361c67832289e6ec775f68f38fcf27ec34",
+      "lines": 22,
+      "path": "CODE_OF_CONDUCT.md",
+      "repository": "shurutech/mql",
+      "sha256": "a230a4d19905a98a1e41ed6db43cd26528a1ccbbe51d2712db1c49786dccb946",
+      "source_id": "src_96cd8cf02ae452c48993e53c8b084c94",
+      "stored": "code_of_conduct.md-ffdbe3a1e7ee.md",
+      "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/CODE_OF_CONDUCT.md"
+    },
+    {
+      "commit": "fabf1ebc012355eab7ce536e049bee24297030f0",
+      "git_sha": "98c00817443f842f1696bb8ed6afe0ff6cac6442",
+      "lines": 215,
+      "path": "README.md",
+      "repository": "shurutech/mql",
+      "sha256": "cf63a40975f7e354985d263806f58300c756248a6c7e5d174784c1550154764b",
+      "source_id": "src_b491d849cd665d07b8f31d0aea8fc57f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/shurutech/mql/blob/fabf1ebc012355eab7ce536e049bee24297030f0/README.md"
+    }
+  ],
+  "summary": "MQL (My Query Language) transforms natural language queries into executable SQL, intended for users without coding knowledge, using a connected or uploaded database schema. The tool depends on an OpenAI API key, which must be set via OPENAI_API_KEY in the server Dockerfile or server/.env.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,810 @@
+{
+  "applied_operation_id": "op_146197f74bbb419c80f9b21a19f79497",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6243040169d98da0b1a5c247c38910c14cfafcc6aae1dd1964d5d642b725f36",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01a50f2ed041f4042fca94275b39802d806aca166da43b818b1916654e58c950"
+      ],
+      "text": "The project defines four levels of self-improving code agents, each adding one key idea, from a simple improvement loop to an adversarial arena with self-modifying agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_546ec871b016f409478943efd740748638af2072056e095487e4d61ed4559723",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 141,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L138-L141"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 136,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L134-L136"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L132-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3f591a9fdb1639941d6d79e6683c0bb0d620076a22b75115df257e6c887e1558",
+        "slc_7bc6740677dd138fce308e46b9985c921ad7a2fa783b43321418ca9b17f2d801",
+        "slc_d230f58a0241cc9c092e45704b69f70b4bd4ac1bc703b044978049696ff36482"
+      ],
+      "text": "Level 1 (autoresearch/) is a single-agent loop: the LLM proposes code, it is written to a file, benchmarked, kept if better, and repeated; bad proposals revert immediately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0bc4802f7de30dd2f1cdd9662f3ed9ad003e6045e5b7e2ae88212abf3bb15ed4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 159,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L151-L159"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L147-L147"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b9e3b556403f601a8d91d640654b9ab4ff3109f729f1d7f02ab9fa32a450f8d",
+        "slc_d97213a8fa0c595e02e2f80f65ec59c9ff8cb9a7e9d57d103e7a106bd6876f8d"
+      ],
+      "text": "Level 2 (feedback-loop/) adds a reviewer agent that returns structured feedback (issue type, severity, fix suggestion, confidence, detected pattern) explaining why a solution failed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51e11ff704badfb13491898d069d20db68b7748c442be796ec5e95428f9bb1f5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 165,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L165-L165"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 163,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L161-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b1bd3f28b98995510f0a028d74d97bfb616d2ff0119512945934ea421722c113",
+        "slc_cebdccddf823da8a6663b817df34c407149e1def258139649ea61f35a56df0da"
+      ],
+      "text": "Level 2 uses asymmetric information: the worker gets a small prompt with just the code, while the reviewer sees full history and prior feedback to spot cross-iteration patterns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0825d9b0e8687c769216166fdb299714053fdfa155db7ea5471ed8e3bd11ae10",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 173,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L171-L173"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 179,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L175-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b25298366a7568ea9eb63190f708c9e8ec2ed11c25b7d1a1212073a1990db551",
+        "slc_d6629402d454b10d1aaee4b65c0040f7c35233eabaa93eedc2e93dec4b3469ed"
+      ],
+      "text": "Level 3 (hyperagent/) has a meta-agent that rewrites the source of task_agent.py and meta_agent.py, with an immutable seed/ reference, live agent_code/ copies, and versioned generations/ snapshots."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3635219370eec55e0ecfdf9529f5a9c497b299772a7a475768c7e546ca20e66d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 188,
+          "line_start": 185,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L185-L188"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 191,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L190-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3b58f0305d6868bfd0508cef936d4e87fe008dfaabc9579a35e8977b86013493",
+        "slc_466c151705bc03948f5f5658891fc0c24d74487ac1a50170dbf96b7d51d4c013"
+      ],
+      "text": "HyperAgent rewrites are validated by a three-stage crash recovery: compile check, import check, and signature check; invalid rewrites revert to the last valid generation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_450b80a4589363c19dd28eee16b4c76a2f440bdb97fc4839cbc23a350792ed18",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 201,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L200-L201"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 225,
+          "line_start": 223,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L223-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_025ec169614a483685b676a23f0bcd83cacf2668505381e36c21cad049c9c685",
+        "slc_e14fc64e643616221c8e6f8d65406e43d9d056aa0c5383b72c9f9cd9a50afbeb"
+      ],
+      "text": "Level 4a (Arena Single) pits one code agent against one test agent in adversarial co-evolution without tournament or population dynamics; 4b adds tournament selection where the worst agents are replaced by mutated winners."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bcc5ed44ba5fa941733988366c022b83dfc64d30bc8d963ce970b2f3ba2e11f4",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 228,
+          "line_start": 227,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L227-L228"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3355816c7b5b4ffea11a299a3000cb08abf8e881aaa9454625ac6a7100416e21"
+      ],
+      "text": "In Arena Loop, code agents are described as mini-HyperAgents that can mutate their own propose() function, so the code-generating code itself evolves."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19a0eee0ba107a0ddb18d99ad3f27112b746e4c3976f1ca7935d4aba9006bc96",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 86,
+          "line_start": 83,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L83-L86"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 91,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L89-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_34ea7813252a53e6091dbe4c935798503ab1a6fa752479773fe2b26c62310912",
+        "slc_7e5807a0ba4321302ccee86a412348609a0ac3f4634755e1deafe50ff84e0ee6"
+      ],
+      "text": "Each level is run via a run.py entry point (e.g. python autoresearch/run.py) with a --task flag selecting tasks such as snake, support, or email_validation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1df0d851293d033a7673e0ce3e0f918a93633f344ead8594917281c1655e7ac7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L100-L101"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 105,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L104-L105"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L97-L97"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_19c67d983cf5238cbb844321af0838d99a9ee1062e8d5bc53639535baca7f409",
+        "slc_1eae84115f6d6f704268e032178f12b1abd6e6ce8ba99f97e9286c701766071d",
+        "slc_c3fc43a078d584587f7d429f42a56a39ec6c3a0b010020489e04854ed8fe9424"
+      ],
+      "text": "run_all.py runs experiments across all levels and generates comparison analysis, supporting --levels/--tasks filters and a --fresh flag to ignore previous results; analyze_results.py performs cross-level comparison after experiments are done."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_709413796f564831061a919454bea05436e47a82627baf60c852b71846519bfe",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 255,
+          "line_start": 250,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L250-L255"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 262,
+          "line_start": 257,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L257-L262"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 248,
+          "line_start": 248,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L248-L248"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 272,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L272-L272"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14f5633d47d89cfb931a37c6ef905348be96e7682d92b0d64beb9d7794fbbeba",
+        "slc_589157d4b264c8b9a26ba282b18ae6101bf5ec14d2ef66fed8a022619a188c3d",
+        "slc_85e645d47ff45b775313730c92c4fce461786c0409485e20540b10920f8a6f0c",
+        "slc_cd714af84c84cc59b89e318cbda2edaabb598b8bb79ef8d6936a7091e11c34b6"
+      ],
+      "text": "The framework is task-agnostic: a new task is a folder in tasks/ with config.py (task name, metric, direction, prompt builder), initial_solution.py, and a benchmark.py that prints 'metric_name:value' to stdout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b2959b1a14e2b33efbbaeed7e88caecdb96af78e57a504f170a30b79db7e4b87",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 336,
+          "line_start": 332,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L332-L336"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6cf9b3e32532376a8531c0622824048a74db9f8c02b63e284e32fa9ab01fa7d2"
+      ],
+      "text": "All levels share tasks/checkpoint.py for resumable checkpointing using sequence-numbered JSON files with atomic writes (write to .tmp then os.replace), keeping only the last three checkpoints."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_37d669749a1aa9d659d22f1371bb6089d098315e785f42762f5910572a1b24f8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 69,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L67-L69"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 71,
+          "line_start": 71,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L71-L71"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 75,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L73-L75"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21caa59eef4a7f42bd6fb7773d045cc631f6057946192634687241a34ab5eb06",
+        "slc_292cc368846724ecfca5556598c898239c22f5b9af0054f7c275314d8eec2c2f",
+        "slc_59cbbc7e81e837feeb2b1067e228831b32d04be1543e38a4c912c7921f1c51e7"
+      ],
+      "text": "Setup requires installing requirements.txt via pip and creating a .env file in the repo root containing a GEMINI_API_KEY obtained from Google AI Studio."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_70559fc3ab565d228764941c42db1cffbaba2f0a46ec4681726845199516f74a",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 30,
+          "line_start": 14,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L14-L30"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 10,
+          "line_start": 7,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L7-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_33a668c6482d1f185546b2ac71bdc2db2191c7c626b2d4fa4e2c1eb10873e0f4",
+        "slc_94c12c997734e8293617449bcc45752dcc3f2d8cc3021c7f2d28507d389ce55b"
+      ],
+      "text": "Experiments used Gemini 2.5 Flash across five levels and three tasks (email_validation, snake, support) in 15 total experiments, with per-level metrics, costs, and token counts reported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3463f9d610c8dc6a766bad608c5e5a04d9fb7385a2b98eb27059e7a33a4d5930",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 143,
+          "line_start": 140,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L140-L143"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 136,
+          "line_start": 129,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L129-L136"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 219,
+          "line_start": 219,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L219-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d2c36deb53401f493bc7ec2541e39b569560520bab08ca589d6b663efafaeef",
+        "slc_3d12ce640ae72cc3261b32eb2fcbfbb3d8f8b5b56fb762a7bba5b6c36eb0ae43",
+        "slc_5661709aa3a954b3da4c6b6597630e2f692f9eddd56ce52bc0f63c34707dbc24"
+      ],
+      "text": "Cross-validation shows Levels 1-3 scored 90-100% on email_validation's original 20 tests but dropped to 62-66% on the expanded 50-case adversarial suite, while Arena levels held at 70% on the combined suite."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9330320c5a646097cdfdf3a2af2509ded50ce4fea9819d67d6d57cf4b7fb9cdf",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 158,
+          "line_start": 151,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L151-L158"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 107,
+          "line_start": 106,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L106-L107"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 161,
+          "line_start": 160,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L160-L161"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d7cbc358e599ff3556f3f1ce30c0f3c4efdd99a4410302f5a78858168fe0e79",
+        "slc_5f89472715997ca9a6370a46f2783f2c28b9583488b6a48a2feba172a89eea61",
+        "slc_73862df3cba0536bb3aabe9050a8a536724f5877b81214f37c3a923adac9e9df"
+      ],
+      "text": "For support, rubric-based boolean scoring (keyword match plus LLM YES/NO fallback) reduced judge noise from over 30 points to under 7; Feedback Loop scored highest (82.091) on the expanded 19 questions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ef49a4f6948d2520039c9289c30bd8c1cf483950fa1fce48b69798b9031e3fd3",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+          "line_end": 191,
+          "line_start": 187,
+          "path": "experiment-results.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md#L187-L191"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3a94fd4b00e086236ec29beb2992fade146eb77669c50f28e114628e4e92b6eb"
+      ],
+      "text": "The results document acknowledges single runs per experiment (N=1, no error bars), a small task set of three tasks, and a single model (Gemini 2.5 Flash), so findings may not generalize."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_435cbe12a8f0f615010d13bb0e01d8342346e3d50f66b48033a15e25253f3544",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 194,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L193-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ae0e3ea8b92b3a0ad72e5572a3db02f072d0ecc07492ec36a4a12cfdcac5e60"
+      ],
+      "text": "HyperAgent is a simplification of Meta's HyperAgents (DGM-H): it uses folder-based versioning instead of Docker containers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_df7163e766e5e41ca37312726e33c4ac886d4ea4c7f407019df11cf2007853c7",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 7,
+          "line_start": 6,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L6-L7"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 355,
+          "line_start": 350,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L350-L355"
+        },
+        {
+          "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+          "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+          "line_end": 344,
+          "line_start": 342,
+          "path": "README.md",
+          "repository": "betterforall/self-improving-agents",
+          "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md#L342-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_36bce60cd3f40c3040f2fdb930dd4c119aad2beef90bc3e1b90ca7d8845e2e3b",
+        "slc_4855f0dd24c0022814087c9f75181002cc7015eb85dcf8f8a0e9fc260dbb52db",
+        "slc_8d16ad15d44dfcf03a3ff0866cb7664fb461bed17e2683e6c4a41c86530a6add"
+      ],
+      "text": "The project frames itself as independent research comparing existing self-improving code-agent approaches and proposing new ones, with lineage traced to AlphaGo/RLVR, AutoResearch, HyperAgents, and GAN-style co-evolution."
+    }
+  ],
+  "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 355,
+        "path": "README.md",
+        "size": 13049
+      },
+      {
+        "lines": 237,
+        "path": "experiment-results.md",
+        "size": 18291
+      },
+      {
+        "lines": 53,
+        "path": "PRIOR_WORK.md",
+        "size": 3159
+      },
+      {
+        "lines": 2,
+        "path": "requirements.txt",
+        "size": 27
+      },
+      {
+        "lines": 159,
+        "path": "CLAUDE.md",
+        "size": 7633
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 385,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_4e122add7c2d5f7385c6ea9ca41156bf",
+  "facets": {
+    "components": 5,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 3,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/betterforall/self-improving-agents/5f7823732d87c515ed7842d06bc3c2613ed0445b/2ffba66f8aa5de4e/manifest.json",
+  "package_id": "pkg_4e7edd4bc8ba9c6afa41b0e1ceb4a467f441f65e03e3beaef6c6d92cd9f5403d",
+  "repo": "betterforall/self-improving-agents",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0a01d3785a75fd3e3cd984927caa7d39f5e4cf0bab4ebf007465f7fdd52a75f3",
+  "snapshot_id": "2ffba66f8aa5de4e",
+  "sources": [
+    {
+      "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+      "git_sha": "c2ccbaa66e91dca5173be400555553a5a7317a1d",
+      "lines": 159,
+      "path": "CLAUDE.md",
+      "repository": "betterforall/self-improving-agents",
+      "sha256": "48fb21b4512b4dbb4579a105afe5b24ef8debf2dcbc60600c21c810bcbc28485",
+      "source_id": "src_90406d2919885b14b8d5e26dc21e112c",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/CLAUDE.md"
+    },
+    {
+      "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+      "git_sha": "446f4e38a2bb5a4f4e1ab6d7300c99103cacc90e",
+      "lines": 53,
+      "path": "PRIOR_WORK.md",
+      "repository": "betterforall/self-improving-agents",
+      "sha256": "93bc54b57aa0a2484173494e2fd4ecfde3755a0c8210730a7011e0a4f2c150c7",
+      "source_id": "src_dc4992f6b06e5b7689ab09c593acc135",
+      "stored": "prior_work.md-afa127555868.md",
+      "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/PRIOR_WORK.md"
+    },
+    {
+      "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+      "git_sha": "2d5e19741531c6154fd6a30e104d5d8053ea9de4",
+      "lines": 355,
+      "path": "README.md",
+      "repository": "betterforall/self-improving-agents",
+      "sha256": "a3c7cbc75d9eda6dde408f974e0a4845dd28fe982e27cbcf66d9765265cc7335",
+      "source_id": "src_f718246686d85a4fa768db72f9e241cd",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/README.md"
+    },
+    {
+      "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+      "git_sha": "c8848418482cd8626a7f50927df06b5ff9ce3724",
+      "lines": 237,
+      "path": "experiment-results.md",
+      "repository": "betterforall/self-improving-agents",
+      "sha256": "cf2eeb3f6dd9c7228dd8d236df7e59c24290842597e46aa0271342551f91847b",
+      "source_id": "src_f87ec2c135f0505ab547d3c3b21bc3e1",
+      "stored": "experiment-results.md-a60d8b16b72b.md",
+      "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/experiment-results.md"
+    },
+    {
+      "commit": "5f7823732d87c515ed7842d06bc3c2613ed0445b",
+      "git_sha": "4d0623e21b43492b5fe6fbffbef6a207229df1fe",
+      "lines": 2,
+      "path": "requirements.txt",
+      "repository": "betterforall/self-improving-agents",
+      "sha256": "c6342e1315d2a7fdf971245db0712316d84c06aea98176bede9b79eba45907d2",
+      "source_id": "src_ee189b1a23b7581d8ad38a3f39547018",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/BetterForAll/self-improving-agents/blob/5f7823732d87c515ed7842d06bc3c2613ed0445b/requirements.txt"
+    }
+  ],
+  "summary": "The repository documents a four-level progression of self-improving code agents (simple benchmark loop, structured reviewer feedback, self-rewriting meta-agent, adversarial arena), with shared task definitions, checkpointing, and reported experiment results on three tasks using Gemini 2.5 Flash. Evidence coverage: 145 of 183 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

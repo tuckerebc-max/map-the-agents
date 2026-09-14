@@ -1,0 +1,540 @@
+{
+  "applied_operation_id": "op_b0df29a02ee04e3e8d72225c104c0bbb",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8ea165f584278848f9f35773a54b3472e225ec9744e83e901ba21db0ac05c52",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L9-L9"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 16,
+          "line_start": 11,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L11-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ce5866b84cace169142e89807d06a5e310987ea5bc7ab44b3a0f17fc276d342",
+        "slc_e4318473e2a08d5f575a31dcee949b1694310774559571f013dd970452806598"
+      ],
+      "text": "The agent is described as a minimal local agent loop with workspace snapshot collection, stable prompt plus turn state, structured tools, approval handling for risky tools, transcript/memory persistence, and bounded delegation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8670b85b9a413a33c74df2e862f51a78628b72bc029ed687d2cc897460a34c55",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 64,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L64-L64"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a03cbc4d17b036193cd3dfa4849fcc48874571f1fb5dce2e5956d7190bcb75e8"
+      ],
+      "text": "The project reportedly has no Python runtime dependency beyond the standard library, so it can be run directly with python mini_coding_agent.py without uv."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae6278a5318e315b260f75f7ea905d23224d5f589fbba1672a6266ea5fb3b98c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L62-L62"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L56-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_42d68e84becb2711d7be146781baee1c7dd0b872efbece04b36527b339567427",
+        "slc_b1d0de49d9fc09de77eb98b24bec08a614f89dcde85a4230b1936917d9a191f5"
+      ],
+      "text": "Running the agent requires Python 3.10+, an installed Ollama, and a locally pulled Ollama model; uv is optional for environment management and the CLI entry point."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f6fa002234ccbc7896e84ed805b9a8df43f39d9e2f9221f311222400b26dcb2a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 239,
+          "line_start": 220,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L220-L239"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c46b179b83d14920a4fdca182fa16ed02a768810155e56ac8fcabaaacdf84b2"
+      ],
+      "text": "The agent exposes a CLI with flags including --cwd, --model, --host, --ollama-timeout, --resume, --approval, --max-steps, --max-new-tokens, --temperature, and --top-p, with documented defaults such as max-steps 6 and max-new-tokens 512."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed2d7b9b91bca1964fdc43af4874d5202563401661bdbbeeedbc9efc632108bc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 200,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L189-L200"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 187,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L186-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f276144348c35265bf25b01acba3fa3c79c4896eadf73c6909ee6d932ff4c0b",
+        "slc_d3373d9e5ac959aebd3d3182c345b004c9e3b3dbd76f846e6fe704815cfb014e"
+      ],
+      "text": "Inside the REPL, slash commands (/help, /memory, /session, /reset, /exit, /quit) are handled directly by the agent rather than sent to the model as tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a2cd2b595a3453f90509e0f6f6ba5cd1afbf788479db5441163416cfebcceba6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 143,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L143-L143"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 150,
+          "line_start": 145,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L145-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_383fdfa7e0b07d315c3b95b99bafa86ddad0d85b7988d5432c362e885e98d8a1",
+        "slc_57a783efb09d815493c61602803630b9b6fe83fece45fe1e93026234ad2c1201"
+      ],
+      "text": "Risky tools such as shell commands and file writes are gated by approval, with three modes: ask (default and recommended), auto (allows arbitrary command execution and file writes), and never (denies risky actions)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_daca6bebab07369cdef9a988427dacb5a750e719e1e359a584e9afa6f16b087d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 167,
+          "line_start": 165,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L165-L167"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 180,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L178-L180"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 163,
+          "line_start": 163,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L163-L163"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 169,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L169-L169"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f8a82fc4c23844be53ded7bbca302ebf578af172916a51449f980033e2b990d",
+        "slc_4b37e9019b44d46a7b7922d7e2a0d39e155d445dd0636d49c6a43b66e0ab34bd",
+        "slc_8eecaaf8b0c44ab0d907d544cf92a633d32361b9ed5963026cb072c698843df9",
+        "slc_ec75daa8ab22aac054d1318d1dd922ba7c91be55b0368e85cc4a558c4572e32e"
+      ],
+      "text": "Sessions are saved under the target workspace root in .mini-coding-agent/sessions/, and can be resumed by id or with --resume latest."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a18453a4958068b4780700a050a1af38e63b4ab4e3f1cdbf40b878a80e4c67dd",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 49,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L38-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04f95138946fd5d212489bfef0e634241f7c175749aceb857dd3698f46610c48"
+      ],
+      "text": "The runtime reportedly keeps both a full durable transcript and a smaller working memory so sessions can be resumed while preserving important state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_56e4693320ae84c265b10c911d1fea45dab3afadae2b1d26c11105af32706c54",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 252,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L249-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef63616c26282aaa0583d766812ecfca00b0ea08c66fe791b2eceb3893b075b1"
+      ],
+      "text": "The agent expects the model to emit either <tool>...</tool> or <final>...</final>, and notes that different Ollama models follow this format with varying reliability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6663fa9faa9f4083a2224ae122fa963c4ea33a58b60b62e6b9bf853e89fa6f29",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 49,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L38-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04f95138946fd5d212489bfef0e634241f7c175749aceb857dd3698f46610c48"
+      ],
+      "text": "The design uses a stable prompt prefix separate from the changing request, transcript, and memory, so repeated model calls can reuse the static parts efficiently."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_326784a0ebc5d679e0629acafae72697ef90bb9550e90b5097077a953b1a60b6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 49,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L38-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04f95138946fd5d212489bfef0e634241f7c175749aceb857dd3698f46610c48"
+      ],
+      "text": "Context reduction is documented: long outputs are clipped, repeated reads deduplicated, and older transcript entries compressed to keep prompt size under control."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b7041bd0a7940d59fa5b8c68f46361f080cc1fcae8d3355da31370dd482790c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 252,
+          "line_start": 249,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L249-L252"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ef63616c26282aaa0583d766812ecfca00b0ea08c66fe791b2eceb3893b075b1"
+      ],
+      "text": "The README states the agent is intentionally small and optimized for readability, not robustness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d3eb1c49bb8514ef4d0cb75bd387c09b98d48f33fcf2d1d33889fbf2f52d0099",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 49,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L38-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04f95138946fd5d212489bfef0e634241f7c175749aceb857dd3698f46610c48"
+      ],
+      "text": "Scoped subtasks can be delegated to helper subagents that inherit enough context to help while operating within limits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c2088faaef40bf75f5660a906751e8a79bc67897ed462f4d59e39e80d6e6eca",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 239,
+          "line_start": 220,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L220-L239"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c46b179b83d14920a4fdca182fa16ed02a768810155e56ac8fcabaaacdf84b2",
+        "slc_cdeff114ec06c40f6d858198470ff67eacb65088c24694bd33c9b285d7c7be9d"
+      ],
+      "text": "The agent sends prompts to Ollama's /api/generate endpoint, with the default model qwen3.5:4b and default host http://127.0.0.1:11434."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a2f9d6bc7693821ac9e930ab64b3181a79d457dd459f6def35c2cfb8b41774f",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "25ca70c59bd1d3cf4fd4486d12a8e3b2e8cd8283",
+          "line_end": 14,
+          "line_start": 8,
+          "path": "EXAMPLE.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/EXAMPLE.md#L8-L14"
+        },
+        {
+          "commit": "717cae4ff10d01773bd12951f62a575825053414",
+          "git_sha": "25ca70c59bd1d3cf4fd4486d12a8e3b2e8cd8283",
+          "line_end": 4,
+          "line_start": 4,
+          "path": "EXAMPLE.md",
+          "repository": "rasbt/mini-coding-agent",
+          "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/EXAMPLE.md#L4-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f50c59b1c81956e3223d4dafca4b014de8e34c1487359253f919f1acb3daa30",
+        "slc_48dffd8fc9620ae5b1737c73e3f0c45d176447afeb1ffa7e0d7e8f69ec7ccfc2"
+      ],
+      "text": "EXAMPLE.md provides a hands-on walkthrough of using the agent with Ollama on a small Python project: implementing, editing, and testing a binary_search.py file via the REPL."
+    }
+  ],
+  "commit": "717cae4ff10d01773bd12951f62a575825053414",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 252,
+        "path": "README.md",
+        "size": 6913
+      },
+      {
+        "lines": 140,
+        "path": "EXAMPLE.md",
+        "size": 3536
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 8,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_d1b54943f0ed57b692a38a7f1f7185a5",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/rasbt/mini-coding-agent/717cae4ff10d01773bd12951f62a575825053414/c0f5070d67f9fc18/manifest.json",
+  "package_id": "pkg_ba390d33590007bce0c69a5d0db78d1b334b1fb7efe4ea382f432099ef180c5a",
+  "repo": "rasbt/mini-coding-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ae3eb1d06cc66ec167ca99cede3b63959340cedaf35475fd3c07558abbb46f3e",
+  "snapshot_id": "c0f5070d67f9fc18",
+  "sources": [
+    {
+      "commit": "717cae4ff10d01773bd12951f62a575825053414",
+      "git_sha": "25ca70c59bd1d3cf4fd4486d12a8e3b2e8cd8283",
+      "lines": 140,
+      "path": "EXAMPLE.md",
+      "repository": "rasbt/mini-coding-agent",
+      "sha256": "b7f2a93301067354af38220a7c8669d3cb7c4f5ec700f1ae7d3d6162edc072d4",
+      "source_id": "src_ef50206384cf59a3b9ee3253024795f3",
+      "stored": "example.md-74342ba78c42.md",
+      "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/EXAMPLE.md"
+    },
+    {
+      "commit": "717cae4ff10d01773bd12951f62a575825053414",
+      "git_sha": "78c1767020f7bf4160cc9961e1ec164cd158945b",
+      "lines": 252,
+      "path": "README.md",
+      "repository": "rasbt/mini-coding-agent",
+      "sha256": "8e65fe37ea5ed74bcbbed09708cf89cd5ae9e9abdeb6c54dfc79aa636ffee44e",
+      "source_id": "src_eef80e8cb408515aaf6803e560785838",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/rasbt/mini-coding-agent/blob/717cae4ff10d01773bd12951f62a575825053414/README.md"
+    }
+  ],
+  "summary": "The evidence consists of README.md documentation for a small standalone coding agent built on Ollama, describing its agent loop, CLI, approval modes, session persistence, and design choices. All product claims below are documented in the README; no source code slices were provided.",
+  "superseded_claim_ids": []
+}

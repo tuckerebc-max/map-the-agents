@@ -1,0 +1,496 @@
+{
+  "applied_operation_id": "op_734036aed21f4727a48273ff76fcf2b6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e3ca3eb82627843c6e15e661055d3f76d90d809f79d54b19c967792f01bc761",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 244,
+          "line_start": 236,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L236-L244"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a40bdd30f6007db6eb647ae901cf700f44f6b1bb97e5b3413391ba27ae7ceae5"
+      ],
+      "text": "The CLI exposes commands including interactive mode (deepseek), single-prompt mode (deepseek chat), setup, --local, --model, --help, and --version."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9d59647431191d78e427360bbdb7cbdae2094d0d0f7131fb9b6dd4fc66beddc1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 284,
+          "line_start": 282,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L282-L284"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 279,
+          "line_start": 278,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L278-L279"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8b15332775a9186441888d28bedf9ee7f7cb45a6b0a786bff43dd16ff0dcb395",
+        "slc_c86c01013f3f6825dfa59634f861a917f5ea39168ef4e85925b7e0d72ebdf8f4"
+      ],
+      "text": "Repository context can be controlled via flags such as --include-all for the whole repo and --include with specific files or directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dcc7e99694ef5f102d29380e020b52d19d47e78e9a8bfe9411026ef58579466a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "73ff7e42f5903e41cacee6ff0536adee86952921",
+          "line_end": 126,
+          "line_start": 125,
+          "path": "LOCAL-SETUP.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/LOCAL-SETUP.md#L125-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cae94c4fa1319e73b584788a3d6907f70d67c62b00b05a6b00c0762c26bed04"
+      ],
+      "text": "A --ollama-host flag lets users point the CLI at a custom Ollama server URL, e.g. a remote host on the LAN."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0b49e44eae0d6f75000740e730fd9bb0c31499e52951f11f4a3172b43ff0a457",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 212,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L210-L212"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 194,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L189-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a6ab28a38621ff783cb64fe96aa40d3d4ac9b776199d2571006fcc22832af478",
+        "slc_afdfdb15ba6ccef14503b6a2b66dac06a89dfb6602402258ef1d53fb658a373e"
+      ],
+      "text": "Local Ollama mode is the default (DEEPSEEK_USE_LOCAL defaults to true), with cloud API mode available when an API key is configured."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8e8c81f1842663578b7239f0dccdf34ef0585f5afd2988aec1a945aa647a96ce",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L23-L25"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c4f251153fff9b6dcfa78d8f5172523648ac82dea27a685ad90fa8660d106e6",
+        "slc_e64e48416a3a2919788698f2f8e2efa5c8dd26e14bf68e0c5976ba518f7f7fb3"
+      ],
+      "text": "The tool requires Node.js 18 or higher and Ollama for local operation; the npm package is run-deepseek-cli installed globally."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3709556df144f9e03e1d826f757a93068fb82e85577181c9d2b036acdae5969c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "73ff7e42f5903e41cacee6ff0536adee86952921",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "LOCAL-SETUP.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/LOCAL-SETUP.md#L15-L20"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 202,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L198-L202"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 368,
+          "line_start": 366,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L366-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0be0f1022dfd27e7fada9335854af90378d00a1035e0708ebd7cca4592dc2f63",
+        "slc_5708d415cd351c7fcb7e1d5b01d4dab6bc77957da068d8ebf3b271f2ff223fbb",
+        "slc_d162cf35b1a371a35bd76417bde733f4e2b8cb5ef85e6b6ba038c0582e692f73"
+      ],
+      "text": "It uses DeepSeek Coder models in 1.3B, 6.7B, and 33B sizes, with documented RAM needs of 2GB, 8GB, and 32GB respectively."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_54dc8ead1474aa04af021fab0527ebd6e3ffd3478aa20820cb261f510bcf471d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 258,
+          "line_start": 254,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L254-L258"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1888dcbfd37597c79047e2a0bd180816b1045ea51bb48f0298075faccf600e81"
+      ],
+      "text": "The setup command checks for Ollama, starts the service if needed, downloads the specified model, and verifies the installation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d9b9c25e69d44e022c6ac93bc017953783a158987342ec87fd19ba537e58b69f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 268,
+          "line_start": 264,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L264-L268"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 262,
+          "line_start": 262,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L262-L262"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_829d2b63fe3de6623d67706dc2576303d68f4e74f15507e0c1113a9c0a7924e6",
+        "slc_be89a8bdbf71420296a6c6d2815b5cddd48c233766a2dd0eb100f7036afe61af"
+      ],
+      "text": "Interactive mode is described as a REPL with syntax highlighting, session history, automatic file-context inclusion, and multi-turn conversations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62fcda64728896ed31da080e7c2e724c24c8bf511400a65fc2d66ebc779f6061",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 274,
+          "line_start": 274,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L274-L274"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 268,
+          "line_start": 264,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L264-L268"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_148d5a23731457137a1ebad5c042e3d29596da422fa6f2818630da2950242948",
+        "slc_829d2b63fe3de6623d67706dc2576303d68f4e74f15507e0c1113a9c0a7924e6"
+      ],
+      "text": "The CLI maintains context across interactions in multi-turn conversations and automatically includes relevant project files as context."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_285caf2684ad69c68f08dd3bf292f5e471e5a4e54de134aa96a10d34849672f0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 320,
+          "line_start": 314,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L314-L320"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 337,
+          "line_start": 334,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L334-L337"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 344,
+          "line_start": 341,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L341-L344"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_07d1b916f0b001efb95163e5bcff9e3873f771e3cb784345908a150c1fcb9f4f",
+        "slc_55cf814d786dad6537d8d1fe440e63c6f513537d6df386eabcc12f609135662c",
+        "slc_68eb1d023fdafb08e87332ae18beb2c4af57c4acf4aecc2bb801d034d688cabc"
+      ],
+      "text": "Repository development practice: contributors fork and clone, run npm install, npm test, and npm run dev; building from source uses npm run build and npm run package."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_23a99ad150f103d31f45d2502bc2a64c40907e9686cf88b1ec1cb1dad0732cf7",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 8,
+          "line_start": 8,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L8-L8"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L12-L17"
+        },
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 434,
+          "line_start": 432,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L432-L434"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_427e9c885d5478acb69a15981942727c340317918ecbef83fa5feab2a61f0d82",
+        "slc_572f3c64d034fa431c51fe7fc54f3df3c70d17df71536c07d4e48c99f85123af",
+        "slc_691899bce7389bd74c732508e1d04d89f3f516a97ccbc06e49f66255471414ee"
+      ],
+      "text": "The project is a command-line AI coding assistant for code generation, refactoring, debugging, review, and scaffolding, built on Gemini CLI's foundation and DeepSeek Coder models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ed3777558493ccb1fbf7d1877f1d1fb0383571cad9e1ab4c254a48311be1056c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+          "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+          "line_end": 360,
+          "line_start": 356,
+          "path": "README.md",
+          "repository": "holasoymalva/deepseek-cli",
+          "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md#L356-L360"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b127ec836dd31aa81021131433a57a4f8077ef72eb84f2fd7f3cc402922ad067"
+      ],
+      "text": "Documented model context windows are 16K tokens for the 1.3b, 6.7b, and 33b instruct variants, and the 33b model is noted as slower."
+    }
+  ],
+  "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 434,
+        "path": "README.md",
+        "size": 11855
+      },
+      {
+        "lines": 160,
+        "path": "LOCAL-SETUP.md",
+        "size": 3517
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 18,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_5c2aaa00d5035274b6ea22f69679c1a4",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/holasoymalva/deepseek-cli/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/482743830e15d71f/manifest.json",
+  "package_id": "pkg_66429762d6d805272f7dba56338200f76d4cc8aff8d9ed14d03eb681230b86a6",
+  "repo": "holasoymalva/deepseek-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "5e43a41b35d6882f5e719a448dab0e31293bb0729fe6742006a7902367f4ab8b",
+  "snapshot_id": "482743830e15d71f",
+  "sources": [
+    {
+      "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+      "git_sha": "73ff7e42f5903e41cacee6ff0536adee86952921",
+      "lines": 160,
+      "path": "LOCAL-SETUP.md",
+      "repository": "holasoymalva/deepseek-cli",
+      "sha256": "29f9efa49f66fa3ed92395a82a1b9221334c83d9f9075a293c2b5a7e427ee12a",
+      "source_id": "src_46ee8864871556e594ec265c7d1c2f1a",
+      "stored": "local-setup.md-046b29926cdb.md",
+      "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/LOCAL-SETUP.md"
+    },
+    {
+      "commit": "18f5c57f0a534b29c5cf996a7f64158a6b50eb1a",
+      "git_sha": "da2a5cf159a5f7fffe5447b8dfab51a7d90515f6",
+      "lines": 434,
+      "path": "README.md",
+      "repository": "holasoymalva/deepseek-cli",
+      "sha256": "b475473fb9158ef4546040beeebd9c07885b294548e9850fe0b4c9d9f2aa1809",
+      "source_id": "src_f2da7fb0caac5e65afa835ba69638f2f",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/holasoymalva/deepseek-cli/blob/18f5c57f0a534b29c5cf996a7f64158a6b50eb1a/README.md"
+    }
+  ],
+  "summary": "The evidence is README/LOCAL-SETUP documentation for DeepSeek CLI, a command-line AI coding assistant built on DeepSeek Coder models, supporting local Ollama or cloud API modes. No source code is present in the snapshot, so all claims are documentation-based.",
+  "superseded_claim_ids": []
+}

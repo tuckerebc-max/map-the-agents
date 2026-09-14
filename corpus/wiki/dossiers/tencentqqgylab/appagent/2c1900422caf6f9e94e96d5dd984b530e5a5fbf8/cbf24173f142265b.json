@@ -1,0 +1,506 @@
+{
+  "applied_operation_id": "op_b840705b3e9142eda4e95f2ca4dd7f19",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_98612d7fe81ad42500dd03c68479f5d61780664736b189c2c90231412b154135",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1cc86afdb2c57c56fbe5c4b3a856efeb3cb82dd71f8a4b190ca560942ecf7947"
+      ],
+      "text": "AppAgent is described as a novel LLM-based multimodal agent framework designed to operate smartphone applications."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_616a7f39b408dbe9499745569b5e7aa77f9f077ae99045f382427ed015115c08",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bb116b2d8dd0fb202fcbf38d82c2baeb25c94658229799d2d2a710fa826e0b4"
+      ],
+      "text": "The agent acts through a simplified action space mimicking human interactions like tapping and swiping, avoiding the need for system back-end access so it works across diverse apps."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_60af8cd4579a340bfacf3cf6b182f6046a72708daaf82f27d5a31e940a40067b",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 46,
+          "line_start": 46,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L46-L46"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b645a7dea160124ad93f6675fb8cd81dd0f1e254d603ed1a241a39a21a45fbec"
+      ],
+      "text": "The agent learns to use new apps either by autonomous exploration or by observing human demonstrations, producing a knowledge base it later consults for complex tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4f4d961868003efe652726f09c98a7d9555b6d94508e80e18523074c6e4bf423",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 161,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L157-L161"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 122,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L118-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_691ec4c521853d92539c7939cf10e3cc06d0a3309fcf9248c08e623c370dec21",
+        "slc_a706d815d5feca7ee7ae860810ab74d8cdb7300da11d9406217ab44d7d4a842c"
+      ],
+      "text": "During exploration or demonstration, the agent generates documentation for interacted UI elements and saves it for use in the deployment phase; deployment can auto-detect an existing documentation base for an app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e3423a2dc4b68357bbb647fb9a04996bec4ca654ed5da0e07b3ee1b2607f2f30",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 147,
+          "line_start": 143,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L143-L147"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 161,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L157-L161"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 132,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L129-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_12dec496ac0b0e5a574012db351cb24c18f62fc891666d40029663e83124122e",
+        "slc_691ec4c521853d92539c7939cf10e3cc06d0a3309fcf9248c08e623c370dec21",
+        "slc_b512f67fad8a0a80367876e9a1d75bc3cbfa5d78248cfea0c97a8c967e06a881"
+      ],
+      "text": "Users run `learn.py` to enter autonomous exploration or human demonstration mode, and `run.py` for deployment, supplying app name and task description via prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f94df984a6b57a91217bef48eb35e4679207381ba92dbf0bca70092826aaa908",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "0078c3a4458bdf63c68ce22515537dc5e00288fe",
+          "line_end": 7,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/requirements.txt#L1-L7"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 86,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L85-L86"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 91,
+          "line_start": 88,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L88-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ffc49e3ae989da0fd7fc193c159770b3a38acfa32be7d382c85f3c6208b49b5",
+        "slc_31fed3e27b050b9dc70a77fa3d5a8a3cb2b4a54a7c64ddedcc95f12925e7c29e",
+        "slc_81accee0ab7807ecbd5afa162b3f3a7c32038b6dd49224f64906768e712e7dfc"
+      ],
+      "text": "The project requires Python 3 and dependencies installed via requirements.txt, which lists packages including argparse, colorama, dashscope, opencv-python, pyshine, pyyaml, and requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ea065a1e416ed0da84c1ba7b3be598e14bd560daa6cf7d83eeff152edc802d0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 96,
+          "line_start": 95,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L95-L96"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 109,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L108-L109"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 102,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L98-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0aa70760fd19f43d9db321e8ca961e29635282268b8cba668697ca9ab46e139c",
+        "slc_73f3b0859891b7abfab44f38a4ab264f19fd007a311806f64482db631e4e3e05",
+        "slc_d0c6f6e4303ce523b952f2b36ad3343373d2fc3df2508d2da7e427b8504de167"
+      ],
+      "text": "The agent is powered by a multimodal model such as GPT-4V (gpt-4-vision-preview) or the alternative qwen-vl-max, configured via config.yaml with an API key and request interval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1a56f924f5030c9f015928c4d1b462d8a119993d7d1ee8c0b32746959bb2af4d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 71,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L70-L71"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L77-L81"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 73,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L73-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_497f4b800c8e2214a6b962f4e75fde6b5206778ae673c3b4394ea68911cde368",
+        "slc_a0200af8dc8019ae772bee4d8f98788c92b09f20392013cb2217348da650206d",
+        "slc_c2a15b92aeb8bf7be64f6e39fc5ea7e42b43b1985c2724d8ca4eea6bd2fe394a"
+      ],
+      "text": "The agent communicates with the Android device through Android Debug Bridge (adb) from a PC, with USB debugging enabled on the device; an Android Studio emulator is also supported and auto-detected."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2d201c7f6b500375e234eeb825d3be5cd8fca958b61e5144e3414bb6478bbc3d",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 174,
+          "line_start": 174,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L174-L174"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 37,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L31-L37"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08eab392b51ac4b423ff2c18dab2539caced401ecc905425d86062023c9ba013",
+        "slc_287b0987b4f98c4a2aa602ef317c5a31e86b18fafd00ac5d170e2c9ff04b7235"
+      ],
+      "text": "The README links to an evaluation benchmark (testset.md) that was released in January 2024 and used during the team's testing of AppAgent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ea4c4365622c3628ce30c5701e52cfe9cea5fade4c24db0fa0f98015883594c2",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 106,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L106-L106"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 109,
+          "line_start": 108,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L108-L109"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60c64c07f2e0d7ab3872e1b7d2188b9553f64481cd6a58331a893fcd74fc4f3f",
+        "slc_73f3b0859891b7abfab44f38a4ab264f19fd007a311806f64482db631e4e3e05"
+      ],
+      "text": "The qwen-vl-max alternative model is free but reportedly performs poorer than GPT-4V in the AppAgent context, and each GPT-4V request/response pair costs around $0.03."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cde3da9aeef81b3504198ca0c1712a41655e78a32c15975afdaf4f23ff8e86aa",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 161,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L157-L161"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_691ec4c521853d92539c7939cf10e3cc06d0a3309fcf9248c08e623c370dec21"
+      ],
+      "text": "In deployment, if no documentation base exists for an app, the agent can run without documentation but success rate is not guaranteed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_02e4d74770b65c3b2719c7caf70acc5720976c3ce1529c16df7cf718bfc8ce14",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 37,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L31-L37"
+        },
+        {
+          "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+          "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "tencentqqgylab/appagent",
+          "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_287b0987b4f98c4a2aa602ef317c5a31e86b18fafd00ac5d170e2c9ff04b7235",
+        "slc_b77f26b7268a6aaaa8c1aa8103c5cd7cabf4d80e1d37406fe40606d09f7d1230"
+      ],
+      "text": "An optional grid overlay can be brought up on the screen so the agent can tap or swipe anywhere, useful for UI elements lacking a numeric tag."
+    }
+  ],
+  "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 200,
+        "path": "README.md",
+        "size": 11385
+      },
+      {
+        "lines": 7,
+        "path": "requirements.txt",
+        "size": 65
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 20,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_46f8d0bb2fd3519a9eb1fb74fa2e204a",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/tencentqqgylab/appagent/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/cbf24173f142265b/manifest.json",
+  "package_id": "pkg_4cb0d51abe420ec5b476e8ee19e677cd4f99fd0cb8baa08f8e195ee7e2ed6602",
+  "repo": "tencentqqgylab/appagent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "94e0ef55e42e6fe6f7b72f09ecdca080051dba16c4dea47d3b08f84c80b1dc6b",
+  "snapshot_id": "cbf24173f142265b",
+  "sources": [
+    {
+      "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+      "git_sha": "149f85f2a68bfaff7b2042e9e86798f39f254503",
+      "lines": 200,
+      "path": "README.md",
+      "repository": "tencentqqgylab/appagent",
+      "sha256": "ac94cca1f69807d2d31d30bd5521fbf1bda6155996881054df87a85522cd8f5b",
+      "source_id": "src_b7664c10e2975bd2b0ce399eacab1d46",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/README.md"
+    },
+    {
+      "commit": "2c1900422caf6f9e94e96d5dd984b530e5a5fbf8",
+      "git_sha": "0078c3a4458bdf63c68ce22515537dc5e00288fe",
+      "lines": 7,
+      "path": "requirements.txt",
+      "repository": "tencentqqgylab/appagent",
+      "sha256": "dcafa0cc48f058c2caeae8dcaa129c019889bbabb127d70cd71443e156e980b2",
+      "source_id": "src_9e218210fbb956428d8fecfad6697665",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/TencentQQGYLab/AppAgent/blob/2c1900422caf6f9e94e96d5dd984b530e5a5fbf8/requirements.txt"
+    }
+  ],
+  "summary": "AppAgent is an LLM-based multimodal agent framework that operates Android smartphone apps via tapping/swiping, with an exploration phase (autonomous or human demonstration) that builds element documentation used in a deployment phase. Evidence is README-only; no source code slices are present.",
+  "superseded_claim_ids": []
+}

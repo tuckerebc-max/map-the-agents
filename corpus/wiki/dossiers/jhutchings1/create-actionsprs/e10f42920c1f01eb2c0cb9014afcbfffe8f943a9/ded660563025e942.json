@@ -1,0 +1,348 @@
+{
+  "applied_operation_id": "op_6a1884b237ff410f8bf08c27743b871a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ddec173ab775c5b335bdca307787228fe8ab25b0e1b5da80f5a543ce7d3e0aea",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 2,
+          "line_start": 2,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L2-L2"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ddc78768a5fbf2b68c3112e450490b398be0a087d7490f5dad0dc71ed8e9e9ba"
+      ],
+      "text": "The repository's script creates pull requests that push a GitHub Actions workflow to multiple repositories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9aa421c20fa8fc6e90a39f376eda615373f239c97756933d60748eb15fec5c40",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L31-L35"
+        },
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 28,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L22-L28"
+        },
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L12-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c43efeb0b49a5f929c1936e3e21cf62c1633fa0f791910c5f89acb29a99a8720",
+        "slc_ce0235004fba21e9eb6ef50d25c581395d6cf2290fd66dec2ade897deb14c78a",
+        "slc_dbc371e4a69561085ef09e87e9ea35f1f69eb42303c837e1597a97d630bb79de"
+      ],
+      "text": "The tool exposes PowerShell commands CreatePullRequestForRepositories, CreatePullRequestsFromFile, and CreatePullRequestsForCodeQLLanguages, run after installing via ./Create-ActionsPRs.ps1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57b5196c83192534e18b5565101f6029e92f73c6242a00b9b3907cf2e7315c6b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 28,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L22-L28"
+        },
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L12-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce0235004fba21e9eb6ef50d25c581395d6cf2290fd66dec2ade897deb14c78a",
+        "slc_dbc371e4a69561085ef09e87e9ea35f1f69eb42303c837e1597a97d630bb79de"
+      ],
+      "text": "PR creation commands accept CommitMessage, PRBody, and BranchName parameters to customize the resulting pull requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0df66f3ae78c05abea0975178045485cc8299ae2b9935b193a57535dcc6fd196",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L31-L35"
+        },
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L12-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c43efeb0b49a5f929c1936e3e21cf62c1633fa0f791910c5f89acb29a99a8720",
+        "slc_dbc371e4a69561085ef09e87e9ea35f1f69eb42303c837e1597a97d630bb79de"
+      ],
+      "text": "Workflow files to be pushed live in a 'workflows' directory, which already includes a CodeQL workflow file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_40ec941cf5b6ca6994040e95c493a00de8085c5282e858e5341681e958f6d0d8",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L5-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c59712c4a1a6b983edfaa5ffca3803a90608b603c08858f61b06994a312a078"
+      ],
+      "text": "Prerequisites are PowerShell, git configured for GitHub access (with SSH key setup guidance), and the GitHub CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0182a7c5a5b0ab0d84a1d1d8ad03ef9a1a80680f62a91a43cae28d0e868dd9ff",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L31-L35"
+        },
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L12-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c43efeb0b49a5f929c1936e3e21cf62c1633fa0f791910c5f89acb29a99a8720",
+        "slc_dbc371e4a69561085ef09e87e9ea35f1f69eb42303c837e1597a97d630bb79de"
+      ],
+      "text": "Authentication uses a .env file (renamed from .env-example) holding a GitHub token with the repo scope, authorized for SSO when the organization requires it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5dd261b65deeccba5f49db36f7ffcad49a5129c3331172aa5d357a9fbd67c86d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L19-L19"
+        },
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 17,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L12-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0709e73d23eb6b62df63dd7f8eb60f3cdd7c13ac9154ffa56118c231eb5ec85e",
+        "slc_dbc371e4a69561085ef09e87e9ea35f1f69eb42303c837e1597a97d630bb79de"
+      ],
+      "text": "One mode targets all repositories in an organization using GetReposFromOrganization, creating PRs in every repository where the user has push permissions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_58e9a0e3ce31723c29588b00429d0b55a1903faaff7e761d45ad03add8cd8559",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+          "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+          "line_end": 28,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "jhutchings1/create-actionsprs",
+          "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md#L22-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ce0235004fba21e9eb6ef50d25c581395d6cf2290fd66dec2ade897deb14c78a"
+      ],
+      "text": "Another mode reads a user-created file of repository URLs, one per line, and creates PRs for those repositories via CreatePullRequestsFromFile."
+    }
+  ],
+  "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 35,
+        "path": "README.md",
+        "size": 2832
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_5d8a81450c3455828d339d63529f0697",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/jhutchings1/create-actionsprs/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/ded660563025e942/manifest.json",
+  "package_id": "pkg_1c832e9ddef22210e2806612c248a0f947e4fc32500d9fc14b27d0a34b36e5e0",
+  "repo": "jhutchings1/create-actionsprs",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "53e1277b12df80cc18e63f26ad6665805e78b8e96b981c0eaf46988836fdd5a7",
+  "snapshot_id": "ded660563025e942",
+  "sources": [
+    {
+      "commit": "e10f42920c1f01eb2c0cb9014afcbfffe8f943a9",
+      "git_sha": "28b47c73037a3340ad2845946bec1dc988777ece",
+      "lines": 35,
+      "path": "README.md",
+      "repository": "jhutchings1/create-actionsprs",
+      "sha256": "e1b431f92d38bbea6d8cf9da809a38e85ba0606ca280477f67a7910f517c08d7",
+      "source_id": "src_e699a666b3745abfb1623ccac9db4c0a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/jhutchings1/Create-ActionsPRs/blob/e10f42920c1f01eb2c0cb9014afcbfffe8f943a9/README.md"
+    }
+  ],
+  "summary": "Selected evidence records: The repository's script creates pull requests that push a GitHub Actions workflow to multiple repositories. The tool exposes PowerShell commands CreatePullRequestForRepositories, CreatePullRequestsFromFile, and CreatePullRequestsForCodeQLLanguages, run after installing via ./Create-ActionsPRs.ps1.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,673 @@
+{
+  "applied_operation_id": "op_408d7b427b5a4dada2eb0a84538ef286",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2983288e6f8844552e4040f302925ec47a6bce3b5b90f6dbaf1b4984126eee0c",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "5f2810a7f776a6c03c8ba2218c5a854007bff1a6",
+          "line_end": 4,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/README.md#L3-L4"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03b20d931cb9769ca9b0c8e2712a90010c1548c57ae732eef30b58791aea73c9"
+      ],
+      "text": "The README states this open-source project is no longer actively maintained and will only receive critical security fixes; Amazon Q Developer CLI continues as the closed-source Kiro CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0347fc06cd25320cbcfff0e1a47b120b65f0d1a7e260f64fb9b4fcf72826693d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "5f2810a7f776a6c03c8ba2218c5a854007bff1a6",
+          "line_end": 58,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/README.md#L54-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_979ed1478ce88ee38f6937aafff402574c40471ff1b7ef0fa958f21b2d6cd8bc"
+      ],
+      "text": "The main component is the chat_cli crate, the `q` CLI for interfacing with Amazon Q Developer from the command line; the repo also contains crates, scripts, and docs directories."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38051fa623c098bb314426402b8dabfb3b1c0c20d449a21a2eb35b7d131dd7b0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/agent-format.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md#L3-L3"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+          "line_end": 21,
+          "line_start": 10,
+          "path": "docs/agent-format.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md#L10-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8999d6f4b1f922d8ee743468f4b2b7c2c731564385ce64d9ac5cf34bf4f5a216",
+        "slc_de86eee2d779c6d4b9a8ffa7864e8894da7b30212158fb84da748457d4e397b2"
+      ],
+      "text": "Agent configurations are JSON files whose filename (minus .json) becomes the agent name; sections include name, description, prompt, mcpServers, tools, toolAliases, allowedTools, toolsSettings, resources, hooks, useLegacyMcpJson, and model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b400a4c7ebbb5a9d4ec926f0792c8c0de9874fbd1a0c8c6bb60e5425a4fdd314",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "docs/agent-format.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md#L45-L45"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+          "line_end": 71,
+          "line_start": 67,
+          "path": "docs/agent-format.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md#L67-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0402034aeec774f28578d329ec847e8a31c0fca626fcd1befa97b4579837a020",
+        "slc_b1c6169d847f16406735e2cd5a2b8951ba627e5aabd42e2a3f0a79ddb9435340"
+      ],
+      "text": "The prompt field accepts inline text or file:// URIs; relative paths resolve against the agent config file's directory and absolute paths are used as-is."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_11c8952ee4dd045db2b1fbf14af4701ddfc82f9c64f2da36143ddb7ad079735a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+          "line_end": 114,
+          "line_start": 110,
+          "path": "docs/agent-format.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md#L110-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b99c3295dff2e52c5f4ad3073a8483352a39517129f1a9fc75df35580815518b"
+      ],
+      "text": "Each MCP server is configured with a required command plus optional args, env variables, and a per-request timeout in milliseconds defaulting to 120000."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9588730130eae209277eb1411013cf5ee0f6c00f94cf86f230e03afe80245f6a",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "a0f56305cffd045333e360a90717b009347573cd",
+          "line_end": 158,
+          "line_start": 154,
+          "path": "docs/built-in-tools.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/built-in-tools.md#L154-L158"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "a0f56305cffd045333e360a90717b009347573cd",
+          "line_end": 197,
+          "line_start": 195,
+          "path": "docs/built-in-tools.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/built-in-tools.md#L195-L197"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "a0f56305cffd045333e360a90717b009347573cd",
+          "line_end": 40,
+          "line_start": 35,
+          "path": "docs/built-in-tools.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/built-in-tools.md#L35-L40"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "a0f56305cffd045333e360a90717b009347573cd",
+          "line_end": 66,
+          "line_start": 63,
+          "path": "docs/built-in-tools.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/built-in-tools.md#L63-L66"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49fb57ef2866ab9e8454a348bc6b2e41c7eadddf3a8f0545a689b4637456554d",
+        "slc_56e1af02202fbaa96451f73a4929c71ac88c1bd96b86b1f0940cfe157e2ddac8",
+        "slc_6dd643f91dade49c215c9c491f2ee30c6132b2c7463e3a2edbb9399dd7566f07",
+        "slc_ff26aaab4d539016104d1bff5ee8a9a39a05cf298978b012c215e18a90751032"
+      ],
+      "text": "By default fs_read and report_issue are trusted, while execute_bash, fs_write, and use_aws prompt for permission; toolsSettings can pre-allow specific commands, paths, or AWS services, with deny rules evaluated before allow rules."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9f9dbec13c96aa90485a5264c296454d5fe870c6d999f4073489024bb72706d0",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 45,
+          "line_start": 32,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L32-L45"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 100,
+          "line_start": 98,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L98-L100"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L30-L30"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 23,
+          "line_start": 21,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L21-L23"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L102-L102"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L10-L10"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 56,
+          "line_start": 55,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L55-L56"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+          "line_end": 65,
+          "line_start": 65,
+          "path": "docs/default-agent-behavior.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md#L65-L65"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01e8a2581358a71d96be3308a8c50bfc3e1b896227bcc66ce5f06204b133d829",
+        "slc_1c260bd3110f5aeb1f28d751432b9ed3c8df4a2f30d18f88f2cc96d67a4b67bb",
+        "slc_39490477cfe22ea80ccf657b59a9845c83b14cd174a9340f851028087de3a80a",
+        "slc_480650cc9411008d1baca49b65e82695d5f1c276e3266c1ba416f6802a846c28",
+        "slc_b2b2eaf36f9703031cfcfee0be9320ff7d7deaf0b7ffb5f980813eaa4405795f",
+        "slc_b7be1aaa23f3f03e86ee143fb8cdbbff01453fb63afdbe0276c50c4f8d004629",
+        "slc_d0074b012213dcb0cc2b604a9f4e0fdde7a51ff18b7bfcaa97c2fc241a5a8e57",
+        "slc_e8a411fe558cba693ccaab8583522f90f10edc1bb0c7d1690e4aac0eafd5b547"
+      ],
+      "text": "Agent selection follows a fallback hierarchy: the --agent flag first, then the chat.defaultAgent setting, then a built-in default agent (all tools, fs_read pre-approved, legacy MCP enabled); a q_cli_default agent file can override the built-in default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a049dcd95f0f40120b9ef413d96e2b257fb9044fb65bcf28f5ed458e3edb1ec",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "b5be46e1b3c242420fc2bfcbef79721b0f467fc2",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "docs/agent-file-locations.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-file-locations.md#L55-L55"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "b5be46e1b3c242420fc2bfcbef79721b0f467fc2",
+          "line_end": 110,
+          "line_start": 110,
+          "path": "docs/agent-file-locations.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-file-locations.md#L110-L110"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "b5be46e1b3c242420fc2bfcbef79721b0f467fc2",
+          "line_end": 51,
+          "line_start": 50,
+          "path": "docs/agent-file-locations.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-file-locations.md#L50-L51"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "b5be46e1b3c242420fc2bfcbef79721b0f467fc2",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "docs/agent-file-locations.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-file-locations.md#L61-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3bb1fb7b1630fadf8bfc92c5ff9a70ec5a7a2c30d79d4f56cabf4e521ee8b395",
+        "slc_3d4c6307821de151c4d67a0f81e68ad6c8d643bfeccb683fe81bb51dcab487cd",
+        "slc_5925f2592c89bee847b864e0ac89234bf5ba76c763f610efc060cb32abe74494",
+        "slc_c31c57c5236549f1a5b886e88dbe3a3dcf69c5834956223673bd89049ad8aba9"
+      ],
+      "text": "Agent files resolve local-first: .amazonq/cli-agents/ in the working directory takes precedence over ~/.aws/amazonq/cli-agents/, with a warning on name conflicts; the global directory is auto-created while the local one must be created manually."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e73a9f1cec7ee8e60e3c1afbf841c371d725b5d8b6390a1ca2ef22aba960911b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+          "line_end": 342,
+          "line_start": 337,
+          "path": "docs/agent-format.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md#L337-L342"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+          "line_end": 335,
+          "line_start": 333,
+          "path": "docs/agent-format.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md#L333-L335"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e6850619e4e55ef898e88899aea9105a79dd7302efbda786e57405a983d73b3",
+        "slc_38368596034e3e797dfc268c8893e6694aed35bf4f883ea66cb4f902b90f9b07"
+      ],
+      "text": "Hooks run commands at lifecycle trigger points: agentSpawn, userPromptSubmit, preToolUse (which can block tool use), postToolUse, and stop; each hook has a required command and an optional tool-name matcher."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3e682aabc706c0737272b81f88722d17e5bd166111b55b7246566d6e4cca40fc",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "5f2810a7f776a6c03c8ba2218c5a854007bff1a6",
+          "line_end": 50,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/README.md#L45-L50"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "5f2810a7f776a6c03c8ba2218c5a854007bff1a6",
+          "line_end": 41,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/README.md#L36-L41"
+        },
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "5f2810a7f776a6c03c8ba2218c5a854007bff1a6",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/README.md#L24-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c4ff3e48e1cb800db345d2abace5fe1b456c81ffbcd398d96c3b9fae369c83a",
+        "slc_4ebdcf7398855bab12fa7dbd9013a7408b94c00ff8c26ab68474cc6a801699e8",
+        "slc_9b615b427444fcaf9385ace45624da4b4ba40c305b73b46d0997677e0b9f05d3"
+      ],
+      "text": "Repository development practice: contributors need macOS with Xcode 13+ and Brew, install the Rust toolchain via rustup (stable plus nightly) and typos-cli, then build with cargo run --bin chat_cli, test with cargo test, lint with cargo clippy, and format with cargo +nightly fmt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7451d006a5619d5533b960dffee79cf6d97616c0c27a6a6636d9e3ebe58f24ab",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+          "git_sha": "5f2810a7f776a6c03c8ba2218c5a854007bff1a6",
+          "line_end": 41,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "aws/amazon-q-developer-cli",
+          "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/README.md#L36-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ebdcf7398855bab12fa7dbd9013a7408b94c00ff8c26ab68474cc6a801699e8"
+      ],
+      "text": "The project is written in Rust; contributor setup instructions require installing the Rust toolchain via rustup with stable as default plus the nightly toolchain."
+    }
+  ],
+  "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 70,
+        "path": "README.md",
+        "size": 2849
+      },
+      {
+        "lines": 110,
+        "path": "docs/agent-file-locations.md",
+        "size": 3082
+      },
+      {
+        "lines": 431,
+        "path": "docs/agent-format.md",
+        "size": 12963
+      },
+      {
+        "lines": 197,
+        "path": "docs/built-in-tools.md",
+        "size": 7417
+      },
+      {
+        "lines": 125,
+        "path": "docs/default-agent-behavior.md",
+        "size": 3741
+      },
+      {
+        "lines": 215,
+        "path": "docs/experiments.md",
+        "size": 8486
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/hooks.md",
+        "reason": "file-budget",
+        "size": 4462
+      },
+      {
+        "path": "docs/introduction.md",
+        "reason": "file-budget",
+        "size": 419
+      },
+      {
+        "path": "docs/introspect-tool.md",
+        "reason": "file-budget",
+        "size": 2138
+      },
+      {
+        "path": "docs/knowledge-management.md",
+        "reason": "file-budget",
+        "size": 14328
+      },
+      {
+        "path": "docs/legacy-profile-to-agent-migration.md",
+        "reason": "file-budget",
+        "size": 2773
+      },
+      {
+        "path": "docs/SUMMARY.md",
+        "reason": "file-budget",
+        "size": 249
+      },
+      {
+        "path": "docs/tangent-mode.md",
+        "reason": "file-budget",
+        "size": 5198
+      },
+      {
+        "path": "docs/todo-lists.md",
+        "reason": "file-budget",
+        "size": 4213
+      },
+      {
+        "path": "docs/draft/the-agent-format-2.md",
+        "reason": "file-budget",
+        "size": 8398
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 309
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3368
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 521
+      }
+    ],
+    "omitted_count": 12,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2046,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 18,
+      "complete": false,
+      "omitted": 12,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_3088beb5436053cc81772da38a3a675a",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 0,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "design-choices",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aws/amazon-q-developer-cli/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/1a8a017dfd018fb0/manifest.json",
+  "package_id": "pkg_54b585a74893aef7d4fdc7a341e325615ca993357dc307c0fdb93fa034c38946",
+  "repo": "aws/amazon-q-developer-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6f150f806f8c0680440fdba7e23971d7aa0755e3b12bb70fbea7f4daca1b682e",
+  "snapshot_id": "1a8a017dfd018fb0",
+  "sources": [
+    {
+      "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+      "git_sha": "5f2810a7f776a6c03c8ba2218c5a854007bff1a6",
+      "lines": 70,
+      "path": "README.md",
+      "repository": "aws/amazon-q-developer-cli",
+      "sha256": "c7ea66adfb406877d512ad4c9a63c887f77e38239e9b29675fef64df40475b08",
+      "source_id": "src_5dd42030269053d5a055ea365763dfca",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/README.md"
+    },
+    {
+      "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+      "git_sha": "b5be46e1b3c242420fc2bfcbef79721b0f467fc2",
+      "lines": 110,
+      "path": "docs/agent-file-locations.md",
+      "repository": "aws/amazon-q-developer-cli",
+      "sha256": "fe32b53795fff1753cd95b17e7bda3b9257c3171e91913901cc8c08580df3586",
+      "source_id": "src_f79eadb8f0a05fe387430f404c3011a2",
+      "stored": "agent-file-locations.md-52b1d44d9b09.md",
+      "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-file-locations.md"
+    },
+    {
+      "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+      "git_sha": "f9b925414c2dc28bfbb87e41c0556ac453101dfa",
+      "lines": 431,
+      "path": "docs/agent-format.md",
+      "repository": "aws/amazon-q-developer-cli",
+      "sha256": "6754a0977a4e0041f146755824ff3ed57b1a111aa20c589bb5c90b96457e911b",
+      "source_id": "src_5f5191cabf8754eda03cc24c4622618c",
+      "stored": "agent-format.md-557f2467cb13.md",
+      "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/agent-format.md"
+    },
+    {
+      "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+      "git_sha": "a0f56305cffd045333e360a90717b009347573cd",
+      "lines": 197,
+      "path": "docs/built-in-tools.md",
+      "repository": "aws/amazon-q-developer-cli",
+      "sha256": "596635dc9e8dc48f7a74da5379e149806eb4e6983e0dba09c0f94d130a54fe12",
+      "source_id": "src_0f384a675e3b57c797ff90fbd4a6bb22",
+      "stored": "built-in-tools.md-59bfe1ddcb18.md",
+      "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/built-in-tools.md"
+    },
+    {
+      "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+      "git_sha": "727de2e93f9eded66812f4b2c281d7b5e10fea5c",
+      "lines": 125,
+      "path": "docs/default-agent-behavior.md",
+      "repository": "aws/amazon-q-developer-cli",
+      "sha256": "03dbb843b46e837bedba3e0d31be3620d619f1151bc6f029046ca34ea7f44c83",
+      "source_id": "src_312307095acc559f848c8a1c96cec2ba",
+      "stored": "default-agent-behavior.md-52393e7e213c.md",
+      "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/default-agent-behavior.md"
+    },
+    {
+      "commit": "15cc8f3cd18c4272925ce1c7053268eedff1ea0a",
+      "git_sha": "bdc3887c6106e5bc75fb13b7f815623a8860d72a",
+      "lines": 215,
+      "path": "docs/experiments.md",
+      "repository": "aws/amazon-q-developer-cli",
+      "sha256": "5d79d1cab84d4abf2b398f8acb655a7c94e0468fd0e5e8d4b73eaf49e2962178",
+      "source_id": "src_ab681ee5c84a5c92a799ad96fd59777a",
+      "stored": "experiments.md-b1f8a4f198e4.md",
+      "url": "https://github.com/aws/amazon-q-developer-cli/blob/15cc8f3cd18c4272925ce1c7053268eedff1ea0a/docs/experiments.md"
+    }
+  ],
+  "summary": "Selected evidence records: The README states this open-source project is no longer actively maintained and will only receive critical security fixes; Amazon Q Developer CLI continues as the closed-source Kiro CLI. The main component is the chat_cli crate, the `q` CLI for interfacing with Amazon Q Developer from the command line; the repo also contains crates, scripts, and docs directories.",
+  "superseded_claim_ids": []
+}

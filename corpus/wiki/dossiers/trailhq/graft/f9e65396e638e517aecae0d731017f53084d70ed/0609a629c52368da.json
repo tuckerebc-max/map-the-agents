@@ -1,0 +1,612 @@
+{
+  "applied_operation_id": "op_cde8d62d3ffb43339ed41675330c5498",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5055a3ff44842ff8b4cdca6365e2a1386288a7dc999221a1e9a94571d8be39cf",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L114-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_96d24a7815bc636bc5c854a9c55499da9f5597452bdd0652a9dd085d01965795"
+      ],
+      "text": "Graft builds a codebase understanding graph once and writes it into the repo as a folder of linked markdown files, one node per system, API, or concept."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_42a0ca9b10196b75606c789da48071ebf832b18faa59639ce3e239c65473ef8b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 310,
+          "line_start": 303,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L303-L310"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 301,
+          "line_start": 301,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L301-L301"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e4ec71d2227d162bb998a603d0d049546bc6f3d0623a740bfb80ccc43122191",
+        "slc_260db624d9b4e8d7aa5168f297303d66173bbfff345a576fc9003beaf81c1f5c"
+      ],
+      "text": "graft init registers an MCP server exposing six tools: graft_find_code, graft_file_api, graft_trace_calls, graft_find_all, graft_repo_map, and graft_check_freshness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_449f17ab94dbc2aa46e25d9c733423db671dfab81ecc22f0b62fff5647e86935",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 82,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L82-L82"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 120,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L116-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6aab834d677173bf070ded2e35d54138b9460def29eb96d9c94dd1292498af2f",
+        "slc_aba3ed16a13daafac01ad6a60ddc6b950cee20be662a2228b073b4db9f1f6b54"
+      ],
+      "text": "The graph is a regenerable local cache: graft build adds graft/ to .gitignore, and only the wiring in .claude/ and instruction files is committed; teammates each run graft build themselves."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_abbccba2ef0f4ea123b0c1edee0e842fe50a8187c9af6dba3c283c011b015cce",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 192,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L192-L192"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c9931086b03e93b4c6a3793c3b0c29b331d21a5e1b68fd85660f47c4aecc1863"
+      ],
+      "text": "Every query refreshes the graph against the working tree first via a ~3ms structural fingerprint check, never calling the LLM; disable per-command with --no-refresh or globally with GRAFT_NO_REFRESH=1."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c2ce4c8ad109f9476f473c7d4fac68fe01d56a87d8a4e13c4ebacef5007cef2",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 254,
+          "line_start": 252,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L252-L254"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 120,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L116-L120"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f7a75e29748b556ccdf0939b8f1cbea5112b09aa36d0578e3ad7e8ded472498",
+        "slc_aba3ed16a13daafac01ad6a60ddc6b950cee20be662a2228b073b4db9f1f6b54"
+      ],
+      "text": "LLM summaries use the user's own provider key; GRAFT_PROVIDER/GRAFT_API_KEY/GRAFT_MODEL/GRAFT_BASE_URL (or CLI flags) support OpenAI-compatible endpoints, native Anthropic, LiteLLM, OpenRouter, Fireworks, Groq, or local models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b5dfa06f740d39d5b292d39badd8dd4657a9cdadd2fe774a4dbe35261097c83c",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 220,
+          "line_start": 216,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L216-L220"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 201,
+          "line_start": 200,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L200-L201"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 224,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L222-L224"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 214,
+          "line_start": 211,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L211-L214"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 209,
+          "line_start": 203,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L203-L209"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a48891cfe313ab2fbb7e308f934fe7cee194486747ef5f7f733194f59fdd81f",
+        "slc_5fb43c1bafcb4812ec54bdb3976aa050ccd4892e45a333198e38b867475c76d9",
+        "slc_8089cb48ea960d686df3bc8aed0227e1dd269295ea39de003e48694c834278eb",
+        "slc_b5a807e49960d1381ee1fc0355297b652f5ef005c4f233e8836da83200b3cd7c",
+        "slc_f41cb49d2d5d0511fa8fbb16f7a839d77955321ccf84286ac7a232fd75223464"
+      ],
+      "text": "Parsing uses tree-sitter at two fidelity tiers plus optional compiler-grade lsp_resolved edges via rust-analyzer, clangd, gopls, pyright, or typescript-language-server when on PATH; 23 languages total, unlisted languages are skipped."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b4e8d1fce188a04cd9c003f6be59946d4736c5fc0bf88897cf0945deee59f4d",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 244,
+          "line_start": 244,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L244-L244"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 240,
+          "line_start": 234,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L234-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b4490d73a2386b5703976166f4251018501640ed79ac7f9968541d4b4d69190",
+        "slc_9a9fef8b4ed778b8aa64b6040dfa1133e999f3895f57a9ca31716ca219cfac02"
+      ],
+      "text": "Each markdown node holds a model-written summary, inline crux code, content-hash-tracked sources, typed [[wikilinks]] (depends_on, part_of, uses, implements, produces), and user notes preserved across regeneration."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b203dfbbf64a3021b5a0b1496ae3857f43d8fa6aeb561ae1ba54423f6fe4333",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 246,
+          "line_start": 246,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L246-L246"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_29596277f4a75301387df84caa63a8c07450f6c7cfaea0102b08be5e6bd61c02"
+      ],
+      "text": "Per the README, the crux currently ships per-symbol in the code graph via graft build --deep; inlining crux into markdown nodes is described as future work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d8b984d6f9667c3ccce9936d216a6a5232c36202a01d997d042ab5191b17f2a8",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 135,
+          "line_start": 135,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L135-L135"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 145,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L139-L145"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L147-L147"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 166,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L166-L166"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L155-L155"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 164,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L157-L164"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 153,
+          "line_start": 153,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L153-L153"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L137-L137"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a23c0df1759231f300e6afbf2642eb20910fb9c71b34ce38b51074fd3841d13",
+        "slc_7d28e28392275ce1f191de443881ecdc4442782ae5427d8a418be6683a1523ec",
+        "slc_82015efc04c98ccf53f519a17fda1745e123b3ffa96eb7c6902bfa8d6dda8d70",
+        "slc_a0294f85f65893153849d2f4ef178884c6709495dc633a06b775b0701ec90bcb",
+        "slc_aea5ce447907f3f7ee8c2a92a78d9c490a72098e04cdeea05f24abf8b7729571",
+        "slc_bd620011303ce6b70169dc52ab900e56fe72535b34587c3c7f2f7f31745f8444",
+        "slc_c8895be561a7bb96805c65b005e9d69676b22e5cf61a485cd863979f4e5ebbe9",
+        "slc_e554f2c77622daf549a455809cdc94e1bab9e78b8b9ac76b26044098be7420fc"
+      ],
+      "text": "The README reports a 162-run harness (cold vs Graft push vs pull variants, Opus judge with keyword floor) and SWE-bench Verified 50-instance runs where graft resolved 33/50 vs 27/50 with fewer tokens, calls, and wall-clock time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_77cc71b8b6ae25a1630054a349dc8f1a8f6ea99fe2a73ec101834404fad2db75",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 272,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L272-L272"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 270,
+          "line_start": 270,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L270-L270"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 285,
+          "line_start": 274,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L274-L285"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10619c1cfcd3244565bffb1e492463d7fde4a624bb71a7c664162d8070b51316",
+        "slc_67a392f56391c05a95c6cb14d78d073ef19e69f9c97a115d7dc7578a155efe58",
+        "slc_c1aaee1c64d25c5727e1971e9af07cad8f0aeaed1f49a184da694f2795e577ec"
+      ],
+      "text": "graft init wires multiple agents (Claude, Cursor, Gemini, Codex, Copilot, Kiro, Windsurf, Grok, AdaL) via marker-fenced instruction-file sections or owned skill/rule files, with flags like --agents, --dry-run, --no-mcp, --no-hooks, --no-statusline, --no-global."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2305f4ab852b1a20e81a7f1bec04b9bdd1ac5846fa2a8218af3a4878ee5f511a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 326,
+          "line_start": 324,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L324-L326"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 338,
+          "line_start": 338,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L338-L338"
+        },
+        {
+          "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+          "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+          "line_end": 322,
+          "line_start": 322,
+          "path": "README.md",
+          "repository": "trailhq/graft",
+          "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md#L322-L322"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dddd68e6a38e9d6e60d991f7275dc66faf4d12fad1e19f3711b02b41c031e85",
+        "slc_edb660aef69f4e997530f13d55b07d98b36a8a3c47a3d0c85e15fd995d54301e",
+        "slc_f68f1cc45592c0c5e881ee969a6c122c565e00e7f1433b73a98a899afe2db57c"
+      ],
+      "text": "Claude Code deep integration adds a live statusline (graph size, % enriched, stale warning), automatic structural graph refresh per query, per-prompt node injection, and post-edit blast-radius hooks; init is idempotent and merges rather than clobbers .claude/settings.json."
+    }
+  ],
+  "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 598,
+        "path": "README.md",
+        "size": 42777
+      },
+      {
+        "lines": 25,
+        "path": "CREDITS.md",
+        "size": 1211
+      },
+      {
+        "lines": 150,
+        "path": "TELEMETRY.md",
+        "size": 7751
+      },
+      {
+        "lines": 216,
+        "path": "docs/github-app.md",
+        "size": 10669
+      },
+      {
+        "lines": 676,
+        "path": "CHANGELOG.md",
+        "size": 38989
+      },
+      {
+        "lines": 18,
+        "path": "SECURITY.md",
+        "size": 612
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 334,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_31cfe1537e5b56c790844bac605e2259",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/trailhq/graft/f9e65396e638e517aecae0d731017f53084d70ed/0609a629c52368da/manifest.json",
+  "package_id": "pkg_7660aaceb71a78a208ea4df7661600bfeec3f994e2d1399b8f9fd25e89e309a5",
+  "repo": "trailhq/graft",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "0848051ef3c217190fb70651921c9de5142748e24952917b6e9e90ab2f11a109",
+  "snapshot_id": "0609a629c52368da",
+  "sources": [
+    {
+      "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+      "git_sha": "bd845ee8723d9e08a7202fe12e4b0a64d06447b3",
+      "lines": 676,
+      "path": "CHANGELOG.md",
+      "repository": "trailhq/graft",
+      "sha256": "5d36a4adb587a512f82b592401765b2e5a138328333e84f7e0bd7b3c7bab7aa3",
+      "source_id": "src_3cd2c86f727f5f77b8cc037f2e8b7acc",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/CHANGELOG.md"
+    },
+    {
+      "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+      "git_sha": "9676403d8cf54fab9846546537a16eff8962385b",
+      "lines": 25,
+      "path": "CREDITS.md",
+      "repository": "trailhq/graft",
+      "sha256": "437f5841a4082da7f019009dc7088ec8e87e4ea05c66da9d11efaf2deab929b3",
+      "source_id": "src_ebc5635dd1d15347ad60387a43a82ee2",
+      "stored": "credits.md-7ddc0d1fb1cd.md",
+      "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/CREDITS.md"
+    },
+    {
+      "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+      "git_sha": "f2101dcdf027d1521bfb6c75813bff069df4dcc9",
+      "lines": 598,
+      "path": "README.md",
+      "repository": "trailhq/graft",
+      "sha256": "1b213d3446427e0ef00f7cc44bdbddde837b20c41033706fb825612c2e6c8547",
+      "source_id": "src_691424a8f159591c9a5330f1cfad6df8",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/README.md"
+    },
+    {
+      "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+      "git_sha": "87af0b6eda029c9d23c8e6c0193dc56c650708ad",
+      "lines": 18,
+      "path": "SECURITY.md",
+      "repository": "trailhq/graft",
+      "sha256": "af14831ec5c08005774ae5ad28a97c34ceca236e8f09f2060ad1ef0b4adcec95",
+      "source_id": "src_04b125a172335696958a6f4ff03e1dcb",
+      "stored": "security.md-f6ed156e4bf5.md",
+      "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/SECURITY.md"
+    },
+    {
+      "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+      "git_sha": "dcb57d75eb7d48bf4b536917f7c75b0fc7211fee",
+      "lines": 150,
+      "path": "TELEMETRY.md",
+      "repository": "trailhq/graft",
+      "sha256": "f423688f6896307229cb429b60ce1614d0238a15429878b79cd56bb946160ed2",
+      "source_id": "src_860bb678963b531fa415214a7d257570",
+      "stored": "telemetry.md-1807265761e5.md",
+      "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/TELEMETRY.md"
+    },
+    {
+      "commit": "f9e65396e638e517aecae0d731017f53084d70ed",
+      "git_sha": "0170b5f7eca74c7918a094c29efc6f42401a756c",
+      "lines": 216,
+      "path": "docs/github-app.md",
+      "repository": "trailhq/graft",
+      "sha256": "604bcbd9b0740c02f6f8113807fafa27724f1dfa1d28456ede653dcd88ba7c50",
+      "source_id": "src_9e7021f420f254bdb77987913019051d",
+      "stored": "github-app.md-ccaf2ad1f3ad.md",
+      "url": "https://github.com/trailhq/Graft/blob/f9e65396e638e517aecae0d731017f53084d70ed/docs/github-app.md"
+    }
+  ],
+  "summary": "Graft builds a codebase understanding graph once and writes it into the repo as a folder of linked markdown files, one node per system, API, or concept. graft init registers an MCP server exposing six tools: graft_find_code, graft_file_api, graft_trace_calls, graft_find_all, graft_repo_map, and graft_check_freshness. Evidence coverage: 120 of 272 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

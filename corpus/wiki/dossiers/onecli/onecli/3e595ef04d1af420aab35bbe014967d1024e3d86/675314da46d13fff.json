@@ -1,0 +1,546 @@
+{
+  "applied_operation_id": "op_a17826486fe84a1b884b51352ff5dda0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff863f7e4d7efd0d3989321d9308e4ac0d17862d80d28648d33af977834d0074",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 98,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L91-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af1d51ead03b99baaa0608790bc763b267aa271444a0f0df5c65297bd8043bce"
+      ],
+      "text": "The platform comprises a Next.js web dashboard, an API server control plane owning the database and work queue, a Rust gateway, a runner, a sandbox supervisor, an SSH terminator, and a Slack channel adapter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d4b8cc091be8782a24b9a52609eb9151e9d46fb8f72a10f4309ec48af2f0334d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 79,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L73-L79"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 81,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L81-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13f7794cef82a3a5e04e480bbb06c04855a35e73beb13dc0573960f12db860a2",
+        "slc_e2f94c7b4d8193f8fafb89d1f3944e93e5231596e12791d09b5c4af16d4166bf"
+      ],
+      "text": "Agents run in isolated sandboxes whose only network egress is the gateway, so they can reach only granted resources; the runner is outbound-only with no inbound ports, enabling NAT'd hosts without ingress or tunnels."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1aafcecba604e3a6b3425e43d4e63cd4c4c1243a5eb977c0316f6985630d6282",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 79,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L73-L79"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 98,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L91-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13f7794cef82a3a5e04e480bbb06c04855a35e73beb13dc0573960f12db860a2",
+        "slc_af1d51ead03b99baaa0608790bc763b267aa271444a0f0df5c65297bd8043bce"
+      ],
+      "text": "Credentials are never given to agents: the gateway injects them per request, matching secrets by host and path pattern into headers or query parameters, and agents authenticate with access tokens via Proxy-Authorization headers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6ca02f5aaf94f803bd4bf6f3575aeac290e2996dd83b1701b3738e7a52814922",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 79,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L73-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13f7794cef82a3a5e04e480bbb06c04855a35e73beb13dc0573960f12db860a2"
+      ],
+      "text": "Agent memory is kept by the platform so it persists, and users can read and edit it at any time from the dashboard."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9da261786b514d052e4c5b44818fc4aa5c68cd1cbac8420f9bbc3a0f702c68c6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 98,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L91-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af1d51ead03b99baaa0608790bc763b267aa271444a0f0df5c65297bd8043bce"
+      ],
+      "text": "The runner starts, parks and reaps agent sandboxes, polls a work queue owned by the API server, and never touches the database directly."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a686b8a5402d83443b13188e2d5f894af99a4e81e00d6e52cea6a5c4169312a2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "9f393a4fb7f9b90975d58edd53570d75dcccbcdd",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "docs/channels-slack.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/channels-slack.md#L15-L20"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 79,
+          "line_start": 73,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L73-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0e8d4c6f0f0970e438bb79f7c530db98858c1f1dd35431c15fe9e23b596d7408",
+        "slc_13f7794cef82a3a5e04e480bbb06c04855a35e73beb13dc0573960f12db860a2"
+      ],
+      "text": "Each agent can have its own Slack app answering in channels and DMs under its own name; a DM shares the same conversation as the web dashboard, and gateway approvals appear as Slack cards with Approve/Deny buttons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83a09b4e49e1aeb4047c4e5fb537b39ad886445f9d366d3349c185b671d90947",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "665a7aa5a6a3bfac2496a5710931cb9cccd81829",
+          "line_end": 82,
+          "line_start": 51,
+          "path": "docs/development.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/development.md#L51-L82"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "665a7aa5a6a3bfac2496a5710931cb9cccd81829",
+          "line_end": 7,
+          "line_start": 5,
+          "path": "docs/development.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/development.md#L5-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50e135e47fb378791b69fcdddaa37750ddb78f952a275f2aa2ecb3af8cffce2c",
+        "slc_fef4937cbfa374b22a053bd7daaea23668073a72118ffb83a3d6caadc34e0b57"
+      ],
+      "text": "Development prerequisites are mise (provisioning Node.js and pnpm), Rust for the gateway, and Docker for PostgreSQL and agent sandboxes; the stack uses Prisma ORM with PostgreSQL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4ec3ec229c4844c6806718c17320ce8c41791919b2d519f37493de1b6409bc62",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "665a7aa5a6a3bfac2496a5710931cb9cccd81829",
+          "line_end": 82,
+          "line_start": 51,
+          "path": "docs/development.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/development.md#L51-L82"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50e135e47fb378791b69fcdddaa37750ddb78f952a275f2aa2ecb3af8cffce2c"
+      ],
+      "text": "The codebase is a pnpm/turbo monorepo with apps (web, api-server, gateway, runner, sandbox-supervisor, ssh-terminator, channel-adapter, e2e suites) and packages (api, agent-protocol, db, ui), plus Docker Compose files for self-hosting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_78f7ed147a13da0000b6a127a2f4815f6d09a2646b96f43e3bb711526ee39989",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "665a7aa5a6a3bfac2496a5710931cb9cccd81829",
+          "line_end": 21,
+          "line_start": 17,
+          "path": "docs/development.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/development.md#L17-L21"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "665a7aa5a6a3bfac2496a5710931cb9cccd81829",
+          "line_end": 47,
+          "line_start": 34,
+          "path": "docs/development.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/development.md#L34-L47"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 107,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L102-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bb2a42c59303e8c1096e20f79e3dda586388cdf5742cc8d6f757a097b46cb70",
+        "slc_53acd811ab3f0b4841e31781228de692095d8c862e102550486f1453e4c9e38c",
+        "slc_89794f9da2b21ab6bcb875a679fdc90cd181e79c88f9ca2014b46fc46b69be0b"
+      ],
+      "text": "Repository development practice: local setup is `mise install`, `pnpm install`, `pnpm dev`, which generates .env secrets, starts PostgreSQL, applies migrations, and runs web, api, gateway and runner; `pnpm check` is the pre-push and CI gate and `pnpm test` runs test suites."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e8ef9c3b9376c86d199a7a71036e552f4cb129bbd512f9f2a7bfc1d13d2c8645",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 113,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L113-L113"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "b9dfa3f5069566ad0a5cfb63e67293663fcd57ea",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "CLA.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/CLA.md#L3-L5"
+        },
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "b9dfa3f5069566ad0a5cfb63e67293663fcd57ea",
+          "line_end": 88,
+          "line_start": 84,
+          "path": "CLA.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/CLA.md#L84-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c05898bc2c726c1550feaffa00c0e2b74ebf4ea2934d58b74635c908cba85e5b",
+        "slc_e0e4c03423e63e2a0c7224b64ffd4babb1880877a7301aa13bf14e077f8991d6",
+        "slc_fd1afbf263e448f83d7252c19c56a107cddc82b92d7b8904873b44e09dc3026a"
+      ],
+      "text": "Repository development practice: contributions require reading the Contributing Guide and Code of Conduct and are accepted under a Contributor License Agreement with ChartDB, Inc., signable via the CLA Assistant flow on a pull request."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_98b16239a052c95aeebc96a92a50232eaf733deb37c40bc0272cf6d3e17ebae9",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "4ca6307d1835cdb0fffdd6ec8322df85ba615d17",
+          "line_end": 59,
+          "line_start": 52,
+          "path": "docs/self-hosting.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/self-hosting.md#L52-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14c94fcdf07dd094a2f24837f00e105ee3d8bea7496927754484476d0e13a162"
+      ],
+      "text": "Self-hosted upgrades must not use a bare `docker compose pull && up -d`, because the agent sandbox image is set via RUNNER_AGENT_IMAGE on the runner service and would silently stay stale while other services update."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ec7c6cbbd4514ccd5c2e08bdd3fda4e54437dac2e0f8798b02121dd4e734f8f5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+          "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+          "line_end": 127,
+          "line_start": 121,
+          "path": "README.md",
+          "repository": "onecli/onecli",
+          "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md#L121-L127"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ee6dc85c7912a620ccedc9befe070e0499704858ff143822cac5f98ba4ffc8c4"
+      ],
+      "text": "Licensing is Apache-2.0 except for `ee/` directories under the OneCLI Enterprise License, which is free for development, testing and evaluation but requires a subscription for production use."
+    }
+  ],
+  "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 127,
+        "path": "README.md",
+        "size": 7390
+      },
+      {
+        "lines": 99,
+        "path": "CLA.md",
+        "size": 4401
+      },
+      {
+        "lines": 208,
+        "path": "docs/channels-slack.md",
+        "size": 11390
+      },
+      {
+        "lines": 87,
+        "path": "docs/development.md",
+        "size": 4253
+      },
+      {
+        "lines": 256,
+        "path": "docs/self-hosting.md",
+        "size": 12766
+      },
+      {
+        "lines": 101,
+        "path": "docs/vault-integration.md",
+        "size": 5721
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 51975
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5500
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 4328
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 2164
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 2353,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 4,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_5a26783896c05719af53daf0127eed98",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/onecli/onecli/3e595ef04d1af420aab35bbe014967d1024e3d86/675314da46d13fff/manifest.json",
+  "package_id": "pkg_afa7bb68d8fcde5faca17481b638ce5af388b57dd79ed7ec31fc7538d784f3ff",
+  "repo": "onecli/onecli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "9e2a6ab4216dcc59e31f2df5767908c86d9dc667fef11252d519ab1e0fc99fee",
+  "snapshot_id": "675314da46d13fff",
+  "sources": [
+    {
+      "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+      "git_sha": "b9dfa3f5069566ad0a5cfb63e67293663fcd57ea",
+      "lines": 99,
+      "path": "CLA.md",
+      "repository": "onecli/onecli",
+      "sha256": "7ccf83afb5f79085ae77e4a7fd2c96b3a8bd4eaaa2c8385f342ccba92473f4a3",
+      "source_id": "src_2e2bc7512d53526585da214cdaeda8e5",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/CLA.md"
+    },
+    {
+      "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+      "git_sha": "820d3d96d563fe83b5b41ef98a0bfd5845b9d343",
+      "lines": 127,
+      "path": "README.md",
+      "repository": "onecli/onecli",
+      "sha256": "d372b10c290753ab8d759d7d2e57e2245c4dd57e88d329896278d664250ab867",
+      "source_id": "src_28895cf60b2456cd95948a7a066abde7",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/README.md"
+    },
+    {
+      "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+      "git_sha": "9f393a4fb7f9b90975d58edd53570d75dcccbcdd",
+      "lines": 208,
+      "path": "docs/channels-slack.md",
+      "repository": "onecli/onecli",
+      "sha256": "9d8cdde1fc414f0ddc31747327abefc43b8ae3d31dcdb302d0e430640ecdbf12",
+      "source_id": "src_bdf53833e9bb5525a6662d8e5e2a4378",
+      "stored": "channels-slack.md-1a3d3c1d03a9.md",
+      "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/channels-slack.md"
+    },
+    {
+      "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+      "git_sha": "665a7aa5a6a3bfac2496a5710931cb9cccd81829",
+      "lines": 87,
+      "path": "docs/development.md",
+      "repository": "onecli/onecli",
+      "sha256": "c8e53fa8e19e077f113509b8bd374b8ca641be1b9dc4c8142012142762e5cdfb",
+      "source_id": "src_a50b9592033e5d49a45e0776f34a0570",
+      "stored": "development.md-97db29a79153.md",
+      "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/development.md"
+    },
+    {
+      "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+      "git_sha": "4ca6307d1835cdb0fffdd6ec8322df85ba615d17",
+      "lines": 256,
+      "path": "docs/self-hosting.md",
+      "repository": "onecli/onecli",
+      "sha256": "8c44ee7ea54b09a8823d1271968912567a324c87a01164264ab2cdc497be4010",
+      "source_id": "src_655f57cebedd53cc980f44d4c8749d1d",
+      "stored": "self-hosting.md-34e4471c8ecc.md",
+      "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/self-hosting.md"
+    },
+    {
+      "commit": "3e595ef04d1af420aab35bbe014967d1024e3d86",
+      "git_sha": "6fbd12399b3c1feeb198465a3d00b34255eab458",
+      "lines": 101,
+      "path": "docs/vault-integration.md",
+      "repository": "onecli/onecli",
+      "sha256": "6dedf5f63f351bff160885148321b778fd11da5b272d188e2fb8fae50fc8b2ca",
+      "source_id": "src_e6b2994122ee55a48e28a90fd6af8899",
+      "stored": "vault-integration.md-2c3600172928.md",
+      "url": "https://github.com/onecli/onecli/blob/3e595ef04d1af420aab35bbe014967d1024e3d86/docs/vault-integration.md"
+    }
+  ],
+  "summary": "OneCLI is an open-source, self-hostable platform for running one sandboxed AI agent per team member, with a Rust gateway that injects credentials, a Next.js dashboard, API control plane, runner, Slack channel adapter, and SSH access. Evidence is mostly README and docs (documentation-based), plus contributor setup and licensing terms. Evidence coverage: 118 of 147 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

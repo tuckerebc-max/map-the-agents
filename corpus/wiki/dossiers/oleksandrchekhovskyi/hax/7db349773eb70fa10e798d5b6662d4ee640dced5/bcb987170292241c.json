@@ -1,0 +1,738 @@
+{
+  "applied_operation_id": "op_16c69f872e334e028dac6d4e82b36467",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_97e1694f9ea8308f67ad197642023ca9026e25398050262352d0d71c1840b615",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 27,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L14-L27"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_cf9be8216996c4d258e271e175dbdfa762d19514a30126e3cded94dcf4248f72",
+        "slc_df48e73ad9357e0603a86a6827e0fa7f93bf2cb782a8f632ab60d94cfb501fe0"
+      ],
+      "text": "hax is described as a minimalist, terminal-native coding agent implemented as a single native C binary with a small dependency set and low memory use."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_63e789213d56068885577357f057d841d23bb86aa233dcce102425a6838d7f49",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 43,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L42-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_580402cfbceac83ef4658c1f91ede2c07555b25fc46989564422f4fd5a4e4d56"
+      ],
+      "text": "The product runs on Linux, macOS, FreeBSD, and OpenBSD; on Windows it is used under WSL, and the BSDs are build-from-source only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0f36525f32f17b453ee4879d1d93804220d1cbd4626418aa397337225ec83e72",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 107,
+          "line_start": 100,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L100-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b4811475a2d14e1b7571aa74c4276b5a7b04d84bd4b739c2b47e6466c2a8acf5"
+      ],
+      "text": "The CLI supports an interactive REPL, one-shot `-p` prompts (including stdin input), `-c` to continue the latest session, and `--resume`/`--resume=ID` session selection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_30bcf644ee94d3af4f80a09281ab902a760de0c5d924057511c412a6f0240cb9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 205,
+          "line_start": 202,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L202-L205"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "019700ad2d65e9da06d7b34204c3ca6c29b79e60",
+          "line_end": 48,
+          "line_start": 47,
+          "path": "docs/debugging.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/debugging.md#L47-L48"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 83,
+          "line_start": 82,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L82-L83"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 153,
+          "line_start": 152,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L152-L153"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 50,
+          "line_start": 49,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L49-L50"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "019700ad2d65e9da06d7b34204c3ca6c29b79e60",
+          "line_end": 52,
+          "line_start": 50,
+          "path": "docs/debugging.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/debugging.md#L50-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1722f87bf15c540318bf9b0f40cc9e243d6c0e3c9d60f3f72dd7c35b4abd472f",
+        "slc_28167ef9cc76f89c28e01a969929d5c21b8d55c14272780730f6c43d771340fa",
+        "slc_820f7147d255d9516d27b9247e9e1445b1347895120d8abef5a84a9d8737e173",
+        "slc_8fc22029fcfa9f4c922a2506504dc51a1bd223cfe13ba86b197eef3dab0fab66",
+        "slc_9bc52fdb6e763c2bd0136ddd341a7d07c3f291a7a462df272ab77604655c2fa4",
+        "slc_ebe2e0ce07f800daa8128fdc7cda0fda92fa17ec7362dc74a63d6ab3b521143e"
+      ],
+      "text": "In the REPL, slash commands such as `/provider`, `/model`, `/effort`, `/preset`, `/config`, and `/preset-save` select providers and settings; Ctrl-T opens a transcript view in $PAGER and Ctrl-O shows the conversation as displayed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_87b02669371e24fa28b69b6621de571692886c9c379d2e014c867058acb9e174",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 72,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L70-L72"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_442b6a0e8bce1858dc9b2c631e344129a8dd759c690a6fac8d7656a963b129dc"
+      ],
+      "text": "Building from source requires a C compiler, libcurl, jansson, meson, ninja, and pkg-config; fzf is additionally used for @file completion when available."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_defc6b4ab2f30fe75377dab8c4d6c2a1adfd56a0545a2f1f11d41873e00aa16f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L31-L35"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 27,
+          "line_start": 14,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L14-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb37cc9788c9d5b477d30d972ce0c8861c565b4417eaf5bef9a2528ad2663d4b",
+        "slc_cf9be8216996c4d258e271e175dbdfa762d19514a30126e3cded94dcf4248f72"
+      ],
+      "text": "The project deliberately omits MCP marketplaces, a plugin runtime, IDE panels, and per-command permission prompts, composing instead via subprocesses and documenting each omission in docs/philosophy.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c9d5a1b88cdac4f985913f789a56f9a7e6ca46b6f036521f66d9ef710fe1bc11",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 9,
+          "line_start": 8,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L8-L9"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 16,
+          "line_start": 11,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L11-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_aba931c7dfc6f07eee9ab901be644cc1c7f771481e29b4b0f025a68c255c59f8",
+        "slc_db0f9c8129c6d3a12eb296d0eb1689efdfa0e0cc7421fa0771fa2beffe6b2508"
+      ],
+      "text": "hax follows the XDG Base Directory specification: config at ~/.config/hax/config.json, remembered interactive selections and sessions under ~/.local/state/hax/, and a model-metadata cache at ~/.cache/hax/catalog.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc9b23f179cc2547507574b6a9ac45cc57bb72cbc7b4a1e7c28673849daa812f",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L26-L28"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L30-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62e9102d97dd7f8fcbbfcdcfee38184d2ae1471c1089638a394f53113d2ec3ff",
+        "slc_f01b8053413936fd8de87c33f390a83d0574b183d8e2565962db341cdcb232e9"
+      ],
+      "text": "Settings resolve in order: current-process override, resumed conversation, environment, state.json, config.json, then default; the resumed tier covers provider, model, effort, and preset."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b59f4f15688487fb745cb0a2d3d2ba62e878be4b35204e34833b791474440f9",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 247,
+          "line_start": 234,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L234-L247"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7a2024863e3ebb76065ecbb75c53c0150f52f41553daefff36551a740be297ae"
+      ],
+      "text": "Automatic compaction summarizes history near the context limit, triggered by a configurable percentage threshold (default 85), with the context limit overridable per model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5b48e394d74fd4fa22e8c34b1d56a86245e86f2f59566d205b05e13fb73bab0d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 192,
+          "line_start": 184,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L184-L192"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 150,
+          "line_start": 146,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L146-L150"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_47b42e2a8a13169d0be3eed51850e926559b54c60cd13a383a1228422a08e972",
+        "slc_9c7afb082be3ff0ce902fa9f400cf83ee70e6750e10da828a6369bf302ba3db2"
+      ],
+      "text": "Presets can act as roles with description, system-prompt additions, and a tint; only presets with a description are advertised to the model as subagent delegation targets."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0eb128f3673858b61ac29b3ec092b37a95ce3fb8ae2d00f54822e11cd41a6aef",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 317,
+          "line_start": 304,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L304-L317"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c9b4f9e258f86e86763df096f2466bc34d4609d5f8354bb1e55995ef6b7e903b"
+      ],
+      "text": "The agent manages background tasks with configurable wait timeout and a concurrency cap (default 32, up to 64), and bash commands detach after a default 2-minute timeout with a SIGTERM-to-SIGKILL grace period."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_362da9659487f20a7268af2e770bc0e5fa0d6edf7fced28afd16b535c1ef1db2",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L31-L35"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 317,
+          "line_start": 304,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L304-L317"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb37cc9788c9d5b477d30d972ce0c8861c565b4417eaf5bef9a2528ad2663d4b",
+        "slc_c9b4f9e258f86e86763df096f2466bc34d4609d5f8354bb1e55995ef6b7e903b"
+      ],
+      "text": "The bash tool runs commands through a configurable shell with a default 2-minute timeout before detaching; the maximum timeout a model may request defaults to 30 minutes, and no per-command permission prompts exist by design."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f236947bb815e2739c3fd0f79ebf9a5e98f648719e749328734746913f61a046",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 267,
+          "line_start": 264,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L264-L267"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 275,
+          "line_start": 269,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L269-L275"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_45ee8ef026ef73ba8d3c9948662eb9eece64c917fdb7000139b55643453fc1ac",
+        "slc_db0dd2d77c17bc4105c8b07c4bf1b4758ff03c9967e9aba9542a91199b233770"
+      ],
+      "text": "Model metadata (context limits, image capability, estimated spend) is fetched from models.dev and cached, refreshed in the background only when a catalog-identified provider needs it and the cache is stale; fetching can be disabled via catalog.url or catalog.refresh."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b6385776d48222ef924641d5e9da65f1842e55b08ac8557f774829c385966c9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 332,
+          "line_start": 324,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L324-L332"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 94,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L85-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_14ba78477875cfbac13edda64236ee75be1a4439560524ed5313f20196d7f158",
+        "slc_454530ca32d42eb84173584aed4549918ac0cfcd8bba5e5461e8c59352ac2c37"
+      ],
+      "text": "Provider support includes OpenAI and compatible endpoints, Anthropic and compatible endpoints, Codex via ChatGPT login, OpenRouter, OpenCode Zen/Go, llama.cpp, ollama, and custom endpoints configured through providers.<id> blocks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e89eb6ec1c02f1fa6269c0cd31c8271d35076382d550e55de55c8ba5876ede2a",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+          "line_end": 35,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md#L31-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb37cc9788c9d5b477d30d972ce0c8861c565b4417eaf5bef9a2528ad2663d4b"
+      ],
+      "text": "By design hax lacks MCP marketplaces, a plugin runtime, IDE panels, and per-command permission prompts; the philosophy doc explains each omission and the pattern covering the need."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_643e2a0ab2ba1350b992425809e4d12e3230d8b478ae6c689b84a7e507d5b08c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "019700ad2d65e9da06d7b34204c3ca6c29b79e60",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "docs/debugging.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/debugging.md#L11-L13"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+          "line_end": 260,
+          "line_start": 255,
+          "path": "docs/configuration.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md#L255-L260"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "019700ad2d65e9da06d7b34204c3ca6c29b79e60",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/debugging.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/debugging.md#L5-L5"
+        },
+        {
+          "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+          "git_sha": "019700ad2d65e9da06d7b34204c3ca6c29b79e60",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/debugging.md",
+          "repository": "oleksandrchekhovskyi/hax",
+          "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/debugging.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10d1192b15abbff3e78cff976d96329fdb4fdb30601c4ff484132b437bf2c15e",
+        "slc_1dcc1712c2fee67712dde3de4e8a6cc2ae6dddd1551a6a2754de4f7b6694b283",
+        "slc_5ba87ba8e238027b9daa0e4aca54c27df206eae29bd9896d92d3ee23625fde60",
+        "slc_855246463bd2e6c754f40686b476843d8fad20b51dd47ba256a9079f781a20bd"
+      ],
+      "text": "A wire-protocol trace can be collected via HAX_TRACE, capturing HTTP requests, statuses, and SSE events with credentials redacted; HAX_TRANSCRIPT mirrors the model-facing transcript to a file."
+    }
+  ],
+  "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 130,
+        "path": "README.md",
+        "size": 5719
+      },
+      {
+        "lines": 381,
+        "path": "docs/configuration.md",
+        "size": 19307
+      },
+      {
+        "lines": 69,
+        "path": "docs/code-style.md",
+        "size": 3679
+      },
+      {
+        "lines": 150,
+        "path": "docs/debugging.md",
+        "size": 6457
+      },
+      {
+        "lines": 113,
+        "path": "docs/philosophy.md",
+        "size": 6522
+      },
+      {
+        "lines": 412,
+        "path": "docs/providers.md",
+        "size": 18568
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/releasing.md",
+        "reason": "file-budget",
+        "size": 3230
+      },
+      {
+        "path": "docs/sessions.md",
+        "reason": "file-budget",
+        "size": 5854
+      },
+      {
+        "path": "docs/usage.md",
+        "reason": "file-budget",
+        "size": 13648
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 11831
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 12910
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2843
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 421,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 7,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_65db10bf6aa4598ca78e007d7636985e",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 1,
+    "memory-state": 3,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/oleksandrchekhovskyi/hax/7db349773eb70fa10e798d5b6662d4ee640dced5/bcb987170292241c/manifest.json",
+  "package_id": "pkg_2c0c234cea9cf598e6b0e8e24d659b61b33abf8519e89085dd83cc826bc6812e",
+  "repo": "oleksandrchekhovskyi/hax",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "d226eb3363e529d6ff21fad6326bbf89230eaa6000c7ea0a042f1ef7e5000669",
+  "snapshot_id": "bcb987170292241c",
+  "sources": [
+    {
+      "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+      "git_sha": "5bd182b4ac697257fa623cbaa12215a710b5970a",
+      "lines": 130,
+      "path": "README.md",
+      "repository": "oleksandrchekhovskyi/hax",
+      "sha256": "0afaf90f73d8ab41364af34c1af3cd5edb594d0de075225effdff2f3766fa3b5",
+      "source_id": "src_0495887c31cc5dab983967fddfa22b1e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/README.md"
+    },
+    {
+      "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+      "git_sha": "92534edc5f9ebdae298cb5397f54c9aa86688088",
+      "lines": 69,
+      "path": "docs/code-style.md",
+      "repository": "oleksandrchekhovskyi/hax",
+      "sha256": "5e76814472371372e9af391ce442b4746ae05d3b14e17b4077eecdcf57ef58e5",
+      "source_id": "src_2ead7eb3e7715ef6b9e4841501465f99",
+      "stored": "code-style.md-557c5680ff5b.md",
+      "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/code-style.md"
+    },
+    {
+      "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+      "git_sha": "f19721afea5b40ce0d8a560cebf0ae1db62dfedc",
+      "lines": 381,
+      "path": "docs/configuration.md",
+      "repository": "oleksandrchekhovskyi/hax",
+      "sha256": "546d6444d7d033e4cf6600b8b3de2e37d3d240f42f41f36e016a5d0d22999e9c",
+      "source_id": "src_afbde6178faf554e82c2127e95c35d59",
+      "stored": "configuration.md-17ed18489a95.md",
+      "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/configuration.md"
+    },
+    {
+      "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+      "git_sha": "019700ad2d65e9da06d7b34204c3ca6c29b79e60",
+      "lines": 150,
+      "path": "docs/debugging.md",
+      "repository": "oleksandrchekhovskyi/hax",
+      "sha256": "7162c89331128fdbc7e26bd48f6d8e8d1ae0f9007a1a997569fba9ca3f3e3e34",
+      "source_id": "src_c221790ae46f514eade2e02dc420ed4c",
+      "stored": "debugging.md-6019563fa28f.md",
+      "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/debugging.md"
+    },
+    {
+      "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+      "git_sha": "77993ec4ba9589d46a85764f7a9cd4e983f9651a",
+      "lines": 113,
+      "path": "docs/philosophy.md",
+      "repository": "oleksandrchekhovskyi/hax",
+      "sha256": "e49e22bda736f40f2d451a382e6961e270aa679d5339430256f25df3cdd5cd43",
+      "source_id": "src_a065e8c72c1d5b37947cc881e0bdbe4b",
+      "stored": "philosophy.md-801a56037b3c.md",
+      "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/philosophy.md"
+    },
+    {
+      "commit": "7db349773eb70fa10e798d5b6662d4ee640dced5",
+      "git_sha": "61bd5909430ca4deaaa558f4a5f3f837abe7b95b",
+      "lines": 412,
+      "path": "docs/providers.md",
+      "repository": "oleksandrchekhovskyi/hax",
+      "sha256": "1ec58baeb5ca14874c6da25eb2c8c8da11fba08cf0d83d1457097cfba02d2bfe",
+      "source_id": "src_8ab733e4e97b5e33bf14c18d784e9a7b",
+      "stored": "providers.md-1f4530da7901.md",
+      "url": "https://github.com/OleksandrChekhovskyi/hax/blob/7db349773eb70fa10e798d5b6662d4ee640dced5/docs/providers.md"
+    }
+  ],
+  "summary": "hax is a minimalist terminal-native coding agent written as a single C binary, supporting multiple LLM providers, XDG-based configuration and session state, presets, background tasks, and transcript/trace debugging. Evidence is documentation-only; no runtime code slices were supplied. Evidence coverage: 127 of 212 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

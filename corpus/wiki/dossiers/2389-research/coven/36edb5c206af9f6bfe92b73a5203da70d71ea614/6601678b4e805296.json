@@ -1,0 +1,826 @@
+{
+  "applied_operation_id": "op_fffa913838404f5bbd3cc6cedea07a52",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_5799f746f16d09a9cbae122272d28b5927634007dcb7bc2a887237151e401e9c",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L3-L3"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5bf580a39e07496b4f1c8bfe5aa7facf43f05e8a989833d138cd5ae145adb1c3",
+        "slc_d077eec8dda90d7931e6164405889c70b4ff8910e979b024786dfe978f0854f2"
+      ],
+      "text": "Coven is described as a Rust-based platform for orchestrating AI agents with tool capabilities, connecting Claude-powered agents to a central gateway."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4db38509841e9716be85ec09dbe73641ccdc9e6540acd588791ad9afdce9197b",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 58,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L54-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_83d8edd14f89c3b52905bfc600a09b36b87c4baa9b9a579aa2d190c38d533d55"
+      ],
+      "text": "The project comprises a Rust monorepo (agents, CLI, TUI, packs), a Go gateway server for routing, storage and pack registry, and shared Protobuf definitions (coven-proto)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_816c30eb36f29cb2ed2cb296810b4f0cd6a4f5a9f480536df20938708c378859",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 50,
+          "line_start": 16,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L16-L50"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fbf4e5ccdafe71421c7065907f4bd1f04d1ff2daa0505777811cf05edf7209e4"
+      ],
+      "text": "The gateway exposes an HTTP server with SSE events, a gRPC server for agent streams, and a pack service acting as a tool registry, backed by SQLite."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0a17687afa11ca103f509ccfa23f8f74c52e055d89b9416cf9aa916473dfa0f3",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 185,
+          "line_start": 178,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L178-L185"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 195,
+          "line_start": 187,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L187-L195"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 176,
+          "line_start": 173,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L173-L176"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_949a78e2585914d728735a2d80faade738e65452a64e7a9c3af14157a17fe906",
+        "slc_a54ce65e918ceed01fd5988c7c091532417b428d4377d3e6c5ddae3ac6566f5d",
+        "slc_ef62491a84de94084f6979ff897df1a65dd5273276e59d7a70e399103f7770ee"
+      ],
+      "text": "The gRPC protocol defines a bidirectional AgentStream service; AgentMessage payloads are RegisterAgent, MessageResponse, and Heartbeat, while ServerMessage payloads are Welcome, SendMessage, and Shutdown."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b3ee8a2aac4a307b617549362cfe3afaa4c6186f5bdb58b187c53f2ba865652b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "5963f25426601f6b04b2bea76832fd3795be9aae",
+          "line_end": 231,
+          "line_start": 226,
+          "path": "docs/cli.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L226-L231"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "5963f25426601f6b04b2bea76832fd3795be9aae",
+          "line_end": 32,
+          "line_start": 25,
+          "path": "docs/cli.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L25-L32"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "5963f25426601f6b04b2bea76832fd3795be9aae",
+          "line_end": 55,
+          "line_start": 51,
+          "path": "docs/cli.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L51-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_30f9d57231db210178be345d854e8150f604007dded07998c6a9c2701c63b985",
+        "slc_76ffcde3c37e204fada47839ad1eb58a10832ea4bc76f436e480fefb64fe254a",
+        "slc_7c8ca9bf1a65cc6874b7b8a3ea0d0fcc36eae888985656e48427ef8d2b7ab122"
+      ],
+      "text": "The coven CLI offers chat, agent, swarm, pack, and config commands; chat supports --agent, --thread, and --gateway options plus slash commands like /quit, /clear, and /switch."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d90c00299d4d226a53e117ec80780e58c98d17014906f89330a0d13effbbf2f5",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 167,
+          "line_start": 163,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L163-L167"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 147,
+          "line_start": 147,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L147-L147"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 159,
+          "line_start": 151,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L151-L159"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_06b0b3cf3139840feab56a535ff6eb875109eec66919bbd78db3a5b19cdc39cd",
+        "slc_a5f90f6d6741b52ce9d8d58cbb24ea8dc6a2d9e7b8b8b3a04496958d492c205a",
+        "slc_ca34d238ff9e7f42014a46b8ae5dd441de9c30a45b59f616f308e5161eae40f1"
+      ],
+      "text": "Agents use pluggable LLM backends behind an async Backend trait returning a stream of events; documented backends include MuxBackend (direct Anthropic API), DirectCliBackend (claude CLI subprocess), and AcpBackend."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_afe2f329b3968455daab45c63b955a463b7b39f933c1e9106ff9480356c1f9ea",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 208,
+          "line_start": 201,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L201-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_25ff3bdbbd1bee3584b300306e45573938466e1245f35392592ee37cdd48ff97"
+      ],
+      "text": "Agent responses stream as ordered events: Thinking, Text, ToolUse, ToolResult, Done, and Error."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1472a2d327a4a10c7db33eb840a1d53c4a3766deeb6f0b800f00298177e91c4c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 249,
+          "line_start": 249,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L249-L249"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 114,
+          "line_start": 109,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L109-L114"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_266edc5384f8847122a34594491c00e924ea726d15328fcbb003a1969f4173a4",
+        "slc_56287bed3501b518abfe4a98c08dabfd4458736de82c3d7480bd927217468188"
+      ],
+      "text": "coven-swarm provides a supervisor command for multi-workspace orchestration, documented as spawning agents per workspace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_378556347b3f70811a59a010e8818e530e29ea2f988331455d56142c08b1ec51",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 105,
+          "line_start": 103,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L103-L105"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 95,
+          "line_start": 93,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L93-L95"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 101,
+          "line_start": 100,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L100-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1b9a89e6bd79ff8b05c8d30929b55abd706b75504f175b36aed7255dec1d1b72",
+        "slc_7d79c091b8bb6e18e4eee69949454cfe3637be29a21d644bd154c5bdf9e7a1c4",
+        "slc_d253cd14b21d08be7d29daea4c7b61fa649dc242d33fc0dbf9660c0ff94816fe"
+      ],
+      "text": "Agents register with the gateway over gRPC, receive a Welcome containing session_id and configuration, then send heartbeats every 30 seconds while the gateway tracks last_seen."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_34e17f71863776f344fe195c92924d20db7c4074ff7de6cda326a394b4260df0",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 216,
+          "line_start": 214,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L214-L216"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 221,
+          "line_start": 220,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L220-L221"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4ae6bb829719ab50ddac006ea52631f97863641af1f5b7071700cade744069d1",
+        "slc_c4a5de8cd6dd250dac8429843e6054b8e827c7cb3a2be7d641de1293693196cb"
+      ],
+      "text": "The gateway stores threads (frontend-to-agent session mappings), messages (conversation history), and bindings (channel-to-agent routing) in SQLite; agents keep a local threads.db cache and session state."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_061d969f711d921258787d17bb55eb538c4b88be8313511b5763ffa19342240c",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 235,
+          "line_start": 233,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L233-L235"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b9a65261a68a69d959f7c65b3c02965137cdef64e4004caaa2eb6a47ad5ce2c"
+      ],
+      "text": "Authorization is documented so agents can access only their own sessions, pack tools carry explicit permission scopes, and admin endpoints require separate authentication."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72e8b026f5814980f94e0f0da52ee12409a7a6d5b4b572dc6015125b7eaa8bf3",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "0ce1b666af22abadeab7161b4039e9677c89b93a",
+          "line_end": 186,
+          "line_start": 180,
+          "path": "docs/agent.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L180-L186"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+          "line_end": 118,
+          "line_start": 114,
+          "path": "docs/architecture.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md#L114-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_73c2addefb5c1bd80ed3b39e9e8eb5d09819015d486ffff48de42e8731706995",
+        "slc_a50451cd0f27acb832395ba98075aefca2cd6697950a07497645391f5ba68024"
+      ],
+      "text": "Crate dependencies are layered: coven-proto, coven-ssh, and coven-swarm-core have no internal deps; coven-agent depends on coven-core, coven-pack, coven-grpc, and coven-proto."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9a8f4695f1d474d673911420d4e99900af4bfd0feea9ba847c2f246c96dd81fe",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "0ce1b666af22abadeab7161b4039e9677c89b93a",
+          "line_end": 155,
+          "line_start": 154,
+          "path": "docs/agent.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L154-L155"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "0ce1b666af22abadeab7161b4039e9677c89b93a",
+          "line_end": 140,
+          "line_start": 139,
+          "path": "docs/agent.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L139-L140"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 67,
+          "line_start": 64,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L64-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a6d2148261fc90141c9bc9bc87697c587ed50aeb4f1781692b130a0d6f5deac",
+        "slc_569d36562f1aa4f59483e0f2002ef97f7b89f55579d2f2f25b59cc44f8b65d55",
+        "slc_8f878111ca06e92a837c10f6754f28b9b0b591d793a5ab5eed2591b5b6c95cb8"
+      ],
+      "text": "Prerequisites include Rust 1.75+, Go 1.21+ for the gateway, protoc, and an Anthropic API key; the mux backend requires ANTHROPIC_API_KEY while the cli backend requires an authenticated claude CLI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73e03157c9b13834c9ab42320ebf792775bb9de1f0043a8fc3e3943996ca0424",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "0ce1b666af22abadeab7161b4039e9677c89b93a",
+          "line_end": 74,
+          "line_start": 67,
+          "path": "docs/agent.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L67-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11fb90d4486994f3e6c626acc2337ab9b2a4fd887910a5d37b6d91fbe11d7c04"
+      ],
+      "text": "coven-agent run accepts --name and --working-dir (required), plus --gateway (default localhost:50051), --backend (mux/cli), --display (quiet/normal/verbose), and --config options."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6b8dbc159d2e78cc113998f49e5b76e4aee3c273d656907047c2715228beb19",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 182,
+          "line_start": 176,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L176-L182"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 190,
+          "line_start": 190,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L190-L190"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7f1eeb2077f7cea7981ffc8b5565db079da94ba29683cf68ac45617d0daf0b90",
+        "slc_eae90da3fd770efb7caaa502f9f7ddb9cd0638fae7219f9c4dde63fbebd9c4ce"
+      ],
+      "text": "Repository development practice: development uses make targets (check+test+clippy, build, release, test, clippy, fmt), and CLAUDE.md is referenced for detailed development guidelines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4d13de73130a2b5d860a86d65a56dd59bac6c71abe21007d58f59b62898feef",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 81,
+          "line_start": 78,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L78-L81"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "5963f25426601f6b04b2bea76832fd3795be9aae",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "docs/cli.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md#L12-L12"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 88,
+          "line_start": 87,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L87-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0684f0dc3e3cdd498e575c626945918c9ee796afcc16b23fdc6675a88bcd167f",
+        "slc_69ce5d4bfdef973d9396074d0a4ebd08c76b7ffd02a8f0937b752eceffa865b2",
+        "slc_6b6ba482d1a23b1f6fa4e711a4bea78860c57d3493fa4e70a4ab97dc5519d738"
+      ],
+      "text": "Repository development practice: components are built via make targets (make coven, make coven-agent, make coven-swarm) or installed with cargo install from crate paths; the gateway is built in a separate coven-gateway repository."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_868d98e2599b6b5edc43009448ec6e19a25579c99ecb6750a617480e95b5bff3",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 162,
+          "line_start": 158,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L158-L162"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+          "line_end": 154,
+          "line_start": 147,
+          "path": "README.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md#L147-L154"
+        },
+        {
+          "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+          "git_sha": "0ce1b666af22abadeab7161b4039e9677c89b93a",
+          "line_end": 223,
+          "line_start": 214,
+          "path": "docs/agent.md",
+          "repository": "2389-research/coven",
+          "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md#L214-L223"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cd7fd7a1335ae3409a5269c1886fa2fc69972a5814cbd30f7691b17269f2c4f",
+        "slc_6ae361abbf3c2c6291864bce4d9d970fbc34691e3d07fb7600ab873d69fc6963",
+        "slc_90f2f17ec7a3ded8d93713515b18b1cd87a90e3a94e899802a4c5abf607b7fb9"
+      ],
+      "text": "Configuration lives under ~/.config/coven/ (config.toml, per-agent TOML files, swarm config) with data in ~/.local/share/coven/; the AgentMetadata struct includes hostname, OS, git info, workspaces, and backend fields."
+    }
+  ],
+  "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 194,
+        "path": "README.md",
+        "size": 8807
+      },
+      {
+        "lines": 267,
+        "path": "docs/architecture.md",
+        "size": 10244
+      },
+      {
+        "lines": 204,
+        "path": "docs/plans/coven-slack-rs/design.md",
+        "size": 6957
+      },
+      {
+        "lines": 280,
+        "path": "docs/agent.md",
+        "size": 6573
+      },
+      {
+        "lines": 327,
+        "path": "docs/cli.md",
+        "size": 5409
+      },
+      {
+        "lines": 290,
+        "path": "docs/client.md",
+        "size": 5311
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/packs.md",
+        "reason": "file-budget",
+        "size": 6043
+      },
+      {
+        "path": "docs/swarm.md",
+        "reason": "file-budget",
+        "size": 7672
+      },
+      {
+        "path": "docs/tui.md",
+        "reason": "file-budget",
+        "size": 6101
+      },
+      {
+        "path": "docs/plans/2025-01-29-tui-implementation.md",
+        "reason": "file-budget",
+        "size": 49388
+      },
+      {
+        "path": "docs/plans/2025-01-29-tui-redesign.md",
+        "reason": "file-budget",
+        "size": 10661
+      },
+      {
+        "path": "docs/plans/2026-01-26-coven-link-device-linking.md",
+        "reason": "file-budget",
+        "size": 38073
+      },
+      {
+        "path": "docs/plans/2026-01-27-coven-telegram-rs-design.md",
+        "reason": "file-budget",
+        "size": 6690
+      },
+      {
+        "path": "docs/plans/2026-02-05-human-agent-design.md",
+        "reason": "file-budget",
+        "size": 9764
+      },
+      {
+        "path": "docs/plans/2026-02-15-coven-log-design.md",
+        "reason": "file-budget",
+        "size": 2005
+      },
+      {
+        "path": "docs/plans/2026-02-15-coven-log-plan.md",
+        "reason": "file-budget",
+        "size": 10515
+      },
+      {
+        "path": "docs/plans/coven-slack-rs/cookoff/impl-1/plan.md",
+        "reason": "file-budget",
+        "size": 5314
+      },
+      {
+        "path": "docs/plans/coven-slack-rs/cookoff/impl-2/plan.md",
+        "reason": "file-budget",
+        "size": 4510
+      },
+      {
+        "path": "docs/plans/coven-slack-rs/cookoff/impl-3/plan.md",
+        "reason": "file-budget",
+        "size": 4025
+      },
+      {
+        "path": "docs/plans/coven-telegram-rs/cookoff/impl-1/plan.md",
+        "reason": "file-budget",
+        "size": 2884
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 3062
+      }
+    ],
+    "omitted_count": 15,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 301,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 21,
+      "complete": false,
+      "omitted": 15,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_fcbb6c61f49a53d09fc60d2a165a9d28",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 4,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/2389-research/coven/36edb5c206af9f6bfe92b73a5203da70d71ea614/6601678b4e805296/manifest.json",
+  "package_id": "pkg_730fa426535fe1834360f4c34a50687fec3b8fae0d4281d09a77750cc2a73688",
+  "repo": "2389-research/coven",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "65002ccfb88116e001a8ccc933dde88eaf78b09738491d303d01f52d5e543c98",
+  "snapshot_id": "6601678b4e805296",
+  "sources": [
+    {
+      "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+      "git_sha": "6965ac90718142b8ae0ead7007bc55b67ab8c754",
+      "lines": 194,
+      "path": "README.md",
+      "repository": "2389-research/coven",
+      "sha256": "40b107105b381124c82a6518f56daacdae55f9d9cc25142772e43527a11b21f6",
+      "source_id": "src_b1123ce7cf885c28b57a4a28eb90d930",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/README.md"
+    },
+    {
+      "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+      "git_sha": "0ce1b666af22abadeab7161b4039e9677c89b93a",
+      "lines": 280,
+      "path": "docs/agent.md",
+      "repository": "2389-research/coven",
+      "sha256": "729f6c4448ce79e15f48064588d830c568726e1ac29193e613d5dd29b0e2b846",
+      "source_id": "src_f2c141fb5ce75fecbd0a181255e026cb",
+      "stored": "agent.md-878adb320c7b.md",
+      "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/agent.md"
+    },
+    {
+      "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+      "git_sha": "407e8c302751f2ef0c5998bab4240bc660f4c72d",
+      "lines": 267,
+      "path": "docs/architecture.md",
+      "repository": "2389-research/coven",
+      "sha256": "06503b7f3b2c5e3abe5b888b8dc0644c9d22725497aef66f8c210d59164bf4c5",
+      "source_id": "src_de0cdd2be5075a92859ff71c24a054d7",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/architecture.md"
+    },
+    {
+      "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+      "git_sha": "5963f25426601f6b04b2bea76832fd3795be9aae",
+      "lines": 327,
+      "path": "docs/cli.md",
+      "repository": "2389-research/coven",
+      "sha256": "de4ba8b7e0d83adbb5389aa619e295ae58b5266f0d49453cb2273e1527d2c3cb",
+      "source_id": "src_9ac7b0955db55229a2c2ae18331710ed",
+      "stored": "cli.md-27c8c22b4560.md",
+      "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/cli.md"
+    },
+    {
+      "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+      "git_sha": "ec8e3411c114fbbdd905ec50f57d0076c015ce2b",
+      "lines": 290,
+      "path": "docs/client.md",
+      "repository": "2389-research/coven",
+      "sha256": "82609500a47c694b5a37d7679c08b8f458ae3a7b355658a236723e7d8a027fee",
+      "source_id": "src_84c86030160950669748f0cc75fc2396",
+      "stored": "client.md-5323dcc2b5e9.md",
+      "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/client.md"
+    },
+    {
+      "commit": "36edb5c206af9f6bfe92b73a5203da70d71ea614",
+      "git_sha": "46fde810f5c0fb4d4b5e3ded961b227c8a661749",
+      "lines": 204,
+      "path": "docs/plans/coven-slack-rs/design.md",
+      "repository": "2389-research/coven",
+      "sha256": "786604832688de0706246de509a86568c9afa40e1b2c81aaa24fb24e7660df7c",
+      "source_id": "src_cfa9b19414fc5d869b4b33cc99e86d4c",
+      "stored": "design.md-fd047f19f5c7.md",
+      "url": "https://github.com/2389-research/coven/blob/36edb5c206af9f6bfe92b73a5203da70d71ea614/docs/plans/coven-slack-rs/design.md"
+    }
+  ],
+  "summary": "Coven is a documented Rust agent-orchestration platform connecting Claude-powered agents to a Go gateway over bidirectional gRPC, with CLI/TUI/HTTP/Matrix frontends, pluggable LLM backends, and modular tool packs. Corrections: the swarm's per-subdirectory spawning mechanism, cargo-install build instructions, and registration-time metadata reporting were removed or re-scoped to what the cited slices actually state. Evidence coverage: 198 of 293 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,626 @@
+{
+  "applied_operation_id": "op_ca6c887161cf4a738d02aa4998020e48",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c25410aa4145661b46467d1e9135cf0aec4e4d2d82efaca0f242da2c8c57173",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_560c23b285b8ed866d51782f60cdbe0a865105112589df123b7bd264b5445386"
+      ],
+      "text": "Herm is described as a model-agnostic, general-purpose AI agent built for safe, flexible execution, natively supporting multiple isolation methods including containers, in-process Unix-like sandboxes, and host sandboxes such as sandbox_exec on macOS or bubblewrap on Linux."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a75511beb25b34f32b212d997afee17d4c6dc290d70d1abe5580445c5012d57e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L9-L9"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L17-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb234f3ee00e7a835dafe177fd24b4d43b4adbf1ae4da00d043746c293a5464d",
+        "slc_ce5b98b7ded5cb350765bb6551dbbac665473f4c57e56880f9e30ff9bf2740ca"
+      ],
+      "text": "By default the CLI runs the agent inside Docker containers that can only access files from the current working directory, with no permission prompts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_22e53c0df0dbc699689299f26bb9bfa8ee848755b0fbb7f7092597f9a362ffb7",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21e1da80c2c3732f182dd54b76b7daf22a163691d36db4582dfddee4dcb67ca1"
+      ],
+      "text": "Herm extends container environments by writing Dockerfiles dynamically, with environments scoped per project (the current working directory)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_46f2b966e1746f8d27133217200ad2398e2a57f4088e6650b3caf89747da31fc",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_75fee0cd1bd5046dc511aec136d326c2b9ee244c4be0735dd0a73ab1df6ec69f"
+      ],
+      "text": "The CLI supports multiple providers (Anthropic, OpenAI, Gemini, Grok, OpenRouter, Ollama, Azure OpenAI, Vertex AI, Bedrock) and models can be mixed, e.g. a different model for the main agent, exploration, or vision."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fb5ad3688435dde152798d2ce208987413799752bd45cc5d99b5f00e0f7128d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "930b0b5796fc87283459652a61cd966d8a202a37",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "CLI_QUICK_START.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_QUICK_START.md#L12-L14"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "930b0b5796fc87283459652a61cd966d8a202a37",
+          "line_end": 52,
+          "line_start": 45,
+          "path": "CLI_QUICK_START.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_QUICK_START.md#L45-L52"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "bcec0136892b0c3c35149315684c485810c30002",
+          "line_end": 382,
+          "line_start": 382,
+          "path": "CLI_DOCS_INDEX.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_DOCS_INDEX.md#L382-L382"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "bcec0136892b0c3c35149315684c485810c30002",
+          "line_end": 98,
+          "line_start": 81,
+          "path": "CLI_DOCS_INDEX.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_DOCS_INDEX.md#L81-L98"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03d7c653327bcc0f55778e05bfc0b7574a66fd6047bbc0b966605fab3936e982",
+        "slc_423cbf9a08ddd73a60d604931c3ed312c68bf7a93da478c60e511c56a2b8b990",
+        "slc_4784c242f69814d83b8dee7fbf8c7ca34d5a1fb8588c276d47090c281c26d9a3",
+        "slc_7182f4844b8495df5b93947f6efc656b118c7e358629d4913823c8f7139c4fe2"
+      ],
+      "text": "Documented CLI flags include --version, --debug, --prompt for headless mode, --cpsl to run with a CPSL local sandbox library, and --naked to run without Docker or CPSL."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9b26289654df7b531464da0042f0bdc5515e4be9583255bc60dea59a9746a5f",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "930b0b5796fc87283459652a61cd966d8a202a37",
+          "line_end": 52,
+          "line_start": 45,
+          "path": "CLI_QUICK_START.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_QUICK_START.md#L45-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_423cbf9a08ddd73a60d604931c3ed312c68bf7a93da478c60e511c56a2b8b990"
+      ],
+      "text": "In --naked host mode, commands run through a workspace-scoped sandbox requiring sandbox-exec (macOS) or bwrap (Linux); new command segments and outside-workspace paths prompt for approval, and approved permissions persist in .herm/permissions.json with user-editable command_regexes and path_regexes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51aa9be651617cb21e2f3882bff59532613a07a06d17d3e04efc7f2631d31630",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "ddd98c0916a2e01cf20f1019d7ea4fd7e701d1dc",
+          "line_end": 383,
+          "line_start": 381,
+          "path": "ARCHITECTURE.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/ARCHITECTURE.md#L381-L383"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "ddd98c0916a2e01cf20f1019d7ea4fd7e701d1dc",
+          "line_end": 124,
+          "line_start": 98,
+          "path": "ARCHITECTURE.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/ARCHITECTURE.md#L98-L124"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "ddd98c0916a2e01cf20f1019d7ea4fd7e701d1dc",
+          "line_end": 281,
+          "line_start": 276,
+          "path": "ARCHITECTURE.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/ARCHITECTURE.md#L276-L281"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_15219a8e88d13914dee09116084aa68459d2532a25ea3a118c9c6fc381962b5c",
+        "slc_8b187473a8ef6cb755695df44477d600c94c1f35db115a72f2cb08c26753c540",
+        "slc_e2745557b07f5f5ef69b690cc106dc06cc20004c57607732263190c7d53fb54a"
+      ],
+      "text": "The CLI is a terminal TUI with an event loop selecting on stdin, agent events, and async results; agent events include Thinking, ToolCall, Approval, and Done, and sub-agent events continue to be drained after the main agent stops."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_460bc4a7c85cc5208096c198c47fa9c8b388d8da580cc30c8842d7c8b7ea5b72",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "ddd98c0916a2e01cf20f1019d7ea4fd7e701d1dc",
+          "line_end": 314,
+          "line_start": 311,
+          "path": "ARCHITECTURE.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/ARCHITECTURE.md#L311-L314"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "ddd98c0916a2e01cf20f1019d7ea4fd7e701d1dc",
+          "line_end": 232,
+          "line_start": 229,
+          "path": "ARCHITECTURE.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/ARCHITECTURE.md#L229-L232"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "ddd98c0916a2e01cf20f1019d7ea4fd7e701d1dc",
+          "line_end": 225,
+          "line_start": 219,
+          "path": "ARCHITECTURE.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/ARCHITECTURE.md#L219-L225"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24787b37347f3b9a4561b9a699d9f60040ddceb036b75f4a1e5e791e65dd793a",
+        "slc_2f1f171dcdf9769fd7ce78af18f1f704444a9e8c25d2fedf4c5607cd3e1d18fd",
+        "slc_ee9cb961d9ffd747d30c3aa52ebbd3d9b503194ad4c671a28f085b17d46bf8a2"
+      ],
+      "text": "Configuration merges a global config (~/.herm/config.json, holding API keys, model, exploration, tool config, UI preferences) with a project-level .herm/config.json that can override model and tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_980fd1e6782178c00af303b83b33d0c86f9200650be8081bf8168062765eecd0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "930b0b5796fc87283459652a61cd966d8a202a37",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "CLI_QUICK_START.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_QUICK_START.md#L12-L14"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "930b0b5796fc87283459652a61cd966d8a202a37",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "CLI_QUICK_START.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_QUICK_START.md#L5-L10"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 88,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L67-L88"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "930b0b5796fc87283459652a61cd966d8a202a37",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "CLI_QUICK_START.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_QUICK_START.md#L16-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03d7c653327bcc0f55778e05bfc0b7574a66fd6047bbc0b966605fab3936e982",
+        "slc_19276a1f6c962fbd37896918bfacc5a4075209fcb49c40471379bbd443f6dcf5",
+        "slc_736b752b6023fcb076324ce293a3cb854d78bef9fa2ae95463f0ef2b0bff052a",
+        "slc_ef4c465ecdb8c66c79111fd449844085842b4794f78bb3c5f74a737a8d0643c6"
+      ],
+      "text": "Building from source requires Go 1.24+ and, for the default container backend, Docker; the repo uses git submodules (langdag for LLM client/orchestration and cpsl for the native sandbox backend) that must be initialized before building."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8f807df959a3eb7fd4db477965219320e493f8917fc87958dafd653ae9f6ac59",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L55-L55"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 53,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L53-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_46bbeb937bab796dded7809b0834d5d783c2ee28620539039d80ef4738bd0d34",
+        "slc_cb2eed1b86c9740bbb91ec685cfa31e9fc548a02a301fd3fed3f9d74fbae1e52"
+      ],
+      "text": "The repository also contains a SwiftUI iOS/macOS app that uses an in-process Unix-like sandbox and a Luau-scriptable runtime for on-device tasks; it is not usable as a coding agent in that context and is not yet on the App Store."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fc16f955102927f6a6e2cac42dc5e1cb985819da37a53d146ef028066536bcef",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 63,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L61-L63"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 59,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L59-L59"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4680caa75410cfa3e635bbda8c7d54fe748881f3d746bbd0bfe93167fc01c89e",
+        "slc_f861e0f621ce2c7617404b8b9bac83861b1171a024560dde46ed5b629c6fd0de"
+      ],
+      "text": "Benchmarking Herm against coding agents such as Claude Code, Codex, and Grok Build is listed as the top roadmap item, i.e. planned rather than an existing evaluation harness."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3745db136312b68cb39333b6f9539ad8882c82a20a2d1ad0bf7b757e9a07c9ea",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 92,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L92-L92"
+        },
+        {
+          "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+          "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "aduermael/herm",
+          "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ea5435565f079fbbcddb53af7e0830ab3ddea59bac3e6dc73cf6be8853d4a3b",
+        "slc_f1b67675db455d77ed2f782989e08e68850b2a14a96d1a02962b542d1454fc74"
+      ],
+      "text": "Repository development practice: the README points contributors to CONTRIBUTING.md for setup, tests, CI checks, coding standards, and pull request expectations, and CI badges cover test, prompt-length, and ci-checks GitHub Actions workflows."
+    }
+  ],
+  "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 102,
+        "path": "README.md",
+        "size": 4639
+      },
+      {
+        "lines": 411,
+        "path": "ARCHITECTURE.md",
+        "size": 17173
+      },
+      {
+        "lines": 411,
+        "path": "CLI_DOCS_INDEX.md",
+        "size": 12668
+      },
+      {
+        "lines": 474,
+        "path": "CLI_QUICK_START.md",
+        "size": 9121
+      },
+      {
+        "lines": 250,
+        "path": "COMMANDS_REFERENCE.md",
+        "size": 6914
+      },
+      {
+        "lines": 509,
+        "path": "CPSL_BUILD.md",
+        "size": 19321
+      }
+    ],
+    "omitted": [
+      {
+        "path": "ENTRY_POINTS.md",
+        "reason": "file-budget",
+        "size": 9510
+      },
+      {
+        "path": "docs/apple-agent-config.md",
+        "reason": "file-budget",
+        "size": 4513
+      },
+      {
+        "path": "docs/apple-agent-storage.md",
+        "reason": "file-budget",
+        "size": 5510
+      },
+      {
+        "path": "docs/BAZEL_EXPERIMENT.md",
+        "reason": "file-budget",
+        "size": 2554
+      },
+      {
+        "path": "docs/CPSL_BUILD_BASELINE.md",
+        "reason": "file-budget",
+        "size": 909
+      },
+      {
+        "path": "docs/deployment-aware-models.md",
+        "reason": "file-budget",
+        "size": 8109
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 6509
+      }
+    ],
+    "omitted_count": 7,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 487,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 13,
+      "complete": false,
+      "omitted": 7,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_909629cd2c615804857febb5423844fa",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/aduermael/herm/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/de79735aea23feee/manifest.json",
+  "package_id": "pkg_4e3be96554bd82db868afeaa86ecacf3b702af2ee7db9cd685a31651e33df363",
+  "repo": "aduermael/herm",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "dfadd96880493f959a07f6c38f671b01f0b46ddffc2373f39403f74b9eb6a44b",
+  "snapshot_id": "de79735aea23feee",
+  "sources": [
+    {
+      "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+      "git_sha": "ddd98c0916a2e01cf20f1019d7ea4fd7e701d1dc",
+      "lines": 411,
+      "path": "ARCHITECTURE.md",
+      "repository": "aduermael/herm",
+      "sha256": "4cf1607c33ab8f280f97c7eecf2f89592e54de92b3d70cf49475623a133745a5",
+      "source_id": "src_d65b8c7a2698566bb97fdfe51972a23a",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/ARCHITECTURE.md"
+    },
+    {
+      "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+      "git_sha": "bcec0136892b0c3c35149315684c485810c30002",
+      "lines": 411,
+      "path": "CLI_DOCS_INDEX.md",
+      "repository": "aduermael/herm",
+      "sha256": "84d3bdd833bfe1e66f05a6f3fbbf8139f42c87e542948e5543c6b3b4fa2c213f",
+      "source_id": "src_915cb2c156d15d1fbcc5da5c564613a9",
+      "stored": "cli_docs_index.md-d696495bd2b2.md",
+      "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_DOCS_INDEX.md"
+    },
+    {
+      "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+      "git_sha": "930b0b5796fc87283459652a61cd966d8a202a37",
+      "lines": 474,
+      "path": "CLI_QUICK_START.md",
+      "repository": "aduermael/herm",
+      "sha256": "a17e8348b5ed0963aa6a288195db946e7e570541ef6e0a4f9ac54cacf304e08b",
+      "source_id": "src_6e2703f6896d543b8899a9e5944e28f0",
+      "stored": "cli_quick_start.md-d44e210194ce.md",
+      "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CLI_QUICK_START.md"
+    },
+    {
+      "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+      "git_sha": "5467a83c1f1c05d178c150eb0ccb6804c0dbd392",
+      "lines": 250,
+      "path": "COMMANDS_REFERENCE.md",
+      "repository": "aduermael/herm",
+      "sha256": "ac347122b81e6da01662e9771ed8f6d342facc89f9cec7e0278327d8139a5bb0",
+      "source_id": "src_7136b3763a865ff6aa6584b77a884830",
+      "stored": "commands_reference.md-ab735d91a0ea.md",
+      "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/COMMANDS_REFERENCE.md"
+    },
+    {
+      "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+      "git_sha": "7542b8d162e360b6ed5cef87575bf7e71a01726e",
+      "lines": 509,
+      "path": "CPSL_BUILD.md",
+      "repository": "aduermael/herm",
+      "sha256": "04da495553d6861a1acbf25321872b6d306faa5e1f5af32bd2daed1c9ef8ddb7",
+      "source_id": "src_8cc71e53bf2052688ed4551cfd4c375c",
+      "stored": "cpsl_build.md-bc3967c465d4.md",
+      "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/CPSL_BUILD.md"
+    },
+    {
+      "commit": "4bcb16ba05da6bdfc9b963c8c1fa14a51e743819",
+      "git_sha": "b47664528c65909747fb171c4814c620308e69bf",
+      "lines": 102,
+      "path": "README.md",
+      "repository": "aduermael/herm",
+      "sha256": "c517aa6155601fe34d232479d332a9bd3343c35ef58f5abdc75f282ffcb10813",
+      "source_id": "src_754ec9c4306750ea870916b123fe40af",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/aduermael/herm/blob/4bcb16ba05da6bdfc9b963c8c1fa14a51e743819/README.md"
+    }
+  ],
+  "summary": "Herm is a model-agnostic, general-purpose AI agent CLI (Go) that runs by default inside Docker containers with self-building environments, plus native sandbox modes and an iOS/macOS app. Evidence is mostly README and architecture documentation; no source code slices are included. Evidence coverage: 167 of 385 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

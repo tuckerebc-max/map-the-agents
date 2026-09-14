@@ -1,0 +1,33 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_072e51fbae25e526773295d0a2ff9b7074f1170dbbc16e4b5e953a7fe92f7a4b
+- clm_204e17db33abf1a41bc6f41792fa78d972d4a19ab3754738d97efe0ae8f3a037
+- clm_28e8e225fdd459e68eb3490e69de9e28102b9bcb45ea232186142099fec1bc18
+- clm_32f10a0f778c4da145c4ba86b8cab51e3ca03ec2f760442feda6804396366ab5
+- clm_44353a70114b0bb994101b14d91c3b34c5f316e383e786a86cde357ee6d7fb70
+- clm_5f15ce7e7b9ef3f951eeecaa96d46cdd6337ac19bba5df7aa3044993f49a4b65
+- clm_621c23f0fed67734c41c074db6bcb4c673b05de82d83594ffb333eeb39c5ec51
+- clm_85d2e6c5e459a9c4debfe69bc38d8c3634831d5484052752daa242f1f613ee2b
+- clm_979f780a01d6ddc74c5dbb28b6bef53bc0897f685bdd1211cd6bc80c1e430529
+- clm_cdae27720466d25922ac09f521107c3a966a1a2363c3147211d1a7549e7548fa
+- clm_e290a127ca32f945e7675e72cb8b4ecf24629815ed547f5e623775d81e1398fa
+maturity: draft
+page_id: pg_2e9fb1ad210a53bda024b34f1d79d572
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: urigo/graphql-cli
+updated_at: '2026-09-14T04:29:12Z'
+---
+
+# urigo/graphql-cli
+
+<!-- rcw:begin owner=entity:ent_aa80207738175394ad98d307500fbf85 block=evidence -->
+- urigo/graphql-cli is mentioned in this evidence. [@claim:clm_072e51fbae25e526773295d0a2ff9b7074f1170dbbc16e4b5e953a7fe92f7a4b] [@claim:clm_204e17db33abf1a41bc6f41792fa78d972d4a19ab3754738d97efe0ae8f3a037] [@claim:clm_28e8e225fdd459e68eb3490e69de9e28102b9bcb45ea232186142099fec1bc18] [@claim:clm_32f10a0f778c4da145c4ba86b8cab51e3ca03ec2f760442feda6804396366ab5] [@claim:clm_44353a70114b0bb994101b14d91c3b34c5f316e383e786a86cde357ee6d7fb70] [@claim:clm_5f15ce7e7b9ef3f951eeecaa96d46cdd6337ac19bba5df7aa3044993f49a4b65] [@claim:clm_621c23f0fed67734c41c074db6bcb4c673b05de82d83594ffb333eeb39c5ec51] [@claim:clm_85d2e6c5e459a9c4debfe69bc38d8c3634831d5484052752daa242f1f613ee2b] [@claim:clm_979f780a01d6ddc74c5dbb28b6bef53bc0897f685bdd1211cd6bc80c1e430529] [@claim:clm_cdae27720466d25922ac09f521107c3a966a1a2363c3147211d1a7549e7548fa] [@claim:clm_e290a127ca32f945e7675e72cb8b4ecf24629815ed547f5e623775d81e1398fa]
+<!-- rcw:end owner=entity:ent_aa80207738175394ad98d307500fbf85 block=evidence -->
+
+## Researcher notes
+

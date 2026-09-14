@@ -1,0 +1,948 @@
+{
+  "applied_operation_id": "op_00b10fb97ac948d59798a97bfcbd2adc",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_917cb9115361931b246d2da67b667ce4fc4d4d2295e85a44920a0ce2a7664b3b",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "e241ede47c338b69eb13cbc5423047e1edf1d50f",
+          "line_end": 30,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/README.md#L27-L30"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2dc0715b86250b0684131ee946dcd3ba60690200d86a840fc897fdc7ede7b4f"
+      ],
+      "text": "SWE-agent enables a user-chosen language model (e.g. GPT-4o or Claude Sonnet 4) to autonomously use tools to fix issues in real GitHub repositories, find cybersecurity vulnerabilities, or perform custom tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6b6235502d377abfb7244e922251b87dd7379f7f136f3e694c2665c997add103",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "6e7ae08359239ffe2803f076d8eaa0220d46dea4",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "docs/background/architecture.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/background/architecture.md#L13-L13"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "6e7ae08359239ffe2803f076d8eaa0220d46dea4",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "docs/background/architecture.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/background/architecture.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_85872a2fe57b4537cbe76ea73092bb2c5321724595fe72185f8858a3ccf60fb8",
+        "slc_f56045dfe9f59038e718a77ffdc8d60624d9c12ae36422f256e0be259be92ad9"
+      ],
+      "text": "The central entry point is the sweagent CLI, which initializes a SWEEnv environment wrapper (a thin wrapper around SWE-ReX since 1.0) and an Agent class whose forward() method prompts the model and executes its action."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_691fd690eead13be218f2520a2f8cde945841369f65328d62667bf1c83d45754",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "6e7ae08359239ffe2803f076d8eaa0220d46dea4",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/background/architecture.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/background/architecture.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_dc0720d20a9caaf08ed4d7a6b1926cb9bab064eb3bd8b8ef6322c921f433c624"
+      ],
+      "text": "A HistoryProcessor compresses the conversation history to make best use of the model's context window, and a parser extracts the action from the model output before it is executed in the shell session via SWEEnv."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_067eb2c8014a11d047985bcfee103453e823e2032d7943c8f2b8b103657f6cb5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "2eea7af763afcb15071630b238a7d7878fdf5dc0",
+          "line_end": 30,
+          "line_start": 30,
+          "path": "docs/config/tools.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/tools.md#L30-L30"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "2eea7af763afcb15071630b238a7d7878fdf5dc0",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "docs/config/tools.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/tools.md#L11-L13"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "2eea7af763afcb15071630b238a7d7878fdf5dc0",
+          "line_end": 28,
+          "line_start": 19,
+          "path": "docs/config/tools.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/tools.md#L19-L28"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "2eea7af763afcb15071630b238a7d7878fdf5dc0",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "docs/config/tools.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/tools.md#L15-L15"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_49ef817434f3f881dbd9a593cc00f383c73df6512c76229a61aa2b7b53184cb1",
+        "slc_4e5183ffd5adc44eec1e5580b006a63a2499292af3d555ce2a84908c1b8c1ad1",
+        "slc_a836128efa493174bcbc205a501a74ffb6143230e7a0286e1b2a2c81745d066e",
+        "slc_d4cf0531e11ae8b50ac5cfff12fa28010960f4c401af25b0fa84183e34921fc7"
+      ],
+      "text": "Agent tools are organized into tool bundles, each a folder containing bin/ executables, a config.yaml, install.sh, README.md and pyproject.toml; typical tools include bash, code inspection, and editors."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bd553d401c0673abbf71a9748552733091a2d9957534a7ebccd7e1f6e785dc4e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 23,
+          "line_start": 20,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L20-L23"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L5-L5"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 27,
+          "line_start": 25,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L25-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_009ddb04f09eccc79403e14cf9869f3ac300887e5b525d3feeaa4f2f99e22daa",
+        "slc_7f5d0b92f5b976438a7c84549896a1faa466f8adad5fd14b43a09c594c495db7",
+        "slc_8317fd79b3f634b33116da46ba89fa2e80076a746ff067339295378516f0feb5"
+      ],
+      "text": "Configurations are YAML files passed via the --config flag to commands like 'sweagent run' and 'sweagent run-batch'; multiple config files can be given and are merged in a nested way."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83ef7e99d45bee501f3512b5baaf6fbaa5dd7152c2e0d5c65acbc1eed0f9c84c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L7-L11"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "e241ede47c338b69eb13cbc5423047e1edf1d50f",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/README.md#L32-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0555426572c6fc09240aa31234079e59bc6425810127dc8cbcd221eddf69e9d8",
+        "slc_84b61d8cf1ea255c16e065f28249014f97dfbf4fa019d4c9f23a44a5a61ec00d"
+      ],
+      "text": "A single YAML configuration governs the agent: it defines tools, prompts shown deterministically or conditionally during a trajectory, demonstrations, model behavior, and the agent-environment input/output interface."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_609db8841c70095d682e1ac732661bf15109ed8550f693984f4ba2a5c922341c",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "8459d773ac2f6173456ef2cdfb5fc922ce20f9b2",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "docs/faq.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/faq.md#L41-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bda7f2b7a1228d978b490886a0b44be1b2167d54652dda8b38ef6dec32702c6a"
+      ],
+      "text": "At the start of each run the agent is fed a demonstration trajectory showing how to solve an example issue, which the docs say substantially improves its ability to solve novel issues."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b16214a73cf65b452dcaea65c42921655f7e9ffbe1710bfcbb0c9d4972bb1a7c",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "6e7ae08359239ffe2803f076d8eaa0220d46dea4",
+          "line_end": 17,
+          "line_start": 17,
+          "path": "docs/background/architecture.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/background/architecture.md#L17-L17"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "6e7ae08359239ffe2803f076d8eaa0220d46dea4",
+          "line_end": 11,
+          "line_start": 7,
+          "path": "docs/background/architecture.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/background/architecture.md#L7-L11"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b8df2913ce5cb7bfacbcb4296fbcd8c0d203884f144dfe47e0a855935da359b",
+        "slc_f56045dfe9f59038e718a77ffdc8d60624d9c12ae36422f256e0be259be92ad9"
+      ],
+      "text": "SWEEnv relies on the SWE-ReX package: its Deployment starts a local Docker container or a remote container (e.g. modal or aws) and starts a shell session inside it that executes commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5cc5ec1d110e3874be8228c46db8d04472b0663305c8f0b3b5459b8eb58cb057",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "8459d773ac2f6173456ef2cdfb5fc922ce20f9b2",
+          "line_end": 8,
+          "line_start": 7,
+          "path": "docs/faq.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/faq.md#L7-L8"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "8459d773ac2f6173456ef2cdfb5fc922ce20f9b2",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "docs/faq.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/faq.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_298879cf3ef4fc98b8c63cf24952388dc05c8e23e6846f4d39cddd552f9ff915",
+        "slc_cae97037362787843aa561e99a563716b5583e05a86f6ede51bde163362eafc2"
+      ],
+      "text": "The FAQ notes SWE-agent runs on Windows/MacOS/Linux, with the main limitation being availability of Docker containers for the environments; cloud execution is an alternative."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05528c43d5e9fee1fe2d4db10c2780d030a926c7594d3d8bda04c111a6def000",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 55,
+          "line_start": 51,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L51-L55"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 16,
+          "line_start": 16,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L16-L16"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 70,
+          "line_start": 59,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L59-L70"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c53d84ed08d301eddc62dce52d09ef7b99abced1cd737db8d84839ff997d5bd",
+        "slc_bda2afac9367a2af8b906ef670f164fa3b725aeb0ea74d059e6af612aa929e6a",
+        "slc_cc6b391043f38f19b8af32ba87ce207918282535da20497b514169fdd1a961de"
+      ],
+      "text": "Multimodal support is provided via config/default_mm_with_images.yaml, which enables GitHub issue image processing to base64, an image_tools bundle, a web_browser bundle, and an image_parsing history processor."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b897a54d6ce116e473285b6067385118c0e817d05ac59b980e5e84cf95a051d5",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "8459d773ac2f6173456ef2cdfb5fc922ce20f9b2",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "docs/faq.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/faq.md#L32-L35"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "8459d773ac2f6173456ef2cdfb5fc922ce20f9b2",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "docs/faq.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/faq.md#L47-L47"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "8459d773ac2f6173456ef2cdfb5fc922ce20f9b2",
+          "line_end": 45,
+          "line_start": 45,
+          "path": "docs/faq.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/faq.md#L45-L45"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae7e69e53bc13cd6266ef1a643ee532748d562f61dd93ca39a39fe118ccd2079",
+        "slc_e406b29345c61044b96204ae28afd8400f399cc6ecc33f68d27c9dfbe26ddae4",
+        "slc_fd0c38847dd0c3967a1001530499c1c04c4db260fbacf782a1662661863c0800"
+      ],
+      "text": "The default response parser is function_calling, but users can configure agent.tools.parse_function to alternatives such as thought_action; custom tools can also be added per a tutorial."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c956de854f8cbabd045791f03675d66251abc1fb1bb9055d34eda330edbe0b8",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "2eea7af763afcb15071630b238a7d7878fdf5dc0",
+          "line_end": 64,
+          "line_start": 61,
+          "path": "docs/config/tools.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/tools.md#L61-L64"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "2eea7af763afcb15071630b238a7d7878fdf5dc0",
+          "line_end": 49,
+          "line_start": 46,
+          "path": "docs/config/tools.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/tools.md#L46-L49"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ceaade27a7a153e8190b19f540ae7f8ef223e87013115c90bbc6d54532b82caf",
+        "slc_fd9c3a0c8af003889f901d710f80567f6ad49b57dc4a07ade796c7b3214221d6"
+      ],
+      "text": "A special 'state' command runs after every action and returns a JSON string (e.g. current working directory and open file) that is parsed and used to format prompt templates."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_36192bb87d43b2124d368c59e36f7fa670d07127cbd0588414ccb0150488786b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "e241ede47c338b69eb13cbc5423047e1edf1d50f",
+          "line_end": 67,
+          "line_start": 65,
+          "path": "README.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/README.md#L65-L67"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4132655f41d079cc47c39eb3a653e2fac3ec54c11f01abf09bf9ce6070603f68"
+      ],
+      "text": "The EnIGMA offensive-security (CTF) mode currently recommends using SWE-agent 0.7 while EnIGMA is being updated for 1.0."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_010850df770996483730a7a309904276ebe4ec30a63cf802defa27809149e677",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "e241ede47c338b69eb13cbc5423047e1edf1d50f",
+          "line_end": 24,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/README.md#L19-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4b5abfdcdc56baf40a7ff034169854048aca1a5e4d9b0a20cd2c9c4b49879162"
+      ],
+      "text": "Development effort has largely moved to mini-SWE-agent, which the maintainers say matches SWE-agent's performance while being much simpler, and they recommend it going forward."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_05d8b3693196e5dbdaf446f6b3c2e5d82116af3dc955d3dce027b23578d3dea9",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "e241ede47c338b69eb13cbc5423047e1edf1d50f",
+          "line_end": 143,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/README.md#L139-L143"
+        },
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "e241ede47c338b69eb13cbc5423047e1edf1d50f",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/README.md#L91-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27389cd2c1cc5718fb3ecba49c1434e105d4157a9cf88f6c6206883821edd12c",
+        "slc_68d30575074adb002505ebecaccd16d9904b29b6b9b3af4881e0b94b4627d715"
+      ],
+      "text": "Repository development practice: contributors are welcomed via GitHub issues and pull requests, with discussion in issues encouraged before larger code changes; CI badges show pytest, docs builds, codecov, pre-commit, and link checking."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c657bdca80777e0df4caf25540ef69f81dbe37b2fa030cf08e41f71e1308f0ad",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+          "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+          "line_end": 41,
+          "line_start": 39,
+          "path": "docs/config/config.md",
+          "repository": "swe-agent/swe-agent",
+          "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md#L39-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_57d7901e5ca5927dc371f8fca243db27f418db8b080c3cc1c3809376a102a583"
+      ],
+      "text": "Repository development practice: relative paths in config files resolve to the SWE_AGENT_CONFIG_ROOT environment variable if set, otherwise the repository root."
+    }
+  ],
+  "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 145,
+        "path": "README.md",
+        "size": 8158
+      },
+      {
+        "lines": 17,
+        "path": "docs/background/architecture.md",
+        "size": 1803
+      },
+      {
+        "lines": 72,
+        "path": "docs/config/config.md",
+        "size": 3127
+      },
+      {
+        "lines": 80,
+        "path": "docs/config/tools.md",
+        "size": 2203
+      },
+      {
+        "lines": 21,
+        "path": "docs/_footer.md",
+        "size": 763
+      },
+      {
+        "lines": 62,
+        "path": "docs/faq.md",
+        "size": 2960
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/index.md",
+        "reason": "file-budget",
+        "size": 4044
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 444
+      },
+      {
+        "path": "docs/background/aci.md",
+        "reason": "file-budget",
+        "size": 1769
+      },
+      {
+        "path": "docs/background/index.md",
+        "reason": "file-budget",
+        "size": 5021
+      },
+      {
+        "path": "docs/config/demonstrations.md",
+        "reason": "file-budget",
+        "size": 2868
+      },
+      {
+        "path": "docs/config/env.md",
+        "reason": "file-budget",
+        "size": 1311
+      },
+      {
+        "path": "docs/config/environments.md",
+        "reason": "file-budget",
+        "size": 891
+      },
+      {
+        "path": "docs/config/index.md",
+        "reason": "file-budget",
+        "size": 9
+      },
+      {
+        "path": "docs/config/models.md",
+        "reason": "file-budget",
+        "size": 5467
+      },
+      {
+        "path": "docs/config/templates.md",
+        "reason": "file-budget",
+        "size": 1060
+      },
+      {
+        "path": "docs/dev/contribute.md",
+        "reason": "file-budget",
+        "size": 4552
+      },
+      {
+        "path": "docs/dev/formatting_conflicts.md",
+        "reason": "file-budget",
+        "size": 2648
+      },
+      {
+        "path": "docs/installation/codespaces.md",
+        "reason": "file-budget",
+        "size": 735
+      },
+      {
+        "path": "docs/installation/index.md",
+        "reason": "file-budget",
+        "size": 1155
+      },
+      {
+        "path": "docs/installation/keys.md",
+        "reason": "file-budget",
+        "size": 7820
+      },
+      {
+        "path": "docs/installation/migration.md",
+        "reason": "file-budget",
+        "size": 3567
+      },
+      {
+        "path": "docs/installation/source.md",
+        "reason": "file-budget",
+        "size": 2321
+      },
+      {
+        "path": "docs/installation/tips.md",
+        "reason": "file-budget",
+        "size": 1441
+      },
+      {
+        "path": "docs/reference/agent.md",
+        "reason": "file-budget",
+        "size": 320
+      },
+      {
+        "path": "docs/reference/agent_config.md",
+        "reason": "file-budget",
+        "size": 1004
+      },
+      {
+        "path": "docs/reference/batch_instances.md",
+        "reason": "file-budget",
+        "size": 322
+      },
+      {
+        "path": "docs/reference/bundle_config.md",
+        "reason": "file-budget",
+        "size": 362
+      },
+      {
+        "path": "docs/reference/env.md",
+        "reason": "file-budget",
+        "size": 368
+      },
+      {
+        "path": "docs/reference/env_config.md",
+        "reason": "file-budget",
+        "size": 272
+      },
+      {
+        "path": "docs/reference/exceptions.md",
+        "reason": "file-budget",
+        "size": 139
+      },
+      {
+        "path": "docs/reference/history_processor_config.md",
+        "reason": "file-budget",
+        "size": 659
+      },
+      {
+        "path": "docs/reference/index.md",
+        "reason": "file-budget",
+        "size": 280
+      },
+      {
+        "path": "docs/reference/model_config.md",
+        "reason": "file-budget",
+        "size": 1387
+      },
+      {
+        "path": "docs/reference/parsers.md",
+        "reason": "file-budget",
+        "size": 219
+      },
+      {
+        "path": "docs/reference/problem_statements.md",
+        "reason": "file-budget",
+        "size": 1573
+      },
+      {
+        "path": "docs/reference/repo.md",
+        "reason": "file-budget",
+        "size": 1148
+      },
+      {
+        "path": "docs/reference/run_batch_config.md",
+        "reason": "file-budget",
+        "size": 173
+      },
+      {
+        "path": "docs/reference/run_single_config.md",
+        "reason": "file-budget",
+        "size": 212
+      },
+      {
+        "path": "docs/reference/template_config.md",
+        "reason": "file-budget",
+        "size": 264
+      },
+      {
+        "path": "docs/reference/tools_config.md",
+        "reason": "file-budget",
+        "size": 396
+      },
+      {
+        "path": "docs/usage/adding_custom_tools.md",
+        "reason": "file-budget",
+        "size": 8624
+      },
+      {
+        "path": "docs/usage/batch_mode.md",
+        "reason": "file-budget",
+        "size": 9695
+      },
+      {
+        "path": "docs/usage/cl_tutorial.md",
+        "reason": "file-budget",
+        "size": 12112
+      },
+      {
+        "path": "docs/usage/cli.md",
+        "reason": "file-budget",
+        "size": 1354
+      },
+      {
+        "path": "docs/usage/coding_challenges.md",
+        "reason": "file-budget",
+        "size": 6148
+      },
+      {
+        "path": "docs/usage/competitive_runs.md",
+        "reason": "file-budget",
+        "size": 3949
+      },
+      {
+        "path": "docs/usage/hello_world.md",
+        "reason": "file-budget",
+        "size": 4538
+      },
+      {
+        "path": "docs/usage/hello_world_output.txt",
+        "reason": "file-budget",
+        "size": 48820
+      },
+      {
+        "path": "docs/usage/index.md",
+        "reason": "file-budget",
+        "size": 1668
+      },
+      {
+        "path": "docs/usage/inspector.md",
+        "reason": "file-budget",
+        "size": 2925
+      },
+      {
+        "path": "docs/usage/leetcode_example.md",
+        "reason": "file-budget",
+        "size": 604
+      },
+      {
+        "path": "docs/usage/multimodal.md",
+        "reason": "file-budget",
+        "size": 4301
+      },
+      {
+        "path": "docs/usage/trajectories.md",
+        "reason": "file-budget",
+        "size": 4789
+      },
+      {
+        "path": "docs/usage/union_type_error.txt",
+        "reason": "file-budget",
+        "size": 5219
+      },
+      {
+        "path": "docs/usage/whats_next.md",
+        "reason": "file-budget",
+        "size": 550
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 1049
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 217
+      },
+      {
+        "path": "docs/installation/changelog.md",
+        "reason": "file-budget",
+        "size": 30191
+      }
+    ],
+    "omitted_count": 53,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 409,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 59,
+      "complete": false,
+      "omitted": 53,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b503582c70cb5081bcf1749bb52d1889",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/swe-agent/swe-agent/3ea751c087f32b16e039a2233dd6eefecef325d5/9b7bae7bd10c873c/manifest.json",
+  "package_id": "pkg_a964ace2cf2351f9bef4431958f032647cc5e30a08e2e8a1f512138190575f9d",
+  "repo": "swe-agent/swe-agent",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "bfe2c0453c5145ecebfa7ec8e863c86828ca3de563e3946c126865654605e153",
+  "snapshot_id": "9b7bae7bd10c873c",
+  "sources": [
+    {
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "git_sha": "e241ede47c338b69eb13cbc5423047e1edf1d50f",
+      "lines": 145,
+      "path": "README.md",
+      "repository": "swe-agent/swe-agent",
+      "sha256": "dcd880557720efbab0f5c0e68f2bc742309efecfce83244c9e670ec1f1adf76f",
+      "source_id": "src_6b028023847e540a8896aa333212b8e4",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/README.md"
+    },
+    {
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "git_sha": "f26eb6524e90734bc12ec67a8dddb14cc5e04606",
+      "lines": 21,
+      "path": "docs/_footer.md",
+      "repository": "swe-agent/swe-agent",
+      "sha256": "50c3caa50c2c9c104ad5ed32cb8af8df7eb1269206a4281b51520aa8118958bb",
+      "source_id": "src_3ae211c43c33581197fc6ab783d84633",
+      "stored": "_footer.md-b951a835c722.md",
+      "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/_footer.md"
+    },
+    {
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "git_sha": "6e7ae08359239ffe2803f076d8eaa0220d46dea4",
+      "lines": 17,
+      "path": "docs/background/architecture.md",
+      "repository": "swe-agent/swe-agent",
+      "sha256": "79f4f90b9f25503ab22460736ff9d2cb7afcee43e6598d758ef5d8ecda0e2a9b",
+      "source_id": "src_f89d513d9ad25ceabffd953b28a30c91",
+      "stored": "architecture.md-3c4920f5f20a.md",
+      "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/background/architecture.md"
+    },
+    {
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "git_sha": "4f5716088bc53d7b31f9faf17640778471184efa",
+      "lines": 72,
+      "path": "docs/config/config.md",
+      "repository": "swe-agent/swe-agent",
+      "sha256": "536bf1511d5ddbe899819e4396bcb7482a7fc38187798b55ae9d57fd03f6085e",
+      "source_id": "src_7da161cf69c45f85bc6607ef9dafe3bd",
+      "stored": "config.md-bcc8bf4beca3.md",
+      "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/config.md"
+    },
+    {
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "git_sha": "2eea7af763afcb15071630b238a7d7878fdf5dc0",
+      "lines": 80,
+      "path": "docs/config/tools.md",
+      "repository": "swe-agent/swe-agent",
+      "sha256": "9073127af64d2664b5272f688522feacc140f527b3b9e7315bcadd1dd2f53450",
+      "source_id": "src_3ed4e6b3352552d19bc4a4a9b495cac5",
+      "stored": "tools.md-af4cc2dc8a72.md",
+      "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/config/tools.md"
+    },
+    {
+      "commit": "3ea751c087f32b16e039a2233dd6eefecef325d5",
+      "git_sha": "8459d773ac2f6173456ef2cdfb5fc922ce20f9b2",
+      "lines": 62,
+      "path": "docs/faq.md",
+      "repository": "swe-agent/swe-agent",
+      "sha256": "bdb1a03e0dd5c38437f9b2667df0f06ec0aa7c8b8589b62367f91d238bf62e99",
+      "source_id": "src_5c835fd0ac895e42b487949ec61a3463",
+      "stored": "faq.md-57cdcc6b6701.md",
+      "url": "https://github.com/SWE-agent/SWE-agent/blob/3ea751c087f32b16e039a2233dd6eefecef325d5/docs/faq.md"
+    }
+  ],
+  "summary": "Evidence covers SWE-agent's README and docs: an agent framework that lets LLMs use tools to fix GitHub issues, configured via YAML, built on SWE-ReX/Docker, with an EnIGMA cybersecurity mode and a successor project mini-SWE-agent. No code internals beyond documented architecture are shown.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,623 @@
+{
+  "applied_operation_id": "op_5d865349fdba4adf8a3827f0c3fee4c6",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbe3b317a2be9f089667d486bcecdf3e91535dec4d85b76daa51a7b35d7eb2f8",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L13-L13"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_50e195bedb10001abd81c609ed07cc220bd8792dd0d6d60682e54e2575bf306a",
+        "slc_733f143035516b17b18b82b9a9b420d04e1781c6830a94de8d9e8e9adbe8e1b2"
+      ],
+      "text": "SWE-Dev is presented as a software engineering agent focused on training and inference scaling, published as an ACL'25 Findings paper with an arXiv link."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_73da1334a7974db11058b7d1a6d2f7e89b4759ce452af4ed8eab96208d6ecffd",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_59a5d4e36dc336061cab1bf8e0bfcc873f3e97e1a5e7c0940cc821dd1c597957"
+      ],
+      "text": "The project links a Hugging Face model release (THUDM/SWE-Dev-32B) and a training dataset (THUDM/SWE-Dev-train)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0919b981024e2a711ead9ca60efe4f0783ec861ca345ee871a33f80fa26c04cb",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L15-L16"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6eef6db135f4fcb710063468f0370e04a9c5ed59bb8d04acb6206509f7f45998"
+      ],
+      "text": "For training scaling, a pipeline synthesizes test cases and scales agent trajectories into training data; for inference scaling, the interaction budget within a single run is increased."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cddce4ffe0b15b221164c719b1363da6dd2327cb46c0b29cac04c7c0bad71b5f",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 19,
+          "line_start": 18,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L18-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f94e87ade3e71ce46ce86ac195a851fbbddbaa63229a72a6e8b47c2fef617536"
+      ],
+      "text": "On SWE-bench-Verified, reported resolve rates are 23.4% for the 7B model and 36.6% for the 32B model, claimed to outperform state-of-the-art open-source models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6217c620c7dd4f9607c1aab4477f70a9a5497b4881338ec3c8180108fea74892",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L27-L27"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f4961c0f22515c9da7c624765e57913e2329e1ba3da22d0911d5b18842b15c3",
+        "slc_c9688501d94053df837540de7c9bf4e6ac4ab6feeee7e9f4fb71641c8c081ed7"
+      ],
+      "text": "The README reports SWE-Dev-32B reaching 34.0% without inference scaling, described as comparable to GPT-4o, with relative improvements measured against each model's base model."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c113e0d2915b4cdb955bea4dad4440e65626ab84a17bbd764d679835fd281804",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 33,
+          "line_start": 33,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L33-L33"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_250bbf2a9796f2ff421f02eb53fd974cfe563f5ea13c9808a1bd0edc569173d8"
+      ],
+      "text": "The test-case generation pipeline has description-generation and code-generation phases, starting from repository information extraction, producing Gherkin scenarios and detailed test cases, with an optional traceback-driven revision step yielding fail-to-pass test cases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83516e37244bd4d3ab9169df18c8feee20a668647fff907cf3921ee3c9899fc8",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 39,
+          "line_start": 39,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L39-L39"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 55,
+          "line_start": 53,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L53-L55"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 47,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L45-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3af35b584d7b7a37f9cc6e9c664c09a292a9d7f1c77e3ab915b9e9f219afeac4",
+        "slc_649e37d33395671fc83047ecfeee504dad04a25b9bb05dc38fd89d20e86f8442",
+        "slc_8d8f8f1e382962b0bad05860e88520323cf61df4487c386d52154aff18ee087f"
+      ],
+      "text": "Configuration lives in conf/config/default.yaml covering all pipeline stages, and can be validated or printed via python -m swedev.config with --validate or --print flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c015ef63a51917f7b9a9069b452d12cfa15d70381914f35e07e8582887b0c6d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 68,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L67-L68"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 63,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L61-L63"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 79,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L75-L79"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0dee909179fe77ebf27f229aa453148dffc172bcb0130878b906a3a438d4c0ec",
+        "slc_dc651e6eb80292e92f9fe340717ef50500f4b4579f7f207d8fe5a4add531a07f",
+        "slc_e720e9219dee052f63d3f143f7cb4bbadbb1cd8f9d2299201aa702ee8ac30fdc"
+      ],
+      "text": "Configuration values can be overridden on the command line (e.g. paths.local_repo_dir, github.tokens), and code accesses settings through a Config object with stage-specific fields like Config.Testcase.model and Config.Testcase.revise_rounds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc160456103b7b45e29d5bbb78a6e1d91d95424bc8f7783962f916b780c9a08d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 117,
+          "line_start": 110,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L110-L117"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 97,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L91-L97"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 105,
+          "line_start": 101,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L101-L105"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_72eb12a1946e0826561a8beebc448524f4fb4fb372f967ce120cabd9a79796b3",
+        "slc_c85864b381001c99ebb65b8f00b6c3e1bf65c65576f6f543b08ac51897f3045b",
+        "slc_e62bb4dc0c6ac0c0aafa7dd7ff13ab959e539e71b787b807ccb81d4ffb134aae"
+      ],
+      "text": "Data collection offers two crawlers: swedev.crawl.get_top_pypi for top PyPI repositories and swedev.crawl.pypi_crawler for all PyPI repositories, followed by swedev.issues.get_tasks_pipeline to process repositories into tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c365e5815674a89cb0d4fbec0ee2ecaa4c291426122e83d271825427eb3727a",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L89-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3883d3fe4b23f5e2b16c6ba08dddd43ed03a3dff21cc53e66eb178b30a0df3ce"
+      ],
+      "text": "The top-PyPI collection path requires a chrome driver, which the README says can be installed on Ubuntu via apt install chromium-chromedriver."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6cdd4a0e88de2306fc08319836d8aece258d1872f7f40dbd17b2f6daf5a991a2",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 138,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L138-L138"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 85,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L85-L85"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_23682c4710f829715a6dc5ea20915e82c0e672a1034072afbde788321fbc6e76",
+        "slc_ba77383c6017ab61fae10b03a8db9af1d727a926935d90bd6231cc1e6af65c1e"
+      ],
+      "text": "Usage instructions direct users to set GitHub tokens and repository directories in conf/config/default.yaml before collection commands, and to configure API info in conf/config.yaml before the generation pipeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57388b4568e317081e226b719eef7b4f0c14f9a475b2cfcfcf236f1ff568c818",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 180,
+          "line_start": 169,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L169-L180"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 191,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L186-L191"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 199,
+          "line_start": 195,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L195-L199"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 161,
+          "line_start": 161,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L161-L161"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 167,
+          "line_start": 166,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L166-L167"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2bf9c2a798b209b4dd3af288749c51e0eaf037e6c8ebecea66de5c9826322ce8",
+        "slc_547f3d88747d63c2e060ab25592259e010b449df7c496ebe06d4e2e597701191",
+        "slc_8fada2850418ca86fce26f513d71aff497becf43c64f71777c33ac3fa163fcfd",
+        "slc_deb749085cc61b40f36feeb0f03ec733fab19d1087254849e76dd73f9f0f3ab1",
+        "slc_f3ed546bb130fe381028d38217a33e8e3500760e29a2fb5a9fae3ca6b690b620"
+      ],
+      "text": "Evaluation can run in a Docker image built from an Ubuntu 22.04-based Dockerfile (swedev-evaluator) or directly via python -m swedev.testcases.eval_testcases, with a --show_report option to view results."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5c6044b40cdccde549c6c9399bbe2d61e1b0190e5da1de41bbb934ce10f22c61",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "0eb0799c8851a13ae40706d4d9cb3a201196740d",
+          "line_end": 31,
+          "line_start": 1,
+          "path": "requirements-base.txt",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/requirements-base.txt#L1-L31"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b16176819dd1de62312afc23779d94412d73189b",
+          "line_end": 22,
+          "line_start": 1,
+          "path": "requirements.txt",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/requirements.txt#L1-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_103810a4a7142924321346eeb7941dc2449091344de8ef3245145b32e0febdd8",
+        "slc_110b69e5a462876d6e7e66852279c94669ab115a8127512e19c02d34a3380ce5"
+      ],
+      "text": "requirements.txt pins libraries including openai==1.42.0, tiktoken==0.7.0, tree-sitter==0.21.3, swebench, selenium, hydra-core>=1.3.2 and omegaconf>=2.3.0; requirements-base.txt lists many pytest plugins plus black, flake8, mypy and pre-commit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ab24720cbe0b38f7b4419c0b95241a369ed27b838b62b3aa371d7562c2bd7ea",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 221,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L221-L221"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 217,
+          "line_start": 217,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L217-L217"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 215,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L215-L215"
+        },
+        {
+          "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+          "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+          "line_end": 219,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "thudm/swe-dev",
+          "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md#L219-L219"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1788fd81ac65939ef58b5dd9e69435b1d5adf108e993af33fc02a9db2424f5f4",
+        "slc_25e47ac5001102a9cd3d62774e1aff2b886f032ed1494d0dc8b60e20e7b10628",
+        "slc_463dc50f6579efdb8c6f7f0f44c487de20c87601e1e22aabf41a69856776777d",
+        "slc_d97027dbbb87e0051c111901b29c2b09d22a98d16e3186dafc4cda556dc0797f"
+      ],
+      "text": "The project acknowledges building on open-source projects including SWE-bench, Agentless, OpenHands, and Nebius."
+    }
+  ],
+  "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 221,
+        "path": "README.md",
+        "size": 8265
+      },
+      {
+        "lines": 31,
+        "path": "requirements-base.txt",
+        "size": 318
+      },
+      {
+        "lines": 22,
+        "path": "requirements.txt",
+        "size": 289
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 61,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 3,
+      "complete": true,
+      "omitted": 0,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_fdcb181015c75664902266c24caccd09",
+  "facets": {
+    "components": 3,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 2,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/thudm/swe-dev/72917b610c3749c9e1236b29effd629f8aca6a99/9f087b3cd6585980/manifest.json",
+  "package_id": "pkg_3cc917a041dfb205a131ff3cc5e44527f8a214e5e8a6c3dfe40c5fd72c6a066d",
+  "repo": "thudm/swe-dev",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "68148c3aace0a7d77d019f2bef424824450583b97fc26d2daa6abef120b7d20f",
+  "snapshot_id": "9f087b3cd6585980",
+  "sources": [
+    {
+      "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+      "git_sha": "b6842a7404d9f8a4d5c7247ab14f8661475f68a2",
+      "lines": 221,
+      "path": "README.md",
+      "repository": "thudm/swe-dev",
+      "sha256": "15dd7835acdc2aa13bbd1d6a86fa8f9e35fe9b076138b5349bc25fc0e781986e",
+      "source_id": "src_00bb22c6b26756bdb3814ecccb954f89",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/README.md"
+    },
+    {
+      "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+      "git_sha": "0eb0799c8851a13ae40706d4d9cb3a201196740d",
+      "lines": 31,
+      "path": "requirements-base.txt",
+      "repository": "thudm/swe-dev",
+      "sha256": "5506cf2f77a51103a05d9f56251e355e39d44b8e95678ac6b39f46b88e6fd298",
+      "source_id": "src_3e4c2cd7252e54319f886bf1c7be62e4",
+      "stored": "requirements-base.txt-6aa6d17045e8.txt",
+      "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/requirements-base.txt"
+    },
+    {
+      "commit": "72917b610c3749c9e1236b29effd629f8aca6a99",
+      "git_sha": "b16176819dd1de62312afc23779d94412d73189b",
+      "lines": 22,
+      "path": "requirements.txt",
+      "repository": "thudm/swe-dev",
+      "sha256": "60191c69b48a4b5a63e33226f9a71219968ed84d36b479b9a5398c25054b82eb",
+      "source_id": "src_1336a6eae21b5137a337b408d8c35177",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/THUDM/SWE-Dev/blob/72917b610c3749c9e1236b29effd629f8aca6a99/requirements.txt"
+    }
+  ],
+  "summary": "SWE-Dev is an SWE agent project (ACL'25 Findings) focused on training and inference scaling, with a documented pipeline for GitHub data collection, test-case generation, evaluation, and dataset creation, plus released 7B/32B models and a training dataset.",
+  "superseded_claim_ids": []
+}

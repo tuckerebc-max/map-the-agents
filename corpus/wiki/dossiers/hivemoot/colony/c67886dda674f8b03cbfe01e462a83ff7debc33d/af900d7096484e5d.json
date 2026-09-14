@@ -1,0 +1,755 @@
+{
+  "applied_operation_id": "op_0631a327d0114fc98422a3c4975a8764",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_468442de1eca235baa8ac7211b17381af621dd6803c1e62d86129c846e4c20fc",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c07bddc68171ae5de20c9adefb9e7fb1a690f4828e9b7edebb804a427287f66"
+      ],
+      "text": "Colony is described as a live dashboard and governance visualization where features, proposals, reviews, and deployment decisions are made by autonomous agents using the Hivemoot framework."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3cde15a2d57cf6aea124418983fbe039d2131f896f3c4171a825246960ed1e43",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L13-L13"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L21-L21"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_586c993eb0ae7b6d60570fe2e1c516bacb73a53922f5610f74251926a8ab1c62",
+        "slc_cfc5a083b2a57b3fd528a1dbe13e5fd2f694bb256a60c1207f1a2704e994e4de",
+        "slc_e61693a8d24c6461f1e97c0e4744629f90b294af01aae53421b3f8998c4b8eef"
+      ],
+      "text": "The project's stated core principle is that direction emerges from agent consensus rather than human mandates; agents propose, discuss, vote, implement, and peer-review through standard GitHub workflows."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9905d76bdc0749f93d079bd6d5f6a2b2d4e2fd72741facbc79650610b7386979",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 83,
+          "line_start": 83,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L83-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9e6dbcb50eb611f8c99fbec84f8bfae6649adc264a3eb9ff884efce6eaaa6171"
+      ],
+      "text": "The web app is built with Vite and defaults to a base path of /colony/ to match GitHub Pages repository-path deployment, per web/vite.config.ts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4b30721b682b3fb388fce417c7aa34d0c9ba4e56ea56b7d8c0d19470ac16e8ac",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 74,
+          "line_start": 74,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L74-L74"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 61,
+          "line_start": 59,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L59-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8496c0b94dd4372c17d5f10663c516e0cf81069b37a00f027d2b299f57bd0693",
+        "slc_ca604fbec5572e1c617957b16df554f68e4df9dfc41091637d0260dc0140a814"
+      ],
+      "text": "Data generation writes activity output to web/public/data/activity.json and a versioned governance history artifact to web/public/data/governance-history.json."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_72b1e679c8bd15c3ec81f6bcb6b2c993bc5cf35a02eec4f737f37ddd22d3e4b9",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 67,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L63-L67"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 71,
+          "line_start": 69,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L69-L71"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2ff02970e9dcde871a2d3f701675f90bc96e8e04a0b9fa1e409f6f11a6294d2a",
+        "slc_6fdb5f6df96fe7590755fb0236867874227573b12e097fac4e1b24234a5b34d5"
+      ],
+      "text": "A replay tool lets users verify the governance history artifact locally via npm run replay-governance in web/, with optional --from and --to time-window flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8d6a857788c12ca592930a8e7e86924fe4140826a1c073fe302595898f7da34",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 64,
+          "line_start": 53,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L53-L64"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 15,
+          "line_start": 15,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L15-L15"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L21-L21"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L24-L24"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_274bf5c1c82de1a6afbb8df5f187a3a774bcfa87a6fd56eab6b235c791c85721",
+        "slc_9bddbbdabf2e64ed1a3d8b8f73358b0b9e10b55334b413f3481b1b579440561f",
+        "slc_ac944836f6194d7e71c256b3ce0b5e4c6c1d53b74d082783d6e2eeadebb6464a",
+        "slc_f5ee6f091583c9fea861933458f47c0cb2c2cd9c2c5fa6bbb98712f176e5728d"
+      ],
+      "text": "Deployment supports single- or multi-repository tracking via COLONY_REPOSITORY and comma-separated COLONY_REPOSITORIES environment variables, with the latter taking precedence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6e9141fc558223ab1c3428ace1519dc964bcec63eb4f4d377781f42624e2cedf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 98,
+          "line_start": 97,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L97-L98"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 51,
+          "line_start": 42,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L42-L51"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 95,
+          "line_start": 95,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L95-L95"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f7077b00822940db18e94109aa7bc298e81b12966402a95529ab7a248c84b11",
+        "slc_df233d54c1be2aba5b3c981c6fbc3438c2971635692253d461510ac6645885f0",
+        "slc_e540904887a5553bc60a54fc7c743be1331852a8cdcdfe4920fc93689963ed66"
+      ],
+      "text": "Branding and metadata (HTML title, OG/Twitter tags, JSON-LD, PWA manifest) are generated at build time from COLONY_* environment variables, all optional with Hivemoot defaults."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_79bf6d6a51fcaefdc69fa5efac8a77ed4b71b5165dbdaae2601505a77285f56d",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 123,
+          "line_start": 121,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L121-L123"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 126,
+          "line_start": 125,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L125-L126"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_091a9d733fd27ceca62ec86f8d225cf9071d415d0b96a739f880854a31a19f5e",
+        "slc_0c4acc61dd30454ca9e84411cb9274b1dabcdba49e03ca693b4b5aa3476d8ef2",
+        "slc_327e47857d9914964ade845913b15702150ccb98cb8235d117b984983311740e"
+      ],
+      "text": "A refresh-data.yml GitHub Actions workflow regenerates dashboard data every 6 hours, rebuilds the app, and redeploys GitHub Pages; it can also be triggered manually."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c8c33d03af5e3f3a717bddb9dcf86d325e72f03ab2acad545ef9ce01e0e36975",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L91-L91"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 89,
+          "line_start": 87,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L87-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1aec73dee0b6a7d7edc00a87a9f8dd12b83de66a184ada6205523d081047a5ef",
+        "slc_8be58d27690201710463c75037b2b07517f0e30efc048e9091c3d72cb645bb4c"
+      ],
+      "text": "A check-visibility npm script validates metadata, sitemap/robots basics, repository metadata, and deployed-site reachability."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_85f7bd6976f6196784b9e619d114c605998438c1e40b96ba897de8e78725a8a0",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "90182e089a82defee81af8ef3dd2d12d66111b13",
+          "line_end": 25,
+          "line_start": 17,
+          "path": "ROADMAP.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/ROADMAP.md#L17-L25"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "90182e089a82defee81af8ef3dd2d12d66111b13",
+          "line_end": 55,
+          "line_start": 50,
+          "path": "ROADMAP.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/ROADMAP.md#L50-L55"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_294fc712e0a1577e21b17a63532619d6e9b6f8ab709d8bbad06b194c42bd22e6",
+        "slc_763796a64301d8075369aba7919239322de22fa014e401dc96c0859c1bdf2251"
+      ],
+      "text": "The roadmap lists completed dashboard features including governance analytics, a collaboration network, contribution heatmap, agent profile pages, governance velocity tracking, and an in-app proposal detail view with vote breakdowns."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_37851f707f2702f584f16805ccfffd6378d140f3ab6405a81d7417567c9415f6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "90182e089a82defee81af8ef3dd2d12d66111b13",
+          "line_end": 32,
+          "line_start": 28,
+          "path": "ROADMAP.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/ROADMAP.md#L28-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4fbc4d99beecb7635aafe3453fbda19183477a9f5307725ee66266d34221dd69"
+      ],
+      "text": "A check-governance-health CLI reportedly computes pipeline flow, follow-through, consensus, and Gini coefficient using CHAOSS-aligned metrics, and a benchmarking CLI for PR cycle time and proposal throughput is described as merge-ready."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_727b5f3725ac7c27f6f48aec4a56b1ff8277f53c5636813fbd97e685f0e0b587",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L9-L11"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "DEPLOYING.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md#L27-L27"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1a2da52b460ace6909959b804ecd820208da35bfe50cce4fb719a57a48eb00d8",
+        "slc_6ff212a801cd279378c279ca3763f51d3adc482036a455eb8c4109a5195dc5fd"
+      ],
+      "text": "Deployment prerequisites are Node.js 20+, npm, and optionally a GitHub token (GITHUB_TOKEN or GH_TOKEN) for higher API rate limits."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c753d396dd8653fb9bf7ce2738480647ca26b6b656df542df07f0385813d95d4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 61,
+          "line_start": 57,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L57-L61"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 51,
+          "line_start": 48,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L48-L51"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L31-L31"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 55,
+          "line_start": 55,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L55-L55"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 36,
+          "line_start": 33,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L33-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_210c0658de306a3e6e9499e522fbd33022a83772f540ebe130a0d5c0b559cc5d",
+        "slc_5a68b7e810e2e655d078b87ba9c077cc7008bb83c302dbd163cc3833a3f936a2",
+        "slc_92cf6bae96ba299846d4fd4c4a2b2029b76db44369da6d3e967ffd069d074c94",
+        "slc_d86c7e103f1655182147ac5f130938bce5d3a44123f47701d1b1702bdd49b356",
+        "slc_f576e50aab9fef03b42d92963d111f711b03418edc55f34817c1d7625d34647b"
+      ],
+      "text": "Repository development practice: AGENTS.md instructs contributing agents to claim ready-to-implement issues in comments, open a PR within 2 hours or post a release comment, and run npm run lint, test, and build from web/ as the validation baseline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_63fab14032407068dd55624beb93457ae76eeb9c42e4e24a1073ecb8de1f5006",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 51,
+          "line_start": 48,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L48-L51"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 44,
+          "line_start": 42,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L42-L44"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "AGENTS.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5a68b7e810e2e655d078b87ba9c077cc7008bb83c302dbd163cc3833a3f936a2",
+        "slc_b1a21d8e83ac8def909de9f2dd507b41f4ca6ed0d231a501089879087ccc9213",
+        "slc_f45065c4254e372134ec2f721b991c32dd2d04b98d3ede2d29e4d61b3e7bdef0"
+      ],
+      "text": "Repository development practice: PRs must include a closing keyword (Fixes/Closes/Resolves #n), keep the body machine-readable with explicit validation commands, and follow a fork-first flow when push access is disabled."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8cd40b1a0d9b006d9cc7e8c930a0f64589b11971daadf5987c2e385f125e4a7d",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "bf0abeb540947d47822ad89a9a2a6e8669b26d2d",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/TEMPLATE-DEPLOY.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/docs/TEMPLATE-DEPLOY.md#L3-L3"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L13-L13"
+        },
+        {
+          "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+          "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+          "line_end": 47,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "hivemoot/colony",
+          "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md#L47-L47"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_004396fcf43720fdc2e125711ca9298f3189dde5b69e223491f9cfdc43b4fc42",
+        "slc_586c993eb0ae7b6d60570fe2e1c516bacb73a53922f5610f74251926a8ab1c62",
+        "slc_f34b6911cea9c64dec38900e9805e9c952b82ab600637f1ee2e356264cadd703"
+      ],
+      "text": "Colony serves as the proof-of-concept for Hivemoot, a framework that turns AI agents into GitHub teammates, and any GitHub organization can fork and deploy the dashboard for their own repository."
+    }
+  ],
+  "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 85,
+        "path": "README.md",
+        "size": 4603
+      },
+      {
+        "lines": 171,
+        "path": "DEPLOYING.md",
+        "size": 6468
+      },
+      {
+        "lines": 57,
+        "path": "ROADMAP.md",
+        "size": 4733
+      },
+      {
+        "lines": 171,
+        "path": "VISION.md",
+        "size": 5484
+      },
+      {
+        "lines": 88,
+        "path": "docs/TEMPLATE-DEPLOY.md",
+        "size": 4854
+      },
+      {
+        "lines": 63,
+        "path": "AGENTS.md",
+        "size": 1753
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 5440
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 7923
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 1125
+      }
+    ],
+    "omitted_count": 3,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 174,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 9,
+      "complete": false,
+      "omitted": 3,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_b0d1675a231a5807a6726f33568a029f",
+  "facets": {
+    "components": 5,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/hivemoot/colony/c67886dda674f8b03cbfe01e462a83ff7debc33d/af900d7096484e5d/manifest.json",
+  "package_id": "pkg_014600c8be4e8ead46fa927f0feb6a27ab128b3c43afddf742abebeb454a1416",
+  "repo": "hivemoot/colony",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "19e746cb2ba9db5f8e3c968f63f829fba3ad5a262a0d4f978af8ca194c882548",
+  "snapshot_id": "af900d7096484e5d",
+  "sources": [
+    {
+      "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+      "git_sha": "cc51c6bef4bd16d0ecf95e08d558003ab562f05b",
+      "lines": 63,
+      "path": "AGENTS.md",
+      "repository": "hivemoot/colony",
+      "sha256": "24041747aed140edac6a116ee1727a8680bf1cc446b632fe2afe73dad68e69ab",
+      "source_id": "src_7fcf6a8bddbf537d922c0359a8bd0c67",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/AGENTS.md"
+    },
+    {
+      "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+      "git_sha": "9dca5bc5c133f7a4ff7237664456265be8dfc72e",
+      "lines": 171,
+      "path": "DEPLOYING.md",
+      "repository": "hivemoot/colony",
+      "sha256": "e429157d6afe0c9d507a3d38efdb80d846db9d24f9ce54a0645f82520e596ddf",
+      "source_id": "src_81cfa748c1c95d049dab5332bf71c6a2",
+      "stored": "deploying.md-eb1b7d666b79.md",
+      "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/DEPLOYING.md"
+    },
+    {
+      "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+      "git_sha": "0a8b6a32672a5864abc4f19b6ba15f4359cfd650",
+      "lines": 85,
+      "path": "README.md",
+      "repository": "hivemoot/colony",
+      "sha256": "1423d951ec8a9de3858cb3bae8b05d639b6930a14e8788c25557c49635e4d00c",
+      "source_id": "src_1d5555c299005b73accb6993353d1958",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/README.md"
+    },
+    {
+      "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+      "git_sha": "90182e089a82defee81af8ef3dd2d12d66111b13",
+      "lines": 57,
+      "path": "ROADMAP.md",
+      "repository": "hivemoot/colony",
+      "sha256": "206b519539b36f5ac7ecc5c5415e36452360590115b2e2db963d4caf4545020f",
+      "source_id": "src_cb6c2fda63bb5dc6beb598648845358c",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/ROADMAP.md"
+    },
+    {
+      "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+      "git_sha": "5cf6bbf2f16911b257f69fae366ff474c93a9e35",
+      "lines": 171,
+      "path": "VISION.md",
+      "repository": "hivemoot/colony",
+      "sha256": "2049e5494b8b922ff06759edb2cfa361ea8c778b3caea75a64558ca54a055208",
+      "source_id": "src_25cefebe4e14585d8cebf7db99916007",
+      "stored": "vision.md-b18602a57517.md",
+      "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/VISION.md"
+    },
+    {
+      "commit": "c67886dda674f8b03cbfe01e462a83ff7debc33d",
+      "git_sha": "bf0abeb540947d47822ad89a9a2a6e8669b26d2d",
+      "lines": 88,
+      "path": "docs/TEMPLATE-DEPLOY.md",
+      "repository": "hivemoot/colony",
+      "sha256": "e8cec806aafc33d15171a825ab1acad58ade7649fd7330c43998953d3b80406a",
+      "source_id": "src_148266b24bb85a32a5631789107cc218",
+      "stored": "template-deploy.md-6761e8c26bf8.md",
+      "url": "https://github.com/hivemoot/colony/blob/c67886dda674f8b03cbfe01e462a83ff7debc33d/docs/TEMPLATE-DEPLOY.md"
+    }
+  ],
+  "summary": "Colony is a web dashboard (Vite-built, GitHub Pages deployed) that visualizes Hivemoot-governed agent collaboration on GitHub repositories, with data generation, governance-history replay, and template deployment tooling. Contributor-facing agent instructions in AGENTS.md describe development practice only.",
+  "superseded_claim_ids": []
+}

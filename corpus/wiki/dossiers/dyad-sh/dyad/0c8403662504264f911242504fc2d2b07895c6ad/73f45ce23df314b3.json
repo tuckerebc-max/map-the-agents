@@ -1,0 +1,701 @@
+{
+  "applied_operation_id": "op_4a8727fb3d4b402c9a62f82ea905a2b7",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_e82e778498dbe870ef3a7075d7f2118b79cbc920ccc1990e88bb611d4908286a",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "b95d1cac60ad59307ad9899e93b9283512c63e87",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "PRODUCT.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/PRODUCT.md#L13-L13"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "160950c55d7df49c65f73c9abc15290c6d26c9ff",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "README.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/README.md#L3-L3"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_306e526417bd8a89c1527cbe6336a54b02c33135afc9ee9413d8a8f6815a68af",
+        "slc_6325baa4f93e34d840438498f47ab48a9a5f554e15cf27ca259b2e920217e452"
+      ],
+      "text": "Dyad is a local, open-source AI app builder where users describe an app in plain language and the AI generates code with a live preview on their machine, with local-first operation as the core differentiator."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9229067de4508db47853798c2b748aa1d4e0659b732b217895fe52767ae25398",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "b95d1cac60ad59307ad9899e93b9283512c63e87",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "PRODUCT.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/PRODUCT.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c349a6ffd7aa6f5f19ff3558791e459042be9e4be43cc4eff8f4ad81be24bf8a"
+      ],
+      "text": "The primary users are non-technical builders with no coding background running Dyad locally on Mac or Windows; a secondary audience brings their own API keys and local models."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b09bc830f2a70cc6465620b593cf964c2e0fa59edf489ad8e23e7a38504202b2",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 11,
+          "line_start": 11,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L11-L11"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_60db8b76bba31fd04aa2bbbd0253c18790701163044c876344f871986fe3bb82",
+        "slc_7bd6683aba5d05434cd87531a04ddac1aff92e1652ff3966d2df9bb220c2da90"
+      ],
+      "text": "Dyad is an Electron app with a React renderer process (sandboxed) and a privileged Node.js main process that accesses the filesystem, communicating via IPC."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d803da96a1b00b2cc5d01f83b6d3de993dcd7a20a2b91c6d1d3877eda713fea",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+          "line_end": 6,
+          "line_start": 5,
+          "path": "docs/agent_architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md#L5-L6"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_af09ce1abc9d307c05940ee8d18425a528535fc348816f7794959cd18940b56b"
+      ],
+      "text": "The local agent's core loop lives in src/pro/main/ipc/handlers/local_agent/local_agent_handler.ts, calling the LLM until it stops making tool calls or hits a per-turn maximum step count; tool_definitions.ts lists the agent's tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6c09f7f3268f9571d5ef067bd4b16aa0b7d99a7dda9b97b0f7b95ea7a8bde254",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "docs/agent_architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md#L3-L3"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 27,
+          "line_start": 27,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L27-L27"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L31-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9c76eb3fa78732b8383b424ad598b13f9ede0a8578016e518eec4f745e88722f",
+        "slc_d1e68d7329d5628c6aad3d3f1897b7b236cc17e9c0a52c22e17fd98d42a473cd",
+        "slc_d5968a00024fbad1ea94287e304729b2cd0ff475d900531123b59d6b4e3e7a3b"
+      ],
+      "text": "Dyad historically simulated tool calling with custom XML-like tags instead of models' formal tool calling, citing the ability to batch many calls and evidence that JSON code output hurts quality; a newer agent architecture moves toward standard tool calling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4c65b4db85feb487fadaf1cf896b9e78c5694531131908bb1ee4bfa6eec7913f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 50,
+          "line_start": 50,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L50-L50"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L17-L19"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 52,
+          "line_start": 52,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L52-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2cc4f677b5b5cf43bbac64cbf18bf282ab7bb33d743fe7c3d1ce50398855d13d",
+        "slc_7999516dca8a7b1b25c970273da45e16bb83f383a81574d73bb6415d301dc0ed",
+        "slc_844b1fe68011b77f39490644ee000c2c92b73e4e64817787a45fbf19791e4f79"
+      ],
+      "text": "By default each LLM request includes the entire codebase plus a system prompt instructing XML-like responses; Smart Context uses smaller models to filter important files, and agentic iterative search is avoided mainly for cost reasons."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b0e4cd46aefc75a2605ffd866daf5a42f1aa0da8abfd4652d0eddd991cae5599",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L40-L40"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_70bfa127cad8dcfcba03b917909f561f0f50d88f4429218e627cbe32ae73b3a3",
+        "slc_ad55e248fc12b3ac581b6f830357d77128060a8d08e7c6379350da3c4ae23e82"
+      ],
+      "text": "Dyad deliberately keeps a simple agentic loop—usually a single AI request, with optional auto-fix of TypeScript compiler errors—to keep costs low compared to more agentic tools."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a4359e0ce5debf9d1744e4fa427e19066036f4b785f2750d248c7595fe1f42c",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 19,
+          "line_start": 17,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L17-L19"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "docs/architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md#L21-L21"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7999516dca8a7b1b25c970273da45e16bb83f383a81574d73bb6415d301dc0ed",
+        "slc_b6077171d6ea94524d0a441c3d76635e93b69d8b9f91e6683ab812be8c9acf0e"
+      ],
+      "text": "The LLM responds with <dyad-*> tags (e.g. <dyad-write path=...>) that a specialized Markdown parser renders in the UI, and a response processor in the main process applies after user approval—writing or deleting files, adding NPM packages, etc."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9b3c91818d60f5530bbde12d7e4b1ad5c8a88965c585a1bc5edbd93204c5e575",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+          "line_end": 94,
+          "line_start": 69,
+          "path": "docs/i18n.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md#L69-L94"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e647bb2c867d6b26ac3d29520e704090cd635b0e177efe855b9b4090f14bb4d"
+      ],
+      "text": "The product includes agent built-in tool permission settings with per-tool options: Ask, Always allow, and Never allow."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fdcfbd7d59c5b1635f2773858dceaf4b5e18246abde4a3e1d7adf1f499c4986b",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+          "line_end": 350,
+          "line_start": 350,
+          "path": "docs/i18n.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md#L350-L350"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+          "line_end": 26,
+          "line_start": 26,
+          "path": "docs/i18n.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md#L26-L26"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+          "line_end": 24,
+          "line_start": 22,
+          "path": "docs/i18n.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md#L22-L24"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+          "line_end": 9,
+          "line_start": 9,
+          "path": "docs/i18n.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md#L9-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_065abdb5289a5075ac5c4df07f169d668a65a418eed9ceca9be4f68fedffa2ac",
+        "slc_8c3e16dad4817868e4a3cac0b00ee4c73925fe52dd5ce247bbb480acf3f56e24",
+        "slc_985c7fdf4c9fdc713f05325c9c05d52e425ac10482c6fb8cbe5271085811329c",
+        "slc_f5d30a2dfb74fc38d8000b5f62b020881bd16a08a30562c732ad0bbee18a6b94"
+      ],
+      "text": "The i18n design specifies react-i18next and i18next (installed via npm) for translations with bundled locale JSON and no HTTP backend, and notes date-fns as an existing dependency for locale-aware date formatting."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_276f6a53f22536c65aa73f2270fdabd2966b5b977fa02760bb63035850c9bbeb",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "docs/agent_architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md#L20-L20"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "docs/agent_architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md#L14-L14"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "docs/agent_architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md#L12-L12"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "docs/agent_architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md#L18-L18"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+          "line_end": 10,
+          "line_start": 10,
+          "path": "docs/agent_architecture.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md#L10-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_055ede43501dbc935d59e8f0ded083abcd772efda14802c5783a13cab48ea0cb",
+        "slc_056a033a1ad0b7afd500dfe7e0939d8637a3870623bc629675ff7de5f99ae074",
+        "slc_75b35ef489ca6349f588352529da4b4ebfe7039e39081ade723e86905768c435",
+        "slc_9a80daab3cf4fa8d0fd17e907687da174b23cdb7501236a438e6a311800b1e7a",
+        "slc_f5d0f3de1640c1e6678b089582724e8c667e26afe8f3d89330f3d9ac5da7a703"
+      ],
+      "text": "Repository development practice: contributors add tools in the local_agent/tools directory, register them in tool_definitions.ts, render their XML tag in DyadMarkdownParser.tsx, and can add E2E tests modeled on e2e-tests/local_agent*.spec.ts with tool-call fixtures."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_97b65571e0a43b62007d14db24bf4efe2de8432d59c674d4fd10addef21a9a36",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "abdbb00e59a938107f35a4db1bb56852c1c6ddcb",
+          "line_end": 21,
+          "line_start": 21,
+          "path": "CLA.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/CLA.md#L21-L21"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+          "line_end": 396,
+          "line_start": 396,
+          "path": "docs/i18n.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md#L396-L396"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+          "line_end": 392,
+          "line_start": 391,
+          "path": "docs/i18n.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md#L391-L392"
+        },
+        {
+          "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+          "git_sha": "abdbb00e59a938107f35a4db1bb56852c1c6ddcb",
+          "line_end": 40,
+          "line_start": 40,
+          "path": "CLA.md",
+          "repository": "dyad-sh/dyad",
+          "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/CLA.md#L40-L40"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_77801545a107f717bf43527f58b4166ccb4e1a71f31122f87909462d169c3080",
+        "slc_7e3730967c00d4d966db9e244d9fbe5c8b339c3fba770463b9fddfad176d81be",
+        "slc_e11987eede8c0c5c241d357cec6d0cd0ea8a6cf1c90bd496fcf0ace7476e1af9",
+        "slc_f1d95bd67425e1f4285c9eeb206e7af049f585c025a119756fe91866108c331c"
+      ],
+      "text": "Repository development practice: English locale files are the source of truth, other locales must mirror their key structure with automatic English fallback, and a CI check warns on missing keys; contributions fall under a CLA granting Dyad Tech, Inc. copyright and patent licenses."
+    }
+  ],
+  "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 34,
+        "path": "README.md",
+        "size": 1360
+      },
+      {
+        "lines": 52,
+        "path": "docs/architecture.md",
+        "size": 6461
+      },
+      {
+        "lines": 72,
+        "path": "CLA.md",
+        "size": 2647
+      },
+      {
+        "lines": 39,
+        "path": "PRODUCT.md",
+        "size": 3065
+      },
+      {
+        "lines": 20,
+        "path": "docs/agent_architecture.md",
+        "size": 1538
+      },
+      {
+        "lines": 425,
+        "path": "docs/i18n.md",
+        "size": 13041
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/user-input-follow-up-recovery.md",
+        "reason": "file-budget",
+        "size": 2755
+      },
+      {
+        "path": "docs/why-state-machines.md",
+        "reason": "file-budget",
+        "size": 15736
+      },
+      {
+        "path": "docs/adr/app-run-wire-codecs.md",
+        "reason": "file-budget",
+        "size": 7176
+      },
+      {
+        "path": "docs/adr/main-owned-state-machines.md",
+        "reason": "file-budget",
+        "size": 55165
+      },
+      {
+        "path": "docs/adrs/0001-host-capability-interface.md",
+        "reason": "file-budget",
+        "size": 3737
+      },
+      {
+        "path": "docs/adrs/0002-cloud-runtime-topology.md",
+        "reason": "file-budget",
+        "size": 4082
+      },
+      {
+        "path": "docs/adrs/0003-authentication-authorization-model.md",
+        "reason": "file-budget",
+        "size": 3692
+      },
+      {
+        "path": "docs/adrs/README.md",
+        "reason": "file-budget",
+        "size": 583
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 21278
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 10
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 3098
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 467
+      },
+      {
+        "path": "docs/security.md",
+        "reason": "file-budget",
+        "size": 2018
+      }
+    ],
+    "omitted_count": 13,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 3277,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 19,
+      "complete": false,
+      "omitted": 13,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_39893e9e443c5a7b93e0e9ad60bad951",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 3,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 2,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/dyad-sh/dyad/0c8403662504264f911242504fc2d2b07895c6ad/73f45ce23df314b3/manifest.json",
+  "package_id": "pkg_b981ed4f9c647b086ab02173bfaeb46e80f9fd080a9bb97cf382419098267f5d",
+  "repo": "dyad-sh/dyad",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "2b935b7ff1b3aeb08c95024be6212232fd661402a52282b7b0ee060825391d3d",
+  "snapshot_id": "73f45ce23df314b3",
+  "sources": [
+    {
+      "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+      "git_sha": "abdbb00e59a938107f35a4db1bb56852c1c6ddcb",
+      "lines": 72,
+      "path": "CLA.md",
+      "repository": "dyad-sh/dyad",
+      "sha256": "c65e7039f43ae7b4a8ce607a0d6f1ade08d86d2478269f27e9072e93333c9cef",
+      "source_id": "src_25cf0d74e2615098b7e016f4f1d076e9",
+      "stored": "cla.md-4b209274264a.md",
+      "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/CLA.md"
+    },
+    {
+      "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+      "git_sha": "b95d1cac60ad59307ad9899e93b9283512c63e87",
+      "lines": 39,
+      "path": "PRODUCT.md",
+      "repository": "dyad-sh/dyad",
+      "sha256": "4fffc5eac342a696aed7cffb362218edf2ed9455f3b7848d406a5d2a7909af8a",
+      "source_id": "src_36b1ce03dad55f99a65722d832fa42f5",
+      "stored": "product.md-211481d78d1a.md",
+      "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/PRODUCT.md"
+    },
+    {
+      "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+      "git_sha": "160950c55d7df49c65f73c9abc15290c6d26c9ff",
+      "lines": 34,
+      "path": "README.md",
+      "repository": "dyad-sh/dyad",
+      "sha256": "98fc871e1af1002882dbccd9b2d6f4de759a42f132f556b18439f8c15227c1e2",
+      "source_id": "src_9a5d244828145a4b93279988a67db069",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/README.md"
+    },
+    {
+      "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+      "git_sha": "29712b0966ce885b97c1e54378acda9921e95596",
+      "lines": 20,
+      "path": "docs/agent_architecture.md",
+      "repository": "dyad-sh/dyad",
+      "sha256": "ee3a2f17746b287d244a6a462e73664d0384c6b8ce6e6f0c54644b1d60e9a701",
+      "source_id": "src_253310f6882c56479f769950b6b562c6",
+      "stored": "agent_architecture.md-64408f2e40a4.md",
+      "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/agent_architecture.md"
+    },
+    {
+      "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+      "git_sha": "ea93a2a071b514dac88c9a1495df0ca9d1a534ab",
+      "lines": 52,
+      "path": "docs/architecture.md",
+      "repository": "dyad-sh/dyad",
+      "sha256": "0fda3659d096ca13216c0bef700d29acf1e3e0116eb01b88a1adaef550142393",
+      "source_id": "src_52a90da7cbd75fea9519d0578ce94f4e",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/architecture.md"
+    },
+    {
+      "commit": "0c8403662504264f911242504fc2d2b07895c6ad",
+      "git_sha": "52a449e3e624c4e3dc42844da31e36c530bce257",
+      "lines": 425,
+      "path": "docs/i18n.md",
+      "repository": "dyad-sh/dyad",
+      "sha256": "86069aad4705637035357f12acec231a9d9af7f564301139a17f4122ea994b74",
+      "source_id": "src_6086510952ea55a9bf328ec9f50cae91",
+      "stored": "i18n.md-c341533708a9.md",
+      "url": "https://github.com/dyad-sh/dyad/blob/0c8403662504264f911242504fc2d2b07895c6ad/docs/i18n.md"
+    }
+  ],
+  "summary": "Dyad is a local, open-source Electron-based AI app builder whose LLM workflow uses XML-like dyad tags rendered in the UI and applied by a main-process response processor, with a newer local agent loop in src/pro. Evidence also covers i18n design, tool-permission settings, and contributor/CLA practices.",
+  "superseded_claim_ids": []
+}

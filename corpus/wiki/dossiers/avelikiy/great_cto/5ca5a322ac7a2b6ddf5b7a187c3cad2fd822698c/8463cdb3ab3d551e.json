@@ -1,0 +1,1593 @@
+{
+  "applied_operation_id": "op_fe820e249ea641c4825409391282114e",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_da8a421c9a09af8d21dbd6faaccee8c984b7ecd6ca1ce6e462151baabec59d33",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 100,
+          "line_start": 96,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L96-L100"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d251347ab97934e86a625ca8cd78771c1a3885c95a780af33938db31ce61703"
+      ],
+      "text": "Users interact via slash commands: /start to describe a product or feature and run the pipeline, /inbox for pending gates and blocked tasks, and /digest for weekly DORA metrics and cost roll-ups."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f8ac1291ee794115efac84357687950f4dd3dde948b22397438743a5f574f24e",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 69,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L66-L69"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5ad54c0d3bc52fe054b6810d05b7e74369f118bcc718eaed73cbfe3685de4306"
+      ],
+      "text": "A web board at localhost:3141 shows Decisions, Ledger (costs), Fleet, and Harness screens, and renders never-run scans as 'n/a' rather than a green zero."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a1a9b07908cbf11b42acb8181063dab2f31c39add148e38b04094ce7464f918d",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 113,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L106-L113"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 14,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L12-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e550ba14ec46ac53c1b23b4de1b2d4c38e04b4404dab4fefb5de36b74ab4134",
+        "slc_fe9593e77feaba6d91ed83c04d770415eedf3c1d0de4f8769c0f513e9f346b39"
+      ],
+      "text": "The tool installs via 'npx great-cto init', with an '--host codex' variant that installs skills and an MCP server instead of the Claude Code pipeline."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8dc8aecfab573f92199621de441a22961d79b3f5f571affc8c2de10711d98420",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 155,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L149-L155"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1e3d0c2a07beb6eeca56f91442f53b6f8783f8ddb09fcd2fda3aebbe45156f59"
+      ],
+      "text": "An 'approval-level' setting in .great_cto/PROJECT.md controls where the pipeline stops, from 'auto' (0 stops) through the default 'gates-only' (3 stops) to 'ship-only' (1 stop at deploy)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_357c787f72ec9f8643146ba754680d5fe9c262c996f95ce0ed67be5910ace9a8",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 201,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L196-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2e6711c331884839106c2d3515a23a9e9c395b3e6bd368f53742872d49af8271"
+      ],
+      "text": "The product follows a rule that a thing which did not happen must never look like one that did: missing harnesses show 'unavailable', undecidable checks show 'unverifiable', unmeasured costs show 'unmeasured', and unassessed stages show 'null'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8dd84f5bd01fbe557570566361b745db9fa9c30cc8470f57990825892fd4fc86",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 264,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L232-L264"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dce61fe34b79cc5a0dfff02460b126e035c45945725c902a8c2abb5655de875"
+      ],
+      "text": "The system uses about 70 specialized agents with their own review gates, plus critics for architecture, spec, and schema that run before planning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4ece05db271e7b785e8b76c07d13d0091a61cd39da34f92b9e556f52a692644",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 264,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L232-L264"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dce61fe34b79cc5a0dfff02460b126e035c45945725c902a8c2abb5655de875"
+      ],
+      "text": "Agents are scope-restricted at write time: an agent is described as physically unable to touch files outside its brief, refused at write rather than flagged at review."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9247e38aeafdcac56ad862f87a6b2a007648cff57e911193c9abe00e4aba06a3",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 264,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L232-L264"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 223,
+          "line_start": 219,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L219-L223"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dce61fe34b79cc5a0dfff02460b126e035c45945725c902a8c2abb5655de875",
+        "slc_a2d2d66a21a70c54e413504792dea4d28407e56e64d3dd9bee34cd9c67618cff"
+      ],
+      "text": "Per-agent budgets in PROJECT.md ('agent-budgets:') make the pipeline decline to dispatch past a stage's spending cap and name the number; unmeasured runs hold nothing rather than firing a budget."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f521cd83e367f14d3a34e0ebeb3692f4484f505c6e32694f982fbbaf2f9d03e6",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 264,
+          "line_start": 232,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L232-L264"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9dce61fe34b79cc5a0dfff02460b126e035c45945725c902a8c2abb5655de875"
+      ],
+      "text": "Decisions, lessons, and promoted patterns persist per project and globally across sessions, and an interrupted run resumes knowing which stages already ran."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a835415e02ad16f0407f9e24caddc775f9b1eec121875e7db2508c41299ad028",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 104,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L102-L104"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b769f574a4761b7eea0c62b8e0cf1b4028890d727650f759ec77a18ca012ab2c"
+      ],
+      "text": "Requires Node >= 18.17; companion plugins Superpowers and Beads install automatically, and users are told to verify the plugin loaded via 'claude plugin list --json'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_83bbf83f043afe56f460a5fbfff429d2431be07c2e2b9543f12d89ff5366201a",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 77,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L72-L77"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 32,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L31-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b9a61bf2e38e651615b43d18d129c0204362465e2446af6513a070cb31742f7",
+        "slc_2d51649fd0476930ce1031c983f5f69ac7f43089a268566d94b9386eb2581306"
+      ],
+      "text": "An open benchmark built seven products with a median token cost of $171 and a median quality score of 70/100 (range 58-86), measured 2026-07-10, with a reproduction doc cited."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dd5445f844f24db32a3917fbdf18a87fd44c5a61d21b0c02d09f8bc5132a30c4",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 113,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L106-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e550ba14ec46ac53c1b23b4de1b2d4c38e04b4404dab4fefb5de36b74ab4134"
+      ],
+      "text": "On Codex the pipeline does not run: hooks, slash commands, the gate chain and secret-scan are unavailable there because the host lacks a plugin surface for them; only skills and the MCP server work."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c12ac87655548397741ee5fc5c9baac9ba426fe75d7a8e39cb34b900f06fa78b",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 286,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L272-L286"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63aceb92324bd983fbadcf582db655d11e8195de4b72f9eb8b13cea5470e6bee"
+      ],
+      "text": "Per-agent cost attribution is unreliable: cost is read from the host's session transcript, which covers the session rather than one subagent, so per-agent figures can be inflated and should be treated as a ceiling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_343e4a063e6081fd5573b2f5f1c60e6573398ec21db5860274d87aef4aecbac7",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+          "line_end": 286,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md#L272-L286"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_63aceb92324bd983fbadcf582db655d11e8195de4b72f9eb8b13cea5470e6bee"
+      ],
+      "text": "The tool is positioned for a solo builder, is not a CI/CD system (gates run locally, merging still goes through GitHub Actions), and is not certification-audited despite PCI/HIPAA/SOC2 scaffolds."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db82df4765a4cfebb97d5f475084d7a7464cb3c9496f7b4694fbf4ca96061f68",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "2080244b5b0581b4700031256c0935f5f3457984",
+          "line_end": 77,
+          "line_start": 65,
+          "path": "AGENTS.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/AGENTS.md#L65-L77"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "2080244b5b0581b4700031256c0935f5f3457984",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "AGENTS.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/AGENTS.md#L3-L3"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "2080244b5b0581b4700031256c0935f5f3457984",
+          "line_end": 26,
+          "line_start": 24,
+          "path": "AGENTS.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/AGENTS.md#L24-L26"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "2080244b5b0581b4700031256c0935f5f3457984",
+          "line_end": 57,
+          "line_start": 55,
+          "path": "AGENTS.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/AGENTS.md#L55-L57"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_729c8e635eba9fb8647bcc02e505a9c1f28ed1bd1b3d1fe7efaf63c84f745a77",
+        "slc_7480df50626d5a304a1be736f824dc34734ae6871216956ba00cac929a554e08",
+        "slc_7c96097c91f13d0feb5a152fd771cbf8d918e47b021b05ede044b6a1778d6827",
+        "slc_d60141cb227b6f660ab0556c81f7dfb55c0abffb38f2d44333fae1caf1c966df"
+      ],
+      "text": "Repository development practice: AGENTS.md mandates the bd (beads) issue tracker for all task tracking, non-interactive shell flags, and a mandatory session-completion workflow ending in a successful git push."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_28f2db65ed43e1de83a47e90449c7ea719a4a04f0207678fc325d384a10a8bba",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "824d44d0befbf8f17976277778125edff66e159d",
+          "line_end": 62,
+          "line_start": 58,
+          "path": "CLAUDE.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/CLAUDE.md#L58-L62"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_468ae4fa0486e73cf5374218fed36d99e6a95ebecbd03ca7b3d6fe7bef783db5"
+      ],
+      "text": "Repository development practice: CLAUDE.md sets code style rules (TypeScript strict mode, ESM only, Node >= 20 with node: prefix, zero runtime dependencies in packages/board/server.mjs) and a commit format '<type>: <description>'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99479fa51bd5985c8294ab5a99f7247e2a4aa46c54d5309e064558fda6c640f4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "824d44d0befbf8f17976277778125edff66e159d",
+          "line_end": 20,
+          "line_start": 20,
+          "path": "CLAUDE.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/CLAUDE.md#L20-L20"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "824d44d0befbf8f17976277778125edff66e159d",
+          "line_end": 11,
+          "line_start": 10,
+          "path": "CLAUDE.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/CLAUDE.md#L10-L11"
+        },
+        {
+          "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+          "git_sha": "824d44d0befbf8f17976277778125edff66e159d",
+          "line_end": 28,
+          "line_start": 28,
+          "path": "CLAUDE.md",
+          "repository": "avelikiy/great_cto",
+          "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/CLAUDE.md#L28-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bdbfdc47844f13dc00dec8f0e4956983f0a8c0374819cfbc76fa300d2b88289",
+        "slc_9438d2464c477e213f2d2b4530df7c7e3e4f2d1baaaa911d250585b9c1177ab1",
+        "slc_d341250e5efa270614a1a8a6e9a9298bdf5f944c9b26e2c6bbf3649fe916300d"
+      ],
+      "text": "Repository development practice: agents working in this repo must never mention private project names in public-facing artifacts, using the placeholder <private-project> instead, enforced by a pre-push hook."
+    }
+  ],
+  "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 315,
+        "path": "README.md",
+        "size": 15959
+      },
+      {
+        "lines": 84,
+        "path": "AGENTS.md",
+        "size": 2899
+      },
+      {
+        "lines": 177,
+        "path": "CLAUDE.md",
+        "size": 7638
+      }
+    ],
+    "omitted": [
+      {
+        "path": "CHANGELOG.md",
+        "reason": "byte-budget",
+        "size": 730492
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 8836
+      },
+      {
+        "path": "NOTICE.md",
+        "reason": "file-budget",
+        "size": 3008
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 3996
+      },
+      {
+        "path": "docs/AGENT-LINT-RULES.md",
+        "reason": "file-budget",
+        "size": 3838
+      },
+      {
+        "path": "docs/ARCHETYPES.md",
+        "reason": "file-budget",
+        "size": 5783
+      },
+      {
+        "path": "docs/ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 3452
+      },
+      {
+        "path": "docs/BOARD-API.md",
+        "reason": "file-budget",
+        "size": 2940
+      },
+      {
+        "path": "docs/DEMO-SCRIPT.md",
+        "reason": "file-budget",
+        "size": 6166
+      },
+      {
+        "path": "docs/DESIGN-SKILLS.md",
+        "reason": "file-budget",
+        "size": 2972
+      },
+      {
+        "path": "docs/DETAILS.md",
+        "reason": "file-budget",
+        "size": 8009
+      },
+      {
+        "path": "docs/FAQ.md",
+        "reason": "file-budget",
+        "size": 3082
+      },
+      {
+        "path": "docs/GATES.md",
+        "reason": "file-budget",
+        "size": 5200
+      },
+      {
+        "path": "docs/HOOKS.md",
+        "reason": "file-budget",
+        "size": 7717
+      },
+      {
+        "path": "docs/HOST-CODEX.md",
+        "reason": "file-budget",
+        "size": 5024
+      },
+      {
+        "path": "docs/LEARNING.md",
+        "reason": "file-budget",
+        "size": 5646
+      },
+      {
+        "path": "docs/LOCAL-CICD.md",
+        "reason": "file-budget",
+        "size": 3013
+      },
+      {
+        "path": "docs/MCP.md",
+        "reason": "file-budget",
+        "size": 3167
+      },
+      {
+        "path": "docs/PRIVACY.md",
+        "reason": "file-budget",
+        "size": 7942
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 3613
+      },
+      {
+        "path": "docs/SECOND-OPINION.md",
+        "reason": "file-budget",
+        "size": 3669
+      },
+      {
+        "path": "docs/SITE-CREDIBILITY-PLAN.md",
+        "reason": "file-budget",
+        "size": 5213
+      },
+      {
+        "path": "docs/adr/ADR-001-multi-tenant-board.md",
+        "reason": "file-budget",
+        "size": 7248
+      },
+      {
+        "path": "docs/adr/ADR-002-model-tier-policy.md",
+        "reason": "file-budget",
+        "size": 4249
+      },
+      {
+        "path": "docs/adr/ADR-003-two-axis-gate-model.md",
+        "reason": "file-budget",
+        "size": 4026
+      },
+      {
+        "path": "docs/adr/ADR-004-tier-aware-judge-policy.md",
+        "reason": "file-budget",
+        "size": 3021
+      },
+      {
+        "path": "docs/adr/ADR-005-mid-build-spec-reentry.md",
+        "reason": "file-budget",
+        "size": 4012
+      },
+      {
+        "path": "docs/adr/ADR-006-harness-router.md",
+        "reason": "file-budget",
+        "size": 2467
+      },
+      {
+        "path": "docs/adr/ADR-007-board-always-on.md",
+        "reason": "file-budget",
+        "size": 3644
+      },
+      {
+        "path": "docs/adr/ADR-008-decisions-log-isolation.md",
+        "reason": "file-budget",
+        "size": 3959
+      },
+      {
+        "path": "docs/adr/ADR-009-gates-follow-reversibility.md",
+        "reason": "file-budget",
+        "size": 3889
+      },
+      {
+        "path": "docs/adr/ADR-010-pipeline-position-pull-view.md",
+        "reason": "file-budget",
+        "size": 4083
+      },
+      {
+        "path": "docs/adr/ADR-011-stale-after-precedence.md",
+        "reason": "file-budget",
+        "size": 3158
+      },
+      {
+        "path": "docs/adr/ADR-013-hook-execution-model.md",
+        "reason": "file-budget",
+        "size": 6249
+      },
+      {
+        "path": "docs/adr/ADR-013-hook-execution-model.summary.md",
+        "reason": "file-budget",
+        "size": 632
+      },
+      {
+        "path": "docs/adr/ADR-014-secret-detection-patterns.md",
+        "reason": "file-budget",
+        "size": 6827
+      },
+      {
+        "path": "docs/adr/ADR-014-secret-detection-patterns.summary.md",
+        "reason": "file-budget",
+        "size": 753
+      },
+      {
+        "path": "docs/adr/ADR-015-learning-loop-architecture.md",
+        "reason": "file-budget",
+        "size": 8302
+      },
+      {
+        "path": "docs/adr/ADR-015-learning-loop-architecture.summary.md",
+        "reason": "file-budget",
+        "size": 693
+      },
+      {
+        "path": "docs/adr/ADR-016-learning-privacy.md",
+        "reason": "file-budget",
+        "size": 5687
+      },
+      {
+        "path": "docs/adr/ADR-016-learning-privacy.summary.md",
+        "reason": "file-budget",
+        "size": 647
+      },
+      {
+        "path": "docs/adr/ADR-017-skill-candidate-promotion.md",
+        "reason": "file-budget",
+        "size": 5605
+      },
+      {
+        "path": "docs/adr/ADR-017-skill-candidate-promotion.summary.md",
+        "reason": "file-budget",
+        "size": 783
+      },
+      {
+        "path": "docs/adr/ADR-018-dynamic-workflow-orchestration.md",
+        "reason": "file-budget",
+        "size": 19455
+      },
+      {
+        "path": "docs/adr/ADR-018-dynamic-workflow-orchestration.summary.md",
+        "reason": "file-budget",
+        "size": 772
+      },
+      {
+        "path": "docs/adr/ADR-019-hook-execution-modes.md",
+        "reason": "file-budget",
+        "size": 6092
+      },
+      {
+        "path": "docs/adr/ADR-019-hook-execution-modes.summary.md",
+        "reason": "file-budget",
+        "size": 749
+      },
+      {
+        "path": "docs/adr/ADR-020-bash-execution-boundary.md",
+        "reason": "file-budget",
+        "size": 6172
+      },
+      {
+        "path": "docs/adr/ADR-020-bash-execution-boundary.summary.md",
+        "reason": "file-budget",
+        "size": 702
+      },
+      {
+        "path": "docs/agent-model-override.md",
+        "reason": "file-budget",
+        "size": 1887
+      },
+      {
+        "path": "docs/agents/GATE-NAMING.md",
+        "reason": "file-budget",
+        "size": 2751
+      },
+      {
+        "path": "docs/agents/REVIEWER-NAMING.md",
+        "reason": "file-budget",
+        "size": 1943
+      },
+      {
+        "path": "docs/analysis/2026-05-14-archetype-deep-dive.md",
+        "reason": "file-budget",
+        "size": 11324
+      },
+      {
+        "path": "docs/analysis/2026-05-14-multi-archetype-coverage-gap.md",
+        "reason": "file-budget",
+        "size": 10574
+      },
+      {
+        "path": "docs/analysis/2026-05-14-pipeline-gaps.md",
+        "reason": "file-budget",
+        "size": 13952
+      },
+      {
+        "path": "docs/analysis/2026-05-14-skill-resolution.md",
+        "reason": "file-budget",
+        "size": 4415
+      },
+      {
+        "path": "docs/analysis/2026-09-05-codex-phase0-findings.md",
+        "reason": "file-budget",
+        "size": 14156
+      },
+      {
+        "path": "docs/analysis/NACL-EVALUATION.md",
+        "reason": "file-budget",
+        "size": 2666
+      },
+      {
+        "path": "docs/arch/ARCH-board-server-split.md",
+        "reason": "file-budget",
+        "size": 8491
+      },
+      {
+        "path": "docs/arch/ARCH-quality-deepen-followups.md",
+        "reason": "file-budget",
+        "size": 8852
+      },
+      {
+        "path": "docs/architecture/ARCH-judge-provenance.md",
+        "reason": "file-budget",
+        "size": 10272
+      },
+      {
+        "path": "docs/architecture/ARCH-pipeline-position.md",
+        "reason": "file-budget",
+        "size": 13699
+      },
+      {
+        "path": "docs/architecture/ARCH-stale-after.md",
+        "reason": "file-budget",
+        "size": 10705
+      },
+      {
+        "path": "docs/architecture/PHASE-agents-fleet-view.md",
+        "reason": "file-budget",
+        "size": 4856
+      },
+      {
+        "path": "docs/architecture/PHASE-agents-fleet-view.summary.md",
+        "reason": "file-budget",
+        "size": 742
+      },
+      {
+        "path": "docs/architecture/PHASE-board-companion-extension.md",
+        "reason": "file-budget",
+        "size": 3887
+      },
+      {
+        "path": "docs/architecture/PHASE-board-companion-extension.summary.md",
+        "reason": "file-budget",
+        "size": 721
+      },
+      {
+        "path": "docs/benchmarks/AB-2026-07-29-dag-vs-rubric.md",
+        "reason": "file-budget",
+        "size": 4333
+      },
+      {
+        "path": "docs/benchmarks/BENCH-2026-07-batch1.md",
+        "reason": "file-budget",
+        "size": 11928
+      },
+      {
+        "path": "docs/benchmarks/MTTR.md",
+        "reason": "file-budget",
+        "size": 7038
+      },
+      {
+        "path": "docs/benchmarks/RESCORE-2026-07-19.md",
+        "reason": "file-budget",
+        "size": 14745
+      },
+      {
+        "path": "docs/benchmarks/briefs/README.md",
+        "reason": "file-budget",
+        "size": 1745
+      },
+      {
+        "path": "docs/benchmarks/briefs/ats.md",
+        "reason": "file-budget",
+        "size": 839
+      },
+      {
+        "path": "docs/benchmarks/briefs/booking-portal.md",
+        "reason": "file-budget",
+        "size": 761
+      },
+      {
+        "path": "docs/benchmarks/briefs/class-booking.md",
+        "reason": "file-budget",
+        "size": 785
+      },
+      {
+        "path": "docs/benchmarks/briefs/client-portal.md",
+        "reason": "file-budget",
+        "size": 762
+      },
+      {
+        "path": "docs/benchmarks/briefs/coaching-content.md",
+        "reason": "file-budget",
+        "size": 803
+      },
+      {
+        "path": "docs/benchmarks/briefs/dispatch-scheduling.md",
+        "reason": "file-budget",
+        "size": 799
+      },
+      {
+        "path": "docs/benchmarks/briefs/instant-quoting.md",
+        "reason": "file-budget",
+        "size": 882
+      },
+      {
+        "path": "docs/benchmarks/briefs/lead-crm.md",
+        "reason": "file-budget",
+        "size": 766
+      },
+      {
+        "path": "docs/benchmarks/briefs/profitability-dashboard.md",
+        "reason": "file-budget",
+        "size": 826
+      },
+      {
+        "path": "docs/benchmarks/briefs/subcontractor-portal.md",
+        "reason": "file-budget",
+        "size": 824
+      },
+      {
+        "path": "docs/blog/2026-05-22-v2.17-en.md",
+        "reason": "file-budget",
+        "size": 2271
+      },
+      {
+        "path": "docs/blog/2026-05-29-whats-new-en.md",
+        "reason": "file-budget",
+        "size": 4386
+      },
+      {
+        "path": "docs/blog/DRAFT-2026-07-29-two-approvals.md",
+        "reason": "file-budget",
+        "size": 10262
+      },
+      {
+        "path": "docs/compression/HEADROOM-MCP.md",
+        "reason": "file-budget",
+        "size": 3554
+      },
+      {
+        "path": "docs/de/README.md",
+        "reason": "file-budget",
+        "size": 18097
+      },
+      {
+        "path": "docs/decisions/DISCOVERY-NO-BUILD.md",
+        "reason": "file-budget",
+        "size": 7309
+      },
+      {
+        "path": "docs/design/DESIGN-agents-fleet-view.md",
+        "reason": "file-budget",
+        "size": 28000
+      },
+      {
+        "path": "docs/design/DESIGN-board-companion-extension.md",
+        "reason": "file-budget",
+        "size": 33854
+      },
+      {
+        "path": "docs/design/DESIGN-board-redesign-2026-09.md",
+        "reason": "file-budget",
+        "size": 100322
+      },
+      {
+        "path": "docs/design/DESIGN-board-review.md",
+        "reason": "file-budget",
+        "size": 31484
+      },
+      {
+        "path": "docs/design/DESIGN-inbox-redesign.md",
+        "reason": "file-budget",
+        "size": 43233
+      },
+      {
+        "path": "docs/design/DESIGN-readme-landing-review.md",
+        "reason": "file-budget",
+        "size": 35345
+      },
+      {
+        "path": "docs/design/DESIGN-story-rewrite-2026-09.md",
+        "reason": "file-budget",
+        "size": 23847
+      },
+      {
+        "path": "docs/design/README.md",
+        "reason": "file-budget",
+        "size": 1898
+      },
+      {
+        "path": "docs/es/README.md",
+        "reason": "file-budget",
+        "size": 17470
+      },
+      {
+        "path": "docs/fr/README.md",
+        "reason": "file-budget",
+        "size": 18563
+      },
+      {
+        "path": "docs/help-card.md",
+        "reason": "file-budget",
+        "size": 2679
+      },
+      {
+        "path": "docs/impl-briefs/IMPL-BRIEF-great_cto-ki1x.1.md",
+        "reason": "file-budget",
+        "size": 5575
+      },
+      {
+        "path": "docs/impl-briefs/IMPL-BRIEF-great_cto-ki1x.3.md",
+        "reason": "file-budget",
+        "size": 4738
+      },
+      {
+        "path": "docs/impl-briefs/IMPL-BRIEF-great_cto-ki1x.4.md",
+        "reason": "file-budget",
+        "size": 5847
+      },
+      {
+        "path": "docs/impl-briefs/IMPL-BRIEF-great_cto-ki1x.5.md",
+        "reason": "file-budget",
+        "size": 4460
+      },
+      {
+        "path": "docs/impl-briefs/IMPL-BRIEF-great_cto-ki1x.6.md",
+        "reason": "file-budget",
+        "size": 4455
+      },
+      {
+        "path": "docs/impl-briefs/IMPL-BRIEF-great_cto-ki1x.7.md",
+        "reason": "file-budget",
+        "size": 3949
+      },
+      {
+        "path": "docs/ja/README.md",
+        "reason": "file-budget",
+        "size": 21352
+      },
+      {
+        "path": "docs/ko/README.md",
+        "reason": "file-budget",
+        "size": 20215
+      },
+      {
+        "path": "docs/operations/MONITORING.md",
+        "reason": "file-budget",
+        "size": 3174
+      },
+      {
+        "path": "docs/plans/PLAN-2026-05-14-gap-closure.md",
+        "reason": "file-budget",
+        "size": 7840
+      },
+      {
+        "path": "docs/plans/PLAN-2026-05-14-gap-closure.summary.md",
+        "reason": "file-budget",
+        "size": 680
+      },
+      {
+        "path": "docs/plans/PLAN-2026-05-14-test-pyramid-expansion.md",
+        "reason": "file-budget",
+        "size": 10421
+      },
+      {
+        "path": "docs/plans/PLAN-2026-05-14-test-pyramid-expansion.summary.md",
+        "reason": "file-budget",
+        "size": 605
+      },
+      {
+        "path": "docs/plans/PLAN-2026-06-04-codex-host-support.md",
+        "reason": "file-budget",
+        "size": 8647
+      },
+      {
+        "path": "docs/plans/PLAN-2026-06-04-codex-host-support.summary.md",
+        "reason": "file-budget",
+        "size": 754
+      },
+      {
+        "path": "docs/plans/PLAN-2026-06-18-gate-tiering-reviewer-consolidation.md",
+        "reason": "file-budget",
+        "size": 6952
+      },
+      {
+        "path": "docs/plans/PLAN-2026-07-10-public-benchmark.md",
+        "reason": "file-budget",
+        "size": 7411
+      },
+      {
+        "path": "docs/plans/PLAN-2026-07-19-harness-close-the-loops.md",
+        "reason": "file-budget",
+        "size": 18748
+      },
+      {
+        "path": "docs/plans/PLAN-2026-07-28-product-only-approval.md",
+        "reason": "file-budget",
+        "size": 4208
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-08-self-improving-pipeline.md",
+        "reason": "file-budget",
+        "size": 11647
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-11-phases-4-5.md",
+        "reason": "file-budget",
+        "size": 3849
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-11-receipt-verification.md",
+        "reason": "file-budget",
+        "size": 3840
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-12-lesson-rules.md",
+        "reason": "file-budget",
+        "size": 4428
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-14-receipt-gate.md",
+        "reason": "file-budget",
+        "size": 3517
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-14-requirement-coverage.md",
+        "reason": "file-budget",
+        "size": 3644
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-14-style-at-the-boundary.md",
+        "reason": "file-budget",
+        "size": 3957
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-15-stale-after.md",
+        "reason": "file-budget",
+        "size": 3226
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-17-gate-fail-closed.md",
+        "reason": "file-budget",
+        "size": 4099
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-17-guards-that-do-not-run.md",
+        "reason": "file-budget",
+        "size": 4215
+      },
+      {
+        "path": "docs/plans/PLAN-2026-08-18-design-contract.md",
+        "reason": "file-budget",
+        "size": 6121
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-09-openrouter-routing.md",
+        "reason": "file-budget",
+        "size": 7587
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-09-openrouter-routing.summary.md",
+        "reason": "file-budget",
+        "size": 656
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-11-measured-agent-cost.md",
+        "reason": "file-budget",
+        "size": 10228
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-11-measured-agent-cost.summary.md",
+        "reason": "file-budget",
+        "size": 795
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-12-agent-duplication.md",
+        "reason": "file-budget",
+        "size": 8610
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-12-agent-duplication.summary.md",
+        "reason": "file-budget",
+        "size": 742
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-12-evidence-discipline.md",
+        "reason": "file-budget",
+        "size": 9238
+      },
+      {
+        "path": "docs/plans/PLAN-2026-09-12-evidence-discipline.summary.md",
+        "reason": "file-budget",
+        "size": 757
+      },
+      {
+        "path": "docs/plans/PLAN-board-agent-launch.md",
+        "reason": "file-budget",
+        "size": 3285
+      },
+      {
+        "path": "docs/plans/PLAN-board-redesign-2026-09.md",
+        "reason": "file-budget",
+        "size": 38304
+      },
+      {
+        "path": "docs/plans/PLAN-board-redesign-2026-09.summary.md",
+        "reason": "file-budget",
+        "size": 750
+      },
+      {
+        "path": "docs/plans/PLAN-borrow-santander.md",
+        "reason": "file-budget",
+        "size": 4893
+      },
+      {
+        "path": "docs/plans/PLAN-headroom-context-compression.md",
+        "reason": "file-budget",
+        "size": 6894
+      },
+      {
+        "path": "docs/plans/PLAN-headroom-context-compression.summary.md",
+        "reason": "file-budget",
+        "size": 800
+      },
+      {
+        "path": "docs/plans/PLAN-judge-provenance.md",
+        "reason": "file-budget",
+        "size": 10242
+      },
+      {
+        "path": "docs/plans/PLAN-nacl-governance.md",
+        "reason": "file-budget",
+        "size": 2436
+      },
+      {
+        "path": "docs/plans/PLAN-nacl-governance.summary.md",
+        "reason": "file-budget",
+        "size": 725
+      },
+      {
+        "path": "docs/plans/PLAN-npm-multi-platform.md",
+        "reason": "file-budget",
+        "size": 7770
+      },
+      {
+        "path": "docs/plans/PLAN-npm-multi-platform.summary.md",
+        "reason": "file-budget",
+        "size": 668
+      },
+      {
+        "path": "docs/plans/PLAN-opus48-tuning.md",
+        "reason": "file-budget",
+        "size": 4616
+      },
+      {
+        "path": "docs/plans/PLAN-sia-self-improvement-loop.md",
+        "reason": "file-budget",
+        "size": 6347
+      },
+      {
+        "path": "docs/plans/PLAN-sia-self-improvement-loop.summary.md",
+        "reason": "file-budget",
+        "size": 811
+      },
+      {
+        "path": "docs/plans/PLAN-token-economy-2026-q2.md",
+        "reason": "file-budget",
+        "size": 10140
+      },
+      {
+        "path": "docs/plans/PLAN-token-economy-2026-q2.summary.md",
+        "reason": "file-budget",
+        "size": 519
+      },
+      {
+        "path": "docs/plans/PLAN-us-market-coverage.md",
+        "reason": "file-budget",
+        "size": 2652
+      },
+      {
+        "path": "docs/plans/PLAN-us-market-coverage.summary.md",
+        "reason": "file-budget",
+        "size": 820
+      },
+      {
+        "path": "docs/plans/PLAN-v2.5.8-ci-hardening.md",
+        "reason": "file-budget",
+        "size": 3271
+      },
+      {
+        "path": "docs/plans/PLAN-v2.5.8-ci-hardening.summary.md",
+        "reason": "file-budget",
+        "size": 708
+      },
+      {
+        "path": "docs/plans/PLAN-v2.6.0-agent-prompt-linter.md",
+        "reason": "file-budget",
+        "size": 5048
+      },
+      {
+        "path": "docs/plans/PLAN-v2.6.0-agent-prompt-linter.summary.md",
+        "reason": "file-budget",
+        "size": 666
+      },
+      {
+        "path": "docs/plans/README.md",
+        "reason": "file-budget",
+        "size": 5043
+      },
+      {
+        "path": "docs/positioning/vocabulary.md",
+        "reason": "file-budget",
+        "size": 3163
+      },
+      {
+        "path": "docs/product/BRIEF-board-improvements.md",
+        "reason": "file-budget",
+        "size": 16221
+      },
+      {
+        "path": "docs/product/BRIEF-board-redesign-2026-09.md",
+        "reason": "file-budget",
+        "size": 31927
+      },
+      {
+        "path": "docs/product/BRIEF-readme-craft-2026-09.md",
+        "reason": "file-budget",
+        "size": 46713
+      },
+      {
+        "path": "docs/product/BRIEF-story-rewrite-2026-09.md",
+        "reason": "file-budget",
+        "size": 37932
+      },
+      {
+        "path": "docs/product/REVIEW-readme-landing.md",
+        "reason": "file-budget",
+        "size": 13012
+      },
+      {
+        "path": "docs/pt-BR/README.md",
+        "reason": "file-budget",
+        "size": 17476
+      },
+      {
+        "path": "docs/qa-reports/QA-2026-07-02-board-refactor.md",
+        "reason": "file-budget",
+        "size": 11355
+      },
+      {
+        "path": "docs/quality/FLEET-SCORE.md",
+        "reason": "file-budget",
+        "size": 1433
+      },
+      {
+        "path": "docs/quality/SCORE-a1-crud.md",
+        "reason": "file-budget",
+        "size": 423
+      },
+      {
+        "path": "docs/quality/SCORE-a2-booking.md",
+        "reason": "file-budget",
+        "size": 429
+      },
+      {
+        "path": "docs/quality/SCORE-a3-crm.md",
+        "reason": "file-budget",
+        "size": 421
+      },
+      {
+        "path": "docs/quality/SCORE-a4-dashboard.md",
+        "reason": "file-budget",
+        "size": 433
+      },
+      {
+        "path": "docs/quality/SCORE-a5-marketplace.md",
+        "reason": "file-budget",
+        "size": 437
+      },
+      {
+        "path": "docs/quality/SCORE-a6-content.md",
+        "reason": "file-budget",
+        "size": 429
+      },
+      {
+        "path": "docs/quality/SCORE-gen-crud-app.md",
+        "reason": "file-budget",
+        "size": 428
+      },
+      {
+        "path": "docs/reference/agents.md",
+        "reason": "file-budget",
+        "size": 25133
+      },
+      {
+        "path": "docs/reference/architecture-map.md",
+        "reason": "file-budget",
+        "size": 4184
+      },
+      {
+        "path": "docs/reference/ci-runners.md",
+        "reason": "file-budget",
+        "size": 6953
+      },
+      {
+        "path": "docs/reference/commands.md",
+        "reason": "file-budget",
+        "size": 11768
+      },
+      {
+        "path": "docs/reference/memory-filter-prompt.md",
+        "reason": "file-budget",
+        "size": 2662
+      },
+      {
+        "path": "docs/reference/project-capabilities.md",
+        "reason": "file-budget",
+        "size": 4982
+      },
+      {
+        "path": "docs/reference/skills.md",
+        "reason": "file-budget",
+        "size": 6546
+      },
+      {
+        "path": "docs/ru/README.md",
+        "reason": "file-budget",
+        "size": 26071
+      },
+      {
+        "path": "docs/security/SEC-execution-claims.md",
+        "reason": "file-budget",
+        "size": 20007
+      },
+      {
+        "path": "docs/security/SEC-pipeline-gate-reading.md",
+        "reason": "file-budget",
+        "size": 37701
+      },
+      {
+        "path": "docs/smoke-test.md",
+        "reason": "file-budget",
+        "size": 8455
+      },
+      {
+        "path": "docs/strategy/AGENTSPACE-ADOPT.md",
+        "reason": "file-budget",
+        "size": 2051
+      },
+      {
+        "path": "docs/strategy/BUILD-PIPELINES.md",
+        "reason": "file-budget",
+        "size": 6770
+      },
+      {
+        "path": "docs/strategy/BUILDER-AGENTS-GAP-PLAN.md",
+        "reason": "file-budget",
+        "size": 7809
+      },
+      {
+        "path": "docs/strategy/DEEPEN-PIPELINE.md",
+        "reason": "file-budget",
+        "size": 9084
+      },
+      {
+        "path": "docs/strategy/MID-BUILD-RECOVERY.md",
+        "reason": "file-budget",
+        "size": 4308
+      },
+      {
+        "path": "docs/strategy/PIPELINE-QUALITY-ASSESSMENT.md",
+        "reason": "file-budget",
+        "size": 3903
+      },
+      {
+        "path": "docs/strategy/PRODUCT-BUILDER-DIRECTION.md",
+        "reason": "file-budget",
+        "size": 4192
+      },
+      {
+        "path": "docs/strategy/PRODUCT-QUALITY-HARNESS.md",
+        "reason": "file-budget",
+        "size": 3847
+      },
+      {
+        "path": "docs/strategy/QUALITY-DEEPEN.md",
+        "reason": "file-budget",
+        "size": 3660
+      },
+      {
+        "path": "docs/strategy/ZRS-TASK-RUNNER-DESIGN.md",
+        "reason": "file-budget",
+        "size": 11817
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-21-jurisdiction-detection.md",
+        "reason": "file-budget",
+        "size": 43604
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-22-adversarial-critics.md",
+        "reason": "file-budget",
+        "size": 40913
+      },
+      {
+        "path": "docs/superpowers/plans/2026-05-22-bd-upgrade-bundled-critics.md",
+        "reason": "file-budget",
+        "size": 42688
+      }
+    ],
+    "omitted_count": 214,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 1500,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 217,
+      "complete": false,
+      "omitted": 214,
+      "stored": 3
+    }
+  },
+  "entity_id": "ent_787d6142ce5d5084bf8105c833747e89",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 1,
+    "interfaces": 3,
+    "limitations": 3,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 3
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/avelikiy/great_cto/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/8463cdb3ab3d551e/manifest.json",
+  "package_id": "pkg_46a1a73aa2008c8598fd9bfedb35165a4efa19df139c9a4ac0fca28f79630aae",
+  "repo": "avelikiy/great_cto",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ecc486714cf2e715dcace21349a18b1a1c4049c126fa3f36342a7432e4d7801a",
+  "snapshot_id": "8463cdb3ab3d551e",
+  "sources": [
+    {
+      "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+      "git_sha": "2080244b5b0581b4700031256c0935f5f3457984",
+      "lines": 84,
+      "path": "AGENTS.md",
+      "repository": "avelikiy/great_cto",
+      "sha256": "2ce107adb5c58e76a8e2b87de071cf6cbf1fa85531ac213ce382b9c38caa56f8",
+      "source_id": "src_02944e151ae5523cb593f8eaf99a4b44",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/AGENTS.md"
+    },
+    {
+      "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+      "git_sha": "824d44d0befbf8f17976277778125edff66e159d",
+      "lines": 177,
+      "path": "CLAUDE.md",
+      "repository": "avelikiy/great_cto",
+      "sha256": "155b030a195501c30d54fa9b1f2c978a1ba0d0dc0446964824ebd489e7beac29",
+      "source_id": "src_3f0fd68b192b5c29ab9cb28493567cde",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/CLAUDE.md"
+    },
+    {
+      "commit": "5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c",
+      "git_sha": "360ab70a4f3a7f4df47f4b6808598a33e0be4eb4",
+      "lines": 315,
+      "path": "README.md",
+      "repository": "avelikiy/great_cto",
+      "sha256": "a2ecb34b73bccfadb2ecff740e8d4f0c28520ec06054f724b9476a24b96a77df",
+      "source_id": "src_1a415f8d2a32571a93cdadc5310d1391",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/avelikiy/great_cto/blob/5ca5a322ac7a2b6ddf5b7a187c3cad2fd822698c/README.md"
+    }
+  ],
+  "summary": "great_cto is an MIT-licensed local orchestration layer for coding agents (Claude Code, partially Codex) that runs a gated build pipeline with human approval checkpoints, a localhost board, per-agent budgets, and a second-model cross-review. Evidence is mostly README documentation plus contributor instructions in AGENTS.md/CLAUDE.md.",
+  "superseded_claim_ids": []
+}

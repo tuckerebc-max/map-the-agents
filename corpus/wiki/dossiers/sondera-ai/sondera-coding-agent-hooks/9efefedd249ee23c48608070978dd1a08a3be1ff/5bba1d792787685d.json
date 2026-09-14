@@ -1,0 +1,766 @@
+{
+  "applied_operation_id": "op_3f0ec349a8ce4f3a950726d28a52970a",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_2e75df0423716b7eb4c091eb3655c1c73464b5c8c6790a97c2d6d57a61e9f4d5",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+          "line_end": 17,
+          "line_start": 10,
+          "path": "docs/architecture.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md#L10-L17"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7abe19841616eefc11fce37991a2a560ee3b0e5db2170b503898bbb33a460fdf"
+      ],
+      "text": "The harness coordinates three guardrail subsystems: a YARA-X signature engine (always on and the only deterministic one), an optional LLM secure-code policy classifier, and optional LLM information-flow sensitivity labeling."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8767f500c0ffa2ddd79be00717321c6c9125448995e9b94ae40097ee222889ef",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+          "line_end": 29,
+          "line_start": 25,
+          "path": "docs/architecture.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md#L25-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_242364530e388e978870fb0a770207f906a0651cd08fa23a67784981c5ad850a"
+      ],
+      "text": "The Cedar policy engine combines guardrail signals with entity state from a Turso (SQLite) local store and returns Allow, Deny, or Escalate adjudications back through the hook adapter."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_bf8497c681173ea7473cce5d7575717ec448844610374f088825240865108883",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+          "line_end": 8,
+          "line_start": 5,
+          "path": "docs/architecture.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md#L5-L8"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a46e8694975fcfe5bf1e049910bc2f8f2fac870caed0489d1044b588c6ea3b38"
+      ],
+      "text": "Hook adapters speak stdin/stdout JSON with each agent, normalize the payload, and forward it over gRPC to `sondera serve` on loopback TCP, 127.0.0.1:50051 by default."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7f7b6605c571d369fa524101d1df8ae9f1b2a6d10f929c62895d4780b44a69ef",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "5b6d0fb07cbb8487b77e7be8c92d2de8a3a4bac4",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "docs/getting-started.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/getting-started.md#L40-L43"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "5b6d0fb07cbb8487b77e7be8c92d2de8a3a4bac4",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "docs/getting-started.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/getting-started.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e4426c99aea8a7e377a6723790250d13bac090845d5abb49341456d766d1d22f",
+        "slc_eb8a6303824bf31a60ec6e87dbe328a9abe978d3a6b43b46d3ce00c604c5dde0"
+      ],
+      "text": "`sondera serve` runs two gRPC surfaces on one address: `sondera.harness.v1` for Cedar-backed adjudication and `sondera.console.v1` for agent and trajectory reads over the same store."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_88ed8a71d007983c82e9c01c87da37e888b9248facff52d23c5abc89708dd93d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+          "line_end": 51,
+          "line_start": 45,
+          "path": "docs/architecture.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md#L45-L51"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fe93b7044cc9006bdd9fa003afef7c7dd5c6ecab2fe32836c4bd96cde79b5350"
+      ],
+      "text": "Agent-specific tool names normalize to shared event types (Claude's Bash, Cursor's shell hook, Copilot's and Gemini's bash all become ShellCommand), so one Cedar rule set governs every supported agent."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7783327bc069eb34f4f2ce168fe6716dc241982bfa659502336eedb6607d1c86",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+          "line_end": 43,
+          "line_start": 38,
+          "path": "docs/architecture.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md#L38-L43"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+          "line_end": 36,
+          "line_start": 35,
+          "path": "docs/architecture.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md#L35-L36"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_84e99033045641945bae7085a94b18fa4661edc824e3c52f040958a99acf5318",
+        "slc_e658a44b257aaa904ed20d72efcdaa05e24daa93e5cc9404ddddc5d503ed315b"
+      ],
+      "text": "Agent execution is modeled as a trajectory of typed events in four categories: Action (pre-execution), Observation (post-execution), Control (lifecycle), and State (environment snapshots)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7a57cadd1c414fb6b86affaf23659e238323b1f38ce4fc1872cd33a8db67904e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "21f82b5314d356b0f16a9da6eaea9106d5fcd92e",
+          "line_end": 32,
+          "line_start": 29,
+          "path": "README.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/README.md#L29-L32"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "b07ca940763a517a86bb1ac1bb63cc7f68aff75c",
+          "line_end": 22,
+          "line_start": 20,
+          "path": "docs/deployment.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/deployment.md#L20-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a8862a031c11043a608027425499965728d88a5c6b0eea62e7f60a0d9f9f5d77",
+        "slc_bf1c8ce2da66daae85354fd595cc333f34ee516dfe097981ef1bd1e30aae13c8"
+      ],
+      "text": "Enforcement hooks fail closed: a hook that cannot reach the harness denies preventive events and never proceeds unadjudicated, so losing the server blocks the agent rather than ungoverning it."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3a741e09d77fec14ba60d2e5a9ae0b274fa33b27303aa30df5d27b2d97db7b71",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "882ef874fad63046205ee6130ce643d2ff3604b7",
+          "line_end": 92,
+          "line_start": 89,
+          "path": "docs/configuration.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/configuration.md#L89-L92"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+          "line_end": 23,
+          "line_start": 19,
+          "path": "docs/architecture.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md#L19-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_714e9b65a8b0f70c1d03e0af8987985293e13b773b778ff301b7b6c00a13fa26",
+        "slc_c68ea742b60e51971e9282d50d0fc526bad5d72ad892008024d466b786ed1758"
+      ],
+      "text": "The optional LLM classifiers fail open when disabled, erroring, or slower than the adjudication budget — to compliant with no violations and to Public — so Cedar and the deterministic policies still decide."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f550331e2cdc019645cd24aa3e4dbd228fbc6d345391de39c7ca3e2ae8054b5e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "21f82b5314d356b0f16a9da6eaea9106d5fcd92e",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/README.md#L36-L39"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "21f82b5314d356b0f16a9da6eaea9106d5fcd92e",
+          "line_end": 52,
+          "line_start": 41,
+          "path": "README.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/README.md#L41-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_98bf5b2b633fecbba5a5f33737b03cd340fd3ccaf87e77888956a3f4602c551c",
+        "slc_c76229190f66aa37166c035d2a704b1e5c66a73ca7178bca9166cb7c88db5169"
+      ],
+      "text": "Adapters can act on decisions as block (deny, fail-closed), ask (escalate to the host approval UI), steer (inject context), redact (replace tool output), terminate (stop the loop), or observe only, with capability varying per adapter and hook group."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_62c117de4ded26410eb724f0fcc8271166c43e9219430589de5e69647fb51b55",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "882ef874fad63046205ee6130ce643d2ff3604b7",
+          "line_end": 60,
+          "line_start": 57,
+          "path": "docs/configuration.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/configuration.md#L57-L60"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "882ef874fad63046205ee6130ce643d2ff3604b7",
+          "line_end": 76,
+          "line_start": 74,
+          "path": "docs/configuration.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/configuration.md#L74-L76"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "882ef874fad63046205ee6130ce643d2ff3604b7",
+          "line_end": 63,
+          "line_start": 62,
+          "path": "docs/configuration.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/configuration.md#L62-L63"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "21f82b5314d356b0f16a9da6eaea9106d5fcd92e",
+          "line_end": 77,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/README.md#L75-L77"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05e764465a6debf344987093cb93e7fdcbbce7943f9bfcef795b908c1f2c469b",
+        "slc_0e20956f94e35609bd1a7af13d59a0c385a0f2517ed81b48de5da2cfd143e86b",
+        "slc_eb8114627d01cc648297adc2bb3de4babbdab80a46b33f978299506a7f28a2c6",
+        "slc_f70d009accdd8fd2bfa4f47a006556b674d2b095c4589bc3b03e19243e56f072"
+      ],
+      "text": "The signature engine and Cedar policies run with no external dependencies or API keys; the optional LLM classifiers support Ollama (the default when enabled), OpenAI-compatible servers, Anthropic, Gemini, and Vertex AI via Application Default Credentials."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_58dec173115ed2b423be7154e433283dda251967e8fda2d4f71ff19d60f81761",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 52,
+          "line_start": 49,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L49-L52"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_31501711aea9e86891b3798e904f846d97ddd605441a211d3630a207d9d0a365"
+      ],
+      "text": "Every hook adapter depends on the harness crate as sondera-harness-client with default-features off and only the client feature, linking the gRPC client but not the policy engine."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b681d68111c5abe390647f360132cd7da05640b2c7eb469edf57a106aa232433",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "b07ca940763a517a86bb1ac1bb63cc7f68aff75c",
+          "line_end": 13,
+          "line_start": 11,
+          "path": "docs/deployment.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/deployment.md#L11-L13"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "b07ca940763a517a86bb1ac1bb63cc7f68aff75c",
+          "line_end": 9,
+          "line_start": 5,
+          "path": "docs/deployment.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/deployment.md#L5-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_157c49739e990af278c506a155448fb896ec28eb89fdc9983af931e254317b15",
+        "slc_17e0c75c9697617b711a7622fdd22055abc0ba5589b71ee79406cee5f1a5ac00"
+      ],
+      "text": "Neither gRPC surface authenticates its caller: adjudication is plain HTTP/2 gRPC and the console returns the whole local store and exposes agent deletion, so the bind address should stay on loopback or behind an authenticating proxy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_282c65fb898dbc36c04ca741468f17d4fe306b35cfe25c16f96733339b435d11",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "b07ca940763a517a86bb1ac1bb63cc7f68aff75c",
+          "line_end": 28,
+          "line_start": 26,
+          "path": "docs/deployment.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/deployment.md#L26-L28"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "882ef874fad63046205ee6130ce643d2ff3604b7",
+          "line_end": 92,
+          "line_start": 89,
+          "path": "docs/configuration.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/configuration.md#L89-L92"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6f90ba8e936e8004b99efd0ba64fa15bf21154a009a9062ebb25f0b94ae85089",
+        "slc_714e9b65a8b0f70c1d03e0af8987985293e13b773b778ff301b7b6c00a13fa26"
+      ],
+      "text": "Enabling the LLM classifiers adds latency to every decision they touch, and with guardrails enabled event content is sent to the configured provider."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0e4251a539d939fbb92dc47c02dc4634ab606aba944ff261b394f5dd12078a26",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "882ef874fad63046205ee6130ce643d2ff3604b7",
+          "line_end": 37,
+          "line_start": 32,
+          "path": "docs/configuration.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/configuration.md#L32-L37"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 47,
+          "line_start": 29,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L29-L47"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "5b6d0fb07cbb8487b77e7be8c92d2de8a3a4bac4",
+          "line_end": 54,
+          "line_start": 49,
+          "path": "docs/getting-started.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/getting-started.md#L49-L54"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "5b6d0fb07cbb8487b77e7be8c92d2de8a3a4bac4",
+          "line_end": 43,
+          "line_start": 40,
+          "path": "docs/getting-started.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/getting-started.md#L40-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6bc19cd03dee61027a4acbfce29b980a66503bbff7539d11cccfdfcecc9944b9",
+        "slc_9ab302d6b7df31474bff3bcee6fc1ab2c456e77b0811808511fdfbab92056c58",
+        "slc_cad14178566049e1a38ccc3d2e0d569d1e821451a0fba49ae0e4b5cb3e8bc73c",
+        "slc_e4426c99aea8a7e377a6723790250d13bac090845d5abb49341456d766d1d22f"
+      ],
+      "text": "Trajectories persist in a Turso (SQLite) store defaulting to ~/.sondera/trajectories/trajectories.db, overridable via --db; the console reads agents and trajectories from the same store."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9199d2916301eb69ee465747887bbc77c211d10431e79444f9d89588f0caa566",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "21f82b5314d356b0f16a9da6eaea9106d5fcd92e",
+          "line_end": 18,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/README.md#L12-L18"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "21f82b5314d356b0f16a9da6eaea9106d5fcd92e",
+          "line_end": 25,
+          "line_start": 20,
+          "path": "README.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/README.md#L20-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8f9a10fc877f48dac696c2336679800520f2dbfc0538781ff4984636767edb34",
+        "slc_962799c7e8cc1831a0b7a15eeed0fbb86e300474681edc41272b98abbd4457dc"
+      ],
+      "text": "The project targets AI coding agents — Claude Code, Cursor, GitHub Copilot, and Gemini CLI, plus adapters for Antigravity, Codex, Hermes, OpenCode, OpenHands, and VS Code — intercepting shell commands, file operations, and web requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27d771a4615fbcfb0f831dc6ebc3d807780d2876177289fb5125954e43a0c26f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 21,
+          "line_start": 20,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L20-L21"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 11,
+          "line_start": 9,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L9-L11"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 14,
+          "line_start": 14,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L14-L14"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 18,
+          "line_start": 17,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L17-L18"
+        },
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 58,
+          "line_start": 56,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L56-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_08f561e14580057506e2db528670a1418742f5442e09d3ea983caf0e68cfeee4",
+        "slc_2153e75d5431eb2c7b72273c16520e29214ad872ea159636d838d6cb05c46cfd",
+        "slc_68b65de9c888a9f593446b3d6cd9ea8858e767b9fbd76b1b67e84b4b33ad3732",
+        "slc_833a03e6f463c7b3802948e8accd387a5e407e7183e80877a9591356b7f2e1a1",
+        "slc_9b821f3423c5495595bd4aa215db7e1b2f724b2e51364ba320d220c51066d341"
+      ],
+      "text": "Repository development practice: CI runs cargo fmt --check, clippy with -D warnings, cargo doc, cargo test --locked --workspace, cargo deny check, and buf lint/format from crates/schema/proto; working conventions live in AGENTS.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_151be13f17087c676c76c50fa013810f91a0db8e8fd85e1e01d7c53462f871c4",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+          "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+          "line_end": 25,
+          "line_start": 23,
+          "path": "docs/development.md",
+          "repository": "sondera-ai/sondera-coding-agent-hooks",
+          "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md#L23-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_00d9c4015efb7ec36c0988c14ef5e976e20663cf2677b0a792ca8f9713a9e408"
+      ],
+      "text": "Repository development practice: integration tests needing a reachable model provider are #[ignore]d by default and run explicitly with `cargo test -- --ignored` once the configured provider is up."
+    }
+  ],
+  "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 108,
+        "path": "README.md",
+        "size": 4894
+      },
+      {
+        "lines": 59,
+        "path": "docs/architecture.md",
+        "size": 3581
+      },
+      {
+        "lines": 92,
+        "path": "docs/configuration.md",
+        "size": 3585
+      },
+      {
+        "lines": 28,
+        "path": "docs/deployment.md",
+        "size": 1124
+      },
+      {
+        "lines": 58,
+        "path": "docs/development.md",
+        "size": 3181
+      },
+      {
+        "lines": 95,
+        "path": "docs/getting-started.md",
+        "size": 3408
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/policies.md",
+        "reason": "file-budget",
+        "size": 3846
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 919
+      },
+      {
+        "path": "docs/tui.md",
+        "reason": "file-budget",
+        "size": 1429
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 5829
+      },
+      {
+        "path": "CLAUDE.md",
+        "reason": "file-budget",
+        "size": 9
+      }
+    ],
+    "omitted_count": 5,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 384,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 11,
+      "complete": false,
+      "omitted": 5,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_66fd8ca2716c5dfd9194d2cdec32927c",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 4,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/sondera-ai/sondera-coding-agent-hooks/9efefedd249ee23c48608070978dd1a08a3be1ff/5bba1d792787685d/manifest.json",
+  "package_id": "pkg_115823727f0f7e5f0a83ad1502e8f589eed1e19d2b357047ab9fb6d57f662843",
+  "repo": "sondera-ai/sondera-coding-agent-hooks",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "abea64a0ec0a00a9fc5f930f06da569e8c47ef82f4830548d7e81436d029dd52",
+  "snapshot_id": "5bba1d792787685d",
+  "sources": [
+    {
+      "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+      "git_sha": "21f82b5314d356b0f16a9da6eaea9106d5fcd92e",
+      "lines": 108,
+      "path": "README.md",
+      "repository": "sondera-ai/sondera-coding-agent-hooks",
+      "sha256": "8b644ebfb4b32010cf334f93be21345e9a5bfc725aab794efb825ecbbec4d5a8",
+      "source_id": "src_37fbb8c2c9bb5d9790b97afd84976bce",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/README.md"
+    },
+    {
+      "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+      "git_sha": "f255f28b901a0b5d079e1ed6da3ee7556ba0651b",
+      "lines": 59,
+      "path": "docs/architecture.md",
+      "repository": "sondera-ai/sondera-coding-agent-hooks",
+      "sha256": "19f6db8bf7d0b38e97eee93a4c532933c862aebfb8315880956e159b9b9a981d",
+      "source_id": "src_01675cc58c7b54a0b51e577833b380da",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/architecture.md"
+    },
+    {
+      "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+      "git_sha": "882ef874fad63046205ee6130ce643d2ff3604b7",
+      "lines": 92,
+      "path": "docs/configuration.md",
+      "repository": "sondera-ai/sondera-coding-agent-hooks",
+      "sha256": "774c8c1b6fb6f3400e3a807c10b49bf599eea64a2b975fe572571396ec34dc56",
+      "source_id": "src_d86caacffeb959b98224e809250edad0",
+      "stored": "configuration.md-17ed18489a95.md",
+      "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/configuration.md"
+    },
+    {
+      "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+      "git_sha": "b07ca940763a517a86bb1ac1bb63cc7f68aff75c",
+      "lines": 28,
+      "path": "docs/deployment.md",
+      "repository": "sondera-ai/sondera-coding-agent-hooks",
+      "sha256": "cf47b710dac2282b90c848ec0c92fd60a196e66880584c22d10fc0243593f529",
+      "source_id": "src_fa7cb92e480157b48a7e8c3e9b4754f4",
+      "stored": "deployment.md-7f6254f34e12.md",
+      "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/deployment.md"
+    },
+    {
+      "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+      "git_sha": "954c8740e3e9d99117f1b0b99e79ce1b803de4d4",
+      "lines": 58,
+      "path": "docs/development.md",
+      "repository": "sondera-ai/sondera-coding-agent-hooks",
+      "sha256": "a7cc3119b22913e122f3f17dcb60bbf8a23ccf0e8fc0f0a8de5ee18f57fd1fd0",
+      "source_id": "src_e361bf4545be5159945eb84b83b5c0a7",
+      "stored": "development.md-97db29a79153.md",
+      "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/development.md"
+    },
+    {
+      "commit": "9efefedd249ee23c48608070978dd1a08a3be1ff",
+      "git_sha": "5b6d0fb07cbb8487b77e7be8c92d2de8a3a4bac4",
+      "lines": 95,
+      "path": "docs/getting-started.md",
+      "repository": "sondera-ai/sondera-coding-agent-hooks",
+      "sha256": "b006657a3dc90c5e5010e4eb87958807679a35de1cfa4b30ecf241e091ec1a6a",
+      "source_id": "src_f0da4b17648057c28619e11006e8f9cf",
+      "stored": "getting-started.md-31bcba2ccafa.md",
+      "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks/blob/9efefedd249ee23c48608070978dd1a08a3be1ff/docs/getting-started.md"
+    }
+  ],
+  "summary": "Selected evidence records: The harness coordinates three guardrail subsystems: a YARA-X signature engine (always on and the only deterministic one), an optional LLM secure-code policy classifier, and optional LLM information-flow sensitivity labeling. The Cedar policy engine combines guardrail signals with entity state from a Turso (SQLite) local store and returns Allow, Deny, or Escalate adjudications back through the hook adapter.",
+  "superseded_claim_ids": []
+}

@@ -1,0 +1,501 @@
+{
+  "applied_operation_id": "op_45e1a35b2c434ef6bdf7aad6bc3cd4d0",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_19cdc0975ad04bf45b0f2a5d56a5680636788e4ea301aa036d6619b2a4d95d3d",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 12,
+          "line_start": 12,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L12-L12"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9f0ab2587880d3f66aa50b21e9b9bcd87940ad7c9bceae2ddf1e7e23be11356c"
+      ],
+      "text": "Debroid is a headless CLI speaking the Java Debug Wire Protocol (JDWP) so AI agents can debug live Android apps via machine-parseable JSON without a GUI."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_478ff84156000bcac64e29f8bb9cbd1e51dce4ea4fc4361bc70799b83dbcd7f9",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 140,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L137-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_035c20366e9f954f44db48ee7f65b02bb2d3654e3e1608aa094e44c354f3fb4c"
+      ],
+      "text": "CLI commands forward requests to a background daemon that auto-starts on first command, holds a long-lived JDWP socket via ADB port forwarding, and returns strict JSON on stdout."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fb8e9a8f8b13e6fb5f0122c22ca2b7d7f1cdc8d6665cd7d1b3c6eafff37237e1",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 170,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L144-L170"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f5b0ce78f5546165bff3ba0daca41ca9bac500ca504cacd0664dad8c4ec53ef1"
+      ],
+      "text": "Commands include daemon, stop, launch, attach, detach, break, remove-break, catch-exception, and others, with global options like --port/DEBROID_PORT, --version, --help, --pretty, and --schema."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a9ccbf50058029674d93079001b417d066b2a66acff1c18e605c7f2244095e9c",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 75,
+          "line_start": 75,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L75-L75"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 117,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L114-L117"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 93,
+          "line_start": 90,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L90-L93"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 101,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L98-L101"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2096ee8e159f7d03805d9e4b3a816007524e0936a1276870af3a8600f9439c4f",
+        "slc_3cfe0bdebee0b43ba4342268ce2e1c054ee37cb7b93e4b64f2e9ff87f536d586",
+        "slc_bb4965b0fcd61ddb68789043e18be18276236a987f1932186313a5fabec46c19",
+        "slc_f39e8ec7418f964386901ef599e06f95775c3257e3778b337a42e564076a7f4e"
+      ],
+      "text": "The CLI auto-extracts AI skill instructions to ~/.debroid/skills/debroid-cli/SKILL.md on first run, and the README documents symlink setup for agents like Claude Code, Cursor, Codex, and OpenCode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_156b4340fb2c227cf29b9282859dd38d5d47228a26ea6ffc925cbbac29893b9d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 174,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L172-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_38bfb2e5249ad76153de5812340cb591a54a566f27f95568dbbf173eca9b2785"
+      ],
+      "text": "The daemon listens on localhost (127.0.0.1) without authentication for fast CLI communication, and the README warns it exposes live JVM manipulation and should only run on fully trusted machines."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae844949d4760acabc8446dea9a2ebbfe3ba00ad105fe17e54f523adfda2f927",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 41,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L40-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ba1bd3ddc4cdc91d1dabe804f496c31e719a717289c7c918b89d7907997aa6b7"
+      ],
+      "text": "Prerequisites are Java JDK 11+ with JAVA_HOME set, plus Android SDK and adb on the PATH."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_750def0d7eee7e9b09a4a97abeef2f2436d351a9d363b8099045acfa4aa2ee49",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+          "line_end": 29,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md#L22-L29"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7da3cadda72cb342af0181605b7ef75fbc416c5155d60233148a7ac52e4aa625"
+      ],
+      "text": "Features include recursive deep object inspection with cycle-guards, live variable mutation via set-var, expression evaluation in the target VM, and extraction of shallow locals from Kotlin Continuation frames."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4bfee066c64a4b4e972506915a446bb831af56b8f2b1ff50d0676011568ec1e3",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "64c6c2f3ca9e483ec29a868891a61fe112f886a1",
+          "line_end": 22,
+          "line_start": 19,
+          "path": "CHANGELOG.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CHANGELOG.md#L19-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_6e48a63b618fe0a8009ef9bf2364cbfff4b343b8f1e3b2b5da96003bea7d121b"
+      ],
+      "text": "The in-memory event buffer was increased to 10,000 events, and poll output includes droppedEventsSinceLastPoll to signal unnotified event loss under high volume."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5d3c9cb689405016814fcce7f9d94382c350e36570d0ca03bbbcf872ae255fc6",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "64c6c2f3ca9e483ec29a868891a61fe112f886a1",
+          "line_end": 38,
+          "line_start": 38,
+          "path": "CHANGELOG.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CHANGELOG.md#L38-L38"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3124ad458fab02678963cd90a7ed2008834aa1674e42b7644a27229688bb4687"
+      ],
+      "text": "JSON serialization omits null fields (explicitNulls = false) to shrink payloads and save context tokens for AI agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9271ae6cd91a98ffb73c4b60cafeec033cdc6413914839cf1a1869f1210356dd",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 22,
+          "line_start": 21,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L21-L22"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 16,
+          "line_start": 15,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L15-L16"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L25-L25"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 18,
+          "line_start": 18,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L18-L18"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0ef2af735655319fb28138e434365ebe08ffa204ad206453ee2eac08c403f8ac",
+        "slc_6fb3e351fc3a89a3031cdaee3640e3d67b49d633e7bb604dab4a5fa8c5909da6",
+        "slc_814ad722946adc2b94e68cafda5a817e8b8442adfc86d5b5bef2876d5bd00d32",
+        "slc_9b5ce2a680685762c2d30a411bf364fe3f1bba07096d2057cd5f918aca08f0ff"
+      ],
+      "text": "Repository development practice: contributors must run ./gradlew detekt test :cli:build for fast verification and ./gradlew build before final commits, and must never use raw println in the CLI layer—only serialized JSON via kotlinx.serialization."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_99542f5b662d255ad217bcd9c6cf245fcd7179b5accf9d3b9aa7efd5258e1e98",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 43,
+          "line_start": 41,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L41-L43"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 70,
+          "line_start": 63,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L63-L70"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L61-L61"
+        },
+        {
+          "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+          "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+          "line_end": 39,
+          "line_start": 36,
+          "path": "CONTRIBUTING.md",
+          "repository": "patilshreyas/debroid",
+          "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md#L36-L39"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2d8ec478b001546fdd275f899d79ec75677f15c48b60207430e88aedac4bdb97",
+        "slc_4dc0b372cbae43fbfc7e3a312e3c014647b29882efa4250be107a6749b00a370",
+        "slc_74dbb9d5cbf5cc4041ff6158274bead059e2d8e56bb828ee792025bce2523df1",
+        "slc_a0fe2e85b2370e8559855a79e845af921323d8b972295684fe2f3c53099970ce"
+      ],
+      "text": "Repository development practice: CLI JSON response models are guarded by golden schema tests in JsonSchemaGoldenTest; contributors update schemas with ./gradlew test -DupdateGoldenSchemas=true and must keep SKILL.md, README command reference, and CHANGELOG.md in sync with any command or output change."
+    }
+  ],
+  "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 184,
+        "path": "README.md",
+        "size": 10681
+      },
+      {
+        "lines": 1,
+        "path": "version.txt",
+        "size": 6
+      },
+      {
+        "lines": 32,
+        "path": "AGENTS.md",
+        "size": 2810
+      },
+      {
+        "lines": 82,
+        "path": "CHANGELOG.md",
+        "size": 11277
+      },
+      {
+        "lines": 70,
+        "path": "CONTRIBUTING.md",
+        "size": 4420
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 126,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 5,
+      "complete": true,
+      "omitted": 0,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_dceeb4452a7750c591a207fc068dd415",
+  "facets": {
+    "components": 0,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 2,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/patilshreyas/debroid/90139a0c1ab51df7b704540a221b541d26621649/a2e8fba98b8e8276/manifest.json",
+  "package_id": "pkg_60bd3674f30dc69a90c090bf18aee5adfa18ce17d91c17686992ae2389d0fbfe",
+  "repo": "patilshreyas/debroid",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "89b2405392ae68b42294280d2c1ecad0eb9370e9182d29e0da671095b01373d7",
+  "snapshot_id": "a2e8fba98b8e8276",
+  "sources": [
+    {
+      "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+      "git_sha": "7ae2f2c776f85e626a02416d1fcd56d356b360aa",
+      "lines": 32,
+      "path": "AGENTS.md",
+      "repository": "patilshreyas/debroid",
+      "sha256": "92bc7bbc8c51e2fd946102fc1f149c7f3bc4b857c0825733be2dc646262a7eed",
+      "source_id": "src_74a6b2a7d5fe5eac914c481cc38216b4",
+      "stored": "agents.md-a54ff182c7e8.md",
+      "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/AGENTS.md"
+    },
+    {
+      "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+      "git_sha": "64c6c2f3ca9e483ec29a868891a61fe112f886a1",
+      "lines": 82,
+      "path": "CHANGELOG.md",
+      "repository": "patilshreyas/debroid",
+      "sha256": "66823fe785f2bde86249904dd5732d212abc58a7bdcd141a7489368542a4a556",
+      "source_id": "src_11fb91b4ebbd535689d9a5d9970ed66a",
+      "stored": "changelog.md-06572a96a58d.md",
+      "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CHANGELOG.md"
+    },
+    {
+      "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+      "git_sha": "5ba695a933ea8c238b400c1caa01ecd62ca1b6c3",
+      "lines": 70,
+      "path": "CONTRIBUTING.md",
+      "repository": "patilshreyas/debroid",
+      "sha256": "47b97d07f7b3d7c80ea1cb1d2cf0034fb19c89f35044a208a0674937f420364a",
+      "source_id": "src_6426cfc9c9f35f0b8c4c06672371ac9a",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/CONTRIBUTING.md"
+    },
+    {
+      "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+      "git_sha": "035cb7030351e3caa61e8d1a71a436034648b79a",
+      "lines": 184,
+      "path": "README.md",
+      "repository": "patilshreyas/debroid",
+      "sha256": "b9493bbd5a601baf46d1eeec72ef09a1350e51dbd4389ae39b6d353638ea9309",
+      "source_id": "src_bac38073475d5caba93a0c36a4e699fb",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/README.md"
+    },
+    {
+      "commit": "90139a0c1ab51df7b704540a221b541d26621649",
+      "git_sha": "9e11b32fcaa96816319e5d0dcff9fb2873f04061",
+      "lines": 1,
+      "path": "version.txt",
+      "repository": "patilshreyas/debroid",
+      "sha256": "79e3f22ca37c7fdf4c29ae3648d6b008c3cb6547260a453409275470919dc674",
+      "source_id": "src_ecce5e1b68c75e93baab333112dd4061",
+      "stored": "version.txt-97a08f11d52b.txt",
+      "url": "https://github.com/PatilShreyas/debroid/blob/90139a0c1ab51df7b704540a221b541d26621649/version.txt"
+    }
+  ],
+  "summary": "Debroid is a headless CLI speaking the Java Debug Wire Protocol (JDWP) so AI agents can debug live Android apps via machine-parseable JSON without a GUI. CLI commands forward requests to a background daemon that auto-starts on first command, holds a long-lived JDWP socket via ADB port forwarding, and returns strict JSON on stdout.",
+  "superseded_claim_ids": []
+}

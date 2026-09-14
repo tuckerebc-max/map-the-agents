@@ -1,0 +1,1759 @@
+{
+  "applied_operation_id": "op_76b645ea104f416bb5d81595b619555f",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_eb511d332b8b6e20bf1e3a825c946ca706ffcf25d4c3798990d47683fcc86c22",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 335,
+          "line_start": 315,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L315-L335"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 54,
+          "line_start": 40,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L40-L54"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8638785e9e598103b8a25748bbe7c2e9c830fa67cb0cf27f3c634dd773ccbe1d",
+        "slc_f30b808e38beee36057b0a24b5c5beea676a7eeffca89620f36297147c8627e1"
+      ],
+      "text": "The plugin registers a roster of specialized agents including architect, coder, reviewer, test_engineer, critic, explorer, sme, docs, designer, plus optional and conditional critic, curator, and council agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a76b520c22e5337ddcfeb7af14544d0d2f85df16f81284a70df3f2c8ffc0f0e3",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L56-L56"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 313,
+          "line_start": 313,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L313-L313"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ae34fe6c97dc6f1c4be7216f9e61a20be0819b4995768e00beb7726696aa0c4d",
+        "slc_b8bf0a49b1b94ec71d2b903e26cd7d16d26f160ac7068b63d6669a37b31a1d38"
+      ],
+      "text": "A Swarm architect coordinates all internal agents automatically; users never manually switch roles, and if the active OpenCode agent is not a Swarm architect the plugin workflow is bypassed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3f6276ac7af9effb3c97d9c80fd79a35118398d4f37919bf9803b9cde14301ec",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L19-L19"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 31,
+          "line_start": 31,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L31-L31"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_10c3d744ff0a823611750cd9cb5584ba618c2b23f900286521e861ca6ef1822d",
+        "slc_a06d0df843a17263840149da20b10c848c6a7816e06e8dc5d51ec330fc836078"
+      ],
+      "text": "The pipeline is gated: code does not ship without reviewer and test-engineer approval, and agents never mutate the codebase in parallel."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e8ff51a3f4f73b3a3d7b3f16568e872e49bc3690cb8eb9e5b28a2737b77d4d6",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 547,
+          "line_start": 547,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L547-L547"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 545,
+          "line_start": 541,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L541-L545"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 539,
+          "line_start": 539,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L539-L539"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4995bdd2592bc9ff7c1e8eb82a611603717d181ed0dd9489c44ad12a28e12f01",
+        "slc_5f5973001d3dea4babadc11b336cb46517c0b316705093cf7c8aba1067d72e65",
+        "slc_858a1e161414a73eedac5f9ba333f9fe8ff8743b9f0a8959bb02c8f78454f309"
+      ],
+      "text": "Per-agent file authority restricts writes: coder to src/tests/docs/scripts, reviewer to .swarm/evidence, explorer and sme read-only, overridable via authority.rules config."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_637132fa5b482cc9775e48c03591257212c91aba29fb66288cc97109ac74fdd5",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 62,
+          "line_start": 62,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L62-L62"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 79,
+          "line_start": 76,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L76-L79"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 74,
+          "line_start": 66,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L66-L74"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0bce3b017f017b73a29db1546a90b452dfee7745df559e99188f194b30c9cbfb",
+        "slc_65fac1b7c8a588567771bcde4d2e0d9aa9929060f763d178169734a7fda1e6c8",
+        "slc_cb2a0ffc9a63b7aba67e7dd8d0f5a7bbcad240369b5bfc8ae8d6f94fea3ca2cd"
+      ],
+      "text": "Shell write detection statically analyzes commands (bash-parser AST for POSIX, regex for PowerShell/cmd) to intercept redirects, write builtins, in-place edits, downloads, and destructive git operations before execution."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b82732244aeee43b333d731bebe2643fb94641ca114f6da0a2f569c0a9673fe",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 89,
+          "line_start": 85,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L85-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41065650cf79e33fd24939a6ae508d477b4958b378105fa2eb235df52445c0be"
+      ],
+      "text": "Declared task scopes persist to .swarm/scopes/scope-{taskId}.json with 24-hour TTL default, symlink guards, and fail-closed validation; recursive deletes are blocked unless targets fall within scope."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc8d96af30ea61a78a259ced6982e312765c5b4282a06370c4cd5870f0ed207f",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 518,
+          "line_start": 518,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L518-L518"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 520,
+          "line_start": 520,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L520-L520"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 512,
+          "line_start": 512,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L512-L512"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 514,
+          "line_start": 514,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L514-L514"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 516,
+          "line_start": 516,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L516-L516"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 128,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L128-L128"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a25d4bc5900b30efbc2344aaad8c4cc840fec8a769aad5ffe38bec36c373949",
+        "slc_132edf6b5906368f385d4114ce99026b231969f345ef5582be8d0705ef46c038",
+        "slc_5296caa0b2f45598b79e9d5732dcfc2873e242e0a4d55bd21ade6ba4733781a4",
+        "slc_6b27eb0430a644ac3ba50e55db7a6b8964a3d54db8e15d7acf907195d7b56182",
+        "slc_7c6e5e4e7dd334faa52a8d047271315ecfd8c4a7cff1dac2d1e4a6f5d7147b6e",
+        "slc_aa2fa9213683cf233e7a7299c54927d0e74b2f3a4e9a9cba6de4a920529a92c1"
+      ],
+      "text": "All project state lives under .swarm/: plan-ledger.jsonl as authoritative source, context.md, evidence/, telemetry.jsonl, and curator-summary.json; sessions are resumable, skipping discovery when state exists."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5070f17df1fe0a91481c35870c8a8dcbebc6d533bdc656883eebd9cdd3d5c2cf",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 291,
+          "line_start": 291,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L291-L291"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 281,
+          "line_start": 273,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L273-L281"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 305,
+          "line_start": 293,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L293-L305"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 307,
+          "line_start": 307,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L307-L307"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a956443677f269d382cfad0c1194d65e7b716fd2d7ad8fbccb407d1adf5f80d",
+        "slc_4182f4595c9089c5dc6ec707ce08f451a4f33eef321d3f66038f8168ce864fd0",
+        "slc_8b9191dbc1fb27cf2155187f5511c60cc4bab94d39c599e75b90a4e5cea9e0e7",
+        "slc_e3559410e344eecc7faf041ec51c1c6d72d68c5d0b0e890623bb758ae5caad43"
+      ],
+      "text": "Slash commands include /swarm help, status, show-plan, agents, diagnose, evidence, and reset --confirm; deprecated aliases like /swarm plan and /swarm info still function but are hidden from help."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_745856266830a1c250f163740d2fa551d146c81be61e353a9eb83dddf9bd2ba7",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 157,
+          "line_start": 157,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L157-L157"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 149,
+          "line_start": 149,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L149-L149"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 143,
+          "line_start": 138,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L138-L143"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 155,
+          "line_start": 151,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L151-L155"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 136,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L136-L136"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_029bb246c64207e2b2108a71a567eb995decc2fed1f1522a287b5ea82896d03d",
+        "slc_09cf4960de4be62d18b759c06328057e5a32cc5a77e626df3a58bf34ac2d87cb",
+        "slc_890d8cdf3d4ae9710e29c2e102f6840b126c48e000f8c40f4e2ae07175fcbc56",
+        "slc_ba895f56b20b42f98c98322d1e442de6cbfb2cc598b435572e6fc8279958910a",
+        "slc_ffde3aac5ef14ae482eb930468a7b3d8091a3b9843a55675b7c7525ae7f3f679"
+      ],
+      "text": "Session modes are toggled via slash commands (balanced default, turbo, lean turbo, full-auto) while project mode is set persistently via the execution_mode config key (strict, balanced, fast)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_470eccd6b9e191c97674dbe01ae6b610a7a70f3fb1e4a1ecfff4ea44d4ee9ab0",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_d6d8bacffe25becfc0ddda3beec5f9e75bcd5edb6aa4c5f94aa2664bd156f72e"
+      ],
+      "text": "Installation requires Bun >= 1.3.13 or Node.js >= 22.13 for npm installs, with the Node-hosted sidecar using the built-in node:sqlite module."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ae028039f5e456161f35305ce871ea5f3f78f8cd46f70621c6aa3bd496ddd2be",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 627,
+          "line_start": 616,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L616-L627"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 590,
+          "line_start": 585,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L585-L590"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 596,
+          "line_start": 592,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L592-L596"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 583,
+          "line_start": 583,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L583-L583"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1570250e156c1f850b3d6c2367300abaf6db56bbafc30f7b52e5d05b5b7ba4dd",
+        "slc_3fc171d3d81a5c087f80d349ed99f6a720b9c7686a65e53838ba75c8fdd6359f",
+        "slc_9b59b6a9f481bc6de1cd7196f889f2e7da620d3368e34ce2bcb5d025337ad6f5",
+        "slc_fb552c1f26b9cb68b5e3f73912146db316477b22bbb12f3b28f369eb3b8d1fb3"
+      ],
+      "text": "Skill propagation logs usage to .swarm/skill-usage.jsonl, scores relevance (threshold 0.5, max 5 recommendations), optionally enforces a SKILLS: field on delegations, and supports .opencode/skill-routing.yaml routing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a50a29e048c031836f58dee920145352b8e5b906bafdd41e12c08f6a9e88bc0b",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 633,
+          "line_start": 633,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L633-L633"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2c453fab57b8ac2ede42eedd1e1a56817ffb75d3841dc17cae0e94a17e62bfdf"
+      ],
+      "text": "Seven skill lifecycle tools (skill_generate through skill_improve) are opt-in via skills.enabled (default false); with the flag off they are host-denied for all agents except skill_improver."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_818bf167be682d2499db5ea26ef5ea1d878879986eb93948abb5be5b51358642",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 508,
+          "line_start": 508,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L508-L508"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c7359634c781aa0dc09c70970af618e97e034bfd9ce41607b2d45842988ea368"
+      ],
+      "text": "The README notes some PRM configuration fields (max_trajectory_lines, escalation_enabled) are defined in schema but not yet enforced at runtime."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f731f55bf02f31e47433ce01eb812333e69e78da9a4f05fb18d21a0a69196f1e",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 484,
+          "line_start": 480,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L480-L484"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 489,
+          "line_start": 486,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L486-L489"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 478,
+          "line_start": 478,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L478-L478"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1bef3fc35b095853fa206d75f41c505431e62d2cf52e60db6bb99f5fb2345312",
+        "slc_a7412c6b8ffc3a4c3d97322a09d43eb67658d6e1279d0564bb6bc4b023f2973f",
+        "slc_d5ac1bc0cc7cdeb863fc4cf142eef104fa95e3db8ea44a8d41a7af1d69b562a6"
+      ],
+      "text": "A Process Remediation Model detects five failure patterns (repetition loop, ping-pong, expansion drift, stuck-on-test, context thrashing) and escalates from advisory guidance to architect alert to hard stop."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_512d036dd1b953bcfcdd4ad222ee49c3dfe258172159d4d3b7759badbb4503c5",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 531,
+          "line_start": 526,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L526-L531"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 533,
+          "line_start": 533,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L533-L533"
+        },
+        {
+          "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+          "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+          "line_end": 524,
+          "line_start": 524,
+          "path": "README.md",
+          "repository": "zaxbyhub/opencode-swarm",
+          "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md#L524-L524"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c02b3838265332e15df61982347b37da8f28ea71856e6430c7cc6db9bf0b8cb",
+        "slc_8abf6fe6694103de5dd174fdd9853e91413d7d65dc490668baa8424f1de2f7fb",
+        "slc_bf2bace673614a5d4bdce28ee6ba75aa7dbf177d2222d288b6d337872a6448df"
+      ],
+      "text": "Every agent runs inside a circuit breaker with defaults of 200 tool calls, 30-minute duration, 10x same-tool repetition, and 5 consecutive errors, reset per task with per-agent overrides available."
+    }
+  ],
+  "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 1257,
+        "path": "README.md",
+        "size": 68505
+      },
+      {
+        "lines": 604,
+        "path": "docs/memory.md",
+        "size": 38781
+      },
+      {
+        "lines": 156,
+        "path": "docs/adding-a-language.md",
+        "size": 10004
+      },
+      {
+        "lines": 84,
+        "path": "docs/releases/v6.20.0.md",
+        "size": 2524
+      },
+      {
+        "lines": 1,
+        "path": "docs/releases/pending/fix-linked-knowledge-injection.md",
+        "size": 147
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/architecture.md",
+        "reason": "byte-budget",
+        "size": 129380
+      },
+      {
+        "path": "docs/configuration.md",
+        "reason": "byte-budget",
+        "size": 180038
+      },
+      {
+        "path": "docs/skills.md",
+        "reason": "byte-budget",
+        "size": 20248
+      },
+      {
+        "path": "TESTING.md",
+        "reason": "byte-budget",
+        "size": 15105
+      },
+      {
+        "path": "docs/automation-status.md",
+        "reason": "byte-budget",
+        "size": 3590
+      },
+      {
+        "path": "docs/ci-required-check-contract.md",
+        "reason": "byte-budget",
+        "size": 4118
+      },
+      {
+        "path": "docs/ci.md",
+        "reason": "byte-budget",
+        "size": 8073
+      },
+      {
+        "path": "docs/commands.md",
+        "reason": "byte-budget",
+        "size": 54227
+      },
+      {
+        "path": "docs/consensus-mining.md",
+        "reason": "byte-budget",
+        "size": 48002
+      },
+      {
+        "path": "docs/context-map.md",
+        "reason": "byte-budget",
+        "size": 13859
+      },
+      {
+        "path": "docs/design-rationale.md",
+        "reason": "byte-budget",
+        "size": 20229
+      },
+      {
+        "path": "docs/engineering-invariants.md",
+        "reason": "byte-budget",
+        "size": 84518
+      },
+      {
+        "path": "docs/evaluation-substrate.md",
+        "reason": "byte-budget",
+        "size": 7126
+      },
+      {
+        "path": "docs/evidence-and-telemetry.md",
+        "reason": "byte-budget",
+        "size": 16649
+      },
+      {
+        "path": "docs/getting-started.md",
+        "reason": "byte-budget",
+        "size": 12491
+      },
+      {
+        "path": "docs/harness-evolution.md",
+        "reason": "byte-budget",
+        "size": 4465
+      },
+      {
+        "path": "docs/index.md",
+        "reason": "byte-budget",
+        "size": 6613
+      },
+      {
+        "path": "docs/installation-linux-docker.md",
+        "reason": "byte-budget",
+        "size": 6020
+      },
+      {
+        "path": "docs/installation-llm-operator.md",
+        "reason": "byte-budget",
+        "size": 6122
+      },
+      {
+        "path": "docs/installation.md",
+        "reason": "byte-budget",
+        "size": 37940
+      },
+      {
+        "path": "docs/invocation-failures.md",
+        "reason": "byte-budget",
+        "size": 6371
+      },
+      {
+        "path": "docs/knowledge.md",
+        "reason": "byte-budget",
+        "size": 47547
+      },
+      {
+        "path": "docs/mcp.md",
+        "reason": "byte-budget",
+        "size": 14265
+      },
+      {
+        "path": "docs/modes.md",
+        "reason": "byte-budget",
+        "size": 48789
+      },
+      {
+        "path": "docs/observability-event-contract.md",
+        "reason": "byte-budget",
+        "size": 81139
+      },
+      {
+        "path": "docs/observability-retention-registry.md",
+        "reason": "byte-budget",
+        "size": 71111
+      },
+      {
+        "path": "docs/php-laravel.md",
+        "reason": "byte-budget",
+        "size": 6209
+      },
+      {
+        "path": "docs/plan-durability.md",
+        "reason": "byte-budget",
+        "size": 47595
+      },
+      {
+        "path": "docs/planning.md",
+        "reason": "byte-budget",
+        "size": 32424
+      },
+      {
+        "path": "docs/pr-feedback-publication-generations.md",
+        "reason": "byte-budget",
+        "size": 9274
+      },
+      {
+        "path": "docs/pr-review-transition-authority.md",
+        "reason": "byte-budget",
+        "size": 7939
+      },
+      {
+        "path": "docs/repo-graph-call-graph.md",
+        "reason": "byte-budget",
+        "size": 5724
+      },
+      {
+        "path": "docs/repo-graph-symbol-graph.md",
+        "reason": "byte-budget",
+        "size": 62520
+      },
+      {
+        "path": "docs/repo-memory-graph-plan.md",
+        "reason": "byte-budget",
+        "size": 18737
+      },
+      {
+        "path": "docs/skill-optimizer.md",
+        "reason": "byte-budget",
+        "size": 4597
+      },
+      {
+        "path": "docs/sqlite-durable-state.md",
+        "reason": "byte-budget",
+        "size": 17738
+      },
+      {
+        "path": "docs/startup-latency.md",
+        "reason": "byte-budget",
+        "size": 7818
+      },
+      {
+        "path": "docs/swarm-briefing.md",
+        "reason": "byte-budget",
+        "size": 11700
+      },
+      {
+        "path": "docs/tree-sitter-evaluation.md",
+        "reason": "byte-budget",
+        "size": 3503
+      },
+      {
+        "path": "docs/archive/ARCHIVE.md",
+        "reason": "byte-budget",
+        "size": 3617
+      },
+      {
+        "path": "docs/archive/knowledge-system-audit.md",
+        "reason": "byte-budget",
+        "size": 44951
+      },
+      {
+        "path": "docs/archive/test-audit-failures.md",
+        "reason": "byte-budget",
+        "size": 3553
+      },
+      {
+        "path": "docs/archive/test-audit-report.md",
+        "reason": "byte-budget",
+        "size": 8452
+      },
+      {
+        "path": "docs/audits/test-stability-audit.md",
+        "reason": "byte-budget",
+        "size": 8423
+      },
+      {
+        "path": "docs/ci/merge-queue-policy.md",
+        "reason": "byte-budget",
+        "size": 20421
+      },
+      {
+        "path": "docs/council/README.md",
+        "reason": "byte-budget",
+        "size": 30376
+      },
+      {
+        "path": "docs/decisions/0001-mxc-sandbox-backend.md",
+        "reason": "byte-budget",
+        "size": 3957
+      },
+      {
+        "path": "docs/decisions/0002-opencode-ensemble-adoption.md",
+        "reason": "byte-budget",
+        "size": 10959
+      },
+      {
+        "path": "docs/dev/worktree-parallelization-first-class-plan.md",
+        "reason": "byte-budget",
+        "size": 13791
+      },
+      {
+        "path": "docs/examples/web-app.md",
+        "reason": "byte-budget",
+        "size": 16840
+      },
+      {
+        "path": "docs/proposals/auto-review-by-review-model.md",
+        "reason": "byte-budget",
+        "size": 28409
+      },
+      {
+        "path": "docs/proposals/full-auto-sandbox-boundary-and-critic-oversight.md",
+        "reason": "byte-budget",
+        "size": 3952
+      },
+      {
+        "path": "docs/releases/v6.15.0.md",
+        "reason": "byte-budget",
+        "size": 8235
+      },
+      {
+        "path": "docs/releases/v6.16.0.md",
+        "reason": "byte-budget",
+        "size": 5917
+      },
+      {
+        "path": "docs/releases/v6.16.1.md",
+        "reason": "byte-budget",
+        "size": 5695
+      },
+      {
+        "path": "docs/releases/v6.17.0.md",
+        "reason": "byte-budget",
+        "size": 11882
+      },
+      {
+        "path": "docs/releases/v6.17.1.md",
+        "reason": "byte-budget",
+        "size": 4788
+      },
+      {
+        "path": "docs/releases/v6.17.2.md",
+        "reason": "byte-budget",
+        "size": 3434
+      },
+      {
+        "path": "docs/releases/v6.17.3.md",
+        "reason": "byte-budget",
+        "size": 5795
+      },
+      {
+        "path": "docs/releases/v6.18.0.md",
+        "reason": "byte-budget",
+        "size": 4812
+      },
+      {
+        "path": "docs/releases/v6.18.1.md",
+        "reason": "byte-budget",
+        "size": 3175
+      },
+      {
+        "path": "docs/releases/v6.19.0.md",
+        "reason": "byte-budget",
+        "size": 8566
+      },
+      {
+        "path": "docs/releases/v6.19.1.md",
+        "reason": "byte-budget",
+        "size": 5157
+      },
+      {
+        "path": "docs/releases/v6.21.0.md",
+        "reason": "byte-budget",
+        "size": 2257
+      },
+      {
+        "path": "docs/releases/v6.22.0.md",
+        "reason": "byte-budget",
+        "size": 8097
+      },
+      {
+        "path": "docs/releases/v6.23.0.md",
+        "reason": "byte-budget",
+        "size": 677
+      },
+      {
+        "path": "docs/releases/v6.24.0.md",
+        "reason": "byte-budget",
+        "size": 1110
+      },
+      {
+        "path": "docs/releases/v6.25.0.md",
+        "reason": "byte-budget",
+        "size": 906
+      },
+      {
+        "path": "docs/releases/v6.26.0.md",
+        "reason": "byte-budget",
+        "size": 1197
+      },
+      {
+        "path": "docs/releases/v6.26.1.md",
+        "reason": "byte-budget",
+        "size": 1969
+      },
+      {
+        "path": "docs/releases/v6.27.0.md",
+        "reason": "byte-budget",
+        "size": 396
+      },
+      {
+        "path": "docs/releases/v6.28.0.md",
+        "reason": "byte-budget",
+        "size": 1782
+      },
+      {
+        "path": "docs/releases/v6.29.0.md",
+        "reason": "byte-budget",
+        "size": 2245
+      },
+      {
+        "path": "docs/releases/v6.29.1.md",
+        "reason": "byte-budget",
+        "size": 4385
+      },
+      {
+        "path": "docs/releases/v6.29.2.md",
+        "reason": "byte-budget",
+        "size": 5362
+      },
+      {
+        "path": "docs/releases/v6.29.3.md",
+        "reason": "byte-budget",
+        "size": 1449
+      },
+      {
+        "path": "docs/releases/v6.29.4.md",
+        "reason": "byte-budget",
+        "size": 6475
+      },
+      {
+        "path": "docs/releases/v6.30.0.md",
+        "reason": "byte-budget",
+        "size": 3240
+      },
+      {
+        "path": "docs/releases/v6.30.1.md",
+        "reason": "byte-budget",
+        "size": 10505
+      },
+      {
+        "path": "docs/releases/v6.31.0.md",
+        "reason": "byte-budget",
+        "size": 5412
+      },
+      {
+        "path": "docs/releases/v6.32.0.md",
+        "reason": "byte-budget",
+        "size": 2527
+      },
+      {
+        "path": "docs/releases/v6.33.0.md",
+        "reason": "byte-budget",
+        "size": 2756
+      },
+      {
+        "path": "docs/releases/v6.33.1.md",
+        "reason": "byte-budget",
+        "size": 4113
+      },
+      {
+        "path": "docs/releases/v6.33.2.md",
+        "reason": "byte-budget",
+        "size": 4973
+      },
+      {
+        "path": "docs/releases/v6.33.5.md",
+        "reason": "byte-budget",
+        "size": 2085
+      },
+      {
+        "path": "docs/releases/v6.33.6.md",
+        "reason": "byte-budget",
+        "size": 2479
+      },
+      {
+        "path": "docs/releases/v6.33.7.md",
+        "reason": "byte-budget",
+        "size": 3286
+      },
+      {
+        "path": "docs/releases/v6.33.8.md",
+        "reason": "byte-budget",
+        "size": 1165
+      },
+      {
+        "path": "docs/releases/v6.34.0.md",
+        "reason": "byte-budget",
+        "size": 3125
+      },
+      {
+        "path": "docs/releases/v6.35.0.md",
+        "reason": "byte-budget",
+        "size": 4751
+      },
+      {
+        "path": "docs/releases/v6.35.1.md",
+        "reason": "byte-budget",
+        "size": 2257
+      },
+      {
+        "path": "docs/releases/v6.35.2.md",
+        "reason": "byte-budget",
+        "size": 3262
+      },
+      {
+        "path": "docs/releases/v6.35.3.md",
+        "reason": "byte-budget",
+        "size": 3339
+      },
+      {
+        "path": "docs/releases/v6.35.4.md",
+        "reason": "byte-budget",
+        "size": 3348
+      },
+      {
+        "path": "docs/releases/v6.36.0.md",
+        "reason": "byte-budget",
+        "size": 6595
+      },
+      {
+        "path": "docs/releases/v6.37.0.md",
+        "reason": "byte-budget",
+        "size": 4964
+      },
+      {
+        "path": "docs/releases/v6.38.0.md",
+        "reason": "byte-budget",
+        "size": 4456
+      },
+      {
+        "path": "docs/releases/v6.39.0.md",
+        "reason": "byte-budget",
+        "size": 3329
+      },
+      {
+        "path": "docs/releases/v6.40.0.md",
+        "reason": "byte-budget",
+        "size": 6526
+      },
+      {
+        "path": "docs/releases/v6.40.2.md",
+        "reason": "byte-budget",
+        "size": 2939
+      },
+      {
+        "path": "docs/releases/v6.40.4.md",
+        "reason": "byte-budget",
+        "size": 1182
+      },
+      {
+        "path": "docs/releases/v6.40.5.md",
+        "reason": "byte-budget",
+        "size": 2365
+      },
+      {
+        "path": "docs/releases/v6.40.6.md",
+        "reason": "byte-budget",
+        "size": 2616
+      },
+      {
+        "path": "docs/releases/v6.40.7.md",
+        "reason": "byte-budget",
+        "size": 3247
+      },
+      {
+        "path": "docs/releases/v6.40.8.md",
+        "reason": "byte-budget",
+        "size": 3540
+      },
+      {
+        "path": "docs/releases/v6.41.0.md",
+        "reason": "byte-budget",
+        "size": 5294
+      },
+      {
+        "path": "docs/releases/v6.41.1.md",
+        "reason": "byte-budget",
+        "size": 5604
+      },
+      {
+        "path": "docs/releases/v6.41.2.md",
+        "reason": "byte-budget",
+        "size": 4638
+      },
+      {
+        "path": "docs/releases/v6.41.3.md",
+        "reason": "byte-budget",
+        "size": 4331
+      },
+      {
+        "path": "docs/releases/v6.41.4.md",
+        "reason": "byte-budget",
+        "size": 3640
+      },
+      {
+        "path": "docs/releases/v6.42.0.md",
+        "reason": "byte-budget",
+        "size": 3182
+      },
+      {
+        "path": "docs/releases/v6.42.1.md",
+        "reason": "byte-budget",
+        "size": 7147
+      },
+      {
+        "path": "docs/releases/v6.43.1.md",
+        "reason": "byte-budget",
+        "size": 3790
+      },
+      {
+        "path": "docs/releases/v6.43.2.md",
+        "reason": "byte-budget",
+        "size": 3315
+      },
+      {
+        "path": "docs/releases/v6.44.0.md",
+        "reason": "byte-budget",
+        "size": 4716
+      },
+      {
+        "path": "docs/releases/v6.44.1.md",
+        "reason": "byte-budget",
+        "size": 3852
+      },
+      {
+        "path": "docs/releases/v6.44.2.md",
+        "reason": "byte-budget",
+        "size": 3807
+      },
+      {
+        "path": "docs/releases/v6.44.3.md",
+        "reason": "byte-budget",
+        "size": 2364
+      },
+      {
+        "path": "docs/releases/v6.45.0.md",
+        "reason": "byte-budget",
+        "size": 3731
+      },
+      {
+        "path": "docs/releases/v6.45.1.md",
+        "reason": "byte-budget",
+        "size": 3560
+      },
+      {
+        "path": "docs/releases/v6.45.2.md",
+        "reason": "byte-budget",
+        "size": 2957
+      },
+      {
+        "path": "docs/releases/v6.47.0.md",
+        "reason": "byte-budget",
+        "size": 3241
+      },
+      {
+        "path": "docs/releases/v6.47.1.md",
+        "reason": "byte-budget",
+        "size": 5821
+      },
+      {
+        "path": "docs/releases/v6.47.2.md",
+        "reason": "byte-budget",
+        "size": 5308
+      },
+      {
+        "path": "docs/releases/v6.48.0.md",
+        "reason": "byte-budget",
+        "size": 5428
+      },
+      {
+        "path": "docs/releases/v6.49.0.md",
+        "reason": "byte-budget",
+        "size": 11571
+      },
+      {
+        "path": "docs/releases/v6.50.0.md",
+        "reason": "byte-budget",
+        "size": 3769
+      },
+      {
+        "path": "docs/releases/v6.51.0.md",
+        "reason": "byte-budget",
+        "size": 3522
+      },
+      {
+        "path": "docs/releases/v6.52.0.md",
+        "reason": "byte-budget",
+        "size": 3111
+      },
+      {
+        "path": "docs/releases/v6.53.0.md",
+        "reason": "byte-budget",
+        "size": 1874
+      },
+      {
+        "path": "docs/releases/v6.53.3.md",
+        "reason": "byte-budget",
+        "size": 3238
+      },
+      {
+        "path": "docs/releases/v6.53.4.md",
+        "reason": "byte-budget",
+        "size": 719
+      },
+      {
+        "path": "docs/releases/v6.53.5.md",
+        "reason": "byte-budget",
+        "size": 3386
+      },
+      {
+        "path": "docs/releases/v6.53.6.md",
+        "reason": "byte-budget",
+        "size": 2512
+      },
+      {
+        "path": "docs/releases/v6.53.7.md",
+        "reason": "byte-budget",
+        "size": 2652
+      },
+      {
+        "path": "docs/releases/v6.54.0.md",
+        "reason": "byte-budget",
+        "size": 2921
+      },
+      {
+        "path": "docs/releases/v6.55.0.md",
+        "reason": "byte-budget",
+        "size": 5361
+      },
+      {
+        "path": "docs/releases/v6.56.0.md",
+        "reason": "byte-budget",
+        "size": 3504
+      },
+      {
+        "path": "docs/releases/v6.57.0.md",
+        "reason": "byte-budget",
+        "size": 3108
+      },
+      {
+        "path": "docs/releases/v6.58.0.md",
+        "reason": "byte-budget",
+        "size": 4056
+      },
+      {
+        "path": "docs/releases/v6.58.1.md",
+        "reason": "byte-budget",
+        "size": 4809
+      },
+      {
+        "path": "docs/releases/v6.59.0.md",
+        "reason": "byte-budget",
+        "size": 2819
+      },
+      {
+        "path": "docs/releases/v6.60.0.md",
+        "reason": "byte-budget",
+        "size": 2708
+      },
+      {
+        "path": "docs/releases/v6.60.1.md",
+        "reason": "byte-budget",
+        "size": 1381
+      },
+      {
+        "path": "docs/releases/v6.61.0.md",
+        "reason": "byte-budget",
+        "size": 2600
+      },
+      {
+        "path": "docs/releases/v6.62.0.md",
+        "reason": "byte-budget",
+        "size": 6053
+      },
+      {
+        "path": "docs/releases/v6.63.0.md",
+        "reason": "byte-budget",
+        "size": 3329
+      },
+      {
+        "path": "docs/releases/v6.64.0.md",
+        "reason": "byte-budget",
+        "size": 6860
+      },
+      {
+        "path": "docs/releases/v6.65.0.md",
+        "reason": "byte-budget",
+        "size": 4430
+      },
+      {
+        "path": "docs/releases/v6.66.0.md",
+        "reason": "byte-budget",
+        "size": 10597
+      },
+      {
+        "path": "docs/releases/v6.67.0.md",
+        "reason": "byte-budget",
+        "size": 3570
+      },
+      {
+        "path": "docs/releases/v6.67.1.md",
+        "reason": "byte-budget",
+        "size": 5094
+      },
+      {
+        "path": "docs/releases/v6.67.2.md",
+        "reason": "byte-budget",
+        "size": 3211
+      },
+      {
+        "path": "docs/releases/v6.68.0.md",
+        "reason": "byte-budget",
+        "size": 7228
+      },
+      {
+        "path": "docs/releases/v6.69.0.md",
+        "reason": "byte-budget",
+        "size": 6971
+      },
+      {
+        "path": "docs/releases/v6.70.0.md",
+        "reason": "byte-budget",
+        "size": 19486
+      },
+      {
+        "path": "docs/releases/v6.71.0.md",
+        "reason": "byte-budget",
+        "size": 5391
+      },
+      {
+        "path": "docs/releases/v6.71.1.md",
+        "reason": "byte-budget",
+        "size": 4669
+      },
+      {
+        "path": "docs/releases/v6.72.0.md",
+        "reason": "byte-budget",
+        "size": 7324
+      },
+      {
+        "path": "docs/releases/v6.72.1.md",
+        "reason": "byte-budget",
+        "size": 2878
+      },
+      {
+        "path": "docs/releases/v6.73.0.md",
+        "reason": "byte-budget",
+        "size": 5984
+      },
+      {
+        "path": "docs/releases/v6.74.0.md",
+        "reason": "byte-budget",
+        "size": 7261
+      },
+      {
+        "path": "docs/releases/v6.74.1.md",
+        "reason": "byte-budget",
+        "size": 1927
+      },
+      {
+        "path": "docs/releases/v6.76.0.md",
+        "reason": "byte-budget",
+        "size": 3681
+      },
+      {
+        "path": "docs/releases/v6.77.0.md",
+        "reason": "byte-budget",
+        "size": 3289
+      },
+      {
+        "path": "docs/releases/v6.78.0.md",
+        "reason": "byte-budget",
+        "size": 3296
+      },
+      {
+        "path": "docs/releases/v6.80.1.md",
+        "reason": "byte-budget",
+        "size": 2711
+      },
+      {
+        "path": "docs/releases/v6.80.2.md",
+        "reason": "byte-budget",
+        "size": 3152
+      },
+      {
+        "path": "docs/releases/v6.81.0.md",
+        "reason": "byte-budget",
+        "size": 5029
+      },
+      {
+        "path": "docs/releases/v6.81.1.md",
+        "reason": "byte-budget",
+        "size": 2416
+      },
+      {
+        "path": "docs/releases/v6.81.2.md",
+        "reason": "byte-budget",
+        "size": 2638
+      },
+      {
+        "path": "docs/releases/v6.82.0.md",
+        "reason": "byte-budget",
+        "size": 2682
+      },
+      {
+        "path": "docs/releases/v6.82.2.md",
+        "reason": "byte-budget",
+        "size": 1922
+      },
+      {
+        "path": "docs/releases/v6.83.0.md",
+        "reason": "byte-budget",
+        "size": 2818
+      },
+      {
+        "path": "docs/releases/v6.84.3.md",
+        "reason": "byte-budget",
+        "size": 1303
+      },
+      {
+        "path": "docs/releases/v6.84.4.md",
+        "reason": "byte-budget",
+        "size": 1865
+      },
+      {
+        "path": "docs/releases/v6.84.5.md",
+        "reason": "byte-budget",
+        "size": 2554
+      },
+      {
+        "path": "docs/releases/v6.84.6.md",
+        "reason": "byte-budget",
+        "size": 3300
+      },
+      {
+        "path": "docs/releases/v6.84.7.md",
+        "reason": "byte-budget",
+        "size": 2463
+      },
+      {
+        "path": "docs/releases/v6.85.0.md",
+        "reason": "byte-budget",
+        "size": 2833
+      },
+      {
+        "path": "docs/releases/v6.85.1.md",
+        "reason": "byte-budget",
+        "size": 1571
+      },
+      {
+        "path": "docs/releases/v6.85.3.md",
+        "reason": "byte-budget",
+        "size": 1684
+      },
+      {
+        "path": "docs/releases/v6.85.4.md",
+        "reason": "byte-budget",
+        "size": 2637
+      },
+      {
+        "path": "docs/releases/v6.86.0.md",
+        "reason": "byte-budget",
+        "size": 3572
+      },
+      {
+        "path": "docs/releases/v6.86.1.md",
+        "reason": "byte-budget",
+        "size": 4271
+      },
+      {
+        "path": "docs/releases/v6.86.10.md",
+        "reason": "byte-budget",
+        "size": 1700
+      },
+      {
+        "path": "docs/releases/v6.86.12.md",
+        "reason": "byte-budget",
+        "size": 2322
+      },
+      {
+        "path": "docs/releases/v6.86.13.md",
+        "reason": "byte-budget",
+        "size": 2647
+      },
+      {
+        "path": "docs/releases/v6.86.14.md",
+        "reason": "byte-budget",
+        "size": 2890
+      },
+      {
+        "path": "docs/releases/v6.86.3.md",
+        "reason": "byte-budget",
+        "size": 1755
+      },
+      {
+        "path": "docs/releases/v6.86.5.md",
+        "reason": "byte-budget",
+        "size": 2107
+      },
+      {
+        "path": "docs/releases/v6.86.7.md",
+        "reason": "byte-budget",
+        "size": 4552
+      },
+      {
+        "path": "docs/releases/v6.86.8.md",
+        "reason": "byte-budget",
+        "size": 5184
+      },
+      {
+        "path": "docs/releases/v6.86.9.md",
+        "reason": "byte-budget",
+        "size": 5023
+      },
+      {
+        "path": "docs/releases/v7.0.0.md",
+        "reason": "byte-budget",
+        "size": 5662
+      },
+      {
+        "path": "docs/releases/v7.0.1.md",
+        "reason": "byte-budget",
+        "size": 2673
+      },
+      {
+        "path": "docs/releases/v7.0.2.md",
+        "reason": "byte-budget",
+        "size": 4329
+      },
+      {
+        "path": "docs/releases/v7.0.3.md",
+        "reason": "byte-budget",
+        "size": 3070
+      },
+      {
+        "path": "docs/releases/v7.1.0.md",
+        "reason": "byte-budget",
+        "size": 2594
+      },
+      {
+        "path": "docs/releases/v7.103.0.md",
+        "reason": "byte-budget",
+        "size": 3240
+      }
+    ],
+    "omitted_count": 947,
+    "omitted_slices": 4,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6426,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 952,
+      "complete": false,
+      "omitted": 947,
+      "stored": 5
+    }
+  },
+  "entity_id": "ent_9541aa4a9064571b8f9708185384e667",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 2,
+    "specifications": 0,
+    "tools-permissions": 3,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zaxbyhub/opencode-swarm/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/1ea8b5b5f4e58f3d/manifest.json",
+  "package_id": "pkg_92df0ea23ffbc5b8ddb3ac1a5176712f8b86e4f1ffd40b786115d67dc7e81563",
+  "repo": "zaxbyhub/opencode-swarm",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "ea6c2800e03fde7d5d69dfd809cd56fa3b87735f6d60a0ce7fc7db7872488a12",
+  "snapshot_id": "1ea8b5b5f4e58f3d",
+  "sources": [
+    {
+      "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+      "git_sha": "9d78932a40e9c193b9810317d9e614bf9e219673",
+      "lines": 1257,
+      "path": "README.md",
+      "repository": "zaxbyhub/opencode-swarm",
+      "sha256": "9d23f3696b4d60faacde6d1ffb696644e6567584824255542f78687a1c16d374",
+      "source_id": "src_c01ca3e3d8aa57eb95521c277e643878",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/README.md"
+    },
+    {
+      "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+      "git_sha": "18514dd57214a7304c3db60f935732d30a77e92c",
+      "lines": 156,
+      "path": "docs/adding-a-language.md",
+      "repository": "zaxbyhub/opencode-swarm",
+      "sha256": "1559e55b7b76eddec31afb8c1f640e601ecd50d4f7edc83e214531b5e6c1f690",
+      "source_id": "src_f9862756abbc5aa2becc6f6c1d0d3e07",
+      "stored": "adding-a-language.md-f8fc81c1fbaf.md",
+      "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/docs/adding-a-language.md"
+    },
+    {
+      "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+      "git_sha": "bc17e7f37d79e484abae281a9b2c8df019b3489d",
+      "lines": 604,
+      "path": "docs/memory.md",
+      "repository": "zaxbyhub/opencode-swarm",
+      "sha256": "afecdb5e8dfe1a32121f7f6d40a3a16b11fa997d9c2496f7f6ffac3f04190f15",
+      "source_id": "src_045feaea41825b84b72f2fd9dcbfff2e",
+      "stored": "memory.md-ad99d17d1a33.md",
+      "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/docs/memory.md"
+    },
+    {
+      "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+      "git_sha": "c0fcce38b51fb7acae6f3a894e9ff0d6859f8a8b",
+      "lines": 1,
+      "path": "docs/releases/pending/fix-linked-knowledge-injection.md",
+      "repository": "zaxbyhub/opencode-swarm",
+      "sha256": "be3da8ca1a342b02fc0b045828af91b2c64504852748d69691486e7fac44ae40",
+      "source_id": "src_92fa68109db958238e9c86f7cd4c8b21",
+      "stored": "fix-linked-knowledge-injection.md-3c466e50cdd1.md",
+      "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/docs/releases/pending/fix-linked-knowledge-injection.md"
+    },
+    {
+      "commit": "7f125e8f751b0a2d54cb014f823e46bd47ce5efa",
+      "git_sha": "b4e301ceb3a4efcc3e73f7b65397b6eb4019ce1a",
+      "lines": 84,
+      "path": "docs/releases/v6.20.0.md",
+      "repository": "zaxbyhub/opencode-swarm",
+      "sha256": "527ad07faacfaf948a994d2dacf2ec33ff5de7d9a70eb612e8b708d9e7b1bc04",
+      "source_id": "src_565a2ce36c125474bf6c3be6c31bf358",
+      "stored": "v6.20.0.md-11d1edcdb463.md",
+      "url": "https://github.com/ZaxbyHub/opencode-swarm/blob/7f125e8f751b0a2d54cb014f823e46bd47ce5efa/docs/releases/v6.20.0.md"
+    }
+  ],
+  "summary": "README-only evidence for opencode-swarm, an OpenCode plugin that orchestrates specialized agents behind gated quality pipelines with shell-write guardrails, persistent .swarm/ state, and skill tooling. No code-inspected or development-practice evidence is present. Evidence coverage: 145 of 400 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

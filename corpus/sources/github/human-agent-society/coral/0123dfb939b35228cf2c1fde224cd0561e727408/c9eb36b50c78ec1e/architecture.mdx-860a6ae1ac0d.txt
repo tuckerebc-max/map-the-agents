@@ -1,0 +1,102 @@
+---
+title: Architecture
+description: How CORAL runs autonomous coding agents in isolated workspaces with grading and shared memory.
+---
+
+
+CORAL follows a simple loop: **spawn agents → agents read instructions → commit changes → eval → repeat**.
+
+## System overview
+
+```
+┌─────────────────────────────────────────┐
+│              coral start                │
+│                                         │
+│  1. Create .coral/ shared state         │
+│  2. Create per-agent git worktrees      │
+│  3. Spawn grader daemon                 │
+│  4. Generate CORAL.md instructions      │
+│  5. Spawn agent subprocesses            │
+└────────────────────┬────────────────────┘
+                     │
+      ┌──────────────┼──────────────┐
+      │              │              │
+      ▼              ▼              ▼
+┌──────────┐  ┌──────────┐  ┌─────────────────┐
+│ Agent 1  │  │ Agent 2  │  │ Grader Daemon   │
+│          │  │          │  │                 │
+│ Edit code│  │ Edit code│  │ Poll pending    │
+│ commit   │  │ commit   │  │ git worktree    │
+│ write    │  │ write    │  │ run grader      │
+│ pending  │  │ pending  │  │ write score     │
+│ poll...  │  │ poll...  │  │ cleanup         │
+└──────────┘  └──────────┘  └─────────────────┘
+      │              │              ▲
+      └──────────────┴──────────────┘
+           .coral/public/attempts/
+           (pending → scored JSONs)
+```
+
+Agents and the grader daemon communicate **entirely through the filesystem** — there is no RPC, no sockets, no message queue. Agents write pending attempt JSON files; the daemon reads them, grades, and writes back the results. Agents poll the same files until the score appears.
+
+## Directory layout
+
+When you run `coral start`, the following structure is created:
+
+```
+results/<task-name>/<timestamp>/
+├── .coral/                    # Shared state directory
+│   ├── config.yaml            # Task configuration (copy)
+│   ├── public/                # Visible to all agents
+│   │   ├── attempts/          # JSON records of each eval
+│   │   ├── notes/             # Agent-written insights
+│   │   ├── skills/            # Reusable tools/scripts
+│   │   ├── logs/              # Agent session logs
+│   │   ├── heartbeat/         # Heartbeat action configs
+│   │   ├── steering/          # Stopped-run dashboard steering queue
+│   │   ├── eval_count         # Global eval counter
+│   │   ├── grader_daemon.pid  # Daemon process ID
+│   │   └── grader_daemon_heartbeat  # Daemon liveness timestamp
+│   └── private/               # Hidden from agents
+│       ├── grader_venv/       # Isolated venv running the grader entrypoint
+│       └── grader_checkouts/  # Ephemeral worktrees for grading
+│
+└── agents/
+    ├── agent-1/               # Git worktree for agent 1
+    │   ├── .coral_dir         # Points to shared .coral/
+    │   ├── .coral_agent_id    # This agent's ID
+    │   ├── CORAL.md           # Generated instructions
+    │   └── <task files>       # Seeded from workspace.repo_path
+    │
+    └── agent-2/               # Git worktree for agent 2
+        └── ...
+```
+
+## Tech stack
+
+| Component | Technology |
+|-----------|------------|
+| Language | Python 3.11+ |
+| Build system | Hatchling |
+| Package manager | uv |
+| Agent runtimes | Claude Code, Codex, OpenCode |
+| Web dashboard | Starlette (backend) + React/Vite (frontend) |
+| Key dependency | PyYAML |
+
+## Dashboard steering
+
+The dashboard can steer a stopped run through `.coral/public/steering/`.
+`POST /api/steer` validates that the manager is not alive, then either queues a
+`continue_from` action or marks an attempt as user-best. `coral resume` is the
+only place queued `continue_from` actions are applied: the manager finds every
+agent worktree whose current HEAD descends from the selected commit, resets
+those worktrees to the selected commit, composes the queued instruction with any
+operator-provided resume instruction, and marks the action applied.
+
+The CLI uses the same manager path without the queue: `coral resume --from
+<hash> -i "..."` creates an in-memory resume steering action for the selected
+attempt and composes it with the resume instruction.
+
+This keeps ownership clear. Live agents own their worktrees while running; the
+dashboard only mutates worktrees during resume, after the previous manager has
+stopped.

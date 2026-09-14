@@ -1,0 +1,32 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_2a3accaea063c5b2034e3021746828036e5691cc3cbabd138bceba84756b850b
+- clm_33d6b7b3148a0696b260f02ed4a3f6387f5f9f2933b90c04950ab5b8956c7a4e
+- clm_3551f3e984d483d060a6f5956da13eab791355a510486b5a1ab0e5dbb37d6e6e
+- clm_396f0a5dc8223be646839082bd6331e6110ab12fb269d66185e7d18ea6ec0e38
+- clm_4e7e58d859372c706bfc3c119cc90fdf2f6189973539cc8d87ec101a03a2fc16
+- clm_55f18fecfc63c413d6278f1140f7475275a087c0149e918ca865bf38e83a23be
+- clm_6ce8b38c0e210435c12601f8b2371b8a5b4a9dedfd9d5b0e93d2d447562d3d53
+- clm_a5af11315f5cad9e7c39df4a5ffeeae36dd11b5bbacfeb0d37cdc34fffeeb863
+- clm_e55ff74319cdb43b20b074a3a5f2c4faa169fa9489f4a8dde42e7f4d88571949
+- clm_ea01a76bb5e758d13ca9c68c8ad398be3e27ce336952d92c21efb7600031f40c
+maturity: draft
+page_id: pg_ef51b015740a5996bb3044bf60de08f1
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: softeria/postmortemthis
+updated_at: '2026-09-14T02:40:58Z'
+---
+
+# softeria/postmortemthis
+
+<!-- rcw:begin owner=entity:ent_8befd35ee0a95f02bf84c6086153e2c4 block=evidence -->
+- softeria/postmortemthis is mentioned in this evidence. [@claim:clm_2a3accaea063c5b2034e3021746828036e5691cc3cbabd138bceba84756b850b] [@claim:clm_33d6b7b3148a0696b260f02ed4a3f6387f5f9f2933b90c04950ab5b8956c7a4e] [@claim:clm_3551f3e984d483d060a6f5956da13eab791355a510486b5a1ab0e5dbb37d6e6e] [@claim:clm_396f0a5dc8223be646839082bd6331e6110ab12fb269d66185e7d18ea6ec0e38] [@claim:clm_4e7e58d859372c706bfc3c119cc90fdf2f6189973539cc8d87ec101a03a2fc16] [@claim:clm_55f18fecfc63c413d6278f1140f7475275a087c0149e918ca865bf38e83a23be] [@claim:clm_6ce8b38c0e210435c12601f8b2371b8a5b4a9dedfd9d5b0e93d2d447562d3d53] [@claim:clm_a5af11315f5cad9e7c39df4a5ffeeae36dd11b5bbacfeb0d37cdc34fffeeb863] [@claim:clm_e55ff74319cdb43b20b074a3a5f2c4faa169fa9489f4a8dde42e7f4d88571949] [@claim:clm_ea01a76bb5e758d13ca9c68c8ad398be3e27ce336952d92c21efb7600031f40c]
+<!-- rcw:end owner=entity:ent_8befd35ee0a95f02bf84c6086153e2c4 block=evidence -->
+
+## Researcher notes
+

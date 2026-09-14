@@ -8,14 +8,19 @@ import subprocess
 import sys
 from pathlib import Path
 
-from . import automation, collect, core, intake, maps, wiki, workers
+from . import automation, collect, core, directory, intake, maps, wiki, workers
 
 EXIT_EMPTY = 4
 EXIT_AUDIT_FAILED = 3  # mirrors the kernel's audit exit status
 
 
 def _emit(obj: object) -> None:
-    sys.stdout.write(json.dumps(obj, indent=2, sort_keys=True, ensure_ascii=False) + "\n")
+    # ensure_ascii=True (the JSON default): the wire text is pure ASCII (non-ASCII characters escaped
+    # as \uXXXX), so writing it to sys.stdout never depends on the host's console/pipe encoding --
+    # cp1252, cp437, an ASCII pipe, anything. json.loads on the reading side decodes those escapes back
+    # to the exact original Unicode string; no character is transliterated, replaced, truncated or
+    # dropped. Only the wire bytes are ASCII; decoded values are unchanged.
+    sys.stdout.write(json.dumps(obj, indent=2, sort_keys=True, ensure_ascii=True) + "\n")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -41,6 +46,8 @@ def build_parser() -> argparse.ArgumentParser:
     p_cat = sub.add_parser("catalog", help="process a bounded batch of the alltheagents.org backing feed")
     p_cat.add_argument("--limit", type=int, default=50, help="entries to process this call")
     p_cat.add_argument("--published", action="store_true", help="also record the published index digest/count")
+    p_dir = sub.add_parser("directory", help="capture the alltheagents.org published index and agents/*.md site pages")
+    p_dir.add_argument("--limit", type=int, default=50, help="site pages to fetch this call")
     p_snap = sub.add_parser("snapshot", help="store an immutable text snapshot of a public repository head")
     p_snap.add_argument("repo", help="owner/repo")
     p_snap.add_argument("--max-files", type=int, default=12)
@@ -53,12 +60,16 @@ def build_parser() -> argparse.ArgumentParser:
     p_app.add_argument("proposal", type=Path, help="dossier proposal JSON")
     p_aud = sub.add_parser("audit", help="run the kernel audit and reconcile dossiers with records")
     p_aud.add_argument("--level", choices=("working", "pr"), default="working")
+    p_layout = sub.add_parser("wiki-layout", help="show or opt in to per-repository pinned-kernel partitions")
+    p_layout.add_argument("--enable-partitioned", action="store_true")
     sub.add_parser("build", help="render map/index.md, per-repo pages and AGENTS_CORPUS.md from the catalog and dossiers")
-    p_qry = sub.add_parser("query", help="search generated map/ and wiki/pages/ Markdown only")
+    p_qry = sub.add_parser("query", help="search generated map/ and, optionally, kernel pages/ archive Markdown")
     p_qry.add_argument("text", help="search text")
     p_qry.add_argument("--limit", type=int, default=10)
     p_qry.add_argument("--max-chars", type=int, default=4000)
-    p_qry.add_argument("--include-archive", action="store_true", help="also search the kernel's wiki/pages/ archive")
+    p_qry.add_argument("--include-archive", action="store_true",
+                       help="also search each initialized kernel's own pages/ archive (shared wiki/pages/, "
+                            "or every shard's wiki/shards/<id>/pages/ under the partitioned layout)")
     p_mnt = sub.add_parser("maintain", help="bounded model-free refresh: catalog leads, fair snapshot queue, needs-distillation")
     p_wrk = sub.add_parser("worker", help="distill one repository through a trusted worker argv given after `--` (none: manual envelope)")
     p_wrk.add_argument("--repo", help="owner/repo (default: next repository needing distillation)")
@@ -73,7 +84,7 @@ def build_parser() -> argparse.ArgumentParser:
             sp.add_argument(f"--{name}", dest=fld, type=int, default=getattr(workers.Limits, fld))
         for name, fld in (("net-seconds", "net_seconds"), ("max-seconds", "max_seconds"), ("worker-seconds", "worker_seconds")):
             sp.add_argument(f"--{name}", dest=fld, type=float, default=getattr(workers.Limits, fld))
-    for sp in (p_cat, p_snap):
+    for sp in (p_cat, p_dir, p_snap):
         sp.add_argument("--net-bytes", type=int, default=collect.Budget.max_bytes, help="network byte budget")
         sp.add_argument("--net-seconds", type=float, default=collect.Budget.max_seconds, help="network time budget")
     return parser
@@ -120,6 +131,9 @@ def main(argv: list[str] | None = None) -> int:
             _emit(result)
             if args.published and not result["published"]["ok"]:
                 return result["published"]["code"]  # backing intake landed; the optional source did not
+        elif args.command == "directory":
+            budget = collect.Budget(max_bytes=args.net_bytes, max_seconds=args.net_seconds)
+            _emit(directory.capture(args.root, args.limit, budget=budget))
         elif args.command == "snapshot":
             budget = collect.Budget(max_bytes=args.net_bytes, max_seconds=args.net_seconds)
             _emit(collect.snapshot(args.root, args.repo, args.max_files, args.max_bytes, paths=args.path, budget=budget))
@@ -132,6 +146,8 @@ def main(argv: list[str] | None = None) -> int:
             _emit(result)
             if not result["ok"]:
                 return EXIT_AUDIT_FAILED
+        elif args.command == "wiki-layout":
+            _emit(wiki.enable_partitioned(args.root) if args.enable_partitioned else wiki.load_layout(args.root))
         elif args.command == "build":
             _emit(maps.build(args.root))
         elif args.command == "maintain":

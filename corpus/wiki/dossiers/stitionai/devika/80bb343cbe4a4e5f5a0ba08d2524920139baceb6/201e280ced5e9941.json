@@ -1,0 +1,631 @@
+{
+  "applied_operation_id": "op_76ece0e063fb4365bc055e961d3f1825",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_c01d4593d3c981c9ef79be09549b11dc4cf1fc31cc8b3357d63fb78d62e153af",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 38,
+          "line_start": 31,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L31-L38"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "7fa3bc16d3b2c8c4a34879257b8274b602bbcc6e",
+          "line_end": 13,
+          "line_start": 5,
+          "path": "docs/architecture/README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/README.md#L5-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_66c49ed13b160133fcf5e3515f0a26ad78c1da8efd053c9c678293ff7246ec87",
+        "slc_d27c527830b325edac29bded6734ce102479f3904d3ac691937996efeb3f3779"
+      ],
+      "text": "Devika's documented architecture includes a web chat UI, an Agent Core orchestrating planning and execution, specialized sub-agents, LLM integration, browser interaction, project/state management, and a database layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3c9ab9f86d4953be3311393b64c74883d9e292d0b0a6f77c785a66283b291de8",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 56,
+          "line_start": 46,
+          "path": "ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/ARCHITECTURE.md#L46-L56"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 56,
+          "line_start": 46,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L46-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_358c804f5fb47a5d8be78cd195334d0f98456bc8bf2b800dfd20a5fe672dd17b",
+        "slc_80d5c2cb8eed4d6e314fda74d79cd96547579171fdf4d61b8d303e203fe1a167"
+      ],
+      "text": "The Agent Core runs a loop where a user prompt goes to the Planner for a step plan, the Researcher extracts search queries, web results are formatted, and the Coder generates code saved to disk; follow-up prompts route through an Action agent to Runner, Feature, Patcher, or Reporter agents."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_622d45aa66c0f7e051e9bfcd0bd046cde791790c992cd8d7dd934e255462c8eb",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 67,
+          "line_start": 67,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L67-L67"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 124,
+          "line_start": 119,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L119-L124"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bb25c1b26ce3c58c78222aed9e9ccba31c7eab97ccb12e50388a92cd88c07d61",
+        "slc_e1690b09ae61bf61d290393f250d1c8250966cc66fc423b05e88eb68c8a87065"
+      ],
+      "text": "Each sub-agent is implemented as a separate Python class and communicates with LLMs via Jinja2 prompt templates, following a render-query-validate-return pattern."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_14bdfab44509b1b44797209d949e2219ac69d15dfa2219608fb568681b4235c9",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 139,
+          "line_start": 136,
+          "path": "ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/ARCHITECTURE.md#L136-L139"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 134,
+          "line_start": 132,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L132-L134"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 53,
+          "line_start": 45,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L45-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_41dd2b9c106b7936cb892c8e738abe7bfc45b193eb9f7ce6de897cf50f792bb4",
+        "slc_b21cc940849d7dd686ddbabf0325b2363a6df873f9feee21da4581fd19c0b9fe",
+        "slc_ca1d24624c7811f4e8e9875dd624b069b7255ca5795f5c8c9de30692c839dee3"
+      ],
+      "text": "Devika supports multiple LLM providers including Claude, GPT-4/GPT-3, Gemini, Mistral, Groq, and self-hosted models via Ollama, with a unified LLM class abstracting provider APIs; the README recommends the Claude 3 family for optimal performance."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_89017ea5798b949442207ac1ef8d483e87e6eb39ea8761c48b4340ddc3709084",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 157,
+          "line_start": 154,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L154-L157"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 152,
+          "line_start": 147,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L147-L152"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 163,
+          "line_start": 159,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L159-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_55f3572e317f388b2797178efa19c3354e1c42fe1aac1be815d49374395120f5",
+        "slc_a3c93c2a79f46369422ef9476a0ef761e2681e3c886db6939d2e2e43ca7d818a",
+        "slc_c5b87b3f0f3b197fe8ce165aedf7b46f2bec1202d3c87d8dda3374946c0cf671"
+      ],
+      "text": "Browser automation is provided by Browser and Crawler classes built on Playwright (Chromium), supporting navigation, DOM queries, content extraction, screenshots, and an LLM-driven action loop (e.g. CLICK or TYPE commands) over live pages."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_90899b63be99daf23563bbde8a4a20e8f08584d2892cbdbe472bb33f86c51198",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 200,
+          "line_start": 195,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L195-L200"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 209,
+          "line_start": 206,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L206-L209"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 181,
+          "line_start": 179,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L179-L181"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 204,
+          "line_start": 202,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L202-L204"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d7a0c1ac0489721e769330c6b9da0582f47e54c9c787fd415060c5645c86d06",
+        "slc_4a59007250ece5bd111f050e3f1ef0e43de78f84a435db783742cbd24a25ff77",
+        "slc_cacdc3024897a6a73b25f4b261b2dae74943a6525d3b608cfb109f0b61a8517c",
+        "slc_fc3d858796b42cb4d48bfc17782573c93f900e2934b76e8ae9ad184d26237e41"
+      ],
+      "text": "Project metadata and agent state (steps, internal monologue, browser/terminal interactions, token usage) are persisted in SQLite via SQLModel, enabling multi-project work, session continuity, auditing, and resume after interruptions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_49b8fe536eac252e34cf122a6ad079b9c1d8818b99b8afd95bd176e16f50c2da",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 219,
+          "line_start": 218,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L218-L219"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 226,
+          "line_start": 221,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L221-L226"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 216,
+          "line_start": 215,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L215-L216"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_95878ed365ff2d1c75cd8ec71c57de601907a8fa97df65f272a1b3f861a44144",
+        "slc_9a5ac58bb9df5dd9797e0e647d1d7bad00430c47ca8560027f7fdc99d608cd7b",
+        "slc_d9dced18d46db35a3f26fc33e7600a3b4958828c511599bbe9ba46666e923d2a"
+      ],
+      "text": "Devika integrates external services through GitHub and Netlify wrapper classes for git operations (clone, listing repos) and deploying web apps, returning deployed site URLs to the user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ddd283470e3650deea1e05350d740f41f84009a25061643cfc909d39a2f3b6e9",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 249,
+          "line_start": 246,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L246-L249"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11786ab8e1e9b415c840f0f96d8130c5c639cd01348e3e81e499ffd7bb75e172"
+      ],
+      "text": "Stated design principles include modularity via specialized agents, pluggable LLMs and services, persistence for pause/resume and auditing, and real-time transparency of the agent's thought process to the user."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2ef8170cd13868481f5a1cc711be6664a05135f2cbd9dcb5048a2370e1121e50",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+          "line_end": 126,
+          "line_start": 126,
+          "path": "docs/architecture/ARCHITECTURE.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md#L126-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ed055709a9133955faac80e933799f3aee7089c762f72d31f424f96520a53f6e"
+      ],
+      "text": "Agents are designed to be stateless and idempotent where possible, with state and history managed centrally by the Agent Core and passed into agents as needed."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1d7a27b8b04ec56728b0ac5bdb318ef6fa6ba9df9294894b80e6d8f7977c6f1d",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 137,
+          "line_start": 137,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L137-L137"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 68,
+          "line_start": 63,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L63-L68"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 148,
+          "line_start": 139,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L139-L148"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 118,
+          "line_start": 98,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L98-L118"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4692c30b40d56e2372520d084dd966794a4a7a613e81b73304cb31214aeb0d86",
+        "slc_7caedf4c5ad833870937d2f79f8a281f843964f7623c7ae00b28d10540f30dc1",
+        "slc_e229495257c57480384be21dd7ad10009706d6a4a4ad0a538a50823bc2a6ae44",
+        "slc_e50e94cf150b7418ebda846a3ff9f0a04a02e50e1bea0222508dc989e6e3d576"
+      ],
+      "text": "Runtime requirements are Python >= 3.10 and < 3.12, Node.js >= 18, and bun; Playwright is installed for browser capabilities, and API keys (OpenAI, Claude, Bing, Google, Netlify, etc.) are configured via a config.toml file and the UI settings page."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a4fae0888b325dc2e1ba1e5a692f4777f4377a53e981e12205ce66a880022664",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 14,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L13-L14"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3584c9a02023b6e1c6133f93a89be02cdca65194f064417a438924e405ac4277"
+      ],
+      "text": "The README states the project is in a very early development/experimental stage with many unimplemented or broken features at the time of writing."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_281ba8de7fae4deccd59510211fefbd5ec291a194aa052e328aba38ef476de70",
+      "evidence_type": "organizational_statement",
+      "facet": "relevance",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 37,
+          "line_start": 36,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L36-L37"
+        },
+        {
+          "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+          "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+          "line_end": 1,
+          "line_start": 1,
+          "path": "README.md",
+          "repository": "stitionai/devika",
+          "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md#L1-L1"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_37ae3427aa55ae8ca9f696ff63ff4cb180ad0dff900d481446cd0fe2f5a4a4c2",
+        "slc_ab9793df7d787ff37f0ebac919a879c7ac77e5c415509245ea03448628429754"
+      ],
+      "text": "Devika is positioned as an open-source alternative to Cognition AI's Devin, with the stated goal of matching and eventually beating Devin's SWE-bench score; the README also points to Opcode as its successor iteration."
+    }
+  ],
+  "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 187,
+        "path": "README.md",
+        "size": 8119
+      },
+      {
+        "lines": 251,
+        "path": "ARCHITECTURE.md",
+        "size": 12743
+      },
+      {
+        "lines": 251,
+        "path": "docs/architecture/ARCHITECTURE.md",
+        "size": 12743
+      },
+      {
+        "lines": 33,
+        "path": "requirements.txt",
+        "size": 339
+      },
+      {
+        "lines": 7,
+        "path": "ROADMAP.md",
+        "size": 519
+      },
+      {
+        "lines": 16,
+        "path": "docs/architecture/README.md",
+        "size": 1679
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/architecture/UNDER_THE_HOOD.md",
+        "reason": "file-budget",
+        "size": 5083
+      },
+      {
+        "path": "docs/Installation/ollama.md",
+        "reason": "file-budget",
+        "size": 1396
+      },
+      {
+        "path": "docs/Installation/search_engine.md",
+        "reason": "file-budget",
+        "size": 2324
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 2088
+      }
+    ],
+    "omitted_count": 4,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 169,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 10,
+      "complete": false,
+      "omitted": 4,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_20c1515f89985db08fc8abffb0c7968a",
+  "facets": {
+    "components": 2,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 1,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/stitionai/devika/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/201e280ced5e9941/manifest.json",
+  "package_id": "pkg_98c218ade0cb476424a40f8b43ba3c0863f7a397b51584f01bda8755c3c7640a",
+  "repo": "stitionai/devika",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6529fceb6e9a7321160e967a542c3556b6caba7cfbe7f4e55e3d15427199cbf2",
+  "snapshot_id": "201e280ced5e9941",
+  "sources": [
+    {
+      "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+      "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+      "lines": 251,
+      "path": "ARCHITECTURE.md",
+      "repository": "stitionai/devika",
+      "sha256": "f4641aed4ba84f8d69c549f3d3b495ee71a0bfa02d6eaaa24a69662381ea5940",
+      "source_id": "src_6db95606c41d5a9ba641a3d0bd4d9ed0",
+      "stored": "architecture.md-8f6366fd8e7a.md",
+      "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/ARCHITECTURE.md"
+    },
+    {
+      "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+      "git_sha": "d3cec01966fa8af5ef4166aeaa3b9aba9b730fe4",
+      "lines": 187,
+      "path": "README.md",
+      "repository": "stitionai/devika",
+      "sha256": "07d7999d50a753b41d513ea3c730078a815840299cbd4d97f370c3de53838144",
+      "source_id": "src_4e3dce47cb5256e68ee1492dbd788c6a",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/README.md"
+    },
+    {
+      "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+      "git_sha": "3dc7bb30f7f9eb1399ba0f2e1f221edd89252069",
+      "lines": 7,
+      "path": "ROADMAP.md",
+      "repository": "stitionai/devika",
+      "sha256": "7d6a854dff44ef925dd49b63f3a6217da72c44f212af8461b5aa004e52832e58",
+      "source_id": "src_8c0a255cd36455a9be55923d189099b4",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/ROADMAP.md"
+    },
+    {
+      "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+      "git_sha": "cd89e2eb0b1051bf293eac32187a3ebfb99412ad",
+      "lines": 251,
+      "path": "docs/architecture/ARCHITECTURE.md",
+      "repository": "stitionai/devika",
+      "sha256": "f4641aed4ba84f8d69c549f3d3b495ee71a0bfa02d6eaaa24a69662381ea5940",
+      "source_id": "src_182c87c260b85aec966fa770f29052f6",
+      "stored": "architecture.md-10b457f2fdd4.md",
+      "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/ARCHITECTURE.md"
+    },
+    {
+      "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+      "git_sha": "7fa3bc16d3b2c8c4a34879257b8274b602bbcc6e",
+      "lines": 16,
+      "path": "docs/architecture/README.md",
+      "repository": "stitionai/devika",
+      "sha256": "39de9f33f9a67ea9b200adb5c92f62eb34e04df3d1cf9d2f11b1c069cdf63dec",
+      "source_id": "src_ab94924805e15fb0bcc0479857a9a070",
+      "stored": "readme.md-92691389bf62.md",
+      "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/docs/architecture/README.md"
+    },
+    {
+      "commit": "80bb343cbe4a4e5f5a0ba08d2524920139baceb6",
+      "git_sha": "916669600d763b0b8efb8a4e45a3501272cd16f8",
+      "lines": 33,
+      "path": "requirements.txt",
+      "repository": "stitionai/devika",
+      "sha256": "cb17a963361410b8feab1d914c2e27d3a4d98f3d62f68a9304fbcfdf737f6b5e",
+      "source_id": "src_dea4898b7b8159a5926c4c2e810809c0",
+      "stored": "requirements.txt-4d7c51b1efe9.txt",
+      "url": "https://github.com/stitionai/devika/blob/80bb343cbe4a4e5f5a0ba08d2524920139baceb6/requirements.txt"
+    }
+  ],
+  "summary": "The snapshot consists of README and architecture documentation describing Devika, an open-source agentic AI software engineer modeled after Devin, with a multi-agent architecture (Planner, Researcher, Coder, etc.), LLM/browser/service integrations, and SQLite-backed persistence. No source code is included in the evidence, so all claims are documentation-based. Evidence coverage: 132 of 137 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

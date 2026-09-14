@@ -1,0 +1,564 @@
+{
+  "applied_operation_id": "op_cbfe3869314a491a8ba9d5b0e6b29aba",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_df90e48dec2785e69ad94e41d095d61cdc775973453854792fae20c2fd5d66ec",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 7,
+          "line_start": 7,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L7-L7"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5cb9a6c04b4c1cd5ec357d5aba6165f3339c7df20886c324e9430407db0e9746"
+      ],
+      "text": "dux is a terminal UI that runs multiple AI coding agents side by side, each in its own git worktree, with companion terminals, macros, commit generation, and a command palette."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f90c6ce639f60c5dd3541de2e4ee89d90a6a0a0ee12c1c17ab004db824b8c024",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 19,
+          "line_start": 19,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L19-L19"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_de71c88a76fa000d5c5cc9a4904bae28fb88e01709185affa7fd56bf4207d176"
+      ],
+      "text": "Agents run through a PTY like a normal shell, so CLIs such as Claude, Codex, or OpenCode behave as they would in a regular terminal, including MCP servers, hooks, and permission dialogs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ff104f5610089b2d526b76c26b365dd298cdceffa6c8e9027d34ce441cfb190d",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 83,
+          "line_start": 81,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L81-L83"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b590638af391e0fccd136235e2e6af6926679d423dcb536cfb68584af9448a8d"
+      ],
+      "text": "The interface has three panes: projects and agent sessions on the left, the agent's live terminal output or diff in the center, and changed files, staging, and diffs on the right."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a22d9d059994befb9bce672d8aab79cd9c3d58b8102df4511c9842432f8d5b94",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 96,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L91-L96"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 89,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L89-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_11cd674cf70b6999270636769b77a4f42d43d9f1bb92c52a0b2cfe1ed5e7c099",
+        "slc_36cd83e9720797be18ceb6d7f5002c90ab70289721e78f25ad74b31b599ef361"
+      ],
+      "text": "Any terminal command can be a provider via a TOML config entry with command, args, and optional resume_args; built-in defaults include Claude, Codex, and OpenCode, and adding a provider is config-only."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8903dc642be7c1c55d384f35fbb379ec12ab08b4c5a489043a6c6d57eac34944",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 102,
+          "line_start": 102,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L102-L102"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 106,
+          "line_start": 104,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L104-L106"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a40038cd1b9a816bb75ec70501e16db3654947987c8d594e2d0548843947d623",
+        "slc_a43562651e1a80d4b36185f198c5e927415261b6d276ce24957701ba6fd29e0c"
+      ],
+      "text": "Palette commands include change-agent-provider, change-default-provider, and change-project-default-provider for switching providers per worktree, globally, or per project, with resume_args reused when available."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7375a5afe5e3c460771b3fd74b0e571b033b13bcffc2a523fb5097cd4ac5d9db",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 63,
+          "line_start": 57,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L57-L63"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 283,
+          "line_start": 283,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L283-L283"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 289,
+          "line_start": 285,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L285-L289"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_334a232521c83e39661f9b47d1435b277c3e51ea1fe1a6107a973397dbbe0763",
+        "slc_5f3c2804354eb194c634f59c2553c9aa94963d5089560d7a8ec93d03d598caf4",
+        "slc_bfd2b1db13e71727ded4348d4ee2eca857fbaf6b2a506001385666b964957b96"
+      ],
+      "text": "Session state persists in sessions.sqlite3 alongside the config, and logs go to dux.log in the config directory with a configurable level and path."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_47c97e0b1ae495ff5fae8d6fddbe51100710e2bb64f6f148d2c16c25253a876b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 152,
+          "line_start": 152,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L152-L152"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 114,
+          "line_start": 114,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L114-L114"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 154,
+          "line_start": 154,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L154-L154"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a0e53428f30f429a8da3ac32652ed05644b9b5a3da8f78eabc5bf0ff62264bab",
+        "slc_daf7bc18697317645778c51d14afb71d2f1c20df0b23283f73d45d4de86d6d0d",
+        "slc_f26ab04840d2f2379d2a2a6f82156cf69a3c57ff50ec62348b968b915ebd1e74"
+      ],
+      "text": "Projects support a startup command run in the new worktree before the provider launches, with env expansion, DUX_* environment variables, and log/rerun palette commands; failure does not block agent creation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_336b6f28a274f3688e71bd905515ed23c7d92fbde45a6b450024141b4e88f535",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 179,
+          "line_start": 179,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L179-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ff5459f1983db5a1ecb34449941fdaaa2dbaf360fa98152290b8d14436fb6402"
+      ],
+      "text": "Each agent gets companion terminal shells in the same worktree, and multiple companion terminals per agent are supported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6af25d1b0d573d5832195e4efa762443efcd4a1ab5def7154d4b4ce7cb011643",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 173,
+          "line_start": 173,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L173-L173"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 171,
+          "line_start": 171,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L171-L171"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27138a0a64bf17be2c6b9b299ae880863acb7df1e80b971d751806741af68df4",
+        "slc_9cf52b50b7cc333781a80a260d2803a7f110345976c4b6e17e027b203383df1d"
+      ],
+      "text": "The right pane provides git staging: stage/unstage files, view syntax-highlighted diffs, write commit messages, push, and pull; AI commit-message drafting uses the provider in oneshot mode with a customizable prompt."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fa614dff30db6eb0c77c1e534ebd5c1ff3e47f09dfcf21dccfbcbe2f8f1fd41e",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 71,
+          "line_start": 70,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L70-L71"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 175,
+          "line_start": 175,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L175-L175"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_54c21ecea33220762b375e9b6aefed1bbccb99f7cffcc9d36f98f23720821c88",
+        "slc_cb7c16d0ac30624268424c256fe80592d95a48d7697d38c1d49f5c36214e98ed"
+      ],
+      "text": "git is required on PATH; the gh CLI is optional and enables PR status tracking shown as status pills in the interface."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b4f5c8f8286acf5097cd8a57f0be616fb4772c5b20bdd7f7fcac386485332d4b",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 224,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L224-L224"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 213,
+          "line_start": 210,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L210-L213"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+          "line_end": 222,
+          "line_start": 222,
+          "path": "README.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md#L222-L222"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8ba8fc42f525f8288bf5988a14da394bdff803c8021c3bd7a33eb11cf70ecf54",
+        "slc_a42e998fd364626175d7e26fd6a72f9360e8c37c6e5ceca0ab8fcc86724eae68",
+        "slc_c08d18b7ff71c050126f0afdfbc4657a510db1b2252b663df45c151b90178455"
+      ],
+      "text": "Themes use the Opaline TOML format; custom themes live next to the config file, resolution prefers user themes then bundled dux_dark then built-in Opaline themes, falling back to dux_dark with a logged warning."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_19c20ba1c908846385fa0b12122781533e156a23300f497c9bb8a046300a45bf",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 155,
+          "line_start": 155,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L155-L155"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 49,
+          "line_start": 48,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L48-L49"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 153,
+          "line_start": 149,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L149-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04577488e6909e0bf50aa3d602dd30525ee95e7340990b648e583d39e68cd63b",
+        "slc_0c93d81207f22885a543fb1b858408690e04b5a748d4e34b0160a2ef1fd632e2",
+        "slc_653936fbc83a5a62f762a78d79818d786dfe9e2c2b1d8a71ec7d2f5eba11dc58"
+      ],
+      "text": "Repository development practice: contributors verify changes with cargo fmt, cargo clippy --all-targets --all-features -- -D warnings (a CI gate on every PR), and cargo test, and every change should include unit tests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_566f79842b0096c0e360c3a6e5a49fc17ac9911db93c1d27b585f4916483cb45",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 78,
+          "line_start": 78,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L78-L78"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 84,
+          "line_start": 80,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L80-L84"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 86,
+          "line_start": 86,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L86-L86"
+        },
+        {
+          "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+          "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+          "line_end": 143,
+          "line_start": 136,
+          "path": "CLAUDE.md",
+          "repository": "patrickdappollonio/dux",
+          "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md#L136-L143"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1789a3ee30121e9a13c3dbc7e064098620812ef91c88186c9e7fb9f4bcdc84ed",
+        "slc_219e0ea35efffcc2dde76a13eae14c891f0831cd8d4b93c80589f4456f32a310",
+        "slc_ad756fed77c2db775b65ba8f836be9e43451373d9c3937f1f5502d069a95c74d",
+        "slc_deae41cdbe1038acaec5ceb4092c48968a093875286899141b9e376bec9f0238"
+      ],
+      "text": "Repository development practice: the src/app/ TUI is split into focused submodules (mod.rs, input.rs, render.rs, sessions.rs, workers.rs), and changes should stay scoped to the relevant submodule."
+    }
+  ],
+  "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 289,
+        "path": "README.md",
+        "size": 16381
+      },
+      {
+        "lines": 157,
+        "path": "CLAUDE.md",
+        "size": 18103
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 132,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_eaf77bfe02ed55ebb9b29a45a2609c1c",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 5,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/patrickdappollonio/dux/14e044d616d205a5ef1d030978c55337a812fa04/9cf959f4d95c8dad/manifest.json",
+  "package_id": "pkg_26bd71ac6f9b7f629a3d75bc4e57ebd0304a5ecd831f3ae54fc788970ce9fc82",
+  "repo": "patrickdappollonio/dux",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "14167d92095236c55e8458d4d3703fdaf59b03f025d5eef7e0054d1bf621d6a0",
+  "snapshot_id": "9cf959f4d95c8dad",
+  "sources": [
+    {
+      "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+      "git_sha": "2e8279e258548d4c90d5390ec626c232328475e0",
+      "lines": 157,
+      "path": "CLAUDE.md",
+      "repository": "patrickdappollonio/dux",
+      "sha256": "59c9571ff1191ad939736ed14284374e7b5720a5dd23d1da5f0c89bf60850a28",
+      "source_id": "src_fbc4e6918b155fc1ad9b2ebbf18cdfb8",
+      "stored": "claude.md-6ebdb617a810.md",
+      "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/CLAUDE.md"
+    },
+    {
+      "commit": "14e044d616d205a5ef1d030978c55337a812fa04",
+      "git_sha": "d21669be4f3cb7c4fea1ecc2c1a1fdb6a72db29c",
+      "lines": 289,
+      "path": "README.md",
+      "repository": "patrickdappollonio/dux",
+      "sha256": "493774004a982236fa919aa1e0eed7cc9a7da95c34cbfb8ee4f4e1668e18fc02",
+      "source_id": "src_1a20a257cf9e59208174d271dbe9b397",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/patrickdappollonio/dux/blob/14e044d616d205a5ef1d030978c55337a812fa04/README.md"
+    }
+  ],
+  "summary": "dux is a Rust terminal UI for running multiple AI coding agents in parallel, each in its own git worktree, with companion terminals, macros, git staging, and a command palette. Evidence is mostly README product documentation plus contributor instructions in CLAUDE.md.",
+  "superseded_claim_ids": []
+}

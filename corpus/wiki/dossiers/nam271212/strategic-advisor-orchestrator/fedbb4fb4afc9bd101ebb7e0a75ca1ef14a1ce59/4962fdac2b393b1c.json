@@ -1,0 +1,467 @@
+{
+  "applied_operation_id": "op_80c6ff8592b54cac93473e7da86e903d",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_18717ad39db8fd8ae98ae08317b7513eb2c705203d59af5ec9935a38f4171686",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 5,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L5-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_696739d08014db1fbf26d47a90e00231a1cb80286d5afae0bc0551c5a39e6f6b"
+      ],
+      "text": "Synaptic Compass is described as an advisory orchestration framework that deploys a secondary, higher-order reasoning model to guide AI coding agents on architecture, security, performance, and debugging."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_e59158bf9fb3e5e391fd44a03b755b68b48ea1049baea3f5a3bf3951ea3d9992",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 56,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L56-L56"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44f2dbbea551879ed496b0699140ac26bdbc335f0951ad7e84e767e657d82b05"
+      ],
+      "text": "The product is documented as a stateless, event-driven orchestrator positioned between the user's prompt and the coding agent's execution layer."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3469e33fb11471d3e0dea4d24e2d3b09e7b2c47a3614b426314ed69c1224c5a1",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 81,
+          "line_start": 77,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L77-L81"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2990e951668f4f74fe9b1673501b1d015688c42cdf92950159551e2dc872c851"
+      ],
+      "text": "Documented components include an orchestrator module, context aggregator, configurable reasoning engine, feedback interface, and a memory buffer retaining pattern awareness across sessions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_537824c46a6e73bdf161248591ab26d17feb765a4014c76d369b64d5b588f7cd",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 144,
+          "line_start": 141,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L141-L144"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 153,
+          "line_start": 146,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L146-L153"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_da92db331742b7a5c274a16ec3be6359301c6913f8d889e337f04cc6830c0df3",
+        "slc_df72626193189166b42b74a9f79d675e7d96ad076962bc98aa7b135d4005be1a"
+      ],
+      "text": "Integration is documented for agents exposing streaming output hooks, session context injection, or external tool calling (MCP, plugins, API endpoints), with Claude Code, Cursor, Gemini CLI, and Cline listed as stable integrations."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6cb883017dd5c08eaf99214efa1d2c3c02a787d446cb0c0a133d819a9e22860a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 126,
+          "line_start": 122,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L122-L126"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L119-L119"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 132,
+          "line_start": 129,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L129-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_914b65b5bb37777f2284b943dd1131aaf9cca41b21a8f423a640ce44b2b9dcd3",
+        "slc_dcc54dfe665c4224c88244c2e4e7f65617ca87f11cb0c837eb34c3b3d11a334a",
+        "slc_eabdda8b1e8ab6bebb54aba676bece9b4835443e87357807a2bbe7f89acdda04"
+      ],
+      "text": "The documented workflow captures prompt, agent reasoning, and project context, dispatches it to the advisor for architecture, security, performance, and edge-case analysis, then injects structured feedback the agent may accept, override, or escalate."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc8ae33c43d0a792cecbd8b21a4b82b031c6dffaedbb02f38e33030c27d271f0",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 194,
+          "line_start": 192,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L192-L194"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 190,
+          "line_start": 186,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L186-L190"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 199,
+          "line_start": 196,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L196-L199"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 184,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L180-L184"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 178,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L178-L178"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 201,
+          "line_start": 201,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L201-L201"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c6001d89bc2d5dc68b56050bdc6332974f52d5fdc7692f6811c31bb61b423e4",
+        "slc_205888dca03becd2c3f8840addfcb970bb19c850566aa0f8c62081ec7e3527d5",
+        "slc_418b453f12dbf2173ddf4dbd190fcf1ba8417d710dff8e1885f0eb229bc18d57",
+        "slc_5265c04e95f01e7d2d9b587d8b66ede580efbbc17367382525f04583fd97704c",
+        "slc_77b181a0440acb89b8d32b75ae8734c0923855a300159ed8b5a963f68d671202",
+        "slc_d4a0dd5ed665a793eb4377e86a9b7fbf0e1e6067fa64d6e3e571b28bb1b52da1"
+      ],
+      "text": "Configuration uses a compass.yaml or compass.json file defining advisor model, feedback mode (blocking, non_blocking, advisory_only), validation layers, security scan depth, and output format, overridable per session via environment variables or flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a999e89005ff357cc6a3d619f4153b93c5ef0fabc997fd4c6a6fb3bd8cd45123",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 210,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L207-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f4720866358f05bb142d0cae2f742ae18dda9955e93e4c0602c2d6e27226c476"
+      ],
+      "text": "Advisor contexts are documented as ephemeral and discarded after each orchestration cycle unless the memory buffer is explicitly preserved."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cc2eb3133e6418fe59c5523d3484c55d641db004908753583da6645c03acd130",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 212,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L212-L212"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 210,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L207-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c5ccc82dca266472a87a485d782bd403b87cc845dabdf86706a8880f6e8cd6a",
+        "slc_f4720866358f05bb142d0cae2f742ae18dda9955e93e4c0602c2d6e27226c476"
+      ],
+      "text": "The security posture is documented as minimum privilege: no data leaves the environment unless a cloud advisor endpoint is configured, local models are supported, and the security layer never transmits credentials even in diagnostic logs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b10d9d7192a4f23e89bc6a372286012de54afa6ebead2308d3c383f6b5e55940",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 238,
+          "line_start": 238,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L238-L238"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 240,
+          "line_start": 240,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L240-L240"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c5b2221ddb0ea2879c83edf9a35f953957db41a1a128d7176747975fbd8276fe",
+        "slc_d11bca3e2a7e62865b85f4686bd49f2f2877d01d16732019dcd283f6a57a5850"
+      ],
+      "text": "The README's disclaimer states the tool is advisory, not a replacement for human judgment, does not guarantee bug-free or secure software, and its advisor feedback may be inaccurate or incomplete."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_db6abf3e80398365ddc11ff1b5e404c342a3b6c1436c275c74313203f5f27896",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L218-L218"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 226,
+          "line_start": 226,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L226-L226"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 224,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L221-L224"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_b5363f9b562c2c0dedc4e70a8a564b487240da13a31899ef0bb022ff38b8fc43",
+        "slc_c1c4fd26b85550513633e38517c99410a1f40f429975bccb0fd7609c13504c8a",
+        "slc_d758b2b59fe955825cce2a4d86ae6f1eae6369f86b7703d9dfea0d9223f9c261"
+      ],
+      "text": "Repository development practice: contributions are welcomed for new validation modules, agent adapters, and orchestration-loop optimization, with CONTRIBUTING.md referenced for the code of conduct and pull request process."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d7b8d4dabb921312004629f99342020564404b723f2fbf0d869e76ad26b40111",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 184,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L180-L184"
+        },
+        {
+          "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+          "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+          "line_end": 210,
+          "line_start": 207,
+          "path": "README.md",
+          "repository": "nam271212/strategic-advisor-orchestrator",
+          "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md#L207-L210"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5265c04e95f01e7d2d9b587d8b66ede580efbbc17367382525f04583fd97704c",
+        "slc_f4720866358f05bb142d0cae2f742ae18dda9955e93e4c0602c2d6e27226c476"
+      ],
+      "text": "The advisor model appears configurable across providers (Claude, GPT, Gemini, or local LLMs such as Llama 3 and Mistral), suggesting no hard dependency on a single model vendor."
+    }
+  ],
+  "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 246,
+        "path": "README.md",
+        "size": 13018
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 6,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_a14e4a2387dc53028a37a7c718a9f5b1",
+  "facets": {
+    "components": 1,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/nam271212/strategic-advisor-orchestrator/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/4962fdac2b393b1c/manifest.json",
+  "package_id": "pkg_645bffe2eb436210e2df97cabf94125dbb6cc1560c5152a7a36601746c843214",
+  "repo": "nam271212/strategic-advisor-orchestrator",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "6c4d7fd51f2aaf4e81392640ffb0367420772a445ed1be02d21bcdb506e8695c",
+  "snapshot_id": "4962fdac2b393b1c",
+  "sources": [
+    {
+      "commit": "fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59",
+      "git_sha": "53aa2974c32b5445db452d6cb550aad7d7c8289f",
+      "lines": 246,
+      "path": "README.md",
+      "repository": "nam271212/strategic-advisor-orchestrator",
+      "sha256": "6bbe76442b90b116f124a666b0818cee5e8cc2e91063c9b5947a5e071b798005",
+      "source_id": "src_bd4e011147b35a7d85c38772c06790b9",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/nam271212/strategic-advisor-orchestrator/blob/fedbb4fb4afc9bd101ebb7e0a75ca1ef14a1ce59/README.md"
+    }
+  ],
+  "summary": "The snapshot contains only README documentation for 'Synaptic Compass', an advisory orchestration framework that runs a secondary strategic-advisor model alongside AI coding agents. All claims below are documentation-based; no source code is present in the evidence.",
+  "superseded_claim_ids": []
+}

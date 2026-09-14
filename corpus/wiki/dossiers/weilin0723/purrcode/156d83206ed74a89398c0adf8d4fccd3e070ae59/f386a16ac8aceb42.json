@@ -1,0 +1,718 @@
+{
+  "applied_operation_id": "op_8c04a21fa55b4059afc1bc5ea9f53965",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_9e1ea18de2a265f9ddefe5ce33d2a8a30ba18c64dd2408acee3103dd6ea3b96e",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "50b8ec9c4618c3145d7af34d4e2e1e551ac7fce5",
+          "line_end": 14,
+          "line_start": 9,
+          "path": "docs/src/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/src/architecture.md#L9-L14"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "df19428144bacc31fa62309b099a5e4e2ada6886",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "docs/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/architecture.md#L3-L5"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3c5d8757d934275532e011e3e147f129c442083f4f2e65519a1456dccd525fa0",
+        "slc_69830f993fee3f7910f35258380f57e36e7e967b2f104fb11515f9063678cf7a"
+      ],
+      "text": "The architecture defines four subsystems: PawGate (policy/judgment/authorization), Claw (tool execution and sandboxing), Whisker (repository context and risk signals), and NineLives (checkpoints, recovery, rollback)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_dc882e293cc6bbf333c6cc8763fda4fbd852f066f70ab74ed02a8a299436960b",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 24,
+          "line_start": 24,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L24-L24"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "50b8ec9c4618c3145d7af34d4e2e1e551ac7fce5",
+          "line_end": 43,
+          "line_start": 38,
+          "path": "docs/src/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/src/architecture.md#L38-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0a5886dec13b3ab9555d2795a649b245061ed78c09f7ffb975b4f398e311565f",
+        "slc_8ae2b41d345716c2e5406fc50ace964637906ea172d44336fd07129dfe96bf60"
+      ],
+      "text": "Model output is treated as a proposal, never authority: every native action is bound to a durable authorization, re-checked before execution, and followed by recorded validation; repository content, model output, and downloaded skills are untrusted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a7726638ccbcdda382c04e7437a79979e71f1c287e1b708a694dc34c40f5cb8f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "df19428144bacc31fa62309b099a5e4e2ada6886",
+          "line_end": 50,
+          "line_start": 43,
+          "path": "docs/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/architecture.md#L43-L50"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "df19428144bacc31fa62309b099a5e4e2ada6886",
+          "line_end": 41,
+          "line_start": 38,
+          "path": "docs/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/architecture.md#L38-L41"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5b735f260bd06ff5086165be324565ce42a47d772be3b70badf88462ee9ee294",
+        "slc_f7707ac9d4c22eda3b2e01aead60a8fe223361762e83ae66ea85bfac8d9ed5a6"
+      ],
+      "text": "Actions are strongly typed (Command, RepositoryRead, WriteFile, DeleteFile, ExternalTool) with no shell-string parsing in the trusted path; ExternalTool actions are MCP-only and always require approval."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c749e9d12bd6ef1a66876f15b3241e62251a11601fc619725cdf50092957b3ab",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L116-L116"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 32,
+          "line_start": 30,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L30-L32"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd81494b3aadccaa9c363e399af8688f46cbe3d32dcf4d63a08caae2905b32b1",
+        "slc_f7175c61a652a1ce344a7bb0f452e18ee2648d1a4ef2d27fd3e228fece39c9df"
+      ],
+      "text": "The product exposes a terminal Workbench (bare `purrcode`), a native Rust desktop IDE (`purrcode ide`/`gui`), and a browser Studio client (`purrcode studio`) for daemon health, sessions, and environment inspection."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8bca330ca74031fbc29ebff32dd74a6bfdcc231c5c6872c4bd416b4fb727a147",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 126,
+          "line_start": 120,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L120-L126"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 133,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L132-L133"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 139,
+          "line_start": 136,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L136-L139"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 144,
+          "line_start": 142,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L142-L144"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05e61fc504bbe40db586f602bb33684bcde7c9873819a9712be898f1a2363fed",
+        "slc_145647f3423198b1548be7689fe6f9dd3396caeb3bd248c3b9624ff6609ba1d2",
+        "slc_769193cd6ab759e14da7615052d5d5dccd8c4a9c087b598782e39dc458ead6c3",
+        "slc_fd14908217a501e420c636b925f42c688e53f41417ef8518d333dc0078de275c"
+      ],
+      "text": "TUI slash commands include /connect (provider discovery/import), /mode (Ask/Plan/Build/Review), /permission (Ask/Auto/Full Access), and /ide; one-shot commands include plan, run, review, approve, doctor, sessions, resume, and rollback."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3b8a94e5cfe6f5795bc5b5e474ecf2723dca41f43dc91df56f7c55b6c607077a",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 164,
+          "line_start": 155,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L155-L164"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "50b8ec9c4618c3145d7af34d4e2e1e551ac7fce5",
+          "line_end": 51,
+          "line_start": 51,
+          "path": "docs/src/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/src/architecture.md#L51-L51"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "7740591499e13dbcd03e25191d9017eb0ed4164a",
+          "line_end": 53,
+          "line_start": 16,
+          "path": "docs/implementation-status.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/implementation-status.md#L16-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3dbd4ac13212f4551a5af03c26e21c2c3a968d506a5266bf6b7d80c66495104d",
+        "slc_5839c21bf73aa8eda5dbd7224690b10bf0eafad7e65a542d685afc315a11d627",
+        "slc_e97bd0b4641de1aae7cb7e35ec31ff3ad1e5eb7002a52ee494035f368a18917e"
+      ],
+      "text": "TUI, IDE, and CLI share one daemon-owned session model; the IDE holds no session store, model state, permission state, or execution path, and the daemon exposes typed presentation endpoints (activity, validation, summary, usage)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_86d62b313efbde48d7a496c122a8635013e556fa3a7fa4135473d0c71e61da27",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "7740591499e13dbcd03e25191d9017eb0ed4164a",
+          "line_end": 12,
+          "line_start": 7,
+          "path": "docs/implementation-status.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/implementation-status.md#L7-L12"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "df19428144bacc31fa62309b099a5e4e2ada6886",
+          "line_end": 18,
+          "line_start": 9,
+          "path": "docs/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/architecture.md#L9-L18"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "df19428144bacc31fa62309b099a5e4e2ada6886",
+          "line_end": 5,
+          "line_start": 3,
+          "path": "docs/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/architecture.md#L3-L5"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "50b8ec9c4618c3145d7af34d4e2e1e551ac7fce5",
+          "line_end": 43,
+          "line_start": 38,
+          "path": "docs/src/architecture.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/src/architecture.md#L38-L43"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2a5cc2a37e3627dc46437857f475ced91c7977d80c0d993ab55287f7c1e804b4",
+        "slc_4dbe7735491e585e50809a249a62ae88fc1383a5062579bbf1ff82607f9d80cd",
+        "slc_69830f993fee3f7910f35258380f57e36e7e967b2f104fb11515f9063678cf7a",
+        "slc_8ae2b41d345716c2e5406fc50ace964637906ea172d44336fd07129dfe96bf60"
+      ],
+      "text": "Authorization is stored in append-only SQLite with exact action/constraint digest verification and atomic single-use consumption; NineLives owns durable events, checkpoints, restart reconciliation, and conservative recovery that never blindly replays interrupted actions."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2fd468cddbb832af7d6a5c090acd44764815cb0e773cd00360ae897414dbc9da",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 72,
+          "line_start": 72,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L72-L72"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "b936f7d6b6bf89a05a6a3d5376d62879bb52c0a5",
+          "line_end": 72,
+          "line_start": 70,
+          "path": "docs/installation.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/installation.md#L70-L72"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 60,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L60-L60"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5f7a4c9fbe0b92c396b94e0d802b2e3eb1828d96a1a9158ce52a67dd30863b35",
+        "slc_92b33f808de81a6e9492760f1659261a7534d9a0b743ddc4bea2ac5087afcf81",
+        "slc_ec38975f4dd57c098fcf16f8adcdef66bb64ece9066a1ec56db286d7c9c18796"
+      ],
+      "text": "Building from source requires Rust 1.88 or newer, Git, and platform build tools; the npm launcher requires Node.js 18+, and optional isolation dependencies are sandbox-exec (macOS) and bubblewrap (Linux)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c4d3e8d3cebfd554a8f5fae8cb0f170a696238cef3182b6a4f46f5b0b014685",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 44,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L44-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_26874b8044d987cebbdd5224a356fd0754cc5c5295da12d470290edf6a518389"
+      ],
+      "text": "The macOS PurrCode.app is not notarized, so Gatekeeper may block first launch until the user right-clicks and chooses Open; the project plans to notarize future releases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_6cec5f10685cc227fa13b9ac1578c1c1f4e78d00858143fbb240ea8f944a3c4f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 179,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L172-L179"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_c85bfdf1d48424998ad711618094ea2488bc82bfa43c92c47dc20bab76a5c6a0"
+      ],
+      "text": "Repository development practice: repository checks run cargo fmt --check, clippy with -D warnings, cargo test --workspace, plus npm tests for the purrcode package and TypeScript SDK and Python unittest discovery for the Python SDK."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f9c45bb610ee0070d1d3204492ee4eaa5f943a72d02a1f29c820bfb1911f04c1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+          "line_end": 116,
+          "line_start": 116,
+          "path": "README.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md#L116-L116"
+        },
+        {
+          "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+          "git_sha": "7740591499e13dbcd03e25191d9017eb0ed4164a",
+          "line_end": 53,
+          "line_start": 16,
+          "path": "docs/implementation-status.md",
+          "repository": "weilin0723/purrcode",
+          "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/implementation-status.md#L16-L53"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_bd81494b3aadccaa9c363e399af8688f46cbe3d32dcf4d63a08caae2905b32b1",
+        "slc_e97bd0b4641de1aae7cb7e35ec31ff3ad1e5eb7002a52ee494035f368a18917e"
+      ],
+      "text": "The IDE appears to depend on the Rust eframe/egui stack, since the docs describe it as a pure-Rust eframe/egui desktop application with no browser, Electron, Tauri, or VS Code dependency."
+    }
+  ],
+  "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 201,
+        "path": "README.md",
+        "size": 10858
+      },
+      {
+        "lines": 103,
+        "path": "docs/architecture.md",
+        "size": 5510
+      },
+      {
+        "lines": 53,
+        "path": "docs/src/architecture.md",
+        "size": 2576
+      },
+      {
+        "lines": 221,
+        "path": "README.zh-CN.md",
+        "size": 10109
+      },
+      {
+        "lines": 250,
+        "path": "docs/implementation-status.md",
+        "size": 23897
+      },
+      {
+        "lines": 74,
+        "path": "docs/installation.md",
+        "size": 2905
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/production-acceptance.md",
+        "reason": "file-budget",
+        "size": 7390
+      },
+      {
+        "path": "docs/providers.md",
+        "reason": "file-budget",
+        "size": 1259
+      },
+      {
+        "path": "docs/recovery.md",
+        "reason": "file-budget",
+        "size": 1544
+      },
+      {
+        "path": "docs/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 1405
+      },
+      {
+        "path": "docs/ui-gap-analysis.md",
+        "reason": "file-budget",
+        "size": 44169
+      },
+      {
+        "path": "docs/adr/0001-trusted-runtime-first.md",
+        "reason": "file-budget",
+        "size": 773
+      },
+      {
+        "path": "docs/prd/PurrCode_v1.0_Codex_Master_PRD.md",
+        "reason": "file-budget",
+        "size": 61067
+      },
+      {
+        "path": "docs/prd/v1.0-ide-defect-revision.md",
+        "reason": "file-budget",
+        "size": 27087
+      },
+      {
+        "path": "docs/reports/benchmark.md",
+        "reason": "file-budget",
+        "size": 1131
+      },
+      {
+        "path": "docs/reports/installation.md",
+        "reason": "file-budget",
+        "size": 3242
+      },
+      {
+        "path": "docs/reports/provider-qualification.md",
+        "reason": "file-budget",
+        "size": 1402
+      },
+      {
+        "path": "docs/reports/README.md",
+        "reason": "file-budget",
+        "size": 562
+      },
+      {
+        "path": "docs/reports/recovery-validation.md",
+        "reason": "file-budget",
+        "size": 3642
+      },
+      {
+        "path": "docs/reports/release-pipeline.md",
+        "reason": "file-budget",
+        "size": 3800
+      },
+      {
+        "path": "docs/src/cli-reference.md",
+        "reason": "file-budget",
+        "size": 3088
+      },
+      {
+        "path": "docs/src/development.md",
+        "reason": "file-budget",
+        "size": 1799
+      },
+      {
+        "path": "docs/src/ide.md",
+        "reason": "file-budget",
+        "size": 2662
+      },
+      {
+        "path": "docs/src/installation.md",
+        "reason": "file-budget",
+        "size": 2228
+      },
+      {
+        "path": "docs/src/modes.md",
+        "reason": "file-budget",
+        "size": 1960
+      },
+      {
+        "path": "docs/src/providers-and-models.md",
+        "reason": "file-budget",
+        "size": 3632
+      },
+      {
+        "path": "docs/src/quick-start.md",
+        "reason": "file-budget",
+        "size": 2133
+      },
+      {
+        "path": "docs/src/README.md",
+        "reason": "file-budget",
+        "size": 2276
+      },
+      {
+        "path": "docs/src/recovery.md",
+        "reason": "file-budget",
+        "size": 1247
+      },
+      {
+        "path": "docs/src/SUMMARY.md",
+        "reason": "file-budget",
+        "size": 381
+      },
+      {
+        "path": "docs/src/troubleshooting.md",
+        "reason": "file-budget",
+        "size": 2139
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 4745
+      },
+      {
+        "path": "docs/security.md",
+        "reason": "file-budget",
+        "size": 4548
+      },
+      {
+        "path": "docs/src/security.md",
+        "reason": "file-budget",
+        "size": 2122
+      }
+    ],
+    "omitted_count": 28,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 309,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 34,
+      "complete": false,
+      "omitted": 28,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_3294eacad2b55880a81cc6bbbef7f64d",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 1,
+    "memory-state": 1,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/weilin0723/purrcode/156d83206ed74a89398c0adf8d4fccd3e070ae59/f386a16ac8aceb42/manifest.json",
+  "package_id": "pkg_acbae65bf16743de994e25d7700b2ec9e9e7a22ff82fdbdd8218997cadde73ca",
+  "repo": "weilin0723/purrcode",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "72c4010f451615efe579ed1439a7b30cd665d340331bfe2f660a410b51f87ec2",
+  "snapshot_id": "f386a16ac8aceb42",
+  "sources": [
+    {
+      "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+      "git_sha": "5ddca9a22ef552fe27eac213ddf9ba965fccb6bb",
+      "lines": 201,
+      "path": "README.md",
+      "repository": "weilin0723/purrcode",
+      "sha256": "1fcf61da0cb0bdd96f2b03cc75571226b95728b97849427d037d03a0acf5a2ee",
+      "source_id": "src_eb44ebcbbdd052b69a4488cbf6cedb55",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.md"
+    },
+    {
+      "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+      "git_sha": "dd50a746e3f0984e4edd0b85a7bf3a9e63eb2a52",
+      "lines": 221,
+      "path": "README.zh-CN.md",
+      "repository": "weilin0723/purrcode",
+      "sha256": "d271f4bcb4b38e735bd50a448be081c488236ba12ddfeb5f7b20b3b93363dc06",
+      "source_id": "src_35f7a2e775ef583aa664220cfde15100",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/README.zh-CN.md"
+    },
+    {
+      "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+      "git_sha": "df19428144bacc31fa62309b099a5e4e2ada6886",
+      "lines": 103,
+      "path": "docs/architecture.md",
+      "repository": "weilin0723/purrcode",
+      "sha256": "3d2d70022ce23f9cdb1e03ddc3d33fe831ee3dcadb96bc51aa96bdae6bf21cbf",
+      "source_id": "src_e2d41f37bd355ba3bd839e1af20688f5",
+      "stored": "architecture.md-140eef3ba41b.md",
+      "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/architecture.md"
+    },
+    {
+      "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+      "git_sha": "7740591499e13dbcd03e25191d9017eb0ed4164a",
+      "lines": 250,
+      "path": "docs/implementation-status.md",
+      "repository": "weilin0723/purrcode",
+      "sha256": "3bab9025243e5af55c122f36ca58f6767bcfd729ca1a9412ccdf001e4af7176b",
+      "source_id": "src_49047ae431c450799521ccc9223079c2",
+      "stored": "implementation-status.md-dddc49283ce7.md",
+      "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/implementation-status.md"
+    },
+    {
+      "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+      "git_sha": "b936f7d6b6bf89a05a6a3d5376d62879bb52c0a5",
+      "lines": 74,
+      "path": "docs/installation.md",
+      "repository": "weilin0723/purrcode",
+      "sha256": "b3cd8ae919478c57b8fc545797b210662560e44921dac402b5bc1fc84ddc7776",
+      "source_id": "src_fc3cceb19b3c5e8e82b10057fdc46116",
+      "stored": "installation.md-8b042e3f94ca.md",
+      "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/installation.md"
+    },
+    {
+      "commit": "156d83206ed74a89398c0adf8d4fccd3e070ae59",
+      "git_sha": "50b8ec9c4618c3145d7af34d4e2e1e551ac7fce5",
+      "lines": 53,
+      "path": "docs/src/architecture.md",
+      "repository": "weilin0723/purrcode",
+      "sha256": "51079dac3d9b614c9d1be590a0142bba0df901b57a967825aff121f29f7b69fb",
+      "source_id": "src_762f4e2667f3514d8ac9a56e4c2966f5",
+      "stored": "architecture.md-a98dfba2dd99.md",
+      "url": "https://github.com/Weilin0723/PurrCode/blob/156d83206ed74a89398c0adf8d4fccd3e070ae59/docs/src/architecture.md"
+    }
+  ],
+  "summary": "The architecture defines four subsystems: PawGate (policy/judgment/authorization), Claw (tool execution and sandboxing), Whisker (repository context and risk signals), and NineLives (checkpoints, recovery, rollback). Model output is treated as a proposal, never authority: every native action is bound to a durable authorization, re-checked before execution, and followed by recorded validation; repository content, model output, and downloaded skills are untrusted. Evidence coverage: 121 of 152 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

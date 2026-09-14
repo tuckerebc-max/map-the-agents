@@ -1,0 +1,34 @@
+---
+access: public
+aliases: []
+claim_ids:
+- clm_038a2c8020f7466a81b19c6e0ec1409d8a36801cbc7908d8a8788487683a67c0
+- clm_24bb1962300d8767cf291b952a612b3f72a77eaafe1b66468286d9be5e83e6b1
+- clm_639fee8d29cc91f3716e143a920ac98639a6c9aaba723f74c4be8e3ef5c98b40
+- clm_6c92abeead458afc88c4fe9a67aeff098f978efc91d11af3edcd14948e57b4e7
+- clm_89b56def8816c814378301d3de3fa0173225ef9894e150b7fca94124f2b42993
+- clm_a7e3bb51506e55a8110398dd58793c68480b388e793c83b1348a92bfbbcdc69f
+- clm_c1dde8b6cccbf84ec01aa324597df2485fd33f5d236153a573647b1310747930
+- clm_d48e87f1b78a13e86ccc9d74ca9876a8b624bf4f4c491af0908fb74766d22d99
+- clm_e4e278811cdd717969e7a30d888e589ea2e1ad49c151c19f9dba2813b8072df1
+- clm_e7af349c52fd1c11f0c39b7ffcd04ccb13411eed96df98a23b9d1483682a0837
+- clm_fc3641430169b2fee1fdeb43768089189acc9ef18e0c635d3a73d70a4b521ad0
+- clm_fdeffb0be8c30f704c45bb7dc7b82a5464458a58b6e9489db8eb11c8018196a4
+maturity: draft
+page_id: pg_47f6c76ec7895ed989e9657e48298492
+page_type: entity
+review_state: mechanically_checked
+schema_version: '1.0'
+source_ids: []
+title: praveen-palanisamy/macad-gym
+updated_at: '2026-09-14T04:16:18Z'
+---
+
+# praveen-palanisamy/macad-gym
+
+<!-- rcw:begin owner=entity:ent_c03b4c6ac6b8537784c1c13567915c30 block=evidence -->
+- praveen-palanisamy/macad-gym is mentioned in this evidence. [@claim:clm_038a2c8020f7466a81b19c6e0ec1409d8a36801cbc7908d8a8788487683a67c0] [@claim:clm_24bb1962300d8767cf291b952a612b3f72a77eaafe1b66468286d9be5e83e6b1] [@claim:clm_639fee8d29cc91f3716e143a920ac98639a6c9aaba723f74c4be8e3ef5c98b40] [@claim:clm_6c92abeead458afc88c4fe9a67aeff098f978efc91d11af3edcd14948e57b4e7] [@claim:clm_89b56def8816c814378301d3de3fa0173225ef9894e150b7fca94124f2b42993] [@claim:clm_a7e3bb51506e55a8110398dd58793c68480b388e793c83b1348a92bfbbcdc69f] [@claim:clm_c1dde8b6cccbf84ec01aa324597df2485fd33f5d236153a573647b1310747930] [@claim:clm_d48e87f1b78a13e86ccc9d74ca9876a8b624bf4f4c491af0908fb74766d22d99] [@claim:clm_e4e278811cdd717969e7a30d888e589ea2e1ad49c151c19f9dba2813b8072df1] [@claim:clm_e7af349c52fd1c11f0c39b7ffcd04ccb13411eed96df98a23b9d1483682a0837] [@claim:clm_fc3641430169b2fee1fdeb43768089189acc9ef18e0c635d3a73d70a4b521ad0] [@claim:clm_fdeffb0be8c30f704c45bb7dc7b82a5464458a58b6e9489db8eb11c8018196a4]
+<!-- rcw:end owner=entity:ent_c03b4c6ac6b8537784c1c13567915c30 block=evidence -->
+
+## Researcher notes
+

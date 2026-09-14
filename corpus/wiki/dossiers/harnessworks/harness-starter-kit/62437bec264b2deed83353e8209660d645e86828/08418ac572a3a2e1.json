@@ -1,0 +1,814 @@
+{
+  "applied_operation_id": "op_ac9174b0714c40debc7e6c6c9fb40f92",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_a5bf0d2bcb8d190c2c4d8b5ce42425431c315f7b3b338d59ef4f0e5b4f17164f",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 44,
+          "line_start": 43,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L43-L44"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_27e21154296f4f45e8303d10d71b1b917b0e18a78bd2c5755a03c84455812061"
+      ],
+      "text": "Harness Starter Kit is described as a prompt-first starter kit that converts repeated coding-agent mistakes into durable repository instructions, checks, memory, and evaluation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ccc75abee1b4f0e36a22b25efafaa3b9dccb963b40f9ca03c317709a8e2e136",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 272,
+          "line_start": 267,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L267-L272"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e6e5547fbbf9cd7dcf09145f8294b34a49341221e23c9f13454c2d6e249df92e"
+      ],
+      "text": "Adoption is agent-driven rather than an automatic installer: the agent inspects the target repo first and applies only the smallest useful set of harness artifacts, following documented workflow and prompt files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_38997cc2cbfdf3af116309a974924e2ed062adc0dd571e4d2788ef07a5326843",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 163,
+          "line_start": 160,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L160-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_9576d03f2194fc967c010f6732804d3fa80b7355dbf06c3d42f1b8934ebb9787"
+      ],
+      "text": "The /harness command names are prompt conventions typed into the coding agent chat by default, not built-in editor commands; they appear in editor command palettes only if matching custom slash commands are added separately."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ccc18ddd8e68cae3e4fd2ee444bd05a08319444c6afe30d6dfb3c14dc1ab9ce",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 182,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L178-L182"
+        },
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 174,
+          "line_start": 167,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L167-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_24972c74497d107220541c6d830a90409ee3547ef511f70b45ec97b908c9febd",
+        "slc_667455eef92c030773356b0e1acde7b9bc2f5d245801d5d80155e4951a7db75a"
+      ],
+      "text": "The kit exposes five stage-based commands: doctor (inspect without modifying), adopt (apply minimal harness pieces), review (challenge the diff pre-commit/PR), update (bring in a newer kit reference), and refresh (clean stale or duplicated guidance)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_23d93f19f5ecee94534d13459a6bf5290ff95d3e5741b6a78fb5d88242a367a5",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 260,
+          "line_start": 258,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L258-L260"
+        },
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 194,
+          "line_start": 193,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L193-L194"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_13afa24f7f8b00e97489f9980d47f604569d2fdd35d643eacb07700834b386e3",
+        "slc_ae5d2d1c0705759a3e38d37f5a7874615c062c274df520b29fc9c4e5a3f83920"
+      ],
+      "text": "Besides prompt-first workflows, the same workflows are published as runtime-native skills for Codex and Claude Code, with the source package in agent-skills/ and packaging details in docs/agent-skills-package.md."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c4c409dcea5aa28520bf1df18e337500d0b2ddf7349cc920cbbdb7ea65dbd8b1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 203,
+          "line_start": 202,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L202-L203"
+        },
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 200,
+          "line_start": 198,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L198-L200"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8e6c9a72ba1c29ee8f71b234af41d4ac002fae1824362748daa87724d9a13e71",
+        "slc_e153af2229cc253f851dd98c21008a490304b8d54b8ca150175cc869183d7c8e"
+      ],
+      "text": "Codex installation uses the harnessworks/harness-agent-skills-marketplace plugin marketplace pinned at ref v0.1.16, followed by installing harness-agent-skills from the Harnessworks marketplace."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2a3fbe1163656d653457f9ec061f6c77f3c4581ffbf630e1e922f0de094f116f",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 233,
+          "line_start": 230,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L230-L233"
+        },
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 241,
+          "line_start": 237,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L237-L241"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01797f006859fbd77c242d1886f54ae37bb7a53d054c7c1bc74f737f943e9ba7",
+        "slc_e732cb2d13164139032635b8c2db2c5a6526deca8921a6efe9d395c0865f2d06"
+      ],
+      "text": "Claude Code installation adds the harness-agent-skills-marketplace at v0.1.16 and installs harness-agent-skills@harnessworks, invoked via /harness-agent-skills:harness router commands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5f3de0cc38e94546acbfed22f1fb44951901ab905808f8c53a90d4d1dbd2a4d3",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 111,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L80-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fae2bea288e8e6263bfdb0b581c08c6d9b3ceb5d638b77c01142f8205d44647e"
+      ],
+      "text": "The adoption prompt instructs the agent to treat the working directory as the target repo, treat the cloned kit as read-only reference, inspect before editing, preserve existing architecture and conventions, and add only minimal harness pieces."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_801686245ff566ef93f961a193ebc759f8c7e25be9e4a3a9417941926e7a01c6",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 122,
+          "line_start": 113,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L113-L122"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_44dbe1cce56c397db4a311053dd90f722f709cdaec04168bb24078d3fc71b470"
+      ],
+      "text": "The expected adoption outcome includes a project-specific AGENTS.md, a knowledge store if none exists, lightweight drift checks from the repo's real rules, local verification commands, and an adoption report covering changes, checks, assumptions, failure memory, and gate placement."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_cd85e72fd579803ed8b1f0f2ac90932cb7b9f8edbe8cf3b886f3a7dfd6ac431e",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 111,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L80-L111"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_fae2bea288e8e6263bfdb0b581c08c6d9b3ceb5d638b77c01142f8205d44647e"
+      ],
+      "text": "The /harness review sub-agent request is treated as explicit permission to use a read-only reviewer subagent when the active runtime and tool instructions permit it; if unavailable, blocked, or failed, the fallback reason must be reported."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_756a693a35619ad8f58aa2e7c0f823f7a0c150d473794119b3fc5ff0d37131e6",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 302,
+          "line_start": 294,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L294-L302"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a1abc219190050410b4e849df0b5fa80235cf0f32ab2cb14937909b3cfcecf04"
+      ],
+      "text": "The kit ships evaluation materials (docs/evaluation.md, an effectiveness-report template, and a task-outcome.yaml template) for measuring comparable tasks, wrong-file edits, first-pass verification, and human rework."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5ed7bc6629a7e07827f2433dbf8087b5df48136011956343c8b0ce94dba3c559",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 152,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L148-L152"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d22e0546cd1d2e9f9e070106d2e46291c45ba74d4453fb1acb68771f7418ece"
+      ],
+      "text": "The README states Harness Doctor can scan for durable repository evidence but cannot prove agents make fewer mistakes; harness health and agent effectiveness must be measured separately via task outcomes and effectiveness reports."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fd507364b8f1e4ee88f7ed4f8140b78a5483457ef39af2ab55cb21ddaba326ec",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "62437bec264b2deed83353e8209660d645e86828",
+          "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+          "line_end": 309,
+          "line_start": 304,
+          "path": "README.md",
+          "repository": "harnessworks/harness-starter-kit",
+          "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md#L304-L309"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_43bdeba8f946ede9b8cef26b891cb2e59f6eb4f7d62ae0c57c949a7e966ab424"
+      ],
+      "text": "The included dogfood reports (TodayBus for a Next.js target and Harness ERP for a Spring/Maven backend) are harnessed-only benchmarks and, per the README, do not prove effectiveness improvement."
+    }
+  ],
+  "commit": "62437bec264b2deed83353e8209660d645e86828",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 331,
+        "path": "README.md",
+        "size": 14471
+      },
+      {
+        "lines": 310,
+        "path": "README.ja.md",
+        "size": 14570
+      },
+      {
+        "lines": 306,
+        "path": "README.ko.md",
+        "size": 13958
+      },
+      {
+        "lines": 302,
+        "path": "README.zh-CN.md",
+        "size": 13221
+      },
+      {
+        "lines": 303,
+        "path": "README.zh-TW.md",
+        "size": 13375
+      },
+      {
+        "lines": 296,
+        "path": "ROADMAP.md",
+        "size": 14928
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/adoption-workflow.md",
+        "reason": "file-budget",
+        "size": 14305
+      },
+      {
+        "path": "docs/agent-skills-package.md",
+        "reason": "file-budget",
+        "size": 6747
+      },
+      {
+        "path": "docs/component-map.md",
+        "reason": "file-budget",
+        "size": 7096
+      },
+      {
+        "path": "docs/evaluation.md",
+        "reason": "file-budget",
+        "size": 8815
+      },
+      {
+        "path": "docs/overview.md",
+        "reason": "file-budget",
+        "size": 2327
+      },
+      {
+        "path": "docs/profiles.md",
+        "reason": "file-budget",
+        "size": 1799
+      },
+      {
+        "path": "docs/validation.md",
+        "reason": "file-budget",
+        "size": 5538
+      },
+      {
+        "path": "docs/checklists/decision-failure-memory.md",
+        "reason": "file-budget",
+        "size": 6267
+      },
+      {
+        "path": "docs/checklists/dogfood-evidence-adoption.md",
+        "reason": "file-budget",
+        "size": 4807
+      },
+      {
+        "path": "docs/checklists/external-api-work.md",
+        "reason": "file-budget",
+        "size": 5871
+      },
+      {
+        "path": "docs/checklists/harness-review.md",
+        "reason": "file-budget",
+        "size": 2683
+      },
+      {
+        "path": "docs/checklists/initial-adoption.md",
+        "reason": "file-budget",
+        "size": 1818
+      },
+      {
+        "path": "docs/checklists/profile-absorption.md",
+        "reason": "file-budget",
+        "size": 4021
+      },
+      {
+        "path": "docs/checklists/profile-maintenance.md",
+        "reason": "file-budget",
+        "size": 2152
+      },
+      {
+        "path": "docs/checklists/verification-scripts.md",
+        "reason": "file-budget",
+        "size": 4670
+      },
+      {
+        "path": "docs/conventions/coding.md",
+        "reason": "file-budget",
+        "size": 1549
+      },
+      {
+        "path": "docs/decisions/000-template.md",
+        "reason": "file-budget",
+        "size": 486
+      },
+      {
+        "path": "docs/decisions/0001-prompt-first-adoption.md",
+        "reason": "file-budget",
+        "size": 4282
+      },
+      {
+        "path": "docs/decisions/0002-configurable-decision-memory-warning.md",
+        "reason": "file-budget",
+        "size": 3632
+      },
+      {
+        "path": "docs/decisions/0003-review-gate-placement-for-deterministic-behavior-checks.md",
+        "reason": "file-budget",
+        "size": 3959
+      },
+      {
+        "path": "docs/decisions/0004-link-failure-memory-to-regression-checks.md",
+        "reason": "file-budget",
+        "size": 6121
+      },
+      {
+        "path": "docs/decisions/0005-validate-dogfood-evidence-consistency.md",
+        "reason": "file-budget",
+        "size": 3816
+      },
+      {
+        "path": "docs/decisions/0006-trigger-task-outcome-evidence-for-substantial-harness-work.md",
+        "reason": "file-budget",
+        "size": 3878
+      },
+      {
+        "path": "docs/decisions/0007-harness-doctor-six-element-coupling-diagnostic.md",
+        "reason": "file-budget",
+        "size": 5858
+      },
+      {
+        "path": "docs/decisions/0008-universal-agent-skills-package.md",
+        "reason": "file-budget",
+        "size": 2824
+      },
+      {
+        "path": "docs/decisions/0009-claude-code-plugin-marketplace.md",
+        "reason": "file-budget",
+        "size": 2668
+      },
+      {
+        "path": "docs/decisions/0010-stage-command-ux-for-agent-runtimes.md",
+        "reason": "file-budget",
+        "size": 2912
+      },
+      {
+        "path": "docs/decisions/README.md",
+        "reason": "file-budget",
+        "size": 628
+      },
+      {
+        "path": "docs/domain/glossary.md",
+        "reason": "file-budget",
+        "size": 1690
+      },
+      {
+        "path": "docs/examples/effectiveness-report-harness-erp-dogfood.md",
+        "reason": "file-budget",
+        "size": 26695
+      },
+      {
+        "path": "docs/examples/effectiveness-report-small-evidence.md",
+        "reason": "file-budget",
+        "size": 5765
+      },
+      {
+        "path": "docs/examples/effectiveness-report-todaybus-dogfood.md",
+        "reason": "file-budget",
+        "size": 8960
+      },
+      {
+        "path": "docs/examples/harness-doctor-report.md",
+        "reason": "file-budget",
+        "size": 5970
+      },
+      {
+        "path": "docs/examples/harness-review-report.md",
+        "reason": "file-budget",
+        "size": 4379
+      },
+      {
+        "path": "docs/examples/lifecycle-pilot-results.md",
+        "reason": "file-budget",
+        "size": 9933
+      },
+      {
+        "path": "docs/examples/maintenance-evidence-report.md",
+        "reason": "file-budget",
+        "size": 8142
+      },
+      {
+        "path": "docs/failures/000-template.md",
+        "reason": "file-budget",
+        "size": 1233
+      },
+      {
+        "path": "docs/failures/0001-docs-drift-venv-command-false-positive.md",
+        "reason": "file-budget",
+        "size": 1873
+      },
+      {
+        "path": "docs/failures/0002-subagent-reviewer-mode-ownership.md",
+        "reason": "file-budget",
+        "size": 2140
+      },
+      {
+        "path": "docs/failures/0003-missing-adr-for-structural-product-decisions.md",
+        "reason": "file-budget",
+        "size": 3321
+      },
+      {
+        "path": "docs/failures/0004-deterministic-behavior-check-remained-focused-without-gate-placement-review.md",
+        "reason": "file-budget",
+        "size": 3326
+      },
+      {
+        "path": "docs/failures/0005-failure-memory-was-not-linked-to-regression-checks.md",
+        "reason": "file-budget",
+        "size": 3335
+      },
+      {
+        "path": "docs/failures/0006-dogfood-evidence-consistency-gaps-were-not-checked.md",
+        "reason": "file-budget",
+        "size": 2790
+      },
+      {
+        "path": "docs/failures/0007-dogfood-first-pass-failures-lacked-memory-decision.md",
+        "reason": "file-budget",
+        "size": 3019
+      },
+      {
+        "path": "docs/failures/0008-go-profile-fixture-did-not-exercise-go-toolchain.md",
+        "reason": "file-budget",
+        "size": 3058
+      },
+      {
+        "path": "docs/failures/0009-readme-language-switcher-drift-missed-traditional-chinese.md",
+        "reason": "file-budget",
+        "size": 2466
+      },
+      {
+        "path": "docs/failures/0010-docs-only-benchmark-oracle-exact-string-drift.md",
+        "reason": "file-budget",
+        "size": 2495
+      },
+      {
+        "path": "docs/failures/0011-refresh-benchmark-oracle-line-wrap-drift.md",
+        "reason": "file-budget",
+        "size": 2578
+      },
+      {
+        "path": "docs/failures/README.md",
+        "reason": "file-budget",
+        "size": 605
+      },
+      {
+        "path": "docs/prompts/apply-to-target-repo.md",
+        "reason": "file-budget",
+        "size": 11461
+      },
+      {
+        "path": "docs/scoring/harness-score-rubric.md",
+        "reason": "file-budget",
+        "size": 10131
+      },
+      {
+        "path": "docs/templates/adoption-report.md",
+        "reason": "file-budget",
+        "size": 5261
+      },
+      {
+        "path": "docs/templates/effectiveness-report.md",
+        "reason": "file-budget",
+        "size": 2095
+      },
+      {
+        "path": "docs/templates/harness-review-report.md",
+        "reason": "file-budget",
+        "size": 2723
+      },
+      {
+        "path": "docs/templates/profile-readme.md",
+        "reason": "file-budget",
+        "size": 2182
+      },
+      {
+        "path": "docs/theory/harness-engineering.md",
+        "reason": "file-budget",
+        "size": 6963
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 9480
+      },
+      {
+        "path": "CHANGELOG.md",
+        "reason": "file-budget",
+        "size": 19678
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "reason": "file-budget",
+        "size": 688
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "reason": "file-budget",
+        "size": 6040
+      },
+      {
+        "path": "SECURITY.md",
+        "reason": "file-budget",
+        "size": 833
+      }
+    ],
+    "omitted_count": 61,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 266,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 67,
+      "complete": false,
+      "omitted": 61,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_087e02a8382e5390a5ea5eba02bbeb80",
+  "facets": {
+    "components": 0,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 2,
+    "limitations": 2,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "components",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/harnessworks/harness-starter-kit/62437bec264b2deed83353e8209660d645e86828/08418ac572a3a2e1/manifest.json",
+  "package_id": "pkg_1873818ebf1c46bc2ea7530488cf8ff1895fbaa8bfa3c26dd0c3d4fc2cedfdca",
+  "repo": "harnessworks/harness-starter-kit",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "fb19dcfbb043762669b319775260280d6d014d1371e1692ca244e7cc6301c3e3",
+  "snapshot_id": "08418ac572a3a2e1",
+  "sources": [
+    {
+      "commit": "62437bec264b2deed83353e8209660d645e86828",
+      "git_sha": "d691c5673c7c6187597af809c5d88d234b42c100",
+      "lines": 310,
+      "path": "README.ja.md",
+      "repository": "harnessworks/harness-starter-kit",
+      "sha256": "1c613217346863f54f710561ae784405b71485c056b4abc89f9cde8a180bc878",
+      "source_id": "src_a916637b53a75ef0aabc24c4903911a2",
+      "stored": "readme.ja.md-b3fc642ee979.md",
+      "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.ja.md"
+    },
+    {
+      "commit": "62437bec264b2deed83353e8209660d645e86828",
+      "git_sha": "d757049177c56eb84c57a7c687a1812be472e85b",
+      "lines": 306,
+      "path": "README.ko.md",
+      "repository": "harnessworks/harness-starter-kit",
+      "sha256": "122ef602468b7da5b39b70fe4b55d0397048760638b5cfe6aaccbd7436b19f2b",
+      "source_id": "src_7f7f3c202b855eefb8916ae96aa285a1",
+      "stored": "readme.ko.md-86fa6921bceb.md",
+      "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.ko.md"
+    },
+    {
+      "commit": "62437bec264b2deed83353e8209660d645e86828",
+      "git_sha": "43059f6d27f38f223b98bd30d504688aa82215ae",
+      "lines": 331,
+      "path": "README.md",
+      "repository": "harnessworks/harness-starter-kit",
+      "sha256": "e5ee4b1f00864fae9a604c01cde44c4e4f5c3493a808566c2bfd8121cafdb07c",
+      "source_id": "src_cae2eac77aff596698f4668cb7179d45",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.md"
+    },
+    {
+      "commit": "62437bec264b2deed83353e8209660d645e86828",
+      "git_sha": "2ad0da0df46b6d5f901db9d8a64cc886a538f630",
+      "lines": 302,
+      "path": "README.zh-CN.md",
+      "repository": "harnessworks/harness-starter-kit",
+      "sha256": "cdbdbc82cb3fe736c22ba46856f0c3f2655e684ba64934d6c910d3c4485967c5",
+      "source_id": "src_78b44bc553735d26aa4f0718f91f2104",
+      "stored": "readme.zh-cn.md-13f564fa6ce9.md",
+      "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.zh-CN.md"
+    },
+    {
+      "commit": "62437bec264b2deed83353e8209660d645e86828",
+      "git_sha": "ae08128c48f7ce2fe3cbe61f5281abb5070eef84",
+      "lines": 303,
+      "path": "README.zh-TW.md",
+      "repository": "harnessworks/harness-starter-kit",
+      "sha256": "77c52217c4906f3ca442684214f53134e371844aeec38f047e3d7d03498a819d",
+      "source_id": "src_bd8d2944b2cf5464b2331020e6bbd795",
+      "stored": "readme.zh-tw.md-062ba17e5e26.md",
+      "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/README.zh-TW.md"
+    },
+    {
+      "commit": "62437bec264b2deed83353e8209660d645e86828",
+      "git_sha": "49ae58e216dd4931d01d56cf275baef40040e74b",
+      "lines": 296,
+      "path": "ROADMAP.md",
+      "repository": "harnessworks/harness-starter-kit",
+      "sha256": "958f286dd3988c59e34466cf892f51e15563696d7d5e49c1e18b85a84d76af63",
+      "source_id": "src_b0f6f30b3bcc5373b6f6f2198effe8ea",
+      "stored": "roadmap.md-683343bdf93f.md",
+      "url": "https://github.com/harnessworks/harness-starter-kit/blob/62437bec264b2deed83353e8209660d645e86828/ROADMAP.md"
+    }
+  ],
+  "summary": "Selected evidence records: Harness Starter Kit is described as a prompt-first starter kit that converts repeated coding-agent mistakes into durable repository instructions, checks, memory, and evaluation. Adoption is agent-driven rather than an automatic installer: the agent inspects the target repo first and applies only the smallest useful set of harness artifacts, following documented workflow and prompt files.",
+  "superseded_claim_ids": []
+}

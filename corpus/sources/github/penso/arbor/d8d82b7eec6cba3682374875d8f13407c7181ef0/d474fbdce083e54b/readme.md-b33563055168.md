@@ -1,0 +1,370 @@
+<p align="center">
+  <a href="assets/screenshot.png">
+    <img src="assets/screenshot.png" alt="Arbor UI screenshot" width="1100" />
+  </a>
+</p>
+
+# Arbor
+
+[![CI](https://github.com/penso/arbor/actions/workflows/ci.yml/badge.svg)](https://github.com/penso/arbor/actions/workflows/ci.yml)
+[![Rust Nightly](https://img.shields.io/badge/rust-nightly--2025--11--30-orange?logo=rust)](https://rust-lang.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/penso/arbor?label=release)](https://github.com/penso/arbor/releases)
+[![macOS](https://img.shields.io/badge/macOS-supported-brightgreen)](#install)
+[![Linux](https://img.shields.io/badge/Linux-supported-brightgreen)](#install)
+[![Windows](https://img.shields.io/badge/Windows-supported-brightgreen)](#install)
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://codspeed.io/penso/arbor?utm_source=badge)
+
+Arbor is a **fully native app for agentic coding** built with Rust and [GPUI](https://gpui.rs).
+It gives you one place to manage repositories, issue-driven worktrees, embedded terminals, managed processes, diffs, PR context, AI coding agent activity, and a shared daemon that also powers Arbor's web UI, CLI, and MCP server.
+
+## Why Arbor
+
+- Fully native desktop app, UI and terminal stack included, optimized for long-running local workflows
+- One daemon-backed model for the desktop app, web UI, CLI, and MCP server
+- Built for parallel coding sessions across local repos, issue queues, and remote outposts
+
+## Core Capabilities
+
+### Repositories, Worktrees, and Issues
+- List, create, and delete worktrees across multiple repositories
+- Create managed worktrees directly from GitHub or GitLab issues
+- Preview sanitized worktree names, branch names, and target paths before creation
+- Repo-local branch naming rules via `[branch]` in `arbor.toml`
+- Delete confirmation with unpushed commit detection
+- Optional branch cleanup on worktree deletion
+- Worktree navigation history (back/forward)
+- Last git activity timestamp per worktree
+- Automatic issue linking to existing branches and open PRs / MRs
+
+### Embedded Terminal, Processes, and Tasks
+- Built-in PTY terminal with truecolor and `xterm-256color` support
+- Multiple terminal tabs per worktree
+- Experimental embedded `libghostty-vt` engine behind a compile-time feature flag, used by default when available
+- Persistent daemon-based sessions (survive app restarts)
+- Session attach/detach and signals (interrupt/terminate/kill)
+- Managed processes from both `Procfile` and `arbor.toml`
+- Process restart state, memory metrics, and terminal-session linkage
+- Scheduled `[[tasks]]` from `arbor.toml`, with optional Claude or Codex triggers
+- Bell-aware terminal activity and completion notifications
+
+### Diff, PR, and Review Context
+- Side-by-side diff display with addition/deletion line counts
+- Changed file listing per worktree
+- File tree browsing with directory expand/collapse
+- Multi-tab diff sessions
+- PR summary and detail cards in the changes pane
+- Native inline PR comment actions and review-comment refresh support
+
+### Agent Chat
+- Interactive chat sessions with ACP agents (Claude, Codex, Pi, Gemini, and more via acpx)
+- OpenAI-compatible provider support: Ollama, LM Studio, OpenRouter, OpenAI, and any `/v1/chat/completions` endpoint
+- Streaming responses via SSE for OpenAI-compatible providers and JSONL for ACP agents
+- Automatic model discovery: probes `/v1/models` at startup for configured providers
+- Model selector with per-provider sections and distinct icons (ACP vs API)
+- Provider configuration via `~/.config/arbor/config.toml` `[[providers]]` sections
+- Session persistence across daemon restarts
+- Token usage tracking and display
+
+### AI Agent Visibility
+- Detects running coding agents: Claude Code, Codex, OpenCode
+- Working/waiting state indicators with color-coded dots
+- Real-time updates over WebSocket streaming in both the desktop and web UI
+- Legacy session compatibility and targeted clear events for long-lived daemon sessions
+
+### Remote Daemon and Companion Binaries
+- `arbor-httpd` serves the remote daemon API and bundled web UI
+- `arbor-cli` exposes daemon-backed health, repo, worktree, terminal, process, and task commands
+- Dedicated `arbor-mcp` binary backed by Arbor's daemon API
+- Structured MCP tools for repositories, worktrees, terminals, processes, tasks, and agent activity
+- MCP resources for daemon snapshots and prompts for common Arbor workflows
+- Supports `ARBOR_DAEMON_URL` and `ARBOR_DAEMON_AUTH_TOKEN` for remote authenticated daemons
+- Create and manage remote worktrees over SSH
+- Multi-host configuration with custom ports and identity files
+- Mosh support for better connectivity
+- Remote terminal sessions via `arbor-httpd`
+- Outpost status tracking (available, unreachable, provisioning)
+- Optional Symphony runtime endpoints when the feature is enabled
+
+### UI and Config
+- Automatic PR detection and linking per worktree
+- Git actions in the UI: commit, push
+- Three-pane layout across `arbor-gui` and `arbor-web-ui`
+- Command palette coverage for actions, repos, worktrees, issues, presets, and task templates
+- Resizable panes, collapsible sidebar, desktop notifications
+- 38 themes shared between the desktop app and web UI, with live sync when switching themes
+- Branch-aware window titles and daemon / rate-limit status polish
+- TOML config at `~/.config/arbor/config.toml` with hot reload
+
+## Install
+
+### Homebrew (macOS)
+
+```bash
+brew install penso/arbor/arbor
+```
+
+### Prebuilt Binaries
+
+Download the latest build from [Releases](https://github.com/penso/arbor/releases).
+Release bundles ship the desktop app plus `arbor-httpd`, `arbor-mcp`, and `arbor-cli`.
+
+### Quick Start from Source
+
+```bash
+git clone https://github.com/penso/arbor
+cd arbor
+just run
+```
+
+To run the MCP server against a local dev daemon:
+
+```bash
+just run-mcp
+```
+
+## Documentation
+
+The live docs site is available at [penso.github.io/arbor/docs](https://penso.github.io/arbor/docs/).
+The in-repo mdBook sources live under [`docs/src`](docs/src), and you can build them locally with:
+
+```bash
+just docs-build
+```
+
+## Crates
+
+| Crate | Description |
+|-------|-------------|
+| `arbor-benchmarks` | CodSpeed and local benchmark targets |
+| `arbor-cli` | CLI for Arbor's daemon API (`arbor-cli` binary) |
+| `arbor-daemon-client` | Typed client and shared API DTOs for `arbor-httpd` |
+| `arbor-core` | Worktree primitives, change detection, agent hooks |
+| `arbor-gui` | GPUI desktop app (`arbor` binary) |
+| `arbor-httpd` | Remote HTTP daemon (`arbor-httpd` binary) |
+| `arbor-mcp` | MCP server exposing Arbor via stdio (`arbor-mcp` binary) |
+| `arbor-mosh` | Mosh transport for remote outposts |
+| `arbor-ssh` | SSH transport for remote outposts |
+| `arbor-symphony` | Optional workflow orchestration runtime |
+| `arbor-terminal-emulator` | Embedded terminal engine glue and Ghostty integration |
+| `arbor-web-ui` | TypeScript dashboard assets + helper crate |
+
+## Repo Config
+
+Repo-local behavior is configured with `<repo>/arbor.toml`.
+Arbor currently reads repo presets, managed processes, worktree scripts, scheduled tasks, branch naming rules, agent defaults, and notification routing from that file.
+
+Example:
+
+```toml
+[[presets]]
+name = "Review"
+icon = "R"
+command = "codex --prompt-file .arbor/tasks/review.md"
+
+[[processes]]
+name = "web"
+command = "npm run dev"
+working_dir = "app"
+auto_start = true
+auto_restart = true
+restart_delay_ms = 2000
+
+[scripts]
+setup = ["cp .env.example .env"]
+teardown = ["rm -f .env"]
+
+[branch]
+prefix_mode = "github-user"
+
+[agent]
+default_preset = "codex"
+auto_checkpoint = true
+
+[notifications]
+desktop = true
+events = ["agent_started", "agent_finished", "agent_error"]
+webhook_urls = ["https://example.com/hook"]
+
+[[tasks]]
+name = "triage-prs"
+schedule = "0 */30 * * * * *"
+command = "./scripts/triage-prs"
+enabled = true
+
+[tasks.trigger]
+on_exit_code = 0
+on_stdout = true
+agent = "codex"
+prompt_template = "Review this output and prepare a follow-up plan:\n\n{stdout}"
+```
+
+Task templates for the command palette default to `<repo>/.arbor/tasks/*.md`.
+
+## CLI
+
+Arbor also ships `arbor-cli` for daemon-backed scripting:
+
+```bash
+cargo run -p arbor-cli -- health
+cargo run -p arbor-cli -- worktrees list --json
+cargo run -p arbor-cli -- processes list --json
+cargo run -p arbor-cli -- tasks list --json
+```
+
+## MCP
+
+Arbor ships a dedicated `arbor-mcp` binary from the `arbor-mcp` crate. The stdio server is enabled by the crate's default `stdio-server` feature and talks to `arbor-httpd`, so the daemon must be reachable first.
+
+Enable it in a normal build:
+
+```bash
+cargo build -p arbor-mcp
+```
+
+Environment variables:
+
+- `ARBOR_DAEMON_URL` overrides the daemon base URL. Default: `http://127.0.0.1:8787`
+- `ARBOR_DAEMON_AUTH_TOKEN` sends a bearer token for remote authenticated daemons
+
+Remote access:
+
+1. On the daemon host, set `[daemon] auth_token = "your-secret"` in `~/.config/arbor/config.toml`.
+2. Start `arbor-httpd`. When an auth token is configured, Arbor binds remotely by default on `0.0.0.0:8787` unless `ARBOR_HTTPD_BIND` overrides it.
+3. Point `arbor-mcp` at that daemon with `ARBOR_DAEMON_URL=http://HOST:8787`.
+4. Pass the same secret with `ARBOR_DAEMON_AUTH_TOKEN=your-secret`.
+
+Loopback requests are allowed without a token. Non-loopback requests require `Authorization: Bearer <token>`.
+
+Example client config:
+
+```json
+{
+  "mcpServers": {
+    "arbor": {
+      "command": "/path/to/arbor-mcp",
+      "env": {
+        "ARBOR_DAEMON_URL": "http://127.0.0.1:8787"
+      }
+    }
+  }
+}
+```
+
+The `arbor-mcp` binary is feature-gated. To disable the stdio server binary in a build, use:
+
+```bash
+cargo build -p arbor-mcp --no-default-features
+```
+
+See [docs/mcp.md](docs/mcp.md) for the full MCP setup guide.
+
+## Building from Source
+
+### Prerequisites
+
+- **Rust nightly** — the project uses `nightly-2025-11-30` (install via [rustup](https://rustup.rs/))
+- **[just](https://github.com/casey/just)** — task runner
+- **A Caskaydia / Cascadia Nerd Font variant** — icons in the UI use Nerd Font glyphs
+
+#### macOS
+
+```
+just setup-macos
+```
+
+Or manually:
+
+```
+xcode-select --install
+xcodebuild -downloadComponent MetalToolchain
+brew install --cask font-caskaydia-cove-nerd-font
+```
+
+#### Linux (Debian/Ubuntu)
+
+```
+just setup-linux
+```
+
+Or manually:
+
+```
+sudo apt-get install -y libxcb1-dev libxkbcommon-dev libxkbcommon-x11-dev
+```
+
+Then install the [CaskaydiaMono Nerd Font](https://www.nerdfonts.com/font-downloads) to `~/.local/share/fonts/`.
+
+### Experimental Ghostty VT Engine
+
+Arbor can also be built with an experimental embedded Ghostty terminal engine.
+This is opt-in, disabled by default, and currently expects:
+
+- the pinned `vendor/ghostty` submodule checked out
+- `zig` on `PATH`
+- a prebuilt `arbor_ghostty_vt_bridge` shared library in `target/ghostty-vt-bridge/lib`
+- optionally, `ARBOR_GHOSTTY_SRC=/path/to/ghostty` to override the pinned submodule
+- optionally, `ARBOR_GHOSTTY_TARGET` / `ARBOR_GHOSTTY_CPU` to force a safer Zig target in CI
+
+With a build that includes `--features ghostty-vt-experimental`, Arbor defaults
+to the embedded Ghostty engine. You can still choose the embedded engine in
+`~/.config/arbor/config.toml`:
+
+```toml
+embedded_terminal_engine = "ghostty-vt-experimental"
+```
+
+Example:
+
+```bash
+git submodule update --init --recursive vendor/ghostty
+just ghostty-vt-bridge
+RUSTFLAGS="-L native=$(pwd)/target/ghostty-vt-bridge/lib -C link-arg=-Wl,-rpath,$(pwd)/target/ghostty-vt-bridge/lib" \
+  cargo +nightly-2025-11-30 run -p arbor-gui --features ghostty-vt-experimental
+```
+
+To run Arbor with both embedded engines available and let `config.toml` choose:
+
+```bash
+git submodule update --init --recursive vendor/ghostty
+just run-configured-embedded-engine
+```
+
+To run the experimental checks:
+
+```bash
+git submodule update --init --recursive vendor/ghostty
+just test-ghostty-vt
+just check-ghostty-vt-gui
+just check-ghostty-vt-httpd
+```
+
+To compare the embedded engine performance:
+
+```bash
+git submodule update --init --recursive vendor/ghostty
+just bench-embedded-terminal-engines
+```
+
+To build the daemon with the same terminal engine:
+
+```bash
+git submodule update --init --recursive vendor/ghostty
+just ghostty-vt-bridge
+RUSTFLAGS="-L native=$(pwd)/target/ghostty-vt-bridge/lib -C link-arg=-Wl,-rpath,$(pwd)/target/ghostty-vt-bridge/lib" \
+  cargo +nightly-2025-11-30 run -p arbor-httpd --features ghostty-vt-experimental
+```
+
+## Similar Tools
+
+- [Superset](https://superset.sh) — terminal-based worktree manager
+- [Jean](https://jean.build) — dev environment for AI agents with isolated worktrees and chat sessions
+- [Conductor](https://www.conductor.build) — macOS app to orchestrate multiple AI coding agents in parallel worktrees
+
+## Acknowledgements
+
+Thanks to [Zed](https://zed.dev) for building and open-sourcing [GPUI](https://gpui.rs), the GPU-accelerated UI framework that powers Arbor.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=penso/arbor&type=date&legend=top-left)](https://www.star-history.com/#penso/arbor&type=date&legend=top-left)

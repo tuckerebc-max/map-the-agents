@@ -1,0 +1,544 @@
+{
+  "applied_operation_id": "op_8af1d47d00ff4e5d90cd572e9b25f072",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_7942c565752f3d37f0cb9021bad2e02682e869d5b220ad8cf34cce6b5b7096b4",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 294,
+          "line_start": 292,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L292-L294"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 128,
+          "line_start": 128,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L128-L128"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 126,
+          "line_start": 118,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L118-L126"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4d49878d4eeaa01dc89cac76960f729e707d0af6e8da83e62510ab5499dbf59a",
+        "slc_b1897c0272485939fd35b68f3c4d15ca95774c9e4f01357708e687a9702c58e9",
+        "slc_fa6e40de9d9b755f292de8194cab1a011ed3b67ac94fe9c266ecca4d2d240e31"
+      ],
+      "text": "Asset generation is exposed through slash commands: /image, /sprite, /music, /video, /mesh-mode-start, /comfyui-mode-start, /speech-mode-start, with matching *-mode-end commands to exit."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_ca34d827653f2bf0eae583919f995abb4e891ed7d6bedcb1013fcb271370d7f2",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 174,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L170-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e80eb1f8da4c410c610adbb5f77e414600348d1b92cb8623d69ce952c2fcf6d2"
+      ],
+      "text": "A CLI form exists for the studio harness: ugs studio \"<task>\" with --json, --interactive, and --cwd options, runnable alongside the desktop app."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_515824913163e5afa7d73f33f7697120c7c9619afb69adab39c6bb59027c37ed",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 174,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L170-L174"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 168,
+          "line_start": 168,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L168-L168"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e80eb1f8da4c410c610adbb5f77e414600348d1b92cb8623d69ce952c2fcf6d2",
+        "slc_f1347f31652c4a52f9ab0ea4af7f8bb915fd20f0fc2a5e091a7194cb7aaacfba"
+      ],
+      "text": "The /studio command generates an on-the-fly execution harness with parallel subagents, adversarial verification, and acceptance gates, choosing among six internal strategies automatically."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_93a2f19a2722cf1e1db90b738671f4460fafe7bf4eae4e7ae4673dab23409aaf",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 174,
+          "line_start": 170,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L170-L174"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e80eb1f8da4c410c610adbb5f77e414600348d1b92cb8623d69ce952c2fcf6d2"
+      ],
+      "text": "Each /studio run is logged under .ugs-run/<run-id>/ with a task ledger, events, verdict, and final result, and reuses local claude CLI credentials without extra config."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_587a3b3bdfffa88a4fd1a1cd60f840dbe048965f4dc6cc57362c2812f7aa592c",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 178,
+          "line_start": 178,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L178-L178"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 183,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L180-L183"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_04455c34d7ec0af2c5747a935922bfd06ec64ca0e191cbb20d15bc3bce1741b5",
+        "slc_b261ea960489f4e3464a24290c1724cd78d6199890f19bc2197000d93c545613"
+      ],
+      "text": "An Auto channel (freecc:auto) rotates through configured free channels, skipping those returning 429 or 5xx, applying per-channel cooldown backoff, and returning 503 with a failure log when all are exhausted."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_947bcb067c6603f001ca66d896e113baf273ac50251fd2a1e4bf9ee0d0c36143",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 191,
+          "line_start": 189,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L189-L191"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 187,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L187-L187"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_8feff15a063e295897a51ced9d5e152519bb2c85d20216231f0c493d793faca1",
+        "slc_ba0ea2f92da1de36b56c3f0a3730a83f0acea807205b0bde39c5e3f2492bc0f8"
+      ],
+      "text": "Harness plans support per-step model overrides, enabling multi-provider chains such as DeepSeek for drafting and CodeX for refinement or consensus verification."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f2befee603eba2c798721201d2639b80a623459ee046a467f4f403cc8148d4c8",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 55,
+          "line_start": 47,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L47-L55"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 328,
+          "line_start": 320,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L320-L328"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_4a7619fe344d77db4592d8d47484aea62689911a12dd079d2662aa2b3990edf8",
+        "slc_558e8ab57385cb3369404f5013e83081ba59d1f070b4fa18675af43851117bcd"
+      ],
+      "text": "The stack comprises a Tauri 2/Rust desktop shell, React 18 with Vite 5 and TypeScript 5, Zustand state, Tailwind styling, and a Rust tiny_http+ureq free-channel proxy."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_7e84c9bdf4f55d12a16e1bb2ae41e88816c4cc4fa28666df3057b5ecd9a564ca",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 316,
+          "line_start": 313,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L313-L316"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 148,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L144-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_01dd09c3f0e0393d159ac030deb067b0e16bc22ca3b7da4dfe82fb3afea507f8",
+        "slc_2173512f64daf0dfcb8d3de9a9b660d5bec871cd1f09846d31e01949c333e36d"
+      ],
+      "text": "A local Rust reverse proxy binds to 127.0.0.1, routes per channel at /ch/<channelId>, and translates between Anthropic and OpenAI-compatible streaming protocols so Claude Code can use non-Anthropic providers."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_548618c90af4c1a89aaefdcffc39efb3ff3156501eb9cfaa369a7796c65c6503",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 208,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L206-L208"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_58577ae6d9fa8cc7bc271fe4daff5df004335c0fee0d5feed393399a9e23c034"
+      ],
+      "text": "The product is local-first: sessions, favorites, scheduled prompts, API keys, and workspace history are stored locally and no hosted server is required."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a417f8bd57b85928f4ac80cd3c0d5a677e7962fc4d0515c83217e40e7dd3cf7a",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 148,
+          "line_start": 144,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L144-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2173512f64daf0dfcb8d3de9a9b660d5bec871cd1f09846d31e01949c333e36d"
+      ],
+      "text": "Routing supports 20+ remote channels (NVIDIA NIM, OpenRouter, GitHub Models, Hugging Face Router, Together AI, Gemini, DeepSeek, Groq, Cerebras, and others) plus local runtimes Ollama, LM Studio, and llama.cpp."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_322478ee9294fd68dadfe7516285ccf3206f89c5046b34aaec97722196127a5b",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 140,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L140-L140"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 138,
+          "line_start": 134,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L134-L138"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 132,
+          "line_start": 132,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L132-L132"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_3d5a135e4aeac21405183d72e4df154fd1fba3b7259a7f7862e6d34b3912b630",
+        "slc_a14d17ea186bd301327a6bcc99c4bf405c2849403bbf64df748d6d0992d68d8d",
+        "slc_e50bf83064bd3fb637b1f0c0d9da8f2ee1d056f7d62e7286bb35600c9ac113bb"
+      ],
+      "text": "The agent ships a roster of 40+ game-development specialist roles spanning engine, programming, design, art/audio, and production categories, configurable in Settings including engine and council mode."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_c7ebfc5f4c708c03640b862adfd4dfbf3d2f5a68a470ad28c8b7ac1a17533ee0",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 377,
+          "line_start": 377,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L377-L377"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+          "line_end": 368,
+          "line_start": 361,
+          "path": "README.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md#L361-L368"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0cd99033707d189a70c341a72d8d6df7dc581d9bcb715dfccb516d2afa140284",
+        "slc_754c1e9db20d44a472e529a16876919b657e6a076c4f78fb8a2b01286d7cb88b"
+      ],
+      "text": "Repository development practice: contributors run npm run dev/typecheck/lint/test/desktop/package from app/, and PRs should describe behavior changes, list verification commands, link issues, and include screenshots for UI changes."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_badf96a20a9f857a7e17b9d1a4d984042532ddab3b4390ea7972f21e3d31826a",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "a548515bc4a8ea57550a361f4f1316c47fa2b314",
+          "line_end": 36,
+          "line_start": 36,
+          "path": "SELF-DEV.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/SELF-DEV.md#L36-L36"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "a548515bc4a8ea57550a361f4f1316c47fa2b314",
+          "line_end": 32,
+          "line_start": 29,
+          "path": "SELF-DEV.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/SELF-DEV.md#L29-L32"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "a548515bc4a8ea57550a361f4f1316c47fa2b314",
+          "line_end": 3,
+          "line_start": 3,
+          "path": "SELF-DEV.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/SELF-DEV.md#L3-L3"
+        },
+        {
+          "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+          "git_sha": "a548515bc4a8ea57550a361f4f1316c47fa2b314",
+          "line_end": 13,
+          "line_start": 9,
+          "path": "SELF-DEV.md",
+          "repository": "wellingfeng/ultragamestudio",
+          "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/SELF-DEV.md#L9-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1c3cd6ce3a7c8d6cbb3b4d5c25bc7e49cebfae978b846d29d228839ef96f82ad",
+        "slc_7056d9a3a402e775d1a38f45e5818e770000988ded2b473ab06079fb7dd619c8",
+        "slc_a73552aaba1b609c44d90f134c22939a6a389fe43d432b4b7dceab58d16485f0",
+        "slc_e96e1b06d749b655a1d194504406493609adce67fdd5ff65b9666f1efa11d984"
+      ],
+      "text": "Repository development practice: SELF-DEV.md advises running workflows from a packaged standalone exe via run.bat rather than tauri dev, since dev mode watches source and hot-reloads would interrupt running workflows; a copy-workspace approach is recommended for self-modification."
+    }
+  ],
+  "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 381,
+        "path": "README.md",
+        "size": 20386
+      },
+      {
+        "lines": 40,
+        "path": "SELF-DEV.md",
+        "size": 2962
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 848,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 2,
+      "complete": true,
+      "omitted": 0,
+      "stored": 2
+    }
+  },
+  "entity_id": "ent_a3b7531f625355309a3b408a92a55b99",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 0,
+    "orchestration": 4,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/wellingfeng/ultragamestudio/034f599668f3221891764eb6ea5b966eb496e868/5040c6a7d94315f8/manifest.json",
+  "package_id": "pkg_14cea43c0845c1462d42927d8e4e47b719c8ef7559fda9642d94b7308f442a1c",
+  "repo": "wellingfeng/ultragamestudio",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "323cf4a3e22206a0e48309f7d8401c751226b1748cdbf8ef308b317f009426b1",
+  "snapshot_id": "5040c6a7d94315f8",
+  "sources": [
+    {
+      "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+      "git_sha": "32a48838822ba5122da397805e4d94f4569fdbf0",
+      "lines": 381,
+      "path": "README.md",
+      "repository": "wellingfeng/ultragamestudio",
+      "sha256": "e9312c2eebd61b06492ccad42eb3bdcbc4c76c1268d640e33249c3257e22fdcf",
+      "source_id": "src_a3b2dc981cf7590e9eeb6fef609c4211",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/README.md"
+    },
+    {
+      "commit": "034f599668f3221891764eb6ea5b966eb496e868",
+      "git_sha": "a548515bc4a8ea57550a361f4f1316c47fa2b314",
+      "lines": 40,
+      "path": "SELF-DEV.md",
+      "repository": "wellingfeng/ultragamestudio",
+      "sha256": "a66f395ee53a2d3dc156b4b3a1480a458170a0ac8ee533ae6dac658cf7ca8e1b",
+      "source_id": "src_c6c4e027e60b5050bca12ef8a6ed947d",
+      "stored": "self-dev.md-1d3f9f2e1b82.md",
+      "url": "https://github.com/wellingfeng/UltraGameStudio/blob/034f599668f3221891764eb6ea5b966eb496e868/SELF-DEV.md"
+    }
+  ],
+  "summary": "README and SELF-DEV describe UltraGameStudio, a Tauri/React desktop AI coding agent specialized for game development, with asset-generation slash modes, a 40+ expert roster, free-channel model routing via a local Rust proxy, and a /studio dynamic harness. Evidence is documentation-only; no source code slices are present.",
+  "superseded_claim_ids": []
+}

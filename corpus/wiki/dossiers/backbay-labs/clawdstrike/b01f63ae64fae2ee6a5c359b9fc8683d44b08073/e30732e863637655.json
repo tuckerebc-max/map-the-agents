@@ -1,0 +1,1555 @@
+{
+  "applied_operation_id": "op_5b959a84a93e4cef999e5f1054b5b916",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_193fbf7ee05d51232b0aa73ef4d749ce092feb37ad3d0b1a26427f4b9b9f3632",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c3ff1e2c38b5d314f9e551a5f9c3ff954242d4e4dc437cd880711475d58a7aa"
+      ],
+      "text": "The product is described as a policy engine, EDR, and signed audit chain in one binary, treating AI agent tool calls in the same event taxonomy as kernel-level file, process, network, dylib, and persistence events."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_26ed14ccac4508a679ab965259c4f4e5dfca63d846fe88f5590b1179dca94bd4",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 25,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L25-L25"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1083ff5316f811a6a2d1ae401bf31a09fd3323229c4c8500b1e67d8e1604cf57"
+      ],
+      "text": "The engine ships in multiple forms: a Rust crate, TypeScript SDK, Python package, Go module, CLI, desktop EDR agent (macOS Endpoint Security/Network Extension; Linux Tetragon/Hubble), and an enterprise control plane."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a36f56bdd137e004d038c255e4d613a0127d0581309e73c96cac012dbab50f96",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 164,
+          "line_start": 150,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L150-L164"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L148-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_421418ad7570467813e5873de331902a9750dc3d1d222e22f2bdc436b15e4442",
+        "slc_e0a6827dcece1edc389747469b7c4b31e850b3372e90ce735982d1f3c01a712b"
+      ],
+      "text": "A documented guard stack includes ForbiddenPathGuard, EgressAllowlistGuard, SecretLeakGuard, ShellCommandGuard, McpToolGuard, PromptInjectionGuard, JailbreakGuard, ComputerUseGuard, and SpiderSenseGuard, each returning a verdict with evidence."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3d9a824d8b4980770542ddc8baf525956dc12717e7c1578e515fa305fda71380",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 184,
+          "line_start": 184,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L184-L184"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 188,
+          "line_start": 187,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L187-L188"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 58,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L57-L58"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 61,
+          "line_start": 61,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L61-L61"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 85,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L80-L85"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 69,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L67-L69"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 91,
+          "line_start": 89,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L89-L91"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 181,
+          "line_start": 180,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L180-L181"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0d534611a1e2acd5b5e0bf3c4e6f36468d169ba1fb1eae9ab82b5563c6b4a75c",
+        "slc_177e40a989f847d2d90e5106e7ce068a7d6bde6f6069ff9b08614bfe0955f6c8",
+        "slc_1e92e5cfd76fd77a3f7729f9af04083788d02c00dffbf38bed16f024d2ab9d59",
+        "slc_2a53ca3c77e9d4715cc897c404b84e351c792df9f4ee04f55e12329e980c0198",
+        "slc_3939783b4145abf259d03e6e9364797e5445ed2d1dd5f55a0b425d6de74f48be",
+        "slc_ae379e9bb0610a5e787b66c318318fd1eede069bce90a13bf6d5aa173abac6bd",
+        "slc_bee4d07336e80158f31bed8b8c66b0e677aad6a37f7a0ae8b4c57685e02bb08b",
+        "slc_dc5ff132705f2a141e430b72f91dfc93217cf8ba230ba99068c98795419bd82c"
+      ],
+      "text": "The CLI supports commands such as init --keygen, daemon start/status, check with --action-type and --ruleset, verify --policy, run --policy, and policy synth/simulate/diff subcommands."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f04c576ef81938f8218e1f4cb0f176c3d697e099fa34e111e96f767af570d276",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "bf6235f7d833a220b7fd21d4cb90d0dc808869e4",
+          "line_end": 343,
+          "line_start": 336,
+          "path": "docs/src/hunt/architecture.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/docs/src/hunt/architecture.md#L336-L343"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 93,
+          "line_start": 93,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L93-L93"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 23,
+          "line_start": 23,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L23-L23"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_433a56c8a6bec14f309a4b3b40c2815ca3a7c411daa7f72afceef6fe9d276a3c",
+        "slc_602855d31318e384c227f87f7151185e1b40bfa8002cb33294ce83e92d6c26e3",
+        "slc_7c3ff1e2c38b5d314f9e551a5f9c3ff954242d4e4dc437cd880711475d58a7aa"
+      ],
+      "text": "Defaults fail closed: the guard report aggregates per-guard results such that any deny produces an overall deny, and denials emit signed receipts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_67b0d569ec11835e904c8774f7a3d2666dca18575c1f2edf4705718353cca01f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 172,
+          "line_start": 172,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L172-L172"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_da1e05c364f1c80edf606bc3deac54a0d38cef90283c4dc29502829f7bacd4b3"
+      ],
+      "text": "Policies are versioned deterministic policy-as-code (schema 1.5.0, backward-compatible with 1.1.0+) supporting extends from built-ins, local files, and remote URLs that are host-allowlisted and sha256 integrity-pinned."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a190c4ae9401c60564a74e5342fc9699679ee794cac646d1159c73a029a00486",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 140,
+          "line_start": 140,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L140-L140"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7c1f9dd4c808751431bd1bab2950dc2aa40e81a2a02105f58b523e12b6ce750d"
+      ],
+      "text": "Past observations are kept on a disk-backed flight recorder so a tightened policy can be simulated against prior state before deployment."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_983d56618f10d67da132177d25248de32e249b4fc035066041848f5dde2d16a6",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 303,
+          "line_start": 303,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L303-L303"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_22b6edb63aa2ce519c1ad0a06e549f0ba256b764e2b813b890e167a0ce2043c4"
+      ],
+      "text": "Enterprise deployments use a control plane with Control API, NATS JetStream transport, Spine audit chain, and Control Console; enrollment is over mTLS with posture commands using request/reply acks and signed completion bundles."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_0c2db57e325c9a21a213d9b55b185fabee168b8ec728cca52ecaa8c733d22185",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L119-L119"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 97,
+          "line_start": 97,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L97-L97"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 117,
+          "line_start": 112,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L112-L117"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_03c5b7fe9602c32a63b550e5e2f241355bb5beac894589b27dfadd95bda6d3a6",
+        "slc_5dac7d0ab7e00699284f9397cf861ac69f7f4d77a8c4e6d8504038d42cbc3ca1",
+        "slc_8b7ff6d939a2a267bbc6d010de6ff54fa493108d31ab12021df0fed2f06a96bc"
+      ],
+      "text": "A Helm chart deploys hushd, the Spine checkpointer plus witness, and bundled NATS JetStream; hushd and Spine signers are fail-closed and require pre-created Kubernetes Secrets for keys at install time."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4392c4644d8683d5d0350bdd0585546465ee72cc562a65966b19cd4a403242fe",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 220,
+          "line_start": 220,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L220-L220"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+          "line_end": 206,
+          "line_start": 206,
+          "path": "README.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md#L206-L206"
+        },
+        {
+          "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+          "git_sha": "bf6235f7d833a220b7fd21d4cb90d0dc808869e4",
+          "line_end": 73,
+          "line_start": 72,
+          "path": "docs/src/hunt/architecture.md",
+          "repository": "backbay-labs/clawdstrike",
+          "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/docs/src/hunt/architecture.md#L72-L73"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_db14a9dfa05c224c57741e15156b2bad22a3c33698bd32a7b1946e89f4f97d7e",
+        "slc_f1b0b6b1a49454d3e1d8381823d16ad189e54fbd269bbd63e98c5f419c0f6aa0",
+        "slc_fd2e2401895c029b3bd3c7fc00976d85b1afe5f50b827ed84504d40f64a3053f"
+      ],
+      "text": "The system depends on Ed25519 signing (ed25519-dalek for Rust primitives), RFC 8785 JSON canonicalization for cross-language signature verification, and NATS JetStream for telemetry transport."
+    }
+  ],
+  "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 368,
+        "path": "README.md",
+        "size": 15866
+      },
+      {
+        "lines": 515,
+        "path": "docs/plans/editor-ide/ARCHITECTURE.md",
+        "size": 15815
+      },
+      {
+        "lines": 163,
+        "path": "docs/src/concepts/architecture.md",
+        "size": 10769
+      },
+      {
+        "lines": 73,
+        "path": "docs/src/fleet-security/architecture.md",
+        "size": 2275
+      },
+      {
+        "lines": 1274,
+        "path": "docs/src/hunt/architecture.md",
+        "size": 49425
+      },
+      {
+        "lines": 101,
+        "path": "GOVERNANCE.md",
+        "size": 4471
+      }
+    ],
+    "omitted": [
+      {
+        "path": "NON_GOALS.md",
+        "reason": "file-budget",
+        "size": 1389
+      },
+      {
+        "path": "THREAT_MODEL.md",
+        "reason": "file-budget",
+        "size": 3631
+      },
+      {
+        "path": "docs/DOCS_MAP.md",
+        "reason": "file-budget",
+        "size": 1964
+      },
+      {
+        "path": "docs/README.md",
+        "reason": "file-budget",
+        "size": 481
+      },
+      {
+        "path": "docs/REPO_MAP.md",
+        "reason": "file-budget",
+        "size": 3431
+      },
+      {
+        "path": "docs/audits/2026-02-10-remediation.md",
+        "reason": "file-budget",
+        "size": 14115
+      },
+      {
+        "path": "docs/audits/2026-02-10-wave2-remediation.md",
+        "reason": "file-budget",
+        "size": 9556
+      },
+      {
+        "path": "docs/audits/2026-02-10-wave3-remediation.md",
+        "reason": "file-budget",
+        "size": 6669
+      },
+      {
+        "path": "docs/audits/2026-02-25-openclaw-correctness-findings.md",
+        "reason": "file-budget",
+        "size": 26653
+      },
+      {
+        "path": "docs/audits/2026-02-25-openclaw-launch-readiness-index.md",
+        "reason": "file-budget",
+        "size": 6910
+      },
+      {
+        "path": "docs/audits/2026-02-25-openclaw-launch-security-audit.md",
+        "reason": "file-budget",
+        "size": 11622
+      },
+      {
+        "path": "docs/audits/2026-02-26-core-docs-audit.md",
+        "reason": "file-budget",
+        "size": 17923
+      },
+      {
+        "path": "docs/audits/2026-02-26-docs-audit-index.md",
+        "reason": "file-budget",
+        "size": 14211
+      },
+      {
+        "path": "docs/audits/2026-02-26-openclaw-launch-revalidation.md",
+        "reason": "file-budget",
+        "size": 2488
+      },
+      {
+        "path": "docs/audits/2026-02-26-package-ecosystem-audit.md",
+        "reason": "file-budget",
+        "size": 14850
+      },
+      {
+        "path": "docs/audits/2026-02-26-reference-docs-audit.md",
+        "reason": "file-budget",
+        "size": 16354
+      },
+      {
+        "path": "docs/audits/2026-02-26-root-meta-audit.md",
+        "reason": "file-budget",
+        "size": 16697
+      },
+      {
+        "path": "docs/audits/2026-02-monorepo-audit.md",
+        "reason": "file-budget",
+        "size": 3475
+      },
+      {
+        "path": "docs/audits/2026-02-rust-security-correctness-audit.md",
+        "reason": "file-budget",
+        "size": 23220
+      },
+      {
+        "path": "docs/nono-integration/01-requirements.md",
+        "reason": "file-budget",
+        "size": 6442
+      },
+      {
+        "path": "docs/nono-integration/02-architecture.md",
+        "reason": "file-budget",
+        "size": 10686
+      },
+      {
+        "path": "docs/nono-integration/03-sandbox-replacement.md",
+        "reason": "file-budget",
+        "size": 12920
+      },
+      {
+        "path": "docs/nono-integration/04-policy-translation.md",
+        "reason": "file-budget",
+        "size": 16533
+      },
+      {
+        "path": "docs/nono-integration/05-supervisor-enforcement.md",
+        "reason": "file-budget",
+        "size": 21293
+      },
+      {
+        "path": "docs/nono-integration/06-receipt-attestation.md",
+        "reason": "file-budget",
+        "size": 14653
+      },
+      {
+        "path": "docs/nono-integration/07-implementation-plan.md",
+        "reason": "file-budget",
+        "size": 12559
+      },
+      {
+        "path": "docs/nono-integration/INDEX.md",
+        "reason": "file-budget",
+        "size": 2648
+      },
+      {
+        "path": "docs/ops/operational-limits.md",
+        "reason": "file-budget",
+        "size": 2153
+      },
+      {
+        "path": "docs/ops/policy-workbench-rollout.md",
+        "reason": "file-budget",
+        "size": 1940
+      },
+      {
+        "path": "docs/ops/safe-defaults.md",
+        "reason": "file-budget",
+        "size": 2035
+      },
+      {
+        "path": "docs/plans/INDEX.md",
+        "reason": "file-budget",
+        "size": 2835
+      },
+      {
+        "path": "docs/reports/2026-02-25-openclaw-test-coverage-gaps.md",
+        "reason": "file-budget",
+        "size": 23269
+      },
+      {
+        "path": "docs/reports/2026-02-26-openclaw-runtime-compatibility-validation.md",
+        "reason": "file-budget",
+        "size": 2830
+      },
+      {
+        "path": "docs/reports/agent-fail-closed-pocs.md",
+        "reason": "file-budget",
+        "size": 1059
+      },
+      {
+        "path": "docs/research/2026-02-25-desktop-openclaw-integration.md",
+        "reason": "file-budget",
+        "size": 15830
+      },
+      {
+        "path": "docs/research/2026-02-25-openclaw-api-compatibility.md",
+        "reason": "file-budget",
+        "size": 24549
+      },
+      {
+        "path": "docs/research/2026-02-25-rust-openclaw-agent-analysis.md",
+        "reason": "file-budget",
+        "size": 21916
+      },
+      {
+        "path": "docs/research/2026-02-25-sdk-siem-branch-changes.md",
+        "reason": "file-budget",
+        "size": 20335
+      },
+      {
+        "path": "docs/research/architecture-vision.md",
+        "reason": "file-budget",
+        "size": 77745
+      },
+      {
+        "path": "docs/research/cilium-network-security.md",
+        "reason": "file-budget",
+        "size": 54463
+      },
+      {
+        "path": "docs/research/marketplace-trust-evolution.md",
+        "reason": "file-budget",
+        "size": 39152
+      },
+      {
+        "path": "docs/research/open-source-strategy.md",
+        "reason": "file-budget",
+        "size": 55659
+      },
+      {
+        "path": "docs/research/reticulum-sdr-transport.md",
+        "reason": "file-budget",
+        "size": 41606
+      },
+      {
+        "path": "docs/research/tetragon-integration.md",
+        "reason": "file-budget",
+        "size": 48568
+      },
+      {
+        "path": "docs/roadmaps/implementation-tasks.md",
+        "reason": "file-budget",
+        "size": 23607
+      },
+      {
+        "path": "docs/roadmaps/nextgen-policy-roadmap.md",
+        "reason": "file-budget",
+        "size": 100711
+      },
+      {
+        "path": "docs/roadmaps/spider-sense-integration.md",
+        "reason": "file-budget",
+        "size": 42931
+      },
+      {
+        "path": "docs/security/dependency-advisories.md",
+        "reason": "file-budget",
+        "size": 8950
+      },
+      {
+        "path": "docs/specs/01-tracing-policy-crds.md",
+        "reason": "file-budget",
+        "size": 17189
+      },
+      {
+        "path": "docs/specs/02-cilium-network-policies.md",
+        "reason": "file-budget",
+        "size": 26474
+      },
+      {
+        "path": "docs/specs/03-multi-curator-marketplace.md",
+        "reason": "file-budget",
+        "size": 19736
+      },
+      {
+        "path": "docs/specs/04-apache-2-license.md",
+        "reason": "file-budget",
+        "size": 14199
+      },
+      {
+        "path": "docs/specs/05-npm-publishing.md",
+        "reason": "file-budget",
+        "size": 18965
+      },
+      {
+        "path": "docs/specs/06-spire-identity-binding.md",
+        "reason": "file-budget",
+        "size": 21514
+      },
+      {
+        "path": "docs/specs/07-aegisnet-notary-replacement.md",
+        "reason": "file-budget",
+        "size": 24819
+      },
+      {
+        "path": "docs/specs/08-marketplace-spine-unification.md",
+        "reason": "file-budget",
+        "size": 28463
+      },
+      {
+        "path": "docs/specs/09-helm-chart.md",
+        "reason": "file-budget",
+        "size": 25571
+      },
+      {
+        "path": "docs/specs/10-ipfs-distribution.md",
+        "reason": "file-budget",
+        "size": 21461
+      },
+      {
+        "path": "docs/specs/11-open-source-governance.md",
+        "reason": "file-budget",
+        "size": 30059
+      },
+      {
+        "path": "docs/specs/12-reticulum-adapter.md",
+        "reason": "file-budget",
+        "size": 47909
+      },
+      {
+        "path": "docs/specs/13-eas-onchain-anchoring.md",
+        "reason": "file-budget",
+        "size": 33318
+      },
+      {
+        "path": "docs/specs/14-clawdstrike-cloud.md",
+        "reason": "file-budget",
+        "size": 44824
+      },
+      {
+        "path": "docs/specs/15-adaptive-sdr-architecture.md",
+        "reason": "file-budget",
+        "size": 70398
+      },
+      {
+        "path": "docs/specs/16-huntronomer-event-model.md",
+        "reason": "file-budget",
+        "size": 7710
+      },
+      {
+        "path": "docs/specs/17-huntronomer-workspace-services.md",
+        "reason": "file-budget",
+        "size": 8662
+      },
+      {
+        "path": "docs/specs/18-huntronomer-shell-command-model.md",
+        "reason": "file-budget",
+        "size": 4664
+      },
+      {
+        "path": "docs/specs/19-origin-sdk-parity-api-contract.md",
+        "reason": "file-budget",
+        "size": 8279
+      },
+      {
+        "path": "docs/specs/20-secret-broker-egress-tier.md",
+        "reason": "file-budget",
+        "size": 14051
+      },
+      {
+        "path": "docs/src/formal-verification.md",
+        "reason": "file-budget",
+        "size": 11934
+      },
+      {
+        "path": "docs/src/README.md",
+        "reason": "file-budget",
+        "size": 2089
+      },
+      {
+        "path": "docs/src/roadmap.md",
+        "reason": "file-budget",
+        "size": 34296
+      },
+      {
+        "path": "docs/src/SUMMARY.md",
+        "reason": "file-budget",
+        "size": 6652
+      },
+      {
+        "path": "docs/archive/plans/README.md",
+        "reason": "file-budget",
+        "size": 1118
+      },
+      {
+        "path": "docs/plans/decisions/0001-cli-command-surface.md",
+        "reason": "file-budget",
+        "size": 1184
+      },
+      {
+        "path": "docs/plans/decisions/0002-policy-schema-convergence.md",
+        "reason": "file-budget",
+        "size": 2670
+      },
+      {
+        "path": "docs/plans/decisions/0003-policy-event-and-severity.md",
+        "reason": "file-budget",
+        "size": 3431
+      },
+      {
+        "path": "docs/plans/decisions/0004-remote-extends-integrity-and-allowlist.md",
+        "reason": "file-budget",
+        "size": 1047
+      },
+      {
+        "path": "docs/plans/decisions/0005-custom-guards-plugin-model.md",
+        "reason": "file-budget",
+        "size": 799
+      },
+      {
+        "path": "docs/plans/decisions/0006-hush-run-best-effort-sandbox.md",
+        "reason": "file-budget",
+        "size": 708
+      },
+      {
+        "path": "docs/plans/decisions/0007-audit-ledger-encryption.md",
+        "reason": "file-budget",
+        "size": 499
+      },
+      {
+        "path": "docs/plans/decisions/0008-tpm-sealed-key-storage.md",
+        "reason": "file-budget",
+        "size": 427
+      },
+      {
+        "path": "docs/plans/editor-ide/DETECTION-LAB-ARCHITECTURE.md",
+        "reason": "file-budget",
+        "size": 36211
+      },
+      {
+        "path": "docs/plans/editor-ide/DETECTION-LAB-IMPLEMENTATION.md",
+        "reason": "file-budget",
+        "size": 19266
+      },
+      {
+        "path": "docs/plans/editor-ide/INDEX.md",
+        "reason": "file-budget",
+        "size": 13148
+      },
+      {
+        "path": "docs/plans/editor-ide/ROADMAP.md",
+        "reason": "file-budget",
+        "size": 8317
+      },
+      {
+        "path": "docs/plans/editor-ide/UI-POLISH-CAMPAIGN-R2.md",
+        "reason": "file-budget",
+        "size": 8156
+      },
+      {
+        "path": "docs/plans/endpoint-decision-engine/current-state.md",
+        "reason": "file-budget",
+        "size": 149742
+      },
+      {
+        "path": "docs/plans/endpoint-decision-engine/README.md",
+        "reason": "file-budget",
+        "size": 5632
+      },
+      {
+        "path": "docs/plans/endpoint-decision-engine/roadmap.md",
+        "reason": "file-budget",
+        "size": 121149
+      },
+      {
+        "path": "docs/plans/endpoint-decision-engine/target-architecture.md",
+        "reason": "file-budget",
+        "size": 9987
+      },
+      {
+        "path": "docs/plans/formal-verification/aeneas-pipeline.md",
+        "reason": "file-budget",
+        "size": 30471
+      },
+      {
+        "path": "docs/plans/formal-verification/INDEX.md",
+        "reason": "file-budget",
+        "size": 7433
+      },
+      {
+        "path": "docs/plans/formal-verification/landscape-survey.md",
+        "reason": "file-budget",
+        "size": 22904
+      },
+      {
+        "path": "docs/plans/formal-verification/logos-integration.md",
+        "reason": "file-budget",
+        "size": 31694
+      },
+      {
+        "path": "docs/plans/formal-verification/phase0-aeneas-feasibility.md",
+        "reason": "file-budget",
+        "size": 20040
+      },
+      {
+        "path": "docs/plans/formal-verification/phase3-merkle-report.md",
+        "reason": "file-budget",
+        "size": 12608
+      },
+      {
+        "path": "docs/plans/formal-verification/policy-specification.md",
+        "reason": "file-budget",
+        "size": 47435
+      },
+      {
+        "path": "docs/plans/formal-verification/ROADMAP.md",
+        "reason": "file-budget",
+        "size": 54426
+      },
+      {
+        "path": "docs/plans/formal-verification/verification-targets.md",
+        "reason": "file-budget",
+        "size": 36819
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/01-verifier.md",
+        "reason": "file-budget",
+        "size": 7124
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/02-pkg-cli.md",
+        "reason": "file-budget",
+        "size": 7286
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/03-edr-mod.md",
+        "reason": "file-budget",
+        "size": 7042
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/04-edr-receipt.md",
+        "reason": "file-budget",
+        "size": 7106
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/05-policy.md",
+        "reason": "file-budget",
+        "size": 7406
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/06-engine.md",
+        "reason": "file-budget",
+        "size": 6764
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/07-response-actions.md",
+        "reason": "file-budget",
+        "size": 6565
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/08-policies.md",
+        "reason": "file-budget",
+        "size": 7912
+      },
+      {
+        "path": "docs/plans/god-file-decomposition/INDEX.md",
+        "reason": "file-budget",
+        "size": 9453
+      },
+      {
+        "path": "docs/plans/macos-es-ne/deployment-and-verification.md",
+        "reason": "file-budget",
+        "size": 5182
+      },
+      {
+        "path": "docs/plans/macos-es-ne/endpoint-security-auth-contract.md",
+        "reason": "file-budget",
+        "size": 4539
+      },
+      {
+        "path": "docs/plans/macos-es-ne/network-extension-provider-and-topology.md",
+        "reason": "file-budget",
+        "size": 5289
+      },
+      {
+        "path": "docs/plans/macos-es-ne/swarm-plan.md",
+        "reason": "file-budget",
+        "size": 15503
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/DATA-MODEL.md",
+        "reason": "file-budget",
+        "size": 66211
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/FEDERATED-INTEL.md",
+        "reason": "file-budget",
+        "size": 2834
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/INDEX.md",
+        "reason": "file-budget",
+        "size": 39951
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/MISSION-CONTROL-DOGFOOD.md",
+        "reason": "file-budget",
+        "size": 3157
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/MISSION-EVIDENCE-LOOP.md",
+        "reason": "file-budget",
+        "size": 3632
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/NEXT-WAVE-ROADMAP.md",
+        "reason": "file-budget",
+        "size": 5725
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/REVIEW.md",
+        "reason": "file-budget",
+        "size": 30546
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/SENTINEL-RUNTIME.md",
+        "reason": "file-budget",
+        "size": 4816
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/SIGNAL-PIPELINE.md",
+        "reason": "file-budget",
+        "size": 42483
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/SPEAKEASY-INTEGRATION.md",
+        "reason": "file-budget",
+        "size": 46483
+      },
+      {
+        "path": "docs/plans/sentinel-swarm/UI-PAGE-MAP.md",
+        "reason": "file-budget",
+        "size": 62377
+      },
+      {
+        "path": "docs/roadmaps/cua/deep-research-report.md",
+        "reason": "file-budget",
+        "size": 60281
+      },
+      {
+        "path": "docs/roadmaps/cua/INDEX.md",
+        "reason": "file-budget",
+        "size": 14700
+      },
+      {
+        "path": "docs/src/cli/pkg-audit.md",
+        "reason": "file-budget",
+        "size": 330
+      },
+      {
+        "path": "docs/src/cli/pkg-init.md",
+        "reason": "file-budget",
+        "size": 437
+      },
+      {
+        "path": "docs/src/cli/pkg-install.md",
+        "reason": "file-budget",
+        "size": 959
+      },
+      {
+        "path": "docs/src/cli/pkg-publish.md",
+        "reason": "file-budget",
+        "size": 632
+      },
+      {
+        "path": "docs/src/cli/pkg-search.md",
+        "reason": "file-budget",
+        "size": 346
+      },
+      {
+        "path": "docs/src/cli/pkg-verify.md",
+        "reason": "file-budget",
+        "size": 848
+      },
+      {
+        "path": "docs/src/cli/pkg.md",
+        "reason": "file-budget",
+        "size": 1715
+      },
+      {
+        "path": "docs/src/concepts/adaptive-architecture.md",
+        "reason": "file-budget",
+        "size": 8893
+      },
+      {
+        "path": "docs/src/concepts/decisions.md",
+        "reason": "file-budget",
+        "size": 2022
+      },
+      {
+        "path": "docs/src/concepts/design-philosophy.md",
+        "reason": "file-budget",
+        "size": 7231
+      },
+      {
+        "path": "docs/src/concepts/enforcement-tiers.md",
+        "reason": "file-budget",
+        "size": 4020
+      },
+      {
+        "path": "docs/src/concepts/guards.md",
+        "reason": "file-budget",
+        "size": 1147
+      },
+      {
+        "path": "docs/src/concepts/multi-language.md",
+        "reason": "file-budget",
+        "size": 4062
+      },
+      {
+        "path": "docs/src/concepts/origin-enclaves.md",
+        "reason": "file-budget",
+        "size": 6479
+      },
+      {
+        "path": "docs/src/concepts/policies.md",
+        "reason": "file-budget",
+        "size": 1624
+      },
+      {
+        "path": "docs/src/concepts/postures.md",
+        "reason": "file-budget",
+        "size": 1176
+      },
+      {
+        "path": "docs/src/concepts/schema-governance.md",
+        "reason": "file-budget",
+        "size": 2447
+      },
+      {
+        "path": "docs/src/concepts/terminology.md",
+        "reason": "file-budget",
+        "size": 4764
+      },
+      {
+        "path": "docs/src/fleet-security/detection-response.md",
+        "reason": "file-budget",
+        "size": 1693
+      },
+      {
+        "path": "docs/src/fleet-security/directory-and-policy.md",
+        "reason": "file-budget",
+        "size": 1795
+      },
+      {
+        "path": "docs/src/fleet-security/evidence-attestation.md",
+        "reason": "file-budget",
+        "size": 1459
+      },
+      {
+        "path": "docs/src/fleet-security/for-users.md",
+        "reason": "file-budget",
+        "size": 2221
+      },
+      {
+        "path": "docs/src/fleet-security/index.md",
+        "reason": "file-budget",
+        "size": 1763
+      },
+      {
+        "path": "docs/src/fleet-security/operator-guide.md",
+        "reason": "file-budget",
+        "size": 2096
+      },
+      {
+        "path": "docs/src/fleet-security/rollout.md",
+        "reason": "file-budget",
+        "size": 1664
+      },
+      {
+        "path": "docs/src/getting-started/first-policy.md",
+        "reason": "file-budget",
+        "size": 3212
+      },
+      {
+        "path": "docs/src/getting-started/installation.md",
+        "reason": "file-budget",
+        "size": 2287
+      },
+      {
+        "path": "docs/src/getting-started/package-manager-policy.md",
+        "reason": "file-budget",
+        "size": 1396
+      },
+      {
+        "path": "docs/src/getting-started/quick-start-python.md",
+        "reason": "file-budget",
+        "size": 2131
+      },
+      {
+        "path": "docs/src/getting-started/quick-start-typescript.md",
+        "reason": "file-budget",
+        "size": 2778
+      },
+      {
+        "path": "docs/src/getting-started/quick-start.md",
+        "reason": "file-budget",
+        "size": 4022
+      },
+      {
+        "path": "docs/src/guides/adaptive-deployment.md",
+        "reason": "file-budget",
+        "size": 13270
+      },
+      {
+        "path": "docs/src/guides/agent-attribution-model.md",
+        "reason": "file-budget",
+        "size": 3002
+      },
+      {
+        "path": "docs/src/guides/agent-openclaw-operations.md",
+        "reason": "file-budget",
+        "size": 5334
+      },
+      {
+        "path": "docs/src/guides/audit-logging.md",
+        "reason": "file-budget",
+        "size": 666
+      },
+      {
+        "path": "docs/src/guides/computer-use-gateway.md",
+        "reason": "file-budget",
+        "size": 4223
+      },
+      {
+        "path": "docs/src/guides/custom-guards.md",
+        "reason": "file-budget",
+        "size": 2963
+      },
+      {
+        "path": "docs/src/guides/desktop-agent.md",
+        "reason": "file-budget",
+        "size": 9799
+      },
+      {
+        "path": "docs/src/guides/enterprise-enrollment.md",
+        "reason": "file-budget",
+        "size": 8867
+      },
+      {
+        "path": "docs/src/guides/generic-adapter-integration.md",
+        "reason": "file-budget",
+        "size": 2470
+      },
+      {
+        "path": "docs/src/guides/helm-confidence-pipeline.md",
+        "reason": "file-budget",
+        "size": 5273
+      },
+      {
+        "path": "docs/src/guides/hushspec-migration.md",
+        "reason": "file-budget",
+        "size": 3647
+      },
+      {
+        "path": "docs/src/guides/langchain-integration.md",
+        "reason": "file-budget",
+        "size": 3120
+      },
+      {
+        "path": "docs/src/guides/marketplace-feed.md",
+        "reason": "file-budget",
+        "size": 2599
+      },
+      {
+        "path": "docs/src/guides/observe-synth.md",
+        "reason": "file-budget",
+        "size": 10206
+      },
+      {
+        "path": "docs/src/guides/openclaw-integration.md",
+        "reason": "file-budget",
+        "size": 4370
+      },
+      {
+        "path": "docs/src/guides/origin-enclaves.md",
+        "reason": "file-budget",
+        "size": 7920
+      },
+      {
+        "path": "docs/src/guides/policy-inheritance.md",
+        "reason": "file-budget",
+        "size": 1859
+      },
+      {
+        "path": "docs/src/guides/posture-policy.md",
+        "reason": "file-budget",
+        "size": 1176
+      },
+      {
+        "path": "docs/src/guides/threat-intel.md",
+        "reason": "file-budget",
+        "size": 3360
+      },
+      {
+        "path": "docs/src/guides/vercel-ai-integration.md",
+        "reason": "file-budget",
+        "size": 5208
+      },
+      {
+        "path": "docs/src/hunt/correlate.md",
+        "reason": "file-budget",
+        "size": 2492
+      },
+      {
+        "path": "docs/src/hunt/discovery-reference.md",
+        "reason": "file-budget",
+        "size": 8902
+      },
+      {
+        "path": "docs/src/hunt/index.md",
+        "reason": "file-budget",
+        "size": 2282
+      },
+      {
+        "path": "docs/src/hunt/ioc.md",
+        "reason": "file-budget",
+        "size": 1736
+      },
+      {
+        "path": "docs/src/hunt/models-reference.md",
+        "reason": "file-budget",
+        "size": 14646
+      },
+      {
+        "path": "docs/src/hunt/query.md",
+        "reason": "file-budget",
+        "size": 2461
+      },
+      {
+        "path": "docs/src/hunt/report.md",
+        "reason": "file-budget",
+        "size": 944
+      },
+      {
+        "path": "docs/src/hunt/ROADMAP.md",
+        "reason": "file-budget",
+        "size": 46045
+      },
+      {
+        "path": "docs/src/hunt/scan.md",
+        "reason": "file-budget",
+        "size": 2546
+      },
+      {
+        "path": "docs/src/hunt/testing.md",
+        "reason": "file-budget",
+        "size": 1407
+      },
+      {
+        "path": "docs/src/hunt/timeline.md",
+        "reason": "file-budget",
+        "size": 2334
+      },
+      {
+        "path": "docs/src/hunt/watch.md",
+        "reason": "file-budget",
+        "size": 1473
+      },
+      {
+        "path": "docs/src/package-manager/index.md",
+        "reason": "file-budget",
+        "size": 3362
+      },
+      {
+        "path": "docs/src/package-manager/installing.md",
+        "reason": "file-budget",
+        "size": 603
+      },
+      {
+        "path": "docs/src/package-manager/package-types.md",
+        "reason": "file-budget",
+        "size": 499
+      },
+      {
+        "path": "docs/src/package-manager/publishing.md",
+        "reason": "file-budget",
+        "size": 685
+      },
+      {
+        "path": "docs/src/package-manager/registry-architecture.md",
+        "reason": "file-budget",
+        "size": 784
+      },
+      {
+        "path": "docs/src/package-manager/trust-verification.md",
+        "reason": "file-budget",
+        "size": 1301
+      },
+      {
+        "path": "docs/src/plugins/api-reference.md",
+        "reason": "file-budget",
+        "size": 5338
+      },
+      {
+        "path": "docs/src/plugins/contribution-points.md",
+        "reason": "file-budget",
+        "size": 3361
+      },
+      {
+        "path": "docs/src/plugins/dev-server.md",
+        "reason": "file-budget",
+        "size": 2059
+      },
+      {
+        "path": "docs/src/plugins/getting-started.md",
+        "reason": "file-budget",
+        "size": 4888
+      },
+      {
+        "path": "docs/src/plugins/index.md",
+        "reason": "file-budget",
+        "size": 1390
+      },
+      {
+        "path": "docs/src/plugins/manifest.md",
+        "reason": "file-budget",
+        "size": 5983
+      }
+    ],
+    "omitted_count": 305,
+    "omitted_slices": 17,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 5300,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 311,
+      "complete": false,
+      "omitted": 305,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_44a4ac273e025b07b278405f39e71ed1",
+  "facets": {
+    "components": 3,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 1,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 2,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 0,
+    "tools-permissions": 0,
+    "workflows": 0
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "workflows",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/backbay-labs/clawdstrike/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/e30732e863637655/manifest.json",
+  "package_id": "pkg_be0662c95f205cbc3c45f6f4b85c05ec4be4db645370ea9d09f0b7e2a0604f1f",
+  "repo": "backbay-labs/clawdstrike",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "01b6dc4de3628856e353349e79926b29b359b5567f6ac6ec8f5fd695bc39e162",
+  "snapshot_id": "e30732e863637655",
+  "sources": [
+    {
+      "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+      "git_sha": "8e11082280823b65766ba82ccf23f3eafa0c0061",
+      "lines": 101,
+      "path": "GOVERNANCE.md",
+      "repository": "backbay-labs/clawdstrike",
+      "sha256": "59ef081fc036278c0f3be899faec8dfbc42699393a94c14ac0f3a36570c7af9e",
+      "source_id": "src_1bb0ffce7b0f59fdb95d2a0e610f2020",
+      "stored": "governance.md-b60c6a93e9f7.md",
+      "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/GOVERNANCE.md"
+    },
+    {
+      "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+      "git_sha": "839af3d22d7675dc518b31a698103a9bc7c92f7c",
+      "lines": 368,
+      "path": "README.md",
+      "repository": "backbay-labs/clawdstrike",
+      "sha256": "ccb8ec3dcd985371cab29ea58054409e7e843fb062a74eaffa7686cc7887c193",
+      "source_id": "src_7904ef33d485509399d778d8e838d94e",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/README.md"
+    },
+    {
+      "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+      "git_sha": "b0a185b0b2c1d24bd7b561dbbe37b4ba1f42b2b3",
+      "lines": 515,
+      "path": "docs/plans/editor-ide/ARCHITECTURE.md",
+      "repository": "backbay-labs/clawdstrike",
+      "sha256": "3de1916e18d71e18b49fe4b1869b85e64339ea4255a624bd3b11a170645400b5",
+      "source_id": "src_6b0f82f6fa85576fbb38c4daf8516fab",
+      "stored": "architecture.md-addca622177a.md",
+      "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/docs/plans/editor-ide/ARCHITECTURE.md"
+    },
+    {
+      "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+      "git_sha": "56c36d113170e3bf29faf9fb26dd276e4689b798",
+      "lines": 163,
+      "path": "docs/src/concepts/architecture.md",
+      "repository": "backbay-labs/clawdstrike",
+      "sha256": "f26eaa2ae7bebe256d7584fe0eb17f9166097759ce859165f02e664202bb6020",
+      "source_id": "src_054106a3cb475faa9f69ac8c4e4ea0d6",
+      "stored": "architecture.md-b474b0902c64.md",
+      "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/docs/src/concepts/architecture.md"
+    },
+    {
+      "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+      "git_sha": "ca316585249d53a0f7c11f7057af64a9356c0785",
+      "lines": 73,
+      "path": "docs/src/fleet-security/architecture.md",
+      "repository": "backbay-labs/clawdstrike",
+      "sha256": "19a72dc06682656f0daab1ef794f9d7df74618043f0f789041d1f0fcfcad5b5f",
+      "source_id": "src_165cf8bdeba0576ebf47a4917106fc86",
+      "stored": "architecture.md-e6b9ee4b6ca3.md",
+      "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/docs/src/fleet-security/architecture.md"
+    },
+    {
+      "commit": "b01f63ae64fae2ee6a5c359b9fc8683d44b08073",
+      "git_sha": "bf6235f7d833a220b7fd21d4cb90d0dc808869e4",
+      "lines": 1274,
+      "path": "docs/src/hunt/architecture.md",
+      "repository": "backbay-labs/clawdstrike",
+      "sha256": "25abf8f81cbcc722f57efc797c24f26cdcd1104664a4839c6c60d7e009492e7d",
+      "source_id": "src_62e022182ee4512aa8fd71aa1c147e31",
+      "stored": "architecture.md-a05e700c57d1.md",
+      "url": "https://github.com/backbay-labs/clawdstrike/blob/b01f63ae64fae2ee6a5c359b9fc8683d44b08073/docs/src/hunt/architecture.md"
+    }
+  ],
+  "summary": "Selected evidence records: The product is described as a policy engine, EDR, and signed audit chain in one binary, treating AI agent tool calls in the same event taxonomy as kernel-level file, process, network, dylib, and persistence events. The engine ships in multiple forms: a Rust crate, TypeScript SDK, Python package, Go module, CLI, desktop EDR agent (macOS Endpoint Security/Network Extension; Linux Tetragon/Hubble), and an enterprise control plane.",
+  "superseded_claim_ids": []
+}

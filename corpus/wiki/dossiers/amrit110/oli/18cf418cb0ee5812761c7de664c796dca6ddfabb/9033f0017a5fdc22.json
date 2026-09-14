@@ -1,0 +1,408 @@
+{
+  "applied_operation_id": "op_dde8ee7254894127a648ad901babfc07",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_bc68bc1b03f789674400243839252ad23fdb3f4d89dbfaffdb92ee3f7c5b90c9",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "fcdd488316167335602128f2527ff4c21005474c",
+          "line_end": 20,
+          "line_start": 15,
+          "path": "README.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/README.md#L15-L20"
+        },
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "fcdd488316167335602128f2527ff4c21005474c",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "README.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/README.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_364768eafb0682435c3affd5ac9fe1c45524e79e7c73a507060c4b361ec396da",
+        "slc_7f408a2101761899360ae1bdb7e22e97d5bd825e67b5d5f7f6c2a4a1c52ab475"
+      ],
+      "text": "The README describes oli as an open-source coding-assistant alternative to Claude Code with a hybrid architecture, supporting cloud APIs (Anthropic, OpenAI, Google) as well as local models served through Ollama."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_57355eea2390faede08f2688b72e0b50df89906f7c21502b884ad075fe92308f",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "887fd62bee9cc7bb747e6e21af2bfcbd0334e1f8",
+          "line_end": 197,
+          "line_start": 197,
+          "path": "docs/src/api.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/api.md#L197-L197"
+        },
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "887fd62bee9cc7bb747e6e21af2bfcbd0334e1f8",
+          "line_end": 11,
+          "line_start": 10,
+          "path": "docs/src/api.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/api.md#L10-L11"
+        },
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "887fd62bee9cc7bb747e6e21af2bfcbd0334e1f8",
+          "line_end": 233,
+          "line_start": 233,
+          "path": "docs/src/api.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/api.md#L233-L233"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_65c6f4e571f4af738afaeef3afd4c559777029bc9e30d1ef810b85371efbd021",
+        "slc_b6bd4150d1b38f5cfad37d56942c4fd97e21953e9b15054181aef3733c3c2914",
+        "slc_c6de2ed56b987235361d086720f5a06800b70ac443a2c125e1ec85164320f9e0"
+      ],
+      "text": "The server exposes a JSON-RPC 2.0 API over stdio, documented to include a cancel_task method for stopping the current or a named task and a clear_conversation method for resetting conversation history."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_f4d6ef52c761d440c13bde67502350cfdd03d2ff01b6822d842bc1d65e6c1692",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "887fd62bee9cc7bb747e6e21af2bfcbd0334e1f8",
+          "line_end": 163,
+          "line_start": 155,
+          "path": "docs/src/api.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/api.md#L155-L163"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_ad398b31b63f8463a4fc13fcb413dfa6bcac60b2eb137bf1ee975cdd8233d37e"
+      ],
+      "text": "The documented get_tasks method returns each task's id, description, status, tool count, and separate input and output token counts."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1ef04899217fa6667c30c97a3de62703f1d78382fa0be15dc5f95d2b6724bcb0",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "887fd62bee9cc7bb747e6e21af2bfcbd0334e1f8",
+          "line_end": 598,
+          "line_start": 595,
+          "path": "docs/src/api.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/api.md#L595-L598"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_736f76f0b0d65bf93a9477806010544cb66653490d8d9ffde3a1a0cca65a3f4a"
+      ],
+      "text": "The API docs state the server has no built-in authentication and should be treated as a trusted component, recommending a sandboxed deployment and passing model API keys through environment variables."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_27430597a1d2dc7682c78899f7f77ea6da992a5c081e3f065a607c12f559efd8",
+      "evidence_type": "organizational_statement",
+      "facet": "evaluation",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "6e5e2392d912157ce3b7fde6386a1747bfcde149",
+          "line_end": 9,
+          "line_start": 8,
+          "path": "docs/src/benchmark.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/benchmark.md#L8-L9"
+        },
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "6e5e2392d912157ce3b7fde6386a1747bfcde149",
+          "line_end": 13,
+          "line_start": 13,
+          "path": "docs/src/benchmark.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/benchmark.md#L13-L13"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_62fa7b2549f118145bb366fbb84d507585bcdb43c1cfdeae23283996139449d8",
+        "slc_fe7d326e292ca8644054ad30ace36102f279f304582665ccccd571164bf9a49e"
+      ],
+      "text": "A documented benchmark methodology measures how efficiently each tool performs against local Ollama models using simple test cases, with the results table automatically refreshed by the CI/CD pipeline on new pull requests."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8d2e9bbfc045e4d13132539c6bce05481791cbc8e4cf66c1f532e07205886c69",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "887fd62bee9cc7bb747e6e21af2bfcbd0334e1f8",
+          "line_end": 602,
+          "line_start": 602,
+          "path": "docs/src/api.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/api.md#L602-L602"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5d4d7c045591c10d15b87bbab79ff2f795a8c49a881aff953fe1ef0c7f07e528"
+      ],
+      "text": "The API docs state the server can be extended with additional JSON-RPC methods by editing main.rs and registering them, citing language-server-protocol integration or MCP support as example use cases."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_de7eada43deae50963ea2987d6fb52d741ec875dd7ed7505ee273d34c2f9e1cd",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "fcdd488316167335602128f2527ff4c21005474c",
+          "line_end": 22,
+          "line_start": 22,
+          "path": "README.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/README.md#L22-L22"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7337c6166a6996dbc2250039dfcedfba125fec700c30670f59485eae4ec4c121"
+      ],
+      "text": "The README carries an explicit warning that the project is at a very early stage and prone to bugs and issues, asking users to report problems as they hit them."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_024c245d3b55a35ca5eaf22aac44009ac35ea9a636dacbcbfe967e1ec4814cec",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "087c407da97e63576f1165941e41ae7c776e747e",
+          "line_end": 12,
+          "line_start": 11,
+          "path": "CONTRIBUTING.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/CONTRIBUTING.md#L11-L12"
+        },
+        {
+          "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+          "git_sha": "087c407da97e63576f1165941e41ae7c776e747e",
+          "line_end": 9,
+          "line_start": 5,
+          "path": "CONTRIBUTING.md",
+          "repository": "amrit110/oli",
+          "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/CONTRIBUTING.md#L5-L9"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_a2a54ba0d69413343ac1f44eb2bf31df165cabfc0a1c70935e7cb9a3551176d0",
+        "slc_d9215eae6c7506045e44877ef980041ed132e073ebec85d92ccdb00ba1199a28"
+      ],
+      "text": "Repository development practice: contributors are asked to comment on an existing issue or open a new one before starting work, and to fill out the pull-request template and link it to the relevant issue."
+    }
+  ],
+  "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 159,
+        "path": "README.md",
+        "size": 5152
+      },
+      {
+        "lines": 602,
+        "path": "docs/src/api.md",
+        "size": 12522
+      },
+      {
+        "lines": 33,
+        "path": "docs/src/benchmark.md",
+        "size": 1088
+      },
+      {
+        "lines": 161,
+        "path": "docs/src/intro.md",
+        "size": 5254
+      },
+      {
+        "lines": 5,
+        "path": "docs/src/SUMMARY.md",
+        "size": 99
+      },
+      {
+        "lines": 12,
+        "path": "CONTRIBUTING.md",
+        "size": 585
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 123,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 6,
+      "complete": true,
+      "omitted": 0,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_abdb7e96656950c994a6f380ed629e4f",
+  "facets": {
+    "components": 1,
+    "dependencies": 0,
+    "design-choices": 1,
+    "evaluation": 1,
+    "interfaces": 1,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 0,
+    "specifications": 1,
+    "tools-permissions": 1,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "skills-patterns",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "dependencies",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/amrit110/oli/18cf418cb0ee5812761c7de664c796dca6ddfabb/9033f0017a5fdc22/manifest.json",
+  "package_id": "pkg_4eff4e877e9eae34e5353f032f17650bd942a660ee74430dbaa5118cf71bf4ae",
+  "repo": "amrit110/oli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "4bf248ce4eb6c7251ad14d3e9a9644db6c5f27571b94742fe34f9e77bd963ca7",
+  "snapshot_id": "9033f0017a5fdc22",
+  "sources": [
+    {
+      "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+      "git_sha": "087c407da97e63576f1165941e41ae7c776e747e",
+      "lines": 12,
+      "path": "CONTRIBUTING.md",
+      "repository": "amrit110/oli",
+      "sha256": "dd2e849b65dfc61fb93d0b12c568419591c3bba4b75cec024908cc487e6ef1f1",
+      "source_id": "src_9d585c241b085d0dae3eb801ad35e36e",
+      "stored": "contributing.md-eca12c0a30e2.md",
+      "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/CONTRIBUTING.md"
+    },
+    {
+      "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+      "git_sha": "fcdd488316167335602128f2527ff4c21005474c",
+      "lines": 159,
+      "path": "README.md",
+      "repository": "amrit110/oli",
+      "sha256": "c41c7527f64f5d27b7686518d1d0b751d7de0936567e04e4cbda3788037f4f2a",
+      "source_id": "src_a4389c2a97185fa0a776c77aeeea7304",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/README.md"
+    },
+    {
+      "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+      "git_sha": "bec2d28d9246988e8eb75a9b1ad6d59292542227",
+      "lines": 5,
+      "path": "docs/src/SUMMARY.md",
+      "repository": "amrit110/oli",
+      "sha256": "196b3005828424dcfa33afb4253d0017f064c0ece60ac4fa53e4958f95cc5633",
+      "source_id": "src_f9dc9c52d7ae5e6183e225b6baaec3c1",
+      "stored": "summary.md-6e490221db20.md",
+      "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/SUMMARY.md"
+    },
+    {
+      "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+      "git_sha": "887fd62bee9cc7bb747e6e21af2bfcbd0334e1f8",
+      "lines": 602,
+      "path": "docs/src/api.md",
+      "repository": "amrit110/oli",
+      "sha256": "cc23cbc75982993279666a96c7b0c26187b9f28889710aa15ba3d89f33d647f6",
+      "source_id": "src_e2aff4b140035e008eb4fc7f576a6011",
+      "stored": "api.md-fddbb0c4374f.md",
+      "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/api.md"
+    },
+    {
+      "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+      "git_sha": "6e5e2392d912157ce3b7fde6386a1747bfcde149",
+      "lines": 33,
+      "path": "docs/src/benchmark.md",
+      "repository": "amrit110/oli",
+      "sha256": "30beb5ce749d732e5f28ed5916ffa787f44fce61035b9ea0d6ac33f9c70bcfa7",
+      "source_id": "src_54237e27afd95edda5d27d80aefc2daf",
+      "stored": "benchmark.md-c02cbd45904a.md",
+      "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/benchmark.md"
+    },
+    {
+      "commit": "18cf418cb0ee5812761c7de664c796dca6ddfabb",
+      "git_sha": "1e21514cd7ff8392f90777b1f1bcf30e6bc535d7",
+      "lines": 161,
+      "path": "docs/src/intro.md",
+      "repository": "amrit110/oli",
+      "sha256": "abf9bc95f16abc749076e10cd15cc8e22552581d0ebdb3fb8fdd1b02b2b793e3",
+      "source_id": "src_661363281907514498a4c188a7be5a3b",
+      "stored": "intro.md-b93d66683b92.md",
+      "url": "https://github.com/amrit110/oli/blob/18cf418cb0ee5812761c7de664c796dca6ddfabb/docs/src/intro.md"
+    }
+  ],
+  "summary": "oli is documented as a Rust-backend, React/Ink-frontend coding assistant supporting both cloud model providers and local Ollama models, exposing a JSON-RPC 2.0 server API over stdio. Its docs describe a documented tool benchmark methodology, explicit security caveats about the server being unauthenticated, and note the project is early-stage.",
+  "superseded_claim_ids": []
+}

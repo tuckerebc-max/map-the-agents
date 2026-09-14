@@ -1,0 +1,664 @@
+{
+  "applied_operation_id": "op_4351f93141a34092bdfa567d49d41262",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_96d7777be6e1d4b437721b14c8e7fe3f84ad6bc56be5017ef3269c91c739fe41",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 89,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L67-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_277bc4efc9f7ef9f3c65785d793aa014b0323ad528622028e073fbd85c50b53f"
+      ],
+      "text": "The codebase is organized into Rust modules including main.rs (entry/routing), cli.rs, config.rs, provider.rs, gateway.rs, instructions.rs, api.rs, search.rs, server.rs, and tools.rs, plus instructions.txt, providers.toml, and docs/."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d2dbc13f5fe6943e4a298d68ed6d0e8738d4d7469348c0164edfa72109819ae6",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 91,
+          "line_start": 91,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L91-L91"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0f08d6909c4a301a8e8f82a0d0a5a8cbcf792255b93cdf24290f36f6be430e56"
+      ],
+      "text": "The conversation loop lives in api.rs, an OpenAI/Anthropic/Gemini client with streaming and a tool-calling loop that resolves angles-* commands to implementations in tools.rs."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_2c1b59e55b0b0464c09ba4fd8aee189e3548ef39726834691ab3c5420394c13f",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 37,
+          "line_start": 37,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L37-L37"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 54,
+          "line_start": 54,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L54-L54"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 61,
+          "line_start": 56,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L56-L61"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0c8c5c08b2c906816ea047d65e39b7d6dc24a1c6e18668a032e5906cd545b1ca",
+        "slc_3116b98cdfcf65dc6d0be7a70797cde5e944f93c28d2ba36a895dc0e9da8d6cb",
+        "slc_b2befdc85f2d9753dbccbe04b786e30ce396e4ef5072abf8e4e49c688e339a71"
+      ],
+      "text": "The tool ships as a single static ~1.6 MB Rust binary with zero runtime dependencies (no Node, Python, or dynamic libc), aimed at constrained environments like ARM64 SBCs, rootless containers, and iSH."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_41f06f5f6f6ba41e44dff6c443f3e2f8072039013482bd8e80437725096bb408",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 99,
+          "line_start": 99,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L99-L99"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_0b5b2e7fd0109f49f884ac8ee0545300934e8a11dd1db76784f90e2ccd79233c"
+      ],
+      "text": "All agent capabilities are exposed as curated angles-* commands rather than free-form shell improvisation, binding the model to a deterministic tool set."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_195c7c2307fe68aa29cb4f2fdea4ace41a70c590cac5f7e9760dcf3f4e0696be",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 218,
+          "line_start": 218,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L218-L218"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 221,
+          "line_start": 221,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L221-L221"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 215,
+          "line_start": 215,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L215-L215"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 212,
+          "line_start": 212,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L212-L212"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 209,
+          "line_start": 209,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L209-L209"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 227,
+          "line_start": 224,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L224-L227"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_21373594ac2651711ae5bc1c667df6055aa70d95ab550dd4c66572908acd2381",
+        "slc_251a2011be4a1c1bd47861afd9d2ae0e480d60d7cc02ce30c88c5d452248fcbe",
+        "slc_4d50bfef10c188257e182df61acb1b2cc718debe4b7a82ee493626e7989a5038",
+        "slc_54243faa3e75a388d13bbc3c81392ceb79bf5db2b453fe1a4cd11032cb7ebfde",
+        "slc_ae3a9476c01d5453aaf8499b650a106d0cc2f0f774e8458c2b536dcebfa9f249",
+        "slc_cbba6f37dc0293dfcf33a46f7b6bcb1fb43b4615dfe298ddbfd8fb64572c8534"
+      ],
+      "text": "The CLI offers subcommands including an interactive default session (angles), angles exec for one-shot runs, angles plan, angles serve, angles gateway, angles config, angles doctor, and angles help."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_08de510213784991acff3a7ddfd2d26a1bf56dcfd722e924b8530389771b4057",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 119,
+          "line_start": 119,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L119-L119"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_f8ea79d027017c87ce8133e6dd233bd7586ca9257ef5a43a35c1f8fc0156e135"
+      ],
+      "text": "angles serve starts an embedded axum HTTP server on 127.0.0.1:8080 exposing /health, /api/config, /api/providers, and /api/chat for a browser-based web console."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_d6957ea3dca3e0cd895169a043349e6a546e9b7e24b0d1aabfe86c3b58f6efe0",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 107,
+          "line_start": 107,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L107-L107"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5c97fba6169a093a344f00ff910f2378edba42b12b66257c99663f1d18f71273"
+      ],
+      "text": "The safety model: reads need no approval, writes follow the configured approval policy, and deletions or dangerous operations always require user confirmation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b7f6125e64be730659260eee52527b4f498dce27912283e45836b4ac8f331e44",
+      "evidence_type": "organizational_statement",
+      "facet": "tools-permissions",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "8187b403001db08270edae3b8b52594b84f89b8a",
+          "line_end": 146,
+          "line_start": 124,
+          "path": "gateway-flow.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/gateway-flow.md#L124-L146"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "8187b403001db08270edae3b8b52594b84f89b8a",
+          "line_end": 151,
+          "line_start": 148,
+          "path": "gateway-flow.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/gateway-flow.md#L148-L151"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_40f09c2d1586e36f84084bcb1a8dafb8061921cd7af2bccabc67138adc1be8ec",
+        "slc_f4db5a63f813a41e417db6a54a76d1e3292055cbff2a1acb8008ae69fb8522a4"
+      ],
+      "text": "Approval policy is configurable to untrusted, on-request, or never, controlling whether tool calls require user confirmation."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_b6fc85dcc26bb20d936a881ee7d164ce4beef12e2b683f6c8008e14e2fdc4c92",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 111,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L111-L111"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 245,
+          "line_start": 233,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L233-L245"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_7618241be08bfdff6851d4fb7c6ea1776c5a3d36acf3903fd8bd7f2ec0504ba6",
+        "slc_b1d3342cea9f35e0174dbc018784f8faf959377f8963d1b395b7cd27c47e0d9a"
+      ],
+      "text": "A provider registry (provider.rs plus providers.toml) maps 11 providers to three wire protocols — OpenAI Chat Completions, Anthropic Messages, or Gemini Native — normalizing streaming and tool calls so the rest of the code is provider-agnostic."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_4d4d807e141d1bd3d70afcd9edfa68e1404cea81c818e12ae4ee31dd82c2ce34",
+      "evidence_type": "organizational_statement",
+      "facet": "memory-state",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 146,
+          "line_start": 131,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L131-L146"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "8187b403001db08270edae3b8b52594b84f89b8a",
+          "line_end": 236,
+          "line_start": 219,
+          "path": "gateway-flow.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/gateway-flow.md#L219-L236"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 123,
+          "line_start": 123,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L123-L123"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "8187b403001db08270edae3b8b52594b84f89b8a",
+          "line_end": 241,
+          "line_start": 238,
+          "path": "gateway-flow.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/gateway-flow.md#L238-L241"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 148,
+          "line_start": 148,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L148-L148"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2216671589c9def551b5fd8bea69a0aea85feb27c443a68083f00b77f7349f28",
+        "slc_3400a3af73eb5c3d71d0611619400630d05956c4e7615301fa267b037a9b66c5",
+        "slc_3a4f0826e57f1c2102ebb663d652569e540158b5bc9404cd3838c524786063c1",
+        "slc_c53a679f55ea82f4f7295fd7bd97ff3fd46aa914a50d351e20fb54c6876d8aa3",
+        "slc_d39126a026a1d25dc1a984ed8400c8eeee461ae8b7bc3324ed92222d4d85a7da"
+      ],
+      "text": "Configuration persists at ~/.angles/config.json with fields for language, provider, base_url, wire_api, model, max_tokens, daily token budget, agent persona, search engine, and approval policy; API keys can come from ANGLES_API_KEY and are not sent through a relay."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_5980932033004b1dda83155dc8829566ea84800f8f8e395219b104048a36bfdd",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 89,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L67-L89"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "c2528c5a8dfbf6221de6e1f7baa44199b6dab411",
+          "line_end": 105,
+          "line_start": 99,
+          "path": "instructions.txt",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/instructions.txt#L99-L105"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "c2528c5a8dfbf6221de6e1f7baa44199b6dab411",
+          "line_end": 97,
+          "line_start": 96,
+          "path": "instructions.txt",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/instructions.txt#L96-L97"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "c2528c5a8dfbf6221de6e1f7baa44199b6dab411",
+          "line_end": 28,
+          "line_start": 21,
+          "path": "instructions.txt",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/instructions.txt#L21-L28"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_277bc4efc9f7ef9f3c65785d793aa014b0323ad528622028e073fbd85c50b53f",
+        "slc_8c91870aebf3b98525b477355f1525f182d3e8919d8a1d349097350fcf0dcd8d",
+        "slc_acc9a30ea099a52b22c33a8a1420539a36ea0032818574e76c859dc87c709732",
+        "slc_b0688447629332c71112dd28cd2661a365f46b8e2b19ba0ce4eaffd4258f1bb8"
+      ],
+      "text": "The 13 KB instructions.txt system-prompt template uses handlebars-style {{variable}} injection for config values, persona, and architecture, and directs the agent to emit operation plans with fixed verbs before non-trivial tasks."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_fbafde5fea1c06a8cf683e708f50dd842c8a351975b61be09d7ce184f9b2c7c1",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 258,
+          "line_start": 256,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L256-L258"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 270,
+          "line_start": 266,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L266-L270"
+        },
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 272,
+          "line_start": 272,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L272-L272"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1babdfedb925b5aa06312a05fec5166d1f6b99bb18b84ec97cc9b64d7e832983",
+        "slc_22f20b8677da1f51f94dff22508062d9cd33f810037d38a5546a1516ba171fbe",
+        "slc_2ba3135a5951e150739e29ad021fff90ab431e48f38aa43dc7e6bdabd8c70a22"
+      ],
+      "text": "Repository development practice: building from source uses cargo build --release with Makefile targets for Linux ARM64/x64 and macOS ARM64 cross-compilation, and GitHub Actions produces prebuilt binaries for all 5 platforms on every tag push."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_137c25aa3f9fb19b5e4975bee4ee14fe17e75143af74ac53b8d4a4e5ef77ce0f",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+          "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+          "line_end": 89,
+          "line_start": 67,
+          "path": "README.md",
+          "repository": "angleschina/angles-cli",
+          "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md#L67-L89"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_277bc4efc9f7ef9f3c65785d793aa014b0323ad528622028e073fbd85c50b53f"
+      ],
+      "text": "Repository development practice: the repo includes a release workflow (.github/workflows/release.yml), a Cross.toml for cross-compilation, and a docs/ directory published as a GitHub Pages site."
+    }
+  ],
+  "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 301,
+        "path": "README.md",
+        "size": 10794
+      },
+      {
+        "lines": 241,
+        "path": "gateway-flow.md",
+        "size": 9437
+      },
+      {
+        "lines": 323,
+        "path": "instructions.txt",
+        "size": 16144
+      },
+      {
+        "lines": 301,
+        "path": "README_zh.md",
+        "size": 10861
+      },
+      {
+        "lines": 1,
+        "path": "docs/05e4dc9fb5ad44b59c4bcc74d2f46a93.txt",
+        "size": 33
+      },
+      {
+        "lines": 1,
+        "path": "docs/indexnow_key.txt",
+        "size": 33
+      }
+    ],
+    "omitted": [
+      {
+        "path": "docs/robots.txt",
+        "reason": "file-budget",
+        "size": 86
+      },
+      {
+        "path": "AGENTS.md",
+        "reason": "file-budget",
+        "size": 6391
+      }
+    ],
+    "omitted_count": 2,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 58,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 8,
+      "complete": false,
+      "omitted": 2,
+      "stored": 6
+    }
+  },
+  "entity_id": "ent_c3d8242cc6bf5e86a05be0b1a763ce77",
+  "facets": {
+    "components": 2,
+    "dependencies": 1,
+    "design-choices": 2,
+    "evaluation": 0,
+    "interfaces": 2,
+    "limitations": 0,
+    "memory-state": 1,
+    "orchestration": 0,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 0,
+    "tools-permissions": 2,
+    "workflows": 2
+  },
+  "gaps": [
+    {
+      "facet": "specifications",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "orchestration",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "limitations",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/angleschina/angles-cli/53cf51b702e45dd0621b8453d0cc3d301b98cef1/8818c2194b628043/manifest.json",
+  "package_id": "pkg_22bf0b737528430a14973237c166ad197c0e0c81022cbb5dfd1f8057b62f2082",
+  "repo": "angleschina/angles-cli",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "1aa9fb221e98ea5fb33ec473d0ac2fe5a612064c53677bbd17aded9bf959850b",
+  "snapshot_id": "8818c2194b628043",
+  "sources": [
+    {
+      "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+      "git_sha": "93e9da18b4f4cd50c03991677c190975ffcd6ead",
+      "lines": 301,
+      "path": "README.md",
+      "repository": "angleschina/angles-cli",
+      "sha256": "014f05bf879c5297f849e9ec65462c3bd40d8575cf1ea9b5741c577d4a2d1fd1",
+      "source_id": "src_aeaab04e90e45dc8b5b3007da6ae6ef3",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README.md"
+    },
+    {
+      "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+      "git_sha": "25137125f062bb82c21144d83fd66c094830224b",
+      "lines": 301,
+      "path": "README_zh.md",
+      "repository": "angleschina/angles-cli",
+      "sha256": "605eb50233f71bbfd2a52109f332d10f40c1089d0b09feabe9bb74bae77100cc",
+      "source_id": "src_8748cbad89c25e0d96233f9c498899c9",
+      "stored": "readme_zh.md-bc53aca037f8.md",
+      "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/README_zh.md"
+    },
+    {
+      "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+      "git_sha": "55c397a80268a6f3b5411bf567968088ce6c9700",
+      "lines": 1,
+      "path": "docs/05e4dc9fb5ad44b59c4bcc74d2f46a93.txt",
+      "repository": "angleschina/angles-cli",
+      "sha256": "a63c54c1ab95480423ac3da28cb53a67eb03b960aa155f1d94f75349f7843283",
+      "source_id": "src_a50b0f7e143756798cf426294575c36c",
+      "stored": "05e4dc9fb5ad44b59c4bcc74d2f46a93.txt-5145ae2a25be.txt",
+      "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/docs/05e4dc9fb5ad44b59c4bcc74d2f46a93.txt"
+    },
+    {
+      "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+      "git_sha": "e4b98094e544f5eb7115dc0a50de76633c049199",
+      "lines": 1,
+      "path": "docs/indexnow_key.txt",
+      "repository": "angleschina/angles-cli",
+      "sha256": "24b38bee26814e87a11933ab6e7f6160426373c695b55a30f9bb151b2745ef99",
+      "source_id": "src_7cc4f43a769b5f98a0de7e523798b6b7",
+      "stored": "indexnow_key.txt-36f719f941a5.txt",
+      "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/docs/indexnow_key.txt"
+    },
+    {
+      "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+      "git_sha": "8187b403001db08270edae3b8b52594b84f89b8a",
+      "lines": 241,
+      "path": "gateway-flow.md",
+      "repository": "angleschina/angles-cli",
+      "sha256": "86624c3bc65b3cfcc9e8af56e7e4f546b48c0a86757a5ad04f65f05727a3949a",
+      "source_id": "src_623a2a1bd1c654bda1a8584fb805b1ee",
+      "stored": "gateway-flow.md-2a38c9b4eabe.md",
+      "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/gateway-flow.md"
+    },
+    {
+      "commit": "53cf51b702e45dd0621b8453d0cc3d301b98cef1",
+      "git_sha": "c2528c5a8dfbf6221de6e1f7baa44199b6dab411",
+      "lines": 323,
+      "path": "instructions.txt",
+      "repository": "angleschina/angles-cli",
+      "sha256": "a89e3181ffe2d4bc8d523ffbe121377af96b2b7bcf98fb3184f47942b7ae8933",
+      "source_id": "src_508bfa814b3554a894cc8f9125912e4b",
+      "stored": "instructions.txt-a47a19bb3f76.txt",
+      "url": "https://github.com/angleschina/angles-cli/blob/53cf51b702e45dd0621b8453d0cc3d301b98cef1/instructions.txt"
+    }
+  ],
+  "summary": "Angles Code CLI is a terminal-native agentic coding assistant shipped as a single ~1.6 MB static Rust binary with zero runtime dependencies, 30+ built-in angles-* tools, 11 model providers, a TUI setup wizard, a local HTTP gateway, and a handlebars-style system-prompt template. Evidence is documentation-based (README, gateway-flow.md, instructions.txt); no runtime code is inspected in these slices. Evidence coverage: 161 of 249 packet slices were shown to the model; the rest were withheld by the prompt budget.",
+  "superseded_claim_ids": []
+}

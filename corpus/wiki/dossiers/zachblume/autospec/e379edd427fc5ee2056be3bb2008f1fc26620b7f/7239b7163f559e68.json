@@ -1,0 +1,425 @@
+{
+  "applied_operation_id": "op_47135060636744a5988b3c6ae2688930",
+  "claims": [
+    {
+      "basis": "documented",
+      "claim_id": "clm_b85652e8945459d9dbc519e2c1251ac705450bcbded1f67c7b2422a71ce9a523",
+      "evidence_type": "organizational_statement",
+      "facet": "specifications",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_593f3fbb9c4f3f947684e88920ceca7e19e8f31e9039b880e07f9cc93ea13630"
+      ],
+      "text": "Autospec is described as an AI agent that autonomously explores a web app, generates commonsense test specs, and executes them, producing reusable Playwright test files."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_423afbe7c3e8e5e16b5c63dfd6ae774cbc021b5bd6c4a0ed80035309168e2a1d",
+      "evidence_type": "organizational_statement",
+      "facet": "design-choices",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 10,
+          "line_start": 5,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L5-L10"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_593f3fbb9c4f3f947684e88920ceca7e19e8f31e9039b880e07f9cc93ea13630"
+      ],
+      "text": "It uses vision and language models to judge the whole UI after each interaction, deciding correctness rather than checking regressions against rigid prior behavior."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_566616b10adf49f998fbf9722229c1e25689fc8022ebb876d0d34a6b95770c4a",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 76,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L60-L76"
+        },
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 55,
+          "line_start": 52,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L52-L55"
+        },
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 58,
+          "line_start": 57,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L57-L58"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b328df1984ef622b6ea3bd298749a16d0cae8805837e9b579d637d7c0ebdc33",
+        "slc_8689875f91846baa014205fd546717e452917c482cc8f7af5e6b4c187ab8938a",
+        "slc_f31345b719e75593dae27673b1f3ef335753ae62ba73359613920855eb469590"
+      ],
+      "text": "The CLI is invoked as npx autospecai with a required --url flag and optional --model, --spec_limit, --apikey, --specFile, --help and --version flags."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_1b261a2d1db8a4c7668be240d00e7e358ce10f79394335d813f08abc9e3eb0eb",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 76,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L60-L76"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b328df1984ef622b6ea3bd298749a16d0cae8805837e9b579d637d7c0ebdc33"
+      ],
+      "text": "--spec_limit defaults to 10; --model supports claude-opus-4-6 (default), gpt-5.4, and gemini-2.5-flash; --specFile accepts a JSON file of predefined specs or stdin via '-'."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_3ed797636c8b423a01c2e66f82816baa927a25e84da905db15946b2984d357da",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 76,
+          "line_start": 60,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L60-L76"
+        },
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 48,
+          "line_start": 44,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L44-L48"
+        },
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 42,
+          "line_start": 42,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L42-L42"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_2b328df1984ef622b6ea3bd298749a16d0cae8805837e9b579d637d7c0ebdc33",
+        "slc_521f30a71b72a7d50d737d2a0237fac7f4c620da63aecbcc4b8d0c20cece42f5",
+        "slc_7369a886ab171755f7debd47fedeec3f4c2da151c671190106411668003de472"
+      ],
+      "text": "If --apikey is omitted, the tool falls back on ANTHROPIC_API_KEY, OPENAI_API_KEY, or GOOGLE_GENERATIVE_AI_API_KEY environment variables; keys can also be configured via a .env file."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_51a6020f9f0bd713804dbbcc5f90d1eb6764bf03293e95db5132f4e8324061b1",
+      "evidence_type": "organizational_statement",
+      "facet": "orchestration",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 88,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L80-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d81d5bd074685550ec801b58323febf6bdf02325e9ea761f5e4dc4321c1cd3d"
+      ],
+      "text": "The workflow has three phases: plan (crawl up to 3 pages, capture accessibility snapshots, generate specs), execute (specs run in parallel in isolated browser contexts), and report."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_a827647b82b191892e38dd675073fcdd5721979b6b77db0f7bbb6fdd1f3e3634",
+      "evidence_type": "organizational_statement",
+      "facet": "components",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 102,
+          "line_start": 92,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L92-L102"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_05160a17ef9c8b7be71e854c38fb133a3b6cb44b9a2e4664c673a42572191b66"
+      ],
+      "text": "The src/ tree includes cli.ts, index.ts, ai.ts (Vercel AI SDK provider setup), planner.ts, executor.ts, reporter.ts, browser.ts, and schemas.ts (Zod schemas)."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_95976a5ba630166f47980f48dc5729bc7ea87df999e5c26f73d1790d5524f4b4",
+      "evidence_type": "organizational_statement",
+      "facet": "skills-patterns",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 88,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L80-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d81d5bd074685550ec801b58323febf6bdf02325e9ea761f5e4dc4321c1cd3d"
+      ],
+      "text": "The executor uses semantic actions like click by role, fill by label, press keys, scroll, and navigate, re-reading the accessibility snapshot after each step."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_8b75534c775e0b8fd202133b834340c5be803ffdf3fe0d5c56235885840933db",
+      "evidence_type": "organizational_statement",
+      "facet": "interfaces",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 30,
+          "line_start": 28,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L28-L30"
+        },
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 35,
+          "line_start": 32,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L32-L35"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_09a1de063e15b0f334ddabdb78b4795444444493aae3cb1e9d0a2f840af483f8",
+        "slc_362dab673366030e28b5a32cde7cea572b1f40bb01a80fcfdd0de06123f11b45"
+      ],
+      "text": "Passing specs are saved as Playwright .spec.js files in a trajectories/ folder with video recordings and screenshots, re-runnable via npx playwright test."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_599f5945655dc2e0369f40139de3a6cbd872712ec1ab7398ce8ddd3d103276c1",
+      "evidence_type": "organizational_statement",
+      "facet": "dependencies",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 107,
+          "line_start": 106,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L106-L107"
+        },
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 26,
+          "line_start": 25,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L25-L26"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_5499c379f2fe5d554a29b44c1918bd0ff855d32fc655d06a30376b0059823632",
+        "slc_bd1c895bb47f492bd482c19c7b0e616c70f03f12a2700e936dc12a7e916876e6"
+      ],
+      "text": "Requirements are Node.js >= 22 and an API key for one of the supported models; the first run may download dependencies such as browser binaries."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_205e168a6fa373dac480f7accdf107e80d89c58b002fdff8f236bc59af31f150",
+      "evidence_type": "organizational_statement",
+      "facet": "workflows",
+      "kind": "observation",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 113,
+          "line_start": 111,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L111-L113"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_e3fcc5ea310cf63205bda441cd54af2eab345d91519077ceda0f9745c30a724a"
+      ],
+      "text": "Repository development practice: contributors are invited to open an issue or pull request on the GitHub repository to get started."
+    },
+    {
+      "basis": "documented",
+      "claim_id": "clm_15e9c9abe3b96da231e523a698409a265f13400c8d2ed21ca67c37d540dfc169",
+      "evidence_type": "organizational_statement",
+      "facet": "limitations",
+      "kind": "inference",
+      "locators": [
+        {
+          "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+          "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+          "line_end": 88,
+          "line_start": 80,
+          "path": "README.md",
+          "repository": "zachblume/autospec",
+          "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md#L80-L88"
+        }
+      ],
+      "review_state": "mechanically_checked",
+      "slice_ids": [
+        "slc_1d81d5bd074685550ec801b58323febf6bdf02325e9ea761f5e4dc4321c1cd3d"
+      ],
+      "text": "Planning appears limited to crawling up to 3 pages from the target URL, suggesting a bounded exploration scope per run."
+    }
+  ],
+  "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+  "coverage": {
+    "explicit_paths": [],
+    "files": [
+      {
+        "lines": 121,
+        "path": "README.md",
+        "size": 4419
+      }
+    ],
+    "omitted": [],
+    "omitted_count": 0,
+    "omitted_slices": 0,
+    "repository": {
+      "complete": true,
+      "tree_blobs": 50,
+      "tree_truncated": false
+    },
+    "selection": {
+      "candidates": 1,
+      "complete": true,
+      "omitted": 0,
+      "stored": 1
+    }
+  },
+  "entity_id": "ent_50b997334df1535f8d5a8c80646c0518",
+  "facets": {
+    "components": 1,
+    "dependencies": 2,
+    "design-choices": 1,
+    "evaluation": 0,
+    "interfaces": 3,
+    "limitations": 1,
+    "memory-state": 0,
+    "orchestration": 1,
+    "relevance": 0,
+    "skills-patterns": 1,
+    "specifications": 1,
+    "tools-permissions": 0,
+    "workflows": 1
+  },
+  "gaps": [
+    {
+      "facet": "memory-state",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "tools-permissions",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "evaluation",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    },
+    {
+      "facet": "relevance",
+      "reason": "no source-linked claim submitted for this facet",
+      "status": "unknown"
+    }
+  ],
+  "package": "sources/github/zachblume/autospec/e379edd427fc5ee2056be3bb2008f1fc26620b7f/7239b7163f559e68/manifest.json",
+  "package_id": "pkg_b64e11b0582ddbe94c92de779808b04755b726759ea3ed23e4cc15b4bbc9c15d",
+  "repo": "zachblume/autospec",
+  "schema_version": "map-agents.dossier/1",
+  "seal": "53e31cb1480458a358d964f516f996f47ebd24efa0c4ca5854a15e21b8fe7ff1",
+  "snapshot_id": "7239b7163f559e68",
+  "sources": [
+    {
+      "commit": "e379edd427fc5ee2056be3bb2008f1fc26620b7f",
+      "git_sha": "ff2790cf6d5148827e24043a0d762452c1014346",
+      "lines": 121,
+      "path": "README.md",
+      "repository": "zachblume/autospec",
+      "sha256": "8db889c8b7a1f68dcea540bca76fb6a22e83d6af6aa3906220342a6952593218",
+      "source_id": "src_0ea1f3d67f1959c184d32da0ebffc190",
+      "stored": "readme.md-b33563055168.md",
+      "url": "https://github.com/zachblume/autospec/blob/e379edd427fc5ee2056be3bb2008f1fc26620b7f/README.md"
+    }
+  ],
+  "summary": "README-only evidence for autospec, an AI agent that explores web apps and generates/executes Playwright e2e tests via a CLI. Product behavior, CLI options, architecture, and requirements are documented; no code or dev-workflow evidence beyond contributing pointers.",
+  "superseded_claim_ids": []
+}
